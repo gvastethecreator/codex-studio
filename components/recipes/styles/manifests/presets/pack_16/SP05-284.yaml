@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-284
 packId: pack_16
-name: Airborne Wonder Adventure Style
+name: Castle in the Sky - Airborne Wonder Adventure
 styleAnchors:
-  - 'Airborne Wonder Adventure Style'
-displayName: 'Airborne Wonder Adventure'
+  - Castle in the Sky - Airborne Wonder Adventure
+displayName: Castle in the Sky - Airborne Wonder Adventure
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Give the drawing upward visual lift through clean silhouettes, ascending diagonals, open
-    planes, and gently graded depth.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Small tapers
-    may follow existing directional endpoints but cannot imply flight or new movement.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, combine clear cyan or blue,
-    fresh green, cream, and warm ochre in breathable fields; preserve the requested palette.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use broad high-key illumination and
-    cool-edged shadows only when supported by the stated source; add no halo.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep foreground fills clean and let fine
-    washes carry only existing distant detail; add no sky or scenery.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Show depth through existing
-    scale and value steps, using diagonals already in the arrangement.
-  atmosphere_and_mood: >-
-    Retain the requested emotional tone; openness is not a demand for wonder or adventure.
-  rendering_and_quality: >-
-    Keep silhouette edges stable against open fields; avoid glows, extra airborne objects, and
-    false depth blur.
-  key_features: >-
-    Ascending diagonal rhythm; clean silhouettes; open value planes; graded depth.
-  creative_brief: 'Use ascending diagonal rhythm; clean silhouettes; open value planes; graded depth. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles.
+  color_and_tone: Sky blue, cloud white, moss green, brass and warm stone ochre.
+  lighting_and_shadow: Bright high-altitude sunlight, huge glowing clouds, warm interior lamps.
+  texture_and_material: Hand-painted watercolor and gouache backgrounds, riveted metal machines, moss on stone.
+  camera_and_composition: Dizzying heights and vertical drops, flying machines crossing the frame, giant cloud walls.
+  atmosphere_and_mood: Keep the requested mood with soaring adventurous wonder.
+  rendering_and_quality: Classic 1980s hand-drawn Ghibli feature frame with airy painted skies.
+  key_features: Ghibli clouds; flying machines; floating ruins; round faces; brass and moss
+  creative_brief: "Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins. Carry it through Ghibli clouds, flying machines, floating ruins, round faces, brass and moss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a glowing blue crystal pendant
+  - moss-covered giant guardian robots
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-284.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

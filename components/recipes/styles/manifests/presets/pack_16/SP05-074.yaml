@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-074
 packId: pack_16
-name: Skyglow Longing Drama Style
+name: Your Name - Skyglow Longing Drama
 styleAnchors:
-  - 'Skyglow Longing Drama Style'
-displayName: 'Skyglow Longing Drama'
+  - Your Name - Skyglow Longing Drama
+displayName: Your Name - Skyglow Longing Drama
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Set a broad silhouette against long, soft color transitions; primary edges stay firm while
-    secondary fields dissolve gently.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Simplify only
-    secondary contours into large readable shapes.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, blend warm apricot, coral,
-    and cream into cool lavender and blue; keep the division broad, not neon.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use wide softened illumination from the
-    supplied source and gradual falloff; add no halo or glow source.
-  texture_and_material: >-
-    Apply texture only to materials already present. Lay transparent washes behind firmer
-    primary contours; keep grain subtle and even rather than visibly painterly.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Treat existing masses as
-    elongated value zones with open intervals; add no horizon, framing device or distant object.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Let expansive gradients affect tonal scale only;
-    impose no emotional reading.
-  rendering_and_quality: >-
-    Separate the focal silhouette from open color fields without erasing surface detail; avoid
-    bloom and edge fog.
-  key_features: >-
-    Broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value
-    zones.
-  creative_brief: 'Use broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Makoto Shinkai feature animation as in Your Name: photoreal-detailed painted Tokyo and countryside backgrounds, dazzling twilight skies with comets and lens flares, and clean Masayoshi Tanaka character designs.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean slender Tanaka-style designs, large clear eyes with a single bright highlight, fine hair strands and modern everyday clothes.
+  color_and_tone: Magenta and violet twilight, gold magic-hour light, deep blue night and saturated cyan skies.
+  lighting_and_shadow: Magic-hour backlight, lens flares, light leaks and god rays glittering through every gap.
+  texture_and_material: Hyper-detailed digital background painting, crisp cel characters, sparkle particles and glass reflections.
+  camera_and_composition: Wide low-angle sky compositions, split-screen parallel shots, telephoto street views with compressed depth.
+  atmosphere_and_mood: Keep the requested mood with aching longing and luminous hope.
+  rendering_and_quality: Polished contemporary Shinkai frame with photographic depth and glowing post effects.
+  key_features: Makoto Shinkai skies; comet twilight; lens flares; detailed city backgrounds; clean designs
+  creative_brief: "Makoto Shinkai feature animation as in Your Name: photoreal-detailed painted Tokyo and countryside backgrounds, dazzling twilight skies with comets and lens flares, and clean Masayoshi Tanaka character designs. Carry it through Makoto Shinkai skies, comet twilight, lens flares, detailed city backgrounds, clean designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-074.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

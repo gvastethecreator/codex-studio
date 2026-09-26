@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-346
 packId: pack_16
-name: Phantom Teamplay Speed Style
+name: Kuroko's Basketball - Phantom Teamplay Speed
 styleAnchors:
-  - Phantom Teamplay Speed Style
-displayName: Phantom Teamplay Speed
+  - Kuroko's Basketball - Phantom Teamplay Speed
+displayName: Kuroko's Basketball - Phantom Teamplay Speed
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow.'
-  subject_treatment: Keep the prompt's subject and action; make it move with deceptive speed, afterimages and misdirected attention.
-  color_and_tone: Cool arena blues and whites with a pale ghostly accent for the fast player.
-  lighting_and_shadow: Bright arena light from above, with semi-transparent afterimages glowing softly behind the moving player.
-  texture_and_material: Smooth cel with translucent motion trails and crisp ball highlights.
-  camera_and_composition: Wide play frames with multiple afterimages and defenders looking the wrong way.
-  atmosphere_and_mood: Slippery and clever, the thrill of something happening where nobody was looking.
-  rendering_and_quality: Clean sports anime with translucent effects and precise choreography.
-  key_features: afterimages; misdirection; translucent trails; wrong-way defenders
-  creative_brief: "Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow. Carry it through afterimages, misdirection, translucent trails, wrong-way defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: "Production I.G Kuroko's Basketball television look (2012): colorful hair teams, glowing zone eyes with light trails, supernatural speed afterimages and glossy courts."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kuroko designs, tall lean players, vivid hair colors, glowing eye trails and jerseys.
+  color_and_tone: Vivid team colors, sky blue, red, gold and glossy court reflections.
+  lighting_and_shadow: Glowing eye trails, spotlight arenas and lightning-like aura streaks.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Speed afterimages, low court-level passes and dramatic slow motion.
+  atmosphere_and_mood: Keep the requested mood with uncanny teamplay swagger.
+  rendering_and_quality: Glossy Production I.G sports frame with supernatural speed effects.
+  key_features: Glowing zone eyes; vivid hair; afterimages; glossy courts
+  creative_brief: "Production I.G Kuroko's Basketball television look (2012): colorful hair teams, glowing zone eyes with light trails, supernatural speed afterimages and glossy courts. Carry it through Glowing zone eyes, vivid hair, afterimages, glossy courts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-346.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

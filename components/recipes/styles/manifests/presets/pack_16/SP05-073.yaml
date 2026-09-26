@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-073
 packId: pack_16
-name: Wandering Clockwork Hearth Style
+name: Howl's Moving Castle - Wandering Clockwork Hearth
 styleAnchors:
-  - 'Wandering Clockwork Hearth Style'
-displayName: 'Wandering Clockwork Hearth'
+  - Howl's Moving Castle - Wandering Clockwork Hearth
+displayName: Howl's Moving Castle - Wandering Clockwork Hearth
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Measured linework: fine ruled contours, small angular details, and broad cel masses
-    separated by an even visual cadence.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Model existing
-    forms with articulated contours and regular line intervals; the mechanical rhythm belongs to
-    drawing, never added parts.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, slate blue and charcoal
-    hold the field; muted amber and cream punctuate it in small, separated areas.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Set narrow warm highlights against cool
-    ambient shadow, attached to supplied illumination and existing reflective surfaces.
-  texture_and_material: >-
-    Apply texture only to materials already present. Mix smooth painted planes with precise
-    short hatching at complex edges; keep broad fills clean and material-neutral.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Repeat spacing and align
-    value bands within existing forms; invent no machinery, repeated objects, or new axis.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Use crisp-to-open mark contrast as cadence only;
-    carry the emotion the user supplied.
-  rendering_and_quality: >-
-    Keep focal contours precise, midtones open, and tiny dark marks sparse; leave flat areas
-    free of speckle.
-  key_features: >-
-    Measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value
-    intervals.
-  creative_brief: 'Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: "Hayao Miyazaki and Studio Ghibli feature animation as in Howl's Moving Castle: hand-painted poster-color backgrounds of Alsace-like towns and alpine meadows, ramshackle steampunk machines of patched metal, and simple warm character designs."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, small dot-highlight eyes, soft noses, natural proportions and loose everyday clothes that move with the wind.
+  color_and_tone: Meadow greens, sky cobalt, cream cumulus clouds, rust brown metal and warm hearth orange.
+  lighting_and_shadow: Bright open daylight with soft cel shadows, glowing fire and window light inside cluttered rooms.
+  texture_and_material: Hand-painted gouache backgrounds, clean thin ink cel lines, riveted scrap-metal detail and chimney smoke.
+  camera_and_composition: Wide painterly establishing shots with small figures, then warm medium shots inside cluttered homes.
+  atmosphere_and_mood: Keep the requested mood with gentle wonder and cozy magic.
+  rendering_and_quality: Classic hand-drawn Ghibli feature frame, painterly and warm, no digital gloss.
+  key_features: Ghibli gouache backgrounds; patched steampunk machines; simple warm faces; wind-blown cloth
+  creative_brief: "Hayao Miyazaki and Studio Ghibli feature animation as in Howl's Moving Castle: hand-painted poster-color backgrounds of Alsace-like towns and alpine meadows, ramshackle steampunk machines of patched metal, and simple warm character designs. Carry it through Ghibli gouache backgrounds, patched steampunk machines, simple warm faces, wind-blown cloth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-073.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

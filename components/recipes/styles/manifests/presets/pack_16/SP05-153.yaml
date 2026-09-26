@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-153
 packId: pack_16
-name: Techno-Gothic Exorcism Style
+name: Katsura Hoshino - Techno-Gothic Exorcism
 styleAnchors:
-  - 'Techno-Gothic Exorcism Style'
-displayName: 'Techno-Gothic Exorcism'
+  - Katsura Hoshino - Techno-Gothic Exorcism
+displayName: Katsura Hoshino - Techno-Gothic Exorcism
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Techno-noir digital anime combines luminous edges, fine scan-like marks and
-    ornate dark shadow.
-  subject_treatment: >-
-    Keep the requested identity and action intact. Place synthetic glow only on existing
-    luminous forms.
-  color_and_tone: >-
-    When palette is open, use cyan, black, violet and screen-green accents sparingly. Keep
-    explicit color choices intact.
-  lighting_and_shadow: >-
-    Use restrained monitor-like bloom, scanline glow and synthetic rim on existing luminous
-    forms.
-  texture_and_material: >-
-    Use fine horizontal marks and controlled ink grain where they support the depicted
-    surface; keep material detail prompt-led.
-  camera_and_composition: >-
-    Respect the supplied frame and viewpoint; let luminous edges contrast with dark masses.
-  atmosphere_and_mood: >-
-    A cool techno-gothic tension is available when it matches the prompt's mood.
-  rendering_and_quality: >-
-    Keep luminous edges sharp, bloom contained and dark contours legible against softly
-    integrated backgrounds.
-  key_features: >-
-    Luminous edge; restrained monitor-like bloom; fine scan-like marks; ornate
-    shadow against clean digital surfaces.
-  creative_brief: 'Apply synthetic light and scan-like detail only where compatible with the requested image. Preserve its content and composition. Use it as a reusable look on any subject.'
+  aesthetic: 'Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair.
+  color_and_tone: Black coats, silver trim, crimson accents and cold stained-glass colors.
+  lighting_and_shadow: Stained-glass light, dark cathedrals and glowing weapon effects.
+  texture_and_material: Fine elegant ink lines, ornamental coat trims, screentone and gothic detail.
+  camera_and_composition: Dramatic diagonal compositions, cathedral interiors and machine demons.
+  atmosphere_and_mood: Keep the requested mood with haunted gothic resolve.
+  rendering_and_quality: Elegant gothic manga illustration with dramatic black-and-white design.
+  key_features: Katsura Hoshino gothic; exorcist coats; cathedrals; machine demons
+  creative_brief: "Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes. Carry it through Katsura Hoshino gothic, exorcist coats, cathedrals, machine demons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-haired exorcist with a scar and a cursed red arm
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-153.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

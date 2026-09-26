@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-166
 packId: pack_16
-name: Redemption Restraint Style
+name: Rurouni Kenshin TV - Redemption Restraint
 styleAnchors:
-  - 'Redemption Restraint Style'
-displayName: 'Redemption Restraint'
+  - Rurouni Kenshin TV - Redemption Restraint
+displayName: Rurouni Kenshin TV - Redemption Restraint
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A restrained 90s cel drama style uses soft-edged transitions inside clean shadow groups, calm
-    contours and a narrow cool rim. Emotion rests in small shifts of form rather than spectacle.
-  subject_treatment: >-
-    Preserve the requested identity, proportions and expression. Use simple, accurate contours and
-    restrained interior detail; do not turn a quiet subject into a redemptive hero.
-  color_and_tone: >-
-    When color is open, use muted blue-violet shadows, gentle warm neutrals and a limited red accent.
-    Preserve specified hues and avoid dramatic saturation.
-  lighting_and_shadow: >-
-    Use broad, soft transitions alongside clearly bounded cel shadows. Respect the requested light and
-    avoid a dramatic backlight or added glow.
-  texture_and_material: >-
-    Keep fills smooth and ink clean, with subtle grain only in broad painted areas. Retain each
-    material's surface and do not add distress.
-  camera_and_composition: >-
-    Maintain the requested crop and spacing, with attention on clear form and quiet detail. Do not
-    force a close portrait or a lone figure.
-  atmosphere_and_mood: >-
-    Let restraint come from an absence of extra marks and a measured value range. Preserve the
-    prompt's mood; add no sorrow, redemption or conflict.
-  rendering_and_quality: >-
-    Use legible anatomy or object structure, gentle value transitions and minimal effects. Keep the
-    finish polished without denoising away all line character.
-  key_features: >-
-    quiet contour work; clean cel groups with gentle transitions; cool rim and restrained warm accents
-  creative_brief: 'Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve its identity, action, mood and camera; introduce no redemption narrative, costume or prop. Use it as a reusable look on any subject.'
+  aesthetic: 'Studio Gallop Rurouni Kenshin television look (1996): bright nineties cel, Meiji-era Tokyo streets, graceful sword action with speed lines, warm humor and melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with nineties shonen designs, large eyes, flowing hair, kimono, hakama and Meiji Western clothes.
+  color_and_tone: Warm Meiji earth tones, indigo, crimson and cherry blossom pink.
+  lighting_and_shadow: Warm daylight, sunset silhouettes and dramatic sword flash highlights.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Sword duel framing with speed lines, street scenes and sunset silhouettes.
+  atmosphere_and_mood: Keep the requested mood with gentle wistful redemption.
+  rendering_and_quality: Bright 1996 television cel frame with graceful sword action.
+  key_features: Kenshin TV cel; Meiji streets; speed-line sword action; warm melancholy
+  creative_brief: "Studio Gallop Rurouni Kenshin television look (1996): bright nineties cel, Meiji-era Tokyo streets, graceful sword action with speed lines, warm humor and melancholy. Carry it through Kenshin TV cel, Meiji streets, speed-line sword action, warm melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired swordsman with a cross-shaped cheek scar
+  - a reverse-blade sword
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-166.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

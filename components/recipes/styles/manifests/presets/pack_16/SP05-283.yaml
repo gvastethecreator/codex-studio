@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-283
 packId: pack_16
-name: Metaphysical Mourning Style
+name: The Boy and the Heron - Metaphysical Mourning
 styleAnchors:
-  - 'Metaphysical Mourning Style'
-displayName: 'Metaphysical Mourning'
+  - The Boy and the Heron - Metaphysical Mourning
+displayName: The Boy and the Heron - Metaphysical Mourning
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Build low-key negative space with deep blue-black fields, sparse fine lines, and isolated
-    pale contour light where forms meet dark.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Allow edges to
-    merge only where dark values already touch, never erase identity.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use indigo, blue-green,
-    smoked gray, and pearl highlights while maintaining explicit local color.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Respect source light; use broad dark
-    falloff and restrained existing edge highlights, without rays or particles.
-  texture_and_material: >-
-    Apply texture only to materials already present. Layer soft transparent washes with faint
-    grain; add no water, dust, or glow texture.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Use existing empty areas and
-    depth rather than moving the subject or widening space.
-  atmosphere_and_mood: >-
-    Preserve user mood; low-key space does not imply mourning or metaphysical content.
-  rendering_and_quality: >-
-    Protect identity-bearing edges from merging and keep sparse highlights precise rather than
-    foggy.
-  key_features: >-
-    Deep blue-black field; sparse contour; selective edge merge; pale accents.
-  creative_brief: 'Use deep blue-black field; sparse contour; selective edge merge; pale accents. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human.
+  color_and_tone: Deep teal seas, dusk gold, grey-blue fog and flame orange.
+  lighting_and_shadow: Stormy light, glowing sunset, eerie dim otherworld light.
+  texture_and_material: Rich hand-painted texture, dense line detail and swirling water.
+  camera_and_composition: Still composed shots with long silences, towers on horizons, strange crowds of birds.
+  atmosphere_and_mood: Keep the requested mood with grave mournful wonder.
+  rendering_and_quality: Late-Ghibli painterly hand-drawn feature frame with heavy textured brushwork.
+  key_features: Late Miyazaki gravity; otherworld towers; strange birds; painterly seas; mourning
+  creative_brief: "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness. Carry it through Late Miyazaki gravity, otherworld towers, strange birds, painterly seas, mourning. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-283.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

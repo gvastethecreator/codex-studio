@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-099
 packId: pack_16
-name: Night Parade Yokai Anime
+name: Yuki Midorikawa - Night Parade Yokai
 styleAnchors:
-  - Night Parade Yokai Anime
+  - Yuki Midorikawa - Night Parade Yokai
   - yokai procession anime
   - night procession
-displayName: Night Parade Yokai Anime
+displayName: Yuki Midorikawa - Night Parade Yokai
 category: 7. Horror
 domain: yokai procession anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - yokai
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets.'
-  subject_treatment: Keep the prompt's subject and setting; let a procession of strange folklore creatures pass through or near it at night.
-  color_and_tone: Night indigo, lantern orange and pale spirit greens with ink-black silhouettes.
-  lighting_and_shadow: Lantern light carried by the procession and cold moonlight on the street.
-  texture_and_material: Paper lanterns, old wood, straw and cloth creatures drawn with lively ink line.
-  camera_and_composition: Long horizontal processions across the frame, witnesses hidden behind doors.
-  atmosphere_and_mood: Eerie and playful, a strange celebration that humans are not meant to watch.
-  rendering_and_quality: Lively prestige anime with inventive creature designs and warm lantern glows.
-  creative_brief: "Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets. Carry it through night procession, lanterns, object spirits, hidden witnesses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: night procession; lanterns; object spirits; hidden witnesses
+  aesthetic: "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms.
+  color_and_tone: Soft watercolor greens, dusk blue and lantern amber.
+  lighting_and_shadow: Soft moonlight and lantern glow in quiet towns.
+  texture_and_material: Soft gentle line, watercolor washes and paper grain.
+  camera_and_composition: Processions across rural roads and quiet framing of spirits.
+  atmosphere_and_mood: Keep the requested mood with gentle eerie wonder.
+  rendering_and_quality: Soft watercolor manga illustration with gentle odd spirits and rural calm.
+  creative_brief: "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters. Carry it through Yuki Midorikawa softness, watercolor yokai, lanterns, rural night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yuki Midorikawa softness; watercolor yokai; lanterns; rural night
 avoidRules:
+  - a round white cat spirit with markings
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,9 +50,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - yokai
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

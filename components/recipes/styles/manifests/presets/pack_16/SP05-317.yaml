@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-317
 packId: pack_16
-name: Arcade Techno-Rebellion Style
+name: Hiroyuki Kitakubo - Arcade Techno-Rebellion
 styleAnchors:
-  - 'Arcade Techno-Rebellion Style'
-displayName: 'Arcade Techno-Rebellion'
+  - Hiroyuki Kitakubo - Arcade Techno-Rebellion
+displayName: Hiroyuki Kitakubo - Arcade Techno-Rebellion
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use strong silhouette edges with small graphic detail only on existing forms; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use dark indigo, cobalt, cyan and magenta accents. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as crisp cut cel shadows and narrow electric edge accents only where light exists; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply fine screen-print grain and subtle transfer shift without visible interface graphics as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use directional bands kept inside existing shapes and composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through high-energy color breaks and blocky mark timing; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use high-contrast flat paint, compact effects and disciplined negative space; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines.
+  color_and_tone: Arcade neon, electric purple, cyan and hot red on night black.
+  lighting_and_shadow: CRT screen glow, neon signage and streaking headlights on wet streets.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Detailed mechanical close-ups, wild chases and crowded arcade and hospital interiors.
+  atmosphere_and_mood: Keep the requested mood with rebellious techno mischief.
+  rendering_and_quality: Energetic hand-drawn OVA frame with dense mechanical invention and rubbery acting.
+  key_features: Hiroyuki Kitakubo acting; dense machinery; hacker mischief; arcade neon
+  creative_brief: "Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy. Carry it through Hiroyuki Kitakubo acting, dense machinery, hacker mischief, arcade neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-317.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-355
 packId: pack_16
-name: Festive Sprint Idol Energy Style
+name: Uma Musume - Festive Sprint Idol Energy
 styleAnchors:
-  - Festive Sprint Idol Energy Style
-displayName: Festive Sprint Idol Energy
+  - Uma Musume - Festive Sprint Idol Energy
+displayName: Uma Musume - Festive Sprint Idol Energy
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show.'
-  subject_treatment: Keep the prompt's subject and action; add festival energy with bright stage colors, cheering crowds and sparkle.
-  color_and_tone: Candy pinks, sky blues and lemon yellow with glittering white highlights.
-  lighting_and_shadow: Bright stadium daylight with sparkle highlights and colorful bounced light.
-  texture_and_material: Satin costumes, sneakers, ribbons and confetti in glossy cel.
-  camera_and_composition: Dynamic sprinting shots with cheering stands and stage elements behind.
-  atmosphere_and_mood: Cheerful and energetic, a sports day that feels like a concert.
-  rendering_and_quality: Glossy idol anime with sparkle effects and bouncy animation.
-  key_features: confetti colors; sprinting idols; cheering stands; sparkle
-  creative_brief: "Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show. Carry it through confetti colors, sprinting idols, cheering stands, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'P.A. Works Uma Musume television look (2018): bright idol sports, sparkling racecourses, colorful uniforms, confetti victory stages and energetic running frames.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Uma Musume designs, big bright eyes, flowing hair, colorful racing uniforms and energetic poses.
+  color_and_tone: Turf green, idol pink, sky blue and confetti gold.
+  lighting_and_shadow: Bright sunny racecourse light and sparkling stage spotlights.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Final-stretch sprint shots, victory poses and stage performances.
+  atmosphere_and_mood: Keep the requested mood with bright festive competition.
+  rendering_and_quality: Bright P.A. Works frame with sparkling idol sports energy.
+  key_features: Uma Musume sparkle; racecourse sprint; idol stages; confetti
+  creative_brief: "P.A. Works Uma Musume television look (2018): bright idol sports, sparkling racecourses, colorful uniforms, confetti victory stages and energetic running frames. Carry it through Uma Musume sparkle, racecourse sprint, idol stages, confetti. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -60,10 +61,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-355.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -72,6 +77,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

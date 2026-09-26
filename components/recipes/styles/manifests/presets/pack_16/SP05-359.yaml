@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-359
 packId: pack_16
-name: Vulnerable Performance Spin Style
+name: Yuri!!! on Ice - Vulnerable Performance Spin
 styleAnchors:
-  - Vulnerable Performance Spin Style
-displayName: Vulnerable Performance Spin
+  - Yuri!!! on Ice - Vulnerable Performance Spin
+displayName: Yuri!!! on Ice - Vulnerable Performance Spin
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Figure skating anime of vulnerable performance: spins, spotlight on ice, costumes and emotion visible in every line.'
-  subject_treatment: Keep the prompt's subject and action; render it as a graceful performance with spins, glides and exposed emotion.
-  color_and_tone: Ice white and pale blue with a jewel-colored costume accent.
-  lighting_and_shadow: Spotlight on the ice, soft reflections below the skater and dark arena beyond.
-  texture_and_material: Glassy ice with blade scratches, sequined costumes and fine hair strands.
-  camera_and_composition: Circling framings around spins and low reflections along the ice surface.
-  atmosphere_and_mood: Fragile and beautiful, a performer laying their heart bare in four minutes.
-  rendering_and_quality: Elegant sports anime with graceful motion arcs and sparkling ice.
-  key_features: spotlit ice; spin arcs; ice reflections; sequined costume
-  creative_brief: "Figure skating anime of vulnerable performance: spins, spotlight on ice, costumes and emotion visible in every line. Carry it through spotlit ice, spin arcs, ice reflections, sequined costume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes.
+  color_and_tone: Ice blue, spotlight white, costume gold and deep arena navy.
+  lighting_and_shadow: Spotlight on ice, sparkling reflections and soft arena glow.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Spin close-ups, flowing costume arcs and rinkside emotional shots.
+  atmosphere_and_mood: Keep the requested mood with tender vulnerable grace.
+  rendering_and_quality: Elegant MAPPA frame with sparkling ice and flowing motion.
+  key_features: Yuri on Ice elegance; sparkling ice; flowing costumes; spotlights
+  creative_brief: "MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups. Carry it through Yuri on Ice elegance, sparkling ice, flowing costumes, spotlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-359.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

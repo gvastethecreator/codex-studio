@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-076
 packId: pack_16
-name: Cinematic Dream-Collapse Surrealism Style
+name: Paprika - Cinematic Dream-Collapse Surrealism
 styleAnchors:
-  - 'Cinematic Dream-Collapse Surrealism Style'
-displayName: 'Cinematic Dream-Collapse Surrealism'
+  - Paprika - Cinematic Dream-Collapse Surrealism
+displayName: Paprika - Cinematic Dream-Collapse Surrealism
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Treat dream-collapse as edge behavior: stable primary contours against peripheral planes
-    that slip or soften only at existing boundaries.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Never warp the
-    requested subject or substitute one scene for another.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, blend pale warm and cool
-    pastels over a stable dark anchor; retain local colors without surreal shifts.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use graded shadows and restrained bounce
-    from existing sources; add no glow, bloom, or lighting event.
-  texture_and_material: >-
-    Apply texture only to materials already present. Allow soft washes to bleed at existing
-    background boundaries while keeping principal edges and materials intact.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Loosen depth only inside
-    existing background, with no camera tilt, inserts, or duplication.
-  atmosphere_and_mood: >-
-    Keep requested mood; spatial instability is a rendering behavior, not a dream narrative.
-  rendering_and_quality: >-
-    Keep a stable focal silhouette and contain edge slippage to secondary boundaries; avoid
-    melting, blur, or morphing.
-  key_features: >-
-    Stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry.
-  creative_brief: 'Use stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon feature animation as in Paprika: realistic detective drama that fluidly melts into dream spaces, rooms folding into other rooms, screens and posters becoming doors.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism, grounded adult faces and suits, then let them slide through surreal transitions.
+  color_and_tone: Vivid dream reds and oranges against muted realistic city palettes.
+  lighting_and_shadow: Film-noir hallway light mixing with glowing dream colors.
+  texture_and_material: Clean realist cel, painted backgrounds, seamless transition effects.
+  camera_and_composition: Impossible continuous transitions, match cuts through frames within frames.
+  atmosphere_and_mood: Keep the requested mood with dizzying dream surrealism.
+  rendering_and_quality: Lavish 2006 Madhouse feature frame with seamless surreal continuity.
+  key_features: Satoshi Kon transitions; dream within frame; realist faces; vivid dream red
+  creative_brief: "Satoshi Kon feature animation as in Paprika: realistic detective drama that fluidly melts into dream spaces, rooms folding into other rooms, screens and posters becoming doors. Carry it through Satoshi Kon transitions, dream within frame, realist faces, vivid dream red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-076.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

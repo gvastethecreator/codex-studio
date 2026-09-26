@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-075
 packId: pack_16
-name: Rainlight Threshold Romance Style
+name: Weathering With You - Rainlight Threshold Romance
 styleAnchors:
-  - 'Rainlight Threshold Romance Style'
-displayName: 'Rainlight Threshold Romance'
+  - Weathering With You - Rainlight Threshold Romance
+displayName: Weathering With You - Rainlight Threshold Romance
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Fine cel contours over translucent pastel glazes, with carefully controlled hard-to-soft
-    edge transitions.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Soften selected
-    outer edges while leaving identity-bearing contours clean.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor blush, pearl gray,
-    winter blue, and one modest warm note in transparent overlapping fields.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Diffuse the supplied illumination and
-    allow slight edge separation; reflect only from already reflective surfaces.
-  texture_and_material: >-
-    Apply texture only to materials already present. Layer dilute pigment washes with restrained
-    paper tooth; create no droplets, wet materials, or precipitation.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let existing plane
-    boundaries read as soft value thresholds; add no doorway, border or frame.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Use softness as surface treatment, not as romance or
-    tenderness; preserve the requested mood.
-  rendering_and_quality: >-
-    Keep primary features and thin contours legible under translucent color; avoid smearing or
-    faux lens effects.
-  key_features: >-
-    Hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges.
-  creative_brief: 'Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes.
+  color_and_tone: Wet slate grey, neon reflections, storm blue and sudden gold sunlight on puddles.
+  lighting_and_shadow: Overcast diffusion broken by sharp sunbeams, rain streaks catching light, glowing puddle reflections.
+  texture_and_material: Detailed digital rain, droplet splashes, reflective asphalt, crisp cel characters over painted backgrounds.
+  camera_and_composition: Low puddle-level views, rooftop wides under enormous clouds, close shots of hands and droplets.
+  atmosphere_and_mood: Keep the requested mood with wistful rainy romance.
+  rendering_and_quality: Glossy contemporary Shinkai frame with photographic rain detail and light bloom.
+  key_features: Shinkai rain; puddle reflections; sunbeams through clouds; detailed Tokyo; clean designs
+  creative_brief: "Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds. Carry it through Shinkai rain, puddle reflections, sunbeams through clouds, detailed Tokyo, clean designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-075.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

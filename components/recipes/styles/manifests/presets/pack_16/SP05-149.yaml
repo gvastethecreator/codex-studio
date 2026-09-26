@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-149
 packId: pack_16
-name: Clan Comedy Escalation Style
+name: Akira Amano - Clan Comedy Escalation
 styleAnchors:
-  - 'Clan Comedy Escalation Style'
-displayName: 'Clan Comedy Escalation'
+  - Akira Amano - Clan Comedy Escalation
+displayName: Akira Amano - Clan Comedy Escalation
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Expressive digital anime driven by elastic reaction shapes, economical ink lines and
-    rhythm between a held beat and a quick change.
-  subject_treatment: >-
-    Preserve the prompt's identity and action. Flex expression and outer contour briefly for
-    readable reactions while keeping features recognizable.
-  color_and_tone: >-
-    Follow named colors; when unspecified, use clear color grouping and restrained accents
-    rather than assigning a fixed scheme.
-  lighting_and_shadow: >-
-    Use simple shadow masses and compact highlights so facial reactions stay legible; keep
-    glow and effects subordinate.
-  texture_and_material: >-
-    Use clean ink contours with sparse texture. Integrate any painted background softly, and
-    render only the surfaces named by the prompt.
-  camera_and_composition: >-
-    Build setup, pause and payoff through spacing or a quick visual beat while preserving
-    the requested camera, layout and number of subjects.
-  atmosphere_and_mood: >-
-    Held reactions can build humor when requested; keep the emotional direction grounded in
-    the prompt.
-  rendering_and_quality: >-
-    Prioritize immediate pose readability, stable contours and a clear figure-background
-    split.
-  key_features: >-
-    Elastic expression shifts; readable reaction silhouettes; setup-pause-payoff spacing;
-    quick visual timing with clean ink.
-  creative_brief: "Use elastic expression and quick reaction timing only where they suit the requested action. Keep the prompt's cast, scene, camera and tone intact. Use it as a reusable look on any subject."
+  aesthetic: 'Akira Amano Hitman Reborn! look: stylish mafia comedy with sharp elegant suits, spiky flame-lit hair, chaotic gag escalation that turns into dramatic flame battles.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Amano designs, slim stylish bodies, spiky hair, sharp suits and exaggerated gag faces.
+  color_and_tone: Sky orange flames, black suits, crisp whites and warm family-home colors.
+  lighting_and_shadow: Warm household light that flips into dramatic flame-glow battle lighting.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Crowded gag compositions, sudden dramatic battle angles and family table shots.
+  atmosphere_and_mood: Keep the requested mood with chaotic family escalation.
+  rendering_and_quality: Energetic 2000s shonen television frame with stylish mafia flair.
+  key_features: Akira Amano style; mafia suits; flaming hair; gag escalation
+  creative_brief: "Akira Amano Hitman Reborn! look: stylish mafia comedy with sharp elegant suits, spiky flame-lit hair, chaotic gag escalation that turns into dramatic flame battles. Carry it through Akira Amano style, mafia suits, flaming hair, gag escalation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-149.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

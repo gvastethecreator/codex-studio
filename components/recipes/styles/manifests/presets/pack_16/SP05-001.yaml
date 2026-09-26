@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-001
 packId: pack_16
-name: Retro Pioneer Hero
+name: Osamu Tezuka - Retro Pioneer Hero
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,26 +11,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use sturdy silhouettes, a few expressive marks and emphatic held cel masses; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use faded warm primaries, softened cream, charcoal and airbrushed midtones. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as decisive two-step shadow blocks with a narrow rim only on already lit edges; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply fine acetate grain, lightly dry-brushed background paint and barely visible film dust as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use clear diagonals and held-shape pauses inside the requested arrangement; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through alternating broad strokes and quiet gaps; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use bold ink hierarchy, clear color separations and subdued background paint; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces.
+  color_and_tone: 'Early color television palette: primary red, sky blue, warm yellow and cream, slightly faded.'
+  lighting_and_shadow: Flat even light with simple single-tone cel shadows and occasional speed-line glows.
+  texture_and_material: Thick soft ink outlines, flat cel paint, grainy 16mm film softness and slight color bleed.
+  camera_and_composition: Simple staged compositions, heroic poses against sky, pans over static painted backgrounds.
+  atmosphere_and_mood: Keep the requested mood with optimistic pioneering adventure.
+  rendering_and_quality: Charming early television cel frame with limited-animation economy and warmth.
+  key_features: Osamu Tezuka roundness; big simple eyes; limited animation; flat painted skies; early TV color
+  creative_brief: "Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies. Carry it through Osamu Tezuka roundness, big simple eyes, limited animation, flat painted skies, early TV color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -52,14 +44,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-001.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -68,8 +60,12 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Osamu Tezuka - Retro Pioneer Hero
+styleAnchors:
+  - Osamu Tezuka - Retro Pioneer Hero

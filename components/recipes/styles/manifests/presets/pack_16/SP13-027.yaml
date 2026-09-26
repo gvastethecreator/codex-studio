@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-027
 packId: pack_16
-name: Crimson Formation Charge Anime
+name: Kouta Hirano - Crimson Formation Charge
 styleAnchors:
-  - Crimson Formation Charge Anime
-displayName: Crimson Formation Charge Anime
+  - Kouta Hirano - Crimson Formation Charge
+displayName: Kouta Hirano - Crimson Formation Charge
 category: 6. Samurai & Medieval
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - samurai-medieval
+  - reference-title
 visualDna:
-  aesthetic: 'Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame.'
-  subject_treatment: Keep the prompt's subject and setting; place it inside a moving formation or charge, individuals simplified into rhythmic repeated shapes.
-  color_and_tone: Lacquer crimson and black armor against dust gold and pale sky, banners as bright repeated accents.
-  lighting_and_shadow: Low afternoon sun through dust, blocked cel shadows under helmets and a hot rim along the front rank.
-  texture_and_material: Lamellar armor plates, banner silk and churned earth drawn with bold simplified cel shapes.
-  camera_and_composition: Low angle into the oncoming charge or high wide shots of whole formations sweeping diagonally.
-  atmosphere_and_mood: Thunderous and collective, a single unstoppable will carried forward by many riders at once.
-  rendering_and_quality: Large-scale battle anime with repeated figures, speed lines and clean readable masses.
-  key_features: massed formation; diagonal charge; repeated banners; dust light
-  creative_brief: "Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame. Carry it through massed formation, diagonal charge, repeated banners, dust light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor.
+  color_and_tone: Black ink and grey tone with a single savage crimson accent across the charge.
+  lighting_and_shadow: Harsh contrast where huge black shadow shapes swallow faces and armor edges glint white.
+  texture_and_material: Heavy ink fills, scratchy speed lines, screentone gradients and ink splatter.
+  camera_and_composition: Charging masses rushing toward the lens, extreme low angles and wide battlefield spreads.
+  atmosphere_and_mood: Keep the requested mood with savage exhilarated fury.
+  rendering_and_quality: Bold aggressive manga illustration with dense black masses and kinetic energy.
+  key_features: Kouta Hirano black masses; manic grins; massed charges; crimson accents
+  creative_brief: "Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone. Carry it through Kouta Hirano black masses, manic grins, massed charges, crimson accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -53,10 +54,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-027.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -66,6 +71,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - samurai-medieval
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

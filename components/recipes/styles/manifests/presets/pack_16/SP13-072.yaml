@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-072
 packId: pack_16
-name: Woodblock Palette Period Anime
+name: Mononoke 2007 - Woodblock Palette Period
 styleAnchors:
-  - Woodblock Palette Period Anime
+  - Mononoke 2007 - Woodblock Palette Period
   - ukiyo-e colored anime
   - flat printed color
-displayName: Woodblock Palette Period Anime
+displayName: Mononoke 2007 - Woodblock Palette Period
 category: 6. Samurai & Medieval
 domain: ukiyo-e colored anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - woodblock
   - period
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies.'
-  subject_treatment: Keep the prompt's subject and setting; flatten color into printed areas while keeping anime line and expression.
-  color_and_tone: Indigo, vermilion, ochre, sea green and paper cream with bokashi gradient bands in the sky.
-  lighting_and_shadow: Almost no cast shadow; depth comes from overlapping flat shapes and gradient bands.
-  texture_and_material: Subtle paper grain and wood-grain texture inside flat color fields.
-  camera_and_composition: Decorative framing with strong silhouettes, cropped foreground elements and high horizons.
-  atmosphere_and_mood: Elegant and nostalgic, a graphic calm like an old print hanging in a quiet inn.
-  rendering_and_quality: Clean anime line over flat printed color with deliberate grain.
-  creative_brief: "Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies. Carry it through flat printed color, bokashi sky, paper grain, cropped foreground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: flat printed color; bokashi sky; paper grain; cropped foreground
+  aesthetic: 'Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses.
+  color_and_tone: Faded woodblock palette of vermilion, indigo, ochre, teal and gold on beige paper.
+  lighting_and_shadow: Flat woodblock light with no gradients, only pattern and paper texture.
+  texture_and_material: Washi paper grain over all surfaces, flat woodblock color and pattern fills.
+  camera_and_composition: Sliding screen framing, flat theatrical staging and abrupt pattern cuts.
+  atmosphere_and_mood: Keep the requested mood with eerie ornate mystery.
+  rendering_and_quality: Striking flat-textured Toei frame that looks printed on washi.
+  creative_brief: "Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns. Carry it through Mononoke washi texture, ukiyo-e color, sliding screens, Edo patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Mononoke washi texture; ukiyo-e color; sliding screens; Edo patterns
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - woodblock
     - period
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

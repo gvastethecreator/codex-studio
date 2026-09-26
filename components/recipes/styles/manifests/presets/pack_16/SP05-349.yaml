@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-349
 packId: pack_16
-name: Generational Sports Resolve Style
+name: Takuya Mitsuda - Generational Sports Resolve
 styleAnchors:
-  - Generational Sports Resolve Style
-displayName: Generational Sports Resolve
+  - Takuya Mitsuda - Generational Sports Resolve
+displayName: Takuya Mitsuda - Generational Sports Resolve
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Generational sports drama anime: old coaches and young athletes, faded photos, inherited dreams and quiet determination across years.'
-  subject_treatment: Keep the prompt's subject and action; add the weight of time, with an older mentor, old equipment or a remembered past nearby.
-  color_and_tone: Warm faded sepia for memories and clear bright color for the present.
-  lighting_and_shadow: Late afternoon gold light and soft window light in old clubhouses.
-  texture_and_material: Worn gloves, taped handles, old wooden lockers and faded photographs.
-  camera_and_composition: Paired framings of old and young, often side by side or reflected.
-  atmosphere_and_mood: Warm and resolute, a promise passed from one generation to the next.
-  rendering_and_quality: Emotional prestige sports anime with gentle color grading between eras.
-  key_features: old mentor; inherited equipment; sepia memories; golden light
-  creative_brief: "Generational sports drama anime: old coaches and young athletes, faded photos, inherited dreams and quiet determination across years. Carry it through old mentor, inherited equipment, sepia memories, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Takuya Mitsuda Major look: long-running baseball saga art with simple clean designs, father-and-son resolve, sunset practice fields and generational grit.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Mitsuda designs, simple clean faces, sturdy bodies and practice uniforms across generations.
+  color_and_tone: Sunset orange, practice dirt brown, grass green and cap navy.
+  lighting_and_shadow: Warm sunset practice light with long shadows and dust.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Mentor-and-student two-shots, practice field wides and pitching close-ups.
+  atmosphere_and_mood: Keep the requested mood with earnest generational resolve.
+  rendering_and_quality: Warm straightforward sports frame with earnest emotional clarity.
+  key_features: Major sunset practice; generational mentors; clean designs; grit
+  creative_brief: "Takuya Mitsuda Major look: long-running baseball saga art with simple clean designs, father-and-son resolve, sunset practice fields and generational grit. Carry it through Major sunset practice, generational mentors, clean designs, grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-349.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

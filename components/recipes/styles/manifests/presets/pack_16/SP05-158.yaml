@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-158
 packId: pack_16
-name: Ecological Whisper Healing Style
+name: Yuki Urushibara - Ecological Whisper Healing
 styleAnchors:
-  - 'Ecological Whisper Healing Style'
-displayName: 'Ecological Whisper Healing'
+  - Yuki Urushibara - Ecological Whisper Healing
+displayName: Yuki Urushibara - Ecological Whisper Healing
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Quiet digital anime built from softened edges, selective detail and gentle integration
-    with painted backgrounds.
-  subject_treatment: >-
-    Keep requested forms recognizable. Let secondary contours recede and use partial detail
-    without omitting any detail the prompt requires.
-  color_and_tone: >-
-    Follow the supplied palette. If open, keep contrast muted and reserve a restrained
-    accent for the focal form.
-  lighting_and_shadow: >-
-    Use weak rim glow and soft darkness while retaining enough value separation to read the
-    subject.
-  texture_and_material: >-
-    Use fine paper-like grain and soft surface transitions only where they suit the depicted
-    material.
-  camera_and_composition: >-
-    Preserve the given frame; near-silent spacing may direct attention to existing negative
-    space.
-  atmosphere_and_mood: >-
-    Quiet tension may come from gaps and low contrast when compatible; follow the prompt's
-    emotional tone.
-  rendering_and_quality: >-
-    Balance selective detail and soft transitions with a clear focal silhouette; keep fine
-    marks subordinate.
-  key_features: >-
-    Softened edge; partial detail; weak rim glow; selective contrast; negative
-    space and painted-background integration.
-  creative_brief: "Apply selective detail, softened edges and restrained light to the prompt's existing content. Preserve its scene, camera and requested tone. Use it as a reusable look on any subject."
+  aesthetic: 'Yuki Urushibara Mushishi manga art: soft brush and pen lines, loose natural ink washes, quiet mountain villages and strange translucent life forms drawn with folk simplicity.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Urushibara simplicity, quiet plain faces, loose hair, rural clothes and calm unhurried gestures.
+  color_and_tone: Muted greens, earth browns and pale watercolor washes like her color pages.
+  lighting_and_shadow: Soft natural forest light and faint glowing life forms.
+  texture_and_material: Brush-pen lines, ink washes, watercolor bleeding and paper texture.
+  camera_and_composition: Quiet contemplative panels of forests, rivers and villages.
+  atmosphere_and_mood: Keep the requested mood with hushed healing calm.
+  rendering_and_quality: Gentle hand-drawn manga illustration with watercolor softness and quiet restraint.
+  key_features: Yuki Urushibara brushwork; watercolor pages; forest life forms; quiet villages
+  creative_brief: "Yuki Urushibara Mushishi manga art: soft brush and pen lines, loose natural ink washes, quiet mountain villages and strange translucent life forms drawn with folk simplicity. Carry it through Yuki Urushibara brushwork, watercolor pages, forest life forms, quiet villages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-158.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

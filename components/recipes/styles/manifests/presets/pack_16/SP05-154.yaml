@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-154
 packId: pack_16
-name: Clinical Nocturne Tactics Style
+name: Blood+ - Clinical Nocturne Tactics
 styleAnchors:
-  - 'Clinical Nocturne Tactics Style'
-displayName: 'Clinical Nocturne Tactics'
+  - Blood+ - Clinical Nocturne Tactics
+displayName: Blood+ - Clinical Nocturne Tactics
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A measured digital anime treatment where precise edge separation and grouped
-    shadows create a controlled image.
-  subject_treatment: >-
-    Retain the requested identity, pose and action. Clarify form with disciplined contours
-    and selective edge light.
-  color_and_tone: >-
-    If color is open, use cool blue and white accents against restrained dark neutrals.
-    Preserve explicit palette choices and keep values clearly separated.
-  lighting_and_shadow: >-
-    Pair broad, even illumination with a precise rim and compact shadow groups. Use
-    nocturnal contrast only when it suits the requested scene.
-  texture_and_material: >-
-    Keep digital ink fine, surfaces controlled and grain low. Add screen-like glow only to
-    luminous elements already present.
-  camera_and_composition: >-
-    Keep the requested camera and staging. Establish order through clean separation and
-    spacing.
-  atmosphere_and_mood: >-
-    Detachment or unease may come from measured spacing and cool contrast when compatible
-    with the requested tone.
-  rendering_and_quality: >-
-    Preserve clean line hierarchy, crisp silhouettes and soft background integration; avoid
-    bloom that obscures small forms.
-  key_features: >-
-    Precise rim separation; broad even light with grouped shadows; controlled
-    digital surfaces; measured spacing and clean silhouettes.
-  creative_brief: 'Use cool value separation, precise edges and grouped shadows only where they fit the prompt. Keep its camera, subject and intended mood. Use it as a reusable look on any subject.'
+  aesthetic: 'Production I.G Blood+ television look (2005): sober realistic designs by Chizu Hashii, military bases, vampires and grand cities at night, cold clinical palettes and tragic duty.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hashii realism, restrained faces, slender figures, military uniforms and dark formal clothes.
+  color_and_tone: Cold blue, clinical white, deep crimson and night black.
+  lighting_and_shadow: Cold clinical light, moonlit exteriors and harsh red emergency light.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Measured compositions, tactical rooms, silhouettes in windows at night.
+  atmosphere_and_mood: Keep the requested mood with cold tactical dread.
+  rendering_and_quality: Sober 2005 Production I.G television frame with realist restraint.
+  key_features: Production I.G realism; clinical night palette; vampires; tactical rooms
+  creative_brief: "Production I.G Blood+ television look (2005): sober realistic designs by Chizu Hashii, military bases, vampires and grand cities at night, cold clinical palettes and tragic duty. Carry it through Production I.G realism, clinical night palette, vampires, tactical rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-154.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-150
 packId: pack_16
-name: Crimson Threshold Embers Style
+name: Shakugan no Shana - Crimson Threshold Embers
 styleAnchors:
-  - 'Crimson Threshold Embers Style'
-displayName: 'Crimson Threshold Embers'
+  - Shakugan no Shana - Crimson Threshold Embers
+displayName: Shakugan no Shana - Crimson Threshold Embers
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    High-contrast digital anime organized around a clear division of value.
-  subject_treatment: >-
-    Keep the prompted identity, gesture and context. Use contour emphasis at existing
-    boundaries.
-  color_and_tone: >-
-    If no palette is given, use crimson against black, bone and smoky violet as restrained
-    accents; explicit colors override this scheme.
-  lighting_and_shadow: >-
-    Use red edge glow or ember-like highlights as light treatment on existing forms.
-  texture_and_material: >-
-    Keep digital ink and cel-like fills controlled; match grain and gloss to the materials
-    already depicted.
-  camera_and_composition: >-
-    Preserve the camera. A division between light and dark can organize existing shapes
-    within the supplied composition.
-  atmosphere_and_mood: >-
-    Suspense may come from a pause across contrasting value zones when requested; otherwise
-    follow the prompt's tone.
-  rendering_and_quality: >-
-    Keep the crimson edge accents crisp, value zones readable and background transitions
-    integrated.
-  key_features: >-
-    Optional crimson accent; red edge glow on existing forms; clear light-dark
-    division; controlled digital contour.
-  creative_brief: "Apply optional crimson edge light and divided value fields to the prompt's existing forms. Keep its scene, camera and palette intent. Use it as a reusable look on any subject."
+  aesthetic: 'J.C.Staff Shakugan no Shana television look (2005) with Noizi Ito designs: school streets frozen inside sealed fire domes, blazing crimson hair and eyes, and falling embers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big bright eyes, long hair turning crimson in battle and school or coat clothes.
+  color_and_tone: Crimson flame, black, ember orange and sealed-space grey.
+  lighting_and_shadow: Ember glow and flaming hair light in a frozen grey sealed world.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Frozen crowds, swordfights on rooftops and flame trails across the sky.
+  atmosphere_and_mood: Keep the requested mood with fiery resolute intensity.
+  rendering_and_quality: Vivid 2005 J.C.Staff television frame with ember effects.
+  key_features: Noizi Ito designs; crimson flames; sealed spaces; falling embers
+  creative_brief: "J.C.Staff Shakugan no Shana television look (2005) with Noizi Ito designs: school streets frozen inside sealed fire domes, blazing crimson hair and eyes, and falling embers. Carry it through Noizi Ito designs, crimson flames, sealed spaces, falling embers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired flame-haze girl with a black coat and katana
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-150.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a red-haired flame-haze girl with a black coat and katana, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

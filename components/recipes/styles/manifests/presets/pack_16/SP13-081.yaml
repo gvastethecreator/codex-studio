@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-081
 packId: pack_16
-name: Plague Year Chronicle Anime
+name: Uoto - Plague Year Chronicle
 styleAnchors:
-  - Plague Year Chronicle Anime
+  - Uoto - Plague Year Chronicle
   - dark medieval chronicle anime
   - masked doctors
-displayName: Plague Year Chronicle Anime
+displayName: Uoto - Plague Year Chronicle
 category: 6. Samurai & Medieval
 domain: dark medieval chronicle anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - plague
   - chronicle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils.'
-  subject_treatment: Keep the prompt's subject and setting; place it in a time of sickness and fear, with distance between people.
-  color_and_tone: Muted ash, mud brown and bone with sickly green and small candle-gold accents.
-  lighting_and_shadow: Dim overcast light and candlelight, heavy shadows in narrow streets and doorways.
-  texture_and_material: Rough wool, wax cloth, rotting timber and muddy cobbles drawn with thin nervous line.
-  camera_and_composition: Narrow alleys and doorways, figures isolated, empty space between them.
-  atmosphere_and_mood: Grim and hushed, fear and kindness sharing the same narrow, silent streets.
-  rendering_and_quality: Restrained prestige anime with muted painting and fine, careful detail.
-  creative_brief: "Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils. Carry it through masked doctors, empty streets, candle vigils, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: masked doctors; empty streets; candle vigils; muted palette
+  aesthetic: 'Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools.
+  color_and_tone: Black ink with fine tone and muted parchment tints.
+  lighting_and_shadow: Candlelight and grey dawn light with stark clear shadows.
+  texture_and_material: Clean fine pen line, tone and parchment texture.
+  camera_and_composition: Quiet dialogue framings, empty towns and dramatic reveals.
+  atmosphere_and_mood: Keep the requested mood with stark moral dread.
+  rendering_and_quality: Clean fine-line historical manga illustration with quiet unsettling tension.
+  creative_brief: "Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread. Carry it through Uoto clean line, medieval Europe, candlelight, moral dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Uoto clean line; medieval Europe; candlelight; moral dread
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -46,9 +47,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +68,7 @@ taxonomy:
     - plague
     - chronicle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

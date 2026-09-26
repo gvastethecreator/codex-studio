@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-160
 packId: pack_16
-name: Rose Elite Comedy Style
+name: Ouran 2006 - Rose Elite Comedy
 styleAnchors:
-  - 'Rose Elite Comedy Style'
-displayName: 'Rose Elite Comedy'
+  - Ouran 2006 - Rose Elite Comedy
+displayName: Ouran 2006 - Rose Elite Comedy
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Expressive anime comedy through elastic reaction shapes, quick timing and refined, clean
-    linework.
-  subject_treatment: >-
-    Preserve each subject and action. Exaggerate expression and outer contour only enough to
-    make a reaction legible; do not change identity.
-  color_and_tone: >-
-    Retain the prompt's palette. If colors are open, use restrained accents and clear value
-    grouping.
-  lighting_and_shadow: >-
-    Keep facial highlights and shadow shapes simple so a small expression change reads
-    immediately.
-  texture_and_material: >-
-    Use clean ink and controlled digital fills; texture only surfaces present in the prompt.
-  camera_and_composition: >-
-    Use setup-pause-payoff spacing and quick visual beats within the requested frame and
-    cast.
-  atmosphere_and_mood: >-
-    Deadpan escalation and humane absurdity can support humor when asked; preserve other
-    requested tones.
-  rendering_and_quality: >-
-    Keep expression contours crisp and compositions readable; avoid clutter that competes
-    with the reaction.
-  key_features: >-
-    Elastic expression; readable reaction contours; quick-pause timing; refined lines with
-    clear value grouping.
-  creative_brief: 'Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve its subjects, framing and chosen tone. Use it as a reusable look on any subject.'
+  aesthetic: 'BONES Ouran High School Host Club television look (2006): pink rose-petal backgrounds, sparkling bishonen, lavish academy salons and fast gag reaction shots.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with elegant bishonen designs, slim bodies, sparkling eyes, tailored suits and comedic chibi reactions.
+  color_and_tone: Rose pink, champagne gold, pastel lavender and crisp white.
+  lighting_and_shadow: Sparkling bright light with rose-petal glow and soft bloom.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Posed group portraits, sudden gag close-ups and salon wides.
+  atmosphere_and_mood: Keep the requested mood with lavish comedic flirtation.
+  rendering_and_quality: Glossy 2006 BONES television frame with sparkle and rose backgrounds.
+  key_features: Ouran rose backgrounds; sparkling bishonen; lavish salons; gag reactions
+  creative_brief: "BONES Ouran High School Host Club television look (2006): pink rose-petal backgrounds, sparkling bishonen, lavish academy salons and fast gag reaction shots. Carry it through Ouran rose backgrounds, sparkling bishonen, lavish salons, gag reactions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-160.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

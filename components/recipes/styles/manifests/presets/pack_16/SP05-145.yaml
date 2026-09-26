@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-145
 packId: pack_16
-name: Sky-Surf Romantic Momentum Style
+name: Eureka Seven - Sky-Surf Romantic Momentum
 styleAnchors:
-  - 'Sky-Surf Romantic Momentum Style'
-displayName: 'Sky-Surf Romantic Momentum'
+  - Eureka Seven - Sky-Surf Romantic Momentum
+displayName: Eureka Seven - Sky-Surf Romantic Momentum
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A gentle digital-anime finish built from fine contours, smooth transitions
-    and integrated background paint.
-  subject_treatment: >-
-    Preserve the prompt's identity, pose and action. Keep contour emphasis light and
-    expression readable.
-  color_and_tone: >-
-    If color is unspecified, use soft blush, open blue and warm highlights as optional
-    accents; obey any requested palette.
-  lighting_and_shadow: >-
-    Favor gentle highlight transitions and clear soft shadow while respecting the requested
-    light direction.
-  texture_and_material: >-
-    Use smooth digital fills and softly integrated background paint; follow the materials
-    actually present.
-  camera_and_composition: >-
-    Keep the requested viewpoint and staging; maintain the supplied action and subject
-    relationships.
-  atmosphere_and_mood: >-
-    A sense of lift or momentum may support a compatible prompt; its emotional tone remains
-    prompt-led.
-  rendering_and_quality: >-
-    Keep the subject contours clean and background transitions soft without flattening
-    depth.
-  key_features: >-
-    Fine contours; gentle color transitions; optional blush-blue-warm accents; clear
-    integration with painted backgrounds.
-  creative_brief: "Apply the fine line, soft transitions and optional warm accents to the existing scene. Preserve the prompt's content and camera. Use it as a reusable look on any subject."
+  aesthetic: 'BONES Eureka Seven television look (2005) with Kenichi Yoshida designs: airy sky-surfing, boards riding trapar waves, soft pastels, big skies and youth romance.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yoshida designs, clean simple faces, lanky teens and adults in streetwear and flight gear.
+  color_and_tone: Sky cyan, pastel green, sunset peach and trapar glow.
+  lighting_and_shadow: Big open sky light, trapar wave glow and golden sunsets.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Sweeping aerial shots, surfing arcs across clouds and cockpit views.
+  atmosphere_and_mood: Keep the requested mood with buoyant youthful momentum.
+  rendering_and_quality: Airy 2005 BONES television frame with open-sky freedom.
+  key_features: Kenichi Yoshida designs; sky surfing; pastel skies; trapar waves
+  creative_brief: "BONES Eureka Seven television look (2005) with Kenichi Yoshida designs: airy sky-surfing, boards riding trapar waves, soft pastels, big skies and youth romance. Carry it through Kenichi Yoshida designs, sky surfing, pastel skies, trapar waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-145.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

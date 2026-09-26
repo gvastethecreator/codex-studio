@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-358
 packId: pack_16
-name: Comeback Grit Impact Style
+name: George Morikawa - Comeback Grit Impact
 styleAnchors:
-  - Comeback Grit Impact Style
-displayName: Comeback Grit Impact
+  - George Morikawa - Comeback Grit Impact
+displayName: George Morikawa - Comeback Grit Impact
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Rugby comeback anime of mud and grit: scrums, tackles, rain and battered players refusing to lose.'
-  subject_treatment: Keep the prompt's subject and action; make it muddy, battered and still pushing forward against resistance.
-  color_and_tone: Mud brown, torn jersey colors and stormy grey sky with white rain streaks.
-  lighting_and_shadow: Overcast stadium light, wet highlights on mud and skin, heavy dark sky.
-  texture_and_material: Mud splatter, torn fabric, grass clumps and rain drawn with gritty line.
-  camera_and_composition: Low ground-level shots inside scrums and wide frames of desperate final runs.
-  atmosphere_and_mood: Gritty and defiant, a battered team finding one more push in the final minute.
-  rendering_and_quality: Heavy, gritty sports anime with textured mud and rain effects.
-  key_features: mud; scrums; rain; final push
-  creative_brief: "Rugby comeback anime of mud and grit: scrums, tackles, rain and battered players refusing to lose. Carry it through mud, scrums, rain, final push. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'George Morikawa Hajime no Ippo look: thick bold manga lines, heavy impact punches, sweat and spit spray, bruised faces and gritty boxing gyms.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Morikawa designs, sturdy bodies, heavy brows, bruised swollen faces and taped hands.
+  color_and_tone: Gritty browns, blood red accents, sweat white and dim gym tones.
+  lighting_and_shadow: Hard ring lights and dusty gym light with heavy shadow.
+  texture_and_material: Thick bold manga ink, speed lines, sweat spray and impact bursts.
+  camera_and_composition: Impact freeze punches, low ring angles and corner-stool close-ups.
+  atmosphere_and_mood: Keep the requested mood with gritty comeback determination.
+  rendering_and_quality: Hard-hitting sports manga illustration with thick impact lines.
+  key_features: George Morikawa impact; thick lines; bruised faces; gritty gyms
+  creative_brief: "George Morikawa Hajime no Ippo look: thick bold manga lines, heavy impact punches, sweat and spit spray, bruised faces and gritty boxing gyms. Carry it through George Morikawa impact, thick lines, bruised faces, gritty gyms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-358.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

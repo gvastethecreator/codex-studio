@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-368
 packId: pack_16
-name: Midnight Jazz Ascension Style
+name: Shinichi Ishizuka - Midnight Jazz Ascension
 styleAnchors:
-  - Midnight Jazz Ascension Style
-displayName: Midnight Jazz Ascension
+  - Shinichi Ishizuka - Midnight Jazz Ascension
+displayName: Shinichi Ishizuka - Midnight Jazz Ascension
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Jazz anime of midnight ascension: smoky clubs, saxophone solos, swinging lines and improvisation drawn as rising curves.'
-  subject_treatment: Keep the prompt's subject and action; give it an improvised, swinging rhythm with music flowing as curving lines.
-  color_and_tone: Smoky navy and amber with brass gold and a cool blue spotlight.
-  lighting_and_shadow: One spotlight through smoke, dark tables and bright instrument highlights.
-  texture_and_material: Smoke haze, brass keys, piano lacquer and velvet drapes in soft cel.
-  camera_and_composition: Low stage angles and flowing camera moves that follow the solo.
-  atmosphere_and_mood: Late-night and elated, a solo climbing higher than the player ever dared.
-  rendering_and_quality: Moody performance anime with smoke effects and flowing musical curves.
-  key_features: saxophone solo; smoke spotlight; flowing curves; midnight club
-  creative_brief: "Jazz anime of midnight ascension: smoky clubs, saxophone solos, swinging lines and improvisation drawn as rising curves. Carry it through saxophone solo, smoke spotlight, flowing curves, midnight club. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments.
+  color_and_tone: Deep blue, smoky amber, brass gold and black.
+  lighting_and_shadow: Smoky basement club spotlights and sweat-glistening highlights on skin.
+  texture_and_material: Rough expressive ink, hatching and abstract music energy shapes.
+  camera_and_composition: Close-ups of straining players, crowd wides and abstract music visions.
+  atmosphere_and_mood: Keep the requested mood with ecstatic raw passion.
+  rendering_and_quality: Rough expressive jazz manga illustration with abstract energy.
+  key_features: Ishizuka jazz realism; sweat; smoky clubs; abstract music
+  creative_brief: "Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy. Carry it through Ishizuka jazz realism, sweat, smoky clubs, abstract music. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-368.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

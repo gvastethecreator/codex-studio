@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-146
 packId: pack_16
-name: Velvet Covenant Gothic Style
+name: Yana Toboso - Velvet Covenant Gothic
 styleAnchors:
-  - 'Velvet Covenant Gothic Style'
-displayName: 'Velvet Covenant Gothic'
+  - Yana Toboso - Velvet Covenant Gothic
+displayName: Yana Toboso - Velvet Covenant Gothic
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Gothic anime defined by ornate shadow shapes, polished edge light and soft, velvety dark
-    values.
-  subject_treatment: >-
-    Preserve the supplied identity and pose. Use restrained contours and selective edge
-    highlights.
-  color_and_tone: >-
-    Where palette is open, use black, crimson, bone white, violet and polished-gold accents;
-    retain requested hues.
-  lighting_and_shadow: >-
-    Use a firm rim against deep, soft shadow, with a small warm glow only when compatible
-    with the prompt.
-  texture_and_material: >-
-    Contrast matte dark areas with polished highlights on surfaces already present.
-  camera_and_composition: >-
-    Honor the requested camera and staging; keep ornament subordinate to the main
-    silhouette.
-  atmosphere_and_mood: >-
-    Solemnity or tension can follow the prompt's requested mood.
-  rendering_and_quality: >-
-    Keep decorative edges precise, shadows soft and backgrounds integrated without losing
-    contour detail.
-  key_features: >-
-    Ornate shadow; polished rim over velvety dark values; controlled warm glow;
-    matte-to-gloss contrast.
-  creative_brief: 'Use dark value shapes, precise edge light and subject-dependent surface contrast. Preserve the requested scene, colors and composition. Use it as a reusable look on any subject.'
+  aesthetic: 'Yana Toboso Black Butler look: Victorian gothic manga art, elegant tailcoats, lace and velvet, demonic contracts, candlelit manors and fine ornamental detail.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Toboso designs, slender elegant bodies, sharp eyes, Victorian formal clothes and gloved hands.
+  color_and_tone: Black velvet, deep crimson, candle gold and bone white.
+  lighting_and_shadow: Flickering candlelight, deep manor shadows and small demonic red eye glints.
+  texture_and_material: Fine ink linework, lace and embroidery detail, screentone and gothic ornament.
+  camera_and_composition: Formal manor compositions, elegant close-ups and staircase scenes.
+  atmosphere_and_mood: Keep the requested mood with elegant sinister devotion.
+  rendering_and_quality: Refined gothic manga illustration with Victorian ornamental detail.
+  key_features: Yana Toboso Victorian gothic; tailcoats; candlelight; demonic contract
+  creative_brief: "Yana Toboso Black Butler look: Victorian gothic manga art, elegant tailcoats, lace and velvet, demonic contracts, candlelit manors and fine ornamental detail. Carry it through Yana Toboso Victorian gothic, tailcoats, candlelight, demonic contract. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black-haired demon butler with a pentagram on the hand
+  - a boy earl with an eyepatch
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-146.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a black-haired demon butler with a pentagram on the hand, a boy earl with an eyepatch, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

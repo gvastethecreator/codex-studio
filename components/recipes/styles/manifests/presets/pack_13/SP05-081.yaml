@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-081
 packId: pack_13
-name: KyoAni Shared-Warmth Microacting
+name: Kyoto Animation - Shared-Warmth Microacting
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,16 +13,16 @@ tags:
   - slice-of-life-and-moe
   - reference-title
 visualDna:
-  aesthetic: 'Rounded 2D animation contours taper to fine ends and settle into compact cel shadows; expression reads through precise facial marks rather than caricature.'
-  subject_treatment: 'Keep the prompted identity, age, proportions, costume, and action; use minute eyelid, brow, and mouth accents only to carry the supplied expression.'
-  color_and_tone: 'Separate gentle warm neutrals from cool accents in clear value groups; let the requested palette set the hues and reserve saturation for existing focal forms.'
-  lighting_and_shadow: 'Use broad soft light, shallow cel shadows, and a thin clean highlight edge; follow the stated direction without adding a bounce source.'
-  texture_and_material: 'Favor smooth painted fills with sparse fine marks on surfaces already present; keep texture subordinate to contour and preserve each prompted material.'
-  camera_and_composition: 'Preserve the requested crop, viewpoint, scale, spacing, and count; create separation through contour overlap and a quiet detail hierarchy within the frame.'
-  atmosphere_and_mood: 'Keep the requested mood; make subtle expression legible without turning a neutral scene shy, comforting, or cheerful.'
-  rendering_and_quality: 'Use clean closed contours, stable proportions, readable facial features, and restrained soft transitions; avoid a glossy digital finish.'
-  key_features: 'Fine tapered contours; minute facial marks; compact soft cel shadows; gentle warm and cool separation; sparse surface detail.'
-  creative_brief: 'Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props. Use it as a reusable look on any subject.'
+  aesthetic: 'Kyoto Animation television style of its slice-of-life band and club series: soft rounded character designs, large luminous layered eyes, glossy hair highlights, immaculate cleanup lines and tiny precise hand, foot and hair acting.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw adults with soft rounded faces, big glossy eyes with several highlight layers and small expressive gestures of hands, shoulders and feet.
+  color_and_tone: Pastel warm palette, cream, peach, sky blue and soft teal, with gentle color-graded light.
+  lighting_and_shadow: Diffuse window light, soft two-tone cel shadows, subtle lens flare and warm bloom on highlights.
+  texture_and_material: Clean digital cel paint, thin colored lines, detailed photo-traced backgrounds with shallow-focus bokeh.
+  camera_and_composition: Intimate close shots of hands and faces, shallow depth of field, leg and object inserts, gentle eye-level framing.
+  atmosphere_and_mood: Keep the requested mood with tender shared everyday warmth.
+  rendering_and_quality: Polished high-budget television animation frame with film-like focus and grading.
+  key_features: Kyoto Animation cel look; layered glossy eyes; small hand acting; bokeh backgrounds; pastel diffuse light
+  creative_brief: "Kyoto Animation television style of its slice-of-life band and club series: soft rounded character designs, large luminous layered eyes, glossy hair highlights, immaculate cleanup lines and tiny precise hand, foot and hair acting. Carry it through Kyoto Animation cel look, layered glossy eyes, small hand acting, bokeh backgrounds, pastel diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -47,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-081.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kyoto Animation - Shared-Warmth Microacting
+styleAnchors:
+  - Kyoto Animation - Shared-Warmth Microacting

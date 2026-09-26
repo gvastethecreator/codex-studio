@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-084
 packId: pack_16
-name: Onmyoji Talisman Court Anime
+name: Reiko Okano - Onmyoji Talisman Court
 styleAnchors:
-  - Onmyoji Talisman Court Anime
+  - Reiko Okano - Onmyoji Talisman Court
   - Heian spirit exorcism anime
   - layered silk robes
-displayName: Onmyoji Talisman Court Anime
+displayName: Reiko Okano - Onmyoji Talisman Court
 category: 6. Samurai & Medieval
 domain: Heian spirit exorcism anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - onmyoji
   - talisman
   - anime
+  - reference-title
 visualDna:
-  aesthetic: Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance.
-  subject_treatment: Keep the prompt's subject and setting; add the presence of spirits and glowing sealing marks only where the prompt allows supernatural elements.
-  color_and_tone: Layered Heian robe colors of plum, pale green and white with soft spirit-light blue.
-  lighting_and_shadow: Soft night garden light and glowing talisman light casting cool highlights on silk.
-  texture_and_material: Layered silk robes, paper talismans, lacquered caps and misty gardens in fine line.
-  camera_and_composition: Elegant horizontal compositions across verandas and gardens with drifting spirit shapes.
-  atmosphere_and_mood: Mysterious and graceful, polite court life brushing against a hidden spirit world.
-  rendering_and_quality: Elegant prestige anime with fine line, soft glows and gentle painted gardens.
-  creative_brief: Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance. Carry it through layered silk robes, glowing talismans, night garden, spirit mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
-  key_features: layered silk robes; glowing talismans; night garden; spirit mist
+  aesthetic: 'Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps.
+  color_and_tone: Plum, ink black, gold and pale mist blue.
+  lighting_and_shadow: Soft moonlight, glowing talismans and misty garden light.
+  texture_and_material: Delicate fine line, flowing robe patterns and mystical diagrams.
+  camera_and_composition: Elegant garden veranda compositions and circular mystical diagram layouts around figures.
+  atmosphere_and_mood: Keep the requested mood with serene mystical elegance.
+  rendering_and_quality: Refined elegant manga illustration with mystical detail and flowing court grace.
+  creative_brief: "Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes. Carry it through Reiko Okano elegance, Heian court, talismans, flowing robes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Reiko Okano elegance; Heian court; talismans; flowing robes
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - onmyoji
     - talisman
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

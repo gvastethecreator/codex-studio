@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-319
 packId: pack_16
-name: Strategic Pop Duality Style
+name: Legend of the Galactic Heroes - Strategic Pop Duality
 styleAnchors:
-  - 'Strategic Pop Duality Style'
-displayName: 'Strategic Pop Duality'
+  - Legend of the Galactic Heroes - Strategic Pop Duality
+displayName: Legend of the Galactic Heroes - Strategic Pop Duality
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use separate requested forms through color grouping without implying extra subjects; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use bright primary hues and ink-dark accents. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as clean opposing cel planes with consistent light direction; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply smooth matte paint with a trace of offset-print grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use contrasting planes arranged within the existing spatial relationships; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through opposing color planes and clean geometry; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use balanced geometry, stable contours and restrained printed texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Legend of the Galactic Heroes OVA look (1988): classical-music space opera, rival commanders in black and white uniforms, fleets as geometric formations and theatrical political drama.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with elegant eighties OVA designs, refined faces, long hair and crisp military uniforms and capes.
+  color_and_tone: Imperial black and silver, alliance green, gold and deep space navy.
+  lighting_and_shadow: Grand hall light, bridge glow and fleet beam flashes.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Formal compositions of commanders, grand fleets, chessboard-like battle maps.
+  atmosphere_and_mood: Keep the requested mood with grand strategic drama.
+  rendering_and_quality: Refined 1980s OVA frame with classical grandeur and formal symmetry.
+  key_features: Galactic Heroes grandeur; rival commanders; fleet formations; classical space opera
+  creative_brief: "Legend of the Galactic Heroes OVA look (1988): classical-music space opera, rival commanders in black and white uniforms, fleets as geometric formations and theatrical political drama. Carry it through Galactic Heroes grandeur, rival commanders, fleet formations, classical space opera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-319.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

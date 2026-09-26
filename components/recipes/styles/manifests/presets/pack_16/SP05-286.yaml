@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-286
 packId: pack_16
-name: Seasonal Intimacy Realism Style
+name: Wolf Children - Seasonal Intimacy Realism
 styleAnchors:
-  - 'Seasonal Intimacy Realism Style'
-displayName: 'Seasonal Intimacy Realism'
+  - Wolf Children - Seasonal Intimacy Realism
+displayName: Wolf Children - Seasonal Intimacy Realism
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Seasonal naturalism: close deliberate ink at touch points, softly joined midtone masses, and
-    restrained surface grain.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Allow precise
-    contours at existing contact points without changing age, anatomy, or emotional read.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, work with muted olive,
-    russet, cream, and blue-gray; let contrast shift gently while local colors stay true.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use a soft directional key, warm reflected
-    edge, and cooler shadow, all consistent with the stated source.
-  texture_and_material: >-
-    Apply texture only to materials already present. Apply short hatches to existing tactile
-    materials only; leave smooth areas smooth and invent no material grain.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Cluster detail at already
-    legible focal areas and soften secondary values without reframing.
-  atmosphere_and_mood: >-
-    Keep user mood; naturalistic surface detail does not force seasonal nostalgia or intimacy.
-  rendering_and_quality: >-
-    Preserve believable anatomy, restrained texture density, and clear focal contours without
-    photographic or 3D drift.
-  key_features: >-
-    Close contour detail; joined midtones; olive-russet palette; restrained material grain.
-  creative_brief: 'Use close contour detail; joined midtones; olive-russet palette; restrained material grain. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes.
+  color_and_tone: Fresh greens, snow white, soft sky blue and warm tatami browns.
+  lighting_and_shadow: Natural seasonal light carried by backgrounds, while characters stay flat and unshaded.
+  texture_and_material: Clean thin outlines with no shadow tones on figures, painterly photographic backgrounds, snow and grass detail.
+  camera_and_composition: Long lateral tracking shots through seasons, wide farmhouse frames, gentle close-ups.
+  atmosphere_and_mood: Keep the requested mood with tender everyday devotion.
+  rendering_and_quality: Warm Studio Chizu feature frame with flat characters on lush backgrounds.
+  key_features: Mamoru Hosoda flat unshaded characters; rural seasons; painted backgrounds; gentle realism
+  creative_brief: "Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields. Carry it through Mamoru Hosoda flat unshaded characters, rural seasons, painted backgrounds, gentle realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-286.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

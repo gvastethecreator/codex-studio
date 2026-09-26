@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-082
 packId: pack_16
-name: Tournament Pageantry Anime
+name: Juu Ayakura - Tournament Pageantry
 styleAnchors:
-  - Tournament Pageantry Anime
+  - Juu Ayakura - Tournament Pageantry
   - medieval tournament anime
   - striped pavilions
-displayName: Tournament Pageantry Anime
+displayName: Juu Ayakura - Tournament Pageantry
 category: 6. Samurai & Medieval
 domain: medieval tournament anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - tournament
   - pageantry
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky.'
-  subject_treatment: Keep the prompt's subject and setting; surround it with festival color, banners and an excited watching crowd.
-  color_and_tone: Saturated heraldic stripes of red, gold, blue and green against clear summer sky blue.
-  lighting_and_shadow: Bright midday sun with crisp short shadows and glints on polished metal.
-  texture_and_material: Silk banners, striped canvas, polished armor and trampled grass in clean cel.
-  camera_and_composition: Wide festive frames with pavilions and stands, or dynamic close shots at the lists.
-  atmosphere_and_mood: Festive and competitive, a whole town cheering for its champions on a sunny day.
-  rendering_and_quality: Colorful prestige anime with crisp detail and lively crowd animation.
-  creative_brief: "Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky. Carry it through striped pavilions, banners, cheering crowd, bright sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: striped pavilions; banners; cheering crowd; bright sun
+  aesthetic: 'Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes.
+  color_and_tone: Warm autumn gold, festival reds, cream and sky blue.
+  lighting_and_shadow: Soft warm festival daylight, bright striped awnings and evening lantern glow.
+  texture_and_material: Painterly soft digital color with clean line art.
+  camera_and_composition: Festive crowd scenes, pavilions and charming character framing.
+  atmosphere_and_mood: Keep the requested mood with warm festive pageantry.
+  rendering_and_quality: Warm painterly light novel illustration look with charming character detail.
+  creative_brief: "Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters. Carry it through Juu Ayakura warmth, medieval fairs, pavilions, festival light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Juu Ayakura warmth; medieval fairs; pavilions; festival light
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - tournament
     - pageantry
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

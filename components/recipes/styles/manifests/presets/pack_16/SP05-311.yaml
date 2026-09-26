@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-311
 packId: pack_16
-name: Rusted Eco Hope Style
+name: Future Boy Conan - Rusted Eco Hope
 styleAnchors:
-  - 'Rusted Eco Hope Style'
-displayName: 'Rusted Eco Hope'
+  - Future Boy Conan - Rusted Eco Hope
+displayName: Future Boy Conan - Rusted Eco Hope
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use uneven outer marks around intact, readable silhouettes and stable anatomy; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use muted oxide red, olive, warm stone and cloudy blue. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as broad, low-chroma cel shadows with a firm silhouette edge; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte pigment mottling, sparse dry brush and fine transfer grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use wide quiet intervals and low-contrast transitions within the requested crop; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through weathered mark texture and spacious value transitions; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use sparse, aged-looking marks while keeping faces, edges and small forms legible; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Hayao Miyazaki television animation as in Future Boy Conan (1978): simple bouncy character designs, rusted post-apocalyptic machines, sunlit islands and sea, and elastic action.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with early Miyazaki designs, round faces, dot eyes, sturdy bodies and exaggerated elastic running and leaping.
+  color_and_tone: Sea blue, island green, rust orange and warm sunlit cream.
+  lighting_and_shadow: Bright outdoor daylight with simple cel shadows and sparkling sea.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Wide seaside vistas, dynamic chases across machines and cliffs.
+  atmosphere_and_mood: Keep the requested mood with hopeful rugged adventure.
+  rendering_and_quality: Lively 1978 hand-drawn television frame with energetic acting.
+  key_features: Early Miyazaki TV; rusted machines; island sea; elastic action; round faces
+  creative_brief: "Hayao Miyazaki television animation as in Future Boy Conan (1978): simple bouncy character designs, rusted post-apocalyptic machines, sunlit islands and sea, and elastic action. Carry it through Early Miyazaki TV, rusted machines, island sea, elastic action, round faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-311.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

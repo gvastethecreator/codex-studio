@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-164
 packId: pack_16
-name: Wet Techno-Noir Consciousness Style
+name: Ghost in the Shell 1995 - Wet Techno-Noir Consciousness
 styleAnchors:
-  - 'Wet Techno-Noir Consciousness Style'
-displayName: 'Wet Techno-Noir Consciousness'
+  - Ghost in the Shell 1995 - Wet Techno-Noir Consciousness
+displayName: Ghost in the Shell 1995 - Wet Techno-Noir Consciousness
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A wet techno-noir 90s cel treatment combines precise dark contours, clipped cyan reflections and
-    broken neon color bands. The slick surface effect follows depicted materials instead of making the
-    whole scene rainy.
-  subject_treatment: >-
-    Keep the requested identity and construction. Add sharp reflected edges only to surfaces that can
-    reflect them; do not add cybernetic parts, screens or wet clothing.
-  color_and_tone: >-
-    When open, use deep blue-black, electric cyan and a small magenta or red signal. Preserve
-    requested colors and place accents in distinct, clipped areas.
-  lighting_and_shadow: >-
-    Use hard cel shadows and thin synthetic-looking edge glints on existing reflective surfaces.
-    Retain supplied lighting; do not invent neon signs or a night street.
-  texture_and_material: >-
-    Combine fine scanline breaks with narrow reflective streaks and crisp painted fills. Apply gloss
-    to plausible materials and keep fabric, skin and matte surfaces distinct.
-  camera_and_composition: >-
-    Use parallel bands and reflected diagonals within the existing frame to suggest a techno-noir
-    cadence. Preserve perspective and object placement; add no city geometry.
-  atmosphere_and_mood: >-
-    Create an alert, cool visual tone through precise contrast and reflected color. Preserve the
-    requested mood without a crime or cyberpunk story.
-  rendering_and_quality: >-
-    Keep edges sharp, reflections bounded and scanline texture sparse. Avoid full-frame static, excess
-    bloom and generic neon wash.
-  key_features: >-
-    clipped cyan reflections; precise dark contours; sparse scanline bands over material-aware gloss
-  creative_brief: 'Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity, materials, lighting and composition; add no screens, neon signs, rain or cybernetic details. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Oshii film Ghost in the Shell (1995) with Hiroyuki Okiura designs: realistic sober characters, rain-soaked Hong Kong-like cityscapes, green-tinted grading and philosophical stillness.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okiura realism, calm serious faces, grounded anatomy and practical tactical clothing.
+  color_and_tone: Green-tinted grading, wet grey, teal neon and dim amber.
+  lighting_and_shadow: Diffuse rainy light, reflections in canals and cold monitor glow.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Long contemplative shots of the city, reflections, ferry rides and still observation.
+  atmosphere_and_mood: Keep the requested mood with quiet contemplative techno-noir.
+  rendering_and_quality: Precise 1995 Production I.G feature frame with cinematic realism.
+  key_features: Oshii stillness; Okiura realism; wet city; green grading; reflections
+  creative_brief: "Mamoru Oshii film Ghost in the Shell (1995) with Hiroyuki Okiura designs: realistic sober characters, rain-soaked Hong Kong-like cityscapes, green-tinted grading and philosophical stillness. Carry it through Oshii stillness, Okiura realism, wet city, green grading, reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a purple-haired cyborg major in a thermoptic suit
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-164.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a purple-haired cyborg major in a thermoptic suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

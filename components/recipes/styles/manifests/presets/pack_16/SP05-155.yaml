@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-155
 packId: pack_16
-name: Noble Arcane Romcom Style
+name: Familiar of Zero - Noble Arcane Romcom
 styleAnchors:
-  - 'Noble Arcane Romcom Style'
-displayName: 'Noble Arcane Romcom'
+  - Familiar of Zero - Noble Arcane Romcom
+displayName: Familiar of Zero - Noble Arcane Romcom
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Polished digital anime with upright contour, refined shape boundaries and measured
-    luminous accents.
-  subject_treatment: >-
-    Keep the prompt's identity and pose. Favor composed vertical lines and restrained
-    expression.
-  color_and_tone: >-
-    If open, use royal blue, gold, pearl and clean white as optional accents. Preserve the
-    requested palette.
-  lighting_and_shadow: >-
-    Use controlled rim and clean shadow shapes; add a subtle glow only when the prompt
-    includes a compatible luminous element.
-  texture_and_material: >-
-    Keep fills smooth and line detail precise. Render fabric, ornament or reflective
-    surfaces only when present.
-  camera_and_composition: >-
-    Honor the requested camera. Keep contour and light hierarchy orderly.
-  atmosphere_and_mood: >-
-    Elegant restraint can support the prompt's tone.
-  rendering_and_quality: >-
-    Preserve clean silhouettes, restrained effects and integrated background paint without
-    excessive gloss.
-  key_features: >-
-    Upright contour; controlled expression; optional royal-blue and gold accents; precise
-    line with restrained glow.
-  creative_brief: "Use refined contour, orderly light and optional palette accents while preserving the prompt's subject, action and camera. Use it as a reusable look on any subject."
+  aesthetic: 'J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions.
+  color_and_tone: Pastel pink, academy navy, sky blue and castle stone cream.
+  lighting_and_shadow: Bright fantasy daylight, magic sparkles and slapstick explosion flashes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Academy courtyard wides, slapstick reaction close-ups and magic duels.
+  atmosphere_and_mood: Keep the requested mood with flustered comic romance.
+  rendering_and_quality: Bright mid-2000s light novel adaptation television frame with glossy eyes.
+  key_features: Eiji Usatsuka designs; pastel academy; wands and cloaks; tsundere slapstick
+  creative_brief: "J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes. Carry it through Eiji Usatsuka designs, pastel academy, wands and cloaks, tsundere slapstick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-155.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

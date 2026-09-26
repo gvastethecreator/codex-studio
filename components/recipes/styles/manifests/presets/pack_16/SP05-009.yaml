@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-009
 packId: pack_16
-name: Hyper-Dense Cyber-Retro Infrastructure Style
+name: Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure
 styleAnchors:
-  - 'Hyper-Dense Cyber-Retro Infrastructure Style'
-displayName: 'Hyper-Dense Cyber-Retro Infrastructure'
+  - Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure
+displayName: Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use a simple, dominant silhouette with detail concentrated only on forms already present; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use blue-black, cool gray and restrained cyan or magenta accents. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as layered hard cel shapes with narrow source-matched edge light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply fine ink grain and barely visible scan-like texture without accumulated noise as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use busy detail pockets balanced by broad clear planes within the original layout; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through localized detail density against broad clear planes; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use preserve the outer silhouette and keep dense linework subordinate to it; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Koji Morimoto and Studio 4°C late-eighties OVA look: hyper-dense hand-drawn machinery, tangled pipes, cables and signs, rough energetic lines and retro-future cities.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with loose energetic Morimoto designs, wiry figures, scruffy hair and industrial clothes dwarfed by machinery.
+  color_and_tone: Rust, sodium orange, grimy teal and deep shadow blue.
+  lighting_and_shadow: Smoky industrial light, sodium lamps and exhaust-lit haze.
+  texture_and_material: Hand-drawn dense line detail, painted cel grime, smoke and cable tangles.
+  camera_and_composition: Vertical canyon compositions, speeding bikes through machinery, fisheye moments.
+  atmosphere_and_mood: Keep the requested mood with restless industrial energy.
+  rendering_and_quality: Obsessively detailed hand-drawn OVA frame with rough energetic lines.
+  key_features: Koji Morimoto density; pipes and cables; retro-future city; rough lines; smoky haze
+  creative_brief: "Koji Morimoto and Studio 4°C late-eighties OVA look: hyper-dense hand-drawn machinery, tangled pipes, cables and signs, rough energetic lines and retro-future cities. Carry it through Koji Morimoto density, pipes and cables, retro-future city, rough lines, smoky haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-009.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

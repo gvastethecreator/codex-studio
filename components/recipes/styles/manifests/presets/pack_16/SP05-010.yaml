@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-010
 packId: pack_16
-name: Round Adventure Slapstick Style
+name: Akira Toriyama - Round Adventure Slapstick
 styleAnchors:
-  - 'Round Adventure Slapstick Style'
-displayName: 'Round Adventure Slapstick'
+  - Akira Toriyama - Round Adventure Slapstick
+displayName: Akira Toriyama - Round Adventure Slapstick
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,23 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use broad curved groupings and abbreviated interior marks without reshaping the subject; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use clear vermilion, soft yellow, ink blue and paper cream. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as one or two simple cel-shadow shapes with restrained highlights; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte opaque paint with slight paper-like color variation as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use compact pauses between simple graphic masses, without changing the pose; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through rounded marks and simplified shadow rhythm; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use uncluttered, expressive drawing with stable anatomy and clean paint edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Akira Toriyama early Dragon Ball manga and 1986 anime look: round clean shapes, cute chunky characters, rounded vehicles and capsule machines, desert adventures and slapstick martial arts.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Toriyama round chunky designs, big feet, simple clean lines, spiky or bowl hair and cheerful slapstick expressions.
+  color_and_tone: Bright primaries, desert tan, sky blue and orange accents.
+  lighting_and_shadow: Sunny clean daylight with simple one-tone cel shadows under figures.
+  texture_and_material: Clean crisp lines, flat cel color, rounded mechanical design details.
+  camera_and_composition: Playful dynamic action framing, wide deserts and cartoon chase shots.
+  atmosphere_and_mood: Keep the requested mood with playful goofy adventure.
+  rendering_and_quality: Crisp 1980s television frame with Toriyama clean design clarity.
+  key_features: Akira Toriyama roundness; chunky machines; slapstick martial arts; clean lines
+  creative_brief: "Akira Toriyama early Dragon Ball manga and 1986 anime look: round clean shapes, cute chunky characters, rounded vehicles and capsule machines, desert adventures and slapstick martial arts. Carry it through Akira Toriyama roundness, chunky machines, slapstick martial arts, clean lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky-haired boy with a monkey tail and power pole
+  - a flying orange cloud
+  - dragon balls with stars
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +51,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-010.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a spiky-haired boy with a monkey tail and power pole, a flying orange cloud, dragon balls with stars, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +73,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

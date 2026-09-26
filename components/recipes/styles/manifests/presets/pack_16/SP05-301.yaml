@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-301
 packId: pack_16
-name: Analog Space Opera Command Style
+name: Space Battleship Yamato - Analog Space Opera Command
 styleAnchors:
-  - 'Analog Space Opera Command Style'
-displayName: 'Analog Space Opera Command'
+  - Space Battleship Yamato - Analog Space Opera Command
+displayName: Space Battleship Yamato - Analog Space Opera Command
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use clear outer contours and spare inner marks that describe only existing structure; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use deep ink blue, pale bone, muted violet and a restrained warm accent. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as large dark cel groupings with thin highlights only along edges reached by the requested light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte painted fields, gentle airbrush transitions and subtle analog transfer grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use broad spaces around clustered shapes within the requested frame; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through scale contrast and broad spacing; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use broad value design, crisp focal contours and quiet background texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Leiji Matsumoto designed Space Battleship Yamato (1974): massive naval battleships in space drawn with dense mechanical detail, stern commanders on dim bridges, and heroic sacrifice.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Leiji designs, long faces, narrow eyes, stern expressions and military uniforms with high collars.
+  color_and_tone: Deep space black-blue, battleship rust red, steel grey and orange beam light.
+  lighting_and_shadow: Dim bridge instrument glow, beam flashes and explosions lighting hulls.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Low angles of colossal ships, bridge silhouettes against viewports, fleet formations.
+  atmosphere_and_mood: Keep the requested mood with solemn heroic resolve.
+  rendering_and_quality: Classic 1970s space opera television frame with detailed mechanical painting.
+  key_features: Leiji Matsumoto battleships; stern commanders; bridge glow; space naval opera
+  creative_brief: "Leiji Matsumoto designed Space Battleship Yamato (1974): massive naval battleships in space drawn with dense mechanical detail, stern commanders on dim bridges, and heroic sacrifice. Carry it through Leiji Matsumoto battleships, stern commanders, bridge glow, space naval opera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-hulled battleship with a wave motion gun
+  - existing franchise characters
+  - series logo or title lettering
   - realistic
   - 3d render
   - photo
@@ -55,14 +50,19 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-301.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a red-hulled battleship with a wave motion gun, existing franchise characters, series logo or title lettering, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-169
 packId: pack_16
-name: Wired Identity Dissolution Style
+name: Serial Experiments Lain - Wired Identity Dissolution
 styleAnchors:
-  - 'Wired Identity Dissolution Style'
-displayName: 'Wired Identity Dissolution'
+  - Serial Experiments Lain - Wired Identity Dissolution
+displayName: Serial Experiments Lain - Wired Identity Dissolution
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A wired 90s cel look fragments selected contours into offset exposures and interrupted horizontal
-    bands. Identity feels unstable through registration shifts, not through adding another character.
-  subject_treatment: >-
-    Preserve the requested identity and number of forms. Use a few offset contour fragments as a
-    printing or signal echo; never duplicate the subject or alter its defining features.
-  color_and_tone: >-
-    When color is open, set electric blue or violet accents against ink black and muted neutrals.
-    Preserve requested hues and keep color shifts narrow and purposeful.
-  lighting_and_shadow: >-
-    Use clean cel shadows with small displaced edge lights and occasional line interruptions. Retain
-    the requested lighting; do not add a screen or neon source.
-  texture_and_material: >-
-    Add sparse scanline breaks and slight color-registration slips over otherwise solid painted fills.
-    Keep the effect graphic and prevent noise from obscuring material.
-  camera_and_composition: >-
-    Use repeated edge fragments within the existing framing to suggest disorientation. Preserve camera
-    and form placement; do not multiply the scene.
-  atmosphere_and_mood: >-
-    Create unease through alignment changes and empty intervals only when compatible with the prompt.
-    Preserve its requested tone and avoid a digital-world narrative.
-  rendering_and_quality: >-
-    Keep one primary silhouette completely readable; limit offsets to short bands and edges. Avoid
-    severe glitch breakup or soft double exposure.
-  key_features: >-
-    offset contour fragments; interrupted horizontal scan bands; electric blue-violet registration
-    accents
-  creative_brief: 'Restyle the requested content with sparse registration shifts and fragmented cel contours. Preserve its identity, count, setting and composition; do not create duplicates, screens or a digital narrative. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshitoshi ABe designs and Ryutaro Nakamura direction as in Serial Experiments Lain (1998): eerie suburban stillness, humming power lines, red-dotted shadows and digital glitch dissolution.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with ABe designs, thin delicate lines, small quiet faces, bob haircuts and plain clothes.
+  color_and_tone: Washed-out whites, power-line grey, CRT blue and red speckled shadows.
+  lighting_and_shadow: Harsh washed-out sunlight, shadows filled with red dots, monitor glow in dark rooms.
+  texture_and_material: Thin line cel, digital glitch artifacts, noise and CRT scanlines.
+  camera_and_composition: Static uneasy framing, power lines crossing the sky, isolated figures.
+  atmosphere_and_mood: Keep the requested mood with eerie wired dissociation.
+  rendering_and_quality: Unsettling 1998 television frame with digital glitch atmosphere.
+  key_features: Yoshitoshi ABe designs; power lines; red-dot shadows; CRT glitch; eerie stillness
+  creative_brief: "Yoshitoshi ABe designs and Ryutaro Nakamura direction as in Serial Experiments Lain (1998): eerie suburban stillness, humming power lines, red-dotted shadows and digital glitch dissolution. Carry it through Yoshitoshi ABe designs, power lines, red-dot shadows, CRT glitch, eerie stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-169.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-035
 packId: pack_16
-name: Ritual Mask Geometry Anime
+name: Gekidan Inu Curry - Ritual Mask Geometry
 styleAnchors:
-  - Ritual Mask Geometry Anime
-displayName: Ritual Mask Geometry Anime
+  - Gekidan Inu Curry - Ritual Mask Geometry
+displayName: Gekidan Inu Curry - Ritual Mask Geometry
 category: 7. Horror
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - horror
+  - reference-title
 visualDna:
-  aesthetic: 'Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony.'
-  subject_treatment: Keep the prompt's subject and setting; frame it inside a symmetrical ceremony, with masks and geometric patterns where fitting.
-  color_and_tone: Black, bone white and deep red with firelight gold on mask edges.
-  lighting_and_shadow: Torch and bonfire light from below, flickering hard shadows across masked faces.
-  texture_and_material: Carved wooden masks, painted geometric patterns, rough robes and ash.
-  camera_and_composition: Strict symmetry with a central axis, processions leading to a vanishing point.
-  atmosphere_and_mood: Ceremonial and menacing, something ancient being honored in the wrong way.
-  rendering_and_quality: Graphic prestige anime with sharp pattern detail and strong symmetry.
-  key_features: geometric masks; strict symmetry; firelight from below; procession
-  creative_brief: "Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony. Carry it through geometric masks, strict symmetry, firelight from below, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people as simple silhouettes or clean anime figures surrounded by cut-paper collage creatures and geometric masks.
+  color_and_tone: Antique print sepia, candy pastels, black and sudden saturated reds.
+  lighting_and_shadow: Flat collage light where shapes glow by contrast rather than source.
+  texture_and_material: Cut-paper collage, antique engraving scraps, stamps and geometric patterns.
+  camera_and_composition: Flat layered collage compositions with symmetrical ritual layouts.
+  atmosphere_and_mood: Keep the requested mood with uncanny ritual nightmare.
+  rendering_and_quality: Surreal collage animation frame with storybook nightmare logic.
+  key_features: Inu Curry collage; antique print scraps; geometric masks; labyrinth
+  creative_brief: "Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures. Carry it through Inu Curry collage, antique print scraps, geometric masks, labyrinth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-035.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -68,6 +73,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - horror
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

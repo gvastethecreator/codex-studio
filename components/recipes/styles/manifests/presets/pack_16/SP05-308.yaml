@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-308
 packId: pack_16
-name: Eighties Neon Precision Noir Style
+name: City Hunter - Eighties Neon Precision Noir
 styleAnchors:
-  - 'Eighties Neon Precision Noir Style'
-displayName: 'Eighties Neon Precision Noir'
+  - City Hunter - Eighties Neon Precision Noir
+displayName: City Hunter - Eighties Neon Precision Noir
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use controlled proportions, sharp edge decisions and minimal interior marks; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use teal, fuchsia, cool gray and warm ivory. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as compact hard shadows and narrow highlight trims aligned to existing light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply smooth opaque cel fields with slight analog color drift and fine grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use exact alignments and measured intervals within the requested layout; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through precise edges and cool restrained values; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use polished cel separation without modern 3D gloss or broad bloom; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits.
+  color_and_tone: Neon pink and cyan, night navy, chrome and warm skin tones.
+  lighting_and_shadow: Neon night light, car headlights and reflections on glass towers.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Low angles under skyscrapers, car-side shots, gun-draw close-ups.
+  atmosphere_and_mood: Keep the requested mood with cool urban swagger.
+  rendering_and_quality: Stylish 1980s city-pop television frame with neon glamour.
+  key_features: Tsukasa Hojo realism; eighties Shinjuku neon; city pop glamour; sharp designs
+  creative_brief: "Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks. Carry it through Tsukasa Hojo realism, eighties Shinjuku neon, city pop glamour, sharp designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red hatchback with a partner in a mallet gag
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-308.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a red hatchback with a partner in a mallet gag, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

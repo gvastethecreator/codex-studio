@@ -5,825 +5,771 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-343',
-    name: 'Vertical Team Rally Energy Style',
-    displayName: 'Vertical Team Rally Energy',
-    styleAnchors: ['Vertical Team Rally Energy Style'],
+    name: 'Haikyuu!! - Vertical Team Rally Energy',
+    displayName: 'Haikyuu!! - Vertical Team Rally Energy',
+    styleAnchors: ['Haikyuu!! - Vertical Team Rally Energy'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings.',
+        'Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments.',
       subject_treatment:
-        "Keep the prompt's subject and action; push it upward into a peak moment of a jump, reach or leap, held for one breathless frame.",
-      color_and_tone:
-        'Gym-floor orange, jersey colors and bright ceiling white with deep sweat-lit shadows.',
+        'Preserve the requested identity, count, pose and action; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads.',
+      color_and_tone: 'Team orange, black, court honey wood and gym white light.',
       lighting_and_shadow:
-        'Overhead gym lights from above, strong rim on shoulders and hair at the top of the jump.',
+        'Bright gym fluorescents, backlit jump peaks and glowing sweat highlights.',
       texture_and_material:
-        'Polished wood floor, mesh net and damp jersey fabric drawn with clean cel.',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Extreme low angles looking up at airborne figures, the net slicing the frame.',
-      atmosphere_and_mood:
-        'Explosive and collective, a whole team lifting one player higher than possible.',
+        'Low angles under the net, jump-peak freeze frames and ball-level tracking shots.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring team exhilaration.',
       rendering_and_quality:
-        'Dynamic sports anime with speed lines, sweat drops and sharp anatomy at the peak.',
-      key_features: 'jump peak; low angle; net line; gym light rim',
+        'Energetic Production I.G sports frame with painterly slow-motion peaks.',
+      key_features: 'Haikyuu jumps; Furudate designs; orange and black; peak-moment freeze',
       creative_brief:
-        "Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings. Carry it through jump peak, low angle, net line, gym light rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments. Carry it through Haikyuu jumps, Furudate designs, orange and black, peak-moment freeze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-344',
-    name: 'Ego Pressure Breakout Style',
-    displayName: 'Ego Pressure Breakout',
-    styleAnchors: ['Ego Pressure Breakout Style'],
+    name: 'Blue Lock 2022 - Ego Pressure Breakout',
+    displayName: 'Blue Lock 2022 - Ego Pressure Breakout',
+    styleAnchors: ['Blue Lock 2022 - Ego Pressure Breakout'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target.',
+        'Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses.',
       subject_treatment:
-        "Keep the prompt's subject and action; exaggerate focus and hunger, distorting perspective toward the goal or target.",
-      color_and_tone: 'Night stadium blues and field green with electric cyan eye highlights.',
-      lighting_and_shadow:
-        'Floodlights from high angles, hard shadows under the eyes and glowing irises.',
-      texture_and_material: 'Grass blades, sweat and jersey fabric with graphic line overlays.',
+        'Preserve the requested identity, count, pose and action; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits.',
+      color_and_tone: 'Electric blue, black void, neon green eye glow and white lines.',
+      lighting_and_shadow: 'Stark black-void backgrounds with glowing eyes and rim-lit bodies.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Fisheye distortion toward the ball, extreme close-ups on eyes with the goal behind.',
-      atmosphere_and_mood:
-        'Predatory and obsessive, a player who wants the goal more than anything else.',
-      rendering_and_quality:
-        'Stylized sports anime with bold distortion, glowing eyes and sharp lines.',
-      key_features: 'predatory eyes; fisheye distortion; goal as target; floodlights',
+        'Close-ups on eyes, monster silhouette metaphors, low dynamic kick angles.',
+      atmosphere_and_mood: 'Keep the requested mood with predatory ego hunger.',
+      rendering_and_quality: 'Aggressive modern sports television frame with metaphor overlays.',
+      key_features: 'Blue Lock eyes; ego monsters; black void; puzzle metaphors',
       creative_brief:
-        "Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target. Carry it through predatory eyes, fisheye distortion, goal as target, floodlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses. Carry it through Blue Lock eyes, ego monsters, black void, puzzle metaphors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-345',
-    name: 'Nineties Physical Rivalry Style',
-    displayName: 'Nineties Physical Rivalry',
-    styleAnchors: ['Nineties Physical Rivalry Style'],
+    name: 'Slam Dunk 1993 - Nineties Physical Rivalry',
+    displayName: 'Slam Dunk 1993 - Nineties Physical Rivalry',
+    styleAnchors: ['Slam Dunk 1993 - Nineties Physical Rivalry'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a red-haired number ten in a red jersey, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Nineties basketball anime of bodies and rivalry: thick lines, heavy muscle, sweat and faces full of stubborn pride.',
+        'Toei Slam Dunk television look (1993): nineties cel basketball with tall realistic players, sweaty jerseys, hardwood gyms and comic delinquent reactions.',
       subject_treatment:
-        "Keep the prompt's subject and action; draw it with 90s cel weight, strong anatomy and confrontational poses.",
-      color_and_tone:
-        'Saturated 90s cel colors, court wood orange and team reds with film-warm skin tones.',
-      lighting_and_shadow:
-        'Arena spotlights with two-tone cel shadows and bright sweat highlights.',
-      texture_and_material: 'Thick ink lines, visible cel paint and light film grain.',
+        'Preserve the requested identity, count, pose and action; draw people with Inoue-derived nineties designs, tall athletic bodies, strong jaws, sweat and loose jerseys.',
+      color_and_tone: 'Red and white jerseys, honey hardwood and warm gym light.',
+      lighting_and_shadow: 'Warm gym light with simple cel shadows and sweat sparkle.',
+      texture_and_material: 'Nineties hand-painted cel, soft grain and painted gym backgrounds.',
       camera_and_composition:
-        'Face-offs framed shoulder to shoulder, dramatic low angles under the rim.',
-      atmosphere_and_mood:
-        'Stubborn and physical, two rivals refusing to give one inch of the court.',
-      rendering_and_quality: 'Classic 90s sports anime look with heavy line and grain.',
-      key_features: 'thick 90s line; muscle and sweat; face-offs; film grain',
+        'Under-the-rim angles, dunk freeze frames and sweaty rival face-offs.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy physical rivalry.',
+      rendering_and_quality: 'Classic 1993 Toei sports cel frame with physical impact.',
+      key_features: 'Slam Dunk nineties cel; tall players; hardwood gyms; delinquent comedy',
       creative_brief:
-        "Nineties basketball anime of bodies and rivalry: thick lines, heavy muscle, sweat and faces full of stubborn pride. Carry it through thick 90s line, muscle and sweat, face-offs, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Toei Slam Dunk television look (1993): nineties cel basketball with tall realistic players, sweaty jerseys, hardwood gyms and comic delinquent reactions. Carry it through Slam Dunk nineties cel, tall players, hardwood gyms, delinquent comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-346',
-    name: 'Phantom Teamplay Speed Style',
-    displayName: 'Phantom Teamplay Speed',
-    styleAnchors: ['Phantom Teamplay Speed Style'],
+    name: "Kuroko's Basketball - Phantom Teamplay Speed",
+    displayName: "Kuroko's Basketball - Phantom Teamplay Speed",
+    styleAnchors: ["Kuroko's Basketball - Phantom Teamplay Speed"],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow.',
+        "Production I.G Kuroko's Basketball television look (2012): colorful hair teams, glowing zone eyes with light trails, supernatural speed afterimages and glossy courts.",
       subject_treatment:
-        "Keep the prompt's subject and action; make it move with deceptive speed, afterimages and misdirected attention.",
-      color_and_tone: 'Cool arena blues and whites with a pale ghostly accent for the fast player.',
-      lighting_and_shadow:
-        'Bright arena light from above, with semi-transparent afterimages glowing softly behind the moving player.',
-      texture_and_material: 'Smooth cel with translucent motion trails and crisp ball highlights.',
-      camera_and_composition:
-        'Wide play frames with multiple afterimages and defenders looking the wrong way.',
-      atmosphere_and_mood:
-        'Slippery and clever, the thrill of something happening where nobody was looking.',
-      rendering_and_quality:
-        'Clean sports anime with translucent effects and precise choreography.',
-      key_features: 'afterimages; misdirection; translucent trails; wrong-way defenders',
+        'Preserve the requested identity, count, pose and action; draw people with Kuroko designs, tall lean players, vivid hair colors, glowing eye trails and jerseys.',
+      color_and_tone: 'Vivid team colors, sky blue, red, gold and glossy court reflections.',
+      lighting_and_shadow: 'Glowing eye trails, spotlight arenas and lightning-like aura streaks.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Speed afterimages, low court-level passes and dramatic slow motion.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny teamplay swagger.',
+      rendering_and_quality: 'Glossy Production I.G sports frame with supernatural speed effects.',
+      key_features: 'Glowing zone eyes; vivid hair; afterimages; glossy courts',
       creative_brief:
-        "Basketball anime of misdirection and speed: invisible passes, afterimages and players who seem to vanish into the flow. Carry it through afterimages, misdirection, translucent trails, wrong-way defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Kuroko's Basketball television look (2012): colorful hair teams, glowing zone eyes with light trails, supernatural speed afterimages and glossy courts. Carry it through Glowing zone eyes, vivid hair, afterimages, glossy courts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-347',
-    name: 'Uphill Endurance Breakaway Style',
-    displayName: 'Uphill Endurance Breakaway',
-    styleAnchors: ['Uphill Endurance Breakaway Style'],
+    name: 'Yowamushi Pedal - Uphill Endurance Breakaway',
+    displayName: 'Yowamushi Pedal - Uphill Endurance Breakaway',
+    styleAnchors: ['Yowamushi Pedal - Uphill Endurance Breakaway'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cycling anime of uphill suffering: steep roads, gritted teeth, legs burning and the summit always one curve away.',
+        'TMS Yowamushi Pedal television look (2013) from Wataru Watanabe designs: grimacing climbers, exaggerated sweat and strain, speed lines on steep roads and elastic comedic faces.',
       subject_treatment:
-        "Keep the prompt's subject and action; show sustained effort up a slope, fatigue and determination in every line.",
-      color_and_tone:
-        'Mountain greens and asphalt grey with jersey color accents and hot sweaty skin tones.',
-      lighting_and_shadow: 'Harsh sun through trees in dappled patches, sweat catching highlights.',
-      texture_and_material: 'Rough asphalt, carbon bike frames and soaked jerseys in crisp cel.',
-      camera_and_composition: 'Low side angles up the slope, riders tilted against the gradient.',
-      atmosphere_and_mood:
-        'Grueling and stubborn, pain turned into rhythm on a climb that never ends.',
-      rendering_and_quality:
-        'Detailed sports anime with mechanical accuracy and expressive strain.',
-      key_features: 'uphill gradient; gritted teeth; dappled sun; breakaway',
+        'Preserve the requested identity, count, pose and action; draw people with Watanabe designs, gangly cyclists, huge grimaces, round glasses, sweat spray and team kits.',
+      color_and_tone: 'Team kit yellow, road grey, mountain green and sky blue.',
+      lighting_and_shadow: 'Bright mountain daylight, heat shimmer and sweat highlights.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition:
+        'Steep road perspective, handlebar-level views and strained close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with screaming uphill determination.',
+      rendering_and_quality: 'Intense sports television frame with exaggerated strain expression.',
+      key_features: 'Yowamushi grimaces; steep climbs; speed lines; sweat spray',
       creative_brief:
-        "Cycling anime of uphill suffering: steep roads, gritted teeth, legs burning and the summit always one curve away. Carry it through uphill gradient, gritted teeth, dappled sun, breakaway. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "TMS Yowamushi Pedal television look (2013) from Wataru Watanabe designs: grimacing climbers, exaggerated sweat and strain, speed lines on steep roads and elastic comedic faces. Carry it through Yowamushi grimaces, steep climbs, speed lines, sweat spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-348',
-    name: 'Summer Precision Duel Style',
-    displayName: 'Summer Precision Duel',
-    styleAnchors: ['Summer Precision Duel Style'],
+    name: 'Ace of Diamond - Summer Precision Duel',
+    displayName: 'Ace of Diamond - Summer Precision Duel',
+    styleAnchors: ['Ace of Diamond - Summer Precision Duel'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything.',
+        'Madhouse Ace of Diamond television look (2013) from Yuji Terajima designs: realistic high school baseball, dusty mound duels, heat shimmer, precise pitching mechanics and team bonds.',
       subject_treatment:
-        "Keep the prompt's subject and action; frame it as a one-on-one duel in summer heat, every detail pointing at a single decisive moment.",
-      color_and_tone:
-        'Dusty infield tan, bright outfield green, cloudless summer blue and white uniforms.',
-      lighting_and_shadow:
-        'High summer sun with short black shadows, heat shimmer and bright cap brims.',
+        'Preserve the requested identity, count, pose and action; draw people with Terajima designs, sturdy athletic bodies, caps, dirt-streaked uniforms and focused eyes.',
+      color_and_tone: 'Dusty diamond tan, grass green, sky blue and sweat-white uniforms.',
+      lighting_and_shadow: 'Blazing summer sun, heat shimmer and long stadium shadows.',
       texture_and_material:
-        'Dust clouds, stitched leather ball, sweat-darkened uniforms in crisp cel.',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Framing down the pitcher-to-batter line, close-ups on grips and eyes.',
-      atmosphere_and_mood:
-        'Hot and breathless, a whole summer riding on one pitch in the ninth inning.',
-      rendering_and_quality: 'Crisp sports anime with precise mechanics and heat haze effects.',
-      key_features: 'pitcher-batter line; summer heat; dust; grip close-ups',
+        'Pitcher-batter duel compositions, catcher-view pitches and wind-up freezes.',
+      atmosphere_and_mood: 'Keep the requested mood with tense summer precision.',
+      rendering_and_quality: 'Clean realistic baseball television frame with summer heat.',
+      key_features: 'Ace of Diamond mound duels; heat shimmer; realistic mechanics',
       creative_brief:
-        "Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything. Carry it through pitcher-batter line, summer heat, dust, grip close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Ace of Diamond television look (2013) from Yuji Terajima designs: realistic high school baseball, dusty mound duels, heat shimmer, precise pitching mechanics and team bonds. Carry it through Ace of Diamond mound duels, heat shimmer, realistic mechanics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-349',
-    name: 'Generational Sports Resolve Style',
-    displayName: 'Generational Sports Resolve',
-    styleAnchors: ['Generational Sports Resolve Style'],
+    name: 'Takuya Mitsuda - Generational Sports Resolve',
+    displayName: 'Takuya Mitsuda - Generational Sports Resolve',
+    styleAnchors: ['Takuya Mitsuda - Generational Sports Resolve'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Generational sports drama anime: old coaches and young athletes, faded photos, inherited dreams and quiet determination across years.',
+        'Takuya Mitsuda Major look: long-running baseball saga art with simple clean designs, father-and-son resolve, sunset practice fields and generational grit.',
       subject_treatment:
-        "Keep the prompt's subject and action; add the weight of time, with an older mentor, old equipment or a remembered past nearby.",
-      color_and_tone: 'Warm faded sepia for memories and clear bright color for the present.',
-      lighting_and_shadow: 'Late afternoon gold light and soft window light in old clubhouses.',
-      texture_and_material: 'Worn gloves, taped handles, old wooden lockers and faded photographs.',
-      camera_and_composition: 'Paired framings of old and young, often side by side or reflected.',
-      atmosphere_and_mood: 'Warm and resolute, a promise passed from one generation to the next.',
-      rendering_and_quality:
-        'Emotional prestige sports anime with gentle color grading between eras.',
-      key_features: 'old mentor; inherited equipment; sepia memories; golden light',
+        'Preserve the requested identity, count, pose and action; draw people with Mitsuda designs, simple clean faces, sturdy bodies and practice uniforms across generations.',
+      color_and_tone: 'Sunset orange, practice dirt brown, grass green and cap navy.',
+      lighting_and_shadow: 'Warm sunset practice light with long shadows and dust.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition:
+        'Mentor-and-student two-shots, practice field wides and pitching close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with earnest generational resolve.',
+      rendering_and_quality: 'Warm straightforward sports frame with earnest emotional clarity.',
+      key_features: 'Major sunset practice; generational mentors; clean designs; grit',
       creative_brief:
-        "Generational sports drama anime: old coaches and young athletes, faded photos, inherited dreams and quiet determination across years. Carry it through old mentor, inherited equipment, sepia memories, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Takuya Mitsuda Major look: long-running baseball saga art with simple clean designs, father-and-son resolve, sunset practice fields and generational grit. Carry it through Major sunset practice, generational mentors, clean designs, grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-350',
-    name: 'Aquatic Relay Glow Style',
-    displayName: 'Aquatic Relay Glow',
-    styleAnchors: ['Aquatic Relay Glow Style'],
+    name: 'Free! - Aquatic Relay Glow',
+    displayName: 'Free! - Aquatic Relay Glow',
+    styleAnchors: ['Free! - Aquatic Relay Glow'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Swimming anime of water and light: glowing pool blues, underwater caustics, bubbles and bodies stretched in perfect strokes.',
+        'Kyoto Animation Free! television look (2013) with Futoshi Nishiya designs: glossy detailed water, caustic light, lean swimmers and sparkling pool reflections.',
       subject_treatment:
-        "Keep the prompt's subject and action; place it in or near water with caustic light and flowing motion.",
-      color_and_tone: 'Glowing aqua, deep lane-line blue and white foam with warm skin tones.',
-      lighting_and_shadow: 'Underwater caustic patterns rippling over bodies and the pool floor.',
-      texture_and_material: 'Clear water, bubbles, spray and wet skin drawn with luminous effects.',
-      camera_and_composition: 'Underwater side views and split surface shots across lanes.',
-      atmosphere_and_mood: 'Freeing and luminous, the silence and speed of moving through water.',
-      rendering_and_quality: 'Luminous sports anime with detailed water effects and clean anatomy.',
-      key_features: 'caustic light; underwater views; bubbles; split surface',
+        'Preserve the requested identity, count, pose and action; draw people with Nishiya designs, lean muscular swimmers, wet hair, glossy eyes and goggles.',
+      color_and_tone: 'Pool aqua, caustic white, sunset pink and deep blue.',
+      lighting_and_shadow:
+        'Caustic underwater light, sparkling surface reflections and sunset glow.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Underwater glides, relay wall turns and dramatic splash freezes.',
+      atmosphere_and_mood: 'Keep the requested mood with glowing aquatic freedom.',
+      rendering_and_quality: 'Glossy Kyoto Animation frame with exceptional water rendering.',
+      key_features: 'KyoAni water; caustic light; lean swimmers; sparkling pools',
       creative_brief:
-        "Swimming anime of water and light: glowing pool blues, underwater caustics, bubbles and bodies stretched in perfect strokes. Carry it through caustic light, underwater views, bubbles, split surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kyoto Animation Free! television look (2013) with Futoshi Nishiya designs: glossy detailed water, caustic light, lean swimmers and sparkling pool reflections. Carry it through KyoAni water, caustic light, lean swimmers, sparkling pools. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-351',
-    name: 'Long-Distance Night Endurance Style',
-    displayName: 'Long-Distance Night Endurance',
-    styleAnchors: ['Long-Distance Night Endurance Style'],
+    name: 'Run with the Wind - Long-Distance Night Endurance',
+    displayName: 'Run with the Wind - Long-Distance Night Endurance',
+    styleAnchors: ['Run with the Wind - Long-Distance Night Endurance'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Long-distance running anime at night: streetlights, breath clouds, relay sashes and the loneliness of endurance.',
+        'Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance.',
       subject_treatment:
-        "Keep the prompt's subject and action; show sustained, lonely effort through night streets or dark countryside.",
-      color_and_tone: 'Deep navy night, sodium orange streetlights and white breath clouds.',
-      lighting_and_shadow:
-        'Pools of streetlight passing over the runner, long shadows sweeping ahead and behind.',
-      texture_and_material: 'Asphalt, running shoes, sweat and fabric drawn simply with soft glow.',
-      camera_and_composition: 'Tracking side shots and long empty roads with a single runner.',
-      atmosphere_and_mood:
-        'Lonely and determined, every step a small victory against the dark and the cold.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air.',
+      color_and_tone: 'Night navy, streetlight orange, winter grey and breath white.',
+      lighting_and_shadow: 'Streetlight pools on empty roads, dawn glow and cold air haze.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Long tracking shots of runners, empty roads and profile close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet enduring resolve.',
       rendering_and_quality:
-        'Moody sports anime with rhythmic light passes and subtle breath effects.',
-      key_features: 'night streetlights; breath clouds; relay sash; lonely road',
+        'Grounded Production I.G television frame with restrained quiet realism.',
+      key_features: 'Run with the Wind realism; night roads; breath clouds; endurance',
       creative_brief:
-        "Long-distance running anime at night: streetlights, breath clouds, relay sashes and the loneliness of endurance. Carry it through night streetlights, breath clouds, relay sash, lonely road. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance. Carry it through Run with the Wind realism, night roads, breath clouds, endurance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-352',
-    name: 'Neon Trick Flow Style',
-    displayName: 'Neon Trick Flow',
-    styleAnchors: ['Neon Trick Flow Style'],
+    name: 'Sk8 the Infinity - Neon Trick Flow',
+    displayName: 'Sk8 the Infinity - Neon Trick Flow',
+    styleAnchors: ['Sk8 the Infinity - Neon Trick Flow'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Skateboarding anime of flow and neon: trick lines, ramps at night, bare concrete walls and boards drawn in bright motion arcs.',
+        'BONES Sk8 the Infinity television look (2021): Okinawa neon skate nights, colorful trick lines tracing curves, stylish designs and CG ramps.',
       subject_treatment:
-        "Keep the prompt's subject and action; turn movement into flowing trick lines through an urban or skatepark space.",
-      color_and_tone:
-        'Neon magenta and cyan against night concrete grey, with bright board graphics.',
-      lighting_and_shadow:
-        'Neon signs and park floodlights, colored rims and long shadows on concrete.',
+        'Preserve the requested identity, count, pose and action; draw people with Sk8 designs, stylish streetwear, lean bodies, vivid hair and skateboards.',
+      color_and_tone: 'Neon magenta, cyan, lime and warm Okinawa night.',
+      lighting_and_shadow: 'Neon night light, trick-line glows and stadium lamps.',
       texture_and_material:
-        'Concrete, grip tape, urethane wheels and loose clothing in clean cel with motion blur.',
-      camera_and_composition:
-        'Fisheye low angles at the lip of ramps and long lines following a run.',
-      atmosphere_and_mood:
-        'Loose and exhilarating, the pure fun of carving through a city at night.',
-      rendering_and_quality: 'Stylish sports anime with bright neon glow and smooth motion arcs.',
-      key_features: 'trick lines; neon rims; fisheye ramps; motion arcs',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Ramp-launch low angles, trick line arcs and speed tracking.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish neon flow.',
+      rendering_and_quality: 'Vivid BONES frame with neon trick lines and CG ramps.',
+      key_features: 'Sk8 neon trick lines; night skate; stylish streetwear; ramps',
       creative_brief:
-        "Skateboarding anime of flow and neon: trick lines, ramps at night, bare concrete walls and boards drawn in bright motion arcs. Carry it through trick lines, neon rims, fisheye ramps, motion arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "BONES Sk8 the Infinity television look (2021): Okinawa neon skate nights, colorful trick lines tracing curves, stylish designs and CG ramps. Carry it through Sk8 neon trick lines, night skate, stylish streetwear, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-353',
-    name: 'Nocturnal Drift Tension Style',
-    displayName: 'Nocturnal Drift Tension',
-    styleAnchors: ['Nocturnal Drift Tension Style'],
+    name: 'Initial D - Nocturnal Drift Tension',
+    displayName: 'Initial D - Nocturnal Drift Tension',
+    styleAnchors: ['Initial D - Nocturnal Drift Tension'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-car racing anime of nocturnal tension: dashboard glow, gripping hands, mirrors full of headlights and the road rushing at the windshield.',
+        'Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity.',
       subject_treatment:
-        "Keep the prompt's subject and action; view it from inside a vehicle or at close range, tension carried by hands, eyes and mirrors.",
-      color_and_tone:
-        'Dark cabin blacks with dashboard amber, headlight white and taillight red reflections.',
+        'Preserve the requested identity, count, pose and action; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels.',
+      color_and_tone: 'Night navy, headlight white, taillight red and guardrail grey.',
       lighting_and_shadow:
-        'Dashboard glow from below, passing streetlights sweeping across faces and hands.',
+        'Headlight beams cutting fog, taillight streaks and dim mountain darkness.',
       texture_and_material:
-        'Leather steering wheels, gauges, glass reflections and speed-blurred road.',
+        'Hand-drawn characters with glossy CG cars, painted mountain roads and motion blur.',
       camera_and_composition:
-        'Tight cockpit framings, mirror shots and over-the-shoulder views through the windshield.',
-      atmosphere_and_mood:
-        'Tense and focused, a quiet cabin while the world outside moves far too fast.',
-      rendering_and_quality:
-        'Precise mechanical anime detail with smooth light sweeps and motion blur.',
-      key_features: 'dashboard glow; mirror headlights; gripping hands; windshield rush',
+        'Drift lines through hairpins, rearview mirror shots and helicopter-like wides.',
+      atmosphere_and_mood: 'Keep the requested mood with focused nocturnal tension.',
+      rendering_and_quality: 'Classic Initial D frame mixing CG cars and hand-drawn drivers.',
+      key_features: 'Initial D touge; CG drifting cars; headlights; mountain hairpins',
       creative_brief:
-        "In-car racing anime of nocturnal tension: dashboard glow, gripping hands, mirrors full of headlights and the road rushing at the windshield. Carry it through dashboard glow, mirror headlights, gripping hands, windshield rush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity. Carry it through Initial D touge, CG drifting cars, headlights, mountain hairpins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-354',
-    name: 'Telemetry Apex Precision Style',
-    displayName: 'Telemetry Apex Precision',
-    styleAnchors: ['Telemetry Apex Precision Style'],
+    name: 'MF Ghost - Telemetry Apex Precision',
+    displayName: 'MF Ghost - Telemetry Apex Precision',
+    styleAnchors: ['MF Ghost - Telemetry Apex Precision'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Motorsport anime of precision and data: racing lines, telemetry graphics, apex points and engineers watching screens of abstract data.',
+        'Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks.',
       subject_treatment:
-        "Keep the prompt's subject and action; overlay clean abstract telemetry shapes (racing lines, apex markers, speed arcs) without readable numbers.",
-      color_and_tone: 'Asphalt grey, curb red and white with cyan data-line overlays.',
-      lighting_and_shadow:
-        'Bright track daylight or floodlit night racing with clean reflections on bodywork.',
+        'Preserve the requested identity, count, pose and action; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses.',
+      color_and_tone: 'Coastal blue, supercar red, telemetry cyan and asphalt grey.',
+      lighting_and_shadow: 'Bright coastal daylight, glossy car reflections and HUD glow.',
       texture_and_material:
-        'Glossy bodywork, rubber marbles, carbon parts and glowing vector overlays.',
-      camera_and_composition:
-        'Overhead track views with racing lines drawn on, and low trackside shots at the apex.',
-      atmosphere_and_mood:
-        'Calculated and intense, victory measured in tiny margins and perfect lines.',
-      rendering_and_quality:
-        'Crisp technical anime with clean vector overlays and polished mechanical detail.',
-      key_features: 'racing line overlay; apex markers; curbs; telemetry shapes',
+        'Glossy CG cars over painted roads with telemetry-style graphic overlays.',
+      camera_and_composition: 'Drone chase shots, apex lines and cockpit telemetry framing.',
+      atmosphere_and_mood: 'Keep the requested mood with precise high-speed focus.',
+      rendering_and_quality: 'Glossy modern racing frame with CG cars and drone views.',
+      key_features: 'MF Ghost supercars; drone telemetry; coastal roads; CG gloss',
       creative_brief:
-        "Motorsport anime of precision and data: racing lines, telemetry graphics, apex points and engineers watching screens of abstract data. Carry it through racing line overlay, apex markers, curbs, telemetry shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks. Carry it through MF Ghost supercars, drone telemetry, coastal roads, CG gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-355',
-    name: 'Festive Sprint Idol Energy Style',
-    displayName: 'Festive Sprint Idol Energy',
-    styleAnchors: ['Festive Sprint Idol Energy Style'],
+    name: 'Uma Musume - Festive Sprint Idol Energy',
+    displayName: 'Uma Musume - Festive Sprint Idol Energy',
+    styleAnchors: ['Uma Musume - Festive Sprint Idol Energy'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show.',
+        'P.A. Works Uma Musume television look (2018): bright idol sports, sparkling racecourses, colorful uniforms, confetti victory stages and energetic running frames.',
       subject_treatment:
-        "Keep the prompt's subject and action; add festival energy with bright stage colors, cheering crowds and sparkle.",
-      color_and_tone: 'Candy pinks, sky blues and lemon yellow with glittering white highlights.',
-      lighting_and_shadow:
-        'Bright stadium daylight with sparkle highlights and colorful bounced light.',
-      texture_and_material: 'Satin costumes, sneakers, ribbons and confetti in glossy cel.',
-      camera_and_composition:
-        'Dynamic sprinting shots with cheering stands and stage elements behind.',
-      atmosphere_and_mood: 'Cheerful and energetic, a sports day that feels like a concert.',
-      rendering_and_quality: 'Glossy idol anime with sparkle effects and bouncy animation.',
-      key_features: 'confetti colors; sprinting idols; cheering stands; sparkle',
+        'Preserve the requested identity, count, pose and action; draw people with Uma Musume designs, big bright eyes, flowing hair, colorful racing uniforms and energetic poses.',
+      color_and_tone: 'Turf green, idol pink, sky blue and confetti gold.',
+      lighting_and_shadow: 'Bright sunny racecourse light and sparkling stage spotlights.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Final-stretch sprint shots, victory poses and stage performances.',
+      atmosphere_and_mood: 'Keep the requested mood with bright festive competition.',
+      rendering_and_quality: 'Bright P.A. Works frame with sparkling idol sports energy.',
+      key_features: 'Uma Musume sparkle; racecourse sprint; idol stages; confetti',
       creative_brief:
-        "Idol sports festival anime: cheering, confetti-bright colors, sprinting performers and stadium stages that mix competition with show. Carry it through confetti colors, sprinting idols, cheering stands, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "P.A. Works Uma Musume television look (2018): bright idol sports, sparkling racecourses, colorful uniforms, confetti victory stages and energetic running frames. Carry it through Uma Musume sparkle, racecourse sprint, idol stages, confetti. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-356',
-    name: 'Graphic Impact Duel Style',
-    displayName: 'Graphic Impact Duel',
-    styleAnchors: ['Graphic Impact Duel Style'],
+    name: 'Takeshi Konomi - Graphic Impact Duel',
+    displayName: 'Takeshi Konomi - Graphic Impact Duel',
+    styleAnchors: ['Takeshi Konomi - Graphic Impact Duel'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Boxing anime told with graphic impact: freeze frames, halftone backgrounds, radial lines and faces distorted by the punch.',
+        'Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels.',
       subject_treatment:
-        "Keep the prompt's subject and action; freeze its moment of impact with graphic backgrounds and radiating lines.",
-      color_and_tone: 'Red and black with bold halftone yellow or white backgrounds at impact.',
-      lighting_and_shadow:
-        'Hard ring lights from above and impact flashes turning backgrounds to flat graphic color.',
+        'Preserve the requested identity, count, pose and action; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys.',
+      color_and_tone: 'Bright yellow ball, team blue and red, flat halftone backgrounds.',
+      lighting_and_shadow: 'Graphic impact light, speed flashes and stark sun on courts.',
       texture_and_material:
-        'Sweat spray, glove leather and rope drawn with thick ink and halftone dots.',
+        'Clean manga line, halftone backgrounds, speed lines and impact effects.',
       camera_and_composition:
-        'Extreme close-ups at the moment of contact, diagonal frames and freeze-frames.',
-      atmosphere_and_mood: 'Brutal and graphic, the shock of a single punch stopping time.',
-      rendering_and_quality: 'Graphic sports anime with manga halftone and bold impact design.',
-      key_features: 'impact freeze; halftone background; radial lines; sweat spray',
+        'Special-move freeze frames, curving ball trails and dramatic rival face-offs.',
+      atmosphere_and_mood: 'Keep the requested mood with flashy competitive bravado.',
+      rendering_and_quality: 'Graphic sports manga-style frame with flashy special moves.',
+      key_features: 'Takeshi Konomi special moves; halftone flats; cool players; impact',
       creative_brief:
-        "Boxing anime told with graphic impact: freeze frames, halftone backgrounds, radial lines and faces distorted by the punch. Carry it through impact freeze, halftone background, radial lines, sweat spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels. Carry it through Takeshi Konomi special moves, halftone flats, cool players, impact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-357',
-    name: 'Spin Pressure Distortion Style',
-    displayName: 'Spin Pressure Distortion',
-    styleAnchors: ['Spin Pressure Distortion Style'],
+    name: 'Ping Pong the Animation - Spin Pressure Distortion',
+    displayName: 'Ping Pong the Animation - Spin Pressure Distortion',
+    styleAnchors: ['Ping Pong the Animation - Spin Pressure Distortion'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Table tennis anime of spin and pressure: balls curving impossibly, tables warped by tension and faces locked in concentration.',
+        'Masaaki Yuasa Ping Pong the Animation (2014) from Taiyo Matsumoto designs: wobbly loose lines, split-screen panels, distorted perspective and raw emotional sports.',
       subject_treatment:
-        "Keep the prompt's subject and action; show spin and pressure through curved trajectories and subtly warped space.",
-      color_and_tone: 'Table blue and green, white ball highlights and cool gym greys.',
-      lighting_and_shadow: 'Even gym lighting with sharp highlights on the ball and glossy table.',
-      texture_and_material:
-        'Rubber paddles, glossy table surfaces and sweat drawn with crisp line.',
-      camera_and_composition:
-        'Tight table-level framings, curved ball trails and warped perspective under pressure.',
-      atmosphere_and_mood:
-        'Claustrophobic and precise, a tiny table becoming an entire battlefield.',
+        'Preserve the requested identity, count, pose and action; draw people with Matsumoto designs, lopsided faces, gangly bodies, scruffy hair and plain sportswear.',
+      color_and_tone: 'Flat muted greens, table blue, sweat white and warm gym tones.',
+      lighting_and_shadow: 'Flat gym light with graphic shadows and sudden glowing flashes.',
+      texture_and_material: 'Loose wobbly line work, flat color and manga-panel splits.',
+      camera_and_composition: 'Split-screen panels, fisheye distortion and exaggerated ball arcs.',
+      atmosphere_and_mood: 'Keep the requested mood with raw feverish pressure.',
       rendering_and_quality:
-        'Clean sports anime with elegant spin trails and subtle perspective distortion.',
-      key_features: 'curving ball trail; warped table; paddle spin; concentration',
+        'Idiosyncratic Tatsunoko frame with Yuasa elasticity and Matsumoto line.',
+      key_features: 'Yuasa and Matsumoto; wobbly line; split panels; distorted perspective',
       creative_brief:
-        "Table tennis anime of spin and pressure: balls curving impossibly, tables warped by tension and faces locked in concentration. Carry it through curving ball trail, warped table, paddle spin, concentration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Masaaki Yuasa Ping Pong the Animation (2014) from Taiyo Matsumoto designs: wobbly loose lines, split-screen panels, distorted perspective and raw emotional sports. Carry it through Yuasa and Matsumoto, wobbly line, split panels, distorted perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-358',
-    name: 'Comeback Grit Impact Style',
-    displayName: 'Comeback Grit Impact',
-    styleAnchors: ['Comeback Grit Impact Style'],
+    name: 'George Morikawa - Comeback Grit Impact',
+    displayName: 'George Morikawa - Comeback Grit Impact',
+    styleAnchors: ['George Morikawa - Comeback Grit Impact'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rugby comeback anime of mud and grit: scrums, tackles, rain and battered players refusing to lose.',
+        'George Morikawa Hajime no Ippo look: thick bold manga lines, heavy impact punches, sweat and spit spray, bruised faces and gritty boxing gyms.',
       subject_treatment:
-        "Keep the prompt's subject and action; make it muddy, battered and still pushing forward against resistance.",
-      color_and_tone: 'Mud brown, torn jersey colors and stormy grey sky with white rain streaks.',
-      lighting_and_shadow:
-        'Overcast stadium light, wet highlights on mud and skin, heavy dark sky.',
-      texture_and_material:
-        'Mud splatter, torn fabric, grass clumps and rain drawn with gritty line.',
-      camera_and_composition:
-        'Low ground-level shots inside scrums and wide frames of desperate final runs.',
-      atmosphere_and_mood:
-        'Gritty and defiant, a battered team finding one more push in the final minute.',
-      rendering_and_quality: 'Heavy, gritty sports anime with textured mud and rain effects.',
-      key_features: 'mud; scrums; rain; final push',
+        'Preserve the requested identity, count, pose and action; draw people with Morikawa designs, sturdy bodies, heavy brows, bruised swollen faces and taped hands.',
+      color_and_tone: 'Gritty browns, blood red accents, sweat white and dim gym tones.',
+      lighting_and_shadow: 'Hard ring lights and dusty gym light with heavy shadow.',
+      texture_and_material: 'Thick bold manga ink, speed lines, sweat spray and impact bursts.',
+      camera_and_composition: 'Impact freeze punches, low ring angles and corner-stool close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty comeback determination.',
+      rendering_and_quality: 'Hard-hitting sports manga illustration with thick impact lines.',
+      key_features: 'George Morikawa impact; thick lines; bruised faces; gritty gyms',
       creative_brief:
-        "Rugby comeback anime of mud and grit: scrums, tackles, rain and battered players refusing to lose. Carry it through mud, scrums, rain, final push. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "George Morikawa Hajime no Ippo look: thick bold manga lines, heavy impact punches, sweat and spit spray, bruised faces and gritty boxing gyms. Carry it through George Morikawa impact, thick lines, bruised faces, gritty gyms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-359',
-    name: 'Vulnerable Performance Spin Style',
-    displayName: 'Vulnerable Performance Spin',
-    styleAnchors: ['Vulnerable Performance Spin Style'],
+    name: 'Yuri!!! on Ice - Vulnerable Performance Spin',
+    displayName: 'Yuri!!! on Ice - Vulnerable Performance Spin',
+    styleAnchors: ['Yuri!!! on Ice - Vulnerable Performance Spin'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Figure skating anime of vulnerable performance: spins, spotlight on ice, costumes and emotion visible in every line.',
+        'MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups.',
       subject_treatment:
-        "Keep the prompt's subject and action; render it as a graceful performance with spins, glides and exposed emotion.",
-      color_and_tone: 'Ice white and pale blue with a jewel-colored costume accent.',
-      lighting_and_shadow:
-        'Spotlight on the ice, soft reflections below the skater and dark arena beyond.',
+        'Preserve the requested identity, count, pose and action; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes.',
+      color_and_tone: 'Ice blue, spotlight white, costume gold and deep arena navy.',
+      lighting_and_shadow: 'Spotlight on ice, sparkling reflections and soft arena glow.',
       texture_and_material:
-        'Glassy ice with blade scratches, sequined costumes and fine hair strands.',
-      camera_and_composition:
-        'Circling framings around spins and low reflections along the ice surface.',
-      atmosphere_and_mood:
-        'Fragile and beautiful, a performer laying their heart bare in four minutes.',
-      rendering_and_quality: 'Elegant sports anime with graceful motion arcs and sparkling ice.',
-      key_features: 'spotlit ice; spin arcs; ice reflections; sequined costume',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Spin close-ups, flowing costume arcs and rinkside emotional shots.',
+      atmosphere_and_mood: 'Keep the requested mood with tender vulnerable grace.',
+      rendering_and_quality: 'Elegant MAPPA frame with sparkling ice and flowing motion.',
+      key_features: 'Yuri on Ice elegance; sparkling ice; flowing costumes; spotlights',
       creative_brief:
-        "Figure skating anime of vulnerable performance: spins, spotlight on ice, costumes and emotion visible in every line. Carry it through spotlit ice, spin arcs, ice reflections, sequined costume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups. Carry it through Yuri on Ice elegance, sparkling ice, flowing costumes, spotlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-360',
-    name: 'Poetic Reflex Focus Style',
-    displayName: 'Poetic Reflex Focus',
-    styleAnchors: ['Poetic Reflex Focus Style'],
+    name: 'Chihayafuru - Poetic Reflex Focus',
+    displayName: 'Chihayafuru - Poetic Reflex Focus',
+    styleAnchors: ['Chihayafuru - Poetic Reflex Focus'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Traditional archery anime of poetic focus: stillness, draw, release and the moment when time seems to stop.',
+        'Madhouse Chihayafuru television look (2011) from Yuki Suetsugu designs: shojo sports intensity, tatami halls, flowing hair, flower petals and poetic slow-motion focus.',
       subject_treatment:
-        "Keep the prompt's subject and action; distill it to calm focus and a single precise release.",
-      color_and_tone: 'White and black archery dress, pale wood and soft green garden light.',
-      lighting_and_shadow:
-        'Gentle daylight across the range, soft shadows and a bright far target.',
-      texture_and_material: 'Wooden bows, feathers, fabric and raked sand drawn with fine line.',
+        'Preserve the requested identity, count, pose and action; draw people with Suetsugu designs, long flowing hair, large luminous eyes and hakama or school clothes.',
+      color_and_tone: 'Tatami gold, maple red, indigo and petal pink.',
+      lighting_and_shadow: 'Soft hall light and poetic glowing slow-motion highlights.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Side profiles at full draw and long views down the range to the target.',
-      atmosphere_and_mood:
-        'Poetic and calm, the whole world narrowing to breath and a distant circle.',
-      rendering_and_quality: 'Serene prestige anime with minimal effects and precise form.',
-      key_features: 'full draw; stillness; long range; fine line',
+        'Reflex slow-motion close-ups, hands flashing and petal-filled frames.',
+      atmosphere_and_mood: 'Keep the requested mood with poetic breathless focus.',
+      rendering_and_quality:
+        'Refined Madhouse television frame with shojo poetic intensity and petals.',
+      key_features: 'Chihayafuru focus; tatami halls; flowing hair; petals; slow motion',
       creative_brief:
-        "Traditional archery anime of poetic focus: stillness, draw, release and the moment when time seems to stop. Carry it through full draw, stillness, long range, fine line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Chihayafuru television look (2011) from Yuki Suetsugu designs: shojo sports intensity, tatami halls, flowing hair, flower petals and poetic slow-motion focus. Carry it through Chihayafuru focus, tatami halls, flowing hair, petals, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-361',
-    name: 'Incremental Method Training Style',
-    displayName: 'Incremental Method Training',
-    styleAnchors: ['Incremental Method Training Style'],
+    name: 'Baby Steps - Incremental Method Training',
+    displayName: 'Baby Steps - Incremental Method Training',
+    styleAnchors: ['Baby Steps - Incremental Method Training'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Training montage anime of incremental progress: repeated drills, notebooks of practice, sunrise runs and small improvements.',
+        'Hikaru Katsuki Baby Steps look: analytical tennis with notebooks, diagrams, clean simple lines and quiet steady improvement.',
       subject_treatment:
-        "Keep the prompt's subject and action; show it as one step in a long practice routine, with signs of repetition and progress.",
-      color_and_tone:
-        'Early morning blues turning to gold, with warm indoor gym light in the evening.',
-      lighting_and_shadow:
-        'Sunrise and sunset light marking passing days, long shadows on tracks and floors.',
-      texture_and_material:
-        'Worn shoes, taped fingers, scuffed floors and dog-eared practice notebooks.',
-      camera_and_composition:
-        'Sequences of repeated framings from day to day, like panels of the same routine.',
-      atmosphere_and_mood:
-        'Patient and hopeful, improvement measured in tiny steps that finally add up.',
+        'Preserve the requested identity, count, pose and action; draw people with Katsuki designs, simple clean faces, glasses, athletic wear and focused expressions.',
+      color_and_tone: 'Court green, notebook white, sky blue and clean sports tones.',
+      lighting_and_shadow: 'Clear even daylight on the court with simple short shadows.',
+      texture_and_material: 'Clean lines, flat colors and hand-drawn diagram overlays.',
+      camera_and_composition: 'Practice routines, diagram inserts and measured court framing.',
+      atmosphere_and_mood: 'Keep the requested mood with methodical steady progress.',
       rendering_and_quality:
-        'Warm sports anime with rhythmic repeated compositions and careful detail.',
-      key_features: 'repetition; sunrise runs; worn gear; small progress',
+        'Clean sports television frame with hand-drawn analytical diagram overlays.',
+      key_features: 'Baby Steps notebooks; diagrams; clean lines; steady progress',
       creative_brief:
-        "Training montage anime of incremental progress: repeated drills, notebooks of practice, sunrise runs and small improvements. Carry it through repetition, sunrise runs, worn gear, small progress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Hikaru Katsuki Baby Steps look: analytical tennis with notebooks, diagrams, clean simple lines and quiet steady improvement. Carry it through Baby Steps notebooks, diagrams, clean lines, steady progress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-362',
-    name: 'Glam Precision Rivalry Style',
-    displayName: 'Glam Precision Rivalry',
-    styleAnchors: ['Glam Precision Rivalry Style'],
+    name: 'Birdie Wing - Glam Precision Rivalry',
+    displayName: 'Birdie Wing - Glam Precision Rivalry',
+    styleAnchors: ['Birdie Wing - Glam Precision Rivalry'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fencing anime of glamorous precision: white suits, mirrored masks, flashing blades and rivalries with style.',
+        'Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater.',
       subject_treatment:
-        "Keep the prompt's subject and action; give it elegant precision, sharp lines and a stylish rivalry.",
-      color_and_tone:
-        'Crisp white suits and silver masks against deep navy or black with one rose accent.',
-      lighting_and_shadow: 'Hard spotlights on the piste, bright glints on blades and masks.',
+        'Preserve the requested identity, count, pose and action; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair.',
+      color_and_tone: 'Rainbow trails, fairway green, sunset gold and glossy black.',
+      lighting_and_shadow: 'Dramatic backlight, rainbow trail glows and glamorous highlights.',
       texture_and_material:
-        'Quilted fencing whites, mesh masks and thin steel blades in clean line.',
-      camera_and_composition:
-        'Long horizontal framings down the piste and tight close-ups where the blades cross.',
-      atmosphere_and_mood:
-        'Glamorous and competitive, two rivals trading elegant, lethal gestures.',
-      rendering_and_quality: 'Sleek sports anime with sharp highlights and precise motion.',
-      key_features: 'white suits; mesh masks; blade glints; long piste',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Swing freezes, dramatic rival stares and glowing shot arcs.',
+      atmosphere_and_mood: 'Keep the requested mood with glamorous dramatic rivalry.',
+      rendering_and_quality:
+        'Glossy over-the-top sports television frame with glamorous theatrical drama.',
+      key_features: 'Birdie Wing glam; rainbow trails; dramatic rivalry',
       creative_brief:
-        "Fencing anime of glamorous precision: white suits, mirrored masks, flashing blades and rivalries with style. Carry it through white suits, mesh masks, blade glints, long piste. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater. Carry it through Birdie Wing glam, rainbow trails, dramatic rivalry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-363',
-    name: 'Synchronized Aerial Team Style',
-    displayName: 'Synchronized Aerial Team',
-    styleAnchors: ['Synchronized Aerial Team Style'],
+    name: 'Backflip!! - Synchronized Aerial Team',
+    displayName: 'Backflip!! - Synchronized Aerial Team',
+    styleAnchors: ['Backflip!! - Synchronized Aerial Team'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern.',
+        'Zexcs Backflip!! television look (2020): bright gymnastics team energy, clean designs, sunny gyms and synchronized aerial formations.',
       subject_treatment:
-        "Keep the prompt's subject and action; repeat and mirror it across a team moving in perfect unison.",
-      color_and_tone: 'Bright team colors against clear sky or pool blue with white highlights.',
-      lighting_and_shadow:
-        'Bright daylight or arena light with clean shadows under airborne bodies.',
-      texture_and_material: 'Uniforms, pom-poms, water spray and mats drawn in crisp cel.',
-      camera_and_composition:
-        'Symmetrical framings, overhead views of formation patterns and poses mirrored across the team.',
-      atmosphere_and_mood: 'Joyful and exact, trust between teammates made visible in the air.',
-      rendering_and_quality: 'Precise sports anime with repeated figures and clean symmetry.',
-      key_features: 'unison; mirrored poses; aerial pyramid; symmetry',
+        'Preserve the requested identity, count, pose and action; draw people with clean bright designs, athletic bodies, team uniforms and synchronized poses.',
+      color_and_tone: 'Bright sky blue, gym white, team red and sunny yellow.',
+      lighting_and_shadow: 'Sunny gym window light and bright high-key highlights on bodies.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Aerial formation shots, synchronized flips and low mat angles.',
+      atmosphere_and_mood: 'Keep the requested mood with buoyant team synchrony.',
+      rendering_and_quality: 'Bright clean sports television frame with airy buoyant team energy.',
+      key_features: 'Backflip synchrony; aerial formations; bright gym; team energy',
       creative_brief:
-        "Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern. Carry it through unison, mirrored poses, aerial pyramid, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Zexcs Backflip!! television look (2020): bright gymnastics team energy, clean designs, sunny gyms and synchronized aerial formations. Carry it through Backflip synchrony, aerial formations, bright gym, team energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-364',
-    name: 'Obsessive Line Rehearsal Style',
-    displayName: 'Obsessive Line Rehearsal',
-    styleAnchors: ['Obsessive Line Rehearsal Style'],
+    name: 'Dance Dance Danseur - Obsessive Line Rehearsal',
+    displayName: 'Dance Dance Danseur - Obsessive Line Rehearsal',
+    styleAnchors: ['Dance Dance Danseur - Obsessive Line Rehearsal'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Theater rehearsal anime of obsessive repetition: marked stages, bare rehearsals, work lights and actors repeating one line until it breaks.',
+        'MAPPA Dance Dance Danseur television look (2022) from George Asakura designs: ballet obsession, elongated lines, rehearsal studio light and expressive rough ink moments.',
       subject_treatment:
-        "Keep the prompt's subject and action; set it in rehearsal, repeated, marked with tape and watched by a critical eye.",
-      color_and_tone: 'Black box greys and bare work-light white with one colored costume piece.',
-      lighting_and_shadow:
-        'Harsh bare work lights, stark shadows on black walls and an empty auditorium.',
-      texture_and_material: 'Tape marks on stage floors, worn shoes, rehearsal clothes and props.',
-      camera_and_composition:
-        'Wide frames of a lone actor on a bare stage and close-ups of strained faces.',
-      atmosphere_and_mood:
-        'Obsessive and raw, an actor pushing one moment again and again toward truth.',
-      rendering_and_quality: 'Stark dramatic anime with minimal sets and intense acting.',
-      key_features: 'work lights; tape marks; bare stage; repetition',
+        'Preserve the requested identity, count, pose and action; draw people with Asakura designs, elongated dancer bodies, intense eyes and rehearsal clothes.',
+      color_and_tone: 'Studio wood, pale rehearsal light, black and soft red.',
+      lighting_and_shadow: 'Single work lights, mirror reflections and studio window beams.',
+      texture_and_material: 'Clean cel with sudden rough sketch lines and ink textures.',
+      camera_and_composition: 'Mirror compositions, extended line poses and obsessive repetition.',
+      atmosphere_and_mood: 'Keep the requested mood with obsessive artistic hunger.',
+      rendering_and_quality: 'Expressive MAPPA frame shifting into rough sketch intensity.',
+      key_features: 'Asakura designs; ballet lines; mirrors; obsessive rehearsal',
       creative_brief:
-        "Theater rehearsal anime of obsessive repetition: marked stages, bare rehearsals, work lights and actors repeating one line until it breaks. Carry it through work lights, tape marks, bare stage, repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "MAPPA Dance Dance Danseur television look (2022) from George Asakura designs: ballet obsession, elongated lines, rehearsal studio light and expressive rough ink moments. Carry it through Asakura designs, ballet lines, mirrors, obsessive rehearsal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-365',
-    name: 'Formal Partner Motion Style',
-    displayName: 'Formal Partner Motion',
-    styleAnchors: ['Formal Partner Motion Style'],
+    name: 'Welcome to the Ballroom - Formal Partner Motion',
+    displayName: 'Welcome to the Ballroom - Formal Partner Motion',
+    styleAnchors: ['Welcome to the Ballroom - Formal Partner Motion'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Competitive ballroom anime of formal partner motion: frames held, gowns sweeping, posture and connection turned into line.',
+        'Production I.G Welcome to the Ballroom television look (2017) from Tomo Takeuchi designs: extremely long elongated limbs, blazing ballroom gowns, intense stares and sweeping motion.',
       subject_treatment:
-        "Keep the prompt's subject and action; express it through partnered motion, held frames and sweeping arcs of fabric.",
-      color_and_tone: 'Gown jewel colors and black tailcoats against warm ballroom gold.',
-      lighting_and_shadow:
-        'Chandelier and spotlight glow with sparkling highlights on sequins and hair.',
-      texture_and_material: 'Flowing chiffon, sequins, polished shoes and a glossy parquet floor.',
-      camera_and_composition:
-        'Circling framings around couples and sweeping diagonals across the floor.',
-      atmosphere_and_mood: 'Elegant and intense, two people moving as one line under pressure.',
-      rendering_and_quality:
-        'Graceful sports anime with long fabric motion arcs and polished detail.',
-      key_features: 'held frame; sweeping gowns; parquet reflections; partnership',
+        'Preserve the requested identity, count, pose and action; draw people with Takeuchi designs, very long necks and limbs, piercing eyes and ballroom gowns or tailcoats.',
+      color_and_tone: 'Emerald gown green, gold floor, deep crimson and black tailcoats.',
+      lighting_and_shadow: 'Ballroom chandeliers and spotlight glares on glossy parquet.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Sweeping partner spins, low angles on long legs and stares.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce elegant intensity.',
+      rendering_and_quality: 'Intense Production I.G frame with elongated dance motion.',
+      key_features: 'Tomo Takeuchi elongation; ballroom gowns; piercing stares; spins',
       creative_brief:
-        "Competitive ballroom anime of formal partner motion: frames held, gowns sweeping, posture and connection turned into line. Carry it through held frame, sweeping gowns, parquet reflections, partnership. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Welcome to the Ballroom television look (2017) from Tomo Takeuchi designs: extremely long elongated limbs, blazing ballroom gowns, intense stares and sweeping motion. Carry it through Tomo Takeuchi elongation, ballroom gowns, piercing stares, spins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-366',
-    name: 'Traditional Ensemble Resonance Style',
-    displayName: 'Traditional Ensemble Resonance',
-    styleAnchors: ['Traditional Ensemble Resonance Style'],
+    name: 'Kono Oto Tomare! - Traditional Ensemble Resonance',
+    displayName: 'Kono Oto Tomare! - Traditional Ensemble Resonance',
+    styleAnchors: ['Kono Oto Tomare! - Traditional Ensemble Resonance'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air.',
+        'Platinum Vision Kono Oto Tomare! television look (2019): traditional music ensembles, glowing sound ripples, school club rooms and shojo-tinted emotion.',
       subject_treatment:
-        "Keep the prompt's subject and action; place it within an ensemble where sound is visible as ripples, vibration and synchronized motion.",
-      color_and_tone: 'Lacquer red, natural wood and indigo costumes with warm stage gold.',
+        'Preserve the requested identity, count, pose and action; draw people with clean shojo-leaning designs, school uniforms or kimono, and focused performers.',
+      color_and_tone: 'Warm wood tones, stage black, ripple gold and petal pink.',
       lighting_and_shadow:
-        'Warm stage light from above and side, drum skins glowing under the spotlight.',
+        'Warm stage spotlights and glowing golden sound ripple visuals in the air.',
       texture_and_material:
-        'Taut drum skins, silk strings, bamboo flutes and cotton costumes in fine line.',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Wide ensemble shots and tight shots on striking hands and vibrating strings.',
-      atmosphere_and_mood:
-        'Powerful and communal, many players breathing and striking as one body.',
-      rendering_and_quality:
-        'Rich performance anime with visible sound ripples and precise playing technique.',
-      key_features: 'sound ripples; drum strikes; ensemble unison; warm stage light',
+        'Ensemble group compositions, instrument close-ups and wide shots of sound ripples.',
+      atmosphere_and_mood: 'Keep the requested mood with resonant heartfelt harmony.',
+      rendering_and_quality: 'Warm music television frame with visible glowing sound imagery.',
+      key_features: 'Traditional ensemble; sound ripples; stage glow; shojo emotion',
       creative_brief:
-        "Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air. Carry it through sound ripples, drum strikes, ensemble unison, warm stage light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Platinum Vision Kono Oto Tomare! television look (2019): traditional music ensembles, glowing sound ripples, school club rooms and shojo-tinted emotion. Carry it through Traditional ensemble, sound ripples, stage glow, shojo emotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-367',
-    name: 'Brass Section Tender Precision Style',
-    displayName: 'Brass Section Tender Precision',
-    styleAnchors: ['Brass Section Tender Precision Style'],
+    name: 'Sound! Euphonium - Brass Section Tender Precision',
+    displayName: 'Sound! Euphonium - Brass Section Tender Precision',
+    styleAnchors: ['Sound! Euphonium - Brass Section Tender Precision'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together.',
+        'Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus.',
       subject_treatment:
-        "Keep the prompt's subject and action; place it among brass instruments, rehearsal rooms and the discipline of playing together.",
-      color_and_tone: 'Warm brass gold, summer afternoon light and school-uniform navy.',
-      lighting_and_shadow:
-        'Afternoon sun through windows, bright reflections on brass bells and valves.',
-      texture_and_material: 'Polished brass, valve oil gleam, music stands and wooden floors.',
+        'Preserve the requested identity, count, pose and action; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments.',
+      color_and_tone: 'Brass gold, sunset orange, school navy and soft teal.',
+      lighting_and_shadow: 'Golden sunset through windows, gleaming brass reflections and bokeh.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Reflections in instrument bells and rows of players framed in sections.',
-      atmosphere_and_mood: 'Tender and earnest, a summer spent chasing one perfect note together.',
-      rendering_and_quality:
-        'Luminous performance anime with meticulous instrument detail and glowing summer light.',
-      key_features: 'brass reflections; practice room; sections; summer light',
+        'Instrument close-ups with reflections, shallow focus and rooftop wides.',
+      atmosphere_and_mood: 'Keep the requested mood with tender striving precision.',
+      rendering_and_quality: 'Polished Kyoto Animation frame with gleaming instrument detail.',
+      key_features: 'KyoAni brass reflections; sunset practice; shallow focus; Ikeda designs',
       creative_brief:
-        "Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together. Carry it through brass reflections, practice room, sections, summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus. Carry it through KyoAni brass reflections, sunset practice, shallow focus, Ikeda designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-368',
-    name: 'Midnight Jazz Ascension Style',
-    displayName: 'Midnight Jazz Ascension',
-    styleAnchors: ['Midnight Jazz Ascension Style'],
+    name: 'Shinichi Ishizuka - Midnight Jazz Ascension',
+    displayName: 'Shinichi Ishizuka - Midnight Jazz Ascension',
+    styleAnchors: ['Shinichi Ishizuka - Midnight Jazz Ascension'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Jazz anime of midnight ascension: smoky clubs, saxophone solos, swinging lines and improvisation drawn as rising curves.',
+        'Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy.',
       subject_treatment:
-        "Keep the prompt's subject and action; give it an improvised, swinging rhythm with music flowing as curving lines.",
-      color_and_tone: 'Smoky navy and amber with brass gold and a cool blue spotlight.',
+        'Preserve the requested identity, count, pose and action; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments.',
+      color_and_tone: 'Deep blue, smoky amber, brass gold and black.',
       lighting_and_shadow:
-        'One spotlight through smoke, dark tables and bright instrument highlights.',
-      texture_and_material: 'Smoke haze, brass keys, piano lacquer and velvet drapes in soft cel.',
-      camera_and_composition: 'Low stage angles and flowing camera moves that follow the solo.',
-      atmosphere_and_mood:
-        'Late-night and elated, a solo climbing higher than the player ever dared.',
-      rendering_and_quality:
-        'Moody performance anime with smoke effects and flowing musical curves.',
-      key_features: 'saxophone solo; smoke spotlight; flowing curves; midnight club',
+        'Smoky basement club spotlights and sweat-glistening highlights on skin.',
+      texture_and_material: 'Rough expressive ink, hatching and abstract music energy shapes.',
+      camera_and_composition:
+        'Close-ups of straining players, crowd wides and abstract music visions.',
+      atmosphere_and_mood: 'Keep the requested mood with ecstatic raw passion.',
+      rendering_and_quality: 'Rough expressive jazz manga illustration with abstract energy.',
+      key_features: 'Ishizuka jazz realism; sweat; smoky clubs; abstract music',
       creative_brief:
-        "Jazz anime of midnight ascension: smoky clubs, saxophone solos, swinging lines and improvisation drawn as rising curves. Carry it through saxophone solo, smoke spotlight, flowing curves, midnight club. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy. Carry it through Ishizuka jazz realism, sweat, smoky clubs, abstract music. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-369',
-    name: 'Raw Youth Feedback Style',
-    displayName: 'Raw Youth Feedback',
-    styleAnchors: ['Raw Youth Feedback Style'],
+    name: 'Harold Sakuishi - Raw Youth Feedback',
+    displayName: 'Harold Sakuishi - Raw Youth Feedback',
+    styleAnchors: ['Harold Sakuishi - Raw Youth Feedback'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Live-house punk anime of raw feedback: tiny stages, crowd surfing, sweat, cables and sound drawn as jagged noise.',
+        'Harold Sakuishi BECK look: scruffy realistic rock manga, garage rehearsals, live-house crowds, lanky teens and Western rock fashion.',
       subject_treatment:
-        "Keep the prompt's subject and action; put it in a cramped live-house show with noise, sweat and bodies pressed close.",
-      color_and_tone: 'Harsh red and green stage lights, black walls and sweat highlights.',
-      lighting_and_shadow:
-        'Cheap colored stage lights, strobe flashes and deep shadows in the crowd.',
-      texture_and_material:
-        'Sweat, torn shirts, amp grilles and tangled cables with jagged sound lines.',
-      camera_and_composition: 'Chaotic low angles from the crowd and close stage-edge shots.',
-      atmosphere_and_mood: 'Raw and loud, a sweaty room of young people shouting the same words.',
-      rendering_and_quality: 'Rough energetic anime with jagged noise effects and harsh lighting.',
-      key_features: 'jagged noise lines; crowd surfing; colored stage lights; cramped stage',
+        'Preserve the requested identity, count, pose and action; draw people with Sakuishi designs, lanky scruffy figures, long hair, band tees and worn instruments.',
+      color_and_tone: 'Garage browns, amp black, stage red and faded denim blue.',
+      lighting_and_shadow: 'Stage lights in small clubs and garage bulbs.',
+      texture_and_material: 'Loose realistic pen lines, screentone and gritty stage textures.',
+      camera_and_composition: 'Crowd-surf wides, amp-side angles and garage rehearsal framing.',
+      atmosphere_and_mood: 'Keep the requested mood with raw youthful rock.',
+      rendering_and_quality:
+        'Scruffy realistic rock manga illustration with loud live-house energy.',
+      key_features: 'Harold Sakuishi rock; garages; live houses; lanky teens',
       creative_brief:
-        "Live-house punk anime of raw feedback: tiny stages, crowd surfing, sweat, cables and sound drawn as jagged noise. Carry it through jagged noise lines, crowd surfing, colored stage lights, cramped stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Harold Sakuishi BECK look: scruffy realistic rock manga, garage rehearsals, live-house crowds, lanky teens and Western rock fashion. Carry it through Harold Sakuishi rock, garages, live houses, lanky teens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-370',
-    name: 'Intimate Indie Confession Style',
-    displayName: 'Intimate Indie Confession',
-    styleAnchors: ['Intimate Indie Confession Style'],
+    name: 'Given - Intimate Indie Confession',
+    displayName: 'Given - Intimate Indie Confession',
+    styleAnchors: ['Given - Intimate Indie Confession'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person.',
+        'Lerche Given television look (2019) from Natsuki Kizu designs: soft indie rock romance, pastel bedroom light, guitars and quiet emotional close-ups.',
       subject_treatment:
-        "Keep the prompt's subject and action; make it quiet and close, as if performed for a single listener.",
-      color_and_tone: 'Warm lamp amber, soft greys and muted pastel clothing.',
-      lighting_and_shadow: 'One small lamp or window light, gentle shadows and soft glow on faces.',
-      texture_and_material: 'Wooden guitar grain, knitted sweaters and cluttered small rooms.',
-      camera_and_composition: 'Close, intimate framings at eye level with shallow depth.',
-      atmosphere_and_mood: 'Tender and vulnerable, a song that says what words could not.',
-      rendering_and_quality: 'Soft intimate anime with warm light and gentle detail.',
-      key_features: 'lamp glow; acoustic guitar; close framing; single listener',
+        'Preserve the requested identity, count, pose and action; draw people with Kizu designs, soft features, gentle eyes, messy hair and casual indie clothes.',
+      color_and_tone: 'Pastel blue, warm bedroom amber and soft grey.',
+      lighting_and_shadow: 'Soft window light, warm lamps and stage glow.',
+      texture_and_material:
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition:
+        'Intimate close-ups, bedroom floor framing and small-venue stage shots.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate tender confession.',
+      rendering_and_quality: 'Soft Lerche television frame with gentle hushed indie atmosphere.',
+      key_features: 'Given softness; indie rock; pastel bedrooms; guitars',
       creative_brief:
-        "Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person. Carry it through lamp glow, acoustic guitar, close framing, single listener. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Lerche Given television look (2019) from Natsuki Kizu designs: soft indie rock romance, pastel bedroom light, guitars and quiet emotional close-ups. Carry it through Given softness, indie rock, pastel bedrooms, guitars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-372',
-    name: 'Allegorical Spotlight Confrontation Style',
-    displayName: 'Allegorical Spotlight Confrontation',
-    styleAnchors: ['Allegorical Spotlight Confrontation Style'],
+    name: 'Revue Starlight - Allegorical Spotlight Confrontation',
+    displayName: 'Revue Starlight - Allegorical Spotlight Confrontation',
+    styleAnchors: ['Revue Starlight - Allegorical Spotlight Confrontation'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Allegorical stage anime of spotlight confrontations: two performers facing off under theatrical light with symbolic props and shadows.',
+        'Kinema Citrus Revue Starlight television look (2018): Ikuhara-influenced theater, surreal transforming stages, crossing spotlights, giant symbolic props and dueling performers.',
       subject_treatment:
-        "Keep the prompt's subject and action; stage it as a symbolic confrontation under a spotlight, meaning carried by staging.",
-      color_and_tone:
-        'Black stage, one white spotlight and a single symbolic color such as red or gold.',
-      lighting_and_shadow: 'Hard theatrical spotlights and huge cast shadows on the backdrop.',
+        'Preserve the requested identity, count, pose and action; draw people with Revue Starlight designs, sparkling eyes, stage uniforms and dramatic sword-bearing poses.',
+      color_and_tone: 'Stage red, gold, midnight blue and spotlight white.',
+      lighting_and_shadow: 'Crossing spotlights, bursts of stage fire and red theatrical glow.',
       texture_and_material:
-        'Stage boards, velvet curtains, masks and symbolic props in graphic cel.',
-      camera_and_composition:
-        'Frontal proscenium framing with strong symmetry and dramatic shadow play.',
-      atmosphere_and_mood: 'Charged and symbolic, a rivalry performed as if it were a myth.',
-      rendering_and_quality: 'Graphic theatrical anime with bold shadows and minimal staging.',
-      key_features: 'spotlight duel; giant shadows; symbolic prop; proscenium',
+        'Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Transforming stage wides, dueling poses and symbolic prop reveals.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic allegorical rivalry.',
+      rendering_and_quality:
+        'Theatrical Kinema Citrus television frame with surreal transforming stagecraft.',
+      key_features: 'Revue stages; crossing spotlights; symbolic props; duels',
       creative_brief:
-        "Allegorical stage anime of spotlight confrontations: two performers facing off under theatrical light with symbolic props and shadows. Carry it through spotlight duel, giant shadows, symbolic prop, proscenium. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kinema Citrus Revue Starlight television look (2018): Ikuhara-influenced theater, surreal transforming stages, crossing spotlights, giant symbolic props and dueling performers. Carry it through Revue stages, crossing spotlights, symbolic props, duels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-371',
-    name: 'Virtuoso Ensemble Whirl Style',
-    displayName: 'Virtuoso Ensemble Whirl',
-    styleAnchors: ['Virtuoso Ensemble Whirl Style'],
+    name: 'Tomoko Ninomiya - Virtuoso Ensemble Whirl',
+    displayName: 'Tomoko Ninomiya - Virtuoso Ensemble Whirl',
+    styleAnchors: ['Tomoko Ninomiya - Virtuoso Ensemble Whirl'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Orchestra anime of virtuosic whirl: sweeping bows, conductors, massed strings and music drawn as swirling color.',
+        'Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion.',
       subject_treatment:
-        "Keep the prompt's subject and action; place it within a grand orchestral performance with swirling visualized sound.",
-      color_and_tone: 'Concert-hall wood and gold with deep red seats and swirling colored sound.',
-      lighting_and_shadow: 'Warm stage wash with bright highlights on bows, brass and faces.',
-      texture_and_material:
-        'Varnished wood, gold leaf, black concert clothing and flowing sound ribbons.',
-      camera_and_composition:
-        'Grand wide shots of the full orchestra and dynamic close-ups on soloists.',
-      atmosphere_and_mood: 'Soaring and overwhelming, an entire hall lifted by one crescendo.',
+        'Preserve the requested identity, count, pose and action; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear.',
+      color_and_tone: 'Warm concert-hall gold, black tails and soft pastel sheet music tones.',
+      lighting_and_shadow: 'Concert hall stage light and warm rehearsal room light.',
+      texture_and_material: 'Loose charming lines, screentone and swirling musical flourishes.',
+      camera_and_composition: 'Orchestra wides, conductor close-ups and comedic reaction panels.',
+      atmosphere_and_mood: 'Keep the requested mood with whirling musical joy.',
       rendering_and_quality:
-        'Grand performance anime with layered sound ribbons and meticulous instruments.',
-      key_features: 'swirling sound ribbons; conductor; massed strings; concert hall',
+        'Charming josei manga illustration with swirling classical musical energy.',
+      key_features: 'Ninomiya charm; classical orchestras; josei comedy; musical swirls',
       creative_brief:
-        "Orchestra anime of virtuosic whirl: sweeping bows, conductors, massed strings and music drawn as swirling color. Carry it through swirling sound ribbons, conductor, massed strings, concert hall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion. Carry it through Ninomiya charm, classical orchestras, josei comedy, musical swirls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

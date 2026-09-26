@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-091
 packId: pack_16
-name: Haunted Dollhouse Horror Anime
+name: Peach-Pit Rozen Maiden - Haunted Dollhouse Horror
 styleAnchors:
-  - Haunted Dollhouse Horror Anime
+  - Peach-Pit Rozen Maiden - Haunted Dollhouse Horror
   - miniature horror anime
   - open dollhouse rooms
-displayName: Haunted Dollhouse Horror Anime
+displayName: Peach-Pit Rozen Maiden - Haunted Dollhouse Horror
 category: 7. Horror
 domain: miniature horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - dollhouse
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks.'
-  subject_treatment: Keep the prompt's subject and setting; show it at dollhouse scale or observed through tiny windows and open miniature rooms.
-  color_and_tone: Faded pastel wallpaper colors, porcelain white and dusty rose with deep shadow in the rooms.
-  lighting_and_shadow: Soft lamp light from outside the dollhouse, tiny rooms lit unevenly from above.
-  texture_and_material: Miniature wallpaper, porcelain, lace and painted wood drawn with delicate line.
-  camera_and_composition: Cutaway views into open miniature rooms or eye-level shots through tiny windows.
-  atmosphere_and_mood: Delicate and creepy, a perfect little world that seems to be rehearsing something.
-  rendering_and_quality: Fine-detailed prestige anime with miniature scale cues and soft light.
-  creative_brief: "Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks. Carry it through open dollhouse rooms, porcelain faces, tiny furniture, changed scenes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: open dollhouse rooms; porcelain faces; tiny furniture; changed scenes
+  aesthetic: 'Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair.
+  color_and_tone: Rose red, ivory lace, deep violet and antique gold.
+  lighting_and_shadow: Dim candle and moon light in antique rooms.
+  texture_and_material: Delicate fine line, intricate lace detail and porcelain-smooth shading on faces.
+  camera_and_composition: Cutaway dollhouse interiors and eerie gatherings of dolls facing the viewer.
+  atmosphere_and_mood: Keep the requested mood with eerie gothic stillness.
+  rendering_and_quality: Elegant gothic doll illustration with unsettling calm and antique ornament.
+  creative_brief: "Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life. Carry it through Peach-Pit dolls, lace and ringlets, glass eyes, Victorian rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Peach-Pit dolls; lace and ringlets; glass eyes; Victorian rooms
 avoidRules:
+  - a red-dressed doll with a large bonnet
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,9 +50,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - dollhouse
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

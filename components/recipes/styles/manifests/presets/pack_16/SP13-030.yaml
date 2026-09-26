@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-030
 packId: pack_16
-name: Moonlit Ascetic Training Anime
+name: Kazuo Kamimura - Moonlit Ascetic Training
 styleAnchors:
-  - Moonlit Ascetic Training Anime
-displayName: Moonlit Ascetic Training Anime
+  - Kazuo Kamimura - Moonlit Ascetic Training
+displayName: Kazuo Kamimura - Moonlit Ascetic Training
 category: 6. Samurai & Medieval
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - samurai-medieval
+  - reference-title
 visualDna:
-  aesthetic: 'Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline.'
-  subject_treatment: Keep the prompt's subject and setting; show it practicing, repeating or holding a pose, alone or with one teacher.
-  color_and_tone: Silver moon blue, cedar brown and white breath, a single warm lantern accent.
-  lighting_and_shadow: Cold moonlight from above with soft blue shadows and a small lantern pool on the ground.
-  texture_and_material: Rough cotton, wet stone, bamboo and snow drawn with thin line and soft cel.
-  camera_and_composition: Medium frames with the moon or a lantern in view, calm and centered.
-  atmosphere_and_mood: Disciplined and lonely, calm repetition carrying a stubborn and very quiet determination.
-  rendering_and_quality: Subtle prestige anime with gentle motion and precise body mechanics.
-  key_features: moonlight; breath; repetition; lantern pool
-  creative_brief: "Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline. Carry it through moonlight, breath, repetition, lantern pool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes.
+  color_and_tone: Black brush ink on white with pale grey wash and moon-white space.
+  lighting_and_shadow: Moonlight on snow expressed by white paper, soft wash shadows and sharp black accents.
+  texture_and_material: Sinuous brush line, soft washes, snow flecks and paper grain.
+  camera_and_composition: Poetic seasonal compositions, figures framed by snow, moon and branches.
+  atmosphere_and_mood: Keep the requested mood with lyrical solitary discipline.
+  rendering_and_quality: Elegant lyrical gekiga illustration with poetic negative space.
+  key_features: Kazuo Kamimura line; snow and moon; solemn elegance; poetic stillness
+  creative_brief: "Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness. Carry it through Kazuo Kamimura line, snow and moon, solemn elegance, poetic stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -53,10 +54,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-030.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -66,6 +71,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - samurai-medieval
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

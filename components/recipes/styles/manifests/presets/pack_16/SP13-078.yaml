@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-078
 packId: pack_16
-name: Arthurian Tapestry Anime
+name: Moto Hagio - Arthurian Tapestry
 styleAnchors:
-  - Arthurian Tapestry Anime
+  - Moto Hagio - Arthurian Tapestry
   - medieval romance anime
   - millefleur meadow
-displayName: Arthurian Tapestry Anime
+displayName: Moto Hagio - Arthurian Tapestry
 category: 6. Samurai & Medieval
 domain: medieval romance anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - arthurian
   - tapestry
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures.'
-  subject_treatment: Keep the prompt's subject and setting; set it against flattened, woven-looking backgrounds while figures keep anime line and feeling.
-  color_and_tone: Madder red, woad blue, weld yellow and deep green on a dark ground, faded like old wool.
-  lighting_and_shadow: Soft even light with little cast shadow, as in a woven wall hanging.
-  texture_and_material: Visible weave texture in backgrounds, embroidered detail on clothing and small scattered flowers.
-  camera_and_composition: Frontal, layered compositions with tall trees framing the sides like a tapestry border.
-  atmosphere_and_mood: Courtly and wistful, a legend being told softly beside a winter fire.
-  rendering_and_quality: Decorative prestige anime blending clean cel figures with woven background textures.
-  creative_brief: "Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures. Carry it through millefleur meadow, woven texture, jewel wool colors, framing trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: millefleur meadow; woven texture; jewel wool colors; framing trees
+  aesthetic: 'Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes.
+  color_and_tone: Soft pastel watercolor, rose, sage and cream, or black line with tone.
+  lighting_and_shadow: Dreamy diffuse glow, floral light halos and soft shadows.
+  texture_and_material: Delicate fine lines, floral ornament, lace and screentone.
+  camera_and_composition: Romantic framed compositions wreathed with flowers, vines and decorative borders.
+  atmosphere_and_mood: Keep the requested mood with melancholy romantic legend.
+  rendering_and_quality: Delicate classic 1970s shojo manga illustration with melancholy grace.
+  creative_brief: "Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty. Carry it through Moto Hagio delicacy, European legend, flowers and lace, luminous eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Moto Hagio delicacy; European legend; flowers and lace; luminous eyes
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - arthurian
     - tapestry
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

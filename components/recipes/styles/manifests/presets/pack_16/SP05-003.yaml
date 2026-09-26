@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-003
 packId: pack_16
-name: Jazzy Rogue Heist Rhythm Style
+name: Lupin III - Jazzy Rogue Heist Rhythm
 styleAnchors:
-  - 'Jazzy Rogue Heist Rhythm Style'
-displayName: 'Jazzy Rogue Heist Rhythm'
+  - Lupin III - Jazzy Rogue Heist Rhythm
+displayName: Lupin III - Jazzy Rogue Heist Rhythm
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use relaxed contour turns, carefully placed interior marks and no imposed gesture; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use ink navy, smoky slate, warm amber and a small brass-like accent. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as narrow hard cel slices following the stated key light, with no added spotlight; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply dry ink edges over softly brushed matte color fields as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use short and long marks alternating around existing shapes, leaving clear negative gaps; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through syncopated line pace and small intervals; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use lively contour timing with clean, bounded shadows and restrained grain; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits.
+  color_and_tone: Muted seventies palette, mustard, teal, burgundy and warm night browns.
+  lighting_and_shadow: Simple cel light with moody night streetlamps and spotlight searchlights.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Playful caper staging, rooftop chases, cars skidding through narrow streets.
+  atmosphere_and_mood: Keep the requested mood with cool jazzy mischief.
+  rendering_and_quality: Loose stylish 1970s television frame with caricature swagger.
+  key_features: Monkey Punch lanky caricature; jazz caper; vintage cars; sketchy seventies cel
+  creative_brief: "Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities. Carry it through Monkey Punch lanky caricature, jazz caper, vintage cars, sketchy seventies cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a thief in a red or green jacket with a narrow tie
+  - a bearded gunman in a fedora
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-003.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a thief in a red or green jacket with a narrow tie, a bearded gunman in a fedora, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

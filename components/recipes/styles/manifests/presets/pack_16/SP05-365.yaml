@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-365
 packId: pack_16
-name: Formal Partner Motion Style
+name: Welcome to the Ballroom - Formal Partner Motion
 styleAnchors:
-  - Formal Partner Motion Style
-displayName: Formal Partner Motion
+  - Welcome to the Ballroom - Formal Partner Motion
+displayName: Welcome to the Ballroom - Formal Partner Motion
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Competitive ballroom anime of formal partner motion: frames held, gowns sweeping, posture and connection turned into line.'
-  subject_treatment: Keep the prompt's subject and action; express it through partnered motion, held frames and sweeping arcs of fabric.
-  color_and_tone: Gown jewel colors and black tailcoats against warm ballroom gold.
-  lighting_and_shadow: Chandelier and spotlight glow with sparkling highlights on sequins and hair.
-  texture_and_material: Flowing chiffon, sequins, polished shoes and a glossy parquet floor.
-  camera_and_composition: Circling framings around couples and sweeping diagonals across the floor.
-  atmosphere_and_mood: Elegant and intense, two people moving as one line under pressure.
-  rendering_and_quality: Graceful sports anime with long fabric motion arcs and polished detail.
-  key_features: held frame; sweeping gowns; parquet reflections; partnership
-  creative_brief: "Competitive ballroom anime of formal partner motion: frames held, gowns sweeping, posture and connection turned into line. Carry it through held frame, sweeping gowns, parquet reflections, partnership. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Welcome to the Ballroom television look (2017) from Tomo Takeuchi designs: extremely long elongated limbs, blazing ballroom gowns, intense stares and sweeping motion.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Takeuchi designs, very long necks and limbs, piercing eyes and ballroom gowns or tailcoats.
+  color_and_tone: Emerald gown green, gold floor, deep crimson and black tailcoats.
+  lighting_and_shadow: Ballroom chandeliers and spotlight glares on glossy parquet.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Sweeping partner spins, low angles on long legs and stares.
+  atmosphere_and_mood: Keep the requested mood with fierce elegant intensity.
+  rendering_and_quality: Intense Production I.G frame with elongated dance motion.
+  key_features: Tomo Takeuchi elongation; ballroom gowns; piercing stares; spins
+  creative_brief: "Production I.G Welcome to the Ballroom television look (2017) from Tomo Takeuchi designs: extremely long elongated limbs, blazing ballroom gowns, intense stares and sweeping motion. Carry it through Tomo Takeuchi elongation, ballroom gowns, piercing stares, spins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-365.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

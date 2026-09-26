@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-356
 packId: pack_16
-name: Graphic Impact Duel Style
+name: Takeshi Konomi - Graphic Impact Duel
 styleAnchors:
-  - Graphic Impact Duel Style
-displayName: Graphic Impact Duel
+  - Takeshi Konomi - Graphic Impact Duel
+displayName: Takeshi Konomi - Graphic Impact Duel
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Boxing anime told with graphic impact: freeze frames, halftone backgrounds, radial lines and faces distorted by the punch.'
-  subject_treatment: Keep the prompt's subject and action; freeze its moment of impact with graphic backgrounds and radiating lines.
-  color_and_tone: Red and black with bold halftone yellow or white backgrounds at impact.
-  lighting_and_shadow: Hard ring lights from above and impact flashes turning backgrounds to flat graphic color.
-  texture_and_material: Sweat spray, glove leather and rope drawn with thick ink and halftone dots.
-  camera_and_composition: Extreme close-ups at the moment of contact, diagonal frames and freeze-frames.
-  atmosphere_and_mood: Brutal and graphic, the shock of a single punch stopping time.
-  rendering_and_quality: Graphic sports anime with manga halftone and bold impact design.
-  key_features: impact freeze; halftone background; radial lines; sweat spray
-  creative_brief: "Boxing anime told with graphic impact: freeze frames, halftone backgrounds, radial lines and faces distorted by the punch. Carry it through impact freeze, halftone background, radial lines, sweat spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys.
+  color_and_tone: Bright yellow ball, team blue and red, flat halftone backgrounds.
+  lighting_and_shadow: Graphic impact light, speed flashes and stark sun on courts.
+  texture_and_material: Clean manga line, halftone backgrounds, speed lines and impact effects.
+  camera_and_composition: Special-move freeze frames, curving ball trails and dramatic rival face-offs.
+  atmosphere_and_mood: Keep the requested mood with flashy competitive bravado.
+  rendering_and_quality: Graphic sports manga-style frame with flashy special moves.
+  key_features: Takeshi Konomi special moves; halftone flats; cool players; impact
+  creative_brief: "Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels. Carry it through Takeshi Konomi special moves, halftone flats, cool players, impact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -60,10 +61,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-356.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -72,6 +77,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

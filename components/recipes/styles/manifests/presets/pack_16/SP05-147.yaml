@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-147
 packId: pack_16
-name: Winter Friction Romance Style
+name: Toradora! - Winter Friction Romance
 styleAnchors:
-  - 'Winter Friction Romance Style'
-displayName: 'Winter Friction Romance'
+  - Toradora! - Winter Friction Romance
+displayName: Toradora! - Winter Friction Romance
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A restrained digital anime treatment built from delicate contours, soft
-    compositing and gentle value contrast.
-  subject_treatment: >-
-    Keep the supplied identity, action and pose. Use economical facial marks and quiet
-    contour changes so expression remains subtle without prescribing a relationship.
-  color_and_tone: >-
-    When no palette is specified, favor pale blue-gray and soft gray with small blush or
-    amber accents. Preserve every requested color and attach accents to forms already
-    present.
-  lighting_and_shadow: >-
-    Use diffuse illumination with a restrained warm counterlight and a fine separating rim;
-    keep forms legible.
-  texture_and_material: >-
-    Blend clean digital fills with softly painted backgrounds, matching surface treatment to
-    the materials in the prompt.
-  camera_and_composition: >-
-    Preserve the requested framing and viewpoint. Let the existing gesture read clearly,
-    using open space only where the supplied composition allows it.
-  atmosphere_and_mood: >-
-    Understated expression and cool-warm contrast can support a quiet or intimate tone when
-    requested; follow the prompt's emotional direction.
-  rendering_and_quality: >-
-    Keep facial and object contours fine but readable, transitions soft, and background
-    color integrated without blurring the subject.
-  key_features: >-
-    Delicate contour economy; diffuse light with small warm accents; pale cool fields when
-    palette is open; soft integration between digital forms and painted backgrounds.
-  creative_brief: 'Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present. Use it as a reusable look on any subject.'
+  aesthetic: 'J.C.Staff Toradora! television look (2008) with Masayoshi Tanaka designs: clean late-2000s romantic comedy cel, large bright eyes, winter school streets and warm lamplit apartments.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tanaka designs, large bright eyes with crisp highlights, fine hair strands and winter coats and scarves.
+  color_and_tone: Winter blue, snow white, warm lamp orange and scarf reds.
+  lighting_and_shadow: Cold winter daylight, warm streetlamps and soft glowing window light at night.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Romantic two-shots, snowy street wides and comic close-up reactions between rivals.
+  atmosphere_and_mood: Keep the requested mood with prickly tender romance.
+  rendering_and_quality: Polished late-2000s romantic comedy television frame with bright clean designs.
+  key_features: Masayoshi Tanaka designs; winter romance; bright eyes; comic friction
+  creative_brief: "J.C.Staff Toradora! television look (2008) with Masayoshi Tanaka designs: clean late-2000s romantic comedy cel, large bright eyes, winter school streets and warm lamplit apartments. Carry it through Masayoshi Tanaka designs, winter romance, bright eyes, comic friction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-147.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

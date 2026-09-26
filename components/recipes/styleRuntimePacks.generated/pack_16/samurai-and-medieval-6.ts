@@ -5,178 +5,171 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-026',
-    name: 'Pre-Strike Stillness Anime',
-    displayName: 'Pre-Strike Stillness Anime',
-    styleAnchors: ['Pre-Strike Stillness Anime'],
+    name: 'Goseki Kojima - Pre-Strike Stillness',
+    displayName: 'Goseki Kojima - Pre-Strike Stillness',
+    styleAnchors: ['Goseki Kojima - Pre-Strike Stillness'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension.',
+        'Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike.',
       subject_treatment:
-        "Keep the prompt's subject, action and setting; draw it at the instant before motion, weight settled, eyes fixed, hands resting near what they will use.",
-      color_and_tone:
-        'Slate greys, lacquer crimson and moonlit indigo with one sharp accent, mostly desaturated around a single warm point.',
+        'Preserve the requested identity, count, pose and action; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion.',
+      color_and_tone: 'Black sumi brush ink on white paper with grey wash and no other color.',
       lighting_and_shadow:
-        'Raking side light and long hard shadows, faces half in dark, a thin rim tracing the silhouette.',
+        'Light made by the untouched paper, shadows as heavy wet brush masses and dry-brush edges.',
       texture_and_material:
-        'Clean cel with fine ink line, woven cloth folds and lacquer gloss kept sparse and controlled.',
+        'Wet and dry brush strokes, splattered ink, grey wash tones and rough paper grain.',
       camera_and_composition:
-        'Wide static frames with large empty space, or extreme close-ups on eyes and hands, nothing moving yet.',
-      atmosphere_and_mood:
-        'Silent, tense and ceremonial, like a held breath just before something fatal happens.',
+        'Wide empty compositions with tiny opposed figures, then abrupt extreme close-ups of eyes and hands.',
+      atmosphere_and_mood: 'Keep the requested mood with deadly suspended stillness.',
       rendering_and_quality:
-        'Theatrical prestige anime key frame with precise line weight and restrained effects.',
-      key_features: 'held breath; empty space; raking light; eye and hand close-ups',
+        'Masterful gekiga brush illustration with cinematic silence and restraint.',
+      key_features:
+        'Goseki Kojima brush ink; empty white space; gekiga realism; pre-strike stillness',
       creative_brief:
-        "Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension. Carry it through held breath, empty space, raking light, eye and hand close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike. Carry it through Goseki Kojima brush ink, empty white space, gekiga realism, pre-strike stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-027',
-    name: 'Crimson Formation Charge Anime',
-    displayName: 'Crimson Formation Charge Anime',
-    styleAnchors: ['Crimson Formation Charge Anime'],
+    name: 'Kouta Hirano - Crimson Formation Charge',
+    displayName: 'Kouta Hirano - Crimson Formation Charge',
+    styleAnchors: ['Kouta Hirano - Crimson Formation Charge'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame.',
+        'Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it inside a moving formation or charge, individuals simplified into rhythmic repeated shapes.",
+        'Preserve the requested identity, count, pose and action; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor.',
       color_and_tone:
-        'Lacquer crimson and black armor against dust gold and pale sky, banners as bright repeated accents.',
+        'Black ink and grey tone with a single savage crimson accent across the charge.',
       lighting_and_shadow:
-        'Low afternoon sun through dust, blocked cel shadows under helmets and a hot rim along the front rank.',
+        'Harsh contrast where huge black shadow shapes swallow faces and armor edges glint white.',
       texture_and_material:
-        'Lamellar armor plates, banner silk and churned earth drawn with bold simplified cel shapes.',
+        'Heavy ink fills, scratchy speed lines, screentone gradients and ink splatter.',
       camera_and_composition:
-        'Low angle into the oncoming charge or high wide shots of whole formations sweeping diagonally.',
-      atmosphere_and_mood:
-        'Thunderous and collective, a single unstoppable will carried forward by many riders at once.',
+        'Charging masses rushing toward the lens, extreme low angles and wide battlefield spreads.',
+      atmosphere_and_mood: 'Keep the requested mood with savage exhilarated fury.',
       rendering_and_quality:
-        'Large-scale battle anime with repeated figures, speed lines and clean readable masses.',
-      key_features: 'massed formation; diagonal charge; repeated banners; dust light',
+        'Bold aggressive manga illustration with dense black masses and kinetic energy.',
+      key_features: 'Kouta Hirano black masses; manic grins; massed charges; crimson accents',
       creative_brief:
-        "Epic battle anime of massed formations: rows of armored riders and spears surging as one red wave across the frame. Carry it through massed formation, diagonal charge, repeated banners, dust light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone. Carry it through Kouta Hirano black masses, manic grins, massed charges, crimson accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-028',
-    name: 'Heraldic Oath Anime',
-    displayName: 'Heraldic Oath Anime',
-    styleAnchors: ['Heraldic Oath Anime'],
+    name: 'Kaoru Mori - Heraldic Oath',
+    displayName: 'Kaoru Mori - Heraldic Oath',
+    styleAnchors: ['Kaoru Mori - Heraldic Oath'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Devotional medieval anime built around vows and heraldry: kneeling figures, banners, stained light and solemn symmetry.',
+        "Kaoru Mori manga look as in A Bride's Story: obsessively detailed costumes, embroidery, carved wood and textile ornament, gentle realistic faces and devoted quiet ceremony.",
       subject_treatment:
-        "Keep the prompt's subject and setting; stage it as a solemn act of promise, framed by emblems, banners or architecture already present.",
-      color_and_tone:
-        'Heraldic reds, blues and golds against cold stone grey, colored light falling from high windows.',
+        'Preserve the requested identity, count, pose and action; draw people with Mori realism, gentle faces, detailed hair and layered costumes where every embroidered pattern is drawn.',
+      color_and_tone: 'Black ink with fine grey tone, or soft muted watercolor for color pages.',
       lighting_and_shadow:
-        'Colored shafts of window light and candle glow, soft shadows pooling at the base of pillars.',
+        'Soft natural light rendered by careful hatching and tone, gentle glow on ornament.',
       texture_and_material:
-        'Embroidered banners, polished plate, worn stone and wax, drawn with fine line and flat cel.',
+        'Meticulous pen line, embroidery patterns, carved ornament and fine hatching.',
       camera_and_composition:
-        'Symmetrical frontal framing down a nave or hall, the subject small and centered.',
-      atmosphere_and_mood:
-        'Solemn and sacred, loyalty felt quietly rather than shouted, with deep restrained emotion.',
+        'Calm symmetrical ceremonial compositions and loving close-ups of ornamented detail.',
+      atmosphere_and_mood: 'Keep the requested mood with devoted quiet solemnity.',
       rendering_and_quality:
-        'Refined prestige anime with careful ornament and luminous colored light.',
-      key_features: 'symmetry; heraldic banners; colored window light; kneeling vow',
+        'Meticulous ornamental manga illustration with extraordinary costume detail.',
+      key_features: 'Kaoru Mori ornament; embroidery detail; gentle realism; ceremonial calm',
       creative_brief:
-        "Devotional medieval anime built around vows and heraldry: kneeling figures, banners, stained light and solemn symmetry. Carry it through symmetry, heraldic banners, colored window light, kneeling vow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kaoru Mori manga look as in A Bride's Story: obsessively detailed costumes, embroidery, carved wood and textile ornament, gentle realistic faces and devoted quiet ceremony. Carry it through Kaoru Mori ornament, embroidery detail, gentle realism, ceremonial calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-029',
-    name: 'Siege Breach Ember Anime',
-    displayName: 'Siege Breach Ember Anime',
-    styleAnchors: ['Siege Breach Ember Anime'],
+    name: 'Tetsuo Hara Keiji - Siege Breach Ember',
+    displayName: 'Tetsuo Hara Keiji - Siege Breach Ember',
+    styleAnchors: ['Tetsuo Hara Keiji - Siege Breach Ember'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap.',
+        'Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers.',
       subject_treatment:
-        "Keep the prompt's subject and setting; put it at a threshold being forced open, with fire and debris driving through the frame.",
-      color_and_tone: 'Ember orange and ash grey against night blue, sparks as bright points.',
+        'Preserve the requested identity, count, pose and action; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair.',
+      color_and_tone: 'Ink black with fire orange, ember red and smoke grey accents.',
       lighting_and_shadow:
-        'Firelight from the breach, hard orange rims and deep blue shadow on the far side.',
-      texture_and_material:
-        'Splintered wood, cracked stone, smoke and flying sparks drawn as bold effect animation.',
+        'Firelight from burning gates, embers and dramatic rim light on muscles.',
+      texture_and_material: 'Dense hatching, bold ink contour, smoke brush and ember flecks.',
       camera_and_composition:
-        'Framed through the breach or from inside looking out at the flood of light and debris.',
-      atmosphere_and_mood:
-        'Violent and desperate, the roar of a wall giving way and no time left to choose.',
-      rendering_and_quality:
-        'Dynamic effects-heavy anime with readable silhouettes against the fire.',
-      key_features: 'breaching gap; embers; fire rim light; debris effects',
+        'Heroic low angles, gate-breach wides and warlords towering over armies.',
+      atmosphere_and_mood: 'Keep the requested mood with thunderous heroic fury.',
+      rendering_and_quality: 'Powerful hatched samurai manga illustration with grand siege scale.',
+      key_features: 'Tetsuo Hara warlords; hatched anatomy; burning gates; embers',
       creative_brief:
-        "Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap. Carry it through breaching gap, embers, fire rim light, debris effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers. Carry it through Tetsuo Hara warlords, hatched anatomy, burning gates, embers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-030',
-    name: 'Moonlit Ascetic Training Anime',
-    displayName: 'Moonlit Ascetic Training Anime',
-    styleAnchors: ['Moonlit Ascetic Training Anime'],
+    name: 'Kazuo Kamimura - Moonlit Ascetic Training',
+    displayName: 'Kazuo Kamimura - Moonlit Ascetic Training',
+    styleAnchors: ['Kazuo Kamimura - Moonlit Ascetic Training'],
     category: '6. Samurai & Medieval',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline.',
+        'Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness.',
       subject_treatment:
-        "Keep the prompt's subject and setting; show it practicing, repeating or holding a pose, alone or with one teacher.",
-      color_and_tone:
-        'Silver moon blue, cedar brown and white breath, a single warm lantern accent.',
+        'Preserve the requested identity, count, pose and action; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes.',
+      color_and_tone: 'Black brush ink on white with pale grey wash and moon-white space.',
       lighting_and_shadow:
-        'Cold moonlight from above with soft blue shadows and a small lantern pool on the ground.',
-      texture_and_material:
-        'Rough cotton, wet stone, bamboo and snow drawn with thin line and soft cel.',
+        'Moonlight on snow expressed by white paper, soft wash shadows and sharp black accents.',
+      texture_and_material: 'Sinuous brush line, soft washes, snow flecks and paper grain.',
       camera_and_composition:
-        'Medium frames with the moon or a lantern in view, calm and centered.',
-      atmosphere_and_mood:
-        'Disciplined and lonely, calm repetition carrying a stubborn and very quiet determination.',
-      rendering_and_quality: 'Subtle prestige anime with gentle motion and precise body mechanics.',
-      key_features: 'moonlight; breath; repetition; lantern pool',
+        'Poetic seasonal compositions, figures framed by snow, moon and branches.',
+      atmosphere_and_mood: 'Keep the requested mood with lyrical solitary discipline.',
+      rendering_and_quality: 'Elegant lyrical gekiga illustration with poetic negative space.',
+      key_features: 'Kazuo Kamimura line; snow and moon; solemn elegance; poetic stillness',
       creative_brief:
-        "Quiet training anime of monks and warriors at night: repetition, cold moonlight, breath and discipline. Carry it through moonlight, breath, repetition, lantern pool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness. Carry it through Kazuo Kamimura line, snow and moon, solemn elegance, poetic stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-071',
-    name: 'Ink-Splatter Swordplay Anime',
-    displayName: 'Ink-Splatter Swordplay Anime',
-    styleAnchors: ['Ink-Splatter Swordplay Anime', 'sumi ink action anime', 'ink splatter'],
+    name: 'Takashi Okazaki - Ink-Splatter Swordplay',
+    displayName: 'Takashi Okazaki - Ink-Splatter Swordplay',
+    styleAnchors: [
+      'Takashi Okazaki - Ink-Splatter Swordplay',
+      'sumi ink action anime',
+      'ink splatter',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'sumi ink action anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds.',
+        'Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes.',
       subject_treatment:
-        "Keep the prompt's subject and action; turn movement and impacts into brush arcs, ink splatter and dry-brush trails.",
-      color_and_tone: 'Black ink on warm paper white with a single red accent for blood or cloth.',
-      lighting_and_shadow:
-        'No realistic light; value comes from ink density, wet pools and dry brush.',
-      texture_and_material: 'Wet ink pools, dry-bristle streaks, splatter dots and paper grain.',
-      camera_and_composition: 'Dynamic diagonals with large empty paper areas around the action.',
-      atmosphere_and_mood:
-        'Explosive and stylish, every lethal movement turned into a single line of poetry.',
-      rendering_and_quality:
-        'Painterly anime action with bold brushwork over clean character line.',
+        'Preserve the requested identity, count, pose and action; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing.',
+      color_and_tone: 'Pure black, stark white and a single red accent color.',
+      lighting_and_shadow: 'Graphic high contrast with silhouettes and white slash lines of light.',
+      texture_and_material: 'Ink splatter, dry brush, gritty grain and graphic slash marks.',
+      camera_and_composition:
+        'Dramatic silhouette poses, slashing diagonals and wide stark landscapes.',
+      atmosphere_and_mood: 'Keep the requested mood with stoic stylish violence.',
+      rendering_and_quality: 'Stark graphic ink illustration with hip-hop samurai cool.',
       creative_brief:
-        "Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds. Carry it through ink splatter, brush arcs, paper white, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'ink splatter; brush arcs; paper white; red accent',
+        "Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes. Carry it through Takashi Okazaki black-white-red, ink splatter, silhouettes, slashing diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'Takashi Okazaki black-white-red; ink splatter; silhouettes; slashing diagonals',
     },
     ui: {
       previewStatus: 'pending',
@@ -184,31 +177,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-072',
-    name: 'Woodblock Palette Period Anime',
-    displayName: 'Woodblock Palette Period Anime',
-    styleAnchors: ['Woodblock Palette Period Anime', 'ukiyo-e colored anime', 'flat printed color'],
+    name: 'Mononoke 2007 - Woodblock Palette Period',
+    displayName: 'Mononoke 2007 - Woodblock Palette Period',
+    styleAnchors: [
+      'Mononoke 2007 - Woodblock Palette Period',
+      'ukiyo-e colored anime',
+      'flat printed color',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'ukiyo-e colored anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies.',
+        'Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns.',
       subject_treatment:
-        "Keep the prompt's subject and setting; flatten color into printed areas while keeping anime line and expression.",
+        'Preserve the requested identity, count, pose and action; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses.',
       color_and_tone:
-        'Indigo, vermilion, ochre, sea green and paper cream with bokashi gradient bands in the sky.',
+        'Faded woodblock palette of vermilion, indigo, ochre, teal and gold on beige paper.',
       lighting_and_shadow:
-        'Almost no cast shadow; depth comes from overlapping flat shapes and gradient bands.',
-      texture_and_material: 'Subtle paper grain and wood-grain texture inside flat color fields.',
+        'Flat woodblock light with no gradients, only pattern and paper texture.',
+      texture_and_material:
+        'Washi paper grain over all surfaces, flat woodblock color and pattern fills.',
       camera_and_composition:
-        'Decorative framing with strong silhouettes, cropped foreground elements and high horizons.',
-      atmosphere_and_mood:
-        'Elegant and nostalgic, a graphic calm like an old print hanging in a quiet inn.',
-      rendering_and_quality: 'Clean anime line over flat printed color with deliberate grain.',
+        'Sliding screen framing, flat theatrical staging and abrupt pattern cuts.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie ornate mystery.',
+      rendering_and_quality: 'Striking flat-textured Toei frame that looks printed on washi.',
       creative_brief:
-        "Period anime colored like woodblock prints: flat indigo, vermilion and ochre fields with printed gradient skies. Carry it through flat printed color, bokashi sky, paper grain, cropped foreground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'flat printed color; bokashi sky; paper grain; cropped foreground',
+        "Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns. Carry it through Mononoke washi texture, ukiyo-e color, sliding screens, Edo patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Mononoke washi texture; ukiyo-e color; sliding screens; Edo patterns',
     },
     ui: {
       previewStatus: 'pending',
@@ -216,31 +213,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-073',
-    name: 'Rain Duel Slow-Motion Anime',
-    displayName: 'Rain Duel Slow-Motion Anime',
-    styleAnchors: ['Rain Duel Slow-Motion Anime', 'slow-motion rain anime', 'frozen raindrops'],
+    name: 'Sword of the Stranger - Rain Duel Slow-Motion',
+    displayName: 'Sword of the Stranger - Rain Duel Slow-Motion',
+    styleAnchors: [
+      'Sword of the Stranger - Rain Duel Slow-Motion',
+      'slow-motion rain anime',
+      'frozen raindrops',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'slow-motion rain anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures.',
+        'BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes.',
       subject_treatment:
-        "Keep the prompt's subject and action; slow it down so raindrops, splashes and hair hang in the air around it.",
-      color_and_tone:
-        'Wet slate blue and grey with bright white droplets and one warm color accent.',
-      lighting_and_shadow:
-        'Backlight through rain making drops glow, dark wet reflections on the ground.',
-      texture_and_material: 'Beaded raindrops, soaked cloth and glossy wet surfaces drawn crisply.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances.',
+      color_and_tone: 'Muted rain grey, earth brown, pine green and pale sky.',
+      lighting_and_shadow: 'Overcast rain light, sparks from clashing blades and wet reflections.',
+      texture_and_material: 'Precise hand-drawn cel, rain streaks, flying droplets and dust.',
       camera_and_composition:
-        'Close and mid frames with drops in the foreground, subjects caught mid-motion.',
-      atmosphere_and_mood:
-        'Suspended and melancholy, intense moments stretched out until they become strangely beautiful.',
-      rendering_and_quality: 'Detailed anime effects work with sharp droplets and clean motion.',
+        'Choreographed duel angles, slow-motion freezes and ground-level tracking.',
+      atmosphere_and_mood: 'Keep the requested mood with tense weighty combat.',
+      rendering_and_quality: 'Masterful 2007 BONES feature frame with precise choreography.',
       creative_brief:
-        "Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures. Carry it through frozen raindrops, suspended splash, backlit rain, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'frozen raindrops; suspended splash; backlit rain; wet reflections',
+        "BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes. Carry it through Sword of the Stranger choreography, rain duels, realism, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Sword of the Stranger choreography; rain duels; realism; slow motion',
     },
     ui: {
       previewStatus: 'pending',
@@ -248,31 +246,27 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-074',
-    name: 'Snowfield Last Stand Anime',
-    displayName: 'Snowfield Last Stand Anime',
-    styleAnchors: ['Snowfield Last Stand Anime', 'winter battle anime', 'white expanse'],
+    name: 'Samurai 7 - Snowfield Last Stand',
+    displayName: 'Samurai 7 - Snowfield Last Stand',
+    styleAnchors: ['Samurai 7 - Snowfield Last Stand', 'winter battle anime', 'white expanse'],
     category: '6. Samurai & Medieval',
     domain: 'winter battle anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents.',
+        'Gonzo Samurai 7 television look (2004): the classic seven defenders story reimagined with sci-fi elements, painterly backgrounds, flowing coats and CG mechanical bandits.',
       subject_treatment:
-        "Keep the prompt's subject and setting; isolate it in a vast snowy space, dark against white, with falling snow.",
-      color_and_tone:
-        'Near-monochrome white and blue-grey with dark figures and one sharp red accent.',
-      lighting_and_shadow: 'Flat overcast light with soft blue shadows and bright snow glare.',
-      texture_and_material: 'Falling snow, frost on armor and fur, deep footprints drawn simply.',
-      camera_and_composition:
-        'Extreme wide shots with tiny figures, or tight faces with snow in the lashes.',
-      atmosphere_and_mood:
-        'Desperate and cold, a quiet heroism in small figures refusing to leave the snow.',
-      rendering_and_quality:
-        'Minimal prestige anime with strong silhouettes and soft snow effects.',
+        'Preserve the requested identity, count, pose and action; draw people with lean samurai designs, long flowing coats and hair, weathered faces and distinctive silhouettes.',
+      color_and_tone: 'Snow white, steel grey, rice-field green and bold crimson accents.',
+      lighting_and_shadow: 'Cold overcast light on snow, silhouettes and bright steel glints.',
+      texture_and_material: 'Digital cel over painterly backgrounds, CG machines and snowfall.',
+      camera_and_composition: 'Line-up compositions of defenders, ridge silhouettes and vast odds.',
+      atmosphere_and_mood: 'Keep the requested mood with resolute doomed courage.',
+      rendering_and_quality: 'Painterly 2004 Gonzo frame with heroic line-up staging.',
       creative_brief:
-        "Winter war anime of small groups holding out in endless snow: white silence, dark figures and red accents. Carry it through white expanse, dark silhouettes, falling snow, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'white expanse; dark silhouettes; falling snow; red accent',
+        "Gonzo Samurai 7 television look (2004): the classic seven defenders story reimagined with sci-fi elements, painterly backgrounds, flowing coats and CG mechanical bandits. Carry it through Samurai 7 defenders, flowing coats, snowfield ridges, heroic line-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Samurai 7 defenders; flowing coats; snowfield ridges; heroic line-ups',
     },
     ui: {
       previewStatus: 'pending',
@@ -280,32 +274,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-075',
-    name: 'Grand Siege Panorama Anime',
-    displayName: 'Grand Siege Panorama Anime',
-    styleAnchors: ['Grand Siege Panorama Anime', 'epic siege anime', 'colossal walls'],
+    name: 'Yasuhisa Hara - Grand Siege Panorama',
+    displayName: 'Yasuhisa Hara - Grand Siege Panorama',
+    styleAnchors: ['Yasuhisa Hara - Grand Siege Panorama', 'epic siege anime', 'colossal walls'],
     category: '6. Samurai & Medieval',
     domain: 'epic siege anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks.',
+        'Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it within an enormous environment where scale dwarfs every figure.",
-      color_and_tone:
-        'Stone ochre, smoke grey and sky blue with fires as orange points across the landscape.',
+        'Preserve the requested identity, count, pose and action; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor.',
+      color_and_tone: 'Black ink with grey tone, dust brown and sunset red in color pages.',
       lighting_and_shadow:
-        'Broad daylight or sunset with long shadows cast by towers across the battlefield.',
-      texture_and_material:
-        'Detailed painted backgrounds of stone, siege engines and smoke with small cel figures.',
-      camera_and_composition: 'Ultra-wide establishing shots from high above or far away.',
-      atmosphere_and_mood:
-        'Awe-struck and vast, the grim weight of history seen from very far away.',
-      rendering_and_quality:
-        'Richly painted background art with precise small-scale detail and clean tiny cel figures.',
+        'Sunset backlight over armies, dust haze and dramatic rim light on generals.',
+      texture_and_material: 'Dense crowd hatching, speed lines and dust clouds.',
+      camera_and_composition:
+        'Sweeping panoramas of vast armies and heroic low angles on generals.',
+      atmosphere_and_mood: 'Keep the requested mood with vast epic ambition.',
+      rendering_and_quality: 'Grand historical manga illustration with immense crowd scale.',
       creative_brief:
-        "Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks. Carry it through colossal walls, tiny armies, painted panorama, long tower shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'colossal walls; tiny armies; painted panorama; long tower shadows',
+        "Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas. Carry it through Yasuhisa Hara armies, epic panoramas, towering generals, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yasuhisa Hara armies; epic panoramas; towering generals; dust',
     },
     ui: {
       previewStatus: 'pending',
@@ -313,33 +304,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-076',
-    name: 'Court Intrigue Lacquer Anime',
-    displayName: 'Court Intrigue Lacquer Anime',
-    styleAnchors: ['Court Intrigue Lacquer Anime', 'palace politics anime', 'paper screens'],
+    name: 'The Apothecary Diaries - Court Intrigue Lacquer',
+    displayName: 'The Apothecary Diaries - Court Intrigue Lacquer',
+    styleAnchors: [
+      'The Apothecary Diaries - Court Intrigue Lacquer',
+      'palace politics anime',
+      'paper screens',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'palace politics anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves.',
+        'OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns.',
       subject_treatment:
-        "Keep the prompt's subject and setting; frame it through screens, doorways or partitions so something is always half hidden.",
-      color_and_tone:
-        'Black lacquer, deep vermilion and gold leaf with ivory skin tones and pools of dark shadow.',
-      lighting_and_shadow:
-        'Low candle and lantern light through paper screens, soft glows and deep shadow behind every partition.',
+        'Preserve the requested identity, count, pose and action; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments.',
+      color_and_tone: 'Lacquer red, imperial gold, jade green and night indigo.',
+      lighting_and_shadow: 'Warm lantern light, screen-filtered glow and soft palace shadows.',
       texture_and_material:
-        'Glossy lacquer, silk brocade, gold leaf and paper screens rendered with fine line and soft cel gradients.',
+        'Clean digital cel, detailed silk patterns and painted palace architecture.',
       camera_and_composition:
-        'Layered framing through panels and sliding doors, subjects placed off-center and partly occluded.',
-      atmosphere_and_mood:
-        'Secretive and elegant, every polite gesture hiding a dangerous intention underneath.',
-      rendering_and_quality:
-        'Luxurious prestige anime with ornate detail, careful gradients and restrained expression.',
+        'Framing through screens and doorways, intimate two-shots and palace wides.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed courtly intrigue.',
+      rendering_and_quality: 'Lavish contemporary palace drama frame with rich ornament.',
       creative_brief:
-        "Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves. Carry it through paper screens, lacquer and gold, half-hidden faces, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'paper screens; lacquer and gold; half-hidden faces; candlelight',
+        "OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns. Carry it through Apothecary Diaries palace, lacquer red and gold, silk robes, lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Apothecary Diaries palace; lacquer red and gold; silk robes; lanterns',
     },
     ui: {
       previewStatus: 'pending',
@@ -347,32 +338,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-077',
-    name: 'Wandering Ronin Western Anime',
-    displayName: 'Wandering Ronin Western Anime',
-    styleAnchors: ['Wandering Ronin Western Anime', 'drifter period anime', 'empty road'],
+    name: 'Hiroshi Hirata - Wandering Ronin Western',
+    displayName: 'Hiroshi Hirata - Wandering Ronin Western',
+    styleAnchors: [
+      'Hiroshi Hirata - Wandering Ronin Western',
+      'drifter period anime',
+      'empty road',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'drifter period anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze.',
+        'Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence.',
       subject_treatment:
-        "Keep the prompt's subject and setting; turn it into a drifter's standoff or arrival, alone against open land.",
-      color_and_tone: 'Sun-bleached ochre, dusty tan and faded indigo with harsh white sky.',
-      lighting_and_shadow:
-        'Harsh midday sun with short black shadows and heat shimmer on the horizon.',
-      texture_and_material:
-        'Dust clouds, worn straw hats, frayed cloth and cracked earth in simplified cel.',
+        'Preserve the requested identity, count, pose and action; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats.',
+      color_and_tone: 'Black ink with grey wash and dusty sepia in color plates.',
+      lighting_and_shadow: 'Harsh noon light with black brush shadows and dust glare.',
+      texture_and_material: 'Heavy expressive brushwork, calligraphic strokes and dry-brush grit.',
       camera_and_composition:
-        'Extreme wide shots of empty roads alternating with extreme close-ups of eyes and hands.',
-      atmosphere_and_mood:
-        'Lonely and sun-scorched, a quiet stranger arriving in a town that is holding its breath.',
-      rendering_and_quality:
-        'Stylized prestige anime with bold framing contrasts and clean dusty effects.',
+        'Low wide western-like standoffs in empty streets and gritty sweating close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with grim dusty tension.',
+      rendering_and_quality: 'Raw powerful gekiga brush illustration with calligraphic force.',
       creative_brief:
-        "Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze. Carry it through empty road, heat haze, eye close-ups, drifting dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'empty road; heat haze; eye close-ups; drifting dust',
+        "Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence. Carry it through Hiroshi Hirata brushwork, grim samurai, dusty standoffs, gekiga. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hiroshi Hirata brushwork; grim samurai; dusty standoffs; gekiga',
     },
     ui: {
       previewStatus: 'pending',
@@ -380,31 +371,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-078',
-    name: 'Arthurian Tapestry Anime',
-    displayName: 'Arthurian Tapestry Anime',
-    styleAnchors: ['Arthurian Tapestry Anime', 'medieval romance anime', 'millefleur meadow'],
+    name: 'Moto Hagio - Arthurian Tapestry',
+    displayName: 'Moto Hagio - Arthurian Tapestry',
+    styleAnchors: [
+      'Moto Hagio - Arthurian Tapestry',
+      'medieval romance anime',
+      'millefleur meadow',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'medieval romance anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures.',
+        'Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty.',
       subject_treatment:
-        "Keep the prompt's subject and setting; set it against flattened, woven-looking backgrounds while figures keep anime line and feeling.",
-      color_and_tone:
-        'Madder red, woad blue, weld yellow and deep green on a dark ground, faded like old wool.',
-      lighting_and_shadow: 'Soft even light with little cast shadow, as in a woven wall hanging.',
-      texture_and_material:
-        'Visible weave texture in backgrounds, embroidered detail on clothing and small scattered flowers.',
+        'Preserve the requested identity, count, pose and action; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes.',
+      color_and_tone: 'Soft pastel watercolor, rose, sage and cream, or black line with tone.',
+      lighting_and_shadow: 'Dreamy diffuse glow, floral light halos and soft shadows.',
+      texture_and_material: 'Delicate fine lines, floral ornament, lace and screentone.',
       camera_and_composition:
-        'Frontal, layered compositions with tall trees framing the sides like a tapestry border.',
-      atmosphere_and_mood: 'Courtly and wistful, a legend being told softly beside a winter fire.',
+        'Romantic framed compositions wreathed with flowers, vines and decorative borders.',
+      atmosphere_and_mood: 'Keep the requested mood with melancholy romantic legend.',
       rendering_and_quality:
-        'Decorative prestige anime blending clean cel figures with woven background textures.',
+        'Delicate classic 1970s shojo manga illustration with melancholy grace.',
       creative_brief:
-        "Medieval romance anime with backgrounds woven like tapestries: flat millefleur meadows, stylized trees and jewel-toned figures. Carry it through millefleur meadow, woven texture, jewel wool colors, framing trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'millefleur meadow; woven texture; jewel wool colors; framing trees',
+        "Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty. Carry it through Moto Hagio delicacy, European legend, flowers and lace, luminous eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Moto Hagio delicacy; European legend; flowers and lace; luminous eyes',
     },
     ui: {
       previewStatus: 'pending',
@@ -412,32 +405,30 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-079',
-    name: 'Crusade Desert Glare Anime',
-    displayName: 'Crusade Desert Glare Anime',
-    styleAnchors: ['Crusade Desert Glare Anime', 'desert war anime', 'blinding glare'],
+    name: 'Arslan 1991 - Crusade Desert Glare',
+    displayName: 'Arslan 1991 - Crusade Desert Glare',
+    styleAnchors: ['Arslan 1991 - Crusade Desert Glare', 'desert war anime', 'blinding glare'],
     category: '6. Samurai & Medieval',
     domain: 'desert war anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst.',
+        'The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light.',
       subject_treatment:
-        "Keep the prompt's subject and setting; expose it to overwhelming sun, heat and glare that flatten colors.",
-      color_and_tone: 'Blinding white and sand gold with dark blue shadows and sunburnt skin.',
-      lighting_and_shadow:
-        'Overhead desert sun with bleached highlights, short hard shadows and heat shimmer.',
+        'Preserve the requested identity, count, pose and action; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor.',
+      color_and_tone: 'Desert white glare, gold, turquoise and deep sky blue.',
+      lighting_and_shadow: 'Blinding noon glare, heat shimmer and sharp desert shadows.',
       texture_and_material:
-        'Hot metal, wind-blown sand, sweat and faded linen drawn with bold cel.',
+        'Hand-painted cel over detailed painted desert and palace backgrounds, soft grain.',
       camera_and_composition:
-        'Wide desert horizons with small figures, or close faces squinting against light.',
-      atmosphere_and_mood:
-        'Exhausted and scorched, faith and thirst wearing down people who are far from home.',
+        'Marching columns across dunes and heroic silhouettes against the sun.',
+      atmosphere_and_mood: 'Keep the requested mood with weary epic pilgrimage.',
       rendering_and_quality:
-        'Harsh high-key anime with strong glare effects and clean silhouettes.',
+        'Elegant early-1990s OVA frame with sweeping desert grandeur and ornate armor.',
       creative_brief:
-        "Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst. Carry it through blinding glare, heat shimmer, sand gold, short shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'blinding glare; heat shimmer; sand gold; short shadows',
+        "The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light. Carry it through Arslan OVA, Persian armor, desert glare, elegant heroes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Arslan OVA; Persian armor; desert glare; elegant heroes',
     },
     ui: {
       previewStatus: 'pending',
@@ -445,32 +436,28 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-080',
-    name: 'Northern Saga Longship Anime',
-    displayName: 'Northern Saga Longship Anime',
-    styleAnchors: ['Northern Saga Longship Anime', 'viking saga anime', 'longships'],
+    name: 'Makoto Yukimura - Northern Saga Longship',
+    displayName: 'Makoto Yukimura - Northern Saga Longship',
+    styleAnchors: ['Makoto Yukimura - Northern Saga Longship', 'viking saga anime', 'longships'],
     category: '6. Samurai & Medieval',
     domain: 'viking saga anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces.',
+        'Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces.',
       subject_treatment:
-        "Keep the prompt's subject and setting; make it cold, wet and weathered, with sea spray and wind shaping everything.",
-      color_and_tone: 'Slate sea grey, cold green, iron and bone white with rust red accents.',
-      lighting_and_shadow:
-        'Low overcast light, breaks of cold sun on the water and heavy dark cloud shadows.',
-      texture_and_material:
-        'Tarred wood, wet fur, rope, iron and salt spray drawn with gritty line.',
-      camera_and_composition:
-        'Low angles on heaving decks and wide shots of ships dwarfed by waves and fjords.',
-      atmosphere_and_mood:
-        'Harsh and restless, a hard life lived between storms and long journeys.',
+        'Preserve the requested identity, count, pose and action; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing.',
+      color_and_tone: 'Grey sea, cold slate and black ink with steel highlights.',
+      lighting_and_shadow: 'Cold overcast northern light with spray and wind.',
+      texture_and_material: 'Detailed pen hatching, rough seas and wood grain on ships.',
+      camera_and_composition: 'Longship prows in waves, fjord cliffs and gritty close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with harsh northern epic.',
       rendering_and_quality:
-        'Gritty seinen anime with heavy line weight and textured painted skies.',
+        'Realistic historical manga illustration with rugged weathered detail and cold seas.',
       creative_brief:
-        "Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces. Carry it through longships, cold spray, fur and iron, fjord scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'longships; cold spray; fur and iron; fjord scale',
+        "Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces. Carry it through Makoto Yukimura realism, longships, grey seas, gritty hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Makoto Yukimura realism; longships; grey seas; gritty hatching',
     },
     ui: {
       previewStatus: 'pending',
@@ -478,37 +465,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-081',
-    name: 'Plague Year Chronicle Anime',
-    displayName: 'Plague Year Chronicle Anime',
+    name: 'Uoto - Plague Year Chronicle',
+    displayName: 'Uoto - Plague Year Chronicle',
     styleAnchors: [
-      'Plague Year Chronicle Anime',
+      'Uoto - Plague Year Chronicle',
       'dark medieval chronicle anime',
       'masked doctors',
     ],
     category: '6. Samurai & Medieval',
     domain: 'dark medieval chronicle anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils.',
+        'Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it in a time of sickness and fear, with distance between people.",
-      color_and_tone:
-        'Muted ash, mud brown and bone with sickly green and small candle-gold accents.',
-      lighting_and_shadow:
-        'Dim overcast light and candlelight, heavy shadows in narrow streets and doorways.',
-      texture_and_material:
-        'Rough wool, wax cloth, rotting timber and muddy cobbles drawn with thin nervous line.',
-      camera_and_composition:
-        'Narrow alleys and doorways, figures isolated, empty space between them.',
-      atmosphere_and_mood:
-        'Grim and hushed, fear and kindness sharing the same narrow, silent streets.',
+        'Preserve the requested identity, count, pose and action; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools.',
+      color_and_tone: 'Black ink with fine tone and muted parchment tints.',
+      lighting_and_shadow: 'Candlelight and grey dawn light with stark clear shadows.',
+      texture_and_material: 'Clean fine pen line, tone and parchment texture.',
+      camera_and_composition: 'Quiet dialogue framings, empty towns and dramatic reveals.',
+      atmosphere_and_mood: 'Keep the requested mood with stark moral dread.',
       rendering_and_quality:
-        'Restrained prestige anime with muted painting and fine, careful detail.',
+        'Clean fine-line historical manga illustration with quiet unsettling tension.',
       creative_brief:
-        "Somber medieval chronicle anime of a plague year: muted streets, masked doctors, empty markets and candle vigils. Carry it through masked doctors, empty streets, candle vigils, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'masked doctors; empty streets; candle vigils; muted palette',
+        "Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread. Carry it through Uoto clean line, medieval Europe, candlelight, moral dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Uoto clean line; medieval Europe; candlelight; moral dread',
     },
     ui: {
       previewStatus: 'pending',
@@ -516,33 +498,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-082',
-    name: 'Tournament Pageantry Anime',
-    displayName: 'Tournament Pageantry Anime',
-    styleAnchors: ['Tournament Pageantry Anime', 'medieval tournament anime', 'striped pavilions'],
+    name: 'Juu Ayakura - Tournament Pageantry',
+    displayName: 'Juu Ayakura - Tournament Pageantry',
+    styleAnchors: [
+      'Juu Ayakura - Tournament Pageantry',
+      'medieval tournament anime',
+      'striped pavilions',
+    ],
     category: '6. Samurai & Medieval',
     domain: 'medieval tournament anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky.',
+        'Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters.',
       subject_treatment:
-        "Keep the prompt's subject and setting; surround it with festival color, banners and an excited watching crowd.",
-      color_and_tone:
-        'Saturated heraldic stripes of red, gold, blue and green against clear summer sky blue.',
+        'Preserve the requested identity, count, pose and action; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes.',
+      color_and_tone: 'Warm autumn gold, festival reds, cream and sky blue.',
       lighting_and_shadow:
-        'Bright midday sun with crisp short shadows and glints on polished metal.',
-      texture_and_material:
-        'Silk banners, striped canvas, polished armor and trampled grass in clean cel.',
-      camera_and_composition:
-        'Wide festive frames with pavilions and stands, or dynamic close shots at the lists.',
-      atmosphere_and_mood:
-        'Festive and competitive, a whole town cheering for its champions on a sunny day.',
+        'Soft warm festival daylight, bright striped awnings and evening lantern glow.',
+      texture_and_material: 'Painterly soft digital color with clean line art.',
+      camera_and_composition: 'Festive crowd scenes, pavilions and charming character framing.',
+      atmosphere_and_mood: 'Keep the requested mood with warm festive pageantry.',
       rendering_and_quality:
-        'Colorful prestige anime with crisp detail and lively crowd animation.',
+        'Warm painterly light novel illustration look with charming character detail.',
       creative_brief:
-        "Bright medieval tournament anime full of pageantry: striped pavilions, banners, crowds and polished color under open sky. Carry it through striped pavilions, banners, cheering crowd, bright sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'striped pavilions; banners; cheering crowd; bright sun',
+        "Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters. Carry it through Juu Ayakura warmth, medieval fairs, pavilions, festival light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Juu Ayakura warmth; medieval fairs; pavilions; festival light',
     },
     ui: {
       previewStatus: 'pending',
@@ -550,31 +532,28 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-083',
-    name: 'Shadow Stealth Night Anime',
-    displayName: 'Shadow Stealth Night Anime',
-    styleAnchors: ['Shadow Stealth Night Anime', 'ninja stealth anime', 'blue darkness'],
+    name: 'Basilisk - Shadow Stealth Night',
+    displayName: 'Basilisk - Shadow Stealth Night',
+    styleAnchors: ['Basilisk - Shadow Stealth Night', 'ninja stealth anime', 'blue darkness'],
     category: '6. Samurai & Medieval',
     domain: 'ninja stealth anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight.',
+        'Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance.',
       subject_treatment:
-        "Keep the prompt's subject and setting; hide it in darkness so only edges, eyes and small highlights remain visible.",
-      color_and_tone: 'Deep indigo and black with pale moon silver and a tiny warm lantern accent.',
-      lighting_and_shadow:
-        'Moonlight rim on silhouettes, pools of shadow and occasional lantern glow in windows.',
+        'Preserve the requested identity, count, pose and action; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features.',
+      color_and_tone: 'Midnight blue, black, pale moonlight and blood red.',
+      lighting_and_shadow: 'Thin crescent moonlight, silver rims and deep shadow.',
       texture_and_material:
-        'Tiled rooftops, dark cloth and wet stone reduced to silhouette and rim line.',
-      camera_and_composition:
-        'High rooftop angles and tight framing on eyes, with most of the frame dark.',
-      atmosphere_and_mood: 'Silent and watchful, a held breath while guards pass by just below.',
-      rendering_and_quality:
-        'Low-key prestige anime with clean silhouettes and precise rim lighting.',
+        'Moody digital cel over painted night backgrounds of forests, castles and rooftops.',
+      camera_and_composition: 'Rooftop silhouettes, sudden ambush angles and moon framing.',
+      atmosphere_and_mood: 'Keep the requested mood with silent deadly tension.',
+      rendering_and_quality: 'Dark moody 2005 Gonzo frame with night atmosphere.',
       creative_brief:
-        "Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight. Carry it through blue darkness, moonlit rims, rooftop silhouettes, lantern windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'blue darkness; moonlit rims; rooftop silhouettes; lantern windows',
+        "Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance. Carry it through Basilisk ninja, moonlit rooftops, supernatural arts, dark palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Basilisk ninja; moonlit rooftops; supernatural arts; dark palette',
     },
     ui: {
       previewStatus: 'pending',
@@ -582,37 +561,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-084',
-    name: 'Onmyoji Talisman Court Anime',
-    displayName: 'Onmyoji Talisman Court Anime',
+    name: 'Reiko Okano - Onmyoji Talisman Court',
+    displayName: 'Reiko Okano - Onmyoji Talisman Court',
     styleAnchors: [
-      'Onmyoji Talisman Court Anime',
+      'Reiko Okano - Onmyoji Talisman Court',
       'Heian spirit exorcism anime',
       'layered silk robes',
     ],
     category: '6. Samurai & Medieval',
     domain: 'Heian spirit exorcism anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance.',
+        'Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes.',
       subject_treatment:
-        "Keep the prompt's subject and setting; add the presence of spirits and glowing sealing marks only where the prompt allows supernatural elements.",
-      color_and_tone:
-        'Layered Heian robe colors of plum, pale green and white with soft spirit-light blue.',
-      lighting_and_shadow:
-        'Soft night garden light and glowing talisman light casting cool highlights on silk.',
-      texture_and_material:
-        'Layered silk robes, paper talismans, lacquered caps and misty gardens in fine line.',
+        'Preserve the requested identity, count, pose and action; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps.',
+      color_and_tone: 'Plum, ink black, gold and pale mist blue.',
+      lighting_and_shadow: 'Soft moonlight, glowing talismans and misty garden light.',
+      texture_and_material: 'Delicate fine line, flowing robe patterns and mystical diagrams.',
       camera_and_composition:
-        'Elegant horizontal compositions across verandas and gardens with drifting spirit shapes.',
-      atmosphere_and_mood:
-        'Mysterious and graceful, polite court life brushing against a hidden spirit world.',
+        'Elegant garden veranda compositions and circular mystical diagram layouts around figures.',
+      atmosphere_and_mood: 'Keep the requested mood with serene mystical elegance.',
       rendering_and_quality:
-        'Elegant prestige anime with fine line, soft glows and gentle painted gardens.',
+        'Refined elegant manga illustration with mystical detail and flowing court grace.',
       creative_brief:
-        "Refined Heian-court fantasy anime where diviners seal spirits with glowing paper talismans and star diagrams in silk-robed elegance. Carry it through layered silk robes, glowing talismans, night garden, spirit mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'layered silk robes; glowing talismans; night garden; spirit mist',
+        "Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes. Carry it through Reiko Okano elegance, Heian court, talismans, flowing robes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Reiko Okano elegance; Heian court; talismans; flowing robes',
     },
     ui: {
       previewStatus: 'pending',
@@ -620,33 +595,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-085',
-    name: 'Swordsmith Forge Craft Anime',
-    displayName: 'Swordsmith Forge Craft Anime',
-    styleAnchors: ['Swordsmith Forge Craft Anime', 'craft process anime', 'forge glow'],
+    name: 'Katanagatari - Swordsmith Forge Craft',
+    displayName: 'Katanagatari - Swordsmith Forge Craft',
+    styleAnchors: ['Katanagatari - Swordsmith Forge Craft', 'craft process anime', 'forge glow'],
     category: '6. Samurai & Medieval',
     domain: 'craft process anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making.',
+        'White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes.',
       subject_treatment:
-        "Keep the prompt's subject and setting; show it being made, repaired or tended, with hands and tools central.",
-      color_and_tone:
-        'Forge orange and yellow-white heat against charcoal black and dim workshop brown.',
-      lighting_and_shadow:
-        'Hot forge glow from below, sparks as bright streaks and deep workshop shadow.',
-      texture_and_material:
-        'Glowing steel, scale, charcoal, water steam and worn leather aprons in detailed cel.',
+        'Preserve the requested identity, count, pose and action; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes.',
+      color_and_tone: 'Flat bold color blocks: vermilion, teal, white and black.',
+      lighting_and_shadow: 'Flat graphic lighting with little or no gradient.',
+      texture_and_material: 'Flat color shapes, clean lines and pattern fills.',
       camera_and_composition:
-        'Close shots on hands, tools and glowing metal with occasional wide workshop frames.',
-      atmosphere_and_mood:
-        'Focused and reverent, the quiet pride of skilled hands doing difficult work.',
+        'Stylized flat compositions, frontal poses and graphic displays of distinctive swords.',
+      atmosphere_and_mood: 'Keep the requested mood with graphic crafted poise.',
       rendering_and_quality:
-        'Detailed prestige anime with careful process animation and glowing effects.',
+        'Flat graphic 2010 White Fox frame with bold pattern-driven design clarity.',
       creative_brief:
-        "Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making. Carry it through forge glow, sparks, hands and tools, quench steam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'forge glow; sparks; hands and tools; quench steam',
+        "White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes. Carry it through Katanagatari flat graphics, take designs, patterned costumes, stylized swords. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Katanagatari flat graphics; take designs; patterned costumes; stylized swords',
     },
     ui: {
       previewStatus: 'pending',

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-179
 packId: pack_16
-name: Warm Rivalry Portrait Style
+name: Takehiko Inoue - Warm Rivalry Portrait
 styleAnchors:
-  - 'Warm Rivalry Portrait Style'
-displayName: 'Warm Rivalry Portrait'
+  - Takehiko Inoue - Warm Rivalry Portrait
+displayName: Takehiko Inoue - Warm Rivalry Portrait
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A warm 90s cel treatment uses rounded expressive contours, gentle gold edge light and clean
-    two-stage shadows. Its portrait signal comes from expressive line accents, not a fixed crop or
-    paired scene; rivalry is visual contrast only when that tone is requested.
-  subject_treatment: >-
-    Preserve requested identity and proportions. Use open contours and small expression accents where
-    a face exists; keep single subjects single and do not invent a rival or companion.
-  color_and_tone: >-
-    When color is open, favor warm neutrals, amber and soft coral against calm blue shadow.
-    Preserve requested hues and keep the warmth gentle rather than sepia.
-  lighting_and_shadow: >-
-    Use soft warm bounce and a thin rim to separate existing forms. Respect the requested light; do
-    not impose sunset or interior lighting.
-  texture_and_material: >-
-    Keep linework clean, fills smooth and highlights material-aware. Avoid rough grain, wet gloss and
-    broad atmospheric texture.
-  camera_and_composition: >-
-    Use friendly visual balance and an approachable focal scale within the supplied composition.
-    Preserve crop and camera; do not force a portrait or paired arrangement.
-  atmosphere_and_mood: >-
-    Let warmth come from contour softness, light and spacing. Keep the requested emotional tone rather
-    than adding rivalry, nostalgia or sentiment.
-  rendering_and_quality: >-
-    Use clear outlines, economical cel shadows and gentle edge transitions. Keep eyes, objects and
-    background detail faithful to the source content.
-  key_features: >-
-    rounded expressive contours; soft gold edge light; warm cel neutrals against calm blue shadow
-  creative_brief: 'Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve its identity, action, number of subjects and composition; add no rival, companion or sunset. Use it as a reusable look on any subject.'
+  aesthetic: 'Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair.
+  color_and_tone: Black ink with grey washes and occasional warm watercolor.
+  lighting_and_shadow: Natural light carried by ink wash values, bright highlights on sweat.
+  texture_and_material: Brush ink lines, dry brush, ink wash and watercolor bleed.
+  camera_and_composition: Portrait close-ups, sports and duel moments frozen with realistic weight.
+  atmosphere_and_mood: Keep the requested mood with proud warm rivalry.
+  rendering_and_quality: Masterful realist brush-ink manga illustration with painterly finish.
+  key_features: Takehiko Inoue realism; brush ink; athletic anatomy; sweat and grit
+  creative_brief: "Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie. Carry it through Takehiko Inoue realism, brush ink, athletic anatomy, sweat and grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-179.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

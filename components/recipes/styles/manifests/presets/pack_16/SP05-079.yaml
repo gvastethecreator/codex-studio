@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-079
 packId: pack_16
-name: Hyperkinetic Cosmic Velocity Style
+name: Redline - Hyperkinetic Cosmic Velocity
 styleAnchors:
-  - 'Hyperkinetic Cosmic Velocity Style'
-displayName: 'Hyperkinetic Cosmic Velocity'
+  - Redline - Hyperkinetic Cosmic Velocity
+displayName: Redline - Hyperkinetic Cosmic Velocity
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Explicit velocity grammar: compressed forms lead into open space while fine contours
-    lengthen into tapered smears along existing motion.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Stretch contour
-    rhythm only where motion is present, with no added action or afterimage.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, hold cobalt, midnight blue,
-    and violet as deep fields with small white or cyan accents; honor any explicit palette.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep the supplied source; align bright rim
-    emphasis with existing movement, but add no trails, stars, or glow.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use clean fine ink and sparse color grain;
-    motion remains contour behavior, not new particles or effects.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Compress drawn-mark
-    intervals behind the existing action vector and open their spacing ahead, without moving
-    subjects or tilting the camera.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Velocity is line rhythm only; retain the user's
-    emotional tone and stakes.
-  rendering_and_quality: >-
-    Keep the moving silhouette recognizable and its leading edge sharp; never blur
-    identity-bearing details.
-  key_features: >-
-    Tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action
-    silhouette.
-  creative_brief: 'Use tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Takeshi Koike feature animation as in Redline: hand-drawn racing with extreme perspective, heavy black shadow shapes, thick outlines and explosive colors across wild alien worlds.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Koike stylization, long angular limbs, hard jawlines, pompadours and huge black shadow masses cutting across bodies.
+  color_and_tone: Saturated primaries, acid yellow, hot red and cyan against massive black shadows.
+  lighting_and_shadow: Hard graphic light where shadows are solid black shapes, flare bursts and speed glows.
+  texture_and_material: Thick varying ink outlines, flat hand-painted color, speed lines and hand-drawn smoke.
+  camera_and_composition: Fisheye foreshortening, cars stretching toward the lens, dramatic tilted wide shots.
+  atmosphere_and_mood: Keep the requested mood with roaring hyperkinetic swagger.
+  rendering_and_quality: Obsessive hand-drawn feature frame with thousands of drawings worth of detail.
+  key_features: Takeshi Koike blacks; extreme perspective; thick outlines; speed stretch; saturated color
+  creative_brief: "Takeshi Koike feature animation as in Redline: hand-drawn racing with extreme perspective, heavy black shadow shapes, thick outlines and explosive colors across wild alien worlds. Carry it through Takeshi Koike blacks, extreme perspective, thick outlines, speed stretch, saturated color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-079.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

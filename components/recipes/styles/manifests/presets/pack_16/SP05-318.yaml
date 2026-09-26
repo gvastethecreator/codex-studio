@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-318
 packId: pack_16
-name: Psychedelic Demonic Horror Style
+name: Devilman 1972 - Psychedelic Demonic Horror
 styleAnchors:
-  - 'Psychedelic Demonic Horror Style'
-displayName: 'Psychedelic Demonic Horror'
+  - Devilman 1972 - Psychedelic Demonic Horror
+displayName: Devilman 1972 - Psychedelic Demonic Horror
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use repeat line accents within existing shapes while preserving identity and proportions; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use crimson, violet and hot orange. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as alternating dark and saturated midtone cel bands, matched to the stated light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply hand-ink grain and tight halftone limited to the image surface as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use repeated accents contained in existing forms; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through color vibration and tight contour repetition; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use stable contours around strong color shifts, with no scratches or lost detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Go Nagai Devilman Toei television look (1972): thick crude outlines, grotesque demons, psychedelic color flashes and seventies horror pulp.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nagai seventies designs, thick eyebrows, angular faces and monstrous transformations.
+  color_and_tone: Psychedelic magenta, acid green, blood red and black.
+  lighting_and_shadow: Lurid colored flashes cutting through deep black shadow masses.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Low angles on demons, shocking zooms, warped horror framing.
+  atmosphere_and_mood: Keep the requested mood with lurid demonic horror.
+  rendering_and_quality: Raw 1970s television frame with psychedelic horror color.
+  key_features: Go Nagai demons; thick crude outlines; psychedelic flashes; seventies horror
+  creative_brief: "Go Nagai Devilman Toei television look (1972): thick crude outlines, grotesque demons, psychedelic color flashes and seventies horror pulp. Carry it through Go Nagai demons, thick crude outlines, psychedelic flashes, seventies horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a winged devil hero with a black and white body
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-318.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a winged devil hero with a black and white body, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

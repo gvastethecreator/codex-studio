@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-371
 packId: pack_16
-name: Virtuoso Ensemble Whirl Style
+name: Tomoko Ninomiya - Virtuoso Ensemble Whirl
 styleAnchors:
-  - Virtuoso Ensemble Whirl Style
-displayName: Virtuoso Ensemble Whirl
+  - Tomoko Ninomiya - Virtuoso Ensemble Whirl
+displayName: Tomoko Ninomiya - Virtuoso Ensemble Whirl
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Orchestra anime of virtuosic whirl: sweeping bows, conductors, massed strings and music drawn as swirling color.'
-  subject_treatment: Keep the prompt's subject and action; place it within a grand orchestral performance with swirling visualized sound.
-  color_and_tone: Concert-hall wood and gold with deep red seats and swirling colored sound.
-  lighting_and_shadow: Warm stage wash with bright highlights on bows, brass and faces.
-  texture_and_material: Varnished wood, gold leaf, black concert clothing and flowing sound ribbons.
-  camera_and_composition: Grand wide shots of the full orchestra and dynamic close-ups on soloists.
-  atmosphere_and_mood: Soaring and overwhelming, an entire hall lifted by one crescendo.
-  rendering_and_quality: Grand performance anime with layered sound ribbons and meticulous instruments.
-  key_features: swirling sound ribbons; conductor; massed strings; concert hall
-  creative_brief: "Orchestra anime of virtuosic whirl: sweeping bows, conductors, massed strings and music drawn as swirling color. Carry it through swirling sound ribbons, conductor, massed strings, concert hall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear.
+  color_and_tone: Warm concert-hall gold, black tails and soft pastel sheet music tones.
+  lighting_and_shadow: Concert hall stage light and warm rehearsal room light.
+  texture_and_material: Loose charming lines, screentone and swirling musical flourishes.
+  camera_and_composition: Orchestra wides, conductor close-ups and comedic reaction panels.
+  atmosphere_and_mood: Keep the requested mood with whirling musical joy.
+  rendering_and_quality: Charming josei manga illustration with swirling classical musical energy.
+  key_features: Ninomiya charm; classical orchestras; josei comedy; musical swirls
+  creative_brief: "Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion. Carry it through Ninomiya charm, classical orchestras, josei comedy, musical swirls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-371.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

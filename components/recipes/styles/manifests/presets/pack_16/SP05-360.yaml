@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-360
 packId: pack_16
-name: Poetic Reflex Focus Style
+name: Chihayafuru - Poetic Reflex Focus
 styleAnchors:
-  - Poetic Reflex Focus Style
-displayName: Poetic Reflex Focus
+  - Chihayafuru - Poetic Reflex Focus
+displayName: Chihayafuru - Poetic Reflex Focus
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Traditional archery anime of poetic focus: stillness, draw, release and the moment when time seems to stop.'
-  subject_treatment: Keep the prompt's subject and action; distill it to calm focus and a single precise release.
-  color_and_tone: White and black archery dress, pale wood and soft green garden light.
-  lighting_and_shadow: Gentle daylight across the range, soft shadows and a bright far target.
-  texture_and_material: Wooden bows, feathers, fabric and raked sand drawn with fine line.
-  camera_and_composition: Side profiles at full draw and long views down the range to the target.
-  atmosphere_and_mood: Poetic and calm, the whole world narrowing to breath and a distant circle.
-  rendering_and_quality: Serene prestige anime with minimal effects and precise form.
-  key_features: full draw; stillness; long range; fine line
-  creative_brief: "Traditional archery anime of poetic focus: stillness, draw, release and the moment when time seems to stop. Carry it through full draw, stillness, long range, fine line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Chihayafuru television look (2011) from Yuki Suetsugu designs: shojo sports intensity, tatami halls, flowing hair, flower petals and poetic slow-motion focus.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Suetsugu designs, long flowing hair, large luminous eyes and hakama or school clothes.
+  color_and_tone: Tatami gold, maple red, indigo and petal pink.
+  lighting_and_shadow: Soft hall light and poetic glowing slow-motion highlights.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Reflex slow-motion close-ups, hands flashing and petal-filled frames.
+  atmosphere_and_mood: Keep the requested mood with poetic breathless focus.
+  rendering_and_quality: Refined Madhouse television frame with shojo poetic intensity and petals.
+  key_features: Chihayafuru focus; tatami halls; flowing hair; petals; slow motion
+  creative_brief: "Madhouse Chihayafuru television look (2011) from Yuki Suetsugu designs: shojo sports intensity, tatami halls, flowing hair, flower petals and poetic slow-motion focus. Carry it through Chihayafuru focus, tatami halls, flowing hair, petals, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-360.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-343
 packId: pack_16
-name: Vertical Team Rally Energy Style
+name: Haikyuu!! - Vertical Team Rally Energy
 styleAnchors:
-  - Vertical Team Rally Energy Style
-displayName: Vertical Team Rally Energy
+  - Haikyuu!! - Vertical Team Rally Energy
+displayName: Haikyuu!! - Vertical Team Rally Energy
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings.'
-  subject_treatment: Keep the prompt's subject and action; push it upward into a peak moment of a jump, reach or leap, held for one breathless frame.
-  color_and_tone: Gym-floor orange, jersey colors and bright ceiling white with deep sweat-lit shadows.
-  lighting_and_shadow: Overhead gym lights from above, strong rim on shoulders and hair at the top of the jump.
-  texture_and_material: Polished wood floor, mesh net and damp jersey fabric drawn with clean cel.
-  camera_and_composition: Extreme low angles looking up at airborne figures, the net slicing the frame.
-  atmosphere_and_mood: Explosive and collective, a whole team lifting one player higher than possible.
-  rendering_and_quality: Dynamic sports anime with speed lines, sweat drops and sharp anatomy at the peak.
-  key_features: jump peak; low angle; net line; gym light rim
-  creative_brief: "Volleyball anime of vertical explosions: jumps held at their peak, arms cocked, the ball a white streak against gym ceilings. Carry it through jump peak, low angle, net line, gym light rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads.
+  color_and_tone: Team orange, black, court honey wood and gym white light.
+  lighting_and_shadow: Bright gym fluorescents, backlit jump peaks and glowing sweat highlights.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Low angles under the net, jump-peak freeze frames and ball-level tracking shots.
+  atmosphere_and_mood: Keep the requested mood with soaring team exhilaration.
+  rendering_and_quality: Energetic Production I.G sports frame with painterly slow-motion peaks.
+  key_features: Haikyuu jumps; Furudate designs; orange and black; peak-moment freeze
+  creative_brief: "Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments. Carry it through Haikyuu jumps, Furudate designs, orange and black, peak-moment freeze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-343.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

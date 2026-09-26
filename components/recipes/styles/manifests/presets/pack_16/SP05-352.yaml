@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-352
 packId: pack_16
-name: Neon Trick Flow Style
+name: Sk8 the Infinity - Neon Trick Flow
 styleAnchors:
-  - Neon Trick Flow Style
-displayName: Neon Trick Flow
+  - Sk8 the Infinity - Neon Trick Flow
+displayName: Sk8 the Infinity - Neon Trick Flow
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Skateboarding anime of flow and neon: trick lines, ramps at night, bare concrete walls and boards drawn in bright motion arcs.'
-  subject_treatment: Keep the prompt's subject and action; turn movement into flowing trick lines through an urban or skatepark space.
-  color_and_tone: Neon magenta and cyan against night concrete grey, with bright board graphics.
-  lighting_and_shadow: Neon signs and park floodlights, colored rims and long shadows on concrete.
-  texture_and_material: Concrete, grip tape, urethane wheels and loose clothing in clean cel with motion blur.
-  camera_and_composition: Fisheye low angles at the lip of ramps and long lines following a run.
-  atmosphere_and_mood: Loose and exhilarating, the pure fun of carving through a city at night.
-  rendering_and_quality: Stylish sports anime with bright neon glow and smooth motion arcs.
-  key_features: trick lines; neon rims; fisheye ramps; motion arcs
-  creative_brief: "Skateboarding anime of flow and neon: trick lines, ramps at night, bare concrete walls and boards drawn in bright motion arcs. Carry it through trick lines, neon rims, fisheye ramps, motion arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'BONES Sk8 the Infinity television look (2021): Okinawa neon skate nights, colorful trick lines tracing curves, stylish designs and CG ramps.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sk8 designs, stylish streetwear, lean bodies, vivid hair and skateboards.
+  color_and_tone: Neon magenta, cyan, lime and warm Okinawa night.
+  lighting_and_shadow: Neon night light, trick-line glows and stadium lamps.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Ramp-launch low angles, trick line arcs and speed tracking.
+  atmosphere_and_mood: Keep the requested mood with stylish neon flow.
+  rendering_and_quality: Vivid BONES frame with neon trick lines and CG ramps.
+  key_features: Sk8 neon trick lines; night skate; stylish streetwear; ramps
+  creative_brief: "BONES Sk8 the Infinity television look (2021): Okinawa neon skate nights, colorful trick lines tracing curves, stylish designs and CG ramps. Carry it through Sk8 neon trick lines, night skate, stylish streetwear, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-352.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

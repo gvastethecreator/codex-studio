@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-175
 packId: pack_16
-name: Rose Ritual Symbolism Style
+name: Revolutionary Girl Utena - Rose Ritual Symbolism
 styleAnchors:
-  - 'Rose Ritual Symbolism Style'
-displayName: 'Rose Ritual Symbolism'
+  - Revolutionary Girl Utena - Rose Ritual Symbolism
+displayName: Revolutionary Girl Utena - Rose Ritual Symbolism
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A rose-ritual 90s cel style uses poised symmetry, repeated radial line accents and a deep
-    garnet-violet value range. Its symbolism is formal visual repetition, not a required flower or
-    ceremony.
-  subject_treatment: >-
-    Keep the requested subject, count and proportions. Emphasize existing forms with measured symmetry
-    and fine ornamental contours; do not add a rose, emblem or ritual object.
-  color_and_tone: >-
-    When color is open, combine rose, garnet, wine and violet with small pale highlights. Preserve
-    requested colors and avoid turning the palette into a mandatory flower motif.
-  lighting_and_shadow: >-
-    Use clean cel shadows and carefully placed rim accents to clarify the central rhythm. Respect
-    supplied light and avoid candles or stage lighting.
-  texture_and_material: >-
-    Pair smooth painted areas with delicate ink ornament and a few etched details. Apply marks to
-    existing forms and preserve their actual materials.
-  camera_and_composition: >-
-    Use axial balance and repeated spacing within the supplied composition. Preserve camera and
-    arrangement; do not force a portrait, altar or symmetrical new scene.
-  atmosphere_and_mood: >-
-    Create solemn formality through rhythm and restraint when the requested mood allows it. Do not
-    impose ritual, romance or spiritual meaning.
-  rendering_and_quality: >-
-    Keep fine lines crisp against broad dark shapes; use ornament selectively and maintain clear focal
-    hierarchy.
-  key_features: >-
-    axial balance; repeated radial ornament; deep rose-garnet and violet cel values with refined ink
-  creative_brief: 'Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested content. Preserve its identity and composition; add no flower, emblem, altar or ceremony. Use it as a reusable look on any subject.'
+  aesthetic: 'Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms.
+  color_and_tone: Rose pink, crimson, gold and pale lavender sky.
+  lighting_and_shadow: Theatrical spotlights, rose petal glows and surreal skies.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Symmetrical staging, repeated stock shots, surreal staircases and arenas.
+  atmosphere_and_mood: Keep the requested mood with ritual theatrical symbolism.
+  rendering_and_quality: Stylized late-1990s J.C.Staff television frame with theatrical rose symbolism.
+  key_features: Ikuhara ritual; Chiho Saito designs; roses; surreal arenas; princely uniforms
+  creative_brief: "Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels. Carry it through Ikuhara ritual, Chiho Saito designs, roses, surreal arenas, princely uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired girl in a boys uniform
+  - a floating upside-down castle
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-175.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

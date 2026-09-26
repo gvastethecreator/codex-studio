@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-294
 packId: pack_16
-name: Mutating Psychedelic Style
+name: Mind Game - Mutating Psychedelic
 styleAnchors:
-  - 'Mutating Psychedelic Style'
-displayName: 'Mutating Psychedelic'
+  - Mind Game - Mutating Psychedelic
+displayName: Mind Game - Mutating Psychedelic
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Shift color through undulating internal bands: hue and value drift across stable silhouettes
-    while fine contours preserve shape.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Variation stays
-    in color and mark rhythm, never subject mutation.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use layered green, bronze,
-    aqua, and a few rose or violet notes; avoid rainbow shifts and honor explicit palette.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow the actual source; permit local hue
-    changes between planes but no psychedelic glow or new light effect.
-  texture_and_material: >-
-    Apply texture only to materials already present. Build thin translucent washes and fine
-    stippled transitions without turning the image into noise.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let color rhythm follow
-    existing shapes and depth without adding patterns or warped axes.
-  atmosphere_and_mood: >-
-    Keep requested mood; chromatic variation is not hallucination, comedy, or disorientation.
-  rendering_and_quality: >-
-    Keep silhouettes stable, internal transitions controlled, and small details readable under
-    layered color.
-  key_features: >-
-    Undulating internal color; stable contours; layered green-bronze values; restrained stipple.
-  creative_brief: 'Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Masaaki Yuasa feature animation as in Mind Game: mixed media collage of photo faces, rough sketches and flat animation, bodies stretching wildly and styles mutating mid-scene.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, rubbery stretched limbs, simplified faces that can suddenly become rough sketches or photo cutouts.
+  color_and_tone: Mutating psychedelic palettes, lava orange, sea green, hot pink and inky black.
+  lighting_and_shadow: Wildly changing colored light with no fixed source.
+  texture_and_material: 'Mixed media: rough pencil, flat cel, photo collage and painted textures.'
+  camera_and_composition: Warped perspective, runaway zooms, style changes within one frame.
+  atmosphere_and_mood: Keep the requested mood with euphoric psychedelic freedom.
+  rendering_and_quality: Anarchic experimental Studio 4°C frame mixing drawing, paint and photo collage.
+  key_features: Yuasa elasticity; mixed media collage; mutating styles; psychedelic color
+  creative_brief: "Masaaki Yuasa feature animation as in Mind Game: mixed media collage of photo faces, rough sketches and flat animation, bodies stretching wildly and styles mutating mid-scene. Carry it through Yuasa elasticity, mixed media collage, mutating styles, psychedelic color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-294.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

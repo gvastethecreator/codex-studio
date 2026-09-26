@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-174
 packId: pack_16
-name: Iron Ruin Tragedy Style
+name: Battle Angel OVA - Iron Ruin Tragedy
 styleAnchors:
-  - 'Iron Ruin Tragedy Style'
-displayName: 'Iron Ruin Tragedy'
+  - Battle Angel OVA - Iron Ruin Tragedy
+displayName: Battle Angel OVA - Iron Ruin Tragedy
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A rough 90s cel finish uses heavy broken ink, chiseled shadow planes and sparse iron-gray or
-    rust-red accents. Its ruin signal is distressed rendering texture, not a ruined setting.
-  subject_treatment: >-
-    Preserve the requested identity and construction. Emphasize existing edges with rough angular line
-    and dense shadow; do not damage, armor or age the subject.
-  color_and_tone: >-
-    When color is open, use soot black, iron gray and a restrained rust red. Honor requested hues and
-    keep muted contrast rather than adding blood or fire.
-  lighting_and_shadow: >-
-    Use broad, hard shadow masses with irregular but readable boundaries. Keep the supplied light
-    direction and avoid dramatic flames or backlight.
-  texture_and_material: >-
-    Layer dry ink, sparse crosshatching and chipped-looking paint marks as surface rendering. Do not
-    make intact objects physically broken or corroded.
-  camera_and_composition: >-
-    Use weighty diagonal shapes and dense focal grouping within the existing composition. Preserve the
-    requested camera and location.
-  atmosphere_and_mood: >-
-    Let gravity come from visual weight and rough edges only when it fits the prompt. Do not impose
-    tragedy, war or desolation.
-  rendering_and_quality: >-
-    Keep the silhouette legible beneath heavy blacks; vary line pressure and confine hatching to
-    selected planes. Avoid muddy grain.
-  key_features: >-
-    broken heavy ink; chiseled shadow planes; iron-gray and rust-red accents with selective
-    crosshatching
-  creative_brief: 'Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage. Use it as a reusable look on any subject.'
+  aesthetic: 'Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes.
+  color_and_tone: Rust orange, steel blue, grime brown and pale sky light.
+  lighting_and_shadow: Diffuse industrial light, sparks and backlight from the floating city.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Scrapyard wides under the hanging city, close-ups on mechanical parts.
+  atmosphere_and_mood: Keep the requested mood with tragic rusted longing.
+  rendering_and_quality: Somber early-1990s OVA frame with detailed cyborg mechanics.
+  key_features: Nobuteru Yuki designs; scrapyard city; cyborg bodies; rust; tragedy
+  creative_brief: "Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance. Carry it through Nobuteru Yuki designs, scrapyard city, cyborg bodies, rust, tragedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-174.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-098
 packId: pack_16
-name: Fog Town Siren Horror Anime
+name: Another - Fog Town Siren Horror
 styleAnchors:
-  - Fog Town Siren Horror Anime
+  - Another - Fog Town Siren Horror
   - fog town horror anime
   - thick fog
-displayName: Fog Town Siren Horror Anime
+displayName: Another - Fog Town Siren Horror
 category: 7. Horror
 domain: fog town horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - fog-town
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight.'
-  subject_treatment: Keep the prompt's subject and setting; bury the surroundings in thick fog so only nearby details remain readable.
-  color_and_tone: Grey-white fog, rust orange and dull teal with almost no saturation.
-  lighting_and_shadow: Flat fog light with no shadows, occasional flashlight cones and dim street lamps.
-  texture_and_material: Rust, peeling paint, wet asphalt and drifting ash drawn with grainy detail.
-  camera_and_composition: Street-level frames where everything beyond a few meters dissolves into fog.
-  atmosphere_and_mood: Lost and haunted, a town that should be familiar but is not letting anyone leave.
-  rendering_and_quality: Grainy prestige anime with soft fog gradients and rusted detail.
-  creative_brief: "Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight. Carry it through thick fog, rust, ash, figures at the edge of sight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: thick fog; rust; ash; figures at the edge of sight
+  aesthetic: 'P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions.
+  color_and_tone: Fog grey, dull green, rust and doll-skin pale.
+  lighting_and_shadow: Diffuse grey fog light outside and dim lamp-lit interiors inside.
+  texture_and_material: Muted digital cel, fog layers and rust textures.
+  camera_and_composition: Empty foggy streets and quiet uneasy framing with distant lone figures.
+  atmosphere_and_mood: Keep the requested mood with gloomy fatal suspense.
+  rendering_and_quality: Muted atmospheric P.A. Works horror television frame with fog layers.
+  creative_brief: "P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents. Carry it through Another gloom, fog town, dolls, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Another gloom; fog town; dolls; muted palette
 avoidRules:
+  - a dark-haired girl with a white eyepatch
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,9 +50,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - fog-town
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

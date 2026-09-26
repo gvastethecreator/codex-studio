@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-353
 packId: pack_16
-name: Nocturnal Drift Tension Style
+name: Initial D - Nocturnal Drift Tension
 styleAnchors:
-  - Nocturnal Drift Tension Style
-displayName: Nocturnal Drift Tension
+  - Initial D - Nocturnal Drift Tension
+displayName: Initial D - Nocturnal Drift Tension
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'In-car racing anime of nocturnal tension: dashboard glow, gripping hands, mirrors full of headlights and the road rushing at the windshield.'
-  subject_treatment: Keep the prompt's subject and action; view it from inside a vehicle or at close range, tension carried by hands, eyes and mirrors.
-  color_and_tone: Dark cabin blacks with dashboard amber, headlight white and taillight red reflections.
-  lighting_and_shadow: Dashboard glow from below, passing streetlights sweeping across faces and hands.
-  texture_and_material: Leather steering wheels, gauges, glass reflections and speed-blurred road.
-  camera_and_composition: Tight cockpit framings, mirror shots and over-the-shoulder views through the windshield.
-  atmosphere_and_mood: Tense and focused, a quiet cabin while the world outside moves far too fast.
-  rendering_and_quality: Precise mechanical anime detail with smooth light sweeps and motion blur.
-  key_features: dashboard glow; mirror headlights; gripping hands; windshield rush
-  creative_brief: "In-car racing anime of nocturnal tension: dashboard glow, gripping hands, mirrors full of headlights and the road rushing at the windshield. Carry it through dashboard glow, mirror headlights, gripping hands, windshield rush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels.
+  color_and_tone: Night navy, headlight white, taillight red and guardrail grey.
+  lighting_and_shadow: Headlight beams cutting fog, taillight streaks and dim mountain darkness.
+  texture_and_material: Hand-drawn characters with glossy CG cars, painted mountain roads and motion blur.
+  camera_and_composition: Drift lines through hairpins, rearview mirror shots and helicopter-like wides.
+  atmosphere_and_mood: Keep the requested mood with focused nocturnal tension.
+  rendering_and_quality: Classic Initial D frame mixing CG cars and hand-drawn drivers.
+  key_features: Initial D touge; CG drifting cars; headlights; mountain hairpins
+  creative_brief: "Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity. Carry it through Initial D touge, CG drifting cars, headlights, mountain hairpins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white and black hatchback with a tofu shop door logo
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -60,10 +63,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-353.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -72,6 +78,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

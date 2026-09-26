@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-151
 packId: pack_16
-name: Pop Reality Bend Style
+name: Kyoto Animation Haruhi - Pop Reality Bend
 styleAnchors:
-  - 'Pop Reality Bend Style'
-displayName: 'Pop Reality Bend'
+  - Kyoto Animation Haruhi - Pop Reality Bend
+displayName: Kyoto Animation Haruhi - Pop Reality Bend
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A pop-anime treatment built on clean graphic shapes and stable, readable
-    forms.
-  subject_treatment: >-
-    Keep the requested identity, proportions and action. Allow a playful contour emphasis
-    without bending anatomy or changing what is depicted.
-  color_and_tone: >-
-    When the prompt leaves color open, use bright flat accents and high-key value
-    separation. Explicit palettes and color assignments take priority.
-  lighting_and_shadow: >-
-    Use crisp graphic highlights and a small, controlled glow; retain the underlying shadow
-    structure and keep luminous edges distinct.
-  texture_and_material: >-
-    Favor smooth digital fills, clear ink edges and restrained grain. Match surface detail
-    to the actual subject and blend painted backgrounds without plastic gloss.
-  camera_and_composition: >-
-    Retain the requested viewpoint and layout. Use contrast and visual rhythm within that
-    frame; do not introduce distortion or new objects.
-  atmosphere_and_mood: >-
-    Buoyant visual energy is available when it matches the prompt; keep the requested mood.
-  rendering_and_quality: >-
-    Separate flat accents from soft background transitions, keep outlines crisp, and limit
-    glow to highlights that clarify form.
-  key_features: >-
-    High-key color grouping when palette is open; bright flat accents; crisp graphic
-    highlights; restrained glow over stable silhouettes.
-  creative_brief: 'Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing. Use it as a reusable look on any subject.'
+  aesthetic: 'Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting.
+  color_and_tone: Bright school colors, sky blue, pale grey closed-space tint and pop accents.
+  lighting_and_shadow: Clear school daylight, then flat eerie grey light when reality bends.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Everyday school framing interrupted by impossible warped perspective shots.
+  atmosphere_and_mood: Keep the requested mood with playful uncanny whimsy.
+  rendering_and_quality: Precise 2006 Kyoto Animation television frame with reality-bending twists.
+  key_features: Noizi Ito designs; KyoAni polish; reality bending; closed spaces; pop whimsy
+  creative_brief: "Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces. Carry it through Noizi Ito designs, KyoAni polish, reality bending, closed spaces, pop whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a yellow hair ribbon with an armband
+  - blue light giants in a grey city
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-151.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

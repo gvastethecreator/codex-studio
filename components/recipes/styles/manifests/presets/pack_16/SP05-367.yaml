@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-367
 packId: pack_16
-name: Brass Section Tender Precision Style
+name: Sound! Euphonium - Brass Section Tender Precision
 styleAnchors:
-  - Brass Section Tender Precision Style
-displayName: Brass Section Tender Precision
+  - Sound! Euphonium - Brass Section Tender Precision
+displayName: Sound! Euphonium - Brass Section Tender Precision
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together.'
-  subject_treatment: Keep the prompt's subject and action; place it among brass instruments, rehearsal rooms and the discipline of playing together.
-  color_and_tone: Warm brass gold, summer afternoon light and school-uniform navy.
-  lighting_and_shadow: Afternoon sun through windows, bright reflections on brass bells and valves.
-  texture_and_material: Polished brass, valve oil gleam, music stands and wooden floors.
-  camera_and_composition: Reflections in instrument bells and rows of players framed in sections.
-  atmosphere_and_mood: Tender and earnest, a summer spent chasing one perfect note together.
-  rendering_and_quality: Luminous performance anime with meticulous instrument detail and glowing summer light.
-  key_features: brass reflections; practice room; sections; summer light
-  creative_brief: "Brass band anime of tender precision: polished instruments, bare music stands, summer practice rooms and breathing together. Carry it through brass reflections, practice room, sections, summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments.
+  color_and_tone: Brass gold, sunset orange, school navy and soft teal.
+  lighting_and_shadow: Golden sunset through windows, gleaming brass reflections and bokeh.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Instrument close-ups with reflections, shallow focus and rooftop wides.
+  atmosphere_and_mood: Keep the requested mood with tender striving precision.
+  rendering_and_quality: Polished Kyoto Animation frame with gleaming instrument detail.
+  key_features: KyoAni brass reflections; sunset practice; shallow focus; Ikeda designs
+  creative_brief: "Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus. Carry it through KyoAni brass reflections, sunset practice, shallow focus, Ikeda designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-367.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

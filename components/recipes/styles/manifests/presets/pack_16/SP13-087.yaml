@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-087
 packId: pack_16
-name: Slow Metamorphosis Dread Anime
+name: Junji Ito - Slow Metamorphosis Dread
 styleAnchors:
-  - Slow Metamorphosis Dread Anime
+  - Junji Ito - Slow Metamorphosis Dread
   - transformation horror anime
   - ordinary scene
-displayName: Slow Metamorphosis Dread Anime
+displayName: Junji Ito - Slow Metamorphosis Dread
 category: 7. Horror
 domain: transformation horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,24 +20,27 @@ tags:
   - metamorphosis
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details.'
-  subject_treatment: Keep the prompt's subject and setting; show one subtle wrong change in the figure (an extra joint of shadow, a stretched limb, a face that stays too still).
-  color_and_tone: Pale domestic colors going slightly sickly, cream walls, grey skin tones and a faint green cast.
-  lighting_and_shadow: Soft window light with one shadow that does not match the figure casting it.
-  texture_and_material: Clean everyday surfaces, fabric and skin drawn simply so the one wrong detail stands out.
-  camera_and_composition: Still, ordinary framing that lingers too long, the change placed near the edge.
-  atmosphere_and_mood: Unsettling and slow, a familiar person becoming a little less familiar each day.
-  rendering_and_quality: Restrained prestige anime where horror lives in small precise details.
-  creative_brief: "Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details. Carry it through ordinary scene, one wrong detail, mismatched shadow, lingering frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: ordinary scene; one wrong detail; mismatched shadow; lingering frame
+  aesthetic: 'Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion.
+  color_and_tone: Black ink, white paper and dense fine hatching with no color.
+  lighting_and_shadow: Flat ordinary light made eerie by heavy hatched shadows.
+  texture_and_material: Fine meticulous pen hatching, spiral and organic patterns, clean contours.
+  camera_and_composition: Calm everyday framing building to a single devastating reveal panel.
+  atmosphere_and_mood: Keep the requested mood with slow creeping body horror.
+  rendering_and_quality: Meticulous black-and-white horror manga illustration with a devastating reveal.
+  creative_brief: "Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels. Carry it through Junji Ito hatching, staring eyes, slow transformation, reveal panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Junji Ito hatching; staring eyes; slow transformation; reveal panel
 avoidRules:
+  - a long-haired girl with a mole under her eye
+  - existing franchise characters
+  - gore
   - existing anime character likeness
   - studio or franchise logo
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
   - graphic wounds
   - watermark
   - text
@@ -47,9 +50,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a long-haired girl with a mole under her eye, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - metamorphosis
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

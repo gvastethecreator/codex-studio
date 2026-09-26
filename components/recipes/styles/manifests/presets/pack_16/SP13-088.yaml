@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-088
 packId: pack_16
-name: Folk Village Festival Horror Anime
+name: Shiki - Folk Village Festival Horror
 styleAnchors:
-  - Folk Village Festival Horror Anime
+  - Shiki - Folk Village Festival Horror
   - rural festival horror anime
   - bright daylight
-displayName: Folk Village Festival Horror Anime
+displayName: Shiki - Folk Village Festival Horror
 category: 7. Horror
 domain: rural festival horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - folk-horror
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light.'
-  subject_treatment: Keep the prompt's subject and setting; surround it with cheerful rural festivity that feels rehearsed and slightly menacing.
-  color_and_tone: Bright meadow green, flower yellow and white linen under a pale endless summer sky.
-  lighting_and_shadow: Relentless bright daylight with almost no shadow anywhere to hide in.
-  texture_and_material: Woven straw, linen, flower garlands and carved wood drawn with soft clean cel.
-  camera_and_composition: Wide symmetrical festival scenes with villagers all facing the same way.
-  atmosphere_and_mood: Sunny and smiling, and the smiles never stop even when they should.
-  rendering_and_quality: High-key prestige anime with pastoral detail and unsettling uniformity.
-  creative_brief: "Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light. Carry it through bright daylight, flower crowns, straw figures, synchronized villagers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: bright daylight; flower crowns; straw figures; synchronized villagers
+  aesthetic: 'Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Fujisaki designs, extreme sculptural hairstyles, pale faces, sharp eyes and old-fashioned village clothes.
+  color_and_tone: Summer green, pale daylight, dusk crimson and night indigo.
+  lighting_and_shadow: Blinding summer daylight and cold moonlight on wooden houses.
+  texture_and_material: Digital cel with ornate stylized hair shapes and painted village.
+  camera_and_composition: Village festival wides in harsh daylight and eerie frontal stares at the viewer.
+  atmosphere_and_mood: Keep the requested mood with sunlit communal menace.
+  rendering_and_quality: Stylized 2010 horror television frame with uncanny designs.
+  creative_brief: "Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister. Carry it through Fujisaki hairstyles, isolated village, uncanny daylight, festival menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Fujisaki hairstyles; isolated village; uncanny daylight; festival menace
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - folk-horror
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

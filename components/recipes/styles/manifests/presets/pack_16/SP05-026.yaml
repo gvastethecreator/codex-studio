@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-026
 packId: pack_16
-name: Operatic Rebellion Strategy Style
+name: Code Geass - Operatic Rebellion Strategy
 styleAnchors:
-  - 'Operatic Rebellion Strategy Style'
-displayName: 'Operatic Rebellion Strategy'
+  - Code Geass - Operatic Rebellion Strategy
+displayName: Code Geass - Operatic Rebellion Strategy
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A dramatic anime composition shaped by opposing visual masses, rising diagonals and
-    clean digital linework.
-  subject_treatment: >-
-    Keep the requested identities and actions. Emphasize clear silhouettes and directional
-    gestures while keeping subject count unchanged.
-  color_and_tone: >-
-    Follow the specified palette; when open, use deliberate value contrast rather than a
-    fixed color scheme.
-  lighting_and_shadow: >-
-    Use grouped shadow and selective edge highlights to separate opposing forms while
-    keeping existing light sources intact.
-  texture_and_material: >-
-    Use economical ink contours and integrate painted backgrounds; render only the materials
-    the prompt names.
-  camera_and_composition: >-
-    Preserve the requested camera. Arrange existing masses along upward diagonals with
-    defiant spacing only when the composition supports it.
-  atmosphere_and_mood: >-
-    Grand tension or defiance may follow the prompt's own mood.
-  rendering_and_quality: >-
-    Keep silhouette hierarchy strong and background transitions soft enough to preserve
-    depth and legibility.
-  key_features: >-
-    Opposing masses; rising diagonals; defiant spacing; clean contours and grouped shadow.
-  creative_brief: 'Use opposing shape masses and upward diagonals as compositional treatment, not as a new scene. Preserve the requested action, viewpoint and tone. Use it as a reusable look on any subject.'
+  aesthetic: 'Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with CLAMP proportions, very long legs, narrow faces, sharp eyes and ornate uniforms with high collars.
+  color_and_tone: Imperial purple, glossy black, royal gold and deep crimson accents.
+  lighting_and_shadow: Dramatic stage-like lighting, eye glows and flames behind silhouettes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Theatrical hand-pointing poses, low angles and chess-piece symbolism.
+  atmosphere_and_mood: Keep the requested mood with grand operatic defiance.
+  rendering_and_quality: Dramatic 2006 Sunrise television frame with CLAMP elegance.
+  key_features: CLAMP proportions; theatrical poses; imperial uniforms; chess symbolism
+  creative_brief: "Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames. Carry it through CLAMP proportions, theatrical poses, imperial uniforms, chess symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black helmeted mask with a pointed crest
+  - a red bird-shaped eye sigil
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-026.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

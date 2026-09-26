@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-285
 packId: pack_16
-name: Eco-Prophetic Wind Style
+name: Nausicaa - Eco-Prophetic Wind
 styleAnchors:
-  - 'Eco-Prophetic Wind Style'
-displayName: 'Eco-Prophetic Wind'
+  - Nausicaa - Eco-Prophetic Wind
+displayName: Nausicaa - Eco-Prophetic Wind
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use flow-driven mark making: long sweeping contours, filament-thin tapers, and connected
-    color paths across existing shapes.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Let contour
-    flow follow its existing edges without bending anatomy or adding airborne marks.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor fresh greens, cyan,
-    and restrained coral against clear neutrals; explicit prompt colors remain authoritative.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep daylight and shadow tied to supplied
-    sources; use clean highlights, not dust, gusts, or added glow.
-  texture_and_material: >-
-    Apply texture only to materials already present. Vary stroke length and wash density on
-    materials already present; introduce no foliage, fabric, or surface detail.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let existing edges carry
-    continuous curved rhythms and parallel value bands without making new forms.
-  atmosphere_and_mood: >-
-    Preserve the requested mood; flow is contour behavior, not a weather or ecological event.
-  rendering_and_quality: >-
-    Keep line direction coherent across forms and keep detail subordinate to the main
-    silhouettes.
-  key_features: >-
-    Sweeping contour; filament taper; linked color paths; clear naturalistic values.
-  creative_brief: 'Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines.
+  color_and_tone: Sepia-brown ink printing on cream paper with dusty blue-grey washes.
+  lighting_and_shadow: Diffuse light rendered by hatching density, glowing spores as bright white paper.
+  texture_and_material: Fine pencil and pen hatching, dense organic fungal detail, soft graphite shading.
+  camera_and_composition: Panoramic manga panels of vast landscapes, small figures against towering fungi and insects.
+  atmosphere_and_mood: Keep the requested mood with solemn ecological prophecy.
+  rendering_and_quality: Densely drawn hand-made manga illustration in sepia print.
+  key_features: Miyazaki manga hatching; sepia print; toxic fungal forest; gliders; giant insects
+  creative_brief: "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders. Carry it through Miyazaki manga hatching, sepia print, toxic fungal forest, gliders, giant insects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-285.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

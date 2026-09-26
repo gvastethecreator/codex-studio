@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-017
 packId: pack_16
-name: Wandering Atonement Cel Drama Style
+name: Trust and Betrayal - Wandering Atonement Cel Drama
 styleAnchors:
-  - 'Wandering Atonement Cel Drama Style'
-displayName: 'Wandering Atonement Cel Drama'
+  - Trust and Betrayal - Wandering Atonement Cel Drama
+displayName: Trust and Betrayal - Wandering Atonement Cel Drama
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A wandering 90s cel drama look uses long, slashing ink contours, dense black shapes and restrained
-    rust-red accents. Slightly dry edge texture gives the drawing a raw, reflective weight.
-  subject_treatment: >-
-    Preserve the requested identity and proportions. Let existing folds and edges carry elongated
-    strokes and clear angular turns; never add a weapon, scar or period costume.
-  color_and_tone: >-
-    When open, set muted plum and blue-black against a narrow rust-red or warm neutral accent. Keep the
-    requested palette and let dark values carry most of the weight.
-  lighting_and_shadow: >-
-    Use directional cel shadows with a restrained edge highlight. Preserve supplied lighting and avoid
-    adding a lantern, window or sunset.
-  texture_and_material: >-
-    Mix solid cel fills with sparse dry-brush grain and a few broken ink edges. Apply wear as drawing
-    texture only; do not make the depicted objects physically damaged.
-  camera_and_composition: >-
-    Favor long diagonals and clear negative-space breaks inside the existing composition. Keep the
-    requested angle and crop; do not stage a walk or confrontation.
-  atmosphere_and_mood: >-
-    Give the linework quiet gravity through pauses and asymmetrical balance. Preserve the requested
-    mood rather than requiring regret, violence or redemption.
-  rendering_and_quality: >-
-    Keep dark forms legible, contours slightly irregular and background planes simply painted. Avoid
-    airbrushed softness and excessive scratch texture.
-  key_features: >-
-    long slashing contours; dense blue-black cel masses; restrained rust-red accents with sparse
-    dry-brush grain
-  creative_brief: 'Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene. Use it as a reusable look on any subject.'
+  aesthetic: 'Kazuhiro Furuhashi OVA look of Rurouni Kenshin: Trust and Betrayal (1999): realistic painterly period drama, muted Kyoto palettes, blood-red accents on snow and live-action cinematography.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic proportions, restrained faces, period kimono and hakama, and deeply serious expressions.
+  color_and_tone: Muted earth browns, snow white, ink black and stark blood-red accents.
+  lighting_and_shadow: Soft natural light, overcast snow, candle-lit interiors and deep shadows.
+  texture_and_material: Painterly cel with watercolor textures, live-action inserts feel and snowfall.
+  camera_and_composition: Cinematic still compositions, long silences and snow-covered wide landscape shots.
+  atmosphere_and_mood: Keep the requested mood with somber atoning restraint.
+  rendering_and_quality: Mature painterly 1999 OVA frame with cinematic realism.
+  key_features: Trust and Betrayal realism; muted period Kyoto; snow; restrained drama
+  creative_brief: "Kazuhiro Furuhashi OVA look of Rurouni Kenshin: Trust and Betrayal (1999): realistic painterly period drama, muted Kyoto palettes, blood-red accents on snow and live-action cinematography. Carry it through Trust and Betrayal realism, muted period Kyoto, snow, restrained drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired swordsman with a cross-shaped cheek scar
+  - a reverse-blade sword
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-017.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

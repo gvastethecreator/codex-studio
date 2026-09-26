@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-167
 packId: pack_16
-name: Engine-Trail Outlaw Adventure Style
+name: Outlaw Star - Engine-Trail Outlaw Adventure
 styleAnchors:
-  - 'Engine-Trail Outlaw Adventure Style'
-displayName: 'Engine-Trail Outlaw Adventure'
+  - Outlaw Star - Engine-Trail Outlaw Adventure
+displayName: Outlaw Star - Engine-Trail Outlaw Adventure
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A kinetic 90s cel treatment uses sharp contour cuts, directional engine-like trails and strongly
-    angled color streaks. Its outlaw energy is speed and visual thrust, not a vehicle or western
-    subject.
-  subject_treatment: >-
-    Keep the requested identity and action. Attach a few trailing lines to existing movement and
-    preserve static forms without streaks; add no rider, machine or weapon.
-  color_and_tone: >-
-    When open, contrast deep navy with selective red, electric blue and warm highlights. Keep
-    requested colors and use the brightest streak only to clarify motion.
-  lighting_and_shadow: >-
-    Build crisp cel shadows and bright edge accents around existing moving forms. Preserve the
-    requested illumination; do not invent headlights or explosions.
-  texture_and_material: >-
-    Combine clean ink contours, painted color blocks and narrow speed traces. Keep marks directional
-    and do not smear surface detail.
-  camera_and_composition: >-
-    Use a strong diagonal or receding line of movement inside the supplied framing. Preserve camera
-    and existing action; do not add a road or chase.
-  atmosphere_and_mood: >-
-    Communicate momentum through line angle and color separation. Keep the requested emotional tone
-    instead of adding outlaw bravado or adventure.
-  rendering_and_quality: >-
-    Keep moving edges sharp with selective streaks and static edges crisp. Avoid broad blur, excessive
-    debris and action effects unrelated to the prompt.
-  key_features: >-
-    directional engine-like trails; sharp contour cuts; navy cel masses with selective red and
-    electric-blue streaks
-  creative_brief: 'Apply the kinetic cel lines and selective trail accents to movement already present in the request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon. Use it as a reusable look on any subject.'
+  aesthetic: 'Sunrise Outlaw Star television look (1998): late-nineties space adventure, glossy ship interiors, grappler ship arms, magic-tech guns and colorful alien frontier towns.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with late-nineties Sunrise designs, spiky hair, big expressive eyes, jackets and adventurer gear.
+  color_and_tone: Bright space teal, engine orange, desert tan and chrome.
+  lighting_and_shadow: Engine flares, cockpit glow and harsh frontier sunlight.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Chase shots with engine trails, cockpit views and frontier town wides.
+  atmosphere_and_mood: Keep the requested mood with rollicking outlaw adventure.
+  rendering_and_quality: Energetic late-1990s Sunrise television frame with space adventure color.
+  key_features: Outlaw Star adventure; engine trails; frontier towns; magic-tech guns
+  creative_brief: "Sunrise Outlaw Star television look (1998): late-nineties space adventure, glossy ship interiors, grappler ship arms, magic-tech guns and colorful alien frontier towns. Carry it through Outlaw Star adventure, engine trails, frontier towns, magic-tech guns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-167.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

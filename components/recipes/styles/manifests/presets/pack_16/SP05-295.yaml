@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-295
 packId: pack_16
-name: Quiet Musical Distance Style
+name: Liz and the Blue Bird - Quiet Musical Distance
 styleAnchors:
-  - 'Quiet Musical Distance Style'
-displayName: 'Quiet Musical Distance'
+  - Liz and the Blue Bird - Quiet Musical Distance
+displayName: Liz and the Blue Bird - Quiet Musical Distance
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,32 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Quiet-spaced line design: long uninterrupted fine contours, broad matte color fields, and
-    deliberate blank intervals.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Let existing
-    contours run in phrase-like lengths with pauses, without music symbols or instruments.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor slate blue, pale
-    cyan, ivory, and a faint warm neutral; preserve requested colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep illumination soft and even with clear
-    plane separation; avoid stage lighting and bloom.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use clean matte fills with very little
-    grain; add no decorative notation or sound marks.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let existing empty areas
-    provide rhythm without changing count or positions.
-  atmosphere_and_mood: >-
-    Keep the requested emotion; quiet is mark density and spacing, not a mood instruction.
-  rendering_and_quality: >-
-    Maintain fine lines, open midtones, and unbroken feature edges without soft-focus drift.
-  key_features: >-
-    Long fine contours; broad matte fields; intentional blank intervals; low mark density.
-  creative_brief: 'Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair.
+  color_and_tone: Watercolor pastels, pale blue, cream, soft pink and airy white.
+  lighting_and_shadow: Soft window light washed out into haze, delicate light blooms.
+  texture_and_material: Very thin colored lines, watercolor-like washes, soft focus and bokeh.
+  camera_and_composition: Distant composed frames, feet and hands inserts, long corridors with empty space.
+  atmosphere_and_mood: Keep the requested mood with hushed tender distance.
+  rendering_and_quality: Airy restrained feature frame with watercolor softness and delicate thin lines.
+  key_features: Naoko Yamada restraint; thin delicate lines; watercolor pastel; empty hallways; small gestures
+  creative_brief: "Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways. Carry it through Naoko Yamada restraint, thin delicate lines, watercolor pastel, empty hallways, small gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -61,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-295.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -77,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

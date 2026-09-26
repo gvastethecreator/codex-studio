@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-141
 packId: pack_16
-name: Gothic Resonance Punk Style
+name: Hellsing TV - Gothic Resonance Punk
 styleAnchors:
-  - 'Gothic Resonance Punk Style'
-displayName: 'Gothic Resonance Punk'
+  - Hellsing TV - Gothic Resonance Punk
+displayName: Hellsing TV - Gothic Resonance Punk
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Gothic-punk anime with ornamental dark contours, rough ink texture and pulsing highlight
-    accents.
-  subject_treatment: >-
-    Keep the supplied identity and gesture. Repeated light or contour pulses may underline
-    existing motion.
-  color_and_tone: >-
-    When palette is open, use black, crimson, bone, violet and a small acidic accent;
-    explicit color choices take priority.
-  lighting_and_shadow: >-
-    Pair warm local glow and a firm rim with deep soft shadow; use vibration-like highlight
-    pulses only when they fit the image.
-  texture_and_material: >-
-    Apply rough ink and distressed grain only to surfaces present in the prompt.
-  camera_and_composition: >-
-    Respect requested framing and viewpoint; keep decorative shapes subordinate to the
-    existing silhouette.
-  atmosphere_and_mood: >-
-    Use emotional resonance or abrasive tension only when compatible with the requested
-    tone.
-  rendering_and_quality: >-
-    Retain crisp silhouette edges, controlled pulses and soft painted-background
-    integration.
-  key_features: >-
-    Ornamental shadow; dark and vivid accent contrast; pulsing highlight rhythm; rough ink
-    on existing materials.
-  creative_brief: 'Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera. Use it as a reusable look on any subject.'
+  aesthetic: 'Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes.
+  color_and_tone: Blood red, black, ash grey and cold moon blue.
+  lighting_and_shadow: Lurid red and moonlit blue light, harsh shadows and gunfire flashes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Low gothic angles, churches and alleys, silhouettes against huge moons.
+  atmosphere_and_mood: Keep the requested mood with lurid gothic menace.
+  rendering_and_quality: Moody early-2000s Gonzo television frame with digital grain.
+  key_features: Gonzo gothic punk; red and black; ruined churches; vampire menace
+  creative_brief: "Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain. Carry it through Gonzo gothic punk, red and black, ruined churches, vampire menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a vampire in a red greatcoat and round orange glasses
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-141.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-006
 packId: pack_16
-name: Pop Transformable Aerial Spectacle Style
+name: Macross - Pop Transformable Aerial Spectacle
 styleAnchors:
-  - 'Pop Transformable Aerial Spectacle Style'
-displayName: 'Pop Transformable Aerial Spectacle'
+  - Macross - Pop Transformable Aerial Spectacle
+displayName: Macross - Pop Transformable Aerial Spectacle
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use fluid outline motion while retaining anatomy, pose and the direction of action; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use vermilion, cobalt, yellow and cream. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as clear geometric cel shadows with one small highlight on source-lit edges; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply clean matte pigment with a faint analog grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use broad arcs inside existing silhouettes; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through lightness from line flow; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use open high-key color separation with hand-drawn contours and no 3D shine; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Haruhiko Mikimoto designs and Ichiro Itano missile circus as in Super Dimension Fortress Macross (1982): transforming jet fighters, idol singers, swirling missile trails and eighties pop.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Mikimoto designs, glossy big eyes with many highlights, feathered eighties hair and flight suits or idol outfits.
+  color_and_tone: Sky blue, white contrails, pop pink and jet grey.
+  lighting_and_shadow: Bright sky light, missile exhaust glow and stage spotlights.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Spiraling missile circus shots, cockpit views, transformation mid-dive.
+  atmosphere_and_mood: Keep the requested mood with soaring pop spectacle.
+  rendering_and_quality: Dynamic 1980s television frame with Itano circus motion.
+  key_features: Mikimoto eyes; Itano missile circus; transforming jets; idol pop
+  creative_brief: "Haruhiko Mikimoto designs and Ichiro Itano missile circus as in Super Dimension Fortress Macross (1982): transforming jet fighters, idol singers, swirling missile trails and eighties pop. Carry it through Mikimoto eyes, Itano missile circus, transforming jets, idol pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - VF-1 fighter markings
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-006.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: VF-1 fighter markings, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

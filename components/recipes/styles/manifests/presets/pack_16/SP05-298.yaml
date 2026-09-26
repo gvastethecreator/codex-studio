@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-298
 packId: pack_16
-name: Nocturnal Social Whirl Style
+name: Night Is Short, Walk on Girl - Nocturnal Social Whirl
 styleAnchors:
-  - 'Nocturnal Social Whirl Style'
-displayName: 'Nocturnal Social Whirl'
+  - Night Is Short, Walk on Girl - Nocturnal Social Whirl
+displayName: Night Is Short, Walk on Girl - Nocturnal Social Whirl
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Build a nocturne from broad blue-violet shadow masses, narrow warm-cyan points, and softened
-    secondary contours against crisp foreground edges.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Silhouette
-    grouping is allowed only where supplied shapes already overlap.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use midnight blue, black
-    violet, sodium amber, and cold cyan; keep exact user colors where specified.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Show only practical light supplied by the
-    prompt; keep glints source-bound and omit invented lamps or wet reflections.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use low grain in broad shadows and fine
-    marks on existing lit materials; avoid noise and false sheen.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Stagger emphasis among
-    existing forms while leaving their arrangement unchanged.
-  atmosphere_and_mood: >-
-    Keep requested emotion; nocturnal contrast does not require secrecy, tension, or social
-    grouping.
-  rendering_and_quality: >-
-    Retain one-to-one subject readability against dark masses and keep small light accents
-    sparse.
-  key_features: >-
-    Blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge.
-  creative_brief: 'Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks.
+  color_and_tone: Pastel red, mint, cream and deep navy night.
+  lighting_and_shadow: Flat lantern and street glow with simple graphic highlights on faces.
+  texture_and_material: Flat color shapes, simple clean lines and graphic patterns.
+  camera_and_composition: Swirling crowd pans, playful distortions, long walking tracking shots.
+  atmosphere_and_mood: Keep the requested mood with giddy nocturnal whirl.
+  rendering_and_quality: Stylish flat graphic Science SARU frame with bouncy playful motion.
+  key_features: Yuasa bounce; Yusuke Nakamura designs; flat pastel; night Kyoto; whirling crowds
+  creative_brief: "Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto. Carry it through Yuasa bounce, Yusuke Nakamura designs, flat pastel, night Kyoto, whirling crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-298.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

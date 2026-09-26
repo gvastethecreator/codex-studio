@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-008
 packId: pack_16
-name: Neon Procedural Irony Style
+name: Mamoru Oshii - Neon Procedural Irony
 styleAnchors:
-  - 'Neon Procedural Irony Style'
-displayName: 'Neon Procedural Irony'
+  - Mamoru Oshii - Neon Procedural Irony
+displayName: Mamoru Oshii - Neon Procedural Irony
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simplified shapes with deliberate hard edges and a few precise interior marks; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use deep charcoal, electric cyan and one warm accent. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as angular flat shadow blocks and clipped highlights, without inventing a glow source; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply flat printed color areas with discreet, evenly distributed screen grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use small repeated marks separated by clean, irregular beats; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through dry contrast between precise marks and abrupt accents; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use crisp edges, limited interior detail and no soft digital bloom; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Oshii late-eighties direction: deadpan procedural scenes in bureaucratic spaces, long static shots, basset hounds and fish in unexpected places, neon cities reflected in water.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic understated designs, tired faces, uniforms and suits, standing still in long pauses.
+  color_and_tone: Neon cyan and magenta over drab office greys and deep water blues.
+  lighting_and_shadow: Fluorescent office light, neon reflections and dim canal glow.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Long static wide shots, symmetrical corridors, reflections and repeated desks.
+  atmosphere_and_mood: Keep the requested mood with dry philosophical irony.
+  rendering_and_quality: Measured late-1980s cel frame with deliberate stillness and detail.
+  key_features: Mamoru Oshii stillness; bureaucratic spaces; neon reflections; deadpan irony
+  creative_brief: "Mamoru Oshii late-eighties direction: deadpan procedural scenes in bureaucratic spaces, long static shots, basset hounds and fish in unexpected places, neon cities reflected in water. Carry it through Mamoru Oshii stillness, bureaucratic spaces, neon reflections, deadpan irony. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-008.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

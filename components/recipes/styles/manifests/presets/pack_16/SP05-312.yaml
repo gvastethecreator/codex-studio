@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-312
 packId: pack_16
-name: Elegant Eighties Heist Glam Style
+name: Cat's Eye - Elegant Eighties Heist Glam
 styleAnchors:
-  - 'Elegant Eighties Heist Glam Style'
-displayName: 'Elegant Eighties Heist Glam'
+  - Cat's Eye - Elegant Eighties Heist Glam
+displayName: Cat's Eye - Elegant Eighties Heist Glam
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use elegant edge accents on existing shapes while retaining identity and clothing; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use teal, plum, champagne and charcoal. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as polished hard-edged cel highlights and narrow shadow slices matched to the light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply smooth opaque paint with fine analog grain and no plastic sheen as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use asymmetrical line accents balanced inside the requested placement; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through controlled transitions between tapered lines and simple color fields; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use precise graphic linework, limited highlights and restrained 1980s transfer softness; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits.
+  color_and_tone: Night navy, moonlight cyan, pastel pink and gold.
+  lighting_and_shadow: Moonlight through skylights, laser beams and gallery spotlights.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Acrobatic silhouettes against moons, gallery interiors, rooftop leaps.
+  atmosphere_and_mood: Keep the requested mood with elegant romantic intrigue.
+  rendering_and_quality: Glamorous 1980s city-pop television frame with graceful motion.
+  key_features: Tsukasa Hojo elegance; night gallery heists; moonlight; city pop glamour
+  creative_brief: "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop. Carry it through Tsukasa Hojo elegance, night gallery heists, moonlight, city pop glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - three sisters in matching leotards
+  - a cat-eye calling card
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-312.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: three sisters in matching leotards, a cat-eye calling card, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

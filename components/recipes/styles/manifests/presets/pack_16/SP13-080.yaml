@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-080
 packId: pack_16
-name: Northern Saga Longship Anime
+name: Makoto Yukimura - Northern Saga Longship
 styleAnchors:
-  - Northern Saga Longship Anime
+  - Makoto Yukimura - Northern Saga Longship
   - viking saga anime
   - longships
-displayName: Northern Saga Longship Anime
+displayName: Makoto Yukimura - Northern Saga Longship
 category: 6. Samurai & Medieval
 domain: viking saga anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - viking
   - saga
   - anime
+  - reference-title
 visualDna:
-  aesthetic: Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces.
-  subject_treatment: Keep the prompt's subject and setting; make it cold, wet and weathered, with sea spray and wind shaping everything.
-  color_and_tone: Slate sea grey, cold green, iron and bone white with rust red accents.
-  lighting_and_shadow: Low overcast light, breaks of cold sun on the water and heavy dark cloud shadows.
-  texture_and_material: Tarred wood, wet fur, rope, iron and salt spray drawn with gritty line.
-  camera_and_composition: Low angles on heaving decks and wide shots of ships dwarfed by waves and fjords.
-  atmosphere_and_mood: Harsh and restless, a hard life lived between storms and long journeys.
-  rendering_and_quality: Gritty seinen anime with heavy line weight and textured painted skies.
-  creative_brief: Gritty northern saga anime of cold seas, longships, fur, iron and weather-beaten faces. Carry it through longships, cold spray, fur and iron, fjord scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
-  key_features: longships; cold spray; fur and iron; fjord scale
+  aesthetic: 'Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing.
+  color_and_tone: Grey sea, cold slate and black ink with steel highlights.
+  lighting_and_shadow: Cold overcast northern light with spray and wind.
+  texture_and_material: Detailed pen hatching, rough seas and wood grain on ships.
+  camera_and_composition: Longship prows in waves, fjord cliffs and gritty close-ups.
+  atmosphere_and_mood: Keep the requested mood with harsh northern epic.
+  rendering_and_quality: Realistic historical manga illustration with rugged weathered detail and cold seas.
+  creative_brief: "Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces. Carry it through Makoto Yukimura realism, longships, grey seas, gritty hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Makoto Yukimura realism; longships; grey seas; gritty hatching
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - viking
     - saga
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

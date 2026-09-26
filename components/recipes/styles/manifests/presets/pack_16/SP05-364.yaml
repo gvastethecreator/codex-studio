@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-364
 packId: pack_16
-name: Obsessive Line Rehearsal Style
+name: Dance Dance Danseur - Obsessive Line Rehearsal
 styleAnchors:
-  - Obsessive Line Rehearsal Style
-displayName: Obsessive Line Rehearsal
+  - Dance Dance Danseur - Obsessive Line Rehearsal
+displayName: Dance Dance Danseur - Obsessive Line Rehearsal
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Theater rehearsal anime of obsessive repetition: marked stages, bare rehearsals, work lights and actors repeating one line until it breaks.'
-  subject_treatment: Keep the prompt's subject and action; set it in rehearsal, repeated, marked with tape and watched by a critical eye.
-  color_and_tone: Black box greys and bare work-light white with one colored costume piece.
-  lighting_and_shadow: Harsh bare work lights, stark shadows on black walls and an empty auditorium.
-  texture_and_material: Tape marks on stage floors, worn shoes, rehearsal clothes and props.
-  camera_and_composition: Wide frames of a lone actor on a bare stage and close-ups of strained faces.
-  atmosphere_and_mood: Obsessive and raw, an actor pushing one moment again and again toward truth.
-  rendering_and_quality: Stark dramatic anime with minimal sets and intense acting.
-  key_features: work lights; tape marks; bare stage; repetition
-  creative_brief: "Theater rehearsal anime of obsessive repetition: marked stages, bare rehearsals, work lights and actors repeating one line until it breaks. Carry it through work lights, tape marks, bare stage, repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'MAPPA Dance Dance Danseur television look (2022) from George Asakura designs: ballet obsession, elongated lines, rehearsal studio light and expressive rough ink moments.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Asakura designs, elongated dancer bodies, intense eyes and rehearsal clothes.
+  color_and_tone: Studio wood, pale rehearsal light, black and soft red.
+  lighting_and_shadow: Single work lights, mirror reflections and studio window beams.
+  texture_and_material: Clean cel with sudden rough sketch lines and ink textures.
+  camera_and_composition: Mirror compositions, extended line poses and obsessive repetition.
+  atmosphere_and_mood: Keep the requested mood with obsessive artistic hunger.
+  rendering_and_quality: Expressive MAPPA frame shifting into rough sketch intensity.
+  key_features: Asakura designs; ballet lines; mirrors; obsessive rehearsal
+  creative_brief: "MAPPA Dance Dance Danseur television look (2022) from George Asakura designs: ballet obsession, elongated lines, rehearsal studio light and expressive rough ink moments. Carry it through Asakura designs, ballet lines, mirrors, obsessive rehearsal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-364.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

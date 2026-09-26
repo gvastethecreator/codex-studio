@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-024
 packId: pack_16
-name: Alchemical Moral Geometry Style
+name: Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry
 styleAnchors:
-  - 'Alchemical Moral Geometry Style'
-displayName: 'Alchemical Moral Geometry'
+  - Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry
+displayName: Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Digital anime linework organized by repeated geometry, measured axes and controlled
-    value contrast.
-  subject_treatment: >-
-    Preserve the requested subject and action. Use abstract diagram-like contours only where
-    they clarify existing forms.
-  color_and_tone: >-
-    Retain explicit hues; if none are given, rely on value separation and one restrained
-    accent.
-  lighting_and_shadow: >-
-    Use a defined rim, compact glow and blocked shadow to clarify form; keep effects
-    subordinate to the subject.
-  texture_and_material: >-
-    Fine etched or chalk-like marks may describe existing surfaces; keep them nonverbal and
-    subordinate to the subject.
-  camera_and_composition: >-
-    Retain the requested camera; measured axes, repetition or symmetry may organize existing
-    shapes when compatible.
-  atmosphere_and_mood: >-
-    Use visual constraint and spacing to support the mood requested in the prompt.
-  rendering_and_quality: >-
-    Balance crisp geometry and ink edges with softly painted backgrounds; preserve
-    readability and limit glow.
-  key_features: >-
-    Repeated geometry; measured axes; rule-like spacing; fine nonverbal marks; rim light and
-    compact glow.
-  creative_brief: "Apply geometric line organization and restrained light to existing forms. Preserve the prompt's content and frame; markings remain abstract and nonverbal. Use it as a reusable look on any subject."
+  aesthetic: 'BONES Fullmetal Alchemist: Brotherhood television look (2009): clean confident designs from Hiromu Arakawa, transmutation circles flaring blue, European industrial towns and war-scarred drama.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Arakawa-derived designs, sturdy bodies, clear expressive faces, coats, uniforms and automail limbs.
+  color_and_tone: Military blue, brick red, alchemy cyan and dusty ochre.
+  lighting_and_shadow: Blue-white alchemy flashes, warm lamplight and harsh desert sun.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Dynamic action with circle compositions, drawn from above and at ground level.
+  atmosphere_and_mood: Keep the requested mood with earnest moral struggle.
+  rendering_and_quality: Crisp 2009 BONES television frame with dynamic action animation.
+  key_features: FMA Brotherhood; transmutation circles; automail; military uniforms
+  creative_brief: "BONES Fullmetal Alchemist: Brotherhood television look (2009): clean confident designs from Hiromu Arakawa, transmutation circles flaring blue, European industrial towns and war-scarred drama. Carry it through FMA Brotherhood, transmutation circles, automail, military uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a short blond alchemist in a red coat with a metal arm
+  - a suit of empty armor
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-024.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a short blond alchemist in a red coat with a metal arm, a suit of empty armor, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

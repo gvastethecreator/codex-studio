@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-369
 packId: pack_16
-name: Raw Youth Feedback Style
+name: Harold Sakuishi - Raw Youth Feedback
 styleAnchors:
-  - Raw Youth Feedback Style
-displayName: Raw Youth Feedback
+  - Harold Sakuishi - Raw Youth Feedback
+displayName: Harold Sakuishi - Raw Youth Feedback
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Live-house punk anime of raw feedback: tiny stages, crowd surfing, sweat, cables and sound drawn as jagged noise.'
-  subject_treatment: Keep the prompt's subject and action; put it in a cramped live-house show with noise, sweat and bodies pressed close.
-  color_and_tone: Harsh red and green stage lights, black walls and sweat highlights.
-  lighting_and_shadow: Cheap colored stage lights, strobe flashes and deep shadows in the crowd.
-  texture_and_material: Sweat, torn shirts, amp grilles and tangled cables with jagged sound lines.
-  camera_and_composition: Chaotic low angles from the crowd and close stage-edge shots.
-  atmosphere_and_mood: Raw and loud, a sweaty room of young people shouting the same words.
-  rendering_and_quality: Rough energetic anime with jagged noise effects and harsh lighting.
-  key_features: jagged noise lines; crowd surfing; colored stage lights; cramped stage
-  creative_brief: "Live-house punk anime of raw feedback: tiny stages, crowd surfing, sweat, cables and sound drawn as jagged noise. Carry it through jagged noise lines, crowd surfing, colored stage lights, cramped stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Harold Sakuishi BECK look: scruffy realistic rock manga, garage rehearsals, live-house crowds, lanky teens and Western rock fashion.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sakuishi designs, lanky scruffy figures, long hair, band tees and worn instruments.
+  color_and_tone: Garage browns, amp black, stage red and faded denim blue.
+  lighting_and_shadow: Stage lights in small clubs and garage bulbs.
+  texture_and_material: Loose realistic pen lines, screentone and gritty stage textures.
+  camera_and_composition: Crowd-surf wides, amp-side angles and garage rehearsal framing.
+  atmosphere_and_mood: Keep the requested mood with raw youthful rock.
+  rendering_and_quality: Scruffy realistic rock manga illustration with loud live-house energy.
+  key_features: Harold Sakuishi rock; garages; live houses; lanky teens
+  creative_brief: "Harold Sakuishi BECK look: scruffy realistic rock manga, garage rehearsals, live-house crowds, lanky teens and Western rock fashion. Carry it through Harold Sakuishi rock, garages, live houses, lanky teens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-369.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-351
 packId: pack_16
-name: Long-Distance Night Endurance Style
+name: Run with the Wind - Long-Distance Night Endurance
 styleAnchors:
-  - Long-Distance Night Endurance Style
-displayName: Long-Distance Night Endurance
+  - Run with the Wind - Long-Distance Night Endurance
+displayName: Run with the Wind - Long-Distance Night Endurance
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Long-distance running anime at night: streetlights, breath clouds, relay sashes and the loneliness of endurance.'
-  subject_treatment: Keep the prompt's subject and action; show sustained, lonely effort through night streets or dark countryside.
-  color_and_tone: Deep navy night, sodium orange streetlights and white breath clouds.
-  lighting_and_shadow: Pools of streetlight passing over the runner, long shadows sweeping ahead and behind.
-  texture_and_material: Asphalt, running shoes, sweat and fabric drawn simply with soft glow.
-  camera_and_composition: Tracking side shots and long empty roads with a single runner.
-  atmosphere_and_mood: Lonely and determined, every step a small victory against the dark and the cold.
-  rendering_and_quality: Moody sports anime with rhythmic light passes and subtle breath effects.
-  key_features: night streetlights; breath clouds; relay sash; lonely road
-  creative_brief: "Long-distance running anime at night: streetlights, breath clouds, relay sashes and the loneliness of endurance. Carry it through night streetlights, breath clouds, relay sash, lonely road. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air.
+  color_and_tone: Night navy, streetlight orange, winter grey and breath white.
+  lighting_and_shadow: Streetlight pools on empty roads, dawn glow and cold air haze.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Long tracking shots of runners, empty roads and profile close-ups.
+  atmosphere_and_mood: Keep the requested mood with quiet enduring resolve.
+  rendering_and_quality: Grounded Production I.G television frame with restrained quiet realism.
+  key_features: Run with the Wind realism; night roads; breath clouds; endurance
+  creative_brief: "Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance. Carry it through Run with the Wind realism, night roads, breath clouds, endurance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-351.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

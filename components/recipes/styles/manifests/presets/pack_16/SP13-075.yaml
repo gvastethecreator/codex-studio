@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-075
 packId: pack_16
-name: Grand Siege Panorama Anime
+name: Yasuhisa Hara - Grand Siege Panorama
 styleAnchors:
-  - Grand Siege Panorama Anime
+  - Yasuhisa Hara - Grand Siege Panorama
   - epic siege anime
   - colossal walls
-displayName: Grand Siege Panorama Anime
+displayName: Yasuhisa Hara - Grand Siege Panorama
 category: 6. Samurai & Medieval
 domain: epic siege anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - siege
   - panorama
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks.'
-  subject_treatment: Keep the prompt's subject and setting; place it within an enormous environment where scale dwarfs every figure.
-  color_and_tone: Stone ochre, smoke grey and sky blue with fires as orange points across the landscape.
-  lighting_and_shadow: Broad daylight or sunset with long shadows cast by towers across the battlefield.
-  texture_and_material: Detailed painted backgrounds of stone, siege engines and smoke with small cel figures.
-  camera_and_composition: Ultra-wide establishing shots from high above or far away.
-  atmosphere_and_mood: Awe-struck and vast, the grim weight of history seen from very far away.
-  rendering_and_quality: Richly painted background art with precise small-scale detail and clean tiny cel figures.
-  creative_brief: "Epic panoramic anime of sieges: colossal walls and towers with armies reduced to tiny detailed specks. Carry it through colossal walls, tiny armies, painted panorama, long tower shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: colossal walls; tiny armies; painted panorama; long tower shadows
+  aesthetic: 'Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor.
+  color_and_tone: Black ink with grey tone, dust brown and sunset red in color pages.
+  lighting_and_shadow: Sunset backlight over armies, dust haze and dramatic rim light on generals.
+  texture_and_material: Dense crowd hatching, speed lines and dust clouds.
+  camera_and_composition: Sweeping panoramas of vast armies and heroic low angles on generals.
+  atmosphere_and_mood: Keep the requested mood with vast epic ambition.
+  rendering_and_quality: Grand historical manga illustration with immense crowd scale.
+  creative_brief: "Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas. Carry it through Yasuhisa Hara armies, epic panoramas, towering generals, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yasuhisa Hara armies; epic panoramas; towering generals; dust
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - siege
     - panorama
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

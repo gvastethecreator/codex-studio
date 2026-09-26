@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-077
 packId: pack_16
-name: Mirror Identity Collapse Thriller Style
+name: Perfect Blue - Mirror Identity Collapse Thriller
 styleAnchors:
-  - 'Mirror Identity Collapse Thriller Style'
-displayName: 'Mirror Identity Collapse Thriller'
+  - Perfect Blue - Mirror Identity Collapse Thriller
+displayName: Perfect Blue - Mirror Identity Collapse Thriller
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Paired contour registers: a true edge and a partial reversed-value echo, with breaks where
-    the two fail to align.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Echo existing
-    silhouettes or reflections only, never duplicate features or introduce a mirror.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, reuse muted indigo, olive,
-    smoked gray, and pale ochre on opposing value sides instead of adding accent colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow the supplied source; reverse
-    highlight and shadow only across reflective boundaries already present, with no new glints
-    or lights.
-  texture_and_material: >-
-    Apply texture only to materials already present. Separate transparent wash from narrow hard
-    edges only on existing reflective materials; keep broken ink dry and sparse elsewhere.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Align partial reversed
-    contours to existing axes or reflective planes without moving or flipping subjects.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Carry the requested emotion; perceptual dissonance
-    comes only from contour and value reversal.
-  rendering_and_quality: >-
-    Maintain one primary contour for each form; keep secondary echoes partial, low-contrast, and
-    subordinate to identity.
-  key_features: >-
-    Partial reversed contour; paired value polarity; existing-reflection echo; clear identity
-    contours.
-  creative_brief: 'Use partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon feature animation as in Perfect Blue: late-nineties Madhouse cel with grounded realistic designs, cramped apartments, TV studios and mirrors, where edits blur what is real.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic adult proportions, modest eyes, observed Japanese faces and ordinary clothes, never glamorous anime beauty.
+  color_and_tone: Faded nineties cel palette, muted pinks and beiges, dim fluorescent greens and sudden blood-red accents.
+  lighting_and_shadow: Flat fluorescent room light and TV glow, harsh flash in stage scenes, heavy shadows in hallways.
+  texture_and_material: Hand-painted cel on painted backgrounds, slight film grain, dust and old video softness.
+  camera_and_composition: Match cuts through mirrors, reflections and screens, voyeuristic framing through doorways.
+  atmosphere_and_mood: Keep the requested mood with paranoid unraveling tension.
+  rendering_and_quality: Precise realist 1990s theatrical cel animation frame with grounded observed acting.
+  key_features: Satoshi Kon realism; mirror reflections; nineties cel; paranoid staging; grounded faces
+  creative_brief: "Satoshi Kon feature animation as in Perfect Blue: late-nineties Madhouse cel with grounded realistic designs, cramped apartments, TV studios and mirrors, where edits blur what is real. Carry it through Satoshi Kon realism, mirror reflections, nineties cel, paranoid staging, grounded faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-077.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

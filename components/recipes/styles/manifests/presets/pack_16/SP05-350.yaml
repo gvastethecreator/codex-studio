@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-350
 packId: pack_16
-name: Aquatic Relay Glow Style
+name: Free! - Aquatic Relay Glow
 styleAnchors:
-  - Aquatic Relay Glow Style
-displayName: Aquatic Relay Glow
+  - Free! - Aquatic Relay Glow
+displayName: Free! - Aquatic Relay Glow
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Swimming anime of water and light: glowing pool blues, underwater caustics, bubbles and bodies stretched in perfect strokes.'
-  subject_treatment: Keep the prompt's subject and action; place it in or near water with caustic light and flowing motion.
-  color_and_tone: Glowing aqua, deep lane-line blue and white foam with warm skin tones.
-  lighting_and_shadow: Underwater caustic patterns rippling over bodies and the pool floor.
-  texture_and_material: Clear water, bubbles, spray and wet skin drawn with luminous effects.
-  camera_and_composition: Underwater side views and split surface shots across lanes.
-  atmosphere_and_mood: Freeing and luminous, the silence and speed of moving through water.
-  rendering_and_quality: Luminous sports anime with detailed water effects and clean anatomy.
-  key_features: caustic light; underwater views; bubbles; split surface
-  creative_brief: "Swimming anime of water and light: glowing pool blues, underwater caustics, bubbles and bodies stretched in perfect strokes. Carry it through caustic light, underwater views, bubbles, split surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kyoto Animation Free! television look (2013) with Futoshi Nishiya designs: glossy detailed water, caustic light, lean swimmers and sparkling pool reflections.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nishiya designs, lean muscular swimmers, wet hair, glossy eyes and goggles.
+  color_and_tone: Pool aqua, caustic white, sunset pink and deep blue.
+  lighting_and_shadow: Caustic underwater light, sparkling surface reflections and sunset glow.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Underwater glides, relay wall turns and dramatic splash freezes.
+  atmosphere_and_mood: Keep the requested mood with glowing aquatic freedom.
+  rendering_and_quality: Glossy Kyoto Animation frame with exceptional water rendering.
+  key_features: KyoAni water; caustic light; lean swimmers; sparkling pools
+  creative_brief: "Kyoto Animation Free! television look (2013) with Futoshi Nishiya designs: glossy detailed water, caustic light, lean swimmers and sparkling pool reflections. Carry it through KyoAni water, caustic light, lean swimmers, sparkling pools. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-350.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

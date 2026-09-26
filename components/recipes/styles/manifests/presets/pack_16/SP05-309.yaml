@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-309
 packId: pack_16
-name: Explosive Space Glam Action Style
+name: Dirty Pair - Explosive Space Glam Action
 styleAnchors:
-  - 'Explosive Space Glam Action Style'
-displayName: 'Explosive Space Glam Action'
+  - Dirty Pair - Explosive Space Glam Action
+displayName: Dirty Pair - Explosive Space Glam Action
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use show force transfer only through the pose and motion the prompt already describes; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use ink black, paper ivory and a focused red or blue accent. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as abrupt two-tone blocks and a bright cut only at an explicitly lit point; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply clean hand ink, brief dry-brush streaks and restrained cel grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use directional marks following only the movement already requested; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through contrast timing and sharp contour accents; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use sharp, bounded effects with the original action and silhouette intact; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Dirty Pair eighties anime look with Tsuneo Tominaga designs: glamorous space agents, big hair, shiny costumes, neon sci-fi cities and cartoonish explosions.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with glamorous eighties designs, big voluminous hair, long legs, bright costumes and confident poses.
+  color_and_tone: Hot pink, cyan, gold and deep space navy.
+  lighting_and_shadow: Explosion flares, neon glow and glossy highlights on costumes.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Action poses with explosions behind, dynamic chases, low heroic angles.
+  atmosphere_and_mood: Keep the requested mood with glamorous chaotic action.
+  rendering_and_quality: Glossy eighties sci-fi television frame with bold highlights.
+  key_features: Eighties space glamour; big hair; neon sci-fi; cartoon explosions; shiny costumes
+  creative_brief: "Dirty Pair eighties anime look with Tsuneo Tominaga designs: glamorous space agents, big hair, shiny costumes, neon sci-fi cities and cartoonish explosions. Carry it through Eighties space glamour, big hair, neon sci-fi, cartoon explosions, shiny costumes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-309.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

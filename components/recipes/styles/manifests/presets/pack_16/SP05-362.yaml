@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-362
 packId: pack_16
-name: Glam Precision Rivalry Style
+name: Birdie Wing - Glam Precision Rivalry
 styleAnchors:
-  - Glam Precision Rivalry Style
-displayName: Glam Precision Rivalry
+  - Birdie Wing - Glam Precision Rivalry
+displayName: Birdie Wing - Glam Precision Rivalry
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Fencing anime of glamorous precision: white suits, mirrored masks, flashing blades and rivalries with style.'
-  subject_treatment: Keep the prompt's subject and action; give it elegant precision, sharp lines and a stylish rivalry.
-  color_and_tone: Crisp white suits and silver masks against deep navy or black with one rose accent.
-  lighting_and_shadow: Hard spotlights on the piste, bright glints on blades and masks.
-  texture_and_material: Quilted fencing whites, mesh masks and thin steel blades in clean line.
-  camera_and_composition: Long horizontal framings down the piste and tight close-ups where the blades cross.
-  atmosphere_and_mood: Glamorous and competitive, two rivals trading elegant, lethal gestures.
-  rendering_and_quality: Sleek sports anime with sharp highlights and precise motion.
-  key_features: white suits; mesh masks; blade glints; long piste
-  creative_brief: "Fencing anime of glamorous precision: white suits, mirrored masks, flashing blades and rivalries with style. Carry it through white suits, mesh masks, blade glints, long piste. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair.
+  color_and_tone: Rainbow trails, fairway green, sunset gold and glossy black.
+  lighting_and_shadow: Dramatic backlight, rainbow trail glows and glamorous highlights.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Swing freezes, dramatic rival stares and glowing shot arcs.
+  atmosphere_and_mood: Keep the requested mood with glamorous dramatic rivalry.
+  rendering_and_quality: Glossy over-the-top sports television frame with glamorous theatrical drama.
+  key_features: Birdie Wing glam; rainbow trails; dramatic rivalry
+  creative_brief: "Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater. Carry it through Birdie Wing glam, rainbow trails, dramatic rivalry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-362.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

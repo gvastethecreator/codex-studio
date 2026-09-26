@@ -5,31 +5,32 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-001',
-    name: 'Retro Pioneer Hero',
+    name: 'Osamu Tezuka - Retro Pioneer Hero',
+    displayName: 'Osamu Tezuka - Retro Pioneer Hero',
+    styleAnchors: ['Osamu Tezuka - Retro Pioneer Hero'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use sturdy silhouettes, a few expressive marks and emphatic held cel masses; do not assign a role or add props.',
+        'Preserve the requested identity, count, pose and action; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces.',
       color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use faded warm primaries, softened cream, charcoal and airbrushed midtones. Separate neighboring hues into readable flat cel regions.',
+        'Early color television palette: primary red, sky blue, warm yellow and cream, slightly faded.',
       lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as decisive two-step shadow blocks with a narrow rim only on already lit edges; do not add a source or glow.',
+        'Flat even light with simple single-tone cel shadows and occasional speed-line glows.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply fine acetate grain, lightly dry-brushed background paint and barely visible film dust as image-level treatment only, without hiding small details.',
+        'Thick soft ink outlines, flat cel paint, grainy 16mm film softness and slight color bleed.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use clear diagonals and held-shape pauses inside the requested arrangement; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through alternating broad strokes and quiet gaps; do not add a narrative beat.',
+        'Simple staged compositions, heroic poses against sky, pans over static painted backgrounds.',
+      atmosphere_and_mood: 'Keep the requested mood with optimistic pioneering adventure.',
       rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use bold ink hierarchy, clear color separations and subdued background paint; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Charming early television cel frame with limited-animation economy and warmth.',
       key_features:
-        'broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust.',
+        'Osamu Tezuka roundness; big simple eyes; limited animation; flat painted skies; early TV color',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use broad, confident ink contours with firm dark turns and open interior shapes; sturdy silhouettes, a few expressive marks and emphatic held cel masses; decisive two-step shadow blocks with a narrow rim only on already lit edges; fine acetate grain, lightly dry-brushed background paint and barely visible film dust. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies. Carry it through Osamu Tezuka roundness, big simple eyes, limited animation, flat painted skies, early TV color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -64,901 +65,767 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-311',
-    name: 'Rusted Eco Hope Style',
-    displayName: 'Rusted Eco Hope',
-    styleAnchors: ['Rusted Eco Hope Style'],
+    name: 'Future Boy Conan - Rusted Eco Hope',
+    displayName: 'Future Boy Conan - Rusted Eco Hope',
+    styleAnchors: ['Future Boy Conan - Rusted Eco Hope'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Hayao Miyazaki television animation as in Future Boy Conan (1978): simple bouncy character designs, rusted post-apocalyptic machines, sunlit islands and sea, and elastic action.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use uneven outer marks around intact, readable silhouettes and stable anatomy; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use muted oxide red, olive, warm stone and cloudy blue. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as broad, low-chroma cel shadows with a firm silhouette edge; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with early Miyazaki designs, round faces, dot eyes, sturdy bodies and exaggerated elastic running and leaping.',
+      color_and_tone: 'Sea blue, island green, rust orange and warm sunlit cream.',
+      lighting_and_shadow: 'Bright outdoor daylight with simple cel shadows and sparkling sea.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte pigment mottling, sparse dry brush and fine transfer grain as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use wide quiet intervals and low-contrast transitions within the requested crop; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through weathered mark texture and spacious value transitions; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use sparse, aged-looking marks while keeping faces, edges and small forms legible; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Wide seaside vistas, dynamic chases across machines and cliffs.',
+      atmosphere_and_mood: 'Keep the requested mood with hopeful rugged adventure.',
+      rendering_and_quality: 'Lively 1978 hand-drawn television frame with energetic acting.',
+      key_features: 'Early Miyazaki TV; rusted machines; island sea; elastic action; round faces',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use slightly broken dry-brush contours and softly weathered pigment edges; uneven outer marks around intact, readable silhouettes and stable anatomy; broad, low-chroma cel shadows with a firm silhouette edge; matte pigment mottling, sparse dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki television animation as in Future Boy Conan (1978): simple bouncy character designs, rusted post-apocalyptic machines, sunlit islands and sea, and elastic action. Carry it through Early Miyazaki TV, rusted machines, island sea, elastic action, round faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-003',
-    name: 'Jazzy Rogue Heist Rhythm Style',
-    displayName: 'Jazzy Rogue Heist Rhythm',
-    styleAnchors: ['Jazzy Rogue Heist Rhythm Style'],
+    name: 'Lupin III - Jazzy Rogue Heist Rhythm',
+    displayName: 'Lupin III - Jazzy Rogue Heist Rhythm',
+    styleAnchors: ['Lupin III - Jazzy Rogue Heist Rhythm'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a thief in a red or green jacket with a narrow tie, a bearded gunman in a fedora, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use relaxed contour turns, carefully placed interior marks and no imposed gesture; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use ink navy, smoky slate, warm amber and a small brass-like accent. Separate neighboring hues into readable flat cel regions.',
+        'Preserve the requested identity, count, pose and action; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits.',
+      color_and_tone: 'Muted seventies palette, mustard, teal, burgundy and warm night browns.',
       lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as narrow hard cel slices following the stated key light, with no added spotlight; do not add a source or glow.',
+        'Simple cel light with moody night streetlamps and spotlight searchlights.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply dry ink edges over softly brushed matte color fields as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use short and long marks alternating around existing shapes, leaving clear negative gaps; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through syncopated line pace and small intervals; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use lively contour timing with clean, bounded shadows and restrained grain; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Playful caper staging, rooftop chases, cars skidding through narrow streets.',
+      atmosphere_and_mood: 'Keep the requested mood with cool jazzy mischief.',
+      rendering_and_quality: 'Loose stylish 1970s television frame with caricature swagger.',
       key_features:
-        'alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields.',
+        'Monkey Punch lanky caricature; jazz caper; vintage cars; sketchy seventies cel',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities. Carry it through Monkey Punch lanky caricature, jazz caper, vintage cars, sketchy seventies cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-004',
-    name: 'Melancholy Astral Opera Style',
-    displayName: 'Melancholy Astral Opera',
-    styleAnchors: ['Melancholy Astral Opera Style'],
+    name: 'Rintaro - Melancholy Astral Opera',
+    displayName: 'Rintaro - Melancholy Astral Opera',
+    styleAnchors: ['Rintaro - Melancholy Astral Opera'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Rintaro late-seventies and eighties feature direction: operatic space melancholy, backlit glowing cel effects, long elegant figures, starfields and grand tragic staging.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use graceful contour arcs and restrained facial detail without changing proportions; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use dusky indigo, muted violet, pale rose and bone highlights. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as large, low-contrast cel fields cut by a few decisive contour shadows; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with slender elegant figures, long hair and coats, sad luminous eyes and graceful poses.',
+      color_and_tone: 'Deep violet space, nebula magenta, gold glow and cold blue shadow.',
+      lighting_and_shadow: 'Backlit cel glow effects, starlight halos and dramatic rim light.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply soft airbrushed color transitions behind crisp ink and a trace of cel grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use spacious intervals and long visual arcs within the supplied composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through open spacing and softened color transitions; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use sharp foreground linework clearly separated from softened painted fields; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Grand theatrical wides, silhouettes against nebulae, slow dramatic push-ins.',
+      atmosphere_and_mood: 'Keep the requested mood with operatic cosmic melancholy.',
+      rendering_and_quality: 'Lush 1980s theatrical cel frame with glowing backlit effects.',
       key_features:
-        'long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain.',
+        'Rintaro opera; backlit glow; nebula violet; elegant sad figures; theatrical staging',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Rintaro late-seventies and eighties feature direction: operatic space melancholy, backlit glowing cel effects, long elegant figures, starfields and grand tragic staging. Carry it through Rintaro opera, backlit glow, nebula violet, elegant sad figures, theatrical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-008',
-    name: 'Neon Procedural Irony Style',
-    displayName: 'Neon Procedural Irony',
-    styleAnchors: ['Neon Procedural Irony Style'],
+    name: 'Mamoru Oshii - Neon Procedural Irony',
+    displayName: 'Mamoru Oshii - Neon Procedural Irony',
+    styleAnchors: ['Mamoru Oshii - Neon Procedural Irony'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Mamoru Oshii late-eighties direction: deadpan procedural scenes in bureaucratic spaces, long static shots, basset hounds and fish in unexpected places, neon cities reflected in water.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simplified shapes with deliberate hard edges and a few precise interior marks; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use deep charcoal, electric cyan and one warm accent. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as angular flat shadow blocks and clipped highlights, without inventing a glow source; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic understated designs, tired faces, uniforms and suits, standing still in long pauses.',
+      color_and_tone: 'Neon cyan and magenta over drab office greys and deep water blues.',
+      lighting_and_shadow: 'Fluorescent office light, neon reflections and dim canal glow.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply flat printed color areas with discreet, evenly distributed screen grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use small repeated marks separated by clean, irregular beats; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through dry contrast between precise marks and abrupt accents; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use crisp edges, limited interior detail and no soft digital bloom; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain.',
+        'Long static wide shots, symmetrical corridors, reflections and repeated desks.',
+      atmosphere_and_mood: 'Keep the requested mood with dry philosophical irony.',
+      rendering_and_quality: 'Measured late-1980s cel frame with deliberate stillness and detail.',
+      key_features: 'Mamoru Oshii stillness; bureaucratic spaces; neon reflections; deadpan irony',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise squared contours interrupted by compact, abrupt accent strokes; simplified shapes with deliberate hard edges and a few precise interior marks; angular flat shadow blocks and clipped highlights, without inventing a glow source; flat printed color areas with discreet, evenly distributed screen grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Mamoru Oshii late-eighties direction: deadpan procedural scenes in bureaucratic spaces, long static shots, basset hounds and fish in unexpected places, neon cities reflected in water. Carry it through Mamoru Oshii stillness, bureaucratic spaces, neon reflections, deadpan irony. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-009',
-    name: 'Hyper-Dense Cyber-Retro Infrastructure Style',
-    displayName: 'Hyper-Dense Cyber-Retro Infrastructure',
-    styleAnchors: ['Hyper-Dense Cyber-Retro Infrastructure Style'],
+    name: 'Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure',
+    displayName: 'Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure',
+    styleAnchors: ['Koji Morimoto - Hyper-Dense Cyber-Retro Infrastructure'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Koji Morimoto and Studio 4°C late-eighties OVA look: hyper-dense hand-drawn machinery, tangled pipes, cables and signs, rough energetic lines and retro-future cities.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use a simple, dominant silhouette with detail concentrated only on forms already present; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use blue-black, cool gray and restrained cyan or magenta accents. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as layered hard cel shapes with narrow source-matched edge light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with loose energetic Morimoto designs, wiry figures, scruffy hair and industrial clothes dwarfed by machinery.',
+      color_and_tone: 'Rust, sodium orange, grimy teal and deep shadow blue.',
+      lighting_and_shadow: 'Smoky industrial light, sodium lamps and exhaust-lit haze.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply fine ink grain and barely visible scan-like texture without accumulated noise as image-level treatment only, without hiding small details.',
+        'Hand-drawn dense line detail, painted cel grime, smoke and cable tangles.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use busy detail pockets balanced by broad clear planes within the original layout; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through localized detail density against broad clear planes; do not add a narrative beat.',
+        'Vertical canyon compositions, speeding bikes through machinery, fisheye moments.',
+      atmosphere_and_mood: 'Keep the requested mood with restless industrial energy.',
       rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use preserve the outer silhouette and keep dense linework subordinate to it; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Obsessively detailed hand-drawn OVA frame with rough energetic lines.',
       key_features:
-        'dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise.',
+        'Koji Morimoto density; pipes and cables; retro-future city; rough lines; smoky haze',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use dense nested contours with tightly controlled clusters of fine interior marks; a simple, dominant silhouette with detail concentrated only on forms already present; layered hard cel shapes with narrow source-matched edge light; fine ink grain and barely visible scan-like texture without accumulated noise. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Koji Morimoto and Studio 4°C late-eighties OVA look: hyper-dense hand-drawn machinery, tangled pipes, cables and signs, rough energetic lines and retro-future cities. Carry it through Koji Morimoto density, pipes and cables, retro-future city, rough lines, smoky haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-010',
-    name: 'Round Adventure Slapstick Style',
-    displayName: 'Round Adventure Slapstick',
-    styleAnchors: ['Round Adventure Slapstick Style'],
+    name: 'Akira Toriyama - Round Adventure Slapstick',
+    displayName: 'Akira Toriyama - Round Adventure Slapstick',
+    styleAnchors: ['Akira Toriyama - Round Adventure Slapstick'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a spiky-haired boy with a monkey tail and power pole, a flying orange cloud, dragon balls with stars, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Akira Toriyama early Dragon Ball manga and 1986 anime look: round clean shapes, cute chunky characters, rounded vehicles and capsule machines, desert adventures and slapstick martial arts.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use broad curved groupings and abbreviated interior marks without reshaping the subject; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use clear vermilion, soft yellow, ink blue and paper cream. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as one or two simple cel-shadow shapes with restrained highlights; do not add a source or glow.',
-      texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte opaque paint with slight paper-like color variation as image-level treatment only, without hiding small details.',
+        'Preserve the requested identity, count, pose and action; draw people with Toriyama round chunky designs, big feet, simple clean lines, spiky or bowl hair and cheerful slapstick expressions.',
+      color_and_tone: 'Bright primaries, desert tan, sky blue and orange accents.',
+      lighting_and_shadow: 'Sunny clean daylight with simple one-tone cel shadows under figures.',
+      texture_and_material: 'Clean crisp lines, flat cel color, rounded mechanical design details.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use compact pauses between simple graphic masses, without changing the pose; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through rounded marks and simplified shadow rhythm; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use uncluttered, expressive drawing with stable anatomy and clean paint edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Playful dynamic action framing, wide deserts and cartoon chase shots.',
+      atmosphere_and_mood: 'Keep the requested mood with playful goofy adventure.',
+      rendering_and_quality: 'Crisp 1980s television frame with Toriyama clean design clarity.',
       key_features:
-        'rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation.',
+        'Akira Toriyama roundness; chunky machines; slapstick martial arts; clean lines',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use rounded continuous ink contours, softened corners and occasional thick outline accents; broad curved groupings and abbreviated interior marks without reshaping the subject; one or two simple cel-shadow shapes with restrained highlights; matte opaque paint with slight paper-like color variation. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Akira Toriyama early Dragon Ball manga and 1986 anime look: round clean shapes, cute chunky characters, rounded vehicles and capsule machines, desert adventures and slapstick martial arts. Carry it through Akira Toriyama roundness, chunky machines, slapstick martial arts, clean lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-301',
-    name: 'Analog Space Opera Command Style',
-    displayName: 'Analog Space Opera Command',
-    styleAnchors: ['Analog Space Opera Command Style'],
+    name: 'Space Battleship Yamato - Analog Space Opera Command',
+    displayName: 'Space Battleship Yamato - Analog Space Opera Command',
+    styleAnchors: ['Space Battleship Yamato - Analog Space Opera Command'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-hulled battleship with a wave motion gun, existing franchise characters, series logo or title lettering, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Leiji Matsumoto designed Space Battleship Yamato (1974): massive naval battleships in space drawn with dense mechanical detail, stern commanders on dim bridges, and heroic sacrifice.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use clear outer contours and spare inner marks that describe only existing structure; do not assign a role or add props.',
+        'Preserve the requested identity, count, pose and action; draw people with Leiji designs, long faces, narrow eyes, stern expressions and military uniforms with high collars.',
       color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use deep ink blue, pale bone, muted violet and a restrained warm accent. Separate neighboring hues into readable flat cel regions.',
+        'Deep space black-blue, battleship rust red, steel grey and orange beam light.',
       lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as large dark cel groupings with thin highlights only along edges reached by the requested light; do not add a source or glow.',
+        'Dim bridge instrument glow, beam flashes and explosions lighting hulls.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte painted fields, gentle airbrush transitions and subtle analog transfer grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use broad spaces around clustered shapes within the requested frame; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through scale contrast and broad spacing; do not add a narrative beat.',
+        'Low angles of colossal ships, bridge silhouettes against viewports, fleet formations.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn heroic resolve.',
       rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use broad value design, crisp focal contours and quiet background texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain.',
+        'Classic 1970s space opera television frame with detailed mechanical painting.',
+      key_features: 'Leiji Matsumoto battleships; stern commanders; bridge glow; space naval opera',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use confident weighty outlines paired with broad, quiet value masses; clear outer contours and spare inner marks that describe only existing structure; large dark cel groupings with thin highlights only along edges reached by the requested light; matte painted fields, gentle airbrush transitions and subtle analog transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Leiji Matsumoto designed Space Battleship Yamato (1974): massive naval battleships in space drawn with dense mechanical detail, stern commanders on dim bridges, and heroic sacrifice. Carry it through Leiji Matsumoto battleships, stern commanders, bridge glow, space naval opera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-302',
-    name: 'Melancholic Space Corsair Style',
-    displayName: 'Melancholic Space Corsair',
-    styleAnchors: ['Melancholic Space Corsair Style'],
+    name: 'Captain Harlock - Melancholic Space Corsair',
+    displayName: 'Captain Harlock - Melancholic Space Corsair',
+    styleAnchors: ['Captain Harlock - Melancholic Space Corsair'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a scarred eyepatched captain, a skull-and-crossbones pirate flag with the series crest, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Leiji Matsumoto Captain Harlock look (1978): gothic space pirate galleons, skull motifs, long capes in star wind, gaunt romantic faces and melancholy heroism.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use flowing silhouette lines with overlapping value planes, without adding costume shapes; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use plum, ink blue, desaturated rose and parchment. Separate neighboring hues into readable flat cel regions.',
+        'Preserve the requested identity, count, pose and action; draw people with gaunt elongated Leiji faces, long hair, sorrowful eyes and flowing capes and boots.',
+      color_and_tone: 'Deep space indigo, bone white, blood red and green instrument glow.',
       lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as long, clean shadow bands with one restrained intermediate cel tone; do not add a source or glow.',
+        'Dim cabin glow, starfield backlight and dramatic silhouettes against the void.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply soft brushed transitions behind decisive ink edges with fine film grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use a long sweep crossed by short angular accents inside the existing framing; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through line pace and balanced shadow bands; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use retain broad flat shadows and graceful line taper without glossy modeling; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes; long, clean shadow bands with one restrained intermediate cel tone; soft brushed transitions behind decisive ink edges with fine film grain.',
+        'Heroic silhouettes at ship prows, sweeping capes, galleons against stars.',
+      atmosphere_and_mood: 'Keep the requested mood with romantic melancholy defiance.',
+      rendering_and_quality: 'Moody 1978 hand-painted television frame with gothic romance.',
+      key_features: 'Leiji gothic corsairs; flowing capes; gaunt faces; skull motifs; starfield',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use tapered ink strokes, long curve returns and softly irregular contour ends; flowing silhouette lines with overlapping value planes, without adding costume shapes; long, clean shadow bands with one restrained intermediate cel tone; soft brushed transitions behind decisive ink edges with fine film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Leiji Matsumoto Captain Harlock look (1978): gothic space pirate galleons, skull motifs, long capes in star wind, gaunt romantic faces and melancholy heroism. Carry it through Leiji gothic corsairs, flowing capes, gaunt faces, skull motifs, starfield. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-303',
-    name: 'Celestial Journey Melancholy Style',
-    displayName: 'Celestial Journey Melancholy',
-    styleAnchors: ['Celestial Journey Melancholy Style'],
+    name: 'Galaxy Express 999 - Celestial Journey Melancholy',
+    displayName: 'Galaxy Express 999 - Celestial Journey Melancholy',
+    styleAnchors: ['Galaxy Express 999 - Celestial Journey Melancholy'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a tall blonde woman in a black fur hat and coat, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Leiji Matsumoto Galaxy Express 999 look as in the Rintaro film: steam trains crossing starry space, retro-future stations, tall elegant women, stubby comic men and melancholy journeys.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use delicate contours and small interior marks balanced against broad simple paint shapes; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use cool cobalt, lilac, pale cream and a muted rose accent. Separate neighboring hues into readable flat cel regions.',
+        'Preserve the requested identity, count, pose and action; draw people with Leiji contrast, tall elegant long-lashed figures beside short stubby round-faced men, in coats and hats.',
+      color_and_tone: 'Star-black, warm cabin amber, pale blue starlight and rich velvet red.',
       lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as two-value cel shading softened only where the requested light calls for it; do not add a source or glow.',
+        'Warm lamp-lit carriages glowing against the glittering starry darkness outside.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply translucent airbrush gradients with fine paper and transfer grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use open intervals between carefully grouped details within the requested crop; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through delicate linework and restrained contrast; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use thin, stable outlines with soft background paint and no unrequested light effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Train crossing starfields in silhouette, window framing, lonely stations.',
+      atmosphere_and_mood: 'Keep the requested mood with wistful cosmic melancholy.',
+      rendering_and_quality: 'Rich 1979 theatrical cel frame with glowing starlight.',
       key_features:
-        'fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain.',
+        'Leiji contrast designs; space steam train; lamp-lit carriages; starry melancholy',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use fine pencil-like ink edges softened by translucent color windows; delicate contours and small interior marks balanced against broad simple paint shapes; two-value cel shading softened only where the requested light calls for it; translucent airbrush gradients with fine paper and transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Leiji Matsumoto Galaxy Express 999 look as in the Rintaro film: steam trains crossing starry space, retro-future stations, tall elegant women, stubby comic men and melancholy journeys. Carry it through Leiji contrast designs, space steam train, lamp-lit carriages, starry melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-304',
-    name: 'Baroque Insurgent Melodrama Style',
-    displayName: 'Baroque Insurgent Melodrama',
-    styleAnchors: ['Baroque Insurgent Melodrama Style'],
+    name: 'Rose of Versailles - Baroque Insurgent Melodrama',
+    displayName: 'Rose of Versailles - Baroque Insurgent Melodrama',
+    styleAnchors: ['Rose of Versailles - Baroque Insurgent Melodrama'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Osamu Dezaki and Shingo Araki anime of Rose of Versailles (1979): baroque shojo melodrama, sparkling long-lashed eyes, flowing golden hair, roses and pastel freeze-frame postcard shots.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use nested marks following existing contours and surface details, not adding decoration; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use deep burgundy, black, ivory and antique gold. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as alternating narrow highlights and deep cel shapes aligned to the stated light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Araki and Himeno designs, long lashes, sparkling eyes, flowing hair, military uniforms and gowns.',
+      color_and_tone: 'Rose pink, gold, royal blue, cream and deep crimson.',
+      lighting_and_shadow: 'Soft glowing highlights, sparkle flares and dramatic backlight.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply opaque pigment, selective engraved hatching and subtle print grain as image-level treatment only, without hiding small details.',
+        'Hand-painted cels, pastel chalk-like postcard freeze frames and petal effects.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use interlaced curves and angular turns contained within the supplied composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through varied line scale and dense yet legible edges; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use balance ornate detail with large readable forms and clean cel edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Split screens, triple-take zooms, freeze frames as painted postcards.',
+      atmosphere_and_mood: 'Keep the requested mood with passionate tragic romance.',
+      rendering_and_quality: 'Lush 1979 Dezaki television frame with painterly freeze frames.',
       key_features:
-        'ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain.',
+        'Dezaki postcard freeze; Araki sparkle eyes; roses; baroque uniforms; melodrama',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Osamu Dezaki and Shingo Araki anime of Rose of Versailles (1979): baroque shojo melodrama, sparkling long-lashed eyes, flowing golden hair, roses and pastel freeze-frame postcard shots. Carry it through Dezaki postcard freeze, Araki sparkle eyes, roses, baroque uniforms, melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-305',
-    name: 'Neon Sci-Fi Slapstick Rom-Com Style',
-    displayName: 'Neon Sci-Fi Slapstick Rom-Com',
-    styleAnchors: ['Neon Sci-Fi Slapstick Rom-Com Style'],
+    name: 'Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com',
+    displayName: 'Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com',
+    styleAnchors: ['Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a green-haired oni girl in a tiger-striped bikini with horns, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Rumiko Takahashi Urusei Yatsura anime (1981): bouncy eighties rom-com cel, pastel suburban Tokyo, aliens and folklore spirits, big comic expressions and slapstick chases.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simple flexible line shapes and legible details while preserving requested proportions; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use electric cyan, coral, lavender and charcoal. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as simple flat cel shadows with bright accents restricted to actual light sources; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Takahashi rounded faces, large simple eyes, springy hair and exaggerated comic reactions.',
+      color_and_tone: 'Pastel candy colors, sky blue, lime green and electric yellow.',
+      lighting_and_shadow: 'Bright suburban daylight and electric sparkling comedy flashes.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply smooth flat paint with faint analog grain and no plastic gloss as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use small and large shape accents alternating within the given framing; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through buoyancy through stroke timing while the requested emotional register leads; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use bright, two-dimensional hand-inked forms with controlled highlights; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss.',
+        'Energetic chase framing, comedic crowd shots, sudden close-up reactions.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic lovesick comedy.',
+      rendering_and_quality: 'Cheerful 1980s television cel frame with springy comic timing.',
+      key_features: 'Rumiko Takahashi rom-com; pastel suburb; aliens and spirits; slapstick chases',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Rumiko Takahashi Urusei Yatsura anime (1981): bouncy eighties rom-com cel, pastel suburban Tokyo, aliens and folklore spirits, big comic expressions and slapstick chases. Carry it through Rumiko Takahashi rom-com, pastel suburb, aliens and spirits, slapstick chases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-306',
-    name: 'Adult Domestic Warmth Style',
-    displayName: 'Adult Domestic Warmth',
-    styleAnchors: ['Adult Domestic Warmth Style'],
+    name: 'Maison Ikkoku - Adult Domestic Warmth',
+    displayName: 'Maison Ikkoku - Adult Domestic Warmth',
+    styleAnchors: ['Maison Ikkoku - Adult Domestic Warmth'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Rumiko Takahashi Maison Ikkoku anime (1986): gentle adult romance in an old wooden boarding house, soft Akemi Takada designs, sunset town streets and everyday domestic detail.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use understated interior marks that retain subtle expression, identity and material clues; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use warm gray, faded umber, muted rose and cream. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as broad soft value pools bounded by simple cel edges and matched to the stated light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw adults with soft Takada designs, gentle eyes, natural hair and everyday eighties clothes and aprons.',
+      color_and_tone: 'Warm sunset orange, faded wood browns, soft greens and cream.',
+      lighting_and_shadow: 'Sunset light through windows, warm kitchen lamps and evening shadows.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte pigment, delicate paper grain and low-intensity airbrush transitions as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use human-scale intervals and uncomplicated layers within the original crop; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through softened edges and subtle value changes; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use observed, restrained linework with stable colors and no photographic modeling; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Domestic interiors, porch conversations and quiet townscape wides at dusk.',
+      atmosphere_and_mood: 'Keep the requested mood with tender adult warmth.',
+      rendering_and_quality: 'Gentle 1980s television cel frame with lived-in detail.',
       key_features:
-        'quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions.',
+        'Maison Ikkoku warmth; Takada designs; boarding house; sunset town; everyday detail',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Rumiko Takahashi Maison Ikkoku anime (1986): gentle adult romance in an old wooden boarding house, soft Akemi Takada designs, sunset town streets and everyday domestic detail. Carry it through Maison Ikkoku warmth, Takada designs, boarding house, sunset town, everyday detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-307',
-    name: 'Summer Sports Melodrama Style',
-    displayName: 'Summer Sports Melodrama',
-    styleAnchors: ['Summer Sports Melodrama Style'],
+    name: 'Mitsuru Adachi - Summer Sports Melodrama',
+    displayName: 'Mitsuru Adachi - Summer Sports Melodrama',
+    styleAnchors: ['Mitsuru Adachi - Summer Sports Melodrama'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use clear weight transfer along the requested movement without adding a pose or activity; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use sun-warmed primary hues, deep blue and warm white. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as hard cel planes following the stated light, with brief accents only at existing motion points; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms.',
+      color_and_tone: 'Summer blue, field green, dusty brown diamond and cream.',
+      lighting_and_shadow: 'Bright summer sun with soft cel shadows and heat haze.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply dry background brush and light cel-transfer grain as image-level treatment only, without hiding small details.',
+        'Clean minimal lines, sparse detail, empty skies and cicada-heavy stillness.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use crossing gesture curves and settled rests inside the supplied composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through mark tempo and clear direction of existing movement; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use stable anatomy at action extremes with crisp contours and bounded effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Empty sky cutaways, quiet framing of objects, wide fields with small figures.',
+      atmosphere_and_mood: 'Keep the requested mood with understated summer melancholy.',
+      rendering_and_quality: 'Understated 1980s cel frame with calm minimal line work.',
       key_features:
-        'elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain.',
+        'Mitsuru Adachi minimalism; empty skies; summer baseball; gentle faces; silence',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion. Carry it through Mitsuru Adachi minimalism, empty skies, summer baseball, gentle faces, silence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-308',
-    name: 'Eighties Neon Precision Noir Style',
-    displayName: 'Eighties Neon Precision Noir',
-    styleAnchors: ['Eighties Neon Precision Noir Style'],
+    name: 'City Hunter - Eighties Neon Precision Noir',
+    displayName: 'City Hunter - Eighties Neon Precision Noir',
+    styleAnchors: ['City Hunter - Eighties Neon Precision Noir'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red hatchback with a partner in a mallet gag, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use controlled proportions, sharp edge decisions and minimal interior marks; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use teal, fuchsia, cool gray and warm ivory. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as compact hard shadows and narrow highlight trims aligned to existing light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits.',
+      color_and_tone: 'Neon pink and cyan, night navy, chrome and warm skin tones.',
+      lighting_and_shadow: 'Neon night light, car headlights and reflections on glass towers.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply smooth opaque cel fields with slight analog color drift and fine grain as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use exact alignments and measured intervals within the requested layout; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through precise edges and cool restrained values; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use polished cel separation without modern 3D gloss or broad bloom; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Low angles under skyscrapers, car-side shots, gun-draw close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with cool urban swagger.',
+      rendering_and_quality: 'Stylish 1980s city-pop television frame with neon glamour.',
+      key_features: 'Tsukasa Hojo realism; eighties Shinjuku neon; city pop glamour; sharp designs',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use precise fine outlines, clean-cut color areas and selectively crisp highlights; controlled proportions, sharp edge decisions and minimal interior marks; compact hard shadows and narrow highlight trims aligned to existing light; smooth opaque cel fields with slight analog color drift and fine grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks. Carry it through Tsukasa Hojo realism, eighties Shinjuku neon, city pop glamour, sharp designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-309',
-    name: 'Explosive Space Glam Action Style',
-    displayName: 'Explosive Space Glam Action',
-    styleAnchors: ['Explosive Space Glam Action Style'],
+    name: 'Dirty Pair - Explosive Space Glam Action',
+    displayName: 'Dirty Pair - Explosive Space Glam Action',
+    styleAnchors: ['Dirty Pair - Explosive Space Glam Action'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Dirty Pair eighties anime look with Tsuneo Tominaga designs: glamorous space agents, big hair, shiny costumes, neon sci-fi cities and cartoonish explosions.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use show force transfer only through the pose and motion the prompt already describes; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use ink black, paper ivory and a focused red or blue accent. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as abrupt two-tone blocks and a bright cut only at an explicitly lit point; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with glamorous eighties designs, big voluminous hair, long legs, bright costumes and confident poses.',
+      color_and_tone: 'Hot pink, cyan, gold and deep space navy.',
+      lighting_and_shadow: 'Explosion flares, neon glow and glossy highlights on costumes.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply clean hand ink, brief dry-brush streaks and restrained cel grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use directional marks following only the movement already requested; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through contrast timing and sharp contour accents; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use sharp, bounded effects with the original action and silhouette intact; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Action poses with explosions behind, dynamic chases, low heroic angles.',
+      atmosphere_and_mood: 'Keep the requested mood with glamorous chaotic action.',
+      rendering_and_quality: 'Glossy eighties sci-fi television frame with bold highlights.',
       key_features:
-        'sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain.',
+        'Eighties space glamour; big hair; neon sci-fi; cartoon explosions; shiny costumes',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sharp tapered contours with split-second, hard-edged shadow cuts; show force transfer only through the pose and motion the prompt already describes; abrupt two-tone blocks and a bright cut only at an explicitly lit point; clean hand ink, brief dry-brush streaks and restrained cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Dirty Pair eighties anime look with Tsuneo Tominaga designs: glamorous space agents, big hair, shiny costumes, neon sci-fi cities and cartoonish explosions. Carry it through Eighties space glamour, big hair, neon sci-fi, cartoon explosions, shiny costumes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-310',
-    name: 'Competent Space Pulp Style',
-    displayName: 'Competent Space Pulp',
-    styleAnchors: ['Competent Space Pulp Style'],
+    name: 'Crusher Joe - Competent Space Pulp',
+    displayName: 'Crusher Joe - Competent Space Pulp',
+    styleAnchors: ['Crusher Joe - Competent Space Pulp'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Yoshikazu Yasuhiko designs as in Crusher Joe (1983): expressive realistic pencil-like drawing, loose soft line quality, grounded space pulp crews and lived-in ships.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use functional silhouettes and a few decisive internal marks without redesign; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use muted navy, slate, weathered ochre and ivory. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as stable shadow shapes with a clear light-to-dark break and little bloom; do not add a source or glow.',
-      texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte painted planes, dry background brush and faint film grain as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use steady visual balance and legible margins within the existing crop; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through stable forms and calm intervals; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use quietly precise cel drawing with controlled grain and no photoreal detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko warmth, expressive faces, soft lines, freckles, practical flight suits and rolled sleeves.',
+      color_and_tone: 'Orange flight suits, space navy, olive and warm ship interiors.',
+      lighting_and_shadow: 'Warm cockpit glow, cold starlight and bright engine flares on hulls.',
+      texture_and_material: 'Soft pencil-like lines on cel, painted ship interiors and grime.',
+      camera_and_composition: 'Crew shots in cramped cockpits, ship fly-bys, dynamic action.',
+      atmosphere_and_mood: 'Keep the requested mood with capable pulpy camaraderie.',
+      rendering_and_quality: 'Warm 1983 theatrical cel frame with Yasuhiko expressiveness.',
       key_features:
-        'compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain.',
+        'Yoshikazu Yasuhiko expressiveness; space pulp crew; lived-in ships; soft lines',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Yoshikazu Yasuhiko designs as in Crusher Joe (1983): expressive realistic pencil-like drawing, loose soft line quality, grounded space pulp crews and lived-in ships. Carry it through Yoshikazu Yasuhiko expressiveness, space pulp crew, lived-in ships, soft lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-312',
-    name: 'Elegant Eighties Heist Glam Style',
-    displayName: 'Elegant Eighties Heist Glam',
-    styleAnchors: ['Elegant Eighties Heist Glam Style'],
+    name: "Cat's Eye - Elegant Eighties Heist Glam",
+    displayName: "Cat's Eye - Elegant Eighties Heist Glam",
+    styleAnchors: ["Cat's Eye - Elegant Eighties Heist Glam"],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'three sisters in matching leotards, a cat-eye calling card, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop.",
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use elegant edge accents on existing shapes while retaining identity and clothing; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use teal, plum, champagne and charcoal. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as polished hard-edged cel highlights and narrow shadow slices matched to the light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits.',
+      color_and_tone: 'Night navy, moonlight cyan, pastel pink and gold.',
+      lighting_and_shadow: 'Moonlight through skylights, laser beams and gallery spotlights.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply smooth opaque paint with fine analog grain and no plastic sheen as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use asymmetrical line accents balanced inside the requested placement; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through controlled transitions between tapered lines and simple color fields; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use precise graphic linework, limited highlights and restrained 1980s transfer softness; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen.',
+        'Acrobatic silhouettes against moons, gallery interiors, rooftop leaps.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant romantic intrigue.',
+      rendering_and_quality: 'Glamorous 1980s city-pop television frame with graceful motion.',
+      key_features: 'Tsukasa Hojo elegance; night gallery heists; moonlight; city pop glamour',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop. Carry it through Tsukasa Hojo elegance, night gallery heists, moonlight, city pop glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-313',
-    name: 'Zodiac Cosmic Heroism Style',
-    displayName: 'Zodiac Cosmic Heroism',
-    styleAnchors: ['Zodiac Cosmic Heroism Style'],
+    name: 'Saint Seiya - Zodiac Cosmic Heroism',
+    displayName: 'Saint Seiya - Zodiac Cosmic Heroism',
+    styleAnchors: ['Saint Seiya - Zodiac Cosmic Heroism'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'bronze constellation cloth armor of named saints, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use long clean curves and small controlled marks while keeping silhouettes unchanged; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use midnight blue, soft gold and pale cream. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as clean cel rims on source-lit edges and distinct dark shape groupings; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses.',
+      color_and_tone: 'Gold, bronze, deep cosmic blue and aura violet.',
+      lighting_and_shadow: 'Cosmic aura glows, star sparkles and gleaming armor highlights.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply flat cel paint, broad restrained airbrush fields and fine print grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use radial line cadence around forms already present in the requested layout; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through curved accents and clear value contrast; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use crisp arcs and controlled color separation without added motifs; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain.',
+        'Dramatic close-ups, power poses with constellations behind, clashes.',
+      atmosphere_and_mood: 'Keep the requested mood with fervent cosmic heroism.',
+      rendering_and_quality: 'Dramatic 1980s television frame with Araki shine and sparkle.',
+      key_features: 'Shingo Araki faces; gleaming armor; cosmic aura; dramatic close-ups',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups. Carry it through Shingo Araki faces, gleaming armor, cosmic aura, dramatic close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-317',
-    name: 'Arcade Techno-Rebellion Style',
-    displayName: 'Arcade Techno-Rebellion',
-    styleAnchors: ['Arcade Techno-Rebellion Style'],
+    name: 'Hiroyuki Kitakubo - Arcade Techno-Rebellion',
+    displayName: 'Hiroyuki Kitakubo - Arcade Techno-Rebellion',
+    styleAnchors: ['Hiroyuki Kitakubo - Arcade Techno-Rebellion'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use strong silhouette edges with small graphic detail only on existing forms; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use dark indigo, cobalt, cyan and magenta accents. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as crisp cut cel shadows and narrow electric edge accents only where light exists; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines.',
+      color_and_tone: 'Arcade neon, electric purple, cyan and hot red on night black.',
+      lighting_and_shadow: 'CRT screen glow, neon signage and streaking headlights on wet streets.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply fine screen-print grain and subtle transfer shift without visible interface graphics as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use directional bands kept inside existing shapes and composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through high-energy color breaks and blocky mark timing; do not add a narrative beat.',
+        'Detailed mechanical close-ups, wild chases and crowded arcade and hospital interiors.',
+      atmosphere_and_mood: 'Keep the requested mood with rebellious techno mischief.',
       rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use high-contrast flat paint, compact effects and disciplined negative space; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics.',
+        'Energetic hand-drawn OVA frame with dense mechanical invention and rubbery acting.',
+      key_features: 'Hiroyuki Kitakubo acting; dense machinery; hacker mischief; arcade neon',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use blocky ink profiles, bright signal accents and short horizontal mark bands; strong silhouette edges with small graphic detail only on existing forms; crisp cut cel shadows and narrow electric edge accents only where light exists; fine screen-print grain and subtle transfer shift without visible interface graphics. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy. Carry it through Hiroyuki Kitakubo acting, dense machinery, hacker mischief, arcade neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-320',
-    name: 'Charismatic Space Rogue Pulp Style',
-    displayName: 'Charismatic Space Rogue Pulp',
-    styleAnchors: ['Charismatic Space Rogue Pulp Style'],
+    name: 'Space Adventure Cobra - Charismatic Space Rogue Pulp',
+    displayName: 'Space Adventure Cobra - Charismatic Space Rogue Pulp',
+    styleAnchors: ['Space Adventure Cobra - Charismatic Space Rogue Pulp'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-suited hero with a psychogun arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use robust outer shapes with sparse inner lines while preserving the requested design; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use coal, oxblood, cream and tawny accents. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as firm directional cel blocks with abrupt but readable transitions; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes.',
+      color_and_tone: 'Neon space purple, gold, red and glossy chrome.',
+      lighting_and_shadow: 'Harsh highlights, psychedelic backlight and glowing space nebulae.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply soft dry brush, slight paper tooth and fine film grain without frame damage as image-level treatment only, without hiding small details.',
+        'Hand-painted cels with glossy highlights and Dezaki pastel freeze frames.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use compact shape clusters balanced by open negative areas in the existing frame; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through ink contrast and crisp contour curls; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use poster-like value clarity with controlled roughness and unaltered subject detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Split screens, triple-take zooms and freeze-frame pastel postcards at key moments.',
+      atmosphere_and_mood: 'Keep the requested mood with swaggering pulp adventure.',
+      rendering_and_quality: 'Stylish 1982 hand-painted frame with Dezaki postcard effects.',
       key_features:
-        'roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage.',
+        'Buichi Terasawa designs; Dezaki freeze frames; psychedelic space; pulp glamour',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames. Carry it through Buichi Terasawa designs, Dezaki freeze frames, psychedelic space, pulp glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-315',
-    name: 'Angular Institutional Tragedy Style',
-    displayName: 'Angular Institutional Tragedy',
-    styleAnchors: ['Angular Institutional Tragedy Style'],
+    name: 'Zeta Gundam - Angular Institutional Tragedy',
+    displayName: 'Zeta Gundam - Angular Institutional Tragedy',
+    styleAnchors: ['Zeta Gundam - Angular Institutional Tragedy'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'white mobile suits with V-fin antennas, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Yoshikazu Yasuhiko designed Zeta Gundam (1985): angular mobile suits, colony interiors and military institutions, realistic soldiers in tragedy, sharp mid-eighties cel.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use rectilinear shadow planes applied to existing structures without adding architecture; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use blue gray, charcoal, pale stone and a small vermilion accent. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as flat, shallow cel bands with narrow strips of light matched to the described source; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, realistic proportions, expressive soft lines, flight suits and military uniforms.',
+      color_and_tone: 'Military blue, white, colony green and warning red.',
+      lighting_and_shadow: 'Artificial colony light, cockpit monitors and beam flashes.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte paint, fine even grain and no distressed texture as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use parallel alignments among shapes already present, preserving the original crop; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through measured gaps and restrained contrast; do not add a narrative beat.',
+        'Huge colony cylinder vistas, institutional courtyards and tight cockpit close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with tragic institutional pressure.',
       rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use geometric cel clarity with consistent edge weight and sparse highlights; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture; flat, shallow cel bands with narrow strips of light matched to the described source; matte paint, fine even grain and no distressed texture.',
+        'Serious mid-1980s television frame with detailed real-robot mechanical design.',
+      key_features: 'Yasuhiko designs; colony interiors; real robots; military tragedy',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use straight contour runs, hard corners and sparse angular breaks; rectilinear shadow planes applied to existing structures without adding architecture; flat, shallow cel bands with narrow strips of light matched to the described source; matte paint, fine even grain and no distressed texture. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Yoshikazu Yasuhiko designed Zeta Gundam (1985): angular mobile suits, colony interiors and military institutions, realistic soldiers in tragedy, sharp mid-eighties cel. Carry it through Yasuhiko designs, colony interiors, real robots, military tragedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-002',
-    name: 'Vintage Mechanical Grandeur Style',
-    displayName: 'Vintage Mechanical Grandeur',
-    styleAnchors: ['Vintage Mechanical Grandeur Style'],
+    name: 'Go Nagai - Vintage Mechanical Grandeur',
+    displayName: 'Go Nagai - Vintage Mechanical Grandeur',
+    styleAnchors: ['Go Nagai - Vintage Mechanical Grandeur'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a black-and-red super robot with a flying pilder cockpit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Go Nagai and Toei 1970s super robot animation as in Mazinger Z: colossal heroic robots with bold simple shapes, thick outlines, primary colors and fierce hot-blooded pilots.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use make visible structural boundaries legible without inventing seams or components; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use aged cream, graphite, bronze and deep blue. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as broad plane highlights and hard-edged half-tone shadows following the stated light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Nagai designs, angular fierce faces, thick eyebrows, big determined eyes and seventies pilot suits.',
+      color_and_tone: 'Primary red, blue, yellow and steel grey against dramatic skies.',
+      lighting_and_shadow: 'Flat seventies cel light with glowing beam attacks.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply dry-brushed paint, subtle cel texture and light film grain as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use slanted accents tracking existing forms within their original scale; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through layered value and careful line density; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use precise ink detail over broad flat paint, never metallic photorealism; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components; broad plane highlights and hard-edged half-tone shadows following the stated light; dry-brushed paint, subtle cel texture and light film grain.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Low heroic angles of giant robots, poses against sunsets.',
+      atmosphere_and_mood: 'Keep the requested mood with bombastic heroic grandeur.',
+      rendering_and_quality: 'Bold 1970s television frame with thick outlines and simple shapes.',
+      key_features: 'Go Nagai super robots; thick outlines; primary colors; hot-blooded poses',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use technical contour passes, fine double edges and small hatch marks at existing joins; make visible structural boundaries legible without inventing seams or components; broad plane highlights and hard-edged half-tone shadows following the stated light; dry-brushed paint, subtle cel texture and light film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Go Nagai and Toei 1970s super robot animation as in Mazinger Z: colossal heroic robots with bold simple shapes, thick outlines, primary colors and fierce hot-blooded pilots. Carry it through Go Nagai super robots, thick outlines, primary colors, hot-blooded poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-005',
-    name: 'Grounded Tactical Machinery Style',
-    displayName: 'Grounded Tactical Machinery',
-    styleAnchors: ['Grounded Tactical Machinery Style'],
+    name: 'Mobile Suit Gundam 0079 - Grounded Tactical Machinery',
+    displayName: 'Mobile Suit Gundam 0079 - Grounded Tactical Machinery',
+    styleAnchors: ['Mobile Suit Gundam 0079 - Grounded Tactical Machinery'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'white and blue mobile suits with V-fin antennas, a mono-eyed green enemy mobile suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Yoshikazu Yasuhiko and Kunio Okawara look of Mobile Suit Gundam (1979): real-robot military machines, soldiers with expressive faces, muddy battlefields and colonies.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simple, practical silhouettes and only the construction details already present; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use olive, concrete gray, dark navy and a restrained safety orange. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as compact cel shadows with clear value separation and few specular accents; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, expressive soft faces, realistic uniforms, and machines as industrial military hardware.',
+      color_and_tone: 'Olive drab, military grey, mud brown and hazard red.',
+      lighting_and_shadow: 'Cold dawn light, beam rifle flashes and green cockpit monitor glow.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply matte cel paint, restrained dry brush and fine transfer grain as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use clear nested shape zones within the supplied composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through focused restraint through clean grouping; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use legible, no-nonsense linework with minimal surface effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Squad shots in forests, cockpit views, machines crouching in mud.',
+      atmosphere_and_mood: 'Keep the requested mood with grounded war weariness.',
+      rendering_and_quality: 'Classic 1979 real-robot television frame with military grit.',
+      key_features: 'Yasuhiko and Okawara real robots; soldiers; mud; military hardware',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Yoshikazu Yasuhiko and Kunio Okawara look of Mobile Suit Gundam (1979): real-robot military machines, soldiers with expressive faces, muddy battlefields and colonies. Carry it through Yasuhiko and Okawara real robots, soldiers, mud, military hardware. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-006',
-    name: 'Pop Transformable Aerial Spectacle Style',
-    displayName: 'Pop Transformable Aerial Spectacle',
-    styleAnchors: ['Pop Transformable Aerial Spectacle Style'],
+    name: 'Macross - Pop Transformable Aerial Spectacle',
+    displayName: 'Macross - Pop Transformable Aerial Spectacle',
+    styleAnchors: ['Macross - Pop Transformable Aerial Spectacle'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'VF-1 fighter markings, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Haruhiko Mikimoto designs and Ichiro Itano missile circus as in Super Dimension Fortress Macross (1982): transforming jet fighters, idol singers, swirling missile trails and eighties pop.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use fluid outline motion while retaining anatomy, pose and the direction of action; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use vermilion, cobalt, yellow and cream. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as clear geometric cel shadows with one small highlight on source-lit edges; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Mikimoto designs, glossy big eyes with many highlights, feathered eighties hair and flight suits or idol outfits.',
+      color_and_tone: 'Sky blue, white contrails, pop pink and jet grey.',
+      lighting_and_shadow: 'Bright sky light, missile exhaust glow and stage spotlights.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply clean matte pigment with a faint analog grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use broad arcs inside existing silhouettes; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through lightness from line flow; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use open high-key color separation with hand-drawn contours and no 3D shine; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain.',
+        'Spiraling missile circus shots, cockpit views, transformation mid-dive.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring pop spectacle.',
+      rendering_and_quality: 'Dynamic 1980s television frame with Itano circus motion.',
+      key_features: 'Mikimoto eyes; Itano missile circus; transforming jets; idol pop',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long arcing contour strokes, crisp flat planes and open cel highlights; fluid outline motion while retaining anatomy, pose and the direction of action; clear geometric cel shadows with one small highlight on source-lit edges; clean matte pigment with a faint analog grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Haruhiko Mikimoto designs and Ichiro Itano missile circus as in Super Dimension Fortress Macross (1982): transforming jet fighters, idol singers, swirling missile trails and eighties pop. Carry it through Mikimoto eyes, Itano missile circus, transforming jets, idol pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-314',
-    name: 'Monumental Formation Sacrifice Style',
-    displayName: 'Monumental Formation Sacrifice',
-    styleAnchors: ['Monumental Formation Sacrifice Style'],
+    name: 'Gunbuster Finale - Monumental Formation Sacrifice',
+    displayName: 'Gunbuster Finale - Monumental Formation Sacrifice',
+    styleAnchors: ['Gunbuster Finale - Monumental Formation Sacrifice'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Hideaki Anno Gunbuster finale look (1988): black-and-white widescreen space opera, huge fleets in formation, stark silhouettes and tearful close-ups under enormous stakes.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use stable individual silhouettes and broad shape balance without changing subject count; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use deep red, navy, ochre and warm neutral. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as large simple blocks following the stated key light and existing forms; do not add a source or glow.',
-      texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply opaque cel paint, restrained background brushwork and fine film grain as image-level treatment only, without hiding small details.',
+        'Preserve the requested identity, count, pose and action; draw people with Mikimoto-derived designs, big glossy eyes, determined faces and flight suits, shown in monochrome.',
+      color_and_tone: 'Black and white only, with grey tones and bright white glare.',
+      lighting_and_shadow: 'Stark high-contrast white glare against pure black space.',
+      texture_and_material: 'Monochrome cel, film grain and letterboxed widescreen composition.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use balanced massing within the supplied layout; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through stable spacing and line weight; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use monumental value grouping with clear individual outlines and sparse texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Letterboxed widescreen formations, tiny figures on bridges, monumental silhouettes.',
+      atmosphere_and_mood: 'Keep the requested mood with monumental tearful sacrifice.',
+      rendering_and_quality: 'Stark monochrome 1988 OVA frame in widescreen letterbox.',
       key_features:
-        'heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count; large simple blocks following the stated key light and existing forms; opaque cel paint, restrained background brushwork and fine film grain.',
+        'Anno monochrome finale; widescreen fleets; stark silhouettes; tearful sacrifice',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use heavy unifying outer contours, broad simplified cels and reserved inner marks; stable individual silhouettes and broad shape balance without changing subject count; large simple blocks following the stated key light and existing forms; opaque cel paint, restrained background brushwork and fine film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Hideaki Anno Gunbuster finale look (1988): black-and-white widescreen space opera, huge fleets in formation, stark silhouettes and tearful close-ups under enormous stakes. Carry it through Anno monochrome finale, widescreen fleets, stark silhouettes, tearful sacrifice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-316',
-    name: 'Biomorphic Mist Ritual Style',
-    displayName: 'Biomorphic Mist Ritual',
-    styleAnchors: ['Biomorphic Mist Ritual Style'],
+    name: 'Aura Battler Dunbine - Biomorphic Mist Ritual',
+    displayName: 'Aura Battler Dunbine - Biomorphic Mist Ritual',
+    styleAnchors: ['Aura Battler Dunbine - Biomorphic Mist Ritual'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Yoshiyuki Tomino Aura Battler Dunbine look (1983): insect-like organic mecha, misty medieval fantasy world, fairy creatures and eighties Sunrise cel.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use soft irregular line turns that follow existing anatomy and materials; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use deep moss, mist gray, sea-glass teal and muted plum only. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as diffuse cel-value pools that preserve the prompt’s light direction; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with eighties Sunrise designs, soft faces, medieval armor and cloaks, beside insectoid machines.',
+      color_and_tone: 'Mist green, violet, earth brown and pearl white.',
+      lighting_and_shadow: 'Misty diffused light, glowing aura and dusky fantasy skies.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply soft wash-like image texture and blended edges, without changing depicted materials as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use flowing contour echoes inside the existing composition; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through translucent marks and variable edge softness; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use layered but legible contours with controlled blur and intact silhouette edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Wide misty landscapes, insect mecha silhouettes, rituals by lakes.',
+      atmosphere_and_mood: 'Keep the requested mood with strange mystic fantasy.',
+      rendering_and_quality: 'Eerie 1983 television frame with organic mecha detail.',
+      key_features: 'Dunbine insect mecha; misty fantasy realm; fairies; eighties Sunrise cel',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Yoshiyuki Tomino Aura Battler Dunbine look (1983): insect-like organic mecha, misty medieval fantasy world, fairy creatures and eighties Sunrise cel. Carry it through Dunbine insect mecha, misty fantasy realm, fairies, eighties Sunrise cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-318',
-    name: 'Psychedelic Demonic Horror Style',
-    displayName: 'Psychedelic Demonic Horror',
-    styleAnchors: ['Psychedelic Demonic Horror Style'],
+    name: 'Devilman 1972 - Psychedelic Demonic Horror',
+    displayName: 'Devilman 1972 - Psychedelic Demonic Horror',
+    styleAnchors: ['Devilman 1972 - Psychedelic Demonic Horror'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a winged devil hero with a black and white body, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Go Nagai Devilman Toei television look (1972): thick crude outlines, grotesque demons, psychedelic color flashes and seventies horror pulp.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use repeat line accents within existing shapes while preserving identity and proportions; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use crimson, violet and hot orange. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as alternating dark and saturated midtone cel bands, matched to the stated light; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Nagai seventies designs, thick eyebrows, angular faces and monstrous transformations.',
+      color_and_tone: 'Psychedelic magenta, acid green, blood red and black.',
+      lighting_and_shadow: 'Lurid colored flashes cutting through deep black shadow masses.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply hand-ink grain and tight halftone limited to the image surface as image-level treatment only, without hiding small details.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use repeated accents contained in existing forms; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through color vibration and tight contour repetition; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use stable contours around strong color shifts, with no scratches or lost detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
+      camera_and_composition: 'Low angles on demons, shocking zooms, warped horror framing.',
+      atmosphere_and_mood: 'Keep the requested mood with lurid demonic horror.',
+      rendering_and_quality: 'Raw 1970s television frame with psychedelic horror color.',
+      key_features: 'Go Nagai demons; thick crude outlines; psychedelic flashes; seventies horror',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use vivid alternating color planes, wavering contour echoes and compact optical hatch; repeat line accents within existing shapes while preserving identity and proportions; alternating dark and saturated midtone cel bands, matched to the stated light; hand-ink grain and tight halftone limited to the image surface. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Go Nagai Devilman Toei television look (1972): thick crude outlines, grotesque demons, psychedelic color flashes and seventies horror pulp. Carry it through Go Nagai demons, thick crude outlines, psychedelic flashes, seventies horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-007',
-    name: 'Wasteland Impact Legend Style',
-    displayName: 'Wasteland Impact Legend',
-    styleAnchors: ['Wasteland Impact Legend Style'],
+    name: 'Fist of the North Star - Wasteland Impact Legend',
+    displayName: 'Fist of the North Star - Wasteland Impact Legend',
+    styleAnchors: ['Fist of the North Star - Wasteland Impact Legend'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a hero with seven scars on his chest, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'A hand-inked cel look built around jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Tetsuo Hara Fist of the North Star look (1984): hyper-muscular heroes, detailed hatched anatomy, post-apocalyptic wastelands, punk raiders and exploding impact.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use forceful contour accents restricted to the requested pose and existing shapes; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use burnt red, charcoal, ochre and warm white. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as hard dark breaks and clear positive fields; do not add a source or glow.',
-      texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply dry brush and sparse pigment flecks kept away from small details as image-level treatment only, without hiding small details.',
+        'Preserve the requested identity, count, pose and action; draw people with Hara designs, massive muscles, hatched anatomy, square jaws and torn clothing.',
+      color_and_tone: 'Desert ochre, blood orange sky, leather black and steel grey.',
+      lighting_and_shadow: 'Harsh wasteland sun and dramatic backlight with impact flashes.',
+      texture_and_material: 'Hatched anatomy lines, painted cels, dust clouds and impact radiance.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use diagonal pressure through the movement already requested; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through line contrast and dry-brush edges; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use rugged but controlled ink and cel blocks with readable forms; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
-      key_features:
-        'jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details.',
+        'Low angles on massive figures, impact freeze frames, wasteland wides.',
+      atmosphere_and_mood: 'Keep the requested mood with stoic brutal legend.',
+      rendering_and_quality: 'Powerful 1984 television frame with Hara muscular detail.',
+      key_features: 'Tetsuo Hara muscles; hatched anatomy; wasteland punks; impact flashes',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Tetsuo Hara Fist of the North Star look (1984): hyper-muscular heroes, detailed hatched anatomy, post-apocalyptic wastelands, punk raiders and exploding impact. Carry it through Tetsuo Hara muscles, hatched anatomy, wasteland punks, impact flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-319',
-    name: 'Strategic Pop Duality Style',
-    displayName: 'Strategic Pop Duality',
-    styleAnchors: ['Strategic Pop Duality Style'],
+    name: 'Legend of the Galactic Heroes - Strategic Pop Duality',
+    displayName: 'Legend of the Galactic Heroes - Strategic Pop Duality',
+    styleAnchors: ['Legend of the Galactic Heroes - Strategic Pop Duality'],
     category: '1. 70s & 80s Retro Anime',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A hand-inked cel look built around clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects. Keep its identity in contour, paint grouping and restrained analog transfer.',
+        'Legend of the Galactic Heroes OVA look (1988): classical-music space opera, rival commanders in black and white uniforms, fleets as geometric formations and theatrical political drama.',
       subject_treatment:
-        'Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use separate requested forms through color grouping without implying extra subjects; do not assign a role or add props.',
-      color_and_tone:
-        'Keep explicitly requested colors and saturation. If none are specified, use bright primary hues and ink-dark accents. Separate neighboring hues into readable flat cel regions.',
-      lighting_and_shadow:
-        'Follow the requested light sources, direction and intensity. Shape shadows as clean opposing cel planes with consistent light direction; do not add a source or glow.',
+        'Preserve the requested identity, count, pose and action; draw people with elegant eighties OVA designs, refined faces, long hair and crisp military uniforms and capes.',
+      color_and_tone: 'Imperial black and silver, alliance green, gold and deep space navy.',
+      lighting_and_shadow: 'Grand hall light, bridge glow and fleet beam flashes.',
       texture_and_material:
-        'Keep depicted materials and their condition unchanged. Apply smooth matte paint with a trace of offset-print grain as image-level treatment only, without hiding small details.',
+        'Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, crop, layout and spatial relationships. Use contrasting planes arranged within the existing spatial relationships; add no inset, border or staging.',
-      atmosphere_and_mood:
-        'Preserve the requested context and mood. Express its visual rhythm through opposing color planes and clean geometry; do not add a narrative beat.',
-      rendering_and_quality:
-        'Finish as hand-drawn 2D cel illustration. Use balanced geometry, stable contours and restrained printed texture; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.',
+        'Formal compositions of commanders, grand fleets, chessboard-like battle maps.',
+      atmosphere_and_mood: 'Keep the requested mood with grand strategic drama.',
+      rendering_and_quality: 'Refined 1980s OVA frame with classical grandeur and formal symmetry.',
       key_features:
-        'clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain.',
+        'Galactic Heroes grandeur; rival commanders; fleet formations; classical space opera',
       creative_brief:
-        'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use clean graphic outlines, opposed flat color masses and paired highlight fragments; separate requested forms through color grouping without implying extra subjects; clean opposing cel planes with consistent light direction; smooth matte paint with a trace of offset-print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.',
+        "Legend of the Galactic Heroes OVA look (1988): classical-music space opera, rival commanders in black and white uniforms, fleets as geometric formations and theatrical political drama. Carry it through Galactic Heroes grandeur, rival commanders, fleet formations, classical space opera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

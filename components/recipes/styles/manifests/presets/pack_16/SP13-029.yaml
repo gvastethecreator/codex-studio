@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-029
 packId: pack_16
-name: Siege Breach Ember Anime
+name: Tetsuo Hara Keiji - Siege Breach Ember
 styleAnchors:
-  - Siege Breach Ember Anime
-displayName: Siege Breach Ember Anime
+  - Tetsuo Hara Keiji - Siege Breach Ember
+displayName: Tetsuo Hara Keiji - Siege Breach Ember
 category: 6. Samurai & Medieval
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - samurai-medieval
+  - reference-title
 visualDna:
-  aesthetic: 'Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap.'
-  subject_treatment: Keep the prompt's subject and setting; put it at a threshold being forced open, with fire and debris driving through the frame.
-  color_and_tone: Ember orange and ash grey against night blue, sparks as bright points.
-  lighting_and_shadow: Firelight from the breach, hard orange rims and deep blue shadow on the far side.
-  texture_and_material: Splintered wood, cracked stone, smoke and flying sparks drawn as bold effect animation.
-  camera_and_composition: Framed through the breach or from inside looking out at the flood of light and debris.
-  atmosphere_and_mood: Violent and desperate, the roar of a wall giving way and no time left to choose.
-  rendering_and_quality: Dynamic effects-heavy anime with readable silhouettes against the fire.
-  key_features: breaching gap; embers; fire rim light; debris effects
-  creative_brief: "Siege anime at the moment walls break: fire, splintered timber, embers and bodies of smoke pushing through a gap. Carry it through breaching gap, embers, fire rim light, debris effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair.
+  color_and_tone: Ink black with fire orange, ember red and smoke grey accents.
+  lighting_and_shadow: Firelight from burning gates, embers and dramatic rim light on muscles.
+  texture_and_material: Dense hatching, bold ink contour, smoke brush and ember flecks.
+  camera_and_composition: Heroic low angles, gate-breach wides and warlords towering over armies.
+  atmosphere_and_mood: Keep the requested mood with thunderous heroic fury.
+  rendering_and_quality: Powerful hatched samurai manga illustration with grand siege scale.
+  key_features: Tetsuo Hara warlords; hatched anatomy; burning gates; embers
+  creative_brief: "Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers. Carry it through Tetsuo Hara warlords, hatched anatomy, burning gates, embers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -53,10 +54,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-029.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -66,6 +71,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - samurai-medieval
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

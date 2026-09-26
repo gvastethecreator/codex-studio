@@ -5,927 +5,833 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-073',
-    name: 'Wandering Clockwork Hearth Style',
-    displayName: 'Wandering Clockwork Hearth',
-    styleAnchors: ['Wandering Clockwork Hearth Style'],
+    name: "Howl's Moving Castle - Wandering Clockwork Hearth",
+    displayName: "Howl's Moving Castle - Wandering Clockwork Hearth",
+    styleAnchors: ["Howl's Moving Castle - Wandering Clockwork Hearth"],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Measured linework: fine ruled contours, small angular details, and broad cel masses separated by an even visual cadence.',
+        "Hayao Miyazaki and Studio Ghibli feature animation as in Howl's Moving Castle: hand-painted poster-color backgrounds of Alsace-like towns and alpine meadows, ramshackle steampunk machines of patched metal, and simple warm character designs.",
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Model existing forms with articulated contours and regular line intervals; the mechanical rhythm belongs to drawing, never added parts.',
+        'Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, small dot-highlight eyes, soft noses, natural proportions and loose everyday clothes that move with the wind.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, slate blue and charcoal hold the field; muted amber and cream punctuate it in small, separated areas.',
+        'Meadow greens, sky cobalt, cream cumulus clouds, rust brown metal and warm hearth orange.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Set narrow warm highlights against cool ambient shadow, attached to supplied illumination and existing reflective surfaces.',
+        'Bright open daylight with soft cel shadows, glowing fire and window light inside cluttered rooms.',
       texture_and_material:
-        'Apply texture only to materials already present. Mix smooth painted planes with precise short hatching at complex edges; keep broad fills clean and material-neutral.',
+        'Hand-painted gouache backgrounds, clean thin ink cel lines, riveted scrap-metal detail and chimney smoke.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Repeat spacing and align value bands within existing forms; invent no machinery, repeated objects, or new axis.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Use crisp-to-open mark contrast as cadence only; carry the emotion the user supplied.',
+        'Wide painterly establishing shots with small figures, then warm medium shots inside cluttered homes.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle wonder and cozy magic.',
       rendering_and_quality:
-        'Keep focal contours precise, midtones open, and tiny dark marks sparse; leave flat areas free of speckle.',
+        'Classic hand-drawn Ghibli feature frame, painterly and warm, no digital gloss.',
       key_features:
-        'Measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals.',
+        'Ghibli gouache backgrounds; patched steampunk machines; simple warm faces; wind-blown cloth',
       creative_brief:
-        'Use measured contour beats; slate-and-amber split; crisp micro-hatch; evenly repeated value intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki and Studio Ghibli feature animation as in Howl's Moving Castle: hand-painted poster-color backgrounds of Alsace-like towns and alpine meadows, ramshackle steampunk machines of patched metal, and simple warm character designs. Carry it through Ghibli gouache backgrounds, patched steampunk machines, simple warm faces, wind-blown cloth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-074',
-    name: 'Skyglow Longing Drama Style',
-    displayName: 'Skyglow Longing Drama',
-    styleAnchors: ['Skyglow Longing Drama Style'],
+    name: 'Your Name - Skyglow Longing Drama',
+    displayName: 'Your Name - Skyglow Longing Drama',
+    styleAnchors: ['Your Name - Skyglow Longing Drama'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Set a broad silhouette against long, soft color transitions; primary edges stay firm while secondary fields dissolve gently.',
+        'Makoto Shinkai feature animation as in Your Name: photoreal-detailed painted Tokyo and countryside backgrounds, dazzling twilight skies with comets and lens flares, and clean Masayoshi Tanaka character designs.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Simplify only secondary contours into large readable shapes.',
+        'Preserve the requested identity, count, pose and action; draw people with clean slender Tanaka-style designs, large clear eyes with a single bright highlight, fine hair strands and modern everyday clothes.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, blend warm apricot, coral, and cream into cool lavender and blue; keep the division broad, not neon.',
+        'Magenta and violet twilight, gold magic-hour light, deep blue night and saturated cyan skies.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use wide softened illumination from the supplied source and gradual falloff; add no halo or glow source.',
+        'Magic-hour backlight, lens flares, light leaks and god rays glittering through every gap.',
       texture_and_material:
-        'Apply texture only to materials already present. Lay transparent washes behind firmer primary contours; keep grain subtle and even rather than visibly painterly.',
+        'Hyper-detailed digital background painting, crisp cel characters, sparkle particles and glass reflections.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Treat existing masses as elongated value zones with open intervals; add no horizon, framing device or distant object.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Let expansive gradients affect tonal scale only; impose no emotional reading.',
+        'Wide low-angle sky compositions, split-screen parallel shots, telephoto street views with compressed depth.',
+      atmosphere_and_mood: 'Keep the requested mood with aching longing and luminous hope.',
       rendering_and_quality:
-        'Separate the focal silhouette from open color fields without erasing surface detail; avoid bloom and edge fog.',
+        'Polished contemporary Shinkai frame with photographic depth and glowing post effects.',
       key_features:
-        'Broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones.',
+        'Makoto Shinkai skies; comet twilight; lens flares; detailed city backgrounds; clean designs',
       creative_brief:
-        'Use broad silhouette; apricot-to-violet transition; diffuse source light; open horizontal value zones. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Makoto Shinkai feature animation as in Your Name: photoreal-detailed painted Tokyo and countryside backgrounds, dazzling twilight skies with comets and lens flares, and clean Masayoshi Tanaka character designs. Carry it through Makoto Shinkai skies, comet twilight, lens flares, detailed city backgrounds, clean designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-075',
-    name: 'Rainlight Threshold Romance Style',
-    displayName: 'Rainlight Threshold Romance',
-    styleAnchors: ['Rainlight Threshold Romance Style'],
+    name: 'Weathering With You - Rainlight Threshold Romance',
+    displayName: 'Weathering With You - Rainlight Threshold Romance',
+    styleAnchors: ['Weathering With You - Rainlight Threshold Romance'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fine cel contours over translucent pastel glazes, with carefully controlled hard-to-soft edge transitions.',
+        'Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Soften selected outer edges while leaving identity-bearing contours clean.',
+        'Preserve the requested identity, count, pose and action; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, favor blush, pearl gray, winter blue, and one modest warm note in transparent overlapping fields.',
+        'Wet slate grey, neon reflections, storm blue and sudden gold sunlight on puddles.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Diffuse the supplied illumination and allow slight edge separation; reflect only from already reflective surfaces.',
+        'Overcast diffusion broken by sharp sunbeams, rain streaks catching light, glowing puddle reflections.',
       texture_and_material:
-        'Apply texture only to materials already present. Layer dilute pigment washes with restrained paper tooth; create no droplets, wet materials, or precipitation.',
+        'Detailed digital rain, droplet splashes, reflective asphalt, crisp cel characters over painted backgrounds.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let existing plane boundaries read as soft value thresholds; add no doorway, border or frame.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Use softness as surface treatment, not as romance or tenderness; preserve the requested mood.',
+        'Low puddle-level views, rooftop wides under enormous clouds, close shots of hands and droplets.',
+      atmosphere_and_mood: 'Keep the requested mood with wistful rainy romance.',
       rendering_and_quality:
-        'Keep primary features and thin contours legible under translucent color; avoid smearing or faux lens effects.',
+        'Glossy contemporary Shinkai frame with photographic rain detail and light bloom.',
       key_features:
-        'Hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges.',
+        'Shinkai rain; puddle reflections; sunbeams through clouds; detailed Tokyo; clean designs',
       creative_brief:
-        'Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds. Carry it through Shinkai rain, puddle reflections, sunbeams through clouds, detailed Tokyo, clean designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-077',
-    name: 'Mirror Identity Collapse Thriller Style',
-    displayName: 'Mirror Identity Collapse Thriller',
-    styleAnchors: ['Mirror Identity Collapse Thriller Style'],
+    name: 'Perfect Blue - Mirror Identity Collapse Thriller',
+    displayName: 'Perfect Blue - Mirror Identity Collapse Thriller',
+    styleAnchors: ['Perfect Blue - Mirror Identity Collapse Thriller'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Paired contour registers: a true edge and a partial reversed-value echo, with breaks where the two fail to align.',
+        'Satoshi Kon feature animation as in Perfect Blue: late-nineties Madhouse cel with grounded realistic designs, cramped apartments, TV studios and mirrors, where edits blur what is real.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Echo existing silhouettes or reflections only, never duplicate features or introduce a mirror.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic adult proportions, modest eyes, observed Japanese faces and ordinary clothes, never glamorous anime beauty.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, reuse muted indigo, olive, smoked gray, and pale ochre on opposing value sides instead of adding accent colors.',
+        'Faded nineties cel palette, muted pinks and beiges, dim fluorescent greens and sudden blood-red accents.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow the supplied source; reverse highlight and shadow only across reflective boundaries already present, with no new glints or lights.',
+        'Flat fluorescent room light and TV glow, harsh flash in stage scenes, heavy shadows in hallways.',
       texture_and_material:
-        'Apply texture only to materials already present. Separate transparent wash from narrow hard edges only on existing reflective materials; keep broken ink dry and sparse elsewhere.',
+        'Hand-painted cel on painted backgrounds, slight film grain, dust and old video softness.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Align partial reversed contours to existing axes or reflective planes without moving or flipping subjects.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Carry the requested emotion; perceptual dissonance comes only from contour and value reversal.',
+        'Match cuts through mirrors, reflections and screens, voyeuristic framing through doorways.',
+      atmosphere_and_mood: 'Keep the requested mood with paranoid unraveling tension.',
       rendering_and_quality:
-        'Maintain one primary contour for each form; keep secondary echoes partial, low-contrast, and subordinate to identity.',
+        'Precise realist 1990s theatrical cel animation frame with grounded observed acting.',
       key_features:
-        'Partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours.',
+        'Satoshi Kon realism; mirror reflections; nineties cel; paranoid staging; grounded faces',
       creative_brief:
-        'Use partial reversed contour; paired value polarity; existing-reflection echo; clear identity contours. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Satoshi Kon feature animation as in Perfect Blue: late-nineties Madhouse cel with grounded realistic designs, cramped apartments, TV studios and mirrors, where edits blur what is real. Carry it through Satoshi Kon realism, mirror reflections, nineties cel, paranoid staging, grounded faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-078',
-    name: 'Otomo Light-Trail Collapse Style',
-    displayName: 'Otomo Light-Trail Collapse',
-    styleAnchors: ['Otomo Light-Trail Collapse Style'],
+    name: 'Akira - Otomo Light-Trail Collapse',
+    displayName: 'Akira - Otomo Light-Trail Collapse',
+    styleAnchors: ['Akira - Otomo Light-Trail Collapse'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'the red motorcycle with capsule stickers, the red jacket with a pill emblem, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cut angular contour blocks through hard-edged cel planes; use short tapered directional marks only where existing edges support them.',
+        'Katsuhiro Otomo feature animation as in Akira: dense hand-drawn Neo-Tokyo megastructures, meticulous mechanical detail, realistic Japanese faces and red taillights smearing into light trails.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Sharpen leading or trailing edges without deforming forms or implying unrequested motion.',
+        'Preserve the requested identity, count, pose and action; draw people with Otomo realism, flat-nosed ordinary faces, small eyes, stocky believable bodies and bulky late-eighties jackets.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use compact cool blue and graphite fields, clean cream highlights, and at most one saturated warm or cyan accent.',
+        'Deep night blues and blacks, neon signage colors and signature saturated red.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow the given source light with crisp edge highlights and compressed dark shapes; add no flash, glow source, or impact effect.',
+        'Night city neon, streaking taillight trails, blinding white psychic flashes.',
       texture_and_material:
-        'Apply texture only to materials already present. Keep color fills smooth; restrict dry-brush and grain to a few material transitions already in the image.',
+        'Hand-painted cel with backlit light effects, meticulous architectural linework, rubble and debris.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Use strong diagonals only when supported by existing forms or requested action.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Treat edge compression as visual quality, not a collapse event; preserve the stated mood.',
+        'Low speeding tracking shots, vast aerial city views, collapse spreading across frames.',
+      atmosphere_and_mood: 'Keep the requested mood with kinetic apocalyptic energy.',
       rendering_and_quality:
-        'Keep primary silhouettes crisp and unbroken; avoid debris, blur, extra trails, and noisy edges.',
-      key_features:
-        'Angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast.',
+        'Dense 1988 theatrical hand-drawn animation frame with photographic backlight effects.',
+      key_features: 'Otomo detail; neon night city; red light trails; realistic faces; destruction',
       creative_brief:
-        'Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Katsuhiro Otomo feature animation as in Akira: dense hand-drawn Neo-Tokyo megastructures, meticulous mechanical detail, realistic Japanese faces and red taillights smearing into light trails. Carry it through Otomo detail, neon night city, red light trails, realistic faces, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-079',
-    name: 'Hyperkinetic Cosmic Velocity Style',
-    displayName: 'Hyperkinetic Cosmic Velocity',
-    styleAnchors: ['Hyperkinetic Cosmic Velocity Style'],
-    category: '4. Studio Masterpieces',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
-    style: {
-      aesthetic:
-        'Explicit velocity grammar: compressed forms lead into open space while fine contours lengthen into tapered smears along existing motion.',
-      subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Stretch contour rhythm only where motion is present, with no added action or afterimage.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, hold cobalt, midnight blue, and violet as deep fields with small white or cyan accents; honor any explicit palette.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep the supplied source; align bright rim emphasis with existing movement, but add no trails, stars, or glow.',
-      texture_and_material:
-        'Apply texture only to materials already present. Use clean fine ink and sparse color grain; motion remains contour behavior, not new particles or effects.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Compress drawn-mark intervals behind the existing action vector and open their spacing ahead, without moving subjects or tilting the camera.',
-      atmosphere_and_mood:
-        "Preserve the requested emotional tone. Velocity is line rhythm only; retain the user's emotional tone and stakes.",
-      rendering_and_quality:
-        'Keep the moving silhouette recognizable and its leading edge sharp; never blur identity-bearing details.',
-      key_features:
-        'Tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette.',
-      creative_brief:
-        'Use tapered speed contours; compressed-to-open spacing; cobalt-violet field; legible action silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
-    },
-  },
-  {
-    id: 'SP05-080',
-    name: 'Children of the Sea – Cosmic Ocean Lyrical',
+    name: 'Redline - Hyperkinetic Cosmic Velocity',
+    displayName: 'Redline - Hyperkinetic Cosmic Velocity',
+    styleAnchors: ['Redline - Hyperkinetic Cosmic Velocity'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fluid contour flow, fine clear line islands, and broad translucent value layers that transition without hard seams.',
+        'Takeshi Koike feature animation as in Redline: hand-drawn racing with extreme perspective, heavy black shadow shapes, thick outlines and explosive colors across wild alien worlds.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Follow existing shape changes with supple lines while keeping anatomy, structure, identity, and count intact; add no aquatic content.',
+        'Preserve the requested identity, count, pose and action; draw people with Koike stylization, long angular limbs, hard jawlines, pompadours and huge black shadow masses cutting across bodies.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use deep blue-teal, pearl, and cool cyan as a restrained value family; preserve explicit colors and avoid rainbow shifts.',
+        'Saturated primaries, acid yellow, hot red and cyan against massive black shadows.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use broad gradients and small cool accents only where source and surfaces justify them; add no caustics or new glow.',
+        'Hard graphic light where shadows are solid black shapes, flare bursts and speed glows.',
       texture_and_material:
-        'Apply texture only to materials already present. Layer translucent pigment films, fine stipple, and delicate line grain over present materials; add no water, foam, stars, or particles.',
+        'Thick varying ink outlines, flat hand-painted color, speed lines and hand-drawn smoke.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Create spaciousness through existing dark-to-light fields and depth, not a new sea or horizon.',
-      atmosphere_and_mood:
-        'Keep the requested tone; open value transitions imply no lyricism or spirituality.',
+        'Fisheye foreshortening, cars stretching toward the lens, dramatic tilted wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with roaring hyperkinetic swagger.',
       rendering_and_quality:
-        'Separate fine contour islands from soft fields; preserve small details and avoid bloom-heavy or watery distortion.',
+        'Obsessive hand-drawn feature frame with thousands of drawings worth of detail.',
       key_features:
-        'Fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation.',
+        'Takeshi Koike blacks; extreme perspective; thick outlines; speed stretch; saturated color',
       creative_brief:
-        'Use fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Takeshi Koike feature animation as in Redline: hand-drawn racing with extreme perspective, heavy black shadow shapes, thick outlines and explosive colors across wild alien worlds. Carry it through Takeshi Koike blacks, extreme perspective, thick outlines, speed stretch, saturated color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP05-080',
+    name: 'Children of the Sea - Cosmic Ocean Lyrical',
+    displayName: 'Children of the Sea - Cosmic Ocean Lyrical',
+    styleAnchors: ['Children of the Sea - Cosmic Ocean Lyrical'],
+    category: '4. Studio Masterpieces',
+    negativePrompt:
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+    style: {
+      aesthetic:
+        'Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin.',
+      color_and_tone:
+        'Deep ocean indigo, glowing plankton cyan, sunlit aquarium teal and warm summer skin tones.',
+      lighting_and_shadow: 'Underwater caustics, bioluminescent glow and cosmic light blooms.',
+      texture_and_material:
+        'Hand-hatched pencil lines on characters, painterly water, particle-filled 3D ocean effects.',
+      camera_and_composition:
+        'Immersive underwater wides, huge creatures dwarfing swimmers, cosmic transitions.',
+      atmosphere_and_mood: 'Keep the requested mood with lyrical cosmic awe.',
+      rendering_and_quality:
+        'Rich Studio 4°C feature frame blending sketch lines and luminous painted effects.',
+      key_features:
+        'Daisuke Igarashi hatching; cosmic ocean; bioluminescence; whales; pencil textured lines',
+      creative_brief:
+        "Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars. Carry it through Daisuke Igarashi hatching, cosmic ocean, bioluminescence, whales, pencil textured lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-281',
-    name: 'Temporal Memory Cinema Style',
-    displayName: 'Temporal Memory Cinema',
-    styleAnchors: ['Temporal Memory Cinema Style'],
+    name: 'Millennium Actress - Temporal Memory Cinema',
+    displayName: 'Millennium Actress - Temporal Memory Cinema',
+    styleAnchors: ['Millennium Actress - Temporal Memory Cinema'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cinema-still handling: narrow charcoal-blue contours, softened secondary edges, low-contrast depth layers, and isolated warm notes.',
+        'Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Let only secondary contours recede, with no ghosted copies or time-shifted subjects.',
+        'Preserve the requested identity, count, pose and action; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, balance slate blue, charcoal, and pale gray with a few amber accents; avoid a blanket sepia cast.',
+        'Palette that shifts per era: sepia and snow for period scenes, technicolor warmth, cool modern greys.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Respect source direction; use gentle plane falloff and small warm notes only on existing lit surfaces, without adding fog.',
+        'Studio film lighting and theatrical spotlights, snow glinting, projector beams.',
       texture_and_material:
-        'Apply texture only to materials already present. Use nearly uniform fine grain over smooth painted transitions; avoid frame borders and coarse film noise.',
+        'Clean realistic cel over detailed painted sets, film grain and projector flicker.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Vary sharpness according to depth already present and let existing spacing carry a held rhythm.',
-      atmosphere_and_mood:
-        'Preserve user mood; time is suggested by fading contrast, not nostalgia or flashback content.',
-      rendering_and_quality:
-        'Retain one sharp focal plane, clean silhouettes, and legible midground detail; no blur over requested features.',
-      key_features:
-        'Cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks.',
+        'Seamless match transitions between eras, characters running across changing sets.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic devoted longing.',
+      rendering_and_quality: 'Refined theatrical Madhouse cel frame with cinematic continuity.',
+      key_features: 'Satoshi Kon match cuts; film eras; realistic faces; projector light; snow',
       creative_brief:
-        'Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot. Carry it through Satoshi Kon match cuts, film eras, realistic faces, projector light, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-282',
-    name: 'Social Humanist Warmth Style',
-    displayName: 'Social Humanist Warmth',
-    styleAnchors: ['Social Humanist Warmth Style'],
+    name: 'Tokyo Godfathers - Social Humanist Warmth',
+    displayName: 'Tokyo Godfathers - Social Humanist Warmth',
+    styleAnchors: ['Tokyo Godfathers - Social Humanist Warmth'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Observational anime drawing: responsive medium-weight ink, natural proportions, soft cel modeling, and resolved small gestures.',
+        'Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Contour variation may clarify existing gestures but must not create or idealize them.',
+        'Preserve the requested identity, count, pose and action; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth.',
       color_and_tone:
-        "Honor explicitly requested colors. When no palette is specified, favor muted umber, ochre, cream, and blue-gray while keeping each material's stated color recognizable.",
+        'Snowy night blues, sodium orange streetlights, dirty browns and warm red accents.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Model with broad natural illumination, restrained warm bounce, cool neutral fill, and soft contact shadows from present forms.',
+        'Streetlight pools on snow, neon spill, cold moonlight with warm windows.',
       texture_and_material:
-        'Apply texture only to materials already present. Keep surfaces matte with brief fine hatching only on materials already textured; avoid glossy filter finishes.',
+        'Detailed painted urban grime, cel characters, snowflakes, trash and texture of old coats.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Distribute detail among supplied subjects and leave remaining areas in quiet, readable value groups.',
-      atmosphere_and_mood:
-        'Keep the requested emotion; observational line and natural proportions do not require warmth or intimacy.',
-      rendering_and_quality:
-        'Protect anatomy and small details with even denoise, gentle value separation, and no plastic smoothing.',
+        'Street-level views in alleys, wide rooftop shots at night, sudden comic close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with scruffy tender warmth.',
+      rendering_and_quality: 'Realist 2003 Madhouse cel frame with lively acting.',
       key_features:
-        'Responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures.',
+        'Satoshi Kon realism; rubbery expressions; snowy alleys; urban grime; humanist warmth',
       creative_brief:
-        'Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs. Carry it through Satoshi Kon realism, rubbery expressions, snowy alleys, urban grime, humanist warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-284',
-    name: 'Airborne Wonder Adventure Style',
-    displayName: 'Airborne Wonder Adventure',
-    styleAnchors: ['Airborne Wonder Adventure Style'],
+    name: 'Castle in the Sky - Airborne Wonder Adventure',
+    displayName: 'Castle in the Sky - Airborne Wonder Adventure',
+    styleAnchors: ['Castle in the Sky - Airborne Wonder Adventure'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Give the drawing upward visual lift through clean silhouettes, ascending diagonals, open planes, and gently graded depth.',
+        'Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Small tapers may follow existing directional endpoints but cannot imply flight or new movement.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, combine clear cyan or blue, fresh green, cream, and warm ochre in breathable fields; preserve the requested palette.',
+        'Preserve the requested identity, count, pose and action; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles.',
+      color_and_tone: 'Sky blue, cloud white, moss green, brass and warm stone ochre.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use broad high-key illumination and cool-edged shadows only when supported by the stated source; add no halo.',
+        'Bright high-altitude sunlight, huge glowing clouds, warm interior lamps.',
       texture_and_material:
-        'Apply texture only to materials already present. Keep foreground fills clean and let fine washes carry only existing distant detail; add no sky or scenery.',
+        'Hand-painted watercolor and gouache backgrounds, riveted metal machines, moss on stone.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Show depth through existing scale and value steps, using diagonals already in the arrangement.',
-      atmosphere_and_mood:
-        'Retain the requested emotional tone; openness is not a demand for wonder or adventure.',
+        'Dizzying heights and vertical drops, flying machines crossing the frame, giant cloud walls.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring adventurous wonder.',
       rendering_and_quality:
-        'Keep silhouette edges stable against open fields; avoid glows, extra airborne objects, and false depth blur.',
-      key_features:
-        'Ascending diagonal rhythm; clean silhouettes; open value planes; graded depth.',
+        'Classic 1980s hand-drawn Ghibli feature frame with airy painted skies.',
+      key_features: 'Ghibli clouds; flying machines; floating ruins; round faces; brass and moss',
       creative_brief:
-        'Use ascending diagonal rhythm; clean silhouettes; open value planes; graded depth. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins. Carry it through Ghibli clouds, flying machines, floating ruins, round faces, brass and moss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-285',
-    name: 'Eco-Prophetic Wind Style',
-    displayName: 'Eco-Prophetic Wind',
-    styleAnchors: ['Eco-Prophetic Wind Style'],
+    name: 'Nausicaa - Eco-Prophetic Wind',
+    displayName: 'Nausicaa - Eco-Prophetic Wind',
+    styleAnchors: ['Nausicaa - Eco-Prophetic Wind'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Use flow-driven mark making: long sweeping contours, filament-thin tapers, and connected color paths across existing shapes.',
+        "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders.",
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Let contour flow follow its existing edges without bending anatomy or adding airborne marks.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, favor fresh greens, cyan, and restrained coral against clear neutrals; explicit prompt colors remain authoritative.',
+        'Preserve the requested identity, count, pose and action; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines.',
+      color_and_tone: 'Sepia-brown ink printing on cream paper with dusty blue-grey washes.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep daylight and shadow tied to supplied sources; use clean highlights, not dust, gusts, or added glow.',
+        'Diffuse light rendered by hatching density, glowing spores as bright white paper.',
       texture_and_material:
-        'Apply texture only to materials already present. Vary stroke length and wash density on materials already present; introduce no foliage, fabric, or surface detail.',
+        'Fine pencil and pen hatching, dense organic fungal detail, soft graphite shading.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let existing edges carry continuous curved rhythms and parallel value bands without making new forms.',
-      atmosphere_and_mood:
-        'Preserve the requested mood; flow is contour behavior, not a weather or ecological event.',
-      rendering_and_quality:
-        'Keep line direction coherent across forms and keep detail subordinate to the main silhouettes.',
+        'Panoramic manga panels of vast landscapes, small figures against towering fungi and insects.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn ecological prophecy.',
+      rendering_and_quality: 'Densely drawn hand-made manga illustration in sepia print.',
       key_features:
-        'Sweeping contour; filament taper; linked color paths; clear naturalistic values.',
+        'Miyazaki manga hatching; sepia print; toxic fungal forest; gliders; giant insects',
       creative_brief:
-        'Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders. Carry it through Miyazaki manga hatching, sepia print, toxic fungal forest, gliders, giant insects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-286',
-    name: 'Seasonal Intimacy Realism Style',
-    displayName: 'Seasonal Intimacy Realism',
-    styleAnchors: ['Seasonal Intimacy Realism Style'],
+    name: 'Wolf Children - Seasonal Intimacy Realism',
+    displayName: 'Wolf Children - Seasonal Intimacy Realism',
+    styleAnchors: ['Wolf Children - Seasonal Intimacy Realism'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Seasonal naturalism: close deliberate ink at touch points, softly joined midtone masses, and restrained surface grain.',
+        'Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Allow precise contours at existing contact points without changing age, anatomy, or emotional read.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, work with muted olive, russet, cream, and blue-gray; let contrast shift gently while local colors stay true.',
+        'Preserve the requested identity, count, pose and action; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes.',
+      color_and_tone: 'Fresh greens, snow white, soft sky blue and warm tatami browns.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use a soft directional key, warm reflected edge, and cooler shadow, all consistent with the stated source.',
+        'Natural seasonal light carried by backgrounds, while characters stay flat and unshaded.',
       texture_and_material:
-        'Apply texture only to materials already present. Apply short hatches to existing tactile materials only; leave smooth areas smooth and invent no material grain.',
+        'Clean thin outlines with no shadow tones on figures, painterly photographic backgrounds, snow and grass detail.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Cluster detail at already legible focal areas and soften secondary values without reframing.',
-      atmosphere_and_mood:
-        'Keep user mood; naturalistic surface detail does not force seasonal nostalgia or intimacy.',
+        'Long lateral tracking shots through seasons, wide farmhouse frames, gentle close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with tender everyday devotion.',
       rendering_and_quality:
-        'Preserve believable anatomy, restrained texture density, and clear focal contours without photographic or 3D drift.',
+        'Warm Studio Chizu feature frame with flat characters on lush backgrounds.',
       key_features:
-        'Close contour detail; joined midtones; olive-russet palette; restrained material grain.',
+        'Mamoru Hosoda flat unshaded characters; rural seasons; painted backgrounds; gentle realism',
       creative_brief:
-        'Use close contour detail; joined midtones; olive-russet palette; restrained material grain. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields. Carry it through Mamoru Hosoda flat unshaded characters, rural seasons, painted backgrounds, gentle realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-288',
-    name: 'Elastic Summer Time Style',
-    displayName: 'Elastic Summer Time',
-    styleAnchors: ['Elastic Summer Time Style'],
+    name: 'The Girl Who Leapt Through Time - Elastic Summer Time',
+    displayName: 'The Girl Who Leapt Through Time - Elastic Summer Time',
+    styleAnchors: ['The Girl Who Leapt Through Time - Elastic Summer Time'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Elastic timing: compact stroke clusters release into long tapered arcs, alternating compressed and stretched mark intervals.',
+        'Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Elasticity lives in line cadence, never in body distortion or invented motion.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use clear cobalt or sky blue, fresh green, and small warm ochre or coral accents, subject to explicit color instructions.',
+        'Preserve the requested identity, count, pose and action; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes.',
+      color_and_tone: 'Summer blue, cloud white, cicada green and warm afternoon gold.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep natural source light bright and clean with crisp shadow edges; add no flare or artificial gleam.',
+        'Clear midsummer daylight, characters without cel shadow, bright sky reflections.',
       texture_and_material:
-        'Apply texture only to materials already present. Combine smooth color planes with sparse soft brush marks; avoid rubbery shine or deformation texture.',
+        'Clean thin lines, flat color characters, painted backgrounds and streaking time-warp effects.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let existing contours and gaps alternate between squeezed and extended intervals without rearrangement.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Maintain the requested emotion; stretch-release is a visual beat, not a summer mood.',
+        'Big-sky wides with small leaping figures, low angles at river embankments, dynamic run cycles.',
+      atmosphere_and_mood: 'Keep the requested mood with bright bittersweet summer.',
       rendering_and_quality:
-        'Hold proportions and leading edges stable while varied stroke lengths create the elastic rhythm.',
+        'Crisp Madhouse feature frame, light and airy, with flat shadowless characters.',
       key_features:
-        'Compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette.',
+        'Hosoda shadowless characters; Sadamoto designs; summer cumulus; time-leap bursts',
       creative_brief:
-        'Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts. Carry it through Hosoda shadowless characters, Sadamoto designs, summer cumulus, time-leap bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-290',
-    name: 'Paramilitary Melancholy Style',
-    displayName: 'Paramilitary Melancholy',
-    styleAnchors: ['Paramilitary Melancholy Style'],
+    name: 'Jin-Roh - Paramilitary Melancholy',
+    displayName: 'Jin-Roh - Paramilitary Melancholy',
+    styleAnchors: ['Jin-Roh - Paramilitary Melancholy'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'armored protect-gear suits with red glowing goggles, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Low-key geometric restraint: long straight contour runs, hard rectangular shadow divisions, and thin softened distance marks.',
+        'Hiroyuki Okiura feature animation as in Jin-Roh: sober realistic Production I.G cel, alternate postwar Tokyo, heavy armored uniforms, rain, sewers and restrained human gestures.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Angular shadow cuts clarify existing planes but add no uniforms, insignia, or equipment.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, favor slate blue, navy, muted violet, and isolated amber; maintain explicit local colors.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep illumination source-bound with small highlights over broad cool shadows; invent no lamps or reflections.',
-      texture_and_material:
-        'Apply texture only to materials already present. Use matte low-noise fills and precise reflected color only on reflective surfaces already present.',
+        'Preserve the requested identity, count, pose and action; draw people with Okiura realism, accurate anatomy, understated faces and heavy period coats and uniforms.',
+      color_and_tone: 'Desaturated olive, rain grey, sepia and cold blue, with rare dim red.',
+      lighting_and_shadow: 'Wet night light, flashlight beams in tunnels, overcast gloom.',
+      texture_and_material: 'Precise realist cel lines, painted wet concrete, smoke and rain.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Align existing lines into horizontal or vertical readings without inserting bars, windows, or grids.',
-      atmosphere_and_mood:
-        "Keep the prompt's emotional tone; geometric severity does not require melancholy.",
+        'Measured cinematic framing, long silent holds, low tunnel perspectives.',
+      atmosphere_and_mood: 'Keep the requested mood with somber fatal melancholy.',
       rendering_and_quality:
-        'Separate overlapping silhouettes in dark values and retain detail inside shadow without lifting all blacks.',
+        'Meticulous 1999 realist hand-drawn feature frame with somber cinematic restraint.',
       key_features:
-        'Rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges.',
+        'Okiura realism; armored uniforms; rain and sewers; restrained acting; desaturated palette',
       creative_brief:
-        'Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hiroyuki Okiura feature animation as in Jin-Roh: sober realistic Production I.G cel, alternate postwar Tokyo, heavy armored uniforms, rain, sewers and restrained human gestures. Carry it through Okiura realism, armored uniforms, rain and sewers, restrained acting, desaturated palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-291',
-    name: 'Delicate Reconciliation Style',
-    displayName: 'Delicate Reconciliation',
-    styleAnchors: ['Delicate Reconciliation Style'],
+    name: 'A Silent Voice - Delicate Reconciliation',
+    displayName: 'A Silent Voice - Delicate Reconciliation',
+    styleAnchors: ['A Silent Voice - Delicate Reconciliation'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Blend fine contour with dilute wash: delicate line, pale transparent planes, and gradual warm-cool transitions at adjacent edges.',
+        'Naoko Yamada and Kyoto Animation feature animation as in A Silent Voice: soft delicate designs, attention to feet, hands and hair, shallow-focus framing and pastel riverside town light.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Harmonize neighboring edge values without implying contact or reconciliation.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use pale aqua, sage, blue-gray, cream, and a measured warm yellow or rose accent; respect user-selected hues.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use diffused light and soft midtone transitions from the existing source, never added rain, mist, or halo.',
+        'Preserve the requested identity, count, pose and action; draw people with soft KyoAni designs, large gentle eyes, detailed hair, and expressive small gestures of hands and feet.',
+      color_and_tone: 'Pastel spring palette, soft teal, pink, cream and pale blue water.',
+      lighting_and_shadow: 'Soft diffuse daylight, sparkling bokeh, gentle backlight halos.',
       texture_and_material:
-        'Apply texture only to materials already present. Lay thin glaze and sparse paper grain over existing materials; keep edges dry and avoid dripping texture.',
+        'Clean digital cel, shallow depth of field, light leaks and floating petals.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Soften transitions only where forms already meet or sit nearby.',
-      atmosphere_and_mood:
-        'Keep the stated mood; reconciliation describes edge integration, not narrative or expression.',
-      rendering_and_quality:
-        'Retain clear subject boundaries through the wash and avoid smoothing away requested detail.',
-      key_features: 'Fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending.',
+        'Framing on feet and hands, off-center compositions, faces partly cropped, rack focus.',
+      atmosphere_and_mood: 'Keep the requested mood with fragile hopeful reconciliation.',
+      rendering_and_quality: 'Refined Kyoto Animation feature frame with photographic depth.',
+      key_features:
+        'Naoko Yamada framing; feet and hands; shallow focus; pastel light; KyoAni softness',
       creative_brief:
-        'Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Naoko Yamada and Kyoto Animation feature animation as in A Silent Voice: soft delicate designs, attention to feet, hands and hair, shallow-focus framing and pastel riverside town light. Carry it through Naoko Yamada framing, feet and hands, shallow focus, pastel light, KyoAni softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-292',
-    name: 'Historical Glam Punk Performance Style',
-    displayName: 'Historical Glam Punk Performance',
-    styleAnchors: ['Historical Glam Punk Performance Style'],
+    name: 'Inu-Oh - Historical Glam Punk Performance',
+    displayName: 'Inu-Oh - Historical Glam Punk Performance',
+    styleAnchors: ['Inu-Oh - Historical Glam Punk Performance'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Charged editorial ink: broken scratch contours, heavy black silhouettes, abrupt chromatic slashes, and exposed pigment.',
+        'Masaaki Yuasa feature animation as in Inu-Oh: medieval Japan reimagined as a glam rock concert, loose elastic figures, flowing lines and scroll-painting textures under stage lights.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Sharpen marks around gestures already present without inventing performance or movement.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, anchor charcoal and black with crimson, an acidic accent, and dirty cream; explicit palette requests take priority.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow the given source with hard highlight cuts and warm-cool contrast; create no spotlight or stage glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, stretchy limbs, loose simplified faces and flamboyant costumes mixing period robes and rock glamour.',
+      color_and_tone: 'Ink black, vermilion, gold and electric stage colors against dark night.',
+      lighting_and_shadow: 'Concert spotlights, torches and smoke beams over ancient streets.',
       texture_and_material:
-        'Apply texture only to materials already present. Use scuffed pigment and short hatching only on existing rough materials; keep smooth surfaces clean.',
+        'Loose brush lines, scroll-paint textures, flat color and drifting smoke.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Alternate dense and open mark zones on existing shapes, with no stage, crowd, or instrument additions.',
-      atmosphere_and_mood:
-        'Retain the requested mood; abrasiveness is ink quality, not rebellion or alienation.',
-      rendering_and_quality:
-        'Keep silhouettes readable through texture and protect identity details from excessive scratch marks.',
+        'Swirling concert crowd shots, elastic distortions, low angles of performers.',
+      atmosphere_and_mood: 'Keep the requested mood with ecstatic rebellious performance.',
+      rendering_and_quality: 'Fluid expressive Science SARU feature frame with loose brush energy.',
       key_features:
-        'Broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light.',
+        'Yuasa elasticity; medieval glam rock; scroll textures; stage lights; flowing lines',
       creative_brief:
-        'Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Masaaki Yuasa feature animation as in Inu-Oh: medieval Japan reimagined as a glam rock concert, loose elastic figures, flowing lines and scroll-painting textures under stage lights. Carry it through Yuasa elasticity, medieval glam rock, scroll textures, stage lights, flowing lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-293',
-    name: 'Rough Mythic Density Style',
-    displayName: 'Rough Mythic Density',
-    styleAnchors: ['Rough Mythic Density Style'],
+    name: 'Tekkonkinkreet - Rough Mythic Density',
+    displayName: 'Tekkonkinkreet - Rough Mythic Density',
+    styleAnchors: ['Tekkonkinkreet - Rough Mythic Density'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rough density: irregular hatch clusters at focal edges, mottled paint in broad value fields, and solid dark contour anchors.',
+        "Taiyo Matsumoto's manga as filmed by Studio 4°C in Tekkonkinkreet: a crooked hand-drawn city of tangled wires, signs and alleys, wobbly lines and lopsided figures leaping between rooftops.",
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Rough marks must not obscure identity or turn forms into variants.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use deep umber, smoked gold, desaturated olive, and blue-gray in robust but limited value groups.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep warm local highlights tied to the stated source against larger cool or dark masses; add no spectacle light.',
-      texture_and_material:
-        'Apply texture only to materials already present. Concentrate dry brush and short rough hatching on present textured materials; invent no relics or surface types.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Place dense texture near existing overlaps while keeping silhouette channels and quiet planes readable.',
-      atmosphere_and_mood:
-        'Keep the requested emotional tone; density is a drawing property, not grandeur.',
+        'Preserve the requested identity, count, pose and action; draw people with Matsumoto designs, lopsided heads, scratchy wobbly lines, lanky limbs and scruffy street clothes.',
+      color_and_tone: 'Dusty rust, faded teal, warm sunset orange and grimy yellows.',
+      lighting_and_shadow: 'Hazy golden city light, neon at night, soft painted shadows.',
+      texture_and_material: 'Wobbly pen lines, scratchy hatching, extremely dense painted clutter.',
+      camera_and_composition: 'Fisheye rooftop views, vertiginous falls, crowded street panoramas.',
+      atmosphere_and_mood: 'Keep the requested mood with scrappy mythic tenderness.',
       rendering_and_quality:
-        'Balance rough edge noise with stable dark anchors and open midtones; use no global grunge overlay.',
+        'Dense idiosyncratic hand-drawn feature frame packed with crooked city clutter.',
       key_features:
-        'Irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.',
+        'Taiyo Matsumoto wobbly line; crooked dense city; fisheye rooftops; scratchy textures',
       creative_brief:
-        'Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Taiyo Matsumoto's manga as filmed by Studio 4°C in Tekkonkinkreet: a crooked hand-drawn city of tangled wires, signs and alleys, wobbly lines and lopsided figures leaping between rooftops. Carry it through Taiyo Matsumoto wobbly line, crooked dense city, fisheye rooftops, scratchy textures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-295',
-    name: 'Quiet Musical Distance Style',
-    displayName: 'Quiet Musical Distance',
-    styleAnchors: ['Quiet Musical Distance Style'],
+    name: 'Liz and the Blue Bird - Quiet Musical Distance',
+    displayName: 'Liz and the Blue Bird - Quiet Musical Distance',
+    styleAnchors: ['Liz and the Blue Bird - Quiet Musical Distance'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Quiet-spaced line design: long uninterrupted fine contours, broad matte color fields, and deliberate blank intervals.',
+        'Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Let existing contours run in phrase-like lengths with pauses, without music symbols or instruments.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, favor slate blue, pale cyan, ivory, and a faint warm neutral; preserve requested colors.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep illumination soft and even with clear plane separation; avoid stage lighting and bloom.',
+        'Preserve the requested identity, count, pose and action; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair.',
+      color_and_tone: 'Watercolor pastels, pale blue, cream, soft pink and airy white.',
+      lighting_and_shadow: 'Soft window light washed out into haze, delicate light blooms.',
       texture_and_material:
-        'Apply texture only to materials already present. Use clean matte fills with very little grain; add no decorative notation or sound marks.',
+        'Very thin colored lines, watercolor-like washes, soft focus and bokeh.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let existing empty areas provide rhythm without changing count or positions.',
-      atmosphere_and_mood:
-        'Keep the requested emotion; quiet is mark density and spacing, not a mood instruction.',
+        'Distant composed frames, feet and hands inserts, long corridors with empty space.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed tender distance.',
       rendering_and_quality:
-        'Maintain fine lines, open midtones, and unbroken feature edges without soft-focus drift.',
+        'Airy restrained feature frame with watercolor softness and delicate thin lines.',
       key_features:
-        'Long fine contours; broad matte fields; intentional blank intervals; low mark density.',
+        'Naoko Yamada restraint; thin delicate lines; watercolor pastel; empty hallways; small gestures',
       creative_brief:
-        'Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways. Carry it through Naoko Yamada restraint, thin delicate lines, watercolor pastel, empty hallways, small gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-296',
-    name: 'Humanist Art Deco Retrofuture Style',
-    displayName: 'Humanist Art Deco Retrofuture',
-    styleAnchors: ['Humanist Art Deco Retrofuture Style'],
+    name: 'Metropolis - Humanist Art Deco Retrofuture',
+    displayName: 'Metropolis - Humanist Art Deco Retrofuture',
+    styleAnchors: ['Metropolis - Humanist Art Deco Retrofuture'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Measured Art Deco geometry on smooth cel planes: stepped internal edges, precise parallel lines, and calibrated symmetry.',
+        'Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Simplify only interior planes while retaining each requested silhouette, proportion, expression, and identity.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use midnight teal, navy, muted gold, peach, or rose in discrete fields; keep user-specified local colors.',
+        'Preserve the requested identity, count, pose and action; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture.',
+      color_and_tone: 'Warm amber, brass gold, deep teal and sepia jazz-age tones.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Create crisp bands of light and shadow from the supplied source; add no futuristic glow or chrome sheen.',
+        'Warm glowing city lights, spotlights on towers, dramatic industrial glare.',
       texture_and_material:
-        'Apply texture only to materials already present. Keep planes smooth with tiny even grain only in broad fields; add no ornamental material patterns.',
+        'Clean cartoon cel figures over painted and CG-built deco architecture.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Align parallel rhythms with existing geometry and balance values without moving objects.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Carry the requested tone; geometric precision imposes no retrofuture or optimistic mood.',
+        'Towering vertical city views, tiny figures in vast halls, crane shots.',
+      atmosphere_and_mood: 'Keep the requested mood with humanist retro wonder.',
       rendering_and_quality:
-        'Keep edge intersections clean, planes separated, and highlights controlled; avoid bloom and metallic rendering.',
-      key_features:
-        'Stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields.',
+        'Lavish 2001 Madhouse feature frame mixing cartoon and monumental detail.',
+      key_features: 'Tezuka round designs; art deco megacity; retro robots; amber jazz glow',
       creative_brief:
-        'Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery. Carry it through Tezuka round designs, art deco megacity, retro robots, amber jazz glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-297',
-    name: 'Hyperobserved Rain Intimacy Style',
-    displayName: 'Hyperobserved Rain Intimacy',
-    styleAnchors: ['Hyperobserved Rain Intimacy Style'],
+    name: 'The Garden of Words - Hyperobserved Rain Intimacy',
+    displayName: 'The Garden of Words - Hyperobserved Rain Intimacy',
+    styleAnchors: ['The Garden of Words - Hyperobserved Rain Intimacy'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hyper-observational surface drawing: hairline contours and highly localized tactile detail fall quickly into soft painted surroundings.',
+        'Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Reserve fine detail for already prominent areas and do not create a close-up.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, favor cool blue-gray and green with narrow amber notes; retain supplied colors and reflectivity.',
+        'Preserve the requested identity, count, pose and action; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes.',
+      color_and_tone: 'Deep emerald, rain grey, jade and soft warm skin light.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow existing sources; limit small reflections to materials already reflective and keep other surfaces matte.',
+        'Green-filtered rain light, reflections on wet surfaces, glowing sky breaks.',
       texture_and_material:
-        'Apply texture only to materials already present. Concentrate granular strokes on the current focal material; add no droplets, wet sheen, or absent texture.',
+        'Hyper-detailed painted leaves, droplets, ripples and reflective stone.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let detail fall off around the existing focal point without changing camera distance.',
-      atmosphere_and_mood:
-        'Preserve requested mood; intimacy means a fine-to-soft detail range, not a relationship.',
+        'Macro shots of droplets, framed pavilion shots through foliage, ripples on ponds.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate rainy stillness.',
       rendering_and_quality:
-        'Keep focal edges crisp, surrounding marks subdued, and avoid artificial depth blur over requested elements.',
-      key_features:
-        'Hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff.',
+        'Polished Shinkai frame with hyperreal rain detail and glistening foliage.',
+      key_features: 'Shinkai rain garden; emerald foliage; droplets; pavilion; hyperreal detail',
       creative_brief:
-        'Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions. Carry it through Shinkai rain garden, emerald foliage, droplets, pavilion, hyperreal detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-071',
-    name: 'Warm Liminal Reverie Fantasy Style',
-    displayName: 'Warm Liminal Reverie Fantasy',
-    styleAnchors: ['Warm Liminal Reverie Fantasy Style'],
+    name: 'Spirited Away - Warm Liminal Reverie Fantasy',
+    displayName: 'Spirited Away - Warm Liminal Reverie Fantasy',
+    styleAnchors: ['Spirited Away - Warm Liminal Reverie Fantasy'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a masked black shadow spirit, a white dragon boy, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Warm-liminal cel painting: translucent amber and peach glazes meet cool blue-gray contours through long soft transition bands.',
+        'Hayao Miyazaki and Studio Ghibli feature animation as in Spirited Away: sprawling red-lacquer bathhouse architecture, lantern-lit spirit streets, quiet trains over water and strange gentle spirits.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Distinguish adjacent shapes with a clean silhouette break rather than inventing a connection.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, balance amber, peach, and muted blue-gray while keeping explicit object colors intact.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use gentle warm bounce and cool shadow only as motivated by existing light; add no lamps or rays.',
+        'Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, dot-highlight eyes, natural bodies, and spirits as soft odd creatures.',
+      color_and_tone: 'Lacquer red, lantern gold, twilight teal and deep water blue.',
+      lighting_and_shadow: 'Warm lantern glow at dusk, steam haze and calm daylight over water.',
       texture_and_material:
-        'Apply texture only to materials already present. Keep washes transparent and grain fine; texture only existing surfaces, never added decorative detail.',
+        'Hand-painted backgrounds full of architectural detail, clean cel lines and drifting steam.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Use existing negative gaps and transitions as intervals without adding doorways or borders.',
-      atmosphere_and_mood:
-        'Preserve specified emotion; liminal spacing and warm light impose no fantasy or reverie.',
-      rendering_and_quality:
-        'Retain clear silhouette edges across soft gradients and keep highlights sparse and source-based.',
-      key_features:
-        'Amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals.',
+        'Wide architectural establishing shots, quiet waiting moments, long corridors.',
+      atmosphere_and_mood: 'Keep the requested mood with dreamy liminal enchantment.',
+      rendering_and_quality: 'Classic Ghibli hand-drawn feature frame with rich painted detail.',
+      key_features: 'Ghibli bathhouse architecture; lanterns; spirits; steam; round simple faces',
       creative_brief:
-        'Use amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki and Studio Ghibli feature animation as in Spirited Away: sprawling red-lacquer bathhouse architecture, lantern-lit spirit streets, quiet trains over water and strange gentle spirits. Carry it through Ghibli bathhouse architecture, lanterns, spirits, steam, round simple faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-287',
-    name: 'Digital Pop Opera Style',
-    displayName: 'Digital Pop Opera',
-    styleAnchors: ['Digital Pop Opera Style'],
+    name: 'Belle - Digital Pop Opera',
+    displayName: 'Belle - Digital Pop Opera',
+    styleAnchors: ['Belle - Digital Pop Opera'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Pop-digital cel structure: crisp silhouette planes, flat high-chroma blocks, and one restrained gradient layer behind sharp separations.',
+        'Mamoru Hosoda feature animation as in Belle: a vast virtual world of glowing avatars and 3D towers, contrasted with flat shadowless 2D characters in rural Kochi.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Graphic simplification cannot caricature or add symbols.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use bright azure, coral or magenta, lemon, and deep charcoal as controlled blocks when compatible with the requested palette.',
+        'Preserve the requested identity, count, pose and action; draw real-world people in flat Hosoda style and virtual avatars in glossy detailed designs, ornate costumes and freckled faces.',
+      color_and_tone: 'Neon pink, electric teal, pearl white and deep digital blue.',
       lighting_and_shadow:
-        'Respect the supplied light sources and direction. Keep highlights crisp and bloom confined to supplied light; add no stage lights or luminous objects.',
-      texture_and_material:
-        'Apply texture only to materials already present. Favor smooth digital fills and narrow gradients over painterly grain; keep each material legible.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Align broad silhouettes and diagonal color blocks to existing geometry, never force a stage or profile.',
-      atmosphere_and_mood:
-        'Preserve user mood; chromatic brightness requires no buoyancy, spectacle, or sung emotion.',
-      rendering_and_quality:
-        'Hold hard edges at focal shapes and smooth gradients behind them; add no UI, lettering, or poster layout.',
-      key_features:
-        'High-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom.',
+        'Glowing avatar lights, spotlight beams and holographic bloom across the crowds.',
+      texture_and_material: 'CG virtual architecture, soft 2D cel characters, particle clouds.',
+      camera_and_composition: 'Huge crowd views and soaring camera moves inside the virtual world.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring emotional spectacle.',
+      rendering_and_quality: 'Hybrid 2D and CG Studio Chizu frame with spectacular virtual scale.',
+      key_features: 'Hosoda virtual world; flat characters; glowing avatars; spectacular crowds',
       creative_brief:
-        'Use high-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Mamoru Hosoda feature animation as in Belle: a vast virtual world of glowing avatars and 3D towers, contrasted with flat shadowless 2D characters in rural Kochi. Carry it through Hosoda virtual world, flat characters, glowing avatars, spectacular crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-300',
-    name: 'Hypergraphic Chromatic Action Style',
-    displayName: 'Hypergraphic Chromatic Action',
-    styleAnchors: ['Hypergraphic Chromatic Action Style'],
+    name: 'Promare - Hypergraphic Chromatic Action',
+    displayName: 'Promare - Hypergraphic Chromatic Action',
+    styleAnchors: ['Promare - Hypergraphic Chromatic Action'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hypergraphic action drawing: bold contour locks, interleaved chromatic planes, and repeat-recoil rhythm in the width and spacing of existing marks.',
+        'Hiroyuki Imaishi and Studio Trigger feature animation as in Promare: flat triangular geometry, neon pink and cyan fire made of polygons, bold color blocking and explosive posing.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Vary contour weight only where the supplied action transfers force.',
-      color_and_tone:
-        'Honor explicitly requested colors. Anchor opposing saturated masses with dark and pale neutrals; limit accents and follow explicit color intent.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use supplied light for clean rim separation; add no impact flash, burst, or other unrequested effect.',
-      texture_and_material:
-        'Apply texture only to materials already present. Keep color fields hard and clean with sparse boundary grain; add no debris, streaks, or surface noise.',
+        'Preserve the requested identity, count, pose and action; draw people with Shigeto Koyama designs, sharp angular faces, huge poses, flat color shapes and no gradients.',
+      color_and_tone: 'Neon magenta, cyan, lime and white against flat pastel skies.',
+      lighting_and_shadow: 'Flat graphic color-field light where fire is geometric shapes.',
+      texture_and_material: 'Flat color blocks, polygonal CG effects, thick clean outlines.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Align graphic weight with the existing action vector and balance it with quiet gaps.',
-      atmosphere_and_mood:
-        'Preserve stated mood and stakes; impact rhythm is spacing and contour, not added danger or intensity.',
+        'Wide kinetic poses, exaggerated perspective and spinning action shots.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive hot-blooded spectacle.',
       rendering_and_quality:
-        'Keep action readable through silhouette and force transfer; avoid distortion, blur, and marks that invent events.',
-      key_features:
-        'Bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation.',
+        'Crisp stylized Trigger frame, hypergraphic and bold, with no soft gradients.',
+      key_features: 'Imaishi triangles; neon polygonal fire; flat color blocks; explosive poses',
       creative_brief:
-        'Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hiroyuki Imaishi and Studio Trigger feature animation as in Promare: flat triangular geometry, neon pink and cyan fire made of polygons, bold color blocking and explosive posing. Carry it through Imaishi triangles, neon polygonal fire, flat color blocks, explosive poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-072',
-    name: 'Eco-Mythic Conflict Epic Style',
-    displayName: 'Eco-Mythic Conflict Epic',
-    styleAnchors: ['Eco-Mythic Conflict Epic Style'],
+    name: 'Princess Mononoke - Eco-Mythic Conflict Epic',
+    displayName: 'Princess Mononoke - Eco-Mythic Conflict Epic',
+    styleAnchors: ['Princess Mononoke - Eco-Mythic Conflict Epic'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Create scale through broad depth planes, firm foreground contours, and clean distant value bands rather than added spectacle.',
+        'Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Keep the primary silhouette clear without adding cast, props, or conflict.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use natural greens, pale gold, slate blue, and clear neutrals while retaining user-specified colors.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use a broad natural source and gradual near-to-far falloff; add no rays or supernatural glow.',
+        'Preserve the requested identity, count, pose and action; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic.',
+      color_and_tone: 'Deep forest green, moss, earth brown, iron grey and sunset red.',
+      lighting_and_shadow: 'Dappled forest light, smoky forge glow, sunset fire.',
       texture_and_material:
-        'Apply texture only to materials already present. Let brush scale soften with distance only across surfaces already shown; keep near contours deliberate.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Distinguish existing depths through value and scale contrast, without widening or adding a horizon.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone. Carry the supplied emotional tone; environmental scale is not an epic conflict or mythic event.',
-      rendering_and_quality:
-        'Maintain near-to-far hierarchy, crisp essential edges, and restrained background detail.',
-      key_features:
-        'Broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands.',
+        'Hand-painted mossy detail, clean cel characters, smoke and roiling tendrils.',
+      camera_and_composition: 'Vast forest wides, low angles on giant creatures, charging action.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce mythic reverence.',
+      rendering_and_quality: 'Epic hand-drawn 1997 Ghibli frame with dense painted forest detail.',
+      key_features: 'Ghibli ancient forest; animal gods; ironworks; moss; fierce epic',
       creative_brief:
-        'Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood. Carry it through Ghibli ancient forest, animal gods, ironworks, moss, fierce epic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-076',
-    name: 'Cinematic Dream-Collapse Surrealism Style',
-    displayName: 'Cinematic Dream-Collapse Surrealism',
-    styleAnchors: ['Cinematic Dream-Collapse Surrealism Style'],
+    name: 'Paprika - Cinematic Dream-Collapse Surrealism',
+    displayName: 'Paprika - Cinematic Dream-Collapse Surrealism',
+    styleAnchors: ['Paprika - Cinematic Dream-Collapse Surrealism'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Treat dream-collapse as edge behavior: stable primary contours against peripheral planes that slip or soften only at existing boundaries.',
+        'Satoshi Kon feature animation as in Paprika: realistic detective drama that fluidly melts into dream spaces, rooms folding into other rooms, screens and posters becoming doors.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Never warp the requested subject or substitute one scene for another.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, blend pale warm and cool pastels over a stable dark anchor; retain local colors without surreal shifts.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Use graded shadows and restrained bounce from existing sources; add no glow, bloom, or lighting event.',
-      texture_and_material:
-        'Apply texture only to materials already present. Allow soft washes to bleed at existing background boundaries while keeping principal edges and materials intact.',
+        'Preserve the requested identity, count, pose and action; draw people with Kon realism, grounded adult faces and suits, then let them slide through surreal transitions.',
+      color_and_tone: 'Vivid dream reds and oranges against muted realistic city palettes.',
+      lighting_and_shadow: 'Film-noir hallway light mixing with glowing dream colors.',
+      texture_and_material: 'Clean realist cel, painted backgrounds, seamless transition effects.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Loosen depth only inside existing background, with no camera tilt, inserts, or duplication.',
-      atmosphere_and_mood:
-        'Keep requested mood; spatial instability is a rendering behavior, not a dream narrative.',
-      rendering_and_quality:
-        'Keep a stable focal silhouette and contain edge slippage to secondary boundaries; avoid melting, blur, or morphing.',
-      key_features:
-        'Stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry.',
+        'Impossible continuous transitions, match cuts through frames within frames.',
+      atmosphere_and_mood: 'Keep the requested mood with dizzying dream surrealism.',
+      rendering_and_quality: 'Lavish 2006 Madhouse feature frame with seamless surreal continuity.',
+      key_features: 'Satoshi Kon transitions; dream within frame; realist faces; vivid dream red',
       creative_brief:
-        'Use stable focal contours; peripheral edge slippage; graded pastel values; fixed scene geometry. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Satoshi Kon feature animation as in Paprika: realistic detective drama that fluidly melts into dream spaces, rooms folding into other rooms, screens and posters becoming doors. Carry it through Satoshi Kon transitions, dream within frame, realist faces, vivid dream red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-283',
-    name: 'Metaphysical Mourning Style',
-    displayName: 'Metaphysical Mourning',
-    styleAnchors: ['Metaphysical Mourning Style'],
+    name: 'The Boy and the Heron - Metaphysical Mourning',
+    displayName: 'The Boy and the Heron - Metaphysical Mourning',
+    styleAnchors: ['The Boy and the Heron - Metaphysical Mourning'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Build low-key negative space with deep blue-black fields, sparse fine lines, and isolated pale contour light where forms meet dark.',
+        "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness.",
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Allow edges to merge only where dark values already touch, never erase identity.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use indigo, blue-green, smoked gray, and pearl highlights while maintaining explicit local color.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Respect source light; use broad dark falloff and restrained existing edge highlights, without rays or particles.',
-      texture_and_material:
-        'Apply texture only to materials already present. Layer soft transparent washes with faint grain; add no water, dust, or glow texture.',
+        'Preserve the requested identity, count, pose and action; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human.',
+      color_and_tone: 'Deep teal seas, dusk gold, grey-blue fog and flame orange.',
+      lighting_and_shadow: 'Stormy light, glowing sunset, eerie dim otherworld light.',
+      texture_and_material: 'Rich hand-painted texture, dense line detail and swirling water.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Use existing empty areas and depth rather than moving the subject or widening space.',
-      atmosphere_and_mood:
-        'Preserve user mood; low-key space does not imply mourning or metaphysical content.',
+        'Still composed shots with long silences, towers on horizons, strange crowds of birds.',
+      atmosphere_and_mood: 'Keep the requested mood with grave mournful wonder.',
       rendering_and_quality:
-        'Protect identity-bearing edges from merging and keep sparse highlights precise rather than foggy.',
-      key_features: 'Deep blue-black field; sparse contour; selective edge merge; pale accents.',
+        'Late-Ghibli painterly hand-drawn feature frame with heavy textured brushwork.',
+      key_features:
+        'Late Miyazaki gravity; otherworld towers; strange birds; painterly seas; mourning',
       creative_brief:
-        'Use deep blue-black field; sparse contour; selective edge merge; pale accents. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness. Carry it through Late Miyazaki gravity, otherworld towers, strange birds, painterly seas, mourning. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-294',
-    name: 'Mutating Psychedelic Style',
-    displayName: 'Mutating Psychedelic',
-    styleAnchors: ['Mutating Psychedelic Style'],
+    name: 'Mind Game - Mutating Psychedelic',
+    displayName: 'Mind Game - Mutating Psychedelic',
+    styleAnchors: ['Mind Game - Mutating Psychedelic'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Shift color through undulating internal bands: hue and value drift across stable silhouettes while fine contours preserve shape.',
+        'Masaaki Yuasa feature animation as in Mind Game: mixed media collage of photo faces, rough sketches and flat animation, bodies stretching wildly and styles mutating mid-scene.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Variation stays in color and mark rhythm, never subject mutation.',
+        'Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, rubbery stretched limbs, simplified faces that can suddenly become rough sketches or photo cutouts.',
       color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use layered green, bronze, aqua, and a few rose or violet notes; avoid rainbow shifts and honor explicit palette.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow the actual source; permit local hue changes between planes but no psychedelic glow or new light effect.',
+        'Mutating psychedelic palettes, lava orange, sea green, hot pink and inky black.',
+      lighting_and_shadow: 'Wildly changing colored light with no fixed source.',
       texture_and_material:
-        'Apply texture only to materials already present. Build thin translucent washes and fine stippled transitions without turning the image into noise.',
-      camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Let color rhythm follow existing shapes and depth without adding patterns or warped axes.',
-      atmosphere_and_mood:
-        'Keep requested mood; chromatic variation is not hallucination, comedy, or disorientation.',
+        'Mixed media: rough pencil, flat cel, photo collage and painted textures.',
+      camera_and_composition: 'Warped perspective, runaway zooms, style changes within one frame.',
+      atmosphere_and_mood: 'Keep the requested mood with euphoric psychedelic freedom.',
       rendering_and_quality:
-        'Keep silhouettes stable, internal transitions controlled, and small details readable under layered color.',
-      key_features:
-        'Undulating internal color; stable contours; layered green-bronze values; restrained stipple.',
+        'Anarchic experimental Studio 4°C frame mixing drawing, paint and photo collage.',
+      key_features: 'Yuasa elasticity; mixed media collage; mutating styles; psychedelic color',
       creative_brief:
-        'Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Masaaki Yuasa feature animation as in Mind Game: mixed media collage of photo faces, rough sketches and flat animation, bodies stretching wildly and styles mutating mid-scene. Carry it through Yuasa elasticity, mixed media collage, mutating styles, psychedelic color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-298',
-    name: 'Nocturnal Social Whirl Style',
-    displayName: 'Nocturnal Social Whirl',
-    styleAnchors: ['Nocturnal Social Whirl Style'],
+    name: 'Night Is Short, Walk on Girl - Nocturnal Social Whirl',
+    displayName: 'Night Is Short, Walk on Girl - Nocturnal Social Whirl',
+    styleAnchors: ['Night Is Short, Walk on Girl - Nocturnal Social Whirl'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Build a nocturne from broad blue-violet shadow masses, narrow warm-cyan points, and softened secondary contours against crisp foreground edges.',
+        'Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Silhouette grouping is allowed only where supplied shapes already overlap.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, use midnight blue, black violet, sodium amber, and cold cyan; keep exact user colors where specified.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Show only practical light supplied by the prompt; keep glints source-bound and omit invented lamps or wet reflections.',
-      texture_and_material:
-        'Apply texture only to materials already present. Use low grain in broad shadows and fine marks on existing lit materials; avoid noise and false sheen.',
+        'Preserve the requested identity, count, pose and action; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks.',
+      color_and_tone: 'Pastel red, mint, cream and deep navy night.',
+      lighting_and_shadow: 'Flat lantern and street glow with simple graphic highlights on faces.',
+      texture_and_material: 'Flat color shapes, simple clean lines and graphic patterns.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Stagger emphasis among existing forms while leaving their arrangement unchanged.',
-      atmosphere_and_mood:
-        'Keep requested emotion; nocturnal contrast does not require secrecy, tension, or social grouping.',
-      rendering_and_quality:
-        'Retain one-to-one subject readability against dark masses and keep small light accents sparse.',
+        'Swirling crowd pans, playful distortions, long walking tracking shots.',
+      atmosphere_and_mood: 'Keep the requested mood with giddy nocturnal whirl.',
+      rendering_and_quality: 'Stylish flat graphic Science SARU frame with bouncy playful motion.',
       key_features:
-        'Blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge.',
+        'Yuasa bounce; Yusuke Nakamura designs; flat pastel; night Kyoto; whirling crowds',
       creative_brief:
-        'Use blue-violet shadow; sparse amber-cyan points; crisp foreground; softened secondary edge. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto. Carry it through Yuasa bounce, Yusuke Nakamura designs, flat pastel, night Kyoto, whirling crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-299',
-    name: 'Dream Invasion Carnival Style',
-    displayName: 'Dream Invasion Carnival',
-    styleAnchors: ['Dream Invasion Carnival Style'],
+    name: 'Paprika - Dream Invasion Carnival',
+    displayName: 'Paprika - Dream Invasion Carnival',
+    styleAnchors: ['Paprika - Dream Invasion Carnival'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Create carousel-like visual rhythm without spectacle: local arcs and facets, saturated color fields, and alternating hard-soft boundaries.',
+        'Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival.',
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Curvature changes line rhythm only and cannot create masks, costumes, or new shapes.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, balance violet, rose, amber, and electric cyan in controlled contrasts; preserve prompt-selected colors.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Follow existing sources and soften only supplied highlights; add no glow source, bloom, or lighting event.',
+        'Preserve the requested identity, count, pose and action; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism.',
+      color_and_tone: 'Glittering gold, carnival red, toy colors and night-city blues.',
+      lighting_and_shadow: 'Parade lights, confetti glitter and glowing dream haze.',
       texture_and_material:
-        'Apply texture only to materials already present. Use smooth cel layers with subtle boundary stipple; avoid confetti, decorative motifs, and noisy gradients.',
+        'Dense detailed cel parade crowds, confetti particles and painted city.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Arc or diagonal emphasis may follow existing masses but must not create a fairground arrangement.',
-      atmosphere_and_mood:
-        'Preserve emotional intent; saturated color and curved rhythm impose no delirium or theatricality.',
-      rendering_and_quality:
-        'Keep shape boundaries legible under color shifts and use contrast rather than added detail to separate planes.',
+        'Endless parade flowing across wide street views, low angles on giant figures.',
+      atmosphere_and_mood: 'Keep the requested mood with euphoric creeping madness.',
+      rendering_and_quality: 'Dense lavish 2006 Madhouse feature frame crowded with parade detail.',
       key_features:
-        'Local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms.',
+        'Satoshi Kon dream parade; animated household objects; confetti; glittering madness',
       creative_brief:
-        'Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival. Carry it through Satoshi Kon dream parade, animated household objects, confetti, glittering madness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-289',
-    name: 'Ascetic Gothic Silence Style',
-    displayName: 'Ascetic Gothic Silence',
-    styleAnchors: ['Ascetic Gothic Silence Style'],
+    name: "Angel's Egg - Ascetic Gothic Silence",
+    displayName: "Angel's Egg - Ascetic Gothic Silence",
+    styleAnchors: ["Angel's Egg - Ascetic Gothic Silence"],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Use ascetic chiaroscuro: blue-black masses, clean bone-gray cutouts, hairline ink edges, and scarce engraved hatch.',
+        "Mamoru Oshii feature animation with Yoshitaka Amano designs as in Angel's Egg: a drowned gothic city in eternal dusk, fossil shadows, water everywhere and near-monochrome painterly stillness.",
       subject_treatment:
-        'Keep the requested identities, count, anatomy, proportions, pose and action. Hatch defines existing forms without adding costume or ornament.',
-      color_and_tone:
-        'Honor explicitly requested colors. When no palette is specified, restrict color to deep ink, smoke gray, and bone white, with at most one accent already supported by the prompt.',
-      lighting_and_shadow:
-        'Respect the supplied light sources and direction. Respect supplied light; use a narrow hard rim against broad shadow, never invent candlelight.',
-      texture_and_material:
-        'Apply texture only to materials already present. Keep cross-hatch sparse and tied to present surface texture; leave smooth areas unornamented.',
+        'Preserve the requested identity, count, pose and action; draw people with Amano elegance, thin delicate faces, long pale hair and heavy robes, moving very slowly.',
+      color_and_tone: 'Near-monochrome blue-grey, deep teal shadow and pale ivory highlights.',
+      lighting_and_shadow: 'Dim dusk light, candle glow, reflections in still water.',
+      texture_and_material: 'Painterly detailed backgrounds, fine lines, water and stone.',
       camera_and_composition:
-        'Preserve the requested viewpoint, relative placement, and crop. Use austere negative-space balance only within existing geometry, adding no architecture or vignette.',
-      atmosphere_and_mood:
-        "Preserve the requested emotional tone. Maintain the user's emotional tone; silence is low mark density, not solemnity or gothic content.",
+        'Long static compositions, extreme silence, figures small in vast ruins.',
+      atmosphere_and_mood: 'Keep the requested mood with austere mystical silence.',
       rendering_and_quality:
-        'Protect thin contours from noise, hold dark values clean, and preserve detail within high-contrast silhouettes.',
-      key_features: 'Blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch.',
+        'Sparse painterly 1985 hand-drawn feature frame with meditative stillness.',
+      key_features:
+        'Oshii silence; Amano designs; drowned gothic city; monochrome dusk; still water',
       creative_brief:
-        'Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.',
+        "Mamoru Oshii feature animation with Yoshitaka Amano designs as in Angel's Egg: a drowned gothic city in eternal dusk, fossil shadows, water everywhere and near-monochrome painterly stillness. Carry it through Oshii silence, Amano designs, drowned gothic city, monochrome dusk, still water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

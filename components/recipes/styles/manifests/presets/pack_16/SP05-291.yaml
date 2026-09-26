@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-291
 packId: pack_16
-name: Delicate Reconciliation Style
+name: A Silent Voice - Delicate Reconciliation
 styleAnchors:
-  - 'Delicate Reconciliation Style'
-displayName: 'Delicate Reconciliation'
+  - A Silent Voice - Delicate Reconciliation
+displayName: A Silent Voice - Delicate Reconciliation
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Blend fine contour with dilute wash: delicate line, pale transparent planes, and gradual
-    warm-cool transitions at adjacent edges.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Harmonize
-    neighboring edge values without implying contact or reconciliation.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use pale aqua, sage,
-    blue-gray, cream, and a measured warm yellow or rose accent; respect user-selected hues.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use diffused light and soft midtone
-    transitions from the existing source, never added rain, mist, or halo.
-  texture_and_material: >-
-    Apply texture only to materials already present. Lay thin glaze and sparse paper grain over
-    existing materials; keep edges dry and avoid dripping texture.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Soften transitions only
-    where forms already meet or sit nearby.
-  atmosphere_and_mood: >-
-    Keep the stated mood; reconciliation describes edge integration, not narrative or
-    expression.
-  rendering_and_quality: >-
-    Retain clear subject boundaries through the wash and avoid smoothing away requested detail.
-  key_features: >-
-    Fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending.
-  creative_brief: 'Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Naoko Yamada and Kyoto Animation feature animation as in A Silent Voice: soft delicate designs, attention to feet, hands and hair, shallow-focus framing and pastel riverside town light.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with soft KyoAni designs, large gentle eyes, detailed hair, and expressive small gestures of hands and feet.
+  color_and_tone: Pastel spring palette, soft teal, pink, cream and pale blue water.
+  lighting_and_shadow: Soft diffuse daylight, sparkling bokeh, gentle backlight halos.
+  texture_and_material: Clean digital cel, shallow depth of field, light leaks and floating petals.
+  camera_and_composition: Framing on feet and hands, off-center compositions, faces partly cropped, rack focus.
+  atmosphere_and_mood: Keep the requested mood with fragile hopeful reconciliation.
+  rendering_and_quality: Refined Kyoto Animation feature frame with photographic depth.
+  key_features: Naoko Yamada framing; feet and hands; shallow focus; pastel light; KyoAni softness
+  creative_brief: "Naoko Yamada and Kyoto Animation feature animation as in A Silent Voice: soft delicate designs, attention to feet, hands and hair, shallow-focus framing and pastel riverside town light. Carry it through Naoko Yamada framing, feet and hands, shallow focus, pastel light, KyoAni softness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-291.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-347
 packId: pack_16
-name: Uphill Endurance Breakaway Style
+name: Yowamushi Pedal - Uphill Endurance Breakaway
 styleAnchors:
-  - Uphill Endurance Breakaway Style
-displayName: Uphill Endurance Breakaway
+  - Yowamushi Pedal - Uphill Endurance Breakaway
+displayName: Yowamushi Pedal - Uphill Endurance Breakaway
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Cycling anime of uphill suffering: steep roads, gritted teeth, legs burning and the summit always one curve away.'
-  subject_treatment: Keep the prompt's subject and action; show sustained effort up a slope, fatigue and determination in every line.
-  color_and_tone: Mountain greens and asphalt grey with jersey color accents and hot sweaty skin tones.
-  lighting_and_shadow: Harsh sun through trees in dappled patches, sweat catching highlights.
-  texture_and_material: Rough asphalt, carbon bike frames and soaked jerseys in crisp cel.
-  camera_and_composition: Low side angles up the slope, riders tilted against the gradient.
-  atmosphere_and_mood: Grueling and stubborn, pain turned into rhythm on a climb that never ends.
-  rendering_and_quality: Detailed sports anime with mechanical accuracy and expressive strain.
-  key_features: uphill gradient; gritted teeth; dappled sun; breakaway
-  creative_brief: "Cycling anime of uphill suffering: steep roads, gritted teeth, legs burning and the summit always one curve away. Carry it through uphill gradient, gritted teeth, dappled sun, breakaway. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'TMS Yowamushi Pedal television look (2013) from Wataru Watanabe designs: grimacing climbers, exaggerated sweat and strain, speed lines on steep roads and elastic comedic faces.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Watanabe designs, gangly cyclists, huge grimaces, round glasses, sweat spray and team kits.
+  color_and_tone: Team kit yellow, road grey, mountain green and sky blue.
+  lighting_and_shadow: Bright mountain daylight, heat shimmer and sweat highlights.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Steep road perspective, handlebar-level views and strained close-ups.
+  atmosphere_and_mood: Keep the requested mood with screaming uphill determination.
+  rendering_and_quality: Intense sports television frame with exaggerated strain expression.
+  key_features: Yowamushi grimaces; steep climbs; speed lines; sweat spray
+  creative_brief: "TMS Yowamushi Pedal television look (2013) from Wataru Watanabe designs: grimacing climbers, exaggerated sweat and strain, speed lines on steep roads and elastic comedic faces. Carry it through Yowamushi grimaces, steep climbs, speed lines, sweat spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-347.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-306
 packId: pack_16
-name: Adult Domestic Warmth Style
+name: Maison Ikkoku - Adult Domestic Warmth
 styleAnchors:
-  - 'Adult Domestic Warmth Style'
-displayName: 'Adult Domestic Warmth'
+  - Maison Ikkoku - Adult Domestic Warmth
+displayName: Maison Ikkoku - Adult Domestic Warmth
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use understated interior marks that retain subtle expression, identity and material clues; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use warm gray, faded umber, muted rose and cream. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as broad soft value pools bounded by simple cel edges and matched to the stated light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte pigment, delicate paper grain and low-intensity airbrush transitions as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use human-scale intervals and uncomplicated layers within the original crop; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through softened edges and subtle value changes; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use observed, restrained linework with stable colors and no photographic modeling; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Rumiko Takahashi Maison Ikkoku anime (1986): gentle adult romance in an old wooden boarding house, soft Akemi Takada designs, sunset town streets and everyday domestic detail.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw adults with soft Takada designs, gentle eyes, natural hair and everyday eighties clothes and aprons.
+  color_and_tone: Warm sunset orange, faded wood browns, soft greens and cream.
+  lighting_and_shadow: Sunset light through windows, warm kitchen lamps and evening shadows.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Domestic interiors, porch conversations and quiet townscape wides at dusk.
+  atmosphere_and_mood: Keep the requested mood with tender adult warmth.
+  rendering_and_quality: Gentle 1980s television cel frame with lived-in detail.
+  key_features: Maison Ikkoku warmth; Takada designs; boarding house; sunset town; everyday detail
+  creative_brief: "Rumiko Takahashi Maison Ikkoku anime (1986): gentle adult romance in an old wooden boarding house, soft Akemi Takada designs, sunset town streets and everyday domestic detail. Carry it through Maison Ikkoku warmth, Takada designs, boarding house, sunset town, everyday detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-306.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

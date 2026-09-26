@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-297
 packId: pack_16
-name: Hyperobserved Rain Intimacy Style
+name: The Garden of Words - Hyperobserved Rain Intimacy
 styleAnchors:
-  - 'Hyperobserved Rain Intimacy Style'
-displayName: 'Hyperobserved Rain Intimacy'
+  - The Garden of Words - Hyperobserved Rain Intimacy
+displayName: The Garden of Words - Hyperobserved Rain Intimacy
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Hyper-observational surface drawing: hairline contours and highly localized tactile detail
-    fall quickly into soft painted surroundings.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Reserve fine
-    detail for already prominent areas and do not create a close-up.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor cool blue-gray and
-    green with narrow amber notes; retain supplied colors and reflectivity.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow existing sources; limit small
-    reflections to materials already reflective and keep other surfaces matte.
-  texture_and_material: >-
-    Apply texture only to materials already present. Concentrate granular strokes on the current
-    focal material; add no droplets, wet sheen, or absent texture.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let detail fall off around
-    the existing focal point without changing camera distance.
-  atmosphere_and_mood: >-
-    Preserve requested mood; intimacy means a fine-to-soft detail range, not a relationship.
-  rendering_and_quality: >-
-    Keep focal edges crisp, surrounding marks subdued, and avoid artificial depth blur over
-    requested elements.
-  key_features: >-
-    Hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff.
-  creative_brief: 'Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes.
+  color_and_tone: Deep emerald, rain grey, jade and soft warm skin light.
+  lighting_and_shadow: Green-filtered rain light, reflections on wet surfaces, glowing sky breaks.
+  texture_and_material: Hyper-detailed painted leaves, droplets, ripples and reflective stone.
+  camera_and_composition: Macro shots of droplets, framed pavilion shots through foliage, ripples on ponds.
+  atmosphere_and_mood: Keep the requested mood with intimate rainy stillness.
+  rendering_and_quality: Polished Shinkai frame with hyperreal rain detail and glistening foliage.
+  key_features: Shinkai rain garden; emerald foliage; droplets; pavilion; hyperreal detail
+  creative_brief: "Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions. Carry it through Shinkai rain garden, emerald foliage, droplets, pavilion, hyperreal detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-297.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

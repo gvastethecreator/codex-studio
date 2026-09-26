@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-018
 packId: pack_16
-name: Dusty Space-Western Absurdity Style
+name: Yasuhiro Nightow - Dusty Space-Western Absurdity
 styleAnchors:
-  - 'Dusty Space-Western Absurdity Style'
-displayName: 'Dusty Space-Western Absurdity'
+  - Yasuhiro Nightow - Dusty Space-Western Absurdity
+displayName: Yasuhiro Nightow - Dusty Space-Western Absurdity
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,37 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A dusty 90s cel style pairs relaxed, elongated contour strokes with abrupt angular accents and
-    sun-worn color. Its absurdity lives in elastic timing and uneven scale, not a western or space
-    setting.
-  subject_treatment: >-
-    Keep the requested subject and proportions. Give existing gestures an easy, slightly elastic
-    contour rhythm; do not add a cowboy, vehicle, weapon or comic gag.
-  color_and_tone: >-
-    When color is open, contrast dusty ochre and faded coral with cool blue-violet shadow. Preserve
-    requested hues and keep saturation uneven rather than uniformly bright.
-  lighting_and_shadow: >-
-    Use broad warm-cool value separation and crisp cel shadow shapes. Follow the requested light
-    without adding a desert sun or artificial rim.
-  texture_and_material: >-
-    Use painted fills with dry, dusty grain and a few rough ink accents. Keep material response
-    faithful and avoid coating everything in dust.
-  camera_and_composition: >-
-    Allow an off-kilter balance and a long directional sweep within the requested framing. Preserve
-    camera and layout; do not add a horizon, vehicle or western staging.
-  atmosphere_and_mood: >-
-    Create a wry, loose rhythm only through contour and spacing. Keep the requested emotional register
-    instead of inserting a joke or outlaw plot.
-  rendering_and_quality: >-
-    Combine clean cel separation with selective edge roughness and restrained background detail. Avoid
-    uniform VHS damage or smeared motion.
-  key_features: >-
-    elongated relaxed contours with abrupt angular accents; dusty warm-cool contrast; playful visual
-    timing without literal gags
-  creative_brief: 'Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props. Use it as a reusable look on any subject.'
+  aesthetic: 'Yasuhiro Nightow manga look as in Trigun: scratchy energetic pen lines, dense mechanical guns, flapping coats, desert grit and gags breaking into super-deformed faces.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nightow designs, lanky figures, spiky hair, dramatic coats and grimacing or goofy faces.
+  color_and_tone: Black ink with grey screentone and dusty sepia washes.
+  lighting_and_shadow: Harsh desert sun rendered with hard ink shadows and speckled textures.
+  texture_and_material: Scratchy pen lines, dense crosshatching, speed lines and sand grit.
+  camera_and_composition: Dynamic manga angles, extreme perspective guns, sudden comic panels.
+  atmosphere_and_mood: Keep the requested mood with dusty absurd heroism.
+  rendering_and_quality: Energetic black-and-white manga illustration with scratchy density and speed lines.
+  key_features: Yasuhiro Nightow scratchy line; desert grit; big coats; super-deformed gags
+  creative_brief: "Yasuhiro Nightow manga look as in Trigun: scratchy energetic pen lines, dense mechanical guns, flapping coats, desert grit and gags breaking into super-deformed faces. Carry it through Yasuhiro Nightow scratchy line, desert grit, big coats, super-deformed gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky blond gunman in a red coat and round sunglasses
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -65,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-018.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

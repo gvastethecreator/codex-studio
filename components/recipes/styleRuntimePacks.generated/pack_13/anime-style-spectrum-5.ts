@@ -121,31 +121,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-339',
-    name: 'Adult Suspense Microgesture',
+    name: 'Naoki Urasawa - Adult Suspense Microgesture',
+    displayName: 'Naoki Urasawa - Adult Suspense Microgesture',
+    styleAnchors: ['Naoki Urasawa - Adult Suspense Microgesture'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring microgesture detail, overlapping contour detail merging forms, specular bloom flattening low-key values",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring microgesture detail, overlapping contour detail merging forms, specular bloom flattening low-key values, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use restrained naturalistic contours and small, precise details only where the prompt provides them; suspense is carried by a minute shift in shape, gaze or spacing, not by a stock character.',
+        'Naoki Urasawa manga style, as in his long psychological suspense series: grounded realist seinen drawing where ordinary adult faces carry individual wrinkles, heavy eyelids, imperfect noses and ears, and suspense lives in one silent held reaction.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic adult proportions, small eyes, individualized features, believable hair and everyday clothing folds, never generic big-eyed anime faces.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: choose a muted, controlled palette with small value changes; preserve explicit color and avoid turning restraint into monochrome by default.',
+        'Black-and-white manga page: black ink, grey screentone and paper white, with at most one pale wash of color on a single object.',
       lighting_and_shadow:
-        'Soft practical light, modest shadow edges and precise local contrast reveal detail without melodramatic rim light.',
+        'Flat naturalistic light shaped by screentone gradients and solid black shadow shapes that grow heavier as the tension rises.',
       texture_and_material:
-        'Keep texture quiet and fine, with naturalistic line weight and no gritty overlay unless the prompt calls for it.',
+        'Clean confident G-pen contour with slight weight variation, sparse economical hatching, dot screentone, white paper showing through; drawn line art, not painting or photo.',
       camera_and_composition:
-        'Let measured spacing and quiet negative space hold attention; preserve the requested view and avoid forced close-ups.',
+        'Cinematic manga panel staging: tight close-ups on a face reacting in silence, steady mid shots in ordinary streets, offices and apartment hallways.',
       atmosphere_and_mood:
-        "Adult suspense means controlled ambiguity in the rendering; retain the user's mood and do not presume age, gender or sexuality.",
+        'Keep the requested mood with quiet creeping dread under everyday human warmth.',
       rendering_and_quality:
-        'Place fine detail only on supplied forms; add no person, expression, threat, prop or implied narrative. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
+        'Precise realist manga illustration, every face distinct and every gesture observed from life, no glossy digital polish.',
       key_features:
-        'Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense.',
+        'Naoki Urasawa realism; individualized adult faces; held silent reaction; screentone and hatching; ordinary settings',
       creative_brief:
-        'Apply this visual treatment to the requested content: Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Naoki Urasawa manga style, as in his long psychological suspense series: grounded realist seinen drawing where ordinary adult faces carry individual wrinkles, heavy eyelids, imperfect noses and ears, and suspense lives in one silent held reaction. Carry it through Naoki Urasawa realism, individualized adult faces, held silent reaction, screentone and hatching, ordinary settings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {

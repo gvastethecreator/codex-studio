@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-320
 packId: pack_16
-name: Charismatic Space Rogue Pulp Style
+name: Space Adventure Cobra - Charismatic Space Rogue Pulp
 styleAnchors:
-  - 'Charismatic Space Rogue Pulp Style'
-displayName: 'Charismatic Space Rogue Pulp'
+  - Space Adventure Cobra - Charismatic Space Rogue Pulp
+displayName: Space Adventure Cobra - Charismatic Space Rogue Pulp
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use robust outer shapes with sparse inner lines while preserving the requested design; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use coal, oxblood, cream and tawny accents. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as firm directional cel blocks with abrupt but readable transitions; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply soft dry brush, slight paper tooth and fine film grain without frame damage as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use compact shape clusters balanced by open negative areas in the existing frame; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through ink contrast and crisp contour curls; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use poster-like value clarity with controlled roughness and unaltered subject detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes.
+  color_and_tone: Neon space purple, gold, red and glossy chrome.
+  lighting_and_shadow: Harsh highlights, psychedelic backlight and glowing space nebulae.
+  texture_and_material: Hand-painted cels with glossy highlights and Dezaki pastel freeze frames.
+  camera_and_composition: Split screens, triple-take zooms and freeze-frame pastel postcards at key moments.
+  atmosphere_and_mood: Keep the requested mood with swaggering pulp adventure.
+  rendering_and_quality: Stylish 1982 hand-painted frame with Dezaki postcard effects.
+  key_features: Buichi Terasawa designs; Dezaki freeze frames; psychedelic space; pulp glamour
+  creative_brief: "Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames. Carry it through Buichi Terasawa designs, Dezaki freeze frames, psychedelic space, pulp glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-suited hero with a psychogun arm
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-320.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a red-suited hero with a psychogun arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

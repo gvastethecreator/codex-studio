@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-030
 packId: pack_16
-name: Gothic Soul-Pop Action Style
+name: Soul Eater - Gothic Soul-Pop Action
 styleAnchors:
-  - 'Gothic Soul-Pop Action Style'
-displayName: 'Gothic Soul-Pop Action'
+  - Soul Eater - Gothic Soul-Pop Action
+displayName: Soul Eater - Gothic Soul-Pop Action
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Ornamental shadow shapes meet crisp graphic accents and clear motion
-    contours.
-  subject_treatment: >-
-    Preserve the prompted subject and action. Use motion-ready contours and visible force
-    transfer within the existing gesture.
-  color_and_tone: >-
-    If palette is open, use black, crimson, bone, violet and occasional polished-gold
-    accents. Retain all explicit colors.
-  lighting_and_shadow: >-
-    Use localized warm glow, hard rim and deep velvet-like shadow, keeping the source
-    consistent with the prompt.
-  texture_and_material: >-
-    Render ornamental ink and polished-to-matte contrast only on surfaces already present.
-  camera_and_composition: >-
-    Keep the requested camera. When action is present, clarify attack direction, recoil
-    spacing and motion lanes without inventing action.
-  atmosphere_and_mood: >-
-    Let the requested tone set the balance of elegance, danger or spectacle.
-  rendering_and_quality: >-
-    Keep impact contours crisp, shadows grouped and background painting integrated without
-    obscuring motion.
-  key_features: >-
-    Ornamental shadow shapes; hard rim over deep soft shadow; bright graphic accents;
-    readable force-transfer lines.
-  creative_brief: 'Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing. Use it as a reusable look on any subject.'
+  aesthetic: 'BONES Soul Eater television look (2008): Atsushi Ohkubo designs, Tim Burton-like crooked city, grinning sun and moon, stark black shapes and punk gothic pop.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ohkubo designs, triangular grins with pointed teeth, lanky bodies, punk gothic clothes and stitched details.
+  color_and_tone: Black, blood red, bone white and acid yellow.
+  lighting_and_shadow: Flat graphic shadows, glowing grinning sun and moon, stark silhouettes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Crooked Dutch angles, rooftop leaps and crooked architecture.
+  atmosphere_and_mood: Keep the requested mood with playful gothic mischief.
+  rendering_and_quality: Graphic 2008 BONES television frame with gothic pop flair.
+  key_features: Atsushi Ohkubo grins; crooked city; grinning sun and moon; gothic pop
+  creative_brief: "BONES Soul Eater television look (2008): Atsushi Ohkubo designs, Tim Burton-like crooked city, grinning sun and moon, stark black shapes and punk gothic pop. Carry it through Atsushi Ohkubo grins, crooked city, grinning sun and moon, gothic pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a scythe-weapon partner with white hair
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-030.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a scythe-weapon partner with white hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -5,176 +5,161 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-031',
-    name: 'Institutional Liminal Dread Anime',
-    displayName: 'Institutional Liminal Dread Anime',
-    styleAnchors: ['Institutional Liminal Dread Anime'],
+    name: 'Kengo Hanazawa - Institutional Liminal Dread',
+    displayName: 'Kengo Hanazawa - Institutional Liminal Dread',
+    styleAnchors: ['Kengo Hanazawa - Institutional Liminal Dread'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching.',
+        'Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it in a too-clean, too-empty space where something is slightly wrong.",
-      color_and_tone:
-        'Sickly fluorescent green-white, beige walls and dim blue shadows with no warm color at all.',
+        'Preserve the requested identity, count, pose and action; draw people with Hanazawa realism, awkward plain faces, slouched bodies, ordinary work clothes and nervous expressions.',
+      color_and_tone: 'Black ink with grey tone, fluorescent pallor and dull institutional greens.',
       lighting_and_shadow:
-        'Flat overhead fluorescent light, one flickering tube and dark doorways that swallow the light.',
+        'Buzzing fluorescent light, dim emergency lights and long corridor shadows.',
       texture_and_material:
-        'Linoleum floors, painted cinder block and glass partitions drawn with clean, cold line.',
+        'Photo-traced architectural line, screentone and fine hatching on faces.',
       camera_and_composition:
-        'Long one-point perspective corridors with the subject small, or a single door filling the frame.',
-      atmosphere_and_mood:
-        'Quietly wrong and uneasy, like an empty school or hospital that should not be empty.',
+        'Long deep corridors in one-point perspective with a small figure far away.',
+      atmosphere_and_mood: 'Keep the requested mood with mundane creeping dread.',
       rendering_and_quality:
-        'Clean, restrained horror anime with precise perspective and minimal effects.',
-      key_features: 'one-point corridors; fluorescent hum; repeated doors; emptiness',
+        'Realist horror manga illustration with photographic background detail.',
+      key_features: 'Kengo Hanazawa realism; photo-traced corridors; awkward faces; mundane dread',
       creative_brief:
-        "Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching. Carry it through one-point corridors, fluorescent hum, repeated doors, emptiness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces. Carry it through Kengo Hanazawa realism, photo-traced corridors, awkward faces, mundane dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-032',
-    name: 'Crimson Celestial Omen Anime',
-    displayName: 'Crimson Celestial Omen Anime',
-    styleAnchors: ['Crimson Celestial Omen Anime'],
+    name: 'Shuzo Oshimi - Crimson Celestial Omen',
+    displayName: 'Shuzo Oshimi - Crimson Celestial Omen',
+    styleAnchors: ['Shuzo Oshimi - Crimson Celestial Omen'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people.',
+        'Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place an ominous sky event above it, the people below small and still.",
-      color_and_tone: 'Blood crimson sky, black silhouettes and a sickly pale glow on faces.',
+        'Preserve the requested identity, count, pose and action; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes.',
+      color_and_tone: 'Black ink and grey tone with a single ominous crimson in the sky.',
       lighting_and_shadow:
-        'Red light from above, long shadows in odd directions and no normal sunlight.',
-      texture_and_material: 'Smooth painted skies, clean cel figures and faint grain.',
-      camera_and_composition: 'Low horizons with huge skies taking most of the frame.',
-      atmosphere_and_mood:
-        'Ominous and silent, the whole world holding its breath beneath a warning sign.',
-      rendering_and_quality: 'Painterly prestige anime skies with crisp small silhouettes below.',
-      key_features: 'red sky omen; huge celestial body; tiny silhouettes; low horizon',
+        'Flat dusk light, long wrong-pointing shadows and eerie glow from the sky.',
+      texture_and_material: 'Soft pencil-like line, trembling contours and blank white space.',
+      camera_and_composition:
+        'Wide empty landscapes with tiny figures and sudden extreme close-ups on eyes.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet psychological omen.',
+      rendering_and_quality:
+        'Unsettling psychological manga illustration with vast emptiness and trembling faces.',
+      key_features: 'Shuzo Oshimi stillness; trembling lines; empty skies; staring eyes',
       creative_brief:
-        "Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people. Carry it through red sky omen, huge celestial body, tiny silhouettes, low horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness. Carry it through Shuzo Oshimi stillness, trembling lines, empty skies, staring eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-033',
-    name: 'Grotesque Marionette Spotlight Anime',
-    displayName: 'Grotesque Marionette Spotlight Anime',
-    styleAnchors: ['Grotesque Marionette Spotlight Anime'],
+    name: 'Kazuhiro Fujita - Grotesque Marionette Spotlight',
+    displayName: 'Kazuhiro Fujita - Grotesque Marionette Spotlight',
+    styleAnchors: ['Kazuhiro Fujita - Grotesque Marionette Spotlight'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Theatrical horror anime of puppets and stages: jointed bodies, strings, painted faces and a single hard spotlight.',
+        'Kazuhiro Fujita manga look as in Karakuri Circus: wild scratchy ink, grotesque automaton marionettes, circus stages, exaggerated faces and furious action lines.',
       subject_treatment:
-        "Keep the prompt's subject and setting; stage it as if performed, with strings, stage edges or puppet-like joints where fitting.",
-      color_and_tone:
-        'Black stage with a single warm white spotlight, faded red velvet and chipped paint colors.',
-      lighting_and_shadow:
-        'One hard spotlight from above, everything outside it in black, long shadows on the boards.',
-      texture_and_material:
-        'Chipped lacquer, wooden joints, strings, velvet curtains and stage dust.',
+        'Preserve the requested identity, count, pose and action; draw people with Fujita designs, wild hair, huge expressive eyes, gaunt or grinning faces and marionettes with jointed limbs.',
+      color_and_tone: 'Black ink with dense grey tone and spotlight white.',
+      lighting_and_shadow: 'Hard single spotlight on stage and deep black surrounding darkness.',
+      texture_and_material: 'Scratchy energetic pen line, crosshatching and splattered ink.',
       camera_and_composition:
-        'Proscenium framing from the audience or low angles from the stage floor.',
-      atmosphere_and_mood:
-        'Uncanny and theatrical, an audience of empty seats watching something performed.',
+        'Stage-center spotlight compositions, dramatic puppet poses and low angles.',
+      atmosphere_and_mood: 'Keep the requested mood with grotesque theatrical horror.',
       rendering_and_quality:
-        'Stylized prestige anime with stark contrast and fine material detail.',
-      key_features: 'single spotlight; strings and joints; chipped paint; empty seats',
+        'Frenetic hand-inked manga illustration with grotesque puppetry and furious motion.',
+      key_features: 'Kazuhiro Fujita scratch; grotesque marionettes; circus spotlight; wild ink',
       creative_brief:
-        "Theatrical horror anime of puppets and stages: jointed bodies, strings, painted faces and a single hard spotlight. Carry it through single spotlight, strings and joints, chipped paint, empty seats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kazuhiro Fujita manga look as in Karakuri Circus: wild scratchy ink, grotesque automaton marionettes, circus stages, exaggerated faces and furious action lines. Carry it through Kazuhiro Fujita scratch, grotesque marionettes, circus spotlight, wild ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-034',
-    name: 'Deep Void Whisper Anime',
-    displayName: 'Deep Void Whisper Anime',
-    styleAnchors: ['Deep Void Whisper Anime'],
+    name: 'Inio Asano - Deep Void Whisper',
+    displayName: 'Inio Asano - Deep Void Whisper',
+    styleAnchors: ['Inio Asano - Deep Void Whisper'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe.',
+        'Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread.',
       subject_treatment:
-        "Keep the prompt's subject and setting; surround it with vast darkness or depth so it feels small and exposed.",
-      color_and_tone: 'Near-black blues and greens with a pale, weak light on the subject only.',
-      lighting_and_shadow:
-        'One weak light source fading quickly into total darkness, no fill at all.',
-      texture_and_material:
-        'Still black water, damp stone and faint particles drifting in the dark.',
-      camera_and_composition:
-        'Top-down views into depths or wide frames that are mostly black with a small lit subject.',
-      atmosphere_and_mood:
-        'Silent and vertiginous, as if something far below is listening very carefully.',
-      rendering_and_quality:
-        'Low-key prestige anime with subtle gradients and very restrained detail.',
-      key_features: 'vast darkness; tiny lit subject; still black water; depth',
+        'Preserve the requested identity, count, pose and action; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces.',
+      color_and_tone: 'Black ink with fine grey tone and deep black voids.',
+      lighting_and_shadow: 'Dim lantern light swallowed by vast darkness and faint reflections.',
+      texture_and_material: 'Photo-derived line, fine tone and immaculate empty black fields.',
+      camera_and_composition: 'Tiny figures in huge empty frames and quiet overhead views.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely existential dread.',
+      rendering_and_quality: 'Precise contemporary manga illustration with vast quiet voids.',
+      key_features: 'Inio Asano voids; photo-derived backgrounds; lonely figures; stillness',
       creative_brief:
-        "Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe. Carry it through vast darkness, tiny lit subject, still black water, depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread. Carry it through Inio Asano voids, photo-derived backgrounds, lonely figures, stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-035',
-    name: 'Ritual Mask Geometry Anime',
-    displayName: 'Ritual Mask Geometry Anime',
-    styleAnchors: ['Ritual Mask Geometry Anime'],
+    name: 'Gekidan Inu Curry - Ritual Mask Geometry',
+    displayName: 'Gekidan Inu Curry - Ritual Mask Geometry',
+    styleAnchors: ['Gekidan Inu Curry - Ritual Mask Geometry'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony.',
+        'Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures.',
       subject_treatment:
-        "Keep the prompt's subject and setting; frame it inside a symmetrical ceremony, with masks and geometric patterns where fitting.",
-      color_and_tone: 'Black, bone white and deep red with firelight gold on mask edges.',
-      lighting_and_shadow:
-        'Torch and bonfire light from below, flickering hard shadows across masked faces.',
-      texture_and_material: 'Carved wooden masks, painted geometric patterns, rough robes and ash.',
-      camera_and_composition:
-        'Strict symmetry with a central axis, processions leading to a vanishing point.',
-      atmosphere_and_mood:
-        'Ceremonial and menacing, something ancient being honored in the wrong way.',
-      rendering_and_quality:
-        'Graphic prestige anime with sharp pattern detail and strong symmetry.',
-      key_features: 'geometric masks; strict symmetry; firelight from below; procession',
+        'Preserve the requested identity, count, pose and action; draw people as simple silhouettes or clean anime figures surrounded by cut-paper collage creatures and geometric masks.',
+      color_and_tone: 'Antique print sepia, candy pastels, black and sudden saturated reds.',
+      lighting_and_shadow: 'Flat collage light where shapes glow by contrast rather than source.',
+      texture_and_material:
+        'Cut-paper collage, antique engraving scraps, stamps and geometric patterns.',
+      camera_and_composition: 'Flat layered collage compositions with symmetrical ritual layouts.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny ritual nightmare.',
+      rendering_and_quality: 'Surreal collage animation frame with storybook nightmare logic.',
+      key_features: 'Inu Curry collage; antique print scraps; geometric masks; labyrinth',
       creative_brief:
-        "Occult horror anime of rituals and masks: symmetrical processions, geometric mask designs and firelit ceremony. Carry it through geometric masks, strict symmetry, firelight from below, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures. Carry it through Inu Curry collage, antique print scraps, geometric masks, labyrinth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-086',
-    name: 'Cursed Videotape Horror Anime',
-    displayName: 'Cursed Videotape Horror Anime',
-    styleAnchors: ['Cursed Videotape Horror Anime', 'analog tape horror anime', 'tracking noise'],
+    name: 'Masaaki Nakayama - Cursed Videotape Horror',
+    displayName: 'Masaaki Nakayama - Cursed Videotape Horror',
+    styleAnchors: [
+      'Masaaki Nakayama - Cursed Videotape Horror',
+      'analog tape horror anime',
+      'tracking noise',
+    ],
     category: '7. Horror',
     domain: 'analog tape horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there.',
+        'Masaaki Nakayama manga look as in Fuan no Tane: ordinary everyday scenes with one wrongly placed figure, stiff doll-like apparitions and quiet shock panels.',
       subject_treatment:
-        "Keep the prompt's subject and setting; show it as recorded footage, with tape damage getting worse near the frightening detail.",
-      color_and_tone:
-        'Faded washed-out color with magenta and green chroma bleed and crushed blacks.',
-      lighting_and_shadow:
-        'Harsh on-camera light or dim household lamps, blown highlights and murky shadows.',
-      texture_and_material:
-        'VHS tracking lines, dropouts, noise bands and soft tape blur over clean anime line.',
-      camera_and_composition:
-        'Handheld home-video framing, slightly tilted, with the unsettling detail small and off-center.',
-      atmosphere_and_mood:
-        'Creeping and wrong, the feeling of watching a tape that someone left for you.',
-      rendering_and_quality:
-        'Clean anime footage degraded by convincing analog tape artifacts that never hide the subject.',
+        'Preserve the requested identity, count, pose and action; draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong.',
+      color_and_tone: 'Black ink and grey tone with washed-out home-video tint.',
+      lighting_and_shadow: 'Flat domestic light with a dark doorway or hallway holding the threat.',
+      texture_and_material: 'Clean realistic pen line, tone and slightly degraded video noise.',
+      camera_and_composition: 'Snapshot-like framing with the apparition small in the background.',
+      atmosphere_and_mood: 'Keep the requested mood with sudden quiet shock.',
+      rendering_and_quality: 'Understated horror manga illustration with a single wrong detail.',
       creative_brief:
-        "Analog horror anime seen through a worn videotape: tracking noise, color bleed and single frames that should not be there. Carry it through tracking noise, chroma bleed, handheld tilt, small wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'tracking noise; chroma bleed; handheld tilt; small wrong detail',
+        "Masaaki Nakayama manga look as in Fuan no Tane: ordinary everyday scenes with one wrongly placed figure, stiff doll-like apparitions and quiet shock panels. Carry it through Masaaki Nakayama apparitions, everyday scenes, one wrong figure, quiet shock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Masaaki Nakayama apparitions; everyday scenes; one wrong figure; quiet shock',
     },
     ui: {
       previewStatus: 'pending',
@@ -182,37 +167,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-087',
-    name: 'Slow Metamorphosis Dread Anime',
-    displayName: 'Slow Metamorphosis Dread Anime',
+    name: 'Junji Ito - Slow Metamorphosis Dread',
+    displayName: 'Junji Ito - Slow Metamorphosis Dread',
     styleAnchors: [
-      'Slow Metamorphosis Dread Anime',
+      'Junji Ito - Slow Metamorphosis Dread',
       'transformation horror anime',
       'ordinary scene',
     ],
     category: '7. Horror',
     domain: 'transformation horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a long-haired girl with a mole under her eye, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details.',
+        'Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels.',
       subject_treatment:
-        "Keep the prompt's subject and setting; show one subtle wrong change in the figure (an extra joint of shadow, a stretched limb, a face that stays too still).",
-      color_and_tone:
-        'Pale domestic colors going slightly sickly, cream walls, grey skin tones and a faint green cast.',
-      lighting_and_shadow:
-        'Soft window light with one shadow that does not match the figure casting it.',
+        'Preserve the requested identity, count, pose and action; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion.',
+      color_and_tone: 'Black ink, white paper and dense fine hatching with no color.',
+      lighting_and_shadow: 'Flat ordinary light made eerie by heavy hatched shadows.',
       texture_and_material:
-        'Clean everyday surfaces, fabric and skin drawn simply so the one wrong detail stands out.',
+        'Fine meticulous pen hatching, spiral and organic patterns, clean contours.',
       camera_and_composition:
-        'Still, ordinary framing that lingers too long, the change placed near the edge.',
-      atmosphere_and_mood:
-        'Unsettling and slow, a familiar person becoming a little less familiar each day.',
+        'Calm everyday framing building to a single devastating reveal panel.',
+      atmosphere_and_mood: 'Keep the requested mood with slow creeping body horror.',
       rendering_and_quality:
-        'Restrained prestige anime where horror lives in small precise details.',
+        'Meticulous black-and-white horror manga illustration with a devastating reveal.',
       creative_brief:
-        "Quiet body-horror anime without gore: slow, wrong changes in ordinary people, shown through posture, shadow and small details. Carry it through ordinary scene, one wrong detail, mismatched shadow, lingering frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'ordinary scene; one wrong detail; mismatched shadow; lingering frame',
+        "Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels. Carry it through Junji Ito hatching, staring eyes, slow transformation, reveal panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Junji Ito hatching; staring eyes; slow transformation; reveal panel',
     },
     ui: {
       previewStatus: 'pending',
@@ -220,35 +202,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-088',
-    name: 'Folk Village Festival Horror Anime',
-    displayName: 'Folk Village Festival Horror Anime',
+    name: 'Shiki - Folk Village Festival Horror',
+    displayName: 'Shiki - Folk Village Festival Horror',
     styleAnchors: [
-      'Folk Village Festival Horror Anime',
+      'Shiki - Folk Village Festival Horror',
       'rural festival horror anime',
       'bright daylight',
     ],
     category: '7. Horror',
     domain: 'rural festival horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light.',
+        'Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister.',
       subject_treatment:
-        "Keep the prompt's subject and setting; surround it with cheerful rural festivity that feels rehearsed and slightly menacing.",
-      color_and_tone:
-        'Bright meadow green, flower yellow and white linen under a pale endless summer sky.',
-      lighting_and_shadow: 'Relentless bright daylight with almost no shadow anywhere to hide in.',
-      texture_and_material:
-        'Woven straw, linen, flower garlands and carved wood drawn with soft clean cel.',
+        'Preserve the requested identity, count, pose and action; draw people with Fujisaki designs, extreme sculptural hairstyles, pale faces, sharp eyes and old-fashioned village clothes.',
+      color_and_tone: 'Summer green, pale daylight, dusk crimson and night indigo.',
+      lighting_and_shadow: 'Blinding summer daylight and cold moonlight on wooden houses.',
+      texture_and_material: 'Digital cel with ornate stylized hair shapes and painted village.',
       camera_and_composition:
-        'Wide symmetrical festival scenes with villagers all facing the same way.',
-      atmosphere_and_mood: 'Sunny and smiling, and the smiles never stop even when they should.',
-      rendering_and_quality:
-        'High-key prestige anime with pastoral detail and unsettling uniformity.',
+        'Village festival wides in harsh daylight and eerie frontal stares at the viewer.',
+      atmosphere_and_mood: 'Keep the requested mood with sunlit communal menace.',
+      rendering_and_quality: 'Stylized 2010 horror television frame with uncanny designs.',
       creative_brief:
-        "Folk horror anime of bright rural festivals hiding something: flower crowns, straw figures, smiling villagers and midsummer light. Carry it through bright daylight, flower crowns, straw figures, synchronized villagers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'bright daylight; flower crowns; straw figures; synchronized villagers',
+        "Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister. Carry it through Fujisaki hairstyles, isolated village, uncanny daylight, festival menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Fujisaki hairstyles; isolated village; uncanny daylight; festival menace',
     },
     ui: {
       previewStatus: 'pending',
@@ -256,32 +235,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-089',
-    name: 'School Ghost Story Anime',
-    displayName: 'School Ghost Story Anime',
-    styleAnchors: ['School Ghost Story Anime', 'kaidan school anime', 'empty classrooms'],
+    name: 'Tomoki Izumi - School Ghost Story',
+    displayName: 'Tomoki Izumi - School Ghost Story',
+    styleAnchors: ['Tomoki Izumi - School Ghost Story', 'kaidan school anime', 'empty classrooms'],
     category: '7. Horror',
     domain: 'kaidan school anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real.',
+        'Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it in a school after dark where one rumor is quietly coming true.",
-      color_and_tone:
-        'Dusky orange fading into blue-grey, with cold white from a single light source.',
+        'Preserve the requested identity, count, pose and action; draw people with clean cute designs and ghosts rendered with dense grotesque detail beside them.',
+      color_and_tone: 'Black ink with grey tone and pallid ghost whites.',
       lighting_and_shadow:
-        'Last sunset light through windows, then flashlight beams and deep classroom shadows.',
-      texture_and_material:
-        'Wooden desks, chalk dust, tiled restrooms and cloth uniforms in clean cel.',
-      camera_and_composition:
-        'Low angles in stairwells, mirror compositions and long empty classrooms.',
-      atmosphere_and_mood: 'Nervous and whispery, a dare among friends that goes a little too far.',
+        'Narrow flashlight beams cutting through dim stairwell light and deep corners.',
+      texture_and_material: 'Clean character line contrasted with dense grotesque hatching.',
+      camera_and_composition: 'Everyday school framing with a ghost looming too close.',
+      atmosphere_and_mood: 'Keep the requested mood with nervous deadpan terror.',
       rendering_and_quality:
-        'Clean prestige anime with careful light transitions from dusk to dark.',
+        'Contrasting cute-and-grotesque horror manga illustration with deadpan tension.',
       creative_brief:
-        "School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real. Carry it through empty classrooms, mirrors, flashlight beams, rumors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'empty classrooms; mirrors; flashlight beams; rumors',
+        "Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see. Carry it through Tomoki Izumi contrast, cute people, grotesque ghosts, deadpan fear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tomoki Izumi contrast; cute people; grotesque ghosts; deadpan fear',
     },
     ui: {
       previewStatus: 'pending',
@@ -289,32 +265,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-090',
-    name: 'Deep Sea Leviathan Horror Anime',
-    displayName: 'Deep Sea Leviathan Horror Anime',
-    styleAnchors: ['Deep Sea Leviathan Horror Anime', 'oceanic horror anime', 'huge shadow below'],
+    name: 'Daijiro Morohoshi - Deep Sea Leviathan Horror',
+    displayName: 'Daijiro Morohoshi - Deep Sea Leviathan Horror',
+    styleAnchors: [
+      'Daijiro Morohoshi - Deep Sea Leviathan Horror',
+      'oceanic horror anime',
+      'huge shadow below',
+    ],
     category: '7. Horror',
     domain: 'oceanic horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water.',
+        'Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth.',
       subject_treatment:
-        "Keep the prompt's subject and setting; make it tiny against something enormous and barely visible in the water.",
-      color_and_tone: 'Deep teal and black water, pale boat lights and bioluminescent blue specks.',
+        'Preserve the requested identity, count, pose and action; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing.',
+      color_and_tone: 'Black ink with scratchy grey hatching and teal night tints.',
       lighting_and_shadow:
-        'Weak surface light fading quickly, with bioluminescence and small lamps in darkness.',
+        'A single small lamp glowing against huge dark waters and a moonless sky.',
       texture_and_material:
-        'Rippled water, rope, wet wood and particles drifting in the deep, drawn cleanly.',
-      camera_and_composition:
-        'Split surface views or top-down frames where a huge shadow fills the water.',
-      atmosphere_and_mood:
-        'Vast and helpless, the ocean suddenly remembering how small people are.',
+        'Scratchy wiry pen line, uneven hand hatching and rough folkloric textures.',
+      camera_and_composition: 'Small boats and figures dwarfed by immense submerged forms.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient abyssal dread.',
       rendering_and_quality:
-        'Painterly prestige anime water with subtle gradients and huge scale contrast.',
+        'Idiosyncratic folkloric horror manga illustration with ancient cosmic scale.',
       creative_brief:
-        "Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water. Carry it through huge shadow below, tiny boat, bioluminescence, split surface view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'huge shadow below; tiny boat; bioluminescence; split surface view',
+        "Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth. Carry it through Daijiro Morohoshi scratch, folklore horror, immense creatures, stiff figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Daijiro Morohoshi scratch; folklore horror; immense creatures; stiff figures',
     },
     ui: {
       previewStatus: 'pending',
@@ -322,37 +300,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-091',
-    name: 'Haunted Dollhouse Horror Anime',
-    displayName: 'Haunted Dollhouse Horror Anime',
+    name: 'Peach-Pit Rozen Maiden - Haunted Dollhouse Horror',
+    displayName: 'Peach-Pit Rozen Maiden - Haunted Dollhouse Horror',
     styleAnchors: [
-      'Haunted Dollhouse Horror Anime',
+      'Peach-Pit Rozen Maiden - Haunted Dollhouse Horror',
       'miniature horror anime',
       'open dollhouse rooms',
     ],
     category: '7. Horror',
     domain: 'miniature horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks.',
+        'Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life.',
       subject_treatment:
-        "Keep the prompt's subject and setting; show it at dollhouse scale or observed through tiny windows and open miniature rooms.",
-      color_and_tone:
-        'Faded pastel wallpaper colors, porcelain white and dusty rose with deep shadow in the rooms.',
-      lighting_and_shadow:
-        'Soft lamp light from outside the dollhouse, tiny rooms lit unevenly from above.',
+        'Preserve the requested identity, count, pose and action; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair.',
+      color_and_tone: 'Rose red, ivory lace, deep violet and antique gold.',
+      lighting_and_shadow: 'Dim candle and moon light in antique rooms.',
       texture_and_material:
-        'Miniature wallpaper, porcelain, lace and painted wood drawn with delicate line.',
+        'Delicate fine line, intricate lace detail and porcelain-smooth shading on faces.',
       camera_and_composition:
-        'Cutaway views into open miniature rooms or eye-level shots through tiny windows.',
-      atmosphere_and_mood:
-        'Delicate and creepy, a perfect little world that seems to be rehearsing something.',
+        'Cutaway dollhouse interiors and eerie gatherings of dolls facing the viewer.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie gothic stillness.',
       rendering_and_quality:
-        'Fine-detailed prestige anime with miniature scale cues and soft light.',
+        'Elegant gothic doll illustration with unsettling calm and antique ornament.',
       creative_brief:
-        "Miniature horror anime of dollhouses and tiny rooms: small furniture, porcelain faces and scenes that change when no one looks. Carry it through open dollhouse rooms, porcelain faces, tiny furniture, changed scenes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'open dollhouse rooms; porcelain faces; tiny furniture; changed scenes',
+        "Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life. Carry it through Peach-Pit dolls, lace and ringlets, glass eyes, Victorian rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Peach-Pit dolls; lace and ringlets; glass eyes; Victorian rooms',
     },
     ui: {
       previewStatus: 'pending',
@@ -360,32 +335,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-092',
-    name: 'Night-Vision Found Footage Anime',
-    displayName: 'Night-Vision Found Footage Anime',
-    styleAnchors: ['Night-Vision Found Footage Anime', 'found footage anime', 'green night-vision'],
+    name: 'Kagewani - Night-Vision Found Footage',
+    displayName: 'Kagewani - Night-Vision Found Footage',
+    styleAnchors: [
+      'Kagewani - Night-Vision Found Footage',
+      'found footage anime',
+      'green night-vision',
+    ],
     category: '7. Horror',
     domain: 'found footage anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera.',
+        'Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light.',
       subject_treatment:
-        "Keep the prompt's subject and setting; record it through night-vision, the frightening detail only just visible.",
-      color_and_tone:
-        'Phosphor green monochrome with bright white highlights and near-black corners.',
-      lighting_and_shadow:
-        'Infrared illumination falling off quickly, eyes and reflective surfaces glowing.',
-      texture_and_material:
-        'Heavy sensor grain, vignette and slight motion blur over simplified anime shapes.',
-      camera_and_composition: 'Handheld, low and tilted, subjects caught at the edge of the beam.',
-      atmosphere_and_mood:
-        'Panicked and claustrophobic, breathing loudly in the dark with nowhere to go.',
-      rendering_and_quality:
-        'Convincing night-vision footage texture laid over clean, readable anime line work.',
+        'Preserve the requested identity, count, pose and action; draw people as rough limited-animation figures and creatures as black silhouettes with glowing eyes.',
+      color_and_tone: 'Night-vision green, deep black shadows and pale glowing eyes in the dark.',
+      lighting_and_shadow: 'Single harsh colored light source and deep silhouettes.',
+      texture_and_material: 'Rough cut-paper shapes, heavy film grain and flickering video noise.',
+      camera_and_composition:
+        'Shaky found-footage framing with silhouettes appearing in windows and doorways.',
+      atmosphere_and_mood: 'Keep the requested mood with raw panicked fear.',
+      rendering_and_quality: 'Rough limited-animation horror frame with raw silhouetted menace.',
       creative_brief:
-        "Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera. Carry it through green night-vision, glowing eyes, grain, handheld tilt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'green night-vision; glowing eyes; grain; handheld tilt',
+        "Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light. Carry it through Kagewani silhouettes, found footage, glowing eyes, cut paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Kagewani silhouettes; found footage; glowing eyes; cut paper',
     },
     ui: {
       previewStatus: 'pending',
@@ -393,33 +368,27 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-093',
-    name: 'Cosmic Sky Eldritch Anime',
-    displayName: 'Cosmic Sky Eldritch Anime',
-    styleAnchors: ['Cosmic Sky Eldritch Anime', 'cosmic horror anime', 'impossible sky'],
+    name: 'Katsuya Terada - Cosmic Sky Eldritch',
+    displayName: 'Katsuya Terada - Cosmic Sky Eldritch',
+    styleAnchors: ['Katsuya Terada - Cosmic Sky Eldritch', 'cosmic horror anime', 'impossible sky'],
     category: '7. Horror',
     domain: 'cosmic horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds.',
+        'Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy.',
       subject_treatment:
-        "Keep the prompt's subject and setting; open the sky above it onto something vast and incomprehensible.",
-      color_and_tone:
-        'Violet, sickly teal and black sky over an ordinary warm-colored world below.',
-      lighting_and_shadow:
-        'Cold light from the sky with no clear source, casting pale, directionless shadows.',
-      texture_and_material:
-        'Swirling painted skies, geometric star patterns and clean cel landscapes.',
-      camera_and_composition:
-        'Worm-eye views up at the sky or wide frames with a thin strip of land.',
-      atmosphere_and_mood:
-        'Awe and dread together, a mind straining to understand something far too big.',
-      rendering_and_quality:
-        'Painterly prestige anime skies with precise small-scale ground detail.',
+        'Preserve the requested identity, count, pose and action; draw people with Terada designs, loose gestural figures, strong silhouettes and small humans before vast entities.',
+      color_and_tone: 'Deep night indigo, sickly green, ember orange and bone white.',
+      lighting_and_shadow: 'Eerie glow from the sky and faint starlight.',
+      texture_and_material: 'Loose sketch lines, painterly digital brush and grain.',
+      camera_and_composition: 'Tiny figures under immense skies and looming cosmic forms.',
+      atmosphere_and_mood: 'Keep the requested mood with vast cosmic unease.',
+      rendering_and_quality: 'Virtuoso painterly sketch illustration with loose powerful gestures.',
       creative_brief:
-        "Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds. Carry it through impossible sky, vast shapes, directionless light, thin horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'impossible sky; vast shapes; directionless light; thin horizon',
+        "Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy. Carry it through Katsuya Terada sketch, painterly color, cosmic beings, vast sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Katsuya Terada sketch; painterly color; cosmic beings; vast sky',
     },
     ui: {
       previewStatus: 'pending',
@@ -427,32 +396,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-094',
-    name: 'Rot Garden Fungal Horror Anime',
-    displayName: 'Rot Garden Fungal Horror Anime',
-    styleAnchors: ['Rot Garden Fungal Horror Anime', 'fungal horror anime', 'creeping fungus'],
+    name: 'Hideshi Hino - Rot Garden Fungal Horror',
+    displayName: 'Hideshi Hino - Rot Garden Fungal Horror',
+    styleAnchors: [
+      'Hideshi Hino - Rot Garden Fungal Horror',
+      'fungal horror anime',
+      'creeping fungus',
+    ],
     category: '7. Horror',
     domain: 'fungal horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay.',
+        'Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings.',
       subject_treatment:
-        "Keep the prompt's subject and setting; let fungal growth creep over surfaces around it, never hiding the subject itself.",
-      color_and_tone: 'Damp greens, bruised purple and pale cream fungus with glowing spore gold.',
+        'Preserve the requested identity, count, pose and action; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths.',
+      color_and_tone: 'Black ink and grey tone with sickly yellow-green in color plates.',
       lighting_and_shadow:
-        'Soft grey daylight or dim greenhouse light with glowing spores drifting through it.',
-      texture_and_material:
-        'Gills, mold fuzz, wet leaves and cracked plaster drawn in fine organic detail.',
+        'Dusty sunbeams falling through grimy glass into murky greenhouse shadows.',
+      texture_and_material: 'Blotchy organic textures, stippled rot and oozing lines.',
       camera_and_composition:
-        'Close botanical framing and wide shots of overgrown rooms and gardens.',
-      atmosphere_and_mood:
-        'Lush and suffocating, decay that is quietly beautiful and patiently spreading.',
+        'Close claustrophobic compositions of decay spreading across every surface.',
+      atmosphere_and_mood: 'Keep the requested mood with feverish decaying horror.',
       rendering_and_quality:
-        'Richly detailed prestige anime with organic textures and soft glowing particles.',
+        'Grotesque vintage horror manga illustration with feverish organic detail.',
       creative_brief:
-        "Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay. Carry it through creeping fungus, drifting spores, overgrown rooms, soft decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'creeping fungus; drifting spores; overgrown rooms; soft decay',
+        "Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings. Carry it through Hideshi Hino rot, bulging eyes, organic growths, decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hideshi Hino rot; bulging eyes; organic growths; decay',
     },
     ui: {
       previewStatus: 'pending',
@@ -460,32 +431,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-095',
-    name: 'Night Shift Hospital Horror Anime',
-    displayName: 'Night Shift Hospital Horror Anime',
-    styleAnchors: ['Night Shift Hospital Horror Anime', 'hospital horror anime', 'curtained beds'],
+    name: 'Yoshiharu Tsuge - Night Shift Hospital Horror',
+    displayName: 'Yoshiharu Tsuge - Night Shift Hospital Horror',
+    styleAnchors: [
+      'Yoshiharu Tsuge - Night Shift Hospital Horror',
+      'hospital horror anime',
+      'curtained beds',
+    ],
     category: '7. Horror',
     domain: 'hospital horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards.',
+        'Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread.',
       subject_treatment:
-        "Keep the prompt's subject and setting; place it within a hospital at night where equipment and curtains hide something.",
-      color_and_tone:
-        'Cold blue-green night lighting with monitor glows and one warm nurses-station lamp.',
-      lighting_and_shadow:
-        'Dim night-mode ceiling lights, monitor glow on faces and silhouettes behind curtains.',
-      texture_and_material:
-        'Curtain fabric, steel bed frames, IV stands and polished floors in clean cel.',
-      camera_and_composition: 'Long ward perspectives and silhouettes seen through thin curtains.',
-      atmosphere_and_mood:
-        'Exhausted and uneasy, a long night shift where the quiet feels deliberate.',
+        'Preserve the requested identity, count, pose and action; draw people with Tsuge stiffness, plain faces, awkward poses and simple clothes.',
+      color_and_tone: 'Black ink with grey wash and dim sepia tones.',
+      lighting_and_shadow: 'Dim ward light, flickering bulbs and odd dreamlike shadows on walls.',
+      texture_and_material: 'Textured hatching backgrounds and simple stiff figure lines.',
+      camera_and_composition:
+        'Long hospital wards and strange dreamlike vistas stretching too far.',
+      atmosphere_and_mood: 'Keep the requested mood with surreal medical unease.',
       rendering_and_quality:
-        'Clean prestige anime with careful low-light gradients and restrained effects.',
+        'Surreal alternative gekiga illustration with dreamlike uncanny stillness.',
       creative_brief:
-        "Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards. Carry it through curtained beds, monitor glow, long wards, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'curtained beds; monitor glow; long wards; silhouettes',
+        "Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread. Carry it through Yoshiharu Tsuge surrealism, textured backgrounds, stiff figures, dream dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yoshiharu Tsuge surrealism; textured backgrounds; stiff figures; dream dread',
     },
     ui: {
       previewStatus: 'pending',
@@ -493,32 +465,30 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-096',
-    name: 'Shadow Play Horror Anime',
-    displayName: 'Shadow Play Horror Anime',
-    styleAnchors: ['Shadow Play Horror Anime', 'silhouette horror anime', 'cast shadows'],
+    name: 'Yami Shibai - Shadow Play Horror',
+    displayName: 'Yami Shibai - Shadow Play Horror',
+    styleAnchors: ['Yami Shibai - Shadow Play Horror', 'silhouette horror anime', 'cast shadows'],
     category: '7. Horror',
     domain: 'silhouette horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them.',
+        'ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing.',
       subject_treatment:
-        "Keep the prompt's subject and setting; tell the fear through its shadow or silhouette on a wall, screen or curtain.",
-      color_and_tone: 'Warm lamp amber on walls and screens with pure black silhouettes.',
-      lighting_and_shadow:
-        'One strong low lamp throwing huge sharp shadows on walls, paper screens or curtains.',
+        'Preserve the requested identity, count, pose and action; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement.',
+      color_and_tone: 'Amber lamp glow, deep black and blood-orange washes.',
+      lighting_and_shadow: 'Warm amber lamp light glowing behind thin paper screens at night.',
       texture_and_material:
-        'Paper screens, plaster walls and fabric curtains catching crisp shadow shapes.',
+        'Cut-paper figures, visible paper grain and loose painted color washes.',
       camera_and_composition:
-        'Frames dominated by a lit wall or screen with the real subject small or off-frame.',
-      atmosphere_and_mood:
-        'Suggestive and chilling, the imagination filling in whatever the shadow is doing.',
+        'Flat kamishibai stage compositions with sliding panels and shadow silhouettes.',
+      atmosphere_and_mood: 'Keep the requested mood with creeping storyteller dread.',
       rendering_and_quality:
-        'Graphic prestige anime with razor-sharp silhouettes and simple warm backgrounds.',
+        'Paper-theater horror frame with stiff cut-out figures and eerie narration.',
       creative_brief:
-        "Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them. Carry it through cast shadows, lit paper screen, mismatched silhouette, single lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'cast shadows; lit paper screen; mismatched silhouette; single lamp',
+        "ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing. Carry it through Yami Shibai kamishibai, cut-paper figures, amber light, shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yami Shibai kamishibai; cut-paper figures; amber light; shadows',
     },
     ui: {
       previewStatus: 'pending',
@@ -526,32 +496,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-097',
-    name: 'Mirror Double Horror Anime',
-    displayName: 'Mirror Double Horror Anime',
-    styleAnchors: ['Mirror Double Horror Anime', 'doppelganger horror anime', 'lagging reflection'],
+    name: 'Kanako Inuki - Mirror Double Horror',
+    displayName: 'Kanako Inuki - Mirror Double Horror',
+    styleAnchors: [
+      'Kanako Inuki - Mirror Double Horror',
+      'doppelganger horror anime',
+      'lagging reflection',
+    ],
     category: '7. Horror',
     domain: 'doppelganger horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Doppelganger horror anime of mirrors and reflections that stop copying: doubles, lagging reflections and wrong expressions.',
+        "Kanako Inuki girls' horror manga look: big-eyed shojo faces turned creepy, wide grins, school and home settings and chilling cautionary tales.",
       subject_treatment:
-        "Keep the prompt's subject and setting; include one reflection or double of it that behaves slightly differently.",
-      color_and_tone:
-        'Muted domestic colors with a colder, bluer version of the scene inside the reflection.',
+        'Preserve the requested identity, count, pose and action; draw people with Inuki designs, big round eyes, simple faces and creepy wide smiles.',
+      color_and_tone: 'Black ink with grey tone and pale bathroom tints.',
       lighting_and_shadow:
-        'Soft interior light with a slightly different light direction inside the mirror.',
-      texture_and_material:
-        'Mirror glass, polished surfaces, windows at night and water reflections drawn cleanly.',
-      camera_and_composition:
-        'Compositions split between subject and reflection, symmetrical but not quite matching.',
-      atmosphere_and_mood: 'Uncanny and personal, the fear of meeting a self that is not you.',
+        'Flat pale morning bathroom light and uncanny reflections in the mirror.',
+      texture_and_material: 'Clean shojo line with sudden heavy black shading.',
+      camera_and_composition: 'Mirror compositions and sudden close-ups of wide grins.',
+      atmosphere_and_mood: 'Keep the requested mood with chilling cautionary horror.',
       rendering_and_quality:
-        'Precise prestige anime with carefully mismatched mirrored details and clean glass reflections.',
+        "Classic girls' horror manga illustration with creepy cautionary charm.",
       creative_brief:
-        "Doppelganger horror anime of mirrors and reflections that stop copying: doubles, lagging reflections and wrong expressions. Carry it through lagging reflection, cold mirror world, split symmetry, wrong expression. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'lagging reflection; cold mirror world; split symmetry; wrong expression',
+        "Kanako Inuki girls' horror manga look: big-eyed shojo faces turned creepy, wide grins, school and home settings and chilling cautionary tales. Carry it through Kanako Inuki creepy grins, big eyes, mirrors, cautionary tales. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Kanako Inuki creepy grins; big eyes; mirrors; cautionary tales',
     },
     ui: {
       previewStatus: 'pending',
@@ -559,31 +530,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-098',
-    name: 'Fog Town Siren Horror Anime',
-    displayName: 'Fog Town Siren Horror Anime',
-    styleAnchors: ['Fog Town Siren Horror Anime', 'fog town horror anime', 'thick fog'],
+    name: 'Another - Fog Town Siren Horror',
+    displayName: 'Another - Fog Town Siren Horror',
+    styleAnchors: ['Another - Fog Town Siren Horror', 'fog town horror anime', 'thick fog'],
     category: '7. Horror',
     domain: 'fog town horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight.',
+        'P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents.',
       subject_treatment:
-        "Keep the prompt's subject and setting; bury the surroundings in thick fog so only nearby details remain readable.",
-      color_and_tone: 'Grey-white fog, rust orange and dull teal with almost no saturation.',
-      lighting_and_shadow:
-        'Flat fog light with no shadows, occasional flashlight cones and dim street lamps.',
-      texture_and_material:
-        'Rust, peeling paint, wet asphalt and drifting ash drawn with grainy detail.',
+        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions.',
+      color_and_tone: 'Fog grey, dull green, rust and doll-skin pale.',
+      lighting_and_shadow: 'Diffuse grey fog light outside and dim lamp-lit interiors inside.',
+      texture_and_material: 'Muted digital cel, fog layers and rust textures.',
       camera_and_composition:
-        'Street-level frames where everything beyond a few meters dissolves into fog.',
-      atmosphere_and_mood:
-        'Lost and haunted, a town that should be familiar but is not letting anyone leave.',
-      rendering_and_quality: 'Grainy prestige anime with soft fog gradients and rusted detail.',
+        'Empty foggy streets and quiet uneasy framing with distant lone figures.',
+      atmosphere_and_mood: 'Keep the requested mood with gloomy fatal suspense.',
+      rendering_and_quality:
+        'Muted atmospheric P.A. Works horror television frame with fog layers.',
       creative_brief:
-        "Fog-bound town horror anime: rusted streets, endless grey fog, distant sirens and shapes that appear only at the edge of sight. Carry it through thick fog, rust, ash, figures at the edge of sight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'thick fog; rust; ash; figures at the edge of sight',
+        "P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents. Carry it through Another gloom, fog town, dolls, muted palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Another gloom; fog town; dolls; muted palette',
     },
     ui: {
       previewStatus: 'pending',
@@ -591,33 +560,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-099',
-    name: 'Night Parade Yokai Anime',
-    displayName: 'Night Parade Yokai Anime',
-    styleAnchors: ['Night Parade Yokai Anime', 'yokai procession anime', 'night procession'],
+    name: 'Yuki Midorikawa - Night Parade Yokai',
+    displayName: 'Yuki Midorikawa - Night Parade Yokai',
+    styleAnchors: [
+      'Yuki Midorikawa - Night Parade Yokai',
+      'yokai procession anime',
+      'night procession',
+    ],
     category: '7. Horror',
     domain: 'yokai procession anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets.',
+        "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters.",
       subject_treatment:
-        "Keep the prompt's subject and setting; let a procession of strange folklore creatures pass through or near it at night.",
-      color_and_tone:
-        'Night indigo, lantern orange and pale spirit greens with ink-black silhouettes.',
-      lighting_and_shadow:
-        'Lantern light carried by the procession and cold moonlight on the street.',
-      texture_and_material:
-        'Paper lanterns, old wood, straw and cloth creatures drawn with lively ink line.',
-      camera_and_composition:
-        'Long horizontal processions across the frame, witnesses hidden behind doors.',
-      atmosphere_and_mood:
-        'Eerie and playful, a strange celebration that humans are not meant to watch.',
+        'Preserve the requested identity, count, pose and action; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms.',
+      color_and_tone: 'Soft watercolor greens, dusk blue and lantern amber.',
+      lighting_and_shadow: 'Soft moonlight and lantern glow in quiet towns.',
+      texture_and_material: 'Soft gentle line, watercolor washes and paper grain.',
+      camera_and_composition: 'Processions across rural roads and quiet framing of spirits.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle eerie wonder.',
       rendering_and_quality:
-        'Lively prestige anime with inventive creature designs and warm lantern glows.',
+        'Soft watercolor manga illustration with gentle odd spirits and rural calm.',
       creative_brief:
-        "Folklore horror anime of night processions of spirits: lanterns, strange creatures, household objects come alive and mist-filled streets. Carry it through night procession, lanterns, object spirits, hidden witnesses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'night procession; lanterns; object spirits; hidden witnesses',
+        "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters. Carry it through Yuki Midorikawa softness, watercolor yokai, lanterns, rural night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yuki Midorikawa softness; watercolor yokai; lanterns; rural night',
     },
     ui: {
       previewStatus: 'pending',
@@ -625,35 +593,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-100',
-    name: 'Expressionist Shadow Horror Anime',
-    displayName: 'Expressionist Shadow Horror Anime',
+    name: 'SHAFT Monogatari - Expressionist Shadow Horror',
+    displayName: 'SHAFT Monogatari - Expressionist Shadow Horror',
     styleAnchors: [
-      'Expressionist Shadow Horror Anime',
+      'SHAFT Monogatari - Expressionist Shadow Horror',
       'expressionist horror anime',
       'slanted sets',
     ],
     category: '7. Horror',
     domain: 'expressionist horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast.',
+        'Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes.',
       subject_treatment:
-        "Keep the prompt's subject and setting; distort the architecture around it into slanted, angular shapes with painted shadows.",
-      color_and_tone: 'High-contrast black, white and grey with a faint sepia or green tint.',
+        'Preserve the requested identity, count, pose and action; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry.',
+      color_and_tone: 'Flat color fields, red and black, with stark white architecture.',
       lighting_and_shadow:
-        'Painted hard-edged shadows and light shapes that do not follow real light direction.',
+        'Flat graphic lighting with stark black silhouettes against bright color fields.',
       texture_and_material:
-        'Flat painted sets, angular doors and streets, and grainy film texture.',
+        'Clean flat color, geometric architecture, repeating patterns and sharp edges.',
       camera_and_composition:
-        'Tilted, theatrical frames with sharp diagonals and exaggerated perspective.',
-      atmosphere_and_mood:
-        'Feverish and theatrical, a nightmare built from crooked painted scenery.',
-      rendering_and_quality: 'Graphic prestige anime with bold angular design and film grain.',
+        'Extreme angular compositions, off-center framing and characteristic head tilts.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny stylized dread.',
+      rendering_and_quality:
+        'Expressionist SHAFT television frame with angular geometry and flat fields.',
       creative_brief:
-        "Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast. Carry it through slanted sets, painted shadows, stark contrast, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'slanted sets; painted shadows; stark contrast; film grain',
+        "Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes. Carry it through SHAFT head tilts, angular architecture, flat color fields, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'SHAFT head tilts; angular architecture; flat color fields; silhouettes',
     },
     ui: {
       previewStatus: 'pending',

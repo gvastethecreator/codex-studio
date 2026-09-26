@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-072
 packId: pack_16
-name: Eco-Mythic Conflict Epic Style
+name: Princess Mononoke - Eco-Mythic Conflict Epic
 styleAnchors:
-  - 'Eco-Mythic Conflict Epic Style'
-displayName: 'Eco-Mythic Conflict Epic'
+  - Princess Mononoke - Eco-Mythic Conflict Epic
+displayName: Princess Mononoke - Eco-Mythic Conflict Epic
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Create scale through broad depth planes, firm foreground contours, and clean distant value
-    bands rather than added spectacle.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Keep the
-    primary silhouette clear without adding cast, props, or conflict.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use natural greens, pale
-    gold, slate blue, and clear neutrals while retaining user-specified colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use a broad natural source and gradual
-    near-to-far falloff; add no rays or supernatural glow.
-  texture_and_material: >-
-    Apply texture only to materials already present. Let brush scale soften with distance only
-    across surfaces already shown; keep near contours deliberate.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Distinguish existing depths
-    through value and scale contrast, without widening or adding a horizon.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Carry the supplied emotional tone; environmental
-    scale is not an epic conflict or mythic event.
-  rendering_and_quality: >-
-    Maintain near-to-far hierarchy, crisp essential edges, and restrained background detail.
-  key_features: >-
-    Broad depth planes; natural green-gold-blue range; firm foreground contour; distant value
-    bands.
-  creative_brief: 'Use broad depth planes; natural green-gold-blue range; firm foreground contour; distant value bands. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic.
+  color_and_tone: Deep forest green, moss, earth brown, iron grey and sunset red.
+  lighting_and_shadow: Dappled forest light, smoky forge glow, sunset fire.
+  texture_and_material: Hand-painted mossy detail, clean cel characters, smoke and roiling tendrils.
+  camera_and_composition: Vast forest wides, low angles on giant creatures, charging action.
+  atmosphere_and_mood: Keep the requested mood with fierce mythic reverence.
+  rendering_and_quality: Epic hand-drawn 1997 Ghibli frame with dense painted forest detail.
+  key_features: Ghibli ancient forest; animal gods; ironworks; moss; fierce epic
+  creative_brief: "Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood. Carry it through Ghibli ancient forest, animal gods, ironworks, moss, fierce epic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-painted masked wolf girl
+  - a red elk rider with a bow
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-072.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

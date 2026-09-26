@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-159
 packId: pack_16
-name: Black-Lipstick Melodrama Punk Style
+name: Nana 2006 - Black-Lipstick Melodrama Punk
 styleAnchors:
-  - 'Black-Lipstick Melodrama Punk Style'
-displayName: 'Black-Lipstick Melodrama Punk'
+  - Nana 2006 - Black-Lipstick Melodrama Punk
+displayName: Nana 2006 - Black-Lipstick Melodrama Punk
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A punk-influenced anime finish built from hard dark contours, irregular accents and
-    roughened edges.
-  subject_treatment: >-
-    Preserve identity, anatomy and clothing. Use angular contour breaks and expressive line
-    weight, with pose guided by the supplied action.
-  color_and_tone: >-
-    When the prompt leaves color open, black and crimson with a small acidic accent can set
-    the contrast. Keep any explicit palette unchanged.
-  lighting_and_shadow: >-
-    Group shadows densely and place dirty highlights or a hard rim selectively to keep the
-    silhouette clear.
-  texture_and_material: >-
-    Use rough ink or scuffed grain only on surfaces already depicted.
-  camera_and_composition: >-
-    Honor the requested framing and preserve figure separation.
-  atmosphere_and_mood: >-
-    Abrasive tension or alienation may be conveyed through contrast when requested; follow
-    the prompt's tone.
-  rendering_and_quality: >-
-    Let roughened edges remain controlled around a clear focal contour; blend background
-    paint without losing the subject.
-  key_features: >-
-    Hard dark contour; irregular accent color; rough ink edges; dense shadow with dirty
-    highlight separation.
-  creative_brief: 'Apply the rough line and contrast treatment to the forms already present. Keep requested clothing, palette, action and emotional tone. Use it as a reusable look on any subject.'
+  aesthetic: 'Madhouse Nana television look (2006): Ai Yazawa designs in motion, punk fashion, cramped Tokyo apartments, rainy streets and emotional band melodrama.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner, punk fashion and chokers.
+  color_and_tone: Black, crimson, smoky grey and soft apartment pastels.
+  lighting_and_shadow: Rainy grey daylight, warm apartment lamps and stage spotlights.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Fashion-shoot framing, cramped apartment interiors and smoky live stage performances.
+  atmosphere_and_mood: Keep the requested mood with aching punk melodrama.
+  rendering_and_quality: Stylish 2006 Madhouse television frame with fashion-forward designs.
+  key_features: Ai Yazawa designs animated; punk fashion; rainy Tokyo; band melodrama
+  creative_brief: "Madhouse Nana television look (2006): Ai Yazawa designs in motion, punk fashion, cramped Tokyo apartments, rainy streets and emotional band melodrama. Carry it through Ai Yazawa designs animated, punk fashion, rainy Tokyo, band melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-159.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

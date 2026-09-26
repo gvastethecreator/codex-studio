@@ -1,0 +1,261 @@
+import type { Spec } from '../tools/apply';
+import { au } from './_authors';
+
+// Horror, author pass: these presets had no source work, so each one takes the horror creator or
+// series whose hand best fits its theme and states the concrete marks of that hand.
+const spec: Spec = {
+  pack: 'pack_16',
+  category: '7. Horror',
+  updates: Object.fromEntries([
+    au('SP13-031', 'Kengo Hanazawa - Institutional Liminal Dread', {
+      look: 'Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces.',
+      subject:
+        'draw people with Hanazawa realism, awkward plain faces, slouched bodies, ordinary work clothes and nervous expressions.',
+      color: 'Black ink with grey tone, fluorescent pallor and dull institutional greens.',
+      light: 'Buzzing fluorescent light, dim emergency lights and long corridor shadows.',
+      texture: 'Photo-traced architectural line, screentone and fine hatching on faces.',
+      camera: 'Long deep corridors in one-point perspective with a small figure far away.',
+      mood: 'mundane creeping dread',
+      render: 'Realist horror manga illustration with photographic background detail.',
+      key: 'Kengo Hanazawa realism; photo-traced corridors; awkward faces; mundane dread',
+    }),
+    au('SP13-032', 'Shuzo Oshimi - Crimson Celestial Omen', {
+      look: 'Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness.',
+      subject:
+        'draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes.',
+      color: 'Black ink and grey tone with a single ominous crimson in the sky.',
+      light: 'Flat dusk light, long wrong-pointing shadows and eerie glow from the sky.',
+      texture: 'Soft pencil-like line, trembling contours and blank white space.',
+      camera: 'Wide empty landscapes with tiny figures and sudden extreme close-ups on eyes.',
+      mood: 'quiet psychological omen',
+      render:
+        'Unsettling psychological manga illustration with vast emptiness and trembling faces.',
+      key: 'Shuzo Oshimi stillness; trembling lines; empty skies; staring eyes',
+    }),
+    au('SP13-033', 'Kazuhiro Fujita - Grotesque Marionette Spotlight', {
+      look: 'Kazuhiro Fujita manga look as in Karakuri Circus: wild scratchy ink, grotesque automaton marionettes, circus stages, exaggerated faces and furious action lines.',
+      subject:
+        'draw people with Fujita designs, wild hair, huge expressive eyes, gaunt or grinning faces and marionettes with jointed limbs.',
+      color: 'Black ink with dense grey tone and spotlight white.',
+      light: 'Hard single spotlight on stage and deep black surrounding darkness.',
+      texture: 'Scratchy energetic pen line, crosshatching and splattered ink.',
+      camera: 'Stage-center spotlight compositions, dramatic puppet poses and low angles.',
+      mood: 'grotesque theatrical horror',
+      render: 'Frenetic hand-inked manga illustration with grotesque puppetry and furious motion.',
+      key: 'Kazuhiro Fujita scratch; grotesque marionettes; circus spotlight; wild ink',
+    }),
+    au('SP13-034', 'Inio Asano - Deep Void Whisper', {
+      look: 'Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread.',
+      subject:
+        'draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces.',
+      color: 'Black ink with fine grey tone and deep black voids.',
+      light: 'Dim lantern light swallowed by vast darkness and faint reflections.',
+      texture: 'Photo-derived line, fine tone and immaculate empty black fields.',
+      camera: 'Tiny figures in huge empty frames and quiet overhead views.',
+      mood: 'lonely existential dread',
+      render: 'Precise contemporary manga illustration with vast quiet voids.',
+      key: 'Inio Asano voids; photo-derived backgrounds; lonely figures; stillness',
+    }),
+    au('SP13-035', 'Gekidan Inu Curry - Ritual Mask Geometry', {
+      look: 'Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures.',
+      subject:
+        'draw people as simple silhouettes or clean anime figures surrounded by cut-paper collage creatures and geometric masks.',
+      color: 'Antique print sepia, candy pastels, black and sudden saturated reds.',
+      light: 'Flat collage light where shapes glow by contrast rather than source.',
+      texture: 'Cut-paper collage, antique engraving scraps, stamps and geometric patterns.',
+      camera: 'Flat layered collage compositions with symmetrical ritual layouts.',
+      mood: 'uncanny ritual nightmare',
+      render: 'Surreal collage animation frame with storybook nightmare logic.',
+      key: 'Inu Curry collage; antique print scraps; geometric masks; labyrinth',
+    }),
+    au('SP13-086', 'Masaaki Nakayama - Cursed Videotape Horror', {
+      look: 'Masaaki Nakayama manga look as in Fuan no Tane: ordinary everyday scenes with one wrongly placed figure, stiff doll-like apparitions and quiet shock panels.',
+      subject:
+        'draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong.',
+      color: 'Black ink and grey tone with washed-out home-video tint.',
+      light: 'Flat domestic light with a dark doorway or hallway holding the threat.',
+      texture: 'Clean realistic pen line, tone and slightly degraded video noise.',
+      camera: 'Snapshot-like framing with the apparition small in the background.',
+      mood: 'sudden quiet shock',
+      render: 'Understated horror manga illustration with a single wrong detail.',
+      key: 'Masaaki Nakayama apparitions; everyday scenes; one wrong figure; quiet shock',
+    }),
+    au('SP13-087', 'Junji Ito - Slow Metamorphosis Dread', {
+      look: 'Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels.',
+      subject:
+        'draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion.',
+      color: 'Black ink, white paper and dense fine hatching with no color.',
+      light: 'Flat ordinary light made eerie by heavy hatched shadows.',
+      texture: 'Fine meticulous pen hatching, spiral and organic patterns, clean contours.',
+      camera: 'Calm everyday framing building to a single devastating reveal panel.',
+      mood: 'slow creeping body horror',
+      render: 'Meticulous black-and-white horror manga illustration with a devastating reveal.',
+      key: 'Junji Ito hatching; staring eyes; slow transformation; reveal panel',
+      avoid: [
+        'a long-haired girl with a mole under her eye',
+        'existing franchise characters',
+        'gore',
+      ],
+    }),
+    au('SP13-088', 'Shiki - Folk Village Festival Horror', {
+      look: 'Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister.',
+      subject:
+        'draw people with Fujisaki designs, extreme sculptural hairstyles, pale faces, sharp eyes and old-fashioned village clothes.',
+      color: 'Summer green, pale daylight, dusk crimson and night indigo.',
+      light: 'Blinding summer daylight and cold moonlight on wooden houses.',
+      texture: 'Digital cel with ornate stylized hair shapes and painted village.',
+      camera: 'Village festival wides in harsh daylight and eerie frontal stares at the viewer.',
+      mood: 'sunlit communal menace',
+      render: 'Stylized 2010 horror television frame with uncanny designs.',
+      key: 'Fujisaki hairstyles; isolated village; uncanny daylight; festival menace',
+    }),
+    au('SP13-089', 'Tomoki Izumi - School Ghost Story', {
+      look: 'Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see.',
+      subject:
+        'draw people with clean cute designs and ghosts rendered with dense grotesque detail beside them.',
+      color: 'Black ink with grey tone and pallid ghost whites.',
+      light: 'Narrow flashlight beams cutting through dim stairwell light and deep corners.',
+      texture: 'Clean character line contrasted with dense grotesque hatching.',
+      camera: 'Everyday school framing with a ghost looming too close.',
+      mood: 'nervous deadpan terror',
+      render: 'Contrasting cute-and-grotesque horror manga illustration with deadpan tension.',
+      key: 'Tomoki Izumi contrast; cute people; grotesque ghosts; deadpan fear',
+    }),
+    au('SP13-090', 'Daijiro Morohoshi - Deep Sea Leviathan Horror', {
+      look: 'Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth.',
+      subject:
+        'draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing.',
+      color: 'Black ink with scratchy grey hatching and teal night tints.',
+      light: 'A single small lamp glowing against huge dark waters and a moonless sky.',
+      texture: 'Scratchy wiry pen line, uneven hand hatching and rough folkloric textures.',
+      camera: 'Small boats and figures dwarfed by immense submerged forms.',
+      mood: 'ancient abyssal dread',
+      render: 'Idiosyncratic folkloric horror manga illustration with ancient cosmic scale.',
+      key: 'Daijiro Morohoshi scratch; folklore horror; immense creatures; stiff figures',
+    }),
+    au('SP13-091', 'Peach-Pit Rozen Maiden - Haunted Dollhouse Horror', {
+      look: 'Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life.',
+      subject:
+        'draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair.',
+      color: 'Rose red, ivory lace, deep violet and antique gold.',
+      light: 'Dim candle and moon light in antique rooms.',
+      texture: 'Delicate fine line, intricate lace detail and porcelain-smooth shading on faces.',
+      camera: 'Cutaway dollhouse interiors and eerie gatherings of dolls facing the viewer.',
+      mood: 'eerie gothic stillness',
+      render: 'Elegant gothic doll illustration with unsettling calm and antique ornament.',
+      key: 'Peach-Pit dolls; lace and ringlets; glass eyes; Victorian rooms',
+      avoid: ['a red-dressed doll with a large bonnet', 'existing franchise characters'],
+    }),
+    au('SP13-092', 'Kagewani - Night-Vision Found Footage', {
+      look: 'Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light.',
+      subject:
+        'draw people as rough limited-animation figures and creatures as black silhouettes with glowing eyes.',
+      color: 'Night-vision green, deep black shadows and pale glowing eyes in the dark.',
+      light: 'Single harsh colored light source and deep silhouettes.',
+      texture: 'Rough cut-paper shapes, heavy film grain and flickering video noise.',
+      camera: 'Shaky found-footage framing with silhouettes appearing in windows and doorways.',
+      mood: 'raw panicked fear',
+      render: 'Rough limited-animation horror frame with raw silhouetted menace.',
+      key: 'Kagewani silhouettes; found footage; glowing eyes; cut paper',
+    }),
+    au('SP13-093', 'Katsuya Terada - Cosmic Sky Eldritch', {
+      look: 'Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy.',
+      subject:
+        'draw people with Terada designs, loose gestural figures, strong silhouettes and small humans before vast entities.',
+      color: 'Deep night indigo, sickly green, ember orange and bone white.',
+      light: 'Eerie glow from the sky and faint starlight.',
+      texture: 'Loose sketch lines, painterly digital brush and grain.',
+      camera: 'Tiny figures under immense skies and looming cosmic forms.',
+      mood: 'vast cosmic unease',
+      render: 'Virtuoso painterly sketch illustration with loose powerful gestures.',
+      key: 'Katsuya Terada sketch; painterly color; cosmic beings; vast sky',
+    }),
+    au('SP13-094', 'Hideshi Hino - Rot Garden Fungal Horror', {
+      look: 'Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings.',
+      subject:
+        'draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths.',
+      color: 'Black ink and grey tone with sickly yellow-green in color plates.',
+      light: 'Dusty sunbeams falling through grimy glass into murky greenhouse shadows.',
+      texture: 'Blotchy organic textures, stippled rot and oozing lines.',
+      camera: 'Close claustrophobic compositions of decay spreading across every surface.',
+      mood: 'feverish decaying horror',
+      render: 'Grotesque vintage horror manga illustration with feverish organic detail.',
+      key: 'Hideshi Hino rot; bulging eyes; organic growths; decay',
+    }),
+    au('SP13-095', 'Yoshiharu Tsuge - Night Shift Hospital Horror', {
+      look: 'Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread.',
+      subject: 'draw people with Tsuge stiffness, plain faces, awkward poses and simple clothes.',
+      color: 'Black ink with grey wash and dim sepia tones.',
+      light: 'Dim ward light, flickering bulbs and odd dreamlike shadows on walls.',
+      texture: 'Textured hatching backgrounds and simple stiff figure lines.',
+      camera: 'Long hospital wards and strange dreamlike vistas stretching too far.',
+      mood: 'surreal medical unease',
+      render: 'Surreal alternative gekiga illustration with dreamlike uncanny stillness.',
+      key: 'Yoshiharu Tsuge surrealism; textured backgrounds; stiff figures; dream dread',
+    }),
+    au('SP13-096', 'Yami Shibai - Shadow Play Horror', {
+      look: 'ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing.',
+      subject:
+        'draw people as flat cut-paper figures with simple painted faces and stiff jointed movement.',
+      color: 'Amber lamp glow, deep black and blood-orange washes.',
+      light: 'Warm amber lamp light glowing behind thin paper screens at night.',
+      texture: 'Cut-paper figures, visible paper grain and loose painted color washes.',
+      camera: 'Flat kamishibai stage compositions with sliding panels and shadow silhouettes.',
+      mood: 'creeping storyteller dread',
+      render: 'Paper-theater horror frame with stiff cut-out figures and eerie narration.',
+      key: 'Yami Shibai kamishibai; cut-paper figures; amber light; shadows',
+    }),
+    au('SP13-097', 'Kanako Inuki - Mirror Double Horror', {
+      look: "Kanako Inuki girls' horror manga look: big-eyed shojo faces turned creepy, wide grins, school and home settings and chilling cautionary tales.",
+      subject:
+        'draw people with Inuki designs, big round eyes, simple faces and creepy wide smiles.',
+      color: 'Black ink with grey tone and pale bathroom tints.',
+      light: 'Flat pale morning bathroom light and uncanny reflections in the mirror.',
+      texture: 'Clean shojo line with sudden heavy black shading.',
+      camera: 'Mirror compositions and sudden close-ups of wide grins.',
+      mood: 'chilling cautionary horror',
+      render: "Classic girls' horror manga illustration with creepy cautionary charm.",
+      key: 'Kanako Inuki creepy grins; big eyes; mirrors; cautionary tales',
+    }),
+    au('SP13-098', 'Another - Fog Town Siren Horror', {
+      look: 'P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents.',
+      subject:
+        'draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions.',
+      color: 'Fog grey, dull green, rust and doll-skin pale.',
+      light: 'Diffuse grey fog light outside and dim lamp-lit interiors inside.',
+      texture: 'Muted digital cel, fog layers and rust textures.',
+      camera: 'Empty foggy streets and quiet uneasy framing with distant lone figures.',
+      mood: 'gloomy fatal suspense',
+      render: 'Muted atmospheric P.A. Works horror television frame with fog layers.',
+      key: 'Another gloom; fog town; dolls; muted palette',
+      avoid: ['a dark-haired girl with a white eyepatch', 'existing franchise characters'],
+    }),
+    au('SP13-099', 'Yuki Midorikawa - Night Parade Yokai', {
+      look: "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters.",
+      subject:
+        'draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms.',
+      color: 'Soft watercolor greens, dusk blue and lantern amber.',
+      light: 'Soft moonlight and lantern glow in quiet towns.',
+      texture: 'Soft gentle line, watercolor washes and paper grain.',
+      camera: 'Processions across rural roads and quiet framing of spirits.',
+      mood: 'gentle eerie wonder',
+      render: 'Soft watercolor manga illustration with gentle odd spirits and rural calm.',
+      key: 'Yuki Midorikawa softness; watercolor yokai; lanterns; rural night',
+      avoid: ['a round white cat spirit with markings', 'existing franchise characters'],
+    }),
+    au('SP13-100', 'SHAFT Monogatari - Expressionist Shadow Horror', {
+      look: 'Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes.',
+      subject:
+        'draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry.',
+      color: 'Flat color fields, red and black, with stark white architecture.',
+      light: 'Flat graphic lighting with stark black silhouettes against bright color fields.',
+      texture: 'Clean flat color, geometric architecture, repeating patterns and sharp edges.',
+      camera: 'Extreme angular compositions, off-center framing and characteristic head tilts.',
+      mood: 'uncanny stylized dread',
+      render: 'Expressionist SHAFT television frame with angular geometry and flat fields.',
+      key: 'SHAFT head tilts; angular architecture; flat color fields; silhouettes',
+    }),
+  ]),
+};
+
+export default spec;

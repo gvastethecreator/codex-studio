@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-363
 packId: pack_16
-name: Synchronized Aerial Team Style
+name: Backflip!! - Synchronized Aerial Team
 styleAnchors:
-  - Synchronized Aerial Team Style
-displayName: Synchronized Aerial Team
+  - Backflip!! - Synchronized Aerial Team
+displayName: Backflip!! - Synchronized Aerial Team
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern.'
-  subject_treatment: Keep the prompt's subject and action; repeat and mirror it across a team moving in perfect unison.
-  color_and_tone: Bright team colors against clear sky or pool blue with white highlights.
-  lighting_and_shadow: Bright daylight or arena light with clean shadows under airborne bodies.
-  texture_and_material: Uniforms, pom-poms, water spray and mats drawn in crisp cel.
-  camera_and_composition: Symmetrical framings, overhead views of formation patterns and poses mirrored across the team.
-  atmosphere_and_mood: Joyful and exact, trust between teammates made visible in the air.
-  rendering_and_quality: Precise sports anime with repeated figures and clean symmetry.
-  key_features: unison; mirrored poses; aerial pyramid; symmetry
-  creative_brief: "Synchronized team anime of aerial precision: cheer pyramids, divers in unison and bodies moving as one pattern. Carry it through unison, mirrored poses, aerial pyramid, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Zexcs Backflip!! television look (2020): bright gymnastics team energy, clean designs, sunny gyms and synchronized aerial formations.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean bright designs, athletic bodies, team uniforms and synchronized poses.
+  color_and_tone: Bright sky blue, gym white, team red and sunny yellow.
+  lighting_and_shadow: Sunny gym window light and bright high-key highlights on bodies.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Aerial formation shots, synchronized flips and low mat angles.
+  atmosphere_and_mood: Keep the requested mood with buoyant team synchrony.
+  rendering_and_quality: Bright clean sports television frame with airy buoyant team energy.
+  key_features: Backflip synchrony; aerial formations; bright gym; team energy
+  creative_brief: "Zexcs Backflip!! television look (2020): bright gymnastics team energy, clean designs, sunny gyms and synchronized aerial formations. Carry it through Backflip synchrony, aerial formations, bright gym, team energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-363.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

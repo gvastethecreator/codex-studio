@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-080
 packId: pack_16
-name: Children of the Sea – Cosmic Ocean Lyrical
+name: Children of the Sea - Cosmic Ocean Lyrical
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,36 +13,16 @@ tags:
   - studio-masterpieces
   - reference-title
 visualDna:
-  aesthetic: >-
-    Fluid contour flow, fine clear line islands, and broad translucent value layers that
-    transition without hard seams.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Follow existing
-    shape changes with supple lines while keeping anatomy, structure, identity, and count
-    intact; add no aquatic content.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use deep blue-teal, pearl,
-    and cool cyan as a restrained value family; preserve explicit colors and avoid rainbow
-    shifts.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use broad gradients and small cool accents
-    only where source and surfaces justify them; add no caustics or new glow.
-  texture_and_material: >-
-    Apply texture only to materials already present. Layer translucent pigment films, fine
-    stipple, and delicate line grain over present materials; add no water, foam, stars, or
-    particles.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Create spaciousness through
-    existing dark-to-light fields and depth, not a new sea or horizon.
-  atmosphere_and_mood: >-
-    Keep the requested tone; open value transitions imply no lyricism or spirituality.
-  rendering_and_quality: >-
-    Separate fine contour islands from soft fields; preserve small details and avoid bloom-heavy
-    or watery distortion.
-  key_features: >-
-    Fluid line flow; translucent value layering; deep blue-teal and pearl; spacious
-    dark-to-light separation.
-  creative_brief: 'Use fluid line flow; translucent value layering; deep blue-teal and pearl; spacious dark-to-light separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin.
+  color_and_tone: Deep ocean indigo, glowing plankton cyan, sunlit aquarium teal and warm summer skin tones.
+  lighting_and_shadow: Underwater caustics, bioluminescent glow and cosmic light blooms.
+  texture_and_material: Hand-hatched pencil lines on characters, painterly water, particle-filled 3D ocean effects.
+  camera_and_composition: Immersive underwater wides, huge creatures dwarfing swimmers, cosmic transitions.
+  atmosphere_and_mood: Keep the requested mood with lyrical cosmic awe.
+  rendering_and_quality: Rich Studio 4°C feature frame blending sketch lines and luminous painted effects.
+  key_features: Daisuke Igarashi hatching; cosmic ocean; bioluminescence; whales; pencil textured lines
+  creative_brief: "Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars. Carry it through Daisuke Igarashi hatching, cosmic ocean, bioluminescence, whales, pencil textured lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -66,16 +46,12 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-080.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -90,3 +66,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Children of the Sea - Cosmic Ocean Lyrical
+styleAnchors:
+  - Children of the Sea - Cosmic Ocean Lyrical

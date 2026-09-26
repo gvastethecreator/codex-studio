@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-344
 packId: pack_16
-name: Ego Pressure Breakout Style
+name: Blue Lock 2022 - Ego Pressure Breakout
 styleAnchors:
-  - Ego Pressure Breakout Style
-displayName: Ego Pressure Breakout
+  - Blue Lock 2022 - Ego Pressure Breakout
+displayName: Blue Lock 2022 - Ego Pressure Breakout
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target.'
-  subject_treatment: Keep the prompt's subject and action; exaggerate focus and hunger, distorting perspective toward the goal or target.
-  color_and_tone: Night stadium blues and field green with electric cyan eye highlights.
-  lighting_and_shadow: Floodlights from high angles, hard shadows under the eyes and glowing irises.
-  texture_and_material: Grass blades, sweat and jersey fabric with graphic line overlays.
-  camera_and_composition: Fisheye distortion toward the ball, extreme close-ups on eyes with the goal behind.
-  atmosphere_and_mood: Predatory and obsessive, a player who wants the goal more than anything else.
-  rendering_and_quality: Stylized sports anime with bold distortion, glowing eyes and sharp lines.
-  key_features: predatory eyes; fisheye distortion; goal as target; floodlights
-  creative_brief: "Soccer anime of ego and hunger: strikers drawn with predatory eyes, distorted perspective and visions of the goal as a target. Carry it through predatory eyes, fisheye distortion, goal as target, floodlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits.
+  color_and_tone: Electric blue, black void, neon green eye glow and white lines.
+  lighting_and_shadow: Stark black-void backgrounds with glowing eyes and rim-lit bodies.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Close-ups on eyes, monster silhouette metaphors, low dynamic kick angles.
+  atmosphere_and_mood: Keep the requested mood with predatory ego hunger.
+  rendering_and_quality: Aggressive modern sports television frame with metaphor overlays.
+  key_features: Blue Lock eyes; ego monsters; black void; puzzle metaphors
+  creative_brief: "Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses. Carry it through Blue Lock eyes, ego monsters, black void, puzzle metaphors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-344.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

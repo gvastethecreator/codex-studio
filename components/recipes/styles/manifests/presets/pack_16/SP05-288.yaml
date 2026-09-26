@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-288
 packId: pack_16
-name: Elastic Summer Time Style
+name: The Girl Who Leapt Through Time - Elastic Summer Time
 styleAnchors:
-  - 'Elastic Summer Time Style'
-displayName: 'Elastic Summer Time'
+  - The Girl Who Leapt Through Time - Elastic Summer Time
+displayName: The Girl Who Leapt Through Time - Elastic Summer Time
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Elastic timing: compact stroke clusters release into long tapered arcs, alternating
-    compressed and stretched mark intervals.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Elasticity
-    lives in line cadence, never in body distortion or invented motion.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use clear cobalt or sky
-    blue, fresh green, and small warm ochre or coral accents, subject to explicit color
-    instructions.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep natural source light bright and clean
-    with crisp shadow edges; add no flare or artificial gleam.
-  texture_and_material: >-
-    Apply texture only to materials already present. Combine smooth color planes with sparse
-    soft brush marks; avoid rubbery shine or deformation texture.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Let existing contours and
-    gaps alternate between squeezed and extended intervals without rearrangement.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Maintain the requested emotion; stretch-release is a
-    visual beat, not a summer mood.
-  rendering_and_quality: >-
-    Hold proportions and leading edges stable while varied stroke lengths create the elastic
-    rhythm.
-  key_features: >-
-    Compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette.
-  creative_brief: 'Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes.
+  color_and_tone: Summer blue, cloud white, cicada green and warm afternoon gold.
+  lighting_and_shadow: Clear midsummer daylight, characters without cel shadow, bright sky reflections.
+  texture_and_material: Clean thin lines, flat color characters, painted backgrounds and streaking time-warp effects.
+  camera_and_composition: Big-sky wides with small leaping figures, low angles at river embankments, dynamic run cycles.
+  atmosphere_and_mood: Keep the requested mood with bright bittersweet summer.
+  rendering_and_quality: Crisp Madhouse feature frame, light and airy, with flat shadowless characters.
+  key_features: Hosoda shadowless characters; Sadamoto designs; summer cumulus; time-leap bursts
+  creative_brief: "Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts. Carry it through Hosoda shadowless characters, Sadamoto designs, summer cumulus, time-leap bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-288.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

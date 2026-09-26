@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-032
 packId: pack_16
-name: Crimson Celestial Omen Anime
+name: Shuzo Oshimi - Crimson Celestial Omen
 styleAnchors:
-  - Crimson Celestial Omen Anime
-displayName: Crimson Celestial Omen Anime
+  - Shuzo Oshimi - Crimson Celestial Omen
+displayName: Shuzo Oshimi - Crimson Celestial Omen
 category: 7. Horror
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - horror
+  - reference-title
 visualDna:
-  aesthetic: 'Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people.'
-  subject_treatment: Keep the prompt's subject and setting; place an ominous sky event above it, the people below small and still.
-  color_and_tone: Blood crimson sky, black silhouettes and a sickly pale glow on faces.
-  lighting_and_shadow: Red light from above, long shadows in odd directions and no normal sunlight.
-  texture_and_material: Smooth painted skies, clean cel figures and faint grain.
-  camera_and_composition: Low horizons with huge skies taking most of the frame.
-  atmosphere_and_mood: Ominous and silent, the whole world holding its breath beneath a warning sign.
-  rendering_and_quality: Painterly prestige anime skies with crisp small silhouettes below.
-  key_features: red sky omen; huge celestial body; tiny silhouettes; low horizon
-  creative_brief: "Apocalyptic omen anime under a wrong sky: red celestial bodies, eclipses and vast silent phenomena looming over small people. Carry it through red sky omen, huge celestial body, tiny silhouettes, low horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes.
+  color_and_tone: Black ink and grey tone with a single ominous crimson in the sky.
+  lighting_and_shadow: Flat dusk light, long wrong-pointing shadows and eerie glow from the sky.
+  texture_and_material: Soft pencil-like line, trembling contours and blank white space.
+  camera_and_composition: Wide empty landscapes with tiny figures and sudden extreme close-ups on eyes.
+  atmosphere_and_mood: Keep the requested mood with quiet psychological omen.
+  rendering_and_quality: Unsettling psychological manga illustration with vast emptiness and trembling faces.
+  key_features: Shuzo Oshimi stillness; trembling lines; empty skies; staring eyes
+  creative_brief: "Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness. Carry it through Shuzo Oshimi stillness, trembling lines, empty skies, staring eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-032.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -68,6 +73,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - horror
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

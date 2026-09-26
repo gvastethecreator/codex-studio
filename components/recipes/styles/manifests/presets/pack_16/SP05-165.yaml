@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-165
 packId: pack_16
-name: Spirit Pressure Rivalry Style
+name: Yu Yu Hakusho - Spirit Pressure Rivalry
 styleAnchors:
-  - 'Spirit Pressure Rivalry Style'
-displayName: 'Spirit Pressure Rivalry'
+  - Yu Yu Hakusho - Spirit Pressure Rivalry
+displayName: Yu Yu Hakusho - Spirit Pressure Rivalry
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,37 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A spectral 90s cel look uses pale blue contour echoes, long translucent sweeps and deep nocturnal
-    shadow masses. Pressure is shown as one visual afterimage around the focal form, never as another
-    being.
-  subject_treatment: >-
-    Preserve the requested subject and count. Offset a faint contour echo from the existing silhouette
-    and let it fade into a few long lines; do not create a duplicate person or spirit character.
-  color_and_tone: >-
-    When open, favor ice blue, lavender-gray and deep navy, with warm accents kept small. Preserve the
-    prompt palette and maintain a readable dark-to-light hierarchy.
-  lighting_and_shadow: >-
-    Keep solid cel shadows decisive while a translucent edge echo provides contrast. Follow requested
-    lighting and avoid adding a moon, halo source or supernatural event.
-  texture_and_material: >-
-    Use clear painted cel shapes with soft transparent line trails and restrained background haze.
-    Keep the echo graphic, not a new material or object.
-  camera_and_composition: >-
-    Let the existing contour echo create depth around the focal form within the supplied frame.
-    Preserve camera and placement; do not add a landscape or oversized figure.
-  atmosphere_and_mood: >-
-    Suggest pressure through stillness, scale contrast and a fading outline. Preserve the requested
-    emotion; do not impose rivalry, haunting or spiritual lore.
-  rendering_and_quality: >-
-    Separate solid outlines from translucent trails and keep the main form dominant. Avoid blurred
-    duplicate silhouettes or diffuse full-frame glow.
-  key_features: >-
-    pale blue contour echo; translucent sweeping trails; dark nocturnal cel shapes with a clear focal
-    silhouette
-  creative_brief: 'Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject count, identity, action, setting and composition; add no spirit, rival or supernatural scene. Use it as a reusable look on any subject.'
+  aesthetic: 'Studio Pierrot Yu Yu Hakusho television look (1992): sharp nineties shonen designs, spirit energy blasts, demon tournaments and moody color-keyed night scenes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with nineties Pierrot designs, sharp eyes, slick hair, school uniforms and demon features.
+  color_and_tone: Spirit blue, blood red, night purple and school-uniform green.
+  lighting_and_shadow: Spirit energy glow, moonlit rooftops and color-keyed dramatic lighting.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Standoff compositions, energy blasts toward the lens, dramatic close-ups.
+  atmosphere_and_mood: Keep the requested mood with fierce spirited rivalry.
+  rendering_and_quality: Classic early-1990s shonen television cel frame with energy effects.
+  key_features: Pierrot nineties shonen; spirit blasts; demon tournament; moody color keys
+  creative_brief: "Studio Pierrot Yu Yu Hakusho television look (1992): sharp nineties shonen designs, spirit energy blasts, demon tournaments and moody color-keyed night scenes. Carry it through Pierrot nineties shonen, spirit blasts, demon tournament, moody color keys. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a green school uniform delinquent with slicked hair
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -65,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-165.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a green school uniform delinquent with slicked hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-300
 packId: pack_16
-name: Hypergraphic Chromatic Action Style
+name: Promare - Hypergraphic Chromatic Action
 styleAnchors:
-  - 'Hypergraphic Chromatic Action Style'
-displayName: 'Hypergraphic Chromatic Action'
+  - Promare - Hypergraphic Chromatic Action
+displayName: Promare - Hypergraphic Chromatic Action
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Hypergraphic action drawing: bold contour locks, interleaved chromatic planes, and
-    repeat-recoil rhythm in the width and spacing of existing marks.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Vary contour
-    weight only where the supplied action transfers force.
-  color_and_tone: >-
-    Honor explicitly requested colors. Anchor opposing saturated masses with dark and pale
-    neutrals; limit accents and follow explicit color intent.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use supplied light for clean rim
-    separation; add no impact flash, burst, or other unrequested effect.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep color fields hard and clean with
-    sparse boundary grain; add no debris, streaks, or surface noise.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Align graphic weight with
-    the existing action vector and balance it with quiet gaps.
-  atmosphere_and_mood: >-
-    Preserve stated mood and stakes; impact rhythm is spacing and contour, not added danger or
-    intensity.
-  rendering_and_quality: >-
-    Keep action readable through silhouette and force transfer; avoid distortion, blur, and
-    marks that invent events.
-  key_features: >-
-    Bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim
-    separation.
-  creative_brief: 'Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Imaishi and Studio Trigger feature animation as in Promare: flat triangular geometry, neon pink and cyan fire made of polygons, bold color blocking and explosive posing.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shigeto Koyama designs, sharp angular faces, huge poses, flat color shapes and no gradients.
+  color_and_tone: Neon magenta, cyan, lime and white against flat pastel skies.
+  lighting_and_shadow: Flat graphic color-field light where fire is geometric shapes.
+  texture_and_material: Flat color blocks, polygonal CG effects, thick clean outlines.
+  camera_and_composition: Wide kinetic poses, exaggerated perspective and spinning action shots.
+  atmosphere_and_mood: Keep the requested mood with explosive hot-blooded spectacle.
+  rendering_and_quality: Crisp stylized Trigger frame, hypergraphic and bold, with no soft gradients.
+  key_features: Imaishi triangles; neon polygonal fire; flat color blocks; explosive poses
+  creative_brief: "Hiroyuki Imaishi and Studio Trigger feature animation as in Promare: flat triangular geometry, neon pink and cyan fire made of polygons, bold color blocking and explosive posing. Carry it through Imaishi triangles, neon polygonal fire, flat color blocks, explosive poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-300.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

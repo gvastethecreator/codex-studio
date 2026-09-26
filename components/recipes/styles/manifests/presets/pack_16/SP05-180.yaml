@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-180
 packId: pack_16
-name: Precision Action Cel Style
+name: Gunsmith Cats - Precision Action Cel
 styleAnchors:
-  - 'Precision Action Cel Style'
-displayName: 'Precision Action Cel'
+  - Gunsmith Cats - Precision Action Cel
+displayName: Gunsmith Cats - Precision Action Cel
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A precision-action 90s cel treatment uses exact contour breaks, sharply cut shadow wedges and
-    motion marks with clear timing. Impact is a line-and-shape relation, not an added fight.
-  subject_treatment: >-
-    Preserve the requested identity, anatomy and object geometry. Clarify force transfer only in
-    motion already present, with controlled deformation and crisp edges.
-  color_and_tone: >-
-    When open, use disciplined dark cel values with one clear high-contrast accent. Preserve requested
-    colors and separate the focal action from surrounding forms.
-  lighting_and_shadow: >-
-    Use crisp shadows and clean rim separation to make existing movement readable. Preserve supplied
-    light; do not insert an impact flash or new source.
-  texture_and_material: >-
-    Keep fills smooth and linework precise, with only a slight directional smear at edges already
-    moving. Respect material response and avoid noisy grain.
-  camera_and_composition: >-
-    Clarify existing action vectors and recoil spacing within the supplied frame. Preserve camera,
-    crop and pose; do not stage an attack or close-up.
-  atmosphere_and_mood: >-
-    Give the image a controlled, decisive rhythm through anticipation and release where the prompt
-    already contains motion. Preserve its tone.
-  rendering_and_quality: >-
-    Keep moving and static edges distinct, effects crisp and anatomy or object structure stable. Avoid
-    broad blur and unrelated speed lines.
-  key_features: >-
-    precise contour breaks; sharply cut cel-shadow wedges; timing and force lines tied to existing
-    action
-  creative_brief: 'Apply precise cel contours, shadow wedges and restrained timing marks to the requested content. Preserve its identity, action, setting and composition; add no fighter, impact event or weapon. Use it as a reusable look on any subject.'
+  aesthetic: 'Kenichi Sonoda Gunsmith Cats OVA look (1995): precise detailed firearms and cars, clean cute-sexy designs, American city settings and crisp action choreography.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sonoda designs, clean detailed faces, athletic bodies, casual nineties clothes and precise mechanical props.
+  color_and_tone: Urban grey, brick red, denim blue and chrome.
+  lighting_and_shadow: Muzzle flash light, streetlight glow and bright daylight on cars.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Precise action framing, detailed gun and car close-ups, chase shots.
+  atmosphere_and_mood: Keep the requested mood with crisp kinetic precision.
+  rendering_and_quality: Crisp detailed 1995 OVA frame with mechanical precision.
+  key_features: Kenichi Sonoda precision; detailed guns and cars; American cities; crisp action
+  creative_brief: "Kenichi Sonoda Gunsmith Cats OVA look (1995): precise detailed firearms and cars, clean cute-sexy designs, American city settings and crisp action choreography. Carry it through Kenichi Sonoda precision, detailed guns and cars, American cities, crisp action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-180.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

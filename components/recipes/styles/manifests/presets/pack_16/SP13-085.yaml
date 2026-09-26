@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-085
 packId: pack_16
-name: Swordsmith Forge Craft Anime
+name: Katanagatari - Swordsmith Forge Craft
 styleAnchors:
-  - Swordsmith Forge Craft Anime
+  - Katanagatari - Swordsmith Forge Craft
   - craft process anime
   - forge glow
-displayName: Swordsmith Forge Craft Anime
+displayName: Katanagatari - Swordsmith Forge Craft
 category: 6. Samurai & Medieval
 domain: craft process anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - forge
   - craft
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making.'
-  subject_treatment: Keep the prompt's subject and setting; show it being made, repaired or tended, with hands and tools central.
-  color_and_tone: Forge orange and yellow-white heat against charcoal black and dim workshop brown.
-  lighting_and_shadow: Hot forge glow from below, sparks as bright streaks and deep workshop shadow.
-  texture_and_material: Glowing steel, scale, charcoal, water steam and worn leather aprons in detailed cel.
-  camera_and_composition: Close shots on hands, tools and glowing metal with occasional wide workshop frames.
-  atmosphere_and_mood: Focused and reverent, the quiet pride of skilled hands doing difficult work.
-  rendering_and_quality: Detailed prestige anime with careful process animation and glowing effects.
-  creative_brief: "Craft-process anime of forges and workshops: glowing metal, precise hand work, sparks and the patience of making. Carry it through forge glow, sparks, hands and tools, quench steam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: forge glow; sparks; hands and tools; quench steam
+  aesthetic: 'White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes.
+  color_and_tone: 'Flat bold color blocks: vermilion, teal, white and black.'
+  lighting_and_shadow: Flat graphic lighting with little or no gradient.
+  texture_and_material: Flat color shapes, clean lines and pattern fills.
+  camera_and_composition: Stylized flat compositions, frontal poses and graphic displays of distinctive swords.
+  atmosphere_and_mood: Keep the requested mood with graphic crafted poise.
+  rendering_and_quality: Flat graphic 2010 White Fox frame with bold pattern-driven design clarity.
+  creative_brief: "White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes. Carry it through Katanagatari flat graphics, take designs, patterned costumes, stylized swords. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Katanagatari flat graphics; take designs; patterned costumes; stylized swords
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - forge
     - craft
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

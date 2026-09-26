@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-173
 packId: pack_16
-name: Dust-Warm Pacifist Melancholy Style
+name: Trigun 1998 - Dust-Warm Pacifist Melancholy
 styleAnchors:
-  - 'Dust-Warm Pacifist Melancholy Style'
-displayName: 'Dust-Warm Pacifist Melancholy'
+  - Trigun 1998 - Dust-Warm Pacifist Melancholy
+displayName: Trigun 1998 - Dust-Warm Pacifist Melancholy
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A dust-warm 90s cel style joins softly painted background planes, simple clean contours and muted
-    amber-cool contrast. Its named restraint comes from quiet spacing and low visual force, not a
-    pacifist narrative.
-  subject_treatment: >-
-    Keep the requested identity, gesture and proportions. Use gentle contour emphasis and economical
-    interior marks; do not add companions, an airship or a peaceful event.
-  color_and_tone: >-
-    When color is open, pair dusty amber, muted brown and soft blue-green. Preserve requested hues and
-    keep saturation low with a few warm focal notes.
-  lighting_and_shadow: >-
-    Use broad, soft-edged light transitions and uncomplicated cel shadows. Preserve requested lighting
-    and avoid imposing sunset or golden-hour light.
-  texture_and_material: >-
-    Use softly brushed background paint with clean foreground fills and subtle dust-like grain. Keep
-    the grain in the rendering, not on the subject's material.
-  camera_and_composition: >-
-    Favor open spacing and gentle horizontal rhythm within the existing framing. Preserve viewpoint
-    and placement; do not widen the scene or add landscape.
-  atmosphere_and_mood: >-
-    Let quietness emerge from held gestures, sparse detail and warm-cool balance. Preserve the
-    requested action and mood; do not require pacifism or melancholy.
-  rendering_and_quality: >-
-    Keep edges clean on focal forms and softer in background planes, with restrained detail and no
-    motion effects.
-  key_features: >-
-    softly painted backgrounds; dust-muted amber and blue-green; open spacing with quiet cel contours
-  creative_brief: 'Restyle the requested content with low-saturation cel color, gentle background paint and quiet spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset. Use it as a reusable look on any subject.'
+  aesthetic: 'Madhouse Trigun television look (1998): late-nineties cel with desert frontier towns, warm dusty sunsets, bright character colors and a melancholy that sneaks under slapstick.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with nineties Madhouse designs, lanky bodies, expressive faces, long coats and dusty frontier clothes.
+  color_and_tone: Desert amber, dusty sky blue, sunset orange and bright costume color accents.
+  lighting_and_shadow: Hot desert sunlight, long dusk shadows and warm saloon lamps.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Wide frontier towns, low gunfight angles and dusk silhouettes.
+  atmosphere_and_mood: Keep the requested mood with warm dusty melancholy.
+  rendering_and_quality: Warm late-1990s Madhouse television frame with desert light.
+  key_features: Trigun anime desert; dusky frontier; lanky designs; warm melancholy
+  creative_brief: "Madhouse Trigun television look (1998): late-nineties cel with desert frontier towns, warm dusty sunsets, bright character colors and a melancholy that sneaks under slapstick. Carry it through Trigun anime desert, dusky frontier, lanky designs, warm melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky blond gunman in a red coat and round sunglasses
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-173.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

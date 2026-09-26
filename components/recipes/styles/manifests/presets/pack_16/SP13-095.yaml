@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-095
 packId: pack_16
-name: Night Shift Hospital Horror Anime
+name: Yoshiharu Tsuge - Night Shift Hospital Horror
 styleAnchors:
-  - Night Shift Hospital Horror Anime
+  - Yoshiharu Tsuge - Night Shift Hospital Horror
   - hospital horror anime
   - curtained beds
-displayName: Night Shift Hospital Horror Anime
+displayName: Yoshiharu Tsuge - Night Shift Hospital Horror
 category: 7. Horror
 domain: hospital horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - hospital
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards.'
-  subject_treatment: Keep the prompt's subject and setting; place it within a hospital at night where equipment and curtains hide something.
-  color_and_tone: Cold blue-green night lighting with monitor glows and one warm nurses-station lamp.
-  lighting_and_shadow: Dim night-mode ceiling lights, monitor glow on faces and silhouettes behind curtains.
-  texture_and_material: Curtain fabric, steel bed frames, IV stands and polished floors in clean cel.
-  camera_and_composition: Long ward perspectives and silhouettes seen through thin curtains.
-  atmosphere_and_mood: Exhausted and uneasy, a long night shift where the quiet feels deliberate.
-  rendering_and_quality: Clean prestige anime with careful low-light gradients and restrained effects.
-  creative_brief: "Hospital horror anime of the night shift: humming machines, curtained beds, monitors and nurses walking long quiet wards. Carry it through curtained beds, monitor glow, long wards, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: curtained beds; monitor glow; long wards; silhouettes
+  aesthetic: 'Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tsuge stiffness, plain faces, awkward poses and simple clothes.
+  color_and_tone: Black ink with grey wash and dim sepia tones.
+  lighting_and_shadow: Dim ward light, flickering bulbs and odd dreamlike shadows on walls.
+  texture_and_material: Textured hatching backgrounds and simple stiff figure lines.
+  camera_and_composition: Long hospital wards and strange dreamlike vistas stretching too far.
+  atmosphere_and_mood: Keep the requested mood with surreal medical unease.
+  rendering_and_quality: Surreal alternative gekiga illustration with dreamlike uncanny stillness.
+  creative_brief: "Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread. Carry it through Yoshiharu Tsuge surrealism, textured backgrounds, stiff figures, dream dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yoshiharu Tsuge surrealism; textured backgrounds; stiff figures; dream dread
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - hospital
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

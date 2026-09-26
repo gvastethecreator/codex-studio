@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-027
 packId: pack_16
-name: Spiral Overdrive Bravado Style
+name: Gurren Lagann - Spiral Overdrive Bravado
 styleAnchors:
-  - 'Spiral Overdrive Bravado Style'
-displayName: 'Spiral Overdrive Bravado'
+  - Gurren Lagann - Spiral Overdrive Bravado
+displayName: Gurren Lagann - Spiral Overdrive Bravado
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    High-energy anime staging built on upward thrust, exaggerated scale contrast and
-    rhythmic shape hierarchy.
-  subject_treatment: >-
-    Preserve the supplied subject and action. Enlarge or stretch forms only where requested
-    movement supports it; keep existing focal hierarchy.
-  color_and_tone: >-
-    Keep explicit colors. With an open palette, let the strongest accent track the focal
-    form without prescribing hues.
-  lighting_and_shadow: >-
-    Use bold value grouping and selective edge light; keep effects attached to the prompted
-    forms.
-  texture_and_material: >-
-    Use stable ink contours with controlled speed accents; keep material treatment tied to
-    the subject.
-  camera_and_composition: >-
-    Honor the supplied camera, using an ascending axis and scale rhythm only within its
-    existing frame.
-  atmosphere_and_mood: >-
-    Confidence and escalation are optional tonal choices; keep the prompt's actual stakes
-    and mood.
-  rendering_and_quality: >-
-    Maintain strong silhouette readability while allowing controlled exaggeration and soft
-    background integration.
-  key_features: >-
-    Upward thrust; enlarged scale rhythm; strong shape hierarchy; restrained motion accents.
-  creative_brief: 'Apply upward force and scale contrast where they fit the supplied action. Preserve the subject, framing and requested tone. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nishigori designs, angular faces, pointed teeth, wild hair and sunglasses, in bold heroic poses.
+  color_and_tone: Hot red, drill yellow, sky blue and spiral green.
+  lighting_and_shadow: Blazing heroic backlight, spiral energy glow and explosion flashes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Extreme perspective, escalating scale from ground to galaxy, heroic pose stills.
+  atmosphere_and_mood: Keep the requested mood with boundless defiant bravado.
+  rendering_and_quality: Raw energetic 2007 Gainax frame with loose rough action lines.
+  key_features: Imaishi action; Nishigori designs; drills and spirals; escalating scale
+  creative_brief: "Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale. Carry it through Imaishi action, Nishigori designs, drills and spirals, escalating scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky-haired rebel with a cape and flaming sunglasses
+  - a tiny drill-headed robot
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-027.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a spiky-haired rebel with a cape and flaming sunglasses, a tiny drill-headed robot, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

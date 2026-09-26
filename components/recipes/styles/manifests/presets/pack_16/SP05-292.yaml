@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-292
 packId: pack_16
-name: Historical Glam Punk Performance Style
+name: Inu-Oh - Historical Glam Punk Performance
 styleAnchors:
-  - 'Historical Glam Punk Performance Style'
-displayName: 'Historical Glam Punk Performance'
+  - Inu-Oh - Historical Glam Punk Performance
+displayName: Inu-Oh - Historical Glam Punk Performance
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,33 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Charged editorial ink: broken scratch contours, heavy black silhouettes, abrupt chromatic
-    slashes, and exposed pigment.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Sharpen marks
-    around gestures already present without inventing performance or movement.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, anchor charcoal and black
-    with crimson, an acidic accent, and dirty cream; explicit palette requests take priority.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow the given source with hard
-    highlight cuts and warm-cool contrast; create no spotlight or stage glow.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use scuffed pigment and short hatching only
-    on existing rough materials; keep smooth surfaces clean.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Alternate dense and open
-    mark zones on existing shapes, with no stage, crowd, or instrument additions.
-  atmosphere_and_mood: >-
-    Retain the requested mood; abrasiveness is ink quality, not rebellion or alienation.
-  rendering_and_quality: >-
-    Keep silhouettes readable through texture and protect identity details from excessive
-    scratch marks.
-  key_features: >-
-    Broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light.
-  creative_brief: 'Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Masaaki Yuasa feature animation as in Inu-Oh: medieval Japan reimagined as a glam rock concert, loose elastic figures, flowing lines and scroll-painting textures under stage lights.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, stretchy limbs, loose simplified faces and flamboyant costumes mixing period robes and rock glamour.
+  color_and_tone: Ink black, vermilion, gold and electric stage colors against dark night.
+  lighting_and_shadow: Concert spotlights, torches and smoke beams over ancient streets.
+  texture_and_material: Loose brush lines, scroll-paint textures, flat color and drifting smoke.
+  camera_and_composition: Swirling concert crowd shots, elastic distortions, low angles of performers.
+  atmosphere_and_mood: Keep the requested mood with ecstatic rebellious performance.
+  rendering_and_quality: Fluid expressive Science SARU feature frame with loose brush energy.
+  key_features: Yuasa elasticity; medieval glam rock; scroll textures; stage lights; flowing lines
+  creative_brief: "Masaaki Yuasa feature animation as in Inu-Oh: medieval Japan reimagined as a glam rock concert, loose elastic figures, flowing lines and scroll-painting textures under stage lights. Carry it through Yuasa elasticity, medieval glam rock, scroll textures, stage lights, flowing lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-292.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-299
 packId: pack_16
-name: Dream Invasion Carnival Style
+name: Paprika - Dream Invasion Carnival
 styleAnchors:
-  - 'Dream Invasion Carnival Style'
-displayName: 'Dream Invasion Carnival'
+  - Paprika - Dream Invasion Carnival
+displayName: Paprika - Dream Invasion Carnival
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Create carousel-like visual rhythm without spectacle: local arcs and facets, saturated color
-    fields, and alternating hard-soft boundaries.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Curvature
-    changes line rhythm only and cannot create masks, costumes, or new shapes.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, balance violet, rose,
-    amber, and electric cyan in controlled contrasts; preserve prompt-selected colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow existing sources and soften only
-    supplied highlights; add no glow source, bloom, or lighting event.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use smooth cel layers with subtle boundary
-    stipple; avoid confetti, decorative motifs, and noisy gradients.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Arc or diagonal emphasis may
-    follow existing masses but must not create a fairground arrangement.
-  atmosphere_and_mood: >-
-    Preserve emotional intent; saturated color and curved rhythm impose no delirium or
-    theatricality.
-  rendering_and_quality: >-
-    Keep shape boundaries legible under color shifts and use contrast rather than added detail
-    to separate planes.
-  key_features: >-
-    Local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms.
-  creative_brief: 'Use local arc rhythm; violet-rose fields; alternating edge softness; stable recognizable forms. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism.
+  color_and_tone: Glittering gold, carnival red, toy colors and night-city blues.
+  lighting_and_shadow: Parade lights, confetti glitter and glowing dream haze.
+  texture_and_material: Dense detailed cel parade crowds, confetti particles and painted city.
+  camera_and_composition: Endless parade flowing across wide street views, low angles on giant figures.
+  atmosphere_and_mood: Keep the requested mood with euphoric creeping madness.
+  rendering_and_quality: Dense lavish 2006 Madhouse feature frame crowded with parade detail.
+  key_features: Satoshi Kon dream parade; animated household objects; confetti; glittering madness
+  creative_brief: "Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival. Carry it through Satoshi Kon dream parade, animated household objects, confetti, glittering madness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-299.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

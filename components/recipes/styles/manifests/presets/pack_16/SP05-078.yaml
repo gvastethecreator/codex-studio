@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-078
 packId: pack_16
-name: Otomo Light-Trail Collapse Style
+name: Akira - Otomo Light-Trail Collapse
 styleAnchors:
-  - 'Otomo Light-Trail Collapse Style'
-displayName: 'Otomo Light-Trail Collapse'
+  - Akira - Otomo Light-Trail Collapse
+displayName: Akira - Otomo Light-Trail Collapse
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,34 +16,20 @@ tags:
   - studio-masterpieces
   - reference-title
 visualDna:
-  aesthetic: >-
-    Cut angular contour blocks through hard-edged cel planes; use short tapered directional
-    marks only where existing edges support them.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Sharpen leading
-    or trailing edges without deforming forms or implying unrequested motion.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use compact cool blue and
-    graphite fields, clean cream highlights, and at most one saturated warm or cyan accent.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Follow the given source light with crisp
-    edge highlights and compressed dark shapes; add no flash, glow source, or impact effect.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep color fills smooth; restrict dry-brush
-    and grain to a few material transitions already in the image.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Use strong diagonals only
-    when supported by existing forms or requested action.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Treat edge compression as visual quality, not a
-    collapse event; preserve the stated mood.
-  rendering_and_quality: >-
-    Keep primary silhouettes crisp and unbroken; avoid debris, blur, extra trails, and noisy
-    edges.
-  key_features: >-
-    Angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast.
-  creative_brief: 'Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Katsuhiro Otomo feature animation as in Akira: dense hand-drawn Neo-Tokyo megastructures, meticulous mechanical detail, realistic Japanese faces and red taillights smearing into light trails.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Otomo realism, flat-nosed ordinary faces, small eyes, stocky believable bodies and bulky late-eighties jackets.
+  color_and_tone: Deep night blues and blacks, neon signage colors and signature saturated red.
+  lighting_and_shadow: Night city neon, streaking taillight trails, blinding white psychic flashes.
+  texture_and_material: Hand-painted cel with backlit light effects, meticulous architectural linework, rubble and debris.
+  camera_and_composition: Low speeding tracking shots, vast aerial city views, collapse spreading across frames.
+  atmosphere_and_mood: Keep the requested mood with kinetic apocalyptic energy.
+  rendering_and_quality: Dense 1988 theatrical hand-drawn animation frame with photographic backlight effects.
+  key_features: Otomo detail; neon night city; red light trails; realistic faces; destruction
+  creative_brief: "Katsuhiro Otomo feature animation as in Akira: dense hand-drawn Neo-Tokyo megastructures, meticulous mechanical detail, realistic Japanese faces and red taillights smearing into light trails. Carry it through Otomo detail, neon night city, red light trails, realistic faces, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - the red motorcycle with capsule stickers
+  - the red jacket with a pill emblem
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,18 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-078.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: the red motorcycle with capsule stickers, the red jacket with a pill emblem, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

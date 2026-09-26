@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-313
 packId: pack_16
-name: Zodiac Cosmic Heroism Style
+name: Saint Seiya - Zodiac Cosmic Heroism
 styleAnchors:
-  - 'Zodiac Cosmic Heroism Style'
-displayName: 'Zodiac Cosmic Heroism'
+  - Saint Seiya - Zodiac Cosmic Heroism
+displayName: Saint Seiya - Zodiac Cosmic Heroism
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use long clean curves and small controlled marks while keeping silhouettes unchanged; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use midnight blue, soft gold and pale cream. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as clean cel rims on source-lit edges and distinct dark shape groupings; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply flat cel paint, broad restrained airbrush fields and fine print grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use radial line cadence around forms already present in the requested layout; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through curved accents and clear value contrast; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use crisp arcs and controlled color separation without added motifs; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use curved radiating contour accents with clear gold-on-dark separation; long clean curves and small controlled marks while keeping silhouettes unchanged; clean cel rims on source-lit edges and distinct dark shape groupings; flat cel paint, broad restrained airbrush fields and fine print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses.
+  color_and_tone: Gold, bronze, deep cosmic blue and aura violet.
+  lighting_and_shadow: Cosmic aura glows, star sparkles and gleaming armor highlights.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Dramatic close-ups, power poses with constellations behind, clashes.
+  atmosphere_and_mood: Keep the requested mood with fervent cosmic heroism.
+  rendering_and_quality: Dramatic 1980s television frame with Araki shine and sparkle.
+  key_features: Shingo Araki faces; gleaming armor; cosmic aura; dramatic close-ups
+  creative_brief: "Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups. Carry it through Shingo Araki faces, gleaming armor, cosmic aura, dramatic close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - bronze constellation cloth armor of named saints
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-313.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: bronze constellation cloth armor of named saints, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

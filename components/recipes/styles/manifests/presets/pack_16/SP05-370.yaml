@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-370
 packId: pack_16
-name: Intimate Indie Confession Style
+name: Given - Intimate Indie Confession
 styleAnchors:
-  - Intimate Indie Confession Style
-displayName: Intimate Indie Confession
+  - Given - Intimate Indie Confession
+displayName: Given - Intimate Indie Confession
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person.'
-  subject_treatment: Keep the prompt's subject and action; make it quiet and close, as if performed for a single listener.
-  color_and_tone: Warm lamp amber, soft greys and muted pastel clothing.
-  lighting_and_shadow: One small lamp or window light, gentle shadows and soft glow on faces.
-  texture_and_material: Wooden guitar grain, knitted sweaters and cluttered small rooms.
-  camera_and_composition: Close, intimate framings at eye level with shallow depth.
-  atmosphere_and_mood: Tender and vulnerable, a song that says what words could not.
-  rendering_and_quality: Soft intimate anime with warm light and gentle detail.
-  key_features: lamp glow; acoustic guitar; close framing; single listener
-  creative_brief: "Indie acoustic anime of intimate confession: small rooms, guitars, soft lamps and songs sung to one person. Carry it through lamp glow, acoustic guitar, close framing, single listener. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Lerche Given television look (2019) from Natsuki Kizu designs: soft indie rock romance, pastel bedroom light, guitars and quiet emotional close-ups.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kizu designs, soft features, gentle eyes, messy hair and casual indie clothes.
+  color_and_tone: Pastel blue, warm bedroom amber and soft grey.
+  lighting_and_shadow: Soft window light, warm lamps and stage glow.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Intimate close-ups, bedroom floor framing and small-venue stage shots.
+  atmosphere_and_mood: Keep the requested mood with intimate tender confession.
+  rendering_and_quality: Soft Lerche television frame with gentle hushed indie atmosphere.
+  key_features: Given softness; indie rock; pastel bedrooms; guitars
+  creative_brief: "Lerche Given television look (2019) from Natsuki Kizu designs: soft indie rock romance, pastel bedroom light, guitars and quiet emotional close-ups. Carry it through Given softness, indie rock, pastel bedrooms, guitars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-370.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

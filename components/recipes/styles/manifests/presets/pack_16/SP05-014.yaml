@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-014
 packId: pack_16
-name: Jazzy Space-Noir Melancholy Style
+name: Cowboy Bebop - Jazzy Space-Noir Melancholy
 styleAnchors:
-  - 'Jazzy Space-Noir Melancholy Style'
-displayName: 'Jazzy Space-Noir Melancholy'
+  - Cowboy Bebop - Jazzy Space-Noir Melancholy
+displayName: Cowboy Bebop - Jazzy Space-Noir Melancholy
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,37 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A jazzy 90s cel treatment built from loose ink cuts, off-beat diagonals and deep, quiet shadow
-    shapes. Its space-noir signal is lonely scale and selective amber light, not a required genre
-    setting.
-  subject_treatment: >-
-    Keep the requested identity and gesture. Let contours alternate between loose curves and decisive
-    angular cuts; use only the movement and expression already present.
-  color_and_tone: >-
-    When open, favor smoky indigo, muted violet, ink black and restrained amber. Preserve specified
-    colors and let one warm note break the cool value field.
-  lighting_and_shadow: >-
-    Shape existing light into slanted highlights against large cel shadows. Use soft haze-like
-    transitions sparingly; do not add a spotlight, monitor or physical smoke.
-  texture_and_material: >-
-    Combine confident ink strokes, painted cel fills and a faint film-grain veil. Keep haze in the
-    image treatment and match highlights to the actual surface.
-  camera_and_composition: >-
-    Use syncopated spacing, off-center balance and generous negative space within the supplied frame.
-    Preserve camera position and subject arrangement.
-  atmosphere_and_mood: >-
-    Make the rhythm cool, reflective and slightly wry through pauses and asymmetry. Keep the requested
-    emotion; do not add a caper, romance or science-fiction story.
-  rendering_and_quality: >-
-    Keep silhouettes crisp, shadow edges intentional and background detail quiet. Allow a few
-    painterly transitions without turning the image into soft-focus realism.
-  key_features: >-
-    off-beat diagonals and negative space; cool indigo-violet shadows; sparse amber highlights over
-    expressive ink cuts
-  creative_brief: 'Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props. Use it as a reusable look on any subject.'
+  aesthetic: 'Shinichiro Watanabe and Toshihiro Kawamoto look of Cowboy Bebop (1998): lanky stylish designs, lived-in rusty ships, film noir lighting, smoke and jazz, and worn retro-future cities.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kawamoto designs, long lanky limbs, loose hair, narrow eyes, sharp noses and slouched cool postures in worn clothes.
+  color_and_tone: Muted teal, cigarette amber, rust brown and noir shadow.
+  lighting_and_shadow: Noir chiaroscuro with smoky light shafts, neon signs and dim cockpit glow.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Cinematic noir framing, low angles in rain, long lens compositions.
+  atmosphere_and_mood: Keep the requested mood with cool melancholy drift.
+  rendering_and_quality: Polished 1998 Sunrise television frame with cinematic noir grading.
+  key_features: Kawamoto lanky designs; film noir; rusty ships; smoke and jazz; retro-future
+  creative_brief: "Shinichiro Watanabe and Toshihiro Kawamoto look of Cowboy Bebop (1998): lanky stylish designs, lived-in rusty ships, film noir lighting, smoke and jazz, and worn retro-future cities. Carry it through Kawamoto lanky designs, film noir, rusty ships, smoke and jazz, retro-future. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a green-haired bounty hunter in a blue suit
+  - a red swordfish spaceship
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -65,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-014.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a green-haired bounty hunter in a blue suit, a red swordfish spaceship, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

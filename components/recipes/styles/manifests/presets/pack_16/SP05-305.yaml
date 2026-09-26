@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-305
 packId: pack_16
-name: Neon Sci-Fi Slapstick Rom-Com Style
+name: Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com
 styleAnchors:
-  - 'Neon Sci-Fi Slapstick Rom-Com Style'
-displayName: 'Neon Sci-Fi Slapstick Rom-Com'
+  - Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com
+displayName: Urusei Yatsura - Neon Sci-Fi Slapstick Rom-Com
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simple flexible line shapes and legible details while preserving requested proportions; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use electric cyan, coral, lavender and charcoal. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as simple flat cel shadows with bright accents restricted to actual light sources; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply smooth flat paint with faint analog grain and no plastic gloss as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use small and large shape accents alternating within the given framing; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through buoyancy through stroke timing while the requested emotional register leads; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use bright, two-dimensional hand-inked forms with controlled highlights; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use nimble rounded contours, quick expressive ticks and clean cel edges; simple flexible line shapes and legible details while preserving requested proportions; simple flat cel shadows with bright accents restricted to actual light sources; smooth flat paint with faint analog grain and no plastic gloss. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Rumiko Takahashi Urusei Yatsura anime (1981): bouncy eighties rom-com cel, pastel suburban Tokyo, aliens and folklore spirits, big comic expressions and slapstick chases.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Takahashi rounded faces, large simple eyes, springy hair and exaggerated comic reactions.
+  color_and_tone: Pastel candy colors, sky blue, lime green and electric yellow.
+  lighting_and_shadow: Bright suburban daylight and electric sparkling comedy flashes.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Energetic chase framing, comedic crowd shots, sudden close-up reactions.
+  atmosphere_and_mood: Keep the requested mood with chaotic lovesick comedy.
+  rendering_and_quality: Cheerful 1980s television cel frame with springy comic timing.
+  key_features: Rumiko Takahashi rom-com; pastel suburb; aliens and spirits; slapstick chases
+  creative_brief: "Rumiko Takahashi Urusei Yatsura anime (1981): bouncy eighties rom-com cel, pastel suburban Tokyo, aliens and folklore spirits, big comic expressions and slapstick chases. Carry it through Rumiko Takahashi rom-com, pastel suburb, aliens and spirits, slapstick chases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a green-haired oni girl in a tiger-striped bikini with horns
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-305.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a green-haired oni girl in a tiger-striped bikini with horns, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

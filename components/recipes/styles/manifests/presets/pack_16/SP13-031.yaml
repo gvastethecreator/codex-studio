@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-031
 packId: pack_16
-name: Institutional Liminal Dread Anime
+name: Kengo Hanazawa - Institutional Liminal Dread
 styleAnchors:
-  - Institutional Liminal Dread Anime
-displayName: Institutional Liminal Dread Anime
+  - Kengo Hanazawa - Institutional Liminal Dread
+displayName: Kengo Hanazawa - Institutional Liminal Dread
 category: 7. Horror
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - horror
+  - reference-title
 visualDna:
-  aesthetic: 'Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching.'
-  subject_treatment: Keep the prompt's subject and setting; place it in a too-clean, too-empty space where something is slightly wrong.
-  color_and_tone: Sickly fluorescent green-white, beige walls and dim blue shadows with no warm color at all.
-  lighting_and_shadow: Flat overhead fluorescent light, one flickering tube and dark doorways that swallow the light.
-  texture_and_material: Linoleum floors, painted cinder block and glass partitions drawn with clean, cold line.
-  camera_and_composition: Long one-point perspective corridors with the subject small, or a single door filling the frame.
-  atmosphere_and_mood: Quietly wrong and uneasy, like an empty school or hospital that should not be empty.
-  rendering_and_quality: Clean, restrained horror anime with precise perspective and minimal effects.
-  key_features: one-point corridors; fluorescent hum; repeated doors; emptiness
-  creative_brief: "Horror anime of empty institutions after hours: corridors, fluorescent hum, repeated doors and a feeling that the building is watching. Carry it through one-point corridors, fluorescent hum, repeated doors, emptiness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hanazawa realism, awkward plain faces, slouched bodies, ordinary work clothes and nervous expressions.
+  color_and_tone: Black ink with grey tone, fluorescent pallor and dull institutional greens.
+  lighting_and_shadow: Buzzing fluorescent light, dim emergency lights and long corridor shadows.
+  texture_and_material: Photo-traced architectural line, screentone and fine hatching on faces.
+  camera_and_composition: Long deep corridors in one-point perspective with a small figure far away.
+  atmosphere_and_mood: Keep the requested mood with mundane creeping dread.
+  rendering_and_quality: Realist horror manga illustration with photographic background detail.
+  key_features: Kengo Hanazawa realism; photo-traced corridors; awkward faces; mundane dread
+  creative_brief: "Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces. Carry it through Kengo Hanazawa realism, photo-traced corridors, awkward faces, mundane dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-031.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -68,6 +73,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - horror
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

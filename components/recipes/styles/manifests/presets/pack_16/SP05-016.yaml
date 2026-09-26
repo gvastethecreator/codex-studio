@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-016
 packId: pack_16
-name: Spirit Tournament Pressure Style
+name: Yoshihiro Togashi - Spirit Tournament Pressure
 styleAnchors:
-  - 'Spirit Tournament Pressure Style'
-displayName: 'Spirit Tournament Pressure'
+  - Yoshihiro Togashi - Spirit Tournament Pressure
+displayName: Yoshihiro Togashi - Spirit Tournament Pressure
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A pressure-heavy 90s cel style combines forceful contour wedges, concentrated violet edge light
-    and sharply separated shadow groups. Its tournament energy is a visual rhythm, not a contest
-    scene.
-  subject_treatment: >-
-    Keep the requested subject, pose and scale. Tighten existing contours toward the focal area and
-    emphasize only motion or tension already present; add no opponent or uniform.
-  color_and_tone: >-
-    When color is open, use deep blue-violet shadows, cool lavender edge light and a restrained warm
-    accent. Preserve the requested palette and keep value separation strong.
-  lighting_and_shadow: >-
-    Use hard-edged cel shadows with one concentrated rim or glow accent around the existing focal
-    form. Respect the requested light and do not add an arena spotlight.
-  texture_and_material: >-
-    Keep painted cel surfaces clean, with sharp ink and subtle dry grain at selected edges. Match
-    surface marks to the source material instead of applying a universal effect.
-  camera_and_composition: >-
-    Create pressure with directional lines and compact spacing inside the supplied layout. Preserve
-    the camera and avoid a ring, crowd or face-off arrangement.
-  atmosphere_and_mood: >-
-    Suggest held intensity through a pause between dense and open shapes. Keep the requested action
-    and emotional tone; do not invent a duel or power-up.
-  rendering_and_quality: >-
-    Separate a small number of decisive shadow planes and crisp effect edges. Avoid muddy glow,
-    excessive streaks and generic action-filter blur.
-  key_features: >-
-    compressed directional rhythm; violet rim pressure; forceful cel wedges separated into clean
-    shadow groups
-  creative_brief: 'Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshihiro Togashi manga look as in Yu Yu Hakusho: sharp confident brush-pen lines, stylish delinquent heroes, eerie demons and shifting between clean and rough inking.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Togashi designs, slick hair, sharp eyes, lean bodies, school uniforms and eerie demon faces.
+  color_and_tone: Black ink with grey screentone and occasional muted red.
+  lighting_and_shadow: Stark ink shadows, eerie glow from spirit energy and moonlight.
+  texture_and_material: Confident brush-pen line, screentone, rough sketchy inking in intense panels.
+  camera_and_composition: Tense manga panel close-ups, dynamic tournament stances, eerie wide shots.
+  atmosphere_and_mood: Keep the requested mood with tense eerie competition.
+  rendering_and_quality: Stylish black-and-white shonen manga illustration with sharp inking.
+  key_features: Togashi brush-pen; delinquent heroes; eerie demons; screentone; manga panels
+  creative_brief: "Yoshihiro Togashi manga look as in Yu Yu Hakusho: sharp confident brush-pen lines, stylish delinquent heroes, eerie demons and shifting between clean and rough inking. Carry it through Togashi brush-pen, delinquent heroes, eerie demons, screentone, manga panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-016.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

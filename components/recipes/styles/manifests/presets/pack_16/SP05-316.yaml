@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-316
 packId: pack_16
-name: Biomorphic Mist Ritual Style
+name: Aura Battler Dunbine - Biomorphic Mist Ritual
 styleAnchors:
-  - 'Biomorphic Mist Ritual Style'
-displayName: 'Biomorphic Mist Ritual'
+  - Aura Battler Dunbine - Biomorphic Mist Ritual
+displayName: Aura Battler Dunbine - Biomorphic Mist Ritual
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use soft irregular line turns that follow existing anatomy and materials; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use deep moss, mist gray, sea-glass teal and muted plum only. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as diffuse cel-value pools that preserve the prompt’s light direction; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply soft wash-like image texture and blended edges, without changing depicted materials as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use flowing contour echoes inside the existing composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through translucent marks and variable edge softness; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use layered but legible contours with controlled blur and intact silhouette edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshiyuki Tomino Aura Battler Dunbine look (1983): insect-like organic mecha, misty medieval fantasy world, fairy creatures and eighties Sunrise cel.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with eighties Sunrise designs, soft faces, medieval armor and cloaks, beside insectoid machines.
+  color_and_tone: Mist green, violet, earth brown and pearl white.
+  lighting_and_shadow: Misty diffused light, glowing aura and dusky fantasy skies.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Wide misty landscapes, insect mecha silhouettes, rituals by lakes.
+  atmosphere_and_mood: Keep the requested mood with strange mystic fantasy.
+  rendering_and_quality: Eerie 1983 television frame with organic mecha detail.
+  key_features: Dunbine insect mecha; misty fantasy realm; fairies; eighties Sunrise cel
+  creative_brief: "Yoshiyuki Tomino Aura Battler Dunbine look (1983): insect-like organic mecha, misty medieval fantasy world, fairy creatures and eighties Sunrise cel. Carry it through Dunbine insect mecha, misty fantasy realm, fairies, eighties Sunrise cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-316.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

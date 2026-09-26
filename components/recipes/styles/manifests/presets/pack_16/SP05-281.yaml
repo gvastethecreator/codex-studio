@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-281
 packId: pack_16
-name: Temporal Memory Cinema Style
+name: Millennium Actress - Temporal Memory Cinema
 styleAnchors:
-  - 'Temporal Memory Cinema Style'
-displayName: 'Temporal Memory Cinema'
+  - Millennium Actress - Temporal Memory Cinema
+displayName: Millennium Actress - Temporal Memory Cinema
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Cinema-still handling: narrow charcoal-blue contours, softened secondary edges, low-contrast
-    depth layers, and isolated warm notes.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Let only
-    secondary contours recede, with no ghosted copies or time-shifted subjects.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, balance slate blue,
-    charcoal, and pale gray with a few amber accents; avoid a blanket sepia cast.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Respect source direction; use gentle plane
-    falloff and small warm notes only on existing lit surfaces, without adding fog.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use nearly uniform fine grain over smooth
-    painted transitions; avoid frame borders and coarse film noise.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Vary sharpness according to
-    depth already present and let existing spacing carry a held rhythm.
-  atmosphere_and_mood: >-
-    Preserve user mood; time is suggested by fading contrast, not nostalgia or flashback
-    content.
-  rendering_and_quality: >-
-    Retain one sharp focal plane, clean silhouettes, and legible midground detail; no blur over
-    requested features.
-  key_features: >-
-    Cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks.
-  creative_brief: 'Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras.
+  color_and_tone: 'Palette that shifts per era: sepia and snow for period scenes, technicolor warmth, cool modern greys.'
+  lighting_and_shadow: Studio film lighting and theatrical spotlights, snow glinting, projector beams.
+  texture_and_material: Clean realistic cel over detailed painted sets, film grain and projector flicker.
+  camera_and_composition: Seamless match transitions between eras, characters running across changing sets.
+  atmosphere_and_mood: Keep the requested mood with nostalgic devoted longing.
+  rendering_and_quality: Refined theatrical Madhouse cel frame with cinematic continuity.
+  key_features: Satoshi Kon match cuts; film eras; realistic faces; projector light; snow
+  creative_brief: "Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot. Carry it through Satoshi Kon match cuts, film eras, realistic faces, projector light, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-281.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

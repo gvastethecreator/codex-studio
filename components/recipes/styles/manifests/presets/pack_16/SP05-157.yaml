@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-157
 packId: pack_16
-name: Vertical Speed Rebellion Style
+name: Oh! Great - Vertical Speed Rebellion
 styleAnchors:
-  - 'Vertical Speed Rebellion Style'
-displayName: 'Vertical Speed Rebellion'
+  - Oh! Great - Vertical Speed Rebellion
+displayName: Oh! Great - Vertical Speed Rebellion
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Kinetic digital anime built around vertical lift, directional contour and readable
-    motion marks.
-  subject_treatment: >-
-    Keep the requested subject and action. Extend silhouettes along movement and use
-    speed-line deformation only on forms that are actually moving.
-  color_and_tone: >-
-    Honor explicit colors. If the prompt leaves them open, use value contrast to separate
-    motion from its surroundings without imposing a fixed palette.
-  lighting_and_shadow: >-
-    Use a narrow directional rim and grouped shadows to support the action; keep glow
-    controlled and secondary.
-  texture_and_material: >-
-    Keep ink edges stable and use trailing smears as graphic motion marks, not as added
-    surface material.
-  camera_and_composition: >-
-    Keep the given view and framing. Where the action permits, use vertical stacks, rising
-    diagonals and compressed lanes to direct movement.
-  atmosphere_and_mood: >-
-    Let upward force and counter-direction support the energy requested in the prompt.
-  rendering_and_quality: >-
-    Keep pose and action readable while controlling smears and integrating forms with the
-    painted background.
-  key_features: >-
-    Vertical lift; elongated action silhouettes; rising diagonals; trailing smears and
-    compressed motion lanes.
-  creative_brief: 'Emphasize vertical movement and speed marks only when the supplied action supports them. Preserve the subject, camera, palette and scene. Use it as a reusable look on any subject.'
+  aesthetic: 'Oh! Great manga art as in Air Gear: hyper-detailed inked cityscapes, extreme fisheye perspective, sexy athletic figures, speed lines and graffiti-covered urban rooftops.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Oh! Great anatomy, lean athletic bodies, wild hair, detailed skate gear and extreme poses.
+  color_and_tone: Black ink with screentone plus neon graffiti accents in color pages.
+  lighting_and_shadow: Hard urban light with dramatic ink shadows and glinting highlights.
+  texture_and_material: Dense inked detail, screentone, speed lines, graffiti and architectural rendering.
+  camera_and_composition: Extreme fisheye and vertical perspective, figures leaping off buildings into sky.
+  atmosphere_and_mood: Keep the requested mood with rebellious vertical velocity.
+  rendering_and_quality: Hyper-detailed manga illustration with extreme perspective and energy.
+  key_features: Oh! Great detail; fisheye perspective; skate rooftops; speed lines
+  creative_brief: "Oh! Great manga art as in Air Gear: hyper-detailed inked cityscapes, extreme fisheye perspective, sexy athletic figures, speed lines and graffiti-covered urban rooftops. Carry it through Oh! Great detail, fisheye perspective, skate rooftops, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-157.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

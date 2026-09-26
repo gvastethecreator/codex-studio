@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-304
 packId: pack_16
-name: Baroque Insurgent Melodrama Style
+name: Rose of Versailles - Baroque Insurgent Melodrama
 styleAnchors:
-  - 'Baroque Insurgent Melodrama Style'
-displayName: 'Baroque Insurgent Melodrama'
+  - Rose of Versailles - Baroque Insurgent Melodrama
+displayName: Rose of Versailles - Baroque Insurgent Melodrama
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use nested marks following existing contours and surface details, not adding decoration; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use deep burgundy, black, ivory and antique gold. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as alternating narrow highlights and deep cel shapes aligned to the stated light; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply opaque pigment, selective engraved hatching and subtle print grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use interlaced curves and angular turns contained within the supplied composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through varied line scale and dense yet legible edges; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use balance ornate detail with large readable forms and clean cel edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use ornamental fine-line passages set against firm silhouette ink; nested marks following existing contours and surface details, not adding decoration; alternating narrow highlights and deep cel shapes aligned to the stated light; opaque pigment, selective engraved hatching and subtle print grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Osamu Dezaki and Shingo Araki anime of Rose of Versailles (1979): baroque shojo melodrama, sparkling long-lashed eyes, flowing golden hair, roses and pastel freeze-frame postcard shots.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Araki and Himeno designs, long lashes, sparkling eyes, flowing hair, military uniforms and gowns.
+  color_and_tone: Rose pink, gold, royal blue, cream and deep crimson.
+  lighting_and_shadow: Soft glowing highlights, sparkle flares and dramatic backlight.
+  texture_and_material: Hand-painted cels, pastel chalk-like postcard freeze frames and petal effects.
+  camera_and_composition: Split screens, triple-take zooms, freeze frames as painted postcards.
+  atmosphere_and_mood: Keep the requested mood with passionate tragic romance.
+  rendering_and_quality: Lush 1979 Dezaki television frame with painterly freeze frames.
+  key_features: Dezaki postcard freeze; Araki sparkle eyes; roses; baroque uniforms; melodrama
+  creative_brief: "Osamu Dezaki and Shingo Araki anime of Rose of Versailles (1979): baroque shojo melodrama, sparkling long-lashed eyes, flowing golden hair, roses and pastel freeze-frame postcard shots. Carry it through Dezaki postcard freeze, Araki sparkle eyes, roses, baroque uniforms, melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-304.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

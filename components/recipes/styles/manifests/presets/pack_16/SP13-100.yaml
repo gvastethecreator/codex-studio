@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-100
 packId: pack_16
-name: Expressionist Shadow Horror Anime
+name: SHAFT Monogatari - Expressionist Shadow Horror
 styleAnchors:
-  - Expressionist Shadow Horror Anime
+  - SHAFT Monogatari - Expressionist Shadow Horror
   - expressionist horror anime
   - slanted sets
-displayName: Expressionist Shadow Horror Anime
+displayName: SHAFT Monogatari - Expressionist Shadow Horror
 category: 7. Horror
 domain: expressionist horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - expressionist
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast.'
-  subject_treatment: Keep the prompt's subject and setting; distort the architecture around it into slanted, angular shapes with painted shadows.
-  color_and_tone: High-contrast black, white and grey with a faint sepia or green tint.
-  lighting_and_shadow: Painted hard-edged shadows and light shapes that do not follow real light direction.
-  texture_and_material: Flat painted sets, angular doors and streets, and grainy film texture.
-  camera_and_composition: Tilted, theatrical frames with sharp diagonals and exaggerated perspective.
-  atmosphere_and_mood: Feverish and theatrical, a nightmare built from crooked painted scenery.
-  rendering_and_quality: Graphic prestige anime with bold angular design and film grain.
-  creative_brief: "Silent-film expressionist horror anime: slanted walls, painted shadows, crooked streets and stark black-and-white contrast. Carry it through slanted sets, painted shadows, stark contrast, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: slanted sets; painted shadows; stark contrast; film grain
+  aesthetic: 'Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry.
+  color_and_tone: Flat color fields, red and black, with stark white architecture.
+  lighting_and_shadow: Flat graphic lighting with stark black silhouettes against bright color fields.
+  texture_and_material: Clean flat color, geometric architecture, repeating patterns and sharp edges.
+  camera_and_composition: Extreme angular compositions, off-center framing and characteristic head tilts.
+  atmosphere_and_mood: Keep the requested mood with uncanny stylized dread.
+  rendering_and_quality: Expressionist SHAFT television frame with angular geometry and flat fields.
+  creative_brief: "Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes. Carry it through SHAFT head tilts, angular architecture, flat color fields, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: SHAFT head tilts; angular architecture; flat color fields; silhouettes
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - expressionist
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

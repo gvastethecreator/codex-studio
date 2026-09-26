@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-282
 packId: pack_16
-name: Social Humanist Warmth Style
+name: Tokyo Godfathers - Social Humanist Warmth
 styleAnchors:
-  - 'Social Humanist Warmth Style'
-displayName: 'Social Humanist Warmth'
+  - Tokyo Godfathers - Social Humanist Warmth
+displayName: Tokyo Godfathers - Social Humanist Warmth
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Observational anime drawing: responsive medium-weight ink, natural proportions, soft cel
-    modeling, and resolved small gestures.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Contour
-    variation may clarify existing gestures but must not create or idealize them.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor muted umber, ochre,
-    cream, and blue-gray while keeping each material's stated color recognizable.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Model with broad natural illumination,
-    restrained warm bounce, cool neutral fill, and soft contact shadows from present forms.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep surfaces matte with brief fine
-    hatching only on materials already textured; avoid glossy filter finishes.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Distribute detail among
-    supplied subjects and leave remaining areas in quiet, readable value groups.
-  atmosphere_and_mood: >-
-    Keep the requested emotion; observational line and natural proportions do not require warmth
-    or intimacy.
-  rendering_and_quality: >-
-    Protect anatomy and small details with even denoise, gentle value separation, and no plastic
-    smoothing.
-  key_features: >-
-    Responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures.
-  creative_brief: 'Use responsive medium ink; natural proportion; soft cel modeling; locally resolved gestures. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth.
+  color_and_tone: Snowy night blues, sodium orange streetlights, dirty browns and warm red accents.
+  lighting_and_shadow: Streetlight pools on snow, neon spill, cold moonlight with warm windows.
+  texture_and_material: Detailed painted urban grime, cel characters, snowflakes, trash and texture of old coats.
+  camera_and_composition: Street-level views in alleys, wide rooftop shots at night, sudden comic close-ups.
+  atmosphere_and_mood: Keep the requested mood with scruffy tender warmth.
+  rendering_and_quality: Realist 2003 Madhouse cel frame with lively acting.
+  key_features: Satoshi Kon realism; rubbery expressions; snowy alleys; urban grime; humanist warmth
+  creative_brief: "Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs. Carry it through Satoshi Kon realism, rubbery expressions, snowy alleys, urban grime, humanist warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-282.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

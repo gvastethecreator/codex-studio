@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-152
 packId: pack_16
-name: Anachronistic Deadpan Mayhem Style
+name: Hideaki Sorachi - Anachronistic Deadpan Mayhem
 styleAnchors:
-  - 'Anachronistic Deadpan Mayhem Style'
-displayName: 'Anachronistic Deadpan Mayhem'
+  - Hideaki Sorachi - Anachronistic Deadpan Mayhem
+displayName: Hideaki Sorachi - Anachronistic Deadpan Mayhem
 category: 3. 2000s Classics
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 2000s-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A deadpan anime rhythm made from minimal expression shifts, restrained contour and
-    contrast between stillness and sudden emphasis.
-  subject_treatment: >-
-    Preserve the subject and action. Keep expression changes small and gesture economical,
-    aligned with the requested tone.
-  color_and_tone: >-
-    Use the prompt's colors. With no palette specified, maintain even color grouping and
-    reserve stronger contrast for the focal change.
-  lighting_and_shadow: >-
-    Keep lighting straightforward and shapes readable. Use shadow blocks only to direct
-    attention, not to add spectacle.
-  texture_and_material: >-
-    Use clean digital ink and limited surface noise; follow the materials actually depicted
-    and keep background painting softly integrated.
-  camera_and_composition: >-
-    Respect the supplied camera and layout. A composed hold followed by a visual beat may
-    express timing within that frame.
-  atmosphere_and_mood: >-
-    Dry understatement or absurd contrast may appear when requested; otherwise follow the
-    prompt's tone and emotional stakes.
-  rendering_and_quality: >-
-    Maintain stable linework and clear silhouettes; reserve effects for the prompted action
-    and keep small expression details crisp.
-  key_features: >-
-    Minimal expression shift; economical gesture; stillness contrasted with a sudden visual
-    beat; clean ink and controlled value emphasis.
-  creative_brief: 'Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone. Use it as a reusable look on any subject.'
+  aesthetic: 'Hideaki Sorachi Gintama look: Edo samurai streets full of spaceships, vending machines and aliens, lazy deadpan faces, sudden serious sword action and gag-style breaks.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sorachi designs, dead-fish half-lidded eyes, natural perm hair, kimono mixed with modern items and deadpan poses.
+  color_and_tone: Edo earth tones, kimono patterns, neon sci-fi accents and sky blue.
+  lighting_and_shadow: Ordinary daylight for gags, dramatic moonlight and rim light for serious sword scenes.
+  texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
+  camera_and_composition: Deadpan static comedy framing, then fast diagonal sword duel angles.
+  atmosphere_and_mood: Keep the requested mood with deadpan anachronistic chaos.
+  rendering_and_quality: Energetic 2000s Sunrise television frame mixing gag art and serious action.
+  key_features: Hideaki Sorachi deadpan; Edo with spaceships; lazy eyes; gag-to-serious shifts
+  creative_brief: "Hideaki Sorachi Gintama look: Edo samurai streets full of spaceships, vending machines and aliens, lazy deadpan faces, sudden serious sword action and gag-style breaks. Carry it through Hideaki Sorachi deadpan, Edo with spaceships, lazy eyes, gag-to-serious shifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a silver-perm samurai with a wooden sword
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -64,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-152.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
-    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a silver-perm samurai with a wooden sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 2000s-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-015
 packId: pack_16
-name: Philosophical Cyber-Ops Vertigo Style
+name: Masamune Shirow - Philosophical Cyber-Ops Vertigo
 styleAnchors:
-  - 'Philosophical Cyber-Ops Vertigo Style'
-displayName: 'Philosophical Cyber-Ops Vertigo'
+  - Masamune Shirow - Philosophical Cyber-Ops Vertigo
+displayName: Masamune Shirow - Philosophical Cyber-Ops Vertigo
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,37 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A precise 90s cyber-cel look uses recursive line geometry, skewed depth cues and clipped
-    cyan-magenta accents. Vertigo comes from repeated alignments and displaced edges, not a required
-    city or screen.
-  subject_treatment: >-
-    Preserve the requested form and proportions. Echo its existing contours with a few measured
-    offsets and geometric cuts; do not replace it with a cybernetic body.
-  color_and_tone: >-
-    When color is open, use cool cyan, restrained magenta and a small screen-green accent against deep
-    blue-black. Honor requested colors and avoid flooding the image with neon.
-  lighting_and_shadow: >-
-    Keep the requested light direction, then sharpen existing edges with synthetic-looking highlights
-    and flat cel shadows. Do not invent monitors, signs or light sources.
-  texture_and_material: >-
-    Use fine scanline interruptions and glass-like reflection accents only where they suit the
-    depicted surface. Retain clear cel fills and avoid global wetness or static noise.
-  camera_and_composition: >-
-    Build vertigo through nested alignments and slight perspective tension inside the existing frame.
-    Preserve camera, horizon and object placement; do not add architecture.
-  atmosphere_and_mood: >-
-    Use measured visual dislocation and cool spacing to support an already requested introspective
-    tone. Do not impose existential drama or a surveillance narrative.
-  rendering_and_quality: >-
-    Keep geometry crisp, offsets deliberate and details readable at normal scale. Restrict scan
-    artifacts to a few bands rather than covering the image.
-  key_features: >-
-    recursive alignment and measured contour offsets; precise cel geometry; limited cyan, magenta and
-    green accents
-  creative_brief: 'Restyle the requested content with recursive geometry, controlled edge offsets and restrained digital accents. Keep its identity, materials, setting and composition; introduce no screens, cables or cybernetic parts. Use it as a reusable look on any subject.'
+  aesthetic: 'Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints.
+  color_and_tone: Early digital airbrush colors, metallic blues, skin warms and neon greens.
+  lighting_and_shadow: Glossy airbrushed highlights, screen glow and hard metallic reflections.
+  texture_and_material: Precise pen linework, dense mechanical detail, airbrushed digital color gradients.
+  camera_and_composition: Dynamic action panels with tech cutaways and busy mechanical backgrounds.
+  atmosphere_and_mood: Keep the requested mood with cerebral tactical intensity.
+  rendering_and_quality: Meticulous manga illustration with dense technical detail and airbrush color.
+  key_features: Masamune Shirow mechanics; athletic cyborgs; dense tech detail; airbrush color
+  creative_brief: "Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages. Carry it through Masamune Shirow mechanics, athletic cyborgs, dense tech detail, airbrush color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a purple-haired cyborg major in a thermoptic suit
+  - spider-tank robots with pod heads
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -65,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-015.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

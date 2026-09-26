@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-354
 packId: pack_16
-name: Telemetry Apex Precision Style
+name: MF Ghost - Telemetry Apex Precision
 styleAnchors:
-  - Telemetry Apex Precision Style
-displayName: Telemetry Apex Precision
+  - MF Ghost - Telemetry Apex Precision
+displayName: MF Ghost - Telemetry Apex Precision
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Motorsport anime of precision and data: racing lines, telemetry graphics, apex points and engineers watching screens of abstract data.'
-  subject_treatment: Keep the prompt's subject and action; overlay clean abstract telemetry shapes (racing lines, apex markers, speed arcs) without readable numbers.
-  color_and_tone: Asphalt grey, curb red and white with cyan data-line overlays.
-  lighting_and_shadow: Bright track daylight or floodlit night racing with clean reflections on bodywork.
-  texture_and_material: Glossy bodywork, rubber marbles, carbon parts and glowing vector overlays.
-  camera_and_composition: Overhead track views with racing lines drawn on, and low trackside shots at the apex.
-  atmosphere_and_mood: Calculated and intense, victory measured in tiny margins and perfect lines.
-  rendering_and_quality: Crisp technical anime with clean vector overlays and polished mechanical detail.
-  key_features: racing line overlay; apex markers; curbs; telemetry shapes
-  creative_brief: "Motorsport anime of precision and data: racing lines, telemetry graphics, apex points and engineers watching screens of abstract data. Carry it through racing line overlay, apex markers, curbs, telemetry shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses.
+  color_and_tone: Coastal blue, supercar red, telemetry cyan and asphalt grey.
+  lighting_and_shadow: Bright coastal daylight, glossy car reflections and HUD glow.
+  texture_and_material: Glossy CG cars over painted roads with telemetry-style graphic overlays.
+  camera_and_composition: Drone chase shots, apex lines and cockpit telemetry framing.
+  atmosphere_and_mood: Keep the requested mood with precise high-speed focus.
+  rendering_and_quality: Glossy modern racing frame with CG cars and drone views.
+  key_features: MF Ghost supercars; drone telemetry; coastal roads; CG gloss
+  creative_brief: "Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks. Carry it through MF Ghost supercars, drone telemetry, coastal roads, CG gloss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -60,10 +61,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-354.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -72,6 +77,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

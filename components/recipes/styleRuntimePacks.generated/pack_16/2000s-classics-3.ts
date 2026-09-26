@@ -5,612 +5,536 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-147',
-    name: 'Winter Friction Romance Style',
-    displayName: 'Winter Friction Romance',
-    styleAnchors: ['Winter Friction Romance Style'],
+    name: 'Toradora! - Winter Friction Romance',
+    displayName: 'Toradora! - Winter Friction Romance',
+    styleAnchors: ['Toradora! - Winter Friction Romance'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A restrained digital anime treatment built from delicate contours, soft compositing and gentle value contrast.',
+        'J.C.Staff Toradora! television look (2008) with Masayoshi Tanaka designs: clean late-2000s romantic comedy cel, large bright eyes, winter school streets and warm lamplit apartments.',
       subject_treatment:
-        'Keep the supplied identity, action and pose. Use economical facial marks and quiet contour changes so expression remains subtle without prescribing a relationship.',
-      color_and_tone:
-        'When no palette is specified, favor pale blue-gray and soft gray with small blush or amber accents. Preserve every requested color and attach accents to forms already present.',
+        'Preserve the requested identity, count, pose and action; draw people with Tanaka designs, large bright eyes with crisp highlights, fine hair strands and winter coats and scarves.',
+      color_and_tone: 'Winter blue, snow white, warm lamp orange and scarf reds.',
       lighting_and_shadow:
-        'Use diffuse illumination with a restrained warm counterlight and a fine separating rim; keep forms legible.',
+        'Cold winter daylight, warm streetlamps and soft glowing window light at night.',
       texture_and_material:
-        'Blend clean digital fills with softly painted backgrounds, matching surface treatment to the materials in the prompt.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Preserve the requested framing and viewpoint. Let the existing gesture read clearly, using open space only where the supplied composition allows it.',
-      atmosphere_and_mood:
-        "Understated expression and cool-warm contrast can support a quiet or intimate tone when requested; follow the prompt's emotional direction.",
+        'Romantic two-shots, snowy street wides and comic close-up reactions between rivals.',
+      atmosphere_and_mood: 'Keep the requested mood with prickly tender romance.',
       rendering_and_quality:
-        'Keep facial and object contours fine but readable, transitions soft, and background color integrated without blurring the subject.',
-      key_features:
-        'Delicate contour economy; diffuse light with small warm accents; pale cool fields when palette is open; soft integration between digital forms and painted backgrounds.',
+        'Polished late-2000s romantic comedy television frame with bright clean designs.',
+      key_features: 'Masayoshi Tanaka designs; winter romance; bright eyes; comic friction',
       creative_brief:
-        'Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present. Use it as a reusable look on any subject.',
+        "J.C.Staff Toradora! television look (2008) with Masayoshi Tanaka designs: clean late-2000s romantic comedy cel, large bright eyes, winter school streets and warm lamplit apartments. Carry it through Masayoshi Tanaka designs, winter romance, bright eyes, comic friction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-149',
-    name: 'Clan Comedy Escalation Style',
-    displayName: 'Clan Comedy Escalation',
-    styleAnchors: ['Clan Comedy Escalation Style'],
+    name: 'Akira Amano - Clan Comedy Escalation',
+    displayName: 'Akira Amano - Clan Comedy Escalation',
+    styleAnchors: ['Akira Amano - Clan Comedy Escalation'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Expressive digital anime driven by elastic reaction shapes, economical ink lines and rhythm between a held beat and a quick change.',
+        'Akira Amano Hitman Reborn! look: stylish mafia comedy with sharp elegant suits, spiky flame-lit hair, chaotic gag escalation that turns into dramatic flame battles.',
       subject_treatment:
-        "Preserve the prompt's identity and action. Flex expression and outer contour briefly for readable reactions while keeping features recognizable.",
-      color_and_tone:
-        'Follow named colors; when unspecified, use clear color grouping and restrained accents rather than assigning a fixed scheme.',
+        'Preserve the requested identity, count, pose and action; draw people with Amano designs, slim stylish bodies, spiky hair, sharp suits and exaggerated gag faces.',
+      color_and_tone: 'Sky orange flames, black suits, crisp whites and warm family-home colors.',
       lighting_and_shadow:
-        'Use simple shadow masses and compact highlights so facial reactions stay legible; keep glow and effects subordinate.',
+        'Warm household light that flips into dramatic flame-glow battle lighting.',
       texture_and_material:
-        'Use clean ink contours with sparse texture. Integrate any painted background softly, and render only the surfaces named by the prompt.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Build setup, pause and payoff through spacing or a quick visual beat while preserving the requested camera, layout and number of subjects.',
-      atmosphere_and_mood:
-        'Held reactions can build humor when requested; keep the emotional direction grounded in the prompt.',
-      rendering_and_quality:
-        'Prioritize immediate pose readability, stable contours and a clear figure-background split.',
-      key_features:
-        'Elastic expression shifts; readable reaction silhouettes; setup-pause-payoff spacing; quick visual timing with clean ink.',
+        'Crowded gag compositions, sudden dramatic battle angles and family table shots.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic family escalation.',
+      rendering_and_quality: 'Energetic 2000s shonen television frame with stylish mafia flair.',
+      key_features: 'Akira Amano style; mafia suits; flaming hair; gag escalation',
       creative_brief:
-        "Use elastic expression and quick reaction timing only where they suit the requested action. Keep the prompt's cast, scene, camera and tone intact. Use it as a reusable look on any subject.",
+        "Akira Amano Hitman Reborn! look: stylish mafia comedy with sharp elegant suits, spiky flame-lit hair, chaotic gag escalation that turns into dramatic flame battles. Carry it through Akira Amano style, mafia suits, flaming hair, gag escalation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-151',
-    name: 'Pop Reality Bend Style',
-    displayName: 'Pop Reality Bend',
-    styleAnchors: ['Pop Reality Bend Style'],
+    name: 'Kyoto Animation Haruhi - Pop Reality Bend',
+    displayName: 'Kyoto Animation Haruhi - Pop Reality Bend',
+    styleAnchors: ['Kyoto Animation Haruhi - Pop Reality Bend'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
-      aesthetic: 'A pop-anime treatment built on clean graphic shapes and stable, readable forms.',
+      aesthetic:
+        'Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces.',
       subject_treatment:
-        'Keep the requested identity, proportions and action. Allow a playful contour emphasis without bending anatomy or changing what is depicted.',
+        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting.',
       color_and_tone:
-        'When the prompt leaves color open, use bright flat accents and high-key value separation. Explicit palettes and color assignments take priority.',
-      lighting_and_shadow:
-        'Use crisp graphic highlights and a small, controlled glow; retain the underlying shadow structure and keep luminous edges distinct.',
+        'Bright school colors, sky blue, pale grey closed-space tint and pop accents.',
+      lighting_and_shadow: 'Clear school daylight, then flat eerie grey light when reality bends.',
       texture_and_material:
-        'Favor smooth digital fills, clear ink edges and restrained grain. Match surface detail to the actual subject and blend painted backgrounds without plastic gloss.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Retain the requested viewpoint and layout. Use contrast and visual rhythm within that frame; do not introduce distortion or new objects.',
-      atmosphere_and_mood:
-        'Buoyant visual energy is available when it matches the prompt; keep the requested mood.',
+        'Everyday school framing interrupted by impossible warped perspective shots.',
+      atmosphere_and_mood: 'Keep the requested mood with playful uncanny whimsy.',
       rendering_and_quality:
-        'Separate flat accents from soft background transitions, keep outlines crisp, and limit glow to highlights that clarify form.',
-      key_features:
-        'High-key color grouping when palette is open; bright flat accents; crisp graphic highlights; restrained glow over stable silhouettes.',
+        'Precise 2006 Kyoto Animation television frame with reality-bending twists.',
+      key_features: 'Noizi Ito designs; KyoAni polish; reality bending; closed spaces; pop whimsy',
       creative_brief:
-        'Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing. Use it as a reusable look on any subject.',
+        "Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces. Carry it through Noizi Ito designs, KyoAni polish, reality bending, closed spaces, pop whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-152',
-    name: 'Anachronistic Deadpan Mayhem Style',
-    displayName: 'Anachronistic Deadpan Mayhem',
-    styleAnchors: ['Anachronistic Deadpan Mayhem Style'],
+    name: 'Hideaki Sorachi - Anachronistic Deadpan Mayhem',
+    displayName: 'Hideaki Sorachi - Anachronistic Deadpan Mayhem',
+    styleAnchors: ['Hideaki Sorachi - Anachronistic Deadpan Mayhem'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a silver-perm samurai with a wooden sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A deadpan anime rhythm made from minimal expression shifts, restrained contour and contrast between stillness and sudden emphasis.',
+        'Hideaki Sorachi Gintama look: Edo samurai streets full of spaceships, vending machines and aliens, lazy deadpan faces, sudden serious sword action and gag-style breaks.',
       subject_treatment:
-        'Preserve the subject and action. Keep expression changes small and gesture economical, aligned with the requested tone.',
-      color_and_tone:
-        "Use the prompt's colors. With no palette specified, maintain even color grouping and reserve stronger contrast for the focal change.",
+        'Preserve the requested identity, count, pose and action; draw people with Sorachi designs, dead-fish half-lidded eyes, natural perm hair, kimono mixed with modern items and deadpan poses.',
+      color_and_tone: 'Edo earth tones, kimono patterns, neon sci-fi accents and sky blue.',
       lighting_and_shadow:
-        'Keep lighting straightforward and shapes readable. Use shadow blocks only to direct attention, not to add spectacle.',
+        'Ordinary daylight for gags, dramatic moonlight and rim light for serious sword scenes.',
       texture_and_material:
-        'Use clean digital ink and limited surface noise; follow the materials actually depicted and keep background painting softly integrated.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Respect the supplied camera and layout. A composed hold followed by a visual beat may express timing within that frame.',
-      atmosphere_and_mood:
-        "Dry understatement or absurd contrast may appear when requested; otherwise follow the prompt's tone and emotional stakes.",
+        'Deadpan static comedy framing, then fast diagonal sword duel angles.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan anachronistic chaos.',
       rendering_and_quality:
-        'Maintain stable linework and clear silhouettes; reserve effects for the prompted action and keep small expression details crisp.',
+        'Energetic 2000s Sunrise television frame mixing gag art and serious action.',
       key_features:
-        'Minimal expression shift; economical gesture; stillness contrasted with a sudden visual beat; clean ink and controlled value emphasis.',
+        'Hideaki Sorachi deadpan; Edo with spaceships; lazy eyes; gag-to-serious shifts',
       creative_brief:
-        'Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone. Use it as a reusable look on any subject.',
+        "Hideaki Sorachi Gintama look: Edo samurai streets full of spaceships, vending machines and aliens, lazy deadpan faces, sudden serious sword action and gag-style breaks. Carry it through Hideaki Sorachi deadpan, Edo with spaceships, lazy eyes, gag-to-serious shifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-154',
-    name: 'Clinical Nocturne Tactics Style',
-    displayName: 'Clinical Nocturne Tactics',
-    styleAnchors: ['Clinical Nocturne Tactics Style'],
+    name: 'Blood+ - Clinical Nocturne Tactics',
+    displayName: 'Blood+ - Clinical Nocturne Tactics',
+    styleAnchors: ['Blood+ - Clinical Nocturne Tactics'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A measured digital anime treatment where precise edge separation and grouped shadows create a controlled image.',
+        'Production I.G Blood+ television look (2005): sober realistic designs by Chizu Hashii, military bases, vampires and grand cities at night, cold clinical palettes and tragic duty.',
       subject_treatment:
-        'Retain the requested identity, pose and action. Clarify form with disciplined contours and selective edge light.',
-      color_and_tone:
-        'If color is open, use cool blue and white accents against restrained dark neutrals. Preserve explicit palette choices and keep values clearly separated.',
-      lighting_and_shadow:
-        'Pair broad, even illumination with a precise rim and compact shadow groups. Use nocturnal contrast only when it suits the requested scene.',
+        'Preserve the requested identity, count, pose and action; draw people with Hashii realism, restrained faces, slender figures, military uniforms and dark formal clothes.',
+      color_and_tone: 'Cold blue, clinical white, deep crimson and night black.',
+      lighting_and_shadow: 'Cold clinical light, moonlit exteriors and harsh red emergency light.',
       texture_and_material:
-        'Keep digital ink fine, surfaces controlled and grain low. Add screen-like glow only to luminous elements already present.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Keep the requested camera and staging. Establish order through clean separation and spacing.',
-      atmosphere_and_mood:
-        'Detachment or unease may come from measured spacing and cool contrast when compatible with the requested tone.',
-      rendering_and_quality:
-        'Preserve clean line hierarchy, crisp silhouettes and soft background integration; avoid bloom that obscures small forms.',
-      key_features:
-        'Precise rim separation; broad even light with grouped shadows; controlled digital surfaces; measured spacing and clean silhouettes.',
+        'Measured compositions, tactical rooms, silhouettes in windows at night.',
+      atmosphere_and_mood: 'Keep the requested mood with cold tactical dread.',
+      rendering_and_quality: 'Sober 2005 Production I.G television frame with realist restraint.',
+      key_features: 'Production I.G realism; clinical night palette; vampires; tactical rooms',
       creative_brief:
-        'Use cool value separation, precise edges and grouped shadows only where they fit the prompt. Keep its camera, subject and intended mood. Use it as a reusable look on any subject.',
+        "Production I.G Blood+ television look (2005): sober realistic designs by Chizu Hashii, military bases, vampires and grand cities at night, cold clinical palettes and tragic duty. Carry it through Production I.G realism, clinical night palette, vampires, tactical rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-156',
-    name: 'Summer Loop Paranoia Style',
-    displayName: 'Summer Loop Paranoia',
-    styleAnchors: ['Summer Loop Paranoia Style'],
+    name: 'Higurashi - Summer Loop Paranoia',
+    displayName: 'Higurashi - Summer Loop Paranoia',
+    styleAnchors: ['Higurashi - Summer Loop Paranoia'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A clean digital-anime finish with clear ink contours, soft compositing and painted-background integration.',
+        'Studio Deen Higurashi television look (2006): cute moe rural designs, cicada-heavy summer village, and sudden horror close-ups where pupils shrink and faces fill with shadow.',
       subject_treatment:
-        'Preserve the supplied identity, expression and action; let the prompt determine pose and detail.',
-      color_and_tone: "Follow the prompt's palette and contrast.",
+        'Preserve the requested identity, count, pose and action; draw people with round cute moe designs, huge eyes that can shrink into pinpoint pupils, and summer village clothes.',
+      color_and_tone: 'Summer green, dusk orange, cicada heat haze and sudden deep red shadow.',
       lighting_and_shadow:
-        'Respect the requested light direction and source. Keep the subject readable against softly integrated background tones.',
+        'Blazing summer light that switches to ominous dusk with faces half in black shadow.',
       texture_and_material:
-        'Apply fine digital edges and restrained surface texture only to materials present in the prompt.',
-      camera_and_composition: "Preserve the user's framing, viewpoint and composition.",
-      atmosphere_and_mood:
-        'Let the prompt set the emotional tone; keep the visual treatment quiet and composed.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
+      camera_and_composition:
+        'Cheerful village wides turning into claustrophobic extreme close-ups of eyes.',
+      atmosphere_and_mood: 'Keep the requested mood with sweet paranoid dread.',
       rendering_and_quality:
-        'Use soft composite transitions, clear line handling and integrated painted backgrounds.',
-      key_features:
-        'Clear digital contours; soft compositing; integrated painted backgrounds; prompt-controlled palette, lighting and emotion.',
+        'Mid-2000s Studio Deen television frame that shifts from cute to horror.',
+      key_features: 'Higurashi moe to horror; shrinking pupils; cicada summer; dusk dread',
       creative_brief:
-        'Keep the requested content and composition. Apply clean contours, soft compositing and painted-background integration while following its palette and mood. Use it as a reusable look on any subject.',
+        "Studio Deen Higurashi television look (2006): cute moe rural designs, cicada-heavy summer village, and sudden horror close-ups where pupils shrink and faces fill with shadow. Carry it through Higurashi moe to horror, shrinking pupils, cicada summer, dusk dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-157',
-    name: 'Vertical Speed Rebellion Style',
-    displayName: 'Vertical Speed Rebellion',
-    styleAnchors: ['Vertical Speed Rebellion Style'],
+    name: 'Oh! Great - Vertical Speed Rebellion',
+    displayName: 'Oh! Great - Vertical Speed Rebellion',
+    styleAnchors: ['Oh! Great - Vertical Speed Rebellion'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Kinetic digital anime built around vertical lift, directional contour and readable motion marks.',
+        'Oh! Great manga art as in Air Gear: hyper-detailed inked cityscapes, extreme fisheye perspective, sexy athletic figures, speed lines and graffiti-covered urban rooftops.',
       subject_treatment:
-        'Keep the requested subject and action. Extend silhouettes along movement and use speed-line deformation only on forms that are actually moving.',
-      color_and_tone:
-        'Honor explicit colors. If the prompt leaves them open, use value contrast to separate motion from its surroundings without imposing a fixed palette.',
-      lighting_and_shadow:
-        'Use a narrow directional rim and grouped shadows to support the action; keep glow controlled and secondary.',
+        'Preserve the requested identity, count, pose and action; draw people with Oh! Great anatomy, lean athletic bodies, wild hair, detailed skate gear and extreme poses.',
+      color_and_tone: 'Black ink with screentone plus neon graffiti accents in color pages.',
+      lighting_and_shadow: 'Hard urban light with dramatic ink shadows and glinting highlights.',
       texture_and_material:
-        'Keep ink edges stable and use trailing smears as graphic motion marks, not as added surface material.',
+        'Dense inked detail, screentone, speed lines, graffiti and architectural rendering.',
       camera_and_composition:
-        'Keep the given view and framing. Where the action permits, use vertical stacks, rising diagonals and compressed lanes to direct movement.',
-      atmosphere_and_mood:
-        'Let upward force and counter-direction support the energy requested in the prompt.',
+        'Extreme fisheye and vertical perspective, figures leaping off buildings into sky.',
+      atmosphere_and_mood: 'Keep the requested mood with rebellious vertical velocity.',
       rendering_and_quality:
-        'Keep pose and action readable while controlling smears and integrating forms with the painted background.',
-      key_features:
-        'Vertical lift; elongated action silhouettes; rising diagonals; trailing smears and compressed motion lanes.',
+        'Hyper-detailed manga illustration with extreme perspective and energy.',
+      key_features: 'Oh! Great detail; fisheye perspective; skate rooftops; speed lines',
       creative_brief:
-        'Emphasize vertical movement and speed marks only when the supplied action supports them. Preserve the subject, camera, palette and scene. Use it as a reusable look on any subject.',
+        "Oh! Great manga art as in Air Gear: hyper-detailed inked cityscapes, extreme fisheye perspective, sexy athletic figures, speed lines and graffiti-covered urban rooftops. Carry it through Oh! Great detail, fisheye perspective, skate rooftops, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-159',
-    name: 'Black-Lipstick Melodrama Punk Style',
-    displayName: 'Black-Lipstick Melodrama Punk',
-    styleAnchors: ['Black-Lipstick Melodrama Punk Style'],
+    name: 'Nana 2006 - Black-Lipstick Melodrama Punk',
+    displayName: 'Nana 2006 - Black-Lipstick Melodrama Punk',
+    styleAnchors: ['Nana 2006 - Black-Lipstick Melodrama Punk'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A punk-influenced anime finish built from hard dark contours, irregular accents and roughened edges.',
+        'Madhouse Nana television look (2006): Ai Yazawa designs in motion, punk fashion, cramped Tokyo apartments, rainy streets and emotional band melodrama.',
       subject_treatment:
-        'Preserve identity, anatomy and clothing. Use angular contour breaks and expressive line weight, with pose guided by the supplied action.',
-      color_and_tone:
-        'When the prompt leaves color open, black and crimson with a small acidic accent can set the contrast. Keep any explicit palette unchanged.',
-      lighting_and_shadow:
-        'Group shadows densely and place dirty highlights or a hard rim selectively to keep the silhouette clear.',
-      texture_and_material: 'Use rough ink or scuffed grain only on surfaces already depicted.',
-      camera_and_composition: 'Honor the requested framing and preserve figure separation.',
-      atmosphere_and_mood:
-        "Abrasive tension or alienation may be conveyed through contrast when requested; follow the prompt's tone.",
-      rendering_and_quality:
-        'Let roughened edges remain controlled around a clear focal contour; blend background paint without losing the subject.',
-      key_features:
-        'Hard dark contour; irregular accent color; rough ink edges; dense shadow with dirty highlight separation.',
+        'Preserve the requested identity, count, pose and action; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner, punk fashion and chokers.',
+      color_and_tone: 'Black, crimson, smoky grey and soft apartment pastels.',
+      lighting_and_shadow: 'Rainy grey daylight, warm apartment lamps and stage spotlights.',
+      texture_and_material:
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
+      camera_and_composition:
+        'Fashion-shoot framing, cramped apartment interiors and smoky live stage performances.',
+      atmosphere_and_mood: 'Keep the requested mood with aching punk melodrama.',
+      rendering_and_quality: 'Stylish 2006 Madhouse television frame with fashion-forward designs.',
+      key_features: 'Ai Yazawa designs animated; punk fashion; rainy Tokyo; band melodrama',
       creative_brief:
-        'Apply the rough line and contrast treatment to the forms already present. Keep requested clothing, palette, action and emotional tone. Use it as a reusable look on any subject.',
+        "Madhouse Nana television look (2006): Ai Yazawa designs in motion, punk fashion, cramped Tokyo apartments, rainy streets and emotional band melodrama. Carry it through Ai Yazawa designs animated, punk fashion, rainy Tokyo, band melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-160',
-    name: 'Rose Elite Comedy Style',
-    displayName: 'Rose Elite Comedy',
-    styleAnchors: ['Rose Elite Comedy Style'],
+    name: 'Ouran 2006 - Rose Elite Comedy',
+    displayName: 'Ouran 2006 - Rose Elite Comedy',
+    styleAnchors: ['Ouran 2006 - Rose Elite Comedy'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Expressive anime comedy through elastic reaction shapes, quick timing and refined, clean linework.',
+        'BONES Ouran High School Host Club television look (2006): pink rose-petal backgrounds, sparkling bishonen, lavish academy salons and fast gag reaction shots.',
       subject_treatment:
-        'Preserve each subject and action. Exaggerate expression and outer contour only enough to make a reaction legible; do not change identity.',
-      color_and_tone:
-        "Retain the prompt's palette. If colors are open, use restrained accents and clear value grouping.",
-      lighting_and_shadow:
-        'Keep facial highlights and shadow shapes simple so a small expression change reads immediately.',
+        'Preserve the requested identity, count, pose and action; draw people with elegant bishonen designs, slim bodies, sparkling eyes, tailored suits and comedic chibi reactions.',
+      color_and_tone: 'Rose pink, champagne gold, pastel lavender and crisp white.',
+      lighting_and_shadow: 'Sparkling bright light with rose-petal glow and soft bloom.',
       texture_and_material:
-        'Use clean ink and controlled digital fills; texture only surfaces present in the prompt.',
-      camera_and_composition:
-        'Use setup-pause-payoff spacing and quick visual beats within the requested frame and cast.',
-      atmosphere_and_mood:
-        'Deadpan escalation and humane absurdity can support humor when asked; preserve other requested tones.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
+      camera_and_composition: 'Posed group portraits, sudden gag close-ups and salon wides.',
+      atmosphere_and_mood: 'Keep the requested mood with lavish comedic flirtation.',
       rendering_and_quality:
-        'Keep expression contours crisp and compositions readable; avoid clutter that competes with the reaction.',
-      key_features:
-        'Elastic expression; readable reaction contours; quick-pause timing; refined lines with clear value grouping.',
+        'Glossy 2006 BONES television frame with sparkle and rose backgrounds.',
+      key_features: 'Ouran rose backgrounds; sparkling bishonen; lavish salons; gag reactions',
       creative_brief:
-        'Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve its subjects, framing and chosen tone. Use it as a reusable look on any subject.',
+        "BONES Ouran High School Host Club television look (2006): pink rose-petal backgrounds, sparkling bishonen, lavish academy salons and fast gag reaction shots. Carry it through Ouran rose backgrounds, sparkling bishonen, lavish salons, gag reactions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-024',
-    name: 'Alchemical Moral Geometry Style',
-    displayName: 'Alchemical Moral Geometry',
-    styleAnchors: ['Alchemical Moral Geometry Style'],
+    name: 'Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry',
+    displayName: 'Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry',
+    styleAnchors: ['Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a short blond alchemist in a red coat with a metal arm, a suit of empty armor, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Digital anime linework organized by repeated geometry, measured axes and controlled value contrast.',
+        'BONES Fullmetal Alchemist: Brotherhood television look (2009): clean confident designs from Hiromu Arakawa, transmutation circles flaring blue, European industrial towns and war-scarred drama.',
       subject_treatment:
-        'Preserve the requested subject and action. Use abstract diagram-like contours only where they clarify existing forms.',
-      color_and_tone:
-        'Retain explicit hues; if none are given, rely on value separation and one restrained accent.',
-      lighting_and_shadow:
-        'Use a defined rim, compact glow and blocked shadow to clarify form; keep effects subordinate to the subject.',
+        'Preserve the requested identity, count, pose and action; draw people with Arakawa-derived designs, sturdy bodies, clear expressive faces, coats, uniforms and automail limbs.',
+      color_and_tone: 'Military blue, brick red, alchemy cyan and dusty ochre.',
+      lighting_and_shadow: 'Blue-white alchemy flashes, warm lamplight and harsh desert sun.',
       texture_and_material:
-        'Fine etched or chalk-like marks may describe existing surfaces; keep them nonverbal and subordinate to the subject.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Retain the requested camera; measured axes, repetition or symmetry may organize existing shapes when compatible.',
-      atmosphere_and_mood:
-        'Use visual constraint and spacing to support the mood requested in the prompt.',
-      rendering_and_quality:
-        'Balance crisp geometry and ink edges with softly painted backgrounds; preserve readability and limit glow.',
-      key_features:
-        'Repeated geometry; measured axes; rule-like spacing; fine nonverbal marks; rim light and compact glow.',
+        'Dynamic action with circle compositions, drawn from above and at ground level.',
+      atmosphere_and_mood: 'Keep the requested mood with earnest moral struggle.',
+      rendering_and_quality: 'Crisp 2009 BONES television frame with dynamic action animation.',
+      key_features: 'FMA Brotherhood; transmutation circles; automail; military uniforms',
       creative_brief:
-        "Apply geometric line organization and restrained light to existing forms. Preserve the prompt's content and frame; markings remain abstract and nonverbal. Use it as a reusable look on any subject.",
+        "BONES Fullmetal Alchemist: Brotherhood television look (2009): clean confident designs from Hiromu Arakawa, transmutation circles flaring blue, European industrial towns and war-scarred drama. Carry it through FMA Brotherhood, transmutation circles, automail, military uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-026',
-    name: 'Operatic Rebellion Strategy Style',
-    displayName: 'Operatic Rebellion Strategy',
-    styleAnchors: ['Operatic Rebellion Strategy Style'],
+    name: 'Code Geass - Operatic Rebellion Strategy',
+    displayName: 'Code Geass - Operatic Rebellion Strategy',
+    styleAnchors: ['Code Geass - Operatic Rebellion Strategy'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A dramatic anime composition shaped by opposing visual masses, rising diagonals and clean digital linework.',
+        'Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames.',
       subject_treatment:
-        'Keep the requested identities and actions. Emphasize clear silhouettes and directional gestures while keeping subject count unchanged.',
-      color_and_tone:
-        'Follow the specified palette; when open, use deliberate value contrast rather than a fixed color scheme.',
-      lighting_and_shadow:
-        'Use grouped shadow and selective edge highlights to separate opposing forms while keeping existing light sources intact.',
+        'Preserve the requested identity, count, pose and action; draw people with CLAMP proportions, very long legs, narrow faces, sharp eyes and ornate uniforms with high collars.',
+      color_and_tone: 'Imperial purple, glossy black, royal gold and deep crimson accents.',
+      lighting_and_shadow: 'Dramatic stage-like lighting, eye glows and flames behind silhouettes.',
       texture_and_material:
-        'Use economical ink contours and integrate painted backgrounds; render only the materials the prompt names.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Preserve the requested camera. Arrange existing masses along upward diagonals with defiant spacing only when the composition supports it.',
-      atmosphere_and_mood: "Grand tension or defiance may follow the prompt's own mood.",
-      rendering_and_quality:
-        'Keep silhouette hierarchy strong and background transitions soft enough to preserve depth and legibility.',
-      key_features:
-        'Opposing masses; rising diagonals; defiant spacing; clean contours and grouped shadow.',
+        'Theatrical hand-pointing poses, low angles and chess-piece symbolism.',
+      atmosphere_and_mood: 'Keep the requested mood with grand operatic defiance.',
+      rendering_and_quality: 'Dramatic 2006 Sunrise television frame with CLAMP elegance.',
+      key_features: 'CLAMP proportions; theatrical poses; imperial uniforms; chess symbolism',
       creative_brief:
-        'Use opposing shape masses and upward diagonals as compositional treatment, not as a new scene. Preserve the requested action, viewpoint and tone. Use it as a reusable look on any subject.',
+        "Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames. Carry it through CLAMP proportions, theatrical poses, imperial uniforms, chess symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-027',
-    name: 'Spiral Overdrive Bravado Style',
-    displayName: 'Spiral Overdrive Bravado',
-    styleAnchors: ['Spiral Overdrive Bravado Style'],
+    name: 'Gurren Lagann - Spiral Overdrive Bravado',
+    displayName: 'Gurren Lagann - Spiral Overdrive Bravado',
+    styleAnchors: ['Gurren Lagann - Spiral Overdrive Bravado'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a spiky-haired rebel with a cape and flaming sunglasses, a tiny drill-headed robot, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'High-energy anime staging built on upward thrust, exaggerated scale contrast and rhythmic shape hierarchy.',
+        'Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale.',
       subject_treatment:
-        'Preserve the supplied subject and action. Enlarge or stretch forms only where requested movement supports it; keep existing focal hierarchy.',
-      color_and_tone:
-        'Keep explicit colors. With an open palette, let the strongest accent track the focal form without prescribing hues.',
-      lighting_and_shadow:
-        'Use bold value grouping and selective edge light; keep effects attached to the prompted forms.',
+        'Preserve the requested identity, count, pose and action; draw people with Nishigori designs, angular faces, pointed teeth, wild hair and sunglasses, in bold heroic poses.',
+      color_and_tone: 'Hot red, drill yellow, sky blue and spiral green.',
+      lighting_and_shadow: 'Blazing heroic backlight, spiral energy glow and explosion flashes.',
       texture_and_material:
-        'Use stable ink contours with controlled speed accents; keep material treatment tied to the subject.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Honor the supplied camera, using an ascending axis and scale rhythm only within its existing frame.',
-      atmosphere_and_mood:
-        "Confidence and escalation are optional tonal choices; keep the prompt's actual stakes and mood.",
-      rendering_and_quality:
-        'Maintain strong silhouette readability while allowing controlled exaggeration and soft background integration.',
-      key_features:
-        'Upward thrust; enlarged scale rhythm; strong shape hierarchy; restrained motion accents.',
+        'Extreme perspective, escalating scale from ground to galaxy, heroic pose stills.',
+      atmosphere_and_mood: 'Keep the requested mood with boundless defiant bravado.',
+      rendering_and_quality: 'Raw energetic 2007 Gainax frame with loose rough action lines.',
+      key_features: 'Imaishi action; Nishigori designs; drills and spirals; escalating scale',
       creative_brief:
-        'Apply upward force and scale contrast where they fit the supplied action. Preserve the subject, framing and requested tone. Use it as a reusable look on any subject.',
+        "Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale. Carry it through Imaishi action, Nishigori designs, drills and spirals, escalating scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-030',
-    name: 'Gothic Soul-Pop Action Style',
-    displayName: 'Gothic Soul-Pop Action',
-    styleAnchors: ['Gothic Soul-Pop Action Style'],
+    name: 'Soul Eater - Gothic Soul-Pop Action',
+    displayName: 'Soul Eater - Gothic Soul-Pop Action',
+    styleAnchors: ['Soul Eater - Gothic Soul-Pop Action'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a scythe-weapon partner with white hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
-      aesthetic: 'Ornamental shadow shapes meet crisp graphic accents and clear motion contours.',
+      aesthetic:
+        'BONES Soul Eater television look (2008): Atsushi Ohkubo designs, Tim Burton-like crooked city, grinning sun and moon, stark black shapes and punk gothic pop.',
       subject_treatment:
-        'Preserve the prompted subject and action. Use motion-ready contours and visible force transfer within the existing gesture.',
-      color_and_tone:
-        'If palette is open, use black, crimson, bone, violet and occasional polished-gold accents. Retain all explicit colors.',
+        'Preserve the requested identity, count, pose and action; draw people with Ohkubo designs, triangular grins with pointed teeth, lanky bodies, punk gothic clothes and stitched details.',
+      color_and_tone: 'Black, blood red, bone white and acid yellow.',
       lighting_and_shadow:
-        'Use localized warm glow, hard rim and deep velvet-like shadow, keeping the source consistent with the prompt.',
+        'Flat graphic shadows, glowing grinning sun and moon, stark silhouettes.',
       texture_and_material:
-        'Render ornamental ink and polished-to-matte contrast only on surfaces already present.',
-      camera_and_composition:
-        'Keep the requested camera. When action is present, clarify attack direction, recoil spacing and motion lanes without inventing action.',
-      atmosphere_and_mood:
-        'Let the requested tone set the balance of elegance, danger or spectacle.',
-      rendering_and_quality:
-        'Keep impact contours crisp, shadows grouped and background painting integrated without obscuring motion.',
-      key_features:
-        'Ornamental shadow shapes; hard rim over deep soft shadow; bright graphic accents; readable force-transfer lines.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
+      camera_and_composition: 'Crooked Dutch angles, rooftop leaps and crooked architecture.',
+      atmosphere_and_mood: 'Keep the requested mood with playful gothic mischief.',
+      rendering_and_quality: 'Graphic 2008 BONES television frame with gothic pop flair.',
+      key_features: 'Atsushi Ohkubo grins; crooked city; grinning sun and moon; gothic pop',
       creative_brief:
-        'Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing. Use it as a reusable look on any subject.',
+        "BONES Soul Eater television look (2008): Atsushi Ohkubo designs, Tim Burton-like crooked city, grinning sun and moon, stark black shapes and punk gothic pop. Carry it through Atsushi Ohkubo grins, crooked city, grinning sun and moon, gothic pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-141',
-    name: 'Gothic Resonance Punk Style',
-    displayName: 'Gothic Resonance Punk',
-    styleAnchors: ['Gothic Resonance Punk Style'],
+    name: 'Hellsing TV - Gothic Resonance Punk',
+    displayName: 'Hellsing TV - Gothic Resonance Punk',
+    styleAnchors: ['Hellsing TV - Gothic Resonance Punk'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Gothic-punk anime with ornamental dark contours, rough ink texture and pulsing highlight accents.',
+        'Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain.',
       subject_treatment:
-        'Keep the supplied identity and gesture. Repeated light or contour pulses may underline existing motion.',
-      color_and_tone:
-        'When palette is open, use black, crimson, bone, violet and a small acidic accent; explicit color choices take priority.',
-      lighting_and_shadow:
-        'Pair warm local glow and a firm rim with deep soft shadow; use vibration-like highlight pulses only when they fit the image.',
+        'Preserve the requested identity, count, pose and action; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes.',
+      color_and_tone: 'Blood red, black, ash grey and cold moon blue.',
+      lighting_and_shadow: 'Lurid red and moonlit blue light, harsh shadows and gunfire flashes.',
       texture_and_material:
-        'Apply rough ink and distressed grain only to surfaces present in the prompt.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Respect requested framing and viewpoint; keep decorative shapes subordinate to the existing silhouette.',
-      atmosphere_and_mood:
-        'Use emotional resonance or abrasive tension only when compatible with the requested tone.',
-      rendering_and_quality:
-        'Retain crisp silhouette edges, controlled pulses and soft painted-background integration.',
-      key_features:
-        'Ornamental shadow; dark and vivid accent contrast; pulsing highlight rhythm; rough ink on existing materials.',
+        'Low gothic angles, churches and alleys, silhouettes against huge moons.',
+      atmosphere_and_mood: 'Keep the requested mood with lurid gothic menace.',
+      rendering_and_quality: 'Moody early-2000s Gonzo television frame with digital grain.',
+      key_features: 'Gonzo gothic punk; red and black; ruined churches; vampire menace',
       creative_brief:
-        'Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera. Use it as a reusable look on any subject.',
+        "Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain. Carry it through Gonzo gothic punk, red and black, ruined churches, vampire menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-145',
-    name: 'Sky-Surf Romantic Momentum Style',
-    displayName: 'Sky-Surf Romantic Momentum',
-    styleAnchors: ['Sky-Surf Romantic Momentum Style'],
+    name: 'Eureka Seven - Sky-Surf Romantic Momentum',
+    displayName: 'Eureka Seven - Sky-Surf Romantic Momentum',
+    styleAnchors: ['Eureka Seven - Sky-Surf Romantic Momentum'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A gentle digital-anime finish built from fine contours, smooth transitions and integrated background paint.',
+        'BONES Eureka Seven television look (2005) with Kenichi Yoshida designs: airy sky-surfing, boards riding trapar waves, soft pastels, big skies and youth romance.',
       subject_treatment:
-        "Preserve the prompt's identity, pose and action. Keep contour emphasis light and expression readable.",
-      color_and_tone:
-        'If color is unspecified, use soft blush, open blue and warm highlights as optional accents; obey any requested palette.',
-      lighting_and_shadow:
-        'Favor gentle highlight transitions and clear soft shadow while respecting the requested light direction.',
+        'Preserve the requested identity, count, pose and action; draw people with Yoshida designs, clean simple faces, lanky teens and adults in streetwear and flight gear.',
+      color_and_tone: 'Sky cyan, pastel green, sunset peach and trapar glow.',
+      lighting_and_shadow: 'Big open sky light, trapar wave glow and golden sunsets.',
       texture_and_material:
-        'Use smooth digital fills and softly integrated background paint; follow the materials actually present.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Keep the requested viewpoint and staging; maintain the supplied action and subject relationships.',
-      atmosphere_and_mood:
-        'A sense of lift or momentum may support a compatible prompt; its emotional tone remains prompt-led.',
-      rendering_and_quality:
-        'Keep the subject contours clean and background transitions soft without flattening depth.',
-      key_features:
-        'Fine contours; gentle color transitions; optional blush-blue-warm accents; clear integration with painted backgrounds.',
+        'Sweeping aerial shots, surfing arcs across clouds and cockpit views.',
+      atmosphere_and_mood: 'Keep the requested mood with buoyant youthful momentum.',
+      rendering_and_quality: 'Airy 2005 BONES television frame with open-sky freedom.',
+      key_features: 'Kenichi Yoshida designs; sky surfing; pastel skies; trapar waves',
       creative_brief:
-        "Apply the fine line, soft transitions and optional warm accents to the existing scene. Preserve the prompt's content and camera. Use it as a reusable look on any subject.",
+        "BONES Eureka Seven television look (2005) with Kenichi Yoshida designs: airy sky-surfing, boards riding trapar waves, soft pastels, big skies and youth romance. Carry it through Kenichi Yoshida designs, sky surfing, pastel skies, trapar waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-146',
-    name: 'Velvet Covenant Gothic Style',
-    displayName: 'Velvet Covenant Gothic',
-    styleAnchors: ['Velvet Covenant Gothic Style'],
+    name: 'Yana Toboso - Velvet Covenant Gothic',
+    displayName: 'Yana Toboso - Velvet Covenant Gothic',
+    styleAnchors: ['Yana Toboso - Velvet Covenant Gothic'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a black-haired demon butler with a pentagram on the hand, a boy earl with an eyepatch, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Gothic anime defined by ornate shadow shapes, polished edge light and soft, velvety dark values.',
+        'Yana Toboso Black Butler look: Victorian gothic manga art, elegant tailcoats, lace and velvet, demonic contracts, candlelit manors and fine ornamental detail.',
       subject_treatment:
-        'Preserve the supplied identity and pose. Use restrained contours and selective edge highlights.',
-      color_and_tone:
-        'Where palette is open, use black, crimson, bone white, violet and polished-gold accents; retain requested hues.',
+        'Preserve the requested identity, count, pose and action; draw people with Toboso designs, slender elegant bodies, sharp eyes, Victorian formal clothes and gloved hands.',
+      color_and_tone: 'Black velvet, deep crimson, candle gold and bone white.',
       lighting_and_shadow:
-        'Use a firm rim against deep, soft shadow, with a small warm glow only when compatible with the prompt.',
+        'Flickering candlelight, deep manor shadows and small demonic red eye glints.',
       texture_and_material:
-        'Contrast matte dark areas with polished highlights on surfaces already present.',
-      camera_and_composition:
-        'Honor the requested camera and staging; keep ornament subordinate to the main silhouette.',
-      atmosphere_and_mood: "Solemnity or tension can follow the prompt's requested mood.",
-      rendering_and_quality:
-        'Keep decorative edges precise, shadows soft and backgrounds integrated without losing contour detail.',
-      key_features:
-        'Ornate shadow; polished rim over velvety dark values; controlled warm glow; matte-to-gloss contrast.',
+        'Fine ink linework, lace and embroidery detail, screentone and gothic ornament.',
+      camera_and_composition: 'Formal manor compositions, elegant close-ups and staircase scenes.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant sinister devotion.',
+      rendering_and_quality: 'Refined gothic manga illustration with Victorian ornamental detail.',
+      key_features: 'Yana Toboso Victorian gothic; tailcoats; candlelight; demonic contract',
       creative_brief:
-        'Use dark value shapes, precise edge light and subject-dependent surface contrast. Preserve the requested scene, colors and composition. Use it as a reusable look on any subject.',
+        "Yana Toboso Black Butler look: Victorian gothic manga art, elegant tailcoats, lace and velvet, demonic contracts, candlelit manors and fine ornamental detail. Carry it through Yana Toboso Victorian gothic, tailcoats, candlelight, demonic contract. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-150',
-    name: 'Crimson Threshold Embers Style',
-    displayName: 'Crimson Threshold Embers',
-    styleAnchors: ['Crimson Threshold Embers Style'],
+    name: 'Shakugan no Shana - Crimson Threshold Embers',
+    displayName: 'Shakugan no Shana - Crimson Threshold Embers',
+    styleAnchors: ['Shakugan no Shana - Crimson Threshold Embers'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-haired flame-haze girl with a black coat and katana, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
-      aesthetic: 'High-contrast digital anime organized around a clear division of value.',
+      aesthetic:
+        'J.C.Staff Shakugan no Shana television look (2005) with Noizi Ito designs: school streets frozen inside sealed fire domes, blazing crimson hair and eyes, and falling embers.',
       subject_treatment:
-        'Keep the prompted identity, gesture and context. Use contour emphasis at existing boundaries.',
-      color_and_tone:
-        'If no palette is given, use crimson against black, bone and smoky violet as restrained accents; explicit colors override this scheme.',
-      lighting_and_shadow:
-        'Use red edge glow or ember-like highlights as light treatment on existing forms.',
+        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big bright eyes, long hair turning crimson in battle and school or coat clothes.',
+      color_and_tone: 'Crimson flame, black, ember orange and sealed-space grey.',
+      lighting_and_shadow: 'Ember glow and flaming hair light in a frozen grey sealed world.',
       texture_and_material:
-        'Keep digital ink and cel-like fills controlled; match grain and gloss to the materials already depicted.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Preserve the camera. A division between light and dark can organize existing shapes within the supplied composition.',
-      atmosphere_and_mood:
-        "Suspense may come from a pause across contrasting value zones when requested; otherwise follow the prompt's tone.",
-      rendering_and_quality:
-        'Keep the crimson edge accents crisp, value zones readable and background transitions integrated.',
-      key_features:
-        'Optional crimson accent; red edge glow on existing forms; clear light-dark division; controlled digital contour.',
+        'Frozen crowds, swordfights on rooftops and flame trails across the sky.',
+      atmosphere_and_mood: 'Keep the requested mood with fiery resolute intensity.',
+      rendering_and_quality: 'Vivid 2005 J.C.Staff television frame with ember effects.',
+      key_features: 'Noizi Ito designs; crimson flames; sealed spaces; falling embers',
       creative_brief:
-        "Apply optional crimson edge light and divided value fields to the prompt's existing forms. Keep its scene, camera and palette intent. Use it as a reusable look on any subject.",
+        "J.C.Staff Shakugan no Shana television look (2005) with Noizi Ito designs: school streets frozen inside sealed fire domes, blazing crimson hair and eyes, and falling embers. Carry it through Noizi Ito designs, crimson flames, sealed spaces, falling embers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-153',
-    name: 'Techno-Gothic Exorcism Style',
-    displayName: 'Techno-Gothic Exorcism',
-    styleAnchors: ['Techno-Gothic Exorcism Style'],
+    name: 'Katsura Hoshino - Techno-Gothic Exorcism',
+    displayName: 'Katsura Hoshino - Techno-Gothic Exorcism',
+    styleAnchors: ['Katsura Hoshino - Techno-Gothic Exorcism'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Techno-noir digital anime combines luminous edges, fine scan-like marks and ornate dark shadow.',
+        'Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes.',
       subject_treatment:
-        'Keep the requested identity and action intact. Place synthetic glow only on existing luminous forms.',
-      color_and_tone:
-        'When palette is open, use cyan, black, violet and screen-green accents sparingly. Keep explicit color choices intact.',
-      lighting_and_shadow:
-        'Use restrained monitor-like bloom, scanline glow and synthetic rim on existing luminous forms.',
+        'Preserve the requested identity, count, pose and action; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair.',
+      color_and_tone: 'Black coats, silver trim, crimson accents and cold stained-glass colors.',
+      lighting_and_shadow: 'Stained-glass light, dark cathedrals and glowing weapon effects.',
       texture_and_material:
-        'Use fine horizontal marks and controlled ink grain where they support the depicted surface; keep material detail prompt-led.',
+        'Fine elegant ink lines, ornamental coat trims, screentone and gothic detail.',
       camera_and_composition:
-        'Respect the supplied frame and viewpoint; let luminous edges contrast with dark masses.',
-      atmosphere_and_mood:
-        "A cool techno-gothic tension is available when it matches the prompt's mood.",
+        'Dramatic diagonal compositions, cathedral interiors and machine demons.',
+      atmosphere_and_mood: 'Keep the requested mood with haunted gothic resolve.',
       rendering_and_quality:
-        'Keep luminous edges sharp, bloom contained and dark contours legible against softly integrated backgrounds.',
-      key_features:
-        'Luminous edge; restrained monitor-like bloom; fine scan-like marks; ornate shadow against clean digital surfaces.',
+        'Elegant gothic manga illustration with dramatic black-and-white design.',
+      key_features: 'Katsura Hoshino gothic; exorcist coats; cathedrals; machine demons',
       creative_brief:
-        'Apply synthetic light and scan-like detail only where compatible with the requested image. Preserve its content and composition. Use it as a reusable look on any subject.',
+        "Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes. Carry it through Katsura Hoshino gothic, exorcist coats, cathedrals, machine demons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-155',
-    name: 'Noble Arcane Romcom Style',
-    displayName: 'Noble Arcane Romcom',
-    styleAnchors: ['Noble Arcane Romcom Style'],
+    name: 'Familiar of Zero - Noble Arcane Romcom',
+    displayName: 'Familiar of Zero - Noble Arcane Romcom',
+    styleAnchors: ['Familiar of Zero - Noble Arcane Romcom'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Polished digital anime with upright contour, refined shape boundaries and measured luminous accents.',
+        'J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes.',
       subject_treatment:
-        "Keep the prompt's identity and pose. Favor composed vertical lines and restrained expression.",
-      color_and_tone:
-        'If open, use royal blue, gold, pearl and clean white as optional accents. Preserve the requested palette.',
+        'Preserve the requested identity, count, pose and action; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions.',
+      color_and_tone: 'Pastel pink, academy navy, sky blue and castle stone cream.',
       lighting_and_shadow:
-        'Use controlled rim and clean shadow shapes; add a subtle glow only when the prompt includes a compatible luminous element.',
+        'Bright fantasy daylight, magic sparkles and slapstick explosion flashes.',
       texture_and_material:
-        'Keep fills smooth and line detail precise. Render fabric, ornament or reflective surfaces only when present.',
+        'Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.',
       camera_and_composition:
-        'Honor the requested camera. Keep contour and light hierarchy orderly.',
-      atmosphere_and_mood: "Elegant restraint can support the prompt's tone.",
+        'Academy courtyard wides, slapstick reaction close-ups and magic duels.',
+      atmosphere_and_mood: 'Keep the requested mood with flustered comic romance.',
       rendering_and_quality:
-        'Preserve clean silhouettes, restrained effects and integrated background paint without excessive gloss.',
-      key_features:
-        'Upright contour; controlled expression; optional royal-blue and gold accents; precise line with restrained glow.',
+        'Bright mid-2000s light novel adaptation television frame with glossy eyes.',
+      key_features: 'Eiji Usatsuka designs; pastel academy; wands and cloaks; tsundere slapstick',
       creative_brief:
-        "Use refined contour, orderly light and optional palette accents while preserving the prompt's subject, action and camera. Use it as a reusable look on any subject.",
+        "J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes. Carry it through Eiji Usatsuka designs, pastel academy, wands and cloaks, tsundere slapstick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-158',
-    name: 'Ecological Whisper Healing Style',
-    displayName: 'Ecological Whisper Healing',
-    styleAnchors: ['Ecological Whisper Healing Style'],
+    name: 'Yuki Urushibara - Ecological Whisper Healing',
+    displayName: 'Yuki Urushibara - Ecological Whisper Healing',
+    styleAnchors: ['Yuki Urushibara - Ecological Whisper Healing'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Quiet digital anime built from softened edges, selective detail and gentle integration with painted backgrounds.',
+        'Yuki Urushibara Mushishi manga art: soft brush and pen lines, loose natural ink washes, quiet mountain villages and strange translucent life forms drawn with folk simplicity.',
       subject_treatment:
-        'Keep requested forms recognizable. Let secondary contours recede and use partial detail without omitting any detail the prompt requires.',
-      color_and_tone:
-        'Follow the supplied palette. If open, keep contrast muted and reserve a restrained accent for the focal form.',
-      lighting_and_shadow:
-        'Use weak rim glow and soft darkness while retaining enough value separation to read the subject.',
-      texture_and_material:
-        'Use fine paper-like grain and soft surface transitions only where they suit the depicted material.',
-      camera_and_composition:
-        'Preserve the given frame; near-silent spacing may direct attention to existing negative space.',
-      atmosphere_and_mood:
-        "Quiet tension may come from gaps and low contrast when compatible; follow the prompt's emotional tone.",
+        'Preserve the requested identity, count, pose and action; draw people with Urushibara simplicity, quiet plain faces, loose hair, rural clothes and calm unhurried gestures.',
+      color_and_tone: 'Muted greens, earth browns and pale watercolor washes like her color pages.',
+      lighting_and_shadow: 'Soft natural forest light and faint glowing life forms.',
+      texture_and_material: 'Brush-pen lines, ink washes, watercolor bleeding and paper texture.',
+      camera_and_composition: 'Quiet contemplative panels of forests, rivers and villages.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed healing calm.',
       rendering_and_quality:
-        'Balance selective detail and soft transitions with a clear focal silhouette; keep fine marks subordinate.',
+        'Gentle hand-drawn manga illustration with watercolor softness and quiet restraint.',
       key_features:
-        'Softened edge; partial detail; weak rim glow; selective contrast; negative space and painted-background integration.',
+        'Yuki Urushibara brushwork; watercolor pages; forest life forms; quiet villages',
       creative_brief:
-        "Apply selective detail, softened edges and restrained light to the prompt's existing content. Preserve its scene, camera and requested tone. Use it as a reusable look on any subject.",
+        "Yuki Urushibara Mushishi manga art: soft brush and pen lines, loose natural ink washes, quiet mountain villages and strange translucent life forms drawn with folk simplicity. Carry it through Yuki Urushibara brushwork, watercolor pages, forest life forms, quiet villages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

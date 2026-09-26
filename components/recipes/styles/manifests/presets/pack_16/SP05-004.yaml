@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-004
 packId: pack_16
-name: Melancholy Astral Opera Style
+name: Rintaro - Melancholy Astral Opera
 styleAnchors:
-  - 'Melancholy Astral Opera Style'
-displayName: 'Melancholy Astral Opera'
+  - Rintaro - Melancholy Astral Opera
+displayName: Rintaro - Melancholy Astral Opera
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use graceful contour arcs and restrained facial detail without changing proportions; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use dusky indigo, muted violet, pale rose and bone highlights. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as large, low-contrast cel fields cut by a few decisive contour shadows; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply soft airbrushed color transitions behind crisp ink and a trace of cel grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use spacious intervals and long visual arcs within the supplied composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through open spacing and softened color transitions; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use sharp foreground linework clearly separated from softened painted fields; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use long sweeping contours, quiet edge-weight changes and broad tonal pauses; graceful contour arcs and restrained facial detail without changing proportions; large, low-contrast cel fields cut by a few decisive contour shadows; soft airbrushed color transitions behind crisp ink and a trace of cel grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Rintaro late-seventies and eighties feature direction: operatic space melancholy, backlit glowing cel effects, long elegant figures, starfields and grand tragic staging.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with slender elegant figures, long hair and coats, sad luminous eyes and graceful poses.
+  color_and_tone: Deep violet space, nebula magenta, gold glow and cold blue shadow.
+  lighting_and_shadow: Backlit cel glow effects, starlight halos and dramatic rim light.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Grand theatrical wides, silhouettes against nebulae, slow dramatic push-ins.
+  atmosphere_and_mood: Keep the requested mood with operatic cosmic melancholy.
+  rendering_and_quality: Lush 1980s theatrical cel frame with glowing backlit effects.
+  key_features: Rintaro opera; backlit glow; nebula violet; elegant sad figures; theatrical staging
+  creative_brief: "Rintaro late-seventies and eighties feature direction: operatic space melancholy, backlit glowing cel effects, long elegant figures, starfields and grand tragic staging. Carry it through Rintaro opera, backlit glow, nebula violet, elegant sad figures, theatrical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-004.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

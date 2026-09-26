@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-034
 packId: pack_16
-name: Deep Void Whisper Anime
+name: Inio Asano - Deep Void Whisper
 styleAnchors:
-  - Deep Void Whisper Anime
-displayName: Deep Void Whisper Anime
+  - Inio Asano - Deep Void Whisper
+displayName: Inio Asano - Deep Void Whisper
 category: 7. Horror
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - horror
+  - reference-title
 visualDna:
-  aesthetic: 'Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe.'
-  subject_treatment: Keep the prompt's subject and setting; surround it with vast darkness or depth so it feels small and exposed.
-  color_and_tone: Near-black blues and greens with a pale, weak light on the subject only.
-  lighting_and_shadow: One weak light source fading quickly into total darkness, no fill at all.
-  texture_and_material: Still black water, damp stone and faint particles drifting in the dark.
-  camera_and_composition: Top-down views into depths or wide frames that are mostly black with a small lit subject.
-  atmosphere_and_mood: Silent and vertiginous, as if something far below is listening very carefully.
-  rendering_and_quality: Low-key prestige anime with subtle gradients and very restrained detail.
-  key_features: vast darkness; tiny lit subject; still black water; depth
-  creative_brief: "Minimal horror anime of darkness and depth: tiny figures above black water, wells and voids that seem to breathe. Carry it through vast darkness, tiny lit subject, still black water, depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces.
+  color_and_tone: Black ink with fine grey tone and deep black voids.
+  lighting_and_shadow: Dim lantern light swallowed by vast darkness and faint reflections.
+  texture_and_material: Photo-derived line, fine tone and immaculate empty black fields.
+  camera_and_composition: Tiny figures in huge empty frames and quiet overhead views.
+  atmosphere_and_mood: Keep the requested mood with lonely existential dread.
+  rendering_and_quality: Precise contemporary manga illustration with vast quiet voids.
+  key_features: Inio Asano voids; photo-derived backgrounds; lonely figures; stillness
+  creative_brief: "Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread. Carry it through Inio Asano voids, photo-derived backgrounds, lonely figures, stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-034.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -68,6 +73,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - horror
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

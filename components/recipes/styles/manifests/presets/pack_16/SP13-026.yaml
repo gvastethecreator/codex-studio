@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-026
 packId: pack_16
-name: Pre-Strike Stillness Anime
+name: Goseki Kojima - Pre-Strike Stillness
 styleAnchors:
-  - Pre-Strike Stillness Anime
-displayName: Pre-Strike Stillness Anime
+  - Goseki Kojima - Pre-Strike Stillness
+displayName: Goseki Kojima - Pre-Strike Stillness
 category: 6. Samurai & Medieval
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-classics-and-prestige
   - anime
   - samurai-medieval
+  - reference-title
 visualDna:
-  aesthetic: 'Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension.'
-  subject_treatment: Keep the prompt's subject, action and setting; draw it at the instant before motion, weight settled, eyes fixed, hands resting near what they will use.
-  color_and_tone: Slate greys, lacquer crimson and moonlit indigo with one sharp accent, mostly desaturated around a single warm point.
-  lighting_and_shadow: Raking side light and long hard shadows, faces half in dark, a thin rim tracing the silhouette.
-  texture_and_material: Clean cel with fine ink line, woven cloth folds and lacquer gloss kept sparse and controlled.
-  camera_and_composition: Wide static frames with large empty space, or extreme close-ups on eyes and hands, nothing moving yet.
-  atmosphere_and_mood: Silent, tense and ceremonial, like a held breath just before something fatal happens.
-  rendering_and_quality: Theatrical prestige anime key frame with precise line weight and restrained effects.
-  key_features: held breath; empty space; raking light; eye and hand close-ups
-  creative_brief: "Prestige period anime frozen in the breath before a strike: long held frames, severe composition and a single thin line of tension. Carry it through held breath, empty space, raking light, eye and hand close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion.
+  color_and_tone: Black sumi brush ink on white paper with grey wash and no other color.
+  lighting_and_shadow: Light made by the untouched paper, shadows as heavy wet brush masses and dry-brush edges.
+  texture_and_material: Wet and dry brush strokes, splattered ink, grey wash tones and rough paper grain.
+  camera_and_composition: Wide empty compositions with tiny opposed figures, then abrupt extreme close-ups of eyes and hands.
+  atmosphere_and_mood: Keep the requested mood with deadly suspended stillness.
+  rendering_and_quality: Masterful gekiga brush illustration with cinematic silence and restraint.
+  key_features: Goseki Kojima brush ink; empty white space; gekiga realism; pre-strike stillness
+  creative_brief: "Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike. Carry it through Goseki Kojima brush ink, empty white space, gekiga realism, pre-strike stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -51,10 +52,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-026.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -64,6 +69,7 @@ taxonomy:
     - anime-classics-and-prestige
     - anime
     - samurai-medieval
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

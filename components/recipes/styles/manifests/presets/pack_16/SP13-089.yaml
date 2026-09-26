@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-089
 packId: pack_16
-name: School Ghost Story Anime
+name: Tomoki Izumi - School Ghost Story
 styleAnchors:
-  - School Ghost Story Anime
+  - Tomoki Izumi - School Ghost Story
   - kaidan school anime
   - empty classrooms
-displayName: School Ghost Story Anime
+displayName: Tomoki Izumi - School Ghost Story
 category: 7. Horror
 domain: kaidan school anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - kaidan
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real.'
-  subject_treatment: Keep the prompt's subject and setting; place it in a school after dark where one rumor is quietly coming true.
-  color_and_tone: Dusky orange fading into blue-grey, with cold white from a single light source.
-  lighting_and_shadow: Last sunset light through windows, then flashlight beams and deep classroom shadows.
-  texture_and_material: Wooden desks, chalk dust, tiled restrooms and cloth uniforms in clean cel.
-  camera_and_composition: Low angles in stairwells, mirror compositions and long empty classrooms.
-  atmosphere_and_mood: Nervous and whispery, a dare among friends that goes a little too far.
-  rendering_and_quality: Clean prestige anime with careful light transitions from dusk to dark.
-  creative_brief: "School ghost-story anime told after sunset: empty classrooms, restroom mirrors, stairwells and whispered rumors made real. Carry it through empty classrooms, mirrors, flashlight beams, rumors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: empty classrooms; mirrors; flashlight beams; rumors
+  aesthetic: 'Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean cute designs and ghosts rendered with dense grotesque detail beside them.
+  color_and_tone: Black ink with grey tone and pallid ghost whites.
+  lighting_and_shadow: Narrow flashlight beams cutting through dim stairwell light and deep corners.
+  texture_and_material: Clean character line contrasted with dense grotesque hatching.
+  camera_and_composition: Everyday school framing with a ghost looming too close.
+  atmosphere_and_mood: Keep the requested mood with nervous deadpan terror.
+  rendering_and_quality: Contrasting cute-and-grotesque horror manga illustration with deadpan tension.
+  creative_brief: "Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see. Carry it through Tomoki Izumi contrast, cute people, grotesque ghosts, deadpan fear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Tomoki Izumi contrast; cute people; grotesque ghosts; deadpan fear
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - kaidan
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

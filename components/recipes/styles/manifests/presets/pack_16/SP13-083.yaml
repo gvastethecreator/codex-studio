@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-083
 packId: pack_16
-name: Shadow Stealth Night Anime
+name: Basilisk - Shadow Stealth Night
 styleAnchors:
-  - Shadow Stealth Night Anime
+  - Basilisk - Shadow Stealth Night
   - ninja stealth anime
   - blue darkness
-displayName: Shadow Stealth Night Anime
+displayName: Basilisk - Shadow Stealth Night
 category: 6. Samurai & Medieval
 domain: ninja stealth anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - stealth
   - night
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight.'
-  subject_treatment: Keep the prompt's subject and setting; hide it in darkness so only edges, eyes and small highlights remain visible.
-  color_and_tone: Deep indigo and black with pale moon silver and a tiny warm lantern accent.
-  lighting_and_shadow: Moonlight rim on silhouettes, pools of shadow and occasional lantern glow in windows.
-  texture_and_material: Tiled rooftops, dark cloth and wet stone reduced to silhouette and rim line.
-  camera_and_composition: High rooftop angles and tight framing on eyes, with most of the frame dark.
-  atmosphere_and_mood: Silent and watchful, a held breath while guards pass by just below.
-  rendering_and_quality: Low-key prestige anime with clean silhouettes and precise rim lighting.
-  creative_brief: "Stealth anime of night infiltration: deep blue darkness, silhouettes on rooftops and thin blades of moonlight. Carry it through blue darkness, moonlit rims, rooftop silhouettes, lantern windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: blue darkness; moonlit rims; rooftop silhouettes; lantern windows
+  aesthetic: 'Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features.
+  color_and_tone: Midnight blue, black, pale moonlight and blood red.
+  lighting_and_shadow: Thin crescent moonlight, silver rims and deep shadow.
+  texture_and_material: Moody digital cel over painted night backgrounds of forests, castles and rooftops.
+  camera_and_composition: Rooftop silhouettes, sudden ambush angles and moon framing.
+  atmosphere_and_mood: Keep the requested mood with silent deadly tension.
+  rendering_and_quality: Dark moody 2005 Gonzo frame with night atmosphere.
+  creative_brief: "Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance. Carry it through Basilisk ninja, moonlit rooftops, supernatural arts, dark palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Basilisk ninja; moonlit rooftops; supernatural arts; dark palette
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - stealth
     - night
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

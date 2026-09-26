@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-163
 packId: pack_16
-name: Smoke-Jazz Noir Cool Style
+name: Yoshiaki Kawajiri - Smoke-Jazz Noir Cool
 styleAnchors:
-  - 'Smoke-Jazz Noir Cool Style'
-displayName: 'Smoke-Jazz Noir Cool'
+  - Yoshiaki Kawajiri - Smoke-Jazz Noir Cool
+displayName: Yoshiaki Kawajiri - Smoke-Jazz Noir Cool
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A restrained 90s noir cel style uses broad ink-black shapes, slow smoke-like contour ribbons and
-    sparse warm highlights. Its jazz character is quiet syncopation rather than fast action.
-  subject_treatment: >-
-    Preserve the requested identity, gesture and materials. Let a few contours drift in long, fluid
-    arcs while keeping the main silhouette clear; add no pipe, hat or detective.
-  color_and_tone: >-
-    When open, use slate blue, blue-gray and deep ink with a few brass or amber notes. Keep requested
-    colors and avoid high-saturation neon.
-  lighting_and_shadow: >-
-    Group shadows into broad calm planes and use small warm highlights only on existing lit areas. Do
-    not add a lamp, spotlight or smoke source.
-  texture_and_material: >-
-    Use smooth painted cel fields, spare ink grain and softly layered haze-like shapes. Keep haze
-    abstract and material-specific highlights accurate.
-  camera_and_composition: >-
-    Allow spacious negative areas and a slow, off-center balance within the given frame. Preserve
-    camera and layout; do not create a portrait or bar setting.
-  atmosphere_and_mood: >-
-    Keep the visual tempo cool and observant through pauses and low contrast accents. Do not force
-    melancholy, nightlife or a noir plot.
-  rendering_and_quality: >-
-    Hold crisp silhouette edges against softer background planes, with restrained grain and few
-    decorative marks. Avoid speed streaks and heavy digital effects.
-  key_features: >-
-    broad ink shadows; slow smoke-like line ribbons; slate-blue field with sparse brass warmth
-  creative_brief: 'Use quiet noir cel values, fluid line accents and measured negative space on the requested content. Preserve subject, action, environment and framing; add no detective, instrument or smoke prop. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshiaki Kawajiri Madhouse direction as in Ninja Scroll and Wicked City: slick realistic adult designs, deep shadows, smoky noir cities, long cool poses and bursts of violence.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kawajiri realism, long elegant limbs, sharp cheekbones, narrow eyes and dark stylish clothes.
+  color_and_tone: Deep blacks, smoky amber, noir blue and sharp red accents.
+  lighting_and_shadow: Hard-edged noir shadows, streetlight shafts through smoke, silhouettes.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Cool silhouetted compositions, long lens shots and rain-lit streets.
+  atmosphere_and_mood: Keep the requested mood with slick smoky menace.
+  rendering_and_quality: Dark sophisticated Madhouse OVA frame with deep shadow design.
+  key_features: Yoshiaki Kawajiri noir; deep shadows; smoky cities; elegant adult designs
+  creative_brief: "Yoshiaki Kawajiri Madhouse direction as in Ninja Scroll and Wicked City: slick realistic adult designs, deep shadows, smoky noir cities, long cool poses and bursts of violence. Carry it through Yoshiaki Kawajiri noir, deep shadows, smoky cities, elegant adult designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-163.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

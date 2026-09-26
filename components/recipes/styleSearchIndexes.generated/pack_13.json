@@ -203,8 +203,12 @@
     },
     {
       "id": "SP13-052",
-      "name": "Cursed Blade Dark Fantasy Anime",
-      "styleAnchors": ["Cursed Blade Dark Fantasy Anime", "grim sword anime", "heavy hatching"],
+      "name": "Kentaro Miura - Cursed Blade Dark Fantasy",
+      "styleAnchors": [
+        "Kentaro Miura - Cursed Blade Dark Fantasy",
+        "grim sword anime",
+        "heavy hatching"
+      ],
       "ref": "pack_13/SP13-052.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -213,7 +217,7 @@
       "domain": "grim sword anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "grim-sword-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-052 cursed blade dark fantasy anime grim sword anime heavy hatching 1. core anime cel fundamentals grim sword anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime grim-sword-anime"
+      "searchableText": "sp13-052 kentaro miura - cursed blade dark fantasy grim sword anime heavy hatching 1. core anime cel fundamentals grim sword anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime grim-sword-anime"
     },
     {
       "id": "SP13-053",
@@ -1206,7 +1210,8 @@
     },
     {
       "id": "SP05-081",
-      "name": "KyoAni Shared-Warmth Microacting",
+      "name": "Kyoto Animation - Shared-Warmth Microacting",
+      "styleAnchors": ["Kyoto Animation - Shared-Warmth Microacting"],
       "ref": "pack_13/SP05-081.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1214,7 +1219,7 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-081 kyoani shared-warmth microacting 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-081 kyoto animation - shared-warmth microacting 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-202",
@@ -1614,7 +1619,8 @@
     },
     {
       "id": "SP05-339",
-      "name": "Adult Suspense Microgesture",
+      "name": "Naoki Urasawa - Adult Suspense Microgesture",
+      "styleAnchors": ["Naoki Urasawa - Adult Suspense Microgesture"],
       "ref": "pack_13/SP05-339.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1622,7 +1628,7 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-339 adult suspense microgesture 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-339 naoki urasawa - adult suspense microgesture 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-342",

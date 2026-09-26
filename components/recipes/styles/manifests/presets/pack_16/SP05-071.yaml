@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-071
 packId: pack_16
-name: Warm Liminal Reverie Fantasy Style
+name: Spirited Away - Warm Liminal Reverie Fantasy
 styleAnchors:
-  - 'Warm Liminal Reverie Fantasy Style'
-displayName: 'Warm Liminal Reverie Fantasy'
+  - Spirited Away - Warm Liminal Reverie Fantasy
+displayName: Spirited Away - Warm Liminal Reverie Fantasy
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Warm-liminal cel painting: translucent amber and peach glazes meet cool blue-gray contours
-    through long soft transition bands.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Distinguish
-    adjacent shapes with a clean silhouette break rather than inventing a connection.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, balance amber, peach, and
-    muted blue-gray while keeping explicit object colors intact.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Use gentle warm bounce and cool shadow
-    only as motivated by existing light; add no lamps or rays.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep washes transparent and grain fine;
-    texture only existing surfaces, never added decorative detail.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Use existing negative gaps
-    and transitions as intervals without adding doorways or borders.
-  atmosphere_and_mood: >-
-    Preserve specified emotion; liminal spacing and warm light impose no fantasy or reverie.
-  rendering_and_quality: >-
-    Retain clear silhouette edges across soft gradients and keep highlights sparse and
-    source-based.
-  key_features: >-
-    Amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals.
-  creative_brief: 'Use amber-peach glaze; blue-gray contour; soft transition bands; open negative intervals. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Hayao Miyazaki and Studio Ghibli feature animation as in Spirited Away: sprawling red-lacquer bathhouse architecture, lantern-lit spirit streets, quiet trains over water and strange gentle spirits.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, dot-highlight eyes, natural bodies, and spirits as soft odd creatures.
+  color_and_tone: Lacquer red, lantern gold, twilight teal and deep water blue.
+  lighting_and_shadow: Warm lantern glow at dusk, steam haze and calm daylight over water.
+  texture_and_material: Hand-painted backgrounds full of architectural detail, clean cel lines and drifting steam.
+  camera_and_composition: Wide architectural establishing shots, quiet waiting moments, long corridors.
+  atmosphere_and_mood: Keep the requested mood with dreamy liminal enchantment.
+  rendering_and_quality: Classic Ghibli hand-drawn feature frame with rich painted detail.
+  key_features: Ghibli bathhouse architecture; lanterns; spirits; steam; round simple faces
+  creative_brief: "Hayao Miyazaki and Studio Ghibli feature animation as in Spirited Away: sprawling red-lacquer bathhouse architecture, lantern-lit spirit streets, quiet trains over water and strange gentle spirits. Carry it through Ghibli bathhouse architecture, lanterns, spirits, steam, round simple faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a masked black shadow spirit
+  - a white dragon boy
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-071.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: a masked black shadow spirit, a white dragon boy, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

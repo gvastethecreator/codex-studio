@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-011
 packId: pack_16
-name: Generational Aura Clash Style
+name: Masami Obari - Generational Aura Clash
 styleAnchors:
-  - 'Generational Aura Clash Style'
-displayName: 'Generational Aura Clash'
+  - Masami Obari - Generational Aura Clash
+displayName: Masami Obari - Generational Aura Clash
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Angular 90s cel contours, concentrated ink shadows and a broken blue-violet aura rim define this
-    treatment. Short radiating strokes make force legible around the requested focal form.
-  subject_treatment: >-
-    Keep the requested identity, pose and proportions. Sharpen the existing silhouette with separated
-    ink spikes; let one broken aura edge follow that contour without adding a fighter or second
-    figure.
-  color_and_tone: >-
-    When color is open, favor deep indigo shadows, blue-violet aura light and a small warm amber
-    accent. Preserve requested colors and keep the brightest accent local.
-  lighting_and_shadow: >-
-    Use hard cel shadow blocks and a narrow rim glow. Keep bloom close to the existing form and
-    respect the requested light direction.
-  texture_and_material: >-
-    Use smooth painted cel fills, decisive ink edges and faint controlled analog grain. Keep material
-    marks specific to the depicted surface; do not turn grain into scene texture.
-  camera_and_composition: >-
-    Use opposing diagonals and a tight focal rhythm inside the requested framing. Keep the camera and
-    layout; do not require a close-up, arena or city.
-  atmosphere_and_mood: >-
-    Create charged contrast through contour rhythm and value opposition only when the requested mood
-    calls for it. Do not convert a calm subject into a confrontation.
-  rendering_and_quality: >-
-    Separate two or three clean shadow masses, crisp outlines and restrained aura spill. Keep the
-    background painted and subordinate; avoid smeared glow or uniform filter noise.
-  key_features: >-
-    broken blue-violet aura rim; short radiating ink strokes; angular silhouette against deep cel
-    shadow
-  creative_brief: 'Apply the angular cel and localized aura treatment to the requested content. Preserve its subject, action, setting, palette, camera and mood; use no title-specific character, prop or location. Use it as a reusable look on any subject.'
+  aesthetic: 'Masami Obari nineties fighting OVA look: extreme heroic posing, sharp angular muscular anatomy, glossy highlights, flaring auras and speed backgrounds in explosive battle films.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Obari anatomy, sharp chins, pointed noses, taut muscles with glossy highlight streaks and extreme contrapposto poses.
+  color_and_tone: Saturated sunset orange, electric blue auras and deep violet shadows.
+  lighting_and_shadow: Blazing aura backlight, sharp rim light and hard glossy highlight shapes on muscles.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Low dramatic angles, extreme foreshortened fists and famous obari poses facing the lens.
+  atmosphere_and_mood: Keep the requested mood with hot-blooded explosive rivalry.
+  rendering_and_quality: Glossy 1990s fighting OVA frame with sharp dramatic anatomy and highlights.
+  key_features: Masami Obari poses; glossy highlights; sharp anatomy; blazing auras
+  creative_brief: "Masami Obari nineties fighting OVA look: extreme heroic posing, sharp angular muscular anatomy, glossy highlights, flaring auras and speed backgrounds in explosive battle films. Carry it through Masami Obari poses, glossy highlights, sharp anatomy, blazing auras. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-011.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-012
 packId: pack_16
-name: Sparkling Magical Chorus Style
+name: Ojamajo Doremi - Sparkling Magical Chorus
 styleAnchors:
-  - 'Sparkling Magical Chorus Style'
-displayName: 'Sparkling Magical Chorus'
+  - Ojamajo Doremi - Sparkling Magical Chorus
+displayName: Ojamajo Doremi - Sparkling Magical Chorus
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,36 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Luminous 90s cel drawing with fine curved contours, smooth value transitions and precise
-    star-point highlights. Its chorus comes from repeated ornamental rhythm, not a required group of
-    characters.
-  subject_treatment: >-
-    Preserve the requested forms and count. Use graceful continuous contours and small glints along
-    existing edges; do not recast the subject as a magical character or add companions.
-  color_and_tone: >-
-    When color is open, combine pearl white, moon blue, rose and pale gold in clear cel-value groups.
-    Keep requested hues and reserve bright accents for a few focal points.
-  lighting_and_shadow: >-
-    Pair soft luminous transitions with crisp, tiny highlight flares. Keep shadows in deliberate cel
-    shapes and do not invent a transformation light source.
-  texture_and_material: >-
-    Use clean painted fills, fine decorative ink and sparse sparkle points. Keep surface response
-    faithful to each material; never cover forms with a glitter texture.
-  camera_and_composition: >-
-    Repeat small accents at measured intervals to create musical balance within the supplied
-    composition. Keep the requested framing and number of subjects.
-  atmosphere_and_mood: >-
-    Let lightness and uplift come from spacing, color and highlight cadence. Preserve the prompt's
-    tone instead of forcing a celebratory or magical event.
-  rendering_and_quality: >-
-    Use a delicate-to-bold line hierarchy, polished cel gradients and a few crisp starbursts. Keep
-    detail legible and the background integrated without glitter haze.
-  key_features: >-
-    fine curved contours; pearl, moon-blue and rose accents; sparse star-point glints arranged in a
-    repeated rhythm
-  creative_brief: 'Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event. Use it as a reusable look on any subject.'
+  aesthetic: 'Toei late-nineties magical girl television look as in Ojamajo Doremi: round chibi-proportioned designs, huge eyes, candy-colored costumes and sparkling transformation sequences.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with rounded chibi-leaning proportions, big round heads, large sparkly eyes and candy costumes, even when adults.
+  color_and_tone: Candy pink, lemon yellow, mint and sky blue with sparkles.
+  lighting_and_shadow: Bright cheerful light with sparkle bursts and glittering transformation glow.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Transformation spins, lineup group poses and bouncy comedic framing with sparkles.
+  atmosphere_and_mood: Keep the requested mood with sweet sparkling cheer.
+  rendering_and_quality: Bright late-1990s television cel frame with round cute design clarity.
+  key_features: Toei magical girl; round chibi designs; candy costumes; sparkling transformations
+  creative_brief: "Toei late-nineties magical girl television look as in Ojamajo Doremi: round chibi-proportioned designs, huge eyes, candy-colored costumes and sparkling transformation sequences. Carry it through Toei magical girl, round chibi designs, candy costumes, sparkling transformations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -65,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-012.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -81,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

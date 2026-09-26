@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-366
 packId: pack_16
-name: Traditional Ensemble Resonance Style
+name: Kono Oto Tomare! - Traditional Ensemble Resonance
 styleAnchors:
-  - Traditional Ensemble Resonance Style
-displayName: Traditional Ensemble Resonance
+  - Kono Oto Tomare! - Traditional Ensemble Resonance
+displayName: Kono Oto Tomare! - Traditional Ensemble Resonance
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air.'
-  subject_treatment: Keep the prompt's subject and action; place it within an ensemble where sound is visible as ripples, vibration and synchronized motion.
-  color_and_tone: Lacquer red, natural wood and indigo costumes with warm stage gold.
-  lighting_and_shadow: Warm stage light from above and side, drum skins glowing under the spotlight.
-  texture_and_material: Taut drum skins, silk strings, bamboo flutes and cotton costumes in fine line.
-  camera_and_composition: Wide ensemble shots and tight shots on striking hands and vibrating strings.
-  atmosphere_and_mood: Powerful and communal, many players breathing and striking as one body.
-  rendering_and_quality: Rich performance anime with visible sound ripples and precise playing technique.
-  key_features: sound ripples; drum strikes; ensemble unison; warm stage light
-  creative_brief: "Traditional ensemble anime of resonance: drums, strings and flutes played together, sound shown as ripples and trembling air. Carry it through sound ripples, drum strikes, ensemble unison, warm stage light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Platinum Vision Kono Oto Tomare! television look (2019): traditional music ensembles, glowing sound ripples, school club rooms and shojo-tinted emotion.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean shojo-leaning designs, school uniforms or kimono, and focused performers.
+  color_and_tone: Warm wood tones, stage black, ripple gold and petal pink.
+  lighting_and_shadow: Warm stage spotlights and glowing golden sound ripple visuals in the air.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Ensemble group compositions, instrument close-ups and wide shots of sound ripples.
+  atmosphere_and_mood: Keep the requested mood with resonant heartfelt harmony.
+  rendering_and_quality: Warm music television frame with visible glowing sound imagery.
+  key_features: Traditional ensemble; sound ripples; stage glow; shojo emotion
+  creative_brief: "Platinum Vision Kono Oto Tomare! television look (2019): traditional music ensembles, glowing sound ripples, school club rooms and shojo-tinted emotion. Carry it through Traditional ensemble, sound ripples, stage glow, shojo emotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-366.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

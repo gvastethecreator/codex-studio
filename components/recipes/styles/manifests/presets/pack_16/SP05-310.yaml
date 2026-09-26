@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-310
 packId: pack_16
-name: Competent Space Pulp Style
+name: Crusher Joe - Competent Space Pulp
 styleAnchors:
-  - 'Competent Space Pulp Style'
-displayName: 'Competent Space Pulp'
+  - Crusher Joe - Competent Space Pulp
+displayName: Crusher Joe - Competent Space Pulp
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use functional silhouettes and a few decisive internal marks without redesign; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use muted navy, slate, weathered ochre and ivory. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as stable shadow shapes with a clear light-to-dark break and little bloom; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte painted planes, dry background brush and faint film grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use steady visual balance and legible margins within the existing crop; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through stable forms and calm intervals; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use quietly precise cel drawing with controlled grain and no photoreal detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use compact, confident ink outlines with flat tonal blocks and clear form separation; functional silhouettes and a few decisive internal marks without redesign; stable shadow shapes with a clear light-to-dark break and little bloom; matte painted planes, dry background brush and faint film grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshikazu Yasuhiko designs as in Crusher Joe (1983): expressive realistic pencil-like drawing, loose soft line quality, grounded space pulp crews and lived-in ships.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yasuhiko warmth, expressive faces, soft lines, freckles, practical flight suits and rolled sleeves.
+  color_and_tone: Orange flight suits, space navy, olive and warm ship interiors.
+  lighting_and_shadow: Warm cockpit glow, cold starlight and bright engine flares on hulls.
+  texture_and_material: Soft pencil-like lines on cel, painted ship interiors and grime.
+  camera_and_composition: Crew shots in cramped cockpits, ship fly-bys, dynamic action.
+  atmosphere_and_mood: Keep the requested mood with capable pulpy camaraderie.
+  rendering_and_quality: Warm 1983 theatrical cel frame with Yasuhiko expressiveness.
+  key_features: Yoshikazu Yasuhiko expressiveness; space pulp crew; lived-in ships; soft lines
+  creative_brief: "Yoshikazu Yasuhiko designs as in Crusher Joe (1983): expressive realistic pencil-like drawing, loose soft line quality, grounded space pulp crews and lived-in ships. Carry it through Yoshikazu Yasuhiko expressiveness, space pulp crew, lived-in ships, soft lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-310.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

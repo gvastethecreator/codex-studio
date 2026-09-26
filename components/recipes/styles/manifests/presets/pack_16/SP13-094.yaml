@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-094
 packId: pack_16
-name: Rot Garden Fungal Horror Anime
+name: Hideshi Hino - Rot Garden Fungal Horror
 styleAnchors:
-  - Rot Garden Fungal Horror Anime
+  - Hideshi Hino - Rot Garden Fungal Horror
   - fungal horror anime
   - creeping fungus
-displayName: Rot Garden Fungal Horror Anime
+displayName: Hideshi Hino - Rot Garden Fungal Horror
 category: 7. Horror
 domain: fungal horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - fungal
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay.'
-  subject_treatment: Keep the prompt's subject and setting; let fungal growth creep over surfaces around it, never hiding the subject itself.
-  color_and_tone: Damp greens, bruised purple and pale cream fungus with glowing spore gold.
-  lighting_and_shadow: Soft grey daylight or dim greenhouse light with glowing spores drifting through it.
-  texture_and_material: Gills, mold fuzz, wet leaves and cracked plaster drawn in fine organic detail.
-  camera_and_composition: Close botanical framing and wide shots of overgrown rooms and gardens.
-  atmosphere_and_mood: Lush and suffocating, decay that is quietly beautiful and patiently spreading.
-  rendering_and_quality: Richly detailed prestige anime with organic textures and soft glowing particles.
-  creative_brief: "Botanical horror anime of gardens and houses slowly taken over by fungus: soft growths, spores and beautiful decay. Carry it through creeping fungus, drifting spores, overgrown rooms, soft decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: creeping fungus; drifting spores; overgrown rooms; soft decay
+  aesthetic: 'Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths.
+  color_and_tone: Black ink and grey tone with sickly yellow-green in color plates.
+  lighting_and_shadow: Dusty sunbeams falling through grimy glass into murky greenhouse shadows.
+  texture_and_material: Blotchy organic textures, stippled rot and oozing lines.
+  camera_and_composition: Close claustrophobic compositions of decay spreading across every surface.
+  atmosphere_and_mood: Keep the requested mood with feverish decaying horror.
+  rendering_and_quality: Grotesque vintage horror manga illustration with feverish organic detail.
+  creative_brief: "Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings. Carry it through Hideshi Hino rot, bulging eyes, organic growths, decay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Hideshi Hino rot; bulging eyes; organic growths; decay
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - fungal
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

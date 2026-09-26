@@ -448,33 +448,38 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-052',
-    name: 'Cursed Blade Dark Fantasy Anime',
-    displayName: 'Cursed Blade Dark Fantasy Anime',
-    styleAnchors: ['Cursed Blade Dark Fantasy Anime', 'grim sword anime', 'heavy hatching'],
+    name: 'Kentaro Miura - Cursed Blade Dark Fantasy',
+    displayName: 'Kentaro Miura - Cursed Blade Dark Fantasy',
+    styleAnchors: [
+      'Kentaro Miura - Cursed Blade Dark Fantasy',
+      'grim sword anime',
+      'heavy hatching',
+    ],
     category: '1. Core Anime',
     domain: 'grim sword anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a lone black-armored swordsman with an oversized slab greatsword, iron prosthetic arm with a built-in cannon, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cursed blade dark fantasy anime: grim seinen frames with heavy hatching, black ink shadows and blood-red accents.',
+        'Kentaro Miura manga style: obsessive engraving-like crosshatching, monumental dark fantasy compositions, heavily worn plate armor and grotesque demonic anatomy drawn with baroque detail under apocalyptic storm skies.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: heavy hatching on faces and armor, scarred bodies, massive weapons, grim expressions and ink-black shadows.",
+        'Preserve the requested identity, count, pose and action; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword.',
       color_and_tone:
-        'Desaturated grey, rust brown and blood red, used consistently across subject and background.',
+        'Near-monochrome ink blacks and bone greys with sparing dried-blood red and cold storm blue.',
       lighting_and_shadow:
-        'Grim overcast or firelight, expressed through the style rather than photographic lighting.',
+        'Harsh storm light cutting out silhouettes, dense hatched shadows swallowing half of every form.',
       texture_and_material:
-        'Cel with hatching and grit, visible at a glance as the signature of the style.',
+        'Dense pen crosshatching, stippled grime, scratched metal, torn leather, rain streaks drawn as fine lines.',
       camera_and_composition:
-        'Low menacing angles, arranged so the subject still reads at a glance.',
+        'Low monumental angles and sweeping double-page panoramas where tiny figures face colossal horrors.',
       atmosphere_and_mood:
-        'Grim, desperate, brutal and defiant, driven by the construction, color and rhythm.',
+        'Keep the requested mood with grim defiant endurance against overwhelming darkness.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Meticulous hand-inked manga illustration with painterly-level detail density, no digital smoothness.',
       creative_brief:
-        "Cursed blade dark fantasy anime: grim seinen frames with heavy hatching, black ink shadows and blood-red accents. Carry it through heavy hatching, massive blades, blood-red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'heavy hatching; massive blades; blood-red accents',
+        "Kentaro Miura manga style: obsessive engraving-like crosshatching, monumental dark fantasy compositions, heavily worn plate armor and grotesque demonic anatomy drawn with baroque detail under apocalyptic storm skies. Carry it through Kentaro Miura crosshatching, monumental dark fantasy, grotesque demons, battered armor, storm skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'Kentaro Miura crosshatching; monumental dark fantasy; grotesque demons; battered armor; storm skies',
     },
     ui: {
       previewStatus: 'pending',

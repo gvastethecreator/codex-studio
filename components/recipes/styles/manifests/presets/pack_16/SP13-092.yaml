@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-092
 packId: pack_16
-name: Night-Vision Found Footage Anime
+name: Kagewani - Night-Vision Found Footage
 styleAnchors:
-  - Night-Vision Found Footage Anime
+  - Kagewani - Night-Vision Found Footage
   - found footage anime
   - green night-vision
-displayName: Night-Vision Found Footage Anime
+displayName: Kagewani - Night-Vision Found Footage
 category: 7. Horror
 domain: found footage anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - night-vision
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera.'
-  subject_treatment: Keep the prompt's subject and setting; record it through night-vision, the frightening detail only just visible.
-  color_and_tone: Phosphor green monochrome with bright white highlights and near-black corners.
-  lighting_and_shadow: Infrared illumination falling off quickly, eyes and reflective surfaces glowing.
-  texture_and_material: Heavy sensor grain, vignette and slight motion blur over simplified anime shapes.
-  camera_and_composition: Handheld, low and tilted, subjects caught at the edge of the beam.
-  atmosphere_and_mood: Panicked and claustrophobic, breathing loudly in the dark with nowhere to go.
-  rendering_and_quality: Convincing night-vision footage texture laid over clean, readable anime line work.
-  creative_brief: "Found-footage anime seen through night-vision: green monochrome, glowing eyes, grain and a shaking handheld camera. Carry it through green night-vision, glowing eyes, grain, handheld tilt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: green night-vision; glowing eyes; grain; handheld tilt
+  aesthetic: 'Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people as rough limited-animation figures and creatures as black silhouettes with glowing eyes.
+  color_and_tone: Night-vision green, deep black shadows and pale glowing eyes in the dark.
+  lighting_and_shadow: Single harsh colored light source and deep silhouettes.
+  texture_and_material: Rough cut-paper shapes, heavy film grain and flickering video noise.
+  camera_and_composition: Shaky found-footage framing with silhouettes appearing in windows and doorways.
+  atmosphere_and_mood: Keep the requested mood with raw panicked fear.
+  rendering_and_quality: Rough limited-animation horror frame with raw silhouetted menace.
+  creative_brief: "Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light. Carry it through Kagewani silhouettes, found footage, glowing eyes, cut paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kagewani silhouettes; found footage; glowing eyes; cut paper
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - night-vision
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -5,622 +5,537 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-011',
-    name: 'Generational Aura Clash Style',
-    displayName: 'Generational Aura Clash',
-    styleAnchors: ['Generational Aura Clash Style'],
+    name: 'Masami Obari - Generational Aura Clash',
+    displayName: 'Masami Obari - Generational Aura Clash',
+    styleAnchors: ['Masami Obari - Generational Aura Clash'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Angular 90s cel contours, concentrated ink shadows and a broken blue-violet aura rim define this treatment. Short radiating strokes make force legible around the requested focal form.',
+        'Masami Obari nineties fighting OVA look: extreme heroic posing, sharp angular muscular anatomy, glossy highlights, flaring auras and speed backgrounds in explosive battle films.',
       subject_treatment:
-        'Keep the requested identity, pose and proportions. Sharpen the existing silhouette with separated ink spikes; let one broken aura edge follow that contour without adding a fighter or second figure.',
-      color_and_tone:
-        'When color is open, favor deep indigo shadows, blue-violet aura light and a small warm amber accent. Preserve requested colors and keep the brightest accent local.',
+        'Preserve the requested identity, count, pose and action; draw people with Obari anatomy, sharp chins, pointed noses, taut muscles with glossy highlight streaks and extreme contrapposto poses.',
+      color_and_tone: 'Saturated sunset orange, electric blue auras and deep violet shadows.',
       lighting_and_shadow:
-        'Use hard cel shadow blocks and a narrow rim glow. Keep bloom close to the existing form and respect the requested light direction.',
+        'Blazing aura backlight, sharp rim light and hard glossy highlight shapes on muscles.',
       texture_and_material:
-        'Use smooth painted cel fills, decisive ink edges and faint controlled analog grain. Keep material marks specific to the depicted surface; do not turn grain into scene texture.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Use opposing diagonals and a tight focal rhythm inside the requested framing. Keep the camera and layout; do not require a close-up, arena or city.',
-      atmosphere_and_mood:
-        'Create charged contrast through contour rhythm and value opposition only when the requested mood calls for it. Do not convert a calm subject into a confrontation.',
+        'Low dramatic angles, extreme foreshortened fists and famous obari poses facing the lens.',
+      atmosphere_and_mood: 'Keep the requested mood with hot-blooded explosive rivalry.',
       rendering_and_quality:
-        'Separate two or three clean shadow masses, crisp outlines and restrained aura spill. Keep the background painted and subordinate; avoid smeared glow or uniform filter noise.',
-      key_features:
-        'broken blue-violet aura rim; short radiating ink strokes; angular silhouette against deep cel shadow',
+        'Glossy 1990s fighting OVA frame with sharp dramatic anatomy and highlights.',
+      key_features: 'Masami Obari poses; glossy highlights; sharp anatomy; blazing auras',
       creative_brief:
-        'Apply the angular cel and localized aura treatment to the requested content. Preserve its subject, action, setting, palette, camera and mood; use no title-specific character, prop or location. Use it as a reusable look on any subject.',
+        "Masami Obari nineties fighting OVA look: extreme heroic posing, sharp angular muscular anatomy, glossy highlights, flaring auras and speed backgrounds in explosive battle films. Carry it through Masami Obari poses, glossy highlights, sharp anatomy, blazing auras. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-012',
-    name: 'Sparkling Magical Chorus Style',
-    displayName: 'Sparkling Magical Chorus',
-    styleAnchors: ['Sparkling Magical Chorus Style'],
+    name: 'Ojamajo Doremi - Sparkling Magical Chorus',
+    displayName: 'Ojamajo Doremi - Sparkling Magical Chorus',
+    styleAnchors: ['Ojamajo Doremi - Sparkling Magical Chorus'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Luminous 90s cel drawing with fine curved contours, smooth value transitions and precise star-point highlights. Its chorus comes from repeated ornamental rhythm, not a required group of characters.',
+        'Toei late-nineties magical girl television look as in Ojamajo Doremi: round chibi-proportioned designs, huge eyes, candy-colored costumes and sparkling transformation sequences.',
       subject_treatment:
-        'Preserve the requested forms and count. Use graceful continuous contours and small glints along existing edges; do not recast the subject as a magical character or add companions.',
-      color_and_tone:
-        'When color is open, combine pearl white, moon blue, rose and pale gold in clear cel-value groups. Keep requested hues and reserve bright accents for a few focal points.',
+        'Preserve the requested identity, count, pose and action; draw people with rounded chibi-leaning proportions, big round heads, large sparkly eyes and candy costumes, even when adults.',
+      color_and_tone: 'Candy pink, lemon yellow, mint and sky blue with sparkles.',
       lighting_and_shadow:
-        'Pair soft luminous transitions with crisp, tiny highlight flares. Keep shadows in deliberate cel shapes and do not invent a transformation light source.',
+        'Bright cheerful light with sparkle bursts and glittering transformation glow.',
       texture_and_material:
-        'Use clean painted fills, fine decorative ink and sparse sparkle points. Keep surface response faithful to each material; never cover forms with a glitter texture.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Repeat small accents at measured intervals to create musical balance within the supplied composition. Keep the requested framing and number of subjects.',
-      atmosphere_and_mood:
-        "Let lightness and uplift come from spacing, color and highlight cadence. Preserve the prompt's tone instead of forcing a celebratory or magical event.",
+        'Transformation spins, lineup group poses and bouncy comedic framing with sparkles.',
+      atmosphere_and_mood: 'Keep the requested mood with sweet sparkling cheer.',
       rendering_and_quality:
-        'Use a delicate-to-bold line hierarchy, polished cel gradients and a few crisp starbursts. Keep detail legible and the background integrated without glitter haze.',
+        'Bright late-1990s television cel frame with round cute design clarity.',
       key_features:
-        'fine curved contours; pearl, moon-blue and rose accents; sparse star-point glints arranged in a repeated rhythm',
+        'Toei magical girl; round chibi designs; candy costumes; sparkling transformations',
       creative_brief:
-        'Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event. Use it as a reusable look on any subject.',
+        "Toei late-nineties magical girl television look as in Ojamajo Doremi: round chibi-proportioned designs, huge eyes, candy-colored costumes and sparkling transformation sequences. Carry it through Toei magical girl, round chibi designs, candy costumes, sparkling transformations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-014',
-    name: 'Jazzy Space-Noir Melancholy Style',
-    displayName: 'Jazzy Space-Noir Melancholy',
-    styleAnchors: ['Jazzy Space-Noir Melancholy Style'],
+    name: 'Cowboy Bebop - Jazzy Space-Noir Melancholy',
+    displayName: 'Cowboy Bebop - Jazzy Space-Noir Melancholy',
+    styleAnchors: ['Cowboy Bebop - Jazzy Space-Noir Melancholy'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a green-haired bounty hunter in a blue suit, a red swordfish spaceship, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A jazzy 90s cel treatment built from loose ink cuts, off-beat diagonals and deep, quiet shadow shapes. Its space-noir signal is lonely scale and selective amber light, not a required genre setting.',
+        'Shinichiro Watanabe and Toshihiro Kawamoto look of Cowboy Bebop (1998): lanky stylish designs, lived-in rusty ships, film noir lighting, smoke and jazz, and worn retro-future cities.',
       subject_treatment:
-        'Keep the requested identity and gesture. Let contours alternate between loose curves and decisive angular cuts; use only the movement and expression already present.',
-      color_and_tone:
-        'When open, favor smoky indigo, muted violet, ink black and restrained amber. Preserve specified colors and let one warm note break the cool value field.',
+        'Preserve the requested identity, count, pose and action; draw people with Kawamoto designs, long lanky limbs, loose hair, narrow eyes, sharp noses and slouched cool postures in worn clothes.',
+      color_and_tone: 'Muted teal, cigarette amber, rust brown and noir shadow.',
       lighting_and_shadow:
-        'Shape existing light into slanted highlights against large cel shadows. Use soft haze-like transitions sparingly; do not add a spotlight, monitor or physical smoke.',
+        'Noir chiaroscuro with smoky light shafts, neon signs and dim cockpit glow.',
       texture_and_material:
-        'Combine confident ink strokes, painted cel fills and a faint film-grain veil. Keep haze in the image treatment and match highlights to the actual surface.',
-      camera_and_composition:
-        'Use syncopated spacing, off-center balance and generous negative space within the supplied frame. Preserve camera position and subject arrangement.',
-      atmosphere_and_mood:
-        'Make the rhythm cool, reflective and slightly wry through pauses and asymmetry. Keep the requested emotion; do not add a caper, romance or science-fiction story.',
-      rendering_and_quality:
-        'Keep silhouettes crisp, shadow edges intentional and background detail quiet. Allow a few painterly transitions without turning the image into soft-focus realism.',
-      key_features:
-        'off-beat diagonals and negative space; cool indigo-violet shadows; sparse amber highlights over expressive ink cuts',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
+      camera_and_composition: 'Cinematic noir framing, low angles in rain, long lens compositions.',
+      atmosphere_and_mood: 'Keep the requested mood with cool melancholy drift.',
+      rendering_and_quality: 'Polished 1998 Sunrise television frame with cinematic noir grading.',
+      key_features: 'Kawamoto lanky designs; film noir; rusty ships; smoke and jazz; retro-future',
       creative_brief:
-        'Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props. Use it as a reusable look on any subject.',
+        "Shinichiro Watanabe and Toshihiro Kawamoto look of Cowboy Bebop (1998): lanky stylish designs, lived-in rusty ships, film noir lighting, smoke and jazz, and worn retro-future cities. Carry it through Kawamoto lanky designs, film noir, rusty ships, smoke and jazz, retro-future. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-015',
-    name: 'Philosophical Cyber-Ops Vertigo Style',
-    displayName: 'Philosophical Cyber-Ops Vertigo',
-    styleAnchors: ['Philosophical Cyber-Ops Vertigo Style'],
+    name: 'Masamune Shirow - Philosophical Cyber-Ops Vertigo',
+    displayName: 'Masamune Shirow - Philosophical Cyber-Ops Vertigo',
+    styleAnchors: ['Masamune Shirow - Philosophical Cyber-Ops Vertigo'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A precise 90s cyber-cel look uses recursive line geometry, skewed depth cues and clipped cyan-magenta accents. Vertigo comes from repeated alignments and displaced edges, not a required city or screen.',
+        'Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages.',
       subject_treatment:
-        'Preserve the requested form and proportions. Echo its existing contours with a few measured offsets and geometric cuts; do not replace it with a cybernetic body.',
-      color_and_tone:
-        'When color is open, use cool cyan, restrained magenta and a small screen-green accent against deep blue-black. Honor requested colors and avoid flooding the image with neon.',
+        'Preserve the requested identity, count, pose and action; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints.',
+      color_and_tone: 'Early digital airbrush colors, metallic blues, skin warms and neon greens.',
       lighting_and_shadow:
-        'Keep the requested light direction, then sharpen existing edges with synthetic-looking highlights and flat cel shadows. Do not invent monitors, signs or light sources.',
+        'Glossy airbrushed highlights, screen glow and hard metallic reflections.',
       texture_and_material:
-        'Use fine scanline interruptions and glass-like reflection accents only where they suit the depicted surface. Retain clear cel fills and avoid global wetness or static noise.',
+        'Precise pen linework, dense mechanical detail, airbrushed digital color gradients.',
       camera_and_composition:
-        'Build vertigo through nested alignments and slight perspective tension inside the existing frame. Preserve camera, horizon and object placement; do not add architecture.',
-      atmosphere_and_mood:
-        'Use measured visual dislocation and cool spacing to support an already requested introspective tone. Do not impose existential drama or a surveillance narrative.',
+        'Dynamic action panels with tech cutaways and busy mechanical backgrounds.',
+      atmosphere_and_mood: 'Keep the requested mood with cerebral tactical intensity.',
       rendering_and_quality:
-        'Keep geometry crisp, offsets deliberate and details readable at normal scale. Restrict scan artifacts to a few bands rather than covering the image.',
+        'Meticulous manga illustration with dense technical detail and airbrush color.',
       key_features:
-        'recursive alignment and measured contour offsets; precise cel geometry; limited cyan, magenta and green accents',
+        'Masamune Shirow mechanics; athletic cyborgs; dense tech detail; airbrush color',
       creative_brief:
-        'Restyle the requested content with recursive geometry, controlled edge offsets and restrained digital accents. Keep its identity, materials, setting and composition; introduce no screens, cables or cybernetic parts. Use it as a reusable look on any subject.',
+        "Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages. Carry it through Masamune Shirow mechanics, athletic cyborgs, dense tech detail, airbrush color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-016',
-    name: 'Spirit Tournament Pressure Style',
-    displayName: 'Spirit Tournament Pressure',
-    styleAnchors: ['Spirit Tournament Pressure Style'],
+    name: 'Yoshihiro Togashi - Spirit Tournament Pressure',
+    displayName: 'Yoshihiro Togashi - Spirit Tournament Pressure',
+    styleAnchors: ['Yoshihiro Togashi - Spirit Tournament Pressure'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A pressure-heavy 90s cel style combines forceful contour wedges, concentrated violet edge light and sharply separated shadow groups. Its tournament energy is a visual rhythm, not a contest scene.',
+        'Yoshihiro Togashi manga look as in Yu Yu Hakusho: sharp confident brush-pen lines, stylish delinquent heroes, eerie demons and shifting between clean and rough inking.',
       subject_treatment:
-        'Keep the requested subject, pose and scale. Tighten existing contours toward the focal area and emphasize only motion or tension already present; add no opponent or uniform.',
-      color_and_tone:
-        'When color is open, use deep blue-violet shadows, cool lavender edge light and a restrained warm accent. Preserve the requested palette and keep value separation strong.',
-      lighting_and_shadow:
-        'Use hard-edged cel shadows with one concentrated rim or glow accent around the existing focal form. Respect the requested light and do not add an arena spotlight.',
+        'Preserve the requested identity, count, pose and action; draw people with Togashi designs, slick hair, sharp eyes, lean bodies, school uniforms and eerie demon faces.',
+      color_and_tone: 'Black ink with grey screentone and occasional muted red.',
+      lighting_and_shadow: 'Stark ink shadows, eerie glow from spirit energy and moonlight.',
       texture_and_material:
-        'Keep painted cel surfaces clean, with sharp ink and subtle dry grain at selected edges. Match surface marks to the source material instead of applying a universal effect.',
+        'Confident brush-pen line, screentone, rough sketchy inking in intense panels.',
       camera_and_composition:
-        'Create pressure with directional lines and compact spacing inside the supplied layout. Preserve the camera and avoid a ring, crowd or face-off arrangement.',
-      atmosphere_and_mood:
-        'Suggest held intensity through a pause between dense and open shapes. Keep the requested action and emotional tone; do not invent a duel or power-up.',
-      rendering_and_quality:
-        'Separate a small number of decisive shadow planes and crisp effect edges. Avoid muddy glow, excessive streaks and generic action-filter blur.',
-      key_features:
-        'compressed directional rhythm; violet rim pressure; forceful cel wedges separated into clean shadow groups',
+        'Tense manga panel close-ups, dynamic tournament stances, eerie wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with tense eerie competition.',
+      rendering_and_quality: 'Stylish black-and-white shonen manga illustration with sharp inking.',
+      key_features: 'Togashi brush-pen; delinquent heroes; eerie demons; screentone; manga panels',
       creative_brief:
-        'Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event. Use it as a reusable look on any subject.',
+        "Yoshihiro Togashi manga look as in Yu Yu Hakusho: sharp confident brush-pen lines, stylish delinquent heroes, eerie demons and shifting between clean and rough inking. Carry it through Togashi brush-pen, delinquent heroes, eerie demons, screentone, manga panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-017',
-    name: 'Wandering Atonement Cel Drama Style',
-    displayName: 'Wandering Atonement Cel Drama',
-    styleAnchors: ['Wandering Atonement Cel Drama Style'],
+    name: 'Trust and Betrayal - Wandering Atonement Cel Drama',
+    displayName: 'Trust and Betrayal - Wandering Atonement Cel Drama',
+    styleAnchors: ['Trust and Betrayal - Wandering Atonement Cel Drama'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A wandering 90s cel drama look uses long, slashing ink contours, dense black shapes and restrained rust-red accents. Slightly dry edge texture gives the drawing a raw, reflective weight.',
+        'Kazuhiro Furuhashi OVA look of Rurouni Kenshin: Trust and Betrayal (1999): realistic painterly period drama, muted Kyoto palettes, blood-red accents on snow and live-action cinematography.',
       subject_treatment:
-        'Preserve the requested identity and proportions. Let existing folds and edges carry elongated strokes and clear angular turns; never add a weapon, scar or period costume.',
-      color_and_tone:
-        'When open, set muted plum and blue-black against a narrow rust-red or warm neutral accent. Keep the requested palette and let dark values carry most of the weight.',
+        'Preserve the requested identity, count, pose and action; draw people with realistic proportions, restrained faces, period kimono and hakama, and deeply serious expressions.',
+      color_and_tone: 'Muted earth browns, snow white, ink black and stark blood-red accents.',
       lighting_and_shadow:
-        'Use directional cel shadows with a restrained edge highlight. Preserve supplied lighting and avoid adding a lantern, window or sunset.',
+        'Soft natural light, overcast snow, candle-lit interiors and deep shadows.',
       texture_and_material:
-        'Mix solid cel fills with sparse dry-brush grain and a few broken ink edges. Apply wear as drawing texture only; do not make the depicted objects physically damaged.',
+        'Painterly cel with watercolor textures, live-action inserts feel and snowfall.',
       camera_and_composition:
-        'Favor long diagonals and clear negative-space breaks inside the existing composition. Keep the requested angle and crop; do not stage a walk or confrontation.',
-      atmosphere_and_mood:
-        'Give the linework quiet gravity through pauses and asymmetrical balance. Preserve the requested mood rather than requiring regret, violence or redemption.',
-      rendering_and_quality:
-        'Keep dark forms legible, contours slightly irregular and background planes simply painted. Avoid airbrushed softness and excessive scratch texture.',
-      key_features:
-        'long slashing contours; dense blue-black cel masses; restrained rust-red accents with sparse dry-brush grain',
+        'Cinematic still compositions, long silences and snow-covered wide landscape shots.',
+      atmosphere_and_mood: 'Keep the requested mood with somber atoning restraint.',
+      rendering_and_quality: 'Mature painterly 1999 OVA frame with cinematic realism.',
+      key_features: 'Trust and Betrayal realism; muted period Kyoto; snow; restrained drama',
       creative_brief:
-        'Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene. Use it as a reusable look on any subject.',
+        "Kazuhiro Furuhashi OVA look of Rurouni Kenshin: Trust and Betrayal (1999): realistic painterly period drama, muted Kyoto palettes, blood-red accents on snow and live-action cinematography. Carry it through Trust and Betrayal realism, muted period Kyoto, snow, restrained drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-018',
-    name: 'Dusty Space-Western Absurdity Style',
-    displayName: 'Dusty Space-Western Absurdity',
-    styleAnchors: ['Dusty Space-Western Absurdity Style'],
+    name: 'Yasuhiro Nightow - Dusty Space-Western Absurdity',
+    displayName: 'Yasuhiro Nightow - Dusty Space-Western Absurdity',
+    styleAnchors: ['Yasuhiro Nightow - Dusty Space-Western Absurdity'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A dusty 90s cel style pairs relaxed, elongated contour strokes with abrupt angular accents and sun-worn color. Its absurdity lives in elastic timing and uneven scale, not a western or space setting.',
+        'Yasuhiro Nightow manga look as in Trigun: scratchy energetic pen lines, dense mechanical guns, flapping coats, desert grit and gags breaking into super-deformed faces.',
       subject_treatment:
-        'Keep the requested subject and proportions. Give existing gestures an easy, slightly elastic contour rhythm; do not add a cowboy, vehicle, weapon or comic gag.',
-      color_and_tone:
-        'When color is open, contrast dusty ochre and faded coral with cool blue-violet shadow. Preserve requested hues and keep saturation uneven rather than uniformly bright.',
-      lighting_and_shadow:
-        'Use broad warm-cool value separation and crisp cel shadow shapes. Follow the requested light without adding a desert sun or artificial rim.',
-      texture_and_material:
-        'Use painted fills with dry, dusty grain and a few rough ink accents. Keep material response faithful and avoid coating everything in dust.',
+        'Preserve the requested identity, count, pose and action; draw people with Nightow designs, lanky figures, spiky hair, dramatic coats and grimacing or goofy faces.',
+      color_and_tone: 'Black ink with grey screentone and dusty sepia washes.',
+      lighting_and_shadow: 'Harsh desert sun rendered with hard ink shadows and speckled textures.',
+      texture_and_material: 'Scratchy pen lines, dense crosshatching, speed lines and sand grit.',
       camera_and_composition:
-        'Allow an off-kilter balance and a long directional sweep within the requested framing. Preserve camera and layout; do not add a horizon, vehicle or western staging.',
-      atmosphere_and_mood:
-        'Create a wry, loose rhythm only through contour and spacing. Keep the requested emotional register instead of inserting a joke or outlaw plot.',
+        'Dynamic manga angles, extreme perspective guns, sudden comic panels.',
+      atmosphere_and_mood: 'Keep the requested mood with dusty absurd heroism.',
       rendering_and_quality:
-        'Combine clean cel separation with selective edge roughness and restrained background detail. Avoid uniform VHS damage or smeared motion.',
-      key_features:
-        'elongated relaxed contours with abrupt angular accents; dusty warm-cool contrast; playful visual timing without literal gags',
+        'Energetic black-and-white manga illustration with scratchy density and speed lines.',
+      key_features: 'Yasuhiro Nightow scratchy line; desert grit; big coats; super-deformed gags',
       creative_brief:
-        'Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props. Use it as a reusable look on any subject.',
+        "Yasuhiro Nightow manga look as in Trigun: scratchy energetic pen lines, dense mechanical guns, flapping coats, desert grit and gags breaking into super-deformed faces. Carry it through Yasuhiro Nightow scratchy line, desert grit, big coats, super-deformed gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-161',
-    name: 'Planetary Aura Impact Style',
-    displayName: 'Planetary Aura Impact',
-    styleAnchors: ['Planetary Aura Impact Style'],
+    name: 'Dragon Ball Z - Planetary Aura Impact',
+    displayName: 'Dragon Ball Z - Planetary Aura Impact',
+    styleAnchors: ['Dragon Ball Z - Planetary Aura Impact'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'orange gi with a kanji emblem, golden spiky super-saiyan hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A high-impact 90s cel treatment centers on a bright curved aura shell, a hot focal core and clean radial streaks. The planetary scale comes from the arc around a form, not a planet or battle.',
+        'Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts.',
       subject_treatment:
-        'Preserve the requested form and action. Wrap a curved energy contour around the existing focal shape only when effects suit the request; do not turn it into a fighter.',
-      color_and_tone:
-        'When color is open, set ivory-gold or white-hot accents against deep cobalt and indigo. Preserve requested colors and keep the brightest region compact.',
-      lighting_and_shadow:
-        'Use hard cel shadows around a controlled luminous arc, with short outward streaks tied to existing movement. Keep the requested light direction and avoid a new explosion.',
+        'Preserve the requested identity, count, pose and action; draw people with DBZ muscular designs, sharp angular eyes, square jaws, spiky hair and gi-like clothes torn by battle.',
+      color_and_tone: 'Aura gold, sky blue, orange gi tones and rocky tan.',
+      lighting_and_shadow: 'Flaming aura glow, energy beam flashes and impact bursts.',
       texture_and_material:
-        'Keep the aura smooth and luminous while retaining inked edges and clean painted fills on solid forms. Do not make every surface emit light.',
-      camera_and_composition:
-        'Let one broad arc organize visual force within the supplied composition. Preserve framing, scale and subject placement; do not require a planet, sky or impact scene.',
-      atmosphere_and_mood:
-        'Convey scale through the size and curve of the existing effect, not through a cosmic setting. Preserve the requested tone and event.',
-      rendering_and_quality:
-        'Use crisp silhouettes, a readable light core and a few distinct streaks. Keep glow bounded and avoid soft bloom obscuring form.',
-      key_features:
-        'broad curved aura shell; compact ivory-gold focal light; radial streaks that trace existing motion',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
+      camera_and_composition: 'Wide explosion shots, speed-line clashes, low power-up angles.',
+      atmosphere_and_mood: 'Keep the requested mood with titanic power escalation.',
+      rendering_and_quality: 'Bold 1990s Toei television frame with sharp muscular aura effects.',
+      key_features: 'DBZ muscles; golden aura; rocky wastelands; energy beams; impact bursts',
       creative_brief:
-        'Apply the curved aura and impact-line language to the requested content where luminous effects fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle. Use it as a reusable look on any subject.',
+        "Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts. Carry it through DBZ muscles, golden aura, rocky wastelands, energy beams, impact bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-163',
-    name: 'Smoke-Jazz Noir Cool Style',
-    displayName: 'Smoke-Jazz Noir Cool',
-    styleAnchors: ['Smoke-Jazz Noir Cool Style'],
+    name: 'Yoshiaki Kawajiri - Smoke-Jazz Noir Cool',
+    displayName: 'Yoshiaki Kawajiri - Smoke-Jazz Noir Cool',
+    styleAnchors: ['Yoshiaki Kawajiri - Smoke-Jazz Noir Cool'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A restrained 90s noir cel style uses broad ink-black shapes, slow smoke-like contour ribbons and sparse warm highlights. Its jazz character is quiet syncopation rather than fast action.',
+        'Yoshiaki Kawajiri Madhouse direction as in Ninja Scroll and Wicked City: slick realistic adult designs, deep shadows, smoky noir cities, long cool poses and bursts of violence.',
       subject_treatment:
-        'Preserve the requested identity, gesture and materials. Let a few contours drift in long, fluid arcs while keeping the main silhouette clear; add no pipe, hat or detective.',
-      color_and_tone:
-        'When open, use slate blue, blue-gray and deep ink with a few brass or amber notes. Keep requested colors and avoid high-saturation neon.',
+        'Preserve the requested identity, count, pose and action; draw people with Kawajiri realism, long elegant limbs, sharp cheekbones, narrow eyes and dark stylish clothes.',
+      color_and_tone: 'Deep blacks, smoky amber, noir blue and sharp red accents.',
       lighting_and_shadow:
-        'Group shadows into broad calm planes and use small warm highlights only on existing lit areas. Do not add a lamp, spotlight or smoke source.',
+        'Hard-edged noir shadows, streetlight shafts through smoke, silhouettes.',
       texture_and_material:
-        'Use smooth painted cel fields, spare ink grain and softly layered haze-like shapes. Keep haze abstract and material-specific highlights accurate.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Allow spacious negative areas and a slow, off-center balance within the given frame. Preserve camera and layout; do not create a portrait or bar setting.',
-      atmosphere_and_mood:
-        'Keep the visual tempo cool and observant through pauses and low contrast accents. Do not force melancholy, nightlife or a noir plot.',
-      rendering_and_quality:
-        'Hold crisp silhouette edges against softer background planes, with restrained grain and few decorative marks. Avoid speed streaks and heavy digital effects.',
-      key_features:
-        'broad ink shadows; slow smoke-like line ribbons; slate-blue field with sparse brass warmth',
+        'Cool silhouetted compositions, long lens shots and rain-lit streets.',
+      atmosphere_and_mood: 'Keep the requested mood with slick smoky menace.',
+      rendering_and_quality: 'Dark sophisticated Madhouse OVA frame with deep shadow design.',
+      key_features: 'Yoshiaki Kawajiri noir; deep shadows; smoky cities; elegant adult designs',
       creative_brief:
-        'Use quiet noir cel values, fluid line accents and measured negative space on the requested content. Preserve subject, action, environment and framing; add no detective, instrument or smoke prop. Use it as a reusable look on any subject.',
+        "Yoshiaki Kawajiri Madhouse direction as in Ninja Scroll and Wicked City: slick realistic adult designs, deep shadows, smoky noir cities, long cool poses and bursts of violence. Carry it through Yoshiaki Kawajiri noir, deep shadows, smoky cities, elegant adult designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-164',
-    name: 'Wet Techno-Noir Consciousness Style',
-    displayName: 'Wet Techno-Noir Consciousness',
-    styleAnchors: ['Wet Techno-Noir Consciousness Style'],
+    name: 'Ghost in the Shell 1995 - Wet Techno-Noir Consciousness',
+    displayName: 'Ghost in the Shell 1995 - Wet Techno-Noir Consciousness',
+    styleAnchors: ['Ghost in the Shell 1995 - Wet Techno-Noir Consciousness'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a purple-haired cyborg major in a thermoptic suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A wet techno-noir 90s cel treatment combines precise dark contours, clipped cyan reflections and broken neon color bands. The slick surface effect follows depicted materials instead of making the whole scene rainy.',
+        'Mamoru Oshii film Ghost in the Shell (1995) with Hiroyuki Okiura designs: realistic sober characters, rain-soaked Hong Kong-like cityscapes, green-tinted grading and philosophical stillness.',
       subject_treatment:
-        'Keep the requested identity and construction. Add sharp reflected edges only to surfaces that can reflect them; do not add cybernetic parts, screens or wet clothing.',
-      color_and_tone:
-        'When open, use deep blue-black, electric cyan and a small magenta or red signal. Preserve requested colors and place accents in distinct, clipped areas.',
-      lighting_and_shadow:
-        'Use hard cel shadows and thin synthetic-looking edge glints on existing reflective surfaces. Retain supplied lighting; do not invent neon signs or a night street.',
+        'Preserve the requested identity, count, pose and action; draw people with Okiura realism, calm serious faces, grounded anatomy and practical tactical clothing.',
+      color_and_tone: 'Green-tinted grading, wet grey, teal neon and dim amber.',
+      lighting_and_shadow: 'Diffuse rainy light, reflections in canals and cold monitor glow.',
       texture_and_material:
-        'Combine fine scanline breaks with narrow reflective streaks and crisp painted fills. Apply gloss to plausible materials and keep fabric, skin and matte surfaces distinct.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Use parallel bands and reflected diagonals within the existing frame to suggest a techno-noir cadence. Preserve perspective and object placement; add no city geometry.',
-      atmosphere_and_mood:
-        'Create an alert, cool visual tone through precise contrast and reflected color. Preserve the requested mood without a crime or cyberpunk story.',
-      rendering_and_quality:
-        'Keep edges sharp, reflections bounded and scanline texture sparse. Avoid full-frame static, excess bloom and generic neon wash.',
-      key_features:
-        'clipped cyan reflections; precise dark contours; sparse scanline bands over material-aware gloss',
+        'Long contemplative shots of the city, reflections, ferry rides and still observation.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet contemplative techno-noir.',
+      rendering_and_quality: 'Precise 1995 Production I.G feature frame with cinematic realism.',
+      key_features: 'Oshii stillness; Okiura realism; wet city; green grading; reflections',
       creative_brief:
-        'Apply the restrained techno-noir cel treatment to the requested content. Preserve its identity, materials, lighting and composition; add no screens, neon signs, rain or cybernetic details. Use it as a reusable look on any subject.',
+        "Mamoru Oshii film Ghost in the Shell (1995) with Hiroyuki Okiura designs: realistic sober characters, rain-soaked Hong Kong-like cityscapes, green-tinted grading and philosophical stillness. Carry it through Oshii stillness, Okiura realism, wet city, green grading, reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-165',
-    name: 'Spirit Pressure Rivalry Style',
-    displayName: 'Spirit Pressure Rivalry',
-    styleAnchors: ['Spirit Pressure Rivalry Style'],
+    name: 'Yu Yu Hakusho - Spirit Pressure Rivalry',
+    displayName: 'Yu Yu Hakusho - Spirit Pressure Rivalry',
+    styleAnchors: ['Yu Yu Hakusho - Spirit Pressure Rivalry'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a green school uniform delinquent with slicked hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A spectral 90s cel look uses pale blue contour echoes, long translucent sweeps and deep nocturnal shadow masses. Pressure is shown as one visual afterimage around the focal form, never as another being.',
+        'Studio Pierrot Yu Yu Hakusho television look (1992): sharp nineties shonen designs, spirit energy blasts, demon tournaments and moody color-keyed night scenes.',
       subject_treatment:
-        'Preserve the requested subject and count. Offset a faint contour echo from the existing silhouette and let it fade into a few long lines; do not create a duplicate person or spirit character.',
-      color_and_tone:
-        'When open, favor ice blue, lavender-gray and deep navy, with warm accents kept small. Preserve the prompt palette and maintain a readable dark-to-light hierarchy.',
+        'Preserve the requested identity, count, pose and action; draw people with nineties Pierrot designs, sharp eyes, slick hair, school uniforms and demon features.',
+      color_and_tone: 'Spirit blue, blood red, night purple and school-uniform green.',
       lighting_and_shadow:
-        'Keep solid cel shadows decisive while a translucent edge echo provides contrast. Follow requested lighting and avoid adding a moon, halo source or supernatural event.',
+        'Spirit energy glow, moonlit rooftops and color-keyed dramatic lighting.',
       texture_and_material:
-        'Use clear painted cel shapes with soft transparent line trails and restrained background haze. Keep the echo graphic, not a new material or object.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Let the existing contour echo create depth around the focal form within the supplied frame. Preserve camera and placement; do not add a landscape or oversized figure.',
-      atmosphere_and_mood:
-        'Suggest pressure through stillness, scale contrast and a fading outline. Preserve the requested emotion; do not impose rivalry, haunting or spiritual lore.',
-      rendering_and_quality:
-        'Separate solid outlines from translucent trails and keep the main form dominant. Avoid blurred duplicate silhouettes or diffuse full-frame glow.',
-      key_features:
-        'pale blue contour echo; translucent sweeping trails; dark nocturnal cel shapes with a clear focal silhouette',
+        'Standoff compositions, energy blasts toward the lens, dramatic close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce spirited rivalry.',
+      rendering_and_quality: 'Classic early-1990s shonen television cel frame with energy effects.',
+      key_features: 'Pierrot nineties shonen; spirit blasts; demon tournament; moody color keys',
       creative_brief:
-        'Apply the spectral contour and cel-shadow treatment to the requested content. Keep its subject count, identity, action, setting and composition; add no spirit, rival or supernatural scene. Use it as a reusable look on any subject.',
+        "Studio Pierrot Yu Yu Hakusho television look (1992): sharp nineties shonen designs, spirit energy blasts, demon tournaments and moody color-keyed night scenes. Carry it through Pierrot nineties shonen, spirit blasts, demon tournament, moody color keys. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-166',
-    name: 'Redemption Restraint Style',
-    displayName: 'Redemption Restraint',
-    styleAnchors: ['Redemption Restraint Style'],
+    name: 'Rurouni Kenshin TV - Redemption Restraint',
+    displayName: 'Rurouni Kenshin TV - Redemption Restraint',
+    styleAnchors: ['Rurouni Kenshin TV - Redemption Restraint'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A restrained 90s cel drama style uses soft-edged transitions inside clean shadow groups, calm contours and a narrow cool rim. Emotion rests in small shifts of form rather than spectacle.',
+        'Studio Gallop Rurouni Kenshin television look (1996): bright nineties cel, Meiji-era Tokyo streets, graceful sword action with speed lines, warm humor and melancholy.',
       subject_treatment:
-        'Preserve the requested identity, proportions and expression. Use simple, accurate contours and restrained interior detail; do not turn a quiet subject into a redemptive hero.',
-      color_and_tone:
-        'When color is open, use muted blue-violet shadows, gentle warm neutrals and a limited red accent. Preserve specified hues and avoid dramatic saturation.',
-      lighting_and_shadow:
-        'Use broad, soft transitions alongside clearly bounded cel shadows. Respect the requested light and avoid a dramatic backlight or added glow.',
+        'Preserve the requested identity, count, pose and action; draw people with nineties shonen designs, large eyes, flowing hair, kimono, hakama and Meiji Western clothes.',
+      color_and_tone: 'Warm Meiji earth tones, indigo, crimson and cherry blossom pink.',
+      lighting_and_shadow: 'Warm daylight, sunset silhouettes and dramatic sword flash highlights.',
       texture_and_material:
-        "Keep fills smooth and ink clean, with subtle grain only in broad painted areas. Retain each material's surface and do not add distress.",
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Maintain the requested crop and spacing, with attention on clear form and quiet detail. Do not force a close portrait or a lone figure.',
-      atmosphere_and_mood:
-        "Let restraint come from an absence of extra marks and a measured value range. Preserve the prompt's mood; add no sorrow, redemption or conflict.",
-      rendering_and_quality:
-        'Use legible anatomy or object structure, gentle value transitions and minimal effects. Keep the finish polished without denoising away all line character.',
-      key_features:
-        'quiet contour work; clean cel groups with gentle transitions; cool rim and restrained warm accents',
+        'Sword duel framing with speed lines, street scenes and sunset silhouettes.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle wistful redemption.',
+      rendering_and_quality: 'Bright 1996 television cel frame with graceful sword action.',
+      key_features: 'Kenshin TV cel; Meiji streets; speed-line sword action; warm melancholy',
       creative_brief:
-        'Restyle the requested content with calm cel drawing, measured shadows and quiet color. Preserve its identity, action, mood and camera; introduce no redemption narrative, costume or prop. Use it as a reusable look on any subject.',
+        "Studio Gallop Rurouni Kenshin television look (1996): bright nineties cel, Meiji-era Tokyo streets, graceful sword action with speed lines, warm humor and melancholy. Carry it through Kenshin TV cel, Meiji streets, speed-line sword action, warm melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-167',
-    name: 'Engine-Trail Outlaw Adventure Style',
-    displayName: 'Engine-Trail Outlaw Adventure',
-    styleAnchors: ['Engine-Trail Outlaw Adventure Style'],
+    name: 'Outlaw Star - Engine-Trail Outlaw Adventure',
+    displayName: 'Outlaw Star - Engine-Trail Outlaw Adventure',
+    styleAnchors: ['Outlaw Star - Engine-Trail Outlaw Adventure'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A kinetic 90s cel treatment uses sharp contour cuts, directional engine-like trails and strongly angled color streaks. Its outlaw energy is speed and visual thrust, not a vehicle or western subject.',
+        'Sunrise Outlaw Star television look (1998): late-nineties space adventure, glossy ship interiors, grappler ship arms, magic-tech guns and colorful alien frontier towns.',
       subject_treatment:
-        'Keep the requested identity and action. Attach a few trailing lines to existing movement and preserve static forms without streaks; add no rider, machine or weapon.',
-      color_and_tone:
-        'When open, contrast deep navy with selective red, electric blue and warm highlights. Keep requested colors and use the brightest streak only to clarify motion.',
-      lighting_and_shadow:
-        'Build crisp cel shadows and bright edge accents around existing moving forms. Preserve the requested illumination; do not invent headlights or explosions.',
+        'Preserve the requested identity, count, pose and action; draw people with late-nineties Sunrise designs, spiky hair, big expressive eyes, jackets and adventurer gear.',
+      color_and_tone: 'Bright space teal, engine orange, desert tan and chrome.',
+      lighting_and_shadow: 'Engine flares, cockpit glow and harsh frontier sunlight.',
       texture_and_material:
-        'Combine clean ink contours, painted color blocks and narrow speed traces. Keep marks directional and do not smear surface detail.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Use a strong diagonal or receding line of movement inside the supplied framing. Preserve camera and existing action; do not add a road or chase.',
-      atmosphere_and_mood:
-        'Communicate momentum through line angle and color separation. Keep the requested emotional tone instead of adding outlaw bravado or adventure.',
+        'Chase shots with engine trails, cockpit views and frontier town wides.',
+      atmosphere_and_mood: 'Keep the requested mood with rollicking outlaw adventure.',
       rendering_and_quality:
-        'Keep moving edges sharp with selective streaks and static edges crisp. Avoid broad blur, excessive debris and action effects unrelated to the prompt.',
-      key_features:
-        'directional engine-like trails; sharp contour cuts; navy cel masses with selective red and electric-blue streaks',
+        'Energetic late-1990s Sunrise television frame with space adventure color.',
+      key_features: 'Outlaw Star adventure; engine trails; frontier towns; magic-tech guns',
       creative_brief:
-        'Apply the kinetic cel lines and selective trail accents to movement already present in the request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon. Use it as a reusable look on any subject.',
+        "Sunrise Outlaw Star television look (1998): late-nineties space adventure, glossy ship interiors, grappler ship arms, magic-tech guns and colorful alien frontier towns. Carry it through Outlaw Star adventure, engine trails, frontier towns, magic-tech guns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-169',
-    name: 'Wired Identity Dissolution Style',
-    displayName: 'Wired Identity Dissolution',
-    styleAnchors: ['Wired Identity Dissolution Style'],
+    name: 'Serial Experiments Lain - Wired Identity Dissolution',
+    displayName: 'Serial Experiments Lain - Wired Identity Dissolution',
+    styleAnchors: ['Serial Experiments Lain - Wired Identity Dissolution'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A wired 90s cel look fragments selected contours into offset exposures and interrupted horizontal bands. Identity feels unstable through registration shifts, not through adding another character.',
+        'Yoshitoshi ABe designs and Ryutaro Nakamura direction as in Serial Experiments Lain (1998): eerie suburban stillness, humming power lines, red-dotted shadows and digital glitch dissolution.',
       subject_treatment:
-        'Preserve the requested identity and number of forms. Use a few offset contour fragments as a printing or signal echo; never duplicate the subject or alter its defining features.',
-      color_and_tone:
-        'When color is open, set electric blue or violet accents against ink black and muted neutrals. Preserve requested hues and keep color shifts narrow and purposeful.',
+        'Preserve the requested identity, count, pose and action; draw people with ABe designs, thin delicate lines, small quiet faces, bob haircuts and plain clothes.',
+      color_and_tone: 'Washed-out whites, power-line grey, CRT blue and red speckled shadows.',
       lighting_and_shadow:
-        'Use clean cel shadows with small displaced edge lights and occasional line interruptions. Retain the requested lighting; do not add a screen or neon source.',
-      texture_and_material:
-        'Add sparse scanline breaks and slight color-registration slips over otherwise solid painted fills. Keep the effect graphic and prevent noise from obscuring material.',
+        'Harsh washed-out sunlight, shadows filled with red dots, monitor glow in dark rooms.',
+      texture_and_material: 'Thin line cel, digital glitch artifacts, noise and CRT scanlines.',
       camera_and_composition:
-        'Use repeated edge fragments within the existing framing to suggest disorientation. Preserve camera and form placement; do not multiply the scene.',
-      atmosphere_and_mood:
-        'Create unease through alignment changes and empty intervals only when compatible with the prompt. Preserve its requested tone and avoid a digital-world narrative.',
-      rendering_and_quality:
-        'Keep one primary silhouette completely readable; limit offsets to short bands and edges. Avoid severe glitch breakup or soft double exposure.',
+        'Static uneasy framing, power lines crossing the sky, isolated figures.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie wired dissociation.',
+      rendering_and_quality: 'Unsettling 1998 television frame with digital glitch atmosphere.',
       key_features:
-        'offset contour fragments; interrupted horizontal scan bands; electric blue-violet registration accents',
+        'Yoshitoshi ABe designs; power lines; red-dot shadows; CRT glitch; eerie stillness',
       creative_brief:
-        'Restyle the requested content with sparse registration shifts and fragmented cel contours. Preserve its identity, count, setting and composition; do not create duplicates, screens or a digital narrative. Use it as a reusable look on any subject.',
+        "Yoshitoshi ABe designs and Ryutaro Nakamura direction as in Serial Experiments Lain (1998): eerie suburban stillness, humming power lines, red-dotted shadows and digital glitch dissolution. Carry it through Yoshitoshi ABe designs, power lines, red-dot shadows, CRT glitch, eerie stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-170',
-    name: 'Storybook Seal Magic Style',
-    displayName: 'Storybook Seal Magic',
-    styleAnchors: ['Storybook Seal Magic Style'],
+    name: 'Cardcaptor Sakura - Storybook Seal Magic',
+    displayName: 'Cardcaptor Sakura - Storybook Seal Magic',
+    styleAnchors: ['Cardcaptor Sakura - Storybook Seal Magic'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a sealing wand with a star head, a yellow winged plush guardian, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A storybook 90s cel treatment pairs hand-drawn ink with small nested loops, seal-like ornament and restrained luminous accents. The magic signal is ornamental line rhythm, not a required spell.',
+        'CLAMP designs animated by Madhouse in Cardcaptor Sakura (1998): elegant elongated shojo figures, huge glossy eyes, ornate costumes, magic circles and floral storybook ornament.',
       subject_treatment:
-        'Preserve the requested forms and proportions. Let small interlocking marks follow existing contours; do not add a talisman, inscription, costume or magical object.',
-      color_and_tone:
-        'When open, balance deep blue-violet with parchment, warm gold and a small clear accent. Preserve specified colors and avoid filling every surface with ornament.',
-      lighting_and_shadow:
-        'Combine crisp cel shadows with tiny warm or cool glints on existing edges. Respect the requested light; do not invent a glowing seal or spell source.',
+        'Preserve the requested identity, count, pose and action; draw people with CLAMP and Madhouse designs, long limbs, huge glossy eyes, fluttering hair and ornate magical costumes.',
+      color_and_tone: 'Pastel pink, gold, lilac and soft sky blue.',
+      lighting_and_shadow: 'Soft magical glows, sparkles and moonlit bedroom light.',
       texture_and_material:
-        'Use fine hand-inked ornament over smooth painted fills, with slight paper-like grain only when compatible with the depicted material.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Keep the requested framing and layout. Use nested line motifs to guide attention inside the composition rather than adding a circular diagram or symbol.',
-      atmosphere_and_mood:
-        'Give the finish a crafted, storybook cadence through detail and luminous restraint. Preserve the requested tone; do not force fantasy or whimsy.',
+        'Graceful spinning poses, magic circle compositions, storybook frames.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle sparkling wonder.',
       rendering_and_quality:
-        'Keep ornamental marks small, distinct and subordinate to the main form. Avoid clutter, excessive sparkle and generic fantasy glow.',
-      key_features:
-        'hand-drawn cel contour; small nested seal-like loops; restrained gold and blue-violet glints',
+        'Polished late-1990s Madhouse television frame with ornate shojo detail.',
+      key_features: 'CLAMP elegance; magic circles; ornate costumes; pastel sparkle; storybook',
       creative_brief:
-        'Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve its identity, action and composition; add no literal seal, spell, costume or fantasy prop. Use it as a reusable look on any subject.',
+        "CLAMP designs animated by Madhouse in Cardcaptor Sakura (1998): elegant elongated shojo figures, huge glossy eyes, ornate costumes, magic circles and floral storybook ornament. Carry it through CLAMP elegance, magic circles, ornate costumes, pastel sparkle, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-173',
-    name: 'Dust-Warm Pacifist Melancholy Style',
-    displayName: 'Dust-Warm Pacifist Melancholy',
-    styleAnchors: ['Dust-Warm Pacifist Melancholy Style'],
+    name: 'Trigun 1998 - Dust-Warm Pacifist Melancholy',
+    displayName: 'Trigun 1998 - Dust-Warm Pacifist Melancholy',
+    styleAnchors: ['Trigun 1998 - Dust-Warm Pacifist Melancholy'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A dust-warm 90s cel style joins softly painted background planes, simple clean contours and muted amber-cool contrast. Its named restraint comes from quiet spacing and low visual force, not a pacifist narrative.',
+        'Madhouse Trigun television look (1998): late-nineties cel with desert frontier towns, warm dusty sunsets, bright character colors and a melancholy that sneaks under slapstick.',
       subject_treatment:
-        'Keep the requested identity, gesture and proportions. Use gentle contour emphasis and economical interior marks; do not add companions, an airship or a peaceful event.',
+        'Preserve the requested identity, count, pose and action; draw people with nineties Madhouse designs, lanky bodies, expressive faces, long coats and dusty frontier clothes.',
       color_and_tone:
-        'When color is open, pair dusty amber, muted brown and soft blue-green. Preserve requested hues and keep saturation low with a few warm focal notes.',
-      lighting_and_shadow:
-        'Use broad, soft-edged light transitions and uncomplicated cel shadows. Preserve requested lighting and avoid imposing sunset or golden-hour light.',
+        'Desert amber, dusty sky blue, sunset orange and bright costume color accents.',
+      lighting_and_shadow: 'Hot desert sunlight, long dusk shadows and warm saloon lamps.',
       texture_and_material:
-        "Use softly brushed background paint with clean foreground fills and subtle dust-like grain. Keep the grain in the rendering, not on the subject's material.",
-      camera_and_composition:
-        'Favor open spacing and gentle horizontal rhythm within the existing framing. Preserve viewpoint and placement; do not widen the scene or add landscape.',
-      atmosphere_and_mood:
-        'Let quietness emerge from held gestures, sparse detail and warm-cool balance. Preserve the requested action and mood; do not require pacifism or melancholy.',
-      rendering_and_quality:
-        'Keep edges clean on focal forms and softer in background planes, with restrained detail and no motion effects.',
-      key_features:
-        'softly painted backgrounds; dust-muted amber and blue-green; open spacing with quiet cel contours',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
+      camera_and_composition: 'Wide frontier towns, low gunfight angles and dusk silhouettes.',
+      atmosphere_and_mood: 'Keep the requested mood with warm dusty melancholy.',
+      rendering_and_quality: 'Warm late-1990s Madhouse television frame with desert light.',
+      key_features: 'Trigun anime desert; dusky frontier; lanky designs; warm melancholy',
       creative_brief:
-        'Restyle the requested content with low-saturation cel color, gentle background paint and quiet spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset. Use it as a reusable look on any subject.',
+        "Madhouse Trigun television look (1998): late-nineties cel with desert frontier towns, warm dusty sunsets, bright character colors and a melancholy that sneaks under slapstick. Carry it through Trigun anime desert, dusky frontier, lanky designs, warm melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-174',
-    name: 'Iron Ruin Tragedy Style',
-    displayName: 'Iron Ruin Tragedy',
-    styleAnchors: ['Iron Ruin Tragedy Style'],
+    name: 'Battle Angel OVA - Iron Ruin Tragedy',
+    displayName: 'Battle Angel OVA - Iron Ruin Tragedy',
+    styleAnchors: ['Battle Angel OVA - Iron Ruin Tragedy'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A rough 90s cel finish uses heavy broken ink, chiseled shadow planes and sparse iron-gray or rust-red accents. Its ruin signal is distressed rendering texture, not a ruined setting.',
+        'Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance.',
       subject_treatment:
-        'Preserve the requested identity and construction. Emphasize existing edges with rough angular line and dense shadow; do not damage, armor or age the subject.',
-      color_and_tone:
-        'When color is open, use soot black, iron gray and a restrained rust red. Honor requested hues and keep muted contrast rather than adding blood or fire.',
-      lighting_and_shadow:
-        'Use broad, hard shadow masses with irregular but readable boundaries. Keep the supplied light direction and avoid dramatic flames or backlight.',
+        'Preserve the requested identity, count, pose and action; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes.',
+      color_and_tone: 'Rust orange, steel blue, grime brown and pale sky light.',
+      lighting_and_shadow: 'Diffuse industrial light, sparks and backlight from the floating city.',
       texture_and_material:
-        'Layer dry ink, sparse crosshatching and chipped-looking paint marks as surface rendering. Do not make intact objects physically broken or corroded.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Use weighty diagonal shapes and dense focal grouping within the existing composition. Preserve the requested camera and location.',
-      atmosphere_and_mood:
-        'Let gravity come from visual weight and rough edges only when it fits the prompt. Do not impose tragedy, war or desolation.',
-      rendering_and_quality:
-        'Keep the silhouette legible beneath heavy blacks; vary line pressure and confine hatching to selected planes. Avoid muddy grain.',
-      key_features:
-        'broken heavy ink; chiseled shadow planes; iron-gray and rust-red accents with selective crosshatching',
+        'Scrapyard wides under the hanging city, close-ups on mechanical parts.',
+      atmosphere_and_mood: 'Keep the requested mood with tragic rusted longing.',
+      rendering_and_quality: 'Somber early-1990s OVA frame with detailed cyborg mechanics.',
+      key_features: 'Nobuteru Yuki designs; scrapyard city; cyborg bodies; rust; tragedy',
       creative_brief:
-        'Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage. Use it as a reusable look on any subject.',
+        "Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance. Carry it through Nobuteru Yuki designs, scrapyard city, cyborg bodies, rust, tragedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-175',
-    name: 'Rose Ritual Symbolism Style',
-    displayName: 'Rose Ritual Symbolism',
-    styleAnchors: ['Rose Ritual Symbolism Style'],
+    name: 'Revolutionary Girl Utena - Rose Ritual Symbolism',
+    displayName: 'Revolutionary Girl Utena - Rose Ritual Symbolism',
+    styleAnchors: ['Revolutionary Girl Utena - Rose Ritual Symbolism'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A rose-ritual 90s cel style uses poised symmetry, repeated radial line accents and a deep garnet-violet value range. Its symbolism is formal visual repetition, not a required flower or ceremony.',
+        'Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels.',
       subject_treatment:
-        'Keep the requested subject, count and proportions. Emphasize existing forms with measured symmetry and fine ornamental contours; do not add a rose, emblem or ritual object.',
-      color_and_tone:
-        'When color is open, combine rose, garnet, wine and violet with small pale highlights. Preserve requested colors and avoid turning the palette into a mandatory flower motif.',
-      lighting_and_shadow:
-        'Use clean cel shadows and carefully placed rim accents to clarify the central rhythm. Respect supplied light and avoid candles or stage lighting.',
+        'Preserve the requested identity, count, pose and action; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms.',
+      color_and_tone: 'Rose pink, crimson, gold and pale lavender sky.',
+      lighting_and_shadow: 'Theatrical spotlights, rose petal glows and surreal skies.',
       texture_and_material:
-        'Pair smooth painted areas with delicate ink ornament and a few etched details. Apply marks to existing forms and preserve their actual materials.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Use axial balance and repeated spacing within the supplied composition. Preserve camera and arrangement; do not force a portrait, altar or symmetrical new scene.',
-      atmosphere_and_mood:
-        'Create solemn formality through rhythm and restraint when the requested mood allows it. Do not impose ritual, romance or spiritual meaning.',
+        'Symmetrical staging, repeated stock shots, surreal staircases and arenas.',
+      atmosphere_and_mood: 'Keep the requested mood with ritual theatrical symbolism.',
       rendering_and_quality:
-        'Keep fine lines crisp against broad dark shapes; use ornament selectively and maintain clear focal hierarchy.',
-      key_features:
-        'axial balance; repeated radial ornament; deep rose-garnet and violet cel values with refined ink',
+        'Stylized late-1990s J.C.Staff television frame with theatrical rose symbolism.',
+      key_features: 'Ikuhara ritual; Chiho Saito designs; roses; surreal arenas; princely uniforms',
       creative_brief:
-        'Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested content. Preserve its identity and composition; add no flower, emblem, altar or ceremony. Use it as a reusable look on any subject.',
+        "Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels. Carry it through Ikuhara ritual, Chiho Saito designs, roses, surreal arenas, princely uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-179',
-    name: 'Warm Rivalry Portrait Style',
-    displayName: 'Warm Rivalry Portrait',
-    styleAnchors: ['Warm Rivalry Portrait Style'],
+    name: 'Takehiko Inoue - Warm Rivalry Portrait',
+    displayName: 'Takehiko Inoue - Warm Rivalry Portrait',
+    styleAnchors: ['Takehiko Inoue - Warm Rivalry Portrait'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A warm 90s cel treatment uses rounded expressive contours, gentle gold edge light and clean two-stage shadows. Its portrait signal comes from expressive line accents, not a fixed crop or paired scene; rivalry is visual contrast only when that tone is requested.',
+        'Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie.',
       subject_treatment:
-        'Preserve requested identity and proportions. Use open contours and small expression accents where a face exists; keep single subjects single and do not invent a rival or companion.',
-      color_and_tone:
-        'When color is open, favor warm neutrals, amber and soft coral against calm blue shadow. Preserve requested hues and keep the warmth gentle rather than sepia.',
-      lighting_and_shadow:
-        'Use soft warm bounce and a thin rim to separate existing forms. Respect the requested light; do not impose sunset or interior lighting.',
-      texture_and_material:
-        'Keep linework clean, fills smooth and highlights material-aware. Avoid rough grain, wet gloss and broad atmospheric texture.',
+        'Preserve the requested identity, count, pose and action; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair.',
+      color_and_tone: 'Black ink with grey washes and occasional warm watercolor.',
+      lighting_and_shadow: 'Natural light carried by ink wash values, bright highlights on sweat.',
+      texture_and_material: 'Brush ink lines, dry brush, ink wash and watercolor bleed.',
       camera_and_composition:
-        'Use friendly visual balance and an approachable focal scale within the supplied composition. Preserve crop and camera; do not force a portrait or paired arrangement.',
-      atmosphere_and_mood:
-        'Let warmth come from contour softness, light and spacing. Keep the requested emotional tone rather than adding rivalry, nostalgia or sentiment.',
+        'Portrait close-ups, sports and duel moments frozen with realistic weight.',
+      atmosphere_and_mood: 'Keep the requested mood with proud warm rivalry.',
       rendering_and_quality:
-        'Use clear outlines, economical cel shadows and gentle edge transitions. Keep eyes, objects and background detail faithful to the source content.',
-      key_features:
-        'rounded expressive contours; soft gold edge light; warm cel neutrals against calm blue shadow',
+        'Masterful realist brush-ink manga illustration with painterly finish.',
+      key_features: 'Takehiko Inoue realism; brush ink; athletic anatomy; sweat and grit',
       creative_brief:
-        'Restyle the requested content with warm, clean cel drawing and gentle value transitions. Preserve its identity, action, number of subjects and composition; add no rival, companion or sunset. Use it as a reusable look on any subject.',
+        "Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie. Carry it through Takehiko Inoue realism, brush ink, athletic anatomy, sweat and grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-180',
-    name: 'Precision Action Cel Style',
-    displayName: 'Precision Action Cel',
-    styleAnchors: ['Precision Action Cel Style'],
+    name: 'Gunsmith Cats - Precision Action Cel',
+    displayName: 'Gunsmith Cats - Precision Action Cel',
+    styleAnchors: ['Gunsmith Cats - Precision Action Cel'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A precision-action 90s cel treatment uses exact contour breaks, sharply cut shadow wedges and motion marks with clear timing. Impact is a line-and-shape relation, not an added fight.',
+        'Kenichi Sonoda Gunsmith Cats OVA look (1995): precise detailed firearms and cars, clean cute-sexy designs, American city settings and crisp action choreography.',
       subject_treatment:
-        'Preserve the requested identity, anatomy and object geometry. Clarify force transfer only in motion already present, with controlled deformation and crisp edges.',
-      color_and_tone:
-        'When open, use disciplined dark cel values with one clear high-contrast accent. Preserve requested colors and separate the focal action from surrounding forms.',
-      lighting_and_shadow:
-        'Use crisp shadows and clean rim separation to make existing movement readable. Preserve supplied light; do not insert an impact flash or new source.',
+        'Preserve the requested identity, count, pose and action; draw people with Sonoda designs, clean detailed faces, athletic bodies, casual nineties clothes and precise mechanical props.',
+      color_and_tone: 'Urban grey, brick red, denim blue and chrome.',
+      lighting_and_shadow: 'Muzzle flash light, streetlight glow and bright daylight on cars.',
       texture_and_material:
-        'Keep fills smooth and linework precise, with only a slight directional smear at edges already moving. Respect material response and avoid noisy grain.',
+        'Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.',
       camera_and_composition:
-        'Clarify existing action vectors and recoil spacing within the supplied frame. Preserve camera, crop and pose; do not stage an attack or close-up.',
-      atmosphere_and_mood:
-        'Give the image a controlled, decisive rhythm through anticipation and release where the prompt already contains motion. Preserve its tone.',
-      rendering_and_quality:
-        'Keep moving and static edges distinct, effects crisp and anatomy or object structure stable. Avoid broad blur and unrelated speed lines.',
+        'Precise action framing, detailed gun and car close-ups, chase shots.',
+      atmosphere_and_mood: 'Keep the requested mood with crisp kinetic precision.',
+      rendering_and_quality: 'Crisp detailed 1995 OVA frame with mechanical precision.',
       key_features:
-        'precise contour breaks; sharply cut cel-shadow wedges; timing and force lines tied to existing action',
+        'Kenichi Sonoda precision; detailed guns and cars; American cities; crisp action',
       creative_brief:
-        'Apply precise cel contours, shadow wedges and restrained timing marks to the requested content. Preserve its identity, action, setting and composition; add no fighter, impact event or weapon. Use it as a reusable look on any subject.',
+        "Kenichi Sonoda Gunsmith Cats OVA look (1995): precise detailed firearms and cars, clean cute-sexy designs, American city settings and crisp action choreography. Carry it through Kenichi Sonoda precision, detailed guns and cars, American cities, crisp action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

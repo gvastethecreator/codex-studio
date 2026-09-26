@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-372
 packId: pack_16
-name: Allegorical Spotlight Confrontation Style
+name: Revue Starlight - Allegorical Spotlight Confrontation
 styleAnchors:
-  - Allegorical Spotlight Confrontation Style
-displayName: Allegorical Spotlight Confrontation
+  - Revue Starlight - Allegorical Spotlight Confrontation
+displayName: Revue Starlight - Allegorical Spotlight Confrontation
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Allegorical stage anime of spotlight confrontations: two performers facing off under theatrical light with symbolic props and shadows.'
-  subject_treatment: Keep the prompt's subject and action; stage it as a symbolic confrontation under a spotlight, meaning carried by staging.
-  color_and_tone: Black stage, one white spotlight and a single symbolic color such as red or gold.
-  lighting_and_shadow: Hard theatrical spotlights and huge cast shadows on the backdrop.
-  texture_and_material: Stage boards, velvet curtains, masks and symbolic props in graphic cel.
-  camera_and_composition: Frontal proscenium framing with strong symmetry and dramatic shadow play.
-  atmosphere_and_mood: Charged and symbolic, a rivalry performed as if it were a myth.
-  rendering_and_quality: Graphic theatrical anime with bold shadows and minimal staging.
-  key_features: spotlight duel; giant shadows; symbolic prop; proscenium
-  creative_brief: "Allegorical stage anime of spotlight confrontations: two performers facing off under theatrical light with symbolic props and shadows. Carry it through spotlight duel, giant shadows, symbolic prop, proscenium. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kinema Citrus Revue Starlight television look (2018): Ikuhara-influenced theater, surreal transforming stages, crossing spotlights, giant symbolic props and dueling performers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Revue Starlight designs, sparkling eyes, stage uniforms and dramatic sword-bearing poses.
+  color_and_tone: Stage red, gold, midnight blue and spotlight white.
+  lighting_and_shadow: Crossing spotlights, bursts of stage fire and red theatrical glow.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Transforming stage wides, dueling poses and symbolic prop reveals.
+  atmosphere_and_mood: Keep the requested mood with dramatic allegorical rivalry.
+  rendering_and_quality: Theatrical Kinema Citrus television frame with surreal transforming stagecraft.
+  key_features: Revue stages; crossing spotlights; symbolic props; duels
+  creative_brief: "Kinema Citrus Revue Starlight television look (2018): Ikuhara-influenced theater, surreal transforming stages, crossing spotlights, giant symbolic props and dueling performers. Carry it through Revue stages, crossing spotlights, symbolic props, duels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-372.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real band or brand logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-079
 packId: pack_16
-name: Crusade Desert Glare Anime
+name: Arslan 1991 - Crusade Desert Glare
 styleAnchors:
-  - Crusade Desert Glare Anime
+  - Arslan 1991 - Crusade Desert Glare
   - desert war anime
   - blinding glare
-displayName: Crusade Desert Glare Anime
+displayName: Arslan 1991 - Crusade Desert Glare
 category: 6. Samurai & Medieval
 domain: desert war anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - desert
   - glare
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst.'
-  subject_treatment: Keep the prompt's subject and setting; expose it to overwhelming sun, heat and glare that flatten colors.
-  color_and_tone: Blinding white and sand gold with dark blue shadows and sunburnt skin.
-  lighting_and_shadow: Overhead desert sun with bleached highlights, short hard shadows and heat shimmer.
-  texture_and_material: Hot metal, wind-blown sand, sweat and faded linen drawn with bold cel.
-  camera_and_composition: Wide desert horizons with small figures, or close faces squinting against light.
-  atmosphere_and_mood: Exhausted and scorched, faith and thirst wearing down people who are far from home.
-  rendering_and_quality: Harsh high-key anime with strong glare effects and clean silhouettes.
-  creative_brief: "Desert war anime bleached by glare: blinding sun, burning sand, heavy armor and thirst. Carry it through blinding glare, heat shimmer, sand gold, short shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: blinding glare; heat shimmer; sand gold; short shadows
+  aesthetic: 'The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor.
+  color_and_tone: Desert white glare, gold, turquoise and deep sky blue.
+  lighting_and_shadow: Blinding noon glare, heat shimmer and sharp desert shadows.
+  texture_and_material: Hand-painted cel over detailed painted desert and palace backgrounds, soft grain.
+  camera_and_composition: Marching columns across dunes and heroic silhouettes against the sun.
+  atmosphere_and_mood: Keep the requested mood with weary epic pilgrimage.
+  rendering_and_quality: Elegant early-1990s OVA frame with sweeping desert grandeur and ornate armor.
+  creative_brief: "The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light. Carry it through Arslan OVA, Persian armor, desert glare, elegant heroes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Arslan OVA; Persian armor; desert glare; elegant heroes
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - desert
     - glare
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

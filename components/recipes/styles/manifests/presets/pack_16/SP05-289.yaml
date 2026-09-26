@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-289
 packId: pack_16
-name: Ascetic Gothic Silence Style
+name: Angel's Egg - Ascetic Gothic Silence
 styleAnchors:
-  - 'Ascetic Gothic Silence Style'
-displayName: 'Ascetic Gothic Silence'
+  - Angel's Egg - Ascetic Gothic Silence
+displayName: Angel's Egg - Ascetic Gothic Silence
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use ascetic chiaroscuro: blue-black masses, clean bone-gray cutouts, hairline ink edges, and
-    scarce engraved hatch.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Hatch defines
-    existing forms without adding costume or ornament.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, restrict color to deep ink,
-    smoke gray, and bone white, with at most one accent already supported by the prompt.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Respect supplied light; use a narrow hard
-    rim against broad shadow, never invent candlelight.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep cross-hatch sparse and tied to present
-    surface texture; leave smooth areas unornamented.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Use austere negative-space
-    balance only within existing geometry, adding no architecture or vignette.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Maintain the user's emotional tone; silence is low
-    mark density, not solemnity or gothic content.
-  rendering_and_quality: >-
-    Protect thin contours from noise, hold dark values clean, and preserve detail within
-    high-contrast silhouettes.
-  key_features: >-
-    Blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch.
-  creative_brief: 'Use blue-black mass; bone-gray cutout; hairline edge; sparse engraved hatch. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: "Mamoru Oshii feature animation with Yoshitaka Amano designs as in Angel's Egg: a drowned gothic city in eternal dusk, fossil shadows, water everywhere and near-monochrome painterly stillness."
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Amano elegance, thin delicate faces, long pale hair and heavy robes, moving very slowly.
+  color_and_tone: Near-monochrome blue-grey, deep teal shadow and pale ivory highlights.
+  lighting_and_shadow: Dim dusk light, candle glow, reflections in still water.
+  texture_and_material: Painterly detailed backgrounds, fine lines, water and stone.
+  camera_and_composition: Long static compositions, extreme silence, figures small in vast ruins.
+  atmosphere_and_mood: Keep the requested mood with austere mystical silence.
+  rendering_and_quality: Sparse painterly 1985 hand-drawn feature frame with meditative stillness.
+  key_features: Oshii silence; Amano designs; drowned gothic city; monochrome dusk; still water
+  creative_brief: "Mamoru Oshii feature animation with Yoshitaka Amano designs as in Angel's Egg: a drowned gothic city in eternal dusk, fossil shadows, water everywhere and near-monochrome painterly stillness. Carry it through Oshii silence, Amano designs, drowned gothic city, monochrome dusk, still water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-289.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

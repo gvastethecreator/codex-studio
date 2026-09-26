@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-296
 packId: pack_16
-name: Humanist Art Deco Retrofuture Style
+name: Metropolis - Humanist Art Deco Retrofuture
 styleAnchors:
-  - 'Humanist Art Deco Retrofuture Style'
-displayName: 'Humanist Art Deco Retrofuture'
+  - Metropolis - Humanist Art Deco Retrofuture
+displayName: Metropolis - Humanist Art Deco Retrofuture
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Measured Art Deco geometry on smooth cel planes: stepped internal edges, precise parallel
-    lines, and calibrated symmetry.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Simplify only
-    interior planes while retaining each requested silhouette, proportion, expression, and
-    identity.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use midnight teal, navy,
-    muted gold, peach, or rose in discrete fields; keep user-specified local colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Create crisp bands of light and shadow
-    from the supplied source; add no futuristic glow or chrome sheen.
-  texture_and_material: >-
-    Apply texture only to materials already present. Keep planes smooth with tiny even grain
-    only in broad fields; add no ornamental material patterns.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Align parallel rhythms with
-    existing geometry and balance values without moving objects.
-  atmosphere_and_mood: >-
-    Preserve the requested emotional tone. Carry the requested tone; geometric precision imposes
-    no retrofuture or optimistic mood.
-  rendering_and_quality: >-
-    Keep edge intersections clean, planes separated, and highlights controlled; avoid bloom and
-    metallic rendering.
-  key_features: >-
-    Stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields.
-  creative_brief: 'Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture.
+  color_and_tone: Warm amber, brass gold, deep teal and sepia jazz-age tones.
+  lighting_and_shadow: Warm glowing city lights, spotlights on towers, dramatic industrial glare.
+  texture_and_material: Clean cartoon cel figures over painted and CG-built deco architecture.
+  camera_and_composition: Towering vertical city views, tiny figures in vast halls, crane shots.
+  atmosphere_and_mood: Keep the requested mood with humanist retro wonder.
+  rendering_and_quality: Lavish 2001 Madhouse feature frame mixing cartoon and monumental detail.
+  key_features: Tezuka round designs; art deco megacity; retro robots; amber jazz glow
+  creative_brief: "Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery. Carry it through Tezuka round designs, art deco megacity, retro robots, amber jazz glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -64,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-296.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -80,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

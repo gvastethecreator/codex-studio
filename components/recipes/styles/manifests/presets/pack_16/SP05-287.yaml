@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-287
 packId: pack_16
-name: Digital Pop Opera Style
+name: Belle - Digital Pop Opera
 styleAnchors:
-  - 'Digital Pop Opera Style'
-displayName: 'Digital Pop Opera'
+  - Belle - Digital Pop Opera
+displayName: Belle - Digital Pop Opera
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Pop-digital cel structure: crisp silhouette planes, flat high-chroma blocks, and one
-    restrained gradient layer behind sharp separations.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Graphic
-    simplification cannot caricature or add symbols.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, use bright azure, coral or
-    magenta, lemon, and deep charcoal as controlled blocks when compatible with the requested
-    palette.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep highlights crisp and bloom confined
-    to supplied light; add no stage lights or luminous objects.
-  texture_and_material: >-
-    Apply texture only to materials already present. Favor smooth digital fills and narrow
-    gradients over painterly grain; keep each material legible.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Align broad silhouettes and
-    diagonal color blocks to existing geometry, never force a stage or profile.
-  atmosphere_and_mood: >-
-    Preserve user mood; chromatic brightness requires no buoyancy, spectacle, or sung emotion.
-  rendering_and_quality: >-
-    Hold hard edges at focal shapes and smooth gradients behind them; add no UI, lettering, or
-    poster layout.
-  key_features: >-
-    High-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom.
-  creative_brief: 'Use high-chroma flats; crisp layer separation; one gradient depth layer; controlled edge bloom. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Hosoda feature animation as in Belle: a vast virtual world of glowing avatars and 3D towers, contrasted with flat shadowless 2D characters in rural Kochi.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw real-world people in flat Hosoda style and virtual avatars in glossy detailed designs, ornate costumes and freckled faces.
+  color_and_tone: Neon pink, electric teal, pearl white and deep digital blue.
+  lighting_and_shadow: Glowing avatar lights, spotlight beams and holographic bloom across the crowds.
+  texture_and_material: CG virtual architecture, soft 2D cel characters, particle clouds.
+  camera_and_composition: Huge crowd views and soaring camera moves inside the virtual world.
+  atmosphere_and_mood: Keep the requested mood with soaring emotional spectacle.
+  rendering_and_quality: Hybrid 2D and CG Studio Chizu frame with spectacular virtual scale.
+  key_features: Hosoda virtual world; flat characters; glowing avatars; spectacular crowds
+  creative_brief: "Mamoru Hosoda feature animation as in Belle: a vast virtual world of glowing avatars and 3D towers, contrasted with flat shadowless 2D characters in rural Kochi. Carry it through Hosoda virtual world, flat characters, glowing avatars, spectacular crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -63,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-287.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

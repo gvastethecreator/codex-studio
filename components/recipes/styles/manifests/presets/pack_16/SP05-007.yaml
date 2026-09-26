@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-007
 packId: pack_16
-name: Wasteland Impact Legend Style
+name: Fist of the North Star - Wasteland Impact Legend
 styleAnchors:
-  - 'Wasteland Impact Legend Style'
-displayName: 'Wasteland Impact Legend'
+  - Fist of the North Star - Wasteland Impact Legend
+displayName: Fist of the North Star - Wasteland Impact Legend
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use forceful contour accents restricted to the requested pose and existing shapes; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use burnt red, charcoal, ochre and warm white. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as hard dark breaks and clear positive fields; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply dry brush and sparse pigment flecks kept away from small details as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use diagonal pressure through the movement already requested; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through line contrast and dry-brush edges; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use rugged but controlled ink and cel blocks with readable forms; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Tetsuo Hara Fist of the North Star look (1984): hyper-muscular heroes, detailed hatched anatomy, post-apocalyptic wastelands, punk raiders and exploding impact.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hara designs, massive muscles, hatched anatomy, square jaws and torn clothing.
+  color_and_tone: Desert ochre, blood orange sky, leather black and steel grey.
+  lighting_and_shadow: Harsh wasteland sun and dramatic backlight with impact flashes.
+  texture_and_material: Hatched anatomy lines, painted cels, dust clouds and impact radiance.
+  camera_and_composition: Low angles on massive figures, impact freeze frames, wasteland wides.
+  atmosphere_and_mood: Keep the requested mood with stoic brutal legend.
+  rendering_and_quality: Powerful 1984 television frame with Hara muscular detail.
+  key_features: Tetsuo Hara muscles; hatched anatomy; wasteland punks; impact flashes
+  creative_brief: "Tetsuo Hara Fist of the North Star look (1984): hyper-muscular heroes, detailed hatched anatomy, post-apocalyptic wastelands, punk raiders and exploding impact. Carry it through Tetsuo Hara muscles, hatched anatomy, wasteland punks, impact flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a hero with seven scars on his chest
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-007.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: a hero with seven scars on his chest, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

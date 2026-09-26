@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-071
 packId: pack_16
-name: Ink-Splatter Swordplay Anime
+name: Takashi Okazaki - Ink-Splatter Swordplay
 styleAnchors:
-  - Ink-Splatter Swordplay Anime
+  - Takashi Okazaki - Ink-Splatter Swordplay
   - sumi ink action anime
   - ink splatter
-displayName: Ink-Splatter Swordplay Anime
+displayName: Takashi Okazaki - Ink-Splatter Swordplay
 category: 6. Samurai & Medieval
 domain: sumi ink action anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - ink
   - swordplay
   - anime
+  - reference-title
 visualDna:
-  aesthetic: Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds.
-  subject_treatment: Keep the prompt's subject and action; turn movement and impacts into brush arcs, ink splatter and dry-brush trails.
-  color_and_tone: Black ink on warm paper white with a single red accent for blood or cloth.
-  lighting_and_shadow: No realistic light; value comes from ink density, wet pools and dry brush.
-  texture_and_material: Wet ink pools, dry-bristle streaks, splatter dots and paper grain.
-  camera_and_composition: Dynamic diagonals with large empty paper areas around the action.
-  atmosphere_and_mood: Explosive and stylish, every lethal movement turned into a single line of poetry.
-  rendering_and_quality: Painterly anime action with bold brushwork over clean character line.
-  creative_brief: Action anime where every cut explodes into sumi ink splatter and brush arcs across paper-white backgrounds. Carry it through ink splatter, brush arcs, paper white, red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
-  key_features: ink splatter; brush arcs; paper white; red accent
+  aesthetic: 'Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing.
+  color_and_tone: Pure black, stark white and a single red accent color.
+  lighting_and_shadow: Graphic high contrast with silhouettes and white slash lines of light.
+  texture_and_material: Ink splatter, dry brush, gritty grain and graphic slash marks.
+  camera_and_composition: Dramatic silhouette poses, slashing diagonals and wide stark landscapes.
+  atmosphere_and_mood: Keep the requested mood with stoic stylish violence.
+  rendering_and_quality: Stark graphic ink illustration with hip-hop samurai cool.
+  creative_brief: "Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes. Carry it through Takashi Okazaki black-white-red, ink splatter, silhouettes, slashing diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Takashi Okazaki black-white-red; ink splatter; silhouettes; slashing diagonals
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - ink
     - swordplay
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

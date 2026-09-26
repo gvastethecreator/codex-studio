@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-307
 packId: pack_16
-name: Summer Sports Melodrama Style
+name: Mitsuru Adachi - Summer Sports Melodrama
 styleAnchors:
-  - 'Summer Sports Melodrama Style'
-displayName: 'Summer Sports Melodrama'
+  - Mitsuru Adachi - Summer Sports Melodrama
+displayName: Mitsuru Adachi - Summer Sports Melodrama
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,26 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use clear weight transfer along the requested movement without adding a pose or activity; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use sun-warmed primary hues, deep blue and warm white. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as hard cel planes following the stated light, with brief accents only at existing motion points; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply dry background brush and light cel-transfer grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use crossing gesture curves and settled rests inside the supplied composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through mark tempo and clear direction of existing movement; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use stable anatomy at action extremes with crisp contours and bounded effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use elastic action contours, narrow speed accents and firmly resolved gesture ends; clear weight transfer along the requested movement without adding a pose or activity; hard cel planes following the stated light, with brief accents only at existing motion points; dry background brush and light cel-transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms.
+  color_and_tone: Summer blue, field green, dusty brown diamond and cream.
+  lighting_and_shadow: Bright summer sun with soft cel shadows and heat haze.
+  texture_and_material: Clean minimal lines, sparse detail, empty skies and cicada-heavy stillness.
+  camera_and_composition: Empty sky cutaways, quiet framing of objects, wide fields with small figures.
+  atmosphere_and_mood: Keep the requested mood with understated summer melancholy.
+  rendering_and_quality: Understated 1980s cel frame with calm minimal line work.
+  key_features: Mitsuru Adachi minimalism; empty skies; summer baseball; gentle faces; silence
+  creative_brief: "Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion. Carry it through Mitsuru Adachi minimalism, empty skies, summer baseball, gentle faces, silence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,14 +47,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-307.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +63,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

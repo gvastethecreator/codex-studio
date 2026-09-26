@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-077
 packId: pack_16
-name: Wandering Ronin Western Anime
+name: Hiroshi Hirata - Wandering Ronin Western
 styleAnchors:
-  - Wandering Ronin Western Anime
+  - Hiroshi Hirata - Wandering Ronin Western
   - drifter period anime
   - empty road
-displayName: Wandering Ronin Western Anime
+displayName: Hiroshi Hirata - Wandering Ronin Western
 category: 6. Samurai & Medieval
 domain: drifter period anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - ronin
   - western
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze.'
-  subject_treatment: Keep the prompt's subject and setting; turn it into a drifter's standoff or arrival, alone against open land.
-  color_and_tone: Sun-bleached ochre, dusty tan and faded indigo with harsh white sky.
-  lighting_and_shadow: Harsh midday sun with short black shadows and heat shimmer on the horizon.
-  texture_and_material: Dust clouds, worn straw hats, frayed cloth and cracked earth in simplified cel.
-  camera_and_composition: Extreme wide shots of empty roads alternating with extreme close-ups of eyes and hands.
-  atmosphere_and_mood: Lonely and sun-scorched, a quiet stranger arriving in a town that is holding its breath.
-  rendering_and_quality: Stylized prestige anime with bold framing contrasts and clean dusty effects.
-  creative_brief: "Period anime staged like a dusty western: lone drifters, wide empty roads, squinting close-ups and heat haze. Carry it through empty road, heat haze, eye close-ups, drifting dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: empty road; heat haze; eye close-ups; drifting dust
+  aesthetic: 'Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats.
+  color_and_tone: Black ink with grey wash and dusty sepia in color plates.
+  lighting_and_shadow: Harsh noon light with black brush shadows and dust glare.
+  texture_and_material: Heavy expressive brushwork, calligraphic strokes and dry-brush grit.
+  camera_and_composition: Low wide western-like standoffs in empty streets and gritty sweating close-ups.
+  atmosphere_and_mood: Keep the requested mood with grim dusty tension.
+  rendering_and_quality: Raw powerful gekiga brush illustration with calligraphic force.
+  creative_brief: "Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence. Carry it through Hiroshi Hirata brushwork, grim samurai, dusty standoffs, gekiga. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Hiroshi Hirata brushwork; grim samurai; dusty standoffs; gekiga
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - ronin
     - western
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

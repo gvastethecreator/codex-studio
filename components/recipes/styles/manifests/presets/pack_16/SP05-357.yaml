@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-357
 packId: pack_16
-name: Spin Pressure Distortion Style
+name: Ping Pong the Animation - Spin Pressure Distortion
 styleAnchors:
-  - Spin Pressure Distortion Style
-displayName: Spin Pressure Distortion
+  - Ping Pong the Animation - Spin Pressure Distortion
+displayName: Ping Pong the Animation - Spin Pressure Distortion
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Table tennis anime of spin and pressure: balls curving impossibly, tables warped by tension and faces locked in concentration.'
-  subject_treatment: Keep the prompt's subject and action; show spin and pressure through curved trajectories and subtly warped space.
-  color_and_tone: Table blue and green, white ball highlights and cool gym greys.
-  lighting_and_shadow: Even gym lighting with sharp highlights on the ball and glossy table.
-  texture_and_material: Rubber paddles, glossy table surfaces and sweat drawn with crisp line.
-  camera_and_composition: Tight table-level framings, curved ball trails and warped perspective under pressure.
-  atmosphere_and_mood: Claustrophobic and precise, a tiny table becoming an entire battlefield.
-  rendering_and_quality: Clean sports anime with elegant spin trails and subtle perspective distortion.
-  key_features: curving ball trail; warped table; paddle spin; concentration
-  creative_brief: "Table tennis anime of spin and pressure: balls curving impossibly, tables warped by tension and faces locked in concentration. Carry it through curving ball trail, warped table, paddle spin, concentration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Masaaki Yuasa Ping Pong the Animation (2014) from Taiyo Matsumoto designs: wobbly loose lines, split-screen panels, distorted perspective and raw emotional sports.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Matsumoto designs, lopsided faces, gangly bodies, scruffy hair and plain sportswear.
+  color_and_tone: Flat muted greens, table blue, sweat white and warm gym tones.
+  lighting_and_shadow: Flat gym light with graphic shadows and sudden glowing flashes.
+  texture_and_material: Loose wobbly line work, flat color and manga-panel splits.
+  camera_and_composition: Split-screen panels, fisheye distortion and exaggerated ball arcs.
+  atmosphere_and_mood: Keep the requested mood with raw feverish pressure.
+  rendering_and_quality: Idiosyncratic Tatsunoko frame with Yuasa elasticity and Matsumoto line.
+  key_features: Yuasa and Matsumoto; wobbly line; split panels; distorted perspective
+  creative_brief: "Masaaki Yuasa Ping Pong the Animation (2014) from Taiyo Matsumoto designs: wobbly loose lines, split-screen panels, distorted perspective and raw emotional sports. Carry it through Yuasa and Matsumoto, wobbly line, split panels, distorted perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -60,10 +61,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-357.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -72,6 +77,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

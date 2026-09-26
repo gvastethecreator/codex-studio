@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-096
 packId: pack_16
-name: Shadow Play Horror Anime
+name: Yami Shibai - Shadow Play Horror
 styleAnchors:
-  - Shadow Play Horror Anime
+  - Yami Shibai - Shadow Play Horror
   - silhouette horror anime
   - cast shadows
-displayName: Shadow Play Horror Anime
+displayName: Yami Shibai - Shadow Play Horror
 category: 7. Horror
 domain: silhouette horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - shadow-play
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them.'
-  subject_treatment: Keep the prompt's subject and setting; tell the fear through its shadow or silhouette on a wall, screen or curtain.
-  color_and_tone: Warm lamp amber on walls and screens with pure black silhouettes.
-  lighting_and_shadow: One strong low lamp throwing huge sharp shadows on walls, paper screens or curtains.
-  texture_and_material: Paper screens, plaster walls and fabric curtains catching crisp shadow shapes.
-  camera_and_composition: Frames dominated by a lit wall or screen with the real subject small or off-frame.
-  atmosphere_and_mood: Suggestive and chilling, the imagination filling in whatever the shadow is doing.
-  rendering_and_quality: Graphic prestige anime with razor-sharp silhouettes and simple warm backgrounds.
-  creative_brief: "Silhouette horror anime told in cast shadows: shapes on walls and paper screens that do not match the things casting them. Carry it through cast shadows, lit paper screen, mismatched silhouette, single lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: cast shadows; lit paper screen; mismatched silhouette; single lamp
+  aesthetic: 'ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement.
+  color_and_tone: Amber lamp glow, deep black and blood-orange washes.
+  lighting_and_shadow: Warm amber lamp light glowing behind thin paper screens at night.
+  texture_and_material: Cut-paper figures, visible paper grain and loose painted color washes.
+  camera_and_composition: Flat kamishibai stage compositions with sliding panels and shadow silhouettes.
+  atmosphere_and_mood: Keep the requested mood with creeping storyteller dread.
+  rendering_and_quality: Paper-theater horror frame with stiff cut-out figures and eerie narration.
+  creative_brief: "ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing. Carry it through Yami Shibai kamishibai, cut-paper figures, amber light, shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yami Shibai kamishibai; cut-paper figures; amber light; shadows
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - shadow-play
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

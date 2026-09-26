@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-290
 packId: pack_16
-name: Paramilitary Melancholy Style
+name: Jin-Roh - Paramilitary Melancholy
 styleAnchors:
-  - 'Paramilitary Melancholy Style'
-displayName: 'Paramilitary Melancholy'
+  - Jin-Roh - Paramilitary Melancholy
+displayName: Jin-Roh - Paramilitary Melancholy
 category: 4. Studio Masterpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,34 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Low-key geometric restraint: long straight contour runs, hard rectangular shadow divisions,
-    and thin softened distance marks.
-  subject_treatment: >-
-    Keep the requested identities, count, anatomy, proportions, pose and action. Angular shadow
-    cuts clarify existing planes but add no uniforms, insignia, or equipment.
-  color_and_tone: >-
-    Honor explicitly requested colors. When no palette is specified, favor slate blue, navy,
-    muted violet, and isolated amber; maintain explicit local colors.
-  lighting_and_shadow: >-
-    Respect the supplied light sources and direction. Keep illumination source-bound with small
-    highlights over broad cool shadows; invent no lamps or reflections.
-  texture_and_material: >-
-    Apply texture only to materials already present. Use matte low-noise fills and precise
-    reflected color only on reflective surfaces already present.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, relative placement, and crop. Align existing lines into
-    horizontal or vertical readings without inserting bars, windows, or grids.
-  atmosphere_and_mood: >-
-    Keep the prompt's emotional tone; geometric severity does not require melancholy.
-  rendering_and_quality: >-
-    Separate overlapping silhouettes in dark values and retain detail inside shadow without
-    lifting all blacks.
-  key_features: >-
-    Rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges.
-  creative_brief: 'Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Okiura feature animation as in Jin-Roh: sober realistic Production I.G cel, alternate postwar Tokyo, heavy armored uniforms, rain, sewers and restrained human gestures.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okiura realism, accurate anatomy, understated faces and heavy period coats and uniforms.
+  color_and_tone: Desaturated olive, rain grey, sepia and cold blue, with rare dim red.
+  lighting_and_shadow: Wet night light, flashlight beams in tunnels, overcast gloom.
+  texture_and_material: Precise realist cel lines, painted wet concrete, smoke and rain.
+  camera_and_composition: Measured cinematic framing, long silent holds, low tunnel perspectives.
+  atmosphere_and_mood: Keep the requested mood with somber fatal melancholy.
+  rendering_and_quality: Meticulous 1999 realist hand-drawn feature frame with somber cinematic restraint.
+  key_features: Okiura realism; armored uniforms; rain and sewers; restrained acting; desaturated palette
+  creative_brief: "Hiroyuki Okiura feature animation as in Jin-Roh: sober realistic Production I.G cel, alternate postwar Tokyo, heavy armored uniforms, rain, sewers and restrained human gestures. Carry it through Okiura realism, armored uniforms, rain and sewers, restrained acting, desaturated palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - armored protect-gear suits with red glowing goggles
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -62,14 +49,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-290.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
-    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+  negativePrompt: armored protect-gear suits with red glowing goggles, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -78,6 +71,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

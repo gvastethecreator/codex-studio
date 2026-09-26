@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-161
 packId: pack_16
-name: Planetary Aura Impact Style
+name: Dragon Ball Z - Planetary Aura Impact
 styleAnchors:
-  - 'Planetary Aura Impact Style'
-displayName: 'Planetary Aura Impact'
+  - Dragon Ball Z - Planetary Aura Impact
+displayName: Dragon Ball Z - Planetary Aura Impact
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A high-impact 90s cel treatment centers on a bright curved aura shell, a hot focal core and clean
-    radial streaks. The planetary scale comes from the arc around a form, not a planet or battle.
-  subject_treatment: >-
-    Preserve the requested form and action. Wrap a curved energy contour around the existing focal
-    shape only when effects suit the request; do not turn it into a fighter.
-  color_and_tone: >-
-    When color is open, set ivory-gold or white-hot accents against deep cobalt and indigo. Preserve
-    requested colors and keep the brightest region compact.
-  lighting_and_shadow: >-
-    Use hard cel shadows around a controlled luminous arc, with short outward streaks tied to existing
-    movement. Keep the requested light direction and avoid a new explosion.
-  texture_and_material: >-
-    Keep the aura smooth and luminous while retaining inked edges and clean painted fills on solid
-    forms. Do not make every surface emit light.
-  camera_and_composition: >-
-    Let one broad arc organize visual force within the supplied composition. Preserve framing, scale
-    and subject placement; do not require a planet, sky or impact scene.
-  atmosphere_and_mood: >-
-    Convey scale through the size and curve of the existing effect, not through a cosmic setting.
-    Preserve the requested tone and event.
-  rendering_and_quality: >-
-    Use crisp silhouettes, a readable light core and a few distinct streaks. Keep glow bounded and
-    avoid soft bloom obscuring form.
-  key_features: >-
-    broad curved aura shell; compact ivory-gold focal light; radial streaks that trace existing motion
-  creative_brief: 'Apply the curved aura and impact-line language to the requested content where luminous effects fit. Preserve its identity, action, palette and composition; add no planet, fighter or battle. Use it as a reusable look on any subject.'
+  aesthetic: 'Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with DBZ muscular designs, sharp angular eyes, square jaws, spiky hair and gi-like clothes torn by battle.
+  color_and_tone: Aura gold, sky blue, orange gi tones and rocky tan.
+  lighting_and_shadow: Flaming aura glow, energy beam flashes and impact bursts.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Wide explosion shots, speed-line clashes, low power-up angles.
+  atmosphere_and_mood: Keep the requested mood with titanic power escalation.
+  rendering_and_quality: Bold 1990s Toei television frame with sharp muscular aura effects.
+  key_features: DBZ muscles; golden aura; rocky wastelands; energy beams; impact bursts
+  creative_brief: "Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts. Carry it through DBZ muscles, golden aura, rocky wastelands, energy beams, impact bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - orange gi with a kanji emblem
+  - golden spiky super-saiyan hair
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-161.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: orange gi with a kanji emblem, golden spiky super-saiyan hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

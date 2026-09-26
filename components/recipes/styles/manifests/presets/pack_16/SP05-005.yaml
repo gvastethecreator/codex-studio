@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-005
 packId: pack_16
-name: Grounded Tactical Machinery Style
+name: Mobile Suit Gundam 0079 - Grounded Tactical Machinery
 styleAnchors:
-  - 'Grounded Tactical Machinery Style'
-displayName: 'Grounded Tactical Machinery'
+  - Mobile Suit Gundam 0079 - Grounded Tactical Machinery
+displayName: Mobile Suit Gundam 0079 - Grounded Tactical Machinery
 category: 1. 70s & 80s Retro Anime
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,27 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 70s-and-80s-retro-anime
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A hand-inked cel look built around utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present. Keep its identity in contour, paint grouping and restrained analog transfer.
-  subject_treatment: >-
-    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use simple, practical silhouettes and only the construction details already present; do not assign a role or add props.
-  color_and_tone: >-
-    Keep explicitly requested colors and saturation. If none are specified, use olive, concrete gray, dark navy and a restrained safety orange. Separate neighboring hues into readable flat cel regions.
-  lighting_and_shadow: >-
-    Follow the requested light sources, direction and intensity. Shape shadows as compact cel shadows with clear value separation and few specular accents; do not add a source or glow.
-  texture_and_material: >-
-    Keep depicted materials and their condition unchanged. Apply matte cel paint, restrained dry brush and fine transfer grain as image-level treatment only, without hiding small details.
-  camera_and_composition: >-
-    Preserve the requested viewpoint, crop, layout and spatial relationships. Use clear nested shape zones within the supplied composition; add no inset, border or staging.
-  atmosphere_and_mood: >-
-    Preserve the requested context and mood. Express its visual rhythm through focused restraint through clean grouping; do not add a narrative beat.
-  rendering_and_quality: >-
-    Finish as hand-drawn 2D cel illustration. Use legible, no-nonsense linework with minimal surface effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
-  key_features: >-
-    utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain.
-  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshikazu Yasuhiko and Kunio Okawara look of Mobile Suit Gundam (1979): real-robot military machines, soldiers with expressive faces, muddy battlefields and colonies.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, expressive soft faces, realistic uniforms, and machines as industrial military hardware.
+  color_and_tone: Olive drab, military grey, mud brown and hazard red.
+  lighting_and_shadow: Cold dawn light, beam rifle flashes and green cockpit monitor glow.
+  texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.
+  camera_and_composition: Squad shots in forests, cockpit views, machines crouching in mud.
+  atmosphere_and_mood: Keep the requested mood with grounded war weariness.
+  rendering_and_quality: Classic 1979 real-robot television frame with military grit.
+  key_features: Yasuhiko and Okawara real robots; soldiers; mud; military hardware
+  creative_brief: "Yoshikazu Yasuhiko and Kunio Okawara look of Mobile Suit Gundam (1979): real-robot military machines, soldiers with expressive faces, muddy battlefields and colonies. Carry it through Yasuhiko and Okawara real robots, soldiers, mud, military hardware. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - white and blue mobile suits with V-fin antennas
+  - a mono-eyed green enemy mobile suit
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-005.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
-    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise
+  negativePrompt: white and blue mobile suits with V-fin antennas, a mono-eyed green enemy mobile suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic inking, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

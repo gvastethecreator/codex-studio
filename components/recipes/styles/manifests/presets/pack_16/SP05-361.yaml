@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-361
 packId: pack_16
-name: Incremental Method Training Style
+name: Baby Steps - Incremental Method Training
 styleAnchors:
-  - Incremental Method Training Style
-displayName: Incremental Method Training
+  - Baby Steps - Incremental Method Training
+displayName: Baby Steps - Incremental Method Training
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Training montage anime of incremental progress: repeated drills, notebooks of practice, sunrise runs and small improvements.'
-  subject_treatment: Keep the prompt's subject and action; show it as one step in a long practice routine, with signs of repetition and progress.
-  color_and_tone: Early morning blues turning to gold, with warm indoor gym light in the evening.
-  lighting_and_shadow: Sunrise and sunset light marking passing days, long shadows on tracks and floors.
-  texture_and_material: Worn shoes, taped fingers, scuffed floors and dog-eared practice notebooks.
-  camera_and_composition: Sequences of repeated framings from day to day, like panels of the same routine.
-  atmosphere_and_mood: Patient and hopeful, improvement measured in tiny steps that finally add up.
-  rendering_and_quality: Warm sports anime with rhythmic repeated compositions and careful detail.
-  key_features: repetition; sunrise runs; worn gear; small progress
-  creative_brief: "Training montage anime of incremental progress: repeated drills, notebooks of practice, sunrise runs and small improvements. Carry it through repetition, sunrise runs, worn gear, small progress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Hikaru Katsuki Baby Steps look: analytical tennis with notebooks, diagrams, clean simple lines and quiet steady improvement.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Katsuki designs, simple clean faces, glasses, athletic wear and focused expressions.
+  color_and_tone: Court green, notebook white, sky blue and clean sports tones.
+  lighting_and_shadow: Clear even daylight on the court with simple short shadows.
+  texture_and_material: Clean lines, flat colors and hand-drawn diagram overlays.
+  camera_and_composition: Practice routines, diagram inserts and measured court framing.
+  atmosphere_and_mood: Keep the requested mood with methodical steady progress.
+  rendering_and_quality: Clean sports television frame with hand-drawn analytical diagram overlays.
+  key_features: Baby Steps notebooks; diagrams; clean lines; steady progress
+  creative_brief: "Hikaru Katsuki Baby Steps look: analytical tennis with notebooks, diagrams, clean simple lines and quiet steady improvement. Carry it through Baby Steps notebooks, diagrams, clean lines, steady progress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-361.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

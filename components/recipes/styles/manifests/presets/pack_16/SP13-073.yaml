@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-073
 packId: pack_16
-name: Rain Duel Slow-Motion Anime
+name: Sword of the Stranger - Rain Duel Slow-Motion
 styleAnchors:
-  - Rain Duel Slow-Motion Anime
+  - Sword of the Stranger - Rain Duel Slow-Motion
   - slow-motion rain anime
   - frozen raindrops
-displayName: Rain Duel Slow-Motion Anime
+displayName: Sword of the Stranger - Rain Duel Slow-Motion
 category: 6. Samurai & Medieval
 domain: slow-motion rain anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - rain
   - slow-motion
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures.'
-  subject_treatment: Keep the prompt's subject and action; slow it down so raindrops, splashes and hair hang in the air around it.
-  color_and_tone: Wet slate blue and grey with bright white droplets and one warm color accent.
-  lighting_and_shadow: Backlight through rain making drops glow, dark wet reflections on the ground.
-  texture_and_material: Beaded raindrops, soaked cloth and glossy wet surfaces drawn crisply.
-  camera_and_composition: Close and mid frames with drops in the foreground, subjects caught mid-motion.
-  atmosphere_and_mood: Suspended and melancholy, intense moments stretched out until they become strangely beautiful.
-  rendering_and_quality: Detailed anime effects work with sharp droplets and clean motion.
-  creative_brief: "Slow-motion anime in heavy rain: every drop frozen as a bright bead, splashes suspended around moving figures. Carry it through frozen raindrops, suspended splash, backlit rain, wet reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: frozen raindrops; suspended splash; backlit rain; wet reflections
+  aesthetic: 'BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances.
+  color_and_tone: Muted rain grey, earth brown, pine green and pale sky.
+  lighting_and_shadow: Overcast rain light, sparks from clashing blades and wet reflections.
+  texture_and_material: Precise hand-drawn cel, rain streaks, flying droplets and dust.
+  camera_and_composition: Choreographed duel angles, slow-motion freezes and ground-level tracking.
+  atmosphere_and_mood: Keep the requested mood with tense weighty combat.
+  rendering_and_quality: Masterful 2007 BONES feature frame with precise choreography.
+  creative_brief: "BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes. Carry it through Sword of the Stranger choreography, rain duels, realism, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Sword of the Stranger choreography; rain duels; realism; slow motion
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - rain
     - slow-motion
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

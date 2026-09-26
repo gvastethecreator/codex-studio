@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-170
 packId: pack_16
-name: Storybook Seal Magic Style
+name: Cardcaptor Sakura - Storybook Seal Magic
 styleAnchors:
-  - 'Storybook Seal Magic Style'
-displayName: 'Storybook Seal Magic'
+  - Cardcaptor Sakura - Storybook Seal Magic
+displayName: Cardcaptor Sakura - Storybook Seal Magic
 category: 2. 90s Golden Era
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,35 +14,22 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - 90s-golden-era
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A storybook 90s cel treatment pairs hand-drawn ink with small nested loops, seal-like ornament and
-    restrained luminous accents. The magic signal is ornamental line rhythm, not a required spell.
-  subject_treatment: >-
-    Preserve the requested forms and proportions. Let small interlocking marks follow existing
-    contours; do not add a talisman, inscription, costume or magical object.
-  color_and_tone: >-
-    When open, balance deep blue-violet with parchment, warm gold and a small clear accent. Preserve
-    specified colors and avoid filling every surface with ornament.
-  lighting_and_shadow: >-
-    Combine crisp cel shadows with tiny warm or cool glints on existing edges. Respect the requested
-    light; do not invent a glowing seal or spell source.
-  texture_and_material: >-
-    Use fine hand-inked ornament over smooth painted fills, with slight paper-like grain only when
-    compatible with the depicted material.
-  camera_and_composition: >-
-    Keep the requested framing and layout. Use nested line motifs to guide attention inside the
-    composition rather than adding a circular diagram or symbol.
-  atmosphere_and_mood: >-
-    Give the finish a crafted, storybook cadence through detail and luminous restraint. Preserve the
-    requested tone; do not force fantasy or whimsy.
-  rendering_and_quality: >-
-    Keep ornamental marks small, distinct and subordinate to the main form. Avoid clutter, excessive
-    sparkle and generic fantasy glow.
-  key_features: >-
-    hand-drawn cel contour; small nested seal-like loops; restrained gold and blue-violet glints
-  creative_brief: 'Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve its identity, action and composition; add no literal seal, spell, costume or fantasy prop. Use it as a reusable look on any subject.'
+  aesthetic: 'CLAMP designs animated by Madhouse in Cardcaptor Sakura (1998): elegant elongated shojo figures, huge glossy eyes, ornate costumes, magic circles and floral storybook ornament.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with CLAMP and Madhouse designs, long limbs, huge glossy eyes, fluttering hair and ornate magical costumes.
+  color_and_tone: Pastel pink, gold, lilac and soft sky blue.
+  lighting_and_shadow: Soft magical glows, sparkles and moonlit bedroom light.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
+  camera_and_composition: Graceful spinning poses, magic circle compositions, storybook frames.
+  atmosphere_and_mood: Keep the requested mood with gentle sparkling wonder.
+  rendering_and_quality: Polished late-1990s Madhouse television frame with ornate shojo detail.
+  key_features: CLAMP elegance; magic circles; ornate costumes; pastel sparkle; storybook
+  creative_brief: "CLAMP designs animated by Madhouse in Cardcaptor Sakura (1998): elegant elongated shojo figures, huge glossy eyes, ornate costumes, magic circles and floral storybook ornament. Carry it through CLAMP elegance, magic circles, ornate costumes, pastel sparkle, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a sealing wand with a star head
+  - a yellow winged plush guardian
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,14 +50,20 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-170.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
-    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
-    prompt-literal card, muddy cel noise
+  negativePrompt: a sealing wand with a star head, a yellow winged plush guardian, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -79,6 +72,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

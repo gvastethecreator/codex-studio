@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-076
 packId: pack_16
-name: Court Intrigue Lacquer Anime
+name: The Apothecary Diaries - Court Intrigue Lacquer
 styleAnchors:
-  - Court Intrigue Lacquer Anime
+  - The Apothecary Diaries - Court Intrigue Lacquer
   - palace politics anime
   - paper screens
-displayName: Court Intrigue Lacquer Anime
+displayName: The Apothecary Diaries - Court Intrigue Lacquer
 category: 6. Samurai & Medieval
 domain: palace politics anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - court
   - intrigue
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves.'
-  subject_treatment: Keep the prompt's subject and setting; frame it through screens, doorways or partitions so something is always half hidden.
-  color_and_tone: Black lacquer, deep vermilion and gold leaf with ivory skin tones and pools of dark shadow.
-  lighting_and_shadow: Low candle and lantern light through paper screens, soft glows and deep shadow behind every partition.
-  texture_and_material: Glossy lacquer, silk brocade, gold leaf and paper screens rendered with fine line and soft cel gradients.
-  camera_and_composition: Layered framing through panels and sliding doors, subjects placed off-center and partly occluded.
-  atmosphere_and_mood: Secretive and elegant, every polite gesture hiding a dangerous intention underneath.
-  rendering_and_quality: Luxurious prestige anime with ornate detail, careful gradients and restrained expression.
-  creative_brief: "Palace intrigue anime of whispers and screens: lacquered rooms, folding panels, candlelight and faces half hidden behind fans or sleeves. Carry it through paper screens, lacquer and gold, half-hidden faces, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: paper screens; lacquer and gold; half-hidden faces; candlelight
+  aesthetic: 'OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments.
+  color_and_tone: Lacquer red, imperial gold, jade green and night indigo.
+  lighting_and_shadow: Warm lantern light, screen-filtered glow and soft palace shadows.
+  texture_and_material: Clean digital cel, detailed silk patterns and painted palace architecture.
+  camera_and_composition: Framing through screens and doorways, intimate two-shots and palace wides.
+  atmosphere_and_mood: Keep the requested mood with hushed courtly intrigue.
+  rendering_and_quality: Lavish contemporary palace drama frame with rich ornament.
+  creative_brief: "OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns. Carry it through Apothecary Diaries palace, lacquer red and gold, silk robes, lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Apothecary Diaries palace; lacquer red and gold; silk robes; lanterns
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - court
     - intrigue
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

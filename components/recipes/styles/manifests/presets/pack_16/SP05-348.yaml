@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-348
 packId: pack_16
-name: Summer Precision Duel Style
+name: Ace of Diamond - Summer Precision Duel
 styleAnchors:
-  - Summer Precision Duel Style
-displayName: Summer Precision Duel
+  - Ace of Diamond - Summer Precision Duel
+displayName: Ace of Diamond - Summer Precision Duel
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything.'
-  subject_treatment: Keep the prompt's subject and action; frame it as a one-on-one duel in summer heat, every detail pointing at a single decisive moment.
-  color_and_tone: Dusty infield tan, bright outfield green, cloudless summer blue and white uniforms.
-  lighting_and_shadow: High summer sun with short black shadows, heat shimmer and bright cap brims.
-  texture_and_material: Dust clouds, stitched leather ball, sweat-darkened uniforms in crisp cel.
-  camera_and_composition: Framing down the pitcher-to-batter line, close-ups on grips and eyes.
-  atmosphere_and_mood: Hot and breathless, a whole summer riding on one pitch in the ninth inning.
-  rendering_and_quality: Crisp sports anime with precise mechanics and heat haze effects.
-  key_features: pitcher-batter line; summer heat; dust; grip close-ups
-  creative_brief: "Summer baseball anime of the pitcher and batter duel: cicada heat, dusty diamonds, sweat and one pitch that decides everything. Carry it through pitcher-batter line, summer heat, dust, grip close-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Ace of Diamond television look (2013) from Yuji Terajima designs: realistic high school baseball, dusty mound duels, heat shimmer, precise pitching mechanics and team bonds.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Terajima designs, sturdy athletic bodies, caps, dirt-streaked uniforms and focused eyes.
+  color_and_tone: Dusty diamond tan, grass green, sky blue and sweat-white uniforms.
+  lighting_and_shadow: Blazing summer sun, heat shimmer and long stadium shadows.
+  texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Pitcher-batter duel compositions, catcher-view pitches and wind-up freezes.
+  atmosphere_and_mood: Keep the requested mood with tense summer precision.
+  rendering_and_quality: Clean realistic baseball television frame with summer heat.
+  key_features: Ace of Diamond mound duels; heat shimmer; realistic mechanics
+  creative_brief: "Madhouse Ace of Diamond television look (2013) from Yuji Terajima designs: realistic high school baseball, dusty mound duels, heat shimmer, precise pitching mechanics and team bonds. Carry it through Ace of Diamond mound duels, heat shimmer, realistic mechanics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-348.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

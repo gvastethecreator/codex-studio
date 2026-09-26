@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-093
 packId: pack_16
-name: Cosmic Sky Eldritch Anime
+name: Katsuya Terada - Cosmic Sky Eldritch
 styleAnchors:
-  - Cosmic Sky Eldritch Anime
+  - Katsuya Terada - Cosmic Sky Eldritch
   - cosmic horror anime
   - impossible sky
-displayName: Cosmic Sky Eldritch Anime
+displayName: Katsuya Terada - Cosmic Sky Eldritch
 category: 7. Horror
 domain: cosmic horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - cosmic
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds.'
-  subject_treatment: Keep the prompt's subject and setting; open the sky above it onto something vast and incomprehensible.
-  color_and_tone: Violet, sickly teal and black sky over an ordinary warm-colored world below.
-  lighting_and_shadow: Cold light from the sky with no clear source, casting pale, directionless shadows.
-  texture_and_material: Swirling painted skies, geometric star patterns and clean cel landscapes.
-  camera_and_composition: Worm-eye views up at the sky or wide frames with a thin strip of land.
-  atmosphere_and_mood: Awe and dread together, a mind straining to understand something far too big.
-  rendering_and_quality: Painterly prestige anime skies with precise small-scale ground detail.
-  creative_brief: "Cosmic horror anime where the sky itself is wrong: impossible geometries, too many stars and vast shapes behind the clouds. Carry it through impossible sky, vast shapes, directionless light, thin horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: impossible sky; vast shapes; directionless light; thin horizon
+  aesthetic: 'Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Terada designs, loose gestural figures, strong silhouettes and small humans before vast entities.
+  color_and_tone: Deep night indigo, sickly green, ember orange and bone white.
+  lighting_and_shadow: Eerie glow from the sky and faint starlight.
+  texture_and_material: Loose sketch lines, painterly digital brush and grain.
+  camera_and_composition: Tiny figures under immense skies and looming cosmic forms.
+  atmosphere_and_mood: Keep the requested mood with vast cosmic unease.
+  rendering_and_quality: Virtuoso painterly sketch illustration with loose powerful gestures.
+  creative_brief: "Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy. Carry it through Katsuya Terada sketch, painterly color, cosmic beings, vast sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Katsuya Terada sketch; painterly color; cosmic beings; vast sky
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - cosmic
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

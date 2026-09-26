@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-345
 packId: pack_16
-name: Nineties Physical Rivalry Style
+name: Slam Dunk 1993 - Nineties Physical Rivalry
 styleAnchors:
-  - Nineties Physical Rivalry Style
-displayName: Nineties Physical Rivalry
+  - Slam Dunk 1993 - Nineties Physical Rivalry
+displayName: Slam Dunk 1993 - Nineties Physical Rivalry
 category: 5. Sports, Competition & Performance
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - sports-competition-and-performance
+  - reference-title
 visualDna:
-  aesthetic: 'Nineties basketball anime of bodies and rivalry: thick lines, heavy muscle, sweat and faces full of stubborn pride.'
-  subject_treatment: Keep the prompt's subject and action; draw it with 90s cel weight, strong anatomy and confrontational poses.
-  color_and_tone: Saturated 90s cel colors, court wood orange and team reds with film-warm skin tones.
-  lighting_and_shadow: Arena spotlights with two-tone cel shadows and bright sweat highlights.
-  texture_and_material: Thick ink lines, visible cel paint and light film grain.
-  camera_and_composition: Face-offs framed shoulder to shoulder, dramatic low angles under the rim.
-  atmosphere_and_mood: Stubborn and physical, two rivals refusing to give one inch of the court.
-  rendering_and_quality: Classic 90s sports anime look with heavy line and grain.
-  key_features: thick 90s line; muscle and sweat; face-offs; film grain
-  creative_brief: "Nineties basketball anime of bodies and rivalry: thick lines, heavy muscle, sweat and faces full of stubborn pride. Carry it through thick 90s line, muscle and sweat, face-offs, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Toei Slam Dunk television look (1993): nineties cel basketball with tall realistic players, sweaty jerseys, hardwood gyms and comic delinquent reactions.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Inoue-derived nineties designs, tall athletic bodies, strong jaws, sweat and loose jerseys.
+  color_and_tone: Red and white jerseys, honey hardwood and warm gym light.
+  lighting_and_shadow: Warm gym light with simple cel shadows and sweat sparkle.
+  texture_and_material: Nineties hand-painted cel, soft grain and painted gym backgrounds.
+  camera_and_composition: Under-the-rim angles, dunk freeze frames and sweaty rival face-offs.
+  atmosphere_and_mood: Keep the requested mood with rowdy physical rivalry.
+  rendering_and_quality: Classic 1993 Toei sports cel frame with physical impact.
+  key_features: Slam Dunk nineties cel; tall players; hardwood gyms; delinquent comedy
+  creative_brief: "Toei Slam Dunk television look (1993): nineties cel basketball with tall realistic players, sweaty jerseys, hardwood gyms and comic delinquent reactions. Carry it through Slam Dunk nineties cel, tall players, hardwood gyms, delinquent comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired number ten in a red jersey
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-345.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a red-haired number ten in a red jersey, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

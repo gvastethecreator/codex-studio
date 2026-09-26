@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-090
 packId: pack_16
-name: Deep Sea Leviathan Horror Anime
+name: Daijiro Morohoshi - Deep Sea Leviathan Horror
 styleAnchors:
-  - Deep Sea Leviathan Horror Anime
+  - Daijiro Morohoshi - Deep Sea Leviathan Horror
   - oceanic horror anime
   - huge shadow below
-displayName: Deep Sea Leviathan Horror Anime
+displayName: Daijiro Morohoshi - Deep Sea Leviathan Horror
 category: 7. Horror
 domain: oceanic horror anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - deep-sea
   - horror
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water.'
-  subject_treatment: Keep the prompt's subject and setting; make it tiny against something enormous and barely visible in the water.
-  color_and_tone: Deep teal and black water, pale boat lights and bioluminescent blue specks.
-  lighting_and_shadow: Weak surface light fading quickly, with bioluminescence and small lamps in darkness.
-  texture_and_material: Rippled water, rope, wet wood and particles drifting in the deep, drawn cleanly.
-  camera_and_composition: Split surface views or top-down frames where a huge shadow fills the water.
-  atmosphere_and_mood: Vast and helpless, the ocean suddenly remembering how small people are.
-  rendering_and_quality: Painterly prestige anime water with subtle gradients and huge scale contrast.
-  creative_brief: "Oceanic horror anime of scale and depth: small boats and divers above unimaginably large shapes moving in dark water. Carry it through huge shadow below, tiny boat, bioluminescence, split surface view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: huge shadow below; tiny boat; bioluminescence; split surface view
+  aesthetic: 'Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing.
+  color_and_tone: Black ink with scratchy grey hatching and teal night tints.
+  lighting_and_shadow: A single small lamp glowing against huge dark waters and a moonless sky.
+  texture_and_material: Scratchy wiry pen line, uneven hand hatching and rough folkloric textures.
+  camera_and_composition: Small boats and figures dwarfed by immense submerged forms.
+  atmosphere_and_mood: Keep the requested mood with ancient abyssal dread.
+  rendering_and_quality: Idiosyncratic folkloric horror manga illustration with ancient cosmic scale.
+  creative_brief: "Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth. Carry it through Daijiro Morohoshi scratch, folklore horror, immense creatures, stiff figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Daijiro Morohoshi scratch; folklore horror; immense creatures; stiff figures
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,9 +48,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - deep-sea
     - horror
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
