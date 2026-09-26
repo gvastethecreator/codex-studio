@@ -22,7 +22,7 @@ tags:
   - game-aesthetic
 visualDna:
   aesthetic: Dark isometric action-RPG style with ashen cathedral floors, readable loot-era silhouettes, smoky depth, and grim fantasy game-camera staging without UI.
-  subject_treatment: Route the prompt into an isometric playable-feeling scene, portrait diorama, creature encounter, relic altar, or dungeon fragment while keeping prompt X as the anchor.
+  subject_treatment: 'Render the requested subject as an isometric playable-feeling scene, portrait diorama, creature encounter, relic altar or dungeon fragment, keeping it as the clear anchor of the view.'
   color_and_tone: Charcoal, ash gray, old gold, ember orange, bone, cold blue shadow, and controlled crimson accents.
   lighting_and_shadow: Top-down/isometric key light, ember rim, readable floor planes, and open shadows that avoid black mush.
   texture_and_material: 'Stylized 2.5D game art materials: stone tiles, cloth, bone, metal, fog, and fire simplified into clean readable planes.'

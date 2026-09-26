@@ -26,11 +26,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable titles or numbers.',
       atmosphere_and_mood:
-        "Carry the prompt through Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean monochrome illustration with controlled line weight, large shapes, and limited mark density.',
       creative_brief:
-        'Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card imagery without text. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Bone Tarot Horror Arcana: Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols.',
       key_features:
         'Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols',
     },
@@ -55,11 +55,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Editorial plate crop, centered focal silhouette, small support motifs, and readable contour hierarchy.',
       atmosphere_and_mood:
-        "Carry the prompt through Ancient, adventurous, sober, and mythic without oppressive darkness; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ancient, adventurous, sober, and mythic without oppressive darkness; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Traditional ink illustration translated into clean digital line art with no noisy micro-detail.',
       creative_brief:
-        'Route any subject through medieval ink fantasy plate language: preserve the prompt while adding clean black ink, fortress weight contour, oversized fantasy mass, sourcebook clarity, and old paper restraint without requiring a troll gate scene, crusader, knight, sword, cross, banner, or armor hero. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Medieval Ink Fantasy Plate: Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority.',
       key_features:
         'Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority',
     },
@@ -85,11 +85,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable scripture.',
       atmosphere_and_mood:
-        "Carry the prompt through Penitent, solemn, ceremonial, mournful, and sacred without copied game identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Penitent, solemn, ceremonial, mournful, and sacred without copied game identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight, sorrowful verticality, and sacred icon restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Penitent Baroque Icon: Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry.',
       key_features:
         'Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry',
     },
@@ -117,11 +117,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Close editorial crop, shallow survival-icon depth, one clear focal hierarchy, and worn negative space without a doorway or inventory setup.',
       atmosphere_and_mood:
-        "Carry the prompt through Hungry, anxious, doomed, and intimate without graphic injury; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Hungry, anxious, doomed, and intimate without graphic injury; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean ink-and-wash fantasy illustration with limited detail and clear value control.',
       creative_brief:
-        'Reusable visual system for any subject needing survival horror medieval fragility, desperate pilgrimage mood, worn relic material, and restrained dread. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Starved Dungeon Pilgrimage; Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Starved Dungeon Pilgrimage: Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight.',
       key_features:
         'Starved Dungeon Pilgrimage; Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight',
     },
@@ -149,11 +149,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative frame without words.',
       atmosphere_and_mood:
-        "Carry the prompt through Ancient, strange, folkloric, and instructional; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ancient, strange, folkloric, and instructional; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean woodcut-inspired digital illustration with big marks, not dense micro-hatching.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink discipline, old paper restraint, and folkloric strangeness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Woodcut Beast Chronicle: Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy.',
       key_features:
         'Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy',
     },
@@ -179,11 +179,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable annotations.',
       atmosphere_and_mood:
-        "Carry the prompt through Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean illuminated illustration with crisp edges, low texture load, and visible shape design.',
       creative_brief:
-        'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel like flat accents, and scholarly medieval curiosity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Illuminated Monster Codex: Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation.',
       key_features:
         'Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation',
     },
@@ -210,11 +210,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Asymmetrical manuscript margin crop, one large funny-strange creature, and small support motifs without words.',
       atmosphere_and_mood:
-        "Carry the prompt through Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean line illustration with low detail density and generous negative space.',
       creative_brief:
-        'Reusable visual system for any subject needing scholastic marginalia play, medieval side note weirdness, textless occult humor, and clean parchment spacing. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Scholastic Marginalia Beasts: Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness.',
       key_features:
         'Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness',
     },
@@ -239,11 +239,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no letters.',
       atmosphere_and_mood:
-        "Carry the prompt through Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.',
       creative_brief:
-        'Reusable visual system for any subject needing heraldic bestiary language, faction icon clarity, medieval crest geometry, and bold symmetrical contour. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Heraldic Chimera Plate: Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry.',
       key_features:
         'Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry',
     },
@@ -269,11 +269,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing, and no inscriptions.',
       atmosphere_and_mood:
-        "Carry the prompt through Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.',
       creative_brief:
-        'Reusable visual system for any subject needing stained glass bestiary clarity, sacred pane geometry, luminous icon presence, and fantasy faction symbolism. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Stained Glass Bestiary Icon: simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm.',
       key_features:
         'Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm',
     },
@@ -300,11 +300,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.',
       atmosphere_and_mood:
-        "Carry the prompt through Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean textile-inspired illustration with simplified forms and controlled fabric texture.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly legend tone, and quiet uncanny form. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Tapestry Creature Legend: courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color.',
       key_features:
         'Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color',
     },
@@ -329,11 +329,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Side-plate or three-quarter specimen logic, one large subject, a few small unlabeled inset shapes, and generous margins without forcing creature anatomy.',
       atmosphere_and_mood:
-        "Carry the prompt through Scholarly, dangerous, curious, and old world; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Scholarly, dangerous, curious, and old world; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.',
       creative_brief:
-        'Reusable visual system for any subject needing bestiary field guide clarity, anatomy like fantasy plate structure, unlabeled study insets, and clean specimen card restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Anatomist Wyvern Field Guide: Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws.',
       key_features:
         'Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws',
     },
@@ -360,11 +360,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse symbolic support marks that adapt to the user's subject without adding readable text.",
       atmosphere_and_mood:
-        "Carry the prompt through Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit parchment ink, oracle plate order, sparse symbolism, and quiet prophetic mood. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Moon Parchment Oracle Beasts: Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents.',
       key_features:
         'Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours',
     },
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Velvety mezzotint where everything begins in deep rocked black and forms are burnished up into soft glowing grays and pale highlights, with almost no line.',
       subject_treatment:
-        'Prompt X is pulled out of darkness: faces, hands, edges, and key forms are burnished toward light while the rest stays swallowed in velvet black, making any subject feel nocturnal and grave.',
+        'Pull the requested subject out of darkness: faces, hands, edges and key forms are burnished toward light while the rest stays swallowed in velvet black, making any subject feel nocturnal and grave.',
       color_and_tone: 'Rich warm black, soft graphite grays, and creamy paper-white highlights.',
       lighting_and_shadow:
         'Single low light source; soft tonal gradations emerging from black with gentle edge glow.',
@@ -698,7 +698,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Elegant etched line combined with granular sepia aquatint tone fields, stepped value layers, and soft warm paper, like a refined travel-plate or naturalist etching.',
       subject_treatment:
-        'Render prompt X with a light etched contour and two to four stepped aquatint tones that separate foreground, subject, and distance; mood comes from tonal order rather than detail.',
+        'Render the requested subject with a light etched contour and two to four stepped aquatint tones that separate foreground, subject and distance; mood comes from tonal order rather than detail.',
       color_and_tone:
         'Sepia brown ink in stepped tones, warm cream paper, and occasional deeper umber accent.',
       lighting_and_shadow:
@@ -768,7 +768,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Luxurious ink drawing on indigo-dyed paper using gold and silver ink line and fine metallic hatching, with the dark paper as the ground.',
       subject_treatment:
-        'Prompt X is drawn as a precious nocturne: gold ink for warm forms and edges, silver for cold light and secondary shapes, bare indigo for shadow.',
+        'Draw the requested subject as a precious nocturne: gold ink for warm forms and edges, silver for cold light and secondary shapes, bare indigo paper for shadow.',
       color_and_tone:
         'Indigo paper, warm gold ink, cool silver ink, and very small touches of white.',
       lighting_and_shadow:
@@ -833,7 +833,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Soft-ground etching with pencil-like grainy lines that capture the texture of the paper they were drawn through, soft gray tonal areas, and delicate plate tone.',
       subject_treatment:
-        'Render prompt X with the quiet softness of a crayon drawing transferred to metal: grainy contours, gently massed shading, and restrained detail.',
+        'Render the requested subject with the quiet softness of a crayon drawing transferred to metal: grainy contours, gently massed shading and restrained detail.',
       color_and_tone:
         'Soft gray-black ink on warm white paper, faint plate tone, occasional very pale sepia wipe.',
       lighting_and_shadow: 'Diffuse gentle light with soft transitions and bright open areas.',
@@ -866,7 +866,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script.',
       subject_treatment:
-        'Prompt X is drawn in precise black line while vermilion is reserved for the most meaningful elements: blood, fire, eyes, garments, or a symbolic accent, never everywhere.',
+        'Draw the requested subject in precise black line, reserving vermilion for its most meaningful elements such as fire, eyes, garments or a symbolic accent, never everywhere.',
       color_and_tone: 'Carbon black, vermilion red, and warm vellum; nothing else.',
       lighting_and_shadow: 'Flat manuscript light; value from line weight and small black fills.',
       texture_and_material:
@@ -933,7 +933,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'The image shown as the engraved copper printing plate itself: ink-filled grooves on polished reddish copper, burnished highlights, verdigris spots, and slight mirror reversal feel.',
       subject_treatment:
-        'Prompt X appears as a finely engraved design on metal: black ink trapped in grooves draws the subject while the copper surface gleams between lines.',
+        'Show the requested subject as a finely engraved design on metal: black ink trapped in grooves draws the forms while the copper surface gleams between the lines.',
       color_and_tone:
         'Polished copper orange-rose, black ink in grooves, verdigris green patina spots, and bright metallic highlights.',
       lighting_and_shadow:
@@ -968,7 +968,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Loose wet brush drawing in walnut ink: warm brown washes blooming and feathering into damp paper, dark concentrated brush accents, and pale water-rings.',
       subject_treatment:
-        'Prompt X is suggested more than described: large wet masses establish the subject, a few dark brush accents define the key features, and blooms fill the atmosphere.',
+        'Suggest the requested subject more than describe it: large wet masses establish the forms, a few dark brush accents define the key features, and blooms fill the atmosphere.',
       color_and_tone: 'Warm walnut browns from pale honey to dark umber on cream cotton paper.',
       lighting_and_shadow: 'Soft luminous light from bare paper within blooming washes.',
       texture_and_material:
@@ -1064,7 +1064,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Exaggerated satirical etching: caricatured grotesque faces and bodies, lively bitten line, dark aquatint shadows, and crowded but readable figure groups.',
       subject_treatment:
-        'Prompt X is played as biting satire: faces, postures, and forms are exaggerated to reveal vanity, fear, greed, or absurdity while the subject remains identifiable.',
+        'Play the requested subject as biting satire: faces, postures and forms are exaggerated to reveal vanity, fear, greed or absurdity while the subject remains identifiable.',
       color_and_tone:
         'Brown-black ink, warm gray aquatint, and cream paper; optional single hand-tinted watercolor wash.',
       lighting_and_shadow:

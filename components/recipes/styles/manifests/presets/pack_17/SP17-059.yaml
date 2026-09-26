@@ -21,15 +21,15 @@ tags:
   - acid-dungeon
   - rust-red
 visualDna:
-  aesthetic: Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows.
-  subject_treatment: 'Route any prompt subject into a crooked OSR dungeon drawing: monster, warrior, cultist, beast, prop-bearing figure, castle fragment, or relic can appear, but the first read should be hand-drawn creature/character energy rather than a straight icon, door emblem, or architecture-first card.'
+  aesthetic: 'Rust-red old-school role-playing zine print: wobbly hand-inked bodies with grotesque exaggeration, flat rust color panels and heavy black xerox shadows.'
+  subject_treatment: 'Draw the requested subject as a crooked hand-inked dungeon figure or object with awkward full-body stance and grotesque exaggeration, leading with character energy rather than a straight icon or architecture-first layout.'
   color_and_tone: Rust red, dirty cream, heavy black, dull orange, bone, and occasional bruised violet.
   lighting_and_shadow: Flat print lighting with red blocks, black silhouette mass, and cream knockout highlights.
   texture_and_material: Coarse risograph grain, ink soak, blunt halftone dots, off-register fills, and clean denoised black line.
   camera_and_composition: Single-panel zine card crop where the subject fills the rectangle with awkward stance, blunt negative space, rough border pressure, flat color field, and no readable typography.
   atmosphere_and_mood: Dry, brutal, underground, handmade, and slightly comic without being cute.
   rendering_and_quality: 'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.'
-  creative_brief: "Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows. Carry it through rust red OSR zine, grotesque hand-inked dungeon figures, black xerox stipple, crooked full-body monster-card poses, flat color panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Reusable rust-red zine print look for any subject: wobbly hand-inked bodies, flat rust panels, black xerox stipple and crooked full-body poses, keeping the requested subject, action and setting.'
   key_features: rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem
 avoidRules:
   - centered door emblem

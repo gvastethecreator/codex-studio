@@ -15,11 +15,9 @@ tags:
   - 'diablo ii: resurrected'
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Diablo II: Resurrected dark-fantasy art language: compact carved silhouettes, archaic martial
-    and occult design, sharply separated dark masses and concentrated elemental color, translated
-    into painted illustration.
+  aesthetic: 'Late-nineties isometric dark-fantasy art language, a technique study rather than a copy of any work: compact carved silhouettes, archaic martial and occult design, sharply separated dark masses and concentrated elemental color, translated into painted illustration.'
   subject_treatment: >-
     Preserve explicit identity, action and count. Give unspecified forms a compact carved weight,
     severe faceted contours and archaic ornament; use rough metal, bone-like structural rhythm and
@@ -54,13 +52,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-084.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Diablo II: Resurrected (2021 remaster; base-game visual direction)'
   pairedPresetId: SP12-081
   sourceReferences:
@@ -111,6 +113,7 @@ taxonomy:
     - 'diablo ii: resurrected'
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

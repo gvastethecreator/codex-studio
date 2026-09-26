@@ -24,11 +24,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Poster-front icon hierarchy, boxed-panel pressure, tight graphic crop, thick border logic, and zine pacing without requiring a monster subject.',
       atmosphere_and_mood:
-        "Carry the prompt through Occult, punk, playful dark, dungeon crawling, and abrasive; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Occult, punk, playful dark, dungeon crawling, and abrasive; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean black shapes.',
       creative_brief:
-        'Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick handmade borders, and occult print weirdness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Acid Dungeon Zine: High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic.',
       key_features:
         'Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight',
     },
@@ -52,13 +52,13 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line reproduction.',
       camera_and_composition:
-        'Single specimen view, label-free frame, marginal ornament, and rigid bestiary-page balance.',
+        'Single specimen view in an unlabeled frame, marginal ornament, and rigid bestiary-page balance.',
       atmosphere_and_mood:
-        "Carry the prompt through Arcane, handmade, archival, and dungeon worn; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Arcane, handmade, archival, and dungeon worn; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Controlled xerox print style with strong graphic readability, denoised darks, and rough line charm.',
       creative_brief:
-        'Turns any subject into an occult bestiary sheet without relying on text labels or clean digital polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Occult Xerox Bestiary: Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white.',
       key_features:
         'Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white',
     },
@@ -84,11 +84,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Centered poster icon, thick border, large simple shapes, and strong negative space.',
       atmosphere_and_mood:
-        "Carry the prompt through Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.',
       creative_brief:
-        'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Neon Risograph Necromancy: Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes.',
       key_features:
         'Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes',
     },
@@ -114,11 +114,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure, and minimal empty space without fixed anatomy.',
       atmosphere_and_mood:
-        "Carry the prompt through Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print reproduction.',
       creative_brief:
-        'Route any subject through blacklight monster manual weirdness: preserve the prompt while adding bold maw/eye rhythm when compatible, fluorescent plate color, chunky contour, and readable manual icon force without requiring a monster portrait. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Blacklight Monster Manual: Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves.',
       key_features:
         'Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves',
     },
@@ -146,11 +146,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Heraldic frontality, centered emblem pressure, chunky frame geometry, and stacked graphic motifs without a literal card-front copy.',
       atmosphere_and_mood:
-        "Carry the prompt through Loud, occult, collectible, unruly, and dungeon club flavored; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Loud, occult, collectible, unruly, and dungeon club flavored; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.',
       creative_brief:
-        'Reusable visual system for any subject that needs punchy dungeon card identity, heraldic graphic force, and unruly occult zine energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Punk Heraldry Dungeon Cards: Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic.',
       key_features:
         'Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic',
     },
@@ -176,11 +176,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and readable print-poster hierarchy.',
       atmosphere_and_mood:
-        "Carry the prompt through Pulp, dangerous, handmade, lurid, and adventurous; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Pulp, dangerous, handmade, lurid, and adventurous; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.',
       creative_brief:
-        'Reusable visual system for any subject needing degraded pulp zine finish, sword and sorcery momentum, tape scan wear, and lurid handmade drama. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Tape Scanned Sword & Sorcery: Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow.',
       key_features:
         'Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow',
     },
@@ -200,9 +200,9 @@ export const GENERATED_STYLE_PRESETS = [
       'centered door emblem, key prop, neat vector icon, architecture-first card, tasteful poster minimalism, rainbow neon palette, smooth digital painting, full dungeon corridor, tiny skull wallpaper, over-detailed occult chart, muddy photocopy noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows.',
+        'Rust-red old-school role-playing zine print: wobbly hand-inked bodies with grotesque exaggeration, flat rust color panels and heavy black xerox shadows.',
       subject_treatment:
-        'Route any prompt subject into a crooked OSR dungeon drawing: monster, warrior, cultist, beast, prop-bearing figure, castle fragment, or relic can appear, but the first read should be hand-drawn creature/character energy rather than a straight icon, door emblem, or architecture-first card.',
+        'Draw the requested subject as a crooked hand-inked dungeon figure or object with awkward full-body stance and grotesque exaggeration, leading with character energy rather than a straight icon or architecture-first layout.',
       color_and_tone:
         'Rust red, dirty cream, heavy black, dull orange, bone, and occasional bruised violet.',
       lighting_and_shadow:
@@ -216,7 +216,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.',
       creative_brief:
-        "Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows. Carry it through rust red OSR zine, grotesque hand-inked dungeon figures, black xerox stipple, crooked full-body monster-card poses, flat color panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        'Reusable rust-red zine print look for any subject: wobbly hand-inked bodies, flat rust panels, black xerox stipple and crooked full-body poses, keeping the requested subject, action and setting.',
       key_features:
         'rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem',
     },
@@ -400,7 +400,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Messy ballpoint-pen zine drawing pushed through a cheap copier: looping blue-black biro scribble, overworked shading tangles, uneven pressure, and gray toner haze at the page edges.',
       subject_treatment:
-        'Keep prompt X intact but render it as an obsessive notebook drawing: contours are found through many searching loops, shadows are dense scribble knots, and details that matter are gone over again and again until the pen almost tears the page.',
+        'Keep the requested subject intact but render it as an obsessive notebook drawing: contours found through many searching loops, shadows as dense scribble knots, and the details that matter gone over again and again until the pen almost tears the page.',
       color_and_tone:
         'Copier-gray blue-black ink on slightly gray paper, with one optional flat highlighter-yellow or red-pen accent patch.',
       lighting_and_shadow:
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Near-total black toner flood from an overdriven copier, with the subject surviving only as blown-out white shapes, razor edges, and a few crushed gray transitions.',
       subject_treatment:
-        'Any subject is reduced to its strongest light-catching planes: faces, hands, edges, and silhouettes are carved as white islands in a sea of black, so prompt X stays readable while becoming extreme and ominous.',
+        'Reduce the requested subject to its strongest light-catching planes: faces, hands, edges and silhouettes carved as white islands in a sea of black, so it stays readable while becoming extreme and ominous.',
       color_and_tone: 'Pure toner black, paper white, and a thin band of crushed gray; no color.',
       lighting_and_shadow:
         'Brutal top or side light implied by white knockouts, with nearly everything else swallowed by black.',
@@ -534,7 +534,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Small-format screen print with thick opaque inks: deep green, cream, brick, and one metallic gold layer, each shape sharp-edged with the slight raised ink ridge of a tiny hand screen.',
       subject_treatment:
-        'Render prompt X as a jewel-like print object: forms are simplified into precise stacked ink layers, with gold reserved for the single most precious detail such as an eye, edge, flame, halo, or ornament.',
+        'Render the requested subject as a jewel-like print object: forms simplified into precise stacked ink layers, with gold reserved for the single most precious detail such as an eye, edge, flame, halo or ornament.',
       color_and_tone:
         'Bottle green, cream, brick red, soft charcoal, and one metallic gold spot; colors are opaque and never blend.',
       lighting_and_shadow:
@@ -603,7 +603,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Split-fountain risograph where one drum carries a smooth ink blend from magenta to orange to yellow, printed under a deep indigo line and shadow layer.',
       subject_treatment:
-        'Prompt X is laid across the ink fountain so that its vertical position picks up the gradient: sky, heads, or tall forms catch the hot top colors, grounds and feet sink into warmer bands, and indigo holds all drawing.',
+        'Lay the requested subject across the ink fountain so its vertical position picks up the gradient: skies, heads and tall forms catch the hot top colors, grounds and feet sink into warmer bands, and indigo holds all drawing.',
       color_and_tone:
         'Split fountain magenta, orange, and yellow bands, deep indigo, and warm white paper.',
       lighting_and_shadow:
@@ -638,7 +638,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Exaggerated fanzine drawing in thick waxy grease pencil and china marker: fat wobbling lines, cartoonish distortion, stubby hatch, and one flat color tint added by cheap offset.',
       subject_treatment:
-        'Push prompt X into rubbery exaggeration: huge heads or hands, bent limbs, oversized teeth or eyes where appropriate, and forceful gesture, while the subject stays recognizable.',
+        'Push the requested subject into rubbery exaggeration: huge heads or hands, bent limbs, oversized teeth or eyes where fitting, and forceful gesture, while it stays recognizable.',
       color_and_tone:
         'Waxy black line with one flat spot tint chosen from acid yellow, tomato red, or sky blue on off-white paper.',
       lighting_and_shadow:
@@ -845,7 +845,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Old risograph zine found on a windowsill: sun-bleached aqua and butter yellow inks, soft low contrast, yellowed newsprint, and gentle fading toward the exposed edge.',
       subject_treatment:
-        'Render prompt X with soft, simplified shapes and loose halftone, as if the image has quietly faded for years; silhouettes remain clear, detail relaxes.',
+        'Render the requested subject with soft simplified shapes and loose halftone, as if the image had quietly faded for years; silhouettes remain clear while detail relaxes.',
       color_and_tone:
         'Faded aqua, butter yellow, pale overprint green, and yellowed newsprint; no deep blacks.',
       lighting_and_shadow:

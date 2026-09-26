@@ -15,11 +15,9 @@ tags:
   - for honor
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    For Honor (2017) painted art direction: credible medieval construction pushed into massive
-    heroic scale, practical martial silhouettes and battered faction colors against monumental
-    fortifications.
+  aesthetic: 'Monumental battlefield painted art direction: credible medieval construction pushed into massive heroic scale, practical martial silhouettes and battered faction colors against monumental fortifications.'
   subject_treatment: >-
     Preserve explicit identity and action. Favor functional layers, load-bearing joins and
     substantial weight; exaggerate scale and silhouette without turning every object into decorative
@@ -48,13 +46,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-093.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     For Honor (2017 original release; use base-game combat grammar and leave live-service cosmetics
     out)
@@ -109,6 +111,7 @@ taxonomy:
     - for honor
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -15,12 +15,9 @@ tags:
   - mortal kombat 1
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Mortal Kombat 1 (2023) cinematic martial fantasy, built around identifiable fighter designs,
-    tailored combat gear and supernatural techniques that belong to the character. Keep the
-    realistic, sculpted body rendering and theatrical finish, while making role, weapon and power
-    silhouette as distinctive as the palette.
+  aesthetic: 'Cinematic martial pageantry, a technique study rather than a copy of any roster: original fighters with tailored combat gear and supernatural techniques that belong to each character. Keep realistic, sculpted body rendering and a theatrical finish, while making role, weapon and power silhouette as distinctive as the palette.'
   subject_treatment: >-
     Preserve the requested subject, action and explicit clothing. When a fighter or fantasy
     character is present, make their identity readable through a specific combat silhouette:
@@ -64,13 +61,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-094.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
     designs unless requested)
@@ -127,6 +128,7 @@ taxonomy:
     - mortal kombat 1
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

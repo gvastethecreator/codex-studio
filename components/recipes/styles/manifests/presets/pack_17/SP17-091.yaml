@@ -15,13 +15,9 @@ tags:
   - blasphemous
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Make this specifically Blasphemous (2019)'s penitential pixel-gothic language, not a generic
-    pixel filter: carved, processional silhouettes; severe grotesque faces; relic-like ornamental
-    shapes; and the tension between cramped horizontal travel and towering sacred architecture.
-    Translate the visual grammar into the requested subject without copying a named character or
-    requiring a religious scene.
+  aesthetic: 'Penitential pixel-gothic language, not a generic pixel filter: carved, processional silhouettes; severe grotesque faces; relic-like ornamental shapes; and the tension between cramped horizontal travel and towering sacred architecture. Translate the visual grammar into the requested subject without copying any existing character or requiring a religious scene.'
   subject_treatment: >-
     Preserve the requested subject and action, then use elongated cloth or body shapes, mask-like
     facial planes, carved edges and small ritual-looking ornaments only where the subject can
@@ -61,13 +57,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-091.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Blasphemous (2019 base game by The Game Kitchen; Steam PC listing and Team17 publisher gallery)
   pairedPresetId: SP12-088
   sourceReferences:
@@ -120,6 +120,7 @@ taxonomy:
     - blasphemous
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

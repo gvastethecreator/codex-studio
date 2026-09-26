@@ -22,7 +22,7 @@ tags:
   - grimdark
 visualDna:
   aesthetic: Endless modern-war gothic where trench geometry, ruined cathedrals, drone silhouettes, gaslight, and medieval heraldic decay merge into permanent conflict without real-world flags.
-  subject_treatment: Preserve prompt X as a war-gothic figure, relic, beast, emplacement, ruined shrine, armored silhouette, or battlefield omen while avoiding fixed soldiers or specific wars.
+  subject_treatment: 'Preserve the requested subject as a war-gothic figure, relic, beast, emplacement, ruined shrine, armored silhouette or battlefield omen, avoiding stock soldiers or any real war.'
   color_and_tone: Mud gray, bone, oxidized green, dull brass, black iron, ember red, smoke blue, and desaturated field cloth.
   lighting_and_shadow: Overcast battlefield light, ember rim, searchlight slice, and clean open shadows that avoid murky realism.
   texture_and_material: Mud plates, torn cloth, dented metal, cracked stone, smoke shapes, barbed geometry simplified into readable marks.

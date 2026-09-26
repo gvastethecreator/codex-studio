@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Flat festival light broken by acidic glow, painted shadow slabs, and theatrical rim accents.
   texture_and_material: Cheap banner cloth, chipped paint, paper masks, rope, rough wood, hand-letter-like marks with no readable text.
   camera_and_composition: Crooked poster balance, tilted ceremonial hierarchy, exaggerated negative space, and one unnerving spectacle cue applied to the user's subject.
-  atmosphere_and_mood: Carry the prompt through Adult, grotesque, funny, toxic, festive, and threatening; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Adult, grotesque, funny, toxic, festive, and threatening; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
   rendering_and_quality: Clean zine-editorial medieval illustration with broad shapes, controlled grime, and no noisy clutter.
-  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding wormwood carnival color, feudal spectacle, crooked handmade rhythm, and dangerous comic energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  creative_brief: 'Wormwood Carnival Feudal: Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle.'
   key_features: Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle
 avoidRules:
   - clown portrait

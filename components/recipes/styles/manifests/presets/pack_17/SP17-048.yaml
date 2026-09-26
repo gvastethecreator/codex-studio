@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Cool moon rim with small toxic glows and clean dark-green shadow separation.
   texture_and_material: Old glass, wax, herb stains, damp cloth, polished black wood, soft membrane sheen, and clean metal.
   camera_and_composition: Controlled object-body ambiguity, ritual still-life hierarchy, clinical spacing, and elegant negative space that adapts to figures, creatures, artifacts, or environments.
-  atmosphere_and_mood: Carry the prompt through Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
   rendering_and_quality: Clean gothic apothecary illustration with smooth denoise, readable darks, and controlled wet highlights.
-  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit apothecary unease, medicinal glass color, wet herbal gothic material, and clinical medieval ritual mood. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Leech Moon Apothecary; Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  creative_brief: 'Leech Moon Apothecary: Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint.'
   key_features: Leech Moon Apothecary; Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint
 avoidRules:
   - gore

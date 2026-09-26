@@ -26,11 +26,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and depth cues driven by light, scale, and shadow, adaptable to the user's composition.",
       atmosphere_and_mood:
-        "Carry the prompt through Ancient, predatory, funereal, and solemn without becoming gory or splatter focused; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ancient, predatory, funereal, and solemn without becoming gory or splatter focused; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material shapes, clean shadow masses, broad readable value planes, and restrained microtexture.',
       creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash, weight, sacred decay, clean matte material logic, and solemn dark fantasy atmosphere while keeping subject, setting, and props dictated by the user's prompt. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any prompt subject with eroded silhouette weight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Ashen Soulslike Ruins: Bleak ashen medieval fantasy style with clean soot softened surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness.',
       key_features:
         'Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any prompt subject with eroded silhouette weight',
     },
@@ -88,11 +88,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Heroic scale through wide negative planes, centered relic hierarchy, gilded vertical accents, and mythic distance pressure that adapts to the prompt subject.',
       atmosphere_and_mood:
-        "Carry the prompt through Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'High-detail fantasy illustration with painterly polish, ornate surfaces, and readable silhouettes.',
       creative_brief:
-        'Route any subject through gilded rune epic grandeur: preserve the prompt while adding golden myth, oathlike rune geometry, divine ruin, and colossal medieval scale without copying a specific franchise or card figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Gilded Rune Epic: Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance.',
       key_features:
         'Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance',
     },
@@ -119,11 +119,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Compressed siege-line rhythm, diagonal pressure lanes, smoke-flattened depth, documentary austerity, and crowded value grouping only when the prompt supports it.',
       atmosphere_and_mood:
-        "Carry the prompt through Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.',
       creative_brief:
-        'Reusable visual system for any subject needing grim medieval war pressure, mud stained restraint, documentary severity, and siege like visual weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Grimdark Siege Chronicle: Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic.',
       key_features:
         'Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic',
     },
@@ -149,11 +149,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and devotional silhouette pressure without requiring a nave or window set.',
       atmosphere_and_mood:
-        "Carry the prompt through Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.',
       creative_brief:
-        'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Cathedral Chiaroscuro: Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis.',
       key_features:
         'Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis',
     },
@@ -181,11 +181,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Frontal heraldic hierarchy, shieldlike spacing, low mass horizon, and severe icon geometry that can attach to any compatible subject.',
       atmosphere_and_mood:
-        "Carry the prompt through Zealous, austere, militant, and haunted; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Zealous, austere, militant, and haunted; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Detailed dark fantasy concept art with tactile armor, disciplined shapes, and restrained effects.',
       creative_brief:
-        'Reusable visual system for any subject needing severe medieval crusade imagery, iron mass, heraldic pressure, and devotional menace. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Black Iron Crusade; Severe crusader fantasy built from black iron; devotional symbols; battle worn austerity; faceless angular mass; shieldlike silhouette pressure, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Black Iron Crusade: Severe crusader fantasy built from black iron; devotional symbols; battle worn austerity; faceless angular mass; shieldlike silhouette pressure.',
       key_features:
         'Black Iron Crusade; Severe crusader fantasy built from black iron; devotional symbols; battle worn austerity; faceless angular mass; shieldlike silhouette pressure',
     },
@@ -213,11 +213,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.',
       atmosphere_and_mood:
-        "Carry the prompt through Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'High-resolution textile illustration preserving woven texture and crisp symbolic readability.',
       creative_brief:
-        'Reusable visual system for any subject needing damaged medieval tapestry texture, flat mythic silhouette, faded ceremonial color, and symbolic readability. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Ruined Tapestry Legend: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color.',
       key_features:
         'Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color',
     },
@@ -243,11 +243,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes, and side-profile tension without naming a fixed urban set.',
       atmosphere_and_mood:
-        "Carry the prompt through Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and controlled haze.',
       creative_brief:
-        'Route any subject through moonlit hunter gothic style mechanics: preserve the prompt while adding nocturnal pursuit tension, gothic verticals, leather and moon material cues, and restrained predator elegance without requiring a hunter character. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Moonlit Hunter Gothic: Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm.',
       key_features:
         'Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm',
     },
@@ -272,11 +272,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Formal cabinet hierarchy, controlled depth, candlelit object spacing as abstract rhythm, and theatrical drape-like planes without requiring clustered props or curtains.',
       atmosphere_and_mood:
-        "Carry the prompt through Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.',
       creative_brief:
-        'Reusable visual system for any subject needing plague baroque costume logic, clinical dread, candlelit decay, and theatrical gothic polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Plague Doctor Baroque: Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance.',
       key_features:
         'Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance',
     },
@@ -304,11 +304,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask scale notes only when the subject supports them.',
       atmosphere_and_mood:
-        "Carry the prompt through Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.',
       creative_brief:
-        'Reusable visual system for any subject needing crimson moon symbolism, gothic noir tension, elegant menace, and medieval nocturne atmosphere. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Crimson Moon Alley Gothic: Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension.',
       key_features:
         'Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension',
     },
@@ -334,11 +334,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Symmetrical close framing with shallow depth, controlled object hierarchy, clean glass highlights, and restrained ritual spacing.',
       atmosphere_and_mood:
-        "Carry the prompt through Clinical, sacred, tense, and taboo without graphic body horror; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Clinical, sacred, tense, and taboo without graphic body horror; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Gothic still-life illustration with precise objects, clean linework, visible details, and painterly shadow control.',
       creative_brief:
-        'Translates any subject into a surgical gothic relic system of tools, glass, ritual, and restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Surgical Reliquary Horror: Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents.',
       key_features:
         'Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents',
     },
@@ -366,11 +366,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Circular accusation pressure, low fog bands, off-center moral tension, claustrophobic medieval spacing, and witness-like silhouettes only as optional depth shapes.',
       atmosphere_and_mood:
-        "Carry the prompt through Suspicious, cold, communal, and supernatural; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Suspicious, cold, communal, and supernatural; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and clean low light.',
       creative_brief:
-        'Route any subject through fogbound witch trial paranoia: preserve the prompt while adding accusation geometry, low fog, torch halo pressure, edge silhouette tension, and medieval moral dread without requiring a village trial scene, central inquisitor, executioner, or accused figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Fogbound Witch Trial: Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty.',
       key_features:
         'Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty',
     },
@@ -398,11 +398,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Courtly grouping rhythm, council-like spacing, ornate frame pressure, and symbolic hierarchy without requiring banquet layout or clustered figures.',
       atmosphere_and_mood:
-        "Carry the prompt through Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Luxurious gothic illustration with sharp costume detail and candlelit material richness.',
       creative_brief:
-        'Reusable visual system for any subject needing courtly medieval gothic polish, bestiary symbolism, candlelit unease, and refined theatrical darkness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Candlelit Bestiary Court: Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism.',
       key_features:
         'Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism',
     },
@@ -430,11 +430,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Intimate editorial crop, asymmetric courtly balance, controlled negative space, and one sensual or ceremonial tension point that adapts to the prompt subject.',
       atmosphere_and_mood:
-        "Carry the prompt through Adult, decadent, romantic, suspicious, and quietly venomous; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Adult, decadent, romantic, suspicious, and quietly venomous; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean gothic editorial illustration with broad matte planes, restrained detail, and denoised texture.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding decadent medieval court romance, poisonous ornament, velvet gold decay, and adult gothic intimacy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Rotten Gold Court Romance; Decadent medieval court fantasy where tarnished gold; bruised florals; velvet darks; intimate ritual tension make beauty feel slightly poisonous; courtly decay, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Rotten Gold Court Romance: Decadent medieval court fantasy where tarnished gold; bruised florals; velvet darks; intimate ritual tension make beauty feel slightly poisonous; courtly decay.',
       key_features:
         'Rotten Gold Court Romance; Decadent medieval court fantasy where tarnished gold; bruised florals; velvet darks; intimate ritual tension make beauty feel slightly poisonous; courtly decay',
     },
@@ -462,11 +462,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Hushed vertical framing, fragile edge detail, broad pale voids, and devotional spacing that can wrap around characters, objects, creatures, or environments.',
       atmosphere_and_mood:
-        "Carry the prompt through Silent, fragile, haunted, devotional, and adult without shock imagery; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Silent, fragile, haunted, devotional, and adult without shock imagery; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Denoised parchment-gothic illustration with low detail chatter and clean pale value control.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding vellum horror, moth dust softness, monastic silence, and pale medieval dread. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Moth Abbey Vellum Horror: Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure.',
       key_features:
         'Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure',
     },
@@ -494,11 +494,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Sparse monumental framing, heat-haze compression, horizontal austerity, and one decisive ritual silhouette or material anchor adapted to the user's subject.",
       atmosphere_and_mood:
-        "Carry the prompt through Severe, devotional, exhausted, bright, and mythic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Severe, devotional, exhausted, bright, and mythic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean bleached fantasy illustration with controlled texture, readable pale values, and no muddy darkness.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding salt pilgrimage austerity, hard sacred light, bleached medieval material, and dry mythic pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Salt Cathedral Pilgrimage; Bleached feudal pilgrimage fantasy where salt crust; sun struck stone; dry cloth; sacred glare turn the scene austere and ritualized; salt white material logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Salt Cathedral Pilgrimage: Bleached feudal pilgrimage fantasy where salt crust; sun struck stone; dry cloth; sacred glare turn the scene austere and ritualized; salt white material logic.',
       key_features:
         'Salt Cathedral Pilgrimage; Bleached feudal pilgrimage fantasy where salt crust; sun struck stone; dry cloth; sacred glare turn the scene austere and ritualized; salt white material logic',
     },
@@ -524,11 +524,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Controlled object-body ambiguity, ritual still-life hierarchy, clinical spacing, and elegant negative space that adapts to figures, creatures, artifacts, or environments.',
       atmosphere_and_mood:
-        "Carry the prompt through Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean gothic apothecary illustration with smooth denoise, readable darks, and controlled wet highlights.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit apothecary unease, medicinal glass color, wet herbal gothic material, and clinical medieval ritual mood. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Leech Moon Apothecary; Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Leech Moon Apothecary: Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint.',
       key_features:
         'Leech Moon Apothecary; Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint',
     },
@@ -554,11 +554,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Ledger-like vertical ordering, ruled spacing without readable text, strict margins, and moral weight applied to the prompt subject's shape.",
       atmosphere_and_mood:
-        "Carry the prompt through Accusatory, bureaucratic, severe, dry, and strangely sacred; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Accusatory, bureaucratic, severe, dry, and strangely sacred; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean editorial gothic illustration with crisp hierarchy, denoised paper, and no legible writing.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding medieval debt ledger severity, oath geometry, wax and iron accents, and moral gothic bureaucracy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Debt Saint Ledger Gothic: Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system.',
       key_features:
         'Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system',
     },
@@ -586,11 +586,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Crooked poster balance, tilted ceremonial hierarchy, exaggerated negative space, and one unnerving spectacle cue applied to the user's subject.",
       atmosphere_and_mood:
-        "Carry the prompt through Adult, grotesque, funny, toxic, festive, and threatening; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Adult, grotesque, funny, toxic, festive, and threatening; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean zine-editorial medieval illustration with broad shapes, controlled grime, and no noisy clutter.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding wormwood carnival color, feudal spectacle, crooked handmade rhythm, and dangerous comic energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Wormwood Carnival Feudal: Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle.',
       key_features:
         'Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle',
     },
@@ -616,11 +616,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Mask-like symmetry broken by one off-center threat cue, elegant negative space, and courtly distance applied to any subject type.',
       atmosphere_and_mood:
-        "Carry the prompt through Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Refined gothic editorial illustration with smooth values, crisp silhouettes, and restrained ornament.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding opal bone masquerade elegance, velvet concealment, predatory court etiquette, and polished gothic restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Opal Bone Masquerade: Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline.',
       key_features:
         'Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline',
     },
@@ -648,11 +648,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Topographic tension, diagonal siege pressure, symbolic spacing, and map-like composition that remains textless and adapts to any subject.',
       atmosphere_and_mood:
-        "Carry the prompt through Strategic, ominous, fatalistic, dry, and war haunted; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Strategic, ominous, fatalistic, dry, and war haunted; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean dark parchment illustration with readable shapes, controlled ash texture, and no legible annotation.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding black parchment siege omen hierarchy, burnt map abstraction, tactical dread, and textless medieval strategy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Black Parchment Siege Omen; Black parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Black Parchment Siege Omen: Black parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy.',
       key_features:
         'Black Parchment Siege Omen; Black parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy',
     },

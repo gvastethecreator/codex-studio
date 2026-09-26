@@ -15,10 +15,9 @@ tags:
   - 'amnesia: the dark descent'
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Amnesia: The Dark Descent (2010) environmental-horror illustration: heavy European masonry,
-    vulnerable human scale and a small island of failing warmth surrounded by unreadable cold depth.
+  aesthetic: 'Candlelit environmental-horror illustration: heavy European masonry, vulnerable human scale and a small island of failing warmth surrounded by unreadable cold depth.'
   subject_treatment: >-
     Keep requested identity and action. Convey vulnerability through hesitant weight, restricted
     space and partial occlusion; unspecified objects have practical old construction, not heroic
@@ -46,13 +45,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-089.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Amnesia: The Dark Descent (2010 original; Frictional Games launch-era material)'
   pairedPresetId: SP12-086
   sourceReferences:
@@ -103,6 +106,7 @@ taxonomy:
     - 'amnesia: the dark descent'
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

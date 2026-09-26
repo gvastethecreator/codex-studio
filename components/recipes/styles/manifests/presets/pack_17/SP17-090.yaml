@@ -15,12 +15,9 @@ tags:
   - darksiders
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Darksiders (2010) as Western action-comic fantasy: monumental, sculpted heroic bodies and
-    oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like
-    planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it
-    before surface texture.
+  aesthetic: 'Apocalyptic Western action-comic fantasy: monumental, sculpted heroic bodies and oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it before surface texture.'
   subject_treatment: >-
     Preserve the requested identity, action and framing. Unless the user explicitly locks the
     proportions, where a humanoid subject fits, push heroic anatomy far beyond natural proportions:
@@ -60,13 +57,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-090.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Darksiders (2010 original release; use the original game's visual era as the target)
   pairedPresetId: SP12-087
   sourceReferences:
@@ -117,6 +118,7 @@ taxonomy:
     - darksiders
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Holy rim light breaks through clouds, with long shadows and glowing inscriptions as secondary light sources.
   texture_and_material: Engraved metal, mossy stone, torn banners, ancient parchment, and luminous etched rune lines.
   camera_and_composition: Heroic scale through wide negative planes, centered relic hierarchy, gilded vertical accents, and mythic distance pressure that adapts to the prompt subject.
-  atmosphere_and_mood: Carry the prompt through Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
   rendering_and_quality: High-detail fantasy illustration with painterly polish, ornate surfaces, and readable silhouettes.
-  creative_brief: 'Route any subject through gilded rune epic grandeur: preserve the prompt while adding golden myth, oathlike rune geometry, divine ruin, and colossal medieval scale without copying a specific franchise or card figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Gilded Rune Epic: Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance.'
   key_features: Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance
 avoidRules:
   - generic high fantasy

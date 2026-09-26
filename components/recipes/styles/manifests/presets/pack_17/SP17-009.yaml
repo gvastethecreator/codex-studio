@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Crimson moon backlight forms a clean halo, lantern glow opens the torso, and shadows stay broad instead of murky.
   texture_and_material: Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic fog.
   camera_and_composition: Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask scale notes only when the subject supports them.
-  atmosphere_and_mood: Carry the prompt through Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
   rendering_and_quality: Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.
-  creative_brief: 'Reusable visual system for any subject needing crimson moon symbolism, gothic noir tension, elegant menace, and medieval nocturne atmosphere. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Crimson Moon Alley Gothic: Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension.'
   key_features: Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension
 avoidRules:
   - neon cyberpunk

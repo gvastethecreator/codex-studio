@@ -22,7 +22,7 @@ tags:
   - refined-ink
 visualDna:
   aesthetic: 'Two-ink manuscript drawing: crisp carbon-black pen line and vermilion red rubrication accents on smooth vellum, with disciplined ornament and no readable script.'
-  subject_treatment: 'Prompt X is drawn in precise black line while vermilion is reserved for the most meaningful elements: blood, fire, eyes, garments, or a symbolic accent, never everywhere.'
+  subject_treatment: 'Draw the requested subject in precise black line, reserving vermilion for its most meaningful elements such as fire, eyes, garments or a symbolic accent, never everywhere.'
   color_and_tone: Carbon black, vermilion red, and warm vellum; nothing else.
   lighting_and_shadow: Flat manuscript light; value from line weight and small black fills.
   texture_and_material: Smooth vellum sheen, crisp pen line, flat red pigment fills with slight edge pooling.

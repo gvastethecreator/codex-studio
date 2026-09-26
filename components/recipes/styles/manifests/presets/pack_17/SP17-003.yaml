@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Simplified smoky daylight and torch accents keep the image severe while preserving readable midtones and clean silhouettes.
   texture_and_material: Mud, chainmail, rough wool, chipped shields, wet timber, battered stone, and soot.
   camera_and_composition: Compressed siege-line rhythm, diagonal pressure lanes, smoke-flattened depth, documentary austerity, and crowded value grouping only when the prompt supports it.
-  atmosphere_and_mood: Carry the prompt through Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
   rendering_and_quality: Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.
-  creative_brief: 'Reusable visual system for any subject needing grim medieval war pressure, mud stained restraint, documentary severity, and siege like visual weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Grimdark Siege Chronicle: Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic.'
   key_features: Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic
 avoidRules:
   - clean costume drama

@@ -15,11 +15,9 @@ tags:
   - 'onimusha: warlords'
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Onimusha: Warlords visual world translated into dramatic painted art: grounded Sengoku craft,
-    theatrical samurai silhouettes and sharply colored supernatural energy against dark
-    architectural framing.
+  aesthetic: 'Feudal supernatural drama translated into painted art: grounded Sengoku-period craft, theatrical armored silhouettes and sharply colored supernatural energy against dark architectural framing.'
   subject_treatment: >-
     Preserve explicit identity and action. Shape unspecified clothing and objects through tied
     layers, overlapping lacquer plates and purposeful asymmetry; spectral accents attach to a
@@ -47,13 +45,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-092.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     Onimusha: Warlords (2019 HD remaster of the 2001 original; Capcom's remaster preserves
     fixed-scene camera behavior)
@@ -108,6 +110,7 @@ taxonomy:
     - 'onimusha: warlords'
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -22,7 +22,7 @@ tags:
   - character-style
 visualDna:
   aesthetic: Robust tabletop fantasy portrait style with heavy silhouettes, lived-in gear, adult body variety, readable faces, and grounded medieval grime without glossy hero-card sameness.
-  subject_treatment: If prompt X includes a character, make the portrait sturdy, specific, and adult; if not, apply the same robust shape language to creatures, relics, busts, armor, or symbolic figures without forcing an adventurer.
+  subject_treatment: 'When the request includes a character, make the portrait sturdy, specific and adult; otherwise apply the same robust shape language to creatures, relics, busts, armor or symbolic figures without inventing an adventurer.'
   color_and_tone: Weathered leather, iron, bone, bruised greens, dull red, old blue, candle amber, and clean midtone shadows.
   lighting_and_shadow: Simple portrait key light, shoulder rim, open shadows, and enough midtone color to reveal gear and anatomy.
   texture_and_material: Matte paint, controlled cloth/leather/metal marks, broad brush planes, scarred surfaces, and no skin-pore realism.

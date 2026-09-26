@@ -8,10 +8,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Diablo II — Mineral Chiaroscuro',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Diablo II: Resurrected dark-fantasy art language: compact carved silhouettes, archaic martial and occult design, sharply separated dark masses and concentrated elemental color, translated into painted illustration.',
+        'Late-nineties isometric dark-fantasy art language, a technique study rather than a copy of any work: compact carved silhouettes, archaic martial and occult design, sharply separated dark masses and concentrated elemental color, translated into painted illustration.',
       subject_treatment:
         'Preserve explicit identity, action and count. Give unspecified forms a compact carved weight, severe faceted contours and archaic ornament; use rough metal, bone-like structural rhythm and worn bindings when compatible with the subject.',
       color_and_tone:
@@ -37,10 +37,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Diablo IV — Old-Master Gloom',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "A grounded dark-fantasy illustration governed by old-master tonal hierarchy: natural color, deliberate shadow grouping, a small number of highly finished focal details, and believable but consciously composed forms. It translates Diablo IV's handcrafted dark-medieval art direction without inheriting the game's camera or real-time rendering.",
+        'A grounded dark-fantasy illustration governed by old-master tonal hierarchy: natural color, deliberate shadow grouping, a small number of highly finished focal details, and believable but consciously composed forms, in a handcrafted dark-medieval art direction without any game camera or real-time rendering look.',
       subject_treatment:
         'Preserve explicit identity, action and count. Design unspecified forms with heavy believable anatomy, broad worn cloth and armor masses, severe archaic ornament and restrained sacred or infernal motifs that belong to the subject.',
       color_and_tone:
@@ -66,14 +66,14 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bloodborne — Gaslamp Gothic',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Bloodborne Gothic horror as painted art: dense vertical Victorian architecture and severe tailored silhouettes disturbed by gaunt beast anatomy, ritual medicine and barely comprehensible organic forms.',
+        'Gaslamp gothic horror as painted art: dense vertical Victorian architecture and severe tailored silhouettes disturbed by gaunt beast anatomy, ritual medicine and barely comprehensible organic forms.',
       subject_treatment:
         'Preserve explicit identity, action and count. Give unspecified forms tapered tailored contours, long articulated rhythms and a tension between refined craft and unsettling anatomy; compatible ironwork, layered leather and delicate surgical details remain purposeful.',
       color_and_tone:
-        'Anchor open palettes in blue-gray, blue-black, soot, and muted umber, with pale window light and small amber practicals. A restrained crimson note may appear when appropriate, but Bloodborne is not a mandatory blood-red filter; preserve explicitly requested colors.',
+        'Anchor open palettes in blue-gray, blue-black, soot, and muted umber, with pale window light and small amber practicals. A restrained crimson note may appear when appropriate, but never as a mandatory blood-red filter; preserve explicitly requested colors.',
       lighting_and_shadow:
         'Set small warm lamps or candle points against broad cool architectural shadow, with pale window shafts when the scene contains a light opening. Keep nearby forms legible in the dark; haze and wet reflections depend on the requested setting.',
       texture_and_material:
@@ -95,10 +95,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mortal Shell — Tarnished Weight',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Mortal Shell (2020) dark-fantasy concept-art language: compact iron masses and gaunt organic forms, severe silhouettes, damp mineral environments and physically oppressive weight.',
+        'Tarnished dark-fantasy concept-art language, a technique study rather than a copy of any work: compact iron masses and gaunt organic forms, severe silhouettes, damp mineral environments and physically oppressive weight.',
       subject_treatment:
         'Preserve explicit identity, action and count. Design unspecified contours with a burdened center of gravity, narrow joint gaps and contrasts between protective mass and frail exposed form; use shell-like layering where compatible.',
       color_and_tone:
@@ -124,10 +124,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lords of the Fallen — Tormented Allegory',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Lords of the Fallen (2023) concept-art grammar: grounded medieval construction transformed by devotional excess and bodily cosmic horror. Accumulation changes the silhouette, not merely the surface color.',
+        'Tormented allegorical concept-art grammar: grounded medieval construction transformed by devotional excess and bodily cosmic horror. Accumulation changes the silhouette, not merely the surface color.',
       subject_treatment:
         'Preserve explicit subject and action. On unspecified design areas, use thorn-like extensions, layered votive forms and constrained postures; contrast living weight with pallid, emptied shapes.',
       color_and_tone:
@@ -153,10 +153,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Amnesia — Candlelit Vulnerability',
     category: '9. Gothic & Dungeon Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Amnesia: The Dark Descent (2010) environmental-horror illustration: heavy European masonry, vulnerable human scale and a small island of failing warmth surrounded by unreadable cold depth.',
+        'Candlelit environmental-horror illustration: heavy European masonry, vulnerable human scale and a small island of failing warmth surrounded by unreadable cold depth.',
       subject_treatment:
         'Keep requested identity and action. Convey vulnerability through hesitant weight, restricted space and partial occlusion; unspecified objects have practical old construction, not heroic ornament.',
       color_and_tone:

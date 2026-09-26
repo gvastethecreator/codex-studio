@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Internal core glow lights armor seams while large external shadows keep the form monumental.
   texture_and_material: Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.
   camera_and_composition: Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.
-  atmosphere_and_mood: Carry the prompt through Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
   rendering_and_quality: Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.
-  creative_brief: 'Reusable visual system for any subject needing future medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred tech weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Mecha Reliquary Knight: Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass.'
   key_features: Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass
 avoidRules:
   - sleek anime robot

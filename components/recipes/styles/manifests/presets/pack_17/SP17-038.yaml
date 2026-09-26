@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Flat manuscript lighting, little cast shadow, and strong color separation.
   texture_and_material: Smooth vellum, flat pigment, clean ink outlines, restrained gold ornament, and no smeared aged-paper noise.
   camera_and_composition: Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable annotations.
-  atmosphere_and_mood: Carry the prompt through Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
   rendering_and_quality: Clean illuminated illustration with crisp edges, low texture load, and visible shape design.
-  creative_brief: 'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel like flat accents, and scholarly medieval curiosity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Illuminated Monster Codex: Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation.'
   key_features: Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation
 avoidRules:
   - readable marginal text

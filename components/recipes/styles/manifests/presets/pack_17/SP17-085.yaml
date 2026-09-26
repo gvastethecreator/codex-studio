@@ -15,12 +15,9 @@ tags:
   - diablo iv
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    A grounded dark-fantasy illustration governed by old-master tonal hierarchy: natural color,
-    deliberate shadow grouping, a small number of highly finished focal details, and believable but
-    consciously composed forms. It translates Diablo IV's handcrafted dark-medieval art direction
-    without inheriting the game's camera or real-time rendering.
+  aesthetic: 'A grounded dark-fantasy illustration governed by old-master tonal hierarchy: natural color, deliberate shadow grouping, a small number of highly finished focal details, and believable but consciously composed forms, in a handcrafted dark-medieval art direction without any game camera or real-time rendering look.'
   subject_treatment: >-
     Preserve explicit identity, action and count. Design unspecified forms with heavy believable
     anatomy, broad worn cloth and armor masses, severe archaic ornament and restrained sacred or
@@ -53,13 +50,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-085.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Diablo IV (2023 base game; launch-era art-direction sources)
   pairedPresetId: SP12-082
   sourceReferences:
@@ -114,6 +115,7 @@ taxonomy:
     - diablo iv
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

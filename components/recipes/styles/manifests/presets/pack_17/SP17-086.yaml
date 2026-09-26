@@ -15,19 +15,14 @@ tags:
   - bloodborne
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Bloodborne Gothic horror as painted art: dense vertical Victorian architecture and severe
-    tailored silhouettes disturbed by gaunt beast anatomy, ritual medicine and barely comprehensible
-    organic forms.
+  aesthetic: 'Gaslamp gothic horror as painted art: dense vertical Victorian architecture and severe tailored silhouettes disturbed by gaunt beast anatomy, ritual medicine and barely comprehensible organic forms.'
   subject_treatment: >-
     Preserve explicit identity, action and count. Give unspecified forms tapered tailored contours,
     long articulated rhythms and a tension between refined craft and unsettling anatomy; compatible
     ironwork, layered leather and delicate surgical details remain purposeful.
-  color_and_tone: >-
-    Anchor open palettes in blue-gray, blue-black, soot, and muted umber, with pale window light and
-    small amber practicals. A restrained crimson note may appear when appropriate, but Bloodborne is
-    not a mandatory blood-red filter; preserve explicitly requested colors.
+  color_and_tone: 'Anchor open palettes in blue-gray, blue-black, soot, and muted umber, with pale window light and small amber practicals. A restrained crimson note may appear when appropriate, but never as a mandatory blood-red filter; preserve explicitly requested colors.'
   lighting_and_shadow: >-
     Set small warm lamps or candle points against broad cool architectural shadow, with pale window
     shafts when the scene contains a light opening. Keep nearby forms legible in the dark; haze and
@@ -53,13 +48,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-086.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Bloodborne (2015 PS4 original; official launch-era material)
   pairedPresetId: SP12-083
   sourceReferences:
@@ -114,6 +113,7 @@ taxonomy:
     - bloodborne
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

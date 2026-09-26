@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Flat print color replaces light, with shadow delivered by clean black plates and controlled overprint.
   texture_and_material: Controlled Riso grain, clean ink density, misregistration, tidy stippled fills, and paper tooth.
   camera_and_composition: Centered poster icon, thick border, large simple shapes, and strong negative space.
-  atmosphere_and_mood: Carry the prompt through Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.'
   rendering_and_quality: Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.
-  creative_brief: 'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Neon Risograph Necromancy: Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes.'
   key_features: Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes
 avoidRules:
   - full color realism

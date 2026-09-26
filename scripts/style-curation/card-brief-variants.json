@@ -12218,5 +12218,325 @@
   "SP23-240": [
     "Drawn in heavy smudged charcoal, a proud rooster crows so loudly that its head has turned into scattered bright pixel blocks. No readable text or logo.",
     "Seated in a dark charcoal portrait, a woman's hands are softly drawn, but her face has broken into small grey pixels that are drifting off the page. No readable text or logo."
+  ],
+  "SP17-001": [
+    "Sitting on the steps of a burnt-out cathedral, a weary undead warrior carefully mends his own torn cloak with a bone needle, looking deeply annoyed at the ruin around him. No readable text or logo.",
+    "Walking through a silent courtyard of ash, a lone pilgrim passes a row of statues whose eyes have all been freshly wiped clean of soot. No readable text or logo."
+  ],
+  "SP17-073": [
+    "Built from calm grey planes, a gravedigger takes a lunch break sitting on a headstone while the ghost below politely waits for him to finish. No readable text or logo.",
+    "Standing in a matte fog of ash-grey planes, a doorway in a ruined wall frames a figure that is exactly the same grey as the wall. No readable text or logo."
+  ],
+  "SP17-002": [
+    "Standing beneath a sky full of blazing runes, a pompous king tries to read the prophecy and holds his map upside down. No readable text or logo.",
+    "Glowing faintly over a dead kingdom, a single gold sigil hangs in the air above an empty throne, pulsing like a slow heartbeat. No readable text or logo."
+  ],
+  "SP17-003": [
+    "Stuck in knee-deep mud outside a fortress, an entire besieging army waits while one soldier tries to push the stuck catapult alone. No readable text or logo.",
+    "Standing in the rain after the battle, a single war banner is still upright in the churned mud, and crows have lined up along its pole. No readable text or logo."
+  ],
+  "SP17-004": [
+    "Under towering arches carved from darkness, a small nervous choir boy hits a note so high that every candle in the nave leans toward him. No readable text or logo.",
+    "Deep in a cathedral nave lit by one slanting beam, the pews are empty but every hymn book lies open to the same page. No readable text or logo."
+  ],
+  "SP17-005": [
+    "Standing in severe black armor at a village well, a stern crusader discovers his helmet is far too heavy to take off and must drink through the visor. No readable text or logo.",
+    "In a chapel of plain black iron, a single suit of armor kneels in prayer, and dust has gathered inside its open helmet. No readable text or logo."
+  ],
+  "SP17-006": [
+    "On an ancient woven hanging, a royal hunt charges across flat green hills, but the stag has been re-stitched by someone to be winning. No readable text or logo.",
+    "On a frayed hanging in a dim hall, a woven queen stands in flat ceremonial profile, and the threads around her eyes have been freshly pulled loose. No readable text or logo."
+  ],
+  "SP17-007": [
+    "On a slick cobbled street under the moon, a grim beast hunter stops to help a very old lady carry her groceries, and the lady has noticeably long ears. No readable text or logo.",
+    "In a silent moonlit square, a hunter's lantern throws his shadow on a wall, and the shadow has too many joints in its arms. No readable text or logo."
+  ],
+  "SP17-008": [
+    "Behind an ornate medicine cabinet, a beak-masked doctor tries to examine a patient while the patient is trying to examine the doctor's mask. No readable text or logo.",
+    "In a candlelit sickroom full of gilded apothecary jars, a beaked mask hangs on a hook, and its glass eyes are fogged as if someone is breathing inside. No readable text or logo."
+  ],
+  "SP17-009": [
+    "In a foggy red-lit alley, a vampire lord has locked himself out of his own manor and is trying to climb in through a very small window. No readable text or logo.",
+    "Down a narrow alley under a red moon, the fog has pooled in the shape of a person leaning against the iron railings, waiting. No readable text or logo."
+  ],
+  "SP17-010": [
+    "Arranged on velvet like holy relics, a surgeon-monk proudly displays his collection of antique spoons, much to the disappointment of the visiting pilgrims. No readable text or logo.",
+    "Inside a gilded reliquary box, a single glass eye rests on a velvet cushion, and each time the viewer looks away it has moved slightly. No readable text or logo."
+  ],
+  "SP17-011": [
+    "Standing in the fog around a trial post, a village council tries to judge a goat accused of witchcraft, and the goat is winning the argument. No readable text or logo.",
+    "On a foggy village green at dawn, a length of rope hangs knotted from an empty post, and small bare footprints lead away into the mist. No readable text or logo."
+  ],
+  "SP17-012": [
+    "Amid candlelight and velvet, a scholar tries to catalog a court of exotic beasts while a small winged lizard eats his quill. No readable text or logo.",
+    "Walking through a hall of stuffed and mounted beasts lit by tapers, a courtier notices that one of the glass-eyed trophies is breathing. No readable text or logo."
+  ],
+  "SP17-045": [
+    "Across a decadent banquet of spoiled fruit and golden goblets, a nervous food taster realizes he is the last person in the court still standing. No readable text or logo.",
+    "In a velvet-dark bedchamber, a gilded portrait of a lover has turned its face to the wall on its own. No readable text or logo."
+  ],
+  "SP17-046": [
+    "In a silent abbey scriptorium, a monk tries to keep copying his page while a single enormous moth sits on his head, perfectly still. No readable text or logo.",
+    "In a candlelit abbey corridor, every candle has been snuffed except one, and a cloud of dusty wings is circling it in silence. No readable text or logo."
+  ],
+  "SP17-047": [
+    "Stopping on a white road in the glare, a pilgrim licks the ground to check whether it is really salt, to the horror of the entire procession. No readable text or logo.",
+    "On a bleached salt flat, a line of pilgrims has left footprints that end abruptly in the middle of nowhere. No readable text or logo."
+  ],
+  "SP17-048": [
+    "Among jars of pickled herbs and leeches, a sick nobleman realizes the apothecary's leeches are all wearing tiny napkins. No readable text or logo.",
+    "On a moonlit shelf of green glass jars, one jar is empty and its lid is lying on the floor. No readable text or logo."
+  ],
+  "SP17-049": [
+    "Behind a counter of stacked parchment and wax seals, a stern clerk demands that a dragon fill out one more form before it can burn anything. No readable text or logo.",
+    "In a silent archive of iron shelves, one ledger has been left open, and the column of wax seals ends with one still warm. No readable text or logo."
+  ],
+  "SP17-050": [
+    "At a poisonous green fair, a duke tries to win a prize at a ring toss that is clearly rigged by a very smug goblin. No readable text or logo.",
+    "In a cheaply painted fairground at dusk, a carousel keeps turning with no riders, its painted horses slowly turning their heads to follow the visitors. No readable text or logo."
+  ],
+  "SP17-051": [
+    "At a shimmering masked ball, a noble in an iridescent bone mask keeps bumping into things because his mask has no eye holes. No readable text or logo.",
+    "In a pearly ballroom, every guest wears an opal mask, and one mask on the floor is still smiling. No readable text or logo."
+  ],
+  "SP17-052": [
+    "Bent over a burnt tactical map, a general moves his bone markers into battle while a mouse quietly moves the enemy markers back. No readable text or logo.",
+    "Resting on a charred war map, a single bone marker stands inside the enemy city, placed there by no one at the table. No readable text or logo."
+  ],
+  "SP17-013": [
+    "Stuck halfway through a trap door, a fat ogre adventurer waves for help while three rats quietly steal his boots. No readable text or logo.",
+    "Glaring out of a thick hand-drawn frame, a single cyclops eye fills the whole panel, and its pupil reflects a tiny cultist holding a candle. No readable text or logo."
+  ],
+  "SP17-014": [
+    "Drawn as a solemn field-guide plate, a creature described as a terrible swamp horror turns out to be a very round toad wearing a crown. No readable text or logo.",
+    "On a grainy copied plate, a long thin creature stands perfectly straight, and its shadow is the only part of the drawing that did not photocopy. No readable text or logo."
+  ],
+  "SP17-015": [
+    "Summoning the dead with great drama, a young necromancer has accidentally raised only a single, very confused skeleton chicken. No readable text or logo.",
+    "Glowing in two fluorescent inks, a graveyard at midnight has every grave open, and a single line of glowing footprints leads toward the village. No readable text or logo."
+  ],
+  "SP17-016": [
+    "Shown as a glowing monster entry, a gelatinous cube proudly displays its fluorescent contents, including a sword, a boot and a very surprised rubber duck. No readable text or logo.",
+    "In ultraviolet ink, a harmless-looking moth has a skull pattern on its wings that glows brighter the longer you look at it. No readable text or logo."
+  ],
+  "SP17-017": [
+    "Posing on a punk trading card, a heraldic lion with a mohawk and safety pins tries to look noble while a pigeon sits on its crown. No readable text or logo.",
+    "On a torn trading card, the heraldic shield is completely black except for a single white hand pressed against it from the inside. No readable text or logo."
+  ],
+  "SP17-018": [
+    "Posing heroically on a rock, a muscular barbarian has not noticed that the sorcerer behind him is using his cape as a napkin. No readable text or logo.",
+    "On a scanned paperback cover with tape across one corner, a jungle temple stands in lurid orange light, and the tape covers exactly where a figure should be. No readable text or logo."
+  ],
+  "SP17-059": [
+    "Hand-inked in crude rusty red, a squat dungeon brute has been given the job of guarding a door and has fallen asleep standing up against it. No readable text or logo.",
+    "Sitting alone in a flat rust-red room, a skull cultist holds a birthday cake with one candle, and nobody else has come. No readable text or logo."
+  ],
+  "SP17-060": [
+    "Wearing a horned mask far too big for him, a tiny cultist tries to lead a toxic green ceremony while tripping over his robe. No readable text or logo.",
+    "Glowing in nasty-bright lime, a single frog sits on a stone altar surrounded by candles, and all the cultists around it are kneeling. No readable text or logo."
+  ],
+  "SP17-061": [
+    "Hand-inked with rude anatomy, a swollen troll tries on a pair of boots three sizes too small while his friends laugh from the cave. No readable text or logo.",
+    "Sitting alone on a mossy rock, a dented helmet has small orange mushrooms growing out of its eye slits, printed in two clashing inks. No readable text or logo."
+  ],
+  "SP17-062": [
+    "Standing at the counter of an old game shop, an ogre in a knitted vest argues that his miniatures are painted better than anyone else's. No readable text or logo.",
+    "Standing in a doorway with a candle, a ghoul is slowly being eaten away by real spots of mildew creeping across the cheap yellowed page. No readable text or logo."
+  ],
+  "SP17-063": [
+    "Deep in a pastel catacomb, a skeleton warrior with crude dot shadows politely asks a lost adventurer to please stop stepping on his friends. No readable text or logo.",
+    "Along a pink catacomb wall of skulls, every skull faces forward except one, which is turned to watch the passage. No readable text or logo."
+  ],
+  "SP17-096": [
+    "Printed in two tidy overlapping inks, a lighthouse keeper cat serves tea to a nervous sea serpent who is trying to be polite. No readable text or logo.",
+    "Drifting on still water with its oars neatly stowed, a rowboat casts the only shadow in the print, and it is shaped like a much bigger boat. No readable text or logo."
+  ],
+  "SP17-097": [
+    "Scribbled in blue-black biro during a boring lesson, a heroic wizard fights a dragon while a tiny teacher figure is drawn watching him disapprovingly. No readable text or logo.",
+    "Gone over and over in tangled pen until it is almost solid, a small figure stands in the corner of the page, and the scribbles around its face have been left blank. No readable text or logo."
+  ],
+  "SP17-098": [
+    "Almost lost in overdriven toner, a proud cultist poses for his portrait, but the only visible part left is his very large, very white smile. No readable text or logo.",
+    "In a page of near-total black, the only white shape is a door left slightly open, with a single thin hand curled around its edge. No readable text or logo."
+  ],
+  "SP17-099": [
+    "Printed in pink and blue, a pair of goblin mechanics try to fix a broken catapult by hitting it very hard with a much bigger hammer. No readable text or logo.",
+    "Overlapping into purple, a stairwell descends into blue shadow while a single pink light moves slowly upward. No readable text or logo."
+  ],
+  "SP17-100": [
+    "Hand-cranked in faded purple, a wordless club flyer shows a sword-wielding mouse pointing sternly at the reader, summoning everyone to a serious meeting. No readable text or logo.",
+    "On a damp violet copy that smells of spirit ink, a staff photo shows a row of stern schoolmasters, and one face has bled into a blank purple blur. No readable text or logo."
+  ],
+  "SP17-101": [
+    "Printed in small thick inks, a tiny wizard proudly shows off a treasure that is only one gold coin, the only metallic thing on the whole print. No readable text or logo.",
+    "On a tiny jewel-like print, a forest at night hides a small shrine, and the only gold on the page is a pair of eyes between the trees. No readable text or logo."
+  ],
+  "SP17-102": [
+    "Gouged into black linocut, a punk goblin band plays so loud that the stone walls of the dungeon are visibly shaking. No readable text or logo.",
+    "Copied over and over into rag paper, a single carved skull on a stake slowly loses detail until only its grin remains. No readable text or logo."
+  ],
+  "SP17-103": [
+    "Standing in a gradient of sunset inks, a wizard's tall pointed hat catches the brightest color while his tiny feet sink into the orange, much to his annoyance. No readable text or logo.",
+    "Under a sunset gradient sky, a lone watchtower glows at the top in hot magenta and sinks into indigo, where a small window has just lit up. No readable text or logo."
+  ],
+  "SP17-104": [
+    "Drawn with stubby waxy lines, a monster with enormous teeth is trying very hard to eat a tiny sandwich with good manners. No readable text or logo.",
+    "Scrawled in thick waxy lines, a long-armed creature peeks around a corner, and its hand reaches far further than its body should allow. No readable text or logo."
+  ],
+  "SP17-105": [
+    "Printed badly off register, a goblin wizard casts a spell and now appears to be three slightly different wizards, all equally proud. No readable text or logo.",
+    "Split into three drifting color layers, a figure on a bridge looks the same in cyan and yellow, but in magenta it is facing the other way. No readable text or logo."
+  ],
+  "SP17-106": [
+    "Drawn in quiet almanac order, a botanist carefully labels every plant in her garden except the one that is clearly trying to eat her. No readable text or logo.",
+    "On an orderly page of stippled plants, one flower has been drawn with its petals closed tight around something that is still moving. No readable text or logo."
+  ],
+  "SP17-107": [
+    "Received on curling glossy paper, a smiling photo of a knight with his arm around a dragon has faded until only their teeth remain clear. No readable text or logo.",
+    "Faded to brown-grey by the sun, an image of a hallway ends in a doorway where the scan streaks all bend inward. No readable text or logo."
+  ],
+  "SP17-108": [
+    "Printed on black stock, a goblin proudly guards a hoard of gold that turns out to be a very large pile of shiny buttons. No readable text or logo.",
+    "On a dark sheet, a single lantern glows orange at the end of a street, and gold dots on the ground trace footprints leading toward it. No readable text or logo."
+  ],
+  "SP17-109": [
+    "Cut by hand with visible bridges, a spray-painted goblin holds up a protest placard that is completely blank, and he looks furious about it. No readable text or logo.",
+    "On cardboard with soft overspray halos, a figure in a hood has been sprayed twice, the second pass slightly offset, as if it moved. No readable text or logo."
+  ],
+  "SP17-110": [
+    "Faded by the sun, an old flyer shows a knight proudly holding up a fish that is clearly bigger than him, and the fish looks bored. No readable text or logo.",
+    "On a sun-bleached page, the picture of a house has faded evenly everywhere except one upstairs window, which is still perfectly dark. No readable text or logo."
+  ],
+  "SP17-033": [
+    "Drawn as a solemn omen card, a skeleton in a jester hat balances three crowns on its skull while trying very hard not to sneeze. No readable text or logo.",
+    "On a quiet black card, a single veil hangs in the air with no one beneath it, and the moon behind it is looking down. No readable text or logo."
+  ],
+  "SP17-034": [
+    "Drawn in clean black line, a creature made entirely of stacked stone doors keeps opening itself to check whether anyone is inside. No readable text or logo.",
+    "On a crisp white plate, a relic fragment the size of a house lies half buried, and a thin trail of footprints walks directly into it. No readable text or logo."
+  ],
+  "SP17-035": [
+    "Standing in severe sacred geometry, a penitent monk proudly wears a thorn crown that is clearly just a hedge trimming stuck on his head. No readable text or logo.",
+    "In a tall devotional niche, a veiled statue holds out a reliquary with its lid lifted, and the reliquary is empty except for a single key. No readable text or logo."
+  ],
+  "SP17-036": [
+    "Deep in a prison dungeon, two starving pilgrims argue over a single moldy bread roll while a well-fed rat watches from the bars. No readable text or logo.",
+    "At the end of a prison corridor, a ritual door stands open, and every candle along the wall leans away from it. No readable text or logo."
+  ],
+  "SP17-037": [
+    "Carved as a bold animal silhouette, a proud elephant carries a castle on its back, and the castle has clearly been built by the elephant itself. No readable text or logo.",
+    "Printed from a heavy block on old paper, a hare stands upright in a field, taller than the trees behind it. No readable text or logo."
+  ],
+  "SP17-038": [
+    "Painted in jewel-like flat colors, a very round unicorn has been drawn by someone who only heard it described as a horse with a horn. No readable text or logo.",
+    "In a gilded border on clean parchment, a small painted beast has been scratched out by the scribe, and its outline is still faintly visible. No readable text or logo."
+  ],
+  "SP17-039": [
+    "Among odd beasts in the margins, a small grotesque with a bishop hat is playing a bagpipe made from a surprised goose. No readable text or logo.",
+    "At the edge of a clean parchment page, a tiny long-necked beast has turned away from the margin to look straight at the reader. No readable text or logo."
+  ],
+  "SP17-040": [
+    "Posed on a heraldic plate, a chimera cannot agree with itself: the lion head wants to charge, the goat head wants lunch, and the serpent tail is asleep. No readable text or logo.",
+    "Above a shield with no emblem at all, a crown floats over an empty space where the supporting beast should be. No readable text or logo."
+  ],
+  "SP17-041": [
+    "Divided by heavy lead lines, a simplified whale swims through a sea of blue panes with a very small fishing boat on its nose. No readable text or logo.",
+    "In a dim chapel window, one pane in the middle has been replaced with clear glass, and a real face is looking through it. No readable text or logo."
+  ],
+  "SP17-042": [
+    "Stitched in flat courtly shapes, a unicorn rests its head in a lady's lap and has clearly fallen asleep and started drooling on her gown. No readable text or logo.",
+    "On a quiet woven panel, a hunting party rides through stitched woods, and one rider at the back has no face woven in. No readable text or logo."
+  ],
+  "SP17-043": [
+    "Recorded with scholarly care, a small dungeon beast is drawn in six views, and in each one it is clearly trying to bite the illustrator. No readable text or logo.",
+    "Laid out on a field-guide plate, a clutch of wyvern eggs is shown in careful order, and one egg is drawn already cracked open. No readable text or logo."
+  ],
+  "SP17-044": [
+    "Drawn in clean silver ink, a moon hare consults a tiny crystal ball and looks very disappointed by what it sees. No readable text or logo.",
+    "Under a thin crescent line, an owl made of quiet ink sits on nothing, its eyes two perfect empty circles. No readable text or logo."
+  ],
+  "SP17-053": [
+    "Engraved on a black ground, a skeleton carefully arranges its own bones into a neat anatomical chart and cannot find one finger. No readable text or logo.",
+    "Floating on an absolute void, a white engraved hand turns its palm open, and a single eye is drawn in the center of it. No readable text or logo."
+  ],
+  "SP17-054": [
+    "Hanging from thin white lines, a relic bell dangles over a sleeping cat that is clearly about to be woken up. No readable text or logo.",
+    "On a black card, a single white thread descends from the top edge and ends in a knot shaped like a small hand. No readable text or logo."
+  ],
+  "SP17-055": [
+    "Badly drawn on purpose, a warped goblin smiles proudly, showing off its seven teeth, all of which point in different directions. No readable text or logo.",
+    "In clumsy white lines on a black ground, a figure stands at the end of a bed, and its arms are drawn far too long for its body. No readable text or logo."
+  ],
+  "SP17-056": [
+    "On a cheap devotional card, a saint in a scratched halo looks deeply embarrassed by the plastic flowers around her. No readable text or logo.",
+    "Hovering alone above an empty pair of sandals, a small scratched halo is the only light on a cheap devotional card. No readable text or logo."
+  ],
+  "SP17-057": [
+    "Copied badly again and again, a creature listed as a horse now has six legs, one ear and a deeply confused expression. No readable text or logo.",
+    "Copying itself further off the page, a creature's outline repeats in fainter and fainter duplicates beside a blank frame where its name should be. No readable text or logo."
+  ],
+  "SP17-058": [
+    "On blackened vellum, a stern knight has been drawn carefully except for his horse, which the scribe clearly gave up on halfway through. No readable text or logo.",
+    "Walking away through an oxidized wash that swallows everything behind it, a hooded figure with a lantern is drawn in thin bone-white line. No readable text or logo."
+  ],
+  "SP17-111": [
+    "Cut with refined parallel lines, a very pompous rooster poses for his official portrait inside an oval frame of engraved laurels. No readable text or logo.",
+    "Engraved in crisp black line, a quiet library shows every book shelved in order, except one volume that has been pushed halfway out. No readable text or logo."
+  ],
+  "SP17-112": [
+    "Pulled out of deep black, a sleepy owl is burnished to light only on its huge eyes and one fluffy tuft. No readable text or logo.",
+    "Out of velvet black, a single face emerges at the bottom of a well, lit from somewhere far above. No readable text or logo."
+  ],
+  "SP17-113": [
+    "Drawn in jittery scratched lines, a man lies in bed while a nightmare creature sits on his chest looking bored and checking its claws. No readable text or logo.",
+    "In fuzzy burred lines, a mirror hangs in a dark room and shows a knot of black scratches where a face should be. No readable text or logo."
+  ],
+  "SP17-114": [
+    "Etched lightly with soft sepia washes, a naturalist sketches a huge dragonfly that has landed on her hat and is sketching her back. No readable text or logo.",
+    "Sitting in the desert under calm stepped tones, a ruined temple has one area darker than anything else on the plate: its open doorway. No readable text or logo."
+  ],
+  "SP17-115": [
+    "Drawn as a careful old master study, a stern philosopher tries to hold still for his portrait while a sparrow nests in his beard. No readable text or logo.",
+    "On buff paper in red chalk, a study of hands shows eight hands in careful poses and a ninth reaching out of the paper. No readable text or logo."
+  ],
+  "SP17-116": [
+    "Traced in fine metallic lines, a proud fox steals a single silver star and tries to hide it under a leaf far too small for it. No readable text or logo.",
+    "Drawn in thin gold on dark indigo, a lamp burns in an empty window, and its silver reflection in the glass shows a figure sitting beside it. No readable text or logo."
+  ],
+  "SP17-117": [
+    "Chasing a quill that has come to life, a scholar scrambles across his desk while the pen runs away leaving ink footprints and spatters. No readable text or logo.",
+    "In fast whipping lines, a single blot on the page has grown two eyes and is slowly spreading toward the drawing of a sleeping man. No readable text or logo."
+  ],
+  "SP17-118": [
+    "In gentle grey etched tones, a very old knight falls asleep in the saddle while his horse carefully carries him home. No readable text or logo.",
+    "Standing in a quiet orchard at dusk, one tree has grown in the shape of a kneeling person, rendered in gentle grainy lines. No readable text or logo."
+  ],
+  "SP17-119": [
+    "Inked with disciplined ornament, a king has been drawn in plain black except for his nose, which the scribe has rubricated a very festive red. No readable text or logo.",
+    "On black-lined vellum, a closed door has a single red handprint on it, the only color on the page. No readable text or logo."
+  ],
+  "SP17-120": [
+    "Carved in three tones, a proud rooster crows at dawn while the tone block for the sun is printed slightly off, giving it a guilty look. No readable text or logo.",
+    "In olive and dark brown tones, a hermit sits in a cave, and the pale cut-out highlights reveal a second pair of eyes behind him. No readable text or logo."
+  ],
+  "SP17-121": [
+    "Engraved into a copper plate, a very serious portrait of a mayor has a tiny mouse scratched into the corner by a bored apprentice. No readable text or logo.",
+    "Standing at a crossroads engraved into polished metal, a burnished figure waits while the copper between the lines has gone green around its feet. No readable text or logo."
+  ],
+  "SP17-122": [
+    "Brushed in warm brown ink, a bear sits in the rain under a tiny umbrella that covers only its nose. No readable text or logo.",
+    "Framed by a doorway made of fog, a figure stands still, and the only dark stroke on the page is its shadow. No readable text or logo."
+  ],
+  "SP17-123": [
+    "Made entirely of tiny dots, a proud peacock fans its tail, and the artist has clearly lost their mind counting every single dot. No readable text or logo.",
+    "In a field of scattered dots, a figure stands perfectly clear at the center, and the dots around it are slowly thinning out. No readable text or logo."
+  ],
+  "SP17-124": [
+    "In a smudged ghost print, a fox steals a whole roast chicken from a table, and its fingerprints are clearly visible in the wiped ink. No readable text or logo.",
+    "In a faded second pull of red and black, a figure is barely visible in a doorway, fainter than the one printed before. No readable text or logo."
+  ],
+  "SP17-125": [
+    "Etched with exaggerated faces, a vain duke admires himself in a mirror that is clearly laughing at him. No readable text or logo.",
+    "In a crowded satirical etching, every figure in the square is shouting except one small man in the middle who is smiling. No readable text or logo."
   ]
 }

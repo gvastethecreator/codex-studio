@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Clear holy key light and candle accents cut through large graphic shadow masses without losing architectural detail.
   texture_and_material: Carved stone, wax drips, oxidized metal, incense haze, cracked fresco, and embroidered cloth.
   camera_and_composition: Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and devotional silhouette pressure without requiring a nave or window set.
-  atmosphere_and_mood: Carry the prompt through Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
   rendering_and_quality: Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.
-  creative_brief: 'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Cathedral Chiaroscuro: Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis.'
   key_features: Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis
 avoidRules:
   - flat daylight

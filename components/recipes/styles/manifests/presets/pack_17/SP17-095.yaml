@@ -15,12 +15,9 @@ tags:
   - darkest dungeon
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use Darkest Dungeon (2016)'s loose, character-first gothic drawing: wiry and hunched anatomy,
-    hooked or angular profiles, expressive faces and props whose shape helps tell the pose, all cut
-    by bold near-black masses. The signature is the collision of weighty silhouettes with restless
-    hand-drawn line, not simply a dark palette or thick comic outline.
+  aesthetic: 'Loose, character-first expressionist gothic drawing: wiry and hunched anatomy, hooked or angular profiles, expressive faces and props whose shape helps tell the pose, all cut by bold near-black masses. The signature is the collision of weighty silhouettes with restless hand-drawn line, not simply a dark palette or thick comic outline.'
   subject_treatment: >-
     Preserve the requested person, creature, count and action, then exaggerate fatigue or intent
     through a bent spine, long forearm, tight grip, raised collar, hooked tool or sharply turned
@@ -55,13 +52,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-095.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Darkest Dungeon (2016 release by Red Hook Studios)
   pairedPresetId: SP12-092
   sourceReferences:
@@ -114,6 +115,7 @@ taxonomy:
     - darkest dungeon
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

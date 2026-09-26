@@ -23,9 +23,9 @@ visualDna:
   lighting_and_shadow: Flat manuscript light with simple object shadows only when useful.
   texture_and_material: Pen outlines, small flat color fills, smooth parchment, and sparse decorative marks.
   camera_and_composition: Asymmetrical manuscript margin crop, one large funny-strange creature, and small support motifs without words.
-  atmosphere_and_mood: Carry the prompt through Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
   rendering_and_quality: Clean line illustration with low detail density and generous negative space.
-  creative_brief: 'Reusable visual system for any subject needing scholastic marginalia play, medieval side note weirdness, textless occult humor, and clean parchment spacing. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Scholastic Marginalia Beasts: Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness.'
   key_features: Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness
 avoidRules:
   - readable manuscript text

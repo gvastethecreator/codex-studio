@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Cool rune glow from shield and saddle plus soft daylight on armor plates; large simple shadow shapes keep tech readable.
   texture_and_material: Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath cloth, and matte banner fabric.
   camera_and_composition: Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and balanced future-feudal silhouette.
-  atmosphere_and_mood: Carry the prompt through Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
   rendering_and_quality: Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and medieval silhouette logic.
-  creative_brief: 'Makes any subject feel like part of a future feudal order built on castles, vows, and rune technology. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Futuristic Medieval Citadel: rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness.'
   key_features: Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness
 avoidRules:
   - neon city cyberpunk

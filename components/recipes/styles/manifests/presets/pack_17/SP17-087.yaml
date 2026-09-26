@@ -15,10 +15,9 @@ tags:
   - mortal shell
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Mortal Shell (2020) dark-fantasy concept-art language: compact iron masses and gaunt organic
-    forms, severe silhouettes, damp mineral environments and physically oppressive weight.
+  aesthetic: 'Tarnished dark-fantasy concept-art language, a technique study rather than a copy of any work: compact iron masses and gaunt organic forms, severe silhouettes, damp mineral environments and physically oppressive weight.'
   subject_treatment: >-
     Preserve explicit identity, action and count. Design unspecified contours with a burdened center
     of gravity, narrow joint gaps and contrasts between protective mass and frail exposed form; use
@@ -46,13 +45,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-087.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Mortal Shell (2020 original game; 2021 Enhanced Edition material references)
   pairedPresetId: SP12-084
   sourceReferences:
@@ -105,6 +108,7 @@ taxonomy:
     - mortal shell
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -24,11 +24,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and balanced future-feudal silhouette.',
       atmosphere_and_mood:
-        "Carry the prompt through Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and medieval silhouette logic.',
       creative_brief:
-        'Makes any subject feel like part of a future feudal order built on castles, vows, and rune technology. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Futuristic Medieval Citadel: rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness.',
       key_features:
         'Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness',
     },
@@ -56,11 +56,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Three-quarter armor-design hierarchy, low heroic angle, optional helm or shield geometry, and strong heraldic symmetry without requiring a full suit showcase.',
       atmosphere_and_mood:
-        "Carry the prompt through Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and limited VFX.',
       creative_brief:
-        'Route any subject through techno crusader armor language: preserve the prompt while adding sealed plate rhythm, oath hardware, relic batteries, servo geometry, and future medieval devotion without requiring a knight suit. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Techno Crusader Armor: Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm.',
       key_features:
         'Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm',
     },
@@ -88,11 +88,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale hierarchy, and soft poster balance.',
       atmosphere_and_mood:
-        "Carry the prompt through Prophetic, wondrous, eerie, and retro futurist; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Prophetic, wondrous, eerie, and retro futurist; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.',
       creative_brief:
-        'Reusable visual system for any subject needing retro future prophecy, luminous medieval geometry, analog bloom, and eerie wonder. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Synth Castle Prophecy: Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes.',
       key_features:
         'Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes',
     },
@@ -120,11 +120,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.',
       atmosphere_and_mood:
-        "Carry the prompt through Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing future medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred tech weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Mecha Reliquary Knight: Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass.',
       key_features:
         'Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass',
     },
@@ -150,11 +150,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Riblike depth rhythm, organic arch pressure, centered bio-relic hierarchy, and damp symmetry without requiring a tunnel or fixed organism.',
       atmosphere_and_mood:
-        "Carry the prompt through Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval biotech unease, bone growth structure, rune logic, and damp organic material pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Bio Arcane Catacomb: Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech.',
       key_features:
         'Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech',
     },
@@ -180,11 +180,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Frontal icon layout, radial halos, symmetrical panels, and cathedral-window framing.',
       atmosphere_and_mood:
-        "Carry the prompt through Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing sacred cosmic medieval design, luminous pane structure, symbolic forge energy, and flat stained glass clarity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Stained Glass Starforge: Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry.',
       key_features:
         'Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry',
     },
@@ -212,11 +212,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable miniature-like silhouette hierarchy.',
       atmosphere_and_mood:
-        "Carry the prompt through Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.',
       creative_brief:
-        'Reusable visual system for any subject needing trench crusade gravity, sacred smoke, muddy material pressure, and apocalyptic medieval severity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Mud Cathedral Crusade: Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass.',
       key_features:
         'Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass',
     },
@@ -244,11 +244,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Heroic three-quarter miniature showcase, strong base plane, compact warfront depth, and clean object separation.',
       atmosphere_and_mood:
-        "Carry the prompt through Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework, and denoised brush texture.',
       creative_brief:
-        'Reusable visual system for any subject needing gothic wargame readability, chunky miniature presence, compact warfront mood, and grimdark tabletop inspired finish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Gothic Miniature Warfront: Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability.',
       key_features:
         'Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability',
     },
@@ -276,11 +276,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Cropped comic-panel pressure, tilted stone or value planes, action-vs-shadow hierarchy, and readable central tension without requiring a dungeon encounter.',
       atmosphere_and_mood:
-        "Carry the prompt through Anxious, tactical, grimly theatrical, claustrophobic, and adventure ready; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Anxious, tactical, grimly theatrical, claustrophobic, and adventure ready; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean high-contrast ink illustration with controlled paper texture, no dirty low-light speckle.',
       creative_brief:
-        'Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough paper energy, and claustrophobic adventure tension. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy black cuts; exaggerated stress shadows; angular exaggeration, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Stress Ink Dungeon Crawl: Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy black cuts; exaggerated stress shadows; angular exaggeration.',
       key_features:
         'Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy black cuts; exaggerated stress shadows; angular exaggeration',
     },
@@ -306,11 +306,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Frontal heraldic grouping logic, triangular mass arrangement, tall banner-like accents, and print-safe space without requiring a fixed warband.',
       atmosphere_and_mood:
-        "Carry the prompt through Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.',
       creative_brief:
-        'Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval campaign austerity, and print safe dark linework. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Sepulcher Warband Engraving: funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines.',
       key_features:
         'Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines',
     },
@@ -336,11 +336,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Monumental vertical framing with clear focal hierarchy, massive central forms, separated material planes, and readable sacred-industrial depth that adapts to the user's subject.",
       atmosphere_and_mood:
-        "Carry the prompt through Sacred, industrial, catastrophic, penitential, and mythic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Sacred, industrial, catastrophic, penitential, and mythic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Detailed dark fantasy digital illustration with clean black control, defined linework, polished material separation, and heavy denoise.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding iron reliquary mass, sacred machinery, furnace black contrast, and apocalyptic devotional pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+        'Iron Reliquary Apocalypse: Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery.',
       key_features:
         'Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes',
     },
@@ -368,11 +368,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp silhouette against clean shadow.',
       atmosphere_and_mood:
-        "Carry the prompt through Ominous, folkloric, ritualistic, secretive, and elegant; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Ominous, folkloric, ritualistic, secretive, and elegant; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.',
       creative_brief:
-        'Reusable visual system for any subject needing secretive folk horror oath marks, dark ritual elegance, and medieval covenant mood beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Hexenwood Witch Knight Covenant: Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor.',
       key_features:
         'Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor',
     },
@@ -400,11 +400,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and crisp stone-like planes.',
       atmosphere_and_mood:
-        "Carry the prompt through Besieged, scholarly, sacred, tense, and stoic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Besieged, scholarly, sacred, tense, and stoic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and non-readable decorative marks.',
       creative_brief:
-        'Reusable visual system for any subject needing bone script ornament, scholastic siege tension, sacred defense mood, and stoic medieval weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Bone Script Monastery Siege: Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings.',
       key_features:
         'Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings',
     },
@@ -432,11 +432,11 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Symmetrical ritual geometry, circular celestial structure, tall banner rhythm, and centered readable anchor without forcing an exorcism action.',
       atmosphere_and_mood:
-        "Carry the prompt through Sacred, cosmic, strategic, quiet, and ominous; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
+        'Sacred, cosmic, strategic, quiet, and ominous; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.',
       rendering_and_quality:
         'Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable silhouette design.',
       creative_brief:
-        'Reusable visual system for any subject needing astral medieval gravity, celestial geometry, feudal ritual restraint, and cosmic crusade energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+        'Astral Feudal Exorcists: Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic.',
       key_features:
         'Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic',
     },

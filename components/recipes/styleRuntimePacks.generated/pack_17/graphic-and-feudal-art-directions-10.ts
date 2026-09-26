@@ -8,10 +8,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Darksiders — Apocalyptic Graphic Fantasy',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Darksiders (2010) as Western action-comic fantasy: monumental, sculpted heroic bodies and oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it before surface texture.',
+        'Apocalyptic Western action-comic fantasy: monumental, sculpted heroic bodies and oversized equipment are cut into forceful silhouettes, dark ink contours and clear cel-like planes. Keep the modeled volume, but let graphic shape design and hard value breaks define it before surface texture.',
       subject_treatment:
         'Preserve the requested identity, action and framing. Unless the user explicitly locks the proportions, where a humanoid subject fits, push heroic anatomy far beyond natural proportions: huge chest, trapezius, deltoids, upper arms and forearms; a conspicuously small head and pinched waist; hands, gauntlets and boots enlarged enough to dominate the silhouette. Layer a few angular armor plates over visibly living anatomy so flesh, armor and joints remain distinct. Keep the treatment adaptable; do not default to War, a Horseman, a demon, a weapon or a battle.',
       color_and_tone:
@@ -37,10 +37,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blasphemous — Penitent Pixel Gothic',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Make this specifically Blasphemous (2019)'s penitential pixel-gothic language, not a generic pixel filter: carved, processional silhouettes; severe grotesque faces; relic-like ornamental shapes; and the tension between cramped horizontal travel and towering sacred architecture. Translate the visual grammar into the requested subject without copying a named character or requiring a religious scene.",
+        'Penitential pixel-gothic language, not a generic pixel filter: carved, processional silhouettes; severe grotesque faces; relic-like ornamental shapes; and the tension between cramped horizontal travel and towering sacred architecture. Translate the visual grammar into the requested subject without copying any existing character or requiring a religious scene.',
       subject_treatment:
         'Preserve the requested subject and action, then use elongated cloth or body shapes, mask-like facial planes, carved edges and small ritual-looking ornaments only where the subject can support them. Let an ordinary object read as a relic through deliberate silhouette and pixel grouping, not by replacing it with a church prop, saint or monster.',
       color_and_tone:
@@ -66,10 +66,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Onimusha — Feudal Supernatural Drama',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Onimusha: Warlords visual world translated into dramatic painted art: grounded Sengoku craft, theatrical samurai silhouettes and sharply colored supernatural energy against dark architectural framing.',
+        'Feudal supernatural drama translated into painted art: grounded Sengoku-period craft, theatrical armored silhouettes and sharply colored supernatural energy against dark architectural framing.',
       subject_treatment:
         'Preserve explicit identity and action. Shape unspecified clothing and objects through tied layers, overlapping lacquer plates and purposeful asymmetry; spectral accents attach to a meaningful active form.',
       color_and_tone:
@@ -95,10 +95,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'For Honor — Battlefield Monumentality',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'For Honor (2017) painted art direction: credible medieval construction pushed into massive heroic scale, practical martial silhouettes and battered faction colors against monumental fortifications.',
+        'Monumental battlefield painted art direction: credible medieval construction pushed into massive heroic scale, practical martial silhouettes and battered faction colors against monumental fortifications.',
       subject_treatment:
         'Preserve explicit identity and action. Favor functional layers, load-bearing joins and substantial weight; exaggerate scale and silhouette without turning every object into decorative fantasy armor.',
       color_and_tone:
@@ -124,10 +124,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mortal Kombat 1 — Martial Pageantry',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Mortal Kombat 1 (2023) cinematic martial fantasy, built around identifiable fighter designs, tailored combat gear and supernatural techniques that belong to the character. Keep the realistic, sculpted body rendering and theatrical finish, while making role, weapon and power silhouette as distinctive as the palette.',
+        'Cinematic martial pageantry, a technique study rather than a copy of any roster: original fighters with tailored combat gear and supernatural techniques that belong to each character. Keep realistic, sculpted body rendering and a theatrical finish, while making role, weapon and power silhouette as distinctive as the palette.',
       subject_treatment:
         'Preserve the requested subject, action and explicit clothing. When a fighter or fantasy character is present, make their identity readable through a specific combat silhouette: headwear or mask, high collar, fitted or layered tunic, wraps, segmented armor, metal guards, waist panels and a signature weapon as the subject warrants. Treat these as a coordinated, functional design rather than generic flowing silk and ornaments. Integrate a fitting supernatural effect into the body, weapon or action silhouette (for example fire, ice, lightning, shadow or transformation); do not replace the requested identity or outfit with a stock fighter.',
       color_and_tone:
@@ -153,10 +153,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Darkest Dungeon — Expressionist Ink',
     category: '10. Graphic & Feudal Art Directions',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Use Darkest Dungeon (2016)'s loose, character-first gothic drawing: wiry and hunched anatomy, hooked or angular profiles, expressive faces and props whose shape helps tell the pose, all cut by bold near-black masses. The signature is the collision of weighty silhouettes with restless hand-drawn line, not simply a dark palette or thick comic outline.",
+        'Loose, character-first expressionist gothic drawing: wiry and hunched anatomy, hooked or angular profiles, expressive faces and props whose shape helps tell the pose, all cut by bold near-black masses. The signature is the collision of weighty silhouettes with restless hand-drawn line, not simply a dark palette or thick comic outline.',
       subject_treatment:
         'Preserve the requested person, creature, count and action, then exaggerate fatigue or intent through a bent spine, long forearm, tight grip, raised collar, hooked tool or sharply turned face where appropriate. Keep gesture and expression legible; do not automatically add a four-person party, medieval armor or a monster.',
       color_and_tone:

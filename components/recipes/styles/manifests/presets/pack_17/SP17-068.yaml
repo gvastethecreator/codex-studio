@@ -22,7 +22,7 @@ tags:
   - grimdark
 visualDna:
   aesthetic: Post-nuclear grimdark fantasy where rusted vault shapes, retrofuturist decay, medieval survival silhouettes, and sacred hazard symbols merge without using logos or readable signage.
-  subject_treatment: Any prompt subject becomes a rusted vault relic, survivor, beast, shrine, armor, settlement fragment, or symbol system while preserving prompt X and avoiding fixed wasteland cosplay.
+  subject_treatment: 'Recast the requested subject as a rusted vault relic, survivor, beast, shrine, armor, settlement fragment or symbol system, preserving its identity and avoiding stock wasteland costume.'
   color_and_tone: Rusted orange, oxidized green, old steel, bone, radioactive yellow-green pin accents, blackened brown, and dusty gray.
   lighting_and_shadow: Dusty hazard glow, slit light, warm rust bounce, open readable shadows, and no photoreal nuclear glare.
   texture_and_material: Rusted plate, peeling paint shapes without readable text, cracked concrete, worn cloth, reactor dust, and clean denoised grime.

@@ -56,7 +56,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Dark isometric action-RPG style with ashen cathedral floors, readable loot-era silhouettes, smoky depth, and grim fantasy game-camera staging without UI.',
       subject_treatment:
-        'Route the prompt into an isometric playable-feeling scene, portrait diorama, creature encounter, relic altar, or dungeon fragment while keeping prompt X as the anchor.',
+        'Render the requested subject as an isometric playable-feeling scene, portrait diorama, creature encounter, relic altar or dungeon fragment, keeping it as the clear anchor of the view.',
       color_and_tone:
         'Charcoal, ash gray, old gold, ember orange, bone, cold blue shadow, and controlled crimson accents.',
       lighting_and_shadow:
@@ -126,7 +126,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Robust tabletop fantasy portrait style with heavy silhouettes, lived-in gear, adult body variety, readable faces, and grounded medieval grime without glossy hero-card sameness.',
       subject_treatment:
-        'If prompt X includes a character, make the portrait sturdy, specific, and adult; if not, apply the same robust shape language to creatures, relics, busts, armor, or symbolic figures without forcing an adventurer.',
+        'When the request includes a character, make the portrait sturdy, specific and adult; otherwise apply the same robust shape language to creatures, relics, busts, armor or symbolic figures without inventing an adventurer.',
       color_and_tone:
         'Weathered leather, iron, bone, bruised greens, dull red, old blue, candle amber, and clean midtone shadows.',
       lighting_and_shadow:
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Post-nuclear grimdark fantasy where rusted vault shapes, retrofuturist decay, medieval survival silhouettes, and sacred hazard symbols merge without using logos or readable signage.',
       subject_treatment:
-        'Any prompt subject becomes a rusted vault relic, survivor, beast, shrine, armor, settlement fragment, or symbol system while preserving prompt X and avoiding fixed wasteland cosplay.',
+        'Recast the requested subject as a rusted vault relic, survivor, beast, shrine, armor, settlement fragment or symbol system, preserving its identity and avoiding stock wasteland costume.',
       color_and_tone:
         'Rusted orange, oxidized green, old steel, bone, radioactive yellow-green pin accents, blackened brown, and dusty gray.',
       lighting_and_shadow:
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Cosmic horror folded into medieval chapel language: void geometry, warped arches, starless halos, impossible relics, and religious scale pressure.',
       subject_treatment:
-        'Preserve prompt X as a chapel omen, creature, figure, relic, architecture fragment, or cosmic symbolic event without requiring a literal church interior.',
+        'Preserve the requested subject as a chapel omen, creature, figure, relic, architecture fragment or cosmic symbolic event, without requiring a literal church interior.',
       color_and_tone:
         'Abyss black, bone, starless blue, sick violet, oxidized gold, cold gray, and rare red pinpricks.',
       lighting_and_shadow:
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Future-apocalyptic punishment-machine fantasy with restraint architecture, rusted exoskeletons, ritual machinery, black scaffolds, and implied suffering without graphic torture detail.',
       subject_treatment:
-        'Route prompt X through oppressive future-ruin systems: figure, relic, machine, fortress, beast, shrine, or landscape can carry restraint geometry without becoming a fixed torture scene.',
+        'Carry the requested subject through oppressive future-ruin systems: a figure, relic, machine, fortress, beast, shrine or landscape can show restraint geometry without becoming a torture scene.',
       color_and_tone:
         'Charcoal, rust, bone, dried crimson, sodium amber, oily green, ash gray, and industrial black kept readable.',
       lighting_and_shadow:
@@ -303,7 +303,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Endless modern-war gothic where trench geometry, ruined cathedrals, drone silhouettes, gaslight, and medieval heraldic decay merge into permanent conflict without real-world flags.',
       subject_treatment:
-        'Preserve prompt X as a war-gothic figure, relic, beast, emplacement, ruined shrine, armored silhouette, or battlefield omen while avoiding fixed soldiers or specific wars.',
+        'Preserve the requested subject as a war-gothic figure, relic, beast, emplacement, ruined shrine, armored silhouette or battlefield omen, avoiding stock soldiers or any real war.',
       color_and_tone:
         'Mud gray, bone, oxidized green, dull brass, black iron, ember red, smoke blue, and desaturated field cloth.',
       lighting_and_shadow:

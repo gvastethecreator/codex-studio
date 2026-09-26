@@ -15,11 +15,9 @@ tags:
   - lords of the fallen (2023)
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Lords of the Fallen (2023) concept-art grammar: grounded medieval construction transformed by
-    devotional excess and bodily cosmic horror. Accumulation changes the silhouette, not merely the
-    surface color.
+  aesthetic: 'Tormented allegorical concept-art grammar: grounded medieval construction transformed by devotional excess and bodily cosmic horror. Accumulation changes the silhouette, not merely the surface color.'
   subject_treatment: >-
     Preserve explicit subject and action. On unspecified design areas, use thorn-like extensions,
     layered votive forms and constrained postures; contrast living weight with pallid, emptied
@@ -47,13 +45,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-088.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Lords of the Fallen (2023) (2023 reboot; Axiom/Umbral presentation)
   pairedPresetId: SP12-085
   sourceReferences:
@@ -104,6 +106,7 @@ taxonomy:
     - lords of the fallen (2023)
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

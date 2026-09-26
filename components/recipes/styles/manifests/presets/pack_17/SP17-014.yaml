@@ -19,10 +19,10 @@ visualDna:
   color_and_tone: Mostly clean black ink and aged paper white, with optional one-color neon spot fills.
   lighting_and_shadow: Shadow appears as hatch density, clean black fills, tidy stipple fields, and graphic photocopy contrast.
   texture_and_material: Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line reproduction.
-  camera_and_composition: Single specimen view, label-free frame, marginal ornament, and rigid bestiary-page balance.
-  atmosphere_and_mood: Carry the prompt through Arcane, handmade, archival, and dungeon worn; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  camera_and_composition: Single specimen view in an unlabeled frame, marginal ornament, and rigid bestiary-page balance.
+  atmosphere_and_mood: 'Arcane, handmade, archival, and dungeon worn; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.'
   rendering_and_quality: Controlled xerox print style with strong graphic readability, denoised darks, and rough line charm.
-  creative_brief: 'Turns any subject into an occult bestiary sheet without relying on text labels or clean digital polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  creative_brief: 'Occult Xerox Bestiary: Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white.'
   key_features: Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white
 avoidRules:
   - color gradients

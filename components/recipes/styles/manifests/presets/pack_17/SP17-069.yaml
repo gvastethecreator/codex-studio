@@ -22,7 +22,7 @@ tags:
   - grimdark
 visualDna:
   aesthetic: 'Cosmic horror folded into medieval chapel language: void geometry, warped arches, starless halos, impossible relics, and religious scale pressure.'
-  subject_treatment: Preserve prompt X as a chapel omen, creature, figure, relic, architecture fragment, or cosmic symbolic event without requiring a literal church interior.
+  subject_treatment: 'Preserve the requested subject as a chapel omen, creature, figure, relic, architecture fragment or cosmic symbolic event, without requiring a literal church interior.'
   color_and_tone: Abyss black, bone, starless blue, sick violet, oxidized gold, cold gray, and rare red pinpricks.
   lighting_and_shadow: Impossible backlight, negative-space halo, cold rim, and void darkness opened enough to read the design.
   texture_and_material: Smooth black void, engraved stone, matte cloth, faint star-dust only as controlled specks, and denoised occult surfaces.

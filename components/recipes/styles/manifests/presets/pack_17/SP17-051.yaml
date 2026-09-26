@@ -20,9 +20,9 @@ visualDna:
   lighting_and_shadow: Soft nacre rim light over deep velvet shadow, with small crimson or silver focus accents.
   texture_and_material: Polished bone, nacre, velvet, old ribbon, ceramic glaze, candle wax, and smooth ink.
   camera_and_composition: Mask-like symmetry broken by one off-center threat cue, elegant negative space, and courtly distance applied to any subject type.
-  atmosphere_and_mood: Carry the prompt through Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: 'Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
   rendering_and_quality: Refined gothic editorial illustration with smooth values, crisp silhouettes, and restrained ornament.
-  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding opal bone masquerade elegance, velvet concealment, predatory court etiquette, and polished gothic restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  creative_brief: 'Opal Bone Masquerade: Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline.'
   key_features: Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline
 avoidRules:
   - ballroom crowd
