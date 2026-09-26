@@ -57,25 +57,20 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
       className="studio-logo group cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[var(--wb-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--wb-bg)] relative flex items-center gap-2 rounded-lg p-0.5 select-none"
       aria-label={`Cozy Studio — change accent color (current: ${currentTheme})`}
     >
-      <span className="relative flex size-7 items-center justify-center" aria-hidden="true">
+      <span className="relative flex h-8 w-7 items-center justify-center" aria-hidden="true">
         <span
           ref={ringRef}
-          className="pointer-events-none absolute inset-0 rounded-xl border border-[var(--wb-accent)] opacity-0"
+          className="pointer-events-none absolute inset-0 rounded-full border border-[var(--wb-accent)] opacity-0"
         />
-        <span ref={markRef} className="relative flex size-7 items-center justify-center">
-          <span className="absolute inset-0 rounded-xl bg-accent-500/18 transition-[opacity,transform] duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
-          <span className="absolute inset-[1.5px] rounded-xl border border-[color:var(--wb-border)] bg-[color:var(--wb-well)] backdrop-blur-sm transition-[background-color,border-color] duration-500 ease-out-expo group-hover:border-[color:var(--wb-accent)] group-hover:bg-[color:var(--wb-panel)]" />
+        <span
+          ref={markRef}
+          className={`relative flex h-8 w-7 items-center justify-center ${isGenerating ? 'motion-safe:animate-pulse' : ''}`}
+        >
           <span
             aria-hidden="true"
-            className={`relative z-10 size-[18px] transition-[color,transform] duration-300 ease-out-expo ${appearance === 'light' ? 'text-accent-700 group-hover:text-accent-800' : 'text-accent-300 group-hover:text-accent-200'} ${isGenerating ? 'motion-safe:animate-pulse' : ''}`}
+            className="block h-8 w-7"
             // react-doctor-disable-next-line react-doctor/no-danger
             dangerouslySetInnerHTML={{ __html: logoSvg }}
-          />
-          <span
-            className={`absolute -top-0.5 -right-0.5 size-2.5 rounded-full bg-accent-400 shadow-[0_0_10px_rgb(var(--accent-500)/0.45)] transition-[opacity,transform] duration-300 ${isGenerating ? 'motion-safe:animate-pulse opacity-100' : 'opacity-75 group-hover:scale-110 group-hover:opacity-100'}`}
-          />
-          <span
-            className={`absolute inset-0 bg-accent-500/20 blur-xl rounded-full transition-opacity duration-500 ${isGenerating ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
           />
         </span>
       </span>
