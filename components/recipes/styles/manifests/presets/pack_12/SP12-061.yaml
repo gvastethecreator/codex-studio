@@ -21,14 +21,9 @@ tags:
   - render-third-person-cinematic
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Okami HD gameplay screenshots: ink-wash
-    adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects,
-    and mythic animal motion without copying mascots. Apply this after prompt X; prompt X supplies
-    the subject, action, setting, and intensity while this preset supplies capture language, camera
-    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
-    level, character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Okami HD gameplay: ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Okami HD-adjacent game screenshot
     subject: keep clear role silhouette, player/enemy/object function, scale relationship,
@@ -52,10 +47,7 @@ visualDna:
     Compose with third-person adventure framing with path curves, shrine gates, enemy arena space,
     and brush-action readability. The frame should read as a plausible gameplay capture; include
     UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: >-
-    Carry a Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative. The preset
-    can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but
-    it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: small brush/health icons can
     appear, but keep the screen feeling like painted gameplay rather than UI collage. Maintain
@@ -71,12 +63,7 @@ visualDna:
     shrine gates, enemy arena space, and brush-action readability; mythic, graceful, playful,
     painterly, and restorative; HUD guidance: small brush/health icons can appear, but keep the
     screen feeling like painted gameplay rather than UI collage
-  creative_brief: >-
-    Use Okami Jade Volcano Shrine as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from Okami HD: camera, HUD grammar, material
-    language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed
-    when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "Okami Jade Volcano Shrine: in-game screenshot language informed by Okami HD, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -102,6 +89,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-061.webp
 attributes:
@@ -111,7 +102,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Okami HD
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: >-
@@ -134,6 +125,7 @@ taxonomy:
     - render-third-person-cinematic
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

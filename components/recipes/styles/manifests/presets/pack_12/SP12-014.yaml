@@ -21,14 +21,9 @@ tags:
   - render-first-person-immersive
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Mirror's Edge Catalyst gameplay screenshots:
-    first-person parkour capture with white rooftop geometry, red route language, clean corporate
-    city planes, and motion-forward traversal. Apply this after prompt X; prompt X supplies the
-    subject, action, setting, and intensity while this preset supplies capture language, camera
-    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
-    level, character, logo, or marketing key art.
+  aesthetic: "In-game screenshot look informed by Mirror's Edge Catalyst gameplay: first-person parkour capture with white rooftop geometry, red route language, clean corporate city planes, and motion-forward traversal. It never recreates an exact official level, character, logo or marketing art."
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Mirror's Edge Catalyst-adjacent
     game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -52,10 +47,7 @@ visualDna:
     Compose with first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets,
     and direct route readability. The frame should read as a plausible gameplay capture; include
     UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: >-
-    Carry a Mirror's Edge Catalyst-derived mood: kinetic, sterile, rebellious, precise, and
-    breathless. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
-    when prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: "Mirror's Edge Catalyst-derived mood: kinetic, sterile, rebellious, precise, and breathless; it follows the tone of the requested scene without forcing a fixed mission or story."
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: minimal runner vision, tiny
     objective marker, or reticle is allowed; avoid heavy shooter UI. Maintain heavy-denoise clarity,
@@ -70,12 +62,7 @@ visualDna:
     surfaces; first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets, and
     direct route readability; kinetic, sterile, rebellious, precise, and breathless; HUD guidance:
     minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI
-  creative_brief: >-
-    Use Mirrors Edge Rooftop Parkour as a transferable game-originals preset. Preserve prompt X,
-    then route interpretation through capture references from Mirror's Edge Catalyst: camera, HUD
-    grammar, material language, color coding, encounter readability, and in-engine finish. Coherent
-    HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact
-    levels, and promotional key art.
+  creative_brief: "Mirrors Edge Rooftop Parkour: in-game screenshot language informed by Mirror's Edge Catalyst, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -101,6 +88,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-014.webp
 attributes:
@@ -110,7 +101,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Mirror's Edge Catalyst
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI
@@ -131,6 +122,7 @@ taxonomy:
     - render-first-person-immersive
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

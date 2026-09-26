@@ -3,7 +3,7 @@
     {
       "id": "pack_12",
       "name": "Video Game Originals Vault",
-      "presetCount": 98
+      "presetCount": 138
     }
   ],
   "presets": [
@@ -980,6 +980,222 @@
       "searchableText": "sp12-068 panzer dragoon skyforge dock panzer dragoon: remake gameplay screenshots 3. sci-fi frontiers & mech zones sci-fi game capture pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones"
     },
     {
+      "id": "SP12-119",
+      "name": "Mech Canopy View Capture",
+      "styleAnchors": [
+        "Mech Canopy View Capture",
+        "first-person mech cockpit screenshot",
+        "mech cockpit frame"
+      ],
+      "ref": "pack_12/SP12-119.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "first-person mech cockpit screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "first-person-mech-cockpit-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-119 mech canopy view capture first-person mech cockpit screenshot mech cockpit frame 3. sci-fi frontiers & mech zones sci-fi game capture first-person mech cockpit screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones first-person-mech-cockpit-screenshot"
+    },
+    {
+      "id": "SP12-120",
+      "name": "Weightless Station Drift Capture",
+      "styleAnchors": [
+        "Weightless Station Drift Capture",
+        "zero gravity space station screenshot",
+        "zero gravity"
+      ],
+      "ref": "pack_12/SP12-120.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "zero gravity space station screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "zero-gravity-space-station-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-120 weightless station drift capture zero gravity space station screenshot zero gravity 3. sci-fi frontiers & mech zones sci-fi game capture zero gravity space station screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones zero-gravity-space-station-screenshot"
+    },
+    {
+      "id": "SP12-121",
+      "name": "Planet Overview Colony Capture",
+      "styleAnchors": [
+        "Planet Overview Colony Capture",
+        "orbital strategy planet screenshot",
+        "small planet"
+      ],
+      "ref": "pack_12/SP12-121.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "orbital strategy planet screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "orbital-strategy-planet-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-121 planet overview colony capture orbital strategy planet screenshot small planet 3. sci-fi frontiers & mech zones sci-fi game capture orbital strategy planet screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones orbital-strategy-planet-screenshot"
+    },
+    {
+      "id": "SP12-122",
+      "name": "Asteroid Belt Dogfight Capture",
+      "styleAnchors": [
+        "Asteroid Belt Dogfight Capture",
+        "space fighter chase screenshot",
+        "asteroids"
+      ],
+      "ref": "pack_12/SP12-122.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "space fighter chase screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "space-fighter-chase-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-122 asteroid belt dogfight capture space fighter chase screenshot asteroids 3. sci-fi frontiers & mech zones sci-fi game capture space fighter chase screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones space-fighter-chase-screenshot"
+    },
+    {
+      "id": "SP12-123",
+      "name": "Rover Photo-Mode Capture",
+      "styleAnchors": [
+        "Rover Photo-Mode Capture",
+        "planet rover photo mode screenshot",
+        "small rover"
+      ],
+      "ref": "pack_12/SP12-123.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "planet rover photo mode screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "planet-rover-photo-mode-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-123 rover photo-mode capture planet rover photo mode screenshot small rover 3. sci-fi frontiers & mech zones sci-fi game capture planet rover photo mode screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones planet-rover-photo-mode-screenshot"
+    },
+    {
+      "id": "SP12-124",
+      "name": "Mech Garage Loadout Capture",
+      "styleAnchors": [
+        "Mech Garage Loadout Capture",
+        "mech customization garage screenshot",
+        "mech on gantry"
+      ],
+      "ref": "pack_12/SP12-124.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "mech customization garage screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "mech-customization-garage-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-124 mech garage loadout capture mech customization garage screenshot mech on gantry 3. sci-fi frontiers & mech zones sci-fi game capture mech customization garage screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones mech-customization-garage-screenshot"
+    },
+    {
+      "id": "SP12-125",
+      "name": "Survey Visor Alien Flora Capture",
+      "styleAnchors": [
+        "Survey Visor Alien Flora Capture",
+        "scanner visor alien plants screenshot",
+        "scanning visor"
+      ],
+      "ref": "pack_12/SP12-125.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "scanner visor alien plants screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "scanner-visor-alien-plants-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-125 survey visor alien flora capture scanner visor alien plants screenshot scanning visor 3. sci-fi frontiers & mech zones sci-fi game capture scanner visor alien plants screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones scanner-visor-alien-plants-screenshot"
+    },
+    {
+      "id": "SP12-126",
+      "name": "Station Management Side-View",
+      "styleAnchors": [
+        "Station Management Side-View",
+        "space station management sim screenshot",
+        "station cross-section"
+      ],
+      "ref": "pack_12/SP12-126.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "space station management sim screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "space-station-management-sim-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-126 station management side-view space station management sim screenshot station cross-section 3. sci-fi frontiers & mech zones sci-fi game capture space station management sim screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones space-station-management-sim-screenshot"
+    },
+    {
+      "id": "SP12-127",
+      "name": "Ice Moon Outpost Capture",
+      "styleAnchors": ["Ice Moon Outpost Capture", "frozen moon base screenshot", "frozen moon"],
+      "ref": "pack_12/SP12-127.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "frozen moon base screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "frozen-moon-base-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-127 ice moon outpost capture frozen moon base screenshot frozen moon 3. sci-fi frontiers & mech zones sci-fi game capture frozen moon base screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones frozen-moon-base-screenshot"
+    },
+    {
+      "id": "SP12-128",
+      "name": "Gravity-Flip Corridor Capture",
+      "styleAnchors": [
+        "Gravity-Flip Corridor Capture",
+        "gravity shifting puzzle screenshot",
+        "gravity zones"
+      ],
+      "ref": "pack_12/SP12-128.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sci-fi-frontiers-and-mech-zones",
+      "categoryName": "3. Sci-Fi Frontiers & Mech Zones",
+      "domain": "gravity shifting puzzle screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sci-fi-frontiers-and-mech-zones",
+        "gravity-shifting-puzzle-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-128 gravity-flip corridor capture gravity shifting puzzle screenshot gravity zones 3. sci-fi frontiers & mech zones sci-fi game capture gravity shifting puzzle screenshot pack_12 video game originals vault sci-fi-frontiers-and-mech-zones video-game-originals-vault sci-fi-frontiers-and-mech-zones gravity-shifting-puzzle-screenshot"
+    },
+    {
       "id": "SP12-069",
       "name": "HighFleet Static Dune War",
       "styleAnchors": ["HighFleet gameplay screenshots", "HighFleet Static Dune War"],
@@ -1008,6 +1224,226 @@
       "tags": ["video-game-originals-vault", "arcane-temples-and-mythic-realms"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-070 wild shrine bow trial open-air adventure shrine gameplay screenshots third-person bow puzzle trial 2. arcane temples & mythic realms mythic game capture pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms"
+    },
+    {
+      "id": "SP12-109",
+      "name": "Floating-Island Sky Temple Capture",
+      "styleAnchors": [
+        "Floating-Island Sky Temple Capture",
+        "sky island adventure screenshot",
+        "floating islands"
+      ],
+      "ref": "pack_12/SP12-109.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "sky island adventure screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "sky-island-adventure-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-109 floating-island sky temple capture sky island adventure screenshot floating islands 2. arcane temples & mythic realms mythic game capture sky island adventure screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms sky-island-adventure-screenshot"
+    },
+    {
+      "id": "SP12-110",
+      "name": "Prism Chapel Puzzle Capture",
+      "styleAnchors": [
+        "Prism Chapel Puzzle Capture",
+        "light-refraction puzzle screenshot",
+        "colored beams"
+      ],
+      "ref": "pack_12/SP12-110.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "light-refraction puzzle screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "light-refraction-puzzle-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-110 prism chapel puzzle capture light-refraction puzzle screenshot colored beams 2. arcane temples & mythic realms mythic game capture light-refraction puzzle screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms light-refraction-puzzle-screenshot"
+    },
+    {
+      "id": "SP12-111",
+      "name": "Summoning Circle Cutscene Capture",
+      "styleAnchors": [
+        "Summoning Circle Cutscene Capture",
+        "in-engine summoning cutscene",
+        "glowing summoning circle"
+      ],
+      "ref": "pack_12/SP12-111.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "in-engine summoning cutscene",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "in-engine-summoning-cutscene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-111 summoning circle cutscene capture in-engine summoning cutscene glowing summoning circle 2. arcane temples & mythic realms mythic game capture in-engine summoning cutscene pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms in-engine-summoning-cutscene"
+    },
+    {
+      "id": "SP12-112",
+      "name": "Jungle Ziggurat Platformer Capture",
+      "styleAnchors": [
+        "Jungle Ziggurat Platformer Capture",
+        "jungle temple platform game screenshot",
+        "stepped temple"
+      ],
+      "ref": "pack_12/SP12-112.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "jungle temple platform game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "jungle-temple-platform-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-112 jungle ziggurat platformer capture jungle temple platform game screenshot stepped temple 2. arcane temples & mythic realms mythic game capture jungle temple platform game screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms jungle-temple-platform-game-screenshot"
+    },
+    {
+      "id": "SP12-113",
+      "name": "Spirit-World Shift Capture",
+      "styleAnchors": [
+        "Spirit-World Shift Capture",
+        "dual-realm world shift screenshot",
+        "split realms"
+      ],
+      "ref": "pack_12/SP12-113.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "dual-realm world shift screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "dual-realm-world-shift-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-113 spirit-world shift capture dual-realm world shift screenshot split realms 2. arcane temples & mythic realms mythic game capture dual-realm world shift screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms dual-realm-world-shift-screenshot"
+    },
+    {
+      "id": "SP12-114",
+      "name": "Underwater Temple Dive Capture",
+      "styleAnchors": [
+        "Underwater Temple Dive Capture",
+        "sunken temple exploration screenshot",
+        "sunken temple"
+      ],
+      "ref": "pack_12/SP12-114.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "sunken temple exploration screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "sunken-temple-exploration-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-114 underwater temple dive capture sunken temple exploration screenshot sunken temple 2. arcane temples & mythic realms mythic game capture sunken temple exploration screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms sunken-temple-exploration-screenshot"
+    },
+    {
+      "id": "SP12-115",
+      "name": "Cloud Monastery Glide Capture",
+      "styleAnchors": [
+        "Cloud Monastery Glide Capture",
+        "mountain monastery gliding screenshot",
+        "gliding"
+      ],
+      "ref": "pack_12/SP12-115.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "mountain monastery gliding screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "mountain-monastery-gliding-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-115 cloud monastery glide capture mountain monastery gliding screenshot gliding 2. arcane temples & mythic realms mythic game capture mountain monastery gliding screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms mountain-monastery-gliding-screenshot"
+    },
+    {
+      "id": "SP12-116",
+      "name": "Crystal Cave Side-View Capture",
+      "styleAnchors": [
+        "Crystal Cave Side-View Capture",
+        "crystal cavern exploration screenshot",
+        "glowing crystals"
+      ],
+      "ref": "pack_12/SP12-116.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "crystal cavern exploration screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "crystal-cavern-exploration-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-116 crystal cave side-view capture crystal cavern exploration screenshot glowing crystals 2. arcane temples & mythic realms mythic game capture crystal cavern exploration screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms crystal-cavern-exploration-screenshot"
+    },
+    {
+      "id": "SP12-117",
+      "name": "Cosmic Library Portal Capture",
+      "styleAnchors": [
+        "Cosmic Library Portal Capture",
+        "magical library portal screenshot",
+        "infinite shelves"
+      ],
+      "ref": "pack_12/SP12-117.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "magical library portal screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "magical-library-portal-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-117 cosmic library portal capture magical library portal screenshot infinite shelves 2. arcane temples & mythic realms mythic game capture magical library portal screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms magical-library-portal-screenshot"
+    },
+    {
+      "id": "SP12-118",
+      "name": "Moon Temple Night Trial Capture",
+      "styleAnchors": [
+        "Moon Temple Night Trial Capture",
+        "moonlit temple challenge screenshot",
+        "moonlit temple"
+      ],
+      "ref": "pack_12/SP12-118.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "arcane-temples-and-mythic-realms",
+      "categoryName": "2. Arcane Temples & Mythic Realms",
+      "domain": "moonlit temple challenge screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "arcane-temples-and-mythic-realms",
+        "moonlit-temple-challenge-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-118 moon temple night trial capture moonlit temple challenge screenshot moonlit temple 2. arcane temples & mythic realms mythic game capture moonlit temple challenge screenshot pack_12 video game originals vault arcane-temples-and-mythic-realms video-game-originals-vault arcane-temples-and-mythic-realms moonlit-temple-challenge-screenshot"
     },
     {
       "id": "SP12-071",
@@ -1118,6 +1554,222 @@
       "searchableText": "sp12-078 mark of the ninja lotus heist mark of the ninja gameplay screenshots 1. neon urban & night ops urban game capture pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops"
     },
     {
+      "id": "SP12-099",
+      "name": "Top-Down Neon Twin-Stick Capture",
+      "styleAnchors": [
+        "Top-Down Neon Twin-Stick Capture",
+        "overhead neon shooter game screenshot",
+        "overhead camera"
+      ],
+      "ref": "pack_12/SP12-099.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "overhead neon shooter game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "overhead-neon-shooter-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-099 top-down neon twin-stick capture overhead neon shooter game screenshot overhead camera 1. neon urban & night ops urban game capture overhead neon shooter game screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops overhead-neon-shooter-game-screenshot"
+    },
+    {
+      "id": "SP12-100",
+      "name": "Rain-Slick Alley Stealth Capture",
+      "styleAnchors": [
+        "Rain-Slick Alley Stealth Capture",
+        "third-person rainy stealth screenshot",
+        "rain puddles"
+      ],
+      "ref": "pack_12/SP12-100.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "third-person rainy stealth screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "third-person-rainy-stealth-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-100 rain-slick alley stealth capture third-person rainy stealth screenshot rain puddles 1. neon urban & night ops urban game capture third-person rainy stealth screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops third-person-rainy-stealth-screenshot"
+    },
+    {
+      "id": "SP12-101",
+      "name": "Isometric Hacker Den Capture",
+      "styleAnchors": [
+        "Isometric Hacker Den Capture",
+        "isometric cyberpunk room screenshot",
+        "isometric room"
+      ],
+      "ref": "pack_12/SP12-101.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "isometric cyberpunk room screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "isometric-cyberpunk-room-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-101 isometric hacker den capture isometric cyberpunk room screenshot isometric room 1. neon urban & night ops urban game capture isometric cyberpunk room screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops isometric-cyberpunk-room-screenshot"
+    },
+    {
+      "id": "SP12-102",
+      "name": "Hover-Taxi Chase Capture",
+      "styleAnchors": [
+        "Hover-Taxi Chase Capture",
+        "flying car chase game screenshot",
+        "flying taxi"
+      ],
+      "ref": "pack_12/SP12-102.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "flying car chase game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "flying-car-chase-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-102 hover-taxi chase capture flying car chase game screenshot flying taxi 1. neon urban & night ops urban game capture flying car chase game screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops flying-car-chase-game-screenshot"
+    },
+    {
+      "id": "SP12-103",
+      "name": "Night-Market Brawler Capture",
+      "styleAnchors": [
+        "Night-Market Brawler Capture",
+        "side-scrolling street fight screenshot",
+        "side-scrolling lane"
+      ],
+      "ref": "pack_12/SP12-103.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "side-scrolling street fight screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "side-scrolling-street-fight-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-103 night-market brawler capture side-scrolling street fight screenshot side-scrolling lane 1. neon urban & night ops urban game capture side-scrolling street fight screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops side-scrolling-street-fight-screenshot"
+    },
+    {
+      "id": "SP12-104",
+      "name": "Rooftop Scope View Capture",
+      "styleAnchors": [
+        "Rooftop Scope View Capture",
+        "sniper scope night game screenshot",
+        "scope circle"
+      ],
+      "ref": "pack_12/SP12-104.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "sniper scope night game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "sniper-scope-night-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-104 rooftop scope view capture sniper scope night game screenshot scope circle 1. neon urban & night ops urban game capture sniper scope night game screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops sniper-scope-night-game-screenshot"
+    },
+    {
+      "id": "SP12-105",
+      "name": "Drone Night Feed Capture",
+      "styleAnchors": [
+        "Drone Night Feed Capture",
+        "surveillance drone game screenshot",
+        "night vision"
+      ],
+      "ref": "pack_12/SP12-105.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "surveillance drone game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "surveillance-drone-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-105 drone night feed capture surveillance drone game screenshot night vision 1. neon urban & night ops urban game capture surveillance drone game screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops surveillance-drone-game-screenshot"
+    },
+    {
+      "id": "SP12-106",
+      "name": "Arcade Night Racer Capture",
+      "styleAnchors": [
+        "Arcade Night Racer Capture",
+        "retro arcade night racing screenshot",
+        "behind-car camera"
+      ],
+      "ref": "pack_12/SP12-106.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "retro arcade night racing screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "retro-arcade-night-racing-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-106 arcade night racer capture retro arcade night racing screenshot behind-car camera 1. neon urban & night ops urban game capture retro arcade night racing screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops retro-arcade-night-racing-screenshot"
+    },
+    {
+      "id": "SP12-107",
+      "name": "Pixel Night Ninja Capture",
+      "styleAnchors": [
+        "Pixel Night Ninja Capture",
+        "retro pixel ninja action screenshot",
+        "pixel ninja"
+      ],
+      "ref": "pack_12/SP12-107.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "retro pixel ninja action screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "retro-pixel-ninja-action-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-107 pixel night ninja capture retro pixel ninja action screenshot pixel ninja 1. neon urban & night ops urban game capture retro pixel ninja action screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops retro-pixel-ninja-action-screenshot"
+    },
+    {
+      "id": "SP12-108",
+      "name": "Neon Rhythm Street Battle",
+      "styleAnchors": ["Neon Rhythm Street Battle", "music rhythm combat screenshot", "beat rings"],
+      "ref": "pack_12/SP12-108.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "neon-urban-and-night-ops",
+      "categoryName": "1. Neon Urban & Night Ops",
+      "domain": "music rhythm combat screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "neon-urban-and-night-ops",
+        "music-rhythm-combat-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-108 neon rhythm street battle music rhythm combat screenshot beat rings 1. neon urban & night ops urban game capture music rhythm combat screenshot pack_12 video game originals vault neon-urban-and-night-ops video-game-originals-vault neon-urban-and-night-ops music-rhythm-combat-screenshot"
+    },
+    {
       "id": "SP12-079",
       "name": "Orbital Drop Citadel Hold",
       "styleAnchors": [
@@ -1133,6 +1785,222 @@
       "tags": ["video-game-originals-vault", "sieges-warfronts-and-last-stands"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-079 orbital drop citadel hold third-person co-op extraction shooter screenshots orbital drop defensive hold 4. sieges, warfronts & last stands tactical game capture pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands"
+    },
+    {
+      "id": "SP12-129",
+      "name": "Wall-Breach Horde Defense Capture",
+      "styleAnchors": [
+        "Wall-Breach Horde Defense Capture",
+        "wall defense against horde screenshot",
+        "wall breach"
+      ],
+      "ref": "pack_12/SP12-129.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "wall defense against horde screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "wall-defense-against-horde-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-129 wall-breach horde defense capture wall defense against horde screenshot wall breach 4. sieges, warfronts & last stands tactical game capture wall defense against horde screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands wall-defense-against-horde-screenshot"
+    },
+    {
+      "id": "SP12-130",
+      "name": "Trench Assault Camera Capture",
+      "styleAnchors": [
+        "Trench Assault Camera Capture",
+        "first-person trench assault screenshot",
+        "muddy trench"
+      ],
+      "ref": "pack_12/SP12-130.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "first-person trench assault screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "first-person-trench-assault-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-130 trench assault camera capture first-person trench assault screenshot muddy trench 4. sieges, warfronts & last stands tactical game capture first-person trench assault screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands first-person-trench-assault-screenshot"
+    },
+    {
+      "id": "SP12-131",
+      "name": "Catapult Crew View Capture",
+      "styleAnchors": [
+        "Catapult Crew View Capture",
+        "siege engine crew screenshot",
+        "catapult arm"
+      ],
+      "ref": "pack_12/SP12-131.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "siege engine crew screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "siege-engine-crew-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-131 catapult crew view capture siege engine crew screenshot catapult arm 4. sieges, warfronts & last stands tactical game capture siege engine crew screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands siege-engine-crew-screenshot"
+    },
+    {
+      "id": "SP12-132",
+      "name": "Hex Wargame Board Capture",
+      "styleAnchors": ["Hex Wargame Board Capture", "digital hex wargame screenshot", "hex grid"],
+      "ref": "pack_12/SP12-132.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "digital hex wargame screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "digital-hex-wargame-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-132 hex wargame board capture digital hex wargame screenshot hex grid 4. sieges, warfronts & last stands tactical game capture digital hex wargame screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands digital-hex-wargame-screenshot"
+    },
+    {
+      "id": "SP12-133",
+      "name": "Barricade Night Holdout Capture",
+      "styleAnchors": [
+        "Barricade Night Holdout Capture",
+        "survival barricade defense screenshot",
+        "boarded windows"
+      ],
+      "ref": "pack_12/SP12-133.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "survival barricade defense screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "survival-barricade-defense-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-133 barricade night holdout capture survival barricade defense screenshot boarded windows 4. sieges, warfronts & last stands tactical game capture survival barricade defense screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands survival-barricade-defense-screenshot"
+    },
+    {
+      "id": "SP12-134",
+      "name": "Spaceport Evacuation Holdout",
+      "styleAnchors": [
+        "Spaceport Evacuation Holdout",
+        "sci-fi evacuation defense screenshot",
+        "landing pad"
+      ],
+      "ref": "pack_12/SP12-134.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "sci-fi evacuation defense screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "sci-fi-evacuation-defense-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-134 spaceport evacuation holdout sci-fi evacuation defense screenshot landing pad 4. sieges, warfronts & last stands tactical game capture sci-fi evacuation defense screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands sci-fi-evacuation-defense-screenshot"
+    },
+    {
+      "id": "SP12-135",
+      "name": "Lane-Battle Siege Capture",
+      "styleAnchors": [
+        "Lane-Battle Siege Capture",
+        "lane-based siege strategy screenshot",
+        "opposing castles"
+      ],
+      "ref": "pack_12/SP12-135.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "lane-based siege strategy screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "lane-based-siege-strategy-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-135 lane-battle siege capture lane-based siege strategy screenshot opposing castles 4. sieges, warfronts & last stands tactical game capture lane-based siege strategy screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands lane-based-siege-strategy-screenshot"
+    },
+    {
+      "id": "SP12-136",
+      "name": "Castle Builder Siege Overview",
+      "styleAnchors": [
+        "Castle Builder Siege Overview",
+        "castle management siege screenshot",
+        "castle town"
+      ],
+      "ref": "pack_12/SP12-136.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "castle management siege screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "castle-management-siege-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-136 castle builder siege overview castle management siege screenshot castle town 4. sieges, warfronts & last stands tactical game capture castle management siege screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands castle-management-siege-screenshot"
+    },
+    {
+      "id": "SP12-137",
+      "name": "Massed Cavalry Charge Capture",
+      "styleAnchors": [
+        "Massed Cavalry Charge Capture",
+        "large-scale battle cavalry screenshot",
+        "hundreds of riders"
+      ],
+      "ref": "pack_12/SP12-137.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "large-scale battle cavalry screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "large-scale-battle-cavalry-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-137 massed cavalry charge capture large-scale battle cavalry screenshot hundreds of riders 4. sieges, warfronts & last stands tactical game capture large-scale battle cavalry screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands large-scale-battle-cavalry-screenshot"
+    },
+    {
+      "id": "SP12-138",
+      "name": "Snowfield Artillery Duel Capture",
+      "styleAnchors": [
+        "Snowfield Artillery Duel Capture",
+        "winter artillery battle screenshot",
+        "snowfield"
+      ],
+      "ref": "pack_12/SP12-138.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "sieges-warfronts-and-last-stands",
+      "categoryName": "4. Sieges, Warfronts & Last Stands",
+      "domain": "winter artillery battle screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "sieges-warfronts-and-last-stands",
+        "winter-artillery-battle-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-138 snowfield artillery duel capture winter artillery battle screenshot snowfield 4. sieges, warfronts & last stands tactical game capture winter artillery battle screenshot pack_12 video game originals vault sieges-warfronts-and-last-stands video-game-originals-vault sieges-warfronts-and-last-stands winter-artillery-battle-screenshot"
     },
     {
       "id": "SP12-080",
@@ -1368,5 +2236,5 @@
       "searchableText": "sp12-098 death stranding (2019) traversal gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
     }
   ],
-  "totalPresetCount": 98
+  "totalPresetCount": 138
 }

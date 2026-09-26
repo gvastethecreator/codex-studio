@@ -18,14 +18,7 @@ tags:
   - camera-tabletop-adventure
   - hud-diegetic-card-table
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original analog occult deckbuilder captures: tactile
-    horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive
-    darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit
-    decision-state clarity of games like Inscryption, but land as a different fictional game with
-    different props, card anatomy, symbols, board layout, and opponent staging. Apply this after
-    prompt X; prompt X supplies the subject, action, setting, and intensity while this preset
-    supplies capture language, camera grammar, material behavior, playable readability, and finish.
+  aesthetic: 'Original in-game screenshot look for analog occult deckbuilder captures: tactile horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit decision-state clarity of games like Inscryption, but land as a different fictional game with different props, card anatomy, symbols, board layout, and opponent staging.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable candlebone deck-table state: the
     subject can become card tokens, table hazards, carved icons, small encounter figures,
@@ -51,10 +44,7 @@ visualDna:
     cards, lane grid, draw pile, scale/counter object, sacrifice/energy tokens, and one active
     decision. The frame should read as a plausible gameplay capture; UI should be diegetic and
     wordless, built from table objects, icons, dots, pips, and silhouettes only.
-  atmosphere_and_mood: >-
-    Carry an original candlebone deck-table mood: intimate, predatory, occult, analog,
-    claustrophobic, and puzzle-horror. The preset can become adult, violent, eerie, seductive, cozy,
-    tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Original candlebone deck-table mood: intimate, predatory, occult, analog, claustrophobic and puzzle-horror; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine gameplay screenshot style, not concept art: analog card-table HUD
     is central, but all cards and counters must remain wordless and numberless. Maintain
@@ -72,13 +62,7 @@ visualDna:
     angled locked card-table camera; intimate, predatory, occult, analog, claustrophobic, and
     puzzle-horror; HUD guidance: diegetic card-table HUD built from table objects, icons, dots,
     pips, silhouettes, counters, and physical affordances only
-  creative_brief: >-
-    Use Candlebone Deck Table as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through analog horror deckbuilder references: tactile tabletop camera,
-    physical card grammar, candlelit material language, decision-state readability, and low-fi
-    in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus,
-    logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers,
-    direct Inscryption cloning, and promotional key art.
+  creative_brief: "Candlebone Deck Table: in-game screenshot language informed by analog horror deckbuilder references, covering tactile tabletop camera, physical card grammar, candlelit material language, decision-state readability, and low-fi in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus, logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers, direct Inscryption cloning, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

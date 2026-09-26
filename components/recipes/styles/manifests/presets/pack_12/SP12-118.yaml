@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-118
+packId: pack_12
+name: Moon Temple Night Trial Capture
+styleAnchors:
+  - Moon Temple Night Trial Capture
+  - moonlit temple challenge screenshot
+  - moonlit temple
+displayName: Moon Temple Night Trial Capture
+category: 2. Arcane Temples & Mythic Realms
+domain: moonlit temple challenge screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+  - moon-temple
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a moonlit temple trial with silver light and shifting shadows.
+  color_and_tone: Silver moonlight, deep blue and pale stone, kept consistent across the whole image.
+  lighting_and_shadow: Moonbeams redirected by mirrors, sharp shadows, kept consistent across the whole image.
+  texture_and_material: Pale stone, silver mirrors and water, kept consistent across the whole image.
+  camera_and_composition: Third-person view across the trial chamber, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with hushed lunar ritual.
+  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
+  creative_brief: "Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms. Carry it through moonlit temple, silver mirrors, shadow platforms, trial chamber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: moonlit temple; silver mirrors; shadow platforms; trial chamber
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+    - moon-temple
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: moonlit temple challenge screenshot

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-127
+packId: pack_12
+name: Ice Moon Outpost Capture
+styleAnchors:
+  - Ice Moon Outpost Capture
+  - frozen moon base screenshot
+  - frozen moon
+displayName: Ice Moon Outpost Capture
+category: 3. Sci-Fi Frontiers & Mech Zones
+domain: frozen moon base screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+  - ice-moon
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject at a small outpost on a frozen moon under a giant ringed planet.
+  color_and_tone: Ice blue, white and dim orange planet glow.
+  lighting_and_shadow: Floodlights on ice with deep blue shadows, kept consistent across the whole image.
+  texture_and_material: Cracked ice, frosted metal and snow drifts, kept consistent across the whole image.
+  camera_and_composition: Wide view with the planet dominating the sky.
+  atmosphere_and_mood: Keep the requested mood with isolated frozen awe.
+  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
+  creative_brief: "Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights. Carry it through frozen moon, ringed planet sky, floodlights, cracked ice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: frozen moon; ringed planet sky; floodlights; cracked ice
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+    - ice-moon
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: frozen moon base screenshot

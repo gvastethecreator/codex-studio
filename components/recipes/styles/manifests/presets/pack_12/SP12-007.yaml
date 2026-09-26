@@ -21,14 +21,9 @@ tags:
   - render-strategy-tactics
   - camera-isometric-top-down
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on The Banner Saga gameplay screenshots:
-    hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid
-    positioning, and storybook battlefield clarity. Apply this after prompt X; prompt X supplies the
-    subject, action, setting, and intensity while this preset supplies capture language, camera
-    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
-    level, character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by The Banner Saga gameplay: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable The Banner Saga-adjacent game
     screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -54,10 +49,7 @@ visualDna:
     logic, and landscape silhouettes behind the fight. The frame should read as a plausible gameplay
     capture; include UI/HUD only when it matches the source game's visual logic and improves
     clarity.
-  atmosphere_and_mood: >-
-    Carry a The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound. The
-    preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
-    asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: turn-order cards, stat pips,
     tile markers, and ability icons are allowed as part of tactical readability. Maintain
@@ -73,12 +65,7 @@ visualDna:
     turn-order logic, and landscape silhouettes behind the fight; grim, mythic, exhausted, noble,
     and winter-bound; HUD guidance: turn-order cards, stat pips, tile markers, and ability icons are
     allowed as part of tactical readability
-  creative_brief: >-
-    Use Banner Saga Glacier Tactics as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from The Banner Saga: camera, HUD grammar,
-    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
-    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "Banner Saga Glacier Tactics: in-game screenshot language informed by The Banner Saga, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -104,6 +91,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-007.webp
 attributes:
@@ -113,7 +104,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: The Banner Saga
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: >-
@@ -136,6 +127,7 @@ taxonomy:
     - render-strategy-tactics
     - camera-isometric-top-down
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

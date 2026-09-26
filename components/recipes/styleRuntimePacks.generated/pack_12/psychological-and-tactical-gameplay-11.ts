@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill f — Showa Folklore Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Third-person exploration/action in a lived-in 1960s Japanese town that is visibly being overtaken by red organic bloom.',
@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 2 (2001) — Elevated PS2 Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         "Original 2001 PS2 survival-horror representation, distinguished by the original's looking-down camera rather than the remake's close shoulder view.",
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 2 (2024) — Shoulder-Follow Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         '2024 remake gameplay capture: close third-person exploration inside expanded fogbound streets and interiors, with modern material clarity held under oppressive low visibility.',
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 4 Domestic Threshold Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Silent Hill 4: The Room (2004) first-person apartment exploration: modest PS2-era geometry, dirty domestic surfaces and an impossible bodily threshold invading a closed ordinary room.',
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Metal Gear Solid 3 (2004) Overhead Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Metal Gear Solid 3: Snake Eater (original 2004 PS2) overhead stealth gameplay: olive-yellow camouflage, compact modeled figures, layered alpha-card foliage and softly blurred diffuse textures.',
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Death Stranding (2019) Traversal Gameplay',
     category: '11. Psychological & Tactical Gameplay',
     negativePrompt:
-      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile',
+      'unrequested named characters, copied level layouts or franchise symbols, invented interface text, meters or logos when no interface was requested, obscured player silhouette, unusable terrain or effects that hide the requested action, cinematic promotional posing or a camera that contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Death Stranding (2019) third-person traversal gameplay: burdened technical silhouette against broad wet volcanic terrain, sparse engineered route markers and overcast mineral colors.',

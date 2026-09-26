@@ -15,6 +15,7 @@ tags:
   - 'diablo ii: resurrected'
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     A faithful high-resolution 3D remaster presented at the compact, fixed scale of a classic
@@ -54,6 +55,10 @@ avoidRules:
   - effect bloom that hides target and silhouette separation
   - unrequested game marks or interface overlays; preserve explicitly requested UI and text
   - anime, manga or cel-shaded grammar
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-081.webp
 attributes:
@@ -61,7 +66,7 @@ attributes:
     free-camera portrait blur that breaks the elevated gameplay view, unrequested canonical figures,
     skills or item designs, effect bloom that hides target and silhouette separation, unrequested
     game marks or interface overlays; preserve explicitly requested UI and text, anime, manga or
-    cel-shaded grammar
+    cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Diablo II: Resurrected (2021 remaster; base-game visual direction)'
   pairedPresetId: SP17-084
   sourceReferences:
@@ -118,6 +123,7 @@ taxonomy:
     - 'diablo ii: resurrected'
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

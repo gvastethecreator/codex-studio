@@ -15,6 +15,7 @@ tags:
   - death stranding
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Death Stranding (2019) third-person traversal gameplay: burdened technical silhouette against
@@ -44,6 +45,10 @@ avoidRules:
   - invented interface text, meters or logos when no interface was requested
   - obscured player silhouette, unusable terrain or effects that hide the requested action
   - cinematic promotional posing or a camera that contradicts the selected gameplay profile
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-098.webp
 attributes:
@@ -51,7 +56,7 @@ attributes:
     unrequested named characters, copied level layouts or franchise symbols, invented interface
     text, meters or logos when no interface was requested, obscured player silhouette, unusable
     terrain or effects that hide the requested action, cinematic promotional posing or a camera that
-    contradicts the selected gameplay profile
+    contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: DEATH STRANDING (Original game (2019), not Director's Cut)
   pairedPresetId: SP24-006
   sourceReferences:
@@ -108,6 +113,7 @@ taxonomy:
     - death stranding
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

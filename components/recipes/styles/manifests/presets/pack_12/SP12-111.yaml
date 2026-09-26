@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-111
+packId: pack_12
+name: Summoning Circle Cutscene Capture
+styleAnchors:
+  - Summoning Circle Cutscene Capture
+  - in-engine summoning cutscene
+  - glowing summoning circle
+displayName: Summoning Circle Cutscene Capture
+category: 2. Arcane Temples & Mythic Realms
+domain: in-engine summoning cutscene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+  - summon-cutscene
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject as a summoner or summoned creature in a dramatic cutscene.
+  color_and_tone: Dark surroundings with bright magical circle glow, kept consistent across the whole image.
+  lighting_and_shadow: Glow from the circle lighting faces from below.
+  texture_and_material: Particle swirls, stone floors and flowing robes, kept consistent across the whole image.
+  camera_and_composition: Cinematic low angle toward the emerging creature, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with awe-struck spectacle, kept consistent across the whole image.
+  rendering_and_quality: Polished cutscene look with no subtitles, kept consistent across the whole image.
+  creative_brief: "Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging. Carry it through glowing summoning circle, emerging creature, particles, cutscene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glowing summoning circle; emerging creature; particles; cutscene
+avoidRules:
+  - subtitles or readable glyphs
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+    - summon-cutscene
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: in-engine summoning cutscene

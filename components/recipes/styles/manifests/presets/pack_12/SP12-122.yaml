@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-122
+packId: pack_12
+name: Asteroid Belt Dogfight Capture
+styleAnchors:
+  - Asteroid Belt Dogfight Capture
+  - space fighter chase screenshot
+  - asteroids
+displayName: Asteroid Belt Dogfight Capture
+category: 3. Sci-Fi Frontiers & Mech Zones
+domain: space fighter chase screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+  - asteroid-dogfight
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a small fighter craft chasing or fleeing through asteroids.
+  color_and_tone: Black space with orange engine glow and red and green lasers.
+  lighting_and_shadow: Hard sunlight on asteroids, engine glow, kept consistent across the whole image.
+  texture_and_material: Rocky asteroids, sleek hulls and particle trails, kept consistent across the whole image.
+  camera_and_composition: Chase camera behind the fighter, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with high-speed daring, kept consistent across the whole image.
+  rendering_and_quality: Clean space capture with no HUD text, kept consistent across the whole image.
+  creative_brief: "Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails. Carry it through asteroids, laser streaks, chase camera, engine trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: asteroids; laser streaks; chase camera; engine trails
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+    - asteroid-dogfight
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: space fighter chase screenshot

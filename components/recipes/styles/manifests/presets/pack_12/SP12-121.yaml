@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-121
+packId: pack_12
+name: Planet Overview Colony Capture
+styleAnchors:
+  - Planet Overview Colony Capture
+  - orbital strategy planet screenshot
+  - small planet
+displayName: Planet Overview Colony Capture
+category: 3. Sci-Fi Frontiers & Mech Zones
+domain: orbital strategy planet screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+  - planet-overview
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as colonies and structures on a small planet seen from orbit.
+  color_and_tone: Planet blues, greens and deserts on black space.
+  lighting_and_shadow: Day-night terminator across the globe, kept consistent across the whole image.
+  texture_and_material: Clouds, city lights and glowing route lines, kept consistent across the whole image.
+  camera_and_composition: Orbital view of a curved planet, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with godlike overview, kept consistent across the whole image.
+  rendering_and_quality: Clean strategy capture with no readable UI, kept consistent across the whole image.
+  creative_brief: "Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface. Carry it through small planet, orbital view, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: small planet; orbital view; colony lights; route lines
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+    - planet-overview
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: orbital strategy planet screenshot

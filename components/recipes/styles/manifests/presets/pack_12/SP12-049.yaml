@@ -21,14 +21,9 @@ tags:
   - render-retro-pixel-low-poly
   - camera-side-view
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Castlevania: Symphony of the Night gameplay
-    screenshots: gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view
-    exploration, and crisp sprite combat. Apply this after prompt X; prompt X supplies the subject,
-    action, setting, and intensity while this preset supplies capture language, camera grammar,
-    material behavior, playable readability, and finish. Do not recreate an exact official level,
-    character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Castlevania: Symphony of the Night gameplay: gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Castlevania: Symphony of the
     Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object
@@ -51,10 +46,7 @@ visualDna:
     Compose with side-scrolling room composition with platforms, enemy arcs, door exits, and compact
     action-RPG HUD readability. The frame should read as a plausible gameplay capture; include
     UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: >-
-    Carry a Castlevania: Symphony of the Night-derived mood: romantic, nocturnal, gothic, elegant,
-    and dangerous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
-    when prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Castlevania: Symphony of the Night-derived mood: romantic, nocturnal, gothic, elegant, and dangerous; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: HP/MP bars, item icons, map
     rooms, and small damage numbers are allowed as classic metroidvania UI. Maintain heavy-denoise
@@ -69,12 +61,7 @@ visualDna:
     room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability;
     romantic, nocturnal, gothic, elegant, and dangerous; HUD guidance: HP/MP bars, item icons, map
     rooms, and small damage numbers are allowed as classic metroidvania UI
-  creative_brief: >-
-    Use Symphony Thorn Castle Raid as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from Castlevania: Symphony of the Night: camera,
-    HUD grammar, material language, color coding, encounter readability, and in-engine finish.
-    Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters,
-    exact levels, and promotional key art.
+  creative_brief: "Symphony Thorn Castle Raid: in-game screenshot language informed by Castlevania: Symphony of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -100,6 +87,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-049.webp
 attributes:
@@ -109,7 +100,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Castlevania: Symphony of the Night'
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: >-
@@ -132,6 +123,7 @@ taxonomy:
     - render-retro-pixel-low-poly
     - camera-side-view
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

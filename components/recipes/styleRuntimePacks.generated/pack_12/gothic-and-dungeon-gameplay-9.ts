@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Diablo II: Resurrected Isometric Gameplay Capture',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'free-camera portrait blur that breaks the elevated gameplay view, unrequested canonical figures, skills or item designs, effect bloom that hides target and silhouette separation, unrequested game marks or interface overlays; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
+      'free-camera portrait blur that breaks the elevated gameplay view, unrequested canonical figures, skills or item designs, effect bloom that hides target and silhouette separation, unrequested game marks or interface overlays; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'A faithful high-resolution 3D remaster presented at the compact, fixed scale of a classic action-RPG play frame. Keep the small actor, surrounding threats, terrain, and effect shapes legible together; do not turn the frame into a character close-up.',
@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Diablo IV Elevated ARPG Gameplay Capture',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'cutscene close-up or low-angle key art in place of the elevated gameplay camera, unreadable playable scale or terrain hierarchy, universal red lighting, black crush or indiscriminate fog, unrequested canonical characters, locations, monsters or skills, unrequested HUD, map, interface, logos or captions; preserve explicitly requested UI and text, anime or cel-shaded grammar',
+      'cutscene close-up or low-angle key art in place of the elevated gameplay camera, unreadable playable scale or terrain hierarchy, universal red lighting, black crush or indiscriminate fog, unrequested canonical characters, locations, monsters or skills, unrequested HUD, map, interface, logos or captions; preserve explicitly requested UI and text, anime or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         "A contemporary real-time dark ARPG frame with handcrafted environments, grounded PBR material response, and small playable figures set against larger navigable spaces. Maintain Diablo IV's balance between believable regional world-building and details simplified or emphasized for gameplay readability.",
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bloodborne Third-Person Hunt Capture',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'isometric or first-person view, static fashion portrait in place of gameplay-scale framing, unreadable subject/architecture overlap, unrequested canonical hunter, weapon, boss or landmark, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
+      'isometric or first-person view, static fashion portrait in place of gameplay-scale framing, unreadable subject/architecture overlap, unrequested canonical hunter, weapon, boss or landmark, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'A 2015 PS4-generation real-time action-horror frame whose Gothic environment is experienced from immediately behind the playable hunter. The environment rises around a human-scale figure instead of being reduced to an elevated ARPG playfield.',
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mortal Shell Third-Person Gameplay',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'isometric or first-person camera, static cover portrait or crowded action that hides the playable figure, unrequested canonical shell, weapon, character or arena, invented hardening effect when the prompt does not request it, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
+      'isometric or first-person camera, static cover portrait or crowded action that hides the playable figure, unrequested canonical shell, weapon, character or arena, invented hardening effect when the prompt does not request it, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Mortal Shell (2020) real-time third-person combat: compact blackened armor, gaunt opponents, slick roots, peat-green air and selective mineral hardening with severe material contrast.',
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lords of the Fallen Dual-Realm Gameplay Capture',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'isometric or first-person camera, two unrelated places pasted together, transition light that hides path, subject or nearby forms, unrequested canonical protagonist, boss, shrine or lore symbol, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
+      'isometric or first-person camera, two unrelated places pasted together, transition light that hides path, subject or nearby forms, unrequested canonical protagonist, boss, shrine or lore symbol, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Lords of the Fallen (2023) contemporary third-person dark fantasy, mixing medieval religious excess with pallid Umbral bodily architecture and warm/cold realm contrast.',
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Amnesia: The Dark Descent First-Person Gameplay Capture',
     category: '9. Gothic & Dungeon Gameplay',
     negativePrompt:
-      'third-person portrait, isometric view or cinematic cutaway, mandatory monster, chase, castle landmark or named character, bright modern PBR gloss, dense microtexture or exaggerated film grain, total-black near field or unreadable requested action, unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
+      'third-person portrait, isometric view or cinematic cutaway, mandatory monster, chase, castle landmark or named character, bright modern PBR gloss, dense microtexture or exaggerated film grain, total-black near field or unreadable requested action, unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         "Anchor the preset in Amnesia: The Dark Descent's 2010 HPL2 first-person survival-horror presentation: plain physically handled spaces, simple geometry, modest diffuse textures, and darkness that limits what the player can know.",

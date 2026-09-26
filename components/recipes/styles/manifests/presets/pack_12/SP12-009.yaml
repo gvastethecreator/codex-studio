@@ -21,14 +21,9 @@ tags:
   - render-two-d-side-view
   - camera-side-view
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Castle Crashers gameplay screenshots: 2D co-op
-    beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and
-    four-player chaos readability. Apply this after prompt X; prompt X supplies the subject, action,
-    setting, and intensity while this preset supplies capture language, camera grammar, material
-    behavior, playable readability, and finish. Do not recreate an exact official level, character,
-    logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Castle Crashers gameplay: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Castle Crashers-adjacent game
     screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -53,10 +48,7 @@ visualDna:
     Compose with side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability,
     and foreground/background stage layers. The frame should read as a plausible gameplay capture;
     include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: >-
-    Carry a Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without
-    becoming childish. The preset can become adult, violent, eerie, seductive, cozy, tactical, or
-    absurd when prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: co-op health bars, player
     icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic.
@@ -72,12 +64,7 @@ visualDna:
     crowds, pickup readability, and foreground/background stage layers; violent, playful, chaotic,
     arcade-like, and comic without becoming childish; HUD guidance: co-op health bars, player icons,
     XP numbers, and pickup prompts are allowed when they support brawler screenshot logic
-  creative_brief: >-
-    Use Castle Crashers Co-op Siege as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from Castle Crashers: camera, HUD grammar,
-    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
-    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "Castle Crashers Co-op Siege: in-game screenshot language informed by Castle Crashers, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -103,6 +90,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-009.webp
 attributes:
@@ -112,7 +103,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Castle Crashers
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: >-
@@ -135,6 +126,7 @@ taxonomy:
     - render-two-d-side-view
     - camera-side-view
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

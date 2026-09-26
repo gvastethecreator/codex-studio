@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-135
+packId: pack_12
+name: Lane-Battle Siege Capture
+styleAnchors:
+  - Lane-Battle Siege Capture
+  - lane-based siege strategy screenshot
+  - opposing castles
+displayName: Lane-Battle Siege Capture
+category: 4. Sieges, Warfronts & Last Stands
+domain: lane-based siege strategy screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+  - lane-siege
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as units marching along lanes between two castles.
+  color_and_tone: Bright opposing team colors on green fields, kept consistent across the whole image.
+  lighting_and_shadow: Flat bright light, kept consistent across the whole image.
+  texture_and_material: Cartoon units, stone castles and grass lanes, kept consistent across the whole image.
+  camera_and_composition: Side view with castles at both edges, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with playful tug-of-war, kept consistent across the whole image.
+  rendering_and_quality: Clean readable capture with no UI text, kept consistent across the whole image.
+  creative_brief: "Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle. Carry it through opposing castles, horizontal lanes, marching units, clash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: opposing castles; horizontal lanes; marching units; clash
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+    - lane-siege
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lane-based siege strategy screenshot

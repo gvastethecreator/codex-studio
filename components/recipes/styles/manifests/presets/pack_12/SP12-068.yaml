@@ -17,14 +17,9 @@ tags:
   - render-third-person-cinematic
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Panzer Dragoon: Remake gameplay screenshots:
-    on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on
-    targets, and surreal biomechanical skies. Apply this after prompt X; prompt X supplies the
-    subject, action, setting, and intensity while this preset supplies capture language, camera
-    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
-    level, character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Panzer Dragoon: Remake gameplay: on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Panzer Dragoon: Remake-adjacent
     game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -48,10 +43,7 @@ visualDna:
     Compose with third-person behind-dragon rail camera with targets around the screen, sweeping
     horizon, and cinematic flight route. The frame should read as a plausible gameplay capture;
     include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: >-
-    Carry a Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic
-    sci-fi. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when
-    prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic sci-fi; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: lock-on reticles, health
     gauge, and target brackets are allowed as rail-shooter language. Maintain heavy-denoise clarity,
@@ -67,12 +59,7 @@ visualDna:
     horizon, and cinematic flight route; strange, majestic, lonely, arcade, and mythic sci-fi; HUD
     guidance: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter
     language
-  creative_brief: >-
-    Use Panzer Dragoon Skyforge Dock as a transferable game-originals preset. Preserve prompt X,
-    then route interpretation through capture references from Panzer Dragoon: Remake: camera, HUD
-    grammar, material language, color coding, encounter readability, and in-engine finish. Coherent
-    HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact
-    levels, and promotional key art.
+  creative_brief: "Panzer Dragoon Skyforge Dock: in-game screenshot language informed by Panzer Dragoon: Remake, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -98,6 +85,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-068.webp
 attributes:
@@ -107,7 +98,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Panzer Dragoon: Remake'
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language
@@ -128,6 +119,7 @@ taxonomy:
     - render-third-person-cinematic
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

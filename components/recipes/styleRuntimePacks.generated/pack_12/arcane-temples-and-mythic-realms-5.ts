@@ -13,10 +13,10 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Bloodstained: Ritual of the Night gameplay screenshots: gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Bloodstained: Ritual of the Night gameplay: gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Bloodstained: Ritual of the Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -28,13 +28,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Bloodstained: Ritual of the Night-derived mood: ornate, occult, dramatic, and arcade-readable. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Bloodstained: Ritual of the Night-derived mood: ornate, occult, dramatic, and arcade-readable; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Bloodstained: Ritual of the Night gameplay screenshots; gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors; violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights without copying characters; candelabra pools, stained glass rim, spell bloom, boss hit flashes, and deep library shadow bands; 2.5D gothic masonry, leather books, polished floors, embroidered costumes, demon silhouettes, and clean effect particles; side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability; ornate, occult, dramatic, and arcade-readable; HUD guidance: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot',
       creative_brief:
-        'Use Bloodstained Arcane Library Boss as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Bloodstained: Ritual of the Night: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Bloodstained Arcane Library Boss: in-game screenshot language informed by Bloodstained: Ritual of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -44,10 +44,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Journey gameplay screenshots', 'Journey Crystal Desert Pilgrimage'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Journey gameplay screenshots: minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Journey gameplay: minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Journey-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -59,13 +59,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Journey-derived mood: lonely, sacred, graceful, meditative, and mythic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Journey-derived mood: lonely, sacred, graceful, meditative, and mythic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Journey gameplay screenshots; minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes; burnt orange sand, rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow; low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce; smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry; wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark; lonely, sacred, graceful, meditative, and mythic; HUD guidance: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered',
       creative_brief:
-        'Use Journey Crystal Desert Pilgrimage as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Journey: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Journey Crystal Desert Pilgrimage: in-game screenshot language informed by Journey, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -75,10 +75,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Axiom Verge gameplay screenshots', 'Axiom Verge Ancient Tech Temple'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Axiom Verge gameplay screenshots: retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Axiom Verge gameplay: retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Axiom Verge-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -90,13 +90,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Axiom Verge-derived mood: lonely, alien, retro, corrupted, and exploratory. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Axiom Verge-derived mood: lonely, alien, retro, corrupted, and exploratory; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Axiom Verge gameplay screenshots; retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards; deep purple, toxic green, rusty red, bone white, black void, and electric blue glitch accents; pixel bloom from energy nodes, dark room contrast, weapon flashes, and monitor-like color bands; pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle bursts; side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture; lonely, alien, retro, corrupted, and exploratory; HUD guidance: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct',
       creative_brief:
-        'Use Axiom Verge Ancient Tech Temple as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Axiom Verge: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Axiom Verge Ancient Tech Temple: in-game screenshot language informed by Axiom Verge, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -106,10 +106,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Sunless Skies gameplay screenshots', 'Sunless Skies Celestial Trade'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Sunless Skies gameplay screenshots: top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Sunless Skies gameplay: top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Sunless Skies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -121,13 +121,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Sunless Skies-derived mood: literary, gothic, mercantile, eerie, and cosmic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Sunless Skies-derived mood: literary, gothic, mercantile, eerie, and cosmic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Sunless Skies gameplay screenshots; top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors; inky black, tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents; locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos; painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and storybook UI panels; top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability; literary, gothic, mercantile, eerie, and cosmic; HUD guidance: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI',
       creative_brief:
-        'Use Sunless Skies Celestial Trade as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sunless Skies: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Sunless Skies Celestial Trade: in-game screenshot language informed by Sunless Skies, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -137,10 +137,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Sekiro: Shadows Die Twice gameplay screenshots', 'Sekiro Temple Duel'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Sekiro: Shadows Die Twice gameplay screenshots: third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Sekiro: Shadows Die Twice gameplay: third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Sekiro: Shadows Die Twice-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -152,13 +152,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Sekiro: Shadows Die Twice-derived mood: severe, elegant, lethal, disciplined, and historical-fantastic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Sekiro: Shadows Die Twice-derived mood: severe, elegant, lethal, disciplined, and historical-fantastic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Sekiro: Shadows Die Twice gameplay screenshots; third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing; weathered wood, autumn red, faded gold, ink black, mist grey, and steel-blue blade highlights; soft mountain daylight, lantern amber, sword sparks, deathblow red, and fogged courtyard shadow; aged timber, tatami, rope, lacquer armor, dry leaves, roof tiles, and disciplined samurai cloth detail; over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points; severe, elegant, lethal, disciplined, and historical-fantastic; HUD guidance: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability',
       creative_brief:
-        'Use Sekiro Temple Duel as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sekiro: Shadows Die Twice: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Sekiro Temple Duel: in-game screenshot language informed by Sekiro: Shadows Die Twice, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original stylized palace infiltration JRPG captures: third-person stealth route, theatrical palace interiors, masked enemies, graphic UI accents, sharp color blocking, and readable ambush/combat transitions. Borrow the stylish readability of Persona-like palace gameplay, but land as a different fictional mask-heist JRPG with different costumes, symbols, UI icons, menus, and palace motifs.',
+        'Original in-game screenshot look for stylized palace infiltration JRPG captures: third-person stealth route, theatrical palace interiors, masked enemies, graphic UI accents, sharp color blocking, and readable ambush/combat transitions. Borrow the stylish readability of Persona-like palace gameplay, but land as a different fictional mask-heist JRPG with different costumes, symbols, UI icons, menus, and palace motifs.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable stylized palace run screenshot subject: keep clear player/enemy/object function, stealth route, ambush distance, cover, and interaction affordance without copying source costumes or characters.",
       color_and_tone:
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Persona 5 Royal gameplay screenshots; stylish JRPG palace capture with angular UI energy, red-black fashion, stealth ambush framing, and surreal luxury interiors; crimson red, black, cream, gold, saturated blue shadows, and graphic white accents; stage spotlights, palace glow, high-contrast cel shadows, attack flashes, and stylized menu-like transitions; slick cel-shaded characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic overlays; third-person palace exploration or turn-based combat framing with ambush angles, enemy weaknesses, and dramatic UI rhythm; rebellious, decadent, theatrical, sharp, and stylish; HUD guidance: bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command shapes can appear without readable logo text',
       creative_brief:
-        'Use Velvet Mask Palace Run as a transferable game-originals preset. Preserve prompt X, then route interpretation through stylized palace JRPG references: third-person stealth/combat camera, theatrical color blocking, masked enemies, palace route affordances, and abstract UI grammar. Avoid direct Persona cloning, exact costumes, board-command camera, and readable menu text.',
+        "Velvet Mask Palace Run: in-game screenshot language informed by stylized palace JRPG references, covering third-person stealth/combat camera, theatrical color blocking, masked enemies, palace route affordances, and abstract UI grammar. Avoid direct Persona cloning, exact costumes, board-command camera, and readable menu text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -210,7 +210,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster contract UI',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original grim folklore RPG captures: third-person swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material discipline of Witcher-like games, but land as a different fictional monster-contract RPG with different characters, creatures, villages, UI icons, and quest props.',
+        'Original in-game screenshot look for grim folklore RPG captures: third-person swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material discipline of Witcher-like games, but land as a different fictional monster-contract RPG with different characters, creatures, villages, UI icons, and quest props.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable bog-coven RPG screenshot subject: keep clear role silhouette, monster/player/object function, dodge or sign distance, route affordance, and scale relationship without copying source characters or named IP elements.",
       color_and_tone:
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'original grim folklore RPG gameplay screenshots; third-person swamp contract capture; wet village edges, occult props, monster telegraphs, grounded quest-combat readability; mud brown, swamp green, corpse grey, candle yellow, dried blood red, peat black, stormy blue; overcast swamp light, torch pools, small spell signs, moon haze, monster-eye glints; wet reeds, rotting wood, leather, bone charms, mud, witch huts, creature skin; third-person action-RPG framing with dodge space and quest-location depth; adult, muddy, dangerous, morally murky; HUD guidance: contextual RPG HUD only, no readable quest text',
       creative_brief:
-        'Use Bog Coven Contract as a transferable game-originals preset. Preserve prompt X, then route interpretation through grim folklore RPG references: third-person camera, muddy material language, monster-contract readability, swamp route affordances, and restrained in-engine finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport framing, and promotional key art.',
+        "Bog Coven Contract: in-game screenshot language informed by grim folklore RPG references, covering third-person camera, muddy material language, monster-contract readability, swamp route affordances, and restrained in-engine finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport framing, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -238,10 +238,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Witness gameplay screenshots', 'Witness Orchid Puzzle Garden'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on The Witness gameplay screenshots: first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by The Witness gameplay: first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable The Witness-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -253,13 +253,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a The Witness-derived mood: serene, cerebral, bright, quiet, and spatially precise. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'The Witness-derived mood: serene, cerebral, bright, quiet, and spatially precise; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; puzzle panels and environmental affordances should carry the interface. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'The Witness gameplay screenshots; first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic; orchid pink, grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow; clear island daylight, garden bloom, panel glow, reflected water, and simple readable shadows; smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural surfaces; first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition; serene, cerebral, bright, quiet, and spatially precise; HUD guidance: almost no HUD; puzzle panels and environmental affordances should carry the interface',
       creative_brief:
-        'Use Witness Orchid Puzzle Garden as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Witness: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Witness Orchid Puzzle Garden: in-game screenshot language informed by The Witness, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -269,10 +269,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Okami HD gameplay screenshots', 'Okami Jade Volcano Shrine'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Okami HD gameplay screenshots: ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Okami HD gameplay: ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Okami HD-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -284,13 +284,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Okami HD gameplay screenshots; ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots; rice-paper cream, ink black, vermilion red, jade green, sky blue, and golden sun accents; painted sunlight, blossom glow, brushstroke flashes, lava warmth, and flat illustrative shadows; ink contours, watercolor fills, paper grain, shrine wood, stone lanterns, cloud curls, and calligraphic effects without readable text; third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability; mythic, graceful, playful, painterly, and restorative; HUD guidance: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage',
       creative_brief:
-        'Use Okami Jade Volcano Shrine as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Okami HD: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Okami Jade Volcano Shrine: in-game screenshot language informed by Okami HD, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine UI, recognizable franchise props',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original open-air adventure shrine captures: third-person exploration-combat, bow or tool trial readability, clean cel-natural materials, puzzle routes, stamina/traversal spacing, and sacred outdoor architecture. Borrow the open-air readability of Breath of the Wild-like games, but land as a different fictional shrine-adventure with different props, symbols, UI icons, enemies, and architecture.',
+        'Original in-game screenshot look for open-air adventure shrine captures: third-person exploration-combat, bow or tool trial readability, clean cel-natural materials, puzzle routes, stamina/traversal spacing, and sacred outdoor architecture. Borrow the open-air readability of Breath of the Wild-like games, but land as a different fictional shrine-adventure with different props, symbols, UI icons, enemies, and architecture.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable shrine-adventure screenshot subject: keep clear player/object/threat role, traversal affordance, bow/tool aim relationship, puzzle route, and scale readability without copying source characters or named IP elements.",
       color_and_tone:
@@ -325,7 +325,372 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'The Legend of Zelda: Breath of the Wild gameplay screenshots; third-person open-air adventure capture with cel-shaded terrain, shrine technology, bow aiming, and clean traversal affordances; grass green, shrine blue, warm stone, sky cyan, moon silver, and orange camp glow; soft open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze; painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized terrain; third-person exploration/combat framing with bow reticle, climbable shapes, shrine axes, and distant landmark readability; quiet, adventurous, airy, curious, and lightly magical; HUD guidance: hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if kept clean and authentic to open-world adventure',
       creative_brief:
-        'Use Wild Shrine Bow Trial as a transferable game-originals preset. Preserve prompt X, then route interpretation through open-air adventure references: third-person camera, clean cel-natural materials, shrine mechanisms, bow/tool aiming, traversal routes, and readable puzzle-combat state. Avoid direct Zelda cloning, strategy-tactics framing, exact shrine UI, recognizable franchise props, and promotional composition.',
+        "Wild Shrine Bow Trial: in-game screenshot language informed by open-air adventure references, covering third-person camera, clean cel-natural materials, shrine mechanisms, bow/tool aiming, traversal routes, and readable puzzle-combat state. Avoid direct Zelda cloning, strategy-tactics framing, exact shrine UI, recognizable franchise props, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+    },
+  },
+  {
+    id: 'SP12-109',
+    name: 'Floating-Island Sky Temple Capture',
+    displayName: 'Floating-Island Sky Temple Capture',
+    styleAnchors: [
+      'Floating-Island Sky Temple Capture',
+      'sky island adventure screenshot',
+      'floating islands',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'sky island adventure screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject exploring or gliding between floating temple islands.',
+      color_and_tone: 'Sky blue, cloud white, mossy green and warm stone.',
+      lighting_and_shadow:
+        'Bright sun with soft cloud shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Ancient stone, moss, waterfalls and cloth gliders, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide third-person camera with vertical depth, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with airy wonder, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean real-time capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes. Carry it through floating islands, sky temples, waterfalls into clouds, gliding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating islands; sky temples; waterfalls into clouds; gliding',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-110',
+    name: 'Prism Chapel Puzzle Capture',
+    displayName: 'Prism Chapel Puzzle Capture',
+    styleAnchors: [
+      'Prism Chapel Puzzle Capture',
+      'light-refraction puzzle screenshot',
+      'colored beams',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'light-refraction puzzle screenshot',
+    negativePrompt:
+      'readable runes, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject among beams of colored light redirected through prisms.',
+      color_and_tone: 'Dim stone with pure red, green and blue light beams.',
+      lighting_and_shadow:
+        'Sharp colored beams and glowing targets, kept consistent across the whole image.',
+      texture_and_material: 'Crystal prisms, polished stone and dust in the air.',
+      camera_and_composition:
+        'First-person view along the beam paths, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet clever discovery.',
+      rendering_and_quality:
+        'Clean puzzle capture with no readable text, kept consistent across the whole image.',
+      creative_brief:
+        "Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols. Carry it through colored beams, prisms, symbol targets, chapel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'colored beams; prisms; symbol targets; chapel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-111',
+    name: 'Summoning Circle Cutscene Capture',
+    displayName: 'Summoning Circle Cutscene Capture',
+    styleAnchors: [
+      'Summoning Circle Cutscene Capture',
+      'in-engine summoning cutscene',
+      'glowing summoning circle',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'in-engine summoning cutscene',
+    negativePrompt:
+      'subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject as a summoner or summoned creature in a dramatic cutscene.',
+      color_and_tone:
+        'Dark surroundings with bright magical circle glow, kept consistent across the whole image.',
+      lighting_and_shadow: 'Glow from the circle lighting faces from below.',
+      texture_and_material:
+        'Particle swirls, stone floors and flowing robes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Cinematic low angle toward the emerging creature, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with awe-struck spectacle, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Polished cutscene look with no subtitles, kept consistent across the whole image.',
+      creative_brief:
+        "Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging. Carry it through glowing summoning circle, emerging creature, particles, cutscene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing summoning circle; emerging creature; particles; cutscene',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-112',
+    name: 'Jungle Ziggurat Platformer Capture',
+    displayName: 'Jungle Ziggurat Platformer Capture',
+    styleAnchors: [
+      'Jungle Ziggurat Platformer Capture',
+      'jungle temple platform game screenshot',
+      'stepped temple',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'jungle temple platform game screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject leaping through a side-scrolling jungle temple.',
+      color_and_tone: 'Lush greens, warm stone ochre and golden treasure.',
+      lighting_and_shadow:
+        'Dappled jungle light and dark temple interiors, kept consistent across the whole image.',
+      texture_and_material:
+        'Carved stone, vines, water and wooden traps, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on platform layout with multiple levels, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with adventurous peril, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean colorful game capture, kept consistent across the whole image.',
+      creative_brief:
+        "Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders. Carry it through stepped temple, vines, spike traps, side-scrolling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stepped temple; vines; spike traps; side-scrolling',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-113',
+    name: 'Spirit-World Shift Capture',
+    displayName: 'Spirit-World Shift Capture',
+    styleAnchors: [
+      'Spirit-World Shift Capture',
+      'dual-realm world shift screenshot',
+      'split realms',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'dual-realm world shift screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; split the subject between a living realm and a glowing spirit realm.',
+      color_and_tone: 'Warm natural half and cold glowing violet-teal half.',
+      lighting_and_shadow:
+        'Normal daylight versus ethereal glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Solid materials versus translucent ghostly versions, kept consistent across the whole image.',
+      camera_and_composition:
+        'Split or ripple transition across the frame, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with uncanny duality, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean effect with clear dual reading, kept consistent across the whole image.',
+      creative_brief:
+        "Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states. Carry it through split realms, ghostly glow, same place twice, ripple transition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'split realms; ghostly glow; same place twice; ripple transition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-114',
+    name: 'Underwater Temple Dive Capture',
+    displayName: 'Underwater Temple Dive Capture',
+    styleAnchors: [
+      'Underwater Temple Dive Capture',
+      'sunken temple exploration screenshot',
+      'sunken temple',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'sunken temple exploration screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject diving through a sunken temple with bubbles and light rays.',
+      color_and_tone:
+        'Deep teal, turquoise light and coral pinks, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Caustic god rays from the surface, kept consistent across the whole image.',
+      texture_and_material:
+        'Coral, weathered stone, bubbles and kelp, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person behind the diver into depth, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with serene deep mystery.',
+      rendering_and_quality:
+        'Clean underwater capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles. Carry it through sunken temple, god rays, fish schools, bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sunken temple; god rays; fish schools; bubbles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-115',
+    name: 'Cloud Monastery Glide Capture',
+    displayName: 'Cloud Monastery Glide Capture',
+    styleAnchors: [
+      'Cloud Monastery Glide Capture',
+      'mountain monastery gliding screenshot',
+      'gliding',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'mountain monastery gliding screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject gliding on the wind above cloud-wrapped monasteries.',
+      color_and_tone: 'Soft whites, sky blue and saffron prayer flags.',
+      lighting_and_shadow:
+        'Golden morning light over the cloud sea, kept consistent across the whole image.',
+      texture_and_material:
+        'Cloth wings, stone temples and swirling mist, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide chase view over the cloud sea, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with serene freedom, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean airy real-time capture, kept consistent across the whole image.',
+      creative_brief:
+        "Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents. Carry it through gliding, sea of clouds, mountain monasteries, prayer flags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gliding; sea of clouds; mountain monasteries; prayer flags',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-116',
+    name: 'Crystal Cave Side-View Capture',
+    displayName: 'Crystal Cave Side-View Capture',
+    styleAnchors: [
+      'Crystal Cave Side-View Capture',
+      'crystal cavern exploration screenshot',
+      'glowing crystals',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'crystal cavern exploration screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a glowing side-view crystal cavern.',
+      color_and_tone: 'Deep indigo with glowing cyan, pink and violet crystals.',
+      lighting_and_shadow:
+        'Crystal glow reflecting on water, kept consistent across the whole image.',
+      texture_and_material:
+        'Faceted crystal, wet rock and still pools, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-view cross-section of cave chambers, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely glowing wonder.',
+      rendering_and_quality:
+        'Clean side-view capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers. Carry it through glowing crystals, cave cross-section, reflective pools, tiny explorer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing crystals; cave cross-section; reflective pools; tiny explorer',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-117',
+    name: 'Cosmic Library Portal Capture',
+    displayName: 'Cosmic Library Portal Capture',
+    styleAnchors: [
+      'Cosmic Library Portal Capture',
+      'magical library portal screenshot',
+      'infinite shelves',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'magical library portal screenshot',
+    negativePrompt:
+      'readable book titles, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in an infinite library where shelves open into space.',
+      color_and_tone: 'Warm wood and gold against deep starfield blues.',
+      lighting_and_shadow:
+        'Candlelight mixed with cosmic glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Old wood, leather books and swirling nebula, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person view down endless shelves, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with scholarly cosmic awe.',
+      rendering_and_quality:
+        'Clean capture with no readable book titles, kept consistent across the whole image.',
+      creative_brief:
+        "Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways. Carry it through infinite shelves, floating books, starfield portals, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'infinite shelves; floating books; starfield portals; candlelight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-118',
+    name: 'Moon Temple Night Trial Capture',
+    displayName: 'Moon Temple Night Trial Capture',
+    styleAnchors: [
+      'Moon Temple Night Trial Capture',
+      'moonlit temple challenge screenshot',
+      'moonlit temple',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    domain: 'moonlit temple challenge screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a moonlit temple trial with silver light and shifting shadows.',
+      color_and_tone:
+        'Silver moonlight, deep blue and pale stone, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Moonbeams redirected by mirrors, sharp shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Pale stone, silver mirrors and water, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person view across the trial chamber, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed lunar ritual.',
+      rendering_and_quality:
+        'Clean capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms. Carry it through moonlit temple, silver mirrors, shadow platforms, trial chamber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'moonlit temple; silver mirrors; shadow platforms; trial chamber',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

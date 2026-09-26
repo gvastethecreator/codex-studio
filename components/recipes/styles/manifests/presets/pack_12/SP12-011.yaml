@@ -23,12 +23,7 @@ tags:
   - camera-first-person
   - hud-contextual-hud
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original immersive art-deco first-person shooter
-    captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects,
-    enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of
-    BioShock-like games, but land as a different fictional drowned city with different signage
-    shapes, enemies, weapons, UI icons, and architectural motifs.
+  aesthetic: 'Original in-game screenshot look for immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable drowned-deco first-person
     screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale,
@@ -68,12 +63,7 @@ visualDna:
     interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical,
     paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid
     icons, and objective arrows are allowed if they match immersive-sim screenshot logic
-  creative_brief: >-
-    Use Drowned Deco Pressure Hall as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through immersive art-deco shooter references: first-person camera,
-    brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route
-    readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and
-    promotional composition.
+  creative_brief: "Drowned Deco Pressure Hall: in-game screenshot language informed by immersive art-deco shooter references, covering first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

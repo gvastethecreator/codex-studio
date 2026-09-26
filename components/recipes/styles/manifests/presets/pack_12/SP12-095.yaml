@@ -15,6 +15,7 @@ tags:
   - silent hill 2
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     2024 remake gameplay capture: close third-person exploration inside expanded fogbound streets
@@ -46,6 +47,10 @@ avoidRules:
   - invented interface text, meters or logos when no interface was requested
   - obscured player silhouette, unusable terrain or effects that hide the requested action
   - cinematic promotional posing or a camera that contradicts the selected gameplay profile
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-095.webp
 attributes:
@@ -53,7 +58,7 @@ attributes:
     unrequested named characters, copied level layouts or franchise symbols, invented interface
     text, meters or logos when no interface was requested, obscured player silhouette, unusable
     terrain or effects that hide the requested action, cinematic promotional posing or a camera that
-    contradicts the selected gameplay profile
+    contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: SILENT HILL 2 (Remake (2024))
   pairedPresetId: SP24-003
   sourceReferences:
@@ -114,6 +119,7 @@ taxonomy:
     - silent hill 2
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

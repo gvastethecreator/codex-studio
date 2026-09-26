@@ -17,14 +17,9 @@ tags:
   - render-third-person-cinematic
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Shadow of the Colossus gameplay screenshots:
-    third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental
-    creature silhouettes, and quiet traversal. Apply this after prompt X; prompt X supplies the
-    subject, action, setting, and intensity while this preset supplies capture language, camera
-    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
-    level, character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Shadow of the Colossus gameplay: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Shadow of the Colossus-adjacent
     game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -48,10 +43,7 @@ visualDna:
     weak-point visibility, and lonely negative space. The frame should read as a plausible gameplay
     capture; include UI/HUD only when it matches the source game's visual logic and improves
     clarity.
-  atmosphere_and_mood: >-
-    Carry a Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and
-    monumental. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
-    when prompt X asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: minimal grip/health/stamina
     cues are allowed; let scale and landscape carry the screenshot. Maintain heavy-denoise clarity,
@@ -66,12 +58,7 @@ visualDna:
     cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility,
     and lonely negative space; awe-filled, tragic, ancient, lonely, and monumental; HUD guidance:
     minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot
-  creative_brief: >-
-    Use Colossus Orchard Hunt as a transferable game-originals preset. Preserve prompt X, then route
-    interpretation through capture references from Shadow of the Colossus: camera, HUD grammar,
-    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
-    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "Colossus Orchard Hunt: in-game screenshot language informed by Shadow of the Colossus, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -97,6 +84,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-073.webp
 attributes:
@@ -106,7 +97,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Shadow of the Colossus
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot
@@ -127,6 +118,7 @@ taxonomy:
     - render-third-person-cinematic
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

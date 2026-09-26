@@ -15,6 +15,7 @@ tags:
   - 'silent hill 4: the room'
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Silent Hill 4: The Room (2004) first-person apartment exploration: modest PS2-era geometry,
@@ -45,6 +46,10 @@ avoidRules:
   - invented interface text, meters or logos when no interface was requested
   - obscured player silhouette, unusable terrain or effects that hide the requested action
   - cinematic promotional posing or a camera that contradicts the selected gameplay profile
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-096.webp
 attributes:
@@ -52,7 +57,7 @@ attributes:
     unrequested named characters, copied level layouts or franchise symbols, invented interface
     text, meters or logos when no interface was requested, obscured player silhouette, unusable
     terrain or effects that hide the requested action, cinematic promotional posing or a camera that
-    contradicts the selected gameplay profile
+    contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'SILENT HILL 4: The Room (Original release (2004))'
   pairedPresetId: SP24-004
   sourceReferences:
@@ -107,6 +112,7 @@ taxonomy:
     - 'silent hill 4: the room'
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

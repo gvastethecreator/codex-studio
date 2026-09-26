@@ -15,6 +15,7 @@ tags:
   - for honor
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     For Honor (2017) third-person melee capture with heavy practical armor, massive fortified
@@ -51,6 +52,10 @@ visualDna:
     labels or combat UI only if specifically requested and supported by the selected mode.
 avoidRules:
   - >-
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
     unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
     base-game equipment construction
   - switching the third-person view to a side-on fighting-game plane
@@ -63,7 +68,7 @@ attributes:
     unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
     base-game equipment construction, switching the third-person view to a side-on fighting-game
     plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that
-    hides guard direction or combat spacing
+    hides guard direction or combat spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     For Honor (2017 original release; use base-game combat grammar and leave live-service cosmetics
     out)
@@ -124,6 +129,7 @@ taxonomy:
     - for honor
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -15,6 +15,7 @@ tags:
   - blasphemous
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Represent a Blasphemous (2019)-style 2D gameplay frame: pixel-authored character and effects in
@@ -57,6 +58,10 @@ avoidRules:
   - changing the side-scroll plane or inventing an alternate camera
   - unrequested gore, named religious props, copied meters or fabricated interface text
   - filtering non-pixel subjects with uniform scanlines or blur
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-088.webp
 attributes:
@@ -64,7 +69,7 @@ attributes:
     unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art,
     changing the side-scroll plane or inventing an alternate camera, unrequested gore, named
     religious props, copied meters or fabricated interface text, filtering non-pixel subjects with
-    uniform scanlines or blur
+    uniform scanlines or blur, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Blasphemous (2019 base game by The Game Kitchen; Steam PC listing and Team17 publisher gallery)
   pairedPresetId: SP17-091
   sourceReferences:
@@ -124,6 +129,7 @@ taxonomy:
     - blasphemous
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

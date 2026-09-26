@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-099
+packId: pack_12
+name: Top-Down Neon Twin-Stick Capture
+styleAnchors:
+  - Top-Down Neon Twin-Stick Capture
+  - overhead neon shooter game screenshot
+  - overhead camera
+displayName: Top-Down Neon Twin-Stick Capture
+category: 1. Neon Urban & Night Ops
+domain: overhead neon shooter game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+  - topdown-neon
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from directly above as a readable player or enemy sprite among glowing projectiles.
+  color_and_tone: Black and deep blue floors with hot magenta, cyan and lime glows.
+  lighting_and_shadow: Emissive projectiles and enemies lighting the floor, kept consistent across the whole image.
+  texture_and_material: Clean vector-like sprites, grid floors and particle bursts.
+  camera_and_composition: Fixed overhead camera with the player centered, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with frantic arcade intensity.
+  rendering_and_quality: Crisp glowing game capture with minimal HUD, kept consistent across the whole image.
+  creative_brief: "Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance. Carry it through overhead camera, glowing projectiles, grid floor, swarm enemies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: overhead camera; glowing projectiles; grid floor; swarm enemies
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+    - topdown-neon
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: overhead neon shooter game screenshot

@@ -15,6 +15,7 @@ tags:
   - darksiders
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Darksiders (2010) stylized real-time action adventure: immense comic-book heroic anatomy, small
@@ -57,6 +58,10 @@ avoidRules:
   - changing the requested camera into isometric or side-scrolling gameplay
   - unrequested combat effects, copied health bars or fabricated interface labels
   - modern rendering upgrades presented as the 2010 original
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-087.webp
 attributes:
@@ -64,7 +69,7 @@ attributes:
     unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art,
     changing the requested camera into isometric or side-scrolling gameplay, unrequested combat
     effects, copied health bars or fabricated interface labels, modern rendering upgrades presented
-    as the 2010 original
+    as the 2010 original, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Darksiders (2010 original release; use the original game's visual era as the target)
   pairedPresetId: SP17-090
   sourceReferences:
@@ -119,6 +124,7 @@ taxonomy:
     - darksiders
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

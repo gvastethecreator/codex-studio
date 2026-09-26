@@ -23,13 +23,7 @@ tags:
   - camera-third-person
   - hud-contextual-hud
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original rhythm-action brawler captures: cel-shaded
-    third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat
-    spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera
-    discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a
-    different fictional beat-combat game with different characters, props, arena shapes, icons, and
-    color motifs.
+  aesthetic: 'Original in-game screenshot look for rhythm-action brawler captures: cel-shaded third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a different fictional beat-combat game with different characters, props, arena shapes, icons, and color motifs.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable beat-combat screenshot subject:
     keep clear role silhouette, attack timing, enemy spacing, route or arena affordance, and
@@ -67,12 +61,7 @@ visualDna:
     outlines; third-person arena camera with enemy spacing and readable dodge/combo timing; loud,
     musical, rebellious, playful, kinetic; HUD guidance: abstract combo and beat UI only, no
     readable text
-  creative_brief: >-
-    Use Beatline Phantom Theater as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through rhythm-action brawler references: cel-shaded combat camera,
-    beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid
-    menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics
-    framing.
+  creative_brief: "Beatline Phantom Theater: in-game screenshot language informed by rhythm-action brawler references, covering cel-shaded combat camera, beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics framing. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

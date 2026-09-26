@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-114
+packId: pack_12
+name: Underwater Temple Dive Capture
+styleAnchors:
+  - Underwater Temple Dive Capture
+  - sunken temple exploration screenshot
+  - sunken temple
+displayName: Underwater Temple Dive Capture
+category: 2. Arcane Temples & Mythic Realms
+domain: sunken temple exploration screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+  - underwater-temple
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject diving through a sunken temple with bubbles and light rays.
+  color_and_tone: Deep teal, turquoise light and coral pinks, kept consistent across the whole image.
+  lighting_and_shadow: Caustic god rays from the surface, kept consistent across the whole image.
+  texture_and_material: Coral, weathered stone, bubbles and kelp, kept consistent across the whole image.
+  camera_and_composition: Third-person behind the diver into depth, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with serene deep mystery.
+  rendering_and_quality: Clean underwater capture with no HUD text, kept consistent across the whole image.
+  creative_brief: "Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles. Carry it through sunken temple, god rays, fish schools, bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sunken temple; god rays; fish schools; bubbles
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+    - underwater-temple
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sunken temple exploration screenshot

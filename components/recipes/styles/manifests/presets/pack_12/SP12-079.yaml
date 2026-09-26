@@ -18,12 +18,7 @@ tags:
   - camera-third-person
   - hud-contextual-hud
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original third-person co-op extraction shooter
-    captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or
-    machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op
-    battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game
-    with different armor, factions, enemies, UI icons, and objective props.
+  aesthetic: 'Original in-game screenshot look for third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable third-person co-op hold screenshot
     subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure,
@@ -62,12 +57,7 @@ visualDna:
     teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized,
     satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem
     inputs, objective timer, squad icons, compass, and extraction markers
-  creative_brief: >-
-    Use Orbital Drop Citadel Hold as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through third-person co-op extraction references: squad camera, objective
-    pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct
-    Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact
-    stratagem UI.
+  creative_brief: "Orbital Drop Citadel Hold: in-game screenshot language informed by third-person co-op extraction references, covering squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

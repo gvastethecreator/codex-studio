@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-116
+packId: pack_12
+name: Crystal Cave Side-View Capture
+styleAnchors:
+  - Crystal Cave Side-View Capture
+  - crystal cavern exploration screenshot
+  - glowing crystals
+displayName: Crystal Cave Side-View Capture
+category: 2. Arcane Temples & Mythic Realms
+domain: crystal cavern exploration screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+  - crystal-cave
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject small in a glowing side-view crystal cavern.
+  color_and_tone: Deep indigo with glowing cyan, pink and violet crystals.
+  lighting_and_shadow: Crystal glow reflecting on water, kept consistent across the whole image.
+  texture_and_material: Faceted crystal, wet rock and still pools, kept consistent across the whole image.
+  camera_and_composition: Side-view cross-section of cave chambers, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lonely glowing wonder.
+  rendering_and_quality: Clean side-view capture with no HUD, kept consistent across the whole image.
+  creative_brief: "Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers. Carry it through glowing crystals, cave cross-section, reflective pools, tiny explorer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glowing crystals; cave cross-section; reflective pools; tiny explorer
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+    - crystal-cave
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: crystal cavern exploration screenshot

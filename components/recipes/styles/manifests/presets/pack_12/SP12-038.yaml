@@ -21,14 +21,9 @@ tags:
   - render-strategy-tactics
   - camera-third-person
   - hud-full-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on World of Warships gameplay screenshots: naval
-    combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo
-    lanes, and tactical HUD density. Apply this after prompt X; prompt X supplies the subject,
-    action, setting, and intensity while this preset supplies capture language, camera grammar,
-    material behavior, playable readability, and finish. Do not recreate an exact official level,
-    character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by World of Warships gameplay: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable World of Warships-adjacent game
     screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -53,10 +48,7 @@ visualDna:
     indicators, and broad battle-space readability. The frame should read as a plausible gameplay
     capture; include UI/HUD only when it matches the source game's visual logic and improves
     clarity.
-  atmosphere_and_mood: >-
-    Carry a World of Warships-derived mood: heavy, strategic, naval, explosive, and measured. The
-    preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
-    asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'World of Warships-derived mood: heavy, strategic, naval, explosive, and measured; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: naval HUD can be dense:
     minimap, reticle, ship status, cooldowns, and target markers are coherent here. Maintain
@@ -72,12 +64,7 @@ visualDna:
     broad battle-space readability; heavy, strategic, naval, explosive, and measured; HUD guidance:
     naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are
     coherent here
-  creative_brief: >-
-    Use World of Warships Iron Reef as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from World of Warships: camera, HUD grammar,
-    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
-    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "World of Warships Iron Reef: in-game screenshot language informed by World of Warships, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -103,6 +90,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-038.webp
 attributes:
@@ -112,7 +103,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: World of Warships
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: >-
@@ -135,6 +126,7 @@ taxonomy:
     - render-strategy-tactics
     - camera-third-person
     - hud-full-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

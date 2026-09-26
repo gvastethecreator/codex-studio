@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-134
+packId: pack_12
+name: Spaceport Evacuation Holdout
+styleAnchors:
+  - Spaceport Evacuation Holdout
+  - sci-fi evacuation defense screenshot
+  - landing pad
+displayName: Spaceport Evacuation Holdout
+category: 4. Sieges, Warfronts & Last Stands
+domain: sci-fi evacuation defense screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+  - spaceport-evac
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject holding a landing pad during a desperate evacuation.
+  color_and_tone: Burning orange sky, metal greys and warning lights.
+  lighting_and_shadow: Engine glow and fire light, kept consistent across the whole image.
+  texture_and_material: Metal decking, smoke and dust, kept consistent across the whole image.
+  camera_and_composition: Wide third-person view of the pad, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with heroic urgency, kept consistent across the whole image.
+  rendering_and_quality: Clean capture without gore or HUD text, kept consistent across the whole image.
+  creative_brief: "Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky. Carry it through landing pad, last transport, burning sky, defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: landing pad; last transport; burning sky; defenders
+avoidRules:
+  - gore
+  - existing game characters, logos or levels
+  - readable interface text
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+    - spaceport-evac
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sci-fi evacuation defense screenshot

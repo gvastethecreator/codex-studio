@@ -15,6 +15,7 @@ tags:
   - mortal kombat 1
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Mortal Kombat 1 (2023) polished real-time fighting-game frame with naturalistic fighters, ornate
@@ -50,6 +51,10 @@ visualDna:
     compact and tied to a visible hit or block.
 avoidRules:
   - >-
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
     unrequested named roster characters, copied exact arenas or signature fatalities; retain the
     reference game costume and equipment design vocabulary
   - switching the match plane to third-person roaming or a 2D pixel treatment
@@ -62,7 +67,7 @@ attributes:
     unrequested named roster characters, copied exact arenas or signature fatalities; retain the
     reference game costume and equipment design vocabulary, switching the match plane to
     third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or
-    fabricated health bars, key-art posing that hides playable spacing
+    fabricated health bars, key-art posing that hides playable spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
     designs unless requested)
@@ -123,6 +128,7 @@ taxonomy:
     - mortal kombat 1
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

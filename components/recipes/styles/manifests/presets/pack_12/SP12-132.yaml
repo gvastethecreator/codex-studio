@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-132
+packId: pack_12
+name: Hex Wargame Board Capture
+styleAnchors:
+  - Hex Wargame Board Capture
+  - digital hex wargame screenshot
+  - hex grid
+displayName: Hex Wargame Board Capture
+category: 4. Sieges, Warfronts & Last Stands
+domain: digital hex wargame screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+  - hex-wargame
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as unit counters on a painted hex-grid map.
+  color_and_tone: Muted map greens and browns with bold unit colors.
+  lighting_and_shadow: Flat board light, kept consistent across the whole image.
+  texture_and_material: Painted terrain, hex lines and counter chips, kept consistent across the whole image.
+  camera_and_composition: Top-down angled board view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cerebral grand strategy.
+  rendering_and_quality: Clean board with no readable numbers, kept consistent across the whole image.
+  creative_brief: "Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid. Carry it through hex grid, unit counters, painted map, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hex grid; unit counters; painted map; top-down
+avoidRules:
+  - readable counter numbers
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable counter numbers, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+    - hex-wargame
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: digital hex wargame screenshot

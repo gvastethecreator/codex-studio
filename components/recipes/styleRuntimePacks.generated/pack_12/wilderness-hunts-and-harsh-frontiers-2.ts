@@ -13,10 +13,10 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Avatar: Frontiers of Pandora gameplay screenshots: first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Avatar: Frontiers of Pandora gameplay: first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Avatar: Frontiers of Pandora-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -28,13 +28,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Avatar: Frontiers of Pandora-derived mood: feral, awe-struck, stealthy, humid, and environmentally alive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Avatar: Frontiers of Pandora-derived mood: feral, awe-struck, stealthy, humid, and environmentally alive; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Avatar: Frontiers of Pandora gameplay screenshots; first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths; lush green, cyan bioluminescence, violet flowers, blue skin-adjacent accents without copying characters, and warm sun flecks; canopy shafts, night-glow plants, wet leaf speculars, distant fire, and moonlit mist over traversal routes; fibrous bark, translucent leaves, glowing spores, woven gear, mud, water beads, and organic alien scale patterns; immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy; feral, awe-struck, stealthy, humid, and environmentally alive; HUD guidance: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive',
       creative_brief:
-        'Use Pandora Jungle First-Person Hunt as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Avatar: Frontiers of Pandora: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Pandora Jungle First-Person Hunt: in-game screenshot language informed by Avatar: Frontiers of Pandora, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -44,10 +44,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Dark Souls III gameplay screenshots', 'Dark Souls Smouldering Forge'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Dark Souls III gameplay screenshots: third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Dark Souls III gameplay: third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Dark Souls III-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -59,13 +59,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Dark Souls III-derived mood: punishing, solemn, ruined, hot, and ritualistic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Dark Souls III-derived mood: punishing, solemn, ruined, hot, and ritualistic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Dark Souls III gameplay screenshots; third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth; ash grey, ember orange, charred black, dull brass, corpse beige, and muted blood red; lava underglow, bonfire orange, smoky occlusion, rimmed armor edges, and stark boss-fire contrast; sooty stone, scorched metal, cracked shields, worn cloth, ember particles, and heavy weathered geometry; over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps; punishing, solemn, ruined, hot, and ritualistic; HUD guidance: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent',
       creative_brief:
-        'Use Dark Souls Smouldering Forge as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dark Souls III: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Dark Souls Smouldering Forge: in-game screenshot language informed by Dark Souls III, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -75,10 +75,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Long Dark gameplay screenshots', 'Long Dark Frozen Survival'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on The Long Dark gameplay screenshots: first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by The Long Dark gameplay: first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable The Long Dark-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -90,13 +90,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a The Long Dark-derived mood: isolated, cold, quiet, practical, and tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'The Long Dark-derived mood: isolated, cold, quiet, practical, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'The Long Dark gameplay screenshots; first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger; snow blue, pine green, cabin brown, muted red cloth, grey sky, and lantern amber; overcast snowlight, aurora glow, flashlight beams, stove fire, and low-contrast blizzard fade; stylized snow, frosted wood, cloth gloves, simple tools, animal tracks, ice crystals, and painterly terrain planes; first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability; isolated, cold, quiet, practical, and tense; HUD guidance: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere',
       creative_brief:
-        'Use Long Dark Frozen Survival as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Long Dark: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Long Dark Frozen Survival: in-game screenshot language informed by The Long Dark, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -113,7 +113,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original co-op cavern extraction captures: first-person cave traversal, mineral glow, team tools, creature pressure, drilling routes, extraction objective readability, and chunky stylized rock geometry. Borrow the co-op mining pressure of Deep Rock-like games, but land as a different fictional extraction crew with different suits, tools, creatures, UI icons, and cave motifs.',
+        'Original in-game screenshot look for co-op cavern extraction captures: first-person cave traversal, mineral glow, team tools, creature pressure, drilling routes, extraction objective readability, and chunky stylized rock geometry. Borrow the co-op mining pressure of Deep Rock-like games, but land as a different fictional extraction crew with different suits, tools, creatures, UI icons, and cave motifs.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable cavern extraction screenshot subject: keep clear team/object/threat role, tool scale, route affordance, mineral/resource logic, and enemy spacing without copying source classes or creatures.",
       color_and_tone:
@@ -131,7 +131,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Deep Rock Galactic gameplay screenshots; first-person co-op mining shooter capture with dwarven silhouettes, dark caves, mineral glow, extraction pressure, and class-based readability; black cave, neon green minerals, orange flares, blue shield lights, red hazard glow, and dusty grey rock; thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness swallowed by cave depth; chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace, and industrial mining tools; first-person combat-mining composition with weapon/tool foreground, tunnel routes, swarm lanes, and objective minerals; rowdy, cooperative, subterranean, dangerous, and workmanlike; HUD guidance: class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear coherently',
       creative_brief:
-        'Use Basalt Crew Extraction as a transferable game-originals preset. Preserve prompt X, then route interpretation through co-op cavern extraction references: first-person tools, mineral glow, cave routes, team spacing, creature pressure, and extraction objective readability. Avoid direct Deep Rock cloning, exact class silhouettes, readable mission UI, and retro pixel downgrade.',
+        "Basalt Crew Extraction: in-game screenshot language informed by co-op cavern extraction references, covering first-person tools, mineral glow, cave routes, team spacing, creature pressure, and extraction objective readability. Avoid direct Deep Rock cloning, exact class silhouettes, readable mission UI, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -141,10 +141,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Subnautica gameplay screenshots', 'Subnautica Coral Reef Survival'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Subnautica gameplay screenshots: first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Subnautica gameplay: first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Subnautica-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -156,13 +156,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Subnautica-derived mood: wonderful, vulnerable, aquatic, exploratory, and quietly terrifying. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Subnautica-derived mood: wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Subnautica gameplay screenshots; first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth; tropical cyan, coral orange, kelp green, deep blue, white suit plastic, and bioluminescent violet; sun shafts through water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients; soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water haze; first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks; wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; HUD guidance: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI',
       creative_brief:
-        'Use Subnautica Coral Reef Survival as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Subnautica: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Subnautica Coral Reef Survival: in-game screenshot language informed by Subnautica, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, drone map view, generic military promo shot, readable scope UI text',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original tactical marksman shooter captures: first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a strategy map or military poster.',
+        'Original in-game screenshot look for tactical marksman shooter captures: first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a strategy map or military poster.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable marksman screenshot subject: keep clear distance relationship, target/object function, cover, route affordance, scope/optic framing, and stealth pressure without copying source missions or UI.",
       color_and_tone:
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Sniper Ghost Warrior Contracts 2 gameplay screenshots; long-range tactical sniper capture with desert canyons, optic overlays, distant targets, wind/ballistics tension, and stealth approach routes; red canyon rock, tan sand, military olive, black scope vignette, pale sky, and small red target marks; harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows; rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer, and sandy dust; first-person scoped or over-watch composition with reticle logic, target depth, terrain cover, and ballistic lane readability; patient, lethal, dry, quiet, and tactical; HUD guidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are allowed if precise',
       creative_brief:
-        'Use Canyon Marksman Contract as a transferable game-originals preset. Preserve prompt X, then route interpretation through tactical marksman references: first-person optics, long sightlines, patrol spacing, cover, environmental haze, and readable stealth objective. Avoid strategy-tactics framing, readable scope text, and generic military promo composition.',
+        "Canyon Marksman Contract: in-game screenshot language informed by tactical marksman references, covering first-person optics, long sightlines, patrol spacing, cover, environmental haze, and readable stealth objective. Avoid strategy-tactics framing, readable scope text, and generic military promo composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -207,10 +207,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Monster Hunter: World gameplay screenshots', 'Monster Hunter Thunder Plains'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Monster Hunter: World gameplay screenshots: third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Monster Hunter: World gameplay: third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Monster Hunter: World-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -222,13 +222,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Monster Hunter: World-derived mood: predatory, adventurous, physical, dangerous, and ecological. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Monster Hunter: World-derived mood: predatory, adventurous, physical, dangerous, and ecological; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Monster Hunter: World gameplay screenshots; third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic; storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents; weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from heavy movement; scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and tactile creature anatomy; third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths; predatory, adventurous, physical, dangerous, and ecological; HUD guidance: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability',
       creative_brief:
-        'Use Monster Hunter Thunder Plains as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Monster Hunter: World: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Monster Hunter Thunder Plains: in-game screenshot language informed by Monster Hunter: World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout tower poster',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original painterly first-person wilderness exploration captures: simplified landscape shapes, warm dusk smoke, trail navigation, lookout structures, radio-like intimacy, and readable route landmarks. Borrow the graphic color discipline of Firewatch-like games, but land as a different fictional wilderness with different terrain, props, UI icons, and palette variants.',
+        'Original in-game screenshot look for painterly first-person wilderness exploration captures: simplified landscape shapes, warm dusk smoke, trail navigation, lookout structures, radio-like intimacy, and readable route landmarks. Borrow the graphic color discipline of Firewatch-like games, but land as a different fictional wilderness with different terrain, props, UI icons, and palette variants.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable wilderness exploration screenshot subject: keep clear trail/object function, landmark scale, hand/tool presence when useful, route affordance, and environmental readability without copying exact locations or posters.",
       color_and_tone:
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Firewatch gameplay screenshots; first-person narrative exploration capture with stylized forest planes, ranger lookout towers, warm dusk, and environmental pathfinding; burnt orange sky, pine green, lavender shadow, wood brown, sunlit yellow, and smoky blue distance; golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers; painterly low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry grass; first-person walking-sim framing with hands/tools, path curves, lookout landmark, and quiet navigational depth; lonely, warm, suspicious, contemplative, and outdoorsy; HUD guidance: minimal compass/objective cues or held map/radio interfaces are allowed; avoid gamey clutter',
       creative_brief:
-        'Use Emberwood Lookout Trail as a transferable game-originals preset. Preserve prompt X, then route interpretation through painterly wilderness exploration references: first-person camera, broad color blocking, trail landmarks, smoke/dusk light, and quiet route decisions. Avoid direct Firewatch cloning, exact tower-poster composition, and retro pixel downgrade.',
+        "Emberwood Lookout Trail: in-game screenshot language informed by painterly wilderness exploration references, covering first-person camera, broad color blocking, trail landmarks, smoke/dusk light, and quiet route decisions. Avoid direct Firewatch cloning, exact tower-poster composition, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -276,10 +276,10 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Total War: Three Kingdoms gameplay screenshots: large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Total War: Three Kingdoms gameplay: large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Total War: Three Kingdoms-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -291,13 +291,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Total War: Three Kingdoms-derived mood: historical, strategic, muddy, disciplined, and large-scale. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Total War: Three Kingdoms-derived mood: historical, strategic, muddy, disciplined, and large-scale; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Total War: Three Kingdoms gameplay screenshots; large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy; bronze armor, marsh green, dusty tan, banner red, smoke grey, and muted gold; overcast campaign daylight, fire arrows, campfires, smoke haze, and armor glints; troop formations, polearms, muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter; elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing; historical, strategic, muddy, disciplined, and large-scale; HUD guidance: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI',
       creative_brief:
-        'Use Total War Bronze Marsh Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Total War: Three Kingdoms: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Total War Bronze Marsh Siege: in-game screenshot language informed by Total War: Three Kingdoms, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -307,10 +307,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Shadow of the Colossus gameplay screenshots', 'Colossus Orchard Hunt'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Shadow of the Colossus gameplay screenshots: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Shadow of the Colossus gameplay: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Shadow of the Colossus-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -322,13 +322,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Shadow of the Colossus gameplay screenshots; third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal; sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue; soft ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow; weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear; cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space; awe-filled, tragic, ancient, lonely, and monumental; HUD guidance: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot',
       creative_brief:
-        'Use Colossus Orchard Hunt as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Shadow of the Colossus: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Colossus Orchard Hunt: in-game screenshot language informed by Shadow of the Colossus, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

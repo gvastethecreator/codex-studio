@@ -40,7 +40,7 @@
       "sourcePath": "components/recipes/styles/manifests/presets/pack_12/SP12-001.yaml",
       "sourcePresetId": "SP12-001",
       "sourcePackId": "pack_12",
-      "sourceSha256": "4f329dad66881af2b50b318508f12c62db1f1ade244615c268ebb154c54fc863",
+      "sourceSha256": "86434b5aea1f82d0723a9d370f7454a2928bdcb95f15db2a852b79d38334df03",
       "field": "camera_and_composition",
       "before": "Compose with strict side-on room composition with readable platform lanes, enemy spacing, door exits, throwable props, and action freeze timing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       "proposedKind": "style",

@@ -10,10 +10,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Skies of Arcadia gameplay screenshots', 'Arcadia Cloudship JRPG'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Skies of Arcadia gameplay screenshots: Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter staging. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Skies of Arcadia gameplay: Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter staging. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Skies of Arcadia-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -25,13 +25,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person exploration or turn-based battle framing with airship scale, readable menus if useful, and optimistic sky depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Skies of Arcadia-derived mood: buoyant, swashbuckling, colorful, and classic-console adventurous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Skies of Arcadia-derived mood: buoyant, swashbuckling, colorful, and classic-console adventurous; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: JRPG command windows or battle meters are allowed when they feel like era-correct gameplay UI, not pasted text blocks. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Skies of Arcadia gameplay screenshots; Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter staging; cloud white, sky blue, lacquer red, brass gold, emerald hull paint, and saturated heroic primary accents; soft blue daylight, cloud bounce, simple specular highlights, engine glow, and theatrical battle flashes; low-poly ship hulls, painted sails, brass trim, wooden decks, chunky character proportions, and clean early-console textures; third-person exploration or turn-based battle framing with airship scale, readable menus if useful, and optimistic sky depth; buoyant, swashbuckling, colorful, and classic-console adventurous; HUD guidance: JRPG command windows or battle meters are allowed when they feel like era-correct gameplay UI, not pasted text blocks',
       creative_brief:
-        'Use Arcadia Cloudship JRPG as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Skies of Arcadia: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Arcadia Cloudship JRPG: in-game screenshot language informed by Skies of Arcadia, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -41,10 +41,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Stardew Valley gameplay screenshots', 'Stardew Tavern Pixel Hub'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Stardew Valley gameplay screenshots: top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Stardew Valley gameplay: top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Stardew Valley-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -56,13 +56,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with top-down room or town hub with grid clarity, interactable counters, social spacing, and inventory-bar ergonomics. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Stardew Valley-derived mood: cozy, handmade, social, low-stakes, and quietly productive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Stardew Valley-derived mood: cozy, handmade, social, low-stakes, and quietly productive; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style when kept pixel-clean. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Stardew Valley gameplay screenshots; top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout; warm wood brown, soft lamp yellow, berry red, denim blue, plant green, and muted pixel shadows; simple warm room pools, fireplace glow, window daylight blocks, and tiny highlight pixels; 16-bit inspired tiles, simple furniture sprites, food icons, patterned rugs, pixel portraits, and hand-placed clutter; top-down room or town hub with grid clarity, interactable counters, social spacing, and inventory-bar ergonomics; cozy, handmade, social, low-stakes, and quietly productive; HUD guidance: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style when kept pixel-clean',
       creative_brief:
-        'Use Stardew Tavern Pixel Hub as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Stardew Valley: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Stardew Tavern Pixel Hub: in-game screenshot language informed by Stardew Valley, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -79,7 +79,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Portal clone, exact Aperture chamber copy, readable test signage, recognizable portal gun replica',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original first-person spatial puzzle captures: clean modular test rooms, linked gate surfaces, cubes or weighted props, light bridges, hazard pools, and readable traversal logic. Borrow the clinical puzzle readability of Portal-like games, but land as a different fictional test facility with different props, portal/gate visuals, UI icons, wall markings, and device design.',
+        'Original in-game screenshot look for first-person spatial puzzle captures: clean modular test rooms, linked gate surfaces, cubes or weighted props, light bridges, hazard pools, and readable traversal logic. Borrow the clinical puzzle readability of Portal-like games, but land as a different fictional test facility with different props, portal/gate visuals, UI icons, wall markings, and device design.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable first-person puzzle screenshot subject: keep clear object function, gate relationship, route affordance, hazard, scale, and next-action logic without copying source devices or room layouts.",
       color_and_tone:
@@ -97,7 +97,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Portal 2 gameplay screenshots; first-person puzzle capture with clean test chambers, portal surfaces, laser paths, weighted cubes, and sterile objective readability; white panels, grey concrete, orange/blue portals, cyan laser lines, black mechanical gaps, and warning yellow; clinical overhead light, portal glow, laser beams, panel reflections, and deep behind-wall shadow; modular wall panels, glass, cube edges, gel splashes, metal rails, cables, and clean hard-surface test geometry; first-person portal-gun framing with puzzle affordances, destination sightlines, object relationships, and chamber logic visible; clinical, witty, spatial, experimental, and cleanly mechanical; HUD guidance: almost no HUD; portal reticle and tiny interaction cues are enough',
       creative_brief:
-        'Use Whitewall Gate Test Chamber as a transferable game-originals preset. Preserve prompt X, then route interpretation through first-person spatial puzzle references: clean modular rooms, gate mechanics, traversal logic, object affordances, and minimal HUD. Avoid direct Portal cloning, exact chamber copies, readable signage, and recognizable device replicas.',
+        "Whitewall Gate Test Chamber: in-game screenshot language informed by first-person spatial puzzle references, covering clean modular rooms, gate mechanics, traversal logic, object affordances, and minimal HUD. Avoid direct Portal cloning, exact chamber copies, readable signage, and recognizable device replicas. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -107,10 +107,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Super Mario 3D World gameplay screenshots', 'Mario 3D World Toy Platformer'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Super Mario 3D World gameplay screenshots: bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Super Mario 3D World gameplay: bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Super Mario 3D World-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -122,13 +122,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with fixed/following 3D platform camera with obstacle lanes, collectibles, depth-safe jumps, and clean foreground-to-goal readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Super Mario 3D World-derived mood: playful, precise, buoyant, colorful, and polished. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Super Mario 3D World-derived mood: playful, precise, buoyant, colorful, and polished; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Super Mario 3D World gameplay screenshots; bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design; sky blue, grass green, mushroom red, coin gold, cloud white, and toy-plastic primaries; soft studio daylight, crisp platform shadows, sparkle pickups, and gentle rim on round forms; rounded blocks, glossy pipes, soft grass, simple brick, plush-like enemies without exact character copying, and toy prop materials; fixed/following 3D platform camera with obstacle lanes, collectibles, depth-safe jumps, and clean foreground-to-goal readability; playful, precise, buoyant, colorful, and polished; HUD guidance: score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer UI',
       creative_brief:
-        'Use Mario 3D World Toy Platformer as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Super Mario 3D World: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Mario 3D World Toy Platformer: in-game screenshot language informed by Super Mario 3D World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Slay the Spire clone, readable card text, stat numbers, exact relic bar UI',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original relic deckbuilder captures: 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant/bazaar staging, and readable turn choices. Borrow the clean strategic readability of Slay the Spire-like games, but land as a different fictional relic deckbuilder with different creatures, card anatomy, UI icons, map props, and relic silhouettes.',
+        'Original in-game screenshot look for relic deckbuilder captures: 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant/bazaar staging, and readable turn choices. Borrow the clean strategic readability of Slay the Spire-like games, but land as a different fictional relic deckbuilder with different creatures, card anatomy, UI icons, map props, and relic silhouettes.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable relic deckbuilder screenshot subject: keep clear enemy/player/object function, turn decision, card/resource pressure, intent cue, and scale relationship without copying source characters or named IP elements.",
       color_and_tone:
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'original relic deckbuilder gameplay screenshots; 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant or bazaar staging, readable turn choices; parchment beige, sapphire blue, monster red, poison green, dull gold, cave purple; card glow, bazaar warmth, clean UI contrast; painted card silhouettes, relic icons, rough creature sprites, parchment panels, coin piles; hand at bottom, enemies or event object centered, intent icons above, relic/resource pips; HUD guidance: cards, pips, relic row, potions, and enemy intent icons only, wordless and numberless',
       creative_brief:
-        'Use Relic Bazaar Deck Trial as a transferable game-originals preset. Preserve prompt X, then route interpretation through relic deckbuilder references: 2D card-battle camera, abstract card grammar, intent icons, resource pressure, bazaar/event staging, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Slay the Spire cloning, readable text, and stat numbers.',
+        "Relic Bazaar Deck Trial: original in-game screenshot language for relic deckbuilders, covering a 2D card-battle camera, abstract card grammar, intent icons, resource pressure, bazaar and event staging, and readable board state. Avoid menus, logos, exact characters, exact levels, direct cloning of any card game, readable text and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -173,10 +173,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Fez gameplay screenshots', 'Fez Echo Cavern Puzzle'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Fez gameplay screenshots: pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Fez gameplay: pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Fez-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -188,13 +188,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and one-screen spatial clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Fez-derived mood: mysterious, gentle, clever, retro, and contemplative. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Fez-derived mood: mysterious, gentle, clever, retro, and contemplative; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space should dominate. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Fez gameplay screenshots; pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale; pastel sky blue, cave purple, moss green, golden cube glow, black pixel outlines, and soft pink highlights; simple ambient glow, cube sparkle, cave opening light, and flat pixel shadow; chunky pixel blocks, mossy tiles, ladders, doors, mysterious glyph shapes without readable text, and clean sprite edges; orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and one-screen spatial clarity; mysterious, gentle, clever, retro, and contemplative; HUD guidance: very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space should dominate',
       creative_brief:
-        'Use Fez Echo Cavern Puzzle as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Fez: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Fez Echo Cavern Puzzle: in-game screenshot language informed by Fez, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -204,10 +204,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Dakar Desert Rally gameplay screenshots', 'Dakar Dust Cathedral Rally'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Dakar Desert Rally gameplay screenshots: off-road rally capture with desert tracks, vehicle suspension, dust walls, checkpoint navigation, and long-distance terrain reading. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Dakar Desert Rally gameplay: off-road rally capture with desert tracks, vehicle suspension, dust walls, checkpoint navigation, and long-distance terrain reading. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Dakar Desert Rally-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -219,13 +219,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person chase or cockpit camera with roadbook logic, waypoint depth, rivals, and terrain hazard readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Dakar Desert Rally-derived mood: endurance-focused, dusty, physical, competitive, and expansive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Dakar Desert Rally-derived mood: endurance-focused, dusty, physical, competitive, and expansive; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: rally HUD can include speed, waypoint arrow, damage/status, position, and route markers. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Dakar Desert Rally gameplay screenshots; off-road rally capture with desert tracks, vehicle suspension, dust walls, checkpoint navigation, and long-distance terrain reading; sand tan, cobalt sky, white vehicle panels, black tires, red checkpoint marks, and sunlit dust gold; harsh sun, dust haze, headlight glints, reflective bodywork, and low-angle rally shadows; gravel, sand ruts, tire smoke, vehicle decals without readable brands, rock outcrops, and windblown terrain; third-person chase or cockpit camera with roadbook logic, waypoint depth, rivals, and terrain hazard readability; endurance-focused, dusty, physical, competitive, and expansive; HUD guidance: rally HUD can include speed, waypoint arrow, damage/status, position, and route markers',
       creative_brief:
-        'Use Dakar Dust Cathedral Rally as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dakar Desert Rally: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Dakar Dust Cathedral Rally: in-game screenshot language informed by Dakar Desert Rally, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, readable card text, stat numbers, life point numbers, official trading-card UI, glossy esports card arena, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Inscryption clone',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original analog occult deckbuilder captures: tactile horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit decision-state clarity of games like Inscryption, but land as a different fictional game with different props, card anatomy, symbols, board layout, and opponent staging. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish.',
+        'Original in-game screenshot look for analog occult deckbuilder captures: tactile horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit decision-state clarity of games like Inscryption, but land as a different fictional game with different props, card anatomy, symbols, board layout, and opponent staging.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable candlebone deck-table state: the subject can become card tokens, table hazards, carved icons, small encounter figures, scale/counter pressure, or board affordances while keeping clear role silhouette and decision logic. Avoid turning every prompt into a fixed cabin story or copying named game characters.",
       color_and_tone:
@@ -254,13 +254,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Compose with a low first-person tabletop view or slightly angled locked card-table camera: hand cards, lane grid, draw pile, scale/counter object, sacrifice/energy tokens, and one active decision. The frame should read as a plausible gameplay capture; UI should be diegetic and wordless, built from table objects, icons, dots, pips, and silhouettes only.',
       atmosphere_and_mood:
-        'Carry an original candlebone deck-table mood: intimate, predatory, occult, analog, claustrophobic, and puzzle-horror. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Original candlebone deck-table mood: intimate, predatory, occult, analog, claustrophobic and puzzle-horror; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine gameplay screenshot style, not concept art: analog card-table HUD is central, but all cards and counters must remain wordless and numberless. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, low-fi material restraint, and no fake logos, glossy arena boards, readable card text, stat numbers, or random interface clutter.',
       key_features:
         'original analog occult deckbuilder gameplay screenshots; tactile horror tabletop capture with candlelit surfaces, low-fi card lanes, analog counters, oppressive darkness, escape-room board state, and hand-scale card decisions; soot black, candle amber, aged paper, bone ivory, oxidized green, dried blood red, desaturated wood brown, and dirty brass; candle pools, desk-lamp falloff, weak moon spill, glowing sigil pips, and hard tabletop shadows; worn card stock, scratched wood, wax, bone or teeth counters, hand-inked symbols, tarnished metal clips, dusty tabletop props, and low-fi in-engine materials; low first-person tabletop view or slightly angled locked card-table camera; intimate, predatory, occult, analog, claustrophobic, and puzzle-horror; HUD guidance: diegetic card-table HUD built from table objects, icons, dots, pips, silhouettes, counters, and physical affordances only',
       creative_brief:
-        'Use Candlebone Deck Table as a transferable game-originals preset. Preserve prompt X, then route interpretation through analog horror deckbuilder references: tactile tabletop camera, physical card grammar, candlelit material language, decision-state readability, and low-fi in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus, logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers, direct Inscryption cloning, and promotional key art.',
+        "Candlebone Deck Table: in-game screenshot language informed by analog horror deckbuilder references, covering tactile tabletop camera, physical card grammar, candlelit material language, decision-state readability, and low-fi in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus, logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers, direct Inscryption cloning, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -270,10 +270,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ["Oddworld: New 'n' Tasty gameplay screenshots", 'Oddworld Quarry Escape'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Capture-derived video-game style router based on Oddworld: New 'n' Tasty gameplay screenshots: cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.",
+        "In-game screenshot look informed by Oddworld: New 'n' Tasty gameplay: cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing. It never recreates an exact official level, character, logo or marketing art.",
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Oddworld: New 'n' Tasty-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -285,13 +285,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-on cinematic platform framing with stealth timing, levers, patrols, vertical shafts, and escape path readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        "Carry a Oddworld: New 'n' Tasty-derived mood: oppressed, strange, industrial, comic-dark, and tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.",
+        "Oddworld: New 'n' Tasty-derived mood: oppressed, strange, industrial, comic-dark, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.",
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; small interaction or possession cues can appear but the scene should feel cinematic-playable. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         "Oddworld: New 'n' Tasty gameplay screenshots; cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing; rust orange, toxic green, black machinery, dusty tan, blue industrial light, and sickly yellow signage shapes; factory lamps, furnace glow, searchlights, toxic pools, and deep machine shadows; metal catwalks, rock quarry walls, pipes, conveyor belts, smoke, alien skin shapes without exact character copy, and grimy machinery; side-on cinematic platform framing with stealth timing, levers, patrols, vertical shafts, and escape path readability; oppressed, strange, industrial, comic-dark, and tense; HUD guidance: almost no HUD; small interaction or possession cues can appear but the scene should feel cinematic-playable",
       creative_brief:
-        "Use Oddworld Quarry Escape as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Oddworld: New 'n' Tasty: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.",
+        "Oddworld Quarry Escape: in-game screenshot language informed by Oddworld: New 'n' Tasty, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard, modern fantasy key art, black-gold epic polish, Dark Souls level clone',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original classic soulslike captures: third-person old-gen action-RPG play with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and readable dungeon traversal. Borrow the lock-on camera discipline and material restraint associated with Dark Souls-era games, but land as a different fictional ruined keep with different enemies, props, architecture, UI icons, and route silhouettes. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish.',
+        'Original in-game screenshot look for classic soulslike captures: third-person old-gen action-RPG play with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and readable dungeon traversal. Borrow the lock-on camera discipline and material restraint associated with Dark Souls-era games, but land as a different fictional ruined keep with different enemies, props, architecture, UI icons, and route silhouettes.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable hollow-keep action-RPG screenshot subject: keep clear role silhouette, enemy/player/object function, hitbox-like readability, trap or route affordance, and scale relationship without copying source characters or named IP elements.",
       color_and_tone:
@@ -320,13 +320,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Compose with third-person lock-on or traversal-combat framing: player low in frame, enemy or trap ahead, narrow route, ledge/drop/fog gate/lever/ladder as affordance, readable dodge lane, and modest HUD. The frame should feel played, not staged as a boss postcard or centered throne reveal.',
       atmosphere_and_mood:
-        'Carry an original hollow-keep soulslike mood: lonely, punishing, archaic, damp, hostile, and quietly tragic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Original hollow-keep soulslike mood: lonely, punishing, archaic, damp, hostile and quietly tragic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine gameplay screenshot style, not concept art: small classic souls HUD can include health/stamina/focus bars, item slot shapes, lock-on cue, and boss bar only when useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, old-gen restraint, and no fake logos, modern fantasy key-art polish, or random interface clutter.',
       key_features:
         'original classic soulslike gameplay screenshots; third-person old-gen action-RPG capture with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and dungeon readability; ash grey, dead green, damp stone blue, rust brown, dull steel, faded leather, torch amber, and sickly fog white; torch pools, overcast ruin light, fog-gate glow, weapon sparks, hollow eyes, and shallow dungeon occlusion; rough stone blocks, moss, wet stairs, cracked plaster, tarnished chain, old cloth, dull shields, rusty blades, simple wood, and old-gen asset limits; third-person lock-on or traversal-combat framing with route affordance and readable dodge lane; lonely, punishing, archaic, damp, hostile, and quietly tragic; HUD guidance: small classic soulslike HUD only when useful',
       creative_brief:
-        'Use Hollow Keep Lock-On as a transferable game-originals preset. Preserve prompt X, then route interpretation through classic soulslike capture references: third-person lock-on camera, old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and promotional composition.',
+        "Hollow Keep Lock-On: in-game screenshot language informed by classic soulslike capture references, covering third-person lock-on camera, old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

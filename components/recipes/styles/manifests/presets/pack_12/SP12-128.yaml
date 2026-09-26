@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-128
+packId: pack_12
+name: Gravity-Flip Corridor Capture
+styleAnchors:
+  - Gravity-Flip Corridor Capture
+  - gravity shifting puzzle screenshot
+  - gravity zones
+displayName: Gravity-Flip Corridor Capture
+category: 3. Sci-Fi Frontiers & Mech Zones
+domain: gravity shifting puzzle screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sci-fi-frontiers-and-mech-zones
+  - gravity-flip
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a corridor where gravity changes direction.
+  color_and_tone: Clean white panels with orange and blue gravity zones.
+  lighting_and_shadow: Glowing gravity field panels, kept consistent across the whole image.
+  texture_and_material: Polished panels, floating dust and field glows, kept consistent across the whole image.
+  camera_and_composition: Disorienting angle with multiple floors in view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mind-bending playfulness, kept consistent across the whole image.
+  rendering_and_quality: Clean puzzle capture with no readable text, kept consistent across the whole image.
+  creative_brief: "Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings. Carry it through gravity zones, wall-walking, disorienting angle, clean panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gravity zones; wall-walking; disorienting angle; clean panels
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sci-fi-frontiers-and-mech-zones
+  categoryName: 3. Sci-Fi Frontiers & Mech Zones
+  tags:
+    - video-game-originals-vault
+    - sci-fi-frontiers-and-mech-zones
+    - gravity-flip
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: gravity shifting puzzle screenshot

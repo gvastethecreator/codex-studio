@@ -15,6 +15,7 @@ tags:
   - darkest dungeon
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Represent the original Darkest Dungeon (2016) combat presentation as hand-drawn 2D character
@@ -57,6 +58,10 @@ avoidRules:
   - changing the tactical side view to pixel-platformer or third-person 3D
   - unrequested gore, stress symbols, torch icons or fabricated status text
   - wide cinematic staging that makes units too small to read
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-092.webp
 attributes:
@@ -64,7 +69,7 @@ attributes:
     unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout,
     changing the tactical side view to pixel-platformer or third-person 3D, unrequested gore, stress
     symbols, torch icons or fabricated status text, wide cinematic staging that makes units too
-    small to read
+    small to read, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Darkest Dungeon (2016 release by Red Hook Studios)
   pairedPresetId: SP17-095
   sourceReferences:
@@ -121,6 +126,7 @@ taxonomy:
     - darkest dungeon
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

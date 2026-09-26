@@ -15,6 +15,7 @@ tags:
   - 'metal gear solid 3: snake eater'
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Metal Gear Solid 3: Snake Eater (original 2004 PS2) overhead stealth gameplay: olive-yellow
@@ -49,6 +50,10 @@ avoidRules:
   - invented interface text, meters or logos when no interface was requested
   - obscured player silhouette, unusable terrain or effects that hide the requested action
   - cinematic promotional posing or a camera that contradicts the selected gameplay profile
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-097.webp
 attributes:
@@ -56,7 +61,7 @@ attributes:
     unrequested named characters, copied level layouts or franchise symbols, invented interface
     text, meters or logos when no interface was requested, obscured player silhouette, unusable
     terrain or effects that hide the requested action, cinematic promotional posing or a camera that
-    contradicts the selected gameplay profile
+    contradicts the selected gameplay profile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     METAL GEAR SOLID 3: SNAKE EATER (Original PlayStation 2 release (2004/2005 regional releases),
     not Delta: Snake Eater)
@@ -115,6 +120,7 @@ taxonomy:
     - 'metal gear solid 3: snake eater'
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

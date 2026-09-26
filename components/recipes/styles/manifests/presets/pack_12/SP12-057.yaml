@@ -21,14 +21,9 @@ tags:
   - render-first-person-immersive
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Capture-derived video-game style router based on Sea of Thieves gameplay screenshots:
-    first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure
-    props, and playful crew readability. Apply this after prompt X; prompt X supplies the subject,
-    action, setting, and intensity while this preset supplies capture language, camera grammar,
-    material behavior, playable readability, and finish. Do not recreate an exact official level,
-    character, logo, or marketing key art.
+  aesthetic: 'In-game screenshot look informed by Sea of Thieves gameplay: first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure props, and playful crew readability. It never recreates an exact official level, character, logo or marketing art.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable Sea of Thieves-adjacent game
     screenshot subject: keep clear role silhouette, player/enemy/object function, scale
@@ -53,10 +48,7 @@ visualDna:
     horizon, crew spacing, and naval action cues. The frame should read as a plausible gameplay
     capture; include UI/HUD only when it matches the source game's visual logic and improves
     clarity.
-  atmosphere_and_mood: >-
-    Carry a Sea of Thieves-derived mood: roguish, open-sea, playful, stormy, and adventurous. The
-    preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
-    asks, but it should not force a fixed mission or story scene.
+  atmosphere_and_mood: 'Sea of Thieves-derived mood: roguish, open-sea, playful, stormy, and adventurous; it follows the tone of the requested scene without forcing a fixed mission or story.'
   rendering_and_quality: >-
     Finish as a coherent in-engine screenshot style, not concept art: minimal pirate HUD, radial
     item hints, compass, and ship damage cues are allowed if integrated. Maintain heavy-denoise
@@ -71,12 +63,7 @@ visualDna:
     framing with wheel/cannon/rigging foreground, island horizon, crew spacing, and naval action
     cues; roguish, open-sea, playful, stormy, and adventurous; HUD guidance: minimal pirate HUD,
     radial item hints, compass, and ship damage cues are allowed if integrated
-  creative_brief: >-
-    Use Sea of Thieves Pirate Skies as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through capture references from Sea of Thieves: camera, HUD grammar,
-    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
-    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
-    promotional key art.
+  creative_brief: "Sea of Thieves Pirate Skies: in-game screenshot language informed by Sea of Thieves, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo
@@ -102,6 +89,10 @@ avoidRules:
   - unrelated generic sci-fi scene
   - unmotivated photoreal camera
   - copied box art composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-057.webp
 attributes:
@@ -111,7 +102,7 @@ attributes:
     likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
     interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
     reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition
+    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Sea of Thieves
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: minimal pirate HUD, radial item hints, compass, and ship damage cues are allowed if integrated
@@ -132,6 +123,7 @@ taxonomy:
     - render-first-person-immersive
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -15,6 +15,7 @@ tags:
   - mortal shell
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Mortal Shell (2020) real-time third-person combat: compact blackened armor, gaunt opponents,
@@ -48,6 +49,10 @@ avoidRules:
   - invented hardening effect when the prompt does not request it
   - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
   - anime, manga or cel-shaded grammar
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-084.webp
 attributes:
@@ -55,7 +60,7 @@ attributes:
     isometric or first-person camera, static cover portrait or crowded action that hides the
     playable figure, unrequested canonical shell, weapon, character or arena, invented hardening
     effect when the prompt does not request it, unrequested HUD, logo, interface or captions;
-    preserve explicitly requested UI and text, anime, manga or cel-shaded grammar
+    preserve explicitly requested UI and text, anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Mortal Shell (2020 original game; 2021 Enhanced Edition material references)
   pairedPresetId: SP17-087
   sourceReferences:
@@ -116,6 +121,7 @@ taxonomy:
     - mortal shell
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -10,10 +10,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['WipEout Omega Collection gameplay screenshots', 'WipEout Night Speed Circuit'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on WipEout Omega Collection gameplay screenshots: anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by WipEout Omega Collection gameplay: anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable WipEout Omega Collection-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -25,13 +25,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a WipEout Omega Collection-derived mood: clinical, fast, competitive, glossy, and late-night futuristic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'WipEout Omega Collection-derived mood: clinical, fast, competitive, glossy, and late-night futuristic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'WipEout Omega Collection gameplay screenshots; anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur; electric blue, hot magenta, black asphalt, white sponsor panels without readable logos, and amber boost trails; trackside neon strips, engine bloom, reflective wet surfaces, tunnel strobes, and boost flare; sleek vehicle hulls, glossy track panels, translucent shields, holographic signage shapes, and high-speed particle streaks; third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon; clinical, fast, competitive, glossy, and late-night futuristic; HUD guidance: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent',
       creative_brief:
-        'Use WipEout Night Speed Circuit as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from WipEout Omega Collection: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "WipEout Night Speed Circuit: in-game screenshot language informed by WipEout Omega Collection, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -41,10 +41,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rollerdrome gameplay screenshots', 'Rollerdrome Arena Trick Combat'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Rollerdrome gameplay screenshots: comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Rollerdrome gameplay: comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Rollerdrome-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -56,13 +56,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Rollerdrome gameplay screenshots; comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets; cream concrete, black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors; flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights; cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked edges; third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops; stylish, dangerous, sporty, satirical, and kinetic; HUD guidance: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact',
       creative_brief:
-        'Use Rollerdrome Arena Trick Combat as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Rollerdrome: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Rollerdrome Arena Trick Combat: in-game screenshot language informed by Rollerdrome, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -72,10 +72,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Forza Horizon 5 gameplay screenshots', 'Forza Sandstorm Drift Cup'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Forza Horizon 5 gameplay screenshots: third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Forza Horizon 5 gameplay: third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Forza Horizon 5-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -87,13 +87,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Forza Horizon 5-derived mood: competitive, sunny, stylish, festival-like, and fast. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Forza Horizon 5-derived mood: competitive, sunny, stylish, festival-like, and fast; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Forza Horizon 5 gameplay screenshots; third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability; sunlit sand, glossy car red, turquoise sky, black tire marks, festival pink, and golden dust; bright desert sun, windshield flare, dust haze, brake-light red, and reflective body highlights; photoreal car paint, gravel, asphalt, dust clouds, cactus silhouettes, banners without readable branding, and road debris; chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability; competitive, sunny, stylish, festival-like, and fast; HUD guidance: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues',
       creative_brief:
-        'Use Forza Sandstorm Drift Cup as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Forza Horizon 5: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Forza Sandstorm Drift Cup: in-game screenshot language informed by Forza Horizon 5, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -103,10 +103,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Into the Breach gameplay screenshots', 'Into the Breach Astral Tactics'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Into the Breach gameplay screenshots: compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Into the Breach gameplay: compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Into the Breach-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -118,13 +118,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Into the Breach-derived mood: cerebral, compact, tense, deterministic, and elegant. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Into the Breach-derived mood: cerebral, compact, tense, deterministic, and elegant; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Into the Breach gameplay screenshots; compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability; muted teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue grid markers; flat tactical light, explosion flashes, laser lines, shield glows, and crisp tile-state highlights; tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and compact UI panels; orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity; cerebral, compact, tense, deterministic, and elegant; HUD guidance: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style',
       creative_brief:
-        'Use Into the Breach Astral Tactics as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Into the Breach: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Into the Breach Astral Tactics: in-game screenshot language informed by Into the Breach, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Hi-Fi Rush clone, strategy tactics camera, readable rhythm text',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original rhythm-action brawler captures: cel-shaded third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a different fictional beat-combat game with different characters, props, arena shapes, icons, and color motifs.',
+        'Original in-game screenshot look for rhythm-action brawler captures: cel-shaded third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a different fictional beat-combat game with different characters, props, arena shapes, icons, and color motifs.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable beat-combat screenshot subject: keep clear role silhouette, attack timing, enemy spacing, route or arena affordance, and hitbox-like readability without copying source characters or named IP elements.",
       color_and_tone:
@@ -159,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'original rhythm-action brawler gameplay screenshots; cel-shaded third-person arena play; beat-synced impacts; graphic motion accents; stage-like combat spaces; music-reactive abstract UI shapes; punchy red, teal shadow, yellow sparks, violet stage light, white accents, black ink outlines; third-person arena camera with enemy spacing and readable dodge/combo timing; loud, musical, rebellious, playful, kinetic; HUD guidance: abstract combo and beat UI only, no readable text',
       creative_brief:
-        'Use Beatline Phantom Theater as a transferable game-originals preset. Preserve prompt X, then route interpretation through rhythm-action brawler references: cel-shaded combat camera, beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics framing.',
+        "Beatline Phantom Theater: in-game screenshot language informed by rhythm-action brawler references, covering cel-shaded combat camera, beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics framing. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -169,10 +169,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Quake III Arena gameplay screenshots', 'Quake Arena Obsidian Trial'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Quake III Arena gameplay screenshots: retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Quake III Arena gameplay: retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Quake III Arena-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -184,13 +184,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Quake III Arena-derived mood: aggressive, competitive, old-school, brutal, and fast. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Quake III Arena-derived mood: aggressive, competitive, old-school, brutal, and fast; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Quake III Arena gameplay screenshots; retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry; lava orange, gunmetal grey, blood red, toxic green pickups, electric blue armor, and black stone; hard colored arena lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast; chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and low-detail texture tiling; first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes; aggressive, competitive, old-school, brutal, and fast; HUD guidance: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear',
       creative_brief:
-        'Use Quake Arena Obsidian Trial as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Quake III Arena: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Quake Arena Obsidian Trial: in-game screenshot language informed by Quake III Arena, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -200,10 +200,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Dota 2 gameplay screenshots', 'Dota Prismatic Hero Draft Arena'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Dota 2 gameplay screenshots: MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Dota 2 gameplay: MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Dota 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -215,13 +215,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Dota 2-derived mood: competitive, tactical, magical, high-information, and tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Dota 2-derived mood: competitive, tactical, magical, high-information, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Dota 2 gameplay screenshots; MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability; Radiant green, Dire red, magic purple, gold UI accents, river blue, and dark terrain shadows; spell effects, tower beams, hero glows, fog-of-war darkness, and crisp particle silhouettes; fantasy terrain, hero equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability effects; high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure; competitive, tactical, magical, high-information, and tense; HUD guidance: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible',
       creative_brief:
-        'Use Dota Prismatic Hero Draft Arena as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dota 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Dota Prismatic Hero Draft Arena: in-game screenshot language informed by Dota 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -231,10 +231,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['F-Zero GX gameplay screenshots', 'F-Zero Obelisk Desert Race'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on F-Zero GX gameplay screenshots: GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by F-Zero GX gameplay: GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable F-Zero GX-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -246,13 +246,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a F-Zero GX-derived mood: extreme, arcade-fast, futuristic, competitive, and slightly retro. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'F-Zero GX-derived mood: extreme, arcade-fast, futuristic, competitive, and slightly retro; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'F-Zero GX gameplay screenshots; GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure; sand gold, cobalt sky, chrome blue, hot magenta boost, black track, and bright orange hazard pads; harsh desert sun, boost glow, tunnel strobe, reflective vehicle highlights, and saturated arcade bloom; early-2000s glossy track, low-poly desert monuments, hovering vehicles, energy pads, and bold texture panels; third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability; extreme, arcade-fast, futuristic, competitive, and slightly retro; HUD guidance: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI',
       creative_brief:
-        'Use F-Zero Obelisk Desert Race as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from F-Zero GX: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "F-Zero Obelisk Desert Race: in-game screenshot language informed by F-Zero GX, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -262,10 +262,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Soulcalibur VI gameplay screenshots', 'Soulcalibur Crystal Duel Hall'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Soulcalibur VI gameplay screenshots: weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Soulcalibur VI gameplay: weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Soulcalibur VI-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -277,13 +277,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Soulcalibur VI-derived mood: duelist, flamboyant, heroic, competitive, and theatrical. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Soulcalibur VI-derived mood: duelist, flamboyant, heroic, competitive, and theatrical; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Soulcalibur VI gameplay screenshots; weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle; royal blue, crystal white, polished gold, crimson cloth, black armor, and bright weapon trails; arena spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare; polished stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena props; side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity; duelist, flamboyant, heroic, competitive, and theatrical; HUD guidance: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks',
       creative_brief:
-        'Use Soulcalibur Crystal Duel Hall as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Soulcalibur VI: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Soulcalibur Crystal Duel Hall: in-game screenshot language informed by Soulcalibur VI, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -293,10 +293,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rocket League gameplay screenshots', 'Rocket League Cobalt Docks'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Rocket League gameplay screenshots: car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Rocket League gameplay: car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Rocket League-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -308,13 +308,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Rocket League-derived mood: competitive, sporty, explosive, glossy, and playful. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Rocket League-derived mood: competitive, sporty, explosive, glossy, and playful; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Rocket League gameplay screenshots; car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera; cobalt blue, orange team glow, green field, black tire rubber, white ball panels, and neon arena trim; stadium lights, boost flames, goal explosions, wet arena reflections, and glossy car highlights; car paint, turf, glass boards, boost pads, ball panels, arena rails, and particle trails; third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability; competitive, sporty, explosive, glossy, and playful; HUD guidance: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful',
       creative_brief:
-        'Use Rocket League Cobalt Docks as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Rocket League: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Rocket League Cobalt Docks: in-game screenshot language informed by Rocket League, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

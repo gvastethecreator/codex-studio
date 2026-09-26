@@ -20,6 +20,16 @@ categories:
       - pack_12/SP12-062.yaml
       - pack_12/SP12-071.yaml
       - pack_12/SP12-078.yaml
+      - pack_12/SP12-099.yaml
+      - pack_12/SP12-100.yaml
+      - pack_12/SP12-101.yaml
+      - pack_12/SP12-102.yaml
+      - pack_12/SP12-103.yaml
+      - pack_12/SP12-104.yaml
+      - pack_12/SP12-105.yaml
+      - pack_12/SP12-106.yaml
+      - pack_12/SP12-107.yaml
+      - pack_12/SP12-108.yaml
   - id: arcane-temples-and-mythic-realms
     name: 2. Arcane Temples & Mythic Realms
     presetRefs:
@@ -33,6 +43,16 @@ categories:
       - pack_12/SP12-055.yaml
       - pack_12/SP12-061.yaml
       - pack_12/SP12-070.yaml
+      - pack_12/SP12-109.yaml
+      - pack_12/SP12-110.yaml
+      - pack_12/SP12-111.yaml
+      - pack_12/SP12-112.yaml
+      - pack_12/SP12-113.yaml
+      - pack_12/SP12-114.yaml
+      - pack_12/SP12-115.yaml
+      - pack_12/SP12-116.yaml
+      - pack_12/SP12-117.yaml
+      - pack_12/SP12-118.yaml
   - id: sci-fi-frontiers-and-mech-zones
     name: 3. Sci-Fi Frontiers & Mech Zones
     presetRefs:
@@ -46,6 +66,16 @@ categories:
       - pack_12/SP12-045.yaml
       - pack_12/SP12-046.yaml
       - pack_12/SP12-068.yaml
+      - pack_12/SP12-119.yaml
+      - pack_12/SP12-120.yaml
+      - pack_12/SP12-121.yaml
+      - pack_12/SP12-122.yaml
+      - pack_12/SP12-123.yaml
+      - pack_12/SP12-124.yaml
+      - pack_12/SP12-125.yaml
+      - pack_12/SP12-126.yaml
+      - pack_12/SP12-127.yaml
+      - pack_12/SP12-128.yaml
   - id: sieges-warfronts-and-last-stands
     name: 4. Sieges, Warfronts & Last Stands
     presetRefs:
@@ -59,6 +89,16 @@ categories:
       - pack_12/SP12-064.yaml
       - pack_12/SP12-076.yaml
       - pack_12/SP12-079.yaml
+      - pack_12/SP12-129.yaml
+      - pack_12/SP12-130.yaml
+      - pack_12/SP12-131.yaml
+      - pack_12/SP12-132.yaml
+      - pack_12/SP12-133.yaml
+      - pack_12/SP12-134.yaml
+      - pack_12/SP12-135.yaml
+      - pack_12/SP12-136.yaml
+      - pack_12/SP12-137.yaml
+      - pack_12/SP12-138.yaml
   - id: speed-sport-and-competitive-arenas
     name: 5. Speed, Sport & Competitive Arenas
     presetRefs:
@@ -207,8 +247,28 @@ presetRefs:
   - pack_12/SP12-066.yaml
   - pack_12/SP12-067.yaml
   - pack_12/SP12-068.yaml
+  - pack_12/SP12-119.yaml
+  - pack_12/SP12-120.yaml
+  - pack_12/SP12-121.yaml
+  - pack_12/SP12-122.yaml
+  - pack_12/SP12-123.yaml
+  - pack_12/SP12-124.yaml
+  - pack_12/SP12-125.yaml
+  - pack_12/SP12-126.yaml
+  - pack_12/SP12-127.yaml
+  - pack_12/SP12-128.yaml
   - pack_12/SP12-069.yaml
   - pack_12/SP12-070.yaml
+  - pack_12/SP12-109.yaml
+  - pack_12/SP12-110.yaml
+  - pack_12/SP12-111.yaml
+  - pack_12/SP12-112.yaml
+  - pack_12/SP12-113.yaml
+  - pack_12/SP12-114.yaml
+  - pack_12/SP12-115.yaml
+  - pack_12/SP12-116.yaml
+  - pack_12/SP12-117.yaml
+  - pack_12/SP12-118.yaml
   - pack_12/SP12-071.yaml
   - pack_12/SP12-072.yaml
   - pack_12/SP12-073.yaml
@@ -217,7 +277,27 @@ presetRefs:
   - pack_12/SP12-076.yaml
   - pack_12/SP12-077.yaml
   - pack_12/SP12-078.yaml
+  - pack_12/SP12-099.yaml
+  - pack_12/SP12-100.yaml
+  - pack_12/SP12-101.yaml
+  - pack_12/SP12-102.yaml
+  - pack_12/SP12-103.yaml
+  - pack_12/SP12-104.yaml
+  - pack_12/SP12-105.yaml
+  - pack_12/SP12-106.yaml
+  - pack_12/SP12-107.yaml
+  - pack_12/SP12-108.yaml
   - pack_12/SP12-079.yaml
+  - pack_12/SP12-129.yaml
+  - pack_12/SP12-130.yaml
+  - pack_12/SP12-131.yaml
+  - pack_12/SP12-132.yaml
+  - pack_12/SP12-133.yaml
+  - pack_12/SP12-134.yaml
+  - pack_12/SP12-135.yaml
+  - pack_12/SP12-136.yaml
+  - pack_12/SP12-137.yaml
+  - pack_12/SP12-138.yaml
   - pack_12/SP12-080.yaml
   - pack_12/SP12-081.yaml
   - pack_12/SP12-082.yaml

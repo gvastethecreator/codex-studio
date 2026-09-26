@@ -15,6 +15,7 @@ tags:
   - 'amnesia: the dark descent'
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Anchor the preset in Amnesia: The Dark Descent's 2010 HPL2 first-person survival-horror
@@ -52,6 +53,10 @@ avoidRules:
   - bright modern PBR gloss, dense microtexture or exaggerated film grain
   - total-black near field or unreadable requested action
   - >-
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
     unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve
     explicitly requested UI and text
   - anime, manga or cel-shaded grammar
@@ -63,7 +68,7 @@ attributes:
     landmark or named character, bright modern PBR gloss, dense microtexture or exaggerated film
     grain, total-black near field or unreadable requested action, unrequested sanity meter, oil
     gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text,
-    anime, manga or cel-shaded grammar
+    anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Amnesia: The Dark Descent (2010 original; Frictional Games launch-era material)'
   pairedPresetId: SP17-089
   sourceReferences:
@@ -126,6 +131,7 @@ taxonomy:
     - 'amnesia: the dark descent'
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

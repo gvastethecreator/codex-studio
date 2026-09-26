@@ -18,12 +18,7 @@ tags:
   - camera-board-command-ui
   - hud-full-hud
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original vertical defense deckbuilder captures:
-    stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips,
-    and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but
-    land as a different fictional deck-defense game with different vehicle/structure logic, unit
-    silhouettes, UI frames, symbols, and floor anatomy.
+  aesthetic: 'Original in-game screenshot look for vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable stacked deck-defense screenshot
     subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource
@@ -61,12 +56,7 @@ visualDna:
     floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource
     pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw
     pile, unit state icons, and floor indicators only
-  creative_brief: >-
-    Use Infernal Decklift Defense as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through vertical defense deckbuilder references: stacked lane camera,
-    card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board
-    state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning,
-    readable text, and stat numbers.
+  creative_brief: "Infernal Decklift Defense: in-game screenshot language informed by vertical defense deckbuilder references, covering stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

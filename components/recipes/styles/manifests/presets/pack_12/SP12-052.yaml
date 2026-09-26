@@ -23,12 +23,7 @@ tags:
   - camera-first-person
   - hud-contextual-hud
 visualDna:
-  aesthetic: >-
-    Source-informed video-game style router for original class-based team shooter captures: stylized
-    first-person combat, readable team colors, chunky industrial bridge geometry, control-point
-    pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team
-    Fortress-like games, but land as a different fictional class shooter with different silhouettes,
-    props, UI icons, and map architecture.
+  aesthetic: 'Original in-game screenshot look for class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.'
   subject_treatment: >-
     Preserve the user's subject and transform it into a playable class-shooter screenshot subject:
     keep clear class/object role, team spacing, objective pressure, projectile/hit readability,
@@ -67,12 +62,7 @@ visualDna:
     capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive,
     comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health,
     ammo, capture meter, kill feed shape, and team indicators should be era-coherent
-  creative_brief: >-
-    Use Class Clash Bridge Control as a transferable game-originals preset. Preserve prompt X, then
-    route interpretation through class-based team shooter references: first-person camera,
-    team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure.
-    Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and
-    readable UI text.
+  creative_brief: "Class Clash Bridge Control: in-game screenshot language informed by class-based team shooter references, covering first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
 avoidRules:
   - watermark
   - logo

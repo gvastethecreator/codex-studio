@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-112
+packId: pack_12
+name: Jungle Ziggurat Platformer Capture
+styleAnchors:
+  - Jungle Ziggurat Platformer Capture
+  - jungle temple platform game screenshot
+  - stepped temple
+displayName: Jungle Ziggurat Platformer Capture
+category: 2. Arcane Temples & Mythic Realms
+domain: jungle temple platform game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - arcane-temples-and-mythic-realms
+  - jungle-ziggurat
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject leaping through a side-scrolling jungle temple.
+  color_and_tone: Lush greens, warm stone ochre and golden treasure.
+  lighting_and_shadow: Dappled jungle light and dark temple interiors, kept consistent across the whole image.
+  texture_and_material: Carved stone, vines, water and wooden traps, kept consistent across the whole image.
+  camera_and_composition: Side-on platform layout with multiple levels, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with adventurous peril, kept consistent across the whole image.
+  rendering_and_quality: Clean colorful game capture, kept consistent across the whole image.
+  creative_brief: "Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders. Carry it through stepped temple, vines, spike traps, side-scrolling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stepped temple; vines; spike traps; side-scrolling
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: arcane-temples-and-mythic-realms
+  categoryName: 2. Arcane Temples & Mythic Realms
+  tags:
+    - video-game-originals-vault
+    - arcane-temples-and-mythic-realms
+    - jungle-ziggurat
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: jungle temple platform game screenshot

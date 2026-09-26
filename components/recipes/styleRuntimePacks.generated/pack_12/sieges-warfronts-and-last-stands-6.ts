@@ -10,10 +10,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Banner Saga gameplay screenshots', 'Banner Saga Glacier Tactics'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on The Banner Saga gameplay screenshots: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by The Banner Saga gameplay: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable The Banner Saga-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -25,13 +25,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'The Banner Saga gameplay screenshots; hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity; snow white, slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents; flat overcast snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D lighting; illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and crisp 2D cutout edges; isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight; grim, mythic, exhausted, noble, and winter-bound; HUD guidance: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability',
       creative_brief:
-        'Use Banner Saga Glacier Tactics as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Banner Saga: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Banner Saga Glacier Tactics: in-game screenshot language informed by The Banner Saga, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -41,10 +41,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Castle Crashers gameplay screenshots', 'Castle Crashers Co-op Siege'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Castle Crashers gameplay screenshots: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Castle Crashers gameplay: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Castle Crashers-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -56,13 +56,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Castle Crashers gameplay screenshots; 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability; flat knight primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors; mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic global illumination; vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor shapes, and exaggerated hit effects; side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers; violent, playful, chaotic, arcade-like, and comic without becoming childish; HUD guidance: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic',
       creative_brief:
-        'Use Castle Crashers Co-op Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Castle Crashers: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Castle Crashers Co-op Siege: in-game screenshot language informed by Castle Crashers, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -72,10 +72,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Tactics Ogre: Reborn gameplay screenshots', 'Tactics Ogre Verdant Ruins'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Tactics Ogre: Reborn gameplay screenshots: isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Tactics Ogre: Reborn gameplay: isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Tactics Ogre: Reborn-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -87,13 +87,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Tactics Ogre: Reborn-derived mood: political, tactical, classic, serious, and readable. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Tactics Ogre: Reborn-derived mood: political, tactical, classic, serious, and readable; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Tactics Ogre: Reborn gameplay screenshots; isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain; moss green, old stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents; soft tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles; pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact tactical UI panels; isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure; political, tactical, classic, serious, and readable; HUD guidance: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware',
       creative_brief:
-        'Use Tactics Ogre Verdant Ruins as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Tactics Ogre: Reborn: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Tactics Ogre Verdant Ruins: in-game screenshot language informed by Tactics Ogre: Reborn, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -110,7 +110,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Monster Train clone, readable card text, stat numbers, exact train floor UI',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.',
+        'Original in-game screenshot look for vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable stacked deck-defense screenshot subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource pressure, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'original vertical defense deckbuilder gameplay screenshots; stacked lane combat; infernal lift floors; monster or unit tokens; card hand silhouettes; resource pips; readable defense choices; infernal red, parchment beige, icy blue, gold trim, purple magic, black iron; furnace light and floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw pile, unit state icons, and floor indicators only',
       creative_brief:
-        'Use Infernal Decklift Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through vertical defense deckbuilder references: stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers.',
+        "Infernal Decklift Defense: in-game screenshot language informed by vertical defense deckbuilder references, covering stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -138,10 +138,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['World of Warships gameplay screenshots', 'World of Warships Iron Reef'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on World of Warships gameplay screenshots: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by World of Warships gameplay: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable World of Warships-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -153,13 +153,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a World of Warships-derived mood: heavy, strategic, naval, explosive, and measured. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'World of Warships-derived mood: heavy, strategic, naval, explosive, and measured; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'World of Warships gameplay screenshots; naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density; steel grey, ocean blue, shell orange, smoke black, UI green/red, and pale sky haze; open-sea daylight, muzzle flashes, fire plumes, water reflections, and smoke-diffused contrast; warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail; third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability; heavy, strategic, naval, explosive, and measured; HUD guidance: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here',
       creative_brief:
-        'Use World of Warships Iron Reef as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from World of Warships: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "World of Warships Iron Reef: in-game screenshot language informed by World of Warships, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Team Fortress clone, strategy tactics camera, readable objective text, exact class silhouettes',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.',
+        'Original in-game screenshot look for class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable class-shooter screenshot subject: keep clear class/object role, team spacing, objective pressure, projectile/hit readability, cover affordance, and first-person scale without copying source classes or maps.",
       color_and_tone:
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Team Fortress 2 gameplay screenshots; stylized team-shooter capture with bold silhouettes, capture-point geometry, class-based spacing, and readable red-vs-blue battlefield color; industrial red, worksite blue, dusty tan, black shadows, white UI blocks, and orange explosion pops; baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon shadows; painterly industrial props, wood planks, metal bridges, team-color panels, simple weapons, and exaggerated character shapes without copying cast; first-person or spectator capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive, comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators should be era-coherent',
       creative_brief:
-        'Use Class Clash Bridge Control as a transferable game-originals preset. Preserve prompt X, then route interpretation through class-based team shooter references: first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text.',
+        "Class Clash Bridge Control: in-game screenshot language informed by class-based team shooter references, covering first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -204,10 +204,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Blasphemous gameplay screenshots', 'Blasphemous Basilica Last Stand'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Blasphemous gameplay screenshots: dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Blasphemous gameplay: dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Blasphemous-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -219,13 +219,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Blasphemous-derived mood: penitent, brutal, sacred, grotesque, and solemn. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Blasphemous-derived mood: penitent, brutal, sacred, grotesque, and solemn; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Blasphemous gameplay screenshots; dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography; bone white, dried blood red, black stone, candle gold, desaturated blue, and sickly flesh tones; candle halos, stained light shafts, spell glows, hit flashes, and deep basilica shadow; detailed pixel masonry, wax, iron, embroidered cloth, thorned relics, grotesque bodies, and crunchy sprite animation; side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability; penitent, brutal, sacred, grotesque, and solemn; HUD guidance: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI',
       creative_brief:
-        'Use Blasphemous Basilica Last Stand as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Blasphemous: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Blasphemous Basilica Last Stand: in-game screenshot language informed by Blasphemous, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -235,10 +235,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['They Are Billions gameplay screenshots', 'They Are Billions Night Defense'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on They Are Billions gameplay screenshots: isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by They Are Billions gameplay: isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable They Are Billions-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -250,13 +250,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a They Are Billions-derived mood: desperate, logistical, overrun, industrial, and strategic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'They Are Billions-derived mood: desperate, logistical, overrun, industrial, and strategic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'They Are Billions gameplay screenshots; isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability; sepia industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red; lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge highlights; steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes; isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths; desperate, logistical, overrun, industrial, and strategic; HUD guidance: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings',
       creative_brief:
-        'Use They Are Billions Night Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from They Are Billions: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "They Are Billions Night Defense: in-game screenshot language informed by They Are Billions, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -266,10 +266,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Northgard gameplay screenshots', 'Northgard Aurora Bastion Siege'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Northgard gameplay screenshots: isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Northgard gameplay: isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Northgard-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -281,13 +281,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Northgard-derived mood: settler-strategy, hardy, Nordic, cold, and quietly tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Northgard-derived mood: settler-strategy, hardy, Nordic, cold, and quietly tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Northgard gameplay screenshots; isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability; snow blue, timber brown, aurora green, hearth orange, iron grey, and muted clan-color banners; cold winter daylight, hearth pools, northern lights, torch edges, and soft snow bounce; wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props; isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points; settler-strategy, hardy, Nordic, cold, and quietly tense; HUD guidance: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI',
       creative_brief:
-        'Use Northgard Aurora Bastion Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Northgard: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Northgard Aurora Bastion Siege: in-game screenshot language informed by Northgard, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -304,7 +304,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact stratagem UI, recognizable faction armor',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.',
+        'Original in-game screenshot look for third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable third-person co-op hold screenshot subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure, call-in area, and extraction route without copying source factions or armor.",
       color_and_tone:
@@ -322,7 +322,359 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Helldivers 2 gameplay screenshots; third-person co-op shooter capture with squad spacing, alien swarms, stratagem chaos, defensive objectives, and friendly-fire battlefield readability; dusty battlefield tan, black armor, yellow hazard UI, bug green, red warning lasers, and explosion orange; orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and dusty sun haze; tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and sci-fi military equipment; third-person squad camera with objective zone, incoming swarm lanes, teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized, satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and extraction markers',
       creative_brief:
-        'Use Orbital Drop Citadel Hold as a transferable game-originals preset. Preserve prompt X, then route interpretation through third-person co-op extraction references: squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI.',
+        "Orbital Drop Citadel Hold: in-game screenshot language informed by third-person co-op extraction references, covering squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+    },
+  },
+  {
+    id: 'SP12-129',
+    name: 'Wall-Breach Horde Defense Capture',
+    displayName: 'Wall-Breach Horde Defense Capture',
+    styleAnchors: [
+      'Wall-Breach Horde Defense Capture',
+      'wall defense against horde screenshot',
+      'wall breach',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'wall defense against horde screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject defending a wall breach against an enormous horde.',
+      color_and_tone:
+        'Torch orange, smoke grey and dark stone, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Firelight on stone and silhouetted masses, kept consistent across the whole image.',
+      texture_and_material:
+        'Stone rubble, wooden barricades and smoke, kept consistent across the whole image.',
+      camera_and_composition: 'Elevated angle over the wall and the breach.',
+      atmosphere_and_mood: 'Keep the requested mood with desperate last-stand pressure.',
+      rendering_and_quality:
+        'Clear readable crowd action, no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere. Carry it through wall breach, horde surge, torchlight, elevated view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wall breach; horde surge; torchlight; elevated view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-130',
+    name: 'Trench Assault Camera Capture',
+    displayName: 'Trench Assault Camera Capture',
+    styleAnchors: [
+      'Trench Assault Camera Capture',
+      'first-person trench assault screenshot',
+      'muddy trench',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'first-person trench assault screenshot',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person in a muddy trench assault.',
+      color_and_tone:
+        'Mud brown, smoke grey and flare red, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flare light and drifting smoke, kept consistent across the whole image.',
+      texture_and_material:
+        'Mud, barbed wire, sandbags and craters, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person over the trench lip, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with grim dreadful courage.',
+      rendering_and_quality:
+        'Gritty capture without gore or HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead. Carry it through muddy trench, flares, barbed wire, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'muddy trench; flares; barbed wire; first-person',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-131',
+    name: 'Catapult Crew View Capture',
+    displayName: 'Catapult Crew View Capture',
+    styleAnchors: ['Catapult Crew View Capture', 'siege engine crew screenshot', 'catapult arm'],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'siege engine crew screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject operating or riding a siege engine as it fires.',
+      color_and_tone: 'Earthy wood browns, sky blue and fire orange.',
+      lighting_and_shadow:
+        'Daylight with burning projectile glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Wooden beams, rope, stone and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Behind the catapult toward the target, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy siege energy.',
+      rendering_and_quality: 'Clean capture with a visible arc, no text.',
+      creative_brief:
+        "Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible. Carry it through catapult arm, projectile arc, crew, distant castle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'catapult arm; projectile arc; crew; distant castle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-132',
+    name: 'Hex Wargame Board Capture',
+    displayName: 'Hex Wargame Board Capture',
+    styleAnchors: ['Hex Wargame Board Capture', 'digital hex wargame screenshot', 'hex grid'],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'digital hex wargame screenshot',
+    negativePrompt:
+      'readable counter numbers, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as unit counters on a painted hex-grid map.',
+      color_and_tone: 'Muted map greens and browns with bold unit colors.',
+      lighting_and_shadow: 'Flat board light, kept consistent across the whole image.',
+      texture_and_material:
+        'Painted terrain, hex lines and counter chips, kept consistent across the whole image.',
+      camera_and_composition: 'Top-down angled board view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cerebral grand strategy.',
+      rendering_and_quality:
+        'Clean board with no readable numbers, kept consistent across the whole image.',
+      creative_brief:
+        "Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid. Carry it through hex grid, unit counters, painted map, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hex grid; unit counters; painted map; top-down',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-133',
+    name: 'Barricade Night Holdout Capture',
+    displayName: 'Barricade Night Holdout Capture',
+    styleAnchors: [
+      'Barricade Night Holdout Capture',
+      'survival barricade defense screenshot',
+      'boarded windows',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'survival barricade defense screenshot',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject defending a barricaded building at night.',
+      color_and_tone: 'Dark blues with flashlight white and lamp amber.',
+      lighting_and_shadow:
+        'Flashlight beams and window silhouettes, kept consistent across the whole image.',
+      texture_and_material:
+        'Wooden boards, nails, broken glass and mud, kept consistent across the whole image.',
+      camera_and_composition:
+        'Over-the-shoulder view toward the windows, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with tense survival dread.',
+      rendering_and_quality:
+        'Clean capture without gore or HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows. Carry it through boarded windows, flashlights, night, survivors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'boarded windows; flashlights; night; survivors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-134',
+    name: 'Spaceport Evacuation Holdout',
+    displayName: 'Spaceport Evacuation Holdout',
+    styleAnchors: [
+      'Spaceport Evacuation Holdout',
+      'sci-fi evacuation defense screenshot',
+      'landing pad',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'sci-fi evacuation defense screenshot',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject holding a landing pad during a desperate evacuation.',
+      color_and_tone: 'Burning orange sky, metal greys and warning lights.',
+      lighting_and_shadow: 'Engine glow and fire light, kept consistent across the whole image.',
+      texture_and_material:
+        'Metal decking, smoke and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide third-person view of the pad, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with heroic urgency, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture without gore or HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky. Carry it through landing pad, last transport, burning sky, defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'landing pad; last transport; burning sky; defenders',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-135',
+    name: 'Lane-Battle Siege Capture',
+    displayName: 'Lane-Battle Siege Capture',
+    styleAnchors: [
+      'Lane-Battle Siege Capture',
+      'lane-based siege strategy screenshot',
+      'opposing castles',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'lane-based siege strategy screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as units marching along lanes between two castles.',
+      color_and_tone:
+        'Bright opposing team colors on green fields, kept consistent across the whole image.',
+      lighting_and_shadow: 'Flat bright light, kept consistent across the whole image.',
+      texture_and_material:
+        'Cartoon units, stone castles and grass lanes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side view with castles at both edges, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with playful tug-of-war, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean readable capture with no UI text, kept consistent across the whole image.',
+      creative_brief:
+        "Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle. Carry it through opposing castles, horizontal lanes, marching units, clash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'opposing castles; horizontal lanes; marching units; clash',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-136',
+    name: 'Castle Builder Siege Overview',
+    displayName: 'Castle Builder Siege Overview',
+    styleAnchors: [
+      'Castle Builder Siege Overview',
+      'castle management siege screenshot',
+      'castle town',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'castle management siege screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject within a busy castle town seen from above during a siege.',
+      color_and_tone:
+        'Green fields, stone grey and banner colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft daylight with small shadows, kept consistent across the whole image.',
+      texture_and_material: 'Tiny villagers, fields, wooden houses and stone walls.',
+      camera_and_composition:
+        'Top-down angled view over the whole town, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with busy defensive industry.',
+      rendering_and_quality:
+        'Tidy detailed capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates. Carry it through castle town, tiny villagers, siege army, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'castle town; tiny villagers; siege army; top-down',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-137',
+    name: 'Massed Cavalry Charge Capture',
+    displayName: 'Massed Cavalry Charge Capture',
+    styleAnchors: [
+      'Massed Cavalry Charge Capture',
+      'large-scale battle cavalry screenshot',
+      'hundreds of riders',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'large-scale battle cavalry screenshot',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a vast cavalry charge with hundreds of riders.',
+      color_and_tone:
+        'Dust ochre, banner colors and steel grey, kept consistent across the whole image.',
+      lighting_and_shadow: 'Low sun through dust clouds, kept consistent across the whole image.',
+      texture_and_material:
+        'Horse hides, armor, dust and grass, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low wide angle along the charging line, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with thundering momentum, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Epic crowd capture without gore or HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners. Carry it through hundreds of riders, pike line, dust, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hundreds of riders; pike line; dust; banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-138',
+    name: 'Snowfield Artillery Duel Capture',
+    displayName: 'Snowfield Artillery Duel Capture',
+    styleAnchors: [
+      'Snowfield Artillery Duel Capture',
+      'winter artillery battle screenshot',
+      'snowfield',
+    ],
+    category: '4. Sieges, Warfronts & Last Stands',
+    domain: 'winter artillery battle screenshot',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject crewing or dodging cannons across a snowfield.',
+      color_and_tone: 'White snow, black smoke and orange muzzle flash.',
+      lighting_and_shadow:
+        'Overcast light with bright flashes, kept consistent across the whole image.',
+      texture_and_material:
+        'Snow, cannon iron, wooden wheels and smoke, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide view across the snowfield, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cold booming tension.',
+      rendering_and_quality:
+        'Clean capture without gore or HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes. Carry it through snowfield, cannons, black smoke, muzzle flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'snowfield; cannons; black smoke; muzzle flashes',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-138
+packId: pack_12
+name: Snowfield Artillery Duel Capture
+styleAnchors:
+  - Snowfield Artillery Duel Capture
+  - winter artillery battle screenshot
+  - snowfield
+displayName: Snowfield Artillery Duel Capture
+category: 4. Sieges, Warfronts & Last Stands
+domain: winter artillery battle screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - sieges-warfronts-and-last-stands
+  - snow-artillery
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject crewing or dodging cannons across a snowfield.
+  color_and_tone: White snow, black smoke and orange muzzle flash.
+  lighting_and_shadow: Overcast light with bright flashes, kept consistent across the whole image.
+  texture_and_material: Snow, cannon iron, wooden wheels and smoke, kept consistent across the whole image.
+  camera_and_composition: Wide view across the snowfield, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cold booming tension.
+  rendering_and_quality: Clean capture without gore or HUD, kept consistent across the whole image.
+  creative_brief: "Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes. Carry it through snowfield, cannons, black smoke, muzzle flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: snowfield; cannons; black smoke; muzzle flashes
+avoidRules:
+  - gore
+  - existing game characters, logos or levels
+  - readable interface text
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: sieges-warfronts-and-last-stands
+  categoryName: 4. Sieges, Warfronts & Last Stands
+  tags:
+    - video-game-originals-vault
+    - sieges-warfronts-and-last-stands
+    - snow-artillery
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: winter artillery battle screenshot

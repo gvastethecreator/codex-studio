@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-100
+packId: pack_12
+name: Rain-Slick Alley Stealth Capture
+styleAnchors:
+  - Rain-Slick Alley Stealth Capture
+  - third-person rainy stealth screenshot
+  - rain puddles
+displayName: Rain-Slick Alley Stealth Capture
+category: 1. Neon Urban & Night Ops
+domain: third-person rainy stealth screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+  - rain-stealth
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject crouched or hidden in a wet neon alley from an over-the-shoulder camera.
+  color_and_tone: Wet black, sodium orange and teal neon reflections.
+  lighting_and_shadow: Neon signs, flashlight cones and puddle reflections, kept consistent across the whole image.
+  texture_and_material: Wet asphalt, brick, steam and chain-link, kept consistent across the whole image.
+  camera_and_composition: Over-the-shoulder view with a clear sneaking route, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with taut rainy suspense.
+  rendering_and_quality: Real-time game look with readable stealth cues, kept consistent across the whole image.
+  creative_brief: "Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights. Carry it through rain puddles, neon reflections, flashlight cones, over-shoulder view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rain puddles; neon reflections; flashlight cones; over-shoulder view
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+    - rain-stealth
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: third-person rainy stealth screenshot

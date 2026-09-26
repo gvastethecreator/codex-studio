@@ -15,6 +15,7 @@ tags:
   - diablo iv
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     A contemporary real-time dark ARPG frame with handcrafted environments, grounded PBR material
@@ -52,6 +53,10 @@ avoidRules:
   - unrequested canonical characters, locations, monsters or skills
   - unrequested HUD, map, interface, logos or captions; preserve explicitly requested UI and text
   - anime or cel-shaded grammar
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-082.webp
 attributes:
@@ -60,7 +65,7 @@ attributes:
     playable scale or terrain hierarchy, universal red lighting, black crush or indiscriminate fog,
     unrequested canonical characters, locations, monsters or skills, unrequested HUD, map,
     interface, logos or captions; preserve explicitly requested UI and text, anime or cel-shaded
-    grammar
+    grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Diablo IV (2023 base game; launch-era art-direction sources)
   pairedPresetId: SP17-085
   sourceReferences:
@@ -125,6 +130,7 @@ taxonomy:
     - diablo iv
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

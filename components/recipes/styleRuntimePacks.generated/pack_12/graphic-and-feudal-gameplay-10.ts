@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Darksiders Third-Person Gameplay Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art, changing the requested camera into isometric or side-scrolling gameplay, unrequested combat effects, copied health bars or fabricated interface labels, modern rendering upgrades presented as the 2010 original',
+      'unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art, changing the requested camera into isometric or side-scrolling gameplay, unrequested combat effects, copied health bars or fabricated interface labels, modern rendering upgrades presented as the 2010 original, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Darksiders (2010) stylized real-time action adventure: immense comic-book heroic anatomy, small heads, enormous wedge-shaped upper bodies, narrow waists and oversized hands and weapons. Broad angular armor planes amplify the living anatomy rather than enclosing it in a rounded suit. Graphic sculpted shape design leads over surface realism.',
@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blasphemous Side-Scrolling Gameplay Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art, changing the side-scroll plane or inventing an alternate camera, unrequested gore, named religious props, copied meters or fabricated interface text, filtering non-pixel subjects with uniform scanlines or blur',
+      'unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art, changing the side-scroll plane or inventing an alternate camera, unrequested gore, named religious props, copied meters or fabricated interface text, filtering non-pixel subjects with uniform scanlines or blur, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Represent a Blasphemous (2019)-style 2D gameplay frame: pixel-authored character and effects in a side-scrolling world whose platform path remains obvious even against monumental gothic scenery. Keep the impression of deliberate high-resolution pixel craft and severe dark massing, not a screenshot-shaped generic retro filter.',
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Onimusha Warlords Fixed-Scene Gameplay Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of Samanosuke, Kaede, named demons, exact castle rooms or key art, mixing the 4:3 fixed composition with a free-moving 16:9 camera, unrequested supernatural effects, copied health/magic meters or fabricated interface labels, modern cinematic depth-of-field that hides scene layout',
+      'unrequested use of Samanosuke, Kaede, named demons, exact castle rooms or key art, mixing the 4:3 fixed composition with a free-moving 16:9 camera, unrequested supernatural effects, copied health/magic meters or fabricated interface labels, modern cinematic depth-of-field that hides scene layout, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Onimusha: Warlords HD (2019) fixed-screen gameplay: small early-2000s 3D combatants against richly pre-rendered Japanese timber, plaster and stone environments.',
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'For Honor Third-Person Melee Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested named heroes, copied emblems or live-service event scenes; retain characteristic base-game equipment construction, switching the third-person view to a side-on fighting-game plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that hides guard direction or combat spacing',
+      'unrequested named heroes, copied emblems or live-service event scenes; retain characteristic base-game equipment construction, switching the third-person view to a side-on fighting-game plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that hides guard direction or combat spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'For Honor (2017) third-person melee capture with heavy practical armor, massive fortified terrain and clear guarded combat spacing under natural battlefield light.',
@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mortal Kombat 1 2.5D Fighting Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested named roster characters, copied exact arenas or signature fatalities; retain the reference game costume and equipment design vocabulary, switching the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or fabricated health bars, key-art posing that hides playable spacing',
+      'unrequested named roster characters, copied exact arenas or signature fatalities; retain the reference game costume and equipment design vocabulary, switching the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or fabricated health bars, key-art posing that hides playable spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Mortal Kombat 1 (2023) polished real-time fighting-game frame with naturalistic fighters, ornate martial costume, jewel-toned scenery and precisely readable side-on action.',
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Darkest Dungeon Side-View Tactical Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout, changing the tactical side view to pixel-platformer or third-person 3D, unrequested gore, stress symbols, torch icons or fabricated status text, wide cinematic staging that makes units too small to read',
+      'unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout, changing the tactical side view to pixel-platformer or third-person 3D, unrequested gore, stress symbols, torch icons or fabricated status text, wide cinematic staging that makes units too small to read, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Represent the original Darkest Dungeon (2016) combat presentation as hand-drawn 2D character units in a compressed side-view encounter. Keep the readable line-and-ink drawing, expressive profile silhouettes and dark, narrow setting; this is a game-screen representation, not a cinematic adaptation or merely a black texture pass.',

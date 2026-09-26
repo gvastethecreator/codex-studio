@@ -15,6 +15,7 @@ tags:
   - 'onimusha: warlords'
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Onimusha: Warlords HD (2019) fixed-screen gameplay: small early-2000s 3D combatants against
@@ -49,6 +50,10 @@ avoidRules:
   - mixing the 4:3 fixed composition with a free-moving 16:9 camera
   - unrequested supernatural effects, copied health/magic meters or fabricated interface labels
   - modern cinematic depth-of-field that hides scene layout
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-089.webp
 attributes:
@@ -56,7 +61,7 @@ attributes:
     unrequested use of Samanosuke, Kaede, named demons, exact castle rooms or key art, mixing the
     4:3 fixed composition with a free-moving 16:9 camera, unrequested supernatural effects, copied
     health/magic meters or fabricated interface labels, modern cinematic depth-of-field that hides
-    scene layout
+    scene layout, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     Onimusha: Warlords (2019 HD remaster of the 2001 original; Capcom's remaster preserves
     fixed-scene camera behavior)
@@ -117,6 +122,7 @@ taxonomy:
     - 'onimusha: warlords'
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

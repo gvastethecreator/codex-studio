@@ -15,6 +15,7 @@ tags:
   - bloodborne
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     A 2015 PS4-generation real-time action-horror frame whose Gothic environment is experienced from
@@ -53,6 +54,10 @@ avoidRules:
   - unrequested canonical hunter, weapon, boss or landmark
   - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
   - anime, manga or cel-shaded grammar
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-083.webp
 attributes:
@@ -60,7 +65,7 @@ attributes:
     isometric or first-person view, static fashion portrait in place of gameplay-scale framing,
     unreadable subject/architecture overlap, unrequested canonical hunter, weapon, boss or landmark,
     unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime,
-    manga or cel-shaded grammar
+    manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Bloodborne (2015 PS4 original; official launch-era material)
   pairedPresetId: SP17-086
   sourceReferences:
@@ -123,6 +128,7 @@ taxonomy:
     - bloodborne
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

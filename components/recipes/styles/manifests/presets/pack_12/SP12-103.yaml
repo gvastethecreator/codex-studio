@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-103
+packId: pack_12
+name: Night-Market Brawler Capture
+styleAnchors:
+  - Night-Market Brawler Capture
+  - side-scrolling street fight screenshot
+  - side-scrolling lane
+displayName: Night-Market Brawler Capture
+category: 1. Neon Urban & Night Ops
+domain: side-scrolling street fight screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - neon-urban-and-night-ops
+  - night-market
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-fight in a side-scrolling night market lane.
+  color_and_tone: Warm lantern orange, steam white and neon pink.
+  lighting_and_shadow: Lantern and stall light with steam glow, kept consistent across the whole image.
+  texture_and_material: Food stalls, crates, steam and hand-drawn sprites, kept consistent across the whole image.
+  camera_and_composition: Side-on lane with enemies from both sides, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with rowdy festive chaos.
+  rendering_and_quality: Clean hand-drawn game capture, kept consistent across the whole image.
+  creative_brief: "Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props. Carry it through side-scrolling lane, food stalls, lanterns, breakable props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: side-scrolling lane; food stalls; lanterns; breakable props
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: neon-urban-and-night-ops
+  categoryName: 1. Neon Urban & Night Ops
+  tags:
+    - video-game-originals-vault
+    - neon-urban-and-night-ops
+    - night-market
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: side-scrolling street fight screenshot

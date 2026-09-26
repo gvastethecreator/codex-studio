@@ -13,10 +13,10 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Homeworld: Deserts of Kharak gameplay screenshots: desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Homeworld: Deserts of Kharak gameplay: desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Homeworld: Deserts of Kharak-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -28,13 +28,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Homeworld: Deserts of Kharak-derived mood: dry, strategic, convoy-heavy, lonely, and military-operational. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Homeworld: Deserts of Kharak-derived mood: dry, strategic, convoy-heavy, lonely, and military-operational; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Homeworld: Deserts of Kharak gameplay screenshots; desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain; bleached sand, burnt orange shadows, military blue UI, dusty yellow metal, and green unit indicators; high desert glare, long carrier shadows, dust haze, engine bloom, and radar-like selection glow; sand dunes, weathered armor plating, tire tracks, wreckage, antennae, heat shimmer, and utilitarian command hardware; elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis; dry, strategic, convoy-heavy, lonely, and military-operational; HUD guidance: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera',
       creative_brief:
-        'Use Kharak Desert Carrier RTS as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Homeworld: Deserts of Kharak: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Kharak Desert Carrier RTS: in-game screenshot language informed by Homeworld: Deserts of Kharak, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -51,7 +51,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact Sevastopol station copy, xenomorph silhouette copy',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original first-person survival-horror captures: industrial orbital freight corridors, analog devices, emergency light, maintenance clutter, hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained first-person tension of Alien Isolation-like games, but land as a different fictional station with different signage shapes, creature logic, tools, UI icons, and architecture.',
+        'Original in-game screenshot look for first-person survival-horror captures: industrial orbital freight corridors, analog devices, emergency light, maintenance clutter, hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained first-person tension of Alien Isolation-like games, but land as a different fictional station with different signage shapes, creature logic, tools, UI icons, and architecture.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable first-person survival-horror screenshot subject: keep clear threat/object function, hiding route, device/tool scale, interactable affordance, and escape decision without copying source creatures or locations.",
       color_and_tone:
@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Alien: Isolation gameplay screenshots; retro-futurist space-station survival horror capture with narrow corridors, maintenance panels, emergency alarms, and vulnerable first-person stealth; dirty cream plastic, warning orange, medical green monitors, deep black vents, and cold fluorescent blue; flickering tube lights, rotating alarm glow, flashlight cones, terminal phosphor, and occluded corridor darkness; worn bulkheads, cassette-future interfaces, condensation, rubber seals, scratched glass, cable bundles, and analog tech grime; first-person corridor composition with motion-tracker depth, hiding spots, doorway silhouettes, and claustrophobic route uncertainty; anxious, analog, hunted, industrial, and breath-held; HUD guidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic device screen; avoid arcade overlays',
       creative_brief:
-        'Use Orbital Freight Breach as a transferable game-originals preset. Preserve prompt X, then route interpretation through first-person survival-horror references: analog devices, industrial corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro pixel downgrade.',
+        "Orbital Freight Breach: in-game screenshot language informed by first-person survival-horror references, covering analog devices, industrial corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture signage',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.',
+        'Original in-game screenshot look for immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable drowned-deco first-person screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale, interactable pickup logic, and readable combat spacing without copying source characters or named IP elements.",
       color_and_tone:
@@ -104,7 +104,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'BioShock gameplay screenshots; first-person immersive-sim capture with art-deco underwater corridors, leaking glass, plasmid hands, and environmental horror staging; green seawater, tarnished gold, rust orange, red alarm glow, black ocean void, and sickly neon signage shapes; flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor shadows; brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans, riveted metal, and sea growth; first-person weapon/plasmid framing with corridor depth, interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical, paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match immersive-sim screenshot logic',
       creative_brief:
-        'Use Drowned Deco Pressure Hall as a transferable game-originals preset. Preserve prompt X, then route interpretation through immersive art-deco shooter references: first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition.',
+        "Drowned Deco Pressure Hall: in-game screenshot language informed by immersive art-deco shooter references, covering first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -114,10 +114,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Defense Grid 2 gameplay screenshots', 'Defense Grid Storm Citadel'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Defense Grid 2 gameplay screenshots: tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Defense Grid 2 gameplay: tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Defense Grid 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -129,13 +129,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Defense Grid 2-derived mood: methodical, defensive, synthetic, urgent, and strategic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Defense Grid 2-derived mood: methodical, defensive, synthetic, urgent, and strategic; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Defense Grid 2 gameplay screenshots; tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry; cool steel blue, electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights; turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination; sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base panels; isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth; methodical, defensive, synthetic, urgent, and strategic; HUD guidance: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated',
       creative_brief:
-        'Use Defense Grid Storm Citadel as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Defense Grid 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Defense Grid Storm Citadel: in-game screenshot language informed by Defense Grid 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -145,10 +145,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Surviving Mars gameplay screenshots', 'Surviving Mars Orbital Garden'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Surviving Mars gameplay screenshots: colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Surviving Mars gameplay: colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Surviving Mars-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -160,13 +160,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and frontier-scientific. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and frontier-scientific; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Surviving Mars gameplay screenshots; colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale; Mars red, dome glass blue, white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt; hard Martian sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow; modular domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like planning overlays; elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy; optimistic, technical, fragile, logistical, and frontier-scientific; HUD guidance: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional',
       creative_brief:
-        'Use Surviving Mars Orbital Garden as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Surviving Mars: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Surviving Mars Orbital Garden: in-game screenshot language informed by Surviving Mars, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -176,10 +176,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Plants vs. Zombies gameplay screenshots', 'Plants vs Zombies Orchard Defense'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Plants vs. Zombies gameplay screenshots: cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Plants vs. Zombies gameplay: cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Plants vs. Zombies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -191,13 +191,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Plants vs. Zombies-derived mood: absurd, defensive, charming, escalating, and tactically legible. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Plants vs. Zombies-derived mood: absurd, defensive, charming, escalating, and tactically legible; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Plants vs. Zombies gameplay screenshots; cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity; lawn green, sunflower yellow, zombie grey, roof red, pea green, and bright blue UI accents; flat daylight, simple night-stage tint, projectile glow, explosion puffs, and friendly cartoon contrast; bold 2D sprites, lawn tiles, soil rows, silly enemy shapes, plant textures, coins, and chunky projectiles; fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes; absurd, defensive, charming, escalating, and tactically legible; HUD guidance: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI',
       creative_brief:
-        'Use Plants vs Zombies Orchard Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Plants vs. Zombies: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Plants vs Zombies Orchard Defense: in-game screenshot language informed by Plants vs. Zombies, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -207,10 +207,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Control gameplay screenshots', 'Control Rift Laboratory'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Control gameplay screenshots: third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Control gameplay: third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Control-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -222,13 +222,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Control-derived mood: uncanny, bureaucratic, oppressive, clean, and reality-bent. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Control-derived mood: uncanny, bureaucratic, oppressive, clean, and reality-bent; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Control gameplay screenshots; third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry; concrete grey, Federal red, black office void, fluorescent white, amber desk lamps, and pale psychic blue; overhead fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist shadow; concrete slabs, office furniture, papers, floating rubble, glass partitions, and bureaucratic paranormal material contrast; over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes; uncanny, bureaucratic, oppressive, clean, and reality-bent; HUD guidance: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal',
       creative_brief:
-        'Use Control Rift Laboratory as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Control: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Control Rift Laboratory: in-game screenshot language informed by Control, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -245,7 +245,7 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, generic robot forest render, exact Swedish village clone',
     style: {
       aesthetic:
-        'Source-informed video-game style router for original retrofuturist first-person mech survival captures: rural forest roads, abandoned utility structures, hostile machine silhouettes, scavenged weapons, weathered 1980s tech, and readable stealth/combat routes. Land as a fictional machine-survival setting, not an isometric tactics map.',
+        'Original in-game screenshot look for retrofuturist first-person mech survival captures: rural forest roads, abandoned utility structures, hostile machine silhouettes, scavenged weapons, weathered 1980s tech, and readable stealth/combat routes. Land as a fictional machine-survival setting, not an isometric tactics map.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable first-person survival screenshot subject: keep clear threat/object role, foreground weapon/tool scale, cover, patrol spacing, loot/interactable affordance, and escape route without copying source locations or robots.",
       color_and_tone:
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'Generation Zero gameplay screenshots; open-world robot-hunt capture with Scandinavian forests, abandoned roads, large machines, guerrilla gear, and distant threat silhouettes; pine green, fog grey, rust orange, warning red, military olive, and cold blue sky; low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and misty forest shadow; wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped paint, and rural decay; first-person or third-person survival shooter framing with machine scale, cover routes, weak points, and ambush distance; lonely, tactical, rural, mechanical, and uneasy; HUD guidance: weapon/ammo HUD, compass, stealth markers, and machine tags can appear if modest and readable',
       creative_brief:
-        'Use Alloy Forest Ambush as a transferable game-originals preset. Preserve prompt X, then route interpretation through retrofuturist mech-survival references: first-person camera, rural machine threats, scavenged materials, cover routes, and readable survival pressure. Avoid strategy-tactics framing, exact village copies, and generic robot forest renders.',
+        "Alloy Forest Ambush: in-game screenshot language informed by retrofuturist mech-survival references, covering first-person camera, rural machine threats, scavenged materials, cover routes, and readable survival pressure. Avoid strategy-tactics framing, exact village copies, and generic robot forest renders. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -273,10 +273,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Sable gameplay screenshots', 'Sable Solar Rail Nomads'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Sable gameplay screenshots: open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Sable gameplay: open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Sable-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -288,13 +288,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Sable-derived mood: quiet, nomadic, contemplative, warm, and exploratory. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Sable-derived mood: quiet, nomadic, contemplative, warm, and exploratory; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Sable gameplay screenshots; open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm; sand peach, muted red, sky cyan, black ink outlines, pale yellow, and dusty lavender shadows; soft desert sun, flat cel shade, gentle sunset gradients, and minimal bloom; outlined tents, hoverbike panels, cloth wraps, ancient metal, smooth dunes, and hand-drawn environment edges; third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort; quiet, nomadic, contemplative, warm, and exploratory; HUD guidance: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy',
       creative_brief:
-        'Use Sable Solar Rail Nomads as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sable: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Sable Solar Rail Nomads: in-game screenshot language informed by Sable, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
   {
@@ -304,10 +304,10 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Panzer Dragoon: Remake gameplay screenshots', 'Panzer Dragoon Skyforge Dock'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Capture-derived video-game style router based on Panzer Dragoon: Remake gameplay screenshots: on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
+        'In-game screenshot look informed by Panzer Dragoon: Remake gameplay: on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies. It never recreates an exact official level, character, logo or marketing art.',
       subject_treatment:
         "Preserve the user's subject and transform it into a playable Panzer Dragoon: Remake-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
@@ -319,13 +319,362 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Compose with third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Carry a Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic sci-fi. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
+        'Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic sci-fi; it follows the tone of the requested scene without forcing a fixed mission or story.',
       rendering_and_quality:
         'Finish as a coherent in-engine screenshot style, not concept art: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
         'Panzer Dragoon: Remake gameplay screenshots; on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies; dusty teal, rust orange, bone white, sky blue, violet shadow, and red lock-on marks; sunlit sky haze, weapon lock glow, engine-like ancient lights, and atmospheric rim on wings; scaled dragon skin, ancient machinery, floating platforms, organic metal, desert ruins, and rail-shooter projectile effects; third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route; strange, majestic, lonely, arcade, and mythic sci-fi; HUD guidance: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language',
       creative_brief:
-        'Use Panzer Dragoon Skyforge Dock as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Panzer Dragoon: Remake: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
+        "Panzer Dragoon Skyforge Dock: in-game screenshot language informed by Panzer Dragoon: Remake, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+    },
+  },
+  {
+    id: 'SP12-119',
+    name: 'Mech Canopy View Capture',
+    displayName: 'Mech Canopy View Capture',
+    styleAnchors: [
+      'Mech Canopy View Capture',
+      'first-person mech cockpit screenshot',
+      'mech cockpit frame',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'first-person mech cockpit screenshot',
+    negativePrompt:
+      'readable instruments, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject through the glass canopy of a towering mech.',
+      color_and_tone: 'Dim cockpit greys with bright battlefield light outside.',
+      lighting_and_shadow:
+        'Backlit canopy glass and interior glow strips, kept consistent across the whole image.',
+      texture_and_material: 'Scratched glass, metal struts and rain on the canopy.',
+      camera_and_composition:
+        'Cockpit frame with a wide view outside, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with heavy mechanical power.',
+      rendering_and_quality:
+        'Clean capture with no readable instrument text, kept consistent across the whole image.',
+      creative_brief:
+        "Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below. Carry it through mech cockpit frame, canopy glass, battlefield below, rain streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mech cockpit frame; canopy glass; battlefield below; rain streaks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-120',
+    name: 'Weightless Station Drift Capture',
+    displayName: 'Weightless Station Drift Capture',
+    styleAnchors: [
+      'Weightless Station Drift Capture',
+      'zero gravity space station screenshot',
+      'zero gravity',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'zero gravity space station screenshot',
+    negativePrompt:
+      'readable labels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject floating weightless among drifting objects inside a station.',
+      color_and_tone: 'Clean white modules, blue planet glow and warning orange.',
+      lighting_and_shadow:
+        'Planet light through windows and panel glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Padded walls, cables, floating tools and tethers, kept consistent across the whole image.',
+      camera_and_composition:
+        'Rotated camera with no fixed up direction, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with floating calm or peril.',
+      rendering_and_quality:
+        'Clean capture with no readable labels, kept consistent across the whole image.',
+      creative_brief:
+        "Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window. Carry it through zero gravity, floating objects, station module, planet window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'zero gravity; floating objects; station module; planet window',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-121',
+    name: 'Planet Overview Colony Capture',
+    displayName: 'Planet Overview Colony Capture',
+    styleAnchors: [
+      'Planet Overview Colony Capture',
+      'orbital strategy planet screenshot',
+      'small planet',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'orbital strategy planet screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as colonies and structures on a small planet seen from orbit.',
+      color_and_tone: 'Planet blues, greens and deserts on black space.',
+      lighting_and_shadow:
+        'Day-night terminator across the globe, kept consistent across the whole image.',
+      texture_and_material:
+        'Clouds, city lights and glowing route lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Orbital view of a curved planet, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with godlike overview, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean strategy capture with no readable UI, kept consistent across the whole image.',
+      creative_brief:
+        "Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface. Carry it through small planet, orbital view, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'small planet; orbital view; colony lights; route lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-122',
+    name: 'Asteroid Belt Dogfight Capture',
+    displayName: 'Asteroid Belt Dogfight Capture',
+    styleAnchors: ['Asteroid Belt Dogfight Capture', 'space fighter chase screenshot', 'asteroids'],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'space fighter chase screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a small fighter craft chasing or fleeing through asteroids.',
+      color_and_tone: 'Black space with orange engine glow and red and green lasers.',
+      lighting_and_shadow:
+        'Hard sunlight on asteroids, engine glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Rocky asteroids, sleek hulls and particle trails, kept consistent across the whole image.',
+      camera_and_composition:
+        'Chase camera behind the fighter, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with high-speed daring, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean space capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails. Carry it through asteroids, laser streaks, chase camera, engine trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'asteroids; laser streaks; chase camera; engine trails',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-123',
+    name: 'Rover Photo-Mode Capture',
+    displayName: 'Rover Photo-Mode Capture',
+    styleAnchors: ['Rover Photo-Mode Capture', 'planet rover photo mode screenshot', 'small rover'],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'planet rover photo mode screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject beside or as an exploration rover in a cinematic alien vista.',
+      color_and_tone: 'Alien sky colors, rust or teal ground and rover white.',
+      lighting_and_shadow:
+        'Low alien sun and long shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Regolith, rover panels, dust and rocks, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low cinematic angle with shallow focus, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with lonely discovery, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Polished photo-mode capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky. Carry it through small rover, alien vista, depth of field, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'small rover; alien vista; depth of field; low sun',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-124',
+    name: 'Mech Garage Loadout Capture',
+    displayName: 'Mech Garage Loadout Capture',
+    styleAnchors: [
+      'Mech Garage Loadout Capture',
+      'mech customization garage screenshot',
+      'mech on gantry',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'mech customization garage screenshot',
+    negativePrompt:
+      'stat panels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject on a service gantry in a mech workshop.',
+      color_and_tone: 'Industrial greys with hazard yellow and welding blue.',
+      lighting_and_shadow:
+        'Overhead floodlights and welding sparks, kept consistent across the whole image.',
+      texture_and_material:
+        'Metal plates, cables, oil and scaffolds, kept consistent across the whole image.',
+      camera_and_composition: 'Low angle up the gantry at the mech.',
+      atmosphere_and_mood: 'Keep the requested mood with proud mechanical craft.',
+      rendering_and_quality:
+        'Clean capture with no readable stat panels, kept consistent across the whole image.',
+      creative_brief:
+        "Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians. Carry it through mech on gantry, swapped parts, sparks, technicians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mech on gantry; swapped parts; sparks; technicians',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-125',
+    name: 'Survey Visor Alien Flora Capture',
+    displayName: 'Survey Visor Alien Flora Capture',
+    styleAnchors: [
+      'Survey Visor Alien Flora Capture',
+      'scanner visor alien plants screenshot',
+      'scanning visor',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'scanner visor alien plants screenshot',
+    negativePrompt:
+      'readable data, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; view the subject through a scanning visor that outlines alien life.',
+      color_and_tone:
+        'Lush alien colors with cyan scan outlines, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Natural alien light with visor glow overlays, kept consistent across the whole image.',
+      texture_and_material:
+        'Strange plants, glowing spores and visor glass, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person view with a curved visor edge, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with curious alien discovery.',
+      rendering_and_quality:
+        'Clean capture with no readable data, kept consistent across the whole image.',
+      creative_brief:
+        "Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows. Carry it through scanning visor, alien flora, cyan outlines, first person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scanning visor; alien flora; cyan outlines; first person',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-126',
+    name: 'Station Management Side-View',
+    displayName: 'Station Management Side-View',
+    styleAnchors: [
+      'Station Management Side-View',
+      'space station management sim screenshot',
+      'station cross-section',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'space station management sim screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as tiny crew in a side-view cross-section of a station.',
+      color_and_tone: 'Clean module whites, reactor blue and hazard red.',
+      lighting_and_shadow:
+        'Room lights with dark space around, kept consistent across the whole image.',
+      texture_and_material:
+        'Modular rooms, pipes and tiny crew sprites, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-view cutaway of many rooms, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with busy small-world charm.',
+      rendering_and_quality:
+        'Tidy management capture with no readable UI, kept consistent across the whole image.',
+      creative_brief:
+        "Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships. Carry it through station cross-section, tiny crew, modular rooms, docking ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'station cross-section; tiny crew; modular rooms; docking ships',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-127',
+    name: 'Ice Moon Outpost Capture',
+    displayName: 'Ice Moon Outpost Capture',
+    styleAnchors: ['Ice Moon Outpost Capture', 'frozen moon base screenshot', 'frozen moon'],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'frozen moon base screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject at a small outpost on a frozen moon under a giant ringed planet.',
+      color_and_tone: 'Ice blue, white and dim orange planet glow.',
+      lighting_and_shadow:
+        'Floodlights on ice with deep blue shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Cracked ice, frosted metal and snow drifts, kept consistent across the whole image.',
+      camera_and_composition: 'Wide view with the planet dominating the sky.',
+      atmosphere_and_mood: 'Keep the requested mood with isolated frozen awe.',
+      rendering_and_quality:
+        'Clean capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights. Carry it through frozen moon, ringed planet sky, floodlights, cracked ice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'frozen moon; ringed planet sky; floodlights; cracked ice',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-128',
+    name: 'Gravity-Flip Corridor Capture',
+    displayName: 'Gravity-Flip Corridor Capture',
+    styleAnchors: [
+      'Gravity-Flip Corridor Capture',
+      'gravity shifting puzzle screenshot',
+      'gravity zones',
+    ],
+    category: '3. Sci-Fi Frontiers & Mech Zones',
+    domain: 'gravity shifting puzzle screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a corridor where gravity changes direction.',
+      color_and_tone: 'Clean white panels with orange and blue gravity zones.',
+      lighting_and_shadow: 'Glowing gravity field panels, kept consistent across the whole image.',
+      texture_and_material:
+        'Polished panels, floating dust and field glows, kept consistent across the whole image.',
+      camera_and_composition:
+        'Disorienting angle with multiple floors in view, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with mind-bending playfulness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean puzzle capture with no readable text, kept consistent across the whole image.',
+      creative_brief:
+        "Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings. Carry it through gravity zones, wall-walking, disorienting angle, clean panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gravity zones; wall-walking; disorienting angle; clean panels',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -15,6 +15,7 @@ tags:
   - lords of the fallen (2023)
   - representation-profile
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Lords of the Fallen (2023) contemporary third-person dark fantasy, mixing medieval religious
@@ -51,6 +52,10 @@ avoidRules:
   - unrequested canonical protagonist, boss, shrine or lore symbol
   - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
   - anime, manga or cel-shaded grammar
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-085.webp
 attributes:
@@ -58,7 +63,7 @@ attributes:
     isometric or first-person camera, two unrelated places pasted together, transition light that
     hides path, subject or nearby forms, unrequested canonical protagonist, boss, shrine or lore
     symbol, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text,
-    anime, manga or cel-shaded grammar
+    anime, manga or cel-shaded grammar, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Lords of the Fallen (2023) (2023 reboot; Axiom/Umbral presentation)
   pairedPresetId: SP17-088
   sourceReferences:
@@ -117,6 +122,7 @@ taxonomy:
     - lords of the fallen (2023)
     - representation-profile
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
