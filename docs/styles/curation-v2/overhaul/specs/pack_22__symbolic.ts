@@ -31,8 +31,8 @@ const spec: Spec = {
   updates: {
     'SP22-205': { briefs: [
       'A lighthouse sends its beam across a stormy sea in a compact flat-color print of three inks, the beam a single cream wedge cutting navy waves. No readable text or logo.',
-      'A fox curls into a perfect circle in the snow, reduced to a few flat orange and white shapes on deep blue. No readable text or logo.',
-      'A lone cyclist crosses a bridge at sunset in compact flat red, gold and black shapes. No readable text or logo.',
+      "Curled into a perfect circle in the snow, a fox dreams of a second fox curled inside its tail, the two reduced to a few flat orange and white shapes on deep blue. No readable text or logo.",
+      "Crossing a bridge at sunset, a lone cyclist is followed by her own long shadow, which has decided to take a different road, all in compact flat red, gold and black. No readable text or logo.",
     ] },
     'SP22-206': { briefs: [
       'The black silhouette of a wolf howls at the moon, and the white negative space between its legs forms a small sleeping village. No readable text or logo.',
@@ -40,34 +40,34 @@ const spec: Spec = {
       "Framed by the black branches of a winter tree, a white owl hides entirely in the negative space between the limbs, its eyes the only two marks inside the empty shape. No readable text or logo.",
     ] },
     'SP22-207': { briefs: [
-      'A balloon seller walks through a park in balanced flat color shapes held by one even outline weight, everything arranged in calm harmony. No readable text or logo.',
-      "Sharing a sunny windowsill, a curious cat and a goldfish in its bowl stare at each other nose to glass, both drawn in clean evenly weighted flat lines with calm pastel fills. No readable text or logo.",
-      "Gliding past a striped lighthouse on a calm afternoon, a small sailboat carries a sleeping dog at the tiller, drawn in evenly weighted lines and soft flat pastel fills. No readable text or logo.",
+      "Walking through a park, a balloon seller realizes one balloon is slowly lifting the entire bench of pigeons behind him, everything held by one even outline weight in calm flat color. No readable text or logo.",
+      "Sharing a sunny windowsill, a goldfish has trained the cat to sit, stay and bow, the two drawn nose to glass in clean evenly weighted flat lines. No readable text or logo.",
+      "Gliding past a striped lighthouse, a small sailboat is steered by a sleeping dog while a gull reads the map, drawn in evenly weighted lines and soft flat pastel fills. No readable text or logo.",
     ] },
     'SP22-208': { briefs: [
-      'A tall ship rides a wave rendered only in ordered parallel engraving lines that thicken into the shadowed hull and thin into the bright sky. No readable text or logo.',
-      "Asleep on a rocky ledge, a great lion is built entirely from disciplined parallel engraved lines that swell into shadow along his mane and thin to nothing in the sunlight. No readable text or logo.",
+      "Riding a wave taller than its own mast, a tall ship is about to be swallowed by a sea serpent built from the same ordered parallel lines as the water itself. No readable text or logo.",
+      "Asleep on a rocky ledge, a great lion is being carefully groomed by three tiny mice, all built from disciplined parallel engraved lines that swell into shadow along his mane. No readable text or logo.",
       "Rising above a sea of clouds, a mountain peak with one tiny climber is drawn in ordered families of engraved lines curving around its slopes and ridges like contour grooves. No readable text or logo.",
     ] },
     'SP22-209': { briefs: [
-      'A stag is constructed from modular circles, squares and triangles snapped together on an invisible grid, antlers branching in precise geometric units. No readable text or logo.',
-      "Assembled from repeating modular blocks like building toys, a city skyline stacks towers, bridges and round domes of identical pieces under a sun made of four quarter circles. No readable text or logo.",
-      "Swimming through a sea of navy squares, a whale is made from stacked teal semicircles and quarter circles, its spout a fountain of small repeating triangles. No readable text or logo.",
+      "Constructed from snapped-together circles, squares and triangles, a stag is losing pieces of its antlers to a flock of geometric birds carrying them away to build nests. No readable text or logo.",
+      "Assembled from identical building-toy blocks, a city skyline is being reassembled by a giant toddler's hand reaching in from the top of the card. No readable text or logo.",
+      "Swimming through a sea of navy squares, a whale made of stacked teal semicircles carries a modular submarine in its mouth like a lost toy. No readable text or logo.",
     ] },
     'SP22-210': { briefs: [
       'A peacock\'s tail is rendered as an interwoven textile surface, warp and weft threads forming every eye of its feathers. No readable text or logo.',
-      'A mountain village appears woven into a tapestry, the roofs and fields built from visible crossing threads. No readable text or logo.',
+      "Across a tapestry of crossing threads, a mountain village is quietly coming undone, one loose thread pulling a whole house up into the sky as the villagers chase after it. No readable text or logo.",
       "Seen from above, a koi pond is rendered as one woven surface of blue and orange strands, the fish rising and sinking as the threads pass over and under each other. No readable text or logo.",
     ] },
     'SP22-211': { briefs: [
-      'A circus acrobat leaps between trapezes, simulated as flat paper cutout shapes with tiny shadows as if pasted on a board. No readable text or logo.',
-      'A rooster crows on a fence built from simulated cut paper pieces in red and yellow. No readable text or logo.',
-      "Arranged as simple cutout shapes on a deep blue ground, a crescent moon and three round owls sit on one bare branch, each shape with a slight paper shadow as if lifted off the page. No readable text or logo.",
+      "Mid-leap between trapezes, a circus acrobat is caught by a partner who is only a paper cutout shadow, both simulated as flat pasted shapes with tiny drop shadows. No readable text or logo.",
+      "On a fence of cut red and yellow shapes, a rooster crows at a sun that has been pasted on slightly crooked and is sliding off the page. No readable text or logo.",
+      "On a deep blue ground, three round owls perch on one bare branch while a fourth owl is still being cut out of paper by a giant pair of scissors at the edge. No readable text or logo.",
     ] },
     'SP22-212': { briefs: [
-      'A knight on horseback is reduced to a few graphic shapes with no letters or glyphs, a single red plume as the only detail. No readable text or logo.',
-      'A cup of coffee steams in a graphic reduction of three shapes and one curving line. No readable text or logo.',
-      "Reduced to almost nothing, a lighthouse on a dark sea becomes one tall white stripe, one red triangle and one yellow circle whose beam is only a pale wedge of empty space. No readable text or logo.",
+      "Charging into battle, a knight on horseback is reduced to four graphic shapes and a single red plume, while his opponent is only a looming black rectangle. No readable text or logo.",
+      "Steaming on a table, a cup of coffee is reduced to three shapes and one curving line of steam that has twisted itself into a tiny ghost leaving the room. No readable text or logo.",
+      "Reduced to almost nothing, a lighthouse on a dark sea becomes one white stripe, one red triangle and one yellow circle, and a single black fin cuts the water below. No readable text or logo.",
     ] },
   },
   creates: [
@@ -82,8 +82,8 @@ const spec: Spec = {
       rendering_and_quality: "Precise single-weight line with even spacing everywhere, kept consistent across the whole image.",
       key_features: 'single line weight; rounded joins; compact emblem; flat ground',
     }, [], [
-      'A mountain goat standing on a peak with a rising sun behind it is drawn as a round badge in one continuous cream line on forest green. No readable text or logo.',
-      "Fitting together inside a small monoline shield emblem, a lighthouse, a curling wave and a gull share one unbroken line weight, balanced like a badge on a sailor's jacket. No readable text or logo.",
+      "Inside a round badge drawn in one continuous cream line on forest green, a mountain goat stands on a peak that is actually the horn of a much larger goat below. No readable text or logo.",
+      "Inside a small monoline shield, a kraken wraps one tentacle around an anchor and another around a teacup, everything drawn in one unbroken single-weight line. No readable text or logo.",
       "Curled around a crescent moon, a sleeping cat becomes a single-weight line badge, its tail wrapping the moon tip and three small stars tucked into the negative space around it. No readable text or logo.",
     ]),
     study('Hidden Figure Negative Space', 'double-image negative space', 'hidden-negative', {
@@ -157,9 +157,9 @@ const spec: Spec = {
       rendering_and_quality: "Precise geometric assembly with recognizable silhouettes, kept consistent across the whole image.",
       key_features: 'seven tangram shapes; small gaps; flat colors; puzzle silhouette',
     }, ['curved shapes'], [
-      'A running fox is assembled from the seven tangram pieces in different oranges, a thin gap separating every triangle. No readable text or logo.',
-      "Built from seven wooden tangram pieces on a pale table, a sailing ship tilts through imaginary waves, its sail a large triangle and its hull a parallelogram with a tiny square flag. No readable text or logo.",
-      "Charging across an empty page on horseback, a knight is made only of triangles and a single square, his lance a thin wedge and his horse leaping mid-gallop. No readable text or logo.",
+      "Running at full speed, a fox is assembled from the seven tangram pieces in different oranges, and one triangle has fallen off behind it as it runs. No readable text or logo.",
+      "Built from seven wooden tangram pieces, a sailing ship is being attacked by a tangram sea monster whose only pieces are borrowed from the ship's own hull. No readable text or logo.",
+      "Charging across an empty page, a knight made of triangles and a single square faces a tangram dragon, but they are both built from the same seven pieces. No readable text or logo.",
     ]),
     study('Transparent Overprint Shapes', 'overlapping transparent ink shapes', 'overprint-shapes', {
       aesthetic: 'Transparent overprint shapes: the subject built from overlapping translucent flat shapes whose overlaps create new colors, like layered printing inks.',
@@ -172,8 +172,8 @@ const spec: Spec = {
       rendering_and_quality: "Clean overlaps with accurate multiplied colors, kept consistent across the whole image.",
       key_features: 'translucent overlapping shapes; overlap colors; flat print; white ground',
     }, ['opaque shapes'], [
-      'A flock of translucent birds overlaps in flight, cyan, magenta and yellow wings mixing into purples and greens where they cross. No readable text or logo.',
-      "Built from overlapping translucent buildings in three inks, a city skyline glows at dusk where every overlap creates a new darker color and one window shines through all layers. No readable text or logo.",
+      "In a flock of translucent birds, cyan, magenta and yellow wings overlap into purples and greens, and one black bird appears exactly where all three colors cross. No readable text or logo.",
+      "Built from overlapping translucent buildings in three inks, a city at dusk hides a giant sleeping cat that only exists where all the buildings overlap. No readable text or logo.",
       "Spinning mid-pirouette, a dancer is made of three overlapping translucent circles and triangles in pink, teal and yellow, the overlaps forming her face, skirt and arms. No readable text or logo.",
     ]),
     study('Heavy Block Symbolism', 'massive block graphic shapes', 'heavy-block', {
@@ -204,7 +204,7 @@ const spec: Spec = {
     }, ['busy detail'], [
       'A tiny rider on a camel crosses a single orange horizon line under an immense flat lilac sky that fills nine tenths of the card. No readable text or logo.',
       "Floating exactly where a flat grey sea meets a flat pale sky, a small red boat carries one fisherman who has fallen asleep with his line trailing into nothing. No readable text or logo.",
-      "Standing on a thin horizon line under a vast flat navy night, a lone lighthouse sends out one small beam that reaches a single star at the very top of the card. No readable text or logo.",
+      "On a thin horizon line under a vast flat navy night, a single house has left one light on, and a tiny figure is walking away from it toward the edge of the card. No readable text or logo.",
     ]),
     study('Concentric Ripple Symbol', 'concentric ring graphic symbol', 'ripple-symbol', {
       aesthetic: 'Concentric ripple symbol: the subject placed at the center of expanding concentric rings like ripples or sound waves, graphic and hypnotic.',
@@ -217,7 +217,7 @@ const spec: Spec = {
       rendering_and_quality: 'Precise evenly spaced rings with a crisp central symbol.',
       key_features: 'concentric rings; centered subject; alternating bands; hypnotic rhythm',
     }, [], [
-      'A single frog sits on a lily pad at the center of concentric green and cream ripple rings that spread to every edge of the card. No readable text or logo.',
+      "Sitting on a lily pad, a frog has just sneezed, and concentric green and cream ripple rings spread from it so strongly that they tip over a distant fishing boat. No readable text or logo.",
       "Belting a high note on a dark blue ground, an opera singer's open mouth sends concentric gold sound rings across the card, shaking three tiny birds off a wire. No readable text or logo.",
       "Dropping from a branch above, a falling apple sits at the exact center of expanding gold and red rings, as if the whole orchard were ripples on a pond. No readable text or logo.",
     ]),
@@ -232,9 +232,9 @@ const spec: Spec = {
       rendering_and_quality: "Clean graphic ribbon with convincing folds, kept consistent across the whole image.",
       key_features: 'single folded ribbon; forked tails; crisp folds; blank banner',
     }, ['readable banner text'], [
-      'A heroic mountain goat stands on a peak while a blank crimson ribbon folds crisply across the rocks beneath it, forked tails flying. No readable text or logo.',
+      "On a lonely peak, a heroic mountain goat stands with a blank crimson ribbon tied around its horns like a victory sash, forked tails whipping in a gale. No readable text or logo.",
       "Wrapped in a teal ribbon that folds three times around its fuzzy body, a bee hovers like a proud emblem, the ribbon ends fluttering into two neat swallowtail points. No readable text or logo.",
-      "Tied together by a folded golden ribbon, a crossed pair of oars rises above three wavy lines, the ribbon curling into loops like an old rowing club badge. No readable text or logo.",
+      "Tied by a folded golden ribbon, a crossed pair of oars rises above three wavy lines while a small octopus tries very hard to steal one of them. No readable text or logo.",
     ]),
     study('Halftone Dot Silhouette', 'silhouette made of halftone dots', 'dot-silhouette', {
       aesthetic: 'Halftone dot silhouette: a bold silhouette built from large halftone dots that grow and shrink across the shape, graphic and punchy like an enlarged print.',
@@ -247,7 +247,7 @@ const spec: Spec = {
       rendering_and_quality: "Precise dot grid with smooth size transitions, kept consistent across the whole image.",
       key_features: 'large halftone dots; varying dot size; bold silhouette; flat ground',
     }, [], [
-      'A leaping dolphin is built from large coral halftone dots on navy, the dots swelling at its belly and shrinking to specks at its fin. No readable text or logo.',
+      "Leaping from a navy sea, a dolphin built from large coral halftone dots is shedding dots behind it like spray, the specks forming a trail of smaller dolphins. No readable text or logo.",
       "Wearing a crooked party hat, a grinning skull is made entirely of big black halftone dots on bright yellow, the dots shrinking to nothing where its eye sockets catch the light. No readable text or logo.",
       "Galloping across the whole card, a running horse becomes a field of growing and shrinking teal dots on white, its mane dissolving into scattered specks behind it. No readable text or logo.",
     ]),

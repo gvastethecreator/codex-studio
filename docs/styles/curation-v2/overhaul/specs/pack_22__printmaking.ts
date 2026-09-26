@@ -40,32 +40,32 @@ const spec: Spec = {
     ] },
     'SP22-175': { briefs: [
       'A skateboarding raccoon flies over a city rooftop, printed in fluorescent pink and teal riso ink that overlaps into a third color on its tail. No readable text or logo.',
-      'A lighthouse and a whale share the sea at dusk in two slightly misregistered riso inks. No readable text or logo.',
+      "At dusk, a whale surfaces beside a tiny rowboat and gently offers the rower a lost umbrella, printed in two slightly misregistered riso inks of pink and blue. No readable text or logo.",
       'A band of goblins plays a punk show in two grainy riso colors, the drummer smeared off register. No readable text or logo.',
     ] },
     'SP22-176': { briefs: [
       'A ballerina bear rehearses in an empty theater, drawn in soft greasy lithographic crayon with velvety tonal grain. No readable text or logo.',
-      'A foggy harbor at dawn is printed in soft lithograph tones, fishing boats emerging from grainy grey mist. No readable text or logo.',
-      'An old accordion player sits under a streetlamp, the lamp glow a soft lifted patch in the crayon tone. No readable text or logo.',
+      "At dawn in a foggy harbor, the fishing boats are returning with one enormous sleeping fish that is towing all of them, printed in soft grainy lithograph grey. No readable text or logo.",
+      "Under a streetlamp, an old accordion player keeps playing while his shadow on the wall dances with another shadow that belongs to no one, the lamp glow a soft lifted patch in the crayon tone. No readable text or logo.",
     ] },
     'SP22-177': { briefs: [
       'A glowing jellyfish drifts through a black sea built entirely from hand-inked stipple dots, dense in the deep and sparse near its bell. No readable text or logo.',
-      'A sleeping wolf curls on a snowy rock, its fur and shadow made from thousands of tiny ink dots. No readable text or logo.',
-      'A crescent moon rises over a desert of dunes stippled from dense black to pale sand. No readable text or logo.',
+      "Curled on a snowy rock, a sleeping wolf is guarded by a ring of snow hares who are clearly terrified but staying anyway, fur and shadow built from thousands of tiny ink dots. No readable text or logo.",
+      "Over a desert of stippled dunes, the moon has come down to rest on a dune crest, and a single camel stands next to it looking unsure, all dots from dense black to pale sand. No readable text or logo.",
     ] },
     'SP22-178': { briefs: [
-      'A miner raises a lantern in a pitch-black tunnel, the light scratched out of black board in fine white lines. No readable text or logo.',
-      'A raven flies across a full moon, its feathers carved as white scratches on solid black. No readable text or logo.',
+      "Deep in a pitch-black tunnel, a miner raises a lantern and discovers a wall of sleeping bats that are all opening their eyes at once, the light scratched out of black board in fine white lines. No readable text or logo.",
+      "Across a full moon, a raven carries away a silver key while a whole city of locked doors waits below, its feathers carved as white scratches on solid black. No readable text or logo.",
       "Spinning alone at midnight in an abandoned fairground, a haunted carousel carries riderless horses whose manes, bulbs and gilded poles are all scratched out of solid black into gleaming white. No readable text or logo.",
     ] },
     'SP22-179': { briefs: [
       'A punk vampire poses on a fire escape, photocopied so many times that his face has become harsh black toner blocks and speckles. No readable text or logo.',
-      'A cut-and-paste zine page shows a giant cat attacking a city, all gritty high-contrast copier texture. No readable text or logo.',
-      'A skate crew grins on a curb in grainy photocopy black and white, toner streaks across the sky. No readable text or logo.',
+      "On a cut-and-paste zine page, a giant cat sits on a city block like a cushion while tiny tanks try to move it, all gritty high-contrast copier texture. No readable text or logo.",
+      "Grinning on a curb, a skate crew of elderly grandmothers shows off scraped knees and a broken board, grainy photocopy black and white with toner streaks across the sky. No readable text or logo.",
     ] },
     'SP22-180': { briefs: [
       'A heron stands in a misty marsh drawn in soft drypoint lines, the burr leaving velvety veils of ink around the reeds. No readable text or logo.',
-      'A sleeping queen lies on a stone tomb, her gown scratched in fuzzy drypoint lines that blur into shadow. No readable text or logo.',
+      "On a stone tomb, a sleeping queen has a small cat curled on her chest that has been guarding her for three hundred years, her gown scratched in fuzzy drypoint burr that blurs into shadow. No readable text or logo.",
       "On a rainy street after midnight, one umbrella walks by itself past glowing shop windows, the puddles and reflections rendered in soft furry drypoint burr and a veil of wiped plate tone. No readable text or logo.",
     ] },
   },
@@ -82,7 +82,7 @@ const spec: Spec = {
       key_features: 'three carved color blocks; overlap colors; registration drift; carved whites',
     }, ['smooth digital gradients'], [
       'A fox leaps over a frozen stream at dusk, printed from three carved blocks of ochre, teal and red that overlap into deep violet shadows. No readable text or logo.',
-      'A lighthouse keeper rows through a storm, the sea a teal block, the sky a red one and the boat where they overlap. No readable text or logo.',
+      "Rowing through a storm, a lighthouse keeper carries the lighthouse lamp itself in her boat because the tower has walked away, the sea a teal block, the sky a red one. No readable text or logo.",
       'A giant pumpkin festival crowds a village square, its three block colors drifting slightly off each other at every edge. No readable text or logo.',
     ]),
     study('Sugar-Lift Brush Etching', 'painterly sugar-lift aquatint', 'sugar-lift', {
@@ -171,9 +171,9 @@ const spec: Spec = {
       rendering_and_quality: "Delicate etched line with controlled atmospheric tone, kept consistent across the whole image.",
       key_features: 'fine etched line; wiped plate tone; misty greys; plate mark',
     }, ['clean white background'], [
-      'A lonely ferry crosses a misty river at dawn, the fog a soft film of plate tone with the lantern wiped bright. No readable text or logo.',
-      'An old tree stands alone on a hill in a fine etched line, the whole sky a warm wiped haze. No readable text or logo.',
-      'A sleeping city is seen from a bridge at night, its lights wiped out of grey plate tone. No readable text or logo.',
+      "Crossing a misty river at dawn, a lonely ferry carries a single passenger who has no reflection in the water, the fog a soft film of plate tone with the lantern wiped bright. No readable text or logo.",
+      "Alone on a hill, an ancient tree has grown around an iron gate that no longer leads anywhere, drawn in fine etched line under a warm wiped haze of sky. No readable text or logo.",
+      "Seen from a bridge at night, a sleeping city has one enormous figure walking quietly between its towers, the streetlights wiped out of grey plate tone around its feet. No readable text or logo.",
     ]),
     study('Three-Drum Riso Overlay', 'three-color risograph overlay', 'three-drum-riso', {
       aesthetic: 'Three-drum riso overlay: risograph prints in three bright soy inks layered with grain and misregistration, overlaps creating a rich unexpected palette.',
@@ -188,7 +188,7 @@ const spec: Spec = {
     }, ['smooth gradients'], [
       'A mermaid DJ spins records under the sea in fluorescent pink, yellow and teal riso layers that overlap into violet bubbles. No readable text or logo.',
       "In a sunny apartment full of hanging ivy, a small green dinosaur in slippers carefully waters a houseplant twice its height, printed in grainy misregistered pink, teal and yellow riso inks. No readable text or logo.",
-      'A crowd of cats dances at a rooftop party, three ink layers sliding past each other. No readable text or logo.',
+      "On a rooftop party at night, a crowd of cats dances around a boombox while one very small dog tries to look casual in the middle, three riso ink layers sliding past each other. No readable text or logo.",
     ]),
     study('Monoprint Ghost Pull', 'faint second monoprint impression', 'ghost-pull', {
       aesthetic: 'Monoprint ghost pull: the faint second impression of a monoprint, pale and mottled, where only traces of ink remain and forms dissolve into soft ghosts.',
@@ -203,7 +203,7 @@ const spec: Spec = {
     }, ['strong saturated color'], [
       'A ghost ship appears as a faint mottled second pull, its sails barely there on the pale paper. No readable text or logo.',
       "Fading out of a pale monoprint ghost impression, a dancing couple spins across an empty ballroom, their bodies almost gone while only their joined hands remain crisply printed in black ink. No readable text or logo.",
-      'A deer in a birch forest survives only as a faint pale trace of the first printing. No readable text or logo.',
+      "In a birch forest, a deer survives only as a faint pale trace of the first printing, while the hunter beside it has already faded away completely except for his boots. No readable text or logo.",
     ]),
     study('White-Line Woodblock', 'white-line color woodcut', 'white-line-woodblock', {
       aesthetic: 'White-line woodblock: a single carved block with grooves separating each color area, painted and printed one section at a time, leaving white lines between colors.',
@@ -216,8 +216,8 @@ const spec: Spec = {
       rendering_and_quality: "Authentic hand-printed color with crisp white separations, kept consistent across the whole image.",
       key_features: 'white carved lines between colors; wood grain; hand-applied color; single block',
     }, ['black outlines'], [
-      'A harbor with sailboats and a lighthouse is printed in soft blues and ochres, every shape separated by a crisp white carved line. No readable text or logo.',
-      'A bowl of pears and a cat on a windowsill glow in hand-applied colors divided by white grooves. No readable text or logo.',
+      "In a harbor of soft blues and ochres, the sailboats have all turned to face one strange ship with sails made of patchwork quilts, every shape divided by a crisp white carved line. No readable text or logo.",
+      "On a windowsill, a cat has stacked the pears from the fruit bowl into a small tower and is waiting to see who will notice, hand-applied colors divided by white grooves. No readable text or logo.",
       "Swaying against a pale evening sky, a garden of giant hollyhocks shelters a sleeping hedgehog, each petal and leaf carved as its own island of color separated by thin white lines. No readable text or logo.",
     ]),
     study('Collotype Reticulation', 'gelatin collotype grain print', 'collotype', {
@@ -231,8 +231,8 @@ const spec: Spec = {
       rendering_and_quality: "Delicate continuous tone with authentic reticulated grain, kept consistent across the whole image.",
       key_features: 'reticulated grain; continuous tone; warm sepia; antique print',
     }, ['digital sharpness'], [
-      'A pair of swans glides on a still lake at dawn, printed in warm sepia collotype tone with fine worm-like grain in the water. No readable text or logo.',
-      'An old lighthouse keeper poses with his cat on the gallery rail in soft antique tone. No readable text or logo.',
+      "On a still lake at dawn, a pair of swans pulls a small sleeping woman on a raft of lily pads, printed in warm sepia collotype tone with worm-like grain in the water. No readable text or logo.",
+      "Posing stiffly on a lighthouse gallery, an old keeper holds his cat, and behind them a sea serpent is photobombing in the soft antique reticulated tone. No readable text or logo.",
       "At a mysterious masked ball in a candlelit hall, guests in feathered masks turn to stare at one uninvited heron in a tuxedo, captured in soft blue-grey reticulated continuous tone. No readable text or logo.",
     ]),
     study('Engraved Vignette Plate', 'small engraved book vignette', 'engraved-vignette', {
@@ -246,9 +246,9 @@ const spec: Spec = {
       rendering_and_quality: "Precise delicate engraving with smoothly fading edges, kept consistent across the whole image.",
       key_features: 'floating vignette; fading edges; fine engraved hatching; cream paper',
     }, ['hard rectangular frame', 'readable captions'], [
-      'A fox reads a book beneath a mushroom umbrella in a tiny engraved vignette that fades softly into the page. No readable text or logo.',
+      "Beneath a mushroom umbrella in a tiny engraved vignette, a fox reads a book about foxes and looks deeply offended by it, the scene fading softly into the page. No readable text or logo.",
       "Floating in a white oval vignette, a windmill on a lonely hill waits as a single rider approaches through wheat, every cloud and blade of grass cut in fine disciplined engraved lines. No readable text or logo.",
-      'A sleeping knight and his faithful dog rest under an oak in a small fading vignette. No readable text or logo.',
+      "Under an oak in a small fading vignette, a sleeping knight dreams while his faithful dog has put on his helmet and stands guard with a stick. No readable text or logo.",
     ]),
   ],
 };

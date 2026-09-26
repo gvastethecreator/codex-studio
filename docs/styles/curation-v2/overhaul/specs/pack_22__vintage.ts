@@ -30,8 +30,8 @@ const spec: Spec = {
   updates: {
     'SP22-197': { briefs: [
       'A circus strongwoman lifts a baby elephant over her head, printed in rich layered lithograph colors with soft stone grain in every shadow. No readable text or logo.',
-      'A hot-air balloon race drifts over a patchwork countryside in layered color lithograph tones of rose, sage and gold. No readable text or logo.',
-      'A magician pulls a startled rabbit from a top hat under stage lights, the colors stacked in gentle litho layers. No readable text or logo.',
+      "Drifting over a patchwork countryside, a hot-air balloon race has one competitor cheating with a pair of enormous flapping bird wings, all in layered lithograph rose, sage and gold. No readable text or logo.",
+      "Under stage lights, a magician pulls a startled rabbit from a top hat, and the rabbit pulls an even more startled magician from its own tiny hat, colors stacked in soft litho layers. No readable text or logo.",
     ] },
     'SP22-198': { briefs: [
       'A chrome space racer zooms past a ringed planet in smooth glossy airbrush gradients, every reflection soft and seamless like a vintage poster painting. No readable text or logo.',
@@ -39,19 +39,19 @@ const spec: Spec = {
       "On a lunar beach under a giant ringed planet, a retro chrome robot in a Hawaiian shirt serves glowing cocktails to lounging aliens, all in smooth dreamy airbrush gradients. No readable text or logo.",
     ] },
     'SP22-199': { briefs: [
-      'A wild horse gallops through a canyon drawn in directional wax pencil strokes that follow every muscle and gust of dust. No readable text or logo.',
-      'A barn owl lands on a fence post in the snow, its feathers built from layered waxy pencil strokes. No readable text or logo.',
+      "Galloping through a canyon, a wild horse outruns a dust storm shaped like a second, much larger horse, both drawn in directional wax pencil strokes that follow every muscle and gust. No readable text or logo.",
+      "Landing on a snowy fence post at dusk, a barn owl carries a lost mitten in its talons back toward a lit farmhouse window, its feathers built from layered waxy strokes. No readable text or logo.",
       "Crossing a stone viaduct over a misty valley, a steam locomotive trails billowing smoke, every curl of steam hatched in warm wax pencil strokes that follow its drifting direction. No readable text or logo.",
     ] },
     'SP22-200': { briefs: [
       'A tiny jeweled beetle sits on a rose petal in a small-format painting so detailed that each facet of its shell is a single fine brush touch. No readable text or logo.',
-      'A miniature portrait of a mouse in a lace collar is painted with the finest brush on a small oval panel. No readable text or logo.',
-      'A little sailing ship crosses a stormy sea in a palm-sized painting full of fine brushed waves. No readable text or logo.',
+      "On a small oval panel, a mouse aristocrat in a lace collar poses for his portrait while holding a crumb of cheese like a priceless jewel, painted with the finest possible brush. No readable text or logo.",
+      "In a painting no bigger than a palm, a little sailing ship crosses a stormy sea where each wave is secretly a tiny sleeping sea horse, all in fine brushed detail. No readable text or logo.",
     ] },
     'SP22-201': { briefs: [
-      'A retired pirate captain dozes in a hammock, captured in a resolved ink sketch with confident contours and a few decisive shadows. No readable text or logo.',
-      'A cat burglar tiptoes along a ledge, drawn in finished pen sketch lines with light hatching. No readable text or logo.',
-      'A street musician plays a hurdy-gurdy in the rain in a resolved sketch with loose but complete ink. No readable text or logo.',
+      "Dozing in a hammock strung between two cannons, a retired pirate captain is unaware that his parrot is steering the ship, captured in a resolved ink sketch with a few decisive shadows. No readable text or logo.",
+      "Tiptoeing along a ledge twenty floors up, a cat burglar is being followed by an actual cat who is much better at it, drawn in finished pen lines with light hatching. No readable text or logo.",
+      "Playing a hurdy-gurdy in the rain, a street musician has drawn an audience of drenched stray dogs sitting in a perfect row, sketched in loose but complete ink. No readable text or logo.",
     ] },
     'SP22-202': { briefs: [
       'A vintage photo of a lady in a hat has a cut-out whale floating where her head should be, pasted over a faded seaside postcard in analog collage. No readable text or logo.',
@@ -59,12 +59,12 @@ const spec: Spec = {
       'A mountain landscape photo has a giant pasted teacup sitting on the peak like a hat. No readable text or logo.',
     ] },
     'SP22-203': { briefs: [
-      'A circus tent village glows at dusk in gouache reproduction tones, flat opaque colors softened by old printing. No readable text or logo.',
-      'A jungle explorer meets a giant tortoise in a gouache illustration reproduced on slightly yellowed paper. No readable text or logo.',
+      "At dusk, a circus tent village glows while its tents slowly walk away on elephant legs to the next town, in flat opaque gouache softened by old printing. No readable text or logo.",
+      "Deep in a jungle, an explorer realizes the mossy hill he has been camping on is a giant tortoise now turning its head to look at him, reproduced on slightly yellowed paper. No readable text or logo.",
       "Deep inside a cozy burrow, a family of foxes shares a breakfast of berries and toast by a root-lined window, painted in soft matte reproduced gouache with warm earthy tones. No readable text or logo.",
     ] },
     'SP22-204': { briefs: [
-      'A detailed pheasant struts through autumn leaves in descriptive color illustration, every feather pattern clearly described. No readable text or logo.',
+      "Strutting through autumn leaves, a pheasant wears a tiny monocle and inspects a mushroom as a serious scientist, every feather pattern clearly described in naturalist color. No readable text or logo.",
       "Cut away like a cake, a busy beehive shows its combs, larvae, worker bees and a large queen on her throne of wax, all painted in careful naturalistic descriptive color. No readable text or logo.",
       "Rattling down a cobbled village lane, a vintage motorcar carries a family of ducks in goggles past a bakery and a church, rendered in precise descriptive color illustration. No readable text or logo.",
     ] },
@@ -81,7 +81,7 @@ const spec: Spec = {
       rendering_and_quality: 'Precise delicate illustration with a soft vintage print finish.',
       key_features: 'single natural vignette; plain ground; soft print finish; aged card stock',
     }, [], [
-      'A kingfisher perches on a reed above a quiet stream, painted precisely on a pale blue card like a collectible from an old tea tin. No readable text or logo.',
+      "On a pale blue collectible card, a kingfisher perches on a reed holding a tiny fishing rod of its own, painted with the precise care of an old tea-tin nature series. No readable text or logo.",
       'A dragon hatchling perches on a twig in the same careful natural-history style as a songbird card. No readable text or logo.',
       "Resting on a cream ground like a pressed specimen, a pale green luna moth spreads its long-tailed wings, every wing scale and feathery antenna softly printed in muted naturalist inks. No readable text or logo.",
     ]),
@@ -127,7 +127,7 @@ const spec: Spec = {
       key_features: 'idealized produce; lush color; dewdrops; vintage print grain',
     }, ['readable packet text'], [
       'A giant glossy pumpkin with a tiny fairy house built into its side sits among curling vines like the art on an old seed packet. No readable text or logo.',
-      'A bouquet of enormous dewy radishes and carrots is painted as perfect as a prize show. No readable text or logo.',
+      "Arranged like prize-show vegetables, a bouquet of enormous dewy radishes and carrots has one carrot with small roots stretched out like legs, quietly escaping the bunch. No readable text or logo.",
       "Towering over the farmhouse behind it, a sunflower taller than the barn turns its huge face toward a surprised farmer on a ladder, glowing in bright vintage seed-packet color. No readable text or logo.",
     ]),
     study('Stereoview Card Pair', 'side-by-side stereoscopic card', 'stereoview', {
@@ -173,7 +173,7 @@ const spec: Spec = {
     }, [], [
       'A cherub-cheeked bulldog in a sailor suit is printed as a glossy embossed die-cut scrap, its shaped edges casting a small shadow on the album page. No readable text or logo.',
       'A bouquet of roses with a tiny dragon hidden among the petals is trimmed as an embossed paper scrap. No readable text or logo.',
-      'A pair of kittens in a basket is layered with other shiny scraps in an old album. No readable text or logo.',
+      "Among shiny embossed scraps pasted in an old album, a pair of kittens in a basket have noticed that one of the other scraps is a very hungry-looking fox. No readable text or logo.",
     ]),
     study('Retro Gum-Card Monsters', 'bubblegum trading card monsters', 'gum-card', {
       aesthetic: 'Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders.',
@@ -217,7 +217,7 @@ const spec: Spec = {
       key_features: 'glossy enamel colors; chipped edges; rust spots; rivet holes',
     }, ['readable advertising text'], [
       'A smiling moon holding a mug of cocoa beams from a chipped cobalt enamel sign with rust spots at every rivet hole. No readable text or logo.',
-      'A galloping horse with a mail sack is fired in red and cream enamel on a battered sign. No readable text or logo.',
+      "On a battered red and cream enamel sign, a galloping horse carries a mail sack so overstuffed that letters stream behind it like a comet tail, rust eating one corner. No readable text or logo.",
       "Shining on a glossy yellow enamel panel with chipped corners and rusty screw holes, a friendly bee in overalls holds up a dripping honey pot and tips an imaginary hat. No readable text or logo.",
     ]),
     study('Lithographed Tin Lid', 'decorated tin box lid', 'tin-lid', {
@@ -247,7 +247,7 @@ const spec: Spec = {
       key_features: 'tiny bold graphic; flat colors; cardboard fold; worn corners',
     }, ['readable text'], [
       'A dancing flamingo in a top hat struts across a tiny red and black matchbook cover, the cardboard worn soft at the fold. No readable text or logo.',
-      'A cocktail glass with a tiny sea monster peeking out is printed in cream and teal. No readable text or logo.',
+      "On a cream and teal matchbook cover, a cocktail glass holds a tiny sea monster lounging on the olive like a pool float, one tentacle raised for another round. No readable text or logo.",
       "Grinning from a scuffed and bent matchbook cover, a crescent moon wearing sunglasses lounges in a hammock strung between two stars, a cocktail balanced on its tip. No readable text or logo.",
     ]),
   ],

@@ -31,7 +31,7 @@ const spec: Spec = {
     'SP22-181': { briefs: [
       'A heron stands in a moonlit pond divided into luminous leaded color segments of cobalt, amber and green, each segment glowing like a window. No readable text or logo.',
       'A fox spirit curls around a lantern, its fur broken into glowing jewel-colored panes with dark lead lines between them. No readable text or logo.',
-      'A sunrise over mountains becomes a mosaic of radiant leaded color segments stretching to the edges. No readable text or logo.',
+      "Above the mountains, the sunrise has shattered into radiant leaded segments of stained color, and a single bird is flying through a missing pane. No readable text or logo.",
     ] },
     'SP22-182': { briefs: [
       'A jazz-age aviator stands before a sunburst of stepped deco planes in gold, black and jade, her airplane wings echoing the geometry. No readable text or logo.',
@@ -41,22 +41,22 @@ const spec: Spec = {
     'SP22-183': { briefs: [
       'A river goddess rises from the water as flowing ornamental lines of her hair become the currents curling around the whole card. No readable text or logo.',
       'A dancer spins as ribbon-like ornamental lines swirl from her skirt into vines, birds and clouds. No readable text or logo.',
-      'A sleeping cat is wrapped in flowing decorative lines that turn into a garden around its paws. No readable text or logo.',
+      "While a cat sleeps deeply on a cushion, its dreams spill out of its ears as swirling ornamental lines that wrap around it and turn into a garden full of fish. No readable text or logo.",
     ] },
     'SP22-184': { briefs: [
       'A jeweled beetle queen rests on a leaf edged in fine silver filigree scrolls that curl out from her wing cases. No readable text or logo.',
-      'A crescent moon hangs over a lake framed by delicate gold filigree that looks almost like frost. No readable text or logo.',
-      'A small hummingbird hovers at a flower, the only ornament a fine filigree thread tracing its tail. No readable text or logo.',
+      "Over a frozen lake framed in delicate gold filigree that looks almost like frost, a skater traces patterns on the ice that continue the filigree outward. No readable text or logo.",
+      "Hovering at a flower, a hummingbird trails a single fine filigree thread from its tail that stitches the whole sky together behind it. No readable text or logo.",
     ] },
     'SP22-185': { briefs: [
       'A saint-like beekeeper holds a honeycomb against a flat painted ground, her halo and the honey picked out in flat gilt pigment. No readable text or logo.',
-      'A black horse gallops on deep blue, its bridle and the stars behind it touched with flat gold paint. No readable text or logo.',
-      'A sleeping lion lies under a tree whose fruit is flat gilt circles glowing on the painting. No readable text or logo.',
+      "On a deep blue ground, a black horse gallops after the stars that are fleeing across the sky, its bridle and every star touched with flat gold paint. No readable text or logo.",
+      "Under a tree whose fruit are flat gilt circles, a sleeping lion has a small monkey quietly stealing one golden fruit from beside his paw. No readable text or logo.",
     ] },
     'SP22-186': { briefs: [
       'A dragon coils around a porcelain vase, painted in cobalt ink washes like blue-and-white china with soft pooled edges. No readable text or logo.',
-      'A lonely fisherman sits on a willow bridge in delicate blue ink wash, porcelain-white space all around him. No readable text or logo.',
-      'A pair of cranes dance in cobalt wash on a pale porcelain ground, one feather left pure white. No readable text or logo.',
+      "On a willow bridge painted in delicate blue ink wash, a lonely fisherman has hooked a small dragon-like carp that is pulling him off the edge into porcelain-white space. No readable text or logo.",
+      "In cobalt wash on a pale porcelain ground, a pair of cranes dance around a crack that has run through the whole plate, one feather left pure white. No readable text or logo.",
     ] },
     'SP22-187': { briefs: [
       'A knight on a white horse is divided into glossy opaque enamel segments of red, blue and gold separated by fine metal lines. No readable text or logo.',
@@ -65,8 +65,8 @@ const spec: Spec = {
     ] },
     'SP22-188': { briefs: [
       'A leaping carp is painted in a single calligraphic gesture of ink wash, its tail flicking into splashes across the card. No readable text or logo.',
-      'A bamboo grove sways in the wind, each stalk one confident calligraphic stroke with pale wash between them. No readable text or logo.',
-      'A lone rider on a hill is suggested by three gestural brush marks and a wash of dusk. No readable text or logo.',
+      "In a bamboo grove of single calligraphic strokes, a tiger made of just three brush marks hides so well that only its two eyes give it away. No readable text or logo.",
+      "On a hill at dusk, a lone rider suggested by three gestural brush marks races a storm that is one enormous wet sweep of ink across the sky. No readable text or logo.",
     ] },
   },
   creates: [
@@ -128,7 +128,7 @@ const spec: Spec = {
     }, ['readable mottos', 'real coats of arms'], [
       'A proud frog wearing a tiny helm sits atop a shield flanked by two supporting herons, red and gold mantling swirling around them. No readable text or logo.',
       'A family of bakers is honored with a heraldic shield showing a crossed rolling pin and loaf, supported by two lions in aprons. No readable text or logo.',
-      'A cat knight\'s emblem shows a fish on a blue field, silver mantling curling out like waves. No readable text or logo.',
+      "On a blue field, a heraldic emblem shows a fish wearing armor, supported by two lobsters, while silver mantling curls around them like breaking waves. No readable text or logo.",
     ]),
     study('Celestial Wheel Ornament', 'astrological wheel design', 'celestial-wheel', {
       aesthetic: 'Celestial wheel ornament: the subject set at the hub of an ornate wheel of stars, moons, planets and constellation figures, like an old astronomical chart.',
@@ -142,8 +142,8 @@ const spec: Spec = {
       key_features: 'celestial wheel; moon phases; constellation figures; gold on night blue',
     }, ['readable zodiac symbols'], [
       'A sleeping astronomer floats at the hub of a gold celestial wheel, moon phases and constellation animals circling around him. No readable text or logo.',
-      'A black cat sits at the center of a star wheel while tiny planets orbit in engraved silver rings. No readable text or logo.',
-      'A sunflower blooms at the heart of a wheel of suns and moons painted on deep blue. No readable text or logo.',
+      "At the center of a star wheel, a black cat is batting the tiny planets out of their engraved silver orbits one by one. No readable text or logo.",
+      "At the heart of a wheel of suns and moons, a sunflower is turning its head to follow all twelve suns at once and has become very dizzy. No readable text or logo.",
     ]),
     study('Whiplash Curve Ornament', 'art nouveau whiplash lines', 'whiplash-curve', {
       aesthetic: 'Whiplash curve ornament: flowing art-nouveau style whiplash curves of hair, stems and ribbons that snap and flow around the subject in elegant rhythm.',
@@ -157,8 +157,8 @@ const spec: Spec = {
       key_features: 'whiplash curves; flowing hair and stems; soft palette; decorative halo',
     }, ['stiff straight lines'], [
       'A dragonfly queen rests on a lily, her long hair snapping into whiplash curves that become stems, ribbons and a round halo. No readable text or logo.',
-      'A cellist plays in a garden as the curves of her instrument and the vines around her flow together. No readable text or logo.',
-      'A peacock turns its head, its tail feathers unfurling into elegant whiplash lines to the edge of the card. No readable text or logo.',
+      "In a garden at dusk, a cellist plays so beautifully that the vines have grown up her instrument and into her hair, all flowing together in long whiplash curves. No readable text or logo.",
+      "Turning its head, a peacock unfurls a tail of whiplash lines that sweep to the edge of the card and pull the whole sky along with them. No readable text or logo.",
     ]),
     study('Baroque Cartouche Frame', 'ornate baroque cartouche', 'baroque-cartouche', {
       aesthetic: 'Baroque cartouche frame: the subject shown inside an ornate curling baroque cartouche of scrolls, shells, acanthus leaves and sweeping flourishes in gilded relief.',
@@ -172,7 +172,7 @@ const spec: Spec = {
       key_features: 'curling cartouche; gilded scrolls; acanthus leaves; central painting',
     }, ['minimalist flat'], [
       'A pompous parrot duke poses in a curling gilded cartouche of shells and acanthus leaves, his feathers as ornate as the frame. No readable text or logo.',
-      'A stormy seascape with a single ship is framed by a heavy baroque cartouche of scrolls. No readable text or logo.',
+      "Inside a heavy baroque cartouche of scrolls, a stormy seascape shows a single ship, and one carved gold scroll of the frame has reached into the painting to steady the mast. No readable text or logo.",
       "Staring out of a crimson oval surrounded by carved gold curls and acanthus scrolls, a pale vampire countess holds a wilting rose and a single silver key to a locked crypt. No readable text or logo.",
     ]),
     study('Doily Lace Border', 'paper lace doily ornament', 'doily-lace', {
@@ -187,7 +187,7 @@ const spec: Spec = {
       key_features: 'paper lace doily; scalloped edges; pierced patterns; soft shadows',
     }, ['heavy dark frames'], [
       'A tiny mouse knight bows on a white lace doily as if on a stage, the pierced pattern casting delicate shadows around him. No readable text or logo.',
-      'A strawberry cake sits in the center of a heart-shaped paper lace frame on pale pink. No readable text or logo.',
+      "In a heart-shaped paper lace frame on pale pink, a strawberry cake has one slice missing, and a tiny guilty mouse is visible through the pierced lace. No readable text or logo.",
       "Framed by scalloped cream lace on deep blue paper, a pair of swans glides across a moonlit pond, their necks curving into a heart that ripples in the still water. No readable text or logo.",
     ]),
     study('Emblem-Book Allegory', 'symbolic emblem book image', 'emblem-allegory', {
@@ -232,7 +232,7 @@ const spec: Spec = {
       key_features: 'dense chintz flowers; packed pattern; glossy petals; central subject',
     }, ['sparse empty background'], [
       'A grumpy grandmother vampire sips tea in an armchair while a dense chintz of peonies, roses and tiny birds covers every surface around her. No readable text or logo.',
-      'A fox naps in a nest of printed-looking roses packed from edge to edge of the card. No readable text or logo.',
+      "Napping in a nest of printed-looking roses that fill the card from edge to edge, a fox has blended in so well that only its black ear tips give it away. No readable text or logo.",
       "Curled up among glossy chintz peonies and fluttering songbirds, a porcelain teapot has grown a lizard tail and tiny clawed feet, steam puffing from its spout like sleepy breath. No readable text or logo.",
     ]),
     study('Radiant Halo Burst', 'radiating halo and rays', 'halo-burst', {

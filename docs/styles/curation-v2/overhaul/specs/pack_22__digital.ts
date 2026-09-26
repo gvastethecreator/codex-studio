@@ -29,17 +29,17 @@ const spec: Spec = {
   category: '15. Digital Rendering Methods',
   updates: {
     'SP22-213': { briefs: [
-      'A knight guards a castle bridge at dusk in carefully placed pixel clusters, every armor highlight a deliberate group of three bright pixels. No readable text or logo.',
-      'A witch brews a potion in a cozy pixel kitchen, the steam and firelight built from logical color clusters. No readable text or logo.',
-      'A dragon sleeps on a gold pile drawn in clean pixel clusters with no stray single pixels. No readable text or logo.',
+      "Inside a pixel tavern, a skeleton bard plays the lute for a crowd of slimes who have all dressed up in tiny hats, every candle flame and grin built from deliberate three-pixel clusters. No readable text or logo.",
+      "Hunched over a bubbling cauldron, a witch realizes the potion is staring back at her with one huge eye, the steam and green glow placed pixel by careful pixel. No readable text or logo.",
+      "Asleep on a mountain of coins, a colossal serpent-king has one eye half open because a tiny thief is tiptoeing across his tail, drawn in clean clusters with no stray pixels. No readable text or logo.",
     ] },
     'SP22-214': { briefs: [
-      'A foggy harbor at night is painted with selective dithering only in the mist, while the boats and lighthouse stay clean flat color. No readable text or logo.',
-      'A ghost drifts through a library, its translucent body the only dithered area in the scene. No readable text or logo.',
-      'A sunset over the desert is dithered in the sky gradient while the dunes stay solid. No readable text or logo.',
+      "Through a harbor fog so thick the ships have gone missing, only a giant eel's glowing lure hangs in the mist, the fog alone dithered while the eel and the pier stay crisp flat color. No readable text or logo.",
+      "Floating between library shelves, a ghost is trying to return an overdue book from a century ago, its translucent body the only dithered area in the whole scene. No readable text or logo.",
+      "Across a desert at sunset, a caravan of walking houses on stilt legs crosses the dunes, the burning sky dithered in coarse bands while the sand and houses stay solid. No readable text or logo.",
     ] },
     'SP22-215': { briefs: [
-      'A fox hunts in a snowy forest rendered in matte low-polygon facets, every triangle softly lit with no specular shine. No readable text or logo.',
+      "In a snowy forest of matte faceted pines, a fox in a hunter's cap stalks a rabbit who is secretly stalking him back, every triangle softly lit with no shine at all. No readable text or logo.",
       "Standing on a faceted cliff above a matte low-poly sea, a lighthouse throws a polygonal beam of flat triangles across the waves toward a tiny faceted rowboat. No readable text or logo.",
       "Over rolling hills cut into flat triangles at dawn, a striped hot-air balloon casts a sharp shadow across the fields where a faceted farmer waves both arms. No readable text or logo.",
     ] },
@@ -49,22 +49,22 @@ const spec: Spec = {
       "Glowing at night beside a still bay, a voxel fishing village hangs cube lanterns from every roof, their warm light reflected as stacked squares in the dark voxel water. No readable text or logo.",
     ] },
     'SP22-217': { briefs: [
-      'A whale breaches in smooth form-driven vector gradients that wrap around its body like polished plastic under studio light. No readable text or logo.',
-      'A cat astronaut floats in space rendered in clean vector gradients following every curve of her helmet. No readable text or logo.',
-      "Sitting on a glossy counter, a bowl of fruit glows in smooth vector gradients that wrap around every pear, plum and orange, one banana peeling itself open with shy curiosity. No readable text or logo.",
+      "Breaching out of a toy-blue sea, a whale made of glossy vector gradients carries a whole amusement park on its back, rollercoaster and all, lit like a polished plastic figure. No readable text or logo.",
+      "Drifting in orbit with a slice of pizza that floats just out of reach, a cat astronaut stretches one paw, clean vector gradients following every curve of her helmet and the melting cheese. No readable text or logo.",
+      "On a glossy kitchen counter, a bowl of fruit is holding a quiet funeral for one black banana, the pears and plums wearing little veils, all wrapped in smooth vector gradients. No readable text or logo.",
     ] },
     'SP22-218': { briefs: [
-      'A jellyfish made of continuous synthetic volume drifts in a void, its body one seamless glossy digital form with no visible seams. No readable text or logo.',
-      'A sculpture of a running horse is rendered as one continuous synthetic surface of pearly white. No readable text or logo.',
-      "Blinking slowly on a pastel ground, a soft abstract creature with no clear head or tail stretches its body as one smooth continuous digital volume, pearly and seamless. No readable text or logo.",
+      "Drifting through a black void, a jellyfish the size of a cathedral trails seamless glossy tendrils around a tiny astronaut, its whole body one continuous synthetic volume. No readable text or logo.",
+      "Galloping out of a museum wall, a pearly running horse sculpture has half melted into the floor, its body and the marble merging as one continuous synthetic surface. No readable text or logo.",
+      "Blinking on a pastel ground, a soft creature with no clear head or tail has swallowed a whole alarm clock that still ticks inside its seamless glossy continuous body. No readable text or logo.",
     ] },
     'SP22-219': { briefs: [
-      'A glass hummingbird hovers at a real flower, rendered with targeted glass refraction only in its body while the rest of the scene stays matte. No readable text or logo.',
-      'A crystal crown sits on a velvet cushion, the glass rendering focused on the crown alone. No readable text or logo.',
-      'A glass fish swims in a bowl of glass water, both refracting the kitchen behind them. No readable text or logo.',
+      "Hovering at a real flower, a glass hummingbird refracts the whole garden upside down inside its tiny body, the only glass in a scene that otherwise stays soft and matte. No readable text or logo.",
+      "Left on an empty throne, a crystal crown bends the light of the ruined hall into a small rainbow on the dust, the glass rendering focused on the crown alone. No readable text or logo.",
+      "In a fishbowl of glass water, a glass goldfish swims with a real, very small shark following it, both the fish and the water refracting the dim kitchen behind them. No readable text or logo.",
     ] },
     'SP22-220': { briefs: [
-      'A stone giant rises from a hillside, his skin displaced into deep masked crags only on his shoulders and fists. No readable text or logo.',
+      "Waking up after a thousand years, a stone giant pulls himself out of a hillside with a village still on his shoulders, crags displaced deeply only along his arms and knuckles. No readable text or logo.",
       "Cracking open on a velvet pillow, a giant stone egg splits with digital displacement concentrated only along its fracture lines, glowing lava pushing through the gaps. No readable text or logo.",
       "Deep in an old forest, a tree trunk slowly morphs into a sleepy face where masked displacement pushes the bark outward into a nose, brows and a yawning mouth. No readable text or logo.",
     ] },
@@ -81,7 +81,7 @@ const spec: Spec = {
       rendering_and_quality: 'Clean real-time toon render with consistent outline thickness.',
       key_features: 'thick silhouette outlines; two-tone toon shading; 3D model; game camera',
     }, [], [
-      'A pirate captain stands on a tiny island with a treasure chest, rendered as a cel-shaded 3D game character with thick black outlines around every shape. No readable text or logo.',
+      "Sitting on a tiny island no bigger than his chest of gold, a cel-shaded pirate captain realizes the island is breathing, thick black outlines around him, the chest and a single giant eye opening in the sand. No readable text or logo.",
       "Toddling across a grassy hill with a stick in its mouth, a round baby griffin is rendered in bright two-tone toon shading with thick black outlines around every feather tuft. No readable text or logo.",
       "Speeding through a toon-shaded town square, a robot mailman on a scooter tosses letters to waving citizens, every character outlined in thick black game-style hull lines. No readable text or logo.",
     ]),
@@ -97,7 +97,7 @@ const spec: Spec = {
       key_features: 'single matcap material; sculpt strokes; dark gradient; work-in-progress',
     }, ['full color textures'], [
       'A grumpy orc chef holding a ladle is shown as a red-wax digital sculpt preview, every wrinkle and brush stroke of the sculpting catching the glossy light. No readable text or logo.',
-      'A dragon skull with curling horns is sculpted in pearly white matcap on a dark background. No readable text or logo.',
+      "Emerging from a dark gradient, a massive horned beast skull is sculpted in pearly white matcap with a tiny sculpted bird nesting in one eye socket, every crack crisp. No readable text or logo.",
       "Sitting cross-legged on a mushroom, a fat frog wizard with a droopy hat is shown as a grey clay matcap sculpt, every fold of his robe and wart on his chin crisply sculpted. No readable text or logo.",
     ]),
     study('Normal-Map Color Render', 'surface normals as color', 'normal-map-color', {
@@ -111,9 +111,9 @@ const spec: Spec = {
       rendering_and_quality: "Accurate normal-pass coloring with smooth transitions, kept consistent across the whole image.",
       key_features: 'normal-map colors; violet teal pink; surface direction; flat violet ground',
     }, [], [
-      'A sleeping cat curled on a cushion is rendered as a normal-map pass, its fur ridges glowing periwinkle, teal and pink by surface direction. No readable text or logo.',
-      'A knight\'s helmet shows every dent as a shift from violet to teal in a normal pass. No readable text or logo.',
-      "Spiraling on a flat violet ground, a large seashell is rendered in smooth normal-map gradients, its ridges shifting from periwinkle to teal to pink as each surface turns. No readable text or logo.",
+      "Curled on a cushion, a cat is rendered as a pure normal-map pass, her fur ridges glowing periwinkle, teal and pink by surface direction while a normal-map mouse hides in the folds. No readable text or logo.",
+      "Battered and dented after a duel with a windmill, an old knight's helmet shows every dent as a sudden shift from violet to teal to pink in a clean normal pass. No readable text or logo.",
+      "Spiraling on a flat violet ground, a giant seashell houses a hermit crab family who have installed a tiny front door, the ridges shifting from periwinkle to teal by surface direction. No readable text or logo.",
     ]),
     study('Ray-Marched Fractal Forms', 'raymarched fractal geometry render', 'raymarched-fractal', {
       aesthetic: 'Ray-marched fractal forms: infinitely detailed mathematical fractal structures rendered with soft glow and fog, alien architecture of repeating spirals and branches.',
@@ -126,7 +126,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean infinite fractal detail with smooth glow, kept consistent across the whole image.",
       key_features: 'fractal geometry; infinite detail; distance fog; glowing gradients',
     }, [], [
-      'A lone traveler stands at the edge of a fractal canyon whose walls repeat into smaller and smaller glowing spirals forever. No readable text or logo.',
+      "Standing at the edge of a fractal canyon, a lone traveler throws a pebble and watches it fall forever past walls that repeat into smaller and smaller glowing spirals. No readable text or logo.",
       "Growing from fractal branches that divide endlessly into golden arches, a vast cathedral fades into fog, each arch containing smaller arches all the way down to glowing dust. No readable text or logo.",
       "Swimming through a fog of repeating fractal coral, a whale glides past spirals that branch into smaller spirals forever, lit by soft teal and magenta glow. No readable text or logo.",
     ]),
@@ -141,8 +141,8 @@ const spec: Spec = {
       rendering_and_quality: "Clean value structure with smooth gradient mapping, kept consistent across the whole image.",
       key_features: 'single gradient palette; value remapping; unified color; painterly texture',
     }, [], [
-      'A lighthouse keeper watches a storm in a painting where every value is mapped from deep indigo shadows through coral midtones to cream lightning. No readable text or logo.',
-      'A cat sits on a rooftop at night painted in a gradient from black to teal to gold. No readable text or logo.',
+      "Rowing out into a storm with a lantern, a lighthouse keeper searches for her lost light, the whole painting mapped from deep indigo shadows through coral midtones to cream lightning. No readable text or logo.",
+      "On a rooftop at midnight, a cat holds a serious meeting with seven pigeons, the whole scene painted in values remapped from black through teal to a single gold highlight. No readable text or logo.",
       "Soaring over jagged mountains at sunset, a lone eagle is painted in values mapped from deep violet shadows through orange midtones to pale yellow highlights. No readable text or logo.",
     ]),
     study('Soft Clay Digital Render', '3d render of plasticine look', 'soft-clay-render', {
@@ -171,7 +171,7 @@ const spec: Spec = {
       rendering_and_quality: 'Authentic retro 3D artifacts, never clean modern rendering.',
       key_features: 'very low poly; blurry warped textures; distance fog; blob shadows',
     }, ['modern high-poly'], [
-      'A lone knight walks through a foggy forest rendered with blocky low-poly trees, blurry warped textures and a round blob shadow under his feet. No readable text or logo.',
+      "Through a foggy forest of blocky trees, a lone knight follows a floating health heart that keeps drifting just out of reach, blurry warped textures and a round blob shadow under his boots. No readable text or logo.",
       "Looming in heavy distance fog at the end of a gravel path, a haunted mansion wobbles in low-res warped textures, a single window flickering with blocky orange light. No readable text or logo.",
       "Hovering over a low-poly lake at night, a jagged winged bat-beast flaps its triangle wings, its textures pixelated and its blob shadow sliding across the water. No readable text or logo.",
     ]),
@@ -186,9 +186,9 @@ const spec: Spec = {
       rendering_and_quality: "Clean seamless blends with smooth shading, kept consistent across the whole image.",
       key_features: 'smooth shape unions; glossy blobs; soft seams; gradient ground',
     }, [], [
-      'A bear made of glossy pastel spheres that melt smoothly into each other waves from a clean pink background. No readable text or logo.',
+      "Waving from a clean pink ground, a bear made of glossy pastel spheres is slowly absorbing the beach ball he was playing with, its surface melting smoothly into his belly. No readable text or logo.",
       "Built from blending capsules and spheres, a glossy sea otter curls into a smooth loop around a floating pearl, every limb melting softly into the next. No readable text or logo.",
-      "Waving from a clean blue ground, a snowman of soft merging glossy balls wears a blob hat and blob scarf, his carrot nose melting smoothly into his round face. No readable text or logo.",
+      "On a clean blue ground, a snowman made of soft merging glossy balls has started to blend with the snowwoman beside him, both smiling as they become one smooth shape. No readable text or logo.",
     ]),
     study('Baked Lightmap Look', 'game baked lighting environment', 'baked-lightmap', {
       aesthetic: 'Baked lightmap look: game environments with soft pre-baked lighting, gentle color bleeding and static shadows, cozy and slightly painterly.',
@@ -201,7 +201,7 @@ const spec: Spec = {
       rendering_and_quality: 'Consistent baked lighting with no harsh real-time artifacts.',
       key_features: 'soft baked shadows; color bleeding; game textures; cozy spaces',
     }, ['readable signs'], [
-      'A tavern interior glows with soft baked lighting, warm lamplight bleeding orange across wooden walls as a bard tunes a lute by the fire. No readable text or logo.',
+      "Inside a tavern with soft baked lighting, every patron is a ghost except the bartender, the warm lamplight bleeding orange across wooden walls and passing straight through the customers. No readable text or logo.",
       "Pooling across the floor of a castle library, warm sunlight bleeds gold up the shelves in static soft gradients while a cat sleeps inside a single bright square of light. No readable text or logo.",
       "Deep in a forest shrine, static baked green light filters through trees onto a mossy stone altar where a fox spirit sits, the shadows soft and perfectly still. No readable text or logo.",
     ]),
@@ -216,7 +216,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean accurate reflections with subtle fade, kept consistent across the whole image.",
       key_features: 'mirror floor; doubled reflection; studio lights; low angle',
     }, ['matte floor'], [
-      'A knight on a horse stands on a perfectly glossy black floor, the whole figure doubled beneath like a second knight standing upside down. No readable text or logo.',
+      "Standing on a perfectly glossy black floor, a knight on horseback sees that his reflection below is a skeleton on a skeleton horse, both lit by one cold spotlight. No readable text or logo.",
       "Glowing on a perfectly glossy mirror floor, a crystal stag statue stands under a single spotlight, its reflection shimmering below with faint prismatic light. No readable text or logo.",
       "Parked on a showroom mirror floor under hanging spotlights, a vintage race car with a sleeping pug in the driver seat is doubled perfectly in the gloss below. No readable text or logo.",
     ]),
@@ -231,9 +231,9 @@ const spec: Spec = {
       rendering_and_quality: "Clean terrain rendering with believable erosion detail, kept consistent across the whole image.",
       key_features: 'layered noise terrain; eroded ridges; atmospheric haze; vast vista',
     }, [], [
-      'A tiny explorer stands on a ridge overlooking endless procedurally generated mountains, eroded valleys fading into violet haze at sunrise. No readable text or logo.',
+      "On a ridge above endless generated mountains, a tiny explorer discovers that the eroded valleys below spell out the shape of a giant sleeping face in violet haze. No readable text or logo.",
       "Soaring over an alien terrain of repeating ridges colored by altitude, a flock of silver birds casts tiny shadows across eroded valleys that stretch to the horizon. No readable text or logo.",
-      "Perched on a snowy peak of generated noise terrain, a lone cabin sends up a thin line of smoke as eroded ridges fall away into layers of blue haze. No readable text or logo.",
+      "Perched on a snowy peak of generated noise terrain, a lone cabin's chimney smoke rises straight up into a sky where the mountains repeat upside down. No readable text or logo.",
     ]),
     study('Fresnel Glow Shader', 'edge glow fresnel render', 'fresnel-glow', {
       aesthetic: 'Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds.',
@@ -248,7 +248,7 @@ const spec: Spec = {
     }, [], [
       'A ghost whale swims through dark space, its outline glowing cyan where its body curves away from the camera and its center almost transparent. No readable text or logo.',
       "Rising from a stone tomb in a dark crypt, a knight's spirit appears as a glowing violet fresnel shell, his armor edges bright while his chest is almost invisible. No readable text or logo.",
-      "Sitting on a black ground, a golden ghost cat glows only along its edges, whiskers and tail tip, its center so transparent that the darkness shows straight through. No readable text or logo.",
+      "Sitting on a black ground beside an empty food bowl, a golden ghost cat glows only along its edges, whiskers and tail, still waiting for a dinner that stopped coming years ago. No readable text or logo.",
     ]),
   ],
 };

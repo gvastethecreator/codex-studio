@@ -31,7 +31,7 @@ const spec: Spec = {
     'SP22-189': { briefs: [
       "Napping between rows of miniature pumpkins, a sculpted tortoise in a straw hat snores in a tiny vegetable garden, fingerprints visible on every gourd and on the watering can beside him. No readable text or logo.",
       "Tending a garden of faintly glowing mushrooms, a modeled witch bends over her plants, her crooked hat and broom still showing the sculptor's thumb press in the soft material. No readable text or logo.",
-      'A family of clay snails races across a clay cabbage patch while a clay scarecrow watches with button eyes. No readable text or logo.',
+      "Racing across a clay cabbage patch, a family of clay snails is winning against a clay tortoise, while a clay scarecrow with button eyes waves the checkered flag. No readable text or logo.",
     ] },
     'SP22-190': { briefs: [
       "Stirring a yarn pot of soup with four arms at once, an octopus chef made of looped stitches tastes from a ladle, every loop of yarn visible in extreme macro detail on its tentacles. No readable text or logo.",
@@ -39,13 +39,13 @@ const spec: Spec = {
       "Landing gently on a crocheted daisy, a fuzzy bee made of yellow and black yarn loops sips from the flower center while the fibers glow warm and haloed in the backlight. No readable text or logo.",
     ] },
     'SP22-191': { briefs: [
-      "Glowing inside a backlit box, a forest of layered cut trees stands silhouetted against warm light as a small deer with paper antlers wanders between the trunks. No readable text or logo.",
+      "Glowing inside a backlit box, a forest of layered cut trees hides a paper wolf between the trunks, while a small deer with paper antlers walks toward it unaware. No readable text or logo.",
       "Shining out of a layered sea of cut sheets, a lighthouse sends its beam clean through five stacked layers, lit from behind as a tiny ship turns toward home. No readable text or logo.",
       "At night inside a shadow box, a whole skyline glows with every window a tiny cut hole, and one apartment lit brighter than the rest where someone is having a party. No readable text or logo.",
     ] },
     'SP22-192': { briefs: [
-      'A cut-paper whale dives through stacked layers of paper waves in five shades of blue, each layer casting a soft shadow on the next. No readable text or logo.',
-      'A cut-paper fox leaps over layered paper hills at sunset, orange and gold sheets stacked with foam spacers. No readable text or logo.',
+      "Diving through stacked layers of paper waves in five shades of blue, a cut-paper whale discovers a sunken paper city at the bottom, each layer casting a soft shadow on the next. No readable text or logo.",
+      "Leaping over layered paper hills at sunset, a cut-paper fox is chasing the paper sun itself, which has come unstuck and is rolling away down the far slope. No readable text or logo.",
       "Rising through layered clouds cut from tissue and card, a striped hot-air balloon carries two tiny passengers above a patchwork of paper fields, farms and winding paper rivers. No readable text or logo.",
     ] },
     'SP22-193': { briefs: [
@@ -83,7 +83,7 @@ const spec: Spec = {
     }, ['plastic shine'], [
       "By a small campfire of orange wool, a badger in a knitted scarf reads a tiny book, stray fibers of his needle-sculpted fur glowing in the warm window light. No readable text or logo.",
       'A felted wool dragon sleeps curled in a teacup, its fuzzy wings twitching as a felted mouse tiptoes past. No readable text or logo.',
-      'A family of felted owls huddles on a real twig as felted snowflakes drift down around them. No readable text or logo.',
+      "On a real twig in falling felted snow, a family of felted owls huddles together except for one, which is wearing a tiny felted scarf and looks extremely smug. No readable text or logo.",
     ]),
     study('Matchbox Diorama World', 'tiny world inside a matchbox', 'matchbox-diorama', {
       aesthetic: 'Matchbox diorama world: a complete tiny scene built inside an open matchbox tray, with microscopic furniture, figures and lights crammed into the little box.',
@@ -97,7 +97,7 @@ const spec: Spec = {
       key_features: 'scene inside matchbox; microscopic props; tiny lights; macro view',
     }, ['readable matchbox labels'], [
       'An entire tiny tavern with a fireplace, three drinkers and a sleeping dog is crammed inside an open matchbox glowing on a wooden desk. No readable text or logo.',
-      'A miniature lighthouse and stormy sea fit inside a matchbox tray, the beam made of a single glowing thread. No readable text or logo.',
+      "Tucked into a matchbox tray, a stormy sea is shipwrecking a tiny sailing ship while a real matchstick lies across it like a fallen mast, the waves carved from wax. No readable text or logo.",
       "Filling the drawer of an old matchbox, a tiny bedroom holds a sleeping mouse under a stamp-sized quilt, a thimble lamp and a bottle-cap rug laid across the wooden floor. No readable text or logo.",
     ]),
     study('Knitted Landscape Miniature', 'landscape knitted from yarn', 'knitted-landscape', {
@@ -143,7 +143,7 @@ const spec: Spec = {
     }, ['solid filled shapes'], [
       'A copper-wire cyclist rides along a white wall, its shadow drawing a second cyclist chasing behind it. No readable text or logo.',
       'A wire dragon made of one continuous line coils around a candlestick, casting a huge shadow dragon on the wall. No readable text or logo.',
-      'A family of wire birds sits on a real branch, their shadows chattering on the plaster. No readable text or logo.',
+      "On a real branch, a family of wire birds sits in a row, but their shadows on the plaster behind them are cats waiting patiently. No readable text or logo.",
     ]),
     study('Clothespin Peg People', 'wooden peg doll figures', 'peg-people', {
       aesthetic: 'Clothespin peg people: characters made from old wooden clothespins and peg dolls, painted faces, scrap fabric clothes and yarn hair.',
@@ -172,7 +172,7 @@ const spec: Spec = {
       key_features: 'glass terrarium; real moss; tiny figures; glass reflections',
     }, ['no glass enclosure'], [
       'A tiny knight explores a mossy forest inside a glass jar, condensation dripping from the glass sky above him. No readable text or logo.',
-      'A miniature cottage with a smoking chimney sits among ferns in a terrarium on a windowsill. No readable text or logo.',
+      "On a windowsill, a miniature cottage with a smoking chimney sits among ferns under glass while a real, enormous snail presses its face against the curved wall. No readable text or logo.",
       "Inside a round glass globe of moss and pebbles, a tiny lizard in a knitted scarf sleeps on a pebble mountain beside a waterfall made of a single glistening drop of dew. No readable text or logo.",
     ]),
     study('Seed-Bead Figures', 'figures woven from tiny beads', 'seed-bead', {
@@ -186,8 +186,8 @@ const spec: Spec = {
       rendering_and_quality: "Precise bead detail with believable glass reflections, kept consistent across the whole image.",
       key_features: 'woven seed beads; glass sparkle; wire armature; jewel colors',
     }, ['smooth solid surfaces'], [
-      'A beaded hummingbird hovers over a beaded flower, thousands of tiny glass beads glittering in teal and magenta under a desk lamp. No readable text or logo.',
-      'A beaded lizard sunbathes on a real stone, its back patterned in orange and turquoise beads. No readable text or logo.',
+      "Hovering over a beaded flower, a beaded hummingbird has dropped a single bead that a beaded ant is now carrying home like a treasure, all glittering under a desk lamp. No readable text or logo.",
+      "Sunbathing on a real stone, a beaded lizard patterned in orange and turquoise has shed its old skin, which lies beside it as a perfect empty string of beads. No readable text or logo.",
       "Resting on a velvet cushion, a beaded crown sparkles with every point strung from glittering seed beads, while a tiny beaded beetle climbs up one side to claim the throne. No readable text or logo.",
     ]),
     study('Acorn-and-Twig Figures', 'nature craft figures', 'acorn-twig', {
@@ -248,7 +248,7 @@ const spec: Spec = {
     }, ['large scale'], [
       'A mouse sleeps in a tiny bed with a patchwork quilt inside half a walnut shell, a candle the size of a grain glowing beside it. No readable text or logo.',
       "Tucked inside half a walnut shell, a miniature waterfall spills into a pond where one tiny frog sits on a lily pad made from a single cut leaf, beside a moss bank. No readable text or logo.",
-      'A tiny wizard\'s study with a globe and bookshelf is hidden inside a walnut on a desk. No readable text or logo.',
+      "Hidden inside a walnut on a desk, a tiny wizard's study with a globe and bookshelf has a crack in the shell where a real eye is peering in. No readable text or logo.",
     ]),
   ],
 };
