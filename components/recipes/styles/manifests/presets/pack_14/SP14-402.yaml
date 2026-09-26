@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-402
+packId: pack_14
+name: Pattachitra Epic Scroll
+styleAnchors:
+  - Pattachitra Epic Scroll
+  - Odia epic hero art
+  - almond-eyed profile heroes
+displayName: Pattachitra Epic Scroll
+category: Heroes & Epics
+domain: Odia epic hero art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - pattachitra-epic
+  - odia
+  - mythic-heroes
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pattachitra epic scroll: Odisha cloth paintings with bold ornamental borders, stylized almond-eyed heroes, dense floral fields and epic battles and journeys on chalk-primed cloth.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject with almond eyes and ornamented profile inside dense floral borders on primed cloth.
+  color_and_tone: Conch white, lamp black, red ochre, yellow, indigo and leaf green.
+  lighting_and_shadow: Flat shadowless color with crisp black line, kept consistent across the whole image.
+  texture_and_material: Chalk and tamarind-primed cloth, natural pigment, fine brush line and lacquered finish.
+  camera_and_composition: Framed panel with ornate multiple borders and figures in profile across a patterned field.
+  atmosphere_and_mood: Keep the requested mood with devotional heroic splendor.
+  rendering_and_quality: Precise decorative line painting with every surface ornamented.
+  creative_brief: "Pattachitra epic scroll: Odisha cloth paintings with bold ornamental borders, stylized almond-eyed heroes, dense floral fields and epic battles and journeys on chalk-primed cloth. Carry it through almond-eyed profile heroes, ornamental borders, floral field, primed cloth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: almond-eyed profile heroes; ornamental borders; floral field; primed cloth
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: Heroes & Epics
+  tags:
+    - curation-v2
+    - heroes-epics
+    - pattachitra-epic
+    - odia
+    - mythic-heroes
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Odia epic hero art

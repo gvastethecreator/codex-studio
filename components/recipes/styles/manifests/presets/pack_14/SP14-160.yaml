@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-160
+packId: pack_14
+name: Hellenistic Pathos Marble
+styleAnchors:
+  - Hellenistic Pathos Marble
+  - greek mythic art technique
+  - twisting bodies
+displayName: Hellenistic Pathos Marble
+category: 'Sea Monsters & Water Spirits'
+domain: greek mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - hellenistic
+  - greek-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hellenistic pathos marble: dramatic late Greek sculpture with twisting bodies, anguished faces, deep-cut drapery and theatrical movement.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject in twisting dramatic marble with deep folds and intense emotion.
+  color_and_tone: White and grey marble with deep shadows, kept consistent across the whole image.
+  lighting_and_shadow: Dramatic side light deepening carved cuts, kept consistent across the whole image.
+  texture_and_material: Deep drapery cuts, polished skin and rough rock.
+  camera_and_composition: Dynamic diagonal composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with theatrical anguish and heroic struggle.
+  rendering_and_quality: Virtuoso deep carving, kept consistent across the whole image.
+  creative_brief: "Hellenistic pathos marble: dramatic late Greek sculpture with twisting bodies, anguished faces, deep-cut drapery and theatrical movement. Carry it through twisting bodies, deep drapery, anguished faces, drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: twisting bodies; deep drapery; anguished faces; drama
+avoidRules:
+  - readable Greek inscriptions
+  - modern tourist-souvenir kitsch
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: 'Sea Monsters & Water Spirits'
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - hellenistic
+    - greek-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: greek mythic art technique

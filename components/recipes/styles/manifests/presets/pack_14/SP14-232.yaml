@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-232
+packId: pack_14
+name: Gelede Masquerade Carving
+styleAnchors:
+  - Gelede Masquerade Carving
+  - yoruba art technique
+  - serene face mask
+displayName: Gelede Masquerade Carving
+category: 'Tricksters & Shape-Shifters'
+domain: yoruba art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tricksters-shape-shifters
+  - gelede
+  - yoruba-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gelede masquerade carving: painted wooden headdress masks honoring the mothers, with serene faces topped by lively carved scenes of daily life and satire.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject as a lively painted scene on top of a serene face mask.
+  color_and_tone: Bright painted blues, reds and whites, kept consistent across the whole image.
+  lighting_and_shadow: Festival daylight, kept consistent across the whole image.
+  texture_and_material: Painted wood, carved scenes and cloth, kept consistent across the whole image.
+  camera_and_composition: Masker with headdress in a festival, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with joyful honoring satire.
+  rendering_and_quality: Lively painted carving, kept consistent across the whole image.
+  creative_brief: "Gelede masquerade carving: painted wooden headdress masks honoring the mothers, with serene faces topped by lively carved scenes of daily life and satire. Carry it through serene face mask, carved scene on top, bright paint, festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: serene face mask; carved scene on top; bright paint; festival
+avoidRules:
+  - generic tribal pattern
+  - cultural stereotypes or caricature
+  - disrespectful depiction of Orisha
+  - readable text
+  - gore
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: tricksters-shape-shifters
+  categoryName: 'Tricksters & Shape-Shifters'
+  tags:
+    - curation-v2
+    - tricksters-shape-shifters
+    - gelede
+    - yoruba-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: yoruba art technique

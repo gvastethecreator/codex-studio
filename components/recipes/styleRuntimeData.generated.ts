@@ -143,7 +143,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Distinct cultures and mythologies expressed through recognizable motifs, material choices and illustrated design, adapted to the requested subject.',
     cardTitle: 'Mythic Noir',
     cardDescription: 'Cultures and mythologies, expressive motifs, mythic illustration.',
-    presetCount: 9,
+    presetCount: 197,
   },
   {
     id: 'pack_15',

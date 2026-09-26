@@ -3,69 +3,419 @@
     {
       "id": "pack_14",
       "name": "Mythic Noir Curated Vault",
-      "presetCount": 9
+      "presetCount": 197
     }
   ],
   "presets": [
-    {
-      "id": "SP14-142",
-      "name": "Hellenic Epic Noir",
-      "ref": "pack_14/SP14-142.yaml",
-      "packId": "pack_14",
-      "packName": "Mythic Noir Curated Vault",
-      "categoryId": "greek-mythology-epic-noir",
-      "categoryName": "Greek Mythology — Epic Noir",
-      "tags": ["mythic-noir-curated-vault", "greek-mythology-epic-noir"],
-      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-142 hellenic epic noir greek mythology — epic noir greek mythology — epic noir pack_14 mythic noir curated vault greek-mythology-epic-noir mythic-noir-curated-vault greek-mythology-epic-noir"
-    },
     {
       "id": "SP14-143",
       "name": "Japanese Kami & Yokai Myth-Noir",
       "ref": "pack_14/SP14-143.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "japanese-mythology-kami-and-yokai",
-      "categoryName": "Japanese Mythology — Kami & Yokai",
-      "tags": ["mythic-noir-curated-vault", "japanese-mythology-kami-and-yokai"],
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "tags": ["mythic-noir-curated-vault", "demons-yokai-and-night-spirits"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-143 japanese kami & yokai myth-noir japanese mythology — kami & yokai japanese mythology — kami & yokai pack_14 mythic noir curated vault japanese-mythology-kami-and-yokai mythic-noir-curated-vault japanese-mythology-kami-and-yokai"
+      "searchableText": "sp14-143 japanese kami & yokai myth-noir demons, yokai & night spirits demons, yokai & night spirits pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits"
     },
     {
-      "id": "SP14-144",
-      "name": "Norse Saga Noir",
-      "ref": "pack_14/SP14-144.yaml",
+      "id": "SP14-172",
+      "name": "Yurei-zu Ghost Scroll",
+      "styleAnchors": ["Yurei-zu Ghost Scroll", "japanese mythic art technique", "hanging scroll"],
+      "ref": "pack_14/SP14-172.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "norse-mythology-sagas",
-      "categoryName": "Norse Mythology — Sagas",
-      "tags": ["mythic-noir-curated-vault", "norse-mythology-sagas"],
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "japanese-mythic-art-technique"
+      ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-144 norse saga noir norse mythology — sagas norse mythology — sagas pack_14 mythic noir curated vault norse-mythology-sagas mythic-noir-curated-vault norse-mythology-sagas"
+      "searchableText": "sp14-172 yurei-zu ghost scroll japanese mythic art technique hanging scroll demons, yokai & night spirits demons, yokai & night spirits japanese mythic art technique pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits japanese-mythic-art-technique"
     },
     {
-      "id": "SP14-145",
-      "name": "Mande Epic & Griot",
-      "ref": "pack_14/SP14-145.yaml",
+      "id": "SP14-184",
+      "name": "Hundred Demons Scroll",
+      "styleAnchors": ["Hundred Demons Scroll", "japanese mythic art technique", "night parade"],
+      "ref": "pack_14/SP14-184.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "mande-oral-epic",
-      "categoryName": "Mande Oral Epic",
-      "tags": ["mythic-noir-curated-vault", "mande-oral-epic"],
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "japanese-mythic-art-technique"
+      ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-145 mande epic & griot mande oral epic mande oral epic pack_14 mythic noir curated vault mande-oral-epic mythic-noir-curated-vault mande-oral-epic"
+      "searchableText": "sp14-184 hundred demons scroll japanese mythic art technique night parade demons, yokai & night spirits demons, yokai & night spirits japanese mythic art technique pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits japanese-mythic-art-technique"
     },
     {
-      "id": "SP14-146",
-      "name": "Yoruba Orisha Myth-Noir",
-      "ref": "pack_14/SP14-146.yaml",
+      "id": "SP14-177",
+      "name": "Noh Mask Carving",
+      "styleAnchors": ["Noh Mask Carving", "japanese mythic art technique", "noh mask"],
+      "ref": "pack_14/SP14-177.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "yoruba-mythology-orisha",
-      "categoryName": "Yoruba Mythology — Orisha",
-      "tags": ["mythic-noir-curated-vault", "yoruba-mythology-orisha"],
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "japanese-mythic-art-technique"
+      ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-146 yoruba orisha myth-noir yoruba mythology — orisha yoruba mythology — orisha pack_14 mythic noir curated vault yoruba-mythology-orisha mythic-noir-curated-vault yoruba-mythology-orisha"
+      "searchableText": "sp14-177 noh mask carving japanese mythic art technique noh mask demons, yokai & night spirits demons, yokai & night spirits japanese mythic art technique pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-322",
+      "name": "Korean Dokkaebi Minhwa",
+      "styleAnchors": ["Korean Dokkaebi Minhwa", "Korean night-spirit art", "dokkaebi goblin"],
+      "ref": "pack_14/SP14-322.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Korean night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "korean-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-322 korean dokkaebi minhwa korean night-spirit art dokkaebi goblin demons, yokai & night spirits demons, yokai & night spirits korean night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits korean-night-spirit-art"
+    },
+    {
+      "id": "SP14-323",
+      "name": "Peking Opera Demon Mask",
+      "styleAnchors": ["Peking Opera Demon Mask", "Chinese night-spirit art", "opera face paint"],
+      "ref": "pack_14/SP14-323.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Chinese night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "chinese-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-323 peking opera demon mask chinese night-spirit art opera face paint demons, yokai & night spirits demons, yokai & night spirits chinese night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits chinese-night-spirit-art"
+    },
+    {
+      "id": "SP14-324",
+      "name": "Hungry Ghost Lantern Festival",
+      "styleAnchors": [
+        "Hungry Ghost Lantern Festival",
+        "Chinese night-spirit art",
+        "river lanterns"
+      ],
+      "ref": "pack_14/SP14-324.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Chinese night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "chinese-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-324 hungry ghost lantern festival chinese night-spirit art river lanterns demons, yokai & night spirits demons, yokai & night spirits chinese night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits chinese-night-spirit-art"
+    },
+    {
+      "id": "SP14-325",
+      "name": "Aswang Night Woodcut",
+      "styleAnchors": ["Aswang Night Woodcut", "Filipino night-spirit art", "night woodcut"],
+      "ref": "pack_14/SP14-325.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Filipino night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "filipino-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-325 aswang night woodcut filipino night-spirit art night woodcut demons, yokai & night spirits demons, yokai & night spirits filipino night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits filipino-night-spirit-art"
+    },
+    {
+      "id": "SP14-326",
+      "name": "Kerala Rakshasa Temple Mural",
+      "styleAnchors": ["Kerala Rakshasa Temple Mural", "Indian night-spirit art", "temple mural"],
+      "ref": "pack_14/SP14-326.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Indian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "indian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-326 kerala rakshasa temple mural indian night-spirit art temple mural demons, yokai & night spirits demons, yokai & night spirits indian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits indian-night-spirit-art"
+    },
+    {
+      "id": "SP14-327",
+      "name": "Persian Div Miniature",
+      "styleAnchors": ["Persian Div Miniature", "Persian night-spirit art", "spotted divs"],
+      "ref": "pack_14/SP14-327.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Persian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "persian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-327 persian div miniature persian night-spirit art spotted divs demons, yokai & night spirits demons, yokai & night spirits persian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits persian-night-spirit-art"
+    },
+    {
+      "id": "SP14-328",
+      "name": "Jinn Smoke Illumination",
+      "styleAnchors": ["Jinn Smoke Illumination", "Arabian night-spirit art", "jinn in smoke"],
+      "ref": "pack_14/SP14-328.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Arabian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "arabian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-328 jinn smoke illumination arabian night-spirit art jinn in smoke demons, yokai & night spirits demons, yokai & night spirits arabian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits arabian-night-spirit-art"
+    },
+    {
+      "id": "SP14-329",
+      "name": "Mesopotamian Demon Bronze",
+      "styleAnchors": [
+        "Mesopotamian Demon Bronze",
+        "Mesopotamian night-spirit art",
+        "winged demon"
+      ],
+      "ref": "pack_14/SP14-329.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Mesopotamian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "mesopotamian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-329 mesopotamian demon bronze mesopotamian night-spirit art winged demon demons, yokai & night spirits demons, yokai & night spirits mesopotamian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits mesopotamian-night-spirit-art"
+    },
+    {
+      "id": "SP14-330",
+      "name": "Medieval Hell-Mouth Illumination",
+      "styleAnchors": [
+        "Medieval Hell-Mouth Illumination",
+        "Medieval European night-spirit art",
+        "hell mouth"
+      ],
+      "ref": "pack_14/SP14-330.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Medieval European night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "medieval-european-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-330 medieval hell-mouth illumination medieval european night-spirit art hell mouth demons, yokai & night spirits demons, yokai & night spirits medieval european night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits medieval-european-night-spirit-art"
+    },
+    {
+      "id": "SP14-331",
+      "name": "Victorian Spirit Photograph",
+      "styleAnchors": [
+        "Victorian Spirit Photograph",
+        "Victorian night-spirit art",
+        "double exposure"
+      ],
+      "ref": "pack_14/SP14-331.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Victorian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "victorian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-331 victorian spirit photograph victorian night-spirit art double exposure demons, yokai & night spirits demons, yokai & night spirits victorian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits victorian-night-spirit-art"
+    },
+    {
+      "id": "SP14-332",
+      "name": "Balinese Rangda Mask Dance",
+      "styleAnchors": ["Balinese Rangda Mask Dance", "Balinese night-spirit art", "rangda mask"],
+      "ref": "pack_14/SP14-332.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Balinese night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "balinese-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-332 balinese rangda mask dance balinese night-spirit art rangda mask demons, yokai & night spirits demons, yokai & night spirits balinese night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits balinese-night-spirit-art"
+    },
+    {
+      "id": "SP14-333",
+      "name": "Thai Phi Temple Mural",
+      "styleAnchors": ["Thai Phi Temple Mural", "Thai night-spirit art", "temple mural"],
+      "ref": "pack_14/SP14-333.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Thai night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "thai-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-333 thai phi temple mural thai night-spirit art temple mural demons, yokai & night spirits demons, yokai & night spirits thai night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits thai-night-spirit-art"
+    },
+    {
+      "id": "SP14-334",
+      "name": "Czech Devil Marionette",
+      "styleAnchors": ["Czech Devil Marionette", "Czech night-spirit art", "string puppet"],
+      "ref": "pack_14/SP14-334.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Czech night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "czech-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-334 czech devil marionette czech night-spirit art string puppet demons, yokai & night spirits demons, yokai & night spirits czech night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits czech-night-spirit-art"
+    },
+    {
+      "id": "SP14-335",
+      "name": "Slavic Nightmare Lubok",
+      "styleAnchors": ["Slavic Nightmare Lubok", "Slavic night-spirit art", "lubok print"],
+      "ref": "pack_14/SP14-335.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Slavic night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "slavic-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-335 slavic nightmare lubok slavic night-spirit art lubok print demons, yokai & night spirits demons, yokai & night spirits slavic night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits slavic-night-spirit-art"
+    },
+    {
+      "id": "SP14-336",
+      "name": "Banshee Mist Etching",
+      "styleAnchors": ["Banshee Mist Etching", "Irish night-spirit art", "keening spirit"],
+      "ref": "pack_14/SP14-336.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Irish night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "irish-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-336 banshee mist etching irish night-spirit art keening spirit demons, yokai & night spirits demons, yokai & night spirits irish night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits irish-night-spirit-art"
+    },
+    {
+      "id": "SP14-337",
+      "name": "Tzitzimimeh Star Demon Codex",
+      "styleAnchors": ["Tzitzimimeh Star Demon Codex", "Mexica night-spirit art", "star demons"],
+      "ref": "pack_14/SP14-337.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Mexica night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "mexica-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-337 tzitzimimeh star demon codex mexica night-spirit art star demons demons, yokai & night spirits demons, yokai & night spirits mexica night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits mexica-night-spirit-art"
+    },
+    {
+      "id": "SP14-338",
+      "name": "Javanese Wayang Demon Puppet",
+      "styleAnchors": [
+        "Javanese Wayang Demon Puppet",
+        "Javanese night-spirit art",
+        "shadow puppet"
+      ],
+      "ref": "pack_14/SP14-338.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Javanese night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "javanese-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-338 javanese wayang demon puppet javanese night-spirit art shadow puppet demons, yokai & night spirits demons, yokai & night spirits javanese night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits javanese-night-spirit-art"
+    },
+    {
+      "id": "SP14-339",
+      "name": "Cordel Devil Woodcut",
+      "styleAnchors": ["Cordel Devil Woodcut", "Brazilian night-spirit art", "cordel woodcut"],
+      "ref": "pack_14/SP14-339.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "demons-yokai-and-night-spirits",
+      "categoryName": "Demons, Yokai & Night Spirits",
+      "domain": "Brazilian night-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "demons-yokai-and-night-spirits",
+        "brazilian-night-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-339 cordel devil woodcut brazilian night-spirit art cordel woodcut demons, yokai & night spirits demons, yokai & night spirits brazilian night-spirit art pack_14 mythic noir curated vault demons-yokai-and-night-spirits mythic-noir-curated-vault demons-yokai-and-night-spirits brazilian-night-spirit-art"
     },
     {
       "id": "SP14-147",
@@ -73,11 +423,385 @@
       "ref": "pack_14/SP14-147.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "akan-mythology-anansi",
-      "categoryName": "Akan Mythology — Anansi",
-      "tags": ["mythic-noir-curated-vault", "akan-mythology-anansi"],
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "tags": ["mythic-noir-curated-vault", "tricksters-and-shape-shifters"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-147 akan anansi trickster akan mythology — anansi akan mythology — anansi pack_14 mythic noir curated vault akan-mythology-anansi mythic-noir-curated-vault akan-mythology-anansi"
+      "searchableText": "sp14-147 akan anansi trickster tricksters & shape-shifters tricksters & shape-shifters pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters"
+    },
+    {
+      "id": "SP14-259",
+      "name": "Anansi Storybook Illustration",
+      "styleAnchors": ["Anansi Storybook Illustration", "akan art technique", "storybook"],
+      "ref": "pack_14/SP14-259.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "akan art technique",
+      "tags": ["mythic-noir-curated-vault", "tricksters-and-shape-shifters", "akan-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-259 anansi storybook illustration akan art technique storybook tricksters & shape-shifters tricksters & shape-shifters akan art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters akan-art-technique"
+    },
+    {
+      "id": "SP14-251",
+      "name": "Asafo Applique Flag",
+      "styleAnchors": ["Asafo Applique Flag", "akan art technique", "appliqué flag"],
+      "ref": "pack_14/SP14-251.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "akan art technique",
+      "tags": ["mythic-noir-curated-vault", "tricksters-and-shape-shifters", "akan-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-251 asafo applique flag akan art technique appliqué flag tricksters & shape-shifters tricksters & shape-shifters akan art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters akan-art-technique"
+    },
+    {
+      "id": "SP14-173",
+      "name": "Otsu-e Folk Painting",
+      "styleAnchors": ["Otsu-e Folk Painting", "japanese mythic art technique", "folk painting"],
+      "ref": "pack_14/SP14-173.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-173 otsu-e folk painting japanese mythic art technique folk painting tricksters & shape-shifters tricksters & shape-shifters japanese mythic art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-213",
+      "name": "Sogo Bo Puppet Masquerade",
+      "styleAnchors": [
+        "Sogo Bo Puppet Masquerade",
+        "mande epic art technique",
+        "puppet masquerade"
+      ],
+      "ref": "pack_14/SP14-213.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-213 sogo bo puppet masquerade mande epic art technique puppet masquerade tricksters & shape-shifters tricksters & shape-shifters mande epic art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-232",
+      "name": "Gelede Masquerade Carving",
+      "styleAnchors": ["Gelede Masquerade Carving", "yoruba art technique", "serene face mask"],
+      "ref": "pack_14/SP14-232.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "yoruba art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "yoruba-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-232 gelede masquerade carving yoruba art technique serene face mask tricksters & shape-shifters tricksters & shape-shifters yoruba art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters yoruba-art-technique"
+    },
+    {
+      "id": "SP14-200",
+      "name": "Edda Pen-and-Ink Revival",
+      "styleAnchors": ["Edda Pen-and-Ink Revival", "norse mythic art technique", "pen and ink"],
+      "ref": "pack_14/SP14-200.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-200 edda pen-and-ink revival norse mythic art technique pen and ink tricksters & shape-shifters tricksters & shape-shifters norse mythic art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-311",
+      "name": "Amate Bark Dreamscape",
+      "styleAnchors": ["Amate Bark Dreamscape", "mexica fantastic art technique", "amate bark"],
+      "ref": "pack_14/SP14-311.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-311 amate bark dreamscape mexica fantastic art technique amate bark tricksters & shape-shifters tricksters & shape-shifters mexica fantastic art technique pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-340",
+      "name": "Kitsune Rain Wedding Print",
+      "styleAnchors": ["Kitsune Rain Wedding Print", "Japanese trickster art", "fox wedding"],
+      "ref": "pack_14/SP14-340.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Japanese trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "japanese-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-340 kitsune rain wedding print japanese trickster art fox wedding tricksters & shape-shifters tricksters & shape-shifters japanese trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters japanese-trickster-art"
+    },
+    {
+      "id": "SP14-341",
+      "name": "Stone Monkey Cloud Ink Painting",
+      "styleAnchors": ["Stone Monkey Cloud Ink Painting", "Chinese trickster art", "monkey king"],
+      "ref": "pack_14/SP14-341.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Chinese trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "chinese-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-341 stone monkey cloud ink painting chinese trickster art monkey king tricksters & shape-shifters tricksters & shape-shifters chinese trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters chinese-trickster-art"
+    },
+    {
+      "id": "SP14-342",
+      "name": "Huli Jing Silk Painting",
+      "styleAnchors": ["Huli Jing Silk Painting", "Chinese trickster art", "fox spirit"],
+      "ref": "pack_14/SP14-342.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Chinese trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "chinese-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-342 huli jing silk painting chinese trickster art fox spirit tricksters & shape-shifters tricksters & shape-shifters chinese trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters chinese-trickster-art"
+    },
+    {
+      "id": "SP14-343",
+      "name": "Tanuki Belly-Drum Woodblock",
+      "styleAnchors": ["Tanuki Belly-Drum Woodblock", "Japanese trickster art", "raccoon dogs"],
+      "ref": "pack_14/SP14-343.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Japanese trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "japanese-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-343 tanuki belly-drum woodblock japanese trickster art raccoon dogs tricksters & shape-shifters tricksters & shape-shifters japanese trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters japanese-trickster-art"
+    },
+    {
+      "id": "SP14-344",
+      "name": "Kumiho Moonlit Minhwa",
+      "styleAnchors": ["Kumiho Moonlit Minhwa", "Korean trickster art", "nine-tailed fox"],
+      "ref": "pack_14/SP14-344.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Korean trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "korean-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-344 kumiho moonlit minhwa korean trickster art nine-tailed fox tricksters & shape-shifters tricksters & shape-shifters korean trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters korean-trickster-art"
+    },
+    {
+      "id": "SP14-345",
+      "name": "Reynard Fable Engraving",
+      "styleAnchors": ["Reynard Fable Engraving", "Medieval European trickster art", "cunning fox"],
+      "ref": "pack_14/SP14-345.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Medieval European trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "medieval-european-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-345 reynard fable engraving medieval european trickster art cunning fox tricksters & shape-shifters tricksters & shape-shifters medieval european trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters medieval-european-trickster-art"
+    },
+    {
+      "id": "SP14-346",
+      "name": "Pompeian Mercury Fresco",
+      "styleAnchors": ["Pompeian Mercury Fresco", "Roman trickster art", "Pompeian red"],
+      "ref": "pack_14/SP14-346.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Roman trickster art",
+      "tags": ["mythic-noir-curated-vault", "tricksters-and-shape-shifters", "roman-trickster-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-346 pompeian mercury fresco roman trickster art pompeian red tricksters & shape-shifters tricksters & shape-shifters roman trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters roman-trickster-art"
+    },
+    {
+      "id": "SP14-347",
+      "name": "Tapa Cloth Legend Pattern",
+      "styleAnchors": ["Tapa Cloth Legend Pattern", "Polynesian trickster art", "bark cloth"],
+      "ref": "pack_14/SP14-347.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Polynesian trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "polynesian-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-347 tapa cloth legend pattern polynesian trickster art bark cloth tricksters & shape-shifters tricksters & shape-shifters polynesian trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters polynesian-trickster-art"
+    },
+    {
+      "id": "SP14-348",
+      "name": "Orkney Selkie Watercolor",
+      "styleAnchors": ["Orkney Selkie Watercolor", "Scottish trickster art", "seal skins"],
+      "ref": "pack_14/SP14-348.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Scottish trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "scottish-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-348 orkney selkie watercolor scottish trickster art seal skins tricksters & shape-shifters tricksters & shape-shifters scottish trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters scottish-trickster-art"
+    },
+    {
+      "id": "SP14-349",
+      "name": "Loup-Garou Chapbook Woodcut",
+      "styleAnchors": ["Loup-Garou Chapbook Woodcut", "French trickster art", "werewolf"],
+      "ref": "pack_14/SP14-349.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "French trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "french-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-349 loup-garou chapbook woodcut french trickster art werewolf tricksters & shape-shifters tricksters & shape-shifters french trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters french-trickster-art"
+    },
+    {
+      "id": "SP14-350",
+      "name": "Oaxacan Alebrije Carving",
+      "styleAnchors": ["Oaxacan Alebrije Carving", "Oaxacan trickster art", "painted creature"],
+      "ref": "pack_14/SP14-350.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Oaxacan trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "oaxacan-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-350 oaxacan alebrije carving oaxacan trickster art painted creature tricksters & shape-shifters tricksters & shape-shifters oaxacan trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters oaxacan-trickster-art"
+    },
+    {
+      "id": "SP14-351",
+      "name": "Eulenspiegel Owl-and-Mirror Etching",
+      "styleAnchors": [
+        "Eulenspiegel Owl-and-Mirror Etching",
+        "German trickster art",
+        "jester prankster"
+      ],
+      "ref": "pack_14/SP14-351.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "German trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "german-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-351 eulenspiegel owl-and-mirror etching german trickster art jester prankster tricksters & shape-shifters tricksters & shape-shifters german trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters german-trickster-art"
+    },
+    {
+      "id": "SP14-352",
+      "name": "Nasreddin Ottoman Miniature",
+      "styleAnchors": ["Nasreddin Ottoman Miniature", "Ottoman trickster art", "wise fool"],
+      "ref": "pack_14/SP14-352.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Ottoman trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "ottoman-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-352 nasreddin ottoman miniature ottoman trickster art wise fool tricksters & shape-shifters tricksters & shape-shifters ottoman trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters ottoman-trickster-art"
+    },
+    {
+      "id": "SP14-353",
+      "name": "Ijapa Tortoise Market Mural",
+      "styleAnchors": ["Ijapa Tortoise Market Mural", "Yoruba trickster art", "clever tortoise"],
+      "ref": "pack_14/SP14-353.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "tricksters-and-shape-shifters",
+      "categoryName": "Tricksters & Shape-Shifters",
+      "domain": "Yoruba trickster art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "tricksters-and-shape-shifters",
+        "yoruba-trickster-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-353 ijapa tortoise market mural yoruba trickster art clever tortoise tricksters & shape-shifters tricksters & shape-shifters yoruba trickster art pack_14 mythic noir curated vault tricksters-and-shape-shifters mythic-noir-curated-vault tricksters-and-shape-shifters yoruba-trickster-art"
     },
     {
       "id": "SP14-148",
@@ -85,23 +809,437 @@
       "ref": "pack_14/SP14-148.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "egyptian-mythology",
-      "categoryName": "Egyptian Mythology",
-      "tags": ["mythic-noir-curated-vault", "egyptian-mythology"],
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "tags": ["mythic-noir-curated-vault", "underworlds-and-realms-of-the-dead"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-148 egyptian mythic noir egyptian mythology egyptian mythology pack_14 mythic noir curated vault egyptian-mythology mythic-noir-curated-vault egyptian-mythology"
+      "searchableText": "sp14-148 egyptian mythic noir underworlds & realms of the dead underworlds & realms of the dead pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead"
     },
     {
-      "id": "SP14-149",
-      "name": "Maya Mythic Noir",
-      "ref": "pack_14/SP14-149.yaml",
+      "id": "SP14-267",
+      "name": "Papyrus Vignette Scroll",
+      "styleAnchors": ["Papyrus Vignette Scroll", "egyptian mythic art technique", "papyrus"],
+      "ref": "pack_14/SP14-267.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "maya-mythology",
-      "categoryName": "Maya Mythology",
-      "tags": ["mythic-noir-curated-vault", "maya-mythology"],
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "egyptian mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "egyptian-mythic-art-technique"
+      ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-149 maya mythic noir maya mythology maya mythology pack_14 mythic noir curated vault maya-mythology mythic-noir-curated-vault maya-mythology"
+      "searchableText": "sp14-267 papyrus vignette scroll egyptian mythic art technique papyrus underworlds & realms of the dead underworlds & realms of the dead egyptian mythic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead egyptian-mythic-art-technique"
+    },
+    {
+      "id": "SP14-283",
+      "name": "Starry Tomb Ceiling",
+      "styleAnchors": ["Starry Tomb Ceiling", "egyptian mythic art technique", "blue ceiling"],
+      "ref": "pack_14/SP14-283.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "egyptian mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "egyptian-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-283 starry tomb ceiling egyptian mythic art technique blue ceiling underworlds & realms of the dead underworlds & realms of the dead egyptian mythic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead egyptian-mythic-art-technique"
+    },
+    {
+      "id": "SP14-308",
+      "name": "Marigold Underworld Journey",
+      "styleAnchors": [
+        "Marigold Underworld Journey",
+        "mexica fantastic art technique",
+        "marigold path"
+      ],
+      "ref": "pack_14/SP14-308.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-308 marigold underworld journey mexica fantastic art technique marigold path underworlds & realms of the dead underworlds & realms of the dead mexica fantastic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-312",
+      "name": "Papel Picado Spirit Festival",
+      "styleAnchors": [
+        "Papel Picado Spirit Festival",
+        "mexica fantastic art technique",
+        "cut paper banners"
+      ],
+      "ref": "pack_14/SP14-312.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-312 papel picado spirit festival mexica fantastic art technique cut paper banners underworlds & realms of the dead underworlds & realms of the dead mexica fantastic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-319",
+      "name": "Marigold Ofrenda Still Life",
+      "styleAnchors": [
+        "Marigold Ofrenda Still Life",
+        "mexica fantastic art technique",
+        "altar tiers"
+      ],
+      "ref": "pack_14/SP14-319.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-319 marigold ofrenda still life mexica fantastic art technique altar tiers underworlds & realms of the dead underworlds & realms of the dead mexica fantastic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-284",
+      "name": "Codex-Style Vase Painting",
+      "styleAnchors": ["Codex-Style Vase Painting", "maya art technique", "cylinder vase"],
+      "ref": "pack_14/SP14-284.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "maya art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "maya-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-284 codex-style vase painting maya art technique cylinder vase underworlds & realms of the dead underworlds & realms of the dead maya art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead maya-art-technique"
+    },
+    {
+      "id": "SP14-300",
+      "name": "Naj Tunich Cave Drawing",
+      "styleAnchors": ["Naj Tunich Cave Drawing", "maya art technique", "cave drawing"],
+      "ref": "pack_14/SP14-300.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "maya art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "maya-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-300 naj tunich cave drawing maya art technique cave drawing underworlds & realms of the dead underworlds & realms of the dead maya art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead maya-art-technique"
+    },
+    {
+      "id": "SP14-153",
+      "name": "White-Ground Lekythos Painting",
+      "styleAnchors": [
+        "White-Ground Lekythos Painting",
+        "greek mythic art technique",
+        "white ground"
+      ],
+      "ref": "pack_14/SP14-153.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-153 white-ground lekythos painting greek mythic art technique white ground underworlds & realms of the dead underworlds & realms of the dead greek mythic art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-233",
+      "name": "Egungun Cloth Masquerade",
+      "styleAnchors": ["Egungun Cloth Masquerade", "yoruba art technique", "layered cloth panels"],
+      "ref": "pack_14/SP14-233.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "yoruba art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "yoruba-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-233 egungun cloth masquerade yoruba art technique layered cloth panels underworlds & realms of the dead underworlds & realms of the dead yoruba art technique pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead yoruba-art-technique"
+    },
+    {
+      "id": "SP14-354",
+      "name": "Diyu Ten Courts Scroll",
+      "styleAnchors": ["Diyu Ten Courts Scroll", "Chinese underworld art", "underworld court"],
+      "ref": "pack_14/SP14-354.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Chinese underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "chinese-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-354 diyu ten courts scroll chinese underworld art underworld court underworlds & realms of the dead underworlds & realms of the dead chinese underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead chinese-underworld-art"
+    },
+    {
+      "id": "SP14-355",
+      "name": "Jigoku-zoshi Hell Scroll",
+      "styleAnchors": ["Jigoku-zoshi Hell Scroll", "Japanese underworld art", "hell scroll"],
+      "ref": "pack_14/SP14-355.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Japanese underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "japanese-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-355 jigoku-zoshi hell scroll japanese underworld art hell scroll underworlds & realms of the dead underworlds & realms of the dead japanese underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead japanese-underworld-art"
+    },
+    {
+      "id": "SP14-356",
+      "name": "Helheim Frost Painting",
+      "styleAnchors": ["Helheim Frost Painting", "Norse underworld art", "frozen underworld"],
+      "ref": "pack_14/SP14-356.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Norse underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "norse-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-356 helheim frost painting norse underworld art frozen underworld underworlds & realms of the dead underworlds & realms of the dead norse underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead norse-underworld-art"
+    },
+    {
+      "id": "SP14-357",
+      "name": "Inanna Descent Cylinder Seal",
+      "styleAnchors": [
+        "Inanna Descent Cylinder Seal",
+        "Mesopotamian underworld art",
+        "cylinder seal"
+      ],
+      "ref": "pack_14/SP14-357.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Mesopotamian underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "mesopotamian-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-357 inanna descent cylinder seal mesopotamian underworld art cylinder seal underworlds & realms of the dead underworlds & realms of the dead mesopotamian underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead mesopotamian-underworld-art"
+    },
+    {
+      "id": "SP14-358",
+      "name": "Inferno Circle Engraving",
+      "styleAnchors": [
+        "Inferno Circle Engraving",
+        "Italian literary underworld art",
+        "infernal circles"
+      ],
+      "ref": "pack_14/SP14-358.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Italian literary underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "italian-literary-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-358 inferno circle engraving italian literary underworld art infernal circles underworlds & realms of the dead underworlds & realms of the dead italian literary underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead italian-literary-underworld-art"
+    },
+    {
+      "id": "SP14-359",
+      "name": "Yama Pata Scroll Painting",
+      "styleAnchors": ["Yama Pata Scroll Painting", "Bengali underworld art", "narrative scroll"],
+      "ref": "pack_14/SP14-359.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Bengali underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "bengali-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-359 yama pata scroll painting bengali underworld art narrative scroll underworlds & realms of the dead underworlds & realms of the dead bengali underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead bengali-underworld-art"
+    },
+    {
+      "id": "SP14-360",
+      "name": "Etruscan Tomb Fresco",
+      "styleAnchors": ["Etruscan Tomb Fresco", "Etruscan underworld art", "tomb fresco"],
+      "ref": "pack_14/SP14-360.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Etruscan underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "etruscan-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-360 etruscan tomb fresco etruscan underworld art tomb fresco underworlds & realms of the dead underworlds & realms of the dead etruscan underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead etruscan-underworld-art"
+    },
+    {
+      "id": "SP14-361",
+      "name": "Joss Paper Afterlife Mansion",
+      "styleAnchors": [
+        "Joss Paper Afterlife Mansion",
+        "Chinese folk underworld art",
+        "paper offerings"
+      ],
+      "ref": "pack_14/SP14-361.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Chinese folk underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "chinese-folk-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-361 joss paper afterlife mansion chinese folk underworld art paper offerings underworlds & realms of the dead underworlds & realms of the dead chinese folk underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead chinese-folk-underworld-art"
+    },
+    {
+      "id": "SP14-362",
+      "name": "Celtic Otherworld Mound Illumination",
+      "styleAnchors": [
+        "Celtic Otherworld Mound Illumination",
+        "Celtic underworld art",
+        "fairy mound"
+      ],
+      "ref": "pack_14/SP14-362.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Celtic underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "celtic-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-362 celtic otherworld mound illumination celtic underworld art fairy mound underworlds & realms of the dead underworlds & realms of the dead celtic underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead celtic-underworld-art"
+    },
+    {
+      "id": "SP14-363",
+      "name": "Chinvat Bridge Miniature",
+      "styleAnchors": ["Chinvat Bridge Miniature", "Persian underworld art", "bridge of judgment"],
+      "ref": "pack_14/SP14-363.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Persian underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "persian-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-363 chinvat bridge miniature persian underworld art bridge of judgment underworlds & realms of the dead underworlds & realms of the dead persian underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead persian-underworld-art"
+    },
+    {
+      "id": "SP14-364",
+      "name": "Korean Jeoseung Messenger Painting",
+      "styleAnchors": [
+        "Korean Jeoseung Messenger Painting",
+        "Korean underworld art",
+        "afterlife messengers"
+      ],
+      "ref": "pack_14/SP14-364.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Korean underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "korean-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-364 korean jeoseung messenger painting korean underworld art afterlife messengers underworlds & realms of the dead underworlds & realms of the dead korean underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead korean-underworld-art"
+    },
+    {
+      "id": "SP14-365",
+      "name": "Styx Ferryman Black-Glaze",
+      "styleAnchors": ["Styx Ferryman Black-Glaze", "Greek underworld art", "ferryman"],
+      "ref": "pack_14/SP14-365.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "underworlds-and-realms-of-the-dead",
+      "categoryName": "Underworlds & Realms of the Dead",
+      "domain": "Greek underworld art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "underworlds-and-realms-of-the-dead",
+        "greek-underworld-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-365 styx ferryman black-glaze greek underworld art ferryman underworlds & realms of the dead underworlds & realms of the dead greek underworld art pack_14 mythic noir curated vault underworlds-and-realms-of-the-dead mythic-noir-curated-vault underworlds-and-realms-of-the-dead greek-underworld-art"
+    },
+    {
+      "id": "SP14-146",
+      "name": "Yoruba Orisha Myth-Noir",
+      "ref": "pack_14/SP14-146.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-146 yoruba orisha myth-noir sky, sun & storm gods sky, sun & storm gods pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods"
     },
     {
       "id": "SP14-150",
@@ -109,12 +1247,2382 @@
       "ref": "pack_14/SP14-150.yaml",
       "packId": "pack_14",
       "packName": "Mythic Noir Curated Vault",
-      "categoryId": "mexica-mythology",
-      "categoryName": "Mexica Mythology",
-      "tags": ["mythic-noir-curated-vault", "mexica-mythology"],
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-150 mexica mythic noir mexica mythology mexica mythology pack_14 mythic noir curated vault mexica-mythology mythic-noir-curated-vault mexica-mythology"
+      "searchableText": "sp14-150 mexica mythic noir sky, sun & storm gods sky, sun & storm gods pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods"
+    },
+    {
+      "id": "SP14-170",
+      "name": "Rinpa Gold Screen",
+      "styleAnchors": ["Rinpa Gold Screen", "japanese mythic art technique", "gold leaf"],
+      "ref": "pack_14/SP14-170.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sky-sun-and-storm-gods",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-170 rinpa gold screen japanese mythic art technique gold leaf sky, sun & storm gods sky, sun & storm gods japanese mythic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-182",
+      "name": "Temple Ceiling Dragon",
+      "styleAnchors": ["Temple Ceiling Dragon", "japanese mythic art technique", "ceiling dragon"],
+      "ref": "pack_14/SP14-182.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sky-sun-and-storm-gods",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-182 temple ceiling dragon japanese mythic art technique ceiling dragon sky, sun & storm gods sky, sun & storm gods japanese mythic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-201",
+      "name": "Aurora Saga Night Painting",
+      "styleAnchors": ["Aurora Saga Night Painting", "norse mythic art technique", "aurora"],
+      "ref": "pack_14/SP14-201.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "norse mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "norse-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-201 aurora saga night painting norse mythic art technique aurora sky, sun & storm gods sky, sun & storm gods norse mythic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-240",
+      "name": "Afrofuturist Orisha Illustration",
+      "styleAnchors": ["Afrofuturist Orisha Illustration", "yoruba art technique", "afrofuturist"],
+      "ref": "pack_14/SP14-240.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "yoruba art technique",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "yoruba-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-240 afrofuturist orisha illustration yoruba art technique afrofuturist sky, sun & storm gods sky, sun & storm gods yoruba art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods yoruba-art-technique"
+    },
+    {
+      "id": "SP14-306",
+      "name": "Sun Stone Cosmic Clockwork",
+      "styleAnchors": [
+        "Sun Stone Cosmic Clockwork",
+        "mexica fantastic art technique",
+        "concentric rings"
+      ],
+      "ref": "pack_14/SP14-306.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sky-sun-and-storm-gods",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-306 sun stone cosmic clockwork mexica fantastic art technique concentric rings sky, sun & storm gods sky, sun & storm gods mexica fantastic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-314",
+      "name": "Jade Rain Palace",
+      "styleAnchors": ["Jade Rain Palace", "mexica fantastic art technique", "jade palace"],
+      "ref": "pack_14/SP14-314.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sky-sun-and-storm-gods",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-314 jade rain palace mexica fantastic art technique jade palace sky, sun & storm gods sky, sun & storm gods mexica fantastic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-167",
+      "name": "Academic Olympus Oil",
+      "styleAnchors": ["Academic Olympus Oil", "greek mythic art technique", "salon oil"],
+      "ref": "pack_14/SP14-167.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "greek mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "greek-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-167 academic olympus oil greek mythic art technique salon oil sky, sun & storm gods sky, sun & storm gods greek mythic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-269",
+      "name": "Amarna Naturalism",
+      "styleAnchors": ["Amarna Naturalism", "egyptian mythic art technique", "elongated figures"],
+      "ref": "pack_14/SP14-269.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "egyptian mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sky-sun-and-storm-gods",
+        "egyptian-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-269 amarna naturalism egyptian mythic art technique elongated figures sky, sun & storm gods sky, sun & storm gods egyptian mythic art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods egyptian-mythic-art-technique"
+    },
+    {
+      "id": "SP14-292",
+      "name": "Maya Blue Pigment Wash",
+      "styleAnchors": ["Maya Blue Pigment Wash", "maya art technique", "Maya blue"],
+      "ref": "pack_14/SP14-292.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "maya art technique",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "maya-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-292 maya blue pigment wash maya art technique maya blue sky, sun & storm gods sky, sun & storm gods maya art technique pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods maya-art-technique"
+    },
+    {
+      "id": "SP14-366",
+      "name": "Rajput Monsoon Miniature",
+      "styleAnchors": ["Rajput Monsoon Miniature", "Indian sky-god art", "monsoon clouds"],
+      "ref": "pack_14/SP14-366.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Indian sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "indian-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-366 rajput monsoon miniature indian sky-god art monsoon clouds sky, sun & storm gods sky, sun & storm gods indian sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods indian-sky-god-art"
+    },
+    {
+      "id": "SP14-367",
+      "name": "Taoist Celestial Court Mural",
+      "styleAnchors": [
+        "Taoist Celestial Court Mural",
+        "Chinese sky-god art",
+        "celestial procession"
+      ],
+      "ref": "pack_14/SP14-367.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Chinese sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "chinese-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-367 taoist celestial court mural chinese sky-god art celestial procession sky, sun & storm gods sky, sun & storm gods chinese sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods chinese-sky-god-art"
+    },
+    {
+      "id": "SP14-368",
+      "name": "Slavic Thunder Oak Carving",
+      "styleAnchors": ["Slavic Thunder Oak Carving", "Slavic sky-god art", "sacred oak"],
+      "ref": "pack_14/SP14-368.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Slavic sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "slavic-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-368 slavic thunder oak carving slavic sky-god art sacred oak sky, sun & storm gods sky, sun & storm gods slavic sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods slavic-sky-god-art"
+    },
+    {
+      "id": "SP14-369",
+      "name": "Kalevala Romantic Painting",
+      "styleAnchors": ["Kalevala Romantic Painting", "Finnish sky-god art", "northern lakes"],
+      "ref": "pack_14/SP14-369.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Finnish sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "finnish-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-369 kalevala romantic painting finnish sky-god art northern lakes sky, sun & storm gods sky, sun & storm gods finnish sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods finnish-sky-god-art"
+    },
+    {
+      "id": "SP14-370",
+      "name": "Inca Gold Sun Disc",
+      "styleAnchors": ["Inca Gold Sun Disc", "Andean sky-god art", "gold sun disc"],
+      "ref": "pack_14/SP14-370.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Andean sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "andean-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-370 inca gold sun disc andean sky-god art gold sun disc sky, sun & storm gods sky, sun & storm gods andean sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods andean-sky-god-art"
+    },
+    {
+      "id": "SP14-371",
+      "name": "Hittite Storm God Relief",
+      "styleAnchors": ["Hittite Storm God Relief", "Hittite sky-god art", "rock relief"],
+      "ref": "pack_14/SP14-371.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Hittite sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "hittite-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-371 hittite storm god relief hittite sky-god art rock relief sky, sun & storm gods sky, sun & storm gods hittite sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods hittite-sky-god-art"
+    },
+    {
+      "id": "SP14-372",
+      "name": "Gundestrup Silver Cauldron",
+      "styleAnchors": ["Gundestrup Silver Cauldron", "Celtic sky-god art", "silver cauldron"],
+      "ref": "pack_14/SP14-372.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Celtic sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "celtic-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-372 gundestrup silver cauldron celtic sky-god art silver cauldron sky, sun & storm gods sky, sun & storm gods celtic sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods celtic-sky-god-art"
+    },
+    {
+      "id": "SP14-373",
+      "name": "Kilauea Fire Goddess Oil",
+      "styleAnchors": ["Kilauea Fire Goddess Oil", "Hawaiian sky-god art", "lava fountains"],
+      "ref": "pack_14/SP14-373.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Hawaiian sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "hawaiian-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-373 kilauea fire goddess oil hawaiian sky-god art lava fountains sky, sun & storm gods sky, sun & storm gods hawaiian sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods hawaiian-sky-god-art"
+    },
+    {
+      "id": "SP14-374",
+      "name": "Nine Dragons Storm Scroll",
+      "styleAnchors": ["Nine Dragons Storm Scroll", "Chinese sky-god art", "dragons in clouds"],
+      "ref": "pack_14/SP14-374.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Chinese sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "chinese-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-374 nine dragons storm scroll chinese sky-god art dragons in clouds sky, sun & storm gods sky, sun & storm gods chinese sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods chinese-sky-god-art"
+    },
+    {
+      "id": "SP14-375",
+      "name": "Heavenly Cave Dawn Painting",
+      "styleAnchors": ["Heavenly Cave Dawn Painting", "Japanese sky-god art", "sun from a cave"],
+      "ref": "pack_14/SP14-375.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Japanese sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "japanese-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-375 heavenly cave dawn painting japanese sky-god art sun from a cave sky, sun & storm gods sky, sun & storm gods japanese sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods japanese-sky-god-art"
+    },
+    {
+      "id": "SP14-376",
+      "name": "Konark Sun Chariot Relief",
+      "styleAnchors": ["Konark Sun Chariot Relief", "Indian sky-god art", "sun chariot"],
+      "ref": "pack_14/SP14-376.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sky-sun-and-storm-gods",
+      "categoryName": "Sky, Sun & Storm Gods",
+      "domain": "Indian sky-god art",
+      "tags": ["mythic-noir-curated-vault", "sky-sun-and-storm-gods", "indian-sky-god-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-376 konark sun chariot relief indian sky-god art sun chariot sky, sun & storm gods sky, sun & storm gods indian sky-god art pack_14 mythic noir curated vault sky-sun-and-storm-gods mythic-noir-curated-vault sky-sun-and-storm-gods indian-sky-god-art"
+    },
+    {
+      "id": "SP14-188",
+      "name": "Aizome Indigo Dye",
+      "styleAnchors": ["Aizome Indigo Dye", "japanese mythic art technique", "indigo dye"],
+      "ref": "pack_14/SP14-188.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-188 aizome indigo dye japanese mythic art technique indigo dye sea monsters & water spirits sea monsters & water spirits japanese mythic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-203",
+      "name": "Longship Prow Carving",
+      "styleAnchors": ["Longship Prow Carving", "norse mythic art technique", "curving prow"],
+      "ref": "pack_14/SP14-203.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-203 longship prow carving norse mythic art technique curving prow sea monsters & water spirits sea monsters & water spirits norse mythic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-209",
+      "name": "Niger River Pirogue Painting",
+      "styleAnchors": [
+        "Niger River Pirogue Painting",
+        "mande epic art technique",
+        "painted pirogue"
+      ],
+      "ref": "pack_14/SP14-209.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-209 niger river pirogue painting mande epic art technique painted pirogue sea monsters & water spirits sea monsters & water spirits mande epic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-219",
+      "name": "Mande Gala Indigo Cloth",
+      "styleAnchors": ["Mande Gala Indigo Cloth", "mande epic art technique", "indigo cloth"],
+      "ref": "pack_14/SP14-219.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-219 mande gala indigo cloth mande epic art technique indigo cloth sea monsters & water spirits sea monsters & water spirits mande epic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-253",
+      "name": "Fante Canoe Painting",
+      "styleAnchors": ["Fante Canoe Painting", "akan art technique", "painted canoe"],
+      "ref": "pack_14/SP14-253.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "akan art technique",
+      "tags": ["mythic-noir-curated-vault", "sea-monsters-and-water-spirits", "akan-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-253 fante canoe painting akan art technique painted canoe sea monsters & water spirits sea monsters & water spirits akan art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits akan-art-technique"
+    },
+    {
+      "id": "SP14-154",
+      "name": "Minoan Palace Fresco",
+      "styleAnchors": ["Minoan Palace Fresco", "greek mythic art technique", "plaster fresco"],
+      "ref": "pack_14/SP14-154.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-154 minoan palace fresco greek mythic art technique plaster fresco sea monsters & water spirits sea monsters & water spirits greek mythic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-160",
+      "name": "Hellenistic Pathos Marble",
+      "styleAnchors": [
+        "Hellenistic Pathos Marble",
+        "greek mythic art technique",
+        "twisting bodies"
+      ],
+      "ref": "pack_14/SP14-160.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-160 hellenistic pathos marble greek mythic art technique twisting bodies sea monsters & water spirits sea monsters & water spirits greek mythic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-161",
+      "name": "Classical Bronze Patina",
+      "styleAnchors": ["Classical Bronze Patina", "greek mythic art technique", "green patina"],
+      "ref": "pack_14/SP14-161.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-161 classical bronze patina greek mythic art technique green patina sea monsters & water spirits sea monsters & water spirits greek mythic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-307",
+      "name": "Floating Chinampa City",
+      "styleAnchors": [
+        "Floating Chinampa City",
+        "mexica fantastic art technique",
+        "floating gardens"
+      ],
+      "ref": "pack_14/SP14-307.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-307 floating chinampa city mexica fantastic art technique floating gardens sea monsters & water spirits sea monsters & water spirits mexica fantastic art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-229",
+      "name": "Adire Eleko Indigo",
+      "styleAnchors": ["Adire Eleko Indigo", "yoruba art technique", "indigo"],
+      "ref": "pack_14/SP14-229.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "yoruba art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "yoruba-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-229 adire eleko indigo yoruba art technique indigo sea monsters & water spirits sea monsters & water spirits yoruba art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits yoruba-art-technique"
+    },
+    {
+      "id": "SP14-245",
+      "name": "Sacred Grove Cement Sculpture",
+      "styleAnchors": ["Sacred Grove Cement Sculpture", "yoruba art technique", "forest sculpture"],
+      "ref": "pack_14/SP14-245.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "yoruba art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "yoruba-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-245 sacred grove cement sculpture yoruba art technique forest sculpture sea monsters & water spirits sea monsters & water spirits yoruba art technique pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits yoruba-art-technique"
+    },
+    {
+      "id": "SP14-377",
+      "name": "Carta Marina Monster Chart",
+      "styleAnchors": [
+        "Carta Marina Monster Chart",
+        "Nordic cartographic water-spirit art",
+        "sea chart"
+      ],
+      "ref": "pack_14/SP14-377.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Nordic cartographic water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "nordic-cartographic-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-377 carta marina monster chart nordic cartographic water-spirit art sea chart sea monsters & water spirits sea monsters & water spirits nordic cartographic water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits nordic-cartographic-water-spirit-art"
+    },
+    {
+      "id": "SP14-378",
+      "name": "Mami Wata Popular Painting",
+      "styleAnchors": [
+        "Mami Wata Popular Painting",
+        "West and Central African water-spirit art",
+        "water spirit"
+      ],
+      "ref": "pack_14/SP14-378.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "West and Central African water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "west-and-central-african-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-378 mami wata popular painting west and central african water-spirit art water spirit sea monsters & water spirits sea monsters & water spirits west and central african water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits west-and-central-african-water-spirit-art"
+    },
+    {
+      "id": "SP14-379",
+      "name": "Dragon Palace Undersea Screen",
+      "styleAnchors": [
+        "Dragon Palace Undersea Screen",
+        "Japanese water-spirit art",
+        "undersea palace"
+      ],
+      "ref": "pack_14/SP14-379.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Japanese water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "japanese-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-379 dragon palace undersea screen japanese water-spirit art undersea palace sea monsters & water spirits sea monsters & water spirits japanese water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits japanese-water-spirit-art"
+    },
+    {
+      "id": "SP14-380",
+      "name": "Rusalka Moonlit Lake Illustration",
+      "styleAnchors": [
+        "Rusalka Moonlit Lake Illustration",
+        "Slavic water-spirit art",
+        "water maidens"
+      ],
+      "ref": "pack_14/SP14-380.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Slavic water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "slavic-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-380 rusalka moonlit lake illustration slavic water-spirit art water maidens sea monsters & water spirits sea monsters & water spirits slavic water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits slavic-water-spirit-art"
+    },
+    {
+      "id": "SP14-381",
+      "name": "Mazu Sea Goddess Mural",
+      "styleAnchors": ["Mazu Sea Goddess Mural", "Chinese water-spirit art", "sea goddess"],
+      "ref": "pack_14/SP14-381.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Chinese water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "chinese-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-381 mazu sea goddess mural chinese water-spirit art sea goddess sea monsters & water spirits sea monsters & water spirits chinese water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits chinese-water-spirit-art"
+    },
+    {
+      "id": "SP14-382",
+      "name": "Tiamat Glazed Brick Serpent",
+      "styleAnchors": [
+        "Tiamat Glazed Brick Serpent",
+        "Babylonian water-spirit art",
+        "glazed brick"
+      ],
+      "ref": "pack_14/SP14-382.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Babylonian water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "babylonian-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-382 tiamat glazed brick serpent babylonian water-spirit art glazed brick sea monsters & water spirits sea monsters & water spirits babylonian water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits babylonian-water-spirit-art"
+    },
+    {
+      "id": "SP14-383",
+      "name": "Makara Temple Gateway Carving",
+      "styleAnchors": [
+        "Makara Temple Gateway Carving",
+        "Indian water-spirit art",
+        "makara creature"
+      ],
+      "ref": "pack_14/SP14-383.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Indian water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "indian-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-383 makara temple gateway carving indian water-spirit art makara creature sea monsters & water spirits sea monsters & water spirits indian water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits indian-water-spirit-art"
+    },
+    {
+      "id": "SP14-384",
+      "name": "Bakunawa Moon-Eater Painting",
+      "styleAnchors": ["Bakunawa Moon-Eater Painting", "Filipino water-spirit art", "sea serpent"],
+      "ref": "pack_14/SP14-384.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Filipino water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "filipino-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-384 bakunawa moon-eater painting filipino water-spirit art sea serpent sea monsters & water spirits sea monsters & water spirits filipino water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits filipino-water-spirit-art"
+    },
+    {
+      "id": "SP14-385",
+      "name": "Kelpie River Horse Etching",
+      "styleAnchors": ["Kelpie River Horse Etching", "Scottish water-spirit art", "water horse"],
+      "ref": "pack_14/SP14-385.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Scottish water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "scottish-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-385 kelpie river horse etching scottish water-spirit art water horse sea monsters & water spirits sea monsters & water spirits scottish water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits scottish-water-spirit-art"
+    },
+    {
+      "id": "SP14-386",
+      "name": "Amazon Iara River Painting",
+      "styleAnchors": [
+        "Amazon Iara River Painting",
+        "Amazonian Brazilian water-spirit art",
+        "river siren"
+      ],
+      "ref": "pack_14/SP14-386.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Amazonian Brazilian water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "amazonian-brazilian-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-386 amazon iara river painting amazonian brazilian water-spirit art river siren sea monsters & water spirits sea monsters & water spirits amazonian brazilian water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits amazonian-brazilian-water-spirit-art"
+    },
+    {
+      "id": "SP14-387",
+      "name": "Umibozu Storm Woodblock",
+      "styleAnchors": ["Umibozu Storm Woodblock", "Japanese water-spirit art", "sea monk spirit"],
+      "ref": "pack_14/SP14-387.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "sea-monsters-and-water-spirits",
+      "categoryName": "Sea Monsters & Water Spirits",
+      "domain": "Japanese water-spirit art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "sea-monsters-and-water-spirits",
+        "japanese-water-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-387 umibozu storm woodblock japanese water-spirit art sea monk spirit sea monsters & water spirits sea monsters & water spirits japanese water-spirit art pack_14 mythic noir curated vault sea-monsters-and-water-spirits mythic-noir-curated-vault sea-monsters-and-water-spirits japanese-water-spirit-art"
+    },
+    {
+      "id": "SP14-156",
+      "name": "Corinthian Animal Frieze",
+      "styleAnchors": ["Corinthian Animal Frieze", "greek mythic art technique", "animal frieze"],
+      "ref": "pack_14/SP14-156.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-156 corinthian animal frieze greek mythic art technique animal frieze beasts, guardians & chimeras beasts, guardians & chimeras greek mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-189",
+      "name": "Urnes Serpent Carving",
+      "styleAnchors": ["Urnes Serpent Carving", "norse mythic art technique", "slender beasts"],
+      "ref": "pack_14/SP14-189.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-189 urnes serpent carving norse mythic art technique slender beasts beasts, guardians & chimeras beasts, guardians & chimeras norse mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-193",
+      "name": "Oseberg Gripping Beast",
+      "styleAnchors": ["Oseberg Gripping Beast", "norse mythic art technique", "gripping beasts"],
+      "ref": "pack_14/SP14-193.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-193 oseberg gripping beast norse mythic art technique gripping beasts beasts, guardians & chimeras beasts, guardians & chimeras norse mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-196",
+      "name": "Carved Sledge Post Beast",
+      "styleAnchors": ["Carved Sledge Post Beast", "norse mythic art technique", "beast-head post"],
+      "ref": "pack_14/SP14-196.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-196 carved sledge post beast norse mythic art technique beast-head post beasts, guardians & chimeras beasts, guardians & chimeras norse mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-210",
+      "name": "Ci Wara Antelope Carving",
+      "styleAnchors": [
+        "Ci Wara Antelope Carving",
+        "mande epic art technique",
+        "antelope headdress"
+      ],
+      "ref": "pack_14/SP14-210.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-210 ci wara antelope carving mande epic art technique antelope headdress beasts, guardians & chimeras beasts, guardians & chimeras mande epic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-277",
+      "name": "Monumental Sphinx Sculpture",
+      "styleAnchors": ["Monumental Sphinx Sculpture", "egyptian mythic art technique", "sphinx"],
+      "ref": "pack_14/SP14-277.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "egyptian mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "egyptian-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-277 monumental sphinx sculpture egyptian mythic art technique sphinx beasts, guardians & chimeras beasts, guardians & chimeras egyptian mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras egyptian-mythic-art-technique"
+    },
+    {
+      "id": "SP14-304",
+      "name": "Turquoise Mosaic Starfield",
+      "styleAnchors": [
+        "Turquoise Mosaic Starfield",
+        "mexica fantastic art technique",
+        "turquoise tesserae"
+      ],
+      "ref": "pack_14/SP14-304.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-304 turquoise mosaic starfield mexica fantastic art technique turquoise tesserae beasts, guardians & chimeras beasts, guardians & chimeras mexica fantastic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-318",
+      "name": "Serpent Head Temple Stair",
+      "styleAnchors": [
+        "Serpent Head Temple Stair",
+        "mexica fantastic art technique",
+        "serpent heads"
+      ],
+      "ref": "pack_14/SP14-318.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-318 serpent head temple stair mexica fantastic art technique serpent heads beasts, guardians & chimeras beasts, guardians & chimeras mexica fantastic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-290",
+      "name": "Stucco Mask Facade",
+      "styleAnchors": ["Stucco Mask Facade", "maya art technique", "stucco mask"],
+      "ref": "pack_14/SP14-290.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "maya art technique",
+      "tags": ["mythic-noir-curated-vault", "beasts-guardians-and-chimeras", "maya-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-290 stucco mask facade maya art technique stucco mask beasts, guardians & chimeras beasts, guardians & chimeras maya art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras maya-art-technique"
+    },
+    {
+      "id": "SP14-176",
+      "name": "Netsuke Carving",
+      "styleAnchors": ["Netsuke Carving", "japanese mythic art technique", "tiny carving"],
+      "ref": "pack_14/SP14-176.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-176 netsuke carving japanese mythic art technique tiny carving beasts, guardians & chimeras beasts, guardians & chimeras japanese mythic art technique pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-388",
+      "name": "Qilin Silk Rank Badge",
+      "styleAnchors": ["Qilin Silk Rank Badge", "Chinese beast and guardian art", "qilin beast"],
+      "ref": "pack_14/SP14-388.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Chinese beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "chinese-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-388 qilin silk rank badge chinese beast and guardian art qilin beast beasts, guardians & chimeras beasts, guardians & chimeras chinese beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras chinese-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-389",
+      "name": "Dancheong Eave Guardians",
+      "styleAnchors": [
+        "Dancheong Eave Guardians",
+        "Korean beast and guardian art",
+        "haetae guardian"
+      ],
+      "ref": "pack_14/SP14-389.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Korean beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "korean-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-389 dancheong eave guardians korean beast and guardian art haetae guardian beasts, guardians & chimeras beasts, guardians & chimeras korean beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras korean-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-390",
+      "name": "Simurgh Manuscript Painting",
+      "styleAnchors": [
+        "Simurgh Manuscript Painting",
+        "Persian beast and guardian art",
+        "great healing bird"
+      ],
+      "ref": "pack_14/SP14-390.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Persian beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "persian-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-390 simurgh manuscript painting persian beast and guardian art great healing bird beasts, guardians & chimeras beasts, guardians & chimeras persian beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras persian-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-391",
+      "name": "Lamassu Gate Relief",
+      "styleAnchors": [
+        "Lamassu Gate Relief",
+        "Assyrian beast and guardian art",
+        "winged bull guardian"
+      ],
+      "ref": "pack_14/SP14-391.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Assyrian beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "assyrian-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-391 lamassu gate relief assyrian beast and guardian art winged bull guardian beasts, guardians & chimeras beasts, guardians & chimeras assyrian beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras assyrian-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-392",
+      "name": "Yali Temple Pillar",
+      "styleAnchors": [
+        "Yali Temple Pillar",
+        "South Indian beast and guardian art",
+        "rearing leonine beast"
+      ],
+      "ref": "pack_14/SP14-392.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "South Indian beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "south-indian-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-392 yali temple pillar south indian beast and guardian art rearing leonine beast beasts, guardians & chimeras beasts, guardians & chimeras south indian beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras south-indian-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-393",
+      "name": "Izba Window Sirin Carving",
+      "styleAnchors": [
+        "Izba Window Sirin Carving",
+        "Russian folk beast and guardian art",
+        "carved window frame"
+      ],
+      "ref": "pack_14/SP14-393.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Russian folk beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "russian-folk-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-393 izba window sirin carving russian folk beast and guardian art carved window frame beasts, guardians & chimeras beasts, guardians & chimeras russian folk beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras russian-folk-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-394",
+      "name": "Scythian Animal-Style Gold",
+      "styleAnchors": [
+        "Scythian Animal-Style Gold",
+        "Scythian steppe beast and guardian art",
+        "curled stag"
+      ],
+      "ref": "pack_14/SP14-394.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Scythian steppe beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "scythian-steppe-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-394 scythian animal-style gold scythian steppe beast and guardian art curled stag beasts, guardians & chimeras beasts, guardians & chimeras scythian steppe beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras scythian-steppe-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-395",
+      "name": "Caucasian Dragon Carpet",
+      "styleAnchors": [
+        "Caucasian Dragon Carpet",
+        "Armenian and Caucasian beast and guardian art",
+        "lion beast"
+      ],
+      "ref": "pack_14/SP14-395.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Armenian and Caucasian beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "armenian-and-caucasian-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-395 caucasian dragon carpet armenian and caucasian beast and guardian art lion beast beasts, guardians & chimeras beasts, guardians & chimeras armenian and caucasian beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras armenian-and-caucasian-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-396",
+      "name": "Edo Court Leopard Bronze",
+      "styleAnchors": [
+        "Edo Court Leopard Bronze",
+        "Edo Benin beast and guardian art",
+        "spotted brass leopard"
+      ],
+      "ref": "pack_14/SP14-396.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Edo Benin beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "edo-benin-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-396 edo court leopard bronze edo benin beast and guardian art spotted brass leopard beasts, guardians & chimeras beasts, guardians & chimeras edo benin beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras edo-benin-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-397",
+      "name": "Etruscan Bronze Chimera",
+      "styleAnchors": [
+        "Etruscan Bronze Chimera",
+        "Etruscan beast and guardian art",
+        "three-headed beast"
+      ],
+      "ref": "pack_14/SP14-397.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Etruscan beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "etruscan-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-397 etruscan bronze chimera etruscan beast and guardian art three-headed beast beasts, guardians & chimeras beasts, guardians & chimeras etruscan beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras etruscan-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-398",
+      "name": "Pictish Symbol Stone Beast",
+      "styleAnchors": [
+        "Pictish Symbol Stone Beast",
+        "Pictish beast and guardian art",
+        "long-snouted beast"
+      ],
+      "ref": "pack_14/SP14-398.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Pictish beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "pictish-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-398 pictish symbol stone beast pictish beast and guardian art long-snouted beast beasts, guardians & chimeras beasts, guardians & chimeras pictish beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras pictish-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-399",
+      "name": "Mughal Composite Beast Painting",
+      "styleAnchors": [
+        "Mughal Composite Beast Painting",
+        "Mughal and Deccani beast and guardian art",
+        "composite animal"
+      ],
+      "ref": "pack_14/SP14-399.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Mughal and Deccani beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "mughal-and-deccani-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-399 mughal composite beast painting mughal and deccani beast and guardian art composite animal beasts, guardians & chimeras beasts, guardians & chimeras mughal and deccani beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras mughal-and-deccani-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-400",
+      "name": "Snow Lion Thangka Banner",
+      "styleAnchors": ["Snow Lion Thangka Banner", "Tibetan beast and guardian art", "white lion"],
+      "ref": "pack_14/SP14-400.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "beasts-guardians-and-chimeras",
+      "categoryName": "Beasts, Guardians & Chimeras",
+      "domain": "Tibetan beast and guardian art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "beasts-guardians-and-chimeras",
+        "tibetan-beast-and-guardian-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-400 snow lion thangka banner tibetan beast and guardian art white lion beasts, guardians & chimeras beasts, guardians & chimeras tibetan beast and guardian art pack_14 mythic noir curated vault beasts-guardians-and-chimeras mythic-noir-curated-vault beasts-guardians-and-chimeras tibetan-beast-and-guardian-art"
+    },
+    {
+      "id": "SP14-142",
+      "name": "Hellenic Epic Noir",
+      "ref": "pack_14/SP14-142.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-142 hellenic epic noir heroes & epics heroes & epics pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics"
+    },
+    {
+      "id": "SP14-145",
+      "name": "Mande Epic & Griot",
+      "ref": "pack_14/SP14-145.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-145 mande epic & griot heroes & epics heroes & epics pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics"
+    },
+    {
+      "id": "SP14-186",
+      "name": "Musha-e Warrior Print",
+      "styleAnchors": [
+        "Musha-e Warrior Print",
+        "japanese mythic art technique",
+        "warrior triptych"
+      ],
+      "ref": "pack_14/SP14-186.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "japanese mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "japanese-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-186 musha-e warrior print japanese mythic art technique warrior triptych heroes & epics heroes & epics japanese mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-195",
+      "name": "Gotland Picture Stone",
+      "styleAnchors": ["Gotland Picture Stone", "norse mythic art technique", "keyhole stone"],
+      "ref": "pack_14/SP14-195.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "norse mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "norse-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-195 gotland picture stone norse mythic art technique keyhole stone heroes & epics heroes & epics norse mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-199",
+      "name": "Nordic Romantic Saga Oil",
+      "styleAnchors": ["Nordic Romantic Saga Oil", "norse mythic art technique", "fjord landscape"],
+      "ref": "pack_14/SP14-199.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "norse mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "norse-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-199 nordic romantic saga oil norse mythic art technique fjord landscape heroes & epics heroes & epics norse mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-151",
+      "name": "Attic Red-Figure Vase",
+      "styleAnchors": ["Attic Red-Figure Vase", "greek mythic art technique", "orange figures"],
+      "ref": "pack_14/SP14-151.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "greek mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "greek-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-151 attic red-figure vase greek mythic art technique orange figures heroes & epics heroes & epics greek mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-152",
+      "name": "Attic Black-Figure Vase",
+      "styleAnchors": [
+        "Attic Black-Figure Vase",
+        "greek mythic art technique",
+        "black silhouettes"
+      ],
+      "ref": "pack_14/SP14-152.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "greek mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "greek-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-152 attic black-figure vase greek mythic art technique black silhouettes heroes & epics heroes & epics greek mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-215",
+      "name": "Griot Firelight Story Painting",
+      "styleAnchors": ["Griot Firelight Story Painting", "mande epic art technique", "firelight"],
+      "ref": "pack_14/SP14-215.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "mande epic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "mande-epic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-215 griot firelight story painting mande epic art technique firelight heroes & epics heroes & epics mande epic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-224",
+      "name": "Contemporary Sahel Graphic Novel",
+      "styleAnchors": [
+        "Contemporary Sahel Graphic Novel",
+        "mande epic art technique",
+        "graphic novel"
+      ],
+      "ref": "pack_14/SP14-224.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "mande epic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "mande-epic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-224 contemporary sahel graphic novel mande epic art technique graphic novel heroes & epics heroes & epics mande epic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-309",
+      "name": "Eagle Warrior Solar Armor",
+      "styleAnchors": [
+        "Eagle Warrior Solar Armor",
+        "mexica fantastic art technique",
+        "eagle armor"
+      ],
+      "ref": "pack_14/SP14-309.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "mexica fantastic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "mexica-fantastic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-309 eagle warrior solar armor mexica fantastic art technique eagle armor heroes & epics heroes & epics mexica fantastic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-313",
+      "name": "Muralist Cosmic Epic",
+      "styleAnchors": [
+        "Muralist Cosmic Epic",
+        "mexica fantastic art technique",
+        "monumental mural"
+      ],
+      "ref": "pack_14/SP14-313.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "mexica fantastic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "mexica-fantastic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-313 muralist cosmic epic mexica fantastic art technique monumental mural heroes & epics heroes & epics mexica fantastic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-285",
+      "name": "Bonampak Mural",
+      "styleAnchors": ["Bonampak Mural", "maya art technique", "vivid mural"],
+      "ref": "pack_14/SP14-285.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "maya art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "maya-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-285 bonampak mural maya art technique vivid mural heroes & epics heroes & epics maya art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics maya-art-technique"
+    },
+    {
+      "id": "SP14-301",
+      "name": "Ballcourt Marker Relief",
+      "styleAnchors": ["Ballcourt Marker Relief", "maya art technique", "ballcourt marker"],
+      "ref": "pack_14/SP14-301.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "maya art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "maya-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-301 ballcourt marker relief maya art technique ballcourt marker heroes & epics heroes & epics maya art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics maya-art-technique"
+    },
+    {
+      "id": "SP14-174",
+      "name": "Kamishibai Story Card",
+      "styleAnchors": [
+        "Kamishibai Story Card",
+        "japanese mythic art technique",
+        "paper theater card"
+      ],
+      "ref": "pack_14/SP14-174.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "japanese mythic art technique",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "japanese-mythic-art-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-174 kamishibai story card japanese mythic art technique paper theater card heroes & epics heroes & epics japanese mythic art technique pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-401",
+      "name": "Qajar Coffeehouse Epic Canvas",
+      "styleAnchors": [
+        "Qajar Coffeehouse Epic Canvas",
+        "Persian epic hero art",
+        "champion in tiger skin"
+      ],
+      "ref": "pack_14/SP14-401.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Persian epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "persian-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-401 qajar coffeehouse epic canvas persian epic hero art champion in tiger skin heroes & epics heroes & epics persian epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics persian-epic-hero-art"
+    },
+    {
+      "id": "SP14-402",
+      "name": "Pattachitra Epic Scroll",
+      "styleAnchors": [
+        "Pattachitra Epic Scroll",
+        "Odia epic hero art",
+        "almond-eyed profile heroes"
+      ],
+      "ref": "pack_14/SP14-402.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Odia epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "odia-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-402 pattachitra epic scroll odia epic hero art almond-eyed profile heroes heroes & epics heroes & epics odia epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics odia-epic-hero-art"
+    },
+    {
+      "id": "SP14-403",
+      "name": "Kyrgyz Epic Felt Hanging",
+      "styleAnchors": ["Kyrgyz Epic Felt Hanging", "Kyrgyz epic hero art", "felt riders"],
+      "ref": "pack_14/SP14-403.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Kyrgyz epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "kyrgyz-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-403 kyrgyz epic felt hanging kyrgyz epic hero art felt riders heroes & epics heroes & epics kyrgyz epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics kyrgyz-epic-hero-art"
+    },
+    {
+      "id": "SP14-404",
+      "name": "Sicilian Cart Paladin Panel",
+      "styleAnchors": ["Sicilian Cart Paladin Panel", "Sicilian epic hero art", "armored paladins"],
+      "ref": "pack_14/SP14-404.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Sicilian epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "sicilian-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-404 sicilian cart paladin panel sicilian epic hero art armored paladins heroes & epics heroes & epics sicilian epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics sicilian-epic-hero-art"
+    },
+    {
+      "id": "SP14-405",
+      "name": "Ethiopian Legend Strip Painting",
+      "styleAnchors": [
+        "Ethiopian Legend Strip Painting",
+        "Ethiopian epic hero art",
+        "story panels in rows"
+      ],
+      "ref": "pack_14/SP14-405.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Ethiopian epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "ethiopian-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-405 ethiopian legend strip painting ethiopian epic hero art story panels in rows heroes & epics heroes & epics ethiopian epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics ethiopian-epic-hero-art"
+    },
+    {
+      "id": "SP14-406",
+      "name": "Nianhua Door Warrior Print",
+      "styleAnchors": [
+        "Nianhua Door Warrior Print",
+        "Chinese epic hero art",
+        "paired armored generals"
+      ],
+      "ref": "pack_14/SP14-406.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Chinese epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "chinese-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-406 nianhua door warrior print chinese epic hero art paired armored generals heroes & epics heroes & epics chinese epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics chinese-epic-hero-art"
+    },
+    {
+      "id": "SP14-407",
+      "name": "Filipino Komiks Epic Hero",
+      "styleAnchors": ["Filipino Komiks Epic Hero", "Filipino epic hero art", "island epic hero"],
+      "ref": "pack_14/SP14-407.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Filipino epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "filipino-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-407 filipino komiks epic hero filipino epic hero art island epic hero heroes & epics heroes & epics filipino epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics filipino-epic-hero-art"
+    },
+    {
+      "id": "SP14-408",
+      "name": "Mongolian Zurag Panorama",
+      "styleAnchors": ["Mongolian Zurag Panorama", "Mongolian epic hero art", "steppe panorama"],
+      "ref": "pack_14/SP14-408.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "heroes-and-epics",
+      "categoryName": "Heroes & Epics",
+      "domain": "Mongolian epic hero art",
+      "tags": ["mythic-noir-curated-vault", "heroes-and-epics", "mongolian-epic-hero-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-408 mongolian zurag panorama mongolian epic hero art steppe panorama heroes & epics heroes & epics mongolian epic hero art pack_14 mythic noir curated vault heroes-and-epics mythic-noir-curated-vault heroes-and-epics mongolian-epic-hero-art"
+    },
+    {
+      "id": "SP14-144",
+      "name": "Norse Saga Noir",
+      "ref": "pack_14/SP14-144.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "tags": ["mythic-noir-curated-vault", "creation-world-trees-and-cosmos"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-144 norse saga noir creation, world trees & cosmos creation, world trees & cosmos pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos"
+    },
+    {
+      "id": "SP14-149",
+      "name": "Maya Mythic Noir",
+      "ref": "pack_14/SP14-149.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "tags": ["mythic-noir-curated-vault", "creation-world-trees-and-cosmos"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-149 maya mythic noir creation, world trees & cosmos creation, world trees & cosmos pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos"
+    },
+    {
+      "id": "SP14-303",
+      "name": "Codex Cosmos Screenfold",
+      "styleAnchors": [
+        "Codex Cosmos Screenfold",
+        "mexica fantastic art technique",
+        "codex outlines"
+      ],
+      "ref": "pack_14/SP14-303.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-303 codex cosmos screenfold mexica fantastic art technique codex outlines creation, world trees & cosmos creation, world trees & cosmos mexica fantastic art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-291",
+      "name": "Maya Screenfold Codex",
+      "styleAnchors": ["Maya Screenfold Codex", "maya art technique", "screenfold"],
+      "ref": "pack_14/SP14-291.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "maya art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "maya-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-291 maya screenfold codex maya art technique screenfold creation, world trees & cosmos creation, world trees & cosmos maya art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos maya-art-technique"
+    },
+    {
+      "id": "SP14-275",
+      "name": "Egyptian Blue Mural",
+      "styleAnchors": ["Egyptian Blue Mural", "egyptian mythic art technique", "Egyptian blue"],
+      "ref": "pack_14/SP14-275.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "egyptian mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "egyptian-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-275 egyptian blue mural egyptian mythic art technique egyptian blue creation, world trees & cosmos creation, world trees & cosmos egyptian mythic art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos egyptian-mythic-art-technique"
+    },
+    {
+      "id": "SP14-208",
+      "name": "Bogolanfini Mudcloth Pattern",
+      "styleAnchors": ["Bogolanfini Mudcloth Pattern", "mande epic art technique", "mudcloth"],
+      "ref": "pack_14/SP14-208.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-208 bogolanfini mudcloth pattern mande epic art technique mudcloth creation, world trees & cosmos creation, world trees & cosmos mande epic art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-235",
+      "name": "Osogbo School Painting",
+      "styleAnchors": ["Osogbo School Painting", "yoruba art technique", "dense decoration"],
+      "ref": "pack_14/SP14-235.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "yoruba art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "yoruba-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-235 osogbo school painting yoruba art technique dense decoration creation, world trees & cosmos creation, world trees & cosmos yoruba art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos yoruba-art-technique"
+    },
+    {
+      "id": "SP14-157",
+      "name": "Cycladic Marble Minimalism",
+      "styleAnchors": ["Cycladic Marble Minimalism", "greek mythic art technique", "white marble"],
+      "ref": "pack_14/SP14-157.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "greek mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "greek-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-157 cycladic marble minimalism greek mythic art technique white marble creation, world trees & cosmos creation, world trees & cosmos greek mythic art technique pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos greek-mythic-art-technique"
+    },
+    {
+      "id": "SP14-409",
+      "name": "Kalamkari Cosmic Textile",
+      "styleAnchors": ["Kalamkari Cosmic Textile", "Telugu cosmological art", "pen-drawn line"],
+      "ref": "pack_14/SP14-409.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Telugu cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "telugu-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-409 kalamkari cosmic textile telugu cosmological art pen-drawn line creation, world trees & cosmos creation, world trees & cosmos telugu cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos telugu-cosmological-art"
+    },
+    {
+      "id": "SP14-410",
+      "name": "Dunhuang Celestial Cave Mural",
+      "styleAnchors": [
+        "Dunhuang Celestial Cave Mural",
+        "Chinese cosmological art",
+        "flying celestials"
+      ],
+      "ref": "pack_14/SP14-410.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Chinese cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "chinese-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-410 dunhuang celestial cave mural chinese cosmological art flying celestials creation, world trees & cosmos creation, world trees & cosmos chinese cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos chinese-cosmological-art"
+    },
+    {
+      "id": "SP14-411",
+      "name": "Nihonga Mineral Creation",
+      "styleAnchors": ["Nihonga Mineral Creation", "Japanese cosmological art", "mineral pigment"],
+      "ref": "pack_14/SP14-411.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Japanese cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "japanese-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-411 nihonga mineral creation japanese cosmological art mineral pigment creation, world trees & cosmos creation, world trees & cosmos japanese cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos japanese-cosmological-art"
+    },
+    {
+      "id": "SP14-412",
+      "name": "Ryijy Rug Kalevala Weave",
+      "styleAnchors": ["Ryijy Rug Kalevala Weave", "Finnish cosmological art", "long wool pile"],
+      "ref": "pack_14/SP14-412.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Finnish cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "finnish-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-412 ryijy rug kalevala weave finnish cosmological art long wool pile creation, world trees & cosmos creation, world trees & cosmos finnish cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos finnish-cosmological-art"
+    },
+    {
+      "id": "SP14-413",
+      "name": "Dogon Granary Door",
+      "styleAnchors": ["Dogon Granary Door", "Dogon cosmological art", "rows of ancestors"],
+      "ref": "pack_14/SP14-413.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Dogon cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "dogon-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-413 dogon granary door dogon cosmological art rows of ancestors creation, world trees & cosmos creation, world trees & cosmos dogon cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos dogon-cosmological-art"
+    },
+    {
+      "id": "SP14-414",
+      "name": "Straw Sodas Cosmos Mobile",
+      "styleAnchors": [
+        "Straw Sodas Cosmos Mobile",
+        "Lithuanian cosmological art",
+        "straw polyhedra"
+      ],
+      "ref": "pack_14/SP14-414.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Lithuanian cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "lithuanian-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-414 straw sodas cosmos mobile lithuanian cosmological art straw polyhedra creation, world trees & cosmos creation, world trees & cosmos lithuanian cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos lithuanian-cosmological-art"
+    },
+    {
+      "id": "SP14-415",
+      "name": "Jain Cosmic Man Diagram",
+      "styleAnchors": ["Jain Cosmic Man Diagram", "Jain cosmological art", "cosmic human figure"],
+      "ref": "pack_14/SP14-415.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Jain cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "jain-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-415 jain cosmic man diagram jain cosmological art cosmic human figure creation, world trees & cosmos creation, world trees & cosmos jain cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos jain-cosmological-art"
+    },
+    {
+      "id": "SP14-416",
+      "name": "Matyó World Tree Embroidery",
+      "styleAnchors": ["Matyó World Tree Embroidery", "Hungarian cosmological art", "tree of life"],
+      "ref": "pack_14/SP14-416.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Hungarian cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "hungarian-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-416 matyó world tree embroidery hungarian cosmological art tree of life creation, world trees & cosmos creation, world trees & cosmos hungarian cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos hungarian-cosmological-art"
+    },
+    {
+      "id": "SP14-417",
+      "name": "Kamasan Astrological Calendar",
+      "styleAnchors": [
+        "Kamasan Astrological Calendar",
+        "Balinese cosmological art",
+        "calendar grid"
+      ],
+      "ref": "pack_14/SP14-417.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Balinese cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "balinese-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-417 kamasan astrological calendar balinese cosmological art calendar grid creation, world trees & cosmos creation, world trees & cosmos balinese cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos balinese-cosmological-art"
+    },
+    {
+      "id": "SP14-418",
+      "name": "Ten Longevity Screen",
+      "styleAnchors": ["Ten Longevity Screen", "Korean cosmological art", "long-life symbols"],
+      "ref": "pack_14/SP14-418.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Korean cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "korean-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-418 ten longevity screen korean cosmological art long-life symbols creation, world trees & cosmos creation, world trees & cosmos korean cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos korean-cosmological-art"
+    },
+    {
+      "id": "SP14-419",
+      "name": "Andean Retablo Cosmos",
+      "styleAnchors": ["Andean Retablo Cosmos", "Peruvian cosmological art", "painted box"],
+      "ref": "pack_14/SP14-419.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Peruvian cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "peruvian-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-419 andean retablo cosmos peruvian cosmological art painted box creation, world trees & cosmos creation, world trees & cosmos peruvian cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos peruvian-cosmological-art"
+    },
+    {
+      "id": "SP14-420",
+      "name": "Pysanka World Egg",
+      "styleAnchors": ["Pysanka World Egg", "Ukrainian cosmological art", "wax-resist lines"],
+      "ref": "pack_14/SP14-420.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Ukrainian cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "ukrainian-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-420 pysanka world egg ukrainian cosmological art wax-resist lines creation, world trees & cosmos creation, world trees & cosmos ukrainian cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos ukrainian-cosmological-art"
+    },
+    {
+      "id": "SP14-421",
+      "name": "Arctic Stonecut Print",
+      "styleAnchors": ["Arctic Stonecut Print", "Inuit cosmological art", "bold flat shapes"],
+      "ref": "pack_14/SP14-421.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "creation-world-trees-and-cosmos",
+      "categoryName": "Creation, World Trees & Cosmos",
+      "domain": "Inuit cosmological art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "creation-world-trees-and-cosmos",
+        "inuit-cosmological-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-421 arctic stonecut print inuit cosmological art bold flat shapes creation, world trees & cosmos creation, world trees & cosmos inuit cosmological art pack_14 mythic noir curated vault creation-world-trees-and-cosmos mythic-noir-curated-vault creation-world-trees-and-cosmos inuit-cosmological-art"
+    },
+    {
+      "id": "SP14-310",
+      "name": "Obsidian Mirror Dreamscape",
+      "styleAnchors": [
+        "Obsidian Mirror Dreamscape",
+        "mexica fantastic art technique",
+        "obsidian mirror"
+      ],
+      "ref": "pack_14/SP14-310.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-310 obsidian mirror dreamscape mexica fantastic art technique obsidian mirror witches, oracles & shamans witches, oracles & shamans mexica fantastic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-211",
+      "name": "Donso Hunter Tunic",
+      "styleAnchors": ["Donso Hunter Tunic", "mande epic art technique", "hunter tunic"],
+      "ref": "pack_14/SP14-211.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-211 donso hunter tunic mande epic art technique hunter tunic witches, oracles & shamans witches, oracles & shamans mande epic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-217",
+      "name": "Mande Smith Ironwork",
+      "styleAnchors": ["Mande Smith Ironwork", "mande epic art technique", "forged iron"],
+      "ref": "pack_14/SP14-217.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "mande epic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mande-epic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-217 mande smith ironwork mande epic art technique forged iron witches, oracles & shamans witches, oracles & shamans mande epic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mande-epic-art-technique"
+    },
+    {
+      "id": "SP14-198",
+      "name": "Oseberg Tapestry Fragment",
+      "styleAnchors": [
+        "Oseberg Tapestry Fragment",
+        "norse mythic art technique",
+        "narrow tapestry"
+      ],
+      "ref": "pack_14/SP14-198.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "norse mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "norse-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-198 oseberg tapestry fragment norse mythic art technique narrow tapestry witches, oracles & shamans witches, oracles & shamans norse mythic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans norse-mythic-art-technique"
+    },
+    {
+      "id": "SP14-321",
+      "name": "Plumed Dance Regalia Photograph",
+      "styleAnchors": [
+        "Plumed Dance Regalia Photograph",
+        "mexica fantastic art technique",
+        "feather headdress"
+      ],
+      "ref": "pack_14/SP14-321.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "mexica fantastic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mexica-fantastic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-321 plumed dance regalia photograph mexica fantastic art technique feather headdress witches, oracles & shamans witches, oracles & shamans mexica fantastic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mexica-fantastic-art-technique"
+    },
+    {
+      "id": "SP14-179",
+      "name": "Shin-hanga Night Print",
+      "styleAnchors": ["Shin-hanga Night Print", "japanese mythic art technique", "woodblock"],
+      "ref": "pack_14/SP14-179.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "japanese mythic art technique",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "japanese-mythic-art-technique"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-179 shin-hanga night print japanese mythic art technique woodblock witches, oracles & shamans witches, oracles & shamans japanese mythic art technique pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans japanese-mythic-art-technique"
+    },
+    {
+      "id": "SP14-422",
+      "name": "Falname Omen Painting",
+      "styleAnchors": ["Falname Omen Painting", "Ottoman magic and divination art", "omen page"],
+      "ref": "pack_14/SP14-422.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Ottoman magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "ottoman-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-422 falname omen painting ottoman magic and divination art omen page witches, oracles & shamans witches, oracles & shamans ottoman magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans ottoman-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-423",
+      "name": "Tenebrist Sorceress Oil",
+      "styleAnchors": [
+        "Tenebrist Sorceress Oil",
+        "Baroque European magic and divination art",
+        "single candle"
+      ],
+      "ref": "pack_14/SP14-423.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Baroque European magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "baroque-european-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-423 tenebrist sorceress oil baroque european magic and divination art single candle witches, oracles & shamans witches, oracles & shamans baroque european magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans baroque-european-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-424",
+      "name": "Nuo Exorcism Mask Theater",
+      "styleAnchors": [
+        "Nuo Exorcism Mask Theater",
+        "Chinese magic and divination art",
+        "carved wood masks"
+      ],
+      "ref": "pack_14/SP14-424.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Chinese magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "chinese-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-424 nuo exorcism mask theater chinese magic and divination art carved wood masks witches, oracles & shamans witches, oracles & shamans chinese magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans chinese-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-425",
+      "name": "Sanni Healing Masks",
+      "styleAnchors": [
+        "Sanni Healing Masks",
+        "Sri Lankan magic and divination art",
+        "illness spirit masks"
+      ],
+      "ref": "pack_14/SP14-425.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Sri Lankan magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "sri-lankan-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-425 sanni healing masks sri lankan magic and divination art illness spirit masks witches, oracles & shamans witches, oracles & shamans sri lankan magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans sri-lankan-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-426",
+      "name": "Ethiopian Protective Scroll",
+      "styleAnchors": [
+        "Ethiopian Protective Scroll",
+        "Ethiopian magic and divination art",
+        "staring eyes"
+      ],
+      "ref": "pack_14/SP14-426.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Ethiopian magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "ethiopian-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-426 ethiopian protective scroll ethiopian magic and divination art staring eyes witches, oracles & shamans witches, oracles & shamans ethiopian magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans ethiopian-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-427",
+      "name": "Hex Sign Barn Painting",
+      "styleAnchors": [
+        "Hex Sign Barn Painting",
+        "Pennsylvania German magic and divination art",
+        "compass stars"
+      ],
+      "ref": "pack_14/SP14-427.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Pennsylvania German magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "pennsylvania-german-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-427 hex sign barn painting pennsylvania german magic and divination art compass stars witches, oracles & shamans witches, oracles & shamans pennsylvania german magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans pennsylvania-german-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-428",
+      "name": "Stage Illusionist Poster",
+      "styleAnchors": [
+        "Stage Illusionist Poster",
+        "Edwardian stage-magic magic and divination art",
+        "stage magician"
+      ],
+      "ref": "pack_14/SP14-428.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Edwardian stage-magic magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "edwardian-stage-magic-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-428 stage illusionist poster edwardian stage-magic magic and divination art stage magician witches, oracles & shamans witches, oracles & shamans edwardian stage-magic magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans edwardian-stage-magic-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-429",
+      "name": "Ghana Hand-Painted Witch Poster",
+      "styleAnchors": [
+        "Ghana Hand-Painted Witch Poster",
+        "Ghanaian magic and divination art",
+        "flour-sack canvas"
+      ],
+      "ref": "pack_14/SP14-429.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Ghanaian magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "ghanaian-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-429 ghana hand-painted witch poster ghanaian magic and divination art flour-sack canvas witches, oracles & shamans witches, oracles & shamans ghanaian magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans ghanaian-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-430",
+      "name": "Iwami Kagura Serpent Dance",
+      "styleAnchors": [
+        "Iwami Kagura Serpent Dance",
+        "Japanese magic and divination art",
+        "giant paper serpents"
+      ],
+      "ref": "pack_14/SP14-430.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Japanese magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "japanese-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-430 iwami kagura serpent dance japanese magic and divination art giant paper serpents witches, oracles & shamans witches, oracles & shamans japanese magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans japanese-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-431",
+      "name": "Lamashtu Exorcism Plaque",
+      "styleAnchors": [
+        "Lamashtu Exorcism Plaque",
+        "Mesopotamian magic and divination art",
+        "bronze plaque"
+      ],
+      "ref": "pack_14/SP14-431.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Mesopotamian magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mesopotamian-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-431 lamashtu exorcism plaque mesopotamian magic and divination art bronze plaque witches, oracles & shamans witches, oracles & shamans mesopotamian magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mesopotamian-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-432",
+      "name": "Mithila Wall Painting Seer",
+      "styleAnchors": [
+        "Mithila Wall Painting Seer",
+        "Maithil magic and divination art",
+        "double-line outlines"
+      ],
+      "ref": "pack_14/SP14-432.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Maithil magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "maithil-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-432 mithila wall painting seer maithil magic and divination art double-line outlines witches, oracles & shamans witches, oracles & shamans maithil magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans maithil-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-433",
+      "name": "Egyptian Faience Amulet Magic",
+      "styleAnchors": [
+        "Egyptian Faience Amulet Magic",
+        "Egyptian magic and divination art",
+        "turquoise faience"
+      ],
+      "ref": "pack_14/SP14-433.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Egyptian magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "egyptian-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-433 egyptian faience amulet magic egyptian magic and divination art turquoise faience witches, oracles & shamans witches, oracles & shamans egyptian magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans egyptian-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-434",
+      "name": "Book of Wonders Astrologer",
+      "styleAnchors": [
+        "Book of Wonders Astrologer",
+        "Arabic magic and divination art",
+        "astrologer"
+      ],
+      "ref": "pack_14/SP14-434.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Arabic magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "arabic-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-434 book of wonders astrologer arabic magic and divination art astrologer witches, oracles & shamans witches, oracles & shamans arabic magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans arabic-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-435",
+      "name": "Curandera Tin Ex-Voto",
+      "styleAnchors": ["Curandera Tin Ex-Voto", "Mexican magic and divination art", "painted tin"],
+      "ref": "pack_14/SP14-435.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Mexican magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "mexican-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-435 curandera tin ex-voto mexican magic and divination art painted tin witches, oracles & shamans witches, oracles & shamans mexican magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans mexican-magic-and-divination-art"
+    },
+    {
+      "id": "SP14-436",
+      "name": "Mola Spirit Panel",
+      "styleAnchors": ["Mola Spirit Panel", "Guna magic and divination art", "reverse appliqué"],
+      "ref": "pack_14/SP14-436.yaml",
+      "packId": "pack_14",
+      "packName": "Mythic Noir Curated Vault",
+      "categoryId": "witches-oracles-and-shamans",
+      "categoryName": "Witches, Oracles & Shamans",
+      "domain": "Guna magic and divination art",
+      "tags": [
+        "mythic-noir-curated-vault",
+        "witches-oracles-and-shamans",
+        "guna-magic-and-divination-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp14-436 mola spirit panel guna magic and divination art reverse appliqué witches, oracles & shamans witches, oracles & shamans guna magic and divination art pack_14 mythic noir curated vault witches-oracles-and-shamans mythic-noir-curated-vault witches-oracles-and-shamans guna-magic-and-divination-art"
     }
   ],
-  "totalPresetCount": 9
+  "totalPresetCount": 197
 }

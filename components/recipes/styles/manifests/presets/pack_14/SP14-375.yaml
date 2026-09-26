@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-375
+packId: pack_14
+name: Heavenly Cave Dawn Painting
+styleAnchors:
+  - Heavenly Cave Dawn Painting
+  - Japanese sky-god art
+  - sun from a cave
+displayName: Heavenly Cave Dawn Painting
+category: Sky, Sun & Storm Gods
+domain: Japanese sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - heavenly-cave
+  - japanese
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Heavenly cave dawn painting: Japanese painting of the sun goddess drawn out of a rock cave by dancing gods, a mirror, jewels and roosters announcing the dawn.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a radiant dawn emerging from a sacred rock cave.
+  color_and_tone: Radiant gold, vermilion and deep blue, kept consistent across the whole image.
+  lighting_and_shadow: Sunlight bursting from a cave, kept consistent across the whole image.
+  texture_and_material: Mineral color, gold leaf and ink, kept consistent across the whole image.
+  camera_and_composition: Cave mouth with gathered deities, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with joyous radiant renewal.
+  rendering_and_quality: Luminous reverent painting, kept consistent across the whole image.
+  creative_brief: "Heavenly cave dawn painting: Japanese painting of the sun goddess drawn out of a rock cave by dancing gods, a mirror, jewels and roosters announcing the dawn. Carry it through sun from a cave, mirror, roosters, dancing deities. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sun from a cave; mirror; roosters; dancing deities
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - heavenly-cave
+    - japanese
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Japanese sky-god art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-358
+packId: pack_14
+name: Inferno Circle Engraving
+styleAnchors:
+  - Inferno Circle Engraving
+  - Italian literary underworld art
+  - infernal circles
+displayName: Inferno Circle Engraving
+category: Underworlds & Realms of the Dead
+domain: Italian literary underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - inferno
+  - italian-literary
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Inferno circle engraving: nineteenth-century wood engravings of the circles of the literary inferno, vast dark chasms, dramatic light and crowds of souls in sweeping tone.'
+  subject_treatment: Preserve the requested identity, count, pose and action; engrave the subject in vast dark chasms with dramatic light and sweeping crowds.
+  color_and_tone: Black and silver engraved tones, kept consistent across the whole image.
+  lighting_and_shadow: Dramatic beams of light into darkness, kept consistent across the whole image.
+  texture_and_material: Fine wood-engraved tone and hatching, kept consistent across the whole image.
+  camera_and_composition: Vast descending landscape with two small travelers, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with epic sublime dread.
+  rendering_and_quality: Virtuoso engraved tone, kept consistent across the whole image.
+  creative_brief: "Inferno circle engraving: nineteenth-century wood engravings of the circles of the literary inferno, vast dark chasms, dramatic light and crowds of souls in sweeping tone. Carry it through infernal circles, chasms, dramatic light, crowds of souls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: infernal circles; chasms; dramatic light; crowds of souls
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - inferno
+    - italian-literary
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Italian literary underworld art

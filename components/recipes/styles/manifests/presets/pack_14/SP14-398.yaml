@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-398
+packId: pack_14
+name: Pictish Symbol Stone Beast
+styleAnchors:
+  - Pictish Symbol Stone Beast
+  - Pictish beast and guardian art
+  - long-snouted beast
+displayName: Pictish Symbol Stone Beast
+category: Beasts, Guardians & Chimeras
+domain: Pictish beast and guardian art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - pictish-beast
+  - pictish
+  - mythic-beasts
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pictish symbol stone beast: carved standing stones of early Scotland with the mysterious long-snouted Pictish beast, crescents, V-rods, serpents and interlace cut into grey rock.'
+  subject_treatment: Preserve the requested identity, count, pose and action; incise the subject into a weathered standing stone with mysterious symbols around it.
+  color_and_tone: Lichen grey, moss green, peat brown and cold sky white.
+  lighting_and_shadow: Overcast highland light with low raking sun showing incised lines.
+  texture_and_material: Incised stone lines, lichen patches, rain weathering and moss.
+  camera_and_composition: Tall standing stone in a moorland, carved figure centered on its face.
+  atmosphere_and_mood: Keep the requested mood with ancient enigmatic stillness.
+  rendering_and_quality: Clean incised line carving with smooth spiral curves.
+  creative_brief: "Pictish symbol stone beast: carved standing stones of early Scotland with the mysterious long-snouted Pictish beast, crescents, V-rods, serpents and interlace cut into grey rock. Carry it through long-snouted beast, crescent and rod, incised standing stone, moorland. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: long-snouted beast; crescent and rod; incised standing stone; moorland
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: Beasts, Guardians & Chimeras
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - pictish-beast
+    - pictish
+    - mythic-beasts
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Pictish beast and guardian art

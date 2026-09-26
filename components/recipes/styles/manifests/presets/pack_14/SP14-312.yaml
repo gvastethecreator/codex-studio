@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-312
+packId: pack_14
+name: Papel Picado Spirit Festival
+styleAnchors:
+  - Papel Picado Spirit Festival
+  - mexica fantastic art technique
+  - cut paper banners
+displayName: Papel Picado Spirit Festival
+category: 'Underworlds & Realms of the Dead'
+domain: mexica fantastic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - papel-picado
+  - underworlds-realms-of-the-dead
+  - portable-style-study
+visualDna:
+  aesthetic: 'Papel picado spirit festival: layers of cut tissue-paper banners strung across the night sky, glowing with light and forming spirit shapes of skeletons, birds and flowers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; shape the subject from layered glowing cut tissue-paper banners.
+  color_and_tone: Bright pink, orange, purple and green tissue, kept consistent across the whole image.
+  lighting_and_shadow: Backlight glowing through cut paper, kept consistent across the whole image.
+  texture_and_material: Cut tissue paper, strings and fluttering edges, kept consistent across the whole image.
+  camera_and_composition: Banners filling the sky above a street, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with festive spirited remembrance.
+  rendering_and_quality: Crisp cut-paper glow, kept consistent across the whole image.
+  creative_brief: "Papel picado spirit festival: layers of cut tissue-paper banners strung across the night sky, glowing with light and forming spirit shapes of skeletons, birds and flowers. Carry it through cut paper banners, backlight, skeletons and flowers, strings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cut paper banners; backlight; skeletons and flowers; strings
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - tourist-souvenir kitsch
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: 'Underworlds & Realms of the Dead'
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - papel-picado
+    - underworlds-realms-of-the-dead
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mexica fantastic art technique

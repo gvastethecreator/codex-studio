@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-322
+packId: pack_14
+name: Korean Dokkaebi Minhwa
+styleAnchors:
+  - Korean Dokkaebi Minhwa
+  - Korean night-spirit art
+  - dokkaebi goblin
+displayName: Korean Dokkaebi Minhwa
+category: Demons, Yokai & Night Spirits
+domain: Korean night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - dokkaebi
+  - korean
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Korean dokkaebi minhwa: Joseon folk painting with bold outlines and cheerful flat color, showing horned goblins with magic clubs, tigers and magpies in playful mischief.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a bold cheerful folk-painting goblin scene with flat color.
+  color_and_tone: Cheerful red, green, yellow and indigo on mulberry paper.
+  lighting_and_shadow: Flat color without shadows, kept consistent across the whole image.
+  texture_and_material: Hanji paper, bold ink outlines and flat washes.
+  camera_and_composition: Lively folk composition with a big goblin, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mischievous folk delight.
+  rendering_and_quality: Bold charming folk painting, kept consistent across the whole image.
+  creative_brief: "Korean dokkaebi minhwa: Joseon folk painting with bold outlines and cheerful flat color, showing horned goblins with magic clubs, tigers and magpies in playful mischief. Carry it through dokkaebi goblin, magic club, flat color, folk painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dokkaebi goblin; magic club; flat color; folk painting
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - dokkaebi
+    - korean
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Korean night-spirit art

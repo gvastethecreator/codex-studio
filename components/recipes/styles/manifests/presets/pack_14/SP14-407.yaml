@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-407
+packId: pack_14
+name: Filipino Komiks Epic Hero
+styleAnchors:
+  - Filipino Komiks Epic Hero
+  - Filipino epic hero art
+  - island epic hero
+displayName: Filipino Komiks Epic Hero
+category: Heroes & Epics
+domain: Filipino epic hero art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - filipino-komiks
+  - filipino
+  - mythic-heroes
+  - portable-style-study
+visualDna:
+  aesthetic: 'Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw the subject as a heroic figure in lush komiks ink with dramatic pose and jungle backdrop.
+  color_and_tone: Newsprint cream, flat halftone color, jungle green and sunset orange.
+  lighting_and_shadow: Dramatic ink shadow and strong sunlight contrast, kept consistent across the whole image.
+  texture_and_material: Brush ink linework, crosshatching, halftone color and pulp paper.
+  camera_and_composition: Dynamic heroic angle in a panel with jungle or sea behind.
+  atmosphere_and_mood: Keep the requested mood with vivid adventurous heroism.
+  rendering_and_quality: Masterful ink illustration with dynamic anatomy, kept consistent across the whole image.
+  creative_brief: "Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color. Carry it through island epic hero, lush ink lines, jungle backdrop, newsprint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: island epic hero; lush ink lines; jungle backdrop; newsprint color
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: Heroes & Epics
+  tags:
+    - curation-v2
+    - heroes-epics
+    - filipino-komiks
+    - filipino
+    - mythic-heroes
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Filipino epic hero art

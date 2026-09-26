@@ -65,12 +65,12 @@ attributes:
       - SP14-042
       - SP14-043
       - SP14-044
-category: Japanese Mythology — Kami & Yokai
+category: 'Demons, Yokai & Night Spirits'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - japanese-kami-yokai-noir
+  - demons-yokai-night-spirits
 visualDna:
   aesthetic:
     Japanese kami-and-yokai myth-noir uses ink-dark contours, folded-paper planes and restrained lacquer accents.
@@ -115,8 +115,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: japanese-kami-yokai-noir
-  categoryName: Japanese Mythology — Kami & Yokai
+  categoryId: demons-yokai-night-spirits
+  categoryName: 'Demons, Yokai & Night Spirits'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

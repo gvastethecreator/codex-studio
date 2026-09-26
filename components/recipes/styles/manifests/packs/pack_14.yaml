@@ -7,49 +7,425 @@ description:
   Distinct cultures and mythologies expressed through recognizable motifs, material choices and
   illustrated design, adapted to the requested subject.
 categories:
-  - id: hellenic-epic-noir
-    name: Greek Mythology — Epic Noir
-    presetRefs:
-      - pack_14/SP14-142.yaml
-  - id: japanese-kami-yokai-noir
-    name: Japanese Mythology — Kami & Yokai
+  - id: demons-yokai-night-spirits
+    name: Demons, Yokai & Night Spirits
     presetRefs:
       - pack_14/SP14-143.yaml
-  - id: norse-saga-noir
-    name: Norse Mythology — Sagas
-    presetRefs:
-      - pack_14/SP14-144.yaml
-  - id: mande-epic-griot
-    name: Mande Oral Epic
-    presetRefs:
-      - pack_14/SP14-145.yaml
-  - id: yoruba-orisha
-    name: Yoruba Mythology — Orisha
-    presetRefs:
-      - pack_14/SP14-146.yaml
-  - id: akan-anansi-trickster
-    name: Akan Mythology — Anansi
+      - pack_14/SP14-172.yaml
+      - pack_14/SP14-184.yaml
+      - pack_14/SP14-177.yaml
+      - pack_14/SP14-322.yaml
+      - pack_14/SP14-323.yaml
+      - pack_14/SP14-324.yaml
+      - pack_14/SP14-325.yaml
+      - pack_14/SP14-326.yaml
+      - pack_14/SP14-327.yaml
+      - pack_14/SP14-328.yaml
+      - pack_14/SP14-329.yaml
+      - pack_14/SP14-330.yaml
+      - pack_14/SP14-331.yaml
+      - pack_14/SP14-332.yaml
+      - pack_14/SP14-333.yaml
+      - pack_14/SP14-334.yaml
+      - pack_14/SP14-335.yaml
+      - pack_14/SP14-336.yaml
+      - pack_14/SP14-337.yaml
+      - pack_14/SP14-338.yaml
+      - pack_14/SP14-339.yaml
+  - id: tricksters-shape-shifters
+    name: Tricksters & Shape-Shifters
     presetRefs:
       - pack_14/SP14-147.yaml
-  - id: egyptian-mythology
-    name: Egyptian Mythology
+      - pack_14/SP14-259.yaml
+      - pack_14/SP14-251.yaml
+      - pack_14/SP14-173.yaml
+      - pack_14/SP14-213.yaml
+      - pack_14/SP14-232.yaml
+      - pack_14/SP14-200.yaml
+      - pack_14/SP14-311.yaml
+      - pack_14/SP14-340.yaml
+      - pack_14/SP14-341.yaml
+      - pack_14/SP14-342.yaml
+      - pack_14/SP14-343.yaml
+      - pack_14/SP14-344.yaml
+      - pack_14/SP14-345.yaml
+      - pack_14/SP14-346.yaml
+      - pack_14/SP14-347.yaml
+      - pack_14/SP14-348.yaml
+      - pack_14/SP14-349.yaml
+      - pack_14/SP14-350.yaml
+      - pack_14/SP14-351.yaml
+      - pack_14/SP14-352.yaml
+      - pack_14/SP14-353.yaml
+  - id: underworlds-realms-of-the-dead
+    name: Underworlds & Realms of the Dead
     presetRefs:
       - pack_14/SP14-148.yaml
-  - id: maya-mythology
-    name: Maya Mythology
+      - pack_14/SP14-267.yaml
+      - pack_14/SP14-283.yaml
+      - pack_14/SP14-308.yaml
+      - pack_14/SP14-312.yaml
+      - pack_14/SP14-319.yaml
+      - pack_14/SP14-284.yaml
+      - pack_14/SP14-300.yaml
+      - pack_14/SP14-153.yaml
+      - pack_14/SP14-233.yaml
+      - pack_14/SP14-354.yaml
+      - pack_14/SP14-355.yaml
+      - pack_14/SP14-356.yaml
+      - pack_14/SP14-357.yaml
+      - pack_14/SP14-358.yaml
+      - pack_14/SP14-359.yaml
+      - pack_14/SP14-360.yaml
+      - pack_14/SP14-361.yaml
+      - pack_14/SP14-362.yaml
+      - pack_14/SP14-363.yaml
+      - pack_14/SP14-364.yaml
+      - pack_14/SP14-365.yaml
+  - id: sky-sun-storm-gods
+    name: Sky, Sun & Storm Gods
     presetRefs:
-      - pack_14/SP14-149.yaml
-  - id: mexica-mythology
-    name: Mexica Mythology
-    presetRefs:
+      - pack_14/SP14-146.yaml
       - pack_14/SP14-150.yaml
+      - pack_14/SP14-170.yaml
+      - pack_14/SP14-182.yaml
+      - pack_14/SP14-201.yaml
+      - pack_14/SP14-240.yaml
+      - pack_14/SP14-306.yaml
+      - pack_14/SP14-314.yaml
+      - pack_14/SP14-167.yaml
+      - pack_14/SP14-269.yaml
+      - pack_14/SP14-292.yaml
+      - pack_14/SP14-366.yaml
+      - pack_14/SP14-367.yaml
+      - pack_14/SP14-368.yaml
+      - pack_14/SP14-369.yaml
+      - pack_14/SP14-370.yaml
+      - pack_14/SP14-371.yaml
+      - pack_14/SP14-372.yaml
+      - pack_14/SP14-373.yaml
+      - pack_14/SP14-374.yaml
+      - pack_14/SP14-375.yaml
+      - pack_14/SP14-376.yaml
+  - id: sea-monsters-water-spirits
+    name: Sea Monsters & Water Spirits
+    presetRefs:
+      - pack_14/SP14-188.yaml
+      - pack_14/SP14-203.yaml
+      - pack_14/SP14-209.yaml
+      - pack_14/SP14-219.yaml
+      - pack_14/SP14-253.yaml
+      - pack_14/SP14-154.yaml
+      - pack_14/SP14-160.yaml
+      - pack_14/SP14-161.yaml
+      - pack_14/SP14-307.yaml
+      - pack_14/SP14-229.yaml
+      - pack_14/SP14-245.yaml
+      - pack_14/SP14-377.yaml
+      - pack_14/SP14-378.yaml
+      - pack_14/SP14-379.yaml
+      - pack_14/SP14-380.yaml
+      - pack_14/SP14-381.yaml
+      - pack_14/SP14-382.yaml
+      - pack_14/SP14-383.yaml
+      - pack_14/SP14-384.yaml
+      - pack_14/SP14-385.yaml
+      - pack_14/SP14-386.yaml
+      - pack_14/SP14-387.yaml
+  - id: beasts-guardians-chimeras
+    name: Beasts, Guardians & Chimeras
+    presetRefs:
+      - pack_14/SP14-156.yaml
+      - pack_14/SP14-189.yaml
+      - pack_14/SP14-193.yaml
+      - pack_14/SP14-196.yaml
+      - pack_14/SP14-210.yaml
+      - pack_14/SP14-277.yaml
+      - pack_14/SP14-304.yaml
+      - pack_14/SP14-318.yaml
+      - pack_14/SP14-290.yaml
+      - pack_14/SP14-176.yaml
+      - pack_14/SP14-388.yaml
+      - pack_14/SP14-389.yaml
+      - pack_14/SP14-390.yaml
+      - pack_14/SP14-391.yaml
+      - pack_14/SP14-392.yaml
+      - pack_14/SP14-393.yaml
+      - pack_14/SP14-394.yaml
+      - pack_14/SP14-395.yaml
+      - pack_14/SP14-396.yaml
+      - pack_14/SP14-397.yaml
+      - pack_14/SP14-398.yaml
+      - pack_14/SP14-399.yaml
+      - pack_14/SP14-400.yaml
+  - id: heroes-epics
+    name: Heroes & Epics
+    presetRefs:
+      - pack_14/SP14-142.yaml
+      - pack_14/SP14-145.yaml
+      - pack_14/SP14-186.yaml
+      - pack_14/SP14-195.yaml
+      - pack_14/SP14-199.yaml
+      - pack_14/SP14-151.yaml
+      - pack_14/SP14-152.yaml
+      - pack_14/SP14-215.yaml
+      - pack_14/SP14-224.yaml
+      - pack_14/SP14-309.yaml
+      - pack_14/SP14-313.yaml
+      - pack_14/SP14-285.yaml
+      - pack_14/SP14-301.yaml
+      - pack_14/SP14-174.yaml
+      - pack_14/SP14-401.yaml
+      - pack_14/SP14-402.yaml
+      - pack_14/SP14-403.yaml
+      - pack_14/SP14-404.yaml
+      - pack_14/SP14-405.yaml
+      - pack_14/SP14-406.yaml
+      - pack_14/SP14-407.yaml
+      - pack_14/SP14-408.yaml
+  - id: creation-world-trees-cosmos
+    name: Creation, World Trees & Cosmos
+    presetRefs:
+      - pack_14/SP14-144.yaml
+      - pack_14/SP14-149.yaml
+      - pack_14/SP14-303.yaml
+      - pack_14/SP14-291.yaml
+      - pack_14/SP14-275.yaml
+      - pack_14/SP14-208.yaml
+      - pack_14/SP14-235.yaml
+      - pack_14/SP14-157.yaml
+      - pack_14/SP14-409.yaml
+      - pack_14/SP14-410.yaml
+      - pack_14/SP14-411.yaml
+      - pack_14/SP14-412.yaml
+      - pack_14/SP14-413.yaml
+      - pack_14/SP14-414.yaml
+      - pack_14/SP14-415.yaml
+      - pack_14/SP14-416.yaml
+      - pack_14/SP14-417.yaml
+      - pack_14/SP14-418.yaml
+      - pack_14/SP14-419.yaml
+      - pack_14/SP14-420.yaml
+      - pack_14/SP14-421.yaml
+  - id: witches-oracles-shamans
+    name: Witches, Oracles & Shamans
+    presetRefs:
+      - pack_14/SP14-310.yaml
+      - pack_14/SP14-211.yaml
+      - pack_14/SP14-217.yaml
+      - pack_14/SP14-198.yaml
+      - pack_14/SP14-321.yaml
+      - pack_14/SP14-179.yaml
+      - pack_14/SP14-422.yaml
+      - pack_14/SP14-423.yaml
+      - pack_14/SP14-424.yaml
+      - pack_14/SP14-425.yaml
+      - pack_14/SP14-426.yaml
+      - pack_14/SP14-427.yaml
+      - pack_14/SP14-428.yaml
+      - pack_14/SP14-429.yaml
+      - pack_14/SP14-430.yaml
+      - pack_14/SP14-431.yaml
+      - pack_14/SP14-432.yaml
+      - pack_14/SP14-433.yaml
+      - pack_14/SP14-434.yaml
+      - pack_14/SP14-435.yaml
+      - pack_14/SP14-436.yaml
 presetRefs:
-  - pack_14/SP14-142.yaml
   - pack_14/SP14-143.yaml
-  - pack_14/SP14-144.yaml
-  - pack_14/SP14-145.yaml
-  - pack_14/SP14-146.yaml
+  - pack_14/SP14-172.yaml
+  - pack_14/SP14-184.yaml
+  - pack_14/SP14-177.yaml
+  - pack_14/SP14-322.yaml
+  - pack_14/SP14-323.yaml
+  - pack_14/SP14-324.yaml
+  - pack_14/SP14-325.yaml
+  - pack_14/SP14-326.yaml
+  - pack_14/SP14-327.yaml
+  - pack_14/SP14-328.yaml
+  - pack_14/SP14-329.yaml
+  - pack_14/SP14-330.yaml
+  - pack_14/SP14-331.yaml
+  - pack_14/SP14-332.yaml
+  - pack_14/SP14-333.yaml
+  - pack_14/SP14-334.yaml
+  - pack_14/SP14-335.yaml
+  - pack_14/SP14-336.yaml
+  - pack_14/SP14-337.yaml
+  - pack_14/SP14-338.yaml
+  - pack_14/SP14-339.yaml
   - pack_14/SP14-147.yaml
+  - pack_14/SP14-259.yaml
+  - pack_14/SP14-251.yaml
+  - pack_14/SP14-173.yaml
+  - pack_14/SP14-213.yaml
+  - pack_14/SP14-232.yaml
+  - pack_14/SP14-200.yaml
+  - pack_14/SP14-311.yaml
+  - pack_14/SP14-340.yaml
+  - pack_14/SP14-341.yaml
+  - pack_14/SP14-342.yaml
+  - pack_14/SP14-343.yaml
+  - pack_14/SP14-344.yaml
+  - pack_14/SP14-345.yaml
+  - pack_14/SP14-346.yaml
+  - pack_14/SP14-347.yaml
+  - pack_14/SP14-348.yaml
+  - pack_14/SP14-349.yaml
+  - pack_14/SP14-350.yaml
+  - pack_14/SP14-351.yaml
+  - pack_14/SP14-352.yaml
+  - pack_14/SP14-353.yaml
   - pack_14/SP14-148.yaml
-  - pack_14/SP14-149.yaml
+  - pack_14/SP14-267.yaml
+  - pack_14/SP14-283.yaml
+  - pack_14/SP14-308.yaml
+  - pack_14/SP14-312.yaml
+  - pack_14/SP14-319.yaml
+  - pack_14/SP14-284.yaml
+  - pack_14/SP14-300.yaml
+  - pack_14/SP14-153.yaml
+  - pack_14/SP14-233.yaml
+  - pack_14/SP14-354.yaml
+  - pack_14/SP14-355.yaml
+  - pack_14/SP14-356.yaml
+  - pack_14/SP14-357.yaml
+  - pack_14/SP14-358.yaml
+  - pack_14/SP14-359.yaml
+  - pack_14/SP14-360.yaml
+  - pack_14/SP14-361.yaml
+  - pack_14/SP14-362.yaml
+  - pack_14/SP14-363.yaml
+  - pack_14/SP14-364.yaml
+  - pack_14/SP14-365.yaml
+  - pack_14/SP14-146.yaml
   - pack_14/SP14-150.yaml
+  - pack_14/SP14-170.yaml
+  - pack_14/SP14-182.yaml
+  - pack_14/SP14-201.yaml
+  - pack_14/SP14-240.yaml
+  - pack_14/SP14-306.yaml
+  - pack_14/SP14-314.yaml
+  - pack_14/SP14-167.yaml
+  - pack_14/SP14-269.yaml
+  - pack_14/SP14-292.yaml
+  - pack_14/SP14-366.yaml
+  - pack_14/SP14-367.yaml
+  - pack_14/SP14-368.yaml
+  - pack_14/SP14-369.yaml
+  - pack_14/SP14-370.yaml
+  - pack_14/SP14-371.yaml
+  - pack_14/SP14-372.yaml
+  - pack_14/SP14-373.yaml
+  - pack_14/SP14-374.yaml
+  - pack_14/SP14-375.yaml
+  - pack_14/SP14-376.yaml
+  - pack_14/SP14-188.yaml
+  - pack_14/SP14-203.yaml
+  - pack_14/SP14-209.yaml
+  - pack_14/SP14-219.yaml
+  - pack_14/SP14-253.yaml
+  - pack_14/SP14-154.yaml
+  - pack_14/SP14-160.yaml
+  - pack_14/SP14-161.yaml
+  - pack_14/SP14-307.yaml
+  - pack_14/SP14-229.yaml
+  - pack_14/SP14-245.yaml
+  - pack_14/SP14-377.yaml
+  - pack_14/SP14-378.yaml
+  - pack_14/SP14-379.yaml
+  - pack_14/SP14-380.yaml
+  - pack_14/SP14-381.yaml
+  - pack_14/SP14-382.yaml
+  - pack_14/SP14-383.yaml
+  - pack_14/SP14-384.yaml
+  - pack_14/SP14-385.yaml
+  - pack_14/SP14-386.yaml
+  - pack_14/SP14-387.yaml
+  - pack_14/SP14-156.yaml
+  - pack_14/SP14-189.yaml
+  - pack_14/SP14-193.yaml
+  - pack_14/SP14-196.yaml
+  - pack_14/SP14-210.yaml
+  - pack_14/SP14-277.yaml
+  - pack_14/SP14-304.yaml
+  - pack_14/SP14-318.yaml
+  - pack_14/SP14-290.yaml
+  - pack_14/SP14-176.yaml
+  - pack_14/SP14-388.yaml
+  - pack_14/SP14-389.yaml
+  - pack_14/SP14-390.yaml
+  - pack_14/SP14-391.yaml
+  - pack_14/SP14-392.yaml
+  - pack_14/SP14-393.yaml
+  - pack_14/SP14-394.yaml
+  - pack_14/SP14-395.yaml
+  - pack_14/SP14-396.yaml
+  - pack_14/SP14-397.yaml
+  - pack_14/SP14-398.yaml
+  - pack_14/SP14-399.yaml
+  - pack_14/SP14-400.yaml
+  - pack_14/SP14-142.yaml
+  - pack_14/SP14-145.yaml
+  - pack_14/SP14-186.yaml
+  - pack_14/SP14-195.yaml
+  - pack_14/SP14-199.yaml
+  - pack_14/SP14-151.yaml
+  - pack_14/SP14-152.yaml
+  - pack_14/SP14-215.yaml
+  - pack_14/SP14-224.yaml
+  - pack_14/SP14-309.yaml
+  - pack_14/SP14-313.yaml
+  - pack_14/SP14-285.yaml
+  - pack_14/SP14-301.yaml
+  - pack_14/SP14-174.yaml
+  - pack_14/SP14-401.yaml
+  - pack_14/SP14-402.yaml
+  - pack_14/SP14-403.yaml
+  - pack_14/SP14-404.yaml
+  - pack_14/SP14-405.yaml
+  - pack_14/SP14-406.yaml
+  - pack_14/SP14-407.yaml
+  - pack_14/SP14-408.yaml
+  - pack_14/SP14-144.yaml
+  - pack_14/SP14-149.yaml
+  - pack_14/SP14-303.yaml
+  - pack_14/SP14-291.yaml
+  - pack_14/SP14-275.yaml
+  - pack_14/SP14-208.yaml
+  - pack_14/SP14-235.yaml
+  - pack_14/SP14-157.yaml
+  - pack_14/SP14-409.yaml
+  - pack_14/SP14-410.yaml
+  - pack_14/SP14-411.yaml
+  - pack_14/SP14-412.yaml
+  - pack_14/SP14-413.yaml
+  - pack_14/SP14-414.yaml
+  - pack_14/SP14-415.yaml
+  - pack_14/SP14-416.yaml
+  - pack_14/SP14-417.yaml
+  - pack_14/SP14-418.yaml
+  - pack_14/SP14-419.yaml
+  - pack_14/SP14-420.yaml
+  - pack_14/SP14-421.yaml
+  - pack_14/SP14-310.yaml
+  - pack_14/SP14-211.yaml
+  - pack_14/SP14-217.yaml
+  - pack_14/SP14-198.yaml
+  - pack_14/SP14-321.yaml
+  - pack_14/SP14-179.yaml
+  - pack_14/SP14-422.yaml
+  - pack_14/SP14-423.yaml
+  - pack_14/SP14-424.yaml
+  - pack_14/SP14-425.yaml
+  - pack_14/SP14-426.yaml
+  - pack_14/SP14-427.yaml
+  - pack_14/SP14-428.yaml
+  - pack_14/SP14-429.yaml
+  - pack_14/SP14-430.yaml
+  - pack_14/SP14-431.yaml
+  - pack_14/SP14-432.yaml
+  - pack_14/SP14-433.yaml
+  - pack_14/SP14-434.yaml
+  - pack_14/SP14-435.yaml
+  - pack_14/SP14-436.yaml

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-229
+packId: pack_14
+name: Adire Eleko Indigo
+styleAnchors:
+  - Adire Eleko Indigo
+  - yoruba art technique
+  - indigo
+displayName: Adire Eleko Indigo
+category: 'Sea Monsters & Water Spirits'
+domain: yoruba art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - adire
+  - yoruba-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Adire eleko indigo: Yoruba indigo cloth with starch-resist designs hand-painted through the paste, showing birds, lizards, spoons and geometric panels.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in white starch-resist lines on deep indigo cloth.
+  color_and_tone: Deep indigo with pale blue and white, kept consistent across the whole image.
+  lighting_and_shadow: Soft light on dyed cloth, kept consistent across the whole image.
+  texture_and_material: Cotton, starch resist and indigo dye, kept consistent across the whole image.
+  camera_and_composition: Cloth divided into panels, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with calm cultural depth.
+  rendering_and_quality: Authentic resist-dyed texture, kept consistent across the whole image.
+  creative_brief: "Adire eleko indigo: Yoruba indigo cloth with starch-resist designs hand-painted through the paste, showing birds, lizards, spoons and geometric panels. Carry it through indigo, starch resist, panels, hand-painted motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: indigo; starch resist; panels; hand-painted motifs
+avoidRules:
+  - generic tribal pattern
+  - cultural stereotypes or caricature
+  - disrespectful depiction of Orisha
+  - readable text
+  - gore
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: 'Sea Monsters & Water Spirits'
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - adire
+    - yoruba-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: yoruba art technique

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-397
+packId: pack_14
+name: Etruscan Bronze Chimera
+styleAnchors:
+  - Etruscan Bronze Chimera
+  - Etruscan beast and guardian art
+  - three-headed beast
+displayName: Etruscan Bronze Chimera
+category: Beasts, Guardians & Chimeras
+domain: Etruscan beast and guardian art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - etruscan-chimera
+  - etruscan
+  - mythic-beasts
+  - portable-style-study
+visualDna:
+  aesthetic: 'Etruscan bronze chimera: ancient Italic cast bronze of the three-headed fire beast, lion body, goat head rising from its back and serpent tail, snarling with wounded tension.'
+  subject_treatment: Preserve the requested identity, count, pose and action; cast the subject as a snarling dark bronze creature with ancient green patina.
+  color_and_tone: Dark bronze, verdigris green, earth red and dusty ochre.
+  lighting_and_shadow: Museum spot and dusk light raking over tense cast musculature.
+  texture_and_material: Cast bronze, chased mane locks, green patina and pitted surface.
+  camera_and_composition: Low three-quarter view of the creature crouching, tension in every limb.
+  atmosphere_and_mood: Keep the requested mood with wounded defiant menace.
+  rendering_and_quality: Powerful sculptural bronze with crisp stylized mane, kept consistent across the whole image.
+  creative_brief: "Etruscan bronze chimera: ancient Italic cast bronze of the three-headed fire beast, lion body, goat head rising from its back and serpent tail, snarling with wounded tension. Carry it through three-headed beast, lion body, goat head, serpent tail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three-headed beast; lion body; goat head; serpent tail
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: Beasts, Guardians & Chimeras
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - etruscan-chimera
+    - etruscan
+    - mythic-beasts
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Etruscan beast and guardian art

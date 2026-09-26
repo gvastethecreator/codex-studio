@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-357
+packId: pack_14
+name: Inanna Descent Cylinder Seal
+styleAnchors:
+  - Inanna Descent Cylinder Seal
+  - Mesopotamian underworld art
+  - cylinder seal
+displayName: Inanna Descent Cylinder Seal
+category: Underworlds & Realms of the Dead
+domain: Mesopotamian underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - cylinder-seal
+  - mesopotamian
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Inanna descent cylinder seal: Mesopotamian cylinder seal impressions rolled into clay, repeating frieze scenes of the goddess passing through seven gates of the underworld.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as a repeating frieze rolled from a carved cylinder seal into clay.
+  color_and_tone: Clay brown with dark recesses, kept consistent across the whole image.
+  lighting_and_shadow: Raking light across rolled relief, kept consistent across the whole image.
+  texture_and_material: Rolled clay impression and carved stone seal, kept consistent across the whole image.
+  camera_and_composition: Long horizontal repeating frieze, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with ancient mythic descent.
+  rendering_and_quality: Crisp miniature relief, kept consistent across the whole image.
+  creative_brief: "Inanna descent cylinder seal: Mesopotamian cylinder seal impressions rolled into clay, repeating frieze scenes of the goddess passing through seven gates of the underworld. Carry it through cylinder seal, rolled clay, seven gates, frieze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cylinder seal; rolled clay; seven gates; frieze
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - cylinder-seal
+    - mesopotamian
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Mesopotamian underworld art

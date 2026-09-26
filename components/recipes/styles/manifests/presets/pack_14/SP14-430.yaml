@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-430
+packId: pack_14
+name: Iwami Kagura Serpent Dance
+styleAnchors:
+  - Iwami Kagura Serpent Dance
+  - Japanese magic and divination art
+  - giant paper serpents
+displayName: Iwami Kagura Serpent Dance
+category: Witches, Oracles & Shamans
+domain: Japanese magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - iwami-kagura
+  - japanese
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Iwami kagura serpent dance: Japanese shrine theater where a hero battles giant serpents made of paper and cloth that coil around the stage, with gold brocade costumes, masks and smoke.'
+  subject_treatment: Preserve the requested identity, count, pose and action; show the subject in shrine theater with brocade costume and coiling paper-cloth serpents.
+  color_and_tone: Gold brocade, serpent green, fire red, smoke white and black.
+  lighting_and_shadow: Stage lanterns and fireworks glow through smoke, kept consistent across the whole image.
+  texture_and_material: Gold brocade, paper-cloth serpent bodies, carved masks and smoke.
+  camera_and_composition: Wide stage view with serpents coiling around a central performer.
+  atmosphere_and_mood: Keep the requested mood with exuberant theatrical myth.
+  rendering_and_quality: Rich spectacular performance depiction, kept consistent across the whole image.
+  creative_brief: "Iwami kagura serpent dance: Japanese shrine theater where a hero battles giant serpents made of paper and cloth that coil around the stage, with gold brocade costumes, masks and smoke. Carry it through giant paper serpents, brocade hero, masks, stage smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant paper serpents; brocade hero; masks; stage smoke
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - iwami-kagura
+    - japanese
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Japanese magic and divination art

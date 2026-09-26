@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-318
+packId: pack_14
+name: Serpent Head Temple Stair
+styleAnchors:
+  - Serpent Head Temple Stair
+  - mexica fantastic art technique
+  - serpent heads
+displayName: Serpent Head Temple Stair
+category: 'Beasts, Guardians & Chimeras'
+domain: mexica fantastic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - serpent-stair
+  - beasts-guardians-chimeras
+  - portable-style-study
+visualDna:
+  aesthetic: 'Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject as colossal painted serpent heads guarding a temple stair.
+  color_and_tone: Painted stone red, blue, yellow and grey, kept consistent across the whole image.
+  lighting_and_shadow: Strong sun and deep shadows, kept consistent across the whole image.
+  texture_and_material: Carved stone, painted scales and weathering, kept consistent across the whole image.
+  camera_and_composition: Low view up the temple stair, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with guardian monumental menace.
+  rendering_and_quality: Bold monumental carving, kept consistent across the whole image.
+  creative_brief: "Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps. Carry it through serpent heads, temple stair, painted scales, fangs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: serpent heads; temple stair; painted scales; fangs
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - tourist-souvenir kitsch
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: 'Beasts, Guardians & Chimeras'
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - serpent-stair
+    - beasts-guardians-chimeras
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mexica fantastic art technique

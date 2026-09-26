@@ -51,12 +51,12 @@ attributes:
     derivedFrom:
       - SP14-030
       - SP14-031
-category: Maya Mythology
+category: 'Creation, World Trees & Cosmos'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - maya-mythology
+  - creation-world-trees-cosmos
 visualDna:
   aesthetic:
     Maya-inspired mythic illustration uses a folded-husk plane beside fine parallel incised lines as a localized
@@ -102,8 +102,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: maya-mythology
-  categoryName: Maya Mythology
+  categoryId: creation-world-trees-cosmos
+  categoryName: 'Creation, World Trees & Cosmos'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

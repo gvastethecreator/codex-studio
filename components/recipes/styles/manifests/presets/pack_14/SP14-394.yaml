@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-394
+packId: pack_14
+name: Scythian Animal-Style Gold
+styleAnchors:
+  - Scythian Animal-Style Gold
+  - Scythian steppe beast and guardian art
+  - curled stag
+displayName: Scythian Animal-Style Gold
+category: Beasts, Guardians & Chimeras
+domain: Scythian steppe beast and guardian art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - scythian-gold
+  - scythian-steppe
+  - mythic-beasts
+  - portable-style-study
+visualDna:
+  aesthetic: 'Scythian animal-style gold: steppe nomad gold plaques of stags with curled antlers, twisting griffins and felines turned back on themselves, beast bodies folded into tight ornamental loops.'
+  subject_treatment: Preserve the requested identity, count, pose and action; hammer the subject into a gold plaque, the body folded and twisted into a tight looping animal shape.
+  color_and_tone: Burnished gold, dark patina, garnet red and steppe grass tones.
+  lighting_and_shadow: Warm glint on raised gold forms against black velvet darkness.
+  texture_and_material: Repousse gold, granulation, inlaid stones and hammer marks.
+  camera_and_composition: Tight single-object composition with the creature twisted to fill its outline.
+  atmosphere_and_mood: Keep the requested mood with fierce nomadic grace.
+  rendering_and_quality: Sculptural goldsmith detail with bold simplified animal forms.
+  creative_brief: "Scythian animal-style gold: steppe nomad gold plaques of stags with curled antlers, twisting griffins and felines turned back on themselves, beast bodies folded into tight ornamental loops. Carry it through curled stag, twisting griffin, folded beast body, repousse gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curled stag; twisting griffin; folded beast body; repousse gold
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: Beasts, Guardians & Chimeras
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - scythian-gold
+    - scythian-steppe
+    - mythic-beasts
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Scythian steppe beast and guardian art

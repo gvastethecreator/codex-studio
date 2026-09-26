@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-363
+packId: pack_14
+name: Chinvat Bridge Miniature
+styleAnchors:
+  - Chinvat Bridge Miniature
+  - Persian underworld art
+  - bridge of judgment
+displayName: Chinvat Bridge Miniature
+category: Underworlds & Realms of the Dead
+domain: Persian underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - chinvat
+  - persian
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Chinvat bridge miniature: Persian miniature painting of the bridge of judgment over the abyss, widening for the righteous and narrowing to a blade, with guiding maidens and dogs.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject crossing a bridge over an abyss in jewel-toned miniature style.
+  color_and_tone: Lapis, gold, crimson and spring green, kept consistent across the whole image.
+  lighting_and_shadow: Radiant light from the far shore, kept consistent across the whole image.
+  texture_and_material: Fine pigment, gold leaf and patterned sky, kept consistent across the whole image.
+  camera_and_composition: Bridge spanning a deep chasm, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with luminous moral suspense.
+  rendering_and_quality: Exquisite miniature detail, kept consistent across the whole image.
+  creative_brief: "Chinvat bridge miniature: Persian miniature painting of the bridge of judgment over the abyss, widening for the righteous and narrowing to a blade, with guiding maidens and dogs. Carry it through bridge of judgment, abyss, guiding maiden, dogs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bridge of judgment; abyss; guiding maiden; dogs
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - chinvat
+    - persian
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Persian underworld art

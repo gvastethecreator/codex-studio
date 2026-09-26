@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-432
+packId: pack_14
+name: Mithila Wall Painting Seer
+styleAnchors:
+  - Mithila Wall Painting Seer
+  - Maithil magic and divination art
+  - double-line outlines
+displayName: Mithila Wall Painting Seer
+category: Witches, Oracles & Shamans
+domain: Maithil magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - mithila-seer
+  - maithil
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mithila wall painting seer: Bihar folk paintings with double-line outlines, filled with fine hatching, fish, suns, serpents and wide-eyed figures, every space dense with pattern.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject with double-line outlines and fine hatching among fish, suns and serpents.
+  color_and_tone: Turmeric yellow, vermilion, indigo, leaf green and black on cream.
+  lighting_and_shadow: Flat bright color with no cast shadow, kept consistent across the whole image.
+  texture_and_material: Natural pigment on handmade paper or mud wall, fine nib line and hatching.
+  camera_and_composition: Frontal composition with every space filled by pattern.
+  atmosphere_and_mood: Keep the requested mood with joyous dense enchantment.
+  rendering_and_quality: Crisp patterned folk painting, kept consistent across the whole image.
+  creative_brief: "Mithila wall painting seer: Bihar folk paintings with double-line outlines, filled with fine hatching, fish, suns, serpents and wide-eyed figures, every space dense with pattern. Carry it through double-line outlines, fine hatching, fish and suns, dense pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: double-line outlines; fine hatching; fish and suns; dense pattern
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - mithila-seer
+    - maithil
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Maithil magic and divination art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-433
+packId: pack_14
+name: Egyptian Faience Amulet Magic
+styleAnchors:
+  - Egyptian Faience Amulet Magic
+  - Egyptian magic and divination art
+  - turquoise faience
+displayName: Egyptian Faience Amulet Magic
+category: Witches, Oracles & Shamans
+domain: Egyptian magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - faience-amulet
+  - egyptian
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Egyptian faience amulet magic: glazed turquoise faience amulets of protective gods, eyes, dwarf guardians and scarabs, strung on cords or set on dark stone, luminous blue-green glaze.'
+  subject_treatment: Preserve the requested identity, count, pose and action; shape the subject as a small glazed turquoise faience amulet or scene of glowing protective charms.
+  color_and_tone: Turquoise glaze, lapis, gold, black and sand, kept consistent across the whole image.
+  lighting_and_shadow: Soft spot light making glaze glow and shimmer.
+  texture_and_material: Glazed faience, crackle, worn edges and polished beads.
+  camera_and_composition: Close macro still life of charms on dark stone or cloth.
+  atmosphere_and_mood: Keep the requested mood with mysterious protective glow.
+  rendering_and_quality: Precise macro still life with luminous glaze, kept consistent across the whole image.
+  creative_brief: "Egyptian faience amulet magic: glazed turquoise faience amulets of protective gods, eyes, dwarf guardians and scarabs, strung on cords or set on dark stone, luminous blue-green glaze. Carry it through turquoise faience, protective eyes, scarabs, dwarf guardian. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: turquoise faience; protective eyes; scarabs; dwarf guardian
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - faience-amulet
+    - egyptian
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Egyptian magic and divination art

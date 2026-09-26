@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-353
+packId: pack_14
+name: Ijapa Tortoise Market Mural
+styleAnchors:
+  - Ijapa Tortoise Market Mural
+  - Yoruba trickster art
+  - clever tortoise
+displayName: Ijapa Tortoise Market Mural
+category: Tricksters & Shape-Shifters
+domain: Yoruba trickster art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tricksters-shape-shifters
+  - ijapa
+  - yoruba
+  - mythic-tricksters
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ijapa tortoise market mural: Nigerian painted market and school murals of the clever tortoise from Yoruba folktales, bold flat color and lively crowds.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a bold flat-color mural of a folktale scene.
+  color_and_tone: Bright flat primaries and earth tones, kept consistent across the whole image.
+  lighting_and_shadow: Flat bright daylight, kept consistent across the whole image.
+  texture_and_material: Painted plaster wall and weathering, kept consistent across the whole image.
+  camera_and_composition: Wide mural with crowds, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cheeky folk wisdom.
+  rendering_and_quality: Bold lively mural painting, kept consistent across the whole image.
+  creative_brief: "Ijapa tortoise market mural: Nigerian painted market and school murals of the clever tortoise from Yoruba folktales, bold flat color and lively crowds. Carry it through clever tortoise, market mural, bold color, folktale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: clever tortoise; market mural; bold color; folktale
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: tricksters-shape-shifters
+  categoryName: Tricksters & Shape-Shifters
+  tags:
+    - curation-v2
+    - tricksters-shape-shifters
+    - ijapa
+    - yoruba
+    - mythic-tricksters
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Yoruba trickster art

@@ -129,7 +129,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A monster-research room is crammed with jars, maps and a baby griffin asleep in the paper tray while the members argue over its name. No readable text or logo.",
+        "A cluttered monster-research office run by adult scholars is crammed with jars, maps and a baby griffin asleep in the paper tray while the researchers argue over its name. No readable text or logo.",
         "A board-game society's room is buried under so many unfinished games that the president has to snorkel through the pieces to reach the table. No readable text or logo.",
         "In the astronomy society's cluttered room at midnight, members sleep on beanbags while their telescope slowly swings to follow a comet. No readable text or logo.",
       ],
@@ -171,7 +171,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Villagers sing in a stone chapel at midwinter, their breath rising into a glowing golden cloud above the pews. No readable text or logo.",
+        "Adult villagers in heavy wool coats sing in a stone chapel at midwinter, their breath rising into a glowing golden cloud above the pews. No readable text or logo.",
         "A crew of burly firefighters rehearses a lullaby in four-part harmony at the station, helmets resting on their laps. No readable text or logo.",
         "A lone singer stands in an empty cathedral singing to rows of candles, every flame bending toward her voice. No readable text or logo.",
       ],

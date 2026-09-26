@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-410
+packId: pack_14
+name: Dunhuang Celestial Cave Mural
+styleAnchors:
+  - Dunhuang Celestial Cave Mural
+  - Chinese cosmological art
+  - flying celestials
+displayName: Dunhuang Celestial Cave Mural
+category: Creation, World Trees & Cosmos
+domain: Chinese cosmological art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - dunhuang
+  - chinese
+  - mythic-cosmos
+  - portable-style-study
+visualDna:
+  aesthetic: 'Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a celestial being flying with long trailing scarves across a cave ceiling.
+  color_and_tone: Malachite green, lapis blue, oxidized dark red, earth ochre and plaster white.
+  lighting_and_shadow: Dim cave light with pigment glowing softly from the walls.
+  texture_and_material: Mineral pigment on plaster, flaking layers, oxidized skin tones and cracks.
+  camera_and_composition: Upward view across a cave ceiling with flowing figures circling a lotus center.
+  atmosphere_and_mood: Keep the requested mood with weightless heavenly grace.
+  rendering_and_quality: Flowing mural painting with long rhythmic ribbon lines.
+  creative_brief: "Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster. Carry it through flying celestials, trailing scarves, lotus ceiling, flaking plaster. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flying celestials; trailing scarves; lotus ceiling; flaking plaster
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: Creation, World Trees & Cosmos
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - dunhuang
+    - chinese
+    - mythic-cosmos
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese cosmological art

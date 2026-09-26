@@ -48,12 +48,12 @@ attributes:
     visualEvaluation: pending
     derivedFrom:
       - SP14-032
-category: Mexica Mythology
+category: 'Sky, Sun & Storm Gods'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - mexica-mythology
+  - sky-sun-storm-gods
 visualDna:
   aesthetic: >-
     Mexica-inspired mythic illustration uses compact silhouettes, stepped planes and strong dark-light tension.
@@ -98,8 +98,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: mexica-mythology
-  categoryName: Mexica Mythology
+  categoryId: sky-sun-storm-gods
+  categoryName: 'Sky, Sun & Storm Gods'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

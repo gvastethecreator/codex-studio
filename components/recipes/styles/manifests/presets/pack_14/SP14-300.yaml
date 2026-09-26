@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-300
+packId: pack_14
+name: Naj Tunich Cave Drawing
+styleAnchors:
+  - Naj Tunich Cave Drawing
+  - maya art technique
+  - cave drawing
+displayName: Naj Tunich Cave Drawing
+category: 'Underworlds & Realms of the Dead'
+domain: maya art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - cave-drawing
+  - underworlds-realms-of-the-dead
+  - portable-style-study
+visualDna:
+  aesthetic: 'Naj Tunich cave drawing: black charcoal-and-ink drawings on cave walls, fluid lines of ballplayers, musicians and gods in the deep darkness.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw the subject in fluid black line on a cave wall in darkness.
+  color_and_tone: Black line on pale limestone with torch warmth.
+  lighting_and_shadow: Torchlight in deep darkness, kept consistent across the whole image.
+  texture_and_material: Limestone wall, fluid black line and damp, kept consistent across the whole image.
+  camera_and_composition: Close cave wall view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with hushed sacred depth.
+  rendering_and_quality: Fluid confident line, kept consistent across the whole image.
+  creative_brief: "Naj Tunich cave drawing: black charcoal-and-ink drawings on cave walls, fluid lines of ballplayers, musicians and gods in the deep darkness. Carry it through cave drawing, black line, limestone, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cave drawing; black line; limestone; torchlight
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: 'Underworlds & Realms of the Dead'
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - cave-drawing
+    - underworlds-realms-of-the-dead
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maya art technique

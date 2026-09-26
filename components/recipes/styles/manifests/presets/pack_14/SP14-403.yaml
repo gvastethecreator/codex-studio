@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-403
+packId: pack_14
+name: Kyrgyz Epic Felt Hanging
+styleAnchors:
+  - Kyrgyz Epic Felt Hanging
+  - Kyrgyz epic hero art
+  - felt riders
+displayName: Kyrgyz Epic Felt Hanging
+category: Heroes & Epics
+domain: Kyrgyz epic hero art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - kyrgyz-felt
+  - kyrgyz
+  - mythic-heroes
+  - portable-style-study
+visualDna:
+  aesthetic: 'Kyrgyz epic felt hanging: nomad felt hangings with inlaid ram-horn spirals and appliqued riders, eagles and battle scenes from the great steppe epic, stitched in bold contrasting colors.'
+  subject_treatment: Preserve the requested identity, count, pose and action; build the subject from inlaid felt shapes with bold outlines of cord and ram-horn spirals around it.
+  color_and_tone: Madder red, indigo, saffron yellow, undyed cream and black.
+  lighting_and_shadow: Soft yurt light falling across thick felt with gentle raised edges.
+  texture_and_material: Pressed wool felt, inlaid shapes, twisted cord outlines and hand stitching.
+  camera_and_composition: Frontal hanging with a central scene inside spiral borders.
+  atmosphere_and_mood: Keep the requested mood with proud nomadic epic.
+  rendering_and_quality: Bold simplified felt forms with crisp contrast, kept consistent across the whole image.
+  creative_brief: "Kyrgyz epic felt hanging: nomad felt hangings with inlaid ram-horn spirals and appliqued riders, eagles and battle scenes from the great steppe epic, stitched in bold contrasting colors. Carry it through felt riders, ram-horn spirals, eagle, cord outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: felt riders; ram-horn spirals; eagle; cord outlines
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: Heroes & Epics
+  tags:
+    - curation-v2
+    - heroes-epics
+    - kyrgyz-felt
+    - kyrgyz
+    - mythic-heroes
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Kyrgyz epic hero art

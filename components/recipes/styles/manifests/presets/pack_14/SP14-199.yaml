@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-199
+packId: pack_14
+name: Nordic Romantic Saga Oil
+styleAnchors:
+  - Nordic Romantic Saga Oil
+  - norse mythic art technique
+  - fjord landscape
+displayName: Nordic Romantic Saga Oil
+category: 'Heroes & Epics'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - nordic-romantic
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nordic romantic saga oil: nineteenth-century Scandinavian romantic paintings of sagas, dramatic fjords, heroic figures and golden northern light.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a romantic heroic saga scene in a dramatic northern landscape.
+  color_and_tone: Golden northern light, deep fjord blues and green.
+  lighting_and_shadow: Dramatic sky light over landscape, kept consistent across the whole image.
+  texture_and_material: Rich oil paint, smooth skies and rugged rocks.
+  camera_and_composition: Wide heroic landscape composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with romantic heroic longing.
+  rendering_and_quality: Polished romantic oil, kept consistent across the whole image.
+  creative_brief: "Nordic romantic saga oil: nineteenth-century Scandinavian romantic paintings of sagas, dramatic fjords, heroic figures and golden northern light. Carry it through fjord landscape, heroic figures, golden light, romantic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fjord landscape; heroic figures; golden light; romantic
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - nordic-romantic
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

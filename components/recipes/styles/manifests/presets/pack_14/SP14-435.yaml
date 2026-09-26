@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-435
+packId: pack_14
+name: Curandera Tin Ex-Voto
+styleAnchors:
+  - Curandera Tin Ex-Voto
+  - Mexican magic and divination art
+  - painted tin
+displayName: Curandera Tin Ex-Voto
+category: Witches, Oracles & Shamans
+domain: Mexican magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - ex-voto
+  - mexican
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Curandera tin ex-voto: Mexican painted tin votive panels telling small miracle stories, a healer or saint appearing in a corner cloud, simple naive figures in flat color on dented tin.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a small naive miracle scene on dented tin with a glowing helper in a cloud.
+  color_and_tone: Pink, sky blue, ochre, green and tin silver.
+  lighting_and_shadow: Naive glowing light from a heavenly cloud, kept consistent across the whole image.
+  texture_and_material: Oil on dented tin, scratches and nail holes.
+  camera_and_composition: Small horizontal scene with a room and a cloud in one corner.
+  atmosphere_and_mood: Keep the requested mood with humble grateful wonder.
+  rendering_and_quality: Naive heartfelt painting, kept consistent across the whole image.
+  creative_brief: "Curandera tin ex-voto: Mexican painted tin votive panels telling small miracle stories, a healer or saint appearing in a corner cloud, simple naive figures in flat color on dented tin. Carry it through painted tin, naive figures, miracle cloud, dented metal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: painted tin; naive figures; miracle cloud; dented metal
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - ex-voto
+    - mexican
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Mexican magic and divination art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-329
+packId: pack_14
+name: Mesopotamian Demon Bronze
+styleAnchors:
+  - Mesopotamian Demon Bronze
+  - Mesopotamian night-spirit art
+  - winged demon
+displayName: Mesopotamian Demon Bronze
+category: Demons, Yokai & Night Spirits
+domain: Mesopotamian night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - mesopotamian-bronze
+  - mesopotamian
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mesopotamian demon bronze: ancient cast bronze figures and amulets of winged, taloned wind demons with snarling faces and four wings, dark green patina.'
+  subject_treatment: Preserve the requested identity, count, pose and action; cast the subject as a winged taloned bronze demon figure with patina.
+  color_and_tone: Dark bronze with green patina, kept consistent across the whole image.
+  lighting_and_shadow: Low dramatic light on metal, kept consistent across the whole image.
+  texture_and_material: Cast bronze, feather incisions and corrosion, kept consistent across the whole image.
+  camera_and_composition: Single figure against dark ground, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with ancient wind-borne menace.
+  rendering_and_quality: Crisp ancient casting, kept consistent across the whole image.
+  creative_brief: "Mesopotamian demon bronze: ancient cast bronze figures and amulets of winged, taloned wind demons with snarling faces and four wings, dark green patina. Carry it through winged demon, bronze, talons, patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: winged demon; bronze; talons; patina
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - mesopotamian-bronze
+    - mesopotamian
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Mesopotamian night-spirit art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-377
+packId: pack_14
+name: Carta Marina Monster Chart
+styleAnchors:
+  - Carta Marina Monster Chart
+  - Nordic cartographic water-spirit art
+  - sea chart
+displayName: Carta Marina Monster Chart
+category: Sea Monsters & Water Spirits
+domain: Nordic cartographic water-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - carta-marina
+  - nordic-cartographic
+  - mythic-waters
+  - portable-style-study
+visualDna:
+  aesthetic: 'Carta marina monster chart: sixteenth-century northern sea charts crowded with hand-colored sea monsters, whales mistaken for islands, serpents and sinking ships.'
+  subject_treatment: Preserve the requested identity, count, pose and action; place the subject as a hand-colored monster on an old engraved sea chart.
+  color_and_tone: Faded sea green, ochre coasts and red accents.
+  lighting_and_shadow: Flat chart color without light, kept consistent across the whole image.
+  texture_and_material: Engraved lines, hand color and aged paper, kept consistent across the whole image.
+  camera_and_composition: Chart with coasts and monster-filled sea, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with wondrous seafaring fear.
+  rendering_and_quality: Detailed engraved chart without readable labels, kept consistent across the whole image.
+  creative_brief: "Carta marina monster chart: sixteenth-century northern sea charts crowded with hand-colored sea monsters, whales mistaken for islands, serpents and sinking ships. Carry it through sea chart, hand-colored monsters, whale island, engraved waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sea chart; hand-colored monsters; whale island; engraved waves
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: Sea Monsters & Water Spirits
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - carta-marina
+    - nordic-cartographic
+    - mythic-waters
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Nordic cartographic water-spirit art

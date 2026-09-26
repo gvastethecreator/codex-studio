@@ -4,23 +4,36 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () =>
-    import('./pack_14/greek-mythology-epic-noir-1').then(
+    import('./pack_14/demons-yokai-and-night-spirits-1').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_14/japanese-mythology-kami-and-yokai-2').then(
+    import('./pack_14/tricksters-and-shape-shifters-2').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_14/norse-mythology-sagas-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_14/mande-oral-epic-4').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_14/underworlds-and-realms-of-the-dead-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
   () =>
-    import('./pack_14/yoruba-mythology-orisha-5').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_14/sky-sun-and-storm-gods-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_14/akan-mythology-anansi-6').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_14/egyptian-mythology-7').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_14/maya-mythology-8').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_14/mexica-mythology-9').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_14/sea-monsters-and-water-spirits-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_14/beasts-guardians-and-chimeras-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () => import('./pack_14/heroes-and-epics-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_14/creation-world-trees-and-cosmos-8').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_14/witches-oracles-and-shamans-9').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

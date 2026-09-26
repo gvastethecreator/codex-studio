@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-330
+packId: pack_14
+name: Medieval Hell-Mouth Illumination
+styleAnchors:
+  - Medieval Hell-Mouth Illumination
+  - Medieval European night-spirit art
+  - hell mouth
+displayName: Medieval Hell-Mouth Illumination
+category: Demons, Yokai & Night Spirits
+domain: Medieval European night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - hell-mouth
+  - medieval-european
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Medieval hell-mouth illumination: manuscript miniatures of a gaping monstrous jaw swallowing the damned, grotesque blue and red devils, gold grounds and flames.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in a gothic miniature with a gaping monstrous mouth and grotesque devils.
+  color_and_tone: Gold ground, flame red, devil blue and green.
+  lighting_and_shadow: Flame glow and flat gold, kept consistent across the whole image.
+  texture_and_material: Vellum, gold leaf and fine brushwork, kept consistent across the whole image.
+  camera_and_composition: Framed miniature with a gaping maw, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with grotesque medieval dread and humor.
+  rendering_and_quality: Detailed illumination without script, kept consistent across the whole image.
+  creative_brief: "Medieval hell-mouth illumination: manuscript miniatures of a gaping monstrous jaw swallowing the damned, grotesque blue and red devils, gold grounds and flames. Carry it through hell mouth, grotesque devils, gold ground, flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hell mouth; grotesque devils; gold ground; flames
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - hell-mouth
+    - medieval-european
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Medieval European night-spirit art

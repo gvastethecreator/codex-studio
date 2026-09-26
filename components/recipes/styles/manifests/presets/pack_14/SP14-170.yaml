@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-170
+packId: pack_14
+name: Rinpa Gold Screen
+styleAnchors:
+  - Rinpa Gold Screen
+  - japanese mythic art technique
+  - gold leaf
+displayName: Rinpa Gold Screen
+category: 'Sky, Sun & Storm Gods'
+domain: japanese mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - rinpa
+  - japanese-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Rinpa gold screen: bold decorative painting on gold-leaf folding screens with stylized waves, irises, wind and thunder gods and lavish flat color.'
+  subject_treatment: Preserve the requested identity, count, pose and action; stylize the subject into bold decorative shapes across a gold-leaf folding screen.
+  color_and_tone: Gold leaf ground with malachite green, azurite blue and ink black.
+  lighting_and_shadow: Flat decorative color with gold glow, kept consistent across the whole image.
+  texture_and_material: Gold leaf squares, mineral pigment and screen panel seams.
+  camera_and_composition: Wide composition across folding panels, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lavish decorative grandeur.
+  rendering_and_quality: Bold elegant decorative design, kept consistent across the whole image.
+  creative_brief: "Rinpa gold screen: bold decorative painting on gold-leaf folding screens with stylized waves, irises, wind and thunder gods and lavish flat color. Carry it through gold leaf, folding panels, stylized waves, bold flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gold leaf; folding panels; stylized waves; bold flat color
+avoidRules:
+  - readable Japanese text or seals
+  - costume stereotypes
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: 'Sky, Sun & Storm Gods'
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - rinpa
+    - japanese-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: japanese mythic art technique

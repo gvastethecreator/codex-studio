@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-409
+packId: pack_14
+name: Kalamkari Cosmic Textile
+styleAnchors:
+  - Kalamkari Cosmic Textile
+  - Telugu cosmological art
+  - pen-drawn line
+displayName: Kalamkari Cosmic Textile
+category: Creation, World Trees & Cosmos
+domain: Telugu cosmological art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - kalamkari
+  - telugu
+  - mythic-cosmos
+  - portable-style-study
+visualDna:
+  aesthetic: 'Kalamkari cosmic textile: hand-drawn and vegetable-dyed temple cloths from Andhra with pen-drawn gods, serpents and churning seas in narrative bands on madder red and black line.'
+  subject_treatment: Preserve the requested identity, count, pose and action; draw the subject with a bamboo pen in fluid black line and fill it with vegetable dyes on cotton.
+  color_and_tone: Madder red, indigo, myrobalan yellow, iron black and unbleached cotton cream.
+  lighting_and_shadow: Flat dyed color with no cast light, kept consistent across the whole image.
+  texture_and_material: Vegetable dye on cotton, pen-drawn black line, soft dye bleed and cloth weave.
+  camera_and_composition: Horizontal narrative bands with a large central scene and ornamental border.
+  atmosphere_and_mood: Keep the requested mood with epic cosmic devotion.
+  rendering_and_quality: Fluid confident hand-drawn line with dense dyed fill.
+  creative_brief: "Kalamkari cosmic textile: hand-drawn and vegetable-dyed temple cloths from Andhra with pen-drawn gods, serpents and churning seas in narrative bands on madder red and black line. Carry it through pen-drawn line, vegetable dyes, narrative bands, serpent and sea. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pen-drawn line; vegetable dyes; narrative bands; serpent and sea
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: Creation, World Trees & Cosmos
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - kalamkari
+    - telugu
+    - mythic-cosmos
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Telugu cosmological art

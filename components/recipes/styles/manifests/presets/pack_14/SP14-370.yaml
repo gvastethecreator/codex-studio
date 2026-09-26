@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-370
+packId: pack_14
+name: Inca Gold Sun Disc
+styleAnchors:
+  - Inca Gold Sun Disc
+  - Andean sky-god art
+  - gold sun disc
+displayName: Inca Gold Sun Disc
+category: Sky, Sun & Storm Gods
+domain: Andean sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - inca-sun
+  - andean
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Inca gold sun disc: hammered Andean gold with a radiant sun face and zigzag rays, temple walls clad in gold and mountains glowing at dawn.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject in hammered gold with a radiant sun face and zigzag rays.
+  color_and_tone: Brilliant gold with mountain blue and stone grey.
+  lighting_and_shadow: Dawn light blazing off gold, kept consistent across the whole image.
+  texture_and_material: Hammered gold sheet, stone walls and repoussé, kept consistent across the whole image.
+  camera_and_composition: Central sun disc on a temple wall, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with radiant solar reverence.
+  rendering_and_quality: Rich metallic gold detail, kept consistent across the whole image.
+  creative_brief: "Inca gold sun disc: hammered Andean gold with a radiant sun face and zigzag rays, temple walls clad in gold and mountains glowing at dawn. Carry it through gold sun disc, zigzag rays, temple wall, dawn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gold sun disc; zigzag rays; temple wall; dawn
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - inca-sun
+    - andean
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Andean sky-god art

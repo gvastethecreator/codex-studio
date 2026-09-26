@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-413
+packId: pack_14
+name: Dogon Granary Door
+styleAnchors:
+  - Dogon Granary Door
+  - Dogon cosmological art
+  - rows of ancestors
+displayName: Dogon Granary Door
+category: Creation, World Trees & Cosmos
+domain: Dogon cosmological art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - dogon-door
+  - dogon
+  - mythic-cosmos
+  - portable-style-study
+visualDna:
+  aesthetic: 'Dogon granary door: carved wooden granary doors from Mali with rows of ancestor figures, twin spirits, lizards and zigzag water lines cut into weathered planks with iron staples.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject as a row of simplified figures on weathered planks joined by iron staples.
+  color_and_tone: Weathered grey-brown wood, dust ochre, iron dark and cliff red.
+  lighting_and_shadow: Strong Sahel sun raking across carved relief, kept consistent across the whole image.
+  texture_and_material: Weathered hardwood planks, iron staples, adze marks and cracks.
+  camera_and_composition: Frontal door with repeated rows of carved figures and a lock bar.
+  atmosphere_and_mood: Keep the requested mood with ancestral cosmic order.
+  rendering_and_quality: Simplified rhythmic carving with worn surface, kept consistent across the whole image.
+  creative_brief: "Dogon granary door: carved wooden granary doors from Mali with rows of ancestor figures, twin spirits, lizards and zigzag water lines cut into weathered planks with iron staples. Carry it through rows of ancestors, twin spirits, iron staples, granary door. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rows of ancestors; twin spirits; iron staples; granary door
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: Creation, World Trees & Cosmos
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - dogon-door
+    - dogon
+    - mythic-cosmos
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Dogon cosmological art

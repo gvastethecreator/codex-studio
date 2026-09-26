@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-414
+packId: pack_14
+name: Straw Sodas Cosmos Mobile
+styleAnchors:
+  - Straw Sodas Cosmos Mobile
+  - Lithuanian cosmological art
+  - straw polyhedra
+displayName: Straw Sodas Cosmos Mobile
+category: Creation, World Trees & Cosmos
+domain: Lithuanian cosmological art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - straw-sodas
+  - lithuanian
+  - mythic-cosmos
+  - portable-style-study
+visualDna:
+  aesthetic: 'Straw sodas cosmos mobile: Lithuanian and Baltic hanging straw gardens of geometric polyhedra, suspended from ceilings to model the order of the world, glowing gold and turning slowly.'
+  subject_treatment: Preserve the requested identity, count, pose and action; build the subject from geometric straw polyhedra suspended on threads, turning slowly in warm light.
+  color_and_tone: Straw gold, warm shadow brown, linen white and candle amber.
+  lighting_and_shadow: Warm window and candle light with delicate shadows cast by straw.
+  texture_and_material: Hollow straw tubes, threaded joins, fragile geometry and soft shadows.
+  camera_and_composition: Centered hanging structure seen slightly from below against a pale ceiling.
+  atmosphere_and_mood: Keep the requested mood with fragile sacred harmony.
+  rendering_and_quality: Precise delicate geometry with soft glow, kept consistent across the whole image.
+  creative_brief: "Straw sodas cosmos mobile: Lithuanian and Baltic hanging straw gardens of geometric polyhedra, suspended from ceilings to model the order of the world, glowing gold and turning slowly. Carry it through straw polyhedra, hanging threads, nested structures, soft shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: straw polyhedra; hanging threads; nested structures; soft shadows
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: Creation, World Trees & Cosmos
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - straw-sodas
+    - lithuanian
+    - mythic-cosmos
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Lithuanian cosmological art

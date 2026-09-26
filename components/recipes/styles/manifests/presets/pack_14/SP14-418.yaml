@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-418
+packId: pack_14
+name: Ten Longevity Screen
+styleAnchors:
+  - Ten Longevity Screen
+  - Korean cosmological art
+  - long-life symbols
+displayName: Ten Longevity Screen
+category: Creation, World Trees & Cosmos
+domain: Korean cosmological art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - longevity-screen
+  - korean
+  - mythic-cosmos
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ten longevity screen: Korean court folding screens of the ten symbols of long life, sun, clouds, mountains, water, pines, cranes, deer, turtles, fungus and bamboo in lush blue-green mineral color.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject among the ten long-life symbols on a blue-green court screen.
+  color_and_tone: Azurite blue, malachite green, cinnabar sun, white cranes and gold.
+  lighting_and_shadow: Even decorative light with glowing color, kept consistent across the whole image.
+  texture_and_material: Mineral pigment on silk, folding screen panels, fine outlines.
+  camera_and_composition: Wide panorama across panels with mountains, sea and sun.
+  atmosphere_and_mood: Keep the requested mood with serene eternal harmony.
+  rendering_and_quality: Lush ornamental landscape painting, kept consistent across the whole image.
+  creative_brief: "Ten longevity screen: Korean court folding screens of the ten symbols of long life, sun, clouds, mountains, water, pines, cranes, deer, turtles, fungus and bamboo in lush blue-green mineral color. Carry it through long-life symbols, blue-green mountains, cranes and deer, red sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: long-life symbols; blue-green mountains; cranes and deer; red sun
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: Creation, World Trees & Cosmos
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - longevity-screen
+    - korean
+    - mythic-cosmos
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Korean cosmological art

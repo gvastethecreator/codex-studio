@@ -200,7 +200,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Three friends in old-fashioned uniforms walk home along a seaside road, one balancing a watermelon on her head while the others dare her on. No readable text or logo.",
+        "Three grown-up cannery workers in faded overalls walk home along a seaside road at sunset, one balancing a watermelon on her head while the other two dare her on. No readable text or logo.",
         "A cassette tape unspools in the wind from a friend's window, and the whole class chases the shining ribbon down the hill. No readable text or logo.",
         "Twenty years later, three friends stand in the same rusted bus shelter, soft grain gentling their older faces. No readable text or logo.",
       ],

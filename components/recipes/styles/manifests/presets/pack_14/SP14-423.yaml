@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-423
+packId: pack_14
+name: Tenebrist Sorceress Oil
+styleAnchors:
+  - Tenebrist Sorceress Oil
+  - Baroque European magic and divination art
+  - single candle
+displayName: Tenebrist Sorceress Oil
+category: Witches, Oracles & Shamans
+domain: Baroque European magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - tenebrist-sorceress
+  - baroque-european
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Tenebrist sorceress oil: seventeenth-century candlelit oil paintings of enchantresses and sibyls, a single flame carving faces and hands out of deep black, magic circles, skulls and smoking bowls.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject lit by a single flame in deep black, hands and face carved out of darkness.
+  color_and_tone: Deep black, candle amber, blood red velvet and bone white.
+  lighting_and_shadow: Single candle source with hard falloff into total black.
+  texture_and_material: Oil glaze, visible brush, varnish sheen and dark canvas grain.
+  camera_and_composition: Close half-figure with the flame in frame and deep empty darkness.
+  atmosphere_and_mood: Keep the requested mood with hushed forbidden power.
+  rendering_and_quality: Masterful dark oil painting with glowing flesh tones.
+  creative_brief: "Tenebrist sorceress oil: seventeenth-century candlelit oil paintings of enchantresses and sibyls, a single flame carving faces and hands out of deep black, magic circles, skulls and smoking bowls. Carry it through single candle, deep black, magic circle, smoking bowl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single candle; deep black; magic circle; smoking bowl
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - tenebrist-sorceress
+    - baroque-european
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Baroque European magic and divination art

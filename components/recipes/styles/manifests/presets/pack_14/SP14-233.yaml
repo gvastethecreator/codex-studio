@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-233
+packId: pack_14
+name: Egungun Cloth Masquerade
+styleAnchors:
+  - Egungun Cloth Masquerade
+  - yoruba art technique
+  - layered cloth panels
+displayName: Egungun Cloth Masquerade
+category: 'Underworlds & Realms of the Dead'
+domain: yoruba art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - egungun
+  - yoruba-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Egungun cloth masquerade: ancestral masquerades in layered panels of rich cloth, appliqué, sequins and mirrors, spinning so the layers fly outward.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as layered swirling cloth panels of an ancestral masquerade.
+  color_and_tone: Rich velvet reds, golds, blues and mirror glints.
+  lighting_and_shadow: Bright sun catching mirrors, kept consistent across the whole image.
+  texture_and_material: Velvet, appliqué, sequins and mirrors, kept consistent across the whole image.
+  camera_and_composition: Spinning figure with flying panels, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with reverent ancestral power.
+  rendering_and_quality: Dense respectful textile detail, kept consistent across the whole image.
+  creative_brief: "Egungun cloth masquerade: ancestral masquerades in layered panels of rich cloth, appliqué, sequins and mirrors, spinning so the layers fly outward. Carry it through layered cloth panels, spinning, mirrors, appliqué. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: layered cloth panels; spinning; mirrors; appliqué
+avoidRules:
+  - generic tribal pattern
+  - cultural stereotypes or caricature
+  - disrespectful depiction of Orisha
+  - readable text
+  - gore
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: 'Underworlds & Realms of the Dead'
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - egungun
+    - yoruba-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: yoruba art technique

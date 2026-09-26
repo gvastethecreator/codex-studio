@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-436
+packId: pack_14
+name: Mola Spirit Panel
+styleAnchors:
+  - Mola Spirit Panel
+  - Guna magic and divination art
+  - reverse appliqué
+displayName: Mola Spirit Panel
+category: Witches, Oracles & Shamans
+domain: Guna magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - mola-panel
+  - guna
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mola spirit panel: Guna reverse-appliqué textile panels from Panama with layered cut fabric in maze-like channels, bold red, black and orange, spirit creatures and healers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; cut and stitch the subject as a layered reverse-appliqué panel of maze-like channels.
+  color_and_tone: Red, black, orange, blue and green, kept consistent across the whole image.
+  lighting_and_shadow: Flat bright textile color, kept consistent across the whole image.
+  texture_and_material: Layered cotton, cut channels, hand stitching, kept consistent across the whole image.
+  camera_and_composition: Rectangular panel filled with a central figure and maze lines.
+  atmosphere_and_mood: Keep the requested mood with vivid spirit play.
+  rendering_and_quality: Bold graphic textile craft, kept consistent across the whole image.
+  creative_brief: "Mola spirit panel: Guna reverse-appliqué textile panels from Panama with layered cut fabric in maze-like channels, bold red, black and orange, spirit creatures and healers. Carry it through reverse appliqué, maze channels, spirit creatures, bold colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: reverse appliqué; maze channels; spirit creatures; bold colors
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - mola-panel
+    - guna
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Guna magic and divination art

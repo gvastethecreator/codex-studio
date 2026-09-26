@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-427
+packId: pack_14
+name: Hex Sign Barn Painting
+styleAnchors:
+  - Hex Sign Barn Painting
+  - Pennsylvania German magic and divination art
+  - compass stars
+displayName: Hex Sign Barn Painting
+category: Witches, Oracles & Shamans
+domain: Pennsylvania German magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - hex-sign
+  - pennsylvania-german
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hex sign barn painting: Pennsylvania German folk barn stars and rosettes painted on big red barns, distelfink birds, tulips and compass stars in bright flat circles.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a bright circular folk emblem of stars, birds and tulips on a barn wall.
+  color_and_tone: Barn red, sunflower yellow, sky blue, white and black.
+  lighting_and_shadow: Bright farm daylight with crisp barn-plank shadows, kept consistent across the whole image.
+  texture_and_material: Flat house paint on weathered barn planks, crisp compass geometry.
+  camera_and_composition: Frontal barn wall with one or more large circular emblems.
+  atmosphere_and_mood: Keep the requested mood with cheerful folk protection.
+  rendering_and_quality: Crisp flat folk graphic painting, kept consistent across the whole image.
+  creative_brief: "Hex sign barn painting: Pennsylvania German folk barn stars and rosettes painted on big red barns, distelfink birds, tulips and compass stars in bright flat circles. Carry it through compass stars, distelfink birds, tulips, barn wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: compass stars; distelfink birds; tulips; barn wall
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - hex-sign
+    - pennsylvania-german
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Pennsylvania German magic and divination art

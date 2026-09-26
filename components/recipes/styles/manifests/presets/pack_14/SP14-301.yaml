@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-301
+packId: pack_14
+name: Ballcourt Marker Relief
+styleAnchors:
+  - Ballcourt Marker Relief
+  - maya art technique
+  - ballcourt marker
+displayName: Ballcourt Marker Relief
+category: 'Heroes & Epics'
+domain: maya art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - ballcourt
+  - heroes-epics
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ballcourt marker relief: round carved stone markers set in ballcourt floors showing players striking a large rubber ball in dynamic poses.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject in a circular stone marker with dynamic ballplayers.
+  color_and_tone: Grey limestone with worn edges, kept consistent across the whole image.
+  lighting_and_shadow: Raking light on round relief, kept consistent across the whole image.
+  texture_and_material: Carved stone disc and worn surface, kept consistent across the whole image.
+  camera_and_composition: Circular composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with athletic ritual intensity.
+  rendering_and_quality: Dynamic circular relief, kept consistent across the whole image.
+  creative_brief: "Ballcourt marker relief: round carved stone markers set in ballcourt floors showing players striking a large rubber ball in dynamic poses. Carry it through ballcourt marker, circular, ballplayers, rubber ball. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ballcourt marker; circular; ballplayers; rubber ball
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - ballcourt
+    - heroes-epics
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maya art technique

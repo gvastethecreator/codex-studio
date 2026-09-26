@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-356
+packId: pack_14
+name: Helheim Frost Painting
+styleAnchors:
+  - Helheim Frost Painting
+  - Norse underworld art
+  - frozen underworld
+displayName: Helheim Frost Painting
+category: Underworlds & Realms of the Dead
+domain: Norse underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - helheim
+  - norse
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Helheim frost painting: painterly frozen underworld of the Norse dead, a half-living half-dead queen, ice halls, bone gates and grey rivers of cold mist.'
+  subject_treatment: Preserve the requested identity, count, pose and action; place the subject in a painterly frozen underworld of ice halls and grey mist.
+  color_and_tone: Ice blue, bone white and deep grey, kept consistent across the whole image.
+  lighting_and_shadow: Cold diffuse glow through mist, kept consistent across the whole image.
+  texture_and_material: Frost crystals, bone, ice and painterly mist, kept consistent across the whole image.
+  camera_and_composition: Wide hall or gate with a small figure.
+  atmosphere_and_mood: Keep the requested mood with cold mournful grandeur.
+  rendering_and_quality: Atmospheric painterly finish, kept consistent across the whole image.
+  creative_brief: "Helheim frost painting: painterly frozen underworld of the Norse dead, a half-living half-dead queen, ice halls, bone gates and grey rivers of cold mist. Carry it through frozen underworld, bone gate, ice hall, mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: frozen underworld; bone gate; ice hall; mist
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - helheim
+    - norse
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Norse underworld art

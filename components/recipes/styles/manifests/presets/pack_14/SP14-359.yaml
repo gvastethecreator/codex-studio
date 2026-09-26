@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-359
+packId: pack_14
+name: Yama Pata Scroll Painting
+styleAnchors:
+  - Yama Pata Scroll Painting
+  - Bengali underworld art
+  - narrative scroll
+displayName: Yama Pata Scroll Painting
+category: Underworlds & Realms of the Dead
+domain: Bengali underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - yama-pata
+  - bengali
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Yama pata scroll painting: Bengali patachitra narrative scrolls with bold outlines and bright colors showing the lord of death on his buffalo and the fates of souls.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in bold bright scroll panels of a narrative painting.
+  color_and_tone: Bright yellow, red, green and black, kept consistent across the whole image.
+  lighting_and_shadow: Flat color without shadow, kept consistent across the whole image.
+  texture_and_material: Painted cloth scroll, bold outlines and panels, kept consistent across the whole image.
+  camera_and_composition: Vertical panels of a storytelling scroll, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with vivid moral storytelling.
+  rendering_and_quality: Bold narrative folk painting, kept consistent across the whole image.
+  creative_brief: "Yama pata scroll painting: Bengali patachitra narrative scrolls with bold outlines and bright colors showing the lord of death on his buffalo and the fates of souls. Carry it through narrative scroll, lord of death, buffalo, bright panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: narrative scroll; lord of death; buffalo; bright panels
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - yama-pata
+    - bengali
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Bengali underworld art

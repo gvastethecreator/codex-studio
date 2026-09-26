@@ -62,12 +62,12 @@ attributes:
       - SP14-078
       - SP14-079
       - SP14-080
-category: Norse Mythology — Sagas
+category: 'Creation, World Trees & Cosmos'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - norse-saga-noir
+  - creation-world-trees-cosmos
 visualDna:
   aesthetic: Norse saga noir uses cold painterly value masses, carved interlace, and animal-terminal
     contours integrated with wood-and-iron construction. A branching knot path or terminal line may follow an
@@ -111,8 +111,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: norse-saga-noir
-  categoryName: Norse Mythology — Sagas
+  categoryId: creation-world-trees-cosmos
+  categoryName: 'Creation, World Trees & Cosmos'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

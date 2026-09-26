@@ -46,12 +46,12 @@ attributes:
     kind: full_style
     visualEvaluation: pending
     derivedFrom: []
-category: Egyptian Mythology
+category: 'Underworlds & Realms of the Dead'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - egyptian-mythology
+  - underworlds-realms-of-the-dead
 visualDna:
   aesthetic:
     Egyptian mythic illustration with poised graphic silhouettes, lucid contour drawing and luminous faience
@@ -93,8 +93,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: egyptian-mythology
-  categoryName: Egyptian Mythology
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: 'Underworlds & Realms of the Dead'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

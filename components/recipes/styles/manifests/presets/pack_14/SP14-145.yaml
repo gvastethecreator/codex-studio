@@ -48,12 +48,12 @@ attributes:
     visualEvaluation: pending
     derivedFrom:
       - SP14-021
-category: Mande Oral Epic
+category: 'Heroes & Epics'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - mande-epic-griot
+  - heroes-epics
 visualDna:
   aesthetic:
     Mande epic illustration uses indigo and umber value masses, calabash ochre and restrained star-white accents.
@@ -97,8 +97,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: mande-epic-griot
-  categoryName: Mande Oral Epic
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

@@ -258,7 +258,7 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Seven cloaked defenders stand on a snowy ridge facing an army too large to see, their red scarves the only color in a white world. No readable text or logo.",
+        "Seven cloaked defenders stand close on a snowy ridge, huge crimson scarves whipping in the wind, facing an army too large to see in a white world. No readable text or logo.",
         "The last defenders of a snowbound fort build an army of a hundred snow soldiers on the wall to fool the enemy at dawn. No readable text or logo.",
         "After the battle, falling snow slowly covers a single banner still standing upright in the silent field. No readable text or logo.",
       ],

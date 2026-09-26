@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-259
+packId: pack_14
+name: Anansi Storybook Illustration
+styleAnchors:
+  - Anansi Storybook Illustration
+  - akan art technique
+  - storybook
+displayName: Anansi Storybook Illustration
+category: 'Tricksters & Shape-Shifters'
+domain: akan art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tricksters-shape-shifters
+  - anansi-storybook
+  - akan-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: "Anansi storybook illustration: warm contemporary Ghanaian picture-book art of the spider trickster's tales, bold shapes, patterned cloth and bright forest."
+  subject_treatment: Preserve the requested identity, count, pose and action; illustrate the subject as a warm picture-book scene with bold shapes and patterned cloth.
+  color_and_tone: Warm greens, golds and kente-like accents, kept consistent across the whole image.
+  lighting_and_shadow: Bright friendly light, kept consistent across the whole image.
+  texture_and_material: Gouache or digital paint with patterned textures, kept consistent across the whole image.
+  camera_and_composition: Picture-book spread composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with playful clever warmth.
+  rendering_and_quality: Polished storybook art without text, kept consistent across the whole image.
+  creative_brief: "Anansi storybook illustration: warm contemporary Ghanaian picture-book art of the spider trickster's tales, bold shapes, patterned cloth and bright forest. Carry it through storybook, spider trickster, patterned cloth, forest. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: storybook; spider trickster; patterned cloth; forest
+avoidRules:
+  - generic tribal pattern
+  - cultural stereotypes or caricature
+  - readable text
+  - gore
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: tricksters-shape-shifters
+  categoryName: 'Tricksters & Shape-Shifters'
+  tags:
+    - curation-v2
+    - tricksters-shape-shifters
+    - anansi-storybook
+    - akan-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: akan art technique

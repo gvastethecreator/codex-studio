@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-193
+packId: pack_14
+name: Oseberg Gripping Beast
+styleAnchors:
+  - Oseberg Gripping Beast
+  - norse mythic art technique
+  - gripping beasts
+displayName: Oseberg Gripping Beast
+category: 'Beasts, Guardians & Chimeras'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - gripping-beast
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Oseberg gripping beast: early Viking wood carving of small chunky beasts whose paws grip the frame, each other and themselves in dense lively relief.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject as small chunky beasts gripping their frame and each other.
+  color_and_tone: Dark oak with worn pale edges, kept consistent across the whole image.
+  lighting_and_shadow: Soft light on deep relief, kept consistent across the whole image.
+  texture_and_material: Deep-cut oak, tool marks and worn surfaces, kept consistent across the whole image.
+  camera_and_composition: Dense panel of gripping beasts, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lively crowded mischief.
+  rendering_and_quality: Dense energetic carving, kept consistent across the whole image.
+  creative_brief: "Oseberg gripping beast: early Viking wood carving of small chunky beasts whose paws grip the frame, each other and themselves in dense lively relief. Carry it through gripping beasts, paws gripping frame, dense relief, oak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gripping beasts; paws gripping frame; dense relief; oak
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: 'Beasts, Guardians & Chimeras'
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - gripping-beast
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

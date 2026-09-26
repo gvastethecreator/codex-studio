@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-285
+packId: pack_14
+name: Bonampak Mural
+styleAnchors:
+  - Bonampak Mural
+  - maya art technique
+  - vivid mural
+displayName: Bonampak Mural
+category: 'Heroes & Epics'
+domain: maya art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - bonampak
+  - heroes-epics
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bonampak mural: vivid Classic Maya wall paintings with crowded courtly scenes, battles and processions in brilliant blue, red and ochre.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in crowded vivid mural scenes of court and ceremony.
+  color_and_tone: Maya blue, red ochre, yellow and black, kept consistent across the whole image.
+  lighting_and_shadow: Flat vivid color on plaster, kept consistent across the whole image.
+  texture_and_material: Plaster, fine outlines and vivid pigment, kept consistent across the whole image.
+  camera_and_composition: Wall scenes arranged in tiers, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with vibrant ceremonial spectacle.
+  rendering_and_quality: Rich detailed mural painting, kept consistent across the whole image.
+  creative_brief: "Bonampak mural: vivid Classic Maya wall paintings with crowded courtly scenes, battles and processions in brilliant blue, red and ochre. Carry it through vivid mural, tiers, processions, Maya blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vivid mural; tiers; processions; Maya blue
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - bonampak
+    - heroes-epics
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maya art technique

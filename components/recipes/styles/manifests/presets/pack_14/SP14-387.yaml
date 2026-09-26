@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-387
+packId: pack_14
+name: Umibozu Storm Woodblock
+styleAnchors:
+  - Umibozu Storm Woodblock
+  - Japanese water-spirit art
+  - sea monk spirit
+displayName: Umibozu Storm Woodblock
+category: Sea Monsters & Water Spirits
+domain: Japanese water-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - umibozu
+  - japanese
+  - mythic-waters
+  - portable-style-study
+visualDna:
+  aesthetic: 'Umibozu storm woodblock: Japanese woodblock prints of the vast sea monk spirit rising from night storms beside fishing boats, huge dark head and glowing eyes.'
+  subject_treatment: Preserve the requested identity, count, pose and action; print the subject as a vast dark sea spirit rising beside small boats in a storm.
+  color_and_tone: Prussian blue, black and wave white, kept consistent across the whole image.
+  lighting_and_shadow: Storm light and glowing eyes, kept consistent across the whole image.
+  texture_and_material: Woodblock lines, bokashi and paper grain, kept consistent across the whole image.
+  camera_and_composition: Towering figure beside small boats, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with overwhelming oceanic dread.
+  rendering_and_quality: Bold dramatic woodblock, kept consistent across the whole image.
+  creative_brief: "Umibozu storm woodblock: Japanese woodblock prints of the vast sea monk spirit rising from night storms beside fishing boats, huge dark head and glowing eyes. Carry it through sea monk spirit, night storm, fishing boats, glowing eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sea monk spirit; night storm; fishing boats; glowing eyes
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: Sea Monsters & Water Spirits
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - umibozu
+    - japanese
+    - mythic-waters
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Japanese water-spirit art

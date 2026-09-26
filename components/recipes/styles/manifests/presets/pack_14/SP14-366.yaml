@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-366
+packId: pack_14
+name: Rajput Monsoon Miniature
+styleAnchors:
+  - Rajput Monsoon Miniature
+  - Indian sky-god art
+  - monsoon clouds
+displayName: Rajput Monsoon Miniature
+category: Sky, Sun & Storm Gods
+domain: Indian sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - rajput-monsoon
+  - indian
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Rajput monsoon miniature: Indian court miniature painting of the rainy season, dark swirling clouds with lightning, peacocks dancing and the king of the gods on his white elephant.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in a jewel-toned monsoon miniature with swirling storm clouds.
+  color_and_tone: Deep indigo clouds, gold lightning, green and saffron.
+  lighting_and_shadow: Lightning flashes in dark clouds, kept consistent across the whole image.
+  texture_and_material: Fine pigment, gold and decorative borders, kept consistent across the whole image.
+  camera_and_composition: High-horizon scene with a stormy sky, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with jubilant storm devotion.
+  rendering_and_quality: Exquisite miniature painting, kept consistent across the whole image.
+  creative_brief: "Rajput monsoon miniature: Indian court miniature painting of the rainy season, dark swirling clouds with lightning, peacocks dancing and the king of the gods on his white elephant. Carry it through monsoon clouds, lightning, peacocks, white elephant. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: monsoon clouds; lightning; peacocks; white elephant
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - rajput-monsoon
+    - indian
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Indian sky-god art

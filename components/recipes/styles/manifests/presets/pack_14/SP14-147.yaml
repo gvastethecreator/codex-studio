@@ -50,12 +50,12 @@ attributes:
     visualEvaluation: pending
     derivedFrom:
       - SP14-023
-category: Akan Mythology — Anansi
+category: 'Tricksters & Shape-Shifters'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - akan-anansi-trickster
+  - tricksters-shape-shifters
 visualDna:
   aesthetic: Akan Anansi illustration uses clever turns of line, Asante woven-strip structure, and a
     selected Ananse Ntontan sign. Treat the sign as one authored mark on a suitable textile or fitting, not a web
@@ -99,8 +99,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: akan-anansi-trickster
-  categoryName: Akan Mythology — Anansi
+  categoryId: tricksters-shape-shifters
+  categoryName: 'Tricksters & Shape-Shifters'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

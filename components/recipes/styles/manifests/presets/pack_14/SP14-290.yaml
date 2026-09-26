@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-290
+packId: pack_14
+name: Stucco Mask Facade
+styleAnchors:
+  - Stucco Mask Facade
+  - maya art technique
+  - stucco mask
+displayName: Stucco Mask Facade
+category: 'Beasts, Guardians & Chimeras'
+domain: maya art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - stucco-mask
+  - beasts-guardians-chimeras
+  - portable-style-study
+visualDna:
+  aesthetic: 'Stucco mask facade: monumental modeled and painted stucco masks of gods flanking temple stairways, huge faces with ear flares and scrolls.'
+  subject_treatment: Preserve the requested identity, count, pose and action; model the subject as a monumental painted stucco mask on a temple facade.
+  color_and_tone: Red, cream and green painted stucco, kept consistent across the whole image.
+  lighting_and_shadow: Strong sun on modeled forms, kept consistent across the whole image.
+  texture_and_material: Modeled stucco, paint and weathering, kept consistent across the whole image.
+  camera_and_composition: Frontal facade with stairway, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with monumental divine presence.
+  rendering_and_quality: Bold monumental modeling, kept consistent across the whole image.
+  creative_brief: "Stucco mask facade: monumental modeled and painted stucco masks of gods flanking temple stairways, huge faces with ear flares and scrolls. Carry it through stucco mask, temple facade, ear flares, painted. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stucco mask; temple facade; ear flares; painted
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: 'Beasts, Guardians & Chimeras'
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - stucco-mask
+    - beasts-guardians-chimeras
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maya art technique

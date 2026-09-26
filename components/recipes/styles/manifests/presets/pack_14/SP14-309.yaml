@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-309
+packId: pack_14
+name: Eagle Warrior Solar Armor
+styleAnchors:
+  - Eagle Warrior Solar Armor
+  - mexica fantastic art technique
+  - eagle armor
+displayName: Eagle Warrior Solar Armor
+category: 'Heroes & Epics'
+domain: mexica fantastic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - eagle-warrior
+  - heroes-epics
+  - portable-style-study
+visualDna:
+  aesthetic: 'Eagle warrior solar armor: epic fantasy warriors in feathered eagle and jaguar suits radiating solar light, inspired by clay eagle-warrior sculpture.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as an epic warrior in radiant feathered eagle or jaguar armor.
+  color_and_tone: Burnished terracotta, gold light and deep sky, kept consistent across the whole image.
+  lighting_and_shadow: Solar backlight and glowing feather edges, kept consistent across the whole image.
+  texture_and_material: Feathered armor, clay textures and gold, kept consistent across the whole image.
+  camera_and_composition: Heroic low-angle figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with radiant epic valor.
+  rendering_and_quality: Polished epic illustration, kept consistent across the whole image.
+  creative_brief: "Eagle warrior solar armor: epic fantasy warriors in feathered eagle and jaguar suits radiating solar light, inspired by clay eagle-warrior sculpture. Carry it through eagle armor, jaguar armor, solar glow, feathered. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: eagle armor; jaguar armor; solar glow; feathered
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - tourist-souvenir kitsch
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - eagle-warrior
+    - heroes-epics
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mexica fantastic art technique

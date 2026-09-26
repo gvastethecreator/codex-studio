@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-376
+packId: pack_14
+name: Konark Sun Chariot Relief
+styleAnchors:
+  - Konark Sun Chariot Relief
+  - Indian sky-god art
+  - sun chariot
+displayName: Konark Sun Chariot Relief
+category: Sky, Sun & Storm Gods
+domain: Indian sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - konark
+  - indian
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: "Konark sun chariot relief: Indian temple stone carving of the sun god's colossal chariot with giant carved wheels, horses and dense ornament in warm sandstone."
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject into a colossal stone sun chariot with great wheels and horses.
+  color_and_tone: Warm sandstone ochre and weathered grey, kept consistent across the whole image.
+  lighting_and_shadow: Sunlight tracing carved spokes, kept consistent across the whole image.
+  texture_and_material: Dense stone carving, spokes and weathering, kept consistent across the whole image.
+  camera_and_composition: Low view of giant carved wheels, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with monumental solar grandeur.
+  rendering_and_quality: Intricate monumental carving, kept consistent across the whole image.
+  creative_brief: "Konark sun chariot relief: Indian temple stone carving of the sun god's colossal chariot with giant carved wheels, horses and dense ornament in warm sandstone. Carry it through sun chariot, carved wheels, horses, sandstone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sun chariot; carved wheels; horses; sandstone
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - konark
+    - indian
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Indian sky-god art

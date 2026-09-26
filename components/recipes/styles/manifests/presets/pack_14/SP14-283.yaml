@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-283
+packId: pack_14
+name: Starry Tomb Ceiling
+styleAnchors:
+  - Starry Tomb Ceiling
+  - egyptian mythic art technique
+  - blue ceiling
+displayName: Starry Tomb Ceiling
+category: 'Underworlds & Realms of the Dead'
+domain: egyptian mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - starry-ceiling
+  - underworlds-realms-of-the-dead
+  - portable-style-study
+visualDna:
+  aesthetic: 'Starry tomb ceiling: burial chamber ceilings painted deep blue with rows of yellow five-pointed stars and the sky goddess stretched across them.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject on a deep blue ceiling filled with rows of yellow stars.
+  color_and_tone: Deep blue with yellow stars and ochre, kept consistent across the whole image.
+  lighting_and_shadow: Dim lamp light from below, kept consistent across the whole image.
+  texture_and_material: Painted plaster ceiling and fine stars, kept consistent across the whole image.
+  camera_and_composition: Looking up at the ceiling, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with infinite night reverence.
+  rendering_and_quality: Rich painted ceiling, kept consistent across the whole image.
+  creative_brief: "Starry tomb ceiling: burial chamber ceilings painted deep blue with rows of yellow five-pointed stars and the sky goddess stretched across them. Carry it through blue ceiling, yellow stars, sky goddess, tomb. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blue ceiling; yellow stars; sky goddess; tomb
+avoidRules:
+  - readable hieroglyphs or cartouches
+  - mummy horror cliché
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: 'Underworlds & Realms of the Dead'
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - starry-ceiling
+    - underworlds-realms-of-the-dead
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: egyptian mythic art technique

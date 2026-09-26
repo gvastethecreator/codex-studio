@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-388
+packId: pack_14
+name: Qilin Silk Rank Badge
+styleAnchors:
+  - Qilin Silk Rank Badge
+  - Chinese beast and guardian art
+  - qilin beast
+displayName: Qilin Silk Rank Badge
+category: Beasts, Guardians & Chimeras
+domain: Chinese beast and guardian art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - qilin-badge
+  - chinese
+  - mythic-beasts
+  - portable-style-study
+visualDna:
+  aesthetic: 'Qilin silk rank badge: Chinese court embroidery squares where a scaled, hoofed qilin prances among five-colored clouds, rocks and wave stripes, stitched in couched gold thread and satin floss.'
+  subject_treatment: Preserve the requested identity, count, pose and action; stitch the subject as a scaled, hoofed guardian beast prancing on clouds above striped waves.
+  color_and_tone: Midnight blue silk, couched gold, coral red, jade green and cloud white.
+  lighting_and_shadow: Silk sheen and gold thread glint rather than cast shadow, even and rich.
+  texture_and_material: Satin stitch floss, couched gold thread, seed knots and silk ground grain.
+  camera_and_composition: Square badge composition with the beast centered above wave stripes and a sun disc in one corner.
+  atmosphere_and_mood: Keep the requested mood with auspicious noble calm.
+  rendering_and_quality: Dense precise embroidery with every scale and cloud outlined in gold thread.
+  creative_brief: "Qilin silk rank badge: Chinese court embroidery squares where a scaled, hoofed qilin prances among five-colored clouds, rocks and wave stripes, stitched in couched gold thread and satin floss. Carry it through qilin beast, five-colored clouds, wave stripes, couched gold thread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: qilin beast; five-colored clouds; wave stripes; couched gold thread
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: Beasts, Guardians & Chimeras
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - qilin-badge
+    - chinese
+    - mythic-beasts
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese beast and guardian art

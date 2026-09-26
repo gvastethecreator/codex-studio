@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-328
+packId: pack_14
+name: Jinn Smoke Illumination
+styleAnchors:
+  - Jinn Smoke Illumination
+  - Arabian night-spirit art
+  - jinn in smoke
+displayName: Jinn Smoke Illumination
+category: Demons, Yokai & Night Spirits
+domain: Arabian night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - jinn-illumination
+  - arabian
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Jinn smoke illumination: illuminated manuscript pages of the wonders tradition, jinn rising from smoke and lamps in gold, lapis and vermilion with arabesque margins.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a jinn scene rising in smoke inside an illuminated page.
+  color_and_tone: Gold, lapis blue, vermilion and ivory, kept consistent across the whole image.
+  lighting_and_shadow: Glowing smoke and gold highlights, kept consistent across the whole image.
+  texture_and_material: Illuminated paper, gold leaf and arabesque borders, kept consistent across the whole image.
+  camera_and_composition: Central figure framed by arabesque margins, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with smoky wondrous mystery.
+  rendering_and_quality: Refined illumination without readable script, kept consistent across the whole image.
+  creative_brief: "Jinn smoke illumination: illuminated manuscript pages of the wonders tradition, jinn rising from smoke and lamps in gold, lapis and vermilion with arabesque margins. Carry it through jinn in smoke, brass lamp, arabesques, gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: jinn in smoke; brass lamp; arabesques; gold
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - jinn-illumination
+    - arabian
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Arabian night-spirit art

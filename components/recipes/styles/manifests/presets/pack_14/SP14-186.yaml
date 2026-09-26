@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-186
+packId: pack_14
+name: Musha-e Warrior Print
+styleAnchors:
+  - Musha-e Warrior Print
+  - japanese mythic art technique
+  - warrior triptych
+displayName: Musha-e Warrior Print
+category: 'Heroes & Epics'
+domain: japanese mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - musha-e
+  - japanese-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Musha-e warrior print: dynamic woodblock triptychs of legendary warriors battling monsters, giant skeletons and sea spirits with dense action.'
+  subject_treatment: Preserve the requested identity, count, pose and action; print the subject in dense dynamic battle across woodblock triptych panels.
+  color_and_tone: Rich indigo, vermilion and earth tones, kept consistent across the whole image.
+  lighting_and_shadow: Dramatic flat color and inked shadows, kept consistent across the whole image.
+  texture_and_material: Woodblock lines, patterned armor and triptych seams, kept consistent across the whole image.
+  camera_and_composition: Wide triptych composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with legendary heroic struggle.
+  rendering_and_quality: Dense detailed woodblock action, kept consistent across the whole image.
+  creative_brief: "Musha-e warrior print: dynamic woodblock triptychs of legendary warriors battling monsters, giant skeletons and sea spirits with dense action. Carry it through warrior triptych, giant monster, patterned armor, dynamic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: warrior triptych; giant monster; patterned armor; dynamic
+avoidRules:
+  - readable Japanese text or seals
+  - costume stereotypes
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - musha-e
+    - japanese-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: japanese mythic art technique

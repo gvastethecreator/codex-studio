@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-157
+packId: pack_14
+name: Cycladic Marble Minimalism
+styleAnchors:
+  - Cycladic Marble Minimalism
+  - greek mythic art technique
+  - white marble
+displayName: Cycladic Marble Minimalism
+category: 'Creation, World Trees & Cosmos'
+domain: greek mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - creation-world-trees-cosmos
+  - cycladic
+  - greek-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms.'
+  subject_treatment: Preserve the requested identity, count, pose and action; simplify the subject into smooth white marble forms with minimal features.
+  color_and_tone: Pure white marble with faint traces of paint.
+  lighting_and_shadow: Soft light across smooth surfaces, kept consistent across the whole image.
+  texture_and_material: Polished marble, subtle chips and smooth planes, kept consistent across the whole image.
+  camera_and_composition: Single figure against plain ground, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with serene ancient stillness.
+  rendering_and_quality: Minimal pure sculptural forms, kept consistent across the whole image.
+  creative_brief: "Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms. Carry it through white marble, folded arms, minimal face, smooth planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: white marble; folded arms; minimal face; smooth planes
+avoidRules:
+  - readable Greek inscriptions
+  - modern tourist-souvenir kitsch
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: creation-world-trees-cosmos
+  categoryName: 'Creation, World Trees & Cosmos'
+  tags:
+    - curation-v2
+    - creation-world-trees-cosmos
+    - cycladic
+    - greek-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: greek mythic art technique

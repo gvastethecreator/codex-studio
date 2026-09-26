@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-424
+packId: pack_14
+name: Nuo Exorcism Mask Theater
+styleAnchors:
+  - Nuo Exorcism Mask Theater
+  - Chinese magic and divination art
+  - carved wood masks
+displayName: Nuo Exorcism Mask Theater
+category: Witches, Oracles & Shamans
+domain: Chinese magic and divination art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - nuo-mask
+  - chinese
+  - mythic-magic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nuo exorcism mask theater: rural Chinese Nuo ritual theater with carved and painted wooden masks of exorcist gods, bulging eyes, horns and fangs, performed in smoke and torchlight to drive plague spirits away.'
+  subject_treatment: Preserve the requested identity, count, pose and action; show the subject wearing a carved painted wooden exorcist mask in smoky torchlit ritual theater.
+  color_and_tone: Cinnabar red, gold, black, green and white, kept consistent across the whole image.
+  lighting_and_shadow: Torchlight and incense smoke, faces flickering, kept consistent across the whole image.
+  texture_and_material: Carved painted wood masks, cloth robes, smoke and ash.
+  camera_and_composition: Low close angle on masked performers mid-gesture in a village square.
+  atmosphere_and_mood: Keep the requested mood with fierce protective ritual.
+  rendering_and_quality: Vivid dramatic performance depiction, kept consistent across the whole image.
+  creative_brief: "Nuo exorcism mask theater: rural Chinese Nuo ritual theater with carved and painted wooden masks of exorcist gods, bulging eyes, horns and fangs, performed in smoke and torchlight to drive plague spirits away. Carry it through carved wood masks, exorcist gods, torch smoke, village square. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carved wood masks; exorcist gods; torch smoke; village square
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: Witches, Oracles & Shamans
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - nuo-mask
+    - chinese
+    - mythic-magic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese magic and divination art

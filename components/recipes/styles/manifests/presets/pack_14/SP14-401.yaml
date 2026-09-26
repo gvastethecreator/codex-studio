@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-401
+packId: pack_14
+name: Qajar Coffeehouse Epic Canvas
+styleAnchors:
+  - Qajar Coffeehouse Epic Canvas
+  - Persian epic hero art
+  - champion in tiger skin
+displayName: Qajar Coffeehouse Epic Canvas
+category: Heroes & Epics
+domain: Persian epic hero art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - coffeehouse-epic
+  - persian
+  - mythic-heroes
+  - portable-style-study
+visualDna:
+  aesthetic: 'Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a champion in a crowded storyteller canvas where several episodes happen at once.
+  color_and_tone: Earth red, ochre, olive green, deep blue, bone white and soot black.
+  lighting_and_shadow: Flat even light with bold dark outlines and little modeling.
+  texture_and_material: Oil on unprimed cotton, cracked paint, creases from rolling and smoke-darkened varnish.
+  camera_and_composition: Wide canvas packed with episodes, the champion painted largest at the center.
+  atmosphere_and_mood: Keep the requested mood with rousing heroic storytelling.
+  rendering_and_quality: Bold naive-heroic painting with dense narrative crowds, kept consistent across the whole image.
+  creative_brief: "Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth. Carry it through champion in tiger skin, many episodes at once, white demon, crowded canvas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: champion in tiger skin; many episodes at once; white demon; crowded canvas
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: Heroes & Epics
+  tags:
+    - curation-v2
+    - heroes-epics
+    - coffeehouse-epic
+    - persian
+    - mythic-heroes
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Persian epic hero art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-400
+packId: pack_14
+name: Snow Lion Thangka Banner
+styleAnchors:
+  - Snow Lion Thangka Banner
+  - Tibetan beast and guardian art
+  - white lion
+displayName: Snow Lion Thangka Banner
+category: Beasts, Guardians & Chimeras
+domain: Tibetan beast and guardian art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - beasts-guardians-chimeras
+  - snow-lion
+  - tibetan
+  - mythic-beasts
+  - portable-style-study
+visualDna:
+  aesthetic: 'Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a leaping white lion with a turquoise mane among snow peaks and clouds.
+  color_and_tone: Snow white, turquoise, deep lapis, gold and coral red.
+  lighting_and_shadow: Clear high-altitude light with gold outlines shining, kept consistent across the whole image.
+  texture_and_material: Mineral pigment on cotton, gold line, silk brocade border.
+  camera_and_composition: Dynamic leaping pose across a mountain scroll with brocade frame.
+  atmosphere_and_mood: Keep the requested mood with joyful fearless energy.
+  rendering_and_quality: Precise painted scroll with flowing curling manes, kept consistent across the whole image.
+  creative_brief: "Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames. Carry it through white lion, turquoise mane, snow peaks, jewel flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: white lion; turquoise mane; snow peaks; jewel flames
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: beasts-guardians-chimeras
+  categoryName: Beasts, Guardians & Chimeras
+  tags:
+    - curation-v2
+    - beasts-guardians-chimeras
+    - snow-lion
+    - tibetan
+    - mythic-beasts
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Tibetan beast and guardian art

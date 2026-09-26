@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-331
+packId: pack_14
+name: Victorian Spirit Photograph
+styleAnchors:
+  - Victorian Spirit Photograph
+  - Victorian night-spirit art
+  - double exposure
+displayName: Victorian Spirit Photograph
+category: Demons, Yokai & Night Spirits
+domain: Victorian night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - spirit-photo
+  - victorian
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Victorian spirit photograph: nineteenth-century double-exposure portraits where translucent ghosts float behind stiff sitters, sepia tones and faded edges.'
+  subject_treatment: Preserve the requested identity, count, pose and action; photograph the subject as a stiff sitter with a translucent ghost double exposure.
+  color_and_tone: Sepia browns, cream highlights and faded edges, kept consistent across the whole image.
+  lighting_and_shadow: Soft studio light with ghostly glow, kept consistent across the whole image.
+  texture_and_material: Albumen print, double exposure and scratches, kept consistent across the whole image.
+  camera_and_composition: Formal seated portrait with a floating figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with uncanny parlor mystery.
+  rendering_and_quality: Convincing antique photograph, kept consistent across the whole image.
+  creative_brief: "Victorian spirit photograph: nineteenth-century double-exposure portraits where translucent ghosts float behind stiff sitters, sepia tones and faded edges. Carry it through double exposure, translucent ghost, sepia, stiff pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: double exposure; translucent ghost; sepia; stiff pose
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - spirit-photo
+    - victorian
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Victorian night-spirit art

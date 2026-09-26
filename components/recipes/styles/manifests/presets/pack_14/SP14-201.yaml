@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-201
+packId: pack_14
+name: Aurora Saga Night Painting
+styleAnchors:
+  - Aurora Saga Night Painting
+  - norse mythic art technique
+  - aurora
+displayName: Aurora Saga Night Painting
+category: 'Sky, Sun & Storm Gods'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - aurora-saga
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Aurora saga night painting: modern painterly northern-light scenes of saga figures under rippling green and violet aurora over snow and sea.'
+  subject_treatment: Preserve the requested identity, count, pose and action; place the subject under a rippling green and violet aurora on snow or sea.
+  color_and_tone: Aurora green and violet over deep blue snow.
+  lighting_and_shadow: Aurora glow reflecting on snow and ice, kept consistent across the whole image.
+  texture_and_material: Painterly skies, snow crust and ice, kept consistent across the whole image.
+  camera_and_composition: Wide night landscape with a small figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with vast luminous awe.
+  rendering_and_quality: Painterly luminous finish, kept consistent across the whole image.
+  creative_brief: "Aurora saga night painting: modern painterly northern-light scenes of saga figures under rippling green and violet aurora over snow and sea. Carry it through aurora, saga figure, snow, night sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: aurora; saga figure; snow; night sky
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: 'Sky, Sun & Storm Gods'
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - aurora-saga
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

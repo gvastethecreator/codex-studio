@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-354
+packId: pack_14
+name: Diyu Ten Courts Scroll
+styleAnchors:
+  - Diyu Ten Courts Scroll
+  - Chinese underworld art
+  - underworld court
+displayName: Diyu Ten Courts Scroll
+category: Underworlds & Realms of the Dead
+domain: Chinese underworld art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - underworlds-realms-of-the-dead
+  - diyu
+  - chinese
+  - mythic-underworlds
+  - portable-style-study
+visualDna:
+  aesthetic: 'Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a scene from the courts of the underworld with judges and guardians.
+  color_and_tone: Vermilion, ink black, jade green and gold, kept consistent across the whole image.
+  lighting_and_shadow: Flat painted light with lamp glow, kept consistent across the whole image.
+  texture_and_material: Silk scroll, fine brushwork and mounted borders, kept consistent across the whole image.
+  camera_and_composition: Vertical scroll with a judge above and souls below.
+  atmosphere_and_mood: Keep the requested mood with solemn bureaucratic dread.
+  rendering_and_quality: Detailed scroll painting without readable script, kept consistent across the whole image.
+  creative_brief: "Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers. Carry it through underworld court, stern judge, ox-head guard, scroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: underworld court; stern judge; ox-head guard; scroll
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: underworlds-realms-of-the-dead
+  categoryName: Underworlds & Realms of the Dead
+  tags:
+    - curation-v2
+    - underworlds-realms-of-the-dead
+    - diyu
+    - chinese
+    - mythic-underworlds
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese underworld art

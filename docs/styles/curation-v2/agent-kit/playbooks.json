@@ -93,15 +93,6 @@
     "pack_13::3. Shojo, Magical Girl & Visionary Classics": "anime",
     "pack_13::4. Slice Of Life & Moe": "anime",
     "pack_13::5. Anime Style Spectrum": "anime",
-    "pack_14::Greek Mythology — Epic Noir": "theme-render",
-    "pack_14::Japanese Mythology — Kami & Yokai": "theme-render",
-    "pack_14::Norse Mythology — Sagas": "theme-render",
-    "pack_14::Mande Oral Epic": "theme-render",
-    "pack_14::Yoruba Mythology — Orisha": "theme-render",
-    "pack_14::Akan Mythology — Anansi": "theme-render",
-    "pack_14::Egyptian Mythology": "theme-render",
-    "pack_14::Maya Mythology": "theme-render",
-    "pack_14::Mexica Mythology": "theme-render",
     "pack_15::1. Classic Industrial Punks": "theme-render",
     "pack_15::2. Neon, Net & Signal Punks": "theme-render",
     "pack_15::3. Eco, Repair & Climate Punks": "theme-render",
@@ -176,7 +167,16 @@
     "pack_25::13. Surface & Textile Design": "applied-design",
     "pack_25::14. Apparel & Merchandise Graphics": "applied-design",
     "pack_25::15. Environmental Graphics & Wayfinding": "applied-design",
-    "pack_25::16. Motion Styleframes & Broadcast": "applied-design"
+    "pack_25::16. Motion Styleframes & Broadcast": "applied-design",
+    "pack_14::Demons, Yokai & Night Spirits": "theme-render",
+    "pack_14::Tricksters & Shape-Shifters": "theme-render",
+    "pack_14::Underworlds & Realms of the Dead": "theme-render",
+    "pack_14::Sky, Sun & Storm Gods": "theme-render",
+    "pack_14::Sea Monsters & Water Spirits": "theme-render",
+    "pack_14::Beasts, Guardians & Chimeras": "theme-render",
+    "pack_14::Heroes & Epics": "theme-render",
+    "pack_14::Creation, World Trees & Cosmos": "theme-render",
+    "pack_14::Witches, Oracles & Shamans": "theme-render"
   },
   "playbooks": {
     "photo": {
@@ -216,7 +216,9 @@
     "analog": {
       "title": "Proceso analógico",
       "decision": "Separar respuesta de imagen de época, cámara y soporte físico.",
-      "preserve": ["Escala de grano, curva de contraste, altas luces y sesgo cromático."],
+      "preserve": [
+        "Escala de grano, curva de contraste, altas luces y sesgo cromático."
+      ],
       "doNot": [
         "No agregar marcos, fechas, vestuario de época o una cámara física salvo selección del perfil."
       ],
@@ -293,7 +295,9 @@
     "paint": {
       "title": "Pigmento y pintura",
       "decision": "Separar manipulación del pigmento de géneros pictóricos y soportes de muestra.",
-      "preserve": ["Opacidad, transparencia, impasto, reserva, absorción y jerarquía de bordes."],
+      "preserve": [
+        "Opacidad, transparencia, impasto, reserva, absorción y jerarquía de bordes."
+      ],
       "doNot": [
         "No aplicar todos los verbos pictóricos a todos los medios.",
         "No introducir caballete, lienzo enmarcado o naturaleza muerta por defecto."
@@ -307,7 +311,9 @@
     "print": {
       "title": "Impresión y acabados",
       "decision": "Separar formación de la imagen, paleta, tema y formato de publicación.",
-      "preserve": ["Registro, trama, ganancia de punto, sobreimpresión o presión según técnica."],
+      "preserve": [
+        "Registro, trama, ganancia de punto, sobreimpresión o presión según técnica."
+      ],
       "doNot": [
         "No agregar símbolos ocultistas ni bordes de póster al extraer risografía.",
         "No confundir emisión de luz con tinta, foil o relieve; separar esos casos."
@@ -337,7 +343,9 @@
     "diagram": {
       "title": "Diagramas y datos",
       "decision": "Separar representación ilustrativa de datos funcionales.",
-      "preserve": ["Jerarquía de líneas, proyección, rutas y módulos indicados por el formato."],
+      "preserve": [
+        "Jerarquía de líneas, proyección, rutas y módulos indicados por el formato."
+      ],
       "doNot": [
         "No afirmar que un QR, circuito o dimensión generados funcionan.",
         "No rellenar datos ausentes con cifras plausibles."
@@ -368,7 +376,9 @@
     "pixel": {
       "title": "Pixel y sistemas retro",
       "decision": "Separar lógica de píxel de hardware y cámara.",
-      "preserve": ["Clusters, rampas de valor, resolución lógica propuesta y tramado."],
+      "preserve": [
+        "Clusters, rampas de valor, resolución lógica propuesta y tramado."
+      ],
       "doNot": [
         "No agregar consola, marco LCD, dungeon, vista isométrica ni HUD automáticamente.",
         "No prometer dimensiones exactas de un asset sin inspeccionar el archivo."
@@ -399,7 +409,9 @@
     "architecture": {
       "title": "Arquitectura y espacio",
       "decision": "Clasificar como dirección de diseño cuando cambia construcciones o distribución.",
-      "preserve": ["Proporciones, uniones, materialidad y reglas espaciales autorizadas."],
+      "preserve": [
+        "Proporciones, uniones, materialidad y reglas espaciales autorizadas."
+      ],
       "doNot": [
         "No convertir un interior existente en otro sitio sin permiso.",
         "No convertir estilo de iluminación en un listado de muebles obligatorios."
@@ -413,8 +425,12 @@
     "wardrobe": {
       "title": "Vestuario y subculturas",
       "decision": "Separar diseño de prendas, material textil y escena social.",
-      "preserve": ["Corte, confección, caída, superposición y materiales de las prendas objetivo."],
-      "doNot": ["No cambiar rostro, cuerpo, profesión, época del fondo ni venue sin solicitud."],
+      "preserve": [
+        "Corte, confección, caída, superposición y materiales de las prendas objetivo."
+      ],
+      "doNot": [
+        "No cambiar rostro, cuerpo, profesión, época del fondo ni venue sin solicitud."
+      ],
       "steps": [
         "Pedir al contrato una prenda/objetivo; no deducir un cuerpo nuevo.",
         "Mover referencias culturales y de época a procedencia/tema explícito."
@@ -424,7 +440,9 @@
     "material": {
       "title": "Material dirigido",
       "decision": "Conservar identidad material y explicitar la superficie objetivo.",
-      "preserve": ["Veta, poro, rugosidad, reflexión, translucencia y escala coherentes."],
+      "preserve": [
+        "Veta, poro, rugosidad, reflexión, translucencia y escala coherentes."
+      ],
       "doNot": [
         "No agregar la tabla/aserradero del ejemplo.",
         "No transformar toda la escena o anatomía al pedir una superficie."
@@ -439,7 +457,9 @@
     "weathering": {
       "title": "Desgaste y efectos",
       "decision": "Separar microdesgaste de daño estructural y emisión de partículas.",
-      "preserve": ["Mecanismo de corrosión, distribución, escala e intensidad autorizada."],
+      "preserve": [
+        "Mecanismo de corrosión, distribución, escala e intensidad autorizada."
+      ],
       "doNot": [
         "No derrumbar arquitectura por pedir pátina leve.",
         "No agregar humo, llamas o escombros si solo se solicita superficie."
@@ -469,7 +489,9 @@
     "distortion": {
       "title": "Abstracción y extrañeza",
       "decision": "Separar cambios de representación de geometría y espacio.",
-      "preserve": ["Planos, ritmos, unidades, perspectiva o deformación específica seleccionada."],
+      "preserve": [
+        "Planos, ritmos, unidades, perspectiva o deformación específica seleccionada."
+      ],
       "doNot": [
         "No introducir relojes, pasillos, piscinas o entidades por asociación con un nombre.",
         "No aplicar distorsión estructural en preserve ni quitarla de un perfil explícito."
@@ -499,7 +521,9 @@
     "food": {
       "title": "Alimento y presentación",
       "decision": "Mantener recetas culinarias como contenido explícito.",
-      "preserve": ["Vertido, espuma, reflejos, textura o tratamiento gráfico que se seleccione."],
+      "preserve": [
+        "Vertido, espuma, reflejos, textura o tratamiento gráfico que se seleccione."
+      ],
       "doNot": [
         "No forzar taza o plato al pedir solamente trazos de espuma.",
         "No disfrazar una receta alimentaria de estilo universal."

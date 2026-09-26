@@ -94,7 +94,7 @@ describe('legacy preview briefs for packs 12–17', () => {
       }
     }
 
-    expect(activePresetCount).toBe(209);
+    expect(activePresetCount).toBe(397);
     for (const [category, briefs] of activeBriefsByCategory) {
       expect(new Set(briefs).size, `${category} canonical briefs`).toBe(briefs.length);
     }

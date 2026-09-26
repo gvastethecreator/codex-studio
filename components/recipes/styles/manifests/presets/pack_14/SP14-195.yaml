@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-195
+packId: pack_14
+name: Gotland Picture Stone
+styleAnchors:
+  - Gotland Picture Stone
+  - norse mythic art technique
+  - keyhole stone
+displayName: Gotland Picture Stone
+category: 'Heroes & Epics'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - picture-stone
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gotland picture stone: keyhole-shaped stone slabs carved with stacked scenes of ships, riders, eight-legged horses and warriors arriving at the hall of the fallen.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject in stacked scenes on a keyhole-shaped picture stone.
+  color_and_tone: Limestone grey with red paint traces, kept consistent across the whole image.
+  lighting_and_shadow: Raking light on low relief, kept consistent across the whole image.
+  texture_and_material: Carved limestone, weathering and paint traces, kept consistent across the whole image.
+  camera_and_composition: Tall keyhole slab with registers, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mythic ancestral narrative.
+  rendering_and_quality: Low relief with stacked registers, kept consistent across the whole image.
+  creative_brief: "Gotland picture stone: keyhole-shaped stone slabs carved with stacked scenes of ships, riders, eight-legged horses and warriors arriving at the hall of the fallen. Carry it through keyhole stone, stacked scenes, ship, eight-legged horse. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: keyhole stone; stacked scenes; ship; eight-legged horse
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - picture-stone
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

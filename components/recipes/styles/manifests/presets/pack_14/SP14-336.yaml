@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-336
+packId: pack_14
+name: Banshee Mist Etching
+styleAnchors:
+  - Banshee Mist Etching
+  - Irish night-spirit art
+  - keening spirit
+displayName: Banshee Mist Etching
+category: Demons, Yokai & Night Spirits
+domain: Irish night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - banshee
+  - irish
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Banshee mist etching: Celtic-revival etchings of keening spirits over moors and ruined towers, fine lines dissolving into mist and moonlight.'
+  subject_treatment: Preserve the requested identity, count, pose and action; etch the subject as a spirit dissolving into mist over a moor or ruin.
+  color_and_tone: Silvery grey and deep black with pale moon.
+  lighting_and_shadow: Moonlight through mist, kept consistent across the whole image.
+  texture_and_material: Fine etched lines, aquatint mist and paper, kept consistent across the whole image.
+  camera_and_composition: Moorland with a ruined tower, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mournful haunting beauty.
+  rendering_and_quality: Delicate etched atmosphere, kept consistent across the whole image.
+  creative_brief: "Banshee mist etching: Celtic-revival etchings of keening spirits over moors and ruined towers, fine lines dissolving into mist and moonlight. Carry it through keening spirit, mist, ruined tower, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: keening spirit; mist; ruined tower; moonlight
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - banshee
+    - irish
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Irish night-spirit art

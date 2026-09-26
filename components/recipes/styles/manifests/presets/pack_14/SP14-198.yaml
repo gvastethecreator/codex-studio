@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-198
+packId: pack_14
+name: Oseberg Tapestry Fragment
+styleAnchors:
+  - Oseberg Tapestry Fragment
+  - norse mythic art technique
+  - narrow tapestry
+displayName: Oseberg Tapestry Fragment
+category: 'Witches, Oracles & Shamans'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - witches-oracles-shamans
+  - tapestry-fragment
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Oseberg tapestry fragment: narrow woven Viking tapestry bands of processions with wagons, horses, riders and shielded figures in faded red and ochre.'
+  subject_treatment: Preserve the requested identity, count, pose and action; weave the subject into a narrow faded tapestry band of processions.
+  color_and_tone: Faded red, ochre, blue and natural wool, kept consistent across the whole image.
+  lighting_and_shadow: Flat woven color, kept consistent across the whole image.
+  texture_and_material: Coarse wool weave, fraying and gaps, kept consistent across the whole image.
+  camera_and_composition: Long narrow procession band, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with faded ceremonial mystery.
+  rendering_and_quality: Authentic worn weave, kept consistent across the whole image.
+  creative_brief: "Oseberg tapestry fragment: narrow woven Viking tapestry bands of processions with wagons, horses, riders and shielded figures in faded red and ochre. Carry it through narrow tapestry, procession, wagons, faded wool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: narrow tapestry; procession; wagons; faded wool
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: witches-oracles-shamans
+  categoryName: 'Witches, Oracles & Shamans'
+  tags:
+    - curation-v2
+    - witches-oracles-shamans
+    - tapestry-fragment
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

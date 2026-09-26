@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-384
+packId: pack_14
+name: Bakunawa Moon-Eater Painting
+styleAnchors:
+  - Bakunawa Moon-Eater Painting
+  - Filipino water-spirit art
+  - sea serpent
+displayName: Bakunawa Moon-Eater Painting
+category: Sea Monsters & Water Spirits
+domain: Filipino water-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - bakunawa
+  - filipino
+  - mythic-waters
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bakunawa moon-eater painting: Philippine folklore painting of the great sea serpent rising from the ocean to swallow the moon while villagers bang pots to scare it.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject as a great sea serpent rising to swallow the moon.
+  color_and_tone: Deep ocean blue, moon silver and red, kept consistent across the whole image.
+  lighting_and_shadow: Moonlight and serpent glow, kept consistent across the whole image.
+  texture_and_material: Painterly waves, scales and night sky, kept consistent across the whole image.
+  camera_and_composition: Serpent rising toward a huge moon, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cosmic folk drama.
+  rendering_and_quality: Bold dramatic painting, kept consistent across the whole image.
+  creative_brief: "Bakunawa moon-eater painting: Philippine folklore painting of the great sea serpent rising from the ocean to swallow the moon while villagers bang pots to scare it. Carry it through sea serpent, moon, ocean, villagers with pots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sea serpent; moon; ocean; villagers with pots
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: Sea Monsters & Water Spirits
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - bakunawa
+    - filipino
+    - mythic-waters
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Filipino water-spirit art

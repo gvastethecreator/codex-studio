@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP14-203
+packId: pack_14
+name: Longship Prow Carving
+styleAnchors:
+  - Longship Prow Carving
+  - norse mythic art technique
+  - curving prow
+displayName: Longship Prow Carving
+category: 'Sea Monsters & Water Spirits'
+domain: norse mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - longship-prow
+  - norse-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Longship prow carving: tall curving ship prows carved as dragon and serpent heads with open jaws, painted stripes and clinker-built hull planks.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject into a tall curving prow above a clinker-built hull.
+  color_and_tone: Tarred black wood with red and white painted stripes.
+  lighting_and_shadow: Sea light and spray, kept consistent across the whole image.
+  texture_and_material: Clinker planks, carved heads and sea spray, kept consistent across the whole image.
+  camera_and_composition: Low angle up at the prow, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with fierce seafaring pride.
+  rendering_and_quality: Strong carved silhouette, kept consistent across the whole image.
+  creative_brief: "Longship prow carving: tall curving ship prows carved as dragon and serpent heads with open jaws, painted stripes and clinker-built hull planks. Carry it through curving prow, carved head, clinker hull, sea spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curving prow; carved head; clinker hull; sea spray
+avoidRules:
+  - readable runes
+  - horned-helmet cliché
+  - modern extremist symbols
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: 'Sea Monsters & Water Spirits'
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - longship-prow
+    - norse-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: norse mythic art technique

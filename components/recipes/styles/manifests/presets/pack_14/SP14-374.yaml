@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-374
+packId: pack_14
+name: Nine Dragons Storm Scroll
+styleAnchors:
+  - Nine Dragons Storm Scroll
+  - Chinese sky-god art
+  - dragons in clouds
+displayName: Nine Dragons Storm Scroll
+category: Sky, Sun & Storm Gods
+domain: Chinese sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - nine-dragons
+  - chinese
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nine dragons storm scroll: Chinese ink handscrolls of dragons writhing through storm clouds, waves and mist in splashed and dry brush ink.'
+  subject_treatment: Preserve the requested identity, count, pose and action; paint the subject writhing through storm clouds and mist in expressive ink.
+  color_and_tone: Ink black, grey washes and pearl white, kept consistent across the whole image.
+  lighting_and_shadow: Storm gloom with bright dragon pearls, kept consistent across the whole image.
+  texture_and_material: Splashed ink, dry brush and paper, kept consistent across the whole image.
+  camera_and_composition: Long horizontal storm scroll, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with thunderous mystic power.
+  rendering_and_quality: Virtuoso expressive ink, kept consistent across the whole image.
+  creative_brief: "Nine dragons storm scroll: Chinese ink handscrolls of dragons writhing through storm clouds, waves and mist in splashed and dry brush ink. Carry it through dragons in clouds, storm, splashed ink, handscroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dragons in clouds; storm; splashed ink; handscroll
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - nine-dragons
+    - chinese
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese sky-god art

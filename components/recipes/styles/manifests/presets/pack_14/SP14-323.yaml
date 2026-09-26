@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-323
+packId: pack_14
+name: Peking Opera Demon Mask
+styleAnchors:
+  - Peking Opera Demon Mask
+  - Chinese night-spirit art
+  - opera face paint
+displayName: Peking Opera Demon Mask
+category: Demons, Yokai & Night Spirits
+domain: Chinese night-spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - demons-yokai-night-spirits
+  - opera-demon
+  - chinese
+  - mythic-demons
+  - portable-style-study
+visualDna:
+  aesthetic: 'Peking opera demon mask: painted opera face makeup of demons and generals with symbolic colors, bold lines, flared eyebrows, and dazzling stage costume.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject with bold painted opera face patterns and stage costume.
+  color_and_tone: Symbolic red, black, blue, gold and white face paint.
+  lighting_and_shadow: Stage spotlight with dark wings, kept consistent across the whole image.
+  texture_and_material: Painted greasepaint, silk embroidery and pheasant plumes, kept consistent across the whole image.
+  camera_and_composition: Close dramatic stage portrait, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with theatrical fierce spectacle.
+  rendering_and_quality: Crisp vivid stage portrait, kept consistent across the whole image.
+  creative_brief: "Peking opera demon mask: painted opera face makeup of demons and generals with symbolic colors, bold lines, flared eyebrows, and dazzling stage costume. Carry it through opera face paint, symbolic colors, plumes, stage light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: opera face paint; symbolic colors; plumes; stage light
+avoidRules:
+  - cultural stereotypes or caricature
+  - readable text or script
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: demons-yokai-night-spirits
+  categoryName: Demons, Yokai & Night Spirits
+  tags:
+    - curation-v2
+    - demons-yokai-night-spirits
+    - opera-demon
+    - chinese
+    - mythic-demons
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Chinese night-spirit art

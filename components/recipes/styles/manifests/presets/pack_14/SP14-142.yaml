@@ -64,12 +64,12 @@ attributes:
       - SP14-054
       - SP14-055
       - SP14-056
-category: Greek Mythology — Epic Noir
+category: 'Heroes & Epics'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - hellenic-epic-noir
+  - heroes-epics
 visualDna:
   aesthetic:
     Hellenic epic noir with terracotta-red and black figure-ground, precise incised contours, bronze
@@ -112,8 +112,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: hellenic-epic-noir
-  categoryName: Greek Mythology — Epic Noir
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

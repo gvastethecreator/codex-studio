@@ -45,12 +45,12 @@ attributes:
     visualEvaluation: pending
     derivedFrom:
       - SP14-022
-category: Yoruba Mythology — Orisha
+category: 'Sky, Sun & Storm Gods'
 tags: &id001
   - curation-v2
   - identity-reviewed
   - visual-evaluation-pending
-  - yoruba-orisha
+  - sky-sun-storm-gods
 visualDna:
   aesthetic:
     'Yoruba Orisha mythic illustration combines poised sculptural forms, rhythmic carved contours
@@ -95,8 +95,8 @@ avoidRules:
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
-  categoryId: yoruba-orisha
-  categoryName: Yoruba Mythology — Orisha
+  categoryId: sky-sun-storm-gods
+  categoryName: 'Sky, Sun & Storm Gods'
   tags: *id001
   supportedTasks: *id002
   hasDefaultImage: true

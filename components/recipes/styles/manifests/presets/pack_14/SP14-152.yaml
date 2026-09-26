@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-152
+packId: pack_14
+name: Attic Black-Figure Vase
+styleAnchors:
+  - Attic Black-Figure Vase
+  - greek mythic art technique
+  - black silhouettes
+displayName: Attic Black-Figure Vase
+category: 'Heroes & Epics'
+domain: greek mythic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - heroes-epics
+  - black-figure
+  - greek-mythology
+  - portable-style-study
+visualDna:
+  aesthetic: 'Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render figures as black silhouettes with incised detail lines and small added color.
+  color_and_tone: Black silhouettes on orange clay with red and white accents.
+  lighting_and_shadow: Flat silhouettes without shading, kept consistent across the whole image.
+  texture_and_material: Incised lines, glossy slip and fired clay, kept consistent across the whole image.
+  camera_and_composition: Frieze of figures on a vase panel, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with archaic heroic energy.
+  rendering_and_quality: Crisp silhouettes and confident incision, kept consistent across the whole image.
+  creative_brief: "Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white. Carry it through black silhouettes, incised details, orange clay, added red and white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: black silhouettes; incised details; orange clay; added red and white
+avoidRules:
+  - readable Greek inscriptions
+  - modern tourist-souvenir kitsch
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: heroes-epics
+  categoryName: 'Heroes & Epics'
+  tags:
+    - curation-v2
+    - heroes-epics
+    - black-figure
+    - greek-mythology
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: greek mythic art technique

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-219
+packId: pack_14
+name: Mande Gala Indigo Cloth
+styleAnchors:
+  - Mande Gala Indigo Cloth
+  - mande epic art technique
+  - indigo cloth
+displayName: Mande Gala Indigo Cloth
+category: 'Sea Monsters & Water Spirits'
+domain: mande epic art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sea-monsters-water-spirits
+  - gala-indigo
+  - mande-epic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mande gala indigo cloth: deep indigo-dyed cotton with resist patterns of circles, stripes and knots, uneven blues and hand-dyed variation.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as resist patterns in deep hand-dyed indigo cloth.
+  color_and_tone: Deep indigo, pale blue and white resist, kept consistent across the whole image.
+  lighting_and_shadow: Soft light on cloth folds, kept consistent across the whole image.
+  texture_and_material: Hand-dyed cotton, resist circles and folds, kept consistent across the whole image.
+  camera_and_composition: Draped or hanging cloth, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with calm night depth.
+  rendering_and_quality: Authentic dye variation, kept consistent across the whole image.
+  creative_brief: "Mande gala indigo cloth: deep indigo-dyed cotton with resist patterns of circles, stripes and knots, uneven blues and hand-dyed variation. Carry it through indigo cloth, resist circles, hand-dyed, folds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: indigo cloth; resist circles; hand-dyed; folds
+avoidRules:
+  - generic tribal pattern
+  - cultural stereotypes or caricature
+  - readable text
+  - gore
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sea-monsters-water-spirits
+  categoryName: 'Sea Monsters & Water Spirits'
+  tags:
+    - curation-v2
+    - sea-monsters-water-spirits
+    - gala-indigo
+    - mande-epic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mande epic art technique

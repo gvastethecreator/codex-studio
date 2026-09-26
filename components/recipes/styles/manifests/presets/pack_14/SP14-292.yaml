@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP14-292
+packId: pack_14
+name: Maya Blue Pigment Wash
+styleAnchors:
+  - Maya Blue Pigment Wash
+  - maya art technique
+  - Maya blue
+displayName: Maya Blue Pigment Wash
+category: 'Sky, Sun & Storm Gods'
+domain: maya art technique
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - maya-blue
+  - sky-sun-storm-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Maya blue pigment wash: paintings dominated by the durable turquoise Maya blue, washed over figures and offerings with warm ochre accents.'
+  subject_treatment: Preserve the requested identity, count, pose and action; wash the subject in luminous turquoise Maya blue with warm accents.
+  color_and_tone: Luminous turquoise blue with ochre and red, kept consistent across the whole image.
+  lighting_and_shadow: Soft glowing blue light, kept consistent across the whole image.
+  texture_and_material: Mineral pigment washes and plaster, kept consistent across the whole image.
+  camera_and_composition: Figure framed by a blue field, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with sacred rain-soaked calm.
+  rendering_and_quality: Luminous saturated finish, kept consistent across the whole image.
+  creative_brief: "Maya blue pigment wash: paintings dominated by the durable turquoise Maya blue, washed over figures and offerings with warm ochre accents. Carry it through Maya blue, turquoise, washes, offerings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Maya blue; turquoise; washes; offerings
+avoidRules:
+  - readable glyphs
+  - cultural stereotypes or caricature
+  - sacrifice gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: 'Sky, Sun & Storm Gods'
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - maya-blue
+    - sky-sun-storm-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: maya art technique

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP14-368
+packId: pack_14
+name: Slavic Thunder Oak Carving
+styleAnchors:
+  - Slavic Thunder Oak Carving
+  - Slavic sky-god art
+  - sacred oak
+displayName: Slavic Thunder Oak Carving
+category: Sky, Sun & Storm Gods
+domain: Slavic sky-god art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - sky-sun-storm-gods
+  - thunder-oak
+  - slavic
+  - mythic-sky-gods
+  - portable-style-study
+visualDna:
+  aesthetic: 'Slavic thunder oak carving: carved wooden folk reliefs of the thunder god in a sacred oak, axes, rosettes of lightning and wolves, with rich wood grain.'
+  subject_treatment: Preserve the requested identity, count, pose and action; carve the subject in folk wood relief entwined with a sacred oak and thunder rosettes.
+  color_and_tone: Warm oak brown with dark grain, kept consistent across the whole image.
+  lighting_and_shadow: Lightning flash lighting carved wood, kept consistent across the whole image.
+  texture_and_material: Carved oak, rosettes, axe marks and bark, kept consistent across the whole image.
+  camera_and_composition: Tree-trunk relief with a central figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with ancient forest thunder.
+  rendering_and_quality: Bold folk carving, kept consistent across the whole image.
+  creative_brief: "Slavic thunder oak carving: carved wooden folk reliefs of the thunder god in a sacred oak, axes, rosettes of lightning and wolves, with rich wood grain. Carry it through sacred oak, thunder rosettes, carved wood, axe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sacred oak; thunder rosettes; carved wood; axe
+avoidRules:
+  - cultural stereotypes or caricature
+  - disrespectful depiction of deities
+  - readable text or script
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or caricature, disrespectful depiction of deities, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: sky-sun-storm-gods
+  categoryName: Sky, Sun & Storm Gods
+  tags:
+    - curation-v2
+    - sky-sun-storm-gods
+    - thunder-oak
+    - slavic
+    - mythic-sky-gods
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Slavic sky-god art
