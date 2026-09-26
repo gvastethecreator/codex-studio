@@ -1436,6 +1436,24 @@ function resolveAnimationSequenceFrame(
   );
 }
 
+function stylesReferenceInstruction(
+  params: Record<string, unknown> | null | undefined,
+  index: number,
+) {
+  const mode = params?.styleReferenceMode ?? params?.mode;
+  const preserve = mode === 'preserve' || mode === 'PRESERVE_REFERENCE';
+  if (preserve && index === 0) {
+    return 'Keep the subject, pose, framing and camera in this image. Apply only the selected visual treatment.';
+  }
+  if (preserve) {
+    return 'Use this as more of the same subject. Do not take a style sample or a new scene from it.';
+  }
+  if (mode === 'reinterpret' || mode === 'CREATIVE_REIMAGINING') {
+    return 'Keep the subject identity in this image. Change pose, framing and camera only where the prompt asks.';
+  }
+  return 'Use as source/reference material while applying the selected style layers.';
+}
+
 export function buildGenerationTaskSpecFromRecipe({
   id,
   providerId = null,
@@ -1588,7 +1606,7 @@ export function buildGenerationTaskSpecFromRecipe({
             : config.recipeId === 'character-lab' && index === 0
               ? 'Use as the primary character identity source.'
               : config.recipeId === 'styles'
-                ? 'Use as source/reference material while applying the selected style layers.'
+                ? stylesReferenceInstruction(config.recipeParams, index)
                 : 'Use as visual reference according to the requested generation task.',
       })),
     },

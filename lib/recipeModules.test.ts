@@ -326,6 +326,43 @@ describe('recipeModules', () => {
       style: 'Studio Headshot + Film Noir',
     });
     expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('Style Slot 2');
+    expect(spec.quality.referenceRoles[0]?.instruction).toBe(
+      'Use as source/reference material while applying the selected style layers.',
+    );
+  });
+
+  it('tells each Styles reference whether to preserve or reinterpret it', () => {
+    const instruction = (mode: string, index: number) => {
+      const spec = buildGenerationTaskSpecFromRecipe({
+        id: 'spec-style-mode',
+        providerId: 'codex',
+        config: {
+          ...DEFAULT_GENERATION_CONFIG,
+          prompt: 'a ceramic bird',
+          recipeId: 'styles',
+          recipeParams: {
+            presetId: 'SP01-001',
+            presetName: 'Studio Headshot',
+            styleReferenceMode: mode,
+          },
+          attachments: [
+            { id: 'ref-1', name: 'one.png', dataUrl: 'data:image/png;base64,aaa', strength: 0.15 },
+            { id: 'ref-2', name: 'two.png', dataUrl: 'data:image/png;base64,bbb', strength: 0.15 },
+          ],
+        },
+      });
+      return spec.quality.referenceRoles[index]?.instruction;
+    };
+
+    expect(instruction('preserve', 0)).toBe(
+      'Keep the subject, pose, framing and camera in this image. Apply only the selected visual treatment.',
+    );
+    expect(instruction('preserve', 1)).toBe(
+      'Use this as more of the same subject. Do not take a style sample or a new scene from it.',
+    );
+    expect(instruction('reinterpret', 0)).toBe(
+      'Keep the subject identity in this image. Change pose, framing and camera only where the prompt asks.',
+    );
   });
 
   it('uses recipe-specific default tasks without encoding providers into task names', () => {
