@@ -6,7 +6,7 @@ styleAnchors:
   - Kouta Hirano - Crimson Formation Charge
 displayName: Kouta Hirano - Crimson Formation Charge
 category: 6. Samurai & Medieval
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink and grey tone with a single savage crimson accent across the charge.
   lighting_and_shadow: Harsh contrast where huge black shadow shapes swallow faces and armor edges glint white.
   texture_and_material: Heavy ink fills, scratchy speed lines, screentone gradients and ink splatter.
@@ -56,7 +56,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-027.webp

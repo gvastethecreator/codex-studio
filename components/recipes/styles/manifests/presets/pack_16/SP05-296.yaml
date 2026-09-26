@@ -6,7 +6,7 @@ styleAnchors:
   - Metropolis - Humanist Art Deco Retrofuture
 displayName: Metropolis - Humanist Art Deco Retrofuture
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm amber, brass gold, deep teal and sepia jazz-age tones.
   lighting_and_shadow: Warm glowing city lights, spotlights on towers, dramatic industrial glare.
   texture_and_material: Clean cartoon cel figures over painted and CG-built deco architecture.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-296.webp

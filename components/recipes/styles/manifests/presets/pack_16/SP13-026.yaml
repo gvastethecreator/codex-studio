@@ -6,7 +6,7 @@ styleAnchors:
   - Goseki Kojima - Pre-Strike Stillness
 displayName: Goseki Kojima - Pre-Strike Stillness
 category: 6. Samurai & Medieval
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black sumi brush ink on white paper with grey wash and no other color.
   lighting_and_shadow: Light made by the untouched paper, shadows as heavy wet brush masses and dry-brush edges.
   texture_and_material: Wet and dry brush strokes, splattered ink, grey wash tones and rough paper grain.
@@ -54,7 +54,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-026.webp

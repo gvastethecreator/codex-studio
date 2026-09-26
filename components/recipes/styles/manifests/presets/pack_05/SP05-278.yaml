@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-278
 packId: pack_05
-name: Mineral Loneliness Fracture Style
+name: Land of the Lustrous Orange - Mineral Loneliness Fracture Style
 styleAnchors:
-  - Mineral Loneliness Fracture Style
-displayName: Mineral Loneliness Fracture
+  - Land of the Lustrous Orange - Mineral Loneliness Fracture Style
+displayName: Land of the Lustrous Orange - Mineral Loneliness Fracture Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Seinen ink illustration whose contours branch like hairline fissures in slate, splitting every form into a few large unequal planes of flat chalky tone.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Chalk white, cool slate and deep graphite carry most values; one small mica-silver glint marks the focal plane and prompt hues survive at half saturation.
-  lighting_and_shadow: Pale edge light runs along the fissure lines with quiet flat shadow inside each plane; light reads as reflected off stone, never glowing.
-  texture_and_material: Dry pumice-like grain inside the planes, crisp fracture strokes of even width, and bare paper left open between the largest tonal shards.
-  camera_and_composition: Keep the requested camera; wide margins of empty chalk-tone space make the subject sit small and isolated inside the requested framing.
-  atmosphere_and_mood: Quiet, cold loneliness carried by sparse marks and long empty intervals, never outright tragedy.
-  rendering_and_quality: Crisp planar ink drawing with fissure contours and flat chalk fills, no soft gradients; always illustrated, never a photographed crystal or stone.
-  key_features: branching fissure contours; few unequal flat planes; chalk, slate and graphite values; single mica-silver glint; wide empty margins
-  creative_brief: "Seinen ink illustration whose contours branch like hairline fissures in slate, splitting every form into a few large unequal planes of flat chalky tone. Carry it through branching fissure contours, few unequal flat planes, chalk, slate and graphite values, single mica-silver glint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Orange Land of the Lustrous look (2017): cel-shaded 3D gem people with translucent crystal hair and bodies, refracted rainbow light, cracks and chips, and lonely seaside meadows.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as translucent gem-bodied people with crystal hair, faceted refractive skin and hairline cracks that glint with light. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mineral mint, peridot green, sapphire blue, pale gold and refracted rainbow edges on white grass.
+  lighting_and_shadow: Bright seaside daylight refracting through crystal bodies into scattered rainbow caustics on the grass.
+  texture_and_material: Cel-shaded 3D surfaces with gemstone facets, translucent refraction, cracks and powdery chips.
+  camera_and_composition: Sweeping cel-shaded CG camera moves across meadows and slow tragic close-ups of cracking crystal.
+  atmosphere_and_mood: Keep the requested mood with luminous mineral loneliness.
+  rendering_and_quality: Polished cel-shaded 3D television frame with gemstone translucency and refraction.
+  key_features: Translucent gem bodies; refracted rainbow light; cracks and chips; lonely meadows
+  creative_brief: "Studio Orange Land of the Lustrous look (2017): cel-shaded 3D gem people with translucent crystal hair and bodies, refracted rainbow light, cracks and chips, and lonely seaside meadows. Carry it through Translucent gem bodies, refracted rainbow light, cracks and chips, lonely meadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - mint-green gem person with a short bob
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -46,7 +49,6 @@ avoidRules:
   - empty abstract-only field
   - ice palace corridor
   - weapon
-  - gore
   - readable symbol
   - splatter-only horror
   - photoreal grime
@@ -65,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-278.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: mint-green gem person with a short bob, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

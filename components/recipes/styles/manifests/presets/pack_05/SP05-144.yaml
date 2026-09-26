@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-144
 packId: pack_05
-name: Record-Scratch Stutter Swagger
+name: Samurai Champloo - Record-Scratch Stutter Swagger
 styleAnchors:
-  - Record-Scratch Stutter Swagger
+  - Samurai Champloo - Record-Scratch Stutter Swagger
   - Samurai Champloo - Lo-Fi Edo Swagger
-displayName: Record-Scratch Stutter Swagger
+displayName: Samurai Champloo - Record-Scratch Stutter Swagger
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Dusty gold, warm brown and subdued blue-grey, with an occasional spray-paint magenta accent.
-  lighting_and_shadow: Soft warm-cool bands with few hard shadow groups.
-  texture_and_material: Fine vinyl-like scratches and dry print grain over warm flats.
-  camera_and_composition: Keep the requested framing; offbeat balance with relaxed weight on one side.
-  atmosphere_and_mood: Unhurried swagger and an easy, syncopated rhythm.
-  rendering_and_quality: Warm dusty color, scratch texture and stutter outlines only on moving parts.
-  key_features: doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance
-  creative_brief: "Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter. Carry it through doubled offset stutter outlines, vinyl scratch texture, flattened woodblock landscape, dusty gold and brown, offbeat balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Manglobe Samurai Champloo look (2004) by Shinichiro Watanabe: Edo period mixed with hip-hop swagger, record-scratch stutter editing, graffiti touches and Kazuto Nakazawa designs.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakazawa designs, lanky cool figures, messy hair, period clothes mixed with streetwear attitude. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm Edo earth tones with hip-hop graffiti accents.
+  lighting_and_shadow: Warm Edo sun on dusty streets and lantern glow in teahouses at night.
+  texture_and_material: Loose cel with graffiti touches and stuttered freeze-frames.
+  camera_and_composition: Record-scratch freeze frames, stuttered cuts and low breakdance camera angles.
+  atmosphere_and_mood: Keep the requested mood with cool rhythmic swagger.
+  rendering_and_quality: Stylish 2004 Manglobe television frame with hip-hop editing rhythm.
+  key_features: Champloo hip-hop; record-scratch edits; Edo swagger; Nakazawa designs
+  creative_brief: "Manglobe Samurai Champloo look (2004) by Shinichiro Watanabe: Edo period mixed with hip-hop swagger, record-scratch stutter editing, graffiti touches and Kazuto Nakazawa designs. Carry it through Champloo hip-hop, record-scratch edits, Edo swagger, Nakazawa designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky-haired swordsman in a red kimono
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -67,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-144.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a spiky-haired swordsman in a red kimono, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

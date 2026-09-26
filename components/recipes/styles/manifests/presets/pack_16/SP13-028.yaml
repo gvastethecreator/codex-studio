@@ -6,7 +6,7 @@ styleAnchors:
   - Kaoru Mori - Heraldic Oath
 displayName: Kaoru Mori - Heraldic Oath
 category: 6. Samurai & Medieval
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: "Kaoru Mori manga look as in A Bride's Story: obsessively detailed costumes, embroidery, carved wood and textile ornament, gentle realistic faces and devoted quiet ceremony."
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Mori realism, gentle faces, detailed hair and layered costumes where every embroidered pattern is drawn.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mori realism, gentle faces, detailed hair and layered costumes where every embroidered pattern is drawn. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with fine grey tone, or soft muted watercolor for color pages.
   lighting_and_shadow: Soft natural light rendered by careful hatching and tone, gentle glow on ornament.
   texture_and_material: Meticulous pen line, embroidery patterns, carved ornament and fine hatching.
@@ -56,7 +56,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-028.webp

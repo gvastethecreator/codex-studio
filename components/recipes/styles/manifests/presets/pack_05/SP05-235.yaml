@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-235
 packId: pack_05
-name: Pop-Cyber Simulation Gloss
+name: Megazone 23 - Pop-Cyber Simulation Gloss
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Y2K pop-cyber gloss: candy-jelly highlights, bubble gradients, chrome-pink rims, and edges dissolving into ordered pixel dither.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Vivid pink, cyan, violet and a small lime accent on white or deep indigo, with glossy bright gradients.
-  lighting_and_shadow: Big soft jelly specular blobs and a white window-shaped highlight on curved surfaces, with cel shadows in clean violet.
-  texture_and_material: Translucent gel-plastic surfaces, bubble gradients, and ordered four-by-four pixel dither on edges and falloffs.
-  camera_and_composition: Keep the requested view; float small glossy bubble shapes and dither patches around the subject.
-  atmosphere_and_mood: Playful, synthetic and giddy, a toy-bright simulation of summer.
-  rendering_and_quality: Vector-clean outlines, glossy gel highlights and ordered dither transitions; no grime and no photorealism.
-  key_features: candy-jelly gel highlights; bubble gradients; chrome-pink rims; ordered pixel dither; pink, cyan and lime palette
-  creative_brief: "Y2K pop-cyber gloss: candy-jelly highlights, bubble gradients, chrome-pink rims, and edges dissolving into ordered pixel dither. Carry it through candy-jelly gel highlights, bubble gradients, chrome-pink rims, ordered pixel dither, pink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'AIC Megazone 23 OVA look (1985) with Haruhiko Mikimoto and Toshihiro Hirano: eighties Tokyo as a simulation, idol singers, motorcycles and glossy pop cyberpunk.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mikimoto designs, glossy eyes, feathered eighties hair, biker jackets and idol costumes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon pink, electric blue, chrome and night purple.
+  lighting_and_shadow: Neon night city light with glossy eighties highlights on eyes and bikes.
+  texture_and_material: Glossy hand-painted eighties cel with neon glows and soft grain.
+  camera_and_composition: Night highway motorcycle rides and glittering idol stage shots.
+  atmosphere_and_mood: Keep the requested mood with glossy simulated romance.
+  rendering_and_quality: Glossy 1985 AIC OVA frame with pop cyberpunk and simulated city.
+  key_features: Megazone 23 pop; Mikimoto eyes; simulated Tokyo; neon highways
+  creative_brief: "AIC Megazone 23 OVA look (1985) with Haruhiko Mikimoto and Toshihiro Hirano: eighties Tokyo as a simulation, idol singers, motorcycles and glossy pop cyberpunk. Carry it through Megazone 23 pop, Mikimoto eyes, simulated Tokyo, neon highways. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -58,10 +59,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-235.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal car render, showroom 3D product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal car render, showroom 3D product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -70,8 +75,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Megazone 23 - Pop-Cyber Simulation Gloss
+styleAnchors:
+  - Megazone 23 - Pop-Cyber Simulation Gloss

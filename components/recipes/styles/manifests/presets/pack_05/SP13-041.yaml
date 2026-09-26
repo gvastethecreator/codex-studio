@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-041
 packId: pack_05
-name: Dutch Tilt Momentum Frame
+name: Kenichi Kutsuna - Dutch Tilt Momentum Frame
 styleAnchors:
-  - Dutch Tilt Momentum Frame
+  - Kenichi Kutsuna - Dutch Tilt Momentum Frame
   - anime action staging
   - camera rolled 20-35 degrees
-displayName: Dutch Tilt Momentum Frame
+displayName: Kenichi Kutsuna - Dutch Tilt Momentum Frame
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - dutch-angle
   - canted-frame
+  - reference-title
 visualDna:
-  aesthetic: 'Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the strong camera roll that tilts the horizon with the direction of effort, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette with a slightly increased value contrast between subject and ground.
-  lighting_and_shadow: Existing light kept, with cast shadows rotating with the tilt so they read as diagonals.
-  texture_and_material: Clean cel surfaces; architectural lines stay straight but tilted, never warped.
-  camera_and_composition: Eye-level or slightly low, rolled 20 to 35 degrees, with the subject pushing uphill against the tilt.
-  atmosphere_and_mood: Unsteady urgency and strain without any added threat.
-  rendering_and_quality: Straight, confident perspective lines on the tilted grid and a stable readable subject.
-  creative_brief: "Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent. Carry it through camera rolled 20-35 degrees, tilted horizon and verticals, subject pushing against the tilt, diagonal shadows, straight not warped lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines
+  aesthetic: 'Kenichi Kutsuna sakuga as in his action episodes: dynamic canted compositions, strong diagonal momentum, detailed physical effort and weighty cloth and rope.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures straining with visible physical effort, leaning hard against diagonal forces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sea greys, rope browns and stormy blue light.
+  lighting_and_shadow: Stormy directional light that emphasizes the tilted diagonals.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Strong Dutch tilt with the horizon slanted and all motion running diagonally.
+  atmosphere_and_mood: Keep the requested mood with straining diagonal momentum.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Kenichi Kutsuna sakuga as in his action episodes: dynamic canted compositions, strong diagonal momentum, detailed physical effort and weighty cloth and rope. Carry it through Kenichi Kutsuna diagonals, Dutch tilt, physical effort, weighty rope. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kenichi Kutsuna diagonals; Dutch tilt; physical effort; weighty rope
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-041.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, fisheye distortion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, fisheye distortion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - dutch-angle
     - canted-frame
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

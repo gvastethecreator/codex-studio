@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Takashi Okazaki - Ink-Splatter Swordplay
 category: 6. Samurai & Medieval
 domain: sumi ink action anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pure black, stark white and a single red accent color.
   lighting_and_shadow: Graphic high contrast with silhouettes and white slash lines of light.
   texture_and_material: Ink splatter, dry brush, gritty grain and graphic slash marks.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

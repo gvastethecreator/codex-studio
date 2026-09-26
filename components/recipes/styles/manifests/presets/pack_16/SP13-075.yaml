@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Yasuhisa Hara - Grand Siege Panorama
 category: 6. Samurai & Medieval
 domain: epic siege anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with grey tone, dust brown and sunset red in color pages.
   lighting_and_shadow: Sunset backlight over armies, dust haze and dramatic rim light on generals.
   texture_and_material: Dense crowd hatching, speed lines and dust clouds.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

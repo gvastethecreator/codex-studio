@@ -3,7 +3,7 @@ id: SP05-080
 packId: pack_16
 name: Children of the Sea - Cosmic Ocean Lyrical
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,7 +14,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep ocean indigo, glowing plankton cyan, sunlit aquarium teal and warm summer skin tones.
   lighting_and_shadow: Underwater caustics, bioluminescent glow and cosmic light blooms.
   texture_and_material: Hand-hatched pencil lines on characters, painterly water, particle-filled 3D ocean effects.

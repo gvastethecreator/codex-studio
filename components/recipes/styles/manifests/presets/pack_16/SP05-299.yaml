@@ -6,7 +6,7 @@ styleAnchors:
   - Paprika - Dream Invasion Carnival
 displayName: Paprika - Dream Invasion Carnival
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Glittering gold, carnival red, toy colors and night-city blues.
   lighting_and_shadow: Parade lights, confetti glitter and glowing dream haze.
   texture_and_material: Dense detailed cel parade crowds, confetti particles and painted city.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-299.webp

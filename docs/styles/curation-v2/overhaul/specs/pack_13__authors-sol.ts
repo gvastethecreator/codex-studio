@@ -13,7 +13,7 @@ const spec: Spec = {
         aesthetic:
           'Kyoto Animation television style of its slice-of-life band and club series: soft rounded character designs, large luminous layered eyes, glossy hair highlights, immaculate cleanup lines and tiny precise hand, foot and hair acting.',
         subject_treatment:
-          'Preserve the requested identity, count, pose and action; draw adults with soft rounded faces, big glossy eyes with several highlight layers and small expressive gestures of hands, shoulders and feet.',
+          'Preserve the requested identity, count, pose, action and any requested clothing; draw adults with soft rounded faces, big glossy eyes with several highlight layers and small expressive gestures of hands, shoulders and feet. Wardrobe details apply only when the prompt leaves clothing open.',
         color_and_tone:
           'Pastel warm palette, cream, peach, sky blue and soft teal, with gentle color-graded light.',
         lighting_and_shadow:

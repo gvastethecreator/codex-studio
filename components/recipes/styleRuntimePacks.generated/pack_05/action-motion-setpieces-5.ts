@@ -5,675 +5,618 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-021',
-    name: 'Action Burst Alley Rush',
+    name: 'Yutaka Nakamura - Action Burst Alley Rush',
+    displayName: 'Yutaka Nakamura - Action Burst Alley Rush',
+    styleAnchors: ['Yutaka Nakamura - Action Burst Alley Rush'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage.',
+        'Yutaka Nakamura sakuga as in his BONES action scenes: bodies launched forward with extreme perspective, square chunky debris flying in blocky shapes, dust clouds and sharp shadow flashes.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the forward-rush staging, foreshortening and converging depth lines, and adds no opponent, sports gear, extra prop or danger.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with compact muscular action poses, clothes snapping with speed and limbs thrust toward the viewer in extreme perspective. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Keep the prompt palette; cooler dark-blue values in the background push the warmer, lighter subject forward.',
+        'Neutral street palette with sharp white impact flashes and warm dust tones across the whole frame.',
       lighting_and_shadow:
-        'Hard cel edge highlights on the leading side of the subject, aligned with its travel; no flashes or sparks.',
+        'Flat daylight broken by sudden hard shadow flashes that snap across figures at the moment of impact.',
       texture_and_material:
-        'Crisp cel contours with three to six tapered motion streaks attached only to trailing edges.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        "A 24 mm-equivalent low front three-quarter view, the leading hand or foot almost touching the lens, the vanishing point tucked behind the subject's shoulder.",
-      atmosphere_and_mood:
-        'Forward pressure and urgency that live in the framing, not in added danger.',
+        'Forward rush straight at the lens, with blocky debris and dust bursting outward around the figure.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive forward momentum.',
       rendering_and_quality:
-        'Sharp 2D cel rendering with stable anatomy through the foreshortening and clean foreground-to-background separation.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       key_features:
-        'lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks',
+        'Yutaka Nakamura blocky debris; extreme perspective rush; shadow flashes; dust bursts',
       creative_brief:
-        "Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage. Carry it through lunge toward the lens, leading limb foreshortened to double size, converging diagonals, compressed depth, tapered trailing streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yutaka Nakamura sakuga as in his BONES action scenes: bodies launched forward with extreme perspective, square chunky debris flying in blocky shapes, dust clouds and sharp shadow flashes. Carry it through Yutaka Nakamura blocky debris, extreme perspective rush, shadow flashes, dust bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-022',
-    name: 'Vertigo Energy Cross Style',
-    displayName: 'Vertigo Energy Cross',
-    styleAnchors: ['Vertigo Energy Cross Style'],
+    name: 'Norio Matsumoto - Vertigo Energy Cross Style',
+    displayName: 'Norio Matsumoto - Vertigo Energy Cross Style',
+    styleAnchors: ['Norio Matsumoto - Vertigo Energy Cross Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X.",
+        'Norio Matsumoto sakuga as in his fight scenes: loose rough flowing lines, bodies drawn with elastic weight, swooping camera turns and scenes that feel painted in motion rather than posed.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the steep high oblique viewpoint and the X-crossing of travel line and edge line, and adds no opponent, sports gear, extra prop or danger.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with loose expressive lines that stretch and bend with motion, hair and clothes streaming in fluid rough strokes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Keep the prompt palette; the far depth drops in value so the two crossing paths separate by contrast.',
+        'Muted naturalistic palette with sudden bright accents where motion peaks, kept loose and painterly.',
       lighting_and_shadow:
-        "Crisp highlights on the crossing edges only, following the prompt's light; no sparks or energy effects.",
+        'Soft natural light that shifts as the camera swoops, with rough painted shadow shapes.',
       texture_and_material:
-        'Fine directional marks attached to the moving subject; surfaces below simplify into flat value bands with distance.',
+        'Loose rough pencil-like lines, painterly smears and minimal cleanup that keeps the drawing alive.',
       camera_and_composition:
-        'A 70 to 80 degree down-angle through a wide lens, horizon out of frame, with the crossing point placed on a third and generous air around it.',
-      atmosphere_and_mood:
-        'Vertigo and suspended breath created by height and direction, never by a collision.',
+        'Steep vertigo angles, swooping camera rotations and figures seen from dizzying heights.',
+      atmosphere_and_mood: 'Keep the requested mood with dizzying fluid motion.',
       rendering_and_quality:
-        'Firm 2D contours, stable structure under steep perspective and both crossing paths readable at a glance.',
-      key_features:
-        'steep 70-80 degree down-angle; X-crossing of travel line and edge line; wide lens; far depth dropping in value; horizon out of frame',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
+      key_features: 'Norio Matsumoto loose line; swooping camera; elastic bodies; vertigo',
       creative_brief:
-        "Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X. Carry it through steep 70-80 degree down-angle, X-crossing of travel line and edge line, wide lens, far depth dropping in value, horizon out of frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Norio Matsumoto sakuga as in his fight scenes: loose rough flowing lines, bodies drawn with elastic weight, swooping camera turns and scenes that feel painted in motion rather than posed. Carry it through Norio Matsumoto loose line, swooping camera, elastic bodies, vertigo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-023',
-    name: 'Neon Vector Discharge Style',
-    displayName: 'Neon Vector Discharge',
-    styleAnchors: ['Neon Vector Discharge Style'],
+    name: 'Yoshinori Kanada - Neon Vector Discharge Style',
+    displayName: 'Yoshinori Kanada - Neon Vector Discharge Style',
+    styleAnchors: ['Yoshinori Kanada - Neon Vector Discharge Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts.',
+        'Yoshinori Kanada sakuga style: angular geometric light effects, sharp triangular flames and sparks, stylized Kanada poses with bent limbs and bold graphic explosions in flat color.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the vector path-tracing device that draws the action as clean geometric arcs, and adds no opponent, sports gear, extra prop or danger.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures in angular dynamic Kanada poses, sharp bent limbs and flat stylized silhouettes caught mid-action. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Keep the prompt palette; the path arcs take a restrained violet-blue that sits on existing colors without recoloring them.',
+        'Bold flat neon yellow, magenta and cyan effects against dark flat backgrounds.',
       lighting_and_shadow:
-        'Precise directional light with narrow edge highlights on the moving parts; the arcs themselves do not glow.',
+        'Graphic flat light where glowing angular shapes of energy replace realistic light sources.',
       texture_and_material:
-        'Clean flat cel finish; arcs are one to two pixels thick, evenly spaced, and fade out after one full movement cycle.',
+        'Flat color effect shapes, sharp triangular sparks and crisp geometric outlines.',
       camera_and_composition:
-        'A controlled three-quarter side view that shows the whole path, with arcs never crossing the face or focal hands.',
-      atmosphere_and_mood:
-        'Technical, analytical momentum; the movement feels measured and exact rather than violent.',
+        'Stylized dramatic angles with angular effect shapes framing the action.',
+      atmosphere_and_mood: 'Keep the requested mood with sharp electric dynamism.',
       rendering_and_quality:
-        'Sharp technical contours and crisp vector arcs kept secondary to the subject; no sci-fi interface graphics.',
-      key_features:
-        'movement path traced as vector arcs; thin evenly spaced curves; violet-blue path color; three-quarter side view; clean flat cel finish',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
+      key_features: 'Kanada angular effects; triangular sparks; stylized poses; flat neon',
       creative_brief:
-        "Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts. Carry it through movement path traced as vector arcs, thin evenly spaced curves, violet-blue path color, three-quarter side view, clean flat cel finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yoshinori Kanada sakuga style: angular geometric light effects, sharp triangular flames and sparks, stylized Kanada poses with bent limbs and bold graphic explosions in flat color. Carry it through Kanada angular effects, triangular sparks, stylized poses, flat neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-024',
-    name: 'Monumental Impact Burst Style',
-    displayName: 'Monumental Impact Burst',
-    styleAnchors: ['Monumental Impact Burst Style'],
+    name: 'Tatsuyuki Tanaka - Monumental Impact Burst Style',
+    displayName: 'Tatsuyuki Tanaka - Monumental Impact Burst Style',
+    styleAnchors: ['Tatsuyuki Tanaka - Monumental Impact Burst Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast.',
+        'Tatsuyuki Tanaka sakuga and illustration as in his Akira-era key animation: meticulous mechanical weight, precise detailed impact, heavy believable mass and dense controlled effects.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the peak-moment framing with radiating structure lines and a huge-scale foreground element, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; strongest value contrast sits at the hub, with restrained crimson or gold accents only if already present.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with precise weighty anatomy and heavy believable tools, every impact showing real mass. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm forge oranges, iron greys and precise bright highlights on metal.',
       lighting_and_shadow:
-        'Contrast concentrated at the point of action using the existing light; no flashes, explosions or sparks.',
+        'Hot glowing impact light and hard realistic shadows around heavy objects.',
       texture_and_material:
-        'Decisive hard-edged forms; existing debris or droplets only when the prompt already has them.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Low wide angle with the foreground element filling a third of the frame and scene lines radiating from the action point.',
-      atmosphere_and_mood:
-        'Monumental emphasis on one instant, weighty without triumph or aggression.',
+        'Heavy low angles on the moment of impact with detailed sparks and debris.',
+      atmosphere_and_mood: 'Keep the requested mood with monumental weighty impact.',
       rendering_and_quality:
-        'Hard controlled strokes, stable structure and a single unmistakable focal hub.',
-      key_features:
-        'peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
+      key_features: 'Tatsuyuki Tanaka weight; precise impact; heavy mass; detailed sparks',
       creative_brief:
-        "Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast. Carry it through peak instant at the hub, radiating structural lines, huge-scale foreground element, low wide angle, hub-centered contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tatsuyuki Tanaka sakuga and illustration as in his Akira-era key animation: meticulous mechanical weight, precise detailed impact, heavy believable mass and dense controlled effects. Carry it through Tatsuyuki Tanaka weight, precise impact, heavy mass, detailed sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-025',
-    name: 'Upward Thunder Momentum Style',
-    displayName: 'Upward Thunder Momentum',
-    styleAnchors: ['Upward Thunder Momentum Style'],
+    name: 'Ryotaro Makihara - Upward Thunder Momentum Style',
+    displayName: 'Ryotaro Makihara - Upward Thunder Momentum Style',
+    styleAnchors: ['Ryotaro Makihara - Upward Thunder Momentum Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward.',
+        'Ryotaro Makihara sakuga as in his Mob Psycho and Fate action: rough energetic lines, big vertical motion, crackling lightning-like effects and bold stylized smears.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the tall vertical layering and rising side-view staging, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; values lighten layer by layer toward the top, with restrained white-blue accents at the highest edges.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with rough energetic lines, stretched limbs climbing or rising, and clothes whipping upward. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep storm blues with bright electric yellow and white effect accents.',
       lighting_and_shadow:
-        'Directional highlights on upward-facing edges; no lightning, flashes or new light sources.',
-      texture_and_material:
-        'Fine vertical motion marks under the rising subject only; surfaces stay clean and layered.',
+        'Crackling lightning-like effect light and storm backlight on climbing figures.',
+      texture_and_material: 'Rough energetic lines, crackle effects and stylized smears.',
       camera_and_composition:
-        'A tall portrait frame from a side-on or slight low angle, the subject in the lower half and at least a third of the frame left open above it.',
-      atmosphere_and_mood: 'Lift and ascent carried by spacing and line direction, not by heroics.',
+        'Vertical upward compositions with figures rising toward the top of the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with surging upward momentum.',
       rendering_and_quality:
-        'Powerful but controlled contours with clear vertical separation between layers.',
-      key_features:
-        'stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
+      key_features: 'Ryotaro Makihara rough energy; vertical motion; crackling effects',
       creative_brief:
-        "Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward. Carry it through stacked horizontal layers, subject rising from lower half, open space above, values lightening upward, side-on tall framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Ryotaro Makihara sakuga as in his Mob Psycho and Fate action: rough energetic lines, big vertical motion, crackling lightning-like effects and bold stylized smears. Carry it through Ryotaro Makihara rough energy, vertical motion, crackling effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-036',
-    name: 'Smear-Frame Arc Staging',
-    displayName: 'Smear-Frame Arc Staging',
+    name: 'Shingo Yamashita - Smear-Frame Arc Staging',
+    displayName: 'Shingo Yamashita - Smear-Frame Arc Staging',
     styleAnchors: [
-      'Smear-Frame Arc Staging',
+      'Shingo Yamashita - Smear-Frame Arc Staging',
       'anime action staging',
       'one stretched smear shape along the arc',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model.',
+        'Shingo Yamashita sakuga as in his Naruto Shippuden and Mob episodes: painterly smear frames, bold colored effect arcs, digital brush textures and high-speed swirling motion.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the smear-frame drawing of the fastest moving part, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the smear carries the moving part colors in flat bands, slightly lighter than the solid form.',
-      lighting_and_shadow:
-        'Normal cel light on the solid body; the smear itself is flat with no shading.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures dissolving into painterly smears along the arc of their motion, with limbs stretched into brush strokes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Teal and orange smears, warm flour white and bold colored arcs.',
+      lighting_and_shadow: 'Painterly light that streaks along the smear arcs.',
       texture_and_material:
-        'One flat smear shape with a crisp outer edge and a feathered tail, no speed lines around it.',
-      camera_and_composition:
-        'A clean mid-shot that shows the full arc of the smeared part from start pose to end pose.',
-      atmosphere_and_mood: 'Snappy, elastic and fast, the energy of a single animation frame.',
+        'Digital brush smears, painterly effect arcs and loose textured strokes.',
+      camera_and_composition: 'Arc-shaped motion staging that sweeps across the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with swirling painterly speed.',
       rendering_and_quality:
-        'Stable on-model anatomy outside the smear, with the smear clearly an intentional animation device.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model. Carry it through one stretched smear shape along the arc, rest of body sharp, flat smear color bands, no speed lines, full arc visible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible',
+        "Shingo Yamashita sakuga as in his Naruto Shippuden and Mob episodes: painterly smear frames, bold colored effect arcs, digital brush textures and high-speed swirling motion. Carry it through Shingo Yamashita smears, painterly arcs, digital brush, speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shingo Yamashita smears; painterly arcs; digital brush; speed',
     },
   },
   {
     id: 'SP13-037',
-    name: 'Negative Impact Frame Staging',
-    displayName: 'Negative Impact Frame Staging',
+    name: 'Yoshimichi Kameda - Negative Impact Frame Staging',
+    displayName: 'Yoshimichi Kameda - Negative Impact Frame Staging',
     styleAnchors: [
-      'Negative Impact Frame Staging',
+      'Yoshimichi Kameda - Negative Impact Frame Staging',
       'anime action staging',
       'inverted black and white values',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative.',
+        'Yoshimichi Kameda sakuga as in his Fullmetal Alchemist and Mob Psycho impacts: brushy bold lines, inverted negative impact frames, ink-like shapes and powerful graphic hits.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the single inverted-value impact frame at the moment of contact, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Pure black and white with at most one accent color from the prompt kept in its original hue at the contact point.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with brushy bold outlines and a single inverted negative frame at the moment of contact. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Inverted black and white impact frames with one hot accent color.',
       lighting_and_shadow:
-        'No modeled light; all shading collapses into flat inverted masses with a ring of white around the contact point.',
-      texture_and_material:
-        'Rough, shaky brush outlines and dry-brush edges, as if drawn in a hurry on a single animation cel.',
-      camera_and_composition:
-        'Tight framing on the contact point, slightly tilted, with the subject cut by the frame edge.',
-      atmosphere_and_mood: 'A jolt, one heartbeat of pure force frozen in time.',
+        'Negative-image flash at impact, turning shadows white and lights black.',
+      texture_and_material: 'Brushy ink-like lines and bold graphic impact shapes.',
+      camera_and_composition: 'Tight impact framing at the exact instant of contact.',
+      atmosphere_and_mood: 'Keep the requested mood with shocking graphic impact.',
       rendering_and_quality:
-        'High-contrast inverted graphic frame in which the action and subject remain clearly readable.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative. Carry it through inverted black and white values, single accent at contact, rough shaky outlines, tight tilted framing, white ring around contact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact',
+        "Yoshimichi Kameda sakuga as in his Fullmetal Alchemist and Mob Psycho impacts: brushy bold lines, inverted negative impact frames, ink-like shapes and powerful graphic hits. Carry it through Yoshimichi Kameda brush lines, negative impact frames, graphic hits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yoshimichi Kameda brush lines; negative impact frames; graphic hits',
     },
   },
   {
     id: 'SP13-038',
-    name: 'Bullet-Time Orbit Freeze',
-    displayName: 'Bullet-Time Orbit Freeze',
+    name: 'Takeshi Honda - Bullet-Time Orbit Freeze',
+    displayName: 'Takeshi Honda - Bullet-Time Orbit Freeze',
     styleAnchors: [
-      'Bullet-Time Orbit Freeze',
+      'Takeshi Honda - Bullet-Time Orbit Freeze',
       'anime action staging',
       'time frozen at the action peak',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still.',
+        'Takeshi Honda precise key animation as in his Evangelion and Ghibli work: exact realistic anatomy, careful detail frozen in a single instant, and elegant controlled motion.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the frozen instant seen from a camera orbiting the subject, and adds no opponent, sports gear, extra prop or danger.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with precise realistic anatomy frozen mid-action, every fold and droplet exact. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Keep the prompt palette with a slight cool desaturation of the background to signal stopped time.',
-      lighting_and_shadow:
-        'Crisp rim light on every suspended element so each one reads separately, from the existing light direction.',
-      texture_and_material:
-        'Only elements already in the scene hang in the air, such as hair, water drops, cloth or flour, each sharply defined.',
+        'Natural river blues and greens with clear bright highlights on water droplets.',
+      lighting_and_shadow: 'Crisp natural light catching each frozen droplet and thread.',
+      texture_and_material: 'Precise clean lines and exact detailed rendering of frozen particles.',
       camera_and_composition:
-        'A three-quarter rear or low side angle that the prompt did not imply, the subject centered with suspended elements in a loose ring.',
-      atmosphere_and_mood: 'Hushed suspended stillness inside a fast movement.',
+        'Orbiting frozen-instant camera view circling the figure caught exactly mid-action.',
+      atmosphere_and_mood: 'Keep the requested mood with suspended precise instant.',
       rendering_and_quality:
-        'Everything sharp, no motion blur, clean separation between the subject and each suspended element.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still. Carry it through time frozen at the action peak, camera swung to an unexpected side, suspended scene elements, no motion blur, cool desaturated background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background',
+        "Takeshi Honda precise key animation as in his Evangelion and Ghibli work: exact realistic anatomy, careful detail frozen in a single instant, and elegant controlled motion. Carry it through Takeshi Honda precision, frozen instant, exact anatomy, orbit view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Takeshi Honda precision; frozen instant; exact anatomy; orbit view',
     },
   },
   {
     id: 'SP13-039',
-    name: 'Panning Background Streak Frame',
-    displayName: 'Panning Background Streak Frame',
+    name: 'Akira Amemiya - Panning Background Streak Frame',
+    displayName: 'Akira Amemiya - Panning Background Streak Frame',
     styleAnchors: [
-      'Panning Background Streak Frame',
+      'Akira Amemiya - Panning Background Streak Frame',
       'anime action staging',
       'sharp subject on streaked background',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks.',
+        'Akira Amemiya Trigger action look: fast tracking pans with streaked backgrounds, bold graphic speed, flat stylized characters and punchy kinetic energy.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the side-tracking pan with a streaked background and a sharp subject, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; background colors stretch into bands that keep their hue but lose all detail.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures crisp and bold while the background streaks into horizontal lines of speed behind them. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bold flat colors and streaked background blues and golds.',
       lighting_and_shadow:
-        'Steady side light on the subject; the streaked background keeps only its broad value pattern.',
+        'Flat graphic light with bright speed highlights running along the moving figure.',
       texture_and_material:
-        'Smooth horizontal streak bands behind a crisp cel subject, with a few longer streaks at ground level.',
+        'Clean flat cel characters over horizontally streaked painted backgrounds.',
       camera_and_composition:
-        'Strict side-on profile view at subject height, the subject a little behind center with lead room in the direction of travel.',
-      atmosphere_and_mood: 'Sustained speed and a steady, flowing momentum.',
+        'Side-tracking pans that streak the background while the figure stays sharp.',
+      atmosphere_and_mood: 'Keep the requested mood with punchy kinetic speed.',
       rendering_and_quality:
-        'Crisp subject, uniformly directional background streaks, no radial speed lines.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks. Carry it through sharp subject on streaked background, horizontal color bands, side-on profile view, lead room ahead, no radial speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines',
+        "Akira Amemiya Trigger action look: fast tracking pans with streaked backgrounds, bold graphic speed, flat stylized characters and punchy kinetic energy. Carry it through Akira Amemiya pans, streaked backgrounds, bold graphic speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Akira Amemiya pans; streaked backgrounds; bold graphic speed',
     },
   },
   {
     id: 'SP13-040',
-    name: "Worm's-Eye Leap Silhouette",
-    displayName: "Worm's-Eye Leap Silhouette",
+    name: 'Shinya Ohira - Worm’s-Eye Leap Silhouette',
+    displayName: 'Shinya Ohira - Worm’s-Eye Leap Silhouette',
     styleAnchors: [
-      "Worm's-Eye Leap Silhouette",
+      'Shinya Ohira - Worm’s-Eye Leap Silhouette',
       'anime action staging',
       'camera straight beneath looking up',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky.",
+        'Shinya Ohira sakuga style: extremely rough wild expressive lines, raw sketchy bodies, messy energy and unconventional distorted drawing that feels alive.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the straight-up worm’s-eye view with a backlit silhouette, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Dark near-black silhouette against a bright pale sky; the prompt colors show only in a thin rim along the silhouette.',
-      lighting_and_shadow:
-        'Strong backlight from above, a thin bright rim around the silhouette and no fill from below.',
-      texture_and_material:
-        'Flat silhouette fill with a few interior details picked out by the rim; the sky smooth and clean.',
-      camera_and_composition:
-        'Straight-up view with a very wide lens; nearby walls, trees or edges converge toward the frame center and the subject crosses diagonally.',
-      atmosphere_and_mood: 'Soaring, weightless and breath-held for a single instant.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with raw rough sketchy lines, distorted wild anatomy and messy expressive energy. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted night palette with stark silhouettes against a bright sky.',
+      lighting_and_shadow: 'Strong backlight turning the leaping figure into a rough silhouette.',
+      texture_and_material: 'Very rough sketchy lines, scribbles and uncleaned drawing marks.',
+      camera_and_composition: 'Worm’s-eye view looking straight up at the figure leaping overhead.',
+      atmosphere_and_mood: 'Keep the requested mood with raw wild energy.',
       rendering_and_quality:
-        'Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky. Carry it through camera straight beneath looking up, backlit dark silhouette, thin bright rim, converging edges to center, diagonal crossing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing',
+        "Shinya Ohira sakuga style: extremely rough wild expressive lines, raw sketchy bodies, messy energy and unconventional distorted drawing that feels alive. Carry it through Shinya Ohira rough lines, worm’s-eye leap, raw energy, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shinya Ohira rough lines; worm’s-eye leap; raw energy; silhouettes',
     },
   },
   {
     id: 'SP13-041',
-    name: 'Dutch Tilt Momentum Frame',
-    displayName: 'Dutch Tilt Momentum Frame',
+    name: 'Kenichi Kutsuna - Dutch Tilt Momentum Frame',
+    displayName: 'Kenichi Kutsuna - Dutch Tilt Momentum Frame',
     styleAnchors: [
-      'Dutch Tilt Momentum Frame',
+      'Kenichi Kutsuna - Dutch Tilt Momentum Frame',
       'anime action staging',
       'camera rolled 20-35 degrees',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, fisheye distortion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, fisheye distortion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent.',
+        'Kenichi Kutsuna sakuga as in his action episodes: dynamic canted compositions, strong diagonal momentum, detailed physical effort and weighty cloth and rope.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the strong camera roll that tilts the horizon with the direction of effort, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette with a slightly increased value contrast between subject and ground.',
-      lighting_and_shadow:
-        'Existing light kept, with cast shadows rotating with the tilt so they read as diagonals.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures straining with visible physical effort, leaning hard against diagonal forces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sea greys, rope browns and stormy blue light.',
+      lighting_and_shadow: 'Stormy directional light that emphasizes the tilted diagonals.',
       texture_and_material:
-        'Clean cel surfaces; architectural lines stay straight but tilted, never warped.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Eye-level or slightly low, rolled 20 to 35 degrees, with the subject pushing uphill against the tilt.',
-      atmosphere_and_mood: 'Unsteady urgency and strain without any added threat.',
+        'Strong Dutch tilt with the horizon slanted and all motion running diagonally.',
+      atmosphere_and_mood: 'Keep the requested mood with straining diagonal momentum.',
       rendering_and_quality:
-        'Straight, confident perspective lines on the tilted grid and a stable readable subject.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent. Carry it through camera rolled 20-35 degrees, tilted horizon and verticals, subject pushing against the tilt, diagonal shadows, straight not warped lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines',
+        "Kenichi Kutsuna sakuga as in his action episodes: dynamic canted compositions, strong diagonal momentum, detailed physical effort and weighty cloth and rope. Carry it through Kenichi Kutsuna diagonals, Dutch tilt, physical effort, weighty rope. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Kenichi Kutsuna diagonals; Dutch tilt; physical effort; weighty rope',
     },
   },
   {
     id: 'SP13-042',
-    name: 'Three-Beat Action Triptych',
-    displayName: 'Three-Beat Action Triptych',
-    styleAnchors: ['Three-Beat Action Triptych', 'anime action layout', 'three equal panels'],
+    name: 'Satoru Utsunomiya - Three-Beat Action Triptych',
+    displayName: 'Satoru Utsunomiya - Three-Beat Action Triptych',
+    styleAnchors: [
+      'Satoru Utsunomiya - Three-Beat Action Triptych',
+      'anime action layout',
+      'three equal panels',
+    ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action layout',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speech balloons, panel numbers, different characters per panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speech balloons, panel numbers, different characters per panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each.',
+        'Satoru Utsunomiya realist sakuga: naturalistic observed motion, round soft forms, accurate weight shifts and the beauty of ordinary movement broken into clear beats.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns a three-panel layout of anticipation, action and follow-through, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette identical across all three panels; only the middle panel gets the strongest value contrast.',
-      lighting_and_shadow:
-        'The same light direction in all panels so the three read as one continuous moment.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with naturalistic rounded forms and accurate weight shifts through each beat of the action. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft countryside greens, stone greys and warm sky light.',
+      lighting_and_shadow: 'Soft natural daylight consistent across all three panels.',
       texture_and_material:
-        'Clean cel rendering in every panel, thin dark gutters between them and no drawn text or panel numbers.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Three equal vertical panels, the camera shifting slightly closer in the middle panel and pulling back for the follow-through.',
-      atmosphere_and_mood:
-        'Clear, satisfying cause and effect, like a well-timed animation key sequence.',
+        'Three side-by-side panels showing the start, peak and landing of one motion.',
+      atmosphere_and_mood: 'Keep the requested mood with observed natural grace.',
       rendering_and_quality:
-        'Consistent model and costume across the panels, with each pose readable on its own.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each. Carry it through three equal panels, anticipation, peak, follow-through, same subject and light in each. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'three equal panels; anticipation, peak, follow-through; same subject and light in each; thin textless gutters; closer middle panel',
+        "Satoru Utsunomiya realist sakuga: naturalistic observed motion, round soft forms, accurate weight shifts and the beauty of ordinary movement broken into clear beats. Carry it through Satoru Utsunomiya realism, triptych beats, natural weight, soft forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Satoru Utsunomiya realism; triptych beats; natural weight; soft forms',
     },
   },
   {
     id: 'SP13-043',
-    name: 'Near-Lens Pass-By Frame',
-    displayName: 'Near-Lens Pass-By Frame',
+    name: 'Toshiyuki Inoue - Near-Lens Pass-By Frame',
+    displayName: 'Toshiyuki Inoue - Near-Lens Pass-By Frame',
     styleAnchors: [
-      'Near-Lens Pass-By Frame',
+      'Toshiyuki Inoue - Near-Lens Pass-By Frame',
       'anime action staging',
       'subject sweeping past the lens',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp.',
+        'Toshiyuki Inoue realist key animation: meticulously observed natural movement, precise perspective, grounded detail and objects passing close to the camera with real depth.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the pass-by framing where part of the subject sweeps across the lens, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the near-lens part reads as a large dark or saturated mass against a lighter background.',
-      lighting_and_shadow:
-        'Existing light on the background; the passing part is mostly in its own shadow with a bright edge.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures and animals with precise realistic proportions and natural motion, one passing extremely close to the lens. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Natural stone greys, feather blacks and warm interior light.',
+      lighting_and_shadow: 'Naturalistic light with slight motion blur on the near object.',
       texture_and_material:
-        'Soft defocus on the near-lens part only, with crisp cel detail on everything beyond it.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Static eye-level camera; the passing subject fills one side of the frame, cut by two frame edges, while the background occupies the rest.',
-      atmosphere_and_mood: 'A sudden whoosh, the viewer almost brushed by the movement.',
+        'Near-lens pass-by with one element sweeping huge across the foreground.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate startling immediacy.',
       rendering_and_quality:
-        'Controlled focus split between the soft near mass and the sharp background, with the subject still identifiable.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp. Carry it through subject sweeping past the lens, cropped by two frame edges, soft near-lens defocus, sharp background, bright edge on passing mass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass',
+        "Toshiyuki Inoue realist key animation: meticulously observed natural movement, precise perspective, grounded detail and objects passing close to the camera with real depth. Carry it through Toshiyuki Inoue realism, near-lens pass-by, precise perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Toshiyuki Inoue realism; near-lens pass-by; precise perspective',
     },
   },
   {
     id: 'SP13-044',
-    name: 'Top-Down Spiral Path Staging',
-    displayName: 'Top-Down Spiral Path Staging',
+    name: 'Ichiro Itano - Top-Down Spiral Path Staging',
+    displayName: 'Ichiro Itano - Top-Down Spiral Path Staging',
     styleAnchors: [
-      'Top-Down Spiral Path Staging',
+      'Ichiro Itano - Top-Down Spiral Path Staging',
       'anime action staging',
       'straight-down 90 degree view',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape.',
+        'Ichiro Itano circus style: swirling spiral trajectories, dozens of trails curving around each other, dizzying camera paths and dense choreographed motion.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the straight-down overhead view with a spiral path composition, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the ground is a calm mid value so the moving subject and its path stand out.',
-      lighting_and_shadow:
-        'Light from one side so cast shadows lie long and flat on the ground and reveal the pose.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures or animals as small elements following swirling spiral paths seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'White trails, stone cloister grey and bright sky reflections.',
+      lighting_and_shadow: 'Bright overhead light glinting along the curving trails.',
       texture_and_material:
-        "Clear ground patterns like flagstones, boards, grass or water that help trace the spiral; faint path marks only where the subject's movement would leave them.",
-      camera_and_composition:
-        'Exact 90 degree top-down view with the spiral centered or slightly off center and the subject at its leading end.',
-      atmosphere_and_mood: 'Hypnotic, choreographed flow seen calmly from directly above.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
+      camera_and_composition: 'Top-down view looking straight down at spiraling paths.',
+      atmosphere_and_mood: 'Keep the requested mood with dizzying choreographed flight.',
       rendering_and_quality:
-        'Clean flat perspective without distortion and readable shadow shapes that explain the pose.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape. Carry it through straight-down 90 degree view, spiral or circular path, subject at the leading end, long flat side-lit shadows, readable ground pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern',
+        "Ichiro Itano circus style: swirling spiral trajectories, dozens of trails curving around each other, dizzying camera paths and dense choreographed motion. Carry it through Itano circus spirals, swirling trails, top-down, choreographed motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Itano circus spirals; swirling trails; top-down; choreographed motion',
     },
   },
   {
     id: 'SP13-045',
-    name: 'Fisheye Foreshortened Reach',
-    displayName: 'Fisheye Foreshortened Reach',
+    name: 'Sushio - Fisheye Foreshortened Reach',
+    displayName: 'Sushio - Fisheye Foreshortened Reach',
     styleAnchors: [
-      'Fisheye Foreshortened Reach',
+      'Sushio - Fisheye Foreshortened Reach',
       'anime action staging',
       'hand reaching into an ultra-wide lens',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, broken anatomy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, broken anatomy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve.',
+        'Sushio sakuga as in Kill la Kill and Promare: extreme fisheye foreshortening, hands and objects thrust huge toward the lens, bold flat color and punchy graphic energy.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the ultra-wide close camera and extreme reach foreshortening, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the near hand is the brightest, most saturated area of the frame.',
-      lighting_and_shadow:
-        'Front light on the reaching hand, with the body behind falling half a stop darker.',
-      texture_and_material:
-        'Clean cel surfaces; detail concentrated on the near hand, simplified toward the curved edges.',
-      camera_and_composition:
-        'Ultra-wide lens under half a meter from the hand, barrel curvature on straight lines, the face small but readable behind the hand.',
-      atmosphere_and_mood: 'Direct, confrontational energy aimed at the viewer without hostility.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with extreme foreshortening, a reaching hand or thrown object enormous in the foreground. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bold flat orchard greens, bright fruit colors and clean highlights.',
+      lighting_and_shadow: 'Flat bright light with bold graphic shading shapes and thick outlines.',
+      texture_and_material: 'Clean flat color with thick outlines and graphic shapes.',
+      camera_and_composition: 'Ultra-wide fisheye with extreme foreshortening toward the lens.',
+      atmosphere_and_mood: 'Keep the requested mood with punchy playful reach.',
       rendering_and_quality:
-        'Controlled barrel distortion and believable anatomy through the extreme foreshortening.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve. Carry it through hand reaching into an ultra-wide lens, hand as large as the head, barrel-curved edges, bright near hand, small readable face behind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind',
+        "Sushio sakuga as in Kill la Kill and Promare: extreme fisheye foreshortening, hands and objects thrust huge toward the lens, bold flat color and punchy graphic energy. Carry it through Sushio foreshortening, fisheye, thrust hands, bold flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Sushio foreshortening; fisheye; thrust hands; bold flat color',
     },
   },
   {
     id: 'SP13-046',
-    name: 'Cloth-and-Hair Follow-Through Trails',
-    displayName: 'Cloth-and-Hair Follow-Through Trails',
+    name: 'Mitsuo Iso - Cloth-and-Hair Follow-Through Trails',
+    displayName: 'Mitsuo Iso - Cloth-and-Hair Follow-Through Trails',
     styleAnchors: [
-      'Cloth-and-Hair Follow-Through Trails',
+      'Mitsuo Iso - Cloth-and-Hair Follow-Through Trails',
       'anime action staging',
       'lagging S-curves in hair and cloth',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from.',
+        'Mitsuo Iso full-limited animation: realistic follow-through of cloth and hair, precise timing, natural overlapping motion and meticulous secondary action.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the secondary-motion emphasis on cloth, hair and loose parts, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; cloth and hair take slightly lighter underside tones so their curves read clearly.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with natural overlapping motion where cloth and hair follow through after the body stops. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Windy castle greys, rich fabric colors and sky blue.',
       lighting_and_shadow:
-        'Soft key light that runs along each fabric fold and hair lock, giving every curve a light and a dark side.',
+        'Bright windy daylight catching every fold of fluttering fabric and loose hair.',
       texture_and_material:
-        'Flowing cel-shaded fabric and hair with clean tapering tips; no streaks or blur.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Medium-full shot with space on the side the loose parts trail toward, the body near a third line.',
-      atmosphere_and_mood: 'Graceful, lingering momentum after a decisive move.',
-      rendering_and_quality: 'Clear S-curves of consistent lag and still, sharp faces and hands.',
+        'Medium shots that emphasize trailing cloth and hair as the body comes to rest.',
+      atmosphere_and_mood: 'Keep the requested mood with graceful windswept motion.',
+      rendering_and_quality:
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from. Carry it through lagging S-curves in hair and cloth, body already stopped or turned, tapering tips, light along each fold, trailing space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space',
+        "Mitsuo Iso full-limited animation: realistic follow-through of cloth and hair, precise timing, natural overlapping motion and meticulous secondary action. Carry it through Mitsuo Iso follow-through, cloth and hair, secondary motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Mitsuo Iso follow-through; cloth and hair; secondary motion',
     },
   },
   {
     id: 'SP13-047',
-    name: 'Tiny-Figure Grand Arc Wide',
-    displayName: 'Tiny-Figure Grand Arc Wide',
+    name: 'Yasuo Otsuka - Tiny-Figure Grand Arc Wide',
+    displayName: 'Yasuo Otsuka - Tiny-Figure Grand Arc Wide',
     styleAnchors: [
-      'Tiny-Figure Grand Arc Wide',
+      'Yasuo Otsuka - Tiny-Figure Grand Arc Wide',
       'anime action staging',
       'tiny subject under one twentieth of frame height',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior.',
+        'Yasuo Otsuka classic animation: charming lively motion, tiny figures moving with big clear arcs across grand landscapes, and joyful mechanical detail.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the extreme wide shot where a tiny subject draws one grand arc through vast space, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the landscape stays in soft layered values while the subject and its arc carry the only sharp contrast.',
-      lighting_and_shadow:
-        'Broad atmospheric light with aerial perspective; a small bright highlight marks the subject.',
-      texture_and_material:
-        'Painted background layers with atmospheric haze; the arc is formed by existing material such as dust, wake, spray or footprints.',
-      camera_and_composition:
-        'Very wide establishing view from a high distant vantage, the arc spanning at least two thirds of the frame width.',
-      atmosphere_and_mood: 'Epic scale and solitude, one small life moving through a huge world.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw tiny figures with clear readable silhouettes moving in big arcs across vast landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Glassy fjord blues, mountain greens and clean sky tones.',
+      lighting_and_shadow: 'Clear bright daylight over vast painted landscapes and open skies.',
+      texture_and_material: 'Classic clean hand-drawn cel with lush painted landscape backgrounds.',
+      camera_and_composition: 'Extreme wide shots with tiny figures tracing big arcs.',
+      atmosphere_and_mood: 'Keep the requested mood with joyful vast adventure.',
       rendering_and_quality:
-        'Clean readable arc, a tiny but unmistakable subject, and painterly depth layers.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior. Carry it through tiny subject under one twentieth of frame height, one grand movement arc, vast layered space, high distant vantage, arc from existing material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material',
+        "Yasuo Otsuka classic animation: charming lively motion, tiny figures moving with big clear arcs across grand landscapes, and joyful mechanical detail. Carry it through Yasuo Otsuka charm, tiny figures, grand arcs, vast landscapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yasuo Otsuka charm; tiny figures; grand arcs; vast landscapes',
     },
   },
   {
     id: 'SP13-048',
-    name: 'Coiled Anticipation Lead-Space Frame',
-    displayName: 'Coiled Anticipation Lead-Space Frame',
+    name: 'Hironori Tanaka - Coiled Anticipation Lead-Space Frame',
+    displayName: 'Hironori Tanaka - Coiled Anticipation Lead-Space Frame',
     styleAnchors: [
-      'Coiled Anticipation Lead-Space Frame',
+      'Hironori Tanaka - Coiled Anticipation Lead-Space Frame',
       'anime action staging',
       'coiled pre-motion pose',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross.',
+        'Hironori Tanaka action sakuga: strong anticipation poses, coiled compressed bodies ready to spring, clear lead space and snappy timing.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the pre-motion coiled pose and the large empty lead space, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the empty lead space is a calm flat value while the subject holds the strongest contrast.',
-      lighting_and_shadow:
-        'Low side light that carves the tension in the coiled pose with hard short shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures coiled in deep anticipation, body compressed and weight loaded before explosive release. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sea blue, rock grey and bright summer highlights.',
+      lighting_and_shadow: 'Bright summer light with crisp short shadows and glittering sea.',
       texture_and_material:
-        'Still surfaces, no motion marks at all; small tension details like gripping toes or taut fabric.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'The subject in the outer fifth of the frame, the rest left as open lead space in the direction of the coming move.',
-      atmosphere_and_mood: 'Held breath and loaded stillness, energy about to release.',
+        'Figure placed at one edge with wide lead space in the direction of the coming leap.',
+      atmosphere_and_mood: 'Keep the requested mood with tense coiled anticipation.',
       rendering_and_quality:
-        'Precise pose drawing with visible weight shift, calm backgrounds and zero motion effects.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross. Carry it through coiled pre-motion pose, subject in outer fifth of frame, large empty lead space, no motion marks, low side light on the tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension',
+        "Hironori Tanaka action sakuga: strong anticipation poses, coiled compressed bodies ready to spring, clear lead space and snappy timing. Carry it through Hironori Tanaka anticipation, coiled poses, lead space, snappy timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hironori Tanaka anticipation; coiled poses; lead space; snappy timing',
     },
   },
   {
     id: 'SP13-049',
-    name: 'Ground-Skim Low Tracking Shot',
-    displayName: 'Ground-Skim Low Tracking Shot',
+    name: 'Masahiro Ando - Ground-Skim Low Tracking Shot',
+    displayName: 'Masahiro Ando - Ground-Skim Low Tracking Shot',
     styleAnchors: [
-      'Ground-Skim Low Tracking Shot',
+      'Masahiro Ando - Ground-Skim Low Tracking Shot',
       'anime action staging',
       'ankle-height camera ahead of subject',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime ground-skim staging: the camera races just above the ground ahead of the subject, so the near ground rushes in stretched detail at the bottom of the frame and the subject looms toward the lens from a low angle.',
+        'Masahiro Ando action direction as in Sword of the Stranger: grounded fast motion, low tracking camera skimming terrain and precise dynamic choreography.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the ankle-height camera racing along the ground ahead of the subject, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the rushing ground is the most saturated band and the sky stays light.',
-      lighting_and_shadow:
-        'Backlight or high side light that throws the subject shadow toward the camera across the ground.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures and animals racing close to the ground, with realistic motion and kicked-up debris. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Golden barley, earth browns, dusty gold light and clear sky blue.',
+      lighting_and_shadow: 'Warm low sunlight skimming the ground and lighting the flying debris.',
       texture_and_material:
-        'Ground detail such as grass, stones or planks stretched into short streaks near the lens and sharp further back.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Lens at ankle height, horizon in the lower third, subject approaching head-on or at a slight angle.',
-      atmosphere_and_mood: 'Low, fast and immersive, as if running alongside.',
+        'Low tracking shot skimming the ground toward or alongside the subject.',
+      atmosphere_and_mood: 'Keep the requested mood with rushing grounded speed.',
       rendering_and_quality:
-        'Controlled ground streaking only in the near band and a crisp, stable subject.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime ground-skim staging: the camera races just above the ground ahead of the subject, so the near ground rushes in stretched detail at the bottom of the frame and the subject looms toward the lens from a low angle. Carry it through ankle-height camera ahead of subject, near ground stretched into streaks, horizon in lower third, shadow toward camera, looming low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'ankle-height camera ahead of subject; near ground stretched into streaks; horizon in lower third; shadow toward camera; looming low angle',
+        "Masahiro Ando action direction as in Sword of the Stranger: grounded fast motion, low tracking camera skimming terrain and precise dynamic choreography. Carry it through Masahiro Ando low tracking, ground skim, grounded speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Masahiro Ando low tracking; ground skim; grounded speed',
     },
   },
   {
     id: 'SP13-050',
-    name: 'Contact-Point Extreme Close-Up',
-    displayName: 'Contact-Point Extreme Close-Up',
+    name: 'Takafumi Hori - Contact-Point Extreme Close-Up',
+    displayName: 'Takafumi Hori - Contact-Point Extreme Close-Up',
     styleAnchors: [
-      'Contact-Point Extreme Close-Up',
+      'Takafumi Hori - Contact-Point Extreme Close-Up',
       'anime action staging',
       'extreme close-up of the contact point',
     ],
     category: '5. Action Motion Setpieces',
     domain: 'anime action staging',
     negativePrompt:
-      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away.',
+        'Takafumi Hori sakuga as in his effects-heavy action: explosive contact points, detailed close-up effects, crisp bright highlights and satisfying moments of impact.',
       subject_treatment:
-        'Keep the prompt subject, count, action, props and setting; this preset owns the extreme close-up on the exact point of contact of the action, and adds no opponent, sports gear, extra prop or danger.',
-      color_and_tone:
-        'Keep the prompt palette; the contact point is the brightest and sharpest area, the surroundings darker.',
-      lighting_and_shadow:
-        'Tight hard key light raking across the contact surface to show pressure and texture.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw hands and objects in extreme close-up at the exact point of contact. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep background tones with sharp bright highlights at the contact point.',
+      lighting_and_shadow: 'Crisp highlights and sparkles at the moment of contact.',
       texture_and_material:
-        'Magnified surface detail at the contact, like skin creases, wood grain or ice crystals, with small displaced particles only if the materials would shed them.',
+        'Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.',
       camera_and_composition:
-        'Macro framing where the contact fills the center third, very shallow depth and nothing else of the subject visible.',
-      atmosphere_and_mood: 'Tactile and precise, the whole action compressed into one touch.',
+        'Extreme close-up insert shot framed tightly on the exact contact point.',
+      atmosphere_and_mood: 'Keep the requested mood with crisp satisfying contact.',
       rendering_and_quality:
-        'Detailed but clean cel rendering at macro scale, with the kind of contact instantly readable.',
+        'Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.',
       creative_brief:
-        "Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away. Carry it through extreme close-up of the contact point, subject cropped away, raking hard key light, magnified surface detail, very shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features:
-        'extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth',
+        "Takafumi Hori sakuga as in his effects-heavy action: explosive contact points, detailed close-up effects, crisp bright highlights and satisfying moments of impact. Carry it through Takafumi Hori effects, contact close-ups, crisp highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Takafumi Hori effects; contact close-ups; crisp highlights',
     },
   },
 ] as unknown as StyleRuntimePreset[];

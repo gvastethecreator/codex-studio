@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-039
 packId: pack_05
-name: Panning Background Streak Frame
+name: Akira Amemiya - Panning Background Streak Frame
 styleAnchors:
-  - Panning Background Streak Frame
+  - Akira Amemiya - Panning Background Streak Frame
   - anime action staging
   - sharp subject on streaked background
-displayName: Panning Background Streak Frame
+displayName: Akira Amemiya - Panning Background Streak Frame
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - panning
   - tracking-shot
+  - reference-title
 visualDna:
-  aesthetic: 'Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the side-tracking pan with a streaked background and a sharp subject, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; background colors stretch into bands that keep their hue but lose all detail.
-  lighting_and_shadow: Steady side light on the subject; the streaked background keeps only its broad value pattern.
-  texture_and_material: Smooth horizontal streak bands behind a crisp cel subject, with a few longer streaks at ground level.
-  camera_and_composition: Strict side-on profile view at subject height, the subject a little behind center with lead room in the direction of travel.
-  atmosphere_and_mood: Sustained speed and a steady, flowing momentum.
-  rendering_and_quality: Crisp subject, uniformly directional background streaks, no radial speed lines.
-  creative_brief: "Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks. Carry it through sharp subject on streaked background, horizontal color bands, side-on profile view, lead room ahead, no radial speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines
+  aesthetic: 'Akira Amemiya Trigger action look: fast tracking pans with streaked backgrounds, bold graphic speed, flat stylized characters and punchy kinetic energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures crisp and bold while the background streaks into horizontal lines of speed behind them. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat colors and streaked background blues and golds.
+  lighting_and_shadow: Flat graphic light with bright speed highlights running along the moving figure.
+  texture_and_material: Clean flat cel characters over horizontally streaked painted backgrounds.
+  camera_and_composition: Side-tracking pans that streak the background while the figure stays sharp.
+  atmosphere_and_mood: Keep the requested mood with punchy kinetic speed.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Akira Amemiya Trigger action look: fast tracking pans with streaked backgrounds, bold graphic speed, flat stylized characters and punchy kinetic energy. Carry it through Akira Amemiya pans, streaked backgrounds, bold graphic speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Akira Amemiya pans; streaked backgrounds; bold graphic speed
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-039.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - panning
     - tracking-shot
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

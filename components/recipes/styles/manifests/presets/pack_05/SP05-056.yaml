@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-056
 packId: pack_05
-name: Geometric Ignition Urgency
+name: Rebuild of Evangelion - Geometric Ignition Urgency
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Hyper-angular limited-animation cel: thick tapered brush-pen outlines, flat fills with no gradients, and triangular highlight and shadow shapes cut at sharp angles.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Hot coral, apricot and lemon yellow as flat fills against clean cyan and lavender shadow triangles; no blending, every hue separated by an ink line.
-  lighting_and_shadow: One hard warm key rendered as jagged triangular shadow wedges and star-shaped glints on edges; shadows are flat lavender shapes, never soft gradients.
-  texture_and_material: Smooth untextured cel paint with a few dry-brush speed flecks along outlines; surfaces read through shadow shape rather than surface detail.
-  camera_and_composition: 'Keep the requested view but push its perspective: foreshortened near forms, converging diagonals, and solid color speed wedges behind the main silhouette.'
-  atmosphere_and_mood: Brash, urgent and optimistic, like a shout drawn in straight lines and sharp corners.
-  rendering_and_quality: Flat two-tone cel with brush-pen line weight swelling at corners, crisp triangle glints, and no airbrush or 3D shading.
-  key_features: thick tapered brush-pen outlines; triangular shadow and highlight wedges; flat coral, yellow and cyan fills; star-shaped glints; forced foreshortening with speed wedges
-  creative_brief: "Hyper-angular limited-animation cel: thick tapered brush-pen outlines, flat fills with no gradients, and triangular highlight and shadow shapes cut at sharp angles. Carry it through thick tapered brush-pen outlines, triangular shadow and highlight wedges, flat coral, yellow and cyan fills, star-shaped glints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Khara Rebuild of Evangelion look: crisp digital cel with neon orange warning geometry, hexagonal barrier patterns, colossal hazard-striped operations and cold command-room urgency.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto-derived designs, tense faces, plugsuit-like or uniform clothing, dwarfed by vast geometric machinery and emergency displays. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warning orange, hazard black, command-room teal and blood-red emergency light across everything.
+  lighting_and_shadow: Emergency strobe light, hexagonal barrier glows and harsh sunset silhouettes against machinery.
+  texture_and_material: Crisp digital cel, CG geometric structures, hazard stripes and clean graphic overlays.
+  camera_and_composition: Monumental low angles, symmetrical operations centers and tiny figures before colossal geometry.
+  atmosphere_and_mood: Keep the requested mood with urgent apocalyptic tension.
+  rendering_and_quality: Precise Khara theatrical frame with neon geometry and colossal emergency scale.
+  key_features: Rebuild geometry; warning orange; hexagonal barriers; colossal operations
+  creative_brief: "Khara Rebuild of Evangelion look: crisp digital cel with neon orange warning geometry, hexagonal barrier patterns, colossal hazard-striped operations and cold command-room urgency. Carry it through Rebuild geometry, warning orange, hexagonal barriers, colossal operations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a purple and green horned biomech
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -45,7 +48,6 @@ avoidRules:
   - firefighting disaster scene
   - real emergency logo
   - burning people
-  - gore
   - weapon
   - franchise robot
   - plastic 3d robot render
@@ -65,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-056.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft gradient shading, literal flames, drill-faced super robot copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, firefighting disaster scene, real emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a purple and green horned biomech, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, soft gradient shading, literal flames, drill-faced super robot copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, firefighting disaster scene, real emergency logo, burning people, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,8 +82,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Rebuild of Evangelion - Geometric Ignition Urgency
+styleAnchors:
+  - Rebuild of Evangelion - Geometric Ignition Urgency

@@ -6,7 +6,7 @@ styleAnchors:
   - Princess Mononoke - Eco-Mythic Conflict Epic
 displayName: Princess Mononoke - Eco-Mythic Conflict Epic
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep forest green, moss, earth brown, iron grey and sunset red.
   lighting_and_shadow: Dappled forest light, smoky forge glow, sunset fire.
   texture_and_material: Hand-painted mossy detail, clean cel characters, smoke and roiling tendrils.
@@ -58,12 +58,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-072.webp
 attributes:
-  negativePrompt: a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

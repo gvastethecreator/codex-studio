@@ -1,9 +1,40 @@
 // Apply one category spec: rewrite preset DNA, set card briefs, create new presets, register refs.
 // Usage: bun .local/style-curation/overhaul/tools/apply.ts <spec.ts> [--dry]
 import { createRequire } from 'node:module';
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import {
+  closeSync,
+  existsSync,
+  ftruncateSync,
+  mkdirSync,
+  openSync,
+  readdirSync,
+  readFileSync,
+  writeSync,
+} from 'node:fs';
 import path from 'node:path';
 import { creativeBriefFromDna } from './creative-brief';
+
+// On the Windows dev drive a plain write can keep the old file's tail when the new text is shorter
+// while a watcher holds the file, so truncate explicitly and read back before moving on.
+function writeFileSync(file: string, text: string): void {
+  for (let attempt = 0; attempt < 30; attempt += 1) {
+    try {
+      const fd = openSync(file, 'w');
+      try {
+        ftruncateSync(fd, 0);
+        writeSync(fd, text);
+        ftruncateSync(fd, Buffer.byteLength(text));
+      } finally {
+        closeSync(fd);
+      }
+      if (readFileSync(file, 'utf8') === text) return;
+    } catch {
+      // A watcher can hold the file for a moment; wait and retry.
+    }
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 500);
+  }
+  throw new Error(`${file} could not be written exactly`);
+}
 
 const repo = path.resolve(import.meta.dir, '../../../../..');
 const require = createRequire(path.join(repo, 'package.json'));

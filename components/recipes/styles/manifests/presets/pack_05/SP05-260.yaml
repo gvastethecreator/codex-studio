@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-260
 packId: pack_05
-name: Candy Pastel Bloom Cel
+name: Princess Connect CygamesPictures - Candy Pastel Bloom Cel
 styleAnchors:
-  - Candy Pastel Bloom Cel
+  - Princess Connect CygamesPictures - Candy Pastel Bloom Cel
   - Princess Connect! Re:Dive - Banquet Quest Pastel
-displayName: Candy Pastel Bloom Cel
+displayName: Princess Connect CygamesPictures - Candy Pastel Bloom Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get large bright eyes, glossy hair highlights and clean costume shapes; do not add a banquet, crowd or idol lineup.
-  color_and_tone: Mint, blush pink, lilac and buttery cream with white-hot highlights, bright and high-key, shadows tinted lavender instead of grey.
-  lighting_and_shadow: Broad frontal light with a soft bloom halo around highlights and small sparkles on glossy edges.
-  texture_and_material: Smooth cel fills, satin gloss bands on hair and fabric and floating petal-like light specks.
-  camera_and_composition: Keep the requested view; a centered subject with airy spacing and a soft pastel gradient behind it.
-  atmosphere_and_mood: Joyful, sweet and abundant, festive without needing a party.
-  rendering_and_quality: Colored lineart instead of black, clean color separation and a controlled bloom that never washes out form.
-  key_features: candy pastel palette; colored lineart; lavender-tinted shadows; satin gloss bands; soft bloom halo
-  creative_brief: "Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights. Carry it through candy pastel palette, colored lineart, lavender-tinted shadows, satin gloss bands, soft bloom halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'CygamesPictures Princess Connect! Re:Dive look (2020): candy pastel fantasy, bloom-heavy glowing highlights, cheerful food-loving parties and bouncy comedy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with cute bright designs, big sparkly eyes, pastel fantasy outfits and hungry cheerful expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Candy pink, mint, lemon, sky blue and glowing white bloom.
+  lighting_and_shadow: Bright bloom-heavy daylight with sparkling highlights on eyes, food and armor.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Bouncy group comedy framing and crowded glowing feast scenes at long tables.
+  atmosphere_and_mood: Keep the requested mood with cheerful hungry adventure.
+  rendering_and_quality: Glowing pastel fantasy television frame with heavy bloom.
+  key_features: Candy pastel; bloom glow; feasts; bouncy comedy
+  creative_brief: "CygamesPictures Princess Connect! Re:Dive look (2020): candy pastel fantasy, bloom-heavy glowing highlights, cheerful food-loving parties and bouncy comedy. Carry it through Candy pastel, bloom glow, feasts, bouncy comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -69,10 +70,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-260.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dark gritty palette, black outlines, banquet table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dark gritty palette, black outlines, banquet table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

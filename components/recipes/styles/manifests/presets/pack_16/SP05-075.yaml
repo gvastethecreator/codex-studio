@@ -6,7 +6,7 @@ styleAnchors:
   - Weathering With You - Rainlight Threshold Romance
 displayName: Weathering With You - Rainlight Threshold Romance
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Wet slate grey, neon reflections, storm blue and sudden gold sunlight on puddles.
   lighting_and_shadow: Overcast diffusion broken by sharp sunbeams, rain streaks catching light, glowing puddle reflections.
   texture_and_material: Detailed digital rain, droplet splashes, reflective asphalt, crisp cel characters over painted backgrounds.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-075.webp

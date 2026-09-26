@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Makoto Yukimura - Northern Saga Longship
 category: 6. Samurai & Medieval
 domain: viking saga anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Grey sea, cold slate and black ink with steel highlights.
   lighting_and_shadow: Cold overcast northern light with spray and wind.
   texture_and_material: Detailed pen hatching, rough seas and wood grain on ships.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-225
 packId: pack_05
-name: Scrap Velocity Resilience
+name: Yukito Kishiro - Scrap Velocity Resilience
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Rough-key action animation drawing: blue construction pencil left under black cleanup line, smear-frame distortions, and painted spark dots on impact.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Iron, dusty ochre, rust and charcoal cel fills with blue pencil showing through and bright amber spark dots.
-  lighting_and_shadow: Firm cel shadows and short warm glints; impact flashes drawn as flat amber shapes with black outlines.
-  texture_and_material: Visible pencil tooth, loose blue construction lines, scribbled hatching and dented-edge contour breaks.
-  camera_and_composition: Keep the requested view; stretch the moving part of the subject into a smear frame along its arc of motion.
-  atmosphere_and_mood: Scrappy, determined and kinetic, a thing held together by will.
-  rendering_and_quality: Keyframe rough energy with blue under-pencil, confident black line, smear distortion and spark dots; not a polished final cel.
-  key_features: blue construction pencil under black line; smear-frame distortion; amber spark dots; iron and rust cel fills; scribbled hatching
-  creative_brief: "Rough-key action animation drawing: blue construction pencil left under black cleanup line, smear-frame distortions, and painted spark dots on impact. Carry it through blue construction pencil under black line, smear-frame distortion, amber spark dots, iron and rust cel fills, scribbled hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yukito Kishiro Battle Angel manga look: dense mechanical cyborg detail, scrapyard cities beneath a floating sky city, motorball speed and fierce hatched action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kishiro designs, big soulful eyes, detailed cyborg bodies, visible joints and ragged clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with dense tone, rust and steel tints in color pages.
+  lighting_and_shadow: Industrial haze under the floating city and harsh sparks from grinding metal.
+  texture_and_material: Dense mechanical hatching, exposed cyborg joints and cable detail.
+  camera_and_composition: High-speed track racing action and sweeping scrapyard city panoramas.
+  atmosphere_and_mood: Keep the requested mood with fierce scrappy resilience.
+  rendering_and_quality: Detailed cyberpunk manga illustration with extraordinary mechanical density.
+  key_features: Yukito Kishiro cyborg detail; scrapyards; motorball speed; hatching
+  creative_brief: "Yukito Kishiro Battle Angel manga look: dense mechanical cyborg detail, scrapyard cities beneath a floating sky city, motorball speed and fierce hatched action. Carry it through Yukito Kishiro cyborg detail, scrapyards, motorball speed, hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a cyborg girl with a bob haircut and berserker body
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -46,7 +49,6 @@ avoidRules:
   - cockpit UI
   - scrapyard corridor
   - readable decals
-  - gore
   - plastic 3d robot render
   - cockpit source-frame look
   - readable UI panel
@@ -64,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-225.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, polished final render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a cyborg girl with a bob haircut and berserker body, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, polished final render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +81,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yukito Kishiro - Scrap Velocity Resilience
+styleAnchors:
+  - Yukito Kishiro - Scrap Velocity Resilience

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-024
 packId: pack_05
-name: Monumental Impact Burst Style
+name: Tatsuyuki Tanaka - Monumental Impact Burst Style
 styleAnchors:
-  - Monumental Impact Burst Style
-displayName: Monumental Impact Burst
+  - Tatsuyuki Tanaka - Monumental Impact Burst Style
+displayName: Tatsuyuki Tanaka - Monumental Impact Burst Style
 category: 5. Action Motion Setpieces
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-battle-and-worlds
   - anime
   - action
+  - reference-title
 visualDna:
-  aesthetic: Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast.
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the peak-moment framing with radiating structure lines and a huge-scale foreground element, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; strongest value contrast sits at the hub, with restrained crimson or gold accents only if already present.
-  lighting_and_shadow: Contrast concentrated at the point of action using the existing light; no flashes, explosions or sparks.
-  texture_and_material: Decisive hard-edged forms; existing debris or droplets only when the prompt already has them.
-  camera_and_composition: Low wide angle with the foreground element filling a third of the frame and scene lines radiating from the action point.
-  atmosphere_and_mood: Monumental emphasis on one instant, weighty without triumph or aggression.
-  rendering_and_quality: Hard controlled strokes, stable structure and a single unmistakable focal hub.
-  key_features: peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast
-  creative_brief: "Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast. Carry it through peak instant at the hub, radiating structural lines, huge-scale foreground element, low wide angle, hub-centered contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Tatsuyuki Tanaka sakuga and illustration as in his Akira-era key animation: meticulous mechanical weight, precise detailed impact, heavy believable mass and dense controlled effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with precise weighty anatomy and heavy believable tools, every impact showing real mass. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm forge oranges, iron greys and precise bright highlights on metal.
+  lighting_and_shadow: Hot glowing impact light and hard realistic shadows around heavy objects.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Heavy low angles on the moment of impact with detailed sparks and debris.
+  atmosphere_and_mood: Keep the requested mood with monumental weighty impact.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  key_features: Tatsuyuki Tanaka weight; precise impact; heavy mass; detailed sparks
+  creative_brief: "Tatsuyuki Tanaka sakuga and illustration as in his Akira-era key animation: meticulous mechanical weight, precise detailed impact, heavy believable mass and dense controlled effects. Carry it through Tatsuyuki Tanaka weight, precise impact, heavy mass, detailed sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-024.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -68,6 +73,7 @@ taxonomy:
     - anime-battle-and-worlds
     - anime
     - action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

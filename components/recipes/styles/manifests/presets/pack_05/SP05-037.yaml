@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-037
 packId: pack_05
-name: Impact Frame Comedy Hero
+name: Hirohiko Araki - Impact Frame Comedy Hero
 styleAnchors:
-  - Impact Frame Comedy Hero
-displayName: Impact Comedy Heroics
+  - Hirohiko Araki - Impact Frame Comedy Hero
+displayName: Hirohiko Araki - Impact Frame Comedy Hero
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Muted soft cel color for the calm part; the impact zone in black, white and signal red with a yellow spark.
-  lighting_and_shadow: Flat even light, then hard inverted light with pure black shadows inside the impact zone.
-  texture_and_material: Clean cel fills, impact lines as thick tapered wedges, untouched negative space.
-  camera_and_composition: Keep the requested framing; a broad empty stage with oversized radial punctuation centered on one small detail.
-  atmosphere_and_mood: Deadpan timing and an absurdly oversized reaction.
-  rendering_and_quality: Deliberate disproportion between a trivial action and a huge impact graphic.
-  key_features: single impact frame zone; black, white and signal red; thick radial wedges; muted calm cel; broad empty stage
-  creative_brief: "Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette. Carry it through single impact frame zone, black, white and signal red, thick radial wedges, muted calm cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: "Hirohiko Araki JoJo's Bizarre Adventure look: flamboyant fashion-model poses, muscular angular bodies, lipstick-like shading, bold unexpected colors and menacing sound-effect atmosphere without letters."
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araki designs, angular muscular bodies, strong jaws, stylish outlandish outfits and twisted fashion-magazine poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Wild unexpected color swaps, magenta skies, lime shadows and gold highlights.
+  lighting_and_shadow: Dramatic stylized lighting with bold shadow shapes and color inversions.
+  texture_and_material: Heavy inked contours, hatching, bold flat color and dramatic shadow shapes.
+  camera_and_composition: Twisted dramatic poses, dutch angles and menacing close-ups.
+  atmosphere_and_mood: Keep the requested mood with flamboyant bizarre bravado.
+  rendering_and_quality: Flamboyant manga illustration with fashion-pose drama and bizarre menace.
+  key_features: Araki poses; bizarre fashion; wild colors; menacing atmosphere
+  creative_brief: "Hirohiko Araki JoJo's Bizarre Adventure look: flamboyant fashion-model poses, muscular angular bodies, lipstick-like shading, bold unexpected colors and menacing sound-effect atmosphere without letters. Carry it through Araki poses, bizarre fashion, wild colors, menacing atmosphere. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - sound-effect katakana letters
+  - existing franchise characters
+  - readable text
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -47,7 +51,6 @@ avoidRules:
   - yellow suit
   - red gloves
   - punch contact
-  - gore
   - destroyed city panorama
   - franchise face
   - dense forest
@@ -69,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-037.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: sound-effect katakana letters, existing franchise characters, readable text, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

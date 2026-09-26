@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-280
 packId: pack_05
-name: Lantern Retribution Ritual Style
+name: Hell Girl Deen - Lantern Retribution Ritual Style
 styleAnchors:
-  - Lantern Retribution Ritual Style
-displayName: Lantern Retribution Ritual
+  - Hell Girl Deen - Lantern Retribution Ritual Style
+displayName: Hell Girl Deen - Lantern Retribution Ritual Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Ceremonial anime ink with measured concentric rings of warm-to-dark value falloff spreading from the brightest area, and evenly spaced brush marks like ritual steps.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Amber, cream and charcoal; prompt colors warm toward amber near the center and cool toward charcoal at the rim.
-  lighting_and_shadow: A small warm bloom from an existing bright area, falling off in four to six visible value steps with readable shadows.
-  texture_and_material: Smooth luminous washes bounded by crisp ink rings, clean rather than smoky or glittering.
-  camera_and_composition: Keep the requested framing; the radial value rhythm centers on the brightest point already in the scene.
-  atmosphere_and_mood: Solemn ritual cadence, the stillness before a judgment.
-  rendering_and_quality: Stepped radial value bands, crisp ink boundaries and a controlled bloom that never washes out form.
-  key_features: concentric stepped value rings; amber, cream and charcoal; warm bloom from existing light; evenly spaced brush marks; ritual cadence
-  creative_brief: "Ceremonial anime ink with measured concentric rings of warm-to-dark value falloff spreading from the brightest area, and evenly spaced brush marks like ritual steps. Carry it through concentric stepped value rings, amber, cream and charcoal, warm bloom from existing light, evenly spaced brush marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Deen Hell Girl look (2005): eerie twilight ferries on crimson rivers, spider lilies, lanterns, ritual retribution and quiet horror of ordinary grudges.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with quiet designs, kimono or school uniforms, and eerie ritual companions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crimson twilight, spider lily red, black and lantern amber.
+  lighting_and_shadow: Eerie eternal twilight and warm lantern glow reflecting on dark water.
+  texture_and_material: Digital cel with painted crimson twilight skies and spider lily banks.
+  camera_and_composition: Ritual ferry compositions on the river and quiet eerie close-ups.
+  atmosphere_and_mood: Keep the requested mood with quiet ritual retribution.
+  rendering_and_quality: Eerie Studio Deen television frame with crimson twilight ritual.
+  key_features: Hell Girl ferry; spider lilies; crimson twilight; lanterns
+  creative_brief: "Studio Deen Hell Girl look (2005): eerie twilight ferries on crimson rivers, spider lilies, lanterns, ritual retribution and quiet horror of ordinary grudges. Carry it through Hell Girl ferry, spider lilies, crimson twilight, lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black-haired girl in a black sailor uniform with red eyes
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-280.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a black-haired girl in a black sailor uniform with red eyes, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Revolutionary Girl Utena - Rose Ritual Symbolism
 displayName: Revolutionary Girl Utena - Rose Ritual Symbolism
 category: 2. 90s Golden Era
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rose pink, crimson, gold and pale lavender sky.
   lighting_and_shadow: Theatrical spotlights, rose petal glows and surreal skies.
   texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
@@ -58,12 +58,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-175.webp
 attributes:
-  negativePrompt: a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

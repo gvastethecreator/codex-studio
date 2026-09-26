@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-048
 packId: pack_05
-name: Coiled Anticipation Lead-Space Frame
+name: Hironori Tanaka - Coiled Anticipation Lead-Space Frame
 styleAnchors:
-  - Coiled Anticipation Lead-Space Frame
+  - Hironori Tanaka - Coiled Anticipation Lead-Space Frame
   - anime action staging
   - coiled pre-motion pose
-displayName: Coiled Anticipation Lead-Space Frame
+displayName: Hironori Tanaka - Coiled Anticipation Lead-Space Frame
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - anticipation
   - negative-space
+  - reference-title
 visualDna:
-  aesthetic: 'Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the pre-motion coiled pose and the large empty lead space, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the empty lead space is a calm flat value while the subject holds the strongest contrast.
-  lighting_and_shadow: Low side light that carves the tension in the coiled pose with hard short shadows.
-  texture_and_material: Still surfaces, no motion marks at all; small tension details like gripping toes or taut fabric.
-  camera_and_composition: The subject in the outer fifth of the frame, the rest left as open lead space in the direction of the coming move.
-  atmosphere_and_mood: Held breath and loaded stillness, energy about to release.
-  rendering_and_quality: Precise pose drawing with visible weight shift, calm backgrounds and zero motion effects.
-  creative_brief: "Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross. Carry it through coiled pre-motion pose, subject in outer fifth of frame, large empty lead space, no motion marks, low side light on the tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension
+  aesthetic: 'Hironori Tanaka action sakuga: strong anticipation poses, coiled compressed bodies ready to spring, clear lead space and snappy timing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures coiled in deep anticipation, body compressed and weight loaded before explosive release. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sea blue, rock grey and bright summer highlights.
+  lighting_and_shadow: Bright summer light with crisp short shadows and glittering sea.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Figure placed at one edge with wide lead space in the direction of the coming leap.
+  atmosphere_and_mood: Keep the requested mood with tense coiled anticipation.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Hironori Tanaka action sakuga: strong anticipation poses, coiled compressed bodies ready to spring, clear lead space and snappy timing. Carry it through Hironori Tanaka anticipation, coiled poses, lead space, snappy timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Hironori Tanaka anticipation; coiled poses; lead space; snappy timing
 avoidRules:
   - added opponent
   - added sports gear
@@ -47,10 +48,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-048.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -61,6 +66,7 @@ taxonomy:
     - action
     - anticipation
     - negative-space
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

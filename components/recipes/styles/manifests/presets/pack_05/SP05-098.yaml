@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-098
 packId: pack_05
-name: Rounded Sky-Blue Friendly Cel
+name: Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Round off corners and group small details into friendly shapes; do not add a mascot creature, a crowd or banners.
-  color_and_tone: Clear sky blue, warm cream, soft grass green and sandy earth, saturated but gentle and evenly balanced.
-  lighting_and_shadow: Even diffuse daylight with soft round highlights describing volume and pale blue shadows.
-  texture_and_material: Smooth cel shading and satin highlights with almost no surface noise or grain.
-  camera_and_composition: Keep the requested view; uncluttered spacing with repeated rounded shapes leading to the focal point.
-  atmosphere_and_mood: Optimistic, generous and easygoing, a world where everyone gets along.
-  rendering_and_quality: Stable silhouettes, soft shadow edges and clean color blocking with every corner rounded.
-  key_features: rounded silhouettes; sky-blue accents on cream; soft round highlights; pale blue shadows; uncluttered color blocks
-  creative_brief: "Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream. Carry it through rounded silhouettes, sky-blue accents on cream, soft round highlights, pale blue shadows, uncluttered color blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Eight Bit That Time I Got Reincarnated as a Slime look (2018): friendly rounded monster nation fantasy, sky-blue brightness, diverse monster citizens and cheerful town building.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people and monsters with friendly rounded designs, bright costumes and cheerful expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sky blue, grass green, sunny yellow and warm wood tones.
+  lighting_and_shadow: Bright friendly daylight with gentle magical glows around monster citizens.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Town-building wide shots with scaffolding and friendly crowded group shots.
+  atmosphere_and_mood: Keep the requested mood with friendly building optimism.
+  rendering_and_quality: Bright friendly fantasy television frame with cheerful monster crowds.
+  key_features: Monster nation; sky blue; friendly rounded designs; town building
+  creative_brief: "Eight Bit That Time I Got Reincarnated as a Slime look (2018): friendly rounded monster nation fantasy, sky-blue brightness, diverse monster citizens and cheerful town building. Carry it through Monster nation, sky blue, friendly rounded designs, town building. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a round blue slime with a smiling face
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-098.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, slime mascot, kingdom crowd, sharp angular shapes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a round blue slime with a smiling face, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, slime mascot, kingdom crowd, sharp angular shapes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,12 +82,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Rounded Sky-Blue Friendly Cel
+displayName: Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel
 styleAnchors:
-  - Rounded Sky-Blue Friendly Cel
+  - Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel
   - Slime Isekai – Monster-Nation Bright Fantasy

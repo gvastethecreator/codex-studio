@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Samurai 7 - Snowfield Last Stand
 category: 6. Samurai & Medieval
 domain: winter battle anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Gonzo Samurai 7 television look (2004): the classic seven defenders story reimagined with sci-fi elements, painterly backgrounds, flowing coats and CG mechanical bandits.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with lean samurai designs, long flowing coats and hair, weathered faces and distinctive silhouettes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with lean samurai designs, long flowing coats and hair, weathered faces and distinctive silhouettes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Snow white, steel grey, rice-field green and bold crimson accents.
   lighting_and_shadow: Cold overcast light on snow, silhouettes and bright steel glints.
   texture_and_material: Digital cel over painterly backgrounds, CG machines and snowfall.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

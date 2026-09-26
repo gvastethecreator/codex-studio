@@ -12,35 +12,15 @@ tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
 visualDna:
-  aesthetic: >-
-    Use dense organic cross-contour, anatomical patterning and carmine/bone/black contrast only on
-    visible forms; do not invent wounds, organs or gore.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep carmine, bone and black as
-    restrained graphic accents; preserve prompt colors and the depicted subject's material.
-  lighting_and_shadow: >-
-    Use hard clinical value contrast with detail concentrated where anatomy or structure is already
-    visible.
-  texture_and_material: >-
-    Build unease through tightly interwoven contour and fine organic marks, never through added
-    injury or anatomy.
-  camera_and_composition: >-
-    Keep the source pose, composition and amount of visible content; do not crop in to manufacture
-    gore.
-  atmosphere_and_mood: >-
-    Visceral tension is a pattern and contrast language; preserve the requested content and
-    intensity.
-  rendering_and_quality: >-
-    Use the pattern treatment without adding blood, wounds, dismemberment, organs or anatomical
-    features to nonliving subjects. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological
-    precision; controlled dread.
+  aesthetic: Use dense organic cross-contour, anatomical patterning and carmine/bone/black contrast only on visible forms; do not invent wounds, organs or gore.
+  subject_treatment: Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.
+  color_and_tone: "Palette defaults apply only where the prompt leaves color open: keep carmine, bone and black as restrained graphic accents; preserve prompt colors and the depicted subject's material."
+  lighting_and_shadow: Use hard clinical value contrast with detail concentrated where anatomy or structure is already visible.
+  texture_and_material: Build unease through tightly interwoven contour and fine organic marks, never through added injury or anatomy.
+  camera_and_composition: Keep the source pose, composition and amount of visible content; do not crop in to manufacture gore.
+  atmosphere_and_mood: Visceral tension is a pattern and contrast language; preserve the requested content and intensity.
+  rendering_and_quality: Use the pattern treatment without adding blood, wounds, dismemberment, organs or anatomical features to nonliving subjects. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
+  key_features: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread.
   creative_brief: 'Apply this visual treatment to the requested content: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
@@ -53,19 +33,12 @@ avoidRules:
   - unrequested interface overlay
   - watermark
   - unrequested logo or signature artifact
-  - unrequested wound, blood or organ detail
   - anatomical patterning added where no anatomy is visible
   - dense cross-contour obscuring source silhouette
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-107.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, unrequested wound, blood or organ detail, anatomical
-    patterning added where no anatomy is visible, dense cross-contour obscuring source silhouette
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, anatomical patterning added where no anatomy is visible, dense cross-contour obscuring source silhouette
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

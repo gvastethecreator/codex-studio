@@ -49,9 +49,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'saturated neon color', 'heavy black outlines', 'dramatic rim light'],
       briefs: [
-        'Faded-line pale wash cel of an elderly adult elf herbalist kneeling alone in a vast windswept meadow, pressing one blue flower into a blank leather journal, tiny figure against a huge pale watercolor sky, warm-grey lineart fading at the edges, sage and pale amber, drifting light flecks. No text or logo.',
-        'Faded-line pale wash cel of a ruined watchtower swallowed by white heather on a hilltop, a single raven on its broken parapet, low horizon, lifted slate shadows, transparent watercolor granulation in the sky and one soft cel shadow tier. No text or logo.',
-        'Faded-line pale wash cel of an adult fisherwoman mending a net on a quiet wooden dock in plain morning light, the task shown simply, slender proportions, sage water and blue-grey planks, thin fading contours. No text or logo.',
+        "Visiting the grave of a dwarf friend who died two centuries ago, an ageless elf mage in a faded cloak brushes moss off the stone and sets down the same cheap sweet they shared on their first quest. No readable text or logo.",
+        "An old dwarf blacksmith and a young priest argue gently about the best way to fold a map while their elf companion quietly watches clouds drift over a pale meadow. No readable text or logo.",
+        "On a quiet hilltop at dawn, a small bronze statue of a long-forgotten party of heroes stands half hidden by tall grass and wildflowers. No readable text or logo.",
       ],
     },
     'SP05-099': {
@@ -78,9 +78,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'hero portrait pose', 'shiny new armor'],
       briefs: [
-        'Worn bronze concentric-line cel of an adult gate warden bracing a splintered oak door with his whole back against a storm of hail, worm-level angle, heavy dark-brown lineart echoed in nested contour rings around his shoulders, bronze edge rims and three-tone cel shadow. No text or logo.',
-        'Worn bronze concentric-line cel of two adult monks hauling a cracked bronze bell up into a belfry on straining ropes, seen from directly below, scuffed dry-brush wear, amber accent on the bell lip, deep stone-grey shadow. No text or logo.',
-        'Worn bronze concentric-line cel of an adult farmhand splitting firewood in a snowy yard at dusk, an ordinary chore drawn with weight, axe mid-swing, concentric line echoes along his arms, chipped-edge highlights on the logs. No text or logo.',
+        "Bracing a dented bronze pot lid against a stampede of armored boars, a stubborn village cook in a leather apron holds the line while rings of impact ripple out across the muddy square behind her. No readable text or logo.",
+        "Falsely accused and covered in flour, a baker sits outside the town gate sharpening a bread knife while a stray dog loyally shares his blanket. No readable text or logo.",
+        "A battered bronze shield leans against a tavern wall at night, dents catching the warm lamplight like scars on a face. No readable text or logo.",
       ],
     },
     'SP05-248': {
@@ -108,9 +108,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'cooking scene', 'food as default subject', 'annotations or labels'],
       briefs: [
-        'Naturalist sketchbook anime cel of an adult ranger kneeling beside a giant armored beetle asleep on a mossy log, measuring its horn with a knotted cord, specimen-plate composition, fine brown pen lineart on every plate and joint, moss and ochre fills, stippled bark. No text or logo.',
-        'Naturalist sketchbook anime cel of a rotting stump crowded with shelf fungi and a single copper salamander, close macro view, pen hatching in the crevices, paper tooth under flat washes, warm reflected bounce under each cap. No text or logo.',
-        'Naturalist sketchbook anime cel of an adult man darning a wool sock by a cottage window, a plain household task with the needle path and every loop of yarn drawn clearly, earthy rust and lichen-blue palette, no food anywhere. No text or logo.',
+        "Crouched beside a dungeon campfire, a scholarly adventurer sketches the anatomy of a giant walking mushroom in her notebook while her companion quietly slices its cap into a bubbling stew pot. No readable text or logo.",
+        "Four tired adventurers argue over whether a slime can be dried like fruit, the specimen wobbling indignantly on a drying rack between them. No readable text or logo.",
+        "In a quiet dungeon corridor, a neatly labeled row of monster spices hangs drying beside a sleeping iron golem. No readable text or logo.",
       ],
     },
     'SP05-252': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'campfire cooking pot', 'banquet table', 'hard black shadows'],
       briefs: [
-        'Amber dusk rounded cel of an adult shepherdess leading a flock of plump sheep over a heather ridge, long diagonal line of woolly backs, warm amber key from the low side, twilight-blue shadows, soft rounded lineart and airbrushed falloff. No text or logo.',
-        'Amber dusk rounded cel of a sleepy green dragon curled around a haystack in a barn loft, amber light slanting through the plank gaps, dusty violet shadow, diffusion glow on the straw, every shape softened. No text or logo.',
-        'Amber dusk rounded cel of an adult grandmother folding patchwork quilts on a bed in a lamplit cottage room, just the chore and the calm, honey and cream highlights, soft vignette, gentle two-tone shading. No text or logo.',
+        "Stirring a sizzling pan of garlic mushrooms over a campfire at dusk, a middle-aged office worker in a borrowed cloak laughs as an enormous fluffy lynx politely waits for the first bite. No readable text or logo.",
+        "A dragon the size of a barn sulks at the edge of a campsite until someone hands it a tiny skewer of grilled onions. No readable text or logo.",
+        "On a flat rock beside a dying campfire, a single glossy rice ball sits on a leaf under the first evening stars. No readable text or logo.",
       ],
     },
     'SP05-257': {
@@ -167,9 +167,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'multiple accent colors', 'market stall', 'glow effects'],
       briefs: [
-        'Slate twilight single-violet cel of an adult ferryman poling a flat barge across a black mountain lake under a thin moon, tiny figure far left on a long horizon line, near-monochrome slate and ink navy, his violet lantern the only color, dry economical lineart. No text or logo.',
-        'Slate twilight single-violet cel of an adult falconer standing on a frozen ridge, the falcon lifting from a violet leather glove, huge band of empty blue-grey sky, one narrow white highlight on the wing, flat darker-slate shadow. No text or logo.',
-        'Slate twilight single-violet cel of an adult woman sweeping snow off a cottage doorstep at blue hour, nothing more than the chore, her violet scarf the single accent, wide horizontal negative space, broken dry line ends. No text or logo.',
+        "Crossing a slate-grey wasteland under a huge moon, an unassuming traveling merchant leads a caravan of polite giant spiders carrying sacks of flour, one violet lantern swinging at the front. No readable text or logo.",
+        "A plain-faced shopkeeper haggles calmly with a nervous dragon over the price of a single violet potion bottle. No readable text or logo.",
+        "Under a slate twilight sky, a lone violet flower grows from a crack in an abandoned market stall. No readable text or logo.",
       ],
     },
     'SP05-258': {
@@ -197,9 +197,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'photorealistic hands', 'product photograph', 'toolbox pile'],
       briefs: [
-        'Fine-line brass glint cel of an adult dwarf locksmith on a ladder fitting a brass key into the enormous lock of a castle gate, tiny figure against the huge iron door, hairline mechanical lineart on every tumbler plate, brass specular glints, walnut and olive palette. No text or logo.',
-        'Fine-line brass glint cel of a clockwork brass owl perched on a stone windowsill with a hatch open in its chest showing gears, elevated three-quarter view, tiny sparkle points on each cog, calm single-tone shadow. No text or logo.',
-        'Fine-line brass glint cel of an adult man tightening a squeaky hinge on a pantry cupboard door with a screwdriver, a small household repair kept small, grounded proportions, hairline screws and wood grain, brass glint on the hinge. No text or logo.',
+        "Kneeling beside a cracked magic door in a dungeon corridor, a quiet handyman with a brass toolbox fixes the hinge while an impatient knight, a mage and a thief watch in stunned silence. No readable text or logo.",
+        "Squinting through thick glasses in a candlelit workshop, a retired carpenter repairs a knight’s dented helmet with a tiny brass hammer while the knight nervously waits in his underclothes. No readable text or logo.",
+        "On a workshop bench at night, a set of brass tools lies neatly arranged beside a half-repaired magic staff. No readable text or logo.",
       ],
     },
     'SP05-259': {
@@ -226,9 +226,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'glossy digital shading', 'detailed sparkling anime eyes'],
       briefs: [
-        'Picture-book crayon line anime of a tiny adult knight in oversized armor looking up at a gentle hill giant sitting cross-legged, extreme scale contrast, wobbly colored-pencil lineart, waxy ochre and coral crayon fills, dot eyes, paper tooth showing. No text or logo.',
-        'Picture-book crayon line anime of a small frog with an acorn-cap hat sitting on a lily pad in a castle moat under a huge round moon, flat staging, blue-green crayon water, one pale shadow shape under the pad. No text or logo.',
-        'Picture-book crayon line anime of an adult woman knitting a long striped scarf in a rocking chair, the scarf spilling across the floor, an ordinary evening with no adventure, rounded shapes, deliberate gaps in the coloring. No text or logo.',
+        "Marching up the stairs of a towering pastel castle, a tiny round-faced baker with a crooked paper crown carries a cake twice his size to the grumpy giant queen at the top. No readable text or logo.",
+        "A small shadow creature and a retired court jester share an apple on the castle wall, laughing silently at the sunset. No readable text or logo.",
+        "In a soft crayon-drawn storybook meadow, a small paper crown lies forgotten in the grass beside a sleeping lamb and a bouquet of wildflowers. No readable text or logo.",
       ],
     },
     'SP05-260': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'dark gritty palette', 'black outlines', 'banquet table'],
       briefs: [
-        'Candy pastel bloom cel of an adult unicorn keeper brushing the long lilac mane of a unicorn in a meadow of blush blossoms, centered composition, colored lineart, satin gloss bands on the mane, lavender-tinted shadows and a soft bloom halo. No text or logo.',
-        'Candy pastel bloom cel of a floating island castle with ribbon-like waterfalls spilling into a mint sky, seen from a steep low angle, buttery cream towers, white-hot highlights, floating petal specks. No text or logo.',
-        'Candy pastel bloom cel of an adult young man ironing a white shirt on a board in a sunny room, just a household chore made sweet, mint and blush palette, glossy two-tone shading, sparkles on the iron edge. No text or logo.',
+        "At a fantasy guild banquet glowing with pastel light, a grandmother adventurer in a lemon-yellow robe stacks her plate with glowing fruit tarts while three younger warriors watch in awe. No readable text or logo.",
+        "A hungry knight fights a giant floating pudding monster and keeps taking bites between sword strikes. No readable text or logo.",
+        "An empty banquet table glows in the sunset, one untouched strawberry tart sparkling at the center. No readable text or logo.",
       ],
     },
     'SP05-091': {
@@ -290,9 +290,9 @@ const spec: Spec = {
         'glass pavilion',
       ],
       briefs: [
-        'Cyan crystal-facet glow cel of an adult ice sorceress stepping barefoot across the face of a frozen waterfall, vertical composition, thin faceted highlights rimming her silhouette, translucent cyan planes layered behind her, pearl-white high key. No text or logo.',
-        'Cyan crystal-facet glow cel of a white stag standing in a snowbound birch forest at dawn, refraction-like highlight shards along its antlers, hexagonal sparkle particles in the air, a single blush-pink accent in the sky. No text or logo.',
-        'Cyan crystal-facet glow cel of an adult woman rinsing glass jars at a stone sink by a window, an everyday chore that stays a chore, cyan light planes on the water, prismatic pinpoint glints on the jar rims, restrained bloom. No text or logo.',
+        "Logging into a floating castle of cyan crystal for the first time, a retired schoolteacher in a clumsy beginner’s tunic swings a practice sword and watches a training dummy shatter into glittering polygons. No readable text or logo.",
+        "Two guildmates in their fifties fish from the edge of a floating virtual island, their lines glowing cyan in the void. No readable text or logo.",
+        "A single crystal sword stands in a virtual meadow at dusk, slowly dissolving into floating light cubes. No readable text or logo.",
       ],
     },
     'SP05-092': {
@@ -319,9 +319,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'doubled character', 'gore'],
       briefs: [
-        'Violet echo-line gothic cel of an adult clock keeper hauling on the chain of an enormous pendulum inside a crumbling bell tower, the swinging pendulum trailed by fading silver after-image lines, deep violet and ink black, narrow silver rim light. No text or logo.',
-        'Violet echo-line gothic cel of a spiral of pale moths circling an iron candle chandelier in a vaulted crypt, seen from below, each wing echoed by ribbon-fine silver lines, nested curves drawing the eye upward. No text or logo.',
-        'Violet echo-line gothic cel of an adult violinist playing alone in a roofless ruined ballroom under falling ash, the bow arm echoed three times in lilac lines, softly lost background edges, subtle grain in the darks. No text or logo.',
+        "Waking once again in the same gothic mansion bedroom, a tired middle-aged clerk sees faint violet echo-lines of himself repeating the same morning around the room. No readable text or logo.",
+        "A butler serves tea at a long table as violet ghost images of dozens of earlier dinners flicker at every seat. No readable text or logo.",
+        "A pocket watch lies open on a gothic nightstand, its hands spinning backward under violet moonlight. No readable text or logo.",
       ],
     },
     'SP05-093': {
@@ -349,9 +349,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'map labels', 'road party'],
       briefs: [
-        'Sepia moss dry-brush cel of a string of laden pack mules climbing a cliff switchback toward a monastery perched on a rock spire, tiny clean cel figures, painterly sepia rock, pale open sky, distant peaks fading to ink blue. No text or logo.',
-        'Sepia moss dry-brush cel of a ruined aqueduct striding across a moss-green valley with sheep grazing under its arches, three planes separated by air, dry pigment breaks on the stone, parchment highlights. No text or logo.',
-        'Sepia moss dry-brush cel of an adult roofer patching the thatch of a farmhouse with fresh straw bundles, a plain repair job, crisp cel figure against painterly moss hills, atmospheric blue fade behind. No text or logo.',
+        "Teaching her first magic lesson in a mossy village schoolhouse, a gray-haired wandering mage patiently guides a farmer’s hands as a tiny stream of water rises from a wooden bucket. No readable text or logo.",
+        "Three travelers share a thin blanket in a rainy barn, the painted fields outside glowing sepia in the storm light. No readable text or logo.",
+        "A worn traveling staff leans against a mossy milestone on an empty country road at dawn. No readable text or logo.",
       ],
     },
     'SP05-094': {
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'lewd gag', 'speech bubbles', 'tavern'],
       briefs: [
-        'Springy comic-timing cel of an adult wizard whose grand fireball fizzles into a single sad puff of smoke while a goblin opposite him shrugs, deadpan faces, sweat-drop shapes, yellow-coral-aqua flats, tilted framing, the silence after the gag. No text or logo.',
-        'Springy comic-timing cel of an adult knight stuck head-first in a wine barrel, armored legs kicking, speed marks and elastic lineart, one hard cel shadow tier, off-center composition. No text or logo.',
-        'Springy comic-timing cel of an adult woman losing a wrestling match with a fitted bedsheet that refuses to fold, a household chore kept a chore, flailing elastic limbs, blank stare, bright flat colors. No text or logo.',
+        "Proudly announcing her ultimate spell to a crowd of villagers, a retired court wizard accidentally blows up her own house and collapses face-first into a haystack, still smiling. No readable text or logo.",
+        "A party of adventurers flees across a cabbage field from a swarm of flying cabbages, one knight happily volunteering to be hit. No readable text or logo.",
+        "On a sticky tavern table in a cheap fantasy village, a pile of unpaid guild bills surrounds one half-eaten frog leg and a spilled mug. No readable text or logo.",
       ],
     },
     'SP05-098': {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'slime mascot', 'kingdom crowd', 'sharp angular shapes'],
       briefs: [
-        'Rounded sky-blue friendly cel of an adult farmer and a round stone golem planting a sapling together on a hilltop, the golem twice her height, rounded silhouettes, sky-blue accents on cream, soft round highlights, pale blue shadows. No text or logo.',
-        'Rounded sky-blue friendly cel of a gentle sea serpent arching over a harbor of round-roofed cottages, its coils forming repeated rounded shapes, clear sky blue and sandy earth, satin highlights on its scales. No text or logo.',
-        'Rounded sky-blue friendly cel of an adult man hanging a wooden birdhouse on a garden tree, an easy weekend task, uncluttered color blocks, warm cream bark, soft shadow edges. No text or logo.',
+        "Building a new town square together under a bright sky-blue morning, goblin carpenters, lizard masons and a retired human engineer cheer as the last beam of a clock tower slides into place. No readable text or logo.",
+        "A giant friendly ogre chef serves soup to a line of tiny forest spirits in a busy monster-town market. No readable text or logo.",
+        "A small wooden signpost stands at the edge of a new monster town, a flower crown hanging from its top. No readable text or logo.",
       ],
     },
     'SP05-100': {
@@ -437,9 +437,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'dungeon corridor', 'hallway perspective'],
       briefs: [
-        'Vertical mineral amber cel of an adult dwarf miner chiselling at the foot of towering amber crystal columns in a cavern, tiny figure at the bottom of the frame, vertical facets of value, warm point lights, cool teal depth. No text or logo.',
-        'Vertical mineral amber cel of an underground waterfall pouring between teal basalt columns, amber glowworms dotting the rock like stars, stacked vertical planes, contained quartz-like glow. No text or logo.',
-        'Vertical mineral amber cel of an adult woman lighting candles one by one up a tall stone stairwell at night, a household evening routine, each flame a small amber point, tall facet-like shadows, teal ambient. No text or logo.',
+        "Climbing a vertical dungeon shaft lit by amber lanterns, a middle-aged adventurer hauls a sack of glowing mineral crystals toward the tiny circle of daylight far above. No readable text or logo.",
+        "A goddess of a small bakery familia bandages an adventurer’s arm while her bread burns in the oven. No readable text or logo.",
+        "Deep in a silent crystal dungeon, a single amber lantern hangs from a glowing mineral outcrop above a rope that disappears into darkness. No readable text or logo.",
       ],
     },
     'SP05-241': {
@@ -465,9 +465,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'map table', 'board game', 'group huddled over a table'],
       briefs: [
-        'Systemic cooperation grid cel of a line of adult archers drawing in unison along a castle wall, seen from high above, every figure at an even interval with identical short shadows, indigo and muted gold, hard-edged flats. No text or logo.',
-        'Systemic cooperation grid cel of an orchard planted in exact rows with adult harvesters on identical ladders passing baskets hand to hand, high orthogonal view, measured spacing, small cyan notes. No text or logo.',
-        'Systemic cooperation grid cel of an adult tiler laying square stone tiles across a floor in a precise staggered pattern, a plain home job, frontal top-down view, crisp line breaks, even top light. No text or logo.',
+        "Around a huge round table in an overgrown ruined office tower, a bespectacled strategist in a long coat moves carved wooden pieces representing every guild while vines creep through the broken windows. No readable text or logo.",
+        "A guild of cooks and tailors plans a festival on a rooftop garden above a moss-covered city. No readable text or logo.",
+        "Above an empty overgrown avenue, a ruined highway sign is completely wrapped in flowering vines, with a family of birds nesting in its frame. No readable text or logo.",
       ],
     },
     'SP05-242': {
@@ -493,9 +493,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'crisp clean cel', 'bright saturated color', 'heroic pose'],
       briefs: [
-        'Smoke-mud vulnerability painting of an adult foot soldier sitting alone in a muddy siege trench, dented helmet in his lap, tight framing, lost smoky edges, clay and charcoal brushwork, only his tired face kept clear. No text or logo.',
-        'Smoke-mud vulnerability painting of a riderless warhorse standing head-down in a rain-soaked field after battle, dragged olive and dusk-blue streaks, compressed values, diffuse side light. No text or logo.',
-        'Smoke-mud vulnerability painting of an adult washerwoman wringing laundry at a cold river bank, an everyday task with no drama added, thumb-blended edges, muted clay palette, her reddened hands the clear focal gesture. No text or logo.',
+        "After a clumsy fight with a single goblin, a muddy band of beginner adventurers in cheap patched gear sits by a smoky campfire at dawn, silently passing around one bruised apple. No readable text or logo.",
+        "A novice priest washes her only shirt in a stream, soft watercolor light around her tired shoulders. No readable text or logo.",
+        "In a muddy field under a pale pastel morning sky, a broken wooden practice sword lies beside a worn boot and a trampled flower. No readable text or logo.",
       ],
     },
     'SP05-243': {
@@ -521,9 +521,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'modern digital bloom', 'flat vector look', 'tapestry layout'],
       briefs: [
-        'Classic OVA hand-painted cel of an adult sorceress with windblown hair standing on a sea cliff as a burning fleet drifts below at sunset, airbrushed highlight bands on her hair, gouache sky, film grain and cel dust. No text or logo.',
-        'Classic OVA hand-painted cel of an adult griffin rider banking past a mountain fortress through airbrushed cumulus clouds, multiplane depth, warm sunset highlights against blue-violet shadow, long-limbed period anatomy. No text or logo.',
-        'Classic OVA hand-painted cel of an adult armored swordswoman kneeling beside a stone cairn in a windy highland, cape and grass streaming, two-tone cel shadow with an airbrushed band on the steel, slight filmed softness. No text or logo.',
+        "Crossing a stone bridge toward a painted mountain fortress, a weathered dwarf, a dignified elf archer and an aging knight in detailed plate armor pause to watch a dragon circle the peaks. No readable text or logo.",
+        "An elf and a dwarf argue over the correct way to light a campfire in a rainy forest. No readable text or logo.",
+        "In an empty stone throne hall, a tattered royal banner hangs crookedly while dusk light falls through tall windows across the thick dust. No readable text or logo.",
       ],
     },
     'SP05-244': {
@@ -550,9 +550,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'throne room', 'photographed fabric', 'product shot'],
       briefs: [
-        'Tall textile-rhythm formal cel of an adult scholar-official walking the length of a vermilion colonnade in light rain, tall narrow framing, columns repeating like warp threads, brocade-like line pattern in her robe, indigo and cinnabar. No text or logo.',
-        'Tall textile-rhythm formal cel of a qilin standing motionless between tall pine trunks in morning mist, near symmetry, fine repeated strokes on its scales, parchment sky, small gold notes. No text or logo.',
-        'Tall textile-rhythm formal cel of an adult weaver warping a tall upright loom in a plain room, the daily work only, vertical threads setting the rhythm, shallow flat shadows, precise ornament highlights. No text or logo.',
+        "Standing in a vast jade throne hall, a newly chosen queen who was once a farmer lets her long vermilion robes spill down the steps as rows of ministers bow in perfect rhythmic lines. No readable text or logo.",
+        "A tall mythical unicorn in human form waits under a misty pine for a ruler who has not arrived yet. No readable text or logo.",
+        "On a silk cushion in a silent jade court at dawn, an empty imperial seal waits beside a folded robe and a single burning incense stick. No readable text or logo.",
       ],
     },
     'SP05-245': {
@@ -579,9 +579,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'tarot card', 'mecha copy', 'weapon-first pose'],
       briefs: [
-        'Carmine angular windswept cel of an adult swordsman leaping the gap between two jagged cliff peaks, carmine cape snapping behind him, strong tilted diagonal, angular 1990s features, dry-brush wind streaks. No text or logo.',
-        'Carmine angular windswept cel of an adult woman clinging to the mast of a storm-tossed airship, sails and hair torn in one direction, carmine sash against slate cloud, hard edge light. No text or logo.',
-        'Carmine angular windswept cel of a field of ripe wheat flattened by a gale around a lone scarecrow with a carmine rag, long tapered strokes following the wind, blue-grey sky, high contrast. No text or logo.',
+        "Standing on a windswept cliff above a floating fortress, a fortune-teller in a carmine scarf holds a spread of hand-painted cards as her hair and cloak whip in the gale. No readable text or logo.",
+        "An armored knight and a farm girl share bread on a hill while a huge airship drifts past the moons. No readable text or logo.",
+        "Spinning high in the wind above a green valley at sunset, a single carmine feather drifts past the silhouette of a distant airship. No readable text or logo.",
       ],
     },
     'SP05-246': {
@@ -607,9 +607,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'market aisle', 'camel caravan', 'desert default'],
       briefs: [
-        'Jewel arabesque curve cel of an adult djinn uncoiling in a turquoise smoke S-curve from a fountain in a tiled courtyard, enamel tile shine, fine gold-line ornament on his bracers, jewel-point specular stars. No text or logo.',
-        'Jewel arabesque curve cel of an adult carpet flier gliding over domed rooftops at dusk, the carpet rippling in an S-arc, jewel blue sky, saffron domes, warm light rolling over curved planes. No text or logo.',
-        'Jewel arabesque curve cel of an adult potter painting turquoise glaze arabesques on a tall jar at her wheel, a quiet day of work, flowing curves echoing the brush, amber and jewel blue palette. No text or logo.',
+        "Riding a flying carpet over a turquoise-domed desert city, an elderly spice merchant in jeweled robes throws handfuls of saffron that swirl into glowing arabesque patterns above the market. No readable text or logo.",
+        "In a crowded bazaar full of hanging lanterns, a giant friendly blue djinn helps a tired water seller balance a tower of clay jars on her head. No readable text or logo.",
+        "In a moonlit palace courtyard lined with arabesque arches, an empty golden lamp rests on a silk cushion beside a quiet fountain. No readable text or logo.",
       ],
     },
     'SP05-249': {
@@ -636,9 +636,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'readable pages', 'printing press prop'],
       briefs: [
-        'Indigo block-print cel of an adult bookbinder stitching the spine of a thick leather codex by candlelight, blank pages, solid indigo shadow shapes, fine hatchwork on the leather, one amber accent ink for the flame. No text or logo.',
-        'Indigo block-print cel of a flock of cranes lifting off an indigo river beside a walled town, bold flat masses of water, cream paper grain in the sky, slight off-register edges on the wings. No text or logo.',
-        'Indigo block-print cel of an adult dyer hanging long indigo-dyed cloths to dry on poles in a courtyard, just the daily work, ink squash at block edges, cream and indigo with a touch of amber. No text or logo.',
+        "Pressing her first hand-carved wooden block onto rough homemade paper, a determined elderly seamstress in a medieval workshop gasps as an indigo flower pattern appears perfectly on the sheet. No readable text or logo.",
+        "A merchant and a priest argue over the price of a single handmade picture book in a candlelit shop. No readable text or logo.",
+        "Across a quiet attic lit by one candle, a long string of freshly printed indigo pages dries slowly above a cluttered wooden press. No readable text or logo.",
       ],
     },
     'SP05-250': {
@@ -664,9 +664,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'god rays', 'halo', 'temple hallway', 'stone bridge at sunset'],
       briefs: [
-        'Grounded matte geometry cel of an adult knight in plain plate armor sitting on a square stone step in snow beside a grey wolf, centered symmetrical balance, matte gouache planes, pale gold morning light, no rays. No text or logo.',
-        'Grounded matte geometry cel of a square stone watchtower on a flat rocky plateau with a single triangular fir, steady horizon, blue-grey sky, one soft shadow tier. No text or logo.',
-        'Grounded matte geometry cel of an adult man sharpening a knife on a whetstone at a plain wooden table, a household chore only, the table, stone and blade forming simple verticals and rectangles, earth tones. No text or logo.',
+        "In a ruined stone temple, a gentle skeleton knight and a ghostly old priest teach a grown apprentice how to hold a sword with the same care as a prayer book. No readable text or logo.",
+        "By the crackling fire of a ruined temple, a gentle mummy grandmother knits a long woolen scarf while her grown apprentice sleeps under a borrowed cloak. No readable text or logo.",
+        "On a cracked stone altar inside a moss-covered ruined temple, a single fresh loaf of bread sits in a beam of morning light. No readable text or logo.",
       ],
     },
     'SP05-253': {
@@ -693,9 +693,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'laboratory room', 'crowded table', 'dark low key'],
       briefs: [
-        'Glass-green high-key herbarium cel of an adult court apothecary holding a green glass vial up to a tall window, glass-green translucence through the vial onto her sleeve, veinlike linework on her gloves, high-key cream ground. No text or logo.',
-        'Glass-green high-key herbarium cel of a row of glass bell jars on a garden wall, each sheltering a single fern frond, orderly spacing, transparent washes, muted gold on the jar rims. No text or logo.',
-        'Glass-green high-key herbarium cel of an adult man repotting a leggy fern at a sunlit windowsill, a small household task, thin crisp contours over transparent green washes, lots of pale ground. No text or logo.',
+        "Surrounded by glass shelves of glowing herbs in a sunlit royal greenhouse, a tired office worker turned healer brews a mint potion that sparkles so brightly the knights outside the window squint. No readable text or logo.",
+        "In a sunlit palace corridor, a shy royal librarian tries to thank a potion maker with a bouquet of herbs she grew herself, blushing to the ears. No readable text or logo.",
+        "On a sunny greenhouse windowsill crowded with drying herbs, a single glass vial of green potion glows softly as a bee circles it curiously. No readable text or logo.",
       ],
     },
     'SP05-254': {
@@ -719,9 +719,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'school uniform', 'readable sigil', 'shrine hallway'],
       briefs: [
-        'Lavender halo-arc shoujo cel of an adult woman releasing a white dove from cupped hands under a star-filled sky, halo-like value rings arcing behind her head, large sparkling eyes, flowing hair, star sparkle marks. No text or logo.',
-        'Lavender halo-arc shoujo cel of an adult swordswoman seen in the reflection of a still pool, ring accents rippling out from her image, deep blue water, a single warm red ribbon. No text or logo.',
-        'Lavender halo-arc shoujo cel of an adult dancer spinning through a field of tall irises, her skirt tracing arcs, soft rim light, flower-like screen accents, tender melodramatic contrast. No text or logo.',
+        "Falling through the pages of an ancient book into a lavender sky, a librarian in her forties is caught by seven celestial warriors whose constellations glow around their halos. No readable text or logo.",
+        "A shrine warrior and a scholar share a quiet moonlit walk in an ancient palace garden. No readable text or logo.",
+        "An old red-bound book lies open on a library floor, lavender light rising from its pages. No readable text or logo.",
       ],
     },
     'SP05-255': {
@@ -745,9 +745,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'gem-studded vehicle', 'group lineup', 'readable glyphs'],
       briefs: [
-        'Gem-facet rising-line cel of an adult sorceress summoning an emerald serpent that spirals up around her into the sky, long upward-sweeping lines, faceted gem glints on its scales, ruby and gold accents. No text or logo.',
-        'Gem-facet rising-line cel of a great winged lion bursting up out of a sapphire sea, feathers tipped with faceted highlights, rising diagonal from bottom left, crisp contained glow. No text or logo.',
-        'Gem-facet rising-line cel of an adult woman shaking a rug out of a balcony window, the dust rising in sparkling ruby and sapphire lines, an ordinary spring-cleaning moment, sharp contours. No text or logo.',
+        "Leaping between floating islands in armor studded with ruby facets, a retired firefighter summoned to a fantasy world raises a glowing sword as rising speed lines blaze behind her. No readable text or logo.",
+        "On a tiny floating island above the clouds, a gem-armored postwoman shares a picnic lunch with a fluffy round floating creature that keeps stealing her grapes. No readable text or logo.",
+        "At the bottom of a clear fantasy spring surrounded by ferns, a single emerald gem glows while tiny silver fish circle it slowly. No readable text or logo.",
       ],
     },
     'SP05-096': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'chess pieces', 'playing cards', 'dice', 'game UI'],
       briefs: [
-        'Hyper-saturated impossible perspective cel of an adult sorcerer standing on a staircase that loops upside down between floating islands, several vanishing points, magenta and cyan planes on dark violet, chromatic fringes on his coat. No text or logo.',
-        'Hyper-saturated impossible perspective cel of a castle hanging upside down above a magenta sea with its towers reflected upright, floating planes, emissive yellow edges, colored shadows. No text or logo.',
-        'Hyper-saturated impossible perspective cel of an adult man mopping a tiled floor that curves up the walls and over the ceiling, a household chore in a bent room, candy-neon color, sharp readable silhouette. No text or logo.',
+        "Standing on a floating chessboard above a hyper-saturated sky of magenta and cyan, two retired accountants challenge a god to a game of cards as whole continents rotate impossibly below. No readable text or logo.",
+        "On a giant glowing chessboard floating in a neon sky, an enormous chess knight bows respectfully to the tiny grandmother who has just beaten it. No readable text or logo.",
+        "Above an impossible staircase that twists back on itself at sunset, a single glowing die floats and slowly turns to show a new number. No readable text or logo.",
       ],
     },
     'SP05-251': {
@@ -803,9 +803,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'military insignia', 'flags', 'aircraft'],
       briefs: [
-        'Khaki compressed-diagonal cel of an adult officer-mage bracing against a gale on a fortress rampart, greatcoat snapping, steep diagonal horizon, compact dark silhouette against a clipped high-key sky, khaki and field grey. No text or logo.',
-        'Khaki compressed-diagonal cel of a wedge of adult war mages flying in formation through torn storm cloud, swept diagonals, short shadow breaks, restrained metallic glints on buckles. No text or logo.',
-        'Khaki compressed-diagonal cel of an adult soldier polishing a pair of boots on a barracks cot, an off-duty chore and nothing more, tight diagonal composition, pale highlights, trace of painted grain. No text or logo.',
+        "Flying in a tight diagonal formation over muddy trenches, a squadron of aerial war mages in khaki greatcoats casts glowing shields as artillery bursts orange behind them. No readable text or logo.",
+        "An exhausted staff officer eats rations in a bunker while maps of the front shake on the wall. No readable text or logo.",
+        "A pair of flight goggles hangs from a barbed wire fence in the grey morning fog. No readable text or logo.",
       ],
     },
     'SP05-097': {
@@ -838,9 +838,9 @@ const spec: Spec = {
         'grey 3D render',
       ],
       briefs: [
-        'Ivory-charcoal baroque symmetry cel of a colossal hooded ivory statue straddling a black valley pass, two tiny adult travelers walking between its feet on the central axis, mirror balance, charcoal cliffs, cold narrow highlights. No text or logo.',
-        'Ivory-charcoal baroque symmetry cel of an adult noblewoman in black mourning dress seated perfectly centered on a long bench, her veil and sleeves falling in mirrored folds, muted brass clasp, broad dark negative space. No text or logo.',
-        'Ivory-charcoal baroque symmetry cel of an adult butler laying silverware along a long dining table seen straight down its axis, a household duty drawn with monumental calm, ivory cloth, charcoal room, powdery grain. No text or logo.',
+        "Seated on an ivory throne in perfect symmetry, a skeletal accountant-lord in ornate robes reviews the kingdom’s taxes while monstrous servants wait in two flawless rows. No readable text or logo.",
+        "In a grand baroque kitchen, a towering insect warrior in ornate armor carefully polishes a single porcelain teacup for its master’s evening tea. No readable text or logo.",
+        "In an enormous empty throne hall of ivory and charcoal, a black throne glows under a single beam of cold moonlight. No readable text or logo.",
       ],
     },
     'SP05-247': {
@@ -867,9 +867,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'cottage garden default', 'flower wall'],
       briefs: [
-        'Lilac thorn-line chiaroscuro cel of a tall antlered forest spirit bending down to look at an adult woman in a pitch-dark wood, thorny branching contours framing a single pool of light, lilac glints on the antlers, deep umber darkness. No text or logo.',
-        'Lilac thorn-line chiaroscuro cel of a hare asleep inside a hollow of black briars at night, the briars drawn as fine thorn lines closing in, soft lilac highlights on its fur, lit center. No text or logo.',
-        'Lilac thorn-line chiaroscuro cel of an adult man reading by one candle in a low attic under bundles of drying herbs, a quiet evening at home, warm small highlight in cool shadow, delicate grain. No text or logo.',
+        "In a thorn-wrapped English cottage garden, a retired schoolteacher bargains politely with a fae creature made of brambles and moth wings for the return of her lost reading glasses. No readable text or logo.",
+        "Beside a misty pond at dawn, a small mossy bog spirit shares a pot of tea with an old herbalist wrapped in a knitted shawl. No readable text or logo.",
+        "At dusk in an empty English cottage, a thorny wild rose has grown through the broken window and blooms above the dusty kitchen table. No readable text or logo.",
       ],
     },
     'SP05-256': {
@@ -896,9 +896,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'red-robed character copy', 'shrine hallway', 'readable talisman'],
       briefs: [
-        'Vermilion indigo tapered-ink cel of an adult archer drawing a longbow on a hill of silver pampas grass at dusk, vermilion sleeve the only warm note, tapered brush contours flowing along the grass, faded indigo sky. No text or logo.',
-        'Vermilion indigo tapered-ink cel of a many-tailed fox spirit leaping across a moonlit rice paddy, tails trailing in long horizontal brush strokes, sun-faded cel color, vermilion tail tips. No text or logo.',
-        'Vermilion indigo tapered-ink cel of an adult woman beating a futon over a veranda rail on a late afternoon, a household chore only, dust drifting in soft dusk shadow, swelling and thinning ink lines. No text or logo.',
+        "Climbing out of an old shrine well into a feudal forest, a modern pharmacist with her bag of medicine meets a vermilion-robed fox demon who is suspiciously interested in her aspirin. No readable text or logo.",
+        "Beside a burned-out feudal village, a traveling monk and a stern demon slayer argue loudly over who gets the last rice ball in the lunch box. No readable text or logo.",
+        "An old shrine well sits under a sacred tree, a faint glow coming from its depths. No readable text or logo.",
       ],
     },
   },

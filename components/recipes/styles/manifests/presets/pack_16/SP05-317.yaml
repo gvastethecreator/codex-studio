@@ -6,7 +6,7 @@ styleAnchors:
   - Hiroyuki Kitakubo - Arcade Techno-Rebellion
 displayName: Hiroyuki Kitakubo - Arcade Techno-Rebellion
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Arcade neon, electric purple, cyan and hot red on night black.
   lighting_and_shadow: CRT screen glow, neon signage and streaking headlights on wet streets.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

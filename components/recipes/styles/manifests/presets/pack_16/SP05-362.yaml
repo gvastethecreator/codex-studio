@@ -6,7 +6,7 @@ styleAnchors:
   - Birdie Wing - Glam Precision Rivalry
 displayName: Birdie Wing - Glam Precision Rivalry
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rainbow trails, fairway green, sunset gold and glossy black.
   lighting_and_shadow: Dramatic backlight, rainbow trail glows and glamorous highlights.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-362.webp

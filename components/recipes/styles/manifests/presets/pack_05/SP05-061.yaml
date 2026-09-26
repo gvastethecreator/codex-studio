@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-061
 packId: pack_05
-name: Crosshatched Doom Weight Style
+name: Shinichi Sakamoto - Crosshatched Doom Weight Style
 styleAnchors:
-  - Crosshatched Doom Weight Style
-displayName: Crosshatched Doom Weight
+  - Shinichi Sakamoto - Crosshatched Doom Weight Style
+displayName: Shinichi Sakamoto - Crosshatched Doom Weight Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Dense pen crosshatch seinen manga that builds shadow in three to five layered hatch directions and stops cleanly at large open paper areas, so forms feel carved and heavy.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Charcoal black and bone white with a narrow muted red-brown accent; mostly monochrome.
-  lighting_and_shadow: A hard single source; broad shadow masses cover most of the frame against a few exposed edges.
-  texture_and_material: Fine nib lines whose direction and spacing change with every plane; no photoreal grime.
-  camera_and_composition: Keep the requested framing; empty paper areas act as counterweight to the dense hatching.
-  atmosphere_and_mood: Oppressive weight and grim endurance, even in a quiet scene.
-  rendering_and_quality: Meticulous nib crosshatching with clean white gaps and legible detail inside the darks.
-  key_features: layered three-to-five direction crosshatch; clean open paper gaps; charcoal and bone; dominant shadow mass; hard single source
-  creative_brief: "Dense pen crosshatch seinen manga that builds shadow in three to five layered hatch directions and stops cleanly at large open paper areas, so forms feel carved and heavy. Carry it through layered three-to-five direction crosshatch, clean open paper gaps, charcoal and bone, dominant shadow mass, hard single source. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Shinichi Sakamoto manga look as in Innocent and The Climber: extraordinarily dense crosshatching, baroque theatrical compositions, gothic grandeur and the crushing weight of fate.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sakamoto elegance, detailed faces, flowing hair and baroque costumes rendered with dense hatching. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with extremely dense crosshatching and baroque shadow.
+  lighting_and_shadow: Theatrical chiaroscuro carved entirely by dense layered crosshatching.
+  texture_and_material: Extraordinarily dense crosshatch lines and elaborate baroque ornament.
+  camera_and_composition: Theatrical baroque compositions with crowds, stages and monumental scale.
+  atmosphere_and_mood: Keep the requested mood with crushing baroque doom.
+  rendering_and_quality: Monumental crosshatched manga illustration with crushing baroque doom.
+  key_features: Shinichi Sakamoto crosshatching; baroque theater; doom; monumental
+  creative_brief: "Shinichi Sakamoto manga look as in Innocent and The Climber: extraordinarily dense crosshatching, baroque theatrical compositions, gothic grandeur and the crushing weight of fate. Carry it through Shinichi Sakamoto crosshatching, baroque theater, doom, monumental. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -42,12 +43,9 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - signature
-  - gore
-  - severed bodies
   - sexual violence
   - famous dark-fantasy swordsman likeness
   - giant sword
-  - torture scene
   - readable occult text
   - splatter-only horror
   - photoreal grime
@@ -66,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-061.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sexual violence, famous dark-fantasy swordsman likeness, giant sword, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Zeta Gundam - Angular Institutional Tragedy
 displayName: Zeta Gundam - Angular Institutional Tragedy
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Yoshikazu Yasuhiko designed Zeta Gundam (1985): angular mobile suits, colony interiors and military institutions, realistic soldiers in tragedy, sharp mid-eighties cel.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, realistic proportions, expressive soft lines, flight suits and military uniforms.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko designs, realistic proportions, expressive soft lines, flight suits and military uniforms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Military blue, white, colony green and warning red.
   lighting_and_shadow: Artificial colony light, cockpit monitors and beam flashes.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

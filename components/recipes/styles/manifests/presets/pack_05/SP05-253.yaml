@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-253
 packId: pack_05
-name: Glass-Green High-Key Herbarium Cel
+name: Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel
 styleAnchors:
-  - Glass-Green High-Key Herbarium Cel
+  - Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel
   - The Saint's Magic Power Is Omnipotent - Herbarium Court Glow
-displayName: Glass-Green High-Key Herbarium Cel
+displayName: Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Veinlike strokes echo existing contours only; never add plants, a laboratory or bookshelves.
-  color_and_tone: Glass green, pale cream and muted gold in a high key where whites dominate.
-  lighting_and_shadow: Soft high-key daylight with clean reflected highlights and no visible glow source.
-  texture_and_material: Transparent layered washes, fine vein detail and tidy painted surfaces.
-  camera_and_composition: Keep the requested view; orderly spacing with plenty of pale ground around the subject.
-  atmosphere_and_mood: Serene, clean and composed, like cool air in the morning.
-  rendering_and_quality: Thin crisp contours over transparent washes with minimal bloom and no clutter.
-  key_features: glass-green translucence; veinlike linework; high-key cream ground; transparent washes; muted gold accents
-  creative_brief: "Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light. Carry it through glass-green translucence, veinlike linework, high-key cream ground, transparent washes, muted gold accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Diomedea The Saint’s Magic Power Is Omnipotent look (2021): high-key glass-green herb gardens, gentle court romance, potion workshops and soft sparkling light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle romance designs, long dark hair, researcher robes and knightly uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glass green, herb mint, white and soft gold.
+  lighting_and_shadow: High-key bright greenhouse light through glass and gentle sparkles on leaves.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Greenhouse and potion workshop compositions with gentle romantic two-shots.
+  atmosphere_and_mood: Keep the requested mood with gentle herbal romance.
+  rendering_and_quality: Bright high-key fantasy television frame with herbarium sparkle and glass.
+  key_features: Glass-green greenhouse; herb potions; gentle romance; high key
+  creative_brief: "Diomedea The Saint’s Magic Power Is Omnipotent look (2021): high-key glass-green herb gardens, gentle court romance, potion workshops and soft sparkling light. Carry it through Glass-green greenhouse, herb potions, gentle romance, high key. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -68,10 +69,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-253.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, laboratory room, crowded table, dark low key, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, laboratory room, crowded table, dark low key, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

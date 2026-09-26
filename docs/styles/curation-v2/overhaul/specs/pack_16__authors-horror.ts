@@ -94,7 +94,6 @@ const spec: Spec = {
       avoid: [
         'a long-haired girl with a mole under her eye',
         'existing franchise characters',
-        'gore',
       ],
     }),
     au('SP13-088', 'Shiki - Folk Village Festival Horror', {

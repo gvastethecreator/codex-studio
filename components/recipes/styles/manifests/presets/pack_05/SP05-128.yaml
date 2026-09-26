@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-128
 packId: pack_05
-name: Inverted Negative Ink Opera
+name: Bleach TYBW - Inverted Negative Ink Opera
 styleAnchors:
-  - Inverted Negative Ink Opera
+  - Bleach TYBW - Inverted Negative Ink Opera
   - 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera'
-displayName: Inverted Negative Ink Opera
+displayName: Bleach TYBW - Inverted Negative Ink Opera
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Black, ivory and deep violet; the inverted region swaps black and white and carries one saturated crimson flash.
-  lighting_and_shadow: Stark top light and deep shadow masses cut by crisp white gaps; inside the inverted zone light reads as black.
-  texture_and_material: Solid ink fields with faint paper grain and dry-brush tails on the longest strokes.
-  camera_and_composition: Keep the requested framing; formal, near-symmetric staging with one strong diagonal and wide negative space.
-  atmosphere_and_mood: Solemn grandeur that turns suddenly cold, stillness broken by one stark flash.
-  rendering_and_quality: Flat masses and clean negative cuts, with the inversion confined to one region or silhouette.
-  key_features: partial photographic-negative inversion; broad black brush contour; ivory negative space; single crimson flash; formal diagonal
-  creative_brief: "Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black. Carry it through partial photographic-negative inversion, broad black brush contour, ivory negative space, single crimson flash, formal diagonal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Pierrot Bleach: Thousand-Year Blood War look (2022): stark black-and-white inversions, negative-image impact frames, Tite Kubo elegant fashion silhouettes and operatic spiritual battles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kubo-derived designs, tall elegant silhouettes, sharp fashionable uniforms and dramatic calm faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Stark black, white and red with sudden negative inversions of the palette.
+  lighting_and_shadow: Negative-inverted impact frames, spiritual pressure glows and hard silhouettes.
+  texture_and_material: Crisp cel with ink-like black splits and flat negative-image effects.
+  camera_and_composition: Operatic stillness, sudden inversion cuts and elegant silhouette framing.
+  atmosphere_and_mood: Keep the requested mood with operatic cold grandeur.
+  rendering_and_quality: Striking modern Pierrot frame with black-and-white negative effects.
+  key_features: Negative inversion; stark black-white-red; elegant silhouettes; operatic battle
+  creative_brief: "Studio Pierrot Bleach: Thousand-Year Blood War look (2022): stark black-and-white inversions, negative-image impact frames, Tite Kubo elegant fashion silhouettes and operatic spiritual battles. Carry it through Negative inversion, stark black-white-red, elegant silhouettes, operatic battle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - black shihakusho robes with a giant cleaver sword
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -63,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-128.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: black shihakusho robes with a giant cleaver sword, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +81,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

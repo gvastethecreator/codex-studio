@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-245
 packId: pack_05
-name: Carmine Angular Windswept Cel
+name: Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel
 styleAnchors:
-  - Carmine Angular Windswept Cel
+  - Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel
   - The Vision of Escaflowne - Windblown Tarot Fantasy
-displayName: Carmine Angular Windswept Cel
+displayName: Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Pointed chins, narrow noses and hair and cloth swept in one direction; motion follows the prompt action and no battle is added.
-  color_and_tone: Carmine red accents slicing through cool blue-grey and slate in high contrast.
-  lighting_and_shadow: Hard directional edge light with crisp shadow breaks under one bright open sky.
-  texture_and_material: Smooth fills with dry-brush wind streaks and tapered hatching along cloth folds.
-  camera_and_composition: Keep the requested view; strong tilted diagonals and overlapping angled shapes carry the motion.
-  atmosphere_and_mood: Emotionally forward and dramatic, longing carried on the wind.
-  rendering_and_quality: Clear silhouettes, crisp edges and few but decisive tapered marks.
-  key_features: carmine accents; angular 1990s features; one-direction wind sweep; long tapered strokes; tilted diagonals
-  creative_brief: "1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind. Carry it through carmine accents, angular 1990s features, one-direction wind sweep, long tapered strokes, tilted diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Sunrise The Vision of Escaflowne look (1996) with Nobuteru Yuki designs: windswept medieval sky fantasy, carmine accents, angular elegant faces with long noses and armored guymelefs.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuki designs, long pointed noses, slender angular faces, windswept hair and medieval-fantasy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Carmine red, sky blue, earth tones and armor silver.
+  lighting_and_shadow: Bright windswept sky light, fast clouds and dramatic sunsets over cliffs.
+  texture_and_material: Late analog cel with painted sky fantasy backgrounds.
+  camera_and_composition: Windswept cliff-edge compositions and soaring shots of airships and fortresses.
+  atmosphere_and_mood: Keep the requested mood with windswept destined romance.
+  rendering_and_quality: Classic 1996 Sunrise television frame with windswept sky fantasy.
+  key_features: Nobuteru Yuki designs; windswept fantasy; carmine accents; long noses
+  creative_brief: "Sunrise The Vision of Escaflowne look (1996) with Nobuteru Yuki designs: windswept medieval sky fantasy, carmine accents, angular elegant faces with long noses and armored guymelefs. Carry it through Nobuteru Yuki designs, windswept fantasy, carmine accents, long noses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -66,10 +67,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-245.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, tarot card, mecha copy, weapon-first pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, tarot card, mecha copy, weapon-first pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

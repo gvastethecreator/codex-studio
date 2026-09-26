@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-033
 packId: pack_05
-name: Chaotic Splatter Action
+name: Tatsuki Fujimoto - Chaotic Splatter Action
 styleAnchors:
-  - Chaotic Splatter Action
-displayName: Splatter Punk Action
+  - Tatsuki Fujimoto - Chaotic Splatter Action
+displayName: Tatsuki Fujimoto - Chaotic Splatter Action
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Saturated red, black and warm paper, with one cool teal accent.
-  lighting_and_shadow: Flat high-contrast blocks with only a few white cuts.
-  texture_and_material: Ink spatter, halftone dots and coarse screen texture with slight registration slip.
-  camera_and_composition: Keep the requested framing; dense poster balance around an off-center focal mass with clean outer margins.
-  atmosphere_and_mood: Unruly comedy and sudden surprise, loud and messy like a punk gig flyer.
-  rendering_and_quality: Rough printed marks, bold flat shapes and a clear poster rhythm.
-  key_features: screen-print poster look; ink splatter pattern; off-register red; scratchy heavy contour; warm paper ground
-  creative_brief: "Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red. Carry it through screen-print poster look, ink splatter pattern, off-register red, scratchy heavy contour, warm paper ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Tatsuki Fujimoto manga look as in Chainsaw Man and Fire Punch: loose chaotic ink, cinematic paneling, deadpan absurdity, splattered black and sudden brutal action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujimoto designs, scruffy plain faces, loose sketchy lines, casual clothes and absurd deadpan expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink and splatter, grey tone and stark white space.
+  lighting_and_shadow: Flat cinematic light with blown-out whites and heavy black splatter.
+  texture_and_material: Loose scratchy ink, heavy black splatter, rough tone and blown-out white paper.
+  camera_and_composition: Cinematic film-like panels, deadpan wides and chaotic action.
+  atmosphere_and_mood: Keep the requested mood with deadpan chaotic brutality.
+  rendering_and_quality: Loose cinematic manga illustration with chaotic energy and deadpan timing.
+  key_features: Fujimoto loose ink; cinematic panels; deadpan absurdity; splatter
+  creative_brief: "Tatsuki Fujimoto manga look as in Chainsaw Man and Fire Punch: loose chaotic ink, cinematic paneling, deadpan absurdity, splattered black and sudden brutal action. Carry it through Fujimoto loose ink, cinematic panels, deadpan absurdity, splatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a chainsaw-headed devil hunter
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -44,12 +47,8 @@ avoidRules:
   - watermark
   - signature
   - chainsaw head
-  - gore
-  - severed limbs
-  - blood realism
   - named character likeness
   - weapon-first composition
-  - horror torture
   - dense forest
   - ruin corridor
   - photoreal cosplay
@@ -69,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-033.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a chainsaw-headed devil hunter, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, named character likeness, weapon-first composition, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

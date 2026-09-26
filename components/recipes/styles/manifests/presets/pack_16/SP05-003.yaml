@@ -6,7 +6,7 @@ styleAnchors:
   - Lupin III - Jazzy Rogue Heist Rhythm
 displayName: Lupin III - Jazzy Rogue Heist Rhythm
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted seventies palette, mustard, teal, burgundy and warm night browns.
   lighting_and_shadow: Simple cel light with moody night streetlamps and spotlight searchlights.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

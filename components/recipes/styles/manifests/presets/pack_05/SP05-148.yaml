@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-148
 packId: pack_05
-name: Amber Jazz-Age Ensemble Cel
+name: Baccano! Brains Base - Amber Jazz-Age Ensemble Cel
 styleAnchors:
-  - Amber Jazz-Age Ensemble Cel
+  - Baccano! Brains Base - Amber Jazz-Age Ensemble Cel
   - Baccano! - Jazz Railcrime Ensemble
-displayName: Amber Jazz-Age Ensemble Cel
+displayName: Baccano! Brains Base - Amber Jazz-Age Ensemble Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Brass gold, amber, dark brown and ink black, with cream shirt fronts.
-  lighting_and_shadow: Warm lamplight edge highlights against crisp dark value blocks.
-  texture_and_material: Subtle printed grain in flat color fields; pinstripes and felt drawn as sparse lines.
-  camera_and_composition: Keep the requested framing; an irregular, syncopated rhythm of overlapping figures around the focal forms.
-  atmosphere_and_mood: Buoyant disorder and dry wit, many stories colliding to one swinging beat.
-  rendering_and_quality: Amber-black contrast, overlapping shapes and rhythm carried by spacing.
-  key_features: overlapping ensemble clusters; brass and amber palette; period tailoring; printed grain; syncopated rhythm
-  creative_brief: "Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain. Carry it through overlapping ensemble clusters, brass and amber palette, period tailoring, printed grain, syncopated rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Brains Base Baccano! look (2007): 1930s Prohibition America, amber sepia-tinted palettes, stylish ensemble cast, trains, speakeasies and jazzy chaotic crosscutting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Baccano designs, sharp stylish faces, 1930s suits, fedoras, flapper dresses and lively ensemble poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Amber sepia, jazz-age gold, deep burgundy and night blue.
+  lighting_and_shadow: Warm speakeasy light, train carriage glow and moonlit rooftops.
+  texture_and_material: Clean digital cel with sepia grading and film-like softness.
+  camera_and_composition: Crowded ensemble compositions and crosscut chaotic scenes on trains and in ballrooms.
+  atmosphere_and_mood: Keep the requested mood with rollicking jazz-age chaos.
+  rendering_and_quality: Stylish 2007 Brains Base frame with amber period glow.
+  key_features: Baccano jazz age; amber sepia; 1930s ensemble; trains and speakeasies
+  creative_brief: "Brains Base Baccano! look (2007): 1930s Prohibition America, amber sepia-tinted palettes, stylish ensemble cast, trains, speakeasies and jazzy chaotic crosscutting. Carry it through Baccano jazz age, amber sepia, 1930s ensemble, trains and speakeasies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -47,7 +48,6 @@ avoidRules:
   - signature
   - named franchise likeness
   - gun near-plane
-  - blood
   - train-car corridor lock
   - readable signage
   - gang lineup
@@ -68,10 +68,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-148.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +84,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

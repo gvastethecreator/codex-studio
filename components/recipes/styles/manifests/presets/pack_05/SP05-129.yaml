@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-129
 packId: pack_05
-name: Dual-Detail Deadpan Satire
+name: One-Punch Man Madhouse - Dual-Detail Deadpan Satire
 styleAnchors:
-  - Dual-Detail Deadpan Satire
+  - One-Punch Man Madhouse - Dual-Detail Deadpan Satire
   - One-Punch Man - Prestige Hero Impact Satire
-displayName: Dual-Detail Deadpan Satire
+displayName: One-Punch Man Madhouse - Dual-Detail Deadpan Satire
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Clean black-white values with saturated warm and cool accents; the simple figure in flat pale colors.
-  lighting_and_shadow: Dramatic hard lighting and polished highlights on the detailed parts; the simple figure lit flat.
-  texture_and_material: Smooth cel fills; detailed zones with fine hatching, muscle, scale and stone detail.
-  camera_and_composition: Keep the requested framing; absurd scale contrast with the simple figure placed precisely in broad quiet space.
-  atmosphere_and_mood: Deadpan grandeur and understated satire, the plain figure unimpressed by an epic world.
-  rendering_and_quality: 'The detail gap is the joke: one plain figure against a lavishly finished world.'
-  key_features: minimal dot-eyed main figure; hyper-detailed surroundings; polished hard lighting; flat pale figure fill; absurd scale contrast
-  creative_brief: "Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail. Carry it through minimal dot-eyed main figure, hyper-detailed surroundings, polished hard lighting, flat pale figure fill, absurd scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse One-Punch Man look (2015): hyper-detailed muscular monsters and heroes contrasted with a plain round-lined deadpan hero drawn with dot eyes, and spectacular sakuga destruction.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the calm deadpan figure with plain round lines and dot eyes, and everyone else with hyper-detailed muscles and dramatic faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright comic primaries, city grey and explosive yellow impact bursts.
+  lighting_and_shadow: Explosive impact flashes and dramatic rim light on the detailed fighters.
+  texture_and_material: Contrast of plain simple line and dense detailed rendering, debris clouds.
+  camera_and_composition: Epic destruction wide shots cut against calm deadpan close-ups of the plain hero.
+  atmosphere_and_mood: Keep the requested mood with deadpan heroic satire.
+  rendering_and_quality: Spectacular sakuga television frame with deadpan contrast between plain and detailed figures.
+  key_features: One-Punch contrast; plain dot-eyed hero; detailed monsters; destruction
+  creative_brief: "Madhouse One-Punch Man look (2015): hyper-detailed muscular monsters and heroes contrasted with a plain round-lined deadpan hero drawn with dot eyes, and spectacular sakuga destruction. Carry it through One-Punch contrast, plain dot-eyed hero, detailed monsters, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a bald hero in a yellow suit with a white cape and red gloves
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -49,7 +52,6 @@ avoidRules:
   - named franchise likeness
   - bald hero copy
   - fist near-plane
-  - city destruction gore
   - weapon
   - photoreal cosplay
   - western superhero comic
@@ -68,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-129.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bald caped hero, yellow jumpsuit, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a bald hero in a yellow suit with a white cape and red gloves, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bald caped hero, yellow jumpsuit, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

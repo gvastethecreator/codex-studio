@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-028
 packId: pack_05
-name: Lo-Fi Sword Roadtrip
+name: Michiko and Hatchin - Lo-Fi Sword Roadtrip
 styleAnchors:
-  - Lo-Fi Sword Roadtrip
-displayName: Lo-Fi Sword Drifter
+  - Michiko and Hatchin - Lo-Fi Sword Roadtrip
+displayName: Michiko and Hatchin - Lo-Fi Sword Roadtrip
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Dusty ochre and sepia against pale cyan sky and deep brown shadow.
-  lighting_and_shadow: Late sun in warm and cool value bands with minimal internal shading.
-  texture_and_material: Scratched brush edges over subtle analog grain, with clean resting areas.
-  camera_and_composition: Keep the requested framing; off-axis focal weight, broad quiet margins and low wide horizons.
-  atmosphere_and_mood: Laid-back confidence on a long road, time moving slowly under a wide sky.
-  rendering_and_quality: Subdued color, visible brush grain and uncluttered silhouettes.
-  key_features: dry brush line; dusty ochre and sepia; long low horizons; analog grain; off-axis focal weight
-  creative_brief: "Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot. Carry it through dry brush line, dusty ochre and sepia, long low horizons, analog grain, off-axis focal weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with lanky loose designs, expressive faces, messy curls, tank tops and road-worn clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sun-bleached ochre, dusty turquoise, faded pink and hot sky blue.
+  lighting_and_shadow: Harsh bright sun, heat haze and warm dusty dusk.
+  texture_and_material: Lo-fi grain, soft cel and painted dusty towns.
+  camera_and_composition: Roadtrip wides, scooter chases and loose candid framing.
+  atmosphere_and_mood: Keep the requested mood with free wandering grit.
+  rendering_and_quality: Lo-fi grainy roadtrip frame with sunny outlaw energy.
+  key_features: Sayo Yamamoto lo-fi; sun-bleached towns; roadtrip freedom; lanky designs
+  creative_brief: "Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -66,10 +67,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-028.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Higurashi - Summer Loop Paranoia
 displayName: Higurashi - Summer Loop Paranoia
 category: 3. 2000s Classics
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Studio Deen Higurashi television look (2006): cute moe rural designs, cicada-heavy summer village, and sudden horror close-ups where pupils shrink and faces fill with shadow.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with round cute moe designs, huge eyes that can shrink into pinpoint pupils, and summer village clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with round cute moe designs, huge eyes that can shrink into pinpoint pupils, and summer village clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Summer green, dusk orange, cicada heat haze and sudden deep red shadow.
   lighting_and_shadow: Blazing summer light that switches to ominous dusk with faces half in black shadow.
   texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-156.webp

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-040
 packId: pack_05
-name: Worm's-Eye Leap Silhouette
+name: Shinya Ohira - Worm’s-Eye Leap Silhouette
 styleAnchors:
-  - Worm's-Eye Leap Silhouette
+  - Shinya Ohira - Worm’s-Eye Leap Silhouette
   - anime action staging
   - camera straight beneath looking up
-displayName: Worm's-Eye Leap Silhouette
+displayName: Shinya Ohira - Worm’s-Eye Leap Silhouette
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - worms-eye-view
   - silhouette
+  - reference-title
 visualDna:
-  aesthetic: "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky."
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the straight-up worm’s-eye view with a backlit silhouette, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Dark near-black silhouette against a bright pale sky; the prompt colors show only in a thin rim along the silhouette.
-  lighting_and_shadow: Strong backlight from above, a thin bright rim around the silhouette and no fill from below.
-  texture_and_material: Flat silhouette fill with a few interior details picked out by the rim; the sky smooth and clean.
-  camera_and_composition: Straight-up view with a very wide lens; nearby walls, trees or edges converge toward the frame center and the subject crosses diagonally.
-  atmosphere_and_mood: Soaring, weightless and breath-held for a single instant.
-  rendering_and_quality: Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.
-  creative_brief: "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky. Carry it through camera straight beneath looking up, backlit dark silhouette, thin bright rim, converging edges to center, diagonal crossing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing
+  aesthetic: 'Shinya Ohira sakuga style: extremely rough wild expressive lines, raw sketchy bodies, messy energy and unconventional distorted drawing that feels alive.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with raw rough sketchy lines, distorted wild anatomy and messy expressive energy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted night palette with stark silhouettes against a bright sky.
+  lighting_and_shadow: Strong backlight turning the leaping figure into a rough silhouette.
+  texture_and_material: Very rough sketchy lines, scribbles and uncleaned drawing marks.
+  camera_and_composition: Worm’s-eye view looking straight up at the figure leaping overhead.
+  atmosphere_and_mood: Keep the requested mood with raw wild energy.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Shinya Ohira sakuga style: extremely rough wild expressive lines, raw sketchy bodies, messy energy and unconventional distorted drawing that feels alive. Carry it through Shinya Ohira rough lines, worm’s-eye leap, raw energy, silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Shinya Ohira rough lines; worm’s-eye leap; raw energy; silhouettes
 avoidRules:
   - added opponent
   - added sports gear
@@ -45,10 +46,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-040.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -59,6 +64,7 @@ taxonomy:
     - action
     - worms-eye-view
     - silhouette
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

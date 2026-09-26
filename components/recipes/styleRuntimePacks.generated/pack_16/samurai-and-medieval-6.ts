@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Goseki Kojima gekiga as in Lone Wolf and Cub: bold wet brush ink, vast empty white space, weathered samurai faces and the frozen breath before a single deadly strike.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with gekiga realism, lean hard bodies, weathered faces, simple kimono and hakama, and total stillness before motion. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black sumi brush ink on white paper with grey wash and no other color.',
       lighting_and_shadow:
         'Light made by the untouched paper, shadows as heavy wet brush masses and dry-brush edges.',
@@ -44,7 +44,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kouta Hirano manga look as in Drifters: savage black ink masses, manic grinning warriors, crowded battle charges, spiky speed lines and blood-red accents on grey tone.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hirano designs, lean ferocious warriors, wide manic grins, wild eyes, flowing hair and heavy period armor. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Black ink and grey tone with a single savage crimson accent across the charge.',
       lighting_and_shadow:
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Kaoru Mori manga look as in A Bride's Story: obsessively detailed costumes, embroidery, carved wood and textile ornament, gentle realistic faces and devoted quiet ceremony.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Mori realism, gentle faces, detailed hair and layered costumes where every embroidered pattern is drawn.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mori realism, gentle faces, detailed hair and layered costumes where every embroidered pattern is drawn. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with fine grey tone, or soft muted watercolor for color pages.',
       lighting_and_shadow:
         'Soft natural light rendered by careful hatching and tone, gentle glow on ornament.',
@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Ink black with fire orange, ember red and smoke grey accents.',
       lighting_and_shadow:
         'Firelight from burning gates, embers and dramatic rim light on muscles.',
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black brush ink on white with pale grey wash and moon-white space.',
       lighting_and_shadow:
         'Moonlight on snow expressed by white paper, soft wash shadows and sharp black accents.',
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Takashi Okazaki look as in Afro Samurai: stark black and white graphics with blood-red accents, hip-hop samurai cool, huge ink splatters and slashing silhouettes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okazaki designs, lanky cool figures, sharp silhouettes, stylish mixed period and street clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pure black, stark white and a single red accent color.',
       lighting_and_shadow: 'Graphic high contrast with silhouettes and white slash lines of light.',
       texture_and_material: 'Ink splatter, dry brush, gritty grain and graphic slash marks.',
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Faded woodblock palette of vermilion, indigo, ochre, teal and gold on beige paper.',
       lighting_and_shadow:
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted rain grey, earth brown, pine green and pale sky.',
       lighting_and_shadow: 'Overcast rain light, sparks from clashing blades and wet reflections.',
       texture_and_material: 'Precise hand-drawn cel, rain streaks, flying droplets and dust.',
@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gonzo Samurai 7 television look (2004): the classic seven defenders story reimagined with sci-fi elements, painterly backgrounds, flowing coats and CG mechanical bandits.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with lean samurai designs, long flowing coats and hair, weathered faces and distinctive silhouettes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with lean samurai designs, long flowing coats and hair, weathered faces and distinctive silhouettes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Snow white, steel grey, rice-field green and bold crimson accents.',
       lighting_and_shadow: 'Cold overcast light on snow, silhouettes and bright steel glints.',
       texture_and_material: 'Digital cel over painterly backgrounds, CG machines and snowfall.',
@@ -285,7 +285,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yasuhisa Hara Kingdom manga look: epic Warring States battles, oceans of soldiers, towering generals, dense crowd drawing and dramatic sweeping panoramas.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hara designs, burly generals, fierce faces, flowing capes and ancient Chinese armor. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey tone, dust brown and sunset red in color pages.',
       lighting_and_shadow:
         'Sunset backlight over armies, dust haze and dramatic rim light on generals.',
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Lacquer red, imperial gold, jade green and night indigo.',
       lighting_and_shadow: 'Warm lantern light, screen-filtered glow and soft palace shadows.',
       texture_and_material:
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey wash and dusty sepia in color plates.',
       lighting_and_shadow: 'Harsh noon light with black brush shadows and dust glare.',
       texture_and_material: 'Heavy expressive brushwork, calligraphic strokes and dry-brush grit.',
@@ -386,7 +386,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft pastel watercolor, rose, sage and cream, or black line with tone.',
       lighting_and_shadow: 'Dreamy diffuse glow, floral light halos and soft shadows.',
       texture_and_material: 'Delicate fine lines, floral ornament, lace and screentone.',
@@ -416,7 +416,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Desert white glare, gold, turquoise and deep sky blue.',
       lighting_and_shadow: 'Blinding noon glare, heat shimmer and sharp desert shadows.',
       texture_and_material:
@@ -447,7 +447,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Makoto Yukimura manga look as in Vinland Saga: realistic Viking-age detail, gritty hatching, raw brutal fights, longships in grey seas and weathered faces.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yukimura realism, weathered faces, beards, scars and historically accurate Norse clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Grey sea, cold slate and black ink with steel highlights.',
       lighting_and_shadow: 'Cold overcast northern light with spray and wind.',
       texture_and_material: 'Detailed pen hatching, rough seas and wood grain on ships.',
@@ -475,12 +475,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Samurai & Medieval',
     domain: 'dark medieval chronicle anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with fine tone and muted parchment tints.',
       lighting_and_shadow: 'Candlelight and grey dawn light with stark clear shadows.',
       texture_and_material: 'Clean fine pen line, tone and parchment texture.',
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm autumn gold, festival reds, cream and sky blue.',
       lighting_and_shadow:
         'Soft warm festival daylight, bright striped awnings and evening lantern glow.',
@@ -543,7 +543,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Midnight blue, black, pale moonlight and blood red.',
       lighting_and_shadow: 'Thin crescent moonlight, silver rims and deep shadow.',
       texture_and_material:
@@ -576,7 +576,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Plum, ink black, gold and pale mist blue.',
       lighting_and_shadow: 'Soft moonlight, glowing talismans and misty garden light.',
       texture_and_material: 'Delicate fine line, flowing robe patterns and mystical diagrams.',
@@ -606,7 +606,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Flat bold color blocks: vermilion, teal, white and black.',
       lighting_and_shadow: 'Flat graphic lighting with little or no gradient.',
       texture_and_material: 'Flat color shapes, clean lines and pattern fills.',

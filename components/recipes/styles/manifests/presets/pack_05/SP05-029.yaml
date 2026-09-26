@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-029
 packId: pack_05
-name: Chaotic Indie Adolescence
+name: FLCL - Chaotic Indie Adolescence
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Abrupt complementary color blocks with black and small white breaks.
-  lighting_and_shadow: Flat graphic separations with little modelled volume and no soft gradients.
-  texture_and_material: Screen-print halftone, paper-cut edges and controlled registration slip.
-  camera_and_composition: Keep the requested content; tilted panels of varied size with a clear central reading path.
-  atmosphere_and_mood: Irreverent playfulness and quick shifts in emphasis.
-  rendering_and_quality: Rough printed edges, deliberate misalignment and legible broad shapes.
-  key_features: tilted manga panel cuts; torn overdrawn contour; complementary color blocks; halftone collage; registration slip
-  creative_brief: "Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip. Carry it through tilted manga panel cuts, torn overdrawn contour, complementary color blocks, halftone collage, registration slip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Gainax FLCL look (2000) with Yoshiyuki Sadamoto designs: chaotic punk energy, manga-panel cutaways, suburban towns, giant robots bursting out and rock-driven editing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, big expressive eyes, spiky loose hair, casual clothes and exaggerated reactions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Punk pink, lime green, sky blue and suburban beige.
+  lighting_and_shadow: Bright suburban light with sudden flashes and explosions.
+  texture_and_material: Loose energetic cel, manga panel inserts and rough smears.
+  camera_and_composition: Frantic cuts, manga panel layouts and wild angles.
+  atmosphere_and_mood: Keep the requested mood with chaotic adolescent rush.
+  rendering_and_quality: Frenetic 2000 Gainax frame with punk rock energy and manga panel cuts.
+  key_features: FLCL chaos; Sadamoto designs; manga panels; suburban robots
+  creative_brief: "Gainax FLCL look (2000) with Yoshiyuki Sadamoto designs: chaotic punk energy, manga-panel cutaways, suburban towns, giant robots bursting out and rock-driven editing. Carry it through FLCL chaos, Sadamoto designs, manga panels, suburban robots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired woman on a yellow scooter with a bass guitar
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -62,10 +65,13 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-029.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pink-haired woman on a yellow scooter with a bass guitar, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -74,8 +80,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: FLCL - Chaotic Indie Adolescence
+styleAnchors:
+  - FLCL - Chaotic Indie Adolescence

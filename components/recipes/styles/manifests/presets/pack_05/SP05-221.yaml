@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-221
 packId: pack_05
-name: Pop-Signal Engineered Romance
+name: Macross Frontier - Pop-Signal Engineered Romance
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: '1980s idol-era mecha cel: airbrushed cyan-pink gradient skies, star-shaped sparkle glints, and looping white vapor-trail ribbons curving around clean inked forms.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Cyan and bubble pink with warm gold edge highlights over clear neutral cel colors; skies are smooth airbrushed gradients.
-  lighting_and_shadow: Clean two-tone cel shadows, a gentle gold rim, and four-point star glints on the brightest edges.
-  texture_and_material: Airbrushed gradient backgrounds, flat cel paint, faint film grain and the slight color bleed of an old cel.
-  camera_and_composition: Keep the requested view; loop white trail ribbons in wide arcs around the subject to lead the eye inward.
-  atmosphere_and_mood: Buoyant, affectionate and hopeful, a love song played at full volume.
-  rendering_and_quality: Crisp ink line, airbrushed gradients, star glints and ribbon loops with soft film grain; no modern bloom.
-  key_features: airbrushed cyan-pink gradient sky; looping white vapor-trail ribbons; four-point star glints; gold rim light; 1980s cel film grain
-  creative_brief: "1980s idol-era mecha cel: airbrushed cyan-pink gradient skies, star-shaped sparkle glints, and looping white vapor-trail ribbons curving around clean inked forms. Carry it through airbrushed cyan-pink gradient sky, looping white vapor-trail ribbons, four-point star glints, gold rim light, 1980s cel film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Satelight Macross Frontier look (2008): CG transforming valkyries in dazzling missile circuses, idol concerts in space colonies and bright glossy pop romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with glossy late-2000s designs, big bright eyes, idol costumes and flight suits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Idol pink, sky cyan, white contrails and gold.
+  lighting_and_shadow: Stage spotlights, missile flare trails and bright colony skies.
+  texture_and_material: Glossy digital cel with CG fighters and particle effects.
+  camera_and_composition: Missile circus spirals around fighters and wide shots of glittering concert stages.
+  atmosphere_and_mood: Keep the requested mood with dazzling pop romance.
+  rendering_and_quality: Glossy Satelight television frame with CG missile circus and idol sparkle.
+  key_features: Macross Frontier idols; CG valkyries; missile circus; pop romance
+  creative_brief: "Satelight Macross Frontier look (2008): CG transforming valkyries in dazzling missile circuses, idol concerts in space colonies and bright glossy pop romance. Carry it through Macross Frontier idols, CG valkyries, missile circus, pop romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - VF-25 fighter markings
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-221.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, transforming jet copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: VF-25 fighter markings, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, transforming jet copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +82,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Macross Frontier - Pop-Signal Engineered Romance
+styleAnchors:
+  - Macross Frontier - Pop-Signal Engineered Romance

@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Masami Obari nineties fighting OVA look: extreme heroic posing, sharp angular muscular anatomy, glossy highlights, flaring auras and speed backgrounds in explosive battle films.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Obari anatomy, sharp chins, pointed noses, taut muscles with glossy highlight streaks and extreme contrapposto poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Obari anatomy, sharp chins, pointed noses, taut muscles with glossy highlight streaks and extreme contrapposto poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Saturated sunset orange, electric blue auras and deep violet shadows.',
       lighting_and_shadow:
         'Blazing aura backlight, sharp rim light and hard glossy highlight shapes on muscles.',
@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Toei late-nineties magical girl television look as in Ojamajo Doremi: round chibi-proportioned designs, huge eyes, candy-colored costumes and sparkling transformation sequences.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with rounded chibi-leaning proportions, big round heads, large sparkly eyes and candy costumes, even when adults.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with rounded chibi-leaning proportions, big round heads, large sparkly eyes and candy costumes, even when adults. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Candy pink, lemon yellow, mint and sky blue with sparkles.',
       lighting_and_shadow:
         'Bright cheerful light with sparkle bursts and glittering transformation glow.',
@@ -67,12 +67,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Cowboy Bebop - Jazzy Space-Noir Melancholy'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a green-haired bounty hunter in a blue suit, a red swordfish spaceship, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a green-haired bounty hunter in a blue suit, a red swordfish spaceship, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Shinichiro Watanabe and Toshihiro Kawamoto look of Cowboy Bebop (1998): lanky stylish designs, lived-in rusty ships, film noir lighting, smoke and jazz, and worn retro-future cities.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kawamoto designs, long lanky limbs, loose hair, narrow eyes, sharp noses and slouched cool postures in worn clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kawamoto designs, long lanky limbs, loose hair, narrow eyes, sharp noses and slouched cool postures in worn clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted teal, cigarette amber, rust brown and noir shadow.',
       lighting_and_shadow:
         'Noir chiaroscuro with smoky light shafts, neon signs and dim cockpit glow.',
@@ -93,12 +93,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Masamune Shirow - Philosophical Cyber-Ops Vertigo'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Early digital airbrush colors, metallic blues, skin warms and neon greens.',
       lighting_and_shadow:
         'Glossy airbrushed highlights, screen glow and hard metallic reflections.',
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshihiro Togashi manga look as in Yu Yu Hakusho: sharp confident brush-pen lines, stylish delinquent heroes, eerie demons and shifting between clean and rough inking.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Togashi designs, slick hair, sharp eyes, lean bodies, school uniforms and eerie demon faces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Togashi designs, slick hair, sharp eyes, lean bodies, school uniforms and eerie demon faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey screentone and occasional muted red.',
       lighting_and_shadow: 'Stark ink shadows, eerie glow from spirit energy and moonlight.',
       texture_and_material:
@@ -148,12 +148,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Trust and Betrayal - Wandering Atonement Cel Drama'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Kazuhiro Furuhashi OVA look of Rurouni Kenshin: Trust and Betrayal (1999): realistic painterly period drama, muted Kyoto palettes, blood-red accents on snow and live-action cinematography.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with realistic proportions, restrained faces, period kimono and hakama, and deeply serious expressions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic proportions, restrained faces, period kimono and hakama, and deeply serious expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted earth browns, snow white, ink black and stark blood-red accents.',
       lighting_and_shadow:
         'Soft natural light, overcast snow, candle-lit interiors and deep shadows.',
@@ -175,12 +175,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Yasuhiro Nightow - Dusty Space-Western Absurdity'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Yasuhiro Nightow manga look as in Trigun: scratchy energetic pen lines, dense mechanical guns, flapping coats, desert grit and gags breaking into super-deformed faces.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nightow designs, lanky figures, spiky hair, dramatic coats and grimacing or goofy faces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nightow designs, lanky figures, spiky hair, dramatic coats and grimacing or goofy faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey screentone and dusty sepia washes.',
       lighting_and_shadow: 'Harsh desert sun rendered with hard ink shadows and speckled textures.',
       texture_and_material: 'Scratchy pen lines, dense crosshatching, speed lines and sand grit.',
@@ -201,12 +201,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Dragon Ball Z - Planetary Aura Impact'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'orange gi with a kanji emblem, golden spiky super-saiyan hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'orange gi with a kanji emblem, golden spiky super-saiyan hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with DBZ muscular designs, sharp angular eyes, square jaws, spiky hair and gi-like clothes torn by battle.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with DBZ muscular designs, sharp angular eyes, square jaws, spiky hair and gi-like clothes torn by battle. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Aura gold, sky blue, orange gi tones and rocky tan.',
       lighting_and_shadow: 'Flaming aura glow, energy beam flashes and impact bursts.',
       texture_and_material:
@@ -231,7 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshiaki Kawajiri Madhouse direction as in Ninja Scroll and Wicked City: slick realistic adult designs, deep shadows, smoky noir cities, long cool poses and bursts of violence.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kawajiri realism, long elegant limbs, sharp cheekbones, narrow eyes and dark stylish clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kawajiri realism, long elegant limbs, sharp cheekbones, narrow eyes and dark stylish clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep blacks, smoky amber, noir blue and sharp red accents.',
       lighting_and_shadow:
         'Hard-edged noir shadows, streetlight shafts through smoke, silhouettes.',
@@ -253,12 +253,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Ghost in the Shell 1995 - Wet Techno-Noir Consciousness'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a purple-haired cyborg major in a thermoptic suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a purple-haired cyborg major in a thermoptic suit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Mamoru Oshii film Ghost in the Shell (1995) with Hiroyuki Okiura designs: realistic sober characters, rain-soaked Hong Kong-like cityscapes, green-tinted grading and philosophical stillness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Okiura realism, calm serious faces, grounded anatomy and practical tactical clothing.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okiura realism, calm serious faces, grounded anatomy and practical tactical clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Green-tinted grading, wet grey, teal neon and dim amber.',
       lighting_and_shadow: 'Diffuse rainy light, reflections in canals and cold monitor glow.',
       texture_and_material:
@@ -279,12 +279,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Yu Yu Hakusho - Spirit Pressure Rivalry'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a green school uniform delinquent with slicked hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a green school uniform delinquent with slicked hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Studio Pierrot Yu Yu Hakusho television look (1992): sharp nineties shonen designs, spirit energy blasts, demon tournaments and moody color-keyed night scenes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with nineties Pierrot designs, sharp eyes, slick hair, school uniforms and demon features.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with nineties Pierrot designs, sharp eyes, slick hair, school uniforms and demon features. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Spirit blue, blood red, night purple and school-uniform green.',
       lighting_and_shadow:
         'Spirit energy glow, moonlit rooftops and color-keyed dramatic lighting.',
@@ -306,12 +306,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rurouni Kenshin TV - Redemption Restraint'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired swordsman with a cross-shaped cheek scar, a reverse-blade sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Studio Gallop Rurouni Kenshin television look (1996): bright nineties cel, Meiji-era Tokyo streets, graceful sword action with speed lines, warm humor and melancholy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with nineties shonen designs, large eyes, flowing hair, kimono, hakama and Meiji Western clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with nineties shonen designs, large eyes, flowing hair, kimono, hakama and Meiji Western clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm Meiji earth tones, indigo, crimson and cherry blossom pink.',
       lighting_and_shadow: 'Warm daylight, sunset silhouettes and dramatic sword flash highlights.',
       texture_and_material:
@@ -337,7 +337,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Sunrise Outlaw Star television look (1998): late-nineties space adventure, glossy ship interiors, grappler ship arms, magic-tech guns and colorful alien frontier towns.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with late-nineties Sunrise designs, spiky hair, big expressive eyes, jackets and adventurer gear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with late-nineties Sunrise designs, spiky hair, big expressive eyes, jackets and adventurer gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright space teal, engine orange, desert tan and chrome.',
       lighting_and_shadow: 'Engine flares, cockpit glow and harsh frontier sunlight.',
       texture_and_material:
@@ -364,7 +364,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshitoshi ABe designs and Ryutaro Nakamura direction as in Serial Experiments Lain (1998): eerie suburban stillness, humming power lines, red-dotted shadows and digital glitch dissolution.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with ABe designs, thin delicate lines, small quiet faces, bob haircuts and plain clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with ABe designs, thin delicate lines, small quiet faces, bob haircuts and plain clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Washed-out whites, power-line grey, CRT blue and red speckled shadows.',
       lighting_and_shadow:
         'Harsh washed-out sunlight, shadows filled with red dots, monitor glow in dark rooms.',
@@ -386,12 +386,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Cardcaptor Sakura - Storybook Seal Magic'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a sealing wand with a star head, a yellow winged plush guardian, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a sealing wand with a star head, a yellow winged plush guardian, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'CLAMP designs animated by Madhouse in Cardcaptor Sakura (1998): elegant elongated shojo figures, huge glossy eyes, ornate costumes, magic circles and floral storybook ornament.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with CLAMP and Madhouse designs, long limbs, huge glossy eyes, fluttering hair and ornate magical costumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP and Madhouse designs, long limbs, huge glossy eyes, fluttering hair and ornate magical costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel pink, gold, lilac and soft sky blue.',
       lighting_and_shadow: 'Soft magical glows, sparkles and moonlit bedroom light.',
       texture_and_material:
@@ -413,12 +413,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Trigun 1998 - Dust-Warm Pacifist Melancholy'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a spiky blond gunman in a red coat and round sunglasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Madhouse Trigun television look (1998): late-nineties cel with desert frontier towns, warm dusty sunsets, bright character colors and a melancholy that sneaks under slapstick.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with nineties Madhouse designs, lanky bodies, expressive faces, long coats and dusty frontier clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with nineties Madhouse designs, lanky bodies, expressive faces, long coats and dusty frontier clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Desert amber, dusty sky blue, sunset orange and bright costume color accents.',
       lighting_and_shadow: 'Hot desert sunlight, long dusk shadows and warm saloon lamps.',
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rust orange, steel blue, grime brown and pale sky light.',
       lighting_and_shadow: 'Diffuse industrial light, sparks and backlight from the floating city.',
       texture_and_material:
@@ -465,12 +465,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Revolutionary Girl Utena - Rose Ritual Symbolism'],
     category: '2. 90s Golden Era',
     negativePrompt:
-      'a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a pink-haired girl in a boys uniform, a floating upside-down castle, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Chiho Saito designs, long elegant limbs, flowing hair, sharp lashes and princely uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rose pink, crimson, gold and pale lavender sky.',
       lighting_and_shadow: 'Theatrical spotlights, rose petal glows and surreal skies.',
       texture_and_material:
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey washes and occasional warm watercolor.',
       lighting_and_shadow: 'Natural light carried by ink wash values, bright highlights on sweat.',
       texture_and_material: 'Brush ink lines, dry brush, ink wash and watercolor bleed.',
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kenichi Sonoda Gunsmith Cats OVA look (1995): precise detailed firearms and cars, clean cute-sexy designs, American city settings and crisp action choreography.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Sonoda designs, clean detailed faces, athletic bodies, casual nineties clothes and precise mechanical props.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sonoda designs, clean detailed faces, athletic bodies, casual nineties clothes and precise mechanical props. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Urban grey, brick red, denim blue and chrome.',
       lighting_and_shadow: 'Muzzle flash light, streetlight glow and bright daylight on cars.',
       texture_and_material:

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-044
 packId: pack_05
-name: Top-Down Spiral Path Staging
+name: Ichiro Itano - Top-Down Spiral Path Staging
 styleAnchors:
-  - Top-Down Spiral Path Staging
+  - Ichiro Itano - Top-Down Spiral Path Staging
   - anime action staging
   - straight-down 90 degree view
-displayName: Top-Down Spiral Path Staging
+displayName: Ichiro Itano - Top-Down Spiral Path Staging
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - top-down
   - spiral-composition
+  - reference-title
 visualDna:
-  aesthetic: 'Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the straight-down overhead view with a spiral path composition, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the ground is a calm mid value so the moving subject and its path stand out.
-  lighting_and_shadow: Light from one side so cast shadows lie long and flat on the ground and reveal the pose.
-  texture_and_material: Clear ground patterns like flagstones, boards, grass or water that help trace the spiral; faint path marks only where the subject's movement would leave them.
-  camera_and_composition: Exact 90 degree top-down view with the spiral centered or slightly off center and the subject at its leading end.
-  atmosphere_and_mood: Hypnotic, choreographed flow seen calmly from directly above.
-  rendering_and_quality: Clean flat perspective without distortion and readable shadow shapes that explain the pose.
-  creative_brief: "Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape. Carry it through straight-down 90 degree view, spiral or circular path, subject at the leading end, long flat side-lit shadows, readable ground pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern
+  aesthetic: 'Ichiro Itano circus style: swirling spiral trajectories, dozens of trails curving around each other, dizzying camera paths and dense choreographed motion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures or animals as small elements following swirling spiral paths seen from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: White trails, stone cloister grey and bright sky reflections.
+  lighting_and_shadow: Bright overhead light glinting along the curving trails.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Top-down view looking straight down at spiraling paths.
+  atmosphere_and_mood: Keep the requested mood with dizzying choreographed flight.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Ichiro Itano circus style: swirling spiral trajectories, dozens of trails curving around each other, dizzying camera paths and dense choreographed motion. Carry it through Itano circus spirals, swirling trails, top-down, choreographed motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Itano circus spirals; swirling trails; top-down; choreographed motion
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-044.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - top-down
     - spiral-composition
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

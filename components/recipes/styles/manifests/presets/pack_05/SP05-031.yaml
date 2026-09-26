@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-031
 packId: pack_05
-name: Painterly Blade Fantasy
+name: Mo Dao Zu Shi - Painterly Blade Fantasy
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Garnet, jade and lapis jewel accents on warm pale paper neutrals, with dark ink.
-  lighting_and_shadow: Soft luminous edges and grouped cel shadows; washes glow where paper shows through.
-  texture_and_material: Wet-in-wet bleeds, bloom rings at wash edges and dry-brush flicks at stroke ends.
-  camera_and_composition: Keep the requested framing; choreographed curves balanced by open paper margins.
-  atmosphere_and_mood: Graceful intensity and ceremonial poise, strength expressed as a single flowing brush gesture.
-  rendering_and_quality: Broad color washes, controlled ornament and smooth calligraphic edges.
-  key_features: calligraphic sumi strokes; wet jewel-color washes; bloom rings; open paper margins; dry-brush flicks
-  creative_brief: "Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes. Carry it through calligraphic sumi strokes, wet jewel-color washes, bloom rings, open paper margins, dry-brush flicks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'B.CMAY PICTURES Mo Dao Zu Shi donghua look: painterly xianxia fantasy, flowing silk robes and sleeves, ink-wash mountains, jade and white palettes and graceful sword flight.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant cultivator designs, long flowing hair, layered silk robes and graceful floating poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Jade green, snow white, ink grey and plum-blossom pink.
+  lighting_and_shadow: Soft misty mountain light and glowing spiritual effects.
+  texture_and_material: Painterly digital backgrounds like ink-wash scrolls, flowing silk and petals.
+  camera_and_composition: Graceful sweeping shots over misty peaks and flowing sleeve arcs.
+  atmosphere_and_mood: Keep the requested mood with graceful wistful fantasy.
+  rendering_and_quality: Elegant painterly donghua frame with ink-wash scroll backgrounds and flowing silk.
+  key_features: Xianxia silk robes; ink-wash mountains; jade and white; graceful flight
+  creative_brief: "B.CMAY PICTURES Mo Dao Zu Shi donghua look: painterly xianxia fantasy, flowing silk robes and sleeves, ink-wash mountains, jade and white palettes and graceful sword flight. Carry it through Xianxia silk robes, ink-wash mountains, jade and white, graceful flight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -45,8 +46,6 @@ avoidRules:
   - named demon-hunter likeness
   - checker haori copy
   - mouth gag
-  - blood
-  - combat kill
   - dense forest
   - ruin corridor
   - noisy debris field
@@ -67,10 +66,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-031.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,8 +82,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mo Dao Zu Shi - Painterly Blade Fantasy
+styleAnchors:
+  - Mo Dao Zu Shi - Painterly Blade Fantasy

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-274
 packId: pack_05
-name: Winter Guilt Suspicion Style
+name: Erased A-1 - Winter Guilt Suspicion Style
 styleAnchors:
-  - Winter Guilt Suspicion Style
-displayName: Winter Guilt Suspicion
+  - Erased A-1 - Winter Guilt Suspicion Style
+displayName: Erased A-1 - Winter Guilt Suspicion Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Cold seinen pen drawing of brittle short hatches and tiny edge grains that cluster where contours turn, like frost forming only at the corners of things, as a drawing texture rather than snow.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Slate, cold blue-gray and pale silver, with one restrained warm pivot color when the prompt provides one.
-  lighting_and_shadow: Cool compact highlights against readable shadow planes under a flat overcast feel.
-  texture_and_material: Dry crystalline micrograin as drawing texture, hatches two to four millimeters long and irregularly spaced.
-  camera_and_composition: Keep the requested framing; hatching gathers denser behind the subject, as if something were watching from there.
-  atmosphere_and_mood: Guarded, guilty quiet, a breath held in the cold.
-  rendering_and_quality: Brittle but controlled pen hatching, with clean white paper in the highlights.
-  key_features: brittle short hatches at contour turns; slate and cold blue-gray; one warm pivot color; crystalline micrograin; uneven hatch density
-  creative_brief: "Cold seinen pen drawing of brittle short hatches and tiny edge grains that cluster where contours turn, like frost forming only at the corners of things, as a drawing texture rather than snow. Carry it through brittle short hatches at contour turns, slate and cold blue-gray, one warm pivot color, crystalline micrograin, uneven hatch density. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures Erased look (2016): snowy Hokkaido winters, letterboxed flashback framing, warm homes and cold outside suspicion, and quiet time-slip suspense.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with simple warm designs, heavy winter coats, scarves and uneasy expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Snow white, winter blue, warm kitchen amber and red scarves.
+  lighting_and_shadow: Cold Hokkaido winter daylight outside and warm kitchen lamps inside homes.
+  texture_and_material: Clean digital cel with snowy painted small-town backgrounds.
+  camera_and_composition: Letterboxed flashback frames and snowy wide shots of quiet streets.
+  atmosphere_and_mood: Keep the requested mood with wintry guilty suspense.
+  rendering_and_quality: Quiet A-1 Pictures television frame with wintry time-slip suspense.
+  key_features: Erased snow; letterboxed flashbacks; warm homes; suspicion
+  creative_brief: "A-1 Pictures Erased look (2016): snowy Hokkaido winters, letterboxed flashback framing, warm homes and cold outside suspicion, and quiet time-slip suspense. Carry it through Erased snow, letterboxed flashbacks, warm homes, suspicion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-274.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

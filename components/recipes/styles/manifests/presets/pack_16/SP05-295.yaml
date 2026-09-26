@@ -6,7 +6,7 @@ styleAnchors:
   - Liz and the Blue Bird - Quiet Musical Distance
 displayName: Liz and the Blue Bird - Quiet Musical Distance
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Watercolor pastels, pale blue, cream, soft pink and airy white.
   lighting_and_shadow: Soft window light washed out into haze, delicate light blooms.
   texture_and_material: Very thin colored lines, watercolor-like washes, soft focus and bokeh.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-295.webp

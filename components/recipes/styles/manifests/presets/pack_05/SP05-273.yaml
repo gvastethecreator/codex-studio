@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-273
 packId: pack_05
-name: Luminous Natural Cycle Calm Style
+name: Mushishi Artland - Luminous Natural Cycle Calm Style
 styleAnchors:
-  - Luminous Natural Cycle Calm Style
-displayName: Luminous Natural Cycle Calm
+  - Mushishi Artland - Luminous Natural Cycle Calm Style
+displayName: Mushishi Artland - Luminous Natural Cycle Calm Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Nocturnal nature anime painting with fine silver vein-like linework traced through leaves, bark, antler, water and skin, as if living structure glowed faintly from inside.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Deep blue-teal night values with silver-blue highlights and pale mint light inside the veins.
-  lighting_and_shadow: Gentle lunar falloff from above, cool reflected edges, and veins lit from within at very low intensity.
-  texture_and_material: Translucent haze on organic surfaces over soft gouache-like fills, while stone and metal stay matte.
-  camera_and_composition: Keep the requested framing; organic forms carry the fine detail while other areas stay calm and open.
-  atmosphere_and_mood: Hushed nocturnal calm, the whole world breathing slowly.
-  rendering_and_quality: Soft painterly fills with fine crisp vein lines and no heavy blacks anywhere.
-  key_features: silver vein linework through organic forms; blue-teal night palette; faint inner glow; lunar falloff; translucent haze
-  creative_brief: "Nocturnal nature anime painting with fine silver vein-like linework traced through leaves, bark, antler, water and skin, as if living structure glowed faintly from inside. Carry it through silver vein linework through organic forms, blue-teal night palette, faint inner glow, lunar falloff, translucent haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Artland Mushishi look (2005): serene rural Japan painted in lush natural detail, glowing translucent life forms, quiet healers and slow meditative pacing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Urushibara-derived simplicity, plain calm faces, rural clothes and translucent glowing organisms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush natural greens, misty blue and soft glowing white.
+  lighting_and_shadow: Soft natural light and gentle luminous glows from life forms.
+  texture_and_material: Lush painted backgrounds and clean simple cel figures.
+  camera_and_composition: Quiet meditative landscapes of mountains and rivers with gentle patient observation.
+  atmosphere_and_mood: Keep the requested mood with serene meditative calm.
+  rendering_and_quality: Serene painterly Artland television frame with lush natural detail.
+  key_features: Mushishi serenity; glowing life forms; lush rural Japan; meditation
+  creative_brief: "Artland Mushishi look (2005): serene rural Japan painted in lush natural detail, glowing translucent life forms, quiet healers and slow meditative pacing. Carry it through Mushishi serenity, glowing life forms, lush rural Japan, meditation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-haired wanderer with one green eye and a wooden box
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-273.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-haired wanderer with one green eye and a wooden box, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

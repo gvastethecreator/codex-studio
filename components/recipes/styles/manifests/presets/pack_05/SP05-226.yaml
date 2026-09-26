@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-226
 packId: pack_05
-name: Cyber-Goth Mausoleum Dread
+name: Ergo Proxy Manglobe - Cyber-Goth Mausoleum Dread
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Copperplate-engraving cyber-gothic rendering: dense parallel burin hatching, pointed ornamental filigree traced along existing edges, and a single crimson spot color.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Blue-black ink on cold bone paper with one narrow crimson signal; midtones are built only from hatch density.
-  lighting_and_shadow: 'Hard directional light carved by line density: tight crosshatch in shadow, open paper for highlights, crimson for emissive points.'
-  texture_and_material: Engraved swelling lines, fine stipple on curved surfaces, and pointed-arch filigree edging on existing contours.
-  camera_and_composition: Keep the requested view; frame with tall vertical rhythms of hatching and deep black masses at the edges.
-  atmosphere_and_mood: Solemn funereal dread, elegance carved into cold metal.
-  rendering_and_quality: Engraving line with swelling and tapering strokes, a controlled hatch value scale and sparse crimson; no painterly color.
-  key_features: parallel burin hatching; pointed filigree edging; blue-black ink on bone; single crimson spot color; stipple on curves
-  creative_brief: "Copperplate-engraving cyber-gothic rendering: dense parallel burin hatching, pointed ornamental filigree traced along existing edges, and a single crimson spot color. Carry it through parallel burin hatching, pointed filigree edging, blue-black ink on bone, single crimson spot color, stipple on curves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Manglobe Ergo Proxy look (2006): dark cyber-goth domed cities, grey-blue monochrome palettes, gothic architecture, AutoReiv androids and existential dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gothic designs, pale faces, dark eye makeup, long coats and elegant android companions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Near-monochrome grey-blue and black with pale skin tones and faint teal glows.
+  lighting_and_shadow: Dim cold light, stark shadows and glowing android eyes.
+  texture_and_material: Moody digital cel with gothic architecture and fog.
+  camera_and_composition: Gothic architectural wide shots and eerie close-ups on pale faces.
+  atmosphere_and_mood: Keep the requested mood with cold existential dread.
+  rendering_and_quality: Moody near-monochrome Manglobe television frame with gothic fog.
+  key_features: Ergo Proxy cyber-goth; monochrome grey-blue; domed city; androids
+  creative_brief: "Manglobe Ergo Proxy look (2006): dark cyber-goth domed cities, grey-blue monochrome palettes, gothic architecture, AutoReiv androids and existential dread. Carry it through Ergo Proxy cyber-goth, monochrome grey-blue, domed city, androids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pale woman with dark eye makeup and a short bob in a fur collar
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -58,10 +61,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-226.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, full color painting, soft airbrush, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pale woman with dark eye makeup and a short bob in a fur collar, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, full color painting, soft airbrush, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -70,8 +76,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ergo Proxy Manglobe - Cyber-Goth Mausoleum Dread
+styleAnchors:
+  - Ergo Proxy Manglobe - Cyber-Goth Mausoleum Dread

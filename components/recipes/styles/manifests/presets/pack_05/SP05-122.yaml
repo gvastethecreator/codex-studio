@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-122
 packId: pack_05
-name: Muted Cinematic Grime Frenzy
+name: Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy
 styleAnchors:
-  - Muted Cinematic Grime Frenzy
+  - Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy
   - Chainsaw Man - Filthy Devil-Hunter Frenzy
-displayName: Muted Cinematic Grime Frenzy
+displayName: Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Soot grey, dull rust and pale concrete, with fluorescent yellow-green streak accents.
-  lighting_and_shadow: Motivated practical light from overhead tubes or windows with soft grounded falloff.
-  texture_and_material: Grime, scuffs and subtle film grain; lens-like shallow depth of field.
-  camera_and_composition: Keep the requested content; handheld off-center framing, tight crops and shallow depth.
-  atmosphere_and_mood: Worn tension and dry absurdity, exhausted people in grimy places doing strange things.
-  rendering_and_quality: Restrained cinematic finish, grain confined to shadows, main silhouette always clear.
-  key_features: desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth
-  creative_brief: "Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks. Carry it through desaturated film grade, handheld off-center framing, thin precise lines, fluorescent streak accents, grime and shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'MAPPA Chainsaw Man look (2022): muted cinematic color grading, film-like camera work, grimy realistic Tokyo backgrounds and sudden frenzied action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded designs, tired faces, messy hair, suits or casual clothes, in realistic proportions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted desaturated greys, dull greens and cold blues with red accents.
+  lighting_and_shadow: Naturalistic cinematic light, overcast grime and harsh streetlights.
+  texture_and_material: Realistic painted backgrounds, restrained cel and film grain.
+  camera_and_composition: Live-action-like lens choices, shallow focus and handheld-feeling frames in real streets.
+  atmosphere_and_mood: Keep the requested mood with grimy frenzied realism.
+  rendering_and_quality: Cinematic MAPPA television frame with muted film grading and grounded realism.
+  key_features: MAPPA cinematic grading; muted palette; grimy Tokyo; film camera
+  creative_brief: "MAPPA Chainsaw Man look (2022): muted cinematic color grading, film-like camera work, grimy realistic Tokyo backgrounds and sudden frenzied action. Carry it through MAPPA cinematic grading, muted palette, grimy Tokyo, film camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a chainsaw-headed devil hunter
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -34,7 +37,6 @@ avoidRules:
   - adding a fight or power effect to a quiet prompt
   - readable glyphs or sigils
   - chainsaw-headed figure
-  - blood spray
   - realistic
   - 3d render
   - photo
@@ -63,10 +65,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-122.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, blood spray, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a chainsaw-headed devil hunter, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

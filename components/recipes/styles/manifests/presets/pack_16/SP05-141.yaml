@@ -6,7 +6,7 @@ styleAnchors:
   - Hellsing TV - Gothic Resonance Punk
 displayName: Hellsing TV - Gothic Resonance Punk
 category: 3. 2000s Classics
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Blood red, black, ash grey and cold moon blue.
   lighting_and_shadow: Lurid red and moonlit blue light, harsh shadows and gunfire flashes.
   texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
@@ -57,12 +57,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-141.webp
 attributes:
-  negativePrompt: a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

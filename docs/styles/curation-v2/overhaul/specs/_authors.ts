@@ -29,6 +29,8 @@ export interface AuthorLook {
   key: string;
   // Replaces the preset-specific avoid rules when the work has a signature character, weapon or vehicle.
   avoid?: string[];
+  // New briefs when the old ones were template text or restaged the work; otherwise the JSON briefs stay.
+  briefs?: [string, string, string];
 }
 
 export const au = (id: string, name: string, a: AuthorLook): [string, Update] => [
@@ -37,7 +39,8 @@ export const au = (id: string, name: string, a: AuthorLook): [string, Update] =>
     name,
     dna: dna({
       aesthetic: a.look,
-      subject_treatment: `Preserve the requested identity, count, pose and action; ${a.subject}`,
+      // The author's drawing of faces and bodies always applies; its wardrobe is only a default.
+      subject_treatment: `Preserve the requested identity, count, pose, action and any requested clothing; ${a.subject} Wardrobe details apply only when the prompt leaves clothing open.`,
       color_and_tone: a.color,
       lighting_and_shadow: a.light,
       texture_and_material: a.texture,
@@ -47,6 +50,6 @@ export const au = (id: string, name: string, a: AuthorLook): [string, Update] =>
       key_features: a.key,
     }),
     ...(a.avoid ? { avoid: a.avoid } : {}),
-    briefs: keep(id),
+    briefs: a.briefs ?? keep(id),
   },
 ];

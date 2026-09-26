@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-252
 packId: pack_05
-name: Amber Dusk Rounded Cel
+name: Campfire Cooking in Another World - Amber Dusk Rounded Cel
 styleAnchors:
-  - Amber Dusk Rounded Cel
+  - Campfire Cooking in Another World - Amber Dusk Rounded Cel
   - Campfire Cooking in Another World - Merchant Road Stew
-displayName: Amber Dusk Rounded Cel
+displayName: Campfire Cooking in Another World - Amber Dusk Rounded Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Faces and bodies get soft rounded proportions and gentle expressions; do not add food, companions or a campfire the prompt did not name.
-  color_and_tone: Amber, honey and cream in lit areas against twilight blue and dusty violet shadow, a warm-cool split of roughly sixty to forty.
-  lighting_and_shadow: A low warm key wraps around forms from one side and falls off in a soft airbrushed gradient into cool ambient shadow.
-  texture_and_material: Smooth airbrushed gradients, faint paper grain and a gentle diffusion glow laid over the highlights.
-  camera_and_composition: Keep the requested view; relaxed eye-level spacing with a soft vignette pulling attention toward the warm center.
-  atmosphere_and_mood: Comforting, generous and sleepy, the calm at the end of a long day.
-  rendering_and_quality: Rounded clean contours, gentle two-tone shading and a light diffusion filter, with focal edges still readable inside the glow.
-  key_features: rounded soft lineart; amber-to-twilight color split; airbrushed glow falloff; light diffusion filter; cream highlights
-  creative_brief: "Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened. Carry it through rounded soft lineart, amber-to-twilight color split, airbrushed glow falloff, light diffusion filter, cream highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'MAPPA Campfire Cooking in Another World look (2023): rounded friendly designs, amber dusk campfires, cute familiar beasts and mouth-watering food animation.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft rounded designs, friendly faces, casual traveler clothes and giant fluffy familiar animals. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Amber dusk orange, stew browns, cozy greens and warm cream.
+  lighting_and_shadow: Warm campfire and dusk light with glossy highlights on food.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Food close-ups, campsite wides and cute beast reactions.
+  atmosphere_and_mood: Keep the requested mood with cozy hungry contentment.
+  rendering_and_quality: Warm cozy fantasy television frame with glossy appetizing food.
+  key_features: Amber campfires; glossy food; rounded designs; fluffy familiars
+  creative_brief: "MAPPA Campfire Cooking in Another World look (2023): rounded friendly designs, amber dusk campfires, cute familiar beasts and mouth-watering food animation. Carry it through Amber campfires, glossy food, rounded designs, fluffy familiars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a giant white wolf with a tiny slime
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -69,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-252.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, campfire cooking pot, banquet table, hard black shadows, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a giant white wolf with a tiny slime, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, campfire cooking pot, banquet table, hard black shadows, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

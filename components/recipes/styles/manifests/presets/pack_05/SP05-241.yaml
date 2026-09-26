@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-241
 packId: pack_05
-name: Systemic Cooperation Grid Style
+name: Log Horizon Satelight - Systemic Cooperation Grid Style
 styleAnchors:
-  - Systemic Cooperation Grid Style
-displayName: Systemic Cooperation Grid
+  - Log Horizon Satelight - Systemic Cooperation Grid Style
+displayName: Log Horizon Satelight - Systemic Cooperation Grid Style
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Repeated elements already in the prompt line up at even intervals; never add a map, board, chart or symbols.
-  color_and_tone: Indigo, muted gold and small cyan notes over clean neutral greys, with crisp mid-key contrast.
-  lighting_and_shadow: Even top light producing identical short shadows under every repeated form, with no implied screen glow.
-  texture_and_material: Smooth flat fills and exact hard-edged line breaks, with no painterly texture anywhere.
-  camera_and_composition: Keep the requested view; frontal or high orthogonal angles are preferred where alignment and rhythm read clearly.
-  atmosphere_and_mood: Orderly and collaborative, many parts moving as one.
-  rendering_and_quality: Sparse balanced graphic marks, stable forms and a clear focal priority inside the repetition.
-  key_features: invisible modular grid; repeated forms at even intervals; identical short shadows; indigo-gold-cyan palette; hard-edged flats
-  creative_brief: "Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals. Carry it through invisible modular grid, repeated forms at even intervals, identical short shadows, indigo-gold-cyan palette, hard-edged flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Satelight Log Horizon look (2013): strategic MMO fantasy with guild politics, overgrown ruined Tokyo, cooperative planning scenes and tactical overlays without text.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kazuhiro Hara-derived designs, glasses-wearing strategists, guild adventurers and townspeople. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Overgrown green, ruined concrete grey, guild gold and sky blue.
+  lighting_and_shadow: Soft daylight through ruins and warm guild-hall light.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Round-table strategy meeting compositions and overgrown ruined-city wide shots.
+  atmosphere_and_mood: Keep the requested mood with thoughtful cooperative strategy.
+  rendering_and_quality: Clear Satelight television frame with strategic group compositions and ruins.
+  key_features: Guild strategy; overgrown Tokyo; cooperation; tactical planning
+  creative_brief: "Satelight Log Horizon look (2013): strategic MMO fantasy with guild politics, overgrown ruined Tokyo, cooperative planning scenes and tactical overlays without text. Carry it through Guild strategy, overgrown Tokyo, cooperation, tactical planning. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-241.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map table, board game, group huddled over a table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map table, board game, group huddled over a table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

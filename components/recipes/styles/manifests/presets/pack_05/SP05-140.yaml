@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-140
 packId: pack_05
-name: Pale Calm Spell Geometry
+name: Frieren Madhouse - Pale Calm Spell Geometry
 styleAnchors:
-  - Pale Calm Spell Geometry
+  - Frieren Madhouse - Pale Calm Spell Geometry
   - Frieren Combat Flashback - Ancient Calm Spell Impact
-displayName: Pale Calm Spell Geometry
+displayName: Frieren Madhouse - Pale Calm Spell Geometry
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Pale cyan, parchment, lavender-grey and soft sage, with restrained cool shadow.
-  lighting_and_shadow: Soft diffuse daylight, gentle value transitions, a few clean bright edges on the rings.
-  texture_and_material: Smooth matte color, fine line detail and very little grain.
-  camera_and_composition: Keep the requested framing; open spacing with generous sky or floor around precise focal geometry.
-  atmosphere_and_mood: Understated authority and reflective calm, power shown without strain or noise.
-  rendering_and_quality: Exact contours and a quiet palette, geometry lines thin and legible with no glyphs.
-  key_features: concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light
-  creative_brief: "Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried. Carry it through concentric geometric light rings, pale cyan and parchment, fine exact outline, open quiet spacing, soft diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Frieren look (2023) combat scenes: pale calm palettes, soft thin lines, elegant geometric magic circles and beams, and serene elves unmoved by overwhelming power.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Reiko Nagasawa designs, calm understated faces, long pale hair, simple traveling robes and relaxed casting poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale mint, soft ivory, cool blue and gentle gold.
+  lighting_and_shadow: Soft high-key light with luminous geometric magic beams.
+  texture_and_material: Thin clean lines, soft digital paint and crisp geometric effect layers.
+  camera_and_composition: Calm wide shots and elegant spell geometry framing.
+  atmosphere_and_mood: Keep the requested mood with serene effortless power.
+  rendering_and_quality: Refined 2023 Madhouse frame with calm elegant magic.
+  key_features: Frieren calm; pale palette; geometric magic; serene power
+  creative_brief: "Madhouse Frieren look (2023) combat scenes: pale calm palettes, soft thin lines, elegant geometric magic circles and beams, and serene elves unmoved by overwhelming power. Carry it through Frieren calm, pale palette, geometric magic, serene power. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-haired elf with twin tails in a white and gold robe
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -68,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-140.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-haired elf with twin tails in a white and gold robe, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-133
 packId: pack_05
-name: Deadpan Filigree Brick Comedy
+name: Hajime Komoto - Deadpan Filigree Brick Comedy
 styleAnchors:
-  - Deadpan Filigree Brick Comedy
+  - Hajime Komoto - Deadpan Filigree Brick Comedy
   - Mashle - Brickwall Comedy Spell-School Brawl
-displayName: Deadpan Filigree Brick Comedy
+displayName: Hajime Komoto - Deadpan Filigree Brick Comedy
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Clean pastel lilac, mint and cream for the ornate parts; flat brick-tan and black for the blunt blocks; strong black-white contrast.
-  lighting_and_shadow: Flat even light with one hard cel shadow; blunt blocks get a solid black side plane like cut stone.
-  texture_and_material: Smooth cel fills; filigree drawn in fine uniform pen line, blocky forms in a heavy uniform outline with no taper.
-  camera_and_composition: Keep the requested framing; set the blank face centered and symmetric while ornate shapes frame it formally.
-  atmosphere_and_mood: Absurd deadpan wit; the face never reacts to anything around it.
-  rendering_and_quality: Exactly two line weights, fine filigree and heavy block, with frozen symmetric poses so the joke is the contrast between ornament and bluntness.
-  key_features: expressionless dot-eyed face; filigree against brick-square forms; pastel lilac and mint; heavy uniform block outline; symmetric frozen staging
-  creative_brief: "Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line. Carry it through expressionless dot-eyed face, filigree against brick-square forms, pastel lilac and mint, heavy uniform block outline, symmetric frozen staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Hajime Komoto Mashle look: ornate fairy-tale magic academy filigree drawn with fine line, while a blank-faced muscular protagonist solves everything with deadpan brute strength.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Komoto designs, blank dot-eyed deadpan faces, impossibly muscular bodies in elegant academy robes, and fussy ornate magicians around them. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Academy navy, cream, gold filigree and cream-puff pastel accents on clean white.
+  lighting_and_shadow: Even storybook light with sparkly magic glows that the deadpan hero completely ignores.
+  texture_and_material: Fine ornamental line work, filigree borders, clean screentone and brick textures.
+  camera_and_composition: Symmetrical academy compositions, deadpan frontal stares and absurd strength reveals.
+  atmosphere_and_mood: Keep the requested mood with deadpan absurd comedy.
+  rendering_and_quality: Crisp comic manga-style frame contrasting ornate fantasy detail with blank deadpan faces.
+  key_features: Hajime Komoto deadpan; filigree academy; muscle comedy; ornate magic ignored
+  creative_brief: "Hajime Komoto Mashle look: ornate fairy-tale magic academy filigree drawn with fine line, while a blank-faced muscular protagonist solves everything with deadpan brute strength. Carry it through Hajime Komoto deadpan, filigree academy, muscle comedy, ornate magic ignored. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black-haired muscular student eating cream puffs
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -70,10 +73,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-133.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cream puff prop, magic-school crest, wand duel pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a black-haired muscular student eating cream puffs, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cream puff prop, magic-school crest, wand duel pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -82,6 +88,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

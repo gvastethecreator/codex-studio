@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Yuki Midorikawa - Night Parade Yokai
 category: 7. Horror
 domain: yokai procession anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters."
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft watercolor greens, dusk blue and lantern amber.
   lighting_and_shadow: Soft moonlight and lantern glow in quiet towns.
   texture_and_material: Soft gentle line, watercolor washes and paper grain.
@@ -40,8 +40,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -51,11 +49,11 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

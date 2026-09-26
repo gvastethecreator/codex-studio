@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-125
 packId: pack_05
-name: Hazard-Orange Monster Response Cel
+name: Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel
 styleAnchors:
-  - Hazard-Orange Monster Response Cel
+  - Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel
   - Kaiju No. 8 - Civic Monster Response Unit
-displayName: Hazard-Orange Monster Response Cel
+displayName: Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: High-visibility yellow and warm orange against deep blue-grey and pale neutral.
-  lighting_and_shadow: Even daylight, pale highlights and clearly separated shadow shapes.
-  texture_and_material: Matte color blocks, panel seams and rivets, fine grain only in the darks.
-  camera_and_composition: Keep the requested framing; wide clean frames with grid intervals that make scale measurable.
-  atmosphere_and_mood: Measured resilience and calm procedure under threat.
-  rendering_and_quality: Stable silhouettes, crisp machine edges and controlled color blocks without chaos.
-  key_features: hi-vis orange and yellow equipment; grid tick scale marks; sturdy dark contour; matte blue-grey; wide procedural framing
-  creative_brief: "Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures. Carry it through hi-vis orange and yellow equipment, grid tick scale marks, sturdy dark contour, matte blue-grey, wide procedural framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Kaiju No. 8 look (2024): civic monster cleanup crews, hazard-orange uniforms, colossal CG-textured kaiju carcasses in cities and bright procedural action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean modern designs, tired adult workers in hazard gear, helmets and utility belts, beside enormous creature bodies. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hazard orange, city concrete grey, kaiju green and steel blue.
+  lighting_and_shadow: Bright overcast daylight with floodlights on monster carcasses at night.
+  texture_and_material: Clean digital cel with textured monster hides and industrial equipment.
+  camera_and_composition: Tiny crews beside colossal carcasses, low angles and procedural wide shots.
+  atmosphere_and_mood: Keep the requested mood with gritty civic resilience.
+  rendering_and_quality: Polished Production I.G frame with enormous monster scale.
+  key_features: Hazard orange crews; colossal kaiju carcasses; civic cleanup; city scale
+  creative_brief: "Production I.G Kaiju No. 8 look (2024): civic monster cleanup crews, hazard-orange uniforms, colossal CG-textured kaiju carcasses in cities and bright procedural action. Carry it through Hazard orange crews, colossal kaiju carcasses, civic cleanup, city scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -68,10 +69,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-125.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered defense suit, glowing monster core, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered defense suit, glowing monster core, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

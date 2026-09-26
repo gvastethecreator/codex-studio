@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-257
 packId: pack_05
-name: Slate Twilight Single-Violet Cel
+name: Tsukimichi C2C - Slate Twilight Single-Violet Cel
 styleAnchors:
-  - Slate Twilight Single-Violet Cel
+  - Tsukimichi C2C - Slate Twilight Single-Violet Cel
   - Tsukimichi - Moonlit Merchant Wanderer
-displayName: Slate Twilight Single-Violet Cel
+displayName: Tsukimichi C2C - Slate Twilight Single-Violet Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Reduce internal detail to a few decisive lines; the violet accent lands on something already in the prompt, never on an added token or prop.
-  color_and_tone: Slate, cold blue-grey and ink navy desaturated to near monochrome, broken by a single saturated violet shape.
-  lighting_and_shadow: Low even moon-cool ambient light with one narrow white highlight on the focal edge; shadows are one flat darker slate.
-  texture_and_material: Smooth restrained flats and dry, slightly broken line ends, with no grain and no glow anywhere.
-  camera_and_composition: Keep the requested view; wide horizontal negative space with the focal subject off-center on a strong horizon line.
-  atmosphere_and_mood: Wry, poised and quiet, a composed calm with a hint of irony.
-  rendering_and_quality: Sparse detail, exact focal edges and one accent heavy enough to hold the whole frame.
-  key_features: near-monochrome slate palette; single violet accent; dry economical line; wide horizontal negative space; one narrow highlight
-  creative_brief: "Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame. Carry it through near-monochrome slate palette, single violet accent, dry economical line, wide horizontal negative space, one narrow highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'C2C Tsukimichi Moonlit Fantasy look (2021): slate twilight palettes with single violet accents, comedic merchant adventure, odd monsters and moonlit wastelands.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with light-novel designs, plain mild faces, merchant clothes and strange monster companions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Slate grey twilight, deep indigo and one glowing violet accent per frame.
+  lighting_and_shadow: Moonlit twilight with a single violet glow source.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Moonlit wasteland wide shots and small comedic merchant scenes around caravans.
+  atmosphere_and_mood: Keep the requested mood with dry moonlit comedy.
+  rendering_and_quality: Moody comedic fantasy television frame with slate twilight.
+  key_features: Slate twilight; single violet accent; merchant comedy; moonlit wastes
+  creative_brief: "C2C Tsukimichi Moonlit Fantasy look (2021): slate twilight palettes with single violet accents, comedic merchant adventure, odd monsters and moonlit wastelands. Carry it through Slate twilight, single violet accent, merchant comedy, moonlit wastes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -69,10 +70,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-257.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, multiple accent colors, market stall, glow effects, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, multiple accent colors, market stall, glow effects, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

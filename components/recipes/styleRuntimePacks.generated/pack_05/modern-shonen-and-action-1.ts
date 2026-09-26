@@ -5,1202 +5,1131 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-034',
-    name: 'Crosshatched Primary Hero Cel',
-    displayName: 'Crosshatched Primary Hero Cel',
-    styleAnchors: ['Crosshatched Primary Hero Cel', 'Bright Hero Academy'],
+    name: 'Kohei Horikoshi - Crosshatched Primary Hero Cel',
+    displayName: 'Kohei Horikoshi - Crosshatched Primary Hero Cel',
+    styleAnchors: ['Kohei Horikoshi - Crosshatched Primary Hero Cel', 'Bright Hero Academy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered hero suit, green curly hair with freckles, cape emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a green-haired boy in a green jumpsuit hero costume, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered hero suit, green curly hair with freckles, cape emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills.',
+        'Kohei Horikoshi manga and anime look as in My Hero Academia: American-comic crosshatching on faces and muscles, chunky heroic costumes, big expressive eyes and bold primary color on bright cel.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Horikoshi designs, stocky heroic bodies, messy hair, crosshatched cheeks and elbows, and practical hero-suit costumes with bulky boots. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Saturated primary red, cobalt blue and sunflower yellow on clean white; hatched shadows use a darker shade of each local color instead of grey.',
+        'Bold primary red, cobalt blue and sunny yellow with clean white highlights and warm skin tones.',
       lighting_and_shadow:
-        'Bright high-front noon key, a single hard cel shadow tier filled with pen hatching, and crisp white specular ticks on hair and cloth.',
+        'Bright daylight with crisp cel shadows plus heavy crosshatched shading on dramatic close-ups.',
       texture_and_material:
-        'Smooth cel fills with patches of visible pen hatching confined to shadow planes; seams and folds drawn as bold ink strokes, no painted texture.',
+        'Visible pen crosshatching over clean digital cel paint, speed lines and dust bursts around impacts.',
       camera_and_composition:
-        'Keep the requested framing; add slight wide-lens foreshortening to the nearest limb and hold a clear silhouette against a simplified background.',
-      atmosphere_and_mood:
-        'Earnest, sunny optimism with a thread of strain carried by the hatched shadows.',
+        'Heroic low angles, fists thrust at the lens and comic-panel close-ups on determined faces.',
+      atmosphere_and_mood: 'Keep the requested mood with earnest heroic determination.',
       rendering_and_quality:
-        'Thick-to-thin contour hierarchy, hatching only inside shadows, flat bright fills and silhouettes that read at thumbnail size.',
+        'Energetic shonen television frame mixing American comic hatching with bright anime cel.',
       key_features:
-        'heavy manga contour; crosshatched cel shadow wedges; primary red, cobalt and yellow; wide-lens limb foreshortening; white specular ticks',
+        'Horikoshi crosshatching; chunky hero costumes; primary colors; heroic low angles',
       creative_brief:
-        "Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills. Carry it through heavy manga contour, crosshatched cel shadow wedges, primary red, cobalt and yellow, wide-lens limb foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kohei Horikoshi manga and anime look as in My Hero Academia: American-comic crosshatching on faces and muscles, chunky heroic costumes, big expressive eyes and bold primary color on bright cel. Carry it through Horikoshi crosshatching, chunky hero costumes, primary colors, heroic low angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-133',
-    name: 'Deadpan Filigree Brick Comedy',
-    displayName: 'Deadpan Filigree Brick Comedy',
-    styleAnchors: ['Deadpan Filigree Brick Comedy', 'Mashle - Brickwall Comedy Spell-School Brawl'],
+    name: 'Hajime Komoto - Deadpan Filigree Brick Comedy',
+    displayName: 'Hajime Komoto - Deadpan Filigree Brick Comedy',
+    styleAnchors: [
+      'Hajime Komoto - Deadpan Filigree Brick Comedy',
+      'Mashle - Brickwall Comedy Spell-School Brawl',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cream puff prop, magic-school crest, wand duel pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a black-haired muscular student eating cream puffs, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cream puff prop, magic-school crest, wand duel pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line.',
+        'Hajime Komoto Mashle look: ornate fairy-tale magic academy filigree drawn with fine line, while a blank-faced muscular protagonist solves everything with deadpan brute strength.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Komoto designs, blank dot-eyed deadpan faces, impossibly muscular bodies in elegant academy robes, and fussy ornate magicians around them. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Clean pastel lilac, mint and cream for the ornate parts; flat brick-tan and black for the blunt blocks; strong black-white contrast.',
+        'Academy navy, cream, gold filigree and cream-puff pastel accents on clean white.',
       lighting_and_shadow:
-        'Flat even light with one hard cel shadow; blunt blocks get a solid black side plane like cut stone.',
+        'Even storybook light with sparkly magic glows that the deadpan hero completely ignores.',
       texture_and_material:
-        'Smooth cel fills; filigree drawn in fine uniform pen line, blocky forms in a heavy uniform outline with no taper.',
+        'Fine ornamental line work, filigree borders, clean screentone and brick textures.',
       camera_and_composition:
-        'Keep the requested framing; set the blank face centered and symmetric while ornate shapes frame it formally.',
-      atmosphere_and_mood: 'Absurd deadpan wit; the face never reacts to anything around it.',
+        'Symmetrical academy compositions, deadpan frontal stares and absurd strength reveals.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan absurd comedy.',
       rendering_and_quality:
-        'Exactly two line weights, fine filigree and heavy block, with frozen symmetric poses so the joke is the contrast between ornament and bluntness.',
-      key_features:
-        'expressionless dot-eyed face; filigree against brick-square forms; pastel lilac and mint; heavy uniform block outline; symmetric frozen staging',
+        'Crisp comic manga-style frame contrasting ornate fantasy detail with blank deadpan faces.',
+      key_features: 'Hajime Komoto deadpan; filigree academy; muscle comedy; ornate magic ignored',
       creative_brief:
-        "Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line. Carry it through expressionless dot-eyed face, filigree against brick-square forms, pastel lilac and mint, heavy uniform block outline, symmetric frozen staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Hajime Komoto Mashle look: ornate fairy-tale magic academy filigree drawn with fine line, while a blank-faced muscular protagonist solves everything with deadpan brute strength. Carry it through Hajime Komoto deadpan, filigree academy, muscle comedy, ornate magic ignored. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-134',
-    name: 'Fluorescent Everyday Snap Action',
-    displayName: 'Fluorescent Everyday Snap Action',
+    name: 'Yuto Suzuki - Fluorescent Everyday Snap Action',
+    displayName: 'Yuto Suzuki - Fluorescent Everyday Snap Action',
     styleAnchors: [
-      'Fluorescent Everyday Snap Action',
+      'Yuto Suzuki - Fluorescent Everyday Snap Action',
       'Sakamoto Days - Convenience-Store Assassin Sprint',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, apron-wearing retired assassin, shop counter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a heavyset retired hitman in a store apron with glasses, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, apron-wearing retired assassin, shop counter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks.',
+        'Yuto Suzuki Sakamoto Days look: clean confident linework, everyday convenience-store settings turned into hyper-creative action, sharp choreography with ordinary objects as weapons.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suzuki designs, clean sharp faces, casual work aprons and suits, and bodies in precise acrobatic action poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Pale fluorescent white, mint and cool grey dominate; one warm tangerine accent marks the snapped element.',
+        'Fluorescent store white, snack-aisle primaries, cool teal shadows and hot pink accents.',
       lighting_and_shadow:
-        'Flat overhead cool-white wash with almost no modelling; only the snapped element casts a crisp short shadow.',
+        'Flat fluorescent convenience-store light with crisp shadows and neon night glow outside.',
       texture_and_material:
-        'Smooth flat fills and fine even lines; the smear is three to five parallel straight strokes, never a soft blur.',
+        'Clean crisp line, flat screentone, motion arcs and flying everyday objects.',
       camera_and_composition:
-        'Keep the requested framing; stack the scene in clear horizontal lanes and let the snap cut diagonally across one lane.',
-      atmosphere_and_mood: 'Mundane calm with one instant of startling precision.',
+        'Choreographed sequence framing, objects frozen mid-flight and dynamic diagonal action.',
+      atmosphere_and_mood: 'Keep the requested mood with snappy inventive action.',
       rendering_and_quality:
-        'Minimal detail and clean shapes, with the snap the only streaked element in the frame.',
-      key_features:
-        'calm thin contours; one snapped straight smear; pale fluorescent palette; single tangerine accent; horizontal lane staging',
+        'Crisp inventive action manga frame with precise choreography of everyday objects.',
+      key_features: 'Yuto Suzuki choreography; everyday weapons; convenience store; clean lines',
       creative_brief:
-        "Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks. Carry it through calm thin contours, one snapped straight smear, pale fluorescent palette, single tangerine accent, horizontal lane staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yuto Suzuki Sakamoto Days look: clean confident linework, everyday convenience-store settings turned into hyper-creative action, sharp choreography with ordinary objects as weapons. Carry it through Yuto Suzuki choreography, everyday weapons, convenience store, clean lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-032',
-    name: 'Gritty Urban Curses',
-    displayName: 'Urban Curse Action',
-    styleAnchors: ['Gritty Urban Curses'],
+    name: 'Gege Akutami - Gritty Urban Curses',
+    displayName: 'Gege Akutami - Gritty Urban Curses',
+    styleAnchors: ['Gege Akutami - Gritty Urban Curses'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, blindfold, finger talisman, eye tattoo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white-haired blindfolded sorcerer, a pink-haired student with a second face under the eye, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, blindfold, finger talisman, eye tattoo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, finger/talisman fetish prop, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dark modern exorcism anime: confident brush-pen contours, large spotted black shadow masses, and supernatural energy drawn as ink-smoke ribbons rimmed in cyan and violet.',
+        'Gege Akutami Jujutsu Kaisen manga look: rough energetic ink, grotesque cursed spirits with too many eyes and mouths, urban Tokyo settings and stylish sorcerers in dark uniforms.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akutami designs, sharp angular faces, stylish dark uniforms and grotesque spirits with warped anatomy. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Near-black ink and cool concrete greys with only two accents, electric cyan and bruise violet, both reserved for energy edges.',
+        'Black ink with grey tone, and in color: bruised purple, cursed teal and blood orange.',
       lighting_and_shadow:
-        'Hard side light carves half of each face into solid black, with a thin cyan-violet rim along the lit edge.',
-      texture_and_material:
-        'Dry brush-pen grain at contour tails, spotted blacks, and ink-smoke bands with feathered edges.',
+        'Gloomy urban light with black shadows and eerie glows around cursed energy.',
+      texture_and_material: 'Rough scratchy ink, dense black fills, gritty tone and splatter.',
       camera_and_composition:
-        'Keep the requested framing; tilt the horizon a few degrees and compress space around the focal form with deep black gaps.',
-      atmosphere_and_mood: 'Coiled menace and cool confidence, danger held in shadow.',
+        'Explosive fight panels, grotesque close-ups and tilted urban backgrounds.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty cursed menace.',
       rendering_and_quality:
-        'Big black shapes read first; smoke ribbons and rims carry the only color, with no particle confetti.',
-      key_features:
-        'brush-pen contour; spotted black masses; ink-smoke energy ribbons; cyan-violet rim light; tilted horizon',
+        'Raw energetic dark shonen manga illustration with grotesque creature design.',
+      key_features: 'Gege Akutami rough ink; grotesque cursed spirits; dark uniforms; urban horror',
       creative_brief:
-        "Dark modern exorcism anime: confident brush-pen contours, large spotted black shadow masses, and supernatural energy drawn as ink-smoke ribbons rimmed in cyan and violet. Carry it through brush-pen contour, spotted black masses, ink-smoke energy ribbons, cyan-violet rim light, tilted horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Gege Akutami Jujutsu Kaisen manga look: rough energetic ink, grotesque cursed spirits with too many eyes and mouths, urban Tokyo settings and stylish sorcerers in dark uniforms. Carry it through Gege Akutami rough ink, grotesque cursed spirits, dark uniforms, urban horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-035',
-    name: 'Gritty Wallbound Survival',
-    displayName: 'Wallbound Survival Drama',
-    styleAnchors: ['Gritty Wallbound Survival'],
+    name: 'Attack on Titan WIT - Gritty Wallbound Survival',
+    displayName: 'Attack on Titan WIT - Gritty Wallbound Survival',
+    styleAnchors: ['Attack on Titan WIT - Gritty Wallbound Survival'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'wings of freedom emblem on a green cloak, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, eaten-body implication, military insignia, named corps outfit, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails.',
+        'WIT Studio Attack on Titan anime look (2013): thick heavy outlines around faces, gritty desaturated palettes, 3D maneuver gear swinging and giants looming over medieval walled towns.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Cold slate, muted olive, sand and bone neutrals, with one small ember-orange accent on the focal figure.',
-      lighting_and_shadow:
-        'Overcast top light, grouped cool shadows, and a narrow warm edge only on the focal figure.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with thick-outlined AoT anime designs, intense brows, heavy line shading on faces and practical leather strap harnesses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Desaturated earth brown, stone grey, pale sky and harsh blood-red accents.',
+      lighting_and_shadow: 'Harsh daylight with thick black shadow lines and dusty god rays.',
       texture_and_material:
-        'Broad untextured value planes; stone drawn as stacked vertical strata lines, fabric as stiff folds.',
+        'Very thick outer contours, hatched shading lines on faces and gritty painted stone.',
       camera_and_composition:
-        'Keep the requested framing; favor steep worm-eye or plunging overhead views where the request allows, with long verticals.',
-      atmosphere_and_mood: 'Vertigo, grit and stubborn survival against sheer height.',
-      rendering_and_quality:
-        'Hard stress-line hatching under eyes and along tendons, crisp silhouettes against flat pale sky.',
-      key_features:
-        'facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals',
+        'Vertigo swings between rooftops, giant faces peering over walls and dizzying drops.',
+      atmosphere_and_mood: 'Keep the requested mood with desperate survival terror.',
+      rendering_and_quality: 'Intense 2013 WIT Studio television frame with heavy thick outlines.',
+      key_features: 'WIT thick outlines; walled towns; swinging harness gear; looming giants',
       creative_brief:
-        "Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails. Carry it through facial stress lines, towering vertical strata, taut cable motion trails, cold slate and olive palette, plunging verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "WIT Studio Attack on Titan anime look (2013): thick heavy outlines around faces, gritty desaturated palettes, 3D maneuver gear swinging and giants looming over medieval walled towns. Carry it through WIT thick outlines, walled towns, swinging harness gear, looming giants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-036',
-    name: 'Colossal War Drama',
-    displayName: 'Colossal War Shonen',
-    styleAnchors: ['Colossal War Drama'],
+    name: 'Violet Evergarden - Colossal War Drama',
+    displayName: 'Violet Evergarden - Colossal War Drama',
+    styleAnchors: ['Violet Evergarden - Colossal War Drama'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blonde woman with metal prosthetic hands and a blue coat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain.',
+        'Kyoto Animation Violet Evergarden look (2018): extraordinarily detailed eyes with jewel-like irises, postwar European towns, letters and typewriters, lush painted light and grief after war.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Charcoal, ash grey, dust ochre and faded khaki, with worn crimson or tarnished gold as the only accent.',
-      lighting_and_shadow:
-        'Diffuse smoky daylight, soft graded shadows, and a narrow pale rim separating figures from haze.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akiko Takase designs, jewel-detailed eyes, meticulous hair, Edwardian clothes, gloves and restrained grieving expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep emerald, prussian blue, antique gold and warm candle amber.',
+      lighting_and_shadow: 'Rich painted window light, candle glow and sparkling dust in sunbeams.',
       texture_and_material:
-        'Visible bristle marks in skies, walls and smoke; faint grain laid evenly over the cels.',
+        'Immaculate detailed cel with painterly backgrounds and glittering light particles.',
       camera_and_composition:
-        'Keep the requested framing; asymmetric compositions set small figures against large, heavy painted masses.',
-      atmosphere_and_mood: 'Mournful gravity and the weight of consequence.',
+        'Composed cinematic shots, hands on letters, gloves, wide painted European vistas.',
+      atmosphere_and_mood: 'Keep the requested mood with tender postwar grief.',
       rendering_and_quality:
-        'Thin lines with soft modelled cel shading, painterly backgrounds and restrained color.',
-      key_features:
-        'brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses',
+        'Luxurious Kyoto Animation frame with extraordinary detail in eyes and light.',
+      key_features: 'Violet Evergarden eyes; postwar Europe; letters; painted light',
       creative_brief:
-        "Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain. Carry it through brush-textured painted backgrounds, desaturated wartime palette, thin scratchy contour, soft film grain, small figures against heavy masses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kyoto Animation Violet Evergarden look (2018): extraordinarily detailed eyes with jewel-like irises, postwar European towns, letters and typewriters, lush painted light and grief after war. Carry it through Violet Evergarden eyes, postwar Europe, letters, painted light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-039',
-    name: 'Tactical Adventure Shonen',
+    name: 'Hunter x Hunter 2011 - Tactical Adventure Shonen',
+    displayName: 'Hunter x Hunter 2011 - Tactical Adventure Shonen',
+    styleAnchors: ['Hunter x Hunter 2011 - Tactical Adventure Shonen'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a spiky black-haired boy with a fishing rod, a white-haired boy with claws, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer.',
+        'Madhouse Hunter x Hunter anime look (2011): clean bright designs with sharp shonen eyes, vast adventure landscapes, strategic battles and sudden dark tension.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Togashi-derived Madhouse designs, spiky hair, clean sharp eyes, adventurer clothes and calm tactical expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Clear sky blue, leaf green, white and warm skin tones; each shimmer outline in its own soft hue at low opacity.',
-      lighting_and_shadow:
-        'Clean midday light, one cel shadow tier, and a pale bounce under chins and brims.',
+        'Bright adventure greens, sky blue and warm tan, turning into dark tension purples.',
+      lighting_and_shadow: 'Clear adventure daylight, then eerie aura glows in tense standoffs.',
       texture_and_material:
-        'Smooth flat fills; the shimmer outline slightly blurred and wavering, never a solid glow.',
+        'Clean digital cel with crisp outlines and painted wilderness backgrounds.',
       camera_and_composition:
-        'Keep the requested framing; roomy compositions with clear intervals between figures, readable at a glance like a strategy map.',
-      atmosphere_and_mood:
-        'Playful curiosity sharpened by quiet calculation, bright and open but always a step ahead.',
-      rendering_and_quality:
-        'Crisp lines, minimal texture, and the shimmer halo only where the prompt shows focus or effort.',
-      key_features:
-        'slim clean contour; translucent wobbling aura outline; sunlit cel palette; clear figure intervals; one-tier cel shadow',
+        'Strategic standoff framing, vast landscapes and sudden close-ups on eyes.',
+      atmosphere_and_mood: 'Keep the requested mood with playful tactical tension.',
+      rendering_and_quality: 'Crisp 2011 Madhouse shonen frame with strategic intensity.',
+      key_features: 'Hunter x Hunter adventure; tactical standoffs; clean designs; aura tension',
       creative_brief:
-        "Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer. Carry it through slim clean contour, translucent wobbling aura outline, sunlit cel palette, clear figure intervals, one-tier cel shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Hunter x Hunter anime look (2011): clean bright designs with sharp shonen eyes, vast adventure landscapes, strategic battles and sudden dark tension. Carry it through Hunter x Hunter adventure, tactical standoffs, clean designs, aura tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-121',
-    name: 'Printed-Wave Effect Trail Cel',
-    displayName: 'Printed-Wave Effect Trail Cel',
+    name: 'Demon Slayer ufotable - Printed-Wave Effect Trail Cel',
+    displayName: 'Demon Slayer ufotable - Printed-Wave Effect Trail Cel',
     styleAnchors: [
-      'Printed-Wave Effect Trail Cel',
+      'Demon Slayer ufotable - Printed-Wave Effect Trail Cel',
       'Demon Slayer - Lantern Bloodline Sword Ballet',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, checkered haori, bamboo muzzle, hanafuda earrings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a checkered green and black haori, a bamboo muzzle on a girl, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, checkered haori, bamboo muzzle, hanafuda earrings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color.',
+        'ufotable Demon Slayer look (2019): crisp cel characters over lush 3D-composited forests, sword techniques drawn as ukiyo-e water waves, flames and flower trails, glowing night compositing.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Gotouge-derived ufotable designs, sharp eyes, patterned haori and hakama, and dynamic sword stances. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Winter blue, warm amber and cream on figures; trails in indigo-to-white or vermilion-to-gold bokashi gradients.',
+        'Deep night navy, ukiyo-e wave blue, flame orange and patterned haori colors.',
       lighting_and_shadow:
-        'Soft cinematic key with a warm glow where a trail passes, cool grouped shadows elsewhere.',
+        'Rich compositing glow, moonlight on forests and luminous effect trails.',
       texture_and_material:
-        'Smooth digital cel on figures; trails with flat print color, carved outline and faint paper grain.',
+        'Crisp cel characters with ukiyo-e styled effect layers and painted foliage.',
       camera_and_composition:
-        'Keep the requested framing; trails curve in nested arcs around the subject and leave it fully legible.',
-      atmosphere_and_mood:
-        'Ceremonial grace and restrained resolve, motion flowing like a performed rite rather than a brawl.',
+        'Spinning technique shots, sweeping forest pans and dramatic slow-motion clashes.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce graceful determination.',
       rendering_and_quality:
-        'Clear contrast between soft digital shading on figures and flat printed trails; garment patterns kept small.',
-      key_features:
-        'woodblock-print effect trails; bokashi-graded waves and flames; clean digital cel figures; winter blue and amber; nested trail arcs',
+        'High-end ufotable frame with lavish compositing and effect animation.',
+      key_features: 'ufotable compositing; ukiyo-e wave trails; patterned haori; night forests',
       creative_brief:
-        "Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color. Carry it through woodblock-print effect trails, bokashi-graded waves and flames, clean digital cel figures, winter blue and amber, nested trail arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "ufotable Demon Slayer look (2019): crisp cel characters over lush 3D-composited forests, sword techniques drawn as ukiyo-e water waves, flames and flower trails, glowing night compositing. Carry it through ufotable compositing, ukiyo-e wave trails, patterned haori, night forests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-124',
-    name: 'Ultramarine Glare Foreshortening',
-    displayName: 'Ultramarine Glare Foreshortening',
-    styleAnchors: ['Ultramarine Glare Foreshortening', 'Blue Lock - Predator-Ego Sports Assault'],
+    name: 'Yusuke Nomura - Ultramarine Glare Foreshortening',
+    displayName: 'Yusuke Nomura - Ultramarine Glare Foreshortening',
+    styleAnchors: [
+      'Yusuke Nomura - Ultramarine Glare Foreshortening',
+      'Blue Lock - Predator-Ego Sports Assault',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors.',
+        'Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Electric ultramarine, ink black, white and cool cyan; skin in cool pale tones.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nomura designs, lean athletic strikers, sharp glaring eyes with glowing irises and taut muscles in extreme perspective. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with ultramarine accents and electric glare in color pages.',
       lighting_and_shadow:
-        'Hard blue-white rim from behind, cyan underlight on faces, deep blue shadow planes.',
-      texture_and_material: 'Clean vector layers with hard-edged glow bands and no grain.',
+        'Hard backlight, glaring eye glints and dramatic spotlight on the decisive moment.',
+      texture_and_material: 'Sharp ink lines, speed lines, screentone and metaphor overlays.',
       camera_and_composition:
-        'Keep the requested framing; exaggerate foreshortening toward the lens and aim concentric wedges at the focal eye.',
-      atmosphere_and_mood: 'Predatory concentration, ego sharpened to a point.',
+        'Extreme foreshortening with feet and hands thrust at the lens and tilted panels.',
+      atmosphere_and_mood: 'Keep the requested mood with predatory ego intensity.',
       rendering_and_quality:
-        'Sharp vector lines, glowing eye-light trails, and a background reduced to converging vectors.',
+        'Aggressive sports manga illustration with extreme perspective and predatory energy.',
       key_features:
-        'ultramarine eye-light trails; extreme wide-lens foreshortening; converging blue vector backgrounds; blue-white rim; hard-edged glow',
+        'Yusuke Nomura foreshortening; glaring eyes; ego metaphors; ultramarine accents',
       creative_brief:
-        "Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors. Carry it through ultramarine eye-light trails, extreme wide-lens foreshortening, converging blue vector backgrounds, blue-white rim, hard-edged glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains. Carry it through Yusuke Nomura foreshortening, glaring eyes, ego metaphors, ultramarine accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-128',
-    name: 'Inverted Negative Ink Opera',
-    displayName: 'Inverted Negative Ink Opera',
+    name: 'Bleach TYBW - Inverted Negative Ink Opera',
+    displayName: 'Bleach TYBW - Inverted Negative Ink Opera',
     styleAnchors: [
-      'Inverted Negative Ink Opera',
+      'Bleach TYBW - Inverted Negative Ink Opera',
       'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'black shihakusho robes with a giant cleaver sword, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black.',
+        'Studio Pierrot Bleach: Thousand-Year Blood War look (2022): stark black-and-white inversions, negative-image impact frames, Tite Kubo elegant fashion silhouettes and operatic spiritual battles.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Black, ivory and deep violet; the inverted region swaps black and white and carries one saturated crimson flash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kubo-derived designs, tall elegant silhouettes, sharp fashionable uniforms and dramatic calm faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Stark black, white and red with sudden negative inversions of the palette.',
       lighting_and_shadow:
-        'Stark top light and deep shadow masses cut by crisp white gaps; inside the inverted zone light reads as black.',
-      texture_and_material:
-        'Solid ink fields with faint paper grain and dry-brush tails on the longest strokes.',
+        'Negative-inverted impact frames, spiritual pressure glows and hard silhouettes.',
+      texture_and_material: 'Crisp cel with ink-like black splits and flat negative-image effects.',
       camera_and_composition:
-        'Keep the requested framing; formal, near-symmetric staging with one strong diagonal and wide negative space.',
-      atmosphere_and_mood:
-        'Solemn grandeur that turns suddenly cold, stillness broken by one stark flash.',
-      rendering_and_quality:
-        'Flat masses and clean negative cuts, with the inversion confined to one region or silhouette.',
+        'Operatic stillness, sudden inversion cuts and elegant silhouette framing.',
+      atmosphere_and_mood: 'Keep the requested mood with operatic cold grandeur.',
+      rendering_and_quality: 'Striking modern Pierrot frame with black-and-white negative effects.',
       key_features:
-        'partial photographic-negative inversion; broad black brush contour; ivory negative space; single crimson flash; formal diagonal',
+        'Negative inversion; stark black-white-red; elegant silhouettes; operatic battle',
       creative_brief:
-        "Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black. Carry it through partial photographic-negative inversion, broad black brush contour, ivory negative space, single crimson flash, formal diagonal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Pierrot Bleach: Thousand-Year Blood War look (2022): stark black-and-white inversions, negative-image impact frames, Tite Kubo elegant fashion silhouettes and operatic spiritual battles. Carry it through Negative inversion, stark black-white-red, elegant silhouettes, operatic battle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-131',
-    name: 'Sky-Blue Low-Angle Brawler Cel',
-    displayName: 'Sky-Blue Low-Angle Brawler Cel',
+    name: 'Wind Breaker 2024 - Sky-Blue Low-Angle Brawler Cel',
+    displayName: 'Wind Breaker 2024 - Sky-Blue Low-Angle Brawler Cel',
     styleAnchors: [
-      'Sky-Blue Low-Angle Brawler Cel',
+      'Wind Breaker 2024 - Sky-Blue Low-Angle Brawler Cel',
       'Wind Breaker - Delinquent Street Protector Rush',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered gang jacket, bandaged knuckles, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered gang jacket, bandaged knuckles, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds.',
+        'CloverWorks Wind Breaker look (2024): delinquent protector gangs in a bright town, sky-blue airy palettes, low heroic angles under wide skies and stylish fighting stances.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Saturated sky blue, cloud white and black, with one warm vermilion or spring-green accent.',
-      lighting_and_shadow:
-        'Bright sun behind clouds, figures backlit, hard shadow blocks with a narrow bright edge.',
-      texture_and_material:
-        'Smooth cel; cloud edges as crisp scalloped lines, cloth folds as sharp tapered strokes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Satoru Nii-derived designs, sharp stylish faces, loose jackets and headbands, and confident brawler stances. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Airy sky blue, fresh green, crisp white and warm evening orange.',
+      lighting_and_shadow: 'Bright open sky light, soft cel shadows and golden evening rim light.',
+      texture_and_material: 'Clean modern digital cel with soft gradients and painted townscapes.',
       camera_and_composition:
-        'Keep the requested content; push a low angle and forceful diagonals with sky filling over half the frame.',
-      atmosphere_and_mood:
-        'Brazen confidence and protective loyalty, the open sky making every stance feel larger.',
-      rendering_and_quality:
-        'Decisive line weight and broad sky, with cloth flutter lines only where wind or motion already exists.',
-      key_features:
-        'worm-eye low angle; sky blue and cloud white; tapered contour ends; flapping cloth folds; backlit hard shadows',
+        'Low angles against huge skies, group line-ups on walls and rooftops.',
+      atmosphere_and_mood: 'Keep the requested mood with protective youthful swagger.',
+      rendering_and_quality: 'Fresh bright CloverWorks frame with airy sky compositions.',
+      key_features: 'Sky-blue airiness; low heroic angles; protective brawlers; townscapes',
       creative_brief:
-        "Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds. Carry it through worm-eye low angle, sky blue and cloud white, tapered contour ends, flapping cloth folds, backlit hard shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "CloverWorks Wind Breaker look (2024): delinquent protector gangs in a bright town, sky-blue airy palettes, low heroic angles under wide skies and stylish fighting stances. Carry it through Sky-blue airiness, low heroic angles, protective brawlers, townscapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-135',
-    name: 'Broken-Rule Halftone Shatter',
-    displayName: 'Broken-Rule Halftone Shatter',
-    styleAnchors: ['Broken-Rule Halftone Shatter', 'Undead Unluck - Rule-Breaker Curse Impact'],
+    name: 'Yoshifumi Tozuka - Broken-Rule Halftone Shatter',
+    displayName: 'Yoshifumi Tozuka - Broken-Rule Halftone Shatter',
+    styleAnchors: [
+      'Yoshifumi Tozuka - Broken-Rule Halftone Shatter',
+      'Undead Unluck - Rule-Breaker Curse Impact',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cracked mirror prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cracked mirror prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks.',
+        'Yoshifumi Tozuka Undead Unluck manga look: chaotic rule-breaking energy, halftone dot explosions, panels that shatter like glass and wild comedic-action body language.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Black and warm coral base; individual shards flip to bright yellow or cobalt.',
-      lighting_and_shadow:
-        'Hard edge separation, each shard lit on its own terms with small bright cuts.',
-      texture_and_material:
-        'Rough ink, broken halftone dot fields and dry scattered texture in the shard gaps.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tozuka designs, wild expressive faces, messy hair, stylish casual clothes and gravity-defying poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with halftone dots, plus hot yellow and cyan in color pages.',
+      lighting_and_shadow: 'Explosive flashes, shattering glints and halftone glow bursts.',
+      texture_and_material: 'Halftone dot fields, shattered panel shards and scratchy ink.',
       camera_and_composition:
-        'Keep the requested framing; fracture lines radiate from one focal point and the subject stays readable across the shards.',
-      atmosphere_and_mood: 'Mischief and unstable luck, the rules visibly breaking.',
-      rendering_and_quality:
-        'Broken contour, small shard displacement and a tightly controlled accent palette.',
-      key_features:
-        'glass-shard fracture; halftone that changes per shard; coral and black with yellow or cobalt; broken contours; radial fracture focal point',
+        'Panels shattering outward, extreme poses and chaotic diagonal layouts.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic rule-breaking thrill.',
+      rendering_and_quality: 'Frenetic shonen manga illustration with shattering halftone effects.',
+      key_features: 'Tozuka chaos; halftone explosions; shattering panels; wild poses',
       creative_brief:
-        "Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks. Carry it through glass-shard fracture, halftone that changes per shard, coral and black with yellow or cobalt, broken contours, radial fracture focal point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yoshifumi Tozuka Undead Unluck manga look: chaotic rule-breaking energy, halftone dot explosions, panels that shatter like glass and wild comedic-action body language. Carry it through Tozuka chaos, halftone explosions, shattering panels, wild poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-136',
-    name: 'Etched Branch-Lightning Cel',
-    displayName: 'Etched Branch-Lightning Cel',
-    styleAnchors: ['Etched Branch-Lightning Cel', 'Black Clover - Grimoire Thunder Squad'],
+    name: 'Yuki Tabata - Etched Branch-Lightning Cel',
+    displayName: 'Yuki Tabata - Etched Branch-Lightning Cel',
+    styleAnchors: [
+      'Yuki Tabata - Etched Branch-Lightning Cel',
+      'Black Clover - Grimoire Thunder Squad',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a five-leaf black grimoire, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold.',
+        'Yuki Tabata Black Clover manga look: extremely dense energetic linework, spiky shading, grimoire magic effects, branching black lightning and crowded magic knight squads.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tabata designs, spiky hair, fierce grins, heavy robes and squad cloaks, rendered with dense hatching. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Deep forest green, black, ivory and restrained gold; lightning gold with black edges.',
+        'Black ink with jagged tone, and in color: black lightning, gold and crimson.',
       lighting_and_shadow:
-        'Clear cel shadows with bright edge accents only where lightning passes.',
-      texture_and_material:
-        'Polished cel with thin etched engraving lines on hard materials, cloth kept plain.',
+        'Crackling black lightning flashes and dramatic magic glows lighting the faces.',
+      texture_and_material: 'Dense jagged hatching, splintered lightning lines and heavy ink.',
       camera_and_composition:
-        'Keep the requested framing; orderly clusters linked by broad diagonals, lightning branches framing rather than covering the subject.',
-      atmosphere_and_mood: 'Rowdy determination held inside a formal structure.',
-      rendering_and_quality:
-        'Precise linework, spiky hair and cloth ends, ornament kept selective.',
-      key_features:
-        'black-edged gold lightning branches; etched engraving detail; forest green, black and gold; spiky contour ends; polished cel',
+        'Explosive clash compositions with lightning branching across panels.',
+      atmosphere_and_mood: 'Keep the requested mood with relentless fiery grit.',
+      rendering_and_quality: 'Dense high-energy shonen manga illustration with crackling magic.',
+      key_features: 'Yuki Tabata density; branching black lightning; grimoire magic; squad cloaks',
       creative_brief:
-        "Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold. Carry it through black-edged gold lightning branches, etched engraving detail, forest green, black and gold, spiky contour ends. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yuki Tabata Black Clover manga look: extremely dense energetic linework, spiky shading, grimoire magic effects, branching black lightning and crowded magic knight squads. Carry it through Yuki Tabata density, branching black lightning, grimoire magic, squad cloaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-138',
-    name: 'Sumi-Black Neon Edge Stillness',
-    displayName: 'Sumi-Black Neon Edge Stillness',
-    styleAnchors: ['Sumi-Black Neon Edge Stillness', 'Kagurabachi - Sword Oath Under Neon Rain'],
+    name: 'Takeru Hokazono - Sumi-Black Neon Edge Stillness',
+    displayName: 'Takeru Hokazono - Sumi-Black Neon Edge Stillness',
+    styleAnchors: [
+      'Takeru Hokazono - Sumi-Black Neon Edge Stillness',
+      'Kagurabachi - Sword Oath Under Neon Rain',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness.',
+        'Takeru Hokazono Kagurabachi manga look: severe stillness broken by sudden blade flashes, heavy black fills, sharp clean lines and cool contemporary Tokyo with neon glints.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Deep indigo, ink black and bone white, with one neon magenta or cyan edge line.',
-      lighting_and_shadow:
-        'Low hard light from one side, broad matte shadow masses, the neon edge on a single contour only.',
-      texture_and_material:
-        'Dry brush grain at contour tails, matte dark fields and sparse speck grain.',
-      camera_and_composition:
-        'Keep the requested content; organize it in wide horizontal bands like a cinema frame, with deliberate empty space and one strong diagonal.',
-      atmosphere_and_mood:
-        'Quiet grief hardening into resolve, long silences held before a single decisive edge.',
-      rendering_and_quality:
-        'Precise dark contour, minimal detail, and exactly one neon edge in the frame.',
-      key_features:
-        'severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hokazono designs, grim quiet faces, dark haori over modern clothes and sharp ready stances. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Heavy sumi black, cold grey and thin neon teal and red edge glints.',
+      lighting_and_shadow: 'Mostly dark frames with razor-thin neon rim light and blade flashes.',
+      texture_and_material: 'Clean sharp lines, heavy black fills and dry-brush accents.',
+      camera_and_composition: 'Long silent panels, then sudden cuts to single strikes.',
+      atmosphere_and_mood: 'Keep the requested mood with cold vengeful stillness.',
+      rendering_and_quality: 'Severe modern action manga illustration with heavy black design.',
+      key_features: 'Hokazono stillness; heavy blacks; neon edges; sudden strikes',
       creative_brief:
-        "Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness. Carry it through severe sumi-brush black, single neon edge line, wide horizontal banding, long still hold, matte indigo darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Takeru Hokazono Kagurabachi manga look: severe stillness broken by sudden blade flashes, heavy black fills, sharp clean lines and cool contemporary Tokyo with neon glints. Carry it through Hokazono stillness, heavy blacks, neon edges, sudden strikes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-139',
-    name: 'Crosshatched Giant-Scale Panic',
-    displayName: 'Crosshatched Giant-Scale Panic',
-    styleAnchors: ['Crosshatched Giant-Scale Panic', 'Attack on Titan - Wall Rupture Desperation'],
+    name: 'Hajime Isayama - Crosshatched Giant-Scale Panic',
+    displayName: 'Hajime Isayama - Crosshatched Giant-Scale Panic',
+    styleAnchors: [
+      'Hajime Isayama - Crosshatched Giant-Scale Panic',
+      'Attack on Titan - Wall Rupture Desperation',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, gore, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a skinless colossal titan face over a wall, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses.',
+        'Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Muted olive, stone grey and dried brown with a pale sickly flesh accent.',
-      lighting_and_shadow:
-        'Hazy backlight through dust, hard silhouette shadows, faces half buried in hatching.',
-      texture_and_material:
-        'Dry pen crosshatch in every shadow, abrasion on stone, plumes built as hatched volumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Isayama rawness, scratchy faces, wide terrified eyes, awkward bodies and plain period clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with rough crosshatching and no screentone polish.',
+      lighting_and_shadow: 'Flat light made menacing by dense scratchy hatching.',
+      texture_and_material: 'Rough scratchy pen crosshatching, uneven lines and raw texture.',
       camera_and_composition:
-        'Keep the requested framing; exaggerate scale with tiny foreground figures and a vast form overhead in compressed depth bands.',
-      atmosphere_and_mood:
-        'Bleak urgency and helpless awe, tiny figures dwarfed by something far too large.',
-      rendering_and_quality:
-        'Crosshatched shadows and clear silhouettes, dread through scale rather than gore.',
-      key_features:
-        'coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces',
+        'Enormous faces filling panels, tiny fleeing people and vertigo angles.',
+      atmosphere_and_mood: 'Keep the requested mood with raw giant-scale panic.',
+      rendering_and_quality: 'Raw scratchy manga illustration with grotesque giant scale.',
+      key_features: 'Isayama scratch; grotesque giant faces; raw anatomy; panic crowds',
       creative_brief:
-        "Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses. Carry it through coarse dense crosshatching, extreme scale contrast, hatched dust plumes, olive and stone palette, grimacing faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-140',
-    name: 'Pale Calm Spell Geometry',
-    displayName: 'Pale Calm Spell Geometry',
+    name: 'Frieren Madhouse - Pale Calm Spell Geometry',
+    displayName: 'Frieren Madhouse - Pale Calm Spell Geometry',
     styleAnchors: [
-      'Pale Calm Spell Geometry',
+      'Frieren Madhouse - Pale Calm Spell Geometry',
       'Frieren Combat Flashback - Ancient Calm Spell Impact',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white-haired elf with twin tails in a white and gold robe, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried.',
+        'Madhouse Frieren look (2023) combat scenes: pale calm palettes, soft thin lines, elegant geometric magic circles and beams, and serene elves unmoved by overwhelming power.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Pale cyan, parchment, lavender-grey and soft sage, with restrained cool shadow.',
-      lighting_and_shadow:
-        'Soft diffuse daylight, gentle value transitions, a few clean bright edges on the rings.',
-      texture_and_material: 'Smooth matte color, fine line detail and very little grain.',
-      camera_and_composition:
-        'Keep the requested framing; open spacing with generous sky or floor around precise focal geometry.',
-      atmosphere_and_mood:
-        'Understated authority and reflective calm, power shown without strain or noise.',
-      rendering_and_quality:
-        'Exact contours and a quiet palette, geometry lines thin and legible with no glyphs.',
-      key_features:
-        'concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Reiko Nagasawa designs, calm understated faces, long pale hair, simple traveling robes and relaxed casting poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pale mint, soft ivory, cool blue and gentle gold.',
+      lighting_and_shadow: 'Soft high-key light with luminous geometric magic beams.',
+      texture_and_material:
+        'Thin clean lines, soft digital paint and crisp geometric effect layers.',
+      camera_and_composition: 'Calm wide shots and elegant spell geometry framing.',
+      atmosphere_and_mood: 'Keep the requested mood with serene effortless power.',
+      rendering_and_quality: 'Refined 2023 Madhouse frame with calm elegant magic.',
+      key_features: 'Frieren calm; pale palette; geometric magic; serene power',
       creative_brief:
-        "Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried. Carry it through concentric geometric light rings, pale cyan and parchment, fine exact outline, open quiet spacing, soft diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Frieren look (2023) combat scenes: pale calm palettes, soft thin lines, elegant geometric magic circles and beams, and serene elves unmoved by overwhelming power. Carry it through Frieren calm, pale palette, geometric magic, serene power. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-037',
-    name: 'Impact Frame Comedy Hero',
-    displayName: 'Impact Comedy Heroics',
-    styleAnchors: ['Impact Frame Comedy Hero'],
+    name: 'Hirohiko Araki - Impact Frame Comedy Hero',
+    displayName: 'Hirohiko Araki - Impact Frame Comedy Hero',
+    styleAnchors: ['Hirohiko Araki - Impact Frame Comedy Hero'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'sound-effect katakana letters, existing franchise characters, readable text, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette.',
+        "Hirohiko Araki JoJo's Bizarre Adventure look: flamboyant fashion-model poses, muscular angular bodies, lipstick-like shading, bold unexpected colors and menacing sound-effect atmosphere without letters.",
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araki designs, angular muscular bodies, strong jaws, stylish outlandish outfits and twisted fashion-magazine poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Muted soft cel color for the calm part; the impact zone in black, white and signal red with a yellow spark.',
+        'Wild unexpected color swaps, magenta skies, lime shadows and gold highlights.',
       lighting_and_shadow:
-        'Flat even light, then hard inverted light with pure black shadows inside the impact zone.',
+        'Dramatic stylized lighting with bold shadow shapes and color inversions.',
       texture_and_material:
-        'Clean cel fills, impact lines as thick tapered wedges, untouched negative space.',
-      camera_and_composition:
-        'Keep the requested framing; a broad empty stage with oversized radial punctuation centered on one small detail.',
-      atmosphere_and_mood: 'Deadpan timing and an absurdly oversized reaction.',
+        'Heavy inked contours, hatching, bold flat color and dramatic shadow shapes.',
+      camera_and_composition: 'Twisted dramatic poses, dutch angles and menacing close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with flamboyant bizarre bravado.',
       rendering_and_quality:
-        'Deliberate disproportion between a trivial action and a huge impact graphic.',
-      key_features:
-        'single impact frame zone; black, white and signal red; thick radial wedges; muted calm cel; broad empty stage',
+        'Flamboyant manga illustration with fashion-pose drama and bizarre menace.',
+      key_features: 'Araki poses; bizarre fashion; wild colors; menacing atmosphere',
       creative_brief:
-        "Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette. Carry it through single impact frame zone, black, white and signal red, thick radial wedges, muted calm cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Hirohiko Araki JoJo's Bizarre Adventure look: flamboyant fashion-model poses, muscular angular bodies, lipstick-like shading, bold unexpected colors and menacing sound-effect atmosphere without letters. Carry it through Araki poses, bizarre fashion, wild colors, menacing atmosphere. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-129',
-    name: 'Dual-Detail Deadpan Satire',
-    displayName: 'Dual-Detail Deadpan Satire',
-    styleAnchors: ['Dual-Detail Deadpan Satire', 'One-Punch Man - Prestige Hero Impact Satire'],
+    name: 'One-Punch Man Madhouse - Dual-Detail Deadpan Satire',
+    displayName: 'One-Punch Man Madhouse - Dual-Detail Deadpan Satire',
+    styleAnchors: [
+      'One-Punch Man Madhouse - Dual-Detail Deadpan Satire',
+      'One-Punch Man - Prestige Hero Impact Satire',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bald caped hero, yellow jumpsuit, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bald hero in a yellow suit with a white cape and red gloves, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bald caped hero, yellow jumpsuit, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail.',
+        'Madhouse One-Punch Man look (2015): hyper-detailed muscular monsters and heroes contrasted with a plain round-lined deadpan hero drawn with dot eyes, and spectacular sakuga destruction.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Clean black-white values with saturated warm and cool accents; the simple figure in flat pale colors.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the calm deadpan figure with plain round lines and dot eyes, and everyone else with hyper-detailed muscles and dramatic faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright comic primaries, city grey and explosive yellow impact bursts.',
       lighting_and_shadow:
-        'Dramatic hard lighting and polished highlights on the detailed parts; the simple figure lit flat.',
+        'Explosive impact flashes and dramatic rim light on the detailed fighters.',
       texture_and_material:
-        'Smooth cel fills; detailed zones with fine hatching, muscle, scale and stone detail.',
+        'Contrast of plain simple line and dense detailed rendering, debris clouds.',
       camera_and_composition:
-        'Keep the requested framing; absurd scale contrast with the simple figure placed precisely in broad quiet space.',
-      atmosphere_and_mood:
-        'Deadpan grandeur and understated satire, the plain figure unimpressed by an epic world.',
+        'Epic destruction wide shots cut against calm deadpan close-ups of the plain hero.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan heroic satire.',
       rendering_and_quality:
-        'The detail gap is the joke: one plain figure against a lavishly finished world.',
-      key_features:
-        'minimal dot-eyed main figure; hyper-detailed surroundings; polished hard lighting; flat pale figure fill; absurd scale contrast',
+        'Spectacular sakuga television frame with deadpan contrast between plain and detailed figures.',
+      key_features: 'One-Punch contrast; plain dot-eyed hero; detailed monsters; destruction',
       creative_brief:
-        "Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail. Carry it through minimal dot-eyed main figure, hyper-detailed surroundings, polished hard lighting, flat pale figure fill, absurd scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse One-Punch Man look (2015): hyper-detailed muscular monsters and heroes contrasted with a plain round-lined deadpan hero drawn with dot eyes, and spectacular sakuga destruction. Carry it through One-Punch contrast, plain dot-eyed hero, detailed monsters, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-132',
-    name: 'Full-Color Manhwa Shadow Glow',
-    displayName: 'Full-Color Manhwa Shadow Glow',
+    name: 'DUBU Solo Leveling - Full-Color Manhwa Shadow Glow',
+    displayName: 'DUBU Solo Leveling - Full-Color Manhwa Shadow Glow',
     styleAnchors: [
-      'Full-Color Manhwa Shadow Glow',
+      'DUBU Solo Leveling - Full-Color Manhwa Shadow Glow',
       'Solo Leveling - Shadow Monarch Raid Ascension',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a dark-haired hunter with purple glowing eyes and a black coat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground.',
+        'DUBU (Redice Studio) Solo Leveling webtoon look: full-color digital manhwa painting, glowing blue and purple eyes, smoky shadow soldiers and dark dungeon raids.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Black, indigo and violet with cold cyan highlights; skin cool and pale.',
-      lighting_and_shadow:
-        'Deep value falloff and restrained cool rims; glow confined to eyes and a few edges.',
-      texture_and_material:
-        'Soft airbrushed gradients, smoke as feathered wisps, crisp luminous edges.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with manhwa designs, sharp handsome faces, dark coats and glowing eyes, and shadow creatures made of smoke. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep black-blue, glowing violet, electric blue and dungeon gold.',
+      lighting_and_shadow: 'Glowing eyes and smoky auras in dark dungeon light.',
+      texture_and_material: 'Full-color digital painting, smoke effects and glossy highlights.',
       camera_and_composition:
-        'Keep the requested framing; tall stacked planes and strong vertical scale suited to scroll reading.',
-      atmosphere_and_mood:
-        'Quiet awe and rising dominance, darkness gathering upward toward a cold glow.',
+        'Tall vertical webtoon-like compositions, dramatic low angles and looming shadow armies.',
+      atmosphere_and_mood: 'Keep the requested mood with dark ascending power.',
       rendering_and_quality:
-        'Glossy digital finish with dark tonal depth and thin cyan edges, no panel borders.',
-      key_features:
-        'airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging',
+        'Glossy full-color webtoon illustration with smoky glows and cinematic darkness.',
+      key_features: 'DUBU manhwa color; glowing eyes; shadow soldiers; dungeons',
       creative_brief:
-        "Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground. Carry it through airbrushed digital painting, glowing cyan eyes, smoky shadow silhouettes, black and violet palette, tall vertical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "DUBU (Redice Studio) Solo Leveling webtoon look: full-color digital manhwa painting, glowing blue and purple eyes, smoky shadow soldiers and dark dungeon raids. Carry it through DUBU manhwa color, glowing eyes, shadow soldiers, dungeons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-040',
-    name: 'Blade Field Urban Fantasy',
-    displayName: 'Urban Blade Field',
-    styleAnchors: ['Blade Field Urban Fantasy'],
+    name: 'Fate UBW ufotable - Blade Field Urban Fantasy',
+    displayName: 'Fate UBW ufotable - Blade Field Urban Fantasy',
+    styleAnchors: ['Fate UBW ufotable - Blade Field Urban Fantasy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blonde knight woman in blue and silver armor, a red-coated archer with twin swords, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur.',
+        'ufotable Fate/stay night: Unlimited Blade Works look (2014): Takashi Takeuchi designs, lavish digital compositing, glowing magic circuits, fields of swords under burning skies and dark urban nights.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Nocturnal navy and ivory with glowing cyan or gold particle accents.',
-      lighting_and_shadow:
-        'Motivated volumetric beams, bloom around light sources, a controlled rim on characters.',
-      texture_and_material:
-        'Clean cel on figures, finely detailed painted backgrounds, particles soft and round.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takeuchi-derived designs, sharp clean faces, modern and armored costumes and elegant magic poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Burning orange skies, steel grey, magic cyan and deep night blue.',
+      lighting_and_shadow: 'Lavish compositing glow, magic circuit lights and sunset fire.',
+      texture_and_material: 'Crisp cel characters with lavish 3D compositing and particle effects.',
       camera_and_composition:
-        'Keep the requested framing; lens-like depth with blurred foreground elements, sharp midground and bokeh in the distance.',
-      atmosphere_and_mood: 'Calm formality in the moment before a storm.',
-      rendering_and_quality:
-        'Tight compositing: sharp cel edges, soft volumetric light, particles and bloom kept in check.',
-      key_features:
-        'cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field',
+        'Sweeping camera moves through sword fields and dramatic urban night shots.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant fated battle.',
+      rendering_and_quality: 'Lavish ufotable frame with rich compositing and effects.',
+      key_features: 'ufotable compositing; sword fields; magic circuits; urban night',
       creative_brief:
-        "Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur. Carry it through cel figures over detailed painted backgrounds, volumetric light shafts, drifting embers and bokeh, navy and ivory, shallow depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "ufotable Fate/stay night: Unlimited Blade Works look (2014): Takashi Takeuchi designs, lavish digital compositing, glowing magic circuits, fields of swords under burning skies and dark urban nights. Carry it through ufotable compositing, sword fields, magic circuits, urban night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-123',
-    name: 'White-Core Flame Halo Cel',
-    displayName: 'White-Core Flame Halo Cel',
-    styleAnchors: ['White-Core Flame Halo Cel', 'Fire Force - Cathedral Inferno Brigade'],
+    name: 'Fire Force David Production - White-Core Flame Halo Cel',
+    displayName: 'Fire Force David Production - White-Core Flame Halo Cel',
+    styleAnchors: [
+      'Fire Force David Production - White-Core Flame Halo Cel',
+      'Fire Force - Cathedral Inferno Brigade',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a fire soldier with flaming feet and a shark-tooth grin, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain.',
+        'David Production Fire Force look (2019): white-hot core flames with orange halos, fire brigades in heavy soot-stained uniforms, gothic cathedral architecture and fluid flame effects animation.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohkubo-derived designs, sharp toothy grins, heavy firefighter uniforms with reflective stripes and nimble flame-propelled poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Charcoal and ivory with bright orange, scarlet and warm yellow; every flame core pure white.',
+        'White-hot flame cores, orange halos, soot black and brass reflective stripes.',
       lighting_and_shadow:
-        'Fire as the primary source: warm uplight, decisive silhouette shadows, subtle light-leak bloom.',
-      texture_and_material: 'Dense flat color, light speckle grain and painted spark flecks.',
+        'Blazing fire as the main light source, white cores glowing and deep soot shadows.',
+      texture_and_material:
+        'Clean cel characters with fluid hand-drawn flame effects and ember particles.',
       camera_and_composition:
-        'Keep the requested framing; concentric halo rings centered on the focal area with broad negative space.',
-      atmosphere_and_mood:
-        'Fervent, almost liturgical heat, fire treated as ritual rather than disaster.',
-      rendering_and_quality:
-        'Strong silhouette cuts, limited warm bloom and carefully placed ring geometry.',
+        'Flame-propelled dives, cathedral interiors and dramatic smoke-filled wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with blazing zealous heroism.',
+      rendering_and_quality: 'Vivid David Production frame with fluid white-core flame animation.',
       key_features:
-        'white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain',
+        'White-core flames; soot-stained brigades; gothic cathedrals; fluid fire effects',
       creative_brief:
-        "Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain. Carry it through white-hot flame cores, flat stylized flame tongues, radiating halo rings, charcoal and orange palette, light-leak film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "David Production Fire Force look (2019): white-hot core flames with orange halos, fire brigades in heavy soot-stained uniforms, gothic cathedral architecture and fluid flame effects animation. Carry it through White-core flames, soot-stained brigades, gothic cathedrals, fluid fire effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-125',
-    name: 'Hazard-Orange Monster Response Cel',
-    displayName: 'Hazard-Orange Monster Response Cel',
+    name: 'Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel',
+    displayName: 'Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel',
     styleAnchors: [
-      'Hazard-Orange Monster Response Cel',
+      'Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel',
       'Kaiju No. 8 - Civic Monster Response Unit',
     ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered defense suit, glowing monster core, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered defense suit, glowing monster core, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures.',
+        'Production I.G Kaiju No. 8 look (2024): civic monster cleanup crews, hazard-orange uniforms, colossal CG-textured kaiju carcasses in cities and bright procedural action.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'High-visibility yellow and warm orange against deep blue-grey and pale neutral.',
-      lighting_and_shadow: 'Even daylight, pale highlights and clearly separated shadow shapes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean modern designs, tired adult workers in hazard gear, helmets and utility belts, beside enormous creature bodies. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hazard orange, city concrete grey, kaiju green and steel blue.',
+      lighting_and_shadow:
+        'Bright overcast daylight with floodlights on monster carcasses at night.',
       texture_and_material:
-        'Matte color blocks, panel seams and rivets, fine grain only in the darks.',
+        'Clean digital cel with textured monster hides and industrial equipment.',
       camera_and_composition:
-        'Keep the requested framing; wide clean frames with grid intervals that make scale measurable.',
-      atmosphere_and_mood: 'Measured resilience and calm procedure under threat.',
-      rendering_and_quality:
-        'Stable silhouettes, crisp machine edges and controlled color blocks without chaos.',
-      key_features:
-        'hi-vis orange and yellow equipment; grid tick scale marks; sturdy dark contour; matte blue-grey; wide procedural framing',
+        'Tiny crews beside colossal carcasses, low angles and procedural wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty civic resilience.',
+      rendering_and_quality: 'Polished Production I.G frame with enormous monster scale.',
+      key_features: 'Hazard orange crews; colossal kaiju carcasses; civic cleanup; city scale',
       creative_brief:
-        "Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures. Carry it through hi-vis orange and yellow equipment, grid tick scale marks, sturdy dark contour, matte blue-grey, wide procedural framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Kaiju No. 8 look (2024): civic monster cleanup crews, hazard-orange uniforms, colossal CG-textured kaiju carcasses in cities and bright procedural action. Carry it through Hazard orange crews, colossal kaiju carcasses, civic cleanup, city scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-126',
-    name: 'Acid Occult Color-Burst Smear',
-    displayName: 'Acid Occult Color-Burst Smear',
-    styleAnchors: ['Acid Occult Color-Burst Smear', 'Dandadan - Paranormal Turbo Romance Brawl'],
+    name: 'Dandadan Science SARU - Acid Occult Color-Burst Smear',
+    displayName: 'Dandadan Science SARU - Acid Occult Color-Burst Smear',
+    styleAnchors: [
+      'Dandadan Science SARU - Acid Occult Color-Burst Smear',
+      'Dandadan - Paranormal Turbo Romance Brawl',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a boy with glasses possessed by a ball-shaped spirit, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion.',
+        'Science SARU Dandadan look (2024): acid neon color bursts, psychedelic occult battles, rubbery smear animation, grotesque yokai and aliens, and romantic comedy energy.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Dark ink ground with teal, hot pink and lime bursts; the palette flips only inside the effect zone.',
-      lighting_and_shadow: 'Opposed bright accents and sharp shadow cuts, no literal glow source.',
-      texture_and_material:
-        'Clean cel with mottled translucent color regions; smears as streaked, melted shapes.',
-      camera_and_composition:
-        'Keep the requested framing; gather contrasting color rhythms around the focal area and leave room to breathe.',
-      atmosphere_and_mood:
-        'Buoyant surprise and romance-tinged chaos, color flipping with every startled beat.',
-      rendering_and_quality: 'Flexible contour, vivid color collision and controlled smear marks.',
-      key_features:
-        'acid teal, hot pink and lime; melting smear frames; doubled reaction lines; elastic contour; palette flips',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Dandadan designs, expressive faces, school or casual clothes, and occult creatures with grotesque glowing features. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Acid green, hot magenta, electric blue and black backgrounds.',
+      lighting_and_shadow:
+        'Psychedelic color-burst light, glowing occult auras and neon flashes cutting through darkness.',
+      texture_and_material: 'Rubbery smear frames, flat neon color and energetic lines.',
+      camera_and_composition: 'Wild spinning action, extreme perspective and comedic close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with frantic occult romance.',
+      rendering_and_quality: 'Explosive Science SARU frame with neon smear animation.',
+      key_features: 'Acid neon bursts; smear animation; occult creatures; frantic comedy',
       creative_brief:
-        "Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion. Carry it through acid teal, hot pink and lime, melting smear frames, doubled reaction lines, elastic contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Science SARU Dandadan look (2024): acid neon color bursts, psychedelic occult battles, rubbery smear animation, grotesque yokai and aliens, and romantic comedy energy. Carry it through Acid neon bursts, smear animation, occult creatures, frantic comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-127',
-    name: 'Toxic Flower Etched Ink',
-    displayName: 'Toxic Flower Etched Ink',
-    styleAnchors: ['Toxic Flower Etched Ink', "Hell's Paradise - Poison Garden Executioner"],
+    name: 'Yuji Kaku - Toxic Flower Etched Ink',
+    displayName: 'Yuji Kaku - Toxic Flower Etched Ink',
+    styleAnchors: [
+      'Yuji Kaku - Toxic Flower Etched Ink',
+      "Hell's Paradise - Poison Garden Executioner",
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, white-robed shaved-head executioner, lotus-faced statue, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, white-robed shaved-head executioner, lotus-faced statue, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows.',
+        "Yuji Kaku Hell's Paradise manga look: finely etched ink with lush toxic flora, uncanny flower-bodied creatures, a paradise island of beauty and dread.",
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kaku designs, lean ninja and executioner figures, calm faces and period clothing amid strange blooming creatures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Muted jade, chalk and dark wine, with poison-pastel petals of lilac and coral.',
-      lighting_and_shadow: 'Low-key shadow fields, dappled small pale highlights under foliage.',
-      texture_and_material:
-        'Dry ink grain with fine crosshatching in selected shadows; petals smooth and waxy.',
+        'Black ink with fine tone, and in color: toxic magenta, jade green and pale gold.',
+      lighting_and_shadow: 'Soft eerie jungle light filtered through giant petals.',
+      texture_and_material: 'Fine etched pen line, delicate floral detail and organic hatching.',
       camera_and_composition:
-        'Keep the requested framing; layered shallow planes of foliage frame a clear focal path.',
-      atmosphere_and_mood:
-        'Beautiful menace, ornate and watchful, lovely petals hiding a quiet threat.',
-      rendering_and_quality:
-        'Fine etched detail, quiet dark values and carefully limited pastel accents.',
-      key_features:
-        'fine etched contour; poison-pastel flowers; jade, chalk and wine; dry crosshatch shadows; foliage framing planes',
+        'Lush jungle compositions with small figures surrounded by uncanny flowers.',
+      atmosphere_and_mood: 'Keep the requested mood with beautiful toxic dread.',
+      rendering_and_quality: 'Delicate etched manga illustration with lush uncanny flora.',
+      key_features: 'Yuji Kaku etched ink; toxic flowers; paradise dread; flower-bodied creatures',
       creative_brief:
-        "Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows. Carry it through fine etched contour, poison-pastel flowers, jade, chalk and wine, dry crosshatch shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yuji Kaku Hell's Paradise manga look: finely etched ink with lush toxic flora, uncanny flower-bodied creatures, a paradise island of beauty and dread. Carry it through Yuji Kaku etched ink, toxic flowers, paradise dread, flower-bodied creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-038',
-    name: 'Psychedelic Psychic Minimalism',
-    displayName: 'Psychic Minimalist Action',
-    styleAnchors: ['Psychedelic Psychic Minimalism'],
+    name: 'ONE - Psychedelic Psychic Minimalism',
+    displayName: 'ONE - Psychedelic Psychic Minimalism',
+    styleAnchors: ['ONE - Psychedelic Psychic Minimalism'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bowl-cut boy in a black school uniform, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure.',
+        'ONE original manga look as in Mob Psycho 100: crude wobbly amateur linework, minimal blank faces, empty white spaces and sudden psychic energy scribbles.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Airy pastels, mostly paper white, with one small acid yellow-green accent.',
-      lighting_and_shadow: 'Soft flat values and pale, lightly drawn edges; almost no cast shadow.',
-      texture_and_material:
-        'Pencil grain under irregular translucent washes that stop short of the lines.',
-      camera_and_composition:
-        'Keep the requested framing; leave wide empty space and keep the few warped shapes near the focal area.',
-      atmosphere_and_mood:
-        'Quiet unease and introspection, pressure felt in the empty space more than seen.',
-      rendering_and_quality:
-        'Airy hand-drawn marks, sparse distortion and a large share of untouched paper.',
-      key_features:
-        'searching pencil contours; wide blank space; subtly warped peripheral shapes; airy pastels; acid yellow-green accent',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with ONE crude simplicity, bowl haircuts, blank dot eyes, simple bodies and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink and white paper with rough scribbled tone.',
+      lighting_and_shadow: 'No modeled light, only scribbled energy lines and blank white glare.',
+      texture_and_material: 'Wobbly amateurish pen lines, rough scribbles and blank space.',
+      camera_and_composition: 'Flat simple panels that erupt into chaotic energy scribbles.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan psychic weirdness.',
+      rendering_and_quality: 'Crude charming manga illustration with explosive scribble energy.',
+      key_features: 'ONE crude line; blank faces; empty space; psychic scribbles',
       creative_brief:
-        "Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure. Carry it through searching pencil contours, wide blank space, subtly warped peripheral shapes, airy pastels, acid yellow-green accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "ONE original manga look as in Mob Psycho 100: crude wobbly amateur linework, minimal blank faces, empty white spaces and sudden psychic energy scribbles. Carry it through ONE crude line, blank faces, empty space, psychic scribbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-130',
-    name: 'Paint-on-Glass Surge Burst',
-    displayName: 'Paint-on-Glass Surge Burst',
-    styleAnchors: ['Paint-on-Glass Surge Burst', 'Mob Psycho 100 - Psychic Paint-Surge Meltdown'],
+    name: 'Mob Psycho 100 BONES - Paint-on-Glass Surge Burst',
+    displayName: 'Mob Psycho 100 BONES - Paint-on-Glass Surge Burst',
+    styleAnchors: [
+      'Mob Psycho 100 BONES - Paint-on-Glass Surge Burst',
+      'Mob Psycho 100 - Psychic Paint-Surge Meltdown',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bowl-cut boy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bowl-cut boy in a black school uniform, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bowl-cut boy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures.',
+        'BONES Mob Psycho 100 look (2016): simple rounded ONE designs animated with explosive sakuga, paint-on-glass psychic bursts in pink and cyan, and rich hand-painted surges.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Acid pink, yellow-green and cyan against deep indigo; figures in plain muted cel color.',
-      lighting_and_shadow:
-        'Flat intense color with rough unlit edges; the paint itself reads as the light.',
-      texture_and_material: 'Rough pencil, dry brush, wet oil smears and thumb-smudged paint.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with simple rounded designs, bowl-like hair and dot eyes, erupting into rich painted psychic energy. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel pink, cyan, lemon and deep violet surges on muted city tones.',
+      lighting_and_shadow: 'Glowing psychic surges painting the whole frame with color.',
+      texture_and_material:
+        'Paint-on-glass animation textures, smeared brushstrokes and simple outlines.',
       camera_and_composition:
-        'Keep the requested framing; clear focal zones with turbulent paint gathered around them.',
-      atmosphere_and_mood:
-        'Candid emotional overload breaking through calm, feeling spilling out as raw paint.',
+        'Explosive compositions that burst outward from the center, alternating with quiet deadpan framing.',
+      atmosphere_and_mood: 'Keep the requested mood with overflowing emotional surge.',
       rendering_and_quality:
-        'Raw paint crossings and acidic bursts while the figure silhouette stays sturdy and readable.',
-      key_features:
-        'paint-on-glass smears; thumb-smudged oil strokes; acid pink, lime and cyan; deep indigo ground; plain sturdy cel figures',
+        'Rich BONES television frame with hand-painted paint-on-glass psychic animation.',
+      key_features: 'Paint-on-glass bursts; simple rounded designs; pink and cyan surge; sakuga',
       creative_brief:
-        "Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures. Carry it through paint-on-glass smears, thumb-smudged oil strokes, acid pink, lime and cyan, deep indigo ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "BONES Mob Psycho 100 look (2016): simple rounded ONE designs animated with explosive sakuga, paint-on-glass psychic bursts in pink and cyan, and rich hand-painted surges. Carry it through Paint-on-glass bursts, simple rounded designs, pink and cyan surge, sakuga. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-137',
-    name: 'Chalk-Schematic Inventor Cel',
-    displayName: 'Chalk-Schematic Inventor Cel',
-    styleAnchors: ['Chalk-Schematic Inventor Cel', 'Dr. Stone - Science Kingdom Action Blueprint'],
+    name: 'Boichi - Chalk-Schematic Inventor Cel',
+    displayName: 'Boichi - Chalk-Schematic Inventor Cel',
+    styleAnchors: [
+      'Boichi - Chalk-Schematic Inventor Cel',
+      'Dr. Stone - Science Kingdom Action Blueprint',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, stone crack lines on the face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a spiky green-tipped scientist with stone crack lines on the face, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, stone crack lines on the face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Inventor adventure anime: clean cel figures overlaid with faint chalk schematic strokes, construction lines, cross-sections, arcs and dimension ticks without numbers.',
+        'Boichi manga art as in Dr. Stone: hyper-detailed realistic rendering, handsome dramatic faces, dense hatching, scientific diagrams and inventions drawn with engineering precision.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Mineral green, chalk white, warm mineral gold and dark ink.',
-      lighting_and_shadow:
-        'Clear pale highlights and stable dark value anchors; chalk lines stay unlit and flat.',
-      texture_and_material: 'Chalky dusty strokes over smooth cel fields, lightly granular color.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Boichi realism, sharp handsome faces, detailed hair strands, muscular builds and makeshift inventor gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Black ink with dense tone, and in color: chalkboard green, parchment and bright sky.',
+      lighting_and_shadow: 'Dramatic sunlight and triumphant glowing highlights on inventions.',
+      texture_and_material: 'Dense detailed hatching, schematic chalk lines and diagram overlays.',
       camera_and_composition:
-        'Keep the requested framing; diagram-like layered spacing with open margins for the schematic lines.',
-      atmosphere_and_mood:
-        'Practical optimism and restless curiosity, every problem already half sketched into a solution.',
+        'Triumphant low angles with schematic overlays and invention close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with triumphant scientific ingenuity.',
       rendering_and_quality:
-        'Legible construction lines, mineral color and restrained chalk texture, never a readable formula.',
-      key_features:
-        'chalk schematic overlay; unnumbered dimension ticks; mineral green and chalk white; clean cel figures; open diagram margins',
+        'Hyper-detailed manga illustration with scientific diagram overlays and heroic polish.',
+      key_features: 'Boichi detail; schematic overlays; inventions; triumphant poses',
       creative_brief:
-        "Inventor adventure anime: clean cel figures overlaid with faint chalk schematic strokes, construction lines, cross-sections, arcs and dimension ticks without numbers. Carry it through chalk schematic overlay, unnumbered dimension ticks, mineral green and chalk white, clean cel figures, open diagram margins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Boichi manga art as in Dr. Stone: hyper-detailed realistic rendering, handsome dramatic faces, dense hatching, scientific diagrams and inventions drawn with engineering precision. Carry it through Boichi detail, schematic overlays, inventions, triumphant poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-031',
-    name: 'Painterly Blade Fantasy',
+    name: 'Mo Dao Zu Shi - Painterly Blade Fantasy',
+    displayName: 'Mo Dao Zu Shi - Painterly Blade Fantasy',
+    styleAnchors: ['Mo Dao Zu Shi - Painterly Blade Fantasy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes.',
+        'B.CMAY PICTURES Mo Dao Zu Shi donghua look: painterly xianxia fantasy, flowing silk robes and sleeves, ink-wash mountains, jade and white palettes and graceful sword flight.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Garnet, jade and lapis jewel accents on warm pale paper neutrals, with dark ink.',
-      lighting_and_shadow:
-        'Soft luminous edges and grouped cel shadows; washes glow where paper shows through.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant cultivator designs, long flowing hair, layered silk robes and graceful floating poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Jade green, snow white, ink grey and plum-blossom pink.',
+      lighting_and_shadow: 'Soft misty mountain light and glowing spiritual effects.',
       texture_and_material:
-        'Wet-in-wet bleeds, bloom rings at wash edges and dry-brush flicks at stroke ends.',
-      camera_and_composition:
-        'Keep the requested framing; choreographed curves balanced by open paper margins.',
-      atmosphere_and_mood:
-        'Graceful intensity and ceremonial poise, strength expressed as a single flowing brush gesture.',
+        'Painterly digital backgrounds like ink-wash scrolls, flowing silk and petals.',
+      camera_and_composition: 'Graceful sweeping shots over misty peaks and flowing sleeve arcs.',
+      atmosphere_and_mood: 'Keep the requested mood with graceful wistful fantasy.',
       rendering_and_quality:
-        'Broad color washes, controlled ornament and smooth calligraphic edges.',
-      key_features:
-        'calligraphic sumi strokes; wet jewel-color washes; bloom rings; open paper margins; dry-brush flicks',
+        'Elegant painterly donghua frame with ink-wash scroll backgrounds and flowing silk.',
+      key_features: 'Xianxia silk robes; ink-wash mountains; jade and white; graceful flight',
       creative_brief:
-        "Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes. Carry it through calligraphic sumi strokes, wet jewel-color washes, bloom rings, open paper margins, dry-brush flicks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "B.CMAY PICTURES Mo Dao Zu Shi donghua look: painterly xianxia fantasy, flowing silk robes and sleeves, ink-wash mountains, jade and white palettes and graceful sword flight. Carry it through Xianxia silk robes, ink-wash mountains, jade and white, graceful flight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-033',
-    name: 'Chaotic Splatter Action',
-    displayName: 'Splatter Punk Action',
-    styleAnchors: ['Chaotic Splatter Action'],
+    name: 'Tatsuki Fujimoto - Chaotic Splatter Action',
+    displayName: 'Tatsuki Fujimoto - Chaotic Splatter Action',
+    styleAnchors: ['Tatsuki Fujimoto - Chaotic Splatter Action'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a chainsaw-headed devil hunter, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, named character likeness, weapon-first composition, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red.',
+        'Tatsuki Fujimoto manga look as in Chainsaw Man and Fire Punch: loose chaotic ink, cinematic paneling, deadpan absurdity, splattered black and sudden brutal action.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Saturated red, black and warm paper, with one cool teal accent.',
-      lighting_and_shadow: 'Flat high-contrast blocks with only a few white cuts.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujimoto designs, scruffy plain faces, loose sketchy lines, casual clothes and absurd deadpan expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink and splatter, grey tone and stark white space.',
+      lighting_and_shadow: 'Flat cinematic light with blown-out whites and heavy black splatter.',
       texture_and_material:
-        'Ink spatter, halftone dots and coarse screen texture with slight registration slip.',
-      camera_and_composition:
-        'Keep the requested framing; dense poster balance around an off-center focal mass with clean outer margins.',
-      atmosphere_and_mood:
-        'Unruly comedy and sudden surprise, loud and messy like a punk gig flyer.',
-      rendering_and_quality: 'Rough printed marks, bold flat shapes and a clear poster rhythm.',
-      key_features:
-        'screen-print poster look; ink splatter pattern; off-register red; scratchy heavy contour; warm paper ground',
+        'Loose scratchy ink, heavy black splatter, rough tone and blown-out white paper.',
+      camera_and_composition: 'Cinematic film-like panels, deadpan wides and chaotic action.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan chaotic brutality.',
+      rendering_and_quality:
+        'Loose cinematic manga illustration with chaotic energy and deadpan timing.',
+      key_features: 'Fujimoto loose ink; cinematic panels; deadpan absurdity; splatter',
       creative_brief:
-        "Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red. Carry it through screen-print poster look, ink splatter pattern, off-register red, scratchy heavy contour, warm paper ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tatsuki Fujimoto manga look as in Chainsaw Man and Fire Punch: loose chaotic ink, cinematic paneling, deadpan absurdity, splattered black and sudden brutal action. Carry it through Fujimoto loose ink, cinematic panels, deadpan absurdity, splatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-122',
-    name: 'Muted Cinematic Grime Frenzy',
-    displayName: 'Muted Cinematic Grime Frenzy',
-    styleAnchors: ['Muted Cinematic Grime Frenzy', 'Chainsaw Man - Filthy Devil-Hunter Frenzy'],
+    name: 'Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy',
+    displayName: 'Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy',
+    styleAnchors: [
+      'Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy',
+      'Chainsaw Man - Filthy Devil-Hunter Frenzy',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, blood spray, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a chainsaw-headed devil hunter, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks.',
+        'MAPPA Chainsaw Man look (2022): muted cinematic color grading, film-like camera work, grimy realistic Tokyo backgrounds and sudden frenzied action.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Soot grey, dull rust and pale concrete, with fluorescent yellow-green streak accents.',
-      lighting_and_shadow:
-        'Motivated practical light from overhead tubes or windows with soft grounded falloff.',
-      texture_and_material:
-        'Grime, scuffs and subtle film grain; lens-like shallow depth of field.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded designs, tired faces, messy hair, suits or casual clothes, in realistic proportions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted desaturated greys, dull greens and cold blues with red accents.',
+      lighting_and_shadow: 'Naturalistic cinematic light, overcast grime and harsh streetlights.',
+      texture_and_material: 'Realistic painted backgrounds, restrained cel and film grain.',
       camera_and_composition:
-        'Keep the requested content; handheld off-center framing, tight crops and shallow depth.',
-      atmosphere_and_mood:
-        'Worn tension and dry absurdity, exhausted people in grimy places doing strange things.',
+        'Live-action-like lens choices, shallow focus and handheld-feeling frames in real streets.',
+      atmosphere_and_mood: 'Keep the requested mood with grimy frenzied realism.',
       rendering_and_quality:
-        'Restrained cinematic finish, grain confined to shadows, main silhouette always clear.',
-      key_features:
-        'desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth',
+        'Cinematic MAPPA television frame with muted film grading and grounded realism.',
+      key_features: 'MAPPA cinematic grading; muted palette; grimy Tokyo; film camera',
       creative_brief:
-        "Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks. Carry it through desaturated film grade, handheld off-center framing, thin precise lines, fluorescent streak accents, grime and shallow depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "MAPPA Chainsaw Man look (2022): muted cinematic color grading, film-like camera work, grimy realistic Tokyo backgrounds and sudden frenzied action. Carry it through MAPPA cinematic grading, muted palette, grimy Tokyo, film camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-025',
-    name: 'Shadow Notebook Thriller',
-    displayName: 'Psychological Notebook Noir',
-    styleAnchors: ['Shadow Notebook Thriller'],
+    name: 'Takeshi Obata - Shadow Notebook Thriller',
+    displayName: 'Takeshi Obata - Shadow Notebook Thriller',
+    styleAnchors: ['Takeshi Obata - Shadow Notebook Thriller'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, red apple motif, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a black notebook with a title, a winged shinigami with a wide grin, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, red apple motif, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent.',
+        'Takeshi Obata manga art as in Death Note: elegant realistic line, gothic shadows, refined fashionable characters, and tense intellectual thriller staging.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Ink black and bone white with a single restrained vermilion accent.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Obata elegance, slender refined figures, sharp intelligent eyes, detailed hair and fashionable clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Black ink with elegant tone, and in color: deep red, black and gothic purple.',
       lighting_and_shadow:
-        'Firm black-to-white shadow blocks with minimal midtone; faces split by hard light.',
-      texture_and_material: 'Dry matte paper grain over otherwise clean flat fields.',
+        'Dramatic chiaroscuro with long gothic shadows falling across calm faces.',
+      texture_and_material:
+        'Refined precise pen line, careful hair strands and detailed rendering of clothes.',
       camera_and_composition:
-        'Keep the requested content; static asymmetric balance at a steep Dutch or overhead angle, one isolated accent.',
-      atmosphere_and_mood:
-        'Cerebral suspense and controlled stillness, every shadow suggesting a calculation in progress.',
-      rendering_and_quality: 'Crisp edges, limited color, and quiet fields around the accent.',
-      key_features:
-        'gothic chiaroscuro; fine deliberate black stroke; bone-white fields; single vermilion accent; steep dramatic angle',
+        'Tense intellectual framing, dramatic close-ups and symbolic compositions.',
+      atmosphere_and_mood: 'Keep the requested mood with cold intellectual tension.',
+      rendering_and_quality: 'Elegant precise manga illustration with gothic thriller mood.',
+      key_features: 'Obata elegance; gothic shadows; intellectual tension; refined line',
       creative_brief:
-        "Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent. Carry it through gothic chiaroscuro, fine deliberate black stroke, bone-white fields, single vermilion accent, steep dramatic angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Takeshi Obata manga art as in Death Note: elegant realistic line, gothic shadows, refined fashionable characters, and tense intellectual thriller staging. Carry it through Obata elegance, gothic shadows, intellectual tension, refined line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-148',
-    name: 'Amber Jazz-Age Ensemble Cel',
-    displayName: 'Amber Jazz-Age Ensemble Cel',
-    styleAnchors: ['Amber Jazz-Age Ensemble Cel', 'Baccano! - Jazz Railcrime Ensemble'],
+    name: 'Baccano! Brains Base - Amber Jazz-Age Ensemble Cel',
+    displayName: 'Baccano! Brains Base - Amber Jazz-Age Ensemble Cel',
+    styleAnchors: [
+      'Baccano! Brains Base - Amber Jazz-Age Ensemble Cel',
+      'Baccano! - Jazz Railcrime Ensemble',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain.',
+        'Brains Base Baccano! look (2007): 1930s Prohibition America, amber sepia-tinted palettes, stylish ensemble cast, trains, speakeasies and jazzy chaotic crosscutting.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Brass gold, amber, dark brown and ink black, with cream shirt fronts.',
-      lighting_and_shadow: 'Warm lamplight edge highlights against crisp dark value blocks.',
-      texture_and_material:
-        'Subtle printed grain in flat color fields; pinstripes and felt drawn as sparse lines.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Baccano designs, sharp stylish faces, 1930s suits, fedoras, flapper dresses and lively ensemble poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Amber sepia, jazz-age gold, deep burgundy and night blue.',
+      lighting_and_shadow: 'Warm speakeasy light, train carriage glow and moonlit rooftops.',
+      texture_and_material: 'Clean digital cel with sepia grading and film-like softness.',
       camera_and_composition:
-        'Keep the requested framing; an irregular, syncopated rhythm of overlapping figures around the focal forms.',
-      atmosphere_and_mood:
-        'Buoyant disorder and dry wit, many stories colliding to one swinging beat.',
-      rendering_and_quality:
-        'Amber-black contrast, overlapping shapes and rhythm carried by spacing.',
-      key_features:
-        'overlapping ensemble clusters; brass and amber palette; period tailoring; printed grain; syncopated rhythm',
+        'Crowded ensemble compositions and crosscut chaotic scenes on trains and in ballrooms.',
+      atmosphere_and_mood: 'Keep the requested mood with rollicking jazz-age chaos.',
+      rendering_and_quality: 'Stylish 2007 Brains Base frame with amber period glow.',
+      key_features: 'Baccano jazz age; amber sepia; 1930s ensemble; trains and speakeasies',
       creative_brief:
-        "Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain. Carry it through overlapping ensemble clusters, brass and amber palette, period tailoring, printed grain, syncopated rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Brains Base Baccano! look (2007): 1930s Prohibition America, amber sepia-tinted palettes, stylish ensemble cast, trains, speakeasies and jazzy chaotic crosscutting. Carry it through Baccano jazz age, amber sepia, 1930s ensemble, trains and speakeasies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-021',
-    name: 'Teal-Orange Sakuga Smear',
-    displayName: 'Teal-Orange Sakuga Smear',
-    styleAnchors: ['Teal-Orange Sakuga Smear', 'Headband Ninja Journey'],
+    name: 'Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear',
+    displayName: 'Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear',
+    styleAnchors: ['Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear', 'Headband Ninja Journey'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'an orange jumpsuit ninja with whisker marks, a leaf headband emblem, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion.',
+        'Studio Pierrot Naruto Shippuden sakuga look: Shingo Yamashita style effects, loose painterly smear frames, teal and orange palettes, and flying ninja across trees and rooftops.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Clear teal and warm orange against ink-dark and paper-light neutrals.',
-      lighting_and_shadow: 'Golden-hour hard two-step shadows with small white edge cuts.',
-      texture_and_material:
-        'Smooth cel flats with sparse dry-ink grain; smears drawn as stretched, tapered shapes.',
-      camera_and_composition:
-        'Keep the requested framing; open diagonal flow with rising arcs and unblocked negative space.',
-      atmosphere_and_mood:
-        'Buoyant resolve and forward curiosity, the road ahead always open and bright.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kishimoto-derived designs, spiky hair, headbands, sandals and ninja gear in loose sakuga motion. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Teal shadows, orange highlights and warm evening skies.',
+      lighting_and_shadow: 'Warm sunset light, glowing chakra effects and teal shadows.',
+      texture_and_material: 'Loose smear frames, painterly effect animation and speed lines.',
+      camera_and_composition: 'Fast tracking through trees, dynamic leaps and smear-frame action.',
+      atmosphere_and_mood: 'Keep the requested mood with restless determined energy.',
       rendering_and_quality:
-        'Crisp silhouettes and flat fills, with smears and trails only on motion already present.',
-      key_features:
-        'stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow',
+        'Energetic Pierrot sakuga frame with loose teal-orange painterly effects.',
+      key_features: 'Pierrot sakuga smears; teal and orange; ninja leaps; loose painterly effects',
       creative_brief:
-        "Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion. Carry it through stretched limb smear frames, tapered ink contour, curling dust and leaf trails, teal and orange, two-step shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Pierrot Naruto Shippuden sakuga look: Shingo Yamashita style effects, loose painterly smear frames, teal and orange palettes, and flying ninja across trees and rooftops. Carry it through Pierrot sakuga smears, teal and orange, ninja leaps, loose painterly effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-022',
-    name: 'Urban Spirit Blade',
-    displayName: 'Urban Spirit Swordplay',
-    styleAnchors: ['Urban Spirit Blade'],
+    name: 'Tite Kubo - Urban Spirit Blade',
+    displayName: 'Tite Kubo - Urban Spirit Blade',
+    styleAnchors: ['Tite Kubo - Urban Spirit Blade'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'black shihakusho robes with a giant cleaver sword, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space.',
+        'Tite Kubo Bleach manga look: elegant elongated fashion figures, vast blank white space, dramatic cold poses, clean confident lines and stylish sword silhouettes.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Monochrome black and ivory with a single restrained violet accent.',
-      lighting_and_shadow:
-        'Severe cel shadows and a narrow violet-white rim; backgrounds often dropped to flat light.',
-      texture_and_material: 'Matte dark fields offset by translucent ink-like bands.',
-      camera_and_composition:
-        'Keep the requested framing; vertical balance, wide negative space and one curving visual path.',
-      atmosphere_and_mood:
-        'Cool composure with latent tension, elegance held like a breath before moving.',
-      rendering_and_quality: 'Precise contours, sharp value blocks and very few luminous accents.',
-      key_features:
-        'elongated fashion-plate proportions; blank ivory negative space; stark black-white division; single violet accent; fine gapped contour',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kubo elegance, tall slender bodies, sharp faces, fashionable robes and coats and cool detached poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Mostly white space and black ink, with minimal tone.',
+      lighting_and_shadow: 'Bright blank white light and sharp black shadows.',
+      texture_and_material: 'Clean confident line, sparse detail and flat black fills.',
+      camera_and_composition: 'Minimal compositions with figures floating in white space.',
+      atmosphere_and_mood: 'Keep the requested mood with cool elegant detachment.',
+      rendering_and_quality:
+        'Elegant minimal manga illustration with fashion poise and vast empty whites.',
+      key_features: 'Tite Kubo white space; elongated elegance; cool poses; clean line',
       creative_brief:
-        "Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space. Carry it through elongated fashion-plate proportions, blank ivory negative space, stark black-white division, single violet accent, fine gapped contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tite Kubo Bleach manga look: elegant elongated fashion figures, vast blank white space, dramatic cold poses, clean confident lines and stylish sword silhouettes. Carry it through Tite Kubo white space, elongated elegance, cool poses, clean line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-023',
-    name: 'Elastic Big-Grin Adventure Cel',
-    displayName: 'Elastic Big-Grin Adventure Cel',
-    styleAnchors: ['Elastic Big-Grin Adventure Cel', 'Grand Pirate Adventure'],
+    name: 'Eiichiro Oda - Elastic Big-Grin Adventure Cel',
+    displayName: 'Eiichiro Oda - Elastic Big-Grin Adventure Cel',
+    styleAnchors: ['Eiichiro Oda - Elastic Big-Grin Adventure Cel', 'Grand Pirate Adventure'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, straw hat with red open vest, stretching rubber punch, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a straw hat on a boy with a scar under the eye, a skull flag with a straw hat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, straw hat with red open vest, stretching rubber punch, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color.',
+        'Eiichiro Oda One Piece look: rubbery exaggerated anatomy, huge toothy grins, wildly varied character silhouettes, bright ocean adventure and dense joyful detail.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Bright ocean blue, warm red and gold, clean white and dark outlines.',
-      lighting_and_shadow: 'High summer sun, broad pale highlights and clear cel shadow groups.',
-      texture_and_material: 'Clean flat color with lightly softened pigment edges.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oda exaggeration, huge grins, long rubbery limbs, wild proportions and bold unique outfits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ocean blue, sunny yellow, bright red and tropical green.',
+      lighting_and_shadow:
+        'Bright tropical sun with bold simple shadows and sparkling ocean reflections.',
+      texture_and_material: 'Bold confident lines, dense background detail and flat bright color.',
       camera_and_composition:
-        'Keep the requested framing; roomy balance, flexible diagonals and generous negative space.',
-      atmosphere_and_mood:
-        'Playful openness and generous momentum, a sunny, big-hearted adventure with room to stretch.',
-      rendering_and_quality: 'Vivid flat colors, legible outlines and little small-scale detail.',
-      key_features:
-        'rubbery exaggerated anatomy; huge grins; bold rounded outlines; ocean blue, red and gold; flexible diagonals',
+        'Wide adventure compositions, big-grin close-ups and crowded ensemble panels.',
+      atmosphere_and_mood: 'Keep the requested mood with joyful boundless adventure.',
+      rendering_and_quality:
+        'Exuberant adventure manga illustration with rubbery exaggeration and dense joyful detail.',
+      key_features: 'Eiichiro Oda exaggeration; big grins; rubbery limbs; ocean adventure',
       creative_brief:
-        "Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color. Carry it through rubbery exaggerated anatomy, huge grins, bold rounded outlines, ocean blue, red and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Eiichiro Oda One Piece look: rubbery exaggerated anatomy, huge toothy grins, wildly varied character silhouettes, bright ocean adventure and dense joyful detail. Carry it through Eiichiro Oda exaggeration, big grins, rubbery limbs, ocean adventure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-028',
-    name: 'Lo-Fi Sword Roadtrip',
-    displayName: 'Lo-Fi Sword Drifter',
-    styleAnchors: ['Lo-Fi Sword Roadtrip'],
+    name: 'Michiko and Hatchin - Lo-Fi Sword Roadtrip',
+    displayName: 'Michiko and Hatchin - Lo-Fi Sword Roadtrip',
+    styleAnchors: ['Michiko and Hatchin - Lo-Fi Sword Roadtrip'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot.',
+        'Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Dusty ochre and sepia against pale cyan sky and deep brown shadow.',
-      lighting_and_shadow: 'Late sun in warm and cool value bands with minimal internal shading.',
-      texture_and_material:
-        'Scratched brush edges over subtle analog grain, with clean resting areas.',
-      camera_and_composition:
-        'Keep the requested framing; off-axis focal weight, broad quiet margins and low wide horizons.',
-      atmosphere_and_mood:
-        'Laid-back confidence on a long road, time moving slowly under a wide sky.',
-      rendering_and_quality: 'Subdued color, visible brush grain and uncluttered silhouettes.',
-      key_features:
-        'dry brush line; dusty ochre and sepia; long low horizons; analog grain; off-axis focal weight',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with lanky loose designs, expressive faces, messy curls, tank tops and road-worn clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sun-bleached ochre, dusty turquoise, faded pink and hot sky blue.',
+      lighting_and_shadow: 'Harsh bright sun, heat haze and warm dusty dusk.',
+      texture_and_material: 'Lo-fi grain, soft cel and painted dusty towns.',
+      camera_and_composition: 'Roadtrip wides, scooter chases and loose candid framing.',
+      atmosphere_and_mood: 'Keep the requested mood with free wandering grit.',
+      rendering_and_quality: 'Lo-fi grainy roadtrip frame with sunny outlaw energy.',
+      key_features: 'Sayo Yamamoto lo-fi; sun-bleached towns; roadtrip freedom; lanky designs',
       creative_brief:
-        "Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot. Carry it through dry brush line, dusty ochre and sepia, long low horizons, analog grain, off-axis focal weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-029',
-    name: 'Chaotic Indie Adolescence',
+    name: 'FLCL - Chaotic Indie Adolescence',
+    displayName: 'FLCL - Chaotic Indie Adolescence',
+    styleAnchors: ['FLCL - Chaotic Indie Adolescence'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a pink-haired woman on a yellow scooter with a bass guitar, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip.',
+        'Gainax FLCL look (2000) with Yoshiyuki Sadamoto designs: chaotic punk energy, manga-panel cutaways, suburban towns, giant robots bursting out and rock-driven editing.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Abrupt complementary color blocks with black and small white breaks.',
-      lighting_and_shadow:
-        'Flat graphic separations with little modelled volume and no soft gradients.',
-      texture_and_material:
-        'Screen-print halftone, paper-cut edges and controlled registration slip.',
-      camera_and_composition:
-        'Keep the requested content; tilted panels of varied size with a clear central reading path.',
-      atmosphere_and_mood: 'Irreverent playfulness and quick shifts in emphasis.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, big expressive eyes, spiky loose hair, casual clothes and exaggerated reactions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Punk pink, lime green, sky blue and suburban beige.',
+      lighting_and_shadow: 'Bright suburban light with sudden flashes and explosions.',
+      texture_and_material: 'Loose energetic cel, manga panel inserts and rough smears.',
+      camera_and_composition: 'Frantic cuts, manga panel layouts and wild angles.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic adolescent rush.',
       rendering_and_quality:
-        'Rough printed edges, deliberate misalignment and legible broad shapes.',
-      key_features:
-        'tilted manga panel cuts; torn overdrawn contour; complementary color blocks; halftone collage; registration slip',
+        'Frenetic 2000 Gainax frame with punk rock energy and manga panel cuts.',
+      key_features: 'FLCL chaos; Sadamoto designs; manga panels; suburban robots',
       creative_brief:
-        "Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip. Carry it through tilted manga panel cuts, torn overdrawn contour, complementary color blocks, halftone collage, registration slip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Gainax FLCL look (2000) with Yoshiyuki Sadamoto designs: chaotic punk energy, manga-panel cutaways, suburban towns, giant robots bursting out and rock-driven editing. Carry it through FLCL chaos, Sadamoto designs, manga panels, suburban robots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-142',
-    name: 'Humid Tropic Grit Cel',
-    displayName: 'Humid Tropic Grit Cel',
-    styleAnchors: ['Humid Tropic Grit Cel', 'Black Lagoon - South Seas Gun-Runner Grit'],
+    name: 'Rei Hiroe - Humid Tropic Grit Cel',
+    displayName: 'Rei Hiroe - Humid Tropic Grit Cel',
+    styleAnchors: [
+      'Rei Hiroe - Humid Tropic Grit Cel',
+      'Black Lagoon - South Seas Gun-Runner Grit',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, twin pistols, gun, torpedo boat, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a woman with twin pistols and a tribal arm tattoo, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, twin pistols, gun, torpedo boat, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces.',
+        'Rei Hiroe Black Lagoon look: sweaty tropical crime, tank tops and tattoos, gunboats in mangrove swamps, heavy detailed guns and gritty Southeast Asian port towns.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Deep slate, faded teal, rust and muted amber, with sharp sweat highlights.',
-      lighting_and_shadow:
-        'Harsh overhead tropical sun, hard low-key shadows and a hazy, washed background.',
-      texture_and_material:
-        'Scuffed ink, soft grain, rust bloom and peeling paint on hard surfaces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hiroe designs, tough sweaty faces, tattoos, tank tops and cargo pants, with detailed firearms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Humid green, sweaty tan, rust brown and turquoise water.',
+      lighting_and_shadow: 'Harsh tropical sun, humid haze and sweat glistening under tin roofs.',
+      texture_and_material: 'Detailed ink line with gritty tone and sweat.',
       camera_and_composition:
-        'Keep the requested framing; compact asymmetric framing with strong diagonals and deep negative space.',
-      atmosphere_and_mood: 'Weathered tension and dry resolve in the heat.',
-      rendering_and_quality: 'Gritty edge texture, grounded values and an uncluttered focal path.',
-      key_features:
-        'sweat-sheen highlights; humid haze; pressure-heavy contour; rust and faded teal; harsh overhead sun',
+        'Speedboat chase compositions through mangroves and gritty close-ups in port towns.',
+      atmosphere_and_mood: 'Keep the requested mood with humid outlaw grit.',
+      rendering_and_quality:
+        'Gritty detailed crime manga illustration with sweaty tropical atmosphere.',
+      key_features: 'Rei Hiroe grit; tropical crime; gunboats; tattoos',
       creative_brief:
-        "Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces. Carry it through sweat-sheen highlights, humid haze, pressure-heavy contour, rust and faded teal, harsh overhead sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Rei Hiroe Black Lagoon look: sweaty tropical crime, tank tops and tattoos, gunboats in mangrove swamps, heavy detailed guns and gritty Southeast Asian port towns. Carry it through Rei Hiroe grit, tropical crime, gunboats, tattoos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-143',
-    name: 'Cold Starfield Night Noir',
-    displayName: 'Cold Starfield Night Noir',
-    styleAnchors: ['Cold Starfield Night Noir', 'Darker than Black - Contract Killer Night Rain'],
+    name: 'Darker than Black BONES - Cold Starfield Night Noir',
+    displayName: 'Darker than Black BONES - Cold Starfield Night Noir',
+    styleAnchors: [
+      'Darker than Black BONES - Cold Starfield Night Noir',
+      'Darker than Black - Contract Killer Night Rain',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures.',
+        'BONES Darker than Black look (2007): cold noir Tokyo nights under a false starfield, contract killers, blue electric abilities and restrained urban melancholy.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone: 'Blue-black and charcoal with narrow cyan highlights and pinpoint stars.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuji Iwahara-derived designs, calm faces, long coats and masked figures in the city night. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Cold starfield blue, black, electric cyan and sodium orange.',
       lighting_and_shadow:
-        'Cool reflected accents against deep shadow, without adding a new light fixture.',
+        'Cold false starlight, blue electric flashes and orange streetlight pools on wet roads.',
       texture_and_material:
-        'Broken reflective highlights and fine surface streaks over matte dark fields.',
-      camera_and_composition:
-        'Keep the requested framing; guarded negative space, off-center balance and a large sky where the view allows.',
-      atmosphere_and_mood:
-        'Lonely secrecy and restrained unease, a quiet city under a sky that feels false.',
-      rendering_and_quality:
-        'Thin cyan line accents, dark reflective values and generous empty space.',
-      key_features:
-        'false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space',
+        'Clean digital cel over painted night cityscapes with cold reflective surfaces.',
+      camera_and_composition: 'Rooftop noir wides and close-ups under the false stars.',
+      atmosphere_and_mood: 'Keep the requested mood with cold melancholy noir.',
+      rendering_and_quality: 'Moody 2007 BONES frame with cold noir palette.',
+      key_features: 'False starfield; cold noir; electric abilities; Tokyo nights',
       creative_brief:
-        "Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures. Carry it through false starfield sky, thin cyan contour threads, blue-black city, glowing cyan edges, guarded negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "BONES Darker than Black look (2007): cold noir Tokyo nights under a false starfield, contract killers, blue electric abilities and restrained urban melancholy. Carry it through False starfield, cold noir, electric abilities, Tokyo nights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-144',
-    name: 'Record-Scratch Stutter Swagger',
-    displayName: 'Record-Scratch Stutter Swagger',
-    styleAnchors: ['Record-Scratch Stutter Swagger', 'Samurai Champloo - Lo-Fi Edo Swagger'],
+    name: 'Samurai Champloo - Record-Scratch Stutter Swagger',
+    displayName: 'Samurai Champloo - Record-Scratch Stutter Swagger',
+    styleAnchors: [
+      'Samurai Champloo - Record-Scratch Stutter Swagger',
+      'Samurai Champloo - Lo-Fi Edo Swagger',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a spiky-haired swordsman in a red kimono, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter.',
+        'Manglobe Samurai Champloo look (2004) by Shinichiro Watanabe: Edo period mixed with hip-hop swagger, record-scratch stutter editing, graffiti touches and Kazuto Nakazawa designs.',
       subject_treatment:
-        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
-      color_and_tone:
-        'Dusty gold, warm brown and subdued blue-grey, with an occasional spray-paint magenta accent.',
-      lighting_and_shadow: 'Soft warm-cool bands with few hard shadow groups.',
-      texture_and_material: 'Fine vinyl-like scratches and dry print grain over warm flats.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakazawa designs, lanky cool figures, messy hair, period clothes mixed with streetwear attitude. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm Edo earth tones with hip-hop graffiti accents.',
+      lighting_and_shadow: 'Warm Edo sun on dusty streets and lantern glow in teahouses at night.',
+      texture_and_material: 'Loose cel with graffiti touches and stuttered freeze-frames.',
       camera_and_composition:
-        'Keep the requested framing; offbeat balance with relaxed weight on one side.',
-      atmosphere_and_mood: 'Unhurried swagger and an easy, syncopated rhythm.',
-      rendering_and_quality:
-        'Warm dusty color, scratch texture and stutter outlines only on moving parts.',
-      key_features:
-        'doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance',
+        'Record-scratch freeze frames, stuttered cuts and low breakdance camera angles.',
+      atmosphere_and_mood: 'Keep the requested mood with cool rhythmic swagger.',
+      rendering_and_quality: 'Stylish 2004 Manglobe television frame with hip-hop editing rhythm.',
+      key_features: 'Champloo hip-hop; record-scratch edits; Edo swagger; Nakazawa designs',
       creative_brief:
-        "Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter. Carry it through doubled offset stutter outlines, vinyl scratch texture, flattened woodblock landscape, dusty gold and brown, offbeat balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Manglobe Samurai Champloo look (2004) by Shinichiro Watanabe: Edo period mixed with hip-hop swagger, record-scratch stutter editing, graffiti touches and Kazuto Nakazawa designs. Carry it through Champloo hip-hop, record-scratch edits, Edo swagger, Nakazawa designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

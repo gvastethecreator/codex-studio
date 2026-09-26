@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-247
 packId: pack_05
-name: Lilac Thorn-Line Chiaroscuro Cel
+name: Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel
 styleAnchors:
-  - Lilac Thorn-Line Chiaroscuro Cel
+  - Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel
   - The Ancient Magus' Bride - Thorn Cottage Enchantment
-displayName: Lilac Thorn-Line Chiaroscuro Cel
+displayName: Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine branching strokes may echo existing contours but must not add plants, a cottage or a garden.
-  color_and_tone: Cool lilac and muted greens against warm cream and deep umber, most of the frame in shadow.
-  lighting_and_shadow: Small warm highlights emerging from cool deep shadow, a soft pool of light around the focal edges.
-  texture_and_material: Fine thorn-like line detail, delicate grain and soft painted color layered in the darks.
-  camera_and_composition: Keep the requested view; dark branching framing values close in around a lit center.
-  atmosphere_and_mood: Romantic and quietly uncanny, beauty with thorns.
-  rendering_and_quality: Detailed contours against softly painted distance, precise focal form and restrained glow.
-  key_features: thorny branching contours; lilac glints; umber chiaroscuro framing; lit center; delicate grain
-  creative_brief: "Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center. Carry it through thorny branching contours, lilac glints, umber chiaroscuro framing, lit center, delicate grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kore Yamazaki The Ancient Magus’ Bride look: British-folklore fantasy, gentle thorn-line ornament, fae creatures, lilac and moss palettes and tender chiaroscuro.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yamazaki designs, gentle faces, red or dark hair, cottage clothes and uncanny fae beings. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lilac, moss green, bone white and soft crimson.
+  lighting_and_shadow: Soft chiaroscuro inside cozy cottages and in misty forest glades.
+  texture_and_material: Fine thorn-line ornament framing figures and soft painterly color.
+  camera_and_composition: Cottage garden and forest compositions filled with small fae creatures.
+  atmosphere_and_mood: Keep the requested mood with tender uncanny enchantment.
+  rendering_and_quality: Tender British-folklore fantasy illustration with uncanny gentleness and thorny ornament.
+  key_features: Kore Yamazaki folklore; thorn lines; fae beings; lilac and moss
+  creative_brief: "Kore Yamazaki The Ancient Magus’ Bride look: British-folklore fantasy, gentle thorn-line ornament, fae creatures, lilac and moss palettes and tender chiaroscuro. Carry it through Kore Yamazaki folklore, thorn lines, fae beings, lilac and moss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a tall figure with an animal skull head
+  - a red-haired girl in a cloak
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -63,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-247.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cottage garden default, flower wall, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a tall figure with an animal skull head, a red-haired girl in a cloak, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cottage garden default, flower wall, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

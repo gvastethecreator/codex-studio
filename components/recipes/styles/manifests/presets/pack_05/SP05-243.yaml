@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-243
 packId: pack_05
-name: Classic OVA Quest Tapestry Style
+name: Record of Lodoss War OVA - Classic OVA Quest Tapestry Style
 styleAnchors:
-  - Classic OVA Quest Tapestry Style
-displayName: Classic OVA Quest Tapestry
+  - Record of Lodoss War OVA - Classic OVA Quest Tapestry Style
+displayName: Record of Lodoss War OVA - Classic OVA Quest Tapestry Style
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures take period anatomy, long limbs, sharp jaws and detailed hair clumps, without copying any canon character or ensemble.
-  color_and_tone: Rich saturated color blocks, warm sunset highlights against cool blue-violet shadows, slightly faded like filmed cels.
-  lighting_and_shadow: Strong painted directional light, a two-tone cel shadow plus an airbrushed highlight band on hair and metal.
-  texture_and_material: Fine analog film grain, faint cel dust and soft color bleed at edges over gouache-painted backgrounds.
-  camera_and_composition: Keep the requested view; foreground and distance are separated by layered color planes like a multiplane camera.
-  atmosphere_and_mood: Cinematic, earnest and epic in the old analog way.
-  rendering_and_quality: Crisp ink contour, broad controlled shading, restrained grain and the slight softness of cels shot on film.
-  key_features: airbrushed highlight bands; hand-painted cel blocks; gouache background boards; film grain and cel dust; long-limbed period anatomy
-  creative_brief: "Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards. Carry it through airbrushed highlight bands, hand-painted cel blocks, gouache background boards, film grain and cel dust, long-limbed period anatomy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Record of Lodoss War OVA look (1990) with Nobuteru Yuki designs: classic tabletop high fantasy, detailed armor, elves and dwarves, painterly castles and tapestry-like grandeur.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nobuteru Yuki designs, elegant elves, sturdy dwarves, detailed plate armor and flowing cloaks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Forest green, royal blue, gold, steel and warm tapestry reds.
+  lighting_and_shadow: Soft painterly fantasy light over forests and dramatic dusk on castles.
+  texture_and_material: Hand-painted cel with painterly castle and forest backgrounds.
+  camera_and_composition: Classic heroic party compositions and grand painted fantasy vistas.
+  atmosphere_and_mood: Keep the requested mood with classic heroic quest.
+  rendering_and_quality: Rich 1990 Madhouse OVA frame with tapestry-like fantasy grandeur.
+  key_features: Lodoss classic fantasy; Nobuteru Yuki elves; detailed armor; tapestry
+  creative_brief: "Madhouse Record of Lodoss War OVA look (1990) with Nobuteru Yuki designs: classic tabletop high fantasy, detailed armor, elves and dwarves, painterly castles and tapestry-like grandeur. Carry it through Lodoss classic fantasy, Nobuteru Yuki elves, detailed armor, tapestry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blonde elf in a green tunic with a circlet
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -68,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-243.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, modern digital bloom, flat vector look, tapestry layout, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blonde elf in a green tunic with a circlet, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, modern digital bloom, flat vector look, tapestry layout, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

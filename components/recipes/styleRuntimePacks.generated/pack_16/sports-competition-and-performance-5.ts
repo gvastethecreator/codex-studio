@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Team orange, black, court honey wood and gym white light.',
       lighting_and_shadow:
         'Bright gym fluorescents, backlit jump peaks and glowing sweat highlights.',
@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Electric blue, black void, neon green eye glow and white lines.',
       lighting_and_shadow: 'Stark black-void backgrounds with glowing eyes and rim-lit bodies.',
       texture_and_material:
@@ -64,12 +64,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Slam Dunk 1993 - Nineties Physical Rivalry'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'a red-haired number ten in a red jersey, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired number ten in a red jersey, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Toei Slam Dunk television look (1993): nineties cel basketball with tall realistic players, sweaty jerseys, hardwood gyms and comic delinquent reactions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Inoue-derived nineties designs, tall athletic bodies, strong jaws, sweat and loose jerseys.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inoue-derived nineties designs, tall athletic bodies, strong jaws, sweat and loose jerseys. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Red and white jerseys, honey hardwood and warm gym light.',
       lighting_and_shadow: 'Warm gym light with simple cel shadows and sweat sparkle.',
       texture_and_material: 'Nineties hand-painted cel, soft grain and painted gym backgrounds.',
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Production I.G Kuroko's Basketball television look (2012): colorful hair teams, glowing zone eyes with light trails, supernatural speed afterimages and glossy courts.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kuroko designs, tall lean players, vivid hair colors, glowing eye trails and jerseys.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kuroko designs, tall lean players, vivid hair colors, glowing eye trails and jerseys. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Vivid team colors, sky blue, red, gold and glossy court reflections.',
       lighting_and_shadow: 'Glowing eye trails, spotlight arenas and lightning-like aura streaks.',
       texture_and_material:
@@ -119,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'TMS Yowamushi Pedal television look (2013) from Wataru Watanabe designs: grimacing climbers, exaggerated sweat and strain, speed lines on steep roads and elastic comedic faces.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Watanabe designs, gangly cyclists, huge grimaces, round glasses, sweat spray and team kits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Watanabe designs, gangly cyclists, huge grimaces, round glasses, sweat spray and team kits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Team kit yellow, road grey, mountain green and sky blue.',
       lighting_and_shadow: 'Bright mountain daylight, heat shimmer and sweat highlights.',
       texture_and_material:
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Madhouse Ace of Diamond television look (2013) from Yuji Terajima designs: realistic high school baseball, dusty mound duels, heat shimmer, precise pitching mechanics and team bonds.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Terajima designs, sturdy athletic bodies, caps, dirt-streaked uniforms and focused eyes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Terajima designs, sturdy athletic bodies, caps, dirt-streaked uniforms and focused eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dusty diamond tan, grass green, sky blue and sweat-white uniforms.',
       lighting_and_shadow: 'Blazing summer sun, heat shimmer and long stadium shadows.',
       texture_and_material:
@@ -171,7 +171,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Takuya Mitsuda Major look: long-running baseball saga art with simple clean designs, father-and-son resolve, sunset practice fields and generational grit.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Mitsuda designs, simple clean faces, sturdy bodies and practice uniforms across generations.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mitsuda designs, simple clean faces, sturdy bodies and practice uniforms across generations. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sunset orange, practice dirt brown, grass green and cap navy.',
       lighting_and_shadow: 'Warm sunset practice light with long shadows and dust.',
       texture_and_material:
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kyoto Animation Free! television look (2013) with Futoshi Nishiya designs: glossy detailed water, caustic light, lean swimmers and sparkling pool reflections.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nishiya designs, lean muscular swimmers, wet hair, glossy eyes and goggles.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nishiya designs, lean muscular swimmers, wet hair, glossy eyes and goggles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pool aqua, caustic white, sunset pink and deep blue.',
       lighting_and_shadow:
         'Caustic underwater light, sparkling surface reflections and sunset glow.',
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night navy, streetlight orange, winter grey and breath white.',
       lighting_and_shadow: 'Streetlight pools on empty roads, dawn glow and cold air haze.',
       texture_and_material:
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'BONES Sk8 the Infinity television look (2021): Okinawa neon skate nights, colorful trick lines tracing curves, stylish designs and CG ramps.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Sk8 designs, stylish streetwear, lean bodies, vivid hair and skateboards.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sk8 designs, stylish streetwear, lean bodies, vivid hair and skateboards. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon magenta, cyan, lime and warm Okinawa night.',
       lighting_and_shadow: 'Neon night light, trick-line glows and stadium lamps.',
       texture_and_material:
@@ -269,12 +269,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Initial D - Nocturnal Drift Tension'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
-      'a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night navy, headlight white, taillight red and guardrail grey.',
       lighting_and_shadow:
         'Headlight beams cutting fog, taillight streaks and dim mountain darkness.',
@@ -301,7 +301,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Coastal blue, supercar red, telemetry cyan and asphalt grey.',
       lighting_and_shadow: 'Bright coastal daylight, glossy car reflections and HUD glow.',
       texture_and_material:
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'P.A. Works Uma Musume television look (2018): bright idol sports, sparkling racecourses, colorful uniforms, confetti victory stages and energetic running frames.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Uma Musume designs, big bright eyes, flowing hair, colorful racing uniforms and energetic poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Uma Musume designs, big bright eyes, flowing hair, colorful racing uniforms and energetic poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Turf green, idol pink, sky blue and confetti gold.',
       lighting_and_shadow: 'Bright sunny racecourse light and sparkling stage spotlights.',
       texture_and_material:
@@ -351,7 +351,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright yellow ball, team blue and red, flat halftone backgrounds.',
       lighting_and_shadow: 'Graphic impact light, speed flashes and stark sun on courts.',
       texture_and_material:
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Masaaki Yuasa Ping Pong the Animation (2014) from Taiyo Matsumoto designs: wobbly loose lines, split-screen panels, distorted perspective and raw emotional sports.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Matsumoto designs, lopsided faces, gangly bodies, scruffy hair and plain sportswear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsumoto designs, lopsided faces, gangly bodies, scruffy hair and plain sportswear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Flat muted greens, table blue, sweat white and warm gym tones.',
       lighting_and_shadow: 'Flat gym light with graphic shadows and sudden glowing flashes.',
       texture_and_material: 'Loose wobbly line work, flat color and manga-panel splits.',
@@ -402,7 +402,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'George Morikawa Hajime no Ippo look: thick bold manga lines, heavy impact punches, sweat and spit spray, bruised faces and gritty boxing gyms.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Morikawa designs, sturdy bodies, heavy brows, bruised swollen faces and taped hands.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Morikawa designs, sturdy bodies, heavy brows, bruised swollen faces and taped hands. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Gritty browns, blood red accents, sweat white and dim gym tones.',
       lighting_and_shadow: 'Hard ring lights and dusty gym light with heavy shadow.',
       texture_and_material: 'Thick bold manga ink, speed lines, sweat spray and impact bursts.',
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Ice blue, spotlight white, costume gold and deep arena navy.',
       lighting_and_shadow: 'Spotlight on ice, sparkling reflections and soft arena glow.',
       texture_and_material:
@@ -451,7 +451,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Madhouse Chihayafuru television look (2011) from Yuki Suetsugu designs: shojo sports intensity, tatami halls, flowing hair, flower petals and poetic slow-motion focus.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Suetsugu designs, long flowing hair, large luminous eyes and hakama or school clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suetsugu designs, long flowing hair, large luminous eyes and hakama or school clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Tatami gold, maple red, indigo and petal pink.',
       lighting_and_shadow: 'Soft hall light and poetic glowing slow-motion highlights.',
       texture_and_material:
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hikaru Katsuki Baby Steps look: analytical tennis with notebooks, diagrams, clean simple lines and quiet steady improvement.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Katsuki designs, simple clean faces, glasses, athletic wear and focused expressions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Katsuki designs, simple clean faces, glasses, athletic wear and focused expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Court green, notebook white, sky blue and clean sports tones.',
       lighting_and_shadow: 'Clear even daylight on the court with simple short shadows.',
       texture_and_material: 'Clean lines, flat colors and hand-drawn diagram overlays.',
@@ -503,7 +503,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Bandai Namco Pictures Birdie Wing television look (2022): glamorous over-the-top rivalry, rainbow shot trails, glossy designs and dramatic sports theater.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with glamorous glossy designs, confident poses, stylish sportswear and flowing hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rainbow trails, fairway green, sunset gold and glossy black.',
       lighting_and_shadow: 'Dramatic backlight, rainbow trail glows and glamorous highlights.',
       texture_and_material:
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Zexcs Backflip!! television look (2020): bright gymnastics team energy, clean designs, sunny gyms and synchronized aerial formations.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with clean bright designs, athletic bodies, team uniforms and synchronized poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean bright designs, athletic bodies, team uniforms and synchronized poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright sky blue, gym white, team red and sunny yellow.',
       lighting_and_shadow: 'Sunny gym window light and bright high-key highlights on bodies.',
       texture_and_material:
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'MAPPA Dance Dance Danseur television look (2022) from George Asakura designs: ballet obsession, elongated lines, rehearsal studio light and expressive rough ink moments.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Asakura designs, elongated dancer bodies, intense eyes and rehearsal clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Asakura designs, elongated dancer bodies, intense eyes and rehearsal clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Studio wood, pale rehearsal light, black and soft red.',
       lighting_and_shadow: 'Single work lights, mirror reflections and studio window beams.',
       texture_and_material: 'Clean cel with sudden rough sketch lines and ink textures.',
@@ -578,7 +578,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Production I.G Welcome to the Ballroom television look (2017) from Tomo Takeuchi designs: extremely long elongated limbs, blazing ballroom gowns, intense stares and sweeping motion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Takeuchi designs, very long necks and limbs, piercing eyes and ballroom gowns or tailcoats.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takeuchi designs, very long necks and limbs, piercing eyes and ballroom gowns or tailcoats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Emerald gown green, gold floor, deep crimson and black tailcoats.',
       lighting_and_shadow: 'Ballroom chandeliers and spotlight glares on glossy parquet.',
       texture_and_material:
@@ -603,7 +603,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Platinum Vision Kono Oto Tomare! television look (2019): traditional music ensembles, glowing sound ripples, school club rooms and shojo-tinted emotion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with clean shojo-leaning designs, school uniforms or kimono, and focused performers.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean shojo-leaning designs, school uniforms or kimono, and focused performers. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm wood tones, stage black, ripple gold and petal pink.',
       lighting_and_shadow:
         'Warm stage spotlights and glowing golden sound ripple visuals in the air.',
@@ -630,7 +630,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Brass gold, sunset orange, school navy and soft teal.',
       lighting_and_shadow: 'Golden sunset through windows, gleaming brass reflections and bokeh.',
       texture_and_material:
@@ -656,7 +656,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep blue, smoky amber, brass gold and black.',
       lighting_and_shadow:
         'Smoky basement club spotlights and sweat-glistening highlights on skin.',
@@ -682,7 +682,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Harold Sakuishi BECK look: scruffy realistic rock manga, garage rehearsals, live-house crowds, lanky teens and Western rock fashion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Sakuishi designs, lanky scruffy figures, long hair, band tees and worn instruments.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sakuishi designs, lanky scruffy figures, long hair, band tees and worn instruments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Garage browns, amp black, stage red and faded denim blue.',
       lighting_and_shadow: 'Stage lights in small clubs and garage bulbs.',
       texture_and_material: 'Loose realistic pen lines, screentone and gritty stage textures.',
@@ -707,7 +707,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Lerche Given television look (2019) from Natsuki Kizu designs: soft indie rock romance, pastel bedroom light, guitars and quiet emotional close-ups.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kizu designs, soft features, gentle eyes, messy hair and casual indie clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kizu designs, soft features, gentle eyes, messy hair and casual indie clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel blue, warm bedroom amber and soft grey.',
       lighting_and_shadow: 'Soft window light, warm lamps and stage glow.',
       texture_and_material:
@@ -733,7 +733,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Kinema Citrus Revue Starlight television look (2018): Ikuhara-influenced theater, surreal transforming stages, crossing spotlights, giant symbolic props and dueling performers.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Revue Starlight designs, sparkling eyes, stage uniforms and dramatic sword-bearing poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Revue Starlight designs, sparkling eyes, stage uniforms and dramatic sword-bearing poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Stage red, gold, midnight blue and spotlight white.',
       lighting_and_shadow: 'Crossing spotlights, bursts of stage fire and red theatrical glow.',
       texture_and_material:
@@ -759,7 +759,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm concert-hall gold, black tails and soft pastel sheet music tones.',
       lighting_and_shadow: 'Concert hall stage light and warm rehearsal room light.',
       texture_and_material: 'Loose charming lines, screentone and swirling musical flourishes.',

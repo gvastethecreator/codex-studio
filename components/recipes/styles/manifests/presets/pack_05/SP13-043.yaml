@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-043
 packId: pack_05
-name: Near-Lens Pass-By Frame
+name: Toshiyuki Inoue - Near-Lens Pass-By Frame
 styleAnchors:
-  - Near-Lens Pass-By Frame
+  - Toshiyuki Inoue - Near-Lens Pass-By Frame
   - anime action staging
   - subject sweeping past the lens
-displayName: Near-Lens Pass-By Frame
+displayName: Toshiyuki Inoue - Near-Lens Pass-By Frame
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - near-lens
   - pass-by
+  - reference-title
 visualDna:
-  aesthetic: 'Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the pass-by framing where part of the subject sweeps across the lens, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the near-lens part reads as a large dark or saturated mass against a lighter background.
-  lighting_and_shadow: Existing light on the background; the passing part is mostly in its own shadow with a bright edge.
-  texture_and_material: Soft defocus on the near-lens part only, with crisp cel detail on everything beyond it.
-  camera_and_composition: Static eye-level camera; the passing subject fills one side of the frame, cut by two frame edges, while the background occupies the rest.
-  atmosphere_and_mood: A sudden whoosh, the viewer almost brushed by the movement.
-  rendering_and_quality: Controlled focus split between the soft near mass and the sharp background, with the subject still identifiable.
-  creative_brief: "Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp. Carry it through subject sweeping past the lens, cropped by two frame edges, soft near-lens defocus, sharp background, bright edge on passing mass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass
+  aesthetic: 'Toshiyuki Inoue realist key animation: meticulously observed natural movement, precise perspective, grounded detail and objects passing close to the camera with real depth.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures and animals with precise realistic proportions and natural motion, one passing extremely close to the lens. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Natural stone greys, feather blacks and warm interior light.
+  lighting_and_shadow: Naturalistic light with slight motion blur on the near object.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Near-lens pass-by with one element sweeping huge across the foreground.
+  atmosphere_and_mood: Keep the requested mood with intimate startling immediacy.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Toshiyuki Inoue realist key animation: meticulously observed natural movement, precise perspective, grounded detail and objects passing close to the camera with real depth. Carry it through Toshiyuki Inoue realism, near-lens pass-by, precise perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Toshiyuki Inoue realism; near-lens pass-by; precise perspective
 avoidRules:
   - added opponent
   - added sports gear
@@ -45,10 +46,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-043.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -59,6 +64,7 @@ taxonomy:
     - action
     - near-lens
     - pass-by
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

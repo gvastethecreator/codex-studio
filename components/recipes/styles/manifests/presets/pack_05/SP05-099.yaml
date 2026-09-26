@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-099
 packId: pack_05
-name: Worn Bronze Concentric-Line Cel
+name: Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Silhouettes are weighted forward and low with squared shoulders; do not add a shield, barrier, collar or weapon the prompt did not ask for.
-  color_and_tone: Aged bronze, stone grey and earth brown with one small amber accent; a mid-dark key with compressed, never clipped highlights.
-  lighting_and_shadow: Hard low side light catches raised edges in thin bronze rims, while a deep three-tone cel shadow holds the large forms together.
-  texture_and_material: Scuffed dry-brush over the cel fills, chipped-edge highlights and faint scratches read as rendering wear rather than a new material.
-  camera_and_composition: Keep the requested view; a slightly low angle and heavy diagonals push the weight of the subject toward the viewer.
-  atmosphere_and_mood: Steadfast and hard-won, a quiet refusal to fall.
-  rendering_and_quality: Firm outer contours, textured midtones and exactly one controlled specular highlight on each focal form.
-  key_features: nested concentric contour echoes; heavy dark-brown lineart; bronze edge rims; three-tone cel shadow; scuffed dry-brush wear
-  creative_brief: "Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings. Carry it through nested concentric contour echoes, heavy dark-brown lineart, bronze edge rims, three-tone cel shadow, scuffed dry-brush wear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kinema Citrus Rising of the Shield Hero look (2019): underdog fantasy with worn bronze and leather gear, heavy emotional close-ups, medieval villages and wave-of-monsters battles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern light-novel designs, battered leather armor, bronze shields, tired eyes and grim determination. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Worn bronze, leather brown, forest green and dusk red with muted overcast skies.
+  lighting_and_shadow: Overcast fantasy daylight, campfire glow and ominous red monster-wave skies.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Defensive stances with concentric impact rings, village wides and emotional close-ups.
+  atmosphere_and_mood: Keep the requested mood with stubborn underdog resolve.
+  rendering_and_quality: Solid fantasy television frame with worn gear and defensive heroics.
+  key_features: Worn bronze shields; underdog defense; leather gear; monster waves
+  creative_brief: "Kinema Citrus Rising of the Shield Hero look (2019): underdog fantasy with worn bronze and leather gear, heavy emotional close-ups, medieval villages and wave-of-monsters battles. Carry it through Worn bronze shields, underdog defense, leather gear, monster waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a green gem-set small shield on the forearm
+  - a raccoon-eared girl with a sword
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -64,10 +68,13 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-099.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, hero portrait pose, shiny new armor, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a green gem-set small shield on the forearm, a raccoon-eared girl with a sword, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, hero portrait pose, shiny new armor, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Worn Bronze Concentric-Line Cel
+displayName: Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel
 styleAnchors:
-  - Worn Bronze Concentric-Line Cel
+  - Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel
   - Shield Hero – Defensive Underdog Fantasy

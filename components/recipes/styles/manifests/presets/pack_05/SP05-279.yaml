@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-279
 packId: pack_05
-name: Red-Optic Security Noir Style
+name: Kamui Fujiwara - Red-Optic Security Noir Style
 styleAnchors:
-  - Red-Optic Security Noir Style
-displayName: Red-Optic Security Noir
+  - Kamui Fujiwara - Red-Optic Security Noir Style
+displayName: Kamui Fujiwara - Red-Optic Security Noir Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Graphite noir anime rendering with a narrow selective-focus band that sharpens a few contours to razor precision while the rest softens, punctuated by pinpoint red speculars.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Graphite and cool neutral grays; red appears only as two or three pinpoint speculars.
-  lighting_and_shadow: Low-key directional light with precise red reflections where real surfaces in the scene would catch it.
-  texture_and_material: Subdued matte planes, smooth graphite blending and occasional clean glints; no scanlines.
-  camera_and_composition: Keep the requested framing; a horizontal band of sharp focus crosses the focal area like a tilted lens plane.
-  atmosphere_and_mood: Watchful, cold attention in which everything feels observed.
-  rendering_and_quality: A crisp band against soft falloff, with no scan effects, screens or interface graphics.
-  key_features: selective-focus sharp band; pinpoint red speculars; graphite grays; low-key directional light; soft falloff outside the band
-  creative_brief: "Graphite noir anime rendering with a narrow selective-focus band that sharpens a few contours to razor precision while the rest softens, punctuated by pinpoint red speculars. Carry it through selective-focus sharp band, pinpoint red speculars, graphite grays, low-key directional light, soft falloff outside the band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kamui Fujiwara Kerberos manga art look: meticulous realistic armored police troops with glowing red optics, dense mechanical detail and grim alternate-postwar noir.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujiwara realism, heavy armored suits with red glowing optics, military coats and grim faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with dense grey tone and a single red optic glow.
+  lighting_and_shadow: Dim noir light cut by red optic glow.
+  texture_and_material: Meticulous pen detail with dense mechanical hatching on armor plates.
+  camera_and_composition: Grim rainy noir alleys and looming low-angle armored figures.
+  atmosphere_and_mood: Keep the requested mood with grim armored menace.
+  rendering_and_quality: Meticulous noir manga illustration with dense armored mechanical detail.
+  key_features: Kamui Fujiwara detail; red optics; armored troops; noir
+  creative_brief: "Kamui Fujiwara Kerberos manga art look: meticulous realistic armored police troops with glowing red optics, dense mechanical detail and grim alternate-postwar noir. Carry it through Kamui Fujiwara detail, red optics, armored troops, noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - protect-gear armor with red goggles and an MG42
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-279.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: protect-gear armor with red goggles and an MG42, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

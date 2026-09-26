@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-130
 packId: pack_05
-name: Paint-on-Glass Surge Burst
+name: Mob Psycho 100 BONES - Paint-on-Glass Surge Burst
 styleAnchors:
-  - Paint-on-Glass Surge Burst
+  - Mob Psycho 100 BONES - Paint-on-Glass Surge Burst
   - Mob Psycho 100 - Psychic Paint-Surge Meltdown
-displayName: Paint-on-Glass Surge Burst
+displayName: Mob Psycho 100 BONES - Paint-on-Glass Surge Burst
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Acid pink, yellow-green and cyan against deep indigo; figures in plain muted cel color.
-  lighting_and_shadow: Flat intense color with rough unlit edges; the paint itself reads as the light.
-  texture_and_material: Rough pencil, dry brush, wet oil smears and thumb-smudged paint.
-  camera_and_composition: Keep the requested framing; clear focal zones with turbulent paint gathered around them.
-  atmosphere_and_mood: Candid emotional overload breaking through calm, feeling spilling out as raw paint.
-  rendering_and_quality: Raw paint crossings and acidic bursts while the figure silhouette stays sturdy and readable.
-  key_features: paint-on-glass smears; thumb-smudged oil strokes; acid pink, lime and cyan; deep indigo ground; plain sturdy cel figures
-  creative_brief: "Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures. Carry it through paint-on-glass smears, thumb-smudged oil strokes, acid pink, lime and cyan, deep indigo ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'BONES Mob Psycho 100 look (2016): simple rounded ONE designs animated with explosive sakuga, paint-on-glass psychic bursts in pink and cyan, and rich hand-painted surges.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with simple rounded designs, bowl-like hair and dot eyes, erupting into rich painted psychic energy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pink, cyan, lemon and deep violet surges on muted city tones.
+  lighting_and_shadow: Glowing psychic surges painting the whole frame with color.
+  texture_and_material: Paint-on-glass animation textures, smeared brushstrokes and simple outlines.
+  camera_and_composition: Explosive compositions that burst outward from the center, alternating with quiet deadpan framing.
+  atmosphere_and_mood: Keep the requested mood with overflowing emotional surge.
+  rendering_and_quality: Rich BONES television frame with hand-painted paint-on-glass psychic animation.
+  key_features: Paint-on-glass bursts; simple rounded designs; pink and cyan surge; sakuga
+  creative_brief: "BONES Mob Psycho 100 look (2016): simple rounded ONE designs animated with explosive sakuga, paint-on-glass psychic bursts in pink and cyan, and rich hand-painted surges. Carry it through Paint-on-glass bursts, simple rounded designs, pink and cyan surge, sakuga. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a bowl-cut boy in a black school uniform
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -68,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-130.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bowl-cut boy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a bowl-cut boy in a black school uniform, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bowl-cut boy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

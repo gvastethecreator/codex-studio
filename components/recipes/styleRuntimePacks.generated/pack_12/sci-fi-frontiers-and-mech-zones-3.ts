@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'space fighter chase screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.',
@@ -653,7 +653,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'gravity shifting puzzle screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings.',

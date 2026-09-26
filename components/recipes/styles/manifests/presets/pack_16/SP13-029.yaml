@@ -6,7 +6,7 @@ styleAnchors:
   - Tetsuo Hara Keiji - Siege Breach Ember
 displayName: Tetsuo Hara Keiji - Siege Breach Ember
 category: 6. Samurai & Medieval
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Tetsuo Hara samurai manga look as in Keiji: towering warlords, hatched muscular anatomy, flamboyant armor and banners, and grand explosive siege scenes with flying embers.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hara anatomy, massive muscles, heroic jaws, flamboyant kabuki-like armor and wild hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Ink black with fire orange, ember red and smoke grey accents.
   lighting_and_shadow: Firelight from burning gates, embers and dramatic rim light on muscles.
   texture_and_material: Dense hatching, bold ink contour, smoke brush and ember flecks.
@@ -56,7 +56,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-029.webp

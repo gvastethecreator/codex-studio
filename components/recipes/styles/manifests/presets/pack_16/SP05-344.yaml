@@ -6,7 +6,7 @@ styleAnchors:
   - Blue Lock 2022 - Ego Pressure Breakout
 displayName: Blue Lock 2022 - Ego Pressure Breakout
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Eight Bit Blue Lock television look (2022): monster metaphors of ego, glowing predatory eyes, chains and puzzle pieces, stark black backgrounds and aggressive striker poses.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Blue Lock designs, lean strikers, intense glowing eyes, bared teeth and tight training suits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Electric blue, black void, neon green eye glow and white lines.
   lighting_and_shadow: Stark black-void backgrounds with glowing eyes and rim-lit bodies.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-344.webp

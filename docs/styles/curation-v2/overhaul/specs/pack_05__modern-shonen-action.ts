@@ -46,9 +46,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered hero suit', 'green curly hair with freckles', 'cape emblem'],
       briefs: [
-        'Crosshatched primary hero cel of an adult blacksmith-turned-guardian bracing a collapsing castle portcullis on her shoulders, her boots foreshortened toward the lens, crosshatched shadow wedges over flat cobalt and red fills, noon light glinting in white ticks on her sweat. No text or logo.',
-        'Crosshatched primary hero cel of an adult river guide hauling a stranded ox out of a flooded ford by its halter, sunflower-yellow oilskin coat, heavy variable ink contour, hatched shadows in dark cobalt under the churning water. No text or logo.',
-        'Crosshatched primary hero cel of an adult baker quietly kneading dough at dawn in a small tiled bakery, flour on her forearms, the same thick manga contour and pen-hatched shadow wedges on a calm task, red apron and cobalt tiles. No text or logo.',
+        "Holding up a collapsing bakery ceiling with both arms, a volunteer firefighter in a dented homemade hero suit grins through the flour storm while customers crawl out between her boots. No readable text or logo.",
+        "Grinning at a traffic jam, a retired hero in a faded cape directs cars with exaggerated flying-punch gestures while the real traffic officer takes notes on his technique. No readable text or logo.",
+        "At dawn on an empty training rooftop, a single pair of battered red boots stands beside a thermos, the sunrise crosshatched across the concrete. No readable text or logo.",
       ],
     },
     'SP05-133': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'cream puff prop', 'magic-school crest', 'wand duel pose'],
       briefs: [
-        'Deadpan filigree brick comedy of an adult knight calmly lifting a fallen stone gargoyle above his head with one hand, face completely blank with dot eyes, lace-like iron gate curls framing brick-square muscles, pastel lilac sky, heavy uniform block outline. No text or logo.',
-        'Deadpan filigree brick comedy of an adult noblewoman at a masked ball waltzing stiffly with an empty suit of armor, both faces blank, filigree chandeliers in mint and cream, symmetric frozen staging. No text or logo.',
-        'Deadpan filigree brick comedy of an adult tailor quietly threading a needle at a window, expressionless dot eyes, ornate pastel curls of draped fabric around square blunt hands, completely still. No text or logo.',
+        "Ignoring a swirling spell circle cast by three furious archmages, a blank-faced librarian in a formal robe simply lifts the entire enchanted tower and moves it two meters to the left. No readable text or logo.",
+        "At an elegant tea ceremony, a deadpan gardener cracks a walnut between two fingers and the explosion of shell knocks every ornate teacup off the table. No readable text or logo.",
+        "On an ornate marble balcony, a single dumbbell rests on a velvet cushion where the ceremonial magic wand should be. No readable text or logo.",
       ],
     },
     'SP05-134': {
@@ -98,9 +98,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'apron-wearing retired assassin', 'shop counter'],
       briefs: [
-        'Fluorescent everyday snap action of an adult castle cook catching three falling copper pots at once in a stone kitchen, one arm snapped into a straight parallel-stroke smear with crisp speed ticks, pale cool-white walls, a tangerine hearth flame as the only warm accent. No text or logo.',
-        'Fluorescent everyday snap action of an adult courier on foot flicking a spinning parcel up onto a third-floor balcony, the parcel a short snapped smear, flat mint and grey facades stacked in horizontal lanes. No text or logo.',
-        'Fluorescent everyday snap action of an adult laundromat attendant folding a white sheet under flat fluorescent light, calm thin contours and mint-grey fills, only the last flick of the sheet drawn as a small snapped smear. No text or logo.',
+        "Blocking three knife-throwing robbers with a rolling snack shelf, a calm night-shift cashier catches every blade in a dangling bag of rice crackers without spilling her coffee. No readable text or logo.",
+        "Bouncing between hanging laundry lines, a delivery courier flicks a spinning bottle cap that ricochets off four walls and switches off the ringleader’s flashlight. No readable text or logo.",
+        "Under a flickering fluorescent tube, a stack of shopping baskets stands perfectly balanced on one sharpened chopstick. No readable text or logo.",
       ],
     },
     'SP05-032': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'blindfold', 'finger talisman', 'eye tattoo'],
       briefs: [
-        'Gritty urban curses anime of an adult exorcist monk facing a many-armed shadow creature in a ruined abbey chapel, ink-smoke ribbons rimmed cyan and violet coiling from his raised palm, half his face carved into solid spotted black, horizon tilted. No text or logo.',
-        'Gritty urban curses anime of an adult night-shift nurse walking an empty hospital corridor while an ink-smoke shape clings to the ceiling above her, brush-pen contour, cool concrete greys, one violet rim on her cap. No text or logo.',
-        'Gritty urban curses anime of an adult tattoo artist quietly cleaning her needles at a steel counter late at night, spotted black shadows and dry brush-pen contour, only a faint violet rim on her cheek, no creature and no energy. No text or logo.',
+        "Standing in a flooded subway station, an exorcist in a dark raincoat faces a many-mouthed spirit made of forgotten umbrellas, each mouth whispering a different missed train. No readable text or logo.",
+        "A night-shift nurse wheels a cart down an empty ward while a spirit with twelve teeth-lined eyes clings to the ceiling above her, trying very hard to be scary. No readable text or logo.",
+        "In a deserted parking garage, a lone vending machine hums, and every drink behind its glass has a tiny staring eye. No readable text or logo.",
       ],
     },
     'SP05-035': {
@@ -148,9 +148,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'wing emblem', 'waist-mounted grapple rig'],
       briefs: [
-        'Gritty wallbound survival anime of an adult climber in a leather harness swinging across the face of a sheer thousand-foot fortress wall on a taut cable, cable-line motion trail behind her, stress lines on her knuckles, plunging overhead view into fog. No text or logo.',
-        'Gritty wallbound survival anime of an adult bell-ringer hauling a massive rope inside a narrow stone tower shaft, worm-eye view up the vertical strata, cold slate light from a slit window, ember-orange scarf. No text or logo.',
-        'Gritty wallbound survival anime of an adult shepherd resting against the foot of a colossal olive-grey cliff while his flock grazes, stacked vertical strata towering above, calm face with only faint stress lines. No text or logo.',
+        "Swinging on steel cables between cathedral spires, a lamplighter escapes a colossal stone gargoyle that has pulled itself off the roof and is chasing her across the town. No readable text or logo.",
+        "A bell-ringer hauls the great rope with his whole body as a giant hand slowly closes around the tower, the bell swinging wildly beside his face. No readable text or logo.",
+        "At the foot of an enormous wall at dusk, a shepherd sits with his flock, and on the other side something taller than the wall is breathing. No readable text or logo.",
       ],
     },
     'SP05-036': {
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'armband insignia'],
       briefs: [
-        'Colossal war drama anime of an adult widow in a grey shawl at the edge of a burned medieval village field, smoke columns painted with visible bristle texture, a tarnished gold locket the only warm accent, soft film grain. No text or logo.',
-        'Colossal war drama anime of an adult cavalry scout leading a limping mule along a muddy trench under an ash-grey sky, small figures against a heavy painted hillside, thin scratchy contours. No text or logo.',
-        'Colossal war drama anime of an adult postmistress sorting letters at a wooden counter by a dusty window, desaturated ochre light, thin scratchy lines and soft grain on an ordinary afternoon. No readable letters or logo.',
+        "At the edge of a burned wheat field, a widow in a grey shawl reads a letter her husband dictated before the battle, while the smoke behind her slowly clears into a golden evening. No readable text or logo.",
+        "A cavalry scout leads a limping mule through a ruined orchard, stopping to lift a fallen bird’s nest back into a shattered tree. No readable text or logo.",
+        "In a quiet village post office, a stack of undelivered letters glows in the late afternoon light, one envelope sealed with a dried flower. No readable text or logo.",
       ],
     },
     'SP05-039': {
@@ -199,9 +199,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'spiky white-haired boy', 'playing-card weapon'],
       briefs: [
-        'Tactical adventure shonen anime of an adult ranger balancing on one foot atop a tall stone pillar in a canyon, a translucent sky-blue double outline wobbling around her like heat shimmer, slim clean contours, clear midday sun. No text or logo.',
-        'Tactical adventure shonen anime of two adult chess rivals facing each other across a board on a windswept cliff terrace, each wrapped in a different translucent shimmer outline, ember and teal, clear interval between them. No readable pieces, text or logo.',
-        'Tactical adventure shonen anime of an adult beekeeper lifting a honeycomb frame in a sunny meadow, slim contours and one-tier cel shadow, no shimmer outline at all on this calm task. No text or logo.',
+        "Balancing on a single stone pillar above a canyon of fog, a ranger calmly calculates the wind while three rival treasure hunters on nearby pillars try to stare her down. No readable text or logo.",
+        "Two chess rivals face each other across a board carved into a cliff edge, and every captured piece falls hundreds of meters into the river below. No readable text or logo.",
+        "A beekeeper lifts a honeycomb frame at sunset, and the bees arrange themselves into a perfect warning pattern around her hands. No readable text or logo.",
       ],
     },
     'SP05-121': {
@@ -226,9 +226,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'checkered haori', 'bamboo muzzle', 'hanafuda earrings'],
       briefs: [
-        'Printed-wave effect trail cel of an adult lantern-bearer spinning through a snowy pine forest at night, her swinging lantern leaving an indigo woodblock wave crest with white curling foam, soft digital cel shading on her figure. No text or logo.',
-        'Printed-wave effect trail cel of a grey heron lifting off a frozen mountain pond, its wingbeats leaving flat printed wind bands in vermilion-to-gold bokashi, winter blue ice below. No text or logo.',
-        'Printed-wave effect trail cel of an adult tea master pouring water from an iron kettle in a quiet tatami room, the steam a single small printed curl in grey bokashi, no added energy trails. No text or logo.',
+        "Spinning through a snowy pine forest at night, a lantern-bearer swings her lamp in a full circle and its light unrolls behind her as a curling woodblock-print wave. No readable text or logo.",
+        "A grey heron lifts off a frozen mountain pond, each wingbeat leaving painted ukiyo-e ripples hanging in the frosty air. No readable text or logo.",
+        "A tea master pours boiling water from an iron kettle, and the steam curls into stylized printed clouds above the cup. No readable text or logo.",
       ],
     },
     'SP05-124': {
@@ -251,9 +251,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'soccer kit copy'],
       briefs: [
-        'Ultramarine glare foreshortening of an adult archer drawing a longbow on a torchlit tournament field, fingers foreshortened huge toward the lens, a streak of ultramarine light trailing from her eye along the arrow line, background dissolved into converging blue vectors. No text or logo.',
-        'Ultramarine glare foreshortening of an adult sprinter exploding off the blocks on an empty night track, one spiked shoe foreshortened into the lens, blue-white rim light, cyan eye trail. No text or logo.',
-        'Ultramarine glare foreshortening of an adult watchmaker peering through a loupe at a tiny gear, tweezers foreshortened toward the viewer, cool cyan underlight and a thin ultramarine eye streak on a completely still task. No text or logo.',
+        "Drawing a longbow on a torchlit tournament field, an archer glares down the arrow as her rivals behind her melt into circling wolves made of shadow. No readable text or logo.",
+        "Exploding off the starting blocks, a sprinter’s spiked shoe fills half the frame as a giant hungry eye opens in the stadium lights behind her. No readable text or logo.",
+        "Alone in a quiet workshop, a watchmaker peers through a loupe, his magnified eye glaring like a predator at the tiny gears. No readable text or logo.",
       ],
     },
     'SP05-128': {
@@ -278,9 +278,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'black hakama with white sash', 'skull mask'],
       briefs: [
-        'Inverted negative ink opera of an adult bone-pale king rising from a throne in a vaulted hall, the right half of the frame flipped into photographic negative with white shadows, a single crimson flash across his cloak, broad black brush contours. No text or logo.',
-        'Inverted negative ink opera of an adult priestess releasing a flock of crows from a cathedral balcony, the crows inverted to white against a black sky, ivory stone and one violet sash. No text or logo.',
-        'Inverted negative ink opera of an adult cellist tuning her instrument alone on an empty stage, broad brush contours and a vast ivory field, only the cello shadow inverted, no crimson and no action. No text or logo.',
+        "Rising from a bone-white throne in a vaulted hall, a pale sovereign flicks one finger and half of the chamber snaps into a black-and-white photographic negative. No readable text or logo.",
+        "A priestess releases a flock of crows from a cathedral balcony, and the birds turn white against a suddenly black sky as they cross the moon. No readable text or logo.",
+        "A cellist tunes her instrument alone on a dark stage, and every note inverts the spotlight into a black circle around her feet. No readable text or logo.",
       ],
     },
     'SP05-131': {
@@ -305,9 +305,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered gang jacket', 'bandaged knuckles'],
       briefs: [
-        'Sky-blue low-angle brawler cel of three adult fishermen standing on a harbor seawall to face an incoming storm, worm-eye angle, oilskin coats flapping in sharp tapered strokes, towering scalloped clouds filling the sky. No text or logo.',
-        'Sky-blue low-angle brawler cel of an adult pigeon keeper releasing a burst of birds from a rooftop coop, low angle into saturated blue sky, vermilion jacket, backlit hard shadows. No text or logo.',
-        'Sky-blue low-angle brawler cel of an adult roofer eating a rice ball on a ridge beam at lunch, sitting still, huge sky and white clouds behind, only a light breeze in his sleeves. No text or logo.',
+        "Standing on a harbor seawall under an enormous sky, three fishermen in rolled sleeves square up against an incoming storm as if it were a rival gang. No readable text or logo.",
+        "A pigeon keeper throws open her rooftop coop and a burst of birds swirls around her like a protective escort over the town. No readable text or logo.",
+        "On a quiet roof ridge at sunset, a roofer eats a rice ball, his hammer resting beside him like a guardian’s sword. No readable text or logo.",
       ],
     },
     'SP05-135': {
@@ -331,9 +331,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'cracked mirror prop'],
       briefs: [
-        'Broken-rule halftone shatter of an adult gambler flipping a gold coin in a torchlit dungeon tavern, the whole picture cracked into glass-like shards radiating from the coin, each shard in coral, yellow or cobalt halftone. No text or logo.',
-        'Broken-rule halftone shatter of an adult stuntwoman falling backward off a clock-tower ledge, the fracture lines spreading from her outstretched hand, rough broken ink contours, cobalt and coral shards. No text or logo.',
-        'Broken-rule halftone shatter of an adult florist trimming stems at a workbench, the image split into a few calm coral and cobalt halftone shards, her ordinary task unchanged. No text or logo.',
+        "Flipping a gold coin in a torchlit tavern, a gambler watches the coin land on its edge, and the whole room cracks apart into floating halftone shards. No readable text or logo.",
+        "A stuntwoman falls backward off a clock tower, and every tick of the clock shatters the sky behind her into a new panel. No readable text or logo.",
+        "A florist trims one stem at her workbench, and the snip splits the room into two mismatched halves of dotted halftone. No readable text or logo.",
       ],
     },
     'SP05-136': {
@@ -357,9 +357,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'five-leaf clover', 'floating spellbook', 'bull emblem'],
       briefs: [
-        'Etched branch-lightning cel of an adult hedge-witch striking a standing-stone circle at midnight, black-edged gold lightning branching from her raised staff across forest-green sky, etched engraving on the stones. No text or logo.',
-        'Etched branch-lightning cel of an armored adult knight kneeling as lightning splits the oak tree behind him, fine etched engraving on his breastplate, spiky cloak ends, green-black storm. No text or logo.',
-        'Etched branch-lightning cel of an adult bookbinder tooling gold ornament into a leather cover by candlelight, thin etched lines and polished cel, no lightning at all. No readable text or logo.',
+        "Slamming her staff into a circle of standing stones at midnight, a hedge-witch unleashes jagged black lightning that splits into branches across the stormy sky. No readable text or logo.",
+        "A kneeling knight in dented armor grits her teeth as crackling lightning splits the ground around her into glowing cracks. No readable text or logo.",
+        "A bookbinder tools gold ornament into a leather cover, and tiny black sparks crawl along every line she presses. No readable text or logo.",
       ],
     },
     'SP05-138': {
@@ -384,9 +384,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'goldfish spirits', 'katana near-plane'],
       briefs: [
-        'Sumi-black neon edge stillness of an adult mourner kneeling before a burned-out forge at night, severe dry sumi-brush black filling two thirds of the frame, one thin neon magenta edge along her shoulder, wide horizontal bands. No text or logo.',
-        'Sumi-black neon edge stillness of a black stallion standing in a flooded rice field at dusk, matte indigo water in wide horizontal bands, one cyan edge along its mane. No text or logo.',
-        'Sumi-black neon edge stillness of an adult cook ladling broth at a quiet late-night counter, dry brush grain, matte dark fields, a single cyan edge on the rising steam. No text or logo.',
+        "Kneeling before a burned-out forge at night, a mourner in a dark coat grips the handle of an unfinished blade as a thin neon sign flickers red across its edge. No readable text or logo.",
+        "A black stallion stands motionless in a flooded rice field at night, only the rim of its mane lit by a distant teal sign. No readable text or logo.",
+        "A cook ladles broth at a late-night street stall, steam and silence heavy around him, one knife gleaming on the board. No readable text or logo.",
       ],
     },
     'SP05-139': {
@@ -410,9 +410,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'exposed-muscle giant', 'gore', 'eaten body'],
       briefs: [
-        'Crosshatched giant-scale panic of adult villagers fleeing across a stone bridge as the face of a colossal stone golem rises through dust behind them, dense dry crosshatching, tiny grimacing figures, hatched dust plumes. No text or logo.',
-        'Crosshatched giant-scale panic of an adult fisherman in a rowboat beneath the looming hull of a rotting ghost ship, coarse crosshatch on the planks, olive fog in compressed depth bands. No text or logo.',
-        'Crosshatched giant-scale panic of an adult cobbler repairing a boot at a workbench, crosshatched shadows and stone-grey walls, calm face and nothing looming, the ordinary task left intact. No text or logo.',
+        "Villagers flee across a stone bridge as the grinning face of a colossal moss-covered statue rises from the river, its eyes blinking slowly. No readable text or logo.",
+        "A fisherman in a small rowboat looks up at a lighthouse, and a giant hand with too many knuckles is gripping the top of it. No readable text or logo.",
+        "A cobbler repairs a boot at his workbench, unaware that the enormous eye in the window behind him has been watching for an hour. No readable text or logo.",
       ],
     },
     'SP05-140': {
@@ -436,9 +436,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'pointed ears with white twin tails'],
       briefs: [
-        'Pale calm spell geometry of an adult hermit mage holding back an avalanche with one raised hand in a pale snowfield, thin concentric rings and hexagons of light suspended before the snow wall, fine exact outlines. No text or logo.',
-        'Pale calm spell geometry of a ruined stone observatory at dawn where thin geometric rings orbit a broken brass telescope, parchment sky and lavender-grey stone, open spacing. No text or logo.',
-        'Pale calm spell geometry of an adult gardener watering a row of lavender in a quiet monastery garden, pale matte color and fine outlines, no rings or magic at all. No text or logo.',
+        "Holding back an avalanche with one raised hand, a hermit mage in a pale robe barely looks up from her book as thin geometric rings hold the snow in midair. No readable text or logo.",
+        "In a ruined stone observatory at dawn, thin geometric rings of light rotate slowly around a sleeping old wizard. No readable text or logo.",
+        "A gardener waters a row of lavender while a faint geometric circle glows under the watering can. No readable text or logo.",
       ],
     },
     'SP05-037': {
@@ -461,9 +461,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Impact frame comedy hero anime of an adult armored knight stubbing his toe on a castle stair, the stair corner bursting into a black, white and red impact frame with thick radial wedges while the rest of the scene stays muted and soft. No text or logo.',
-        'Impact frame comedy hero anime of an adult farmer yanking a giant turnip out of a field, the root snapping free inside a jagged black-red impact zone with a yellow spark, broad empty sky. No text or logo.',
-        'Impact frame comedy hero anime of an adult librarian stamping a single book at a quiet desk, only the tiny stamp contact drawn as a small red-black impact frame, everything else calm and muted. No readable text or logo.',
+        "Stubbing his toe on a castle stair, an armored knight strikes a twisted fashion-model pose of pure agony while the sky behind him turns magenta. No readable text or logo.",
+        "A farmer yanks a giant turnip out of the ground with a dramatic flamboyant pose, both arms twisted like a runway model. No readable text or logo.",
+        "A librarian stamps a single book with menacing intensity, shadows crawling up the shelves behind her. No readable text or logo.",
       ],
     },
     'SP05-129': {
@@ -488,9 +488,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'bald caped hero', 'yellow jumpsuit'],
       briefs: [
-        'Dual-detail deadpan satire of an adult dragon-hunter drawn as a plain round-lined figure with dot eyes, yawning in front of an enormous, lavishly detailed armored dragon with polished scales and hard dramatic light. No text or logo.',
-        'Dual-detail deadpan satire of an adult tourist with a blank dot-eyed face eating a plain sandwich atop a gothic cathedral spire, the carved stone saints around her rendered in dense polished detail. No text or logo.',
-        'Dual-detail deadpan satire of an elderly adult pensioner reading a blank newspaper on a park bench, drawn simply with dot eyes, while the sparrows at her feet are rendered in dense feather detail. No readable text or logo.',
+        "Yawning as a mountain-sized dragon collapses behind him, a dragon-hunter drawn with plain round lines and dot eyes holds his grocery list while rubble rains down. No readable text or logo.",
+        "A dot-eyed tourist eats an ice cream while a hyper-detailed battle rages behind her, and she only notices when a drip lands on her shoe. No readable text or logo.",
+        "An elderly pensioner reads a blank newspaper on a bench, his face plain and calm, while the city behind him is spectacularly on fire. No readable text or logo.",
       ],
     },
     'SP05-132': {
@@ -519,9 +519,9 @@ const spec: Spec = {
         'status window UI',
       ],
       briefs: [
-        'Full-color manhwa shadow glow of an adult necromancer queen standing in a flooded crypt as a single smoky shadow wolf rises from the black water behind her, glowing cyan eyes, airbrushed violet gradients, tall vertical staging. No text or logo.',
-        'Full-color manhwa shadow glow of an adult raid healer climbing a vertical shaft in a crystal cavern, stacked planes of violet crystal above, cold cyan edge light on her hands. No text or logo.',
-        'Full-color manhwa shadow glow of an adult night guard reading by a single desk lamp in a silent museum hall, airbrushed gradients and deep violet shadows, no smoke and no glowing eyes. No readable text or logo.',
+        "Standing knee-deep in a flooded crypt, a necromancer queen raises one hand as smoky shadow knights rise from the water, their eyes glowing violet. No readable text or logo.",
+        "A raid healer climbs a vertical shaft by the glow of her own spell, huge shadowy shapes watching from the darkness below. No readable text or logo.",
+        "A night guard reads by a single desk lamp, his own shadow on the wall slowly turning to look at him with glowing eyes. No readable text or logo.",
       ],
     },
     'SP05-040': {
@@ -543,9 +543,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Blade field urban fantasy anime of an adult alchemist in a cathedral crypt watching a ring of cold blue embers spiral above a stone altar, volumetric light shafts through dust, crisp cel figure over a detailed painted vault, shallow depth of field. No text or logo.',
-        'Blade field urban fantasy anime of a white stag crossing a snowy temple courtyard at night, gold embers drifting, blurred foreground lantern bokeh, navy sky and ivory snow. No text or logo.',
-        'Blade field urban fantasy anime of an adult violin maker varnishing a violin in a workshop at dusk, volumetric window shafts and gentle dust motes, shallow depth of field, no embers or magic. No text or logo.',
+        "In a cathedral crypt, an alchemist watches a ring of cold blue embers rise into hundreds of floating glass daggers pointing toward the vaulted ceiling. No readable text or logo.",
+        "A white stag crosses a snowy temple courtyard as swords made of light slowly sprout from its hoofprints. No readable text or logo.",
+        "A violin maker varnishes a violin in her workshop, and faint magic circuit lines glow along the wood grain. No readable text or logo.",
       ],
     },
     'SP05-123': {
@@ -569,9 +569,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'reflective-striped bunker gear', 'sharp-toothed grin', 'nun prayer pose'],
       briefs: [
-        'White-core flame halo cel of an adult fire-priest walking unharmed out of a burning timber church, flames drawn as flat tongues with white-hot cores, a radiating halo ring behind her head, charcoal smoke and ivory ash. No text or logo.',
-        'White-core flame halo cel of an adult foundry worker pouring molten bronze into a statue mould, the stream edged scarlet around a white core, concentric warm rings in the furnace mouth, light-leak grain. No text or logo.',
-        'White-core flame halo cel of an adult shrine keeper lighting a row of oil lamps at dusk, small flat flame tongues with white cores, strong dark contours, no halo rings and no blaze. No text or logo.',
+        "Walking out of a burning timber chapel untouched, a fire-priest in a soot-black cassock spreads her arms as the flames around her burn white at the center and orange at the edges. No readable text or logo.",
+        "A foundry worker pours molten bronze into a bell mold, the stream glowing white-hot inside a halo of orange sparks. No readable text or logo.",
+        "A shrine keeper lights a row of oil lamps at dusk, and each small flame burns with a bright white heart. No readable text or logo.",
       ],
     },
     'SP05-125': {
@@ -594,9 +594,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered defense suit', 'glowing monster core'],
       briefs: [
-        'Hazard-orange monster response cel of an adult crane operator in a hi-vis orange cab lifting a colossal fossil skull out of a quarry, machine-precise crane with grid tick marks along the boom, deep blue-grey rock. No text or logo.',
-        'Hazard-orange monster response cel of an adult harbor pilot steering an orange tugboat to guide a stranded giant manta ray back to open water, wide clean frame, yellow floats, matte grey sea. No text or logo.',
-        'Hazard-orange monster response cel of an adult road-crew worker repainting a yellow safety railing along a river path on a quiet morning, sturdy contours and matte color blocks, nothing monstrous. No text or logo.',
+        "Operating a crane from a scuffed orange cab, a middle-aged cleanup worker lifts a colossal monster tooth off a flattened shopping street while her crew hoses down the pavement. No readable text or logo.",
+        "A harbor pilot steers an orange tugboat past the floating ribcage of a sea monster bigger than the harbor itself. No readable text or logo.",
+        "A road-crew worker repaints a lane line around a single giant footprint pressed into the asphalt. No readable text or logo.",
       ],
     },
     'SP05-126': {
@@ -621,9 +621,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'grey alien head', 'ghost grandmother'],
       briefs: [
-        'Acid occult color-burst smear of an adult ghost-hunter couple tumbling down a haunted manor staircase, their bodies melting into teal and hot-pink smear frames, a lime spirit wisp overhead, doubled reaction lines. No text or logo.',
-        'Acid occult color-burst smear of an adult ice skater spinning on a frozen lake at night, her spin melting into acid teal and lime smear frames against a dark ink sky. No text or logo.',
-        'Acid occult color-burst smear of an adult man repotting a cactus on his balcony, doubled reaction lines only where he flinches from a spine, teal and pink palette, no ghost. No text or logo.',
+        "Tumbling down a haunted manor staircase, a ghost-hunter couple in their forties grab each other as their flashlights smear into acid-green and magenta streaks around a laughing spirit. No readable text or logo.",
+        "An ice skater spins on a frozen lake at night as neon occult lights smear into rings around her blades. No readable text or logo.",
+        "A man repots a cactus on his balcony while a tiny glowing alien watches from the flowerpot, both perfectly calm. No readable text or logo.",
       ],
     },
     'SP05-127': {
@@ -647,9 +647,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'white-robed shaved-head executioner', 'lotus-faced statue'],
       briefs: [
-        'Toxic flower etched ink of an adult plague doctor wading waist-deep through a jungle of giant poison orchids, fine etched contours, lilac and coral petals, dry crosshatch in the jade shadows. No text or logo.',
-        'Toxic flower etched ink of a moss-covered skeleton in rusted armor with coral and lilac flowers sprouting from its visor, wine-dark ground, etched ink detail. No text or logo.',
-        'Toxic flower etched ink of an adult greenhouse keeper potting seedlings on a quiet morning, etched contours and pastel petals, crosshatched shadows under the benches. No text or logo.',
+        "Wading waist-deep through a jungle of giant poison orchids, a plague doctor in waxed linen notices that every blossom has quietly turned to face him. No readable text or logo.",
+        "A moss-covered skeleton in rusted armor sits against a tree, flowers with tiny human faces blooming from its ribs. No readable text or logo.",
+        "A greenhouse keeper pots seedlings at dawn, and one sprout has grown a single perfect eyelash. No readable text or logo.",
       ],
     },
     'SP05-038': {
@@ -673,9 +673,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Psychedelic psychic minimalism of an adult fortune-teller seated at a small table in an empty white room, teacups around her subtly warping and lifting, searching pencil contours, one cup in acid yellow-green. No text or logo.',
-        'Psychedelic psychic minimalism of an adult kite flier on a bare hill, the horizon line gently bending around her, airy pastel washes and vast untouched paper. No text or logo.',
-        'Psychedelic psychic minimalism of an adult commuter waiting alone at an empty crosswalk, light pencil lines and pastel washes, only the curb line faintly bending. No text or logo.',
+        "In an empty white room, a fortune-teller with a blank face sets down her teacup as the whole table floats upward in a scribbled storm of psychic energy. No readable text or logo.",
+        "A kite flier on a bare hill stares blankly as the horizon wobbles and ripples like a badly drawn line. No readable text or logo.",
+        "A commuter waits alone at an empty crossing, and the traffic light quietly bends toward her. No readable text or logo.",
       ],
     },
     'SP05-130': {
@@ -699,9 +699,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'bowl-cut boy'],
       briefs: [
-        'Paint-on-glass surge burst of an adult wandering oracle screaming on a cliff edge as smears of pink and cyan paint explode from her hair across a stormy indigo sky, thumb-smudged oil strokes, her figure plain cel. No text or logo.',
-        'Paint-on-glass surge burst of a humpback whale breaching through a sea that turns into swirling wet oil paint, acid lime and pink spray, deep indigo night. No text or logo.',
-        'Paint-on-glass surge burst of an adult office worker staring at a cup of coffee, the steam painted as tiny thumb-smudged oil swirls, the rest in plain muted cel, no eruption. No text or logo.',
+        "Screaming on a cliff edge, a wandering oracle unleashes a surge of painted pink and cyan brushstrokes that swirls up and repaints the entire stormy sky. No readable text or logo.",
+        "Breaching far out at sea, a humpback whale bursts through water that suddenly turns into thick swirling paint-on-glass color, pink and cyan streaks flying off its fins. No readable text or logo.",
+        "An office worker stares at a cup of coffee until the surface swirls into tiny painted galaxies. No readable text or logo.",
       ],
     },
     'SP05-137': {
@@ -725,9 +725,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'stone crack lines on the face'],
       briefs: [
-        'Chalk-schematic inventor cel of an adult inventor launching a hand-built wooden glider off a medieval castle wall, faint chalk construction lines tracing the wing ribs and flight arc, mineral green sky. No readable formulas, text or logo.',
-        'Chalk-schematic inventor cel of a timber watermill in a mountain stream, chalk cross-section strokes revealing its hidden gears, mineral gold wood and chalk-white water. No readable text or logo.',
-        'Chalk-schematic inventor cel of an adult apothecary grinding herbs with mortar and pestle, a single faint chalk arc following the pestle, clean cel and open margins. No text or logo.',
+        "Launching a hand-built wooden glider off a castle wall, an inventor in patched overalls grins as chalk schematics of lift and drag appear in the air around the wings. No readable text or logo.",
+        "A timber watermill turns in a mountain stream, chalk diagrams of gears and flow sketched over its wheel. No readable text or logo.",
+        "In a cluttered village shop, an apothecary grinds herbs with a heavy mortar while glowing molecular chalk diagrams float above the bowl like curious fireflies. No readable text or logo.",
       ],
     },
     'SP05-031': {
@@ -751,9 +751,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Painterly blade fantasy anime of an adult dancer with long silk sleeves whirling through falling plum blossoms, each sleeve a single calligraphic sumi stroke bleeding into garnet wash, open paper margins. No text or logo.',
-        'Painterly blade fantasy anime of a tiger leaping across a mountain stream, its stripes dry-brush sumi flicks bleeding into jade and lapis washes, bloom rings in the spray. No text or logo.',
-        'Painterly blade fantasy anime of an adult weaver working a wooden loom in a quiet room, calligraphic ink contours and soft wet washes of lapis thread, graceful stillness. No text or logo.',
+        "Whirling through falling plum blossoms on a misty mountain terrace, a dancer’s long silk sleeves slice the petals into a spiral while her sword stays sheathed at her hip. No readable text or logo.",
+        "A tiger leaps across a mountain stream, its stripes dissolving into flowing ink-wash brushstrokes as it lands. No readable text or logo.",
+        "A weaver works a wooden loom in a quiet pavilion, the silk rolling out painted with drifting clouds. No readable text or logo.",
       ],
     },
     'SP05-033': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Chaotic splatter action poster of an adult rat-catcher sprinting through a monastery wine cellar with a sack of escaping rats, red ink splatter used as pattern, off-register black contours on warm paper. No text or logo.',
-        'Chaotic splatter action poster of an adult punk drummer mid-fill, sticks and cymbals exploding into halftone red and black, one teal accent on the snare. No text or logo.',
-        "Chaotic splatter action poster of an adult barber trimming a customer's hair, the falling clippings printed as black ink spatter, scratchy contours and off-register red on a calm task. No text or logo.",
+        "Sprinting through a monastery wine cellar with a sack of squirming rats over his shoulder, a rat-catcher crashes through barrels as dark wine splatters across the frame like ink. No readable text or logo.",
+        "A punk drummer mid-fill smashes through her kit, sticks and cymbals flying in loose chaotic ink strokes. No readable text or logo.",
+        "A barber trims a customer’s hair with deadpan calm while the shop behind them is slowly collapsing. No readable text or logo.",
       ],
     },
     'SP05-122': {
@@ -801,9 +801,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'chainsaw-headed figure', 'blood spray'],
       briefs: [
-        'Muted cinematic grime frenzy of an adult gravedigger swinging his lantern in a rain-soaked cemetery at night, handheld off-center frame, a fluorescent yellow-green streak where the lantern arcs, soot-grey stones. No text or logo.',
-        'Muted cinematic grime frenzy of an adult dog-catcher lunging for a runaway hound in a grimy concrete underpass, shallow depth of field, fluorescent streak on the snapping leash. No text or logo.',
-        'Muted cinematic grime frenzy of an adult mechanic eating instant noodles on an upturned crate in a grimy garage, practical tube light, desaturated grade, no streaks. No text or logo.',
+        "Swinging his lantern in a rain-soaked cemetery at night, a gravedigger backs away from a freshly opened grave while the lamplight wobbles across muted grey headstones. No readable text or logo.",
+        "A dog-catcher lunges for a runaway hound in a grimy alley, both of them sliding through a puddle. No readable text or logo.",
+        "A mechanic eats instant noodles under a flickering garage light, too tired to notice the rain. No readable text or logo.",
       ],
     },
     'SP05-025': {
@@ -824,9 +824,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'red apple motif'],
       briefs: [
-        'Shadow notebook thriller anime of an adult inquisitor seated at the end of a long candlelit table staring at a single red wax seal, hard light splitting his face, steep overhead angle, bone-white tablecloth. No text or logo.',
-        'Shadow notebook thriller anime of an adult detective on a spiral staircase looking down into darkness, dizzying overhead angle, fine black strokes, a vermilion scarf the only color. No text or logo.',
-        'Shadow notebook thriller anime of an adult night-shift pharmacist peeling an orange at her kitchen table, hard black-to-white shadow blocks, the vermilion peel the only color. No text or logo.',
+        "Seated at the end of a long candlelit table, an inquisitor stares at a single sealed envelope while her shadow on the wall seems to be reading it already. No readable text or logo.",
+        "A detective on a spiral staircase looks down at the suspect below, both of them smiling the same small smile. No readable text or logo.",
+        "A night-shift pharmacist peels an orange in perfect spiral, her eyes never leaving the security monitor. No readable text or logo.",
       ],
     },
     'SP05-148': {
@@ -849,9 +849,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'tommy gun'],
       briefs: [
-        'Amber jazz-age ensemble cel of adult pickpockets, dancers and a stowaway musician colliding in a hotel ballroom, overlapping syncopated clusters, brass and amber lamplight, printed grain. No text or logo.',
-        'Amber jazz-age ensemble cel of an adult trumpeter playing on a fire escape at dusk, the notes echoed by three neighbors leaning out of windows, lively variable contours in brass and brown. No text or logo.',
-        'Amber jazz-age ensemble cel of an adult diner waitress pouring coffee for three regulars at a counter, calm amber light, overlapping shoulders in a relaxed rhythm. No text or logo.',
+        "Pickpockets, dancers and a stowaway trumpeter collide in a grand hotel ballroom as the chandelier swings and a bootlegger hides champagne under the cake. No readable text or logo.",
+        "A trumpeter plays on a fire escape at dusk, amber light pouring through laundry lines around him. No readable text or logo.",
+        "A diner waitress pours coffee for three suspicious men in fedoras, each hiding something under the table. No readable text or logo.",
       ],
     },
     'SP05-021': {
@@ -874,9 +874,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'orange jumpsuit', 'whisker cheek marks'],
       briefs: [
-        'Teal-orange sakuga smear of an adult falconer leaping between pine treetops after her bird, legs stretched into tapered smear frames, a curling trail of needles behind her, golden-hour teal and orange. No text or logo.',
-        'Teal-orange sakuga smear of a red fox chasing a spiral of leaves across a harvested wheat field, its legs smeared, dust curling behind in tapered ink shapes. No text or logo.',
-        'Teal-orange sakuga smear of an adult potter trimming a bowl on a kick wheel, tapered ink contours and two-step shadows, only the spinning wheel carrying a small smear. No text or logo.',
+        "Leaping between pine treetops after her falcon, a falconer stretches into a long painterly smear of teal and orange as the bird dives ahead of her. No readable text or logo.",
+        "A red fox chases a spiral of leaves across a harvested field, its body smearing into streaks of warm color. No readable text or logo.",
+        "A potter trims a bowl on a kick wheel, the spinning clay smearing into teal and orange rings. No readable text or logo.",
       ],
     },
     'SP05-022': {
@@ -898,9 +898,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Urban spirit blade anime of an adult ghost-bride in an elongated black gown drifting down a blank ivory staircase, fine gapped contours, a stark black-white division through the frame, a violet veil the only color. No text or logo.',
-        'Urban spirit blade anime of a black cat walking a thin ledge across a blank white void, elongated shadow, one violet eye, vast ivory negative space. No text or logo.',
-        'Urban spirit blade anime of an adult pianist stretching her long fingers before practice in an empty room, slender fashion-plate proportions, flat ivory background and severe cel shadow. No text or logo.',
+        "Drifting down a blank ivory staircase in an elongated black gown, a ghost-bride holds a long sword as if it were a bouquet, her veil trailing into empty white space. No readable text or logo.",
+        "A black cat walks a thin ledge across a blank white page, only its shadow keeping it company. No readable text or logo.",
+        "A pianist stretches her long fingers before a concert, standing alone in a vast white space. No readable text or logo.",
       ],
     },
     'SP05-023': {
@@ -921,9 +921,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'straw hat with red open vest', 'stretching rubber punch'],
       briefs: [
-        'Elastic big-grin adventure cel of an adult island postwoman riding a giant sea turtle across bright blue waves with a satchel of letters, rubbery stretched arm waving, huge grin, bold rounded outlines. No readable text or logo.',
-        'Elastic big-grin adventure cel of an adult strongman hauling a festival float up a steep hill, his arms stretched like taffy, red and gold flags, broad flexible curves. No text or logo.',
-        'Elastic big-grin adventure cel of a plump bald old fisherman with a huge curling grey mustache, a knitted blue beanie and a striped wool sweater, napping in a hammock on a harbor porch, rubbery arms drooping to the floor, a cat asleep on his belly, flat vivid color and calm summer light. Original character: no straw hat, no red vest, no young hero. No text or logo.',
+        "Riding a giant sea turtle across bright blue waves, an island postwoman with an enormous grin stretches her arm impossibly far to deliver a parcel to a passing ship. No readable text or logo.",
+        "A strongman hauls a festival float uphill single-handed, grinning so wide his face nearly splits in half. No readable text or logo.",
+        "A plump old fisherman with a huge curling mustache naps on his boat while seagulls carry away his lunch. No readable text or logo.",
       ],
     },
     'SP05-028': {
@@ -944,9 +944,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Lo-fi sword roadtrip anime of an adult wandering minstrel crossing a dry salt flat with a lute on his back toward a distant ruined castle, dry brush lines, a long low horizon and dusty ochre sky. No text or logo.',
-        'Lo-fi sword roadtrip anime of an adult drifter hitchhiking beside a broken-down truck on a dusty mountain road, sepia dust, pale cyan sky, off-axis framing. No text or logo.',
-        'Lo-fi sword roadtrip anime of an adult orchard picker eating a peach on a wooden porch step at sunset, scratched brush edges and analog grain, a quiet pause. No text or logo.',
+        "Crossing a dry salt flat at noon, a wandering minstrel with a lute on his back hitches a ride on a donkey cart driven by a grinning grandmother. No readable text or logo.",
+        "A drifter sits beside a broken-down bus on an empty desert road, a mangy dog sharing her last orange. No readable text or logo.",
+        "An orchard picker eats a peach on a wooden porch at sunset, the road stretching away behind her. No readable text or logo.",
       ],
     },
     'SP05-029': {
@@ -968,9 +968,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Chaotic indie adolescence anime of an adult on a battered yellow scooter jumping a river levee, the frame split into tilted panels with torn overdrawn contours, complementary blue and orange blocks, halftone sky. No text or logo.',
-        'Chaotic indie adolescence anime of a small dragon hatching from an egg on a cluttered bedroom desk, panel cuts bursting into the frame, pink and green collage blocks, registration slip. No text or logo.',
-        'Chaotic indie adolescence anime of an adult brushing her teeth at a cracked mirror, the scene split into a few tilted panels and halftone blocks, ordinary morning routine. No text or logo.',
+        "Jumping a river levee on a battered scooter, a forty-year-old accountant screams with joy as the frame splits into manga panels around her. No readable text or logo.",
+        "A small dragon hatches from an egg on a cluttered desk, knocking over pens and snack wrappers in a chaotic burst. No readable text or logo.",
+        "A woman brushes her teeth at a cracked mirror as a giant robot quietly walks past her window. No readable text or logo.",
       ],
     },
     'SP05-142': {
@@ -994,9 +994,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'twin pistols', 'gun', 'torpedo boat'],
       briefs: [
-        'Humid tropic grit cel of an adult smuggler captain steering a rust-streaked launch through a mangrove swamp, sweat sheen on her arms, humid haze, pressure-heavy contours and harsh overhead sun. No text or logo.',
-        'Humid tropic grit cel of an adult dock boss on a sun-bleached pier arguing with a pelican over a fish crate, scuffed ink, faded teal paint, strong diagonal. No text or logo.',
-        'Humid tropic grit cel of an adult fruit seller slicing a mango under a tin awning at noon, sweat-sheen highlights and hard shadows, a quiet ordinary task. No text or logo.',
+        "Steering a rust-streaked launch through a mangrove swamp at noon, a smuggler captain in a sweat-soaked tank top eyes a patrol boat through the humid haze. No readable text or logo.",
+        "A dock boss on a sun-bleached pier argues with a fisherman over a crate that is definitely not full of fish. No readable text or logo.",
+        "Under a rusty tin awning in a port market, a fruit seller slices a mango with a machete, calmly ignoring the loud gunrunner argument next door. No readable text or logo.",
       ],
     },
     'SP05-143': {
@@ -1020,9 +1020,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Cold starfield night noir of an adult watchman standing on a water tower above a blacked-out city, an unnaturally dense starfield overhead, thin cyan lines tracing his coat, guarded negative space. No text or logo.',
-        'Cold starfield night noir of an adult courier in a long coat crossing an empty suspension bridge beneath the stars, blue-black cables threaded with cyan, off-center balance. No text or logo.',
-        'Cold starfield night noir of an adult night janitor mopping a glass lobby, reflective streaks on the floor, a sliver of starfield in the windows, calm and ordinary. No text or logo.',
+        "Standing on a water tower above a blacked-out city, a watchman looks up as one star in the false sky suddenly falls, and a building across town lights up blue. No readable text or logo.",
+        "A courier in a long coat crosses an empty square at night, her shadow flickering with electric sparks. No readable text or logo.",
+        "Mopping a glass lobby at three in the morning, a tired night janitor notices reflections of strange unfamiliar stars glimmering in every puddle. No readable text or logo.",
       ],
     },
     'SP05-144': {
@@ -1044,9 +1044,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        'Record-scratch stutter swagger of an adult street dancer spinning on one hand in a feudal rice-paddy village, her legs doubled into offset stutter outlines like a scratched record, flattened woodblock hills, dusty gold light. No text or logo.',
-        'Record-scratch stutter swagger of a rooster strutting along a temple wall, each step a doubled jittering outline, vinyl scratches over warm brown flats, magenta tail accent. No text or logo.',
-        'Record-scratch stutter swagger of an adult teahouse owner fanning herself on her veranda in the afternoon heat, loose ink-brush figure, only the fan carrying a small stutter outline. No text or logo.',
+        "Spinning on one hand in a feudal rice-paddy village, a street dancer freezes mid-move as the whole scene stutters like a scratched record around him. No readable text or logo.",
+        "Strutting along a crumbling temple wall at noon, a proud rooster moves in stuttering freeze-frame beats as if the whole scene were being scratched on a turntable. No readable text or logo.",
+        "A teahouse owner fans herself on her porch, the heat shimmer pulsing like a slow beat. No readable text or logo.",
       ],
     },
   },

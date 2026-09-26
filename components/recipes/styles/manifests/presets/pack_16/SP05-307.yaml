@@ -6,7 +6,7 @@ styleAnchors:
   - Mitsuru Adachi - Summer Sports Melodrama
 displayName: Mitsuru Adachi - Summer Sports Melodrama
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Summer blue, field green, dusty brown diamond and cream.
   lighting_and_shadow: Bright summer sun with soft cel shadows and heat haze.
   texture_and_material: Clean minimal lines, sparse detail, empty skies and cicada-heavy stillness.

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sword of the Stranger - Rain Duel Slow-Motion
 category: 6. Samurai & Medieval
 domain: slow-motion rain anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'BONES Sword of the Stranger feature look (2007): exceptional hand-drawn sword choreography, realistic period designs, rain, dust and weighty slow-motion clashes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic lean designs, weathered faces, practical period clothes and accurate sword stances. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted rain grey, earth brown, pine green and pale sky.
   lighting_and_shadow: Overcast rain light, sparks from clashing blades and wet reflections.
   texture_and_material: Precise hand-drawn cel, rain streaks, flying droplets and dust.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

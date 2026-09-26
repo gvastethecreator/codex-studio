@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Hideshi Hino - Rot Garden Fungal Horror
 category: 7. Horror
 domain: fungal horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink and grey tone with sickly yellow-green in color plates.
   lighting_and_shadow: Dusty sunbeams falling through grimy glass into murky greenhouse shadows.
   texture_and_material: Blotchy organic textures, stippled rot and oozing lines.
@@ -38,8 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -50,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

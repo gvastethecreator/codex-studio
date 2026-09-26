@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-047
 packId: pack_05
-name: Tiny-Figure Grand Arc Wide
+name: Yasuo Otsuka - Tiny-Figure Grand Arc Wide
 styleAnchors:
-  - Tiny-Figure Grand Arc Wide
+  - Yasuo Otsuka - Tiny-Figure Grand Arc Wide
   - anime action staging
   - tiny subject under one twentieth of frame height
-displayName: Tiny-Figure Grand Arc Wide
+displayName: Yasuo Otsuka - Tiny-Figure Grand Arc Wide
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - extreme-wide
   - scale-contrast
+  - reference-title
 visualDna:
-  aesthetic: 'Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the extreme wide shot where a tiny subject draws one grand arc through vast space, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the landscape stays in soft layered values while the subject and its arc carry the only sharp contrast.
-  lighting_and_shadow: Broad atmospheric light with aerial perspective; a small bright highlight marks the subject.
-  texture_and_material: Painted background layers with atmospheric haze; the arc is formed by existing material such as dust, wake, spray or footprints.
-  camera_and_composition: Very wide establishing view from a high distant vantage, the arc spanning at least two thirds of the frame width.
-  atmosphere_and_mood: Epic scale and solitude, one small life moving through a huge world.
-  rendering_and_quality: Clean readable arc, a tiny but unmistakable subject, and painterly depth layers.
-  creative_brief: "Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior. Carry it through tiny subject under one twentieth of frame height, one grand movement arc, vast layered space, high distant vantage, arc from existing material. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material
+  aesthetic: 'Yasuo Otsuka classic animation: charming lively motion, tiny figures moving with big clear arcs across grand landscapes, and joyful mechanical detail.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw tiny figures with clear readable silhouettes moving in big arcs across vast landscapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glassy fjord blues, mountain greens and clean sky tones.
+  lighting_and_shadow: Clear bright daylight over vast painted landscapes and open skies.
+  texture_and_material: Classic clean hand-drawn cel with lush painted landscape backgrounds.
+  camera_and_composition: Extreme wide shots with tiny figures tracing big arcs.
+  atmosphere_and_mood: Keep the requested mood with joyful vast adventure.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Yasuo Otsuka classic animation: charming lively motion, tiny figures moving with big clear arcs across grand landscapes, and joyful mechanical detail. Carry it through Yasuo Otsuka charm, tiny figures, grand arcs, vast landscapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yasuo Otsuka charm; tiny figures; grand arcs; vast landscapes
 avoidRules:
   - added opponent
   - added sports gear
@@ -45,10 +46,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-047.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -59,6 +64,7 @@ taxonomy:
     - action
     - extreme-wide
     - scale-contrast
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

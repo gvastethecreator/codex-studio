@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Yami Shibai - Shadow Play Horror
 category: 7. Horror
 domain: silhouette horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Amber lamp glow, deep black and blood-orange washes.
   lighting_and_shadow: Warm amber lamp light glowing behind thin paper screens at night.
   texture_and_material: Cut-paper figures, visible paper grain and loose painted color washes.
@@ -38,8 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -50,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

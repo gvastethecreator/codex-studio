@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-065
 packId: pack_05
-name: Pale Threshold Horror Style
+name: Norihiro Yagi - Pale Threshold Horror Style
 styleAnchors:
-  - Pale Threshold Horror Style
-displayName: Pale Threshold Horror
+  - Norihiro Yagi - Pale Threshold Horror Style
+displayName: Norihiro Yagi - Pale Threshold Horror Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Pale seinen horror line art of open white planes, thin silver-gray edge gaps and deliberately withheld contour segments, so forms dissolve into the paper at their edges.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Ash white, cool silver and very pale local colors; darks are rare and small.
-  lighting_and_shadow: Quiet diffuse high-key light with very few fine highlights and almost no cast shadow.
-  texture_and_material: Clean matte washes with a faint paper grain and no fog overlay unless the prompt asks for it.
-  camera_and_composition: Keep the requested framing; generous negative space and contour gaps create a threshold feeling.
-  atmosphere_and_mood: Subtle wrongness and a quiet, bright, high-key unease.
-  rendering_and_quality: Sparse, pale, withheld lines that stay legible; no jump-scare darkness.
-  key_features: high-key pale planes; withheld contour segments; silver-gray edge gaps; ash-white palette; rare small darks
-  creative_brief: "Pale seinen horror line art of open white planes, thin silver-gray edge gaps and deliberately withheld contour segments, so forms dissolve into the paper at their edges. Carry it through high-key pale planes, withheld contour segments, silver-gray edge gaps, ash-white palette, rare small darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Norihiro Yagi Claymore manga look: pale silver-eyed warrior women, huge slim claymores, medieval towns haunted by monsters, and cold clean line with horror undertones.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with Yagi designs, pale hair, silver eyes, slim armored bodies and cloaks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale silver, grey, cold blue and bone white.
+  lighting_and_shadow: Cold pale overcast light and an eerie silver glow in the eyes.
+  texture_and_material: Clean cold pen line with smooth grey tone and pale highlights.
+  camera_and_composition: Stoic lone warrior compositions and sudden monster reveals in villages.
+  atmosphere_and_mood: Keep the requested mood with pale threshold horror.
+  rendering_and_quality: Cold clean dark fantasy manga illustration with pale horror.
+  key_features: Norihiro Yagi pale warriors; silver eyes; cold line; monsters
+  creative_brief: "Norihiro Yagi Claymore manga look: pale silver-eyed warrior women, huge slim claymores, medieval towns haunted by monsters, and cold clean line with horror undertones. Carry it through Norihiro Yagi pale warriors, silver eyes, cold line, monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a silver-eyed warrior woman with a huge claymore and cape
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -45,8 +48,6 @@ avoidRules:
   - hunter/prey body
   - chase
   - weapon
-  - blood
-  - gore
   - monster
   - corridor
   - confrontation scene
@@ -67,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-065.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter/prey body, chase, weapon, blood, gore, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a silver-eyed warrior woman with a huge claymore and cape, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter/prey body, chase, weapon, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

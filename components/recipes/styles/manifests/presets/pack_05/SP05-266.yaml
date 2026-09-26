@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-266
 packId: pack_05
-name: Black Particle Fugitive Style
+name: Ajin Polygon - Black Particle Fugitive Style
 styleAnchors:
-  - Black Particle Fugitive Style
-displayName: Black Particle Fugitive
+  - Ajin Polygon - Black Particle Fugitive Style
+displayName: Ajin Polygon - Black Particle Fugitive Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Kinetic anime ink in which the subject's trailing edges disintegrate into small separated black flecks and broken contourlets, as if its own movement were blowing the drawing apart.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Charcoal and ash values with a few cool pale-blue flecks; the prompt colors stay on the solid core of the subject.
-  lighting_and_shadow: Tiny edge glints only where the prompt light strikes; the flecks stay dark and never glow.
-  texture_and_material: Sparse matte pigment granulation, flecks ranging from pinpoint to rice-grain size and thinning with distance from the silhouette.
-  camera_and_composition: Keep the requested camera; flecks stream off the trailing side of the motion or wind, leaving the leading edge crisp.
-  atmosphere_and_mood: Restless and transient, a figure half escaping the page.
-  rendering_and_quality: Solid crisp core with a disintegrating trailing edge; fleck scatter stays controlled and never becomes an all-over noise layer.
-  key_features: trailing edges dissolving into black flecks; crisp leading edge; charcoal and ash with pale-blue flecks; granulated matte pigment; fleck size gradient
-  creative_brief: "Kinetic anime ink in which the subject's trailing edges disintegrate into small separated black flecks and broken contourlets, as if its own movement were blowing the drawing apart. Carry it through trailing edges dissolving into black flecks, crisp leading edge, charcoal and ash with pale-blue flecks, granulated matte pigment, fleck size gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Polygon Pictures Ajin look (2016): cel-shaded 3D fugitive thriller, black particle phantoms made of smoky ash, cold urban Japan and tense chase scenes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as cel-shaded CG figures in casual clothes, with smoky black particle phantoms standing behind them. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cold urban grey, black particles, pale skin and muted blue.
+  lighting_and_shadow: Cold overcast light with black particle smoke absorbing it.
+  texture_and_material: Cel-shaded CG surfaces with swirling black particle effects.
+  camera_and_composition: Chase compositions in stairwells and alleys, phantoms looming behind.
+  atmosphere_and_mood: Keep the requested mood with tense fugitive dread.
+  rendering_and_quality: Cold cel-shaded Polygon Pictures frame with particle phantoms.
+  key_features: Cel-shaded CG; black particle phantoms; fugitive chase; cold city
+  creative_brief: "Polygon Pictures Ajin look (2016): cel-shaded 3D fugitive thriller, black particle phantoms made of smoky ash, cold urban Japan and tense chase scenes. Carry it through Cel-shaded CG, black particle phantoms, fugitive chase, cold city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-266.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

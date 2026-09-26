@@ -9,8 +9,8 @@
   "presets": [
     {
       "id": "SP05-034",
-      "name": "Crosshatched Primary Hero Cel",
-      "styleAnchors": ["Crosshatched Primary Hero Cel", "Bright Hero Academy"],
+      "name": "Kohei Horikoshi - Crosshatched Primary Hero Cel",
+      "styleAnchors": ["Kohei Horikoshi - Crosshatched Primary Hero Cel", "Bright Hero Academy"],
       "ref": "pack_05/SP05-034.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -18,13 +18,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-034 crosshatched primary hero cel bright hero academy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-034 kohei horikoshi - crosshatched primary hero cel bright hero academy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-133",
-      "name": "Deadpan Filigree Brick Comedy",
+      "name": "Hajime Komoto - Deadpan Filigree Brick Comedy",
       "styleAnchors": [
-        "Deadpan Filigree Brick Comedy",
+        "Hajime Komoto - Deadpan Filigree Brick Comedy",
         "Mashle - Brickwall Comedy Spell-School Brawl"
       ],
       "ref": "pack_05/SP05-133.yaml",
@@ -34,13 +34,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-133 deadpan filigree brick comedy mashle - brickwall comedy spell-school brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-133 hajime komoto - deadpan filigree brick comedy mashle - brickwall comedy spell-school brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-134",
-      "name": "Fluorescent Everyday Snap Action",
+      "name": "Yuto Suzuki - Fluorescent Everyday Snap Action",
       "styleAnchors": [
-        "Fluorescent Everyday Snap Action",
+        "Yuto Suzuki - Fluorescent Everyday Snap Action",
         "Sakamoto Days - Convenience-Store Assassin Sprint"
       ],
       "ref": "pack_05/SP05-134.yaml",
@@ -50,13 +50,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-134 fluorescent everyday snap action sakamoto days - convenience-store assassin sprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-134 yuto suzuki - fluorescent everyday snap action sakamoto days - convenience-store assassin sprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-032",
-      "name": "Urban Curse Action",
-      "sourceName": "Gritty Urban Curses",
-      "styleAnchors": ["Gritty Urban Curses"],
+      "name": "Gege Akutami - Gritty Urban Curses",
+      "styleAnchors": ["Gege Akutami - Gritty Urban Curses"],
       "ref": "pack_05/SP05-032.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -64,13 +63,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-032 urban curse action gritty urban curses 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-032 gege akutami - gritty urban curses 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-035",
-      "name": "Wallbound Survival Drama",
-      "sourceName": "Gritty Wallbound Survival",
-      "styleAnchors": ["Gritty Wallbound Survival"],
+      "name": "Attack on Titan WIT - Gritty Wallbound Survival",
+      "styleAnchors": ["Attack on Titan WIT - Gritty Wallbound Survival"],
       "ref": "pack_05/SP05-035.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -78,13 +76,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-035 wallbound survival drama gritty wallbound survival 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-035 attack on titan wit - gritty wallbound survival 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-036",
-      "name": "Colossal War Shonen",
-      "sourceName": "Colossal War Drama",
-      "styleAnchors": ["Colossal War Drama"],
+      "name": "Violet Evergarden - Colossal War Drama",
+      "styleAnchors": ["Violet Evergarden - Colossal War Drama"],
       "ref": "pack_05/SP05-036.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -92,11 +89,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-036 colossal war shonen colossal war drama 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-036 violet evergarden - colossal war drama 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-039",
-      "name": "Tactical Adventure Shonen",
+      "name": "Hunter x Hunter 2011 - Tactical Adventure Shonen",
+      "styleAnchors": ["Hunter x Hunter 2011 - Tactical Adventure Shonen"],
       "ref": "pack_05/SP05-039.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -104,13 +102,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-039 tactical adventure shonen 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-039 hunter x hunter 2011 - tactical adventure shonen 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-121",
-      "name": "Printed-Wave Effect Trail Cel",
+      "name": "Demon Slayer ufotable - Printed-Wave Effect Trail Cel",
       "styleAnchors": [
-        "Printed-Wave Effect Trail Cel",
+        "Demon Slayer ufotable - Printed-Wave Effect Trail Cel",
         "Demon Slayer - Lantern Bloodline Sword Ballet"
       ],
       "ref": "pack_05/SP05-121.yaml",
@@ -120,13 +118,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-121 printed-wave effect trail cel demon slayer - lantern bloodline sword ballet 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-121 demon slayer ufotable - printed-wave effect trail cel demon slayer - lantern bloodline sword ballet 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-124",
-      "name": "Ultramarine Glare Foreshortening",
+      "name": "Yusuke Nomura - Ultramarine Glare Foreshortening",
       "styleAnchors": [
-        "Ultramarine Glare Foreshortening",
+        "Yusuke Nomura - Ultramarine Glare Foreshortening",
         "Blue Lock - Predator-Ego Sports Assault"
       ],
       "ref": "pack_05/SP05-124.yaml",
@@ -136,13 +134,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-124 ultramarine glare foreshortening blue lock - predator-ego sports assault 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-124 yusuke nomura - ultramarine glare foreshortening blue lock - predator-ego sports assault 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-128",
-      "name": "Inverted Negative Ink Opera",
+      "name": "Bleach TYBW - Inverted Negative Ink Opera",
       "styleAnchors": [
-        "Inverted Negative Ink Opera",
+        "Bleach TYBW - Inverted Negative Ink Opera",
         "Bleach: Thousand-Year Blood War - Royal Black Blade Opera"
       ],
       "ref": "pack_05/SP05-128.yaml",
@@ -152,13 +150,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-128 inverted negative ink opera bleach: thousand-year blood war - royal black blade opera 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-128 bleach tybw - inverted negative ink opera bleach: thousand-year blood war - royal black blade opera 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-131",
-      "name": "Sky-Blue Low-Angle Brawler Cel",
+      "name": "Wind Breaker 2024 - Sky-Blue Low-Angle Brawler Cel",
       "styleAnchors": [
-        "Sky-Blue Low-Angle Brawler Cel",
+        "Wind Breaker 2024 - Sky-Blue Low-Angle Brawler Cel",
         "Wind Breaker - Delinquent Street Protector Rush"
       ],
       "ref": "pack_05/SP05-131.yaml",
@@ -168,12 +166,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-131 sky-blue low-angle brawler cel wind breaker - delinquent street protector rush 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-131 wind breaker 2024 - sky-blue low-angle brawler cel wind breaker - delinquent street protector rush 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-135",
-      "name": "Broken-Rule Halftone Shatter",
-      "styleAnchors": ["Broken-Rule Halftone Shatter", "Undead Unluck - Rule-Breaker Curse Impact"],
+      "name": "Yoshifumi Tozuka - Broken-Rule Halftone Shatter",
+      "styleAnchors": [
+        "Yoshifumi Tozuka - Broken-Rule Halftone Shatter",
+        "Undead Unluck - Rule-Breaker Curse Impact"
+      ],
       "ref": "pack_05/SP05-135.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -181,12 +182,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-135 broken-rule halftone shatter undead unluck - rule-breaker curse impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-135 yoshifumi tozuka - broken-rule halftone shatter undead unluck - rule-breaker curse impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-136",
-      "name": "Etched Branch-Lightning Cel",
-      "styleAnchors": ["Etched Branch-Lightning Cel", "Black Clover - Grimoire Thunder Squad"],
+      "name": "Yuki Tabata - Etched Branch-Lightning Cel",
+      "styleAnchors": [
+        "Yuki Tabata - Etched Branch-Lightning Cel",
+        "Black Clover - Grimoire Thunder Squad"
+      ],
       "ref": "pack_05/SP05-136.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -194,13 +198,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-136 etched branch-lightning cel black clover - grimoire thunder squad 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-136 yuki tabata - etched branch-lightning cel black clover - grimoire thunder squad 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-138",
-      "name": "Sumi-Black Neon Edge Stillness",
+      "name": "Takeru Hokazono - Sumi-Black Neon Edge Stillness",
       "styleAnchors": [
-        "Sumi-Black Neon Edge Stillness",
+        "Takeru Hokazono - Sumi-Black Neon Edge Stillness",
         "Kagurabachi - Sword Oath Under Neon Rain"
       ],
       "ref": "pack_05/SP05-138.yaml",
@@ -210,13 +214,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-138 sumi-black neon edge stillness kagurabachi - sword oath under neon rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-138 takeru hokazono - sumi-black neon edge stillness kagurabachi - sword oath under neon rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-139",
-      "name": "Crosshatched Giant-Scale Panic",
+      "name": "Hajime Isayama - Crosshatched Giant-Scale Panic",
       "styleAnchors": [
-        "Crosshatched Giant-Scale Panic",
+        "Hajime Isayama - Crosshatched Giant-Scale Panic",
         "Attack on Titan - Wall Rupture Desperation"
       ],
       "ref": "pack_05/SP05-139.yaml",
@@ -226,13 +230,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-139 crosshatched giant-scale panic attack on titan - wall rupture desperation 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-139 hajime isayama - crosshatched giant-scale panic attack on titan - wall rupture desperation 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-140",
-      "name": "Pale Calm Spell Geometry",
+      "name": "Frieren Madhouse - Pale Calm Spell Geometry",
       "styleAnchors": [
-        "Pale Calm Spell Geometry",
+        "Frieren Madhouse - Pale Calm Spell Geometry",
         "Frieren Combat Flashback - Ancient Calm Spell Impact"
       ],
       "ref": "pack_05/SP05-140.yaml",
@@ -242,13 +246,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-140 pale calm spell geometry frieren combat flashback - ancient calm spell impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-140 frieren madhouse - pale calm spell geometry frieren combat flashback - ancient calm spell impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-037",
-      "name": "Impact Comedy Heroics",
-      "sourceName": "Impact Frame Comedy Hero",
-      "styleAnchors": ["Impact Frame Comedy Hero"],
+      "name": "Hirohiko Araki - Impact Frame Comedy Hero",
+      "styleAnchors": ["Hirohiko Araki - Impact Frame Comedy Hero"],
       "ref": "pack_05/SP05-037.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -256,12 +259,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-037 impact comedy heroics impact frame comedy hero 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-037 hirohiko araki - impact frame comedy hero 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-129",
-      "name": "Dual-Detail Deadpan Satire",
-      "styleAnchors": ["Dual-Detail Deadpan Satire", "One-Punch Man - Prestige Hero Impact Satire"],
+      "name": "One-Punch Man Madhouse - Dual-Detail Deadpan Satire",
+      "styleAnchors": [
+        "One-Punch Man Madhouse - Dual-Detail Deadpan Satire",
+        "One-Punch Man - Prestige Hero Impact Satire"
+      ],
       "ref": "pack_05/SP05-129.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -269,13 +275,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-129 dual-detail deadpan satire one-punch man - prestige hero impact satire 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-129 one-punch man madhouse - dual-detail deadpan satire one-punch man - prestige hero impact satire 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-132",
-      "name": "Full-Color Manhwa Shadow Glow",
+      "name": "DUBU Solo Leveling - Full-Color Manhwa Shadow Glow",
       "styleAnchors": [
-        "Full-Color Manhwa Shadow Glow",
+        "DUBU Solo Leveling - Full-Color Manhwa Shadow Glow",
         "Solo Leveling - Shadow Monarch Raid Ascension"
       ],
       "ref": "pack_05/SP05-132.yaml",
@@ -285,13 +291,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-132 full-color manhwa shadow glow solo leveling - shadow monarch raid ascension 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-132 dubu solo leveling - full-color manhwa shadow glow solo leveling - shadow monarch raid ascension 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-040",
-      "name": "Urban Blade Field",
-      "sourceName": "Blade Field Urban Fantasy",
-      "styleAnchors": ["Blade Field Urban Fantasy"],
+      "name": "Fate UBW ufotable - Blade Field Urban Fantasy",
+      "styleAnchors": ["Fate UBW ufotable - Blade Field Urban Fantasy"],
       "ref": "pack_05/SP05-040.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -299,12 +304,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-040 urban blade field blade field urban fantasy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-040 fate ubw ufotable - blade field urban fantasy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-123",
-      "name": "White-Core Flame Halo Cel",
-      "styleAnchors": ["White-Core Flame Halo Cel", "Fire Force - Cathedral Inferno Brigade"],
+      "name": "Fire Force David Production - White-Core Flame Halo Cel",
+      "styleAnchors": [
+        "Fire Force David Production - White-Core Flame Halo Cel",
+        "Fire Force - Cathedral Inferno Brigade"
+      ],
       "ref": "pack_05/SP05-123.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -312,13 +320,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-123 white-core flame halo cel fire force - cathedral inferno brigade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-123 fire force david production - white-core flame halo cel fire force - cathedral inferno brigade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-125",
-      "name": "Hazard-Orange Monster Response Cel",
+      "name": "Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel",
       "styleAnchors": [
-        "Hazard-Orange Monster Response Cel",
+        "Kaiju No. 8 Production I.G - Hazard-Orange Monster Response Cel",
         "Kaiju No. 8 - Civic Monster Response Unit"
       ],
       "ref": "pack_05/SP05-125.yaml",
@@ -328,13 +336,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-125 hazard-orange monster response cel kaiju no. 8 - civic monster response unit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-125 kaiju no. 8 production i.g - hazard-orange monster response cel kaiju no. 8 - civic monster response unit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-126",
-      "name": "Acid Occult Color-Burst Smear",
+      "name": "Dandadan Science SARU - Acid Occult Color-Burst Smear",
       "styleAnchors": [
-        "Acid Occult Color-Burst Smear",
+        "Dandadan Science SARU - Acid Occult Color-Burst Smear",
         "Dandadan - Paranormal Turbo Romance Brawl"
       ],
       "ref": "pack_05/SP05-126.yaml",
@@ -344,12 +352,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-126 acid occult color-burst smear dandadan - paranormal turbo romance brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-126 dandadan science saru - acid occult color-burst smear dandadan - paranormal turbo romance brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-127",
-      "name": "Toxic Flower Etched Ink",
-      "styleAnchors": ["Toxic Flower Etched Ink", "Hell's Paradise - Poison Garden Executioner"],
+      "name": "Yuji Kaku - Toxic Flower Etched Ink",
+      "styleAnchors": [
+        "Yuji Kaku - Toxic Flower Etched Ink",
+        "Hell's Paradise - Poison Garden Executioner"
+      ],
       "ref": "pack_05/SP05-127.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -357,13 +368,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-127 toxic flower etched ink hell's paradise - poison garden executioner 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-127 yuji kaku - toxic flower etched ink hell's paradise - poison garden executioner 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-038",
-      "name": "Psychic Minimalist Action",
-      "sourceName": "Psychedelic Psychic Minimalism",
-      "styleAnchors": ["Psychedelic Psychic Minimalism"],
+      "name": "ONE - Psychedelic Psychic Minimalism",
+      "styleAnchors": ["ONE - Psychedelic Psychic Minimalism"],
       "ref": "pack_05/SP05-038.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -371,13 +381,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-038 psychic minimalist action psychedelic psychic minimalism 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-038 one - psychedelic psychic minimalism 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-130",
-      "name": "Paint-on-Glass Surge Burst",
+      "name": "Mob Psycho 100 BONES - Paint-on-Glass Surge Burst",
       "styleAnchors": [
-        "Paint-on-Glass Surge Burst",
+        "Mob Psycho 100 BONES - Paint-on-Glass Surge Burst",
         "Mob Psycho 100 - Psychic Paint-Surge Meltdown"
       ],
       "ref": "pack_05/SP05-130.yaml",
@@ -387,13 +397,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-130 paint-on-glass surge burst mob psycho 100 - psychic paint-surge meltdown 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-130 mob psycho 100 bones - paint-on-glass surge burst mob psycho 100 - psychic paint-surge meltdown 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-137",
-      "name": "Chalk-Schematic Inventor Cel",
+      "name": "Boichi - Chalk-Schematic Inventor Cel",
       "styleAnchors": [
-        "Chalk-Schematic Inventor Cel",
+        "Boichi - Chalk-Schematic Inventor Cel",
         "Dr. Stone - Science Kingdom Action Blueprint"
       ],
       "ref": "pack_05/SP05-137.yaml",
@@ -403,11 +413,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-137 chalk-schematic inventor cel dr. stone - science kingdom action blueprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-137 boichi - chalk-schematic inventor cel dr. stone - science kingdom action blueprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-031",
-      "name": "Painterly Blade Fantasy",
+      "name": "Mo Dao Zu Shi - Painterly Blade Fantasy",
+      "styleAnchors": ["Mo Dao Zu Shi - Painterly Blade Fantasy"],
       "ref": "pack_05/SP05-031.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -415,13 +426,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-031 painterly blade fantasy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-031 mo dao zu shi - painterly blade fantasy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-033",
-      "name": "Splatter Punk Action",
-      "sourceName": "Chaotic Splatter Action",
-      "styleAnchors": ["Chaotic Splatter Action"],
+      "name": "Tatsuki Fujimoto - Chaotic Splatter Action",
+      "styleAnchors": ["Tatsuki Fujimoto - Chaotic Splatter Action"],
       "ref": "pack_05/SP05-033.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -429,12 +439,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-033 splatter punk action chaotic splatter action 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-033 tatsuki fujimoto - chaotic splatter action 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-122",
-      "name": "Muted Cinematic Grime Frenzy",
-      "styleAnchors": ["Muted Cinematic Grime Frenzy", "Chainsaw Man - Filthy Devil-Hunter Frenzy"],
+      "name": "Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy",
+      "styleAnchors": [
+        "Chainsaw Man MAPPA - Muted Cinematic Grime Frenzy",
+        "Chainsaw Man - Filthy Devil-Hunter Frenzy"
+      ],
       "ref": "pack_05/SP05-122.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -442,13 +455,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-122 muted cinematic grime frenzy chainsaw man - filthy devil-hunter frenzy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-122 chainsaw man mappa - muted cinematic grime frenzy chainsaw man - filthy devil-hunter frenzy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-025",
-      "name": "Psychological Notebook Noir",
-      "sourceName": "Shadow Notebook Thriller",
-      "styleAnchors": ["Shadow Notebook Thriller"],
+      "name": "Takeshi Obata - Shadow Notebook Thriller",
+      "styleAnchors": ["Takeshi Obata - Shadow Notebook Thriller"],
       "ref": "pack_05/SP05-025.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -456,12 +468,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-025 psychological notebook noir shadow notebook thriller 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-025 takeshi obata - shadow notebook thriller 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-148",
-      "name": "Amber Jazz-Age Ensemble Cel",
-      "styleAnchors": ["Amber Jazz-Age Ensemble Cel", "Baccano! - Jazz Railcrime Ensemble"],
+      "name": "Baccano! Brains Base - Amber Jazz-Age Ensemble Cel",
+      "styleAnchors": [
+        "Baccano! Brains Base - Amber Jazz-Age Ensemble Cel",
+        "Baccano! - Jazz Railcrime Ensemble"
+      ],
       "ref": "pack_05/SP05-148.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -469,12 +484,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-148 amber jazz-age ensemble cel baccano! - jazz railcrime ensemble 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-148 baccano! brains base - amber jazz-age ensemble cel baccano! - jazz railcrime ensemble 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-021",
-      "name": "Teal-Orange Sakuga Smear",
-      "styleAnchors": ["Teal-Orange Sakuga Smear", "Headband Ninja Journey"],
+      "name": "Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear",
+      "styleAnchors": [
+        "Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear",
+        "Headband Ninja Journey"
+      ],
       "ref": "pack_05/SP05-021.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -482,13 +500,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-021 teal-orange sakuga smear headband ninja journey 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-021 naruto shippuden pierrot - teal-orange sakuga smear headband ninja journey 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-022",
-      "name": "Urban Spirit Swordplay",
-      "sourceName": "Urban Spirit Blade",
-      "styleAnchors": ["Urban Spirit Blade"],
+      "name": "Tite Kubo - Urban Spirit Blade",
+      "styleAnchors": ["Tite Kubo - Urban Spirit Blade"],
       "ref": "pack_05/SP05-022.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -496,12 +513,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-022 urban spirit swordplay urban spirit blade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-022 tite kubo - urban spirit blade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-023",
-      "name": "Elastic Big-Grin Adventure Cel",
-      "styleAnchors": ["Elastic Big-Grin Adventure Cel", "Grand Pirate Adventure"],
+      "name": "Eiichiro Oda - Elastic Big-Grin Adventure Cel",
+      "styleAnchors": ["Eiichiro Oda - Elastic Big-Grin Adventure Cel", "Grand Pirate Adventure"],
       "ref": "pack_05/SP05-023.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -509,13 +526,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-023 elastic big-grin adventure cel grand pirate adventure 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-023 eiichiro oda - elastic big-grin adventure cel grand pirate adventure 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-028",
-      "name": "Lo-Fi Sword Drifter",
-      "sourceName": "Lo-Fi Sword Roadtrip",
-      "styleAnchors": ["Lo-Fi Sword Roadtrip"],
+      "name": "Michiko and Hatchin - Lo-Fi Sword Roadtrip",
+      "styleAnchors": ["Michiko and Hatchin - Lo-Fi Sword Roadtrip"],
       "ref": "pack_05/SP05-028.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -523,11 +539,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-028 lo-fi sword drifter lo-fi sword roadtrip 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-028 michiko and hatchin - lo-fi sword roadtrip 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-029",
-      "name": "Chaotic Indie Adolescence",
+      "name": "FLCL - Chaotic Indie Adolescence",
+      "styleAnchors": ["FLCL - Chaotic Indie Adolescence"],
       "ref": "pack_05/SP05-029.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -535,12 +552,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-029 chaotic indie adolescence 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-029 flcl - chaotic indie adolescence 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-142",
-      "name": "Humid Tropic Grit Cel",
-      "styleAnchors": ["Humid Tropic Grit Cel", "Black Lagoon - South Seas Gun-Runner Grit"],
+      "name": "Rei Hiroe - Humid Tropic Grit Cel",
+      "styleAnchors": [
+        "Rei Hiroe - Humid Tropic Grit Cel",
+        "Black Lagoon - South Seas Gun-Runner Grit"
+      ],
       "ref": "pack_05/SP05-142.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -548,13 +568,13 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-142 humid tropic grit cel black lagoon - south seas gun-runner grit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-142 rei hiroe - humid tropic grit cel black lagoon - south seas gun-runner grit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-143",
-      "name": "Cold Starfield Night Noir",
+      "name": "Darker than Black BONES - Cold Starfield Night Noir",
       "styleAnchors": [
-        "Cold Starfield Night Noir",
+        "Darker than Black BONES - Cold Starfield Night Noir",
         "Darker than Black - Contract Killer Night Rain"
       ],
       "ref": "pack_05/SP05-143.yaml",
@@ -564,12 +584,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-143 cold starfield night noir darker than black - contract killer night rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-143 darker than black bones - cold starfield night noir darker than black - contract killer night rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-144",
-      "name": "Record-Scratch Stutter Swagger",
-      "styleAnchors": ["Record-Scratch Stutter Swagger", "Samurai Champloo - Lo-Fi Edo Swagger"],
+      "name": "Samurai Champloo - Record-Scratch Stutter Swagger",
+      "styleAnchors": [
+        "Samurai Champloo - Record-Scratch Stutter Swagger",
+        "Samurai Champloo - Lo-Fi Edo Swagger"
+      ],
       "ref": "pack_05/SP05-144.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -577,11 +600,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-144 record-scratch stutter swagger samurai champloo - lo-fi edo swagger 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-144 samurai champloo - record-scratch stutter swagger samurai champloo - lo-fi edo swagger 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-056",
-      "name": "Geometric Ignition Urgency",
+      "name": "Rebuild of Evangelion - Geometric Ignition Urgency",
+      "styleAnchors": ["Rebuild of Evangelion - Geometric Ignition Urgency"],
       "ref": "pack_05/SP05-056.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -589,11 +613,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-056 geometric ignition urgency 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-056 rebuild of evangelion - geometric ignition urgency 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-222",
-      "name": "Municipal Machine Procedure",
+      "name": "Patlabor Headgear - Municipal Machine Procedure",
+      "styleAnchors": ["Patlabor Headgear - Municipal Machine Procedure"],
       "ref": "pack_05/SP05-222.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -601,11 +626,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-222 municipal machine procedure 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-222 patlabor headgear - municipal machine procedure 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-224",
-      "name": "Sterile Arcology Severity",
+      "name": "Appleseed Aramaki - Sterile Arcology Severity",
+      "styleAnchors": ["Appleseed Aramaki - Sterile Arcology Severity"],
       "ref": "pack_05/SP05-224.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -613,11 +639,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-224 sterile arcology severity 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-224 appleseed aramaki - sterile arcology severity 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-228",
-      "name": "White Machine Elegy",
+      "name": "Casshern Sins Madhouse - White Machine Elegy",
+      "styleAnchors": ["Casshern Sins Madhouse - White Machine Elegy"],
       "ref": "pack_05/SP05-228.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -625,11 +652,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-228 white machine elegy 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-228 casshern sins madhouse - white machine elegy 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-236",
-      "name": "Compact Attrition Hardware",
+      "name": "VOTOMS Sunrise - Compact Attrition Hardware",
+      "styleAnchors": ["VOTOMS Sunrise - Compact Attrition Hardware"],
       "ref": "pack_05/SP05-236.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -637,11 +665,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-236 compact attrition hardware 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-236 votoms sunrise - compact attrition hardware 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-238",
-      "name": "Tokusatsu Digital Grid Scale",
+      "name": "SSSS.Gridman Trigger - Tokusatsu Digital Grid Scale",
+      "styleAnchors": ["SSSS.Gridman Trigger - Tokusatsu Digital Grid Scale"],
       "ref": "pack_05/SP05-238.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -649,11 +678,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-238 tokusatsu digital grid scale 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-238 ssss.gridman trigger - tokusatsu digital grid scale 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-240",
-      "name": "Tri-Fire Riot Geometry",
+      "name": "Kill la Kill Trigger - Tri-Fire Riot Geometry",
+      "styleAnchors": ["Kill la Kill Trigger - Tri-Fire Riot Geometry"],
       "ref": "pack_05/SP05-240.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -661,11 +691,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-240 tri-fire riot geometry 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-240 kill la kill trigger - tri-fire riot geometry 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-051",
-      "name": "Neon Kinetic Alloy Sprint",
+      "name": "Cyberpunk Edgerunners Trigger - Neon Kinetic Alloy Sprint",
+      "styleAnchors": ["Cyberpunk Edgerunners Trigger - Neon Kinetic Alloy Sprint"],
       "ref": "pack_05/SP05-051.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -673,11 +704,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-051 neon kinetic alloy sprint 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-051 cyberpunk edgerunners trigger - neon kinetic alloy sprint 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-052",
-      "name": "Surveillance Verdict Grid",
+      "name": "Psycho-Pass Production I.G - Surveillance Verdict Grid",
+      "styleAnchors": ["Psycho-Pass Production I.G - Surveillance Verdict Grid"],
       "ref": "pack_05/SP05-052.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -685,11 +717,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-052 surveillance verdict grid 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-052 psycho-pass production i.g - surveillance verdict grid 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-054",
-      "name": "Luminous Beam Opera",
+      "name": "Aldnoah.Zero - Luminous Beam Opera",
+      "styleAnchors": ["Aldnoah.Zero - Luminous Beam Opera"],
       "ref": "pack_05/SP05-054.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -697,11 +730,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-054 luminous beam opera 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-054 aldnoah.zero - luminous beam opera 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-055",
-      "name": "Gothic Tech Existential Dread",
+      "name": "Mamoru Nagano - Gothic Tech Existential Dread",
+      "styleAnchors": ["Mamoru Nagano - Gothic Tech Existential Dread"],
       "ref": "pack_05/SP05-055.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -709,11 +743,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-055 gothic tech existential dread 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-055 mamoru nagano - gothic tech existential dread 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-057",
-      "name": "Sleek Collapse Romance",
+      "name": "Darling in the Franxx - Sleek Collapse Romance",
+      "styleAnchors": ["Darling in the Franxx - Sleek Collapse Romance"],
       "ref": "pack_05/SP05-057.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -721,11 +756,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-057 sleek collapse romance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-057 darling in the franxx - sleek collapse romance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-058",
-      "name": "Remote Command Grief",
+      "name": "Stand Alone Complex - Remote Command Grief",
+      "styleAnchors": ["Stand Alone Complex - Remote Command Grief"],
       "ref": "pack_05/SP05-058.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -733,11 +769,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-058 remote command grief 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-058 stand alone complex - remote command grief 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-059",
-      "name": "Tactical Network Cognition",
+      "name": "Dennou Coil - Tactical Network Cognition",
+      "styleAnchors": ["Dennou Coil - Tactical Network Cognition"],
       "ref": "pack_05/SP05-059.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -745,11 +782,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-059 tactical network cognition 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-059 dennou coil - tactical network cognition 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-060",
-      "name": "Orbital Rivalry Symmetry",
+      "name": "Gundam Wing - Orbital Rivalry Symmetry",
+      "styleAnchors": ["Gundam Wing - Orbital Rivalry Symmetry"],
       "ref": "pack_05/SP05-060.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -757,11 +795,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-060 orbital rivalry symmetry 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-060 gundam wing - orbital rivalry symmetry 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-221",
-      "name": "Pop-Signal Engineered Romance",
+      "name": "Macross Frontier - Pop-Signal Engineered Romance",
+      "styleAnchors": ["Macross Frontier - Pop-Signal Engineered Romance"],
       "ref": "pack_05/SP05-221.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -769,11 +808,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-221 pop-signal engineered romance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-221 macross frontier - pop-signal engineered romance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-223",
-      "name": "Armored Chrome Noir Elegance",
+      "name": "Bubblegum Crisis AIC - Armored Chrome Noir Elegance",
+      "styleAnchors": ["Bubblegum Crisis AIC - Armored Chrome Noir Elegance"],
       "ref": "pack_05/SP05-223.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -781,11 +821,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-223 armored chrome noir elegance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-223 bubblegum crisis aic - armored chrome noir elegance 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-225",
-      "name": "Scrap Velocity Resilience",
+      "name": "Yukito Kishiro - Scrap Velocity Resilience",
+      "styleAnchors": ["Yukito Kishiro - Scrap Velocity Resilience"],
       "ref": "pack_05/SP05-225.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -793,11 +834,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-225 scrap velocity resilience 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-225 yukito kishiro - scrap velocity resilience 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-226",
-      "name": "Cyber-Goth Mausoleum Dread",
+      "name": "Ergo Proxy Manglobe - Cyber-Goth Mausoleum Dread",
+      "styleAnchors": ["Ergo Proxy Manglobe - Cyber-Goth Mausoleum Dread"],
       "ref": "pack_05/SP05-226.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -805,11 +847,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-226 cyber-goth mausoleum dread 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-226 ergo proxy manglobe - cyber-goth mausoleum dread 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-229",
-      "name": "Punitive Neon Vice Texture",
+      "name": "Cyber City Oedo 808 - Punitive Neon Vice Texture",
+      "styleAnchors": ["Cyber City Oedo 808 - Punitive Neon Vice Texture"],
       "ref": "pack_05/SP05-229.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -817,11 +860,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-229 punitive neon vice texture 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-229 cyber city oedo 808 - punitive neon vice texture 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-230",
-      "name": "Terminal Megastructure Silence",
+      "name": "Tsutomu Nihei - Terminal Megastructure Silence",
+      "styleAnchors": ["Tsutomu Nihei - Terminal Megastructure Silence"],
       "ref": "pack_05/SP05-230.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -829,11 +873,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-230 terminal megastructure silence 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-230 tsutomu nihei - terminal megastructure silence 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-231",
-      "name": "Coral Resonance Liturgy",
+      "name": "RahXephon BONES - Coral Resonance Liturgy",
+      "styleAnchors": ["RahXephon BONES - Coral Resonance Liturgy"],
       "ref": "pack_05/SP05-231.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -841,11 +886,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-231 coral resonance liturgy 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-231 rahxephon bones - coral resonance liturgy 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-232",
-      "name": "Dustfront Drone Lament",
+      "name": "86 A-1 Pictures - Dustfront Drone Lament",
+      "styleAnchors": ["86 A-1 Pictures - Dustfront Drone Lament"],
       "ref": "pack_05/SP05-232.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -853,11 +899,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-232 dustfront drone lament 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-232 86 a-1 pictures - dustfront drone lament 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-233",
-      "name": "Vacuum-Fortress Survival Discipline",
+      "name": "Knights of Sidonia Polygon - Vacuum-Fortress Survival Discipline",
+      "styleAnchors": ["Knights of Sidonia Polygon - Vacuum-Fortress Survival Discipline"],
       "ref": "pack_05/SP05-233.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -865,11 +912,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-233 vacuum-fortress survival discipline 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-233 knights of sidonia polygon - vacuum-fortress survival discipline 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-234",
-      "name": "Extinction Interface Command",
+      "name": "Muv-Luv Alternative - Extinction Interface Command",
+      "styleAnchors": ["Muv-Luv Alternative - Extinction Interface Command"],
       "ref": "pack_05/SP05-234.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -877,11 +925,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-234 extinction interface command 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-234 muv-luv alternative - extinction interface command 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-235",
-      "name": "Pop-Cyber Simulation Gloss",
+      "name": "Megazone 23 - Pop-Cyber Simulation Gloss",
+      "styleAnchors": ["Megazone 23 - Pop-Cyber Simulation Gloss"],
       "ref": "pack_05/SP05-235.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -889,11 +938,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-235 pop-cyber simulation gloss 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-235 megazone 23 - pop-cyber simulation gloss 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-237",
-      "name": "Monumental Ignition Sacrifice",
+      "name": "Gunbuster Gainax - Monumental Ignition Sacrifice",
+      "styleAnchors": ["Gunbuster Gainax - Monumental Ignition Sacrifice"],
       "ref": "pack_05/SP05-237.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -901,11 +951,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-237 monumental ignition sacrifice 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-237 gunbuster gainax - monumental ignition sacrifice 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-239",
-      "name": "Bubblegum Cosmic Overdrive",
+      "name": "Diebuster Gainax - Bubblegum Cosmic Overdrive",
+      "styleAnchors": ["Diebuster Gainax - Bubblegum Cosmic Overdrive"],
       "ref": "pack_05/SP05-239.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -913,11 +964,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-239 bubblegum cosmic overdrive 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-239 diebuster gainax - bubblegum cosmic overdrive 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-227",
-      "name": "Rust-Wire Descent",
+      "name": "Texhnolyze Madhouse - Rust-Wire Descent",
+      "styleAnchors": ["Texhnolyze Madhouse - Rust-Wire Descent"],
       "ref": "pack_05/SP05-227.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -925,11 +977,12 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-227 rust-wire descent 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-227 texhnolyze madhouse - rust-wire descent 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-053",
-      "name": "Hydraulic Attrition Mass",
+      "name": "Naoyuki Kato - Hydraulic Attrition Mass",
+      "styleAnchors": ["Naoyuki Kato - Hydraulic Attrition Mass"],
       "ref": "pack_05/SP05-053.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -937,12 +990,15 @@
       "categoryName": "2. Mecha & Cyberpunk",
       "tags": ["anime-01-anime-battle-and-worlds", "mecha-and-cyberpunk"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-053 hydraulic attrition mass 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
+      "searchableText": "sp05-053 naoyuki kato - hydraulic attrition mass 2. mecha & cyberpunk mechanical anime pack_05 anime 01 — anime battle & worlds mecha-and-cyberpunk anime-01-anime-battle-and-worlds mecha-and-cyberpunk"
     },
     {
       "id": "SP05-095",
-      "name": "Faded-Line Pale Wash Cel",
-      "styleAnchors": ["Faded-Line Pale Wash Cel", "Frieren – Afterquest Melancholy Fantasy"],
+      "name": "Tsukasa Abe - Faded-Line Pale Wash Cel",
+      "styleAnchors": [
+        "Tsukasa Abe - Faded-Line Pale Wash Cel",
+        "Frieren – Afterquest Melancholy Fantasy"
+      ],
       "ref": "pack_05/SP05-095.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -950,13 +1006,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-095 faded-line pale wash cel frieren – afterquest melancholy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-095 tsukasa abe - faded-line pale wash cel frieren – afterquest melancholy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-099",
-      "name": "Worn Bronze Concentric-Line Cel",
+      "name": "Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel",
       "styleAnchors": [
-        "Worn Bronze Concentric-Line Cel",
+        "Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel",
         "Shield Hero – Defensive Underdog Fantasy"
       ],
       "ref": "pack_05/SP05-099.yaml",
@@ -966,13 +1022,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-099 worn bronze concentric-line cel shield hero – defensive underdog fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-099 shield hero kinema citrus - worn bronze concentric-line cel shield hero – defensive underdog fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-248",
-      "name": "Naturalist Sketchbook Anime Cel",
+      "name": "Ryoko Kui - Naturalist Sketchbook Anime Cel",
       "styleAnchors": [
-        "Naturalist Sketchbook Anime Cel",
+        "Ryoko Kui - Naturalist Sketchbook Anime Cel",
         "Delicious in Dungeon - Stove-Top Monster Cuisine"
       ],
       "ref": "pack_05/SP05-248.yaml",
@@ -982,13 +1038,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-248 naturalist sketchbook anime cel delicious in dungeon - stove-top monster cuisine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-248 ryoko kui - naturalist sketchbook anime cel delicious in dungeon - stove-top monster cuisine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-252",
-      "name": "Amber Dusk Rounded Cel",
+      "name": "Campfire Cooking in Another World - Amber Dusk Rounded Cel",
       "styleAnchors": [
-        "Amber Dusk Rounded Cel",
+        "Campfire Cooking in Another World - Amber Dusk Rounded Cel",
         "Campfire Cooking in Another World - Merchant Road Stew"
       ],
       "ref": "pack_05/SP05-252.yaml",
@@ -998,13 +1054,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-252 amber dusk rounded cel campfire cooking in another world - merchant road stew 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-252 campfire cooking in another world - amber dusk rounded cel campfire cooking in another world - merchant road stew 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-257",
-      "name": "Slate Twilight Single-Violet Cel",
+      "name": "Tsukimichi C2C - Slate Twilight Single-Violet Cel",
       "styleAnchors": [
-        "Slate Twilight Single-Violet Cel",
+        "Tsukimichi C2C - Slate Twilight Single-Violet Cel",
         "Tsukimichi - Moonlit Merchant Wanderer"
       ],
       "ref": "pack_05/SP05-257.yaml",
@@ -1014,13 +1070,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-257 slate twilight single-violet cel tsukimichi - moonlit merchant wanderer 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-257 tsukimichi c2c - slate twilight single-violet cel tsukimichi - moonlit merchant wanderer 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-258",
-      "name": "Fine-Line Brass Glint Cel",
+      "name": "Handyman Saitou in Another World - Fine-Line Brass Glint Cel",
       "styleAnchors": [
-        "Fine-Line Brass Glint Cel",
+        "Handyman Saitou in Another World - Fine-Line Brass Glint Cel",
         "Handyman Saitou in Another World - Toolbox Party Quest"
       ],
       "ref": "pack_05/SP05-258.yaml",
@@ -1030,13 +1086,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-258 fine-line brass glint cel handyman saitou in another world - toolbox party quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-258 handyman saitou in another world - fine-line brass glint cel handyman saitou in another world - toolbox party quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-259",
-      "name": "Picture-Book Crayon Line Anime",
+      "name": "Ranking of Kings Wit - Picture-Book Crayon Line Anime",
       "styleAnchors": [
-        "Picture-Book Crayon Line Anime",
+        "Ranking of Kings Wit - Picture-Book Crayon Line Anime",
         "Ranking of Kings - Storybook Crown Courage"
       ],
       "ref": "pack_05/SP05-259.yaml",
@@ -1046,13 +1102,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-259 picture-book crayon line anime ranking of kings - storybook crown courage 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-259 ranking of kings wit - picture-book crayon line anime ranking of kings - storybook crown courage 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-260",
-      "name": "Candy Pastel Bloom Cel",
+      "name": "Princess Connect CygamesPictures - Candy Pastel Bloom Cel",
       "styleAnchors": [
-        "Candy Pastel Bloom Cel",
+        "Princess Connect CygamesPictures - Candy Pastel Bloom Cel",
         "Princess Connect! Re:Dive - Banquet Quest Pastel"
       ],
       "ref": "pack_05/SP05-260.yaml",
@@ -1062,12 +1118,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-260 candy pastel bloom cel princess connect! re:dive - banquet quest pastel 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-260 princess connect cygamespictures - candy pastel bloom cel princess connect! re:dive - banquet quest pastel 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-091",
-      "name": "Cyan Crystal-Facet Glow Cel",
-      "styleAnchors": ["Cyan Crystal-Facet Glow Cel", "Sword Art Online – Glowing VR Adventure"],
+      "name": "Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel",
+      "styleAnchors": [
+        "Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel",
+        "Sword Art Online – Glowing VR Adventure"
+      ],
       "ref": "pack_05/SP05-091.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1075,12 +1134,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-091 cyan crystal-facet glow cel sword art online – glowing vr adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-091 sword art online a-1 - cyan crystal-facet glow cel sword art online – glowing vr adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-092",
-      "name": "Violet Echo-Line Gothic Cel",
-      "styleAnchors": ["Violet Echo-Line Gothic Cel", "Re:Zero – Reset-Loop Dark Fantasy"],
+      "name": "Re:Zero White Fox - Violet Echo-Line Gothic Cel",
+      "styleAnchors": [
+        "Re:Zero White Fox - Violet Echo-Line Gothic Cel",
+        "Re:Zero – Reset-Loop Dark Fantasy"
+      ],
       "ref": "pack_05/SP05-092.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1088,12 +1150,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-092 violet echo-line gothic cel re:zero – reset-loop dark fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-092 re:zero white fox - violet echo-line gothic cel re:zero – reset-loop dark fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-093",
-      "name": "Sepia Moss Dry-Brush Cel",
-      "styleAnchors": ["Sepia Moss Dry-Brush Cel", "Mushoku Tensei – Wandering Mage Chronicle"],
+      "name": "Mushoku Tensei Studio Bind - Sepia Moss Dry-Brush Cel",
+      "styleAnchors": [
+        "Mushoku Tensei Studio Bind - Sepia Moss Dry-Brush Cel",
+        "Mushoku Tensei – Wandering Mage Chronicle"
+      ],
       "ref": "pack_05/SP05-093.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1101,12 +1166,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-093 sepia moss dry-brush cel mushoku tensei – wandering mage chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-093 mushoku tensei studio bind - sepia moss dry-brush cel mushoku tensei – wandering mage chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-094",
-      "name": "Springy Comic-Timing Cel",
-      "styleAnchors": ["Springy Comic-Timing Cel", "Konosuba – Party-Quest Comedy"],
+      "name": "Konosuba Deen - Springy Comic-Timing Cel",
+      "styleAnchors": ["Konosuba Deen - Springy Comic-Timing Cel", "Konosuba – Party-Quest Comedy"],
       "ref": "pack_05/SP05-094.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1114,13 +1179,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-094 springy comic-timing cel konosuba – party-quest comedy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-094 konosuba deen - springy comic-timing cel konosuba – party-quest comedy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-098",
-      "name": "Rounded Sky-Blue Friendly Cel",
+      "name": "Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel",
       "styleAnchors": [
-        "Rounded Sky-Blue Friendly Cel",
+        "Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel",
         "Slime Isekai – Monster-Nation Bright Fantasy"
       ],
       "ref": "pack_05/SP05-098.yaml",
@@ -1130,12 +1195,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-098 rounded sky-blue friendly cel slime isekai – monster-nation bright fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-098 slime isekai 8bit - rounded sky-blue friendly cel slime isekai – monster-nation bright fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-100",
-      "name": "Vertical Mineral Amber Cel",
-      "styleAnchors": ["Vertical Mineral Amber Cel", "DanMachi – Dungeon Lantern Adventure"],
+      "name": "DanMachi J.C.Staff - Vertical Mineral Amber Cel",
+      "styleAnchors": [
+        "DanMachi J.C.Staff - Vertical Mineral Amber Cel",
+        "DanMachi – Dungeon Lantern Adventure"
+      ],
       "ref": "pack_05/SP05-100.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1143,13 +1211,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-100 vertical mineral amber cel danmachi – dungeon lantern adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-100 danmachi j.c.staff - vertical mineral amber cel danmachi – dungeon lantern adventure 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-241",
-      "name": "Systemic Cooperation Grid",
-      "sourceName": "Systemic Cooperation Grid Style",
-      "styleAnchors": ["Systemic Cooperation Grid Style"],
+      "name": "Log Horizon Satelight - Systemic Cooperation Grid Style",
+      "styleAnchors": ["Log Horizon Satelight - Systemic Cooperation Grid Style"],
       "ref": "pack_05/SP05-241.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1157,13 +1224,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-241 systemic cooperation grid systemic cooperation grid style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-241 log horizon satelight - systemic cooperation grid style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-242",
-      "name": "Smoke-Mud Vulnerability",
-      "sourceName": "Smoke-Mud Vulnerability Style",
-      "styleAnchors": ["Smoke-Mud Vulnerability Style"],
+      "name": "Grimgar A-1 - Smoke-Mud Vulnerability Style",
+      "styleAnchors": ["Grimgar A-1 - Smoke-Mud Vulnerability Style"],
       "ref": "pack_05/SP05-242.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1171,13 +1237,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-242 smoke-mud vulnerability smoke-mud vulnerability style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-242 grimgar a-1 - smoke-mud vulnerability style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-243",
-      "name": "Classic OVA Quest Tapestry",
-      "sourceName": "Classic OVA Quest Tapestry Style",
-      "styleAnchors": ["Classic OVA Quest Tapestry Style"],
+      "name": "Record of Lodoss War OVA - Classic OVA Quest Tapestry Style",
+      "styleAnchors": ["Record of Lodoss War OVA - Classic OVA Quest Tapestry Style"],
       "ref": "pack_05/SP05-243.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1185,13 +1250,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-243 classic ova quest tapestry classic ova quest tapestry style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-243 record of lodoss war ova - classic ova quest tapestry style 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-244",
-      "name": "Tall Textile-Rhythm Formal Cel",
+      "name": "Akihiro Yamada - Tall Textile-Rhythm Formal Cel",
       "styleAnchors": [
-        "Tall Textile-Rhythm Formal Cel",
+        "Akihiro Yamada - Tall Textile-Rhythm Formal Cel",
         "The Twelve Kingdoms - Imperial Destiny Chronicle"
       ],
       "ref": "pack_05/SP05-244.yaml",
@@ -1201,13 +1266,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-244 tall textile-rhythm formal cel the twelve kingdoms - imperial destiny chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-244 akihiro yamada - tall textile-rhythm formal cel the twelve kingdoms - imperial destiny chronicle 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-245",
-      "name": "Carmine Angular Windswept Cel",
+      "name": "Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel",
       "styleAnchors": [
-        "Carmine Angular Windswept Cel",
+        "Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel",
         "The Vision of Escaflowne - Windblown Tarot Fantasy"
       ],
       "ref": "pack_05/SP05-245.yaml",
@@ -1217,12 +1282,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-245 carmine angular windswept cel the vision of escaflowne - windblown tarot fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-245 nobuteru yuki escaflowne - carmine angular windswept cel the vision of escaflowne - windblown tarot fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-246",
-      "name": "Jewel Arabesque Curve Cel",
-      "styleAnchors": ["Jewel Arabesque Curve Cel", "Magi - Labyrinth Jewel Caravan"],
+      "name": "Shinobu Ohtaka - Jewel Arabesque Curve Cel",
+      "styleAnchors": [
+        "Shinobu Ohtaka - Jewel Arabesque Curve Cel",
+        "Magi - Labyrinth Jewel Caravan"
+      ],
       "ref": "pack_05/SP05-246.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1230,13 +1298,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-246 jewel arabesque curve cel magi - labyrinth jewel caravan 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-246 shinobu ohtaka - jewel arabesque curve cel magi - labyrinth jewel caravan 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-249",
-      "name": "Indigo Block-Print Cel",
+      "name": "Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel",
       "styleAnchors": [
-        "Indigo Block-Print Cel",
+        "Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel",
         "Ascendance of a Bookworm - Printing Press Devotion"
       ],
       "ref": "pack_05/SP05-249.yaml",
@@ -1246,12 +1314,15 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-249 indigo block-print cel ascendance of a bookworm - printing press devotion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-249 ascendance of a bookworm ajia-do - indigo block-print cel ascendance of a bookworm - printing press devotion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-250",
-      "name": "Grounded Matte Geometry Cel",
-      "styleAnchors": ["Grounded Matte Geometry Cel", "The Faraway Paladin - Quiet Temple Quest"],
+      "name": "The Faraway Paladin - Grounded Matte Geometry Cel",
+      "styleAnchors": [
+        "The Faraway Paladin - Grounded Matte Geometry Cel",
+        "The Faraway Paladin - Quiet Temple Quest"
+      ],
       "ref": "pack_05/SP05-250.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1259,13 +1330,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-250 grounded matte geometry cel the faraway paladin - quiet temple quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-250 the faraway paladin - grounded matte geometry cel the faraway paladin - quiet temple quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-253",
-      "name": "Glass-Green High-Key Herbarium Cel",
+      "name": "Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel",
       "styleAnchors": [
-        "Glass-Green High-Key Herbarium Cel",
+        "Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel",
         "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"
       ],
       "ref": "pack_05/SP05-253.yaml",
@@ -1275,13 +1346,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-253 glass-green high-key herbarium cel the saint's magic power is omnipotent - herbarium court glow 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-253 saint’s magic power diomedea - glass-green high-key herbarium cel the saint's magic power is omnipotent - herbarium court glow 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-254",
-      "name": "Lavender Halo-Arc Shoujo Cel",
+      "name": "Yuu Watase - Lavender Halo-Arc Shoujo Cel",
       "styleAnchors": [
-        "Lavender Halo-Arc Shoujo Cel",
+        "Yuu Watase - Lavender Halo-Arc Shoujo Cel",
         "Fushigi Yuugi - Celestial Maiden Portal Epic"
       ],
       "ref": "pack_05/SP05-254.yaml",
@@ -1291,13 +1362,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-254 lavender halo-arc shoujo cel fushigi yuugi - celestial maiden portal epic 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-254 yuu watase - lavender halo-arc shoujo cel fushigi yuugi - celestial maiden portal epic 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-255",
-      "name": "Gem-Facet Rising-Line Cel",
+      "name": "Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel",
       "styleAnchors": [
-        "Gem-Facet Rising-Line Cel",
+        "Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel",
         "Magic Knight Rayearth - Gem-Engine Rescue Quest"
       ],
       "ref": "pack_05/SP05-255.yaml",
@@ -1307,13 +1378,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-255 gem-facet rising-line cel magic knight rayearth - gem-engine rescue quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-255 magic knight rayearth tms - gem-facet rising-line cel magic knight rayearth - gem-engine rescue quest 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-096",
-      "name": "Hyper-Saturated Impossible Perspective Cel",
+      "name": "No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel",
       "styleAnchors": [
-        "Hyper-Saturated Impossible Perspective Cel",
+        "No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel",
         "No Game No Life – Hyper-Saturated Strategy Fantasy"
       ],
       "ref": "pack_05/SP05-096.yaml",
@@ -1323,13 +1394,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-096 hyper-saturated impossible perspective cel no game no life – hyper-saturated strategy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-096 no game no life madhouse - hyper-saturated impossible perspective cel no game no life – hyper-saturated strategy fantasy 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-251",
-      "name": "Khaki Compressed-Diagonal Cel",
+      "name": "Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel",
       "styleAnchors": [
-        "Khaki Compressed-Diagonal Cel",
+        "Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel",
         "Saga of Tanya the Evil - Aerial War Mage Doctrine"
       ],
       "ref": "pack_05/SP05-251.yaml",
@@ -1339,13 +1410,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-251 khaki compressed-diagonal cel saga of tanya the evil - aerial war mage doctrine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-251 saga of tanya the evil nut - khaki compressed-diagonal cel saga of tanya the evil - aerial war mage doctrine 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-097",
-      "name": "Ivory-Charcoal Baroque Symmetry Cel",
+      "name": "Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel",
       "styleAnchors": [
-        "Ivory-Charcoal Baroque Symmetry Cel",
+        "Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel",
         "Overlord – Bone Throne Dark Dominion"
       ],
       "ref": "pack_05/SP05-097.yaml",
@@ -1355,13 +1426,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-097 ivory-charcoal baroque symmetry cel overlord – bone throne dark dominion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-097 overlord madhouse - ivory-charcoal baroque symmetry cel overlord – bone throne dark dominion 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-247",
-      "name": "Lilac Thorn-Line Chiaroscuro Cel",
+      "name": "Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel",
       "styleAnchors": [
-        "Lilac Thorn-Line Chiaroscuro Cel",
+        "Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel",
         "The Ancient Magus' Bride - Thorn Cottage Enchantment"
       ],
       "ref": "pack_05/SP05-247.yaml",
@@ -1371,13 +1442,13 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-247 lilac thorn-line chiaroscuro cel the ancient magus' bride - thorn cottage enchantment 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-247 kore yamazaki - lilac thorn-line chiaroscuro cel the ancient magus' bride - thorn cottage enchantment 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-256",
-      "name": "Vermilion Indigo Tapered-Ink Cel",
+      "name": "Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel",
       "styleAnchors": [
-        "Vermilion Indigo Tapered-Ink Cel",
+        "Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel",
         "Inuyasha - Shrine-Well Sengoku Pursuit"
       ],
       "ref": "pack_05/SP05-256.yaml",
@@ -1387,13 +1458,12 @@
       "categoryName": "3. Isekai & High Fantasy",
       "tags": ["anime-01-anime-battle-and-worlds", "isekai-and-high-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-256 vermilion indigo tapered-ink cel inuyasha - shrine-well sengoku pursuit 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
+      "searchableText": "sp05-256 rumiko takahashi inuyasha - vermilion indigo tapered-ink cel inuyasha - shrine-well sengoku pursuit 3. isekai & high fantasy fantasy anime pack_05 anime 01 — anime battle & worlds isekai-and-high-fantasy anime-01-anime-battle-and-worlds isekai-and-high-fantasy"
     },
     {
       "id": "SP05-278",
-      "name": "Mineral Loneliness Fracture",
-      "sourceName": "Mineral Loneliness Fracture Style",
-      "styleAnchors": ["Mineral Loneliness Fracture Style"],
+      "name": "Land of the Lustrous Orange - Mineral Loneliness Fracture Style",
+      "styleAnchors": ["Land of the Lustrous Orange - Mineral Loneliness Fracture Style"],
       "ref": "pack_05/SP05-278.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1401,13 +1471,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-278 mineral loneliness fracture mineral loneliness fracture style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-278 land of the lustrous orange - mineral loneliness fracture style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-261",
-      "name": "Eclipse Scar Weight",
-      "sourceName": "Eclipse Scar Weight Style",
-      "styleAnchors": ["Eclipse Scar Weight Style"],
+      "name": "Berserk 1997 OLM - Eclipse Scar Weight Style",
+      "styleAnchors": ["Berserk 1997 OLM - Eclipse Scar Weight Style"],
       "ref": "pack_05/SP05-261.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1415,13 +1484,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-261 eclipse scar weight eclipse scar weight style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-261 berserk 1997 olm - eclipse scar weight style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-262",
-      "name": "Moral Suspicion Realism",
-      "sourceName": "Moral Suspicion Realism Style",
-      "styleAnchors": ["Moral Suspicion Realism Style"],
+      "name": "Monster Madhouse - Moral Suspicion Realism Style",
+      "styleAnchors": ["Monster Madhouse - Moral Suspicion Realism Style"],
       "ref": "pack_05/SP05-262.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1429,13 +1497,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-262 moral suspicion realism moral suspicion realism style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-262 monster madhouse - moral suspicion realism style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-263",
-      "name": "Black Signal Nihilism",
-      "sourceName": "Black Signal Nihilism Style",
-      "styleAnchors": ["Black Signal Nihilism Style"],
+      "name": "Hiroya Oku - Black Signal Nihilism Style",
+      "styleAnchors": ["Hiroya Oku - Black Signal Nihilism Style"],
       "ref": "pack_05/SP05-263.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1443,13 +1510,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-263 black signal nihilism black signal nihilism style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-263 hiroya oku - black signal nihilism style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-264",
-      "name": "Clinical Innocence Rupture",
-      "sourceName": "Clinical Innocence Rupture Style",
-      "styleAnchors": ["Clinical Innocence Rupture Style"],
+      "name": "Elfen Lied Arms - Clinical Innocence Rupture Style",
+      "styleAnchors": ["Elfen Lied Arms - Clinical Innocence Rupture Style"],
       "ref": "pack_05/SP05-264.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1457,13 +1523,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-264 clinical innocence rupture clinical innocence rupture style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-264 elfen lied arms - clinical innocence rupture style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-265",
-      "name": "Rose-Black Baroque Decadence",
-      "sourceName": "Rose-Black Baroque Decadence Style",
-      "styleAnchors": ["Rose-Black Baroque Decadence Style"],
+      "name": "Vampire Hunter D Bloodlust - Rose-Black Baroque Decadence Style",
+      "styleAnchors": ["Vampire Hunter D Bloodlust - Rose-Black Baroque Decadence Style"],
       "ref": "pack_05/SP05-265.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1471,13 +1536,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-265 rose-black baroque decadence rose-black baroque decadence style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-265 vampire hunter d bloodlust - rose-black baroque decadence style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-266",
-      "name": "Black Particle Fugitive",
-      "sourceName": "Black Particle Fugitive Style",
-      "styleAnchors": ["Black Particle Fugitive Style"],
+      "name": "Ajin Polygon - Black Particle Fugitive Style",
+      "styleAnchors": ["Ajin Polygon - Black Particle Fugitive Style"],
       "ref": "pack_05/SP05-266.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1485,13 +1549,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-266 black particle fugitive black particle fugitive style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-266 ajin polygon - black particle fugitive style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-267",
-      "name": "Blood-Ink Severance",
-      "sourceName": "Blood-Ink Severance Style",
-      "styleAnchors": ["Blood-Ink Severance Style"],
+      "name": "Hiroaki Samura - Blood-Ink Severance Style",
+      "styleAnchors": ["Hiroaki Samura - Blood-Ink Severance Style"],
       "ref": "pack_05/SP05-267.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1499,13 +1562,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-267 blood-ink severance blood-ink severance style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-267 hiroaki samura - blood-ink severance style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-268",
-      "name": "Neon Despair Pressure",
-      "sourceName": "Neon Despair Pressure Style",
-      "styleAnchors": ["Neon Despair Pressure Style"],
+      "name": "Nobuyuki Fukumoto - Neon Despair Pressure Style",
+      "styleAnchors": ["Nobuyuki Fukumoto - Neon Despair Pressure Style"],
       "ref": "pack_05/SP05-268.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1513,13 +1575,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-268 neon despair pressure neon despair pressure style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-268 nobuyuki fukumoto - neon despair pressure style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-269",
-      "name": "Smoke-Filled Calculation",
-      "sourceName": "Smoke-Filled Calculation Style",
-      "styleAnchors": ["Smoke-Filled Calculation Style"],
+      "name": "Akagi Madhouse - Smoke-Filled Calculation Style",
+      "styleAnchors": ["Akagi Madhouse - Smoke-Filled Calculation Style"],
       "ref": "pack_05/SP05-269.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1527,13 +1588,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-269 smoke-filled calculation smoke-filled calculation style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-269 akagi madhouse - smoke-filled calculation style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-270",
-      "name": "Cursed Severance Compassion",
-      "sourceName": "Cursed Severance Compassion Style",
-      "styleAnchors": ["Cursed Severance Compassion Style"],
+      "name": "Dororo MAPPA - Cursed Severance Compassion Style",
+      "styleAnchors": ["Dororo MAPPA - Cursed Severance Compassion Style"],
       "ref": "pack_05/SP05-270.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1541,13 +1601,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-270 cursed severance compassion cursed severance compassion style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-270 dororo mappa - cursed severance compassion style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-271",
-      "name": "Sun-Reclaimed Concrete Mystery",
-      "sourceName": "Sun-Reclaimed Concrete Mystery Style",
-      "styleAnchors": ["Sun-Reclaimed Concrete Mystery Style"],
+      "name": "Heavenly Delusion Production I.G - Sun-Reclaimed Concrete Mystery Style",
+      "styleAnchors": ["Heavenly Delusion Production I.G - Sun-Reclaimed Concrete Mystery Style"],
       "ref": "pack_05/SP05-271.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1555,13 +1614,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-271 sun-reclaimed concrete mystery sun-reclaimed concrete mystery style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-271 heavenly delusion production i.g - sun-reclaimed concrete mystery style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-272",
-      "name": "Machine Mourning Noir",
-      "sourceName": "Machine Mourning Noir Style",
-      "styleAnchors": ["Machine Mourning Noir Style"],
+      "name": "Pluto Studio M2 - Machine Mourning Noir Style",
+      "styleAnchors": ["Pluto Studio M2 - Machine Mourning Noir Style"],
       "ref": "pack_05/SP05-272.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1569,13 +1627,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-272 machine mourning noir machine mourning noir style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-272 pluto studio m2 - machine mourning noir style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-273",
-      "name": "Luminous Natural Cycle Calm",
-      "sourceName": "Luminous Natural Cycle Calm Style",
-      "styleAnchors": ["Luminous Natural Cycle Calm Style"],
+      "name": "Mushishi Artland - Luminous Natural Cycle Calm Style",
+      "styleAnchors": ["Mushishi Artland - Luminous Natural Cycle Calm Style"],
       "ref": "pack_05/SP05-273.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1583,13 +1640,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-273 luminous natural cycle calm luminous natural cycle calm style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-273 mushishi artland - luminous natural cycle calm style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-274",
-      "name": "Winter Guilt Suspicion",
-      "sourceName": "Winter Guilt Suspicion Style",
-      "styleAnchors": ["Winter Guilt Suspicion Style"],
+      "name": "Erased A-1 - Winter Guilt Suspicion Style",
+      "styleAnchors": ["Erased A-1 - Winter Guilt Suspicion Style"],
       "ref": "pack_05/SP05-274.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1597,13 +1653,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-274 winter guilt suspicion winter guilt suspicion style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-274 erased a-1 - winter guilt suspicion style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-276",
-      "name": "Sun-Bleached Cruel Discipline",
-      "sourceName": "Sun-Bleached Cruel Discipline Style",
-      "styleAnchors": ["Sun-Bleached Cruel Discipline Style"],
+      "name": "Takayuki Yamaguchi - Sun-Bleached Cruel Discipline Style",
+      "styleAnchors": ["Takayuki Yamaguchi - Sun-Bleached Cruel Discipline Style"],
       "ref": "pack_05/SP05-276.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1611,13 +1666,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-276 sun-bleached cruel discipline sun-bleached cruel discipline style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-276 takayuki yamaguchi - sun-bleached cruel discipline style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-277",
-      "name": "Rusted Neon Adolescent Dread",
-      "sourceName": "Rusted Neon Adolescent Dread Style",
-      "styleAnchors": ["Rusted Neon Adolescent Dread Style"],
+      "name": "Boogiepop Phantom Madhouse - Rusted Neon Adolescent Dread Style",
+      "styleAnchors": ["Boogiepop Phantom Madhouse - Rusted Neon Adolescent Dread Style"],
       "ref": "pack_05/SP05-277.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1625,13 +1679,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-277 rusted neon adolescent dread rusted neon adolescent dread style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-277 boogiepop phantom madhouse - rusted neon adolescent dread style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-279",
-      "name": "Red-Optic Security Noir",
-      "sourceName": "Red-Optic Security Noir Style",
-      "styleAnchors": ["Red-Optic Security Noir Style"],
+      "name": "Kamui Fujiwara - Red-Optic Security Noir Style",
+      "styleAnchors": ["Kamui Fujiwara - Red-Optic Security Noir Style"],
       "ref": "pack_05/SP05-279.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1639,13 +1692,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-279 red-optic security noir red-optic security noir style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-279 kamui fujiwara - red-optic security noir style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-280",
-      "name": "Lantern Retribution Ritual",
-      "sourceName": "Lantern Retribution Ritual Style",
-      "styleAnchors": ["Lantern Retribution Ritual Style"],
+      "name": "Hell Girl Deen - Lantern Retribution Ritual Style",
+      "styleAnchors": ["Hell Girl Deen - Lantern Retribution Ritual Style"],
       "ref": "pack_05/SP05-280.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1653,13 +1705,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-280 lantern retribution ritual lantern retribution ritual style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-280 hell girl deen - lantern retribution ritual style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-275",
-      "name": "Civic Rumor Breakdown",
-      "sourceName": "Civic Rumor Breakdown Style",
-      "styleAnchors": ["Civic Rumor Breakdown Style"],
+      "name": "Paranoia Agent Madhouse - Civic Rumor Breakdown Style",
+      "styleAnchors": ["Paranoia Agent Madhouse - Civic Rumor Breakdown Style"],
       "ref": "pack_05/SP05-275.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1667,13 +1718,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-275 civic rumor breakdown civic rumor breakdown style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-275 paranoia agent madhouse - civic rumor breakdown style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-066",
-      "name": "Invasive Anatomy Thriller",
-      "sourceName": "Invasive Anatomy Thriller Style",
-      "styleAnchors": ["Invasive Anatomy Thriller Style"],
+      "name": "Hitoshi Iwaaki - Invasive Anatomy Thriller Style",
+      "styleAnchors": ["Hitoshi Iwaaki - Invasive Anatomy Thriller Style"],
       "ref": "pack_05/SP05-066.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1681,13 +1731,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-066 invasive anatomy thriller invasive anatomy thriller style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-066 hitoshi iwaaki - invasive anatomy thriller style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-069",
-      "name": "Procedural Low-Fantasy Grit",
-      "sourceName": "Procedural Low-Fantasy Grit Style",
-      "styleAnchors": ["Procedural Low-Fantasy Grit Style"],
+      "name": "Goblin Slayer White Fox - Procedural Low-Fantasy Grit Style",
+      "styleAnchors": ["Goblin Slayer White Fox - Procedural Low-Fantasy Grit Style"],
       "ref": "pack_05/SP05-069.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1695,13 +1744,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-069 procedural low-fantasy grit procedural low-fantasy grit style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-069 goblin slayer white fox - procedural low-fantasy grit style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-061",
-      "name": "Crosshatched Doom Weight",
-      "sourceName": "Crosshatched Doom Weight Style",
-      "styleAnchors": ["Crosshatched Doom Weight Style"],
+      "name": "Shinichi Sakamoto - Crosshatched Doom Weight Style",
+      "styleAnchors": ["Shinichi Sakamoto - Crosshatched Doom Weight Style"],
       "ref": "pack_05/SP05-061.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1709,13 +1757,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-061 crosshatched doom weight crosshatched doom weight style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-061 shinichi sakamoto - crosshatched doom weight style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-062",
-      "name": "Crimson Hunger Metamorphosis",
-      "sourceName": "Crimson Hunger Metamorphosis Style",
-      "styleAnchors": ["Crimson Hunger Metamorphosis Style"],
+      "name": "Sui Ishida - Crimson Hunger Metamorphosis Style",
+      "styleAnchors": ["Sui Ishida - Crimson Hunger Metamorphosis Style"],
       "ref": "pack_05/SP05-062.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1723,13 +1770,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-062 crimson hunger metamorphosis crimson hunger metamorphosis style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-062 sui ishida - crimson hunger metamorphosis style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-063",
-      "name": "Crimson Gothic Authority",
-      "sourceName": "Crimson Gothic Authority Style",
-      "styleAnchors": ["Crimson Gothic Authority Style"],
+      "name": "Hellsing Ultimate Madhouse - Crimson Gothic Authority Style",
+      "styleAnchors": ["Hellsing Ultimate Madhouse - Crimson Gothic Authority Style"],
       "ref": "pack_05/SP05-063.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1737,13 +1783,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-063 crimson gothic authority crimson gothic authority style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-063 hellsing ultimate madhouse - crimson gothic authority style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-064",
-      "name": "Wind-Scoured Redemption",
-      "sourceName": "Wind-Scoured Redemption Style",
-      "styleAnchors": ["Wind-Scoured Redemption Style"],
+      "name": "Vinland Saga WIT - Wind-Scoured Redemption Style",
+      "styleAnchors": ["Vinland Saga WIT - Wind-Scoured Redemption Style"],
       "ref": "pack_05/SP05-064.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1751,13 +1796,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-064 wind-scoured redemption wind-scoured redemption style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-064 vinland saga wit - wind-scoured redemption style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-065",
-      "name": "Pale Threshold Horror",
-      "sourceName": "Pale Threshold Horror Style",
-      "styleAnchors": ["Pale Threshold Horror Style"],
+      "name": "Norihiro Yagi - Pale Threshold Horror Style",
+      "styleAnchors": ["Norihiro Yagi - Pale Threshold Horror Style"],
       "ref": "pack_05/SP05-065.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1765,13 +1809,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-065 pale threshold horror pale threshold horror style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-065 norihiro yagi - pale threshold horror style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-067",
-      "name": "Lush Abyssal Toll",
-      "sourceName": "Lush Abyssal Toll Style",
-      "styleAnchors": ["Lush Abyssal Toll Style"],
+      "name": "Akihito Tsukushi - Lush Abyssal Toll Style",
+      "styleAnchors": ["Akihito Tsukushi - Lush Abyssal Toll Style"],
       "ref": "pack_05/SP05-067.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1779,13 +1822,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-067 lush abyssal toll lush abyssal toll style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-067 akihito tsukushi - lush abyssal toll style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-068",
-      "name": "Grimy Sorcery Collision",
-      "sourceName": "Grimy Sorcery Collision Style",
-      "styleAnchors": ["Grimy Sorcery Collision Style"],
+      "name": "Q Hayashida - Grimy Sorcery Collision Style",
+      "styleAnchors": ["Q Hayashida - Grimy Sorcery Collision Style"],
       "ref": "pack_05/SP05-068.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1793,12 +1835,15 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-068 grimy sorcery collision grimy sorcery collision style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-068 q hayashida - grimy sorcery collision style 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP05-070",
-      "name": "Neon Tragic Metamorphosis",
-      "styleAnchors": ["Neon Tragic Metamorphosis", "Devilman Crybaby – Neon Tragic Metamorphosis"],
+      "name": "Devilman Crybaby Science SARU - Neon Tragic Metamorphosis",
+      "styleAnchors": [
+        "Devilman Crybaby Science SARU - Neon Tragic Metamorphosis",
+        "Devilman Crybaby – Neon Tragic Metamorphosis"
+      ],
       "ref": "pack_05/SP05-070.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1806,11 +1851,12 @@
       "categoryName": "4. Dark Fantasy & Seinen",
       "tags": ["anime-01-anime-battle-and-worlds", "dark-fantasy-and-seinen"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-070 neon tragic metamorphosis devilman crybaby – neon tragic metamorphosis 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
+      "searchableText": "sp05-070 devilman crybaby science saru - neon tragic metamorphosis devilman crybaby – neon tragic metamorphosis 4. dark fantasy & seinen dark anime pack_05 anime 01 — anime battle & worlds dark-fantasy-and-seinen anime-01-anime-battle-and-worlds dark-fantasy-and-seinen"
     },
     {
       "id": "SP13-021",
-      "name": "Action Burst Alley Rush",
+      "name": "Yutaka Nakamura - Action Burst Alley Rush",
+      "styleAnchors": ["Yutaka Nakamura - Action Burst Alley Rush"],
       "ref": "pack_05/SP13-021.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1818,13 +1864,12 @@
       "categoryName": "5. Action Motion Setpieces",
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-021 action burst alley rush 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+      "searchableText": "sp13-021 yutaka nakamura - action burst alley rush 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
     },
     {
       "id": "SP13-022",
-      "name": "Vertigo Energy Cross",
-      "sourceName": "Vertigo Energy Cross Style",
-      "styleAnchors": ["Vertigo Energy Cross Style"],
+      "name": "Norio Matsumoto - Vertigo Energy Cross Style",
+      "styleAnchors": ["Norio Matsumoto - Vertigo Energy Cross Style"],
       "ref": "pack_05/SP13-022.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1832,13 +1877,12 @@
       "categoryName": "5. Action Motion Setpieces",
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-022 vertigo energy cross vertigo energy cross style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+      "searchableText": "sp13-022 norio matsumoto - vertigo energy cross style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
     },
     {
       "id": "SP13-023",
-      "name": "Neon Vector Discharge",
-      "sourceName": "Neon Vector Discharge Style",
-      "styleAnchors": ["Neon Vector Discharge Style"],
+      "name": "Yoshinori Kanada - Neon Vector Discharge Style",
+      "styleAnchors": ["Yoshinori Kanada - Neon Vector Discharge Style"],
       "ref": "pack_05/SP13-023.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1846,13 +1890,12 @@
       "categoryName": "5. Action Motion Setpieces",
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-023 neon vector discharge neon vector discharge style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+      "searchableText": "sp13-023 yoshinori kanada - neon vector discharge style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
     },
     {
       "id": "SP13-024",
-      "name": "Monumental Impact Burst",
-      "sourceName": "Monumental Impact Burst Style",
-      "styleAnchors": ["Monumental Impact Burst Style"],
+      "name": "Tatsuyuki Tanaka - Monumental Impact Burst Style",
+      "styleAnchors": ["Tatsuyuki Tanaka - Monumental Impact Burst Style"],
       "ref": "pack_05/SP13-024.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1860,13 +1903,12 @@
       "categoryName": "5. Action Motion Setpieces",
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-024 monumental impact burst monumental impact burst style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+      "searchableText": "sp13-024 tatsuyuki tanaka - monumental impact burst style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
     },
     {
       "id": "SP13-025",
-      "name": "Upward Thunder Momentum",
-      "sourceName": "Upward Thunder Momentum Style",
-      "styleAnchors": ["Upward Thunder Momentum Style"],
+      "name": "Ryotaro Makihara - Upward Thunder Momentum Style",
+      "styleAnchors": ["Ryotaro Makihara - Upward Thunder Momentum Style"],
       "ref": "pack_05/SP13-025.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -1874,13 +1916,13 @@
       "categoryName": "5. Action Motion Setpieces",
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-025 upward thunder momentum upward thunder momentum style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+      "searchableText": "sp13-025 ryotaro makihara - upward thunder momentum style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
     },
     {
       "id": "SP13-036",
-      "name": "Smear-Frame Arc Staging",
+      "name": "Shingo Yamashita - Smear-Frame Arc Staging",
       "styleAnchors": [
-        "Smear-Frame Arc Staging",
+        "Shingo Yamashita - Smear-Frame Arc Staging",
         "anime action staging",
         "one stretched smear shape along the arc"
       ],
@@ -1896,13 +1938,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-036 smear-frame arc staging anime action staging one stretched smear shape along the arc 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-036 shingo yamashita - smear-frame arc staging anime action staging one stretched smear shape along the arc 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-037",
-      "name": "Negative Impact Frame Staging",
+      "name": "Yoshimichi Kameda - Negative Impact Frame Staging",
       "styleAnchors": [
-        "Negative Impact Frame Staging",
+        "Yoshimichi Kameda - Negative Impact Frame Staging",
         "anime action staging",
         "inverted black and white values"
       ],
@@ -1918,13 +1960,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-037 negative impact frame staging anime action staging inverted black and white values 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-037 yoshimichi kameda - negative impact frame staging anime action staging inverted black and white values 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-038",
-      "name": "Bullet-Time Orbit Freeze",
+      "name": "Takeshi Honda - Bullet-Time Orbit Freeze",
       "styleAnchors": [
-        "Bullet-Time Orbit Freeze",
+        "Takeshi Honda - Bullet-Time Orbit Freeze",
         "anime action staging",
         "time frozen at the action peak"
       ],
@@ -1940,13 +1982,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-038 bullet-time orbit freeze anime action staging time frozen at the action peak 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-038 takeshi honda - bullet-time orbit freeze anime action staging time frozen at the action peak 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-039",
-      "name": "Panning Background Streak Frame",
+      "name": "Akira Amemiya - Panning Background Streak Frame",
       "styleAnchors": [
-        "Panning Background Streak Frame",
+        "Akira Amemiya - Panning Background Streak Frame",
         "anime action staging",
         "sharp subject on streaked background"
       ],
@@ -1962,13 +2004,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-039 panning background streak frame anime action staging sharp subject on streaked background 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-039 akira amemiya - panning background streak frame anime action staging sharp subject on streaked background 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-040",
-      "name": "Worm's-Eye Leap Silhouette",
+      "name": "Shinya Ohira - Worm’s-Eye Leap Silhouette",
       "styleAnchors": [
-        "Worm's-Eye Leap Silhouette",
+        "Shinya Ohira - Worm’s-Eye Leap Silhouette",
         "anime action staging",
         "camera straight beneath looking up"
       ],
@@ -1984,13 +2026,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-040 worm's-eye leap silhouette anime action staging camera straight beneath looking up 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-040 shinya ohira - worm’s-eye leap silhouette anime action staging camera straight beneath looking up 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-041",
-      "name": "Dutch Tilt Momentum Frame",
+      "name": "Kenichi Kutsuna - Dutch Tilt Momentum Frame",
       "styleAnchors": [
-        "Dutch Tilt Momentum Frame",
+        "Kenichi Kutsuna - Dutch Tilt Momentum Frame",
         "anime action staging",
         "camera rolled 20-35 degrees"
       ],
@@ -2006,12 +2048,16 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-041 dutch tilt momentum frame anime action staging camera rolled 20-35 degrees 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-041 kenichi kutsuna - dutch tilt momentum frame anime action staging camera rolled 20-35 degrees 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-042",
-      "name": "Three-Beat Action Triptych",
-      "styleAnchors": ["Three-Beat Action Triptych", "anime action layout", "three equal panels"],
+      "name": "Satoru Utsunomiya - Three-Beat Action Triptych",
+      "styleAnchors": [
+        "Satoru Utsunomiya - Three-Beat Action Triptych",
+        "anime action layout",
+        "three equal panels"
+      ],
       "ref": "pack_05/SP13-042.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -2024,13 +2070,13 @@
         "anime-action-layout"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-042 three-beat action triptych anime action layout three equal panels 5. action motion setpieces action staging anime action layout pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-layout"
+      "searchableText": "sp13-042 satoru utsunomiya - three-beat action triptych anime action layout three equal panels 5. action motion setpieces action staging anime action layout pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-layout"
     },
     {
       "id": "SP13-043",
-      "name": "Near-Lens Pass-By Frame",
+      "name": "Toshiyuki Inoue - Near-Lens Pass-By Frame",
       "styleAnchors": [
-        "Near-Lens Pass-By Frame",
+        "Toshiyuki Inoue - Near-Lens Pass-By Frame",
         "anime action staging",
         "subject sweeping past the lens"
       ],
@@ -2046,13 +2092,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-043 near-lens pass-by frame anime action staging subject sweeping past the lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-043 toshiyuki inoue - near-lens pass-by frame anime action staging subject sweeping past the lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-044",
-      "name": "Top-Down Spiral Path Staging",
+      "name": "Ichiro Itano - Top-Down Spiral Path Staging",
       "styleAnchors": [
-        "Top-Down Spiral Path Staging",
+        "Ichiro Itano - Top-Down Spiral Path Staging",
         "anime action staging",
         "straight-down 90 degree view"
       ],
@@ -2068,13 +2114,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-044 top-down spiral path staging anime action staging straight-down 90 degree view 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-044 ichiro itano - top-down spiral path staging anime action staging straight-down 90 degree view 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-045",
-      "name": "Fisheye Foreshortened Reach",
+      "name": "Sushio - Fisheye Foreshortened Reach",
       "styleAnchors": [
-        "Fisheye Foreshortened Reach",
+        "Sushio - Fisheye Foreshortened Reach",
         "anime action staging",
         "hand reaching into an ultra-wide lens"
       ],
@@ -2090,13 +2136,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-045 fisheye foreshortened reach anime action staging hand reaching into an ultra-wide lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-045 sushio - fisheye foreshortened reach anime action staging hand reaching into an ultra-wide lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-046",
-      "name": "Cloth-and-Hair Follow-Through Trails",
+      "name": "Mitsuo Iso - Cloth-and-Hair Follow-Through Trails",
       "styleAnchors": [
-        "Cloth-and-Hair Follow-Through Trails",
+        "Mitsuo Iso - Cloth-and-Hair Follow-Through Trails",
         "anime action staging",
         "lagging S-curves in hair and cloth"
       ],
@@ -2112,13 +2158,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-046 cloth-and-hair follow-through trails anime action staging lagging s-curves in hair and cloth 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-046 mitsuo iso - cloth-and-hair follow-through trails anime action staging lagging s-curves in hair and cloth 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-047",
-      "name": "Tiny-Figure Grand Arc Wide",
+      "name": "Yasuo Otsuka - Tiny-Figure Grand Arc Wide",
       "styleAnchors": [
-        "Tiny-Figure Grand Arc Wide",
+        "Yasuo Otsuka - Tiny-Figure Grand Arc Wide",
         "anime action staging",
         "tiny subject under one twentieth of frame height"
       ],
@@ -2134,13 +2180,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-047 tiny-figure grand arc wide anime action staging tiny subject under one twentieth of frame height 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-047 yasuo otsuka - tiny-figure grand arc wide anime action staging tiny subject under one twentieth of frame height 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-048",
-      "name": "Coiled Anticipation Lead-Space Frame",
+      "name": "Hironori Tanaka - Coiled Anticipation Lead-Space Frame",
       "styleAnchors": [
-        "Coiled Anticipation Lead-Space Frame",
+        "Hironori Tanaka - Coiled Anticipation Lead-Space Frame",
         "anime action staging",
         "coiled pre-motion pose"
       ],
@@ -2156,13 +2202,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-048 coiled anticipation lead-space frame anime action staging coiled pre-motion pose 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-048 hironori tanaka - coiled anticipation lead-space frame anime action staging coiled pre-motion pose 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-049",
-      "name": "Ground-Skim Low Tracking Shot",
+      "name": "Masahiro Ando - Ground-Skim Low Tracking Shot",
       "styleAnchors": [
-        "Ground-Skim Low Tracking Shot",
+        "Masahiro Ando - Ground-Skim Low Tracking Shot",
         "anime action staging",
         "ankle-height camera ahead of subject"
       ],
@@ -2178,13 +2224,13 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-049 ground-skim low tracking shot anime action staging ankle-height camera ahead of subject 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-049 masahiro ando - ground-skim low tracking shot anime action staging ankle-height camera ahead of subject 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     },
     {
       "id": "SP13-050",
-      "name": "Contact-Point Extreme Close-Up",
+      "name": "Takafumi Hori - Contact-Point Extreme Close-Up",
       "styleAnchors": [
-        "Contact-Point Extreme Close-Up",
+        "Takafumi Hori - Contact-Point Extreme Close-Up",
         "anime action staging",
         "extreme close-up of the contact point"
       ],
@@ -2200,7 +2246,7 @@
         "anime-action-staging"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-050 contact-point extreme close-up anime action staging extreme close-up of the contact point 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+      "searchableText": "sp13-050 takafumi hori - contact-point extreme close-up anime action staging extreme close-up of the contact point 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     }
   ],
   "totalPresetCount": 150

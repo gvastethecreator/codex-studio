@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-094
 packId: pack_05
-name: Springy Comic-Timing Cel
+name: Konosuba Deen - Springy Comic-Timing Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Exaggerate faces and poses, blank stares, sweat drops and flailing limbs, only around action already in the prompt; do not add a party or tavern.
-  color_and_tone: Cheerful yellow, coral and aqua flats over clean mid-values; bright, simple and low in shadow density.
-  lighting_and_shadow: Flat bright light with one hard cel shadow tier and quick value pops placed for emphasis.
-  texture_and_material: Smooth flat fills, brisk brush flicks, speed marks and simple symbol effects drawn as shapes, never as text.
-  camera_and_composition: Keep the requested view; an off-center focal point and slightly tilted framing give comic imbalance.
-  atmosphere_and_mood: Light, dry and comic, a beat of awkward silence.
-  rendering_and_quality: Simple readable forms, sharp accents and springy line variation, with no excess effects.
-  key_features: elastic springy lineart; deadpan exaggerated faces; yellow-coral-aqua flats; sweat-drop symbol shapes; post-gag pause timing
-  creative_brief: "Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands. Carry it through elastic springy lineart, deadpan exaggerated faces, yellow-coral-aqua flats, sweat-drop symbol shapes, post-gag pause timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Deen Konosuba look (2016): deliberately wobbly off-model comedy, springy slapstick timing, useless heroes and bright cheap fantasy villages.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with light comedic designs, exaggerated goofy faces, off-model reactions and fantasy adventurer costumes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright cheap fantasy greens, sky blue and sunny yellow.
+  lighting_and_shadow: Simple bright village daylight and big cartoon explosion flashes with smoke.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Comedic timing shots, reaction close-ups and explosion wides.
+  atmosphere_and_mood: Keep the requested mood with chaotic useless comedy.
+  rendering_and_quality: Loose springy comedy television frame with off-model energy.
+  key_features: Springy slapstick; off-model faces; useless heroes; explosions
+  creative_brief: "Studio Deen Konosuba look (2016): deliberately wobbly off-model comedy, springy slapstick timing, useless heroes and bright cheap fantasy villages. Carry it through Springy slapstick, off-model faces, useless heroes, explosions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blue-haired water goddess
+  - an explosion mage with an eyepatch and red hat
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -64,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-094.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, lewd gag, speech bubbles, tavern, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, readable sign, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue-haired water goddess, an explosion mage with an eyepatch and red hat, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, lewd gag, speech bubbles, tavern, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, readable sign, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Springy Comic-Timing Cel
+displayName: Konosuba Deen - Springy Comic-Timing Cel
 styleAnchors:
-  - Springy Comic-Timing Cel
+  - Konosuba Deen - Springy Comic-Timing Cel
   - Konosuba – Party-Quest Comedy

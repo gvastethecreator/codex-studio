@@ -6,7 +6,7 @@ styleAnchors:
   - Masamune Shirow - Philosophical Cyber-Ops Vertigo
 displayName: Masamune Shirow - Philosophical Cyber-Ops Vertigo
 category: 2. 90s Golden Era
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Masamune Shirow manga art as in his Ghost in the Shell and Appleseed books: meticulous cyberpunk mechanics, cute-strong athletic women, dense tech detail and early digital color pages.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shirow designs, athletic curvy bodies, round expressive faces, plugs and cables, tactical gear and exposed cyborg joints. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Early digital airbrush colors, metallic blues, skin warms and neon greens.
   lighting_and_shadow: Glossy airbrushed highlights, screen glow and hard metallic reflections.
   texture_and_material: Precise pen linework, dense mechanical detail, airbrushed digital color gradients.
@@ -58,12 +58,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-015.webp
 attributes:
-  negativePrompt: a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a purple-haired cyborg major in a thermoptic suit, spider-tank robots with pod heads, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

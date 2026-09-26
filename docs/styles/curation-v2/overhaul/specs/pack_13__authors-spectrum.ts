@@ -14,7 +14,7 @@ const spec: Spec = {
         aesthetic:
           'Naoki Urasawa manga style, as in his long psychological suspense series: grounded realist seinen drawing where ordinary adult faces carry individual wrinkles, heavy eyelids, imperfect noses and ears, and suspense lives in one silent held reaction.',
         subject_treatment:
-          'Preserve the requested identity, count, pose and action; draw people with realistic adult proportions, small eyes, individualized features, believable hair and everyday clothing folds, never generic big-eyed anime faces.',
+          'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic adult proportions, small eyes, individualized features, believable hair and everyday clothing folds, never generic big-eyed anime faces. Wardrobe details apply only when the prompt leaves clothing open.',
         color_and_tone:
           'Black-and-white manga page: black ink, grey screentone and paper white, with at most one pale wash of color on a single object.',
         lighting_and_shadow:

@@ -10,12 +10,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Kengo Hanazawa - Institutional Liminal Dread'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Kengo Hanazawa manga look as in I Am a Hero: photo-traced realistic backgrounds of ordinary buildings, awkward plain characters and dread that seeps into mundane spaces.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hanazawa realism, awkward plain faces, slouched bodies, ordinary work clothes and nervous expressions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hanazawa realism, awkward plain faces, slouched bodies, ordinary work clothes and nervous expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey tone, fluorescent pallor and dull institutional greens.',
       lighting_and_shadow:
         'Buzzing fluorescent light, dim emergency lights and long corridor shadows.',
@@ -38,12 +38,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Shuzo Oshimi - Crimson Celestial Omen'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink and grey tone with a single ominous crimson in the sky.',
       lighting_and_shadow:
         'Flat dusk light, long wrong-pointing shadows and eerie glow from the sky.',
@@ -65,12 +65,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Kazuhiro Fujita - Grotesque Marionette Spotlight'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Kazuhiro Fujita manga look as in Karakuri Circus: wild scratchy ink, grotesque automaton marionettes, circus stages, exaggerated faces and furious action lines.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Fujita designs, wild hair, huge expressive eyes, gaunt or grinning faces and marionettes with jointed limbs.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujita designs, wild hair, huge expressive eyes, gaunt or grinning faces and marionettes with jointed limbs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with dense grey tone and spotlight white.',
       lighting_and_shadow: 'Hard single spotlight on stage and deep black surrounding darkness.',
       texture_and_material: 'Scratchy energetic pen line, crosshatching and splattered ink.',
@@ -91,12 +91,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Inio Asano - Deep Void Whisper'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with fine grey tone and deep black voids.',
       lighting_and_shadow: 'Dim lantern light swallowed by vast darkness and faint reflections.',
       texture_and_material: 'Photo-derived line, fine tone and immaculate empty black fields.',
@@ -115,12 +115,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Gekidan Inu Curry - Ritual Mask Geometry'],
     category: '7. Horror',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Gekidan Inu Curry witch labyrinth look from Puella Magi Madoka Magica: cut-paper collage worlds, antique print scraps, geometric symbols and nightmarish storybook creatures.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people as simple silhouettes or clean anime figures surrounded by cut-paper collage creatures and geometric masks.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as simple silhouettes or clean anime figures surrounded by cut-paper collage creatures and geometric masks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Antique print sepia, candy pastels, black and sudden saturated reds.',
       lighting_and_shadow: 'Flat collage light where shapes glow by contrast rather than source.',
       texture_and_material:
@@ -145,12 +145,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'analog tape horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Masaaki Nakayama manga look as in Fuan no Tane: ordinary everyday scenes with one wrongly placed figure, stiff doll-like apparitions and quiet shock panels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink and grey tone with washed-out home-video tint.',
       lighting_and_shadow: 'Flat domestic light with a dark doorway or hallway holding the threat.',
       texture_and_material: 'Clean realistic pen line, tone and slightly degraded video noise.',
@@ -177,12 +177,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'transformation horror anime',
     negativePrompt:
-      'a long-haired girl with a mole under her eye, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a long-haired girl with a mole under her eye, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink, white paper and dense fine hatching with no color.',
       lighting_and_shadow: 'Flat ordinary light made eerie by heavy hatched shadows.',
       texture_and_material:
@@ -212,12 +212,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'rural festival horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Fujisaki designs, extreme sculptural hairstyles, pale faces, sharp eyes and old-fashioned village clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujisaki designs, extreme sculptural hairstyles, pale faces, sharp eyes and old-fashioned village clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Summer green, pale daylight, dusk crimson and night indigo.',
       lighting_and_shadow: 'Blinding summer daylight and cold moonlight on wooden houses.',
       texture_and_material: 'Digital cel with ornate stylized hair shapes and painted village.',
@@ -241,12 +241,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'kaidan school anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Tomoki Izumi manga look as in Mieruko-chan: cute clean ordinary designs next to grotesque hyper-detailed ghosts that only one person can see.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with clean cute designs and ghosts rendered with dense grotesque detail beside them.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean cute designs and ghosts rendered with dense grotesque detail beside them. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey tone and pallid ghost whites.',
       lighting_and_shadow:
         'Narrow flashlight beams cutting through dim stairwell light and deep corners.',
@@ -275,12 +275,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'oceanic horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with scratchy grey hatching and teal night tints.',
       lighting_and_shadow:
         'A single small lamp glowing against huge dark waters and a moonless sky.',
@@ -310,12 +310,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'miniature horror anime',
     negativePrompt:
-      'a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rose red, ivory lace, deep violet and antique gold.',
       lighting_and_shadow: 'Dim candle and moon light in antique rooms.',
       texture_and_material:
@@ -345,12 +345,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'found footage anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Tomoya Takashima Kagewani look (2015): rough limited animation with silhouetted creatures, cut-paper figures, found-footage framing and harsh colored light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people as rough limited-animation figures and creatures as black silhouettes with glowing eyes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as rough limited-animation figures and creatures as black silhouettes with glowing eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night-vision green, deep black shadows and pale glowing eyes in the dark.',
       lighting_and_shadow: 'Single harsh colored light source and deep silhouettes.',
       texture_and_material: 'Rough cut-paper shapes, heavy film grain and flickering video noise.',
@@ -374,12 +374,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'cosmic horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Katsuya Terada illustration look: loose virtuoso sketch lines, painterly digital color, grotesque cosmic beings and rough powerful energy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Terada designs, loose gestural figures, strong silhouettes and small humans before vast entities.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Terada designs, loose gestural figures, strong silhouettes and small humans before vast entities. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep night indigo, sickly green, ember orange and bone white.',
       lighting_and_shadow: 'Eerie glow from the sky and faint starlight.',
       texture_and_material: 'Loose sketch lines, painterly digital brush and grain.',
@@ -406,12 +406,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'fungal horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Hideshi Hino horror manga look: grotesque decaying forms, rotting organic growths, bulging-eyed faces and nightmarish childhood-memory settings.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hino designs, round heads, huge bulging eyes and bodies being consumed by growths. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink and grey tone with sickly yellow-green in color plates.',
       lighting_and_shadow:
         'Dusty sunbeams falling through grimy glass into murky greenhouse shadows.',
@@ -441,12 +441,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'hospital horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Yoshiharu Tsuge alternative manga look as in Nejishiki: dreamlike surreal gekiga, detailed textured backgrounds, odd stiff figures and uncanny medical dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Tsuge stiffness, plain faces, awkward poses and simple clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tsuge stiffness, plain faces, awkward poses and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey wash and dim sepia tones.',
       lighting_and_shadow: 'Dim ward light, flickering bulbs and odd dreamlike shadows on walls.',
       texture_and_material: 'Textured hatching backgrounds and simple stiff figure lines.',
@@ -471,12 +471,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'silhouette horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'ILCA Yami Shibai television look (2013): kamishibai paper theater horror, flat cut-out figures sliding stiffly, harsh color washes and creepy storyteller framing.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as flat cut-paper figures with simple painted faces and stiff jointed movement. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Amber lamp glow, deep black and blood-orange washes.',
       lighting_and_shadow: 'Warm amber lamp light glowing behind thin paper screens at night.',
       texture_and_material:
@@ -506,12 +506,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'doppelganger horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         "Kanako Inuki girls' horror manga look: big-eyed shojo faces turned creepy, wide grins, school and home settings and chilling cautionary tales.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Inuki designs, big round eyes, simple faces and creepy wide smiles.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inuki designs, big round eyes, simple faces and creepy wide smiles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with grey tone and pale bathroom tints.',
       lighting_and_shadow:
         'Flat pale morning bathroom light and uncanny reflections in the mirror.',
@@ -536,12 +536,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'fog town horror anime',
     negativePrompt:
-      'a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Fog grey, dull green, rust and doll-skin pale.',
       lighting_and_shadow: 'Diffuse grey fog light outside and dim lamp-lit interiors inside.',
       texture_and_material: 'Muted digital cel, fog layers and rust textures.',
@@ -570,12 +570,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'yokai procession anime',
     negativePrompt:
-      'a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a round white cat spirit with markings, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         "Yuki Midorikawa Natsume's Book of Friends look: gentle soft line, watercolor yokai of every odd shape, quiet countryside and bittersweet spirit encounters.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Midorikawa softness, gentle faces, simple rural clothes and yokai with odd charming masks and forms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft watercolor greens, dusk blue and lantern amber.',
       lighting_and_shadow: 'Soft moonlight and lantern glow in quiet towns.',
       texture_and_material: 'Soft gentle line, watercolor washes and paper grain.',
@@ -603,12 +603,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Horror',
     domain: 'expressionist horror anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Flat color fields, red and black, with stark white architecture.',
       lighting_and_shadow:
         'Flat graphic lighting with stark black silhouettes against bright color fields.',

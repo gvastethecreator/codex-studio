@@ -3,7 +3,7 @@ id: SP05-001
 packId: pack_16
 name: Osamu Tezuka - Retro Pioneer Hero
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,7 +14,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'Early color television palette: primary red, sky blue, warm yellow and cream, slightly faded.'
   lighting_and_shadow: Flat even light with simple single-tone cel shadows and occasional speed-line glows.
   texture_and_material: Thick soft ink outlines, flat cel paint, grainy 16mm film softness and slight color bleed.

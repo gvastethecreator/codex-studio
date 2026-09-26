@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-062
 packId: pack_05
-name: Crimson Hunger Metamorphosis Style
+name: Sui Ishida - Crimson Hunger Metamorphosis Style
 styleAnchors:
-  - Crimson Hunger Metamorphosis Style
-displayName: Crimson Hunger Metamorphosis
+  - Sui Ishida - Crimson Hunger Metamorphosis Style
+displayName: Sui Ishida - Crimson Hunger Metamorphosis Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: 'Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink.'
-  subject_treatment: Redraw the prompt's nonhuman subject or object and its setting in this treatment; the image stays free of people, and a gentle prompt stays gentle in content.
-  color_and_tone: Black, bone and the subject's own colors, with deep red limited to the seams.
-  lighting_and_shadow: Thin transmitted light glows through the membranes, with localized red bounce beside each seam.
-  texture_and_material: Polished lacquer plates set against soft translucent film, never turned into a mask or specimen.
-  camera_and_composition: Keep the requested framing, subject count and pose; the image stays entirely free of people.
-  atmosphere_and_mood: Quiet metamorphic tension, a change happening in silence.
-  rendering_and_quality: Clean lacquer highlights and crisp seam lines with readable underlying form.
-  key_features: split translucent lacquer plates; membrane-thin overlaps; crimson seams; transmitted edge light; no person required
-  creative_brief: "Lacquer anime illustration in which a nonhuman subject or object seems to shed its surface: split translucent lacquer plates, membrane-thin overlaps and fine crimson seams in clean ink. Carry it through split translucent lacquer plates, membrane-thin overlaps, crimson seams, transmitted edge light, no person required. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Sui Ishida Tokyo Ghoul manga look: sketchy experimental ink, watercolor bleeds in crimson and black, masked figures and tragic urban metamorphosis.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ishida designs, pale faces, masks, dark clothing and one crimson eye. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with crimson watercolor bleeds and grey washes.
+  lighting_and_shadow: Dim urban night light and glowing crimson eyes in shadowed faces.
+  texture_and_material: Sketchy experimental ink lines and bleeding crimson watercolor washes.
+  camera_and_composition: Moody close-ups on masked faces and lonely urban rooftop compositions.
+  atmosphere_and_mood: Keep the requested mood with tragic hungry metamorphosis.
+  rendering_and_quality: Experimental ink-and-watercolor manga illustration with a tragic hungry mood.
+  key_features: Sui Ishida sketchy ink; crimson watercolor; masks; metamorphosis
+  creative_brief: "Sui Ishida Tokyo Ghoul manga look: sketchy experimental ink, watercolor bleeds in crimson and black, masked figures and tragic urban metamorphosis. Carry it through Sui Ishida sketchy ink, crimson watercolor, masks, metamorphosis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-haired figure with a leather eyepatch mask and zipper mouth
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -61,10 +64,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-062.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, mask, face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-haired figure with a leather eyepatch mask and zipper mouth, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, mask, face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -73,6 +79,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

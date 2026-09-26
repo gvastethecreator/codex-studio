@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-136
 packId: pack_05
-name: Etched Branch-Lightning Cel
+name: Yuki Tabata - Etched Branch-Lightning Cel
 styleAnchors:
-  - Etched Branch-Lightning Cel
+  - Yuki Tabata - Etched Branch-Lightning Cel
   - Black Clover - Grimoire Thunder Squad
-displayName: Etched Branch-Lightning Cel
+displayName: Yuki Tabata - Etched Branch-Lightning Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Deep forest green, black, ivory and restrained gold; lightning gold with black edges.
-  lighting_and_shadow: Clear cel shadows with bright edge accents only where lightning passes.
-  texture_and_material: Polished cel with thin etched engraving lines on hard materials, cloth kept plain.
-  camera_and_composition: Keep the requested framing; orderly clusters linked by broad diagonals, lightning branches framing rather than covering the subject.
-  atmosphere_and_mood: Rowdy determination held inside a formal structure.
-  rendering_and_quality: Precise linework, spiky hair and cloth ends, ornament kept selective.
-  key_features: black-edged gold lightning branches; etched engraving detail; forest green, black and gold; spiky contour ends; polished cel
-  creative_brief: "Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold. Carry it through black-edged gold lightning branches, etched engraving detail, forest green, black and gold, spiky contour ends. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yuki Tabata Black Clover manga look: extremely dense energetic linework, spiky shading, grimoire magic effects, branching black lightning and crowded magic knight squads.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tabata designs, spiky hair, fierce grins, heavy robes and squad cloaks, rendered with dense hatching. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: 'Black ink with jagged tone, and in color: black lightning, gold and crimson.'
+  lighting_and_shadow: Crackling black lightning flashes and dramatic magic glows lighting the faces.
+  texture_and_material: Dense jagged hatching, splintered lightning lines and heavy ink.
+  camera_and_composition: Explosive clash compositions with lightning branching across panels.
+  atmosphere_and_mood: Keep the requested mood with relentless fiery grit.
+  rendering_and_quality: Dense high-energy shonen manga illustration with crackling magic.
+  key_features: Yuki Tabata density; branching black lightning; grimoire magic; squad cloaks
+  creative_brief: "Yuki Tabata Black Clover manga look: extremely dense energetic linework, spiky shading, grimoire magic effects, branching black lightning and crowded magic knight squads. Carry it through Yuki Tabata density, branching black lightning, grimoire magic, squad cloaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a five-leaf black grimoire
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-136.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a five-leaf black grimoire, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

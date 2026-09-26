@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-132
 packId: pack_05
-name: Full-Color Manhwa Shadow Glow
+name: DUBU Solo Leveling - Full-Color Manhwa Shadow Glow
 styleAnchors:
-  - Full-Color Manhwa Shadow Glow
+  - DUBU Solo Leveling - Full-Color Manhwa Shadow Glow
   - Solo Leveling - Shadow Monarch Raid Ascension
-displayName: Full-Color Manhwa Shadow Glow
+displayName: DUBU Solo Leveling - Full-Color Manhwa Shadow Glow
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Black, indigo and violet with cold cyan highlights; skin cool and pale.
-  lighting_and_shadow: Deep value falloff and restrained cool rims; glow confined to eyes and a few edges.
-  texture_and_material: Soft airbrushed gradients, smoke as feathered wisps, crisp luminous edges.
-  camera_and_composition: Keep the requested framing; tall stacked planes and strong vertical scale suited to scroll reading.
-  atmosphere_and_mood: Quiet awe and rising dominance, darkness gathering upward toward a cold glow.
-  rendering_and_quality: Glossy digital finish with dark tonal depth and thin cyan edges, no panel borders.
-  key_features: airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging
-  creative_brief: "Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground. Carry it through airbrushed digital painting, glowing cyan eyes, smoky shadow silhouettes, black and violet palette, tall vertical staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'DUBU (Redice Studio) Solo Leveling webtoon look: full-color digital manhwa painting, glowing blue and purple eyes, smoky shadow soldiers and dark dungeon raids.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with manhwa designs, sharp handsome faces, dark coats and glowing eyes, and shadow creatures made of smoke. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep black-blue, glowing violet, electric blue and dungeon gold.
+  lighting_and_shadow: Glowing eyes and smoky auras in dark dungeon light.
+  texture_and_material: Full-color digital painting, smoke effects and glossy highlights.
+  camera_and_composition: Tall vertical webtoon-like compositions, dramatic low angles and looming shadow armies.
+  atmosphere_and_mood: Keep the requested mood with dark ascending power.
+  rendering_and_quality: Glossy full-color webtoon illustration with smoky glows and cinematic darkness.
+  key_features: DUBU manhwa color; glowing eyes; shadow soldiers; dungeons
+  creative_brief: "DUBU (Redice Studio) Solo Leveling webtoon look: full-color digital manhwa painting, glowing blue and purple eyes, smoky shadow soldiers and dark dungeon raids. Carry it through DUBU manhwa color, glowing eyes, shadow soldiers, dungeons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a dark-haired hunter with purple glowing eyes and a black coat
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-132.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a dark-haired hunter with purple glowing eyes and a black coat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

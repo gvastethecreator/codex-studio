@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-123
 packId: pack_05
-name: White-Core Flame Halo Cel
+name: Fire Force David Production - White-Core Flame Halo Cel
 styleAnchors:
-  - White-Core Flame Halo Cel
+  - Fire Force David Production - White-Core Flame Halo Cel
   - Fire Force - Cathedral Inferno Brigade
-displayName: White-Core Flame Halo Cel
+displayName: Fire Force David Production - White-Core Flame Halo Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Charcoal and ivory with bright orange, scarlet and warm yellow; every flame core pure white.
-  lighting_and_shadow: 'Fire as the primary source: warm uplight, decisive silhouette shadows, subtle light-leak bloom.'
-  texture_and_material: Dense flat color, light speckle grain and painted spark flecks.
-  camera_and_composition: Keep the requested framing; concentric halo rings centered on the focal area with broad negative space.
-  atmosphere_and_mood: Fervent, almost liturgical heat, fire treated as ritual rather than disaster.
-  rendering_and_quality: Strong silhouette cuts, limited warm bloom and carefully placed ring geometry.
-  key_features: white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain
-  creative_brief: "Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain. Carry it through white-hot flame cores, flat stylized flame tongues, radiating halo rings, charcoal and orange palette, light-leak film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'David Production Fire Force look (2019): white-hot core flames with orange halos, fire brigades in heavy soot-stained uniforms, gothic cathedral architecture and fluid flame effects animation.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohkubo-derived designs, sharp toothy grins, heavy firefighter uniforms with reflective stripes and nimble flame-propelled poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: White-hot flame cores, orange halos, soot black and brass reflective stripes.
+  lighting_and_shadow: Blazing fire as the main light source, white cores glowing and deep soot shadows.
+  texture_and_material: Clean cel characters with fluid hand-drawn flame effects and ember particles.
+  camera_and_composition: Flame-propelled dives, cathedral interiors and dramatic smoke-filled wide shots.
+  atmosphere_and_mood: Keep the requested mood with blazing zealous heroism.
+  rendering_and_quality: Vivid David Production frame with fluid white-core flame animation.
+  key_features: White-core flames; soot-stained brigades; gothic cathedrals; fluid fire effects
+  creative_brief: "David Production Fire Force look (2019): white-hot core flames with orange halos, fire brigades in heavy soot-stained uniforms, gothic cathedral architecture and fluid flame effects animation. Carry it through White-core flames, soot-stained brigades, gothic cathedrals, fluid fire effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a fire soldier with flaming feet and a shark-tooth grin
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -69,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-123.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a fire soldier with flaming feet and a shark-tooth grin, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

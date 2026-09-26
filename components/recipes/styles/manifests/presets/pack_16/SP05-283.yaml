@@ -6,7 +6,7 @@ styleAnchors:
   - The Boy and the Heron - Metaphysical Mourning
 displayName: The Boy and the Heron - Metaphysical Mourning
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness."
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep teal seas, dusk gold, grey-blue fog and flame orange.
   lighting_and_shadow: Stormy light, glowing sunset, eerie dim otherworld light.
   texture_and_material: Rich hand-painted texture, dense line detail and swirling water.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-283.webp

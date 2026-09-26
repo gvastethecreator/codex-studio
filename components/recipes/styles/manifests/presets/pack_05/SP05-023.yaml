@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-023
 packId: pack_05
-name: Elastic Big-Grin Adventure Cel
+name: Eiichiro Oda - Elastic Big-Grin Adventure Cel
 styleAnchors:
-  - Elastic Big-Grin Adventure Cel
+  - Eiichiro Oda - Elastic Big-Grin Adventure Cel
   - Grand Pirate Adventure
-displayName: Elastic Big-Grin Adventure Cel
+displayName: Eiichiro Oda - Elastic Big-Grin Adventure Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Bright ocean blue, warm red and gold, clean white and dark outlines.
-  lighting_and_shadow: High summer sun, broad pale highlights and clear cel shadow groups.
-  texture_and_material: Clean flat color with lightly softened pigment edges.
-  camera_and_composition: Keep the requested framing; roomy balance, flexible diagonals and generous negative space.
-  atmosphere_and_mood: Playful openness and generous momentum, a sunny, big-hearted adventure with room to stretch.
-  rendering_and_quality: Vivid flat colors, legible outlines and little small-scale detail.
-  key_features: rubbery exaggerated anatomy; huge grins; bold rounded outlines; ocean blue, red and gold; flexible diagonals
-  creative_brief: "Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color. Carry it through rubbery exaggerated anatomy, huge grins, bold rounded outlines, ocean blue, red and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Eiichiro Oda One Piece look: rubbery exaggerated anatomy, huge toothy grins, wildly varied character silhouettes, bright ocean adventure and dense joyful detail.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oda exaggeration, huge grins, long rubbery limbs, wild proportions and bold unique outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ocean blue, sunny yellow, bright red and tropical green.
+  lighting_and_shadow: Bright tropical sun with bold simple shadows and sparkling ocean reflections.
+  texture_and_material: Bold confident lines, dense background detail and flat bright color.
+  camera_and_composition: Wide adventure compositions, big-grin close-ups and crowded ensemble panels.
+  atmosphere_and_mood: Keep the requested mood with joyful boundless adventure.
+  rendering_and_quality: Exuberant adventure manga illustration with rubbery exaggeration and dense joyful detail.
+  key_features: Eiichiro Oda exaggeration; big grins; rubbery limbs; ocean adventure
+  creative_brief: "Eiichiro Oda One Piece look: rubbery exaggerated anatomy, huge toothy grins, wildly varied character silhouettes, bright ocean adventure and dense joyful detail. Carry it through Eiichiro Oda exaggeration, big grins, rubbery limbs, ocean adventure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a straw hat on a boy with a scar under the eye
+  - a skull flag with a straw hat
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -69,10 +73,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-023.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, straw hat with red open vest, stretching rubber punch, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a straw hat on a boy with a scar under the eye, a skull flag with a straw hat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, straw hat with red open vest, stretching rubber punch, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +88,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

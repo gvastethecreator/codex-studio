@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Hayao Miyazaki and Studio Ghibli feature animation as in Howl's Moving Castle: hand-painted poster-color backgrounds of Alsace-like towns and alpine meadows, ramshackle steampunk machines of patched metal, and simple warm character designs.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, small dot-highlight eyes, soft noses, natural proportions and loose everyday clothes that move with the wind.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with simple round Ghibli faces, small dot-highlight eyes, soft noses, natural proportions and loose everyday clothes that move with the wind. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Meadow greens, sky cobalt, cream cumulus clouds, rust brown metal and warm hearth orange.',
       lighting_and_shadow:
@@ -45,7 +45,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Makoto Shinkai feature animation as in Your Name: photoreal-detailed painted Tokyo and countryside backgrounds, dazzling twilight skies with comets and lens flares, and clean Masayoshi Tanaka character designs.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with clean slender Tanaka-style designs, large clear eyes with a single bright highlight, fine hair strands and modern everyday clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean slender Tanaka-style designs, large clear eyes with a single bright highlight, fine hair strands and modern everyday clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Magenta and violet twilight, gold magic-hour light, deep blue night and saturated cyan skies.',
       lighting_and_shadow:
@@ -75,7 +75,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Makoto Shinkai feature animation as in Weathering With You: rain-soaked photoreal Tokyo streets painted digitally, water droplets as main actors, sudden sunbeams breaking through storm clouds.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean slender Shinkai-era designs, clear bright eyes, wet hair strands and modern raincoats and school or city clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Wet slate grey, neon reflections, storm blue and sudden gold sunlight on puddles.',
       lighting_and_shadow:
@@ -105,7 +105,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Satoshi Kon feature animation as in Perfect Blue: late-nineties Madhouse cel with grounded realistic designs, cramped apartments, TV studios and mirrors, where edits blur what is real.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with realistic adult proportions, modest eyes, observed Japanese faces and ordinary clothes, never glamorous anime beauty.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic adult proportions, modest eyes, observed Japanese faces and ordinary clothes, never glamorous anime beauty. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Faded nineties cel palette, muted pinks and beiges, dim fluorescent greens and sudden blood-red accents.',
       lighting_and_shadow:
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Katsuhiro Otomo feature animation as in Akira: dense hand-drawn Neo-Tokyo megastructures, meticulous mechanical detail, realistic Japanese faces and red taillights smearing into light trails.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Otomo realism, flat-nosed ordinary faces, small eyes, stocky believable bodies and bulky late-eighties jackets.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Otomo realism, flat-nosed ordinary faces, small eyes, stocky believable bodies and bulky late-eighties jackets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Deep night blues and blacks, neon signage colors and signature saturated red.',
       lighting_and_shadow:
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Takeshi Koike feature animation as in Redline: hand-drawn racing with extreme perspective, heavy black shadow shapes, thick outlines and explosive colors across wild alien worlds.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Koike stylization, long angular limbs, hard jawlines, pompadours and huge black shadow masses cutting across bodies.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Koike stylization, long angular limbs, hard jawlines, pompadours and huge black shadow masses cutting across bodies. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Saturated primaries, acid yellow, hot red and cyan against massive black shadows.',
       lighting_and_shadow:
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Daisuke Igarashi manga as animated by Studio 4°C in Children of the Sea: sketchy pencil-like linework, hand-hatched faces and luminous cosmic ocean scenes of whales, plankton and stars.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Igarashi designs, loose pencil-textured lines, freckled sunburned faces, wild hair and hatching on skin. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Deep ocean indigo, glowing plankton cyan, sunlit aquarium teal and warm summer skin tones.',
       lighting_and_shadow: 'Underwater caustics, bioluminescent glow and cosmic light blooms.',
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Palette that shifts per era: sepia and snow for period scenes, technicolor warmth, cool modern greys.',
       lighting_and_shadow:
@@ -251,7 +251,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Snowy night blues, sodium orange streetlights, dirty browns and warm red accents.',
       lighting_and_shadow:
@@ -275,12 +275,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Castle in the Sky - Airborne Wonder Adventure'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sky blue, cloud white, moss green, brass and warm stone ochre.',
       lighting_and_shadow:
         'Bright high-altitude sunlight, huge glowing clouds, warm interior lamps.',
@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sepia-brown ink printing on cream paper with dusty blue-grey washes.',
       lighting_and_shadow:
         'Diffuse light rendered by hatching density, glowing spores as bright white paper.',
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Fresh greens, snow white, soft sky blue and warm tatami browns.',
       lighting_and_shadow:
         'Natural seasonal light carried by backgrounds, while characters stay flat and unshaded.',
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Summer blue, cloud white, cicada green and warm afternoon gold.',
       lighting_and_shadow:
         'Clear midsummer daylight, characters without cel shadow, bright sky reflections.',
@@ -389,12 +389,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Jin-Roh - Paramilitary Melancholy'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'armored protect-gear suits with red glowing goggles, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'armored protect-gear suits with red glowing goggles, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hiroyuki Okiura feature animation as in Jin-Roh: sober realistic Production I.G cel, alternate postwar Tokyo, heavy armored uniforms, rain, sewers and restrained human gestures.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Okiura realism, accurate anatomy, understated faces and heavy period coats and uniforms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okiura realism, accurate anatomy, understated faces and heavy period coats and uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Desaturated olive, rain grey, sepia and cold blue, with rare dim red.',
       lighting_and_shadow: 'Wet night light, flashlight beams in tunnels, overcast gloom.',
       texture_and_material: 'Precise realist cel lines, painted wet concrete, smoke and rain.',
@@ -421,7 +421,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Naoko Yamada and Kyoto Animation feature animation as in A Silent Voice: soft delicate designs, attention to feet, hands and hair, shallow-focus framing and pastel riverside town light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with soft KyoAni designs, large gentle eyes, detailed hair, and expressive small gestures of hands and feet.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft KyoAni designs, large gentle eyes, detailed hair, and expressive small gestures of hands and feet. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel spring palette, soft teal, pink, cream and pale blue water.',
       lighting_and_shadow: 'Soft diffuse daylight, sparkling bokeh, gentle backlight halos.',
       texture_and_material:
@@ -448,7 +448,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Masaaki Yuasa feature animation as in Inu-Oh: medieval Japan reimagined as a glam rock concert, loose elastic figures, flowing lines and scroll-painting textures under stage lights.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, stretchy limbs, loose simplified faces and flamboyant costumes mixing period robes and rock glamour.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuasa elasticity, stretchy limbs, loose simplified faces and flamboyant costumes mixing period robes and rock glamour. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Ink black, vermilion, gold and electric stage colors against dark night.',
       lighting_and_shadow: 'Concert spotlights, torches and smoke beams over ancient streets.',
       texture_and_material:
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Taiyo Matsumoto's manga as filmed by Studio 4°C in Tekkonkinkreet: a crooked hand-drawn city of tangled wires, signs and alleys, wobbly lines and lopsided figures leaping between rooftops.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Matsumoto designs, lopsided heads, scratchy wobbly lines, lanky limbs and scruffy street clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsumoto designs, lopsided heads, scratchy wobbly lines, lanky limbs and scruffy street clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dusty rust, faded teal, warm sunset orange and grimy yellows.',
       lighting_and_shadow: 'Hazy golden city light, neon at night, soft painted shadows.',
       texture_and_material: 'Wobbly pen lines, scratchy hatching, extremely dense painted clutter.',
@@ -501,7 +501,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Naoko Yamada feature animation as in Liz and the Blue Bird: watercolor-soft pastel frames, extremely thin delicate lines, long lanky stylized designs by Futoshi Nishiya and silence-filled school hallways.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with slender elongated limbs, very thin lines, small delicate features and restrained micro gestures of fingers and hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Watercolor pastels, pale blue, cream, soft pink and airy white.',
       lighting_and_shadow: 'Soft window light washed out into haze, delicate light blooms.',
       texture_and_material:
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rintaro feature animation of Osamu Tezuka character designs as in Metropolis: round cartoon Tezuka figures inside monumental art deco skyscrapers and detailed retrofuture machinery.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tezuka designs, round heads, big simple eyes, bulbous noses and period suits, set against realistic giant architecture. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm amber, brass gold, deep teal and sepia jazz-age tones.',
       lighting_and_shadow:
         'Warm glowing city lights, spotlights on towers, dramatic industrial glare.',
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep emerald, rain grey, jade and soft warm skin light.',
       lighting_and_shadow:
         'Green-filtered rain light, reflections on wet surfaces, glowing sky breaks.',
@@ -580,12 +580,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Spirited Away - Warm Liminal Reverie Fantasy'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'a masked black shadow spirit, a white dragon boy, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a masked black shadow spirit, a white dragon boy, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hayao Miyazaki and Studio Ghibli feature animation as in Spirited Away: sprawling red-lacquer bathhouse architecture, lantern-lit spirit streets, quiet trains over water and strange gentle spirits.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with simple round Ghibli faces, dot-highlight eyes, natural bodies, and spirits as soft odd creatures.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with simple round Ghibli faces, dot-highlight eyes, natural bodies, and spirits as soft odd creatures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Lacquer red, lantern gold, twilight teal and deep water blue.',
       lighting_and_shadow: 'Warm lantern glow at dusk, steam haze and calm daylight over water.',
       texture_and_material:
@@ -611,7 +611,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mamoru Hosoda feature animation as in Belle: a vast virtual world of glowing avatars and 3D towers, contrasted with flat shadowless 2D characters in rural Kochi.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw real-world people in flat Hosoda style and virtual avatars in glossy detailed designs, ornate costumes and freckled faces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw real-world people in flat Hosoda style and virtual avatars in glossy detailed designs, ornate costumes and freckled faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon pink, electric teal, pearl white and deep digital blue.',
       lighting_and_shadow:
         'Glowing avatar lights, spotlight beams and holographic bloom across the crowds.',
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hiroyuki Imaishi and Studio Trigger feature animation as in Promare: flat triangular geometry, neon pink and cyan fire made of polygons, bold color blocking and explosive posing.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Shigeto Koyama designs, sharp angular faces, huge poses, flat color shapes and no gradients.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeto Koyama designs, sharp angular faces, huge poses, flat color shapes and no gradients. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon magenta, cyan, lime and white against flat pastel skies.',
       lighting_and_shadow: 'Flat graphic color-field light where fire is geometric shapes.',
       texture_and_material: 'Flat color blocks, polygonal CG effects, thick clean outlines.',
@@ -657,12 +657,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Princess Mononoke - Eco-Mythic Conflict Epic'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-painted masked wolf girl, a red elk rider with a bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hayao Miyazaki and Studio Ghibli feature animation as in Princess Mononoke: ancient cedar forests painted in deep greens, fierce animal gods, iron-working villages and a raw, violent epic mood.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ghibli faces made fiercer, natural proportions, practical period clothes, and animals huge and mythic. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep forest green, moss, earth brown, iron grey and sunset red.',
       lighting_and_shadow: 'Dappled forest light, smoky forge glow, sunset fire.',
       texture_and_material:
@@ -687,7 +687,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Satoshi Kon feature animation as in Paprika: realistic detective drama that fluidly melts into dream spaces, rooms folding into other rooms, screens and posters becoming doors.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kon realism, grounded adult faces and suits, then let them slide through surreal transitions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, grounded adult faces and suits, then let them slide through surreal transitions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Vivid dream reds and oranges against muted realistic city palettes.',
       lighting_and_shadow: 'Film-noir hallway light mixing with glowing dream colors.',
       texture_and_material: 'Clean realist cel, painted backgrounds, seamless transition effects.',
@@ -712,7 +712,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Hayao Miyazaki's late feature animation as in The Boy and the Heron: painterly wartime countryside and an otherworld of towers, seas and strange birds, with heavier linework and dreamlike stillness.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Miyazaki faces rendered more gravely, detailed hair and period clothes, and birds unsettlingly human. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep teal seas, dusk gold, grey-blue fog and flame orange.',
       lighting_and_shadow: 'Stormy light, glowing sunset, eerie dim otherworld light.',
       texture_and_material: 'Rich hand-painted texture, dense line detail and swirling water.',
@@ -739,7 +739,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Masaaki Yuasa feature animation as in Mind Game: mixed media collage of photo faces, rough sketches and flat animation, bodies stretching wildly and styles mutating mid-scene.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yuasa elasticity, rubbery stretched limbs, simplified faces that can suddenly become rough sketches or photo cutouts.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuasa elasticity, rubbery stretched limbs, simplified faces that can suddenly become rough sketches or photo cutouts. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Mutating psychedelic palettes, lava orange, sea green, hot pink and inky black.',
       lighting_and_shadow: 'Wildly changing colored light with no fixed source.',
@@ -766,7 +766,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel red, mint, cream and deep navy night.',
       lighting_and_shadow: 'Flat lantern and street glow with simple graphic highlights on faces.',
       texture_and_material: 'Flat color shapes, simple clean lines and graphic patterns.',
@@ -792,7 +792,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Satoshi Kon feature animation as in Paprika: the mad dream parade where household objects, dolls, frogs and shrines march through Tokyo streets in a glittering carnival.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism swept into the parade, and objects animated as characters with detailed realism. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Glittering gold, carnival red, toy colors and night-city blues.',
       lighting_and_shadow: 'Parade lights, confetti glitter and glowing dream haze.',
       texture_and_material:
@@ -819,7 +819,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Mamoru Oshii feature animation with Yoshitaka Amano designs as in Angel's Egg: a drowned gothic city in eternal dusk, fossil shadows, water everywhere and near-monochrome painterly stillness.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Amano elegance, thin delicate faces, long pale hair and heavy robes, moving very slowly.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano elegance, thin delicate faces, long pale hair and heavy robes, moving very slowly. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Near-monochrome blue-grey, deep teal shadow and pale ivory highlights.',
       lighting_and_shadow: 'Dim dusk light, candle glow, reflections in still water.',
       texture_and_material: 'Painterly detailed backgrounds, fine lines, water and stone.',

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-236
 packId: pack_05
-name: Compact Attrition Hardware
+name: VOTOMS Sunrise - Compact Attrition Hardware
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Early-1980s real-robot TV cel: thick uniform ink line, flat military paint colors, one hard black shadow fill, and dirt dabbed onto the cel with a sponge.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Dark olive, iron gray, earth brown and oxidized orange at low saturation, with every shadow filled solid near-black.
-  lighting_and_shadow: Single hard overhead key; shadows are solid black shapes with no midtone, plus one thin pale highlight line on top edges.
-  texture_and_material: Sponge-dabbed mud and rust speckle over flat cel color, scratched paint chips, and grainy 16 mm film transfer.
-  camera_and_composition: Keep the requested view; crop tight and compact so the subject fills the frame with squat, heavy mass.
-  atmosphere_and_mood: Grim, practical and stubborn, machines as disposable tools of a long campaign.
-  rendering_and_quality: Uniform-weight ink line, flat paint with black shadow fills, sponge grime and soft film grain; no gloss or bloom.
-  key_features: uniform thick ink line; solid black shadow fills; sponge-dabbed mud and rust; olive and iron palette; 16 mm film grain
-  creative_brief: "Early-1980s real-robot TV cel: thick uniform ink line, flat military paint colors, one hard black shadow fill, and dirt dabbed onto the cel with a sponge. Carry it through uniform thick ink line, solid black shadow fills, sponge-dabbed mud and rust, olive and iron palette, 16 mm film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Sunrise Armored Trooper VOTOMS look (1983): squat disposable four-meter armored walkers, grimy battlefields, gritty cel with Norio Shioyama designs and grim expendable soldiers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shioyama designs, stoic faces, drab flight suits and helmets beside squat mass-produced walkers. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Olive drab, mud brown, steel grey and dim cockpit green.
+  lighting_and_shadow: Harsh battlefield light, smoke haze and green scope glow.
+  texture_and_material: Gritty hand-painted cel, mud, oil and dented armor.
+  camera_and_composition: Ground-level walker charges, cockpit scope views and grim trench shots.
+  atmosphere_and_mood: Keep the requested mood with grim expendable attrition.
+  rendering_and_quality: Gritty 1983 real-robot television frame with dented disposable hardware and grime.
+  key_features: VOTOMS squat walkers; mud and oil; stoic soldiers; attrition
+  creative_brief: "Sunrise Armored Trooper VOTOMS look (1983): squat disposable four-meter armored walkers, grimy battlefields, gritty cel with Norio Shioyama designs and grim expendable soldiers. Carry it through VOTOMS squat walkers, mud and oil, stoic soldiers, attrition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a squat walker with a triple-lens scope head
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -46,7 +49,6 @@ avoidRules:
   - gun near-plane
   - tank copy
   - soldier portrait
-  - battlefield gore
   - readable markings
   - garage corridor lock
   - plastic 3d robot render
@@ -66,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-236.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, glossy chrome, neon bloom, clean showroom paint, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a squat walker with a triple-lens scope head, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, glossy chrome, neon bloom, clean showroom paint, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,8 +83,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: VOTOMS Sunrise - Compact Attrition Hardware
+styleAnchors:
+  - VOTOMS Sunrise - Compact Attrition Hardware

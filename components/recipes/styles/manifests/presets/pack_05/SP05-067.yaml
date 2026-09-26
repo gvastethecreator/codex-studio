@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-067
 packId: pack_05
-name: Lush Abyssal Toll Style
+name: Akihito Tsukushi - Lush Abyssal Toll Style
 styleAnchors:
-  - Lush Abyssal Toll Style
-displayName: Lush Abyssal Toll
+  - Akihito Tsukushi - Lush Abyssal Toll Style
+displayName: Akihito Tsukushi - Lush Abyssal Toll Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,23 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Deep-water anime painting in layered teal values with translucent edge glazes and low-contrast pore marks, as if the subject were seen through fathoms of water.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Blue-green shadows and deep teal with restrained pale cyan accents.
-  lighting_and_shadow: Dim color seemingly held inside surfaces, falling off in layered steps with depth; no added glow source.
-  texture_and_material: Damp patina, fine mineral grain and pore stipple only on surfaces that can carry them.
-  camera_and_composition: Keep the requested framing and number of forms; layered value falloff separates depth.
-  atmosphere_and_mood: Solemn, lush pressure, beautiful and costly at once.
-  rendering_and_quality: Glazed layers with soft distant edges and crisp near edges, values readable to the back.
-  key_features: layered teal value falloff; translucent edge glazes; pore stipple; pale cyan accents; damp patina
-  creative_brief: "Deep-water anime painting in layered teal values with translucent edge glazes and low-contrast pore marks, as if the subject were seen through fathoms of water. Carry it through layered teal value falloff, translucent edge glazes, pore stipple, pale cyan accents, damp patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Akihito Tsukushi Made in Abyss manga look: cute round simple characters in astonishingly detailed lush vertical abyss landscapes, strange creatures and a heavy toll of wonder.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with round simple designs, big eyes and explorer gear, dwarfed by detailed landscapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush greens, abyssal blues, warm earth and glowing mineral light.
+  lighting_and_shadow: Soft glowing abyss light and filtered sunlight from above.
+  texture_and_material: Astonishingly detailed pen landscapes paired with simple round character line.
+  camera_and_composition: Vertical abyss panoramas with tiny explorers on ropes and ledges.
+  atmosphere_and_mood: Keep the requested mood with lush perilous wonder.
+  rendering_and_quality: Detailed lush adventure manga illustration with perilous wonder.
+  key_features: Akihito Tsukushi abyss; round simple characters; detailed landscapes; wonder
+  creative_brief: "Akihito Tsukushi Made in Abyss manga look: cute round simple characters in astonishingly detailed lush vertical abyss landscapes, strange creatures and a heavy toll of wonder. Carry it through Akihito Tsukushi abyss, round simple characters, detailed landscapes, wonder. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a robot boy with extending arms
+  - a girl in a red whistle explorer outfit
+  - existing franchise characters
+  - minors
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -66,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-067.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a robot boy with extending arms, a girl in a red whistle explorer outfit, existing franchise characters, minors, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

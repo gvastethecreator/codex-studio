@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-051
 packId: pack_05
-name: Neon Kinetic Alloy Sprint
+name: Cyberpunk Edgerunners Trigger - Neon Kinetic Alloy Sprint
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'High-speed digital anime compositing: horizontal background pan blur, RGB-split chromatic edges, and tapered afterimage smears trailing the moving forms.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Cyan and fuchsia split fringes over graphite and pearl, with one warning-red accent on the leading edge.
-  lighting_and_shadow: Crisp two-tone cel shadows on the subject, background lights stretched into horizontal streaks by the pan, and hot glints on leading edges.
-  texture_and_material: Polished alloy suggested by painted highlight bands, with the background dissolved into long streaked lines.
-  camera_and_composition: Keep the requested view; the subject stays sharp while everything behind it smears sideways in a tracking pan.
-  atmosphere_and_mood: Breathless velocity, cool metal and nerve at the edge of control.
-  rendering_and_quality: Sharp subject contours, chromatic RGB offset on edges, motion-smear afterimages and a streaked background; never a static still life.
-  key_features: horizontal tracking pan blur; RGB-split chromatic edges; tapered afterimage smears; cyan-fuchsia fringes; warning-red leading edge
-  creative_brief: "High-speed digital anime compositing: horizontal background pan blur, RGB-split chromatic edges, and tapered afterimage smears trailing the moving forms. Carry it through horizontal tracking pan blur, RGB-split chromatic edges, tapered afterimage smears, cyan-fuchsia fringes, warning-red leading edge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Trigger Cyberpunk: Edgerunners look (2022): hyper-saturated neon, chrome implants, Yoh Yoshinari kinetic animation, flat color blocks and tragic punk energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Edgerunners designs, lanky bodies, chrome implants, neon-dyed hair and punk jackets. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hyper-saturated neon yellow, magenta, cyan and deep black.
+  lighting_and_shadow: Neon signage, holographic glare and chrome implant reflections in a night megacity.
+  texture_and_material: Flat bold color, thick outlines and chrome gleam.
+  camera_and_composition: Kinetic sprints, fisheye cityscapes and dramatic silhouettes against neon skylines.
+  atmosphere_and_mood: Keep the requested mood with tragic neon adrenaline.
+  rendering_and_quality: Explosive Trigger frame with saturated neon and chrome.
+  key_features: Edgerunners neon; chrome implants; Trigger kinetics; punk tragedy
+  creative_brief: "Studio Trigger Cyberpunk: Edgerunners look (2022): hyper-saturated neon, chrome implants, Yoh Yoshinari kinetic animation, flat color blocks and tragic punk energy. Carry it through Edgerunners neon, chrome implants, Trigger kinetics, punk tragedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a moon-shaped yellow jacket
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -43,7 +46,6 @@ avoidRules:
   - signature
   - named cyborg heroine likeness
   - roller-blade weapon feet
-  - gore
   - police logo
   - readable UI
   - full body fan-art pose
@@ -64,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-051.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, static pose, mechanical limbs added to people, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a moon-shaped yellow jacket, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, static pose, mechanical limbs added to people, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +81,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Cyberpunk Edgerunners Trigger - Neon Kinetic Alloy Sprint
+styleAnchors:
+  - Cyberpunk Edgerunners Trigger - Neon Kinetic Alloy Sprint

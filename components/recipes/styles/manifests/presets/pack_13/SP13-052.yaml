@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Kentaro Miura - Cursed Blade Dark Fantasy
 category: 1. Core Anime
 domain: grim sword anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kentaro Miura manga style: obsessive engraving-like crosshatching, monumental dark fantasy compositions, heavily worn plate armor and grotesque demonic anatomy drawn with baroque detail under apocalyptic storm skies.'
-  subject_treatment: Preserve the requested identity, count, pose and action; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Near-monochrome ink blacks and bone greys with sparing dried-blood red and cold storm blue.
   lighting_and_shadow: Harsh storm light cutting out silhouettes, dense hatched shadows swallowing half of every form.
   texture_and_material: Dense pen crosshatching, stippled grime, scratched metal, torn leather, rain streaks drawn as fine lines.
@@ -36,7 +36,6 @@ avoidRules:
   - a lone black-armored swordsman with an oversized slab greatsword
   - iron prosthetic arm with a built-in cannon
   - existing franchise characters
-  - gore
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -51,11 +50,11 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: a lone black-armored swordsman with an oversized slab greatsword, iron prosthetic arm with a built-in cannon, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a lone black-armored swordsman with an oversized slab greatsword, iron prosthetic arm with a built-in cannon, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-021
 packId: pack_05
-name: Teal-Orange Sakuga Smear
+name: Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear
 styleAnchors:
-  - Teal-Orange Sakuga Smear
+  - Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear
   - Headband Ninja Journey
-displayName: Teal-Orange Sakuga Smear
+displayName: Naruto Shippuden Pierrot - Teal-Orange Sakuga Smear
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Clear teal and warm orange against ink-dark and paper-light neutrals.
-  lighting_and_shadow: Golden-hour hard two-step shadows with small white edge cuts.
-  texture_and_material: Smooth cel flats with sparse dry-ink grain; smears drawn as stretched, tapered shapes.
-  camera_and_composition: Keep the requested framing; open diagonal flow with rising arcs and unblocked negative space.
-  atmosphere_and_mood: Buoyant resolve and forward curiosity, the road ahead always open and bright.
-  rendering_and_quality: Crisp silhouettes and flat fills, with smears and trails only on motion already present.
-  key_features: stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow
-  creative_brief: "Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion. Carry it through stretched limb smear frames, tapered ink contour, curling dust and leaf trails, teal and orange, two-step shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Pierrot Naruto Shippuden sakuga look: Shingo Yamashita style effects, loose painterly smear frames, teal and orange palettes, and flying ninja across trees and rooftops.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kishimoto-derived designs, spiky hair, headbands, sandals and ninja gear in loose sakuga motion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Teal shadows, orange highlights and warm evening skies.
+  lighting_and_shadow: Warm sunset light, glowing chakra effects and teal shadows.
+  texture_and_material: Loose smear frames, painterly effect animation and speed lines.
+  camera_and_composition: Fast tracking through trees, dynamic leaps and smear-frame action.
+  atmosphere_and_mood: Keep the requested mood with restless determined energy.
+  rendering_and_quality: Energetic Pierrot sakuga frame with loose teal-orange painterly effects.
+  key_features: Pierrot sakuga smears; teal and orange; ninja leaps; loose painterly effects
+  creative_brief: "Studio Pierrot Naruto Shippuden sakuga look: Shingo Yamashita style effects, loose painterly smear frames, teal and orange palettes, and flying ninja across trees and rooftops. Carry it through Pierrot sakuga smears, teal and orange, ninja leaps, loose painterly effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - an orange jumpsuit ninja with whisker marks
+  - a leaf headband emblem
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -72,10 +76,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-021.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange jumpsuit ninja with whisker marks, a leaf headband emblem, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -84,6 +91,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

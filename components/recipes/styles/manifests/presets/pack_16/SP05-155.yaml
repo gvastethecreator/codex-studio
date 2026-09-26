@@ -6,7 +6,7 @@ styleAnchors:
   - Familiar of Zero - Noble Arcane Romcom
 displayName: Familiar of Zero - Noble Arcane Romcom
 category: 3. 2000s Classics
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel pink, academy navy, sky blue and castle stone cream.
   lighting_and_shadow: Bright fantasy daylight, magic sparkles and slapstick explosion flashes.
   texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-155.webp

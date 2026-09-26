@@ -6,7 +6,7 @@ styleAnchors:
   - Millennium Actress - Temporal Memory Cinema
 displayName: Millennium Actress - Temporal Memory Cinema
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Satoshi Kon feature animation as in Millennium Actress: a life told through film eras, scenes sliding between period drama, war film, science fiction and the present in one continuous shot.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, elegant restrained faces, natural proportions and costumes of different film eras. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'Palette that shifts per era: sepia and snow for period scenes, technicolor warmth, cool modern greys.'
   lighting_and_shadow: Studio film lighting and theatrical spotlights, snow glinting, projector beams.
   texture_and_material: Clean realistic cel over detailed painted sets, film grain and projector flicker.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-281.webp

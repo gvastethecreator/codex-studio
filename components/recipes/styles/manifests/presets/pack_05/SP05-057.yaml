@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-057
 packId: pack_05
-name: Sleek Collapse Romance
+name: Darling in the Franxx - Sleek Collapse Romance
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Soft-focus romantic digital anime: diffusion-filter bloom around every highlight, hexagonal lens-flare ghosts, and cel shading with gradient blush tones at shadow edges.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Muted rose, apricot, pale gold and dusty blue-gray; shadows tinted lilac rather than dark, with lifted, gentle contrast.
-  lighting_and_shadow: Low golden backlight with wide diffusion halos, flare ghosts crossing the frame, and soft-edged cel shadows fading through a warm blush band.
-  texture_and_material: Smooth digital paint with fine sparkle dust in the air and a light glow haze over the whole image.
-  camera_and_composition: Keep the requested view; let flare ghosts and bloom drift diagonally across the frame toward the subject.
-  atmosphere_and_mood: Wistful, tender and bittersweet, beauty glimpsed while things fall apart.
-  rendering_and_quality: Clean silhouettes softened by diffusion bloom, blush-gradient shadow edges, sparkle dust and flare ghosts; never glossy or harsh.
-  key_features: diffusion-filter bloom; hexagonal lens-flare ghosts; blush-gradient shadow edges; rose-apricot and blue-gray palette; floating sparkle dust
-  creative_brief: "Soft-focus romantic digital anime: diffusion-filter bloom around every highlight, hexagonal lens-flare ghosts, and cel shading with gradient blush tones at shadow edges. Carry it through diffusion-filter bloom, hexagonal lens-flare ghosts, blush-gradient shadow edges, rose-apricot and blue-gray palette, floating sparkle dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Trigger and A-1 Pictures Darling in the Franxx look (2018): sleek feminine-silhouette mechs, pastel pink and teal, glass-dome plantations, and tragic young romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Masayoshi Tanaka designs, clean faces, sleek pilot suits and expressive eyes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pink, teal, white and deep sunset red.
+  lighting_and_shadow: Soft dome light, sunset glow and mech eye glows.
+  texture_and_material: Clean digital cel characters with sleek CG mechs and soft glow effects.
+  camera_and_composition: Romantic two-shots of pilots and sweeping mech battles over collapsing cities.
+  atmosphere_and_mood: Keep the requested mood with tragic sleek romance.
+  rendering_and_quality: Polished Trigger and A-1 frame with sleek mech silhouettes.
+  key_features: Franxx sleek mechs; pastel pink and teal; domes; romance
+  creative_brief: "Trigger and A-1 Pictures Darling in the Franxx look (2018): sleek feminine-silhouette mechs, pastel pink and teal, glass-dome plantations, and tragic young romance. Carry it through Franxx sleek mechs, pastel pink and teal, domes, romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired girl with red horns
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-057.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, hard black shadows, piloting couple pose copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pink-haired girl with red horns, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, hard black shadows, piloting couple pose copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +82,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Darling in the Franxx - Sleek Collapse Romance
+styleAnchors:
+  - Darling in the Franxx - Sleek Collapse Romance

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-229
 packId: pack_05
-name: Punitive Neon Vice Texture
+name: Cyber City Oedo 808 - Punitive Neon Vice Texture
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Risograph cyberpunk manga print: coarse photocopied screentone and black toner, overprinted with two saturated neon spot colors slightly off register.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Toxic fluorescent green and hot red spot inks over black toner and paper white; overlaps turn brown only in thin misregistered slivers.
-  lighting_and_shadow: Values made by screentone dot size and toner black; neon spot color marks the lit edges, with no gradients.
-  texture_and_material: Coarse halftone dots, toner speckle, scratched photocopy streaks and the uneven ink coverage of a stencil drum.
-  camera_and_composition: Keep the requested view; crop hard and let angled detail clusters and black masses bleed off the edges.
-  atmosphere_and_mood: Abrasive, sleazy and tense, a city that punishes while it glows.
-  rendering_and_quality: Two-spot-color risograph finish with misregistration, coarse dots and toner grit around a clean silhouette.
-  key_features: two neon spot inks off register; coarse screentone dots; black toner grit; photocopy streaks; hard crop with bleed
-  creative_brief: "Risograph cyberpunk manga print: coarse photocopied screentone and black toner, overprinted with two saturated neon spot colors slightly off register. Carry it through two neon spot inks off register, coarse screentone dots, black toner grit, photocopy streaks, hard crop with bleed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yoshiaki Kawajiri Cyber City Oedo 808 OVA look (1990): punk convict cops with explosive collars, neon vice cities, hard shadows and gritty cyberpunk violence.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kawajiri realism, tough punk convicts, sharp faces and street clothes with tech. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon purple, acid green, black and sodium orange.
+  lighting_and_shadow: Neon vice light from signs and hard black shadows in alleys.
+  texture_and_material: Gritty hand-painted cel with neon grime, rain and grain.
+  camera_and_composition: Low noir angles, rooftop chases and gritty close-range action.
+  atmosphere_and_mood: Keep the requested mood with punitive neon grit.
+  rendering_and_quality: Gritty 1990 Madhouse OVA frame with neon vice and punk menace.
+  key_features: Oedo 808 convict cops; neon vice; hard shadows; punk
+  creative_brief: "Yoshiaki Kawajiri Cyber City Oedo 808 OVA look (1990): punk convict cops with explosive collars, neon vice cities, hard shadows and gritty cyberpunk violence. Carry it through Oedo 808 convict cops, neon vice, hard shadows, punk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -57,10 +58,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-229.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, smooth digital gradients, wet night market, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, smooth digital gradients, wet night market, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -69,8 +74,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Cyber City Oedo 808 - Punitive Neon Vice Texture
+styleAnchors:
+  - Cyber City Oedo 808 - Punitive Neon Vice Texture

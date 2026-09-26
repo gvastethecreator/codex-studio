@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-054
 packId: pack_05
-name: Luminous Beam Opera
+name: Aldnoah.Zero - Luminous Beam Opera
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: '1980s space-opera cel photography: backlit-cel light effects where pure light shines through cut lines in black, over airbrushed cobalt gradients and inked mechanical forms.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Deep cobalt, ink black and ivory with warm gold, plus one saturated backlit accent that burns almost white at its core.
-  lighting_and_shadow: Backlit glow lines with halation bleeding into the surrounding cel, hard ink shadows, and airbrushed rim highlights sweeping on the diagonal.
-  texture_and_material: Airbrushed starfield speckle, smooth cel paint, and faint dust and grain from optical camera photography.
-  camera_and_composition: Keep the requested view; arrange glow lines and highlights along strong diagonals that sweep through the subject.
-  atmosphere_and_mood: Operatic grandeur and melancholy, light blazing inside a vast dark.
-  rendering_and_quality: Halation around backlit lines, airbrushed gradients, crisp inked mechanics and light film grain; no modern digital bloom.
-  key_features: backlit-cel glow lines with halation; airbrushed cobalt gradients; ivory and gold accents; diagonal light sweeps; optical film grain
-  creative_brief: "1980s space-opera cel photography: backlit-cel light effects where pure light shines through cut lines in black, over airbrushed cobalt gradients and inked mechanical forms. Carry it through backlit-cel glow lines with halation, airbrushed cobalt gradients, ivory and gold accents, diagonal light sweeps, optical film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures and TROYCA Aldnoah.Zero look (2014): orbital knights in ornate gold-and-ivory mechs, dramatic Hiroyuki Sawano-style operatic scale, and grounded soldiers beneath.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with sleek modern designs, aristocratic knights in capes and grounded soldiers in plain uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ivory, gold, royal crimson and cold orbital blue.
+  lighting_and_shadow: Bright beam flashes, harsh orbital sunlight and glowing crests on armor.
+  texture_and_material: Clean cel characters with CG mechs and painted skies.
+  camera_and_composition: Heroic wides of towering mechs and ground-level soldiers.
+  atmosphere_and_mood: Keep the requested mood with operatic orbital grandeur.
+  rendering_and_quality: Polished operatic mecha frame with ornate gold detail.
+  key_features: Aldnoah orbital knights; gold ivory mechs; beam opera; soldiers below
+  creative_brief: "A-1 Pictures and TROYCA Aldnoah.Zero look (2014): orbital knights in ornate gold-and-ivory mechs, dramatic Hiroyuki Sawano-style operatic scale, and grounded soldiers beneath. Carry it through Aldnoah orbital knights, gold ivory mechs, beam opera, soldiers below. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -46,7 +47,6 @@ avoidRules:
   - named mecha likeness
   - laser weapon focus
   - readable UI
-  - war gore
   - plastic 3d robot render
   - cockpit source-frame look
   - readable UI panel
@@ -64,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-054.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, flat digital glow, V-fin horned faceplate copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, flat digital glow, V-fin horned faceplate copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +80,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Aldnoah.Zero - Luminous Beam Opera
+styleAnchors:
+  - Aldnoah.Zero - Luminous Beam Opera

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-265
 packId: pack_05
-name: Rose-Black Baroque Decadence Style
+name: Vampire Hunter D Bloodlust - Rose-Black Baroque Decadence Style
 styleAnchors:
-  - Rose-Black Baroque Decadence Style
-displayName: Rose-Black Baroque Decadence
+  - Vampire Hunter D Bloodlust - Rose-Black Baroque Decadence Style
+displayName: Vampire Hunter D Bloodlust - Rose-Black Baroque Decadence Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Ornate seinen ink with tapered looping strokes that echo the subject's own curves like engraved baroque flourishes, laid over lacquer-smooth dark color.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: A rich black-plum base with dusty rose and burgundy accents and a few tarnished-gold specks; prompt hues drift toward wine tones.
-  lighting_and_shadow: Small warm specular cuts on lacquered surfaces against velvety black shadow, contrast around 1:10.
-  texture_and_material: Fine etched hairlines over smooth lacquer color, velvet-soft shadow gradients, and ornament only along contours that already exist.
-  camera_and_composition: Keep the requested framing; curling strokes follow the contours while quiet dark space surrounds the silhouette.
-  atmosphere_and_mood: Elegant, overripe and faintly uneasy, like a ballroom after midnight.
-  rendering_and_quality: Controlled etched detail on the focal silhouette, softer lacquer fields elsewhere; ornament always subordinate to the silhouette.
-  key_features: tapered looping flourish strokes; black-plum with dusty rose; lacquer-smooth fills; warm specular cuts; etched hairline detail
-  creative_brief: "Ornate seinen ink with tapered looping strokes that echo the subject's own curves like engraved baroque flourishes, laid over lacquer-smooth dark color. Carry it through tapered looping flourish strokes, black-plum with dusty rose, lacquer-smooth fills, warm specular cuts, etched hairline detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Vampire Hunter D: Bloodlust film look (2000) after Yoshitaka Amano designs: baroque gothic castles, rose-black decadence, elegant pale hunters and painterly desolate wastelands.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano-derived elegance, tall pale figures, wide-brimmed hats, flowing capes and aristocratic vampires. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rose black, crimson, bone white and moonlit blue.
+  lighting_and_shadow: Moonlit castle light, candlelit baroque halls and dramatic gothic silhouettes.
+  texture_and_material: Lavish hand-drawn cel with painterly baroque backgrounds and fine ornamental detail.
+  camera_and_composition: Grand gothic castle compositions and elegant slow-motion confrontations under the moon.
+  atmosphere_and_mood: Keep the requested mood with decadent gothic elegance.
+  rendering_and_quality: Lavish 2000 Madhouse feature frame with baroque decadence.
+  key_features: Amano gothic elegance; baroque castles; rose-black palette; moonlit hunters
+  creative_brief: "Madhouse Vampire Hunter D: Bloodlust film look (2000) after Yoshitaka Amano designs: baroque gothic castles, rose-black decadence, elegant pale hunters and painterly desolate wastelands. Carry it through Amano gothic elegance, baroque castles, rose-black palette, moonlit hunters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pale hunter in a wide-brimmed hat with a talking left hand
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -44,7 +47,6 @@ avoidRules:
   - signature
   - named franchise likeness
   - coffin
-  - blood
   - weapon
   - cathedral hallway
   - readable crest
@@ -65,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-265.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, coffin, blood, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pale hunter in a wide-brimmed hat with a talking left hand, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, coffin, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

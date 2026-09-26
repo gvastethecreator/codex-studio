@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-095
 packId: pack_05
-name: Faded-Line Pale Wash Cel
+name: Tsukasa Abe - Faded-Line Pale Wash Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get slender proportions, small calm faces and few internal lines; secondary contours dissolve into the wash while the focal silhouette stays precise.
-  color_and_tone: Desaturated sage, pale amber and blue-grey at low contrast; whites never pure, blacks lifted to soft slate, one warm accent at most.
-  lighting_and_shadow: High soft daylight from a broad sky, a single cel shadow tier only slightly darker than the base, no rim light and no bloom.
-  texture_and_material: Transparent watercolor granulation in skies and ground, tiny speckled light flecks drifting in the air, clean flat cel fills on figures.
-  camera_and_composition: Keep the requested view; favor small focal figures against large open space, a low horizon and detail thinning toward the frame edges.
-  atmosphere_and_mood: Wistful, unhurried and still, as if time passes slowly around the subject.
-  rendering_and_quality: Lines break and fade selectively, gradients stay smooth and forms stay anatomically stable; restraint instead of effects.
-  key_features: fading warm-grey lineart; pale watercolor background boards; lifted slate blacks; single soft shadow tier; drifting light flecks
-  creative_brief: "Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies. Carry it through fading warm-grey lineart, pale watercolor background boards, lifted slate blacks, single soft shadow tier, drifting light flecks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Tsukasa Abe Frieren manga art: delicate thin pen lines, gentle understated faces, quiet pastoral fantasy landscapes and a wistful sense of time passing long after the adventure ended.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Abe designs, calm understated faces, long pale hair, simple traveling cloaks and small restrained gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale watercolor washes in faded mint, ivory, soft sky blue and dusty gold on white paper.
+  lighting_and_shadow: Soft pale daylight rendered with minimal tone, leaving lots of white paper to breathe.
+  texture_and_material: Thin delicate pen lines, light screentone and faded watercolor wash color pages.
+  camera_and_composition: Quiet wide landscapes with small travelers, and gentle close-ups on remembering faces.
+  atmosphere_and_mood: Keep the requested mood with wistful quiet remembrance.
+  rendering_and_quality: Delicate understated fantasy manga illustration with faded pale washes and calm pacing.
+  key_features: Tsukasa Abe thin line; pale washes; wistful travel; understated faces
+  creative_brief: "Tsukasa Abe Frieren manga art: delicate thin pen lines, gentle understated faces, quiet pastoral fantasy landscapes and a wistful sense of time passing long after the adventure ended. Carry it through Tsukasa Abe thin line, pale washes, wistful travel, understated faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-haired elf with twin tails in a white and gold robe
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-095.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, saturated neon color, heavy black outlines, dramatic rim light, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-haired elf with twin tails in a white and gold robe, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, saturated neon color, heavy black outlines, dramatic rim light, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Faded-Line Pale Wash Cel
+displayName: Tsukasa Abe - Faded-Line Pale Wash Cel
 styleAnchors:
-  - Faded-Line Pale Wash Cel
+  - Tsukasa Abe - Faded-Line Pale Wash Cel
   - Frieren – Afterquest Melancholy Fantasy

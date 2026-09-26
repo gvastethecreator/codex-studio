@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-042
 packId: pack_05
-name: Three-Beat Action Triptych
+name: Satoru Utsunomiya - Three-Beat Action Triptych
 styleAnchors:
-  - Three-Beat Action Triptych
+  - Satoru Utsunomiya - Three-Beat Action Triptych
   - anime action layout
   - three equal panels
-displayName: Three-Beat Action Triptych
+displayName: Satoru Utsunomiya - Three-Beat Action Triptych
 category: 5. Action Motion Setpieces
 domain: anime action layout
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - triptych
   - action-sequence
+  - reference-title
 visualDna:
-  aesthetic: 'Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns a three-panel layout of anticipation, action and follow-through, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette identical across all three panels; only the middle panel gets the strongest value contrast.
-  lighting_and_shadow: The same light direction in all panels so the three read as one continuous moment.
-  texture_and_material: Clean cel rendering in every panel, thin dark gutters between them and no drawn text or panel numbers.
-  camera_and_composition: Three equal vertical panels, the camera shifting slightly closer in the middle panel and pulling back for the follow-through.
-  atmosphere_and_mood: Clear, satisfying cause and effect, like a well-timed animation key sequence.
-  rendering_and_quality: Consistent model and costume across the panels, with each pose readable on its own.
-  creative_brief: "Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each. Carry it through three equal panels, anticipation, peak, follow-through, same subject and light in each. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: three equal panels; anticipation, peak, follow-through; same subject and light in each; thin textless gutters; closer middle panel
+  aesthetic: 'Satoru Utsunomiya realist sakuga: naturalistic observed motion, round soft forms, accurate weight shifts and the beauty of ordinary movement broken into clear beats.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with naturalistic rounded forms and accurate weight shifts through each beat of the action. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft countryside greens, stone greys and warm sky light.
+  lighting_and_shadow: Soft natural daylight consistent across all three panels.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Three side-by-side panels showing the start, peak and landing of one motion.
+  atmosphere_and_mood: Keep the requested mood with observed natural grace.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Satoru Utsunomiya realist sakuga: naturalistic observed motion, round soft forms, accurate weight shifts and the beauty of ordinary movement broken into clear beats. Carry it through Satoru Utsunomiya realism, triptych beats, natural weight, soft forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Satoru Utsunomiya realism; triptych beats; natural weight; soft forms
 avoidRules:
   - added opponent
   - added sports gear
@@ -48,10 +49,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-042.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speech balloons, panel numbers, different characters per panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speech balloons, panel numbers, different characters per panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -62,6 +67,7 @@ taxonomy:
     - action
     - triptych
     - action-sequence
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

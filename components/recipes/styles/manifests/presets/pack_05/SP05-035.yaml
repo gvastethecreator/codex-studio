@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-035
 packId: pack_05
-name: Gritty Wallbound Survival
+name: Attack on Titan WIT - Gritty Wallbound Survival
 styleAnchors:
-  - Gritty Wallbound Survival
-displayName: Wallbound Survival Drama
+  - Attack on Titan WIT - Gritty Wallbound Survival
+displayName: Attack on Titan WIT - Gritty Wallbound Survival
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Cold slate, muted olive, sand and bone neutrals, with one small ember-orange accent on the focal figure.
-  lighting_and_shadow: Overcast top light, grouped cool shadows, and a narrow warm edge only on the focal figure.
-  texture_and_material: Broad untextured value planes; stone drawn as stacked vertical strata lines, fabric as stiff folds.
-  camera_and_composition: Keep the requested framing; favor steep worm-eye or plunging overhead views where the request allows, with long verticals.
-  atmosphere_and_mood: Vertigo, grit and stubborn survival against sheer height.
-  rendering_and_quality: Hard stress-line hatching under eyes and along tendons, crisp silhouettes against flat pale sky.
-  key_features: facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals
-  creative_brief: "Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails. Carry it through facial stress lines, towering vertical strata, taut cable motion trails, cold slate and olive palette, plunging verticals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'WIT Studio Attack on Titan anime look (2013): thick heavy outlines around faces, gritty desaturated palettes, 3D maneuver gear swinging and giants looming over medieval walled towns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with thick-outlined AoT anime designs, intense brows, heavy line shading on faces and practical leather strap harnesses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Desaturated earth brown, stone grey, pale sky and harsh blood-red accents.
+  lighting_and_shadow: Harsh daylight with thick black shadow lines and dusty god rays.
+  texture_and_material: Very thick outer contours, hatched shading lines on faces and gritty painted stone.
+  camera_and_composition: Vertigo swings between rooftops, giant faces peering over walls and dizzying drops.
+  atmosphere_and_mood: Keep the requested mood with desperate survival terror.
+  rendering_and_quality: Intense 2013 WIT Studio television frame with heavy thick outlines.
+  key_features: WIT thick outlines; walled towns; swinging harness gear; looming giants
+  creative_brief: "WIT Studio Attack on Titan anime look (2013): thick heavy outlines around faces, gritty desaturated palettes, 3D maneuver gear swinging and giants looming over medieval walled towns. Carry it through WIT thick outlines, walled towns, swinging harness gear, looming giants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - wings of freedom emblem on a green cloak
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -47,11 +50,9 @@ avoidRules:
   - signature
   - giant humanoid
   - titan likeness
-  - blood
   - eaten-body implication
   - military insignia
   - named corps outfit
-  - rooftop gore
   - despair portrait
   - dense forest
   - generic ruin corridor
@@ -72,10 +73,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-035.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: wings of freedom emblem on a green cloak, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, eaten-body implication, military insignia, named corps outfit, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -84,6 +88,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

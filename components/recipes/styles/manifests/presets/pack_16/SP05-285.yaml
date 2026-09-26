@@ -6,7 +6,7 @@ styleAnchors:
   - Nausicaa - Eco-Prophetic Wind
 displayName: Nausicaa - Eco-Prophetic Wind
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: "Hayao Miyazaki's own Nausicaa manga pages: sepia-toned pencil and ink drawing with dense cross-hatching, sweeping toxic fungal forests, insectoid giants and wind-riding gliders."
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people in Miyazaki manga style, simple round faces, flowing hair, layered robes and masks, drawn with fine pencil lines. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sepia-brown ink printing on cream paper with dusty blue-grey washes.
   lighting_and_shadow: Diffuse light rendered by hatching density, glowing spores as bright white paper.
   texture_and_material: Fine pencil and pen hatching, dense organic fungal detail, soft graphite shading.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-285.webp

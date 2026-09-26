@@ -6,7 +6,7 @@ styleAnchors:
   - Tokyo Godfathers - Social Humanist Warmth
 displayName: Tokyo Godfathers - Social Humanist Warmth
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Satoshi Kon feature animation as in Tokyo Godfathers: grubby realistic winter Tokyo alleys, warm humanist comedy and elastic exaggerated facial expressions on otherwise grounded designs.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism stretched by rubbery comic expressions, worn coats, wrinkles and imperfect teeth. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Snowy night blues, sodium orange streetlights, dirty browns and warm red accents.
   lighting_and_shadow: Streetlight pools on snow, neon spill, cold moonlight with warm windows.
   texture_and_material: Detailed painted urban grime, cel characters, snowflakes, trash and texture of old coats.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-282.webp

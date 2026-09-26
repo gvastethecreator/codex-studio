@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-272
 packId: pack_05
-name: Machine Mourning Noir Style
+name: Pluto Studio M2 - Machine Mourning Noir Style
 styleAnchors:
-  - Machine Mourning Noir Style
-displayName: Machine Mourning Noir
+  - Pluto Studio M2 - Machine Mourning Noir Style
+displayName: Pluto Studio M2 - Machine Mourning Noir Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Cool noir anime ink where every reflective surface is drawn as short broken reflection bars and thin interference lines, like light sliding over wet steel.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Steel blue, charcoal and muted silver, with a faint oil-slick violet-green on glossy edges.
-  lighting_and_shadow: The original light source is kept; its reflections break into narrow discontinuous bands and dark detail stays visible.
-  texture_and_material: Enamel-like sheen on glossy materials and quiet graphite grain on matte ones.
-  camera_and_composition: Keep the requested framing; repeated reflection lengths pace the image in a steady horizontal rhythm.
-  atmosphere_and_mood: Cool, grieving restraint in which mourning shows as stillness.
-  rendering_and_quality: Clean ink forms with crisp, regular reflection bars; no machinery or gadgets are added.
-  key_features: broken reflection bars; thin interference lines; steel blue and silver; oil-slick edge tint; enamel sheen against graphite matte
-  creative_brief: "Cool noir anime ink where every reflective surface is drawn as short broken reflection bars and thin interference lines, like light sliding over wet steel. Carry it through broken reflection bars, thin interference lines, steel blue and silver, oil-slick edge tint, enamel sheen against graphite matte. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio M2 Pluto look (2023): faithful Naoki Urasawa realism in animation, humanlike robots, grieving detectives, noir European cities and quiet mournful science fiction.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people and robots with Urasawa-derived realism, individualized faces, trench coats and subtle mechanical seams. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted noir grey, cold blue, warm lamp amber and dim rain tones.
+  lighting_and_shadow: Noir rain light, warm interior lamps and cold reflections.
+  texture_and_material: Realistic digital cel with painted European noir cities.
+  camera_and_composition: Detective noir framing in rainy streets and quiet emotional close-ups on robot faces.
+  atmosphere_and_mood: Keep the requested mood with mournful machine noir.
+  rendering_and_quality: Faithful realist animation frame with mournful noir and Urasawa restraint.
+  key_features: Pluto realism; humanlike robots; noir detective; grief
+  creative_brief: "Studio M2 Pluto look (2023): faithful Naoki Urasawa realism in animation, humanlike robots, grieving detectives, noir European cities and quiet mournful science fiction. Carry it through Pluto realism, humanlike robots, noir detective, grief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a robot detective in a trench coat with a bald head
+  - a boy robot with spiky hair
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -45,7 +49,6 @@ avoidRules:
   - named franchise likeness
   - interior investigation room
   - gun
-  - gore
   - readable UI
   - police signage
   - splatter-only horror
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-272.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, interior investigation room, gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a robot detective in a trench coat with a bald head, a boy robot with spiky hair, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, interior investigation room, gun, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-055
 packId: pack_05
-name: Gothic Tech Existential Dread
+name: Mamoru Nagano - Gothic Tech Existential Dread
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Stark psychological anime framing: flat unshaded silhouettes against one saturated color field, sparse thin line, and pen-hatched interiors held like a still frame.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Black, bone and one flooding field of violet, sickly green or vermilion; everything else stays near-monochrome.
-  lighting_and_shadow: 'Mostly shapeless light: silhouettes cut against the lit color field, a thin bone-white rim line, and hatched gloom inside forms.'
-  texture_and_material: Fine G-pen crosshatching inside dark shapes, flat untextured color fields, and faint cel dust.
-  camera_and_composition: Keep the requested view; push the subject off-center against a large empty field and hold the frame static and tense.
-  atmosphere_and_mood: Existential unease, quiet dread and isolation, a held breath that lasts too long.
-  rendering_and_quality: Flat color fields, silhouette clarity, pen-hatched interiors and a thin bone rim; no ornament and no glow.
-  key_features: flat saturated color field; black silhouettes; G-pen crosshatched interiors; off-center composition with a huge void; thin bone rim line
-  creative_brief: "Stark psychological anime framing: flat unshaded silhouettes against one saturated color field, sparse thin line, and pen-hatched interiors held like a still frame. Carry it through flat saturated color field, black silhouettes, G-pen crosshatched interiors, off-center composition with a huge void, thin bone rim line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nagano fashion elegance, slender bodies, flowing hair and ornate gothic armor and robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ivory, black lacquer, gold filigree and deep gothic reds.
+  lighting_and_shadow: Soft gothic cathedral light and elegant rim light.
+  texture_and_material: Fine ornamental line, fashion rendering and lacquered armor.
+  camera_and_composition: Elegant tall vertical compositions and ornate close-ups of lacquered armor plates.
+  atmosphere_and_mood: Keep the requested mood with melancholy ornate dread.
+  rendering_and_quality: Ornate fashion-illustration frame with gothic mecha and melancholy knights.
+  key_features: Mamoru Nagano gothic mecha; fashion elegance; ornate armor; melancholy
+  creative_brief: "Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights. Carry it through Mamoru Nagano gothic mecha, fashion elegance, ornate armor, melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -43,7 +44,6 @@ avoidRules:
   - signature
   - crucifix pose
   - exposed organs
-  - gore
   - hospital tube body
   - franchise robot silhouette
   - religious icon copy
@@ -64,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-055.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, exposed organs, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +80,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mamoru Nagano - Gothic Tech Existential Dread
+styleAnchors:
+  - Mamoru Nagano - Gothic Tech Existential Dread

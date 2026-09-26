@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-246
 packId: pack_05
-name: Jewel Arabesque Curve Cel
+name: Shinobu Ohtaka - Jewel Arabesque Curve Cel
 styleAnchors:
-  - Jewel Arabesque Curve Cel
+  - Shinobu Ohtaka - Jewel Arabesque Curve Cel
   - Magi - Labyrinth Jewel Caravan
-displayName: Jewel Arabesque Curve Cel
+displayName: Shinobu Ohtaka - Jewel Arabesque Curve Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Arabesque linework decorates existing surfaces; do not add markets, caravans, deserts or labyrinths.
-  color_and_tone: Jewel blue, turquoise, amber and saffron in a rich warm-cool balance.
-  lighting_and_shadow: Warm light rolls over curved planes with sparse, sharp jewel-point specular stars.
-  texture_and_material: Smooth painted color with fine gold-line ornament and an enamel-like tile shine.
-  camera_and_composition: Keep the requested view; flowing S-curve spacing guides the eye through the frame.
-  atmosphere_and_mood: Graceful, warm and lively, like music in motion.
-  rendering_and_quality: Rich but controlled color with delicate line detail sitting over clean cel shapes.
-  key_features: arabesque S-curve contours; jewel blue and turquoise; fine gold-line ornament; jewel-point specular stars; enamel tile shine
-  creative_brief: "Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes. Carry it through arabesque S-curve contours, jewel blue and turquoise, fine gold-line ornament, jewel-point specular stars, enamel tile shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohtaka designs, big lively eyes, braided hair, flowing desert robes and jewelry. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Jewel turquoise, gold, desert sand and royal purple.
+  lighting_and_shadow: Bright desert sun on domes and glowing turquoise djinn magic.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Palace and bazaar wide shots framed by ornate arabesque arches.
+  atmosphere_and_mood: Keep the requested mood with jeweled desert adventure.
+  rendering_and_quality: Bright Arabian Nights fantasy frame with jeweled arabesque curves.
+  key_features: Magi arabesques; jewel palaces; desert markets; djinn magic
+  creative_brief: "Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a braided boy with a flute and a blue djinn
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -69,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-246.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a braided boy with a flute and a blue djinn, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

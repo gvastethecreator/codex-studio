@@ -6,7 +6,7 @@ styleAnchors:
   - Run with the Wind - Long-Distance Night Endurance
 displayName: Run with the Wind - Long-Distance Night Endurance
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Production I.G Run with the Wind television look (2018): grounded realistic runners, breath clouds, empty roads at night and quiet emotional endurance.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic lean runners, simple faces, running gear and breath visible in cold air. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night navy, streetlight orange, winter grey and breath white.
   lighting_and_shadow: Streetlight pools on empty roads, dawn glow and cold air haze.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-351.webp

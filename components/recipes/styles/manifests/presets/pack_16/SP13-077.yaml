@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Hiroshi Hirata - Wandering Ronin Western
 category: 6. Samurai & Medieval
 domain: drifter period anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hiroshi Hirata gekiga: heavy dramatic brushwork, grim sweaty samurai, dense calligraphic energy and raw historical violence.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hirata realism, gaunt hard faces, stubble, sweat, worn kimono and straw hats. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with grey wash and dusty sepia in color plates.
   lighting_and_shadow: Harsh noon light with black brush shadows and dust glare.
   texture_and_material: Heavy expressive brushwork, calligraphic strokes and dry-brush grit.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

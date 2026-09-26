@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-038
 packId: pack_05
-name: Bullet-Time Orbit Freeze
+name: Takeshi Honda - Bullet-Time Orbit Freeze
 styleAnchors:
-  - Bullet-Time Orbit Freeze
+  - Takeshi Honda - Bullet-Time Orbit Freeze
   - anime action staging
   - time frozen at the action peak
-displayName: Bullet-Time Orbit Freeze
+displayName: Takeshi Honda - Bullet-Time Orbit Freeze
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - bullet-time
   - frozen-moment
+  - reference-title
 visualDna:
-  aesthetic: 'Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the frozen instant seen from a camera orbiting the subject, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette with a slight cool desaturation of the background to signal stopped time.
-  lighting_and_shadow: Crisp rim light on every suspended element so each one reads separately, from the existing light direction.
-  texture_and_material: Only elements already in the scene hang in the air, such as hair, water drops, cloth or flour, each sharply defined.
-  camera_and_composition: A three-quarter rear or low side angle that the prompt did not imply, the subject centered with suspended elements in a loose ring.
-  atmosphere_and_mood: Hushed suspended stillness inside a fast movement.
-  rendering_and_quality: Everything sharp, no motion blur, clean separation between the subject and each suspended element.
-  creative_brief: "Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still. Carry it through time frozen at the action peak, camera swung to an unexpected side, suspended scene elements, no motion blur, cool desaturated background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background
+  aesthetic: 'Takeshi Honda precise key animation as in his Evangelion and Ghibli work: exact realistic anatomy, careful detail frozen in a single instant, and elegant controlled motion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with precise realistic anatomy frozen mid-action, every fold and droplet exact. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Natural river blues and greens with clear bright highlights on water droplets.
+  lighting_and_shadow: Crisp natural light catching each frozen droplet and thread.
+  texture_and_material: Precise clean lines and exact detailed rendering of frozen particles.
+  camera_and_composition: Orbiting frozen-instant camera view circling the figure caught exactly mid-action.
+  atmosphere_and_mood: Keep the requested mood with suspended precise instant.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Takeshi Honda precise key animation as in his Evangelion and Ghibli work: exact realistic anatomy, careful detail frozen in a single instant, and elegant controlled motion. Carry it through Takeshi Honda precision, frozen instant, exact anatomy, orbit view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Takeshi Honda precision; frozen instant; exact anatomy; orbit view
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-038.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - bullet-time
     - frozen-moment
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

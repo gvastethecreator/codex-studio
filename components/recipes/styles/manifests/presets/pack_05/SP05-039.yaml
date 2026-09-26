@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-039
 packId: pack_05
-name: Tactical Adventure Shonen
+name: Hunter x Hunter 2011 - Tactical Adventure Shonen
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Clear sky blue, leaf green, white and warm skin tones; each shimmer outline in its own soft hue at low opacity.
-  lighting_and_shadow: Clean midday light, one cel shadow tier, and a pale bounce under chins and brims.
-  texture_and_material: Smooth flat fills; the shimmer outline slightly blurred and wavering, never a solid glow.
-  camera_and_composition: Keep the requested framing; roomy compositions with clear intervals between figures, readable at a glance like a strategy map.
-  atmosphere_and_mood: Playful curiosity sharpened by quiet calculation, bright and open but always a step ahead.
-  rendering_and_quality: Crisp lines, minimal texture, and the shimmer halo only where the prompt shows focus or effort.
-  key_features: slim clean contour; translucent wobbling aura outline; sunlit cel palette; clear figure intervals; one-tier cel shadow
-  creative_brief: "Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer. Carry it through slim clean contour, translucent wobbling aura outline, sunlit cel palette, clear figure intervals, one-tier cel shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Hunter x Hunter anime look (2011): clean bright designs with sharp shonen eyes, vast adventure landscapes, strategic battles and sudden dark tension.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Togashi-derived Madhouse designs, spiky hair, clean sharp eyes, adventurer clothes and calm tactical expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright adventure greens, sky blue and warm tan, turning into dark tension purples.
+  lighting_and_shadow: Clear adventure daylight, then eerie aura glows in tense standoffs.
+  texture_and_material: Clean digital cel with crisp outlines and painted wilderness backgrounds.
+  camera_and_composition: Strategic standoff framing, vast landscapes and sudden close-ups on eyes.
+  atmosphere_and_mood: Keep the requested mood with playful tactical tension.
+  rendering_and_quality: Crisp 2011 Madhouse shonen frame with strategic intensity.
+  key_features: Hunter x Hunter adventure; tactical standoffs; clean designs; aura tension
+  creative_brief: "Madhouse Hunter x Hunter anime look (2011): clean bright designs with sharp shonen eyes, vast adventure landscapes, strategic battles and sudden dark tension. Carry it through Hunter x Hunter adventure, tactical standoffs, clean designs, aura tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spiky black-haired boy with a fishing rod
+  - a white-haired boy with claws
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -66,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-039.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a spiky black-haired boy with a fishing rod, a white-haired boy with claws, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,8 +85,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hunter x Hunter 2011 - Tactical Adventure Shonen
+styleAnchors:
+  - Hunter x Hunter 2011 - Tactical Adventure Shonen

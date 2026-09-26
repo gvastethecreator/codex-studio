@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-124
 packId: pack_05
-name: Ultramarine Glare Foreshortening
+name: Yusuke Nomura - Ultramarine Glare Foreshortening
 styleAnchors:
-  - Ultramarine Glare Foreshortening
+  - Yusuke Nomura - Ultramarine Glare Foreshortening
   - Blue Lock - Predator-Ego Sports Assault
-displayName: Ultramarine Glare Foreshortening
+displayName: Yusuke Nomura - Ultramarine Glare Foreshortening
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Electric ultramarine, ink black, white and cool cyan; skin in cool pale tones.
-  lighting_and_shadow: Hard blue-white rim from behind, cyan underlight on faces, deep blue shadow planes.
-  texture_and_material: Clean vector layers with hard-edged glow bands and no grain.
-  camera_and_composition: Keep the requested framing; exaggerate foreshortening toward the lens and aim concentric wedges at the focal eye.
-  atmosphere_and_mood: Predatory concentration, ego sharpened to a point.
-  rendering_and_quality: Sharp vector lines, glowing eye-light trails, and a background reduced to converging vectors.
-  key_features: ultramarine eye-light trails; extreme wide-lens foreshortening; converging blue vector backgrounds; blue-white rim; hard-edged glow
-  creative_brief: "Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors. Carry it through ultramarine eye-light trails, extreme wide-lens foreshortening, converging blue vector backgrounds, blue-white rim, hard-edged glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nomura designs, lean athletic strikers, sharp glaring eyes with glowing irises and taut muscles in extreme perspective. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with ultramarine accents and electric glare in color pages.
+  lighting_and_shadow: Hard backlight, glaring eye glints and dramatic spotlight on the decisive moment.
+  texture_and_material: Sharp ink lines, speed lines, screentone and metaphor overlays.
+  camera_and_composition: Extreme foreshortening with feet and hands thrust at the lens and tilted panels.
+  atmosphere_and_mood: Keep the requested mood with predatory ego intensity.
+  rendering_and_quality: Aggressive sports manga illustration with extreme perspective and predatory energy.
+  key_features: Yusuke Nomura foreshortening; glaring eyes; ego metaphors; ultramarine accents
+  creative_brief: "Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains. Carry it through Yusuke Nomura foreshortening, glaring eyes, ego metaphors, ultramarine accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -68,10 +69,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-124.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

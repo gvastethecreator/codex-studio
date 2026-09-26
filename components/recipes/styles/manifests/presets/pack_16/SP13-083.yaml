@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Basilisk - Shadow Stealth Night
 category: 6. Samurai & Medieval
 domain: ninja stealth anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Gonzo Basilisk television look (2005): dark ninja clan war, moody night palettes, supernatural ninja arts, rooftops, moons and tragic romance.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with lean ninja designs, sharp eyes, dark clan outfits and supernatural features. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Midnight blue, black, pale moonlight and blood red.
   lighting_and_shadow: Thin crescent moonlight, silver rims and deep shadow.
   texture_and_material: Moody digital cel over painted night backgrounds of forests, castles and rooftops.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

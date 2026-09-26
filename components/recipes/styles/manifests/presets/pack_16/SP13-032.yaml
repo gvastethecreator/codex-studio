@@ -6,7 +6,7 @@ styleAnchors:
   - Shuzo Oshimi - Crimson Celestial Omen
 displayName: Shuzo Oshimi - Crimson Celestial Omen
 category: 7. Horror
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Shuzo Oshimi manga look as in Blood on the Tracks: quiet rural towns, trembling psychological close-ups, vast empty skies and dread growing from stillness.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oshimi designs, simple plain faces, wide staring eyes, trembling lines and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink and grey tone with a single ominous crimson in the sky.
   lighting_and_shadow: Flat dusk light, long wrong-pointing shadows and eerie glow from the sky.
   texture_and_material: Soft pencil-like line, trembling contours and blank white space.
@@ -33,8 +33,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - photoreal
   - cute-style
   - vivid-rainbow
@@ -58,12 +56,12 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-032.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -6,7 +6,7 @@ styleAnchors:
   - Kazuo Kamimura - Moonlit Ascetic Training
 displayName: Kazuo Kamimura - Moonlit Ascetic Training
 category: 6. Samurai & Medieval
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kazuo Kamimura lyrical gekiga as in Lady Snowblood: elegant sinuous brush line, snow and moonlight, beautiful solemn faces and poetic seasonal stillness.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kamimura elegance, slender bodies, long necks, solemn beautiful faces and flowing robes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black brush ink on white with pale grey wash and moon-white space.
   lighting_and_shadow: Moonlight on snow expressed by white paper, soft wash shadows and sharp black accents.
   texture_and_material: Sinuous brush line, soft washes, snow flecks and paper grain.
@@ -56,7 +56,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-030.webp

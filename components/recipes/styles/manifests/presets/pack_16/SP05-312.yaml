@@ -6,7 +6,7 @@ styleAnchors:
   - Cat's Eye - Elegant Eighties Heist Glam
 displayName: Cat's Eye - Elegant Eighties Heist Glam
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop."
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night navy, moonlight cyan, pastel pink and gold.
   lighting_and_shadow: Moonlight through skylights, laser beams and gallery spotlights.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-240
 packId: pack_05
-name: Tri-Fire Riot Geometry
+name: Kill la Kill Trigger - Tri-Fire Riot Geometry
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Lineless triangular color-facet animation: forms built from flat translucent triangles, with shadows cut as complementary-colored shards instead of darker values.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Ember orange, hot yellow and electric cyan over charcoal; overlapping shards produce magenta and lime where they cross.
-  lighting_and_shadow: 'No modeled light: each plane gets a flat warm or cool triangle, highlights are pale yellow shards and shadows are cyan shards.'
-  texture_and_material: Perfectly flat translucent fills with visible overlaps between shards and no outlines, grain or brush marks.
-  camera_and_composition: Keep the requested view; break the background into giant diagonal triangles that counter-slant against the subject.
-  atmosphere_and_mood: Rebellious, loud and joyful, a riot of shards moving to a three-beat rhythm.
-  rendering_and_quality: Lineless vector facets with clean overlaps, bounded color fields and no soft glow or gradients.
-  key_features: lineless triangular facets; complementary-colored shadow shards; ember orange, yellow and cyan triad; translucent shard overlaps; counter-slanting background triangles
-  creative_brief: "Lineless triangular color-facet animation: forms built from flat translucent triangles, with shadows cut as complementary-colored shards instead of darker values. Carry it through lineless triangular facets, complementary-colored shadow shards, ember orange, yellow and cyan triad, translucent shard overlaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Trigger Kill la Kill look (2013): Hiroyuki Imaishi flat angular graphics, huge dramatic poses, red-black-white color blocks, thick outlines and explosive over-the-top battles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sushio designs, angular faces, huge exaggerated poses and bold uniforms with sharp shapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Red, black and white color blocks with explosive yellow flashes.
+  lighting_and_shadow: Flat graphic lighting with dramatic silhouettes and flashes.
+  texture_and_material: Thick outlines, flat colors, bold shapes and speed lines.
+  camera_and_composition: Extreme dramatic poses, low angles and explosive framing.
+  atmosphere_and_mood: Keep the requested mood with explosive riotous bravado.
+  rendering_and_quality: Bold hyper-energetic Trigger television frame with graphic color blocking.
+  key_features: Kill la Kill color blocks; Imaishi angles; huge poses; thick outlines
+  creative_brief: "Studio Trigger Kill la Kill look (2013): Hiroyuki Imaishi flat angular graphics, huge dramatic poses, red-black-white color blocks, thick outlines and explosive over-the-top battles. Carry it through Kill la Kill color blocks, Imaishi angles, huge poses, thick outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a sailor uniform with an eye on the shoulder
+  - a scissor blade weapon
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -59,10 +63,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-240.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, black outlines, soft airbrush gradients, literal fire, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a sailor uniform with an eye on the shoulder, a scissor blade weapon, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, black outlines, soft airbrush gradients, literal fire, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,8 +78,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kill la Kill Trigger - Tri-Fire Riot Geometry
+styleAnchors:
+  - Kill la Kill Trigger - Tri-Fire Riot Geometry

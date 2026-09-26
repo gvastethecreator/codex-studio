@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Juu Ayakura - Tournament Pageantry
 category: 6. Samurai & Medieval
 domain: medieval tournament anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Juu Ayakura illustration look as in Spice and Wolf: warm medieval European fairs, merchant towns, soft painterly light and charming detailed characters.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ayakura designs, warm expressive faces, big soft eyes, travel cloaks and period clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm autumn gold, festival reds, cream and sky blue.
   lighting_and_shadow: Soft warm festival daylight, bright striped awnings and evening lantern glow.
   texture_and_material: Painterly soft digital color with clean line art.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

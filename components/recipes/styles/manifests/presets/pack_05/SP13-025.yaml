@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-025
 packId: pack_05
-name: Upward Thunder Momentum Style
+name: Ryotaro Makihara - Upward Thunder Momentum Style
 styleAnchors:
-  - Upward Thunder Momentum Style
-displayName: Upward Thunder Momentum
+  - Ryotaro Makihara - Upward Thunder Momentum Style
+displayName: Ryotaro Makihara - Upward Thunder Momentum Style
 category: 5. Action Motion Setpieces
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-battle-and-worlds
   - anime
   - action
+  - reference-title
 visualDna:
-  aesthetic: 'Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the tall vertical layering and rising side-view staging, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; values lighten layer by layer toward the top, with restrained white-blue accents at the highest edges.
-  lighting_and_shadow: Directional highlights on upward-facing edges; no lightning, flashes or new light sources.
-  texture_and_material: Fine vertical motion marks under the rising subject only; surfaces stay clean and layered.
-  camera_and_composition: A tall portrait frame from a side-on or slight low angle, the subject in the lower half and at least a third of the frame left open above it.
-  atmosphere_and_mood: Lift and ascent carried by spacing and line direction, not by heroics.
-  rendering_and_quality: Powerful but controlled contours with clear vertical separation between layers.
-  key_features: stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing
-  creative_brief: "Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward. Carry it through stacked horizontal layers, subject rising from lower half, open space above, values lightening upward, side-on tall framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Ryotaro Makihara sakuga as in his Mob Psycho and Fate action: rough energetic lines, big vertical motion, crackling lightning-like effects and bold stylized smears.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with rough energetic lines, stretched limbs climbing or rising, and clothes whipping upward. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep storm blues with bright electric yellow and white effect accents.
+  lighting_and_shadow: Crackling lightning-like effect light and storm backlight on climbing figures.
+  texture_and_material: Rough energetic lines, crackle effects and stylized smears.
+  camera_and_composition: Vertical upward compositions with figures rising toward the top of the frame.
+  atmosphere_and_mood: Keep the requested mood with surging upward momentum.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  key_features: Ryotaro Makihara rough energy; vertical motion; crackling effects
+  creative_brief: "Ryotaro Makihara sakuga as in his Mob Psycho and Fate action: rough energetic lines, big vertical motion, crackling lightning-like effects and bold stylized smears. Carry it through Ryotaro Makihara rough energy, vertical motion, crackling effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear
@@ -54,10 +55,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-025.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -67,6 +72,7 @@ taxonomy:
     - anime-battle-and-worlds
     - anime
     - action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

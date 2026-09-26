@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-091
 packId: pack_05
-name: Cyan Crystal-Facet Glow Cel
+name: Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Surfaces keep their real material; the crystal logic lives only in edge highlights and planes of light, never turning objects into glass.
-  color_and_tone: Cyan, ice blue and pearl white with a small blush-pink accent; high-key, cool and clean throughout.
-  lighting_and_shadow: Broad cool ambient light, crisp refraction-like highlight shards along edges and a restrained cyan bloom.
-  texture_and_material: Smooth digital gradients, pinpoint prismatic glints and faint hexagonal sparkle particles floating in the air.
-  camera_and_composition: Keep the requested view; depth is built from overlapping translucent planes and an open, calm perspective.
-  atmosphere_and_mood: Luminous, tender and spacious, like cold clear morning air.
-  rendering_and_quality: Clean tapered cel edges, soft transitions, sharp glints and controlled glow, with no interface elements anywhere.
-  key_features: faceted crystal edge highlights; translucent cyan planes; pearl-white high key; prismatic pinpoint glints; restrained cyan bloom
-  creative_brief: "Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light. Carry it through faceted crystal edge highlights, translucent cyan planes, pearl-white high key, prismatic pinpoint glints, restrained cyan bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures Sword Art Online look (2012): virtual-reality fantasy with glowing cyan crystal effects, floating castle levels, sleek swordplay and shattering polygon particles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with abec-derived designs, sleek long coats, clean faces and glowing swords. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cyan crystal glow, night black, white and gold.
+  lighting_and_shadow: Glowing cyan crystal light and bright sword skill trails in dark virtual spaces.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Dynamic sword duels, floating castle wides and shattering particles.
+  atmosphere_and_mood: Keep the requested mood with luminous virtual adventure.
+  rendering_and_quality: Glossy A-1 Pictures frame with crystal VR effects.
+  key_features: VR crystal glow; floating castle; sword skills; polygon shatter
+  creative_brief: "A-1 Pictures Sword Art Online look (2012): virtual-reality fantasy with glowing cyan crystal effects, floating castle levels, sleek swordplay and shattering polygon particles. Carry it through VR crystal glow, floating castle, sword skills, polygon shatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black-coated dual-wielding swordsman
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -67,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-091.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, HUD elements, game menu, everything turned to glass, glass pavilion, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a black-coated dual-wielding swordsman, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, HUD elements, game menu, everything turned to glass, glass pavilion, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,12 +85,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Cyan Crystal-Facet Glow Cel
+displayName: Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel
 styleAnchors:
-  - Cyan Crystal-Facet Glow Cel
+  - Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel
   - Sword Art Online – Glowing VR Adventure

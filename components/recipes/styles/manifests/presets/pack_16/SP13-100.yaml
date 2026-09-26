@@ -9,7 +9,7 @@ styleAnchors:
 displayName: SHAFT Monogatari - Expressionist Shadow Horror
 category: 7. Horror
 domain: expressionist horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Akiyuki Shinbo and SHAFT look as in Monogatari: expressionist angular architecture, extreme head tilts, text-card cuts, flat color fields and stark silhouettes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with SHAFT stylization, head tilts, slim bodies and sharp silhouettes against geometry. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Flat color fields, red and black, with stark white architecture.
   lighting_and_shadow: Flat graphic lighting with stark black silhouettes against bright color fields.
   texture_and_material: Clean flat color, geometric architecture, repeating patterns and sharp edges.
@@ -38,8 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -50,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

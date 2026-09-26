@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-037
 packId: pack_05
-name: Negative Impact Frame Staging
+name: Yoshimichi Kameda - Negative Impact Frame Staging
 styleAnchors:
-  - Negative Impact Frame Staging
+  - Yoshimichi Kameda - Negative Impact Frame Staging
   - anime action staging
   - inverted black and white values
-displayName: Negative Impact Frame Staging
+displayName: Yoshimichi Kameda - Negative Impact Frame Staging
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - impact-frame
   - value-inversion
+  - reference-title
 visualDna:
-  aesthetic: 'Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the single inverted-value impact frame at the moment of contact, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Pure black and white with at most one accent color from the prompt kept in its original hue at the contact point.
-  lighting_and_shadow: No modeled light; all shading collapses into flat inverted masses with a ring of white around the contact point.
-  texture_and_material: Rough, shaky brush outlines and dry-brush edges, as if drawn in a hurry on a single animation cel.
-  camera_and_composition: Tight framing on the contact point, slightly tilted, with the subject cut by the frame edge.
-  atmosphere_and_mood: A jolt, one heartbeat of pure force frozen in time.
-  rendering_and_quality: High-contrast inverted graphic frame in which the action and subject remain clearly readable.
-  creative_brief: "Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative. Carry it through inverted black and white values, single accent at contact, rough shaky outlines, tight tilted framing, white ring around contact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact
+  aesthetic: 'Yoshimichi Kameda sakuga as in his Fullmetal Alchemist and Mob Psycho impacts: brushy bold lines, inverted negative impact frames, ink-like shapes and powerful graphic hits.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with brushy bold outlines and a single inverted negative frame at the moment of contact. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Inverted black and white impact frames with one hot accent color.
+  lighting_and_shadow: Negative-image flash at impact, turning shadows white and lights black.
+  texture_and_material: Brushy ink-like lines and bold graphic impact shapes.
+  camera_and_composition: Tight impact framing at the exact instant of contact.
+  atmosphere_and_mood: Keep the requested mood with shocking graphic impact.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Yoshimichi Kameda sakuga as in his Fullmetal Alchemist and Mob Psycho impacts: brushy bold lines, inverted negative impact frames, ink-like shapes and powerful graphic hits. Carry it through Yoshimichi Kameda brush lines, negative impact frames, graphic hits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yoshimichi Kameda brush lines; negative impact frames; graphic hits
 avoidRules:
   - added opponent
   - added sports gear
@@ -38,7 +39,6 @@ avoidRules:
   - readable text
   - franchise character likeness
   - full-color render
-  - gore
   - watermark
   - text
   - readable labels
@@ -47,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-037.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -61,6 +65,7 @@ taxonomy:
     - action
     - impact-frame
     - value-inversion
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

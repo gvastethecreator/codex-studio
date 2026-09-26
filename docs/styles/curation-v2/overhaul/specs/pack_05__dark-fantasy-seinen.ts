@@ -45,9 +45,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Seinen ink illustration of a lone adult shepherdess resting against a boulder on a high scree slope, her flock tiny far below, every form split by branching fissure contours into flat chalk and slate planes, one mica-silver glint on her crook, wide empty margins. No text or logo.',
-        'Seinen ink illustration of an abandoned stone well at the bottom of an empty quarry seen from the rim, fissure contours dividing the quarry walls into unequal graphite planes, the well small and isolated in chalk-white space. No text or logo.',
-        'Seinen ink illustration of an adult cellist practicing alone in a bare slate-walled room, a gentle quiet evening, her instrument and shoulders broken into a few flat chalky planes by hairline fissures, pale edge light, cold and calm. No text or logo.',
+        "Kneeling in a white grass meadow above the sea, a gem-bodied gardener with translucent emerald hair carefully glues a chipped fingertip back on while the sun throws rainbow flecks across the ground around her. No readable text or logo.",
+        "Two crystal-bodied scholars in black uniforms argue about the tides on a cliff, their faceted faces scattering blue light onto each other every time they turn their heads. No readable text or logo.",
+        "On a silent seaside beach, a single cracked shard of pale amber crystal lies half buried in the sand, glowing softly as the waves pull back. No readable text or logo.",
       ],
     },
     'SP05-261': {
@@ -71,9 +71,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Brush-ink anime illustration of an aged adult queen seated on a low stone throne, half her figure swallowed by a curved black crescent sweep, a thin bone-gray scar of midtone tracing her crown and cheek, one muted violet accent in her sleeve. No text or logo.',
-        'Brush-ink anime illustration of a raven perched on a thick bell rope, seen close from below, wide crescent value sweeps curling around it and a thin midtone scar along its wing edge, dry-brush breaks in the black. No text or logo.',
-        'Brush-ink anime illustration of an adult baker lifting a round loaf from a stone oven at dawn, a warm and gentle moment, the oven mouth a crescent of pooled ink and a narrow scar of bone-gray light along her forearms. No text or logo.',
+        "Standing on a burned hillside at dusk, a weary mercenary captain in dented armor watches the sun slowly turn black while her band kneels silently in the mud around her banner. No readable text or logo.",
+        "Around a campfire in a ruined abbey, a grizzled sellsword teaches a young squire to mend chainmail as rain drums on the broken roof above them. No readable text or logo.",
+        "A cracked iron helmet rests on a fence post beside an empty battlefield, crows lined up along the rail in the grey evening light. No readable text or logo.",
       ],
     },
     'SP05-262': {
@@ -97,9 +97,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Grounded seinen ink drawing of two adult village elders whispering across a tavern table while a third watches over the rim of his cup, unsteady hand-inked contours, short observational hatching, slate and tobacco neutrals, a doubled line around the watcher. No text or logo.',
-        'Grounded seinen ink drawing of an adult apothecary weighing powder on brass scales, eyes lifted toward the door, precise highlight cuts on the brass and her knuckles, pencil grain under thin ink, paper-cream palette. No text or logo.',
-        'Grounded seinen ink drawing of an adult grandmother pouring tea for her grown nephew at a kitchen table, a warm ordinary visit, drawn in hesitant observational lines and short hatches, subdued slate and cream, a faint misregistered edge on the teapot. No text or logo.',
+        "At the end of a long hospital corridor at night, a tired surgeon in a white coat stops as a pair of polished shoes appears in the doorway of the room she just left empty. No readable text or logo.",
+        "In a small European bakery at dawn, a retired detective buys bread while watching a stranger in the window reflection who never seems to blink. No readable text or logo.",
+        "An empty park bench in a snowy European square holds a folded newspaper and a single leather glove that nobody has come back for. No readable text or logo.",
       ],
     },
     'SP05-263': {
@@ -122,9 +122,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Graphic anime ink of an adult bell-ringer standing alone in a dark belfry, the great bell and his figure drawn in broken dash contours floating in near-black negative space, a single acid-green pulse on the bell rim. No text or logo.',
-        'Graphic anime ink of an unfinished chess game on a stone window ledge at night, pieces outlined in uneven dashes, sparse dot noise thinning toward them, one cold cyan edge on a fallen king. No text or logo.',
-        'Graphic anime ink of an adult night watchwoman on a city wall looking out over black fields, seen from behind at a distance, dashed contours and huge flat black pockets around her, one thin cyan edge on her shoulder. No text or logo.',
+        "Waking up in an empty Tokyo apartment wearing a glossy black suit she never bought, an office worker in her forties stares at a row of strangers who all look just as confused as she is. No readable text or logo.",
+        "Two salarymen in glossy black suits hide behind a vending machine on a real-looking Tokyo street, watching a giant stone statue slowly turn its head. No readable text or logo.",
+        "In a silent apartment at midnight, a single glossy black glove lies on the tatami mat, its circular node blinking faint blue. No readable text or logo.",
       ],
     },
     'SP05-264': {
@@ -147,9 +147,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Hairline anime illustration of an adult infirmary nun folding white linen on a long table, porcelain-pale planes and constant-width technical lines, one contour of her sleeve breaking and doubling, a tiny vermilion thread at the break, shadowless light. No text or logo.',
-        'Hairline anime illustration of a white porcelain hare figurine on a bare windowsill, clinical even margins, flat pale blue-gray fields, the line of one ear wobbling on purpose with a small hard highlight and a coral dot. No text or logo.',
-        "Hairline anime illustration of an adult alchemist's apprentice pouring milk into a clear glass flask, a calm and gentle task, porcelain-white planes and precise hairlines, a single doubled contour on the flask's lip marked with a coral note. No text or logo.",
+        "Washed up on a pastel seaside beach at dawn, a horned woman in a torn hospital gown sits hugging her knees as gold mosaic patterns shimmer across the waves like a painted dream. No readable text or logo.",
+        "Behind thick glass in a white laboratory, a calm horned patient watches the researchers nervously, the gold pattern on the wall glowing brighter as they step back. No readable text or logo.",
+        "On a quiet seaside veranda, a single seashell rests on a white hospital bracelet in the warm evening light. No readable text or logo.",
       ],
     },
     'SP05-265': {
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Ornate seinen ink illustration of an adult countess descending a spiral stair in a plum ball gown, tapered looping strokes echoing the curves of her train and the banister, lacquer-smooth black-plum color, warm specular cuts on her jewelry. No text or logo.',
-        'Ornate seinen ink illustration of a long banquet table after the feast, toppled goblets and wilting roses, baroque flourish strokes tracing the goblet curves, dusty rose and burgundy on velvety black, tarnished-gold specks. No text or logo.',
-        'Ornate seinen ink illustration of an adult violinist playing in a candlelit conservatory among potted palms, a tender private recital, etched hairlines along the violin scroll and her sleeves, black-plum shadow and small warm highlights. No text or logo.',
+        "Riding a black horse across a moonlit wasteland toward a baroque castle, a pale bounty hunter in a sweeping rose-black cape passes a field of wilted roses that slowly bloom again behind her. No readable text or logo.",
+        "In a candlelit baroque ballroom, an aristocratic vampire couple dance alone among hundreds of empty chairs draped in black lace. No readable text or logo.",
+        "A single black rose rests on a moonlit stone balcony, its petals frosted with pale silver dew. No readable text or logo.",
       ],
     },
     'SP05-266': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Kinetic anime ink of an adult woman thief leaping between tiled rooftops against a pale sky, her cloak and trailing leg disintegrating into separated black flecks and broken contourlets, crisp leading hand, charcoal and ash with pale-blue flecks. No text or logo.',
-        'Kinetic anime ink of a flock of crows lifting off a frozen field, the rear edge of each wing dissolving into rice-grain black flecks that thin into the white ground, charcoal palette with a few cool specks. No text or logo.',
-        'Kinetic anime ink of an adult laundress shaking out a white sheet in a sunny courtyard, a gentle chore, the sheet edge flaking into small dark flecks on the wind while her hands stay crisp, granulated matte pigment. No text or logo.',
+        "Running down a concrete stairwell with a police siren echoing below, a fugitive nurse glances back as a tall phantom made of drifting black ash silently mirrors her every step. No readable text or logo.",
+        "A tired fugitive eats instant noodles in a laundromat while his black particle phantom sits awkwardly on the next machine. No readable text or logo.",
+        "In an empty underpass, a thin stream of black ash particles drifts upward from a single abandoned shoe. No readable text or logo.",
       ],
     },
     'SP05-267': {
@@ -224,9 +224,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Sumi-ink seinen illustration of an adult calligrapher-monk kneeling before a blank scroll in an empty hall, black ink feathering into rice paper, one decisive carmine brushstroke slicing diagonally across the whole composition behind him. No text or logo.',
-        'Sumi-ink seinen illustration of a white heron taking off from a black marsh, reeds in dense feathered ink, a single tapered carmine stroke following the line of its outstretched wing and splitting the page. No text or logo.',
-        'Sumi-ink seinen illustration of a rope bridge over a misty gorge with one strand hanging loose, gorge walls in wet black ink, two carmine dry-brush strokes echoing the broken strand, unequal diagonal split. No text or logo.',
+        "Crossing a snowy Edo bridge in a patched kimono, a scruffy ronin with a strange forked blade stops to buy chestnuts from a vendor while three bounty hunters wait at the far end. No readable text or logo.",
+        "By candlelight in a cluttered Edo workshop, an old weaponsmith sketches designs for impossible forked and hooked blades on sheets of rough paper pinned to the wall. No readable text or logo.",
+        "A broken sword hilt lies in fresh snow outside an empty teahouse at dawn, pencil-grey mist around it. No readable text or logo.",
       ],
     },
     'SP05-268': {
@@ -249,9 +249,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Seinen anime ink of an adult court jester sitting alone on the edge of an empty stage after the show, stable black keylines with magenta and cyan outlines slipping off them, navy-gray flat fills, pigment bloom only at the colored edges. No text or logo.',
-        'Seinen anime ink of an adult florist wrapping a bouquet of peonies at her counter, a gentle everyday moment, petals and hands doubled by thin misregistered pink and cyan edges, flat deep-gray fills. No text or logo.',
-        'Seinen anime ink of an adult tavern dancer caught mid-spin in a low-ceilinged hall, her skirt edge doubled in offset magenta and blue-cyan bands, stable keyline and quiet navy shadows. No text or logo.',
+        "Sweating over a single playing card at a neon-lit underground table, a broke delivery driver with an impossibly pointed chin feels the whole room swirl around him as his opponent slowly smiles. No readable text or logo.",
+        "Twelve anxious men balance on a narrow steel beam between skyscrapers at night, each one sweating enormous drops. No readable text or logo.",
+        "A single cheap ticket lies crumpled on a neon floor, swirling black patterns closing in around it. No readable text or logo.",
       ],
     },
     'SP05-269': {
@@ -275,9 +275,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Layered gray ink-wash illustration of two adult strategists leaning over a war-table model of a walled city, stacked translucent washes veiling the room, one crisp negative-space window revealing their hands and the tiny towers in razor-exact line. No text or logo.',
-        'Layered gray ink-wash illustration of an adult spymaster holding a sealed letter by a tall window, contents unseen, graphite and silver washes pooling around him, a clear window of sharp contour on the wax seal and his eyes. No text or logo.',
-        'Layered gray ink-wash illustration of a tabby cat asleep on a stack of leather ledgers in a quiet counting house, soft and gentle, smoke-gray wash layers over the shelves, a sharply bounded highlight island on the sleeping cat. No text or logo.',
+        "In a smoke-filled postwar mahjong parlor, a calm old woman with a sharp pointed face places a single tile as three gangsters around the table freeze, sweat running down their temples. No readable text or logo.",
+        "A cigarette burns down to ash in an ashtray while two players stare each other down in silence. No readable text or logo.",
+        "Under a single lamp swinging from a smoky ceiling, an empty mahjong table glows green in the dark, one tile left standing on its edge. No readable text or logo.",
       ],
     },
     'SP05-270': {
@@ -301,9 +301,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Dual-stroke anime ink of an adult exorcist kneeling to bandage a fox's paw in a burned forest, charred trunks in angular knife-cut lines that soften into round watercolor strokes around the fox, a warm coral bloom at their hands. No text or logo.",
-        'Dual-stroke anime ink of an adult grandfather showing a young woman how to plant rice seedlings in a flooded paddy, angular dry lines at the frame edges melting into soft blush watercolor near their hands. No text or logo.',
-        'Dual-stroke anime ink of an adult knight in scorched armor handing a loaf of bread to a refugee woman at a roadside, harsh angular strokes on the armor edges, round wet ochre blooms where the bread passes between them. No text or logo.',
+        "Sharing a burnt rice cake on the steps of a ruined Sengoku shrine, a wandering swordsman with carved wooden hands and a sharp-tongued old thief watch a demon shadow slide across the valley below. No readable text or logo.",
+        "A village healer carves a new wooden foot for a farmer by lamplight while the rain drums outside. No readable text or logo.",
+        "In a flooded rice paddy at dusk, an abandoned carved wooden hand lies palm up among the reeds while a heron watches it from the bank. No readable text or logo.",
       ],
     },
     'SP05-271': {
@@ -326,9 +326,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Post-abandonment seinen illustration of a sun-bleached ruined aqueduct overgrown with vines, an adult goat-herder dozing in the shade of one arch, eroded straight ink contours, powdery concrete-gray planes and muted ochre highlights. No text or logo.',
-        'Post-abandonment seinen illustration of an adult lute player practicing on the cracked steps of a collapsed stone amphitheater, broad bleached planes with mineral speckle, pale warm shadows, low contrast. No text or logo.',
-        'Post-abandonment seinen illustration of an overgrown spiral stair climbing the inside of a roofless watchtower, wild poppies on every step at half saturation, abraded straight edges and dusty stipple. No text or logo.',
+        "Walking along a sun-bleached highway overgrown with wildflowers, two middle-aged travelers with heavy backpacks stop as something enormous shifts inside a moss-covered shopping mall ahead. No readable text or logo.",
+        "A traveler naps inside an abandoned train car while vines creep through the broken windows around her. No readable text or logo.",
+        "In a sunny meadow where a town used to be, a rusted vending machine stands among tall grass with a bird building a nest on top. No readable text or logo.",
       ],
     },
     'SP05-272': {
@@ -351,9 +351,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Cool noir anime ink of a rusted clockwork knight kneeling in the rain before a small cairn of gears, its helmet and pauldrons drawn as short broken reflection bars, steel-blue and charcoal, oil-slick tint on the wet edges. No text or logo.',
-        'Cool noir anime ink of an adult widow in black polishing an old brass diving helmet at a window, reflection bars sliding across the brass in a steady rhythm, graphite-grain matte dress, muted silver light. No text or logo.',
-        'Cool noir anime ink of a still millpond reflecting a silent water mill at dusk, the water surface built from thin interference lines and broken horizontal bars, steel-blue values and a faint violet-green sheen. No text or logo.',
+        "Standing in the rain outside a flower shop, a robot detective in a trench coat quietly buys a bouquet for a colleague whose memory chip was recovered that morning. No readable text or logo.",
+        "An old robot gardener waters roses in a quiet European courtyard while a detective watches from the window. No readable text or logo.",
+        "An empty trench coat hangs on a hook in a dim office, rain streaking the window. No readable text or logo.",
       ],
     },
     'SP05-273': {
@@ -376,9 +376,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Nocturnal nature anime painting of a stag drinking at a moonlit pool, fine silver vein linework glowing faintly through its antlers and the reeds, deep blue-teal values, pale mint light in the veins, lunar falloff. No text or logo.',
-        'Nocturnal nature anime painting of an adult herbalist asleep in a hammock beneath a willow, peaceful and gentle, silver veins traced through every hanging leaf and along her open palm, soft gouache fills. No text or logo.',
-        'Nocturnal nature anime painting of a mossy fallen giant tree sprouting pale mushrooms, vein-like silver lines running through bark and caps, translucent haze, stone around it left matte. No text or logo.',
+        "Burying a small glowing creature at the edge of a misty mountain spring, a quiet rural healer kneels as tiny translucent lights rise from the moss around her hands and drift into the night. No readable text or logo.",
+        "A fisherman watches a river of faint glowing lights flow beneath the water under his boat. No readable text or logo.",
+        "At dusk along a silent forest path, tiny glowing spores drift over the moss like slow snow while an old wooden signpost leans into the ferns. No readable text or logo.",
       ],
     },
     'SP05-274': {
@@ -401,9 +401,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Cold seinen pen drawing of an adult woman in a heavy coat burying a small wooden box beneath a pine at dusk, brittle short hatches clustering at every contour turn, slate and blue-gray, her red mitten the one warm pivot. No text or logo.',
-        "Cold seinen pen drawing of an adult innkeeper wiping a mug behind the bar while a stranger's wet boots stand by the door, crystalline micrograin at the edges of the counter, hatching thickening in the dark behind her. No text or logo.",
-        'Cold seinen pen drawing of an empty sleigh left on a frozen lake under an overcast sky, tiny edge grains gathered on the runners, pale silver ice left as clean paper, uneven hatch density. No text or logo.',
+        "Waking up twenty years in the past on a snowy morning, a middle-aged manga artist stares out of his mother’s kitchen window at a neighbor he knows will disappear by the end of winter. No readable text or logo.",
+        "Two adults sit in a parked car in a snowy lot, watching a house with its lights off. No readable text or logo.",
+        "On a snowy fence at the edge of a frozen park, a single red scarf flutters in the wind beside a row of footprints that suddenly stop. No readable text or logo.",
       ],
     },
     'SP05-276': {
@@ -426,9 +426,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'rows of uniformed figures'],
       briefs: [
-        'Dry-brush anime illustration of an adult salt-mine overseer standing alone on a white salt terrace at noon, the terraces built from measured parallel strokes like drill marks, one clean black anchor stroke down the edge of his coat, bleached ochre paper. No text or logo.',
-        'Dry-brush anime illustration of an adult stonemason squaring a limestone block with a chisel, parallel strokes following the block faces, compressed highlights and short brown shadows, a single black anchor on the chisel edge. No text or logo.',
-        'Dry-brush anime illustration of an adult weaver working at a loom in a sunlit courtyard, calm and gentle, the warp threads and walls drawn in even-length dry strokes, faded ochre and soft charcoal. No text or logo.',
+        "In a sun-bleached Edo courtyard at noon, two samurai with hyper-detailed tense muscles hold a practice stance for so long that the shadows on the stones slowly move across their feet. No readable text or logo.",
+        "An aged sword master pours water over his head in a stone courtyard, every muscle carved in harsh light. No readable text or logo.",
+        "In a sun-bleached stone courtyard at noon, a single wooden practice sword lies alone, its short shadow the only dark shape in the whole space. No readable text or logo.",
       ],
     },
     'SP05-277': {
@@ -451,9 +451,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Scratchy seinen anime drawing of two young adults sitting on the corrugated roof of a derelict forge at dusk, rust-red scraped strokes and thin violet neon slips along their shoulders, palette-knife scrapes in the sky. No text or logo.',
-        'Scratchy seinen anime drawing of a young adult stable hand calming a nervous horse in a rust-roofed barn, oxidized specks on the beams, offset scraped contours, a cool cyan slip along the horse mane. No text or logo.',
-        'Scratchy seinen anime drawing of a peeling carousel horse on a stopped fairground ride at twilight, scraped rust-orange marks, broken stroke intervals in the empty space around it, one neon violet edge. No text or logo.',
+        "Walking home under a rust-colored sky full of flickering neon, an office worker notices that every streetlight dims as she passes, while a column of pale light hangs silently over the city. No readable text or logo.",
+        "Behind a convenience store at midnight, a night-shift clerk hears a thin whistled tune from the empty alley, the sepia light around her slowly vignetting to black. No readable text or logo.",
+        "In a vignetted rust-colored playground at dusk, a single rusted swing moves back and forth by itself while every window around it stays dark. No readable text or logo.",
       ],
     },
     'SP05-279': {
@@ -476,9 +476,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Graphite noir anime rendering of an adult castle gatekeeper watching the road from a dark arrow-slit, a narrow band of razor focus across his eyes and the stone sill, everything else softening, one pinpoint red specular on his helmet rivet. No text or logo.',
-        'Graphite noir anime rendering of an owl perched on a rooftop gargoyle above a sleeping town, the band of sharp focus on its feathers and talons, soft graphite rooftops below, two red pinpoints in its eyes. No text or logo.',
-        'Graphite noir anime rendering of an adult clockmaker adjusting a pocket watch at a dark workbench, a quiet gentle craft, sharp focus band across the open movement, a red jewel bearing catching a pinpoint specular. No text or logo.',
+        "Standing in a rain-soaked alley of an alternate postwar city, a squad of heavily armored police troopers turns as one, their red glowing optics reflecting in the puddles around a frightened courier. No readable text or logo.",
+        "In a harshly lit locker room, an armored trooper removes his heavy helmet with red optics, revealing a tired, ordinary middle-aged face with a small bandage. No readable text or logo.",
+        "Deep in a dark concrete sewer tunnel, a pair of red optic lenses glows steadily above the black water, reflected in long trembling streaks. No readable text or logo.",
       ],
     },
     'SP05-280': {
@@ -501,9 +501,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Ceremonial anime ink of an adult priestess lighting a ring of votive candles on a crypt floor, concentric stepped rings of amber-to-charcoal value spreading from the flames, evenly spaced brush marks on the flagstones. No text or logo.',
-        'Ceremonial anime ink of four adult siblings sharing soup around a farmhouse hearth on a winter night, warm and gentle, the fire the center of measured value rings fading from cream to charcoal across their faces. No text or logo.',
-        'Ceremonial anime ink of an adult smith silhouetted before the glowing mouth of a forge, rings of warm falloff stepping outward across the smithy walls in five clean bands, crisp ink ring boundaries. No text or logo.',
+        "Drifting down a crimson river under an eternal twilight sky, a silent ferryman in a straw hat poles a small boat past banks of red spider lilies while a guilty businessman clutches his briefcase. No readable text or logo.",
+        "Along a dark river under a crimson twilight sky, a lone paper lantern floats slowly downstream while red spider lilies glow along both banks. No readable text or logo.",
+        "On the gate of a twilight shrine, a single red thread is tied tightly around a small straw doll that sways gently in the warm wind. No readable text or logo.",
       ],
     },
     'SP05-275': {
@@ -525,9 +525,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Manga screentone illustration of three adult washerwomen whispering at a river stone while scrubbing linen, contours printed twice slightly offset, halftone density shifting across their backs, one red kerchief the only accent. No text or logo.',
-        'Manga screentone illustration of an adult noble stepping down from a carriage while shutters crack open along a narrow street, doubled keylines on the carriage, dense dots in the windows and clean unprinted gaps. No text or logo.',
-        'Manga screentone illustration of two magpies chattering on a crooked chimney above a village, offset contour echoes around their tails, pale gray screentone sky, a tiny red berry in one beak. No text or logo.',
+        "Across a crowded Tokyo crosswalk, dozens of ordinary commuters all glance nervously at the same empty manhole cover, each one sure they heard something rolling beneath it. No readable text or logo.",
+        "In a cramped apartment, a tired detective interviews a grandmother who swears her television whispered her name, while the screen behind them shows only static. No readable text or logo.",
+        "At night on an empty apartment staircase lit by one flickering bulb, a single golden roller skate sits on a step as if someone just left it. No readable text or logo.",
       ],
     },
     'SP05-066': {
@@ -551,9 +551,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Clinical thriller ink of a porcelain tea set laid on a lace tablecloth, a gentle afternoon setting, fine branching seam lines mapping each cup into pale faceted planes, bone and celadon values, one crimson dot at a seam junction on the teapot. No people, text or logo.',
-        'Clinical thriller ink of a bronze church bell hanging in a timber frame, seen from below, seam lines branching across its surface like a diagram, tiny crazing cracks, precise pale edge glints. No people, text or logo.',
-        'Clinical thriller ink of a wilting lily in a tall glass vase on a bare shelf, the petals divided into faceted porcelain planes by hairline seams, ceramic-gray shadow, a single crimson stress mark where two seams meet. No people, text or logo.',
+        "Sitting calmly at a family dinner table, a polite father’s face slowly unfolds into a strange flower of smooth grey petals while his wife keeps serving rice without looking up. No readable text or logo.",
+        "A school counselor with a calm deadpan face listens while her shadow on the wall moves independently. No readable text or logo.",
+        "An empty dinner table set for four has one chair pushed back, a bowl still steaming. No readable text or logo.",
       ],
     },
     'SP05-069': {
@@ -576,9 +576,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Low-fantasy anime ink of an adult tanner scraping a stretched hide in a riverside yard, scuffed matte planes and chipped contour edges on the frame and tools, stone gray and undyed linen, a narrow slice of light across the hide. No text or logo.',
-        'Low-fantasy anime ink of an adult wheelwright repairing a broken cart wheel beside a village granary, rubbed pigment on the spokes, chipped iron rim, worn earth palette. No text or logo.',
-        'Low-fantasy anime ink of an adult cook stirring a cauldron of stew in a cramped inn kitchen, a warm ordinary evening, scuffed pots and chipped wooden ladles, narrow slices of light from a high window. No text or logo.',
+        "Holding a torch at the mouth of a damp cave, a methodical middle-aged adventurer in cheap dented armor checks a hand-drawn map for the third time while her tired party waits in the mud. No readable text or logo.",
+        "In a village stable by torchlight, a grim adventurer sharpens a short sword with slow careful strokes while the horses watch nervously from their stalls. No readable text or logo.",
+        "Outside a rough guild hall at grey dawn, a dented steel helmet rests on an overturned barrel beside a half-eaten loaf of bread. No readable text or logo.",
       ],
     },
     'SP05-061': {
@@ -601,9 +601,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Dense crosshatch seinen manga of an adult gravedigger resting on his spade in a hilltop cemetery under a storm sky, shadow built from layered nib hatching in four directions, clean white gaps in the clouds, bone and charcoal. No text or logo.',
-        'Dense crosshatch seinen manga of a colossal abandoned siege tower on an empty plain, low sun behind it, carved heavy shadow in crossed hatch layers, a narrow red-brown accent on its rusted chains. No text or logo.',
-        'Dense crosshatch seinen manga of an adult potter centering clay on a wheel in a stone workshop, a calm and gentle task, heavy crosshatched shadow around her and one hard window light on her hands. No text or logo.',
+        "Standing alone on a scaffold in a crowded baroque square under a storm, a condemned executioner in a black coat looks up as the entire sky is carved into dense crosshatched clouds pressing down on the city. No readable text or logo.",
+        "A climber hangs from a frozen cliff face as the mountain above is rendered in crushing crosshatch. No readable text or logo.",
+        "An empty baroque theater stage is lit by a single candle, the darkness dense around it. No readable text or logo.",
       ],
     },
     'SP05-062': {
@@ -627,9 +627,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'mask', 'face'],
       briefs: [
-        'Lacquer anime illustration of a moth emerging from its cocoon on a thorn branch, the cocoon splitting into translucent lacquer plates with fine crimson seams, thin light passing through the membrane wings. No people, text or logo.',
-        'Lacquer anime illustration of a ripe pomegranate splitting open on a black plate, its skin lifting in polished lacquer plates, membrane-thin overlaps and deep red seams, bone-white ground. No people, text or logo.',
-        'Lacquer anime illustration of a crab shedding its old shell on a tidal rock at low tide, the empty shell a split lacquer casing, soft translucent new carapace beneath, crimson seam lines. No people, text or logo.',
+        "Sitting alone in a coffee shop at closing time, a pale barista in a black apron stares at her own reflection as one of her eyes slowly bleeds crimson watercolor into the glass. No readable text or logo.",
+        "A masked stranger stands on a rooftop at night, crimson ink dripping from the edge of the mask. No readable text or logo.",
+        "A single coffee cup sits on an empty counter, a crimson watercolor bloom spreading beneath it. No readable text or logo.",
       ],
     },
     'SP05-063': {
@@ -650,9 +650,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Gothic seinen poster ink of an adult regent standing at a tall window above a snowbound city, his coat a single hard crimson block against ink black, tapered hairline ornament along the window tracery, ivory highlights. No text or logo.',
-        'Gothic seinen poster ink of an adult matriarch in a high-backed chair with a black hound lying at her feet, flat black and crimson blocks, fine hairline edges on the chair carving, strict three-value hierarchy. No text or logo.',
-        'Gothic seinen poster ink of a red-sailed galley gliding into a black harbor at dusk, the sails as hard crimson blocks, ivory wake, hairline ornament only along the hull contours. No text or logo.',
+        "Standing at the head of a gothic manor staircase in a crimson greatcoat, an elderly aristocratic commander lights a cigar as moonlight and huge black shadows spill down the steps below her. No readable text or logo.",
+        "In a gothic kitchen at midnight, an elderly butler with a manic grin polishes a long row of silver candlesticks while thunder shakes the windows. No readable text or logo.",
+        "On the moonlit marble floor of an empty manor hall, a single crimson glove lies beside a toppled chess piece and a broken candle. No readable text or logo.",
       ],
     },
     'SP05-064': {
@@ -675,9 +675,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Weathered travel-epic anime ink of an adult pilgrim woman climbing a rocky mountain pass with a walking staff, long dry directional brushstrokes skimming her shawl and the rocks, faded blue-gray and chalk highlights. No text or logo.',
-        'Weathered travel-epic anime ink of a lone wind-bent tree on an open steppe, its trunk and the grass drawn in long dry strokes tapering into mineral abrasion, muted earth palette, broad open midtones. No text or logo.',
-        'Weathered travel-epic anime ink of an adult nomad leading a laden pack mule across a dusty plateau, abraded stroke tails on the packs, chalk edge highlights, faded blue-gray sky. No text or logo.',
+        "Plowing a stony field on a wind-scoured northern farm, a former warrior with a scarred face pauses to watch a flock of geese fly over the fjord, his hands finally steady on the plow. No readable text or logo.",
+        "Two farmhands share bread on a stone wall as a storm rolls in over the sea. No readable text or logo.",
+        "On a peaceful northern farm at sunrise, a broken sword has been hammered into the ground as a fence post, a sheep grazing right beside it. No readable text or logo.",
       ],
     },
     'SP05-065': {
@@ -700,9 +700,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Pale seinen horror line art of an adult bride in white standing at the edge of a birch wood at noon, her veil and the birch trunks dissolving into the paper through withheld contour segments, silver-gray edge gaps, ash-white palette. No text or logo.',
-        'Pale seinen horror line art of an empty rocking chair on a pale farmhouse porch, contour gaps along the rockers, high-key diffuse light, one small dark in the open doorway. No text or logo.',
-        'Pale seinen horror line art of an adult fisherman mending a white net on a bleached pier, quiet and ordinary, net and planks fading into open white planes, thin silver edge gaps. No text or logo.',
+        "At the gate of a fog-bound medieval village, a pale silver-eyed woman in a grey cloak waits silently while the villagers peer from their shutters, unsure whether to fear her or the thing in the forest. No readable text or logo.",
+        "A pale warrior eats plain bread alone at the edge of a tavern, everyone else keeping their distance. No readable text or logo.",
+        "At dawn in an empty country inn, a pale silver cloak hangs on a wooden hook while its owner’s untouched breakfast cools on the table. No readable text or logo.",
       ],
     },
     'SP05-067': {
@@ -724,9 +724,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Deep-water anime painting of a sunken galleon figurehead overgrown with kelp, layered teal values stepping back into darkness, translucent glazes on its carved edges, pale cyan accents on the kelp. No text or logo.',
-        'Deep-water anime painting of an adult pearl diver drifting down beside a coral wall, calm and graceful, damp patina and pore stipple on the coral, her figure glazed in blue-green layers. No text or logo.',
-        'Deep-water anime painting of a flooded chapel with small fish drifting between the pews, layered teal falloff from the near pews to the far altar, mineral grain on the stone. No text or logo.',
+        "Descending a rope into a vast lush chasm filled with glowing forests on floating islands, a round-faced grandmother explorer with a huge backpack gasps at a creature gliding past like a living cathedral. No readable text or logo.",
+        "Two adult explorers camp on a ledge in the abyss, cooking strange mushrooms over a tiny stove. No readable text or logo.",
+        "Above an endless green drop inside the abyss, a single explorer’s whistle hangs from a twisted root, swinging slowly in the rising warm wind. No readable text or logo.",
       ],
     },
     'SP05-068': {
@@ -748,9 +748,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Grimy dark-fantasy anime ink of an adult hedge witch knocking a smoking acid-yellow potion into a spilled inkpot on her cluttered workbench, scuffed black masses colliding with chipped color edges, broken contour joins where the liquids meet. No text or logo.',
-        'Grimy dark-fantasy anime ink of a cramped apothecary shelf where toppled jars spill bruise-violet and soot-black powders together, stain-like strokes and dry soot grain, dense marks at the collision. No text or logo.',
-        'Grimy dark-fantasy anime ink of an adult tinker repairing a clockwork crow in a soot-black workshop, chipped pigment on the brass, one acid-yellow accent in its eye, abrupt contour breaks. No text or logo.',
+        "Eating dumplings in a grimy industrial alley, a stocky sorcerer in a cracked porcelain rabbit mask argues with a plumber over who ruined the neighborhood’s pipes with a curse. No readable text or logo.",
+        "In a smoky cramped kitchen, a couple in cracked animal masks dance slowly to a scratchy radio while a pot of stew bubbles over onto the stove. No readable text or logo.",
+        "In a grimy alley between rusted pipes, a cracked porcelain mask hangs from a nail, dripping rainwater from its empty eye holes. No readable text or logo.",
       ],
     },
     'SP05-070': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Elastic neon anime drawing of an adult trapeze acrobat letting go of the bar in an empty circus tent, her contours stretching into short magenta-cyan smears and snapping back, thick black anchor lines, acid pink and black bands. No text or logo.',
-        'Elastic neon anime drawing of a young adult street musician playing a saxophone on a stoop at dusk, the horn bell stretching into cyan smears, loose flat shapes, blacklight pink on the edges. No text or logo.',
-        'Elastic neon anime drawing of an adult woman laughing and crying while eating birthday cake alone at a kitchen table, tender and gentle, her outline smearing into magenta and cyan, thick black anchors holding her face readable. No text or logo.',
+        "Sprinting through a neon-lit club crowd with tears streaming down his face, a sensitive track runner feels his body stretch and change as the lights strobe magenta and blue around him. No readable text or logo.",
+        "A group of rappers perform on a rooftop while a demonic shape looms in the neon smoke behind them. No readable text or logo.",
+        "Outside a neon club at three in the morning, a single running shoe lies in a magenta puddle while the bass still thumps through the wall. No readable text or logo.",
       ],
     },
   },

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-052
 packId: pack_05
-name: Surveillance Verdict Grid
+name: Psycho-Pass Production I.G - Surveillance Verdict Grid
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Surveillance-feed anime rendering: cold cyan duotone, fine horizontal scanlines at a fixed pitch, and thin ruled bracket marks framing forms without any characters.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Icy cyan and deep slate duotone with one saturated red signal; every other hue collapses into the two-tone ramp.
-  lighting_and_shadow: Flat cold top light like a low-lux sensor exposure; shadows crushed to slate and highlights clipped to pale cyan.
-  texture_and_material: Uniform two-pixel scanline texture over everything, slight interlace doubling on moving edges, and faint sensor noise in darks.
-  camera_and_composition: Keep the requested view; add thin corner bracket marks and a small crosshair tick around the focal form, never readable data.
-  atmosphere_and_mood: Clinical, watchful and judgemental, the feeling of being assessed.
-  rendering_and_quality: Clean anime line under a scanline overlay, two-value duotone, crisp bracket marks, and no letters or numerals.
-  key_features: cyan-slate duotone; fixed-pitch scanlines; corner bracket marks without text; interlace doubling; single red signal
-  creative_brief: "Surveillance-feed anime rendering: cold cyan duotone, fine horizontal scanlines at a fixed pitch, and thin ruled bracket marks framing forms without any characters. Carry it through cyan-slate duotone, fixed-pitch scanlines, corner bracket marks without text, interlace doubling, single red signal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Psycho-Pass look (2012): sleek surveillance Tokyo, holographic overlays, cold blue city grids, detective noir and cyberpunk judgment.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akira Amano-derived designs, sharp faces, dark suits and trench coats in cold detective staging. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cold cyan, surveillance blue, black and warning red.
+  lighting_and_shadow: Cold holographic light and rain-slick neon reflections on dark city streets.
+  texture_and_material: Clean digital cel with holographic interface-like overlays without text.
+  camera_and_composition: Surveillance-grid framing from above and tense noir detective close-ups at street level.
+  atmosphere_and_mood: Keep the requested mood with cold surveillance dread.
+  rendering_and_quality: Sleek Production I.G television frame with cold cyberpunk surveillance atmosphere.
+  key_features: Psycho-Pass surveillance; holographic grids; cold blue; detective noir
+  creative_brief: "Production I.G Psycho-Pass look (2012): sleek surveillance Tokyo, holographic overlays, cold blue city grids, detective noir and cyberpunk judgment. Carry it through Psycho-Pass surveillance, holographic grids, cold blue, detective noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a transforming revolver-like enforcement gun
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -47,7 +50,6 @@ avoidRules:
   - police badge
   - real-world law enforcement
   - gun
-  - crime scene gore
   - celebrity likeness
   - plastic 3d robot render
   - cockpit source-frame look
@@ -65,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-052.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable timestamp, numerals, enforcement pistol copy, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a transforming revolver-like enforcement gun, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable timestamp, numerals, enforcement pistol copy, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, celebrity likeness, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,8 +82,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Psycho-Pass Production I.G - Surveillance Verdict Grid
+styleAnchors:
+  - Psycho-Pass Production I.G - Surveillance Verdict Grid

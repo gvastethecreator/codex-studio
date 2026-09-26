@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-034
 packId: pack_05
-name: Crosshatched Primary Hero Cel
+name: Kohei Horikoshi - Crosshatched Primary Hero Cel
 styleAnchors:
-  - Crosshatched Primary Hero Cel
+  - Kohei Horikoshi - Crosshatched Primary Hero Cel
   - Bright Hero Academy
-displayName: Crosshatched Primary Hero Cel
+displayName: Kohei Horikoshi - Crosshatched Primary Hero Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Saturated primary red, cobalt blue and sunflower yellow on clean white; hatched shadows use a darker shade of each local color instead of grey.
-  lighting_and_shadow: Bright high-front noon key, a single hard cel shadow tier filled with pen hatching, and crisp white specular ticks on hair and cloth.
-  texture_and_material: Smooth cel fills with patches of visible pen hatching confined to shadow planes; seams and folds drawn as bold ink strokes, no painted texture.
-  camera_and_composition: Keep the requested framing; add slight wide-lens foreshortening to the nearest limb and hold a clear silhouette against a simplified background.
-  atmosphere_and_mood: Earnest, sunny optimism with a thread of strain carried by the hatched shadows.
-  rendering_and_quality: Thick-to-thin contour hierarchy, hatching only inside shadows, flat bright fills and silhouettes that read at thumbnail size.
-  key_features: heavy manga contour; crosshatched cel shadow wedges; primary red, cobalt and yellow; wide-lens limb foreshortening; white specular ticks
-  creative_brief: "Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills. Carry it through heavy manga contour, crosshatched cel shadow wedges, primary red, cobalt and yellow, wide-lens limb foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kohei Horikoshi manga and anime look as in My Hero Academia: American-comic crosshatching on faces and muscles, chunky heroic costumes, big expressive eyes and bold primary color on bright cel.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Horikoshi designs, stocky heroic bodies, messy hair, crosshatched cheeks and elbows, and practical hero-suit costumes with bulky boots. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold primary red, cobalt blue and sunny yellow with clean white highlights and warm skin tones.
+  lighting_and_shadow: Bright daylight with crisp cel shadows plus heavy crosshatched shading on dramatic close-ups.
+  texture_and_material: Visible pen crosshatching over clean digital cel paint, speed lines and dust bursts around impacts.
+  camera_and_composition: Heroic low angles, fists thrust at the lens and comic-panel close-ups on determined faces.
+  atmosphere_and_mood: Keep the requested mood with earnest heroic determination.
+  rendering_and_quality: Energetic shonen television frame mixing American comic hatching with bright anime cel.
+  key_features: Horikoshi crosshatching; chunky hero costumes; primary colors; heroic low angles
+  creative_brief: "Kohei Horikoshi manga and anime look as in My Hero Academia: American-comic crosshatching on faces and muscles, chunky heroic costumes, big expressive eyes and bold primary color on bright cel. Carry it through Horikoshi crosshatching, chunky hero costumes, primary colors, heroic low angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a green-haired boy in a green jumpsuit hero costume
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -72,10 +75,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-034.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered hero suit, green curly hair with freckles, cape emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a green-haired boy in a green jumpsuit hero costume, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered hero suit, green curly hair with freckles, cape emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -84,6 +90,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-254
 packId: pack_05
-name: Lavender Halo-Arc Shoujo Cel
+name: Yuu Watase - Lavender Halo-Arc Shoujo Cel
 styleAnchors:
-  - Lavender Halo-Arc Shoujo Cel
+  - Yuu Watase - Lavender Halo-Arc Shoujo Cel
   - Fushigi Yuugi - Celestial Maiden Portal Epic
-displayName: Lavender Halo-Arc Shoujo Cel
+displayName: Yuu Watase - Lavender Halo-Arc Shoujo Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Arcs follow existing contours; add no portals, sigils or school uniforms.
-  color_and_tone: Lavender, deep blue and selective warm red in clean melodramatic contrast.
-  lighting_and_shadow: Soft rim light and luminous ring-shaped value accents that stay graphic rather than glowing.
-  texture_and_material: Smooth cel fills, star-shaped sparkle marks and fine flower-like screen accents.
-  camera_and_composition: Keep the requested view; curved spacing and arcs frame the focal emphasis.
-  atmosphere_and_mood: Tender and melodramatic, a heartbeat before a confession.
-  rendering_and_quality: Clear silhouettes, fine ornament and controlled bloom around the focal forms.
-  key_features: halo-like value rings; lavender and deep blue; large sparkling eyes; star sparkle marks; flowing hair arcs
-  creative_brief: "Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms. Carry it through halo-like value rings, lavender and deep blue, large sparkling eyes, star sparkle marks, flowing hair arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yuu Watase Fushigi Yuugi look: nineties shojo fantasy, ancient Chinese-inspired kingdoms, celestial warriors, sparkling eyes, flowing hair and lavender halos.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Watase designs, big sparkling eyes, long flowing hair and ancient robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lavender, rose pink, celestial gold and deep crimson robes.
+  lighting_and_shadow: Soft halo glows around heads and celestial light from constellations.
+  texture_and_material: Nineties shojo cel with sparkles, halos and floating petals.
+  camera_and_composition: Romantic sparkling close-ups and celestial wide shots of ancient palaces.
+  atmosphere_and_mood: Keep the requested mood with dreamy celestial devotion.
+  rendering_and_quality: Classic nineties shojo fantasy television frame with dreamy glow.
+  key_features: Yuu Watase shojo; celestial warriors; lavender halos; sparkles
+  creative_brief: "Yuu Watase Fushigi Yuugi look: nineties shojo fantasy, ancient Chinese-inspired kingdoms, celestial warriors, sparkling eyes, flowing hair and lavender halos. Carry it through Yuu Watase shojo, celestial warriors, lavender halos, sparkles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -67,10 +68,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-254.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, school uniform, readable sigil, shrine hallway, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, school uniform, readable sigil, shrine hallway, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +84,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

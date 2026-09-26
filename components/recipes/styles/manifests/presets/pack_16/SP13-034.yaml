@@ -6,7 +6,7 @@ styleAnchors:
   - Inio Asano - Deep Void Whisper
 displayName: Inio Asano - Deep Void Whisper
 category: 7. Horror
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -18,7 +18,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Inio Asano manga look as in Goodnight Punpun: photo-derived detailed backgrounds, simple lonely characters, vast voids and quiet existential dread.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Asano designs, simple soft faces, slumped postures and ordinary clothes, small against huge spaces. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with fine grey tone and deep black voids.
   lighting_and_shadow: Dim lantern light swallowed by vast darkness and faint reflections.
   texture_and_material: Photo-derived line, fine tone and immaculate empty black fields.
@@ -33,8 +33,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - photoreal
   - daylight-bright
   - action-shonen
@@ -58,12 +56,12 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-034.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, signature, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

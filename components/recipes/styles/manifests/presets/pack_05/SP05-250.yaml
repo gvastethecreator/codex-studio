@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-250
 packId: pack_05
-name: Grounded Matte Geometry Cel
+name: The Faraway Paladin - Grounded Matte Geometry Cel
 styleAnchors:
-  - Grounded Matte Geometry Cel
+  - The Faraway Paladin - Grounded Matte Geometry Cel
   - The Faraway Paladin - Quiet Temple Quest
-displayName: Grounded Matte Geometry Cel
+displayName: The Faraway Paladin - Grounded Matte Geometry Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify secondary detail and let the subject settle into stable geometric shapes; add no religion, halos or temples.
-  color_and_tone: Natural earth tones, pale gold and muted blue-grey, matte and low in saturation.
-  lighting_and_shadow: Broad soft morning light with no rays or halos and a single soft shadow tier.
-  texture_and_material: Matte gouache-like planes, fine grain and clean transitions between edges.
-  camera_and_composition: Keep the requested view; centered symmetrical balance and steady horizontals.
-  atmosphere_and_mood: Calm, ethical and steady, a promise quietly kept.
-  rendering_and_quality: Clean silhouettes, gentle shadows and a modest amount of detail.
-  key_features: matte gouache planes; simple stable geometry; pale gold and blue-grey; no rays or halos; centered balance
-  creative_brief: "Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light. Carry it through matte gouache planes, simple stable geometry, pale gold and blue-grey, no rays or halos, centered balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Children’s Playground Entertainment The Faraway Paladin look (2021): grounded matte fantasy, undead mentors, ruined temples, calm devotion and solid geometric compositions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded fantasy designs, simple armor, calm devout faces and undead with gentle personalities. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Matte stone grey, earth brown, pale gold and forest green.
+  lighting_and_shadow: Matte soft light in ruins and warm temple glow.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Solid geometric temple compositions and quiet training scenes.
+  atmosphere_and_mood: Keep the requested mood with quiet devout growth.
+  rendering_and_quality: Grounded matte fantasy television frame with solid calm composition.
+  key_features: Matte grounded fantasy; undead mentors; ruined temples; devotion
+  creative_brief: "Children’s Playground Entertainment The Faraway Paladin look (2021): grounded matte fantasy, undead mentors, ruined temples, calm devotion and solid geometric compositions. Carry it through Matte grounded fantasy, undead mentors, ruined temples, devotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -70,10 +71,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-250.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, god rays, halo, temple hallway, stone bridge at sunset, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, god rays, halo, temple hallway, stone bridge at sunset, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -82,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

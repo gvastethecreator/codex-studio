@@ -6,7 +6,7 @@ styleAnchors:
   - Takehiko Inoue - Warm Rivalry Portrait
 displayName: Takehiko Inoue - Warm Rivalry Portrait
 category: 2. 90s Golden Era
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Takehiko Inoue manga look from Slam Dunk to Vagabond: realistic athletic anatomy, confident brush ink, expressive sweat and grit, and portraits full of pride and camaraderie.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inoue realism, accurate athletic bodies, expressive faces, sweat and real hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with grey washes and occasional warm watercolor.
   lighting_and_shadow: Natural light carried by ink wash values, bright highlights on sweat.
   texture_and_material: Brush ink lines, dry brush, ink wash and watercolor bleed.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-179.webp

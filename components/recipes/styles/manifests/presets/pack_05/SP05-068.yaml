@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-068
 packId: pack_05
-name: Grimy Sorcery Collision Style
+name: Q Hayashida - Grimy Sorcery Collision Style
 styleAnchors:
-  - Grimy Sorcery Collision Style
-displayName: Grimy Sorcery Collision
+  - Q Hayashida - Grimy Sorcery Collision Style
+displayName: Q Hayashida - Grimy Sorcery Collision Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Grimy dark-fantasy anime ink where scuffed black masses collide with chipped color edges and contour joins break abruptly, as if two drawings were forced together.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Soot-dark neutrals with one or two sharply bounded accents such as acid yellow or bruise violet.
-  lighting_and_shadow: Small directional highlights; value collisions do the work instead of glowing magic effects.
-  texture_and_material: Dry soot grain, chipped pigment and short stain-like strokes that never become sigils.
-  camera_and_composition: Keep the requested framing and count; mark density concentrates where forms meet.
-  atmosphere_and_mood: Cramped, volatile grime energy, a room that might ignite.
-  rendering_and_quality: Controlled collision marks with every form still readable.
-  key_features: scuffed ink masses; chipped color edges; broken contour joins; soot neutrals with bounded accent; stain-like strokes
-  creative_brief: "Grimy dark-fantasy anime ink where scuffed black masses collide with chipped color edges and contour joins break abruptly, as if two drawings were forced together. Carry it through scuffed ink masses, chipped color edges, broken contour joins, soot neutrals with bounded accent, stain-like strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Q Hayashida Dorohedoro manga look: grimy dirty scratchy ink, sorcerers in bizarre masks, a filthy industrial city, dark humor and chaotic violence.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hayashida designs, stocky bodies, grimy clothing and bizarre masks of animals or objects. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grimy brown, smoky grey, sickly green and rusted industrial orange.
+  lighting_and_shadow: Smoky dim industrial light from bare bulbs and furnace glow.
+  texture_and_material: Dirty scratchy ink lines, smudges and grimy layered textures.
+  camera_and_composition: Chaotic crowded alley compositions and odd deadpan humor.
+  atmosphere_and_mood: Keep the requested mood with grimy chaotic humor.
+  rendering_and_quality: Grimy scratchy dark comedy manga illustration with bizarre masks.
+  key_features: Q Hayashida grime; bizarre masks; industrial city; dark humor
+  creative_brief: "Q Hayashida Dorohedoro manga look: grimy dirty scratchy ink, sorcerers in bizarre masks, a filthy industrial city, dark humor and chaotic violence. Carry it through Q Hayashida grime, bizarre masks, industrial city, dark humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a lizard-headed man
+  - a mushroom-cloud mask
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -64,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-068.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a lizard-headed man, a mushroom-cloud mask, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

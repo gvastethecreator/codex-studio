@@ -6,7 +6,7 @@ styleAnchors:
   - Katsura Hoshino - Techno-Gothic Exorcism
 displayName: Katsura Hoshino - Techno-Gothic Exorcism
 category: 3. 2000s Classics
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black coats, silver trim, crimson accents and cold stained-glass colors.
   lighting_and_shadow: Stained-glass light, dark cathedrals and glowing weapon effects.
   texture_and_material: Fine elegant ink lines, ornamental coat trims, screentone and gothic detail.
@@ -57,12 +57,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-153.webp
 attributes:
-  negativePrompt: a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

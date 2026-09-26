@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-222
 packId: pack_05
-name: Municipal Machine Procedure
+name: Patlabor Headgear - Municipal Machine Procedure
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Late-1980s police-procedural OVA cel: precise pencil-traced line, two-tone hand-painted cel shading, and poster-color painted backgrounds of ordinary city daylight.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Utility teal, signal amber, concrete gray and off-white in economical flat blocks, the whole palette slightly faded like an aged cel print.
-  lighting_and_shadow: Overcast daylight with a single soft-edged shadow tone per surface and thin white highlight slivers on metal edges; no dramatic contrast.
-  texture_and_material: Poster-color brush texture in backgrounds, clean flat cel paint on figures and machines, and small painted scuffs on machine panels.
-  camera_and_composition: Keep the requested view; favor level eye-height framing with measured documentary spacing and ordinary street detail kept uncluttered.
-  atmosphere_and_mood: Procedural, dry and quietly funny, workday calm where a machine is just another piece of equipment.
-  rendering_and_quality: Hand-painted cel finish with slight registration shift, faint film grain and precise mechanical line; no digital glow or bloom.
-  key_features: pencil-precise 1980s OVA line; two-tone cel shading; poster-color daylight backgrounds; teal and amber utility palette; faint film grain
-  creative_brief: "Late-1980s police-procedural OVA cel: precise pencil-traced line, two-tone hand-painted cel shading, and poster-color painted backgrounds of ordinary city daylight. Carry it through pencil-precise 1980s OVA line, two-tone cel shading, poster-color daylight backgrounds, teal and amber utility palette, faint film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Headgear Patlabor look with Yutaka Izubuchi mechanical design: realistic civic police robots, municipal paperwork mood, eighties-nineties Tokyo bayside warehouses and grounded procedure.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded Akemi Takada-era designs, tired officers in work uniforms and caps, and labor robots treated as municipal vehicles. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Police white and black, teal-and-amber labor machines, overcast bay grey and rust.
+  lighting_and_shadow: Flat overcast bayside daylight, fluorescent hangar light and orange warning beacons.
+  texture_and_material: Hand-painted cel over detailed painted industrial backgrounds, grease and wear.
+  camera_and_composition: Procedural hangar shots, crane-like wides of bay warehouses and slow tactical moves.
+  atmosphere_and_mood: Keep the requested mood with wry municipal realism.
+  rendering_and_quality: Grounded late-eighties real-robot frame with civic procedural detail.
+  key_features: Patlabor civic robots; bayside warehouses; municipal procedure; Izubuchi mechanics
+  creative_brief: "Headgear Patlabor look with Yutaka Izubuchi mechanical design: realistic civic police robots, municipal paperwork mood, eighties-nineties Tokyo bayside warehouses and grounded procedure. Carry it through Patlabor civic robots, bayside warehouses, municipal procedure, Izubuchi mechanics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white police labor robot with a siren crest
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-222.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, robot battle, neon night, tram, readable police markings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white police labor robot with a siren crest, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, robot battle, neon night, tram, readable police markings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,8 +83,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Patlabor Headgear - Municipal Machine Procedure
+styleAnchors:
+  - Patlabor Headgear - Municipal Machine Procedure

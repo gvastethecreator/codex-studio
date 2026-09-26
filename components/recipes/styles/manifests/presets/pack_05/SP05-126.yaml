@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-126
 packId: pack_05
-name: Acid Occult Color-Burst Smear
+name: Dandadan Science SARU - Acid Occult Color-Burst Smear
 styleAnchors:
-  - Acid Occult Color-Burst Smear
+  - Dandadan Science SARU - Acid Occult Color-Burst Smear
   - Dandadan - Paranormal Turbo Romance Brawl
-displayName: Acid Occult Color-Burst Smear
+displayName: Dandadan Science SARU - Acid Occult Color-Burst Smear
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Dark ink ground with teal, hot pink and lime bursts; the palette flips only inside the effect zone.
-  lighting_and_shadow: Opposed bright accents and sharp shadow cuts, no literal glow source.
-  texture_and_material: Clean cel with mottled translucent color regions; smears as streaked, melted shapes.
-  camera_and_composition: Keep the requested framing; gather contrasting color rhythms around the focal area and leave room to breathe.
-  atmosphere_and_mood: Buoyant surprise and romance-tinged chaos, color flipping with every startled beat.
-  rendering_and_quality: Flexible contour, vivid color collision and controlled smear marks.
-  key_features: acid teal, hot pink and lime; melting smear frames; doubled reaction lines; elastic contour; palette flips
-  creative_brief: "Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion. Carry it through acid teal, hot pink and lime, melting smear frames, doubled reaction lines, elastic contour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Science SARU Dandadan look (2024): acid neon color bursts, psychedelic occult battles, rubbery smear animation, grotesque yokai and aliens, and romantic comedy energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Dandadan designs, expressive faces, school or casual clothes, and occult creatures with grotesque glowing features. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Acid green, hot magenta, electric blue and black backgrounds.
+  lighting_and_shadow: Psychedelic color-burst light, glowing occult auras and neon flashes cutting through darkness.
+  texture_and_material: Rubbery smear frames, flat neon color and energetic lines.
+  camera_and_composition: Wild spinning action, extreme perspective and comedic close-ups.
+  atmosphere_and_mood: Keep the requested mood with frantic occult romance.
+  rendering_and_quality: Explosive Science SARU frame with neon smear animation.
+  key_features: Acid neon bursts; smear animation; occult creatures; frantic comedy
+  creative_brief: "Science SARU Dandadan look (2024): acid neon color bursts, psychedelic occult battles, rubbery smear animation, grotesque yokai and aliens, and romantic comedy energy. Carry it through Acid neon bursts, smear animation, occult creatures, frantic comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a boy with glasses possessed by a ball-shaped spirit
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -68,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-126.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a boy with glasses possessed by a ball-shaped spirit, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

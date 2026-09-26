@@ -45,9 +45,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime forward-rush frame of an adult courier sprinting down a narrow medieval street toward the lens with a sealed leather satchel, her leading hand foreshortened to twice its size, converging timber-frame diagonals, tapered streaks off her trailing heel. No text or logo.',
-        'Anime forward-rush frame of a wolfhound bounding down a castle staircase straight at the viewer, front paws huge in the foreground, compressed stair depth, cool blue stone behind its warm coat. No text or logo.',
-        'Anime forward-rush frame of an adult cook hurrying a steaming pie across a crowded inn kitchen toward the lens, the pie dish foreshortened and near, converging beam lines, hard cel highlight on her leading arm. No text or logo.',
+        "Sprinting straight at the viewer down a narrow medieval street, a courier with a satchel of urgent letters kicks up blocky chunks of cobblestone as market stalls explode into flying crates behind her. No readable text or logo.",
+        "Hurrying a steaming pot of soup through a crowded kitchen, a cook skids around a corner as square shards of broken plates burst into the air behind him. No readable text or logo.",
+        "Dashing across a rain-soaked rooftop, a messenger leaps toward the lens as tiles shatter into chunky flying blocks under her boots. No readable text or logo.",
       ],
     },
     'SP13-022': {
@@ -75,9 +75,9 @@ const spec: Spec = {
       avoid: AVOID,
       dropAvoid: ['calm-composition'],
       briefs: [
-        'Anime vertigo frame looking steeply down past an adult roofer walking the ridge beam of a cathedral roof, her path crossing the long diagonal of the nave edge in a clean X, the town far below dropping into flat pale value bands. No text or logo.',
-        'Anime vertigo frame from high above an adult acrobat swinging on a rope between two stone towers, the rope arc crossing the tower edge line on a third, wide lens, horizon out of frame. No text or logo.',
-        'Anime vertigo frame looking down the well of a spiral stair as a heron glides across it, its flight line crossing the spiral rail diagonal, the stair bottom deep and dark far below. No text or logo.',
+        "Looking steeply down from the clouds, a roofer walks the ridge beam of a cathedral in loose flowing strokes, the town far below twisting around her as a sudden gust tilts the whole world. No readable text or logo.",
+        "Leaning over the rail of a spiral stair in a lighthouse, a keeper watches his dropped lantern tumble down the well, the stairs curling dizzyingly below. No readable text or logo.",
+        "Clinging to the mast of a tall ship in a storm, a sailor looks down at the tiny deck as the sea swings beneath her. No readable text or logo.",
       ],
     },
     'SP13-023': {
@@ -101,9 +101,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Precise anime action frame of an adult ribbon dancer spinning two long silk ribbons in a stone courtyard, the exact path of each ribbon end traced behind her as thin violet-blue vector arcs, three-quarter side view, clean flat cel finish. No text or logo.',
-        'Precise anime action frame of an adult juggler keeping five brass balls in the air at a village fair, every ball path drawn as an evenly spaced geometric arc, arcs clear of his face. No text or logo.',
-        "Precise anime action frame of an adult falconer releasing a hawk from her gloved fist, the hawk's rising flight path traced as a single clean vector curve, narrow edge highlights on the wings. No text or logo.",
+        "Spinning two long silk ribbons in a dark theater, a ribbon dancer leaves trails of sharp angular neon light that crack into triangular sparks at every turn of her wrists. No readable text or logo.",
+        "Releasing a hawk from her gloved fist, a falconer twists in a sharp Kanada-style pose as the bird bursts away trailing geometric flashes of light. No readable text or logo.",
+        "At a night fair, a fire-breather exhales a burst of flame drawn as sharp flat triangles of yellow and magenta. No readable text or logo.",
       ],
     },
     'SP13-024': {
@@ -130,9 +130,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime key frame of an adult blacksmith bringing his hammer down on a glowing horseshoe, the anvil huge in the low foreground, forge beams and floor planks radiating from the point of contact, strongest contrast at the hub. No text or logo.',
-        'Anime key frame of a humpback whale breaching beside a small fishing skiff at dawn, the tail fluke enormous in the foreground, wave crests radiating from the peak of the leap. No text or logo.',
-        'Anime key frame of an adult woodcutter splitting a log on a chopping block, the block and log halves huge near the lens, fence rails and tree trunks radiating from the instant of the split. No text or logo.',
+        "Bringing his hammer down on a glowing horseshoe, a burly blacksmith sends a monumental burst of sparks and shockwave across the forge that rattles every tool on the wall. No readable text or logo.",
+        "Splitting a massive log on a frozen morning, a woodcutter’s axe lands so hard that frost bursts off the surrounding trees. No readable text or logo.",
+        "A dockworker drops a crate onto a pier and the planks jump, sending a ring of water spraying outward. No readable text or logo.",
       ],
     },
     'SP13-025': {
@@ -157,9 +157,9 @@ const spec: Spec = {
       avoid: AVOID,
       dropAvoid: ['calm-scene'],
       briefs: [
-        'Anime vertical action frame of an adult monk climbing a hanging rope up the face of a cliff monastery, stacked terraces and cloud layers seen from beside, open pale sky above him, values lightening toward the top. No text or logo.',
-        'Anime vertical action frame of a young dragon spiraling up out of a castle chimney, layered rooftops below, a third of the tall frame left open above, white-blue accents on its highest wingtip. No text or logo.',
-        'Anime vertical action frame of an adult bell-ringer hauling himself up a bell rope inside a tall tower, wooden floors stacked below him, fine vertical motion marks, open shaft above. No text or logo.',
+        "Climbing a hanging rope up the face of a storm-lashed cliff, a monk surges upward in rough energetic strokes as lightning cracks across the sky behind him. No readable text or logo.",
+        "Hauling on a bell rope with her whole body, a bell-ringer is lifted off the floor as the bell swings and crackling sound waves burst upward. No readable text or logo.",
+        "A kite flier is yanked into the air by a sudden gust, her kite crackling with static in the thundercloud above. No readable text or logo.",
       ],
     },
   },
@@ -187,9 +187,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speed lines', 'motion blur'],
       briefs: [
-        'Anime smear frame of an adult baker slinging a ball of dough onto a floured table, her throwing arm drawn as one stretched flat ribbon along its arc while her face and body stay sharp and on model, warm kitchen palette. No text or logo.',
-        'Anime smear frame of a cat swatting a hanging tassel on a windowsill, its paw stretched into a single distorted smear shape with a feathered tail, the rest of the cat crisp. No text or logo.',
-        'Anime smear frame of an adult drummer striking a great barrel drum in a festival pavilion, both drumstick arms smeared into flat curved ribbons, full arc from raised to struck visible. No text or logo.',
+        "Slinging a ball of dough onto a floured table, a baker’s arm dissolves into a long painterly smear of motion as flour explodes into swirling teal and orange arcs. No readable text or logo.",
+        "Striking a great barrel drum at a festival, a drummer’s arms smear into bold brush arcs of color around the drumhead. No readable text or logo.",
+        "Swinging a scythe through a golden wheat field, a farmer leaves a sweeping painterly arc of gold behind the blade. No readable text or logo.",
       ],
     },
     {
@@ -215,9 +215,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'full-color render', 'gore'],
       briefs: [
-        "Anime inverted impact frame of an adult stone-carver's mallet striking a chisel into a marble block, white shapes on black, rough shaky outlines, a single orange spark of the original color at the contact point, tight tilted framing. No text or logo.",
-        'Anime inverted impact frame of an adult knight slamming a heavy oak door shut with his shoulder, the whole picture in negative values, dry-brush edges, a white ring around the latch. No text or logo.',
-        'Anime inverted impact frame of a draft horse hoof landing on a frozen puddle, the ice crack drawn as white lines on black, frame cutting through the leg, rough single-cel outlines. No text or logo.',
+        "At the instant a stone-carver’s mallet strikes a chisel into a marble block, the whole workshop flips into a black-and-white negative as brushy shards burst from the stone. No readable text or logo.",
+        "A draft horse’s hoof lands on a cobblestone and the street flashes into an inverted negative image around the spark. No readable text or logo.",
+        "A blacksmith quenches a blade in water and the burst of steam turns the frame into a glowing negative. No readable text or logo.",
       ],
     },
     {
@@ -243,9 +243,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'motion blur'],
       briefs: [
-        'Anime frozen-instant frame of an adult fisherman casting a round net over a river, seen from a low rear three-quarter angle, the net fully spread and water drops from its weights hanging perfectly still in a loose ring, crisp rim light on each drop. No text or logo.',
-        'Anime frozen-instant frame of an adult sorceress flicking water from a silver bowl across a garden, time stopped and the camera swung behind her, every droplet sharp in the air, cool desaturated hedges. No text or logo.',
-        'Anime frozen-instant frame of an adult miller dropping a sack of flour that bursts open on a mill floor, camera swung low to the side, the flour cloud frozen in sharp clumps around him, no motion blur. No text or logo.',
+        "Casting a round net over a river at dawn, a fisherman is frozen mid-throw as the net spreads like a perfect circle and every droplet from its edges hangs in the air around him. No readable text or logo.",
+        "A miller drops a sack of flour and the whole cloud of flour freezes mid-burst around her startled face. No readable text or logo.",
+        "On a busy market square, a street juggler freezes mid-performance with five oranges suspended in a perfect arc above her hands while a pigeon hangs mid-flap beside them. No readable text or logo.",
       ],
     },
     {
@@ -271,9 +271,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'radial speed lines'],
       briefs: [
-        'Anime tracking pan of an adult messenger galloping a gray horse along a coastal road, horse and rider crisp in strict side profile, the cliffs and sea behind smeared into long horizontal blue and ochre streaks, lead room ahead. No text or logo.',
-        'Anime tracking pan of a greyhound racing across a purple heath, the dog sharp at subject height, heather and sky stretched into smooth horizontal color bands. No text or logo.',
-        'Anime tracking pan of an adult woman running along a wooden pier toward a departing ship, crisp cel figure in profile, pier posts and water streaked into horizontal bands behind her. No text or logo.',
+        "Galloping a grey horse along a coastal road at sunset, a messenger stays crisp and sharp while the cliffs and sea behind her streak into long golden horizontal lines. No readable text or logo.",
+        "Running along a wooden pier to catch a departing ferry, a woman stays sharp as the boats behind her blur into streaks of color. No readable text or logo.",
+        "A cyclist races down a mountain road as the pine forest behind her smears into green horizontal streaks. No readable text or logo.",
       ],
     },
     {
@@ -299,9 +299,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Anime worm's-eye frame of an adult thief leaping the gap between two rooftops directly over the viewer, a crisp dark silhouette against a bright white sky, thin gold rim along her cloak, the eaves converging toward the frame center. No text or logo.",
-        "Anime worm's-eye frame of a stag jumping over a fallen log right above the camera, its body a clean backlit silhouette, forest trunks converging to the center, thin bright rim on the antlers. No text or logo.",
-        "Anime worm's-eye frame of a salmon leaping up a waterfall directly above the camera, seen straight from below through the spray, silhouette crossing the frame diagonally against a pale flat sky. No text or logo.",
+        "Seen from directly below, a thief leaps the gap between two rooftops against a full moon, her body drawn in raw wild scribbles that seem to vibrate with the jump. No readable text or logo.",
+        "A salmon leaps up a waterfall directly overhead, its body a rough scribbled silhouette against the bright spray. No readable text or logo.",
+        "A dancer jumps over the camera at a street festival, her skirts a messy explosion of rough lines against the lanterns. No readable text or logo.",
       ],
     },
     {
@@ -327,9 +327,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'fisheye distortion'],
       briefs: [
-        'Anime canted frame of an adult sailor hauling a heavy line on the deck of a heeling cog, the whole picture rolled thirty degrees, horizon tilted steeply, mast and rigging straight but diagonal, her body pushing uphill against the tilt. No text or logo.',
-        'Anime canted frame of an adult innkeeper sliding a full tankard down a long bar, camera rolled twenty-five degrees, the counter a steep diagonal, shadows rotating with the tilt. No text or logo.',
-        'Anime canted frame of an adult woman pushing a loaded handcart up a muddy lane, horizon tilted against her effort, straight tilted fence posts, higher contrast between her and the ground. No text or logo.',
+        "On the deck of a heeling ship in a storm, a sailor hauls a heavy line with her whole body as the entire canted frame slants with the rolling sea. No readable text or logo.",
+        "Pushing a loaded handcart up a steep village lane, a woman leans hard into the slope as the tilted frame emphasizes every step. No readable text or logo.",
+        "A tug-of-war team strains against the rope at a harvest festival, the frame tilted with the pull. No readable text or logo.",
       ],
     },
     {
@@ -356,9 +356,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speech balloons', 'panel numbers', 'different characters per panel'],
       briefs: [
-        'Anime three-panel triptych of an adult shepherd vaulting a dry-stone wall with his crook: first panel crouched with the crook planted, middle panel airborne over the wall in close-up, last panel landing in the heather, thin dark gutters, same light in all three. No text or logo.',
-        'Anime three-panel triptych of an adult glassblower swinging a gather of molten glass on a pipe: wind-up, full swing with the glowing gather stretched long, and the settled follow-through. No text or logo.',
-        'Anime three-panel triptych of a red fox pouncing into deep snow: tensed and listening, arched high in the air, and buried nose-first with only its tail showing. No text or logo.',
+        "Across three panels, a shepherd vaults a dry-stone wall with his crook: crouching to push off, flying over the stones, and landing among his sheep who barely look up. No readable text or logo.",
+        "In three beats, a red fox crouches, arcs high and plunges headfirst into deep snow after a mouse. No readable text or logo.",
+        "Three panels show an old woman stepping off a train: reaching for the rail, stepping down and smiling at her grandson. No readable text or logo.",
       ],
     },
     {
@@ -384,9 +384,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime pass-by frame inside a stone belfry as a raven sweeps right past the lens, one wing huge, cropped and softly defocused along the left edge, the bells and beams behind in crisp cel detail. No text or logo.',
-        'Anime pass-by frame of an adult page running past the camera with a platter of roast fowl, his shoulder and the platter rim filling the right side in soft focus, the busy great hall sharp behind him. No text or logo.',
-        'Anime pass-by frame of an adult flower seller hurrying past the lens with a swinging basket of sunflowers, the basket a big blurred yellow mass cut by two frame edges, the village green crisp beyond. No text or logo.',
+        "Inside a stone belfry, a raven sweeps right past the lens so close that one wing fills half the frame, while the bell-ringer behind it looks up in surprise. No readable text or logo.",
+        "Hurrying through a busy market, a flower seller brushes past the camera, a bouquet of sunflowers filling the foreground. No readable text or logo.",
+        "A cat leaps from a windowsill right past the lens, its tail sweeping across the frame. No readable text or logo.",
       ],
     },
     {
@@ -412,9 +412,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'perspective tilt'],
       briefs: [
-        'Anime top-down frame of a flock of white doves circling low over a cloister fountain, seen from straight above, their flight forming a curling spiral around the basin, long flat shadows on the flagstones. No text or logo.',
-        'Anime top-down frame of an adult woman running down a spiral tower staircase, the steps forming a tight spiral from directly overhead, her figure at its leading end, side light casting long shadows on the treads. No text or logo.',
-        'Anime top-down frame of an adult farmer scattering grain in a wide circle while hens chase it, the arc of seed and birds forming a spiral on the packed-earth yard, calm mid-value ground. No text or logo.',
+        "Seen from directly above, a flock of white doves spirals low over a cloister fountain, their flight paths curling into a perfect swirling pattern around the water. No readable text or logo.",
+        "Scattering grain in wide spirals, a farmer is circled by a whirling flock of hens seen from overhead. No readable text or logo.",
+        "Seen from high above a frozen village pond, a dozen skaters spiral outward, their curved blade tracks forming one perfect swirling whirlpool in the ice. No readable text or logo.",
       ],
     },
     {
@@ -441,9 +441,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'broken anatomy'],
       briefs: [
-        'Anime fisheye frame of an adult orchard keeper tossing a ripe pear straight at an ultra-wide lens, her open hand as large as her head, the rows of trees bending into a curve behind her, her small smiling face readable beyond the fingers. No text or logo.',
-        'Anime fisheye frame of an adult wizard thrusting his open palm toward the viewer to cast a soft light charm, the palm swelling in the foreground, tower walls curving at the frame edges. No text or logo.',
-        'Anime fisheye frame of an adult barmaid reaching out to catch a tossed coin just in front of the lens, fingers huge and bright, the tavern room bowed around her. No text or logo.',
+        "Tossing a ripe pear straight at the viewer, an orchard keeper’s hand swells enormous in an ultra-wide fisheye frame while the trees curve around her. No readable text or logo.",
+        "Leaning over a crowded tavern bar, a barmaid lunges to catch a falling beer mug, her outstretched hand looming enormous toward the fisheye lens. No readable text or logo.",
+        "A child-sized robot vendor thrusts an ice cream cone at the camera, the cone massive in the foreground. No readable text or logo.",
       ],
     },
     {
@@ -468,9 +468,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'motion blur'],
       briefs: [
-        'Anime follow-through frame of an adult noblewoman turning sharply on a windy castle battlement, her body already still while her long cloak and braided hair keep sweeping in lagging S-curves behind her, light running along every fold. No text or logo.',
-        'Anime follow-through frame of an adult ferrywoman landing on a dock after leaping from her boat, feet planted while her shawl, skirt and loose hair keep flowing forward in long curves, tapering tips. No text or logo.',
-        'Anime follow-through frame of an adult herald leaping down from his saddle, feet just landed, the tabard, sleeves and hat feather still flaring upward in clean S-curves. No text or logo.',
+        "Turning sharply on a windy castle battlement, a noblewoman stops still while her long cloak and hair keep sweeping around her in graceful trailing arcs. No readable text or logo.",
+        "Leaping down from a wagon, a herald lands while his long scarf and plumed hat keep trailing behind him. No readable text or logo.",
+        "Finishing a fast spin on a village stage, a folk dancer freezes in place while her long embroidered skirt keeps swirling in wide arcs around her legs. No readable text or logo.",
       ],
     },
     {
@@ -500,9 +500,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime extreme-wide frame of a tiny adult sailor rowing a skiff across a vast glassy fjord, the wake behind the boat drawing one grand curving arc across two thirds of the frame, pale layered mountains on the horizon. No text or logo.',
-        'Anime extreme-wide frame of a single swallow tracing a huge arc through a red sandstone canyon, the bird a bright speck, the arc marked by its reflection in the river far below. No text or logo.',
-        'Anime extreme-wide frame of a tiny adult figure sliding down an enormous snow dune on a wooden shield, the track carving one clean arc down the slope, hazy peaks in layered blue values. No text or logo.',
+        "Rowing a tiny skiff across a vast glassy fjord, a small sailor traces a long curving wake beneath towering mountains as a pod of whales surfaces nearby. No readable text or logo.",
+        "Sliding down a huge snowy slope on a tray, a tiny figure carves a giant arc across the white mountainside. No readable text or logo.",
+        "A tiny biplane loops over a huge canyon, its trail drawing a grand arc against the sky. No readable text or logo.",
       ],
     },
     {
@@ -528,9 +528,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speed lines', 'motion blur'],
       briefs: [
-        'Anime anticipation frame of an adult cliff diver crouched on a rock ledge at the far left edge, toes gripping and arms drawn back, a huge open lead space of calm lake and sky ahead, low side light, no motion marks. No text or logo.',
-        'Anime anticipation frame of a young mountain goat coiled on a boulder, eyes on a higher ledge across a gap, the goat in the lower right corner and the rest of the frame open rock face and air. No text or logo.',
-        'Anime anticipation frame of an adult jester crouched before a backflip on a bare wooden stage, body squeezed tight at the frame edge, open dark curtain space ahead of him. No text or logo.',
+        "Crouched on a rock ledge at the far left of the frame, a cliff diver coils every muscle as the empty sea and sky stretch out before her, waiting for the jump. No readable text or logo.",
+        "A jester crouches before a leap in a crowded hall, all the empty space ahead of him waiting. No readable text or logo.",
+        "A cat crouches at the edge of a table, tail twitching, staring at a butterfly across the room. No readable text or logo.",
       ],
     },
     {
@@ -556,9 +556,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime ground-skim frame of a hare racing through a golden barley field toward the camera, lens at ankle height, near stalks stretched into short streaks along the bottom, the hare looming from a low angle, horizon in the lower third. No text or logo.',
-        'Anime ground-skim frame of an adult maid running barefoot across a sunlit cloister lawn, camera racing just above the grass ahead of her, her shadow reaching toward the lens. No text or logo.',
-        'Anime ground-skim frame of a team of husky dogs pulling an empty sled across a snowfield, lens skimming the snow ahead, near snow crust streaked, the lead dog huge and low against a pale sky. No text or logo.',
+        "Skimming just above the ground, the camera races alongside a hare sprinting through a golden barley field as stalks whip past and seeds scatter into the sunlight. No readable text or logo.",
+        "A team of huskies pulls a sled across fresh snow, the camera skimming the surface as powder sprays. No readable text or logo.",
+        "Racing down a steep cobbled lane, a runaway wine barrel bounces over the stones while the camera skims right behind it at ankle height. No readable text or logo.",
       ],
     },
     {
@@ -584,9 +584,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime insert shot of an adult hand catching a falling wine glass by its stem an inch above a flagstone floor, extreme close-up with the fingers closing around the stem, raking light, the rest of the person cropped away. No text or logo.',
-        "Anime insert shot of an adult rider's boot finding the stirrup iron, macro framing on the sole meeting the metal, leather creases and a scuff of dust, very shallow depth. No text or logo.",
-        'Anime insert shot of a green frog pushing off from a lily pad, extreme close-up of the long toes leaving the wet leaf surface, droplets lifting, dark pond beyond. No text or logo.',
+        "In an extreme close-up, a hand catches a falling wine glass by its stem an inch above the stone floor as a single drop of wine leaps from the rim in a sparkling arc. No readable text or logo.",
+        "A green frog pushes off from a lily pad, its toes and a spray of water frozen in extreme close-up. No readable text or logo.",
+        "A match strikes against the box in extreme close-up, sparks bursting at the point of contact. No readable text or logo.",
       ],
     },
   ],

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Mononoke 2007 - Woodblock Palette Period
 category: 6. Samurai & Medieval
 domain: ukiyo-e colored anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Toei Mononoke television look (2007) by Kenji Nakamura: washi paper texture over every frame, ukiyo-e flat colors, sliding screen panels and psychedelic Edo patterns.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with flat ukiyo-e inspired designs, painted face markings, patterned kimono and stylized poses. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Faded woodblock palette of vermilion, indigo, ochre, teal and gold on beige paper.
   lighting_and_shadow: Flat woodblock light with no gradients, only pattern and paper texture.
   texture_and_material: Washi paper grain over all surfaces, flat woodblock color and pattern fills.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

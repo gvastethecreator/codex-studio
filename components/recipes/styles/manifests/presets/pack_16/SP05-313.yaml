@@ -6,7 +6,7 @@ styleAnchors:
   - Saint Seiya - Zodiac Cosmic Heroism
 displayName: Saint Seiya - Zodiac Cosmic Heroism
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Gold, bronze, deep cosmic blue and aura violet.
   lighting_and_shadow: Cosmic aura glows, star sparkles and gleaming armor highlights.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

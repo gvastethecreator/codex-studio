@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-096
 packId: pack_05
-name: Hyper-Saturated Impossible Perspective Cel
+name: No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Keep subjects recognizable and fold the perspective around them without adding cards, chess pieces or dice.
-  color_and_tone: Magenta, cyan and yellow on dark violet, oversaturated with rainbow-shifted edges.
-  lighting_and_shadow: Hard clean highlights, emissive graphic edges and colored rather than grey shadows.
-  texture_and_material: Flat opaque color, polished accents and thin chromatic fringing on contours.
-  camera_and_composition: 'Keep the framing but bend the perspective: several vanishing points, floating planes and upside-down elements.'
-  atmosphere_and_mood: Bold, cerebral and kinetic, a world that plays by other rules.
-  rendering_and_quality: Sharp silhouettes that stay readable despite the distortion, with clean color separation.
-  key_features: candy-neon planes; chromatic aberration fringes; multiple vanishing points; colored shadows; floating inverted elements
-  creative_brief: "High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective. Carry it through candy-neon planes, chromatic aberration fringes, multiple vanishing points, colored shadows, floating inverted elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse No Game No Life look (2014): hyper-saturated neon-pastel fantasy, impossible perspective worlds, giant chess pieces and gamer siblings with glowing edges.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuu Kamiya-derived designs, glowing edges, vivid hair colors and casual gamer outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hyper-saturated magenta, cyan, gold and violet with neon pastel skies.
+  lighting_and_shadow: Glowing neon rim light outlining every figure and object against vivid skies.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Impossible perspective wide shots with floating chess boards and tilted worlds.
+  atmosphere_and_mood: Keep the requested mood with giddy strategic wonder.
+  rendering_and_quality: Hyper-saturated Madhouse television frame with impossible fantasy worlds.
+  key_features: Hyper-saturation; impossible perspective; giant chess; glowing edges
+  creative_brief: "Madhouse No Game No Life look (2014): hyper-saturated neon-pastel fantasy, impossible perspective worlds, giant chess pieces and gamer siblings with glowing edges. Carry it through Hyper-saturation, impossible perspective, giant chess, glowing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a hoodie-wearing gamer brother with a long-haired little sister
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-096.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, chess pieces, playing cards, dice, game UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, numbers, readable symbols, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a hoodie-wearing gamer brother with a long-haired little sister, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, chess pieces, playing cards, dice, game UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, numbers, readable symbols, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Hyper-Saturated Impossible Perspective Cel
+displayName: No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel
 styleAnchors:
-  - Hyper-Saturated Impossible Perspective Cel
+  - No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel
   - No Game No Life – Hyper-Saturated Strategy Fantasy

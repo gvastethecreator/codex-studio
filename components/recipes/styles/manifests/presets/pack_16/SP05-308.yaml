@@ -6,7 +6,7 @@ styleAnchors:
   - City Hunter - Eighties Neon Precision Noir
 displayName: City Hunter - Eighties Neon Precision Noir
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Neon pink and cyan, night navy, chrome and warm skin tones.
   lighting_and_shadow: Neon night light, car headlights and reflections on glass towers.
   texture_and_material: Hand-painted analog cel on painted poster-color backgrounds, visible cel edges, dust and gentle film grain.

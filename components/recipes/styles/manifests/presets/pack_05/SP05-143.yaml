@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-143
 packId: pack_05
-name: Cold Starfield Night Noir
+name: Darker than Black BONES - Cold Starfield Night Noir
 styleAnchors:
-  - Cold Starfield Night Noir
+  - Darker than Black BONES - Cold Starfield Night Noir
   - Darker than Black - Contract Killer Night Rain
-displayName: Cold Starfield Night Noir
+displayName: Darker than Black BONES - Cold Starfield Night Noir
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Blue-black and charcoal with narrow cyan highlights and pinpoint stars.
-  lighting_and_shadow: Cool reflected accents against deep shadow, without adding a new light fixture.
-  texture_and_material: Broken reflective highlights and fine surface streaks over matte dark fields.
-  camera_and_composition: Keep the requested framing; guarded negative space, off-center balance and a large sky where the view allows.
-  atmosphere_and_mood: Lonely secrecy and restrained unease, a quiet city under a sky that feels false.
-  rendering_and_quality: Thin cyan line accents, dark reflective values and generous empty space.
-  key_features: false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space
-  creative_brief: "Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures. Carry it through false starfield sky, thin cyan contour threads, blue-black city, glowing cyan edges, guarded negative space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'BONES Darker than Black look (2007): cold noir Tokyo nights under a false starfield, contract killers, blue electric abilities and restrained urban melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuji Iwahara-derived designs, calm faces, long coats and masked figures in the city night. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cold starfield blue, black, electric cyan and sodium orange.
+  lighting_and_shadow: Cold false starlight, blue electric flashes and orange streetlight pools on wet roads.
+  texture_and_material: Clean digital cel over painted night cityscapes with cold reflective surfaces.
+  camera_and_composition: Rooftop noir wides and close-ups under the false stars.
+  atmosphere_and_mood: Keep the requested mood with cold melancholy noir.
+  rendering_and_quality: Moody 2007 BONES frame with cold noir palette.
+  key_features: False starfield; cold noir; electric abilities; Tokyo nights
+  creative_brief: "BONES Darker than Black look (2007): cold noir Tokyo nights under a false starfield, contract killers, blue electric abilities and restrained urban melancholy. Carry it through False starfield, cold noir, electric abilities, Tokyo nights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -68,10 +69,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-143.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

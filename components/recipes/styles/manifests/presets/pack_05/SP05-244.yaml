@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-244
 packId: pack_05
-name: Tall Textile-Rhythm Formal Cel
+name: Akihiro Yamada - Tall Textile-Rhythm Formal Cel
 styleAnchors:
-  - Tall Textile-Rhythm Formal Cel
+  - Akihiro Yamada - Tall Textile-Rhythm Formal Cel
   - The Twelve Kingdoms - Imperial Destiny Chronicle
-displayName: Tall Textile-Rhythm Formal Cel
+displayName: Akihiro Yamada - Tall Textile-Rhythm Formal Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine repeating line marks run inside existing clothing and surfaces; do not add ceremonial dress, a court or a throne.
-  color_and_tone: Muted indigo, parchment and restrained cinnabar with small gold notes, composed in a quiet mid key.
-  lighting_and_shadow: Even deliberate light with small precise highlights on ornament and shallow flat shadows.
-  texture_and_material: Fine repeated brocade-like strokes and restrained fabric texture used as surface treatment, not as a material change.
-  camera_and_composition: Keep the requested view; tall vertical spacing and near-symmetry, with tall narrow framing when the prompt leaves it open.
-  atmosphere_and_mood: Solemn and poised, destiny felt as stillness.
-  rendering_and_quality: Sparse, even-scale ornament, clean edges and a consistent detail scale across the image.
-  key_features: tall vertical rhythm; brocade-like repeating line pattern; indigo-parchment-cinnabar palette; near symmetry; precise ornament highlights
-  creative_brief: "Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth. Carry it through tall vertical rhythm, brocade-like repeating line pattern, indigo-parchment-cinnabar palette, near symmetry, precise ornament highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Akihiro Yamada Twelve Kingdoms illustration look: tall elegant East Asian fantasy figures, rhythmic flowing textiles, formal court compositions and refined painterly color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yamada designs, tall slender figures, long flowing robes with rhythmic folds and serene faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep teal, vermilion, gold and jade with muted ink tones.
+  lighting_and_shadow: Soft formal court light and misty mountain glow.
+  texture_and_material: Refined fine line with painterly textile patterns and rhythmic robe folds.
+  camera_and_composition: Formal court compositions and tall vertical figure framing.
+  atmosphere_and_mood: Keep the requested mood with dignified solemn destiny.
+  rendering_and_quality: Refined painterly fantasy illustration look with courtly elegance.
+  key_features: Akihiro Yamada textiles; tall figures; court formality; jade and vermilion
+  creative_brief: "Akihiro Yamada Twelve Kingdoms illustration look: tall elegant East Asian fantasy figures, rhythmic flowing textiles, formal court compositions and refined painterly color. Carry it through Akihiro Yamada textiles, tall figures, court formality, jade and vermilion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -69,10 +70,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-244.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, throne room, photographed fabric, product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, throne room, photographed fabric, product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-046
 packId: pack_05
-name: Cloth-and-Hair Follow-Through Trails
+name: Mitsuo Iso - Cloth-and-Hair Follow-Through Trails
 styleAnchors:
-  - Cloth-and-Hair Follow-Through Trails
+  - Mitsuo Iso - Cloth-and-Hair Follow-Through Trails
   - anime action staging
   - lagging S-curves in hair and cloth
-displayName: Cloth-and-Hair Follow-Through Trails
+displayName: Mitsuo Iso - Cloth-and-Hair Follow-Through Trails
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - follow-through
   - secondary-motion
+  - reference-title
 visualDna:
-  aesthetic: 'Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the secondary-motion emphasis on cloth, hair and loose parts, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; cloth and hair take slightly lighter underside tones so their curves read clearly.
-  lighting_and_shadow: Soft key light that runs along each fabric fold and hair lock, giving every curve a light and a dark side.
-  texture_and_material: Flowing cel-shaded fabric and hair with clean tapering tips; no streaks or blur.
-  camera_and_composition: Medium-full shot with space on the side the loose parts trail toward, the body near a third line.
-  atmosphere_and_mood: Graceful, lingering momentum after a decisive move.
-  rendering_and_quality: Clear S-curves of consistent lag and still, sharp faces and hands.
-  creative_brief: "Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from. Carry it through lagging S-curves in hair and cloth, body already stopped or turned, tapering tips, light along each fold, trailing space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space
+  aesthetic: 'Mitsuo Iso full-limited animation: realistic follow-through of cloth and hair, precise timing, natural overlapping motion and meticulous secondary action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with natural overlapping motion where cloth and hair follow through after the body stops. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Windy castle greys, rich fabric colors and sky blue.
+  lighting_and_shadow: Bright windy daylight catching every fold of fluttering fabric and loose hair.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Medium shots that emphasize trailing cloth and hair as the body comes to rest.
+  atmosphere_and_mood: Keep the requested mood with graceful windswept motion.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Mitsuo Iso full-limited animation: realistic follow-through of cloth and hair, precise timing, natural overlapping motion and meticulous secondary action. Carry it through Mitsuo Iso follow-through, cloth and hair, secondary motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Mitsuo Iso follow-through; cloth and hair; secondary motion
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-046.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - follow-through
     - secondary-motion
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

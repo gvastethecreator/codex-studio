@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-242
 packId: pack_05
-name: Smoke-Mud Vulnerability Style
+name: Grimgar A-1 - Smoke-Mud Vulnerability Style
 styleAnchors:
-  - Smoke-Mud Vulnerability Style
-displayName: Smoke-Mud Vulnerability
+  - Grimgar A-1 - Smoke-Mud Vulnerability Style
+displayName: Grimgar A-1 - Smoke-Mud Vulnerability Style
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Secondary contours blur into the brushwork while the face or focal gesture stays clear and exposed.
-  color_and_tone: Muted clay, olive, charcoal and dusk blue with compressed values and no pure white or black.
-  lighting_and_shadow: Diffuse side light with broad soft shadows, no rim light and no glow.
-  texture_and_material: Smudged pigment, dragged brush streaks, uneven grain and thumb-blended edges across the whole surface.
-  camera_and_composition: Keep the requested view; tight framing leaves little escape space around the subject.
-  atmosphere_and_mood: Quiet, exposed and fragile, tired rather than tragic.
-  rendering_and_quality: A legible focal subject against loosely painted surroundings; texture never turns to mud over the face.
-  key_features: lost smoky edges; clay-olive-charcoal range; smudged dragged brushwork; compressed values; clear exposed focal face
-  creative_brief: "Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke. Carry it through lost smoky edges, clay-olive-charcoal range, smudged dragged brushwork, compressed values, clear exposed focal face. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures Grimgar look (2016): watercolor-like painted backgrounds, muddy low-level adventurers, vulnerability and grief, and soft pastel mornings after brutal fights.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, muddy cheap gear, exhausted faces and fragile gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Watercolor pastels, mud brown, smoky grey and soft morning pink.
+  lighting_and_shadow: Soft watercolor dawn light and smoky dusk after exhausting fights.
+  texture_and_material: Watercolor-textured painted backgrounds with soft cel characters and mud.
+  camera_and_composition: Quiet montage moments of daily life and clumsy desperate fights.
+  atmosphere_and_mood: Keep the requested mood with fragile muddy vulnerability.
+  rendering_and_quality: Soft watercolor A-1 Pictures frame with fragile emotional realism.
+  key_features: Grimgar watercolor; muddy adventurers; vulnerability; soft dawn
+  creative_brief: "A-1 Pictures Grimgar look (2016): watercolor-like painted backgrounds, muddy low-level adventurers, vulnerability and grief, and soft pastel mornings after brutal fights. Carry it through Grimgar watercolor, muddy adventurers, vulnerability, soft dawn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-242.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, crisp clean cel, bright saturated color, heroic pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, crisp clean cel, bright saturated color, heroic pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

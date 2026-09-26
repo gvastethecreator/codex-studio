@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-267
 packId: pack_05
-name: Blood-Ink Severance Style
+name: Hiroaki Samura - Blood-Ink Severance Style
 styleAnchors:
-  - Blood-Ink Severance Style
-displayName: Blood-Ink Severance
+  - Hiroaki Samura - Blood-Ink Severance Style
+displayName: Hiroaki Samura - Blood-Ink Severance Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Black sumi-ink seinen illustration cut through by one or two decisive carmine brushstrokes that split, taper and feather along an existing edge, like a seal-red slash across the page rather than blood.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Monochrome black ink on warm rice paper, with carmine or oxblood reserved for one or two strokes only.
-  lighting_and_shadow: Flat paper light; a slim raking highlight separates the red stroke from the black ground beneath it.
-  texture_and_material: Dense black ink with capillary feathering into rice paper and a dry-brush tail at the end of every red stroke.
-  camera_and_composition: Keep the requested framing; the red stroke crosses the focal path diagonally and splits the composition into two unequal parts.
-  atmosphere_and_mood: Abrupt and decisive, a clean break in continuity without any implied violence.
-  rendering_and_quality: Confident calligraphic brushwork with readable forms; the red stroke is a graphic accent, never a wound or splatter.
-  key_features: one or two carmine brush slashes; black sumi ink on rice paper; capillary feathering; diagonal split of the composition; non-gory red
-  creative_brief: "Black sumi-ink seinen illustration cut through by one or two decisive carmine brushstrokes that split, taper and feather along an existing edge, like a seal-red slash across the page rather than blood. Carry it through one or two carmine brush slashes, black sumi ink on rice paper, capillary feathering, diagonal split of the composition, non-gory red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Hiroaki Samura Blade of the Immortal manga look: raw pencil and ink drawing, loose sketchy energy, elaborate exotic weapons, ronin and historical Edo grit.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Samura designs, scruffy scarred faces, loose sketchy hair and elaborate period clothing with strange weapons. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pencil grey, black ink wash and dried ink sepia with no bright color.
+  lighting_and_shadow: Natural light suggested by sketchy pencil shading and ink wash.
+  texture_and_material: Loose raw pencil lines, ink wash, visible sketch construction and dry brush.
+  camera_and_composition: Dynamic sketchy sword duels alternating with quiet Edo-period street and teahouse moments.
+  atmosphere_and_mood: Keep the requested mood with raw ronin grit.
+  rendering_and_quality: Raw pencil-and-ink historical manga illustration with sketchy energy.
+  key_features: Hiroaki Samura pencil; raw sketch; exotic weapons; Edo grit
+  creative_brief: "Hiroaki Samura Blade of the Immortal manga look: raw pencil and ink drawing, loose sketchy energy, elaborate exotic weapons, ronin and historical Edo grit. Carry it through Hiroaki Samura pencil, raw sketch, exotic weapons, Edo grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a one-eyed immortal ronin with a scarred face and many swords
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-267.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a one-eyed immortal ronin with a scarred face and many swords, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

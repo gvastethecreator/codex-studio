@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-228
 packId: pack_05
-name: White Machine Elegy
+name: Casshern Sins Madhouse - White Machine Elegy
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Bleached pastel anime illustration: soft sepia-gray colored-pencil line instead of ink, chalk-pale cel fills, and visible paper grain multiplied over everything.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Bone, chalk white, faded silver and pale blue-gray; the darkest value is a warm mid-gray, so the image stays high-key.
-  lighting_and_shadow: Diffuse overcast glow with soft single-step pale blue shadows and no visible light source; edges dissolve into white.
-  texture_and_material: Cold-press paper tooth, colored-pencil grain inside shadows, and small flaked enamel chips drawn as tiny gray flecks.
-  camera_and_composition: Keep the requested framing; leave generous white margins and let contours fade out toward the edges of the frame.
-  atmosphere_and_mood: Elegiac, hushed and tender, like a memory of a machine slowly fading out.
-  rendering_and_quality: Low-contrast pencil line, pale single-step shadows, paper grain overlay and vignette-to-white edges; no ink blacks.
-  key_features: sepia-gray colored-pencil line; bleached pastel fills; paper grain overlay; flaked enamel chips; fade-to-white edges
-  creative_brief: "Bleached pastel anime illustration: soft sepia-gray colored-pencil line instead of ink, chalk-pale cel fills, and visible paper grain multiplied over everything. Carry it through sepia-gray colored-pencil line, bleached pastel fills, paper grain overlay, flaked enamel chips, fade-to-white edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Casshern Sins look (2008): tall slender robots and androids in a decaying world, Yoshihiko Umakoshi designs, washed pastel skies and elegiac painterly ruins.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as tall slender androids with elegant limbs and weathered faces, moving through rust and ruin. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Washed pastel skies, bone white metal, rust orange and faded teal.
+  lighting_and_shadow: Soft melancholic daylight through haze and dusty god rays.
+  texture_and_material: Painterly ruins, rusted metal flakes and elegant clean cel lines.
+  camera_and_composition: Lonely wide ruins with single figures and slow elegiac framing.
+  atmosphere_and_mood: Keep the requested mood with elegiac machine sorrow.
+  rendering_and_quality: Melancholy Madhouse television frame with painterly decay and lonely machines.
+  key_features: Casshern Sins elegy; slender androids; ruin; washed pastel skies
+  creative_brief: "Madhouse Casshern Sins look (2008): tall slender robots and androids in a decaying world, Yoshihiko Umakoshi designs, washed pastel skies and elegiac painterly ruins. Carry it through Casshern Sins elegy, slender androids, ruin, washed pastel skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white-armored android hero with a helmet crest
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -65,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-228.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, deep black shadows, saturated neon, heavy ink outlines, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-armored android hero with a helmet crest, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, deep black shadows, saturated neon, heavy ink outlines, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,8 +83,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Casshern Sins Madhouse - White Machine Elegy
+styleAnchors:
+  - Casshern Sins Madhouse - White Machine Elegy

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-069
 packId: pack_05
-name: Procedural Low-Fantasy Grit Style
+name: Goblin Slayer White Fox - Procedural Low-Fantasy Grit Style
 styleAnchors:
-  - Procedural Low-Fantasy Grit Style
-displayName: Procedural Low-Fantasy Grit
+  - Goblin Slayer White Fox - Procedural Low-Fantasy Grit Style
+displayName: Goblin Slayer White Fox - Procedural Low-Fantasy Grit Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Grounded low-fantasy anime ink with scuffed matte planes, chipped contour edges and narrow slices of light that show how everyday things are made and worn.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Worn stone gray, dull iron, undyed linen and subdued earth accents with no saturated color.
-  lighting_and_shadow: Restrained practical-looking contrast with narrow slices of light laid across a few planes.
-  texture_and_material: Sparse abrasion, rubbed pigment and chipped edges on wood, iron and leather; every material keeps its identity.
-  camera_and_composition: Keep the requested camera, subject count and arrangement; this treatment never adds an adventurer.
-  atmosphere_and_mood: Tactile, practical, lived-in grit without forced danger.
-  rendering_and_quality: Chipped contour edges, matte planes and clear construction logic in every object.
-  key_features: chipped contour edges; scuffed matte planes; stone gray, iron and linen; narrow light slices; rubbed pigment
-  creative_brief: "Grounded low-fantasy anime ink with scuffed matte planes, chipped contour edges and narrow slices of light that show how everyday things are made and worn. Carry it through chipped contour edges, scuffed matte planes, stone gray, iron and linen, narrow light slices. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'White Fox Goblin Slayer look (2018): grim low-fantasy procedural raids, dirty caves, cheap battered armor, torchlight and methodical survival.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with low-fantasy designs, dented cheap armor, dirty cloaks and methodical tired stances. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Torch amber, cave brown, mud grey and dim green.
+  lighting_and_shadow: Flickering torchlight in dark caves and a grim grey dawn outside.
+  texture_and_material: Gritty digital cel with dirt, grime and scratched cheap armor.
+  camera_and_composition: Cave raid compositions by torchlight and methodical close-ups on preparations.
+  atmosphere_and_mood: Keep the requested mood with grim methodical survival.
+  rendering_and_quality: Gritty White Fox television frame with low-fantasy grime.
+  key_features: Low-fantasy grit; caves; cheap armor; torchlight
+  creative_brief: "White Fox Goblin Slayer look (2018): grim low-fantasy procedural raids, dirty caves, cheap battered armor, torchlight and methodical survival. Carry it through Low-fantasy grit, caves, cheap armor, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - an adventurer in a horned steel helmet with a visor slit
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -48,7 +51,6 @@ avoidRules:
   - torch/lamp prop
   - weapon
   - enemy
-  - blood
   - game UI
   - splatter-only horror
   - photoreal grime
@@ -67,10 +69,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-069.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, blood, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an adventurer in a horned steel helmet with a visor slit, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +84,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

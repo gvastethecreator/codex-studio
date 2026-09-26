@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-121
 packId: pack_05
-name: Printed-Wave Effect Trail Cel
+name: Demon Slayer ufotable - Printed-Wave Effect Trail Cel
 styleAnchors:
-  - Printed-Wave Effect Trail Cel
+  - Demon Slayer ufotable - Printed-Wave Effect Trail Cel
   - Demon Slayer - Lantern Bloodline Sword Ballet
-displayName: Printed-Wave Effect Trail Cel
+displayName: Demon Slayer ufotable - Printed-Wave Effect Trail Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Winter blue, warm amber and cream on figures; trails in indigo-to-white or vermilion-to-gold bokashi gradients.
-  lighting_and_shadow: Soft cinematic key with a warm glow where a trail passes, cool grouped shadows elsewhere.
-  texture_and_material: Smooth digital cel on figures; trails with flat print color, carved outline and faint paper grain.
-  camera_and_composition: Keep the requested framing; trails curve in nested arcs around the subject and leave it fully legible.
-  atmosphere_and_mood: Ceremonial grace and restrained resolve, motion flowing like a performed rite rather than a brawl.
-  rendering_and_quality: Clear contrast between soft digital shading on figures and flat printed trails; garment patterns kept small.
-  key_features: woodblock-print effect trails; bokashi-graded waves and flames; clean digital cel figures; winter blue and amber; nested trail arcs
-  creative_brief: "Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color. Carry it through woodblock-print effect trails, bokashi-graded waves and flames, clean digital cel figures, winter blue and amber, nested trail arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'ufotable Demon Slayer look (2019): crisp cel characters over lush 3D-composited forests, sword techniques drawn as ukiyo-e water waves, flames and flower trails, glowing night compositing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Gotouge-derived ufotable designs, sharp eyes, patterned haori and hakama, and dynamic sword stances. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep night navy, ukiyo-e wave blue, flame orange and patterned haori colors.
+  lighting_and_shadow: Rich compositing glow, moonlight on forests and luminous effect trails.
+  texture_and_material: Crisp cel characters with ukiyo-e styled effect layers and painted foliage.
+  camera_and_composition: Spinning technique shots, sweeping forest pans and dramatic slow-motion clashes.
+  atmosphere_and_mood: Keep the requested mood with fierce graceful determination.
+  rendering_and_quality: High-end ufotable frame with lavish compositing and effect animation.
+  key_features: ufotable compositing; ukiyo-e wave trails; patterned haori; night forests
+  creative_brief: "ufotable Demon Slayer look (2019): crisp cel characters over lush 3D-composited forests, sword techniques drawn as ukiyo-e water waves, flames and flower trails, glowing night compositing. Carry it through ufotable compositing, ukiyo-e wave trails, patterned haori, night forests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a checkered green and black haori
+  - a bamboo muzzle on a girl
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -64,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-121.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, checkered haori, bamboo muzzle, hanafuda earrings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a checkered green and black haori, a bamboo muzzle on a girl, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, checkered haori, bamboo muzzle, hanafuda earrings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +83,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-271
 packId: pack_05
-name: Sun-Reclaimed Concrete Mystery Style
+name: Heavenly Delusion Production I.G - Sun-Reclaimed Concrete Mystery Style
 styleAnchors:
-  - Sun-Reclaimed Concrete Mystery Style
-displayName: Sun-Reclaimed Concrete Mystery
+  - Heavenly Delusion Production I.G - Sun-Reclaimed Concrete Mystery Style
+displayName: Heavenly Delusion Production I.G - Sun-Reclaimed Concrete Mystery Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Post-abandonment seinen illustration in eroded straight ink contours and fine powdery grain, every broad plane bleached and dusted like concrete left for years in the sun.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Warm concrete gray, dust beige and muted ochre highlights, with greens and prompt colors lowered to half saturation.
-  lighting_and_shadow: Existing highlights spread into soft bleached falloff; shadows are pale, warm and low in contrast.
-  texture_and_material: Dry mineral speckle, gently abraded line edges and powdery stipple inside flat planes.
-  camera_and_composition: Keep the requested camera; the picture organizes into broad quiet planes and a few exact straight edges.
-  atmosphere_and_mood: Hushed, sunlit mystery of a place that time has quietly taken back.
-  rendering_and_quality: Faded, low-contrast illustrated finish with straight edges eroded yet still legible; never photographic.
-  key_features: eroded straight contours; powdery bleached planes; concrete gray and dust ochre; soft washed-out highlights; mineral speckle
-  creative_brief: "Post-abandonment seinen illustration in eroded straight ink contours and fine powdery grain, every broad plane bleached and dusted like concrete left for years in the sun. Carry it through eroded straight contours, powdery bleached planes, concrete gray and dust ochre, soft washed-out highlights, mineral speckle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Heavenly Delusion look (2023): post-collapse Japan reclaimed by nature, sunlit overgrown concrete, eerie monsters and mystery-laced road trips.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern designs, travel gear, backpacks and practical clothes in overgrown ruins. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sun-bleached concrete, lush green, sky blue and rust.
+  lighting_and_shadow: Bright warm sunlight pouring through overgrown ruins and broken ceilings.
+  texture_and_material: Clean digital cel with lushly painted overgrown concrete architecture.
+  camera_and_composition: Road-trip wides through ruins and eerie mystery reveals.
+  atmosphere_and_mood: Keep the requested mood with sunlit uneasy mystery.
+  rendering_and_quality: Bright Production I.G television frame with nature-reclaimed ruins.
+  key_features: Overgrown concrete; post-collapse Japan; sunlit mystery; road trip
+  creative_brief: "Production I.G Heavenly Delusion look (2023): post-collapse Japan reclaimed by nature, sunlit overgrown concrete, eerie monsters and mystery-laced road trips. Carry it through Overgrown concrete, post-collapse Japan, sunlit mystery, road trip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -65,10 +66,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-271.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

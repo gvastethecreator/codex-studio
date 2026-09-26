@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-251
 packId: pack_05
-name: Khaki Compressed-Diagonal Cel
+name: Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel
 styleAnchors:
-  - Khaki Compressed-Diagonal Cel
+  - Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel
   - Saga of Tanya the Evil - Aerial War Mage Doctrine
-displayName: Khaki Compressed-Diagonal Cel
+displayName: Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Compress shapes where motion is present; add no aircraft, gear, flags or insignia.
-  color_and_tone: Muted khaki, field grey and deep blue-grey with clean pale highlights, a disciplined limited range.
-  lighting_and_shadow: Hard overcast-sky light with short shadow breaks and a bright sky behind dark compact silhouettes.
-  texture_and_material: Crisp filled shapes, restrained metallic glints and a trace of painted grain.
-  camera_and_composition: Keep the requested view; steep diagonal horizons and directional overlap group the silhouettes.
-  atmosphere_and_mood: Tense, disciplined and precise, a held breath before orders.
-  rendering_and_quality: Economical detail, stable contours and strong contrast without overloading the image.
-  key_features: swept diagonals; khaki and field grey; clipped high-key sky; compact silhouettes; newsreel-still stillness
-  creative_brief: "Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still. Carry it through swept diagonals, khaki and field grey, clipped high-key sky, compact silhouettes, newsreel-still stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'NUT Saga of Tanya the Evil look (2017): alternate WWI war fantasy, khaki palettes, aerial war mages, compressed diagonal battle compositions and sinister smiles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shinobu Shinotsuki-derived designs, military uniforms, flight goggles and cold calculating faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Khaki uniforms, olive fields, grey war skies and orange explosions.
+  lighting_and_shadow: Grey overcast war light broken by orange explosive flashes and tracer glow.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Compressed diagonal aerial battle compositions and muddy trench wide shots.
+  atmosphere_and_mood: Keep the requested mood with cold militaristic menace.
+  rendering_and_quality: Khaki alternate-war fantasy frame with aerial mage battles.
+  key_features: Alternate WWI; khaki; aerial war mages; compressed diagonals
+  creative_brief: "NUT Saga of Tanya the Evil look (2017): alternate WWI war fantasy, khaki palettes, aerial war mages, compressed diagonal battle compositions and sinister smiles. Carry it through Alternate WWI, khaki, aerial war mages, compressed diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a small blonde officer with a sinister smile
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-251.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, military insignia, flags, aircraft, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a small blonde officer with a sinister smile, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, military insignia, flags, aircraft, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

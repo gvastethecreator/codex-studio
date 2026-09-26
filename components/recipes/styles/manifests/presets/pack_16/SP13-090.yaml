@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Daijiro Morohoshi - Deep Sea Leviathan Horror
 category: 7. Horror
 domain: oceanic horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Daijiro Morohoshi manga look: idiosyncratic scratchy line, folklore and cosmic horror, awkward stiff figures and vast strange creatures emerging from sea and myth.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Morohoshi awkwardness, stiff simple figures, plain faces and folk clothing. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with scratchy grey hatching and teal night tints.
   lighting_and_shadow: A single small lamp glowing against huge dark waters and a moonless sky.
   texture_and_material: Scratchy wiry pen line, uneven hand hatching and rough folkloric textures.
@@ -38,8 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -50,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

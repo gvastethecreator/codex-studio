@@ -6,7 +6,7 @@ styleAnchors:
   - Tomoko Ninomiya - Virtuoso Ensemble Whirl
 displayName: Tomoko Ninomiya - Virtuoso Ensemble Whirl
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Tomoko Ninomiya Nodame Cantabile look: josei comedy about classical music, loose charming lines, messy virtuoso energy and orchestras swirling with emotion.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ninomiya designs, loose charming faces, messy hair, rehearsal clothes and formal concert wear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm concert-hall gold, black tails and soft pastel sheet music tones.
   lighting_and_shadow: Concert hall stage light and warm rehearsal room light.
   texture_and_material: Loose charming lines, screentone and swirling musical flourishes.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-371.webp

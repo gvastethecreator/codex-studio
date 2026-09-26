@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-059
 packId: pack_05
-name: Tactical Network Cognition
+name: Dennou Coil - Tactical Network Cognition
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Layered-transparency cyber anime: semi-transparent cel planes stacked in screen blend, refraction ripples where layers overlap, and thin teal line contours.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Teal, glass green, slate and silver-white; overlaps brighten toward pale aqua and never form readable content.
-  lighting_and_shadow: Even cool technical light with thin refracted highlights on edges and soft cel shadows seen through translucent layers.
-  texture_and_material: Glassy translucent planes, faint refraction warping at overlaps, and an optical-camouflage shimmer outlining partly invisible forms.
-  camera_and_composition: Keep the requested view; offset two or three translucent echoes of the subject slightly in depth behind it.
-  atmosphere_and_mood: Calm analytical focus, a mind reading the world in layers.
-  rendering_and_quality: Crisp teal line, clean translucent fills, refraction ripples and sparse abstract hexagon marks; no legible text.
-  key_features: stacked translucent cel planes; refraction ripples at overlaps; optical-camouflage shimmer; teal and glass-green palette; offset depth echoes
-  creative_brief: "Layered-transparency cyber anime: semi-transparent cel planes stacked in screen blend, refraction ripples where layers overlap, and thin teal line contours. Carry it through stacked translucent cel planes, refraction ripples at overlaps, optical-camouflage shimmer, teal and glass-green palette, offset depth echoes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Dennou Coil look (2007) by Mitsuo Iso: augmented-reality glasses revealing glitching digital creatures in ordinary towns, hand-drawn realism and fluid acting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with simple grounded designs, glasses, ordinary town clothes and precise natural acting. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Summer town greens, sky blue and glitch pink and cyan.
+  lighting_and_shadow: Ordinary summer daylight with glowing augmented-reality effects floating in the air.
+  texture_and_material: Clean hand-drawn cel with pixel glitch overlays and translucent digital creatures.
+  camera_and_composition: Ordinary small-town framing suddenly interrupted by glitching digital phenomena.
+  atmosphere_and_mood: Keep the requested mood with curious digital uncanniness.
+  rendering_and_quality: Precise Madhouse television frame with augmented-reality glitch effects and natural acting.
+  key_features: Dennou Coil AR glasses; digital glitches; ordinary towns; Iso realism
+  creative_brief: "Madhouse Dennou Coil look (2007) by Mitsuo Iso: augmented-reality glasses revealing glitching digital creatures in ordinary towns, hand-drawn realism and fluid acting. Carry it through Dennou Coil AR glasses, digital glitches, ordinary towns, Iso realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -67,10 +68,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-059.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable code, opaque heavy paint, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, readable code, opaque heavy paint, photoreal office, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,8 +84,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dennou Coil - Tactical Network Cognition
+styleAnchors:
+  - Dennou Coil - Tactical Network Cognition

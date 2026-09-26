@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Osamu Tezuka and Mushi Production 1960s television animation: rubbery round cartoon figures with huge simple eyes, bulbous noses and limited animation, heroic space-age adventure on flat painted skies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tezuka roundness, big shiny eyes, rubber-hose limbs, simple hands and expressive cartoon faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Early color television palette: primary red, sky blue, warm yellow and cream, slightly faded.',
       lighting_and_shadow:
@@ -75,7 +75,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hayao Miyazaki television animation as in Future Boy Conan (1978): simple bouncy character designs, rusted post-apocalyptic machines, sunlit islands and sea, and elastic action.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with early Miyazaki designs, round faces, dot eyes, sturdy bodies and exaggerated elastic running and leaping.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with early Miyazaki designs, round faces, dot eyes, sturdy bodies and exaggerated elastic running and leaping. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sea blue, island green, rust orange and warm sunlit cream.',
       lighting_and_shadow: 'Bright outdoor daylight with simple cel shadows and sparkling sea.',
       texture_and_material:
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Monkey Punch and Yasuo Otsuka era Lupin III television animation (1971-1980): lanky long-legged caricature figures, loose sketchy lines, jazzy caper staging and vintage cars in European cities.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as lanky caricatures with long thin legs, narrow waists, angular faces, sly grins and slim suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted seventies palette, mustard, teal, burgundy and warm night browns.',
       lighting_and_shadow:
         'Simple cel light with moody night streetlamps and spotlight searchlights.',
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rintaro late-seventies and eighties feature direction: operatic space melancholy, backlit glowing cel effects, long elegant figures, starfields and grand tragic staging.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with slender elegant figures, long hair and coats, sad luminous eyes and graceful poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with slender elegant figures, long hair and coats, sad luminous eyes and graceful poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep violet space, nebula magenta, gold glow and cold blue shadow.',
       lighting_and_shadow: 'Backlit cel glow effects, starlight halos and dramatic rim light.',
       texture_and_material:
@@ -155,7 +155,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mamoru Oshii late-eighties direction: deadpan procedural scenes in bureaucratic spaces, long static shots, basset hounds and fish in unexpected places, neon cities reflected in water.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with realistic understated designs, tired faces, uniforms and suits, standing still in long pauses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic understated designs, tired faces, uniforms and suits, standing still in long pauses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon cyan and magenta over drab office greys and deep water blues.',
       lighting_and_shadow: 'Fluorescent office light, neon reflections and dim canal glow.',
       texture_and_material:
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Koji Morimoto and Studio 4°C late-eighties OVA look: hyper-dense hand-drawn machinery, tangled pipes, cables and signs, rough energetic lines and retro-future cities.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with loose energetic Morimoto designs, wiry figures, scruffy hair and industrial clothes dwarfed by machinery.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with loose energetic Morimoto designs, wiry figures, scruffy hair and industrial clothes dwarfed by machinery. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rust, sodium orange, grimy teal and deep shadow blue.',
       lighting_and_shadow: 'Smoky industrial light, sodium lamps and exhaust-lit haze.',
       texture_and_material:
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Akira Toriyama early Dragon Ball manga and 1986 anime look: round clean shapes, cute chunky characters, rounded vehicles and capsule machines, desert adventures and slapstick martial arts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Toriyama round chunky designs, big feet, simple clean lines, spiky or bowl hair and cheerful slapstick expressions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Toriyama round chunky designs, big feet, simple clean lines, spiky or bowl hair and cheerful slapstick expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright primaries, desert tan, sky blue and orange accents.',
       lighting_and_shadow: 'Sunny clean daylight with simple one-tone cel shadows under figures.',
       texture_and_material: 'Clean crisp lines, flat cel color, rounded mechanical design details.',
@@ -235,7 +235,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Leiji Matsumoto designed Space Battleship Yamato (1974): massive naval battleships in space drawn with dense mechanical detail, stern commanders on dim bridges, and heroic sacrifice.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Leiji designs, long faces, narrow eyes, stern expressions and military uniforms with high collars.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Leiji designs, long faces, narrow eyes, stern expressions and military uniforms with high collars. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Deep space black-blue, battleship rust red, steel grey and orange beam light.',
       lighting_and_shadow:
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Leiji Matsumoto Captain Harlock look (1978): gothic space pirate galleons, skull motifs, long capes in star wind, gaunt romantic faces and melancholy heroism.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with gaunt elongated Leiji faces, long hair, sorrowful eyes and flowing capes and boots.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with gaunt elongated Leiji faces, long hair, sorrowful eyes and flowing capes and boots. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep space indigo, bone white, blood red and green instrument glow.',
       lighting_and_shadow:
         'Dim cabin glow, starfield backlight and dramatic silhouettes against the void.',
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Leiji Matsumoto Galaxy Express 999 look as in the Rintaro film: steam trains crossing starry space, retro-future stations, tall elegant women, stubby comic men and melancholy journeys.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Leiji contrast, tall elegant long-lashed figures beside short stubby round-faced men, in coats and hats.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Leiji contrast, tall elegant long-lashed figures beside short stubby round-faced men, in coats and hats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Star-black, warm cabin amber, pale blue starlight and rich velvet red.',
       lighting_and_shadow:
         'Warm lamp-lit carriages glowing against the glittering starry darkness outside.',
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Osamu Dezaki and Shingo Araki anime of Rose of Versailles (1979): baroque shojo melodrama, sparkling long-lashed eyes, flowing golden hair, roses and pastel freeze-frame postcard shots.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Araki and Himeno designs, long lashes, sparkling eyes, flowing hair, military uniforms and gowns.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araki and Himeno designs, long lashes, sparkling eyes, flowing hair, military uniforms and gowns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rose pink, gold, royal blue, cream and deep crimson.',
       lighting_and_shadow: 'Soft glowing highlights, sparkle flares and dramatic backlight.',
       texture_and_material:
@@ -346,7 +346,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rumiko Takahashi Urusei Yatsura anime (1981): bouncy eighties rom-com cel, pastel suburban Tokyo, aliens and folklore spirits, big comic expressions and slapstick chases.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Takahashi rounded faces, large simple eyes, springy hair and exaggerated comic reactions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi rounded faces, large simple eyes, springy hair and exaggerated comic reactions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel candy colors, sky blue, lime green and electric yellow.',
       lighting_and_shadow: 'Bright suburban daylight and electric sparkling comedy flashes.',
       texture_and_material:
@@ -372,7 +372,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rumiko Takahashi Maison Ikkoku anime (1986): gentle adult romance in an old wooden boarding house, soft Akemi Takada designs, sunset town streets and everyday domestic detail.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw adults with soft Takada designs, gentle eyes, natural hair and everyday eighties clothes and aprons.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw adults with soft Takada designs, gentle eyes, natural hair and everyday eighties clothes and aprons. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm sunset orange, faded wood browns, soft greens and cream.',
       lighting_and_shadow: 'Sunset light through windows, warm kitchen lamps and evening shadows.',
       texture_and_material:
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mitsuru Adachi manga and anime look as in Touch: clean minimal lines, similar gentle faces, quiet summer towns, baseball diamonds and understatement where silence carries emotion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Adachi designs, simple clean faces, small dot eyes, gentle smiles and sports uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Summer blue, field green, dusty brown diamond and cream.',
       lighting_and_shadow: 'Bright summer sun with soft cel shadows and heat haze.',
       texture_and_material:
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Tsukasa Hojo City Hunter anime (1987): realistic tall handsome designs, eighties Shinjuku neon, city pop glamour, sharp gunplay and slapstick breaks.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hojo realism, tall athletic bodies, sharp handsome faces, big eighties hair and suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon pink and cyan, night navy, chrome and warm skin tones.',
       lighting_and_shadow: 'Neon night light, car headlights and reflections on glass towers.',
       texture_and_material:
@@ -451,7 +451,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Dirty Pair eighties anime look with Tsuneo Tominaga designs: glamorous space agents, big hair, shiny costumes, neon sci-fi cities and cartoonish explosions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with glamorous eighties designs, big voluminous hair, long legs, bright costumes and confident poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with glamorous eighties designs, big voluminous hair, long legs, bright costumes and confident poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Hot pink, cyan, gold and deep space navy.',
       lighting_and_shadow: 'Explosion flares, neon glow and glossy highlights on costumes.',
       texture_and_material:
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshikazu Yasuhiko designs as in Crusher Joe (1983): expressive realistic pencil-like drawing, loose soft line quality, grounded space pulp crews and lived-in ships.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko warmth, expressive faces, soft lines, freckles, practical flight suits and rolled sleeves.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko warmth, expressive faces, soft lines, freckles, practical flight suits and rolled sleeves. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Orange flight suits, space navy, olive and warm ship interiors.',
       lighting_and_shadow: 'Warm cockpit glow, cold starlight and bright engine flares on hulls.',
       texture_and_material: 'Soft pencil-like lines on cel, painted ship interiors and grime.',
@@ -503,7 +503,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         "Tsukasa Hojo Cat's Eye anime (1983): elegant eighties heist glamour, graceful leotard acrobatics, art galleries at night and romantic pastel city pop.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hojo elegance, long legs, big eighties hair, graceful acrobatic poses and sleek outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night navy, moonlight cyan, pastel pink and gold.',
       lighting_and_shadow: 'Moonlight through skylights, laser beams and gallery spotlights.',
       texture_and_material:
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Shingo Araki and Michi Himeno designs as in the Saint Seiya anime (1986): sparkling sharp-eyed heroes, shining metal armor with gold highlights, cosmic aura backgrounds and dramatic Araki close-ups.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araki designs, sharp angular faces, fine flowing hair, glossy armor and dramatic heroic poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Gold, bronze, deep cosmic blue and aura violet.',
       lighting_and_shadow: 'Cosmic aura glows, star sparkles and gleaming armor highlights.',
       texture_and_material:
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hiroyuki Kitakubo late-eighties and early-nineties OVA look as in Roujin Z and Black Magic M-66: rubbery expressive character acting, dense hand-drawn machinery and anarchic hacker techno energy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kitakubo designs, rubbery expressive faces, wiry energetic bodies and scruffy casual clothes around dense machines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Arcade neon, electric purple, cyan and hot red on night black.',
       lighting_and_shadow: 'CRT screen glow, neon signage and streaking headlights on wet streets.',
       texture_and_material:
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon space purple, gold, red and glossy chrome.',
       lighting_and_shadow: 'Harsh highlights, psychedelic backlight and glowing space nebulae.',
       texture_and_material:
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshikazu Yasuhiko designed Zeta Gundam (1985): angular mobile suits, colony interiors and military institutions, realistic soldiers in tragedy, sharp mid-eighties cel.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, realistic proportions, expressive soft lines, flight suits and military uniforms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko designs, realistic proportions, expressive soft lines, flight suits and military uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Military blue, white, colony green and warning red.',
       lighting_and_shadow: 'Artificial colony light, cockpit monitors and beam flashes.',
       texture_and_material:
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Go Nagai and Toei 1970s super robot animation as in Mazinger Z: colossal heroic robots with bold simple shapes, thick outlines, primary colors and fierce hot-blooded pilots.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nagai designs, angular fierce faces, thick eyebrows, big determined eyes and seventies pilot suits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nagai designs, angular fierce faces, thick eyebrows, big determined eyes and seventies pilot suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Primary red, blue, yellow and steel grey against dramatic skies.',
       lighting_and_shadow: 'Flat seventies cel light with glowing beam attacks.',
       texture_and_material:
@@ -661,7 +661,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshikazu Yasuhiko and Kunio Okawara look of Mobile Suit Gundam (1979): real-robot military machines, soldiers with expressive faces, muddy battlefields and colonies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yasuhiko designs, expressive soft faces, realistic uniforms, and machines as industrial military hardware.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko designs, expressive soft faces, realistic uniforms, and machines as industrial military hardware. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Olive drab, military grey, mud brown and hazard red.',
       lighting_and_shadow: 'Cold dawn light, beam rifle flashes and green cockpit monitor glow.',
       texture_and_material:
@@ -686,7 +686,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Haruhiko Mikimoto designs and Ichiro Itano missile circus as in Super Dimension Fortress Macross (1982): transforming jet fighters, idol singers, swirling missile trails and eighties pop.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Mikimoto designs, glossy big eyes with many highlights, feathered eighties hair and flight suits or idol outfits.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mikimoto designs, glossy big eyes with many highlights, feathered eighties hair and flight suits or idol outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sky blue, white contrails, pop pink and jet grey.',
       lighting_and_shadow: 'Bright sky light, missile exhaust glow and stage spotlights.',
       texture_and_material:
@@ -712,7 +712,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Hideaki Anno Gunbuster finale look (1988): black-and-white widescreen space opera, huge fleets in formation, stark silhouettes and tearful close-ups under enormous stakes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Mikimoto-derived designs, big glossy eyes, determined faces and flight suits, shown in monochrome.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mikimoto-derived designs, big glossy eyes, determined faces and flight suits, shown in monochrome. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black and white only, with grey tones and bright white glare.',
       lighting_and_shadow: 'Stark high-contrast white glare against pure black space.',
       texture_and_material: 'Monochrome cel, film grain and letterboxed widescreen composition.',
@@ -738,7 +738,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yoshiyuki Tomino Aura Battler Dunbine look (1983): insect-like organic mecha, misty medieval fantasy world, fairy creatures and eighties Sunrise cel.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with eighties Sunrise designs, soft faces, medieval armor and cloaks, beside insectoid machines.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with eighties Sunrise designs, soft faces, medieval armor and cloaks, beside insectoid machines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mist green, violet, earth brown and pearl white.',
       lighting_and_shadow: 'Misty diffused light, glowing aura and dusky fantasy skies.',
       texture_and_material:
@@ -763,7 +763,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Go Nagai Devilman Toei television look (1972): thick crude outlines, grotesque demons, psychedelic color flashes and seventies horror pulp.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nagai seventies designs, thick eyebrows, angular faces and monstrous transformations.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nagai seventies designs, thick eyebrows, angular faces and monstrous transformations. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Psychedelic magenta, acid green, blood red and black.',
       lighting_and_shadow: 'Lurid colored flashes cutting through deep black shadow masses.',
       texture_and_material:
@@ -788,7 +788,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Tetsuo Hara Fist of the North Star look (1984): hyper-muscular heroes, detailed hatched anatomy, post-apocalyptic wastelands, punk raiders and exploding impact.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hara designs, massive muscles, hatched anatomy, square jaws and torn clothing.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hara designs, massive muscles, hatched anatomy, square jaws and torn clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Desert ochre, blood orange sky, leather black and steel grey.',
       lighting_and_shadow: 'Harsh wasteland sun and dramatic backlight with impact flashes.',
       texture_and_material: 'Hatched anatomy lines, painted cels, dust clouds and impact radiance.',
@@ -813,7 +813,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Legend of the Galactic Heroes OVA look (1988): classical-music space opera, rival commanders in black and white uniforms, fleets as geometric formations and theatrical political drama.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with elegant eighties OVA designs, refined faces, long hair and crisp military uniforms and capes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant eighties OVA designs, refined faces, long hair and crisp military uniforms and capes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Imperial black and silver, alliance green, gold and deep space navy.',
       lighting_and_shadow: 'Grand hall light, bridge glow and fleet beam flashes.',
       texture_and_material:

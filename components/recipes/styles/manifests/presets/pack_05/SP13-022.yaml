@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-022
 packId: pack_05
-name: Vertigo Energy Cross Style
+name: Norio Matsumoto - Vertigo Energy Cross Style
 styleAnchors:
-  - Vertigo Energy Cross Style
-displayName: Vertigo Energy Cross
+  - Norio Matsumoto - Vertigo Energy Cross Style
+displayName: Norio Matsumoto - Vertigo Energy Cross Style
 category: 5. Action Motion Setpieces
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-battle-and-worlds
   - anime
   - action
+  - reference-title
 visualDna:
-  aesthetic: Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X.
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the steep high oblique viewpoint and the X-crossing of travel line and edge line, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the far depth drops in value so the two crossing paths separate by contrast.
-  lighting_and_shadow: Crisp highlights on the crossing edges only, following the prompt's light; no sparks or energy effects.
-  texture_and_material: Fine directional marks attached to the moving subject; surfaces below simplify into flat value bands with distance.
-  camera_and_composition: A 70 to 80 degree down-angle through a wide lens, horizon out of frame, with the crossing point placed on a third and generous air around it.
-  atmosphere_and_mood: Vertigo and suspended breath created by height and direction, never by a collision.
-  rendering_and_quality: Firm 2D contours, stable structure under steep perspective and both crossing paths readable at a glance.
-  key_features: steep 70-80 degree down-angle; X-crossing of travel line and edge line; wide lens; far depth dropping in value; horizon out of frame
-  creative_brief: "Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X. Carry it through steep 70-80 degree down-angle, X-crossing of travel line and edge line, wide lens, far depth dropping in value, horizon out of frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Norio Matsumoto sakuga as in his fight scenes: loose rough flowing lines, bodies drawn with elastic weight, swooping camera turns and scenes that feel painted in motion rather than posed.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with loose expressive lines that stretch and bend with motion, hair and clothes streaming in fluid rough strokes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted naturalistic palette with sudden bright accents where motion peaks, kept loose and painterly.
+  lighting_and_shadow: Soft natural light that shifts as the camera swoops, with rough painted shadow shapes.
+  texture_and_material: Loose rough pencil-like lines, painterly smears and minimal cleanup that keeps the drawing alive.
+  camera_and_composition: Steep vertigo angles, swooping camera rotations and figures seen from dizzying heights.
+  atmosphere_and_mood: Keep the requested mood with dizzying fluid motion.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  key_features: Norio Matsumoto loose line; swooping camera; elastic bodies; vertigo
+  creative_brief: "Norio Matsumoto sakuga as in his fight scenes: loose rough flowing lines, bodies drawn with elastic weight, swooping camera turns and scenes that feel painted in motion rather than posed. Carry it through Norio Matsumoto loose line, swooping camera, elastic bodies, vertigo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear
@@ -54,10 +55,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-022.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -67,6 +72,7 @@ taxonomy:
     - anime-battle-and-worlds
     - anime
     - action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

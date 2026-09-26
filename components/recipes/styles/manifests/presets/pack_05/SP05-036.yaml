@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-036
 packId: pack_05
-name: Colossal War Drama
+name: Violet Evergarden - Colossal War Drama
 styleAnchors:
-  - Colossal War Drama
-displayName: Colossal War Shonen
+  - Violet Evergarden - Colossal War Drama
+displayName: Violet Evergarden - Colossal War Drama
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Charcoal, ash grey, dust ochre and faded khaki, with worn crimson or tarnished gold as the only accent.
-  lighting_and_shadow: Diffuse smoky daylight, soft graded shadows, and a narrow pale rim separating figures from haze.
-  texture_and_material: Visible bristle marks in skies, walls and smoke; faint grain laid evenly over the cels.
-  camera_and_composition: Keep the requested framing; asymmetric compositions set small figures against large, heavy painted masses.
-  atmosphere_and_mood: Mournful gravity and the weight of consequence.
-  rendering_and_quality: Thin lines with soft modelled cel shading, painterly backgrounds and restrained color.
-  key_features: brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses
-  creative_brief: "Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain. Carry it through brush-textured painted backgrounds, desaturated wartime palette, thin scratchy contour, soft film grain, small figures against heavy masses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Kyoto Animation Violet Evergarden look (2018): extraordinarily detailed eyes with jewel-like irises, postwar European towns, letters and typewriters, lush painted light and grief after war.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akiko Takase designs, jewel-detailed eyes, meticulous hair, Edwardian clothes, gloves and restrained grieving expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep emerald, prussian blue, antique gold and warm candle amber.
+  lighting_and_shadow: Rich painted window light, candle glow and sparkling dust in sunbeams.
+  texture_and_material: Immaculate detailed cel with painterly backgrounds and glittering light particles.
+  camera_and_composition: Composed cinematic shots, hands on letters, gloves, wide painted European vistas.
+  atmosphere_and_mood: Keep the requested mood with tender postwar grief.
+  rendering_and_quality: Luxurious Kyoto Animation frame with extraordinary detail in eyes and light.
+  key_features: Violet Evergarden eyes; postwar Europe; letters; painted light
+  creative_brief: "Kyoto Animation Violet Evergarden look (2018): extraordinarily detailed eyes with jewel-like irises, postwar European towns, letters and typewriters, lush painted light and grief after war. Carry it through Violet Evergarden eyes, postwar Europe, letters, painted light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blonde woman with metal prosthetic hands and a blue coat
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -47,7 +50,6 @@ avoidRules:
   - real-world uniforms
   - fascist insignia
   - giant humanoids
-  - battlefield gore
   - guns near-plane
   - named franchise likeness
   - propaganda poster text
@@ -70,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-036.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blonde woman with metal prosthetic hands and a blue coat, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -82,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

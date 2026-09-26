@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'J.C.Staff Toradora! television look (2008) with Masayoshi Tanaka designs: clean late-2000s romantic comedy cel, large bright eyes, winter school streets and warm lamplit apartments.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Tanaka designs, large bright eyes with crisp highlights, fine hair strands and winter coats and scarves.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tanaka designs, large bright eyes with crisp highlights, fine hair strands and winter coats and scarves. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Winter blue, snow white, warm lamp orange and scarf reds.',
       lighting_and_shadow:
         'Cold winter daylight, warm streetlamps and soft glowing window light at night.',
@@ -43,7 +43,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Akira Amano Hitman Reborn! look: stylish mafia comedy with sharp elegant suits, spiky flame-lit hair, chaotic gag escalation that turns into dramatic flame battles.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Amano designs, slim stylish bodies, spiky hair, sharp suits and exaggerated gag faces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano designs, slim stylish bodies, spiky hair, sharp suits and exaggerated gag faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sky orange flames, black suits, crisp whites and warm family-home colors.',
       lighting_and_shadow:
         'Warm household light that flips into dramatic flame-glow battle lighting.',
@@ -65,12 +65,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Kyoto Animation Haruhi - Pop Reality Bend'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright school colors, sky blue, pale grey closed-space tint and pop accents.',
       lighting_and_shadow: 'Clear school daylight, then flat eerie grey light when reality bends.',
@@ -93,12 +93,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Hideaki Sorachi - Anachronistic Deadpan Mayhem'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a silver-perm samurai with a wooden sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a silver-perm samurai with a wooden sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hideaki Sorachi Gintama look: Edo samurai streets full of spaceships, vending machines and aliens, lazy deadpan faces, sudden serious sword action and gag-style breaks.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Sorachi designs, dead-fish half-lidded eyes, natural perm hair, kimono mixed with modern items and deadpan poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sorachi designs, dead-fish half-lidded eyes, natural perm hair, kimono mixed with modern items and deadpan poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Edo earth tones, kimono patterns, neon sci-fi accents and sky blue.',
       lighting_and_shadow:
         'Ordinary daylight for gags, dramatic moonlight and rim light for serious sword scenes.',
@@ -127,7 +127,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Production I.G Blood+ television look (2005): sober realistic designs by Chizu Hashii, military bases, vampires and grand cities at night, cold clinical palettes and tragic duty.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hashii realism, restrained faces, slender figures, military uniforms and dark formal clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hashii realism, restrained faces, slender figures, military uniforms and dark formal clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Cold blue, clinical white, deep crimson and night black.',
       lighting_and_shadow: 'Cold clinical light, moonlit exteriors and harsh red emergency light.',
       texture_and_material:
@@ -153,7 +153,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Studio Deen Higurashi television look (2006): cute moe rural designs, cicada-heavy summer village, and sudden horror close-ups where pupils shrink and faces fill with shadow.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with round cute moe designs, huge eyes that can shrink into pinpoint pupils, and summer village clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with round cute moe designs, huge eyes that can shrink into pinpoint pupils, and summer village clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Summer green, dusk orange, cicada heat haze and sudden deep red shadow.',
       lighting_and_shadow:
         'Blazing summer light that switches to ominous dusk with faces half in black shadow.',
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Oh! Great manga art as in Air Gear: hyper-detailed inked cityscapes, extreme fisheye perspective, sexy athletic figures, speed lines and graffiti-covered urban rooftops.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Oh! Great anatomy, lean athletic bodies, wild hair, detailed skate gear and extreme poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oh! Great anatomy, lean athletic bodies, wild hair, detailed skate gear and extreme poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black ink with screentone plus neon graffiti accents in color pages.',
       lighting_and_shadow: 'Hard urban light with dramatic ink shadows and glinting highlights.',
       texture_and_material:
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Madhouse Nana television look (2006): Ai Yazawa designs in motion, punk fashion, cramped Tokyo apartments, rainy streets and emotional band melodrama.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner, punk fashion and chokers.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner, punk fashion and chokers. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black, crimson, smoky grey and soft apartment pastels.',
       lighting_and_shadow: 'Rainy grey daylight, warm apartment lamps and stage spotlights.',
       texture_and_material:
@@ -234,7 +234,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'BONES Ouran High School Host Club television look (2006): pink rose-petal backgrounds, sparkling bishonen, lavish academy salons and fast gag reaction shots.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with elegant bishonen designs, slim bodies, sparkling eyes, tailored suits and comedic chibi reactions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant bishonen designs, slim bodies, sparkling eyes, tailored suits and comedic chibi reactions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rose pink, champagne gold, pastel lavender and crisp white.',
       lighting_and_shadow: 'Sparkling bright light with rose-petal glow and soft bloom.',
       texture_and_material:
@@ -255,12 +255,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Fullmetal Alchemist Brotherhood - Alchemical Moral Geometry'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a short blond alchemist in a red coat with a metal arm, a suit of empty armor, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a short blond alchemist in a red coat with a metal arm, a suit of empty armor, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'BONES Fullmetal Alchemist: Brotherhood television look (2009): clean confident designs from Hiromu Arakawa, transmutation circles flaring blue, European industrial towns and war-scarred drama.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Arakawa-derived designs, sturdy bodies, clear expressive faces, coats, uniforms and automail limbs.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Arakawa-derived designs, sturdy bodies, clear expressive faces, coats, uniforms and automail limbs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Military blue, brick red, alchemy cyan and dusty ochre.',
       lighting_and_shadow: 'Blue-white alchemy flashes, warm lamplight and harsh desert sun.',
       texture_and_material:
@@ -281,12 +281,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Code Geass - Operatic Rebellion Strategy'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with CLAMP proportions, very long legs, narrow faces, sharp eyes and ornate uniforms with high collars.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP proportions, very long legs, narrow faces, sharp eyes and ornate uniforms with high collars. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Imperial purple, glossy black, royal gold and deep crimson accents.',
       lighting_and_shadow: 'Dramatic stage-like lighting, eye glows and flames behind silhouettes.',
       texture_and_material:
@@ -307,12 +307,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Gurren Lagann - Spiral Overdrive Bravado'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a spiky-haired rebel with a cape and flaming sunglasses, a tiny drill-headed robot, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a spiky-haired rebel with a cape and flaming sunglasses, a tiny drill-headed robot, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Nishigori designs, angular faces, pointed teeth, wild hair and sunglasses, in bold heroic poses.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nishigori designs, angular faces, pointed teeth, wild hair and sunglasses, in bold heroic poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Hot red, drill yellow, sky blue and spiral green.',
       lighting_and_shadow: 'Blazing heroic backlight, spiral energy glow and explosion flashes.',
       texture_and_material:
@@ -333,12 +333,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Soul Eater - Gothic Soul-Pop Action'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a scythe-weapon partner with white hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a scythe-weapon partner with white hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'BONES Soul Eater television look (2008): Atsushi Ohkubo designs, Tim Burton-like crooked city, grinning sun and moon, stark black shapes and punk gothic pop.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Ohkubo designs, triangular grins with pointed teeth, lanky bodies, punk gothic clothes and stitched details.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohkubo designs, triangular grins with pointed teeth, lanky bodies, punk gothic clothes and stitched details. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black, blood red, bone white and acid yellow.',
       lighting_and_shadow:
         'Flat graphic shadows, glowing grinning sun and moon, stark silhouettes.',
@@ -359,12 +359,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Hellsing TV - Gothic Resonance Punk'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a vampire in a red greatcoat and round orange glasses, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Gonzo Hellsing television look (2001): gothic punk vampire action with heavy red and black design, long coats, ruined churches, lurid lighting and early digital grain.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Gonzo designs, tall lean figures, long coats, sharp teeth and hair shadowing the eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Blood red, black, ash grey and cold moon blue.',
       lighting_and_shadow: 'Lurid red and moonlit blue light, harsh shadows and gunfire flashes.',
       texture_and_material:
@@ -390,7 +390,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'BONES Eureka Seven television look (2005) with Kenichi Yoshida designs: airy sky-surfing, boards riding trapar waves, soft pastels, big skies and youth romance.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Yoshida designs, clean simple faces, lanky teens and adults in streetwear and flight gear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshida designs, clean simple faces, lanky teens and adults in streetwear and flight gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sky cyan, pastel green, sunset peach and trapar glow.',
       lighting_and_shadow: 'Big open sky light, trapar wave glow and golden sunsets.',
       texture_and_material:
@@ -411,12 +411,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Yana Toboso - Velvet Covenant Gothic'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a black-haired demon butler with a pentagram on the hand, a boy earl with an eyepatch, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a black-haired demon butler with a pentagram on the hand, a boy earl with an eyepatch, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Yana Toboso Black Butler look: Victorian gothic manga art, elegant tailcoats, lace and velvet, demonic contracts, candlelit manors and fine ornamental detail.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Toboso designs, slender elegant bodies, sharp eyes, Victorian formal clothes and gloved hands.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Toboso designs, slender elegant bodies, sharp eyes, Victorian formal clothes and gloved hands. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black velvet, deep crimson, candle gold and bone white.',
       lighting_and_shadow:
         'Flickering candlelight, deep manor shadows and small demonic red eye glints.',
@@ -437,12 +437,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Shakugan no Shana - Crimson Threshold Embers'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a red-haired flame-haze girl with a black coat and katana, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired flame-haze girl with a black coat and katana, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'J.C.Staff Shakugan no Shana television look (2005) with Noizi Ito designs: school streets frozen inside sealed fire domes, blazing crimson hair and eyes, and falling embers.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big bright eyes, long hair turning crimson in battle and school or coat clothes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, big bright eyes, long hair turning crimson in battle and school or coat clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Crimson flame, black, ember orange and sealed-space grey.',
       lighting_and_shadow: 'Ember glow and flaming hair light in a frozen grey sealed world.',
       texture_and_material:
@@ -463,12 +463,12 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Katsura Hoshino - Techno-Gothic Exorcism'],
     category: '3. 2000s Classics',
     negativePrompt:
-      'a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a white-haired exorcist with a scar and a cursed red arm, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Katsura Hoshino D.Gray-man look: gothic exorcist manga art, elaborate coats with silver trims, crosses, clowns and akuma machines, fine lines and dramatic black shapes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hoshino designs, slender elegant figures, delicate faces, long uniform coats and dramatic hair. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black coats, silver trim, crimson accents and cold stained-glass colors.',
       lighting_and_shadow: 'Stained-glass light, dark cathedrals and glowing weapon effects.',
       texture_and_material:
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'J.C.Staff The Familiar of Zero television look (2006) with Eiji Usatsuka designs: bright pastel fantasy academy, cloaks and wands, tsundere slapstick and glossy anime eyes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Usatsuka designs, big glossy eyes, pastel hair colors, academy cloaks and exaggerated flustered reactions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel pink, academy navy, sky blue and castle stone cream.',
       lighting_and_shadow:
         'Bright fantasy daylight, magic sparkles and slapstick explosion flashes.',
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Yuki Urushibara Mushishi manga art: soft brush and pen lines, loose natural ink washes, quiet mountain villages and strange translucent life forms drawn with folk simplicity.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; draw people with Urushibara simplicity, quiet plain faces, loose hair, rural clothes and calm unhurried gestures.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Urushibara simplicity, quiet plain faces, loose hair, rural clothes and calm unhurried gestures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted greens, earth browns and pale watercolor washes like her color pages.',
       lighting_and_shadow: 'Soft natural forest light and faint glowing life forms.',
       texture_and_material: 'Brush-pen lines, ink washes, watercolor bleeding and paper texture.',

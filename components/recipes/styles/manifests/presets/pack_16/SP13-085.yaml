@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Katanagatari - Swordsmith Forge Craft
 category: 6. Samurai & Medieval
 domain: craft process anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'White Fox Katanagatari television look (2010) with take designs: flat graphic shapes, bold color blocks, stylized swords, simple geometric figures and pattern-heavy costumes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with take designs, simple flat faces, geometric bodies and bold patterned costumes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'Flat bold color blocks: vermilion, teal, white and black.'
   lighting_and_shadow: Flat graphic lighting with little or no gradient.
   texture_and_material: Flat color shapes, clean lines and pattern fills.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

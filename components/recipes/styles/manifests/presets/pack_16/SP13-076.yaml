@@ -9,7 +9,7 @@ styleAnchors:
 displayName: The Apothecary Diaries - Court Intrigue Lacquer
 category: 6. Samurai & Medieval
 domain: palace politics anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'OLM and TOHO The Apothecary Diaries television look (2023): lavish imperial rear palace, lacquer red and gold, silk robes, hairpins and intimate intrigue lit by lanterns.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant modern designs, refined faces, ornate hanfu-style robes and elaborate hair ornaments. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lacquer red, imperial gold, jade green and night indigo.
   lighting_and_shadow: Warm lantern light, screen-filtered glow and soft palace shadows.
   texture_and_material: Clean digital cel, detailed silk patterns and painted palace architecture.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

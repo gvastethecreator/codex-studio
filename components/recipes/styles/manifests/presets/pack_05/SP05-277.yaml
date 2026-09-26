@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-277
 packId: pack_05
-name: Rusted Neon Adolescent Dread Style
+name: Boogiepop Phantom Madhouse - Rusted Neon Adolescent Dread Style
 styleAnchors:
-  - Rusted Neon Adolescent Dread Style
-displayName: Rusted Neon Adolescent Dread
+  - Boogiepop Phantom Madhouse - Rusted Neon Adolescent Dread Style
+displayName: Boogiepop Phantom Madhouse - Rusted Neon Adolescent Dread Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Scratchy seinen anime drawing of scraped, slightly offset strokes that alternate rust-red oxidized marks with thin cool neon edge slips, like a poster scraped off a metal shutter.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Oxidized orange-red and rust brown over stable midtones, with contained violet or cyan slips on the edges.
-  lighting_and_shadow: Colored rim accents sit only on edges that could catch them; ambient light stays low and even.
-  texture_and_material: Dry scraped pigment, tiny oxidized specks and palette-knife scrapes in the backgrounds.
-  camera_and_composition: Keep the requested framing; broken stroke intervals add unease inside the existing negative space.
-  atmosphere_and_mood: Restless young-adult dread or tenderness, raw and nervous.
-  rendering_and_quality: Scraped marks stay controlled while faces and key forms remain clean and readable.
-  key_features: scraped offset strokes; rust red with neon violet or cyan slips; oxidized specks; palette-knife scrapes; nervous stroke rhythm
-  creative_brief: "Scratchy seinen anime drawing of scraped, slightly offset strokes that alternate rust-red oxidized marks with thin cool neon edge slips, like a poster scraped off a metal shutter. Carry it through scraped offset strokes, rust red with neon violet or cyan slips, oxidized specks, palette-knife scrapes, nervous stroke rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Boogiepop Phantom look (2000): heavily vignetted sepia-rust color grading, grainy distortion, a haunted city and fragmented urban-legend dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with pale quiet designs, school or work clothes and haunted expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rust sepia, sickly green and faded neon through heavy vignetting.
+  lighting_and_shadow: Dim filtered light with dark vignettes and flickering neon.
+  texture_and_material: Grainy distorted digital filters, rust tones and heavy dark vignetting.
+  camera_and_composition: Fragmented disorienting compositions framed by heavy dark vignettes.
+  atmosphere_and_mood: Keep the requested mood with fragmented urban dread.
+  rendering_and_quality: Grainy vignetted Madhouse television frame with haunted sepia tones.
+  key_features: Boogiepop sepia vignette; grain; urban legend; fragments
+  creative_brief: "Madhouse Boogiepop Phantom look (2000): heavily vignetted sepia-rust color grading, grainy distortion, a haunted city and fragmented urban-legend dread. Carry it through Boogiepop sepia vignette, grain, urban legend, fragments. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a figure in a tall black hat and cloak
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-277.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a figure in a tall black hat and cloak, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

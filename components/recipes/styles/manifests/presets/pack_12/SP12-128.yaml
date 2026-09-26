@@ -32,6 +32,10 @@ visualDna:
   creative_brief: "Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings. Carry it through gravity zones, wall-walking, disorienting angle, clean panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: gravity zones; wall-walking; disorienting angle; clean panels
 avoidRules:
+  - orange and blue wall portals
+  - weighted companion cube
+  - white egg-shaped sentry turret
+  - test subject in an orange jumpsuit
   - existing game characters, logos or levels
   - readable interface text
   - gore
@@ -49,7 +53,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

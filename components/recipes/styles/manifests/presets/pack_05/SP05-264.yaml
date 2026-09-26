@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-264
 packId: pack_05
-name: Clinical Innocence Rupture Style
+name: Elfen Lied Arms - Clinical Innocence Rupture Style
 styleAnchors:
-  - Clinical Innocence Rupture Style
-displayName: Clinical Innocence Rupture
+  - Elfen Lied Arms - Clinical Innocence Rupture Style
+displayName: Elfen Lied Arms - Clinical Innocence Rupture Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Hairline anime linework on broad porcelain-pale planes, drawn with medical-plate precision, where one single contour deliberately breaks, doubles or wobbles.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Porcelain white, cool gray and pale blue-gray fields with one tiny coral or vermilion note placed at the point of rupture.
-  lighting_and_shadow: Clear diffuse near-shadowless light like a white room, plus one small hard highlight exactly where the line breaks.
-  texture_and_material: Smooth matte fields over extremely fine paper grain; technical-pen hairlines of constant width and no stains anywhere.
-  camera_and_composition: Keep the requested camera; the subject sits with generous even margins so the precision feels clinical and calm.
-  atmosphere_and_mood: Fragile calm with one small wrong note, innocence kept under glass.
-  rendering_and_quality: Pristine hairline contours, flat pale fills and one controlled irregularity; no grime and no gradients beyond a soft gray shadow.
-  key_features: technical hairline contours; broad porcelain-pale planes; one broken or doubled contour; tiny coral accent; near-shadowless diffuse light
-  creative_brief: "Hairline anime linework on broad porcelain-pale planes, drawn with medical-plate precision, where one single contour deliberately breaks, doubles or wobbles. Carry it through technical hairline contours, broad porcelain-pale planes, one broken or doubled contour, tiny coral accent, near-shadowless diffuse light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Arms Elfen Lied look (2004): soft pastel seaside designs set against clinical laboratory horror, Klimt-inspired gold mosaic ornament, pink hair and sudden violent ruptures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with soft pastel designs, pink or pale hair, horns or unusual features, and hospital or casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft seaside pastels contrasted with cold clinical white, steel and gold Klimt-like mosaic accents.
+  lighting_and_shadow: Gentle seaside sunlight versus harsh sterile laboratory light.
+  texture_and_material: Soft digital cel with Klimt-inspired gold mosaic patterns in certain frames.
+  camera_and_composition: Calm seaside wides abruptly cut against cold clinical corridors.
+  atmosphere_and_mood: Keep the requested mood with fragile clinical dread.
+  rendering_and_quality: Contrasting television frame of pastel innocence and clinical dread.
+  key_features: Pastel versus clinical; Klimt gold mosaics; horned figures; sudden rupture
+  creative_brief: "Arms Elfen Lied look (2004): soft pastel seaside designs set against clinical laboratory horror, Klimt-inspired gold mosaic ornament, pink hair and sudden violent ruptures. Carry it through Pastel versus clinical, Klimt gold mosaics, horned figures, sudden rupture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired girl with small horns
+  - existing franchise characters
+  - minors
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +63,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-264.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pink-haired girl with small horns, existing franchise characters, minors, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +78,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

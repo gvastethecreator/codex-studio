@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Reiko Okano - Onmyoji Talisman Court
 category: 6. Samurai & Medieval
 domain: Heian spirit exorcism anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Reiko Okano manga look as in Onmyoji: refined Heian court elegance, flowing robes, delicate line, mystical symbols and dreamlike mystical scenes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okano elegance, slender refined figures, serene faces, layered Heian robes and tall caps. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Plum, ink black, gold and pale mist blue.
   lighting_and_shadow: Soft moonlight, glowing talismans and misty garden light.
   texture_and_material: Delicate fine line, flowing robe patterns and mystical diagrams.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

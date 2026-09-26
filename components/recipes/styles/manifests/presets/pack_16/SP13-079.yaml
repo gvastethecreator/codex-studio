@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Arslan 1991 - Crusade Desert Glare
 category: 6. Samurai & Medieval
 domain: desert war anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'The Heroic Legend of Arslan OVA look (1991) after Yoshitaka Amano concepts: Persian-inspired desert kingdoms, ornate armor, elegant long-haired heroes and glaring desert light.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with early-nineties elegant designs, long hair, slender heroes and ornate Persian-inspired armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Desert white glare, gold, turquoise and deep sky blue.
   lighting_and_shadow: Blinding noon glare, heat shimmer and sharp desert shadows.
   texture_and_material: Hand-painted cel over detailed painted desert and palace backgrounds, soft grain.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

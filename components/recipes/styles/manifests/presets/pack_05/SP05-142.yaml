@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-142
 packId: pack_05
-name: Humid Tropic Grit Cel
+name: Rei Hiroe - Humid Tropic Grit Cel
 styleAnchors:
-  - Humid Tropic Grit Cel
+  - Rei Hiroe - Humid Tropic Grit Cel
   - Black Lagoon - South Seas Gun-Runner Grit
-displayName: Humid Tropic Grit Cel
+displayName: Rei Hiroe - Humid Tropic Grit Cel
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Deep slate, faded teal, rust and muted amber, with sharp sweat highlights.
-  lighting_and_shadow: Harsh overhead tropical sun, hard low-key shadows and a hazy, washed background.
-  texture_and_material: Scuffed ink, soft grain, rust bloom and peeling paint on hard surfaces.
-  camera_and_composition: Keep the requested framing; compact asymmetric framing with strong diagonals and deep negative space.
-  atmosphere_and_mood: Weathered tension and dry resolve in the heat.
-  rendering_and_quality: Gritty edge texture, grounded values and an uncluttered focal path.
-  key_features: sweat-sheen highlights; humid haze; pressure-heavy contour; rust and faded teal; harsh overhead sun
-  creative_brief: "Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces. Carry it through sweat-sheen highlights, humid haze, pressure-heavy contour, rust and faded teal, harsh overhead sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Rei Hiroe Black Lagoon look: sweaty tropical crime, tank tops and tattoos, gunboats in mangrove swamps, heavy detailed guns and gritty Southeast Asian port towns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hiroe designs, tough sweaty faces, tattoos, tank tops and cargo pants, with detailed firearms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Humid green, sweaty tan, rust brown and turquoise water.
+  lighting_and_shadow: Harsh tropical sun, humid haze and sweat glistening under tin roofs.
+  texture_and_material: Detailed ink line with gritty tone and sweat.
+  camera_and_composition: Speedboat chase compositions through mangroves and gritty close-ups in port towns.
+  atmosphere_and_mood: Keep the requested mood with humid outlaw grit.
+  rendering_and_quality: Gritty detailed crime manga illustration with sweaty tropical atmosphere.
+  key_features: Rei Hiroe grit; tropical crime; gunboats; tattoos
+  creative_brief: "Rei Hiroe Black Lagoon look: sweaty tropical crime, tank tops and tattoos, gunboats in mangrove swamps, heavy detailed guns and gritty Southeast Asian port towns. Carry it through Rei Hiroe grit, tropical crime, gunboats, tattoos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a woman with twin pistols and a tribal arm tattoo
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -64,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-142.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, twin pistols, gun, torpedo boat, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a woman with twin pistols and a tribal arm tattoo, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, twin pistols, gun, torpedo boat, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

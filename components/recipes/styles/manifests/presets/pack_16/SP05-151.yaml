@@ -6,7 +6,7 @@ styleAnchors:
   - Kyoto Animation Haruhi - Pop Reality Bend
 displayName: Kyoto Animation Haruhi - Pop Reality Bend
 category: 3. 2000s Classics
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kyoto Animation The Melancholy of Haruhi Suzumiya look (2006): Noizi Ito designs animated with polished school realism, then reality bending into pop, flat bright shapes and closed spaces.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, big clear eyes, neat hair ribbons, school uniforms and precise everyday acting. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright school colors, sky blue, pale grey closed-space tint and pop accents.
   lighting_and_shadow: Clear school daylight, then flat eerie grey light when reality bends.
   texture_and_material: Early digital cel paint with clean thin lines, soft gradient highlights and digitally composited painted backgrounds.
@@ -58,12 +58,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-151.webp
 attributes:
-  negativePrompt: a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a yellow hair ribbon with an armband, blue light giants in a grey city, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

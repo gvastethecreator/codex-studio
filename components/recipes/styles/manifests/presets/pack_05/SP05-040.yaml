@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-040
 packId: pack_05
-name: Blade Field Urban Fantasy
+name: Fate UBW ufotable - Blade Field Urban Fantasy
 styleAnchors:
-  - Blade Field Urban Fantasy
-displayName: Urban Blade Field
+  - Fate UBW ufotable - Blade Field Urban Fantasy
+displayName: Fate UBW ufotable - Blade Field Urban Fantasy
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Nocturnal navy and ivory with glowing cyan or gold particle accents.
-  lighting_and_shadow: Motivated volumetric beams, bloom around light sources, a controlled rim on characters.
-  texture_and_material: Clean cel on figures, finely detailed painted backgrounds, particles soft and round.
-  camera_and_composition: Keep the requested framing; lens-like depth with blurred foreground elements, sharp midground and bokeh in the distance.
-  atmosphere_and_mood: Calm formality in the moment before a storm.
-  rendering_and_quality: 'Tight compositing: sharp cel edges, soft volumetric light, particles and bloom kept in check.'
-  key_features: cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field
-  creative_brief: "Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur. Carry it through cel figures over detailed painted backgrounds, volumetric light shafts, drifting embers and bokeh, navy and ivory, shallow depth of field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'ufotable Fate/stay night: Unlimited Blade Works look (2014): Takashi Takeuchi designs, lavish digital compositing, glowing magic circuits, fields of swords under burning skies and dark urban nights.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takeuchi-derived designs, sharp clean faces, modern and armored costumes and elegant magic poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Burning orange skies, steel grey, magic cyan and deep night blue.
+  lighting_and_shadow: Lavish compositing glow, magic circuit lights and sunset fire.
+  texture_and_material: Crisp cel characters with lavish 3D compositing and particle effects.
+  camera_and_composition: Sweeping camera moves through sword fields and dramatic urban night shots.
+  atmosphere_and_mood: Keep the requested mood with elegant fated battle.
+  rendering_and_quality: Lavish ufotable frame with rich compositing and effects.
+  key_features: ufotable compositing; sword fields; magic circuits; urban night
+  creative_brief: "ufotable Fate/stay night: Unlimited Blade Works look (2014): Takashi Takeuchi designs, lavish digital compositing, glowing magic circuits, fields of swords under burning skies and dark urban nights. Carry it through ufotable compositing, sword fields, magic circuits, urban night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blonde knight woman in blue and silver armor
+  - a red-coated archer with twin swords
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -69,10 +73,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-040.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blonde knight woman in blue and silver armor, a red-coated archer with twin swords, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +88,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Night Is Short, Walk on Girl - Nocturnal Social Whirl
 displayName: Night Is Short, Walk on Girl - Nocturnal Social Whirl
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Masaaki Yuasa feature animation as in Night Is Short, Walk on Girl: Yusuke Nakamura graphic character designs, flat pastel blocks, bouncy walk cycles and a swirling night Kyoto.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs, simple graphic faces, thin legs, flat pastel clothes and bouncy exaggerated walks. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel red, mint, cream and deep navy night.
   lighting_and_shadow: Flat lantern and street glow with simple graphic highlights on faces.
   texture_and_material: Flat color shapes, simple clean lines and graphic patterns.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-298.webp

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-058
 packId: pack_05
-name: Remote Command Grief
+name: Stand Alone Complex - Remote Command Grief
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Muted cinematic digital anime: thin brown line art, simulated shallow depth of field with round bokeh, and a cold blue-gray grade with lifted blacks.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Desaturated steel blue, fog gray and muted navy with lifted milky blacks and one cold-white highlight on the focal edge.
-  lighting_and_shadow: Soft overcast or distant window light, broad low-contrast shadows, and bokeh discs where small lights fall out of focus.
-  texture_and_material: Fine digital film grain, soft focus falloff, and thin sepia-brown line that dissolves where forms go out of focus.
-  camera_and_composition: Keep the requested view; set a shallow focal plane on the subject and let foreground and background melt into bokeh.
-  atmosphere_and_mood: Quiet grief and detachment, a distance that the lens itself enforces.
-  rendering_and_quality: Thin line, soft cel shading, lens blur and bokeh, lifted-black grade and faint grain; nothing saturated.
-  key_features: shallow depth of field with round bokeh; thin brown line art; lifted-black blue-gray grade; fine film grain; single cold-white highlight
-  creative_brief: "Muted cinematic digital anime: thin brown line art, simulated shallow depth of field with round bokeh, and a cold blue-gray grade with lifted blacks. Carry it through shallow depth of field with round bokeh, thin brown line art, lifted-black blue-gray grade, fine film grain, single cold-white highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Ghost in the Shell: Stand Alone Complex look (2002): grounded cybernetic police drama, spider-legged think tanks, Hong Kong-like future cities and quiet grief over machine minds.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with SAC realism, grounded adult faces, tactical gear and suits, and spider-legged machines with personality. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Teal city tones, olive tactical gear and warm cockpit amber.
+  lighting_and_shadow: Diffuse city light, cockpit screens and rainy reflections.
+  texture_and_material: Clean realistic cel with CG machines and painted cities.
+  camera_and_composition: Tactical command-room framing with quiet emotional close-ups on tired operators.
+  atmosphere_and_mood: Keep the requested mood with quiet machine grief.
+  rendering_and_quality: Grounded Production I.G television frame with realistic cyber detail.
+  key_features: SAC realism; spider-legged machines; command rooms; machine grief
+  creative_brief: "Production I.G Ghost in the Shell: Stand Alone Complex look (2002): grounded cybernetic police drama, spider-legged think tanks, Hong Kong-like future cities and quiet grief over machine minds. Carry it through SAC realism, spider-legged machines, command rooms, machine grief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blue spider tank with a pod head and big round eyes
+  - a purple-haired cyborg major
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -46,7 +50,6 @@ avoidRules:
   - gun
   - cockpit UI text
   - real military insignia
-  - drone strike gore
   - readable maps
   - franchise uniform
   - plastic 3d robot render
@@ -66,10 +69,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-058.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated neon, crushed pure blacks, photoreal control room, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue spider tank with a pod head and big round eyes, a purple-haired cyborg major, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, saturated neon, crushed pure blacks, photoreal control room, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,8 +84,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Stand Alone Complex - Remote Command Grief
+styleAnchors:
+  - Stand Alone Complex - Remote Command Grief

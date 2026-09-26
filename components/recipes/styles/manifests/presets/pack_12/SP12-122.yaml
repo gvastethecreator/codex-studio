@@ -32,6 +32,10 @@ visualDna:
   creative_brief: "Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails. Carry it through asteroids, laser streaks, chase camera, engine trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: asteroids; laser streaks; chase camera; engine trails
 avoidRules:
+  - X-shaped wing fighters
+  - red and green blaster bolts
+  - giant space slug in an asteroid
+  - hexagonal-wing twin-ion fighters
   - existing game characters, logos or levels
   - readable interface text
   - gore
@@ -49,7 +53,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

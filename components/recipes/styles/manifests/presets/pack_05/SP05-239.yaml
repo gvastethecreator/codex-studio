@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-239
 packId: pack_05
-name: Bubblegum Cosmic Overdrive
+name: Diebuster Gainax - Bubblegum Cosmic Overdrive
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: '1990s magical space cel: thick rounded ink lines, rainbow airbrushed gradients, holographic sparkle overlays, and bursting star-shaped twinkles.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Bubblegum pink, cyan, lemon yellow and violet against deep indigo space, with gradients running in rainbow bands.
-  lighting_and_shadow: Soft glowing gradients with clean cel shadows, and four- and eight-point twinkles on every bright edge.
-  texture_and_material: Holographic foil sparkle overlay, smooth airbrush, flat cel paint and faint 1990s cel grain.
-  camera_and_composition: Keep the requested view; scatter twinkles and curving rainbow ribbons around the subject.
-  atmosphere_and_mood: Buoyant, sincere and wildly optimistic, joy at escape velocity.
-  rendering_and_quality: Thick rounded outlines, rainbow gradients, holographic sparkle and crisp twinkles around a bright but readable silhouette.
-  key_features: thick rounded ink lines; rainbow airbrush gradients; holographic foil sparkle; eight-point twinkles; indigo space backdrop
-  creative_brief: "1990s magical space cel: thick rounded ink lines, rainbow airbrushed gradients, holographic sparkle overlays, and bursting star-shaped twinkles. Carry it through thick rounded ink lines, rainbow airbrush gradients, holographic foil sparkle, eight-point twinkles, indigo space backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Gainax Diebuster look (2004) by Kazuya Tsurumaki: bubblegum pop sci-fi, giant pink cosmic mechs, cute designs and absurdly huge cosmic scale.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with cute bubbly designs, big eyes, colorful space suits and playful poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bubblegum pink, star yellow, cosmic blue and white.
+  lighting_and_shadow: Bright cosmic glow, sparkling stars and pink energy trails.
+  texture_and_material: Glossy digital cel with bubbly pop effects and star sparkles.
+  camera_and_composition: Absurd cosmic scale shots with planets as props and playful action.
+  atmosphere_and_mood: Keep the requested mood with bubbly cosmic overdrive.
+  rendering_and_quality: Bright bubblegum pop Gainax frame with absurd cosmic scale.
+  key_features: Diebuster pop; pink cosmic mechs; absurd scale; cute designs
+  creative_brief: "Gainax Diebuster look (2004) by Kazuya Tsurumaki: bubblegum pop sci-fi, giant pink cosmic mechs, cute designs and absurdly huge cosmic scale. Carry it through Diebuster pop, pink cosmic mechs, absurd scale, cute designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-239.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, muted gray palette, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, muted gray palette, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,8 +80,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Diebuster Gainax - Bubblegum Cosmic Overdrive
+styleAnchors:
+  - Diebuster Gainax - Bubblegum Cosmic Overdrive

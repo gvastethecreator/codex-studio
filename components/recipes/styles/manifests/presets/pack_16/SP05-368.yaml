@@ -6,7 +6,7 @@ styleAnchors:
   - Shinichi Ishizuka - Midnight Jazz Ascension
 displayName: Shinichi Ishizuka - Midnight Jazz Ascension
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Shinichi Ishizuka Blue Giant look: gritty realistic jazz manga with sweat, veins and passion, smoky clubs, rough expressive ink and music drawn as abstract energy.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ishizuka realism, strong faces, sweat, strained veins and real instruments. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep blue, smoky amber, brass gold and black.
   lighting_and_shadow: Smoky basement club spotlights and sweat-glistening highlights on skin.
   texture_and_material: Rough expressive ink, hatching and abstract music energy shapes.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-368.webp

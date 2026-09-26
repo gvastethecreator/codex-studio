@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Junji Ito - Slow Metamorphosis Dread
 category: 7. Horror
 domain: transformation horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Junji Ito manga look: meticulous realistic line, obsessive fine hatching, ordinary people with wide staring eyes and slow body transformations revealed in shocking full-page panels.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ito realism, long hair, pale faces, wide staring eyes and bodies subtly wrong in proportion. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink, white paper and dense fine hatching with no color.
   lighting_and_shadow: Flat ordinary light made eerie by heavy hatched shadows.
   texture_and_material: Fine meticulous pen hatching, spiral and organic patterns, clean contours.
@@ -35,13 +35,11 @@ visualDna:
 avoidRules:
   - a long-haired girl with a mole under her eye
   - existing franchise characters
-  - gore
   - existing anime character likeness
   - studio or franchise logo
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -51,11 +49,11 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: a long-haired girl with a mole under her eye, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a long-haired girl with a mole under her eye, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-127
 packId: pack_05
-name: Toxic Flower Etched Ink
+name: Yuji Kaku - Toxic Flower Etched Ink
 styleAnchors:
-  - Toxic Flower Etched Ink
+  - Yuji Kaku - Toxic Flower Etched Ink
   - Hell's Paradise - Poison Garden Executioner
-displayName: Toxic Flower Etched Ink
+displayName: Yuji Kaku - Toxic Flower Etched Ink
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Muted jade, chalk and dark wine, with poison-pastel petals of lilac and coral.
-  lighting_and_shadow: Low-key shadow fields, dappled small pale highlights under foliage.
-  texture_and_material: Dry ink grain with fine crosshatching in selected shadows; petals smooth and waxy.
-  camera_and_composition: Keep the requested framing; layered shallow planes of foliage frame a clear focal path.
-  atmosphere_and_mood: Beautiful menace, ornate and watchful, lovely petals hiding a quiet threat.
-  rendering_and_quality: Fine etched detail, quiet dark values and carefully limited pastel accents.
-  key_features: fine etched contour; poison-pastel flowers; jade, chalk and wine; dry crosshatch shadows; foliage framing planes
-  creative_brief: "Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows. Carry it through fine etched contour, poison-pastel flowers, jade, chalk and wine, dry crosshatch shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: "Yuji Kaku Hell's Paradise manga look: finely etched ink with lush toxic flora, uncanny flower-bodied creatures, a paradise island of beauty and dread."
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kaku designs, lean ninja and executioner figures, calm faces and period clothing amid strange blooming creatures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: 'Black ink with fine tone, and in color: toxic magenta, jade green and pale gold.'
+  lighting_and_shadow: Soft eerie jungle light filtered through giant petals.
+  texture_and_material: Fine etched pen line, delicate floral detail and organic hatching.
+  camera_and_composition: Lush jungle compositions with small figures surrounded by uncanny flowers.
+  atmosphere_and_mood: Keep the requested mood with beautiful toxic dread.
+  rendering_and_quality: Delicate etched manga illustration with lush uncanny flora.
+  key_features: Yuji Kaku etched ink; toxic flowers; paradise dread; flower-bodied creatures
+  creative_brief: "Yuji Kaku Hell's Paradise manga look: finely etched ink with lush toxic flora, uncanny flower-bodied creatures, a paradise island of beauty and dread. Carry it through Yuji Kaku etched ink, toxic flowers, paradise dread, flower-bodied creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-127.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, white-robed shaved-head executioner, lotus-faced statue, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, white-robed shaved-head executioner, lotus-faced statue, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

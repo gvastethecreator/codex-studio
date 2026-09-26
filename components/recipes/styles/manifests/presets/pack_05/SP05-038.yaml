@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-038
 packId: pack_05
-name: Psychedelic Psychic Minimalism
+name: ONE - Psychedelic Psychic Minimalism
 styleAnchors:
-  - Psychedelic Psychic Minimalism
-displayName: Psychic Minimalist Action
+  - ONE - Psychedelic Psychic Minimalism
+displayName: ONE - Psychedelic Psychic Minimalism
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Airy pastels, mostly paper white, with one small acid yellow-green accent.
-  lighting_and_shadow: Soft flat values and pale, lightly drawn edges; almost no cast shadow.
-  texture_and_material: Pencil grain under irregular translucent washes that stop short of the lines.
-  camera_and_composition: Keep the requested framing; leave wide empty space and keep the few warped shapes near the focal area.
-  atmosphere_and_mood: Quiet unease and introspection, pressure felt in the empty space more than seen.
-  rendering_and_quality: Airy hand-drawn marks, sparse distortion and a large share of untouched paper.
-  key_features: searching pencil contours; wide blank space; subtly warped peripheral shapes; airy pastels; acid yellow-green accent
-  creative_brief: "Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure. Carry it through searching pencil contours, wide blank space, subtly warped peripheral shapes, airy pastels, acid yellow-green accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'ONE original manga look as in Mob Psycho 100: crude wobbly amateur linework, minimal blank faces, empty white spaces and sudden psychic energy scribbles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with ONE crude simplicity, bowl haircuts, blank dot eyes, simple bodies and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink and white paper with rough scribbled tone.
+  lighting_and_shadow: No modeled light, only scribbled energy lines and blank white glare.
+  texture_and_material: Wobbly amateurish pen lines, rough scribbles and blank space.
+  camera_and_composition: Flat simple panels that erupt into chaotic energy scribbles.
+  atmosphere_and_mood: Keep the requested mood with deadpan psychic weirdness.
+  rendering_and_quality: Crude charming manga illustration with explosive scribble energy.
+  key_features: ONE crude line; blank faces; empty space; psychic scribbles
+  creative_brief: "ONE original manga look as in Mob Psycho 100: crude wobbly amateur linework, minimal blank faces, empty white spaces and sudden psychic energy scribbles. Carry it through ONE crude line, blank faces, empty space, psychic scribbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a bowl-cut boy in a black school uniform
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -47,7 +50,6 @@ avoidRules:
   - school uniform copy
   - city-destruction scene
   - readable symbols
-  - gore
   - franchise face
   - dense distant-plane
   - over-rendered particle field
@@ -68,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-038.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a bowl-cut boy in a black school uniform, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

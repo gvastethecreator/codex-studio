@@ -6,7 +6,7 @@ styleAnchors:
   - The Girl Who Leapt Through Time - Elastic Summer Time
 displayName: The Girl Who Leapt Through Time - Elastic Summer Time
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Mamoru Hosoda feature animation as in The Girl Who Leapt Through Time: shadowless Yoshiyuki Sadamoto character designs, bright summer skies with towering cumulus and sudden time-leap bursts.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, flat unshaded skin, clean fine lines, lively tomboyish body language and summer clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Summer blue, cloud white, cicada green and warm afternoon gold.
   lighting_and_shadow: Clear midsummer daylight, characters without cel shadow, bright sky reflections.
   texture_and_material: Clean thin lines, flat color characters, painted backgrounds and streaking time-warp effects.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-288.webp

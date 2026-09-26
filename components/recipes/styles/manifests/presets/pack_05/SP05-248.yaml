@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-248
 packId: pack_05
-name: Naturalist Sketchbook Anime Cel
+name: Ryoko Kui - Naturalist Sketchbook Anime Cel
 styleAnchors:
-  - Naturalist Sketchbook Anime Cel
+  - Ryoko Kui - Naturalist Sketchbook Anime Cel
   - Delicious in Dungeon - Stove-Top Monster Cuisine
-displayName: Naturalist Sketchbook Anime Cel
+displayName: Ryoko Kui - Naturalist Sketchbook Anime Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity."
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Functional structure is spelled out, how a hinge, shell or knot works, with selective detail on the focal object; never add a kitchen, meal or creature carcass.
-  color_and_tone: Earthy moss green, ochre, rust and warm paper neutrals in a mid key, lightly saturated, with small notes of lichen blue.
-  lighting_and_shadow: Even overcast light with a warm reflected bounce under forms and a single cool shadow tone; no dramatic sources.
-  texture_and_material: Pen hatching on shadowed planes, stippled organic surfaces and visible paper tooth under flat watercolor-like fills.
-  camera_and_composition: Keep the requested view; the focal object is centered like a specimen plate with a generous margin and clear overlaps.
-  atmosphere_and_mood: Curious, grounded and companionable, the pleasure of understanding how things work.
-  rendering_and_quality: Crisp pen detail on the focal form and simpler blocks beyond it; every mark explains structure rather than decorating.
-  key_features: fine brown pen lineart; specimen-plate clarity; earthy moss and ochre fills; stippled organic texture; warm reflected bounce
-  creative_brief: "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity. Carry it through fine brown pen lineart, specimen-plate clarity, earthy moss and ochre fills, stippled organic texture, warm reflected bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Ryoko Kui Delicious in Dungeon manga look: meticulous naturalist monster anatomy, cooking diagrams, cozy dungeon camps and detailed yet warm fantasy observation.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kui designs, expressive distinct faces, practical adventurer gear, and monsters drawn with field-guide anatomical care. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm campfire amber, dungeon stone grey, herb green and cooked-food browns.
+  lighting_and_shadow: Cozy campfire glow in dark dungeon halls and soft lantern light on stew pots.
+  texture_and_material: Clean detailed pen line, field-guide cross sections and warm muted color.
+  camera_and_composition: Cooking scenes around pots, anatomical diagram inserts and dungeon-camp wides.
+  atmosphere_and_mood: Keep the requested mood with curious cozy adventure.
+  rendering_and_quality: Warm meticulous fantasy manga illustration with naturalist monster detail.
+  key_features: Ryoko Kui naturalism; monster anatomy; dungeon cooking; cozy camps
+  creative_brief: "Ryoko Kui Delicious in Dungeon manga look: meticulous naturalist monster anatomy, cooking diagrams, cozy dungeon camps and detailed yet warm fantasy observation. Carry it through Ryoko Kui naturalism, monster anatomy, dungeon cooking, cozy camps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a bearded dwarf cook with a cauldron
+  - a short-haired elf mage with a staff
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -49,8 +53,6 @@ avoidRules:
   - signature
   - named franchise likeness
   - market stall
-  - monster corpse
-  - gore
   - banquet spread lock
   - readable recipe
   - kitchen clutter
@@ -71,10 +73,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-248.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cooking scene, food as default subject, annotations or labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a bearded dwarf cook with a cauldron, a short-haired elf mage with a staff, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cooking scene, food as default subject, annotations or labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -83,6 +88,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

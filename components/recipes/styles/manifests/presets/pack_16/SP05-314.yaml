@@ -6,7 +6,7 @@ styleAnchors:
   - Gunbuster Finale - Monumental Formation Sacrifice
 displayName: Gunbuster Finale - Monumental Formation Sacrifice
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hideaki Anno Gunbuster finale look (1988): black-and-white widescreen space opera, huge fleets in formation, stark silhouettes and tearful close-ups under enormous stakes.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Mikimoto-derived designs, big glossy eyes, determined faces and flight suits, shown in monochrome.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Mikimoto-derived designs, big glossy eyes, determined faces and flight suits, shown in monochrome. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black and white only, with grey tones and bright white glare.
   lighting_and_shadow: Stark high-contrast white glare against pure black space.
   texture_and_material: Monochrome cel, film grain and letterboxed widescreen composition.

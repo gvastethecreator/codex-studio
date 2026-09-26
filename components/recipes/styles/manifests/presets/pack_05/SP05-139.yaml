@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-139
 packId: pack_05
-name: Crosshatched Giant-Scale Panic
+name: Hajime Isayama - Crosshatched Giant-Scale Panic
 styleAnchors:
-  - Crosshatched Giant-Scale Panic
+  - Hajime Isayama - Crosshatched Giant-Scale Panic
   - Attack on Titan - Wall Rupture Desperation
-displayName: Crosshatched Giant-Scale Panic
+displayName: Hajime Isayama - Crosshatched Giant-Scale Panic
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Muted olive, stone grey and dried brown with a pale sickly flesh accent.
-  lighting_and_shadow: Hazy backlight through dust, hard silhouette shadows, faces half buried in hatching.
-  texture_and_material: Dry pen crosshatch in every shadow, abrasion on stone, plumes built as hatched volumes.
-  camera_and_composition: Keep the requested framing; exaggerate scale with tiny foreground figures and a vast form overhead in compressed depth bands.
-  atmosphere_and_mood: Bleak urgency and helpless awe, tiny figures dwarfed by something far too large.
-  rendering_and_quality: Crosshatched shadows and clear silhouettes, dread through scale rather than gore.
-  key_features: coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces
-  creative_brief: "Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses. Carry it through coarse dense crosshatching, extreme scale contrast, hatched dust plumes, olive and stone palette, grimacing faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Isayama rawness, scratchy faces, wide terrified eyes, awkward bodies and plain period clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with rough crosshatching and no screentone polish.
+  lighting_and_shadow: Flat light made menacing by dense scratchy hatching.
+  texture_and_material: Rough scratchy pen crosshatching, uneven lines and raw texture.
+  camera_and_composition: Enormous faces filling panels, tiny fleeing people and vertigo angles.
+  atmosphere_and_mood: Keep the requested mood with raw giant-scale panic.
+  rendering_and_quality: Raw scratchy manga illustration with grotesque giant scale.
+  key_features: Isayama scratch; grotesque giant faces; raw anatomy; panic crowds
+  creative_brief: "Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a skinless colossal titan face over a wall
+  - existing franchise characters
   - franchise character likeness
   - copied franchise costume or emblem
   - signature franchise weapon
@@ -34,7 +37,6 @@ avoidRules:
   - adding a fight or power effect to a quiet prompt
   - readable glyphs or sigils
   - exposed-muscle giant
-  - gore
   - eaten body
   - realistic
   - 3d render
@@ -64,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-139.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, gore, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a skinless colossal titan face over a wall, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,6 +81,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

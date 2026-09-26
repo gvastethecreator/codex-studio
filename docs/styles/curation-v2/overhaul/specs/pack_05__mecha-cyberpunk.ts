@@ -44,9 +44,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'soft gradient shading', 'literal flames', 'drill-faced super robot copy'],
       dropAvoid: ['Gurren-like drill face'],
       briefs: [
-        'Geometric ignition cel of an adult demolition foreman in a spiked welding mask leaping from a swinging crane hook, thick tapered brush-pen outlines, triangular lavender shadow wedges, flat coral and lemon fills, his outstretched boot hugely foreshortened, cyan speed wedges behind. No text or logo.',
-        'Geometric ignition cel of a squat triangular-shouldered excavator mech punching through a red canyon wall, star-shaped glints on its knuckles, flat apricot paint and jagged cyan shadow cuts, extreme low-angle foreshortening. No text or logo.',
-        'Geometric ignition cel of a sunflower bending in a gale, kept a real sunflower, its petals redrawn as sharp flat yellow triangles with lavender shadow wedges and brush-pen outlines, solid coral speed wedges streaking past. No text or logo.',
+        "Running across a flooded dam in a spiked welding mask, a demolition foreman races the orange hexagonal warning lights that ripple across the concrete wall behind her as the spillway gates groan open. No readable text or logo.",
+        "Hundreds of rescue workers line up in perfect geometric rows on a highway overpass, their hazard vests glowing orange as an enormous shadow crosses the sunset. No readable text or logo.",
+        "In a silent command room, a single mug of coffee sits on a console as every screen around it turns warning orange at once. No readable text or logo.",
       ],
     },
     'SP05-222': {
@@ -70,9 +70,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'robot battle', 'neon night', 'tram', 'readable police markings'],
       briefs: [
-        'Municipal machine procedure cel of a teal-and-amber labor mech carefully lifting a fallen oak off a flooded canal road while an adult engineer with a clipboard directs it, pencil-precise line, two-tone cel shading, poster-color overcast sky. No text or logo.',
-        'Municipal machine procedure cel of an adult maintenance crew eating lunch on the bent knee of a kneeling utility mech beside a construction pit, flat teal paint, amber hazard stripes without writing, soft overcast shadow. No text or logo.',
-        'Municipal machine procedure cel of a municipal street-sweeper machine with folding brush arms stalled at a snowy crossroads, concrete gray and signal amber blocks, faint film grain and a slight registration shift. No text or logo.',
+        "Carefully guiding a teal-and-amber labor mech through a narrow market street, a middle-aged city operator waves apologetically at every fruit seller as the machine tiptoes past their stalls. No readable text or logo.",
+        "Two municipal robot pilots fill out damage forms on the hood of a truck while their machines sit sheepishly beside a toppled billboard frame. No readable text or logo.",
+        "At dawn in a quiet bayside hangar, a labor robot stands under a tarp with a coffee thermos balanced on its knee. No readable text or logo.",
       ],
     },
     'SP05-224': {
@@ -96,9 +96,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'dirty grunge', 'warm cozy palette', 'crowded city'],
       briefs: [
-        'Sterile arcology cel of an adult geneticist in a white hooded lab coat standing small in a vast white atrium, ruler-straight hairline contours, overexposed bloom across the floor, one ultramarine shadow band behind her, a single tiny red indicator light. No text or logo.',
-        'Sterile arcology cel of a bonsai pine on a white pedestal, kept a living tree, its trunk and needles traced with hairline contours and a flat ultramarine shadow, white bloom erasing the room around it. No text or logo.',
-        'Sterile arcology cel of a white spiral staircase descending into an empty cylindrical shaft seen from directly above, parallel hairline rails, bloom spilling off every step, pale-blue reflection strips. No text or logo.',
+        "Walking through a spotless white arcology garden where every tree is trimmed into a perfect sphere, a geneticist in a hooded lab coat notices one wild dandelion growing through the pavement. No readable text or logo.",
+        "A tactical exosuit kneels in a sterile corridor, its visor reflecting a wall of perfectly identical sleeping citizens in glass pods. No readable text or logo.",
+        "On a white rooftop above the utopian city, a single potted cactus sits beside a chrome railing in the wind. No readable text or logo.",
       ],
     },
     'SP05-228': {
@@ -122,9 +122,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'deep black shadows', 'saturated neon', 'heavy ink outlines'],
       briefs: [
-        'White machine elegy illustration of a tall slender android caretaker kneeling to wind a music box in an empty sunroom, sepia-gray colored-pencil line, bleached pastel fills, flaked enamel chips on its shoulders, edges fading to white. No text or logo.',
-        'White machine elegy illustration of a pale barn owl perched on a rusted railway signal arm in fog, kept a real owl, soft pencil contours and paper grain, single-step blue-gray shadow. No text or logo.',
-        'White machine elegy illustration of an abandoned harp-shaped satellite dish half buried in a snowfield, chalk-white enamel with tiny gray flakes, high-key palette with no deep shadow, wide white margins. No text or logo.',
+        "Kneeling in a field of rusted robot bodies, a tall slender android caretaker waters a single flower growing from an old robot’s open chest plate. No readable text or logo.",
+        "An elderly android sits alone on a bench at a ruined station, polishing a pocket watch that stopped a century ago. No readable text or logo.",
+        "Under a washed pastel sky, a single android hand rests on a dune, sand slowly covering its fingers. No readable text or logo.",
       ],
     },
     'SP05-236': {
@@ -148,9 +148,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'glossy chrome', 'neon bloom', 'clean showroom paint'],
       briefs: [
-        'Compact attrition hardware cel of a squat four-meter armored walker with a periscope head wading through a reed marsh, uniform thick ink line, solid black shadow fills, sponge-dabbed mud on its olive legs, grainy 16 mm film transfer. No text or logo.',
-        'Compact attrition hardware cel of an adult mechanic in a patched coverall welding a dented boot plate in a cramped dugout workshop, iron gray and oxidized orange, one hard overhead key and black shadow shapes. No text or logo.',
-        'Compact attrition hardware cel of a battered field kettle and tin mug on a wooden crate at dawn, kept ordinary objects, flat olive paint, sponge rust speckle and solid black shadows. No text or logo.',
+        "Skidding through a muddy trench on roller-dash feet, a squat four-meter armored walker with a dented hatch sprays grime across a line of broken twin machines. No readable text or logo.",
+        "A stoic pilot eats canned beans on the shoulder of her battered walker while rain drips off its scope lenses. No readable text or logo.",
+        "In a muddy scrapyard at dusk, hundreds of identical disposable armored walkers lie stacked like empty tin cans while one crow picks at a loose scope lens. No readable text or logo.",
       ],
     },
     'SP05-238': {
@@ -181,9 +181,9 @@ const spec: Spec = {
         'suited hero copy',
       ],
       briefs: [
-        "Tokusatsu digital grid cel of a colossal navy-and-silver sea serpent rising over a seaside fishing village, worm's-eye telephoto view from between the rooftops, glowing cyan grid lines tracing its scales, towering summer cumulus behind. No text or logo.",
-        'Tokusatsu digital grid cel of a giant rust-red crab mech with lantern eyes stepping over a rice paddy, tiny farmhouses and utility poles at its feet, hard two-tone cel shadow, compressed telephoto depth. No text or logo.',
-        'Tokusatsu digital grid cel of an adult armored sentinel in steel-white plates standing on a hilltop shrine gate, seen from far below through a telephoto lens so she looms like a titan, signal-red trim and glowing grid contours. No text or logo.',
+        "Rising slowly between power lines in a silent pastel suburb, a colossal navy-and-silver sea serpent in rubber-suit proportions blinks down at a woman hanging laundry on her balcony. No readable text or logo.",
+        "A giant hero in a chunky helmet sits on a hill at sunset, carefully not crushing the tiny shrine beside him. No readable text or logo.",
+        "In a quiet suburb, every power line is humming in the same pitch while the sky slowly turns grid-shaped. No readable text or logo.",
       ],
     },
     'SP05-240': {
@@ -207,9 +207,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'black outlines', 'soft airbrush gradients', 'literal fire'],
       briefs: [
-        'Tri-fire riot geometry frame of an adult street dancer mid-kick in a scrapyard, built only from lineless ember-orange and yellow triangles with cyan shadow shards, giant counter-slanting triangles behind her. No text or logo.',
-        'Tri-fire riot geometry frame of a leaping red fox, kept a real fox, its fur split into translucent orange and yellow facets with cyan shadow shards overlapping into magenta, charcoal ground. No text or logo.',
-        'Tri-fire riot geometry frame of an adult drummer pounding a drum kit on the roof of a moving flatbed truck, lineless shards for every limb and cymbal, lime flashes where facets overlap. No text or logo.',
+        "Mid-kick in a school gym turned into a riot, a middle-aged cafeteria cook in a flaming red apron strikes an impossible heroic pose as the walls explode into red, black and white shapes. No readable text or logo.",
+        "Three rival street vendors clash with enormous exaggerated poses over one parking space, lightning bolts of color crossing the frame. No readable text or logo.",
+        "A single red school uniform hangs on a hook in an empty room, its shadow pulsing like a heartbeat. No readable text or logo.",
       ],
     },
     'SP05-051': {
@@ -232,9 +232,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'static pose', 'mechanical limbs added to people'],
       briefs: [
-        'Neon kinetic alloy sprint frame of an adult cyborg courier with polished alloy forearms sprinting along a rooftop ledge, background smeared into a horizontal tracking pan, cyan and fuchsia RGB-split edges, tapered afterimages trailing her heels. No text or logo.',
-        'Neon kinetic alloy sprint frame of a greyhound racing across a glass skybridge, kept a real dog, chromatic edge split and afterimage smears, a warning-red glint on its nose. No text or logo.',
-        'Neon kinetic alloy sprint frame of a pearl-white racing hover-sled banking hard through a cable-lined tunnel, painted highlight bands on the alloy bodywork, tunnel lights stretched into long streaks. No text or logo.',
+        "Sprinting across a neon rooftop with polished chrome legs, a cyborg courier leaps a gap between towers as a cloud of pink holographic ads bursts around her. No readable text or logo.",
+        "A retired street doctor fits a new chrome hand onto a grumpy old fisherman in a cramped neon-lit clinic. No readable text or logo.",
+        "On a wet street at night, a single discarded chrome finger glows under a flickering yellow sign. No readable text or logo.",
       ],
     },
     'SP05-052': {
@@ -264,9 +264,9 @@ const spec: Spec = {
       ],
       dropAvoid: ['Psycho-Pass-specific weapon/device', 'muddy noisy darks'],
       briefs: [
-        'Surveillance verdict grid frame of an adult cloaked thief lowering herself on a cable into a vault of glass cabinets, cyan-slate duotone, fixed-pitch scanlines, thin corner bracket marks around her, a single red signal on her wrist. No text or logo.',
-        'Surveillance verdict grid frame of a grey heron standing in a concrete drainage canal at night, kept a real bird, seen as a cold scanline feed with interlace doubling on its lifted foot and bracket marks framing it. No text or logo.',
-        'Surveillance verdict grid frame of an adult android interrogator seated across a bare steel table, a small crosshair tick on its face, clipped cyan highlights and crushed slate shadows. No text or logo.',
+        "Lowering herself from a skylight into a museum vault, a cloaked thief freezes as a cold blue grid of scanning light slowly sweeps across her boots. No readable text or logo.",
+        "A detective in a dark trench coat stands in the rain while holographic outlines of every passerby glow blue around him. No readable text or logo.",
+        "In an empty office at midnight, a potted plant is outlined by a pulsing red surveillance grid. No readable text or logo.",
       ],
     },
     'SP05-054': {
@@ -290,9 +290,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'flat digital glow', 'V-fin horned faceplate copy'],
       dropAvoid: ['Gundam-like faceplate'],
       briefs: [
-        'Luminous beam opera cel of an ivory-and-gold flagship mech rising off the launch catapult of a carrier, backlit-cel glow lines tracing its thrusters with halation, airbrushed cobalt starfield, a diagonal light sweep across its chest. No text or logo.',
-        'Luminous beam opera cel of an adult fleet admiral in a long ivory coat facing a vast observation window, the nebula outside an airbrushed cobalt gradient, backlit gold light lines outlining her silhouette. No text or logo.',
-        'Luminous beam opera cel of a solar-sail yacht unfurling gold sails beside a ringed planet, backlit glow burning through the sail seams, optical film grain and dust. No text or logo.',
+        "Rising off a burning coastline, an ivory-and-gold flagship mech spreads glowing beam fins as a lone foot soldier on the beach below shields his eyes. No readable text or logo.",
+        "Two orbital knights share tea on a palace balcony above the clouds while fleets slowly gather in the sky behind them. No readable text or logo.",
+        "Half buried in desert sand at dusk, a cracked golden knight crest still glows faintly as a lone scavenger kneels to brush the dust away. No readable text or logo.",
       ],
     },
     'SP05-055': {
@@ -317,9 +317,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'purple horned giant copy', 'ornamental filigree'],
       dropAvoid: ['Eva-like giant'],
       briefs: [
-        'Gothic tech dread frame of a hunched many-jointed crane walker abandoned in a dry reservoir, a black silhouette pushed to the frame edge against a flooding vermilion field, G-pen crosshatching inside its ribs. No text or logo.',
-        'Gothic tech dread frame of an adult test subject in a pale gown sitting alone on a bare concrete stair, tiny at the bottom of the frame, a sickly green field filling the space above, crosshatched shadow on the steps. No text or logo.',
-        'Gothic tech dread frame of a single white lily in a steel pitcher, kept a real flower, a black silhouette against a flat violet field with a thin bone rim line and nothing else. No text or logo.',
+        "Abandoned in a cathedral-sized hangar, a hunched many-jointed crane walker with gothic armor plates kneels as if praying while dust falls through stained-glass light. No readable text or logo.",
+        "A knight in ornate lacquered armor stands in a rose garden, her enormous gothic mecha quietly waiting behind the hedge. No readable text or logo.",
+        "An empty ornate cockpit glows softly in the dark, a single glove left on the seat. No readable text or logo.",
       ],
     },
     'SP05-057': {
@@ -344,9 +344,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'hard black shadows', 'piloting couple pose copy'],
       dropAvoid: ['Darling-like couple pose'],
       briefs: [
-        'Sleek collapse romance frame of an adult pilot in a white flight suit asleep in the open palm of a fallen, moss-streaked white mech at sunset, diffusion bloom around the sun, hexagonal flare ghosts drifting across, blush-gradient shadows. No text or logo.',
-        'Sleek collapse romance frame of dandelions overgrowing a collapsed overpass, kept real dandelions, their seeds lit into sparkle dust by a low golden backlight, rose and apricot palette with lilac shadows. No text or logo.',
-        'Sleek collapse romance frame of an adult violinist in a dusty-blue coat playing on the cracked rim of a rooftop reservoir, wide diffusion halos and soft lilac shadow. No text or logo.',
+        "Standing on the shoulder of a sleek white mech above a collapsing glass dome, an adult pilot in a white flight suit reaches for her partner’s hand as pink petals swirl through the broken panes. No readable text or logo.",
+        "Two aging pilots sit on a hangar floor sharing a thermos, their sleek mechs kneeling behind them like tired dancers. No readable text or logo.",
+        "Inside a quiet glass dome at sunset, a single pink flower grows through a cracked mech palm. No readable text or logo.",
       ],
     },
     'SP05-058': {
@@ -370,9 +370,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'saturated neon', 'crushed pure blacks', 'photoreal control room'],
       briefs: [
-        'Remote command grief frame of an adult operator sitting on the floor of an empty barracks at dawn with her headset in her lap, shallow depth of field turning the row of empty bunks into blur, thin brown line art, lifted-black blue-gray grade. No text or logo.',
-        'Remote command grief frame of a lone spider-legged scout walker standing in snowfall at a ruined checkpoint, rack-focused on its single lens while the falling snow melts into round bokeh. No text or logo.',
-        "Remote command grief frame of an empty pilot's jacket hung over a folding chair by a window, kept an ordinary jacket, soft focus falloff and distant runway lights blurred into bokeh discs. No text or logo.",
+        "Sitting on the floor of a dim command room, a drone operator in her fifties holds the scuffed controller of a spider-legged machine that did not come back, its empty charging bay glowing beside her. No readable text or logo.",
+        "Three small spider-legged robots argue silently over a crate of oil cans in a rainy alley, legs tapping impatiently. No readable text or logo.",
+        "An empty charging dock blinks green in a quiet hangar, a child’s drawing of a spider robot taped above it. No readable text or logo.",
       ],
     },
     'SP05-059': {
@@ -395,9 +395,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'readable code', 'opaque heavy paint', 'photoreal office'],
       briefs: [
-        'Tactical network cognition frame of an adult agent half dissolved by optical camouflage while crouching on a water tower, her outline a refraction ripple, stacked translucent teal cel planes and offset depth echoes behind her. No text or logo.',
-        'Tactical network cognition frame of koi circling a shallow stone pond, kept real fish, each fish echoed by translucent glass-green layers that brighten to pale aqua where they overlap. No text or logo.',
-        'Tactical network cognition frame of a glass pagoda-shaped relay tower on a foggy ridge, its storeys drawn as stacked translucent teal planes with refraction ripples at every overlap. No text or logo.',
+        "Half dissolved by pixel noise, an adult agent in augmented-reality glasses walks through a sleepy summer town where digital fish swim through the air above the rice fields. No readable text or logo.",
+        "An old man in thick glasses feeds a glitching digital dog on his porch while his real cat stares at it suspiciously. No readable text or logo.",
+        "A street corner flickers as a patch of pixel noise slowly eats the corner of a mailbox. No readable text or logo.",
       ],
     },
     'SP05-060': {
@@ -421,9 +421,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'busy clutter'],
       briefs: [
-        'Orbital rivalry symmetry frame of two slender rival mechs, one violet and one white, circling each other in low orbit with no weapons drawn, polygon-shard specular highlights on their armor, opposing orbital arc strokes, a single gold glint between them. No text or logo.',
-        'Orbital rivalry symmetry frame of an adult strategist in a glacial-white uniform leaning over a glass chessboard, crystal facets flashing in the pieces, violet shadows and a thin arc sweeping behind her. No text or logo.',
-        'Orbital rivalry symmetry frame of a snow leopard poised on an ice ridge, kept a real cat, its frosted fur edges catching polygonal white specular shards over hard violet shadow. No text or logo.',
+        "Facing each other in perfect symmetry above a blue planet, two slender rival mechs, one violet and one crimson, hold glowing blades crossed while their pilots’ reflections meet in the visors. No readable text or logo.",
+        "On a colony balcony above a slowly turning blue planet, two retired rival pilots play a very serious game of chess with mech-shaped pieces. No readable text or logo.",
+        "Drifting silently through orbit, a single white feather-like armor panel tumbles past a space station window, glinting in the harsh unfiltered sunlight. No readable text or logo.",
       ],
     },
     'SP05-221': {
@@ -447,9 +447,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'transforming jet copy'],
       briefs: [
-        'Pop-signal engineered romance cel of a sleek white swept-wing fighter looping around a floating island at dusk, white vapor-trail ribbons curling in wide arcs, airbrushed cyan-pink gradient sky, four-point star glints on the canopy. No text or logo.',
-        'Pop-signal engineered romance cel of an adult radio operator in a cropped flight jacket leaning on the railing of a starship observation deck, gold rim light in her hair, star glints and a soft cyan-pink sky gradient. No text or logo.',
-        'Pop-signal engineered romance cel of two swallows chasing each other over a harbor, kept real birds, their flight paths drawn as looping white ribbons against an airbrushed pink dusk. No text or logo.',
+        "Looping between missile trails above a floating concert stage, a sleek white swept-wing fighter flies so close to the singer that her sequined cape ripples in its wake. No readable text or logo.",
+        "An aging idol practices dance steps alone in a hangar while mechanics pretend not to watch from the fighter wings. No readable text or logo.",
+        "An empty stage in a space colony glows at midnight, one microphone still on its stand. No readable text or logo.",
       ],
     },
     'SP05-223': {
@@ -473,9 +473,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'rain-soaked neon street'],
       briefs: [
-        'Armored chrome noir illustration of an adult chrome-plated android jazz singer leaning into an old ribbon microphone, airbrushed mirror banding with a reflected horizon line across her torso, velvet black background, pinpoint starburst glints. No text or logo.',
-        'Armored chrome noir illustration of an invented chrome hover-sled shaped like a stretched teardrop with no wheels, fins and a single slit headlight, floating in total darkness, its curved hull carrying hard black-and-white reflection bands and a tiny magenta glint at the nose. Not a real car model. No text or logo.',
-        'Armored chrome noir illustration of a black swan gliding on still dark water, kept a real swan, its wet feathers reflecting chrome-like bands and tiny cyan glints. No text or logo.',
+        "Playing a smoky saxophone solo on a rooftop in the rain, a chrome-plated android jazz musician reflects every neon sign of the megacity across her polished shoulders. No readable text or logo.",
+        "Four hardsuit-clad women drink coffee at an all-night neon diner, their chrome helmets lined up on the counter like trophies after a long night. No readable text or logo.",
+        "On a wet megacity street under flickering pink neon, a single chrome hardsuit glove lies in a puddle, still twitching its fingers. No readable text or logo.",
       ],
     },
     'SP05-225': {
@@ -498,9 +498,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'polished final render'],
       briefs: [
-        'Scrap velocity resilience key drawing of a patchwork junk mech skidding on one knee across a salt flat, blue construction pencil under black cleanup line, its swinging arm stretched into a smear frame, amber spark dots where metal meets ground. No text or logo.',
-        'Scrap velocity resilience key drawing of an adult scavenger in a patched poncho swinging a tow chain to haul a wreck, smear frame on the chain arc, scribbled hatching and rust cel fills. No text or logo.',
-        'Scrap velocity resilience key drawing of a mountain goat leaping between boulders, kept a real goat, rough blue pencil arcs, a smear frame on its legs, ochre and charcoal fills. No text or logo.',
+        "Skidding around a scrapyard racetrack on sparking wheeled feet, a patchwork junk mech built from washing machines and car doors overtakes a sleek rival as the crowd of scavengers roars. No readable text or logo.",
+        "A cyborg mechanic in her sixties tightens a bolt on her own knee while fixing a customer’s arm. No readable text or logo.",
+        "In a rusty scrap pile beneath the floating city, a single detailed cyborg hand still clutches a small wildflower someone left there. No readable text or logo.",
       ],
     },
     'SP05-226': {
@@ -523,9 +523,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'full color painting', 'soft airbrush'],
       briefs: [
-        'Cyber-goth mausoleum engraving of an adult archivist in a hooded cyber-cowl carrying a caged data lantern through a crypt of server sarcophagi, dense parallel burin hatching, pointed filigree along the vault ribs, a single crimson spot color in the lantern. No text or logo.',
-        'Cyber-goth mausoleum engraving of an ornate clockwork hearse drawn by two skeletal steel horses through fog, stipple on their curved skulls, crimson only in their eye lenses. No text or logo.',
-        'Cyber-goth mausoleum engraving of a thistle growing through a cracked iron grave grille, kept a real thistle, hatch-density shading on bone paper and crimson on its flower head. No text or logo.',
+        "Walking through a mausoleum of stacked server coffins under a dome city, an archivist in a hooded cyber-goth coat stops as one coffin begins to hum a lullaby. No readable text or logo.",
+        "Every evening in a grey-blue apartment under the dome, an elegant android butler serves hot tea to an empty chair and waits patiently. No readable text or logo.",
+        "Fog drifts through a gothic plaza under the dome, where one streetlamp flickers in a steady rhythm. No readable text or logo.",
       ],
     },
     'SP05-229': {
@@ -549,9 +549,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'smooth digital gradients', 'wet night market'],
       dropAvoid: ['muddy noisy darks'],
       briefs: [
-        'Punitive neon vice riso print of an adult bounty hunter with a cybernetic jaw waiting in a narrow stairwell, toxic green and hot red spot inks off register over coarse screentone, toner grit in the shadows. No text or logo.',
-        'Punitive neon vice riso print of a scarred bull terrier in a spiked collar, kept a real dog, hard crop on its face, red spot ink on its lit edge and green misregistered slivers. No text or logo.',
-        'Punitive neon vice riso print of an armored riot-control hovercraft nosed into a flooded underpass, black toner masses bleeding off the frame, photocopy streaks across the water. No text or logo.',
+        "Hunting through a neon market with a blinking collar around his neck, a bounty hunter with a cybernetic eye grins as the timer on his collar counts down. No readable text or logo.",
+        "Three convict cops share cheap noodles on a neon rooftop in the rain, the explosive collars around their necks blinking in perfect unison. No readable text or logo.",
+        "Above an empty alley in a neon vice district, a cracked sign hisses and sparks in the rain, painting the puddles purple and green. No readable text or logo.",
       ],
     },
     'SP05-230': {
@@ -574,9 +574,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'saturated color', 'busy neon detail'],
       briefs: [
-        'Terminal megastructure silence plate of a lone adult wanderer in a ragged cloak crossing a hairline bridge between two endless concrete walls, ruler-drawn pen lines converging into a gray ink-wash void, a white highlight scratched out on her visor. No text or logo.',
-        'Terminal megastructure silence plate of a dormant elevator car the size of a cathedral hanging on frayed cables in a bottomless shaft, dry-brush drag on its flanks, layered gray wash below. No text or logo.',
-        'Terminal megastructure silence plate of a single fern growing from a crack in a vast ruled wall, kept a real fern, the only fine detail inside a huge field of flat gray wash. No text or logo.',
+        "Crossing a bridge spanning a chasm miles deep inside an endless concrete megastructure, a lone wanderer in a ragged coat looks up at structures that vanish into darkness. No readable text or logo.",
+        "An old maintenance robot sweeps an endless corridor that no one has walked in a thousand years. No readable text or logo.",
+        "A single light glows at the bottom of an immense shaft, too far away to reach. No readable text or logo.",
       ],
     },
     'SP05-231': {
@@ -599,9 +599,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'daylight', 'flat even lighting'],
       briefs: [
-        'Coral resonance liturgy frame of an adult priestess-engineer in a heavy pressure robe kneeling before a pulsing reactor seed, self-luminous teal and coral lines branching across her robe, concentric halo rings radiating outward. No text or logo.',
-        'Coral resonance liturgy frame of a manta-shaped submarine gliding over a deep trench, its hull seams glowing coral, radiating stipple dots trailing from its wingtips into abyssal navy. No text or logo.',
-        'Coral resonance liturgy frame of a stag standing in a midnight forest, kept a real deer, its antlers traced with branching glowing coral lines and faint teal rings around it. No text or logo.',
+        "Kneeling before a giant ceramic mech that hums like a church organ, a priestess-engineer in heavy robes tunes its chest with a silver tuning fork as coral light fills the chamber. No readable text or logo.",
+        "An old violinist plays on a beach at dusk and a coral-colored giant rises from the sea to listen. No readable text or logo.",
+        "Washed up on a coral-pink beach at dusk, a cracked ceramic mask lies in the foam, faintly singing a note that makes the shells tremble. No readable text or logo.",
       ],
     },
     'SP05-232': {
@@ -624,9 +624,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'photoreal military drone', 'desert war photo'],
       briefs: [
-        'Dustfront drone lament frame of an old four-rotor cargo drone limping home low over dunes with a patched crate, stacked translucent haze cels behind it, crisp line only on its rotors, a small amber signal light, 16 mm grain. No text or logo.',
-        'Dustfront drone lament frame of an adult water seller leading two pack mules past a half-buried tank hull, figures softening into sand-colored haze layers, faded olive and dusty blue. No text or logo.',
-        'Dustfront drone lament frame of a wind-driven water pump creaking over an empty well, kept an ordinary pump, three haze layers dissolving the horizon, pale edge light on its vanes. No text or logo.',
+        "Limping across a dusty battlefield at sunset, an old four-rotor cargo drone carries a single canteen toward a trench where nobody is waiting anymore. No readable text or logo.",
+        "A commander in a clean uniform listens to static in a cold room, her tea going cold. No readable text or logo.",
+        "In a meadow that used to be a battlefield, rusted spider-legged drones stand frozen among wildflowers, vines curling up their legs. No readable text or logo.",
       ],
     },
     'SP05-233': {
@@ -650,9 +650,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'soft ambient fill', 'atmospheric haze'],
       briefs: [
-        'Vacuum-fortress survival frame of an adult engineer in a bulky white hardsuit clinging to an asteroid fortress hull, one unfiltered point-source sun, pitch-black zero-fill shadow, a razor terminator line across her visor, a small amber caution light. No text or logo.',
-        'Vacuum-fortress survival frame of a dented oxygen canister tumbling free, kept an ordinary canister, half blazing white and half gone to pure black, micro-scuffs only on the lit side. No text or logo.',
-        'Vacuum-fortress survival frame of a boxy mining mech anchored by cables at the rim of a crater, thick clean outlines, its shadow a flat black shape stretching across the regolith. No text or logo.',
+        "Floating outside a colony-ship hull in a bulky white suit, an engineer patches a crack while a vast organic shape drifts past in the distance, blocking out the stars. No readable text or logo.",
+        "Pilots eat rations in perfect silent rows in a cold mess hall, helmets under their arms. No readable text or logo.",
+        "Floating alone in the black void, a small blinking rescue beacon marks the exact spot where a colony ship used to be. No readable text or logo.",
       ],
     },
     'SP05-234': {
@@ -675,9 +675,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'filled painted surfaces', 'numerals', 'readable map labels'],
       briefs: [
-        'Extinction interface command display of a continent-sized tidal wave rolling toward a coastline seen from orbit, drawn in glowing cyan single-weight wireframe on black with hidden lines removed, fine blue modular grid, small red target ticks on the shore. No text or logo.',
-        "Extinction interface command display of an adult commander's face in profile, rendered as cyan vector contour lines with brightness falling off toward the back of the head, faint persistence trails. No text or logo.",
-        'Extinction interface command display of a humpback whale breaching, kept a real whale, rendered as phosphor wireframe with line density describing its bulk, red ticks on its fins. No text or logo.',
+        "A continent-sized tide of alien swarm creatures rolls over a mountain range on a command table display while an exhausted general in a rumpled uniform quietly moves one small marker. No readable text or logo.",
+        "A lone mech pilot sits on her machine’s shoulder at dawn, watching the horizon for the next swarm. No readable text or logo.",
+        "In a deserted command bunker, an empty commander’s chair faces a wall of dark screens, a cold cup of coffee still on the armrest. No readable text or logo.",
       ],
     },
     'SP05-235': {
@@ -700,9 +700,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'photoreal car render', 'showroom 3D product shot'],
       briefs: [
-        'Pop-cyber simulation gloss frame of an adult avatar dancer in a translucent jelly jacket mid-spin on a floating disk above the clouds, candy-jelly gel highlights, chrome-pink rims, her edges dissolving into ordered pixel dither. No text or logo.',
-        'Pop-cyber simulation gloss frame of a chameleon clinging to a twig, kept a real lizard, its skin shifting in bubble gradients with a white window highlight on its eye. No text or logo.',
-        'Pop-cyber simulation gloss frame of a round jelly-plastic delivery robot rolling through a pastel foam playground, violet cel shadows and glossy bubble shapes floating around it. No text or logo.',
+        "Dancing on a translucent stage above a neon highway, an avatar singer flickers as the city behind her briefly reveals its wireframe skeleton. No readable text or logo.",
+        "Riding a motorcycle through a neon tunnel at night, a biker notices the lights stretching around her like lines of glowing code. No readable text or logo.",
+        "In a silent simulated city at midnight, an empty idol stage glows pink while a single spotlight sways as if someone just left. No readable text or logo.",
       ],
     },
     'SP05-237': {
@@ -725,9 +725,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'thin cel outlines', 'bright even daylight'],
       briefs: [
-        'Monumental ignition sacrifice key art of a battered colossus mech kneeling on a scorched ridge with its broken blade planted before it, broad flat-brush beveled planes, ember-red rim light from a burning sky behind, drifting ember specks. No text or logo.',
-        'Monumental ignition sacrifice key art of an adult knight-pilot in a cracked cloak standing alone at the lip of a crater and looking up, low horizon, near-black silhouette edged in gold. No text or logo.',
-        'Monumental ignition sacrifice key art of a lone warhorse on a hill crest, kept a real horse, backlit by an ember-red sky with its mane catching a gold rim. No text or logo.',
+        "Kneeling in a vast space hangar, a battered colossus mech lowers its head as a tiny pilot in a training suit salutes it before the final launch. No readable text or logo.",
+        "Two retired pilots in faded training suits jog laps at dawn around the enormous feet of a giant robot parked in a field. No readable text or logo.",
+        "Near a round porthole full of stars, a single faded red training headband floats slowly in zero gravity inside an empty cabin. No readable text or logo.",
       ],
     },
     'SP05-239': {
@@ -750,9 +750,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'muted gray palette'],
       briefs: [
-        'Bubblegum cosmic overdrive cel of a round pink starfighter with cat-ear fins doing a barrel roll through a nebula, thick rounded ink lines, rainbow airbrush gradients, holographic foil sparkle and eight-point twinkles. No text or logo.',
-        'Bubblegum cosmic overdrive cel of an adult space-station cook flipping pancakes that drift away in zero gravity, rainbow ribbon curves and twinkles on the pan. No text or logo.',
-        'Bubblegum cosmic overdrive cel of a sea otter floating on its back through indigo space hugging a glowing star shard, kept a real otter, holographic sparkle on its fur. No text or logo.',
+        "Towing a whole planet behind it on a glowing ribbon, a round pink starfighter with cat-ear fins zooms past a startled fleet of grey battleships. No readable text or logo.",
+        "A cheerful pilot in a bubblegum suit waves at a black hole as if it were a neighbor. No readable text or logo.",
+        "Sitting on the glittering rings of a gas giant, a tiny bubblegum-pink mech swings its legs like a bored child waiting for dinner. No readable text or logo.",
       ],
     },
     'SP05-227': {
@@ -775,9 +775,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'clean flat vector color'],
       briefs: [
-        'Rust-wire descent drawing of an adult cable diver rappelling down the face of a rusted dam laced with sagging cables, dense 0.1 mm fine-liner tangles over rust watercolor blooms, cold cyan glints on the wet lines. No text or logo.',
-        'Rust-wire descent drawing of a rusted diving bell hanging on a single chain over a flooded mine, cauliflower watercolor backruns pooling beneath it, hairline pen tangles thickening downward. No text or logo.',
-        'Rust-wire descent drawing of a crow on a dead branch snarled with old wire, kept a real bird, slate ink hatching in its feathers and a single cyan glint in its eye. No text or logo.',
+        "Rappelling down the rusted inner wall of an underground city shaft, a cable diver with a mechanical arm stops to watch a single ray of daylight far above. No readable text or logo.",
+        "An old man with a rusted prosthetic leg sits by a flickering lamp, sharpening a knife slowly. No readable text or logo.",
+        "In an empty underground plaza lit by one failing lamp, rust flakes drift down from the ceiling like slow brown snow. No readable text or logo.",
       ],
     },
     'SP05-053': {
@@ -801,9 +801,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'clean cel outlines', 'plastic toy gloss'],
       briefs: [
-        'Hydraulic attrition mass box-art painting of a twin-piston siege walker hauling a collapsed bridge span out of a river, opaque gouache blocks, sponge chipping on its olive armor, oil-stain streaks down the hydraulics, raking daylight. No text or logo.',
-        'Hydraulic attrition mass box-art painting of an old adult heavy-rig operator in a quilted jacket resting against the giant tire of a mining hauler, dry-brushed highlights and pin-washed seams on the machine behind him. No text or logo.',
-        'Hydraulic attrition mass box-art painting of a rhinoceros at a muddy waterhole, kept a real animal, its plated hide painted with sponge chipping and dark pin-wash in every fold. No text or logo.',
+        "Crossing a smoking battlefield at sunset, a twin-piston siege walker as tall as a church hisses steam from every joint while tiny engineers ride on its back. No readable text or logo.",
+        "A mechanic sits in the shade of a giant hydraulic leg, drinking tea during a lull in battle. No readable text or logo.",
+        "In a golden wheat field years after the war, a rusted hydraulic piston sticks out of the ground, overgrown with red poppies. No readable text or logo.",
       ],
     },
   },

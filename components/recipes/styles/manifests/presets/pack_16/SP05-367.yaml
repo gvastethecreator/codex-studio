@@ -6,7 +6,7 @@ styleAnchors:
   - Sound! Euphonium - Brass Section Tender Precision
 displayName: Sound! Euphonium - Brass Section Tender Precision
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Kyoto Animation Sound! Euphonium television look (2015) with Shoko Ikeda designs: gleaming brass instruments, sunset practice, precise fingering animation and shallow focus.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikeda designs, soft large eyes, detailed hair, school uniforms and accurately held instruments. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Brass gold, sunset orange, school navy and soft teal.
   lighting_and_shadow: Golden sunset through windows, gleaming brass reflections and bokeh.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-367.webp

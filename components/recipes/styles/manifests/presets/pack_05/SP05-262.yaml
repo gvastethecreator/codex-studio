@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-262
 packId: pack_05
-name: Moral Suspicion Realism Style
+name: Monster Madhouse - Moral Suspicion Realism Style
 styleAnchors:
-  - Moral Suspicion Realism Style
-displayName: Moral Suspicion Realism
+  - Monster Madhouse - Moral Suspicion Realism Style
+displayName: Monster Madhouse - Moral Suspicion Realism Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Grounded seinen realism in slightly unsteady hand-inked contours and short observational hatching, like a court sketch artist's anime; edges misregister a hair around the focal face or object.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Subdued slate, tobacco brown and paper-cream neutrals with saturation kept below a third; stronger hue only where the prompt asks for an accent.
-  lighting_and_shadow: Plausible soft-edged daylight or room light with a few precise highlight cuts on eyes, knuckles or metal; no theatrical beams.
-  texture_and_material: Dry pencil grain under thin opaque ink, hatching that follows each plane, and a faint doubled line at the focal edge.
-  camera_and_composition: Keep the requested camera; observational eye-level feel with slightly sharper edges on the focal subject than on its surroundings.
-  atmosphere_and_mood: 'Doubt and scrutiny: calm on the surface, with watchful unease living in the hesitant lines.'
-  rendering_and_quality: Realistic proportions, restrained anime simplification of faces, crisp focal edges and softer peripheral hatching; drawn, never photographic.
-  key_features: unsteady observational ink contours; short plane-following hatches; slate, tobacco and paper palette; slight focal misregistration; realistic proportions
-  creative_brief: "Grounded seinen realism in slightly unsteady hand-inked contours and short observational hatching, like a court sketch artist's anime; edges misregister a hair around the focal face or object. Carry it through unsteady observational ink contours, short plane-following hatches, slate, tobacco and paper palette, slight focal misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Monster television look (2004): faithful Naoki Urasawa realism in animation, muted European cities, hospitals and small towns, quiet suspense and ordinary adult faces.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Urasawa-derived realistic designs, individualized adult faces, heavy coats and restrained anxious expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted German winter tones, grey-green, beige, pale blue and dim hospital white.
+  lighting_and_shadow: Cold diffuse European daylight, dim hospital corridors and warm but uneasy lamplight at night.
+  texture_and_material: Realistic restrained digital cel with painted European architecture and subdued detail.
+  camera_and_composition: Quiet observation shots, long corridors and slow push-ins on faces realizing something.
+  atmosphere_and_mood: Keep the requested mood with creeping moral suspicion.
+  rendering_and_quality: Faithful realist Madhouse television frame with slow-burning suspense.
+  key_features: Monster anime realism; European cities; hospitals; quiet suspense
+  creative_brief: "Madhouse Monster television look (2004): faithful Naoki Urasawa realism in animation, muted European cities, hospitals and small towns, quiet suspense and ordinary adult faces. Carry it through Monster anime realism, European cities, hospitals, quiet suspense. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blond young man with a calm smile in a dark coat
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -46,7 +49,6 @@ avoidRules:
   - school corridor
   - courtroom
   - weapon
-  - blood
   - cinematic IP pose
   - splatter-only horror
   - photoreal grime
@@ -65,10 +67,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-262.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school corridor, courtroom, weapon, blood, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blond young man with a calm smile in a dark coat, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school corridor, courtroom, weapon, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,6 +82,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

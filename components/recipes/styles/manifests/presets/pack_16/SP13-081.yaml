@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Uoto - Plague Year Chronicle
 category: 6. Samurai & Medieval
 domain: dark medieval chronicle anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Uoto manga look as in Orb: On the Movements of the Earth: clean fine lines, fifteenth-century European towns, inquisitors and scholars, and stark moral dread.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Uoto designs, clean simple faces, sharp eyes, period robes and scholarly tools. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink with fine tone and muted parchment tints.
   lighting_and_shadow: Candlelight and grey dawn light with stark clear shadows.
   texture_and_material: Clean fine pen line, tone and parchment texture.
@@ -38,7 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
   - watermark
   - text
   - readable labels
@@ -49,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

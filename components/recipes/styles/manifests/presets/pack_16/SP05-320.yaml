@@ -6,7 +6,7 @@ styleAnchors:
   - Space Adventure Cobra - Charismatic Space Rogue Pulp
 displayName: Space Adventure Cobra - Charismatic Space Rogue Pulp
 category: 1. 70s & 80s Retro Anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Buichi Terasawa designs directed by Osamu Dezaki in Space Adventure Cobra (1982): sexy pulp space opera, heavy shading, glossy bodies, psychedelic space backdrops and Dezaki freeze frames.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Terasawa designs, muscular heroic bodies, glossy shading, smirks and pulp costumes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Neon space purple, gold, red and glossy chrome.
   lighting_and_shadow: Harsh highlights, psychedelic backlight and glowing space nebulae.
   texture_and_material: Hand-painted cels with glossy highlights and Dezaki pastel freeze frames.

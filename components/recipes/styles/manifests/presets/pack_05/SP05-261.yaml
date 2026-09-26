@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-261
 packId: pack_05
-name: Eclipse Scar Weight Style
+name: Berserk 1997 OLM - Eclipse Scar Weight Style
 styleAnchors:
-  - Eclipse Scar Weight Style
-displayName: Eclipse Scar Weight
+  - Berserk 1997 OLM - Eclipse Scar Weight Style
+displayName: Berserk 1997 OLM - Eclipse Scar Weight Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: 'Brush-ink anime illustration of wide crescent value sweeps: each form sits half-swallowed in a curved black mass, and a thin scar of bare midtone runs along its lit edge.'
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Ink-black masses, bone-gray planes and one muted violet accent; the prompt colors appear mainly inside the narrow scar of exposed midtone.
-  lighting_and_shadow: A narrow crescent rim light against broad soft occlusion at roughly 1:8, always from the prompt's own light direction.
-  texture_and_material: Smooth pooled ink washes with dry-brush breaks where a crescent sweep turns, and paper grain showing through the midtone scar.
-  camera_and_composition: Keep the requested framing; curved value arcs steer the eye around the subject like a partial eclipse, without adding a moon or sun.
-  atmosphere_and_mood: Heavy, patient and withheld; the weight comes from how much of each form stays hidden.
-  rendering_and_quality: Large confident brush sweeps, one crisp scar line per form, and deep values kept legible as violet-black rather than dead flat black.
-  key_features: crescent black value sweeps; thin midtone scar on lit edges; bone gray with muted violet; 1:8 rim-to-occlusion; dry-brush breaks
-  creative_brief: "Brush-ink anime illustration of wide crescent value sweeps: each form sits half-swallowed in a curved black mass, and a thin scar of bare midtone runs along its lit edge. Carry it through crescent black value sweeps, thin midtone scar on lit edges, bone gray with muted violet, 1:8 rim-to-occlusion, dry-brush breaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'OLM Berserk television look (1997): muted medieval war palettes, painted freeze-frame stills in dramatic moments, stoic mercenaries, grim castles and a heavy tragic fate.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with nineties realistic designs, heavy medieval armor and cloaks, stoic scarred faces and restrained gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted mud brown, iron grey, dried blood red and cold dusk blue across the whole frame.
+  lighting_and_shadow: Overcast battlefield light, torch-lit castle halls and an ominous eclipse glow at climaxes.
+  texture_and_material: Late-nineties cel animation with limited movement and painted freeze-frame stills at key moments.
+  camera_and_composition: Somber medieval compositions with painted still frames used for the most dramatic beats.
+  atmosphere_and_mood: Keep the requested mood with heavy tragic fatalism.
+  rendering_and_quality: Somber late-1990s television frame with painted dramatic freeze frames.
+  key_features: Berserk 1997 muted palette; painted freeze frames; grim medieval war; eclipse omen
+  creative_brief: "OLM Berserk television look (1997): muted medieval war palettes, painted freeze-frame stills in dramatic moments, stoic mercenaries, grim castles and a heavy tragic fate. Carry it through Berserk 1997 muted palette, painted freeze frames, grim medieval war, eclipse omen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a black-armored swordsman with an oversized slab greatsword
+  - a white-haired knight in a winged helmet
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +63,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-261.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a black-armored swordsman with an oversized slab greatsword, a white-haired knight in a winged helmet, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +78,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

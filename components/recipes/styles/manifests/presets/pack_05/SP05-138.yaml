@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-138
 packId: pack_05
-name: Sumi-Black Neon Edge Stillness
+name: Takeru Hokazono - Sumi-Black Neon Edge Stillness
 styleAnchors:
-  - Sumi-Black Neon Edge Stillness
+  - Takeru Hokazono - Sumi-Black Neon Edge Stillness
   - Kagurabachi - Sword Oath Under Neon Rain
-displayName: Sumi-Black Neon Edge Stillness
+displayName: Takeru Hokazono - Sumi-Black Neon Edge Stillness
 category: 1. Modern Shonen & Action
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
+  - reference-title
 visualDna:
-  aesthetic: 'Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness.'
-  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
-  color_and_tone: Deep indigo, ink black and bone white, with one neon magenta or cyan edge line.
-  lighting_and_shadow: Low hard light from one side, broad matte shadow masses, the neon edge on a single contour only.
-  texture_and_material: Dry brush grain at contour tails, matte dark fields and sparse speck grain.
-  camera_and_composition: Keep the requested content; organize it in wide horizontal bands like a cinema frame, with deliberate empty space and one strong diagonal.
-  atmosphere_and_mood: Quiet grief hardening into resolve, long silences held before a single decisive edge.
-  rendering_and_quality: Precise dark contour, minimal detail, and exactly one neon edge in the frame.
-  key_features: severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks
-  creative_brief: "Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness. Carry it through severe sumi-brush black, single neon edge line, wide horizontal banding, long still hold, matte indigo darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Takeru Hokazono Kagurabachi manga look: severe stillness broken by sudden blade flashes, heavy black fills, sharp clean lines and cool contemporary Tokyo with neon glints.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hokazono designs, grim quiet faces, dark haori over modern clothes and sharp ready stances. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Heavy sumi black, cold grey and thin neon teal and red edge glints.
+  lighting_and_shadow: Mostly dark frames with razor-thin neon rim light and blade flashes.
+  texture_and_material: Clean sharp lines, heavy black fills and dry-brush accents.
+  camera_and_composition: Long silent panels, then sudden cuts to single strikes.
+  atmosphere_and_mood: Keep the requested mood with cold vengeful stillness.
+  rendering_and_quality: Severe modern action manga illustration with heavy black design.
+  key_features: Hokazono stillness; heavy blacks; neon edges; sudden strikes
+  creative_brief: "Takeru Hokazono Kagurabachi manga look: severe stillness broken by sudden blade flashes, heavy black fills, sharp clean lines and cool contemporary Tokyo with neon glints. Carry it through Hokazono stillness, heavy blacks, neon edges, sudden strikes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-138.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - modern-shonen-and-action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

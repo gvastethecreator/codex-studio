@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP13-023
 packId: pack_05
-name: Neon Vector Discharge Style
+name: Yoshinori Kanada - Neon Vector Discharge Style
 styleAnchors:
-  - Neon Vector Discharge Style
-displayName: Neon Vector Discharge
+  - Yoshinori Kanada - Neon Vector Discharge Style
+displayName: Yoshinori Kanada - Neon Vector Discharge Style
 category: 5. Action Motion Setpieces
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ tags:
   - anime-battle-and-worlds
   - anime
   - action
+  - reference-title
 visualDna:
-  aesthetic: Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts.
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the vector path-tracing device that draws the action as clean geometric arcs, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the path arcs take a restrained violet-blue that sits on existing colors without recoloring them.
-  lighting_and_shadow: Precise directional light with narrow edge highlights on the moving parts; the arcs themselves do not glow.
-  texture_and_material: Clean flat cel finish; arcs are one to two pixels thick, evenly spaced, and fade out after one full movement cycle.
-  camera_and_composition: A controlled three-quarter side view that shows the whole path, with arcs never crossing the face or focal hands.
-  atmosphere_and_mood: Technical, analytical momentum; the movement feels measured and exact rather than violent.
-  rendering_and_quality: Sharp technical contours and crisp vector arcs kept secondary to the subject; no sci-fi interface graphics.
-  key_features: movement path traced as vector arcs; thin evenly spaced curves; violet-blue path color; three-quarter side view; clean flat cel finish
-  creative_brief: "Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts. Carry it through movement path traced as vector arcs, thin evenly spaced curves, violet-blue path color, three-quarter side view, clean flat cel finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yoshinori Kanada sakuga style: angular geometric light effects, sharp triangular flames and sparks, stylized Kanada poses with bent limbs and bold graphic explosions in flat color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures in angular dynamic Kanada poses, sharp bent limbs and flat stylized silhouettes caught mid-action. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat neon yellow, magenta and cyan effects against dark flat backgrounds.
+  lighting_and_shadow: Graphic flat light where glowing angular shapes of energy replace realistic light sources.
+  texture_and_material: Flat color effect shapes, sharp triangular sparks and crisp geometric outlines.
+  camera_and_composition: Stylized dramatic angles with angular effect shapes framing the action.
+  atmosphere_and_mood: Keep the requested mood with sharp electric dynamism.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  key_features: Kanada angular effects; triangular sparks; stylized poses; flat neon
+  creative_brief: "Yoshinori Kanada sakuga style: angular geometric light effects, sharp triangular flames and sparks, stylized Kanada poses with bent limbs and bold graphic explosions in flat color. Carry it through Kanada angular effects, triangular sparks, stylized poses, flat neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear
@@ -55,10 +56,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-023.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -68,6 +73,7 @@ taxonomy:
     - anime-battle-and-worlds
     - anime
     - action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

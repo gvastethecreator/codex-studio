@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-256
 packId: pack_05
-name: Vermilion Indigo Tapered-Ink Cel
+name: Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel
 styleAnchors:
-  - Vermilion Indigo Tapered-Ink Cel
+  - Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel
   - Inuyasha - Shrine-Well Sengoku Pursuit
-displayName: Vermilion Indigo Tapered-Ink Cel
+displayName: Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Flowing tapered marks describe existing movement rather than a pursuit; add no shrine, well, sword or talisman.
-  color_and_tone: Vermilion, cream, muted indigo and charcoal in nostalgic, slightly faded contrast.
-  lighting_and_shadow: Soft dusk-like shadow and restrained warm edge light, without requiring night or a new source.
-  texture_and_material: Faded cel color, tapering brush lines that swell and thin, and subtle grain.
-  camera_and_composition: Keep the requested view; gentle horizontal rhythm with long flowing contours.
-  atmosphere_and_mood: Nostalgic and mythic, a story told at dusk.
-  rendering_and_quality: A focal silhouette sharp enough to read through the soft color fade and low-contrast detail.
-  key_features: tapered brush-ink contours; vermilion accents; faded indigo dusk; sun-faded cel color; horizontal flow
-  creative_brief: "Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded. Carry it through tapered brush-ink contours, vermilion accents, faded indigo dusk, sun-faded cel color, horizontal flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Rumiko Takahashi Inuyasha look: Sengoku-era feudal Japan, tapered ink lines, vermilion and indigo palettes, demons, shrines and time-slip adventure.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, round faces, big simple eyes, kimono, armor and demon features. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vermilion robes, indigo night, forest green and earthy brown.
+  lighting_and_shadow: Natural feudal forest light through trees and eerie demonic glows.
+  texture_and_material: Tapered brush-like ink lines and clean flat cel color.
+  camera_and_composition: Feudal forest adventure framing and quiet shrine compositions.
+  atmosphere_and_mood: Keep the requested mood with feudal adventurous romance.
+  rendering_and_quality: Classic feudal fantasy television frame with tapered ink lines.
+  key_features: Rumiko Takahashi feudal; vermilion and indigo; demons; shrines
+  creative_brief: "Rumiko Takahashi Inuyasha look: Sengoku-era feudal Japan, tapered ink lines, vermilion and indigo palettes, demons, shrines and time-slip adventure. Carry it through Rumiko Takahashi feudal, vermilion and indigo, demons, shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a silver-haired dog-eared half demon in red robes
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -69,10 +72,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-256.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, red-robed character copy, shrine hallway, readable talisman, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a silver-haired dog-eared half demon in red robes, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, red-robed character copy, shrine hallway, readable talisman, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -81,6 +87,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

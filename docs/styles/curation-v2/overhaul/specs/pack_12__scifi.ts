@@ -136,7 +136,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean space capture with no HUD text, kept consistent across the whole image.",
       key_features: 'asteroids; laser streaks; chase camera; engine trails',
     }, [], [
-      'Banking between tumbling asteroids from a chase camera, an original fighter pilot dodges laser fire as a giant space worm bursts out of the rock ahead. No readable text or logo.',
+      "Banking between tumbling asteroids from a chase camera, an original salvage pilot in a boxy yellow tug dodges bursts of amber flak as a derelict mining rig breaks apart ahead of her. No readable text or logo.",
       'In a daring asteroid chase, the hero pilot skillfully weaves through the rocks while the enemy pilot is clearly stuck on one. No readable text or logo.',
       'In a quiet asteroid field, one asteroid is perfectly round and smooth, and the fighter\'s lights reflect in it like a mirror. No readable text or logo.',
     ]),
@@ -226,7 +226,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean puzzle capture with no readable text, kept consistent across the whole image.",
       key_features: 'gravity zones; wall-walking; disorienting angle; clean panels',
     }, [], [
-      'Walking along the ceiling of a gravity-flipped corridor, an original test subject reaches for a glowing cube floating in the middle while a turret on the wall tracks her upside down. No readable text or logo.',
+      "Walking along the ceiling of a gravity-flipped botanical research corridor, an original gardener in green overalls waters a potted fern that hangs downward toward her while the floor below fills with floating soil. No readable text or logo.",
       "Standing on the wall of a sideways corridor, a scientist casually drinks coffee that pours sideways into the cup. No readable text or logo.",
       'In a corridor where gravity changes direction, a door on the ceiling is slowly opening downward. No readable text or logo.',
     ]),

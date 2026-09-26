@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-064
 packId: pack_05
-name: Wind-Scoured Redemption Style
+name: Vinland Saga WIT - Wind-Scoured Redemption Style
 styleAnchors:
-  - Wind-Scoured Redemption Style
-displayName: Wind-Scoured Redemption
+  - Vinland Saga WIT - Wind-Scoured Redemption Style
+displayName: Vinland Saga WIT - Wind-Scoured Redemption Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Weathered travel-epic anime ink in long dry directional brushstrokes that skim the silhouettes and taper into sparse mineral abrasion, like wind-scored rock.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Muted earth, faded blue-gray and chalk highlights; no saturated color survives the weathering.
-  lighting_and_shadow: Broad open midtones under overcast plains light, with a few thin edge highlights.
-  texture_and_material: Dry-brush drag, soft pigment loss and abraded stroke tails; smooth or delicate materials stay intact.
-  camera_and_composition: Keep the requested camera; stroke direction follows the forms already there rather than adding wind.
-  atmosphere_and_mood: Worn endurance with a faint hope, redemption as a quiet reading.
-  rendering_and_quality: A steady rhythm of long strokes and a readable silhouette; no ink splatter.
-  key_features: long dry directional strokes; tapering abrasion tails; earth and faded blue-gray; chalk highlights; broad open midtones
-  creative_brief: "Weathered travel-epic anime ink in long dry directional brushstrokes that skim the silhouettes and taper into sparse mineral abrasion, like wind-scored rock. Carry it through long dry directional strokes, tapering abrasion tails, earth and faded blue-gray, chalk highlights, broad open midtones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'WIT Studio Vinland Saga anime look (2019): Viking-age realism, wind-scoured fjords and farms, detailed period clothing and a redemptive arc from war to peace.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic Viking-age designs, weathered faces, beards, tunics and practical farm clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grey sea, wind-scoured green, earth brown and pale sky.
+  lighting_and_shadow: Cold northern daylight over fjords and warm hearth light inside longhouses.
+  texture_and_material: Clean detailed digital cel with painted northern landscapes.
+  camera_and_composition: Sweeping fjord wide shots and intimate everyday farm scenes.
+  atmosphere_and_mood: Keep the requested mood with quiet wind-scoured redemption.
+  rendering_and_quality: Rich WIT Studio television frame with detailed northern realism.
+  key_features: Vinland Saga anime; fjords and farms; Viking realism; redemption
+  creative_brief: "WIT Studio Vinland Saga anime look (2019): Viking-age realism, wind-scoured fjords and farms, detailed period clothing and a redemptive arc from war to peace. Carry it through Vinland Saga anime, fjords and farms, Viking realism, redemption. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blond young warrior with twin daggers
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -45,10 +48,7 @@ avoidRules:
   - named samurai likeness
   - duel pose
   - katana near-plane
-  - blood
-  - revenge-kill scene
   - historical flag
-  - battlefield gore
   - splatter-only horror
   - photoreal grime
   - cheap jump scare
@@ -66,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-064.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blond young warrior with twin daggers, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named samurai likeness, duel pose, katana near-plane, historical flag, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -78,6 +81,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

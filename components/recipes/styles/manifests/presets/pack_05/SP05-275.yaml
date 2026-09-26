@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-275
 packId: pack_05
-name: Civic Rumor Breakdown Style
+name: Paranoia Agent Madhouse - Civic Rumor Breakdown Style
 styleAnchors:
-  - Civic Rumor Breakdown Style
-displayName: Civic Rumor Breakdown
+  - Paranoia Agent Madhouse - Civic Rumor Breakdown Style
+displayName: Paranoia Agent Madhouse - Civic Rumor Breakdown Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: 'Manga screentone illustration where contours print twice, slightly offset, and halftone density shifts across a single form, so the image looks like a rumor retold: the same thing, not quite matching.'
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Charcoal, pale gray and white screentone with one small red accent.
-  lighting_and_shadow: Soft overlaps in the offset zones and a few crisp edges under the prompt's existing light.
-  texture_and_material: Fine screentone dots alternating with clean unprinted gaps; no text, signs or captions.
-  camera_and_composition: Keep the requested framing and count; density shifts move emphasis between elements without adding people.
-  atmosphere_and_mood: Uneasy uncertainty, a whisper living inside the halftone.
-  rendering_and_quality: Print-like offset keylines, clean dot gradients and a single red accent.
-  key_features: doubled offset contours; shifting halftone density; charcoal and pale gray screentone; one red accent; unprinted gaps
-  creative_brief: "Manga screentone illustration where contours print twice, slightly offset, and halftone density shifts across a single form, so the image looks like a rumor retold: the same thing, not quite matching. Carry it through doubled offset contours, shifting halftone density, charcoal and pale gray screentone, one red accent, unprinted gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Satoshi Kon Paranoia Agent look (2004): grounded realistic Tokyo citizens, collective paranoia spreading through rumors, surreal intrusions and Madhouse realism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, ordinary Tokyo citizens of all ages, plain clothes and anxious faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted Tokyo greys, warm apartment tones and sudden surreal color intrusions.
+  lighting_and_shadow: Ordinary Tokyo city light interrupted by surreal glowing intrusions.
+  texture_and_material: Realistic Madhouse cel with detailed painted urban backgrounds.
+  camera_and_composition: Ensemble city compositions of many citizens and surreal scene transitions.
+  atmosphere_and_mood: Keep the requested mood with spreading civic paranoia.
+  rendering_and_quality: Grounded yet surreal Madhouse television frame with Kon realism.
+  key_features: Paranoia Agent realism; rumors; surreal intrusions; Tokyo citizens
+  creative_brief: "Satoshi Kon Paranoia Agent look (2004): grounded realistic Tokyo citizens, collective paranoia spreading through rumors, surreal intrusions and Madhouse realism. Carry it through Paranoia Agent realism, rumors, surreal intrusions, Tokyo citizens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a boy on golden inline skates with a bent bat
+  - a pink plush dog
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +63,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-275.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a boy on golden inline skates with a bent bat, a pink plush dog, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +78,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

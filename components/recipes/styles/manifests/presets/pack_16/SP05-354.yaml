@@ -6,7 +6,7 @@ styleAnchors:
   - MF Ghost - Telemetry Apex Precision
 displayName: MF Ghost - Telemetry Apex Precision
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Felix Film MF Ghost television look (2023): near-future public-road supercar racing, glossy CG cars, drone telemetry overlays and bright coastal tracks.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno-style simple faces, racing suits, helmets and sunglasses. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Coastal blue, supercar red, telemetry cyan and asphalt grey.
   lighting_and_shadow: Bright coastal daylight, glossy car reflections and HUD glow.
   texture_and_material: Glossy CG cars over painted roads with telemetry-style graphic overlays.
@@ -63,7 +63,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-354.webp

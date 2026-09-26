@@ -6,7 +6,7 @@ styleAnchors:
   - Takeshi Konomi - Graphic Impact Duel
 displayName: Takeshi Konomi - Graphic Impact Duel
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Takeshi Konomi Prince of Tennis look: flashy special-move sports, cool bishonen players, impossible ball effects, graphic flat backgrounds and dramatic impact panels.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Konomi designs, slim cool players, sharp eyes, caps, headbands and team jerseys. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright yellow ball, team blue and red, flat halftone backgrounds.
   lighting_and_shadow: Graphic impact light, speed flashes and stark sun on courts.
   texture_and_material: Clean manga line, halftone backgrounds, speed lines and impact effects.
@@ -63,7 +63,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-356.webp

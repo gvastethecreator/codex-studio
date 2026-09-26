@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-021
 packId: pack_05
-name: Action Burst Alley Rush
+name: Yutaka Nakamura - Action Burst Alley Rush
 category: 5. Action Motion Setpieces
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,17 +12,18 @@ tags:
   - anime-battle-and-worlds
   - anime
   - action
+  - reference-title
 visualDna:
-  aesthetic: 'Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the forward-rush staging, foreshortening and converging depth lines, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; cooler dark-blue values in the background push the warmer, lighter subject forward.
-  lighting_and_shadow: Hard cel edge highlights on the leading side of the subject, aligned with its travel; no flashes or sparks.
-  texture_and_material: Crisp cel contours with three to six tapered motion streaks attached only to trailing edges.
-  camera_and_composition: A 24 mm-equivalent low front three-quarter view, the leading hand or foot almost touching the lens, the vanishing point tucked behind the subject's shoulder.
-  atmosphere_and_mood: Forward pressure and urgency that live in the framing, not in added danger.
-  rendering_and_quality: Sharp 2D cel rendering with stable anatomy through the foreshortening and clean foreground-to-background separation.
-  key_features: lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks
-  creative_brief: "Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage. Carry it through lunge toward the lens, leading limb foreshortened to double size, converging diagonals, compressed depth, tapered trailing streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yutaka Nakamura sakuga as in his BONES action scenes: bodies launched forward with extreme perspective, square chunky debris flying in blocky shapes, dust clouds and sharp shadow flashes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with compact muscular action poses, clothes snapping with speed and limbs thrust toward the viewer in extreme perspective. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neutral street palette with sharp white impact flashes and warm dust tones across the whole frame.
+  lighting_and_shadow: Flat daylight broken by sudden hard shadow flashes that snap across figures at the moment of impact.
+  texture_and_material: Hand-drawn key animation on clean digital cel, with visible drawing energy in lines, effects and debris.
+  camera_and_composition: Forward rush straight at the lens, with blocky debris and dust bursting outward around the figure.
+  atmosphere_and_mood: Keep the requested mood with explosive forward momentum.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  key_features: Yutaka Nakamura blocky debris; extreme perspective rush; shadow flashes; dust bursts
+  creative_brief: "Yutaka Nakamura sakuga as in his BONES action scenes: bodies launched forward with extreme perspective, square chunky debris flying in blocky shapes, dust clouds and sharp shadow flashes. Carry it through Yutaka Nakamura blocky debris, extreme perspective rush, shadow flashes, dust bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - added opponent
   - added sports gear
@@ -51,10 +52,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-021.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -64,8 +69,12 @@ taxonomy:
     - anime-battle-and-worlds
     - anime
     - action
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yutaka Nakamura - Action Burst Alley Rush
+styleAnchors:
+  - Yutaka Nakamura - Action Burst Alley Rush

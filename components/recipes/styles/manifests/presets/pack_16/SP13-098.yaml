@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Another - Fog Town Siren Horror
 category: 7. Horror
 domain: fog town horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'P.A. Works Another television look (2012) with Noizi Ito designs: gloomy provincial town, ball-jointed dolls, eyepatches, damp greys and sudden deadly accidents.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, pale faces, dark hair, school uniforms and restrained expressions. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Fog grey, dull green, rust and doll-skin pale.
   lighting_and_shadow: Diffuse grey fog light outside and dim lamp-lit interiors inside.
   texture_and_material: Muted digital cel, fog layers and rust textures.
@@ -40,8 +40,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -51,11 +49,11 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a dark-haired girl with a white eyepatch, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

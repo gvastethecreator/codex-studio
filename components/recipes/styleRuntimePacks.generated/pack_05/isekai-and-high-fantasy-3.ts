@@ -5,925 +5,867 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-095',
-    name: 'Faded-Line Pale Wash Cel',
-    displayName: 'Faded-Line Pale Wash Cel',
-    styleAnchors: ['Faded-Line Pale Wash Cel', 'Frieren – Afterquest Melancholy Fantasy'],
+    name: 'Tsukasa Abe - Faded-Line Pale Wash Cel',
+    displayName: 'Tsukasa Abe - Faded-Line Pale Wash Cel',
+    styleAnchors: [
+      'Tsukasa Abe - Faded-Line Pale Wash Cel',
+      'Frieren – Afterquest Melancholy Fantasy',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, saturated neon color, heavy black outlines, dramatic rim light, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white-haired elf with twin tails in a white and gold robe, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, saturated neon color, heavy black outlines, dramatic rim light, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies.',
+        'Tsukasa Abe Frieren manga art: delicate thin pen lines, gentle understated faces, quiet pastoral fantasy landscapes and a wistful sense of time passing long after the adventure ended.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get slender proportions, small calm faces and few internal lines; secondary contours dissolve into the wash while the focal silhouette stays precise.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Abe designs, calm understated faces, long pale hair, simple traveling cloaks and small restrained gestures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Desaturated sage, pale amber and blue-grey at low contrast; whites never pure, blacks lifted to soft slate, one warm accent at most.',
+        'Pale watercolor washes in faded mint, ivory, soft sky blue and dusty gold on white paper.',
       lighting_and_shadow:
-        'High soft daylight from a broad sky, a single cel shadow tier only slightly darker than the base, no rim light and no bloom.',
+        'Soft pale daylight rendered with minimal tone, leaving lots of white paper to breathe.',
       texture_and_material:
-        'Transparent watercolor granulation in skies and ground, tiny speckled light flecks drifting in the air, clean flat cel fills on figures.',
+        'Thin delicate pen lines, light screentone and faded watercolor wash color pages.',
       camera_and_composition:
-        'Keep the requested view; favor small focal figures against large open space, a low horizon and detail thinning toward the frame edges.',
-      atmosphere_and_mood:
-        'Wistful, unhurried and still, as if time passes slowly around the subject.',
+        'Quiet wide landscapes with small travelers, and gentle close-ups on remembering faces.',
+      atmosphere_and_mood: 'Keep the requested mood with wistful quiet remembrance.',
       rendering_and_quality:
-        'Lines break and fade selectively, gradients stay smooth and forms stay anatomically stable; restraint instead of effects.',
-      key_features:
-        'fading warm-grey lineart; pale watercolor background boards; lifted slate blacks; single soft shadow tier; drifting light flecks',
+        'Delicate understated fantasy manga illustration with faded pale washes and calm pacing.',
+      key_features: 'Tsukasa Abe thin line; pale washes; wistful travel; understated faces',
       creative_brief:
-        "Modern TV anime cel over pale watercolor background boards: thin warm-grey lineart that fades to nothing at outer edges, two-tone cel shading and wide airy painted skies. Carry it through fading warm-grey lineart, pale watercolor background boards, lifted slate blacks, single soft shadow tier, drifting light flecks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Tsukasa Abe Frieren manga art: delicate thin pen lines, gentle understated faces, quiet pastoral fantasy landscapes and a wistful sense of time passing long after the adventure ended. Carry it through Tsukasa Abe thin line, pale washes, wistful travel, understated faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-099',
-    name: 'Worn Bronze Concentric-Line Cel',
-    displayName: 'Worn Bronze Concentric-Line Cel',
-    styleAnchors: ['Worn Bronze Concentric-Line Cel', 'Shield Hero – Defensive Underdog Fantasy'],
+    name: 'Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel',
+    displayName: 'Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel',
+    styleAnchors: [
+      'Shield Hero Kinema Citrus - Worn Bronze Concentric-Line Cel',
+      'Shield Hero – Defensive Underdog Fantasy',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, hero portrait pose, shiny new armor, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a green gem-set small shield on the forearm, a raccoon-eared girl with a sword, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, hero portrait pose, shiny new armor, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings.',
+        'Kinema Citrus Rising of the Shield Hero look (2019): underdog fantasy with worn bronze and leather gear, heavy emotional close-ups, medieval villages and wave-of-monsters battles.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Silhouettes are weighted forward and low with squared shoulders; do not add a shield, barrier, collar or weapon the prompt did not ask for.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern light-novel designs, battered leather armor, bronze shields, tired eyes and grim determination. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Aged bronze, stone grey and earth brown with one small amber accent; a mid-dark key with compressed, never clipped highlights.',
+        'Worn bronze, leather brown, forest green and dusk red with muted overcast skies.',
       lighting_and_shadow:
-        'Hard low side light catches raised edges in thin bronze rims, while a deep three-tone cel shadow holds the large forms together.',
+        'Overcast fantasy daylight, campfire glow and ominous red monster-wave skies.',
       texture_and_material:
-        'Scuffed dry-brush over the cel fills, chipped-edge highlights and faint scratches read as rendering wear rather than a new material.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; a slightly low angle and heavy diagonals push the weight of the subject toward the viewer.',
-      atmosphere_and_mood: 'Steadfast and hard-won, a quiet refusal to fall.',
-      rendering_and_quality:
-        'Firm outer contours, textured midtones and exactly one controlled specular highlight on each focal form.',
-      key_features:
-        'nested concentric contour echoes; heavy dark-brown lineart; bronze edge rims; three-tone cel shadow; scuffed dry-brush wear',
+        'Defensive stances with concentric impact rings, village wides and emotional close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with stubborn underdog resolve.',
+      rendering_and_quality: 'Solid fantasy television frame with worn gear and defensive heroics.',
+      key_features: 'Worn bronze shields; underdog defense; leather gear; monster waves',
       creative_brief:
-        "Gritty TV-anime cel with heavy dark-brown lineart and nested contour echoes: two or three parallel strokes trace each major outline like growth rings. Carry it through nested concentric contour echoes, heavy dark-brown lineart, bronze edge rims, three-tone cel shadow, scuffed dry-brush wear. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kinema Citrus Rising of the Shield Hero look (2019): underdog fantasy with worn bronze and leather gear, heavy emotional close-ups, medieval villages and wave-of-monsters battles. Carry it through Worn bronze shields, underdog defense, leather gear, monster waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-248',
-    name: 'Naturalist Sketchbook Anime Cel',
-    displayName: 'Naturalist Sketchbook Anime Cel',
+    name: 'Ryoko Kui - Naturalist Sketchbook Anime Cel',
+    displayName: 'Ryoko Kui - Naturalist Sketchbook Anime Cel',
     styleAnchors: [
-      'Naturalist Sketchbook Anime Cel',
+      'Ryoko Kui - Naturalist Sketchbook Anime Cel',
       'Delicious in Dungeon - Stove-Top Monster Cuisine',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cooking scene, food as default subject, annotations or labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bearded dwarf cook with a cauldron, a short-haired elf mage with a staff, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cooking scene, food as default subject, annotations or labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity.",
+        'Ryoko Kui Delicious in Dungeon manga look: meticulous naturalist monster anatomy, cooking diagrams, cozy dungeon camps and detailed yet warm fantasy observation.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Functional structure is spelled out, how a hinge, shell or knot works, with selective detail on the focal object; never add a kitchen, meal or creature carcass.',
-      color_and_tone:
-        'Earthy moss green, ochre, rust and warm paper neutrals in a mid key, lightly saturated, with small notes of lichen blue.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kui designs, expressive distinct faces, practical adventurer gear, and monsters drawn with field-guide anatomical care. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm campfire amber, dungeon stone grey, herb green and cooked-food browns.',
       lighting_and_shadow:
-        'Even overcast light with a warm reflected bounce under forms and a single cool shadow tone; no dramatic sources.',
+        'Cozy campfire glow in dark dungeon halls and soft lantern light on stew pots.',
       texture_and_material:
-        'Pen hatching on shadowed planes, stippled organic surfaces and visible paper tooth under flat watercolor-like fills.',
+        'Clean detailed pen line, field-guide cross sections and warm muted color.',
       camera_and_composition:
-        'Keep the requested view; the focal object is centered like a specimen plate with a generous margin and clear overlaps.',
-      atmosphere_and_mood:
-        'Curious, grounded and companionable, the pleasure of understanding how things work.',
+        'Cooking scenes around pots, anatomical diagram inserts and dungeon-camp wides.',
+      atmosphere_and_mood: 'Keep the requested mood with curious cozy adventure.',
       rendering_and_quality:
-        'Crisp pen detail on the focal form and simpler blocks beyond it; every mark explains structure rather than decorating.',
-      key_features:
-        'fine brown pen lineart; specimen-plate clarity; earthy moss and ochre fills; stippled organic texture; warm reflected bounce',
+        'Warm meticulous fantasy manga illustration with naturalist monster detail.',
+      key_features: 'Ryoko Kui naturalism; monster anatomy; dungeon cooking; cozy camps',
       creative_brief:
-        "Manga-derived cel painting with a naturalist's eye: fine brown pen lineart describing joints, scales, seams and grain over flat earthy fills with cutaway-diagram clarity. Carry it through fine brown pen lineart, specimen-plate clarity, earthy moss and ochre fills, stippled organic texture, warm reflected bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Ryoko Kui Delicious in Dungeon manga look: meticulous naturalist monster anatomy, cooking diagrams, cozy dungeon camps and detailed yet warm fantasy observation. Carry it through Ryoko Kui naturalism, monster anatomy, dungeon cooking, cozy camps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-252',
-    name: 'Amber Dusk Rounded Cel',
-    displayName: 'Amber Dusk Rounded Cel',
+    name: 'Campfire Cooking in Another World - Amber Dusk Rounded Cel',
+    displayName: 'Campfire Cooking in Another World - Amber Dusk Rounded Cel',
     styleAnchors: [
-      'Amber Dusk Rounded Cel',
+      'Campfire Cooking in Another World - Amber Dusk Rounded Cel',
       'Campfire Cooking in Another World - Merchant Road Stew',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, campfire cooking pot, banquet table, hard black shadows, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a giant white wolf with a tiny slime, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, campfire cooking pot, banquet table, hard black shadows, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened.',
+        'MAPPA Campfire Cooking in Another World look (2023): rounded friendly designs, amber dusk campfires, cute familiar beasts and mouth-watering food animation.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Faces and bodies get soft rounded proportions and gentle expressions; do not add food, companions or a campfire the prompt did not name.',
-      color_and_tone:
-        'Amber, honey and cream in lit areas against twilight blue and dusty violet shadow, a warm-cool split of roughly sixty to forty.',
-      lighting_and_shadow:
-        'A low warm key wraps around forms from one side and falls off in a soft airbrushed gradient into cool ambient shadow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft rounded designs, friendly faces, casual traveler clothes and giant fluffy familiar animals. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Amber dusk orange, stew browns, cozy greens and warm cream.',
+      lighting_and_shadow: 'Warm campfire and dusk light with glossy highlights on food.',
       texture_and_material:
-        'Smooth airbrushed gradients, faint paper grain and a gentle diffusion glow laid over the highlights.',
-      camera_and_composition:
-        'Keep the requested view; relaxed eye-level spacing with a soft vignette pulling attention toward the warm center.',
-      atmosphere_and_mood: 'Comforting, generous and sleepy, the calm at the end of a long day.',
-      rendering_and_quality:
-        'Rounded clean contours, gentle two-tone shading and a light diffusion filter, with focal edges still readable inside the glow.',
-      key_features:
-        'rounded soft lineart; amber-to-twilight color split; airbrushed glow falloff; light diffusion filter; cream highlights',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
+      camera_and_composition: 'Food close-ups, campsite wides and cute beast reactions.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy hungry contentment.',
+      rendering_and_quality: 'Warm cozy fantasy television frame with glossy appetizing food.',
+      key_features: 'Amber campfires; glossy food; rounded designs; fluffy familiars',
       creative_brief:
-        "Cozy TV-anime cel with soft rounded lineart, a blended amber glow and airbrushed twilight gradients, every corner of every shape softened. Carry it through rounded soft lineart, amber-to-twilight color split, airbrushed glow falloff, light diffusion filter, cream highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "MAPPA Campfire Cooking in Another World look (2023): rounded friendly designs, amber dusk campfires, cute familiar beasts and mouth-watering food animation. Carry it through Amber campfires, glossy food, rounded designs, fluffy familiars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-257',
-    name: 'Slate Twilight Single-Violet Cel',
-    displayName: 'Slate Twilight Single-Violet Cel',
-    styleAnchors: ['Slate Twilight Single-Violet Cel', 'Tsukimichi - Moonlit Merchant Wanderer'],
+    name: 'Tsukimichi C2C - Slate Twilight Single-Violet Cel',
+    displayName: 'Tsukimichi C2C - Slate Twilight Single-Violet Cel',
+    styleAnchors: [
+      'Tsukimichi C2C - Slate Twilight Single-Violet Cel',
+      'Tsukimichi - Moonlit Merchant Wanderer',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, multiple accent colors, market stall, glow effects, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, multiple accent colors, market stall, glow effects, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame.',
+        'C2C Tsukimichi Moonlit Fantasy look (2021): slate twilight palettes with single violet accents, comedic merchant adventure, odd monsters and moonlit wastelands.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Reduce internal detail to a few decisive lines; the violet accent lands on something already in the prompt, never on an added token or prop.',
-      color_and_tone:
-        'Slate, cold blue-grey and ink navy desaturated to near monochrome, broken by a single saturated violet shape.',
-      lighting_and_shadow:
-        'Low even moon-cool ambient light with one narrow white highlight on the focal edge; shadows are one flat darker slate.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with light-novel designs, plain mild faces, merchant clothes and strange monster companions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Slate grey twilight, deep indigo and one glowing violet accent per frame.',
+      lighting_and_shadow: 'Moonlit twilight with a single violet glow source.',
       texture_and_material:
-        'Smooth restrained flats and dry, slightly broken line ends, with no grain and no glow anywhere.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; wide horizontal negative space with the focal subject off-center on a strong horizon line.',
-      atmosphere_and_mood: 'Wry, poised and quiet, a composed calm with a hint of irony.',
-      rendering_and_quality:
-        'Sparse detail, exact focal edges and one accent heavy enough to hold the whole frame.',
-      key_features:
-        'near-monochrome slate palette; single violet accent; dry economical line; wide horizontal negative space; one narrow highlight',
+        'Moonlit wasteland wide shots and small comedic merchant scenes around caravans.',
+      atmosphere_and_mood: 'Keep the requested mood with dry moonlit comedy.',
+      rendering_and_quality: 'Moody comedic fantasy television frame with slate twilight.',
+      key_features: 'Slate twilight; single violet accent; merchant comedy; moonlit wastes',
       creative_brief:
-        "Spare cool-toned anime cel: dry economical lineart, broad slate flats and exactly one violet accent that carries all the color in the frame. Carry it through near-monochrome slate palette, single violet accent, dry economical line, wide horizontal negative space, one narrow highlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "C2C Tsukimichi Moonlit Fantasy look (2021): slate twilight palettes with single violet accents, comedic merchant adventure, odd monsters and moonlit wastelands. Carry it through Slate twilight, single violet accent, merchant comedy, moonlit wastes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-258',
-    name: 'Fine-Line Brass Glint Cel',
-    displayName: 'Fine-Line Brass Glint Cel',
+    name: 'Handyman Saitou in Another World - Fine-Line Brass Glint Cel',
+    displayName: 'Handyman Saitou in Another World - Fine-Line Brass Glint Cel',
     styleAnchors: [
-      'Fine-Line Brass Glint Cel',
+      'Handyman Saitou in Another World - Fine-Line Brass Glint Cel',
       'Handyman Saitou in Another World - Toolbox Party Quest',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, photorealistic hands, product photograph, toolbox pile, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, photorealistic hands, product photograph, toolbox pile, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Practical anime cel drawing with hairline mechanical lineart, grounded realistic proportions and small warm brass specular glints on every metal part.',
+        'C2C Handyman Saitou in Another World look (2023): fine clean lines, brass tool glints, gentle party camaraderie and practical craftsman heroics in a fantasy world.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Screws, joints and seams of the existing object are drawn with care; do not add toolboxes, extra hands or a workshop.',
-      color_and_tone:
-        'Warm brass, walnut brown and muted olive against clean neutral greys, saturation kept moderate and even.',
-      lighting_and_shadow:
-        'Soft top light with small localized reflected glints on metal and a calm single-tone cel shadow beneath forms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with fine-lined designs, a quiet handyman in work clothes with a tool belt, and fantasy adventurers. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Brass gold, workshop brown, forest green and soft blue.',
+      lighting_and_shadow: 'Warm workshop light and small brass glints on tools.',
       texture_and_material:
-        'Hairline detail on mechanisms, subtle wood grain and tiny brass sparkle points, with flat fills everywhere else.',
-      camera_and_composition:
-        'Keep the requested view; a slightly elevated three-quarter angle makes the construction of objects easy to read.',
-      atmosphere_and_mood:
-        'Humble, capable and attentive, the satisfaction of a job done properly.',
-      rendering_and_quality:
-        'Crisp focal structure and useful rather than decorative detail, with no heavy effects or bloom.',
-      key_features:
-        'hairline mechanical lineart; brass specular glints; grounded proportions; construction-readable three-quarter angle; calm single-tone shadow',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
+      camera_and_composition: 'Close-ups of hands fixing things and warm party group shots.',
+      atmosphere_and_mood: 'Keep the requested mood with humble helpful warmth.',
+      rendering_and_quality: 'Gentle fine-line fantasy television frame with brass tool glints.',
+      key_features: 'Handyman craft; brass tools; fine lines; party warmth',
       creative_brief:
-        "Practical anime cel drawing with hairline mechanical lineart, grounded realistic proportions and small warm brass specular glints on every metal part. Carry it through hairline mechanical lineart, brass specular glints, grounded proportions, construction-readable three-quarter angle, calm single-tone shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "C2C Handyman Saitou in Another World look (2023): fine clean lines, brass tool glints, gentle party camaraderie and practical craftsman heroics in a fantasy world. Carry it through Handyman craft, brass tools, fine lines, party warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-259',
-    name: 'Picture-Book Crayon Line Anime',
-    displayName: 'Picture-Book Crayon Line Anime',
-    styleAnchors: ['Picture-Book Crayon Line Anime', 'Ranking of Kings - Storybook Crown Courage'],
+    name: 'Ranking of Kings Wit - Picture-Book Crayon Line Anime',
+    displayName: 'Ranking of Kings Wit - Picture-Book Crayon Line Anime',
+    styleAnchors: [
+      'Ranking of Kings Wit - Picture-Book Crayon Line Anime',
+      'Ranking of Kings - Storybook Crown Courage',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, glossy digital shading, detailed sparkling anime eyes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a tiny deaf prince with a crown and a shadow companion, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, glossy digital shading, detailed sparkling anime eyes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes.',
+        'Wit Studio Ranking of Kings look (2021): picture-book simple designs with thick soft crayon-like lines, pastel storybook castles and emotionally powerful fairy-tale drama.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures simplify to soft rounded silhouettes with tiny dot features while keeping their age and identity; do not add crowns or castles.',
-      color_and_tone:
-        'Warm ochre, soft coral, cream and gentle blue-green shadows at mid saturation, with paper white showing through the color.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with round simple picture-book designs, thick soft outlines, small bodies and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft storybook pastels, sky blue, cream, gentle green and warm red.',
       lighting_and_shadow:
-        'Flat soft light and minimal shading: one pale shadow shape under each form instead of modeled volume.',
-      texture_and_material:
-        'Visible waxy crayon strokes following the form, colored-pencil hatching and cream paper tooth between strokes.',
+        'Soft storybook daylight with gentle simple shadows and warm pastel skies.',
+      texture_and_material: 'Thick crayon-like soft outlines and flat pastel color.',
       camera_and_composition:
-        'Keep the requested view; flattened picture-book staging with clear scale contrast and plenty of plain space.',
-      atmosphere_and_mood: 'Tender and quietly brave, earnest as a bedtime story.',
+        'Picture-book storybook compositions and heartfelt close-ups on small brave faces.',
+      atmosphere_and_mood: 'Keep the requested mood with tender storybook courage.',
       rendering_and_quality:
-        'Simple silhouettes, uneven hand-drawn line weight and deliberate gaps in the coloring, never polished digital gloss.',
-      key_features:
-        'wobbly colored-pencil line; waxy crayon fills; dot eyes and rounded bodies; flat picture-book staging; paper tooth showing',
+        'Charming Wit Studio television frame with picture-book softness and emotional weight.',
+      key_features: 'Picture-book designs; crayon lines; pastel castles; tender courage',
       creative_brief:
-        "Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes. Carry it through wobbly colored-pencil line, waxy crayon fills, dot eyes and rounded bodies, flat picture-book staging, paper tooth showing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Wit Studio Ranking of Kings look (2021): picture-book simple designs with thick soft crayon-like lines, pastel storybook castles and emotionally powerful fairy-tale drama. Carry it through Picture-book designs, crayon lines, pastel castles, tender courage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-260',
-    name: 'Candy Pastel Bloom Cel',
-    displayName: 'Candy Pastel Bloom Cel',
-    styleAnchors: ['Candy Pastel Bloom Cel', 'Princess Connect! Re:Dive - Banquet Quest Pastel'],
+    name: 'Princess Connect CygamesPictures - Candy Pastel Bloom Cel',
+    displayName: 'Princess Connect CygamesPictures - Candy Pastel Bloom Cel',
+    styleAnchors: [
+      'Princess Connect CygamesPictures - Candy Pastel Bloom Cel',
+      'Princess Connect! Re:Dive - Banquet Quest Pastel',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dark gritty palette, black outlines, banquet table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dark gritty palette, black outlines, banquet table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights.',
+        'CygamesPictures Princess Connect! Re:Dive look (2020): candy pastel fantasy, bloom-heavy glowing highlights, cheerful food-loving parties and bouncy comedy.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures get large bright eyes, glossy hair highlights and clean costume shapes; do not add a banquet, crowd or idol lineup.',
-      color_and_tone:
-        'Mint, blush pink, lilac and buttery cream with white-hot highlights, bright and high-key, shadows tinted lavender instead of grey.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with cute bright designs, big sparkly eyes, pastel fantasy outfits and hungry cheerful expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Candy pink, mint, lemon, sky blue and glowing white bloom.',
       lighting_and_shadow:
-        'Broad frontal light with a soft bloom halo around highlights and small sparkles on glossy edges.',
+        'Bright bloom-heavy daylight with sparkling highlights on eyes, food and armor.',
       texture_and_material:
-        'Smooth cel fills, satin gloss bands on hair and fabric and floating petal-like light specks.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; a centered subject with airy spacing and a soft pastel gradient behind it.',
-      atmosphere_and_mood: 'Joyful, sweet and abundant, festive without needing a party.',
-      rendering_and_quality:
-        'Colored lineart instead of black, clean color separation and a controlled bloom that never washes out form.',
-      key_features:
-        'candy pastel palette; colored lineart; lavender-tinted shadows; satin gloss bands; soft bloom halo',
+        'Bouncy group comedy framing and crowded glowing feast scenes at long tables.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful hungry adventure.',
+      rendering_and_quality: 'Glowing pastel fantasy television frame with heavy bloom.',
+      key_features: 'Candy pastel; bloom glow; feasts; bouncy comedy',
       creative_brief:
-        "Polished mobile-game splash-art cel in candy pastels: crisp soft colored lineart, glossy two-tone shading and a luminous bloom pass over highlights. Carry it through candy pastel palette, colored lineart, lavender-tinted shadows, satin gloss bands, soft bloom halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "CygamesPictures Princess Connect! Re:Dive look (2020): candy pastel fantasy, bloom-heavy glowing highlights, cheerful food-loving parties and bouncy comedy. Carry it through Candy pastel, bloom glow, feasts, bouncy comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-091',
-    name: 'Cyan Crystal-Facet Glow Cel',
-    displayName: 'Cyan Crystal-Facet Glow Cel',
-    styleAnchors: ['Cyan Crystal-Facet Glow Cel', 'Sword Art Online – Glowing VR Adventure'],
+    name: 'Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel',
+    displayName: 'Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel',
+    styleAnchors: [
+      'Sword Art Online A-1 - Cyan Crystal-Facet Glow Cel',
+      'Sword Art Online – Glowing VR Adventure',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, HUD elements, game menu, everything turned to glass, glass pavilion, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a black-coated dual-wielding swordsman, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, HUD elements, game menu, everything turned to glass, glass pavilion, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light.',
+        'A-1 Pictures Sword Art Online look (2012): virtual-reality fantasy with glowing cyan crystal effects, floating castle levels, sleek swordplay and shattering polygon particles.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Surfaces keep their real material; the crystal logic lives only in edge highlights and planes of light, never turning objects into glass.',
-      color_and_tone:
-        'Cyan, ice blue and pearl white with a small blush-pink accent; high-key, cool and clean throughout.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with abec-derived designs, sleek long coats, clean faces and glowing swords. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Cyan crystal glow, night black, white and gold.',
       lighting_and_shadow:
-        'Broad cool ambient light, crisp refraction-like highlight shards along edges and a restrained cyan bloom.',
+        'Glowing cyan crystal light and bright sword skill trails in dark virtual spaces.',
       texture_and_material:
-        'Smooth digital gradients, pinpoint prismatic glints and faint hexagonal sparkle particles floating in the air.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; depth is built from overlapping translucent planes and an open, calm perspective.',
-      atmosphere_and_mood: 'Luminous, tender and spacious, like cold clear morning air.',
-      rendering_and_quality:
-        'Clean tapered cel edges, soft transitions, sharp glints and controlled glow, with no interface elements anywhere.',
-      key_features:
-        'faceted crystal edge highlights; translucent cyan planes; pearl-white high key; prismatic pinpoint glints; restrained cyan bloom',
+        'Dynamic sword duels, floating castle wides and shattering particles.',
+      atmosphere_and_mood: 'Keep the requested mood with luminous virtual adventure.',
+      rendering_and_quality: 'Glossy A-1 Pictures frame with crystal VR effects.',
+      key_features: 'VR crystal glow; floating castle; sword skills; polygon shatter',
       creative_brief:
-        "Airy digital anime cel with crystalline edge breaks: forms are rimmed by thin faceted highlights and layered with translucent cyan planes of light. Carry it through faceted crystal edge highlights, translucent cyan planes, pearl-white high key, prismatic pinpoint glints, restrained cyan bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "A-1 Pictures Sword Art Online look (2012): virtual-reality fantasy with glowing cyan crystal effects, floating castle levels, sleek swordplay and shattering polygon particles. Carry it through VR crystal glow, floating castle, sword skills, polygon shatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-092',
-    name: 'Violet Echo-Line Gothic Cel',
-    displayName: 'Violet Echo-Line Gothic Cel',
-    styleAnchors: ['Violet Echo-Line Gothic Cel', 'Re:Zero – Reset-Loop Dark Fantasy'],
+    name: 'Re:Zero White Fox - Violet Echo-Line Gothic Cel',
+    displayName: 'Re:Zero White Fox - Violet Echo-Line Gothic Cel',
+    styleAnchors: [
+      'Re:Zero White Fox - Violet Echo-Line Gothic Cel',
+      'Re:Zero – Reset-Loop Dark Fantasy',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, doubled character, gore, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named character, mansion/market location, death scene, maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'twin maids with blue and pink hair, a silver-haired half-elf in white, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, doubled character, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named character, mansion/market location, maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ornate dark anime cel in which each focal contour is echoed by fine silver after-image lines, as if the moment had been drawn several times over.',
+        'White Fox Re:Zero look (2016): gothic mansion fantasy, violet shadows, time-loop dread, beautiful designs contrasted with horror, and echo-lines of repeated moments.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Echo lines trail existing forms by a small offset and fade out; never duplicate the subject into a second figure.',
-      color_and_tone:
-        'Deep violet, slate and ink black in a low cold key, with silver and pale lilac reserved for the echoes.',
-      lighting_and_shadow:
-        'Narrow silver rim light and faint repeated glints along the echo lines while large planes sink into violet shadow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shinichirou Otsuka-derived designs, gothic maid and noble outfits, big expressive eyes and anguished moments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Violet shadows, gothic black, silver and blood crimson.',
+      lighting_and_shadow: 'Moody mansion light, violet glows and eerie night.',
       texture_and_material:
-        'Ribbon-fine brush lines, translucent layered washes and subtle grain held inside the darks.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; nested curves and repeated spacing lead the eye inward toward the focal form.',
-      atmosphere_and_mood: 'Hushed, ornate and uneasy, a moment that feels already lived.',
-      rendering_and_quality:
-        'Crisp focal contour, softly lost secondary edges and echo lines decreasing in opacity outward.',
-      key_features:
-        'silver after-image echo lines; violet-slate low key; narrow silver rims; ribbon-fine brush line; fading repetition',
+        'Faint echo-lines of repeated moments and claustrophobic shots of mansion corridors.',
+      atmosphere_and_mood: 'Keep the requested mood with gothic looping dread.',
+      rendering_and_quality: 'Moody White Fox frame with gothic violet horror.',
+      key_features: 'Time-loop dread; violet gothic; mansion; echo lines',
       creative_brief:
-        "Ornate dark anime cel in which each focal contour is echoed by fine silver after-image lines, as if the moment had been drawn several times over. Carry it through silver after-image echo lines, violet-slate low key, narrow silver rims, ribbon-fine brush line, fading repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "White Fox Re:Zero look (2016): gothic mansion fantasy, violet shadows, time-loop dread, beautiful designs contrasted with horror, and echo-lines of repeated moments. Carry it through Time-loop dread, violet gothic, mansion, echo lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-093',
-    name: 'Sepia Moss Dry-Brush Cel',
-    displayName: 'Sepia Moss Dry-Brush Cel',
-    styleAnchors: ['Sepia Moss Dry-Brush Cel', 'Mushoku Tensei – Wandering Mage Chronicle'],
+    name: 'Mushoku Tensei Studio Bind - Sepia Moss Dry-Brush Cel',
+    displayName: 'Mushoku Tensei Studio Bind - Sepia Moss Dry-Brush Cel',
+    styleAnchors: [
+      'Mushoku Tensei Studio Bind - Sepia Moss Dry-Brush Cel',
+      'Mushoku Tensei – Wandering Mage Chronicle',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map labels, road party, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school uniform, harem cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map labels, road party, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school uniform, harem cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Film-quality anime with painterly background art: dry-brush contour accents, detailed sepia and moss landscapes and pale open skies behind clean cel figures.',
+        'Studio Bind Mushoku Tensei look (2021): richly painted grounded fantasy, sepia and moss tones, detailed life across seasons and meticulous everyday animation.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures stay cleanly cel-shaded while their surroundings get painterly depth; do not add a road, a staff or a traveling party.',
-      color_and_tone:
-        'Earthy sepia, moss green, ink blue and parchment, with pale sky values keeping the whole image open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded fantasy designs, practical traveling clothes, detailed hair and natural gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sepia, moss green, earth brown and soft sky blue.',
       lighting_and_shadow:
-        'Diffused daylight with long gentle value shifts and atmospheric perspective that fades distant forms toward blue.',
+        'Natural seasonal light across fields and warm hearth glow inside cottages.',
       texture_and_material:
-        'Dry pigment breaks, paper grain and transparent wash edges in the painted background, flat clean fills on figures.',
+        'Painterly dry-brush backgrounds with detailed cel animation of everyday gestures.',
       camera_and_composition:
-        'Keep the requested view; generous depth with foreground, middle and far planes separated by air.',
-      atmosphere_and_mood:
-        'Curious and quietly expansive, the sense of a big world just past the frame.',
-      rendering_and_quality:
-        'Painterly background with tactile detail, crisp cel figures and dry-brush lines only where they clarify form.',
-      key_features:
-        'painterly sepia-moss backgrounds; dry-brush contour accents; atmospheric blue fade; clean cel figures; parchment highlights',
+        'Long journeys through sweeping landscapes and intimate everyday moments indoors.',
+      atmosphere_and_mood: 'Keep the requested mood with grounded coming-of-age journey.',
+      rendering_and_quality: 'Rich Studio Bind frame with painterly grounded fantasy.',
+      key_features: 'Studio Bind painterly; sepia and moss; grounded fantasy; seasons',
       creative_brief:
-        "Film-quality anime with painterly background art: dry-brush contour accents, detailed sepia and moss landscapes and pale open skies behind clean cel figures. Carry it through painterly sepia-moss backgrounds, dry-brush contour accents, atmospheric blue fade, clean cel figures, parchment highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Bind Mushoku Tensei look (2021): richly painted grounded fantasy, sepia and moss tones, detailed life across seasons and meticulous everyday animation. Carry it through Studio Bind painterly, sepia and moss, grounded fantasy, seasons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-094',
-    name: 'Springy Comic-Timing Cel',
-    displayName: 'Springy Comic-Timing Cel',
-    styleAnchors: ['Springy Comic-Timing Cel', 'Konosuba – Party-Quest Comedy'],
+    name: 'Konosuba Deen - Springy Comic-Timing Cel',
+    displayName: 'Konosuba Deen - Springy Comic-Timing Cel',
+    styleAnchors: ['Konosuba Deen - Springy Comic-Timing Cel', 'Konosuba – Party-Quest Comedy'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, lewd gag, speech bubbles, tavern, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, readable sign, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blue-haired water goddess, an explosion mage with an eyepatch and red hat, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, lewd gag, speech bubbles, tavern, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, readable sign, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands.',
+        'Studio Deen Konosuba look (2016): deliberately wobbly off-model comedy, springy slapstick timing, useless heroes and bright cheap fantasy villages.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Exaggerate faces and poses, blank stares, sweat drops and flailing limbs, only around action already in the prompt; do not add a party or tavern.',
-      color_and_tone:
-        'Cheerful yellow, coral and aqua flats over clean mid-values; bright, simple and low in shadow density.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with light comedic designs, exaggerated goofy faces, off-model reactions and fantasy adventurer costumes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright cheap fantasy greens, sky blue and sunny yellow.',
       lighting_and_shadow:
-        'Flat bright light with one hard cel shadow tier and quick value pops placed for emphasis.',
+        'Simple bright village daylight and big cartoon explosion flashes with smoke.',
       texture_and_material:
-        'Smooth flat fills, brisk brush flicks, speed marks and simple symbol effects drawn as shapes, never as text.',
-      camera_and_composition:
-        'Keep the requested view; an off-center focal point and slightly tilted framing give comic imbalance.',
-      atmosphere_and_mood: 'Light, dry and comic, a beat of awkward silence.',
-      rendering_and_quality:
-        'Simple readable forms, sharp accents and springy line variation, with no excess effects.',
-      key_features:
-        'elastic springy lineart; deadpan exaggerated faces; yellow-coral-aqua flats; sweat-drop symbol shapes; post-gag pause timing',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
+      camera_and_composition: 'Comedic timing shots, reaction close-ups and explosion wides.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic useless comedy.',
+      rendering_and_quality: 'Loose springy comedy television frame with off-model energy.',
+      key_features: 'Springy slapstick; off-model faces; useless heroes; explosions',
       creative_brief:
-        "Comedy TV-anime cel with elastic lineart, exaggerated deadpan faces and punchy flat shapes caught on the beat just after the gag lands. Carry it through elastic springy lineart, deadpan exaggerated faces, yellow-coral-aqua flats, sweat-drop symbol shapes, post-gag pause timing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Deen Konosuba look (2016): deliberately wobbly off-model comedy, springy slapstick timing, useless heroes and bright cheap fantasy villages. Carry it through Springy slapstick, off-model faces, useless heroes, explosions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-098',
-    name: 'Rounded Sky-Blue Friendly Cel',
-    displayName: 'Rounded Sky-Blue Friendly Cel',
-    styleAnchors: ['Rounded Sky-Blue Friendly Cel', 'Slime Isekai – Monster-Nation Bright Fantasy'],
+    name: 'Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel',
+    displayName: 'Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel',
+    styleAnchors: [
+      'Slime Isekai 8bit - Rounded Sky-Blue Friendly Cel',
+      'Slime Isekai – Monster-Nation Bright Fantasy',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, slime mascot, kingdom crowd, sharp angular shapes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a round blue slime with a smiling face, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, slime mascot, kingdom crowd, sharp angular shapes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream.',
+        'Eight Bit That Time I Got Reincarnated as a Slime look (2018): friendly rounded monster nation fantasy, sky-blue brightness, diverse monster citizens and cheerful town building.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Round off corners and group small details into friendly shapes; do not add a mascot creature, a crowd or banners.',
-      color_and_tone:
-        'Clear sky blue, warm cream, soft grass green and sandy earth, saturated but gentle and evenly balanced.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people and monsters with friendly rounded designs, bright costumes and cheerful expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sky blue, grass green, sunny yellow and warm wood tones.',
       lighting_and_shadow:
-        'Even diffuse daylight with soft round highlights describing volume and pale blue shadows.',
+        'Bright friendly daylight with gentle magical glows around monster citizens.',
       texture_and_material:
-        'Smooth cel shading and satin highlights with almost no surface noise or grain.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; uncluttered spacing with repeated rounded shapes leading to the focal point.',
-      atmosphere_and_mood: 'Optimistic, generous and easygoing, a world where everyone gets along.',
+        'Town-building wide shots with scaffolding and friendly crowded group shots.',
+      atmosphere_and_mood: 'Keep the requested mood with friendly building optimism.',
       rendering_and_quality:
-        'Stable silhouettes, soft shadow edges and clean color blocking with every corner rounded.',
-      key_features:
-        'rounded silhouettes; sky-blue accents on cream; soft round highlights; pale blue shadows; uncluttered color blocks',
+        'Bright friendly fantasy television frame with cheerful monster crowds.',
+      key_features: 'Monster nation; sky blue; friendly rounded designs; town building',
       creative_brief:
-        "Bright friendly anime cel with rounded silhouettes, simplified volumes and clean sky-blue accents set against warm cream. Carry it through rounded silhouettes, sky-blue accents on cream, soft round highlights, pale blue shadows, uncluttered color blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Eight Bit That Time I Got Reincarnated as a Slime look (2018): friendly rounded monster nation fantasy, sky-blue brightness, diverse monster citizens and cheerful town building. Carry it through Monster nation, sky blue, friendly rounded designs, town building. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-100',
-    name: 'Vertical Mineral Amber Cel',
-    displayName: 'Vertical Mineral Amber Cel',
-    styleAnchors: ['Vertical Mineral Amber Cel', 'DanMachi – Dungeon Lantern Adventure'],
+    name: 'DanMachi J.C.Staff - Vertical Mineral Amber Cel',
+    displayName: 'DanMachi J.C.Staff - Vertical Mineral Amber Cel',
+    styleAnchors: [
+      'DanMachi J.C.Staff - Vertical Mineral Amber Cel',
+      'DanMachi – Dungeon Lantern Adventure',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dungeon corridor, hallway perspective, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a small goddess with a blue ribbon under her arms, a white-haired rookie with red eyes, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dungeon corridor, hallway perspective, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth.',
+        'J.C.Staff DanMachi look (2015): a vertical labyrinth dungeon under a bustling city, amber lantern light, mineral crystals, adventurer familia and rising-hero energy.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Forms are articulated by tall facet-like value shifts; do not add a dungeon corridor, lantern or monster.',
-      color_and_tone:
-        'Amber and pale gold points of light against cool teal and deep blue-green shadow.',
-      lighting_and_shadow:
-        'Small warm point highlights with a soft contained glow against cool ambient light, like light caught inside quartz.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suzuhito Yasuda-derived designs, light armor, white hair or bright hair, and determined adventurer faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Amber lantern light, mineral teal, deep stone and gold.',
+      lighting_and_shadow: 'Lantern light in deep dungeon shafts and crystal glows.',
       texture_and_material:
-        'Crisp faceted accents, subtle grain and smooth transitions between the vertical planes.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; vertically stacked planes and shifts of scale emphasize height.',
-      atmosphere_and_mood: 'Hopeful and humble, a small warmth inside something vast.',
+        'Tall vertical dungeon shafts, tiny climbing figures and heroic upward ascents.',
+      atmosphere_and_mood: 'Keep the requested mood with aspiring vertical adventure.',
       rendering_and_quality:
-        'Clean cel edges, layered depth and readable contrast without heavy bloom.',
-      key_features:
-        'vertical mineral facets; amber point lights; cool teal depth; contained quartz-like glow; stacked vertical planes',
+        'Warm J.C.Staff television frame with vertical dungeon scale and lantern glow.',
+      key_features: 'Vertical dungeon; amber lanterns; mineral crystals; rising heroes',
       creative_brief:
-        "Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth. Carry it through vertical mineral facets, amber point lights, cool teal depth, contained quartz-like glow, stacked vertical planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "J.C.Staff DanMachi look (2015): a vertical labyrinth dungeon under a bustling city, amber lantern light, mineral crystals, adventurer familia and rising-hero energy. Carry it through Vertical dungeon, amber lanterns, mineral crystals, rising heroes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-241',
-    name: 'Systemic Cooperation Grid Style',
-    displayName: 'Systemic Cooperation Grid',
-    styleAnchors: ['Systemic Cooperation Grid Style'],
+    name: 'Log Horizon Satelight - Systemic Cooperation Grid Style',
+    displayName: 'Log Horizon Satelight - Systemic Cooperation Grid Style',
+    styleAnchors: ['Log Horizon Satelight - Systemic Cooperation Grid Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map table, board game, group huddled over a table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, map table, board game, group huddled over a table, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals.',
+        'Satelight Log Horizon look (2013): strategic MMO fantasy with guild politics, overgrown ruined Tokyo, cooperative planning scenes and tactical overlays without text.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Repeated elements already in the prompt line up at even intervals; never add a map, board, chart or symbols.',
-      color_and_tone:
-        'Indigo, muted gold and small cyan notes over clean neutral greys, with crisp mid-key contrast.',
-      lighting_and_shadow:
-        'Even top light producing identical short shadows under every repeated form, with no implied screen glow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kazuhiro Hara-derived designs, glasses-wearing strategists, guild adventurers and townspeople. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Overgrown green, ruined concrete grey, guild gold and sky blue.',
+      lighting_and_shadow: 'Soft daylight through ruins and warm guild-hall light.',
       texture_and_material:
-        'Smooth flat fills and exact hard-edged line breaks, with no painterly texture anywhere.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; frontal or high orthogonal angles are preferred where alignment and rhythm read clearly.',
-      atmosphere_and_mood: 'Orderly and collaborative, many parts moving as one.',
+        'Round-table strategy meeting compositions and overgrown ruined-city wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with thoughtful cooperative strategy.',
       rendering_and_quality:
-        'Sparse balanced graphic marks, stable forms and a clear focal priority inside the repetition.',
-      key_features:
-        'invisible modular grid; repeated forms at even intervals; identical short shadows; indigo-gold-cyan palette; hard-edged flats',
+        'Clear Satelight television frame with strategic group compositions and ruins.',
+      key_features: 'Guild strategy; overgrown Tokyo; cooperation; tactical planning',
       creative_brief:
-        "Precision anime cel organized on an invisible modular grid: forms repeat at measured intervals and align to shared horizontals and verticals. Carry it through invisible modular grid, repeated forms at even intervals, identical short shadows, indigo-gold-cyan palette, hard-edged flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Satelight Log Horizon look (2013): strategic MMO fantasy with guild politics, overgrown ruined Tokyo, cooperative planning scenes and tactical overlays without text. Carry it through Guild strategy, overgrown Tokyo, cooperation, tactical planning. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-242',
-    name: 'Smoke-Mud Vulnerability Style',
-    displayName: 'Smoke-Mud Vulnerability',
-    styleAnchors: ['Smoke-Mud Vulnerability Style'],
+    name: 'Grimgar A-1 - Smoke-Mud Vulnerability Style',
+    displayName: 'Grimgar A-1 - Smoke-Mud Vulnerability Style',
+    styleAnchors: ['Grimgar A-1 - Smoke-Mud Vulnerability Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, crisp clean cel, bright saturated color, heroic pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, crisp clean cel, bright saturated color, heroic pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke.',
+        'A-1 Pictures Grimgar look (2016): watercolor-like painted backgrounds, muddy low-level adventurers, vulnerability and grief, and soft pastel mornings after brutal fights.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Secondary contours blur into the brushwork while the face or focal gesture stays clear and exposed.',
-      color_and_tone:
-        'Muted clay, olive, charcoal and dusk blue with compressed values and no pure white or black.',
-      lighting_and_shadow: 'Diffuse side light with broad soft shadows, no rim light and no glow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, muddy cheap gear, exhausted faces and fragile gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Watercolor pastels, mud brown, smoky grey and soft morning pink.',
+      lighting_and_shadow: 'Soft watercolor dawn light and smoky dusk after exhausting fights.',
       texture_and_material:
-        'Smudged pigment, dragged brush streaks, uneven grain and thumb-blended edges across the whole surface.',
-      camera_and_composition:
-        'Keep the requested view; tight framing leaves little escape space around the subject.',
-      atmosphere_and_mood: 'Quiet, exposed and fragile, tired rather than tragic.',
-      rendering_and_quality:
-        'A legible focal subject against loosely painted surroundings; texture never turns to mud over the face.',
-      key_features:
-        'lost smoky edges; clay-olive-charcoal range; smudged dragged brushwork; compressed values; clear exposed focal face',
+        'Watercolor-textured painted backgrounds with soft cel characters and mud.',
+      camera_and_composition: 'Quiet montage moments of daily life and clumsy desperate fights.',
+      atmosphere_and_mood: 'Keep the requested mood with fragile muddy vulnerability.',
+      rendering_and_quality: 'Soft watercolor A-1 Pictures frame with fragile emotional realism.',
+      key_features: 'Grimgar watercolor; muddy adventurers; vulnerability; soft dawn',
       creative_brief:
-        "Atmospheric painted anime with soft lost edges, layered low contrast and rough earth-toned brushwork, as if seen through settling smoke. Carry it through lost smoky edges, clay-olive-charcoal range, smudged dragged brushwork, compressed values, clear exposed focal face. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "A-1 Pictures Grimgar look (2016): watercolor-like painted backgrounds, muddy low-level adventurers, vulnerability and grief, and soft pastel mornings after brutal fights. Carry it through Grimgar watercolor, muddy adventurers, vulnerability, soft dawn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-243',
-    name: 'Classic OVA Quest Tapestry Style',
-    displayName: 'Classic OVA Quest Tapestry',
-    styleAnchors: ['Classic OVA Quest Tapestry Style'],
+    name: 'Record of Lodoss War OVA - Classic OVA Quest Tapestry Style',
+    displayName: 'Record of Lodoss War OVA - Classic OVA Quest Tapestry Style',
+    styleAnchors: ['Record of Lodoss War OVA - Classic OVA Quest Tapestry Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, modern digital bloom, flat vector look, tapestry layout, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blonde elf in a green tunic with a circlet, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, modern digital bloom, flat vector look, tapestry layout, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards.',
+        'Madhouse Record of Lodoss War OVA look (1990) with Nobuteru Yuki designs: classic tabletop high fantasy, detailed armor, elves and dwarves, painterly castles and tapestry-like grandeur.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures take period anatomy, long limbs, sharp jaws and detailed hair clumps, without copying any canon character or ensemble.',
-      color_and_tone:
-        'Rich saturated color blocks, warm sunset highlights against cool blue-violet shadows, slightly faded like filmed cels.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nobuteru Yuki designs, elegant elves, sturdy dwarves, detailed plate armor and flowing cloaks. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Forest green, royal blue, gold, steel and warm tapestry reds.',
       lighting_and_shadow:
-        'Strong painted directional light, a two-tone cel shadow plus an airbrushed highlight band on hair and metal.',
-      texture_and_material:
-        'Fine analog film grain, faint cel dust and soft color bleed at edges over gouache-painted backgrounds.',
-      camera_and_composition:
-        'Keep the requested view; foreground and distance are separated by layered color planes like a multiplane camera.',
-      atmosphere_and_mood: 'Cinematic, earnest and epic in the old analog way.',
-      rendering_and_quality:
-        'Crisp ink contour, broad controlled shading, restrained grain and the slight softness of cels shot on film.',
-      key_features:
-        'airbrushed highlight bands; hand-painted cel blocks; gouache background boards; film grain and cel dust; long-limbed period anatomy',
+        'Soft painterly fantasy light over forests and dramatic dusk on castles.',
+      texture_and_material: 'Hand-painted cel with painterly castle and forest backgrounds.',
+      camera_and_composition: 'Classic heroic party compositions and grand painted fantasy vistas.',
+      atmosphere_and_mood: 'Keep the requested mood with classic heroic quest.',
+      rendering_and_quality: 'Rich 1990 Madhouse OVA frame with tapestry-like fantasy grandeur.',
+      key_features: 'Lodoss classic fantasy; Nobuteru Yuki elves; detailed armor; tapestry',
       creative_brief:
-        "Late-1980s to early-1990s OVA hand-painted cel: confident color blocks, airbrushed highlights on hair and armor, glossy eye highlights and painted background boards. Carry it through airbrushed highlight bands, hand-painted cel blocks, gouache background boards, film grain and cel dust, long-limbed period anatomy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Record of Lodoss War OVA look (1990) with Nobuteru Yuki designs: classic tabletop high fantasy, detailed armor, elves and dwarves, painterly castles and tapestry-like grandeur. Carry it through Lodoss classic fantasy, Nobuteru Yuki elves, detailed armor, tapestry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-244',
-    name: 'Tall Textile-Rhythm Formal Cel',
-    displayName: 'Tall Textile-Rhythm Formal Cel',
+    name: 'Akihiro Yamada - Tall Textile-Rhythm Formal Cel',
+    displayName: 'Akihiro Yamada - Tall Textile-Rhythm Formal Cel',
     styleAnchors: [
-      'Tall Textile-Rhythm Formal Cel',
+      'Akihiro Yamada - Tall Textile-Rhythm Formal Cel',
       'The Twelve Kingdoms - Imperial Destiny Chronicle',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, throne room, photographed fabric, product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, throne room, photographed fabric, product shot, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth.',
+        'Akihiro Yamada Twelve Kingdoms illustration look: tall elegant East Asian fantasy figures, rhythmic flowing textiles, formal court compositions and refined painterly color.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine repeating line marks run inside existing clothing and surfaces; do not add ceremonial dress, a court or a throne.',
-      color_and_tone:
-        'Muted indigo, parchment and restrained cinnabar with small gold notes, composed in a quiet mid key.',
-      lighting_and_shadow:
-        'Even deliberate light with small precise highlights on ornament and shallow flat shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yamada designs, tall slender figures, long flowing robes with rhythmic folds and serene faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep teal, vermilion, gold and jade with muted ink tones.',
+      lighting_and_shadow: 'Soft formal court light and misty mountain glow.',
       texture_and_material:
-        'Fine repeated brocade-like strokes and restrained fabric texture used as surface treatment, not as a material change.',
-      camera_and_composition:
-        'Keep the requested view; tall vertical spacing and near-symmetry, with tall narrow framing when the prompt leaves it open.',
-      atmosphere_and_mood: 'Solemn and poised, destiny felt as stillness.',
-      rendering_and_quality:
-        'Sparse, even-scale ornament, clean edges and a consistent detail scale across the image.',
-      key_features:
-        'tall vertical rhythm; brocade-like repeating line pattern; indigo-parchment-cinnabar palette; near symmetry; precise ornament highlights',
+        'Refined fine line with painterly textile patterns and rhythmic robe folds.',
+      camera_and_composition: 'Formal court compositions and tall vertical figure framing.',
+      atmosphere_and_mood: 'Keep the requested mood with dignified solemn destiny.',
+      rendering_and_quality: 'Refined painterly fantasy illustration look with courtly elegance.',
+      key_features: 'Akihiro Yamada textiles; tall figures; court formality; jade and vermilion',
       creative_brief:
-        "Formal anime cel shaped by tall vertical rhythms and textile-like repeating line patterns, ornament balanced as carefully as woven cloth. Carry it through tall vertical rhythm, brocade-like repeating line pattern, indigo-parchment-cinnabar palette, near symmetry, precise ornament highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Akihiro Yamada Twelve Kingdoms illustration look: tall elegant East Asian fantasy figures, rhythmic flowing textiles, formal court compositions and refined painterly color. Carry it through Akihiro Yamada textiles, tall figures, court formality, jade and vermilion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-245',
-    name: 'Carmine Angular Windswept Cel',
-    displayName: 'Carmine Angular Windswept Cel',
+    name: 'Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel',
+    displayName: 'Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel',
     styleAnchors: [
-      'Carmine Angular Windswept Cel',
+      'Nobuteru Yuki Escaflowne - Carmine Angular Windswept Cel',
       'The Vision of Escaflowne - Windblown Tarot Fantasy',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, tarot card, mecha copy, weapon-first pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, tarot card, mecha copy, weapon-first pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        '1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind.',
+        'Sunrise The Vision of Escaflowne look (1996) with Nobuteru Yuki designs: windswept medieval sky fantasy, carmine accents, angular elegant faces with long noses and armored guymelefs.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Pointed chins, narrow noses and hair and cloth swept in one direction; motion follows the prompt action and no battle is added.',
-      color_and_tone:
-        'Carmine red accents slicing through cool blue-grey and slate in high contrast.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuki designs, long pointed noses, slender angular faces, windswept hair and medieval-fantasy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Carmine red, sky blue, earth tones and armor silver.',
       lighting_and_shadow:
-        'Hard directional edge light with crisp shadow breaks under one bright open sky.',
-      texture_and_material:
-        'Smooth fills with dry-brush wind streaks and tapered hatching along cloth folds.',
+        'Bright windswept sky light, fast clouds and dramatic sunsets over cliffs.',
+      texture_and_material: 'Late analog cel with painted sky fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; strong tilted diagonals and overlapping angled shapes carry the motion.',
-      atmosphere_and_mood: 'Emotionally forward and dramatic, longing carried on the wind.',
-      rendering_and_quality: 'Clear silhouettes, crisp edges and few but decisive tapered marks.',
-      key_features:
-        'carmine accents; angular 1990s features; one-direction wind sweep; long tapered strokes; tilted diagonals',
+        'Windswept cliff-edge compositions and soaring shots of airships and fortresses.',
+      atmosphere_and_mood: 'Keep the requested mood with windswept destined romance.',
+      rendering_and_quality: 'Classic 1996 Sunrise television frame with windswept sky fantasy.',
+      key_features: 'Nobuteru Yuki designs; windswept fantasy; carmine accents; long noses',
       creative_brief:
-        "1990s action-romance anime cel with sharp angular features, long tapered strokes and everything, hair, cloth and grass, caught in one hard wind. Carry it through carmine accents, angular 1990s features, one-direction wind sweep, long tapered strokes, tilted diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Sunrise The Vision of Escaflowne look (1996) with Nobuteru Yuki designs: windswept medieval sky fantasy, carmine accents, angular elegant faces with long noses and armored guymelefs. Carry it through Nobuteru Yuki designs, windswept fantasy, carmine accents, long noses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-246',
-    name: 'Jewel Arabesque Curve Cel',
-    displayName: 'Jewel Arabesque Curve Cel',
-    styleAnchors: ['Jewel Arabesque Curve Cel', 'Magi - Labyrinth Jewel Caravan'],
+    name: 'Shinobu Ohtaka - Jewel Arabesque Curve Cel',
+    displayName: 'Shinobu Ohtaka - Jewel Arabesque Curve Cel',
+    styleAnchors: ['Shinobu Ohtaka - Jewel Arabesque Curve Cel', 'Magi - Labyrinth Jewel Caravan'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a braided boy with a flute and a blue djinn, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes.',
+        'Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Arabesque linework decorates existing surfaces; do not add markets, caravans, deserts or labyrinths.',
-      color_and_tone: 'Jewel blue, turquoise, amber and saffron in a rich warm-cool balance.',
-      lighting_and_shadow:
-        'Warm light rolls over curved planes with sparse, sharp jewel-point specular stars.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohtaka designs, big lively eyes, braided hair, flowing desert robes and jewelry. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Jewel turquoise, gold, desert sand and royal purple.',
+      lighting_and_shadow: 'Bright desert sun on domes and glowing turquoise djinn magic.',
       texture_and_material:
-        'Smooth painted color with fine gold-line ornament and an enamel-like tile shine.',
-      camera_and_composition:
-        'Keep the requested view; flowing S-curve spacing guides the eye through the frame.',
-      atmosphere_and_mood: 'Graceful, warm and lively, like music in motion.',
-      rendering_and_quality:
-        'Rich but controlled color with delicate line detail sitting over clean cel shapes.',
-      key_features:
-        'arabesque S-curve contours; jewel blue and turquoise; fine gold-line ornament; jewel-point specular stars; enamel tile shine',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
+      camera_and_composition: 'Palace and bazaar wide shots framed by ornate arabesque arches.',
+      atmosphere_and_mood: 'Keep the requested mood with jeweled desert adventure.',
+      rendering_and_quality: 'Bright Arabian Nights fantasy frame with jeweled arabesque curves.',
+      key_features: 'Magi arabesques; jewel palaces; desert markets; djinn magic',
       creative_brief:
-        "Ornamented anime cel led by jewel color and arabesque curves: contours flow in elegant S-arcs and fine decorative line rhythms sit inside shapes. Carry it through arabesque S-curve contours, jewel blue and turquoise, fine gold-line ornament, jewel-point specular stars, enamel tile shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-249',
-    name: 'Indigo Block-Print Cel',
-    displayName: 'Indigo Block-Print Cel',
-    styleAnchors: ['Indigo Block-Print Cel', 'Ascendance of a Bookworm - Printing Press Devotion'],
+    name: 'Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel',
+    displayName: 'Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel',
+    styleAnchors: [
+      'Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel',
+      'Ascendance of a Bookworm - Printing Press Devotion',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, readable pages, printing press prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, readable pages, printing press prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges.',
+        'Ajia-do Ascendance of a Bookworm look (2019): gentle medieval town life, indigo block-print patterns, handmade paper and books, warm homely fantasy.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify forms into clear masses with selective etched line detail; never turn the subject into printed pages or add a press.',
-      color_and_tone: 'Cream, deep indigo and restrained amber, limited to two or three flat inks.',
-      lighting_and_shadow:
-        'Flat broad light with graphic shadow shapes carved as solid indigo ink.',
-      texture_and_material:
-        'Fine hatch marks, cream paper grain, ink squash at block edges and a small misregistration between colors.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft gentle designs, simple medieval townsfolk clothes and warm expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Indigo dye, parchment cream, warm wood brown and soft sage green.',
+      lighting_and_shadow: 'Warm homely window light and soft candlelight in small workshops.',
+      texture_and_material: 'Soft cel with woodblock print patterns and paper textures.',
       camera_and_composition:
-        'Keep the requested view; bold flat masses are balanced against small detailed areas.',
-      atmosphere_and_mood: 'Quietly studious and devoted, patient work by lamplight.',
+        'Cozy workshop compositions at workbenches and busy medieval town streets.',
+      atmosphere_and_mood: 'Keep the requested mood with devoted homely craft.',
       rendering_and_quality:
-        'Clean block boundaries, controlled hatching and visible print texture throughout.',
-      key_features:
-        'inky indigo blocks; cream paper grain; fine hatchwork; slight off-register edges; amber accent ink',
+        'Gentle homely fantasy television frame with indigo block-print texture.',
+      key_features: 'Indigo block prints; handmade books; medieval town; warmth',
       creative_brief:
-        "Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges. Carry it through inky indigo blocks, cream paper grain, fine hatchwork, slight off-register edges, amber accent ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Ajia-do Ascendance of a Bookworm look (2019): gentle medieval town life, indigo block-print patterns, handmade paper and books, warm homely fantasy. Carry it through Indigo block prints, handmade books, medieval town, warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-250',
-    name: 'Grounded Matte Geometry Cel',
-    displayName: 'Grounded Matte Geometry Cel',
-    styleAnchors: ['Grounded Matte Geometry Cel', 'The Faraway Paladin - Quiet Temple Quest'],
+    name: 'The Faraway Paladin - Grounded Matte Geometry Cel',
+    displayName: 'The Faraway Paladin - Grounded Matte Geometry Cel',
+    styleAnchors: [
+      'The Faraway Paladin - Grounded Matte Geometry Cel',
+      'The Faraway Paladin - Quiet Temple Quest',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, god rays, halo, temple hallway, stone bridge at sunset, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, god rays, halo, temple hallway, stone bridge at sunset, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light.',
+        'Children’s Playground Entertainment The Faraway Paladin look (2021): grounded matte fantasy, undead mentors, ruined temples, calm devotion and solid geometric compositions.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify secondary detail and let the subject settle into stable geometric shapes; add no religion, halos or temples.',
-      color_and_tone:
-        'Natural earth tones, pale gold and muted blue-grey, matte and low in saturation.',
-      lighting_and_shadow:
-        'Broad soft morning light with no rays or halos and a single soft shadow tier.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded fantasy designs, simple armor, calm devout faces and undead with gentle personalities. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Matte stone grey, earth brown, pale gold and forest green.',
+      lighting_and_shadow: 'Matte soft light in ruins and warm temple glow.',
       texture_and_material:
-        'Matte gouache-like planes, fine grain and clean transitions between edges.',
-      camera_and_composition:
-        'Keep the requested view; centered symmetrical balance and steady horizontals.',
-      atmosphere_and_mood: 'Calm, ethical and steady, a promise quietly kept.',
-      rendering_and_quality: 'Clean silhouettes, gentle shadows and a modest amount of detail.',
-      key_features:
-        'matte gouache planes; simple stable geometry; pale gold and blue-grey; no rays or halos; centered balance',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
+      camera_and_composition: 'Solid geometric temple compositions and quiet training scenes.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet devout growth.',
+      rendering_and_quality: 'Grounded matte fantasy television frame with solid calm composition.',
+      key_features: 'Matte grounded fantasy; undead mentors; ruined temples; devotion',
       creative_brief:
-        "Quiet anime cel with matte painted planes organized by simple geometry, squares, triangles and verticals, under broad gentle light. Carry it through matte gouache planes, simple stable geometry, pale gold and blue-grey, no rays or halos, centered balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Children’s Playground Entertainment The Faraway Paladin look (2021): grounded matte fantasy, undead mentors, ruined temples, calm devotion and solid geometric compositions. Carry it through Matte grounded fantasy, undead mentors, ruined temples, devotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-253',
-    name: 'Glass-Green High-Key Herbarium Cel',
-    displayName: 'Glass-Green High-Key Herbarium Cel',
+    name: 'Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel',
+    displayName: 'Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel',
     styleAnchors: [
-      'Glass-Green High-Key Herbarium Cel',
+      'Saint’s Magic Power Diomedea - Glass-Green High-Key Herbarium Cel',
       "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, laboratory room, crowded table, dark low key, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, laboratory room, crowded table, dark low key, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light.',
+        'Diomedea The Saint’s Magic Power Is Omnipotent look (2021): high-key glass-green herb gardens, gentle court romance, potion workshops and soft sparkling light.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Veinlike strokes echo existing contours only; never add plants, a laboratory or bookshelves.',
-      color_and_tone: 'Glass green, pale cream and muted gold in a high key where whites dominate.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle romance designs, long dark hair, researcher robes and knightly uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Glass green, herb mint, white and soft gold.',
       lighting_and_shadow:
-        'Soft high-key daylight with clean reflected highlights and no visible glow source.',
+        'High-key bright greenhouse light through glass and gentle sparkles on leaves.',
       texture_and_material:
-        'Transparent layered washes, fine vein detail and tidy painted surfaces.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; orderly spacing with plenty of pale ground around the subject.',
-      atmosphere_and_mood: 'Serene, clean and composed, like cool air in the morning.',
+        'Greenhouse and potion workshop compositions with gentle romantic two-shots.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle herbal romance.',
       rendering_and_quality:
-        'Thin crisp contours over transparent washes with minimal bloom and no clutter.',
-      key_features:
-        'glass-green translucence; veinlike linework; high-key cream ground; transparent washes; muted gold accents',
+        'Bright high-key fantasy television frame with herbarium sparkle and glass.',
+      key_features: 'Glass-green greenhouse; herb potions; gentle romance; high key',
       creative_brief:
-        "Refined high-key anime cel with glass-green translucence and delicate veinlike linework, like a pressed-specimen plate under clear light. Carry it through glass-green translucence, veinlike linework, high-key cream ground, transparent washes, muted gold accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Diomedea The Saint’s Magic Power Is Omnipotent look (2021): high-key glass-green herb gardens, gentle court romance, potion workshops and soft sparkling light. Carry it through Glass-green greenhouse, herb potions, gentle romance, high key. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-254',
-    name: 'Lavender Halo-Arc Shoujo Cel',
-    displayName: 'Lavender Halo-Arc Shoujo Cel',
-    styleAnchors: ['Lavender Halo-Arc Shoujo Cel', 'Fushigi Yuugi - Celestial Maiden Portal Epic'],
+    name: 'Yuu Watase - Lavender Halo-Arc Shoujo Cel',
+    displayName: 'Yuu Watase - Lavender Halo-Arc Shoujo Cel',
+    styleAnchors: [
+      'Yuu Watase - Lavender Halo-Arc Shoujo Cel',
+      'Fushigi Yuugi - Celestial Maiden Portal Epic',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, school uniform, readable sigil, shrine hallway, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, school uniform, readable sigil, shrine hallway, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms.',
+        'Yuu Watase Fushigi Yuugi look: nineties shojo fantasy, ancient Chinese-inspired kingdoms, celestial warriors, sparkling eyes, flowing hair and lavender halos.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Arcs follow existing contours; add no portals, sigils or school uniforms.',
-      color_and_tone: 'Lavender, deep blue and selective warm red in clean melodramatic contrast.',
-      lighting_and_shadow:
-        'Soft rim light and luminous ring-shaped value accents that stay graphic rather than glowing.',
-      texture_and_material:
-        'Smooth cel fills, star-shaped sparkle marks and fine flower-like screen accents.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Watase designs, big sparkling eyes, long flowing hair and ancient robes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lavender, rose pink, celestial gold and deep crimson robes.',
+      lighting_and_shadow: 'Soft halo glows around heads and celestial light from constellations.',
+      texture_and_material: 'Nineties shojo cel with sparkles, halos and floating petals.',
       camera_and_composition:
-        'Keep the requested view; curved spacing and arcs frame the focal emphasis.',
-      atmosphere_and_mood: 'Tender and melodramatic, a heartbeat before a confession.',
-      rendering_and_quality:
-        'Clear silhouettes, fine ornament and controlled bloom around the focal forms.',
-      key_features:
-        'halo-like value rings; lavender and deep blue; large sparkling eyes; star sparkle marks; flowing hair arcs',
+        'Romantic sparkling close-ups and celestial wide shots of ancient palaces.',
+      atmosphere_and_mood: 'Keep the requested mood with dreamy celestial devotion.',
+      rendering_and_quality: 'Classic nineties shojo fantasy television frame with dreamy glow.',
+      key_features: 'Yuu Watase shojo; celestial warriors; lavender halos; sparkles',
       creative_brief:
-        "Early-1990s shoujo fantasy cel: tall slender figures, large sparkling eyes, flowing hair and ornamental halo-like value rings arcing behind focal forms. Carry it through halo-like value rings, lavender and deep blue, large sparkling eyes, star sparkle marks, flowing hair arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yuu Watase Fushigi Yuugi look: nineties shojo fantasy, ancient Chinese-inspired kingdoms, celestial warriors, sparkling eyes, flowing hair and lavender halos. Carry it through Yuu Watase shojo, celestial warriors, lavender halos, sparkles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-255',
-    name: 'Gem-Facet Rising-Line Cel',
-    displayName: 'Gem-Facet Rising-Line Cel',
-    styleAnchors: ['Gem-Facet Rising-Line Cel', 'Magic Knight Rayearth - Gem-Engine Rescue Quest'],
+    name: 'Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel',
+    displayName: 'Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel',
+    styleAnchors: [
+      'Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel',
+      'Magic Knight Rayearth - Gem-Engine Rescue Quest',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'three schoolgirls in red, blue and green magic armor, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights.',
+        'TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Upward line accents follow existing motion; add no team, rescue or vehicle.',
-      color_and_tone:
-        'Ruby, sapphire and emerald hues with bright gold, clear and saturated, shifting warm to cool along the lines.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP nineties designs, long legs, big eyes, flowing hair and gem-studded armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ruby red, sapphire blue, emerald green and gold.',
       lighting_and_shadow:
-        'Luminous edge highlights and crisp contained glow, with faceted gem glints on focal points.',
-      texture_and_material: 'Smooth cel fills, fine facet breaks and small sparkle accents.',
-      camera_and_composition:
-        'Keep the requested view; rising diagonals and vertical lift carry the eye upward.',
-      atmosphere_and_mood: 'Buoyant, optimistic and energetic, everything lifting toward the sky.',
-      rendering_and_quality:
-        'Sharp contours and bright color separation, with glow reserved for small focal accents.',
-      key_features:
-        'upward-sweeping lines; ruby-sapphire-emerald hues; faceted gem glints; crisp contained glow; rising diagonals',
+        'Gem sparkle light on armor and a bright fantasy sky with floating islands.',
+      texture_and_material: 'Nineties cel with faceted gem highlights and bright clean shading.',
+      camera_and_composition: 'Rising speed-line action poses and floating island wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with bright heroic wonder.',
+      rendering_and_quality: 'Bright 1994 TMS television frame with gem sparkle and heroic energy.',
+      key_features: 'Rayearth gem armor; CLAMP nineties; floating islands; speed lines',
       creative_brief:
-        "Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights. Carry it through upward-sweeping lines, ruby-sapphire-emerald hues, faceted gem glints, crisp contained glow, rising diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-096',
-    name: 'Hyper-Saturated Impossible Perspective Cel',
-    displayName: 'Hyper-Saturated Impossible Perspective Cel',
+    name: 'No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel',
+    displayName: 'No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel',
     styleAnchors: [
-      'Hyper-Saturated Impossible Perspective Cel',
+      'No Game No Life Madhouse - Hyper-Saturated Impossible Perspective Cel',
       'No Game No Life – Hyper-Saturated Strategy Fantasy',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, chess pieces, playing cards, dice, game UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, numbers, readable symbols, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a hoodie-wearing gamer brother with a long-haired little sister, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, chess pieces, playing cards, dice, game UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, numbers, readable symbols, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective.',
+        'Madhouse No Game No Life look (2014): hyper-saturated neon-pastel fantasy, impossible perspective worlds, giant chess pieces and gamer siblings with glowing edges.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Keep subjects recognizable and fold the perspective around them without adding cards, chess pieces or dice.',
-      color_and_tone:
-        'Magenta, cyan and yellow on dark violet, oversaturated with rainbow-shifted edges.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuu Kamiya-derived designs, glowing edges, vivid hair colors and casual gamer outfits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hyper-saturated magenta, cyan, gold and violet with neon pastel skies.',
       lighting_and_shadow:
-        'Hard clean highlights, emissive graphic edges and colored rather than grey shadows.',
+        'Glowing neon rim light outlining every figure and object against vivid skies.',
       texture_and_material:
-        'Flat opaque color, polished accents and thin chromatic fringing on contours.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the framing but bend the perspective: several vanishing points, floating planes and upside-down elements.',
-      atmosphere_and_mood: 'Bold, cerebral and kinetic, a world that plays by other rules.',
+        'Impossible perspective wide shots with floating chess boards and tilted worlds.',
+      atmosphere_and_mood: 'Keep the requested mood with giddy strategic wonder.',
       rendering_and_quality:
-        'Sharp silhouettes that stay readable despite the distortion, with clean color separation.',
-      key_features:
-        'candy-neon planes; chromatic aberration fringes; multiple vanishing points; colored shadows; floating inverted elements',
+        'Hyper-saturated Madhouse television frame with impossible fantasy worlds.',
+      key_features: 'Hyper-saturation; impossible perspective; giant chess; glowing edges',
       creative_brief:
-        "High-saturation digital anime with candy-neon color planes, chromatic aberration fringes and deliberately impossible, tilted perspective. Carry it through candy-neon planes, chromatic aberration fringes, multiple vanishing points, colored shadows, floating inverted elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse No Game No Life look (2014): hyper-saturated neon-pastel fantasy, impossible perspective worlds, giant chess pieces and gamer siblings with glowing edges. Carry it through Hyper-saturation, impossible perspective, giant chess, glowing edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-251',
-    name: 'Khaki Compressed-Diagonal Cel',
-    displayName: 'Khaki Compressed-Diagonal Cel',
+    name: 'Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel',
+    displayName: 'Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel',
     styleAnchors: [
-      'Khaki Compressed-Diagonal Cel',
+      'Saga of Tanya the Evil NUT - Khaki Compressed-Diagonal Cel',
       'Saga of Tanya the Evil - Aerial War Mage Doctrine',
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, military insignia, flags, aircraft, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a small blonde officer with a sinister smile, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, military insignia, flags, aircraft, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still.',
+        'NUT Saga of Tanya the Evil look (2017): alternate WWI war fantasy, khaki palettes, aerial war mages, compressed diagonal battle compositions and sinister smiles.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Compress shapes where motion is present; add no aircraft, gear, flags or insignia.',
-      color_and_tone:
-        'Muted khaki, field grey and deep blue-grey with clean pale highlights, a disciplined limited range.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shinobu Shinotsuki-derived designs, military uniforms, flight goggles and cold calculating faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Khaki uniforms, olive fields, grey war skies and orange explosions.',
       lighting_and_shadow:
-        'Hard overcast-sky light with short shadow breaks and a bright sky behind dark compact silhouettes.',
+        'Grey overcast war light broken by orange explosive flashes and tracer glow.',
       texture_and_material:
-        'Crisp filled shapes, restrained metallic glints and a trace of painted grain.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; steep diagonal horizons and directional overlap group the silhouettes.',
-      atmosphere_and_mood: 'Tense, disciplined and precise, a held breath before orders.',
-      rendering_and_quality:
-        'Economical detail, stable contours and strong contrast without overloading the image.',
-      key_features:
-        'swept diagonals; khaki and field grey; clipped high-key sky; compact silhouettes; newsreel-still stillness',
+        'Compressed diagonal aerial battle compositions and muddy trench wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with cold militaristic menace.',
+      rendering_and_quality: 'Khaki alternate-war fantasy frame with aerial mage battles.',
+      key_features: 'Alternate WWI; khaki; aerial war mages; compressed diagonals',
       creative_brief:
-        "Compact, forceful military-fantasy anime cel with swept diagonals, crisp silhouettes and clipped high-key contrast, drawn like a newsreel still. Carry it through swept diagonals, khaki and field grey, clipped high-key sky, compact silhouettes, newsreel-still stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "NUT Saga of Tanya the Evil look (2017): alternate WWI war fantasy, khaki palettes, aerial war mages, compressed diagonal battle compositions and sinister smiles. Carry it through Alternate WWI, khaki, aerial war mages, compressed diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-097',
-    name: 'Ivory-Charcoal Baroque Symmetry Cel',
-    displayName: 'Ivory-Charcoal Baroque Symmetry Cel',
-    styleAnchors: ['Ivory-Charcoal Baroque Symmetry Cel', 'Overlord – Bone Throne Dark Dominion'],
+    name: 'Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel',
+    displayName: 'Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel',
+    styleAnchors: [
+      'Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel',
+      'Overlord – Bone Throne Dark Dominion',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, skeletal ruler, skull pile, cathedral interior default, grey 3D render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required throne, army, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a skeletal overlord in black robes with a golden staff, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, skeletal ruler, skull pile, cathedral interior default, grey 3D render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required throne, army, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language.',
+        'Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Emphasize major shapes with measured contour and balanced weighty detail; add no throne, army, skulls or architecture.',
-      color_and_tone:
-        'Bone ivory, charcoal and muted brass in a cold limited range with deep values.',
-      lighting_and_shadow:
-        'Cool controlled light divides large planes and reserves narrow highlights for the focal forms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people and monsters with ornate designs, skeletal lords in rich robes and elegant monstrous servants. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ivory marble, charcoal shadows, deep royal purple and ornate gold.',
+      lighting_and_shadow: 'Dramatic throne-room light from high windows and eerie magical glows.',
       texture_and_material:
-        'Matte shadow masses, smooth enamel-like accents and faint powdery grain in the darks.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.',
       camera_and_composition:
-        'Keep the requested view; formal mirror balance and broad negative space around a central axis.',
-      atmosphere_and_mood: 'Severe and composed, a heavy pressure that never turns violent.',
+        'Perfectly symmetrical throne compositions and grand baroque halls lined with servants.',
+      atmosphere_and_mood: 'Keep the requested mood with ornate villainous grandeur.',
       rendering_and_quality:
-        'Detail held within clean edges and deep values, with subtle grain softening the darkest areas.',
-      key_features:
-        'baroque bilateral symmetry; ivory against charcoal; cold narrow highlights; monumental value planes; powdery grain',
+        'Grand baroque dark fantasy television frame with villainous ornament.',
+      key_features: 'Baroque throne rooms; symmetry; skeletal lords; loyal guardians',
       creative_brief:
-        "Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language. Carry it through baroque bilateral symmetry, ivory against charcoal, cold narrow highlights, monumental value planes, powdery grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur. Carry it through Baroque throne rooms, symmetry, skeletal lords, loyal guardians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-247',
-    name: 'Lilac Thorn-Line Chiaroscuro Cel',
-    displayName: 'Lilac Thorn-Line Chiaroscuro Cel',
+    name: 'Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel',
+    displayName: 'Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel',
     styleAnchors: [
-      'Lilac Thorn-Line Chiaroscuro Cel',
+      'Kore Yamazaki - Lilac Thorn-Line Chiaroscuro Cel',
       "The Ancient Magus' Bride - Thorn Cottage Enchantment",
     ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cottage garden default, flower wall, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a tall figure with an animal skull head, a red-haired girl in a cloak, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, cottage garden default, flower wall, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center.',
+        'Kore Yamazaki The Ancient Magus’ Bride look: British-folklore fantasy, gentle thorn-line ornament, fae creatures, lilac and moss palettes and tender chiaroscuro.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Fine branching strokes may echo existing contours but must not add plants, a cottage or a garden.',
-      color_and_tone:
-        'Cool lilac and muted greens against warm cream and deep umber, most of the frame in shadow.',
-      lighting_and_shadow:
-        'Small warm highlights emerging from cool deep shadow, a soft pool of light around the focal edges.',
-      texture_and_material:
-        'Fine thorn-like line detail, delicate grain and soft painted color layered in the darks.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yamazaki designs, gentle faces, red or dark hair, cottage clothes and uncanny fae beings. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lilac, moss green, bone white and soft crimson.',
+      lighting_and_shadow: 'Soft chiaroscuro inside cozy cottages and in misty forest glades.',
+      texture_and_material: 'Fine thorn-line ornament framing figures and soft painterly color.',
       camera_and_composition:
-        'Keep the requested view; dark branching framing values close in around a lit center.',
-      atmosphere_and_mood: 'Romantic and quietly uncanny, beauty with thorns.',
+        'Cottage garden and forest compositions filled with small fae creatures.',
+      atmosphere_and_mood: 'Keep the requested mood with tender uncanny enchantment.',
       rendering_and_quality:
-        'Detailed contours against softly painted distance, precise focal form and restrained glow.',
-      key_features:
-        'thorny branching contours; lilac glints; umber chiaroscuro framing; lit center; delicate grain',
+        'Tender British-folklore fantasy illustration with uncanny gentleness and thorny ornament.',
+      key_features: 'Kore Yamazaki folklore; thorn lines; fae beings; lilac and moss',
       creative_brief:
-        "Luminous botanical anime cel in chiaroscuro: intricate thorny branching contours, lilac highlights and deep brown darkness framing a lit center. Carry it through thorny branching contours, lilac glints, umber chiaroscuro framing, lit center, delicate grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Kore Yamazaki The Ancient Magus’ Bride look: British-folklore fantasy, gentle thorn-line ornament, fae creatures, lilac and moss palettes and tender chiaroscuro. Carry it through Kore Yamazaki folklore, thorn lines, fae beings, lilac and moss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-256',
-    name: 'Vermilion Indigo Tapered-Ink Cel',
-    displayName: 'Vermilion Indigo Tapered-Ink Cel',
-    styleAnchors: ['Vermilion Indigo Tapered-Ink Cel', 'Inuyasha - Shrine-Well Sengoku Pursuit'],
+    name: 'Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel',
+    displayName: 'Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel',
+    styleAnchors: [
+      'Rumiko Takahashi Inuyasha - Vermilion Indigo Tapered-Ink Cel',
+      'Inuyasha - Shrine-Well Sengoku Pursuit',
+    ],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, red-robed character copy, shrine hallway, readable talisman, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a silver-haired dog-eared half demon in red robes, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, red-robed character copy, shrine hallway, readable talisman, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded.',
+        'Rumiko Takahashi Inuyasha look: Sengoku-era feudal Japan, tapered ink lines, vermilion and indigo palettes, demons, shrines and time-slip adventure.',
       subject_treatment:
-        'Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Flowing tapered marks describe existing movement rather than a pursuit; add no shrine, well, sword or talisman.',
-      color_and_tone:
-        'Vermilion, cream, muted indigo and charcoal in nostalgic, slightly faded contrast.',
-      lighting_and_shadow:
-        'Soft dusk-like shadow and restrained warm edge light, without requiring night or a new source.',
-      texture_and_material:
-        'Faded cel color, tapering brush lines that swell and thin, and subtle grain.',
-      camera_and_composition:
-        'Keep the requested view; gentle horizontal rhythm with long flowing contours.',
-      atmosphere_and_mood: 'Nostalgic and mythic, a story told at dusk.',
-      rendering_and_quality:
-        'A focal silhouette sharp enough to read through the soft color fade and low-contrast detail.',
-      key_features:
-        'tapered brush-ink contours; vermilion accents; faded indigo dusk; sun-faded cel color; horizontal flow',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, round faces, big simple eyes, kimono, armor and demon features. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Vermilion robes, indigo night, forest green and earthy brown.',
+      lighting_and_shadow: 'Natural feudal forest light through trees and eerie demonic glows.',
+      texture_and_material: 'Tapered brush-like ink lines and clean flat cel color.',
+      camera_and_composition: 'Feudal forest adventure framing and quiet shrine compositions.',
+      atmosphere_and_mood: 'Keep the requested mood with feudal adventurous romance.',
+      rendering_and_quality: 'Classic feudal fantasy television frame with tapered ink lines.',
+      key_features: 'Rumiko Takahashi feudal; vermilion and indigo; demons; shrines',
       creative_brief:
-        "Folkloric 1990s anime cel with tapered brush-ink contours, warm vermilion accents and faded indigo dusk values, as if the cels were slightly sun-faded. Carry it through tapered brush-ink contours, vermilion accents, faded indigo dusk, sun-faded cel color, horizontal flow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Rumiko Takahashi Inuyasha look: Sengoku-era feudal Japan, tapered ink lines, vermilion and indigo palettes, demons, shrines and time-slip adventure. Carry it through Rumiko Takahashi feudal, vermilion and indigo, demons, shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-223
 packId: pack_05
-name: Armored Chrome Noir Elegance
+name: Bubblegum Crisis AIC - Armored Chrome Noir Elegance
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Airbrushed chrome noir illustration: mirror surfaces rendered as hard black-and-white bands with a reflected horizon line, deep black masses, and pinpoint star glints.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Black, pewter, silver and smoke, with tiny magenta or cyan reflections caught in the chrome.
-  lighting_and_shadow: Hard single key from above and behind; chrome reads through sharp reflected bands, a horizon line across curved surfaces, and starburst glints.
-  texture_and_material: Seamless airbrushed gradients and mirror polish with minimal scuffing, against a background that falls into velvet black.
-  camera_and_composition: Keep the requested view; isolate the subject against black with generous negative space and one elegant reflective contour.
-  atmosphere_and_mood: Poised, cool and seductive noir elegance, stillness with a knife edge.
-  rendering_and_quality: Masked-airbrush smoothness, crisp hard-edged reflection bands and starburst glints; no plastic 3D CG look.
-  key_features: airbrushed chrome banding; reflected horizon line; velvet black background; pinpoint starburst glints; tiny magenta and cyan reflections
-  creative_brief: "Airbrushed chrome noir illustration: mirror surfaces rendered as hard black-and-white bands with a reflected horizon line, deep black masses, and pinpoint star glints. Carry it through airbrushed chrome banding, reflected horizon line, velvet black background, pinpoint starburst glints, tiny magenta and cyan reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'AIC Bubblegum Crisis OVA look (1987) with Kenichi Sonoda designs: sleek chrome hardsuits, eighties megacity neon, rock music noir and glossy android menace.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sonoda designs, big eighties hair, sleek chrome hardsuits and glossy android bodies. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Chrome silver, neon magenta, night blue and hot pink.
+  lighting_and_shadow: Neon megacity night light and hard chrome reflections on hardsuits.
+  texture_and_material: Glossy hand-painted cel with airbrushed chrome highlights and soft grain.
+  camera_and_composition: Low noir angles in rainy streets and dynamic hardsuit action sequences.
+  atmosphere_and_mood: Keep the requested mood with sleek chrome noir.
+  rendering_and_quality: Glossy 1987 OVA frame with chrome and neon.
+  key_features: Bubblegum Crisis hardsuits; chrome noir; eighties neon; Sonoda designs
+  creative_brief: "AIC Bubblegum Crisis OVA look (1987) with Kenichi Sonoda designs: sleek chrome hardsuits, eighties megacity neon, rock music noir and glossy android menace. Carry it through Bubblegum Crisis hardsuits, chrome noir, eighties neon, Sonoda designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -57,10 +58,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-223.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, rain-soaked neon street, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, rain-soaked neon street, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -69,8 +74,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Bubblegum Crisis AIC - Armored Chrome Noir Elegance
+styleAnchors:
+  - Bubblegum Crisis AIC - Armored Chrome Noir Elegance

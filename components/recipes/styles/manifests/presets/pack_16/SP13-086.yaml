@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Masaaki Nakayama - Cursed Videotape Horror
 category: 7. Horror
 domain: analog tape horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Masaaki Nakayama manga look as in Fuan no Tane: ordinary everyday scenes with one wrongly placed figure, stiff doll-like apparitions and quiet shock panels.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with plain realistic designs, everyday clothes and one stiff pale apparition that is subtly wrong. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black ink and grey tone with washed-out home-video tint.
   lighting_and_shadow: Flat domestic light with a dark doorway or hallway holding the threat.
   texture_and_material: Clean realistic pen line, tone and slightly degraded video noise.
@@ -38,8 +38,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -50,11 +48,11 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-231
 packId: pack_05
-name: Coral Resonance Liturgy
+name: RahXephon BONES - Coral Resonance Liturgy
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Bioluminescent fluorescent-paint anime: a dark abyssal base with luminous teal and coral lines painted like glowing ink, radiating stipple dots and concentric halos.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Abyssal navy and teal with glowing coral pink, pale aqua and pearl; glow colors appear only on lines and dots.
-  lighting_and_shadow: 'No external light: forms are lit from within by their glowing lines, with soft bloom and concentric ring highlights.'
-  texture_and_material: Fine radiating stipple, branching vein-like lines, and a soft translucent glow haze over dark cel shadow.
-  camera_and_composition: Keep the requested view; repeat concentric rings and branching lines outward from the focal form.
-  atmosphere_and_mood: Reverent, resonant and hushed, a slow pulse of light in deep dark.
-  rendering_and_quality: Crisp glowing linework over dark cel masses, controlled bloom and radiating dot patterns; never daylight.
-  key_features: self-luminous teal and coral lines; branching vein patterns; radiating stipple dots; concentric halo rings; abyssal navy base
-  creative_brief: "Bioluminescent fluorescent-paint anime: a dark abyssal base with luminous teal and coral lines painted like glowing ink, radiating stipple dots and concentric halos. Carry it through self-luminous teal and coral lines, branching vein patterns, radiating stipple dots, concentric halo rings, abyssal navy base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'BONES RahXephon look (2002) with Akihiro Yamada designs: art nouveau-flavored elegant figures, singing ceramic-like mechs, Tokyo under a dome and musical mysticism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akihiro Yamada designs, refined faces, flowing hair and elegant uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Coral pink, ceramic white, sea blue and gold.
+  lighting_and_shadow: Soft resonant glow from ceramic mechs and luminous coral-tinted skies.
+  texture_and_material: Clean cel with painterly art nouveau ornament and ceramic surfaces.
+  camera_and_composition: Elegant balanced compositions and slow resonant reveals of singing mechs.
+  atmosphere_and_mood: Keep the requested mood with mystical musical resonance.
+  rendering_and_quality: Refined BONES television frame with art nouveau elegance and musical mysticism.
+  key_features: RahXephon art nouveau; singing mechs; coral colors; resonance
+  creative_brief: "BONES RahXephon look (2002) with Akihiro Yamada designs: art nouveau-flavored elegant figures, singing ceramic-like mechs, Tokyo under a dome and musical mysticism. Carry it through RahXephon art nouveau, singing mechs, coral colors, resonance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -47,7 +48,6 @@ avoidRules:
   - angel/robot copy
   - cathedral corridor
   - readable glyphs
-  - body-horror gore
   - plastic 3d robot render
   - cockpit source-frame look
   - readable UI panel
@@ -65,10 +65,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-231.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, daylight, flat even lighting, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, daylight, flat even lighting, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,8 +81,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: RahXephon BONES - Coral Resonance Liturgy
+styleAnchors:
+  - RahXephon BONES - Coral Resonance Liturgy

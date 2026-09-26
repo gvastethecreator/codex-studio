@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-097
 packId: pack_05
-name: Ivory-Charcoal Baroque Symmetry Cel
+name: Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Emphasize major shapes with measured contour and balanced weighty detail; add no throne, army, skulls or architecture.
-  color_and_tone: Bone ivory, charcoal and muted brass in a cold limited range with deep values.
-  lighting_and_shadow: Cool controlled light divides large planes and reserves narrow highlights for the focal forms.
-  texture_and_material: Matte shadow masses, smooth enamel-like accents and faint powdery grain in the darks.
-  camera_and_composition: Keep the requested view; formal mirror balance and broad negative space around a central axis.
-  atmosphere_and_mood: Severe and composed, a heavy pressure that never turns violent.
-  rendering_and_quality: Detail held within clean edges and deep values, with subtle grain softening the darkest areas.
-  key_features: baroque bilateral symmetry; ivory against charcoal; cold narrow highlights; monumental value planes; powdery grain
-  creative_brief: "Monumental anime cel painting with baroque bilateral symmetry, heavy value planes and a restrained ornamental silhouette language. Carry it through baroque bilateral symmetry, ivory against charcoal, cold narrow highlights, monumental value planes, powdery grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people and monsters with ornate designs, skeletal lords in rich robes and elegant monstrous servants. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ivory marble, charcoal shadows, deep royal purple and ornate gold.
+  lighting_and_shadow: Dramatic throne-room light from high windows and eerie magical glows.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Perfectly symmetrical throne compositions and grand baroque halls lined with servants.
+  atmosphere_and_mood: Keep the requested mood with ornate villainous grandeur.
+  rendering_and_quality: Grand baroque dark fantasy television frame with villainous ornament.
+  key_features: Baroque throne rooms; symmetry; skeletal lords; loyal guardians
+  creative_brief: "Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur. Carry it through Baroque throne rooms, symmetry, skeletal lords, loyal guardians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a skeletal overlord in black robes with a golden staff
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -65,10 +68,13 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-097.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, skeletal ruler, skull pile, cathedral interior default, grey 3D render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required throne, army, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a skeletal overlord in black robes with a golden staff, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, skeletal ruler, skull pile, cathedral interior default, grey 3D render, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required throne, army, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -77,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Ivory-Charcoal Baroque Symmetry Cel
+displayName: Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel
 styleAnchors:
-  - Ivory-Charcoal Baroque Symmetry Cel
+  - Overlord Madhouse - Ivory-Charcoal Baroque Symmetry Cel
   - Overlord – Bone Throne Dark Dominion

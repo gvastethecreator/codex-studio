@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-232
 packId: pack_05
-name: Dustfront Drone Lament
+name: 86 A-1 Pictures - Dustfront Drone Lament
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Hazy frontier anime: stacked translucent sand-colored haze cels, soft cel figures dissolving with distance, crisp line only on the focal detail, and 16 mm film grain.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Sand, smoke gray, faded olive and dusty blue with one small amber signal light; contrast falls off in each haze layer.
-  lighting_and_shadow: Low diffuse sun filtered through dust, broad soft shadows, pale edge light, and haze glowing faintly where the sun sits.
-  texture_and_material: Floating particulate specks, soft film grain, rubbed edges and faded cel paint.
-  camera_and_composition: Keep the requested view; stack three or four haze layers between foreground and horizon to build distance.
-  atmosphere_and_mood: Lamenting, weary and quiet, a long war seen through settling dust.
-  rendering_and_quality: Layered atmospheric haze, soft focus beyond the focal plane, crisp focal line and fine grain; never crisp photoreal.
-  key_features: stacked translucent haze cels; dissolving distance; crisp line only at focus; sand and dusty blue palette; small amber signal; 16 mm grain
-  creative_brief: "Hazy frontier anime: stacked translucent sand-colored haze cels, soft cel figures dissolving with distance, crisp line only on the focal detail, and 16 mm film grain. Carry it through stacked translucent haze cels, dissolving distance, crisp line only at focus, sand and dusty blue palette, small amber signal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures 86 look (2021): dusty spider-legged drones on battlefields, clean interior command rooms contrasted with brutal front lines, and quiet lament.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with clean modern designs, uniforms, and drones with spider legs. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dust tan, olive, blood red and cold command-room blue.
+  lighting_and_shadow: Dusty battlefield sunlight contrasted with the cold glow of clean command rooms.
+  texture_and_material: Clean digital cel with CG drones and dust.
+  camera_and_composition: Split contrasts between sterile command rooms and dusty ruined battlefields.
+  atmosphere_and_mood: Keep the requested mood with quiet mournful lament.
+  rendering_and_quality: Polished A-1 Pictures television frame with dusty battle scenes and restraint.
+  key_features: 86 spider drones; dustfront; command contrast; lament
+  creative_brief: "A-1 Pictures 86 look (2021): dusty spider-legged drones on battlefields, clean interior command rooms contrasted with brutal front lines, and quiet lament. Carry it through 86 spider drones, dustfront, command contrast, lament. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -58,10 +59,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-232.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal military drone, desert war photo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, photoreal military drone, desert war photo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -70,8 +75,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: 86 A-1 Pictures - Dustfront Drone Lament
+styleAnchors:
+  - 86 A-1 Pictures - Dustfront Drone Lament

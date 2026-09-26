@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-269
 packId: pack_05
-name: Smoke-Filled Calculation Style
+name: Akagi Madhouse - Smoke-Filled Calculation Style
 styleAnchors:
-  - Smoke-Filled Calculation Style
-displayName: Smoke-Filled Calculation
+  - Akagi Madhouse - Smoke-Filled Calculation Style
+displayName: Akagi Madhouse - Smoke-Filled Calculation Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Layered gray ink-wash illustration where translucent washes stack like smoke over everything except a few crisp negative-space windows that keep chosen contours razor-exact.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Cool graphite, smoke gray and silver; the local prompt hues show only inside the clear windows.
-  lighting_and_shadow: Broad soft transitions under the washes, with a few sharply bounded highlight islands on surfaces already catching light.
-  texture_and_material: Three to five stacked transparent wash layers with pooled edges and fine graphite dust, never literal smoke.
-  camera_and_composition: Keep the requested camera; the clear windows sit on the focal area while the periphery hides behind more wash layers.
-  atmosphere_and_mood: Withheld, calculating stillness; the viewer sees only what the artist chooses.
-  rendering_and_quality: 'Selective clarity: razor contours inside the windows, veiled forms elsewhere, values still readable throughout.'
-  key_features: stacked translucent gray washes; crisp negative-space windows; graphite and silver; pooled wash edges; selective clarity
-  creative_brief: "Layered gray ink-wash illustration where translucent washes stack like smoke over everything except a few crisp negative-space windows that keep chosen contours razor-exact. Carry it through stacked translucent gray washes, crisp negative-space windows, graphite and silver, pooled wash edges, selective clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Akagi look (2005): smoky postwar mahjong parlors, Fukumoto sharp faces, cold calculation, cigarette smoke swirls and psychological tension.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fukumoto-derived pointed faces, postwar suits, cigarettes and calm cold stares. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Smoky grey, dim amber, cold green felt and black.
+  lighting_and_shadow: Dim lamplight through cigarette smoke and cold stares.
+  texture_and_material: Digital cel with smoke swirls and dark shading.
+  camera_and_composition: Tense overhead table compositions and cold close-ups on calm calculating eyes.
+  atmosphere_and_mood: Keep the requested mood with cold calculating tension.
+  rendering_and_quality: Smoky psychological Madhouse television frame with postwar gloom.
+  key_features: Akagi smoke; mahjong tension; pointed faces; cold calculation
+  creative_brief: "Madhouse Akagi look (2005): smoky postwar mahjong parlors, Fukumoto sharp faces, cold calculation, cigarette smoke swirls and psychological tension. Carry it through Akagi smoke, mahjong tension, pointed faces, cold calculation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-269.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

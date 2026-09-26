@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-268
 packId: pack_05
-name: Neon Despair Pressure Style
+name: Nobuyuki Fukumoto - Neon Despair Pressure Style
 styleAnchors:
-  - Neon Despair Pressure Style
-displayName: Neon Despair Pressure
+  - Nobuyuki Fukumoto - Neon Despair Pressure Style
+displayName: Nobuyuki Fukumoto - Neon Despair Pressure Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,17 +14,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: 'Seinen anime ink with selective chromatic edge doubling: magenta and cyan outlines slip two or three pixels off an otherwise stable black contour, like misregistered two-color print.'
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Deep neutral grays and navy fills, with saturated pink and blue-cyan kept as separate thin bands along the edges.
-  lighting_and_shadow: Colored reflected light is suggested only by the offset edges; no signs, lamps or night setting are added.
-  texture_and_material: Clean flat fills with slight pigment bloom confined to the colored edge bands.
-  camera_and_composition: Keep the requested framing and a steady silhouette; the offset color, not the camera, carries all the energy.
-  atmosphere_and_mood: Pressured, over-bright and quietly desperate under a calm surface.
-  rendering_and_quality: A stable black keyline with two offset color ghosts and flat fills; no all-over glow haze.
-  key_features: magenta and cyan edge offsets; stable black keyline; misregistered print feel; navy-gray fills; localized pigment bloom
-  creative_brief: "Seinen anime ink with selective chromatic edge doubling: magenta and cyan outlines slip two or three pixels off an otherwise stable black contour, like misregistered two-color print. Carry it through magenta and cyan edge offsets, stable black keyline, misregistered print feel, navy-gray fills, localized pigment bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Nobuyuki Fukumoto Kaiji manga look: sharp pointed chins and noses, crude bold lines, sweating anxious faces, desperate gambling tension and oppressive swirling background patterns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fukumoto designs, extremely pointed chins and noses, big sweating faces and cheap clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with heavy tone, neon purple and sickly yellow in color.
+  lighting_and_shadow: Harsh gambling-den light from bare bulbs and swirling psychological darkness closing in.
+  texture_and_material: Crude bold lines, heavy sweat drops and oppressive swirl patterns.
+  camera_and_composition: Extreme anxious close-ups on sweating faces and crowded underground gambling tables.
+  atmosphere_and_mood: Keep the requested mood with desperate crushing pressure.
+  rendering_and_quality: Crude intense psychological gambling manga illustration with oppressive tension.
+  key_features: Fukumoto pointed chins; sweat; gambling despair; swirling backgrounds
+  creative_brief: "Nobuyuki Fukumoto Kaiji manga look: sharp pointed chins and noses, crude bold lines, sweating anxious faces, desperate gambling tension and oppressive swirling background patterns. Carry it through Fukumoto pointed chins, sweat, gambling despair, swirling backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photographic still-life object
   - photoreal scene
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-268.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

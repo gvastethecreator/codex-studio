@@ -6,7 +6,7 @@ styleAnchors:
   - Initial D - Nocturnal Drift Tension
 displayName: Initial D - Nocturnal Drift Tension
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Initial D anime look (1998 onward): mountain touge races at night, CG cars drifting on hand-drawn roads, headlight beams, tofu-shop simplicity and eurobeat intensity.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno-derived designs, simple narrow eyes, plain casual clothes and tense hands on wheels. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night navy, headlight white, taillight red and guardrail grey.
   lighting_and_shadow: Headlight beams cutting fog, taillight streaks and dim mountain darkness.
   texture_and_material: Hand-drawn characters with glossy CG cars, painted mountain roads and motion blur.
@@ -64,12 +64,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-353.webp
 attributes:
-  negativePrompt: a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real team or league logo, real car brand, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

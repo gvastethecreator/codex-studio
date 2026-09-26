@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-045
 packId: pack_05
-name: Fisheye Foreshortened Reach
+name: Sushio - Fisheye Foreshortened Reach
 styleAnchors:
-  - Fisheye Foreshortened Reach
+  - Sushio - Fisheye Foreshortened Reach
   - anime action staging
   - hand reaching into an ultra-wide lens
-displayName: Fisheye Foreshortened Reach
+displayName: Sushio - Fisheye Foreshortened Reach
 category: 5. Action Motion Setpieces
 domain: anime action staging
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,17 +19,18 @@ tags:
   - action
   - fisheye
   - foreshortening
+  - reference-title
 visualDna:
-  aesthetic: 'Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve.'
-  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the ultra-wide close camera and extreme reach foreshortening, and adds no opponent, sports gear, extra prop or danger.
-  color_and_tone: Keep the prompt palette; the near hand is the brightest, most saturated area of the frame.
-  lighting_and_shadow: Front light on the reaching hand, with the body behind falling half a stop darker.
-  texture_and_material: Clean cel surfaces; detail concentrated on the near hand, simplified toward the curved edges.
-  camera_and_composition: Ultra-wide lens under half a meter from the hand, barrel curvature on straight lines, the face small but readable behind the hand.
-  atmosphere_and_mood: Direct, confrontational energy aimed at the viewer without hostility.
-  rendering_and_quality: Controlled barrel distortion and believable anatomy through the extreme foreshortening.
-  creative_brief: "Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve. Carry it through hand reaching into an ultra-wide lens, hand as large as the head, barrel-curved edges, bright near hand, small readable face behind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind
+  aesthetic: 'Sushio sakuga as in Kill la Kill and Promare: extreme fisheye foreshortening, hands and objects thrust huge toward the lens, bold flat color and punchy graphic energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with extreme foreshortening, a reaching hand or thrown object enormous in the foreground. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat orchard greens, bright fruit colors and clean highlights.
+  lighting_and_shadow: Flat bright light with bold graphic shading shapes and thick outlines.
+  texture_and_material: Clean flat color with thick outlines and graphic shapes.
+  camera_and_composition: Ultra-wide fisheye with extreme foreshortening toward the lens.
+  atmosphere_and_mood: Keep the requested mood with punchy playful reach.
+  rendering_and_quality: Showpiece sakuga key frame where the drawing itself carries the motion, never a generic still pose.
+  creative_brief: "Sushio sakuga as in Kill la Kill and Promare: extreme fisheye foreshortening, hands and objects thrust huge toward the lens, bold flat color and punchy graphic energy. Carry it through Sushio foreshortening, fisheye, thrust hands, bold flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Sushio foreshortening; fisheye; thrust hands; bold flat color
 avoidRules:
   - added opponent
   - added sports gear
@@ -46,10 +47,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-045.webp
 attributes:
-  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, broken anatomy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, broken anatomy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -60,6 +65,7 @@ taxonomy:
     - action
     - fisheye
     - foreshortening
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Wolf Children - Seasonal Intimacy Realism
 displayName: Wolf Children - Seasonal Intimacy Realism
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Mamoru Hosoda feature animation as in Wolf Children: characters with no cel shadows at all against richly painted rural Japan, seasons rolling through snow, rain and summer fields.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hosoda designs, flat unshaded skin, clean thin lines, simple faces and practical country clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Fresh greens, snow white, soft sky blue and warm tatami browns.
   lighting_and_shadow: Natural seasonal light carried by backgrounds, while characters stay flat and unshaded.
   texture_and_material: Clean thin outlines with no shadow tones on figures, painterly photographic backgrounds, snow and grass detail.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-286.webp

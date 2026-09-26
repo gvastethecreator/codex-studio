@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-259
 packId: pack_05
-name: Picture-Book Crayon Line Anime
+name: Ranking of Kings Wit - Picture-Book Crayon Line Anime
 styleAnchors:
-  - Picture-Book Crayon Line Anime
+  - Ranking of Kings Wit - Picture-Book Crayon Line Anime
   - Ranking of Kings - Storybook Crown Courage
-displayName: Picture-Book Crayon Line Anime
+displayName: Ranking of Kings Wit - Picture-Book Crayon Line Anime
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Figures simplify to soft rounded silhouettes with tiny dot features while keeping their age and identity; do not add crowns or castles.
-  color_and_tone: Warm ochre, soft coral, cream and gentle blue-green shadows at mid saturation, with paper white showing through the color.
-  lighting_and_shadow: 'Flat soft light and minimal shading: one pale shadow shape under each form instead of modeled volume.'
-  texture_and_material: Visible waxy crayon strokes following the form, colored-pencil hatching and cream paper tooth between strokes.
-  camera_and_composition: Keep the requested view; flattened picture-book staging with clear scale contrast and plenty of plain space.
-  atmosphere_and_mood: Tender and quietly brave, earnest as a bedtime story.
-  rendering_and_quality: Simple silhouettes, uneven hand-drawn line weight and deliberate gaps in the coloring, never polished digital gloss.
-  key_features: wobbly colored-pencil line; waxy crayon fills; dot eyes and rounded bodies; flat picture-book staging; paper tooth showing
-  creative_brief: "Fable-like anime drawn as a picture book: wobbly colored-pencil lineart, flat crayon-textured fills and simplified rounded shapes with small dot eyes. Carry it through wobbly colored-pencil line, waxy crayon fills, dot eyes and rounded bodies, flat picture-book staging, paper tooth showing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Wit Studio Ranking of Kings look (2021): picture-book simple designs with thick soft crayon-like lines, pastel storybook castles and emotionally powerful fairy-tale drama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with round simple picture-book designs, thick soft outlines, small bodies and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft storybook pastels, sky blue, cream, gentle green and warm red.
+  lighting_and_shadow: Soft storybook daylight with gentle simple shadows and warm pastel skies.
+  texture_and_material: Thick crayon-like soft outlines and flat pastel color.
+  camera_and_composition: Picture-book storybook compositions and heartfelt close-ups on small brave faces.
+  atmosphere_and_mood: Keep the requested mood with tender storybook courage.
+  rendering_and_quality: Charming Wit Studio television frame with picture-book softness and emotional weight.
+  key_features: Picture-book designs; crayon lines; pastel castles; tender courage
+  creative_brief: "Wit Studio Ranking of Kings look (2021): picture-book simple designs with thick soft crayon-like lines, pastel storybook castles and emotionally powerful fairy-tale drama. Carry it through Picture-book designs, crayon lines, pastel castles, tender courage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a tiny deaf prince with a crown and a shadow companion
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -68,10 +71,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-259.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, glossy digital shading, detailed sparkling anime eyes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a tiny deaf prince with a crown and a shadow companion, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, glossy digital shading, detailed sparkling anime eyes, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -80,6 +86,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

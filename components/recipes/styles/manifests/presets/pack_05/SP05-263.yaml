@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-263
 packId: pack_05
-name: Black Signal Nihilism Style
+name: Hiroya Oku - Black Signal Nihilism Style
 styleAnchors:
-  - Black Signal Nihilism Style
-displayName: Black Signal Nihilism
+  - Hiroya Oku - Black Signal Nihilism Style
+displayName: Hiroya Oku - Black Signal Nihilism Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Graphic anime ink whose contours break into dashes at uneven intervals, like a lost transmission, separated by large clean pockets of near-black negative space.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: A black-and-ash value range with one narrow cold cyan or acid-green accent on a single edge; prompt colors survive as small muted patches.
-  lighting_and_shadow: Isolated sharp pulses of reflected color on a few edges against broad flat shadow; no visible screen or light fixture is added.
-  texture_and_material: Dry graphic edges, sparse dot noise that thins as it nears the subject, and flat matte black fields without grain.
-  camera_and_composition: Keep the requested framing; near-black negative pockets fill about half the frame so the dashed subject floats inside them.
-  atmosphere_and_mood: Visual silence and numb detachment; nothing in the picture is loud.
-  rendering_and_quality: Crisp dashed contours of even weight, clean black fills and one accent color; illustrated, never a photographed object on black.
-  key_features: broken dash contours; large near-black negative pockets; one cyan or acid-green edge accent; thinning dot noise; flat matte blacks
-  creative_brief: "Graphic anime ink whose contours break into dashes at uneven intervals, like a lost transmission, separated by large clean pockets of near-black negative space. Carry it through broken dash contours, large near-black negative pockets, one cyan or acid-green edge accent, thinning dot noise, flat matte blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Hiroya Oku Gantz manga look: photo-traced hyperrealistic Tokyo backgrounds, 3D-modeled figures with glossy black suits, cold nihilistic tension and alien absurdity.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Oku realism, photographic ordinary faces, glossy black tight suits with circular nodes and ordinary Tokyo clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glossy black, cold white, Tokyo night grey and electric blue node glows.
+  lighting_and_shadow: Harsh flat apartment light and cold streetlights with glossy suit reflections.
+  texture_and_material: Photo-traced backgrounds, digitally modeled figures and screentone gradients.
+  camera_and_composition: Cinematic photographic framing, wide Tokyo streets and sudden absurd alien reveals.
+  atmosphere_and_mood: Keep the requested mood with cold nihilistic absurdity.
+  rendering_and_quality: Hyperreal digital manga illustration with photographic Tokyo detail.
+  key_features: Hiroya Oku photorealism; glossy black suits; Tokyo streets; alien absurdity
+  creative_brief: "Hiroya Oku Gantz manga look: photo-traced hyperrealistic Tokyo backgrounds, 3D-modeled figures with glossy black suits, cold nihilistic tension and alien absurdity. Carry it through Hiroya Oku photorealism, glossy black suits, Tokyo streets, alien absurdity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a large black sphere in an apartment room
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-263.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a large black sphere in an apartment room, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

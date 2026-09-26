@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-255
 packId: pack_05
-name: Gem-Facet Rising-Line Cel
+name: Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel
 styleAnchors:
-  - Gem-Facet Rising-Line Cel
+  - Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel
   - Magic Knight Rayearth - Gem-Engine Rescue Quest
-displayName: Gem-Facet Rising-Line Cel
+displayName: Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,18 +15,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights.
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Upward line accents follow existing motion; add no team, rescue or vehicle.
-  color_and_tone: Ruby, sapphire and emerald hues with bright gold, clear and saturated, shifting warm to cool along the lines.
-  lighting_and_shadow: Luminous edge highlights and crisp contained glow, with faceted gem glints on focal points.
-  texture_and_material: Smooth cel fills, fine facet breaks and small sparkle accents.
-  camera_and_composition: Keep the requested view; rising diagonals and vertical lift carry the eye upward.
-  atmosphere_and_mood: Buoyant, optimistic and energetic, everything lifting toward the sky.
-  rendering_and_quality: Sharp contours and bright color separation, with glow reserved for small focal accents.
-  key_features: upward-sweeping lines; ruby-sapphire-emerald hues; faceted gem glints; crisp contained glow; rising diagonals
-  creative_brief: "Bright 1990s magical-adventure cel with long upward-sweeping lines, clear gem-tone color shifts and faceted gem highlights. Carry it through upward-sweeping lines, ruby-sapphire-emerald hues, faceted gem glints, crisp contained glow, rising diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP nineties designs, long legs, big eyes, flowing hair and gem-studded armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ruby red, sapphire blue, emerald green and gold.
+  lighting_and_shadow: Gem sparkle light on armor and a bright fantasy sky with floating islands.
+  texture_and_material: Nineties cel with faceted gem highlights and bright clean shading.
+  camera_and_composition: Rising speed-line action poses and floating island wide shots.
+  atmosphere_and_mood: Keep the requested mood with bright heroic wonder.
+  rendering_and_quality: Bright 1994 TMS television frame with gem sparkle and heroic energy.
+  key_features: Rayearth gem armor; CLAMP nineties; floating islands; speed lines
+  creative_brief: "TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - three schoolgirls in red, blue and green magic armor
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -67,10 +70,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-255.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: three schoolgirls in red, blue and green magic armor, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +85,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

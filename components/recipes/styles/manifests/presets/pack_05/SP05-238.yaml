@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-238
 packId: pack_05
-name: Tokusatsu Digital Grid Scale
+name: SSSS.Gridman Trigger - Tokusatsu Digital Grid Scale
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Digital tokusatsu-homage anime: clean cel shading in bold saturated primaries, low telephoto giant-scale framing, and fine glowing grid lines tracing major contours.'
-  subject_treatment: Keep the prompt subject, action and setting redrawn in this mechanical anime rendering; this preset owns a low telephoto giant-scale camera, and a plant stays a plant, never a robot or kaiju.
-  color_and_tone: Steel white, navy and signal red or cyan in hard blocks, against bright summer-sky blue and towering white cumulus.
-  lighting_and_shadow: Crisp midday sun with hard two-tone cel shadows and thin glowing cyan grid lines along the major edges.
-  texture_and_material: Smooth digital cel paint with tiny miniature-set detail at ground level so the subject reads colossal.
-  camera_and_composition: "Owns a worm's-eye telephoto view: horizon low, depth compressed, the subject towering above tiny rooftops, poles or trees."
-  atmosphere_and_mood: Bright heroic summer-afternoon spectacle with a hint of toy-model wonder.
-  rendering_and_quality: Clean vector cel lines, two shadow values, glowing grid-line accents and crisp cumulus; no painterly mush.
-  key_features: worm's-eye telephoto giant scale; bold primary color blocks; glowing cyan grid-line contours; towering summer cumulus; miniature ground detail
-  creative_brief: "Digital tokusatsu-homage anime: clean cel shading in bold saturated primaries, low telephoto giant-scale framing, and fine glowing grid lines tracing major contours. Carry it through worm's-eye telephoto giant scale, bold primary color blocks, glowing cyan grid-line contours, towering summer cumulus, miniature ground detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Trigger SSSS.Gridman look (2018): tokusatsu-homage giants and kaiju in quiet suburbs, silent pastel towns, power lines, and CG giants with rubber-suit charm.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Trigger designs, quiet pastel school or casual clothes, and giants with tokusatsu rubber-suit proportions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel sky blue, power-line grey, kaiju navy and hero red.
+  lighting_and_shadow: Quiet pastel suburban daylight broken by glowing hero beams and kaiju flashes.
+  texture_and_material: Clean cel with CG giant models and painted suburbs.
+  camera_and_composition: Low suburban angles with giants towering between power lines.
+  atmosphere_and_mood: Keep the requested mood with uncanny quiet spectacle.
+  rendering_and_quality: Stylish Trigger frame mixing quiet suburbs and tokusatsu spectacle.
+  key_features: Gridman tokusatsu giants; pastel suburbs; power lines; kaiju
+  creative_brief: "Studio Trigger SSSS.Gridman look (2018): tokusatsu-homage giants and kaiju in quiet suburbs, silent pastel towns, power lines, and CG giants with rubber-suit charm. Carry it through Gridman tokusatsu giants, pastel suburbs, power lines, kaiju. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-238.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, white-blue-red hero robot copy, V-fin horned faceplate copy, suited hero copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, white-blue-red hero robot copy, V-fin horned faceplate copy, suited hero copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,8 +76,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: SSSS.Gridman Trigger - Tokusatsu Digital Grid Scale
+styleAnchors:
+  - SSSS.Gridman Trigger - Tokusatsu Digital Grid Scale

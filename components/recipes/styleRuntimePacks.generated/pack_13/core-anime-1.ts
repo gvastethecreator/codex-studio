@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spirit Shrine Twilight',
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror gore, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
         'Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies.',
@@ -363,7 +363,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Forest Spirit Courier',
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, dark gore, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
         'Forest courier anime: gentle hand-drawn frames of young couriers flying or cycling through lush countryside and small towns.',
@@ -458,12 +458,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Core Anime',
     domain: 'grim sword anime',
     negativePrompt:
-      'a lone black-armored swordsman with an oversized slab greatsword, iron prosthetic arm with a built-in cannon, existing franchise characters, gore, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a lone black-armored swordsman with an oversized slab greatsword, iron prosthetic arm with a built-in cannon, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Kentaro Miura manga style: obsessive engraving-like crosshatching, monumental dark fantasy compositions, heavily worn plate armor and grotesque demonic anatomy drawn with baroque detail under apocalyptic storm skies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Near-monochrome ink blacks and bone greys with sparing dried-blood red and cold storm blue.',
       lighting_and_shadow:

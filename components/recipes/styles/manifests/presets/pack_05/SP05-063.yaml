@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-063
 packId: pack_05
-name: Crimson Gothic Authority Style
+name: Hellsing Ultimate Madhouse - Crimson Gothic Authority Style
 styleAnchors:
-  - Crimson Gothic Authority Style
-displayName: Crimson Gothic Authority
+  - Hellsing Ultimate Madhouse - Crimson Gothic Authority Style
+displayName: Hellsing Ultimate Madhouse - Crimson Gothic Authority Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Gothic seinen poster ink with hard black and crimson color blocks edged by fine tapered hairlines that decorate only existing contours; flat and heraldic.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Crimson, ink black and pale ivory in a strict three-value hierarchy.
-  lighting_and_shadow: Crisp controlled highlights and clean hard shadow edges, without glowing symbols or shafts of light.
-  texture_and_material: Flat opaque gouache-like pigment with sparse etched detail on the edges only.
-  camera_and_composition: Keep the requested framing; large color-block proportions carry authority rather than forced symmetry.
-  atmosphere_and_mood: Composed, theatrical command held with cold, upright dignity.
-  rendering_and_quality: Hard-edged blocks, hairline edge ornament and no gradients at all.
-  key_features: flat crimson and black blocks; tapered hairline edge ornament; ivory highlights; three-value hierarchy; hard shadow edges
-  creative_brief: "Gothic seinen poster ink with hard black and crimson color blocks edged by fine tapered hairlines that decorate only existing contours; flat and heraldic. Carry it through flat crimson and black blocks, tapered hairline edge ornament, ivory highlights, three-value hierarchy, hard shadow edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse and Satelight Hellsing Ultimate OVA look (2006): Kouta Hirano designs, gothic Victorian authority, huge black shadows, crimson coats and operatic vampire menace.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hirano designs, tall aristocratic figures, gothic uniforms, crimson greatcoats and manic grins. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crimson coats, deep black, gothic gold trim and moonlit blue light.
+  lighting_and_shadow: Operatic full-moon light and huge deep black shadow shapes.
+  texture_and_material: Lavish OVA cel with heavy black shading and fine gothic detail.
+  camera_and_composition: Operatic gothic manor compositions and looming low angles on commanders.
+  atmosphere_and_mood: Keep the requested mood with operatic gothic authority.
+  rendering_and_quality: Lavish gothic OVA frame with operatic crimson menace.
+  key_features: Hellsing Ultimate gothic; crimson coats; operatic menace; black shadows
+  creative_brief: "Madhouse and Satelight Hellsing Ultimate OVA look (2006): Kouta Hirano designs, gothic Victorian authority, huge black shadows, crimson coats and operatic vampire menace. Carry it through Hellsing Ultimate gothic, crimson coats, operatic menace, black shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a vampire in a red greatcoat and round orange glasses
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -45,7 +48,6 @@ avoidRules:
   - vampire franchise likeness
   - Nazi/fascist insignia
   - guns
-  - gore
   - bite scene
   - religious icon copy
   - readable crest
@@ -67,10 +69,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-063.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a vampire in a red greatcoat and round orange glasses, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, vampire franchise likeness, Nazi/fascist insignia, guns, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -79,6 +84,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

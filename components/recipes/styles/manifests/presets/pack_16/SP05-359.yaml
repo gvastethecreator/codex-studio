@@ -6,7 +6,7 @@ styleAnchors:
   - Yuri!!! on Ice - Vulnerable Performance Spin
 displayName: Yuri!!! on Ice - Vulnerable Performance Spin
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'MAPPA Yuri!!! on Ice television look (2016) with Tadashi Hiramatsu designs: elegant figure skating, sparkling ice arenas, flowing costumes and intimate emotional close-ups.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hiramatsu designs, slender elegant bodies, expressive eyes and sparkling skating costumes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Ice blue, spotlight white, costume gold and deep arena navy.
   lighting_and_shadow: Spotlight on ice, sparkling reflections and soft arena glow.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-359.webp

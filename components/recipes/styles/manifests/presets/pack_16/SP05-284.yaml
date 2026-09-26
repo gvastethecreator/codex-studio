@@ -6,7 +6,7 @@ styleAnchors:
   - Castle in the Sky - Airborne Wonder Adventure
 displayName: Castle in the Sky - Airborne Wonder Adventure
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Hayao Miyazaki and Studio Ghibli feature animation as in Castle in the Sky: Welsh-inspired mining towns, ornithopter flying machines, towering cumulus clouds and overgrown floating ruins.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with classic early Ghibli designs, round faces, dot-highlight eyes, sturdy limbs and practical work clothes and goggles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sky blue, cloud white, moss green, brass and warm stone ochre.
   lighting_and_shadow: Bright high-altitude sunlight, huge glowing clouds, warm interior lamps.
   texture_and_material: Hand-painted watercolor and gouache backgrounds, riveted metal machines, moss on stone.
@@ -58,12 +58,12 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-284.webp
 attributes:
-  negativePrompt: a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a glowing blue crystal pendant, moss-covered giant guardian robots, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

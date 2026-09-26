@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-227
 packId: pack_05
-name: Rust-Wire Descent
+name: Texhnolyze Madhouse - Rust-Wire Descent
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Technical-pen tangle drawing: dense 0.1 mm fine-liner cable lines layered over rust-stained watercolor blooms, with small cold cyan glints.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Oxidized orange and brown watercolor blooms over slate and black ink, with isolated cold cyan glints.
-  lighting_and_shadow: Shadow built from tangled line density; watercolor blooms carry warm reflected light and cyan glints mark wet edges.
-  texture_and_material: Hairline pen tangles, cauliflower watercolor blooms and backruns, dry scratches and rust speckle.
-  camera_and_composition: Keep the requested view; run line tangles in slanting downward rhythms that thicken toward the bottom of the frame.
-  atmosphere_and_mood: Brittle, tense and worn, the quiet of something slowly giving way.
-  rendering_and_quality: Hairline fine-liner precision against loose rust watercolor, with selective cyan glints and a readable silhouette.
-  key_features: dense 0.1 mm fine-liner tangles; rust watercolor blooms and backruns; slate and black ink; cold cyan glints; downward slanting line rhythm
-  creative_brief: "Technical-pen tangle drawing: dense 0.1 mm fine-liner cable lines layered over rust-stained watercolor blooms, with small cold cyan glints. Carry it through dense 0.1 mm fine-liner tangles, rust watercolor blooms and backruns, slate and black ink, cold cyan glints, downward slanting line rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Madhouse Texhnolyze look (2003) with Yoshitoshi ABe concepts: bleak underground city, rusted prosthetics, muted sepia palettes, long silences and fatalistic violence.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gaunt realistic designs, rusted mechanical limbs and worn clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted sepia, rust brown, grey and faint green.
+  lighting_and_shadow: Dim underground light, flickering lamps and faint shafts from far above.
+  texture_and_material: Gritty cel with rust, grime and peeling paint textures.
+  camera_and_composition: Long silent shots and descending vertical compositions through shafts.
+  atmosphere_and_mood: Keep the requested mood with bleak fatalistic descent.
+  rendering_and_quality: Bleak Madhouse television frame with rust, silence and fatalism.
+  key_features: Texhnolyze rust; underground city; prosthetics; silence
+  creative_brief: "Madhouse Texhnolyze look (2003) with Yoshitoshi ABe concepts: bleak underground city, rusted prosthetics, muted sepia palettes, long silences and fatalistic violence. Carry it through Texhnolyze rust, underground city, prosthetics, silence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -57,10 +58,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-227.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean flat vector color, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, clean flat vector color, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -69,8 +74,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Texhnolyze Madhouse - Rust-Wire Descent
+styleAnchors:
+  - Texhnolyze Madhouse - Rust-Wire Descent

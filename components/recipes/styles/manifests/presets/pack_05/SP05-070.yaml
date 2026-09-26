@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-070
 packId: pack_05
-name: Neon Tragic Metamorphosis
+name: Devilman Crybaby Science SARU - Neon Tragic Metamorphosis
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Elastic neon anime drawing where contours stretch like rubber into short magenta-cyan color smears and snap back, built from loose flat shapes held by thick black anchor lines.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Acid pink, cyan and black pressing against each other in selective bands, with local colors retained underneath.
-  lighting_and_shadow: Blacklight-like color response drawn only as an edge treatment, without smoke, fixtures or a night setting.
-  texture_and_material: Translucent color drag anchored by opaque ink, so materials stay recognizable under the smears.
-  camera_and_composition: Keep the requested camera, count and silhouette; color elasticity, not new choreography, carries the style.
-  atmosphere_and_mood: Feverish emotional overload with tenderness underneath the noise.
-  rendering_and_quality: Loose flat shapes, clean-edged smears and thick anchors; no anatomy horror.
-  key_features: elastic stretched contours; magenta-cyan smears; thick black anchor lines; blacklight edge color; loose flat shapes
-  creative_brief: "Elastic neon anime drawing where contours stretch like rubber into short magenta-cyan color smears and snap back, built from loose flat shapes held by thick black anchor lines. Carry it through elastic stretched contours, magenta-cyan smears, thick black anchor lines, blacklight edge color, loose flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Science SARU Devilman Crybaby look (2018) by Masaaki Yuasa: rubbery simple designs, neon club lights, raw emotional sprints and tragic demonic metamorphosis.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw only adults with Yuasa-style simple elastic designs, streetwear and neon-lit expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon magenta, black, electric blue and hot red.
+  lighting_and_shadow: Pulsing neon club light, strobes and harsh white flashes.
+  texture_and_material: Flat color fills, loose sketchy lines and rubbery elastic motion.
+  camera_and_composition: Raw sprints, neon club crowds and tragic close-ups.
+  atmosphere_and_mood: Keep the requested mood with raw tragic neon.
+  rendering_and_quality: Raw neon Science SARU frame with elastic tragic energy.
+  key_features: Devilman Crybaby neon; Yuasa elasticity; tragic metamorphosis
+  creative_brief: "Science SARU Devilman Crybaby look (2018) by Masaaki Yuasa: rubbery simple designs, neon club lights, raw emotional sprints and tragic demonic metamorphosis. Carry it through Devilman Crybaby neon, Yuasa elasticity, tragic metamorphosis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a demon hero with bat wings and horns
+  - a blond man in a white coat
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -42,7 +46,6 @@ avoidRules:
   - franchise likeness
   - demon body
   - nude body
-  - gore
   - anatomy
   - club scene
   - crowd
@@ -63,10 +66,13 @@ avoidRules:
   - UI overlay
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-070.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, demon body, nude body, gore, anatomy, club scene, crowd, horror attack, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a demon hero with bat wings and horns, a blond man in a white coat, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, demon body, nude body, anatomy, club scene, crowd, horror attack, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,12 +81,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Neon Tragic Metamorphosis
+displayName: Devilman Crybaby Science SARU - Neon Tragic Metamorphosis
 styleAnchors:
-  - Neon Tragic Metamorphosis
+  - Devilman Crybaby Science SARU - Neon Tragic Metamorphosis
   - Devilman Crybaby – Neon Tragic Metamorphosis

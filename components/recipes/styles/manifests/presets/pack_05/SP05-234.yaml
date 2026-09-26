@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-234
 packId: pack_05
-name: Extinction Interface Command
+name: Muv-Luv Alternative - Extinction Interface Command
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Vector-display anime: subjects drawn as glowing single-weight wireframe lines with hidden lines removed, on a black field with modular grid divisions.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Black ground with cyan vector lines, a deep blue grid and small red target accents; no filled color anywhere.
-  lighting_and_shadow: Lines are self-luminous with a thin phosphor glow; there is no shading, and depth is shown by line density and brightness falloff.
-  texture_and_material: Phosphor bloom along lines, faint persistence trails, and a soft curved-screen vignette at the corners.
-  camera_and_composition: Keep the requested view; lay a fine modular grid behind the subject and bracket its key points with small red target ticks.
-  atmosphere_and_mood: Cold command tension, the calm of watching disaster as geometry.
-  rendering_and_quality: Clean single-weight vector wireframe, phosphor glow and sparse red ticks; no letters, numerals or filled surfaces.
-  key_features: glowing single-weight wireframe; hidden-line removal; phosphor glow on black; modular blue grid; red target ticks without text
-  creative_brief: "Vector-display anime: subjects drawn as glowing single-weight wireframe lines with hidden lines removed, on a black field with modular grid divisions. Carry it through glowing single-weight wireframe, hidden-line removal, phosphor glow on black, modular blue grid, red target ticks without text. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Muv-Luv Alternative look: tactical surface fighters against endless alien swarms, grim military command, sleek mechs and extinction-scale battle maps.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with sleek visual-novel-derived designs, pilot suits and military uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Military blue, alien flesh red, cold command teal.
+  lighting_and_shadow: Cold command-room glow and orange battlefield flare light across swarms.
+  texture_and_material: Clean digital cel with CG mechs and swarms.
+  camera_and_composition: Command-room wides and massive swarm battles covering entire landscapes.
+  atmosphere_and_mood: Keep the requested mood with grim extinction pressure.
+  rendering_and_quality: Grim military mecha frame with extinction-scale alien swarms.
+  key_features: Muv-Luv surface fighters; alien swarms; grim command; extinction scale
+  creative_brief: "Muv-Luv Alternative look: tactical surface fighters against endless alien swarms, grim military command, sleek mechs and extinction-scale battle maps. Carry it through Muv-Luv surface fighters, alien swarms, grim command, extinction scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -59,10 +60,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-234.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, filled painted surfaces, numerals, readable map labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, filled painted surfaces, numerals, readable map labels, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,8 +76,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Muv-Luv Alternative - Extinction Interface Command
+styleAnchors:
+  - Muv-Luv Alternative - Extinction Interface Command

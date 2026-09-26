@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP05-249
 packId: pack_05
-name: Indigo Block-Print Cel
+name: Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel
 styleAnchors:
-  - Indigo Block-Print Cel
+  - Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel
   - Ascendance of a Bookworm - Printing Press Devotion
-displayName: Indigo Block-Print Cel
+displayName: Ascendance of a Bookworm Ajia-do - Indigo Block-Print Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,17 +15,18 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Simplify forms into clear masses with selective etched line detail; never turn the subject into printed pages or add a press.
-  color_and_tone: Cream, deep indigo and restrained amber, limited to two or three flat inks.
-  lighting_and_shadow: Flat broad light with graphic shadow shapes carved as solid indigo ink.
-  texture_and_material: Fine hatch marks, cream paper grain, ink squash at block edges and a small misregistration between colors.
-  camera_and_composition: Keep the requested view; bold flat masses are balanced against small detailed areas.
-  atmosphere_and_mood: Quietly studious and devoted, patient work by lamplight.
-  rendering_and_quality: Clean block boundaries, controlled hatching and visible print texture throughout.
-  key_features: inky indigo blocks; cream paper grain; fine hatchwork; slight off-register edges; amber accent ink
-  creative_brief: "Anime cel painting crossed with relief printing: inky indigo blocks, fine hatchwork, cream paper grain and slightly off-register edges. Carry it through inky indigo blocks, cream paper grain, fine hatchwork, slight off-register edges, amber accent ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Ajia-do Ascendance of a Bookworm look (2019): gentle medieval town life, indigo block-print patterns, handmade paper and books, warm homely fantasy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft gentle designs, simple medieval townsfolk clothes and warm expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Indigo dye, parchment cream, warm wood brown and soft sage green.
+  lighting_and_shadow: Warm homely window light and soft candlelight in small workshops.
+  texture_and_material: Soft cel with woodblock print patterns and paper textures.
+  camera_and_composition: Cozy workshop compositions at workbenches and busy medieval town streets.
+  atmosphere_and_mood: Keep the requested mood with devoted homely craft.
+  rendering_and_quality: Gentle homely fantasy television frame with indigo block-print texture.
+  key_features: Indigo block prints; handmade books; medieval town; warmth
+  creative_brief: "Ajia-do Ascendance of a Bookworm look (2019): gentle medieval town life, indigo block-print patterns, handmade paper and books, warm homely fantasy. Carry it through Indigo block prints, handmade books, medieval town, warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -63,10 +64,14 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-249.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, readable pages, printing press prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, readable pages, printing press prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -75,6 +80,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -6,7 +6,7 @@ styleAnchors:
   - Battle Angel OVA - Iron Ruin Tragedy
 displayName: Battle Angel OVA - Iron Ruin Tragedy
 category: 2. 90s Golden Era
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Madhouse Battle Angel OVA look (1993) with Nobuteru Yuki designs: rusted scrapyard city beneath a floating city, detailed cyborg bodies, somber early-nineties cel and tragic romance.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nobuteru Yuki designs, large soulful eyes, slender cyborg bodies with mechanical joints and ragged clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rust orange, steel blue, grime brown and pale sky light.
   lighting_and_shadow: Diffuse industrial light, sparks and backlight from the floating city.
   texture_and_material: Late analog hand-painted cel over painted backgrounds, subtle film grain, soft cel edge halation.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-174.webp

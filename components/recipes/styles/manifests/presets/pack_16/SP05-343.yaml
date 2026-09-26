@@ -6,7 +6,7 @@ styleAnchors:
   - Haikyuu!! - Vertical Team Rally Energy
 displayName: Haikyuu!! - Vertical Team Rally Energy
 category: 5. Sports, Competition & Performance
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Production I.G Haikyuu!! television look (2014) from Haruichi Furudate designs: soaring jumps above the net, sweat and sneaker squeaks, orange and black team palettes, painterly slow-motion peak moments.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Furudate designs, lean athletic bodies, sharp determined eyes, messy hair and sports kit with knee pads. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Team orange, black, court honey wood and gym white light.
   lighting_and_shadow: Bright gym fluorescents, backlit jump peaks and glowing sweat highlights.
   texture_and_material: Contemporary digital television cel with clean lines, crisp highlights and composited painted backgrounds.
@@ -62,7 +62,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-343.webp

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-100
 packId: pack_05
-name: Vertical Mineral Amber Cel
+name: DanMachi J.C.Staff - Vertical Mineral Amber Cel
 category: 3. Isekai & High Fantasy
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - isekai-and-high-fantasy
+  - reference-title
 visualDna:
-  aesthetic: 'Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth.'
-  subject_treatment: Keep the prompt subject, action, setting and camera and redraw them in this fantasy anime finish; a neutral household task stays that task and never becomes a quest, battle or cooking vignette. Forms are articulated by tall facet-like value shifts; do not add a dungeon corridor, lantern or monster.
-  color_and_tone: Amber and pale gold points of light against cool teal and deep blue-green shadow.
-  lighting_and_shadow: Small warm point highlights with a soft contained glow against cool ambient light, like light caught inside quartz.
-  texture_and_material: Crisp faceted accents, subtle grain and smooth transitions between the vertical planes.
-  camera_and_composition: Keep the requested view; vertically stacked planes and shifts of scale emphasize height.
-  atmosphere_and_mood: Hopeful and humble, a small warmth inside something vast.
-  rendering_and_quality: Clean cel edges, layered depth and readable contrast without heavy bloom.
-  key_features: vertical mineral facets; amber point lights; cool teal depth; contained quartz-like glow; stacked vertical planes
-  creative_brief: "Luminous anime cel built from tall mineral-like planes: vertical facets of value, warm amber point lights and cool teal depth. Carry it through vertical mineral facets, amber point lights, cool teal depth, contained quartz-like glow, stacked vertical planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'J.C.Staff DanMachi look (2015): a vertical labyrinth dungeon under a bustling city, amber lantern light, mineral crystals, adventurer familia and rising-hero energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suzuhito Yasuda-derived designs, light armor, white hair or bright hair, and determined adventurer faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Amber lantern light, mineral teal, deep stone and gold.
+  lighting_and_shadow: Lantern light in deep dungeon shafts and crystal glows.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and painted fantasy backgrounds.
+  camera_and_composition: Tall vertical dungeon shafts, tiny climbing figures and heroic upward ascents.
+  atmosphere_and_mood: Keep the requested mood with aspiring vertical adventure.
+  rendering_and_quality: Warm J.C.Staff television frame with vertical dungeon scale and lantern glow.
+  key_features: Vertical dungeon; amber lanterns; mineral crystals; rising heroes
+  creative_brief: "J.C.Staff DanMachi look (2015): a vertical labyrinth dungeon under a bustling city, amber lantern light, mineral crystals, adventurer familia and rising-hero energy. Carry it through Vertical dungeon, amber lanterns, mineral crystals, rising heroes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a small goddess with a blue ribbon under her arms
+  - a white-haired rookie with red eyes
+  - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
   - generic cloaked adventurer
@@ -64,10 +68,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-100.webp
 attributes:
-  negativePrompt: hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dungeon corridor, hallway perspective, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a small goddess with a blue ribbon under her arms, a white-haired rookie with red eyes, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, dungeon corridor, hallway perspective, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,12 +83,13 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Vertical Mineral Amber Cel
+displayName: DanMachi J.C.Staff - Vertical Mineral Amber Cel
 styleAnchors:
-  - Vertical Mineral Amber Cel
+  - DanMachi J.C.Staff - Vertical Mineral Amber Cel
   - DanMachi – Dungeon Lantern Adventure

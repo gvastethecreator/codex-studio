@@ -1,12 +1,12 @@
 schemaVersion: 1
 id: SP05-270
 packId: pack_05
-name: Cursed Severance Compassion Style
+name: Dororo MAPPA - Cursed Severance Compassion Style
 styleAnchors:
-  - Cursed Severance Compassion Style
-displayName: Cursed Severance Compassion
+  - Dororo MAPPA - Cursed Severance Compassion Style
+displayName: Dororo MAPPA - Cursed Severance Compassion Style
 category: 4. Dark Fantasy & Seinen
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -14,18 +14,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - dark-fantasy-and-seinen
+  - reference-title
 visualDna:
-  aesthetic: Dual-stroke anime ink in which contours begin as angular knife-cut lines at the edges of the image and melt into round soft watercolor strokes as they approach the focal form.
-  subject_treatment: Redraw the prompt's subject, action, count and setting in this seinen ink treatment; a gentle or everyday prompt stays gentle in content while only marks, values and palette change.
-  color_and_tone: Quiet ink neutrals with a warm ochre, blush or coral wash blooming only around the focal form.
-  lighting_and_shadow: Defined edge highlights on the angular outer lines turn into soft reflected wash near the center of attention.
-  texture_and_material: Dry crisp line ends at the periphery and wet watercolor blooms with cauliflower edges near the focal form.
-  camera_and_composition: Keep the requested framing; hardness radiates from the frame edges and softness gathers at the focus.
-  atmosphere_and_mood: Harshness softening into compassion; a cold world with one warm center.
-  rendering_and_quality: Two clearly legible stroke families in a gradient from angular to round, with the warm bloom contained.
-  key_features: angular cuts melting into round strokes; warm bloom at the focal form; dry periphery and wet center; ink neutrals with coral; hard-to-soft gradient
-  creative_brief: "Dual-stroke anime ink in which contours begin as angular knife-cut lines at the edges of the image and melt into round soft watercolor strokes as they approach the focal form. Carry it through angular cuts melting into round strokes, warm bloom at the focal form, dry periphery and wet center, ink neutrals with coral, hard-to-soft gradient. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'MAPPA and Tezuka Productions Dororo look (2019): Sengoku-era dark fantasy, demons, a sparse muted palette, prosthetic bodies and bleak compassionate storytelling.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern Tezuka-derived designs, ragged period clothing, prosthetic limbs and stoic or fierce faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted earth, ash grey, faded red and dark forest green.
+  lighting_and_shadow: Overcast Sengoku daylight over ruined villages and eerie demon glows at night.
+  texture_and_material: Clean digital cel with muted painted Sengoku landscapes and ash.
+  camera_and_composition: Bleak landscape wide shots and intimate emotional moments between travelers.
+  atmosphere_and_mood: Keep the requested mood with bleak compassionate endurance.
+  rendering_and_quality: Somber MAPPA television frame with muted Sengoku atmosphere and compassion.
+  key_features: Dororo Sengoku; muted palette; prosthetics; demons
+  creative_brief: "MAPPA and Tezuka Productions Dororo look (2019): Sengoku-era dark fantasy, demons, a sparse muted palette, prosthetic bodies and bleak compassionate storytelling. Carry it through Dororo Sengoku, muted palette, prosthetics, demons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a swordsman with blades in prosthetic arms
+  - existing franchise characters
   - photographic still-life object
   - photoreal scene
   - repeated hooded dark-haired swordsman
@@ -59,10 +62,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-270.webp
 attributes:
-  negativePrompt: photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a swordsman with blades in prosthetic arms, existing franchise characters, photographic still-life object, photoreal scene, repeated hooded dark-haired swordsman, franchise character likeness, readable text, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -71,6 +77,7 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

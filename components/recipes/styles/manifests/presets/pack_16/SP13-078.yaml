@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Moto Hagio - Arthurian Tapestry
 category: 6. Samurai & Medieval
 domain: medieval romance anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Moto Hagio shojo manga look as in The Poe Clan: romantic European legend, delicate lines, flowers and lace, luminous eyes and melancholy beauty.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hagio designs, delicate faces, large luminous eyes, flowing hair and romantic period costumes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft pastel watercolor, rose, sage and cream, or black line with tone.
   lighting_and_shadow: Dreamy diffuse glow, floral light halos and soft shadows.
   texture_and_material: Delicate fine lines, floral ornament, lace and screentone.
@@ -48,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

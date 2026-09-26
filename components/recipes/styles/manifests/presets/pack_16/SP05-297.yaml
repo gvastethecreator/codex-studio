@@ -6,7 +6,7 @@ styleAnchors:
   - The Garden of Words - Hyperobserved Rain Intimacy
 displayName: The Garden of Words - Hyperobserved Rain Intimacy
 category: 4. Studio Masterpieces
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,7 +17,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Makoto Shinkai feature animation as in The Garden of Words: hyperreal painted gardens in rainy season, every leaf and droplet glistening, maple greens, and quiet pavilions.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with delicate Shinkai designs, fine hair, softly shaded faces and simple modern clothes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep emerald, rain grey, jade and soft warm skin light.
   lighting_and_shadow: Green-filtered rain light, reflections on wet surfaces, glowing sky breaks.
   texture_and_material: Hyper-detailed painted leaves, droplets, ripples and reflective stone.
@@ -49,7 +49,7 @@ avoidRules:
   - muddy cel noise
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-297.webp

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Peach-Pit Rozen Maiden - Haunted Dollhouse Horror
 category: 7. Horror
 domain: miniature horror anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,7 +23,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Peach-Pit Rozen Maiden look: gothic lolita dolls with glass eyes, ball-jointed limbs, lace and ribbons, Victorian rooms and quietly unsettling doll life.'
-  subject_treatment: Preserve the requested identity, count, pose and action; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as elaborate gothic dolls with glass eyes, visible joints, lace dresses and ringlet hair. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rose red, ivory lace, deep violet and antique gold.
   lighting_and_shadow: Dim candle and moon light in antique rooms.
   texture_and_material: Delicate fine line, intricate lace detail and porcelain-smooth shading on faces.
@@ -40,8 +40,6 @@ avoidRules:
   - readable text
   - muddy off-model anatomy
   - generic AI anime gloss
-  - gore
-  - graphic wounds
   - watermark
   - text
   - readable labels
@@ -51,11 +49,11 @@ avoidRules:
   - real person likeness
   - prompt literal card reuse
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, gore, graphic wounds, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a red-dressed doll with a large bonnet, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

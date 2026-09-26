@@ -13,7 +13,7 @@ const spec: Spec = {
         aesthetic:
           'Kentaro Miura manga style: obsessive engraving-like crosshatching, monumental dark fantasy compositions, heavily worn plate armor and grotesque demonic anatomy drawn with baroque detail under apocalyptic storm skies.',
         subject_treatment:
-          'Preserve the requested identity, count, pose and action; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword.',
+          'Preserve the requested identity, count, pose, action and any requested clothing; give figures weighty muscular anatomy, scarred faces, battered armor and cloth rendered stroke by stroke, never a lone black-armored swordsman with a slab-like greatsword. Wardrobe details apply only when the prompt leaves clothing open.',
         color_and_tone:
           'Near-monochrome ink blacks and bone greys with sparing dried-blood red and cold storm blue.',
         lighting_and_shadow:
@@ -33,7 +33,6 @@ const spec: Spec = {
         'a lone black-armored swordsman with an oversized slab greatsword',
         'iron prosthetic arm with a built-in cannon',
         'existing franchise characters',
-        'gore',
       ],
       briefs: [
         'Kneeling in a flooded cathedral, a scarred female knight in fluted plate raises a lantern as hundreds of eyes open in the flesh-covered walls around her. No readable text or logo.',

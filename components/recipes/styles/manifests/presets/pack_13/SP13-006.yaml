@@ -29,7 +29,6 @@ avoidRules:
   - muddy off-model anatomy
   - generic AI anime gloss
   - photoreal
-  - horror gore
   - sci fi ui
   - watermark
   - text
@@ -50,7 +49,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-006.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror gore, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

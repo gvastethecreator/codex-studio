@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-060
 packId: pack_05
-name: Orbital Rivalry Symmetry
+name: Gundam Wing - Orbital Rivalry Symmetry
 category: 2. Mecha & Cyberpunk
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-battle-and-worlds
   - mecha-and-cyberpunk
+  - reference-title
 visualDna:
-  aesthetic: 'Crystalline facet-highlight anime: specular highlights cut as sharp polygon shards, fine seam lines, and long thin orbital arc strokes balancing the frame.'
-  subject_treatment: Redraw the prompt subject, action, setting and camera in this mechanical anime rendering; a plant, animal, object or person keeps its identity and is never turned into a robot, hangar or battle scene.
-  color_and_tone: Deep blue and violet against glacial white, with a tiny warm gold signal; each facet is a separate clean tone.
-  lighting_and_shadow: Hard cold key producing polygonal white specular shards on edges and hard violet cel shadows, with one gold glint as counterweight.
-  texture_and_material: Polished mirror surfaces broken into crystal facets, with smooth gradients inside each facet.
-  camera_and_composition: Keep the requested view; counterbalance the subject with opposing diagonal arcs so the frame feels mirrored without duplicating the subject.
-  atmosphere_and_mood: Cold strategic tension, poised and elegant, like a move not yet played.
-  rendering_and_quality: Sharp polygon specular shards, fine seams, clean facet color blocks and thin arcs, with restrained glow.
-  key_features: polygon-shard specular highlights; blue-violet and glacial white palette; opposing orbital arcs; fine seam lines; single gold counterweight glint
-  creative_brief: "Crystalline facet-highlight anime: specular highlights cut as sharp polygon shards, fine seam lines, and long thin orbital arc strokes balancing the frame. Carry it through polygon-shard specular highlights, blue-violet and glacial white palette, opposing orbital arcs, fine seam lines, single gold counterweight glint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Sunrise Mobile Suit Gundam Wing look (1995): elegant bishonen pilots, sleek winged mobile suits, orbital colonies and symmetrical rival duels with nineties cel shine.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with nineties bishonen designs, sharp eyes, flowing hair and pilot suits or military uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep space blue, royal violet, crimson and brilliant white with gold trim.
+  lighting_and_shadow: Orbital sunlight, beam saber glows and nineties cel highlights.
+  texture_and_material: Late analog cel with glossy airbrushed mech shading and soft film grain.
+  camera_and_composition: Symmetrical rival compositions in orbit and cockpit close-ups.
+  atmosphere_and_mood: Keep the requested mood with elegant orbital rivalry.
+  rendering_and_quality: Polished mid-nineties Sunrise television frame with bishonen elegance and orbital scale.
+  key_features: Gundam Wing bishonen; winged mechs; orbital rivals; symmetry
+  creative_brief: "Sunrise Mobile Suit Gundam Wing look (1995): elegant bishonen pilots, sleek winged mobile suits, orbital colonies and symmetrical rival duels with nineties cel shine. Carry it through Gundam Wing bishonen, winged mechs, orbital rivals, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - white mobile suits with V-fin antennas and angel wings
+  - existing franchise characters
   - named mecha or franchise robot likeness
   - fixed canon pilot character
   - turning a non-mechanical subject into a robot
@@ -44,7 +47,6 @@ avoidRules:
   - beam weapon
   - cockpit portrait
   - real national flags
-  - space battle gore
   - readable insignia
   - weapon-first duel
   - plastic 3d robot render
@@ -64,10 +66,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-060.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, busy clutter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: white mobile suits with V-fin antennas and angel wings, existing franchise characters, named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, busy clutter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
@@ -76,8 +81,12 @@ taxonomy:
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Gundam Wing - Orbital Rivalry Symmetry
+styleAnchors:
+  - Gundam Wing - Orbital Rivalry Symmetry
