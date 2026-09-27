@@ -45,9 +45,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Kneeling in a white grass meadow above the sea, a gem-bodied gardener with translucent emerald hair carefully glues a chipped fingertip back on while the sun throws rainbow flecks across the ground around her. No readable text or logo.",
-        "Two crystal-bodied scholars in black uniforms argue about the tides on a cliff, their faceted faces scattering blue light onto each other every time they turn their heads. No readable text or logo.",
-        "On a silent seaside beach, a single cracked shard of pale amber crystal lies half buried in the sand, glowing softly as the waves pull back. No readable text or logo.",
+        'Kneeling in a white grass meadow above the sea, a gem-bodied gardener with translucent emerald hair carefully glues a chipped fingertip back on while the sun throws rainbow flecks across the ground around her. No readable text or logo.',
+        'Two crystal-bodied scholars in black uniforms argue about the tides on a cliff, their faceted faces scattering blue light onto each other every time they turn their heads. No readable text or logo.',
+        'On a silent seaside beach, a single cracked shard of pale amber crystal lies half buried in the sand, glowing softly as the waves pull back. No readable text or logo.',
       ],
     },
     'SP05-261': {
@@ -71,9 +71,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Standing on a burned hillside at dusk, a weary mercenary captain in dented armor watches the sun slowly turn black while her band kneels silently in the mud around her banner. No readable text or logo.",
-        "Around a campfire in a ruined abbey, a grizzled sellsword teaches a young squire to mend chainmail as rain drums on the broken roof above them. No readable text or logo.",
-        "A cracked iron helmet rests on a fence post beside an empty battlefield, crows lined up along the rail in the grey evening light. No readable text or logo.",
+        'Hauling a wounded draft horse out of a flooded siege trench at dusk, a weary mercenary quartermaster in dented armor shouts orders while rain hammers the broken wagons around her. No readable text or logo.',
+        'Around a campfire in a ruined abbey, a grizzled sellsword teaches a young squire to mend chainmail as rain drums on the broken roof above them. No readable text or logo.',
+        'A cracked iron helmet rests on a fence post beside an empty battlefield, crows lined up along the rail in the grey evening light. No readable text or logo.',
       ],
     },
     'SP05-262': {
@@ -97,9 +97,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "At the end of a long hospital corridor at night, a tired surgeon in a white coat stops as a pair of polished shoes appears in the doorway of the room she just left empty. No readable text or logo.",
-        "In a small European bakery at dawn, a retired detective buys bread while watching a stranger in the window reflection who never seems to blink. No readable text or logo.",
-        "An empty park bench in a snowy European square holds a folded newspaper and a single leather glove that nobody has come back for. No readable text or logo.",
+        'At the end of a long hospital corridor at night, a tired surgeon in a white coat stops as a pair of polished shoes appears in the doorway of the room she just left empty. No readable text or logo.',
+        'In a small European bakery at dawn, a retired detective buys bread while watching a stranger in the window reflection who never seems to blink. No readable text or logo.',
+        'An empty park bench in a snowy European square holds a folded newspaper and a single leather glove that nobody has come back for. No readable text or logo.',
       ],
     },
     'SP05-263': {
@@ -122,9 +122,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Waking up in an empty Tokyo apartment wearing a glossy black suit she never bought, an office worker in her forties stares at a row of strangers who all look just as confused as she is. No readable text or logo.",
-        "Two salarymen in glossy black suits hide behind a vending machine on a real-looking Tokyo street, watching a giant stone statue slowly turn its head. No readable text or logo.",
-        "In a silent apartment at midnight, a single glossy black glove lies on the tatami mat, its circular node blinking faint blue. No readable text or logo.",
+        'At three in the morning on an empty Tokyo overpass, an office worker in her forties grips her convenience-store bag as every streetlight flickers off in sequence toward her, drawn in hard black signal lines. No readable text or logo.',
+        'Two salarymen in glossy black suits hide behind a vending machine on a real-looking Tokyo street, watching a giant stone statue slowly turn its head. No readable text or logo.',
+        'In a silent apartment at midnight, a single glossy black glove lies on the tatami mat, its circular node blinking faint blue. No readable text or logo.',
       ],
     },
     'SP05-264': {
@@ -147,9 +147,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Washed up on a pastel seaside beach at dawn, a horned woman in a torn hospital gown sits hugging her knees as gold mosaic patterns shimmer across the waves like a painted dream. No readable text or logo.",
-        "Behind thick glass in a white laboratory, a calm horned patient watches the researchers nervously, the gold pattern on the wall glowing brighter as they step back. No readable text or logo.",
-        "On a quiet seaside veranda, a single seashell rests on a white hospital bracelet in the warm evening light. No readable text or logo.",
+        'Washed up on a pastel seaside beach at dawn, a horned woman in a torn hospital gown sits hugging her knees as gold mosaic patterns shimmer across the waves like a painted dream. No readable text or logo.',
+        'Behind thick glass in a white laboratory, a calm horned patient watches the researchers nervously, the gold pattern on the wall glowing brighter as they step back. No readable text or logo.',
+        'On a quiet seaside veranda, a single seashell rests on a white hospital bracelet in the warm evening light. No readable text or logo.',
       ],
     },
     'SP05-265': {
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Riding a black horse across a moonlit wasteland toward a baroque castle, a pale bounty hunter in a sweeping rose-black cape passes a field of wilted roses that slowly bloom again behind her. No readable text or logo.",
-        "In a candlelit baroque ballroom, an aristocratic vampire couple dance alone among hundreds of empty chairs draped in black lace. No readable text or logo.",
-        "A single black rose rests on a moonlit stone balcony, its petals frosted with pale silver dew. No readable text or logo.",
+        'Riding a black horse across a moonlit wasteland toward a baroque castle, a pale bounty hunter in a sweeping rose-black cape passes a field of wilted roses that slowly bloom again behind her. No readable text or logo.',
+        'In a candlelit baroque ballroom, an aristocratic vampire couple dance alone among hundreds of empty chairs draped in black lace. No readable text or logo.',
+        'A single black rose rests on a moonlit stone balcony, its petals frosted with pale silver dew. No readable text or logo.',
       ],
     },
     'SP05-266': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Running down a concrete stairwell with a police siren echoing below, a fugitive nurse glances back as a tall phantom made of drifting black ash silently mirrors her every step. No readable text or logo.",
-        "A tired fugitive eats instant noodles in a laundromat while his black particle phantom sits awkwardly on the next machine. No readable text or logo.",
-        "In an empty underpass, a thin stream of black ash particles drifts upward from a single abandoned shoe. No readable text or logo.",
+        'Running down a concrete stairwell with a police siren echoing below, a fugitive nurse glances back as a tall phantom made of drifting black ash silently mirrors her every step. No readable text or logo.',
+        'A tired fugitive eats instant noodles in a laundromat while his black particle phantom sits awkwardly on the next machine. No readable text or logo.',
+        'In an empty underpass, a thin stream of black ash particles drifts upward from a single abandoned shoe. No readable text or logo.',
       ],
     },
     'SP05-267': {
@@ -224,9 +224,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Crossing a snowy Edo bridge in a patched kimono, a scruffy ronin with a strange forked blade stops to buy chestnuts from a vendor while three bounty hunters wait at the far end. No readable text or logo.",
-        "By candlelight in a cluttered Edo workshop, an old weaponsmith sketches designs for impossible forked and hooked blades on sheets of rough paper pinned to the wall. No readable text or logo.",
-        "A broken sword hilt lies in fresh snow outside an empty teahouse at dawn, pencil-grey mist around it. No readable text or logo.",
+        'Crossing a snowy Edo bridge in a patched kimono, a scruffy ronin with a strange forked blade stops to buy chestnuts from a vendor while three bounty hunters wait at the far end. No readable text or logo.',
+        'By candlelight in a cluttered Edo workshop, an old weaponsmith sketches designs for impossible forked and hooked blades on sheets of rough paper pinned to the wall. No readable text or logo.',
+        'A broken sword hilt lies in fresh snow outside an empty teahouse at dawn, pencil-grey mist around it. No readable text or logo.',
       ],
     },
     'SP05-268': {
@@ -249,9 +249,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sweating over a single playing card at a neon-lit underground table, a broke delivery driver with an impossibly pointed chin feels the whole room swirl around him as his opponent slowly smiles. No readable text or logo.",
-        "Twelve anxious men balance on a narrow steel beam between skyscrapers at night, each one sweating enormous drops. No readable text or logo.",
-        "A single cheap ticket lies crumpled on a neon floor, swirling black patterns closing in around it. No readable text or logo.",
+        'Sweating over a single playing card at a neon-lit underground table, a broke delivery driver with an impossibly pointed chin feels the whole room swirl around him as his opponent slowly smiles. No readable text or logo.',
+        'Twelve anxious men balance on a narrow steel beam between skyscrapers at night, each one sweating enormous drops. No readable text or logo.',
+        'A single cheap ticket lies crumpled on a neon floor, swirling black patterns closing in around it. No readable text or logo.',
       ],
     },
     'SP05-269': {
@@ -275,9 +275,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "In a smoke-filled postwar mahjong parlor, a calm old woman with a sharp pointed face places a single tile as three gangsters around the table freeze, sweat running down their temples. No readable text or logo.",
-        "A cigarette burns down to ash in an ashtray while two players stare each other down in silence. No readable text or logo.",
-        "Under a single lamp swinging from a smoky ceiling, an empty mahjong table glows green in the dark, one tile left standing on its edge. No readable text or logo.",
+        'In a smoke-filled postwar mahjong parlor, a calm old woman with a sharp pointed face places a single tile as three gangsters around the table freeze, sweat running down their temples. No readable text or logo.',
+        'A cigarette burns down to ash in an ashtray while two players stare each other down in silence. No readable text or logo.',
+        'Under a single lamp swinging from a smoky ceiling, an empty mahjong table glows green in the dark, one tile left standing on its edge. No readable text or logo.',
       ],
     },
     'SP05-270': {
@@ -301,9 +301,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sharing a burnt rice cake on the steps of a ruined Sengoku shrine, a wandering swordsman with carved wooden hands and a sharp-tongued old thief watch a demon shadow slide across the valley below. No readable text or logo.",
-        "A village healer carves a new wooden foot for a farmer by lamplight while the rain drums outside. No readable text or logo.",
-        "In a flooded rice paddy at dusk, an abandoned carved wooden hand lies palm up among the reeds while a heron watches it from the bank. No readable text or logo.",
+        'Sharing a burnt rice cake on the steps of a ruined Sengoku shrine, a wandering swordsman with carved wooden hands and a sharp-tongued old thief watch a demon shadow slide across the valley below. No readable text or logo.',
+        'A village healer carves a new wooden foot for a farmer by lamplight while the rain drums outside. No readable text or logo.',
+        'In a flooded rice paddy at dusk, an abandoned carved wooden hand lies palm up among the reeds while a heron watches it from the bank. No readable text or logo.',
       ],
     },
     'SP05-271': {
@@ -326,9 +326,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Walking along a sun-bleached highway overgrown with wildflowers, two middle-aged travelers with heavy backpacks stop as something enormous shifts inside a moss-covered shopping mall ahead. No readable text or logo.",
-        "A traveler naps inside an abandoned train car while vines creep through the broken windows around her. No readable text or logo.",
-        "In a sunny meadow where a town used to be, a rusted vending machine stands among tall grass with a bird building a nest on top. No readable text or logo.",
+        'Walking along a sun-bleached highway overgrown with wildflowers, two middle-aged travelers with heavy backpacks stop as something enormous shifts inside a moss-covered shopping mall ahead. No readable text or logo.',
+        'A traveler naps inside an abandoned train car while vines creep through the broken windows around her. No readable text or logo.',
+        'In a sunny meadow where a town used to be, a rusted vending machine stands among tall grass with a bird building a nest on top. No readable text or logo.',
       ],
     },
     'SP05-272': {
@@ -351,9 +351,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Standing in the rain outside a flower shop, a robot detective in a trench coat quietly buys a bouquet for a colleague whose memory chip was recovered that morning. No readable text or logo.",
-        "An old robot gardener waters roses in a quiet European courtyard while a detective watches from the window. No readable text or logo.",
-        "An empty trench coat hangs on a hook in a dim office, rain streaking the window. No readable text or logo.",
+        'Standing in the rain outside a flower shop, a robot detective in a trench coat quietly buys a bouquet for a colleague whose memory chip was recovered that morning. No readable text or logo.',
+        'An old robot gardener waters roses in a quiet European courtyard while a detective watches from the window. No readable text or logo.',
+        'An empty trench coat hangs on a hook in a dim office, rain streaking the window. No readable text or logo.',
       ],
     },
     'SP05-273': {
@@ -376,9 +376,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Burying a small glowing creature at the edge of a misty mountain spring, a quiet rural healer kneels as tiny translucent lights rise from the moss around her hands and drift into the night. No readable text or logo.",
-        "A fisherman watches a river of faint glowing lights flow beneath the water under his boat. No readable text or logo.",
-        "At dusk along a silent forest path, tiny glowing spores drift over the moss like slow snow while an old wooden signpost leans into the ferns. No readable text or logo.",
+        'Burying a small glowing creature at the edge of a misty mountain spring, a quiet rural healer kneels as tiny translucent lights rise from the moss around her hands and drift into the night. No readable text or logo.',
+        'A fisherman watches a river of faint glowing lights flow beneath the water under his boat. No readable text or logo.',
+        'At dusk along a silent forest path, tiny glowing spores drift over the moss like slow snow while an old wooden signpost leans into the ferns. No readable text or logo.',
       ],
     },
     'SP05-274': {
@@ -401,9 +401,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Waking up twenty years in the past on a snowy morning, a middle-aged manga artist stares out of his mother’s kitchen window at a neighbor he knows will disappear by the end of winter. No readable text or logo.",
-        "Two adults sit in a parked car in a snowy lot, watching a house with its lights off. No readable text or logo.",
-        "On a snowy fence at the edge of a frozen park, a single red scarf flutters in the wind beside a row of footprints that suddenly stop. No readable text or logo.",
+        'Waking up twenty years in the past on a snowy morning, a middle-aged manga artist stares out of his mother’s kitchen window at a neighbor he knows will disappear by the end of winter. No readable text or logo.',
+        'Two adults sit in a parked car in a snowy lot, watching a house with its lights off. No readable text or logo.',
+        'On a snowy fence at the edge of a frozen park, a single red scarf flutters in the wind beside a row of footprints that suddenly stop. No readable text or logo.',
       ],
     },
     'SP05-276': {
@@ -426,9 +426,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'rows of uniformed figures'],
       briefs: [
-        "In a sun-bleached Edo courtyard at noon, two samurai with hyper-detailed tense muscles hold a practice stance for so long that the shadows on the stones slowly move across their feet. No readable text or logo.",
-        "An aged sword master pours water over his head in a stone courtyard, every muscle carved in harsh light. No readable text or logo.",
-        "In a sun-bleached stone courtyard at noon, a single wooden practice sword lies alone, its short shadow the only dark shape in the whole space. No readable text or logo.",
+        'In a sun-bleached Edo courtyard at noon, two samurai with hyper-detailed tense muscles hold a practice stance for so long that the shadows on the stones slowly move across their feet. No readable text or logo.',
+        'An aged sword master pours water over his head in a stone courtyard, every muscle carved in harsh light. No readable text or logo.',
+        'In a sun-bleached stone courtyard at noon, a single wooden practice sword lies alone, its short shadow the only dark shape in the whole space. No readable text or logo.',
       ],
     },
     'SP05-277': {
@@ -451,9 +451,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Walking home under a rust-colored sky full of flickering neon, an office worker notices that every streetlight dims as she passes, while a column of pale light hangs silently over the city. No readable text or logo.",
-        "Behind a convenience store at midnight, a night-shift clerk hears a thin whistled tune from the empty alley, the sepia light around her slowly vignetting to black. No readable text or logo.",
-        "In a vignetted rust-colored playground at dusk, a single rusted swing moves back and forth by itself while every window around it stays dark. No readable text or logo.",
+        'Walking home under a rust-colored sky full of flickering neon, an office worker notices that every streetlight dims as she passes, while a column of pale light hangs silently over the city. No readable text or logo.',
+        'Behind a convenience store at midnight, a night-shift clerk hears a thin whistled tune from the empty alley, the sepia light around her slowly vignetting to black. No readable text or logo.',
+        'In a vignetted rust-colored playground at dusk, a single rusted swing moves back and forth by itself while every window around it stays dark. No readable text or logo.',
       ],
     },
     'SP05-279': {
@@ -476,9 +476,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Standing in a rain-soaked alley of an alternate postwar city, a squad of heavily armored police troopers turns as one, their red glowing optics reflecting in the puddles around a frightened courier. No readable text or logo.",
-        "In a harshly lit locker room, an armored trooper removes his heavy helmet with red optics, revealing a tired, ordinary middle-aged face with a small bandage. No readable text or logo.",
-        "Deep in a dark concrete sewer tunnel, a pair of red optic lenses glows steadily above the black water, reflected in long trembling streaks. No readable text or logo.",
+        'Standing in a rain-soaked alley of an alternate postwar city, a squad of heavily armored police troopers turns as one, their red glowing optics reflecting in the puddles around a frightened courier. No readable text or logo.',
+        'In a harshly lit locker room, an armored trooper removes his heavy helmet with red optics, revealing a tired, ordinary middle-aged face with a small bandage. No readable text or logo.',
+        'Deep in a dark concrete sewer tunnel, a pair of red optic lenses glows steadily above the black water, reflected in long trembling streaks. No readable text or logo.',
       ],
     },
     'SP05-280': {
@@ -501,9 +501,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Drifting down a crimson river under an eternal twilight sky, a silent ferryman in a straw hat poles a small boat past banks of red spider lilies while a guilty businessman clutches his briefcase. No readable text or logo.",
-        "Along a dark river under a crimson twilight sky, a lone paper lantern floats slowly downstream while red spider lilies glow along both banks. No readable text or logo.",
-        "On the gate of a twilight shrine, a single red thread is tied tightly around a small straw doll that sways gently in the warm wind. No readable text or logo.",
+        'Drifting down a crimson river under an eternal twilight sky, a silent ferryman in a straw hat poles a small boat past banks of red spider lilies while a guilty businessman clutches his briefcase. No readable text or logo.',
+        'Along a dark river under a crimson twilight sky, a lone paper lantern floats slowly downstream while red spider lilies glow along both banks. No readable text or logo.',
+        'On the gate of a twilight shrine, a single red thread is tied tightly around a small straw doll that sways gently in the warm wind. No readable text or logo.',
       ],
     },
     'SP05-275': {
@@ -525,9 +525,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Across a crowded Tokyo crosswalk, dozens of ordinary commuters all glance nervously at the same empty manhole cover, each one sure they heard something rolling beneath it. No readable text or logo.",
-        "In a cramped apartment, a tired detective interviews a grandmother who swears her television whispered her name, while the screen behind them shows only static. No readable text or logo.",
-        "At night on an empty apartment staircase lit by one flickering bulb, a single golden roller skate sits on a step as if someone just left it. No readable text or logo.",
+        'Across a crowded Tokyo crosswalk, dozens of ordinary commuters all glance nervously at the same empty manhole cover, each one sure they heard something rolling beneath it. No readable text or logo.',
+        'In a cramped apartment, a tired detective interviews a grandmother who swears her television whispered her name, while the screen behind them shows only static. No readable text or logo.',
+        'At night on an empty apartment staircase lit by one flickering bulb, a single golden roller skate sits on a step as if someone just left it. No readable text or logo.',
       ],
     },
     'SP05-066': {
@@ -551,9 +551,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sitting calmly at a family dinner table, a polite father’s face slowly unfolds into a strange flower of smooth grey petals while his wife keeps serving rice without looking up. No readable text or logo.",
-        "A school counselor with a calm deadpan face listens while her shadow on the wall moves independently. No readable text or logo.",
-        "An empty dinner table set for four has one chair pushed back, a bowl still steaming. No readable text or logo.",
+        'On a crowded morning train, a calm salaryman keeps reading his newspaper while the skin at the back of his neck ripples into smooth grey ridges that only the schoolteacher standing behind him notices. No readable text or logo.',
+        'A school counselor with a calm deadpan face listens while her shadow on the wall moves independently. No readable text or logo.',
+        'An empty dinner table set for four has one chair pushed back, a bowl still steaming. No readable text or logo.',
       ],
     },
     'SP05-069': {
@@ -576,9 +576,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Holding a torch at the mouth of a damp cave, a methodical middle-aged adventurer in cheap dented armor checks a hand-drawn map for the third time while her tired party waits in the mud. No readable text or logo.",
-        "In a village stable by torchlight, a grim adventurer sharpens a short sword with slow careful strokes while the horses watch nervously from their stalls. No readable text or logo.",
-        "Outside a rough guild hall at grey dawn, a dented steel helmet rests on an overturned barrel beside a half-eaten loaf of bread. No readable text or logo.",
+        'Holding a torch at the mouth of a damp cave, a methodical middle-aged adventurer in cheap dented armor checks a hand-drawn map for the third time while her tired party waits in the mud. No readable text or logo.',
+        'In a village stable by torchlight, a grim adventurer sharpens a short sword with slow careful strokes while the horses watch nervously from their stalls. No readable text or logo.',
+        'Outside a rough guild hall at grey dawn, a dented steel helmet rests on an overturned barrel beside a half-eaten loaf of bread. No readable text or logo.',
       ],
     },
     'SP05-061': {
@@ -601,9 +601,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Standing alone on a scaffold in a crowded baroque square under a storm, a condemned executioner in a black coat looks up as the entire sky is carved into dense crosshatched clouds pressing down on the city. No readable text or logo.",
-        "A climber hangs from a frozen cliff face as the mountain above is rendered in crushing crosshatch. No readable text or logo.",
-        "An empty baroque theater stage is lit by a single candle, the darkness dense around it. No readable text or logo.",
+        'Standing alone on a scaffold in a crowded baroque square under a storm, a condemned executioner in a black coat looks up as the entire sky is carved into dense crosshatched clouds pressing down on the city. No readable text or logo.',
+        'A climber hangs from a frozen cliff face as the mountain above is rendered in crushing crosshatch. No readable text or logo.',
+        'An empty baroque theater stage is lit by a single candle, the darkness dense around it. No readable text or logo.',
       ],
     },
     'SP05-062': {
@@ -627,9 +627,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'mask', 'face'],
       briefs: [
-        "Sitting alone in a coffee shop at closing time, a pale barista in a black apron stares at her own reflection as one of her eyes slowly bleeds crimson watercolor into the glass. No readable text or logo.",
-        "A masked stranger stands on a rooftop at night, crimson ink dripping from the edge of the mask. No readable text or logo.",
-        "A single coffee cup sits on an empty counter, a crimson watercolor bloom spreading beneath it. No readable text or logo.",
+        'Sitting alone in a coffee shop at closing time, a pale barista in a black apron stares at her own reflection as one of her eyes slowly bleeds crimson watercolor into the glass. No readable text or logo.',
+        'A masked stranger stands on a rooftop at night, crimson ink dripping from the edge of the mask. No readable text or logo.',
+        'A single coffee cup sits on an empty counter, a crimson watercolor bloom spreading beneath it. No readable text or logo.',
       ],
     },
     'SP05-063': {
@@ -650,9 +650,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Standing at the head of a gothic manor staircase in a crimson greatcoat, an elderly aristocratic commander lights a cigar as moonlight and huge black shadows spill down the steps below her. No readable text or logo.",
-        "In a gothic kitchen at midnight, an elderly butler with a manic grin polishes a long row of silver candlesticks while thunder shakes the windows. No readable text or logo.",
-        "On the moonlit marble floor of an empty manor hall, a single crimson glove lies beside a toppled chess piece and a broken candle. No readable text or logo.",
+        'Standing at the head of a gothic manor staircase in a crimson greatcoat, an elderly aristocratic commander lights a cigar as moonlight and huge black shadows spill down the steps below her. No readable text or logo.',
+        'In a gothic kitchen at midnight, an elderly butler with a manic grin polishes a long row of silver candlesticks while thunder shakes the windows. No readable text or logo.',
+        'On the moonlit marble floor of an empty manor hall, a single crimson glove lies beside a toppled chess piece and a broken candle. No readable text or logo.',
       ],
     },
     'SP05-064': {
@@ -675,9 +675,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Plowing a stony field on a wind-scoured northern farm, a former warrior with a scarred face pauses to watch a flock of geese fly over the fjord, his hands finally steady on the plow. No readable text or logo.",
-        "Two farmhands share bread on a stone wall as a storm rolls in over the sea. No readable text or logo.",
-        "On a peaceful northern farm at sunrise, a broken sword has been hammered into the ground as a fence post, a sheep grazing right beside it. No readable text or logo.",
+        'Plowing a stony field on a wind-scoured northern farm, a former warrior with a scarred face pauses to watch a flock of geese fly over the fjord, his hands finally steady on the plow. No readable text or logo.',
+        'Two farmhands share bread on a stone wall as a storm rolls in over the sea. No readable text or logo.',
+        'On a peaceful northern farm at sunrise, a broken sword has been hammered into the ground as a fence post, a sheep grazing right beside it. No readable text or logo.',
       ],
     },
     'SP05-065': {
@@ -700,9 +700,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "At the gate of a fog-bound medieval village, a pale silver-eyed woman in a grey cloak waits silently while the villagers peer from their shutters, unsure whether to fear her or the thing in the forest. No readable text or logo.",
-        "A pale warrior eats plain bread alone at the edge of a tavern, everyone else keeping their distance. No readable text or logo.",
-        "At dawn in an empty country inn, a pale silver cloak hangs on a wooden hook while its owner’s untouched breakfast cools on the table. No readable text or logo.",
+        'At the gate of a fog-bound medieval village, a pale silver-eyed woman in a grey cloak waits silently while the villagers peer from their shutters, unsure whether to fear her or the thing in the forest. No readable text or logo.',
+        'A pale warrior eats plain bread alone at the edge of a tavern, everyone else keeping their distance. No readable text or logo.',
+        'At dawn in an empty country inn, a pale silver cloak hangs on a wooden hook while its owner’s untouched breakfast cools on the table. No readable text or logo.',
       ],
     },
     'SP05-067': {
@@ -724,9 +724,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Descending a rope into a vast lush chasm filled with glowing forests on floating islands, a round-faced grandmother explorer with a huge backpack gasps at a creature gliding past like a living cathedral. No readable text or logo.",
-        "Two adult explorers camp on a ledge in the abyss, cooking strange mushrooms over a tiny stove. No readable text or logo.",
-        "Above an endless green drop inside the abyss, a single explorer’s whistle hangs from a twisted root, swinging slowly in the rising warm wind. No readable text or logo.",
+        'Descending a rope into a vast lush chasm filled with glowing forests on floating islands, a round-faced grandmother explorer with a huge backpack gasps at a creature gliding past like a living cathedral. No readable text or logo.',
+        'Two adult explorers camp on a ledge in the abyss, cooking strange mushrooms over a tiny stove. No readable text or logo.',
+        'Above an endless green drop inside the abyss, a single explorer’s whistle hangs from a twisted root, swinging slowly in the rising warm wind. No readable text or logo.',
       ],
     },
     'SP05-068': {
@@ -748,9 +748,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Eating dumplings in a grimy industrial alley, a stocky sorcerer in a cracked porcelain rabbit mask argues with a plumber over who ruined the neighborhood’s pipes with a curse. No readable text or logo.",
-        "In a smoky cramped kitchen, a couple in cracked animal masks dance slowly to a scratchy radio while a pot of stew bubbles over onto the stove. No readable text or logo.",
-        "In a grimy alley between rusted pipes, a cracked porcelain mask hangs from a nail, dripping rainwater from its empty eye holes. No readable text or logo.",
+        'Eating dumplings in a grimy industrial alley, a stocky sorcerer in a cracked porcelain rabbit mask argues with a plumber over who ruined the neighborhood’s pipes with a curse. No readable text or logo.',
+        'In a smoky cramped kitchen, a couple in cracked animal masks dance slowly to a scratchy radio while a pot of stew bubbles over onto the stove. No readable text or logo.',
+        'In a grimy alley between rusted pipes, a cracked porcelain mask hangs from a nail, dripping rainwater from its empty eye holes. No readable text or logo.',
       ],
     },
     'SP05-070': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sprinting through a neon-lit club crowd with tears streaming down his face, a sensitive track runner feels his body stretch and change as the lights strobe magenta and blue around him. No readable text or logo.",
-        "A group of rappers perform on a rooftop while a demonic shape looms in the neon smoke behind them. No readable text or logo.",
-        "Outside a neon club at three in the morning, a single running shoe lies in a magenta puddle while the bass still thumps through the wall. No readable text or logo.",
+        'Sprinting through a neon-lit club crowd with tears streaming down his face, a sensitive track runner feels his body stretch and change as the lights strobe magenta and blue around him. No readable text or logo.',
+        'A group of rappers perform on a rooftop while a demonic shape looms in the neon smoke behind them. No readable text or logo.',
+        'Outside a neon club at three in the morning, a single running shoe lies in a magenta puddle while the bass still thumps through the wall. No readable text or logo.',
       ],
     },
   },

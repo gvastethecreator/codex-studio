@@ -49,9 +49,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'saturated neon color', 'heavy black outlines', 'dramatic rim light'],
       briefs: [
-        "Visiting the grave of a dwarf friend who died two centuries ago, an ageless elf mage in a faded cloak brushes moss off the stone and sets down the same cheap sweet they shared on their first quest. No readable text or logo.",
-        "An old dwarf blacksmith and a young priest argue gently about the best way to fold a map while their elf companion quietly watches clouds drift over a pale meadow. No readable text or logo.",
-        "On a quiet hilltop at dawn, a small bronze statue of a long-forgotten party of heroes stands half hidden by tall grass and wildflowers. No readable text or logo.",
+        'Visiting the grave of a dwarf friend who died two centuries ago, an ageless elf mage in a faded cloak brushes moss off the stone and sets down the same cheap sweet they shared on their first quest. No readable text or logo.',
+        'An old dwarf blacksmith and a young priest argue gently about the best way to fold a map while their elf companion quietly watches clouds drift over a pale meadow. No readable text or logo.',
+        'On a quiet hilltop at dawn, a small bronze statue of a long-forgotten party of heroes stands half hidden by tall grass and wildflowers. No readable text or logo.',
       ],
     },
     'SP05-099': {
@@ -78,9 +78,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'hero portrait pose', 'shiny new armor'],
       briefs: [
-        "Bracing a dented bronze pot lid against a stampede of armored boars, a stubborn village cook in a leather apron holds the line while rings of impact ripple out across the muddy square behind her. No readable text or logo.",
-        "Falsely accused and covered in flour, a baker sits outside the town gate sharpening a bread knife while a stray dog loyally shares his blanket. No readable text or logo.",
-        "A battered bronze shield leans against a tavern wall at night, dents catching the warm lamplight like scars on a face. No readable text or logo.",
+        'Bracing a dented bronze pot lid against a stampede of armored boars, a stubborn village cook in a leather apron holds the line while rings of impact ripple out across the muddy square behind her. No readable text or logo.',
+        'Falsely accused and covered in flour, a baker sits outside the town gate sharpening a bread knife while a stray dog loyally shares his blanket. No readable text or logo.',
+        'A battered bronze shield leans against a tavern wall at night, dents catching the warm lamplight like scars on a face. No readable text or logo.',
       ],
     },
     'SP05-248': {
@@ -108,9 +108,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'cooking scene', 'food as default subject', 'annotations or labels'],
       briefs: [
-        "Crouched beside a dungeon campfire, a scholarly adventurer sketches the anatomy of a giant walking mushroom in her notebook while her companion quietly slices its cap into a bubbling stew pot. No readable text or logo.",
-        "Four tired adventurers argue over whether a slime can be dried like fruit, the specimen wobbling indignantly on a drying rack between them. No readable text or logo.",
-        "In a quiet dungeon corridor, a neatly labeled row of monster spices hangs drying beside a sleeping iron golem. No readable text or logo.",
+        'Crouched beside a dungeon campfire, a scholarly adventurer sketches the anatomy of a giant walking mushroom in her notebook while her companion quietly slices its cap into a bubbling stew pot. No readable text or logo.',
+        'Four tired adventurers argue over whether a slime can be dried like fruit, the specimen wobbling indignantly on a drying rack between them. No readable text or logo.',
+        'In a quiet dungeon corridor, a neatly labeled row of monster spices hangs drying beside a sleeping iron golem. No readable text or logo.',
       ],
     },
     'SP05-252': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'campfire cooking pot', 'banquet table', 'hard black shadows'],
       briefs: [
-        "Stirring a sizzling pan of garlic mushrooms over a campfire at dusk, a middle-aged office worker in a borrowed cloak laughs as an enormous fluffy lynx politely waits for the first bite. No readable text or logo.",
-        "A dragon the size of a barn sulks at the edge of a campsite until someone hands it a tiny skewer of grilled onions. No readable text or logo.",
-        "On a flat rock beside a dying campfire, a single glossy rice ball sits on a leaf under the first evening stars. No readable text or logo.",
+        'Stirring a sizzling pan of garlic mushrooms over a campfire at dusk, a middle-aged office worker in a borrowed cloak laughs as an enormous fluffy lynx politely waits for the first bite. No readable text or logo.',
+        'A dragon the size of a barn sulks at the edge of a campsite until someone hands it a tiny skewer of grilled onions. No readable text or logo.',
+        'On a flat rock beside a dying campfire, a single glossy rice ball sits on a leaf under the first evening stars. No readable text or logo.',
       ],
     },
     'SP05-257': {
@@ -167,9 +167,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'multiple accent colors', 'market stall', 'glow effects'],
       briefs: [
-        "Crossing a slate-grey wasteland under a huge moon, an unassuming traveling merchant leads a caravan of polite giant spiders carrying sacks of flour, one violet lantern swinging at the front. No readable text or logo.",
-        "A plain-faced shopkeeper haggles calmly with a nervous dragon over the price of a single violet potion bottle. No readable text or logo.",
-        "Under a slate twilight sky, a lone violet flower grows from a crack in an abandoned market stall. No readable text or logo.",
+        'Crossing a slate-grey wasteland under a huge moon, an unassuming traveling merchant leads a caravan of polite giant spiders carrying sacks of flour, one violet lantern swinging at the front. No readable text or logo.',
+        'A plain-faced shopkeeper haggles calmly with a nervous dragon over the price of a single violet potion bottle. No readable text or logo.',
+        'Under a slate twilight sky, a lone violet flower grows from a crack in an abandoned market stall. No readable text or logo.',
       ],
     },
     'SP05-258': {
@@ -197,9 +197,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'photorealistic hands', 'product photograph', 'toolbox pile'],
       briefs: [
-        "Kneeling beside a cracked magic door in a dungeon corridor, a quiet handyman with a brass toolbox fixes the hinge while an impatient knight, a mage and a thief watch in stunned silence. No readable text or logo.",
-        "Squinting through thick glasses in a candlelit workshop, a retired carpenter repairs a knight’s dented helmet with a tiny brass hammer while the knight nervously waits in his underclothes. No readable text or logo.",
-        "On a workshop bench at night, a set of brass tools lies neatly arranged beside a half-repaired magic staff. No readable text or logo.",
+        'Kneeling beside a cracked magic door in a dungeon corridor, a quiet handyman with a brass toolbox fixes the hinge while an impatient knight, a mage and a thief watch in stunned silence. No readable text or logo.',
+        'Squinting through thick glasses in a candlelit workshop, a retired carpenter repairs a knight’s dented helmet with a tiny brass hammer while the knight nervously waits in his underclothes. No readable text or logo.',
+        'On a workshop bench at night, a set of brass tools lies neatly arranged beside a half-repaired magic staff. No readable text or logo.',
       ],
     },
     'SP05-259': {
@@ -226,9 +226,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'glossy digital shading', 'detailed sparkling anime eyes'],
       briefs: [
-        "Marching up the stairs of a towering pastel castle, a tiny round-faced baker with a crooked paper crown carries a cake twice his size to the grumpy giant queen at the top. No readable text or logo.",
-        "A small shadow creature and a retired court jester share an apple on the castle wall, laughing silently at the sunset. No readable text or logo.",
-        "In a soft crayon-drawn storybook meadow, a small paper crown lies forgotten in the grass beside a sleeping lamb and a bouquet of wildflowers. No readable text or logo.",
+        'Marching up the stairs of a towering pastel castle, a tiny round-faced baker with a crooked paper crown carries a cake twice his size to the grumpy giant queen at the top. No readable text or logo.',
+        'A small shadow creature and a retired court jester share an apple on the castle wall, laughing silently at the sunset. No readable text or logo.',
+        'In a soft crayon-drawn storybook meadow, a small paper crown lies forgotten in the grass beside a sleeping lamb and a bouquet of wildflowers. No readable text or logo.',
       ],
     },
     'SP05-260': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'dark gritty palette', 'black outlines', 'banquet table'],
       briefs: [
-        "At a fantasy guild banquet glowing with pastel light, a grandmother adventurer in a lemon-yellow robe stacks her plate with glowing fruit tarts while three younger warriors watch in awe. No readable text or logo.",
-        "A hungry knight fights a giant floating pudding monster and keeps taking bites between sword strikes. No readable text or logo.",
-        "An empty banquet table glows in the sunset, one untouched strawberry tart sparkling at the center. No readable text or logo.",
+        'At a fantasy guild banquet glowing with pastel light, a grandmother adventurer in a lemon-yellow robe stacks her plate with glowing fruit tarts while three younger warriors watch in awe. No readable text or logo.',
+        'A hungry knight fights a giant floating pudding monster and keeps taking bites between sword strikes. No readable text or logo.',
+        'An empty banquet table glows in the sunset, one untouched strawberry tart sparkling at the center. No readable text or logo.',
       ],
     },
     'SP05-091': {
@@ -290,9 +290,9 @@ const spec: Spec = {
         'glass pavilion',
       ],
       briefs: [
-        "Logging into a floating castle of cyan crystal for the first time, a retired schoolteacher in a clumsy beginner’s tunic swings a practice sword and watches a training dummy shatter into glittering polygons. No readable text or logo.",
-        "Two guildmates in their fifties fish from the edge of a floating virtual island, their lines glowing cyan in the void. No readable text or logo.",
-        "A single crystal sword stands in a virtual meadow at dusk, slowly dissolving into floating light cubes. No readable text or logo.",
+        'Logging into a floating castle of cyan crystal for the first time, a retired schoolteacher in a clumsy beginner’s tunic swings a practice sword and watches a training dummy shatter into glittering polygons. No readable text or logo.',
+        'Two guildmates in their fifties fish from the edge of a floating virtual island, their lines glowing cyan in the void. No readable text or logo.',
+        'A single crystal sword stands in a virtual meadow at dusk, slowly dissolving into floating light cubes. No readable text or logo.',
       ],
     },
     'SP05-092': {
@@ -319,9 +319,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'doubled character', 'gore'],
       briefs: [
-        "Waking once again in the same gothic mansion bedroom, a tired middle-aged clerk sees faint violet echo-lines of himself repeating the same morning around the room. No readable text or logo.",
-        "A butler serves tea at a long table as violet ghost images of dozens of earlier dinners flicker at every seat. No readable text or logo.",
-        "A pocket watch lies open on a gothic nightstand, its hands spinning backward under violet moonlight. No readable text or logo.",
+        'Waking once again in the same gothic mansion bedroom, a tired middle-aged clerk sees faint violet echo-lines of himself repeating the same morning around the room. No readable text or logo.',
+        'A butler serves tea at a long table as violet ghost images of dozens of earlier dinners flicker at every seat. No readable text or logo.',
+        'A pocket watch lies open on a gothic nightstand, its hands spinning backward under violet moonlight. No readable text or logo.',
       ],
     },
     'SP05-093': {
@@ -349,9 +349,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'map labels', 'road party'],
       briefs: [
-        "Teaching her first magic lesson in a mossy village schoolhouse, a gray-haired wandering mage patiently guides a farmer’s hands as a tiny stream of water rises from a wooden bucket. No readable text or logo.",
-        "Three travelers share a thin blanket in a rainy barn, the painted fields outside glowing sepia in the storm light. No readable text or logo.",
-        "A worn traveling staff leans against a mossy milestone on an empty country road at dawn. No readable text or logo.",
+        'Teaching her first magic lesson in a mossy village schoolhouse, a gray-haired wandering mage patiently guides a farmer’s hands as a tiny stream of water rises from a wooden bucket. No readable text or logo.',
+        'Three travelers share a thin blanket in a rainy barn, the painted fields outside glowing sepia in the storm light. No readable text or logo.',
+        'A worn traveling staff leans against a mossy milestone on an empty country road at dawn. No readable text or logo.',
       ],
     },
     'SP05-094': {
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'lewd gag', 'speech bubbles', 'tavern'],
       briefs: [
-        "Proudly announcing her ultimate spell to a crowd of villagers, a retired court wizard accidentally blows up her own house and collapses face-first into a haystack, still smiling. No readable text or logo.",
-        "A party of adventurers flees across a cabbage field from a swarm of flying cabbages, one knight happily volunteering to be hit. No readable text or logo.",
-        "On a sticky tavern table in a cheap fantasy village, a pile of unpaid guild bills surrounds one half-eaten frog leg and a spilled mug. No readable text or logo.",
+        'Proudly announcing her ultimate spell to a crowd of villagers, a retired court wizard accidentally blows up her own house and collapses face-first into a haystack, still smiling. No readable text or logo.',
+        'A party of adventurers flees across a cabbage field from a swarm of flying cabbages, one knight happily volunteering to be hit. No readable text or logo.',
+        'On a sticky tavern table in a cheap fantasy village, a pile of unpaid guild bills surrounds one half-eaten frog leg and a spilled mug. No readable text or logo.',
       ],
     },
     'SP05-098': {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'slime mascot', 'kingdom crowd', 'sharp angular shapes'],
       briefs: [
-        "Building a new town square together under a bright sky-blue morning, goblin carpenters, lizard masons and a retired human engineer cheer as the last beam of a clock tower slides into place. No readable text or logo.",
-        "A giant friendly ogre chef serves soup to a line of tiny forest spirits in a busy monster-town market. No readable text or logo.",
-        "A small wooden signpost stands at the edge of a new monster town, a flower crown hanging from its top. No readable text or logo.",
+        'Building a new town square together under a bright sky-blue morning, goblin carpenters, lizard masons and a retired human engineer cheer as the last beam of a clock tower slides into place. No readable text or logo.',
+        'A giant friendly ogre chef serves soup to a line of tiny forest spirits in a busy monster-town market. No readable text or logo.',
+        'A small wooden signpost stands at the edge of a new monster town, a flower crown hanging from its top. No readable text or logo.',
       ],
     },
     'SP05-100': {
@@ -437,9 +437,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'dungeon corridor', 'hallway perspective'],
       briefs: [
-        "Climbing a vertical dungeon shaft lit by amber lanterns, a middle-aged adventurer hauls a sack of glowing mineral crystals toward the tiny circle of daylight far above. No readable text or logo.",
-        "A goddess of a small bakery familia bandages an adventurer’s arm while her bread burns in the oven. No readable text or logo.",
-        "Deep in a silent crystal dungeon, a single amber lantern hangs from a glowing mineral outcrop above a rope that disappears into darkness. No readable text or logo.",
+        'Climbing a vertical dungeon shaft lit by amber lanterns, a middle-aged adventurer hauls a sack of glowing mineral crystals toward the tiny circle of daylight far above. No readable text or logo.',
+        'A goddess of a small bakery familia bandages an adventurer’s arm while her bread burns in the oven. No readable text or logo.',
+        'Deep in a silent crystal dungeon, a single amber lantern hangs from a glowing mineral outcrop above a rope that disappears into darkness. No readable text or logo.',
       ],
     },
     'SP05-241': {
@@ -465,9 +465,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'map table', 'board game', 'group huddled over a table'],
       briefs: [
-        "Around a huge round table in an overgrown ruined office tower, a bespectacled strategist in a long coat moves carved wooden pieces representing every guild while vines creep through the broken windows. No readable text or logo.",
-        "A guild of cooks and tailors plans a festival on a rooftop garden above a moss-covered city. No readable text or logo.",
-        "Above an empty overgrown avenue, a ruined highway sign is completely wrapped in flowering vines, with a family of birds nesting in its frame. No readable text or logo.",
+        'Around a huge round table in an overgrown ruined office tower, a bespectacled strategist in a long coat moves carved wooden pieces representing every guild while vines creep through the broken windows. No readable text or logo.',
+        'A guild of cooks and tailors plans a festival on a rooftop garden above a moss-covered city. No readable text or logo.',
+        'Above an empty overgrown avenue, a ruined highway sign is completely wrapped in flowering vines, with a family of birds nesting in its frame. No readable text or logo.',
       ],
     },
     'SP05-242': {
@@ -493,9 +493,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'crisp clean cel', 'bright saturated color', 'heroic pose'],
       briefs: [
-        "After a clumsy fight with a single goblin, a muddy band of beginner adventurers in cheap patched gear sits by a smoky campfire at dawn, silently passing around one bruised apple. No readable text or logo.",
-        "A novice priest washes her only shirt in a stream, soft watercolor light around her tired shoulders. No readable text or logo.",
-        "In a muddy field under a pale pastel morning sky, a broken wooden practice sword lies beside a worn boot and a trampled flower. No readable text or logo.",
+        'After a clumsy fight with a single goblin, a muddy band of beginner adventurers in cheap patched gear sits by a smoky campfire at dawn, silently passing around one bruised apple. No readable text or logo.',
+        'A novice priest washes her only shirt in a stream, soft watercolor light around her tired shoulders. No readable text or logo.',
+        'In a muddy field under a pale pastel morning sky, a broken wooden practice sword lies beside a worn boot and a trampled flower. No readable text or logo.',
       ],
     },
     'SP05-243': {
@@ -521,9 +521,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'modern digital bloom', 'flat vector look', 'tapestry layout'],
       briefs: [
-        "Crossing a stone bridge toward a painted mountain fortress, a weathered dwarf, a dignified elf archer and an aging knight in detailed plate armor pause to watch a dragon circle the peaks. No readable text or logo.",
-        "An elf and a dwarf argue over the correct way to light a campfire in a rainy forest. No readable text or logo.",
-        "In an empty stone throne hall, a tattered royal banner hangs crookedly while dusk light falls through tall windows across the thick dust. No readable text or logo.",
+        'Crossing a stone bridge toward a painted mountain fortress, a weathered dwarf, a dignified elf archer and an aging knight in detailed plate armor pause to watch a dragon circle the peaks. No readable text or logo.',
+        'An elf and a dwarf argue over the correct way to light a campfire in a rainy forest. No readable text or logo.',
+        'In an empty stone throne hall, a tattered royal banner hangs crookedly while dusk light falls through tall windows across the thick dust. No readable text or logo.',
       ],
     },
     'SP05-244': {
@@ -550,9 +550,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'throne room', 'photographed fabric', 'product shot'],
       briefs: [
-        "Standing in a vast jade throne hall, a newly chosen queen who was once a farmer lets her long vermilion robes spill down the steps as rows of ministers bow in perfect rhythmic lines. No readable text or logo.",
-        "A tall mythical unicorn in human form waits under a misty pine for a ruler who has not arrived yet. No readable text or logo.",
-        "On a silk cushion in a silent jade court at dawn, an empty imperial seal waits beside a folded robe and a single burning incense stick. No readable text or logo.",
+        'Standing in a vast jade throne hall, a newly chosen queen who was once a farmer lets her long vermilion robes spill down the steps as rows of ministers bow in perfect rhythmic lines. No readable text or logo.',
+        'A tall mythical unicorn in human form waits under a misty pine for a ruler who has not arrived yet. No readable text or logo.',
+        'On a silk cushion in a silent jade court at dawn, an empty imperial seal waits beside a folded robe and a single burning incense stick. No readable text or logo.',
       ],
     },
     'SP05-245': {
@@ -579,9 +579,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'tarot card', 'mecha copy', 'weapon-first pose'],
       briefs: [
-        "Standing on a windswept cliff above a floating fortress, a fortune-teller in a carmine scarf holds a spread of hand-painted cards as her hair and cloak whip in the gale. No readable text or logo.",
-        "An armored knight and a farm girl share bread on a hill while a huge airship drifts past the moons. No readable text or logo.",
-        "Spinning high in the wind above a green valley at sunset, a single carmine feather drifts past the silhouette of a distant airship. No readable text or logo.",
+        'Standing on a windswept cliff above a floating fortress, a fortune-teller in a carmine scarf holds a spread of hand-painted cards as her hair and cloak whip in the gale. No readable text or logo.',
+        'An armored knight and a farm girl share bread on a hill while a huge airship drifts past the moons. No readable text or logo.',
+        'Spinning high in the wind above a green valley at sunset, a single carmine feather drifts past the silhouette of a distant airship. No readable text or logo.',
       ],
     },
     'SP05-246': {
@@ -607,9 +607,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'market aisle', 'camel caravan', 'desert default'],
       briefs: [
-        "Riding a flying carpet over a turquoise-domed desert city, an elderly spice merchant in jeweled robes throws handfuls of saffron that swirl into glowing arabesque patterns above the market. No readable text or logo.",
-        "In a crowded bazaar full of hanging lanterns, a giant friendly blue djinn helps a tired water seller balance a tower of clay jars on her head. No readable text or logo.",
-        "In a moonlit palace courtyard lined with arabesque arches, an empty golden lamp rests on a silk cushion beside a quiet fountain. No readable text or logo.",
+        'Riding a flying carpet over a turquoise-domed desert city, an elderly spice merchant in jeweled robes throws handfuls of saffron that swirl into glowing arabesque patterns above the market. No readable text or logo.',
+        'In a crowded bazaar full of hanging lanterns, a giant friendly djinn made of swirling saffron smoke and brass jewelry helps a tired water seller balance a tower of clay jars on her head. No readable text or logo.',
+        'In a moonlit palace courtyard lined with arabesque arches, an empty golden lamp rests on a silk cushion beside a quiet fountain. No readable text or logo.',
       ],
     },
     'SP05-249': {
@@ -636,9 +636,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'readable pages', 'printing press prop'],
       briefs: [
-        "Pressing her first hand-carved wooden block onto rough homemade paper, a determined elderly seamstress in a medieval workshop gasps as an indigo flower pattern appears perfectly on the sheet. No readable text or logo.",
-        "A merchant and a priest argue over the price of a single handmade picture book in a candlelit shop. No readable text or logo.",
-        "Across a quiet attic lit by one candle, a long string of freshly printed indigo pages dries slowly above a cluttered wooden press. No readable text or logo.",
+        'Pressing her first hand-carved wooden block onto rough homemade paper, a determined elderly seamstress in a medieval workshop gasps as an indigo flower pattern appears perfectly on the sheet. No readable text or logo.',
+        'A merchant and a priest argue over the price of a single handmade picture book in a candlelit shop. No readable text or logo.',
+        'Across a quiet attic lit by one candle, a long string of freshly printed indigo pages dries slowly above a cluttered wooden press. No readable text or logo.',
       ],
     },
     'SP05-250': {
@@ -664,9 +664,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'god rays', 'halo', 'temple hallway', 'stone bridge at sunset'],
       briefs: [
-        "In a ruined stone temple, a gentle skeleton knight and a ghostly old priest teach a grown apprentice how to hold a sword with the same care as a prayer book. No readable text or logo.",
-        "By the crackling fire of a ruined temple, a gentle mummy grandmother knits a long woolen scarf while her grown apprentice sleeps under a borrowed cloak. No readable text or logo.",
-        "On a cracked stone altar inside a moss-covered ruined temple, a single fresh loaf of bread sits in a beam of morning light. No readable text or logo.",
+        'In a ruined stone temple, a gentle skeleton knight and a ghostly old priest teach a grown apprentice how to hold a sword with the same care as a prayer book. No readable text or logo.',
+        'By the crackling fire of a ruined temple, a gentle mummy grandmother knits a long woolen scarf while her grown apprentice sleeps under a borrowed cloak. No readable text or logo.',
+        'On a cracked stone altar inside a moss-covered ruined temple, a single fresh loaf of bread sits in a beam of morning light. No readable text or logo.',
       ],
     },
     'SP05-253': {
@@ -693,9 +693,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'laboratory room', 'crowded table', 'dark low key'],
       briefs: [
-        "Surrounded by glass shelves of glowing herbs in a sunlit royal greenhouse, a tired office worker turned healer brews a mint potion that sparkles so brightly the knights outside the window squint. No readable text or logo.",
-        "In a sunlit palace corridor, a shy royal librarian tries to thank a potion maker with a bouquet of herbs she grew herself, blushing to the ears. No readable text or logo.",
-        "On a sunny greenhouse windowsill crowded with drying herbs, a single glass vial of green potion glows softly as a bee circles it curiously. No readable text or logo.",
+        'Surrounded by glass shelves of glowing herbs in a sunlit royal greenhouse, a tired office worker turned healer brews a mint potion that sparkles so brightly the knights outside the window squint. No readable text or logo.',
+        'In a sunlit palace corridor, a shy royal librarian tries to thank a potion maker with a bouquet of herbs she grew herself, blushing to the ears. No readable text or logo.',
+        'On a sunny greenhouse windowsill crowded with drying herbs, a single glass vial of green potion glows softly as a bee circles it curiously. No readable text or logo.',
       ],
     },
     'SP05-254': {
@@ -719,9 +719,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'school uniform', 'readable sigil', 'shrine hallway'],
       briefs: [
-        "Falling through the pages of an ancient book into a lavender sky, a librarian in her forties is caught by seven celestial warriors whose constellations glow around their halos. No readable text or logo.",
-        "A shrine warrior and a scholar share a quiet moonlit walk in an ancient palace garden. No readable text or logo.",
-        "An old red-bound book lies open on a library floor, lavender light rising from its pages. No readable text or logo.",
+        'Falling through the pages of an ancient book into a lavender sky, a librarian in her forties is caught by seven celestial warriors whose constellations glow around their halos. No readable text or logo.',
+        'A shrine warrior and a scholar share a quiet moonlit walk in an ancient palace garden. No readable text or logo.',
+        'An old red-bound book lies open on a library floor, lavender light rising from its pages. No readable text or logo.',
       ],
     },
     'SP05-255': {
@@ -745,9 +745,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'gem-studded vehicle', 'group lineup', 'readable glyphs'],
       briefs: [
-        "Leaping between floating islands in armor studded with ruby facets, a retired firefighter summoned to a fantasy world raises a glowing sword as rising speed lines blaze behind her. No readable text or logo.",
-        "On a tiny floating island above the clouds, a gem-armored postwoman shares a picnic lunch with a fluffy round floating creature that keeps stealing her grapes. No readable text or logo.",
-        "At the bottom of a clear fantasy spring surrounded by ferns, a single emerald gem glows while tiny silver fish circle it slowly. No readable text or logo.",
+        'Leaping between floating islands in emerald-and-amber armor studded with gem facets, a retired firefighter summoned to a fantasy world raises a glowing sword as rising speed lines blaze behind her. No readable text or logo.',
+        'On a tiny floating island above the clouds, a gem-armored postwoman shares a picnic lunch with a fluffy round floating creature that keeps stealing her grapes. No readable text or logo.',
+        'At the bottom of a clear fantasy spring surrounded by ferns, a single emerald gem glows while tiny silver fish circle it slowly. No readable text or logo.',
       ],
     },
     'SP05-096': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'chess pieces', 'playing cards', 'dice', 'game UI'],
       briefs: [
-        "Standing on a floating chessboard above a hyper-saturated sky of magenta and cyan, two retired accountants challenge a god to a game of cards as whole continents rotate impossibly below. No readable text or logo.",
-        "On a giant glowing chessboard floating in a neon sky, an enormous chess knight bows respectfully to the tiny grandmother who has just beaten it. No readable text or logo.",
-        "Above an impossible staircase that twists back on itself at sunset, a single glowing die floats and slowly turns to show a new number. No readable text or logo.",
+        'Standing on a floating chessboard above a hyper-saturated sky of magenta and cyan, two retired accountants challenge a god to a game of cards as whole continents rotate impossibly below. No readable text or logo.',
+        'On a giant glowing chessboard floating in a neon sky, an enormous chess knight bows respectfully to the tiny grandmother who has just beaten it. No readable text or logo.',
+        'Above an impossible staircase that twists back on itself at sunset, a single glowing die floats and slowly turns to show a new number. No readable text or logo.',
       ],
     },
     'SP05-251': {
@@ -803,9 +803,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'military insignia', 'flags', 'aircraft'],
       briefs: [
-        "Flying in a tight diagonal formation over muddy trenches, a squadron of aerial war mages in khaki greatcoats casts glowing shields as artillery bursts orange behind them. No readable text or logo.",
-        "An exhausted staff officer eats rations in a bunker while maps of the front shake on the wall. No readable text or logo.",
-        "A pair of flight goggles hangs from a barbed wire fence in the grey morning fog. No readable text or logo.",
+        'Flying in a tight diagonal formation over muddy trenches, a squadron of aerial war mages in khaki greatcoats casts glowing shields as artillery bursts orange behind them. No readable text or logo.',
+        'An exhausted staff officer eats rations in a bunker while maps of the front shake on the wall. No readable text or logo.',
+        'A pair of flight goggles hangs from a barbed wire fence in the grey morning fog. No readable text or logo.',
       ],
     },
     'SP05-097': {
@@ -838,9 +838,9 @@ const spec: Spec = {
         'grey 3D render',
       ],
       briefs: [
-        "Seated on an ivory throne in perfect symmetry, a skeletal accountant-lord in ornate robes reviews the kingdom’s taxes while monstrous servants wait in two flawless rows. No readable text or logo.",
-        "In a grand baroque kitchen, a towering insect warrior in ornate armor carefully polishes a single porcelain teacup for its master’s evening tea. No readable text or logo.",
-        "In an enormous empty throne hall of ivory and charcoal, a black throne glows under a single beam of cold moonlight. No readable text or logo.",
+        'Seated on an ivory throne in perfect symmetry, a four-armed clockwork golem lord in charcoal lacquer reviews the kingdom’s taxes while monstrous servants wait in two flawless rows. No readable text or logo.',
+        'In a grand baroque kitchen, a towering insect warrior in ornate armor carefully polishes a single porcelain teacup for its master’s evening tea. No readable text or logo.',
+        'In an enormous empty throne hall of ivory and charcoal, a black throne glows under a single beam of cold moonlight. No readable text or logo.',
       ],
     },
     'SP05-247': {
@@ -867,9 +867,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'cottage garden default', 'flower wall'],
       briefs: [
-        "In a thorn-wrapped English cottage garden, a retired schoolteacher bargains politely with a fae creature made of brambles and moth wings for the return of her lost reading glasses. No readable text or logo.",
-        "Beside a misty pond at dawn, a small mossy bog spirit shares a pot of tea with an old herbalist wrapped in a knitted shawl. No readable text or logo.",
-        "At dusk in an empty English cottage, a thorny wild rose has grown through the broken window and blooms above the dusty kitchen table. No readable text or logo.",
+        'In a thorn-wrapped English cottage garden, a retired schoolteacher bargains politely with a fae creature made of brambles and moth wings for the return of her lost reading glasses. No readable text or logo.',
+        'Beside a misty pond at dawn, a small mossy bog spirit shares a pot of tea with an old herbalist wrapped in a knitted shawl. No readable text or logo.',
+        'At dusk in an empty English cottage, a thorny wild rose has grown through the broken window and blooms above the dusty kitchen table. No readable text or logo.',
       ],
     },
     'SP05-256': {
@@ -896,9 +896,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'red-robed character copy', 'shrine hallway', 'readable talisman'],
       briefs: [
-        "Climbing out of an old shrine well into a feudal forest, a modern pharmacist with her bag of medicine meets a vermilion-robed fox demon who is suspiciously interested in her aspirin. No readable text or logo.",
-        "Beside a burned-out feudal village, a traveling monk and a stern demon slayer argue loudly over who gets the last rice ball in the lunch box. No readable text or logo.",
-        "An old shrine well sits under a sacred tree, a faint glow coming from its depths. No readable text or logo.",
+        'Climbing out of an old shrine well into a feudal forest, a modern pharmacist with her bag of medicine meets a vermilion-robed fox demon who is suspiciously interested in her aspirin. No readable text or logo.',
+        'Beside a burned-out feudal village, a traveling monk and a stern demon slayer argue loudly over who gets the last rice ball in the lunch box. No readable text or logo.',
+        'An old shrine well sits under a sacred tree, a faint glow coming from its depths. No readable text or logo.',
       ],
     },
   },

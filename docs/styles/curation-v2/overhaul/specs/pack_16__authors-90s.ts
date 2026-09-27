@@ -128,6 +128,7 @@ const spec: Spec = {
       avoid: [
         'orange gi with a kanji emblem',
         'golden spiky super-saiyan hair',
+        'a rival in a blue bodysuit with white gloves and a widow’s peak',
         'existing franchise characters',
       ],
     }),
@@ -272,6 +273,7 @@ const spec: Spec = {
       key: 'Ikuhara ritual; Chiho Saito designs; roses; surreal arenas; princely uniforms',
       avoid: [
         'a pink-haired girl in a boys uniform',
+        'white princely uniform with red epaulettes',
         'a floating upside-down castle',
         'existing franchise characters',
       ],

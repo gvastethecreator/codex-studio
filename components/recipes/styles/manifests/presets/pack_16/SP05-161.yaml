@@ -6,7 +6,7 @@ styleAnchors:
   - Dragon Ball Z - Planetary Aura Impact
 displayName: Dragon Ball Z - Planetary Aura Impact
 category: 2. 90s Golden Era
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,10 +25,11 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with titanic power escalation.
   rendering_and_quality: Bold 1990s Toei television frame with sharp muscular aura effects.
   key_features: DBZ muscles; golden aura; rocky wastelands; energy beams; impact bursts
-  creative_brief: "Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts. Carry it through DBZ muscles, golden aura, rocky wastelands, energy beams, impact bursts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Toei Animation Dragon Ball Z television look (1989-1996): Minoru Maeda and Tadayoshi Yamamuro muscular designs, golden flaming auras, rocky wastelands and planet-cracking impacts. Carry it through DBZ muscles, golden aura, rocky wastelands, energy beams, impact bursts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - orange gi with a kanji emblem
   - golden spiky super-saiyan hair
+  - a rival in a blue bodysuit with white gloves and a widow’s peak
   - existing franchise characters
   - realistic
   - 3d render
@@ -63,7 +64,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-161.webp
 attributes:
-  negativePrompt: orange gi with a kanji emblem, golden spiky super-saiyan hair, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
+  negativePrompt: orange gi with a kanji emblem, golden spiky super-saiyan hair, a rival in a blue bodysuit with white gloves and a widow’s peak, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

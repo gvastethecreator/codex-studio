@@ -58,7 +58,7 @@ const spec: Spec = {
     'SP05-161': {
       briefs: [
         'A hero slams into a mountainside so hard that his aura shell blooms outward and briefly turns the whole night side of the planet into day. No readable text or logo.',
-        'Two titans trade a planet-cracking punch and the shockwave rolls harmlessly through a family picnic, lifting only the tablecloth. No readable text or logo.',
+        'A stout grey-bearded blacksmith in a leather apron and a lanky woman in a green tracksuit trade a planet-cracking punch, and the shockwave rolls harmlessly through a family picnic, lifting only the tablecloth. No readable text or logo.',
         'Seen from orbit, one white-hot point burns on the dark side of a dead moon where the last fighter alive is still charging a final blast alone. No readable text or logo.',
       ],
     },
@@ -114,7 +114,7 @@ const spec: Spec = {
     'SP05-173': {
       briefs: [
         'A traveler in a long coat walks into a dusty frontier town at sunset carrying a cello case that everyone is sure hides a weapon, though it only holds seed packets. No readable text or logo.',
-        'Every gunman in town aims at a lanky pacifist who is busy catching a falling baby bird, his round sunglasses slipping down his nose. No readable text or logo.',
+        'Every gunman in town aims at a lanky pacifist in a patched olive poncho and a wide straw hat who is busy catching a falling baby bird. No readable text or logo.',
         'At dusk a wanderer plants a single sunflower on each grave of a vast desert cemetery, the amber light long and quiet behind him. No readable text or logo.',
       ],
     },
@@ -127,8 +127,8 @@ const spec: Spec = {
     },
     'SP05-175': {
       briefs: [
-        'Two duelists in princely uniforms cross swords in a rose garden arena beneath a floating greenhouse where every rose turns to face the winner. No readable text or logo.',
-        'A solitary duelist climbs a spiral staircase that grows a new thorned rose on each step behind her as she ascends. No readable text or logo.',
+        'A stocky bald duelist in a moss-green fencing coat and a silver-haired woman in a violet one cross swords in a rose garden arena beneath a floating greenhouse where every rose turns to face the winner. No readable text or logo.',
+        'A solitary duelist with a short black bob and a grey fencing coat climbs a spiral staircase that grows a new thorned rose on each step behind her as she ascends. No readable text or logo.',
         'A grand ritual duel is postponed because an old gardener is pruning the arena roses and flatly refuses to be rushed. No readable text or logo.',
       ],
     },

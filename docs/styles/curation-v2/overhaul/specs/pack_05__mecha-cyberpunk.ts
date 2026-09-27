@@ -44,9 +44,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'soft gradient shading', 'literal flames', 'drill-faced super robot copy'],
       dropAvoid: ['Gurren-like drill face'],
       briefs: [
-        "Running across a flooded dam in a spiked welding mask, a demolition foreman races the orange hexagonal warning lights that ripple across the concrete wall behind her as the spillway gates groan open. No readable text or logo.",
-        "Hundreds of rescue workers line up in perfect geometric rows on a highway overpass, their hazard vests glowing orange as an enormous shadow crosses the sunset. No readable text or logo.",
-        "In a silent command room, a single mug of coffee sits on a console as every screen around it turns warning orange at once. No readable text or logo.",
+        'Running across a flooded dam in a spiked welding mask, a demolition foreman races the orange hexagonal warning lights that ripple across the concrete wall behind her as the spillway gates groan open. No readable text or logo.',
+        'Hundreds of rescue workers line up in perfect geometric rows on a highway overpass, their hazard vests glowing orange as an enormous shadow crosses the sunset. No readable text or logo.',
+        'In a silent command room, a single mug of coffee sits on a console as every screen around it turns warning orange at once. No readable text or logo.',
       ],
     },
     'SP05-222': {
@@ -70,9 +70,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'robot battle', 'neon night', 'tram', 'readable police markings'],
       briefs: [
-        "Carefully guiding a teal-and-amber labor mech through a narrow market street, a middle-aged city operator waves apologetically at every fruit seller as the machine tiptoes past their stalls. No readable text or logo.",
-        "Two municipal robot pilots fill out damage forms on the hood of a truck while their machines sit sheepishly beside a toppled billboard frame. No readable text or logo.",
-        "At dawn in a quiet bayside hangar, a labor robot stands under a tarp with a coffee thermos balanced on its knee. No readable text or logo.",
+        'Carefully guiding a teal-and-amber labor mech through a narrow market street, a middle-aged city operator waves apologetically at every fruit seller as the machine tiptoes past their stalls. No readable text or logo.',
+        'Two municipal robot pilots fill out damage forms on the hood of a truck while their machines sit sheepishly beside a toppled billboard frame. No readable text or logo.',
+        'At dawn in a quiet bayside hangar, a labor robot stands under a tarp with a coffee thermos balanced on its knee. No readable text or logo.',
       ],
     },
     'SP05-224': {
@@ -96,9 +96,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'dirty grunge', 'warm cozy palette', 'crowded city'],
       briefs: [
-        "Walking through a spotless white arcology garden where every tree is trimmed into a perfect sphere, a geneticist in a hooded lab coat notices one wild dandelion growing through the pavement. No readable text or logo.",
-        "A tactical exosuit kneels in a sterile corridor, its visor reflecting a wall of perfectly identical sleeping citizens in glass pods. No readable text or logo.",
-        "On a white rooftop above the utopian city, a single potted cactus sits beside a chrome railing in the wind. No readable text or logo.",
+        'Walking through a spotless white arcology garden where every tree is trimmed into a perfect sphere, a geneticist in a hooded lab coat notices one wild dandelion growing through the pavement. No readable text or logo.',
+        'A tactical exosuit kneels in a sterile corridor, its visor reflecting a wall of perfectly identical sleeping citizens in glass pods. No readable text or logo.',
+        'On a white rooftop above the utopian city, a single potted cactus sits beside a chrome railing in the wind. No readable text or logo.',
       ],
     },
     'SP05-228': {
@@ -122,9 +122,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'deep black shadows', 'saturated neon', 'heavy ink outlines'],
       briefs: [
-        "Kneeling in a field of rusted robot bodies, a tall slender android caretaker waters a single flower growing from an old robot’s open chest plate. No readable text or logo.",
-        "An elderly android sits alone on a bench at a ruined station, polishing a pocket watch that stopped a century ago. No readable text or logo.",
-        "Under a washed pastel sky, a single android hand rests on a dune, sand slowly covering its fingers. No readable text or logo.",
+        'Kneeling in a field of rusted robot bodies, a tall slender android caretaker waters a single flower growing from an old robot’s open chest plate. No readable text or logo.',
+        'An elderly android sits alone on a bench at a ruined station, polishing a pocket watch that stopped a century ago. No readable text or logo.',
+        'Under a washed pastel sky, a single android hand rests on a dune, sand slowly covering its fingers. No readable text or logo.',
       ],
     },
     'SP05-236': {
@@ -148,9 +148,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'glossy chrome', 'neon bloom', 'clean showroom paint'],
       briefs: [
-        "Skidding through a muddy trench on roller-dash feet, a squat four-meter armored walker with a dented hatch sprays grime across a line of broken twin machines. No readable text or logo.",
-        "A stoic pilot eats canned beans on the shoulder of her battered walker while rain drips off its scope lenses. No readable text or logo.",
-        "In a muddy scrapyard at dusk, hundreds of identical disposable armored walkers lie stacked like empty tin cans while one crow picks at a loose scope lens. No readable text or logo.",
+        'Skidding through a muddy trench on roller-dash feet, a squat four-meter armored walker with a dented hatch sprays grime across a line of broken twin machines. No readable text or logo.',
+        'A stoic pilot eats canned beans on the shoulder of her battered walker while rain drips off its scope lenses. No readable text or logo.',
+        'In a muddy scrapyard at dusk, hundreds of identical disposable armored walkers lie stacked like empty tin cans while one crow picks at a loose scope lens. No readable text or logo.',
       ],
     },
     'SP05-238': {
@@ -181,9 +181,9 @@ const spec: Spec = {
         'suited hero copy',
       ],
       briefs: [
-        "Rising slowly between power lines in a silent pastel suburb, a colossal navy-and-silver sea serpent in rubber-suit proportions blinks down at a woman hanging laundry on her balcony. No readable text or logo.",
-        "A giant hero in a chunky helmet sits on a hill at sunset, carefully not crushing the tiny shrine beside him. No readable text or logo.",
-        "In a quiet suburb, every power line is humming in the same pitch while the sky slowly turns grid-shaped. No readable text or logo.",
+        'Rising slowly between power lines in a silent pastel suburb, a colossal navy-and-silver sea serpent in rubber-suit proportions blinks down at a woman hanging laundry on her balcony. No readable text or logo.',
+        'A giant jade-green hero with bulky orange shoulder armor and a visor shaped like a satellite dish sits on a hill at sunset, carefully not crushing the tiny shrine beside him. No readable text or logo.',
+        'In a quiet suburb, every power line is humming in the same pitch while the sky slowly turns grid-shaped. No readable text or logo.',
       ],
     },
     'SP05-240': {
@@ -207,9 +207,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'black outlines', 'soft airbrush gradients', 'literal fire'],
       briefs: [
-        "Mid-kick in a school gym turned into a riot, a middle-aged cafeteria cook in a flaming red apron strikes an impossible heroic pose as the walls explode into red, black and white shapes. No readable text or logo.",
-        "Three rival street vendors clash with enormous exaggerated poses over one parking space, lightning bolts of color crossing the frame. No readable text or logo.",
-        "A single red school uniform hangs on a hook in an empty room, its shadow pulsing like a heartbeat. No readable text or logo.",
+        'Mid-kick in a school gym turned into a riot, a middle-aged cafeteria cook in a flaming red apron strikes an impossible heroic pose as the walls explode into red, black and white shapes. No readable text or logo.',
+        'Three rival street vendors clash with enormous exaggerated poses over one parking space, lightning bolts of color crossing the frame. No readable text or logo.',
+        'A single red school uniform hangs on a hook in an empty room, its shadow pulsing like a heartbeat. No readable text or logo.',
       ],
     },
     'SP05-051': {
@@ -232,9 +232,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'static pose', 'mechanical limbs added to people'],
       briefs: [
-        "Sprinting across a neon rooftop with polished chrome legs, a cyborg courier leaps a gap between towers as a cloud of pink holographic ads bursts around her. No readable text or logo.",
-        "A retired street doctor fits a new chrome hand onto a grumpy old fisherman in a cramped neon-lit clinic. No readable text or logo.",
-        "On a wet street at night, a single discarded chrome finger glows under a flickering yellow sign. No readable text or logo.",
+        'Sprinting across a neon rooftop with polished chrome legs, a cyborg courier leaps a gap between towers as a cloud of pink holographic ads bursts around her. No readable text or logo.',
+        'A retired street doctor fits a new chrome hand onto a grumpy old fisherman in a cramped neon-lit clinic. No readable text or logo.',
+        'On a wet street at night, a single discarded chrome finger glows under a flickering yellow sign. No readable text or logo.',
       ],
     },
     'SP05-052': {
@@ -264,9 +264,9 @@ const spec: Spec = {
       ],
       dropAvoid: ['Psycho-Pass-specific weapon/device', 'muddy noisy darks'],
       briefs: [
-        "Lowering herself from a skylight into a museum vault, a cloaked thief freezes as a cold blue grid of scanning light slowly sweeps across her boots. No readable text or logo.",
-        "A detective in a dark trench coat stands in the rain while holographic outlines of every passerby glow blue around him. No readable text or logo.",
-        "In an empty office at midnight, a potted plant is outlined by a pulsing red surveillance grid. No readable text or logo.",
+        'Lowering herself from a skylight into a museum vault, a cloaked thief freezes as a cold blue grid of scanning light slowly sweeps across her boots. No readable text or logo.',
+        'A detective in a dark trench coat stands in the rain while holographic outlines of every passerby glow blue around him. No readable text or logo.',
+        'In an empty office at midnight, a potted plant is outlined by a pulsing red surveillance grid. No readable text or logo.',
       ],
     },
     'SP05-054': {
@@ -290,9 +290,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'flat digital glow', 'V-fin horned faceplate copy'],
       dropAvoid: ['Gundam-like faceplate'],
       briefs: [
-        "Rising off a burning coastline, an ivory-and-gold flagship mech spreads glowing beam fins as a lone foot soldier on the beach below shields his eyes. No readable text or logo.",
-        "Two orbital knights share tea on a palace balcony above the clouds while fleets slowly gather in the sky behind them. No readable text or logo.",
-        "Half buried in desert sand at dusk, a cracked golden knight crest still glows faintly as a lone scavenger kneels to brush the dust away. No readable text or logo.",
+        'Rising off a burning coastline, an ivory-and-gold flagship mech spreads glowing beam fins as a lone foot soldier on the beach below shields his eyes. No readable text or logo.',
+        'Two orbital knights share tea on a palace balcony above the clouds while fleets slowly gather in the sky behind them. No readable text or logo.',
+        'Half buried in desert sand at dusk, a cracked golden knight crest still glows faintly as a lone scavenger kneels to brush the dust away. No readable text or logo.',
       ],
     },
     'SP05-055': {
@@ -317,9 +317,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'purple horned giant copy', 'ornamental filigree'],
       dropAvoid: ['Eva-like giant'],
       briefs: [
-        "Abandoned in a cathedral-sized hangar, a hunched many-jointed crane walker with gothic armor plates kneels as if praying while dust falls through stained-glass light. No readable text or logo.",
-        "A knight in ornate lacquered armor stands in a rose garden, her enormous gothic mecha quietly waiting behind the hedge. No readable text or logo.",
-        "An empty ornate cockpit glows softly in the dark, a single glove left on the seat. No readable text or logo.",
+        'Abandoned in a cathedral-sized hangar, a hunched many-jointed crane walker with gothic armor plates kneels as if praying while dust falls through stained-glass light. No readable text or logo.',
+        'A knight in ornate lacquered armor stands in a rose garden, her enormous gothic mecha quietly waiting behind the hedge. No readable text or logo.',
+        'An empty ornate cockpit glows softly in the dark, a single glove left on the seat. No readable text or logo.',
       ],
     },
     'SP05-057': {
@@ -344,9 +344,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'hard black shadows', 'piloting couple pose copy'],
       dropAvoid: ['Darling-like couple pose'],
       briefs: [
-        "Standing on the shoulder of a sleek white mech above a collapsing glass dome, an adult pilot in a white flight suit reaches for her partner’s hand as pink petals swirl through the broken panes. No readable text or logo.",
-        "Two aging pilots sit on a hangar floor sharing a thermos, their sleek mechs kneeling behind them like tired dancers. No readable text or logo.",
-        "Inside a quiet glass dome at sunset, a single pink flower grows through a cracked mech palm. No readable text or logo.",
+        'Standing on the shoulder of a sleek white mech above a collapsing glass dome, an adult pilot in a white flight suit reaches for her partner’s hand as pink petals swirl through the broken panes. No readable text or logo.',
+        'Two aging pilots sit on a hangar floor sharing a thermos, their sleek mechs kneeling behind them like tired dancers. No readable text or logo.',
+        'Inside a quiet glass dome at sunset, a single pink flower grows through a cracked mech palm. No readable text or logo.',
       ],
     },
     'SP05-058': {
@@ -370,9 +370,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'saturated neon', 'crushed pure blacks', 'photoreal control room'],
       briefs: [
-        "Sitting on the floor of a dim command room, a drone operator in her fifties holds the scuffed controller of a spider-legged machine that did not come back, its empty charging bay glowing beside her. No readable text or logo.",
-        "Three small spider-legged robots argue silently over a crate of oil cans in a rainy alley, legs tapping impatiently. No readable text or logo.",
-        "An empty charging dock blinks green in a quiet hangar, a child’s drawing of a spider robot taped above it. No readable text or logo.",
+        'Sitting on the floor of a dim command room, a drone operator in her fifties holds the scuffed controller of a spider-legged machine that did not come back, its empty charging bay glowing beside her. No readable text or logo.',
+        'Three small spider-legged robots argue silently over a crate of oil cans in a rainy alley, legs tapping impatiently. No readable text or logo.',
+        'An empty charging dock blinks green in a quiet hangar, a child’s drawing of a spider robot taped above it. No readable text or logo.',
       ],
     },
     'SP05-059': {
@@ -395,9 +395,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'readable code', 'opaque heavy paint', 'photoreal office'],
       briefs: [
-        "Half dissolved by pixel noise, an adult agent in augmented-reality glasses walks through a sleepy summer town where digital fish swim through the air above the rice fields. No readable text or logo.",
-        "An old man in thick glasses feeds a glitching digital dog on his porch while his real cat stares at it suspiciously. No readable text or logo.",
-        "A street corner flickers as a patch of pixel noise slowly eats the corner of a mailbox. No readable text or logo.",
+        'Half dissolved by pixel noise, an adult agent in augmented-reality glasses walks through a sleepy summer town where digital fish swim through the air above the rice fields. No readable text or logo.',
+        'An old man in thick glasses feeds a glitching digital dog on his porch while his real cat stares at it suspiciously. No readable text or logo.',
+        'A street corner flickers as a patch of pixel noise slowly eats the corner of a mailbox. No readable text or logo.',
       ],
     },
     'SP05-060': {
@@ -421,9 +421,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'busy clutter'],
       briefs: [
-        "Facing each other in perfect symmetry above a blue planet, two slender rival mechs, one violet and one crimson, hold glowing blades crossed while their pilots’ reflections meet in the visors. No readable text or logo.",
-        "On a colony balcony above a slowly turning blue planet, two retired rival pilots play a very serious game of chess with mech-shaped pieces. No readable text or logo.",
-        "Drifting silently through orbit, a single white feather-like armor panel tumbles past a space station window, glinting in the harsh unfiltered sunlight. No readable text or logo.",
+        'Facing each other in perfect symmetry above a blue planet, two slender rival mechs, one violet and one crimson, hold glowing blades crossed while their pilots’ reflections meet in the visors. No readable text or logo.',
+        'On a colony balcony above a slowly turning blue planet, two retired rival pilots play a very serious game of chess with mech-shaped pieces. No readable text or logo.',
+        'Drifting silently through orbit, a single white feather-like armor panel tumbles past a space station window, glinting in the harsh unfiltered sunlight. No readable text or logo.',
       ],
     },
     'SP05-221': {
@@ -447,9 +447,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'transforming jet copy'],
       briefs: [
-        "Looping between missile trails above a floating concert stage, a sleek white swept-wing fighter flies so close to the singer that her sequined cape ripples in its wake. No readable text or logo.",
-        "An aging idol practices dance steps alone in a hangar while mechanics pretend not to watch from the fighter wings. No readable text or logo.",
-        "An empty stage in a space colony glows at midnight, one microphone still on its stand. No readable text or logo.",
+        'Looping between missile trails above a floating concert stage, a sleek white swept-wing fighter flies so close to the singer that her sequined cape ripples in its wake. No readable text or logo.',
+        'An aging idol practices dance steps alone in a hangar while mechanics pretend not to watch from the fighter wings. No readable text or logo.',
+        'An empty stage in a space colony glows at midnight, one microphone still on its stand. No readable text or logo.',
       ],
     },
     'SP05-223': {
@@ -473,9 +473,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'rain-soaked neon street'],
       briefs: [
-        "Playing a smoky saxophone solo on a rooftop in the rain, a chrome-plated android jazz musician reflects every neon sign of the megacity across her polished shoulders. No readable text or logo.",
-        "Four hardsuit-clad women drink coffee at an all-night neon diner, their chrome helmets lined up on the counter like trophies after a long night. No readable text or logo.",
-        "On a wet megacity street under flickering pink neon, a single chrome hardsuit glove lies in a puddle, still twitching its fingers. No readable text or logo.",
+        'Playing a smoky saxophone solo on a rooftop in the rain, a chrome-plated android jazz musician reflects every neon sign of the megacity across her polished shoulders. No readable text or logo.',
+        'Four hardsuit-clad women drink coffee at an all-night neon diner, their chrome helmets lined up on the counter like trophies after a long night. No readable text or logo.',
+        'On a wet megacity street under flickering pink neon, a single chrome hardsuit glove lies in a puddle, still twitching its fingers. No readable text or logo.',
       ],
     },
     'SP05-225': {
@@ -498,9 +498,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'polished final render'],
       briefs: [
-        "Skidding around a scrapyard racetrack on sparking wheeled feet, a patchwork junk mech built from washing machines and car doors overtakes a sleek rival as the crowd of scavengers roars. No readable text or logo.",
-        "A cyborg mechanic in her sixties tightens a bolt on her own knee while fixing a customer’s arm. No readable text or logo.",
-        "In a rusty scrap pile beneath the floating city, a single detailed cyborg hand still clutches a small wildflower someone left there. No readable text or logo.",
+        'Skidding around a scrapyard racetrack on sparking wheeled feet, a patchwork junk mech built from washing machines and car doors overtakes a sleek rival as the crowd of scavengers roars. No readable text or logo.',
+        'A cyborg mechanic in her sixties tightens a bolt on her own knee while fixing a customer’s arm. No readable text or logo.',
+        'In a rusty scrap pile beneath the floating city, a single detailed cyborg hand still clutches a small wildflower someone left there. No readable text or logo.',
       ],
     },
     'SP05-226': {
@@ -523,9 +523,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'full color painting', 'soft airbrush'],
       briefs: [
-        "Walking through a mausoleum of stacked server coffins under a dome city, an archivist in a hooded cyber-goth coat stops as one coffin begins to hum a lullaby. No readable text or logo.",
-        "Every evening in a grey-blue apartment under the dome, an elegant android butler serves hot tea to an empty chair and waits patiently. No readable text or logo.",
-        "Fog drifts through a gothic plaza under the dome, where one streetlamp flickers in a steady rhythm. No readable text or logo.",
+        'Walking through a mausoleum of stacked server coffins under a dome city, an archivist in a hooded cyber-goth coat stops as one coffin begins to hum a lullaby. No readable text or logo.',
+        'Every evening in a grey-blue apartment under the dome, an elegant android butler serves hot tea to an empty chair and waits patiently. No readable text or logo.',
+        'Fog drifts through a gothic plaza under the dome, where one streetlamp flickers in a steady rhythm. No readable text or logo.',
       ],
     },
     'SP05-229': {
@@ -549,9 +549,9 @@ const spec: Spec = {
       avoid: [...AVOID, 'smooth digital gradients', 'wet night market'],
       dropAvoid: ['muddy noisy darks'],
       briefs: [
-        "Hunting through a neon market with a blinking collar around his neck, a bounty hunter with a cybernetic eye grins as the timer on his collar counts down. No readable text or logo.",
-        "Three convict cops share cheap noodles on a neon rooftop in the rain, the explosive collars around their necks blinking in perfect unison. No readable text or logo.",
-        "Above an empty alley in a neon vice district, a cracked sign hisses and sparks in the rain, painting the puddles purple and green. No readable text or logo.",
+        'Hunting through a neon market with a blinking collar around his neck, a bounty hunter with a cybernetic eye grins as the timer on his collar counts down. No readable text or logo.',
+        'Three convict cops share cheap noodles on a neon rooftop in the rain, the explosive collars around their necks blinking in perfect unison. No readable text or logo.',
+        'Above an empty alley in a neon vice district, a cracked sign hisses and sparks in the rain, painting the puddles purple and green. No readable text or logo.',
       ],
     },
     'SP05-230': {
@@ -574,9 +574,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'saturated color', 'busy neon detail'],
       briefs: [
-        "Crossing a bridge spanning a chasm miles deep inside an endless concrete megastructure, a lone wanderer in a ragged coat looks up at structures that vanish into darkness. No readable text or logo.",
-        "An old maintenance robot sweeps an endless corridor that no one has walked in a thousand years. No readable text or logo.",
-        "A single light glows at the bottom of an immense shaft, too far away to reach. No readable text or logo.",
+        'Crossing a bridge spanning a chasm miles deep inside an endless concrete megastructure, a lone wanderer in a ragged coat looks up at structures that vanish into darkness. No readable text or logo.',
+        'An old maintenance robot sweeps an endless corridor that no one has walked in a thousand years. No readable text or logo.',
+        'A single light glows at the bottom of an immense shaft, too far away to reach. No readable text or logo.',
       ],
     },
     'SP05-231': {
@@ -599,9 +599,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'daylight', 'flat even lighting'],
       briefs: [
-        "Kneeling before a giant ceramic mech that hums like a church organ, a priestess-engineer in heavy robes tunes its chest with a silver tuning fork as coral light fills the chamber. No readable text or logo.",
-        "An old violinist plays on a beach at dusk and a coral-colored giant rises from the sea to listen. No readable text or logo.",
-        "Washed up on a coral-pink beach at dusk, a cracked ceramic mask lies in the foam, faintly singing a note that makes the shells tremble. No readable text or logo.",
+        'Kneeling before a giant ceramic mech that hums like a church organ, a priestess-engineer in heavy robes tunes its chest with a silver tuning fork as coral light fills the chamber. No readable text or logo.',
+        'An old violinist plays on a beach at dusk and a coral-colored giant rises from the sea to listen. No readable text or logo.',
+        'Washed up on a coral-pink beach at dusk, a cracked ceramic mask lies in the foam, faintly singing a note that makes the shells tremble. No readable text or logo.',
       ],
     },
     'SP05-232': {
@@ -624,9 +624,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'photoreal military drone', 'desert war photo'],
       briefs: [
-        "Limping across a dusty battlefield at sunset, an old four-rotor cargo drone carries a single canteen toward a trench where nobody is waiting anymore. No readable text or logo.",
-        "A commander in a clean uniform listens to static in a cold room, her tea going cold. No readable text or logo.",
-        "In a meadow that used to be a battlefield, rusted spider-legged drones stand frozen among wildflowers, vines curling up their legs. No readable text or logo.",
+        'Limping across a dusty battlefield at sunset, an old four-rotor cargo drone carries a single canteen toward a trench where nobody is waiting anymore. No readable text or logo.',
+        'A commander in a clean uniform listens to static in a cold room, her tea going cold. No readable text or logo.',
+        'In a meadow that used to be a battlefield, rusted spider-legged drones stand frozen among wildflowers, vines curling up their legs. No readable text or logo.',
       ],
     },
     'SP05-233': {
@@ -650,9 +650,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'soft ambient fill', 'atmospheric haze'],
       briefs: [
-        "Floating outside a colony-ship hull in a bulky white suit, an engineer patches a crack while a vast organic shape drifts past in the distance, blocking out the stars. No readable text or logo.",
-        "Pilots eat rations in perfect silent rows in a cold mess hall, helmets under their arms. No readable text or logo.",
-        "Floating alone in the black void, a small blinking rescue beacon marks the exact spot where a colony ship used to be. No readable text or logo.",
+        'Floating outside a colony-ship hull in a bulky white suit, an engineer patches a crack while a vast organic shape drifts past in the distance, blocking out the stars. No readable text or logo.',
+        'Pilots eat rations in perfect silent rows in a cold mess hall, helmets under their arms. No readable text or logo.',
+        'Floating alone in the black void, a small blinking rescue beacon marks the exact spot where a colony ship used to be. No readable text or logo.',
       ],
     },
     'SP05-234': {
@@ -675,9 +675,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'filled painted surfaces', 'numerals', 'readable map labels'],
       briefs: [
-        "A continent-sized tide of alien swarm creatures rolls over a mountain range on a command table display while an exhausted general in a rumpled uniform quietly moves one small marker. No readable text or logo.",
-        "A lone mech pilot sits on her machine’s shoulder at dawn, watching the horizon for the next swarm. No readable text or logo.",
-        "In a deserted command bunker, an empty commander’s chair faces a wall of dark screens, a cold cup of coffee still on the armrest. No readable text or logo.",
+        'A continent-sized tide of alien swarm creatures rolls over a mountain range on a command table display while an exhausted general in a rumpled uniform quietly moves one small marker. No readable text or logo.',
+        'A lone mech pilot sits on her machine’s shoulder at dawn, watching the horizon for the next swarm. No readable text or logo.',
+        'In a deserted command bunker, an empty commander’s chair faces a wall of dark screens, a cold cup of coffee still on the armrest. No readable text or logo.',
       ],
     },
     'SP05-235': {
@@ -700,9 +700,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'photoreal car render', 'showroom 3D product shot'],
       briefs: [
-        "Dancing on a translucent stage above a neon highway, an avatar singer flickers as the city behind her briefly reveals its wireframe skeleton. No readable text or logo.",
-        "Riding a motorcycle through a neon tunnel at night, a biker notices the lights stretching around her like lines of glowing code. No readable text or logo.",
-        "In a silent simulated city at midnight, an empty idol stage glows pink while a single spotlight sways as if someone just left. No readable text or logo.",
+        'Dancing on a translucent stage above a neon highway, an avatar singer flickers as the city behind her briefly reveals its wireframe skeleton. No readable text or logo.',
+        'Riding a motorcycle through a neon tunnel at night, a biker notices the lights stretching around her like lines of glowing code. No readable text or logo.',
+        'In a silent simulated city at midnight, an empty idol stage glows pink while a single spotlight sways as if someone just left. No readable text or logo.',
       ],
     },
     'SP05-237': {
@@ -725,9 +725,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'thin cel outlines', 'bright even daylight'],
       briefs: [
-        "Kneeling in a vast space hangar, a battered colossus mech lowers its head as a tiny pilot in a training suit salutes it before the final launch. No readable text or logo.",
-        "Two retired pilots in faded training suits jog laps at dawn around the enormous feet of a giant robot parked in a field. No readable text or logo.",
-        "Near a round porthole full of stars, a single faded red training headband floats slowly in zero gravity inside an empty cabin. No readable text or logo.",
+        'Kneeling in a vast space hangar, a battered rust-orange colossus mech with a round brass faceplate lowers its head as a tiny pilot in a training suit salutes it before the final launch. No readable text or logo.',
+        'Two retired pilots in faded training suits jog laps at dawn around the enormous moss-covered feet of a slate-grey giant robot parked in a field. No readable text or logo.',
+        'Near a round porthole full of stars, a single faded red training headband floats slowly in zero gravity inside an empty cabin. No readable text or logo.',
       ],
     },
     'SP05-239': {
@@ -750,9 +750,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'muted gray palette'],
       briefs: [
-        "Towing a whole planet behind it on a glowing ribbon, a round pink starfighter with cat-ear fins zooms past a startled fleet of grey battleships. No readable text or logo.",
-        "A cheerful pilot in a bubblegum suit waves at a black hole as if it were a neighbor. No readable text or logo.",
-        "Sitting on the glittering rings of a gas giant, a tiny bubblegum-pink mech swings its legs like a bored child waiting for dinner. No readable text or logo.",
+        'Towing a whole planet behind it on a glowing ribbon, a round pink starfighter with cat-ear fins zooms past a startled fleet of grey battleships. No readable text or logo.',
+        'A cheerful pilot in a bubblegum suit waves at a black hole as if it were a neighbor. No readable text or logo.',
+        'Sitting on the glittering rings of a gas giant, a tiny bubblegum-pink mech swings its legs like a bored child waiting for dinner. No readable text or logo.',
       ],
     },
     'SP05-227': {
@@ -775,9 +775,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'clean flat vector color'],
       briefs: [
-        "Rappelling down the rusted inner wall of an underground city shaft, a cable diver with a mechanical arm stops to watch a single ray of daylight far above. No readable text or logo.",
-        "An old man with a rusted prosthetic leg sits by a flickering lamp, sharpening a knife slowly. No readable text or logo.",
-        "In an empty underground plaza lit by one failing lamp, rust flakes drift down from the ceiling like slow brown snow. No readable text or logo.",
+        'Rappelling down the rusted inner wall of an underground city shaft, a cable diver with a mechanical arm stops to watch a single ray of daylight far above. No readable text or logo.',
+        'An old man with a rusted prosthetic leg sits by a flickering lamp, sharpening a knife slowly. No readable text or logo.',
+        'In an empty underground plaza lit by one failing lamp, rust flakes drift down from the ceiling like slow brown snow. No readable text or logo.',
       ],
     },
     'SP05-053': {
@@ -801,9 +801,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'clean cel outlines', 'plastic toy gloss'],
       briefs: [
-        "Crossing a smoking battlefield at sunset, a twin-piston siege walker as tall as a church hisses steam from every joint while tiny engineers ride on its back. No readable text or logo.",
-        "A mechanic sits in the shade of a giant hydraulic leg, drinking tea during a lull in battle. No readable text or logo.",
-        "In a golden wheat field years after the war, a rusted hydraulic piston sticks out of the ground, overgrown with red poppies. No readable text or logo.",
+        'Crossing a smoking battlefield at sunset, a twin-piston siege walker as tall as a church hisses steam from every joint while tiny engineers ride on its back. No readable text or logo.',
+        'A mechanic sits in the shade of a giant hydraulic leg, drinking tea during a lull in battle. No readable text or logo.',
+        'In a golden wheat field years after the war, a rusted hydraulic piston sticks out of the ground, overgrown with red poppies. No readable text or logo.',
       ],
     },
   },

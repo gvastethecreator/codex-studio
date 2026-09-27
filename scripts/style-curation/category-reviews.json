@@ -1325,7 +1325,7 @@
     "displayCategory": "Nineties cel craft",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "4996479c1e5c7adfb1bfa7746a952872cce859fd580c05ca658daebe44ef402f",
+    "baselineHash": "7ed681ae7b51bb39147c522948efc8618efe81b7a0528a48635701ef9c0e4ce2",
     "problem": "Character archetypes and iconic genres dominate despite renamed display labels.",
     "preserve": "Shadow group count, lineweight and color separation.",
     "proposedAction": "Keep contour echoes, cel-value grouping, line rhythm and material-aware highlights without mandatory characters or scenes. Remove bare text bans; compare regenerated subjects before grouping variants. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
