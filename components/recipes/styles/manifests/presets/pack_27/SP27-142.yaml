@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-142
+packId: pack_27
+name: Silent Running 1972 - Trumbull Space Greenhouse
+styleAnchors:
+  - Silent Running 1972 - Trumbull Space Greenhouse
+  - seventies science fiction cinema
+  - Silent Running domes
+displayName: Silent Running 1972 - Trumbull Space Greenhouse
+category: 8. Sci-Fi Cinema 70s & 80s
+domain: seventies science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-70s-80s
+  - scifi-70s-80s
+  - scifi-cinema
+  - silent-running
+  - reference-title
+visualDna:
+  aesthetic: 'Douglas Trumbull Silent Running (1972) look: geodesic greenhouse domes on a freighter in deep space, lush forests under artificial light, small shuffling drones and gentle ecological melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in geodesic greenhouse domes of forest drifting in deep space. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Forest green under dome glass, freighter grey and space black.
+  lighting_and_shadow: Artificial growing light and distant starlight, lit the way Silent Running 1972 lights its scenes.
+  texture_and_material: Seventies 35mm film grain with muted print color, soft lenses and halation.
+  camera_and_composition: Wide miniature shots of domes against space and intimate forest frames.
+  atmosphere_and_mood: Keep the requested mood with gentle ecological melancholy.
+  rendering_and_quality: Authentic seventies ecological science fiction frame, in the recognizable hand of Silent Running 1972.
+  creative_brief: 'Douglas Trumbull Silent Running (1972) look: geodesic greenhouse domes on a freighter in deep space, lush forests under artificial light, small shuffling drones and gentle ecological melancholy. Carry it through Silent Running domes, space forest, drones, ecology. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Silent Running domes; space forest; drones; ecology
+avoidRules:
+  - small boxy walking drones with manipulator arms
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: small boxy walking drones with manipulator arms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-70s-80s
+  categoryName: 8. Sci-Fi Cinema 70s & 80s
+  domain: seventies science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-70s-80s
+    - scifi-70s-80s
+    - scifi-cinema
+    - silent-running
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

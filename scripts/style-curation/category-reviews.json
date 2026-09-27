@@ -2788,5 +2788,20 @@
     "evidencePresetIds": ["SP27-121", "SP27-122", "SP27-123"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "8. Sci-Fi Cinema 70s & 80s",
+    "displayCategory": "Sci-fi cinema 70s & 80s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "db00d9768b5dadbe89cb3166bf463530d80ce4e3e02b1fc2bd5481094cd9e8e2",
+    "problem": "Seventies and eighties science fiction styles must reproduce each named film's production look (Technicolor or black-and-white stock, matte paintings, sets, lighting, lenses) without copying its creatures, robots, costumes or scenes.",
+    "preserve": "The requested subject stays the subject, staged in that film's production language; cards invent original moments.",
+    "proposedAction": "New category of 20 named films from Solaris and Silent Running to Blade Runner, Brazil, RoboCop and The Abyss, spanning Soviet art cinema, New Hollywood, Carpenter, Lynch and Cameron.",
+    "validation": "Generate the card set; check each card reads as its film's stock and design without a signature creature, robot or scene.",
+    "evidencePresetIds": ["SP27-141", "SP27-142", "SP27-143"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

@@ -169,6 +169,29 @@ categories:
       - pack_27/SP27-138.yaml
       - pack_27/SP27-139.yaml
       - pack_27/SP27-140.yaml
+  - id: scifi-cinema-70s-80s
+    name: 8. Sci-Fi Cinema 70s & 80s
+    presetRefs:
+      - pack_27/SP27-141.yaml
+      - pack_27/SP27-142.yaml
+      - pack_27/SP27-143.yaml
+      - pack_27/SP27-144.yaml
+      - pack_27/SP27-145.yaml
+      - pack_27/SP27-146.yaml
+      - pack_27/SP27-147.yaml
+      - pack_27/SP27-148.yaml
+      - pack_27/SP27-149.yaml
+      - pack_27/SP27-150.yaml
+      - pack_27/SP27-151.yaml
+      - pack_27/SP27-152.yaml
+      - pack_27/SP27-153.yaml
+      - pack_27/SP27-154.yaml
+      - pack_27/SP27-155.yaml
+      - pack_27/SP27-156.yaml
+      - pack_27/SP27-157.yaml
+      - pack_27/SP27-158.yaml
+      - pack_27/SP27-159.yaml
+      - pack_27/SP27-160.yaml
 presetRefs:
   - pack_27/SP27-001.yaml
   - pack_27/SP27-002.yaml
@@ -310,3 +333,23 @@ presetRefs:
   - pack_27/SP27-138.yaml
   - pack_27/SP27-139.yaml
   - pack_27/SP27-140.yaml
+  - pack_27/SP27-141.yaml
+  - pack_27/SP27-142.yaml
+  - pack_27/SP27-143.yaml
+  - pack_27/SP27-144.yaml
+  - pack_27/SP27-145.yaml
+  - pack_27/SP27-146.yaml
+  - pack_27/SP27-147.yaml
+  - pack_27/SP27-148.yaml
+  - pack_27/SP27-149.yaml
+  - pack_27/SP27-150.yaml
+  - pack_27/SP27-151.yaml
+  - pack_27/SP27-152.yaml
+  - pack_27/SP27-153.yaml
+  - pack_27/SP27-154.yaml
+  - pack_27/SP27-155.yaml
+  - pack_27/SP27-156.yaml
+  - pack_27/SP27-157.yaml
+  - pack_27/SP27-158.yaml
+  - pack_27/SP27-159.yaml
+  - pack_27/SP27-160.yaml

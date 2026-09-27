@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP27-155
+packId: pack_27
+name: Dune 1984 - Lynch Baroque Desert Empire
+styleAnchors:
+  - Dune 1984 - Lynch Baroque Desert Empire
+  - eighties science fiction cinema
+  - Lynch Dune baroque
+displayName: Dune 1984 - Lynch Baroque Desert Empire
+category: 8. Sci-Fi Cinema 70s & 80s
+domain: eighties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-70s-80s
+  - scifi-70s-80s
+  - scifi-cinema
+  - dune-84
+  - reference-title
+visualDna:
+  aesthetic: 'David Lynch Dune (1984) look: baroque science fiction, ornate imperial halls, steam and brass, desert planets under orange skies, strange guild navigators and heavy ornate costume.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in baroque imperial halls of brass and steam or orange desert plains. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Desert orange, brass gold and imperial black, true to the Dune 1984 palette.
+  lighting_and_shadow: Heavy stage light, desert sun and steam haze.
+  texture_and_material: Eighties 35mm film grain with diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Formal baroque framing and wide desert matte shots.
+  atmosphere_and_mood: Keep the requested mood with heavy baroque strangeness.
+  rendering_and_quality: Authentic eighties baroque science fiction frame, in the recognizable hand of Dune 1984.
+  creative_brief: 'David Lynch Dune (1984) look: baroque science fiction, ornate imperial halls, steam and brass, desert planets under orange skies, strange guild navigators and heavy ornate costume. Carry it through Lynch Dune baroque, brass halls, orange desert. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Lynch Dune baroque; brass halls; orange desert
+avoidRules:
+  - giant sandworms
+  - a stillsuit with a nose tube
+  - a bloated floating guild navigator
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: giant sandworms, a stillsuit with a nose tube, a bloated floating guild navigator, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-70s-80s
+  categoryName: 8. Sci-Fi Cinema 70s & 80s
+  domain: eighties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-70s-80s
+    - scifi-70s-80s
+    - scifi-cinema
+    - dune-84
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

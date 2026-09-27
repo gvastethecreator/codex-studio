@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-147
+packId: pack_27
+name: Close Encounters 1977 - Spielberg Suburban Awe
+styleAnchors:
+  - Close Encounters 1977 - Spielberg Suburban Awe
+  - seventies science fiction cinema
+  - Close Encounters blinding light
+displayName: Close Encounters 1977 - Spielberg Suburban Awe
+category: 8. Sci-Fi Cinema 70s & 80s
+domain: seventies science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-70s-80s
+  - scifi-70s-80s
+  - scifi-cinema
+  - close-encounters
+  - reference-title
+visualDna:
+  aesthetic: 'Steven Spielberg Close Encounters of the Third Kind (1977) look: seventies suburban Indiana, blinding lights through windows, glowing mothership chandeliers, mashed-potato obsession and awe.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in seventies suburban homes and roads bathed in blinding lights from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Suburban brown, blazing white and warm orange, true to the Close Encounters 1977 palette.
+  lighting_and_shadow: Blinding light pouring through doors and windows, lit the way Close Encounters 1977 lights its scenes.
+  texture_and_material: Seventies 35mm film grain with muted print color, soft lenses and halation.
+  camera_and_composition: Low awe-struck angles into blazing light, framed the way Close Encounters 1977 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with wondrous suburban awe.
+  rendering_and_quality: Authentic seventies Spielberg science fiction frame, in the recognizable hand of Close Encounters 1977.
+  creative_brief: 'Steven Spielberg Close Encounters of the Third Kind (1977) look: seventies suburban Indiana, blinding lights through windows, glowing mothership chandeliers, mashed-potato obsession and awe. Carry it through Close Encounters blinding light, suburban awe, lights above. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Close Encounters blinding light; suburban awe; lights above
+avoidRules:
+  - a colossal chandelier mothership over a butte
+  - slender grey aliens
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a colossal chandelier mothership over a butte, slender grey aliens, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-70s-80s
+  categoryName: 8. Sci-Fi Cinema 70s & 80s
+  domain: seventies science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-70s-80s
+    - scifi-70s-80s
+    - scifi-cinema
+    - close-encounters
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
