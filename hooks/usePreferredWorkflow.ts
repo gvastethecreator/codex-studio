@@ -11,7 +11,10 @@ export function usePreferredWorkflow(
   const waiting = useRef(!window.location.hash);
   const initialHash = useRef(window.location.hash);
   const latest = useRef(preferred);
-  latest.current = preferred;
+  // Runs before the effect below that calls open(), so open() reads the current preference.
+  useEffect(() => {
+    latest.current = preferred;
+  }, [preferred]);
   const open = useCallback(() => {
     const id = latest.current;
     if (!id) {
