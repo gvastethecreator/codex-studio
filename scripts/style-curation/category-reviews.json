@@ -1115,7 +1115,7 @@
     "displayCategory": "Urban game capture",
     "kind": "profile",
     "expectedCount": 20,
-    "baselineHash": "2dcfa6be73f7c9698ccf530e863fd9668380fba7711474a2d3e61434c348c12a",
+    "baselineHash": "2f1f0280094a4a3b543477dcd3d3c449904d034c0289f82e346ed08b39314041",
     "problem": "Named game captures require routes, enemies, rooms and HUD cues, despite transferable wording.",
     "preserve": "Game-scale pixel/render readability and camera conventions.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",

@@ -3,7 +3,7 @@ id: SP12-071
 packId: pack_12
 name: Half-Life 2 2004 - Valve City 17 Resistance
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,6 +30,9 @@ visualDna:
   key_features: Half-Life 2 City 17; citadel; canals; first-person
   creative_brief: 'Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins. Carry it through Half-Life 2 City 17, citadel, canals, first-person. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - tall three-legged alien striders
+  - a red crowbar
+  - gas-masked occupation police
   - watermark
   - logo
   - copyright mark
@@ -58,10 +61,15 @@ avoidRules:
   - series logo or title lettering
   - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-071.webp
 attributes:
-  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: tall three-legged alien striders, a red crowbar, gas-masked occupation police, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Half-Life 2
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: classic health/suit/ammo HUD and crosshair can appear, but avoid modern UI clutter

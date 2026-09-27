@@ -121,6 +121,7 @@ const spec: Spec = {
       mood: 'grim occupied resistance',
       render: 'Authentic mid-2000s Source engine first-person screen.',
       key: 'Half-Life 2 City 17; citadel; canals; first-person',
+      avoid: ['tall three-legged alien striders', 'a red crowbar', 'gas-masked occupation police'],
     }),
     ga('SP12-078', 'Mark of the Ninja 2012 - Klei Ink Stealth', {
       look: 'Klei Entertainment Mark of the Ninja (2012) look: side-view 2D stealth with hand-drawn cartoon animation, deep black silhouettes in shadow, bright lit zones and sound rings.',
