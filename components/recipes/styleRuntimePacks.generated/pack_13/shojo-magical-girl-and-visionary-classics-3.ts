@@ -254,7 +254,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Kazuki Takahashi - Dream Card Enchanter'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'existing card-game monsters, millennium puzzle pendant, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
+      'existing card-game monsters, millennium puzzle pendant, spiky tricolor hair duelist, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards.',

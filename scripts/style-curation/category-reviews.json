@@ -1265,7 +1265,7 @@
     "displayCategory": "Expressive anime",
     "kind": "mixed",
     "expectedCount": 40,
-    "baselineHash": "bacac6e752e919afcc5f799193b814ddc2220ece9bdea2d3845be139a81e0a23",
+    "baselineHash": "b2b52cea611edfe6dd5bd712c05227d79ef3486b310c4dafa10b89075f4a0561",
     "problem": "Studio-era and magical-character references blend visual grammar with iconic narrative markers.",
     "preserve": "Line elasticity, cel polish and expressive staging.",
     "proposedAction": "Document references separately and derive transferable rendering; transformations remain explicit profiles. Overhaul: DNA already carries portable line and cel mechanics, so this pass audits it unchanged and adds three original briefs per preset (40); franchise names stay as search identity while every brief uses original characters and places.",
@@ -1287,7 +1287,7 @@
     "validation": "Different styles remain distinguishable without changing the activity to a hobby vignette.",
     "evidencePresetIds": ["SP05-081", "SP05-206"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_13",

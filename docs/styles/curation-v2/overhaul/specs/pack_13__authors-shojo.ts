@@ -145,6 +145,7 @@ const spec: Spec = {
       avoid: [
         'existing card-game monsters',
         'millennium puzzle pendant',
+        'spiky tricolor hair duelist',
         'existing franchise characters',
       ],
     }),
