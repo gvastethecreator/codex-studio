@@ -137,3 +137,7 @@ Desktop.ini
 
 # Vitest 5 artifacts
 .vitest/
+
+# Local reference material, never versioned (pack_25 source sheets, UI design handoff)
+/Codex_Studio_Fichas_Completas_*/
+/cozy-studio-handoff/
