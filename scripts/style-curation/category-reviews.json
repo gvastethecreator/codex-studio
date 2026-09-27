@@ -2592,7 +2592,7 @@
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
     "evidencePresetIds": ["SP14-144", "SP14-149", "SP14-303"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_14",
