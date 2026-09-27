@@ -72,6 +72,9 @@ describe('remote extension install', () => {
     zip.file('extension.json', JSON.stringify({ ...manifest, version: '1.1.0' }));
     zip.file('pack.json', '{"version":"1.1.0"}');
     const archive = await zip.generateAsync({ type: 'uint8array' });
+    const cardsZip = new JSZip();
+    cardsZip.file('SP14-142.webp', 'full-card');
+    const cardsArchive = await cardsZip.generateAsync({ type: 'uint8array' });
     const entry = {
       id: 'cozy.pack-14',
       version: '1.1.0',
@@ -80,13 +83,21 @@ describe('remote extension install', () => {
       archive: 'cozy.pack-14-1.1.0.zip',
       sha256: createHash('sha256').update(archive).digest('hex'),
       bytes: archive.byteLength,
+      layers: [
+        {
+          name: 'cards' as const,
+          archive: 'cozy.pack-14-1.1.0-cards.zip',
+          sha256: createHash('sha256').update(cardsArchive).digest('hex'),
+          bytes: cardsArchive.byteLength,
+        },
+      ],
     };
     const client: ExtensionSourceClient = {
       tokenConfigured: false,
       fetchIndex: async () => ({ schemaVersion: 1, extensions: [entry] }),
       downloadAsset: async (_source, tag, name) => {
-        expect([tag, name]).toEqual([entry.tag, entry.archive]);
-        return archive;
+        expect(tag).toBe(entry.tag);
+        return name === entry.layers[0]!.archive ? cardsArchive : archive;
       },
     };
     const store = createExtensionStore([installDir, builtin]);
@@ -109,15 +120,19 @@ describe('remote extension install', () => {
 
       const install = await routes.request('/install', {
         method: 'POST',
-        body: JSON.stringify({ sourceId: 'cozy-styles', id: 'cozy.pack-14' }),
+        body: JSON.stringify({ sourceId: 'cozy-styles', id: 'cozy.pack-14', layers: ['cards'] }),
       });
       expect(install.status).toBe(200);
+      expect((await install.json()).installedLayers).toEqual(['cards']);
+      const card = await routes.request('/cozy.pack-14/files/cards/SP14-142.webp');
+      expect(await card.text()).toBe('full-card');
       const pack = await routes.request('/cozy.pack-14/files/pack.json');
       expect(await pack.json()).toEqual({ version: '1.1.0' });
       const after = await (await routes.request('/available')).json();
       expect(after.sources[0].extensions[0]).toMatchObject({
         installedVersion: '1.1.0',
         installedFrom: 'download',
+        installedLayers: ['cards'],
         updateAvailable: false,
       });
 

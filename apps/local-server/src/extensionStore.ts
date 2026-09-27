@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import {
+  EXTENSION_LAYERS,
   EXTENSION_MANIFEST_FILE,
   parseExtensionManifest,
   type ExtensionManifest,
@@ -12,6 +13,8 @@ export interface InstalledExtension {
   manifest: ExtensionManifest;
   root: string;
   source: string;
+  /** Optional layers present on disk, such as `cards`. */
+  layers: string[];
 }
 
 export interface ExtensionListing {
@@ -88,7 +91,8 @@ export function createExtensionStore(sources: string[]): ExtensionStore {
         }
         if (seen.has(parsed.manifest.id)) continue;
         seen.add(parsed.manifest.id);
-        extensions.push({ manifest: parsed.manifest, root, source });
+        const layers = EXTENSION_LAYERS.filter((layer) => existsSync(path.join(root, layer)));
+        extensions.push({ manifest: parsed.manifest, root, source, layers });
       }
     }
     extensions.sort((a, b) => a.manifest.id.localeCompare(b.manifest.id));

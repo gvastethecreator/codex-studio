@@ -37,7 +37,9 @@ export interface AvailableExtension {
   archive: string;
   sha256: string;
   bytes: number;
+  layers?: { name: 'cards'; archive: string; sha256: string; bytes: number }[];
   installedVersion: string | null;
+  installedLayers: string[];
   installedFrom: 'download' | 'builtin' | null;
   updateAvailable: boolean;
 }
@@ -56,11 +58,11 @@ export async function listAvailableExtensions() {
   );
 }
 
-export async function installExtension(sourceId: string, id: string) {
-  return request<{ extension: ExtensionManifest }>('/api/extensions/install', {
-    method: 'POST',
-    body: JSON.stringify({ sourceId, id }),
-  });
+export async function installExtension(sourceId: string, id: string, layers: 'cards'[] = []) {
+  return request<{ extension: ExtensionManifest; installedLayers: string[] }>(
+    '/api/extensions/install',
+    { method: 'POST', body: JSON.stringify({ sourceId, id, layers }) },
+  );
 }
 
 export async function removeExtension(id: string) {

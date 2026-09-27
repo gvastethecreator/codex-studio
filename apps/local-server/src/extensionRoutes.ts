@@ -1,8 +1,16 @@
 import { Hono } from 'hono';
 import { rm } from 'node:fs/promises';
 import path from 'node:path';
-import { compareExtensionVersions } from '../../../packages/shared/src/extensions';
-import { ExtensionInstallError, installExtensionArchive } from './extensionInstaller';
+import {
+  compareExtensionVersions,
+  EXTENSION_LAYERS,
+  type ExtensionLayerName,
+} from '../../../packages/shared/src/extensions';
+import {
+  ExtensionInstallError,
+  installExtensionArchive,
+  installExtensionLayer,
+} from './extensionInstaller';
 import type { ExtensionSourceClient, RemoteExtensionSource } from './extensionSources';
 import type { ExtensionStore } from './extensionStore';
 
@@ -37,6 +45,9 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
     const { extensions, invalid } = await store.list({ refresh: c.req.query('refresh') === '1' });
     return c.json({
       extensions: extensions.map(({ manifest }) => manifest),
+      installedLayers: Object.fromEntries(
+        extensions.map(({ manifest, layers }) => [manifest.id, layers] as const),
+      ),
       invalid: invalid.map(({ folder, issues }) => ({ folder: path.basename(folder), issues })),
     });
   });
@@ -58,6 +69,7 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
               return {
                 ...entry,
                 installedVersion: local?.manifest.version ?? null,
+                installedLayers: local?.layers ?? [],
                 installedFrom: local
                   ? isInstalledCopy(local.root)
                     ? 'download'
@@ -80,7 +92,16 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
 
   app.post('/install', async (c) => {
     if (!remote) return c.json({ error: 'Remote extension sources are not configured' }, 404);
-    const body = (await c.req.json().catch(() => null)) as { sourceId?: unknown; id?: unknown };
+    const body = (await c.req.json().catch(() => null)) as {
+      sourceId?: unknown;
+      id?: unknown;
+      layers?: unknown;
+    };
+    const requestedLayers = Array.isArray(body?.layers)
+      ? body.layers.filter((layer): layer is ExtensionLayerName =>
+          EXTENSION_LAYERS.includes(layer as ExtensionLayerName),
+        )
+      : [];
     const source = remote.sources.find((item) => item.id === body?.sourceId);
     if (!source || typeof body?.id !== 'string')
       return c.json({ error: 'Request needs a known sourceId and an extension id' }, 400);
@@ -95,8 +116,17 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
         entry,
         installDir: remote.installDir,
       });
+      const extensionRoot = path.join(remote.installDir, entry.id);
+      const installedLayers: string[] = [];
+      for (const name of requestedLayers) {
+        const layer = entry.layers?.find((item) => item.name === name);
+        if (!layer) continue;
+        const layerArchive = await remote.client.downloadAsset(source, entry.tag, layer.archive);
+        await installExtensionLayer({ archive: layerArchive, layer, extensionRoot });
+        installedLayers.push(name);
+      }
       await store.list({ refresh: true });
-      return c.json({ extension: manifest });
+      return c.json({ extension: manifest, installedLayers });
     } catch (error) {
       const status = error instanceof ExtensionInstallError ? 422 : 502;
       return c.json({ error: errorMessage(error) }, status);

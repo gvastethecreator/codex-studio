@@ -75,6 +75,18 @@ function isSafeRelativePath(value: unknown): value is string {
  * `index.json` on the default branch of an Extension Source. `archive` names a zip asset of
  * the GitHub release `tag`; the zip holds the extension root.
  */
+/** Optional download layers of an extension; `cards` holds the full-quality style cards. */
+export const EXTENSION_LAYERS = ['cards'] as const;
+export type ExtensionLayerName = (typeof EXTENSION_LAYERS)[number];
+
+/** A zip release asset that extracts into `<extension root>/<name>/`. */
+export interface ExtensionReleaseLayer {
+  name: ExtensionLayerName;
+  archive: string;
+  sha256: string;
+  bytes: number;
+}
+
 export interface ExtensionReleaseEntry {
   id: string;
   version: string;
@@ -83,6 +95,7 @@ export interface ExtensionReleaseEntry {
   archive: string;
   sha256: string;
   bytes: number;
+  layers?: ExtensionReleaseLayer[];
 }
 
 export interface ExtensionReleaseIndex {
@@ -121,6 +134,27 @@ export function parseExtensionReleaseIndex(value: unknown): ExtensionReleaseInde
       entry.bytes <= 0
     )
       issues.push(`extensions[${index}] needs id, version, title, tag, archive, sha256 and bytes`);
+    else if (entry.layers !== undefined) {
+      if (!Array.isArray(entry.layers)) issues.push(`extensions[${index}].layers must be an array`);
+      else
+        entry.layers.forEach((layer, layerIndex) => {
+          if (
+            !isRecord(layer) ||
+            !EXTENSION_LAYERS.includes(layer.name as ExtensionLayerName) ||
+            typeof layer.archive !== 'string' ||
+            !layer.archive.endsWith('.zip') ||
+            layer.archive.includes('/') ||
+            typeof layer.sha256 !== 'string' ||
+            !SHA256_PATTERN.test(layer.sha256) ||
+            typeof layer.bytes !== 'number' ||
+            !Number.isInteger(layer.bytes) ||
+            layer.bytes <= 0
+          )
+            issues.push(
+              `extensions[${index}].layers[${layerIndex}] needs a known name, archive, sha256 and bytes`,
+            );
+        });
+    }
   });
   if (issues.length > 0) return { ok: false, issues };
   return { ok: true, index: value as unknown as ExtensionReleaseIndex };
