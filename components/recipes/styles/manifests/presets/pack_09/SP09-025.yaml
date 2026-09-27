@@ -3,7 +3,7 @@ id: SP09-025
 packId: pack_09
 name: Porcelain (Cracked)
 category: 3. Weathering And Decay
-version: 2
+version: 3
 supportedTasks:
   - texture_generate
   - image_generate
@@ -14,7 +14,7 @@ tags:
   - weathering-and-decay
 visualDna:
   aesthetic: 'Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips.'
-  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine crazing across the glaze with a few deeper cracks and chipped edges, the object still whole. Default intensity is moderate; follow the prompt if it asks for light or heavy wear."
+  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: fine crazing across the glaze with a few deeper cracks and chipped edges, the object still whole. Default intensity is moderate; follow the prompt if it asks for light or heavy wear.'
   color_and_tone: Glazed white, celadon or blue-and-white with dark crack lines.
   lighting_and_shadow: Soft light with glaze highlights, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Crazed glaze network, chips and exposed bisque, at a believable physical scale relative to the target.
@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Fragile, precious, aged and delicate, carried by the material itself rather than by added props.
   rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
   key_features: crazed glaze network; hairline cracks; chipped edges; surface-level damage; structure intact
-  creative_brief: "Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips. Carry it through crazed glaze network, hairline cracks, chipped edges, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips. Carry it through crazed glaze network, hairline cracks, chipped edges, surface-level damage, structure intact. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - material applied to the background instead of the target
   - unrequested sample object or habitat
@@ -31,6 +31,7 @@ avoidRules:
   - muddy noisy texture
   - structural collapse
   - unrequested ruins or abandonment scene
+  - sci-fi trooper helmet
   - plastic
   - wrong material
   - generic stock texture
@@ -45,7 +46,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-025.webp
 attributes:
-  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, sci-fi trooper helmet, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

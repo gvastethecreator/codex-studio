@@ -807,7 +807,7 @@
     "validation": "Raw oak applies to the requested object, not a mandatory plank at a lumber yard.",
     "evidencePresetIds": ["SP09-001", "SP09-012"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_09",
@@ -830,7 +830,7 @@
     "displayCategory": "Wear & weathering",
     "kind": "modifier",
     "expectedCount": 20,
-    "baselineHash": "d6cdc31af7e5b2ac15f52e9170a30decaddb9b22f13e84bef222d67d40709187",
+    "baselineHash": "9f3620177b875d905d7453d6a9c94b5144bd80bde58d5df06e9e0c04a48a4721",
     "problem": "Weathering templates bundle corrosion, collapse and abandonment beyond surface finish.",
     "preserve": "Local wear, deposition, staining and age gradients.",
     "proposedAction": "Make damage intensity and target explicit; keep structural collapse out of mild surface modifiers. Overhaul: every preset is a surface-level treatment with default moderate intensity and intact structure, plus 7 new weathering modes (salt crust, sun fade, soot, woodworm, acid etch, lichen, ash fall) to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
@@ -852,7 +852,7 @@
     "validation": "Felt remains fibrous, chalk remains particulate and frost remains crystalline.",
     "evidencePresetIds": ["SP09-029", "SP09-050"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_09",
@@ -867,7 +867,7 @@
     "validation": "A subtle effect does not engulf the whole image or add unrelated props.",
     "evidencePresetIds": ["SP09-043", "SP09-057"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
@@ -882,7 +882,7 @@
     "validation": "Compare identical content; preserve silhouette unless a structural transform is selected.",
     "evidencePresetIds": ["SP10-001", "SP10-006"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",

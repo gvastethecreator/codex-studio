@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Porcelain (Cracked)',
     category: '3. Weathering And Decay',
     negativePrompt:
-      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, structural collapse, unrequested ruins or abandonment scene, sci-fi trooper helmet, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cracked porcelain: glazed ceramic surfaces crazed with hairline cracks and a few chips.',
