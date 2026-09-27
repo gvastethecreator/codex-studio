@@ -16,18 +16,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person 2.5D corridors with flat billboard sprites and gritty textures. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject in first person inside flat-walled corridors, every monster and object a flat cut-out picture that always faces the camera. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Hellish brown, blood red, techbase grey and toxic green.',
       lighting_and_shadow:
-        'Sector-based flat lighting with flickering rooms, lit the way Doom 1993 lights its levels.',
-      texture_and_material: 'Chunky 320x200 pixels, low-resolution textures and flat sprites.',
+        'Whole rooms lit at one flat brightness, some flickering, darker rooms simply dimming every pixel toward black.',
+      texture_and_material:
+        'Chunky square pixels you can count, walls of tiny repeating brown and grey tiles, and flat sprite enemies with no depth.',
       camera_and_composition: 'First-person view with a weapon sprite and status bar.',
       atmosphere_and_mood: 'Keep the requested mood with frantic hellish action.',
       rendering_and_quality:
-        'Authentic 1993 PC first-person screen capture, matching real Doom 1993 screenshots.',
+        'A 1993 PC frame at 320 by 200 stretched to 4:3: coarse, pixelated and sharp-edged, with a gun sprite at the bottom and a status bar strip.',
       creative_brief:
         "id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face. Carry it through Doom 2.5D, flat sprite monsters, brown and red, status bar. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Doom 2.5D; flat sprite monsters; brown and red; status bar',
+      key_features:
+        'Doom flat sprite monsters; chunky pixel corridors; brown and red; status bar strip',
     },
     ui: {
       previewStatus: 'pending',
@@ -50,19 +52,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Cyan Myst (1993) look: still pre-rendered 3D island scenes, early CGI surfaces, strange mechanical puzzles, libraries and quiet surreal emptiness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a still pre-rendered early CGI scene of a quiet surreal island. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a still early computer-rendered scene of a quiet surreal island, perfectly smooth and motionless. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Early CGI greens, stone grey and brass, true to the Myst 1993 palette.',
       lighting_and_shadow:
-        'Soft early CGI lighting with ray-traced gloss, lit the way Myst 1993 lights its levels.',
-      texture_and_material: 'Early nineties pre-rendered CGI with dithered 256 colors.',
+        'Soft early computer-render light with glassy highlights and hard, perfectly clean shadows.',
+      texture_and_material:
+        'Plastic-smooth early CGI surfaces with simple repeating wood and stone textures, color reduced with fine dithering dots.',
       camera_and_composition:
         'Still first-person node views, framed the way Myst 1993 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet surreal mystery.',
       rendering_and_quality:
-        'Pre-rendered early nineties CGI still, matching real Myst 1993 screenshots.',
+        'A 1993 still frame at 544 by 332 in 256 colors: slightly grainy dithered gradients, crisp edges and an eerily empty, frozen look.',
       creative_brief:
         "Cyan Myst (1993) look: still pre-rendered 3D island scenes, early CGI surfaces, strange mechanical puzzles, libraries and quiet surreal emptiness. Carry it through Myst pre-rendered, still nodes, mechanical puzzles, island. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Myst pre-rendered; still nodes; mechanical puzzles; island',
+      key_features:
+        'Myst still island frames; glassy early CGI; dithered 256 colors; mechanical puzzles',
     },
     ui: {
       previewStatus: 'pending',
@@ -85,20 +89,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as blocky low-poly chibi figures standing in front of a detailed pre-rendered backdrop. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; build the subject as a tiny chunky figure of a handful of untextured color blocks, with oversized boxy hands and head, dwarfed by a lush painted backdrop. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mako green glow, rusty industrial browns and night blue.',
       lighting_and_shadow:
-        'Pre-rendered glowing lights and flat polygon shading, lit the way Final Fantasy VII 1997 lights its levels.',
+        'Glowing lights painted into the detailed backdrop, while the chunky figures stay evenly lit with plain smooth shading.',
       texture_and_material:
-        'Blocky low-poly figures over detailed pre-rendered art, with the in-engine surface finish of Final Fantasy VII 1997.',
+        'Smoothly shaded plain color blocks for the figures, pasted onto a far more refined and detailed computer-rendered background image.',
       camera_and_composition:
         'Fixed cinematic angle of a pre-rendered scene, framed the way Final Fantasy VII 1997 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholy steampunk adventure.',
       rendering_and_quality:
-        'Authentic late-nineties PlayStation JRPG screen, matching real Final Fantasy VII 1997 screenshots.',
+        'A 1997 PlayStation frame at 320 by 240: the clash between crude blocky figures and the rich detailed backdrop must be obvious.',
       creative_brief:
         "Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs. Carry it through FF7 pre-rendered backdrops, chibi polygons, mako green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'FF7 pre-rendered backdrops; chibi polygons; mako green',
+      key_features: 'FF7 lush painted backdrops; tiny chunky block figures; mako green glow',
     },
     ui: {
       previewStatus: 'pending',
@@ -121,20 +125,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Capcom Resident Evil (1996) look: fixed cinematic camera angles over pre-rendered mansion rooms, low-poly characters, tank-control dread and door-opening transitions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as low-poly figures in fixed-camera pre-rendered mansion rooms. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; build every figure from a few dozen hard flat facets, with mitten hands, a block head wearing a painted face and a stiff upright stance, standing inside a still painted mansion room. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dim mansion browns, dusty reds and dim green.',
       lighting_and_shadow:
-        'Dim pre-rendered lamplight and shadows, lit the way Resident Evil 1996 lights its levels.',
+        'Lamplight and shadows painted into the still room image, while the figures stay flatly lit with only a dark blob under their feet.',
       texture_and_material:
-        'Low-polygon models with affine texture warping, blurry low-resolution textures and visible vertex jitter.',
+        'Grainy tiny textures stretched over angular figures that sit visibly on top of a soft detailed painted room, never quite matching its lighting.',
       camera_and_composition:
         'Fixed high-angle security-camera shots, framed the way Resident Evil 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with claustrophobic survival dread.',
       rendering_and_quality:
-        'Authentic PlayStation survival horror screen, matching real Resident Evil 1996 screenshots.',
+        'A 1996 PlayStation frame at 320 by 240 on a CRT television: soft, slightly banded color and stair-stepped edges, like a period magazine screenshot.',
       creative_brief:
         "Capcom Resident Evil (1996) look: fixed cinematic camera angles over pre-rendered mansion rooms, low-poly characters, tank-control dread and door-opening transitions. Carry it through Fixed cameras, pre-rendered mansion, low-poly, survival dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Fixed cameras; pre-rendered mansion; low-poly; survival dread',
+      key_features:
+        'Fixed cameras; painted mansion rooms; blocky mitten-handed figures; survival dread',
     },
     ui: {
       previewStatus: 'pending',
@@ -157,20 +162,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as vibrant 16-bit sprites in lush tile-based era maps. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small bright sprite about a tenth of the screen tall, with a big expressive head, walking across tile-built era maps. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Vibrant SNES greens, blues and warm fairground colors.',
       lighting_and_shadow:
-        'Bright 16-bit palette with color gradients, lit the way Chrono Trigger 1995 lights its levels.',
+        'Bright flat sprite colors with gentle banded gradients in skies and water.',
       texture_and_material:
-        'Crisp 16-bit sprites and tiles, with the in-engine surface finish of Chrono Trigger 1995.',
+        'Crisp square pixels, each sprite in a small palette with dark outlines, on repeating grass, stone and wood tiles.',
       camera_and_composition:
         'Top-down three-quarter view of tile maps, framed the way Chrono Trigger 1995 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with joyful time-traveling adventure.',
       rendering_and_quality:
-        'Authentic SNES JRPG screen, matching real Chrono Trigger 1995 screenshots.',
+        'A 1995 Super Nintendo frame at 256 by 224: sharp pixels, bright saturated colors and a slightly squashed 4:3 look.',
       creative_brief:
         "Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth. Carry it through Chrono Trigger 16-bit, Toriyama sprites, time eras. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Chrono Trigger 16-bit; Toriyama sprites; time eras',
+      key_features:
+        'Chrono Trigger bright sprites; Toriyama big-head figures; tile maps; time eras',
     },
     ui: {
       previewStatus: 'pending',
@@ -193,21 +199,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rare Donkey Kong Country (1994) SNES look: pre-rendered 3D models turned into glossy sprites, lush jungles, mine carts, banana hoards and atmospheric parallax.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as glossy pre-rendered 3D sprites in lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a glossy rubbery 3D-looking character flattened into pixel sprites running across lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Jungle green, banana yellow and sunset orange, true to the Donkey Kong Country 1994 palette.',
       lighting_and_shadow:
-        'Pre-rendered glossy lighting and atmospheric haze, lit the way Donkey Kong Country 1994 lights its levels.',
+        'Shiny rounded highlights frozen into the sprites and soft hazy depth in the layered jungle.',
       texture_and_material:
-        'Glossy pre-rendered sprites with SNES palette limits, with the in-engine surface finish of Donkey Kong Country 1994.',
+        'Sprites that look like shiny plastic toy renders squeezed into a limited pixel palette, with slight grainy banding.',
       camera_and_composition:
         'Side-scrolling jungle platform view, framed the way Donkey Kong Country 1994 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lush jungle adventure.',
       rendering_and_quality:
-        'Authentic SNES pre-rendered platformer screen, matching real Donkey Kong Country 1994 screenshots.',
+        'A 1994 Super Nintendo frame at 256 by 224: 3D-looking characters but clearly made of flat pixels, dark jungle layers behind.',
       creative_brief:
         "Rare Donkey Kong Country (1994) SNES look: pre-rendered 3D models turned into glossy sprites, lush jungles, mine carts, banana hoards and atmospheric parallax. Carry it through DKC pre-rendered sprites, jungle, mine carts, glossy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'DKC pre-rendered sprites; jungle; mine carts; glossy',
+      key_features: 'DKC shiny toy-like sprites; layered jungle; mine carts; banded color',
     },
     ui: {
       previewStatus: 'pending',
@@ -230,20 +236,19 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a fast sprite racing through checkerboard hills and loops. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small fast pixel sprite racing through checkered hills, loops and palm trees. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Saturated sky blue, grass green and checkerboard brown.',
-      lighting_and_shadow:
-        'Bright Mega Drive light, lit the way Sonic the Hedgehog 1991 lights its levels.',
+      lighting_and_shadow: 'Bright flat daylight colors with strong blue sky bands and no shading.',
       texture_and_material:
-        'Crisp Mega Drive sprites and tiles, with the in-engine surface finish of Sonic the Hedgehog 1991.',
+        'Crisp square pixels, bold outlines and repeating checkered soil tiles in few colors.',
       camera_and_composition:
         'Side-scrolling speed view, framed the way Sonic the Hedgehog 1991 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bright blazing speed.',
       rendering_and_quality:
-        'Authentic Mega Drive platformer screen, matching real Sonic the Hedgehog 1991 screenshots.',
+        'A 1991 Sega Mega Drive frame at 320 by 224: sharp pixels, bold primary colors and scrolling parallax bands.',
       creative_brief:
         "Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed. Carry it through Sonic checkerboard hills, loops, palm trees, speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Sonic checkerboard hills; loops; palm trees; speed',
+      key_features: 'Sonic checkered hills; loops; palm trees; bold pixel speed',
     },
     ui: {
       previewStatus: 'pending',
@@ -266,21 +271,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as large detailed fighting sprites on a lively world stage. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw two fighters as large detailed pixel sprites facing each other on a lively stage, one on each side. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright arcade colors with detailed stage backdrops, true to the Street Fighter II 1991 palette.',
-      lighting_and_shadow:
-        'Flat arcade light, lit the way Street Fighter II 1991 lights its levels.',
+      lighting_and_shadow: 'Flat arcade colors with hard pixel shading bands on muscles and cloth.',
       texture_and_material:
-        'Large detailed arcade sprites, with the in-engine surface finish of Street Fighter II 1991.',
+        'Large hand-drawn pixel sprites with visible square pixels, stage backgrounds full of animated pixel onlookers.',
       camera_and_composition:
         'Side versus view with health bars, framed the way Street Fighter II 1991 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with competitive arcade intensity.',
       rendering_and_quality:
-        'Authentic early-nineties fighting game screen, matching real Street Fighter II 1991 screenshots.',
+        'A 1991 arcade frame at 384 by 224: crisp pixels, two health bar shapes across the top and a timer box between them.',
       creative_brief:
         "Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects. Carry it through SF2 large sprites, world stages, versus layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'SF2 large sprites; world stages; versus layout',
+      key_features: 'SF2 large pixel fighters; lively stages; versus health bars',
     },
     ui: {
       previewStatus: 'pending',
@@ -303,21 +307,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as highly detailed comedic pixel art with chunky vehicles and explosions. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as dense comedic pixel art with chunky vehicles, tiny soldiers and huge explosions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Desert tan, military green and explosion orange, true to the Metal Slug 1996 palette.',
-      lighting_and_shadow:
-        'Bright pixel explosion light, lit the way Metal Slug 1996 lights its levels.',
+      lighting_and_shadow: 'Bright pixel explosions and fire with hard banded shading on metal.',
       texture_and_material:
-        'Dense hand-drawn pixel art, with the in-engine surface finish of Metal Slug 1996.',
+        'Very dense hand-placed pixels with thick outlines, rivets, dents and debris drawn pixel by pixel.',
       camera_and_composition:
         'Side-scrolling war view, framed the way Metal Slug 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with comedic explosive chaos.',
       rendering_and_quality:
-        'Authentic Neo Geo pixel art screen, matching real Metal Slug 1996 screenshots.',
+        'A 1996 Neo Geo arcade frame at 304 by 224: crisp tiny pixels, busy side-scrolling battlefield.',
       creative_brief:
         "Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame. Carry it through Metal Slug detailed pixels, comedic war, chunky tanks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Metal Slug detailed pixels; comedic war; chunky tanks',
+      key_features: 'Metal Slug dense pixels; comedic war; chunky tanks; huge explosions',
     },
     ui: {
       previewStatus: 'pending',
@@ -340,20 +343,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small pixel characters in moody painted Caribbean scenes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as small pixel characters standing in moody painted-looking Caribbean scenes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Moody Caribbean night blue, tavern orange and sea teal.',
       lighting_and_shadow:
-        'Moonlit night and warm tavern windows, lit the way The Secret of Monkey Island 1990 lights its levels.',
+        'Moonlit blue nights and warm tavern window glow built from dithered pixel shades.',
       texture_and_material:
-        'Painted VGA pixel art, with the in-engine surface finish of The Secret of Monkey Island 1990.',
+        'Painted-looking backgrounds made of visible square pixels and dithering, in a 256-color palette.',
       camera_and_composition:
         'Side-view scenes with a verb interface, framed the way The Secret of Monkey Island 1990 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with witty piratical adventure.',
       rendering_and_quality:
-        'Authentic VGA adventure screen, matching real The Secret of Monkey Island 1990 screenshots.',
+        'A 1990 PC VGA frame at 320 by 200: soft painterly pixels above a strip of verb buttons shown as blank boxes.',
       creative_brief:
         "LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface. Carry it through Monkey Island moody pixels, pirate towns, verb interface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Monkey Island moody pixels; pirate towns; verb interface',
+      key_features: 'Monkey Island moody pixel scenes; pirate towns; verb button strip',
     },
     ui: {
       previewStatus: 'pending',
@@ -376,20 +379,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small isometric sprite in dark gothic pre-rendered dungeons. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a small figure seen from a high diagonal angle in dark gothic dungeon rooms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dark brown, blood red and candle gold, true to the Diablo 1996 palette.',
       lighting_and_shadow:
-        'Light radius around the character in darkness, lit the way Diablo 1996 lights its levels.',
+        'A small circle of light around the hero, everything beyond it sinking into near black.',
       texture_and_material:
-        'Pre-rendered sprites with 256-color gloom, with the in-engine surface finish of Diablo 1996.',
+        'Grainy rendered-then-shrunk sprites and floor tiles in a murky 256-color palette with visible dithering.',
       camera_and_composition:
         'Isometric view with a light radius, framed the way Diablo 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grim gothic dread.',
       rendering_and_quality:
-        'Authentic mid-nineties isometric ARPG screen, matching real Diablo 1996 screenshots.',
+        'A 1996 PC frame at 640 by 480: gloomy, grainy and pixelated, with red and blue orb shapes at the bottom corners.',
       creative_brief:
         "Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere. Carry it through Diablo isometric, light radius, gothic dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Diablo isometric; light radius; gothic dungeon',
+      key_features: 'Diablo diagonal view; light circle; gothic dungeon; red and blue orbs',
     },
     ui: {
       previewStatus: 'pending',
@@ -412,20 +415,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny pre-rendered isometric units on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as tiny units seen from a high diagonal angle on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dark space blue, alien purple and industrial grey.',
       lighting_and_shadow:
-        'Pre-rendered unit lighting and dark terrain, lit the way StarCraft 1998 lights its levels.',
+        'Shaded tiny units with bright glints on dark rocky or alien-creep ground.',
       texture_and_material:
-        'Pre-rendered isometric sprites, with the in-engine surface finish of StarCraft 1998.',
+        'Tiny rendered-then-shrunk unit sprites and grainy tile terrain in a limited palette.',
       camera_and_composition:
         'Isometric RTS view with interface, framed the way StarCraft 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense sci-fi warfare.',
       rendering_and_quality:
-        'Authentic late-nineties RTS screen, matching real StarCraft 1998 screenshots.',
+        'A 1998 PC frame at 640 by 480: small crisp pixel units, a minimap box and command panel shapes along the bottom.',
       creative_brief:
         "Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface. Carry it through StarCraft isometric units, alien creep, RTS interface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'StarCraft isometric units; alien creep; RTS interface',
+      key_features: 'StarCraft tiny units; diagonal view; alien creep; bottom command panel',
     },
     ui: {
       previewStatus: 'pending',
@@ -448,20 +451,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a cartoon 3D character running down lush tropical corridors. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject from behind as a rubbery cartoon figure running into the screen down a narrow jungle path. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Vibrant tropical green, crate brown and ocean blue.',
       lighting_and_shadow:
-        'Bright tropical PS1 lighting, lit the way Crash Bandicoot 1996 lights its levels.',
+        'Bright tropical light with colors that shift from corner to corner across each surface.',
       texture_and_material:
-        'Low-polygon models with affine texture warping, blurry low-resolution textures and visible vertex jitter.',
+        'Figures and crates with simple shapes and a few painted details, jungle walls of blurry textures that wobble slightly.',
       camera_and_composition:
         'Behind-the-character corridor view, framed the way Crash Bandicoot 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with zany tropical fun.',
       rendering_and_quality:
-        'Authentic PS1 cartoon platformer screen, matching real Crash Bandicoot 1996 screenshots.',
+        'A 1996 PlayStation frame at 512 by 240 on a CRT: soft, a little jagged, wooden crates and fruit along a path.',
       creative_brief:
         "Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors. Carry it through Crash corridors, crates, tropical islands, cartoon 3D. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Crash corridors; crates; tropical islands; cartoon 3D',
+      key_features: 'Crash jungle path; crates; rubbery cartoon runner; soft PS1 image',
     },
     ui: {
       previewStatus: 'pending',
@@ -484,21 +487,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in bright blocky 3D worlds with blurry filtered N64 textures. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject in bright toy-like worlds of big simple shapes: smooth hills, flat cube platforms and round trees. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Cheerful primary colors and grass green, true to the Super Mario 64 1996 palette.',
       lighting_and_shadow:
-        'Bright flat N64 lighting with distance fog, lit the way Super Mario 64 1996 lights its levels.',
+        'Flat cheerful light, simple smooth shading and colored fog fading distant hills.',
       texture_and_material:
-        'Blurry bilinear-filtered N64 textures and simple polygons, with the in-engine surface finish of Super Mario 64 1996.',
+        'Tiny textures stretched and smeared into soft blurry color, grass and brick patterns barely readable.',
       camera_and_composition:
         'Third-person chase camera, framed the way Super Mario 64 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cheerful playful exploration.',
       rendering_and_quality:
-        'Authentic N64 3D platformer screen, matching real Super Mario 64 1996 screenshots.',
+        'A 1996 Nintendo 64 frame at 320 by 240: very soft, almost out-of-focus image with smooth simple shapes.',
       creative_brief:
         "Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors. Carry it through N64 blurry textures, blocky worlds, painting portals, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'N64 blurry textures; blocky worlds; painting portals; fog',
+      key_features: 'N64 soft blur; toy-like simple worlds; smeared textures; colored fog',
     },
     ui: {
       previewStatus: 'pending',
@@ -521,20 +524,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person foggy N64 corridors with stiff low-poly figures. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; build figures from a few boxy chunks with flat painted-on faces and stiff arms, walking plain box-shaped corridors seen in first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Military grey, snow white and fog, true to the GoldenEye 007 1997 palette.',
       lighting_and_shadow:
-        'Flat N64 light and heavy fog, lit the way GoldenEye 007 1997 lights its levels.',
+        'Flat shadowless light and a thick grey-blue fog wall that swallows everything a short way ahead.',
       texture_and_material:
-        'Blurry N64 textures and stiff low polygons, with the in-engine surface finish of GoldenEye 007 1997.',
+        'Every wall and uniform is a tiny texture stretched large and smeared into soft blurry color, like fuzzy wallpaper with no crisp detail.',
       camera_and_composition:
         'First-person view with a weapon model, framed the way GoldenEye 007 1997 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense spy infiltration.',
       rendering_and_quality:
-        'Authentic N64 first-person screen, matching real GoldenEye 007 1997 screenshots.',
+        'A 1997 Nintendo 64 frame at 320 by 240 on a CRT: very soft and blurry overall, with a small chunky gun model in the lower right.',
       creative_brief:
         "Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities. Carry it through GoldenEye fog, blurry textures, stiff guards, facilities. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'GoldenEye fog; blurry textures; stiff guards; facilities',
+      key_features: 'GoldenEye fog wall; smeared blurry textures; boxy stiff guards; facilities',
     },
     ui: {
       previewStatus: 'pending',
@@ -557,20 +560,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as paper-flat cartoon cutouts in bright pop 3D worlds. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a paper-thin flat cartoon cutout, visibly without thickness, standing in a bright simple 3D set. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright pop pink, yellow, blue and green, true to the PaRappa the Rapper 1996 palette.',
       lighting_and_shadow:
-        'Flat cheerful light, lit the way PaRappa the Rapper 1996 lights its levels.',
-      texture_and_material: 'Flat paper cutout characters in simple 3D sets.',
+        'Flat cheerful light with bright colors and no real shading on the flat characters.',
+      texture_and_material:
+        'Flat cutout characters with thin black outlines that disappear when turned sideways, in simple blocky rooms.',
       camera_and_composition:
         'Stage-like rhythm scenes, framed the way PaRappa the Rapper 1996 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cheerful rhythmic optimism.',
       rendering_and_quality:
-        'Authentic PS1 rhythm game screen, matching real PaRappa the Rapper 1996 screenshots.',
+        'A 1996 PlayStation frame at 320 by 240: soft, bright and simple, with a row of button symbol shapes near the top.',
       creative_brief:
         "NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy. Carry it through PaRappa paper-flat, Greenblat designs, pop colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'PaRappa paper-flat; Greenblat designs; pop colors',
+      key_features: 'PaRappa paper-thin cutouts; Greenblat designs; pop colors; button prompt row',
     },
     ui: {
       previewStatus: 'pending',
@@ -593,21 +597,22 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person science facility corridors with lab coats and flickering lights. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject in first person in science facility corridors, people with boxy heads, simple faces and stiff lab coats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Facility beige, hazard orange and industrial grey, true to the Half-Life 1998 palette.',
       lighting_and_shadow:
-        'Flickering fluorescent lab lighting, lit the way Half-Life 1998 lights its levels.',
+        'Flickering fluorescent light with soft blotchy light patches baked onto walls.',
       texture_and_material:
-        'Low-resolution facility textures and simple polygons, with the in-engine surface finish of Half-Life 1998.',
+        'Blurry low-detail wall and floor textures, simple boxy props and figures built from visible straight-edged chunks.',
       camera_and_composition:
         'First-person corridor view, framed the way Half-Life 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with unraveling facility dread.',
       rendering_and_quality:
-        'Authentic late-nineties PC shooter screen, matching real Half-Life 1998 screenshots.',
+        'A 1998 PC frame at 640 by 480: slightly blurry, with a crosshair and health and armor number shapes at the bottom.',
       creative_brief:
         "Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos. Carry it through Half-Life facility, lab coats, flickering fluorescents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Half-Life facility; lab coats; flickering fluorescents',
+      key_features:
+        'Half-Life facility; boxy lab coats; flickering fluorescents; blotchy baked light',
     },
     ui: {
       previewStatus: 'pending',
@@ -630,21 +635,22 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as low-poly calavera skeletons in art deco noir pre-rendered scenes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as calavera skeleton figures with simple smooth heads standing in lush painted art deco scenes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Noir amber, marigold orange and deep teal, true to the Grim Fandango 1998 palette.',
       lighting_and_shadow:
-        'Smoky noir lighting and neon, lit the way Grim Fandango 1998 lights its levels.',
+        'Smoky noir lighting and neon painted into the detailed backgrounds, with plainly lit figures on top.',
       texture_and_material:
-        'Pre-rendered deco backgrounds with low-poly figures, with the in-engine surface finish of Grim Fandango 1998.',
+        'Simple smooth skeleton figures with painted faces over rich, detailed painted art deco rooms.',
       camera_and_composition:
         'Cinematic noir fixed angles, framed the way Grim Fandango 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with smoky deco noir.',
       rendering_and_quality:
-        'Authentic late-nineties noir adventure screen, matching real Grim Fandango 1998 screenshots.',
+        'A 1998 PC frame at 640 by 480: soft figures clearly simpler than the detailed painted backdrop behind them.',
       creative_brief:
         "LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere. Carry it through Grim Fandango calaveras, art deco noir, low-poly skeletons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Grim Fandango calaveras; art deco noir; low-poly skeletons',
+      key_features:
+        'Grim Fandango calaveras; art deco noir; painted backdrops; simple smooth figures',
     },
     ui: {
       previewStatus: 'pending',
@@ -667,20 +673,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small quirky sprites in suburban towns with psychedelic battle backdrops. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small quirky sprite in simple suburban towns, or facing an enemy over a swirling pattern. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pastel suburban colors and psychedelic battle swirls, true to the EarthBound 1994 palette.',
-      lighting_and_shadow: 'Flat SNES light, lit the way EarthBound 1994 lights its levels.',
+      lighting_and_shadow:
+        'Flat simple colors in town and wildly cycling bright colors in battle backgrounds.',
       texture_and_material:
-        'Crisp SNES sprites and animated psychedelic patterns, with the in-engine surface finish of EarthBound 1994.',
+        'Crisp simple pixel sprites with few colors, battle backdrops of wavy animated psychedelic stripes.',
       camera_and_composition:
         'Oblique top-down town view or battle screen, framed the way EarthBound 1994 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quirky suburban surrealism.',
       rendering_and_quality:
-        'Authentic SNES quirky RPG screen, matching real EarthBound 1994 screenshots.',
+        'A 1994 Super Nintendo frame at 256 by 224: plain crisp pixels, cozy town or trippy battle screen with blank rolling-meter boxes.',
       creative_brief:
         "Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds. Carry it through EarthBound suburban sprites, psychedelic battles, quirky enemies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'EarthBound suburban sprites; psychedelic battles; quirky enemies',
+      key_features: 'EarthBound quirky sprites; suburban towns; psychedelic battle stripes',
     },
     ui: {
       previewStatus: 'pending',
@@ -703,20 +710,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject swimming through eerie detailed pixel oceans with alien crystals. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject swimming through eerie detailed pixel oceans with alien crystals and deep caverns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep ocean blue, crystal cyan and alien purple.',
       lighting_and_shadow:
-        'Filtered underwater light and crystal glow, lit the way Ecco the Dolphin 1992 lights its levels.',
+        'Filtered blue underwater light bands and glowing crystal pixels in the dark.',
       texture_and_material:
-        'Detailed Mega Drive pixel art, with the in-engine surface finish of Ecco the Dolphin 1992.',
+        'Detailed pixel rocks, coral and water layers with visible square pixels and dithered depth.',
       camera_and_composition:
         'Side-view underwater exploration, framed the way Ecco the Dolphin 1992 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lonely alien ocean.',
       rendering_and_quality:
-        'Authentic Mega Drive underwater screen, matching real Ecco the Dolphin 1992 screenshots.',
+        'A 1992 Sega Mega Drive frame at 320 by 224: crisp pixels in deep blues, lonely and vast.',
       creative_brief:
         "Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere. Carry it through Ecco underwater pixels, glyph crystals, alien ocean. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Ecco underwater pixels; glyph crystals; alien ocean',
+      key_features: 'Ecco pixel oceans; glyph crystals; alien depths; lonely blues',
     },
     ui: {
       previewStatus: 'pending',

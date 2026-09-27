@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Diablo 1996 - Blizzard Gothic Isometric
 category: 5. Video Games 90s
 domain: nineties PC action role-playing game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small isometric sprite in dark gothic pre-rendered dungeons. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a small figure seen from a high diagonal angle in dark gothic dungeon rooms. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Dark brown, blood red and candle gold, true to the Diablo 1996 palette.
-  lighting_and_shadow: Light radius around the character in darkness, lit the way Diablo 1996 lights its levels.
-  texture_and_material: Pre-rendered sprites with 256-color gloom, with the in-engine surface finish of Diablo 1996.
+  lighting_and_shadow: "A small circle of light around the hero, everything beyond it sinking into near black."
+  texture_and_material: "Grainy rendered-then-shrunk sprites and floor tiles in a murky 256-color palette with visible dithering."
   camera_and_composition: Isometric view with a light radius, framed the way Diablo 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim gothic dread.
-  rendering_and_quality: Authentic mid-nineties isometric ARPG screen, matching real Diablo 1996 screenshots.
+  rendering_and_quality: "A 1996 PC frame at 640 by 480: gloomy, grainy and pixelated, with red and blue orb shapes at the bottom corners."
   creative_brief: 'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere. Carry it through Diablo isometric, light radius, gothic dungeon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Diablo isometric; light radius; gothic dungeon
+  key_features: "Diablo diagonal view; light circle; gothic dungeon; red and blue orbs"
 avoidRules:
   - a horned red demon lord
   - existing franchise characters

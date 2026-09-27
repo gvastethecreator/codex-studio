@@ -130,11 +130,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright open-sky daylight with glossy purple reflections, lit the way Halo 2001 lights its levels.',
       texture_and_material:
-        'Early-2000s textures with glossy bump-mapped alien metal, with the in-engine surface finish of Halo 2001.',
+        'Plain low-detail surfaces: grass as a flat green texture on smooth rolling hills, alien metal as smooth purple with one simple shiny highlight, and crisp but blocky armor shapes.',
       camera_and_composition: 'First-person view with a weapon at screen right.',
       atmosphere_and_mood: 'Keep the requested mood with epic alien frontier.',
       rendering_and_quality:
-        'Authentic Xbox first-person shooter screen, matching real Halo 2001 screenshots.',
+        'A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster.',
       creative_brief:
         "Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, green fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Halo ringworld sky; purple alien structures; green fields',

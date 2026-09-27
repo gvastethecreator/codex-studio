@@ -187,10 +187,11 @@ const spec: Spec = {
       color: 'Mystic blue, summon gold and pyrefly green.',
       light: 'Bursting summon light and glowing glyphs.',
       texture:
-        'PS2 real-time models with low-resolution painted textures, rigid faces and additive glow particles.',
+        'Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites.',
       camera: 'Low in-engine battle camera looking up at rising beasts.',
       mood: 'sacred grand spectacle',
-      render: 'Authentic 480i PS2 in-engine JRPG screen, not the pre-rendered movies.',
+      render:
+        'A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies.',
       key: 'FFX summon cutscene; glyph circle; rising aeon',
       avoid: ['existing Final Fantasy summons'],
     }),

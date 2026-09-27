@@ -98,9 +98,9 @@ const spec: Spec = {
     },
     'SP12-068': {
       briefs: [
-        'Low-poly polygons show an original rider on a biomechanical manta skimming a golden salt lake, locking six reticles onto a fleet of faceted sand-sail ships under a dithered hazy sky. No readable text or logo.',
+        'Large flat grainy panels build an original rider on a biomechanical manta skimming a golden salt lake, six lock-on reticles tracking a fleet of angular sand-sail ships that fade in out of the hazy sky. No readable text or logo.',
         'Faceted grey-green ruins of a drowned temple rise from a teal sea as a courier on a living moth-glider threads between their arches, locking onto jellyfish-shaped airships. No readable text or logo.',
-        'Chunky dithered polygons form a canyon where a boy on a winged sky-whale races a giant six-legged walker across a crumbling aqueduct at sunset. No readable text or logo.',
+        'Grainy warped canyon walls scroll past as a boy on a winged sky-whale races a giant six-legged walker across a crumbling aqueduct at sunset, distant arches popping out of the golden haze. No readable text or logo.',
       ],
     },
   },

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Metal Slug 1996 - Nazca SNK Pixel War
 category: 5. Video Games 90s
 domain: nineties arcade action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as highly detailed comedic pixel art with chunky vehicles and explosions. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as dense comedic pixel art with chunky vehicles, tiny soldiers and huge explosions. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Desert tan, military green and explosion orange, true to the Metal Slug 1996 palette.
-  lighting_and_shadow: Bright pixel explosion light, lit the way Metal Slug 1996 lights its levels.
-  texture_and_material: Dense hand-drawn pixel art, with the in-engine surface finish of Metal Slug 1996.
+  lighting_and_shadow: "Bright pixel explosions and fire with hard banded shading on metal."
+  texture_and_material: "Very dense hand-placed pixels with thick outlines, rivets, dents and debris drawn pixel by pixel."
   camera_and_composition: Side-scrolling war view, framed the way Metal Slug 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with comedic explosive chaos.
-  rendering_and_quality: Authentic Neo Geo pixel art screen, matching real Metal Slug 1996 screenshots.
+  rendering_and_quality: "A 1996 Neo Geo arcade frame at 304 by 224: crisp tiny pixels, busy side-scrolling battlefield."
   creative_brief: 'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame. Carry it through Metal Slug detailed pixels, comedic war, chunky tanks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Metal Slug detailed pixels; comedic war; chunky tanks
+  key_features: "Metal Slug dense pixels; comedic war; chunky tanks; huge explosions"
 avoidRules:
   - a tiny green tank with a cannon
   - existing franchise characters

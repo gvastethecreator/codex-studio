@@ -9,7 +9,7 @@ styleAnchors:
 displayName: PaRappa the Rapper 1996 - Paper-Flat Rhythm
 category: 5. Video Games 90s
 domain: nineties rhythm game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as paper-flat cartoon cutouts in bright pop 3D worlds. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a paper-thin flat cartoon cutout, visibly without thickness, standing in a bright simple 3D set. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Bright pop pink, yellow, blue and green, true to the PaRappa the Rapper 1996 palette.
-  lighting_and_shadow: Flat cheerful light, lit the way PaRappa the Rapper 1996 lights its levels.
-  texture_and_material: Flat paper cutout characters in simple 3D sets.
+  lighting_and_shadow: "Flat cheerful light with bright colors and no real shading on the flat characters."
+  texture_and_material: "Flat cutout characters with thin black outlines that disappear when turned sideways, in simple blocky rooms."
   camera_and_composition: Stage-like rhythm scenes, framed the way PaRappa the Rapper 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful rhythmic optimism.
-  rendering_and_quality: Authentic PS1 rhythm game screen, matching real PaRappa the Rapper 1996 screenshots.
+  rendering_and_quality: "A 1996 PlayStation frame at 320 by 240: soft, bright and simple, with a row of button symbol shapes near the top."
   creative_brief: 'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy. Carry it through PaRappa paper-flat, Greenblat designs, pop colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: PaRappa paper-flat; Greenblat designs; pop colors
+  key_features: "PaRappa paper-thin cutouts; Greenblat designs; pop colors; button prompt row"
 avoidRules:
   - a rapping dog in a knit hat
   - an onion martial arts master

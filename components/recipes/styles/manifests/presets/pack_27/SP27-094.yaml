@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Super Mario 64 1996 - N64 Blurry Texture Worlds
 category: 5. Video Games 90s
 domain: nineties console platformer
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in bright blocky 3D worlds with blurry filtered N64 textures. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject in bright toy-like worlds of big simple shapes: smooth hills, flat cube platforms and round trees. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Cheerful primary colors and grass green, true to the Super Mario 64 1996 palette.
-  lighting_and_shadow: Bright flat N64 lighting with distance fog, lit the way Super Mario 64 1996 lights its levels.
-  texture_and_material: Blurry bilinear-filtered N64 textures and simple polygons, with the in-engine surface finish of Super Mario 64 1996.
+  lighting_and_shadow: "Flat cheerful light, simple smooth shading and colored fog fading distant hills."
+  texture_and_material: "Tiny textures stretched and smeared into soft blurry color, grass and brick patterns barely readable."
   camera_and_composition: Third-person chase camera, framed the way Super Mario 64 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful playful exploration.
-  rendering_and_quality: Authentic N64 3D platformer screen, matching real Super Mario 64 1996 screenshots.
+  rendering_and_quality: "A 1996 Nintendo 64 frame at 320 by 240: very soft, almost out-of-focus image with smooth simple shapes."
   creative_brief: 'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors. Carry it through N64 blurry textures, blocky worlds, painting portals, fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: N64 blurry textures; blocky worlds; painting portals; fog
+  key_features: "N64 soft blur; toy-like simple worlds; smeared textures; colored fog"
 avoidRules:
   - a mustached plumber in red and blue
   - a princess castle with star doors

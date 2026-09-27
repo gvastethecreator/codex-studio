@@ -284,21 +284,21 @@ export const GENERATED_STYLE_PRESETS = [
       'a blue armored dragon with a lone rider, painterly concept art, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, UI overlay, noisy compression artifacts',
     style: {
       aesthetic:
-        'Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in low-poly 3D with dithered textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes.',
+        'Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in early polygon 3D with grainy warped textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as angular low-poly Saturn-era figures with Moebius costume lines and biomechanical shapes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; build people and creatures from a few large angular flat panels with Moebius costume lines and biomechanical shapes, their outlines jagged against the haze. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Canyon gold, ruin teal and hazy sky, true to the Panzer Dragoon 1995 palette.',
       lighting_and_shadow:
         'Hazy Saturn-era light and glowing lock-ons, lit the way Panzer Dragoon 1995 lights its levels.',
       texture_and_material:
-        'Visibly faceted low-poly models, warped dithered textures and fog-limited draw distance at low resolution.',
+        'Shapes are a few large flat panels with sandy textures that wobble and warp as they move, see-through effects drawn as fine dither dots, and distant ruins fading out of golden haze.',
       camera_and_composition:
         'On-rails flight view from behind and above the subject, with lock-on reticles.',
       atmosphere_and_mood: 'Keep the requested mood with ancient mythic flight.',
       rendering_and_quality:
-        'Authentic 1995 Sega Saturn rail shooter screen, not a painted illustration.',
-      key_features: 'Panzer Dragoon rails; low-poly Saturn; Moebius ruins',
+        'A 1995 Sega Saturn frame at 320 by 224 on a CRT: grainy, jagged and low in detail, like a period magazine screenshot, not a painted illustration.',
+      key_features: 'Panzer Dragoon rails; grainy warped Saturn 3D; Moebius ruins',
       creative_brief:
         "Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in low-poly 3D with dithered textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes. Carry it through Panzer Dragoon rails, low-poly Saturn, Moebius ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },

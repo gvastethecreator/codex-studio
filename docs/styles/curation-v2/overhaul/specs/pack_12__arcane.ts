@@ -183,7 +183,7 @@ const spec: Spec = {
       },
       ['subtitles or readable glyphs'],
       [
-        'Rising from a glowing circle in a ruined cathedral, a colossal flame phoenix spreads its wings above an original summoner whose robes whip upward in the magical wind. No readable text or logo.',
+        'During a turn-based battle on a ruined cathedral floor, three original party members stand in a loose row at the right while a smoothly simple firebird with flat painted feathers rises from a glowing circle, blank menu panels along the bottom edge. No readable text or logo.',
         'In an epic summoning cutscene, a mighty sorcerer calls forth his legendary beast, and a small fluffy sheep appears in the glowing circle. No readable text or logo.',
         'In a dark chamber, a summoning circle glows on the floor with nothing inside it, yet the candles around it are bending inward. No readable text or logo.',
       ],

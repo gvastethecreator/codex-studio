@@ -436,7 +436,7 @@ const spec: Spec = {
         render: 'Authentic stylized space exploration screen.',
         key: 'Outer Wilds tiny planets; wooden ship; campfire',
         briefs: [
-          'On a tiny low-poly planet, a four-eyed astronaut roasts a marshmallow at a campfire beside a rickety wooden spaceship while a banjo tune drifts across the space and the sun swells on the horizon. No readable text or logo.',
+          'On a tiny round planet you could walk around in a minute, a four-eyed astronaut roasts a marshmallow at a campfire beside a rickety wooden spaceship while the sun swells on the horizon. No readable text or logo.',
           'A small planet made of sand pours its dunes onto its twin through a sand column. A tiny ship flies between. No readable text or logo.',
           'An ancient stone ruin floats in a comet tail. A mask glows on a pedestal inside. No readable text or logo.',
         ],

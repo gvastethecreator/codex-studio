@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Donkey Kong Country 1994 - Rare Pre-Rendered Sprites
 category: 5. Video Games 90s
 domain: nineties console platformer
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Rare Donkey Kong Country (1994) SNES look: pre-rendered 3D models turned into glossy sprites, lush jungles, mine carts, banana hoards and atmospheric parallax.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as glossy pre-rendered 3D sprites in lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a glossy rubbery 3D-looking character flattened into pixel sprites running across lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Jungle green, banana yellow and sunset orange, true to the Donkey Kong Country 1994 palette.
-  lighting_and_shadow: Pre-rendered glossy lighting and atmospheric haze, lit the way Donkey Kong Country 1994 lights its levels.
-  texture_and_material: Glossy pre-rendered sprites with SNES palette limits, with the in-engine surface finish of Donkey Kong Country 1994.
+  lighting_and_shadow: "Shiny rounded highlights frozen into the sprites and soft hazy depth in the layered jungle."
+  texture_and_material: "Sprites that look like shiny plastic toy renders squeezed into a limited pixel palette, with slight grainy banding."
   camera_and_composition: Side-scrolling jungle platform view, framed the way Donkey Kong Country 1994 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lush jungle adventure.
-  rendering_and_quality: Authentic SNES pre-rendered platformer screen, matching real Donkey Kong Country 1994 screenshots.
+  rendering_and_quality: "A 1994 Super Nintendo frame at 256 by 224: 3D-looking characters but clearly made of flat pixels, dark jungle layers behind."
   creative_brief: 'Rare Donkey Kong Country (1994) SNES look: pre-rendered 3D models turned into glossy sprites, lush jungles, mine carts, banana hoards and atmospheric parallax. Carry it through DKC pre-rendered sprites, jungle, mine carts, glossy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: DKC pre-rendered sprites; jungle; mine carts; glossy
+  key_features: "DKC shiny toy-like sprites; layered jungle; mine carts; banded color"
 avoidRules:
   - a gorilla with a red tie
   - a monkey with a red cap

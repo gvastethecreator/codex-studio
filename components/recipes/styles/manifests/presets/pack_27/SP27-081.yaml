@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Doom 1993 - id Software Sprite Shooter
 category: 5. Video Games 90s
 domain: nineties PC game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person 2.5D corridors with flat billboard sprites and gritty textures. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject in first person inside flat-walled corridors, every monster and object a flat cut-out picture that always faces the camera. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Hellish brown, blood red, techbase grey and toxic green.
-  lighting_and_shadow: Sector-based flat lighting with flickering rooms, lit the way Doom 1993 lights its levels.
-  texture_and_material: Chunky 320x200 pixels, low-resolution textures and flat sprites.
+  lighting_and_shadow: "Whole rooms lit at one flat brightness, some flickering, darker rooms simply dimming every pixel toward black."
+  texture_and_material: "Chunky square pixels you can count, walls of tiny repeating brown and grey tiles, and flat sprite enemies with no depth."
   camera_and_composition: First-person view with a weapon sprite and status bar.
   atmosphere_and_mood: Keep the requested mood with frantic hellish action.
-  rendering_and_quality: Authentic 1993 PC first-person screen capture, matching real Doom 1993 screenshots.
+  rendering_and_quality: "A 1993 PC frame at 320 by 200 stretched to 4:3: coarse, pixelated and sharp-edged, with a gun sprite at the bottom and a status bar strip."
   creative_brief: 'id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face. Carry it through Doom 2.5D, flat sprite monsters, brown and red, status bar. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Doom 2.5D; flat sprite monsters; brown and red; status bar
+  key_features: "Doom flat sprite monsters; chunky pixel corridors; brown and red; status bar strip"
 avoidRules:
   - a green-armored space marine face
   - horned red demons

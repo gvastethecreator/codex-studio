@@ -393,11 +393,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bursting summon light and glowing glyphs, lit the way Final Fantasy X 2001 lights its levels.',
       texture_and_material:
-        'PS2 real-time models with low-resolution painted textures, rigid faces and additive glow particles.',
+        'Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites.',
       camera_and_composition: 'Low in-engine battle camera looking up at rising beasts.',
       atmosphere_and_mood: 'Keep the requested mood with sacred grand spectacle.',
       rendering_and_quality:
-        'Authentic 480i PS2 in-engine JRPG screen, not the pre-rendered movies.',
+        'A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies.',
       creative_brief:
         "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX summon cutscene, glyph circle, rising aeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'FFX summon cutscene; glyph circle; rising aeon',

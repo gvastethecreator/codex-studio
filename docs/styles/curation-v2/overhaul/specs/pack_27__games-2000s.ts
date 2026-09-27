@@ -88,10 +88,12 @@ const spec: Spec = {
         'render the subject in first-person or third-person across vast ringworld landscapes and glossy alien structures.',
       color: 'Ringworld sky blue, alien purple and grass green.',
       light: 'Bright open-sky daylight with glossy purple reflections.',
-      texture: 'Early-2000s textures with glossy bump-mapped alien metal.',
+      texture:
+        'Plain low-detail surfaces: grass as a flat green texture on smooth rolling hills, alien metal as smooth purple with one simple shiny highlight, and crisp but blocky armor shapes.',
       camera: 'First-person view with a weapon at screen right.',
       mood: 'epic alien frontier',
-      render: 'Authentic Xbox first-person shooter screen.',
+      render:
+        'A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster.',
       key: 'Halo ringworld sky; purple alien structures; green fields',
       avoid: ['a green armored super soldier with a gold visor', 'existing alien species'],
       briefs: [
@@ -209,7 +211,7 @@ const spec: Spec = {
         avoid: ['a tiny green prince with a rod-shaped head', 'a giant king in tights'],
         briefs: [
           'In a flat-shaded candy-colored town, a tiny round beetle pushes a sticky ball that has already rolled up cats, bicycles, a birthday cake and a panicking mailman, the whole lump now taller than the houses. No readable text or logo.',
-          'A giant sticky ball of rolled-up teapots and umbrellas rolls across a low-poly park. Pigeons flee in all directions under the mint sky. No readable text or logo.',
+          'Giant sticky ball of rolled-up teapots and umbrellas rolls across a simple toy-block park of flat bright colors, pigeons fleeing in all directions under the mint sky. No readable text or logo.',
           'A single flat-shaded strawberry sits on a huge kitchen table in a candy world. A tiny sticky ball approaches it from the edge. No readable text or logo.',
         ],
       },
