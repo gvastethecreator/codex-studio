@@ -9573,6 +9573,28 @@ Make it immediately recognizable as ${promptRecognitionLabel}. ${differentiation
   );
 }
 
+// Video game looks: the Video Game Originals Vault and the decade game categories of pack_27.
+function isVideoGameCapturePreset(pack: StyleRuntimePack, preset: StyleRuntimePreset) {
+  return (
+    pack.id === 'pack_12' || (pack.id === 'pack_27' && /Video Games/.test(preset.category ?? ''))
+  );
+}
+
+// Without these rules the cards drift into cinematic concept art: the HUD and the release-era
+// renderer are what make an image read as a frame of that game.
+function gameCaptureRules(preset: StyleRuntimePreset) {
+  const year = preset.name.match(/\b(19[7-9]\d|20[0-3]\d)\b/)?.[1];
+  return [
+    'Render the sample as an authentic in-game screen capture of the game look below: a frame grabbed from the game running on its original hardware, with its own gameplay camera, native resolution, polygon density, texture resolution, shading model, post-processing and interface layout. It is not concept art, key art, box art, a painting, a pre-rendered cinematic or a modern remaster.',
+    'Show the interface the game normally shows during play, such as health and stamina bars, a reticle, a minimap or button prompts, as shapes only with no readable words or numbers. If the game plays without a HUD, keep the screen clean.',
+    year
+      ? `Match what ${year} hardware actually rendered. Earlier releases must look visibly lower-fidelity than a current game; do not upscale, remaster or add modern lighting unless the look below asks for it.`
+      : '',
+  ]
+    .filter(Boolean)
+    .join(' ');
+}
+
 function buildProviderStylePrompt(
   pack: StyleRuntimePack,
   preset: StyleRuntimePreset,
@@ -9605,20 +9627,30 @@ function buildProviderStylePrompt(
       ['Atmosphere and mood', preset.style.atmosphere_and_mood],
       ['Rendering and quality', preset.style.rendering_and_quality],
     ];
+    const gameCapture = isVideoGameCapturePreset(pack, preset);
+    // Game cards show the game's own HUD as shapes, so the blanket "UI overlay" avoid is dropped.
+    const negativePrompt = gameCapture
+      ? preset.negativePrompt
+          ?.split(/,\s*/)
+          .filter((rule) => rule.toLowerCase() !== 'ui overlay')
+          .join(', ')
+      : preset.negativePrompt;
     return [
       `Create one portrait 3:4 style-preview image. Preview brief: ${cardBrief} This subject and composition are only for this card; they are not part of the reusable style definition.`,
       pack.id === 'pack_14' || pack.id === 'pack_15'
         ? 'Render the complete scene as a finished two-dimensional ink, paint, gouache or print illustration. Let deliberate drawn contours, pigment planes and the culture or X-punk-specific design language carry the image. Do not render it as a live-action photograph, cinematic still, glossy CGI or a photographed costume or product.'
         : '',
-      'Apply the visual language below to the sample. Express technique through line, value, color, light, texture and finish. Do not add a scene, character, prop, symbol, text or narrative just because it appears in a style label or source reference.',
-      pack.id === 'pack_12'
+      gameCapture
+        ? gameCaptureRules(preset)
+        : 'Apply the visual language below to the sample. Express technique through line, value, color, light, texture and finish. Do not add a scene, character, prop, symbol, text or narrative just because it appears in a style label or source reference.',
+      gameCapture
         ? "Create a new gameplay situation with original actors. Preserve the referenced game's characteristic silhouette design, equipment construction, costume vocabulary, material response, palette, lighting and rendering era. Originality belongs to the actors and situation; it must not erase those visual signatures or replace them with generic fantasy, glossy concept art or a newer rendering engine. Do not reproduce an existing screenshot or add named characters unless the brief requests them."
         : 'Use only original subjects. If the style references a creator, franchise, or era, transfer its visual techniques without reproducing recognizable characters, costumes, props, or scene compositions.',
       pack.id === 'pack_22' || pack.id === 'pack_23'
         ? 'Make the specified rendering technique unmistakable at thumbnail size. This is an authored style illustration, not a plain photograph documenting the sample object. Show the requested drawing, painting, print, raster or crafted visual language through visible marks, edges, planes, relief or texture, even when the depicted subject is ordinary. Preserve the subject and its real material instead of turning it into a toy or unrelated craft object. For a localized modifier, keep the effect visibly confined to the requested material or accent.'
         : '',
       ...fields.map(([label, value]) => `${label}: ${value}`),
-      preset.negativePrompt ? `Avoid: ${preset.negativePrompt}` : '',
+      negativePrompt ? `Avoid: ${negativePrompt}` : '',
       'Return only the image. Keep the sample subject recognizable and the full image readable at card size.',
     ]
       .filter(Boolean)

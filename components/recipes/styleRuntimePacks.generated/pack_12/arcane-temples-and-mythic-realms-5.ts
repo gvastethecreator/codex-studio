@@ -382,7 +382,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'in-engine summoning cutscene',
     negativePrompt:
-      'existing Final Fantasy summons, subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Final Fantasy summons, subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, UI overlay, noisy compression artifacts',
     style: {
       aesthetic:
         'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.',
@@ -393,12 +393,11 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bursting summon light and glowing glyphs, lit the way Final Fantasy X 2001 lights its levels.',
       texture_and_material:
-        'PS2 CG-cutscene polish with glowing particles, with the in-engine surface finish of Final Fantasy X 2001.',
-      camera_and_composition:
-        'Low cinematic cutscene view of rising beasts, framed the way Final Fantasy X 2001 frames its gameplay screens.',
+        'PS2 real-time models with low-resolution painted textures, rigid faces and additive glow particles.',
+      camera_and_composition: 'Low in-engine battle camera looking up at rising beasts.',
       atmosphere_and_mood: 'Keep the requested mood with sacred grand spectacle.',
       rendering_and_quality:
-        'Authentic PS2 JRPG cutscene screen, matching real Final Fantasy X 2001 screenshots.',
+        'Authentic 480i PS2 in-engine JRPG screen, not the pre-rendered movies.',
       creative_brief:
         "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX summon cutscene, glyph circle, rising aeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'FFX summon cutscene; glyph circle; rising aeon',

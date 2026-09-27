@@ -1130,7 +1130,7 @@
     "displayCategory": "Mythic game capture",
     "kind": "profile",
     "expectedCount": 20,
-    "baselineHash": "8b597f3a5435b6d51287fb830c2b7bae4646c44380c485faca910afe742487d6",
+    "baselineHash": "57e246384159b73ab00860f9e5f0f67057bea456123abf3fdec69f1dee6c7db1",
     "problem": "Library, pilgrimage and temple setpieces remain embedded in the visual fields.",
     "preserve": "Capture finish, depth organization and playable silhouettes.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
