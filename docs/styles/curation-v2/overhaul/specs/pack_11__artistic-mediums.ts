@@ -23,8 +23,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A roast boar on a platter surrounded by tankards fills a tavern's black slate board, a sleeping dragon curled around the bread in colored strokes. No readable text or logo.",
-        "A hooded monk tends a candlelit herb garden drawn on black slate, side-of-stick shading, drop shadows and a haze of powdery dust. No readable text or logo.",
-        "A sea serpent coils around a lighthouse on a huge slate board, bold white outlines and teal and yellow color smudged under a hand-drawn moon. No readable text or logo.",
+        'A hooded monk tends a candlelit herb garden drawn on black slate, side-of-stick shading, drop shadows and a haze of powdery dust. No readable text or logo.',
+        'A sea serpent coils around a lighthouse on a huge slate board, bold white outlines and teal and yellow color smudged under a hand-drawn moon. No readable text or logo.',
       ],
     },
     'SP11-007': {
@@ -41,9 +41,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'banner lettering', 'real tattoo artist flash copy'],
       briefs: [
-        "A dagger plunges through a crowned skull at the center of aged paper, surrounded by a swallow, a rose and a snake in bold traditional linework. No readable text or logo.",
-        "A hooded reaper with an hourglass, a dragon wrapped around a sword and a burning heart crowd a sheet of dark fantasy flash designs. No readable text or logo.",
-        "Nautical horrors fill a flash sheet, a kraken dragging a ship down, a mermaid skeleton, an anchor wrapped in eels and a lighthouse. No readable text or logo.",
+        'A dagger plunges through a crowned skull at the center of aged paper, surrounded by a swallow, a rose and a snake in bold traditional linework. No readable text or logo.',
+        'A hooded reaper with an hourglass, a dragon wrapped around a sword and a burning heart crowd a sheet of dark fantasy flash designs. No readable text or logo.',
+        'Nautical horrors fill a flash sheet, a kraken dragging a ship down, a mermaid skeleton, an anchor wrapped in eels and a lighthouse. No readable text or logo.',
       ],
     },
     'SP11-008': {
@@ -61,9 +61,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a pointed arch an armored saint slays a black dragon in ruby and cobalt glass, thick lead lines glowing under morning sun. No readable text or logo.",
-        "A wheel of twelve moon phases circles a crowned owl in a rose window of amber and violet bubbled glass lit from behind. No readable text or logo.",
-        "In a ruined chapel a cracked window shows a skeleton leading kings and peasants in a dance, missing panes letting in grey sky. No readable text or logo.",
+        'In a pointed arch an armored saint slays a black dragon in ruby and cobalt glass, thick lead lines glowing under morning sun. No readable text or logo.',
+        'A wheel of twelve moon phases circles a crowned owl in a rose window of amber and violet bubbled glass lit from behind. No readable text or logo.',
+        'In a ruined chapel a cracked window shows a skeleton leading kings and peasants in a dance, missing panes letting in grey sky. No readable text or logo.',
       ],
     },
     'SP11-019': {
@@ -79,11 +79,16 @@ const spec: Spec = {
         'Photographic puppet-show still with real fabric fuzz, visible seams and practical miniature set detail.',
         'fleece puppets; ping-pong eyes; hinged mouths; arm rods; TV set',
       ),
-      avoid: [...AVOID, 'real puppet character likeness'],
+      avoid: [
+        ...AVOID,
+        'real puppet character likeness',
+        'Muppet or Sesame Street characters',
+        'a purple vampire puppet with a monocle',
+      ],
       briefs: [
-        "Hosting a tiny candlelit talk show from a coffin desk, a vampire count puppet with a wide hinged mouth and ping-pong ball eyes interviews a nervous bat. No readable text or logo.",
-        "Arguing over a treasure chest on a small studio set, a fleece knight puppet and a fleece dragon puppet wave their floppy arms, seams uneven and fuzz flying. No readable text or logo.",
-        "A band of felt goblin musicians plays lutes and drums on a small stage, ping-pong ball eyes rolling and glued felt pieces peeling. No readable text or logo.",
+        'Hosting a tiny candlelit gardening show from a potting bench, an original lumpy green felt snail puppet with a knitted shell and button eyes interviews a nervous turnip puppet about its roots. No readable text or logo.',
+        'Arguing over a picnic basket on a small studio set, an orange fleece otter puppet and a striped sock-yarn badger puppet wave their floppy arms, seams uneven and fuzz flying. No readable text or logo.',
+        'A band of felt vegetable musicians, a pea pod drummer, a carrot on keys and an onion singer, plays on a tiny cardboard stage, glued felt pieces peeling at the edges. No readable text or logo.',
       ],
     },
     'SP11-026': {
@@ -101,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A giant raven with a crown in its beak covers a crumbling castle wall in soft sprayed fades and hard black edges. No readable text or logo.",
-        "A lich queen with glowing violet eyes stares from a tunnel wall in layered fades and sharp highlights, drips running down. No readable text or logo.",
-        "A knight fights a serpent across a rusted shipping container in orange and teal fades, overspray clouds drifting around them. No readable text or logo.",
+        'A giant raven with a crown in its beak covers a crumbling castle wall in soft sprayed fades and hard black edges. No readable text or logo.',
+        'A lich queen with glowing violet eyes stares from a tunnel wall in layered fades and sharp highlights, drips running down. No readable text or logo.',
+        'A knight fights a serpent across a rusted shipping container in orange and teal fades, overspray clouds drifting around them. No readable text or logo.',
       ],
     },
     'SP11-028': {
@@ -121,9 +126,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A skull wearing a crown glows on a dark tavern wall in bent red and ice-white glass tubes, halos of light blooming around each line. No readable text or logo.",
-        "A dragon coils around a sword in blue and pink glowing tubes hanging in a rain-streaked shop window, its reflection on the wet street. No readable text or logo.",
-        "A crescent moon and a howling wolf glow above a crypt gate, one tube end flickering and violet light washing the old stone. No readable text or logo.",
+        'A skull wearing a crown glows on a dark tavern wall in bent red and ice-white glass tubes, halos of light blooming around each line. No readable text or logo.',
+        'A dragon coils around a sword in blue and pink glowing tubes hanging in a rain-streaked shop window, its reflection on the wet street. No readable text or logo.',
+        'A crescent moon and a howling wolf glow above a crypt gate, one tube end flickering and violet light washing the old stone. No readable text or logo.',
       ],
     },
     'SP11-044': {
@@ -140,9 +145,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real celebrity likeness'],
       briefs: [
-        "Four repeats of an original crowned skull fill a grid, each in a different loud colorway with harsh black photographic shadows. No readable text or logo.",
+        'Four repeats of an original crowned skull fill a grid, each in a different loud colorway with harsh black photographic shadows. No readable text or logo.',
         "A knight's helmet is printed in hot pink and acid yellow, harsh black shadow shapes and color layers slightly shifted. No readable text or logo.",
-        "Nine repeats of a black cat on a potion bottle shift color across a grid, ink skips and off-register edges in every square. No readable text or logo.",
+        'Nine repeats of a black cat on a potion bottle shift color across a grid, ink skips and off-register edges in every square. No readable text or logo.',
       ],
     },
   },
@@ -164,9 +169,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a round birch slice with its bark edge a wolf howls at the moon over a pine forest in fine burned lines and stippled shading. No readable text or logo.",
-        "An old witch with a long pipe is burned into a pale panel, wrinkles and hair in fine lines, the hot pen resting beside her with a curl of smoke. No readable text or logo.",
-        "A heron stands in reeds beside a mill on a box lid, burned lines following the wood grain in tones from tan to charred black. No readable text or logo.",
+        'On a round birch slice with its bark edge a wolf howls at the moon over a pine forest in fine burned lines and stippled shading. No readable text or logo.',
+        'An old witch with a long pipe is burned into a pale panel, wrinkles and hair in fine lines, the hot pen resting beside her with a curl of smoke. No readable text or logo.',
+        'A heron stands in reeds beside a mill on a box lid, burned lines following the wood grain in tones from tan to charred black. No readable text or logo.',
       ],
     },
     {
@@ -186,9 +191,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real ivory trade imagery'],
       briefs: [
-        "A whaling ship attacked by a giant sea serpent is scratched into polished bone, fine lines rubbed with black ink. No readable text or logo.",
+        'A whaling ship attacked by a giant sea serpent is scratched into polished bone, fine lines rubbed with black ink. No readable text or logo.',
         "Along the curve of a powder horn a lighthouse stands on a cliff while a drowned sailor's ghost rises from crosshatched waves. No readable text or logo.",
-        "A curved bone knife handle carries a mermaid skeleton holding up a lantern, fine crosshatched shadows filling the sea. No readable text or logo.",
+        'A curved bone knife handle carries a mermaid skeleton holding up a lantern, fine crosshatched shadows filling the sea. No readable text or logo.',
       ],
     },
     {
@@ -208,9 +213,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A huge deep-sea anglerfish is printed directly from its body onto thin mulberry paper, every scale, tooth and fin ray in black. No readable text or logo.",
-        "A large octopus spreads all eight tentacles across thin paper in indigo, the patchy hand pressure leaving pale gaps. No readable text or logo.",
-        "A huge armored carp and a spider crab share one sheet in sumi black, with a faint ghost of an earlier press beside them. No readable text or logo.",
+        'A huge deep-sea anglerfish is printed directly from its body onto thin mulberry paper, every scale, tooth and fin ray in black. No readable text or logo.',
+        'A large octopus spreads all eight tentacles across thin paper in indigo, the patchy hand pressure leaving pale gaps. No readable text or logo.',
+        'A huge armored carp and a spider crab share one sheet in sumi black, with a faint ghost of an earlier press beside them. No readable text or logo.',
       ],
     },
     {
@@ -230,9 +235,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mirrored pair of stags faces a tree of life cut from one folded black sheet, lacy vines and stars around them. No readable text or logo.",
-        "A castle on a hill with two ravens and a moon is cut from red folded paper inside a delicate border of thorns and keys. No readable text or logo.",
-        "Mirrored witches dance around a bonfire cut from black paper, light passing through the cut flames from behind. No readable text or logo.",
+        'A mirrored pair of stags faces a tree of life cut from one folded black sheet, lacy vines and stars around them. No readable text or logo.',
+        'A castle on a hill with two ravens and a moon is cut from red folded paper inside a delicate border of thorns and keys. No readable text or logo.',
+        'Mirrored witches dance around a bonfire cut from black paper, light passing through the cut flames from behind. No readable text or logo.',
       ],
     },
     {
@@ -252,9 +257,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A small red horse prances among flowing C- and S-stroke scrolls and stylized red and cream flowers on a dark blue wooden chest. No readable text or logo.",
-        "A longship with a serpent prow rides waves that curl into red and cream scroll flowers around a round wooden plate. No readable text or logo.",
-        "A hunched troll hides under a stone bridge on a carved ale bowl, surrounded by green and ochre acanthus scrolls. No readable text or logo.",
+        'A small red horse prances among flowing C- and S-stroke scrolls and stylized red and cream flowers on a dark blue wooden chest. No readable text or logo.',
+        'A longship with a serpent prow rides waves that curl into red and cream scroll flowers around a round wooden plate. No readable text or logo.',
+        'A hunched troll hides under a stone bridge on a carved ale bowl, surrounded by green and ochre acanthus scrolls. No readable text or logo.',
       ],
     },
     {
@@ -274,9 +279,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A firebird flies over a sleeping forest castle on a glossy black box lid, tiny elongated figures and fine gold highlights. No readable text or logo.",
-        "A sled pulled by three black horses races through a snowy night forest chased by wolves, gold highlights on the manes. No readable text or logo.",
-        "On an oval black brooch a pale sorceress holds a glowing golden egg in a forest of black birches. No readable text or logo.",
+        'A firebird flies over a sleeping forest castle on a glossy black box lid, tiny elongated figures and fine gold highlights. No readable text or logo.',
+        'A sled pulled by three black horses races through a snowy night forest chased by wolves, gold highlights on the manes. No readable text or logo.',
+        'On an oval black brooch a pale sorceress holds a glowing golden egg in a forest of black birches. No readable text or logo.',
       ],
     },
     {
@@ -296,9 +301,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mirrored blot of pooled black ink reads as a horned winged demon with a red accent at its heart, feathered edges spreading. No readable text or logo.",
-        "A symmetrical blot forms a great moth with a skull pattern on its back, pooled ink and feathered wing edges. No readable text or logo.",
-        "On a clipboard in dim light a mirrored blot reads as two hooded witches facing each other over a cauldron. No readable text or logo.",
+        'A mirrored blot of pooled black ink reads as a horned winged demon with a red accent at its heart, feathered edges spreading. No readable text or logo.',
+        'A symmetrical blot forms a great moth with a skull pattern on its back, pooled ink and feathered wing edges. No readable text or logo.',
+        'On a clipboard in dim light a mirrored blot reads as two hooded witches facing each other over a cauldron. No readable text or logo.',
       ],
     },
     {
@@ -318,9 +323,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A woman rides a bicycle through a meadow in a collage of flattened petals, her dress of pink pansies and wheels of dried seed heads. No readable text or logo.",
-        "An owl is built from brown oak leaves, rose-petal eyes and seed-head feathers on a yellowed album page. No readable text or logo.",
-        "A ghostly lady drifts across dark paper in a flowing gown of pale hydrangea petals and skeleton leaves. No readable text or logo.",
+        'A woman rides a bicycle through a meadow in a collage of flattened petals, her dress of pink pansies and wheels of dried seed heads. No readable text or logo.',
+        'An owl is built from brown oak leaves, rose-petal eyes and seed-head feathers on a yellowed album page. No readable text or logo.',
+        'A ghostly lady drifts across dark paper in a flowing gown of pale hydrangea petals and skeleton leaves. No readable text or logo.',
       ],
     },
     {
@@ -340,9 +345,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A black cat sleeps on a windowsill beside a teapot in rows of wool loops in rust, navy and cream. No readable text or logo.",
-        "A fox curls in a nest of autumn leaves on a worn floor, loop-filled shapes inside a border of acorns. No readable text or logo.",
-        "A crowned stag stands in a dark pine forest under wool stars, the loops worn flat in the center from years of feet. No readable text or logo.",
+        'A black cat sleeps on a windowsill beside a teapot in rows of wool loops in rust, navy and cream. No readable text or logo.',
+        'A fox curls in a nest of autumn leaves on a worn floor, loop-filled shapes inside a border of acorns. No readable text or logo.',
+        'A crowned stag stands in a dark pine forest under wool stars, the loops worn flat in the center from years of feet. No readable text or logo.',
       ],
     },
     {
@@ -362,9 +367,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A stag hunt through a dark forest wraps around a crystal goblet in fine diamond-point stipple, frosted white against the wine. No readable text or logo.",
-        "An old window pane carries a lighthouse on a rocky point and a sailing ship in frosty stipple catching cold night light. No readable text or logo.",
-        "A skeleton plays violin at a graveside scratched into a tall glass panel, delicate marks glowing white against the dark. No readable text or logo.",
+        'A stag hunt through a dark forest wraps around a crystal goblet in fine diamond-point stipple, frosted white against the wine. No readable text or logo.',
+        'An old window pane carries a lighthouse on a rocky point and a sailing ship in frosty stipple catching cold night light. No readable text or logo.',
+        'A skeleton plays violin at a graveside scratched into a tall glass panel, delicate marks glowing white against the dark. No readable text or logo.',
       ],
     },
     {
@@ -384,9 +389,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A howling wolf among pines is pierced into a tin lantern, candlelight spilling dots across a dark barn wall. No readable text or logo.",
-        "A rooster and wheat sheaves glow from behind a cabinet panel made of rows of holes and slits. No readable text or logo.",
-        "Bats, stars and a pointed hat are pierced into a rusty lantern, candlelight dots scattering across a porch. No readable text or logo.",
+        'A howling wolf among pines is pierced into a tin lantern, candlelight spilling dots across a dark barn wall. No readable text or logo.',
+        'A rooster and wheat sheaves glow from behind a cabinet panel made of rows of holes and slits. No readable text or logo.',
+        'Bats, stars and a pointed hat are pierced into a rusty lantern, candlelight dots scattering across a porch. No readable text or logo.',
       ],
     },
     {
@@ -406,9 +411,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An armored angel fights a serpent on a panel of raised gilded gesso, a punched gold halo and fine craquelure across the paint. No readable text or logo.",
-        "A small wedding chest wears raised gilded vines around a painted unicorn resting beside a seated lady. No readable text or logo.",
-        "A frame of raised gilded thorns and roses surrounds a small painted skull, hourglass and snuffed candle. No readable text or logo.",
+        'An armored angel fights a serpent on a panel of raised gilded gesso, a punched gold halo and fine craquelure across the paint. No readable text or logo.',
+        'A small wedding chest wears raised gilded vines around a painted unicorn resting beside a seated lady. No readable text or logo.',
+        'A frame of raised gilded thorns and roses surrounds a small painted skull, hourglass and snuffed candle. No readable text or logo.',
       ],
     },
     {
@@ -428,9 +433,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A hermit reads in a cave by candlelight beside an hourglass, painted so smoothly on copper that it glows like glass. No readable text or logo.",
-        "A walled city burns at night seen from a hill, tiny fleeing figures and jewel-orange fire glowing on the copper. No readable text or logo.",
-        "A saint on a white horse crosses a rocky gorge in jewel greens and reds, tiny precise detail and copper glowing through. No readable text or logo.",
+        'A hermit reads in a cave by candlelight beside an hourglass, painted so smoothly on copper that it glows like glass. No readable text or logo.',
+        'A walled city burns at night seen from a hill, tiny fleeing figures and jewel-orange fire glowing on the copper. No readable text or logo.',
+        'A saint on a white horse crosses a rocky gorge in jewel greens and reds, tiny precise detail and copper glowing through. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

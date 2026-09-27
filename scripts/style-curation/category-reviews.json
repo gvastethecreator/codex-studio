@@ -972,7 +972,7 @@
     "validation": "Generated decoration is not described as a verified code, circuit or measured plan.",
     "evidencePresetIds": ["SP10-067", "SP10-069"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
@@ -987,7 +987,7 @@
     "validation": "The same image uses clearly different units without becoming a window or tile sample.",
     "evidencePresetIds": ["SP10-072", "SP10-073"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
@@ -1025,7 +1025,7 @@
     "displayCategory": "Specialist illustration",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "a1e400531292a2eeaaa7624d6d22e8527afdf2ac9d9ea99dab3d0d1c111aa557",
+    "baselineHash": "121bfb874242936e0fb5d03a75faca90103a535feddbd5e6846063f3db9b0961",
     "problem": "Chalkboard, tattoo, stained glass and broadcast craft are grouped as a miscellaneous remainder.",
     "preserve": "Support-specific marks and image hierarchy.",
     "proposedAction": "Rehome by medium; keep tattoo flash layout separate from ink treatment. Overhaul: each preset is one physical making technique, tattoo flash keeps its sheet layout, three vague names made concrete, and 13 mediums checked against the catalog (pyrography, scrimshaw, gyotaku, folded papercut, rosemaling, black lacquer miniature, ink blot, pressed flowers, hooked rug, glass engraving, punched tin, pastiglia, oil on copper). Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations. Photographic presets no longer carry illustration-only light and finish wording.",
@@ -1047,7 +1047,7 @@
     "validation": "A pixel style must not inject a futuristic world or emoji facial features.",
     "evidencePresetIds": ["SP11-009", "SP11-037"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_11",
@@ -1062,7 +1062,7 @@
     "validation": "The food recipe can remain literal; its lighting derivative must work on non-food content.",
     "evidencePresetIds": ["SP11-032", "SP11-050"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_11",
@@ -1077,7 +1077,7 @@
     "validation": "Do not invent scientific observations or replace an object with an insect eye.",
     "evidencePresetIds": ["SP11-056", "SP11-069"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_11",
@@ -1107,7 +1107,7 @@
     "validation": "A structural drawing remains explicitly illustrative, without invented measurement accuracy.",
     "evidencePresetIds": ["SP11-033", "SP11-033"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_12",

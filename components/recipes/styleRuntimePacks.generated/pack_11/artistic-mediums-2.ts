@@ -89,7 +89,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Felt Puppet Broadcast'],
     category: '2. Artistic Mediums',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real puppet character likeness, cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real puppet character likeness, Muppet or Sesame Street characters, a purple vampire puppet with a monocle, cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Felt puppet broadcast: the subject as a fuzzy hand puppet made of felt and fleece, performing on a small TV set.',
