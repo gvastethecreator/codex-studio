@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Ecco the Dolphin 1992 - Sega Alien Ocean
 category: 5. Video Games 90s
 domain: nineties console game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side-view underwater exploration, framed the way Ecco the Dolphin 1992 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien ocean.
   rendering_and_quality: "A 1992 Sega Mega Drive frame at 320 by 224: crisp pixels in deep blues, lonely and vast."
-  creative_brief: 'Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere. Carry it through Ecco underwater pixels, glyph crystals, alien ocean. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere. Carry it through Ecco pixel oceans, glyph crystals, alien depths, lonely blues. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Ecco pixel oceans; glyph crystals; alien depths; lonely blues"
 avoidRules:
   - a bottlenose dolphin with star markings

@@ -7,7 +7,7 @@ styleAnchors:
   - Witness Orchid Puzzle Garden
 displayName: The Witness 2016 - Thekla Saturated Puzzle Island
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject in clean simplified painterly shapes, seen from first person on a silent island. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated orchid pink, grass green, sky blue and warm stone.
-  lighting_and_shadow: Bright clean sunlight with soft painterly shading, lit the way The Witness 2016 lights its levels.
-  texture_and_material: Simplified smooth shapes without grime, with the in-engine surface finish of The Witness 2016.
+  lighting_and_shadow: "Bright clean sunlight with soft simple shading and saturated color, almost no dark areas."
+  texture_and_material: "Simplified smooth shapes without grime or fine texture, bold saturated autumn trees."
   camera_and_composition: First-person view facing puzzle panels, framed the way The Witness 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet contemplative insight.
-  rendering_and_quality: Authentic painterly first-person puzzle screen, matching real The Witness 2016 screenshots.
+  rendering_and_quality: "A 2016 first-person frame at 1920 by 1080: clean saturated island, a glowing line-maze panel on a stand, no interface."
   key_features: The Witness saturated island; line puzzles; simplified shapes
   creative_brief: 'Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature. Carry it through The Witness saturated island, line puzzles, simplified shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

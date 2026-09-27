@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Doom 1993 - id Software Sprite Shooter
 category: 5. Video Games 90s
 domain: nineties PC game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: First-person view with a weapon sprite and status bar.
   atmosphere_and_mood: Keep the requested mood with frantic hellish action.
   rendering_and_quality: "A 1993 PC frame at 320 by 200 stretched to 4:3: coarse, pixelated and sharp-edged, with a gun sprite at the bottom and a status bar strip."
-  creative_brief: 'id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face. Carry it through Doom 2.5D, flat sprite monsters, brown and red, status bar. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "id Software Doom (1993) look: first-person 2.5D corridors, low-resolution brown and red textures, flat sprite monsters, a weapon sprite at screen bottom and a status bar with a face. Carry it through Doom flat sprite monsters, chunky pixel corridors, brown and red, status bar strip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Doom flat sprite monsters; chunky pixel corridors; brown and red; status bar strip"
 avoidRules:
   - a green-armored space marine face

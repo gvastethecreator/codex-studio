@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Metal Gear Solid 1998 - Konami Shadow Base
 category: 11. Psychological & Tactical Gameplay
 domain: military base stealth gameplay
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,16 +22,16 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 soldiers and guards. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "Konami Metal Gear Solid (1998) look: PlayStation stealth at a snowy Alaskan base with blocky soldiers, sweeping searchlights, boxy corridors and a radar box."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky soldiers and guards with smeared painted faces and stiff chunky limbs. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Snow white, steel grey and night blue, true to the Metal Gear Solid 1998 palette.
-  lighting_and_shadow: Searchlights at night, lit the way Metal Gear Solid 1998 lights its levels.
-  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Metal Gear Solid 1998.
+  lighting_and_shadow: "Night with sweeping searchlight cones on snowy ground."
+  texture_and_material: "Blurry textures that wobble on boxy base buildings, grainy snow."
   camera_and_composition: Overhead stealth camera, framed the way Metal Gear Solid 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense cold infiltration.
-  rendering_and_quality: Authentic PS1 stealth screen, matching real Metal Gear Solid 1998 screenshots.
-  creative_brief: 'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank. Carry it through MGS1 base, searchlights, walking tank. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: MGS1 base; searchlights; walking tank
+  rendering_and_quality: "A 1998 PlayStation frame at 320 by 240 on a CRT from a high camera: soft, jagged, a radar box shape top right."
+  creative_brief: "Konami Metal Gear Solid (1998) look: PlayStation stealth at a snowy Alaskan base with blocky soldiers, sweeping searchlights, boxy corridors and a radar box. Carry it through MGS1 blocky soldiers, searchlights, snowy base, radar box. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "MGS1 blocky soldiers; searchlights; snowy base; radar box"
 avoidRules:
   - a soldier in a sneaking suit with a bandana
   - existing Metal Gear walkers

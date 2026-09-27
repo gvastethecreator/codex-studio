@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines
 category: 5. Speed, Sport & Competitive Arenas
 domain: skateboarding game screenshot
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,16 +22,16 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Neversoft Tony Hawk''s Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 skaters in baggy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PlayStation skateboarding with blocky skaters, boxy sunny plazas, rails and ramps, wobbling blurry textures and big air."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky skaters with simple painted faces and baggy clothes made of a few flat panels. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Sunny plaza tan, sky blue and punk colors.
-  lighting_and_shadow: Bright flat PS1 daylight, lit the way Tony Hawk's Pro Skater 2 2000 lights its levels.
-  texture_and_material: Low-poly surfaces with warped textures, with the in-engine surface finish of Tony Hawk's Pro Skater 2 2000.
+  lighting_and_shadow: "Bright flat daylight with no real shadows, colors a little washed out."
+  texture_and_material: "Blurry textures that wobble and stretch across flat panels, simple box-shaped plazas, rails and ramps."
   camera_and_composition: Third-person chase view behind the skater, framed the way Tony Hawk's Pro Skater 2 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with punk trick freedom.
-  rendering_and_quality: Authentic PS1 skate screen, matching real Tony Hawk's Pro Skater 2 2000 screenshots.
-  creative_brief: 'Neversoft Tony Hawk''s Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy. Carry it through THPS2 low-poly, plazas, big air. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: THPS2 low-poly; plazas; big air
+  rendering_and_quality: "A 2000 PlayStation frame at 512 by 240 on a CRT: soft and jagged, a skater in the air, a trick meter bar shape at the top."
+  creative_brief: "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PlayStation skateboarding with blocky skaters, boxy sunny plazas, rails and ramps, wobbling blurry textures and big air. Carry it through THPS2 blocky skaters, box-shaped plazas, big air, soft PS1 image. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "THPS2 blocky skaters; box-shaped plazas; big air; soft PS1 image"
 avoidRules:
   - real professional skaters
   - readable graffiti

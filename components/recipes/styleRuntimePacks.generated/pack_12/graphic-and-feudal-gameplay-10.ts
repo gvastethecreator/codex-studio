@@ -197,15 +197,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-outlined cel-shaded samurai in flowing clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Maple red, ink black and parchment, true to the Samurai Shodown 2019 palette.',
-      lighting_and_shadow:
-        'Bold toon light with ink shadows, lit the way Samurai Shodown 2019 lights its levels.',
-      texture_and_material:
-        'Ink-brush outlines and cel fills, with the in-engine surface finish of Samurai Shodown 2019.',
+      lighting_and_shadow: 'Bold toon light with ink-brushed shadows and maple leaves in the air.',
+      texture_and_material: 'Ink-brush outlines and flat cel fills on flowing clothing.',
       camera_and_composition:
         'Side-on duel camera, framed the way Samurai Shodown 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense single-strike duel.',
       rendering_and_quality:
-        'Authentic ink cel fighter screen, matching real Samurai Shodown 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 from the side: two samurai dueling, health bar shapes across the top.',
       creative_brief:
         "SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages. Carry it through Samurai Shodown ink cel, maple leaves, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Samurai Shodown ink cel; maple leaves; duel',
@@ -233,14 +231,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-brush figures with red accents. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Ink black, rice paper and red, true to the Sumioni 2012 palette.',
-      lighting_and_shadow: 'Flat paper light, lit the way Sumioni 2012 lights its levels.',
-      texture_and_material:
-        'Wet ink brush on paper, with the in-engine surface finish of Sumioni 2012.',
+      lighting_and_shadow: 'Flat paper light with no shading beyond ink density.',
+      texture_and_material: 'Wet black ink brush strokes on rice paper, with small red accents.',
       camera_and_composition:
         'Side-view brawler, framed the way Sumioni 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with swift painted fury.',
       rendering_and_quality:
-        'Authentic ink-brush action screen, matching real Sumioni 2012 screenshots.',
+        'A 2012 PlayStation Vita side-view frame at 960 by 544: ink-brush figure fighting on paper, an ink gauge shape.',
       creative_brief:
         "Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons. Carry it through Sumioni ink, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sumioni ink; rice paper; red accents',
@@ -269,15 +266,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish demon hunters in long coats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Gothic red, black and neon trails, true to the Devil May Cry 5 2019 palette.',
-      lighting_and_shadow:
-        'Dramatic gothic light with trails, lit the way Devil May Cry 5 2019 lights its levels.',
-      texture_and_material:
-        'Photoreal leather and stone, with the in-engine surface finish of Devil May Cry 5 2019.',
+      lighting_and_shadow: 'Dramatic gothic night light with glowing weapon trails.',
+      texture_and_material: 'Photoreal leather and stone with sharp detail and bright effects.',
       camera_and_composition:
         'Third-person combo view, framed the way Devil May Cry 5 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cocky stylish mayhem.',
       rendering_and_quality:
-        'Authentic stylish action screen, matching real Devil May Cry 5 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 in third person: demon hunter mid-combo, a style rank letter shape at the right.',
       creative_brief:
         "Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger. Carry it through DMC5 combos, weapon trails, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'DMC5 combos; weapon trails; gothic city',
@@ -305,15 +300,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as samurai and Mongol riders in period armor. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pampas gold, maple red and sky, true to the Ghost of Tsushima 2020 palette.',
-      lighting_and_shadow:
-        'Golden painterly light, lit the way Ghost of Tsushima 2020 lights its levels.',
+      lighting_and_shadow: 'Golden painterly light with wind sweeping through grass.',
       texture_and_material:
-        'Realistic grass, cloth and armor, with the in-engine surface finish of Ghost of Tsushima 2020.',
+        'Realistic grass fields, cloth and armor, with leaves blowing across the view.',
       camera_and_composition:
         'Third-person riding view, framed the way Ghost of Tsushima 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with windswept poetic combat.',
       rendering_and_quality:
-        'Authentic painterly open-world screen, matching real Ghost of Tsushima 2020 screenshots.',
+        'A 2020 frame at 1920 by 1080 in third person: samurai in a pampas field, no interface except a small bar.',
       creative_brief:
         "Sucker Punch Ghost of Tsushima (2020) look: third-person samurai open world with guiding wind, fields of pampas grass and flowers, falling leaves and painterly color. Carry it through Tsushima wind, pampas fields, falling leaves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Tsushima wind; pampas fields; falling leaves',
@@ -337,22 +331,21 @@ export const GENERATED_STYLE_PRESETS = [
       'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills.',
+        'Acquire Tenchu: Stealth Assassins (1998) look: PlayStation ninja stealth on moonlit rooftops with blocky ninja, a thick fog wall and a soft jagged image.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 ninja. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky ninja with simple painted faces, built from a few flat panels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night blue fog and moon, true to the Tenchu Stealth Assassins 1998 palette.',
-      lighting_and_shadow:
-        'Moonlight with heavy fog, lit the way Tenchu Stealth Assassins 1998 lights its levels.',
+      lighting_and_shadow: 'Pale moonlight and a thick fog wall a short distance away.',
       texture_and_material:
-        'Low-poly PS1 textures, with the in-engine surface finish of Tenchu Stealth Assassins 1998.',
+        'Blurry textures that wobble on flat panels, simple boxy rooftops and walls fading into fog.',
       camera_and_composition:
         'Third-person rooftop view, framed the way Tenchu Stealth Assassins 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with silent deadly patience.',
       rendering_and_quality:
-        'Authentic PS1 stealth screen, matching real Tenchu Stealth Assassins 1998 screenshots.',
+        'A 1998 PlayStation frame at 320 by 240 on a CRT: soft, jagged and foggy, a small awareness meter shape at the bottom.',
       creative_brief:
-        "Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills. Carry it through Tenchu fog, low-poly ninja, rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Tenchu fog; low-poly ninja; rooftops',
+        "Acquire Tenchu: Stealth Assassins (1998) look: PlayStation ninja stealth on moonlit rooftops with blocky ninja, a thick fog wall and a soft jagged image. Carry it through Tenchu fog wall, blocky ninja, rooftops, soft PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tenchu fog wall; blocky ninja; rooftops; soft PS1',
     },
     ui: {
       previewStatus: 'pending',
@@ -375,21 +368,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small isometric medieval unit sprites. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as tiny unit sprites seen from high on the diagonal, each only a few dozen pixels tall. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Grass green, castle stone and team colors, true to the Age of Empires II 1999 palette.',
       lighting_and_shadow:
-        'Bright even RTS light, lit the way Age of Empires II 1999 lights its levels.',
+        'Bright even daylight with small crisp shadows, lit the way Age of Empires II 1999 lights its levels.',
       texture_and_material:
-        'Pre-rendered isometric sprites, with the in-engine surface finish of Age of Empires II 1999.',
+        'Tiny rendered-then-shrunk sprites of units and buildings, grainy grass and water tiles.',
       camera_and_composition:
         'High isometric RTS view, framed the way Age of Empires II 1999 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grand strategic siege.',
       rendering_and_quality:
-        'Authentic late-nineties RTS screen, matching real Age of Empires II 1999 screenshots.',
+        'A 1999 PC frame at 1024 by 768: tiny castle and army on a diagonal map, a carved panel and minimap diamond at the bottom.',
       creative_brief:
-        "Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain. Carry it through AoE II isometric, siege, castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'AoE II isometric; siege; castles',
+        "Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain. Carry it through AoE II tiny sprites, diagonal map, siege, castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'AoE II tiny sprites; diagonal map; siege; castles',
     },
     ui: {
       previewStatus: 'pending',
@@ -414,14 +407,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty medieval soldiers in mail and plate. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mud brown, steel and banner colors, true to the Mordhau 2020 palette.',
-      lighting_and_shadow: 'Overcast battle light, lit the way Mordhau 2020 lights its levels.',
-      texture_and_material:
-        'Realistic mud and steel, with the in-engine surface finish of Mordhau 2020.',
+      lighting_and_shadow:
+        'Grey overcast battle light, lit the way Mordhau 2020 lights its levels.',
+      texture_and_material: 'Realistic mud, mail and steel, slightly soft in the distance.',
       camera_and_composition:
         'First-person shield wall view, framed the way Mordhau 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic brutal melee.',
       rendering_and_quality:
-        'Authentic medieval melee screen, matching real Mordhau 2020 screenshots.',
+        'A 2020 first-person frame at 1920 by 1080: a sword raised at the bottom right, shield wall ahead, bar shapes bottom left.',
       creative_brief:
         "Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights. Carry it through Mordhau melee, shield walls, mud. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Mordhau melee; shield walls; mud',
@@ -451,14 +444,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Lush green, sunset gold and cherry pink, true to the Muramasa The Demon Blade 2009 palette.',
       lighting_and_shadow:
-        'Painted glow and warm light, lit the way Muramasa The Demon Blade 2009 lights its levels.',
+        'Warm painted glow with soft colored backlight, lit the way Muramasa The Demon Blade 2009 lights its levels.',
       texture_and_material:
-        'Hand-painted 2D art, with the in-engine surface finish of Muramasa The Demon Blade 2009.',
+        'Hand-painted 2D art with elegant flowing lines and bright ukiyo-e-like colors.',
       camera_and_composition:
         'Side-scrolling view, framed the way Muramasa The Demon Blade 2009 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lush elegant adventure.',
       rendering_and_quality:
-        'Authentic hand-painted action screen, matching real Muramasa The Demon Blade 2009 screenshots.',
+        'A 2009 Wii side-view frame at 640 by 480: elegant painted swordsman in a feudal landscape, a small blade gauge shape.',
       creative_brief:
         "Vanillaware Muramasa: The Demon Blade (2009) look: lush hand-painted 2D feudal Japan by George Kamitani, flowing sword arcs, layered scenery and yokai. Carry it through Muramasa painted, feudal Japan, sword arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Muramasa painted; feudal Japan; sword arcs',
@@ -484,19 +477,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright 16-bit shrine maidens and yokai sprites. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as bright little pixel sprites with big heads, a shrine maiden and yokai in a small palette. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Shrine red, moon blue and foxfire, true to the Pocky & Rocky 1992 palette.',
-      lighting_and_shadow: 'Flat 16-bit light, lit the way Pocky & Rocky 1992 lights its levels.',
+      lighting_and_shadow:
+        'Flat pixel colors with no gradients, lit the way Pocky & Rocky 1992 lights its levels.',
       texture_and_material:
-        'Crisp 16-bit sprites, with the in-engine surface finish of Pocky & Rocky 1992.',
+        'Crisp square pixels, bold outlines and repeating shrine and forest tiles.',
       camera_and_composition:
         'Top-down shooter view, framed the way Pocky & Rocky 1992 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with spirited yokai chaos.',
       rendering_and_quality:
-        'Authentic SNES shooter screen, matching real Pocky & Rocky 1992 screenshots.',
+        'A 1992 Super Nintendo frame at 256 by 224 from above: small shrine maiden throwing talismans, score shapes at the top.',
       creative_brief:
-        "Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms. Carry it through Pocky & Rocky shrine, talismans, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Pocky & Rocky shrine; talismans; yokai',
+        "Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms. Carry it through Pocky & Rocky pixel shrine maiden, talismans, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Pocky & Rocky pixel shrine maiden; talismans; yokai',
     },
     ui: {
       previewStatus: 'pending',
@@ -521,14 +515,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as comic-page heroes inside panels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Comic print colors and halftone, true to the Comix Zone 1995 palette.',
-      lighting_and_shadow: 'Flat comic light, lit the way Comix Zone 1995 lights its levels.',
+      lighting_and_shadow:
+        'Flat comic-book colors with no gradients, lit the way Comix Zone 1995 lights its levels.',
       texture_and_material:
-        'Printed halftone and ink, with the in-engine surface finish of Comix Zone 1995.',
+        'Printed halftone dots and ink lines, heroes inside panel borders on a page.',
       camera_and_composition:
         'Comic page panel view, framed the way Comix Zone 1995 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rowdy comic-book action.',
       rendering_and_quality:
-        'Authentic Mega Drive comic brawler screen, matching real Comix Zone 1995 screenshots.',
+        'A 1995 Sega Mega Drive frame at 320 by 224: a comic page with the hero fighting inside a panel, pixelated halftone.',
       creative_brief:
         "Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects. Carry it through Comix Zone panels, halftone, page brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Comix Zone panels; halftone; page brawl',
@@ -558,14 +553,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Torch amber, steel and earth, true to the Kingdom Come Deliverance 2018 palette.',
       lighting_and_shadow:
-        'Torchlit night, lit the way Kingdom Come Deliverance 2018 lights its levels.',
-      texture_and_material:
-        'Realistic steel and cloth, with the in-engine surface finish of Kingdom Come Deliverance 2018.',
+        'Warm torchlit night on stone and timber, lit the way Kingdom Come Deliverance 2018 lights its levels.',
+      texture_and_material: 'Realistic steel and cloth with slightly soft game-engine detail.',
       camera_and_composition:
         'First-person duel view, framed the way Kingdom Come Deliverance 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grounded tense duel.',
       rendering_and_quality:
-        'Authentic realistic medieval screen, matching real Kingdom Come Deliverance 2018 screenshots.',
+        'A 2018 first-person frame at 1920 by 1080: sword at the bottom, torchlit village, a small compass at the bottom.',
       creative_brief:
         "Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay. Carry it through Kingdom Come realism, swordplay, Bohemia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Kingdom Come realism; swordplay; Bohemia',
@@ -593,14 +587,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as crisp pixel samurai and oni. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Temple red, stone and night blue, true to the Shogun Showdown 2023 palette.',
-      lighting_and_shadow: 'Flat pixel light, lit the way Shogun Showdown 2023 lights its levels.',
-      texture_and_material:
-        'Crisp pixel art, with the in-engine surface finish of Shogun Showdown 2023.',
+      lighting_and_shadow: 'Flat pixel colors with bright red and blue accents.',
+      texture_and_material: 'Crisp pixel samurai and oni on a single row of tiles.',
       camera_and_composition:
         'Tactical side view, framed the way Shogun Showdown 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tight tactical tension.',
       rendering_and_quality:
-        'Authentic pixel tactics screen, matching real Shogun Showdown 2023 screenshots.',
+        'A 2023 frame at 640 by 360 scaled up: pixel fighters on a line of tiles, blank tile cards below.',
       creative_brief:
         "Roboatino Shogun Showdown (2023) look: turn-based pixel tactics on a line of feudal Japanese tiles, samurai, monks and oni in crisp sprites. Carry it through Shogun Showdown pixels, oni, tactics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Shogun Showdown pixels; oni; tactics',
@@ -628,14 +621,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as Roman gladiators and legionaries. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sand gold, Roman red and bronze, true to the Ryse Son of Rome 2013 palette.',
-      lighting_and_shadow: 'Hot sun and dust, lit the way Ryse Son of Rome 2013 lights its levels.',
+      lighting_and_shadow: 'Hot sun and dust in a packed arena.',
       texture_and_material:
-        'Detailed bronze and leather, with the in-engine surface finish of Ryse Son of Rome 2013.',
+        'Detailed bronze and leather, glossy and crisp, sand and blood on the arena floor.',
       camera_and_composition:
         'Third-person arena view, framed the way Ryse Son of Rome 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with roaring arena spectacle.',
       rendering_and_quality:
-        'Authentic cinematic arena screen, matching real Ryse Son of Rome 2013 screenshots.',
+        'A 2013 Xbox One frame at 1600 by 900 in third person: gladiator in the colosseum with roaring crowds, button prompt shapes.',
       creative_brief:
         "Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust. Carry it through Ryse colosseum, gladiators, crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Ryse colosseum; gladiators; crowds',
@@ -665,14 +658,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Rich Amiga banners and green fields, true to the Defender of the Crown 1986 palette.',
       lighting_and_shadow:
-        'Painted daylight, lit the way Defender of the Crown 1986 lights its levels.',
-      texture_and_material:
-        'Painted Amiga pixel art, with the in-engine surface finish of Defender of the Crown 1986.',
+        'Painted daylight in rich flat colors, lit the way Defender of the Crown 1986 lights its levels.',
+      texture_and_material: 'Painted-looking scenes made of visible square pixels and dithering.',
       camera_and_composition:
         'First-person joust view down the lists, framed the way Defender of the Crown 1986 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chivalric romantic drama.',
       rendering_and_quality:
-        'Authentic Amiga painted screen, matching real Defender of the Crown 1986 screenshots.',
+        'A 1986 Amiga frame at 320 by 200: painterly pixel joust or castle scene, a simple framed border.',
       creative_brief:
         "Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles. Carry it through Defender of the Crown joust, Amiga painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Defender of the Crown joust; Amiga painting',

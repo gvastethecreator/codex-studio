@@ -7,7 +7,7 @@ styleAnchors:
   - Long Dark Frozen Survival
 displayName: The Long Dark 2017 - Hinterland Painterly Wilderness
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Hinterland Studio The Long Dark (2017) look: first-person survival in a painterly Canadian winter wilderness, flat brushstroke textures, soft gradients, cabins, wolves and aurora nights.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors seen from first person in painterly winter light. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Painterly snow blue, pine green, sunset peach and cabin amber.
-  lighting_and_shadow: Soft painterly gradients with low winter sun, lit the way The Long Dark 2017 lights its levels.
-  texture_and_material: Flat brushstroke textures and soft shapes, with the in-engine surface finish of The Long Dark 2017.
+  lighting_and_shadow: "Soft painted gradients with low winter sun turning snow pink and orange."
+  texture_and_material: "Flat brushstroke textures on simple shapes, snow as soft painted planes."
   camera_and_composition: First-person view across snowfields, framed the way The Long Dark 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet lonely survival.
-  rendering_and_quality: Authentic painterly survival screen, matching real The Long Dark 2017 screenshots.
+  rendering_and_quality: "A 2017 first-person frame at 1920 by 1080: hands in mittens at the bottom, painterly snowy valley, small status icon shapes."
   key_features: The Long Dark painterly snow; cabins; wolves
   creative_brief: 'Hinterland Studio The Long Dark (2017) look: first-person survival in a painterly Canadian winter wilderness, flat brushstroke textures, soft gradients, cabins, wolves and aurora nights. Carry it through The Long Dark painterly snow, cabins, wolves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

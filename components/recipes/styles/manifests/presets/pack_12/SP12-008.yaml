@@ -7,7 +7,7 @@ styleAnchors:
   - WipEout Night Speed Circuit
 displayName: Wipeout HD 2008 - Studio Liverpool Anti-Grav Neon
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Glossy craft hulls, clean track surfaces and speed blur.
   camera_and_composition: Low chase camera behind the craft, framed the way Wipeout HD 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with electric breakneck speed.
-  rendering_and_quality: Authentic late-2000s futuristic racer screen, matching real Wipeout HD 2008 screenshots.
+  rendering_and_quality: "A 2008 PlayStation 3 frame at 1920 by 1080 from behind the craft: neon track streaking past, speed blur, a position and lap shape block at the top."
   key_features: Wipeout anti-grav; Designers Republic; neon circuits
   creative_brief: 'Studio Liverpool Wipeout HD (2008) look: anti-gravity racing on futuristic neon circuits, sleek team craft, The Designers Republic graphic identity, weapon pads and blazing speed blur. Carry it through Wipeout anti-grav, Designers Republic, neon circuits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

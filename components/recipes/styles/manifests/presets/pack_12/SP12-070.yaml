@@ -8,7 +8,7 @@ styleAnchors:
   - Wild Shrine Bow Trial
 displayName: Breath of the Wild 2017 - Nintendo Painterly Open Air
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,11 +27,11 @@ visualDna:
   aesthetic: 'Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as soft cel-shaded adventurers with simple shapes and painterly shading. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft grass green, sky blue, sunset gold and stone grey.
-  lighting_and_shadow: Soft open-air light with painterly haze, lit the way Breath of the Wild 2017 lights its levels.
-  texture_and_material: Painterly cel shading with watercolor-like grass, with the in-engine surface finish of Breath of the Wild 2017.
+  lighting_and_shadow: "Soft open-air sunlight with painted haze fading distant hills to pale blue."
+  texture_and_material: "Simple shapes with soft two-tone shading, grass drawn as soft painterly strokes that sway."
   camera_and_composition: Third-person view across a vast open landscape, framed the way Breath of the Wild 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with free open-air adventure.
-  rendering_and_quality: Authentic Switch painterly open-world screen, matching real Breath of the Wild 2017 screenshots.
+  rendering_and_quality: "A 2017 Switch frame at 1280 by 720: open plains with painted haze, heart shapes top left and a small minimap square bottom right."
   key_features: BotW painterly cel; open plains; ancient shrines
   creative_brief: 'Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes. Carry it through BotW painterly cel, open plains, ancient shrines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

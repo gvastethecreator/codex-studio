@@ -8,7 +8,7 @@ styleAnchors:
   - Relic Bazaar Deck Trial
 displayName: Slay the Spire 2019 - Mega Crit Card Climb
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,11 +27,11 @@ visualDna:
   aesthetic: 'Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as flat hand-drawn cartoon heroes, monsters and illustrated cards. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Candle gold, card parchment and dungeon teal, true to the Slay the Spire 2019 palette.
-  lighting_and_shadow: Flat painted light and glowing card effects, lit the way Slay the Spire 2019 lights its levels.
-  texture_and_material: Hand-drawn 2D art and card frames, with the in-engine surface finish of Slay the Spire 2019.
+  lighting_and_shadow: "Flat painted light with glowing card effects, lit the way Slay the Spire 2019 lights its levels."
+  texture_and_material: "Hand-drawn 2D creatures and heroes with flat painted shading, framed card shapes."
   camera_and_composition: Side-on card battle layout, framed the way Slay the Spire 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with strategic climbing tension.
-  rendering_and_quality: Authentic deckbuilder battle screen, matching real Slay the Spire 2019 screenshots.
+  rendering_and_quality: "A 2019 PC frame at 1920 by 1080: hero at left, monsters at right with intent icon shapes above, a fan of blank cards at the bottom."
   key_features: Slay the Spire cards; intent icons; hand-drawn foes
   creative_brief: 'Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies. Carry it through Slay the Spire cards, intent icons, hand-drawn foes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

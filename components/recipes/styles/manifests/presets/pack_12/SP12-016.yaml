@@ -7,7 +7,7 @@ styleAnchors:
   - Dishonored Aristocrat Stealth
 displayName: Dishonored 2012 - Arkane Painterly Dunwall
 category: 7. Heists, Horror & Underworld Runs
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Visible painterly brushstroke textures on stone, cloth and metal.
   camera_and_composition: First-person view with a blade hand and a power hand.
   atmosphere_and_mood: Keep the requested mood with decadent plague-city intrigue.
-  rendering_and_quality: Authentic early-2010s painterly immersive-sim screen, matching real Dishonored 2012 screenshots.
+  rendering_and_quality: "A 2012 first-person frame at 1280 by 720: painted city with a blade in one hand, a glowing power in the other, bar shapes top left."
   key_features: Dishonored painterly; whale-oil city; exaggerated faces
   creative_brief: 'Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers. Carry it through Dishonored painterly, whale-oil city, exaggerated faces. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

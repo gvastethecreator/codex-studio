@@ -3,7 +3,7 @@ id: SP12-066
 packId: pack_12
 name: Dead Space 2008 - EA Redwood Derelict Ship
 category: 7. Heists, Horror & Underworld Runs
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'EA Redwood Shores Dead Space (2008) look: third-person survival horror on a derelict mining ship, diegetic interface on the suit, dark industrial corridors and twisted necromorphs.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as engineers in heavy industrial suits with glowing lights. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Industrial rust, emergency red and suit cyan, true to the Dead Space 2008 palette.
-  lighting_and_shadow: Flickering dark industrial light, lit the way Dead Space 2008 lights its levels.
-  texture_and_material: Grimy metal and biological mess, with the in-engine surface finish of Dead Space 2008.
+  lighting_and_shadow: "Flickering dark industrial light with red emergency lamps."
+  texture_and_material: "Grimy metal corridors and biological mess on walls, heavy darkness."
   camera_and_composition: Close over-the-shoulder view, framed the way Dead Space 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with isolated industrial horror.
-  rendering_and_quality: Authentic survival horror screen, matching real Dead Space 2008 screenshots.
+  rendering_and_quality: "A 2008 frame at 1280 by 720 in third person over the shoulder: a heavy suit with glowing lights on its back, no other interface."
   key_features: Dead Space derelict ship; heavy suit; diegetic UI
   creative_brief: 'EA Redwood Shores Dead Space (2008) look: third-person survival horror on a derelict mining ship, diegetic interface on the suit, dark industrial corridors and twisted necromorphs. Carry it through Dead Space derelict ship, heavy suit, diegetic UI. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

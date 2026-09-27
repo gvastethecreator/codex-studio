@@ -7,7 +7,7 @@ styleAnchors:
   - Journey Crystal Desert Pilgrimage
 displayName: Journey 2012 - thatgamecompany Sand Pilgrimage
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Shimmering sand shader, soft cloth and weathered stone ruins.
   camera_and_composition: Wide third-person view dwarfing the small traveler, framed the way Journey 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wordless shared awe.
-  rendering_and_quality: Authentic early-2010s art-game screen, matching real Journey 2012 screenshots.
+  rendering_and_quality: "A 2012 PlayStation 3 frame at 1280 by 720 in third person: tiny cloaked figure on vast glittering dunes, no interface at all."
   key_features: Journey glittering sand; tiny cloaked pilgrim; glowing scarf
   creative_brief: 'thatgamecompany Journey (2012) look: vast shimmering sand dunes rendered with glittering sand shaders, tiny cloaked figures with glowing scarves, flying cloth creatures and a distant beam-topped mountain. Carry it through Journey glittering sand, tiny cloaked pilgrim, glowing scarf. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

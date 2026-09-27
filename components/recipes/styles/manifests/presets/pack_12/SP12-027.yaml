@@ -8,7 +8,7 @@ styleAnchors:
   - Basalt Crew Extraction
 displayName: Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -24,16 +24,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stout bearded space miners in chunky gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves of big flat angular rock facets, glowing minerals, flares and alien bug swarms."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as stout bearded miners in chunky yellow-and-grey gear, seen from first person with a tool in hand. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Cave darkness, flare orange and mineral cyan, true to the Deep Rock Galactic 2020 palette.
-  lighting_and_shadow: Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.
-  texture_and_material: Flat-shaded faceted low-poly rock, chunky simple models and glowing crystals.
+  lighting_and_shadow: "Headlamps and thrown flares punching colored light into near-total cave darkness."
+  texture_and_material: "Cave walls of big flat angular facets with almost no texture, each facet catching flare light as a single color; glowing crystal clusters."
   camera_and_composition: First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rowdy cave camaraderie.
-  rendering_and_quality: Authentic stylized low-poly co-op cave shooter screen, not photoreal.
-  key_features: Deep Rock low-poly caves; flares; mining crew
-  creative_brief: 'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 2020 first-person frame at 1920 by 1080: a drill or gun at the bottom right, dark faceted cave, bar and icon shapes in the corners."
+  key_features: "Deep Rock faceted caves; flares; mining crew; first person"
+  creative_brief: "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves of big flat angular rock facets, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock faceted caves, flares, mining crew, first person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing Deep Rock dwarves and their salute
   - photoreal rock detail

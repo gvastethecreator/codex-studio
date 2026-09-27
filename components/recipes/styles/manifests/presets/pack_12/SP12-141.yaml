@@ -9,7 +9,7 @@ styleAnchors:
 displayName: SSX Tricky 2001 - EA Canada Big Air
 category: 5. Speed, Sport & Competitive Arenas
 domain: snowboard mountain game screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bold stylized snowboarders in colorful outfits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Glittering white, sky blue and neon outfits, true to the SSX Tricky 2001 palette.
-  lighting_and_shadow: Bright alpine light with glitter, lit the way SSX Tricky 2001 lights its levels.
-  texture_and_material: PS2 snow and glossy boards, with the in-engine surface finish of SSX Tricky 2001.
+  lighting_and_shadow: "Bright alpine light with sparkling snow and bloom."
+  texture_and_material: "Smooth simple snow slopes with soft blurry textures, glossy boards and loud outfits."
   camera_and_composition: Chase camera during big air, framed the way SSX Tricky 2001 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wild big-air joy.
-  rendering_and_quality: Authentic PS2 snowboarding screen, matching real SSX Tricky 2001 screenshots.
+  rendering_and_quality: "A 2001 PlayStation 2 frame at 640 by 448: boarder mid-trick over a huge drop, a boost meter shape, slightly jagged edges."
   creative_brief: 'EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder. Carry it through SSX big air, impossible courses, powder. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: SSX big air; impossible courses; powder
 avoidRules:

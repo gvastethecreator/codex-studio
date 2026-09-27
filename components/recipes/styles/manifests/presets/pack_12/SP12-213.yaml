@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Layers of Fear 2016 - Bloober Team Shifting Rooms
 category: 11. Psychological & Tactical Gameplay
 domain: psychological distortion gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as haunted artists seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Victorian brown, oil paint and shadow, true to the Layers of Fear 2016 palette.
-  lighting_and_shadow: Candle and warped light, lit the way Layers of Fear 2016 lights its levels.
-  texture_and_material: Oil paint, wood and plaster, with the in-engine surface finish of Layers of Fear 2016.
+  lighting_and_shadow: "Candlelight with rooms that seem to bend and stretch."
+  texture_and_material: "Oil paint, wood and plaster, with paintings melting on the walls."
   camera_and_composition: First-person warped view, framed the way Layers of Fear 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with unraveling artistic madness.
-  rendering_and_quality: Authentic psychological horror screen, matching real Layers of Fear 2016 screenshots.
+  rendering_and_quality: "A 2016 first-person frame at 1920 by 1080: a room warping as the view turns, no interface."
   creative_brief: 'Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint. Carry it through Layers of Fear shifting rooms, paint, madness. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Layers of Fear shifting rooms; paint; madness
 avoidRules:

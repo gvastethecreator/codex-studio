@@ -17,7 +17,8 @@ const spec: Spec = {
       texture: 'Hand-painted flat backgrounds and clean hand-drawn animation lines.',
       camera: 'Side tactical grid view or wide caravan landscape.',
       mood: 'weary stoic endurance',
-      render: 'Authentic hand-animated tactical RPG screen.',
+      render:
+        'A 2014 frame at 1920 by 1080: flat painted Norse landscape with a small caravan or a tactical grid of hand-animated figures, banner shapes at the bottom.',
       key: 'Banner Saga Eyvind Earle painting; caravans; tactical grid',
       avoid: ['horned giant warriors', 'stone-armored invaders of the source game'],
       briefs: [
@@ -31,11 +32,14 @@ const spec: Spec = {
       subject:
         'render people as round-headed thick-outline cartoon figures with tiny dot eyes and chunky gear.',
       color: 'Bright flat grass green, sky blue and primary colors.',
-      light: 'Flat cartoon light with no gradients.',
-      texture: 'Thick outlines and flat vector fills.',
+      light:
+        'Flat cartoon colors with no gradients and no shadows except a dark oval under each figure.',
+      texture:
+        'Thick black outlines and flat vector color fills, simple scribbly grass and castle walls.',
       camera: 'Side-scrolling brawler view.',
       mood: 'silly co-op mayhem',
-      render: 'Authentic cartoon brawler screen.',
+      render:
+        'A 2008 Xbox 360 side-view frame at 1280 by 720: four round-headed knights brawling, portrait and bar shapes along the top.',
       key: 'Castle Crashers thick outlines; round heads; co-op brawl',
       avoid: ['four knights in red, green, blue and orange armor', 'animal orb companions'],
       briefs: [
@@ -46,13 +50,16 @@ const spec: Spec = {
     }),
     ga('SP12-026', 'Tactics Ogre 1995 - Quest Isometric Sprite Tactics', {
       look: 'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands.',
-      subject: 'render people as small detailed isometric sprites with Yoshida-style proportions.',
+      subject:
+        'show people as small detailed pixel sprites with long elegant proportions, standing on tiered diagonal terrain.',
       color: 'Muted earth, vine green and faded medieval blue.',
-      light: 'Soft even 16-bit light on tiered tiles.',
-      texture: 'Detailed 16-bit sprites and textured tiles.',
+      light: 'Soft even pixel colors on stacked diagonal tiles with no cast shadows.',
+      texture:
+        'Crisp square pixels, detailed small sprites and textured stone and grass tiles stacked in tiers.',
       camera: 'Isometric view over tiered tile maps.',
       mood: 'grave political war',
-      render: 'Authentic 16-bit isometric tactics screen.',
+      render:
+        'A 1995 Super Nintendo frame at 256 by 224: a diagonal battlefield of stacked pixel tiles, a small status box in a corner.',
       key: 'Tactics Ogre isometric; Yoshida sprites; tiered ruins',
     }),
     ga('SP12-035', 'Monster Train 2020 - Shiny Shoe Infernal Floors', {
@@ -60,22 +67,26 @@ const spec: Spec = {
       subject:
         'render every subject as cartoon demon units and cards battling on stacked train floors.',
       color: 'Infernal orange, ember red and deep purple.',
-      light: 'Pyre fire glow and card flashes.',
-      texture: 'Clean stylized cartoon 3D and card frames.',
+      light: 'Warm pyre fire glow and bright flashes when cards are played.',
+      texture:
+        'Clean chunky cartoon 3D creatures standing on train floors, flat card frames in hand.',
       camera: 'Side view of stacked train floors.',
       mood: 'fiery strategic chaos',
-      render: 'Authentic deckbuilder screen.',
+      render:
+        'A 2020 PC frame at 1920 by 1080: a vertical stack of train floors with cartoon demons, a fan of blank cards along the bottom.',
       key: 'Monster Train stacked floors; pyre; demon cards',
     }),
     ga('SP12-038', 'World of Warships 2015 - Wargaming Naval Broadside', {
       look: 'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera.',
       subject: 'render vessels as detailed realistic warships seen from a third-person camera.',
       color: 'Steel grey, ocean blue and tracer orange.',
-      light: 'Stormy daylight with muzzle flashes.',
-      texture: 'Realistic hulls, water spray and smoke.',
+      light: 'Stormy grey daylight with muzzle flashes and orange shell trails.',
+      texture:
+        'Realistic hulls, white water spray and black gun smoke, slightly soft in the distance.',
       camera: 'Third-person naval camera.',
       mood: 'thunderous naval clash',
-      render: 'Authentic naval combat screen.',
+      render:
+        'A 2015 PC frame at 1920 by 1080 from a camera behind the ship: shell arcs, a minimap square and ship bar shapes at the bottom.',
       key: 'World of Warships broadside; tracers; naval camera',
     }),
     ga('SP12-052', 'Overwatch 2016 - Blizzard Hero Payload', {
@@ -83,11 +94,12 @@ const spec: Spec = {
       subject:
         'render people as colorful animated-film heroes with exaggerated readable silhouettes.',
       color: 'Bright optimistic orange, teal and sunny whites.',
-      light: 'Warm clean daylight with soft bounce.',
-      texture: 'Stylized painted PBR surfaces.',
+      light: 'Warm clean daylight with soft bounce light, colors bright and friendly.',
+      texture: 'Smooth painted surfaces, clean readable shapes and chunky colorful costumes.',
       camera: 'First-person view with a stylized weapon.',
       mood: 'hopeful team heroics',
-      render: 'Authentic hero shooter screen.',
+      render:
+        'A 2016 first-person frame at 1920 by 1080: a chunky colorful weapon in hand, teammates ahead, an ability icon row at the bottom.',
       key: 'Overwatch animated-film heroes; payload; bright maps',
       avoid: ['existing Overwatch heroes'],
     }),
@@ -97,10 +109,12 @@ const spec: Spec = {
         'render people as detailed dark pixel sprites in religious robes, thorns and baroque armor.',
       color: 'Bone white, dried blood red, candle gold and black stone.',
       light: 'Candle halos and stained-glass shafts in deep shadow.',
-      texture: 'Dense detailed pixel art with baroque ornament.',
+      texture:
+        'Dense detailed pixel art with baroque gold ornament, thorns and robes, crisp square pixels throughout.',
       camera: 'Side-view metroidvania frame.',
       mood: 'penitent grotesque solemnity',
-      render: 'Authentic dark pixel metroidvania screen.',
+      render:
+        'A 2019 side-view frame at 640 by 360 scaled up: dark pixel cathedral, a small penitent sprite, a thorned bar shape top left.',
       key: 'Blasphemous pixels; Holy Week; baroque grotesque',
       avoid: ['a penitent in a tall spiked capirote helm'],
     }),
@@ -109,33 +123,37 @@ const spec: Spec = {
       subject:
         'render people as tiny painted steampunk soldiers and colonists facing massive hordes.',
       color: 'Steampunk brass, fog grey and night blue.',
-      light: 'Night fog with turret flashes.',
-      texture: 'Detailed painted isometric 2D.',
+      light: 'Night fog with turret muzzle flashes and small lamp glows.',
+      texture: 'Detailed painted 2D buildings and tiny units seen from high on a diagonal.',
       camera: 'Isometric strategy view.',
       mood: 'desperate horde defense',
-      render: 'Authentic isometric RTS screen.',
+      render:
+        'A 2019 PC frame at 1920 by 1080: tiny colony walls, a vast grey horde massing in fog, resource shapes at the top.',
       key: 'They Are Billions hordes; steampunk walls; isometric',
     }),
     ga('SP12-076', 'Northgard 2018 - Shiro Norse Isometric Clans', {
       look: 'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures.',
       subject: 'render people as chunky stylized Norse villagers and warriors.',
       color: 'Snow white, aurora green and warm hearth orange.',
-      light: 'Soft winter light and aurora glow.',
-      texture: 'Stylized painted low-poly surfaces.',
+      light: 'Soft winter light with green aurora glow on snow.',
+      texture:
+        'Chunky simple shapes with soft painted colors and no fine detail, rounded roofs and trees.',
       camera: 'Isometric strategy view.',
       mood: 'hardy clan survival',
-      render: 'Authentic stylized strategy screen.',
+      render:
+        'A 2018 PC frame at 1920 by 1080 from a high diagonal: small Norse village in snow, resource shapes at the top.',
       key: 'Northgard isometric; Norse clans; aurora',
     }),
     ga('SP12-079', 'Helldivers 2 2024 - Arrowhead Orbital Drop', {
       look: 'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies.',
       subject: 'render people as armored troopers in heavy helmets and capes.',
       color: 'Fire orange, alien acid and military yellow.',
-      light: 'Burning skies and bright orbital strikes.',
-      texture: 'Gritty armor, dust and explosions.',
+      light: 'Burning orange skies and bright white orbital strike flashes.',
+      texture: 'Gritty armor, dust clouds and alien bug carapace, with heavy particle smoke.',
       camera: 'Third-person over-the-shoulder view.',
       mood: 'chaotic satirical heroism',
-      render: 'Authentic modern co-op shooter screen.',
+      render:
+        'A 2024 frame at 1920 by 1080 in third person over the shoulder: trooper firing at a bug swarm, a small compass strip at the top.',
       key: 'Helldivers orbital drop; bug swarm; beacons',
       avoid: ['existing Helldiver armor and insignia'],
     }),
@@ -143,44 +161,49 @@ const spec: Spec = {
       look: 'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects.',
       subject: 'render people as comic stylized cartoon defenders facing cartoon hordes.',
       color: 'Warm torch orange, stone grey and goblin green.',
-      light: 'Torch light and trap flashes.',
-      texture: 'Stylized painted 3D surfaces.',
+      light: 'Warm torch light and bright trap flashes in stone halls.',
+      texture: 'Chunky stylized painted 3D, exaggerated cartoon orcs and simple stone walls.',
       camera: 'Third-person view behind the defender.',
       mood: 'gleeful horde defense',
-      render: 'Authentic stylized trap-defense screen.',
+      render:
+        'A 2011 frame at 1920 by 1080 in third person: defender facing a cartoon horde in a hallway, trap icon row at the bottom.',
       key: 'Orcs Must Die hordes; trap defense; comic stylized',
     }),
     ga('SP12-130', 'Battlefield 1 2016 - DICE Great War Trenches', {
       look: 'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting.',
       subject: 'render people as Great War soldiers in wool uniforms, helmets and gas masks.',
       color: 'Mud brown, smoke grey and sepia sky.',
-      light: 'Cinematic haze and flare glow.',
-      texture: 'Mud, wire, wood and wool.',
+      light: 'Hazy grey daylight with flare glow and smoke columns.',
+      texture: 'Mud, barbed wire, wood and wool, sharp nearby and dissolving into smoke beyond.',
       camera: 'First-person view over a trench lip.',
       mood: 'harrowing wartime dread',
-      render: 'Authentic Frostbite first-person war screen.',
+      render:
+        'A 2016 first-person frame at 1920 by 1080: rifle at bottom right, trench and smoke, a small compass and minimap shape.',
       key: 'Battlefield 1 trenches; mud; smoke; war machines',
     }),
     ga('SP12-131', 'Chivalry 2 2021 - Torn Banner Siege Crew', {
       look: 'Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners.',
       subject: 'render people as grubby medieval soldiers and siege crews in padded jackets.',
       color: 'Banner red, siege fire orange and stone grey.',
-      light: 'Bright day with fire glow.',
-      texture: 'Mud, wood, leather and smoke.',
+      light: 'Bright daylight with fire glow and drifting smoke.',
+      texture: 'Mud, wood, leather and smoke, slightly soft game-engine detail.',
       camera: 'First-person view behind siege engines.',
       mood: 'rowdy medieval chaos',
-      render: 'Authentic medieval melee screen.',
+      render:
+        'A 2021 first-person frame at 1920 by 1080: a raised weapon at bottom right, siege crews and burning castle walls, bar shapes bottom left.',
       key: 'Chivalry 2 siege; catapults; burning castles',
     }),
     ga('SP12-132', 'Battle for Wesnoth 2005 - Wesnoth Painted Hex', {
       look: 'Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes.',
       subject: 'render people as small painted fantasy unit sprites standing on hexes.',
       color: 'Painted greens, river blue and parchment.',
-      light: 'Even top light on painted terrain.',
-      texture: 'Painted hex tiles and sprite detail.',
+      light: 'Even top light on painted hex terrain.',
+      texture:
+        'Painted hex tiles of forest, water and hills, small crisp painted unit sprites standing on them.',
       camera: 'Top-down hex map view.',
       mood: 'thoughtful tactical campaign',
-      render: 'Authentic painted hex strategy screen.',
+      render:
+        'A 2005 PC frame at 1024 by 768: hex map with units and a side panel of blank boxes at the right.',
       key: 'Wesnoth painted hexes; unit sprites; fantasy map',
     }),
     ga('SP12-133', 'Resident Evil 7 2017 - Capcom Louisiana Farmhouse', {
@@ -188,11 +211,12 @@ const spec: Spec = {
       subject:
         'render people as ordinary survivors in dirty everyday clothes, seen from first person.',
       color: 'Rotting brown, humid green and flashlight white.',
-      light: 'Flashlight beam in heavy darkness.',
-      texture: 'Photoreal rot, mold and wood.',
+      light: 'A narrow flashlight beam in heavy darkness, everything outside it lost in black.',
+      texture: 'Photoreal rot, mold and wet wood, grainy in the dark areas.',
       camera: 'First-person view at boarded windows.',
       mood: 'humid claustrophobic terror',
-      render: 'Authentic modern first-person horror screen.',
+      render:
+        'A 2017 first-person frame at 1920 by 1080: a hand holding a flashlight at the bottom, dark farmhouse hallway, no other interface.',
       key: 'RE7 farmhouse; photoreal rot; flashlight',
       avoid: ['existing Baker family members'],
     }),
@@ -200,11 +224,12 @@ const spec: Spec = {
       look: 'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports.',
       subject: 'render people as chunky armored soldiers under a burning alien sky.',
       color: 'Burning orange sky, steel grey and plasma blue.',
-      light: 'Fire glow with plasma flashes.',
-      texture: 'Chunky armor and scorched metal.',
+      light: 'Orange fire glow across the sky with blue plasma flashes.',
+      texture: 'Chunky armor plates and scorched metal, clean but simple shapes.',
       camera: 'First-person view at a landing pad.',
       mood: 'doomed heroic sacrifice',
-      render: 'Authentic Xbox 360 shooter screen.',
+      render:
+        'A 2010 Xbox 360 first-person frame at 1280 by 720: a rifle at bottom right, burning skyline, a small radar circle bottom left.',
       key: 'Halo Reach last stand; burning sky; evacuation',
       avoid: ['green armored super-soldier with gold visor', 'existing Covenant species'],
     }),
@@ -212,11 +237,12 @@ const spec: Spec = {
       look: 'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units.',
       subject: 'render every subject as a tiny chunky exaggerated cartoon unit.',
       color: 'Bright grass green, blue and red teams.',
-      light: 'Bright flat cartoon daylight.',
-      texture: 'Glossy chunky cartoon 3D.',
+      light: 'Bright flat cartoon daylight with little shadow.',
+      texture: 'Glossy chunky cartoon shapes with huge heads and tiny bodies.',
       camera: 'Top-down arena view.',
       mood: 'cheeky competitive chaos',
-      render: 'Authentic mobile cartoon arena screen.',
+      render:
+        'A 2016 phone frame, tall portrait: arena seen from above, two lanes and bridges, a row of blank cards at the bottom.',
       key: 'Clash Royale arena; chunky cartoon; lanes',
       avoid: ['existing Clash units'],
       briefs: [
@@ -229,33 +255,38 @@ const spec: Spec = {
       look: 'Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape.',
       subject: 'render people as tiny busy medieval peasants and soldiers from above.',
       color: 'Pastoral green, stone grey and thatch gold.',
-      light: 'Soft daylight on isometric terrain.',
-      texture: 'Pre-rendered isometric sprites.',
+      light: 'Soft daylight on a diagonal map with small crisp shadows.',
+      texture:
+        'Tiny rendered-then-shrunk sprites of peasants and buildings, grainy grass and stone.',
       camera: 'Isometric castle overview.',
       mood: 'industrious medieval siege',
-      render: 'Authentic early-2000s castle sim screen.',
+      render:
+        'A 2001 PC frame at 1024 by 768 from a high diagonal: tiny busy castle, a carved panel of blank buttons at the bottom.',
       key: 'Stronghold isometric; tiny peasants; castle walls',
     }),
     ga('SP12-137', 'Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry', {
       look: 'TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains.',
       subject: 'render people as medieval riders and infantry in mail and cloth.',
       color: 'Sunset gold, dust brown and banner colors.',
-      light: 'Low sun through dust.',
-      texture: 'Realistic mail, cloth and dust.',
+      light: 'Low sun through thick dust, warm backlight on riders.',
+      texture: 'Realistic mail, cloth and dust, slightly soft detail on distant troops.',
       camera: 'Low third-person battle view.',
       mood: 'thunderous medieval clash',
-      render: 'Authentic medieval battle screen.',
+      render:
+        'A 2020 frame at 1920 by 1080 in third person from horseback: massed battle, a compass strip at the top and bar shapes bottom left.',
       key: 'Bannerlord cavalry; massed battle; dust',
     }),
     ga('SP12-138', 'Valkyria Chronicles 2008 - Sega Canvas Watercolor War', {
       look: 'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses.',
       subject: 'render people as anime soldiers with sketchy watercolor shading.',
       color: 'Soft watercolor snow, olive and sepia.',
-      light: 'Watercolor wash light with paper grain.',
-      texture: 'Pencil hatching over watercolor paper.',
+      light: 'Watercolor wash light with paper grain visible over the whole image.',
+      texture:
+        'Pencil hatching over watercolor paper laid onto 3D, ink outlines on soldiers and tanks.',
       camera: 'Third-person tactical view.',
       mood: 'bittersweet wartime tactics',
-      render: 'Authentic watercolor strategy screen.',
+      render:
+        'A 2008 PlayStation 3 frame at 1280 by 720: sketchy watercolor battlefield, a small command bar shape at the bottom.',
       key: 'Valkyria CANVAS watercolor; hatching; iron fortresses',
       avoid: ['a blue-haired Valkyria with a lance and shield'],
     }),

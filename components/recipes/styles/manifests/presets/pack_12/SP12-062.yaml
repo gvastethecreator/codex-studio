@@ -7,7 +7,7 @@ styleAnchors:
   - Yakuza Neon Koi District
 displayName: Yakuza 0 2015 - RGG Kamurocho Street Brawl
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,10 +27,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic Japanese city characters in suits and street clothes, with heat aura glow during brawls. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Red lantern glow, neon sign color and warm wet asphalt.
   lighting_and_shadow: Dense sign light, lantern glow and bright heat-action flashes.
-  texture_and_material: Realistic PS4-era textures of wet streets, suits and signage.
+  texture_and_material: "Wet reflective streets, crisp suits and dense glowing sign clusters, detailed up close but slightly soft in the distance."
   camera_and_composition: Third-person brawl view in a crowded street ring.
   atmosphere_and_mood: Keep the requested mood with melodramatic street-fight bravado.
-  rendering_and_quality: Authentic PS4 third-person brawler screen, matching real Yakuza 0 2015 screenshots.
+  rendering_and_quality: "A 2015 PlayStation 4 frame at 1920 by 1080 in third person: fighters with a colored aura, a health bar and heat gauge shapes top left."
   key_features: Yakuza nightlife streets; heat aura; red lanterns; brawls
   creative_brief: 'Ryu Ga Gotoku Studio Yakuza 0 (2015) look: realistic third-person brawling in dense Japanese nightlife streets of 1988, red lanterns, crowded signs, heat actions and melodramatic heat aura glow. Carry it through Yakuza nightlife streets, heat aura, red lanterns, brawls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

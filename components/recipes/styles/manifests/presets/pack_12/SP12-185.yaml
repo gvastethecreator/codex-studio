@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Alone in the Dark 1992 - Infogrames Polygon Manor
 category: 9. Gothic & Dungeon Gameplay
 domain: classic survival horror gameplay
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as flat-shaded blocky polygon figures. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as figures built from a few flat-colored untextured blocks, with simple dot faces, standing in painted rooms. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Muted manor browns and gloom, true to the Alone in the Dark 1992 palette.
-  lighting_and_shadow: Painted gloom light, lit the way Alone in the Dark 1992 lights its levels.
-  texture_and_material: Flat polygons over painted art, with the in-engine surface finish of Alone in the Dark 1992.
+  lighting_and_shadow: "Gloomy light painted into the still room backgrounds, figures lit with flat solid colors."
+  texture_and_material: "Flat solid-color blocky figures with no texture, pasted over detailed hand-painted manor rooms."
   camera_and_composition: Fixed high angle, framed the way Alone in the Dark 1992 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with Lovecraftian manor dread.
-  rendering_and_quality: Authentic early-nineties 3D horror screen, matching real Alone in the Dark 1992 screenshots.
-  creative_brief: 'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark polygons, painted manor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Alone in the Dark polygons; painted manor
+  rendering_and_quality: "A 1992 PC VGA frame at 320 by 200 from a fixed high camera: chunky pixels, blocky figure in a painted room."
+  creative_brief: "Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark flat-colored block figures, painted manor rooms, fixed camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "Alone in the Dark flat-colored block figures; painted manor rooms; fixed camera"
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text

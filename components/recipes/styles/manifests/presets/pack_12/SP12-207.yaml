@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Silent Hill 1999 - Team Silent PS1 Fog
 category: 11. Psychological & Tactical Gameplay
 domain: foggy town horror gameplay
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,16 +22,16 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 figures in the fog. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "Team Silent Silent Hill (1999) look: PlayStation horror with thick fog hiding a tiny draw distance, crackling radio, blocky town streets, darkness and heavy grain."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky figures with simple smeared faces, half lost in a grey fog wall. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: White fog and rust, true to the Silent Hill 1999 palette.
-  lighting_and_shadow: Fog and flashlight cone, lit the way Silent Hill 1999 lights its levels.
-  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Silent Hill 1999.
+  lighting_and_shadow: "Thick grey fog that swallows everything a few steps away, a flashlight cone at night."
+  texture_and_material: "Blurry textures that wobble on simple boxy streets and buildings, grain over everything."
   camera_and_composition: Third-person fog view, framed the way Silent Hill 1999 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with unknowable foggy dread.
-  rendering_and_quality: Authentic PS1 horror screen, matching real Silent Hill 1999 screenshots.
-  creative_brief: 'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight. Carry it through Silent Hill 1999 fog, low-poly, radio. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Silent Hill 1999 fog; low-poly; radio
+  rendering_and_quality: "A 1999 PlayStation frame at 320 by 240 on a CRT: soft, jagged and foggy, a static crackle of grain."
+  creative_brief: "Team Silent Silent Hill (1999) look: PlayStation horror with thick fog hiding a tiny draw distance, crackling radio, blocky town streets, darkness and heavy grain. Carry it through Silent Hill 1999 fog wall, blocky figures, grainy soft PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "Silent Hill 1999 fog wall; blocky figures; grainy soft PS1"
 avoidRules:
   - a pyramid-helmeted executioner
   - readable signs

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Prey 2017 - Arkane Talos Zero-G
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: zero gravity space station screenshot
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as station crew in jumpsuits floating in zero gravity. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Neo-deco gold, walnut wood and space black, true to the Prey 2017 palette.
-  lighting_and_shadow: Warm station light with cold space glow, lit the way Prey 2017 lights its levels.
-  texture_and_material: Polished deco panels, walnut and brushed metal, with the in-engine surface finish of Prey 2017.
+  lighting_and_shadow: "Warm station lighting on wood and brass against the cold glow of space."
+  texture_and_material: "Polished neo-deco panels, walnut and brushed metal, clean and slightly soft."
   camera_and_composition: First-person drifting view, framed the way Prey 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with paranoid weightless unease.
-  rendering_and_quality: Authentic immersive-sim screen, matching real Prey 2017 screenshots.
+  rendering_and_quality: "A 2017 first-person frame at 1920 by 1080: a wrench in hand, crew floating in a station lobby, small bar shapes bottom left."
   creative_brief: 'Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows. Carry it through Prey neo-deco station, zero gravity, alien shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Prey neo-deco station; zero gravity; alien shadows
 avoidRules:

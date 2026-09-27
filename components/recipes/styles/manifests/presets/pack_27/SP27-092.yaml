@@ -9,7 +9,7 @@ styleAnchors:
 displayName: StarCraft 1998 - Blizzard Sci-Fi RTS
 category: 5. Video Games 90s
 domain: nineties strategy game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - starcraft
   - reference-title
 visualDna:
-  aesthetic: 'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface.'
+  aesthetic: "Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as tiny units seen from a high diagonal angle on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Dark space blue, alien purple and industrial grey.
   lighting_and_shadow: "Shaded tiny units with bright glints on dark rocky or alien-creep ground."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Isometric RTS view with interface, framed the way StarCraft 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense sci-fi warfare.
   rendering_and_quality: "A 1998 PC frame at 640 by 480: small crisp pixel units, a minimap box and command panel shapes along the bottom."
-  creative_brief: 'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface. Carry it through StarCraft isometric units, alien creep, RTS interface. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel. Carry it through StarCraft tiny units, diagonal view, alien creep, bottom command panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "StarCraft tiny units; diagonal view; alien creep; bottom command panel"
 avoidRules:
   - existing faction units

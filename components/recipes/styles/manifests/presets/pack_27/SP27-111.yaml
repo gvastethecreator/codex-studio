@@ -9,7 +9,7 @@ styleAnchors:
 displayName: World of Warcraft 2004 - Blizzard Painted Chunky Fantasy
 category: 6. Video Games 2000s
 domain: two-thousands PC online game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - wow-vanilla
   - reference-title
 visualDna:
-  aesthetic: 'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes.'
+  aesthetic: "Blizzard World of Warcraft (2004) look: blurry hand-painted textures on chunky simple shapes, oversized shoulder pads and weapons, saturated fantasy zones."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with chunky cartoon proportions and oversized gear painted in hand-painted textures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated forest green, twilight purple and gold, true to the World of Warcraft 2004 palette.
   lighting_and_shadow: "Soft painted sky light, with shadows painted straight into the textures rather than cast."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Third-person over-the-shoulder view, framed the way World of Warcraft 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cozy epic fantasy.
   rendering_and_quality: "A 2004 PC frame at 1024 by 768: soft painted textures, simple geometry, fog at mid distance and small bar shapes at the bottom."
-  creative_brief: 'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Blizzard World of Warcraft (2004) look: blurry hand-painted textures on chunky simple shapes, oversized shoulder pads and weapons, saturated fantasy zones. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: WoW hand-painted; chunky proportions; saturated zones
 avoidRules:
   - existing races and faction crests

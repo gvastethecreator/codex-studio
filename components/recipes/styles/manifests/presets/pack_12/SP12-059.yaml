@@ -7,7 +7,7 @@ styleAnchors:
   - Dota Prismatic Hero Draft Arena
 displayName: Dota 2 2013 - Valve Painted MOBA
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized painted fantasy heroes with glowing abilities. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Radiant green versus dire red earth, true to the Dota 2 2013 palette.
-  lighting_and_shadow: Painted light with ability glows, lit the way Dota 2 2013 lights its levels.
-  texture_and_material: Hand-painted stylized textures, with the in-engine surface finish of Dota 2 2013.
+  lighting_and_shadow: "Painted light with bright spell glows over lanes and trees."
+  texture_and_material: "Hand-painted stylized textures on chunky heroes and buildings, seen from above."
   camera_and_composition: Isometric MOBA view, framed the way Dota 2 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with fierce competitive clash.
-  rendering_and_quality: Authentic MOBA screen, matching real Dota 2 2013 screenshots.
+  rendering_and_quality: "A 2013 PC frame at 1920 by 1080 from a high angle: three lanes, small heroes and creep waves, a minimap square and ability row at the bottom."
   key_features: Dota 2 painted lanes; towers; creep waves
   creative_brief: 'Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures. Carry it through Dota 2 painted lanes, towers, creep waves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Geometry Wars 2003 - Bizarre Creations Neon Grid
 category: 1. Neon Urban & Night Ops
 domain: overhead neon shooter game screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a glowing neon vector shape or ship seen from directly above. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black void with neon cyan, magenta, green and yellow glow.
-  lighting_and_shadow: Self-lit glowing vector lines and particle bursts, lit the way Geometry Wars 2003 lights its levels.
-  texture_and_material: Clean vector lines, bloom and particle sparks, with the in-engine surface finish of Geometry Wars 2003.
+  lighting_and_shadow: "Every shape glows from its own thin bright lines, with soft halos and bursts of sparks on black."
+  texture_and_material: "Thin glowing vector outlines, a warping grid and showers of glowing square particles."
   camera_and_composition: Top-down arena view over a warping grid, framed the way Geometry Wars 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with hypnotic bullet frenzy.
-  rendering_and_quality: Authentic neon vector twin-stick shooter screen, matching real Geometry Wars 2003 screenshots.
+  rendering_and_quality: "A 2003 frame at 640 by 480 seen straight down: glowing shapes swarming a small claw ship over a bending grid."
   creative_brief: 'Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies. Carry it through Geometry Wars neon grid, vector shapes, particle bloom. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Geometry Wars neon grid; vector shapes; particle bloom
 avoidRules:

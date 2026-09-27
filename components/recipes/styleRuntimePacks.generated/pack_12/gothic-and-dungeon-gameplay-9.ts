@@ -196,15 +196,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed painterly pixel heroes seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm torch amber, crypt teal and spell glow.',
-      lighting_and_shadow:
-        'Pixel torchlight and spell glow, lit the way Children of Morta 2019 lights its levels.',
+      lighting_and_shadow: 'Warm pixel torchlight pools and bright spell glow in dark crypts.',
       texture_and_material:
-        'Painterly pixel art, with the in-engine surface finish of Children of Morta 2019.',
+        'Painterly pixel art with soft color clusters and detailed hand-placed shading, seen from above.',
       camera_and_composition:
         'Top-down roguelite view, framed the way Children of Morta 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with warm heroic struggle.',
       rendering_and_quality:
-        'Authentic pixel roguelite screen, matching real Children of Morta 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 of scaled pixels: small heroes in a crypt from above, portrait and bar shapes in a corner.',
       creative_brief:
         "Dead Mage Children of Morta (2019) look: top-down action roguelite in detailed painterly pixel art, family of heroes, crypts and caves with glowing spell effects. Carry it through Children of Morta pixels, crypts, spell glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Children of Morta pixels; crypts; spell glow',
@@ -234,14 +233,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Moonlit grey, rust and blood red, true to the Salt and Sanctuary 2016 palette.',
       lighting_and_shadow:
-        'Stained moonlight and shadows, lit the way Salt and Sanctuary 2016 lights its levels.',
+        'Stained pale moonlight with deep flat shadows, lit the way Salt and Sanctuary 2016 lights its levels.',
       texture_and_material:
-        'Hand-drawn inked textures, with the in-engine surface finish of Salt and Sanctuary 2016.',
+        'Thick hand-drawn ink lines, muted flat colors and grim scratchy detail.',
       camera_and_composition:
         'Side-view castle view, framed the way Salt and Sanctuary 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grim gothic dread.',
       rendering_and_quality:
-        'Authentic hand-drawn action screen, matching real Salt and Sanctuary 2016 screenshots.',
+        'A 2016 side-view frame at 1920 by 1080: grim inked warrior facing a huge boss, bar shapes top left.',
       creative_brief:
         "Ska Studios Salt and Sanctuary (2016) look: side-view hand-drawn grim fantasy, thick-lined gothic characters, towering bosses and moody castle halls. Carry it through Salt and Sanctuary hand-drawn, side-view, bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Salt and Sanctuary hand-drawn; side-view; bosses',
@@ -270,15 +269,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and monsters in stone corridors seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Torch amber, stone grey and moss green, true to the Legend of Grimrock 2012 palette.',
-      lighting_and_shadow:
-        'Torchlight in stone corridors, lit the way Legend of Grimrock 2012 lights its levels.',
+      lighting_and_shadow: 'Flickering torchlight fading quickly into dark stone corridors.',
       texture_and_material:
-        'Detailed stone and iron, with the in-engine surface finish of Legend of Grimrock 2012.',
+        'Detailed stone blocks and iron gates with slightly soft repeating textures.',
       camera_and_composition:
         'First-person grid view, framed the way Legend of Grimrock 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with claustrophobic dungeon tension.',
       rendering_and_quality:
-        'Authentic dungeon crawler screen, matching real Legend of Grimrock 2012 screenshots.',
+        'A 2012 first-person frame at 1920 by 1080: a square grid corridor, four party portrait boxes at the right edge.',
       creative_brief:
         "Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters. Carry it through Grimrock grid dungeon, torches, stone corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Grimrock grid dungeon; torches; stone corridors',
@@ -308,14 +306,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Golden light, ash grey and flame orange, true to the Elden Ring 2022 palette.',
       lighting_and_shadow:
-        'Golden tree glow and fire, lit the way Elden Ring 2022 lights its levels.',
+        'Golden light from a giant glowing tree in the sky, with fire glow below.',
       texture_and_material:
-        'Weathered stone and armor, with the in-engine surface finish of Elden Ring 2022.',
+        'Weathered stone and mixed armor, detailed but slightly soft in the distance.',
       camera_and_composition:
         'Third-person lock-on view, framed the way Elden Ring 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with epic desperate duel.',
       rendering_and_quality:
-        'Authentic modern dark fantasy screen, matching real Elden Ring 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 in third person: warrior facing a giant boss, bar shapes top left and a lock-on dot.',
       creative_brief:
         "FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels. Carry it through Elden Ring bosses, golden light, lock-on. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Elden Ring bosses; golden light; lock-on',
@@ -344,15 +342,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small pixel gunslingers seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Dungeon grey and neon bullet colors, true to the Enter the Gungeon 2016 palette.',
-      lighting_and_shadow:
-        'Pixel light with bullet glow, lit the way Enter the Gungeon 2016 lights its levels.',
-      texture_and_material:
-        'Detailed pixel art, with the in-engine surface finish of Enter the Gungeon 2016.',
+      lighting_and_shadow: 'Flat pixel light with bright glowing bullet dots everywhere.',
+      texture_and_material: 'Detailed crisp pixel sprites and dungeon tiles seen from above.',
       camera_and_composition:
         'Top-down dungeon view, framed the way Enter the Gungeon 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with frantic bullet chaos.',
       rendering_and_quality:
-        'Authentic pixel bullet-hell screen, matching real Enter the Gungeon 2016 screenshots.',
+        'A 2016 frame at 480 by 270 scaled up: small gunslinger sprite dodging a bullet-hell pattern, heart shapes top left.',
       creative_brief:
         "Dodge Roll Enter the Gungeon (2016) look: top-down pixel bullet hell dungeon, gun puns, bullet-shaped enemies, spirals of glowing projectiles and dodge rolls. Carry it through Gungeon pixel bullets, top-down, bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gungeon pixel bullets; top-down; bosses',
@@ -380,14 +376,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as four color-coded dungeon heroes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Hero red, blue, green and gold, true to the Gauntlet 2014 palette.',
-      lighting_and_shadow: 'Dungeon torchlight, lit the way Gauntlet 2014 lights its levels.',
+      lighting_and_shadow:
+        'Warm dungeon torchlight with glowing magic hits, lit the way Gauntlet 2014 lights its levels.',
       texture_and_material:
-        'Stylized stone and gear, with the in-engine surface finish of Gauntlet 2014.',
+        'Chunky stylized stone, gear and swarming monsters seen from a high angle.',
       camera_and_composition:
         'Isometric co-op view, framed the way Gauntlet 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic co-op fun.',
       rendering_and_quality:
-        'Authentic co-op dungeon screen, matching real Gauntlet 2014 screenshots.',
+        'A 2014 frame at 1920 by 1080: four color-coded heroes in a dungeon, four portrait shapes at the corners.',
       creative_brief:
         "Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure. Carry it through Gauntlet co-op, four heroes, swarms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gauntlet co-op; four heroes; swarms',
@@ -413,20 +410,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as flat-shaded blocky polygon figures. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as figures built from a few flat-colored untextured blocks, with simple dot faces, standing in painted rooms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted manor browns and gloom, true to the Alone in the Dark 1992 palette.',
       lighting_and_shadow:
-        'Painted gloom light, lit the way Alone in the Dark 1992 lights its levels.',
+        'Gloomy light painted into the still room backgrounds, figures lit with flat solid colors.',
       texture_and_material:
-        'Flat polygons over painted art, with the in-engine surface finish of Alone in the Dark 1992.',
+        'Flat solid-color blocky figures with no texture, pasted over detailed hand-painted manor rooms.',
       camera_and_composition:
         'Fixed high angle, framed the way Alone in the Dark 1992 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with Lovecraftian manor dread.',
       rendering_and_quality:
-        'Authentic early-nineties 3D horror screen, matching real Alone in the Dark 1992 screenshots.',
+        'A 1992 PC VGA frame at 320 by 200 from a fixed high camera: chunky pixels, blocky figure in a painted room.',
       creative_brief:
-        "Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark polygons, painted manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Alone in the Dark polygons; painted manor',
+        "Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark flat-colored block figures, painted manor rooms, fixed camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'Alone in the Dark flat-colored block figures; painted manor rooms; fixed camera',
     },
     ui: {
       previewStatus: 'pending',
@@ -447,23 +445,22 @@ export const GENERATED_STYLE_PRESETS = [
       'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards.',
+        'Looking Glass Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and boxy blocky guards.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly guards and thieves. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky guards and thieves with simple faces and stiff limbs, mostly lost in shadow. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Deep shadow and lantern amber, true to the Thief The Dark Project 1998 palette.',
       lighting_and_shadow:
-        'Light gem darkness, lit the way Thief The Dark Project 1998 lights its levels.',
-      texture_and_material:
-        'Low-resolution stone and wood, with the in-engine surface finish of Thief The Dark Project 1998.',
+        'Deep darkness broken by warm lantern pools, most of the screen near black.',
+      texture_and_material: 'Blurry low-detail stone and wood textures on boxy architecture.',
       camera_and_composition:
         'First-person shadow view, framed the way Thief The Dark Project 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense sneaky patience.',
       rendering_and_quality:
-        'Authentic late-nineties stealth screen, matching real Thief The Dark Project 1998 screenshots.',
+        'A 1998 PC frame at 640 by 480 in first person: dark gothic street, a glowing gem-shaped light meter at the bottom center.',
       creative_brief:
-        "Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards. Carry it through Thief shadows, lanterns, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Thief shadows; lanterns; gothic city',
+        "Looking Glass Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and boxy blocky guards. Carry it through Thief deep shadows, lantern pools, boxy gothic city, light gem. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Thief deep shadows; lantern pools; boxy gothic city; light gem',
     },
     ui: {
       previewStatus: 'pending',
@@ -489,14 +486,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty 1895 bounty hunters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Fog grey, swamp green and lamplight, true to the Hunt Showdown 2019 palette.',
-      lighting_and_shadow: 'Foggy dusk, lit the way Hunt Showdown 2019 lights its levels.',
-      texture_and_material:
-        'Realistic wood and mud, with the in-engine surface finish of Hunt Showdown 2019.',
+      lighting_and_shadow:
+        'Foggy dusk light over a swampy bayou, lit the way Hunt Showdown 2019 lights its levels.',
+      texture_and_material: 'Realistic old wood, mud and period guns, grainy and a little soft.',
       camera_and_composition:
         'First-person hunting view, framed the way Hunt Showdown 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty monster hunt.',
       rendering_and_quality:
-        'Authentic hunt shooter screen, matching real Hunt Showdown 2019 screenshots.',
+        'A 2019 first-person frame at 1920 by 1080: a lever rifle at the bottom, foggy bayou, small compass strip at the top.',
       creative_brief:
         "Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting. Carry it through Hunt Showdown bayou, fog, monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hunt Showdown bayou; fog; monsters',
@@ -525,14 +522,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small cartoonish imps and heroes from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Lava orange and earth brown, true to the Dungeon Keeper 1997 palette.',
       lighting_and_shadow:
-        'Lava glow in dungeon dark, lit the way Dungeon Keeper 1997 lights its levels.',
+        'Orange lava glow in dark carved tunnels, lit the way Dungeon Keeper 1997 lights its levels.',
       texture_and_material:
-        'Chunky late-nineties textures, with the in-engine surface finish of Dungeon Keeper 1997.',
+        'Chunky blurry textures on blocky dungeon walls, small cartoon imp sprites.',
       camera_and_composition:
         'Top-down dungeon view, framed the way Dungeon Keeper 1997 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with devilishly mischievous building.',
       rendering_and_quality:
-        'Authentic late-nineties strategy screen, matching real Dungeon Keeper 1997 screenshots.',
+        'A 1997 PC frame at 640 by 480 from above: blocky dungeon rooms, tiny imps digging, a side panel of blank buttons.',
       creative_brief:
         "Bullfrog Productions Dungeon Keeper (1997) look: top-down dungeon building, imps digging rock, lava rivers, trap rooms and heroes invading. Carry it through Dungeon Keeper imps, lava, traps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Dungeon Keeper imps; lava; traps',
@@ -560,14 +557,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty Victorian dark fantasy heroes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted grey-brown with spell glows, true to the Grim Dawn 2016 palette.',
-      lighting_and_shadow: 'Grim overcast, lit the way Grim Dawn 2016 lights its levels.',
-      texture_and_material:
-        'Gritty isometric detail, with the in-engine surface finish of Grim Dawn 2016.',
+      lighting_and_shadow: 'Grim overcast grey light with sickly green spell glow.',
+      texture_and_material: 'Gritty detailed ground and ruins seen from a high diagonal.',
       camera_and_composition:
         'Isometric ARPG view, framed the way Grim Dawn 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grim desperate war.',
       rendering_and_quality:
-        'Authentic isometric ARPG screen, matching real Grim Dawn 2016 screenshots.',
+        'A 2016 PC frame at 1920 by 1080: small hero in ruins, red and blue orb shapes and a skill bar at the bottom.',
       creative_brief:
         "Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects. Carry it through Grim Dawn gritty, necromancer, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Grim Dawn gritty; necromancer; isometric',
@@ -595,14 +591,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny robed pixel wizards. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep cave dark with fire and toxic liquids.',
-      lighting_and_shadow: 'Fire and spell glow, lit the way Noita 2020 lights its levels.',
+      lighting_and_shadow: 'Bright fire and spell glow on dark pixel caverns.',
       texture_and_material:
-        'Simulated pixel particles, with the in-engine surface finish of Noita 2020.',
+        'Every pixel simulated: sand falling, water flowing and fire spreading as tiny colored pixels.',
       camera_and_composition:
         'Side-view cave view, framed the way Noita 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic alchemical danger.',
       rendering_and_quality:
-        'Authentic falling-pixel roguelite screen, matching real Noita 2020 screenshots.',
+        'A 2020 frame at 480 by 270 scaled up: tiny robed wizard sprite in a cave where pixels burn and flow.',
       creative_brief:
         "Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells. Carry it through Noita pixel physics, fire, liquids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Noita pixel physics; fire; liquids',
@@ -631,15 +627,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric pirates and ghosts. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Fog grey, ghost green and sea teal, true to the Pillars of Eternity II 2018 palette.',
-      lighting_and_shadow:
-        'Painted fog light, lit the way Pillars of Eternity II 2018 lights its levels.',
-      texture_and_material:
-        'Painted isometric scenes, with the in-engine surface finish of Pillars of Eternity II 2018.',
+      lighting_and_shadow: 'Soft painted fog light over water and ships.',
+      texture_and_material: 'Rich painted scenes seen from a high diagonal with small 3D figures.',
       camera_and_composition:
         'Isometric deck view, framed the way Pillars of Eternity II 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie piratical adventure.',
       rendering_and_quality:
-        'Authentic painted isometric RPG screen, matching real Pillars of Eternity II 2018 screenshots.',
+        'A 2018 PC frame at 1920 by 1080: painted port with small pirates and a ghost, portrait boxes at the bottom.',
       creative_brief:
         "Obsidian Entertainment Pillars of Eternity II: Deadfire (2018) look: painted isometric RPG of an archipelago, ship boarding, pirates, ghosts and rich painted scenes. Carry it through Deadfire painted isometric, pirates, ghosts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Deadfire painted isometric; pirates; ghosts',
@@ -667,15 +661,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as scratchy gothic paper cartoon survivors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: "Muted sepia and firelight, true to the Don't Starve 2013 palette.",
-      lighting_and_shadow:
-        "Campfire circle in darkness, lit the way Don't Starve 2013 lights its levels.",
-      texture_and_material:
-        "Scratchy ink and paper, with the in-engine surface finish of Don't Starve 2013.",
+      lighting_and_shadow: 'A small circle of campfire light in total darkness.',
+      texture_and_material: 'Scratchy ink lines, paper-cutout figures and grungy paper texture.',
       camera_and_composition:
         "Three-quarter overhead view, framed the way Don't Starve 2013 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with eerie gothic survival.',
       rendering_and_quality:
-        "Authentic gothic survival screen, matching real Don't Starve 2013 screenshots.",
+        'A 2013 frame at 1920 by 1080: gothic paper-cartoon survivor by a campfire, round gauge shapes top right.',
       creative_brief:
         "Klei Entertainment Don't Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests. Carry it through Don't Starve paper, campfire, shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: "Don't Starve paper; campfire; shadows",

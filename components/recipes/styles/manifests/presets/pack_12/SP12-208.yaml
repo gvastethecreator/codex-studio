@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld
 category: 11. Psychological & Tactical Gameplay
 domain: reality-shift horror gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as survivors caught between normal rooms and rust. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rust red, ash and dirty metal, true to the Silent Hill Homecoming 2008 palette.
-  lighting_and_shadow: Siren-lit darkness, lit the way Silent Hill Homecoming 2008 lights its levels.
-  texture_and_material: Peeling paper, rust and grates, with the in-engine surface finish of Silent Hill Homecoming 2008.
+  lighting_and_shadow: "Dark rooms lit by red siren light and a flashlight."
+  texture_and_material: "Peeling paper curling away to reveal rust and grates underneath."
   camera_and_composition: Third-person transition view, framed the way Silent Hill Homecoming 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with screaming nightmare shift.
-  rendering_and_quality: Authentic horror transition screen, matching real Silent Hill Homecoming 2008 screenshots.
+  rendering_and_quality: "A 2008 frame at 1280 by 720 in third person: a room mid-transformation into rust, a small flashlight cone."
   creative_brief: 'Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot. Carry it through Homecoming peeling walls, rust otherworld, sirens. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Homecoming peeling walls; rust otherworld; sirens
 avoidRules:

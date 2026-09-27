@@ -3,7 +3,7 @@ id: SP12-075
 packId: pack_12
 name: Rocket League 2015 - Psyonix Car Soccer
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as small rocket cars with boost flames. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Team blue and orange with neon arenas, true to the Rocket League 2015 palette.
-  lighting_and_shadow: Stadium lights and boost glow, lit the way Rocket League 2015 lights its levels.
-  texture_and_material: Glossy cars and arena turf, with the in-engine surface finish of Rocket League 2015.
+  lighting_and_shadow: "Bright stadium floodlights and orange boost flame glow."
+  texture_and_material: "Glossy small cars, bright turf and a huge ball, clean and sharp."
   camera_and_composition: Chase camera behind the car, framed the way Rocket League 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with boosted competitive fun.
-  rendering_and_quality: Authentic car-soccer screen, matching real Rocket League 2015 screenshots.
+  rendering_and_quality: "A 2015 frame at 1920 by 1080 behind a car: giant ball ahead, a score block shape at the top and a boost circle bottom right."
   key_features: Rocket League stadium; boost trails; giant ball
   creative_brief: 'Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors. Carry it through Rocket League stadium, boost trails, giant ball. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

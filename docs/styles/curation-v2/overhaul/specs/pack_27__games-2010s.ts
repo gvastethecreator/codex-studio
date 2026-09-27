@@ -111,7 +111,7 @@ const spec: Spec = {
       'twenty-tens adventure game',
       [...T, 'kentucky-route-zero'],
       {
-        look: 'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways.',
+        look: 'Cardboard Computer Kentucky Route Zero (2013) look: flat untextured angular shapes like a paper theater, magic realist Kentucky roads, single lamps and deep blue darkness.',
         subject:
           'show the subject as flat untextured angular figures of one or two solid colors on a theatrical stage-like set.',
         color: 'Muted night blues, warm amber pools and stark silhouettes.',
@@ -436,7 +436,7 @@ const spec: Spec = {
       'twenty-tens puzzle game',
       [...T, 'goose-game'],
       {
-        look: 'House House Untitled Goose Game (2019) look: flat pastel low-poly English village gardens, no textures, soft shadows, a mischievous goose and gentle comedic stealth.',
+        look: 'House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief.',
         subject: 'render the subject in flat pastel untextured English village gardens.',
         color: 'Soft pastel greens, cream and brick orange.',
         light: 'Soft flat daylight with gentle shadows and no strong contrast.',
@@ -459,7 +459,7 @@ const spec: Spec = {
       'twenty-tens exploration game',
       [...T, 'outer-wilds'],
       {
-        look: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.',
+        look: 'Mobius Digital Outer Wilds (2019) look: tiny walkable planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, simple smooth painted color and a twenty-two-minute cosmic loop.',
         subject:
           'show the subject on a tiny round planet you could walk around in minutes, beside a rickety wooden spacecraft.',
         color: 'Warm campfire orange, deep space blue and planet pastels.',

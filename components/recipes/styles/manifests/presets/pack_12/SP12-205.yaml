@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Ryse Son of Rome 2013 - Crytek Colosseum
 category: 10. Graphic & Feudal Gameplay
 domain: arena combat gameplay
-version: 4
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as Roman gladiators and legionaries. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sand gold, Roman red and bronze, true to the Ryse Son of Rome 2013 palette.
-  lighting_and_shadow: Hot sun and dust, lit the way Ryse Son of Rome 2013 lights its levels.
-  texture_and_material: Detailed bronze and leather, with the in-engine surface finish of Ryse Son of Rome 2013.
+  lighting_and_shadow: "Hot sun and dust in a packed arena."
+  texture_and_material: "Detailed bronze and leather, glossy and crisp, sand and blood on the arena floor."
   camera_and_composition: Third-person arena view, framed the way Ryse Son of Rome 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with roaring arena spectacle.
-  rendering_and_quality: Authentic cinematic arena screen, matching real Ryse Son of Rome 2013 screenshots.
+  rendering_and_quality: "A 2013 Xbox One frame at 1600 by 900 in third person: gladiator in the colosseum with roaring crowds, button prompt shapes."
   creative_brief: 'Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust. Carry it through Ryse colosseum, gladiators, crowds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Ryse colosseum; gladiators; crowds
 avoidRules:

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel
 category: 1. Neon Urban & Night Ops
 domain: music rhythm combat screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cel-shaded cartoon characters with thick outlines and bouncy poses. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright pop yellow, magenta, cyan and orange, true to the Hi-Fi Rush 2023 palette.
-  lighting_and_shadow: Flat cel light with halftone shadow dots, lit the way Hi-Fi Rush 2023 lights its levels.
-  texture_and_material: Cel shading, thick outlines and halftone, with the in-engine surface finish of Hi-Fi Rush 2023.
+  lighting_and_shadow: "Flat bright cartoon light with shadows made of halftone dots."
+  texture_and_material: "Thick outlines, flat bright fills, halftone dots and bouncing comic sound-effect shapes."
   camera_and_composition: Third-person action view synced to the beat, framed the way Hi-Fi Rush 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rhythmic comic exuberance.
-  rendering_and_quality: Authentic modern comic cel-shaded action screen, matching real Hi-Fi Rush 2023 screenshots.
+  rendering_and_quality: "A 2023 frame at 1920 by 1080 in third person: cel-shaded hero mid-combo, a beat pulse circle and bar shapes on screen."
   creative_brief: 'Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects. Carry it through Hi-Fi Rush cel, halftone, beat-synced world. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Hi-Fi Rush cel; halftone; beat-synced world
 avoidRules:

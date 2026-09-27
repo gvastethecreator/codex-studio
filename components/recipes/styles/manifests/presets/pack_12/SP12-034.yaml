@@ -8,7 +8,7 @@ styleAnchors:
   - Canyon Marksman Contract
 displayName: Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,11 +27,11 @@ visualDna:
   aesthetic: 'CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as distant realistic figures seen through a scope or a prone marksman. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Canyon ochre, dusty green and sky haze, true to the Sniper Ghost Warrior Contracts 2019 palette.
-  lighting_and_shadow: Hot daylight with heat haze, lit the way Sniper Ghost Warrior Contracts 2019 lights its levels.
-  texture_and_material: Realistic rock, dust and gear, with the in-engine surface finish of Sniper Ghost Warrior Contracts 2019.
+  lighting_and_shadow: "Hot hard daylight with shimmering heat haze in the distance."
+  texture_and_material: "Realistic rock, dust and gear, softened by haze across the canyon."
   camera_and_composition: First-person prone scope view, framed the way Sniper Ghost Warrior Contracts 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with patient lethal focus.
-  rendering_and_quality: Authentic tactical sniper screen, matching real Sniper Ghost Warrior Contracts 2019 screenshots.
+  rendering_and_quality: "A 2019 frame at 1920 by 1080: round black scope view with range ticks, a small figure framed across the canyon."
   key_features: Sniper contracts; scope view; canyon haze
   creative_brief: 'CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys. Carry it through Sniper contracts, scope view, canyon haze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

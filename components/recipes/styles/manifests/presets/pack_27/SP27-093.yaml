@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Crash Bandicoot 1996 - Naughty Dog Cartoon 3D
 category: 5. Video Games 90s
 domain: nineties console platformer
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Behind-the-character corridor view, framed the way Crash Bandicoot 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with zany tropical fun.
   rendering_and_quality: "A 1996 PlayStation frame at 512 by 240 on a CRT: soft, a little jagged, wooden crates and fruit along a path."
-  creative_brief: 'Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors. Carry it through Crash corridors, crates, tropical islands, cartoon 3D. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors. Carry it through Crash jungle path, crates, rubbery cartoon runner, soft PS1 image. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Crash jungle path; crates; rubbery cartoon runner; soft PS1 image"
 avoidRules:
   - an orange bandicoot in jeans

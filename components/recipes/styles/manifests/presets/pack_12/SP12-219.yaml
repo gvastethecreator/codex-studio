@@ -9,7 +9,7 @@ styleAnchors:
 displayName: STALKER Shadow of Chernobyl 2007 - GSC Zone Forest
 category: 11. Psychological & Tactical Gameplay
 domain: patient sniper duel gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stalkers in hoods and gas masks. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Grey-green mist and rust, true to the STALKER Shadow of Chernobyl 2007 palette.
-  lighting_and_shadow: Overcast mist, lit the way STALKER Shadow of Chernobyl 2007 lights its levels.
-  texture_and_material: Grimy late-2000s textures, with the in-engine surface finish of STALKER Shadow of Chernobyl 2007.
+  lighting_and_shadow: "Grey overcast mist over ruined industry, lit the way STALKER Shadow of Chernobyl 2007 lights its levels."
+  texture_and_material: "Grimy concrete and rust with blurry textures up close, dull greens and browns."
   camera_and_composition: First-person scope view, framed the way STALKER Shadow of Chernobyl 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with paranoid patient survival.
-  rendering_and_quality: Authentic late-2000s survival screen, matching real STALKER Shadow of Chernobyl 2007 screenshots.
+  rendering_and_quality: "A 2007 PC frame at 1280 by 1024 in first person: rifle at the bottom, misty Zone, a small minimap circle top left."
   creative_brief: 'GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers. Carry it through STALKER Zone, mist, anomalies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: STALKER Zone; mist; anomalies
 avoidRules:

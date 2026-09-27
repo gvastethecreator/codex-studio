@@ -7,7 +7,7 @@ styleAnchors:
   - Quake Arena Obsidian Trial
 displayName: Quake III Arena 1999 - id Software Gothic Arena
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,16 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly armored gladiators seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "id Software Quake III Arena (1999) look: fast first-person arena shooter with gothic and tech architecture, jump pads, lava pits, floating items and blocky armored gladiators."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky armored figures with simple faces and stiff limbs, seen from first person. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Gothic stone brown, lava orange and teal energy.
-  lighting_and_shadow: Colored lightmaps and glowing lava, lit the way Quake III Arena 1999 lights its levels.
-  texture_and_material: Late-nineties textures of stone and metal, with the in-engine surface finish of Quake III Arena 1999.
+  lighting_and_shadow: "Colored light baked onto walls in soft blotches, glowing orange lava and bright jump pad beams."
+  texture_and_material: "Stone and metal textures that look sharp from afar and blurry up close, curved gothic arches made of visible straight segments."
   camera_and_composition: First-person view with weapon, framed the way Quake III Arena 1999 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with frantic arena bloodsport.
-  rendering_and_quality: Authentic late-nineties arena shooter screen, matching real Quake III Arena 1999 screenshots.
-  key_features: Quake III gothic arena; jump pads; lava
-  creative_brief: 'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators. Carry it through Quake III gothic arena, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 1999 PC frame at 640 by 480 in first person: a chunky weapon at bottom center, health and ammo number shapes at the bottom."
+  key_features: "Quake III gothic arena; blocky gladiators; jump pads; lava"
+  creative_brief: "id Software Quake III Arena (1999) look: fast first-person arena shooter with gothic and tech architecture, jump pads, lava pits, floating items and blocky armored gladiators. Carry it through Quake III gothic arena, blocky gladiators, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

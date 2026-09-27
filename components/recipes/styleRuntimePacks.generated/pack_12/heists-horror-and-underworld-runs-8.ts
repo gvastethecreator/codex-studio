@@ -22,7 +22,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'First-person view with a blade hand and a power hand.',
       atmosphere_and_mood: 'Keep the requested mood with decadent plague-city intrigue.',
       rendering_and_quality:
-        'Authentic early-2010s painterly immersive-sim screen, matching real Dishonored 2012 screenshots.',
+        'A 2012 first-person frame at 1280 by 720: painted city with a blade in one hand, a glowing power in the other, bar shapes top left.',
       key_features: 'Dishonored painterly; whale-oil city; exaggerated faces',
       creative_brief:
         "Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers. Carry it through Dishonored painterly, whale-oil city, exaggerated faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -48,7 +48,7 @@ export const GENERATED_STYLE_PRESETS = [
         'First-person view through a cracked gas mask, framed the way Metro 2033 2010 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with suffocating underground dread.',
       rendering_and_quality:
-        'Authentic early-2010s survival shooter screen, matching real Metro 2033 2010 screenshots.',
+        'A 2010 first-person frame at 1280 by 720: gas-mask glass edge around the view, flashlight beam, a watch-like gauge on a wrist.',
       key_features: 'Metro tunnels; gas masks; flashlight; station towns',
       creative_brief:
         "4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants. Carry it through Metro tunnels, gas masks, flashlight, station towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -68,15 +68,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as dirty bruised explorers in practical survival gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Torch amber, wet stone grey and jungle green.',
-      lighting_and_shadow:
-        'Torch glow in dusty tomb darkness, lit the way Tomb Raider 2013 lights its levels.',
-      texture_and_material:
-        'Mud, wet stone, rope and dust, with the in-engine surface finish of Tomb Raider 2013.',
+      lighting_and_shadow: 'Torch glow in dusty tomb darkness, warm on faces and black beyond.',
+      texture_and_material: 'Mud, wet stone, rope and dust, slightly soft console-game detail.',
       camera_and_composition:
         'Third-person cinematic chase view, framed the way Tomb Raider 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty perilous survival.',
       rendering_and_quality:
-        'Authentic cinematic adventure screen, matching real Tomb Raider 2013 screenshots.',
+        'A 2013 frame at 1920 by 1080 in third person: explorer squeezing past traps in a tomb, no interface except a small ammo shape.',
       key_features: 'Tomb Raider 2013 traps; tombs; gritty survival',
       creative_brief:
         "Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces. Carry it through Tomb Raider 2013 traps, tombs, gritty survival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -96,15 +94,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as rubber-hose cartoon characters with pie-cut eyes and white gloves. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Faded 1930s watercolor palette with warm film tint.',
-      lighting_and_shadow:
-        'Flat cartoon light with vintage film grain, lit the way Cuphead 2017 lights its levels.',
+      lighting_and_shadow: 'Flat cartoon colors with warm vintage film tint and grain.',
       texture_and_material:
-        'Hand-inked lines, watercolor backgrounds and film scratches, with the in-engine surface finish of Cuphead 2017.',
+        'Hand-inked black lines, flat colors, watercolor painted backgrounds and dust and scratch marks.',
       camera_and_composition:
         'Side-view run-and-gun boss arena, framed the way Cuphead 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with jaunty frantic danger.',
       rendering_and_quality:
-        'Authentic hand-drawn boss-fight screen, matching real Cuphead 2017 screenshots.',
+        'A 2017 side-view frame at 1920 by 1080 like old cartoon film: a small hero against a huge boss, playing-card shapes bottom left.',
       key_features: 'Cuphead rubber hose; 1930s; watercolor; film grain',
       creative_brief:
         "Studio MDHR Cuphead (2017) look: hand-inked 1930s rubber-hose animation, watercolor backgrounds, film grain, run-and-gun boss fights and bouncing cartoon characters. Carry it through Cuphead rubber hose, 1930s, watercolor, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -125,21 +122,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant gothic sprites with long hair, capes and ornate clothing. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as elegant tall pixel sprites with long hair and capes, drawn with many colors and fine detail. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Moonlit indigo, blood crimson and gilded gold, true to the Symphony of the Night 1997 palette.',
-      lighting_and_shadow:
-        'Moonlight through gothic windows and candles, lit the way Symphony of the Night 1997 lights its levels.',
+      lighting_and_shadow: 'Moonlight through tall gothic windows and warm candle pixels.',
       texture_and_material:
-        'Lavish 32-bit sprite art and painted backgrounds, with the in-engine surface finish of Symphony of the Night 1997.',
+        'Lavish detailed pixel sprites over painted-looking pixel backgrounds in deep blues and reds.',
       camera_and_composition:
         'Side-view metroidvania castle view, framed the way Symphony of the Night 1997 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with elegant gothic menace.',
       rendering_and_quality:
-        'Authentic PlayStation 2D gothic screen, matching real Symphony of the Night 1997 screenshots.',
-      key_features: 'Symphony of the Night sprites; gothic castle; Kojima elegance',
+        'A 1997 PlayStation side-view frame at 256 by 240: crisp pixel castle hall, a small ornate bar shape top left.',
+      key_features: 'Symphony of the Night lavish sprites; gothic castle; moonlit halls',
       creative_brief:
-        "Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night sprites, gothic castle, Kojima elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night lavish sprites, gothic castle, moonlit halls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -155,22 +151,21 @@ export const GENERATED_STYLE_PRESETS = [
       'a blue-haired android officer with a scar, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread.',
+        'rose-engine Signalis (2022) look: survival horror deliberately made to look like an old console game, coarse pixelated textures on simple shapes, a polar facility, red emergency light and an overhead camera.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly anime android officers in uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as simple blocky anime figures with coarse pixelated faces and stiff uniforms, seen from an overhead camera. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Emergency red, cold white and black, true to the Signalis 2022 palette.',
-      lighting_and_shadow:
-        'Harsh red emergency light, lit the way Signalis 2022 lights its levels.',
+      lighting_and_shadow: 'Harsh red emergency light with deep black shadows.',
       texture_and_material:
-        'Low-poly PS1 textures with dithering, with the in-engine surface finish of Signalis 2022.',
+        'Coarse pixelated textures on simple angular shapes, fine dither dots in gradients, like an old console game.',
       camera_and_composition:
         'Fixed overhead survival horror camera, framed the way Signalis 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cold cosmic dread.',
       rendering_and_quality:
-        'Authentic retro survival horror screen, matching real Signalis 2022 screenshots.',
-      key_features: 'Signalis low-poly; red emergency; overhead camera',
+        'A 2022 frame deliberately made at 640 by 480 on a CRT look: overhead view of a cramped corridor, soft grain and jagged edges.',
+      key_features: 'Signalis coarse pixel textures; red emergency; overhead camera; retro horror',
       creative_brief:
-        "rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread. Carry it through Signalis low-poly, red emergency, overhead camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "rose-engine Signalis (2022) look: survival horror deliberately made to look like an old console game, coarse pixelated textures on simple shapes, a polar facility, red emergency light and an overhead camera. Carry it through Signalis coarse pixel textures, red emergency, overhead camera, retro horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -191,15 +186,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered 1899 outlaws in hats and long coats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset copper, canyon red and dust, true to the Red Dead Redemption 2 2018 palette.',
-      lighting_and_shadow:
-        'Naturalistic sunset light and dust, lit the way Red Dead Redemption 2 2018 lights its levels.',
+      lighting_and_shadow: 'Natural sunset light with dust glowing in the air.',
       texture_and_material:
-        'Photoreal leather, steel and dust, with the in-engine surface finish of Red Dead Redemption 2 2018.',
+        'Photoreal leather, steel, wood and dust, with sharp detail and slight softness in motion.',
       camera_and_composition:
         'Third-person action view, framed the way Red Dead Redemption 2 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty outlaw daring.',
       rendering_and_quality:
-        'Authentic modern western screen, matching real Red Dead Redemption 2 2018 screenshots.',
+        'A 2018 frame at 3840 by 2160 in third person: outlaw on a moving train, a small round minimap bottom left.',
       key_features: 'RDR2 train heist; outlaws; canyon sunset',
       creative_brief:
         "Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action. Carry it through RDR2 train heist, outlaws, canyon sunset. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -219,15 +213,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky exaggerated cartoon pirates. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Painterly teal sea, sunset gold and storm grey.',
-      lighting_and_shadow:
-        'Painterly sky light over the water, lit the way Sea of Thieves 2018 lights its levels.',
-      texture_and_material:
-        'Painterly stylized wood and cloth, with the in-engine surface finish of Sea of Thieves 2018.',
+      lighting_and_shadow: 'Painted sky light glowing on clear green-blue waves.',
+      texture_and_material: 'Chunky stylized wood and cloth, glossy painted water with foam.',
       camera_and_composition:
         'First-person view on deck, framed the way Sea of Thieves 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rollicking pirate adventure.',
       rendering_and_quality:
-        'Authentic stylized pirate screen, matching real Sea of Thieves 2018 screenshots.',
+        'A 2018 first-person frame at 1920 by 1080: hand on a ship wheel or item, cartoon pirates on deck, a small bar shape bottom left.',
       key_features: 'Sea of Thieves painterly; water; galleons',
       creative_brief:
         "Rare Sea of Thieves (2018) look: stylized painterly pirate adventure, gorgeous dynamic water, chunky exaggerated pirates, galleons, skeletons and glowing seas. Carry it through Sea of Thieves painterly, water, galleons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -248,15 +240,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as engineers in heavy industrial suits with glowing lights. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Industrial rust, emergency red and suit cyan, true to the Dead Space 2008 palette.',
-      lighting_and_shadow:
-        'Flickering dark industrial light, lit the way Dead Space 2008 lights its levels.',
-      texture_and_material:
-        'Grimy metal and biological mess, with the in-engine surface finish of Dead Space 2008.',
+      lighting_and_shadow: 'Flickering dark industrial light with red emergency lamps.',
+      texture_and_material: 'Grimy metal corridors and biological mess on walls, heavy darkness.',
       camera_and_composition:
         'Close over-the-shoulder view, framed the way Dead Space 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with isolated industrial horror.',
       rendering_and_quality:
-        'Authentic survival horror screen, matching real Dead Space 2008 screenshots.',
+        'A 2008 frame at 1280 by 720 in third person over the shoulder: a heavy suit with glowing lights on its back, no other interface.',
       key_features: 'Dead Space derelict ship; heavy suit; diegetic UI',
       creative_brief:
         "EA Redwood Shores Dead Space (2008) look: third-person survival horror on a derelict mining ship, diegetic interface on the suit, dark industrial corridors and twisted necromorphs. Carry it through Dead Space derelict ship, heavy suit, diegetic UI. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -276,15 +266,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as dieselpunk airships and analog instruments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'CRT green, desert tan and brass, true to the HighFleet 2021 palette.',
-      lighting_and_shadow:
-        'Radar glow and desert sun, lit the way HighFleet 2021 lights its levels.',
+      lighting_and_shadow: 'Green radar glow and hot desert sun through cockpit glass.',
       texture_and_material:
-        'Analog dials, CRT scanlines and riveted steel, with the in-engine surface finish of HighFleet 2021.',
+        'Analog dials, CRT scanlines on a round radar screen and riveted steel.',
       camera_and_composition:
         'Side-view battle or radar screen view, framed the way HighFleet 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cold strategic dread.',
       rendering_and_quality:
-        'Authentic dieselpunk strategy screen, matching real HighFleet 2021 screenshots.',
+        'A 2021 frame at 1920 by 1080: a bridge console with a round radar screen, dials and airships outside.',
       key_features: 'HighFleet airships; analog radar; dieselpunk',
       creative_brief:
         "Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension. Carry it through HighFleet airships, analog radar, dieselpunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -309,15 +298,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as heist crew in suits and custom masks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Alarm red, vault steel and suit black, true to the Payday 2 2013 palette.',
-      lighting_and_shadow:
-        'Flashing alarms and fluorescent bank light, lit the way Payday 2 2013 lights its levels.',
-      texture_and_material:
-        'Vault steel, suits and money, with the in-engine surface finish of Payday 2 2013.',
+      lighting_and_shadow: 'Flashing red alarms and flat white fluorescent bank light.',
+      texture_and_material: 'Vault steel, dark suits, clown-like masks and stacks of money.',
       camera_and_composition:
         'First-person view at a vault, framed the way Payday 2 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense heist adrenaline.',
       rendering_and_quality:
-        'Authentic co-op heist screen, matching real Payday 2 2013 screenshots.',
+        'A 2013 first-person frame at 1920 by 1080: gun in hand, vault door with a drill, small bar and icon shapes bottom right.',
       creative_brief:
         "Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults. Carry it through Payday vault drill, masked crew, alarms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Payday vault drill; masked crew; alarms',
@@ -341,22 +328,21 @@ export const GENERATED_STYLE_PRESETS = [
       'readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors.',
+        'Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as groovy sixties spies in mod fashion and tuxedos. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Mod orange, casino red and gold, true to the No One Lives Forever 2000 palette.',
-      lighting_and_shadow:
-        'Casino glamour lighting, lit the way No One Lives Forever 2000 lights its levels.',
+      lighting_and_shadow: 'Warm casino glamour lighting with simple flat shading.',
       texture_and_material:
-        'Early-2000s low-poly textures, with the in-engine surface finish of No One Lives Forever 2000.',
+        'Blurry textures on simple boxy walls and furniture, figures with smooth simple faces.',
       camera_and_composition:
         'First-person casino view, framed the way No One Lives Forever 2000 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with groovy spy glamour.',
       rendering_and_quality:
-        'Authentic early-2000s spy shooter screen, matching real No One Lives Forever 2000 screenshots.',
+        'A 2000 PC frame at 800 by 600 in first person: a gun at the bottom, a sixties casino of simple shapes, number shapes in the corners.',
       creative_brief:
-        "Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'NOLF sixties spy; mod fashion; casino',
     },
     ui: {
@@ -382,15 +368,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ghastly figures in grainy green night vision. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night-vision green and black, true to the Outlast 2013 palette.',
-      lighting_and_shadow:
-        'Night-vision glow with glowing eyes, lit the way Outlast 2013 lights its levels.',
-      texture_and_material:
-        'Grain, noise and camcorder blur, with the in-engine surface finish of Outlast 2013.',
+      lighting_and_shadow: 'Everything in green night-vision glow, eyes reflecting white.',
+      texture_and_material: 'Heavy grain, digital noise and camcorder blur over a dark asylum.',
       camera_and_composition:
         'Shaky first-person camcorder view, framed the way Outlast 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with helpless hunted terror.',
       rendering_and_quality:
-        'Authentic found-footage horror screen, matching real Outlast 2013 screenshots.',
+        'A 2013 first-person frame at 1920 by 1080 through a camcorder: corner brackets, a battery shape and a blinking record dot.',
       creative_brief:
         "Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons. Carry it through Outlast night vision, camcorder, asylum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Outlast night vision; camcorder; asylum',
@@ -420,14 +404,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Night blue, flashlight white and fog grey, true to the Alan Wake 2010 palette.',
       lighting_and_shadow:
-        'Single hard flashlight beam in fog, lit the way Alan Wake 2010 lights its levels.',
-      texture_and_material:
-        'Realistic wood, fog and shadow, with the in-engine surface finish of Alan Wake 2010.',
+        'A single hard flashlight beam in thick fog, everything else near black.',
+      texture_and_material: 'Realistic wood, fog and shadow, a little soft and grainy.',
       camera_and_composition:
         'Over-the-shoulder flashlight view, framed the way Alan Wake 2010 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with suspenseful psychological dread.',
       rendering_and_quality:
-        'Authentic thriller game screen, matching real Alan Wake 2010 screenshots.',
+        'A 2010 Xbox 360 frame at 1280 by 720 in third person over the shoulder: flashlight cone in foggy woods, a small battery bar shape.',
       creative_brief:
         "Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension. Carry it through Alan Wake flashlight, dark presence, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Alan Wake flashlight; dark presence; fog',
@@ -456,15 +439,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval commoners in worn wool. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Torch orange, mud brown and plague grey, true to the A Plague Tale Innocence 2019 palette.',
-      lighting_and_shadow:
-        'Torchlight rings holding back darkness, lit the way A Plague Tale Innocence 2019 lights its levels.',
-      texture_and_material:
-        'Mud, wet stone and fur, with the in-engine surface finish of A Plague Tale Innocence 2019.',
+      lighting_and_shadow: 'Rings of torchlight holding back darkness filled with rats.',
+      texture_and_material: 'Mud, wet stone, fur and a carpet of thousands of rats.',
       camera_and_composition:
         'Third-person view with torches, framed the way A Plague Tale Innocence 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with desperate medieval dread.',
       rendering_and_quality:
-        'Authentic modern adventure screen, matching real A Plague Tale Innocence 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 in third person: a girl with a torch in a sewer ringed by rats, no interface.',
       creative_brief:
         "Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers. Carry it through Plague Tale rat swarms, torchlight, sewers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Plague Tale rat swarms; torchlight; sewers',
@@ -492,13 +473,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s gangsters and detectives in fedoras. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Amber smoke, mahogany and deep green, true to the Mafia 2020 palette.',
-      lighting_and_shadow: 'Smoky amber speakeasy light, lit the way Mafia 2020 lights its levels.',
-      texture_and_material:
-        'Polished wood, glass and wool suits, with the in-engine surface finish of Mafia 2020.',
+      lighting_and_shadow:
+        'Smoky amber speakeasy light with warm lamps, lit the way Mafia 2020 lights its levels.',
+      texture_and_material: 'Polished wood, glass and wool suits, sharp and clean.',
       camera_and_composition:
         'Third-person cover view, framed the way Mafia 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with smoky gangland tension.',
-      rendering_and_quality: 'Authentic period crime screen, matching real Mafia 2020 screenshots.',
+      rendering_and_quality:
+        'A 2020 frame at 1920 by 1080 in third person: gangster in a speakeasy, a small minimap shape bottom left.',
       creative_brief:
         "Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting. Carry it through Mafia prohibition, speakeasy, amber noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Mafia prohibition; speakeasy; amber noir',
@@ -522,21 +504,22 @@ export const GENERATED_STYLE_PRESETS = [
       'car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts.',
+        'Reflections Interactive Driver (1999) look: PlayStation seventies car chases with boxy muscle cars, flat-panel city blocks, police lights and a soft jagged image.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render every car as a boxy low-poly seventies muscle car. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show every car as a boxy seventies muscle car built from a few flat panels with painted-on windows and lights. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night blue, police red and sodium orange, true to the Driver 1999 palette.',
       lighting_and_shadow:
-        'Police lights and street lamps, lit the way Driver 1999 lights its levels.',
+        'Blue and red police lights and flat orange street lamps with no real shadows.',
       texture_and_material:
-        'Low-poly PS1 textures, with the in-engine surface finish of Driver 1999.',
+        'Blurry wobbling textures on boxy buildings and cars, flat painted windows.',
       camera_and_composition:
         'Chase camera behind the car, framed the way Driver 1999 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty chase thrill.',
-      rendering_and_quality: 'Authentic PS1 driving screen, matching real Driver 1999 screenshots.',
+      rendering_and_quality:
+        'A 1999 PlayStation frame at 512 by 240 on a CRT from behind the car: soft, jagged, a damage bar shape.',
       creative_brief:
-        "Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts. Carry it through Driver 1999 low-poly, seventies chase, police lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Driver 1999 low-poly; seventies chase; police lights',
+        "Reflections Interactive Driver (1999) look: PlayStation seventies car chases with boxy muscle cars, flat-panel city blocks, police lights and a soft jagged image. Carry it through Driver 1999 boxy muscle cars, seventies chase, police lights, soft PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Driver 1999 boxy muscle cars; seventies chase; police lights; soft PS1',
     },
     ui: {
       previewStatus: 'pending',
@@ -561,15 +544,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded cartoon animal thieves with sneaky poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night blue, laser red and gold, true to the Sly Cooper 2002 palette.',
-      lighting_and_shadow:
-        'Cartoon night light with laser glow, lit the way Sly Cooper 2002 lights its levels.',
-      texture_and_material:
-        'Cel shading with ink outlines, with the in-engine surface finish of Sly Cooper 2002.',
+      lighting_and_shadow: 'Cartoon night light with glowing red laser beams.',
+      texture_and_material: 'Cel shading with thick ink outlines on cartoon animals and rooftops.',
       camera_and_composition:
         'Third-person sneak view, framed the way Sly Cooper 2002 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with sly playful heist.',
       rendering_and_quality:
-        'Authentic PS2 toon heist screen, matching real Sly Cooper 2002 screenshots.',
+        'A 2002 PlayStation 2 frame at 640 by 448: cel-shaded thief sneaking past lasers, jagged edges, a small gauge shape.',
       creative_brief:
         "Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses. Carry it through Sly Cooper cel, animal thieves, lasers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sly Cooper cel; animal thieves; lasers',
@@ -598,15 +579,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as nervous cartoon ghost catchers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         "Spooky purple, ghost green and warm gold, true to the Luigi's Mansion 3 2019 palette.",
-      lighting_and_shadow:
-        "Soft spooky light and vacuum glow, lit the way Luigi's Mansion 3 2019 lights its levels.",
+      lighting_and_shadow: 'Soft spooky purple light and bright green vacuum glow.',
       texture_and_material:
-        "Animated-film stylized surfaces, with the in-engine surface finish of Luigi's Mansion 3 2019.",
+        'Animated-film-quality rounded shapes, velvet, brass and glowing translucent ghosts.',
       camera_and_composition:
         "Third-person room view, framed the way Luigi's Mansion 3 2019 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with goofy spooky fun.',
       rendering_and_quality:
-        "Authentic animated-film adventure screen, matching real Luigi's Mansion 3 2019 screenshots.",
+        'A 2019 Switch frame at 1920 by 1080: nervous cartoon ghost catcher in a haunted hotel corridor, a small heart shape.',
       creative_brief:
         "Next Level Games Luigi's Mansion 3 (2019) look: animated-film haunted hotel, goofy colorful ghosts, suction vacuum effects, swirling furniture and soft spooky light. Carry it through Luigi Mansion ghosts, vacuum, haunted hotel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Luigi Mansion ghosts; vacuum; haunted hotel',
@@ -635,15 +615,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bold inked painted Greek myth figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Underworld crimson, ember orange and soul teal, true to the Hades 2020 palette.',
-      lighting_and_shadow:
-        'Ember and soul glow in darkness, lit the way Hades 2020 lights its levels.',
-      texture_and_material:
-        'Painted art with bold ink, with the in-engine surface finish of Hades 2020.',
+      lighting_and_shadow: 'Ember and soul glow in dark underworld chambers.',
+      texture_and_material: 'Painted art with bold ink outlines, seen from a high diagonal angle.',
       camera_and_composition:
         'Isometric chamber view, framed the way Hades 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with defiant mythic swagger.',
       rendering_and_quality:
-        'Authentic painted roguelike screen, matching real Hades 2020 screenshots.',
+        'A 2020 frame at 1920 by 1080: small inked figure fighting in a painted underworld chamber, a bar shape bottom left.',
       creative_brief:
         "Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors. Carry it through Hades Jen Zee, underworld, Greek myth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hades Jen Zee; underworld; Greek myth',

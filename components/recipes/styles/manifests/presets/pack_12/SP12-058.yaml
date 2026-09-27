@@ -3,7 +3,7 @@ id: SP12-058
 packId: pack_12
 name: Fez 2012 - Polytron Rotating Pixel World
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny pastel pixel sprites in a rotating voxel world. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright pastel greens, sky blue and warm stone.
-  lighting_and_shadow: Soft pixel daylight or starry night, lit the way Fez 2012 lights its levels.
-  texture_and_material: Crisp pixel voxels, with the in-engine surface finish of Fez 2012.
+  lighting_and_shadow: "Soft pastel daylight or a starry night with flat pixel colors."
+  texture_and_material: "Crisp square pixels on cube-shaped blocks, with the whole world seen flat from one side."
   camera_and_composition: Flat side view of a rotating world, framed the way Fez 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with serene curious puzzling.
-  rendering_and_quality: Authentic pixel puzzle-platformer screen, matching real Fez 2012 screenshots.
+  rendering_and_quality: "A 2012 side-view frame at 1280 by 720: pastel pixel tower of blocks, a tiny white sprite, no interface."
   key_features: Fez rotating world; pastel pixels; glyphs
   creative_brief: 'Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration. Carry it through Fez rotating world, pastel pixels, glyphs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

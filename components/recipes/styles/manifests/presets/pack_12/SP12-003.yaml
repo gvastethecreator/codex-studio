@@ -7,7 +7,7 @@ styleAnchors:
   - Kharak Desert Carrier RTS
 displayName: Deserts of Kharak 2016 - Blackbird Desert Carrier RTS
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Weathered industrial metal, sand drifts and dust trails.
   camera_and_composition: High tilted RTS camera over the dunes, framed the way Deserts of Kharak 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with vast lonely desert warfare.
-  rendering_and_quality: Authentic mid-2010s desert RTS screen, matching real Deserts of Kharak 2016 screenshots.
+  rendering_and_quality: "A 2016 PC frame at 1920 by 1080 from a high strategy camera: small units trailing dust across dunes, a minimap box and unit card shapes at the bottom."
   key_features: Kharak land carriers; desert dunes; dust trails; RTS camera
   creative_brief: 'Blackbird Interactive Homeworld: Deserts of Kharak (2016) look: real-time strategy across vast desert dunes, colossal land carriers, tracked vehicles leaving dust trails and buried alien wrecks. Carry it through Kharak land carriers, desert dunes, dust trails, RTS camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

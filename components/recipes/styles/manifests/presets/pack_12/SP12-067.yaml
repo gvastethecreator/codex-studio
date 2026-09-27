@@ -7,7 +7,7 @@ styleAnchors:
   - Total War Bronze Marsh Siege
 displayName: Total War Three Kingdoms 2019 - Creative Assembly Epic Battle
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Creative Assembly Total War: Three Kingdoms (2019) look: massive real-time battles of thousands of soldiers in ancient Chinese armies, banners, lacquered armor, marshes and fortresses.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as thousands of small soldiers in lacquered armor with banners. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bronze marsh gold, banner red and mist grey.
-  lighting_and_shadow: Dawn mist light over armies, lit the way Total War Three Kingdoms 2019 lights its levels.
-  texture_and_material: Detailed lacquered armor and reeds, with the in-engine surface finish of Total War Three Kingdoms 2019.
+  lighting_and_shadow: "Soft dawn mist light over marshes and massed armies."
+  texture_and_material: "Tiny detailed lacquered armor and banners repeated by the thousand, reeds and mud."
   camera_and_composition: High battle camera over armies, framed the way Total War Three Kingdoms 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with epic martial grandeur.
-  rendering_and_quality: Authentic grand battle strategy screen, matching real Total War Three Kingdoms 2019 screenshots.
+  rendering_and_quality: "A 2019 PC frame at 1920 by 1080 from high above: huge army blocks with banners, a unit card row at the bottom."
   key_features: Total War massed armies; banners; marsh siege
   creative_brief: 'Creative Assembly Total War: Three Kingdoms (2019) look: massive real-time battles of thousands of soldiers in ancient Chinese armies, banners, lacquered armor, marshes and fortresses. Carry it through Total War massed armies, banners, marsh siege. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

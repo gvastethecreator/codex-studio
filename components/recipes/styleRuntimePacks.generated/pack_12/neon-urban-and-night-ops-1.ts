@@ -28,7 +28,8 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Flat side-view room cutaway with the whole fight readable in one screen.',
       atmosphere_and_mood: 'Keep the requested mood with cool neo-noir slaughter.',
-      rendering_and_quality: 'Authentic indie pixel-art action screen with VHS replay glitch.',
+      rendering_and_quality:
+        'A 2019 side-view frame at 640 by 360 scaled up: crisp tiny pixel sprites in neon rooms, VHS tracking lines and a timer bar shape at the top.',
       key_features: 'Katana Zero pixel noir; VHS glitch; slow-motion afterimages; neon rooms',
       creative_brief:
         "Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills. Carry it through Katana Zero pixel noir, VHS glitch, slow-motion afterimages, neon rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -55,12 +56,12 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Bright overexposed sun on white surfaces with soft global illumination and clean shadows.',
       texture_and_material:
-        'Clean matte white concrete, glass and polished metal with almost no grime.',
+        'Clean matte white concrete, glass and polished metal with almost no grime, pipes and ledges picked out in bright red.',
       camera_and_composition:
         'First-person view with visible arms and legs, tilted in motion over rooftop gaps.',
       atmosphere_and_mood: 'Keep the requested mood with clean vertigo freedom.',
       rendering_and_quality:
-        'Authentic late-2000s Unreal Engine 3 first-person screen with baked lighting.',
+        'A 2008 console frame at 1280 by 720 in first person: soft baked light, glowing overexposed whites, arms and hands reaching into view.',
       key_features: "Mirror's Edge white city; runner vision red; first-person arms",
       creative_brief:
         "DICE Mirror's Edge (2008) look: first-person parkour across sterile white rooftops, runner vision painting the route red, clean blue sky, glass towers and graphic primary accents. Carry it through Mirror's Edge white city, runner vision red, first-person arms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -90,7 +91,8 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Side-scrolling beat em up view with a deep street lane for fighters.',
       atmosphere_and_mood: 'Keep the requested mood with punchy street-brawl swagger.',
-      rendering_and_quality: 'Authentic modern hand-drawn 2D beat em up screen.',
+      rendering_and_quality:
+        'A 2020 side-view frame at 1920 by 1080: hand-drawn fighters on a painted neon street lane, health bar shapes along the top.',
       key_features: 'Streets of Rage 4 hand-drawn; thick brush lines; neon street lane',
       creative_brief:
         "Lizardcube and Guard Crush Streets of Rage 4 (2020) look: hand-drawn 2D animation with thick brush outlines, flat cel color and soft painted neon streets in a side-scrolling beat em up. Carry it through Streets of Rage 4 hand-drawn, thick brush lines, neon street lane. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -115,7 +117,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'High isometric tactics camera with vision cones and paths.',
       atmosphere_and_mood: 'Keep the requested mood with sly cursed stealth.',
       rendering_and_quality:
-        'Authentic modern isometric stealth tactics screen, matching real Shadow Gambit 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080 from a high diagonal angle: small stylized figures, green vision cones on the ground, portrait icons at the bottom.',
       key_features: 'Shadow Gambit isometric; vision cones; cursed pirates; painterly 3D',
       creative_brief:
         "Mimimi Games Shadow Gambit: The Cursed Crew (2023) look: isometric real-time stealth tactics, painterly stylized 3D, cursed pirate crews, green vision cones and glowing magic outlines. Carry it through Shadow Gambit isometric, vision cones, cursed pirates, painterly 3D. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -144,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'Third-person shoulder view looking up at giant enemies.',
       atmosphere_and_mood: 'Keep the requested mood with gleeful B-movie mayhem.',
       rendering_and_quality:
-        'Authentic budget arcade third-person shooter screen, matching real Earth Defense Force 5 2017 screenshots.',
+        'A 2017 console frame at 1920 by 1080 in third person: plain textures, blocky buildings collapsing into dust, a crosshair and a small radar circle.',
       key_features: 'EDF giant ants; B-movie kaiju; crumbling city; arcade chaos',
       creative_brief:
         "Sandlot Earth Defense Force 5 (2017) look: budget third-person arcade shooter, giant ants and kaiju swarming cities, huge explosions, simple textures, destructible buildings and B-movie chaos. Carry it through EDF giant ants, B-movie kaiju, crumbling city, arcade chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -171,7 +173,8 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material: 'Visible voxel cubes, rain streaks and glowing volumetric fog.',
       camera_and_composition: 'Third-person chase view behind a hovercar between towers.',
       atmosphere_and_mood: 'Keep the requested mood with lonely rain-soaked melancholy.',
-      rendering_and_quality: 'Authentic voxel city indie screen with volumetric fog.',
+      rendering_and_quality:
+        'A 2020 frame at 1920 by 1080 from a hovercar: cube-built city blocks and figures sharp as toy blocks, glowing through thick rain fog.',
       key_features: 'Cloudpunk voxels; rain city; hovercars; neon fog',
       creative_brief:
         "Ion Lands Cloudpunk (2020) look: dense voxel cyberpunk city of stacked towers, endless rain, neon signs, flying hovercars and misty depths far below. Carry it through Cloudpunk voxels, rain city, hovercars, neon fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -199,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'First-person wall-run view with the blade in frame.',
       atmosphere_and_mood: 'Keep the requested mood with razor-sharp vertical speed.',
       rendering_and_quality:
-        'Authentic modern Unreal first-person action screen, matching real Ghostrunner 2020 screenshots.',
+        'A 2020 first-person frame at 1920 by 1080: katana-holding cyber hand at the bottom right, red neon strips streaking with motion blur.',
       key_features: 'Ghostrunner first-person katana; wall-runs; red neon megatower',
       creative_brief:
         "One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths. Carry it through Ghostrunner first-person katana, wall-runs, red neon megatower. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -220,11 +223,12 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic Japanese city characters in suits and street clothes, with heat aura glow during brawls. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Red lantern glow, neon sign color and warm wet asphalt.',
       lighting_and_shadow: 'Dense sign light, lantern glow and bright heat-action flashes.',
-      texture_and_material: 'Realistic PS4-era textures of wet streets, suits and signage.',
+      texture_and_material:
+        'Wet reflective streets, crisp suits and dense glowing sign clusters, detailed up close but slightly soft in the distance.',
       camera_and_composition: 'Third-person brawl view in a crowded street ring.',
       atmosphere_and_mood: 'Keep the requested mood with melodramatic street-fight bravado.',
       rendering_and_quality:
-        'Authentic PS4 third-person brawler screen, matching real Yakuza 0 2015 screenshots.',
+        'A 2015 PlayStation 4 frame at 1920 by 1080 in third person: fighters with a colored aura, a health bar and heat gauge shapes top left.',
       key_features: 'Yakuza nightlife streets; heat aura; red lanterns; brawls',
       creative_brief:
         "Ryu Ga Gotoku Studio Yakuza 0 (2015) look: realistic third-person brawling in dense Japanese nightlife streets of 1988, red lanterns, crowded signs, heat actions and melodramatic heat aura glow. Carry it through Yakuza nightlife streets, heat aura, red lanterns, brawls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -244,12 +248,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tired resistance citizens in blue work clothes and scavenged gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Desaturated teal, concrete grey, rust brown and faded green.',
-      lighting_and_shadow: 'Overcast diffuse light with sharp Source engine shadows.',
-      texture_and_material: 'Source engine textures of rust, concrete, grime and scrap.',
+      lighting_and_shadow:
+        'Overcast flat light with crisp dark shadows under ledges and a slightly hazy distance.',
+      texture_and_material:
+        'Rust, concrete and grime textures that look sharp from afar but blurry up close, simple blocky debris.',
       camera_and_composition: 'First-person view with a weapon at screen right.',
       atmosphere_and_mood: 'Keep the requested mood with grim occupied resistance.',
       rendering_and_quality:
-        'Authentic mid-2000s Source engine first-person screen, matching real Half-Life 2 2004 screenshots.',
+        'A 2004 PC frame at 1024 by 768 in first person: muted teal-grey city, a weapon at bottom right, health and ammo number shapes at the bottom.',
       key_features: 'Half-Life 2 City 17; citadel; canals; first-person',
       creative_brief:
         "Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins. Carry it through Half-Life 2 City 17, citadel, canals, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -271,12 +277,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Deep black shadow, warm lantern yellow and muted indigo.',
       lighting_and_shadow: 'Hard light pools that turn figures into silhouettes when dark.',
       texture_and_material:
-        'Hand-drawn Klei animation lines and flat fills, with the in-engine surface finish of Mark of the Ninja 2012.',
+        'Clean hand-drawn cartoon lines and flat color fills, whole figures dropping to pure black inside shadow areas.',
       camera_and_composition:
         'Side-view cutaway of rooms and vents, framed the way Mark of the Ninja 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense silent stealth.',
       rendering_and_quality:
-        'Authentic early-2010s Klei hand-drawn stealth screen, matching real Mark of the Ninja 2012 screenshots.',
+        'A 2012 side-view frame at 1280 by 720: lit pools of color and black silhouette shadow zones, concentric sound ring outlines.',
       key_features: 'Mark of the Ninja silhouettes; light pools; sound rings',
       creative_brief:
         "Klei Entertainment Mark of the Ninja (2012) look: side-view 2D stealth with hand-drawn cartoon animation, deep black silhouettes in shadow, bright lit zones and sound rings. Carry it through Mark of the Ninja silhouettes, light pools, sound rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -302,14 +308,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a glowing neon vector shape or ship seen from directly above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Black void with neon cyan, magenta, green and yellow glow.',
       lighting_and_shadow:
-        'Self-lit glowing vector lines and particle bursts, lit the way Geometry Wars 2003 lights its levels.',
+        'Every shape glows from its own thin bright lines, with soft halos and bursts of sparks on black.',
       texture_and_material:
-        'Clean vector lines, bloom and particle sparks, with the in-engine surface finish of Geometry Wars 2003.',
+        'Thin glowing vector outlines, a warping grid and showers of glowing square particles.',
       camera_and_composition:
         'Top-down arena view over a warping grid, framed the way Geometry Wars 2003 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with hypnotic bullet frenzy.',
       rendering_and_quality:
-        'Authentic neon vector twin-stick shooter screen, matching real Geometry Wars 2003 screenshots.',
+        'A 2003 frame at 640 by 480 seen straight down: glowing shapes swarming a small claw ship over a bending grid.',
       creative_brief:
         "Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies. Carry it through Geometry Wars neon grid, vector shapes, particle bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Geometry Wars neon grid; vector shapes; particle bloom',
@@ -340,12 +346,12 @@ export const GENERATED_STYLE_PRESETS = [
         'Black and warm gold with amber haze, true to the Deus Ex Human Revolution 2011 palette.',
       lighting_and_shadow: 'Gold amber haze with flashlight sweeps and holograms.',
       texture_and_material:
-        'Wet asphalt, leather, polished augment plating, with the in-engine surface finish of Deus Ex Human Revolution 2011.',
+        'Wet asphalt, leather and polished black augment plating, everything tinted gold, slightly soft game-engine detail.',
       camera_and_composition:
         'Third-person cover view behind a crouched agent, framed the way Deus Ex Human Revolution 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with conspiratorial gold noir.',
       rendering_and_quality:
-        'Authentic early-2010s stealth screen, matching real Deus Ex Human Revolution 2011 screenshots.',
+        'A 2011 console frame at 1280 by 720 in third person: gold haze over the whole image, a small radar box shape bottom left.',
       creative_brief:
         "Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing. Carry it through Deus Ex black and gold, cover stealth, augmented agents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Deus Ex black and gold; cover stealth; augmented agents',
@@ -375,12 +381,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Painted grime brown, neon cyan and Matrix green.',
       lighting_and_shadow: 'Monitor glow and neon in dim painted rooms.',
       texture_and_material:
-        'Hand-painted isometric backgrounds with small 3D figures, with the in-engine surface finish of Shadowrun Returns 2013.',
+        'Hand-painted rooms seen from above at an angle, with small simple 3D figures standing on them.',
       camera_and_composition:
         'Fixed isometric tactics view of a room, framed the way Shadowrun Returns 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty tech-noir scheming.',
       rendering_and_quality:
-        'Authentic painted isometric RPG screen, matching real Shadowrun Returns 2013 screenshots.',
+        'A 2013 PC frame at 1280 by 720: painted den with small figures, a row of blank action buttons at the bottom.',
       creative_brief:
         "Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens. Carry it through Shadowrun isometric, painted dens, Matrix glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Shadowrun isometric; painted dens; Matrix glow',
@@ -406,21 +412,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized PS2 cartoon characters with big expressive faces riding hover vehicles. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as rubbery cartoon characters with big expressive faces and simple smooth shapes, riding hover bikes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Industrial teal, brass and warm amber glow, true to the Jak II 2003 palette.',
       lighting_and_shadow:
-        'Hazy PS2 atmospheric light and glowing traffic, lit the way Jak II 2003 lights its levels.',
+        'Warm hazy light that softens the distance, with glowing traffic lanes in the sky.',
       texture_and_material:
-        'Stylized PS2 textures and chunky vehicle models, with the in-engine surface finish of Jak II 2003.',
+        'Smooth simple cartoon shapes with soft blurry painted textures, chunky rounded vehicles.',
       camera_and_composition:
         'Chase camera behind a hover zoomer, framed the way Jak II 2003 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rebellious chase thrill.',
       rendering_and_quality:
-        'Authentic PS2 open-city action screen, matching real Jak II 2003 screenshots.',
+        'A 2003 PlayStation 2 frame at 640 by 448: soft slightly jagged image, a hover bike seen from behind racing between walls.',
       creative_brief:
-        "Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover zoomers, walled city, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Jak II hover zoomers; walled city; chase camera',
+        "Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover bikes, walled city, chase camera, soft hazy cartoon world. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Jak II hover bikes; walled city; chase camera; soft hazy cartoon world',
     },
     ui: {
       previewStatus: 'pending',
@@ -446,14 +452,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright detailed pixel-art brawler sprites with anime proportions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Loud pop pink, lemon, teal and warm lantern orange.',
       lighting_and_shadow:
-        'Bright lantern light and flashing hit effects, lit the way River City Girls 2019 lights its levels.',
+        'Bright lantern light and white flashing hit sparks with no soft shading.',
       texture_and_material:
-        'Detailed modern pixel art with crisp dithering, with the in-engine surface finish of River City Girls 2019.',
+        'Detailed crisp pixel art with bold outlines and careful dithering on clothes and hair.',
       camera_and_composition:
         'Side-scrolling brawler lane, framed the way River City Girls 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bratty chaotic fun.',
       rendering_and_quality:
-        'Authentic modern pixel-art brawler screen, matching real River City Girls 2019 screenshots.',
+        'A 2019 side-view frame at 1920 by 1080: large pixel brawler sprites on a street lane, portrait and bar shapes top left.',
       creative_brief:
         "WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color. Carry it through River City Girls pixel art, pop colors, street brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'River City Girls pixel art; pop colors; street brawl',
@@ -482,14 +488,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic distant figures seen through a round scope reticle. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night blue, sodium amber and clean scope black.',
       lighting_and_shadow:
-        'Realistic city night light with window glow, lit the way Hitman 2016 lights its levels.',
+        'Realistic night city light with warm window glow and cool streetlights.',
       texture_and_material:
-        'Realistic Glacier engine surfaces, with the in-engine surface finish of Hitman 2016.',
+        'Realistic glass, stone and fabric at a distance, softened by the scope lens.',
       camera_and_composition:
         'Round scope view with a thin reticle, framed the way Hitman 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cold patient focus.',
       rendering_and_quality:
-        'Authentic modern stealth sniper screen, matching real Hitman 2016 screenshots.',
+        'A 2016 frame at 1920 by 1080: a round black scope view filling the screen, thin crosshair lines, a figure framed inside.',
       creative_brief:
         "IO Interactive Hitman (2016) look: sleek realistic city rooftops, polished Glacier engine lighting, a round sniper scope view with reticle and calm clinical assassination tension. Carry it through Hitman sniper scope, reticle, city rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hitman sniper scope; reticle; city rooftops',
@@ -519,14 +525,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Monochrome white-hot on grey and black, true to the Call of Duty 4 2007 palette.',
       lighting_and_shadow:
-        'Thermal contrast with heat blooms, lit the way Call of Duty 4 2007 lights its levels.',
+        'Everything in greyscale thermal: warm bodies and engines glowing white-hot, cold ground dark grey.',
       texture_and_material:
-        'Grainy thermal noise and scan lines, with the in-engine surface finish of Call of Duty 4 2007.',
+        'Grainy thermal noise, horizontal scan lines and slight blur from zoom.',
       camera_and_composition:
         'Circling overhead thermal feed with brackets, framed the way Call of Duty 4 2007 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with detached surveillance dread.',
       rendering_and_quality:
-        'Authentic late-2000s thermal camera screen, matching real Call of Duty 4 2007 screenshots.',
+        'A 2007 frame at 1280 by 720 looking straight down: white figures on grey, corner bracket marks and a crosshair.',
       creative_brief:
         "Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective. Carry it through Thermal gunship feed, white-hot figures, brackets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Thermal gunship feed; white-hot figures; brackets',
@@ -550,23 +556,23 @@ export const GENERATED_STYLE_PRESETS = [
       'car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets.',
+        'Aquiris Horizon Chase Turbo (2018) look: retro arcade racing in simple solid-color shapes with no textures, huge gradient sunsets and winding roads seen from behind.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render every car and rider as a flat-shaded low-poly shape seen from behind. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show every car and rider as simple smooth shapes of flat solid colors, each side of a car a single color, seen from behind. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset orange, magenta and teal gradients, true to the Horizon Chase Turbo 2018 palette.',
       lighting_and_shadow:
-        'Huge gradient sunset light with flat shading, lit the way Horizon Chase Turbo 2018 lights its levels.',
+        'Huge gradient sunset sky with every surface lit as one flat solid color, no reflections.',
       texture_and_material:
-        'Flat-shaded low-poly geometry without textures, with the in-engine surface finish of Horizon Chase Turbo 2018.',
+        'Plain solid-color faces with sharp edges and no texture at all, like cut paper.',
       camera_and_composition:
         'Rear arcade chase camera on curving roads, framed the way Horizon Chase Turbo 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with nostalgic arcade joy.',
       rendering_and_quality:
-        'Authentic flat-shaded retro racer screen, matching real Horizon Chase Turbo 2018 screenshots.',
+        'A 2018 frame at 1920 by 1080: a car seen from behind on a winding road under a gradient sunset, position number shapes top left.',
       creative_brief:
-        "Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets. Carry it through Horizon Chase low-poly, gradient sunsets, rear chase. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Horizon Chase low-poly; gradient sunsets; rear chase',
+        "Aquiris Horizon Chase Turbo (2018) look: retro arcade racing in simple solid-color shapes with no textures, huge gradient sunsets and winding roads seen from behind. Carry it through Horizon Chase flat solid-color shapes, gradient sunsets, rear chase. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Horizon Chase flat solid-color shapes; gradient sunsets; rear chase',
     },
     ui: {
       previewStatus: 'pending',
@@ -589,20 +595,19 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny 8-bit ninja sprites with limited-palette pixels. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as tiny ninja sprites built from a few square pixels in a handful of flat colors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Limited 8-bit palette of night blue, moon yellow and red.',
-      lighting_and_shadow:
-        'Flat 8-bit light with no gradients, lit the way The Messenger 2018 lights its levels.',
+      lighting_and_shadow: 'Flat colors with no gradients, dark blue night and a huge pale moon.',
       texture_and_material:
-        'Chunky 8-bit pixels and tile patterns, with the in-engine surface finish of The Messenger 2018.',
+        'Chunky square pixels in a small palette, repeating brick and roof tiles.',
       camera_and_composition:
         'Side-scrolling platformer view, framed the way The Messenger 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with playful retro ninja.',
       rendering_and_quality:
-        'Authentic modern 8-bit pixel platformer screen, matching real The Messenger 2018 screenshots.',
+        'A 2018 side-view frame at 384 by 216 scaled up: tiny ninja sprite on rooftops, a thin bar shape at the top.',
       creative_brief:
-        "Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger 8-bit, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'The Messenger 8-bit; tiny ninja sprites; big moon',
+        "Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger chunky pixels, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'The Messenger chunky pixels; tiny ninja sprites; big moon',
     },
     ui: {
       previewStatus: 'pending',
@@ -628,15 +633,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cel-shaded cartoon characters with thick outlines and bouncy poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright pop yellow, magenta, cyan and orange, true to the Hi-Fi Rush 2023 palette.',
-      lighting_and_shadow:
-        'Flat cel light with halftone shadow dots, lit the way Hi-Fi Rush 2023 lights its levels.',
+      lighting_and_shadow: 'Flat bright cartoon light with shadows made of halftone dots.',
       texture_and_material:
-        'Cel shading, thick outlines and halftone, with the in-engine surface finish of Hi-Fi Rush 2023.',
+        'Thick outlines, flat bright fills, halftone dots and bouncing comic sound-effect shapes.',
       camera_and_composition:
         'Third-person action view synced to the beat, framed the way Hi-Fi Rush 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rhythmic comic exuberance.',
       rendering_and_quality:
-        'Authentic modern comic cel-shaded action screen, matching real Hi-Fi Rush 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080 in third person: cel-shaded hero mid-combo, a beat pulse circle and bar shapes on screen.',
       creative_brief:
         "Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects. Carry it through Hi-Fi Rush cel, halftone, beat-synced world. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hi-Fi Rush cel; halftone; beat-synced world',

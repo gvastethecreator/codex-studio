@@ -7,7 +7,7 @@ styleAnchors:
   - Rollerdrome Arena Trick Combat
 displayName: Rollerdrome 2022 - Roll7 Comic Cel Skate Arena
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-lined comic figures on roller skates in bold sporty outfits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm seventies orange, cream concrete and teal, true to the Rollerdrome 2022 palette.
-  lighting_and_shadow: Flat comic light with ink shadows, lit the way Rollerdrome 2022 lights its levels.
-  texture_and_material: Thick ink lines and cel fills, with the in-engine surface finish of Rollerdrome 2022.
+  lighting_and_shadow: "Flat comic light with shadows as solid ink shapes and hatching."
+  texture_and_material: "Thick ink outlines and flat cel color on every surface, speed lines when time slows."
   camera_and_composition: Third-person view mid-trick over bowls, framed the way Rollerdrome 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with stylish deadly flow.
-  rendering_and_quality: Authentic comic cel action screen, matching real Rollerdrome 2022 screenshots.
+  rendering_and_quality: "A 2022 frame at 1920 by 1080 in third person: skater mid-air in a concrete arena, ink outlines, small bar shapes."
   key_features: Rollerdrome ink lines; skate arena; bullet time
   creative_brief: 'Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time. Carry it through Rollerdrome ink lines, skate arena, bullet time. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

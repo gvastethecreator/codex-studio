@@ -17,7 +17,8 @@ const spec: Spec = {
       texture: 'Stylized painted 3D surfaces of carved wood, stone and velvet.',
       camera: '2.5D side-scrolling view with parallax gothic depth.',
       mood: 'ornate gothic exploration',
-      render: 'Authentic modern 2.5D metroidvania screen.',
+      render:
+        'A 2019 side-view frame at 1920 by 1080: painted 3D gothic castle on a flat play plane, health and mana bar shapes top left.',
       key: 'Bloodstained 2.5D; gothic castle; Igarashi metroidvania; demon bosses',
       avoid: ['a pale heroine with crystal shards on her back'],
     }),
@@ -30,7 +31,8 @@ const spec: Spec = {
       texture: 'Shimmering sand shader, soft cloth and weathered stone ruins.',
       camera: 'Wide third-person view dwarfing the small traveler.',
       mood: 'wordless shared awe',
-      render: 'Authentic early-2010s art-game screen.',
+      render:
+        'A 2012 PlayStation 3 frame at 1280 by 720 in third person: tiny cloaked figure on vast glittering dunes, no interface at all.',
       key: 'Journey glittering sand; tiny cloaked pilgrim; glowing scarf',
       avoid: ['a red-robed traveler with a gold-embroidered scarf'],
     }),
@@ -40,10 +42,12 @@ const spec: Spec = {
         'render people as small detailed pixel sprites in biomechanical ruins, with glitch effects scrambling nearby pixels.',
       color: 'Toxic purple, flesh pink, alien teal and corrupted neon.',
       light: 'Dark ruin interiors lit by glowing organic machinery.',
-      texture: 'Dense 16-bit pixel art with biomechanical detail and glitch noise.',
+      texture:
+        'Dense square pixel art with biomechanical pipes and organs, glitch blocks scrambling nearby tiles.',
       camera: 'Side-view metroidvania room view.',
       mood: 'eerie alien discovery',
-      render: 'Authentic modern pixel metroidvania screen.',
+      render:
+        'A 2015 side-view frame at 480 by 270 scaled up: crisp tiny pixel sprite in dark alien ruins, a thin health bar shape top left.',
       key: 'Axiom Verge pixels; biomechanical ruin; glitch corruption',
     }),
     ga('SP12-020', 'Sunless Skies 2019 - Failbetter Gaslamp Void Trade', {
@@ -52,10 +56,12 @@ const spec: Spec = {
         'render people and vessels as small painted steam locomotives and Victorian figures seen from above in a dark void.',
       color: 'Deep void black, lantern amber, cosmic teal and brass.',
       light: 'Lantern prow cones cutting through dark starry void.',
-      texture: 'Hand-painted illustrative surfaces with gothic detail.',
+      texture:
+        'Hand-painted illustrated ship and station sprites with gothic detail, floating on a dark painted void.',
       camera: 'Top-down view of the locomotive in the void.',
       mood: 'gothic cosmic wanderlust',
-      render: 'Authentic painted top-down exploration screen.',
+      render:
+        'A 2019 frame at 1920 by 1080 seen from above: a small painted locomotive-ship with a lantern cone in a starry void, small bar shapes along the edges.',
       key: 'Sunless Skies void; flying locomotives; lantern prows',
     }),
     ga('SP12-028', 'Sekiro 2019 - FromSoftware Shinobi Deflect', {
@@ -64,10 +70,12 @@ const spec: Spec = {
         'render people as grounded realistic Sengoku warriors, monks and shinobi in weathered armor and robes.',
       color: 'Autumn red, temple ash grey, snow white and spark orange.',
       light: 'Diffuse overcast mountain light with bright deflection sparks.',
-      texture: 'Realistic weathered wood, stone, cloth and armor.',
+      texture:
+        'Realistic weathered wood, stone, cloth and armor, slightly soft in the distance with mist softening the mountains.',
       camera: 'Third-person lock-on duel view on rooftops.',
       mood: 'tense deadly duel',
-      render: 'Authentic modern third-person action screen.',
+      render:
+        'A 2019 frame at 1920 by 1080 in third person over the shoulder: shinobi mid-parry with bright sparks, a posture bar shape at the top.',
       key: 'Sekiro deflection sparks; temple rooftops; shinobi duel',
       avoid: ['a one-armed shinobi with a prosthetic arm'],
     }),
@@ -80,7 +88,8 @@ const spec: Spec = {
       texture: 'Cel shading with halftone, torn paper and graphic shapes.',
       camera: 'Dynamic tilted angles through palace interiors.',
       mood: 'stylish rebellious heist',
-      render: 'Authentic stylized anime JRPG screen.',
+      render:
+        'A 2016 frame at 1920 by 1080: cel-shaded thieves in a palace, jagged red and black menu shapes slashing into the corners without text.',
       key: 'Persona 5 red and black; masked thieves; graphic flair',
       avoid: [
         'a black-haired thief in a long black coat and white mask',
@@ -95,10 +104,12 @@ const spec: Spec = {
         'render people as grounded Slavic peasants, hunters and folklore creatures in worn clothing and armor.',
       color: 'Bog green, muddy brown, grey fog and pale folklore light.',
       light: 'Diffuse misty light with lantern glow and eerie hues.',
-      texture: 'Realistic mud, wet wood, leather and moss.',
+      texture:
+        'Realistic mud, wet wood, leather and moss, dense grass and reeds, slightly soft console-game detail in the distance.',
       camera: 'Third-person over-the-shoulder view in wet landscapes.',
       mood: 'eerie folkloric dread',
-      render: 'Authentic mid-2010s open-world RPG screen.',
+      render:
+        'A 2015 PlayStation 4 frame at 1920 by 1080 in third person: misty bog, a small round minimap shape top right and bar shapes top left.',
       key: 'Witcher 3 Slavic bog; monster contracts; misty folklore',
       avoid: ['a white-haired hunter with two swords and cat eyes', 'three crones of a bog'],
       briefs: [
@@ -112,11 +123,14 @@ const spec: Spec = {
       subject:
         'render every subject in clean simplified painterly shapes, seen from first person on a silent island.',
       color: 'Saturated orchid pink, grass green, sky blue and warm stone.',
-      light: 'Bright clean sunlight with soft painterly shading.',
-      texture: 'Simplified smooth shapes without grime.',
+      light:
+        'Bright clean sunlight with soft simple shading and saturated color, almost no dark areas.',
+      texture:
+        'Simplified smooth shapes without grime or fine texture, bold saturated autumn trees.',
       camera: 'First-person view facing puzzle panels.',
       mood: 'quiet contemplative insight',
-      render: 'Authentic painterly first-person puzzle screen.',
+      render:
+        'A 2016 first-person frame at 1920 by 1080: clean saturated island, a glowing line-maze panel on a stand, no interface.',
       key: 'The Witness saturated island; line puzzles; simplified shapes',
     }),
     ga('SP12-061', 'Okami 2006 - Clover Sumi-e Celestial Brush', {
@@ -124,11 +138,13 @@ const spec: Spec = {
       subject:
         'render people and creatures as sumi-e ink figures with bold brush outlines and flowing painted forms.',
       color: 'Rice paper cream, jade green, cherry pink and ink black.',
-      light: 'Soft painted daylight with glowing celestial strokes.',
-      texture: 'Sumi-e brush outlines on rice paper texture.',
+      light: 'Soft painted daylight with glowing celestial ink strokes across the sky.',
+      texture:
+        'Thick sumi-e brush outlines around every shape, rice paper grain laid over the whole screen.',
       camera: 'Third-person view across painted landscapes.',
       mood: 'divine folkloric wonder',
-      render: 'Authentic PS2 ink-painted action screen.',
+      render:
+        'A 2006 PlayStation 2 frame at 640 by 448: ink-painted world with soft blur and paper texture, an ink-pot row shape at the top.',
       key: 'Okami sumi-e; rice paper; celestial brush strokes',
       avoid: ['a white wolf with red markings and a disc on its back'],
       briefs: [
@@ -142,11 +158,13 @@ const spec: Spec = {
       subject:
         'render people as soft cel-shaded adventurers with simple shapes and painterly shading.',
       color: 'Soft grass green, sky blue, sunset gold and stone grey.',
-      light: 'Soft open-air light with painterly haze.',
-      texture: 'Painterly cel shading with watercolor-like grass.',
+      light: 'Soft open-air sunlight with painted haze fading distant hills to pale blue.',
+      texture:
+        'Simple shapes with soft two-tone shading, grass drawn as soft painterly strokes that sway.',
       camera: 'Third-person view across a vast open landscape.',
       mood: 'free open-air adventure',
-      render: 'Authentic Switch painterly open-world screen.',
+      render:
+        'A 2017 Switch frame at 1280 by 720: open plains with painted haze, heart shapes top left and a small minimap square bottom right.',
       key: 'BotW painterly cel; open plains; ancient shrines',
       avoid: ['a green-tunic elf hero', 'one-eyed spider guardian machines', 'blue Sheikah glyphs'],
       briefs: [
@@ -161,10 +179,12 @@ const spec: Spec = {
         'render people as bright anime cel-shaded adventurers with detailed outfits and glowing elemental effects.',
       color: 'Saturated sky blue, grass green, gold and elemental colors.',
       light: 'Bright clean anime daylight with soft rim light.',
-      texture: 'Clean anime cel shading on stylized 3D.',
+      texture:
+        'Clean anime cel shading on simple stylized 3D, crisp outlines on characters and soft painted skies.',
       camera: 'Third-person gliding view over islands.',
       mood: 'bright heroic wonder',
-      render: 'Authentic modern anime open-world screen.',
+      render:
+        'A 2020 frame at 1920 by 1080 in third person: anime adventurer gliding over floating isles, a round minimap top left and skill circles bottom right.',
       key: 'Genshin anime cel; floating isles; gliding; elements',
       avoid: ['existing Genshin characters', 'a floating fairy companion in white'],
     }),
@@ -173,26 +193,30 @@ const spec: Spec = {
       subject:
         'render every subject as part of a first-person puzzle space of beams, pedestals and sealed stone doors.',
       color: 'Warm sunlit stone, cool shadow and colored beam light.',
-      light: 'Sunlit ruins with clean colored light beams.',
-      texture: 'Photoreal weathered stone and brushed metal devices.',
+      light:
+        'Warm Mediterranean sun on ruins, with clean straight colored light beams connecting devices.',
+      texture:
+        'Realistic weathered stone and brushed metal pedestals, with clean simple puzzle devices.',
       camera: 'First-person view facing puzzle devices.',
       mood: 'serene philosophical puzzling',
-      render: 'Authentic first-person puzzle screen.',
+      render:
+        'A 2014 first-person frame at 1920 by 1080: sunlit ruin courtyard, a held connector device at the bottom, no other interface.',
       key: 'Talos Principle ruins; light beams; sealed doors',
     }),
     ga('SP12-111', 'Final Fantasy X 2001 - Square Aeon Summon', {
       look: 'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.',
       subject:
-        'render people as detailed anime-realist PS2 JRPG characters in ornate summoner robes.',
+        'show people as smooth simple JRPG characters with stiff shell-like hair and ornate robes, a little stiff in pose.',
       color: 'Mystic blue, summon gold and pyrefly green.',
-      light: 'Bursting summon light and glowing glyphs.',
+      light:
+        'A bright glyph circle glowing under a summoned creature, the rest of the scene evenly lit.',
       texture:
         'Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites.',
       camera: 'Low in-engine battle camera looking up at rising beasts.',
       mood: 'sacred grand spectacle',
       render:
         'A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies.',
-      key: 'FFX summon cutscene; glyph circle; rising aeon',
+      key: 'FFX battle screen; glyph circle; rising summoned creature; blank menu panels',
       avoid: ['existing Final Fantasy summons'],
     }),
     ga('SP12-112', 'Spelunky 2012 - Mossmouth Pixel Temple', {
@@ -200,56 +224,64 @@ const spec: Spec = {
       subject: 'render people as chunky cartoon explorers with round noses and pith helmets.',
       color: 'Temple ochre, jungle green, gold and dark earth.',
       light: 'Dark caves lit by torches and glowing gold.',
-      texture: 'Chunky hand-drawn cartoon tiles.',
+      texture:
+        'Chunky hand-drawn cartoon tiles of dirt and stone, gold chunks and simple outlined sprites.',
       camera: 'Side-view roguelike cave view.',
       mood: 'greedy perilous fun',
-      render: 'Authentic cartoon roguelike screen.',
+      render:
+        'A 2012 side-view frame at 1280 by 720: small explorer sprite in a cave of stacked tiles, heart, bomb and rope icon shapes top left.',
       key: 'Spelunky idol; boulder traps; cartoon caves',
     }),
     ga('SP12-113', 'Soul Reaver 1999 - Crystal Dynamics Realm Shift', {
       look: 'Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures.',
       subject:
-        'render people as gaunt gothic figures shifting between a solid world and a warped spectral version.',
+        'show people as gaunt angular figures with simple faces, in a world that bends and stretches when the spectral realm takes over.',
       color: 'Material earth tones against spectral blue-green.',
-      light: 'Dim gothic light shifting into sickly spectral glow.',
-      texture: 'Low-poly gothic stone with warped spectral geometry.',
+      light: 'Dim gothic light that turns into a sickly blue-green glow as the realm shifts.',
+      texture:
+        'Stone and wood with blurry repeating textures on blocky shapes, walls visibly twisting and stretching in the spectral version.',
       camera: 'Third-person view mid realm shift.',
       mood: 'gothic spectral unease',
-      render: 'Authentic late-nineties gothic 3D screen.',
-      key: 'Soul Reaver realm shift; warped geometry; spectral blue',
+      render:
+        'A 1999 PlayStation frame at 512 by 240 on a CRT: soft, jagged and dark, with a spiral health gauge shape in a corner.',
+      key: 'Soul Reaver realm shift; twisting walls; spectral blue-green; soft PS1 gloom',
       avoid: ['a blue-skinned wraith with a tattered cape and claws'],
     }),
     ga('SP12-114', 'Abzu 2016 - Giant Squid Luminous Dive', {
       look: 'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples.',
       subject: 'render people as small stylized divers moving among vast shoals of fish.',
       color: 'Luminous turquoise, coral orange and deep blue.',
-      light: 'Sunlit god rays through clear water.',
-      texture: 'Smooth stylized shapes without grime.',
+      light: 'Sunlit beams slanting through clear blue water.',
+      texture:
+        'Smooth simple shapes with clean gradients, thousands of small fish moving as one mass.',
       camera: 'Third-person swimming view.',
       mood: 'meditative oceanic awe',
-      render: 'Authentic stylized underwater screen.',
+      render: 'A 2016 frame at 1920 by 1080: tiny diver among vast shoals, no interface at all.',
       key: 'Abzu luminous shoals; god rays; sunken temples',
     }),
     ga('SP12-115', 'Sky Children of the Light 2019 - thatgamecompany Cape Glide', {
       look: 'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples.',
       subject: 'render people as small soft figures in glowing capes gliding on the wind.',
       color: 'Soft peach, cloud white, dusk lilac and candle gold.',
-      light: 'Soft glowing haze with warm candle light.',
-      texture: 'Soft stylized shapes with glow and haze.',
+      light: 'Soft glowing haze and warm candle light on clouds.',
+      texture: 'Soft rounded shapes with glow and haze, capes that shimmer, clouds like cotton.',
       camera: 'Wide third-person view over clouds.',
       mood: 'gentle luminous wonder',
-      render: 'Authentic soft stylized mobile screen.',
+      render:
+        'A 2019 phone frame at 1920 by 1080: small caped figures gliding over cloud kingdoms, a star-shaped cape meter near one figure.',
       key: 'Sky capes; cloud kingdoms; candle glow',
     }),
     ga('SP12-116', 'Ori and the Blind Forest 2015 - Moon Studios Luminous Painted', {
       look: 'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth.',
       subject: 'render people and creatures as small glowing figures against lush painted scenery.',
       color: 'Deep teal, glowing cyan and warm amber.',
-      light: 'Luminous glow against deep shadows.',
-      texture: 'Hand-painted layered backgrounds.',
+      light: 'Glowing figures with bright halos against deep blue shadows.',
+      texture:
+        'Rich hand-painted background layers at several depths, small crisp glowing character sprites.',
       camera: 'Side-view platformer with parallax.',
       mood: 'luminous tender wonder',
-      render: 'Authentic painted platformer screen.',
+      render:
+        'A 2015 side-view frame at 1920 by 1080: tiny glowing spirit in painted forest layers, a row of small orbs at the bottom.',
       key: 'Ori painted layers; luminous glow; parallax',
       avoid: ['a small white glowing spirit creature with long ears'],
     }),
@@ -257,11 +289,12 @@ const spec: Spec = {
       look: 'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters.',
       subject: 'render people as animated-film cartoon characters with expressive faces.',
       color: 'Rift purple, cyan and warm gold.',
-      light: 'Glowing rift light with cinematic bounce.',
-      texture: 'Animated-film-quality stylized surfaces.',
+      light: 'Purple rift glow and warm bounce light like an animated feature film.',
+      texture: 'Animated-film-quality shapes, fur and metal, sharp and clean with no grime.',
       camera: 'Third-person action view near a rift.',
       mood: 'zippy dimensional adventure',
-      render: 'Authentic PS5 animated-film action screen.',
+      render:
+        'A 2021 PlayStation 5 frame at 3840 by 2160 in third person: cartoon hero leaping through a purple rift portal, small bar shapes.',
       key: 'Rift Apart portals; animated-film 3D; purple rifts',
       avoid: ['a furry lombax with a small robot on his back'],
     }),
@@ -269,11 +302,13 @@ const spec: Spec = {
       look: 'Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes.',
       subject: 'render people as elegant thin watercolor figures with flowing shapes.',
       color: 'Watercolor washes of silver, blue and rose.',
-      light: 'Soft washed light with moon glow.',
-      texture: 'Watercolor washes and ink lines.',
+      light: 'Soft washed watercolor light and pale moon glow.',
+      texture:
+        'Watercolor washes, paper grain and thin ink lines, flat color zones blooming into each other.',
       camera: 'Side-view platformer composition.',
       mood: 'quiet grieving beauty',
-      render: 'Authentic watercolor platformer screen.',
+      render:
+        'A 2018 side-view frame at 1920 by 1080: small elegant figure crossing geometric watercolor ruins, no interface.',
       key: 'Gris watercolor; Conrad Roset; geometric ruins',
       avoid: ['a blue-haired girl in a flowing dress'],
     }),

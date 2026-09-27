@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Resident Evil 1996 - Fixed-Camera Mansion Dread
 category: 5. Video Games 90s
 domain: nineties survival horror game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - re-96
   - reference-title
 visualDna:
-  aesthetic: 'Capcom Resident Evil (1996) look: fixed cinematic camera angles over pre-rendered mansion rooms, low-poly characters, tank-control dread and door-opening transitions.'
+  aesthetic: "Capcom Resident Evil (1996) look: fixed cinematic camera angles over painted mansion rooms, blocky mitten-handed characters, tank-control dread and door-opening transitions."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; build every figure from a few dozen hard flat facets, with mitten hands, a block head wearing a painted face and a stiff upright stance, standing inside a still painted mansion room. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Dim mansion browns, dusty reds and dim green.
   lighting_and_shadow: "Lamplight and shadows painted into the still room image, while the figures stay flatly lit with only a dark blob under their feet."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Fixed high-angle security-camera shots, framed the way Resident Evil 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with claustrophobic survival dread.
   rendering_and_quality: "A 1996 PlayStation frame at 320 by 240 on a CRT television: soft, slightly banded color and stair-stepped edges, like a period magazine screenshot."
-  creative_brief: 'Capcom Resident Evil (1996) look: fixed cinematic camera angles over pre-rendered mansion rooms, low-poly characters, tank-control dread and door-opening transitions. Carry it through Fixed cameras, pre-rendered mansion, low-poly, survival dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Capcom Resident Evil (1996) look: fixed cinematic camera angles over painted mansion rooms, blocky mitten-handed characters, tank-control dread and door-opening transitions. Carry it through Fixed cameras, painted mansion rooms, blocky mitten-handed figures, survival dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Fixed cameras; painted mansion rooms; blocky mitten-handed figures; survival dread"
 avoidRules:
   - S.T.A.R.S. uniforms

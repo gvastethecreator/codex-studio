@@ -7,7 +7,7 @@ styleAnchors:
   - Okami Jade Volcano Shrine
 displayName: Okami 2006 - Clover Sumi-e Celestial Brush
 category: 2. Arcane Temples & Mythic Realms
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Clover Studio Okami (2006) look: cel-shaded sumi-e ink painting in motion, rice paper filter, bold brush outlines, Japanese folklore and celestial brush strokes across the sky.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as sumi-e ink figures with bold brush outlines and flowing painted forms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rice paper cream, jade green, cherry pink and ink black.
-  lighting_and_shadow: Soft painted daylight with glowing celestial strokes, lit the way Okami 2006 lights its levels.
-  texture_and_material: Sumi-e brush outlines on rice paper texture, with the in-engine surface finish of Okami 2006.
+  lighting_and_shadow: "Soft painted daylight with glowing celestial ink strokes across the sky."
+  texture_and_material: "Thick sumi-e brush outlines around every shape, rice paper grain laid over the whole screen."
   camera_and_composition: Third-person view across painted landscapes, framed the way Okami 2006 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with divine folkloric wonder.
-  rendering_and_quality: Authentic PS2 ink-painted action screen, matching real Okami 2006 screenshots.
+  rendering_and_quality: "A 2006 PlayStation 2 frame at 640 by 448: ink-painted world with soft blur and paper texture, an ink-pot row shape at the top."
   key_features: Okami sumi-e; rice paper; celestial brush strokes
   creative_brief: 'Clover Studio Okami (2006) look: cel-shaded sumi-e ink painting in motion, rice paper filter, bold brush outlines, Japanese folklore and celestial brush strokes across the sky. Carry it through Okami sumi-e, rice paper, celestial brush strokes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

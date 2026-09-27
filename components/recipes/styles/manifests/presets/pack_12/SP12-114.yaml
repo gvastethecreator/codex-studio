@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Abzu 2016 - Giant Squid Luminous Dive
 category: 2. Arcane Temples & Mythic Realms
 domain: sunken temple exploration screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized divers moving among vast shoals of fish. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Luminous turquoise, coral orange and deep blue, true to the Abzu 2016 palette.
-  lighting_and_shadow: Sunlit god rays through clear water, lit the way Abzu 2016 lights its levels.
-  texture_and_material: Smooth stylized shapes without grime, with the in-engine surface finish of Abzu 2016.
+  lighting_and_shadow: "Sunlit beams slanting through clear blue water, lit the way Abzu 2016 lights its levels."
+  texture_and_material: "Smooth simple shapes with clean gradients, thousands of small fish moving as one mass."
   camera_and_composition: Third-person swimming view, framed the way Abzu 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with meditative oceanic awe.
-  rendering_and_quality: Authentic stylized underwater screen, matching real Abzu 2016 screenshots.
+  rendering_and_quality: "A 2016 frame at 1920 by 1080: tiny diver among vast shoals, no interface at all."
   creative_brief: 'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples. Carry it through Abzu luminous shoals, god rays, sunken temples. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Abzu luminous shoals; god rays; sunken temples
 avoidRules:

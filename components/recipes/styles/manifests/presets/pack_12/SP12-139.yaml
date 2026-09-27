@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Crash Team Racing 2019 - Beenox Cartoon Kart
 category: 5. Speed, Sport & Competitive Arenas
 domain: cartoon kart racing screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as cartoon kart racers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright jungle green, lava orange and sky blue.
-  lighting_and_shadow: Bright cartoon light with drift sparks, lit the way Crash Team Racing 2019 lights its levels.
-  texture_and_material: Glossy stylized cartoon surfaces, with the in-engine surface finish of Crash Team Racing 2019.
+  lighting_and_shadow: "Bright cartoon light with blue and orange drift sparks."
+  texture_and_material: "Glossy stylized cartoon karts and characters, soft clean shapes."
   camera_and_composition: Chase camera behind the kart, framed the way Crash Team Racing 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic kart fun.
-  rendering_and_quality: Authentic cartoon kart racer screen, matching real Crash Team Racing 2019 screenshots.
+  rendering_and_quality: "A 2019 frame at 1920 by 1080 from behind the kart: a position number shape and an item box shape at the top."
   creative_brief: 'Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters. Carry it through CTR cartoon karts, drift sparks, item chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: CTR cartoon karts; drift sparks; item chaos
 avoidRules:

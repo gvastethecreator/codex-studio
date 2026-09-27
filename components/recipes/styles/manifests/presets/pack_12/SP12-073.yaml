@@ -3,7 +3,7 @@ id: SP12-073
 packId: pack_12
 name: Shadow of the Colossus 2018 - Bluepoint Colossus Climb
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny figures clinging to colossal furred creatures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft green, stone grey and sun haze, true to the Shadow of the Colossus 2018 palette.
-  lighting_and_shadow: Soft bloom and hazy sunlight, lit the way Shadow of the Colossus 2018 lights its levels.
-  texture_and_material: Detailed fur, moss and ancient stone, with the in-engine surface finish of Shadow of the Colossus 2018.
+  lighting_and_shadow: "Soft bloom and hazy sunlight washing the landscape pale."
+  texture_and_material: "Detailed fur, moss and ancient stone on a colossal moving creature."
   camera_and_composition: Wide low view of a colossus, framed the way Shadow of the Colossus 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic grand struggle.
-  rendering_and_quality: Authentic modern remake adventure screen, matching real Shadow of the Colossus 2018 screenshots.
+  rendering_and_quality: "A 2018 PlayStation 4 frame at 1920 by 1080: tiny figure clinging to a colossus, a grip circle shape bottom right."
   key_features: Colossus climb; tiny rider; vast land
   creative_brief: 'Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur. Carry it through Colossus climb, tiny rider, vast land. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

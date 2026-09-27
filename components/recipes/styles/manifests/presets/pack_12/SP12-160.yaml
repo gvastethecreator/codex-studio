@@ -9,7 +9,7 @@ styleAnchors:
 displayName: No One Lives Forever 2000 - Monolith Sixties Spy
 category: 7. Heists, Horror & Underworld Runs
 domain: stealth casino heist screenshot
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,15 +22,15 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors.'
+  aesthetic: "Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as groovy sixties spies in mod fashion and tuxedos. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mod orange, casino red and gold, true to the No One Lives Forever 2000 palette.
-  lighting_and_shadow: Casino glamour lighting, lit the way No One Lives Forever 2000 lights its levels.
-  texture_and_material: Early-2000s low-poly textures, with the in-engine surface finish of No One Lives Forever 2000.
+  lighting_and_shadow: "Warm casino glamour lighting with simple flat shading."
+  texture_and_material: "Blurry textures on simple boxy walls and furniture, figures with smooth simple faces."
   camera_and_composition: First-person casino view, framed the way No One Lives Forever 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with groovy spy glamour.
-  rendering_and_quality: Authentic early-2000s spy shooter screen, matching real No One Lives Forever 2000 screenshots.
-  creative_brief: 'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 2000 PC frame at 800 by 600 in first person: a gun at the bottom, a sixties casino of simple shapes, number shapes in the corners."
+  creative_brief: "Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: NOLF sixties spy; mod fashion; casino
 avoidRules:
   - readable signs

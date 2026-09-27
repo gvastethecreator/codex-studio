@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sly Cooper 2002 - Sucker Punch Toon Heist
 category: 7. Heists, Horror & Underworld Runs
 domain: museum laser security screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded cartoon animal thieves with sneaky poses. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night blue, laser red and gold, true to the Sly Cooper 2002 palette.
-  lighting_and_shadow: Cartoon night light with laser glow, lit the way Sly Cooper 2002 lights its levels.
-  texture_and_material: Cel shading with ink outlines, with the in-engine surface finish of Sly Cooper 2002.
+  lighting_and_shadow: "Cartoon night light with glowing red laser beams."
+  texture_and_material: "Cel shading with thick ink outlines on cartoon animals and rooftops."
   camera_and_composition: Third-person sneak view, framed the way Sly Cooper 2002 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with sly playful heist.
-  rendering_and_quality: Authentic PS2 toon heist screen, matching real Sly Cooper 2002 screenshots.
+  rendering_and_quality: "A 2002 PlayStation 2 frame at 640 by 448: cel-shaded thief sneaking past lasers, jagged edges, a small gauge shape."
   creative_brief: 'Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses. Carry it through Sly Cooper cel, animal thieves, lasers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sly Cooper cel; animal thieves; lasers
 avoidRules:

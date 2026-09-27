@@ -3,7 +3,7 @@ id: SP12-071
 packId: pack_12
 name: Half-Life 2 2004 - Valve City 17 Resistance
 category: 1. Neon Urban & Night Ops
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tired resistance citizens in blue work clothes and scavenged gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Desaturated teal, concrete grey, rust brown and faded green.
-  lighting_and_shadow: Overcast diffuse light with sharp Source engine shadows.
-  texture_and_material: Source engine textures of rust, concrete, grime and scrap.
+  lighting_and_shadow: "Overcast flat light with crisp dark shadows under ledges and a slightly hazy distance."
+  texture_and_material: "Rust, concrete and grime textures that look sharp from afar but blurry up close, simple blocky debris."
   camera_and_composition: First-person view with a weapon at screen right.
   atmosphere_and_mood: Keep the requested mood with grim occupied resistance.
-  rendering_and_quality: Authentic mid-2000s Source engine first-person screen, matching real Half-Life 2 2004 screenshots.
+  rendering_and_quality: "A 2004 PC frame at 1024 by 768 in first person: muted teal-grey city, a weapon at bottom right, health and ammo number shapes at the bottom."
   key_features: Half-Life 2 City 17; citadel; canals; first-person
   creative_brief: 'Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins. Carry it through Half-Life 2 City 17, citadel, canals, first-person. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

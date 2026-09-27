@@ -192,22 +192,22 @@ export const GENERATED_STYLE_PRESETS = [
       'a pyramid-helmeted executioner, readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight.',
+        'Team Silent Silent Hill (1999) look: PlayStation horror with thick fog hiding a tiny draw distance, crackling radio, blocky town streets, darkness and heavy grain.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 figures in the fog. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky figures with simple smeared faces, half lost in a grey fog wall. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'White fog and rust, true to the Silent Hill 1999 palette.',
       lighting_and_shadow:
-        'Fog and flashlight cone, lit the way Silent Hill 1999 lights its levels.',
+        'Thick grey fog that swallows everything a few steps away, a flashlight cone at night.',
       texture_and_material:
-        'Low-poly PS1 textures, with the in-engine surface finish of Silent Hill 1999.',
+        'Blurry textures that wobble on simple boxy streets and buildings, grain over everything.',
       camera_and_composition:
         'Third-person fog view, framed the way Silent Hill 1999 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with unknowable foggy dread.',
       rendering_and_quality:
-        'Authentic PS1 horror screen, matching real Silent Hill 1999 screenshots.',
+        'A 1999 PlayStation frame at 320 by 240 on a CRT: soft, jagged and foggy, a static crackle of grain.',
       creative_brief:
-        "Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight. Carry it through Silent Hill 1999 fog, low-poly, radio. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Silent Hill 1999 fog; low-poly; radio',
+        "Team Silent Silent Hill (1999) look: PlayStation horror with thick fog hiding a tiny draw distance, crackling radio, blocky town streets, darkness and heavy grain. Carry it through Silent Hill 1999 fog wall, blocky figures, grainy soft PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Silent Hill 1999 fog wall; blocky figures; grainy soft PS1',
     },
     ui: {
       previewStatus: 'pending',
@@ -233,15 +233,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as survivors caught between normal rooms and rust. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Rust red, ash and dirty metal, true to the Silent Hill Homecoming 2008 palette.',
-      lighting_and_shadow:
-        'Siren-lit darkness, lit the way Silent Hill Homecoming 2008 lights its levels.',
-      texture_and_material:
-        'Peeling paper, rust and grates, with the in-engine surface finish of Silent Hill Homecoming 2008.',
+      lighting_and_shadow: 'Dark rooms lit by red siren light and a flashlight.',
+      texture_and_material: 'Peeling paper curling away to reveal rust and grates underneath.',
       camera_and_composition:
         'Third-person transition view, framed the way Silent Hill Homecoming 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with screaming nightmare shift.',
       rendering_and_quality:
-        'Authentic horror transition screen, matching real Silent Hill Homecoming 2008 screenshots.',
+        'A 2008 frame at 1280 by 720 in third person: a room mid-transformation into rust, a small flashlight cone.',
       creative_brief:
         "Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot. Carry it through Homecoming peeling walls, rust otherworld, sirens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Homecoming peeling walls; rust otherworld; sirens',
@@ -269,14 +267,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as unseen first-person visitors in a domestic hallway. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dim beige, sickly green and shadow, true to the P.T. 2014 palette.',
-      lighting_and_shadow: 'Flickering hallway bulb, lit the way P.T. 2014 lights its levels.',
-      texture_and_material:
-        'Photoreal domestic surfaces, with the in-engine surface finish of P.T. 2014.',
+      lighting_and_shadow: 'A single flickering hallway bulb with deep dark corners.',
+      texture_and_material: 'Photoreal domestic walls, frames and floorboards with slight grain.',
       camera_and_composition:
         'First-person hallway view, framed the way P.T. 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with looping domestic terror.',
       rendering_and_quality:
-        'Authentic photoreal horror screen, matching real P.T. 2014 screenshots.',
+        'A 2014 first-person frame at 1920 by 1080: an L-shaped hallway, no interface at all.',
       creative_brief:
         "Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light. Carry it through P.T. looping hallway, photoreal, dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'P.T. looping hallway; photoreal; dread',
@@ -304,14 +301,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as soldiers in face paint and jungle gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Lush jungle green and sun gold, true to the Crysis 2007 palette.',
-      lighting_and_shadow: 'God rays through foliage, lit the way Crysis 2007 lights its levels.',
+      lighting_and_shadow:
+        'Bright god rays through dense tropical foliage, lit the way Crysis 2007 lights its levels.',
       texture_and_material:
-        'Dense photoreal foliage, with the in-engine surface finish of Crysis 2007.',
+        'Dense photoreal foliage, sharp nearby and softer beyond, very busy with leaves.',
       camera_and_composition:
         'First-person jungle view, framed the way Crysis 2007 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense predatory stealth.',
       rendering_and_quality:
-        'Authentic CryEngine jungle screen, matching real Crysis 2007 screenshots.',
+        'A 2007 PC frame at 1920 by 1200 in first person: rifle at bottom right, jungle, a small compass and number shapes.',
       creative_brief:
         "Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays. Carry it through Crysis jungle, foliage, stealth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Crysis jungle; foliage; stealth',
@@ -335,23 +333,21 @@ export const GENERATED_STYLE_PRESETS = [
       'a soldier in a sneaking suit with a bandana, existing Metal Gear walkers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank.',
+        'Konami Metal Gear Solid (1998) look: PlayStation stealth at a snowy Alaskan base with blocky soldiers, sweeping searchlights, boxy corridors and a radar box.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 soldiers and guards. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky soldiers and guards with smeared painted faces and stiff chunky limbs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Snow white, steel grey and night blue, true to the Metal Gear Solid 1998 palette.',
-      lighting_and_shadow:
-        'Searchlights at night, lit the way Metal Gear Solid 1998 lights its levels.',
-      texture_and_material:
-        'Low-poly PS1 textures, with the in-engine surface finish of Metal Gear Solid 1998.',
+      lighting_and_shadow: 'Night with sweeping searchlight cones on snowy ground.',
+      texture_and_material: 'Blurry textures that wobble on boxy base buildings, grainy snow.',
       camera_and_composition:
         'Overhead stealth camera, framed the way Metal Gear Solid 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense cold infiltration.',
       rendering_and_quality:
-        'Authentic PS1 stealth screen, matching real Metal Gear Solid 1998 screenshots.',
+        'A 1998 PlayStation frame at 320 by 240 on a CRT from a high camera: soft, jagged, a radar box shape top right.',
       creative_brief:
-        "Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank. Carry it through MGS1 base, searchlights, walking tank. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'MGS1 base; searchlights; walking tank',
+        "Konami Metal Gear Solid (1998) look: PlayStation stealth at a snowy Alaskan base with blocky soldiers, sweeping searchlights, boxy corridors and a radar box. Carry it through MGS1 blocky soldiers, searchlights, snowy base, radar box. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'MGS1 blocky soldiers; searchlights; snowy base; radar box',
     },
     ui: {
       previewStatus: 'pending',
@@ -376,14 +372,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized climbers with big packs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft stone, moss green and sky blue, true to the Jusant 2023 palette.',
-      lighting_and_shadow: 'Soft painterly light, lit the way Jusant 2023 lights its levels.',
-      texture_and_material:
-        'Painterly stone and cloth, with the in-engine surface finish of Jusant 2023.',
+      lighting_and_shadow:
+        'Soft painted light on warm stone cliffs, lit the way Jusant 2023 lights its levels.',
+      texture_and_material: 'Painterly stone and cloth with soft brush detail.',
       camera_and_composition:
         'Wide climbing view, framed the way Jusant 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet meditative ascent.',
       rendering_and_quality:
-        'Authentic painterly climbing screen, matching real Jusant 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080 in third person: small climber with a big pack on a vast cliff, no interface.',
       creative_brief:
         "Don't Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air. Carry it through Jusant climbing, drought world, floating whales. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Jusant climbing; drought world; floating whales',
@@ -412,15 +408,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as haunted artists seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Victorian brown, oil paint and shadow, true to the Layers of Fear 2016 palette.',
-      lighting_and_shadow:
-        'Candle and warped light, lit the way Layers of Fear 2016 lights its levels.',
-      texture_and_material:
-        'Oil paint, wood and plaster, with the in-engine surface finish of Layers of Fear 2016.',
+      lighting_and_shadow: 'Candlelight with rooms that seem to bend and stretch.',
+      texture_and_material: 'Oil paint, wood and plaster, with paintings melting on the walls.',
       camera_and_composition:
         'First-person warped view, framed the way Layers of Fear 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with unraveling artistic madness.',
       rendering_and_quality:
-        'Authentic psychological horror screen, matching real Layers of Fear 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: a room warping as the view turns, no interface.',
       creative_brief:
         "Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint. Carry it through Layers of Fear shifting rooms, paint, madness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Layers of Fear shifting rooms; paint; madness',
@@ -448,14 +442,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt figures in a grimy derelict interior. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Grimy green, flashlight white and rust, true to the Condemned 2005 palette.',
-      lighting_and_shadow: 'Flashlight in darkness, lit the way Condemned 2005 lights its levels.',
-      texture_and_material:
-        'Grimy decay textures, with the in-engine surface finish of Condemned 2005.',
+      lighting_and_shadow: 'A narrow flashlight beam in dark derelict rooms.',
+      texture_and_material: 'Grimy decay, stained walls and debris with slightly blurry textures.',
       camera_and_composition:
         'First-person flashlight view, framed the way Condemned 2005 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grimy lurking dread.',
       rendering_and_quality:
-        'Authentic mid-2000s horror screen, matching real Condemned 2005 screenshots.',
+        'A 2005 Xbox 360 first-person frame at 1280 by 720: a pipe held at the bottom, a bar shape at the top.',
       creative_brief:
         "Monolith Productions Condemned: Criminal Origins (2005) look: first-person grimy derelict buildings, forensic flashlight, melee pipes and gaunt figures in darkness. Carry it through Condemned grime, flashlight, derelict. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Condemned grime; flashlight; derelict',
@@ -485,14 +478,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Night black, goggle green and rain blue, true to the Splinter Cell Chaos Theory 2005 palette.',
       lighting_and_shadow:
-        'Darkness with flashlight sweeps, lit the way Splinter Cell Chaos Theory 2005 lights its levels.',
+        'Near-total darkness with flashlight sweeps; night vision turns everything green.',
       texture_and_material:
-        'Wet gear and rain, with the in-engine surface finish of Splinter Cell Chaos Theory 2005.',
+        'Wet dark gear and rain with glossy highlights, deep black shadows swallowing most surfaces.',
       camera_and_composition:
         'Third-person stealth view, framed the way Splinter Cell Chaos Theory 2005 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense silent infiltration.',
       rendering_and_quality:
-        'Authentic stealth screen, matching real Splinter Cell Chaos Theory 2005 screenshots.',
+        'A 2005 frame at 1024 by 768 in third person: operative in shadow, a light meter bar shape bottom right.',
       creative_brief:
         "Ubisoft Montreal Splinter Cell: Chaos Theory (2005) look: third-person stealth in rain and darkness, light meters, green night-vision goggles and guards with flashlights. Carry it through Splinter Cell darkness, goggles, rain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Splinter Cell darkness; goggles; rain',
@@ -516,23 +509,22 @@ export const GENERATED_STYLE_PRESETS = [
       'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures.',
+        'Asmik Ace LSD Dream Emulator (1998) look: surreal PlayStation dream exploration of simple blocky pastel worlds, warped textures and impossible links between places.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly dream figures. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as simple blocky dream figures with flat painted faces in surreal pastel places. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pastel pink, sky blue and surreal colors, true to the LSD Dream Emulator 1998 palette.',
-      lighting_and_shadow:
-        'Flat dream light, lit the way LSD Dream Emulator 1998 lights its levels.',
+      lighting_and_shadow: 'Flat dream light in odd pastel colors with no shadows.',
       texture_and_material:
-        'Warped PS1 textures, with the in-engine surface finish of LSD Dream Emulator 1998.',
+        'Stretched and warped blurry textures on simple shapes, strange repeated patterns.',
       camera_and_composition:
         'First-person dream view, framed the way LSD Dream Emulator 1998 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with uncanny dreamy drift.',
       rendering_and_quality:
-        'Authentic PS1 dream screen, matching real LSD Dream Emulator 1998 screenshots.',
+        'A 1998 PlayStation frame at 320 by 240 on a CRT in first person: soft, jagged and surreal, no interface.',
       creative_brief:
-        "Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures. Carry it through LSD Dream Emulator, pastel, surreal PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'LSD Dream Emulator; pastel; surreal PS1',
+        "Asmik Ace LSD Dream Emulator (1998) look: surreal PlayStation dream exploration of simple blocky pastel worlds, warped textures and impossible links between places. Carry it through LSD Dream Emulator pastel blocky dreams, warped textures, surreal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'LSD Dream Emulator pastel blocky dreams; warped textures; surreal',
     },
     ui: {
       previewStatus: 'pending',
@@ -557,15 +549,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as lonely wanderers seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Storm grey, sea teal and lamp gold, true to the Dear Esther 2012 palette.',
-      lighting_and_shadow:
-        'Stormy light with lamp beams, lit the way Dear Esther 2012 lights its levels.',
-      texture_and_material:
-        'Realistic rock and sea spray, with the in-engine surface finish of Dear Esther 2012.',
+      lighting_and_shadow: 'Stormy grey light with a lighthouse beam sweeping.',
+      texture_and_material: 'Realistic rock and sea spray, slightly soft and lonely.',
       camera_and_composition:
         'First-person lamp room view, framed the way Dear Esther 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic windswept isolation.',
       rendering_and_quality:
-        'Authentic walking-sim screen, matching real Dear Esther 2012 screenshots.',
+        'A 2012 first-person frame at 1920 by 1080: rocky island path, lighthouse ahead, no interface.',
       creative_brief:
         "The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration. Carry it through Dear Esther island, lighthouse, storm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Dear Esther island; lighthouse; storm',
@@ -594,14 +584,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as masked sixties partygoers. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mod orange, teal and gold, true to the Deathloop 2021 palette.',
       lighting_and_shadow:
-        'Party lights at midnight, lit the way Deathloop 2021 lights its levels.',
-      texture_and_material:
-        'Stylized painterly surfaces, with the in-engine surface finish of Deathloop 2021.',
+        'Bright sixties party lights at midnight, lit the way Deathloop 2021 lights its levels.',
+      texture_and_material: 'Stylized painted surfaces with bold retro colors and patterns.',
       camera_and_composition:
         'First-person party view, framed the way Deathloop 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with stylish looping intrigue.',
       rendering_and_quality:
-        'Authentic stylized loop screen, matching real Deathloop 2021 screenshots.',
+        'A 2021 first-person frame at 1920 by 1080: a gun held at the bottom, masked partygoers, small power slot shapes.',
       creative_brief:
         "Arkane Lyon Deathloop (2021) look: sixties retro-futurist island party in a time loop, mod colors, masked partygoers and stylized painterly art. Carry it through Deathloop sixties, masks, time loop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Deathloop sixties; masks; time loop',
@@ -631,14 +620,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Grey-green mist and rust, true to the STALKER Shadow of Chernobyl 2007 palette.',
       lighting_and_shadow:
-        'Overcast mist, lit the way STALKER Shadow of Chernobyl 2007 lights its levels.',
+        'Grey overcast mist over ruined industry, lit the way STALKER Shadow of Chernobyl 2007 lights its levels.',
       texture_and_material:
-        'Grimy late-2000s textures, with the in-engine surface finish of STALKER Shadow of Chernobyl 2007.',
+        'Grimy concrete and rust with blurry textures up close, dull greens and browns.',
       camera_and_composition:
         'First-person scope view, framed the way STALKER Shadow of Chernobyl 2007 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with paranoid patient survival.',
       rendering_and_quality:
-        'Authentic late-2000s survival screen, matching real STALKER Shadow of Chernobyl 2007 screenshots.',
+        'A 2007 PC frame at 1280 by 1024 in first person: rifle at the bottom, misty Zone, a small minimap circle top left.',
       creative_brief:
         "GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers. Carry it through STALKER Zone, mist, anomalies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'STALKER Zone; mist; anomalies',
@@ -667,15 +656,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small chibi figures with flashlights. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Night blue with flashlight yellow, true to the Yomawari Night Alone 2015 palette.',
-      lighting_and_shadow:
-        'Flashlight cone in darkness, lit the way Yomawari Night Alone 2015 lights its levels.',
-      texture_and_material:
-        'Soft hand-drawn art, with the in-engine surface finish of Yomawari Night Alone 2015.',
+      lighting_and_shadow: 'A small flashlight cone in dark night streets.',
+      texture_and_material: 'Soft hand-drawn art with simple outlines and flat colors.',
       camera_and_composition:
         'Top-down night walk view, framed the way Yomawari Night Alone 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cute creeping dread.',
       rendering_and_quality:
-        'Authentic chibi horror screen, matching real Yomawari Night Alone 2015 screenshots.',
+        'A 2015 frame at 960 by 544: tiny chibi girl with a flashlight on a dark street, a heart shape in a corner.',
       creative_brief:
         "Nippon Ichi Software Yomawari: Night Alone (2015) look: a small chibi girl with a flashlight walking a dark Japanese suburb at night, cute art and creeping spirits. Carry it through Yomawari night walk, chibi, spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Yomawari night walk; chibi; spirits',

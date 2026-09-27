@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Alan Wake 2010 - Remedy Flashlight Horror
 category: 7. Heists, Horror & Underworld Runs
 domain: flashlight exploration horror screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary writers and townsfolk holding flashlights against the dark. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night blue, flashlight white and fog grey, true to the Alan Wake 2010 palette.
-  lighting_and_shadow: Single hard flashlight beam in fog, lit the way Alan Wake 2010 lights its levels.
-  texture_and_material: Realistic wood, fog and shadow, with the in-engine surface finish of Alan Wake 2010.
+  lighting_and_shadow: "A single hard flashlight beam in thick fog, everything else near black."
+  texture_and_material: "Realistic wood, fog and shadow, a little soft and grainy."
   camera_and_composition: Over-the-shoulder flashlight view, framed the way Alan Wake 2010 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with suspenseful psychological dread.
-  rendering_and_quality: Authentic thriller game screen, matching real Alan Wake 2010 screenshots.
+  rendering_and_quality: "A 2010 Xbox 360 frame at 1280 by 720 in third person over the shoulder: flashlight cone in foggy woods, a small battery bar shape."
   creative_brief: 'Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension. Carry it through Alan Wake flashlight, dark presence, fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Alan Wake flashlight; dark presence; fog
 avoidRules:

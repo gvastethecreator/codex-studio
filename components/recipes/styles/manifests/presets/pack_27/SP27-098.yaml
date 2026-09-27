@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Grim Fandango 1998 - LucasArts Calavera Noir
 category: 5. Video Games 90s
 domain: nineties adventure game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - grim-fandango
   - reference-title
 visualDna:
-  aesthetic: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere.'
+  aesthetic: "LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, lush painted backgrounds with simple smooth skeleton figures on top."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as calavera skeleton figures with simple smooth heads standing in lush painted art deco scenes. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Noir amber, marigold orange and deep teal, true to the Grim Fandango 1998 palette.
   lighting_and_shadow: "Smoky noir lighting and neon painted into the detailed backgrounds, with plainly lit figures on top."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cinematic noir fixed angles, framed the way Grim Fandango 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with smoky deco noir.
   rendering_and_quality: "A 1998 PC frame at 640 by 480: soft figures clearly simpler than the detailed painted backdrop behind them."
-  creative_brief: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere. Carry it through Grim Fandango calaveras, art deco noir, low-poly skeletons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, lush painted backgrounds with simple smooth skeleton figures on top. Carry it through Grim Fandango calaveras, art deco noir, painted backdrops, simple smooth figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Grim Fandango calaveras; art deco noir; painted backdrops; simple smooth figures"
 avoidRules:
   - a skeleton travel agent in a suit and a demon mechanic

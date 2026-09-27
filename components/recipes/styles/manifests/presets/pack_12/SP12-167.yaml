@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Luigi's Mansion 3 2019 - Next Level Games Ghost Hotel
 category: 7. Heists, Horror & Underworld Runs
 domain: cartoon ghost hunting game screenshot
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Next Level Games Luigi''s Mansion 3 (2019) look: animated-film haunted hotel, goofy colorful ghosts, suction vacuum effects, swirling furniture and soft spooky light.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as nervous cartoon ghost catchers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Spooky purple, ghost green and warm gold, true to the Luigi's Mansion 3 2019 palette.
-  lighting_and_shadow: Soft spooky light and vacuum glow, lit the way Luigi's Mansion 3 2019 lights its levels.
-  texture_and_material: Animated-film stylized surfaces, with the in-engine surface finish of Luigi's Mansion 3 2019.
+  lighting_and_shadow: "Soft spooky purple light and bright green vacuum glow."
+  texture_and_material: "Animated-film-quality rounded shapes, velvet, brass and glowing translucent ghosts."
   camera_and_composition: Third-person room view, framed the way Luigi's Mansion 3 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with goofy spooky fun.
-  rendering_and_quality: Authentic animated-film adventure screen, matching real Luigi's Mansion 3 2019 screenshots.
+  rendering_and_quality: "A 2019 Switch frame at 1920 by 1080: nervous cartoon ghost catcher in a haunted hotel corridor, a small heart shape."
   creative_brief: 'Next Level Games Luigi''s Mansion 3 (2019) look: animated-film haunted hotel, goofy colorful ghosts, suction vacuum effects, swirling furniture and soft spooky light. Carry it through Luigi Mansion ghosts, vacuum, haunted hotel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Luigi Mansion ghosts; vacuum; haunted hotel
 avoidRules:

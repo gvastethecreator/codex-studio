@@ -8,7 +8,7 @@ styleAnchors:
   - Whitewall Gate Test Chamber
 displayName: Portal 2 2011 - Valve Aperture Test Chamber
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,11 +27,11 @@ visualDna:
   aesthetic: 'Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as test subjects in plain white jumpsuits and long-fall boots, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Clinical white, panel grey, laser red and light-bridge blue.
-  lighting_and_shadow: Clean even fluorescent light with glowing beams, lit the way Portal 2 2011 lights its levels.
-  texture_and_material: Matte white panels, brushed metal and glass, with the in-engine surface finish of Portal 2 2011.
+  lighting_and_shadow: "Clean even fluorescent light with glowing blue and orange beams."
+  texture_and_material: "Matte white panels in a square grid, brushed metal and glass, very clean."
   camera_and_composition: First-person view in a test chamber, framed the way Portal 2 2011 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dry clinical wit.
-  rendering_and_quality: Authentic Source engine puzzle screen, matching real Portal 2 2011 screenshots.
+  rendering_and_quality: "A 2011 first-person frame at 1280 by 720: a white-and-grey device held at the bottom right, test chamber panels, a small crosshair ring."
   key_features: Portal 2 test chamber; white panels; robotic arms; lasers
   creative_brief: 'Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor. Carry it through Portal 2 test chamber, white panels, robotic arms, lasers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

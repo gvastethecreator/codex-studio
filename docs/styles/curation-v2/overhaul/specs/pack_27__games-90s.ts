@@ -33,7 +33,7 @@ const spec: Spec = {
       ],
     }),
     cr('Myst 1993 - Cyan Pre-Rendered Island', 'nineties adventure game', [...T, 'myst'], {
-      look: 'Cyan Myst (1993) look: still pre-rendered 3D island scenes, early CGI surfaces, strange mechanical puzzles, libraries and quiet surreal emptiness.',
+      look: 'Cyan Myst (1993) look: still computer-rendered 3D island scenes of early CGI, glassy surfaces, dithered colors, empty surreal machinery and no people in sight.',
       subject:
         'show the subject as a still early computer-rendered scene of a quiet surreal island, perfectly smooth and motionless.',
       color: 'Early CGI greens, stone grey and brass.',
@@ -57,7 +57,7 @@ const spec: Spec = {
       'nineties console role-playing game',
       [...T, 'ff7'],
       {
-        look: 'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs.',
+        look: 'Square Final Fantasy VII (1997) look: detailed computer-rendered background pictures with tiny blocky figures pasted on top, glowing mako green and steampunk cities.',
         subject:
           'build the subject as a tiny chunky figure of a handful of untextured color blocks, with oversized boxy hands and head, dwarfed by a lush painted backdrop.',
         color: 'Mako green glow, rusty industrial browns and night blue.',
@@ -65,7 +65,8 @@ const spec: Spec = {
           'Glowing lights painted into the detailed backdrop, while the chunky figures stay evenly lit with plain smooth shading.',
         texture:
           'Smoothly shaded plain color blocks for the figures, pasted onto a far more refined and detailed computer-rendered background image.',
-        camera: 'Fixed cinematic angle of a pre-rendered scene.',
+        camera:
+          'Fixed cinematic camera angle chosen for each painted background, figures small in the frame.',
         mood: 'melancholy steampunk adventure',
         render:
           'A 1997 PlayStation frame at 320 by 240: the clash between crude blocky figures and the rich detailed backdrop must be obvious.',
@@ -83,7 +84,7 @@ const spec: Spec = {
       'nineties survival horror game',
       [...T, 're-96'],
       {
-        look: 'Capcom Resident Evil (1996) look: fixed cinematic camera angles over pre-rendered mansion rooms, low-poly characters, tank-control dread and door-opening transitions.',
+        look: 'Capcom Resident Evil (1996) look: fixed cinematic camera angles over painted mansion rooms, blocky mitten-handed characters, tank-control dread and door-opening transitions.',
         subject:
           'build every figure from a few dozen hard flat facets, with mitten hands, a block head wearing a painted face and a stiff upright stance, standing inside a still painted mansion room.',
         color: 'Dim mansion browns, dusty reds and dim green.',
@@ -134,7 +135,7 @@ const spec: Spec = {
       'nineties console platformer',
       [...T, 'dkc'],
       {
-        look: 'Rare Donkey Kong Country (1994) SNES look: pre-rendered 3D models turned into glossy sprites, lush jungles, mine carts, banana hoards and atmospheric parallax.',
+        look: 'Rare Donkey Kong Country (1994) SNES look: shiny 3D-looking characters turned into glossy pixel sprites, layered dark jungles, mine carts and banded color.',
         subject:
           'show the subject as a glossy rubbery 3D-looking character flattened into pixel sprites running across lush jungle stages.',
         color: 'Jungle green, banana yellow and sunset orange.',
@@ -255,7 +256,7 @@ const spec: Spec = {
       'nineties PC action role-playing game',
       [...T, 'diablo-96'],
       {
-        look: 'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere.',
+        look: 'Blizzard North Diablo (1996) look: dark gothic dungeons seen from a high diagonal, grainy shrunken-render sprites, blood-red and brown palettes and a small circle of light.',
         subject:
           'show the subject as a small figure seen from a high diagonal angle in dark gothic dungeon rooms.',
         color: 'Dark brown, blood red and candle gold.',
@@ -277,7 +278,7 @@ const spec: Spec = {
       },
     ),
     cr('StarCraft 1998 - Blizzard Sci-Fi RTS', 'nineties strategy game', [...T, 'starcraft'], {
-      look: 'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface.',
+      look: 'Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel.',
       subject:
         'show the subject as tiny units seen from a high diagonal angle on dark sci-fi terrain.',
       color: 'Dark space blue, alien purple and industrial grey.',
@@ -352,7 +353,7 @@ const spec: Spec = {
       'nineties console shooter',
       [...T, 'goldeneye'],
       {
-        look: 'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities.',
+        look: 'Rare GoldenEye 007 (1997) look: Nintendo 64 first-person spy shooter with smeared blurry textures, heavy fog, low frame rate, stiff boxy guards and Cold War facilities.',
         subject:
           'build figures from a few boxy chunks with flat painted-on faces and stiff arms, walking plain box-shaped corridors seen in first person.',
         color: 'Military grey, snow white and fog.',
@@ -418,7 +419,7 @@ const spec: Spec = {
       'nineties adventure game',
       [...T, 'grim-fandango'],
       {
-        look: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere.',
+        look: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, lush painted backgrounds with simple smooth skeleton figures on top.',
         subject:
           'show the subject as calavera skeleton figures with simple smooth heads standing in lush painted art deco scenes.',
         color: 'Noir amber, marigold orange and deep teal.',

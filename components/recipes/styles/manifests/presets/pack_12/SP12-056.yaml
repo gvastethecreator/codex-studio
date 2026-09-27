@@ -7,7 +7,7 @@ styleAnchors:
   - Ghostrunner Carbon Megacity
 displayName: Ghostrunner 2020 - One More Level Cyber Parkour
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Carbon black metal, grime, cables and glossy neon reflections.
   camera_and_composition: First-person wall-run view with the blade in frame.
   atmosphere_and_mood: Keep the requested mood with razor-sharp vertical speed.
-  rendering_and_quality: Authentic modern Unreal first-person action screen, matching real Ghostrunner 2020 screenshots.
+  rendering_and_quality: "A 2020 first-person frame at 1920 by 1080: katana-holding cyber hand at the bottom right, red neon strips streaking with motion blur."
   key_features: Ghostrunner first-person katana; wall-runs; red neon megatower
   creative_brief: 'One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths. Carry it through Ghostrunner first-person katana, wall-runs, red neon megatower. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

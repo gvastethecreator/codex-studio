@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Metal Slug 1996 - Nazca SNK Pixel War
 category: 5. Video Games 90s
 domain: nineties arcade action game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side-scrolling war view, framed the way Metal Slug 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with comedic explosive chaos.
   rendering_and_quality: "A 1996 Neo Geo arcade frame at 304 by 224: crisp tiny pixels, busy side-scrolling battlefield."
-  creative_brief: 'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame. Carry it through Metal Slug detailed pixels, comedic war, chunky tanks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame. Carry it through Metal Slug dense pixels, comedic war, chunky tanks, huge explosions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Metal Slug dense pixels; comedic war; chunky tanks; huge explosions"
 avoidRules:
   - a tiny green tank with a cannon

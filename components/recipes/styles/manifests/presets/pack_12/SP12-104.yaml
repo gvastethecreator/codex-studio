@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Hitman 2016 - IO Interactive Sniper Scope
 category: 1. Neon Urban & Night Ops
 domain: sniper scope night game screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'IO Interactive Hitman (2016) look: sleek realistic city rooftops, polished Glacier engine lighting, a round sniper scope view with reticle and calm clinical assassination tension.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic distant figures seen through a round scope reticle. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night blue, sodium amber and clean scope black.
-  lighting_and_shadow: Realistic city night light with window glow, lit the way Hitman 2016 lights its levels.
-  texture_and_material: Realistic Glacier engine surfaces, with the in-engine surface finish of Hitman 2016.
+  lighting_and_shadow: "Realistic night city light with warm window glow and cool streetlights."
+  texture_and_material: "Realistic glass, stone and fabric at a distance, softened by the scope lens."
   camera_and_composition: Round scope view with a thin reticle, framed the way Hitman 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cold patient focus.
-  rendering_and_quality: Authentic modern stealth sniper screen, matching real Hitman 2016 screenshots.
+  rendering_and_quality: "A 2016 frame at 1920 by 1080: a round black scope view filling the screen, thin crosshair lines, a figure framed inside."
   creative_brief: 'IO Interactive Hitman (2016) look: sleek realistic city rooftops, polished Glacier engine lighting, a round sniper scope view with reticle and calm clinical assassination tension. Carry it through Hitman sniper scope, reticle, city rooftops. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Hitman sniper scope; reticle; city rooftops
 avoidRules:

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Red Dead Redemption 2010 - Rockstar San Diego Frontier
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: western frontier riding screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as dusty frontier riders in hats and dusters. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Canyon red, dust gold and sage, true to the Red Dead Redemption 2010 palette.
-  lighting_and_shadow: Golden-hour haze, lit the way Red Dead Redemption 2010 lights its levels.
-  texture_and_material: Dusty terrain and worn leather, with the in-engine surface finish of Red Dead Redemption 2010.
+  lighting_and_shadow: "Golden-hour haze with dusty warm light, lit the way Red Dead Redemption 2010 lights its levels."
+  texture_and_material: "Dusty terrain and worn leather, with blurry close textures and simple rocks."
   camera_and_composition: Third-person riding view, framed the way Red Dead Redemption 2010 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonesome frontier grit.
-  rendering_and_quality: Authentic Xbox 360 western screen, matching real Red Dead Redemption 2010 screenshots.
+  rendering_and_quality: "A 2010 Xbox 360 frame at 1280 by 720 in third person: rider in a canyon, a round minimap bottom left."
   creative_brief: 'Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze. Carry it through Red Dead 2010 frontier, canyons, riders. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Red Dead 2010 frontier; canyons; riders
 avoidRules:

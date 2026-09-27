@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval
 category: 10. Graphic & Feudal Gameplay
 domain: stance-based sword duel gameplay
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as historically accurate medieval fighters. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Torch amber, steel and earth, true to the Kingdom Come Deliverance 2018 palette.
-  lighting_and_shadow: Torchlit night, lit the way Kingdom Come Deliverance 2018 lights its levels.
-  texture_and_material: Realistic steel and cloth, with the in-engine surface finish of Kingdom Come Deliverance 2018.
+  lighting_and_shadow: "Warm torchlit night on stone and timber, lit the way Kingdom Come Deliverance 2018 lights its levels."
+  texture_and_material: "Realistic steel and cloth with slightly soft game-engine detail."
   camera_and_composition: First-person duel view, framed the way Kingdom Come Deliverance 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grounded tense duel.
-  rendering_and_quality: Authentic realistic medieval screen, matching real Kingdom Come Deliverance 2018 screenshots.
+  rendering_and_quality: "A 2018 first-person frame at 1920 by 1080: sword at the bottom, torchlit village, a small compass at the bottom."
   creative_brief: 'Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay. Carry it through Kingdom Come realism, swordplay, Bohemia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Kingdom Come realism; swordplay; Bohemia
 avoidRules:

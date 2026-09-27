@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Hunt Showdown 2019 - Crytek Bayou Hunt
 category: 9. Gothic & Dungeon Gameplay
 domain: third-person monster hunter village gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty 1895 bounty hunters. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Fog grey, swamp green and lamplight, true to the Hunt Showdown 2019 palette.
-  lighting_and_shadow: Foggy dusk, lit the way Hunt Showdown 2019 lights its levels.
-  texture_and_material: Realistic wood and mud, with the in-engine surface finish of Hunt Showdown 2019.
+  lighting_and_shadow: "Foggy dusk light over a swampy bayou, lit the way Hunt Showdown 2019 lights its levels."
+  texture_and_material: "Realistic old wood, mud and period guns, grainy and a little soft."
   camera_and_composition: First-person hunting view, framed the way Hunt Showdown 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty monster hunt.
-  rendering_and_quality: Authentic hunt shooter screen, matching real Hunt Showdown 2019 screenshots.
+  rendering_and_quality: "A 2019 first-person frame at 1920 by 1080: a lever rifle at the bottom, foggy bayou, small compass strip at the top."
   creative_brief: 'Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting. Carry it through Hunt Showdown bayou, fog, monsters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Hunt Showdown bayou; fog; monsters
 avoidRules:

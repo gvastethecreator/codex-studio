@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sky Children of the Light 2019 - thatgamecompany Cape Glide
 category: 2. Arcane Temples & Mythic Realms
 domain: mountain monastery gliding screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small soft figures in glowing capes gliding on the wind. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft peach, cloud white, dusk lilac and candle gold.
-  lighting_and_shadow: Soft glowing haze with warm candle light, lit the way Sky Children of the Light 2019 lights its levels.
-  texture_and_material: Soft stylized shapes with glow and haze, with the in-engine surface finish of Sky Children of the Light 2019.
+  lighting_and_shadow: "Soft glowing haze and warm candle light on clouds."
+  texture_and_material: "Soft rounded shapes with glow and haze, capes that shimmer, clouds like cotton."
   camera_and_composition: Wide third-person view over clouds, framed the way Sky Children of the Light 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gentle luminous wonder.
-  rendering_and_quality: Authentic soft stylized mobile screen, matching real Sky Children of the Light 2019 screenshots.
+  rendering_and_quality: "A 2019 phone frame at 1920 by 1080: small caped figures gliding over cloud kingdoms, a star-shaped cape meter near one figure."
   creative_brief: 'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples. Carry it through Sky capes, cloud kingdoms, candle glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sky capes; cloud kingdoms; candle glow
 avoidRules:

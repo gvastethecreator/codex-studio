@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Super Monkey Ball 2001 - Amusement Vision Tilt Stage
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: tilting maze ball game screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small figures sealed inside clear rolling balls. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright checker colors and starry skies, true to the Super Monkey Ball 2001 palette.
-  lighting_and_shadow: Bright arcade light, lit the way Super Monkey Ball 2001 lights its levels.
-  texture_and_material: Glossy clean surfaces, with the in-engine surface finish of Super Monkey Ball 2001.
+  lighting_and_shadow: "Bright arcade light with clean colored sky and hard edges."
+  texture_and_material: "Glossy clean surfaces, checkered floating mazes and a clear shiny ball."
   camera_and_composition: Behind-the-ball tilt view, framed the way Super Monkey Ball 2001 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense playful balance.
-  rendering_and_quality: Authentic arcade tilt-maze screen, matching real Super Monkey Ball 2001 screenshots.
+  rendering_and_quality: "A 2001 GameCube frame at 640 by 480: a small figure in a clear ball on a floating maze, a timer shape at the top."
   creative_brief: 'Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates. Carry it through Monkey Ball tilt stages, ball, floating mazes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Monkey Ball tilt stages; ball; floating mazes
 avoidRules:

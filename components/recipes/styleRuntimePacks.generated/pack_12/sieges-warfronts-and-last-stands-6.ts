@@ -22,7 +22,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'Side tactical grid view or wide caravan landscape.',
       atmosphere_and_mood: 'Keep the requested mood with weary stoic endurance.',
       rendering_and_quality:
-        'Authentic hand-animated tactical RPG screen, matching real The Banner Saga 2014 screenshots.',
+        'A 2014 frame at 1920 by 1080: flat painted Norse landscape with a small caravan or a tactical grid of hand-animated figures, banner shapes at the bottom.',
       key_features: 'Banner Saga Eyvind Earle painting; caravans; tactical grid',
       creative_brief:
         "Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids. Carry it through Banner Saga Eyvind Earle painting, caravans, tactical grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -46,14 +46,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as round-headed thick-outline cartoon figures with tiny dot eyes and chunky gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright flat grass green, sky blue and primary colors.',
       lighting_and_shadow:
-        'Flat cartoon light with no gradients, lit the way Castle Crashers 2008 lights its levels.',
+        'Flat cartoon colors with no gradients and no shadows except a dark oval under each figure.',
       texture_and_material:
-        'Thick outlines and flat vector fills, with the in-engine surface finish of Castle Crashers 2008.',
+        'Thick black outlines and flat vector color fills, simple scribbly grass and castle walls.',
       camera_and_composition:
         'Side-scrolling brawler view, framed the way Castle Crashers 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with silly co-op mayhem.',
       rendering_and_quality:
-        'Authentic cartoon brawler screen, matching real Castle Crashers 2008 screenshots.',
+        'A 2008 Xbox 360 side-view frame at 1280 by 720: four round-headed knights brawling, portrait and bar shapes along the top.',
       key_features: 'Castle Crashers thick outlines; round heads; co-op brawl',
       creative_brief:
         "The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling. Carry it through Castle Crashers thick outlines, round heads, co-op brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -74,17 +74,16 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed isometric sprites with Yoshida-style proportions. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as small detailed pixel sprites with long elegant proportions, standing on tiered diagonal terrain. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted earth, vine green and faded medieval blue.',
-      lighting_and_shadow:
-        'Soft even 16-bit light on tiered tiles, lit the way Tactics Ogre 1995 lights its levels.',
+      lighting_and_shadow: 'Soft even pixel colors on stacked diagonal tiles with no cast shadows.',
       texture_and_material:
-        'Detailed 16-bit sprites and textured tiles, with the in-engine surface finish of Tactics Ogre 1995.',
+        'Crisp square pixels, detailed small sprites and textured stone and grass tiles stacked in tiers.',
       camera_and_composition:
         'Isometric view over tiered tile maps, framed the way Tactics Ogre 1995 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grave political war.',
       rendering_and_quality:
-        'Authentic 16-bit isometric tactics screen, matching real Tactics Ogre 1995 screenshots.',
+        'A 1995 Super Nintendo frame at 256 by 224: a diagonal battlefield of stacked pixel tiles, a small status box in a corner.',
       key_features: 'Tactics Ogre isometric; Yoshida sprites; tiered ruins',
       creative_brief:
         "Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands. Carry it through Tactics Ogre isometric, Yoshida sprites, tiered ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -109,15 +108,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as cartoon demon units and cards battling on stacked train floors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Infernal orange, ember red and deep purple, true to the Monster Train 2020 palette.',
-      lighting_and_shadow:
-        'Pyre fire glow and card flashes, lit the way Monster Train 2020 lights its levels.',
+      lighting_and_shadow: 'Warm pyre fire glow and bright flashes when cards are played.',
       texture_and_material:
-        'Clean stylized cartoon 3D and card frames, with the in-engine surface finish of Monster Train 2020.',
+        'Clean chunky cartoon 3D creatures standing on train floors, flat card frames in hand.',
       camera_and_composition:
         'Side view of stacked train floors, framed the way Monster Train 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with fiery strategic chaos.',
       rendering_and_quality:
-        'Authentic deckbuilder screen, matching real Monster Train 2020 screenshots.',
+        'A 2020 PC frame at 1920 by 1080: a vertical stack of train floors with cartoon demons, a fan of blank cards along the bottom.',
       key_features: 'Monster Train stacked floors; pyre; demon cards',
       creative_brief:
         "Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects. Carry it through Monster Train stacked floors, pyre, demon cards. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -141,15 +139,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render vessels as detailed realistic warships seen from a third-person camera. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Steel grey, ocean blue and tracer orange, true to the World of Warships 2015 palette.',
-      lighting_and_shadow:
-        'Stormy daylight with muzzle flashes, lit the way World of Warships 2015 lights its levels.',
+      lighting_and_shadow: 'Stormy grey daylight with muzzle flashes and orange shell trails.',
       texture_and_material:
-        'Realistic hulls, water spray and smoke, with the in-engine surface finish of World of Warships 2015.',
+        'Realistic hulls, white water spray and black gun smoke, slightly soft in the distance.',
       camera_and_composition:
         'Third-person naval camera, framed the way World of Warships 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with thunderous naval clash.',
       rendering_and_quality:
-        'Authentic naval combat screen, matching real World of Warships 2015 screenshots.',
+        'A 2015 PC frame at 1920 by 1080 from a camera behind the ship: shell arcs, a minimap square and ship bar shapes at the bottom.',
       key_features: 'World of Warships broadside; tracers; naval camera',
       creative_brief:
         "Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera. Carry it through World of Warships broadside, tracers, naval camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -175,14 +172,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Bright optimistic orange, teal and sunny whites, true to the Overwatch 2016 palette.',
       lighting_and_shadow:
-        'Warm clean daylight with soft bounce, lit the way Overwatch 2016 lights its levels.',
+        'Warm clean daylight with soft bounce light, colors bright and friendly.',
       texture_and_material:
-        'Stylized painted PBR surfaces, with the in-engine surface finish of Overwatch 2016.',
+        'Smooth painted surfaces, clean readable shapes and chunky colorful costumes.',
       camera_and_composition:
         'First-person view with a stylized weapon, framed the way Overwatch 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with hopeful team heroics.',
       rendering_and_quality:
-        'Authentic hero shooter screen, matching real Overwatch 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: a chunky colorful weapon in hand, teammates ahead, an ability icon row at the bottom.',
       key_features: 'Overwatch animated-film heroes; payload; bright maps',
       creative_brief:
         "Blizzard Overwatch (2016) look: bright animated-film stylized 3D, chunky readable hero silhouettes, colorful near-future maps and payload escort objectives. Carry it through Overwatch animated-film heroes, payload, bright maps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -207,12 +204,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Bone white, dried blood red, candle gold and black stone.',
       lighting_and_shadow: 'Candle halos and stained-glass shafts in deep shadow.',
       texture_and_material:
-        'Dense detailed pixel art with baroque ornament, with the in-engine surface finish of Blasphemous 2019.',
+        'Dense detailed pixel art with baroque gold ornament, thorns and robes, crisp square pixels throughout.',
       camera_and_composition:
         'Side-view metroidvania frame, framed the way Blasphemous 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with penitent grotesque solemnity.',
       rendering_and_quality:
-        'Authentic dark pixel metroidvania screen, matching real Blasphemous 2019 screenshots.',
+        'A 2019 side-view frame at 640 by 360 scaled up: dark pixel cathedral, a small penitent sprite, a thorned bar shape top left.',
       key_features: 'Blasphemous pixels; Holy Week; baroque grotesque',
       creative_brief:
         "The Game Kitchen Blasphemous (2019) look: dark detailed pixel art metroidvania steeped in Andalusian Holy Week imagery, baroque basilicas, grotesque religious enemies and penitent suffering. Carry it through Blasphemous pixels, Holy Week, baroque grotesque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -236,15 +233,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny painted steampunk soldiers and colonists facing massive hordes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Steampunk brass, fog grey and night blue, true to the They Are Billions 2019 palette.',
-      lighting_and_shadow:
-        'Night fog with turret flashes, lit the way They Are Billions 2019 lights its levels.',
+      lighting_and_shadow: 'Night fog with turret muzzle flashes and small lamp glows.',
       texture_and_material:
-        'Detailed painted isometric 2D, with the in-engine surface finish of They Are Billions 2019.',
+        'Detailed painted 2D buildings and tiny units seen from high on a diagonal.',
       camera_and_composition:
         'Isometric strategy view, framed the way They Are Billions 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with desperate horde defense.',
       rendering_and_quality:
-        'Authentic isometric RTS screen, matching real They Are Billions 2019 screenshots.',
+        'A 2019 PC frame at 1920 by 1080: tiny colony walls, a vast grey horde massing in fog, resource shapes at the top.',
       key_features: 'They Are Billions hordes; steampunk walls; isometric',
       creative_brief:
         "Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog. Carry it through They Are Billions hordes, steampunk walls, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -267,15 +263,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky stylized Norse villagers and warriors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Snow white, aurora green and warm hearth orange.',
-      lighting_and_shadow:
-        'Soft winter light and aurora glow, lit the way Northgard 2018 lights its levels.',
+      lighting_and_shadow: 'Soft winter light with green aurora glow on snow.',
       texture_and_material:
-        'Stylized painted low-poly surfaces, with the in-engine surface finish of Northgard 2018.',
+        'Chunky simple shapes with soft painted colors and no fine detail, rounded roofs and trees.',
       camera_and_composition:
         'Isometric strategy view, framed the way Northgard 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with hardy clan survival.',
       rendering_and_quality:
-        'Authentic stylized strategy screen, matching real Northgard 2018 screenshots.',
+        'A 2018 PC frame at 1920 by 1080 from a high diagonal: small Norse village in snow, resource shapes at the top.',
       key_features: 'Northgard isometric; Norse clans; aurora',
       creative_brief:
         "Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures. Carry it through Northgard isometric, Norse clans, aurora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -300,15 +295,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as armored troopers in heavy helmets and capes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Fire orange, alien acid and military yellow, true to the Helldivers 2 2024 palette.',
-      lighting_and_shadow:
-        'Burning skies and bright orbital strikes, lit the way Helldivers 2 2024 lights its levels.',
+      lighting_and_shadow: 'Burning orange skies and bright white orbital strike flashes.',
       texture_and_material:
-        'Gritty armor, dust and explosions, with the in-engine surface finish of Helldivers 2 2024.',
+        'Gritty armor, dust clouds and alien bug carapace, with heavy particle smoke.',
       camera_and_composition:
         'Third-person over-the-shoulder view, framed the way Helldivers 2 2024 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic satirical heroism.',
       rendering_and_quality:
-        'Authentic modern co-op shooter screen, matching real Helldivers 2 2024 screenshots.',
+        'A 2024 frame at 1920 by 1080 in third person over the shoulder: trooper firing at a bug swarm, a small compass strip at the top.',
       key_features: 'Helldivers orbital drop; bug swarm; beacons',
       creative_brief:
         "Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies. Carry it through Helldivers orbital drop, bug swarm, beacons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -333,15 +327,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as comic stylized cartoon defenders facing cartoon hordes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm torch orange, stone grey and goblin green.',
-      lighting_and_shadow:
-        'Torch light and trap flashes, lit the way Orcs Must Die 2011 lights its levels.',
+      lighting_and_shadow: 'Warm torch light and bright trap flashes in stone halls.',
       texture_and_material:
-        'Stylized painted 3D surfaces, with the in-engine surface finish of Orcs Must Die 2011.',
+        'Chunky stylized painted 3D, exaggerated cartoon orcs and simple stone walls.',
       camera_and_composition:
         'Third-person view behind the defender, framed the way Orcs Must Die 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gleeful horde defense.',
       rendering_and_quality:
-        'Authentic stylized trap-defense screen, matching real Orcs Must Die 2011 screenshots.',
+        'A 2011 frame at 1920 by 1080 in third person: defender facing a cartoon horde in a hallway, trap icon row at the bottom.',
       creative_brief:
         "Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects. Carry it through Orcs Must Die hordes, trap defense, comic stylized. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Orcs Must Die hordes; trap defense; comic stylized',
@@ -370,15 +363,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as Great War soldiers in wool uniforms, helmets and gas masks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Mud brown, smoke grey and sepia sky, true to the Battlefield 1 2016 palette.',
-      lighting_and_shadow:
-        'Cinematic haze and flare glow, lit the way Battlefield 1 2016 lights its levels.',
+      lighting_and_shadow: 'Hazy grey daylight with flare glow and smoke columns.',
       texture_and_material:
-        'Mud, wire, wood and wool, with the in-engine surface finish of Battlefield 1 2016.',
+        'Mud, barbed wire, wood and wool, sharp nearby and dissolving into smoke beyond.',
       camera_and_composition:
         'First-person view over a trench lip, framed the way Battlefield 1 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with harrowing wartime dread.',
       rendering_and_quality:
-        'Authentic Frostbite first-person war screen, matching real Battlefield 1 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: rifle at bottom right, trench and smoke, a small compass and minimap shape.',
       creative_brief:
         "DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting. Carry it through Battlefield 1 trenches, mud, smoke, war machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Battlefield 1 trenches; mud; smoke; war machines',
@@ -406,15 +398,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as grubby medieval soldiers and siege crews in padded jackets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Banner red, siege fire orange and stone grey.',
-      lighting_and_shadow:
-        'Bright day with fire glow, lit the way Chivalry 2 2021 lights its levels.',
-      texture_and_material:
-        'Mud, wood, leather and smoke, with the in-engine surface finish of Chivalry 2 2021.',
+      lighting_and_shadow: 'Bright daylight with fire glow and drifting smoke.',
+      texture_and_material: 'Mud, wood, leather and smoke, slightly soft game-engine detail.',
       camera_and_composition:
         'First-person view behind siege engines, framed the way Chivalry 2 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rowdy medieval chaos.',
       rendering_and_quality:
-        'Authentic medieval melee screen, matching real Chivalry 2 2021 screenshots.',
+        'A 2021 first-person frame at 1920 by 1080: a raised weapon at bottom right, siege crews and burning castle walls, bar shapes bottom left.',
       creative_brief:
         "Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners. Carry it through Chivalry 2 siege, catapults, burning castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Chivalry 2 siege; catapults; burning castles',
@@ -444,14 +434,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Painted greens, river blue and parchment, true to the Battle for Wesnoth 2005 palette.',
       lighting_and_shadow:
-        'Even top light on painted terrain, lit the way Battle for Wesnoth 2005 lights its levels.',
+        'Even top light on painted hex terrain, lit the way Battle for Wesnoth 2005 lights its levels.',
       texture_and_material:
-        'Painted hex tiles and sprite detail, with the in-engine surface finish of Battle for Wesnoth 2005.',
+        'Painted hex tiles of forest, water and hills, small crisp painted unit sprites standing on them.',
       camera_and_composition:
         'Top-down hex map view, framed the way Battle for Wesnoth 2005 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with thoughtful tactical campaign.',
       rendering_and_quality:
-        'Authentic painted hex strategy screen, matching real Battle for Wesnoth 2005 screenshots.',
+        'A 2005 PC frame at 1024 by 768: hex map with units and a side panel of blank boxes at the right.',
       creative_brief:
         "Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes. Carry it through Wesnoth painted hexes, unit sprites, fantasy map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Wesnoth painted hexes; unit sprites; fantasy map',
@@ -481,14 +471,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Rotting brown, humid green and flashlight white, true to the Resident Evil 7 2017 palette.',
       lighting_and_shadow:
-        'Flashlight beam in heavy darkness, lit the way Resident Evil 7 2017 lights its levels.',
-      texture_and_material:
-        'Photoreal rot, mold and wood, with the in-engine surface finish of Resident Evil 7 2017.',
+        'A narrow flashlight beam in heavy darkness, everything outside it lost in black.',
+      texture_and_material: 'Photoreal rot, mold and wet wood, grainy in the dark areas.',
       camera_and_composition:
         'First-person view at boarded windows, framed the way Resident Evil 7 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with humid claustrophobic terror.',
       rendering_and_quality:
-        'Authentic modern first-person horror screen, matching real Resident Evil 7 2017 screenshots.',
+        'A 2017 first-person frame at 1920 by 1080: a hand holding a flashlight at the bottom, dark farmhouse hallway, no other interface.',
       creative_brief:
         "Capcom Resident Evil 7: Biohazard (2017) look: first-person horror in a rotting Louisiana farmhouse, photoreal decay, VHS found-footage grain, flashlight beams and humid dread. Carry it through RE7 farmhouse, photoreal rot, flashlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'RE7 farmhouse; photoreal rot; flashlight',
@@ -516,15 +505,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky armored soldiers under a burning alien sky. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Burning orange sky, steel grey and plasma blue.',
-      lighting_and_shadow:
-        'Fire glow with plasma flashes, lit the way Halo Reach 2010 lights its levels.',
-      texture_and_material:
-        'Chunky armor and scorched metal, with the in-engine surface finish of Halo Reach 2010.',
+      lighting_and_shadow: 'Orange fire glow across the sky with blue plasma flashes.',
+      texture_and_material: 'Chunky armor plates and scorched metal, clean but simple shapes.',
       camera_and_composition:
         'First-person view at a landing pad, framed the way Halo Reach 2010 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with doomed heroic sacrifice.',
       rendering_and_quality:
-        'Authentic Xbox 360 shooter screen, matching real Halo Reach 2010 screenshots.',
+        'A 2010 Xbox 360 first-person frame at 1280 by 720: a rifle at bottom right, burning skyline, a small radar circle bottom left.',
       creative_brief:
         "Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports. Carry it through Halo Reach last stand, burning sky, evacuation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Halo Reach last stand; burning sky; evacuation',
@@ -554,14 +541,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Bright grass green, blue and red teams, true to the Clash Royale 2016 palette.',
       lighting_and_shadow:
-        'Bright flat cartoon daylight, lit the way Clash Royale 2016 lights its levels.',
-      texture_and_material:
-        'Glossy chunky cartoon 3D, with the in-engine surface finish of Clash Royale 2016.',
+        'Bright flat cartoon daylight with little shadow, lit the way Clash Royale 2016 lights its levels.',
+      texture_and_material: 'Glossy chunky cartoon shapes with huge heads and tiny bodies.',
       camera_and_composition:
         'Top-down arena view, framed the way Clash Royale 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cheeky competitive chaos.',
       rendering_and_quality:
-        'Authentic mobile cartoon arena screen, matching real Clash Royale 2016 screenshots.',
+        'A 2016 phone frame, tall portrait: arena seen from above, two lanes and bridges, a row of blank cards at the bottom.',
       creative_brief:
         "Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units. Carry it through Clash Royale arena, chunky cartoon, lanes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Clash Royale arena; chunky cartoon; lanes',
@@ -590,15 +576,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny busy medieval peasants and soldiers from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pastoral green, stone grey and thatch gold, true to the Stronghold 2001 palette.',
-      lighting_and_shadow:
-        'Soft daylight on isometric terrain, lit the way Stronghold 2001 lights its levels.',
+      lighting_and_shadow: 'Soft daylight on a diagonal map with small crisp shadows.',
       texture_and_material:
-        'Pre-rendered isometric sprites, with the in-engine surface finish of Stronghold 2001.',
+        'Tiny rendered-then-shrunk sprites of peasants and buildings, grainy grass and stone.',
       camera_and_composition:
         'Isometric castle overview, framed the way Stronghold 2001 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with industrious medieval siege.',
       rendering_and_quality:
-        'Authentic early-2000s castle sim screen, matching real Stronghold 2001 screenshots.',
+        'A 2001 PC frame at 1024 by 768 from a high diagonal: tiny busy castle, a carved panel of blank buttons at the bottom.',
       creative_brief:
         "Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape. Carry it through Stronghold isometric, tiny peasants, castle walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Stronghold isometric; tiny peasants; castle walls',
@@ -627,15 +612,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval riders and infantry in mail and cloth. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset gold, dust brown and banner colors, true to the Mount & Blade II Bannerlord 2020 palette.',
-      lighting_and_shadow:
-        'Low sun through dust, lit the way Mount & Blade II Bannerlord 2020 lights its levels.',
+      lighting_and_shadow: 'Low sun through thick dust, warm backlight on riders.',
       texture_and_material:
-        'Realistic mail, cloth and dust, with the in-engine surface finish of Mount & Blade II Bannerlord 2020.',
+        'Realistic mail, cloth and dust, slightly soft detail on distant troops.',
       camera_and_composition:
         'Low third-person battle view, framed the way Mount & Blade II Bannerlord 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with thunderous medieval clash.',
       rendering_and_quality:
-        'Authentic medieval battle screen, matching real Mount & Blade II Bannerlord 2020 screenshots.',
+        'A 2020 frame at 1920 by 1080 in third person from horseback: massed battle, a compass strip at the top and bar shapes bottom left.',
       creative_brief:
         "TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains. Carry it through Bannerlord cavalry, massed battle, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Bannerlord cavalry; massed battle; dust',
@@ -664,15 +648,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as anime soldiers with sketchy watercolor shading. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Soft watercolor snow, olive and sepia, true to the Valkyria Chronicles 2008 palette.',
-      lighting_and_shadow:
-        'Watercolor wash light with paper grain, lit the way Valkyria Chronicles 2008 lights its levels.',
+      lighting_and_shadow: 'Watercolor wash light with paper grain visible over the whole image.',
       texture_and_material:
-        'Pencil hatching over watercolor paper, with the in-engine surface finish of Valkyria Chronicles 2008.',
+        'Pencil hatching over watercolor paper laid onto 3D, ink outlines on soldiers and tanks.',
       camera_and_composition:
         'Third-person tactical view, framed the way Valkyria Chronicles 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bittersweet wartime tactics.',
       rendering_and_quality:
-        'Authentic watercolor strategy screen, matching real Valkyria Chronicles 2008 screenshots.',
+        'A 2008 PlayStation 3 frame at 1280 by 720: sketchy watercolor battlefield, a small command bar shape at the bottom.',
       creative_brief:
         "Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses. Carry it through Valkyria CANVAS watercolor, hatching, iron fortresses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Valkyria CANVAS watercolor; hatching; iron fortresses',

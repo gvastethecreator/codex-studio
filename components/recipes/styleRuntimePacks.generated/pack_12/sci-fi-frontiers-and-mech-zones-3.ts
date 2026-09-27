@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'High tilted RTS camera over the dunes, framed the way Deserts of Kharak 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with vast lonely desert warfare.',
       rendering_and_quality:
-        'Authentic mid-2010s desert RTS screen, matching real Deserts of Kharak 2016 screenshots.',
+        'A 2016 PC frame at 1920 by 1080 from a high strategy camera: small units trailing dust across dunes, a minimap box and unit card shapes at the bottom.',
       key_features: 'Kharak land carriers; desert dunes; dust trails; RTS camera',
       creative_brief:
         "Blackbird Interactive Homeworld: Deserts of Kharak (2016) look: real-time strategy across vast desert dunes, colossal land carriers, tracked vehicles leaving dust trails and buried alien wrecks. Carry it through Kharak land carriers, desert dunes, dust trails, RTS camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -51,13 +51,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary engineers and crew in worn seventies work clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sickly green CRT, emergency red, beige plastic and deep shadow.',
       lighting_and_shadow:
-        'Flickering fluorescents, emergency strobes and dark vents, lit the way Alien Isolation 2014 lights its levels.',
+        'Flickering fluorescents, red emergency strobes and pitch-dark vents, all slightly bloomed.',
       texture_and_material: 'Chunky beige plastic, grimy metal, film grain and VHS noise.',
       camera_and_composition:
         'First-person view holding an analog motion tracker, framed the way Alien Isolation 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with suffocating hunted dread.',
       rendering_and_quality:
-        'Authentic mid-2010s retro-futurist horror screen, matching real Alien Isolation 2014 screenshots.',
+        'A 2014 first-person frame at 1920 by 1080 with film grain and slight VHS softness: a green motion tracker device held at the bottom.',
       key_features: 'Alien Isolation lo-fi; motion tracker; CRT green; film grain',
       creative_brief:
         "Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread. Carry it through Alien Isolation lo-fi, motion tracker, CRT green, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
         'First-person view through flooded corridors, framed the way SOMA 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with crushing existential dread.',
       rendering_and_quality:
-        'Authentic mid-2010s undersea horror screen, matching real SOMA 2015 screenshots.',
+        'A 2015 first-person frame at 1920 by 1080: flashlight beam in a flooded corridor, fogged glass, no interface at all.',
       key_features: 'SOMA undersea station; flooded corridors; abyss windows',
       creative_brief:
         "Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows. Carry it through SOMA undersea station, flooded corridors, abyss windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -107,15 +107,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as tower-defense units, turrets and alien walkers seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Storm blue, turret orange, core cyan and steel grey.',
-      lighting_and_shadow:
-        'Stormy dark sky with bright turret beams, lit the way Defense Grid 2008 lights its levels.',
+      lighting_and_shadow: 'Stormy dark sky with bright colored turret beams and a glowing core.',
       texture_and_material:
-        'Clean sci-fi metal and glowing energy, with the in-engine surface finish of Defense Grid 2008.',
+        'Clean sci-fi metal plating and glowing energy, simple readable shapes seen from above.',
       camera_and_composition:
         'Elevated tower-defense camera over paths, framed the way Defense Grid 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense strategic defense.',
       rendering_and_quality:
-        'Authentic late-2000s tower-defense screen, matching real Defense Grid 2008 screenshots.',
+        'A 2008 PC frame at 1280 by 720 from high above: turrets along a winding path, alien walkers marching toward a glowing core.',
       key_features: 'Defense Grid turrets; alien walkers; glowing core',
       creative_brief:
         "Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core. Carry it through Defense Grid turrets, alien walkers, glowing core. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -139,14 +138,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as tiny colonists, drones and rovers among retro-futurist domes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mars red, dome glass teal and space-age white.',
       lighting_and_shadow:
-        'Dusty Mars daylight and dust storms, lit the way Surviving Mars 2018 lights its levels.',
+        'Dusty butterscotch Mars daylight with long soft shadows and drifting dust.',
       texture_and_material:
-        'Clean retro-futurist panels and red dust, with the in-engine surface finish of Surviving Mars 2018.',
+        'Clean white retro-futurist dome panels and glass over rusty red ground.',
       camera_and_composition:
         'Overhead colony builder view, framed the way Surviving Mars 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with optimistic frontier building.',
       rendering_and_quality:
-        'Authentic colony builder screen, matching real Surviving Mars 2018 screenshots.',
+        'A 2018 PC frame at 1920 by 1080 from a high angle: glass domes, tiny drones and rovers, resource bar shapes along the top.',
       key_features: 'Surviving Mars domes; retro-futurism; drones; red dust',
       creative_brief:
         "Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design. Carry it through Surviving Mars domes, retro-futurism, drones, red dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -170,15 +169,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as an original goofy cartoon vegetable fighter or shambling cartoon enemy with big eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Lawn green, sunny yellow and dusk purple, true to the Plants vs Zombies 2009 palette.',
-      lighting_and_shadow:
-        'Bright cartoon daylight or moonlight, lit the way Plants vs Zombies 2009 lights its levels.',
+      lighting_and_shadow: 'Bright cartoon daylight or cool moonlight, even and cheerful.',
       texture_and_material:
-        'Flat cartoon vectors with soft shading, with the in-engine surface finish of Plants vs Zombies 2009.',
+        'Flat cartoon shapes with soft simple shading, bouncy outlines and a lawn in checkered green rows.',
       camera_and_composition:
         'Side-on lawn grid view, framed the way Plants vs Zombies 2009 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with goofy spooky fun.',
       rendering_and_quality:
-        'Authentic casual cartoon defense screen, matching real Plants vs Zombies 2009 screenshots.',
+        'A 2009 PC frame at 800 by 600: side-on lawn grid with a house at left, a seed-packet bar of blank cards along the top.',
       key_features: 'PvZ lawn grid; goofy plants; cartoon defense',
       creative_brief:
         "PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left. Carry it through PvZ lawn grid, goofy plants, cartoon defense. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -199,14 +197,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as calm bureau agents in plain office clothes wielding telekinesis. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Raw concrete grey, corruption red and fluorescent white.',
       lighting_and_shadow:
-        'Clean office light with red glowing corruption, lit the way Control 2019 lights its levels.',
+        'Clean white office light with a pulsing red glow where the corruption spreads.',
       texture_and_material:
-        'Raw concrete, office clutter and particle debris, with the in-engine surface finish of Control 2019.',
+        'Raw concrete, office clutter, floating paper and chunks of debris with sharp ray-traced reflections.',
       camera_and_composition:
         'Third-person view in brutalist halls, framed the way Control 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with uncanny bureaucratic dread.',
       rendering_and_quality:
-        'Authentic modern ray-traced action screen, matching real Control 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 in third person: agent lifting debris with telekinesis, a thin bar shape bottom left.',
       key_features: 'Control brutalism; telekinesis; red corruption; floating debris',
       creative_brief:
         "Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris. Carry it through Control brutalism, telekinesis, red corruption, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -232,12 +230,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Pine green, Swedish red cottage, grey sky and searchlight white.',
       lighting_and_shadow: 'Overcast Nordic light or dusk with machine searchlights.',
       texture_and_material:
-        'Realistic pine forest and rusted machine panels, with the in-engine surface finish of Generation Zero 2019.',
+        'Realistic pine forest and rusted machine panels, grass and ferns slightly soft in the distance.',
       camera_and_composition:
         'First-person view hiding among trees, framed the way Generation Zero 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie rural invasion.',
       rendering_and_quality:
-        'Authentic open-world survival shooter screen, matching real Generation Zero 2019 screenshots.',
+        "A 2019 first-person frame at 1920 by 1080: rifle at bottom right, a machine's searchlight sweeping through pines, a compass strip at the top.",
       key_features: 'Generation Zero machines; Swedish pines; eighties rural',
       creative_brief:
         "Avalanche Studios Generation Zero (2019) look: first-person survival in 1980s rural Sweden, pine forests, red wooden houses and retrofuturist hunting machines with searchlights. Carry it through Generation Zero machines, Swedish pines, eighties rural. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -257,15 +255,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as clean-lined flat-color figures in masks and robes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pale sand, sky blue, sunset orange and flat pastel.',
-      lighting_and_shadow:
-        'Flat shading with clean line art, lit the way Sable 2021 lights its levels.',
+      lighting_and_shadow: 'Flat shading with no gradients, shadows as clean solid shapes.',
       texture_and_material:
-        'Clean Moebius-style line and flat fills, with the in-engine surface finish of Sable 2021.',
+        'Clean thin ink outlines around every shape and flat pale color fills, like a moving comic panel.',
       camera_and_composition:
         'Wide third-person desert view, framed the way Sable 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene coming-of-age wander.',
       rendering_and_quality:
-        'Authentic line-art open-world screen, matching real Sable 2021 screenshots.',
+        'A 2021 frame at 1920 by 1080 in third person: outlined desert under a pale sky, a hoverbike, no interface.',
       key_features: 'Sable Moebius lines; flat color; hoverbike desert',
       creative_brief:
         "Shedworks Sable (2021) look: open desert rendered in clean Moebius-style line art with flat color, hoverbikes, ancient beast skeletons, mask culture and huge ruins. Carry it through Sable Moebius lines, flat color, hoverbike desert. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -290,7 +287,7 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Canyon gold, ruin teal and hazy sky, true to the Panzer Dragoon 1995 palette.',
       lighting_and_shadow:
-        'Hazy Saturn-era light and glowing lock-ons, lit the way Panzer Dragoon 1995 lights its levels.',
+        'Hazy golden light fading everything into haze a short distance away, bright lock-on markers.',
       texture_and_material:
         'Shapes are a few large flat panels with sandy textures that wobble and warp as they move, see-through effects drawn as fine dither dots, and distant ruins fading out of golden haze.',
       camera_and_composition:
@@ -300,7 +297,7 @@ export const GENERATED_STYLE_PRESETS = [
         'A 1995 Sega Saturn frame at 320 by 224 on a CRT: grainy, jagged and low in detail, like a period magazine screenshot, not a painted illustration.',
       key_features: 'Panzer Dragoon rails; grainy warped Saturn 3D; Moebius ruins',
       creative_brief:
-        "Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in low-poly 3D with dithered textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes. Carry it through Panzer Dragoon rails, low-poly Saturn, Moebius ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in early polygon 3D with grainy warped textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes. Carry it through Panzer Dragoon rails, grainy warped Saturn 3D, Moebius ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -324,14 +321,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Industrial grey, cockpit amber and rain blue, true to the Titanfall 2 2016 palette.',
       lighting_and_shadow:
-        'Cockpit instrument glow and rain light, lit the way Titanfall 2 2016 lights its levels.',
+        'Cockpit instrument glow in amber and rain light through the canopy glass.',
       texture_and_material:
-        'Rain streaks, glass and worn industrial metal, with the in-engine surface finish of Titanfall 2 2016.',
+        'Rain streaks on glass, scratched canopy struts and worn industrial metal outside.',
       camera_and_composition:
         'First-person cockpit canopy view, framed the way Titanfall 2 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with heavy mechanical power.',
       rendering_and_quality:
-        'Authentic mid-2010s mech shooter screen, matching real Titanfall 2 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080 from inside a mech cockpit: canopy frame, bracket and bar shapes projected on the glass.',
       creative_brief:
         "Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities. Carry it through Titanfall cockpit, mech canopy, rain glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Titanfall cockpit; mech canopy; rain glass',
@@ -360,13 +357,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as station crew in jumpsuits floating in zero gravity. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neo-deco gold, walnut wood and space black, true to the Prey 2017 palette.',
       lighting_and_shadow:
-        'Warm station light with cold space glow, lit the way Prey 2017 lights its levels.',
+        'Warm station lighting on wood and brass against the cold glow of space.',
       texture_and_material:
-        'Polished deco panels, walnut and brushed metal, with the in-engine surface finish of Prey 2017.',
+        'Polished neo-deco panels, walnut and brushed metal, clean and slightly soft.',
       camera_and_composition:
         'First-person drifting view, framed the way Prey 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with paranoid weightless unease.',
-      rendering_and_quality: 'Authentic immersive-sim screen, matching real Prey 2017 screenshots.',
+      rendering_and_quality:
+        'A 2017 first-person frame at 1920 by 1080: a wrench in hand, crew floating in a station lobby, small bar shapes bottom left.',
       creative_brief:
         "Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows. Carry it through Prey neo-deco station, zero gravity, alien shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Prey neo-deco station; zero gravity; alien shadows',
@@ -394,15 +392,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as planets, colonies and fleets seen from orbit. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep space blue, colony gold and nebula violet.',
-      lighting_and_shadow:
-        'Starlight rim on planets with glowing cities, lit the way Stellaris 2016 lights its levels.',
+      lighting_and_shadow: 'Starlight rim on planets with glowing city lights on the night side.',
       texture_and_material:
-        'Clean planet textures and soft nebulae, with the in-engine surface finish of Stellaris 2016.',
+        'Clean planet surfaces and soft painted nebulae, thin route lines between systems.',
       camera_and_composition:
         'Orbital planet overview, framed the way Stellaris 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with vast galactic ambition.',
       rendering_and_quality:
-        'Authentic grand strategy planet screen, matching real Stellaris 2016 screenshots.',
+        'A 2016 PC frame at 1920 by 1080: planet in orbit view, resource icon shapes along the top and an outliner column at the right.',
       creative_brief:
         "Paradox Development Studio Stellaris (2016) look: grand strategy planet view from orbit, glowing colony lights, sleek UI rings and route lines, deep space nebulae. Carry it through Stellaris orbit, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Stellaris orbit; colony lights; route lines',
@@ -430,15 +427,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render pilots and ships as small agile craft seen from a chase camera. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Vivid nebula magenta, amber flak and rock grey.',
-      lighting_and_shadow:
-        'Nebula glow and bright weapon flashes, lit the way Everspace 2 2023 lights its levels.',
+      lighting_and_shadow: 'Colorful nebula glow and bright weapon flashes lighting the ships.',
       texture_and_material:
-        'Detailed ship hulls and rocky asteroids, with the in-engine surface finish of Everspace 2 2023.',
+        'Detailed ship hulls and rocky asteroids with slightly soft modern game detail.',
       camera_and_composition:
         'Chase camera between asteroids, framed the way Everspace 2 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with daring space action.',
       rendering_and_quality:
-        'Authentic modern space shooter screen, matching real Everspace 2 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080 from a chase camera: small craft among asteroids, a reticle and bar shapes around it.',
       creative_brief:
         "Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks. Carry it through Everspace nebulae, asteroid dogfight, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Everspace nebulae; asteroid dogfight; chase camera',
@@ -467,14 +463,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render explorers and rovers as small figures under saturated alien skies. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: "Pulp magenta, lime and cyan skies, true to the No Man's Sky 2016 palette.",
       lighting_and_shadow:
-        "Saturated alien sun with colored fog, lit the way No Man's Sky 2016 lights its levels.",
+        'Saturated alien sun with thick colored fog and a huge planet in the sky.',
       texture_and_material:
-        "Procedural stylized alien terrain, with the in-engine surface finish of No Man's Sky 2016.",
+        'Stylized alien terrain in bright unreal colors, soft rounded rocks and strange plants.',
       camera_and_composition:
         "Wide photo-mode view, framed the way No Man's Sky 2016 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with wondrous pulp exploration.',
       rendering_and_quality:
-        "Authentic procedural exploration screen, matching real No Man's Sky 2016 screenshots.",
+        'A 2016 frame at 1920 by 1080 in first person: pulp-colored alien land, a multitool in hand, compass strip at the top.',
       creative_brief:
         "Hello Games No Man's Sky (2016) look: procedural alien planets in pulp sci-fi book cover colors, strange floating fauna, rovers, twin suns and saturated skies. Carry it through No Man's Sky pulp colors, alien fauna, rovers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: "No Man's Sky pulp colors; alien fauna; rovers",
@@ -503,15 +499,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render mechs as heavy customizable industrial machines with modular parts. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Industrial grey, hazard yellow and spark orange, true to the Armored Core VI 2023 palette.',
-      lighting_and_shadow:
-        'Hangar floodlights with spark showers, lit the way Armored Core VI 2023 lights its levels.',
+      lighting_and_shadow: 'Hangar floodlights and showers of welding sparks in a dark garage.',
       texture_and_material:
-        'Weathered paint, bolts and industrial metal, with the in-engine surface finish of Armored Core VI 2023.',
+        'Weathered paint, bolts, cables and industrial metal on modular mech parts.',
       camera_and_composition:
         'Low garage view up at a mech, framed the way Armored Core VI 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with heavy mechanical pride.',
       rendering_and_quality:
-        'Authentic modern mecha screen, matching real Armored Core VI 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080: heavy mech in a dark hangar seen low, part list panel shapes at the right without text.',
       creative_brief:
         "FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint. Carry it through Armored Core garage, modular mech, industrial. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Armored Core garage; modular mech; industrial',
@@ -541,14 +536,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Scanner cyan outlines over natural alien palettes, true to the Starfield 2023 palette.',
       lighting_and_shadow:
-        'Natural alien sunlight with scan glow, lit the way Starfield 2023 lights its levels.',
+        'Natural alien sunlight with a cyan scan glow outlining plants and creatures.',
       texture_and_material:
-        'Realistic alien terrain and suits, with the in-engine surface finish of Starfield 2023.',
+        'Realistic alien terrain and chunky grounded spacesuits, slightly soft game-engine detail.',
       camera_and_composition:
         'First-person scanner visor view, framed the way Starfield 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with curious scientific discovery.',
       rendering_and_quality:
-        'Authentic modern space RPG screen, matching real Starfield 2023 screenshots.',
+        'A 2023 first-person frame at 1920 by 1080 through a scanner overlay: cyan outlines and corner brackets.',
       creative_brief:
         "Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets. Carry it through Starfield scanner, NASA-punk, alien flora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Starfield scanner; NASA-punk; alien flora',
@@ -577,15 +572,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round-headed cartoon colonists with big eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Muted earth, pipe teal and cartoon highlights, true to the Oxygen Not Included 2019 palette.',
-      lighting_and_shadow:
-        'Flat cartoon light in cutaway rooms, lit the way Oxygen Not Included 2019 lights its levels.',
-      texture_and_material:
-        'Hand-drawn Klei cartoon lines, with the in-engine surface finish of Oxygen Not Included 2019.',
+      lighting_and_shadow: 'Flat cartoon light inside cutaway rooms dug into rock.',
+      texture_and_material: 'Hand-drawn cartoon lines, flat colors and cross-section rock layers.',
       camera_and_composition:
         'Side-view colony cutaway, framed the way Oxygen Not Included 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with busy desperate charm.',
       rendering_and_quality:
-        'Authentic cartoon colony sim screen, matching real Oxygen Not Included 2019 screenshots.',
+        'A 2019 PC frame at 1920 by 1080: side cutaway of a colony with pipes and ladders, small icon shapes along the top.',
       creative_brief:
         "Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style. Carry it through ONI cutaway, tiny colonists, pipes and rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'ONI cutaway; tiny colonists; pipes and rooms',
@@ -614,15 +607,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors in heavy parkas and mech suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Ice white, orange thermal and steel grey, true to the Lost Planet 2006 palette.',
-      lighting_and_shadow:
-        'Blizzard haze with orange thermal glow, lit the way Lost Planet 2006 lights its levels.',
+      lighting_and_shadow: 'White blizzard haze with glowing orange heat and thermal energy.',
       texture_and_material:
-        'Snow particles, ice and metal, with the in-engine surface finish of Lost Planet 2006.',
+        'Snow particles blowing across the screen, ice, and slightly blurry metal textures.',
       camera_and_composition:
         'Third-person view in snowstorms, framed the way Lost Planet 2006 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with frozen alien peril.',
       rendering_and_quality:
-        'Authentic late-2000s sci-fi shooter screen, matching real Lost Planet 2006 screenshots.',
+        'A 2006 Xbox 360 frame at 1280 by 720 in third person: blizzard, giant bugs in haze, a thermal gauge shape at the side.',
       creative_brief:
         "Capcom Lost Planet: Extreme Condition (2006) look: third-person snowy alien planet, blizzards, thermal energy, giant bug creatures under the ice and heavy mech suits. Carry it through Lost Planet snow, giant bugs, thermal energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Lost Planet snow; giant bugs; thermal energy',
@@ -651,14 +643,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded comic figures with flowing hair and clothing affected by shifting gravity. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm Euro-town ochre, sky blue and ink black.',
       lighting_and_shadow:
-        'Soft comic light with ink shadows, lit the way Gravity Rush 2012 lights its levels.',
+        'Soft comic light with ink-hatched shadows, lit the way Gravity Rush 2012 lights its levels.',
       texture_and_material:
-        'Cel shading with ink crosshatching, with the in-engine surface finish of Gravity Rush 2012.',
+        'Cel shading with ink crosshatching, flowing hair and clothes pulled by sideways gravity.',
       camera_and_composition:
         'Tilted sideways gravity view, framed the way Gravity Rush 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with dreamy vertiginous freedom.',
       rendering_and_quality:
-        'Authentic comic cel-shaded screen, matching real Gravity Rush 2012 screenshots.',
+        'A 2012 PlayStation Vita frame at 960 by 544: comic cel figure falling sideways past a floating town, a gauge arc at the side.',
       creative_brief:
         "Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching. Carry it through Gravity Rush sideways gravity, comic cel, floating town. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gravity Rush sideways gravity; comic cel; floating town',

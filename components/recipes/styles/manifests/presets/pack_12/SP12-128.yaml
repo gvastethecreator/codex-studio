@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Gravity Rush 2012 - Project Siren Comic Gravity
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: gravity shifting puzzle screenshot
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded comic figures with flowing hair and clothing affected by shifting gravity. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm Euro-town ochre, sky blue and ink black.
-  lighting_and_shadow: Soft comic light with ink shadows, lit the way Gravity Rush 2012 lights its levels.
-  texture_and_material: Cel shading with ink crosshatching, with the in-engine surface finish of Gravity Rush 2012.
+  lighting_and_shadow: "Soft comic light with ink-hatched shadows, lit the way Gravity Rush 2012 lights its levels."
+  texture_and_material: "Cel shading with ink crosshatching, flowing hair and clothes pulled by sideways gravity."
   camera_and_composition: Tilted sideways gravity view, framed the way Gravity Rush 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dreamy vertiginous freedom.
-  rendering_and_quality: Authentic comic cel-shaded screen, matching real Gravity Rush 2012 screenshots.
+  rendering_and_quality: "A 2012 PlayStation Vita frame at 960 by 544: comic cel figure falling sideways past a floating town, a gauge arc at the side."
   creative_brief: 'Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching. Carry it through Gravity Rush sideways gravity, comic cel, floating town. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Gravity Rush sideways gravity; comic cel; floating town
 avoidRules:

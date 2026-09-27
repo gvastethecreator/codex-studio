@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Kentucky Route Zero 2013 - Cardboard Computer Magic Realism
 category: 12. Video Games 2010s
 domain: twenty-tens adventure game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - kentucky-route-zero
   - reference-title
 visualDna:
-  aesthetic: 'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways.'
+  aesthetic: "Cardboard Computer Kentucky Route Zero (2013) look: flat untextured angular shapes like a paper theater, magic realist Kentucky roads, single lamps and deep blue darkness."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as flat untextured angular figures of one or two solid colors on a theatrical stage-like set. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Muted night blues, warm amber pools and stark silhouettes.
   lighting_and_shadow: "Single lamps and theatrical spotlights cutting shapes out of deep dark blue."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide theatrical staging like a play, framed the way Kentucky Route Zero 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet magic-realist melancholy.
   rendering_and_quality: "A 2013 PC frame at 1280 by 720: sparse flat shapes, small figures, wide dark spaces and one warm lamp."
-  creative_brief: 'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways. Carry it through Kentucky Route Zero flat polygons, theatrical light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cardboard Computer Kentucky Route Zero (2013) look: flat untextured angular shapes like a paper theater, magic realist Kentucky roads, single lamps and deep blue darkness. Carry it through Kentucky Route Zero flat untextured shapes, theatrical light, wide dark stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Kentucky Route Zero flat untextured shapes; theatrical light; wide dark stages"
 avoidRules:
   - existing franchise characters

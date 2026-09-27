@@ -7,7 +7,7 @@ styleAnchors:
   - Signalis Polar Signal Outbreak
 displayName: Signalis 2022 - rose-engine Low-Poly Polar Horror
 category: 7. Heists, Horror & Underworld Runs
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,16 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly anime android officers in uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "rose-engine Signalis (2022) look: survival horror deliberately made to look like an old console game, coarse pixelated textures on simple shapes, a polar facility, red emergency light and an overhead camera."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as simple blocky anime figures with coarse pixelated faces and stiff uniforms, seen from an overhead camera. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Emergency red, cold white and black, true to the Signalis 2022 palette.
-  lighting_and_shadow: Harsh red emergency light, lit the way Signalis 2022 lights its levels.
-  texture_and_material: Low-poly PS1 textures with dithering, with the in-engine surface finish of Signalis 2022.
+  lighting_and_shadow: "Harsh red emergency light with deep black shadows."
+  texture_and_material: "Coarse pixelated textures on simple angular shapes, fine dither dots in gradients, like an old console game."
   camera_and_composition: Fixed overhead survival horror camera, framed the way Signalis 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cold cosmic dread.
-  rendering_and_quality: Authentic retro survival horror screen, matching real Signalis 2022 screenshots.
-  key_features: Signalis low-poly; red emergency; overhead camera
-  creative_brief: 'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread. Carry it through Signalis low-poly, red emergency, overhead camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 2022 frame deliberately made at 640 by 480 on a CRT look: overhead view of a cramped corridor, soft grain and jagged edges."
+  key_features: "Signalis coarse pixel textures; red emergency; overhead camera; retro horror"
+  creative_brief: "rose-engine Signalis (2022) look: survival horror deliberately made to look like an old console game, coarse pixelated textures on simple shapes, a polar facility, red emergency light and an overhead camera. Carry it through Signalis coarse pixel textures, red emergency, overhead camera, retro horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a blue-haired android officer with a scar
   - watermark

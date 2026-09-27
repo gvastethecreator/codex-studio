@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Grim Dawn 2016 - Crate Gritty Isometric
 category: 9. Gothic & Dungeon Gameplay
 domain: isometric undead army gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty Victorian dark fantasy heroes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted grey-brown with spell glows, true to the Grim Dawn 2016 palette.
-  lighting_and_shadow: Grim overcast, lit the way Grim Dawn 2016 lights its levels.
-  texture_and_material: Gritty isometric detail, with the in-engine surface finish of Grim Dawn 2016.
+  lighting_and_shadow: "Grim overcast grey light with sickly green spell glow."
+  texture_and_material: "Gritty detailed ground and ruins seen from a high diagonal."
   camera_and_composition: Isometric ARPG view, framed the way Grim Dawn 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim desperate war.
-  rendering_and_quality: Authentic isometric ARPG screen, matching real Grim Dawn 2016 screenshots.
+  rendering_and_quality: "A 2016 PC frame at 1920 by 1080: small hero in ruins, red and blue orb shapes and a skill bar at the bottom."
   creative_brief: 'Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects. Carry it through Grim Dawn gritty, necromancer, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Grim Dawn gritty; necromancer; isometric
 avoidRules:

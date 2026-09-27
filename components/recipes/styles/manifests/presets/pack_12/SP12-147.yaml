@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Everybody's Golf 2017 - Clap Hanz Cartoon Links
 category: 5. Speed, Sport & Competitive Arenas
 domain: magical golf game screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Clap Hanz Everybody''s Golf (2017) look: bright cartoon golf with big-headed golfers, lush fairways, shot arcs and cheerful exaggerated reactions.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as big-headed cheerful cartoon golfers. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lush fairway green and sky blue, true to the Everybody's Golf 2017 palette.
-  lighting_and_shadow: Bright cheerful daylight, lit the way Everybody's Golf 2017 lights its levels.
-  texture_and_material: Soft stylized cartoon surfaces, with the in-engine surface finish of Everybody's Golf 2017.
+  lighting_and_shadow: "Bright cheerful daylight on soft green fairways, lit the way Everybody's Golf 2017 lights its levels."
+  texture_and_material: "Soft stylized cartoon surfaces with simple smooth shapes."
   camera_and_composition: Behind-the-golfer shot view, framed the way Everybody's Golf 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful playful sport.
-  rendering_and_quality: Authentic cartoon golf screen, matching real Everybody's Golf 2017 screenshots.
+  rendering_and_quality: "A 2017 frame at 1920 by 1080 behind a golfer: shot arc line, a power bar shape at the bottom."
   creative_brief: 'Clap Hanz Everybody''s Golf (2017) look: bright cartoon golf with big-headed golfers, lush fairways, shot arcs and cheerful exaggerated reactions. Carry it through Everybody''s Golf cartoon, fairways, shot arcs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Everybody's Golf cartoon; fairways; shot arcs
 avoidRules:

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Titanfall 2 2016 - Respawn Titan Cockpit
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: first-person mech cockpit screenshot
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as pilots inside mech cockpits and machines as colossal industrial walkers. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Industrial grey, cockpit amber and rain blue, true to the Titanfall 2 2016 palette.
-  lighting_and_shadow: Cockpit instrument glow and rain light, lit the way Titanfall 2 2016 lights its levels.
-  texture_and_material: Rain streaks, glass and worn industrial metal, with the in-engine surface finish of Titanfall 2 2016.
+  lighting_and_shadow: "Cockpit instrument glow in amber and rain light through the canopy glass."
+  texture_and_material: "Rain streaks on glass, scratched canopy struts and worn industrial metal outside."
   camera_and_composition: First-person cockpit canopy view, framed the way Titanfall 2 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with heavy mechanical power.
-  rendering_and_quality: Authentic mid-2010s mech shooter screen, matching real Titanfall 2 2016 screenshots.
+  rendering_and_quality: "A 2016 first-person frame at 1920 by 1080 from inside a mech cockpit: canopy frame, bracket and bar shapes projected on the glass."
   creative_brief: 'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities. Carry it through Titanfall cockpit, mech canopy, rain glass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Titanfall cockpit; mech canopy; rain glass
 avoidRules:

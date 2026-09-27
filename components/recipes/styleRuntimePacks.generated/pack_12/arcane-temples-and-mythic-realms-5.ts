@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         '2.5D side-scrolling view with parallax gothic depth, framed the way Bloodstained 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with ornate gothic exploration.',
       rendering_and_quality:
-        'Authentic modern 2.5D metroidvania screen, matching real Bloodstained 2019 screenshots.',
+        'A 2019 side-view frame at 1920 by 1080: painted 3D gothic castle on a flat play plane, health and mana bar shapes top left.',
       key_features: 'Bloodstained 2.5D; gothic castle; Igarashi metroidvania; demon bosses',
       creative_brief:
         "ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses. Carry it through Bloodstained 2.5D, gothic castle, Igarashi metroidvania, demon bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Wide third-person view dwarfing the small traveler, framed the way Journey 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wordless shared awe.',
       rendering_and_quality:
-        'Authentic early-2010s art-game screen, matching real Journey 2012 screenshots.',
+        'A 2012 PlayStation 3 frame at 1280 by 720 in third person: tiny cloaked figure on vast glittering dunes, no interface at all.',
       key_features: 'Journey glittering sand; tiny cloaked pilgrim; glowing scarf',
       creative_brief:
         "thatgamecompany Journey (2012) look: vast shimmering sand dunes rendered with glittering sand shaders, tiny cloaked figures with glowing scarves, flying cloth creatures and a distant beam-topped mountain. Carry it through Journey glittering sand, tiny cloaked pilgrim, glowing scarf. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -79,12 +79,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed pixel sprites in biomechanical ruins, with glitch effects scrambling nearby pixels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Toxic purple, flesh pink, alien teal and corrupted neon.',
       lighting_and_shadow: 'Dark ruin interiors lit by glowing organic machinery.',
-      texture_and_material: 'Dense 16-bit pixel art with biomechanical detail and glitch noise.',
+      texture_and_material:
+        'Dense square pixel art with biomechanical pipes and organs, glitch blocks scrambling nearby tiles.',
       camera_and_composition:
         'Side-view metroidvania room view, framed the way Axiom Verge 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie alien discovery.',
       rendering_and_quality:
-        'Authentic modern pixel metroidvania screen, matching real Axiom Verge 2015 screenshots.',
+        'A 2015 side-view frame at 480 by 270 scaled up: crisp tiny pixel sprite in dark alien ruins, a thin health bar shape top left.',
       key_features: 'Axiom Verge pixels; biomechanical ruin; glitch corruption',
       creative_brief:
         "Thomas Happ Axiom Verge (2015) look: 16-bit style pixel metroidvania in a biomechanical alien ruin, H.R. Giger-inspired organic machinery, glitch-gun corruption and scrambled pixels. Carry it through Axiom Verge pixels, biomechanical ruin, glitch corruption. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -109,11 +110,11 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Deep void black, lantern amber, cosmic teal and brass.',
       lighting_and_shadow: 'Lantern prow cones cutting through dark starry void.',
       texture_and_material:
-        'Hand-painted illustrative surfaces with gothic detail, with the in-engine surface finish of Sunless Skies 2019.',
+        'Hand-painted illustrated ship and station sprites with gothic detail, floating on a dark painted void.',
       camera_and_composition: 'Top-down view of the locomotive in the void.',
       atmosphere_and_mood: 'Keep the requested mood with gothic cosmic wanderlust.',
       rendering_and_quality:
-        'Authentic painted top-down exploration screen, matching real Sunless Skies 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 seen from above: a small painted locomotive-ship with a lantern cone in a starry void, small bar shapes along the edges.',
       key_features: 'Sunless Skies void; flying locomotives; lantern prows',
       creative_brief:
         "Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors. Carry it through Sunless Skies void, flying locomotives, lantern prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -135,12 +136,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Autumn red, temple ash grey, snow white and spark orange.',
       lighting_and_shadow: 'Diffuse overcast mountain light with bright deflection sparks.',
       texture_and_material:
-        'Realistic weathered wood, stone, cloth and armor, with the in-engine surface finish of Sekiro 2019.',
+        'Realistic weathered wood, stone, cloth and armor, slightly soft in the distance with mist softening the mountains.',
       camera_and_composition:
         'Third-person lock-on duel view on rooftops, framed the way Sekiro 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense deadly duel.',
       rendering_and_quality:
-        'Authentic modern third-person action screen, matching real Sekiro 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 in third person over the shoulder: shinobi mid-parry with bright sparks, a posture bar shape at the top.',
       key_features: 'Sekiro deflection sparks; temple rooftops; shinobi duel',
       creative_brief:
         "FromSoftware Sekiro: Shadows Die Twice (2019) look: third-person shinobi action in Sengoku Japan, temple rooftops, falling snow and autumn leaves, deflection sparks and grappling lines. Carry it through Sekiro deflection sparks, temple rooftops, shinobi duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -171,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Dynamic tilted angles through palace interiors, framed the way Persona 5 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with stylish rebellious heist.',
       rendering_and_quality:
-        'Authentic stylized anime JRPG screen, matching real Persona 5 2016 screenshots.',
+        'A 2016 frame at 1920 by 1080: cel-shaded thieves in a palace, jagged red and black menu shapes slashing into the corners without text.',
       key_features: 'Persona 5 red and black; masked thieves; graphic flair',
       creative_brief:
         "Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists. Carry it through Persona 5 red and black, masked thieves, graphic flair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -197,12 +198,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Bog green, muddy brown, grey fog and pale folklore light.',
       lighting_and_shadow: 'Diffuse misty light with lantern glow and eerie hues.',
       texture_and_material:
-        'Realistic mud, wet wood, leather and moss, with the in-engine surface finish of The Witcher 3 2015.',
+        'Realistic mud, wet wood, leather and moss, dense grass and reeds, slightly soft console-game detail in the distance.',
       camera_and_composition:
         'Third-person over-the-shoulder view in wet landscapes, framed the way The Witcher 3 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie folkloric dread.',
       rendering_and_quality:
-        'Authentic mid-2010s open-world RPG screen, matching real The Witcher 3 2015 screenshots.',
+        'A 2015 PlayStation 4 frame at 1920 by 1080 in third person: misty bog, a small round minimap shape top right and bar shapes top left.',
       key_features: 'Witcher 3 Slavic bog; monster contracts; misty folklore',
       creative_brief:
         "CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore. Carry it through Witcher 3 Slavic bog, monster contracts, misty folklore. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -226,14 +227,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject in clean simplified painterly shapes, seen from first person on a silent island. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Saturated orchid pink, grass green, sky blue and warm stone.',
       lighting_and_shadow:
-        'Bright clean sunlight with soft painterly shading, lit the way The Witness 2016 lights its levels.',
+        'Bright clean sunlight with soft simple shading and saturated color, almost no dark areas.',
       texture_and_material:
-        'Simplified smooth shapes without grime, with the in-engine surface finish of The Witness 2016.',
+        'Simplified smooth shapes without grime or fine texture, bold saturated autumn trees.',
       camera_and_composition:
         'First-person view facing puzzle panels, framed the way The Witness 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet contemplative insight.',
       rendering_and_quality:
-        'Authentic painterly first-person puzzle screen, matching real The Witness 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: clean saturated island, a glowing line-maze panel on a stand, no interface.',
       key_features: 'The Witness saturated island; line puzzles; simplified shapes',
       creative_brief:
         "Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature. Carry it through The Witness saturated island, line puzzles, simplified shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -254,14 +255,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as sumi-e ink figures with bold brush outlines and flowing painted forms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Rice paper cream, jade green, cherry pink and ink black.',
       lighting_and_shadow:
-        'Soft painted daylight with glowing celestial strokes, lit the way Okami 2006 lights its levels.',
+        'Soft painted daylight with glowing celestial ink strokes across the sky.',
       texture_and_material:
-        'Sumi-e brush outlines on rice paper texture, with the in-engine surface finish of Okami 2006.',
+        'Thick sumi-e brush outlines around every shape, rice paper grain laid over the whole screen.',
       camera_and_composition:
         'Third-person view across painted landscapes, framed the way Okami 2006 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with divine folkloric wonder.',
       rendering_and_quality:
-        'Authentic PS2 ink-painted action screen, matching real Okami 2006 screenshots.',
+        'A 2006 PlayStation 2 frame at 640 by 448: ink-painted world with soft blur and paper texture, an ink-pot row shape at the top.',
       key_features: 'Okami sumi-e; rice paper; celestial brush strokes',
       creative_brief:
         "Clover Studio Okami (2006) look: cel-shaded sumi-e ink painting in motion, rice paper filter, bold brush outlines, Japanese folklore and celestial brush strokes across the sky. Carry it through Okami sumi-e, rice paper, celestial brush strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -286,14 +287,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as soft cel-shaded adventurers with simple shapes and painterly shading. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft grass green, sky blue, sunset gold and stone grey.',
       lighting_and_shadow:
-        'Soft open-air light with painterly haze, lit the way Breath of the Wild 2017 lights its levels.',
+        'Soft open-air sunlight with painted haze fading distant hills to pale blue.',
       texture_and_material:
-        'Painterly cel shading with watercolor-like grass, with the in-engine surface finish of Breath of the Wild 2017.',
+        'Simple shapes with soft two-tone shading, grass drawn as soft painterly strokes that sway.',
       camera_and_composition:
         'Third-person view across a vast open landscape, framed the way Breath of the Wild 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with free open-air adventure.',
       rendering_and_quality:
-        'Authentic Switch painterly open-world screen, matching real Breath of the Wild 2017 screenshots.',
+        'A 2017 Switch frame at 1280 by 720: open plains with painted haze, heart shapes top left and a small minimap square bottom right.',
       key_features: 'BotW painterly cel; open plains; ancient shrines',
       creative_brief:
         "Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes. Carry it through BotW painterly cel, open plains, ancient shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -320,12 +321,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Saturated sky blue, grass green, gold and elemental colors.',
       lighting_and_shadow: 'Bright clean anime daylight with soft rim light.',
       texture_and_material:
-        'Clean anime cel shading on stylized 3D, with the in-engine surface finish of Genshin Impact 2020.',
+        'Clean anime cel shading on simple stylized 3D, crisp outlines on characters and soft painted skies.',
       camera_and_composition:
         'Third-person gliding view over islands, framed the way Genshin Impact 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bright heroic wonder.',
       rendering_and_quality:
-        'Authentic modern anime open-world screen, matching real Genshin Impact 2020 screenshots.',
+        'A 2020 frame at 1920 by 1080 in third person: anime adventurer gliding over floating isles, a round minimap top left and skill circles bottom right.',
       creative_brief:
         "miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies. Carry it through Genshin anime cel, floating isles, gliding, elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Genshin anime cel; floating isles; gliding; elements',
@@ -354,14 +355,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as part of a first-person puzzle space of beams, pedestals and sealed stone doors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm sunlit stone, cool shadow and colored beam light.',
       lighting_and_shadow:
-        'Sunlit ruins with clean colored light beams, lit the way The Talos Principle 2014 lights its levels.',
+        'Warm Mediterranean sun on ruins, with clean straight colored light beams connecting devices.',
       texture_and_material:
-        'Photoreal weathered stone and brushed metal devices, with the in-engine surface finish of The Talos Principle 2014.',
+        'Realistic weathered stone and brushed metal pedestals, with clean simple puzzle devices.',
       camera_and_composition:
         'First-person view facing puzzle devices, framed the way The Talos Principle 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene philosophical puzzling.',
       rendering_and_quality:
-        'Authentic first-person puzzle screen, matching real The Talos Principle 2014 screenshots.',
+        'A 2014 first-person frame at 1920 by 1080: sunlit ruin courtyard, a held connector device at the bottom, no other interface.',
       creative_brief:
         "Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay. Carry it through Talos Principle ruins, light beams, sealed doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Talos Principle ruins; light beams; sealed doors',
@@ -387,11 +388,11 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed anime-realist PS2 JRPG characters in ornate summoner robes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as smooth simple JRPG characters with stiff shell-like hair and ornate robes, a little stiff in pose. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Mystic blue, summon gold and pyrefly green, true to the Final Fantasy X 2001 palette.',
       lighting_and_shadow:
-        'Bursting summon light and glowing glyphs, lit the way Final Fantasy X 2001 lights its levels.',
+        'A bright glyph circle glowing under a summoned creature, the rest of the scene evenly lit.',
       texture_and_material:
         'Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites.',
       camera_and_composition: 'Low in-engine battle camera looking up at rising beasts.',
@@ -399,8 +400,8 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies.',
       creative_brief:
-        "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX summon cutscene, glyph circle, rising aeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'FFX summon cutscene; glyph circle; rising aeon',
+        "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX battle screen, glyph circle, rising summoned creature, blank menu panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'FFX battle screen; glyph circle; rising summoned creature; blank menu panels',
     },
     ui: {
       previewStatus: 'pending',
@@ -427,12 +428,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Temple ochre, jungle green, gold and dark earth.',
       lighting_and_shadow: 'Dark caves lit by torches and glowing gold.',
       texture_and_material:
-        'Chunky hand-drawn cartoon tiles, with the in-engine surface finish of Spelunky 2012.',
+        'Chunky hand-drawn cartoon tiles of dirt and stone, gold chunks and simple outlined sprites.',
       camera_and_composition:
         'Side-view roguelike cave view, framed the way Spelunky 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with greedy perilous fun.',
       rendering_and_quality:
-        'Authentic cartoon roguelike screen, matching real Spelunky 2012 screenshots.',
+        'A 2012 side-view frame at 1280 by 720: small explorer sprite in a cave of stacked tiles, heart, bomb and rope icon shapes top left.',
       creative_brief:
         "Mossmouth Spelunky (2012) look: cartoon side-view cave-diving roguelike, chunky hand-drawn sprites, golden idols, boulder traps, spikes and dark jungle temples. Carry it through Spelunky idol, boulder traps, cartoon caves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Spelunky idol; boulder traps; cartoon caves',
@@ -458,20 +459,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt gothic figures shifting between a solid world and a warped spectral version. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as gaunt angular figures with simple faces, in a world that bends and stretches when the spectral realm takes over. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Material earth tones against spectral blue-green, true to the Soul Reaver 1999 palette.',
-      lighting_and_shadow: 'Dim gothic light shifting into sickly spectral glow.',
+      lighting_and_shadow:
+        'Dim gothic light that turns into a sickly blue-green glow as the realm shifts.',
       texture_and_material:
-        'Low-poly gothic stone with warped spectral geometry, with the in-engine surface finish of Soul Reaver 1999.',
+        'Stone and wood with blurry repeating textures on blocky shapes, walls visibly twisting and stretching in the spectral version.',
       camera_and_composition:
         'Third-person view mid realm shift, framed the way Soul Reaver 1999 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gothic spectral unease.',
       rendering_and_quality:
-        'Authentic late-nineties gothic 3D screen, matching real Soul Reaver 1999 screenshots.',
+        'A 1999 PlayStation frame at 512 by 240 on a CRT: soft, jagged and dark, with a spiral health gauge shape in a corner.',
       creative_brief:
-        "Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures. Carry it through Soul Reaver realm shift, warped geometry, spectral blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Soul Reaver realm shift; warped geometry; spectral blue',
+        "Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures. Carry it through Soul Reaver realm shift, twisting walls, spectral blue-green, soft PS1 gloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Soul Reaver realm shift; twisting walls; spectral blue-green; soft PS1 gloom',
     },
     ui: {
       previewStatus: 'pending',
@@ -498,14 +500,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Luminous turquoise, coral orange and deep blue, true to the Abzu 2016 palette.',
       lighting_and_shadow:
-        'Sunlit god rays through clear water, lit the way Abzu 2016 lights its levels.',
+        'Sunlit beams slanting through clear blue water, lit the way Abzu 2016 lights its levels.',
       texture_and_material:
-        'Smooth stylized shapes without grime, with the in-engine surface finish of Abzu 2016.',
+        'Smooth simple shapes with clean gradients, thousands of small fish moving as one mass.',
       camera_and_composition:
         'Third-person swimming view, framed the way Abzu 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with meditative oceanic awe.',
       rendering_and_quality:
-        'Authentic stylized underwater screen, matching real Abzu 2016 screenshots.',
+        'A 2016 frame at 1920 by 1080: tiny diver among vast shoals, no interface at all.',
       creative_brief:
         "Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples. Carry it through Abzu luminous shoals, god rays, sunken temples. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Abzu luminous shoals; god rays; sunken temples',
@@ -533,15 +535,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small soft figures in glowing capes gliding on the wind. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft peach, cloud white, dusk lilac and candle gold.',
-      lighting_and_shadow:
-        'Soft glowing haze with warm candle light, lit the way Sky Children of the Light 2019 lights its levels.',
+      lighting_and_shadow: 'Soft glowing haze and warm candle light on clouds.',
       texture_and_material:
-        'Soft stylized shapes with glow and haze, with the in-engine surface finish of Sky Children of the Light 2019.',
+        'Soft rounded shapes with glow and haze, capes that shimmer, clouds like cotton.',
       camera_and_composition:
         'Wide third-person view over clouds, framed the way Sky Children of the Light 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gentle luminous wonder.',
       rendering_and_quality:
-        'Authentic soft stylized mobile screen, matching real Sky Children of the Light 2019 screenshots.',
+        'A 2019 phone frame at 1920 by 1080: small caped figures gliding over cloud kingdoms, a star-shaped cape meter near one figure.',
       creative_brief:
         "thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples. Carry it through Sky capes, cloud kingdoms, candle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sky capes; cloud kingdoms; candle glow',
@@ -570,15 +571,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as small glowing figures against lush painted scenery. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Deep teal, glowing cyan and warm amber, true to the Ori and the Blind Forest 2015 palette.',
-      lighting_and_shadow:
-        'Luminous glow against deep shadows, lit the way Ori and the Blind Forest 2015 lights its levels.',
+      lighting_and_shadow: 'Glowing figures with bright halos against deep blue shadows.',
       texture_and_material:
-        'Hand-painted layered backgrounds, with the in-engine surface finish of Ori and the Blind Forest 2015.',
+        'Rich hand-painted background layers at several depths, small crisp glowing character sprites.',
       camera_and_composition:
         'Side-view platformer with parallax, framed the way Ori and the Blind Forest 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with luminous tender wonder.',
       rendering_and_quality:
-        'Authentic painted platformer screen, matching real Ori and the Blind Forest 2015 screenshots.',
+        'A 2015 side-view frame at 1920 by 1080: tiny glowing spirit in painted forest layers, a row of small orbs at the bottom.',
       creative_brief:
         "Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth. Carry it through Ori painted layers, luminous glow, parallax. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Ori painted layers; luminous glow; parallax',
@@ -607,15 +607,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as animated-film cartoon characters with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Rift purple, cyan and warm gold, true to the Ratchet & Clank Rift Apart 2021 palette.',
-      lighting_and_shadow:
-        'Glowing rift light with cinematic bounce, lit the way Ratchet & Clank Rift Apart 2021 lights its levels.',
+      lighting_and_shadow: 'Purple rift glow and warm bounce light like an animated feature film.',
       texture_and_material:
-        'Animated-film-quality stylized surfaces, with the in-engine surface finish of Ratchet & Clank Rift Apart 2021.',
+        'Animated-film-quality shapes, fur and metal, sharp and clean with no grime.',
       camera_and_composition:
         'Third-person action view near a rift, framed the way Ratchet & Clank Rift Apart 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with zippy dimensional adventure.',
       rendering_and_quality:
-        'Authentic PS5 animated-film action screen, matching real Ratchet & Clank Rift Apart 2021 screenshots.',
+        'A 2021 PlayStation 5 frame at 3840 by 2160 in third person: cartoon hero leaping through a purple rift portal, small bar shapes.',
       creative_brief:
         "Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters. Carry it through Rift Apart portals, animated-film 3D, purple rifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Rift Apart portals; animated-film 3D; purple rifts',
@@ -643,15 +642,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant thin watercolor figures with flowing shapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Watercolor washes of silver, blue and rose, true to the Gris 2018 palette.',
-      lighting_and_shadow:
-        'Soft washed light with moon glow, lit the way Gris 2018 lights its levels.',
+      lighting_and_shadow: 'Soft washed watercolor light and pale moon glow.',
       texture_and_material:
-        'Watercolor washes and ink lines, with the in-engine surface finish of Gris 2018.',
+        'Watercolor washes, paper grain and thin ink lines, flat color zones blooming into each other.',
       camera_and_composition:
         'Side-view platformer composition, framed the way Gris 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet grieving beauty.',
       rendering_and_quality:
-        'Authentic watercolor platformer screen, matching real Gris 2018 screenshots.',
+        'A 2018 side-view frame at 1920 by 1080: small elegant figure crossing geometric watercolor ruins, no interface.',
       creative_brief:
         "Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes. Carry it through Gris watercolor, Conrad Roset, geometric ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gris watercolor; Conrad Roset; geometric ruins',

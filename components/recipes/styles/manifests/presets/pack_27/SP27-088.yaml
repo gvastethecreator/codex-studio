@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Street Fighter II 1991 - Capcom Sprite Versus
 category: 5. Video Games 90s
 domain: nineties fighting game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side versus view with health bars, framed the way Street Fighter II 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with competitive arcade intensity.
   rendering_and_quality: "A 1991 arcade frame at 384 by 224: crisp pixels, two health bar shapes across the top and a timer box between them."
-  creative_brief: 'Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects. Carry it through SF2 large sprites, world stages, versus layout. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects. Carry it through SF2 large pixel fighters, lively stages, versus health bars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "SF2 large pixel fighters; lively stages; versus health bars"
 avoidRules:
   - existing fighting game characters

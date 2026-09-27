@@ -3,7 +3,7 @@ id: SP12-035
 packId: pack_12
 name: Monster Train 2020 - Shiny Shoe Infernal Floors
 category: 4. Sieges, Warfronts & Last Stands
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as cartoon demon units and cards battling on stacked train floors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Infernal orange, ember red and deep purple, true to the Monster Train 2020 palette.
-  lighting_and_shadow: Pyre fire glow and card flashes, lit the way Monster Train 2020 lights its levels.
-  texture_and_material: Clean stylized cartoon 3D and card frames, with the in-engine surface finish of Monster Train 2020.
+  lighting_and_shadow: "Warm pyre fire glow and bright flashes when cards are played."
+  texture_and_material: "Clean chunky cartoon 3D creatures standing on train floors, flat card frames in hand."
   camera_and_composition: Side view of stacked train floors, framed the way Monster Train 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with fiery strategic chaos.
-  rendering_and_quality: Authentic deckbuilder screen, matching real Monster Train 2020 screenshots.
+  rendering_and_quality: "A 2020 PC frame at 1920 by 1080: a vertical stack of train floors with cartoon demons, a fan of blank cards along the bottom."
   key_features: Monster Train stacked floors; pyre; demon cards
   creative_brief: 'Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects. Carry it through Monster Train stacked floors, pyre, demon cards. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

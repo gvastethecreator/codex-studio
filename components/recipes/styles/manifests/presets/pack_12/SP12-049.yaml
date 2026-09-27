@@ -7,7 +7,7 @@ styleAnchors:
   - Symphony Thorn Castle Raid
 displayName: Symphony of the Night 1997 - Konami Gothic Sprite Castle
 category: 7. Heists, Horror & Underworld Runs
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -24,15 +24,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant gothic sprites with long hair, capes and ornate clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as elegant tall pixel sprites with long hair and capes, drawn with many colors and fine detail. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Moonlit indigo, blood crimson and gilded gold, true to the Symphony of the Night 1997 palette.
-  lighting_and_shadow: Moonlight through gothic windows and candles, lit the way Symphony of the Night 1997 lights its levels.
-  texture_and_material: Lavish 32-bit sprite art and painted backgrounds, with the in-engine surface finish of Symphony of the Night 1997.
+  lighting_and_shadow: "Moonlight through tall gothic windows and warm candle pixels."
+  texture_and_material: "Lavish detailed pixel sprites over painted-looking pixel backgrounds in deep blues and reds."
   camera_and_composition: Side-view metroidvania castle view, framed the way Symphony of the Night 1997 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with elegant gothic menace.
-  rendering_and_quality: Authentic PlayStation 2D gothic screen, matching real Symphony of the Night 1997 screenshots.
-  key_features: Symphony of the Night sprites; gothic castle; Kojima elegance
-  creative_brief: 'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night sprites, gothic castle, Kojima elegance. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 1997 PlayStation side-view frame at 256 by 240: crisp pixel castle hall, a small ornate bar shape top left."
+  key_features: "Symphony of the Night lavish sprites; gothic castle; moonlit halls"
+  creative_brief: "Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night lavish sprites, gothic castle, moonlit halls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a silver-haired dhampir with a black cape
   - a whip-wielding vampire hunter in leather

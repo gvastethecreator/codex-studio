@@ -9,7 +9,7 @@ styleAnchors:
 displayName: A Plague Tale Innocence 2019 - Asobo Rat Swarm
 category: 7. Heists, Horror & Underworld Runs
 domain: sewer dungeon exploration screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval commoners in worn wool. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Torch orange, mud brown and plague grey, true to the A Plague Tale Innocence 2019 palette.
-  lighting_and_shadow: Torchlight rings holding back darkness, lit the way A Plague Tale Innocence 2019 lights its levels.
-  texture_and_material: Mud, wet stone and fur, with the in-engine surface finish of A Plague Tale Innocence 2019.
+  lighting_and_shadow: "Rings of torchlight holding back darkness filled with rats."
+  texture_and_material: "Mud, wet stone, fur and a carpet of thousands of rats."
   camera_and_composition: Third-person view with torches, framed the way A Plague Tale Innocence 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with desperate medieval dread.
-  rendering_and_quality: Authentic modern adventure screen, matching real A Plague Tale Innocence 2019 screenshots.
+  rendering_and_quality: "A 2019 frame at 1920 by 1080 in third person: a girl with a torch in a sewer ringed by rats, no interface."
   creative_brief: 'Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers. Carry it through Plague Tale rat swarms, torchlight, sewers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Plague Tale rat swarms; torchlight; sewers
 avoidRules:

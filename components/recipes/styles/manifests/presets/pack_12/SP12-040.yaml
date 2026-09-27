@@ -7,7 +7,7 @@ styleAnchors:
   - Monster Hunter Thunder Plains
 displayName: Monster Hunter World 2018 - Capcom Ecosystem Hunt
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as hunters in layered monster-part armor with oversized weapons. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Storm blue, electric yellow and natural earth, true to the Monster Hunter World 2018 palette.
-  lighting_and_shadow: Stormy light with lightning bursts, lit the way Monster Hunter World 2018 lights its levels.
-  texture_and_material: Detailed scales, fur and forged armor, with the in-engine surface finish of Monster Hunter World 2018.
+  lighting_and_shadow: "Stormy light with lightning flashes across a wild ecosystem."
+  texture_and_material: "Detailed scales, fur and forged armor built from monster parts."
   camera_and_composition: Third-person view mid-attack, framed the way Monster Hunter World 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with thrilling colossal hunt.
-  rendering_and_quality: Authentic modern hunting action screen, matching real Monster Hunter World 2018 screenshots.
+  rendering_and_quality: "A 2018 frame at 1920 by 1080 in third person: hunter with a huge weapon facing a giant monster, a round minimap bottom right."
   key_features: Monster Hunter giant monsters; big weapons; ecosystems
   creative_brief: 'Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather. Carry it through Monster Hunter giant monsters, big weapons, ecosystems. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

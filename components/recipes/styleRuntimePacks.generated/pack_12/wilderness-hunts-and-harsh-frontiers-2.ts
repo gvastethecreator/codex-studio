@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'First-person view with a drawn bow in frame.',
       atmosphere_and_mood: 'Keep the requested mood with lush alien wonder.',
       rendering_and_quality:
-        'Authentic modern first-person open-world screen, matching real Avatar Frontiers of Pandora 2023 screenshots.',
+        'A 2023 first-person frame at 3840 by 2160: bow drawn at the bottom, dense glowing jungle, a compass strip at the top.',
       key_features: 'Frontiers of Pandora jungle; bioluminescence; first-person bow',
       creative_brief:
         "Massive Entertainment Avatar: Frontiers of Pandora (2023) look: first-person hunting in a towering alien rainforest, bioluminescent plants, floating flora, six-legged fauna and lush Snowdrop engine detail. Carry it through Frontiers of Pandora jungle, bioluminescence, first-person bow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -48,12 +48,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Desaturated ash grey, ember orange, rust and deep shadow.',
       lighting_and_shadow: 'Dim gloomy light with molten glows and bonfire warmth.',
       texture_and_material:
-        'Worn armor, rough stone, ash and embers, with the in-engine surface finish of Dark Souls 2011.',
+        'Worn armor, rough stone, ash and embers in muddy low-detail textures, slightly jagged edges.',
       camera_and_composition:
         'Third-person lock-on view facing a huge boss, framed the way Dark Souls 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bleak perilous endurance.',
       rendering_and_quality:
-        'Authentic early-2010s dark fantasy action screen, matching real Dark Souls 2011 screenshots.',
+        'A 2011 PlayStation 3 frame at 1280 by 720 in third person: dark crushed shadows, heavy bloom on fire, bar shapes top left.',
       key_features: 'Dark Souls decay; demon bosses; bonfires; worn armor',
       creative_brief:
         "FromSoftware Dark Souls (2011) look: third-person dark fantasy of decayed kingdoms, muted desaturated palettes, heavy worn armor, towering demon bosses and lonely bonfires. Carry it through Dark Souls decay, demon bosses, bonfires, worn armor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -77,14 +77,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors seen from first person in painterly winter light. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Painterly snow blue, pine green, sunset peach and cabin amber.',
       lighting_and_shadow:
-        'Soft painterly gradients with low winter sun, lit the way The Long Dark 2017 lights its levels.',
+        'Soft painted gradients with low winter sun turning snow pink and orange.',
       texture_and_material:
-        'Flat brushstroke textures and soft shapes, with the in-engine surface finish of The Long Dark 2017.',
+        'Flat brushstroke textures on simple shapes, snow as soft painted planes.',
       camera_and_composition:
         'First-person view across snowfields, framed the way The Long Dark 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet lonely survival.',
       rendering_and_quality:
-        'Authentic painterly survival screen, matching real The Long Dark 2017 screenshots.',
+        'A 2017 first-person frame at 1920 by 1080: hands in mittens at the bottom, painterly snowy valley, small status icon shapes.',
       key_features: 'The Long Dark painterly snow; cabins; wolves',
       creative_brief:
         "Hinterland Studio The Long Dark (2017) look: first-person survival in a painterly Canadian winter wilderness, flat brushstroke textures, soft gradients, cabins, wolves and aurora nights. Carry it through The Long Dark painterly snow, cabins, wolves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -104,23 +104,23 @@ export const GENERATED_STYLE_PRESETS = [
       'existing Deep Rock dwarves and their salute, photoreal rock detail, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, UI overlay, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms.',
+        'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves of big flat angular rock facets, glowing minerals, flares and alien bug swarms.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stout bearded space miners in chunky gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as stout bearded miners in chunky yellow-and-grey gear, seen from first person with a tool in hand. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Cave darkness, flare orange and mineral cyan, true to the Deep Rock Galactic 2020 palette.',
       lighting_and_shadow:
-        'Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.',
+        'Headlamps and thrown flares punching colored light into near-total cave darkness.',
       texture_and_material:
-        'Flat-shaded faceted low-poly rock, chunky simple models and glowing crystals.',
+        'Cave walls of big flat angular facets with almost no texture, each facet catching flare light as a single color; glowing crystal clusters.',
       camera_and_composition:
         'First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rowdy cave camaraderie.',
       rendering_and_quality:
-        'Authentic stylized low-poly co-op cave shooter screen, not photoreal.',
-      key_features: 'Deep Rock low-poly caves; flares; mining crew',
+        'A 2020 first-person frame at 1920 by 1080: a drill or gun at the bottom right, dark faceted cave, bar and icon shapes in the corners.',
+      key_features: 'Deep Rock faceted caves; flares; mining crew; first person',
       creative_brief:
-        "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves of big flat angular rock facets, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock faceted caves, flares, mining crew, first person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -138,15 +138,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as divers seen from first person with scanners and small subs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Alien turquoise, coral magenta and abyss blue, true to the Subnautica 2018 palette.',
-      lighting_and_shadow:
-        'Filtered sun shafts and glowing reef, lit the way Subnautica 2018 lights its levels.',
+      lighting_and_shadow: 'Filtered sun shafts from the surface and glowing reef plants below.',
       texture_and_material:
-        'Stylized alien coral and water haze, with the in-engine surface finish of Subnautica 2018.',
+        'Stylized alien coral and fish in soft colors, blue water haze swallowing distance.',
       camera_and_composition:
         'First-person dive view, framed the way Subnautica 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with awe edged with fear.',
       rendering_and_quality:
-        'Authentic underwater survival screen, matching real Subnautica 2018 screenshots.',
+        'A 2018 first-person frame at 1920 by 1080: a scanner tool in hand, reef below, small oxygen and bar shapes bottom left.',
       key_features: 'Subnautica reef; leviathans; first-person dive',
       creative_brief:
         "Unknown Worlds Subnautica (2018) look: first-person underwater survival on an alien ocean planet, luminous coral, leviathans, small submarines and handheld scanners. Carry it through Subnautica reef, leviathans, first-person dive. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -171,15 +170,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as distant realistic figures seen through a scope or a prone marksman. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Canyon ochre, dusty green and sky haze, true to the Sniper Ghost Warrior Contracts 2019 palette.',
-      lighting_and_shadow:
-        'Hot daylight with heat haze, lit the way Sniper Ghost Warrior Contracts 2019 lights its levels.',
-      texture_and_material:
-        'Realistic rock, dust and gear, with the in-engine surface finish of Sniper Ghost Warrior Contracts 2019.',
+      lighting_and_shadow: 'Hot hard daylight with shimmering heat haze in the distance.',
+      texture_and_material: 'Realistic rock, dust and gear, softened by haze across the canyon.',
       camera_and_composition:
         'First-person prone scope view, framed the way Sniper Ghost Warrior Contracts 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with patient lethal focus.',
       rendering_and_quality:
-        'Authentic tactical sniper screen, matching real Sniper Ghost Warrior Contracts 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080: round black scope view with range ticks, a small figure framed across the canyon.',
       key_features: 'Sniper contracts; scope view; canyon haze',
       creative_brief:
         "CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys. Carry it through Sniper contracts, scope view, canyon haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -203,15 +200,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as hunters in layered monster-part armor with oversized weapons. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Storm blue, electric yellow and natural earth, true to the Monster Hunter World 2018 palette.',
-      lighting_and_shadow:
-        'Stormy light with lightning bursts, lit the way Monster Hunter World 2018 lights its levels.',
-      texture_and_material:
-        'Detailed scales, fur and forged armor, with the in-engine surface finish of Monster Hunter World 2018.',
+      lighting_and_shadow: 'Stormy light with lightning flashes across a wild ecosystem.',
+      texture_and_material: 'Detailed scales, fur and forged armor built from monster parts.',
       camera_and_composition:
         'Third-person view mid-attack, framed the way Monster Hunter World 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with thrilling colossal hunt.',
       rendering_and_quality:
-        'Authentic modern hunting action screen, matching real Monster Hunter World 2018 screenshots.',
+        'A 2018 frame at 1920 by 1080 in third person: hunter with a huge weapon facing a giant monster, a round minimap bottom right.',
       key_features: 'Monster Hunter giant monsters; big weapons; ecosystems',
       creative_brief:
         "Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather. Carry it through Monster Hunter giant monsters, big weapons, ecosystems. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -236,15 +231,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as simple painterly figures seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset orange, coral pink and teal ridges, true to the Firewatch 2016 palette.',
-      lighting_and_shadow:
-        'Warm poster-like sunset gradients, lit the way Firewatch 2016 lights its levels.',
+      lighting_and_shadow: 'Warm poster-like sunset gradients in orange, pink and purple.',
       texture_and_material:
-        'Flat painterly shapes and soft gradients, with the in-engine surface finish of Firewatch 2016.',
+        'Flat painted shapes and soft gradients, trees as simple layered silhouettes.',
       camera_and_composition:
         'First-person view from a lookout, framed the way Firewatch 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wistful lonely warmth.',
       rendering_and_quality:
-        'Authentic painterly first-person screen, matching real Firewatch 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: hands on a wooden lookout rail, layered ridges fading into the sunset.',
       key_features: 'Firewatch Olly Moss palette; lookout; ridges',
       creative_brief:
         "Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges. Carry it through Firewatch Olly Moss palette, lookout, ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -267,15 +261,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as thousands of small soldiers in lacquered armor with banners. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bronze marsh gold, banner red and mist grey.',
-      lighting_and_shadow:
-        'Dawn mist light over armies, lit the way Total War Three Kingdoms 2019 lights its levels.',
+      lighting_and_shadow: 'Soft dawn mist light over marshes and massed armies.',
       texture_and_material:
-        'Detailed lacquered armor and reeds, with the in-engine surface finish of Total War Three Kingdoms 2019.',
+        'Tiny detailed lacquered armor and banners repeated by the thousand, reeds and mud.',
       camera_and_composition:
         'High battle camera over armies, framed the way Total War Three Kingdoms 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with epic martial grandeur.',
       rendering_and_quality:
-        'Authentic grand battle strategy screen, matching real Total War Three Kingdoms 2019 screenshots.',
+        'A 2019 PC frame at 1920 by 1080 from high above: huge army blocks with banners, a unit card row at the bottom.',
       key_features: 'Total War massed armies; banners; marsh siege',
       creative_brief:
         "Creative Assembly Total War: Three Kingdoms (2019) look: massive real-time battles of thousands of soldiers in ancient Chinese armies, banners, lacquered armor, marshes and fortresses. Carry it through Total War massed armies, banners, marsh siege. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -299,15 +292,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny figures clinging to colossal furred creatures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Soft green, stone grey and sun haze, true to the Shadow of the Colossus 2018 palette.',
-      lighting_and_shadow:
-        'Soft bloom and hazy sunlight, lit the way Shadow of the Colossus 2018 lights its levels.',
-      texture_and_material:
-        'Detailed fur, moss and ancient stone, with the in-engine surface finish of Shadow of the Colossus 2018.',
+      lighting_and_shadow: 'Soft bloom and hazy sunlight washing the landscape pale.',
+      texture_and_material: 'Detailed fur, moss and ancient stone on a colossal moving creature.',
       camera_and_composition:
         'Wide low view of a colossus, framed the way Shadow of the Colossus 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic grand struggle.',
       rendering_and_quality:
-        'Authentic modern remake adventure screen, matching real Shadow of the Colossus 2018 screenshots.',
+        'A 2018 PlayStation 4 frame at 1920 by 1080: tiny figure clinging to a colossus, a grip circle shape bottom right.',
       key_features: 'Colossus climb; tiny rider; vast land',
       creative_brief:
         "Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur. Carry it through Colossus climb, tiny rider, vast land. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -334,14 +325,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Forest green, fur brown and fire amber, true to the Far Cry Primal 2016 palette.',
       lighting_and_shadow:
-        'Dappled forest light, lit the way Far Cry Primal 2016 lights its levels.',
-      texture_and_material:
-        'Realistic fur, bone and foliage, with the in-engine surface finish of Far Cry Primal 2016.',
+        'Dappled forest light through tall trees, lit the way Far Cry Primal 2016 lights its levels.',
+      texture_and_material: 'Realistic fur, bone and dense foliage, slightly soft in the distance.',
       camera_and_composition:
         'First-person bow view, framed the way Far Cry Primal 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with primal tense stalking.',
       rendering_and_quality:
-        'Authentic open-world hunting screen, matching real Far Cry Primal 2016 screenshots.',
+        'A 2016 first-person frame at 1920 by 1080: bow drawn at the bottom, a mammoth ahead, a small minimap bottom left.',
       creative_brief:
         "Ubisoft Far Cry Primal (2016) look: first-person Stone Age hunting in lush Mesolithic valleys, bows and spears, megafauna, bone ornaments and fire. Carry it through Far Cry Primal hunt, Stone Age, bow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Far Cry Primal hunt; Stone Age; bow',
@@ -371,14 +361,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Blizzard white, ice blue and spirit glow, true to the Never Alone 2014 palette.',
       lighting_and_shadow:
-        'Blizzard haze and spirit light, lit the way Never Alone 2014 lights its levels.',
+        'White blizzard haze with glowing spirit shapes, lit the way Never Alone 2014 lights its levels.',
       texture_and_material:
-        'Stylized snow and scrimshaw spirit lines, with the in-engine surface finish of Never Alone 2014.',
+        'Stylized snow, fur parkas and scrimshaw-style spirit lines etched in light.',
       camera_and_composition:
         'Side-view platformer, framed the way Never Alone 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bitter folkloric endurance.',
       rendering_and_quality:
-        'Authentic folktale platformer screen, matching real Never Alone 2014 screenshots.',
+        'A 2014 side-view frame at 1920 by 1080: a small girl and an arctic fox crossing ice in a blizzard, no interface.',
       creative_brief:
         "Upper One Games Never Alone (2014) look: side-view Arctic folktale platformer inspired by Iñupiaq art, scrimshaw-like spirit shapes, blizzards and ice. Carry it through Never Alone Arctic, spirit shapes, blizzard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Never Alone Arctic; spirit shapes; blizzard',
@@ -407,14 +397,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as wildlife framed through a camera viewfinder. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Savanna gold, sunset orange and river blue, true to the Afrika 2008 palette.',
-      lighting_and_shadow: 'Golden hour savanna light, lit the way Afrika 2008 lights its levels.',
-      texture_and_material:
-        'Realistic grass and animal detail, with the in-engine surface finish of Afrika 2008.',
+      lighting_and_shadow:
+        'Golden hour savanna light with long shadows, lit the way Afrika 2008 lights its levels.',
+      texture_and_material: 'Realistic grass and animal detail, slightly soft in the distance.',
       camera_and_composition:
         'Viewfinder framing from a jeep, framed the way Afrika 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with patient wild wonder.',
       rendering_and_quality:
-        'Authentic safari photography screen, matching real Afrika 2008 screenshots.',
+        'A 2008 PlayStation 3 frame at 1280 by 720 through a camera viewfinder: focus brackets and corner marks around wildlife.',
       creative_brief:
         "Rhino Studios Afrika (2008) look: realistic safari photography with a camera viewfinder over the African savanna, herds at golden hour, jeeps and river crossings. Carry it through Afrika viewfinder, savanna, herds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Afrika viewfinder; savanna; herds',
@@ -443,15 +433,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as soft stylized figures in snowy landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Aurora green, snow white and night blue, true to the Spirit of the North 2019 palette.',
-      lighting_and_shadow:
-        'Aurora glow and soft moonlight, lit the way Spirit of the North 2019 lights its levels.',
+      lighting_and_shadow: 'Green aurora glow and soft moonlight on snow.',
       texture_and_material:
-        'Soft stylized snow and ice, with the in-engine surface finish of Spirit of the North 2019.',
+        'Soft simple snow and ice shapes, a glowing fox with a trailing spirit tail.',
       camera_and_composition:
         'Third-person wide travel view, framed the way Spirit of the North 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene northern mystery.',
       rendering_and_quality:
-        'Authentic stylized adventure screen, matching real Spirit of the North 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 in third person: a small fox under the aurora in a snowy Nordic valley, no interface.',
       creative_brief:
         "Infuse Studio Spirit of the North (2019) look: stylized low-detail Nordic landscapes, green auroras, snowy rivers, spirit guardians and quiet wordless travel. Carry it through Spirit of the North aurora, Nordic snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Spirit of the North aurora; Nordic snow',
@@ -481,14 +470,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Canyon red, dust gold and sage, true to the Red Dead Redemption 2010 palette.',
       lighting_and_shadow:
-        'Golden-hour haze, lit the way Red Dead Redemption 2010 lights its levels.',
+        'Golden-hour haze with dusty warm light, lit the way Red Dead Redemption 2010 lights its levels.',
       texture_and_material:
-        'Dusty terrain and worn leather, with the in-engine surface finish of Red Dead Redemption 2010.',
+        'Dusty terrain and worn leather, with blurry close textures and simple rocks.',
       camera_and_composition:
         'Third-person riding view, framed the way Red Dead Redemption 2010 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lonesome frontier grit.',
       rendering_and_quality:
-        'Authentic Xbox 360 western screen, matching real Red Dead Redemption 2010 screenshots.',
+        'A 2010 Xbox 360 frame at 1280 by 720 in third person: rider in a canyon, a round minimap bottom left.',
       creative_brief:
         "Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze. Carry it through Red Dead 2010 frontier, canyons, riders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Red Dead 2010 frontier; canyons; riders',
@@ -516,15 +505,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small monochrome divers in heavy suits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Monochrome black, white and grey, true to the Silt 2022 palette.',
-      lighting_and_shadow:
-        'Ink shafts of light in darkness, lit the way Silt 2022 lights its levels.',
-      texture_and_material:
-        'Dense ink drawing and grain, with the in-engine surface finish of Silt 2022.',
+      lighting_and_shadow: 'Thin shafts of light cutting through black ink darkness.',
+      texture_and_material: 'Dense black ink drawing and paper grain, all in monochrome.',
       camera_and_composition:
         'Side-view abyssal view, framed the way Silt 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with surreal abyssal dread.',
       rendering_and_quality:
-        'Authentic monochrome ink adventure screen, matching real Silt 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080: small diver in a heavy suit in an ink-drawn abyss, no interface.',
       creative_brief:
         "Spiral Circus Silt (2022) look: monochrome underwater puzzle adventure drawn in Mr Mead ink art, surreal abyssal creatures, diving suits and sunken ruins. Carry it through Silt monochrome ink, abyss, diving suit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Silt monochrome ink; abyss; diving suit',
@@ -554,14 +541,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Lava orange, rock grey and jungle green, true to the Uncharted 4 2016 palette.',
       lighting_and_shadow:
-        'Cinematic warm light and lava glow, lit the way Uncharted 4 2016 lights its levels.',
-      texture_and_material:
-        'Realistic rock, rope and gear, with the in-engine surface finish of Uncharted 4 2016.',
+        'Warm cinematic light and orange lava glow, lit the way Uncharted 4 2016 lights its levels.',
+      texture_and_material: 'Realistic rock, rope and gear, slightly soft game-engine detail.',
       camera_and_composition:
         'Third-person cinematic view, framed the way Uncharted 4 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with daring adventure thrill.',
       rendering_and_quality:
-        'Authentic cinematic adventure screen, matching real Uncharted 4 2016 screenshots.',
+        'A 2016 PlayStation 4 frame at 1920 by 1080 in third person: explorer on a rope bridge, no interface except a small ammo shape.',
       creative_brief:
         "Naughty Dog Uncharted 4: A Thief's End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light. Carry it through Uncharted 4 set pieces, rope bridges, cinematic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Uncharted 4 set pieces; rope bridges; cinematic',
@@ -591,14 +577,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Swamp green, lantern amber and folk red, true to the Black Book 2021 palette.',
       lighting_and_shadow:
-        'Misty swamp light and lanterns, lit the way Black Book 2021 lights its levels.',
+        'Misty swamp light with warm lanterns, lit the way Black Book 2021 lights its levels.',
       texture_and_material:
-        'Painted folk art details and wet wood, with the in-engine surface finish of Black Book 2021.',
+        'Painted folk-art ornament details and wet wood, slightly soft in the distance.',
       camera_and_composition:
         'Low canoe view into mist, framed the way Black Book 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie folkloric mystery.',
       rendering_and_quality:
-        'Authentic folk adventure screen, matching real Black Book 2021 screenshots.',
+        'A 2021 frame at 1920 by 1080 in third person: villager in a boat on a swamp, carved decorative corner shapes.',
       creative_brief:
         "Morteshka Black Book (2021) look: dark Slavic folklore adventure, misty swamps, wooden villages, witches, demons and hand-painted folk art details. Carry it through Black Book Slavic folklore, swamp, witches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Black Book Slavic folklore; swamp; witches',
@@ -624,20 +610,20 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly Viking survivors in furs and helmets. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as simple chunky Viking survivors with blocky shapes wrapped in blurry pixelated fur textures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Misty forest green, fire amber and dusk blue.',
       lighting_and_shadow:
-        'Volumetric fog and campfire glow, lit the way Valheim 2021 lights its levels.',
+        'Modern soft volumetric fog, god rays and warm campfire glow falling on a retro-textured world.',
       texture_and_material:
-        'Visibly blocky low-poly models with blurry low-resolution pixelated textures.',
+        'Simple chunky shapes wrapped in deliberately blurry, pixelated low-resolution textures with square nearest-neighbor pixels.',
       camera_and_composition:
         'Third-person survival view, framed the way Valheim 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rugged Viking survival.',
       rendering_and_quality:
-        'Authentic 2021 low-poly survival screen with modern lighting, not detailed painting.',
+        'A 2021 PC frame at 1920 by 1080 in third person: retro-textured Viking camp under modern soft fog and god rays, a small hotbar of blank slots.',
       creative_brief:
-        "Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim pixel textures, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Valheim pixel textures; volumetric fog; palisades',
+        "Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim blurry pixel textures on simple shapes, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Valheim blurry pixel textures on simple shapes; volumetric fog; palisades',
     },
     ui: {
       previewStatus: 'pending',
@@ -662,15 +648,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful anime adventurers riding giant titans. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Cloud sea white, sky blue and titan green.',
-      lighting_and_shadow:
-        'Bright open-sky anime light, lit the way Xenoblade Chronicles 2 2017 lights its levels.',
-      texture_and_material:
-        'Anime cel with detailed vistas, with the in-engine surface finish of Xenoblade Chronicles 2 2017.',
+      lighting_and_shadow: 'Bright open-sky anime light over a sea of clouds.',
+      texture_and_material: 'Anime cel characters with detailed but soft distant vistas.',
       camera_and_composition:
         'Wide third-person vista, framed the way Xenoblade Chronicles 2 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with vast hopeful journey.',
       rendering_and_quality:
-        'Authentic anime JRPG screen, matching real Xenoblade Chronicles 2 2017 screenshots.',
+        "A 2017 Switch frame at 1280 by 720: anime party on a titan's back above a cloud sea, a minimap and bar shapes.",
       creative_brief:
         "Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters. Carry it through Xenoblade titans, cloud sea, vast vistas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Xenoblade titans; cloud sea; vast vistas',

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Final Fantasy VII 1997 - Pre-Rendered Backdrop Polygons
 category: 5. Video Games 90s
 domain: nineties console role-playing game
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,15 +22,15 @@ tags:
   - ff7
   - reference-title
 visualDna:
-  aesthetic: 'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs.'
+  aesthetic: "Square Final Fantasy VII (1997) look: detailed computer-rendered background pictures with tiny blocky figures pasted on top, glowing mako green and steampunk cities."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; build the subject as a tiny chunky figure of a handful of untextured color blocks, with oversized boxy hands and head, dwarfed by a lush painted backdrop. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Mako green glow, rusty industrial browns and night blue.
   lighting_and_shadow: "Glowing lights painted into the detailed backdrop, while the chunky figures stay evenly lit with plain smooth shading."
   texture_and_material: "Smoothly shaded plain color blocks for the figures, pasted onto a far more refined and detailed computer-rendered background image."
-  camera_and_composition: Fixed cinematic angle of a pre-rendered scene, framed the way Final Fantasy VII 1997 frames its gameplay screens.
+  camera_and_composition: "Fixed cinematic camera angle chosen for each painted background, figures small in the frame."
   atmosphere_and_mood: Keep the requested mood with melancholy steampunk adventure.
   rendering_and_quality: "A 1997 PlayStation frame at 320 by 240: the clash between crude blocky figures and the rich detailed backdrop must be obvious."
-  creative_brief: 'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs. Carry it through FF7 pre-rendered backdrops, chibi polygons, mako green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Square Final Fantasy VII (1997) look: detailed computer-rendered background pictures with tiny blocky figures pasted on top, glowing mako green and steampunk cities. Carry it through FF7 lush painted backdrops, tiny chunky block figures, mako green glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "FF7 lush painted backdrops; tiny chunky block figures; mako green glow"
 avoidRules:
   - a spiky blond soldier with a buster sword

@@ -8,7 +8,7 @@ styleAnchors:
   - Beatline Phantom Theater
 displayName: No Straight Roads 2020 - Metronomik Rock Versus EDM
 category: 5. Speed, Sport & Competitive Arenas
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,11 +27,11 @@ visualDna:
   aesthetic: 'Metronomik No Straight Roads (2020) look: bright cel-shaded rhythm action, rock band heroes versus EDM empire bosses, stage-sized boss arenas and music-synced attacks.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cartoon musicians with big hair and instruments. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Neon purple, hot pink and lime, true to the No Straight Roads 2020 palette.
-  lighting_and_shadow: Concert stage lights pulsing to music, lit the way No Straight Roads 2020 lights its levels.
-  texture_and_material: Clean cel shading with neon effects, with the in-engine surface finish of No Straight Roads 2020.
+  lighting_and_shadow: "Concert stage lights pulsing in magenta and cyan."
+  texture_and_material: "Clean cel shading with thick outlines and neon glow effects."
   camera_and_composition: Third-person stage arena view, framed the way No Straight Roads 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rebellious rock energy.
-  rendering_and_quality: Authentic cel rhythm action screen, matching real No Straight Roads 2020 screenshots.
+  rendering_and_quality: "A 2020 frame at 1920 by 1080 in third person: cartoon musicians fighting a stage boss, beat-pulse ring shapes."
   key_features: No Straight Roads rock; stage arenas; beat attacks
   creative_brief: 'Metronomik No Straight Roads (2020) look: bright cel-shaded rhythm action, rock band heroes versus EDM empire bosses, stage-sized boss arenas and music-synced attacks. Carry it through No Straight Roads rock, stage arenas, beat attacks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

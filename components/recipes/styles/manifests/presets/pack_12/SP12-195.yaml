@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Devil May Cry 5 2019 - Capcom Style Combo
 category: 10. Graphic & Feudal Gameplay
 domain: stylish combo action gameplay
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish demon hunters in long coats. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Gothic red, black and neon trails, true to the Devil May Cry 5 2019 palette.
-  lighting_and_shadow: Dramatic gothic light with trails, lit the way Devil May Cry 5 2019 lights its levels.
-  texture_and_material: Photoreal leather and stone, with the in-engine surface finish of Devil May Cry 5 2019.
+  lighting_and_shadow: "Dramatic gothic night light with glowing weapon trails."
+  texture_and_material: "Photoreal leather and stone with sharp detail and bright effects."
   camera_and_composition: Third-person combo view, framed the way Devil May Cry 5 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cocky stylish mayhem.
-  rendering_and_quality: Authentic stylish action screen, matching real Devil May Cry 5 2019 screenshots.
+  rendering_and_quality: "A 2019 frame at 1920 by 1080 in third person: demon hunter mid-combo, a style rank letter shape at the right."
   creative_brief: 'Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger. Carry it through DMC5 combos, weapon trails, gothic city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: DMC5 combos; weapon trails; gothic city
 avoidRules:

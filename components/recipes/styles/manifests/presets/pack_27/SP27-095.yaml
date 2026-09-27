@@ -9,7 +9,7 @@ styleAnchors:
 displayName: GoldenEye 007 1997 - Rare N64 Fog Shooter
 category: 5. Video Games 90s
 domain: nineties console shooter
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,7 +22,7 @@ tags:
   - goldeneye
   - reference-title
 visualDna:
-  aesthetic: 'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities.'
+  aesthetic: "Rare GoldenEye 007 (1997) look: Nintendo 64 first-person spy shooter with smeared blurry textures, heavy fog, low frame rate, stiff boxy guards and Cold War facilities."
   subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; build figures from a few boxy chunks with flat painted-on faces and stiff arms, walking plain box-shaped corridors seen in first person. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Military grey, snow white and fog, true to the GoldenEye 007 1997 palette.
   lighting_and_shadow: "Flat shadowless light and a thick grey-blue fog wall that swallows everything a short way ahead."
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: First-person view with a weapon model, framed the way GoldenEye 007 1997 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense spy infiltration.
   rendering_and_quality: "A 1997 Nintendo 64 frame at 320 by 240 on a CRT: very soft and blurry overall, with a small chunky gun model in the lower right."
-  creative_brief: 'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities. Carry it through GoldenEye fog, blurry textures, stiff guards, facilities. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Rare GoldenEye 007 (1997) look: Nintendo 64 first-person spy shooter with smeared blurry textures, heavy fog, low frame rate, stiff boxy guards and Cold War facilities. Carry it through GoldenEye fog wall, smeared blurry textures, boxy stiff guards, facilities. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "GoldenEye fog wall; smeared blurry textures; boxy stiff guards; facilities"
 avoidRules:
   - a tuxedoed spy

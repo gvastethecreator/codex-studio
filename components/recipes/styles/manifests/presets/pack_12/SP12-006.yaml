@@ -7,7 +7,7 @@ styleAnchors:
   - Bloodstained Arcane Library Boss
 displayName: Bloodstained 2019 - ArtPlay 2.5D Gothic Castle
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Stylized painted 3D surfaces of carved wood, stone and velvet.
   camera_and_composition: 2.5D side-scrolling view with parallax gothic depth, framed the way Bloodstained 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with ornate gothic exploration.
-  rendering_and_quality: Authentic modern 2.5D metroidvania screen, matching real Bloodstained 2019 screenshots.
+  rendering_and_quality: "A 2019 side-view frame at 1920 by 1080: painted 3D gothic castle on a flat play plane, health and mana bar shapes top left."
   key_features: Bloodstained 2.5D; gothic castle; Igarashi metroidvania; demon bosses
   creative_brief: 'ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses. Carry it through Bloodstained 2.5D, gothic castle, Igarashi metroidvania, demon bosses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

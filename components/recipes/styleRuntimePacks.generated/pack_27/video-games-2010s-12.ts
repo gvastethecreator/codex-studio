@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       'existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways.',
+        'Cardboard Computer Kentucky Route Zero (2013) look: flat untextured angular shapes like a paper theater, magic realist Kentucky roads, single lamps and deep blue darkness.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as flat untextured angular figures of one or two solid colors on a theatrical stage-like set. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted night blues, warm amber pools and stark silhouettes.',
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2013 PC frame at 1280 by 720: sparse flat shapes, small figures, wide dark spaces and one warm lamp.',
       creative_brief:
-        "Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways. Carry it through Kentucky Route Zero flat polygons, theatrical light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Cardboard Computer Kentucky Route Zero (2013) look: flat untextured angular shapes like a paper theater, magic realist Kentucky roads, single lamps and deep blue darkness. Carry it through Kentucky Route Zero flat untextured shapes, theatrical light, wide dark stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'Kentucky Route Zero flat untextured shapes; theatrical light; wide dark stages',
     },
@@ -666,7 +666,7 @@ export const GENERATED_STYLE_PRESETS = [
       'a white goose honking, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'House House Untitled Goose Game (2019) look: flat pastel low-poly English village gardens, no textures, soft shadows, a mischievous goose and gentle comedic stealth.',
+        'House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in flat pastel untextured English village gardens. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
@@ -680,7 +680,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2019 frame at 1920 by 1080: high angle over a pastel English garden, a white goose, flat shapes.',
       creative_brief:
-        "House House Untitled Goose Game (2019) look: flat pastel low-poly English village gardens, no textures, soft shadows, a mischievous goose and gentle comedic stealth. Carry it through Goose Game pastel village, flat shapes, mischief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief. Carry it through Goose Game pastel village, flat shapes, mischief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Goose Game pastel village; flat shapes; mischief',
     },
     ui: {
@@ -702,7 +702,7 @@ export const GENERATED_STYLE_PRESETS = [
       'existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.',
+        'Mobius Digital Outer Wilds (2019) look: tiny walkable planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, simple smooth painted color and a twenty-two-minute cosmic loop.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; show the subject on a tiny round planet you could walk around in minutes, beside a rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm campfire orange, deep space blue and planet pastels.',
@@ -715,7 +715,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2019 frame at 1920 by 1080: tiny planet with a clearly curved horizon, wooden ship, huge sun in the sky.',
       creative_brief:
-        "Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop. Carry it through Outer Wilds tiny planets, wooden ship, campfire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Mobius Digital Outer Wilds (2019) look: tiny walkable planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, simple smooth painted color and a twenty-two-minute cosmic loop. Carry it through Outer Wilds tiny curved planets, wooden ship, campfire, huge sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Outer Wilds tiny curved planets; wooden ship; campfire; huge sun',
     },
     ui: {

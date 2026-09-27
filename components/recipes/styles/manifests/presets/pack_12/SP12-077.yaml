@@ -3,7 +3,7 @@ id: SP12-077
 packId: pack_12
 name: Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,16 +19,16 @@ tags:
   - hud-minimal-hud
   - reference-title
 visualDna:
-  aesthetic: 'Oddworld Inhabitants Abe''s Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small pre-rendered alien workers with odd anatomy. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush detailed computer-rendered background pictures, grotesque industry and small alien worker sprites."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as small alien workers with odd anatomy, crisp flat sprites pasted onto a detailed computer-rendered factory picture. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Industrial rust, smog orange and alien green, true to the Oddworld Abe's Oddysee 1997 palette.
-  lighting_and_shadow: Pre-rendered moody factory light, lit the way Oddworld Abe's Oddysee 1997 lights its levels.
-  texture_and_material: Pre-rendered CGI backgrounds, with the in-engine surface finish of Oddworld Abe's Oddysee 1997.
+  lighting_and_shadow: "Moody factory light painted into the detailed backdrop, with the small figures lit flatly."
+  texture_and_material: "Rich detailed computer-rendered backgrounds that look like a still image, small grainy sprites moving across them."
   camera_and_composition: Side-view cinematic screen, framed the way Oddworld Abe's Oddysee 1997 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim satirical escape.
-  rendering_and_quality: Authentic PS1 pre-rendered platformer screen, matching real Oddworld Abe's Oddysee 1997 screenshots.
-  key_features: Oddworld pre-rendered; factory escape; satire
-  creative_brief: 'Oddworld Inhabitants Abe''s Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire. Carry it through Oddworld pre-rendered, factory escape, satire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: "A 1997 PlayStation side-view frame at 320 by 240: tiny worker sprite on a lush rendered industrial backdrop, soft and slightly grainy."
+  key_features: "Oddworld rendered factory backdrops; tiny alien workers; factory escape"
+  creative_brief: "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush detailed computer-rendered background pictures, grotesque industry and small alien worker sprites. Carry it through Oddworld rendered factory backdrops, tiny alien workers, factory escape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a thin green alien with sewn lips
   - existing Oddworld species

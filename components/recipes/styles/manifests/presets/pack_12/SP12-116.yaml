@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Ori and the Blind Forest 2015 - Moon Studios Luminous Painted
 category: 2. Arcane Temples & Mythic Realms
 domain: crystal cavern exploration screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as small glowing figures against lush painted scenery. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep teal, glowing cyan and warm amber, true to the Ori and the Blind Forest 2015 palette.
-  lighting_and_shadow: Luminous glow against deep shadows, lit the way Ori and the Blind Forest 2015 lights its levels.
-  texture_and_material: Hand-painted layered backgrounds, with the in-engine surface finish of Ori and the Blind Forest 2015.
+  lighting_and_shadow: "Glowing figures with bright halos against deep blue shadows."
+  texture_and_material: "Rich hand-painted background layers at several depths, small crisp glowing character sprites."
   camera_and_composition: Side-view platformer with parallax, framed the way Ori and the Blind Forest 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with luminous tender wonder.
-  rendering_and_quality: Authentic painted platformer screen, matching real Ori and the Blind Forest 2015 screenshots.
+  rendering_and_quality: "A 2015 side-view frame at 1920 by 1080: tiny glowing spirit in painted forest layers, a row of small orbs at the bottom."
   creative_brief: 'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth. Carry it through Ori painted layers, luminous glow, parallax. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Ori painted layers; luminous glow; parallax
 avoidRules:

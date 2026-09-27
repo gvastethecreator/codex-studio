@@ -26,7 +26,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Low chase camera behind the craft, framed the way Wipeout HD 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with electric breakneck speed.',
       rendering_and_quality:
-        'Authentic late-2000s futuristic racer screen, matching real Wipeout HD 2008 screenshots.',
+        'A 2008 PlayStation 3 frame at 1920 by 1080 from behind the craft: neon track streaking past, speed blur, a position and lap shape block at the top.',
       key_features: 'Wipeout anti-grav; Designers Republic; neon circuits',
       creative_brief:
         "Studio Liverpool Wipeout HD (2008) look: anti-gravity racing on futuristic neon circuits, sleek team craft, The Designers Republic graphic identity, weapon pads and blazing speed blur. Carry it through Wipeout anti-grav, Designers Republic, neon circuits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -50,15 +50,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-lined comic figures on roller skates in bold sporty outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Warm seventies orange, cream concrete and teal, true to the Rollerdrome 2022 palette.',
-      lighting_and_shadow:
-        'Flat comic light with ink shadows, lit the way Rollerdrome 2022 lights its levels.',
+      lighting_and_shadow: 'Flat comic light with shadows as solid ink shapes and hatching.',
       texture_and_material:
-        'Thick ink lines and cel fills, with the in-engine surface finish of Rollerdrome 2022.',
+        'Thick ink outlines and flat cel color on every surface, speed lines when time slows.',
       camera_and_composition:
         'Third-person view mid-trick over bowls, framed the way Rollerdrome 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with stylish deadly flow.',
       rendering_and_quality:
-        'Authentic comic cel action screen, matching real Rollerdrome 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 in third person: skater mid-air in a concrete arena, ink outlines, small bar shapes.',
       key_features: 'Rollerdrome ink lines; skate arena; bullet time',
       creative_brief:
         "Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time. Carry it through Rollerdrome ink lines, skate arena, bullet time. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -82,15 +81,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as photoreal cars with dust and motion, drivers inside. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset gold, desert ochre and festival pink, true to the Forza Horizon 5 2021 palette.',
-      lighting_and_shadow:
-        'Golden sunset with volumetric dust, lit the way Forza Horizon 5 2021 lights its levels.',
+      lighting_and_shadow: 'Golden sunset light with thick glowing dust in the air.',
       texture_and_material:
-        'Photoreal car paint, dust and terrain, with the in-engine surface finish of Forza Horizon 5 2021.',
+        'Photoreal car paint with sharp reflections, dust and terrain slightly soft at a distance.',
       camera_and_composition:
         'Chase camera behind drifting cars, framed the way Forza Horizon 5 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with joyful festival freedom.',
       rendering_and_quality:
-        'Authentic modern open-world racer screen, matching real Forza Horizon 5 2021 screenshots.',
+        'A 2021 frame at 3840 by 2160 from a chase camera behind the car: a speedometer arc bottom right and a small minimap bottom left.',
       key_features: 'Forza Horizon festival; desert dust; photoreal cars',
       creative_brief:
         "Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites. Carry it through Forza Horizon festival, desert dust, photoreal cars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -113,15 +111,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as small crisp pixel mechs and giant insects on isometric tiles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted tile greens, warning orange and deep ocean.',
-      lighting_and_shadow:
-        'Flat pixel light with warning glows, lit the way Into the Breach 2018 lights its levels.',
+      lighting_and_shadow: 'Flat pixel colors with bright red and orange warning tiles.',
       texture_and_material:
-        'Crisp pixel art tiles and sprites, with the in-engine surface finish of Into the Breach 2018.',
+        'Crisp square pixels, small mech and insect sprites on diagonal square tiles.',
       camera_and_composition:
         'Isometric grid tactics view, framed the way Into the Breach 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tight strategic tension.',
       rendering_and_quality:
-        'Authentic pixel tactics screen, matching real Into the Breach 2018 screenshots.',
+        'A 2018 PC frame at 1280 by 720: an 8 by 8 diagonal grid of tiles, small sprites, bar and icon shapes at the edges.',
       key_features: 'Into the Breach grid; pixel mechs; giant insects',
       creative_brief:
         "Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map. Carry it through Into the Breach grid, pixel mechs, giant insects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -145,15 +142,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cartoon musicians with big hair and instruments. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon purple, hot pink and lime, true to the No Straight Roads 2020 palette.',
-      lighting_and_shadow:
-        'Concert stage lights pulsing to music, lit the way No Straight Roads 2020 lights its levels.',
-      texture_and_material:
-        'Clean cel shading with neon effects, with the in-engine surface finish of No Straight Roads 2020.',
+      lighting_and_shadow: 'Concert stage lights pulsing in magenta and cyan.',
+      texture_and_material: 'Clean cel shading with thick outlines and neon glow effects.',
       camera_and_composition:
         'Third-person stage arena view, framed the way No Straight Roads 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rebellious rock energy.',
       rendering_and_quality:
-        'Authentic cel rhythm action screen, matching real No Straight Roads 2020 screenshots.',
+        'A 2020 frame at 1920 by 1080 in third person: cartoon musicians fighting a stage boss, beat-pulse ring shapes.',
       key_features: 'No Straight Roads rock; stage arenas; beat attacks',
       creative_brief:
         "Metronomik No Straight Roads (2020) look: bright cel-shaded rhythm action, rock band heroes versus EDM empire bosses, stage-sized boss arenas and music-synced attacks. Carry it through No Straight Roads rock, stage arenas, beat attacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -169,22 +164,22 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators.',
+        'id Software Quake III Arena (1999) look: fast first-person arena shooter with gothic and tech architecture, jump pads, lava pits, floating items and blocky armored gladiators.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly armored gladiators seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky armored figures with simple faces and stiff limbs, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Gothic stone brown, lava orange and teal energy.',
       lighting_and_shadow:
-        'Colored lightmaps and glowing lava, lit the way Quake III Arena 1999 lights its levels.',
+        'Colored light baked onto walls in soft blotches, glowing orange lava and bright jump pad beams.',
       texture_and_material:
-        'Late-nineties textures of stone and metal, with the in-engine surface finish of Quake III Arena 1999.',
+        'Stone and metal textures that look sharp from afar and blurry up close, curved gothic arches made of visible straight segments.',
       camera_and_composition:
         'First-person view with weapon, framed the way Quake III Arena 1999 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with frantic arena bloodsport.',
       rendering_and_quality:
-        'Authentic late-nineties arena shooter screen, matching real Quake III Arena 1999 screenshots.',
-      key_features: 'Quake III gothic arena; jump pads; lava',
+        'A 1999 PC frame at 640 by 480 in first person: a chunky weapon at bottom center, health and ammo number shapes at the bottom.',
+      key_features: 'Quake III gothic arena; blocky gladiators; jump pads; lava',
       creative_brief:
-        "id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators. Carry it through Quake III gothic arena, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "id Software Quake III Arena (1999) look: fast first-person arena shooter with gothic and tech architecture, jump pads, lava pits, floating items and blocky armored gladiators. Carry it through Quake III gothic arena, blocky gladiators, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -201,14 +196,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized painted fantasy heroes with glowing abilities. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Radiant green versus dire red earth, true to the Dota 2 2013 palette.',
-      lighting_and_shadow:
-        'Painted light with ability glows, lit the way Dota 2 2013 lights its levels.',
+      lighting_and_shadow: 'Painted light with bright spell glows over lanes and trees.',
       texture_and_material:
-        'Hand-painted stylized textures, with the in-engine surface finish of Dota 2 2013.',
+        'Hand-painted stylized textures on chunky heroes and buildings, seen from above.',
       camera_and_composition:
         'Isometric MOBA view, framed the way Dota 2 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with fierce competitive clash.',
-      rendering_and_quality: 'Authentic MOBA screen, matching real Dota 2 2013 screenshots.',
+      rendering_and_quality:
+        'A 2013 PC frame at 1920 by 1080 from a high angle: three lanes, small heroes and creep waves, a minimap square and ability row at the bottom.',
       key_features: 'Dota 2 painted lanes; towers; creep waves',
       creative_brief:
         "Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures. Carry it through Dota 2 painted lanes, towers, creep waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -229,15 +224,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as sleek colorful hover machines at extreme speed. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Saturated desert gold, neon blue and pink, true to the F-Zero GX 2003 palette.',
-      lighting_and_shadow:
-        'Bright GameCube bloom and track lights, lit the way F-Zero GX 2003 lights its levels.',
+      lighting_and_shadow: 'Bright glowing track lights and bloom at huge speed.',
       texture_and_material:
-        'Glossy machines with speed blur, with the in-engine surface finish of F-Zero GX 2003.',
+        'Glossy simple hover machines, heavy radial speed blur toward the edges.',
       camera_and_composition:
         'Low chase camera on twisting tracks, framed the way F-Zero GX 2003 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with dizzying hyper speed.',
       rendering_and_quality:
-        'Authentic GameCube racer screen, matching real F-Zero GX 2003 screenshots.',
+        'A 2003 GameCube frame at 640 by 480 from behind: a hover machine in a loop, a power bar and position shape.',
       key_features: 'F-Zero GX loops; hover machines; hyper speed',
       creative_brief:
         "Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines. Carry it through F-Zero GX loops, hover machines, hyper speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -261,15 +255,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as ornate weapon fighters in flowing historical-fantasy costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Crystal blue, gold and weapon trail colors, true to the Soulcalibur VI 2018 palette.',
-      lighting_and_shadow:
-        'Dramatic stage light with sparks, lit the way Soulcalibur VI 2018 lights its levels.',
-      texture_and_material:
-        'Polished costumes and ornate metal, with the in-engine surface finish of Soulcalibur VI 2018.',
+      lighting_and_shadow: 'Dramatic stage light with sparks from weapon clashes.',
+      texture_and_material: 'Polished ornate costumes and metal, glowing weapon trails.',
       camera_and_composition:
         'Side-on 3D fighting camera, framed the way Soulcalibur VI 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with epic duelist grandeur.',
       rendering_and_quality:
-        'Authentic 3D fighter screen, matching real Soulcalibur VI 2018 screenshots.',
+        'A 2018 frame at 1920 by 1080 from the side: two fighters on an ornate stage, health bar shapes across the top.',
       key_features: 'Soulcalibur weapon trails; ornate stages',
       creative_brief:
         "Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes. Carry it through Soulcalibur weapon trails, ornate stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -290,15 +282,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as small rocket cars with boost flames. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Team blue and orange with neon arenas, true to the Rocket League 2015 palette.',
-      lighting_and_shadow:
-        'Stadium lights and boost glow, lit the way Rocket League 2015 lights its levels.',
-      texture_and_material:
-        'Glossy cars and arena turf, with the in-engine surface finish of Rocket League 2015.',
+      lighting_and_shadow: 'Bright stadium floodlights and orange boost flame glow.',
+      texture_and_material: 'Glossy small cars, bright turf and a huge ball, clean and sharp.',
       camera_and_composition:
         'Chase camera behind the car, framed the way Rocket League 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with boosted competitive fun.',
       rendering_and_quality:
-        'Authentic car-soccer screen, matching real Rocket League 2015 screenshots.',
+        'A 2015 frame at 1920 by 1080 behind a car: giant ball ahead, a score block shape at the top and a boost circle bottom right.',
       key_features: 'Rocket League stadium; boost trails; giant ball',
       creative_brief:
         "Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors. Carry it through Rocket League stadium, boost trails, giant ball. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -323,15 +313,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as cartoon kart racers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright jungle green, lava orange and sky blue.',
-      lighting_and_shadow:
-        'Bright cartoon light with drift sparks, lit the way Crash Team Racing 2019 lights its levels.',
-      texture_and_material:
-        'Glossy stylized cartoon surfaces, with the in-engine surface finish of Crash Team Racing 2019.',
+      lighting_and_shadow: 'Bright cartoon light with blue and orange drift sparks.',
+      texture_and_material: 'Glossy stylized cartoon karts and characters, soft clean shapes.',
       camera_and_composition:
         'Chase camera behind the kart, framed the way Crash Team Racing 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic kart fun.',
       rendering_and_quality:
-        'Authentic cartoon kart racer screen, matching real Crash Team Racing 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080 from behind the kart: a position number shape and an item box shape at the top.',
       creative_brief:
         "Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters. Carry it through CTR cartoon karts, drift sparks, item chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'CTR cartoon karts; drift sparks; item chaos',
@@ -355,22 +343,21 @@ export const GENERATED_STYLE_PRESETS = [
       'real professional skaters, readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy.",
+        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PlayStation skateboarding with blocky skaters, boxy sunny plazas, rails and ramps, wobbling blurry textures and big air.",
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 skaters in baggy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky skaters with simple painted faces and baggy clothes made of a few flat panels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sunny plaza tan, sky blue and punk colors.',
-      lighting_and_shadow:
-        "Bright flat PS1 daylight, lit the way Tony Hawk's Pro Skater 2 2000 lights its levels.",
+      lighting_and_shadow: 'Bright flat daylight with no real shadows, colors a little washed out.',
       texture_and_material:
-        "Low-poly surfaces with warped textures, with the in-engine surface finish of Tony Hawk's Pro Skater 2 2000.",
+        'Blurry textures that wobble and stretch across flat panels, simple box-shaped plazas, rails and ramps.',
       camera_and_composition:
         "Third-person chase view behind the skater, framed the way Tony Hawk's Pro Skater 2 2000 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with punk trick freedom.',
       rendering_and_quality:
-        "Authentic PS1 skate screen, matching real Tony Hawk's Pro Skater 2 2000 screenshots.",
+        'A 2000 PlayStation frame at 512 by 240 on a CRT: soft and jagged, a skater in the air, a trick meter bar shape at the top.',
       creative_brief:
-        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy. Carry it through THPS2 low-poly, plazas, big air. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'THPS2 low-poly; plazas; big air',
+        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PlayStation skateboarding with blocky skaters, boxy sunny plazas, rails and ramps, wobbling blurry textures and big air. Carry it through THPS2 blocky skaters, box-shaped plazas, big air, soft PS1 image. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'THPS2 blocky skaters; box-shaped plazas; big air; soft PS1 image',
     },
     ui: {
       previewStatus: 'pending',
@@ -396,15 +383,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as bold stylized snowboarders in colorful outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Glittering white, sky blue and neon outfits, true to the SSX Tricky 2001 palette.',
-      lighting_and_shadow:
-        'Bright alpine light with glitter, lit the way SSX Tricky 2001 lights its levels.',
+      lighting_and_shadow: 'Bright alpine light with sparkling snow and bloom.',
       texture_and_material:
-        'PS2 snow and glossy boards, with the in-engine surface finish of SSX Tricky 2001.',
+        'Smooth simple snow slopes with soft blurry textures, glossy boards and loud outfits.',
       camera_and_composition:
         'Chase camera during big air, framed the way SSX Tricky 2001 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wild big-air joy.',
       rendering_and_quality:
-        'Authentic PS2 snowboarding screen, matching real SSX Tricky 2001 screenshots.',
+        'A 2001 PlayStation 2 frame at 640 by 448: boarder mid-trick over a huge drop, a boost meter shape, slightly jagged edges.',
       creative_brief:
         "EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder. Carry it through SSX big air, impossible courses, powder. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'SSX big air; impossible courses; powder',
@@ -433,15 +419,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a sculpted animated pinball toy on a lit table. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Chrome, glowing ramp neon and table art, true to the Pinball FX 2017 palette.',
-      lighting_and_shadow:
-        'Table lights and flashing inserts, lit the way Pinball FX 2017 lights its levels.',
+      lighting_and_shadow: 'Colorful table lights and flashing inserts under glass.',
       texture_and_material:
-        'Chrome, glossy plastic and printed art, with the in-engine surface finish of Pinball FX 2017.',
+        'Chrome ball, glossy plastic ramps and sculpted animated toys on a printed playfield.',
       camera_and_composition:
         'High table view down the playfield, framed the way Pinball FX 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with flashy arcade thrill.',
       rendering_and_quality:
-        'Authentic digital pinball screen, matching real Pinball FX 2017 screenshots.',
+        'A 2017 frame at 1920 by 1080 looking down a pinball table from the bottom, a dot-matrix display shape at the top.',
       creative_brief:
         "Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move. Carry it through Pinball FX tables, animated toys, chrome ball. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Pinball FX tables; animated toys; chrome ball',
@@ -470,15 +455,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as anime fighters with sharp cel shading and bold silhouettes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Rock red, electric purple and bold contrast, true to the Guilty Gear Strive 2021 palette.',
-      lighting_and_shadow:
-        'Dramatic stage light with impact flashes, lit the way Guilty Gear Strive 2021 lights its levels.',
+      lighting_and_shadow: 'Dramatic stage light with bright impact flashes and bold color bursts.',
       texture_and_material:
-        'Cel-shaded 3D that reads as 2D anime, with the in-engine surface finish of Guilty Gear Strive 2021.',
+        '3D figures shaded like 2D anime, with drawn lines and flat color blocks.',
       camera_and_composition:
         'Side-view 2.5D fighting camera, framed the way Guilty Gear Strive 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with heavy-metal fighting intensity.',
       rendering_and_quality:
-        'Authentic anime fighter screen, matching real Guilty Gear Strive 2021 screenshots.',
+        'A 2021 frame at 1920 by 1080 from the side: two anime fighters clashing, health bar shapes across the top.',
       creative_brief:
         "Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects. Carry it through Guilty Gear anime 2.5D, impact effects, metal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Guilty Gear anime 2.5D; impact effects; metal',
@@ -502,23 +486,22 @@ export const GENERATED_STYLE_PRESETS = [
       'real wrestlers, name graphics, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans.',
+        'AKI Corporation WWF No Mercy (2000) look: Nintendo 64 wrestling with blocky bodies, smeared blurry faces, arena spotlights, pyro and a crowd painted as a flat backdrop.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as blocky low-poly N64 wrestlers with simple faces. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky wrestlers with simple smeared faces, thick limbs made of a few chunks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Arena purple, pyro green and ring white, true to the WWF No Mercy 2000 palette.',
-      lighting_and_shadow:
-        'Arena spotlights and pyro bursts, lit the way WWF No Mercy 2000 lights its levels.',
+      lighting_and_shadow: 'Arena spotlights and pyro bursts over a dark crowd.',
       texture_and_material:
-        'Blurry N64 textures, with the in-engine surface finish of WWF No Mercy 2000.',
+        'Tiny textures smeared into soft blur, the crowd a flat picture of blotches.',
       camera_and_composition:
         'Entrance ramp view, framed the way WWF No Mercy 2000 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with campy arena spectacle.',
       rendering_and_quality:
-        'Authentic N64 wrestling screen, matching real WWF No Mercy 2000 screenshots.',
+        'A 2000 Nintendo 64 frame at 320 by 240: very soft and blurry, two blocky wrestlers in a ring, a spirit meter shape.',
       creative_brief:
-        "AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans. Carry it through No Mercy N64, blocky wrestlers, pyro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'No Mercy N64; blocky wrestlers; pyro',
+        "AKI Corporation WWF No Mercy (2000) look: Nintendo 64 wrestling with blocky bodies, smeared blurry faces, arena spotlights, pyro and a crowd painted as a flat backdrop. Carry it through No Mercy blocky wrestlers, blurry smeared textures, pyro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'No Mercy blocky wrestlers; blurry smeared textures; pyro',
     },
     ui: {
       previewStatus: 'pending',
@@ -543,15 +526,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people and vehicles as mud-caked riders and machines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Mud brown, storm grey and rust orange, true to the Motorstorm 2006 palette.',
-      lighting_and_shadow:
-        'Storm light with flying mud, lit the way Motorstorm 2006 lights its levels.',
-      texture_and_material:
-        'Deformed mud and dirty metal, with the in-engine surface finish of Motorstorm 2006.',
+      lighting_and_shadow: 'Storm light with mud flying through the air.',
+      texture_and_material: 'Deep mud that deforms under wheels, dirty metal and motion blur.',
       camera_and_composition:
         'Chase camera during jumps, framed the way Motorstorm 2006 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with brutal muddy chaos.',
       rendering_and_quality:
-        'Authentic PS3 off-road racer screen, matching real Motorstorm 2006 screenshots.',
+        'A 2006 PlayStation 3 frame at 1280 by 720 from behind the vehicle: mud-covered screen edges and a boost gauge shape.',
       creative_brief:
         "Evolution Studios MotorStorm (2006) look: off-road festival racing in deep mud and dust, bikes, buggies and trucks crashing, persistent mud deformation. Carry it through MotorStorm mud, crashes, off-road festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'MotorStorm mud; crashes; off-road festival',
@@ -580,15 +561,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as anonymous crowds and players in team jerseys under huge screens. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Stadium blue, gold and dragon fire, true to the League of Legends Worlds 2017 palette.',
-      lighting_and_shadow:
-        'Stadium light with AR glow, lit the way League of Legends Worlds 2017 lights its levels.',
-      texture_and_material:
-        'Broadcast camera sharpness, with the in-engine surface finish of League of Legends Worlds 2017.',
+      lighting_and_shadow: 'Stadium light with glowing projected creatures filling the arena.',
+      texture_and_material: 'Sharp broadcast camera image with slight compression and lens glow.',
       camera_and_composition:
         'Wide broadcast stadium shot, framed the way League of Legends Worlds 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with electric grand final.',
       rendering_and_quality:
-        'Authentic esports broadcast frame, matching real League of Legends Worlds 2017 screenshots.',
+        'A 2017 broadcast frame at 1920 by 1080: stadium crowd, glowing projected dragon over the stage, a lower-third bar shape.',
       creative_brief:
         "Riot Games League of Legends World Championship (2017) broadcast look: esports stadium with glass player booths, giant screens and an augmented-reality dragon flying over the crowd. Carry it through Worlds AR dragon, stadium, broadcast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Worlds AR dragon; stadium; broadcast',
@@ -617,14 +596,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as big-headed cheerful cartoon golfers. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: "Lush fairway green and sky blue, true to the Everybody's Golf 2017 palette.",
       lighting_and_shadow:
-        "Bright cheerful daylight, lit the way Everybody's Golf 2017 lights its levels.",
-      texture_and_material:
-        "Soft stylized cartoon surfaces, with the in-engine surface finish of Everybody's Golf 2017.",
+        "Bright cheerful daylight on soft green fairways, lit the way Everybody's Golf 2017 lights its levels.",
+      texture_and_material: 'Soft stylized cartoon surfaces with simple smooth shapes.',
       camera_and_composition:
         "Behind-the-golfer shot view, framed the way Everybody's Golf 2017 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with cheerful playful sport.',
       rendering_and_quality:
-        "Authentic cartoon golf screen, matching real Everybody's Golf 2017 screenshots.",
+        'A 2017 frame at 1920 by 1080 behind a golfer: shot arc line, a power bar shape at the bottom.',
       creative_brief:
         "Clap Hanz Everybody's Golf (2017) look: bright cartoon golf with big-headed golfers, lush fairways, shot arcs and cheerful exaggerated reactions. Carry it through Everybody's Golf cartoon, fairways, shot arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: "Everybody's Golf cartoon; fairways; shot arcs",
@@ -653,15 +631,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render vessels as sailing ships with crews on deck. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Storm teal, sail white and Caribbean blue, true to the Assassins Creed IV Black Flag 2013 palette.',
-      lighting_and_shadow:
-        'Stormy light with sun breaks, lit the way Assassins Creed IV Black Flag 2013 lights its levels.',
+      lighting_and_shadow: 'Stormy light with sudden sun breaks over the sea.',
       texture_and_material:
-        'Dynamic water spray and canvas, with the in-engine surface finish of Assassins Creed IV Black Flag 2013.',
+        'Rolling water, spray and canvas sails, slightly soft detail on distant ships.',
       camera_and_composition:
         'Third-person ship camera, framed the way Assassins Creed IV Black Flag 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with windswept seafaring daring.',
       rendering_and_quality:
-        'Authentic naval sailing screen, matching real Assassins Creed IV Black Flag 2013 screenshots.',
+        'A 2013 frame at 1920 by 1080 from behind the ship: waves over the bow, a small minimap and bar shapes.',
       creative_brief:
         "Ubisoft Assassin's Creed IV: Black Flag (2013) look: third-person tall-ship sailing on dynamic Caribbean oceans, storms, rogue waves, spray and sails full of wind. Carry it through Black Flag ocean, storms, sails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Black Flag ocean; storms; sails',

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Machinarium 2009 - Amanita Hand-Drawn Robots
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: gear puzzle tower screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as whimsical hand-drawn rusty robots. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sepia green, rust and warm grey, true to the Machinarium 2009 palette.
-  lighting_and_shadow: Soft hazy light, lit the way Machinarium 2009 lights its levels.
-  texture_and_material: Hand-drawn pencil and watercolor, with the in-engine surface finish of Machinarium 2009.
+  lighting_and_shadow: "Soft hazy sepia light with warm glow, lit the way Machinarium 2009 lights its levels."
+  texture_and_material: "Hand-drawn pencil lines and watercolor washes on rusty robots and machines."
   camera_and_composition: Side-view scene, framed the way Machinarium 2009 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wistful mechanical whimsy.
-  rendering_and_quality: Authentic hand-drawn adventure screen, matching real Machinarium 2009 screenshots.
+  rendering_and_quality: "A 2009 PC frame at 1280 by 720: hand-drawn rusty robot in a sepia city of pipes, no interface."
   creative_brief: 'Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles. Carry it through Machinarium rusty robots, hand-drawn, sepia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Machinarium rusty robots; hand-drawn; sepia
 avoidRules:

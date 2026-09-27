@@ -138,7 +138,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster.',
       creative_brief:
-        "Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, green fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, flat green fields, early Xbox simplicity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:
         'Halo ringworld sky; purple alien structures; flat green fields; early Xbox simplicity',
     },
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
       'a tiny green prince with a rod-shaped head, a giant king in tights, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer.',
+        'Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2004 PlayStation 2 frame at 640 by 448: simple bright blocks, jagged edges and a slightly soft image.',
       creative_brief:
-        "Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer. Carry it through Katamari flat low-poly, rolling ball, candy colors, absurd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale. Carry it through Katamari plain blocky toy world, rolling ball, candy colors, absurd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Katamari plain blocky toy world; rolling ball; candy colors; absurd',
     },
     ui: {
@@ -380,7 +380,7 @@ export const GENERATED_STYLE_PRESETS = [
       'existing races and faction crests, orc warchiefs, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes.',
+        'Blizzard World of Warcraft (2004) look: blurry hand-painted textures on chunky simple shapes, oversized shoulder pads and weapons, saturated fantasy zones.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject with chunky cartoon proportions and oversized gear painted in hand-painted textures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
@@ -395,7 +395,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'A 2004 PC frame at 1024 by 768: soft painted textures, simple geometry, fog at mid distance and small bar shapes at the bottom.',
       creative_brief:
-        "Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Blizzard World of Warcraft (2004) look: blurry hand-painted textures on chunky simple shapes, oversized shoulder pads and weapons, saturated fantasy zones. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'WoW hand-painted; chunky proportions; saturated zones',
     },
     ui: {

@@ -7,7 +7,7 @@ styleAnchors:
   - Katana Zero Neo-Noir Sideview
 displayName: Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Low-resolution pixel art with VHS scanlines, chromatic glitch and tape noise.
   camera_and_composition: Flat side-view room cutaway with the whole fight readable in one screen.
   atmosphere_and_mood: Keep the requested mood with cool neo-noir slaughter.
-  rendering_and_quality: Authentic indie pixel-art action screen with VHS replay glitch.
+  rendering_and_quality: 'A 2019 side-view frame at 640 by 360 scaled up: crisp tiny pixel sprites in neon rooms, VHS tracking lines and a timer bar shape at the top.'
   key_features: Katana Zero pixel noir; VHS glitch; slow-motion afterimages; neon rooms
   creative_brief: "Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills. Carry it through Katana Zero pixel noir, VHS glitch, slow-motion afterimages, neon rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:

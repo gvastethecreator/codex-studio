@@ -7,7 +7,7 @@ styleAnchors:
   - Sable Solar Rail Nomads
 displayName: Sable 2021 - Shedworks Moebius Desert
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Shedworks Sable (2021) look: open desert rendered in clean Moebius-style line art with flat color, hoverbikes, ancient beast skeletons, mask culture and huge ruins.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as clean-lined flat-color figures in masks and robes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pale sand, sky blue, sunset orange and flat pastel.
-  lighting_and_shadow: Flat shading with clean line art, lit the way Sable 2021 lights its levels.
-  texture_and_material: Clean Moebius-style line and flat fills, with the in-engine surface finish of Sable 2021.
+  lighting_and_shadow: "Flat shading with no gradients, shadows as clean solid shapes."
+  texture_and_material: "Clean thin ink outlines around every shape and flat pale color fills, like a moving comic panel."
   camera_and_composition: Wide third-person desert view, framed the way Sable 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with serene coming-of-age wander.
-  rendering_and_quality: Authentic line-art open-world screen, matching real Sable 2021 screenshots.
+  rendering_and_quality: "A 2021 frame at 1920 by 1080 in third person: outlined desert under a pale sky, a hoverbike, no interface."
   key_features: Sable Moebius lines; flat color; hoverbike desert
   creative_brief: 'Shedworks Sable (2021) look: open desert rendered in clean Moebius-style line art with flat color, hoverbikes, ancient beast skeletons, mask culture and huge ruins. Carry it through Sable Moebius lines, flat color, hoverbike desert. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

@@ -7,7 +7,7 @@ styleAnchors:
   - Stardew Tavern Pixel Hub
 displayName: Stardew Valley 2016 - ConcernedApe Pixel Farm Town
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small cozy pixel villagers with round heads and simple faces. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm wood amber, harvest orange, crop green and cozy lamp yellow.
-  lighting_and_shadow: Warm lamplight and flat pixel daylight, lit the way Stardew Valley 2016 lights its levels.
-  texture_and_material: Soft detailed pixel art tiles and sprites, with the in-engine surface finish of Stardew Valley 2016.
+  lighting_and_shadow: "Warm lamplight and flat daylight in soft pixel colors."
+  texture_and_material: "Soft detailed pixel tiles and small round-headed sprites with simple faces."
   camera_and_composition: Top-down three-quarter pixel view, framed the way Stardew Valley 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cozy communal warmth.
-  rendering_and_quality: Authentic cozy pixel farm game screen, matching real Stardew Valley 2016 screenshots.
+  rendering_and_quality: "A 2016 frame at 1920 by 1080 of chunky scaled pixels: cozy town from above, a toolbar of blank slots at the bottom."
   key_features: Stardew pixel town; cozy tavern; harvest festival
   creative_brief: 'ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers. Carry it through Stardew pixel town, cozy tavern, harvest festival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

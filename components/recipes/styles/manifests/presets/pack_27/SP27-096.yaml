@@ -9,7 +9,7 @@ styleAnchors:
 displayName: PaRappa the Rapper 1996 - Paper-Flat Rhythm
 category: 5. Video Games 90s
 domain: nineties rhythm game
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Stage-like rhythm scenes, framed the way PaRappa the Rapper 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful rhythmic optimism.
   rendering_and_quality: "A 1996 PlayStation frame at 320 by 240: soft, bright and simple, with a row of button symbol shapes near the top."
-  creative_brief: 'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy. Carry it through PaRappa paper-flat, Greenblat designs, pop colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy. Carry it through PaRappa paper-thin cutouts, Greenblat designs, pop colors, button prompt row. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "PaRappa paper-thin cutouts; Greenblat designs; pop colors; button prompt row"
 avoidRules:
   - a rapping dog in a knit hat

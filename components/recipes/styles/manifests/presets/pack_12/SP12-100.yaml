@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth
 category: 1. Neon Urban & Night Ops
 domain: third-person rainy stealth screenshot
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,10 +26,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as augmented agents with sleek black clothing and glowing gold cyber details. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black and warm gold with amber haze, true to the Deus Ex Human Revolution 2011 palette.
   lighting_and_shadow: Gold amber haze with flashlight sweeps and holograms.
-  texture_and_material: Wet asphalt, leather, polished augment plating, with the in-engine surface finish of Deus Ex Human Revolution 2011.
+  texture_and_material: "Wet asphalt, leather and polished black augment plating, everything tinted gold, slightly soft game-engine detail."
   camera_and_composition: Third-person cover view behind a crouched agent, framed the way Deus Ex Human Revolution 2011 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with conspiratorial gold noir.
-  rendering_and_quality: Authentic early-2010s stealth screen, matching real Deus Ex Human Revolution 2011 screenshots.
+  rendering_and_quality: "A 2011 console frame at 1280 by 720 in third person: gold haze over the whole image, a small radar box shape bottom left."
   creative_brief: 'Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing. Carry it through Deus Ex black and gold, cover stealth, augmented agents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Deus Ex black and gold; cover stealth; augmented agents
 avoidRules:

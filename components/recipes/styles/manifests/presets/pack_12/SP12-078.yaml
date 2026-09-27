@@ -3,7 +3,7 @@ id: SP12-078
 packId: pack_12
 name: Mark of the Ninja 2012 - Klei Ink Stealth
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,10 +23,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as hand-drawn cartoon characters, lit in color and flattened to black silhouettes in shadow. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep black shadow, warm lantern yellow and muted indigo.
   lighting_and_shadow: Hard light pools that turn figures into silhouettes when dark.
-  texture_and_material: Hand-drawn Klei animation lines and flat fills, with the in-engine surface finish of Mark of the Ninja 2012.
+  texture_and_material: "Clean hand-drawn cartoon lines and flat color fills, whole figures dropping to pure black inside shadow areas."
   camera_and_composition: Side-view cutaway of rooms and vents, framed the way Mark of the Ninja 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense silent stealth.
-  rendering_and_quality: Authentic early-2010s Klei hand-drawn stealth screen, matching real Mark of the Ninja 2012 screenshots.
+  rendering_and_quality: "A 2012 side-view frame at 1280 by 720: lit pools of color and black silhouette shadow zones, concentric sound ring outlines."
   key_features: Mark of the Ninja silhouettes; light pools; sound rings
   creative_brief: 'Klei Entertainment Mark of the Ninja (2012) look: side-view 2D stealth with hand-drawn cartoon animation, deep black silhouettes in shadow, bright lit zones and sound rings. Carry it through Mark of the Ninja silhouettes, light pools, sound rings. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

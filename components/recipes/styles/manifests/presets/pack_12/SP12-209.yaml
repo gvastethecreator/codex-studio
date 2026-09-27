@@ -9,7 +9,7 @@ styleAnchors:
 displayName: P.T. 2014 - Kojima Productions Looping Hallway
 category: 11. Psychological & Tactical Gameplay
 domain: repeating corridor horror gameplay
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as unseen first-person visitors in a domestic hallway. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dim beige, sickly green and shadow, true to the P.T. 2014 palette.
-  lighting_and_shadow: Flickering hallway bulb, lit the way P.T. 2014 lights its levels.
-  texture_and_material: Photoreal domestic surfaces, with the in-engine surface finish of P.T. 2014.
+  lighting_and_shadow: "A single flickering hallway bulb with deep dark corners."
+  texture_and_material: "Photoreal domestic walls, frames and floorboards with slight grain."
   camera_and_composition: First-person hallway view, framed the way P.T. 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with looping domestic terror.
-  rendering_and_quality: Authentic photoreal horror screen, matching real P.T. 2014 screenshots.
+  rendering_and_quality: "A 2014 first-person frame at 1920 by 1080: an L-shaped hallway, no interface at all."
   creative_brief: 'Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light. Carry it through P.T. looping hallway, photoreal, dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: P.T. looping hallway; photoreal; dread
 avoidRules:

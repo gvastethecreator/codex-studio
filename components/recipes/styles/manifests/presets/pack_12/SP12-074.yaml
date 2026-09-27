@@ -3,7 +3,7 @@ id: SP12-074
 packId: pack_12
 name: Inscryption 2021 - Daniel Mullins Cabin Cards
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,11 +22,11 @@ visualDna:
   aesthetic: 'Daniel Mullins Games Inscryption (2021) look: first-person card game in a dark wooden cabin, a looming dealer in shadow, carved creature cards, candles and grainy unsettling horror.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as carved woodcut creature cards and shadowy figures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Candle amber, dark wood and blood red, true to the Inscryption 2021 palette.
-  lighting_and_shadow: Single candle glow in darkness, lit the way Inscryption 2021 lights its levels.
-  texture_and_material: Grainy film, wood and old paper, with the in-engine surface finish of Inscryption 2021.
+  lighting_and_shadow: "A single candle glow in darkness, faces of the dealer lost in shadow."
+  texture_and_material: "Grainy film, rough wood table and old paper cards with woodcut creature art."
   camera_and_composition: First-person view across the table, framed the way Inscryption 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie unsettling dread.
-  rendering_and_quality: Authentic horror card game screen, matching real Inscryption 2021 screenshots.
+  rendering_and_quality: "A 2021 first-person frame at 1920 by 1080: cards on a table under a candle, a shadowy dealer looming, heavy grain."
   key_features: Inscryption cabin; looming dealer; creature cards
   creative_brief: 'Daniel Mullins Games Inscryption (2021) look: first-person card game in a dark wooden cabin, a looming dealer in shadow, carved creature cards, candles and grainy unsettling horror. Carry it through Inscryption cabin, looming dealer, creature cards. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

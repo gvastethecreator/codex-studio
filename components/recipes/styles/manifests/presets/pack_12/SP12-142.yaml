@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Pinball FX 2017 - Zen Studios Digital Tables
 category: 5. Speed, Sport & Competitive Arenas
 domain: fantasy pinball game screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a sculpted animated pinball toy on a lit table. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Chrome, glowing ramp neon and table art, true to the Pinball FX 2017 palette.
-  lighting_and_shadow: Table lights and flashing inserts, lit the way Pinball FX 2017 lights its levels.
-  texture_and_material: Chrome, glossy plastic and printed art, with the in-engine surface finish of Pinball FX 2017.
+  lighting_and_shadow: "Colorful table lights and flashing inserts under glass."
+  texture_and_material: "Chrome ball, glossy plastic ramps and sculpted animated toys on a printed playfield."
   camera_and_composition: High table view down the playfield, framed the way Pinball FX 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with flashy arcade thrill.
-  rendering_and_quality: Authentic digital pinball screen, matching real Pinball FX 2017 screenshots.
+  rendering_and_quality: "A 2017 frame at 1920 by 1080 looking down a pinball table from the bottom, a dot-matrix display shape at the top."
   creative_brief: 'Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move. Carry it through Pinball FX tables, animated toys, chrome ball. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Pinball FX tables; animated toys; chrome ball
 avoidRules:

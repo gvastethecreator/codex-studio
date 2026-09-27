@@ -10,25 +10,25 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Skies of Arcadia 2000 - Overworks Sky Pirates', 'Arcadia Cloudship JRPG'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'a sky pirate boy with an eyepatch strap and twin cutlasses, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+      'a brown-haired sky pirate boy in a blue coat with a red scarf, a sky pirate boy with an eyepatch strap and twin cutlasses, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
         'Overworks Skies of Arcadia (2000) look: bright Dreamcast JRPG of sky pirates, wooden airships over an endless cloud sea, floating islands, cheerful anime characters and huge sky beasts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cheerful low-poly anime sky pirates with goggles, sashes and big boots. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as cheerful anime sky pirates with simple smooth faces, goggles, sashes and big boots, a little stiff in pose. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sky blue, sunny gold, cloud white and warm ship wood.',
       lighting_and_shadow:
-        'Bright open-sky sunshine with soft Dreamcast gradients, lit the way Skies of Arcadia 2000 lights its levels.',
+        'Bright open-sky sunshine with smooth simple shading and clean blue gradients.',
       texture_and_material:
-        'Early-2000s low-poly models with clean bright textures, with the in-engine surface finish of Skies of Arcadia 2000.',
+        'Smooth simple shapes with clean bright textures that blur slightly up close, clouds as soft flat layers.',
       camera_and_composition:
         'Third-person deck view over the cloud sea, framed the way Skies of Arcadia 2000 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with sunny swashbuckling adventure.',
       rendering_and_quality:
-        'Authentic Dreamcast JRPG screen, matching real Skies of Arcadia 2000 screenshots.',
-      key_features: 'Skies of Arcadia airships; cloud sea; sky pirates',
+        'A 2000 Dreamcast frame at 640 by 480: bright airship deck over a cloud sea, slightly soft image, jagged distant rigging.',
+      key_features: 'Skies of Arcadia airships; cloud sea; smooth simple sky pirates',
       creative_brief:
-        "Overworks Skies of Arcadia (2000) look: bright Dreamcast JRPG of sky pirates, wooden airships over an endless cloud sea, floating islands, cheerful anime characters and huge sky beasts. Carry it through Skies of Arcadia airships, cloud sea, sky pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Overworks Skies of Arcadia (2000) look: bright Dreamcast JRPG of sky pirates, wooden airships over an endless cloud sea, floating islands, cheerful anime characters and huge sky beasts. Carry it through Skies of Arcadia airships, cloud sea, smooth simple sky pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -48,15 +48,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small cozy pixel villagers with round heads and simple faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm wood amber, harvest orange, crop green and cozy lamp yellow.',
-      lighting_and_shadow:
-        'Warm lamplight and flat pixel daylight, lit the way Stardew Valley 2016 lights its levels.',
+      lighting_and_shadow: 'Warm lamplight and flat daylight in soft pixel colors.',
       texture_and_material:
-        'Soft detailed pixel art tiles and sprites, with the in-engine surface finish of Stardew Valley 2016.',
+        'Soft detailed pixel tiles and small round-headed sprites with simple faces.',
       camera_and_composition:
         'Top-down three-quarter pixel view, framed the way Stardew Valley 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cozy communal warmth.',
       rendering_and_quality:
-        'Authentic cozy pixel farm game screen, matching real Stardew Valley 2016 screenshots.',
+        'A 2016 frame at 1920 by 1080 of chunky scaled pixels: cozy town from above, a toolbar of blank slots at the bottom.',
       key_features: 'Stardew pixel town; cozy tavern; harvest festival',
       creative_brief:
         "ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers. Carry it through Stardew pixel town, cozy tavern, harvest festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -80,15 +79,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as test subjects in plain white jumpsuits and long-fall boots, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Clinical white, panel grey, laser red and light-bridge blue.',
-      lighting_and_shadow:
-        'Clean even fluorescent light with glowing beams, lit the way Portal 2 2011 lights its levels.',
+      lighting_and_shadow: 'Clean even fluorescent light with glowing blue and orange beams.',
       texture_and_material:
-        'Matte white panels, brushed metal and glass, with the in-engine surface finish of Portal 2 2011.',
+        'Matte white panels in a square grid, brushed metal and glass, very clean.',
       camera_and_composition:
         'First-person view in a test chamber, framed the way Portal 2 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with dry clinical wit.',
       rendering_and_quality:
-        'Authentic Source engine puzzle screen, matching real Portal 2 2011 screenshots.',
+        'A 2011 first-person frame at 1280 by 720: a white-and-grey device held at the bottom right, test chamber panels, a small crosshair ring.',
       key_features: 'Portal 2 test chamber; white panels; robotic arms; lasers',
       creative_brief:
         "Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor. Carry it through Portal 2 test chamber, white panels, robotic arms, lasers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -104,22 +102,21 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'a mustached plumber in red and blue, a cat suit with a bell, a spiked turtle king, question-mark blocks, flagpoles and green pipes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+      'small round enemies in red robes with white masks, a mustached plumber in red and blue, a cat suit with a bell, a spiked turtle king, question-mark blocks, flagpoles and green pipes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
         'Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round glossy toy-like figures with big eyes and chunky shoes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Candy red, sky blue, grass green and sunny yellow.',
-      lighting_and_shadow:
-        'Bright soft daylight with clean drop shadows, lit the way Super Mario 3D World 2013 lights its levels.',
+      lighting_and_shadow: 'Bright soft daylight with clean round drop shadows under every figure.',
       texture_and_material:
-        'Glossy plastic toy surfaces, with the in-engine surface finish of Super Mario 3D World 2013.',
+        'Glossy plastic toy surfaces, rounded block platforms in bright primary colors.',
       camera_and_composition:
         'Three-quarter overhead platformer camera, framed the way Super Mario 3D World 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bouncy cheerful play.',
       rendering_and_quality:
-        'Authentic Wii U toy platformer screen, matching real Super Mario 3D World 2013 screenshots.',
+        'A 2013 Wii U frame at 1280 by 720: diorama-like level of floating toy blocks seen from above and behind, small number shapes at the top.',
       key_features: 'Mario 3D World toy blocks; glossy plastic; diorama levels',
       creative_brief:
         "Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels. Carry it through Mario 3D World toy blocks, glossy plastic, diorama levels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -145,14 +142,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Candle gold, card parchment and dungeon teal, true to the Slay the Spire 2019 palette.',
       lighting_and_shadow:
-        'Flat painted light and glowing card effects, lit the way Slay the Spire 2019 lights its levels.',
+        'Flat painted light with glowing card effects, lit the way Slay the Spire 2019 lights its levels.',
       texture_and_material:
-        'Hand-drawn 2D art and card frames, with the in-engine surface finish of Slay the Spire 2019.',
+        'Hand-drawn 2D creatures and heroes with flat painted shading, framed card shapes.',
       camera_and_composition:
         'Side-on card battle layout, framed the way Slay the Spire 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with strategic climbing tension.',
       rendering_and_quality:
-        'Authentic deckbuilder battle screen, matching real Slay the Spire 2019 screenshots.',
+        'A 2019 PC frame at 1920 by 1080: hero at left, monsters at right with intent icon shapes above, a fan of blank cards at the bottom.',
       key_features: 'Slay the Spire cards; intent icons; hand-drawn foes',
       creative_brief:
         "Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies. Carry it through Slay the Spire cards, intent icons, hand-drawn foes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -172,14 +169,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny pastel pixel sprites in a rotating voxel world. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright pastel greens, sky blue and warm stone.',
-      lighting_and_shadow:
-        'Soft pixel daylight or starry night, lit the way Fez 2012 lights its levels.',
-      texture_and_material: 'Crisp pixel voxels, with the in-engine surface finish of Fez 2012.',
+      lighting_and_shadow: 'Soft pastel daylight or a starry night with flat pixel colors.',
+      texture_and_material:
+        'Crisp square pixels on cube-shaped blocks, with the whole world seen flat from one side.',
       camera_and_composition:
         'Flat side view of a rotating world, framed the way Fez 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene curious puzzling.',
       rendering_and_quality:
-        'Authentic pixel puzzle-platformer screen, matching real Fez 2012 screenshots.',
+        'A 2012 side-view frame at 1280 by 720: pastel pixel tower of blocks, a tiny white sprite, no interface.',
       key_features: 'Fez rotating world; pastel pixels; glyphs',
       creative_brief:
         "Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration. Carry it through Fez rotating world, pastel pixels, glyphs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -199,15 +196,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as dusty rally trucks and bikes flying over dunes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dune gold, dawn pink and dust, true to the Dakar Desert Rally 2022 palette.',
-      lighting_and_shadow:
-        'Low dawn light with sand haze, lit the way Dakar Desert Rally 2022 lights its levels.',
+      lighting_and_shadow: 'Low dawn light glowing through thick sand haze.',
       texture_and_material:
-        'Realistic sand spray and dirty paint, with the in-engine surface finish of Dakar Desert Rally 2022.',
+        'Realistic sand spray and dirty paint, slightly soft detail in the distance.',
       camera_and_composition:
         'Chase camera during jumps, framed the way Dakar Desert Rally 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with brutal endurance thrill.',
       rendering_and_quality:
-        'Authentic off-road rally screen, matching real Dakar Desert Rally 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 from behind the vehicle: truck airborne over a dune, a speed and stage shape bottom right.',
       key_features: 'Dakar rally dunes; sand plumes; trucks airborne',
       creative_brief:
         "Big Moon Entertainment Dakar Desert Rally (2022) look: realistic off-road rally across vast dunes, rally trucks and bikes airborne, sand plumes and dawn haze. Carry it through Dakar rally dunes, sand plumes, trucks airborne. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -232,15 +228,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as carved woodcut creature cards and shadowy figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Candle amber, dark wood and blood red, true to the Inscryption 2021 palette.',
-      lighting_and_shadow:
-        'Single candle glow in darkness, lit the way Inscryption 2021 lights its levels.',
+      lighting_and_shadow: 'A single candle glow in darkness, faces of the dealer lost in shadow.',
       texture_and_material:
-        'Grainy film, wood and old paper, with the in-engine surface finish of Inscryption 2021.',
+        'Grainy film, rough wood table and old paper cards with woodcut creature art.',
       camera_and_composition:
         'First-person view across the table, framed the way Inscryption 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie unsettling dread.',
       rendering_and_quality:
-        'Authentic horror card game screen, matching real Inscryption 2021 screenshots.',
+        'A 2021 first-person frame at 1920 by 1080: cards on a table under a candle, a shadowy dealer looming, heavy grain.',
       key_features: 'Inscryption cabin; looming dealer; creature cards',
       creative_brief:
         "Daniel Mullins Games Inscryption (2021) look: first-person card game in a dark wooden cabin, a looming dealer in shadow, carved creature cards, candles and grainy unsettling horror. Carry it through Inscryption cabin, looming dealer, creature cards. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -259,23 +254,23 @@ export const GENERATED_STYLE_PRESETS = [
       'a thin green alien with sewn lips, existing Oddworld species, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire.",
+        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush detailed computer-rendered background pictures, grotesque industry and small alien worker sprites.",
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small pre-rendered alien workers with odd anatomy. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as small alien workers with odd anatomy, crisp flat sprites pasted onto a detailed computer-rendered factory picture. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         "Industrial rust, smog orange and alien green, true to the Oddworld Abe's Oddysee 1997 palette.",
       lighting_and_shadow:
-        "Pre-rendered moody factory light, lit the way Oddworld Abe's Oddysee 1997 lights its levels.",
+        'Moody factory light painted into the detailed backdrop, with the small figures lit flatly.',
       texture_and_material:
-        "Pre-rendered CGI backgrounds, with the in-engine surface finish of Oddworld Abe's Oddysee 1997.",
+        'Rich detailed computer-rendered backgrounds that look like a still image, small grainy sprites moving across them.',
       camera_and_composition:
         "Side-view cinematic screen, framed the way Oddworld Abe's Oddysee 1997 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with grim satirical escape.',
       rendering_and_quality:
-        "Authentic PS1 pre-rendered platformer screen, matching real Oddworld Abe's Oddysee 1997 screenshots.",
-      key_features: 'Oddworld pre-rendered; factory escape; satire',
+        'A 1997 PlayStation side-view frame at 320 by 240: tiny worker sprite on a lush rendered industrial backdrop, soft and slightly grainy.',
+      key_features: 'Oddworld rendered factory backdrops; tiny alien workers; factory escape',
       creative_brief:
-        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire. Carry it through Oddworld pre-rendered, factory escape, satire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush detailed computer-rendered background pictures, grotesque industry and small alien worker sprites. Carry it through Oddworld rendered factory backdrops, tiny alien workers, factory escape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -297,15 +292,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as lone weathered warriors in dented plate and mail. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         "Grey-green fog, cold stone and rust, true to the Demon's Souls 2009 palette.",
-      lighting_and_shadow:
-        "Dull fog light with soul glow, lit the way Demon's Souls 2009 lights its levels.",
+      lighting_and_shadow: 'Dull grey-green fog light with a bright glowing white fog gate.',
       texture_and_material:
-        "Worn stone and dented armor, with the in-engine surface finish of Demon's Souls 2009.",
+        'Worn stone and dented armor in muddy low-detail textures, crushed dark shadows.',
       camera_and_composition:
         "Third-person lock-on duel view, framed the way Demon's Souls 2009 frames its gameplay screens.",
       atmosphere_and_mood: 'Keep the requested mood with grim oppressive dread.',
       rendering_and_quality:
-        "Authentic PS3 dark fantasy screen, matching real Demon's Souls 2009 screenshots.",
+        'A 2009 PlayStation 3 frame at 1280 by 720 in third person: lone knight in a ruined keep, grey-green tint, bar shapes top left.',
       key_features: "Demon's Souls fog gates; ruined keep; grey-green",
       creative_brief:
         "FromSoftware Demon's Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light. Carry it through Demon's Souls fog gates, ruined keep, grey-green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -326,22 +320,22 @@ export const GENERATED_STYLE_PRESETS = [
       'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas in stylized low-poly ruins, node paths, pushable blocks, glowing plates and soft color gradients.',
+        'Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas of simple solid-colored ruins like paper models, node paths, pushable blocks and a small explorer.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized low-poly explorers on node paths. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show people as small simple explorers built from a few smooth shapes, standing on dots along thin path lines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft jade, sand and dusk gradients, true to the Lara Croft GO 2015 palette.',
       lighting_and_shadow:
-        'Soft gradient ambient light, lit the way Lara Croft GO 2015 lights its levels.',
+        'Soft gradient ambient light with gentle shadows, lit the way Lara Croft GO 2015 lights its levels.',
       texture_and_material:
-        'Clean low-poly shapes, with the in-engine surface finish of Lara Croft GO 2015.',
+        'Clean simple shapes of solid colors with sharp edges and no texture, like a paper model.',
       camera_and_composition:
         'High diorama view, framed the way Lara Croft GO 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with calm clever exploration.',
       rendering_and_quality:
-        'Authentic diorama puzzle screen, matching real Lara Croft GO 2015 screenshots.',
+        'A 2015 phone frame, tall portrait: a floating diorama of blocks with path lines and dots, no interface.',
       creative_brief:
-        "Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas in stylized low-poly ruins, node paths, pushable blocks, glowing plates and soft color gradients. Carry it through Lara Croft GO dioramas, nodes, blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Lara Croft GO dioramas; nodes; blocks',
+        "Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas of simple solid-colored ruins like paper models, node paths, pushable blocks and a small explorer. Carry it through Lara Croft GO paper-model dioramas, path lines and dots, blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Lara Croft GO paper-model dioramas; path lines and dots; blocks',
     },
     ui: {
       previewStatus: 'pending',
@@ -367,15 +361,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as cheeky cartoon adventure characters in pointed hats and robes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Rich VGA purples, greens and warm browns, true to the Simon the Sorcerer 1993 palette.',
-      lighting_and_shadow:
-        'Warm candle and window light, lit the way Simon the Sorcerer 1993 lights its levels.',
+      lighting_and_shadow: 'Warm candle and window light in painted-looking pixel shades.',
       texture_and_material:
-        'Painted VGA pixel art, with the in-engine surface finish of Simon the Sorcerer 1993.',
+        'Painted-looking scenes made of visible square pixels and dithering in a 256-color palette.',
       camera_and_composition:
         'Side-view adventure room, framed the way Simon the Sorcerer 1993 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cheeky magical mischief.',
       rendering_and_quality:
-        'Authentic VGA adventure screen, matching real Simon the Sorcerer 1993 screenshots.',
+        'A 1993 PC VGA frame at 320 by 200: cheeky wizard sprite in a cluttered room, a strip of verb button shapes at the bottom.',
       creative_brief:
         "Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory. Carry it through Simon the Sorcerer painted VGA, wizard rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Simon the Sorcerer painted VGA; wizard rooms',
@@ -404,15 +397,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as small figures sealed inside clear rolling balls. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright checker colors and starry skies, true to the Super Monkey Ball 2001 palette.',
-      lighting_and_shadow:
-        'Bright arcade light, lit the way Super Monkey Ball 2001 lights its levels.',
+      lighting_and_shadow: 'Bright arcade light with clean colored sky and hard edges.',
       texture_and_material:
-        'Glossy clean surfaces, with the in-engine surface finish of Super Monkey Ball 2001.',
+        'Glossy clean surfaces, checkered floating mazes and a clear shiny ball.',
       camera_and_composition:
         'Behind-the-ball tilt view, framed the way Super Monkey Ball 2001 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense playful balance.',
       rendering_and_quality:
-        'Authentic arcade tilt-maze screen, matching real Super Monkey Ball 2001 screenshots.',
+        'A 2001 GameCube frame at 640 by 480: a small figure in a clear ball on a floating maze, a timer shape at the top.',
       creative_brief:
         "Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates. Carry it through Monkey Ball tilt stages, ball, floating mazes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Monkey Ball tilt stages; ball; floating mazes',
@@ -440,14 +432,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as whimsical hand-drawn rusty robots. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sepia green, rust and warm grey, true to the Machinarium 2009 palette.',
-      lighting_and_shadow: 'Soft hazy light, lit the way Machinarium 2009 lights its levels.',
+      lighting_and_shadow:
+        'Soft hazy sepia light with warm glow, lit the way Machinarium 2009 lights its levels.',
       texture_and_material:
-        'Hand-drawn pencil and watercolor, with the in-engine surface finish of Machinarium 2009.',
+        'Hand-drawn pencil lines and watercolor washes on rusty robots and machines.',
       camera_and_composition:
         'Side-view scene, framed the way Machinarium 2009 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wistful mechanical whimsy.',
       rendering_and_quality:
-        'Authentic hand-drawn adventure screen, matching real Machinarium 2009 screenshots.',
+        'A 2009 PC frame at 1280 by 720: hand-drawn rusty robot in a sepia city of pipes, no interface.',
       creative_brief:
         "Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles. Carry it through Machinarium rusty robots, hand-drawn, sepia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Machinarium rusty robots; hand-drawn; sepia',
@@ -476,14 +469,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny minimalist figures on impossible paths. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel coral, mint and lilac, true to the Monument Valley 2014 palette.',
       lighting_and_shadow:
-        'Soft flat gradient light, lit the way Monument Valley 2014 lights its levels.',
+        'Soft flat gradient light in pastel tones, lit the way Monument Valley 2014 lights its levels.',
       texture_and_material:
-        'Clean flat shapes, with the in-engine surface finish of Monument Valley 2014.',
+        'Clean flat shapes with no texture, each face of a building one pastel color.',
       camera_and_composition:
         'Isometric diorama view, framed the way Monument Valley 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene puzzling wonder.',
       rendering_and_quality:
-        'Authentic isometric puzzle screen, matching real Monument Valley 2014 screenshots.',
+        'A 2014 phone frame, tall portrait: impossible pastel architecture seen from a fixed diagonal, a tiny white figure.',
       creative_brief:
         "ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths. Carry it through Monument Valley impossible geometry, pastel, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Monument Valley impossible geometry; pastel; isometric',
@@ -511,15 +504,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as intricate mechanical boxes and devices seen up close. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dark wood, brass and occult blue, true to the The Room 2012 palette.',
-      lighting_and_shadow:
-        'Single warm lamp with glow, lit the way The Room 2012 lights its levels.',
+      lighting_and_shadow: 'A single warm lamp glowing on the box, with occult blue glints.',
       texture_and_material:
-        'Polished wood, brass and leather, with the in-engine surface finish of The Room 2012.',
+        'Polished dark wood, brass fittings and leather, clean and very detailed up close.',
       camera_and_composition:
         'First-person close-up view, framed the way The Room 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with curious occult tension.',
       rendering_and_quality:
-        'Authentic mobile puzzle screen, matching real The Room 2012 screenshots.',
+        'A 2012 tablet frame at 2048 by 1536: close-up of an intricate puzzle box on a table, a small eyepiece icon in a corner.',
       creative_brief:
         "Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow. Carry it through The Room puzzle box, brass, hidden drawers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'The Room puzzle box; brass; hidden drawers',
@@ -548,14 +540,15 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as rubbery hand-painted cartoon characters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Lush storybook greens and warm golds, true to the Rayman Legends 2013 palette.',
-      lighting_and_shadow: 'Painterly glow, lit the way Rayman Legends 2013 lights its levels.',
+      lighting_and_shadow:
+        'Glowing painterly light with soft colored backlight, lit the way Rayman Legends 2013 lights its levels.',
       texture_and_material:
-        'Hand-painted 2D art, with the in-engine surface finish of Rayman Legends 2013.',
+        'Hand-painted 2D art with visible brushstrokes on rubbery cartoon characters.',
       camera_and_composition:
         'Side-scrolling chase view, framed the way Rayman Legends 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with zany breathless chase.',
       rendering_and_quality:
-        'Authentic hand-painted platformer screen, matching real Rayman Legends 2013 screenshots.',
+        'A 2013 side-view frame at 1920 by 1080: rubbery cartoon hero running through a painted storybook level, small counter shapes.',
       creative_brief:
         "Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases. Carry it through Rayman UbiArt, hand-painted chase, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Rayman UbiArt; hand-painted chase; storybook',
@@ -585,14 +578,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Jungle green, khaki and sunlit gold, true to the Indiana Jones Great Circle 2024 palette.',
       lighting_and_shadow:
-        'Cinematic dappled jungle light, lit the way Indiana Jones Great Circle 2024 lights its levels.',
-      texture_and_material:
-        'Realistic rope, wood and stone, with the in-engine surface finish of Indiana Jones Great Circle 2024.',
+        'Cinematic dappled jungle light through the canopy, lit the way Indiana Jones Great Circle 2024 lights its levels.',
+      texture_and_material: 'Realistic rope, wood and stone, slightly soft game-engine detail.',
       camera_and_composition:
         'First-person action view, framed the way Indiana Jones Great Circle 2024 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with pulpy daring thrill.',
       rendering_and_quality:
-        'Authentic modern adventure screen, matching real Indiana Jones Great Circle 2024 screenshots.',
+        'A 2024 first-person frame at 3840 by 2160: hands gripping a rope bridge over a jungle gorge, no interface.',
       creative_brief:
         "MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light. Carry it through Great Circle pulp, rope bridges, ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Great Circle pulp; rope bridges; ruins',
@@ -613,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'pirate treasure digging screenshot',
     negativePrompt:
-      'a blond wannabe pirate, a ghost pirate captain, readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
+      'a skinny pirate with a ponytail in a long red coat, a blond wannabe pirate, a ghost pirate captain, readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
         'Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging.',
@@ -622,14 +614,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Tropical teal, sand and sunset orange, true to the Return to Monkey Island 2022 palette.',
       lighting_and_shadow:
-        'Flat storybook light, lit the way Return to Monkey Island 2022 lights its levels.',
-      texture_and_material:
-        'Paper-cutout flat textures, with the in-engine surface finish of Return to Monkey Island 2022.',
+        'Flat storybook light with soft painted gradients, lit the way Return to Monkey Island 2022 lights its levels.',
+      texture_and_material: 'Angular paper-cutout shapes with flat textures and visible cut edges.',
       camera_and_composition:
         'Side-view adventure scene, framed the way Return to Monkey Island 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wry piratical comedy.',
       rendering_and_quality:
-        'Authentic storybook adventure screen, matching real Return to Monkey Island 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080: angular cutout pirates on a paper-cut island, no interface.',
       creative_brief:
         "Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging. Carry it through Return to Monkey Island paper cutout, pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Return to Monkey Island paper cutout; pirates',
@@ -658,15 +649,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as abstract object clusters and the shadows they cast. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Moody sepia, wall cream and deep shadow, true to the Shadowmatic 2015 palette.',
-      lighting_and_shadow:
-        'Single lamp casting hard shadows, lit the way Shadowmatic 2015 lights its levels.',
-      texture_and_material:
-        'Clean matte objects, with the in-engine surface finish of Shadowmatic 2015.',
+      lighting_and_shadow: 'A single lamp throwing one hard shadow onto a plain wall.',
+      texture_and_material: 'Clean matte abstract objects in soft grey, and a crisp dark shadow.',
       camera_and_composition:
         'Front view of a lit wall, framed the way Shadowmatic 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet surreal discovery.',
       rendering_and_quality:
-        'Authentic shadow puzzle screen, matching real Shadowmatic 2015 screenshots.',
+        'A 2015 phone frame, tall portrait: a floating object cluster and its shadow forming a recognizable shape on the wall.',
       creative_brief:
         "Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals. Carry it through Shadowmatic shadows, lamp, abstract objects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Shadowmatic shadows; lamp; abstract objects',

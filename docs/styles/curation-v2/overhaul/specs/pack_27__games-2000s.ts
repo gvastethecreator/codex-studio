@@ -217,7 +217,7 @@ const spec: Spec = {
       'two-thousands console game',
       [...T, 'katamari'],
       {
-        look: 'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer.',
+        look: 'Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale.',
         subject:
           'show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks.',
         color: 'Candy pink, mint, lemon and sky blue.',
@@ -266,7 +266,7 @@ const spec: Spec = {
       'two-thousands PC online game',
       [...T, 'wow-vanilla'],
       {
-        look: 'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes.',
+        look: 'Blizzard World of Warcraft (2004) look: blurry hand-painted textures on chunky simple shapes, oversized shoulder pads and weapons, saturated fantasy zones.',
         subject:
           'render the subject with chunky cartoon proportions and oversized gear painted in hand-painted textures.',
         color: 'Saturated forest green, twilight purple and gold.',

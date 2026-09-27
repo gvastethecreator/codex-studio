@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Half-Life 1998 - Valve Black Mesa Facility
 category: 5. Video Games 90s
 domain: nineties PC shooter
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: First-person corridor view, framed the way Half-Life 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with unraveling facility dread.
   rendering_and_quality: "A 1998 PC frame at 640 by 480: slightly blurry, with a crosshair and health and armor number shapes at the bottom."
-  creative_brief: 'Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos. Carry it through Half-Life facility, lab coats, flickering fluorescents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos. Carry it through Half-Life facility, boxy lab coats, flickering fluorescents, blotchy baked light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Half-Life facility; boxy lab coats; flickering fluorescents; blotchy baked light"
 avoidRules:
   - an orange hazard suit with a crowbar

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sumioni 2012 - Acquire Ink Brush Brawler
 category: 10. Graphic & Feudal Gameplay
 domain: sumi-ink action gameplay
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-brush figures with red accents. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Ink black, rice paper and red, true to the Sumioni 2012 palette.
-  lighting_and_shadow: Flat paper light, lit the way Sumioni 2012 lights its levels.
-  texture_and_material: Wet ink brush on paper, with the in-engine surface finish of Sumioni 2012.
+  lighting_and_shadow: "Flat paper light with no shading beyond ink density."
+  texture_and_material: "Wet black ink brush strokes on rice paper, with small red accents."
   camera_and_composition: Side-view brawler, framed the way Sumioni 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with swift painted fury.
-  rendering_and_quality: Authentic ink-brush action screen, matching real Sumioni 2012 screenshots.
+  rendering_and_quality: "A 2012 PlayStation Vita side-view frame at 960 by 544: ink-brush figure fighting on paper, an ink gauge shape."
   creative_brief: 'Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons. Carry it through Sumioni ink, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sumioni ink; rice paper; red accents
 avoidRules:

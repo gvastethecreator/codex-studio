@@ -7,7 +7,7 @@ styleAnchors:
   - Mirrors Edge Rooftop Parkour
 displayName: Mirror's Edge 2008 - DICE White Rooftop Runner
 category: 1. Neon Urban & Night Ops
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,10 +27,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as sleek athletic runners, seen mostly as first-person arms and legs reaching for ledges and pipes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sterile white, clear sky blue, runner-vision red and small yellow and orange accents.
   lighting_and_shadow: Bright overexposed sun on white surfaces with soft global illumination and clean shadows.
-  texture_and_material: Clean matte white concrete, glass and polished metal with almost no grime.
+  texture_and_material: "Clean matte white concrete, glass and polished metal with almost no grime, pipes and ledges picked out in bright red."
   camera_and_composition: First-person view with visible arms and legs, tilted in motion over rooftop gaps.
   atmosphere_and_mood: Keep the requested mood with clean vertigo freedom.
-  rendering_and_quality: Authentic late-2000s Unreal Engine 3 first-person screen with baked lighting.
+  rendering_and_quality: "A 2008 console frame at 1280 by 720 in first person: soft baked light, glowing overexposed whites, arms and hands reaching into view."
   key_features: Mirror's Edge white city; runner vision red; first-person arms
   creative_brief: 'DICE Mirror''s Edge (2008) look: first-person parkour across sterile white rooftops, runner vision painting the route red, clean blue sky, glass towers and graphic primary accents. Carry it through Mirror''s Edge white city, runner vision red, first-person arms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

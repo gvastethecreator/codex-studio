@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Super Mario 64 1996 - N64 Blurry Texture Worlds
 category: 5. Video Games 90s
 domain: nineties console platformer
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Third-person chase camera, framed the way Super Mario 64 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful playful exploration.
   rendering_and_quality: "A 1996 Nintendo 64 frame at 320 by 240: very soft, almost out-of-focus image with smooth simple shapes."
-  creative_brief: 'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors. Carry it through N64 blurry textures, blocky worlds, painting portals, fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors. Carry it through N64 soft blur, toy-like simple worlds, smeared textures, colored fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "N64 soft blur; toy-like simple worlds; smeared textures; colored fog"
 avoidRules:
   - a mustached plumber in red and blue

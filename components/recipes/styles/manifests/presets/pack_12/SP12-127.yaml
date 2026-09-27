@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Lost Planet 2006 - Capcom Frozen Frontier
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: frozen moon base screenshot
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Capcom Lost Planet: Extreme Condition (2006) look: third-person snowy alien planet, blizzards, thermal energy, giant bug creatures under the ice and heavy mech suits.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors in heavy parkas and mech suits. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Ice white, orange thermal and steel grey, true to the Lost Planet 2006 palette.
-  lighting_and_shadow: Blizzard haze with orange thermal glow, lit the way Lost Planet 2006 lights its levels.
-  texture_and_material: Snow particles, ice and metal, with the in-engine surface finish of Lost Planet 2006.
+  lighting_and_shadow: "White blizzard haze with glowing orange heat and thermal energy."
+  texture_and_material: "Snow particles blowing across the screen, ice, and slightly blurry metal textures."
   camera_and_composition: Third-person view in snowstorms, framed the way Lost Planet 2006 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with frozen alien peril.
-  rendering_and_quality: Authentic late-2000s sci-fi shooter screen, matching real Lost Planet 2006 screenshots.
+  rendering_and_quality: "A 2006 Xbox 360 frame at 1280 by 720 in third person: blizzard, giant bugs in haze, a thermal gauge shape at the side."
   creative_brief: 'Capcom Lost Planet: Extreme Condition (2006) look: third-person snowy alien planet, blizzards, thermal energy, giant bug creatures under the ice and heavy mech suits. Carry it through Lost Planet snow, giant bugs, thermal energy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Lost Planet snow; giant bugs; thermal energy
 avoidRules:

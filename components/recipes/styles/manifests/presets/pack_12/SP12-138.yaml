@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Valkyria Chronicles 2008 - Sega Canvas Watercolor War
 category: 4. Sieges, Warfronts & Last Stands
 domain: winter artillery battle screenshot
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as anime soldiers with sketchy watercolor shading. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft watercolor snow, olive and sepia, true to the Valkyria Chronicles 2008 palette.
-  lighting_and_shadow: Watercolor wash light with paper grain, lit the way Valkyria Chronicles 2008 lights its levels.
-  texture_and_material: Pencil hatching over watercolor paper, with the in-engine surface finish of Valkyria Chronicles 2008.
+  lighting_and_shadow: "Watercolor wash light with paper grain visible over the whole image."
+  texture_and_material: "Pencil hatching over watercolor paper laid onto 3D, ink outlines on soldiers and tanks."
   camera_and_composition: Third-person tactical view, framed the way Valkyria Chronicles 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bittersweet wartime tactics.
-  rendering_and_quality: Authentic watercolor strategy screen, matching real Valkyria Chronicles 2008 screenshots.
+  rendering_and_quality: "A 2008 PlayStation 3 frame at 1280 by 720: sketchy watercolor battlefield, a small command bar shape at the bottom."
   creative_brief: 'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses. Carry it through Valkyria CANVAS watercolor, hatching, iron fortresses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Valkyria CANVAS watercolor; hatching; iron fortresses
 avoidRules:

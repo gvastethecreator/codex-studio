@@ -9,7 +9,7 @@ styleAnchors:
 displayName: The Messenger 2018 - Sabotage 8-Bit Ninja
 category: 1. Neon Urban & Night Ops
 domain: retro pixel ninja action screenshot
-version: 4
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny 8-bit ninja sprites with limited-palette pixels. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as tiny ninja sprites built from a few square pixels in a handful of flat colors. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Limited 8-bit palette of night blue, moon yellow and red.
-  lighting_and_shadow: Flat 8-bit light with no gradients, lit the way The Messenger 2018 lights its levels.
-  texture_and_material: Chunky 8-bit pixels and tile patterns, with the in-engine surface finish of The Messenger 2018.
+  lighting_and_shadow: "Flat colors with no gradients, dark blue night and a huge pale moon."
+  texture_and_material: "Chunky square pixels in a small palette, repeating brick and roof tiles."
   camera_and_composition: Side-scrolling platformer view, framed the way The Messenger 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with playful retro ninja.
-  rendering_and_quality: Authentic modern 8-bit pixel platformer screen, matching real The Messenger 2018 screenshots.
-  creative_brief: 'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger 8-bit, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: The Messenger 8-bit; tiny ninja sprites; big moon
+  rendering_and_quality: "A 2018 side-view frame at 384 by 216 scaled up: tiny ninja sprite on rooftops, a thin bar shape at the top."
+  creative_brief: "Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger chunky pixels, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "The Messenger chunky pixels; tiny ninja sprites; big moon"
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text

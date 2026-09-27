@@ -7,7 +7,7 @@ styleAnchors:
   - Tactics Ogre Verdant Ruins
 displayName: Tactics Ogre 1995 - Quest Isometric Sprite Tactics
 category: 4. Sieges, Warfronts & Last Stands
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -24,13 +24,13 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed isometric sprites with Yoshida-style proportions. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as small detailed pixel sprites with long elegant proportions, standing on tiered diagonal terrain. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Muted earth, vine green and faded medieval blue.
-  lighting_and_shadow: Soft even 16-bit light on tiered tiles, lit the way Tactics Ogre 1995 lights its levels.
-  texture_and_material: Detailed 16-bit sprites and textured tiles, with the in-engine surface finish of Tactics Ogre 1995.
+  lighting_and_shadow: "Soft even pixel colors on stacked diagonal tiles with no cast shadows."
+  texture_and_material: "Crisp square pixels, detailed small sprites and textured stone and grass tiles stacked in tiers."
   camera_and_composition: Isometric view over tiered tile maps, framed the way Tactics Ogre 1995 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grave political war.
-  rendering_and_quality: Authentic 16-bit isometric tactics screen, matching real Tactics Ogre 1995 screenshots.
+  rendering_and_quality: "A 1995 Super Nintendo frame at 256 by 224: a diagonal battlefield of stacked pixel tiles, a small status box in a corner."
   key_features: Tactics Ogre isometric; Yoshida sprites; tiered ruins
   creative_brief: 'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands. Carry it through Tactics Ogre isometric, Yoshida sprites, tiered ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

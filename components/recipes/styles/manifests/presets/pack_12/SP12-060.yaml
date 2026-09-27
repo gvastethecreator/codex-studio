@@ -7,7 +7,7 @@ styleAnchors:
   - Blasphemous Basilica Last Stand
 displayName: Blasphemous 2019 - The Game Kitchen Pixel Penance
 category: 4. Sieges, Warfronts & Last Stands
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -27,10 +27,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed dark pixel sprites in religious robes, thorns and baroque armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bone white, dried blood red, candle gold and black stone.
   lighting_and_shadow: Candle halos and stained-glass shafts in deep shadow.
-  texture_and_material: Dense detailed pixel art with baroque ornament, with the in-engine surface finish of Blasphemous 2019.
+  texture_and_material: "Dense detailed pixel art with baroque gold ornament, thorns and robes, crisp square pixels throughout."
   camera_and_composition: Side-view metroidvania frame, framed the way Blasphemous 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with penitent grotesque solemnity.
-  rendering_and_quality: Authentic dark pixel metroidvania screen, matching real Blasphemous 2019 screenshots.
+  rendering_and_quality: "A 2019 side-view frame at 640 by 360 scaled up: dark pixel cathedral, a small penitent sprite, a thorned bar shape top left."
   key_features: Blasphemous pixels; Holy Week; baroque grotesque
   creative_brief: 'The Game Kitchen Blasphemous (2019) look: dark detailed pixel art metroidvania steeped in Andalusian Holy Week imagery, baroque basilicas, grotesque religious enemies and penitent suffering. Carry it through Blasphemous pixels, Holy Week, baroque grotesque. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

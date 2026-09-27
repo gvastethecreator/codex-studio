@@ -9,7 +9,7 @@ styleAnchors:
 displayName: WWF No Mercy 2000 - AKI N64 Wrestling
 category: 5. Speed, Sport & Competitive Arenas
 domain: pro wrestling entrance screenshot
-version: 2
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,16 +22,16 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as blocky low-poly N64 wrestlers with simple faces. Wardrobe details apply only when the prompt leaves clothing open.
+  aesthetic: "AKI Corporation WWF No Mercy (2000) look: Nintendo 64 wrestling with blocky bodies, smeared blurry faces, arena spotlights, pyro and a crowd painted as a flat backdrop."
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky wrestlers with simple smeared faces, thick limbs made of a few chunks. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Arena purple, pyro green and ring white, true to the WWF No Mercy 2000 palette.
-  lighting_and_shadow: Arena spotlights and pyro bursts, lit the way WWF No Mercy 2000 lights its levels.
-  texture_and_material: Blurry N64 textures, with the in-engine surface finish of WWF No Mercy 2000.
+  lighting_and_shadow: "Arena spotlights and pyro bursts over a dark crowd."
+  texture_and_material: "Tiny textures smeared into soft blur, the crowd a flat picture of blotches."
   camera_and_composition: Entrance ramp view, framed the way WWF No Mercy 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with campy arena spectacle.
-  rendering_and_quality: Authentic N64 wrestling screen, matching real WWF No Mercy 2000 screenshots.
-  creative_brief: 'AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans. Carry it through No Mercy N64, blocky wrestlers, pyro. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: No Mercy N64; blocky wrestlers; pyro
+  rendering_and_quality: "A 2000 Nintendo 64 frame at 320 by 240: very soft and blurry, two blocky wrestlers in a ring, a spirit meter shape."
+  creative_brief: "AKI Corporation WWF No Mercy (2000) look: Nintendo 64 wrestling with blocky bodies, smeared blurry faces, arena spotlights, pyro and a crowd painted as a flat backdrop. Carry it through No Mercy blocky wrestlers, blurry smeared textures, pyro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "No Mercy blocky wrestlers; blurry smeared textures; pyro"
 avoidRules:
   - real wrestlers
   - name graphics

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sonic the Hedgehog 1991 - Sega Loop Zone Speed
 category: 5. Video Games 90s
 domain: nineties console platformer
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side-scrolling speed view, framed the way Sonic the Hedgehog 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright blazing speed.
   rendering_and_quality: "A 1991 Sega Mega Drive frame at 320 by 224: sharp pixels, bold primary colors and scrolling parallax bands."
-  creative_brief: 'Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed. Carry it through Sonic checkerboard hills, loops, palm trees, speed. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed. Carry it through Sonic checkered hills, loops, palm trees, bold pixel speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: "Sonic checkered hills; loops; palm trees; bold pixel speed"
 avoidRules:
   - a blue hedgehog with red shoes

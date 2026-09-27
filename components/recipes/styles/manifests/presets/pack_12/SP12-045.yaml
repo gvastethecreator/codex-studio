@@ -3,7 +3,7 @@ id: SP12-045
 packId: pack_12
 name: Generation Zero 2019 - Avalanche Eighties Machine Hunt
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,10 +23,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as eighties Swedish survivors in windbreakers and denim, and machines as retrofuturist hunters. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pine green, Swedish red cottage, grey sky and searchlight white.
   lighting_and_shadow: Overcast Nordic light or dusk with machine searchlights.
-  texture_and_material: Realistic pine forest and rusted machine panels, with the in-engine surface finish of Generation Zero 2019.
+  texture_and_material: "Realistic pine forest and rusted machine panels, grass and ferns slightly soft in the distance."
   camera_and_composition: First-person view hiding among trees, framed the way Generation Zero 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie rural invasion.
-  rendering_and_quality: Authentic open-world survival shooter screen, matching real Generation Zero 2019 screenshots.
+  rendering_and_quality: "A 2019 first-person frame at 1920 by 1080: rifle at bottom right, a machine's searchlight sweeping through pines, a compass strip at the top."
   key_features: Generation Zero machines; Swedish pines; eighties rural
   creative_brief: 'Avalanche Studios Generation Zero (2019) look: first-person survival in 1980s rural Sweden, pine forests, red wooden houses and retrofuturist hunting machines with searchlights. Carry it through Generation Zero machines, Swedish pines, eighties rural. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

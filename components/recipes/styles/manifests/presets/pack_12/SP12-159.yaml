@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Payday 2 2013 - Overkill Masked Crew
 category: 7. Heists, Horror & Underworld Runs
 domain: co-op bank heist screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as heist crew in suits and custom masks. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Alarm red, vault steel and suit black, true to the Payday 2 2013 palette.
-  lighting_and_shadow: Flashing alarms and fluorescent bank light, lit the way Payday 2 2013 lights its levels.
-  texture_and_material: Vault steel, suits and money, with the in-engine surface finish of Payday 2 2013.
+  lighting_and_shadow: "Flashing red alarms and flat white fluorescent bank light."
+  texture_and_material: "Vault steel, dark suits, clown-like masks and stacks of money."
   camera_and_composition: First-person view at a vault, framed the way Payday 2 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense heist adrenaline.
-  rendering_and_quality: Authentic co-op heist screen, matching real Payday 2 2013 screenshots.
+  rendering_and_quality: "A 2013 first-person frame at 1920 by 1080: gun in hand, vault door with a drill, small bar and icon shapes bottom right."
   creative_brief: 'Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults. Carry it through Payday vault drill, masked crew, alarms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Payday vault drill; masked crew; alarms
 avoidRules:

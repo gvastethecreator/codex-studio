@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Rayman Legends 2013 - Ubisoft Montpellier UbiArt
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: minecart ride chase screenshot
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as rubbery hand-painted cartoon characters. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lush storybook greens and warm golds, true to the Rayman Legends 2013 palette.
-  lighting_and_shadow: Painterly glow, lit the way Rayman Legends 2013 lights its levels.
-  texture_and_material: Hand-painted 2D art, with the in-engine surface finish of Rayman Legends 2013.
+  lighting_and_shadow: "Glowing painterly light with soft colored backlight, lit the way Rayman Legends 2013 lights its levels."
+  texture_and_material: "Hand-painted 2D art with visible brushstrokes on rubbery cartoon characters."
   camera_and_composition: Side-scrolling chase view, framed the way Rayman Legends 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with zany breathless chase.
-  rendering_and_quality: Authentic hand-painted platformer screen, matching real Rayman Legends 2013 screenshots.
+  rendering_and_quality: "A 2013 side-view frame at 1920 by 1080: rubbery cartoon hero running through a painted storybook level, small counter shapes."
   creative_brief: 'Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases. Carry it through Rayman UbiArt, hand-painted chase, storybook. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Rayman UbiArt; hand-painted chase; storybook
 avoidRules:

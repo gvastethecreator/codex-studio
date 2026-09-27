@@ -7,7 +7,7 @@ styleAnchors:
   - Banner Saga Glacier Tactics
 displayName: The Banner Saga 2014 - Stoic Hand-Painted Saga
 category: 4. Sieges, Warfronts & Last Stands
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -30,7 +30,7 @@ visualDna:
   texture_and_material: Hand-painted flat backgrounds and clean hand-drawn animation lines.
   camera_and_composition: Side tactical grid view or wide caravan landscape.
   atmosphere_and_mood: Keep the requested mood with weary stoic endurance.
-  rendering_and_quality: Authentic hand-animated tactical RPG screen, matching real The Banner Saga 2014 screenshots.
+  rendering_and_quality: "A 2014 frame at 1920 by 1080: flat painted Norse landscape with a small caravan or a tactical grid of hand-animated figures, banner shapes at the bottom."
   key_features: Banner Saga Eyvind Earle painting; caravans; tactical grid
   creative_brief: 'Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids. Carry it through Banner Saga Eyvind Earle painting, caravans, tactical grid. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:

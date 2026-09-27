@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Jak II 2003 - Naughty Dog Haven City Hover Chase
 category: 1. Neon Urban & Night Ops
 domain: flying car chase game screenshot
-version: 4
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized PS2 cartoon characters with big expressive faces riding hover vehicles. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as rubbery cartoon characters with big expressive faces and simple smooth shapes, riding hover bikes. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Industrial teal, brass and warm amber glow, true to the Jak II 2003 palette.
-  lighting_and_shadow: Hazy PS2 atmospheric light and glowing traffic, lit the way Jak II 2003 lights its levels.
-  texture_and_material: Stylized PS2 textures and chunky vehicle models, with the in-engine surface finish of Jak II 2003.
+  lighting_and_shadow: "Warm hazy light that softens the distance, with glowing traffic lanes in the sky."
+  texture_and_material: "Smooth simple cartoon shapes with soft blurry painted textures, chunky rounded vehicles."
   camera_and_composition: Chase camera behind a hover zoomer, framed the way Jak II 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rebellious chase thrill.
-  rendering_and_quality: Authentic PS2 open-city action screen, matching real Jak II 2003 screenshots.
-  creative_brief: 'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover zoomers, walled city, chase camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Jak II hover zoomers; walled city; chase camera
+  rendering_and_quality: "A 2003 PlayStation 2 frame at 640 by 448: soft slightly jagged image, a hover bike seen from behind racing between walls."
+  creative_brief: "Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover bikes, walled city, chase camera, soft hazy cartoon world. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: "Jak II hover bikes; walled city; chase camera; soft hazy cartoon world"
 avoidRules:
   - a green-haired hero with goggles and an orange ottsel
   - existing game characters, logos or levels
