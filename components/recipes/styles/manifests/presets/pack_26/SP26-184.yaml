@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP26-184
+packId: pack_26
+name: Lotte Reiniger - Silhouette Cutout Animation
+styleAnchors:
+  - Lotte Reiniger - Silhouette Cutout Animation
+  - animated film still
+  - Reiniger black cutout silhouettes
+displayName: Lotte Reiniger - Silhouette Cutout Animation
+category: 9. Western Animation - Studios & Directors
+domain: animated film still
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - western-animation-studios-directors
+  - western-animation
+  - animation-still
+  - reiniger
+  - reference-title
+visualDna:
+  aesthetic: 'Lotte Reiniger silhouette animation look of the 1920s to 1950s: intricate black paper cutout silhouettes with lacework detail, jointed puppets against tinted backlit backgrounds and fairy tale drama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; cut the subject as an intricate jointed black paper silhouette against a tinted backlit background. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pure black silhouettes against amber, teal or rose tinted light.
+  lighting_and_shadow: Backlit tinted glass behind cut paper, lit the way Lotte Reiniger lights its scenes.
+  texture_and_material: Cut black paper lacework with jointed limbs, with the surface finish of Lotte Reiniger.
+  camera_and_composition: Flat side-on theatrical silhouette staging, framed the way Lotte Reiniger composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with delicate fairy tale enchantment.
+  rendering_and_quality: Faithful silhouette animation frame, in the recognizable hand of Lotte Reiniger.
+  creative_brief: 'Lotte Reiniger silhouette animation look of the 1920s to 1950s: intricate black paper cutout silhouettes with lacework detail, jointed puppets against tinted backlit backgrounds and fairy tale drama. Carry it through Reiniger black cutout silhouettes, tinted backlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Reiniger black cutout silhouettes; tinted backlight
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: western-animation-studios-directors
+  categoryName: 9. Western Animation - Studios & Directors
+  domain: animated film still
+  tags:
+    - curation-v2
+    - western-animation-studios-directors
+    - western-animation
+    - animation-still
+    - reiniger
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

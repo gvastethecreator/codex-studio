@@ -175,6 +175,52 @@ categories:
       - pack_26/SP26-144.yaml
       - pack_26/SP26-145.yaml
       - pack_26/SP26-146.yaml
+  - id: comic-artists-pages-panels
+    name: 8. Comic Artists - Pages & Panels
+    presetRefs:
+      - pack_26/SP26-147.yaml
+      - pack_26/SP26-148.yaml
+      - pack_26/SP26-149.yaml
+      - pack_26/SP26-150.yaml
+      - pack_26/SP26-151.yaml
+      - pack_26/SP26-152.yaml
+      - pack_26/SP26-153.yaml
+      - pack_26/SP26-154.yaml
+      - pack_26/SP26-155.yaml
+      - pack_26/SP26-156.yaml
+      - pack_26/SP26-157.yaml
+      - pack_26/SP26-158.yaml
+      - pack_26/SP26-159.yaml
+      - pack_26/SP26-160.yaml
+      - pack_26/SP26-161.yaml
+      - pack_26/SP26-162.yaml
+      - pack_26/SP26-163.yaml
+      - pack_26/SP26-164.yaml
+      - pack_26/SP26-165.yaml
+      - pack_26/SP26-166.yaml
+  - id: western-animation-studios-directors
+    name: 9. Western Animation - Studios & Directors
+    presetRefs:
+      - pack_26/SP26-167.yaml
+      - pack_26/SP26-168.yaml
+      - pack_26/SP26-169.yaml
+      - pack_26/SP26-170.yaml
+      - pack_26/SP26-171.yaml
+      - pack_26/SP26-172.yaml
+      - pack_26/SP26-173.yaml
+      - pack_26/SP26-174.yaml
+      - pack_26/SP26-175.yaml
+      - pack_26/SP26-176.yaml
+      - pack_26/SP26-177.yaml
+      - pack_26/SP26-178.yaml
+      - pack_26/SP26-179.yaml
+      - pack_26/SP26-180.yaml
+      - pack_26/SP26-181.yaml
+      - pack_26/SP26-182.yaml
+      - pack_26/SP26-183.yaml
+      - pack_26/SP26-184.yaml
+      - pack_26/SP26-185.yaml
+      - pack_26/SP26-186.yaml
 presetRefs:
   - pack_26/SP26-001.yaml
   - pack_26/SP26-002.yaml
@@ -322,3 +368,43 @@ presetRefs:
   - pack_26/SP26-144.yaml
   - pack_26/SP26-145.yaml
   - pack_26/SP26-146.yaml
+  - pack_26/SP26-147.yaml
+  - pack_26/SP26-148.yaml
+  - pack_26/SP26-149.yaml
+  - pack_26/SP26-150.yaml
+  - pack_26/SP26-151.yaml
+  - pack_26/SP26-152.yaml
+  - pack_26/SP26-153.yaml
+  - pack_26/SP26-154.yaml
+  - pack_26/SP26-155.yaml
+  - pack_26/SP26-156.yaml
+  - pack_26/SP26-157.yaml
+  - pack_26/SP26-158.yaml
+  - pack_26/SP26-159.yaml
+  - pack_26/SP26-160.yaml
+  - pack_26/SP26-161.yaml
+  - pack_26/SP26-162.yaml
+  - pack_26/SP26-163.yaml
+  - pack_26/SP26-164.yaml
+  - pack_26/SP26-165.yaml
+  - pack_26/SP26-166.yaml
+  - pack_26/SP26-167.yaml
+  - pack_26/SP26-168.yaml
+  - pack_26/SP26-169.yaml
+  - pack_26/SP26-170.yaml
+  - pack_26/SP26-171.yaml
+  - pack_26/SP26-172.yaml
+  - pack_26/SP26-173.yaml
+  - pack_26/SP26-174.yaml
+  - pack_26/SP26-175.yaml
+  - pack_26/SP26-176.yaml
+  - pack_26/SP26-177.yaml
+  - pack_26/SP26-178.yaml
+  - pack_26/SP26-179.yaml
+  - pack_26/SP26-180.yaml
+  - pack_26/SP26-181.yaml
+  - pack_26/SP26-182.yaml
+  - pack_26/SP26-183.yaml
+  - pack_26/SP26-184.yaml
+  - pack_26/SP26-185.yaml
+  - pack_26/SP26-186.yaml

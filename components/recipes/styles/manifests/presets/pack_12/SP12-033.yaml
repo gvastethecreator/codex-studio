@@ -3,7 +3,7 @@ id: SP12-033
 packId: pack_12
 name: Plants vs Zombies 2009 - PopCap Cartoon Lawn
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 5
+version: 6
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,7 +20,7 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a goofy cartoon plant or shambling cartoon enemy with big eyes. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as an original goofy cartoon vegetable fighter or shambling cartoon enemy with big eyes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lawn green, sunny yellow and dusk purple, true to the Plants vs Zombies 2009 palette.
   lighting_and_shadow: Bright cartoon daylight or moonlight, lit the way Plants vs Zombies 2009 lights its levels.
   texture_and_material: Flat cartoon vectors with soft shading, with the in-engine surface finish of Plants vs Zombies 2009.
@@ -31,6 +31,9 @@ visualDna:
   creative_brief: 'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left. Carry it through PvZ lawn grid, goofy plants, cartoon defense. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - a green pea-shooting plant
+  - a smiling sunflower that makes sun
+  - a brown walnut-shaped wall plant with eyes
+  - zombies in brown suits and red ties
   - existing zombie designs
   - watermark
   - logo
@@ -64,10 +67,11 @@ avoidRules:
   - readable labels
   - franchise likeness
   - real person likeness
+  - UI overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-033.webp
 attributes:
-  negativePrompt: a green pea-shooting plant, existing zombie designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a green pea-shooting plant, a smiling sunflower that makes sun, a brown walnut-shaped wall plant with eyes, zombies in brown suits and red ties, existing zombie designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, UI overlay, noisy compression artifacts
   referenceGame: Plants vs. Zombies
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI

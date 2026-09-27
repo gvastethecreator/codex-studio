@@ -1145,7 +1145,7 @@
     "displayCategory": "Sci-fi game capture",
     "kind": "profile",
     "expectedCount": 20,
-    "baselineHash": "dcdd9fb865bd677d657aaec14d3afa6af5e8a8241fde34337dc98ceadd3f09de",
+    "baselineHash": "1db38adb1749a951095c7fa30f0341d68b14d3fa1f8d32a7df84f667fd4dd385",
     "problem": "Carrier, freight and defense scenarios substitute missions for style.",
     "preserve": "Hard-surface material hierarchy and strategy/action camera logic.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
@@ -1212,7 +1212,7 @@
     "validation": "A requested object remains the subject instead of becoming a mandatory horror encounter.",
     "evidencePresetIds": ["SP12-016", "SP12-050"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_12",
@@ -2996,6 +2996,36 @@
     "proposedAction": "New category of 20 tabletop illustrators from seventies and eighties role-playing books (Trampier, Otus, Nicholson, Holloway, Sutherland, Willingham, Jeff Dee, DiTerlizzi, Siembieda) to the OSR and indie zine scene (Sholtis, Poag, Lockhart, Rejec, Kelvin Green, Jez Gordon, Scrap Princess, Johan Nohr, Mullen, Kovacs, Alex Mayo).",
     "validation": "Generate the card set; check each card reads as the illustrator's ink or zine manner with no copied art.",
     "evidencePresetIds": ["SP17-241", "SP17-242", "SP17-243"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "8. Comic Artists - Pages & Panels",
+    "displayCategory": "Comic artists: pages & panels",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "b4634b86c616107ef4ae87999edf47bcc9cd6493c020adebd36ea7f03c9b99ab",
+    "problem": "Comic artist styles must reproduce each cartoonist's interior page craft (line, blacks, color, panel layout, texture) with invented characters and stories, never their famous characters or pages.",
+    "preserve": "The requested subject stays the subject, told as that artist's page or panel; speech balloons stay empty unless text is requested.",
+    "proposedAction": "New category of 20 cartoonists not already covered by Comic Covers, from McCay, Herriman, Hergé, Eisner, Toth and Ditko through Pratt, Toppi, Breccia, Tardi, Bilal, Corben, Bisley, Quitely, Mazzucchelli, Jaime Hernandez, Charles Burns, Clowes, Sacco and Jeff Smith.",
+    "validation": "Generate the card set; check each card reads as that artist's page craft with original characters and no famous character likeness.",
+    "evidencePresetIds": ["SP26-147", "SP26-148", "SP26-149"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "9. Western Animation - Studios & Directors",
+    "displayCategory": "Western animation: studios & directors",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "56b2f87c7e50945ec448f83de4e61f76fd6cc8079572ee9f74dd5098c55a23e7",
+    "problem": "Western animation styles must reproduce each studio or director's film craft (drawing, cutout, stop-motion, rotoscope, painted 3D, lighting) with invented characters, never a film's cast.",
+    "preserve": "The requested subject stays the subject, staged as a frame from that studio's or director's craft.",
+    "proposedAction": "New category of 20 western studios and directors: Bluth, Richard Williams, Bakshi, Hanna-Barbera, Tex Avery, Cartoon Saloon, Chomet, Aardman, Fortiche, SPA Studios, McCracken, Plympton, Pendleton Ward, Rebecca Sugar, Švankmajer, Norstein, Laloux, Reiniger, McLaren and Sabiston.",
+    "validation": "Generate the card set; check each card reads as that animation craft with original characters and no film character likeness.",
+    "evidencePresetIds": ["SP26-167", "SP26-168", "SP26-169"],
     "status": "text-authored",
     "visualValidation": "pending"
   }

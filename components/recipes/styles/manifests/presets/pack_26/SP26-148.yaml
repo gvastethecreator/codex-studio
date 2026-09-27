@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP26-148
+packId: pack_26
+name: George Herriman - Coconino Desert Strip
+styleAnchors:
+  - George Herriman - Coconino Desert Strip
+  - newspaper comic strip
+  - Herriman scratchy desert strip
+displayName: George Herriman - Coconino Desert Strip
+category: 8. Comic Artists - Pages & Panels
+domain: newspaper comic strip
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - herriman
+  - reference-title
+visualDna:
+  aesthetic: 'George Herriman strip look of the 1910s to 1930s: scratchy loose pen line, Arizona mesas that change shape between panels, crosshatched moons, poetic dialect and a stage-set desert.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; place the subject on a shifting Arizona desert stage whose mesas change from panel to panel. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mostly black ink with sparse flat terracotta and turquoise Sunday color.
+  lighting_and_shadow: Flat printed desert light with hatched night skies.
+  texture_and_material: Printed comic page on off-white paper with slight ink spread and paper tooth.
+  camera_and_composition: Wide strip panels with changing backdrops behind fixed characters.
+  atmosphere_and_mood: Keep the requested mood with poetic absurd tenderness.
+  rendering_and_quality: Faithful early newspaper strip art, in the recognizable hand of George Herriman.
+  creative_brief: 'George Herriman strip look of the 1910s to 1930s: scratchy loose pen line, Arizona mesas that change shape between panels, crosshatched moons, poetic dialect and a stage-set desert. Carry it through Herriman scratchy desert strip, shifting mesas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Herriman scratchy desert strip; shifting mesas
+avoidRules:
+  - a black cat struck by a brick
+  - a mouse throwing a brick
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a black cat struck by a brick, a mouse throwing a brick, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: newspaper comic strip
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - herriman
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

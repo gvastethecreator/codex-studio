@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-150
+packId: pack_26
+name: Will Eisner - Splash Page Weather
+styleAnchors:
+  - Will Eisner - Splash Page Weather
+  - comic splash page
+  - Eisner splash page
+displayName: Will Eisner - Splash Page Weather
+category: 8. Comic Artists - Pages & Panels
+domain: comic splash page
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - eisner
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Will Eisner splash page look of the 1940s to 1980s: title lettering built into buildings, puddles and newspapers, rain and wind drawn as story, expressive tenement crowds and cinematic staging.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in a rain-soaked tenement city where the title is built into the architecture. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with sepia or muted flat color washes.
+  lighting_and_shadow: Streetlamp and rain light with heavy spotted blacks.
+  texture_and_material: Original art board with brush ink, white-out corrections and paper grain.
+  camera_and_composition: Cinematic splash page with title lettering integrated into the scene.
+  atmosphere_and_mood: Keep the requested mood with rain-soaked city melancholy.
+  rendering_and_quality: Faithful Eisner splash page art, in the recognizable hand of Will Eisner.
+  creative_brief: 'Will Eisner splash page look of the 1940s to 1980s: title lettering built into buildings, puddles and newspapers, rain and wind drawn as story, expressive tenement crowds and cinematic staging. Carry it through Eisner splash page, title built into architecture. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Eisner splash page; title built into architecture
+avoidRules:
+  - a masked detective in a blue suit and fedora
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a masked detective in a blue suit and fedora, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: comic splash page
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - eisner
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

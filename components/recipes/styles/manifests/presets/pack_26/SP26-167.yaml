@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP26-167
+packId: pack_26
+name: Don Bluth - Glowing Dark Feature Animation
+styleAnchors:
+  - Don Bluth - Glowing Dark Feature Animation
+  - feature animation still
+  - Bluth glowing effects
+displayName: Don Bluth - Glowing Dark Feature Animation
+category: 9. Western Animation - Studios & Directors
+domain: feature animation still
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - western-animation-studios-directors
+  - western-animation
+  - animation-still
+  - bluth
+  - reference-title
+visualDna:
+  aesthetic: 'Don Bluth feature animation look of 1982 to 1989: lush dark painted backgrounds, backlit glowing effects animation, sparkling magic, soulful big-eyed animals and genuinely scary shadows.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a soulful big-eyed hand-drawn character in a dark, glowing painted world. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep murky greens and browns with glowing gold and cyan highlights.
+  lighting_and_shadow: Backlit glows, sparkles and hard shadows from a single source.
+  texture_and_material: Hand-inked cel over painted background, slight film grain.
+  camera_and_composition: Cinematic feature framing with deep painted backgrounds, framed the way Don Bluth composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dark soulful wonder.
+  rendering_and_quality: Faithful eighties hand-drawn feature frame, in the recognizable hand of Don Bluth.
+  creative_brief: 'Don Bluth feature animation look of 1982 to 1989: lush dark painted backgrounds, backlit glowing effects animation, sparkling magic, soulful big-eyed animals and genuinely scary shadows. Carry it through Bluth glowing effects, dark painted backgrounds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Bluth glowing effects; dark painted backgrounds
+avoidRules:
+  - a field mouse widow in a red cloak
+  - a brown dinosaur child with a leaf
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a field mouse widow in a red cloak, a brown dinosaur child with a leaf, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: western-animation-studios-directors
+  categoryName: 9. Western Animation - Studios & Directors
+  domain: feature animation still
+  tags:
+    - curation-v2
+    - western-animation-studios-directors
+    - western-animation
+    - animation-still
+    - bluth
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

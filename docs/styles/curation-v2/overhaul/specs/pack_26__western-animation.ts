@@ -1,0 +1,425 @@
+import type { Spec } from '../tools/apply';
+import { cr } from './_authors';
+
+// Western animation: studios and directors outside anime, named with the film craft that made
+// their look. Cards invent original characters and scenes, never a film's cast.
+const T = ['western-animation', 'animation-still'];
+const cel = 'Hand-inked cel over painted background, slight film grain.';
+
+const spec: Spec = {
+  pack: 'pack_26',
+  category: '9. Western Animation - Studios & Directors',
+  newCategory: { id: 'western-animation-studios-directors' },
+  updates: {},
+  creates: [
+    cr('Don Bluth - Glowing Dark Feature Animation', 'feature animation still', [...T, 'bluth'], {
+      look: 'Don Bluth feature animation look of 1982 to 1989: lush dark painted backgrounds, backlit glowing effects animation, sparkling magic, soulful big-eyed animals and genuinely scary shadows.',
+      subject:
+        'render the subject as a soulful big-eyed hand-drawn character in a dark, glowing painted world.',
+      color: 'Deep murky greens and browns with glowing gold and cyan highlights.',
+      light: 'Backlit glows, sparkles and hard shadows from a single source.',
+      texture: cel,
+      camera: 'Cinematic feature framing with deep painted backgrounds.',
+      mood: 'dark soulful wonder',
+      render: 'Faithful eighties hand-drawn feature frame.',
+      key: 'Bluth glowing effects; dark painted backgrounds',
+      avoid: ['a field mouse widow in a red cloak', 'a brown dinosaur child with a leaf'],
+      briefs: [
+        'Widowed badger clockmaker descends into flooded tunnels under a Victorian workshop with a lantern, gears glowing gold in the black water and a pair of huge eyes opening behind her. No readable text or logo.',
+        'Glowing blue spores pour from a hollow oak as a limping young fox shields a sparrow chick from an owl whose silhouette fills the moonlit sky. No readable text or logo.',
+        'Sparkling in the dark attic, a music box casts backlit golden light on three orphaned mice climbing a mountain of forgotten toys toward the moon window. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Richard Williams - Escher Perspective Animation',
+      'feature animation still',
+      [...T, 'richard-williams'],
+      {
+        look: 'Richard Williams animation look of the 1970s to 1990s: impossible Escher perspective mazes, Persian miniature flatness, dense geometric patterning, virtuoso fluid motion and single-line characters.',
+        subject:
+          'place the subject inside flat Persian-miniature patterning and impossible Escher perspective architecture.',
+        color: 'Jewel-like Persian blues, golds and vermilion in flat fields.',
+        light: 'Flat ornamental color with no cast shadows.',
+        texture: 'Hand-drawn animation paper with painted flat color.',
+        camera: 'Flat symmetrical tableaux folding into impossible perspective.',
+        mood: 'dazzling ornamental mischief',
+        render: 'Faithful Richard Williams hand-drawn frame.',
+        key: 'Richard Williams Escher mazes; Persian flatness',
+        avoid: ['a thin silent thief with a single fly', 'a cartoon rabbit in red overalls'],
+        briefs: [
+          'Silent cobbler chases a single runaway golden slipper through a palace whose staircases fold into each other like an Escher print, patterned tiles flipping under his feet. No readable text or logo.',
+          'Flat as a Persian miniature, a vizier and a giant mechanical elephant argue across a courtyard where the floor pattern is also the ceiling. No readable text or logo.',
+          'Dazzling geometric maze of arches where a tiny clockwork monkey steals the moon from a sultan tower and escapes down a staircase that becomes a river. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Ralph Bakshi - Rotoscoped Painted Grit', 'feature animation still', [...T, 'bakshi'], {
+      look: 'Ralph Bakshi animation look of the 1970s and early 1980s: rotoscoped live-action figures traced into flat color, gritty painted city and fantasy backgrounds, underground adult attitude and mixed-media collage.',
+      subject:
+        'trace the subject as rotoscoped flat-color figures over gritty painted backgrounds.',
+      color: 'Dirty ambers, bruised purples and flat silhouette blacks.',
+      light: 'Harsh high-contrast rotoscope light with flat silhouettes.',
+      texture: 'Rotoscoped cel over painted board with photo collage.',
+      camera: 'Live-action camera framing traced into animation.',
+      mood: 'gritty underground swagger',
+      render: 'Faithful seventies rotoscoped feature frame.',
+      key: 'Bakshi rotoscope; gritty painted backgrounds',
+      avoid: ['a cartoon cat in a sports coat', 'cloaked ringwraith riders'],
+      briefs: [
+        'Rotoscoped army of hooded orc-like brutes marches across a burnt-orange sky, their figures traced from real extras and flattened into black silhouette against painted smoke. No readable text or logo.',
+        'Jazz club in a gritty painted Brooklyn where a rotoscoped saxophonist with a crocodile head plays for a crowd of weary pigeons in trench coats. No readable text or logo.',
+        'Flat-color barbarian woman traced from live footage fights a painted swamp beast, the mud and trees collaged from photographs. No readable text or logo.',
+      ],
+    }),
+    cr('Hanna-Barbera - Limited Animation Loop', 'TV animation still', [...T, 'hanna-barbera'], {
+      look: 'Hanna-Barbera TV animation look of the late 1950s to 1970s: limited animation with held poses, thick outlines, collar-line heads, flat pastel backgrounds that repeat in running loops and simple gag staging.',
+      subject:
+        'draw the subject as a thick-outlined limited-animation character running past a looping pastel background.',
+      color: 'Flat pastel backgrounds with bright character color.',
+      light: 'Flat TV cartoon color with no shading.',
+      texture: 'Flat cel over simple painted background with slight broadcast softness.',
+      camera: 'Side-on TV staging and repeating background pans.',
+      mood: 'breezy Saturday morning',
+      render: 'Faithful sixties TV cartoon frame.',
+      key: 'Hanna-Barbera limited animation; looping pastel backgrounds',
+      avoid: [
+        'a Great Dane with a green van',
+        'a stone-age family with a dinosaur pet',
+        'a brown bear in a green tie and hat',
+      ],
+      briefs: [
+        'Cowardly walrus detective and his tiny penguin partner run past the same haunted lighthouse, same palm tree and same lamppost for the third time as a ghost in a bedsheet chases them. No readable text or logo.',
+        'Space-age commuter family flies a bubble-top car past repeating pastel skyscrapers, the dog sitting on the roof holding a briefcase. No readable text or logo.',
+        'Held pose of a caveman plumber frozen mid-yell while only his mouth moves, a pterodactyl snoring on his pipe wrench against a flat pastel quarry. No readable text or logo.',
+      ],
+    }),
+    cr('Tex Avery - Wild Take Exaggeration', 'cartoon animation still', [...T, 'avery'], {
+      look: 'Tex Avery MGM cartoon look of the 1940s: extreme wild takes with eyes and jaws exploding off the face, smears, breaking the fourth wall, lush painted backgrounds and violent slapstick timing.',
+      subject: 'push the subject into an extreme wild take with exploding eyes, jaws and smears.',
+      color: 'Rich forties Technicolor with lush painted backgrounds.',
+      light: 'Bright Technicolor cartoon light.',
+      texture: cel,
+      camera: 'Wild take close-ups and fourth-wall gags.',
+      mood: 'manic slapstick frenzy',
+      render: 'Faithful forties theatrical cartoon frame.',
+      key: 'Avery wild takes; exploding eyes; fourth wall',
+      avoid: [
+        'a wolf in a zoot suit',
+        'a droopy-faced basset hound',
+        'a tall red-haired nightclub singer',
+      ],
+      briefs: [
+        'Tuxedoed hyena at a nightclub table sees a lady ostrich walk by and his whole skeleton leaps out of his body, eyes firing across the room like cannonballs. No readable text or logo.',
+        'Wild take of a bulldog sheriff whose jaw hits the floor and rolls away like a carpet when a chicken outdraws him in a painted desert town. No readable text or logo.',
+        'Tiny mouse stops the chase, walks to the edge of the film frame and holds up a sign to the audience while the cat is still mid-leap behind him. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Tomm Moore - Cartoon Saloon Celtic Animation',
+      'feature animation still',
+      [...T, 'cartoon-saloon'],
+      {
+        look: 'Cartoon Saloon look of Tomm Moore’s films since 2009: flat geometric characters, Celtic knotwork and illuminated manuscript spirals, woodcut forest textures and layered watercolor backgrounds.',
+        subject:
+          'draw the subject as flat geometric shapes inside Celtic knotwork and woodcut-textured forests.',
+        color: 'Deep forest greens, rust oranges and manuscript gold.',
+        light: 'Flat glowing light and luminous spiral motifs.',
+        texture: 'Woodcut, watercolor and pencil textures in flat layers.',
+        camera: 'Flat layered tableaux framed by knotwork.',
+        mood: 'mythic hand-made wonder',
+        render: 'Faithful Cartoon Saloon hand-drawn frame.',
+        key: 'Cartoon Saloon Celtic spirals; flat geometry; woodcut',
+        avoid: ['a red-haired wolf girl with a green cloak', 'a boy monk with a white cat'],
+        briefs: [
+          'Flat round-faced girl follows a trail of glowing spirals into a woodcut forest where the trees grow in knotwork loops, a heron made of manuscript gold watching. No readable text or logo.',
+          'Beneath a village drawn in rust and ink, a lighthouse keeper plays a whistle that turns the sea into Celtic spirals, seals rising out of them. No readable text or logo.',
+          'Woodcut-textured stag with antlers made of illuminated letters leads a lost shepherd boy through a snowstorm of golden dots. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Sylvain Chomet - Melancholic Caricature Animation',
+      'feature animation still',
+      [...T, 'chomet'],
+      {
+        look: 'Sylvain Chomet animation look of 2003 to 2010: grotesquely exaggerated caricature bodies, muted watercolor backgrounds, tall thin and round squat figures, near-silent storytelling and melancholic French city life.',
+        subject:
+          'exaggerate the subject into a melancholic caricature body inside a muted watercolor French city.',
+        color: 'Muted washed-out ochre, grey-green and faded brick.',
+        light: 'Soft watercolor daylight and dim bistro light.',
+        texture: 'Watercolor backgrounds with hand-drawn lines and subtle 3D props.',
+        camera: 'Long quiet wide shots with little dialogue.',
+        mood: 'wistful comic melancholy',
+        render: 'Faithful Chomet hand-drawn feature frame.',
+        key: 'Chomet caricature bodies; muted watercolor melancholy',
+        avoid: ['three elderly jazz singers from the thirties', 'a tall magician with a rabbit'],
+        briefs: [
+          'Enormously tall thin accordion player and his tiny round wife push a cart of fish down a muted watercolor Marseille hill while seagulls wait silently on every lamppost. No readable text or logo.',
+          'Muted Edinburgh tram at dusk carries a sagging retired ventriloquist whose puppet is visibly more cheerful than he is. No readable text or logo.',
+          'Wide quiet shot of a Paris courtyard where a huge round concierge feeds a single skinny dog under a faded brick wall. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Aardman - Thumbprint Plasticine', 'stop-motion animation still', [...T, 'aardman'], {
+      look: 'Aardman Animations look of the 1990s to 2010s: plasticine stop-motion with visible thumbprints, wide toothy mouths, eyes set close together, cosy British suburbia and meticulous miniature sets.',
+      subject:
+        'sculpt the subject in plasticine with visible thumbprints, a wide toothy mouth and close-set eyes.',
+      color: 'Warm cosy British kitchen browns, greens and mustard.',
+      light: 'Soft practical miniature-set light.',
+      texture: 'Plasticine with thumbprints on detailed miniature sets.',
+      camera: 'Miniature set framing at character height.',
+      mood: 'cosy British eccentricity',
+      render: 'Faithful Aardman stop-motion frame.',
+      key: 'Aardman plasticine; thumbprints; toothy grin',
+      avoid: [
+        'a bald inventor in a green sweater with a beagle',
+        'a woolly sheep flock with a farmer',
+        'chickens escaping a farm',
+      ],
+      briefs: [
+        'Retired lollipop lady in a knitted cardigan builds a rocket-powered mobility scooter in her garden shed while her tortoise watches through welding goggles. No readable text or logo.',
+        'Toothy plasticine hedgehog vicar hosts a village jam contest, every jar and bunting flag thumbprinted, one suspiciously glowing jam in the middle. No readable text or logo.',
+        'Miniature seaside chip shop where a nervous gull in a flat cap tries to pay for chips with a stolen wedding ring. No readable text or logo.',
+      ],
+    }),
+    cr('Fortiche - Painted 3D Animation', 'animated series still', [...T, 'fortiche'], {
+      look: 'Fortiche Production look of the 2010s and 2020s: 3D animated characters with hand-painted textures and brushstroke surfaces, 2D effects and graffiti overlays, stylized painted light and steampunk-industrial cities.',
+      subject:
+        'paint the subject as a 3D character with visible brushstroke textures and hand-drawn 2D effects.',
+      color: 'Toxic teal and magenta against warm brass and grime.',
+      light: 'Painted dramatic rim light and glowing chemical accents.',
+      texture: 'Hand-painted 3D textures with brushstrokes and 2D effect overlays.',
+      camera: 'Dynamic animated series framing with painted depth.',
+      mood: 'raw painted intensity',
+      render: 'Faithful Fortiche painted-3D animation frame.',
+      key: 'Fortiche painted 3D; brushstroke textures; 2D FX',
+      avoid: [
+        'a pink-haired girl with cloud tattoos and a minigun',
+        'a blue-haired girl with braids and rockets',
+      ],
+      briefs: [
+        'Teenage clockmaker with welding scars leans over a brass workbench while hand-drawn teal sparks fly off a mechanical hummingbird, her face painted in thick brushstrokes. No readable text or logo.',
+        'Graffiti-covered undercity bridge where two rival bartenders face off with bottles, 2D chalk doodles animating around their heads. No readable text or logo.',
+        'Brushstroke close-up of a councilwoman in a gilded tower staring at the toxic magenta glow rising from the slums below. No readable text or logo.',
+      ],
+    }),
+    cr('SPA Studios - Volumetric Lit 2D', 'feature animation still', [...T, 'spa-studios'], {
+      look: 'SPA Studios look of 2019: hand-drawn 2D characters given volumetric lighting and soft texture as if 3D, glowing lantern light, snowy Nordic villages and warm-cold color contrast.',
+      subject:
+        'draw the subject in 2D but light it with soft volumetric shading and glowing lantern light.',
+      color: 'Warm lantern amber against cold blue snow.',
+      light: 'Volumetric lighting on 2D characters with soft glowing edges.',
+      texture: 'Hand-drawn 2D line with painted volumetric shading.',
+      camera: 'Cinematic feature framing with deep snowy space.',
+      mood: 'warm wintry tenderness',
+      render: 'Faithful volumetric-lit 2D feature frame.',
+      key: 'SPA volumetric 2D; lantern light; snow',
+      avoid: ['a huge bearded toymaker with a sleigh', 'a spoiled postman in a red uniform'],
+      briefs: [
+        'Grumpy lighthouse keeper carries a lantern across a frozen fjord at night, the hand-drawn 2D figure glowing warmly as if lit by real volumetric light. No readable text or logo.',
+        'Snowed-in Nordic schoolhouse where a shy troll child peers through a frosted window at the warm amber lessons inside. No readable text or logo.',
+        'Two feuding village bakers accidentally share a sleigh in a blue snowstorm, their faces lit gold by the loaf of bread between them. No readable text or logo.',
+      ],
+    }),
+    cr('Craig McCracken - Flat Graphic Cartoon', 'TV animation still', [...T, 'mccracken'], {
+      look: 'Craig McCracken TV animation look of the late 1990s and 2000s: flat graphic UPA-inspired shapes, tiny limbs and huge eyes, thick outlines, mid-century modern backgrounds and punchy flat color.',
+      subject:
+        'reduce the subject to flat graphic shapes with tiny limbs, huge eyes and thick outlines.',
+      color: 'Punchy flat pink, lime and sky blue.',
+      light: 'Flat graphic cartoon color with no shading.',
+      texture: 'Clean flat digital-ink cartoon color.',
+      camera: 'Graphic TV staging with bold mid-century backgrounds.',
+      mood: 'punchy graphic sweetness',
+      render: 'Faithful late-nineties TV cartoon frame.',
+      key: 'McCracken flat graphic; huge eyes; mid-century',
+      avoid: [
+        'three small superhero girls in pink, blue and green',
+        'a chimp villain with a brain helmet',
+        'a white blob-shaped imaginary friend',
+      ],
+      briefs: [
+        'Tiny-limbed grandmother with enormous eyes defends her mid-century suburb from a giant blender robot, flying on a vacuum cleaner in a punchy lime sky. No readable text or logo.',
+        'Flat graphic house of imaginary creatures where a square librarian ghost and a triangular dog argue about who ate the sofa. No readable text or logo.',
+        'Kindergarten class of flat round children stares in silence as their goldfish grows to the size of the school building. No readable text or logo.',
+      ],
+    }),
+    cr('Bill Plympton - Pencil Morph Shorts', 'animated short still', [...T, 'plympton'], {
+      look: 'Bill Plympton animation look of the 1980s to 2010s: every frame drawn in colored pencil, grotesque surreal body morphs, faces stretching and folding, deadpan violent gags and jittery hand-drawn boil.',
+      subject:
+        'draw the subject in colored pencil and let its body morph grotesquely and surreally.',
+      color: 'Colored pencil hatching in warm flesh, blue and mustard.',
+      light: 'Pencil-shaded light with visible hatching.',
+      texture: 'Colored pencil on paper with jittery line boil.',
+      camera: 'Close-ups that morph from one form to another.',
+      mood: 'grotesque deadpan absurdity',
+      render: 'Faithful colored-pencil animation frame.',
+      key: 'Plympton colored pencil; surreal body morphs',
+      briefs: [
+        'Businessman kisses his wife goodbye and their faces melt together into a single pencil-hatched knot, their briefcases still waving at each other. No readable text or logo.',
+        'Colored pencil diner where a man tries to eat spaghetti and it pulls his face out into a long rope that ties itself in a bow around the waitress. No readable text or logo.',
+        'Surreal pencil morph of a lonely dog whose ears grow into wings, his body into a biplane, flying over the town looking for his owner. No readable text or logo.',
+      ],
+    }),
+    cr('Pendleton Ward - Noodle Limb Candy World', 'TV animation still', [...T, 'pendleton-ward'], {
+      look: 'Pendleton Ward TV animation look of the 2010s: noodle arms without elbows, dot eyes, soft pastel candy-colored post-apocalyptic kingdoms, cute and weird creatures and gentle surreal melancholy.',
+      subject:
+        'draw the subject with noodle limbs, dot eyes and soft candy color in a sweetly weird post-apocalyptic world.',
+      color: 'Soft pastel candy pinks, mint and lavender.',
+      light: 'Flat soft pastel cartoon light.',
+      texture: 'Clean flat TV cartoon color with painted backgrounds.',
+      camera: 'Wide TV staging over soft painted kingdoms.',
+      mood: 'sweet surreal melancholy',
+      render: 'Faithful 2010s TV cartoon frame.',
+      key: 'Pendleton Ward noodle limbs; dot eyes; candy apocalypse',
+      avoid: [
+        'a boy in a white bear hat with a stretchy yellow dog',
+        'a pink bubblegum princess',
+        'a vampire girl with an axe bass',
+      ],
+      briefs: [
+        'Noodle-armed knight made of lasagna and a small cloud with dot eyes walk across a mint meadow full of half-buried rusted tanks sprouting flowers. No readable text or logo.',
+        'Candy-colored kingdom of sentient teacups throws a birthday party for an old sleeping tank, balloons tied to its barrel. No readable text or logo.',
+        'Lavender dusk where a lonely wizard with noodle limbs sings to a glowing mushroom that sings back off-key. No readable text or logo.',
+      ],
+    }),
+    cr('Rebecca Sugar - Soft Pastel Gem Worlds', 'TV animation still', [...T, 'rebecca-sugar'], {
+      look: 'Rebecca Sugar TV animation look of the 2010s: soft rounded character shapes, pastel gouache-painted backgrounds inspired by anime and Impressionism, beach towns, luminous alien architecture and tender emotional staging.',
+      subject:
+        'draw the subject in soft rounded shapes against pastel gouache-painted seaside backgrounds.',
+      color: 'Soft pastel pinks, sea teal and warm sunset gold.',
+      light: 'Soft gouache sunlight and gentle glowing effects.',
+      texture: 'Flat character color over gouache-painted backgrounds.',
+      camera: 'Tender TV framing with painted wide backgrounds.',
+      mood: 'tender luminous hope',
+      render: 'Faithful 2010s pastel TV cartoon frame.',
+      key: 'Rebecca Sugar pastel gouache; soft round shapes',
+      avoid: [
+        'a boy with a star on his shirt and a pink gem',
+        'a tall purple woman with a whip',
+        'a pink lion',
+      ],
+      briefs: [
+        'Round-faced girl with a jellyfish umbrella sits on a pastel boardwalk as a luminous crystal temple rises gently out of the sea behind the fried-clam stand. No readable text or logo.',
+        'Gouache sunset over a beach town where two retired aliens in sundresses learn to fish from an old lifeguard. No readable text or logo.',
+        'Soft pastel greenhouse inside a floating seashell, a sleepy boy watering glowing crystals that hum lullabies. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Jan Švankmajer - Surreal Object Stop-Motion',
+      'stop-motion animation still',
+      [...T, 'svankmajer'],
+      {
+        look: 'Jan Švankmajer stop-motion look of the 1960s to 2000s: Czech surrealist animation of real objects, raw meat, clay faces devouring each other, antique dolls, taxidermy and tactile, unsettling pixilation.',
+        subject:
+          'animate the subject as unsettling real objects, clay, meat and taxidermy in surreal stop-motion.',
+        color: 'Dusty antique browns, raw meat red and faded doll pastels.',
+        light: 'Dim cabinet-of-curiosities light.',
+        texture: 'Real objects, clay, raw meat and taxidermy in close-up.',
+        camera: 'Extreme tactile close-ups and jerky pixilation.',
+        mood: 'unsettling tactile surrealism',
+        render: 'Faithful Czech surrealist stop-motion frame.',
+        key: 'Švankmajer object animation; clay; taxidermy',
+        avoid: ['a girl in a blue dress following a stuffed rabbit'],
+        briefs: [
+          'Clay heads made of kitchen utensils, fruit and books devour and regurgitate each other on an antique table, each new face stranger than the last. No readable text or logo.',
+          'Taxidermy hare in a waistcoat opens a drawer full of sawdust and crawls inside, pixilated in jerky stop-motion as the dresser breathes. No readable text or logo.',
+          'Raw steak slowly waltzes with a pair of dentures on a dusty dance floor of old Prague tiles, a porcelain doll watching. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Yuri Norstein - Multiplane Cutout Fog', 'animated short still', [...T, 'norstein'], {
+      look: 'Yuri Norstein animation look of the 1970s: layered multiplane cutouts on glass, soft fog made of translucent layers, delicate Russian folk tale animals, hushed night forests and painterly depth.',
+      subject:
+        'build the subject from delicate cutout layers on glass wrapped in soft translucent fog.',
+      color: 'Soft misty greys, milky blues and warm lamp amber.',
+      light: 'Diffuse fog glow through glass layers.',
+      texture: 'Cutout paper and celluloid on stacked glass with fog layers.',
+      camera: 'Multiplane depth with foreground layers drifting in fog.',
+      mood: 'hushed dreamlike loneliness',
+      render: 'Faithful Norstein multiplane cutout frame.',
+      key: 'Norstein multiplane cutout; translucent fog',
+      avoid: ['a small hedgehog carrying a bundle in the fog'],
+      briefs: [
+        'Small badger carries a jar of fireflies into a milky fog, a white horse appearing and dissolving between translucent layers of birch trees. No readable text or logo.',
+        'Layered night by a river where an old wolf sits beside a baby in a cradle under a single amber lamp, fog drifting between glass planes. No readable text or logo.',
+        'Cutout owl with enormous eyes watches a paper moon descend into mist over a village of layered wooden huts. No readable text or logo.',
+      ],
+    }),
+    cr('René Laloux - Surreal Cutout Planet', 'feature animation still', [...T, 'laloux'], {
+      look: 'René Laloux animation look of the 1970s and 1980s: cutout animation after Roland Topor and Moebius designs, surreal alien planets, giant blue beings, strange flora, flat engraved textures and eerie calm.',
+      subject:
+        'draw the subject as a flat engraved cutout on a surreal alien planet with giant beings and strange flora.',
+      color: 'Pale blues, rust red and sickly alien greens.',
+      light: 'Flat engraved lighting with hatched shading.',
+      texture: 'Cutout paper with pen hatching and flat color.',
+      camera: 'Flat wide tableaux of alien landscapes.',
+      mood: 'eerie surreal calm',
+      render: 'Faithful seventies cutout feature frame.',
+      key: 'Laloux surreal cutout; engraved alien planets',
+      avoid: ['giant blue humanoids with red eyes holding tiny humans'],
+      briefs: [
+        'Tiny tribe of humans in leaf cloaks crosses a pale blue desert where giant crystal flowers bloom and shatter at every footstep. No readable text or logo.',
+        'Surreal hatched cutout of an alien meditation ritual where huge floating heads join bodies made of drifting shapes above a rust-red sea. No readable text or logo.',
+        'Engraved alien jungle where a bird with a trumpet beak swallows a man whole and whistles out a tiny cloud. No readable text or logo.',
+      ],
+    }),
+    cr('Lotte Reiniger - Silhouette Cutout Animation', 'animated film still', [...T, 'reiniger'], {
+      look: 'Lotte Reiniger silhouette animation look of the 1920s to 1950s: intricate black paper cutout silhouettes with lacework detail, jointed puppets against tinted backlit backgrounds and fairy tale drama.',
+      subject:
+        'cut the subject as an intricate jointed black paper silhouette against a tinted backlit background.',
+      color: 'Pure black silhouettes against amber, teal or rose tinted light.',
+      light: 'Backlit tinted glass behind cut paper.',
+      texture: 'Cut black paper lacework with jointed limbs.',
+      camera: 'Flat side-on theatrical silhouette staging.',
+      mood: 'delicate fairy tale enchantment',
+      render: 'Faithful silhouette animation frame.',
+      key: 'Reiniger black cutout silhouettes; tinted backlight',
+      briefs: [
+        'Intricate black silhouette of a genie emerging from a teapot spout as a whirl of lacework smoke, a princess recoiling against an amber backlight. No readable text or logo.',
+        'Silhouette sea serpent coils around a lacework sailing ship under a teal sky, every rope and scale cut from black paper. No readable text or logo.',
+        'Cut paper forest of delicate branches where a fox in a ruffled collar courts a crane against a rose-tinted dawn. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Norman McLaren - Drawn-on-Film Abstraction',
+      'experimental animation still',
+      [...T, 'mclaren'],
+      {
+        look: 'Norman McLaren experimental animation look of the 1940s to 1970s: images scratched and painted directly onto film stock, dancing abstract shapes, pixilation, optical rhythms and visual music.',
+        subject:
+          'scratch and paint the subject directly onto film stock as dancing abstract rhythms.',
+        color: 'Hand-painted film dyes in vivid red, blue and yellow on black leader.',
+        light: 'Projector light through scratched and painted film.',
+        texture: 'Scratched emulsion, painted film dyes and sprocket holes.',
+        camera: 'Film strip frames with abstract rhythmic shapes.',
+        mood: 'playful rhythmic abstraction',
+        render: 'Faithful hand-made experimental film frames.',
+        key: 'McLaren drawn-on-film; scratched emulsion; visual music',
+        briefs: [
+          'Scratched white lines on black film leader dance as a pair of abstract birds, their wings flickering between frames beside visible sprocket holes. No readable text or logo.',
+          'Painted dye blots of red and blue bounce across a strip of 35mm film in rhythm with an unseen drum, each frame a slightly different splash. No readable text or logo.',
+          'Pixilated neighbors fighting over a single flower appear scratched into the emulsion of an old film reel. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Bob Sabiston - Rotoshop Dream Animation', 'feature animation still', [...T, 'sabiston'], {
+      look: 'Bob Sabiston Rotoshop look of the 2000s: interpolated digital rotoscoping over live footage, wobbling floating contour lines, shifting color fields, philosophical conversations and dreamlike instability.',
+      subject:
+        'trace the subject with wobbling interpolated contour lines and shifting color fields over live footage.',
+      color: 'Shifting fields of saturated pastel and warm skin tones.',
+      light: 'Real footage light translated into floating flat color.',
+      texture: 'Wobbling digital vector line over live action.',
+      camera: 'Handheld documentary framing traced into animation.',
+      mood: 'dreamy philosophical drift',
+      render: 'Faithful Rotoshop animated frame.',
+      key: 'Sabiston Rotoshop; wobbling lines; dreamlike drift',
+      briefs: [
+        'Two strangers debate free will in a diner booth while their outlines wobble and their coffee floats slowly upward in shifting pastel color. No readable text or logo.',
+        'Wobbling contour lines trace a jazz bassist on a rooftop at sunset whose shadow keeps playing a different song. No readable text or logo.',
+        'Handheld Rotoshop shot of a girl on a bus realizing the window reflects a different city. No readable text or logo.',
+      ],
+    }),
+  ],
+};
+
+export default spec;

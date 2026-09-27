@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP26-158
+packId: pack_26
+name: Richard Corben - Airbrushed Bulbous Fantasy
+styleAnchors:
+  - Richard Corben - Airbrushed Bulbous Fantasy
+  - painted comic page
+  - Corben airbrushed volume
+displayName: Richard Corben - Airbrushed Bulbous Fantasy
+category: 8. Comic Artists - Pages & Panels
+domain: painted comic page
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - corben
+  - reference-title
+visualDna:
+  aesthetic: 'Richard Corben page look of the 1970s to 1990s: airbrushed volumetric color, bulbous muscular figures, grotesque monsters, glowing sci-fi fantasy wastelands and heavy-metal sensuality.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; model the subject in airbrushed volumetric color as bulbous grotesque sci-fi fantasy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated airbrushed sunset orange, violet and toxic green.
+  lighting_and_shadow: Glowing airbrushed rim light with deep sculpted shadows.
+  texture_and_material: Airbrush and painted overlay on board, with the surface finish of Richard Corben.
+  camera_and_composition: Low-angle monumental panels of massive figures, framed the way Richard Corben composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with grotesque lurid wonder.
+  rendering_and_quality: Faithful Corben airbrushed comic art, in the recognizable hand of Richard Corben.
+  creative_brief: 'Richard Corben page look of the 1970s to 1990s: airbrushed volumetric color, bulbous muscular figures, grotesque monsters, glowing sci-fi fantasy wastelands and heavy-metal sensuality. Carry it through Corben airbrushed volume, bulbous grotesque. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Corben airbrushed volume; bulbous grotesque
+avoidRules:
+  - a bald muscular hero with a loincloth riding a giant rat
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a bald muscular hero with a loincloth riding a giant rat, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: painted comic page
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - corben
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

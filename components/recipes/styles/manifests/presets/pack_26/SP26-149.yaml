@@ -1,0 +1,80 @@
+schemaVersion: 1
+id: SP26-149
+packId: pack_26
+name: Hergé - Ligne Claire Adventure Page
+styleAnchors:
+  - Hergé - Ligne Claire Adventure Page
+  - European album page
+  - Hergé ligne claire
+displayName: Hergé - Ligne Claire Adventure Page
+category: 8. Comic Artists - Pages & Panels
+domain: European album page
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - herge
+  - ligne-claire
+  - reference-title
+visualDna:
+  aesthetic: 'Hergé ligne claire look of the 1940s to 1970s: uniform clean contour line, no hatching, flat even color, meticulously researched cars, planes and cities, and readable left-to-right action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in uniform clear line and flat color inside a meticulously researched real setting. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat even album color with clear blue skies and no gradients.
+  lighting_and_shadow: Even daylight with almost no cast shadows, lit the way Hergé lights its scenes.
+  texture_and_material: Printed European album page on smooth heavy paper with crisp ink.
+  camera_and_composition: Four tiers of clear, evenly spaced adventure panels.
+  atmosphere_and_mood: Keep the requested mood with clear adventurous curiosity.
+  rendering_and_quality: Faithful ligne claire album page, in the recognizable hand of Hergé.
+  creative_brief: 'Hergé ligne claire look of the 1940s to 1970s: uniform clean contour line, no hatching, flat even color, meticulously researched cars, planes and cities, and readable left-to-right action. Carry it through Hergé ligne claire, uniform line, flat color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hergé ligne claire; uniform line; flat color
+avoidRules:
+  - a young reporter with a blond quiff and plus-fours
+  - a white fox terrier
+  - a bearded sea captain in a navy sweater
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a young reporter with a blond quiff and plus-fours, a white fox terrier, a bearded sea captain in a navy sweater, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: European album page
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - herge
+    - ligne-claire
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP26-159
+packId: pack_26
+name: Simon Bisley - Heavy Metal Painted Brawl
+styleAnchors:
+  - Simon Bisley - Heavy Metal Painted Brawl
+  - painted comic page
+  - Bisley ferocious paint
+displayName: Simon Bisley - Heavy Metal Painted Brawl
+category: 8. Comic Artists - Pages & Panels
+domain: painted comic page
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - bisley
+  - reference-title
+visualDna:
+  aesthetic: 'Simon Bisley page look of the late 1980s and 1990s: loose ferocious painted brushwork, hyper-muscular brawlers, spattered paint, heavy-metal attitude and grotesque comic excess.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as a ferocious hyper-muscular brawl with spattered loose brushwork. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hot reds, rusty oranges and dirty greens with black spatter.
+  lighting_and_shadow: Harsh theatrical rim light and fire glow, lit the way Simon Bisley lights its scenes.
+  texture_and_material: Loose acrylic and ink with paint spatter on board.
+  camera_and_composition: Explosive low-angle brawl panels bursting their borders, framed the way Simon Bisley composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ferocious gleeful excess.
+  rendering_and_quality: Faithful Bisley painted comic art, in the recognizable hand of Simon Bisley.
+  creative_brief: 'Simon Bisley page look of the late 1980s and 1990s: loose ferocious painted brushwork, hyper-muscular brawlers, spattered paint, heavy-metal attitude and grotesque comic excess. Carry it through Bisley ferocious paint, hyper-muscular excess. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Bisley ferocious paint; hyper-muscular excess
+avoidRules:
+  - a horned biker with pale skin and a hook chain
+  - a black-hooded skull biker
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a horned biker with pale skin and a hook chain, a black-hooded skull biker, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: painted comic page
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - bisley
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

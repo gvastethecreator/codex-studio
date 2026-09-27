@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP26-178
+packId: pack_26
+name: Bill Plympton - Pencil Morph Shorts
+styleAnchors:
+  - Bill Plympton - Pencil Morph Shorts
+  - animated short still
+  - Plympton colored pencil
+displayName: Bill Plympton - Pencil Morph Shorts
+category: 9. Western Animation - Studios & Directors
+domain: animated short still
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - western-animation-studios-directors
+  - western-animation
+  - animation-still
+  - plympton
+  - reference-title
+visualDna:
+  aesthetic: 'Bill Plympton animation look of the 1980s to 2010s: every frame drawn in colored pencil, grotesque surreal body morphs, faces stretching and folding, deadpan violent gags and jittery hand-drawn boil.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in colored pencil and let its body morph grotesquely and surreally. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Colored pencil hatching in warm flesh, blue and mustard.
+  lighting_and_shadow: Pencil-shaded light with visible hatching, lit the way Bill Plympton lights its scenes.
+  texture_and_material: Colored pencil on paper with jittery line boil.
+  camera_and_composition: Close-ups that morph from one form to another.
+  atmosphere_and_mood: Keep the requested mood with grotesque deadpan absurdity.
+  rendering_and_quality: Faithful colored-pencil animation frame, in the recognizable hand of Bill Plympton.
+  creative_brief: 'Bill Plympton animation look of the 1980s to 2010s: every frame drawn in colored pencil, grotesque surreal body morphs, faces stretching and folding, deadpan violent gags and jittery hand-drawn boil. Carry it through Plympton colored pencil, surreal body morphs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Plympton colored pencil; surreal body morphs
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: western-animation-studios-directors
+  categoryName: 9. Western Animation - Studios & Directors
+  domain: animated short still
+  tags:
+    - curation-v2
+    - western-animation-studios-directors
+    - western-animation
+    - animation-still
+    - plympton
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

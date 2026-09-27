@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP26-152
+packId: pack_26
+name: Steve Ditko - Mystic Dimension Panels
+styleAnchors:
+  - Steve Ditko - Mystic Dimension Panels
+  - comic page
+  - Ditko mystic dimensions
+displayName: Steve Ditko - Mystic Dimension Panels
+category: 8. Comic Artists - Pages & Panels
+domain: comic page
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-artists-pages-panels
+  - comic-artist
+  - comic-page
+  - ditko
+  - reference-title
+visualDna:
+  aesthetic: 'Steve Ditko page look of the 1960s: stiff expressive hands, gaunt figures, floating geometric dimensions of doorways, bubbles and spirals, and tight nine-panel grids erupting into cosmic splash.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; send the subject into floating geometric dimensions of doorways, bubbles and swirling voids. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sixties flat four-color printing in purple, green and orange.
+  lighting_and_shadow: Flat printed color with glowing mystic outlines, lit the way Steve Ditko lights its scenes.
+  texture_and_material: Printed comic page on off-white paper with slight ink spread and paper tooth.
+  camera_and_composition: Tight panel grid that bursts into a dimensional splash.
+  atmosphere_and_mood: Keep the requested mood with eerie cosmic strangeness.
+  rendering_and_quality: Faithful sixties Ditko comic art, in the recognizable hand of Steve Ditko.
+  creative_brief: 'Steve Ditko page look of the 1960s: stiff expressive hands, gaunt figures, floating geometric dimensions of doorways, bubbles and spirals, and tight nine-panel grids erupting into cosmic splash. Carry it through Ditko mystic dimensions, stiff expressive hands. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Ditko mystic dimensions; stiff expressive hands
+avoidRules:
+  - a sorcerer in a red cloak with a high collar
+  - a spider-themed masked hero
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a sorcerer in a red cloak with a high collar, a spider-themed masked hero, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-artists-pages-panels
+  categoryName: 8. Comic Artists - Pages & Panels
+  domain: comic page
+  tags:
+    - curation-v2
+    - comic-artists-pages-panels
+    - comic-artist
+    - comic-page
+    - ditko
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

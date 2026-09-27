@@ -77,7 +77,7 @@ const spec: Spec = {
     ga('SP12-033', 'Plants vs Zombies 2009 - PopCap Cartoon Lawn', {
       look: 'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left.',
       subject:
-        'render every subject as a goofy cartoon plant or shambling cartoon enemy with big eyes.',
+        'render every subject as an original goofy cartoon vegetable fighter or shambling cartoon enemy with big eyes.',
       color: 'Lawn green, sunny yellow and dusk purple.',
       light: 'Bright cartoon daylight or moonlight.',
       texture: 'Flat cartoon vectors with soft shading.',
@@ -85,7 +85,12 @@ const spec: Spec = {
       mood: 'goofy spooky fun',
       render: 'Authentic casual cartoon defense screen.',
       key: 'PvZ lawn grid; goofy plants; cartoon defense',
-      avoid: ['a green pea-shooting plant', 'existing zombie designs'],
+      avoid: [
+        'a green pea-shooting plant',
+        'a smiling sunflower that makes sun',
+        'a brown walnut-shaped wall plant with eyes',
+        'zombies in brown suits and red ties',
+      ],
     }),
     ga('SP12-042', 'Control 2019 - Remedy Brutalist Bureau', {
       look: 'Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris.',
@@ -128,12 +133,13 @@ const spec: Spec = {
         'render people and creatures as angular low-poly Saturn-era figures with Moebius costume lines and biomechanical shapes.',
       color: 'Canyon gold, ruin teal and hazy sky.',
       light: 'Hazy Saturn-era light and glowing lock-ons.',
-      texture: 'Low-poly Saturn textures with dithering.',
+      texture:
+        'Visibly faceted low-poly models, warped dithered textures and fog-limited draw distance at low resolution.',
       camera: 'On-rails flight view from behind and above the subject, with lock-on reticles.',
       mood: 'ancient mythic flight',
-      render: 'Authentic Sega Saturn rail shooter screen.',
+      render: 'Authentic 1995 Sega Saturn rail shooter screen, not a painted illustration.',
       key: 'Panzer Dragoon rails; low-poly Saturn; Moebius ruins',
-      avoid: ['a blue armored dragon with a lone rider'],
+      avoid: ['a blue armored dragon with a lone rider', 'painterly concept art'],
     }),
     ga('SP12-119', 'Titanfall 2 2016 - Respawn Titan Cockpit', {
       look: 'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities.',

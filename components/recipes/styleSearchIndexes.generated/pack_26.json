@@ -3,7 +3,7 @@
     {
       "id": "pack_26",
       "name": "Covers, Posters & Characters",
-      "presetCount": 146
+      "presetCount": 186
     }
   ],
   "presets": [
@@ -2762,7 +2762,847 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp26-146 hyperpop 2020 - glossy y2k chaos cover album cover design hyperpop y2k chrome 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-147",
+      "name": "Winsor McCay - Art Nouveau Dream Strip",
+      "styleAnchors": [
+        "Winsor McCay - Art Nouveau Dream Strip",
+        "newspaper comic page",
+        "McCay Art Nouveau dream page"
+      ],
+      "ref": "pack_26/SP26-147.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "newspaper comic page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "newspaper-comic-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-147 winsor mccay - art nouveau dream strip newspaper comic page mccay art nouveau dream page 8. comic artists - pages & panels comic artists: pages & panels newspaper comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels newspaper-comic-page"
+    },
+    {
+      "id": "SP26-148",
+      "name": "George Herriman - Coconino Desert Strip",
+      "styleAnchors": [
+        "George Herriman - Coconino Desert Strip",
+        "newspaper comic strip",
+        "Herriman scratchy desert strip"
+      ],
+      "ref": "pack_26/SP26-148.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "newspaper comic strip",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "newspaper-comic-strip"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-148 george herriman - coconino desert strip newspaper comic strip herriman scratchy desert strip 8. comic artists - pages & panels comic artists: pages & panels newspaper comic strip pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels newspaper-comic-strip"
+    },
+    {
+      "id": "SP26-149",
+      "name": "Hergé - Ligne Claire Adventure Page",
+      "styleAnchors": [
+        "Hergé - Ligne Claire Adventure Page",
+        "European album page",
+        "Hergé ligne claire"
+      ],
+      "ref": "pack_26/SP26-149.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "European album page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "european-album-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-149 hergé - ligne claire adventure page european album page hergé ligne claire 8. comic artists - pages & panels comic artists: pages & panels european album page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels european-album-page"
+    },
+    {
+      "id": "SP26-150",
+      "name": "Will Eisner - Splash Page Weather",
+      "styleAnchors": [
+        "Will Eisner - Splash Page Weather",
+        "comic splash page",
+        "Eisner splash page"
+      ],
+      "ref": "pack_26/SP26-150.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic splash page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "comic-splash-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-150 will eisner - splash page weather comic splash page eisner splash page 8. comic artists - pages & panels comic artists: pages & panels comic splash page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-splash-page"
+    },
+    {
+      "id": "SP26-151",
+      "name": "Alex Toth - Economical Spotted Black",
+      "styleAnchors": [
+        "Alex Toth - Economical Spotted Black",
+        "comic page",
+        "Toth economy of line"
+      ],
+      "ref": "pack_26/SP26-151.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-151 alex toth - economical spotted black comic page toth economy of line 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-152",
+      "name": "Steve Ditko - Mystic Dimension Panels",
+      "styleAnchors": [
+        "Steve Ditko - Mystic Dimension Panels",
+        "comic page",
+        "Ditko mystic dimensions"
+      ],
+      "ref": "pack_26/SP26-152.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-152 steve ditko - mystic dimension panels comic page ditko mystic dimensions 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-153",
+      "name": "Hugo Pratt - Watercolor Ink Sea Adventure",
+      "styleAnchors": [
+        "Hugo Pratt - Watercolor Ink Sea Adventure",
+        "European album page",
+        "Pratt loose brush ink"
+      ],
+      "ref": "pack_26/SP26-153.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "European album page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "european-album-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-153 hugo pratt - watercolor ink sea adventure european album page pratt loose brush ink 8. comic artists - pages & panels comic artists: pages & panels european album page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels european-album-page"
+    },
+    {
+      "id": "SP26-154",
+      "name": "Sergio Toppi - Hatched Mosaic Page",
+      "styleAnchors": [
+        "Sergio Toppi - Hatched Mosaic Page",
+        "comic page",
+        "Toppi decorative hatching"
+      ],
+      "ref": "pack_26/SP26-154.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-154 sergio toppi - hatched mosaic page comic page toppi decorative hatching 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-155",
+      "name": "Alberto Breccia - Monotype Horror Texture",
+      "styleAnchors": [
+        "Alberto Breccia - Monotype Horror Texture",
+        "comic page",
+        "Breccia monotype horror"
+      ],
+      "ref": "pack_26/SP26-155.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-155 alberto breccia - monotype horror texture comic page breccia monotype horror 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-156",
+      "name": "Jacques Tardi - Trench Grey Ligne",
+      "styleAnchors": [
+        "Jacques Tardi - Trench Grey Ligne",
+        "European album page",
+        "Tardi grey ligne"
+      ],
+      "ref": "pack_26/SP26-156.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "European album page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "european-album-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-156 jacques tardi - trench grey ligne european album page tardi grey ligne 8. comic artists - pages & panels comic artists: pages & panels european album page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels european-album-page"
+    },
+    {
+      "id": "SP26-157",
+      "name": "Enki Bilal - Painted Grey-Blue Dystopia",
+      "styleAnchors": [
+        "Enki Bilal - Painted Grey-Blue Dystopia",
+        "painted comic page",
+        "Bilal grey-blue painted dystopia"
+      ],
+      "ref": "pack_26/SP26-157.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "painted comic page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "painted-comic-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-157 enki bilal - painted grey-blue dystopia painted comic page bilal grey-blue painted dystopia 8. comic artists - pages & panels comic artists: pages & panels painted comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels painted-comic-page"
+    },
+    {
+      "id": "SP26-158",
+      "name": "Richard Corben - Airbrushed Bulbous Fantasy",
+      "styleAnchors": [
+        "Richard Corben - Airbrushed Bulbous Fantasy",
+        "painted comic page",
+        "Corben airbrushed volume"
+      ],
+      "ref": "pack_26/SP26-158.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "painted comic page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "painted-comic-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-158 richard corben - airbrushed bulbous fantasy painted comic page corben airbrushed volume 8. comic artists - pages & panels comic artists: pages & panels painted comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels painted-comic-page"
+    },
+    {
+      "id": "SP26-159",
+      "name": "Simon Bisley - Heavy Metal Painted Brawl",
+      "styleAnchors": [
+        "Simon Bisley - Heavy Metal Painted Brawl",
+        "painted comic page",
+        "Bisley ferocious paint"
+      ],
+      "ref": "pack_26/SP26-159.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "painted comic page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "painted-comic-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-159 simon bisley - heavy metal painted brawl painted comic page bisley ferocious paint 8. comic artists - pages & panels comic artists: pages & panels painted comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels painted-comic-page"
+    },
+    {
+      "id": "SP26-160",
+      "name": "Frank Quitely - Fine-Line Anatomical Panels",
+      "styleAnchors": [
+        "Frank Quitely - Fine-Line Anatomical Panels",
+        "comic page",
+        "Quitely fine line"
+      ],
+      "ref": "pack_26/SP26-160.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-160 frank quitely - fine-line anatomical panels comic page quitely fine line 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-161",
+      "name": "David Mazzucchelli - Reduced Line Noir",
+      "styleAnchors": [
+        "David Mazzucchelli - Reduced Line Noir",
+        "comic page",
+        "Mazzucchelli reduced line"
+      ],
+      "ref": "pack_26/SP26-161.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-161 david mazzucchelli - reduced line noir comic page mazzucchelli reduced line 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-162",
+      "name": "Jaime Hernandez - Brushwork Punk Barrio",
+      "styleAnchors": [
+        "Jaime Hernandez - Brushwork Punk Barrio",
+        "comic page",
+        "Jaime Hernandez elegant brush"
+      ],
+      "ref": "pack_26/SP26-162.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-162 jaime hernandez - brushwork punk barrio comic page jaime hernandez elegant brush 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-163",
+      "name": "Charles Burns - Waxy Black Brush Horror",
+      "styleAnchors": [
+        "Charles Burns - Waxy Black Brush Horror",
+        "comic page",
+        "Burns waxy black brush"
+      ],
+      "ref": "pack_26/SP26-163.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-163 charles burns - waxy black brush horror comic page burns waxy black brush 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-164",
+      "name": "Daniel Clowes - Deadpan Flat Color Suburbia",
+      "styleAnchors": [
+        "Daniel Clowes - Deadpan Flat Color Suburbia",
+        "comic page",
+        "Clowes deadpan misfits"
+      ],
+      "ref": "pack_26/SP26-164.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-164 daniel clowes - deadpan flat color suburbia comic page clowes deadpan misfits 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-165",
+      "name": "Joe Sacco - Crowded Reportage Comics",
+      "styleAnchors": [
+        "Joe Sacco - Crowded Reportage Comics",
+        "comics journalism page",
+        "Sacco comics journalism"
+      ],
+      "ref": "pack_26/SP26-165.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comics journalism page",
+      "tags": [
+        "covers-posters-and-characters",
+        "comic-artists-pages-and-panels",
+        "comics-journalism-page"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-165 joe sacco - crowded reportage comics comics journalism page sacco comics journalism 8. comic artists - pages & panels comic artists: pages & panels comics journalism page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comics-journalism-page"
+    },
+    {
+      "id": "SP26-166",
+      "name": "Jeff Smith - Cartoon Epic Brushline",
+      "styleAnchors": [
+        "Jeff Smith - Cartoon Epic Brushline",
+        "comic page",
+        "Jeff Smith cartoon figures in epic fantasy"
+      ],
+      "ref": "pack_26/SP26-166.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-artists-pages-and-panels",
+      "categoryName": "8. Comic Artists - Pages & Panels",
+      "domain": "comic page",
+      "tags": ["covers-posters-and-characters", "comic-artists-pages-and-panels", "comic-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-166 jeff smith - cartoon epic brushline comic page jeff smith cartoon figures in epic fantasy 8. comic artists - pages & panels comic artists: pages & panels comic page pack_26 covers, posters & characters comic-artists-pages-and-panels covers-posters-and-characters comic-artists-pages-and-panels comic-page"
+    },
+    {
+      "id": "SP26-167",
+      "name": "Don Bluth - Glowing Dark Feature Animation",
+      "styleAnchors": [
+        "Don Bluth - Glowing Dark Feature Animation",
+        "feature animation still",
+        "Bluth glowing effects"
+      ],
+      "ref": "pack_26/SP26-167.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-167 don bluth - glowing dark feature animation feature animation still bluth glowing effects 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-168",
+      "name": "Richard Williams - Escher Perspective Animation",
+      "styleAnchors": [
+        "Richard Williams - Escher Perspective Animation",
+        "feature animation still",
+        "Richard Williams Escher mazes"
+      ],
+      "ref": "pack_26/SP26-168.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-168 richard williams - escher perspective animation feature animation still richard williams escher mazes 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-169",
+      "name": "Ralph Bakshi - Rotoscoped Painted Grit",
+      "styleAnchors": [
+        "Ralph Bakshi - Rotoscoped Painted Grit",
+        "feature animation still",
+        "Bakshi rotoscope"
+      ],
+      "ref": "pack_26/SP26-169.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-169 ralph bakshi - rotoscoped painted grit feature animation still bakshi rotoscope 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-170",
+      "name": "Hanna-Barbera - Limited Animation Loop",
+      "styleAnchors": [
+        "Hanna-Barbera - Limited Animation Loop",
+        "TV animation still",
+        "Hanna-Barbera limited animation"
+      ],
+      "ref": "pack_26/SP26-170.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "TV animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "tv-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-170 hanna-barbera - limited animation loop tv animation still hanna-barbera limited animation 9. western animation - studios & directors western animation: studios & directors tv animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors tv-animation-still"
+    },
+    {
+      "id": "SP26-171",
+      "name": "Tex Avery - Wild Take Exaggeration",
+      "styleAnchors": [
+        "Tex Avery - Wild Take Exaggeration",
+        "cartoon animation still",
+        "Avery wild takes"
+      ],
+      "ref": "pack_26/SP26-171.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "cartoon animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "cartoon-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-171 tex avery - wild take exaggeration cartoon animation still avery wild takes 9. western animation - studios & directors western animation: studios & directors cartoon animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors cartoon-animation-still"
+    },
+    {
+      "id": "SP26-172",
+      "name": "Tomm Moore - Cartoon Saloon Celtic Animation",
+      "styleAnchors": [
+        "Tomm Moore - Cartoon Saloon Celtic Animation",
+        "feature animation still",
+        "Cartoon Saloon Celtic spirals"
+      ],
+      "ref": "pack_26/SP26-172.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-172 tomm moore - cartoon saloon celtic animation feature animation still cartoon saloon celtic spirals 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-173",
+      "name": "Sylvain Chomet - Melancholic Caricature Animation",
+      "styleAnchors": [
+        "Sylvain Chomet - Melancholic Caricature Animation",
+        "feature animation still",
+        "Chomet caricature bodies"
+      ],
+      "ref": "pack_26/SP26-173.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-173 sylvain chomet - melancholic caricature animation feature animation still chomet caricature bodies 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-174",
+      "name": "Aardman - Thumbprint Plasticine",
+      "styleAnchors": [
+        "Aardman - Thumbprint Plasticine",
+        "stop-motion animation still",
+        "Aardman plasticine"
+      ],
+      "ref": "pack_26/SP26-174.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "stop-motion animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "stop-motion-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-174 aardman - thumbprint plasticine stop-motion animation still aardman plasticine 9. western animation - studios & directors western animation: studios & directors stop-motion animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors stop-motion-animation-still"
+    },
+    {
+      "id": "SP26-175",
+      "name": "Fortiche - Painted 3D Animation",
+      "styleAnchors": [
+        "Fortiche - Painted 3D Animation",
+        "animated series still",
+        "Fortiche painted 3D"
+      ],
+      "ref": "pack_26/SP26-175.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "animated series still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "animated-series-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-175 fortiche - painted 3d animation animated series still fortiche painted 3d 9. western animation - studios & directors western animation: studios & directors animated series still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors animated-series-still"
+    },
+    {
+      "id": "SP26-176",
+      "name": "SPA Studios - Volumetric Lit 2D",
+      "styleAnchors": [
+        "SPA Studios - Volumetric Lit 2D",
+        "feature animation still",
+        "SPA volumetric 2D"
+      ],
+      "ref": "pack_26/SP26-176.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-176 spa studios - volumetric lit 2d feature animation still spa volumetric 2d 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-177",
+      "name": "Craig McCracken - Flat Graphic Cartoon",
+      "styleAnchors": [
+        "Craig McCracken - Flat Graphic Cartoon",
+        "TV animation still",
+        "McCracken flat graphic"
+      ],
+      "ref": "pack_26/SP26-177.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "TV animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "tv-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-177 craig mccracken - flat graphic cartoon tv animation still mccracken flat graphic 9. western animation - studios & directors western animation: studios & directors tv animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors tv-animation-still"
+    },
+    {
+      "id": "SP26-178",
+      "name": "Bill Plympton - Pencil Morph Shorts",
+      "styleAnchors": [
+        "Bill Plympton - Pencil Morph Shorts",
+        "animated short still",
+        "Plympton colored pencil"
+      ],
+      "ref": "pack_26/SP26-178.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "animated short still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "animated-short-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-178 bill plympton - pencil morph shorts animated short still plympton colored pencil 9. western animation - studios & directors western animation: studios & directors animated short still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors animated-short-still"
+    },
+    {
+      "id": "SP26-179",
+      "name": "Pendleton Ward - Noodle Limb Candy World",
+      "styleAnchors": [
+        "Pendleton Ward - Noodle Limb Candy World",
+        "TV animation still",
+        "Pendleton Ward noodle limbs"
+      ],
+      "ref": "pack_26/SP26-179.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "TV animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "tv-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-179 pendleton ward - noodle limb candy world tv animation still pendleton ward noodle limbs 9. western animation - studios & directors western animation: studios & directors tv animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors tv-animation-still"
+    },
+    {
+      "id": "SP26-180",
+      "name": "Rebecca Sugar - Soft Pastel Gem Worlds",
+      "styleAnchors": [
+        "Rebecca Sugar - Soft Pastel Gem Worlds",
+        "TV animation still",
+        "Rebecca Sugar pastel gouache"
+      ],
+      "ref": "pack_26/SP26-180.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "TV animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "tv-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-180 rebecca sugar - soft pastel gem worlds tv animation still rebecca sugar pastel gouache 9. western animation - studios & directors western animation: studios & directors tv animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors tv-animation-still"
+    },
+    {
+      "id": "SP26-181",
+      "name": "Jan Švankmajer - Surreal Object Stop-Motion",
+      "styleAnchors": [
+        "Jan Švankmajer - Surreal Object Stop-Motion",
+        "stop-motion animation still",
+        "Švankmajer object animation"
+      ],
+      "ref": "pack_26/SP26-181.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "stop-motion animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "stop-motion-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-181 jan švankmajer - surreal object stop-motion stop-motion animation still švankmajer object animation 9. western animation - studios & directors western animation: studios & directors stop-motion animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors stop-motion-animation-still"
+    },
+    {
+      "id": "SP26-182",
+      "name": "Yuri Norstein - Multiplane Cutout Fog",
+      "styleAnchors": [
+        "Yuri Norstein - Multiplane Cutout Fog",
+        "animated short still",
+        "Norstein multiplane cutout"
+      ],
+      "ref": "pack_26/SP26-182.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "animated short still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "animated-short-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-182 yuri norstein - multiplane cutout fog animated short still norstein multiplane cutout 9. western animation - studios & directors western animation: studios & directors animated short still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors animated-short-still"
+    },
+    {
+      "id": "SP26-183",
+      "name": "René Laloux - Surreal Cutout Planet",
+      "styleAnchors": [
+        "René Laloux - Surreal Cutout Planet",
+        "feature animation still",
+        "Laloux surreal cutout"
+      ],
+      "ref": "pack_26/SP26-183.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-183 rené laloux - surreal cutout planet feature animation still laloux surreal cutout 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
+    },
+    {
+      "id": "SP26-184",
+      "name": "Lotte Reiniger - Silhouette Cutout Animation",
+      "styleAnchors": [
+        "Lotte Reiniger - Silhouette Cutout Animation",
+        "animated film still",
+        "Reiniger black cutout silhouettes"
+      ],
+      "ref": "pack_26/SP26-184.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "animated film still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "animated-film-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-184 lotte reiniger - silhouette cutout animation animated film still reiniger black cutout silhouettes 9. western animation - studios & directors western animation: studios & directors animated film still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors animated-film-still"
+    },
+    {
+      "id": "SP26-185",
+      "name": "Norman McLaren - Drawn-on-Film Abstraction",
+      "styleAnchors": [
+        "Norman McLaren - Drawn-on-Film Abstraction",
+        "experimental animation still",
+        "McLaren drawn-on-film"
+      ],
+      "ref": "pack_26/SP26-185.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "experimental animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "experimental-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-185 norman mclaren - drawn-on-film abstraction experimental animation still mclaren drawn-on-film 9. western animation - studios & directors western animation: studios & directors experimental animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors experimental-animation-still"
+    },
+    {
+      "id": "SP26-186",
+      "name": "Bob Sabiston - Rotoshop Dream Animation",
+      "styleAnchors": [
+        "Bob Sabiston - Rotoshop Dream Animation",
+        "feature animation still",
+        "Sabiston Rotoshop"
+      ],
+      "ref": "pack_26/SP26-186.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "western-animation-studios-and-directors",
+      "categoryName": "9. Western Animation - Studios & Directors",
+      "domain": "feature animation still",
+      "tags": [
+        "covers-posters-and-characters",
+        "western-animation-studios-and-directors",
+        "feature-animation-still"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-186 bob sabiston - rotoshop dream animation feature animation still sabiston rotoshop 9. western animation - studios & directors western animation: studios & directors feature animation still pack_26 covers, posters & characters western-animation-studios-and-directors covers-posters-and-characters western-animation-studios-and-directors feature-animation-still"
     }
   ],
-  "totalPresetCount": 146
+  "totalPresetCount": 186
 }
