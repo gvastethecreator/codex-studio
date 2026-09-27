@@ -260,7 +260,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Collectibles & Form Languages',
     cardDescription:
       'Premium statues, toys and miniatures, plus mecha and industrial design languages that restyle the form of any subject.',
-    presetCount: 40,
+    presetCount: 60,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

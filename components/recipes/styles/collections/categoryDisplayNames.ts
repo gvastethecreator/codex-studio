@@ -166,6 +166,7 @@ const CATEGORY_DISPLAY_NAMES: Readonly<Record<string, string>> = {
   'pack_27::13. Video Games 2020s': 'Video games 2020s',
   'pack_28::1. Premium Collectible Statues': 'Premium collectible statues',
   'pack_28::2. Toys & Miniatures': 'Toys & miniatures',
+  'pack_28::3. Mecha Design Languages': 'Mecha design languages',
   'pack_19::1. Ink Structures': 'Ink Structures',
   'pack_20::1. Print Registers': 'Print Registers',
   'pack_21::1. Paper & Pigment': 'Paper & Pigment',

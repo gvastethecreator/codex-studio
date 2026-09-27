@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP28-043
+packId: pack_28
+name: Evangelion - Organic Biomechanical Giant
+styleAnchors:
+  - Evangelion - Organic Biomechanical Giant
+  - mecha design language
+  - Organic mecha
+displayName: Evangelion - Organic Biomechanical Giant
+category: 3. Mecha Design Languages
+domain: mecha design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mecha-design-languages
+  - mecha-design-language
+  - form-language
+  - eva-organic
+  - reference-title
+visualDna:
+  aesthetic: 'Evangelion-inspired organic mecha language by Ikuto Yamashita: slender biomechanical giants with elongated limbs, armor over living flesh, restraint bolts, umbilical cables and unsettling posture.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a slender biomechanical giant with armor over living flesh and umbilical cables. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Unusual color schemes of purple, green, orange and flesh red.
+  lighting_and_shadow: Cold cage light and dramatic silhouette, lit the way Evangelion lights its scenes.
+  texture_and_material: Smooth armor plates over organic musculature, with the surface finish of Evangelion.
+  camera_and_composition: Low angle emphasizing elongated limbs, framed the way Evangelion composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with unsettling organic awe.
+  rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
+  creative_brief: 'Evangelion-inspired organic mecha language by Ikuto Yamashita: slender biomechanical giants with elongated limbs, armor over living flesh, restraint bolts, umbilical cables and unsettling posture. Carry it through Organic mecha, elongated limbs, armor over flesh, umbilical. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Organic mecha; elongated limbs; armor over flesh; umbilical
+avoidRules:
+  - Eva Unit-01 purple and green horned design
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: Eva Unit-01 purple and green horned design, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: mecha-design-languages
+  categoryName: 3. Mecha Design Languages
+  domain: mecha design language
+  tags:
+    - curation-v2
+    - mecha-design-languages
+    - mecha-design-language
+    - form-language
+    - eva-organic
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

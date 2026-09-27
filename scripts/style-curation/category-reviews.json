@@ -2938,5 +2938,20 @@
     "evidencePresetIds": ["SP28-021", "SP28-022", "SP28-023"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_28",
+    "category": "3. Mecha Design Languages",
+    "displayCategory": "Mecha design languages",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "7b182f4c1293040a3865c6b7605172f5c9bfd66b70edc964528434eac2093ac7",
+    "problem": "Mecha design languages must rebuild any requested subject (person, animal, vehicle, object or building) in a named designer or school's mechanical form language without reproducing licensed mechs.",
+    "preserve": "The requested subject stays recognizable as the source of the machine; the language sets proportion, construction, joints, surface and finish.",
+    "proposedAction": "New category of 20 mecha form languages: Okawara real robot, super robot, organic biomech, rigid modular, Kawamori variable, beast machines, Ma.K. kitbash, Różalski dieselpunk, Nagano ornamental, colossal shipyard giants, chibi SD, insectoid bio-armor, fifties tin robots, Shinkawa ink walkers, hard sci-fi exosuits, transforming cars, mecha kaiju, combiners, frontier titans and clockwork automatons.",
+    "validation": "Generate the card set; check each card turns an everyday source subject into a machine in that language without a licensed mech.",
+    "evidencePresetIds": ["SP28-041", "SP28-042", "SP28-043"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

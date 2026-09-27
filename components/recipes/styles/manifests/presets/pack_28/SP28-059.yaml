@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP28-059
+packId: pack_28
+name: Titanfall Frontier Titan - Utilitarian Heavy Frame
+styleAnchors:
+  - Titanfall Frontier Titan - Utilitarian Heavy Frame
+  - mecha design language
+  - Frontier titan
+displayName: Titanfall Frontier Titan - Utilitarian Heavy Frame
+category: 3. Mecha Design Languages
+domain: mecha design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mecha-design-languages
+  - mecha-design-language
+  - form-language
+  - frontier-titan
+  - reference-title
+visualDna:
+  aesthetic: 'Frontier titan language: utilitarian heavy combat frames with boxy torsos, cockpit hatches, bolted armor, rugged frontier wear and a single sensor eye.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a utilitarian heavy combat frame with a boxy torso and cockpit hatch. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Frontier khaki, gunmetal and faded stripes, true to the Titanfall Frontier Titan palette.
+  lighting_and_shadow: Dusty frontier daylight, lit the way Titanfall Frontier Titan lights its scenes.
+  texture_and_material: Bolted armor with dust and scratches, with the surface finish of Titanfall Frontier Titan.
+  camera_and_composition: Low three-quarter view, framed the way Titanfall Frontier Titan composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with rugged dependable power.
+  rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
+  creative_brief: 'Frontier titan language: utilitarian heavy combat frames with boxy torsos, cockpit hatches, bolted armor, rugged frontier wear and a single sensor eye. Carry it through Frontier titan, boxy torso, cockpit hatch, single eye. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Frontier titan; boxy torso; cockpit hatch; single eye
+avoidRules:
+  - existing Titanfall titans
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing Titanfall titans, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: mecha-design-languages
+  categoryName: 3. Mecha Design Languages
+  domain: mecha design language
+  tags:
+    - curation-v2
+    - mecha-design-languages
+    - mecha-design-language
+    - form-language
+    - frontier-titan
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

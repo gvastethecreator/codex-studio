@@ -3,7 +3,7 @@
     {
       "id": "pack_28",
       "name": "Collectibles & Form Languages",
-      "presetCount": 40
+      "presetCount": 60
     }
   ],
   "presets": [
@@ -770,7 +770,435 @@
       "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp28-040 kinetic articulated wooden mannequin - artist toy toy wooden mannequin 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-041",
+      "name": "Kunio Okawara - Real Robot Military Mecha",
+      "styleAnchors": [
+        "Kunio Okawara - Real Robot Military Mecha",
+        "mecha design language",
+        "Okawara real robot"
+      ],
+      "ref": "pack_28/SP28-041.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-041 kunio okawara - real robot military mecha mecha design language okawara real robot 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-042",
+      "name": "Go Nagai - Super Robot Heroic Mecha",
+      "styleAnchors": [
+        "Go Nagai - Super Robot Heroic Mecha",
+        "mecha design language",
+        "Super robot"
+      ],
+      "ref": "pack_28/SP28-042.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-042 go nagai - super robot heroic mecha mecha design language super robot 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-043",
+      "name": "Evangelion - Organic Biomechanical Giant",
+      "styleAnchors": [
+        "Evangelion - Organic Biomechanical Giant",
+        "mecha design language",
+        "Organic mecha"
+      ],
+      "ref": "pack_28/SP28-043.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-043 evangelion - organic biomechanical giant mecha design language organic mecha 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-044",
+      "name": "Armored Core - Rigid Industrial Modular Mecha",
+      "styleAnchors": [
+        "Armored Core - Rigid Industrial Modular Mecha",
+        "mecha design language",
+        "Rigid modular mecha"
+      ],
+      "ref": "pack_28/SP28-044.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-044 armored core - rigid industrial modular mecha mecha design language rigid modular mecha 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-045",
+      "name": "Shoji Kawamori - Transforming Variable Mecha",
+      "styleAnchors": [
+        "Shoji Kawamori - Transforming Variable Mecha",
+        "mecha design language",
+        "Kawamori variable mecha"
+      ],
+      "ref": "pack_28/SP28-045.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-045 shoji kawamori - transforming variable mecha mecha design language kawamori variable mecha 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-046",
+      "name": "Zoids - Beast Machine Mecha",
+      "styleAnchors": ["Zoids - Beast Machine Mecha", "mecha design language", "Beast machine"],
+      "ref": "pack_28/SP28-046.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-046 zoids - beast machine mecha mecha design language beast machine 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-047",
+      "name": "Maschinen Krieger - Kow Yokoyama Kitbash Armor",
+      "styleAnchors": [
+        "Maschinen Krieger - Kow Yokoyama Kitbash Armor",
+        "mecha design language",
+        "Ma.K. kitbash"
+      ],
+      "ref": "pack_28/SP28-047.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-047 maschinen krieger - kow yokoyama kitbash armor mecha design language ma.k. kitbash 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-048",
+      "name": "Jakub Rozalski - Dieselpunk Farm Walker",
+      "styleAnchors": [
+        "Jakub Rozalski - Dieselpunk Farm Walker",
+        "mecha design language",
+        "Różalski dieselpunk"
+      ],
+      "ref": "pack_28/SP28-048.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-048 jakub rozalski - dieselpunk farm walker mecha design language różalski dieselpunk 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-049",
+      "name": "Mamoru Nagano - Elegant Ornamental Mecha",
+      "styleAnchors": [
+        "Mamoru Nagano - Elegant Ornamental Mecha",
+        "mecha design language",
+        "Ornamental mecha"
+      ],
+      "ref": "pack_28/SP28-049.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-049 mamoru nagano - elegant ornamental mecha mecha design language ornamental mecha 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-050",
+      "name": "Pacific Rim Jaeger - Colossal Industrial Scale",
+      "styleAnchors": [
+        "Pacific Rim Jaeger - Colossal Industrial Scale",
+        "mecha design language",
+        "Jaeger scale"
+      ],
+      "ref": "pack_28/SP28-050.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-050 pacific rim jaeger - colossal industrial scale mecha design language jaeger scale 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-051",
+      "name": "SD Super Deformed - Chibi Mecha",
+      "styleAnchors": ["SD Super Deformed - Chibi Mecha", "mecha design language", "SD mecha"],
+      "ref": "pack_28/SP28-051.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-051 sd super deformed - chibi mecha mecha design language sd mecha 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-052",
+      "name": "Guyver Bio-Booster - Insectoid Organic Armor",
+      "styleAnchors": [
+        "Guyver Bio-Booster - Insectoid Organic Armor",
+        "mecha design language",
+        "Bio-booster chitin"
+      ],
+      "ref": "pack_28/SP28-052.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-052 guyver bio-booster - insectoid organic armor mecha design language bio-booster chitin 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-053",
+      "name": "Retro Tin Robot - Fifties Toy Robot Language",
+      "styleAnchors": [
+        "Retro Tin Robot - Fifties Toy Robot Language",
+        "mecha design language",
+        "Tin robot language"
+      ],
+      "ref": "pack_28/SP28-053.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-053 retro tin robot - fifties toy robot language mecha design language tin robot language 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-054",
+      "name": "Yoji Shinkawa - Ink-Brush Bipedal Tank",
+      "styleAnchors": [
+        "Yoji Shinkawa - Ink-Brush Bipedal Tank",
+        "mecha design language",
+        "Shinkawa ink brush"
+      ],
+      "ref": "pack_28/SP28-054.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-054 yoji shinkawa - ink-brush bipedal tank mecha design language shinkawa ink brush 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-055",
+      "name": "Hard Sci-Fi Exosuit - NASA-Punk Powered Frame",
+      "styleAnchors": [
+        "Hard Sci-Fi Exosuit - NASA-Punk Powered Frame",
+        "mecha design language",
+        "Exosuit open frame"
+      ],
+      "ref": "pack_28/SP28-055.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-055 hard sci-fi exosuit - nasa-punk powered frame mecha design language exosuit open frame 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-056",
+      "name": "Transforming Car Robot - Eighties Vehicle Mecha",
+      "styleAnchors": [
+        "Transforming Car Robot - Eighties Vehicle Mecha",
+        "mecha design language",
+        "Car robot"
+      ],
+      "ref": "pack_28/SP28-056.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-056 transforming car robot - eighties vehicle mecha mecha design language car robot 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-057",
+      "name": "Kaiju Mecha - Mechanized Monster",
+      "styleAnchors": ["Kaiju Mecha - Mechanized Monster", "mecha design language", "Mecha kaiju"],
+      "ref": "pack_28/SP28-057.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-057 kaiju mecha - mechanized monster mecha design language mecha kaiju 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-058",
+      "name": "Sentai Combining Robot - Team Merge Mecha",
+      "styleAnchors": [
+        "Sentai Combining Robot - Team Merge Mecha",
+        "mecha design language",
+        "Combining robot"
+      ],
+      "ref": "pack_28/SP28-058.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-058 sentai combining robot - team merge mecha mecha design language combining robot 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-059",
+      "name": "Titanfall Frontier Titan - Utilitarian Heavy Frame",
+      "styleAnchors": [
+        "Titanfall Frontier Titan - Utilitarian Heavy Frame",
+        "mecha design language",
+        "Frontier titan"
+      ],
+      "ref": "pack_28/SP28-059.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-059 titanfall frontier titan - utilitarian heavy frame mecha design language frontier titan 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-060",
+      "name": "Clockwork Automaton - Brass Gear Mecha",
+      "styleAnchors": [
+        "Clockwork Automaton - Brass Gear Mecha",
+        "mecha design language",
+        "Clockwork automaton"
+      ],
+      "ref": "pack_28/SP28-060.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "mecha-design-languages",
+      "categoryName": "3. Mecha Design Languages",
+      "domain": "mecha design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "mecha-design-languages",
+        "mecha-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-060 clockwork automaton - brass gear mecha mecha design language clockwork automaton 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
     }
   ],
-  "totalPresetCount": 40
+  "totalPresetCount": 60
 }

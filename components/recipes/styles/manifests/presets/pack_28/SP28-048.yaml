@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP28-048
+packId: pack_28
+name: Jakub Rozalski - Dieselpunk Farm Walker
+styleAnchors:
+  - Jakub Rozalski - Dieselpunk Farm Walker
+  - mecha design language
+  - Różalski dieselpunk
+displayName: Jakub Rozalski - Dieselpunk Farm Walker
+category: 3. Mecha Design Languages
+domain: mecha design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mecha-design-languages
+  - mecha-design-language
+  - form-language
+  - rozalski
+  - reference-title
+visualDna:
+  aesthetic: 'Jakub Różalski 1920+ dieselpunk language: towering riveted walkers stomping through painterly Eastern European fields, smokestacks, cavalry and folk-art pastoral melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a towering riveted dieselpunk walker in a painterly pastoral field. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Painterly wheat gold, sky blue and iron grey.
+  lighting_and_shadow: Soft painterly countryside light, lit the way Jakub Rozalski lights its scenes.
+  texture_and_material: Riveted iron and oil-paint brushwork, with the surface finish of Jakub Rozalski.
+  camera_and_composition: Wide painterly landscape with a tiny figure, framed the way Jakub Rozalski composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with pastoral melancholic strangeness.
+  rendering_and_quality: Painterly oil landscape with dieselpunk machines, in the recognizable hand of Jakub Rozalski.
+  creative_brief: 'Jakub Różalski 1920+ dieselpunk language: towering riveted walkers stomping through painterly Eastern European fields, smokestacks, cavalry and folk-art pastoral melancholy. Carry it through Różalski dieselpunk, riveted walker, pastoral painting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Różalski dieselpunk; riveted walker; pastoral painting
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: mecha-design-languages
+  categoryName: 3. Mecha Design Languages
+  domain: mecha design language
+  tags:
+    - curation-v2
+    - mecha-design-languages
+    - mecha-design-language
+    - form-language
+    - rozalski
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
