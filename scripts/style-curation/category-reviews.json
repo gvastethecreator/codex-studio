@@ -1272,7 +1272,7 @@
     "validation": "No fixed costume, character or magical sequence is imported solely through a name.",
     "evidencePresetIds": ["SP05-013", "SP05-181"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_13",
