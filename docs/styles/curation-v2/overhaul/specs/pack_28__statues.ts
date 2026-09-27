@@ -1,0 +1,430 @@
+import type { Spec } from '../tools/apply';
+import { cr } from './_authors';
+
+// Premium collectible statues and figures: each preset names the studio, line or scale tradition
+// whose sculpting, paint and presentation it rebuilds. The requested subject becomes that kind of
+// collectible; cards stage original characters, never licensed ones.
+const T = ['collectible-statue'];
+const shot =
+  'Professional collectible product photography with crisp focus on paint and sculpt detail.';
+
+const spec: Spec = {
+  pack: 'pack_28',
+  category: '1. Premium Collectible Statues',
+  newCategory: { id: 'premium-collectible-statues' },
+  updates: {},
+  creates: [
+    cr(
+      'Prime 1 Studio - Museum Masterline Polystone Statue',
+      'collectible statue',
+      [...T, 'prime-1'],
+      {
+        look: 'Prime 1 Studio Museum Masterline look: huge one-third-scale polystone statues with hyper-detailed sculpting, dramatic dynamic poses, elaborate environmental bases and cinematic paint washes.',
+        subject:
+          'turn the subject into a large hyper-detailed polystone statue in a dramatic pose on an elaborate environmental base.',
+        color: 'Rich cinematic paint washes with deep shadows and highlighted edges.',
+        light: 'Dramatic showroom key light with rim highlights on polystone.',
+        texture: 'Polystone with hyper-detailed sculpt, weathering washes and dry-brushed edges.',
+        camera: 'Low heroic three-quarter product angle on a dark backdrop.',
+        mood: 'epic monumental presence',
+        render: shot,
+        key: 'Prime 1 polystone; one-third scale; environmental base; dramatic pose',
+        briefs: [
+          'A huge polystone statue of an original deep-sea salvage diver in a brass suit wrestling a giant squid rises from an elaborate base of shipwreck timbers and resin water, every rivet hyper-detailed under dramatic showroom light. No readable text or logo.',
+          'An original moth queen statue spreads translucent resin wings over a base of broken cathedral stone, sculpted veins catching the rim light. No readable text or logo.',
+          'A polystone statue of an old lighthouse keeper braces against a storm on a rocky base with resin waves frozen mid-crash. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Sideshow Premium Format - Mixed Media Figure', 'collectible statue', [...T, 'sideshow'], {
+      look: 'Sideshow Premium Format figure look: quarter-scale statues combining sculpted polystone with real tailored fabric costumes, realistic portrait paint and themed bases.',
+      subject:
+        'turn the subject into a quarter-scale statue with real sewn fabric costume and realistic portrait paint.',
+      color: 'Realistic skin tones, rich fabric colors and weathered metal.',
+      light: 'Studio product light showing fabric weave and paint.',
+      texture: 'Sculpted polystone mixed with real stitched fabric and leather.',
+      camera: 'Three-quarter product angle at eye level.',
+      mood: 'grounded heroic realism',
+      render: shot,
+      key: 'Sideshow mixed media; real fabric costume; portrait paint',
+      briefs: [
+        'A quarter-scale statue of an original Victorian explorer in a real stitched wool greatcoat and leather gloves stands on a base of jungle ruins, her realistic painted face squinting at a brass compass. No readable text or logo.',
+        'A mixed-media statue of a retired sea captain wears a real knitted sweater and a tiny fabric cap, leaning on a sculpted dock post. No readable text or logo.',
+        'A statue of an original desert nomad wears flowing real cotton robes that fall naturally over a sculpted dune base. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Hot Toys Sixth Scale - Hyper-Real Action Figure',
+      'collectible figure',
+      [...T, 'hot-toys'],
+      {
+        look: 'Hot Toys sixth-scale figure look: twelve-inch fully articulated figures with uncanny hyper-realistic head sculpts, tailored clothing, detailed accessories and dynamic display stands.',
+        subject:
+          'turn the subject into a twelve-inch hyper-realistic articulated figure with tailored clothes and accessories.',
+        color: 'Hyper-realistic skin and fabric color.',
+        light: 'Clean product photography with soft shadows.',
+        texture: 'Realistic head sculpt, fabric clothing and visible joint articulation.',
+        camera: 'Eye-level product shot on a dark stand.',
+        mood: 'uncanny realistic detail',
+        render: shot,
+        key: 'Hot Toys sixth scale; hyper-real head; tailored clothes',
+        avoid: ['real celebrity likeness', 'licensed movie characters'],
+        briefs: [
+          'A twelve-inch hyper-realistic articulated figure of an original grumpy bakery owner in a flour-dusted fabric apron holds a tiny sculpted rolling pin on a display stand, surrounded by miniature croissant accessories. No readable text or logo.',
+          'A sixth-scale figure of an original astronaut mechanic in a real fabric flight suit kneels with a tiny wrench beside a detachable helmet accessory. No readable text or logo.',
+          'An articulated figure of a jazz trumpeter in a tiny tailored suit poses on a stand with swappable hands laid out beside it. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('XM Studios - Premium Painted Diorama Statue', 'collectible statue', [...T, 'xm-studios'], {
+      look: 'XM Studios premium statue look: bold stylized sculpting with exaggerated proportions, glossy saturated comic-like paint, dynamic diorama bases and cold-cast porcelain finish.',
+      subject:
+        'turn the subject into a stylized cold-cast porcelain statue with exaggerated comic proportions on a dynamic base.',
+      color: 'Glossy saturated comic color with bold paint shading.',
+      light: 'Bright product light with glossy highlights.',
+      texture: 'Cold-cast porcelain with glossy painted finish.',
+      camera: 'Dynamic low product angle.',
+      mood: 'bold stylized energy',
+      render: shot,
+      key: 'XM Studios stylized; cold-cast porcelain; glossy comic paint',
+      briefs: [
+        'A stylized cold-cast porcelain statue of an original street-food cook with exaggerated huge arms flips a flaming wok on a dynamic base of a crowded night market, glossy saturated paint glowing. No readable text or logo.',
+        'A glossy statue of an original samurai grandmother leaping off a rooftop base with her umbrella open. No readable text or logo.',
+        'A stylized porcelain statue of a giant koi curling around a pagoda base, painted in glossy orange and white. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Kotobukiya ArtFX - Stylized Pre-Painted Statue',
+      'collectible statue',
+      [...T, 'kotobukiya'],
+      {
+        look: 'Kotobukiya ArtFX look: clean pre-painted PVC statues with crisp stylized sculpting, bright even color, simple display bases and illustrator-inspired designs.',
+        subject:
+          'turn the subject into a clean pre-painted PVC statue with crisp stylized sculpt on a simple base.',
+        color: 'Bright clean even paint color.',
+        light: 'Soft even product light.',
+        texture: 'Smooth PVC with crisp paint lines.',
+        camera: 'Three-quarter product view on white.',
+        mood: 'clean stylish charm',
+        render: shot,
+        key: 'Kotobukiya ArtFX PVC; crisp stylized; bright paint',
+        briefs: [
+          'A clean pre-painted PVC statue of an original roller-derby skater mid-spin on a simple circular base, her stylized ponytail and knee pads painted in crisp bright colors. No readable text or logo.',
+          'A PVC statue of an original librarian balancing on a stack of books on a small base. No readable text or logo.',
+          'Waving cheerfully from the slot of a red mailbox base, a crisp PVC fox mail carrier balances a stack of tiny letters on his cap. The bright paint lines are perfectly clean. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Good Smile Scale Figure - Anime Seventh Scale',
+      'collectible figure',
+      [...T, 'good-smile-scale'],
+      {
+        look: 'Good Smile Company scale figure look: seventh-scale anime PVC figures with flowing sculpted hair and fabric, gradient paint, translucent effect parts and clear acrylic bases.',
+        subject:
+          'turn the subject into a seventh-scale anime PVC figure with flowing sculpted hair and translucent effect parts.',
+        color: 'Soft anime gradient paint and translucent pastel effects.',
+        light: 'Soft glowing product light.',
+        texture: 'Glossy PVC with gradient paint and clear effect parts.',
+        camera: 'Three-quarter product angle on a clear base.',
+        mood: 'graceful anime charm',
+        render: shot,
+        key: 'Good Smile scale figure; flowing hair; translucent effects',
+        avoid: ['licensed anime characters'],
+        briefs: [
+          'A seventh-scale anime PVC figure of an original flower-shop girl twirls on a clear acrylic base as translucent pink petal effect parts swirl around her flowing sculpted hair. No readable text or logo.',
+          'Landing on a splashing translucent water base, an original anime swordswoman spins with her flowing hair and sleeves frozen in sculpted motion. Clear droplet parts hang around her. No readable text or logo.',
+          'An anime figure of a sleepy witch floats on a translucent star-shaped base holding a teacup. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Garage Kit Resin - Unpainted Grey Sculpt', 'collectible figure', [...T, 'garage-kit'], {
+      look: 'Japanese garage kit look: grey unpainted resin cast parts, sculptor-made fan kits with runner stubs, crisp surface detail and partial assembly on a workbench.',
+      subject:
+        'turn the subject into an unpainted grey resin garage kit, partially assembled with loose parts.',
+      color: 'Unpainted grey and cream resin.',
+      light: 'Workbench desk lamp light.',
+      texture: 'Matte resin with pour stubs and seam lines.',
+      camera: 'Top-down workbench product view.',
+      mood: 'hobbyist craft focus',
+      render: shot,
+      key: 'Garage kit grey resin; loose parts; workbench',
+      briefs: [
+        'A partially assembled grey resin garage kit of an original dragon knight lies on a hobby workbench with its loose wings, pour stubs and a tube of glue beside a cutting mat. No readable text or logo.',
+        'Grey resin parts of an original mech pilot kit are laid out in a row on a cutting mat. No readable text or logo.',
+        'An unpainted resin bust of an old wizard sits beside sanding sticks and a pin vice. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Polystone Bust - Life-Size Character Bust',
+      'collectible statue',
+      [...T, 'polystone-bust'],
+      {
+        look: 'Life-size and half-scale collectible bust look: chest-up sculpted portraits with realistic paint, textured costume collars and a pedestal plinth.',
+        subject: 'turn the subject into a chest-up sculpted collectible bust on a pedestal plinth.',
+        color: 'Realistic portrait paint with muted costume colors.',
+        light: 'Museum spotlight from above.',
+        texture: 'Polystone with realistic skin paint and sculpted fabric.',
+        camera: 'Frontal three-quarter bust view.',
+        mood: 'dignified portrait presence',
+        render: shot,
+        key: 'Collectible bust; pedestal plinth; realistic paint',
+        briefs: [
+          'A life-size collectible bust of an original elderly beekeeper in a netted hat sits on a dark pedestal plinth, with sculpted bees on her collar catching the museum spotlight. No readable text or logo.',
+          'A half-scale bust of an original deep-space pilot with a cracked helmet visor rests on a steel plinth. No readable text or logo.',
+          'A bust of a bearded blacksmith with soot on his cheeks stands on a wooden plinth. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Weta Workshop - Film Maquette Statue', 'collectible statue', [...T, 'weta'], {
+      look: 'Weta Workshop collectible look: film-studio maquettes with painterly naturalistic sculpting, weathered realism, creature design heritage and handcrafted bases.',
+      subject:
+        'turn the subject into a naturalistic film-studio creature maquette with weathered realism.',
+      color: 'Naturalistic weathered earth tones.',
+      light: 'Soft studio key light.',
+      texture: 'Naturalistic sculpt with painterly weathering.',
+      camera: 'Three-quarter maquette view on a turntable.',
+      mood: 'naturalistic creature craft',
+      render: shot,
+      key: 'Weta maquette; naturalistic creature; weathered',
+      avoid: ['licensed film creatures'],
+      briefs: [
+        'A naturalistic film-studio maquette of an original swamp troll with moss-covered skin crouches on a handcrafted base of roots and stones, turning slowly on a workshop turntable. No readable text or logo.',
+        "Slowly turning on a sculptor's workshop turntable, a naturalistic maquette of an original armored riding beetle shows every weathered shell plate. A saddle of carved leather sits on its back. No readable text or logo.",
+        'Beside a scatter of sculpting tools and clay crumbs, a creature maquette of a long-necked forest spirit bows its antlered head. Its bark-like skin is painted in mossy greens. No readable text or logo.',
+      ],
+    }),
+    cr('Iron Studios - Art Scale Battle Diorama', 'collectible statue', [...T, 'iron-studios'], {
+      look: 'Iron Studios Art Scale look: tenth-scale battle diorama statues with multiple figures, rubble bases, effect parts and dramatic action staging.',
+      subject:
+        'turn the subject into a tenth-scale battle diorama statue with rubble and effect parts.',
+      color: 'Dramatic battle paint and explosion effect colors.',
+      light: 'Bright display light with effect glow.',
+      texture: 'Polystone rubble, translucent effect parts and painted figures.',
+      camera: 'Wide diorama product view.',
+      mood: 'dramatic battle spectacle',
+      render: shot,
+      key: 'Iron Studios diorama; rubble base; effect parts',
+      briefs: [
+        'A tenth-scale battle diorama shows an original team of firefighters holding back a lava creature on a base of cracked city rubble, with translucent orange flame effect parts. No readable text or logo.',
+        'Crossing swords on a crumbling stone bridge base, two original weary knights brace against each other as chunks of masonry fall away beneath them. Dust effect parts hang in the air. No readable text or logo.',
+        'Standing alone on a jagged rock base, an original ranger raises her bow while translucent blue lightning effect parts crackle all around her. Rain streaks are sculpted into the base. No readable text or logo.',
+      ],
+    }),
+    cr(
+      'Cold-Cast Bronze Finish - Faux Bronze Statue',
+      'collectible statue',
+      [...T, 'cold-cast-bronze'],
+      {
+        look: 'Cold-cast bronze collectible look: resin statues with real bronze powder, patinated green-brown highlights, polished edges and a marble plinth.',
+        subject:
+          'turn the subject into a cold-cast bronze statue with patina and polished highlights on a marble plinth.',
+        color: 'Bronze brown with verdigris green and polished gold edges.',
+        light: 'Warm gallery light on metal.',
+        texture: 'Bronze powder resin with patina and polish.',
+        camera: 'Three-quarter gallery view.',
+        mood: 'classical enduring dignity',
+        render: shot,
+        key: 'Cold-cast bronze; patina; marble plinth',
+        briefs: [
+          'Sprinting uphill on a black marble plinth, an original cyclist in a cold-cast bronze finish shows verdigris patina in the folds of the jersey and polished gold on the handlebars. The gallery light catches every muscle. No readable text or logo.',
+          'On a white marble base, a bronze-finish heron snatches a fish from sculpted ripples, its wings half open. Green patina gathers in every feather groove. No readable text or logo.',
+          'Perched on a stack of patinated books, a child figure in faux bronze reads by an imaginary lamp, her polished nose shining from collectors touching it. The plinth is veined grey marble. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Statue Premium Base - Light-Up Diorama Scene',
+      'collectible statue',
+      [...T, 'light-up-statue'],
+      {
+        look: 'Premium light-up statue look: statues with built-in LED lighting in eyes, weapons or environment, translucent parts glowing and dark-room display photography.',
+        subject:
+          'turn the subject into a statue with built-in LED glow in translucent parts, shown in a dark room.',
+        color: 'Dark room with glowing LED blue, amber or green.',
+        light: 'Internal LED glow in darkness.',
+        texture: 'Translucent resin parts with LED glow.',
+        camera: 'Dark-room product view.',
+        mood: 'glowing dramatic reveal',
+        render: shot,
+        key: 'Light-up statue; LED glow; dark-room display',
+        briefs: [
+          'In a dark room, a statue of an original deep-sea anglerfish explorer glows from within as LED light shines through its translucent lure and the resin water base. No readable text or logo.',
+          'Glowing amber from the lantern in her raised hand, an original lantern bearer stands in a dark display case while the light spills across the resin cobblestones. Her cloak edges catch the glow. No readable text or logo.',
+          'Glowing green through translucent shoulder crystals, a hulking golem statue sits in a dark room with light leaking from the cracks in its chest. Tiny resin mushrooms glow at its feet. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Studio Ghibli Style Figure - Soft Resin Diorama',
+      'collectible figure',
+      [...T, 'benelic-diorama'],
+      {
+        look: 'Cozy anime-film diorama figure look: soft pastel resin figurines, tiny homes and forest bases, gentle hand-painted texture and whimsical scale.',
+        subject: 'turn the subject into a soft pastel resin figurine within a cozy tiny diorama.',
+        color: 'Soft pastel greens, cream and warm brown.',
+        light: 'Soft warm natural light.',
+        texture: 'Hand-painted soft resin.',
+        camera: 'Close whimsical diorama view.',
+        mood: 'cozy whimsical warmth',
+        render: shot,
+        key: 'Cozy resin diorama; pastel; whimsical scale',
+        avoid: ['licensed Ghibli characters', 'a big grey forest spirit'],
+        briefs: [
+          'A soft pastel resin figurine of an original girl reading under a mushroom umbrella sits in a cozy forest diorama with a tiny round house and a sleeping fox, all hand-painted in gentle cream and green. No readable text or logo.',
+          'A resin diorama of a tiny bakery on a hill with a cat on the roof. No readable text or logo.',
+          'Waiting at a tiny wooden bus stop in painted resin rain, a frog in a yellow raincoat holds a leaf umbrella inside a pastel diorama. Puddles are sculpted in clear glossy resin. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Museum Maquette - Classical Plaster Study',
+      'collectible statue',
+      [...T, 'plaster-maquette'],
+      {
+        look: 'Classical sculptor maquette look: small white plaster study figures with visible tool marks, armature wire, pencil guide marks and a studio shelf setting.',
+        subject:
+          'turn the subject into a small white plaster maquette with tool marks and armature.',
+        color: 'Chalky white plaster and pencil grey.',
+        light: 'Soft north-light studio window.',
+        texture: 'Plaster with tool marks and wire armature.',
+        camera: 'Studio shelf close view.',
+        mood: 'quiet studio craft',
+        render: 'Fine art studio photograph of a plaster maquette.',
+        key: 'Plaster maquette; tool marks; armature; studio shelf',
+        briefs: [
+          'A small white plaster maquette of an original dancer mid-leap stands on a studio shelf with visible tool marks, a bent armature wire poking from her foot and pencil guide lines on her back. No readable text or logo.',
+          "Resting beside a pair of brass calipers on a dusty studio shelf, a plaster study of a sleeping dog still shows the sculptor's tool marks. A bent armature wire pokes from its tail. No readable text or logo.",
+          'Lined up on a sunlit studio shelf, a row of small plaster heads carry pencil guide marks and fingerprints in the chalky surface. One head is only half finished. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Soft Vinyl Statue - Articulated Retro Figure',
+      'collectible figure',
+      [...T, 'retro-vinyl-statue'],
+      {
+        look: 'Retro soft vinyl statue look: glossy hollow vinyl figures with sprayed gradients, cartoon simplified sculpts and a vintage packaging backdrop.',
+        subject: 'turn the subject into a glossy hollow vinyl figure with sprayed gradients.',
+        color: 'Sprayed vintage gradients of red, blue and gold.',
+        light: 'Soft product light with glossy highlights.',
+        texture: 'Glossy hollow soft vinyl.',
+        camera: 'Frontal product shot.',
+        mood: 'nostalgic playful charm',
+        render: shot,
+        key: 'Soft vinyl; sprayed gradients; retro sculpt',
+        briefs: [
+          'A glossy hollow vinyl figure of an original cheerful space pilot with sprayed red-to-gold gradients stands in front of a faded retro toy box backdrop. No readable text or logo.',
+          'Holding a tray with a single glossy cup, a friendly hollow vinyl robot waiter stands on tiptoe with sprayed silver-to-blue gradients. His smile is a simple molded curve. No readable text or logo.',
+          'Riding a molded vinyl wave, a cartoon surfing shark grins with sprayed blue-to-white gradients across its glossy fins. A tiny surfboard is molded to its feet. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Premium Environment Statue - Architectural Base',
+      'collectible statue',
+      [...T, 'environment-statue'],
+      {
+        look: 'Environment statue look: statues where the architectural base dominates, detailed miniature rooftops, staircases and ruins with a small figure integrated into the scene.',
+        subject:
+          'integrate the subject as a small figure within a dominant detailed architectural statue base.',
+        color: 'Weathered stone, roof tile and moss.',
+        light: 'Soft top light with deep crevices.',
+        texture: 'Polystone architecture with weathering.',
+        camera: 'Three-quarter view of the whole diorama.',
+        mood: 'quiet atmospheric storytelling',
+        render: shot,
+        key: 'Environment statue; architectural base; small figure',
+        briefs: [
+          'A statue dominated by a detailed miniature clock tower rooftop shows a small original chimney sweep sitting on the ridge, with weathered tiles, pigeons and a crooked antenna sculpted around her. No readable text or logo.',
+          'Climbing a crumbling miniature temple staircase that dominates the whole statue, a tiny explorer with a rope pauses halfway up. Vines and cracks are sculpted into every step. No readable text or logo.',
+          'Across a detailed miniature harbor wall that dominates the statue, a small fisherman mends nets beside stacked lobster pots and a sleeping gull. Every stone is weathered. No readable text or logo.',
+        ],
+      },
+    ),
+    cr('Collector Unboxing - Styrofoam Tray Photo', 'collectible figure', [...T, 'unboxing'], {
+      look: 'Collector unboxing photography look: statue parts nestled in white styrofoam trays and plastic bags, packing tissue, instruction sheet shapes and a camera flash on a desk.',
+      subject: 'show the subject as collectible statue parts nestled in styrofoam packaging.',
+      color: 'White styrofoam, clear plastic and statue paint colors.',
+      light: 'Flash photography on a desk.',
+      texture: 'Styrofoam, plastic bags and tissue paper.',
+      camera: 'Top-down unboxing photo.',
+      mood: 'excited unboxing anticipation',
+      render: 'Candid collector unboxing photograph.',
+      key: 'Unboxing styrofoam trays; statue parts; flash',
+      briefs: [
+        'Top-down flash photo of an opened box showing statue parts of an original armored beekeeper nestled in white styrofoam trays, her helmet wrapped in plastic and a folded tissue on top. No readable text or logo.',
+        "Opened on a desk under a camera flash, a box reveals a dragon statue's wings resting in separate white foam slots, each wrapped in thin plastic. Packing peanuts spill onto the table. No readable text or logo.",
+        "Beside a pair of scissors and torn packing tape, a statue base still sealed in clear plastic waits on a cluttered collector's desk. The rest of the figure is hidden under tissue. No readable text or logo.",
+      ],
+    }),
+    cr(
+      'Nineties Toy Catalog Statue - Painted Photo Display',
+      'collectible figure',
+      [...T, 'nineties-catalog'],
+      {
+        look: 'Nineties collectibles catalog look: statues photographed against gradient blue or black backdrops, soft glow edges, glossy print and period marketing composition.',
+        subject:
+          'show the subject as a collectible statue on a nineties gradient catalog backdrop.',
+        color: 'Gradient blue or black backdrop with glossy highlights.',
+        light: 'Soft glow studio light.',
+        texture: 'Glossy nineties catalog print.',
+        camera: 'Centered catalog product composition.',
+        mood: 'nostalgic collector hype',
+        render: 'Glossy nineties catalog photograph.',
+        key: 'Nineties catalog; gradient backdrop; glow edges',
+        briefs: [
+          'An original pewter wizard statue with a crystal ball stands against a glowing blue gradient backdrop in a glossy nineties collectibles catalog photograph with soft glow edges. No readable text or logo.',
+          'Curled around a glowing crystal against a black gradient backdrop, a pewter dragon statue shines in soft glow-edged catalog light. Its tiny garnet eyes catch the flash. No readable text or logo.',
+          'Perched on a painted mushroom against a purple gradient backdrop, a porcelain fairy statue glows in soft nineties catalog light. Her wings are painted with iridescent pearl. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Porcelain Figurine - Hand-Painted Glazed Figurine',
+      'collectible figure',
+      [...T, 'porcelain-figurine'],
+      {
+        look: 'Hand-painted porcelain figurine look: glossy glazed porcelain with delicate floral painting, gilded edges, pastel colors and a mantelpiece setting.',
+        subject:
+          'turn the subject into a glossy hand-painted porcelain figurine with gilded edges.',
+        color: 'Pastel glaze with gold gilding.',
+        light: 'Soft window light on glaze.',
+        texture: 'Glossy glazed porcelain with painted florals.',
+        camera: 'Close mantelpiece view.',
+        mood: 'delicate genteel charm',
+        render: 'Antique porcelain figurine photograph.',
+        key: 'Porcelain figurine; glaze; gilded edges; florals',
+        briefs: [
+          'A glossy hand-painted porcelain figurine of an original skateboarding grandmother with gilded edges and delicate floral glaze stands on a lace doily on a mantelpiece. No readable text or logo.',
+          'Sipping from a tiny gilded teacup, a fox in a waistcoat sits in hand-painted glossy porcelain on a mantelpiece. Delicate floral glaze covers his jacket. No readable text or logo.',
+          'Standing beside a carriage clock, a deep-sea diver in glossy glazed porcelain wears a helmet trimmed in gold. Painted roses climb his canvas suit. No readable text or logo.',
+        ],
+      },
+    ),
+    cr(
+      'Wood Carved Figure - Hand-Carved Collectible',
+      'collectible figure',
+      [...T, 'wood-carved'],
+      {
+        look: 'Hand-carved wooden collectible figure look: visible knife facets, natural wood grain, light stain and folk-art simplification on a wooden base.',
+        subject:
+          'turn the subject into a hand-carved wooden figure with visible knife facets and grain.',
+        color: 'Natural wood tones with light stain.',
+        light: 'Warm workshop light.',
+        texture: 'Knife-faceted wood grain.',
+        camera: 'Close workbench view.',
+        mood: 'warm folk craft',
+        render: 'Warm craft photograph of a carved figure.',
+        key: 'Carved wood; knife facets; grain; folk art',
+        briefs: [
+          'Carrying a sack of letters up a carved mountain base, an original mountain postman shows crisp knife facets and flowing grain in the wood, with fresh shavings curled around him on the workbench. No readable text or logo.',
+          'Holding a tiny lantern on a carved branch, a hand-whittled owl shows knife facets across its feathers and a lightly stained walnut grain. Wood shavings lie beneath it. No readable text or logo.',
+          'Sitting on a carved stump, a folk-art fiddler plays a tiny wooden violin, every knife cut left visible in the grain. A small carved dog listens at his feet. No readable text or logo.',
+        ],
+      },
+    ),
+  ],
+};
+
+export default spec;

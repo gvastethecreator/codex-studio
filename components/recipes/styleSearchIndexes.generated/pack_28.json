@@ -1,0 +1,452 @@
+{
+  "packs": [
+    {
+      "id": "pack_28",
+      "name": "Collectibles & Form Languages",
+      "presetCount": 20
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP28-001",
+      "name": "Prime 1 Studio - Museum Masterline Polystone Statue",
+      "styleAnchors": [
+        "Prime 1 Studio - Museum Masterline Polystone Statue",
+        "collectible statue",
+        "Prime 1 polystone"
+      ],
+      "ref": "pack_28/SP28-001.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-001 prime 1 studio - museum masterline polystone statue collectible statue prime 1 polystone 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-002",
+      "name": "Sideshow Premium Format - Mixed Media Figure",
+      "styleAnchors": [
+        "Sideshow Premium Format - Mixed Media Figure",
+        "collectible statue",
+        "Sideshow mixed media"
+      ],
+      "ref": "pack_28/SP28-002.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-002 sideshow premium format - mixed media figure collectible statue sideshow mixed media 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-003",
+      "name": "Hot Toys Sixth Scale - Hyper-Real Action Figure",
+      "styleAnchors": [
+        "Hot Toys Sixth Scale - Hyper-Real Action Figure",
+        "collectible figure",
+        "Hot Toys sixth scale"
+      ],
+      "ref": "pack_28/SP28-003.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-003 hot toys sixth scale - hyper-real action figure collectible figure hot toys sixth scale 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-004",
+      "name": "XM Studios - Premium Painted Diorama Statue",
+      "styleAnchors": [
+        "XM Studios - Premium Painted Diorama Statue",
+        "collectible statue",
+        "XM Studios stylized"
+      ],
+      "ref": "pack_28/SP28-004.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-004 xm studios - premium painted diorama statue collectible statue xm studios stylized 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-005",
+      "name": "Kotobukiya ArtFX - Stylized Pre-Painted Statue",
+      "styleAnchors": [
+        "Kotobukiya ArtFX - Stylized Pre-Painted Statue",
+        "collectible statue",
+        "Kotobukiya ArtFX PVC"
+      ],
+      "ref": "pack_28/SP28-005.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-005 kotobukiya artfx - stylized pre-painted statue collectible statue kotobukiya artfx pvc 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-006",
+      "name": "Good Smile Scale Figure - Anime Seventh Scale",
+      "styleAnchors": [
+        "Good Smile Scale Figure - Anime Seventh Scale",
+        "collectible figure",
+        "Good Smile scale figure"
+      ],
+      "ref": "pack_28/SP28-006.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-006 good smile scale figure - anime seventh scale collectible figure good smile scale figure 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-007",
+      "name": "Garage Kit Resin - Unpainted Grey Sculpt",
+      "styleAnchors": [
+        "Garage Kit Resin - Unpainted Grey Sculpt",
+        "collectible figure",
+        "Garage kit grey resin"
+      ],
+      "ref": "pack_28/SP28-007.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-007 garage kit resin - unpainted grey sculpt collectible figure garage kit grey resin 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-008",
+      "name": "Polystone Bust - Life-Size Character Bust",
+      "styleAnchors": [
+        "Polystone Bust - Life-Size Character Bust",
+        "collectible statue",
+        "Collectible bust"
+      ],
+      "ref": "pack_28/SP28-008.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-008 polystone bust - life-size character bust collectible statue collectible bust 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-009",
+      "name": "Weta Workshop - Film Maquette Statue",
+      "styleAnchors": [
+        "Weta Workshop - Film Maquette Statue",
+        "collectible statue",
+        "Weta maquette"
+      ],
+      "ref": "pack_28/SP28-009.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-009 weta workshop - film maquette statue collectible statue weta maquette 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-010",
+      "name": "Iron Studios - Art Scale Battle Diorama",
+      "styleAnchors": [
+        "Iron Studios - Art Scale Battle Diorama",
+        "collectible statue",
+        "Iron Studios diorama"
+      ],
+      "ref": "pack_28/SP28-010.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-010 iron studios - art scale battle diorama collectible statue iron studios diorama 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-011",
+      "name": "Cold-Cast Bronze Finish - Faux Bronze Statue",
+      "styleAnchors": [
+        "Cold-Cast Bronze Finish - Faux Bronze Statue",
+        "collectible statue",
+        "Cold-cast bronze"
+      ],
+      "ref": "pack_28/SP28-011.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-011 cold-cast bronze finish - faux bronze statue collectible statue cold-cast bronze 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-012",
+      "name": "Statue Premium Base - Light-Up Diorama Scene",
+      "styleAnchors": [
+        "Statue Premium Base - Light-Up Diorama Scene",
+        "collectible statue",
+        "Light-up statue"
+      ],
+      "ref": "pack_28/SP28-012.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-012 statue premium base - light-up diorama scene collectible statue light-up statue 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-013",
+      "name": "Studio Ghibli Style Figure - Soft Resin Diorama",
+      "styleAnchors": [
+        "Studio Ghibli Style Figure - Soft Resin Diorama",
+        "collectible figure",
+        "Cozy resin diorama"
+      ],
+      "ref": "pack_28/SP28-013.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-013 studio ghibli style figure - soft resin diorama collectible figure cozy resin diorama 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-014",
+      "name": "Museum Maquette - Classical Plaster Study",
+      "styleAnchors": [
+        "Museum Maquette - Classical Plaster Study",
+        "collectible statue",
+        "Plaster maquette"
+      ],
+      "ref": "pack_28/SP28-014.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-014 museum maquette - classical plaster study collectible statue plaster maquette 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-015",
+      "name": "Soft Vinyl Statue - Articulated Retro Figure",
+      "styleAnchors": [
+        "Soft Vinyl Statue - Articulated Retro Figure",
+        "collectible figure",
+        "Soft vinyl"
+      ],
+      "ref": "pack_28/SP28-015.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-015 soft vinyl statue - articulated retro figure collectible figure soft vinyl 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-016",
+      "name": "Premium Environment Statue - Architectural Base",
+      "styleAnchors": [
+        "Premium Environment Statue - Architectural Base",
+        "collectible statue",
+        "Environment statue"
+      ],
+      "ref": "pack_28/SP28-016.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible statue",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-statue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-016 premium environment statue - architectural base collectible statue environment statue 1. premium collectible statues premium collectible statues collectible statue pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-statue"
+    },
+    {
+      "id": "SP28-017",
+      "name": "Collector Unboxing - Styrofoam Tray Photo",
+      "styleAnchors": [
+        "Collector Unboxing - Styrofoam Tray Photo",
+        "collectible figure",
+        "Unboxing styrofoam trays"
+      ],
+      "ref": "pack_28/SP28-017.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-017 collector unboxing - styrofoam tray photo collectible figure unboxing styrofoam trays 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-018",
+      "name": "Nineties Toy Catalog Statue - Painted Photo Display",
+      "styleAnchors": [
+        "Nineties Toy Catalog Statue - Painted Photo Display",
+        "collectible figure",
+        "Nineties catalog"
+      ],
+      "ref": "pack_28/SP28-018.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-018 nineties toy catalog statue - painted photo display collectible figure nineties catalog 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-019",
+      "name": "Porcelain Figurine - Hand-Painted Glazed Figurine",
+      "styleAnchors": [
+        "Porcelain Figurine - Hand-Painted Glazed Figurine",
+        "collectible figure",
+        "Porcelain figurine"
+      ],
+      "ref": "pack_28/SP28-019.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-019 porcelain figurine - hand-painted glazed figurine collectible figure porcelain figurine 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-020",
+      "name": "Wood Carved Figure - Hand-Carved Collectible",
+      "styleAnchors": [
+        "Wood Carved Figure - Hand-Carved Collectible",
+        "collectible figure",
+        "Carved wood"
+      ],
+      "ref": "pack_28/SP28-020.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "premium-collectible-statues",
+      "categoryName": "1. Premium Collectible Statues",
+      "domain": "collectible figure",
+      "tags": [
+        "collectibles-and-form-languages",
+        "premium-collectible-statues",
+        "collectible-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-020 wood carved figure - hand-carved collectible collectible figure carved wood 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    }
+  ],
+  "totalPresetCount": 20
+}

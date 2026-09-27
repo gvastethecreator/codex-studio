@@ -321,6 +321,18 @@ export const STYLE_COLLECTIONS = [
     facets: { workflow: ['image', 'edit'] },
   },
   {
+    id: 'collectibles_form_languages',
+    title: 'Collectibles & Form Languages',
+    familyId: 'design_assets_materials',
+    description:
+      'Premium statues, toys and miniatures, plus mecha and industrial design languages that restyle the form of any subject.',
+    icon: 'box',
+    order: 15,
+    sourcePackIds: ['pack_28'],
+    entries: [{ id: 'collectibles-form-languages-pack', kind: 'pack', packId: 'pack_28' }],
+    facets: { workflow: ['image', 'edit'] },
+  },
+  {
     id: 'tv_broadcast_analog_video',
     title: 'Broadcast & Video',
     familyId: 'screen_motion',

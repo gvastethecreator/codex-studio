@@ -646,8 +646,8 @@ describe('stylePresetManifests', () => {
     );
 
     expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(26);
-    expect(catalog.presetManifests).toHaveLength(4098);
+    expect(catalog.packManifests).toHaveLength(27);
+    expect(catalog.presetManifests).toHaveLength(4118);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
     expect(
       runtimeIndex.packs.map((pack) => ({
@@ -673,6 +673,7 @@ describe('stylePresetManifests', () => {
     expect(runtimeIndex.presetPackIdById.get('SP25-001')).toBe('pack_25');
     expect(runtimeIndex.presetPackIdById.get('SP26-001')).toBe('pack_26');
     expect(runtimeIndex.presetPackIdById.get('SP27-001')).toBe('pack_27');
+    expect(runtimeIndex.presetPackIdById.get('SP28-001')).toBe('pack_28');
     expect(runtimeIndex.presetPackIdById.get('SP17-125')).toBe('pack_17');
     expect(runtimeIndex.presetPackIdById.get('SP12-098')).toBe('pack_12');
 

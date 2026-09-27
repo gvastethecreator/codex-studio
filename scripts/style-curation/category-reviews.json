@@ -2908,5 +2908,20 @@
     "evidencePresetIds": ["SP26-127", "SP26-128", "SP26-129"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_28",
+    "category": "1. Premium Collectible Statues",
+    "displayCategory": "Premium collectible statues",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "a6f4259a810872aeb0e54821660417607140df9f1104e279b14ecec721b4dddd",
+    "problem": "Collectible statue styles must reproduce each studio or line's scale, sculpting, paint, materials and presentation without copying licensed characters or real products.",
+    "preserve": "The requested subject stays the subject, rebuilt as that kind of collectible; cards stage original characters.",
+    "proposedAction": "New category of 20 statue and figure traditions: Prime 1 polystone, Sideshow mixed media, Hot Toys sixth scale, XM Studios, Kotobukiya ArtFX, Good Smile scale figures, garage kits, busts, Weta maquettes, Iron Studios dioramas, cold-cast bronze, light-up statues, cozy resin dioramas, plaster maquettes, soft vinyl, environment statues, unboxing, nineties catalogs, porcelain and carved wood.",
+    "validation": "Generate the card set; check each card reads as its collectible tradition with no licensed character.",
+    "evidencePresetIds": ["SP28-001", "SP28-002", "SP28-003"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

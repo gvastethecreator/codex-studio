@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: pack_28
+name: Collectibles & Form Languages
+cardTitle: Collectibles & Form Languages
+cardDescription: Premium statues, toys and miniatures, plus mecha and industrial design languages that restyle the form of any subject.
+description: >-
+  Collectible sculpture and toy traditions named after their studios and lines, and form languages
+  from mecha and industrial design that rebuild any subject's shape, construction and surface.
+  Requested subjects stay the subject; each style changes scale, material, construction and finish.
+categories:
+  - id: premium-collectible-statues
+    name: 1. Premium Collectible Statues
+    presetRefs:
+      - pack_28/SP28-001.yaml
+      - pack_28/SP28-002.yaml
+      - pack_28/SP28-003.yaml
+      - pack_28/SP28-004.yaml
+      - pack_28/SP28-005.yaml
+      - pack_28/SP28-006.yaml
+      - pack_28/SP28-007.yaml
+      - pack_28/SP28-008.yaml
+      - pack_28/SP28-009.yaml
+      - pack_28/SP28-010.yaml
+      - pack_28/SP28-011.yaml
+      - pack_28/SP28-012.yaml
+      - pack_28/SP28-013.yaml
+      - pack_28/SP28-014.yaml
+      - pack_28/SP28-015.yaml
+      - pack_28/SP28-016.yaml
+      - pack_28/SP28-017.yaml
+      - pack_28/SP28-018.yaml
+      - pack_28/SP28-019.yaml
+      - pack_28/SP28-020.yaml
+presetRefs:
+  - pack_28/SP28-001.yaml
+  - pack_28/SP28-002.yaml
+  - pack_28/SP28-003.yaml
+  - pack_28/SP28-004.yaml
+  - pack_28/SP28-005.yaml
+  - pack_28/SP28-006.yaml
+  - pack_28/SP28-007.yaml
+  - pack_28/SP28-008.yaml
+  - pack_28/SP28-009.yaml
+  - pack_28/SP28-010.yaml
+  - pack_28/SP28-011.yaml
+  - pack_28/SP28-012.yaml
+  - pack_28/SP28-013.yaml
+  - pack_28/SP28-014.yaml
+  - pack_28/SP28-015.yaml
+  - pack_28/SP28-016.yaml
+  - pack_28/SP28-017.yaml
+  - pack_28/SP28-018.yaml
+  - pack_28/SP28-019.yaml
+  - pack_28/SP28-020.yaml

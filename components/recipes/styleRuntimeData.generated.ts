@@ -252,6 +252,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.',
     presetCount: 260,
   },
+  {
+    id: 'pack_28',
+    name: 'Collectibles & Form Languages',
+    description:
+      "Collectible sculpture and toy traditions named after their studios and lines, and form languages from mecha and industrial design that rebuild any subject's shape, construction and surface. Requested subjects stay the subject; each style changes scale, material, construction and finish.",
+    cardTitle: 'Collectibles & Form Languages',
+    cardDescription:
+      'Premium statues, toys and miniatures, plus mecha and industrial design languages that restyle the form of any subject.',
+    presetCount: 20,
+  },
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
@@ -357,6 +367,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_27: () =>
     import('./styleRuntimePacks.generated/pack_27').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_28: () =>
+    import('./styleRuntimePacks.generated/pack_28').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };
