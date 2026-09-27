@@ -343,10 +343,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blockbuster Teal & Orange',
     category: '1. Film Genres',
     negativePrompt:
-      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, natural color, flat light, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, natural color, flat light, digital painting, fantasy illustration, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blockbuster teal-and-orange: modern action cinema graded to push skin and fire toward orange and shadows and skies toward teal, with flares and spark bloom.',
+        'Blockbuster teal-and-orange: a live-action film still from a modern action movie, real actors and practical explosions shot on anamorphic 35mm, graded to push skin and fire toward orange and shadows and skies toward teal.',
       subject_treatment:
         "Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.",
       color_and_tone:
@@ -357,11 +357,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Low heroic angles, slow-motion feel, subject silhouetted against fire or sky.',
       atmosphere_and_mood: 'Loud and epic, spectacle at maximum volume.',
       rendering_and_quality:
-        'Glossy digital cinema grade with clean bloom; no muted natural color.',
+        'Photographic live-action frame with real skin texture, lens flares and a glossy cinema grade; never a painting or illustration.',
       key_features:
         'teal and orange grade; heroic low angle; sparks and embers; anamorphic flares; rim-lit silhouette',
       creative_brief:
-        "Blockbuster teal-and-orange: modern action cinema graded to push skin and fire toward orange and shadows and skies toward teal, with flares and spark bloom. Carry it through teal and orange grade, heroic low angle, sparks and embers, anamorphic flares, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Blockbuster teal-and-orange: a live-action film still from a modern action movie, real actors and practical explosions shot on anamorphic 35mm, graded to push skin and fire toward orange and shadows and skies toward teal. Carry it through teal and orange grade, heroic low angle, sparks and embers, anamorphic flares, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -422,10 +422,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Space Opera (70s)',
     category: '1. Film Genres',
     negativePrompt:
-      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, cgi, franchise starship design, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, cgi, modern digital render, franchise starship design, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        '70s space opera: practical-effects science fiction with kitbashed model starships, optical composites and a worn, lived-in future.',
+        '70s space opera: a 1970s film still shot on 35mm, with physical kitbashed model starships, painted matte backgrounds, optical composites and a worn, lived-in future, never modern CGI.',
       subject_treatment:
         "Keep the prompt subject, action and setting; translate them through this genre's camera, lighting, film stock and grade, without adding genre costumes, sets or plot events the prompt did not ask for.",
       color_and_tone:
@@ -438,11 +438,11 @@ export const GENERATED_STYLE_PRESETS = [
         'Model ships passing close to the lens, wide desert or hangar vistas, optical glow around engines.',
       atmosphere_and_mood: 'Adventurous and scrappy, a used universe full of possibility.',
       rendering_and_quality:
-        'Film grain and slight optical-composite matte lines; no franchise ships or costumes.',
+        'Visible 35mm grain, soft period lenses, gentle halation and lower dynamic range, with slight optical-composite matte lines around models.',
       key_features:
         'kitbashed model ships; used-future weathering; optical composite glow; backlit hangar smoke; film grain',
       creative_brief:
-        "70s space opera: practical-effects science fiction with kitbashed model starships, optical composites and a worn, lived-in future. Carry it through kitbashed model ships, used-future weathering, optical composite glow, backlit hangar smoke, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "70s space opera: a 1970s film still shot on 35mm, with physical kitbashed model starships, painted matte backgrounds, optical composites and a worn, lived-in future, never modern CGI. Carry it through kitbashed model ships, used-future weathering, optical composite glow, backlit hangar smoke, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {

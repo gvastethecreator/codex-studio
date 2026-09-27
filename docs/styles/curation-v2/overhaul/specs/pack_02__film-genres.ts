@@ -329,7 +329,7 @@ const spec: Spec = {
     'SP02-013': {
       dna: film({
         aesthetic:
-          'Blockbuster teal-and-orange: modern action cinema graded to push skin and fire toward orange and shadows and skies toward teal, with flares and spark bloom.',
+          'Blockbuster teal-and-orange: a live-action film still from a modern action movie, real actors and practical explosions shot on anamorphic 35mm, graded to push skin and fire toward orange and shadows and skies toward teal.',
         color_and_tone:
           'Teal shadows and sky, orange skin, fire and sparks; high contrast and saturation.',
         lighting_and_shadow:
@@ -339,15 +339,15 @@ const spec: Spec = {
           'Low heroic angles, slow-motion feel, subject silhouetted against fire or sky.',
         atmosphere_and_mood: 'Loud and epic, spectacle at maximum volume.',
         rendering_and_quality:
-          'Glossy digital cinema grade with clean bloom; no muted natural color.',
+          'Photographic live-action frame with real skin texture, lens flares and a glossy cinema grade; never a painting or illustration.',
         key_features:
           'teal and orange grade; heroic low angle; sparks and embers; anamorphic flares; rim-lit silhouette',
       }),
-      avoid: [...BASE, 'natural color', 'flat light'],
+      avoid: [...BASE, 'natural color', 'flat light', 'digital painting', 'fantasy illustration'],
       briefs: [
-        'Blockbuster teal-and-orange film still of an adult dragon rider leaping from a crumbling tower as a fireball erupts below, teal storm sky, orange fire on her armor, sparks everywhere. No text or logo.',
-        'Blockbuster still of an adult siege engineer silhouetted against a burning trebuchet at dusk, embers spiraling, heroic low angle, anamorphic flare. No text or logo.',
-        'Blockbuster still of a great stone bridge collapsing into a gorge as adult cavalry gallop across, orange dust and teal river mist, slow-motion debris. No text or logo.',
+        'A live-action action-movie still of an adult wedding caterer sprinting out of a harbor warehouse with a three-tier cake in her arms as a fireball blooms behind her, teal dusk sky, orange fire across her apron, sparks everywhere. No text or logo.',
+        'Shot from a heroic low angle, an adult crossing guard stands silhouetted on the roof of a school bus that has stopped just short of a burning oil tanker, embers spiraling and an anamorphic flare across the frame. No text or logo.',
+        'In slow motion, a suspension bridge collapses into a river gorge while an adult ice-cream vendor pedals his cart across the last intact span, orange dust, teal river mist and chunks of concrete hanging in the air. No text or logo.',
       ],
     },
     'SP02-014': {
@@ -401,7 +401,7 @@ const spec: Spec = {
     'SP02-016': {
       dna: film({
         aesthetic:
-          '70s space opera: practical-effects science fiction with kitbashed model starships, optical composites and a worn, lived-in future.',
+          '70s space opera: a 1970s film still shot on 35mm, with physical kitbashed model starships, painted matte backgrounds, optical composites and a worn, lived-in future, never modern CGI.',
         color_and_tone:
           'Worn ochre, grey panel, dusty olive and beige, with glowing engine blues and blaster reds.',
         lighting_and_shadow:
@@ -412,15 +412,15 @@ const spec: Spec = {
           'Model ships passing close to the lens, wide desert or hangar vistas, optical glow around engines.',
         atmosphere_and_mood: 'Adventurous and scrappy, a used universe full of possibility.',
         rendering_and_quality:
-          'Film grain and slight optical-composite matte lines; no franchise ships or costumes.',
+          'Visible 35mm grain, soft period lenses, gentle halation and lower dynamic range, with slight optical-composite matte lines around models.',
         key_features:
           'kitbashed model ships; used-future weathering; optical composite glow; backlit hangar smoke; film grain',
       }),
-      avoid: [...BASE, 'cgi', 'franchise starship design'],
+      avoid: [...BASE, 'cgi', 'modern digital render', 'franchise starship design'],
       briefs: [
-        '70s space-opera film still of an adult smuggler repairing the battered landing strut of a kitbashed freighter on a desert moon, twin suns low, oil-stained flight suit. No text or logo.',
-        '70s space-opera still of a greebled model dreadnought gliding past a ringed planet, optical glow around its engines, faint matte lines. No text or logo.',
-        '70s space-opera still of a hangar crowded with mismatched ships and adult mechanics in orange suits, backlit smoke and hanging work lights. No text or logo.',
+        'On a desert moon under two low suns, an adult travelling dentist repairs the landing strut of her battered kitbashed clinic ship with a wrench while a queue of patients in ponchos waits in its shadow, shot on grainy 35mm. No text or logo.',
+        'A greebled model cargo barge hauling a whole floating orchard of fruit trees glides past a ringed planet, optical glow around its engines, faint matte lines and film grain. No text or logo.',
+        'Inside a smoky hangar crowded with mismatched ships, adult mechanics in orange suits hold a retirement party for a rusted shuttle draped in paper streamers, backlit haze and hanging work lights. No text or logo.',
       ],
     },
   },

@@ -10,7 +10,10 @@
     "preserve": "Facial value separation and restrained retouching.",
     "proposedAction": "Keep document-photo profiles separate from reusable portrait treatment.",
     "validation": "Apply the treatment to a pitcher; only the document profile may enforce its crop.",
-    "evidencePresetIds": ["SP01-001", "SP01-010"],
+    "evidencePresetIds": [
+      "SP01-001",
+      "SP01-010"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -25,7 +28,10 @@
     "preserve": "Direction, softness, falloff and color relationships.",
     "proposedAction": "Overhaul v2: all 15 lights rewritten as modifiers that name source position, size, hardness, falloff and color and keep the prompt's subject and setting; 5 new lights (dappled leaf, horror underlight, theatrical follow spot, moonlight, lightning flash) bring the category to 20, pending cards.",
     "validation": "A requested midday interior must not acquire a sunset landscape.",
-    "evidencePresetIds": ["SP01-031", "SP01-038"],
+    "evidencePresetIds": [
+      "SP01-031",
+      "SP01-038"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -40,7 +46,10 @@
     "preserve": "Grain scale, contrast curve and highlight behavior.",
     "proposedAction": "Overhaul v2: all 13 stocks and processes rewritten as capture modifiers (emulsion color, grain, contrast curve, halation, lens) that keep the prompt's subject and setting and add no borders; inherited 'noisy'/'blurry' negatives removed where they suppressed grain; renamed SP01-018 Wet Plate Ambrotype, SP01-019 Black-and-White Infrared Film and SP01-026 Pinhole Long Exposure to stop overlapping Photography Eras; 7 new processes (redscale, Super 8, pushed Tri-X, cross-processed slide, bleach bypass, lith print, film soup) bring the category to 20, pending cards.",
     "validation": "Compare the same subject and framing under each emulsion-like response.",
-    "evidencePresetIds": ["SP01-011", "SP01-017"],
+    "evidencePresetIds": [
+      "SP01-011",
+      "SP01-017"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -55,7 +64,10 @@
     "preserve": "Observational framing and camera-specific geometry.",
     "proposedAction": "Overhaul v2: 9 presets rewritten; GoPro, drone and new viewpoint presets are profiles that own only the camera, documentary treatments witness the prompt without adding events; 11 new presets (layered color, telephoto compression, hard shadow, reflections, slow shutter, over-under, typology, oblique aerial, frame-within-frame, humanist, high-ISO night) bring the category to 20, pending cards.",
     "validation": "Street treatment must not turn an object request into a street scene.",
-    "evidencePresetIds": ["SP01-023", "SP01-060"],
+    "evidencePresetIds": [
+      "SP01-023",
+      "SP01-060"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -70,7 +82,10 @@
     "preserve": "Material clarity and controlled commercial lighting.",
     "proposedAction": "Overhaul v2: 14 presets rewritten so each keeps the supplied object and owns only its commercial mechanism; flat lay, packshot, e-commerce and ghost mannequin declare that they own the camera or backdrop; 6 new presets (dark chiaroscuro food, twilight exterior, hard-light glass, lifestyle in-hand, color-block set, ghost mannequin) bring the category to 20, pending cards.",
     "validation": "Preserve a supplied object; flat lay should change camera only when selected.",
-    "evidencePresetIds": ["SP01-049", "SP01-071"],
+    "evidencePresetIds": [
+      "SP01-049",
+      "SP01-071"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -85,7 +100,10 @@
     "preserve": "Depth handling, fine-detail scale and tonal separation.",
     "proposedAction": "Overhaul v2: 6 presets rewritten as nature-photography approaches that keep the requested subject (an animal request stays an animal); astrophotography limited to telescope deep-sky; 14 new presets (bird in flight, camera trap, long-exposure seascape, Milky Way nightscape, supercell storm, intimate forest, backlit botanical, high-key snow, low-key rim-lit, focus-stacked specimen, nature abstract, wide-angle habitat, minimalist fog, blackwater dive) bring the category to 20, pending cards.",
     "validation": "An animal request must not become a mountain merely because landscape tone was selected.",
-    "evidencePresetIds": ["SP01-047", "SP01-054"],
+    "evidencePresetIds": [
+      "SP01-047",
+      "SP01-054"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -100,7 +118,10 @@
     "preserve": "Distinct sensor transfer curves and acquisition artifacts.",
     "proposedAction": "Overhaul v2: 12 presets rewritten; CCTV, dashcam, forensic, medical, Brenizer and tiny planet declare the viewpoint or framing they own, thermal and long exposure transfer as signal modifiers; SP01-028 renamed Ironbow Thermal Imaging (pack_02 has Thermal Camera); SP01-030 limited to false-color space-telescope mapping; 8 new lab and camera techniques (schlieren, photoelastic, slit-scan, chronophotography, tiny planet, UV fluorescence, Kirlian, borescope) bring the category to 20, pending cards.",
     "validation": "Thermal color may transfer; a CCTV overlay requires the capture profile.",
-    "evidencePresetIds": ["SP01-025", "SP01-059"],
+    "evidencePresetIds": [
+      "SP01-025",
+      "SP01-059"
+    ],
     "status": "text-reviewed",
     "visualValidation": "passed"
   },
@@ -110,12 +131,15 @@
     "displayCategory": "Cinema languages",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "92b306e4cce6c5760bcc602ea8b49e769519b79639d876840383729e8f6c0dfd",
+    "baselineHash": "21e339eb2d5ef53bb78b786b75479730870ed8ea8758afd8c2b77e65f4c29f56",
     "problem": "Genre names also carry wardrobe, sets and expected story situations.",
     "preserve": "Contrast design, shot rhythm and photographic finish.",
     "proposedAction": "Overhaul v2: 16 genres rewritten as cinema treatments (camera, light, stock, grade) that keep the prompt's setting and add no genre costumes or plot; franchise and real-name references removed from DNA; SP02-010 renamed 70s Kung Fu Studio Epic and SP02-012 Symmetrical Storybook Cinema because names enter the prompt; 4 new genres (German Expressionist, 80s sword-and-sorcery, Italian neorealism, peplum) bring the category to 20, pending cards.",
     "validation": "An ordinary domestic activity must retain its setting under film-noir treatment.",
-    "evidencePresetIds": ["SP02-001", "SP02-009"],
+    "evidencePresetIds": [
+      "SP02-001",
+      "SP02-009"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -130,9 +154,12 @@
     "preserve": "Signal cadence, set-light grammar and broadcast framing.",
     "proposedAction": "Overhaul v2: 23 broadcast formats rewritten; treatments keep the prompt's content and never add a presenter, host or ticker, while graphic formats (bulletin crawl, forecast, radar, replay, security quad split, signal break) own the layout with textless shapes; the six near-duplicate pairs are separated by mechanism (set grammar vs tape signal, studio look vs chroma key, amateur studio vs bulletin slide, split-screen vs demo gloss, live feed vs telestrator replay, forecast map vs radar sweep); renamed Fisheye Glam Music Video, 90s Grunge Music Video and Marker-Edge Improvised Sitcom Cartoon to drop real names and brands.",
     "validation": "A video treatment must not add a presenter or fabricated ticker.",
-    "evidencePresetIds": ["SP02-017", "SP02-028"],
+    "evidencePresetIds": [
+      "SP02-017",
+      "SP02-028"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
@@ -145,9 +172,12 @@
     "preserve": "Line economy, cel boundaries, painted backgrounds and stop-motion cues.",
     "proposedAction": "Overhaul v2: 15 animation media rewritten so the subject is redrawn in the medium and no studio cast or mascot is added; nine studio or franchise names replaced by technique names (they reach the card-generation prompt); 5 new media (shadow-puppet silhouette, pinscreen, charcoal erasure, 70s limited TV, direct-on-film) bring the category to 20, pending cards.",
     "validation": "A non-character subject must retain its identity without a studio-like cast.",
-    "evidencePresetIds": ["SP02-031", "SP02-038"],
+    "evidencePresetIds": [
+      "SP02-031",
+      "SP02-038"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
@@ -160,9 +190,13 @@
     "preserve": "Emulsion response, tonal range and process-specific surfaces.",
     "proposedAction": "Overhaul v2: 12 historic processes rewritten as modifiers that keep a modern subject modern and own only the process, print surface and plate or print edges; overlaps with pack_01 film stocks separated (projected Kodachrome slide, physical Polaroid print, 90s lab print, Holga leaks, glass negative, color infrared, paper-negative pinhole); SP02-129 kept; 7 new processes (salt print, albumen carte de visite, pictorialist platinum, hand-colored lantern slide, mammoth plate, 1970s faded print, 1980s pocket Instamatic) bring the category to 20, pending cards.",
     "validation": "A modern appliance remains modern under a historical photo process.",
-    "evidencePresetIds": ["SP02-046", "SP02-052", "SP02-129"],
+    "evidencePresetIds": [
+      "SP02-046",
+      "SP02-052",
+      "SP02-129"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
@@ -175,9 +209,12 @@
     "preserve": "Cinematic contrast ratios and motivated light direction.",
     "proposedAction": "Overhaul v2: 20 cinematic lights rewritten as film-set lighting modifiers (large sources, negative fill, haze, practicals, grade) that keep content and location constant; 12 names that duplicated pack_01 Lighting Techniques renamed to their cinema variant (Magic Hour Backlight, Blue Hour Cinematography, Cinematic Chiaroscuro Key, Neon Practical Noir, Hazed Window Shafts, Cinematic Silhouette Backdrop, Cinematic Split Key, Old Hollywood Beauty Key, Candlelit Low-Light Cinema, Bioluminescent Fantasy Glow, Club Strobe Stutter, Motion Light Trails) and SP02-080 to Anamorphic Overflare; old names kept as search aliases. Duplicate catalog names made specific.",
     "validation": "Keep content constant and distinguish the light, not a changed location.",
-    "evidencePresetIds": ["SP02-061", "SP02-071"],
+    "evidencePresetIds": [
+      "SP02-061",
+      "SP02-071"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
@@ -190,7 +227,10 @@
     "preserve": "Shape exaggeration, line character and comedic visual timing.",
     "proposedAction": "Overhaul v2: authored DNA kept; 17 names that were show titles or a real person replaced by their drawing mechanism (old names kept as search aliases); 3 new briefs per preset with no repeated subject and only one slime monster (the preset that asks for it). Awkward 'X-free' phrasing in DNA rewritten.",
     "validation": "A household object can use caricature without becoming a named character or topical scene.",
-    "evidencePresetIds": ["SP02-081", "SP02-103"],
+    "evidencePresetIds": [
+      "SP02-081",
+      "SP02-103"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -205,9 +245,12 @@
     "preserve": "X-ray, thermal and low-light signal differences.",
     "proposedAction": "Overhaul v2: X-ray, thermal and night vision rewritten as sensor profiles that add no readouts or diagnoses (thermal is now white-hot greyscale, distinct from pack_01 ironbow); 17 new sensor outputs (ultrasound, MRI, CT volume, side-scan sonar, radar scope, multispectral and SAR satellite, starlight camera, scintigraphy, hyperspectral cube, seismic section, ground-penetrating radar, cloud and bubble chambers, retinal fundus, confocal fluorescence, night lights) bring the category to 20, pending cards; lab techniques stay in pack_01::7 and CGI passes go to pack_03::8.",
     "validation": "Verify no invented medical claim or diagnostic label is added to an image.",
-    "evidencePresetIds": ["SP02-058", "SP02-059"],
+    "evidencePresetIds": [
+      "SP02-058",
+      "SP02-059"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
@@ -220,9 +263,12 @@
     "preserve": "Tool marks, surface resistance and limited-color drawing.",
     "proposedAction": "Overhaul v2: 6 DIY media rewritten so the subject is drawn with the tool on the support and the support is never added as an object (the skateboard graphic no longer draws a board); brand and site references removed; 14 new supports and tools (notebook margin ballpoint, sticky-note mosaic, toy screen line, fogged mirror, beach sand, carved desk, kraft bag, graph-paper pixels, dusty car window, crayon rubbing, skin doodle, glowing peg board, gear-ring spirals, bedsheet banner) bring the category to 20, pending cards.",
     "validation": "The subject stays intact; a drawing treatment must not add a skateboard.",
-    "evidencePresetIds": ["SP02-091", "SP02-096"],
+    "evidencePresetIds": [
+      "SP02-091",
+      "SP02-096"
+    ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -235,7 +281,10 @@
     "preserve": "Sampling finish, specular handling, bounce-light and edge behavior.",
     "proposedAction": "Overhaul v2: 10 renderer presets rewritten by observable light transport, sampling and material behavior rather than brand (spectral dispersion and glare, real-time GI with TAA softness, biased motion-graphics GI, film VFX subsurface and volumes, principled denoised path tracing, archviz sun and sky, product HDRI swatches, feature-animation colored shadows, matcap sculpt, post-heavy game pipeline); SP03-008 renamed Feature Animation Path Tracer to drop the studio name; 10 new render behaviors (90s scanline, classic raytracer, radiosity, grey clay test, progressive noise, gaussian splats, baked lightmaps, lookdev plate, live-action integration, film-emulated CG) bring the category to 20, pending cards. Awkward 'X-free' phrasing in DNA rewritten.",
     "validation": "Blind comparison should reveal different light/material behavior, not just branding.",
-    "evidencePresetIds": ["SP03-001", "SP03-006"],
+    "evidencePresetIds": [
+      "SP03-001",
+      "SP03-006"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -250,7 +299,10 @@
     "preserve": "Refraction, scattering, roughness and specular response.",
     "proposedAction": "Overhaul v2: 13 CGI materials rewritten as modifiers that change only the target's material (shape, surroundings, light setup and camera kept); caustics made a light response of the named glass or water; 7 new material responses not already in pack_09 (thin-film iridescence, molten glowing metal, precious opal, gummy candy, pearlescent flake paint, aerogel, amber resin inclusion) bring the category to 20, pending cards. Awkward 'X-free' phrasing in DNA rewritten.",
     "validation": "Only the requested target changes material; surroundings and camera remain unchanged.",
-    "evidencePresetIds": ["SP03-011", "SP03-018"],
+    "evidencePresetIds": [
+      "SP03-011",
+      "SP03-018"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -265,7 +317,10 @@
     "preserve": "Global illumination, shadow softness and light-volume behavior.",
     "proposedAction": "Overhaul v2: 8 CGI lights rewritten as rendered lighting setups that keep geometry, setting and camera (neutral product geometry unchanged); fog and shaft presets add only the medium their own lights need; SP03-038 renamed Rendered Rim Light Rig and SP03-041 Rendered Volumetric Shafts to stop duplicating pack_01 and pack_02 names; 12 new CGI lights (emissive-only, IES wall wash, physical sky, volumetric cloud linings, gobo patterns, RGB colored shadows, two-tone ramp, overcast dome, hard noon sun, stadium multi-shadow, aurora, eclipse) bring the category to 20, pending cards.",
     "validation": "Neutral product geometry remains unchanged when lighting is replaced.",
-    "evidencePresetIds": ["SP03-031", "SP03-037"],
+    "evidencePresetIds": [
+      "SP03-031",
+      "SP03-037"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -280,7 +335,10 @@
     "preserve": "Mesh simplification and stylized surface construction.",
     "proposedAction": "Overhaul v2: 20 stylized 3D presets rewritten; media (clay, low poly, voxel, metaballs, NURBS, fractal, glitch, toon, papercraft, toy bricks, origami) keep the requested view, while isometric, knolling, app icon and clay UI declare the view or layout they own; SP03-070 now means the 90s pre-rendered CD-ROM scene to stay distinct from the new 90s renderer presets; SP03-077 renamed Toy Brick-Built 3D to drop the brand; 3D typography uses invented glyphs.",
     "validation": "Switch media without changing requested view; selecting isometric is an explicit exception.",
-    "evidencePresetIds": ["SP03-015", "SP03-040"],
+    "evidencePresetIds": [
+      "SP03-015",
+      "SP03-040"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -295,7 +353,10 @@
     "preserve": "Edge treatment, contact shadows and manufactured construction.",
     "proposedAction": "Overhaul v2: 11 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 9 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_03__hard-surface-and-product-cgi.md.",
     "validation": "A hero product image must not become a multi-view asset sheet without a request.",
-    "evidencePresetIds": ["SP03-025", "SP03-053"],
+    "evidencePresetIds": [
+      "SP03-025",
+      "SP03-053"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -310,7 +371,10 @@
     "preserve": "Organic shading, soft volumes and anatomical readability.",
     "proposedAction": "Overhaul v2: 7 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 13 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_03__organic-character-and-bio-cgi.md.",
     "validation": "Do not force a person into a T-pose or transform a requested object into an avatar.",
-    "evidencePresetIds": ["SP03-049", "SP03-057"],
+    "evidencePresetIds": [
+      "SP03-049",
+      "SP03-057"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -325,7 +389,10 @@
     "preserve": "Depth organization and environment-specific material logic.",
     "proposedAction": "Overhaul v2: 9 presets rewritten with concrete mechanisms; 11 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_03__environment-and-worldbuilding.md.",
     "validation": "A retained environment direction is labeled as such; portable variants preserve the user's location.",
-    "evidencePresetIds": ["SP03-033", "SP03-060"],
+    "evidencePresetIds": [
+      "SP03-033",
+      "SP03-060"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -340,7 +407,10 @@
     "preserve": "Shader transfer functions and hidden-surface representation.",
     "proposedAction": "Overhaul v2: 2 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 18 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_03__sensor-and-technical-shaders.md.",
     "validation": "Compare identical geometry in sensor-capture and CGI-shader representations.",
-    "evidencePresetIds": ["SP03-043", "SP03-044"],
+    "evidencePresetIds": [
+      "SP03-043",
+      "SP03-044"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -355,7 +425,10 @@
     "preserve": "Inking, shadow mass, halftone and contour hierarchy.",
     "proposedAction": "Overhaul v2: 14 presets rewritten with concrete mechanisms; 3 renamed (old names kept as search aliases); 6 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__comic-book-styles.md.",
     "validation": "A single requested image must not grow panels or speech balloons automatically.",
-    "evidencePresetIds": ["SP04-001", "SP04-008"],
+    "evidencePresetIds": [
+      "SP04-001",
+      "SP04-008"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -370,7 +443,10 @@
     "preserve": "Accessible silhouettes, shape simplification and medium handling.",
     "proposedAction": "Overhaul v2: 14 presets rewritten with concrete mechanisms; 3 renamed (old names kept as search aliases); 6 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__children-s-illustration.md.",
     "validation": "A character's proportions remain stable unless the selected profile explicitly changes them.",
-    "evidencePresetIds": ["SP04-013", "SP04-024"],
+    "evidencePresetIds": [
+      "SP04-013",
+      "SP04-024"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -385,7 +461,10 @@
     "preserve": "Graphic hierarchy, ink layers and surface reproduction.",
     "proposedAction": "Overhaul v2: 17 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 3 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__editorial-and-poster.md.",
     "validation": "An image treatment does not invent slogans, frames or a poster layout.",
-    "evidencePresetIds": ["SP04-015", "SP04-038"],
+    "evidencePresetIds": [
+      "SP04-015",
+      "SP04-038"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -400,7 +479,10 @@
     "preserve": "Economical value studies and readable design exploration.",
     "proposedAction": "Overhaul v2: 29 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 3 card briefs per preset for all 29; details in overhaul/audits/pack_04__concept-art.md.",
     "validation": "The selected deliverable controls layout; a paint method alone does not.",
-    "evidencePresetIds": ["SP04-046", "SP04-082"],
+    "evidencePresetIds": [
+      "SP04-046",
+      "SP04-082"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -415,7 +497,10 @@
     "preserve": "Differences in cut, bite, pressure, hatching and negative space.",
     "proposedAction": "Overhaul v2: 20 presets rewritten with concrete mechanisms; 5 renamed (old names kept as search aliases); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__ink-and-print.md.",
     "validation": "The same neutral subject should reveal identifiable differences between linocut, etching and scratchboard.",
-    "evidencePresetIds": ["SP04-023", "SP04-070"],
+    "evidencePresetIds": [
+      "SP04-023",
+      "SP04-070"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -430,7 +515,10 @@
     "preserve": "Views, callout hierarchy and diagram readability.",
     "proposedAction": "Overhaul v2: 6 presets rewritten with concrete mechanisms; 14 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__technical-and-reference-sheets.md.",
     "validation": "A reference sheet remains a sheet; no placeholder gibberish is presented as valid technical data.",
-    "evidencePresetIds": ["SP04-057", "SP04-094"],
+    "evidencePresetIds": [
+      "SP04-057",
+      "SP04-094"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -445,7 +533,10 @@
     "preserve": "Contour energy, value blocks and motion emphasis.",
     "proposedAction": "Overhaul v2: 40 presets rewritten with concrete mechanisms; 27 renamed (old names kept as search aliases); 3 card briefs per preset for all 40; details in overhaul/audits/pack_05__modern-shonen-action.md.",
     "validation": "An ordinary quiet activity keeps its action and location under the drawing style.",
-    "evidencePresetIds": ["SP05-021", "SP05-125"],
+    "evidencePresetIds": [
+      "SP05-021",
+      "SP05-125"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -460,7 +551,10 @@
     "preserve": "Mechanical line precision, hard shadows and color separation.",
     "proposedAction": "Overhaul v2: 30 presets rewritten with concrete mechanisms; 3 card briefs per preset for all 30; details in overhaul/audits/pack_05__mecha-cyberpunk.md.",
     "validation": "A requested plant remains a plant rather than becoming a robot or hangar scene.",
-    "evidencePresetIds": ["SP05-051", "SP05-226"],
+    "evidencePresetIds": [
+      "SP05-051",
+      "SP05-226"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -475,7 +569,10 @@
     "preserve": "Painted atmosphere, cel softness and material stylization.",
     "proposedAction": "Overhaul v2: 30 fantasy-anime finishes rewritten with concrete line, shadow, background and finish mechanisms and pulled apart where they overlapped; 27 anime-title names renamed to their look (old names kept as search aliases); a neutral household task stays that task; 90 new briefs with original adult characters.",
     "validation": "A neutral household task must not become a fantasy quest or cooking vignette.",
-    "evidencePresetIds": ["SP05-091", "SP05-246"],
+    "evidencePresetIds": [
+      "SP05-091",
+      "SP05-246"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -490,7 +587,10 @@
     "preserve": "Value compression, sharpness hierarchy and controlled unease.",
     "proposedAction": "Overhaul v2: 30 presets rewritten with concrete mechanisms; 1 renamed (old names kept as search aliases); 3 card briefs per preset for all 30; details in overhaul/audits/pack_05__dark-fantasy-seinen.md.",
     "validation": "A gentle prompt remains gentle in content while its visual treatment changes.",
-    "evidencePresetIds": ["SP05-061", "SP05-266"],
+    "evidencePresetIds": [
+      "SP05-061",
+      "SP05-266"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -505,7 +605,10 @@
     "preserve": "Directional energy and clear action hierarchy.",
     "proposedAction": "Overhaul v2: 5 presets rewritten with concrete mechanisms; 15 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_05__action-motion-setpieces.md.",
     "validation": "Use a requested action and verify that its staging improves without inventing opponents, sports gear, extra props or danger.",
-    "evidencePresetIds": ["SP13-021", "SP13-023"],
+    "evidencePresetIds": [
+      "SP13-021",
+      "SP13-023"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -520,7 +623,10 @@
     "preserve": "Brush load, edge transitions, opacity and layering.",
     "proposedAction": "Overhaul v2: 15 presets rewritten with concrete mechanisms; 5 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__traditional-painting.md.",
     "validation": "Changing medium alters edges and layering while subject and framing remain constant.",
-    "evidencePresetIds": ["SP06-001", "SP06-008"],
+    "evidencePresetIds": [
+      "SP06-001",
+      "SP06-008"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -535,7 +641,10 @@
     "preserve": "Pressure, line continuity, erasure, smudge and paper response.",
     "proposedAction": "Overhaul v2: 15 presets rewritten with concrete mechanisms; 4 renamed (old names kept as search aliases); 5 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__drawing-sketching.md.",
     "validation": "Graphite, charcoal and pen remain distinguishable on the same simple object.",
-    "evidencePresetIds": ["SP06-016", "SP06-023"],
+    "evidencePresetIds": [
+      "SP06-016",
+      "SP06-023"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -550,7 +659,10 @@
     "preserve": "Ink transfer, plate marks, registration and substrate behavior.",
     "proposedAction": "Overhaul v2: 15 presets rewritten with concrete mechanisms; 4 renamed (old names kept as search aliases); 5 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__printmaking.md.",
     "validation": "Blind comparisons must distinguish the process without requiring a particular scene.",
-    "evidencePresetIds": ["SP06-031", "SP06-038"],
+    "evidencePresetIds": [
+      "SP06-031",
+      "SP06-038"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -565,7 +677,10 @@
     "preserve": "Edge economy, fill logic and digital mark handling.",
     "proposedAction": "Overhaul v2: 15 presets rewritten with concrete mechanisms; 5 renamed (old names kept as search aliases); 5 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__digital-art.md.",
     "validation": "A digital painting preset must not force a concept board or 3D object render.",
-    "evidencePresetIds": ["SP06-046", "SP06-053"],
+    "evidencePresetIds": [
+      "SP06-046",
+      "SP06-053"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -580,7 +695,10 @@
     "preserve": "Layer order, adhesion, stitch and substrate interaction.",
     "proposedAction": "Overhaul v2: 20 presets rewritten with concrete mechanisms; 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__mixed-media.md.",
     "validation": "A stitched image effect must not silently replace a person's clothing or anatomy.",
-    "evidencePresetIds": ["SP06-061", "SP06-071"],
+    "evidencePresetIds": [
+      "SP06-061",
+      "SP06-071"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -595,7 +713,10 @@
     "preserve": "Pixel clusters, palette allocation, dithering and deliberate resolution.",
     "proposedAction": "Overhaul v2: 20 presets rewritten with concrete mechanisms; 15 renamed (old names kept as search aliases); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__retro-game-visual-systems.md.",
     "validation": "A fixed-camera subject demonstrates cluster differences; perspective changes require the profile.",
-    "evidencePresetIds": ["SP06-081", "SP06-091"],
+    "evidencePresetIds": [
+      "SP06-081",
+      "SP06-091"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -610,7 +731,10 @@
     "preserve": "Readability at game scale and coherent interface/asset construction.",
     "proposedAction": "Overhaul v2: 20 presets rewritten with concrete mechanisms; 2 renamed (old names kept as search aliases); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__game-art-directions-ui.md.",
     "validation": "A sprite stays an asset unless gameplay or interface layout is explicitly requested.",
-    "evidencePresetIds": ["SP06-101", "SP06-111"],
+    "evidencePresetIds": [
+      "SP06-101",
+      "SP06-111"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -625,7 +749,10 @@
     "preserve": "Spatial material palettes and furniture/construction vocabulary.",
     "proposedAction": "Overhaul v2: 16 presets rewritten with concrete mechanisms; 4 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__interior-design-systems.md.",
     "validation": "Preserve requested room function and constraints; do not add the sample furniture bundle.",
-    "evidencePresetIds": ["SP07-001", "SP07-013"],
+    "evidencePresetIds": [
+      "SP07-001",
+      "SP07-013"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -640,7 +767,10 @@
     "preserve": "Massing, facade rhythm and construction logic.",
     "proposedAction": "Overhaul v2: 13 presets rewritten with concrete mechanisms; 7 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__architectural-movements-and-vernaculars.md.",
     "validation": "A preserve-mode photo is not structurally rebuilt; reinterpretation can apply requested design changes.",
-    "evidencePresetIds": ["SP07-006", "SP07-024"],
+    "evidencePresetIds": [
+      "SP07-006",
+      "SP07-024"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -655,7 +785,10 @@
     "preserve": "Patina, circulation and domain-specific spatial organization.",
     "proposedAction": "Overhaul v2: 9 presets rewritten with concrete mechanisms; 11 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__civic-infrastructure-and-specialty-spaces.md.",
     "validation": "A requested room must not become a station or library under a surface treatment.",
-    "evidencePresetIds": ["SP07-032", "SP07-036"],
+    "evidencePresetIds": [
+      "SP07-032",
+      "SP07-036"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -670,7 +803,10 @@
     "preserve": "Ground-plane rhythm, planting density and path hierarchy.",
     "proposedAction": "Overhaul v2: 10 presets rewritten with concrete mechanisms; 10 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__landscape-and-garden-systems.md.",
     "validation": "Do not introduce a garden where no landscape transformation was requested.",
-    "evidencePresetIds": ["SP07-041", "SP07-046"],
+    "evidencePresetIds": [
+      "SP07-041",
+      "SP07-046"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -685,7 +821,10 @@
     "preserve": "Scale relationships, silhouettes and construction motifs.",
     "proposedAction": "Overhaul v2: 13 presets rewritten with concrete mechanisms; 7 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__fantasy-and-mythic-architecture.md.",
     "validation": "A neutral structure keeps its function without receiving a fixed fantasy landmark.",
-    "evidencePresetIds": ["SP07-051", "SP07-057"],
+    "evidencePresetIds": [
+      "SP07-051",
+      "SP07-057"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -700,7 +839,10 @@
     "preserve": "Seams, paper thickness, scale cues and handmade construction.",
     "proposedAction": "Overhaul v2: 10 presets rewritten with concrete mechanisms; 10 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__toy-craft-and-miniature-architecture.md. Awkward 'X-free' phrasing in DNA rewritten.",
     "validation": "A requested object can use miniature construction without turning into a building.",
-    "evidencePresetIds": ["SP07-065", "SP07-070"],
+    "evidencePresetIds": [
+      "SP07-065",
+      "SP07-070"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -715,7 +857,10 @@
     "preserve": "Repetition, circulation and deliberate geometric discontinuity.",
     "proposedAction": "Overhaul v2: 9 presets rewritten with concrete mechanisms; 11 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__megastructure-and-impossible-space.md.",
     "validation": "Requested geometry remains stable in preserve mode; a paradox profile advertises structural change.",
-    "evidencePresetIds": ["SP07-010", "SP07-076"],
+    "evidencePresetIds": [
+      "SP07-010",
+      "SP07-076"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -730,7 +875,10 @@
     "preserve": "Cut, proportion, garment construction and fabric behavior.",
     "proposedAction": "Retain as wardrobe directions requiring deliberate clothing changes. Overhaul: DNA rewritten per garment system (fit, fabric, palette, fashion light) and 11 new wardrobe directions added to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A preserved outfit is unchanged; a wardrobe request changes clothing, not identity or location.",
-    "evidencePresetIds": ["SP08-001", "SP08-016"],
+    "evidencePresetIds": [
+      "SP08-001",
+      "SP08-016"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -745,7 +893,10 @@
     "preserve": "Garment layering, utility and material combinations.",
     "proposedAction": "Focus wardrobe rules; leave venue, props and social narrative to the user. Overhaul: DNA rewritten per subculture garment code and 5 new directions (emo scene, visual kei, mod, decora, metal battle vest) added to reach 20. Awkward 'X-free' phrasing in DNA rewritten. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Changing attire does not automatically add a festival, vehicle or street scene.",
-    "evidencePresetIds": ["SP08-002", "SP08-023"],
+    "evidencePresetIds": [
+      "SP08-002",
+      "SP08-023"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -760,7 +911,10 @@
     "preserve": "Garment structure and recognizable construction references.",
     "proposedAction": "Keep provenance specific; separate wardrobe transformation from historical environment. Overhaul: DNA rewritten as period garment systems that leave the setting to the prompt, and 9 new period wardrobes (Byzantine, Heian, Regency, Ottoman, medieval working dress, 1940s utility, Belle Epoque, Tang, Mughal) added to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A modern setting stays modern when only the costume is requested.",
-    "evidencePresetIds": ["SP08-011", "SP08-034"],
+    "evidencePresetIds": [
+      "SP08-011",
+      "SP08-034"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -775,7 +929,10 @@
     "preserve": "Fastening, silhouette, protective layers and constructed detail.",
     "proposedAction": "Transfer distinct garment construction and material behavior while preserving the requested wearer, role and setting. Overhaul: three briefs per preset on varied wearers and settings to test identity retention, plus Chitin Insectoid Armor to reach 20. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A new outfit preserves identity, pose and requested role.",
-    "evidencePresetIds": ["SP08-006", "SP08-045"],
+    "evidencePresetIds": [
+      "SP08-006",
+      "SP08-045"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -790,7 +947,10 @@
     "preserve": "Weave, drape, gloss and surface response.",
     "proposedAction": "Split local textile treatment from whole-object material replacement; require explicit targets. Overhaul: every preset now declares its target (garments only, or whole figure) in subject_treatment, DNA rewritten per material behavior, and three briefs per preset. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Only the selected garment or object changes material.",
-    "evidencePresetIds": ["SP08-051", "SP08-064"],
+    "evidencePresetIds": [
+      "SP08-051",
+      "SP08-064"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -805,7 +965,10 @@
     "preserve": "Grain, pores, scale, reflectance and surface irregularity.",
     "proposedAction": "Keep material identity, remove sample-object/setting language and require an explicit target. Overhaul: DNA rewritten per material behavior with an explicit target rule and no habitat cues; three briefs per preset apply the material to unexpected targets. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Raw oak applies to the requested object, not a mandatory plank at a lumber yard.",
-    "evidencePresetIds": ["SP09-001", "SP09-012"],
+    "evidencePresetIds": [
+      "SP09-001",
+      "SP09-012"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -820,7 +983,10 @@
     "preserve": "Manufacturing marks, seams, roughness and directional finish.",
     "proposedAction": "Separate material from source product; retain assembly profiles for structures like chain link. Overhaul: DNA describes the finish, not the source object, with explicit targets; three briefs per preset. Brand-named presets renamed: Velcro to Hook-and-Loop Fastener, Styrofoam to Expanded Polystyrene Foam. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Brushed metal treatment does not replace the target with its source product.",
-    "evidencePresetIds": ["SP09-017", "SP09-042"],
+    "evidencePresetIds": [
+      "SP09-017",
+      "SP09-042"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -835,7 +1001,10 @@
     "preserve": "Local wear, deposition, staining and age gradients.",
     "proposedAction": "Make damage intensity and target explicit; keep structural collapse out of mild surface modifiers. Overhaul: every preset is a surface-level treatment with default moderate intensity and intact structure, plus 7 new weathering modes (salt crust, sun fade, soot, woodworm, acid etch, lichen, ash fall) to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A lightly weathered object does not become a ruin or change silhouette.",
-    "evidencePresetIds": ["SP09-018", "SP09-036"],
+    "evidencePresetIds": [
+      "SP09-018",
+      "SP09-036"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -850,7 +1019,10 @@
     "preserve": "Fibers, dry particle response and frost behavior.",
     "proposedAction": "Author each mechanism separately; avoid applying every tactile verb to every surface. Overhaul: each preset names one hand-feel mechanism, plus 12 new tactile surfaces to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Felt remains fibrous, chalk remains particulate and frost remains crystalline.",
-    "evidencePresetIds": ["SP09-029", "SP09-050"],
+    "evidencePresetIds": [
+      "SP09-029",
+      "SP09-050"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -865,7 +1037,10 @@
     "preserve": "Boundary behavior, motion direction and local light contribution.",
     "proposedAction": "Require a target and contain the effect; separate surface behavior from emitted particles. Overhaul: every effect is contained on or around the named target with no new event, plus 8 new contained effects to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A subtle effect does not engulf the whole image or add unrelated props.",
-    "evidencePresetIds": ["SP09-043", "SP09-057"],
+    "evidencePresetIds": [
+      "SP09-043",
+      "SP09-057"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -880,7 +1055,10 @@
     "preserve": "Plane relationships, repetition and hierarchy of geometric units.",
     "proposedAction": "Rewrite around each system's actual construction; retain provenance and explicit distortion boundaries. Overhaul: DNA rewritten per construction system, Mondrian renamed De Stijl Grid, and 10 new geometric systems added to reach 20. Awkward 'X-free' phrasing in DNA rewritten. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Compare identical content; preserve silhouette unless a structural transform is selected.",
-    "evidencePresetIds": ["SP10-001", "SP10-006"],
+    "evidencePresetIds": [
+      "SP10-001",
+      "SP10-006"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -895,7 +1073,10 @@
     "preserve": "Flow boundaries, pooling, diffusion and layering.",
     "proposedAction": "Separate fluid image-making from adding smoke or liquid objects to a scene. Overhaul: every preset makes the image through its fluid process and never adds liquid props, plus 10 new fluid processes to reach 20. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations. Photographic presets no longer carry illustration-only light and finish wording.",
     "validation": "A fluid illustration remains about the requested subject.",
-    "evidencePresetIds": ["SP10-011", "SP10-016"],
+    "evidencePresetIds": [
+      "SP10-011",
+      "SP10-016"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -910,7 +1091,10 @@
     "preserve": "Block displacement, scan structure, glyph density and dot placement.",
     "proposedAction": "Split signal effects from glyph/print representation; avoid generic blanket noise. Overhaul: each preset declares whether it is a signal failure or a representation unit and applies one unit at controlled strength, plus 10 new artifacts to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Effects remain distinguishable and do not obscure the requested content by default.",
-    "evidencePresetIds": ["SP10-021", "SP10-026"],
+    "evidencePresetIds": [
+      "SP10-021",
+      "SP10-026"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -925,7 +1109,10 @@
     "preserve": "Unexpected formal relationships and controlled ambiguity.",
     "proposedAction": "Separate mood, theme and structural distortion; do not force familiar liminal props or places. Overhaul: each preset declares distortion, mood or theme, artist-named presets renamed to techniques, and 5 new dream mechanisms added to reach 20. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Strangeness emerges from form, not a mandatory corridor or empty pool.",
-    "evidencePresetIds": ["SP10-031", "SP10-038"],
+    "evidencePresetIds": [
+      "SP10-031",
+      "SP10-038"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -940,7 +1127,10 @@
     "preserve": "Repeat, motif scale, orientation and border behavior.",
     "proposedAction": "Treat motif as a surface modifier; make support/output and structural stitches explicit. Overhaul: every motif applies to a named target surface and states whether it is printed, woven, dyed, knitted or stitched; 7 new patterns added to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A pattern follows the requested surface without becoming a wallpaper sample.",
-    "evidencePresetIds": ["SP10-046", "SP10-053"],
+    "evidencePresetIds": [
+      "SP10-046",
+      "SP10-053"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -955,7 +1145,10 @@
     "preserve": "Coherent material response and macro-to-micro scale.",
     "proposedAction": "Compare with pack_09; keep distinct artistic simplifications, group mere palette variants. Overhaul: pack_10 surfaces are decorative surface patterns (figure, veining, motif) distinct from pack_09 physical materials; 9 new decorative finishes added to reach 20. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Same target and lighting reveal whether the variant is materially different.",
-    "evidencePresetIds": ["SP10-048", "SP10-060"],
+    "evidencePresetIds": [
+      "SP10-048",
+      "SP10-060"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -970,7 +1163,10 @@
     "preserve": "Line hierarchy, routing and modular information structure.",
     "proposedAction": "Label stylized diagrams as illustrative; do not claim generated QR or measurements are functional. Overhaul: every diagram preset is illustrative with unreadable marks and no working codes or real data; 15 new diagram languages added to reach 20. Duplicate catalog names made specific.",
     "validation": "Generated decoration is not described as a verified code, circuit or measured plan.",
-    "evidencePresetIds": ["SP10-067", "SP10-069"],
+    "evidencePresetIds": [
+      "SP10-067",
+      "SP10-069"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -985,7 +1181,10 @@
     "preserve": "Dot mixing, tesserae boundaries and leaded-cell structure.",
     "proposedAction": "Keep separate unit construction and light behavior, not just different names. Overhaul: each preset names its unit, joint and light behavior; Seurat preset renamed Pointillism; 17 new unit systems added to reach 20. Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "The same image uses clearly different units without becoming a window or tile sample.",
-    "evidencePresetIds": ["SP10-072", "SP10-073"],
+    "evidencePresetIds": [
+      "SP10-072",
+      "SP10-073"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1000,7 +1199,10 @@
     "preserve": "Glow confinement, metallic transfer and shallow impression.",
     "proposedAction": "Separate emissive modifier from foil and pressure processes; preserve optional output context. Overhaul: each preset is labeled emissive modifier or physical print process with its own light or support rules; 17 new finishes (7 emissive, 10 print) added to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A foil finish must not invent an invitation or mandatory signage.",
-    "evidencePresetIds": ["SP10-078", "SP10-079"],
+    "evidencePresetIds": [
+      "SP10-078",
+      "SP10-079"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1015,7 +1217,10 @@
     "preserve": "Joints, seams, material scale and handmade irregularity.",
     "proposedAction": "Extract craft rendering; keep collectible-body changes as a representation profile. Overhaul: each preset is one construction method, brand names replaced with generic ones (Lego, Funko, Play-Doh), collectible proportion change declared explicitly; 2 new crafts added to reach 20. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A craft image does not become a fixed toy silhouette unless requested.",
-    "evidencePresetIds": ["SP11-001", "SP11-021"],
+    "evidencePresetIds": [
+      "SP11-001",
+      "SP11-021"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1030,7 +1235,10 @@
     "preserve": "Support-specific marks and image hierarchy.",
     "proposedAction": "Rehome by medium; keep tattoo flash layout separate from ink treatment. Overhaul: each preset is one physical making technique, tattoo flash keeps its sheet layout, three vague names made concrete, and 13 mediums checked against the catalog (pyrography, scrimshaw, gyotaku, folded papercut, rosemaling, black lacquer miniature, ink blot, pressed flowers, hooked rug, glass engraving, punched tin, pastiglia, oil on copper). Duplicate catalog names made specific. DNA no longer uses card vocabulary (card size) outside negations. Photographic presets no longer carry illustration-only light and finish wording.",
     "validation": "An ink treatment does not become a tattoo sheet or broadcast puppet scene.",
-    "evidencePresetIds": ["SP11-006", "SP11-019"],
+    "evidencePresetIds": [
+      "SP11-006",
+      "SP11-019"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1045,7 +1253,10 @@
     "preserve": "Palette, clustering and coherent digital finish.",
     "proposedAction": "Split representation limits from thematic directions; remove generic catch-all placement. Overhaul: each aesthetic names the concrete signals that make it recognizable, grimdark drops franchise armor, vague names made concrete (vaporwave mall, psychedelic recursion), and 3 new aesthetics added (goblincore, dungeon synth cassette art, southern gothic). DNA no longer uses card vocabulary (card size) outside negations. Photographic presets no longer carry illustration-only light and finish wording. Punk genre names now live in pack_15; the four aesthetics here are named as aesthetics to stay unique.",
     "validation": "A pixel style must not inject a futuristic world or emoji facial features.",
-    "evidencePresetIds": ["SP11-009", "SP11-037"],
+    "evidencePresetIds": [
+      "SP11-009",
+      "SP11-037"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1060,7 +1271,10 @@
     "preserve": "Food-light response and editorial surface detail.",
     "proposedAction": "Keep recipes that intentionally specify food; extract illumination and illustration separately. Overhaul: food stays the subject (named dishes are shot with the treatment, other subjects are built or plated as food), brand names replaced (Michelin, Candy Land), and 9 new food looks added (medieval feast, night market, retro aspic, preserves, charcuterie, molecular, open fire, pulled sugar, ramen). DNA no longer uses card vocabulary (card size) outside negations. Photographic presets no longer carry illustration-only light and finish wording.",
     "validation": "The food recipe can remain literal; its lighting derivative must work on non-food content.",
-    "evidencePresetIds": ["SP11-032", "SP11-050"],
+    "evidencePresetIds": [
+      "SP11-032",
+      "SP11-050"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1075,7 +1289,10 @@
     "preserve": "Depth cues, detail scale and sensor-specific appearance.",
     "proposedAction": "Separate magnification profile from specimen subject and illustrative cellular themes. Overhaul: each preset is one magnification method plus the texture it reveals, prompt subjects are shown at that scale or emerge from the texture, brand name replaced (Velcro), duplicate name made specific (Carbon Fiber Weave Macro); no new presets needed (24). Duplicate catalog names made specific.",
     "validation": "Do not invent scientific observations or replace an object with an insect eye.",
-    "evidencePresetIds": ["SP11-056", "SP11-069"],
+    "evidencePresetIds": [
+      "SP11-056",
+      "SP11-069"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1090,7 +1307,10 @@
     "preserve": "Different sensor-style representations.",
     "proposedAction": "Compare exact mechanics across packs and cross-link rather than cloning future additions. Overhaul: each preset is one real instrument output that keeps subject geometry; the two generic entries became distinct instruments (dual-energy baggage X-ray, white-hot thermal imager), and 18 new instruments were checked against existing sensor presets (neutron, terahertz, event camera, spectrogram, reflectography, palimpsest, acoustic camera, tractography, EBSD, AFM, fluoroscopy, water vapor, mass spec, streak, capsule endoscopy, radio telescope, H-alpha, all-sky).",
     "validation": "Keep illustrative x-ray separate from actual diagnostic interpretation.",
-    "evidencePresetIds": ["SP11-034", "SP11-035"],
+    "evidencePresetIds": [
+      "SP11-034",
+      "SP11-035"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1105,7 +1325,10 @@
     "preserve": "Blueprint linework and output conventions.",
     "proposedAction": "Place it with technical representations; compare against existing blueprint presets before merging. Overhaul: the third catalog blueprint became a distinct used workshop blueprint; 19 new drafting conventions checked against blueprint, patent, cutaway, exploded, section, isometric, wiring and knotwork presets (hachure map, lines plan, piping iso, star fort, escapement, invention notebook, axonometric, figure-ground, lighting plot, crease pattern, knot steps, dance steps, weaving draft, survey plat, gear train, rigging, elevation, garden plan, stereotomy).",
     "validation": "A structural drawing remains explicitly illustrative, without invented measurement accuracy.",
-    "evidencePresetIds": ["SP11-033", "SP11-033"],
+    "evidencePresetIds": [
+      "SP11-033",
+      "SP11-033"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1120,7 +1343,10 @@
     "preserve": "Game-scale pixel/render readability and camera conventions.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "A derivative respects arbitrary content; original profile is clearly labeled gameplay capture.",
-    "evidencePresetIds": ["SP12-001", "SP12-048"],
+    "evidencePresetIds": [
+      "SP12-001",
+      "SP12-048"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1135,7 +1361,10 @@
     "preserve": "Capture finish, depth organization and playable silhouettes.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "An unrelated subject is not turned into a boss room or pilgrimage scene.",
-    "evidencePresetIds": ["SP12-006", "SP12-044"],
+    "evidencePresetIds": [
+      "SP12-006",
+      "SP12-044"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1150,7 +1379,10 @@
     "preserve": "Hard-surface material hierarchy and strategy/action camera logic.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "The profile preserves game readability without requiring the named mission.",
-    "evidencePresetIds": ["SP12-003", "SP12-033"],
+    "evidencePresetIds": [
+      "SP12-003",
+      "SP12-033"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1165,7 +1397,10 @@
     "preserve": "Unit scale, terrain readability and tactical framing.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "A peaceful tactical scene stays peaceful; a battle occurs only when requested.",
-    "evidencePresetIds": ["SP12-007", "SP12-052"],
+    "evidencePresetIds": [
+      "SP12-007",
+      "SP12-052"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1180,7 +1415,10 @@
     "preserve": "Motion readability and competitive-space framing.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "A racing camera is not silently applied to a portrait treatment.",
-    "evidencePresetIds": ["SP12-008", "SP12-047"],
+    "evidencePresetIds": [
+      "SP12-008",
+      "SP12-047"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1195,7 +1433,10 @@
     "preserve": "Terrain value grouping and game-engine atmosphere.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "A quiet outdoor request must not acquire hunters, monsters or objectives.",
-    "evidencePresetIds": ["SP12-002", "SP12-034"],
+    "evidencePresetIds": [
+      "SP12-002",
+      "SP12-034"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1210,7 +1451,10 @@
     "preserve": "Occlusion, visibility hierarchy and controlled environmental contrast.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "A requested object remains the subject instead of becoming a mandatory horror encounter.",
-    "evidencePresetIds": ["SP12-016", "SP12-050"],
+    "evidencePresetIds": [
+      "SP12-016",
+      "SP12-050"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1225,7 +1469,10 @@
     "preserve": "Spatial legibility, interaction scale and distinct render families.",
     "proposedAction": "Video game pass: every preset names its game, studio and year and states the real render technique (pixel art, pre-rendered, low-poly console era, cel shading, painterly or photoreal engine) and camera, so cards stop defaulting to generic glossy 3D. Briefs that restaged a signature hero, creature or prop were replaced with original ones, and franchise guards name those signatures.",
     "validation": "No unrequested puzzle mechanism, HUD or game objective is added by a visual-only derivative.",
-    "evidencePresetIds": ["SP12-004", "SP12-058"],
+    "evidencePresetIds": [
+      "SP12-004",
+      "SP12-058"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1240,7 +1487,10 @@
     "preserve": "Cel value grouping, edge hierarchy and restrained stylization.",
     "proposedAction": "Extract basic drawing and shading systems; keep source scene titles as search-only metadata. Overhaul: each preset now states one genre look (line, cel, palette, light) usable with any prompt, scenes moved into three briefs per preset, and 5 new genre looks added (sky pirates, cursed blade dark fantasy, monster tamer, beast rider, midnight mountain racing). DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A neutral object must not inherit the sample city or shrine.",
-    "evidencePresetIds": ["SP13-001", "SP13-010"],
+    "evidencePresetIds": [
+      "SP13-001",
+      "SP13-010"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1255,7 +1505,10 @@
     "preserve": "Small gestures, soft light and everyday-scale staging.",
     "proposedAction": "Separate slice-of-life mood from venues and roles. Overhaul: each preset is a light-and-mood look (palette, light, line) rather than a venue, venues only appear in the three briefs as tests, one vague backstage entry renamed, and 15 new mood looks added (concert spotlight, golden hour, winter breath, night lamp, 90s cel, garage band, recital, seaside haze, dawn mist, rooftop wind, late train, soft focus, club clutter, library sunbeam, choir light). DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A requested home activity stays at home without mandatory idol or cafe content.",
-    "evidencePresetIds": ["SP13-003", "SP13-013"],
+    "evidencePresetIds": [
+      "SP13-003",
+      "SP13-013"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1270,7 +1523,10 @@
     "preserve": "Line elasticity, cel polish and expressive staging.",
     "proposedAction": "Document references separately and derive transferable rendering; transformations remain explicit profiles. Overhaul: DNA already carries portable line and cel mechanics, so this pass audits it unchanged and adds three original briefs per preset (40); franchise names stay as search identity while every brief uses original characters and places.",
     "validation": "No fixed costume, character or magical sequence is imported solely through a name.",
-    "evidencePresetIds": ["SP05-013", "SP05-181"],
+    "evidencePresetIds": [
+      "SP05-013",
+      "SP05-181"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1285,7 +1541,10 @@
     "preserve": "Microacting, proportion rhythm and soft edge control.",
     "proposedAction": "Transfer distinct line, shadow, texture and color mechanics without imposing activities or venues; compare neutral actions after rerendering. Overhaul: DNA already carries portable mechanics, so this pass keeps it and writes three original briefs per preset (30), each built to show that mechanic on an everyday moment.",
     "validation": "Different styles remain distinguishable without changing the activity to a hobby vignette.",
-    "evidencePresetIds": ["SP05-081", "SP05-206"],
+    "evidencePresetIds": [
+      "SP05-081",
+      "SP05-206"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1300,7 +1559,10 @@
     "preserve": "Specific contour, shading and compositional decisions.",
     "proposedAction": "Keep the distinct drawing mechanics, with requested-content preservation and defect-specific negatives. Compare the regenerated cards and cross-subject images before merging. Overhaul: DNA already carries portable mechanics, so this pass keeps it and writes three original briefs per preset (42); named creator lineages stay technique references and every brief uses original characters.",
     "validation": "Blind comparisons should reveal the rendering difference rather than the renamed scene.",
-    "evidencePresetIds": ["SP05-101", "SP05-322"],
+    "evidencePresetIds": [
+      "SP05-101",
+      "SP05-322"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1315,7 +1577,11 @@
     "preserve": "Cel edge behavior, painted backdrops and restrained frame-era artifacts.",
     "proposedAction": "Keep the SP16-001 study and the distinct legacy cel treatments; compare rerendered subjects before grouping adjacent variants. Overhaul: DNA audited and kept; three original briefs written per preset (31), each showing the preset's ink and cel mechanics in its retro genre.",
     "validation": "A contemporary subject stays contemporary under a retro cel treatment.",
-    "evidencePresetIds": ["SP05-001", "SP05-306", "SP16-001"],
+    "evidencePresetIds": [
+      "SP05-001",
+      "SP05-306",
+      "SP16-001"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1330,7 +1596,10 @@
     "preserve": "Shadow group count, lineweight and color separation.",
     "proposedAction": "Keep contour echoes, cel-value grouping, line rhythm and material-aware highlights without mandatory characters or scenes. Remove bare text bans; compare regenerated subjects before grouping variants. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
     "validation": "Keep action, setting and identity constant across the comparison set.",
-    "evidencePresetIds": ["SP05-011", "SP05-165"],
+    "evidencePresetIds": [
+      "SP05-011",
+      "SP05-165"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1345,7 +1614,10 @@
     "preserve": "Compositing softness, cel line handling and background integration.",
     "proposedAction": "Keep the documented line, timing, value and compositing mechanics without mandatory story beats. SP05-156 has no distinct technical mechanism in its source; leave its distinctness pending comparison instead of inventing one from the name. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
     "validation": "A neutral task must not become a romance or clan-comedy scene.",
-    "evidencePresetIds": ["SP05-024", "SP05-151"],
+    "evidencePresetIds": [
+      "SP05-024",
+      "SP05-151"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1360,7 +1632,10 @@
     "preserve": "Specific layout, edge, color and background relationships.",
     "proposedAction": "Preserve distinct contour, value, timing and background mechanics without forcing source scenes; rerender neutral subjects and compare the resulting styles. Overhaul: DNA audited and kept; three original briefs written per preset (30), creator- or title-named presets using original characters only.",
     "validation": "The difference is observable without iconic scenes or remembered characters.",
-    "evidencePresetIds": ["SP05-071", "SP05-286"],
+    "evidencePresetIds": [
+      "SP05-071",
+      "SP05-286"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1375,7 +1650,10 @@
     "preserve": "Anatomical gesture, speed cues and performance readability.",
     "proposedAction": "Separate motion/action profiles from drawing finish; retain sport-specific staging explicitly. Overhaul: the 30 generated router DNAs were rewritten as the look of one discipline each (sport, dance, music or stage), strict DNA with no filler, three briefs each.",
     "validation": "A quiet gesture can use the drawing style without becoming a team competition.",
-    "evidencePresetIds": ["SP05-343", "SP05-358"],
+    "evidencePresetIds": [
+      "SP05-343",
+      "SP05-358"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1390,7 +1668,10 @@
     "preserve": "Gesture timing, line economy and group-value design.",
     "proposedAction": "Keep wardrobe/world direction separate from rendering and action profiles. Overhaul: the five template presets were rewritten as specific period anime looks (strict DNA, no generated router text) and 15 new looks added across Japanese and European periods, with three briefs each.",
     "validation": "A portrait keeps its outfit unless a costume transformation is deliberately selected.",
-    "evidencePresetIds": ["SP13-026", "SP13-028"],
+    "evidencePresetIds": [
+      "SP13-026",
+      "SP13-028"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1405,7 +1686,10 @@
     "preserve": "Negative-space tension, contour control and restrained contrast.",
     "proposedAction": "Extract visual unease without requiring a location, monster or violent story beat. Overhaul: the five template presets were rewritten as specific horror anime looks (strict DNA) and 15 new looks added, dread built from light, framing and texture with no gore; three briefs each.",
     "validation": "A harmless subject remains harmless in content while visual tension changes.",
-    "evidencePresetIds": ["SP13-031", "SP13-033"],
+    "evidencePresetIds": [
+      "SP13-031",
+      "SP13-033"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1420,7 +1704,11 @@
     "preserve": "Heavy value planes, matte finish and controlled edge loss.",
     "proposedAction": "SP17-073 derives value-plane and edge treatment from SP17-001 while retaining the original ceremonial direction; compare with atlas CR-04 before promotion.",
     "validation": "An everyday object keeps its function and setting without becoming a relic.",
-    "evidencePresetIds": ["SP17-001", "SP17-011", "SP17-073"],
+    "evidencePresetIds": [
+      "SP17-001",
+      "SP17-011",
+      "SP17-073"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1435,7 +1723,10 @@
     "preserve": "Registration, spot inks, photocopy breakup and paper contrast.",
     "proposedAction": "Separate print grammar from dark-fantasy theme; group palette-only variants after testing.",
     "validation": "The print treatment works on non-fantasy content without adding monsters or page decoration.",
-    "evidencePresetIds": ["SP17-013", "SP17-018"],
+    "evidencePresetIds": [
+      "SP17-013",
+      "SP17-018"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1450,7 +1741,10 @@
     "preserve": "Contour hierarchy, solid blacks and sparse line detail.",
     "proposedAction": "Separate plate/card output profiles from mark-making; keep explicit format recipes available.",
     "validation": "Ink style alone does not add card borders, labels or a fixed creature crop.",
-    "evidencePresetIds": ["SP17-033", "SP17-042"],
+    "evidencePresetIds": [
+      "SP17-033",
+      "SP17-042"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1465,7 +1759,10 @@
     "preserve": "Material contrast, layered construction and controlled emissive details.",
     "proposedAction": "Keep design/world directions explicit; derive surface/render treatments without structures or gear.",
     "validation": "A render treatment does not add armor, machinery or an apocalyptic setting.",
-    "evidencePresetIds": ["SP17-019", "SP17-026"],
+    "evidencePresetIds": [
+      "SP17-019",
+      "SP17-026"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1480,7 +1777,10 @@
     "preserve": "Game readability, camera conventions and portrait massing.",
     "proposedAction": "Separate camera/output profiles from dark rendering; preserve selected profile behavior.",
     "validation": "A portrait is not made isometric, and a game profile does not force a dungeon landmark.",
-    "evidencePresetIds": ["SP17-064", "SP17-068"],
+    "evidencePresetIds": [
+      "SP17-064",
+      "SP17-068"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1495,7 +1795,11 @@
     "preserve": "The requested subject and action remain intact while torn paper, stencil ink or stamping constructs the image.",
     "proposedAction": "Keep the three mark mechanisms distinct; do not make dungeon props or page furniture mandatory.",
     "validation": "Compare an ordinary animal, a working object and a human action; inspect complete cards and transfer before visual acceptance.",
-    "evidencePresetIds": ["SP17-074", "SP17-075", "SP17-076"],
+    "evidencePresetIds": [
+      "SP17-074",
+      "SP17-075",
+      "SP17-076"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1510,7 +1814,10 @@
     "preserve": "Requested content, silhouette and framing; the painting process changes the rendering.",
     "proposedAction": "Keep airbrush and drybrush as distinct portable painting mechanisms. Root visual review strengthened dominant sprayed gradients after a representative airbrush card drifted into bristle-painted concept art. Fantasy events remain confined to card briefs.",
     "validation": "Apply both processes to the same non-fantasy subject and inspect whether their marks remain distinguishable at card size.",
-    "evidencePresetIds": ["SP17-077", "SP17-078"],
+    "evidencePresetIds": [
+      "SP17-077",
+      "SP17-078"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1525,7 +1832,13 @@
     "preserve": "Identity, materials, pose and camera from the user request.",
     "proposedAction": "Retain each drawing process as an independent style and keep fantasy subjects in representative cards only.",
     "validation": "Compare the five on the same ordinary subject and inspect whether support, line and pigment behavior remain distinct.",
-    "evidencePresetIds": ["SP17-079", "SP17-080", "SP17-081", "SP17-082", "SP17-083"],
+    "evidencePresetIds": [
+      "SP17-079",
+      "SP17-080",
+      "SP17-081",
+      "SP17-082",
+      "SP17-083"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1540,7 +1853,13 @@
     "preserve": "Subject identity, requested pose, framing and scene content.",
     "proposedAction": "Keep direct ink processes distinct from plate transfer; compare all twenty across subjects before promoting or consolidating.",
     "validation": "Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.",
-    "evidencePresetIds": ["SP19-001", "SP19-002", "SP19-005", "SP19-006", "SP19-009"],
+    "evidencePresetIds": [
+      "SP19-001",
+      "SP19-002",
+      "SP19-005",
+      "SP19-006",
+      "SP19-009"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1555,7 +1874,13 @@
     "preserve": "Subject identity, requested pose, framing and scene content.",
     "proposedAction": "Keep reproduction processes distinct from surface-only texture and inspect representative cards before promotion.",
     "validation": "Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.",
-    "evidencePresetIds": ["SP20-001", "SP20-002", "SP20-005", "SP20-007", "SP20-008"],
+    "evidencePresetIds": [
+      "SP20-001",
+      "SP20-002",
+      "SP20-005",
+      "SP20-007",
+      "SP20-008"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1570,7 +1895,13 @@
     "preserve": "Subject identity, requested pose, framing and scene content.",
     "proposedAction": "Keep the paper or pigment mechanism visible without transferring a stock subject or support texture onto depicted materials.",
     "validation": "Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.",
-    "evidencePresetIds": ["SP21-001", "SP21-002", "SP21-005", "SP21-008", "SP21-010"],
+    "evidencePresetIds": [
+      "SP21-001",
+      "SP21-002",
+      "SP21-005",
+      "SP21-008",
+      "SP21-010"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -1585,7 +1916,12 @@
     "preserve": "Distinct glaze, acrylic, wash and drawing mark behavior.",
     "proposedAction": "Keep the medium process active and let the request select the subject.",
     "validation": "Apply each process to the same contemporary bicycle without changing its parts.",
-    "evidencePresetIds": ["SP22-101", "SP22-102", "SP22-104", "SP22-108"],
+    "evidencePresetIds": [
+      "SP22-101",
+      "SP22-102",
+      "SP22-104",
+      "SP22-108"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1600,7 +1936,10 @@
     "preserve": "Edge control, pigment-like volume and grouped painted values.",
     "proposedAction": "Express scale through paint handling rather than a required heroic scene.",
     "validation": "A quiet domestic plant still shows the chosen paint treatment.",
-    "evidencePresetIds": ["SP22-109", "SP22-110"],
+    "evidencePresetIds": [
+      "SP22-109",
+      "SP22-110"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1615,7 +1954,10 @@
     "preserve": "Thorn-like incision, soot wash and broken pigment surfaces.",
     "proposedAction": "Transfer unsettling mark behavior without adding violence or monsters.",
     "validation": "A plain streetlamp can carry the mark treatment without becoming a horror scene.",
-    "evidencePresetIds": ["SP22-117", "SP22-118"],
+    "evidencePresetIds": [
+      "SP22-117",
+      "SP22-118"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1630,7 +1972,10 @@
     "preserve": "Gouache planes, cel edges and controlled volume simplification.",
     "proposedAction": "Keep animation and storybook rendering separate from story content.",
     "validation": "A modern tram retains its form under each rendering language.",
-    "evidencePresetIds": ["SP22-125", "SP22-126"],
+    "evidencePresetIds": [
+      "SP22-125",
+      "SP22-126"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1645,7 +1990,10 @@
     "preserve": "Contour economy, readable silhouette and controlled proportions.",
     "proposedAction": "Apply form design to the supplied subject without inventing a new character.",
     "validation": "A chair remains a chair while its shape language changes.",
-    "evidencePresetIds": ["SP22-133", "SP22-134"],
+    "evidencePresetIds": [
+      "SP22-133",
+      "SP22-134"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1660,7 +2008,10 @@
     "preserve": "Line density, cel modeling, highlight rhythm and painted finish.",
     "proposedAction": "Retain technical differences while keeping game and collection provenance out of the portable visual rules.",
     "validation": "An original adult gardener stays identifiable across all eight treatments.",
-    "evidencePresetIds": ["SP22-141", "SP22-142"],
+    "evidencePresetIds": [
+      "SP22-141",
+      "SP22-142"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1675,7 +2026,10 @@
     "preserve": "Brush pressure, screen tone and crisp black-white value structure.",
     "proposedAction": "Use action marks only for requested motion; preserve quiet subjects. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "A stationary train platform gains manga mark language without an invented fight.",
-    "evidencePresetIds": ["SP22-149", "SP22-150"],
+    "evidencePresetIds": [
+      "SP22-149",
+      "SP22-150"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1690,7 +2044,11 @@
     "preserve": "Boundaries and contact shadows of existing parts, restrained facet shading and industrial airbrush transitions.",
     "proposedAction": "Separate diagram framing from portable surface and line treatment.",
     "validation": "A ceramic flowerpot keeps its material and function under the style.",
-    "evidencePresetIds": ["SP22-157", "SP22-158", "SP22-159"],
+    "evidencePresetIds": [
+      "SP22-157",
+      "SP22-158",
+      "SP22-159"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1705,7 +2063,10 @@
     "preserve": "Contour weight, flat color, modeled ink and expressive simplification.",
     "proposedAction": "Make drawing grammar transferable without obligatory panels or heroes.",
     "validation": "A city bicycle can use the ink and color system without a costume.",
-    "evidencePresetIds": ["SP22-165", "SP22-166"],
+    "evidencePresetIds": [
+      "SP22-165",
+      "SP22-166"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1720,7 +2081,10 @@
     "preserve": "Different carved, engraved, overprinted and registration marks.",
     "proposedAction": "Keep each reproduction process visibly distinct at card scale.",
     "validation": "The same bird silhouette shows a different mark construction in each process.",
-    "evidencePresetIds": ["SP22-173", "SP22-174"],
+    "evidencePresetIds": [
+      "SP22-173",
+      "SP22-174"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1735,7 +2099,11 @@
     "preserve": "Leaded segments, geometric planes and flowing interior ornament.",
     "proposedAction": "Apply image-wide ornament styles to existing forms; keep filigree, gilding, porcelain and enamel effects local and frames optional.",
     "validation": "A plain lamp shows the color-cell or line treatment without a border.",
-    "evidencePresetIds": ["SP22-181", "SP22-182", "SP22-183"],
+    "evidencePresetIds": [
+      "SP22-181",
+      "SP22-182",
+      "SP22-183"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1750,7 +2118,11 @@
     "preserve": "Clay, thread and paper construction cues with physical depth.",
     "proposedAction": "Apply the selected crafted rendering language while retaining the requested object's identity and real materials.",
     "validation": "A requested bicycle remains a bicycle when rendered as cut paper or clay.",
-    "evidencePresetIds": ["SP22-189", "SP22-190", "SP22-192"],
+    "evidencePresetIds": [
+      "SP22-189",
+      "SP22-190",
+      "SP22-192"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1765,7 +2137,11 @@
     "preserve": "Lithographic overlap, airbrush transitions and wax-pencil direction.",
     "proposedAction": "Use print-era techniques independently of collectible layout.",
     "validation": "A modern houseplant carries the medium without a caption or trading-card frame.",
-    "evidencePresetIds": ["SP22-197", "SP22-198", "SP22-199"],
+    "evidencePresetIds": [
+      "SP22-197",
+      "SP22-198",
+      "SP22-199"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1780,7 +2156,10 @@
     "preserve": "Flat color, positive-negative balance and line hierarchy.",
     "proposedAction": "Retain graphic economy while respecting the requested object and framing.",
     "validation": "A dog portrait stays a portrait, not a badge, under the style.",
-    "evidencePresetIds": ["SP22-205", "SP22-206"],
+    "evidencePresetIds": [
+      "SP22-205",
+      "SP22-206"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1795,7 +2174,12 @@
     "preserve": "Pixel clustering, selective dithering and measured polygon planes.",
     "proposedAction": "Keep each sampling or polygon style distinct; confine glass and displacement modifiers to their requested targets.",
     "validation": "The same street scene exposes distinct pixel, dither and facet methods.",
-    "evidencePresetIds": ["SP22-213", "SP22-214", "SP22-215", "SP22-219"],
+    "evidencePresetIds": [
+      "SP22-213",
+      "SP22-214",
+      "SP22-215",
+      "SP22-219"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1810,7 +2194,11 @@
     "preserve": "Opaque pigment planes, value bands, interlace and controlled manuscript line.",
     "proposedAction": "Transfer the five image styles without an automatic codex page; use Scriptorium Page layout only when its structure profile is selected.",
     "validation": "A contemporary radio keeps its identity under the image styles; the page profile adds structure only when selected.",
-    "evidencePresetIds": ["SP23-001", "SP23-002", "SP23-006"],
+    "evidencePresetIds": [
+      "SP23-001",
+      "SP23-002",
+      "SP23-006"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1825,7 +2213,11 @@
     "preserve": "Blockcut mass, burin weave and etched line direction.",
     "proposedAction": "Keep each physical print style distinct from aged-paper decoration; apply relief and intaglio modifiers only to requested accents over an existing base.",
     "validation": "The same leaf displays different relief and incision marks; disabling an accent modifier leaves the selected base intact.",
-    "evidencePresetIds": ["SP23-007", "SP23-008", "SP23-011"],
+    "evidencePresetIds": [
+      "SP23-007",
+      "SP23-008",
+      "SP23-011"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1840,7 +2232,13 @@
     "preserve": "Woven planes, wool outlines, mineral pigment, enamel cells and leaded-light structure.",
     "proposedAction": "Apply the selected rendering technique to the requested form without importing its source object, building or use.",
     "validation": "A modern coat keeps its cut under each material study; switching techniques changes the marks, not the garment's use.",
-    "evidencePresetIds": ["SP23-013", "SP23-014", "SP23-015", "SP23-016", "SP23-017"],
+    "evidencePresetIds": [
+      "SP23-013",
+      "SP23-014",
+      "SP23-015",
+      "SP23-016",
+      "SP23-017"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1855,7 +2253,10 @@
     "preserve": "Specific color-cell, spatial and geometric drawing structures.",
     "proposedAction": "Keep provenance visible in metadata and active rules technically precise.",
     "validation": "An ordinary animal retains its identity while each tradition differs in mark and space for reasons supported by its recorded source corpus.",
-    "evidencePresetIds": ["SP23-018", "SP23-019"],
+    "evidencePresetIds": [
+      "SP23-018",
+      "SP23-019"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1870,7 +2271,10 @@
     "preserve": "Dense shape masses, reserved light, ornamental line within existing forms and illustrated wash as distinct treatments.",
     "proposedAction": "Name the revival period accurately and avoid automatic fairytale scenes.",
     "validation": "A current-day garden tool shows revival drawing without a costume or story.",
-    "evidencePresetIds": ["SP23-022", "SP23-023"],
+    "evidencePresetIds": [
+      "SP23-022",
+      "SP23-023"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1885,7 +2289,10 @@
     "preserve": "Era-specific raster, gouache and interface craft.",
     "proposedAction": "Keep content and camera guardrails explicit within each style, and transfer its rendering without inventing HUD or dungeon-map output.",
     "validation": "A requested portrait does not become a HUD or dungeon map unless selected.",
-    "evidencePresetIds": ["SP23-026", "SP23-027"],
+    "evidencePresetIds": [
+      "SP23-026",
+      "SP23-027"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1900,7 +2307,10 @@
     "preserve": "Intentional palette limits, cluster shape and selective dither.",
     "proposedAction": "Keep cluster construction distinct per preset and avoid noisy upscaling.",
     "validation": "The same bird keeps its silhouette under all four distinct raster rules.",
-    "evidencePresetIds": ["SP23-030", "SP23-031"],
+    "evidencePresetIds": [
+      "SP23-030",
+      "SP23-031"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1915,7 +2325,10 @@
     "preserve": "Facet shading, angular planes and painted low-resolution texture.",
     "proposedAction": "Transfer geometry and texture treatment independently of viewpoint.",
     "validation": "A tabletop radio preserves the requested camera and gains low-poly treatment.",
-    "evidencePresetIds": ["SP23-034", "SP23-035"],
+    "evidencePresetIds": [
+      "SP23-034",
+      "SP23-035"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1930,7 +2343,11 @@
     "preserve": "Transparent wash, opaque gouache, layered planes and compact pixel clusters.",
     "proposedAction": "Transfer each paint or pixel construction method while leaving game layout optional.",
     "validation": "The same quiet bicycle retains its viewpoint and parts under both painted and pixel treatments, without a tactical grid.",
-    "evidencePresetIds": ["SP23-037", "SP23-038", "SP23-041"],
+    "evidencePresetIds": [
+      "SP23-037",
+      "SP23-038",
+      "SP23-041"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1945,7 +2362,10 @@
     "preserve": "Ink mass, painted shape and selective print wear.",
     "proposedAction": "Apply image styles without adding captions, card layout or statistics, which are not profiles in this category.",
     "validation": "A plain original creature portrait carries the style without a game card frame.",
-    "evidencePresetIds": ["SP23-042", "SP23-043"],
+    "evidencePresetIds": [
+      "SP23-042",
+      "SP23-043"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1960,7 +2380,10 @@
     "preserve": "Flat planes, data-bounded diagrams and tactile raster modeling.",
     "proposedAction": "Keep the five image styles on the requested content and composition; only the selected Data-Bounded Reference Sheet profile may impose a sheet layout, and its facts must be supplied.",
     "validation": "A simple shoe diagram uses only legible supplied facts and no filler measurements.",
-    "evidencePresetIds": ["SP23-047", "SP23-048"],
+    "evidencePresetIds": [
+      "SP23-047",
+      "SP23-048"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1975,7 +2398,11 @@
     "preserve": "A primary medium with one controlled secondary accent.",
     "proposedAction": "State which process leads in each image style; apply the pigment modifier only to a named compatible target over its base.",
     "validation": "A single bird keeps form under the five image styles; toggling the pigment modifier changes only the selected material accent.",
-    "evidencePresetIds": ["SP23-053", "SP23-054", "SP23-056"],
+    "evidencePresetIds": [
+      "SP23-053",
+      "SP23-054",
+      "SP23-056"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -1990,7 +2417,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 17 new punks added, each grown from one historical technology (electricity, sail, casting, rail, looms, coal, balloons, diving, telegraph, polar steam, oil, printing, mills, automata, paddle steamers, canals) with strict DNA and three briefs each.",
     "validation": "Matched bicycle and espresso-machine pilots differentiated Steam pressure hardware from Clock escapement. Later ordinary-subject pairs included Dieselpunk. Representative cards were reviewed; transfer fidelity and visual acceptance remain pending.",
-    "evidencePresetIds": ["SP15-081", "SP15-083"],
+    "evidencePresetIds": [
+      "SP15-081",
+      "SP15-083"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2005,7 +2435,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 18 new signal punks, each grown from one information technology, strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-084", "SP15-085"],
+    "evidencePresetIds": [
+      "SP15-084",
+      "SP15-085"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2020,7 +2453,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 17 new climate punks, each answering one climate problem with its own technology, strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-087", "SP15-091"],
+    "evidencePresetIds": [
+      "SP15-087",
+      "SP15-091"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2035,7 +2471,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 17 new bio, myco and body punks (slime, chitin, symbiont, botani, moth, termite, lichen, brew, bioprint, regen, silkspinner, parasite, cell, venom, glow, living ink, prosthetic craft), strict DNA, no gore, three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-094", "SP15-096"],
+    "evidencePresetIds": [
+      "SP15-094",
+      "SP15-096"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2050,7 +2489,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 18 new ocean, ice and terrain punks (abyssal, reef, submarine, kelp, tundra, aurora, fjord, archipelago, storm, volcano, geyser, cave, canyon, cliff, swamp, jungle, salt flat, alpine), strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-097", "SP15-098"],
+    "evidencePresetIds": [
+      "SP15-097",
+      "SP15-098"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2065,7 +2507,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 14 new street and DIY punks (squat, busker, stencil, giant-puppet protest, courier, garage, hardcore, grrrl, flea market, rooftop, wheatpaste, break, lowrider, sticker bomb), strict DNA, no readable slogans, three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-101", "SP15-106"],
+    "evidencePresetIds": [
+      "SP15-101",
+      "SP15-106"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2080,7 +2525,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 16 new media punks (film, camcorder, dial-up, teletext mosaic, Y2K, original idol, fax, microfiche, jukebox, hologram, photo booth, slide carousel, screensaver, vinyl, pinball, karaoke); pixel, instant, CRT and arcade looks skipped because the catalog already covers them; strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-107", "SP15-110"],
+    "evidencePresetIds": [
+      "SP15-107",
+      "SP15-110"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2095,7 +2543,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 14 new occult and gothic punks (alchemy, living grimoire, scrap cathedral, seance, plague doctor, relic, candle, oracle, golem, gargoyle, masque, mirror, astrolabe, smoke spirit), strict DNA, no gore, three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-111", "SP15-116"],
+    "evidencePresetIds": [
+      "SP15-111",
+      "SP15-116"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2110,7 +2561,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 16 new space and atomic punks (orbital ring, Mars frontier, asteroid miner, retro cosmonaut, megastructure, comet rider, zero-g, solar sail, nebula, space trucker, terraform, gas giant refinery, launch pad, generation ship, fallout bunker, reactor), strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-117", "SP15-120"],
+    "evidencePresetIds": [
+      "SP15-117",
+      "SP15-120"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2125,7 +2579,10 @@
     "preserve": "Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.",
     "proposedAction": "Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities. Overhaul: existing DNA kept; 18 new ancient-material punks (bronze, iron age, wood, pottery, reed, leather, obsidian, megalith, antler, wicker, chariot, felt tent, canoe, bark, shell, amber, mammoth, feather), invented cultures rather than copied sacred regalia, strict DNA and three wild briefs per preset.",
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
-    "evidencePresetIds": ["SP15-121", "SP15-122"],
+    "evidencePresetIds": [
+      "SP15-121",
+      "SP15-122"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2140,7 +2597,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Video game pass: the fourteen non-intentional presets now name their game, studio and year and state the real render technique and camera, so cards stop defaulting to generic glossy 3D; briefs that restaged a signature hero were replaced. The six intentional-v1 presets keep their curated policy and DNA.",
     "validation": "Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.",
-    "evidencePresetIds": ["SP12-081", "SP12-082", "SP12-083"],
+    "evidencePresetIds": [
+      "SP12-081",
+      "SP12-082",
+      "SP12-083"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2155,7 +2616,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Video game pass: the fourteen non-intentional presets now name their game, studio and year and state the real render technique and camera, so cards stop defaulting to generic glossy 3D; briefs that restaged a signature hero were replaced. The six intentional-v1 presets keep their curated policy and DNA.",
     "validation": "Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.",
-    "evidencePresetIds": ["SP12-087", "SP12-088", "SP12-089"],
+    "evidencePresetIds": [
+      "SP12-087",
+      "SP12-088",
+      "SP12-089"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2170,7 +2635,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Video game pass: the fourteen non-intentional presets now name their game, studio and year and state the real render technique and camera, so cards stop defaulting to generic glossy 3D; briefs that restaged a signature hero were replaced. The six intentional-v1 presets keep their curated policy and DNA.",
     "validation": "Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.",
-    "evidencePresetIds": ["SP12-093", "SP12-094", "SP12-095"],
+    "evidencePresetIds": [
+      "SP12-093",
+      "SP12-094",
+      "SP12-095"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2185,7 +2654,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.",
     "validation": "Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.",
-    "evidencePresetIds": ["SP17-084", "SP17-085", "SP17-086"],
+    "evidencePresetIds": [
+      "SP17-084",
+      "SP17-085",
+      "SP17-086"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2200,7 +2673,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Keep illustration and gameplay separate. Root-reviewed correction strengthens Darksiders muscular anatomy and exaggerated silhouette, and MK1 martial costume construction and supernatural danger. Representative scenes stay in card briefs, not reusable DNA. DNA no longer uses card vocabulary (card size) outside negations.",
     "validation": "Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.",
-    "evidencePresetIds": ["SP17-090", "SP17-091", "SP17-092"],
+    "evidencePresetIds": [
+      "SP17-090",
+      "SP17-091",
+      "SP17-092"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2215,7 +2692,11 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.",
     "validation": "Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.",
-    "evidencePresetIds": ["SP24-001", "SP24-002", "SP24-003"],
+    "evidencePresetIds": [
+      "SP24-001",
+      "SP24-002",
+      "SP24-003"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2230,7 +2711,10 @@
     "preserve": "Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.",
     "proposedAction": "Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.",
     "validation": "Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.",
-    "evidencePresetIds": ["SP24-005", "SP24-006"],
+    "evidencePresetIds": [
+      "SP24-005",
+      "SP24-006"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2245,7 +2729,11 @@
     "preserve": "Requested words, initials, language and locked colors stay exact; each style keeps one construction rule (void, hinge, split contour, interlace, module, loop, ligature, ribbon, aperture, stack, gesture, counters, radial break, fold, open frame, dual scale, stroke economy).",
     "proposedAction": "Applied-design import: 17 construction styles from the research package plus the family-of-marks grid, responsive size set and ambigram study as sheet profiles; DNA rewritten in English as positive construction rules, requested-text policy instead of text and logo negatives, three new striking briefs per preset.",
     "validation": "Generate each card, then test transfer on an exact wordmark, a two-letter monogram, a symbol with no text, a one-ink mark and a locked-color mark; check spelling and reduction.",
-    "evidencePresetIds": ["SP25-001", "SP25-002", "SP25-003"],
+    "evidencePresetIds": [
+      "SP25-001",
+      "SP25-002",
+      "SP25-003"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2260,7 +2748,11 @@
     "preserve": "Requested actions, metaphors, directions and states stay distinct; each style keeps its construction (open joints, bridged solids, chamfers, soft squares, single bend, nested cutouts, offset spine, two folded planes, heavy masses, segments, notches, two-plane roles, ribbon corners, pixel clusters, topology, anchors, square counters, isometric wire).",
     "proposedAction": "Applied-design import: 17 icon construction styles, the state grammar and badge-modifier matrix as sheet profiles, and Isometric Wire Icons as a new style replacing the small-size repair recipe (moved to QA-PROTOCOLS.md); English DNA as positive rules, three new briefs per preset.",
     "validation": "Generate each card, then test transfer on a four-icon action set, a status pair, a toolbar at 16 and 24 px, a light and dark background and a set with one locked metaphor.",
-    "evidencePresetIds": ["SP25-021", "SP25-022", "SP25-023"],
+    "evidencePresetIds": [
+      "SP25-021",
+      "SP25-022",
+      "SP25-023"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2275,7 +2767,11 @@
     "preserve": "The app metaphor, its essential object and locked colors stay recognizable; each style keeps its construction (folded sheet, nested objects, inlaid planes, suspended core, micro diorama, carved relief, inflated joints, hinged pieces, stepped facets, reveal window, membrane, focused detail, interlocking blocks, pixel emblem, stitched pieces, orbit link).",
     "proposedAction": "Applied-design import: 16 illustrative app-icon styles, enamel and translucent edge finish modifiers that keep the input icon's contour, the mask preview and family reduction sheets as profiles; English DNA as positive rules and three new app-concept briefs per preset.",
     "validation": "Generate each card, then test transfer on a single app icon, a three-icon family, a mask row, a reduced 32 px version and a finish applied to an existing locked icon.",
-    "evidencePresetIds": ["SP25-041", "SP25-042", "SP25-043"],
+    "evidencePresetIds": [
+      "SP25-041",
+      "SP25-042",
+      "SP25-043"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2290,7 +2786,11 @@
     "preserve": "Requested labels, values, units, states and layout locks stay exact; each style keeps its organization rule (editorial index, instrument rails, soft containers, ledger tabs, open frames, layered sheets, dense console, color role blocks, recessed controls, research canvas, monospace archive, split-weight navigation, state stamps, rounded instrument panels, quiet contrast).",
     "proposedAction": "Applied-design import: 15 interface styles, a translucent layer modifier that keeps layout and text (distinct from the pack_03 3D glass render), timeline, map-and-inspector and progressive-flow workspace profiles, and the five-state specimen as a sheet profile; requested-text policy and three new app-concept briefs per preset.",
     "validation": "Generate each card, then test transfer on one screen with exact labels, a dense table, an empty state, an error state and the same data across five screens; check spelling of every label.",
-    "evidencePresetIds": ["SP25-061", "SP25-062", "SP25-063"],
+    "evidencePresetIds": [
+      "SP25-061",
+      "SP25-062",
+      "SP25-063"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2305,7 +2805,11 @@
     "preserve": "Every requested value, unit, label, slot count and connection stays exact; each style keeps its readout construction (microfiche windows, capillary channels, mechanical index, etched glass, woven signals, pressure chambers, porcelain dials, ink masses, punched cards, vector sweeps, layered routes, membranes, worn enamel, void meters, light segments, contour gauges).",
     "proposedAction": "Applied-design import: 15 readout styles, an optical afterimage modifier, cockpit, peripheral overlay and tactical map layout profiles, and Contour-Line Gauges as a new style replacing the telemetry consistency trial (moved to QA-PROTOCOLS.md); requested-text policy and three new game-concept briefs per preset.",
     "validation": "Generate each card, then transcribe every value from the result and compare with the brief; test the same data state across three styles and a HUD over a busy background.",
-    "evidencePresetIds": ["SP25-081", "SP25-082", "SP25-083"],
+    "evidencePresetIds": [
+      "SP25-081",
+      "SP25-082",
+      "SP25-083"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2320,7 +2824,11 @@
     "preserve": "The requested product, its function, controls, parts and locked dimensions stay recognizable; each style keeps its construction (folded sheet, tensioned frame, calm volume with controls, service seams, offset capsules, nested shells, functional ribs, soft tool forms, knuckle hinges, stacked slabs, open core, continuous handle, counterweight, color modules, soft volumes on rigid anchors, perforation gradient, stacked rings).",
     "proposedAction": "Applied-design import: 16 construction styles, Stacked Ring Forms as a new style replacing the three-view consistency check (moved to QA-PROTOCOLS.md; pack_04 Three-View Recognition Chart covers the sheet), a monolithic finish modifier, and the assembly board (a design board distinct from the pack_03 Exploded View render) and repair-access sequence as profiles; three new product-concept briefs per preset.",
     "validation": "Generate each card, then test transfer on a speaker, a lamp, a hand tool, a desk object and a locked-geometry product with the modifier; check that part counts and controls stay consistent.",
-    "evidencePresetIds": ["SP25-101", "SP25-102", "SP25-103"],
+    "evidencePresetIds": [
+      "SP25-101",
+      "SP25-102",
+      "SP25-103"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2335,7 +2843,11 @@
     "preserve": "Requested brand names, variant names, codes and supplied copy stay exact; each style keeps its construction (type across faces, specimen hierarchy, die-cut window, wraparound bands, oversized type with small block, label edge, interlocking color fields, quiet diagram, bold engraving, type on a path, transparent layers, info panels, cut shapes, index rhythm, blind emboss).",
     "proposedAction": "Applied-design import: 15 packaging styles, tear-line and collector-insert profiles, and the peel-reveal, shelf-family and finish-separation recipes as sheet profiles; requested-text policy with a no-invented-claims negative, and three new fictional-brand briefs per preset instead of the fixture brand.",
     "validation": "Generate each card, then test transfer on a box, a bottle label, a three-variant family, a flat dieline next to the assembled pack and a long product name; check spelling and that no claims or codes were invented.",
-    "evidencePresetIds": ["SP25-121", "SP25-122", "SP25-123"],
+    "evidencePresetIds": [
+      "SP25-121",
+      "SP25-122",
+      "SP25-123"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2350,7 +2862,11 @@
     "preserve": "The applied artwork, brand text, colors, proportions and part counts stay exact; each preset changes only light, support, context or presentation layout.",
     "proposedAction": "Applied-design import: raking-light and hard-sun modifiers, tabletop, macro pair, floating assembly, hanging garment, weathered display, gallery plinth and screen-in-device profiles, fold, seam, decal, surface-map, open-closed, identity-set and lighting contact-sheet application profiles, and four new presentation styles (brand-shape set, giant product in a miniature world, landscape billboard, shop window) replacing three pack_01 overlaps and the refraction check (moved to QA-PROTOCOLS.md).",
     "validation": "Generate each card, then compare the applied artwork with the brief letter by letter; test a box, a bottle, a garment, a screen and a poster, and check that nothing was redrawn.",
-    "evidencePresetIds": ["SP25-141", "SP25-142", "SP25-143"],
+    "evidencePresetIds": [
+      "SP25-141",
+      "SP25-142",
+      "SP25-143"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2365,7 +2881,11 @@
     "preserve": "Requested headlines, calls to action and brand elements stay exact; each style keeps its campaign mechanism (cause and effect, type pressure, giant fragment, material marks, single gesture, cut and connect, split reality, meaningful void, type windows, scale collision, analog continuity, folded planes, object as letter, one accent, evidence layers, quiet tension).",
     "proposedAction": "Applied-design import: 16 campaign styles, the responsive campaign grid profile, and the three-act launch, lockup study and material transformation recipes as sequence and comparison profiles; requested-text policy with a no-invented-claims negative and three new campaign briefs per preset in rotating tones.",
     "validation": "Generate each card, then check every word of the copy and that no claim, number or award was invented; test a poster, a banner, a three-format adaptation and a three-piece sequence.",
-    "evidencePresetIds": ["SP25-161", "SP25-162", "SP25-163"],
+    "evidencePresetIds": [
+      "SP25-161",
+      "SP25-162",
+      "SP25-163"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2380,7 +2900,11 @@
     "preserve": "The exact requested string, case, accents, punctuation and spacing; each style keeps its letter construction (plotter facets, breathing counters, interlocking feet, ribbon terminals, offset inlines, wedge capitals, soft ligatures, mechanical joints, compressed apertures, woven strokes, pixel clusters, cut ink, angular script, tilted counters, layered edges, taut bridges, signwriter brush).",
     "proposedAction": "Applied-design import: 16 lettering styles, Signwriter Brush Lettering as a new style replacing the exact-copy proof (moved to QA-PROTOCOLS.md), width and optical-size specimen profiles and the variable rhythm sequence profile; requested-text policy and three new title briefs per preset.",
     "validation": "Generate each card, then transcribe the result character by character against the brief; test a short word, a two-line title, numbers with punctuation, mixed case script and an accented word.",
-    "evidencePresetIds": ["SP25-181", "SP25-182", "SP25-183"],
+    "evidencePresetIds": [
+      "SP25-181",
+      "SP25-182",
+      "SP25-183"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2395,7 +2919,11 @@
     "preserve": "Titles, supplied text, numbering, captions and page roles stay exact; each style keeps its page mechanism (annotated margins, parallel registers, image index, giant folios, dense and quiet rhythm, fold-aware layout, specimen pages, cutout windows, caption trails, paper registers, schematic plates, one grid break, pocket scale, section colors, bleed and margin).",
     "proposedAction": "Applied-design import: 16 page and publication styles, facing-page and foldout atlas profiles, and the eight-page rhythm and book-object recipes as sequence profiles; requested-text policy with a no-invented-quotes negative and three new fictional-publication briefs per preset.",
     "validation": "Generate each card, then check every title and caption against the brief; test a single page, a spread, a foldout, an eight-page sequence and a book cover with spine.",
-    "evidencePresetIds": ["SP25-201", "SP25-202", "SP25-203"],
+    "evidencePresetIds": [
+      "SP25-201",
+      "SP25-202",
+      "SP25-203"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2410,7 +2938,11 @@
     "preserve": "Every supplied value, unit, label, link, direction and time; each style keeps its data construction (annotated specimen, woven links, ledger with states, evidence layers, interval bands, flow plates, small multiples, isometric stages, typographic numbers, radial rings, cutaway, ink notation, time strip, nested containers, one mark per unit, sketchnotes, slope chart, periodic grid).",
     "proposedAction": "Applied-design import: 15 data styles, three new styles (sketchnotes, slope chart, periodic grid) replacing the pack_10 transit-map overlap and the two verification recipes (moved to QA-PROTOCOLS.md), and synchronized telemetry and overview-and-detail profiles; requested-text policy with a no-invented-values negative and self-contained datasets in every brief.",
     "validation": "Generate each card, then transcribe every value, label and link and compare with the brief; count dot units, check slope ends and time positions, and flag any invented element.",
-    "evidencePresetIds": ["SP25-221", "SP25-222", "SP25-223"],
+    "evidencePresetIds": [
+      "SP25-221",
+      "SP25-222",
+      "SP25-223"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2425,7 +2957,11 @@
     "preserve": "The requested motif family, palette and target surface; each style keeps its repeat rule (hidden-repeat canopy, density counterpoint, two-scale interleave, warp-weft dominance, broken lattice, nested border, positive-negative network, staggered medallions, thread bands, interrupted stripes, perforated tiles, growth rule, uneven tessellation, figure-ground reversal, stitch routes, layered tracery).",
     "proposedAction": "Applied-design import: 16 repeat-construction styles, half-drop and border placement profiles, and the seamless proof and colorway family recipes as sheet profiles; no-text policy and three new surface briefs per preset for wild but plausible uses.",
     "validation": "Generate each card, then check the tile as a 4 by 4 mosaic for seams and repeating hot spots; test a wallpaper, a garment fabric, a bordered textile and a colorway set.",
-    "evidencePresetIds": ["SP25-241", "SP25-242", "SP25-243"],
+    "evidencePresetIds": [
+      "SP25-241",
+      "SP25-242",
+      "SP25-243"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2440,7 +2976,11 @@
     "preserve": "Garment cut, seams, pockets, requested words, numbers and counts stay exact; each style keeps its placement or print logic (seam-following bands, data marks, oversized placement, patch families, stitch-flow lettering, panel team kit, fabric reserves, serial labels, sleeve-to-body path, woven badges, shifted uniform lines, pocket frames, hand-drawn counts, modular merch, contour lettering).",
     "proposedAction": "Applied-design import: 15 apparel print styles, faded ink and embroidery relief modifiers that keep the input artwork, the front-back placement profile, and the size-range and flat-art pair recipes as sheet profiles; requested-text policy and three new fictional band, club and team briefs per preset.",
     "validation": "Generate each card, then compare the flat art with the applied garment, check every letter and number and that seams, pockets and cut are unchanged; test a tee, a hoodie, a tote and a cap.",
-    "evidencePresetIds": ["SP25-261", "SP25-262", "SP25-263"],
+    "evidencePresetIds": [
+      "SP25-261",
+      "SP25-262",
+      "SP25-263"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2455,7 +2995,11 @@
     "preserve": "Destination names, arrows, routes, numbers and the existing architecture stay exact; each style keeps its spatial mechanism (threshold fields, giant indexes, inlays, route lines, open frames, layered directories, architectural type, perforated light, data bands, floor-to-wall paths, museum labels, bolted plates, soft monumental letters, window layers, caption modules, edge markers, tiled mosaic).",
     "proposedAction": "Applied-design import: 16 spatial graphic styles, Tiled Mosaic Signage as a new style replacing the route walkthrough audit (moved to QA-PROTOCOLS.md), decision-point and anamorphic profiles and the near-far legibility sheet; requested-text policy and three new fictional-site briefs per preset.",
     "validation": "Generate each card, then check every destination name and arrow and that no door, wall or path was added; test a doorway, a corridor route, a directory, a window and an outdoor marker.",
-    "evidencePresetIds": ["SP25-281", "SP25-282", "SP25-283"],
+    "evidencePresetIds": [
+      "SP25-281",
+      "SP25-282",
+      "SP25-283"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2470,7 +3014,11 @@
     "preserve": "Requested words, piece counts, ids and layout regions stay the same in every keyframe; each style keeps its motion grammar (elastic assembly, phase-offset type, inertial ribbon, pressure release, register drift, mechanical index, tension morph, match cut, counterform reveal, pixel unfolding, contour to volume, soft collision, archive scan, panel choreography, material memory, type-driven camera, cutout stop-motion).",
     "proposedAction": "Applied-design import: 16 motion styles, Cutout Stop-Motion Frames as a new style replacing the reduced-motion companion (moved to QA-PROTOCOLS.md), broadcast safe-area and multi-screen layout profiles and the three-keyframe continuity sheet; requested-text policy with a no-video-claims negative and three new ident and title briefs per preset.",
     "validation": "Generate each card as a keyframe strip or styleframe, then check that pieces, words and layout match across frames; test a logo ident, a title card, a lower third and a two-scene transition.",
-    "evidencePresetIds": ["SP25-301", "SP25-302", "SP25-303"],
+    "evidencePresetIds": [
+      "SP25-301",
+      "SP25-302",
+      "SP25-303"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2485,7 +3033,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-143", "SP14-172", "SP14-184"],
+    "evidencePresetIds": [
+      "SP14-143",
+      "SP14-172",
+      "SP14-184"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2500,7 +3052,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-147", "SP14-259", "SP14-251"],
+    "evidencePresetIds": [
+      "SP14-147",
+      "SP14-259",
+      "SP14-251"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2515,7 +3071,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-148", "SP14-267", "SP14-283"],
+    "evidencePresetIds": [
+      "SP14-148",
+      "SP14-267",
+      "SP14-283"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2530,7 +3090,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-146", "SP14-150", "SP14-170"],
+    "evidencePresetIds": [
+      "SP14-146",
+      "SP14-150",
+      "SP14-170"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2545,7 +3109,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-188", "SP14-203", "SP14-209"],
+    "evidencePresetIds": [
+      "SP14-188",
+      "SP14-203",
+      "SP14-209"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2560,7 +3128,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-156", "SP14-189", "SP14-193"],
+    "evidencePresetIds": [
+      "SP14-156",
+      "SP14-189",
+      "SP14-193"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2575,7 +3147,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-142", "SP14-145", "SP14-186"],
+    "evidencePresetIds": [
+      "SP14-142",
+      "SP14-145",
+      "SP14-186"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2590,7 +3166,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-144", "SP14-149", "SP14-303"],
+    "evidencePresetIds": [
+      "SP14-144",
+      "SP14-149",
+      "SP14-303"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2605,7 +3185,11 @@
     "preserve": "Requested subject and action, respectful culture-specific art traditions, original characters and no stereotypes.",
     "proposedAction": "Group presets by mythic theme across many cultures, each preset a culture-rooted visual language applied to fantastic mythic scenes.",
     "validation": "Each category mixes several cultures with no single tradition dominating, and card briefs stay fantastic rather than literal.",
-    "evidencePresetIds": ["SP14-310", "SP14-211", "SP14-217"],
+    "evidencePresetIds": [
+      "SP14-310",
+      "SP14-211",
+      "SP14-217"
+    ],
     "status": "text-reviewed",
     "visualValidation": "pending"
   },
@@ -2620,7 +3204,11 @@
     "preserve": "Every card invents an original adult character; the requested identity, pose and clothing stay the subject while the design language changes shapes, proportions and finish.",
     "proposedAction": "New category of 22 named design languages: JRPG, gothic, animation model sheets, punk cartoon, freehand ink, feature animation, kaiju and armor design, stop-motion puppets, mascots, portraits, fighting game and gacha splash art, and folk animation.",
     "validation": "Generate the card set; check that each card reads as its named designer's language and that no existing franchise character appears.",
-    "evidencePresetIds": ["SP26-001", "SP26-002", "SP26-003"],
+    "evidencePresetIds": [
+      "SP26-001",
+      "SP26-002",
+      "SP26-003"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2635,7 +3223,11 @@
     "preserve": "Requested titles and credits stay exact; the requested subject stays the poster's subject while the style sets layout, medium and finish.",
     "proposedAction": "New category of 22 poster traditions from Saul Bass and Drew Struzan to the Polish school, Showa chirashi, Bollywood billboards, Hammer, Mondo, Soviet constructivism, giallo and Hong Kong action.",
     "validation": "Generate the card set; check each card reads as its tradition, shows the invented title correctly, and never reproduces a real poster or celebrity.",
-    "evidencePresetIds": ["SP26-023", "SP26-024", "SP26-025"],
+    "evidencePresetIds": [
+      "SP26-023",
+      "SP26-024",
+      "SP26-025"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2650,7 +3242,11 @@
     "preserve": "Requested titles, volume numbers and cover lines stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 22 manga cover formats: Jump tankobon, nineties shojo magazine, Garo, kashihon, light novel, doujinshi, kanzenban foil, gashu, yonkoma, horror pocket, webtoon, josei, sports, Tezuka complete works, seinen and kids magazines, retro space opera and cooking manga.",
     "validation": "Generate the card set; check the invented titles render correctly and no real series logo or character appears.",
-    "evidencePresetIds": ["SP26-045", "SP26-046", "SP26-047"],
+    "evidencePresetIds": [
+      "SP26-045",
+      "SP26-046",
+      "SP26-047"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2665,7 +3261,11 @@
     "preserve": "Requested titles and author names stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 20 book cover traditions: Penguin tricolour and Facetti grids, Chris Foss, Frazetta, Chip Kidd, Mendelsund, Folio Society, Victorian gilt, McGinnis noir, gothic romance, Lebedev, Gorey, Mary Blair, Richard Powers, Whelan, Insel, bunko, romance clinch, Pan horror and Tim Jacobus.",
     "validation": "Generate the card set; check invented titles and author names render correctly and no real publisher logo appears.",
-    "evidencePresetIds": ["SP26-067", "SP26-068", "SP26-069"],
+    "evidencePresetIds": [
+      "SP26-067",
+      "SP26-068",
+      "SP26-069"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2680,7 +3280,11 @@
     "preserve": "Requested titles, issue numbers and cover lines stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 20 comic cover traditions: Golden Age, Kirby, EC horror, Silver Age romance, Frank Miller, Mignola, Alex Ross, Sienkiewicz, Druillet, 2000 AD, nineties foil, Franquin, Bonelli, Crumb, Chris Ware, McKean, Steranko, Wrightson, Darwyn Cooke and Mexican historieta.",
     "validation": "Generate the card set; check invented titles render correctly and no real hero, emblem or masthead appears.",
-    "evidencePresetIds": ["SP26-087", "SP26-088", "SP26-089"],
+    "evidencePresetIds": [
+      "SP26-087",
+      "SP26-088",
+      "SP26-089"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2695,7 +3299,11 @@
     "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
     "proposedAction": "New category of 20 seventies horror looks: Suspiria, Texas Chain Saw, Halloween, The Exorcist, The Wicker Man, Don't Look Now, Carrie, Dawn of the Dead, Hausu, Eraserhead, Alien, The Omen, Picnic at Hanging Rock, Messiah of Evil, Fulci, Blood on Satan's Claw, Salem's Lot, Black Christmas, Tourist Trap and Jaws.",
     "validation": "Generate the card set; check each card reads as its film's look and no signature killer, mask or monster appears.",
-    "evidencePresetIds": ["SP27-001", "SP27-002", "SP27-003"],
+    "evidencePresetIds": [
+      "SP27-001",
+      "SP27-002",
+      "SP27-003"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2710,7 +3318,11 @@
     "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
     "proposedAction": "New category of 20 eighties horror looks: The Shining, The Thing, Evil Dead, Elm Street, Hellraiser, Poltergeist, Videodrome, American Werewolf, The Fly, Re-Animator, Possession, Opera, The Lost Boys, Near Dark, Return of the Living Dead, Tetsuo, Society, Prince of Darkness, Gremlins and Sweet Home.",
     "validation": "Generate the card set; check each card reads as its film's look and no signature killer, mask, creature or prop appears.",
-    "evidencePresetIds": ["SP27-021", "SP27-022", "SP27-023"],
+    "evidencePresetIds": [
+      "SP27-021",
+      "SP27-022",
+      "SP27-023"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2725,7 +3337,11 @@
     "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
     "proposedAction": "New category of 20 nineties horror looks: Scream, Ringu, Se7en, Silence of the Lambs, Cure, Audition, Candyman, In the Mouth of Madness, Event Horizon, Jacob's Ladder, The Sixth Sense, Sleepy Hollow, Cronos, Cemetery Man, Braindead, Bram Stoker's Dracula, The Craft, Blair Witch, Nadja and Misery.",
     "validation": "Generate the card set; check each card reads as its film's look and no signature killer, ghost or mask appears.",
-    "evidencePresetIds": ["SP27-041", "SP27-042", "SP27-043"],
+    "evidencePresetIds": [
+      "SP27-041",
+      "SP27-042",
+      "SP27-043"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2740,7 +3356,11 @@
     "preserve": "The requested subject stays the subject, rebuilt as that game's sprites and screen rules; cards invent original characters and places.",
     "proposedAction": "New category of 20 eighties game looks across arcade (Pac-Man, Tempest, Donkey Kong, Out Run, Gradius, Contra, Ghosts 'n Goblins), home computers (Knight Lore, Elite, King's Quest, Maniac Mansion, Impossible Mission, Shadow of the Beast, Prince of Persia), NES (Zelda, Metroid, Castlevania, Mega Man 2, Dragon Quest) and painted box art.",
     "validation": "Generate the card set; check each card reads as its hardware and game, with no franchise character or logo.",
-    "evidencePresetIds": ["SP27-061", "SP27-062", "SP27-063"],
+    "evidencePresetIds": [
+      "SP27-061",
+      "SP27-062",
+      "SP27-063"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2755,7 +3375,11 @@
     "preserve": "The requested subject stays the subject, rebuilt as that game's sprites, polygons or pre-rendered scenes; cards invent original characters and places.",
     "proposedAction": "New category of 20 nineties game looks across PC (Doom, Myst, Diablo, StarCraft, Half-Life, Monkey Island, Grim Fandango), SNES and Mega Drive (Chrono Trigger, Donkey Kong Country, EarthBound, Sonic, Ecco), arcade (Street Fighter II, Metal Slug) and PS1/N64 (Final Fantasy VII, Resident Evil, Crash, Mario 64, GoldenEye, PaRappa).",
     "validation": "Generate the card set; check each card reads as its hardware and game, with no franchise character or logo.",
-    "evidencePresetIds": ["SP27-081", "SP27-082", "SP27-083"],
+    "evidencePresetIds": [
+      "SP27-081",
+      "SP27-082",
+      "SP27-083"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2770,7 +3394,11 @@
     "preserve": "The requested subject stays the subject, rebuilt in that game's rendering signature; cards invent original characters and places.",
     "proposedAction": "New category of 20 two-thousands game looks: Wind Waker, Jet Set Radio, Rez, Halo, ICO, Metroid Prime, Viewtiful Joe, Prince of Persia Sands of Time, Katamari Damacy, Paper Mario TTYD, World of Warcraft, Psychonauts, Killer7, GTA San Andreas loading art, Gears of War, BioShock, Team Fortress 2, Borderlands, Braid and Alien Hominid. Existing Okami, Half-Life 2, Shadow of the Colossus, MGS3, Silent Hill 2 and Mirror's Edge presets are not duplicated.",
     "validation": "Generate the card set; check each card reads as its game's rendering, with no franchise character or logo.",
-    "evidencePresetIds": ["SP27-101", "SP27-102", "SP27-103"],
+    "evidencePresetIds": [
+      "SP27-101",
+      "SP27-102",
+      "SP27-103"
+    ],
     "status": "text-authored",
     "visualValidation": "pending"
   }
