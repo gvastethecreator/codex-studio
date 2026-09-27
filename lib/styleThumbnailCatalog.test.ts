@@ -12,7 +12,6 @@ describe('styleThumbnailCatalog', () => {
     const pack05 = await loadStyleThumbnailPack('pack_05');
     const pack13 = await loadStyleThumbnailPack('pack_13');
     const pack16 = await loadStyleThumbnailPack('pack_16');
-    const pack17 = await loadStyleThumbnailPack('pack_17');
 
     expect(pack05['SP05-034']).toBeTruthy();
     expect(pack05['SP05-001']).toBeUndefined();
@@ -22,7 +21,7 @@ describe('styleThumbnailCatalog', () => {
     expect(pack16['SP05-001']).toBeTruthy();
     expect(pack16['SP13-026']).toBeTruthy();
     expect(pack16['pack_16__70s_and_80s_retro_anime']).toBeTruthy();
-    expect(pack17['SP17-078-01']).toBeTruthy();
+    expect(pack05['SP05-021-01']).toBeTruthy();
     expect(getStyleThumbnail('SP05-001')).toBe(pack16['SP05-001']);
   });
 
