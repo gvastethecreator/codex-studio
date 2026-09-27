@@ -93,11 +93,11 @@ const spec: Spec = {
         key_features:
           'glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle',
       }),
-      avoid: [...AVOID, 'flat retro print', 'Ben-Day dots'],
+      avoid: [...AVOID, 'flat retro print', 'Ben-Day dots', 'painterly fantasy concept art', 'medieval fantasy setting'],
       briefs: [
-        'Modern digital superhero comic image of an adult paladin in sleek original plate armor with a glowing visor hovering above a burning cathedral at dusk, teal-and-orange contrast, dual rim light and volumetric rays, widescreen low angle. Single image, no panels, balloons, text or logo.',
-        'Modern digital superhero comic image of an adult storm-caller in a tattered crimson cloak summoning a lightning fork over a flooded ravine, glossy gradients and specular hits on wet rock. Single image, no panels, balloons, text or logo.',
-        'Modern digital superhero comic image of a crashed alien war machine smoking in a wheat field at sunset, glowing FX particles and lens flare, glossy rendered metal. Single image, no panels, balloons, text or logo.',
+        'An original adult superhero in a sleek teal-and-orange suit catches a falling subway car above a flooded city avenue at dusk, crisp digital inks, glossy gradients, dual rim light and volumetric rays from a widescreen low angle. Single image, no panels, balloons, text or logo.',
+        'On a rain-slick skyscraper rooftop, an original adult speedster in a crimson suit skids to a stop in a spray of sparks while a stolen armored truck dangles from a crane behind her, glossy gradients and specular hits on wet steel. Single image, no panels, balloons, text or logo.',
+        'A giant alien war machine lies crashed across a suburban highway interchange at sunset while an original adult hero in a cape lifts a school bus out of the wreckage, glowing FX particles, lens flare and glossy rendered metal. Single image, no panels, balloons, text or logo.',
       ],
     },
     'SP04-004': {

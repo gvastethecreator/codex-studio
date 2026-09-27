@@ -65,7 +65,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Modern Superhero (Digital)',
     category: '1. Comic Book Styles',
     negativePrompt:
-      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat retro print, Ben-Day dots, flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat retro print, Ben-Day dots, painterly fantasy concept art, medieval fantasy setting, flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows.',

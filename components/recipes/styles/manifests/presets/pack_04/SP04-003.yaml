@@ -3,7 +3,7 @@ id: SP04-003
 packId: pack_04
 name: Modern Superhero (Digital)
 category: 1. Comic Book Styles
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Intense blockbuster seriousness, every moment framed as a cinematic climax.
   rendering_and_quality: Crisp digital line art with glossy full rendering and controlled bloom; original costume designs only, never a known hero.
   key_features: glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle
-  creative_brief: "Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows. Carry it through glossy digital color, dual rim light, volumetric rays and flares, specular armor, widescreen low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Contemporary digital superhero comic: clean variable-weight digital inks under glossy rendered color with gradients, specular hits and composited FX glows. Carry it through glossy digital color, dual rim light, volumetric rays and flares, specular armor, widescreen low angle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - added panels or gutters
   - speech balloons
@@ -30,6 +30,8 @@ avoidRules:
   - chest emblem of a known hero
   - flat retro print
   - Ben-Day dots
+  - painterly fantasy concept art
+  - medieval fantasy setting
   - flat
   - retro
   - official card scene
@@ -54,7 +56,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-003.webp
 attributes:
-  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat retro print, Ben-Day dots, flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, flat retro print, Ben-Day dots, painterly fantasy concept art, medieval fantasy setting, flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

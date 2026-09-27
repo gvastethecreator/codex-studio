@@ -437,7 +437,7 @@ const spec: Spec = {
       }),
       avoid: [...KEEP_PROPORTIONS, 'painted fills'],
       briefs: [
-        'Thumbprint ink critters of a line of gray fingerprint mice marching across a crusty loaf of bread, fingerprint ridges visible in every body, fine black pen whiskers and tails on white paper. No text or logo.',
+        'A parade of gray fingerprint mice, each body a single inky thumbprint with visible ridges, marches toward a pen-drawn wedge of cheese on white paper, fine black pen whiskers, tails and tiny top hats. No text or logo.',
         'Thumbprint ink critters of yellow-and-black fingerprint bumblebees buzzing around a tall sunflower drawn in pen, patchy stamp-pad ink. No text or logo.',
         'Thumbprint ink critters of fingerprint snails racing along a garden wall, spiral whorls as shells, pen-drawn finish line pebbles. No text or logo.',
       ],

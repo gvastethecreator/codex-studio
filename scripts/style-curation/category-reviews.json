@@ -420,7 +420,7 @@
     "displayCategory": "Comics",
     "kind": "style",
     "expectedCount": 20,
-    "baselineHash": "d35925db19ed3d76e408fbc2705d033fe09faeacd9fb453d93d3742c96aa969a",
+    "baselineHash": "7af52d9c6d12386039b46b161bb59bbde5ad496c12685286f4a7d8ae71f4392e",
     "problem": "Comic language sometimes imports page structure, heroes or franchise-era content.",
     "preserve": "Inking, shadow mass, halftone and contour hierarchy.",
     "proposedAction": "Overhaul v2: 14 presets rewritten with concrete mechanisms; 3 renamed (old names kept as search aliases); 6 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_04__comic-book-styles.md.",
@@ -466,7 +466,7 @@
       "SP04-038"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_04",
@@ -484,7 +484,7 @@
       "SP04-082"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_04",
@@ -502,7 +502,7 @@
       "SP04-070"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_04",
@@ -520,7 +520,7 @@
       "SP04-094"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_05",
