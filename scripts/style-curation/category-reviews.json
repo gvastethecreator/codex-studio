@@ -897,7 +897,7 @@
     "validation": "A fluid illustration remains about the requested subject.",
     "evidencePresetIds": ["SP10-011", "SP10-016"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
@@ -912,7 +912,7 @@
     "validation": "Effects remain distinguishable and do not obscure the requested content by default.",
     "evidencePresetIds": ["SP10-021", "SP10-026"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
@@ -927,7 +927,7 @@
     "validation": "Strangeness emerges from form, not a mandatory corridor or empty pool.",
     "evidencePresetIds": ["SP10-031", "SP10-038"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_10",
