@@ -372,7 +372,7 @@
     "validation": "A character's proportions remain stable unless the selected profile explicitly changes them.",
     "evidencePresetIds": ["SP04-013", "SP04-024"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_04",
@@ -477,7 +477,7 @@
     "validation": "A neutral household task must not become a fantasy quest or cooking vignette.",
     "evidencePresetIds": ["SP05-091", "SP05-246"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_05",
@@ -492,7 +492,7 @@
     "validation": "A gentle prompt remains gentle in content while its visual treatment changes.",
     "evidencePresetIds": ["SP05-061", "SP05-266"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_05",
@@ -1242,7 +1242,7 @@
     "validation": "A neutral object must not inherit the sample city or shrine.",
     "evidencePresetIds": ["SP13-001", "SP13-010"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_13",
