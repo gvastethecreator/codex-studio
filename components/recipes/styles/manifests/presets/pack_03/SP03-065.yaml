@@ -3,7 +3,7 @@ id: SP03-065
 packId: pack_03
 name: 3D Icon
 category: 4. 3D Styles
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -21,12 +21,13 @@ visualDna:
   atmosphere_and_mood: Friendly and polished, instantly recognizable at a glance.
   rendering_and_quality: UI-grade icon render with no text or brand marks.
   key_features: squircle tile; simplified glossy subject; soft top light; vibrant gradient; small drop shadow
-  creative_brief: "3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size. Carry it through squircle tile, simplified glossy subject, soft top light, vibrant gradient, small drop shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: '3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size. Carry it through squircle tile, simplified glossy subject, soft top light, vibrant gradient, small drop shadow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - brand logo
   - franchise likeness
   - readable text
   - readable letters
+  - fake transparency checkerboard background
   - flat
   - 2d icon
   - wrong medium
@@ -48,7 +49,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-065.webp
 attributes:
-  negativePrompt: brand logo, franchise likeness, readable text, readable letters, flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, fake transparency checkerboard background, flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

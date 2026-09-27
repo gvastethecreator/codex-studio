@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: '3D Icon',
     category: '4. 3D Styles',
     negativePrompt:
-      'brand logo, franchise likeness, readable text, readable letters, flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'brand logo, franchise likeness, readable text, readable letters, fake transparency checkerboard background, flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         '3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size.',

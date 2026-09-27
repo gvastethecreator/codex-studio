@@ -286,7 +286,7 @@
       "SP03-006"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -304,7 +304,7 @@
       "SP03-018"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -322,7 +322,7 @@
       "SP03-037"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -330,7 +330,7 @@
     "displayCategory": "Stylized 3D",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "b8b779f5a9b19813cf52c540dbf6b4e2955517ec778cf038d867065bf4202d01",
+    "baselineHash": "5ce7beb0d9fa1df26a692f84b5ff2d2b78ea4ceb2f13fc45d01e01daca1251b5",
     "problem": "Clay, voxel and low-poly media sit beside isometric camera and cutaway profiles.",
     "preserve": "Mesh simplification and stylized surface construction.",
     "proposedAction": "Overhaul v2: 20 stylized 3D presets rewritten; media (clay, low poly, voxel, metaballs, NURBS, fractal, glitch, toon, papercraft, toy bricks, origami) keep the requested view, while isometric, knolling, app icon and clay UI declare the view or layout they own; SP03-070 now means the 90s pre-rendered CD-ROM scene to stay distinct from the new 90s renderer presets; SP03-077 renamed Toy Brick-Built 3D to drop the brand; 3D typography uses invented glyphs.",
@@ -358,7 +358,7 @@
       "SP03-053"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -376,7 +376,7 @@
       "SP03-057"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -394,7 +394,7 @@
       "SP03-060"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_03",
@@ -412,7 +412,7 @@
       "SP03-044"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_04",

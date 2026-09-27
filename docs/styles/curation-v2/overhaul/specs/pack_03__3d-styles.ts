@@ -358,9 +358,12 @@ const spec: Spec = {
         key_features:
           'squircle tile; simplified glossy subject; soft top light; vibrant gradient; small drop shadow',
       }),
-      avoid: AVOID.filter((rule) => rule !== 'changing the requested camera view'),
+      avoid: [
+        ...AVOID.filter((rule) => rule !== 'changing the requested camera view'),
+        'fake transparency checkerboard background',
+      ],
       briefs: [
-        '3D app icon of a treasure chest bursting with gold inside a soft purple squircle tile, glossy rounded forms, soft top light and small drop shadow. No text or logo.',
+        '3D app icon of a treasure chest bursting with gold inside a soft purple squircle tile set on a plain warm grey backdrop, glossy rounded forms, soft top light and small drop shadow. No text or logo.',
         '3D app icon of a round potion flask with glowing green liquid in a teal squircle. No text or logo.',
         '3D app icon of a castle gate with a raised portcullis inside a warm orange squircle tile, glossy rounded stone blocks, soft top light and a small drop shadow, readable at tiny size. No text or logo.',
       ],
