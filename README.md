@@ -125,7 +125,7 @@ Then open:
 
 ## Settings
 
-Run `bun run studio:init` to create local defaults and apply pending SQLite migrations. The command is safe to run again. It does not replace an existing Studio Library.
+Run `bun run studio:init` to create local defaults and apply pending SQLite migrations. The command is safe to run again. It does not replace an existing Studio Library. On first run it also builds the built-in style extensions into `.local/extensions/builtin`, because Studio loads styles from installed extensions. Run `bun run extensions:build` again after you change style manifests or cards.
 
 For manual setup, copy `.env.example` to `.env.local`.
 
