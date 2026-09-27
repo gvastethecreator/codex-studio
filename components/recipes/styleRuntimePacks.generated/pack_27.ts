@@ -17,6 +17,7 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_27/sci-fi-cinema-70s-and-80s-8').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () => import('./pack_27/sci-fi-cinema-90s-9').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

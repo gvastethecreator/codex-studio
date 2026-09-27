@@ -3,7 +3,7 @@
     {
       "id": "pack_27",
       "name": "Decade Screens",
-      "presetCount": 160
+      "presetCount": 180
     }
   ],
   "presets": [
@@ -2886,7 +2886,367 @@
       "tags": ["decade-screens", "sci-fi-cinema-70s-and-80s", "eighties-science-fiction-cinema"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp27-160 the abyss 1989 - cameron deep sea glow eighties science fiction cinema the abyss undersea rig 8. sci-fi cinema 70s & 80s sci-fi cinema 70s & 80s eighties science fiction cinema pack_27 decade screens sci-fi-cinema-70s-and-80s decade-screens sci-fi-cinema-70s-and-80s eighties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-161",
+      "name": "Total Recall 1990 - Verhoeven Red Mars Colony",
+      "styleAnchors": [
+        "Total Recall 1990 - Verhoeven Red Mars Colony",
+        "nineties science fiction cinema",
+        "Total Recall red Mars"
+      ],
+      "ref": "pack_27/SP27-161.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-161 total recall 1990 - verhoeven red mars colony nineties science fiction cinema total recall red mars 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-162",
+      "name": "Terminator 2 1991 - Cameron Steel Blue Future War",
+      "styleAnchors": [
+        "Terminator 2 1991 - Cameron Steel Blue Future War",
+        "nineties science fiction cinema",
+        "T2 steel blue"
+      ],
+      "ref": "pack_27/SP27-162.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-162 terminator 2 1991 - cameron steel blue future war nineties science fiction cinema t2 steel blue 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-163",
+      "name": "Delicatessen 1991 - Jeunet Caro Sepia Absurd",
+      "styleAnchors": [
+        "Delicatessen 1991 - Jeunet Caro Sepia Absurd",
+        "nineties science fiction cinema",
+        "Delicatessen amber"
+      ],
+      "ref": "pack_27/SP27-163.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-163 delicatessen 1991 - jeunet caro sepia absurd nineties science fiction cinema delicatessen amber 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-164",
+      "name": "Stargate 1994 - Emmerich Desert Pharaoh Sci-Fi",
+      "styleAnchors": [
+        "Stargate 1994 - Emmerich Desert Pharaoh Sci-Fi",
+        "nineties science fiction cinema",
+        "Stargate desert"
+      ],
+      "ref": "pack_27/SP27-164.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-164 stargate 1994 - emmerich desert pharaoh sci-fi nineties science fiction cinema stargate desert 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-165",
+      "name": "12 Monkeys 1995 - Gilliam Underground Time Loop",
+      "styleAnchors": [
+        "12 Monkeys 1995 - Gilliam Underground Time Loop",
+        "nineties science fiction cinema",
+        "12 Monkeys fish-eye"
+      ],
+      "ref": "pack_27/SP27-165.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-165 12 monkeys 1995 - gilliam underground time loop nineties science fiction cinema 12 monkeys fish-eye 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-166",
+      "name": "Johnny Mnemonic 1995 - Longo Cyberspace Neon",
+      "styleAnchors": [
+        "Johnny Mnemonic 1995 - Longo Cyberspace Neon",
+        "nineties science fiction cinema",
+        "Johnny Mnemonic cyberspace"
+      ],
+      "ref": "pack_27/SP27-166.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-166 johnny mnemonic 1995 - longo cyberspace neon nineties science fiction cinema johnny mnemonic cyberspace 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-167",
+      "name": "Strange Days 1995 - Bigelow Millennium POV Noir",
+      "styleAnchors": [
+        "Strange Days 1995 - Bigelow Millennium POV Noir",
+        "nineties science fiction cinema",
+        "Strange Days POV"
+      ],
+      "ref": "pack_27/SP27-167.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-167 strange days 1995 - bigelow millennium pov noir nineties science fiction cinema strange days pov 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-168",
+      "name": "The City of Lost Children 1995 - Jeunet Caro Harbor Dream",
+      "styleAnchors": [
+        "The City of Lost Children 1995 - Jeunet Caro Harbor Dream",
+        "nineties science fiction cinema",
+        "City of Lost Children harbor"
+      ],
+      "ref": "pack_27/SP27-168.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-168 the city of lost children 1995 - jeunet caro harbor dream nineties science fiction cinema city of lost children harbor 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-169",
+      "name": "Waterworld 1995 - Reynolds Drowned Planet",
+      "styleAnchors": [
+        "Waterworld 1995 - Reynolds Drowned Planet",
+        "nineties science fiction cinema",
+        "Waterworld atolls"
+      ],
+      "ref": "pack_27/SP27-169.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-169 waterworld 1995 - reynolds drowned planet nineties science fiction cinema waterworld atolls 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-170",
+      "name": "Independence Day 1996 - Emmerich City-Size Shadows",
+      "styleAnchors": [
+        "Independence Day 1996 - Emmerich City-Size Shadows",
+        "nineties science fiction cinema",
+        "Independence Day city-size ships"
+      ],
+      "ref": "pack_27/SP27-170.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-170 independence day 1996 - emmerich city-size shadows nineties science fiction cinema independence day city-size ships 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-171",
+      "name": "Mars Attacks 1996 - Burton Pulp Trading Card Mayhem",
+      "styleAnchors": [
+        "Mars Attacks 1996 - Burton Pulp Trading Card Mayhem",
+        "nineties science fiction cinema",
+        "Mars Attacks candy colors"
+      ],
+      "ref": "pack_27/SP27-171.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-171 mars attacks 1996 - burton pulp trading card mayhem nineties science fiction cinema mars attacks candy colors 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-172",
+      "name": "The Fifth Element 1997 - Besson Flying Traffic Pop",
+      "styleAnchors": [
+        "The Fifth Element 1997 - Besson Flying Traffic Pop",
+        "nineties science fiction cinema",
+        "Fifth Element flying traffic"
+      ],
+      "ref": "pack_27/SP27-172.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-172 the fifth element 1997 - besson flying traffic pop nineties science fiction cinema fifth element flying traffic 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-173",
+      "name": "Gattaca 1997 - Niccol Retro-Modern Genetics",
+      "styleAnchors": [
+        "Gattaca 1997 - Niccol Retro-Modern Genetics",
+        "nineties science fiction cinema",
+        "Gattaca golden grade"
+      ],
+      "ref": "pack_27/SP27-173.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-173 gattaca 1997 - niccol retro-modern genetics nineties science fiction cinema gattaca golden grade 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-174",
+      "name": "Starship Troopers 1997 - Verhoeven Propaganda Satire",
+      "styleAnchors": [
+        "Starship Troopers 1997 - Verhoeven Propaganda Satire",
+        "nineties science fiction cinema",
+        "Starship Troopers propaganda"
+      ],
+      "ref": "pack_27/SP27-174.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-174 starship troopers 1997 - verhoeven propaganda satire nineties science fiction cinema starship troopers propaganda 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-175",
+      "name": "Contact 1997 - Zemeckis Radio Telescope Wonder",
+      "styleAnchors": [
+        "Contact 1997 - Zemeckis Radio Telescope Wonder",
+        "nineties science fiction cinema",
+        "Contact radio telescopes"
+      ],
+      "ref": "pack_27/SP27-175.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-175 contact 1997 - zemeckis radio telescope wonder nineties science fiction cinema contact radio telescopes 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-176",
+      "name": "Cube 1997 - Natali Colored Cell Maze",
+      "styleAnchors": [
+        "Cube 1997 - Natali Colored Cell Maze",
+        "nineties science fiction cinema",
+        "Cube colored rooms"
+      ],
+      "ref": "pack_27/SP27-176.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-176 cube 1997 - natali colored cell maze nineties science fiction cinema cube colored rooms 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-177",
+      "name": "Dark City 1998 - Proyas Eternal Night Noir",
+      "styleAnchors": [
+        "Dark City 1998 - Proyas Eternal Night Noir",
+        "nineties science fiction cinema",
+        "Dark City eternal night"
+      ],
+      "ref": "pack_27/SP27-177.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-177 dark city 1998 - proyas eternal night noir nineties science fiction cinema dark city eternal night 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-178",
+      "name": "The Truman Show 1998 - Weir Pastel Studio Town",
+      "styleAnchors": [
+        "The Truman Show 1998 - Weir Pastel Studio Town",
+        "nineties science fiction cinema",
+        "Truman Show pastel town"
+      ],
+      "ref": "pack_27/SP27-178.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-178 the truman show 1998 - weir pastel studio town nineties science fiction cinema truman show pastel town 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-179",
+      "name": "Pi 1998 - Aronofsky High-Contrast Mathematical Paranoia",
+      "styleAnchors": [
+        "Pi 1998 - Aronofsky High-Contrast Mathematical Paranoia",
+        "nineties science fiction cinema",
+        "Pi high contrast"
+      ],
+      "ref": "pack_27/SP27-179.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-179 pi 1998 - aronofsky high-contrast mathematical paranoia nineties science fiction cinema pi high contrast 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-180",
+      "name": "The Matrix 1999 - Wachowski Green Code Bullet Time",
+      "styleAnchors": [
+        "The Matrix 1999 - Wachowski Green Code Bullet Time",
+        "nineties science fiction cinema",
+        "Matrix green tint"
+      ],
+      "ref": "pack_27/SP27-180.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "sci-fi-cinema-90s",
+      "categoryName": "9. Sci-Fi Cinema 90s",
+      "domain": "nineties science fiction cinema",
+      "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-180 the matrix 1999 - wachowski green code bullet time nineties science fiction cinema matrix green tint 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
     }
   ],
-  "totalPresetCount": 160
+  "totalPresetCount": 180
 }

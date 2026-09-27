@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-162
+packId: pack_27
+name: Terminator 2 1991 - Cameron Steel Blue Future War
+styleAnchors:
+  - Terminator 2 1991 - Cameron Steel Blue Future War
+  - nineties science fiction cinema
+  - T2 steel blue
+displayName: Terminator 2 1991 - Cameron Steel Blue Future War
+category: 9. Sci-Fi Cinema 90s
+domain: nineties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-90s
+  - scifi-90s
+  - scifi-cinema
+  - terminator-2
+  - reference-title
+visualDna:
+  aesthetic: 'James Cameron Terminator 2: Judgment Day (1991) look: steel-blue grade, Los Angeles storm drains and steel mills, liquid-metal effects and a burning skull-strewn future war.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in steel-blue urban industry and liquid-metal reflections. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Steel blue, molten orange and chrome, true to the Terminator 2 1991 palette.
+  lighting_and_shadow: Cold blue night and molten steel glow, lit the way Terminator 2 1991 lights its scenes.
+  texture_and_material: Nineties 35mm film grain with punchy print contrast and early digital compositing.
+  camera_and_composition: Low anamorphic action frames, framed the way Terminator 2 1991 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with relentless steel dread.
+  rendering_and_quality: Authentic early-nineties Cameron action frame, in the recognizable hand of Terminator 2 1991.
+  creative_brief: 'James Cameron Terminator 2: Judgment Day (1991) look: steel-blue grade, Los Angeles storm drains and steel mills, liquid-metal effects and a burning skull-strewn future war. Carry it through T2 steel blue, liquid metal, steel mill glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: T2 steel blue; liquid metal; steel mill glow
+avoidRules:
+  - a chrome endoskeleton with red eyes
+  - a leather-jacketed man on a motorcycle with a shotgun
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a chrome endoskeleton with red eyes, a leather-jacketed man on a motorcycle with a shotgun, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-90s
+  categoryName: 9. Sci-Fi Cinema 90s
+  domain: nineties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-90s
+    - scifi-90s
+    - scifi-cinema
+    - terminator-2
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

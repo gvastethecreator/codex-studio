@@ -189,7 +189,8 @@
     "pack_27::5. Video Games 90s": "pixel",
     "pack_27::6. Video Games 2000s": "pixel",
     "pack_27::7. Sci-Fi Cinema 50s & 60s": "photo",
-    "pack_27::8. Sci-Fi Cinema 70s & 80s": "photo"
+    "pack_27::8. Sci-Fi Cinema 70s & 80s": "photo",
+    "pack_27::9. Sci-Fi Cinema 90s": "photo"
   },
   "playbooks": {
     "photo": {
