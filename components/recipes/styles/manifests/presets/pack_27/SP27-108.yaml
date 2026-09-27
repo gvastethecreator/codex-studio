@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject mid-acrobatics in golden hazy Persian palaces with drifting sand particles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Golden sand, palace turquoise and dusk amber, true to the Prince of Persia Sands of Time 2003 palette.
-  lighting_and_shadow: "Golden light that blooms softly over everything, as if seen through warm gauze."
-  texture_and_material: "Soft blurry palace textures, simple columns and arches, and flat drifting sand sparkle particles."
+  lighting_and_shadow: 'Golden light that blooms softly over everything, as if seen through warm gauze.'
+  texture_and_material: 'Soft blurry palace textures, simple columns and arches, and flat drifting sand sparkle particles.'
   camera_and_composition: Third-person acrobatic camera along palace walls, framed the way Prince of Persia Sands of Time 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dreamy acrobatic legend.
-  rendering_and_quality: "A 2003 PlayStation 2 frame at 640 by 448: dreamy soft focus, shimmering jagged edges and a sand-glass bar shape in a corner."
-  creative_brief: 'Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus. Carry it through Sands of Time golden haze, wall-running, palace, sand particles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2003 PlayStation 2 frame at 640 by 448: dreamy soft focus, shimmering jagged edges and a sand-glass bar shape in a corner.'
+  creative_brief: "Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus. Carry it through Sands of Time golden haze, wall-running, palace, sand particles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sands of Time golden haze; wall-running; palace; sand particles
 avoidRules:
   - a shirtless prince with a dagger of time

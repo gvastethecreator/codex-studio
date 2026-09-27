@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of printer heads mid-print and workshop views of many printers.
   atmosphere_and_mood: Curious and slightly uneasy, creation made cheap and handmade.
   rendering_and_quality: Clean luminous illustration with delicate layered printing detail.
-  creative_brief: 'Bioprintpunk: backstreet workshops that print living things, from leaves and flowers to new skin and strange pets, layer by layer from glowing gel. Carry it through layered printing, translucent gel, printer nozzles, living lattices. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bioprintpunk: backstreet workshops that print living things, from leaves and flowers to new skin and strange pets, layer by layer from glowing gel. Carry it through layered printing, translucent gel, printer nozzles, living lattices. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: layered printing; translucent gel; printer nozzles; living lattices
 avoidRules:
   - readable text

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low wide-angle action and TV-screen inserts, framed the way RoboCop 1987 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cynical violent satire.
   rendering_and_quality: Authentic eighties Verhoeven frame, in the recognizable hand of RoboCop 1987.
-  creative_brief: 'Paul Verhoeven RoboCop (1987) look: gritty eighties Detroit, corporate glass towers, satirical television ads, steel-grey armor, practical gore effects and cynical satire. Carry it through RoboCop Detroit, corporate satire, steel armor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Paul Verhoeven RoboCop (1987) look: gritty eighties Detroit, corporate glass towers, satirical television ads, steel-grey armor, practical gore effects and cynical satire. Carry it through RoboCop Detroit, corporate satire, steel armor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: RoboCop Detroit; corporate satire; steel armor
 avoidRules:
   - a steel-grey armored police cyborg with a visor

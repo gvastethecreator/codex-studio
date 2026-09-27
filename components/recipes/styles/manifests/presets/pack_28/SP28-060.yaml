@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter workshop view, framed the way Clockwork Automaton composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with delicate mechanical wonder.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Clockwork automaton language: brass and copper machines with visible gears, springs, escapement wheels, glass panels showing mechanisms and Victorian craftsmanship. Carry it through Clockwork automaton, brass gears, glass panels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Clockwork automaton language: brass and copper machines with visible gears, springs, escapement wheels, glass panels showing mechanisms and Victorian craftsmanship. Carry it through Clockwork automaton, brass gears, glass panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Clockwork automaton; brass gears; glass panels
 avoidRules:
   - existing franchise characters

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s explorers in khaki and leather. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Jungle green, khaki and sunlit gold, true to the Indiana Jones Great Circle 2024 palette.
-  lighting_and_shadow: "Cinematic dappled jungle light through the canopy, lit the way Indiana Jones Great Circle 2024 lights its levels."
-  texture_and_material: "Realistic rope, wood and stone, slightly soft game-engine detail."
+  lighting_and_shadow: 'Cinematic dappled jungle light through the canopy, lit the way Indiana Jones Great Circle 2024 lights its levels.'
+  texture_and_material: 'Realistic rope, wood and stone, slightly soft game-engine detail.'
   camera_and_composition: First-person action view, framed the way Indiana Jones Great Circle 2024 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with pulpy daring thrill.
-  rendering_and_quality: "A 2024 first-person frame at 3840 by 2160: hands gripping a rope bridge over a jungle gorge, no interface."
-  creative_brief: 'MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light. Carry it through Great Circle pulp, rope bridges, ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2024 first-person frame at 3840 by 2160: hands gripping a rope bridge over a jungle gorge, no interface.'
+  creative_brief: "MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light. Carry it through Great Circle pulp, rope bridges, ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Great Circle pulp; rope bridges; ruins
 avoidRules:
   - a fedora-wearing archaeologist with a whip

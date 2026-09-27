@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Soaring vertical views up spires and down enormous naves.
   atmosphere_and_mood: Awe-struck and defiant, beauty built from the ruins of the old world.
   rendering_and_quality: Luminous detailed illustration with colored light shafts and deep scale.
-  creative_brief: 'Cathedralpunk: rebel builders raising impossible gothic cathedrals from scrap, with flying buttresses of girders, stained glass from bottles and gargantuan spires. Carry it through scrap buttresses, bottle-glass windows, soaring spires, colored light shafts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cathedralpunk: rebel builders raising impossible gothic cathedrals from scrap, with flying buttresses of girders, stained glass from bottles and gargantuan spires. Carry it through scrap buttresses, bottle-glass windows, soaring spires, colored light shafts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: scrap buttresses; bottle-glass windows; soaring spires; colored light shafts
 avoidRules:
   - readable text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Strong diagonal from corner to corner, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with chaotic momentum, kept consistent across the whole image.
   rendering_and_quality: Energetic sketchy finish, not polished, kept consistent across the whole image.
-  creative_brief: 'Diagonal skirmish oil sketch: a loose fast oil sketch of a fantasy clash, bodies and banners thrown along a strong diagonal, broken color and dust. Carry it through diagonal clash, loose oil strokes, dust haze, banners. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Diagonal skirmish oil sketch: a loose fast oil sketch of a fantasy clash, bodies and banners thrown along a strong diagonal, broken color and dust. Carry it through diagonal clash, loose oil strokes, dust haze, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: diagonal clash; loose oil strokes; dust haze; banners
 avoidRules:
   - interface, menus or health bars

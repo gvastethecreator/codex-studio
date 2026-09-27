@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Pages unfolding into a starry void, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with cosmic sacred wonder.
   rendering_and_quality: Crisp flat codex drawing without readable glyphs, kept consistent across the whole image.
-  creative_brief: 'Codex cosmos screenfold: the flat bold outlines and saturated colors of central Mexican codices expanded into vast cosmic scenes of gods, stars and day signs unfolding across folded pages. Carry it through codex outlines, flat saturated color, fold creases, cosmic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Codex cosmos screenfold: the flat bold outlines and saturated colors of central Mexican codices expanded into vast cosmic scenes of gods, stars and day signs unfolding across folded pages. Carry it through codex outlines, flat saturated color, fold creases, cosmic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: codex outlines; flat saturated color; fold creases; cosmic
 avoidRules:
   - readable glyphs

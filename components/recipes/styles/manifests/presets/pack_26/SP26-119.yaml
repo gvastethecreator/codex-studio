@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Wide empty landscape with small refined type, framed the way ECM Records composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet contemplative space.
   rendering_and_quality: Faithful ECM-style minimal cover design, in the recognizable hand of ECM Records.
-  creative_brief: 'ECM Records cover look from the 1970s onward: minimal atmospheric landscape photographs, fog, water and emptiness, small refined sans-serif type and quiet Nordic restraint. Carry it through ECM minimal fog photo, small type, restraint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "ECM Records cover look from the 1970s onward: minimal atmospheric landscape photographs, fog, water and emptiness, small refined sans-serif type and quiet Nordic restraint. Carry it through ECM minimal fog photo, small type, restraint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ECM minimal fog photo; small type; restraint
 avoidRules:
   - the real ECM logo

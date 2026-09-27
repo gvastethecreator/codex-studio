@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with soft-edged color masses.
   atmosphere_and_mood: Keep the requested mood with a quietly sickly unease.
   rendering_and_quality: Delicate transparent layered washes, never gory or opaque.
-  creative_brief: 'Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling. Carry it through bruise purples and yellows, soft pooling washes, granulation, sickly unease. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling. Carry it through bruise purples and yellows, soft pooling washes, granulation, sickly unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bruise purples and yellows; soft pooling washes; granulation; sickly unease
 avoidRules:
   - bright cheerful palette

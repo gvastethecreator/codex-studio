@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as abstract object clusters and the shadows they cast. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Moody sepia, wall cream and deep shadow, true to the Shadowmatic 2015 palette.
-  lighting_and_shadow: "A single lamp throwing one hard shadow onto a plain wall."
-  texture_and_material: "Clean matte abstract objects in soft grey, and a crisp dark shadow."
+  lighting_and_shadow: 'A single lamp throwing one hard shadow onto a plain wall.'
+  texture_and_material: 'Clean matte abstract objects in soft grey, and a crisp dark shadow.'
   camera_and_composition: Front view of a lit wall, framed the way Shadowmatic 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet surreal discovery.
-  rendering_and_quality: "A 2015 phone frame, tall portrait: a floating object cluster and its shadow forming a recognizable shape on the wall."
-  creative_brief: 'Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals. Carry it through Shadowmatic shadows, lamp, abstract objects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2015 phone frame, tall portrait: a floating object cluster and its shadow forming a recognizable shape on the wall.'
+  creative_brief: "Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals. Carry it through Shadowmatic shadows, lamp, abstract objects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Shadowmatic shadows; lamp; abstract objects
 avoidRules:
   - existing game characters, logos or levels

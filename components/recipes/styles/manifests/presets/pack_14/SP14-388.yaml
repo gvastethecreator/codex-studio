@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Square badge composition with the beast centered above wave stripes and a sun disc in one corner.
   atmosphere_and_mood: Keep the requested mood with auspicious noble calm.
   rendering_and_quality: Dense precise embroidery with every scale and cloud outlined in gold thread.
-  creative_brief: 'Qilin silk rank badge: Chinese court embroidery squares where a scaled, hoofed qilin prances among five-colored clouds, rocks and wave stripes, stitched in couched gold thread and satin floss. Carry it through qilin beast, five-colored clouds, wave stripes, couched gold thread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Qilin silk rank badge: Chinese court embroidery squares where a scaled, hoofed qilin prances among five-colored clouds, rocks and wave stripes, stitched in couched gold thread and satin floss. Carry it through qilin beast, five-colored clouds, wave stripes, couched gold thread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: qilin beast; five-colored clouds; wave stripes; couched gold thread
 avoidRules:
   - cultural stereotypes or caricature

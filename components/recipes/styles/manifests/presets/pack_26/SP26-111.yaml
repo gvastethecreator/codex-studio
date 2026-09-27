@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Frontal group portrait with clean type band, framed the way Motown Sixties composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bright optimistic soul.
   rendering_and_quality: Faithful sixties soul label cover design, in the recognizable hand of Motown Sixties.
-  creative_brief: 'Motown and sixties soul cover look: bright studio portrait photographs of groups in matching outfits, saturated color backdrops, clean sans-serif titles and optimistic polish. Carry it through Motown group portrait, matching outfits, bright backdrop. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Motown and sixties soul cover look: bright studio portrait photographs of groups in matching outfits, saturated color backdrops, clean sans-serif titles and optimistic polish. Carry it through Motown group portrait, matching outfits, bright backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Motown group portrait; matching outfits; bright backdrop
 avoidRules:
   - real Motown artists

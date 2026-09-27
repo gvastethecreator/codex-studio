@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Intimate lab compositions, framed the way The Fly 1986 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tragic metamorphic unease.
   rendering_and_quality: Intimate eighties body horror frame, in the recognizable hand of The Fly 1986.
-  creative_brief: 'David Cronenberg The Fly (1986) look: cluttered warehouse laboratory, sleek telepods, tragic romance, warm lamp light and gradual body metamorphosis. Carry it through Telepods, warehouse lab, tragic metamorphosis. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Cronenberg The Fly (1986) look: cluttered warehouse laboratory, sleek telepods, tragic romance, warm lamp light and gradual body metamorphosis. Carry it through Telepods, warehouse lab, tragic metamorphosis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Telepods; warehouse lab; tragic metamorphosis
 avoidRules:
   - existing franchise characters

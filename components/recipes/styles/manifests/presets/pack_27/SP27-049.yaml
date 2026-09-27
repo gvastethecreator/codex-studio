@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Gothic vertical starship compositions, framed the way Event Horizon 1997 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gothic cosmic hell.
   rendering_and_quality: Gothic nineties sci-fi horror frame, in the recognizable hand of Event Horizon 1997.
-  creative_brief: 'Paul W. S. Anderson Event Horizon (1997) look: gothic cathedral-like starship interiors, spinning gravity drive rings, blue-black space and hellish red flashes. Carry it through Gothic starship, spinning rings, hellish red. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Paul W. S. Anderson Event Horizon (1997) look: gothic cathedral-like starship interiors, spinning gravity drive rings, blue-black space and hellish red flashes. Carry it through Gothic starship, spinning rings, hellish red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Gothic starship; spinning rings; hellish red
 avoidRules:
   - existing franchise characters

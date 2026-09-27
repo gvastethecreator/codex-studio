@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro lens with razor-thin focus, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with epic scale in miniature.
   rendering_and_quality: Convincing macro photography, kept consistent across the whole image.
-  creative_brief: 'Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting. Carry it through macro focus, painted miniature, shallow depth, dramatic light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting. Carry it through macro focus, painted miniature, shallow depth, dramatic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: macro focus; painted miniature; shallow depth; dramatic light
 avoidRules:
   - interface text, menus or health bars

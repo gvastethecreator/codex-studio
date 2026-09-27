@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Quiet landscape or street at night, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with serene nocturnal poetry.
   rendering_and_quality: Refined gradated woodblock, kept consistent across the whole image.
-  creative_brief: 'Shin-hanga night print: early twentieth-century woodblock prints of moonlit shrines, snowy temples and lantern-lit streets with soft gradations and quiet atmosphere. Carry it through woodblock, moonlit shrine, soft gradients, lantern glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Shin-hanga night print: early twentieth-century woodblock prints of moonlit shrines, snowy temples and lantern-lit streets with soft gradations and quiet atmosphere. Carry it through woodblock, moonlit shrine, soft gradients, lantern glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: woodblock; moonlit shrine; soft gradients; lantern glow
 avoidRules:
   - readable Japanese text or seals

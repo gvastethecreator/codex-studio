@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Bizarre crowded composition, framed the way Erol Otus composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cosmic weird strangeness.
   rendering_and_quality: Psychedelic weird fantasy illustration, in the recognizable hand of Erol Otus.
-  creative_brief: 'Erol Otus weird fantasy art: psychedelic bizarre creatures, cosmic strangeness, bold saturated color or wobbly ink, alien anatomy and seventies underground comix energy. Carry it through Otus weird creatures, psychedelic color, alien anatomy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Erol Otus weird fantasy art: psychedelic bizarre creatures, cosmic strangeness, bold saturated color or wobbly ink, alien anatomy and seventies underground comix energy. Carry it through Otus weird creatures, psychedelic color, alien anatomy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Otus weird creatures; psychedelic color; alien anatomy
 avoidRules:
   - existing franchise characters

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close cave wall view, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with hushed sacred depth.
   rendering_and_quality: Fluid confident line, kept consistent across the whole image.
-  creative_brief: 'Naj Tunich cave drawing: black charcoal-and-ink drawings on cave walls, fluid lines of ballplayers, musicians and gods in the deep darkness. Carry it through cave drawing, black line, limestone, torchlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Naj Tunich cave drawing: black charcoal-and-ink drawings on cave walls, fluid lines of ballplayers, musicians and gods in the deep darkness. Carry it through cave drawing, black line, limestone, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cave drawing; black line; limestone; torchlight
 avoidRules:
   - readable glyphs

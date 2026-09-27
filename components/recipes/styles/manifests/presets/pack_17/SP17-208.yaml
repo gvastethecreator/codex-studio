@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Two figures far apart with empty space, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tense stillness before motion.
   rendering_and_quality: Expressive ink with strong negative space, kept consistent across the whole image.
-  creative_brief: 'Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space. Carry it through splashing ink, vast white space, single red accent, duel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space. Carry it through splashing ink, vast white space, single red accent, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: splashing ink; vast white space; single red accent; duel
 avoidRules:
   - readable calligraphy

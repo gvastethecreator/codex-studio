@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide triptych composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with legendary heroic struggle.
   rendering_and_quality: Dense detailed woodblock action, kept consistent across the whole image.
-  creative_brief: 'Musha-e warrior print: dynamic woodblock triptychs of legendary warriors battling monsters, giant skeletons and sea spirits with dense action. Carry it through warrior triptych, giant monster, patterned armor, dynamic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Musha-e warrior print: dynamic woodblock triptychs of legendary warriors battling monsters, giant skeletons and sea spirits with dense action. Carry it through warrior triptych, giant monster, patterned armor, dynamic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: warrior triptych; giant monster; patterned armor; dynamic
 avoidRules:
   - readable Japanese text or seals

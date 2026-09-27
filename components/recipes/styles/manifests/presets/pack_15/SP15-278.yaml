@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Figures wearing and wielding branching antler forms in misty woods.
   atmosphere_and_mood: Wild, quiet and ancient, people who borrow the crowns of deer.
   rendering_and_quality: Detailed atmospheric illustration with carved antler and horn detail.
-  creative_brief: 'Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters. Carry it through antler crowns, horn instruments, carved bone, misty forests. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters. Carry it through antler crowns, horn instruments, carved bone, misty forests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: antler crowns; horn instruments; carved bone; misty forests
 avoidRules:
   - readable text

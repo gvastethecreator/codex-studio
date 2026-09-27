@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small bright sprite about a tenth of the screen tall, with a big expressive head, walking across tile-built era maps. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small bright sprite about a tenth of the screen tall, with a big expressive head, walking across tile-built era maps. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Vibrant SNES greens, blues and warm fairground colors.
-  lighting_and_shadow: "Bright flat sprite colors with gentle banded gradients in skies and water."
-  texture_and_material: "Crisp square pixels, each sprite in a small palette with dark outlines, on repeating grass, stone and wood tiles."
+  lighting_and_shadow: 'Bright flat sprite colors with gentle banded gradients in skies and water.'
+  texture_and_material: 'Crisp square pixels, each sprite in a small palette with dark outlines, on repeating grass, stone and wood tiles.'
   camera_and_composition: Top-down three-quarter view of tile maps, framed the way Chrono Trigger 1995 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with joyful time-traveling adventure.
-  rendering_and_quality: "A 1995 Super Nintendo frame at 256 by 224: sharp pixels, bright saturated colors and a slightly squashed 4:3 look."
+  rendering_and_quality: 'A 1995 Super Nintendo frame at 256 by 224: sharp pixels, bright saturated colors and a slightly squashed 4:3 look.'
   creative_brief: "Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth. Carry it through Chrono Trigger bright sprites, Toriyama big-head figures, tile maps, time eras. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Chrono Trigger bright sprites; Toriyama big-head figures; tile maps; time eras"
+  key_features: 'Chrono Trigger bright sprites; Toriyama big-head figures; tile maps; time eras'
 avoidRules:
   - a red spiky-haired boy with a katana
   - a frog knight

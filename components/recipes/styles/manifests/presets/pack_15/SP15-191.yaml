@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Workshop scenes and portraits with the crafted limb as the focus.
   atmosphere_and_mood: Proud and tender, bodies rebuilt as works of art rather than repairs.
   rendering_and_quality: Richly detailed craft illustration with precise joinery and polished wood and brass surfaces.
-  creative_brief: 'Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art. Carry it through carved wooden limbs, brass hinges, porcelain plates, artisan workshop. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art. Carry it through carved wooden limbs, brass hinges, porcelain plates, artisan workshop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: carved wooden limbs; brass hinges; porcelain plates; artisan workshop
 avoidRules:
   - readable text

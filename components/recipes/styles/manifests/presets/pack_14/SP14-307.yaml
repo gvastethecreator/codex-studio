@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide elevated panorama over canals, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with luminous dreamlike abundance.
   rendering_and_quality: Lush painterly worldbuilding, kept consistent across the whole image.
-  creative_brief: 'Floating chinampa city: a fantastic lake city of floating gardens, canals, temple pyramids and canoes, painted in lush luminous detail at golden hour. Carry it through floating gardens, canals, temple pyramids, lake city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Floating chinampa city: a fantastic lake city of floating gardens, canals, temple pyramids and canoes, painted in lush luminous detail at golden hour. Carry it through floating gardens, canals, temple pyramids, lake city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: floating gardens; canals; temple pyramids; lake city
 avoidRules:
   - readable glyphs

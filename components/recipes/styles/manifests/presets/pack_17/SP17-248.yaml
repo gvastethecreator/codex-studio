@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Character portrait vignette, framed the way Tony DiTerlizzi composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with whimsical bohemian strangeness.
   rendering_and_quality: Sepia ink and watercolor planar illustration, in the recognizable hand of Tony DiTerlizzi.
-  creative_brief: 'Tony DiTerlizzi planar fantasy art: whimsical elongated characters, curling Art Nouveau lines, sepia ink with muted watercolor and strange bohemian city dwellers. Carry it through DiTerlizzi elongated whimsy, sepia, Art Nouveau curls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tony DiTerlizzi planar fantasy art: whimsical elongated characters, curling Art Nouveau lines, sepia ink with muted watercolor and strange bohemian city dwellers. Carry it through DiTerlizzi elongated whimsy, sepia, Art Nouveau curls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: DiTerlizzi elongated whimsy; sepia; Art Nouveau curls
 avoidRules:
   - Planescape characters

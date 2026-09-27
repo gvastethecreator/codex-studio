@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of plated surfaces and wide views of shell-built structures.
   atmosphere_and_mood: Alien and beautiful, a world that borrowed its engineering from beetles.
   rendering_and_quality: Glossy detailed illustration with rich iridescent color shifts.
-  creative_brief: 'Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies. Carry it through iridescent plates, segmented joints, wing canopies, beetle sheen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies. Carry it through iridescent plates, segmented joints, wing canopies, beetle sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: iridescent plates; segmented joints; wing canopies; beetle sheen
 avoidRules:
   - readable text

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dutch-tilted angles throughout, framed the way The Third Man 1949 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tilted postwar intrigue.
   rendering_and_quality: Authentic late-forties British noir frame, in the recognizable hand of The Third Man 1949.
-  creative_brief: 'Carol Reed The Third Man (1949) look: bombed-out postwar Vienna, dutch-tilted angles, wet cobblestones, huge shadows on walls, sewers, a Ferris wheel and zither music. Carry it through Third Man dutch tilts, ruined Vienna, giant shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Carol Reed The Third Man (1949) look: bombed-out postwar Vienna, dutch-tilted angles, wet cobblestones, huge shadows on walls, sewers, a Ferris wheel and zither music. Carry it through Third Man dutch tilts, ruined Vienna, giant shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Third Man dutch tilts; ruined Vienna; giant shadows
 avoidRules:
   - a man in a doorway revealed by a window light with a cat at his feet

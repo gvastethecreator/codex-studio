@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low miniature angles and newsreel crowd shots, framed the way Godzilla 1954 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grieving atomic tragedy.
   rendering_and_quality: Authentic fifties Toho monster film frame, in the recognizable hand of Godzilla 1954.
-  creative_brief: 'Ishiro Honda Godzilla (1954) look: somber black-and-white Tokyo in ruins, suitmation and miniature destruction, fleeing crowds, power lines, newsreel grain and atomic grief. Carry it through Honda somber Tokyo, miniatures, searchlights, atomic grief. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ishiro Honda Godzilla (1954) look: somber black-and-white Tokyo in ruins, suitmation and miniature destruction, fleeing crowds, power lines, newsreel grain and atomic grief. Carry it through Honda somber Tokyo, miniatures, searchlights, atomic grief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Honda somber Tokyo; miniatures; searchlights; atomic grief
 avoidRules:
   - a dorsal-finned reptile kaiju breathing a beam

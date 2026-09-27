@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dramatic reflections in black glass and imposing stepped structures.
   atmosphere_and_mood: Sharp, dangerous and majestic, beauty with a cutting edge.
   rendering_and_quality: Glossy precise illustration with sharp reflections and knapped facets.
-  creative_brief: 'Obsidianpunk: a civilization of volcanic glass, with razor obsidian blades, black mirror shields, knapped glass architecture and sun-temples reflecting fire. Carry it through knapped obsidian blades, black mirror shields, glass temples, fire reflections. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Obsidianpunk: a civilization of volcanic glass, with razor obsidian blades, black mirror shields, knapped glass architecture and sun-temples reflecting fire. Carry it through knapped obsidian blades, black mirror shields, glass temples, fire reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: knapped obsidian blades; black mirror shields; glass temples; fire reflections
 avoidRules:
   - readable text

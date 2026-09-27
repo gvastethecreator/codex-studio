@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heavy monumental angle, framed the way Brutalist Object composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with heavy monumental calm.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Brutalist product language: heavy raw cast concrete and rough metal objects, monolithic blocks, exposed aggregate, board-formed texture and unapologetic mass. Carry it through Brutalist concrete, monolithic, board-formed. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Brutalist product language: heavy raw cast concrete and rough metal objects, monolithic blocks, exposed aggregate, board-formed texture and unapologetic mass. Carry it through Brutalist concrete, monolithic, board-formed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Brutalist concrete; monolithic; board-formed
 avoidRules:
   - existing franchise characters

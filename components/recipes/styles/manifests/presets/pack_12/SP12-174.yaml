@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as intricate mechanical boxes and devices seen up close. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dark wood, brass and occult blue, true to the The Room 2012 palette.
-  lighting_and_shadow: "A single warm lamp glowing on the box, with occult blue glints."
-  texture_and_material: "Polished dark wood, brass fittings and leather, clean and very detailed up close."
+  lighting_and_shadow: 'A single warm lamp glowing on the box, with occult blue glints.'
+  texture_and_material: 'Polished dark wood, brass fittings and leather, clean and very detailed up close.'
   camera_and_composition: First-person close-up view, framed the way The Room 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with curious occult tension.
-  rendering_and_quality: "A 2012 tablet frame at 2048 by 1536: close-up of an intricate puzzle box on a table, a small eyepiece icon in a corner."
-  creative_brief: 'Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow. Carry it through The Room puzzle box, brass, hidden drawers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2012 tablet frame at 2048 by 1536: close-up of an intricate puzzle box on a table, a small eyepiece icon in a corner.'
+  creative_brief: "Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow. Carry it through The Room puzzle box, brass, hidden drawers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: The Room puzzle box; brass; hidden drawers
 avoidRules:
   - readable clue text

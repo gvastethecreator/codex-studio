@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Classic Hawks eye-level ensemble framing, framed the way Rio Bravo 1959 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with warm stubborn camaraderie.
   rendering_and_quality: Authentic late-fifties Technicolor western frame, in the recognizable hand of Rio Bravo 1959.
-  creative_brief: 'Howard Hawks Rio Bravo (1959) look: warm Technicolor small-town jailhouse, lamplit interiors, easy camaraderie, songs by the fire and patient siege tension. Carry it through Rio Bravo jailhouse, lamplit camaraderie, siege. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Howard Hawks Rio Bravo (1959) look: warm Technicolor small-town jailhouse, lamplit interiors, easy camaraderie, songs by the fire and patient siege tension. Carry it through Rio Bravo jailhouse, lamplit camaraderie, siege. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rio Bravo jailhouse; lamplit camaraderie; siege
 avoidRules:
   - existing franchise characters

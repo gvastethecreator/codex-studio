@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close cozy product view, framed the way Plush Toy composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cuddly comforting warmth.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Plush toy look: soft stitched fabric characters, embroidered eyes, fuzzy minky fabric, visible seams and cozy bedroom or shop display. Carry it through Plush toy, embroidery, minky fabric, seams. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Plush toy look: soft stitched fabric characters, embroidered eyes, fuzzy minky fabric, visible seams and cozy bedroom or shop display. Carry it through Plush toy, embroidery, minky fabric, seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Plush toy; embroidery; minky fabric; seams
 avoidRules:
   - existing franchise characters

@@ -30,9 +30,9 @@ visualDna:
   texture_and_material: Grimy concrete, rust, condensation on the mask glass.
   camera_and_composition: First-person view through a cracked gas mask, framed the way Metro 2033 2010 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with suffocating underground dread.
-  rendering_and_quality: "A 2010 first-person frame at 1280 by 720: gas-mask glass edge around the view, flashlight beam, a watch-like gauge on a wrist."
+  rendering_and_quality: 'A 2010 first-person frame at 1280 by 720: gas-mask glass edge around the view, flashlight beam, a watch-like gauge on a wrist.'
   key_features: Metro tunnels; gas masks; flashlight; station towns
-  creative_brief: '4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants. Carry it through Metro tunnels, gas masks, flashlight, station towns. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants. Carry it through Metro tunnels, gas masks, flashlight, station towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Long corridor perspective of repeating pillars, one creature rearing close to the lens.
   atmosphere_and_mood: Keep the requested mood with fierce sacred vitality.
   rendering_and_quality: Deeply undercut sculptural carving with rhythmic repetition, kept consistent across the whole image.
-  creative_brief: 'Yali temple pillar: South Indian temple halls with rearing leonine yali carved from single granite columns, elephant trunks, bulging eyes and riders, receding in long pillared corridors. Carry it through rearing leonine beast, granite pillar, elephant trunk, pillared corridor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yali temple pillar: South Indian temple halls with rearing leonine yali carved from single granite columns, elephant trunks, bulging eyes and riders, receding in long pillared corridors. Carry it through rearing leonine beast, granite pillar, elephant trunk, pillared corridor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: rearing leonine beast; granite pillar; elephant trunk; pillared corridor
 avoidRules:
   - cultural stereotypes or caricature

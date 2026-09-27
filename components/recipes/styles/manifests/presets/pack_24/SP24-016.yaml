@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low angle across the attic floor with toys in rows facing the subject.
   atmosphere_and_mood: Nostalgic, patient and menacing, forgotten things that remember.
   rendering_and_quality: Detailed painterly realism with dust particles and subtle eerie arrangement.
-  creative_brief: 'Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back. Carry it through forgotten toys, rows facing the viewer, dusty beam, cracked porcelain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back. Carry it through forgotten toys, rows facing the viewer, dusty beam, cracked porcelain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: forgotten toys; rows facing the viewer; dusty beam; cracked porcelain
 avoidRules:
   - cheerful playroom

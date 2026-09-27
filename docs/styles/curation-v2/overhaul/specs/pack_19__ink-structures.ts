@@ -37,7 +37,7 @@ const spec: Spec = {
       briefs: [
         'A dancer turns with a scarf so long it wraps the whole page twice, drawn in single brush contours that swell at every push and thin at every release. No readable text or logo.',
         'A giraffe bends down to drink from a birdbath in a suburban garden, its neck one long elastic line that swells at the knees and tapers at the lips. No readable text or logo.',
-        'A tightrope walker crosses between two chimneys at dusk, the rope and her body drawn in tense, springing contours on nearly empty paper. No readable text or logo.'
+        'A tightrope walker crosses between two chimneys at dusk, the rope and her body drawn in tense, springing contours on nearly empty paper. No readable text or logo.',
       ],
     },
     'SP19-003': {
@@ -146,11 +146,11 @@ const spec: Spec = {
           'Radiating spatter, droplet trails, pooled splash centers and a few sharp brush accents on absorbent paper.',
         camera_and_composition:
           'Asymmetric composition with splash energy flowing diagonally and large areas of empty paper.',
-        atmosphere_and_mood: 'Explosive, spontaneous and poetic, a landscape born from an accident.',
+        atmosphere_and_mood:
+          'Explosive, spontaneous and poetic, a landscape born from an accident.',
         rendering_and_quality:
           'Bold uncontrolled splash forms tamed by few careful strokes, never a neat illustration.',
-        key_features:
-          'thrown ink bursts; droplet trails; few clarifying strokes; empty paper',
+        key_features: 'thrown ink bursts; droplet trails; few clarifying strokes; empty paper',
       },
       ['neat outlined drawing', 'uniform flat fill', 'digital splatter brush pattern'],
       [
@@ -214,7 +214,7 @@ const spec: Spec = {
       [
         'A sleeping whale floats in open sea, its whole body wrapped in belt-like lines that bend over its back and pinch around the fins. No readable text or logo.',
         'A bodybuilder flexes on a beach, every muscle mapped by lines wrapping around it like a relief map of a mountain range. No readable text or logo.',
-        "Over an enormous crumpled bedsheet a snail makes its slow journey, both drawn in wrapping lines so the sheet looks like rolling hills. No readable text or logo.",
+        'Over an enormous crumpled bedsheet a snail makes its slow journey, both drawn in wrapping lines so the sheet looks like rolling hills. No readable text or logo.',
       ],
     ),
     ink(
@@ -237,7 +237,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Rational, precise and slightly tense, order holding back chaos.',
         rendering_and_quality:
           'Exact ruled geometry with deliberate freehand contrast, no sketchy messiness in the ruled parts.',
-        key_features: 'ruled straight lines; visible construction guides; ruled shadow fills; few freehand accents',
+        key_features:
+          'ruled straight lines; visible construction guides; ruled shadow fills; few freehand accents',
       },
       ['sketchy loose lines everywhere', 'photographic shading', 'curved brush strokes'],
       [
@@ -266,7 +267,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Mysterious and luminous, the subject glowing because of its absence.',
         rendering_and_quality:
           'Precise reserve edges and confident ink fields, no outline drawn inside the white shapes.',
-        key_features: 'subject left as bare paper; ink painted around it; crisp reserve edges; dark field',
+        key_features:
+          'subject left as bare paper; ink painted around it; crisp reserve edges; dark field',
       },
       ['outlined subject', 'subject painted dark', 'grey filled subject'],
       [
@@ -321,10 +323,12 @@ const spec: Spec = {
           'Fine feathered strand marks, looping drag trails, a faint center fold crease and soft blotted edges.',
         camera_and_composition:
           'Mirror-symmetric composition around a central fold, the subject rising from the crease.',
-        atmosphere_and_mood: 'Uncanny, elegant and organic, like something grown rather than drawn.',
+        atmosphere_and_mood:
+          'Uncanny, elegant and organic, like something grown rather than drawn.',
         rendering_and_quality:
           'Authentic dragged strand marks with minimal added strokes, never a clean digital mirror.',
-        key_features: 'mirrored strand trails; center fold crease; feathered drags; minimal added detail',
+        key_features:
+          'mirrored strand trails; center fold crease; feathered drags; minimal added detail',
       },
       ['clean digital mirror copy', 'solid outlines', 'blot splat instead of strands'],
       [
@@ -350,7 +354,8 @@ const spec: Spec = {
           'Flat translucent wash layers with crisp dried edges and faint granulation inside each layer.',
         camera_and_composition:
           'Layered depth with pale distant planes and darker near planes stepping toward the viewer.',
-        atmosphere_and_mood: 'Calm, orderly and atmospheric, like mist separating hills into layers.',
+        atmosphere_and_mood:
+          'Calm, orderly and atmospheric, like mist separating hills into layers.',
         rendering_and_quality:
           'Precise stepped value shapes, clean dried edges and no blended gradients.',
         key_features: 'four or five value steps; crisp dried edges; layered depth; no blending',
@@ -379,7 +384,8 @@ const spec: Spec = {
           'Beaded dotted contours, uneven ink pickup, faint doubled ghost lines and flat color fills off register.',
         camera_and_composition:
           'Clear graphic placement of the subject on a pale ground, often centered and illustrative.',
-        atmosphere_and_mood: 'Playful, stylish and slightly nostalgic, like a mid-century illustration.',
+        atmosphere_and_mood:
+          'Playful, stylish and slightly nostalgic, like a mid-century illustration.',
         rendering_and_quality:
           'Authentic broken transfer lines, never clean continuous vector strokes.',
         key_features: 'beaded broken lines; ghost doubles; offset flat color; pale ground',

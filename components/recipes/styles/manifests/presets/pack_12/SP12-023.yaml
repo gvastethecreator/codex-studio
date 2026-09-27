@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as tiny colonists, drones and rovers among retro-futurist domes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mars red, dome glass teal and space-age white.
-  lighting_and_shadow: "Dusty butterscotch Mars daylight with long soft shadows and drifting dust."
-  texture_and_material: "Clean white retro-futurist dome panels and glass over rusty red ground."
+  lighting_and_shadow: 'Dusty butterscotch Mars daylight with long soft shadows and drifting dust.'
+  texture_and_material: 'Clean white retro-futurist dome panels and glass over rusty red ground.'
   camera_and_composition: Overhead colony builder view, framed the way Surviving Mars 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with optimistic frontier building.
-  rendering_and_quality: "A 2018 PC frame at 1920 by 1080 from a high angle: glass domes, tiny drones and rovers, resource bar shapes along the top."
+  rendering_and_quality: 'A 2018 PC frame at 1920 by 1080 from a high angle: glass domes, tiny drones and rovers, resource bar shapes along the top.'
   key_features: Surviving Mars domes; retro-futurism; drones; red dust
-  creative_brief: 'Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design. Carry it through Surviving Mars domes, retro-futurism, drones, red dust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design. Carry it through Surviving Mars domes, retro-futurism, drones, red dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

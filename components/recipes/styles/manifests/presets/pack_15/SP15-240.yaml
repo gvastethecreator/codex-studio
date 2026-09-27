@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Cluttered workbench scenes with a glowing reaction at the center.
   atmosphere_and_mood: Obsessive and electric, the dream of turning anything into gold.
   rendering_and_quality: Rich glowing illustration with detailed glassware and smoky light.
-  creative_brief: 'Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments. Carry it through bubbling alembics, glowing circles, gold dust, sulfur smoke. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments. Carry it through bubbling alembics, glowing circles, gold dust, sulfur smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bubbling alembics; glowing circles; gold dust; sulfur smoke
 avoidRules:
   - readable text

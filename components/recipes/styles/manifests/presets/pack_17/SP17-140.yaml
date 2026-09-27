@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Row of identical miniatures at different stages, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with patient hobby craft.
   rendering_and_quality: Clear stage differences without numbers, kept consistent across the whole image.
-  creative_brief: 'Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stage progression; identical miniatures; primer to finish; hobby
 avoidRules:
   - step numbers or labels

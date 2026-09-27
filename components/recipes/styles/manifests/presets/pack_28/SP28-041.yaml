@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter design presentation view, framed the way Kunio Okawara composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grounded military realism.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Kunio Okawara real robot design language: military mass-production mecha with boxy proportions, clear armor panels, visible thrusters, unit markings, mono-eyes or visors and believable engineering. Carry it through Okawara real robot, boxy armor, mass production, markings. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kunio Okawara real robot design language: military mass-production mecha with boxy proportions, clear armor panels, visible thrusters, unit markings, mono-eyes or visors and believable engineering. Carry it through Okawara real robot, boxy armor, mass production, markings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Okawara real robot; boxy armor; mass production; markings
 avoidRules:
   - Gundam or Zaku designs

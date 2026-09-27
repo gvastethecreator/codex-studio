@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Oppressive procedural compositions in cramped rooms, framed the way Se7en 1995 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with oppressive grim dread.
   rendering_and_quality: Grimy bleach-bypass nineties thriller frame, in the recognizable hand of Se7en 1995.
-  creative_brief: 'David Fincher Se7en (1995) look: endless rain, bleach-bypass desaturation, grimy decaying city apartments, flashlight beams and oppressive procedural dread. Carry it through Fincher bleach bypass, rain, grime, flashlights. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Fincher Se7en (1995) look: endless rain, bleach-bypass desaturation, grimy decaying city apartments, flashlight beams and oppressive procedural dread. Carry it through Fincher bleach bypass, rain, grime, flashlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Fincher bleach bypass; rain; grime; flashlights
 avoidRules:
   - existing franchise characters

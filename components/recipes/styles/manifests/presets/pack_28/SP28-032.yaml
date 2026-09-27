@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low miniature eye-level view, framed the way Model Railway composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy miniature world.
   rendering_and_quality: Miniature model railway photograph, in the recognizable hand of Model Railway.
-  creative_brief: 'Model railway layout look: HO scale miniature towns with trains, painted tiny figures, static grass, lichen trees and warm layout lighting. Carry it through HO scale layout, static grass, tiny figures. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Model railway layout look: HO scale miniature towns with trains, painted tiny figures, static grass, lichen trees and warm layout lighting. Carry it through HO scale layout, static grass, tiny figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: HO scale layout; static grass; tiny figures
 avoidRules:
   - existing franchise characters

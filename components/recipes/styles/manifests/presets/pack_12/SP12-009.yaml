@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as round-headed thick-outline cartoon figures with tiny dot eyes and chunky gear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright flat grass green, sky blue and primary colors.
-  lighting_and_shadow: "Flat cartoon colors with no gradients and no shadows except a dark oval under each figure."
-  texture_and_material: "Thick black outlines and flat vector color fills, simple scribbly grass and castle walls."
+  lighting_and_shadow: 'Flat cartoon colors with no gradients and no shadows except a dark oval under each figure.'
+  texture_and_material: 'Thick black outlines and flat vector color fills, simple scribbly grass and castle walls.'
   camera_and_composition: Side-scrolling brawler view, framed the way Castle Crashers 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with silly co-op mayhem.
-  rendering_and_quality: "A 2008 Xbox 360 side-view frame at 1280 by 720: four round-headed knights brawling, portrait and bar shapes along the top."
+  rendering_and_quality: 'A 2008 Xbox 360 side-view frame at 1280 by 720: four round-headed knights brawling, portrait and bar shapes along the top.'
   key_features: Castle Crashers thick outlines; round heads; co-op brawl
-  creative_brief: 'The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling. Carry it through Castle Crashers thick outlines, round heads, co-op brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling. Carry it through Castle Crashers thick outlines, round heads, co-op brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - four knights in red, green, blue and orange armor
   - animal orb companions

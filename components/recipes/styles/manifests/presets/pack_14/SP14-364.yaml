@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Path receding into mist, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with quiet solemn fate.
   rendering_and_quality: Refined ink-and-color painting, kept consistent across the whole image.
-  creative_brief: 'Korean jeoseung messenger painting: Korean painting of the afterlife messengers in black robes and wide hats, the kings of the underworld and lantern-lit paths to the other world. Carry it through afterlife messengers, black robes, wide hats, lantern path. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Korean jeoseung messenger painting: Korean painting of the afterlife messengers in black robes and wide hats, the kings of the underworld and lantern-lit paths to the other world. Carry it through afterlife messengers, black robes, wide hats, lantern path. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: afterlife messengers; black robes; wide hats; lantern path
 avoidRules:
   - cultural stereotypes or caricature

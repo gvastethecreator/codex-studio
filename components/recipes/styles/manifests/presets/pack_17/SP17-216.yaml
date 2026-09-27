@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Strong diagonal with raised tools or weapons, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with defiant collective energy.
   rendering_and_quality: Crisp graphic poster without slogans, kept consistent across the whole image.
-  creative_brief: 'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stencil poster; flat colors; heroic diagonal; raised pitchforks
 avoidRules:
   - slogans or text

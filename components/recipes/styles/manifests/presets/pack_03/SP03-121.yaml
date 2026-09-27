@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the pose shows muscles in contraction and stretch.
   atmosphere_and_mood: Studious and powerful, the machinery of movement laid bare without horror.
   rendering_and_quality: Clean museum-model finish with no blood, gore, wounds or exposed organs.
-  creative_brief: 'Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure. Carry it through flayed muscle groups, fiber striations, ivory tendons, single high sculpture key, clean museum finish. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure. Carry it through flayed muscle groups, fiber striations, ivory tendons, single high sculpture key, clean museum finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish
 avoidRules:
   - forced T-pose

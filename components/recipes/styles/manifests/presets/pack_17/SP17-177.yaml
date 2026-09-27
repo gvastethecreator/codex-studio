@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single subject centered in an oval vignette, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with intimate precious mystery.
   rendering_and_quality: Tiny detailed painting, no text, kept consistent across the whole image.
-  creative_brief: 'Small paperback vignette painting: tiny oval or round paintings from paperback back covers and spines, a single figure or object painted with jewel-like care. Carry it through oval vignette, tiny subject, jewel tones, dark ground. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Small paperback vignette painting: tiny oval or round paintings from paperback back covers and spines, a single figure or object painted with jewel-like care. Carry it through oval vignette, tiny subject, jewel tones, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: oval vignette; tiny subject; jewel tones; dark ground
 avoidRules:
   - title lettering

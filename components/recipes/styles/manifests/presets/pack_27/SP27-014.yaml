@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dreamlike still wide compositions, framed the way Messiah of Evil 1973 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamlike cult nightmare.
   rendering_and_quality: Stylish seventies cult horror frame, in the recognizable hand of Messiah of Evil 1973.
-  creative_brief: 'Messiah of Evil (1973) look: pop-art murals, eerie empty California beach towns, blood moon light, dreamlike stillness and art-house cult horror. Carry it through Messiah of Evil pop murals, empty beach town, blood moon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Messiah of Evil (1973) look: pop-art murals, eerie empty California beach towns, blood moon light, dreamlike stillness and art-house cult horror. Carry it through Messiah of Evil pop murals, empty beach town, blood moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Messiah of Evil pop murals; empty beach town; blood moon
 avoidRules:
   - existing franchise characters

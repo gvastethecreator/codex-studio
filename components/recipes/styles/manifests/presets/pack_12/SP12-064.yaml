@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny painted steampunk soldiers and colonists facing massive hordes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Steampunk brass, fog grey and night blue, true to the They Are Billions 2019 palette.
-  lighting_and_shadow: "Night fog with turret muzzle flashes and small lamp glows."
-  texture_and_material: "Detailed painted 2D buildings and tiny units seen from high on a diagonal."
+  lighting_and_shadow: 'Night fog with turret muzzle flashes and small lamp glows.'
+  texture_and_material: 'Detailed painted 2D buildings and tiny units seen from high on a diagonal.'
   camera_and_composition: Isometric strategy view, framed the way They Are Billions 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with desperate horde defense.
-  rendering_and_quality: "A 2019 PC frame at 1920 by 1080: tiny colony walls, a vast grey horde massing in fog, resource shapes at the top."
+  rendering_and_quality: 'A 2019 PC frame at 1920 by 1080: tiny colony walls, a vast grey horde massing in fog, resource shapes at the top.'
   key_features: They Are Billions hordes; steampunk walls; isometric
-  creative_brief: 'Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog. Carry it through They Are Billions hordes, steampunk walls, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog. Carry it through They Are Billions hordes, steampunk walls, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

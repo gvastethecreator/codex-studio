@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter maquette view on a turntable, framed the way Weta Workshop composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with naturalistic creature craft.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Weta Workshop collectible look: film-studio maquettes with painterly naturalistic sculpting, weathered realism, creature design heritage and handcrafted bases. Carry it through Weta maquette, naturalistic creature, weathered. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Weta Workshop collectible look: film-studio maquettes with painterly naturalistic sculpting, weathered realism, creature design heritage and handcrafted bases. Carry it through Weta maquette, naturalistic creature, weathered. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Weta maquette; naturalistic creature; weathered
 avoidRules:
   - licensed film creatures

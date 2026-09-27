@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal gallery display view, framed the way Designer Vinyl Art Toy composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful urban art cool.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Designer vinyl art toy look: simple rounded platform figures customized by artists, bold graphic surface designs, matte vinyl and gallery shelf display. Carry it through Designer vinyl platform, artist graphics, gallery shelf. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Designer vinyl art toy look: simple rounded platform figures customized by artists, bold graphic surface designs, matte vinyl and gallery shelf display. Carry it through Designer vinyl platform, artist graphics, gallery shelf. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Designer vinyl platform; artist graphics; gallery shelf
 avoidRules:
   - Kidrobot Dunny ears

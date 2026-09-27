@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Street view fading into fog, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with isolated uneasy hush.
   rendering_and_quality: Painterly atmosphere with clear lights, kept consistent across the whole image.
-  creative_brief: 'Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights. Carry it through thick fog, hanging lanterns, crooked houses, shapes between lights. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights. Carry it through thick fog, hanging lanterns, crooked houses, shapes between lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: thick fog; hanging lanterns; crooked houses; shapes between lights
 avoidRules:
   - interface or HUD

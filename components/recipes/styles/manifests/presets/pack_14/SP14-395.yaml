@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Top-down carpet field with repeating lattice cells and a hooked border.
   atmosphere_and_mood: Keep the requested mood with ancient guardian pattern.
   rendering_and_quality: Crisp geometric weaving with stepped knot edges, kept consistent across the whole image.
-  creative_brief: 'Caucasian dragon carpet: Armenian and Caucasian knotted pile carpets where stylized dragons become angular S-shaped emblems locked in a diagonal lattice with palmettes, stars and hooked borders. Carry it through angular dragon emblems, diagonal lattice, palmettes, hooked border. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Caucasian dragon carpet: Armenian and Caucasian knotted pile carpets where stylized dragons become angular S-shaped emblems locked in a diagonal lattice with palmettes, stars and hooked borders. Carry it through angular dragon emblems, diagonal lattice, palmettes, hooked border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: angular dragon emblems; diagonal lattice; palmettes; hooked border
 avoidRules:
   - cultural stereotypes or caricature

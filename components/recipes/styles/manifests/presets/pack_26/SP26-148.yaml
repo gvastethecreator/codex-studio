@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide strip panels with changing backdrops behind fixed characters.
   atmosphere_and_mood: Keep the requested mood with poetic absurd tenderness.
   rendering_and_quality: Faithful early newspaper strip art, in the recognizable hand of George Herriman.
-  creative_brief: 'George Herriman strip look of the 1910s to 1930s: scratchy loose pen line, Arizona mesas that change shape between panels, crosshatched moons, poetic dialect and a stage-set desert. Carry it through Herriman scratchy desert strip, shifting mesas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "George Herriman strip look of the 1910s to 1930s: scratchy loose pen line, Arizona mesas that change shape between panels, crosshatched moons, poetic dialect and a stage-set desert. Carry it through Herriman scratchy desert strip, shifting mesas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Herriman scratchy desert strip; shifting mesas
 avoidRules:
   - a black cat struck by a brick

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Close gritty portrait framing, framed the way Karl Kopinski composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grim weathered resolve.
   rendering_and_quality: Loose painterly grimdark portrait, in the recognizable hand of Karl Kopinski.
-  creative_brief: 'Karl Kopinski painterly grimdark look: gritty realistic portraits and battle scenes with loose expressive brushwork, muted earth palettes, heavy armor and weathered faces. Carry it through Kopinski loose brushwork, weathered faces, heavy armor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Karl Kopinski painterly grimdark look: gritty realistic portraits and battle scenes with loose expressive brushwork, muted earth palettes, heavy armor and weathered faces. Carry it through Kopinski loose brushwork, weathered faces, heavy armor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kopinski loose brushwork; weathered faces; heavy armor
 avoidRules:
   - Warhammer 40,000 insignia

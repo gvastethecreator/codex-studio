@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal three-quarter bust view, framed the way Polystone Bust composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dignified portrait presence.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Life-size and half-scale collectible bust look: chest-up sculpted portraits with realistic paint, textured costume collars and a pedestal plinth. Carry it through Collectible bust, pedestal plinth, realistic paint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Life-size and half-scale collectible bust look: chest-up sculpted portraits with realistic paint, textured costume collars and a pedestal plinth. Carry it through Collectible bust, pedestal plinth, realistic paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Collectible bust; pedestal plinth; realistic paint
 avoidRules:
   - existing franchise characters

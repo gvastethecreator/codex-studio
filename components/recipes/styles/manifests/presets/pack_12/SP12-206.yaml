@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as painted Amiga pixel knights and nobles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rich Amiga banners and green fields, true to the Defender of the Crown 1986 palette.
-  lighting_and_shadow: "Painted daylight in rich flat colors, lit the way Defender of the Crown 1986 lights its levels."
-  texture_and_material: "Painted-looking scenes made of visible square pixels and dithering."
+  lighting_and_shadow: 'Painted daylight in rich flat colors, lit the way Defender of the Crown 1986 lights its levels.'
+  texture_and_material: 'Painted-looking scenes made of visible square pixels and dithering.'
   camera_and_composition: First-person joust view down the lists, framed the way Defender of the Crown 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chivalric romantic drama.
-  rendering_and_quality: "A 1986 Amiga frame at 320 by 200: painterly pixel joust or castle scene, a simple framed border."
-  creative_brief: 'Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles. Carry it through Defender of the Crown joust, Amiga painting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1986 Amiga frame at 320 by 200: painterly pixel joust or castle scene, a simple framed border.'
+  creative_brief: "Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles. Carry it through Defender of the Crown joust, Amiga painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Defender of the Crown joust; Amiga painting
 avoidRules:
   - existing game characters, logos or levels

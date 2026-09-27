@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular composition with the subject at the center.
   atmosphere_and_mood: Keep the requested mood with cosmic cyclical awe.
   rendering_and_quality: Monumental intricate carving, kept consistent across the whole image.
-  creative_brief: 'Sun stone cosmic clockwork: the concentric carved rings of the great calendar stone reimagined as a vast turning cosmic machine of suns, eras and day signs. Carry it through concentric rings, carved basalt, glowing grooves, cosmic cycle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sun stone cosmic clockwork: the concentric carved rings of the great calendar stone reimagined as a vast turning cosmic machine of suns, eras and day signs. Carry it through concentric rings, carved basalt, glowing grooves, cosmic cycle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: concentric rings; carved basalt; glowing grooves; cosmic cycle
 avoidRules:
   - readable glyphs

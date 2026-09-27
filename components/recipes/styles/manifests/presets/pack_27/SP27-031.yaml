@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Restless circling handheld camera, framed the way Possession 1981 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with raw hysterical dread.
   rendering_and_quality: Raw eighties art horror frame, in the recognizable hand of Possession 1981.
-  creative_brief: 'Andrzej Żuławski Possession (1981) look: cold divided Berlin apartments, restless handheld camera, blue-grey palette and raw hysterical emotion. Carry it through Żuławski blue-grey, Berlin, restless camera, hysteria. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Andrzej Żuławski Possession (1981) look: cold divided Berlin apartments, restless handheld camera, blue-grey palette and raw hysterical emotion. Carry it through Żuławski blue-grey, Berlin, restless camera, hysteria. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Żuławski blue-grey; Berlin; restless camera; hysteria
 avoidRules:
   - existing franchise characters

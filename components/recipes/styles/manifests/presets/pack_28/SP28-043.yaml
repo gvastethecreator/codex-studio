@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low angle emphasizing elongated limbs, framed the way Evangelion composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with unsettling organic awe.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Evangelion-inspired organic mecha language by Ikuto Yamashita: slender biomechanical giants with elongated limbs, armor over living flesh, restraint bolts, umbilical cables and unsettling posture. Carry it through Organic mecha, elongated limbs, armor over flesh, umbilical. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Evangelion-inspired organic mecha language by Ikuto Yamashita: slender biomechanical giants with elongated limbs, armor over living flesh, restraint bolts, umbilical cables and unsettling posture. Carry it through Organic mecha, elongated limbs, armor over flesh, umbilical. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Organic mecha; elongated limbs; armor over flesh; umbilical
 avoidRules:
   - Eva Unit-01 purple and green horned design

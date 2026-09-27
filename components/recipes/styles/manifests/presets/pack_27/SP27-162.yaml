@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low anamorphic action frames, framed the way Terminator 2 1991 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with relentless steel dread.
   rendering_and_quality: Authentic early-nineties Cameron action frame, in the recognizable hand of Terminator 2 1991.
-  creative_brief: 'James Cameron Terminator 2: Judgment Day (1991) look: steel-blue grade, Los Angeles storm drains and steel mills, liquid-metal effects and a burning skull-strewn future war. Carry it through T2 steel blue, liquid metal, steel mill glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "James Cameron Terminator 2: Judgment Day (1991) look: steel-blue grade, Los Angeles storm drains and steel mills, liquid-metal effects and a burning skull-strewn future war. Carry it through T2 steel blue, liquid metal, steel mill glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: T2 steel blue; liquid metal; steel mill glow
 avoidRules:
   - a chrome endoskeleton with red eyes

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal vertical figure filling the frame with stacked worlds.
   atmosphere_and_mood: Keep the requested mood with vast ordered cosmos.
   rendering_and_quality: Precise schematic painting with ornamental detail, kept consistent across the whole image.
-  creative_brief: 'Jain cosmic man diagram: Jain cosmological paintings showing the universe as a vast human figure, layered with heavens, a central human world of rings and hells below, in precise color on cloth or paper. Carry it through cosmic human figure, layered heavens, concentric continents, hells below. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jain cosmic man diagram: Jain cosmological paintings showing the universe as a vast human figure, layered with heavens, a central human world of rings and hells below, in precise color on cloth or paper. Carry it through cosmic human figure, layered heavens, concentric continents, hells below. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cosmic human figure; layered heavens; concentric continents; hells below
 avoidRules:
   - cultural stereotypes or caricature

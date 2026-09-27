@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny robed pixel wizards. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep cave dark with fire and toxic liquids.
-  lighting_and_shadow: "Bright fire and spell glow on dark pixel caverns."
-  texture_and_material: "Every pixel simulated: sand falling, water flowing and fire spreading as tiny colored pixels."
+  lighting_and_shadow: 'Bright fire and spell glow on dark pixel caverns.'
+  texture_and_material: 'Every pixel simulated: sand falling, water flowing and fire spreading as tiny colored pixels.'
   camera_and_composition: Side-view cave view, framed the way Noita 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic alchemical danger.
-  rendering_and_quality: "A 2020 frame at 480 by 270 scaled up: tiny robed wizard sprite in a cave where pixels burn and flow."
-  creative_brief: 'Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells. Carry it through Noita pixel physics, fire, liquids. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 frame at 480 by 270 scaled up: tiny robed wizard sprite in a cave where pixels burn and flow.'
+  creative_brief: "Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells. Carry it through Noita pixel physics, fire, liquids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Noita pixel physics; fire; liquids
 avoidRules:
   - existing game characters, logos or levels

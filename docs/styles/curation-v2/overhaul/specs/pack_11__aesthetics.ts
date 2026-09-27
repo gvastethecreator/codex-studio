@@ -22,9 +22,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A grumpy little dragon hugs a pile of gold coins as a chunky candy-glossy icon, inflated rounded shapes and one huge highlight on its snout. No readable text or logo.",
-        "A friendly skull wearing a tiny crown winks as a chunky rounded icon in candy white and gold, a soft contact shadow beneath it. No readable text or logo.",
-        "A haunted castle with a sleepy face in its gate rises as a glossy rounded icon, gumdrop towers and purple roofs on a soft night backdrop. No readable text or logo.",
+        'A grumpy little dragon hugs a pile of gold coins as a chunky candy-glossy icon, inflated rounded shapes and one huge highlight on its snout. No readable text or logo.',
+        'A friendly skull wearing a tiny crown winks as a chunky rounded icon in candy white and gold, a soft contact shadow beneath it. No readable text or logo.',
+        'A haunted castle with a sleepy face in its gate rises as a glossy rounded icon, gumdrop towers and purple roofs on a soft night backdrop. No readable text or logo.',
       ],
     },
     'SP11-010': {
@@ -41,9 +41,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'blurry upscaled pixels', 'HUD text'],
       briefs: [
-        "A lone warrior stands before a dragon in a torchlit cave, drawn in sixteen hard-edged colors with hand-placed dithering in the shadows. No readable text or logo.",
+        'A lone warrior stands before a dragon in a torchlit cave, drawn in sixteen hard-edged colors with hand-placed dithering in the shadows. No readable text or logo.',
         "A swamp witch's cottage glows at night in a strict sixteen-color palette, dithered fog rolling in and fireflies as single bright squares. No readable text or logo.",
-        "A skeleton merchant runs a dungeon shop with potions on the shelves, clean pixel clusters and not one anti-aliased edge. No readable text or logo.",
+        'A skeleton merchant runs a dungeon shop with potions on the shelves, clean pixel clusters and not one anti-aliased edge. No readable text or logo.',
       ],
     },
     'SP11-011': {
@@ -60,9 +60,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lone armored rider on a chrome horse crosses a glowing magenta perspective grid toward a striped setting sun. No readable text or logo.",
-        "Half buried in a glowing magenta grid desert, a giant mirrored beast skull frames a striped sunset sun between its horns. No readable text or logo.",
-        "Rising from a glowing grid sea at dusk, a mirror-bright wizard tower wears cyan tube trim along its spiral stair as magenta lightning strikes its top. No readable text or logo.",
+        'A lone armored rider on a chrome horse crosses a glowing magenta perspective grid toward a striped setting sun. No readable text or logo.',
+        'Half buried in a glowing magenta grid desert, a giant mirrored beast skull frames a striped sunset sun between its horns. No readable text or logo.',
+        'Rising from a glowing grid sea at dusk, a mirror-bright wizard tower wears cyan tube trim along its spiral stair as magenta lightning strikes its top. No readable text or logo.',
       ],
     },
     'SP11-012': {
@@ -80,9 +80,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An old stone castle has been rebuilt as a green-tech town, wrapped in terrace gardens, solar-glass windows and wind sails turning on the towers. No readable text or logo.",
-        "A covered market bridge spans a clear river, copper arches wrapped in grapevines and solar canopies overhead as neighbors trade vegetables. No readable text or logo.",
-        "A seed monastery sits on a green hill, glass domes full of rare plants and monks in patched linen tending terraced water gardens. No readable text or logo.",
+        'An old stone castle has been rebuilt as a green-tech town, wrapped in terrace gardens, solar-glass windows and wind sails turning on the towers. No readable text or logo.',
+        'A covered market bridge spans a clear river, copper arches wrapped in grapevines and solar canopies overhead as neighbors trade vegetables. No readable text or logo.',
+        'A seed monastery sits on a green hill, glass domes full of rare plants and monks in patched linen tending terraced water gardens. No readable text or logo.',
       ],
     },
     'SP11-013': {
@@ -100,9 +100,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real war insignia'],
       briefs: [
-        "A riveted walking fortress with smokestacks crushes through a medieval forest toward a castle, searchlights sweeping the trees. No readable text or logo.",
-        "A warrior in riveted gunmetal armor with an engine on his back coughs black smoke as he grips a chain-driven war hammer. No readable text or logo.",
-        "Above a smog-choked fortress city at night, riveted black airships moor to iron towers under sodium lamps. No readable text or logo.",
+        'A riveted walking fortress with smokestacks crushes through a medieval forest toward a castle, searchlights sweeping the trees. No readable text or logo.',
+        'A warrior in riveted gunmetal armor with an engine on his back coughs black smoke as he grips a chain-driven war hammer. No readable text or logo.',
+        'Above a smog-choked fortress city at night, riveted black airships moor to iron towers under sodium lamps. No readable text or logo.',
       ],
     },
     'SP11-014': {
@@ -119,9 +119,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A witch in a linen apron bakes bread in a stone cottage kitchen, dried herbs hanging and a black cat on the sill in golden light. No readable text or logo.",
-        "A woman in a linen dress and straw hat forages chanterelles at the edge of an old forest while her white goat eats the basket. No readable text or logo.",
-        "Under a blossoming apple tree a lace-covered tea picnic waits, scones and jam, a small moss-green dragon curled around the teapot. No readable text or logo.",
+        'A witch in a linen apron bakes bread in a stone cottage kitchen, dried herbs hanging and a black cat on the sill in golden light. No readable text or logo.',
+        'A woman in a linen dress and straw hat forages chanterelles at the edge of an old forest while her white goat eats the basket. No readable text or logo.',
+        'Under a blossoming apple tree a lace-covered tea picnic waits, scones and jam, a small moss-green dragon curled around the teapot. No readable text or logo.',
       ],
     },
     'SP11-015': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At midnight scholars in tweed and wool gather around a candlelit oak table with a skull, an astrolabe and a bubbling flask. No readable text or logo.",
-        "A scholar in a wool sweater sleeps at an oak desk in a vaulted library, the candle nearly out and ink spilled across his notes. No readable text or logo.",
-        "A secret society meets in the crypt beneath an old college, members in black robes over tweed holding candles around a sealed tomb. No readable text or logo.",
+        'At midnight scholars in tweed and wool gather around a candlelit oak table with a skull, an astrolabe and a bubbling flask. No readable text or logo.',
+        'A scholar in a wool sweater sleeps at an oak desk in a vaulted library, the candle nearly out and ink spilled across his notes. No readable text or logo.',
+        'A secret society meets in the crypt beneath an old college, members in black robes over tweed holding candles around a sealed tomb. No readable text or logo.',
       ],
     },
     'SP11-036': {
@@ -158,9 +158,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An empty mall atrium at closing time holds a marble statue beside an indoor fountain, palms in planters and a pastel gradient haze. No readable text or logo.",
-        "In a hotel lobby after midnight a sleeping chrome dragon curls around a marble column beside an empty grand piano. No readable text or logo.",
-        "Twin escalators rise out of an empty food court into a pastel gradient sky, a lone hooded figure riding up past marble columns. No readable text or logo.",
+        'An empty mall atrium at closing time holds a marble statue beside an indoor fountain, palms in planters and a pastel gradient haze. No readable text or logo.',
+        'In a hotel lobby after midnight a sleeping chrome dragon curls around a marble column beside an empty grand piano. No readable text or logo.',
+        'Twin escalators rise out of an empty food court into a pastel gradient sky, a lone hooded figure riding up past marble columns. No readable text or logo.',
       ],
     },
     'SP11-037': {
@@ -178,9 +178,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A clockwork octopus of brass and copper crawls across a Victorian workshop bench, steam venting from its joints. No readable text or logo.",
-        "Airship pirates in goggles and leather coats swing on ropes to board a brass zeppelin above sunset clouds, cannons smoking. No readable text or logo.",
-        "A jousting knight in brass-trimmed plate rides a clockwork horse with pistons for legs, his lance venting steam. No readable text or logo.",
+        'A clockwork octopus of brass and copper crawls across a Victorian workshop bench, steam venting from its joints. No readable text or logo.',
+        'Airship pirates in goggles and leather coats swing on ropes to board a brass zeppelin above sunset clouds, cannons smoking. No readable text or logo.',
+        'A jousting knight in brass-trimmed plate rides a clockwork horse with pistons for legs, his lance venting steam. No readable text or logo.',
       ],
     },
     'SP11-038': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        "A cathedral grown from living tissue arches overhead in ribbed cartilage vaults, glowing veins in the walls as a monk tends a pulsing altar. No readable text or logo.",
-        "A war horse grown with chitin armor plates and glowing vein cables along its neck carries a masked rider in a membrane cloak. No readable text or logo.",
-        "A night market in a medieval alley sells grown hearts and eyes floating in jars, lit by lamps of bioluminescent flesh. No readable text or logo.",
+        'A cathedral grown from living tissue arches overhead in ribbed cartilage vaults, glowing veins in the walls as a monk tends a pulsing altar. No readable text or logo.',
+        'A war horse grown with chitin armor plates and glowing vein cables along its neck carries a masked rider in a membrane cloak. No readable text or logo.',
+        'A night market in a medieval alley sells grown hearts and eyes floating in jars, lit by lamps of bioluminescent flesh. No readable text or logo.',
       ],
     },
     'SP11-039': {
@@ -217,9 +217,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A pale countess in black velvet descends a spiral stone staircase with a candelabra, past portraits whose faces have been scratched out. No readable text or logo.",
-        "In a crypt lit by one guttering candle the stone effigy of a bishop begins to open its eyes, dust sliding off its face. No readable text or logo.",
-        "A castle on a black crag is lit by lightning in a thunderstorm, bats circling the towers and one high window glowing red. No readable text or logo.",
+        'A pale countess in black velvet descends a spiral stone staircase with a candelabra, past portraits whose faces have been scratched out. No readable text or logo.',
+        'In a crypt lit by one guttering candle the stone effigy of a bishop begins to open its eyes, dust sliding off its face. No readable text or logo.',
+        'A castle on a black crag is lit by lightning in a thunderstorm, bats circling the towers and one high window glowing red. No readable text or logo.',
       ],
     },
     'SP11-040': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A super-cute grim reaper mascot with big shiny eyes and blush marks holds a tiny scythe tipped with a heart on a pastel cloud. No readable text or logo.",
-        "A baby penguin hatches from a pastel speckled egg, yawning with big sleepy eyes and pink blush marks. No readable text or logo.",
-        "A haunted house with a smiling door lets round smiling ghosts float out of its windows among candy-colored bats. No readable text or logo.",
+        'A super-cute grim reaper mascot with big shiny eyes and blush marks holds a tiny scythe tipped with a heart on a pastel cloud. No readable text or logo.',
+        'A baby penguin hatches from a pastel speckled egg, yawning with big sleepy eyes and pink blush marks. No readable text or logo.',
+        'A haunted house with a smiling door lets round smiling ghosts float out of its windows among candy-colored bats. No readable text or logo.',
       ],
     },
     'SP11-041': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'franchise armor designs', 'franchise insignia'],
       briefs: [
-        "Exhausted soldiers in battered ornate plate trudge through mud toward a cathedral fortress carved with skulls, banners rotting on the walls. No readable text or logo.",
-        "A war priest in battered armor trimmed with bone reads last rites from a chained book over a muddy trench of exhausted troops. No readable text or logo.",
-        "At dawn a toppled giant statue of a saint lies half sunk in mud among broken siege towers, crows wheeling over the fallen. No readable text or logo.",
+        'Exhausted soldiers in battered ornate plate trudge through mud toward a cathedral fortress carved with skulls, banners rotting on the walls. No readable text or logo.',
+        'A war priest in battered armor trimmed with bone reads last rites from a chained book over a muddy trench of exhausted troops. No readable text or logo.',
+        'At dawn a toppled giant statue of a saint lies half sunk in mud among broken siege towers, crows wheeling over the fallen. No readable text or logo.',
       ],
     },
     'SP11-042': {
@@ -274,9 +274,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A glossy glass island floats over a green hill under a bright blue sky, water droplets and bubbles drifting around it. No readable text or logo.",
-        "A goldfish swims inside a giant floating water bubble above a bright green meadow, smaller bubbles following it upward. No readable text or logo.",
-        "A penguin of glossy aqua glass stands on a sunny ice floe, water droplets on its body and bubbles rising around it. No readable text or logo.",
+        'A glossy glass island floats over a green hill under a bright blue sky, water droplets and bubbles drifting around it. No readable text or logo.',
+        'A goldfish swims inside a giant floating water bubble above a bright green meadow, smaller bubbles following it upward. No readable text or logo.',
+        'A penguin of glossy aqua glass stands on a sunny ice floe, water droplets on its body and bubbles rising around it. No readable text or logo.',
       ],
     },
     'SP11-043': {
@@ -293,9 +293,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A flamingo is built from squiggles and geometric blocks, checkerboard wings, a zigzag neck and speckled-stone legs on a pastel ground. No readable text or logo.",
-        "A crocodile made of zigzag, dot and squiggle blocks guards a speckled treasure chest on a mint pedestal. No readable text or logo.",
-        "Standing over squiggle waves, a lighthouse painted in checkerboard stripes wears cylinder balconies in primary colors and a speckled-stone base. No readable text or logo.",
+        'A flamingo is built from squiggles and geometric blocks, checkerboard wings, a zigzag neck and speckled-stone legs on a pastel ground. No readable text or logo.',
+        'A crocodile made of zigzag, dot and squiggle blocks guards a speckled treasure chest on a mint pedestal. No readable text or logo.',
+        'Standing over squiggle waves, a lighthouse painted in checkerboard stripes wears cylinder balconies in primary colors and a speckled-stone base. No readable text or logo.',
       ],
     },
     'SP11-045': {
@@ -315,7 +315,7 @@ const spec: Spec = {
       briefs: [
         "A wizard's beard melts into endless paisley swirls while concentric echoes of his face radiate outward into the sky. No readable text or logo.",
         "A tiger's eye repeats inward in endless nested rings, its stripes melting into paisley in vibrating orange and violet. No readable text or logo.",
-        "In a forest of giant mushrooms the caps melt into waves of color as a robed wanderer walks a path that echoes outward. No readable text or logo.",
+        'In a forest of giant mushrooms the caps melt into waves of color as a robed wanderer walks a path that echoes outward. No readable text or logo.',
       ],
     },
     'SP11-066': {
@@ -332,9 +332,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On black velvet a high-heeled shoe covered in tiny iridescent flakes scatters rainbow sparkles across the fabric. No readable text or logo.",
-        "On a deep violet cushion in a dark throne room a crown of iridescent flakes throws rainbow specks onto the walls. No readable text or logo.",
-        "Above a black cauldron a witch hat floats, covered in flakes shifting from silver to pink to green. No readable text or logo.",
+        'On black velvet a high-heeled shoe covered in tiny iridescent flakes scatters rainbow sparkles across the fabric. No readable text or logo.',
+        'On a deep violet cushion in a dark throne room a crown of iridescent flakes throws rainbow specks onto the walls. No readable text or logo.',
+        'Above a black cauldron a witch hat floats, covered in flakes shifting from silver to pink to green. No readable text or logo.',
       ],
     },
   },
@@ -356,9 +356,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A small goblin sits on a mossy log sorting a treasure pile of beetle shells, rusty keys and a cracked ring among mushrooms. No readable text or logo.",
-        "A frog king in an acorn-cap crown sits on a red toadstool throne, his subjects of snails and beetles bowing before a hoard of bottle caps. No readable text or logo.",
-        "Inside a hollow tree a treasure nook holds small animal bones, moss, mushrooms, a cracked pocket watch and a jar of shiny stones. No readable text or logo.",
+        'A small goblin sits on a mossy log sorting a treasure pile of beetle shells, rusty keys and a cracked ring among mushrooms. No readable text or logo.',
+        'A frog king in an acorn-cap crown sits on a red toadstool throne, his subjects of snails and beetles bowing before a hoard of bottle caps. No readable text or logo.',
+        'Inside a hollow tree a treasure nook holds small animal bones, moss, mushrooms, a cracked pocket watch and a jar of shiny stones. No readable text or logo.',
       ],
     },
     {
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lone cloaked wanderer stands on a misty hill facing a distant ruined tower under a pale moon, murky and grainy like a photocopy. No readable text or logo.",
-        "A ruined wizard tower rises above a black pine forest, one window lit and crows circling in murky lo-fi paint. No readable text or logo.",
-        "An ancient king sleeps on a stone throne in a mist-filled hall, sword across his knees and candles burned low. No readable text or logo.",
+        'A lone cloaked wanderer stands on a misty hill facing a distant ruined tower under a pale moon, murky and grainy like a photocopy. No readable text or logo.',
+        'A ruined wizard tower rises above a black pine forest, one window lit and crows circling in murky lo-fi paint. No readable text or logo.',
+        'An ancient king sleeps on a stone throne in a mist-filled hall, sword across his knees and candles burned low. No readable text or logo.',
       ],
     },
     {
@@ -400,9 +400,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A woman in a faded white dress stands on the rotting porch of a peeling mansion as the swamp creeps up the steps. No readable text or logo.",
-        "A white wooden church sits half sunk in a cypress swamp, a lantern burning in its bell tower under hanging moss. No readable text or logo.",
-        "At a river baptism at dusk a gaunt preacher stands waist-deep in brown water while a snake glides past the congregation. No readable text or logo.",
+        'A woman in a faded white dress stands on the rotting porch of a peeling mansion as the swamp creeps up the steps. No readable text or logo.',
+        'A white wooden church sits half sunk in a cypress swamp, a lantern burning in its bell tower under hanging moss. No readable text or logo.',
+        'At a river baptism at dusk a gaunt preacher stands waist-deep in brown water while a snake glides past the congregation. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

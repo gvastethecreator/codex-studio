@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Rapid cutting mixed with slow motion, framed the way The Wild Bunch 1969 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dusty twilight elegy.
   rendering_and_quality: Authentic late-sixties Peckinpah frame, in the recognizable hand of The Wild Bunch 1969.
-  creative_brief: 'Sam Peckinpah The Wild Bunch (1969) look: dusty Mexican border towns, aging outlaws in a changing West, dusty Panavision, rapid cutting and slow-motion chaos. Carry it through Wild Bunch slow motion, aging outlaws, dusty border. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sam Peckinpah The Wild Bunch (1969) look: dusty Mexican border towns, aging outlaws in a changing West, dusty Panavision, rapid cutting and slow-motion chaos. Carry it through Wild Bunch slow motion, aging outlaws, dusty border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Wild Bunch slow motion; aging outlaws; dusty border
 avoidRules:
   - existing franchise characters

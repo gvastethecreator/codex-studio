@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Towering golems beside small human makers for strong scale contrast.
   atmosphere_and_mood: Earthy, protective and heavy, strength made from the riverbank.
   rendering_and_quality: Tactile sculptural illustration with finger-marked clay and warm glow.
-  creative_brief: 'Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries. Carry it through clay golems, glowing chest sigils, fingerprints in clay, potter workshops. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries. Carry it through clay golems, glowing chest sigils, fingerprints in clay, potter workshops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: clay golems; glowing chest sigils; fingerprints in clay; potter workshops
 avoidRules:
   - readable text

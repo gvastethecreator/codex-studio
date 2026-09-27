@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vertical scroll with a judge above and souls below.
   atmosphere_and_mood: Keep the requested mood with solemn bureaucratic dread.
   rendering_and_quality: Detailed scroll painting without readable script, kept consistent across the whole image.
-  creative_brief: 'Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers. Carry it through underworld court, stern judge, ox-head guard, scroll. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers. Carry it through underworld court, stern judge, ox-head guard, scroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: underworld court; stern judge; ox-head guard; scroll
 avoidRules:
   - cultural stereotypes or caricature

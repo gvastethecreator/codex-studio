@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Mirror as a window into another world, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with uncanny divinatory mystery.
   rendering_and_quality: Smooth glossy reflection, kept consistent across the whole image.
-  creative_brief: 'Obsidian mirror dreamscape: polished black obsidian mirrors reflecting impossible worlds, smoky reflections, gods glimpsed in dark glass. Carry it through obsidian mirror, smoky reflection, other world, dark glass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Obsidian mirror dreamscape: polished black obsidian mirrors reflecting impossible worlds, smoky reflections, gods glimpsed in dark glass. Carry it through obsidian mirror, smoky reflection, other world, dark glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: obsidian mirror; smoky reflection; other world; dark glass
 avoidRules:
   - readable glyphs

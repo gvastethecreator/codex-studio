@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Centered hanging structure seen slightly from below against a pale ceiling.
   atmosphere_and_mood: Keep the requested mood with fragile sacred harmony.
   rendering_and_quality: Precise delicate geometry with soft glow, kept consistent across the whole image.
-  creative_brief: 'Straw sodas cosmos mobile: Lithuanian and Baltic hanging straw gardens of geometric polyhedra, suspended from ceilings to model the order of the world, glowing gold and turning slowly. Carry it through straw polyhedra, hanging threads, nested structures, soft shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Straw sodas cosmos mobile: Lithuanian and Baltic hanging straw gardens of geometric polyhedra, suspended from ceilings to model the order of the world, glowing gold and turning slowly. Carry it through straw polyhedra, hanging threads, nested structures, soft shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: straw polyhedra; hanging threads; nested structures; soft shadows
 avoidRules:
   - cultural stereotypes or caricature

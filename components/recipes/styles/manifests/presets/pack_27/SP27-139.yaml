@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Perfect one-point symmetry and slow graceful motion, framed the way 2001 A Space Odyssey 1968 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with silent cosmic awe.
   rendering_and_quality: Authentic late-sixties 70mm science fiction frame, in the recognizable hand of 2001 A Space Odyssey 1968.
-  creative_brief: 'Stanley Kubrick 2001: A Space Odyssey (1968) look: Super Panavision clinical white spacecraft interiors, one-point symmetry, slow docking ballets, front-projected deserts and vast silent cosmos. Carry it through 2001 symmetry, white interiors, silent cosmos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stanley Kubrick 2001: A Space Odyssey (1968) look: Super Panavision clinical white spacecraft interiors, one-point symmetry, slow docking ballets, front-projected deserts and vast silent cosmos. Carry it through 2001 symmetry, white interiors, silent cosmos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: 2001 symmetry; white interiors; silent cosmos
 avoidRules:
   - a red camera eye in a panel

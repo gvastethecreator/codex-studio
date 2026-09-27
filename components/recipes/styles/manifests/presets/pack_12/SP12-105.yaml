@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as white-hot thermal silhouettes seen from high above. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Monochrome white-hot on grey and black, true to the Call of Duty 4 2007 palette.
-  lighting_and_shadow: "Everything in greyscale thermal: warm bodies and engines glowing white-hot, cold ground dark grey."
-  texture_and_material: "Grainy thermal noise, horizontal scan lines and slight blur from zoom."
+  lighting_and_shadow: 'Everything in greyscale thermal: warm bodies and engines glowing white-hot, cold ground dark grey.'
+  texture_and_material: 'Grainy thermal noise, horizontal scan lines and slight blur from zoom.'
   camera_and_composition: Circling overhead thermal feed with brackets, framed the way Call of Duty 4 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with detached surveillance dread.
-  rendering_and_quality: "A 2007 frame at 1280 by 720 looking straight down: white figures on grey, corner bracket marks and a crosshair."
-  creative_brief: 'Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective. Carry it through Thermal gunship feed, white-hot figures, brackets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2007 frame at 1280 by 720 looking straight down: white figures on grey, corner bracket marks and a crosshair.'
+  creative_brief: "Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective. Carry it through Thermal gunship feed, white-hot figures, brackets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Thermal gunship feed; white-hot figures; brackets
 avoidRules:
   - readable data text

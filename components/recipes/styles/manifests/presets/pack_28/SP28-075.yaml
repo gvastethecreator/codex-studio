@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Calm interior product view, framed the way Scandinavian Craft composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with warm calm hygge.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Scandinavian craft product language: warm oiled oak and birch, felted wool, soft rounded edges, muted earth colors and honest joinery. Carry it through Scandinavian craft, oiled wood, felt, rounded. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Scandinavian craft product language: warm oiled oak and birch, felted wool, soft rounded edges, muted earth colors and honest joinery. Carry it through Scandinavian craft, oiled wood, felt, rounded. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Scandinavian craft; oiled wood; felt; rounded
 avoidRules:
   - existing franchise characters

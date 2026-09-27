@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Multiplane depth with foreground layers drifting in fog.
   atmosphere_and_mood: Keep the requested mood with hushed dreamlike loneliness.
   rendering_and_quality: Faithful Norstein multiplane cutout frame, in the recognizable hand of Yuri Norstein.
-  creative_brief: 'Yuri Norstein animation look of the 1970s: layered multiplane cutouts on glass, soft fog made of translucent layers, delicate Russian folk tale animals, hushed night forests and painterly depth. Carry it through Norstein multiplane cutout, translucent fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yuri Norstein animation look of the 1970s: layered multiplane cutouts on glass, soft fog made of translucent layers, delicate Russian folk tale animals, hushed night forests and painterly depth. Carry it through Norstein multiplane cutout, translucent fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Norstein multiplane cutout; translucent fog
 avoidRules:
   - a small hedgehog carrying a bundle in the fog

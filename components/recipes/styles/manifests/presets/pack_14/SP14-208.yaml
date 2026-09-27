@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Panel grid with a central figure or motif.
   atmosphere_and_mood: Keep the requested mood with grounded ancestral depth.
   rendering_and_quality: Authentic hand-painted textile look, kept consistent across the whole image.
-  creative_brief: 'Bogolanfini mudcloth pattern: Bamana hand-painted mudcloth with fermented-mud dark grounds and pale reserved geometric symbols in rows and panels. Carry it through mudcloth, dark ground, pale symbols, panels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bogolanfini mudcloth pattern: Bamana hand-painted mudcloth with fermented-mud dark grounds and pale reserved geometric symbols in rows and panels. Carry it through mudcloth, dark ground, pale symbols, panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: mudcloth; dark ground; pale symbols; panels
 avoidRules:
   - generic tribal pattern

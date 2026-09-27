@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Crowded eye-level scene, framed the way Paul Bonner composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grubby humorous warmth.
   rendering_and_quality: Detailed painterly fantasy crowd scene, in the recognizable hand of Paul Bonner.
-  creative_brief: 'Paul Bonner fantasy painting: detailed painterly crowd scenes of goblins, trolls and dwarves in muddy forests and war camps, humorous grubby characters and rich earthy watercolor. Carry it through Paul Bonner goblin crowds, grubby humor, earthy paint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Paul Bonner fantasy painting: detailed painterly crowd scenes of goblins, trolls and dwarves in muddy forests and war camps, humorous grubby characters and rich earthy watercolor. Carry it through Paul Bonner goblin crowds, grubby humor, earthy paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Paul Bonner goblin crowds; grubby humor; earthy paint
 avoidRules:
   - existing franchise characters

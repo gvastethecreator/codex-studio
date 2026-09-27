@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic central figure against black, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with electric supernatural menace.
   rendering_and_quality: Crisp graphic glow, kept consistent across the whole image.
-  creative_brief: 'Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos. Carry it through neon outlines, horned demons, black ground, flat shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos. Carry it through neon outlines, horned demons, black ground, flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: neon outlines; horned demons; black ground; flat shapes
 avoidRules:
   - interface or HUD

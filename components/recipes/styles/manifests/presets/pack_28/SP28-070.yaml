@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal geometric view, framed the way Bauhaus Product composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with clear rational purity.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Bauhaus product language of the 1920s: pure geometric volumes of circle, square and triangle, tubular steel, primary colors and form follows function. Carry it through Bauhaus geometry, tubular steel, primary colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bauhaus product language of the 1920s: pure geometric volumes of circle, square and triangle, tubular steel, primary colors and form follows function. Carry it through Bauhaus geometry, tubular steel, primary colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bauhaus geometry; tubular steel; primary colors
 avoidRules:
   - existing franchise characters

@@ -135,7 +135,7 @@ const spec: Spec = {
       avoid: [
         ...AVOID,
         'fresh clean surfaces',
-        
+
         'horror creatures',
         'asylum horror staging',
       ],
@@ -242,7 +242,7 @@ const spec: Spec = {
         key_features:
           'carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light',
       }),
-      avoid: [...AVOID, 'human remains', 'skulls', 'bones',  'horror display'],
+      avoid: [...AVOID, 'human remains', 'skulls', 'bones', 'horror display'],
       dropAvoid: SPACE_DROP,
       briefs: [
         'Ossuary subterranean chalk cellar of a champagne house: bottles resting in rows of carved niches under a low barrel vault, an adult cellar master turning them by lantern light, calcite crust on the walls. No readable labels, text or logo.',
@@ -326,7 +326,7 @@ const spec: Spec = {
         key_features:
           'steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down',
       }),
-      avoid: [...AVOID,  'exposed organs', 'flat lecture hall seating'],
+      avoid: [...AVOID, 'exposed organs', 'flat lecture hall seating'],
       briefs: [
         'Anatomical theatre tiers at a medieval university: adult students in black gowns crammed on five steep oval rings of turned balusters, looking down at a lecturer beside a sheet-covered form on a stone table, grey skylight falling on the centre. Top-tier view. No text or logo.',
         "Anatomical theatre tiers applied to a clockmaker's guild demonstration: a master lifting the brass heart out of a life-size automaton on the central table, candles on every rail, faces of adult apprentices ringed above. No text or logo.",
@@ -490,12 +490,11 @@ const spec: Spec = {
         camera_and_composition:
           'Keep the requested view; from the centre, radiating wings or rings of cells recede symmetrically; repetition of doors dominates.',
         atmosphere_and_mood: 'Watched, cold and ordered, a building designed to be seen through.',
-        rendering_and_quality:
-          'Sober photograph with exact repetition and ironwork detail.',
+        rendering_and_quality: 'Sober photograph with exact repetition and ironwork detail.',
         key_features:
           'tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point',
       }),
-      avoid: [...AVOID,   'riot scene'],
+      avoid: [...AVOID, 'riot scene'],
       briefs: [
         'Radial panopticon cell block from the central rotunda: four wings of three-tier iron galleries radiating away, identical riveted doors, safety nets strung between the tiers, a shaft of roof-lantern light on the stone floor. No text or logo.',
         'Radial panopticon cell block applied to a bee-keeping cooperative: tiers of identical cells holding straw bee skeps instead of prisoners, adult beekeepers in veils on the iron galleries, the central void filled with drifting bees in top light. No text or logo.',

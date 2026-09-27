@@ -296,7 +296,7 @@ const spec: Spec = {
         key_features:
           'scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers',
       }),
-      avoid: [...AVOID, 'artistic',  'readable case numbers'],
+      avoid: [...AVOID, 'artistic', 'readable case numbers'],
       briefs: [
         'Forensic evidence photograph of a broken dagger lying on old flagstones, a black-and-white scale bar beside it, two plain yellow tent markers without numbers, even flash, camera square to the floor. No text or logo.',
         'Forensic photograph of a muddy boot print in soft earth lit by a low oblique light that reveals every tread ridge, a scale bar along one side. No text or logo.',
@@ -320,7 +320,7 @@ const spec: Spec = {
         key_features:
           'sterile blue drape; shadowless twin flash; standardized straight-on view; accurate color; plain scale',
       }),
-      avoid: [...AVOID,  'moody shadow', 'artistic'],
+      avoid: [...AVOID, 'moody shadow', 'artistic'],
       briefs: [
         'Clinical documentation photograph of an antique set of bone saws, probes and forceps laid in a row on a sterile blue drape, shadowless even light, straight-on view. No text or logo.',
         'Clinical photograph of a plaster dental impression cast on a neutral grey background, twin flash, a plain ruler without numbers beside it. No text or logo.',

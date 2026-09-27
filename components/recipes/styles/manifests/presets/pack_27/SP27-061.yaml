@@ -29,8 +29,8 @@ visualDna:
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Top-down maze view filling a vertical arcade screen.
   atmosphere_and_mood: Keep the requested mood with bright arcade chase.
-  rendering_and_quality: "A 1980 arcade frame at 224 by 288 on a vertical CRT: tiny blocky sprites, thin glowing maze lines, scanlines and phosphor glow on black."
-  creative_brief: 'Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen. Carry it through Pac-Man neon maze, dots, tiny sprites, black background. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1980 arcade frame at 224 by 288 on a vertical CRT: tiny blocky sprites, thin glowing maze lines, scanlines and phosphor glow on black.'
+  creative_brief: "Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen. Carry it through Pac-Man neon maze, dots, tiny sprites, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pac-Man neon maze; dots; tiny sprites; black background
 avoidRules:
   - a yellow wedge-mouthed circle

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Central creature against a dark field, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with glittering sacred splendor.
   rendering_and_quality: Precise shimmering mosaic, kept consistent across the whole image.
-  creative_brief: 'Turquoise mosaic starfield: creatures and masks built from thousands of turquoise, shell and coral tesserae that glitter like a night sky. Carry it through turquoise tesserae, shell teeth, glittering, double-headed serpent. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Turquoise mosaic starfield: creatures and masks built from thousands of turquoise, shell and coral tesserae that glitter like a night sky. Carry it through turquoise tesserae, shell teeth, glittering, double-headed serpent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: turquoise tesserae; shell teeth; glittering; double-headed serpent
 avoidRules:
   - readable glyphs

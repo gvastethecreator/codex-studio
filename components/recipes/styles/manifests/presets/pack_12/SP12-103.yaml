@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright detailed pixel-art brawler sprites with anime proportions. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Loud pop pink, lemon, teal and warm lantern orange.
-  lighting_and_shadow: "Bright lantern light and white flashing hit sparks with no soft shading."
-  texture_and_material: "Detailed crisp pixel art with bold outlines and careful dithering on clothes and hair."
+  lighting_and_shadow: 'Bright lantern light and white flashing hit sparks with no soft shading.'
+  texture_and_material: 'Detailed crisp pixel art with bold outlines and careful dithering on clothes and hair.'
   camera_and_composition: Side-scrolling brawler lane, framed the way River City Girls 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bratty chaotic fun.
-  rendering_and_quality: "A 2019 side-view frame at 1920 by 1080: large pixel brawler sprites on a street lane, portrait and bar shapes top left."
-  creative_brief: 'WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color. Carry it through River City Girls pixel art, pop colors, street brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2019 side-view frame at 1920 by 1080: large pixel brawler sprites on a street lane, portrait and bar shapes top left.'
+  creative_brief: "WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color. Carry it through River City Girls pixel art, pop colors, street brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: River City Girls pixel art; pop colors; street brawl
 avoidRules:
   - existing game characters, logos or levels

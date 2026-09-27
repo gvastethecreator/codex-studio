@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tight head-and-shoulders portrait, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fraying nerves, kept consistent across the whole image.
   rendering_and_quality: Expressive intense portrait without gore, kept consistent across the whole image.
-  creative_brief: 'Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow. Carry it through breaking-point portrait, wide eyes, torch underlight, heavy ink. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow. Carry it through breaking-point portrait, wide eyes, torch underlight, heavy ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: breaking-point portrait; wide eyes; torch underlight; heavy ink
 avoidRules:
   - interface text, menus or health bars

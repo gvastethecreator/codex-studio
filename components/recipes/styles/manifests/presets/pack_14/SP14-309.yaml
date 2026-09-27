@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic low-angle figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with radiant epic valor.
   rendering_and_quality: Polished epic illustration, kept consistent across the whole image.
-  creative_brief: 'Eagle warrior solar armor: epic fantasy warriors in feathered eagle and jaguar suits radiating solar light, inspired by clay eagle-warrior sculpture. Carry it through eagle armor, jaguar armor, solar glow, feathered. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Eagle warrior solar armor: epic fantasy warriors in feathered eagle and jaguar suits radiating solar light, inspired by clay eagle-warrior sculpture. Carry it through eagle armor, jaguar armor, solar glow, feathered. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: eagle armor; jaguar armor; solar glow; feathered
 avoidRules:
   - readable glyphs

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Figures arranged in a band around a curved vase body.
   atmosphere_and_mood: Keep the requested mood with poised classical narrative.
   rendering_and_quality: Precise elegant line with authentic vase curvature, kept consistent across the whole image.
-  creative_brief: 'Attic red-figure vase painting: figures left in the orange clay against a glossy black ground, fine relief lines and diluted glaze for anatomy and drapery. Carry it through orange figures, black ground, relief lines, vase curve. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Attic red-figure vase painting: figures left in the orange clay against a glossy black ground, fine relief lines and diluted glaze for anatomy and drapery. Carry it through orange figures, black ground, relief lines, vase curve. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: orange figures; black ground; relief lines; vase curve
 avoidRules:
   - readable Greek inscriptions

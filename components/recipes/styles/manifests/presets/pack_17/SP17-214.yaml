@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: High horizon with stacked groups of figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with courtly epic splendor.
   rendering_and_quality: Exquisite small detail, no calligraphy, kept consistent across the whole image.
-  creative_brief: 'Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies. Carry it through high horizon, tiny figures, patterned tents, gold sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies. Carry it through high horizon, tiny figures, patterned tents, gold sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: high horizon; tiny figures; patterned tents; gold sky
 avoidRules:
   - readable calligraphy

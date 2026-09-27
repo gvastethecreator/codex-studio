@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as smooth simple JRPG characters with stiff shell-like hair and ornate robes, a little stiff in pose. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show people as smooth simple JRPG characters with stiff shell-like hair and ornate robes, a little stiff in pose. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Mystic blue, summon gold and pyrefly green, true to the Final Fantasy X 2001 palette.
-  lighting_and_shadow: "A bright glyph circle glowing under a summoned creature, the rest of the scene evenly lit."
-  texture_and_material: "Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites."
+  lighting_and_shadow: 'A bright glyph circle glowing under a summoned creature, the rest of the scene evenly lit.'
+  texture_and_material: 'Characters with smooth simple faces, stiff shell-like hair and little expression; environments of simple shapes wearing soft blurry painted textures; glow effects as flat bright sprites.'
   camera_and_composition: Low in-engine battle camera looking up at rising beasts.
   atmosphere_and_mood: Keep the requested mood with sacred grand spectacle.
-  rendering_and_quality: "A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies."
+  rendering_and_quality: 'A 2001 PlayStation 2 frame at 640 by 448 interlaced: slightly soft with shimmering jagged edges, clearly less detailed than a modern game and not the pre-rendered movies.'
   creative_brief: "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX battle screen, glyph circle, rising summoned creature, blank menu panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "FFX battle screen; glyph circle; rising summoned creature; blank menu panels"
+  key_features: 'FFX battle screen; glyph circle; rising summoned creature; blank menu panels'
 avoidRules:
   - existing Final Fantasy summons
   - subtitles or readable glyphs

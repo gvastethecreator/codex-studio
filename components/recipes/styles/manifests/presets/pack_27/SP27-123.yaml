@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low angles looking up at hovering miniature machines.
   atmosphere_and_mood: Keep the requested mood with apocalyptic Technicolor panic.
   rendering_and_quality: Authentic fifties Technicolor invasion frame, in the recognizable hand of War of the Worlds 1953.
-  creative_brief: 'George Pal and Byron Haskin The War of the Worlds (1953) look: saturated Technicolor invasion, green heat-ray glow, burning Californian towns, miniature effects and wire-held machines. Carry it through Pal Technicolor invasion, green beams, miniature effects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "George Pal and Byron Haskin The War of the Worlds (1953) look: saturated Technicolor invasion, green heat-ray glow, burning Californian towns, miniature effects and wire-held machines. Carry it through Pal Technicolor invasion, green beams, miniature effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pal Technicolor invasion; green beams; miniature effects
 avoidRules:
   - manta-shaped hovering war machines with a cobra head

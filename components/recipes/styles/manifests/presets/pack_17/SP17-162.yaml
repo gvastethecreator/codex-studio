@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic figure against a vast alien vista, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with romantic alien adventure.
   rendering_and_quality: Classic painted cover finish without text, kept consistent across the whole image.
-  creative_brief: 'Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky. Carry it through alien desert, twin moons, swords, strange beasts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky. Carry it through alien desert, twin moons, swords, strange beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: alien desert; twin moons; swords; strange beasts
 avoidRules:
   - title lettering

@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with dramatic summoning intensity.
   rendering_and_quality: Dramatic card-battle manga illustration, in the recognizable hand of Kazuki Takahashi.
   key_features: Kazuki Takahashi angles; spiky hair; card summons; giant monsters
-  creative_brief: 'Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards. Carry it through Kazuki Takahashi angles, spiky hair, card summons, giant monsters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards. Carry it through Kazuki Takahashi angles, spiky hair, card summons, giant monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing card-game monsters
   - millennium puzzle pendant

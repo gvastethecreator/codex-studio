@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with free wandering grit.
   rendering_and_quality: Lo-fi grainy roadtrip frame with sunny outlaw energy.
   key_features: Sayo Yamamoto lo-fi; sun-bleached towns; roadtrip freedom; lanky designs
-  creative_brief: 'Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Theatrical framed tableau, characters in period costume, detailed but clear foreground action.
   atmosphere_and_mood: Old-fashioned, curious and gently eerie, a tale told by candlelight.
   rendering_and_quality: Precise hatched pen detail with restrained tinting; no flat digital color and no outlines-only drawing.
-  creative_brief: 'Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau
 avoidRules:
   - known picture-book characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Crowded pulp composition, framed the way Peter Mullen composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dense pulp cosmic horror.
   rendering_and_quality: Dense cosmic horror ink illustration, in the recognizable hand of Peter Mullen.
-  creative_brief: 'Peter Mullen Dungeon Crawl Classics art: dense cosmic horror ink, elaborate crowded monsters, sword-and-sorcery pulp, heavy black textures and occasional vivid color. Carry it through Mullen dense ink, cosmic horror, pulp swords. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Peter Mullen Dungeon Crawl Classics art: dense cosmic horror ink, elaborate crowded monsters, sword-and-sorcery pulp, heavy black textures and occasional vivid color. Carry it through Mullen dense ink, cosmic horror, pulp swords. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mullen dense ink; cosmic horror; pulp swords
 avoidRules:
   - the Dungeon Crawl Classics logo

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Hero three-quarter product shot, framed the way Jony Ive Unibody composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with serene precise luxury.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Unibody minimalism of the 2000s and 2010s: seamless machined aluminum shells, continuous radii, no visible fasteners, glass and a single glowing indicator. Carry it through Unibody aluminum, continuous radii, no fasteners. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Unibody minimalism of the 2000s and 2010s: seamless machined aluminum shells, continuous radii, no visible fasteners, glass and a single glowing indicator. Carry it through Unibody aluminum, continuous radii, no fasteners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Unibody aluminum; continuous radii; no fasteners
 avoidRules:
   - the Apple logo

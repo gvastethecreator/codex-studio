@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal cute product view, framed the way Kawaii Product composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sweet cheerful charm.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Japanese kawaii product language: rounded appliances with tiny faces, pastel colors, stubby limbs, soft corners and mascot personality. Carry it through Kawaii appliance, tiny face, pastel, mascot. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Japanese kawaii product language: rounded appliances with tiny faces, pastel colors, stubby limbs, soft corners and mascot personality. Carry it through Kawaii appliance, tiny face, pastel, mascot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kawaii appliance; tiny face; pastel; mascot
 avoidRules:
   - Hello Kitty or licensed mascots

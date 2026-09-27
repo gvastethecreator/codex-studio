@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic heroic angle in a panel with jungle or sea behind.
   atmosphere_and_mood: Keep the requested mood with vivid adventurous heroism.
   rendering_and_quality: Masterful ink illustration with dynamic anatomy, kept consistent across the whole image.
-  creative_brief: 'Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color. Carry it through island epic hero, lush ink lines, jungle backdrop, newsprint color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color. Carry it through island epic hero, lush ink lines, jungle backdrop, newsprint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: island epic hero; lush ink lines; jungle backdrop; newsprint color
 avoidRules:
   - cultural stereotypes or caricature

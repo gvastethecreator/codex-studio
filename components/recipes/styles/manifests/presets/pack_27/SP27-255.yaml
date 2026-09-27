@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Tour De Pizza Pizza Tower (2023) look: frantic hand-drawn nineties cartoon animation in the spirit of Wario Land, squash-and-stretch exaggeration, chunky outlines and chaotic speed.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as frantic squash-and-stretch hand-drawn cartoon figures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Loud cartoon yellow, tomato red and purple, true to the Pizza Tower 2023 palette.
-  lighting_and_shadow: "Flat cartoon colors with no shading at all."
-  texture_and_material: "Chunky hand-drawn outlines, wobbling squash-and-stretch sprites and flat color."
+  lighting_and_shadow: 'Flat cartoon colors with no shading at all.'
+  texture_and_material: 'Chunky hand-drawn outlines, wobbling squash-and-stretch sprites and flat color.'
   camera_and_composition: Side-scrolling chaotic platformer view, framed the way Pizza Tower 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with frantic cartoon chaos.
-  rendering_and_quality: "A 2023 frame at 960 by 540: frantic side-view cartoon sprite smashing blocks, a TV-shaped box in the corner."
-  creative_brief: 'Tour De Pizza Pizza Tower (2023) look: frantic hand-drawn nineties cartoon animation in the spirit of Wario Land, squash-and-stretch exaggeration, chunky outlines and chaotic speed. Carry it through Pizza Tower frantic cartoon, squash and stretch. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 960 by 540: frantic side-view cartoon sprite smashing blocks, a TV-shaped box in the corner.'
+  creative_brief: "Tour De Pizza Pizza Tower (2023) look: frantic hand-drawn nineties cartoon animation in the spirit of Wario Land, squash-and-stretch exaggeration, chunky outlines and chaotic speed. Carry it through Pizza Tower frantic cartoon, squash and stretch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pizza Tower frantic cartoon; squash and stretch
 avoidRules:
   - a pudgy Italian chef running on all fours

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent, buried and ancient, cool air far below ground.
   rendering_and_quality: Low-light photograph with carved tool marks and mineral crust detail, niches empty, no human remains or horror display.
   key_features: carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light
-  creative_brief: 'Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default

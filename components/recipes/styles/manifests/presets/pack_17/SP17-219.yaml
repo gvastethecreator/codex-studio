@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide crowded battle panorama, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with breathless historical reportage.
   rendering_and_quality: Dense engraved detail without headlines, kept consistent across the whole image.
-  creative_brief: 'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: engraved reportage; hatched smoke; crowded battle; aged paper
 avoidRules:
   - headlines or text

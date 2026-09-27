@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frozen bullet-time rotations, framed the way The Matrix 1999 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool simulated revelation.
   rendering_and_quality: Authentic late-nineties Wachowski frame, in the recognizable hand of The Matrix 1999.
-  creative_brief: 'The Wachowskis The Matrix (1999) look: sickly green-tinted simulated city, black leather and sunglasses, bullet-time frozen action and falling digital code. Carry it through Matrix green tint, bullet time, digital code. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "The Wachowskis The Matrix (1999) look: sickly green-tinted simulated city, black leather and sunglasses, bullet-time frozen action and falling digital code. Carry it through Matrix green tint, bullet time, digital code. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Matrix green tint; bullet time; digital code
 avoidRules:
   - a man in a black trench coat and small sunglasses

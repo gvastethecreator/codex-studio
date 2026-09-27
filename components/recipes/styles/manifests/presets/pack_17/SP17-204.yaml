@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Deep vertical descent with small figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vertiginous sacred depth.
   rendering_and_quality: Painterly translucency and scale, kept consistent across the whole image.
-  creative_brief: 'Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps. Carry it through salt mine, carved crystal chapel, lamps, abyss. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps. Carry it through salt mine, carved crystal chapel, lamps, abyss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: salt mine; carved crystal chapel; lamps; abyss
 avoidRules:
   - interface or HUD

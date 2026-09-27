@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow long takes and still contemplative framing, framed the way Solaris 1972 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with melancholy metaphysical longing.
   rendering_and_quality: Authentic seventies Soviet art cinema frame, in the recognizable hand of Solaris 1972.
-  creative_brief: 'Andrei Tarkovsky Solaris (1972) look: slow contemplative science fiction, a cluttered decaying space station, rain inside dachas, long takes and a living ocean of swirling mist. Carry it through Tarkovsky Solaris, long takes, station decay, living ocean. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Andrei Tarkovsky Solaris (1972) look: slow contemplative science fiction, a cluttered decaying space station, rain inside dachas, long takes and a living ocean of swirling mist. Carry it through Tarkovsky Solaris, long takes, station decay, living ocean. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tarkovsky Solaris; long takes; station decay; living ocean
 avoidRules:
   - existing franchise characters

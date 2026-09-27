@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Centered catalog product composition, framed the way Nineties Toy Catalog Statue composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with nostalgic collector hype.
   rendering_and_quality: Glossy nineties catalog photograph, in the recognizable hand of Nineties Toy Catalog Statue.
-  creative_brief: 'Nineties collectibles catalog look: statues photographed against gradient blue or black backdrops, soft glow edges, glossy print and period marketing composition. Carry it through Nineties catalog, gradient backdrop, glow edges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nineties collectibles catalog look: statues photographed against gradient blue or black backdrops, soft glow edges, glossy print and period marketing composition. Carry it through Nineties catalog, gradient backdrop, glow edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Nineties catalog; gradient backdrop; glow edges
 avoidRules:
   - existing franchise characters

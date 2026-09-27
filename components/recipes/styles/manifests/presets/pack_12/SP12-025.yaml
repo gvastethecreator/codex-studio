@@ -26,9 +26,9 @@ visualDna:
   texture_and_material: Hand-drawn 2D animation lines and flat painted fills over painted backgrounds.
   camera_and_composition: Side-scrolling beat em up view with a deep street lane for fighters.
   atmosphere_and_mood: Keep the requested mood with punchy street-brawl swagger.
-  rendering_and_quality: "A 2020 side-view frame at 1920 by 1080: hand-drawn fighters on a painted neon street lane, health bar shapes along the top."
+  rendering_and_quality: 'A 2020 side-view frame at 1920 by 1080: hand-drawn fighters on a painted neon street lane, health bar shapes along the top.'
   key_features: Streets of Rage 4 hand-drawn; thick brush lines; neon street lane
-  creative_brief: 'Lizardcube and Guard Crush Streets of Rage 4 (2020) look: hand-drawn 2D animation with thick brush outlines, flat cel color and soft painted neon streets in a side-scrolling beat em up. Carry it through Streets of Rage 4 hand-drawn, thick brush lines, neon street lane. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lizardcube and Guard Crush Streets of Rage 4 (2020) look: hand-drawn 2D animation with thick brush outlines, flat cel color and soft painted neon streets in a side-scrolling beat em up. Carry it through Streets of Rage 4 hand-drawn, thick brush lines, neon street lane. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing brawler heroes
   - watermark

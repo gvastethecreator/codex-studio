@@ -27,13 +27,13 @@ visualDna:
   aesthetic: 'Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary engineers and crew in worn seventies work clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sickly green CRT, emergency red, beige plastic and deep shadow.
-  lighting_and_shadow: "Flickering fluorescents, red emergency strobes and pitch-dark vents, all slightly bloomed."
+  lighting_and_shadow: 'Flickering fluorescents, red emergency strobes and pitch-dark vents, all slightly bloomed.'
   texture_and_material: Chunky beige plastic, grimy metal, film grain and VHS noise.
   camera_and_composition: First-person view holding an analog motion tracker, framed the way Alien Isolation 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with suffocating hunted dread.
-  rendering_and_quality: "A 2014 first-person frame at 1920 by 1080 with film grain and slight VHS softness: a green motion tracker device held at the bottom."
+  rendering_and_quality: 'A 2014 first-person frame at 1920 by 1080 with film grain and slight VHS softness: a green motion tracker device held at the bottom.'
   key_features: Alien Isolation lo-fi; motion tracker; CRT green; film grain
-  creative_brief: 'Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread. Carry it through Alien Isolation lo-fi, motion tracker, CRT green, film grain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread. Carry it through Alien Isolation lo-fi, motion tracker, CRT green, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a black biomechanical alien with an elongated head
   - watermark

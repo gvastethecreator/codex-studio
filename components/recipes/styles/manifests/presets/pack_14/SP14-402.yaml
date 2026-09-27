@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Framed panel with ornate multiple borders and figures in profile across a patterned field.
   atmosphere_and_mood: Keep the requested mood with devotional heroic splendor.
   rendering_and_quality: Precise decorative line painting with every surface ornamented.
-  creative_brief: 'Pattachitra epic scroll: Odisha cloth paintings with bold ornamental borders, stylized almond-eyed heroes, dense floral fields and epic battles and journeys on chalk-primed cloth. Carry it through almond-eyed profile heroes, ornamental borders, floral field, primed cloth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Pattachitra epic scroll: Odisha cloth paintings with bold ornamental borders, stylized almond-eyed heroes, dense floral fields and epic battles and journeys on chalk-primed cloth. Carry it through almond-eyed profile heroes, ornamental borders, floral field, primed cloth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: almond-eyed profile heroes; ornamental borders; floral field; primed cloth
 avoidRules:
   - cultural stereotypes or caricature

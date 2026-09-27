@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Flat frontal view of the whole relief board, everything packed edge to edge like a picture-book spread.
   atmosphere_and_mood: Cozy, tactile and richly detailed, a picture you want to touch.
   rendering_and_quality: Shallow physical relief with real clay texture; not a stop-motion set and not a 3D render.
-  creative_brief: 'Plasticine relief picture: soft modeling clay pressed and smeared flat onto board as a shallow picture, photographed like a painting. Carry it through clay smeared flat on board, rolled clay outlines, pressed dots and scored lines, raking side light, frontal flat view. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Plasticine relief picture: soft modeling clay pressed and smeared flat onto board as a shallow picture, photographed like a painting. Carry it through clay smeared flat on board, rolled clay outlines, pressed dots and scored lines, raking side light, frontal flat view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: clay smeared flat on board; rolled clay outlines; pressed dots and scored lines; raking side light; frontal flat view
 avoidRules:
   - known picture-book characters

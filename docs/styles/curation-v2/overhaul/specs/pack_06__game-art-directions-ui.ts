@@ -435,7 +435,7 @@ const spec: Spec = {
         key_features:
           'single warm lamp pool; fixed high-corner camera; green-grey darkness; damp worn surfaces; fine grain',
       }),
-      avoid: [...AVOID,  'monster requirement', 'typewriter save icon'],
+      avoid: [...AVOID, 'monster requirement', 'typewriter save icon'],
       briefs: [
         'Survival-horror safe room in a chapel vestry, one oil lamp pooling amber light on a locked cabinet, sickly green-grey darkness in the corners, fixed high-corner camera and fine grain. No text or logo.',
         'Survival-horror safe room in a flooded hospital laundry, a single work lamp over a dry folding table, cold light from the doorway and stained tiles. No text or logo.',

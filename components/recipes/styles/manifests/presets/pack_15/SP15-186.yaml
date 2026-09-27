@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close portraits of host and passenger, and crowds where many carry organisms.
   atmosphere_and_mood: Eerie and fascinating, the unsettling question of who is really in control.
   rendering_and_quality: Detailed eerie illustration with glossy organic forms and restraint.
-  creative_brief: 'Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror. Carry it through hitchhiker organisms, glowing growths, host partnerships, eerie calm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror. Carry it through hitchhiker organisms, glowing growths, host partnerships, eerie calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hitchhiker organisms; glowing growths; host partnerships; eerie calm
 avoidRules:
   - readable text

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Flat symmetrical tableaux folding into impossible perspective, framed the way Richard Williams composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dazzling ornamental mischief.
   rendering_and_quality: Faithful Richard Williams hand-drawn frame, in the recognizable hand of Richard Williams.
-  creative_brief: 'Richard Williams animation look of the 1970s to 1990s: impossible Escher perspective mazes, Persian miniature flatness, dense geometric patterning, virtuoso fluid motion and single-line characters. Carry it through Richard Williams Escher mazes, Persian flatness. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Richard Williams animation look of the 1970s to 1990s: impossible Escher perspective mazes, Persian miniature flatness, dense geometric patterning, virtuoso fluid motion and single-line characters. Carry it through Richard Williams Escher mazes, Persian flatness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Richard Williams Escher mazes; Persian flatness
 avoidRules:
   - a thin silent thief with a single fly

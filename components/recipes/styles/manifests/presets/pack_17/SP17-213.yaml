@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal frieze composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with timeless imperial triumph.
   rendering_and_quality: Convincing mosaic tile texture, kept consistent across the whole image.
-  creative_brief: 'Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass. Carry it through tesserae, gold ground, stylized armies, frieze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass. Carry it through tesserae, gold ground, stylized armies, frieze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tesserae; gold ground; stylized armies; frieze
 avoidRules:
   - interface or HUD

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with red leading the eye.
   atmosphere_and_mood: Keep the requested mood with bold urgent intensity.
   rendering_and_quality: Crisp two-color printing with disciplined red use, kept consistent across the whole image.
-  creative_brief: 'Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus. Carry it through black and red only, red accents, red tints, slight misregistration. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus. Carry it through black and red only, red accents, red tints, slight misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black and red only; red accents; red tints; slight misregistration
 avoidRules:
   - full color

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic full figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with powerful restrained heroism.
   rendering_and_quality: Convincing ancient bronze, kept consistent across the whole image.
-  creative_brief: 'Classical bronze patina: Greek bronze statues with green-brown patina, inlaid glass and stone eyes, copper lips and athletic poses recovered from the sea. Carry it through green patina, inlaid eyes, athletic pose, bronze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Classical bronze patina: Greek bronze statues with green-brown patina, inlaid glass and stone eyes, copper lips and athletic poses recovered from the sea. Carry it through green patina, inlaid eyes, athletic pose, bronze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: green patina; inlaid eyes; athletic pose; bronze
 avoidRules:
   - readable Greek inscriptions

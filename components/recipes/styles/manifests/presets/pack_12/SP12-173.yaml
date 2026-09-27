@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny minimalist figures on impossible paths. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel coral, mint and lilac, true to the Monument Valley 2014 palette.
-  lighting_and_shadow: "Soft flat gradient light in pastel tones, lit the way Monument Valley 2014 lights its levels."
-  texture_and_material: "Clean flat shapes with no texture, each face of a building one pastel color."
+  lighting_and_shadow: 'Soft flat gradient light in pastel tones, lit the way Monument Valley 2014 lights its levels.'
+  texture_and_material: 'Clean flat shapes with no texture, each face of a building one pastel color.'
   camera_and_composition: Isometric diorama view, framed the way Monument Valley 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with serene puzzling wonder.
-  rendering_and_quality: "A 2014 phone frame, tall portrait: impossible pastel architecture seen from a fixed diagonal, a tiny white figure."
-  creative_brief: 'ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths. Carry it through Monument Valley impossible geometry, pastel, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2014 phone frame, tall portrait: impossible pastel architecture seen from a fixed diagonal, a tiny white figure.'
+  creative_brief: "ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths. Carry it through Monument Valley impossible geometry, pastel, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Monument Valley impossible geometry; pastel; isometric
 avoidRules:
   - a small princess in a white cone hat

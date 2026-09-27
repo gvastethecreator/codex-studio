@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with awe-struck mechanical grandeur.
   rendering_and_quality: Lavish 2010 OVA frame with meticulous hand-drawn mecha detail and cinematic lighting.
   key_features: Unicorn mecha detail; cathedral hangars; glowing frame light; cinematic grandeur
-  creative_brief: 'Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur. Carry it through Unicorn mecha detail, cathedral hangars, glowing frame light, cinematic grandeur. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur. Carry it through Unicorn mecha detail, cathedral hangars, glowing frame light, cinematic grandeur. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a white mobile suit with a single horn that splits into a V-fin
   - white knight-shaped robot with blue and red trim

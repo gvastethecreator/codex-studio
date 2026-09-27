@@ -22,15 +22,15 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Naughty Dog Uncharted 4: A Thief''s End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light.'
+  aesthetic: "Naughty Dog Uncharted 4: A Thief's End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as rugged realistic explorers in field gear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lava orange, rock grey and jungle green, true to the Uncharted 4 2016 palette.
-  lighting_and_shadow: "Warm cinematic light and orange lava glow, lit the way Uncharted 4 2016 lights its levels."
-  texture_and_material: "Realistic rock, rope and gear, slightly soft game-engine detail."
+  lighting_and_shadow: 'Warm cinematic light and orange lava glow, lit the way Uncharted 4 2016 lights its levels.'
+  texture_and_material: 'Realistic rock, rope and gear, slightly soft game-engine detail.'
   camera_and_composition: Third-person cinematic view, framed the way Uncharted 4 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with daring adventure thrill.
-  rendering_and_quality: "A 2016 PlayStation 4 frame at 1920 by 1080 in third person: explorer on a rope bridge, no interface except a small ammo shape."
-  creative_brief: 'Naughty Dog Uncharted 4: A Thief''s End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light. Carry it through Uncharted 4 set pieces, rope bridges, cinematic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2016 PlayStation 4 frame at 1920 by 1080 in third person: explorer on a rope bridge, no interface except a small ammo shape.'
+  creative_brief: "Naughty Dog Uncharted 4: A Thief's End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light. Carry it through Uncharted 4 set pieces, rope bridges, cinematic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Uncharted 4 set pieces; rope bridges; cinematic
 avoidRules:
   - a treasure hunter in a henley shirt with a holster

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tiny human scale beside colossal feet, framed the way Pacific Rim Jaeger composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with colossal industrial awe.
   rendering_and_quality: Colossal-scale cinematic mecha render, in the recognizable hand of Pacific Rim Jaeger.
-  creative_brief: 'Jaeger-scale industrial mecha language: skyscraper-sized robots with shipyard construction, weld seams, nuclear reactor cores, ocean spray and colossal city-scale presence. Carry it through Jaeger scale, shipyard welds, reactor core. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jaeger-scale industrial mecha language: skyscraper-sized robots with shipyard construction, weld seams, nuclear reactor cores, ocean spray and colossal city-scale presence. Carry it through Jaeger scale, shipyard welds, reactor core. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Jaeger scale; shipyard welds; reactor core
 avoidRules:
   - existing Jaegers

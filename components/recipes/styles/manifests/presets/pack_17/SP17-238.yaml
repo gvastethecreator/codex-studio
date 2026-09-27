@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Elegant vertical cover composition, framed the way Michael Whelan composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamlike melancholy grandeur.
   rendering_and_quality: Luminous surreal fantasy painting, in the recognizable hand of Michael Whelan.
-  creative_brief: 'Michael Whelan fantasy painting: luminous surreal color, glowing albino heroes, precise realism, dreamlike cosmic skies and elegant sword-and-sorcery melancholy. Carry it through Whelan luminous surreal, glowing skies, precise realism. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Michael Whelan fantasy painting: luminous surreal color, glowing albino heroes, precise realism, dreamlike cosmic skies and elegant sword-and-sorcery melancholy. Carry it through Whelan luminous surreal, glowing skies, precise realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Whelan luminous surreal; glowing skies; precise realism
 avoidRules:
   - Elric of Melniboné

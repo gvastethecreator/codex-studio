@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bold inked painted Greek myth figures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Underworld crimson, ember orange and soul teal, true to the Hades 2020 palette.
-  lighting_and_shadow: "Ember and soul glow in dark underworld chambers."
-  texture_and_material: "Painted art with bold ink outlines, seen from a high diagonal angle."
+  lighting_and_shadow: 'Ember and soul glow in dark underworld chambers.'
+  texture_and_material: 'Painted art with bold ink outlines, seen from a high diagonal angle.'
   camera_and_composition: Isometric chamber view, framed the way Hades 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with defiant mythic swagger.
-  rendering_and_quality: "A 2020 frame at 1920 by 1080: small inked figure fighting in a painted underworld chamber, a bar shape bottom left."
-  creative_brief: 'Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors. Carry it through Hades Jen Zee, underworld, Greek myth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 frame at 1920 by 1080: small inked figure fighting in a painted underworld chamber, a bar shape bottom left.'
+  creative_brief: "Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors. Carry it through Hades Jen Zee, underworld, Greek myth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hades Jen Zee; underworld; Greek myth
 avoidRules:
   - a laurel-crowned prince with flaming feet

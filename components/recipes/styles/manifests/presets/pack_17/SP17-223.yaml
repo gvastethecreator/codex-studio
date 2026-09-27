@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Twisted warped perspective, framed the way Ian Miller composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with obsessive nightmare intricacy.
   rendering_and_quality: Obsessive technical-pen gothic drawing, in the recognizable hand of Ian Miller.
-  creative_brief: 'Ian Miller illustration: obsessive technical-pen gothic architecture, warped towers and machinery, dense cross-hatching, twisted perspective and nightmarish ornamental detail. Carry it through Ian Miller technical pen, warped towers, dense hatching. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ian Miller illustration: obsessive technical-pen gothic architecture, warped towers and machinery, dense cross-hatching, twisted perspective and nightmarish ornamental detail. Carry it through Ian Miller technical pen, warped towers, dense hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ian Miller technical pen; warped towers; dense hatching
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Classic Hollywood noir coverage with deep shadows, framed the way Double Indemnity 1944 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with fatalistic sunlit noir.
   rendering_and_quality: Authentic forties Paramount noir frame, in the recognizable hand of Double Indemnity 1944.
-  creative_brief: 'Billy Wilder Double Indemnity (1944) look: dusty sunlit Los Angeles bungalows with shafts through blinds, insurance offices, supermarket aisles, flashback narration and fatalistic noir. Carry it through Double Indemnity dusty sunlight, blinds, insurance offices. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Billy Wilder Double Indemnity (1944) look: dusty sunlit Los Angeles bungalows with shafts through blinds, insurance offices, supermarket aisles, flashback narration and fatalistic noir. Carry it through Double Indemnity dusty sunlight, blinds, insurance offices. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Double Indemnity dusty sunlight; blinds; insurance offices
 avoidRules:
   - existing franchise characters

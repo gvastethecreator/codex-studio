@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic gesture drawing, framed the way Yoji Shinkawa composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tense sketched menace.
   rendering_and_quality: Ink-brush concept drawing of a mech, in the recognizable hand of Yoji Shinkawa.
-  creative_brief: 'Yoji Shinkawa mecha language: bipedal tank walkers and military machines drawn in bold ink brush strokes, splattered wash, dynamic gesture and grey tonal washes. Carry it through Shinkawa ink brush, bipedal walker, grey wash. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yoji Shinkawa mecha language: bipedal tank walkers and military machines drawn in bold ink brush strokes, splattered wash, dynamic gesture and grey tonal washes. Carry it through Shinkawa ink brush, bipedal walker, grey wash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Shinkawa ink brush; bipedal walker; grey wash
 avoidRules:
   - Metal Gear REX or RAY

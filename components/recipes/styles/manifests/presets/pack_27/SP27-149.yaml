@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low wide-angle speed shots on the road, framed the way Mad Max 1979 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dusty lawless fury.
   rendering_and_quality: Authentic seventies Australian road film frame, in the recognizable hand of Mad Max 1979.
-  creative_brief: 'George Miller Mad Max (1979) look: sun-bleached Australian outback roads, leather-clad highway patrol, souped-up muscle cars, wide-angle speed and near-future lawlessness. Carry it through Mad Max outback, muscle cars, leather, speed. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "George Miller Mad Max (1979) look: sun-bleached Australian outback roads, leather-clad highway patrol, souped-up muscle cars, wide-angle speed and near-future lawlessness. Carry it through Mad Max outback, muscle cars, leather, speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mad Max outback; muscle cars; leather; speed
 avoidRules:
   - a black supercharged police interceptor

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic diagonal composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with theatrical anguish and heroic struggle.
   rendering_and_quality: Virtuoso deep carving, kept consistent across the whole image.
-  creative_brief: 'Hellenistic pathos marble: dramatic late Greek sculpture with twisting bodies, anguished faces, deep-cut drapery and theatrical movement. Carry it through twisting bodies, deep drapery, anguished faces, drama. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hellenistic pathos marble: dramatic late Greek sculpture with twisting bodies, anguished faces, deep-cut drapery and theatrical movement. Carry it through twisting bodies, deep drapery, anguished faces, drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: twisting bodies; deep drapery; anguished faces; drama
 avoidRules:
   - readable Greek inscriptions

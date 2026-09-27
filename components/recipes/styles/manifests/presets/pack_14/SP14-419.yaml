@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Open box frontal with doors swung wide and tiers stacked.
   atmosphere_and_mood: Keep the requested mood with festive layered cosmos.
   rendering_and_quality: Crisp handmade miniature diorama, kept consistent across the whole image.
-  creative_brief: 'Andean retablo cosmos: Peruvian Ayacucho retablo boxes with painted doors opening onto layered tiers of tiny plaster figures, heaven above, earth in the middle and underworld below. Carry it through painted box, tiered scenes, tiny figures, floral doors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Andean retablo cosmos: Peruvian Ayacucho retablo boxes with painted doors opening onto layered tiers of tiny plaster figures, heaven above, earth in the middle and underworld below. Carry it through painted box, tiered scenes, tiny figures, floral doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted box; tiered scenes; tiny figures; floral doors
 avoidRules:
   - cultural stereotypes or caricature

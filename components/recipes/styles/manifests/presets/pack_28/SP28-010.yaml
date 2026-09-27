@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide diorama product view, framed the way Iron Studios composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dramatic battle spectacle.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Iron Studios Art Scale look: tenth-scale battle diorama statues with multiple figures, rubble bases, effect parts and dramatic action staging. Carry it through Iron Studios diorama, rubble base, effect parts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Iron Studios Art Scale look: tenth-scale battle diorama statues with multiple figures, rubble bases, effect parts and dramatic action staging. Carry it through Iron Studios diorama, rubble base, effect parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Iron Studios diorama; rubble base; effect parts
 avoidRules:
   - existing franchise characters

@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: rendered as a greyscale SEM image with bright edges, deep focus and sculptural microstructures; false color only if asked.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: rendered as a greyscale SEM image with bright edges, deep focus and sculptural microstructures; false color only if asked."
   color_and_tone: Monochrome grey with bright edge highlights, as the instrument or lens would record it.
   lighting_and_shadow: Electron-beam edge glow with no cast shadows, matching the real imaging setup at this scale.
   texture_and_material: Microscopic ridges, spores, hairs and crystalline grains, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Alien, precise, eerie and fascinating, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: greyscale SEM; edge glow; deep focus; microstructure
-  creative_brief: 'Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow. Carry it through greyscale SEM, edge glow, deep focus, microstructure. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow. Carry it through greyscale SEM, edge glow, deep focus, microstructure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small fast pixel sprite racing through checkered hills, loops and palm trees. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small fast pixel sprite racing through checkered hills, loops and palm trees. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Saturated sky blue, grass green and checkerboard brown.
-  lighting_and_shadow: "Bright flat daylight colors with strong blue sky bands and no shading."
-  texture_and_material: "Crisp square pixels, bold outlines and repeating checkered soil tiles in few colors."
+  lighting_and_shadow: 'Bright flat daylight colors with strong blue sky bands and no shading.'
+  texture_and_material: 'Crisp square pixels, bold outlines and repeating checkered soil tiles in few colors.'
   camera_and_composition: Side-scrolling speed view, framed the way Sonic the Hedgehog 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright blazing speed.
-  rendering_and_quality: "A 1991 Sega Mega Drive frame at 320 by 224: sharp pixels, bold primary colors and scrolling parallax bands."
+  rendering_and_quality: 'A 1991 Sega Mega Drive frame at 320 by 224: sharp pixels, bold primary colors and scrolling parallax bands.'
   creative_brief: "Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed. Carry it through Sonic checkered hills, loops, palm trees, bold pixel speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Sonic checkered hills; loops; palm trees; bold pixel speed"
+  key_features: 'Sonic checkered hills; loops; palm trees; bold pixel speed'
 avoidRules:
   - a blue hedgehog with red shoes
   - gold rings

@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with boundless defiant bravado.
   rendering_and_quality: Raw energetic 2007 Gainax frame with loose rough action lines.
   key_features: Imaishi action; Nishigori designs; drills and spirals; escalating scale
-  creative_brief: 'Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale. Carry it through Imaishi action, Nishigori designs, drills and spirals, escalating scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hiroyuki Imaishi and Gainax Gurren Lagann look (2007): Atsushi Nishigori designs, sharp angular faces, jagged drill motifs, loose rough action animation and ever-escalating scale. Carry it through Imaishi action, Nishigori designs, drills and spirals, escalating scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a spiky-haired rebel with a cape and flaming sunglasses
   - a tiny drill-headed robot

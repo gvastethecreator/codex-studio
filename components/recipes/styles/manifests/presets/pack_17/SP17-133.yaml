@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down or three-quarter dungeon room view, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with bleak restart melancholy.
   rendering_and_quality: Clear readable scene without gore or text, kept consistent across the whole image.
-  creative_brief: 'Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness. Carry it through fallen hero gear, fading light, lingering monster, dungeon room. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness. Carry it through fallen hero gear, fading light, lingering monster, dungeon room. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fallen hero gear; fading light; lingering monster; dungeon room
 avoidRules:
   - game over text

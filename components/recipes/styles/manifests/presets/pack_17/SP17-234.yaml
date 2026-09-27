@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Theatrical portrait framing, framed the way Clyde Caldwell composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with theatrical gothic glamour.
   rendering_and_quality: Glamorous gothic RPG painting, in the recognizable hand of Clyde Caldwell.
-  creative_brief: 'Clyde Caldwell gothic role-playing painting: glamorous vampires and sorceresses, rich jewel-tone color, candlelit gothic interiors and theatrical sensual menace. Carry it through Caldwell gothic glamour, jewel tones, candlelight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Clyde Caldwell gothic role-playing painting: glamorous vampires and sorceresses, rich jewel-tone color, candlelit gothic interiors and theatrical sensual menace. Carry it through Caldwell gothic glamour, jewel tones, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Caldwell gothic glamour; jewel tones; candlelight
 avoidRules:
   - Ravenloft characters

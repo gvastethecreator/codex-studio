@@ -26,7 +26,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with jeweled desert adventure.
   rendering_and_quality: Bright Arabian Nights fantasy frame with jeweled arabesque curves.
   key_features: Magi arabesques; jewel palaces; desert markets; djinn magic
-  creative_brief: 'Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a braided boy with a flute and a blue djinn
   - a muscular blue genie with a topknot and gold wrist cuffs

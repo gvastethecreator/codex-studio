@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Fragmented glimpses down alleys and across canals, framed the way Don’t Look Now 1973 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grieving uncanny premonition.
   rendering_and_quality: Muted seventies psychological horror frame, in the recognizable hand of Don’t Look Now 1973.
-  creative_brief: 'Nicolas Roeg Don’t Look Now (1973) look: wintry Venice canals, fragmented editing, grief-laden muted palette with a single recurring red, and eerie glimpses around corners. Carry it through Roeg Venice, single red, fragmented glimpses, grief. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nicolas Roeg Don’t Look Now (1973) look: wintry Venice canals, fragmented editing, grief-laden muted palette with a single recurring red, and eerie glimpses around corners. Carry it through Roeg Venice, single red, fragmented glimpses, grief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Roeg Venice; single red; fragmented glimpses; grief
 avoidRules:
   - a small figure in a red hooded coat

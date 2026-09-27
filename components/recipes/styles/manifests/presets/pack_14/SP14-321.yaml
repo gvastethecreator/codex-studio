@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic low-angle photograph, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with living festive continuity.
   rendering_and_quality: Vivid documentary photography, kept consistent across the whole image.
-  creative_brief: 'Plumed dance regalia photograph: contemporary photography of danzantes in towering feather headdresses, shell rattles and copal smoke in plaza sunlight. Carry it through feather headdress, danzantes, copal smoke, plaza. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Plumed dance regalia photograph: contemporary photography of danzantes in towering feather headdresses, shell rattles and copal smoke in plaza sunlight. Carry it through feather headdress, danzantes, copal smoke, plaza. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: feather headdress; danzantes; copal smoke; plaza
 avoidRules:
   - readable glyphs

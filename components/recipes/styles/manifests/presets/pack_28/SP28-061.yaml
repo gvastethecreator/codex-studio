@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal orthographic product view, framed the way Dieter Rams composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with calm functional honesty.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Dieter Rams Braun design language of the 1960s: less but better, rectilinear white and grey boxes, perforated grilles, a single colored accent control and quiet functional order. Carry it through Rams less but better, rectilinear, perforated grille, accent. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dieter Rams Braun design language of the 1960s: less but better, rectilinear white and grey boxes, perforated grilles, a single colored accent control and quiet functional order. Carry it through Rams less but better, rectilinear, perforated grille, accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rams less but better; rectilinear; perforated grille; accent
 avoidRules:
   - the Braun logo

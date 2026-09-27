@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Hero centered in front of the light source.
   atmosphere_and_mood: Keep the requested mood with triumphant grandeur, kept consistent across the whole image.
   rendering_and_quality: Painterly glow with strong silhouette, kept consistent across the whole image.
-  creative_brief: 'Backlit heroic oil study: heroes painted against a blazing light source, burning rim light on armor and hair, faces in warm shadow and dust in the air. Carry it through blazing backlight, rim light, silhouette, dust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Backlit heroic oil study: heroes painted against a blazing light source, burning rim light on armor and hair, faces in warm shadow and dust in the air. Carry it through blazing backlight, rim light, silhouette, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blazing backlight; rim light; silhouette; dust
 avoidRules:
   - title lettering

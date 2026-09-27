@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic street view, framed the way Transforming Car Robot composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful heroic nostalgia.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Eighties transforming car robot language: vehicles that unfold into humanoid robots with car hoods as chests, wheels on shoulders and legs, windshields and bold toy colors. Carry it through Car robot, hood chest, wheels on limbs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Eighties transforming car robot language: vehicles that unfold into humanoid robots with car hoods as chests, wheels on shoulders and legs, windshields and bold toy colors. Carry it through Car robot, hood chest, wheels on limbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Car robot; hood chest; wheels on limbs
 avoidRules:
   - Optimus Prime

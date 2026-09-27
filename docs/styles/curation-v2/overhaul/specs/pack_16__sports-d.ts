@@ -34,9 +34,9 @@ const spec: Spec = {
         key_features: 'mud; scrums; rain; final push',
       },
       [
-        "Inside a collapsing scrum in pouring rain, mud-caked faces strain as the ball squirts out of the pile like a seed from a fruit. No readable text or logo.",
-        "A tiny winger sprints the length of a flooded pitch while giant forwards splash comically behind him, one losing both boots. No readable text or logo.",
-        "At the final whistle both teams lie flat in the mud under the rain, laughing, too exhausted to stand up. No readable text or logo.",
+        'Inside a collapsing scrum in pouring rain, mud-caked faces strain as the ball squirts out of the pile like a seed from a fruit. No readable text or logo.',
+        'A tiny winger sprints the length of a flooded pitch while giant forwards splash comically behind him, one losing both boots. No readable text or logo.',
+        'At the final whistle both teams lie flat in the mud under the rain, laughing, too exhausted to stand up. No readable text or logo.',
       ],
     ),
     'SP05-359': u(
@@ -58,9 +58,9 @@ const spec: Spec = {
         key_features: 'spotlit ice; spin arcs; ice reflections; sequined costume',
       },
       [
-        "A skater spins under a single spotlight, and the ice spraying from her blade freezes midair into a glittering crown around her. No readable text or logo.",
+        'A skater spins under a single spotlight, and the ice spraying from her blade freezes midair into a glittering crown around her. No readable text or logo.',
         "A skater's costume tears mid-routine and she keeps going, turning the flapping fabric into part of the choreography. No readable text or logo.",
-        "An aging champion skates alone on a frozen lake at dusk, tracing the routine that won her gold decades ago. No readable text or logo.",
+        'An aging champion skates alone on a frozen lake at dusk, tracing the routine that won her gold decades ago. No readable text or logo.',
       ],
     ),
     'SP05-360': u(
@@ -81,9 +81,9 @@ const spec: Spec = {
         key_features: 'full draw; stillness; long range; fine line',
       },
       [
-        "An archer holds full draw in profile while a falling maple leaf stops midair right at the arrow tip, waiting for the release. No readable text or logo.",
+        'An archer holds full draw in profile while a falling maple leaf stops midair right at the arrow tip, waiting for the release. No readable text or logo.',
         "An arrow passes through a curtain of rain so cleanly that every drop parts around it, the archer's eyes still closed. No readable text or logo.",
-        "At dawn in a snowy hall an old archery master draws a bow with no arrow, and the distant target still shivers. No readable text or logo.",
+        'At dawn in a snowy hall an old archery master draws a bow with no arrow, and the distant target still shivers. No readable text or logo.',
       ],
     ),
     'SP05-361': u(
@@ -107,9 +107,9 @@ const spec: Spec = {
         key_features: 'repetition; sunrise runs; worn gear; small progress',
       },
       [
-        "A runner does sunrise sprints along a riverbank, and each lap leaves a slightly faster ghost of herself running ahead. No readable text or logo.",
-        "A clumsy trainee catches his thousandth ball of the day in a sunset field, the elderly coach finally lowering the bucket. No readable text or logo.",
-        "A weightlifter has added one grain of rice a day to a barbell in her tiny apartment, and after ten years the bar has finally begun to bend. No readable text or logo.",
+        'A runner does sunrise sprints along a riverbank, and each lap leaves a slightly faster ghost of herself running ahead. No readable text or logo.',
+        'A clumsy trainee catches his thousandth ball of the day in a sunset field, the elderly coach finally lowering the bucket. No readable text or logo.',
+        'A weightlifter has added one grain of rice a day to a barbell in her tiny apartment, and after ten years the bar has finally begun to bend. No readable text or logo.',
       ],
     ),
     'SP05-362': u(
@@ -131,9 +131,9 @@ const spec: Spec = {
         key_features: 'white suits; mesh masks; blade glints; long piste',
       },
       [
-        "Two fencers lunge along a spotlit piste, blades crossing in a bright spark while their mirrored masks reflect each other endlessly. No readable text or logo.",
-        "A fencer duels her rival on the roof of a speeding night train, their white suits snapping in the wind. No readable text or logo.",
-        "A victorious fencer takes her bow, not yet aware that her rival pinned a red rose to her back with the final touch. No readable text or logo.",
+        'Two fencers lunge along a spotlit piste, blades crossing in a bright spark while their mirrored masks reflect each other endlessly. No readable text or logo.',
+        'A fencer duels her rival on the roof of a speeding night train, their white suits snapping in the wind. No readable text or logo.',
+        'A victorious fencer takes her bow, not yet aware that her rival pinned a red rose to her back with the final touch. No readable text or logo.',
       ],
     ),
     'SP05-363': u(
@@ -153,9 +153,9 @@ const spec: Spec = {
         key_features: 'unison; mirrored poses; aerial pyramid; symmetry',
       },
       [
-        "A cheer squad throws a flyer so high above a human pyramid that she passes a flock of very startled geese. No readable text or logo.",
-        "Ten divers leap from a sea cliff in perfect unison, their silhouettes forming one enormous bird against the sunset. No readable text or logo.",
-        "Legs rising together like lilies through still water, a swimming team performs its routine inside a flooded ruined chapel. No readable text or logo.",
+        'A cheer squad throws a flyer so high above a human pyramid that she passes a flock of very startled geese. No readable text or logo.',
+        'Ten divers leap from a sea cliff in perfect unison, their silhouettes forming one enormous bird against the sunset. No readable text or logo.',
+        'Legs rising together like lilies through still water, a swimming team performs its routine inside a flooded ruined chapel. No readable text or logo.',
       ],
     ),
     'SP05-364': u(
@@ -177,9 +177,9 @@ const spec: Spec = {
         key_features: 'work lights; tape marks; bare stage; repetition',
       },
       [
-        "A lone actress repeats one gesture under a single work light until her shadow on the back wall starts doing it wrong on purpose. No readable text or logo.",
-        "A director makes the whole cast rehearse tumbling down a staircase for the hundredth time while the prop skeleton in the wings looks bored. No readable text or logo.",
-        "At 4 a.m. in a dark theater a stagehand watches an actor rehearse to an audience made of coats draped over the seats. No readable text or logo.",
+        'A lone actress repeats one gesture under a single work light until her shadow on the back wall starts doing it wrong on purpose. No readable text or logo.',
+        'A director makes the whole cast rehearse tumbling down a staircase for the hundredth time while the prop skeleton in the wings looks bored. No readable text or logo.',
+        'At 4 a.m. in a dark theater a stagehand watches an actor rehearse to an audience made of coats draped over the seats. No readable text or logo.',
       ],
     ),
   },

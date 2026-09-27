@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Intimate family scene under the sun disc, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with intimate radiant tenderness.
   rendering_and_quality: Distinctive elongated stylization, kept consistent across the whole image.
-  creative_brief: 'Amarna naturalism: the unusual art of the Amarna period, elongated faces and bodies, intimate family scenes and sun rays ending in small hands. Carry it through elongated figures, sun rays with hands, intimate, relief. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Amarna naturalism: the unusual art of the Amarna period, elongated faces and bodies, intimate family scenes and sun rays ending in small hands. Carry it through elongated figures, sun rays with hands, intimate, relief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: elongated figures; sun rays with hands; intimate; relief
 avoidRules:
   - readable hieroglyphs or cartouches

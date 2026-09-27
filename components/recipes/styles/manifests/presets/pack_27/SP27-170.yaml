@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low wide angles up at colossal ships, framed the way Independence Day 1996 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with epic blockbuster panic.
   rendering_and_quality: Authentic mid-nineties disaster blockbuster frame, in the recognizable hand of Independence Day 1996.
-  creative_brief: 'Roland Emmerich Independence Day (1996) look: colossal alien ships casting shadows over city skylines, burning clouds, miniature destruction and flag-waving blockbuster spectacle. Carry it through Independence Day city-size ships, burning clouds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Roland Emmerich Independence Day (1996) look: colossal alien ships casting shadows over city skylines, burning clouds, miniature destruction and flag-waving blockbuster spectacle. Carry it through Independence Day city-size ships, burning clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Independence Day city-size ships; burning clouds
 avoidRules:
   - a disc ship firing a blue beam down on a white government building

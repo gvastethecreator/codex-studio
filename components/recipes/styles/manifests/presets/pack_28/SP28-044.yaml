@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter view in a garage bay, framed the way Armored Core composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with heavy utilitarian menace.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Armored Core-inspired industrial mecha language: rigid angular modular frames, swappable parts, heavy hydraulics, exposed mechanics, stencil markings and utilitarian brutality. Carry it through Rigid modular mecha, hydraulics, stencils, angular. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Armored Core-inspired industrial mecha language: rigid angular modular frames, swappable parts, heavy hydraulics, exposed mechanics, stencil markings and utilitarian brutality. Carry it through Rigid modular mecha, hydraulics, stencils, angular. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rigid modular mecha; hydraulics; stencils; angular
 avoidRules:
   - existing Armored Core units

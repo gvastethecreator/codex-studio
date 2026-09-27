@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down unboxing photo, framed the way Collector Unboxing composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with excited unboxing anticipation.
   rendering_and_quality: Candid collector unboxing photograph, in the recognizable hand of Collector Unboxing.
-  creative_brief: 'Collector unboxing photography look: statue parts nestled in white styrofoam trays and plastic bags, packing tissue, instruction sheet shapes and a camera flash on a desk. Carry it through Unboxing styrofoam trays, statue parts, flash. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Collector unboxing photography look: statue parts nestled in white styrofoam trays and plastic bags, packing tissue, instruction sheet shapes and a camera flash on a desk. Carry it through Unboxing styrofoam trays, statue parts, flash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Unboxing styrofoam trays; statue parts; flash
 avoidRules:
   - existing franchise characters

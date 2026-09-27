@@ -20,9 +20,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'sneaker brand marks'],
       briefs: [
-        "Shot from low, an orc warrior leans on a castle portcullis in an oversized washed-black hoodie, baggy olive cargos and chunky statement sneakers, a crossbody bag slung over his axe. No readable text or logo.",
-        "An elderly woman in a boxy safety-orange nylon jacket and track pants skateboards down a cobbled medieval street, chunky sneakers kicking up sparks. No readable text or logo.",
-        "A wizard in an oversized bone hoodie, cargo pants and a low beanie pulled over his long beard sits on a stone bridge rail, guarding a queue of apprentices. No readable text or logo.",
+        'Shot from low, an orc warrior leans on a castle portcullis in an oversized washed-black hoodie, baggy olive cargos and chunky statement sneakers, a crossbody bag slung over his axe. No readable text or logo.',
+        'An elderly woman in a boxy safety-orange nylon jacket and track pants skateboards down a cobbled medieval street, chunky sneakers kicking up sparks. No readable text or logo.',
+        'A wizard in an oversized bone hoodie, cargo pants and a low beanie pulled over his long beard sits on a stone bridge rail, guarding a queue of apprentices. No readable text or logo.',
       ],
     },
     'SP08-004': {
@@ -39,9 +39,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A druid in a flowing terracotta maxi dress, fringed suede vest and crochet shawl dances barefoot inside a stone circle at golden hour, silver jewelry flashing. No readable text or logo.",
-        "In a hazy sunflower field a minstrel in wide sage trousers and an embroidered cotton tunic plays a lute while bees orbit his beaded necklaces. No readable text or logo.",
-        "An elderly woman in a crochet cardigan, mustard printed skirt and turquoise rings drives a painted horse-drawn caravan down a dusty lane. No readable text or logo.",
+        'A druid in a flowing terracotta maxi dress, fringed suede vest and crochet shawl dances barefoot inside a stone circle at golden hour, silver jewelry flashing. No readable text or logo.',
+        'In a hazy sunflower field a minstrel in wide sage trousers and an embroidered cotton tunic plays a lute while bees orbit his beaded necklaces. No readable text or logo.',
+        'An elderly woman in a crochet cardigan, mustard printed skirt and turquoise rings drives a painted horse-drawn caravan down a dusty lane. No readable text or logo.',
       ],
     },
     'SP08-007': {
@@ -58,9 +58,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lighthouse keeper in layered black velvet and lace, silver moon pendants and dark eyeliner lights candles in a storm-battered lantern room. No readable text or logo.",
-        "A woman in a crushed velvet coat, fishnet sleeves and blood-red lipstick walks through a misty cemetery, a black cat trailing her hem. No readable text or logo.",
-        "An elderly woman in a black lace high-collar dress and silver rings reads tarot at a candlelit table, and the cards are reading her back. No readable text or logo.",
+        'A lighthouse keeper in layered black velvet and lace, silver moon pendants and dark eyeliner lights candles in a storm-battered lantern room. No readable text or logo.',
+        'A woman in a crushed velvet coat, fishnet sleeves and blood-red lipstick walks through a misty cemetery, a black cat trailing her hem. No readable text or logo.',
+        'An elderly woman in a black lace high-collar dress and silver rings reads tarot at a candlelit table, and the cards are reading her back. No readable text or logo.',
       ],
     },
     'SP08-008': {
@@ -77,9 +77,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'readable slogans'],
       briefs: [
-        "Under harsh flash, a court jester reborn as a 1970s punk sneers from a throne in a studded leather jacket, ripped safety-pinned tee, red tartan bondage trousers and spiked green hair. No readable text or logo.",
-        "An elderly woman in a studded leather jacket, chains and tartan trousers, her white hair spiked high, feeds pigeons in a castle square. No readable text or logo.",
-        "A knight whose surcoat is ripped and safety-pinned leans on a broken lance, a studded collar at his throat and a bright red mohawk rising from his helmet. No readable text or logo.",
+        'Under harsh flash, a court jester reborn as a 1970s punk sneers from a throne in a studded leather jacket, ripped safety-pinned tee, red tartan bondage trousers and spiked green hair. No readable text or logo.',
+        'An elderly woman in a studded leather jacket, chains and tartan trousers, her white hair spiked high, feeds pigeons in a castle square. No readable text or logo.',
+        'A knight whose surcoat is ripped and safety-pinned leans on a broken lance, a studded collar at his throat and a bright red mohawk rising from his helmet. No readable text or logo.',
       ],
     },
     'SP08-014': {
@@ -96,9 +96,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'military insignia'],
       briefs: [
-        "Crouched over huge claw prints in the mud, a dragon tracker wears a waxed olive field jacket with a dozen pockets, canvas trousers, webbing belt and lace-up boots. No readable text or logo.",
-        "An elderly man in a rust duck-canvas chore jacket and khaki trousers repairs a creaking waterwheel under an overcast sky. No readable text or logo.",
-        "A cartographer in a multi-pocket ripstop jacket and utility pouches stands at the edge of a glacier, measuring the crevasse with a knotted rope. No readable text or logo.",
+        'Crouched over huge claw prints in the mud, a dragon tracker wears a waxed olive field jacket with a dozen pockets, canvas trousers, webbing belt and lace-up boots. No readable text or logo.',
+        'An elderly man in a rust duck-canvas chore jacket and khaki trousers repairs a creaking waterwheel under an overcast sky. No readable text or logo.',
+        'A cartographer in a multi-pocket ripstop jacket and utility pouches stands at the edge of a glacier, measuring the crevasse with a knotted rope. No readable text or logo.',
       ],
     },
     'SP08-021': {
@@ -115,9 +115,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A necromancer in a lilac babydoll dress, mint faux-fur coat, spiked choker and platform creepers walks a cute skeleton cat on a leash through a pastel graveyard. No readable text or logo.",
-        "A vampire in a baby-pink cape, black lace collar and pastel platform boots fixes his bat-shaped hair clips in a mirror that shows only the clips. No readable text or logo.",
-        "An elderly witch with baby-blue hair, a pastel pleated dress and skull charms stirs a cauldron bubbling with candy-colored smoke. No readable text or logo.",
+        'A necromancer in a lilac babydoll dress, mint faux-fur coat, spiked choker and platform creepers walks a cute skeleton cat on a leash through a pastel graveyard. No readable text or logo.',
+        'A vampire in a baby-pink cape, black lace collar and pastel platform boots fixes his bat-shaped hair clips in a mirror that shows only the clips. No readable text or logo.',
+        'An elderly witch with baby-blue hair, a pastel pleated dress and skull charms stirs a cauldron bubbling with candy-colored smoke. No readable text or logo.',
       ],
     },
     'SP08-022': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'band names'],
       briefs: [
-        "Grainy and damp, a troll musician slumps on a mossy log in a rainy forest in an oversized faded red flannel, ripped jeans and knit beanie. No readable text or logo.",
-        "A woman in a slip dress over a thermal top and scuffed combat boots sits on the steps of a ruined abbey, staring at the overcast sky. No readable text or logo.",
-        "Taking a break outside the castle kitchen, a knight wears a worn flannel shirt over his chainmail and ripped trousers, sipping from a chipped mug. No readable text or logo.",
+        'Grainy and damp, a troll musician slumps on a mossy log in a rainy forest in an oversized faded red flannel, ripped jeans and knit beanie. No readable text or logo.',
+        'A woman in a slip dress over a thermal top and scuffed combat boots sits on the steps of a ruined abbey, staring at the overcast sky. No readable text or logo.',
+        'Taking a break outside the castle kitchen, a knight wears a worn flannel shirt over his chainmail and ripped trousers, sipping from a chipped mug. No readable text or logo.',
       ],
     },
     'SP08-023': {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A woman in a gothic black-and-white bell-skirted dress, bonnet and lace parasol stands in an overgrown greenhouse full of carnivorous plants, one of them nibbling her ribbons. No readable text or logo.",
-        "Two sisters in classic burgundy petticoated dresses take tea with a large owl in a stone castle garden, the owl in a tiny bonnet. No readable text or logo.",
-        "Frilled socks swinging, a woman in pastel sweet ruffles rides a carousel horse in an abandoned fairground at dusk. No readable text or logo.",
+        'A woman in a gothic black-and-white bell-skirted dress, bonnet and lace parasol stands in an overgrown greenhouse full of carnivorous plants, one of them nibbling her ribbons. No readable text or logo.',
+        'Two sisters in classic burgundy petticoated dresses take tea with a large owl in a stone castle garden, the owl in a tiny bonnet. No readable text or logo.',
+        'Frilled socks swinging, a woman in pastel sweet ruffles rides a carousel horse in an abandoned fairground at dusk. No readable text or logo.',
       ],
     },
     'SP08-024': {
@@ -172,9 +172,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'car brand marks'],
       briefs: [
-        "A blacksmith with a greased pompadour leans on his anvil at a medieval forge in cuffed jeans, a rolled white tee and a leather jacket. No readable text or logo.",
-        "A woman with victory rolls and a cherry-red polka-dot swing dress dances with a skeleton at a moonlit village fair. No readable text or logo.",
-        "An elderly man in a turquoise bowling shirt and creepers polishes a horse-drawn carriage as if it were a hot rod. No readable text or logo.",
+        'A blacksmith with a greased pompadour leans on his anvil at a medieval forge in cuffed jeans, a rolled white tee and a leather jacket. No readable text or logo.',
+        'A woman with victory rolls and a cherry-red polka-dot swing dress dances with a skeleton at a moonlit village fair. No readable text or logo.',
+        'An elderly man in a turquoise bowling shirt and creepers polishes a horse-drawn carriage as if it were a hot rod. No readable text or logo.',
       ],
     },
     'SP08-025': {
@@ -191,9 +191,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An elf in bell-bottoms, a tie-dye tunic, fringed vest and flower headband plays a flute on top of a painted wagon in a summer flare. No readable text or logo.",
+        'An elf in bell-bottoms, a tie-dye tunic, fringed vest and flower headband plays a flute on top of a painted wagon in a summer flare. No readable text or logo.',
         "A woman in a peasant dress and bead necklaces slips daisies into the visor of a sleeping knight's helmet. No readable text or logo.",
-        "An elderly man with long grey hair, tie-dye and a headband tends his bees in a meadow, the bees wearing tiny flower crowns. No readable text or logo.",
+        'An elderly man with long grey hair, tie-dye and a headband tends his bees in a meadow, the bees wearing tiny flower crowns. No readable text or logo.',
       ],
     },
     'SP08-026': {
@@ -210,9 +210,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'club patches with text'],
       briefs: [
-        "Shot from low at sunset, a dragon rider in a road-worn black leather jacket, chaps and engineer boots stands beside her dusty dragon at a desert crossroads. No readable text or logo.",
-        "An elderly man with a white braid, scuffed brown leather vest and wallet chain sits outside a roadside tavern, boots up on a barrel. No readable text or logo.",
-        "Beside his warhorse in a muddy field, a knight wears a heavy creased motorcycle jacket over his mail and fingerless gloves on his sword hand. No readable text or logo.",
+        'Shot from low at sunset, a dragon rider in a road-worn black leather jacket, chaps and engineer boots stands beside her dusty dragon at a desert crossroads. No readable text or logo.',
+        'An elderly man with a white braid, scuffed brown leather vest and wallet chain sits outside a roadside tavern, boots up on a barrel. No readable text or logo.',
+        'Beside his warhorse in a muddy field, a knight wears a heavy creased motorcycle jacket over his mail and fingerless gloves on his sword hand. No readable text or logo.',
       ],
     },
     'SP08-027': {
@@ -229,9 +229,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'skate brand graphics'],
       briefs: [
-        "Captured with a wide lens, a goblin in baggy corduroys, an oversized mustard tee and scuffed skate shoes ollies down the steps of a crumbling castle. No readable text or logo.",
-        "A woman in baggy jeans, an open flannel and a beanie sits on her board at the edge of a drained moat at golden hour. No readable text or logo.",
-        "An elderly man in an oversized hoodie and skate shoes carves through a stone courtyard while the palace guards pretend not to watch. No readable text or logo.",
+        'Captured with a wide lens, a goblin in baggy corduroys, an oversized mustard tee and scuffed skate shoes ollies down the steps of a crumbling castle. No readable text or logo.',
+        'A woman in baggy jeans, an open flannel and a beanie sits on her board at the edge of a drained moat at golden hour. No readable text or logo.',
+        'An elderly man in an oversized hoodie and skate shoes carves through a stone courtyard while the palace guards pretend not to watch. No readable text or logo.',
       ],
     },
     'SP08-028': {
@@ -249,9 +249,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A witch in a sage puff-sleeve prairie dress, linen apron and straw hat gathers mushrooms beside a mossy cottage in soft morning light. No readable text or logo.",
-        "A baker in a cream knitted cardigan and calico shirt carries an armful of loaves through a wildflower meadow, followed by hopeful rabbits. No readable text or logo.",
-        "At her garden gate an elderly woman in a butter-yellow smocked dress feeds a fawn from her palm while bluebirds perch along her straw hat brim. No readable text or logo.",
+        'A witch in a sage puff-sleeve prairie dress, linen apron and straw hat gathers mushrooms beside a mossy cottage in soft morning light. No readable text or logo.',
+        'A baker in a cream knitted cardigan and calico shirt carries an armful of loaves through a wildflower meadow, followed by hopeful rabbits. No readable text or logo.',
+        'At her garden gate an elderly woman in a butter-yellow smocked dress feeds a fawn from her palm while bluebirds perch along her straw hat brim. No readable text or logo.',
       ],
     },
     'SP08-029': {
@@ -269,9 +269,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A necromancer scholar in a tweed blazer, burgundy turtleneck and round wire glasses reads beside a skull in a candlelit library. No readable text or logo.",
-        "A woman in a long charcoal wool coat, sweater vest and oxfords walks through a foggy cloister with an armful of old books. No readable text or logo.",
-        "An elderly professor in corduroy and a forest-green cardigan feeds ravens on a college tower ledge at dusk. No readable text or logo.",
+        'A necromancer scholar in a tweed blazer, burgundy turtleneck and round wire glasses reads beside a skull in a candlelit library. No readable text or logo.',
+        'A woman in a long charcoal wool coat, sweater vest and oxfords walks through a foggy cloister with an armful of old books. No readable text or logo.',
+        'An elderly professor in corduroy and a forest-green cardigan feeds ravens on a college tower ledge at dusk. No readable text or logo.',
       ],
     },
     'SP08-030': {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A troll in fluorescent pink phat pants, a lime mesh tee, kandi bracelets and platform sneakers dances under UV lasers deep in a cavern. No readable text or logo.",
-        "A woman in a cyan crop top, fuzzy leg warmers and visor glows under black light at a rave inside a ruined cathedral. No readable text or logo.",
-        "An elderly man in fluorescent orange cargos and a bucket hat dances among laser beams in a stone hall, glow sticks in both fists. No readable text or logo.",
+        'A troll in fluorescent pink phat pants, a lime mesh tee, kandi bracelets and platform sneakers dances under UV lasers deep in a cavern. No readable text or logo.',
+        'A woman in a cyan crop top, fuzzy leg warmers and visor glows under black light at a rave inside a ruined cathedral. No readable text or logo.',
+        'An elderly man in fluorescent orange cargos and a bucket hat dances among laser beams in a stone hall, glow sticks in both fists. No readable text or logo.',
       ],
     },
   },
@@ -312,9 +312,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'band names'],
       briefs: [
-        "Caught in a high-angle flash, a vampire with a side-swept black-and-pink fringe, heavy eyeliner, skinny black jeans and a studded belt poses in a candlelit crypt. No readable text or logo.",
-        "A knight with a side-swept electric-blue fringe and a checkered scarf over his armor sulks on a spiral tower stair. No readable text or logo.",
-        "A ghost in a striped long sleeve, skinny jeans and worn canvas sneakers sits on her own gravestone, headphones on. No readable text or logo.",
+        'Caught in a high-angle flash, a vampire with a side-swept black-and-pink fringe, heavy eyeliner, skinny black jeans and a studded belt poses in a candlelit crypt. No readable text or logo.',
+        'A knight with a side-swept electric-blue fringe and a checkered scarf over his armor sulks on a spiral tower stair. No readable text or logo.',
+        'A ghost in a striped long sleeve, skinny jeans and worn canvas sneakers sits on her own gravestone, headphones on. No readable text or logo.',
       ],
     },
     {
@@ -334,9 +334,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real musician likeness'],
       briefs: [
-        "A demon prince in a purple brocade coat, lace cravat, buckles, teased silver hair and heavy eye makeup lounges on a ruined throne in dramatic rim light. No readable text or logo.",
-        "A woman in black PVC and feather layers with sculpted red hair plays violin on the roof of a moonlit clock tower. No readable text or logo.",
-        "Two performers in asymmetric white-and-silver costumes pose back to back in a flooded cathedral, their reflections wearing black. No readable text or logo.",
+        'A demon prince in a purple brocade coat, lace cravat, buckles, teased silver hair and heavy eye makeup lounges on a ruined throne in dramatic rim light. No readable text or logo.',
+        'A woman in black PVC and feather layers with sculpted red hair plays violin on the roof of a moonlit clock tower. No readable text or logo.',
+        'Two performers in asymmetric white-and-silver costumes pose back to back in a flooded cathedral, their reflections wearing black. No readable text or logo.',
       ],
     },
     {
@@ -356,8 +356,8 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'target logos with text'],
       briefs: [
-        "A sorceress in a black-and-white op-art shift dress, white go-go boots and a sharp bob poses inside a spiral stone stairwell that echoes her pattern. No readable text or logo.",
-        "A knight in a slim two-button mohair suit and narrow tie rides a scooter through a medieval market, his lance strapped to the back. No readable text or logo.",
+        'A sorceress in a black-and-white op-art shift dress, white go-go boots and a sharp bob poses inside a spiral stone stairwell that echoes her pattern. No readable text or logo.',
+        'A knight in a slim two-button mohair suit and narrow tie rides a scooter through a medieval market, his lance strapped to the back. No readable text or logo.',
         "An elderly woman in a mustard shift dress and patent boots stands on a ballroom's black-and-white checkered floor like the queen piece in a giant game. No readable text or logo.",
       ],
     },
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'licensed character toys'],
       briefs: [
-        "A witch covered in decora layers, dozens of pastel hair clips, a tutu over leggings and toy charms, rides her broom over a grey medieval town. No readable text or logo.",
-        "A dwarf in decora, layered candy hoodies, plush toy necklaces and rainbow hair clips, mines gems by the light of his glowing accessories. No readable text or logo.",
-        "An elderly woman in decora layers with a plush dragon backpack feeds ducks at a village pond, the ducks pecking at her hair clips. No readable text or logo.",
+        'A witch covered in decora layers, dozens of pastel hair clips, a tutu over leggings and toy charms, rides her broom over a grey medieval town. No readable text or logo.',
+        'A dwarf in decora, layered candy hoodies, plush toy necklaces and rainbow hair clips, mines gems by the light of his glowing accessories. No readable text or logo.',
+        'An elderly woman in decora layers with a plush dragon backpack feeds ducks at a village pond, the ducks pecking at her hair clips. No readable text or logo.',
       ],
     },
     {
@@ -400,9 +400,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'band names', 'readable patch text'],
       briefs: [
-        "Under concert light a long-haired barbarian in a patch-covered denim battle vest, bullet belt and high-tops headbangs on a battlefield of burning banners. No readable text or logo.",
-        "An elderly woman in a studded leather battle vest covered in wordless dragon patches knits calmly in a rocking chair. No readable text or logo.",
-        "A monk in a denim battle vest over his robes throws the horns in a candlelit cloister. No readable text or logo.",
+        'Under concert light a long-haired barbarian in a patch-covered denim battle vest, bullet belt and high-tops headbangs on a battlefield of burning banners. No readable text or logo.',
+        'An elderly woman in a studded leather battle vest covered in wordless dragon patches knits calmly in a rocking chair. No readable text or logo.',
+        'A monk in a denim battle vest over his robes throws the horns in a candlelit cloister. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

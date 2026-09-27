@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'poncle Vampire Survivors (2022) look: retro gothic pixel sprites, a tiny hero swarmed by thousands of enemies, screen-filling weapon effects, gems and chaotic bullet-heaven density.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny pixel sprite swarmed by thousands of pixel enemies. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Gothic pixel greens, gem blue and weapon white.
-  lighting_and_shadow: "Flat pixel colors with bright flashing weapon effects everywhere."
-  texture_and_material: "Chunky retro pixel sprites on a plain repeating grass or stone floor."
+  lighting_and_shadow: 'Flat pixel colors with bright flashing weapon effects everywhere.'
+  texture_and_material: 'Chunky retro pixel sprites on a plain repeating grass or stone floor.'
   camera_and_composition: Top-down swarm view, framed the way Vampire Survivors 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic addictive frenzy.
-  rendering_and_quality: "A 2022 PC frame: one tiny sprite in the center surrounded by hundreds of pixel monsters and swirling projectiles."
-  creative_brief: 'poncle Vampire Survivors (2022) look: retro gothic pixel sprites, a tiny hero swarmed by thousands of enemies, screen-filling weapon effects, gems and chaotic bullet-heaven density. Carry it through Vampire Survivors swarm, pixel sprites, weapon chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2022 PC frame: one tiny sprite in the center surrounded by hundreds of pixel monsters and swirling projectiles.'
+  creative_brief: "poncle Vampire Survivors (2022) look: retro gothic pixel sprites, a tiny hero swarmed by thousands of enemies, screen-filling weapon effects, gems and chaotic bullet-heaven density. Carry it through Vampire Survivors swarm, pixel sprites, weapon chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Vampire Survivors swarm; pixel sprites; weapon chaos
 avoidRules:
   - existing franchise characters

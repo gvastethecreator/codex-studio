@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frieze on a tomb wall, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with festive otherworld mystery.
   rendering_and_quality: Lively ancient fresco, kept consistent across the whole image.
-  creative_brief: 'Etruscan tomb fresco: lively painted tomb walls with banqueting couples, dancers, blue-skinned underworld demons with hammers and winged guides of the dead. Carry it through tomb fresco, banquet, underworld demon, winged guide. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Etruscan tomb fresco: lively painted tomb walls with banqueting couples, dancers, blue-skinned underworld demons with hammers and winged guides of the dead. Carry it through tomb fresco, banquet, underworld demon, winged guide. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tomb fresco; banquet; underworld demon; winged guide
 avoidRules:
   - cultural stereotypes or caricature

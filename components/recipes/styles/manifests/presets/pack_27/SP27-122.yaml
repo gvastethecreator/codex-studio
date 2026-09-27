@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Level documentary framing with crowds held behind barriers.
   atmosphere_and_mood: Keep the requested mood with calm cold war unease.
   rendering_and_quality: Authentic early-fifties black-and-white science fiction frame, in the recognizable hand of The Day the Earth Stood Still 1951.
-  creative_brief: 'Robert Wise The Day the Earth Stood Still (1951) look: crisp black-and-white Washington streets, a smooth saucer on a park lawn, Bernard Herrmann theremin unease and calm documentary staging. Carry it through Wise realism, saucer on the lawn, crowds, theremin unease. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Robert Wise The Day the Earth Stood Still (1951) look: crisp black-and-white Washington streets, a smooth saucer on a park lawn, Bernard Herrmann theremin unease and calm documentary staging. Carry it through Wise realism, saucer on the lawn, crowds, theremin unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Wise realism; saucer on the lawn; crowds; theremin unease
 avoidRules:
   - a tall silver robot with a visor slit

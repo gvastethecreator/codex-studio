@@ -41,9 +41,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A shepherd leading a flock of long-horned sheep down a rocky mountain track at golden hour, low sun behind them turning the dust and fleece into glowing amber rims, long shadows stretching toward the lens. No text or logo.",
-        "A vintner lifting a wicker basket of dark grapes between vineyard rows at golden hour, the low sun behind her turning grape skins, vine leaves and loose hair translucent amber, lavender shadows between the rows. No text or logo.",
-        "An old ropemaker walking backward along a harbor quay twisting long hemp strands, the sun almost touching the sea behind him, every loose fiber rimmed in gold and his shadow stretching down the stones. No text or logo.",
+        'A shepherd leading a flock of long-horned sheep down a rocky mountain track at golden hour, low sun behind them turning the dust and fleece into glowing amber rims, long shadows stretching toward the lens. No text or logo.',
+        'A vintner lifting a wicker basket of dark grapes between vineyard rows at golden hour, the low sun behind her turning grape skins, vine leaves and loose hair translucent amber, lavender shadows between the rows. No text or logo.',
+        'An old ropemaker walking backward along a harbor quay twisting long hemp strands, the sun almost touching the sea behind him, every loose fiber rimmed in gold and his shadow stretching down the stones. No text or logo.',
       ],
     },
     'SP01-032': {
@@ -67,9 +67,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A small stone castle on a sea stack at blue hour, lanterns just lit in its windows, cobalt sky and calm violet sea reflecting both. No text or logo.",
-        "A night-watchman lighting the first street lamp of a cobbled medieval lane at blue hour, deep blue sky above the rooftops, warm flame on his face. No text or logo.",
-        "An ice fisher sitting beside a small fire on a frozen lake at blue hour, the snow and ice glowing cobalt, the fire the only warm light. No text or logo.",
+        'A small stone castle on a sea stack at blue hour, lanterns just lit in its windows, cobalt sky and calm violet sea reflecting both. No text or logo.',
+        'A night-watchman lighting the first street lamp of a cobbled medieval lane at blue hour, deep blue sky above the rooftops, warm flame on his face. No text or logo.',
+        'An ice fisher sitting beside a small fire on a frozen lake at blue hour, the snow and ice glowing cobalt, the fire the only warm light. No text or logo.',
       ],
     },
     'SP01-033': {
@@ -93,9 +93,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'daylight scene without flash'],
       briefs: [
-        "A grave robber caught climbing out of an open grave with a lantern and shovel is blasted white by an on-camera flash, a crisp black shadow slapped onto the tombstone behind. No readable text or logo.",
-        "Two festival-goers in horned masks laugh in a crowded tent, sweat and glitter flaring in the direct flash and hard shadows stamped on the canvas. No readable text or logo.",
-        "At 3 a.m. a cook holds up a live lobster in a steel kitchen, the flash bouncing hot off every surface and a black shadow on the tiled wall. No readable text or logo.",
+        'A grave robber caught climbing out of an open grave with a lantern and shovel is blasted white by an on-camera flash, a crisp black shadow slapped onto the tombstone behind. No readable text or logo.',
+        'Two festival-goers in horned masks laugh in a crowded tent, sweat and glitter flaring in the direct flash and hard shadows stamped on the canvas. No readable text or logo.',
+        'At 3 a.m. a cook holds up a live lobster in a steel kitchen, the flash bouncing hot off every surface and a black shadow on the tiled wall. No readable text or logo.',
       ],
     },
     'SP01-034': {
@@ -117,9 +117,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A sword-for-hire in a long waxed coat shelters in a rain-soaked alley, magenta light from one side and teal from the other splitting her face down the middle. No readable text or logo.",
-        "A fortune-teller in a tiny booth leans over a crystal ball glowing teal, magenta curtain light behind her and smoke curling through both colors. No readable text or logo.",
-        "A vintage motorcycle and its rider wait under an overpass in heavy rain, teal and magenta spilling across the chrome and every puddle. No readable text or logo.",
+        'A sword-for-hire in a long waxed coat shelters in a rain-soaked alley, magenta light from one side and teal from the other splitting her face down the middle. No readable text or logo.',
+        'A fortune-teller in a tiny booth leans over a crystal ball glowing teal, magenta curtain light behind her and smoke curling through both colors. No readable text or logo.',
+        'A vintage motorcycle and its rider wait under an overpass in heavy rain, teal and magenta spilling across the chrome and every puddle. No readable text or logo.',
       ],
     },
     'SP01-035': {
@@ -142,9 +142,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An old cartographer studies a large blank vellum map through a magnifying lens, a warm key high on the left leaving a small triangle of light on his shadowed cheek. No readable text or logo.",
-        "A swordsmith examines the edge of a curved blade under warm high side light, a lit triangle on his far cheek and umber shadows everywhere else. No readable text or logo.",
-        "A nun in a black habit holds an iron key by a single warm window, one small triangle of light glowing on the dark side of her face. No readable text or logo.",
+        'An old cartographer studies a large blank vellum map through a magnifying lens, a warm key high on the left leaving a small triangle of light on his shadowed cheek. No readable text or logo.',
+        'A swordsmith examines the edge of a curved blade under warm high side light, a lit triangle on his far cheek and umber shadows everywhere else. No readable text or logo.',
+        'A nun in a black habit holds an iron key by a single warm window, one small triangle of light glowing on the dark side of her face. No readable text or logo.',
       ],
     },
     'SP01-036': {
@@ -165,9 +165,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A masked duelist is cut exactly in half by a hard side light, half her face and half her porcelain mask lit, the other half gone to darkness. No readable text or logo.",
-        "An ancient bronze helmet on a stand shows only half its dents and engraving, the other half swallowed by black. No readable text or logo.",
-        "A mercenary with a ritual-scarred shaved scalp and one gold earring is lit on one side only, a clean dividing line running down his nose. No readable text or logo.",
+        'A masked duelist is cut exactly in half by a hard side light, half her face and half her porcelain mask lit, the other half gone to darkness. No readable text or logo.',
+        'An ancient bronze helmet on a stand shows only half its dents and engraving, the other half swallowed by black. No readable text or logo.',
+        'A mercenary with a ritual-scarred shaved scalp and one gold earring is lit on one side only, a clean dividing line running down his nose. No readable text or logo.',
       ],
     },
     'SP01-037': {
@@ -191,9 +191,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'front-lit subject'],
       briefs: [
-        "A swordsman stands in the doorway of a burning barn, his outline and blade pure black against the blazing orange fire with a thin glowing edge. No readable text or logo.",
-        "A herd of wild horses crests a dune against a white-hot desert sun, dust glowing around their pure black shapes. No readable text or logo.",
-        "A diver climbs a ladder out of the sea at sunrise, a black shape with every drop on her outline catching the light. No readable text or logo.",
+        'A swordsman stands in the doorway of a burning barn, his outline and blade pure black against the blazing orange fire with a thin glowing edge. No readable text or logo.',
+        'A herd of wild horses crests a dune against a white-hot desert sun, dust glowing around their pure black shapes. No readable text or logo.',
+        'A diver climbs a ladder out of the sea at sunrise, a black shape with every drop on her outline catching the light. No readable text or logo.',
       ],
     },
     'SP01-038': {
@@ -215,9 +215,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A queen in a tall silver crown and high lace collar faces the lens under a key centered above it, a small symmetrical shadow beneath her nose in a dark throne room. No readable text or logo.",
-        "A court harpist with a pearl-studded hairnet and high brocade collar lets the harp neck curve beside her face, a high frontal key sculpting her cheekbones. No readable text or logo.",
-        "A fencer with slicked-back hair holds his foil upright between his eyes, a high centered key carving clean symmetrical shadows against black. No readable text or logo.",
+        'A queen in a tall silver crown and high lace collar faces the lens under a key centered above it, a small symmetrical shadow beneath her nose in a dark throne room. No readable text or logo.',
+        'A court harpist with a pearl-studded hairnet and high brocade collar lets the harp neck curve beside her face, a high frontal key sculpting her cheekbones. No readable text or logo.',
+        'A fencer with slicked-back hair holds his foil upright between his eyes, a high centered key carving clean symmetrical shadows against black. No readable text or logo.',
       ],
     },
     'SP01-039': {
@@ -262,9 +262,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A pilgrim kneeling on the floor of a ruined cathedral as shafts of morning sun pour through broken stained-glass windows into incense smoke, beams crossing her shoulders. No text or logo.",
-        "A woodcutter stopping in a foggy pine forest as sun beams slant between the trunks, his breath and the sawdust glowing in the shafts. No text or logo.",
-        "A weaver at a huge upright loom in a dim timber barn, hard beams from gaps in the planks cutting through floating lint and across the taut warp threads. No text or logo.",
+        'A pilgrim kneeling on the floor of a ruined cathedral as shafts of morning sun pour through broken stained-glass windows into incense smoke, beams crossing her shoulders. No text or logo.',
+        'A woodcutter stopping in a foggy pine forest as sun beams slant between the trunks, his breath and the sawdust glowing in the shafts. No text or logo.',
+        'A weaver at a huge upright loom in a dim timber barn, hard beams from gaps in the planks cutting through floating lint and across the taut warp threads. No text or logo.',
       ],
     },
     'SP01-041': {
@@ -286,9 +286,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A swimmer floating on her back in a black lagoon, bioluminescent plankton glowing cyan around every movement of her arms. No text or logo.",
-        "A forager kneeling in a dark forest among glowing green bioluminescent mushrooms, the fungi lighting his hands and face from below. No text or logo.",
-        "An old wooden rowboat drifting through a cave where glowworms cover the ceiling like stars, their blue light reflected in the still water. No text or logo.",
+        'A swimmer floating on her back in a black lagoon, bioluminescent plankton glowing cyan around every movement of her arms. No text or logo.',
+        'A forager kneeling in a dark forest among glowing green bioluminescent mushrooms, the fungi lighting his hands and face from below. No text or logo.',
+        'An old wooden rowboat drifting through a cave where glowworms cover the ceiling like stars, their blue light reflected in the still water. No text or logo.',
       ],
     },
     'SP01-042': {
@@ -311,9 +311,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A warrior smashes a clay jar with a war hammer, shards and dust suspended mid-air around the head by one hard side burst of light. No readable text or logo.",
-        "A raven bursts off a wet branch, every drop flung from its wings frozen in the air against black. No readable text or logo.",
-        "A war drummer strikes a drum skin flooded with water, a crown of droplets frozen mid-leap around the mallet. No readable text or logo.",
+        'A warrior smashes a clay jar with a war hammer, shards and dust suspended mid-air around the head by one hard side burst of light. No readable text or logo.',
+        'A raven bursts off a wet branch, every drop flung from its wings frozen in the air against black. No readable text or logo.',
+        'A war drummer strikes a drum skin flooded with water, a crown of droplets frozen mid-leap around the mallet. No readable text or logo.',
       ],
     },
     'SP01-043': {
@@ -334,9 +334,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An elderly bald theatre makeup artist with a white goatee glues prosthetic goblin ears onto his own head, a perfect circle of light reflected in both eyes. No readable text or logo.",
+        'An elderly bald theatre makeup artist with a white goatee glues prosthetic goblin ears onto his own head, a perfect circle of light reflected in both eyes. No readable text or logo.',
         "A heavily tattooed bearded man inspects a fresh dragon tattoo on his client's forearm under shadowless frontal light, a ring catchlight in his eyes. No readable text or logo.",
-        "An antique brass pocket watch lies open on black velvet, its crystal and gears reflecting one perfect ring of light. No readable text or logo.",
+        'An antique brass pocket watch lies open on black velvet, its crystal and gears reflecting one perfect ring of light. No readable text or logo.',
       ],
     },
     'SP01-044': {
@@ -358,9 +358,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'readable projected text'],
       briefs: [
-        "A dancer in a white dress with a projected stained-glass rose window wrapping across her body and the wall behind, her shadow cutting a hole in the pattern. No readable text or logo.",
-        "An astronomer in a plain hooded wool robe lit only by a projected star map that bends over his hood, face and raised hands, dark round tower room. No text or logo.",
-        "An old man sitting in an armchair while projected ocean waves ripple across his face, sweater and the wallpaper behind him. No text or logo.",
+        'A dancer in a white dress with a projected stained-glass rose window wrapping across her body and the wall behind, her shadow cutting a hole in the pattern. No readable text or logo.',
+        'An astronomer in a plain hooded wool robe lit only by a projected star map that bends over his hood, face and raised hands, dark round tower room. No text or logo.',
+        'An old man sitting in an armchair while projected ocean waves ripple across his face, sweater and the wallpaper behind him. No text or logo.',
       ],
     },
     'SP01-045': {
@@ -383,9 +383,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A figure in a wizard costume stands perfectly still in a ruined stone circle at night while a spiral of golden trails swirls around him and up into the sky. No readable text or logo.",
-        "A storm of spinning steel-wool sparks fills an abandoned mill, bouncing off the stone floor around a figure in a long coat. No readable text or logo.",
-        "An old wooden windmill stands in a dark field while a ribbon of blue and red light is drawn around its still sails like a flowing banner. No readable text or logo.",
+        'A figure in a wizard costume stands perfectly still in a ruined stone circle at night while a spiral of golden trails swirls around him and up into the sky. No readable text or logo.',
+        'A storm of spinning steel-wool sparks fills an abandoned mill, bouncing off the stone floor around a figure in a long coat. No readable text or logo.',
+        'An old wooden windmill stands in a dark field while a ribbon of blue and red light is drawn around its still sails like a flowing banner. No readable text or logo.',
       ],
     },
   },
@@ -411,9 +411,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An elf-costumed archer resting against a mossy oak, sun filtered through the canopy scattering bright dapples across her face, bow and cloak. No text or logo.",
-        "An old beekeeper walking between hives under an orchard canopy, coin-shaped patches of sunlight moving over his veil and hands. No text or logo.",
-        "A sleeping adult knight lying in tall grass under a birch tree, dappled light across his armor and face. No text or logo.",
+        'An elf-costumed archer resting against a mossy oak, sun filtered through the canopy scattering bright dapples across her face, bow and cloak. No text or logo.',
+        'An old beekeeper walking between hives under an orchard canopy, coin-shaped patches of sunlight moving over his veil and hands. No text or logo.',
+        'A sleeping adult knight lying in tall grass under a birch tree, dappled light across his armor and face. No text or logo.',
       ],
     },
     {
@@ -438,9 +438,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A storyteller holding a lantern under his chin to tell a ghost story around a campfire, shadows climbing over his brows, a circle of adult listeners dark around him. No text or logo.",
-        "A witch leaning over a bubbling cauldron, sickly green light from the brew lighting her face from below. No text or logo.",
-        "A museum night guard kneeling beside a fallen oil lamp at the foot of a suit of armor, the lamp lighting his face and the empty helmet above him from below. No text or logo.",
+        'A storyteller holding a lantern under his chin to tell a ghost story around a campfire, shadows climbing over his brows, a circle of adult listeners dark around him. No text or logo.',
+        'A witch leaning over a bubbling cauldron, sickly green light from the brew lighting her face from below. No text or logo.',
+        'A museum night guard kneeling beside a fallen oil lamp at the foot of a suit of armor, the lamp lighting his face and the empty helmet above him from below. No text or logo.',
       ],
     },
     {
@@ -464,9 +464,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An actor in a paper crown kneeling alone on a dark stage inside a hard circular spotlight, holding a skull, beam visible in the haze above. No text or logo.",
-        "A juggler of flaming torches standing in a single white follow spot in a circus tent, darkness all around, sparks falling. No text or logo.",
-        "A ballerina in a torn black tutu frozen in an arabesque inside a narrow white spotlight, the edge of the pool cutting across her pointe shoe. No text or logo.",
+        'An actor in a paper crown kneeling alone on a dark stage inside a hard circular spotlight, holding a skull, beam visible in the haze above. No text or logo.',
+        'A juggler of flaming torches standing in a single white follow spot in a circus tent, darkness all around, sparks falling. No text or logo.',
+        'A ballerina in a torn black tutu frozen in an arabesque inside a narrow white spotlight, the edge of the pool cutting across her pointe shoe. No text or logo.',
       ],
     },
     {
@@ -515,9 +515,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A ship captain gripping the wheel in a storm at sea as a lightning bolt strikes behind the mast, blue-white light freezing the rain and spray around him. No text or logo.",
-        "A bell-ringer hauling on a rope in an open stone belfry as lightning splits the valley behind, the flash freezing rain and the swinging bronze bell. No text or logo.",
-        "A lone dead oak on a moor lit for an instant by a lightning strike, its bare branches and the sheets of rain around it flashing white. No text or logo.",
+        'A ship captain gripping the wheel in a storm at sea as a lightning bolt strikes behind the mast, blue-white light freezing the rain and spray around him. No text or logo.',
+        'A bell-ringer hauling on a rope in an open stone belfry as lightning splits the valley behind, the flash freezing rain and the swinging bronze bell. No text or logo.',
+        'A lone dead oak on a moor lit for an instant by a lightning strike, its bare branches and the sheets of rain around it flashing white. No text or logo.',
       ],
     },
   ],

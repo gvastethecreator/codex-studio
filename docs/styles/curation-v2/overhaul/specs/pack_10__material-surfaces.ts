@@ -31,9 +31,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At a busy cafe the counter and bar stools are finished in polished speckled stone, terracotta, green and white chips scattered through the cement. No readable text or logo.",
-        "On a museum plinth a giant egg of polished composite stone flecks marble, glass and brass chips across its curve. No readable text or logo.",
-        "In a park a public drinking fountain cast in speckled polished stone glints with blue and white glass chips as water splashes. No readable text or logo.",
+        'At a busy cafe the counter and bar stools are finished in polished speckled stone, terracotta, green and white chips scattered through the cement. No readable text or logo.',
+        'On a museum plinth a giant egg of polished composite stone flecks marble, glass and brass chips across its curve. No readable text or logo.',
+        'In a park a public drinking fountain cast in speckled polished stone glints with blue and white glass chips as water splashes. No readable text or logo.',
       ],
     },
     'SP10-054': {
@@ -48,9 +48,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A black stone panther sculpture is polished to a mirror, dramatic gold veins sweeping along its body like lightning. No readable text or logo.",
-        "In an old spa a green stone bathtub shows white veins flowing across its curves as steam rises from the water. No readable text or logo.",
-        "In a grand hotel lobby a pink stone staircase curves upward, flowing grey veins running across every polished step. No readable text or logo.",
+        'A black stone panther sculpture is polished to a mirror, dramatic gold veins sweeping along its body like lightning. No readable text or logo.',
+        'In an old spa a green stone bathtub shows white veins flowing across its curves as steam rises from the water. No readable text or logo.',
+        'In a grand hotel lobby a pink stone staircase curves upward, flowing grey veins running across every polished step. No readable text or logo.',
       ],
     },
     'SP10-055': {
@@ -66,8 +66,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A carved owl's bold grain lines flow around its eyes like feathers, a dark knot forming one pupil. No readable text or logo.",
-        "On a lakeside dock at sunset a freshly oiled canoe shows bold flowing grain and knots along its hull. No readable text or logo.",
-        "In a quiet attic an old toy chest shows swirling honey-toned grain on its lid, two knots staring up like eyes. No readable text or logo.",
+        'On a lakeside dock at sunset a freshly oiled canoe shows bold flowing grain and knots along its hull. No readable text or logo.',
+        'In a quiet attic an old toy chest shows swirling honey-toned grain on its lid, two knots staring up like eyes. No readable text or logo.',
       ],
     },
     'SP10-056': {
@@ -83,9 +83,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Under strip lights a racing bicycle frame shows glossy black twill weave shifting as the light slides along the tubes. No readable text or logo.",
-        "On a marble desk a briefcase in glossy black woven fiber catches a single desk lamp in its twill. No readable text or logo.",
-        "In a dark studio a cello of glossy black woven fiber shows the twill following every curve. No readable text or logo.",
+        'Under strip lights a racing bicycle frame shows glossy black twill weave shifting as the light slides along the tubes. No readable text or logo.',
+        'On a marble desk a briefcase in glossy black woven fiber catches a single desk lamp in its twill. No readable text or logo.',
+        'In a dark studio a cello of glossy black woven fiber shows the twill following every curve. No readable text or logo.',
       ],
     },
     'SP10-059': {
@@ -100,9 +100,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a travel desk a vintage camera case in pebbled black hide shows saddle stitching and worn corners. No readable text or logo.",
-        "On a fence rail a tooled saddle shows embossed floral patterns and stitching along the skirt in warm ranch light. No readable text or logo.",
-        "On a train platform a traveling trunk with brass corners shows pebbled grain and neat hand stitching. No readable text or logo.",
+        'On a travel desk a vintage camera case in pebbled black hide shows saddle stitching and worn corners. No readable text or logo.',
+        'On a fence rail a tooled saddle shows embossed floral patterns and stitching along the skirt in warm ranch light. No readable text or logo.',
+        'On a train platform a traveling trunk with brass corners shows pebbled grain and neat hand stitching. No readable text or logo.',
       ],
     },
     'SP10-060': {
@@ -117,9 +117,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On black velvet a skull coated in dense gold sparkle shines under a spotlight, loose flecks scattered around it. No readable text or logo.",
-        "On a rink floor a roller skate coated in dense silver sparkle scatters light under colored bulbs. No readable text or logo.",
-        "On a stage stool a trumpet coated in violet sparkle catches the spotlight in a thousand points. No readable text or logo.",
+        'On black velvet a skull coated in dense gold sparkle shines under a spotlight, loose flecks scattered around it. No readable text or logo.',
+        'On a rink floor a roller skate coated in dense silver sparkle scatters light under colored bulbs. No readable text or logo.',
+        'On a stage stool a trumpet coated in violet sparkle catches the spotlight in a thousand points. No readable text or logo.',
       ],
     },
     'SP10-061': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A garden gate is patterned with decorative orange blooms of oxidation streaking down from each scroll. No readable text or logo.",
-        "Autumn leaves settle on a steel park bench whose slats are patterned with decorative orange oxidation blooms and long dripping streaks like a painted map. No readable text or logo.",
-        "In a tower hangs a large bell patterned with orange oxidation blooms running down its lip. No readable text or logo.",
+        'A garden gate is patterned with decorative orange blooms of oxidation streaking down from each scroll. No readable text or logo.',
+        'Autumn leaves settle on a steel park bench whose slats are patterned with decorative orange oxidation blooms and long dripping streaks like a painted map. No readable text or logo.',
+        'In a tower hangs a large bell patterned with orange oxidation blooms running down its lip. No readable text or logo.',
       ],
     },
     'SP10-062': {
@@ -151,9 +151,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a pit lane a racing suit wrapped in rainbow diffraction foil shifts from magenta to green as the driver turns. No readable text or logo.",
-        "A whale-shaped balloon covered in rainbow diffraction foil floats over a festival, colors rippling across its body. No readable text or logo.",
-        "On a white table a gift box wrapped in rainbow foil shifts color across every face. No readable text or logo.",
+        'In a pit lane a racing suit wrapped in rainbow diffraction foil shifts from magenta to green as the driver turns. No readable text or logo.',
+        'A whale-shaped balloon covered in rainbow diffraction foil floats over a festival, colors rippling across its body. No readable text or logo.',
+        'On a white table a gift box wrapped in rainbow foil shifts color across every face. No readable text or logo.',
       ],
     },
     'SP10-063': {
@@ -169,9 +169,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a lake shore a swan sculpture covered in tiny interlocking metal rings shimmers like wet feathers. No readable text or logo.",
-        "On a kitchen table a teapot surfaced in interlocking metal rings catches window light as steam rises. No readable text or logo.",
-        "On a velvet stand a carnival mask of fine interlocking rings forms brows and nose from linked metal. No readable text or logo.",
+        'On a lake shore a swan sculpture covered in tiny interlocking metal rings shimmers like wet feathers. No readable text or logo.',
+        'On a kitchen table a teapot surfaced in interlocking metal rings catches window light as steam rises. No readable text or logo.',
+        'On a velvet stand a carnival mask of fine interlocking rings forms brows and nose from linked metal. No readable text or logo.',
       ],
     },
     'SP10-064': {
@@ -186,9 +186,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a porch a pair of cowboy boots in python-patterned hide shows bold scale markings and a soft sheen. No readable text or logo.",
-        "In a jazz lounge an armchair patterned in bold reptile diamonds curves around a sleeping bass player. No readable text or logo.",
-        "In a smoky club an electric guitar with a black and gold reptile finish leans against an amplifier. No readable text or logo.",
+        'On a porch a pair of cowboy boots in python-patterned hide shows bold scale markings and a soft sheen. No readable text or logo.',
+        'In a jazz lounge an armchair patterned in bold reptile diamonds curves around a sleeping bass player. No readable text or logo.',
+        'In a smoky club an electric guitar with a black and gold reptile finish leans against an amplifier. No readable text or logo.',
       ],
     },
     'SP10-071': {
@@ -203,9 +203,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a tatami mat a broken tea bowl is repaired with gold-filled seams branching like rivers across its glaze. No readable text or logo.",
-        "A ceramic fox mask that once shattered on a festival night is mended with bright gold seams running across its snout, cheeks and narrow eyes. No readable text or logo.",
-        "Beside a single candle in a dark study, a cracked porcelain skull glows along branching golden repair seams that trace every old fracture. No readable text or logo.",
+        'On a tatami mat a broken tea bowl is repaired with gold-filled seams branching like rivers across its glaze. No readable text or logo.',
+        'A ceramic fox mask that once shattered on a festival night is mended with bright gold seams running across its snout, cheeks and narrow eyes. No readable text or logo.',
+        'Beside a single candle in a dark study, a cracked porcelain skull glows along branching golden repair seams that trace every old fracture. No readable text or logo.',
       ],
     },
   },
@@ -225,9 +225,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a rough stone plinth a vase shows crackled white glaze, smoky black craze lines and copper metallic flashes. No readable text or logo.",
-        "On a gallery pedestal a horse head sculpture shows white glaze split by a dense web of smoky black lines. No readable text or logo.",
-        "On a mossy garden wall at dusk a fired owl sits with heavy carbon smoke staining its lower half black. No readable text or logo.",
+        'On a rough stone plinth a vase shows crackled white glaze, smoky black craze lines and copper metallic flashes. No readable text or logo.',
+        'On a gallery pedestal a horse head sculpture shows white glaze split by a dense web of smoky black lines. No readable text or logo.',
+        'On a mossy garden wall at dusk a fired owl sits with heavy carbon smoke staining its lower half black. No readable text or logo.',
       ],
     },
     {
@@ -246,8 +246,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a cutting board a chef's knife shows flowing etched wave patterns along its blade beside fresh herbs. No readable text or logo.",
-        "Open on a velvet cloth, a pocket watch case of layered steel shows flowing etched waves. No readable text or logo.",
-        "On a mossy river stone rest two wedding rings of layered steel, etched swirls in grey and silver. No readable text or logo.",
+        'Open on a velvet cloth, a pocket watch case of layered steel shows flowing etched waves. No readable text or logo.',
+        'On a mossy river stone rest two wedding rings of layered steel, etched swirls in grey and silver. No readable text or logo.',
       ],
     },
     {
@@ -265,9 +265,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a workbench a turned bowl shows swirling chaotic grain and clusters of eyes under a glossy oil finish. No readable text or logo.",
-        "Inside a vintage car the dashboard shows swirling figured wood and eye clusters under glossy lacquer. No readable text or logo.",
-        "Under stage lights a guitar body glows with swirling figured wood and dark eye clusters deep beneath its glossy honey finish. No readable text or logo.",
+        'On a workbench a turned bowl shows swirling chaotic grain and clusters of eyes under a glossy oil finish. No readable text or logo.',
+        'Inside a vintage car the dashboard shows swirling figured wood and eye clusters under glossy lacquer. No readable text or logo.',
+        'Under stage lights a guitar body glows with swirling figured wood and dark eye clusters deep beneath its glossy honey finish. No readable text or logo.',
       ],
     },
     {
@@ -285,9 +285,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On slate rests a pendant of layered copper, silver and gold forming wood-grain patterns in metal. No readable text or logo.",
-        "On velvet a ring of layered mixed metals swirls like wood grain in pink and grey. No readable text or logo.",
-        "On dark cloth a sword guard of layered copper and silver shows a grain pattern like polished driftwood. No readable text or logo.",
+        'On slate rests a pendant of layered copper, silver and gold forming wood-grain patterns in metal. No readable text or logo.',
+        'On velvet a ring of layered mixed metals swirls like wood grain in pink and grey. No readable text or logo.',
+        'On dark cloth a sword guard of layered copper and silver shows a grain pattern like polished driftwood. No readable text or logo.',
       ],
     },
     {
@@ -306,8 +306,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A bathroom's walls and sunken tub are finished in burnished terracotta plaster with a soft cloudy sheen. No readable text or logo.",
-        "A sink and niche in pale sand plaster glow with a soft burnished sheen and subtle cloudy variation. No readable text or logo.",
-        "In a courtyard a curved bench of burnished ochre plaster shows soft cloudy variation in the late sun. No readable text or logo.",
+        'A sink and niche in pale sand plaster glow with a soft burnished sheen and subtle cloudy variation. No readable text or logo.',
+        'In a courtyard a curved bench of burnished ochre plaster shows soft cloudy variation in the late sun. No readable text or logo.',
       ],
     },
     {
@@ -325,9 +325,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A koi fish vase glows in turquoise and coral enamel fields separated by fine gold wire cells. No readable text or logo.",
-        "On a gold stand an egg shows glossy cobalt and white enamel fields divided by gold wire. No readable text or logo.",
-        "An incense burner glows in glossy green and red enamel cells outlined by fine gold wire. No readable text or logo.",
+        'A koi fish vase glows in turquoise and coral enamel fields separated by fine gold wire cells. No readable text or logo.',
+        'On a gold stand an egg shows glossy cobalt and white enamel fields divided by gold wire. No readable text or logo.',
+        'An incense burner glows in glossy green and red enamel cells outlined by fine gold wire. No readable text or logo.',
       ],
     },
     {
@@ -346,8 +346,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Held open in a jeweler's palm, a pocket watch dial shows engine-turned sunburst grooves glowing beneath translucent blue enamel as it tilts. No readable text or logo.",
-        "On a mirrored vanity a compact case shows repeating machine-engraved waves shimmering beneath a thin layer of translucent pink enamel. No readable text or logo.",
-        "On an old leather desk blotter a fountain pen shows machine-cut waves glowing along its barrel. No readable text or logo.",
+        'On a mirrored vanity a compact case shows repeating machine-engraved waves shimmering beneath a thin layer of translucent pink enamel. No readable text or logo.',
+        'On an old leather desk blotter a fountain pen shows machine-cut waves glowing along its barrel. No readable text or logo.',
       ],
     },
     {
@@ -365,9 +365,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A black lacquered helmet decorated with gold cranes reflects a paper lantern in its deep glossy surface. No readable text or logo.",
-        "On a low table a vermilion lacquered writing box lies open, gold maple leaves drifting across its lid. No readable text or logo.",
-        "On a tatami mat a black lacquered tiered food box is scattered with fine gold flecks like stars. No readable text or logo.",
+        'A black lacquered helmet decorated with gold cranes reflects a paper lantern in its deep glossy surface. No readable text or logo.',
+        'On a low table a vermilion lacquered writing box lies open, gold maple leaves drifting across its lid. No readable text or logo.',
+        'On a tatami mat a black lacquered tiered food box is scattered with fine gold flecks like stars. No readable text or logo.',
       ],
     },
     {
@@ -386,8 +386,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On an old iron stove a copper kettle's hundreds of dimpled facets glint orange and pink in the flame. No readable text or logo.",
-        "Under a window of herbs a brass farmhouse sink scatters morning light from its hand-dimpled facets. No readable text or logo.",
-        "On a long oak tavern table a pewter goblet glows softly in candlelight, its dimpled facets catching a spilled drop. No readable text or logo.",
+        'Under a window of herbs a brass farmhouse sink scatters morning light from its hand-dimpled facets. No readable text or logo.',
+        'On a long oak tavern table a pewter goblet glows softly in candlelight, its dimpled facets catching a spilled drop. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

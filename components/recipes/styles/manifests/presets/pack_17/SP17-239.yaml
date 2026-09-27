@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vignetted heroic figure framing, framed the way Chris Achilleos composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with glamorous heroic bravado.
   rendering_and_quality: Glossy airbrushed fantasy illustration, in the recognizable hand of Chris Achilleos.
-  creative_brief: 'Chris Achilleos fantasy art: glossy airbrushed heroic figures, precise ornate armor and costume detail, bright vignetted backgrounds and seventies and eighties fantasy glamour. Carry it through Achilleos airbrush, ornate armor, vignette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Chris Achilleos fantasy art: glossy airbrushed heroic figures, precise ornate armor and costume detail, bright vignetted backgrounds and seventies and eighties fantasy glamour. Carry it through Achilleos airbrush, ornate armor, vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Achilleos airbrush; ornate armor; vignette
 avoidRules:
   - existing franchise characters

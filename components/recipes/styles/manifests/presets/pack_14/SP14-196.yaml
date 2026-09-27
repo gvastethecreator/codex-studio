@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close view of a beast head post, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ferocious ritual guardianship.
   rendering_and_quality: Intricate ferocious carving, kept consistent across the whole image.
-  creative_brief: 'Carved sledge post beast: Viking ceremonial wooden posts carved as snarling beast heads with gaping jaws, intricate interlace skin and glaring eyes. Carry it through beast-head post, gaping jaws, interlace skin, glaring eyes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Carved sledge post beast: Viking ceremonial wooden posts carved as snarling beast heads with gaping jaws, intricate interlace skin and glaring eyes. Carry it through beast-head post, gaping jaws, interlace skin, glaring eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: beast-head post; gaping jaws; interlace skin; glaring eyes
 avoidRules:
   - readable runes

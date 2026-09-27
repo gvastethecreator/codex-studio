@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Scene around a curved vessel, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with hushed crossing dread.
   rendering_and_quality: Elegant glaze painting, kept consistent across the whole image.
-  creative_brief: 'Styx ferryman black-glaze: Greek black-glaze pottery painted with the ferryman of the dead poling his boat across the black river, winged guides and shades. Carry it through ferryman, river of the dead, black glaze, shades. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Styx ferryman black-glaze: Greek black-glaze pottery painted with the ferryman of the dead poling his boat across the black river, winged guides and shades. Carry it through ferryman, river of the dead, black glaze, shades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ferryman; river of the dead; black glaze; shades
 avoidRules:
   - cultural stereotypes or caricature

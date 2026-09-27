@@ -22,13 +22,13 @@ visualDna:
   aesthetic: 'Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as calm bureau agents in plain office clothes wielding telekinesis. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Raw concrete grey, corruption red and fluorescent white.
-  lighting_and_shadow: "Clean white office light with a pulsing red glow where the corruption spreads."
-  texture_and_material: "Raw concrete, office clutter, floating paper and chunks of debris with sharp ray-traced reflections."
+  lighting_and_shadow: 'Clean white office light with a pulsing red glow where the corruption spreads.'
+  texture_and_material: 'Raw concrete, office clutter, floating paper and chunks of debris with sharp ray-traced reflections.'
   camera_and_composition: Third-person view in brutalist halls, framed the way Control 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with uncanny bureaucratic dread.
-  rendering_and_quality: "A 2019 frame at 1920 by 1080 in third person: agent lifting debris with telekinesis, a thin bar shape bottom left."
+  rendering_and_quality: 'A 2019 frame at 1920 by 1080 in third person: agent lifting debris with telekinesis, a thin bar shape bottom left.'
   key_features: Control brutalism; telekinesis; red corruption; floating debris
-  creative_brief: 'Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris. Carry it through Control brutalism, telekinesis, red corruption, floating debris. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris. Carry it through Control brutalism, telekinesis, red corruption, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a woman with a shape-shifting service weapon
   - watermark

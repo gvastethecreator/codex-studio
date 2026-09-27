@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with retro mechanical drama.
   rendering_and_quality: Grainy 1991 OVA frame with hand-painted mecha highlights and space drama.
   key_features: Gundam 0083 highlights; detailed mechs; VHS grain; space battles
-  creative_brief: 'Sunrise Mobile Suit Gundam 0083 Stardust Memory OVA look (1991): hand-painted highlight streaks on mechs, densely detailed machines, VHS-era grain and dramatic space battles. Carry it through Gundam 0083 highlights, detailed mechs, VHS grain, space battles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sunrise Mobile Suit Gundam 0083 Stardust Memory OVA look (1991): hand-painted highlight streaks on mechs, densely detailed machines, VHS-era grain and dramatic space battles. Carry it through Gundam 0083 highlights, detailed mechs, VHS grain, space battles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a crimson mobile suit with a mono-eye
   - white mobile suits with V-fin antennas

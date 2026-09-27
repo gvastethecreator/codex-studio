@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful anime adventurers riding giant titans. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Cloud sea white, sky blue and titan green.
-  lighting_and_shadow: "Bright open-sky anime light over a sea of clouds."
-  texture_and_material: "Anime cel characters with detailed but soft distant vistas."
+  lighting_and_shadow: 'Bright open-sky anime light over a sea of clouds.'
+  texture_and_material: 'Anime cel characters with detailed but soft distant vistas.'
   camera_and_composition: Wide third-person vista, framed the way Xenoblade Chronicles 2 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with vast hopeful journey.
   rendering_and_quality: "A 2017 Switch frame at 1280 by 720: anime party on a titan's back above a cloud sea, a minimap and bar shapes."
-  creative_brief: 'Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters. Carry it through Xenoblade titans, cloud sea, vast vistas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters. Carry it through Xenoblade titans, cloud sea, vast vistas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Xenoblade titans; cloud sea; vast vistas
 avoidRules:
   - existing Xenoblade characters

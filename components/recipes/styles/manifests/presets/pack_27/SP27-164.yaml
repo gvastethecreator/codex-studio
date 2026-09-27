@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide desert epics and low temple angles, framed the way Stargate 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with epic desert wonder.
   rendering_and_quality: Authentic mid-nineties blockbuster frame, in the recognizable hand of Stargate 1994.
-  creative_brief: 'Roland Emmerich Stargate (1994) look: golden desert planets, pyramid spaceships, Egyptian-futurist costumes, a glowing ring portal and blockbuster adventure scale. Carry it through Stargate desert, Egyptian futurism, ring portal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Roland Emmerich Stargate (1994) look: golden desert planets, pyramid spaceships, Egyptian-futurist costumes, a glowing ring portal and blockbuster adventure scale. Carry it through Stargate desert, Egyptian futurism, ring portal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Stargate desert; Egyptian futurism; ring portal
 avoidRules:
   - a stone ring portal with chevrons

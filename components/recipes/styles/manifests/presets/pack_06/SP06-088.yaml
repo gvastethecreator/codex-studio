@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Uneasy and dreamlike, a world that trembles slightly.
   rendering_and_quality: The whole card is a 320 by 240 frame enlarged with hard nearest-neighbor pixels, so every edge is stair-stepped and every texture is chunky; jittering vertices, no filtering, no anti-aliasing and no high-definition detail.
   key_features: affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog
-  creative_brief: 'Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping. Carry it through affine texture warping, vertex snapping jitter, nearest-neighbor textures, ordered dither, close fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping. Carry it through affine texture warping, vertex snapping jitter, nearest-neighbor textures, ordered dither, close fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame

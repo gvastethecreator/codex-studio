@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tall landscape dwarfing figures, framed the way Alan Lee composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with reverent ancient stillness.
   rendering_and_quality: Delicate pencil and watercolor fantasy illustration, in the recognizable hand of Alan Lee.
-  creative_brief: 'Alan Lee fantasy watercolor: soft misty pencil and watercolor landscapes, towering ancient trees and ruins, pale greens and greys and reverent Northern myth atmosphere. Carry it through Alan Lee misty watercolor, ancient trees, ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alan Lee fantasy watercolor: soft misty pencil and watercolor landscapes, towering ancient trees and ruins, pale greens and greys and reverent Northern myth atmosphere. Carry it through Alan Lee misty watercolor, ancient trees, ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Alan Lee misty watercolor; ancient trees; ruins
 avoidRules:
   - Middle-earth characters and places

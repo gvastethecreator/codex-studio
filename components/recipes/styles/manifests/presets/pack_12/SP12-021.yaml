@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as photoreal cars with dust and motion, drivers inside. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sunset gold, desert ochre and festival pink, true to the Forza Horizon 5 2021 palette.
-  lighting_and_shadow: "Golden sunset light with thick glowing dust in the air."
-  texture_and_material: "Photoreal car paint with sharp reflections, dust and terrain slightly soft at a distance."
+  lighting_and_shadow: 'Golden sunset light with thick glowing dust in the air.'
+  texture_and_material: 'Photoreal car paint with sharp reflections, dust and terrain slightly soft at a distance.'
   camera_and_composition: Chase camera behind drifting cars, framed the way Forza Horizon 5 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with joyful festival freedom.
-  rendering_and_quality: "A 2021 frame at 3840 by 2160 from a chase camera behind the car: a speedometer arc bottom right and a small minimap bottom left."
+  rendering_and_quality: 'A 2021 frame at 3840 by 2160 from a chase camera behind the car: a speedometer arc bottom right and a small minimap bottom left.'
   key_features: Forza Horizon festival; desert dust; photoreal cars
-  creative_brief: 'Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites. Carry it through Forza Horizon festival, desert dust, photoreal cars. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites. Carry it through Forza Horizon festival, desert dust, photoreal cars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

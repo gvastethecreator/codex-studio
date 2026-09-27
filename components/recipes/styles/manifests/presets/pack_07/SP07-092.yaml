@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; look down from the top tier into the funnel of rings, or up from the centre at the stacked balustrades.
   atmosphere_and_mood: Intense, scholarly and theatrical, every eye pressed toward one point.
   rendering_and_quality: Low-light photograph with crisp baluster rhythm and central light pool, no gore; any body stays covered.
-  creative_brief: 'Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down. Carry it through steep concentric oval timber tiers, turned baluster rails, lantern skylight onto the centre, central demonstration table, spectators looking down. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down. Carry it through steep concentric oval timber tiers, turned baluster rails, lantern skylight onto the centre, central demonstration table, spectators looking down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down
 avoidRules:
   - one-point corridor perspective as default

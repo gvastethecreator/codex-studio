@@ -318,7 +318,7 @@ const spec: Spec = {
         key_features:
           'flayed muscle groups; fiber striations; ivory tendons; single high sculpture key; clean museum finish',
       }),
-      avoid: [...AVOID,   'open wounds', 'exposed organs'],
+      avoid: [...AVOID, 'open wounds', 'exposed organs'],
       briefs: [
         'Écorché muscle study render of a rearing warhorse, every muscle a distinct terracotta striated form wrapping the bones, pearly ivory tendons in the legs, a single high sculpture key carving each muscle belly, clean museum finish. No blood, text or logo.',
         'Écorché muscle study render of a charging bull, flayed-anatomy style like a museum anatomical sculpture, neck and shoulder muscles bunched in full contraction, glossy tendon sheaths at the hocks, clean matte red-brown muscle and ivory tendon, soft rounded studio shadows on a grey sweep. No blood, gore, text or logo.',
@@ -349,7 +349,7 @@ const spec: Spec = {
         key_features:
           'articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins',
       }),
-      avoid: [...AVOID, 'flesh',  'cartoon skeleton'],
+      avoid: [...AVOID, 'flesh', 'cartoon skeleton'],
       briefs: [
         'Natural-history skeleton mount of a two-headed wyvern in a striking pose, aged ivory bones wired on slender iron rods, crisp rib shadows cast by gallery spots across a stone plinth, brass pins glinting at every joint. No text or logo.',
         'Natural-history skeleton mount of a mermaid resting on a rock, the human spine flowing into the vertebrae of a fish tail, tea-brown bone and black iron armature. No text or logo.',

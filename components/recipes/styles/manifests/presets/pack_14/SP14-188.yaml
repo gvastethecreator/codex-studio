@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Hanging cloth or noren curtain, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with calm folk depth.
   rendering_and_quality: Authentic dye texture, kept consistent across the whole image.
-  creative_brief: 'Aizome indigo dye: deep natural indigo-dyed textiles with resist patterns, uneven blues and white motifs of waves, fish and folklore creatures. Carry it through indigo dye, white resist, hanging cloth, folk motifs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Aizome indigo dye: deep natural indigo-dyed textiles with resist patterns, uneven blues and white motifs of waves, fish and folklore creatures. Carry it through indigo dye, white resist, hanging cloth, folk motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: indigo dye; white resist; hanging cloth; folk motifs
 avoidRules:
   - readable Japanese text or seals

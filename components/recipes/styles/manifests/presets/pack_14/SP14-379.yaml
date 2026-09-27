@@ -22,7 +22,7 @@ tags:
   - mythic-waters
   - portable-style-study
 visualDna:
-  aesthetic: 'Dragon palace undersea screen: Japanese folding screen painting of the sea king''s palace beneath the waves, coral halls, fish attendants and a jeweled dragon king on gold.'
+  aesthetic: "Dragon palace undersea screen: Japanese folding screen painting of the sea king's palace beneath the waves, coral halls, fish attendants and a jeweled dragon king on gold."
   subject_treatment: Preserve the requested identity, count, pose and action; paint the subject in an undersea palace of coral and gold on a folding screen.
   color_and_tone: Gold leaf, sea green, coral red and pearl white.
   lighting_and_shadow: Glowing gold and undersea light, kept consistent across the whole image.
@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Palace scene across screen panels, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with enchanted undersea splendor.
   rendering_and_quality: Rich decorative screen painting, kept consistent across the whole image.
-  creative_brief: 'Dragon palace undersea screen: Japanese folding screen painting of the sea king''s palace beneath the waves, coral halls, fish attendants and a jeweled dragon king on gold. Carry it through undersea palace, coral halls, fish attendants, gold screen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dragon palace undersea screen: Japanese folding screen painting of the sea king's palace beneath the waves, coral halls, fish attendants and a jeweled dragon king on gold. Carry it through undersea palace, coral halls, fish attendants, gold screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: undersea palace; coral halls; fish attendants; gold screen
 avoidRules:
   - cultural stereotypes or caricature

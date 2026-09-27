@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Extreme eye close-ups and crash zooms, framed the way Lucio Fulci 1979 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with humid rotting dread.
   rendering_and_quality: Humid seventies Italian zombie frame, in the recognizable hand of Lucio Fulci 1979.
-  creative_brief: 'Lucio Fulci Zombi 2 (1979) look: tropical island decay, crumbling conquistador graves, extreme close-ups of eyes, rotting makeup and humid Italian exploitation color. Carry it through Fulci tropical rot, eye close-ups, crash zooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lucio Fulci Zombi 2 (1979) look: tropical island decay, crumbling conquistador graves, extreme close-ups of eyes, rotting makeup and humid Italian exploitation color. Carry it through Fulci tropical rot, eye close-ups, crash zooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Fulci tropical rot; eye close-ups; crash zooms
 avoidRules:
   - existing franchise characters

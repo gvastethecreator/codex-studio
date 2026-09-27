@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Swirling whimsical composition, framed the way Rodney Matthews composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with whimsical sinister wonder.
   rendering_and_quality: Crisp gouache prog fantasy illustration, in the recognizable hand of Rodney Matthews.
-  creative_brief: 'Rodney Matthews fantasy illustration: sweeping curving organic lines, spiky twisted trees, whimsical sinister creatures, bright gouache color and seventies prog-rock fantasy. Carry it through Rodney Matthews curving lines, spiky trees, gouache. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Rodney Matthews fantasy illustration: sweeping curving organic lines, spiky twisted trees, whimsical sinister creatures, bright gouache color and seventies prog-rock fantasy. Carry it through Rodney Matthews curving lines, spiky trees, gouache. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rodney Matthews curving lines; spiky trees; gouache
 avoidRules:
   - existing franchise characters

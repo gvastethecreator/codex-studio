@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject driving a sprite-scaled road from behind through sunny coastal scenery. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright sky blue, beach sand, palm green and convertible red.
-  lighting_and_shadow: "Bright summer arcade sunlight in flat saturated colors, bands of blue sky over the sea."
-  texture_and_material: "Crisp square pixels, roadside palms and signs as flat sprites that grow blockier as they rush closer."
+  lighting_and_shadow: 'Bright summer arcade sunlight in flat saturated colors, bands of blue sky over the sea.'
+  texture_and_material: 'Crisp square pixels, roadside palms and signs as flat sprites that grow blockier as they rush closer.'
   camera_and_composition: Low chase view behind the vehicle on a curving road.
   atmosphere_and_mood: Keep the requested mood with breezy summer escape.
-  rendering_and_quality: "A 1986 arcade frame at 320 by 224: a striped road narrowing to the horizon, a red convertible seen from behind, crisp CRT pixels."
-  creative_brief: 'Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism. Carry it through Out Run sprite scaling, coastal road, palm trees, convertible. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1986 arcade frame at 320 by 224: a striped road narrowing to the horizon, a red convertible seen from behind, crisp CRT pixels.'
+  creative_brief: "Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism. Carry it through Out Run sprite scaling, coastal road, palm trees, convertible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Out Run sprite scaling; coastal road; palm trees; convertible
 avoidRules:
   - a red Ferrari Testarossa convertible

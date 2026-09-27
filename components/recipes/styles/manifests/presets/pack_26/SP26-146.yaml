@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Chaotic collage with a central figure, framed the way Hyperpop 2020 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with manic glossy euphoria.
   rendering_and_quality: Faithful hyperpop cover design, in the recognizable hand of Hyperpop 2020.
-  creative_brief: 'Hyperpop cover look of the 2020s: glossy Y2K chrome, overexposed flash selfies, sticker bombs, butterflies, candy color and maximal digital chaos. Carry it through Hyperpop Y2K chrome, flash, sticker chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hyperpop cover look of the 2020s: glossy Y2K chrome, overexposed flash selfies, sticker bombs, butterflies, candy color and maximal digital chaos. Carry it through Hyperpop Y2K chrome, flash, sticker chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hyperpop Y2K chrome; flash; sticker chaos
 avoidRules:
   - existing franchise characters

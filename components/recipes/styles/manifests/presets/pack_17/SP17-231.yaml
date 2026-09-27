@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Sweeping heroic composition, framed the way Keith Parkinson composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with radiant heroic wonder.
   rendering_and_quality: Polished epic fantasy cover painting, in the recognizable hand of Keith Parkinson.
-  creative_brief: 'Keith Parkinson epic fantasy painting: luminous glowing skies, gleaming armored heroes, sweeping castles and dragons, rich saturated color and classic eighties and nineties fantasy cover polish. Carry it through Parkinson luminous skies, gleaming heroes, castles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Keith Parkinson epic fantasy painting: luminous glowing skies, gleaming armored heroes, sweeping castles and dragons, rich saturated color and classic eighties and nineties fantasy cover polish. Carry it through Parkinson luminous skies, gleaming heroes, castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Parkinson luminous skies; gleaming heroes; castles
 avoidRules:
   - EverQuest or licensed game characters

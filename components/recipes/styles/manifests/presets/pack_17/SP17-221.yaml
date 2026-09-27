@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vertical full-figure book-cover framing, framed the way Gerald Brom composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with eerie beautiful menace.
   rendering_and_quality: Polished dark fantasy oil painting, in the recognizable hand of Gerald Brom.
-  creative_brief: 'Gerald Brom dark fantasy painting: pale gaunt figures with hollow dark eyes, thorny gothic costume, desaturated umber backgrounds, a single blood-red accent and eerie beautiful menace. Carry it through Brom pale gaunt figures, thorny gothic, blood-red accent. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gerald Brom dark fantasy painting: pale gaunt figures with hollow dark eyes, thorny gothic costume, desaturated umber backgrounds, a single blood-red accent and eerie beautiful menace. Carry it through Brom pale gaunt figures, thorny gothic, blood-red accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Brom pale gaunt figures; thorny gothic; blood-red accent
 avoidRules:
   - existing franchise characters

@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Mold and fungi macro: fuzzy colonies, hyphae and spore heads in a petri dish.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: grown as mold or fungal colonies: fuzzy hyphae, spore heads, rings and agar.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: grown as mold or fungal colonies: fuzzy hyphae, spore heads, rings and agar."
   color_and_tone: Moldy greens, whites, yellows and black spores, as the instrument or lens would record it.
   lighting_and_shadow: Soft lab light on agar, matching the real imaging setup at this scale.
   texture_and_material: Fuzzy hyphae, spores and agar gel, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Eerie, organic, creeping and fascinating, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: fuzzy colonies; hyphae; spore heads; agar
-  creative_brief: 'Mold and fungi macro: fuzzy colonies, hyphae and spore heads in a petri dish. Carry it through fuzzy colonies, hyphae, spore heads, agar. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mold and fungi macro: fuzzy colonies, hyphae and spore heads in a petri dish. Carry it through fuzzy colonies, hyphae, spore heads, agar. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

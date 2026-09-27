@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Chaotic crowd composition, framed the way Doug Kovacs composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with chaotic peasant mayhem.
   rendering_and_quality: Expressive loose dungeon crowd ink, in the recognizable hand of Doug Kovacs.
-  creative_brief: 'Doug Kovacs Dungeon Crawl Classics art: expressive loose ink crowds of peasant adventurers, dungeon mayhem, sketchy energy and chaotic funnel humor. Carry it through Kovacs peasant crowds, loose ink, dungeon mayhem. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Doug Kovacs Dungeon Crawl Classics art: expressive loose ink crowds of peasant adventurers, dungeon mayhem, sketchy energy and chaotic funnel humor. Carry it through Kovacs peasant crowds, loose ink, dungeon mayhem. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kovacs peasant crowds; loose ink; dungeon mayhem
 avoidRules:
   - existing franchise characters

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with forced cheer that is visibly wrong and faintly unsettling.
   rendering_and_quality: 'Clean vector render of a bad design decision: finished and glossy, but awkward, uncanny and plainly unapproved.'
   key_features: committee-mangled mascot; mismatched eyes; human-teeth grin; bolted-on limbs; forced cheer
-  creative_brief: 'Committee-mangled corporate mascot that was clearly rejected: glossy vector finish on an off-model design whose parts contradict each other, with too many features, dead eyes, a forced grin and stiff presentation pose. Carry it through committee-mangled mascot, mismatched eyes, human-teeth grin, bolted-on limbs, forced cheer. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Committee-mangled corporate mascot that was clearly rejected: glossy vector finish on an off-model design whose parts contradict each other, with too many features, dead eyes, a forced grin and stiff presentation pose. Carry it through committee-mangled mascot, mismatched eyes, human-teeth grin, bolted-on limbs, forced cheer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - professional
   - friendly

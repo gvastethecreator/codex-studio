@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: High vertical page with stacked space, the great bird curving across the upper sky.
   atmosphere_and_mood: Keep the requested mood with marvelous protective wonder.
   rendering_and_quality: Exquisite miniature detail with rhythmic plumes and patterned rocks.
-  creative_brief: 'Simurgh manuscript painting: Persian illuminated manuscript painting of the great healing bird with a peacock tail sweeping over jewel-colored rocks, gold skies and flowering trees. Carry it through great healing bird, peacock plumes, lilac rocks, gold sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Simurgh manuscript painting: Persian illuminated manuscript painting of the great healing bird with a peacock tail sweeping over jewel-colored rocks, gold skies and flowering trees. Carry it through great healing bird, peacock plumes, lilac rocks, gold sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: great healing bird; peacock plumes; lilac rocks; gold sky
 avoidRules:
   - cultural stereotypes or caricature

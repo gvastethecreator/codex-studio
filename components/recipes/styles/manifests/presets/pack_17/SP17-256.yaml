@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Aggressive page layout composition, framed the way Johan Nohr composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with apocalyptic art-punk aggression.
   rendering_and_quality: Brutal doom metal zine page design, in the recognizable hand of Johan Nohr.
-  creative_brief: 'Johan Nohr Mörk Borg layout: acid yellow, black and hot pink doom metal design, brutal distressed type as shapes, skulls, harsh halftone and apocalyptic art-punk energy. Carry it through Mörk Borg acid yellow, doom metal, halftone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Johan Nohr Mörk Borg layout: acid yellow, black and hot pink doom metal design, brutal distressed type as shapes, skulls, harsh halftone and apocalyptic art-punk energy. Carry it through Mörk Borg acid yellow, doom metal, halftone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mörk Borg acid yellow; doom metal; halftone
 avoidRules:
   - the real Mörk Borg logo

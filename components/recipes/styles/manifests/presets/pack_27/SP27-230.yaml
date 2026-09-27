@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in muted grey 2.5D dystopian spaces with restrained light. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted grey, cold blue and one small red accent.
-  lighting_and_shadow: "Soft restrained beams of light through grey haze, one small red accent."
-  texture_and_material: "Smooth simple 3D shapes with almost no surface detail, softened by fog."
+  lighting_and_shadow: 'Soft restrained beams of light through grey haze, one small red accent.'
+  texture_and_material: 'Smooth simple 3D shapes with almost no surface detail, softened by fog.'
   camera_and_composition: Side-scrolling 2.5D cinematic view, framed the way Inside 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie restrained dread.
-  rendering_and_quality: "A 2016 side-view frame at 1920 by 1080: muted grey layers, a tiny figure in red, wide empty space."
-  creative_brief: 'Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting. Carry it through Inside muted grey, red accent, mind-controlled rows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2016 side-view frame at 1920 by 1080: muted grey layers, a tiny figure in red, wide empty space.'
+  creative_brief: "Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting. Carry it through Inside muted grey, red accent, mind-controlled rows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Inside muted grey; red accent; mind-controlled rows
 avoidRules:
   - a small boy in a red sweater

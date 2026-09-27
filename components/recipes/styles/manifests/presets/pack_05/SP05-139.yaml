@@ -26,7 +26,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with raw giant-scale panic.
   rendering_and_quality: Raw scratchy manga illustration with grotesque giant scale.
   key_features: Isayama scratch; grotesque giant faces; raw anatomy; panic crowds
-  creative_brief: 'Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a skinless colossal titan face over a wall
   - existing franchise characters

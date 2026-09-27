@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with melancholy ornate dread.
   rendering_and_quality: Ornate fashion-illustration frame with gothic mecha and melancholy knights.
   key_features: Mamoru Nagano gothic mecha; fashion elegance; ornate armor; melancholy
-  creative_brief: 'Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights. Carry it through Mamoru Nagano gothic mecha, fashion elegance, ornate armor, melancholy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights. Carry it through Mamoru Nagano gothic mecha, fashion elegance, ornate armor, melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character

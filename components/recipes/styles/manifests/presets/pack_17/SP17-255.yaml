@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frantic crowded composition, framed the way Scrap Princess composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with feverish outsider horror.
   rendering_and_quality: Raw scribbled OSR horror art, in the recognizable hand of Scrap Princess.
-  creative_brief: 'Scrap Princess OSR art: chaotic raw scribbled line, frantic body horror, splattered ink, collage fragments and punk outsider intensity. Carry it through Scrap Princess scribble, splatter, body horror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Scrap Princess OSR art: chaotic raw scribbled line, frantic body horror, splattered ink, collage fragments and punk outsider intensity. Carry it through Scrap Princess scribble, splatter, body horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Scrap Princess scribble; splatter; body horror
 avoidRules:
   - existing franchise characters

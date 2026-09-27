@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide inner-space vistas around a tiny submarine, framed the way Fantastic Voyage 1966 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with psychedelic inner wonder.
   rendering_and_quality: Authentic sixties inner-space adventure frame, in the recognizable hand of Fantastic Voyage 1966.
-  creative_brief: 'Richard Fleischer Fantastic Voyage (1966) look: psychedelic Technicolor journey inside a human body, a miniaturized submarine drifting through glowing blood vessels, heart chambers and lungs. Carry it through Fantastic Voyage inner space, glowing vessels, mini sub. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Richard Fleischer Fantastic Voyage (1966) look: psychedelic Technicolor journey inside a human body, a miniaturized submarine drifting through glowing blood vessels, heart chambers and lungs. Carry it through Fantastic Voyage inner space, glowing vessels, mini sub. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Fantastic Voyage inner space; glowing vessels; mini sub
 avoidRules:
   - existing franchise characters

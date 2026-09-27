@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side-on TV staging and repeating background pans, framed the way Hanna-Barbera composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with breezy Saturday morning.
   rendering_and_quality: Faithful sixties TV cartoon frame, in the recognizable hand of Hanna-Barbera.
-  creative_brief: 'Hanna-Barbera TV animation look of the late 1950s to 1970s: limited animation with held poses, thick outlines, collar-line heads, flat pastel backgrounds that repeat in running loops and simple gag staging. Carry it through Hanna-Barbera limited animation, looping pastel backgrounds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hanna-Barbera TV animation look of the late 1950s to 1970s: limited animation with held poses, thick outlines, collar-line heads, flat pastel backgrounds that repeat in running loops and simple gag staging. Carry it through Hanna-Barbera limited animation, looping pastel backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hanna-Barbera limited animation; looping pastel backgrounds
 avoidRules:
   - a Great Dane with a green van

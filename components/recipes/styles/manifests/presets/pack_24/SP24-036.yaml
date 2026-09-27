@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low water-level views with buildings towering and reflections mirroring them.
   atmosphere_and_mood: Melancholic, quiet and resourceful, living among the drowned.
   rendering_and_quality: Soft watercolor painting with careful reflections and wet edges.
-  creative_brief: 'Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris. Carry it through drowned towers, lone rower, still reflections, floating debris. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris. Carry it through drowned towers, lone rower, still reflections, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: drowned towers; lone rower; still reflections; floating debris
 avoidRules:
   - readable signs

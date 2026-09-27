@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Adventurous and scrappy, a used universe full of possibility.
   rendering_and_quality: Visible 35mm grain, soft period lenses, gentle halation and lower dynamic range, with slight optical-composite matte lines around models.
   key_features: kitbashed model ships; used-future weathering; optical composite glow; backlit hangar smoke; film grain
-  creative_brief: '70s space opera: a 1970s film still shot on 35mm, with physical kitbashed model starships, painted matte backgrounds, optical composites and a worn, lived-in future, never modern CGI. Carry it through kitbashed model ships, used-future weathering, optical composite glow, backlit hangar smoke, film grain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "70s space opera: a 1970s film still shot on 35mm, with physical kitbashed model starships, painted matte backgrounds, optical composites and a worn, lived-in future, never modern CGI. Carry it through kitbashed model ships, used-future weathering, optical composite glow, backlit hangar smoke, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

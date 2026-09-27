@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as comic stylized cartoon defenders facing cartoon hordes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm torch orange, stone grey and goblin green.
-  lighting_and_shadow: "Warm torch light and bright trap flashes in stone halls."
-  texture_and_material: "Chunky stylized painted 3D, exaggerated cartoon orcs and simple stone walls."
+  lighting_and_shadow: 'Warm torch light and bright trap flashes in stone halls.'
+  texture_and_material: 'Chunky stylized painted 3D, exaggerated cartoon orcs and simple stone walls.'
   camera_and_composition: Third-person view behind the defender, framed the way Orcs Must Die 2011 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gleeful horde defense.
-  rendering_and_quality: "A 2011 frame at 1920 by 1080 in third person: defender facing a cartoon horde in a hallway, trap icon row at the bottom."
-  creative_brief: 'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects. Carry it through Orcs Must Die hordes, trap defense, comic stylized. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2011 frame at 1920 by 1080 in third person: defender facing a cartoon horde in a hallway, trap icon row at the bottom.'
+  creative_brief: "Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects. Carry it through Orcs Must Die hordes, trap defense, comic stylized. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Orcs Must Die hordes; trap defense; comic stylized
 avoidRules:
   - existing game characters, logos or levels

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tight single-object composition with the creature twisted to fill its outline.
   atmosphere_and_mood: Keep the requested mood with fierce nomadic grace.
   rendering_and_quality: Sculptural goldsmith detail with bold simplified animal forms.
-  creative_brief: 'Scythian animal-style gold: steppe nomad gold plaques of stags with curled antlers, twisting griffins and felines turned back on themselves, beast bodies folded into tight ornamental loops. Carry it through curled stag, twisting griffin, folded beast body, repousse gold. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Scythian animal-style gold: steppe nomad gold plaques of stags with curled antlers, twisting griffins and felines turned back on themselves, beast bodies folded into tight ornamental loops. Carry it through curled stag, twisting griffin, folded beast body, repousse gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: curled stag; twisting griffin; folded beast body; repousse gold
 avoidRules:
   - cultural stereotypes or caricature

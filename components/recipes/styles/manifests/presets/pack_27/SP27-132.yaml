@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Stagey Victorian framing and time-lapse window views, framed the way The Time Machine 1960 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with wistful temporal wonder.
   rendering_and_quality: Authentic sixties Metrocolor time-travel frame, in the recognizable hand of The Time Machine 1960.
-  creative_brief: 'George Pal The Time Machine (1960) look: Metrocolor Victorian parlor with a brass sled time machine, time-lapse effects of passing years and a lush far-future Eden of domed temples. Carry it through Pal time machine sled, Victorian brass, time-lapse. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "George Pal The Time Machine (1960) look: Metrocolor Victorian parlor with a brass sled time machine, time-lapse effects of passing years and a lush far-future Eden of domed temples. Carry it through Pal time machine sled, Victorian brass, time-lapse. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pal time machine sled; Victorian brass; time-lapse
 avoidRules:
   - pale subterranean cannibal creatures

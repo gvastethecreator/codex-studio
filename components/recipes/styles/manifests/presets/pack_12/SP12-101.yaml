@@ -26,11 +26,11 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric characters with cyberware, jacked-in cables and street gear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Painted grime brown, neon cyan and Matrix green.
   lighting_and_shadow: Monitor glow and neon in dim painted rooms.
-  texture_and_material: "Hand-painted rooms seen from above at an angle, with small simple 3D figures standing on them."
+  texture_and_material: 'Hand-painted rooms seen from above at an angle, with small simple 3D figures standing on them.'
   camera_and_composition: Fixed isometric tactics view of a room, framed the way Shadowrun Returns 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty tech-noir scheming.
-  rendering_and_quality: "A 2013 PC frame at 1280 by 720: painted den with small figures, a row of blank action buttons at the bottom."
-  creative_brief: 'Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens. Carry it through Shadowrun isometric, painted dens, Matrix glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2013 PC frame at 1280 by 720: painted den with small figures, a row of blank action buttons at the bottom.'
+  creative_brief: "Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens. Carry it through Shadowrun isometric, painted dens, Matrix glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Shadowrun isometric; painted dens; Matrix glow
 avoidRules:
   - readable screen text

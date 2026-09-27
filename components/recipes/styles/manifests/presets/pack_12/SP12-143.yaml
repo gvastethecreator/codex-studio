@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as anime fighters with sharp cel shading and bold silhouettes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rock red, electric purple and bold contrast, true to the Guilty Gear Strive 2021 palette.
-  lighting_and_shadow: "Dramatic stage light with bright impact flashes and bold color bursts."
-  texture_and_material: "3D figures shaded like 2D anime, with drawn lines and flat color blocks."
+  lighting_and_shadow: 'Dramatic stage light with bright impact flashes and bold color bursts.'
+  texture_and_material: '3D figures shaded like 2D anime, with drawn lines and flat color blocks.'
   camera_and_composition: Side-view 2.5D fighting camera, framed the way Guilty Gear Strive 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with heavy-metal fighting intensity.
-  rendering_and_quality: "A 2021 frame at 1920 by 1080 from the side: two anime fighters clashing, health bar shapes across the top."
-  creative_brief: 'Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects. Carry it through Guilty Gear anime 2.5D, impact effects, metal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2021 frame at 1920 by 1080 from the side: two anime fighters clashing, health bar shapes across the top.'
+  creative_brief: "Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects. Carry it through Guilty Gear anime 2.5D, impact effects, metal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Guilty Gear anime 2.5D; impact effects; metal
 avoidRules:
   - existing Guilty Gear fighters

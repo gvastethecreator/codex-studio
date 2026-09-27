@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: All-over composition with birds and flowers, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with joyful folk fantasy.
   rendering_and_quality: Vivid naive painting, kept consistent across the whole image.
-  creative_brief: 'Amate bark dreamscape: vivid Nahua bark-paper paintings with flat bright birds, flowers and village life, pushed into dreamlike fantasy scenes. Carry it through amate bark, flat bright color, birds and flowers, folk fantasy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Amate bark dreamscape: vivid Nahua bark-paper paintings with flat bright birds, flowers and village life, pushed into dreamlike fantasy scenes. Carry it through amate bark, flat bright color, birds and flowers, folk fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: amate bark; flat bright color; birds and flowers; folk fantasy
 avoidRules:
   - readable glyphs

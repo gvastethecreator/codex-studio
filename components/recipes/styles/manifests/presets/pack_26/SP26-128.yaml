@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Deadpan wide photographic concept, framed the way Hipgnosis composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with deadpan surreal wit.
   rendering_and_quality: Faithful seventies conceptual photo cover, in the recognizable hand of Hipgnosis.
-  creative_brief: 'Hipgnosis and Storm Thorgerson cover look of the 1970s: surreal staged photographic concepts done for real in landscapes, burning men, floating objects and deadpan conceptual wit. Carry it through Hipgnosis surreal photo concept, staged for real. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hipgnosis and Storm Thorgerson cover look of the 1970s: surreal staged photographic concepts done for real in landscapes, burning men, floating objects and deadpan conceptual wit. Carry it through Hipgnosis surreal photo concept, staged for real. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hipgnosis surreal photo concept; staged for real
 avoidRules:
   - a prism splitting light into a rainbow

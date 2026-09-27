@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frieze of figures on a vase panel, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with archaic heroic energy.
   rendering_and_quality: Crisp silhouettes and confident incision, kept consistent across the whole image.
-  creative_brief: 'Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white. Carry it through black silhouettes, incised details, orange clay, added red and white. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white. Carry it through black silhouettes, incised details, orange clay, added red and white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black silhouettes; incised details; orange clay; added red and white
 avoidRules:
   - readable Greek inscriptions

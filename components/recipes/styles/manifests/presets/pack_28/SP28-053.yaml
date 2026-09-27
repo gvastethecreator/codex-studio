@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal retro presentation, framed the way Retro Tin Robot composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with optimistic retro charm.
   rendering_and_quality: Retro tin robot presentation, in the recognizable hand of Retro Tin Robot.
-  creative_brief: 'Fifties tin robot design language: boxy rounded robots with dials, antennas, piston arms, rivets, clear domes and pulp science fiction charm. Carry it through Tin robot language, dials, antennas, pistons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fifties tin robot design language: boxy rounded robots with dials, antennas, piston arms, rivets, clear domes and pulp science fiction charm. Carry it through Tin robot language, dials, antennas, pistons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tin robot language; dials; antennas; pistons
 avoidRules:
   - existing franchise characters

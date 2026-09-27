@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Heroic central mascot composition, framed the way Derek Riggs composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with epic theatrical menace.
   rendering_and_quality: Faithful eighties metal painting cover, in the recognizable hand of Derek Riggs.
-  creative_brief: 'Derek Riggs eighties heavy metal cover look: airbrushed painted mascot monsters in epic scenes, lightning, lurid color and a jagged metal logo. Carry it through Riggs airbrushed mascot, lightning, jagged logo. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Derek Riggs eighties heavy metal cover look: airbrushed painted mascot monsters in epic scenes, lightning, lurid color and a jagged metal logo. Carry it through Riggs airbrushed mascot, lightning, jagged logo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Riggs airbrushed mascot; lightning; jagged logo
 avoidRules:
   - a zombie mascot with long hair named Eddie

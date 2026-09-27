@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter flowing view, framed the way Luigi Colani composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with fluid futuristic organicism.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Luigi Colani biodynamic design language: flowing organic curves inspired by nature and aerodynamics, bulbous seamless shells, no straight lines and futuristic seventies plastic. Carry it through Colani biodynamic, bulbous curves, no straight lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Luigi Colani biodynamic design language: flowing organic curves inspired by nature and aerodynamics, bulbous seamless shells, no straight lines and futuristic seventies plastic. Carry it through Colani biodynamic, bulbous curves, no straight lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Colani biodynamic; bulbous curves; no straight lines
 avoidRules:
   - existing franchise characters

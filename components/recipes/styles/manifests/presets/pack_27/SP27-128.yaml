@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide CinemaScope frames dwarfing crews, framed the way Forbidden Planet 1956 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grand alien mystery.
   rendering_and_quality: Authentic fifties MGM science fiction frame, in the recognizable hand of Forbidden Planet 1956.
-  creative_brief: 'Fred McLeod Wilcox Forbidden Planet (1956) look: CinemaScope Metrocolor alien world with a green sky and painted desert, a gleaming saucer cruiser, vast Krell-scale machinery and electronic tonalities. Carry it through Forbidden Planet green sky, CinemaScope, colossal machinery. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fred McLeod Wilcox Forbidden Planet (1956) look: CinemaScope Metrocolor alien world with a green sky and painted desert, a gleaming saucer cruiser, vast Krell-scale machinery and electronic tonalities. Carry it through Forbidden Planet green sky, CinemaScope, colossal machinery. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Forbidden Planet green sky; CinemaScope; colossal machinery
 avoidRules:
   - a bubble-headed robot with spinning antennas

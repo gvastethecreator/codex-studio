@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Point-of-view reveals through lenses, framed the way They Live 1988 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with paranoid satirical awakening.
   rendering_and_quality: Authentic eighties Carpenter satire frame, in the recognizable hand of They Live 1988.
-  creative_brief: 'John Carpenter They Live (1988) look: grubby eighties Los Angeles in color, switching to stark black-and-white through special sunglasses revealing hidden commands and skull-faced elites. Carry it through They Live sunglasses reveal, black-and-white truth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Carpenter They Live (1988) look: grubby eighties Los Angeles in color, switching to stark black-and-white through special sunglasses revealing hidden commands and skull-faced elites. Carry it through They Live sunglasses reveal, black-and-white truth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: They Live sunglasses reveal; black-and-white truth
 avoidRules:
   - skull-faced people in suits

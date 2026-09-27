@@ -24,14 +24,14 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as elegant tall pixel sprites with long hair and capes, drawn with many colors and fine detail. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show people as elegant tall pixel sprites with long hair and capes, drawn with many colors and fine detail. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Moonlit indigo, blood crimson and gilded gold, true to the Symphony of the Night 1997 palette.
-  lighting_and_shadow: "Moonlight through tall gothic windows and warm candle pixels."
-  texture_and_material: "Lavish detailed pixel sprites over painted-looking pixel backgrounds in deep blues and reds."
+  lighting_and_shadow: 'Moonlight through tall gothic windows and warm candle pixels.'
+  texture_and_material: 'Lavish detailed pixel sprites over painted-looking pixel backgrounds in deep blues and reds.'
   camera_and_composition: Side-view metroidvania castle view, framed the way Symphony of the Night 1997 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with elegant gothic menace.
-  rendering_and_quality: "A 1997 PlayStation side-view frame at 256 by 240: crisp pixel castle hall, a small ornate bar shape top left."
-  key_features: "Symphony of the Night lavish sprites; gothic castle; moonlit halls"
+  rendering_and_quality: 'A 1997 PlayStation side-view frame at 256 by 240: crisp pixel castle hall, a small ornate bar shape top left.'
+  key_features: 'Symphony of the Night lavish sprites; gothic castle; moonlit halls'
   creative_brief: "Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night lavish sprites, gothic castle, moonlit halls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a silver-haired dhampir with a black cape

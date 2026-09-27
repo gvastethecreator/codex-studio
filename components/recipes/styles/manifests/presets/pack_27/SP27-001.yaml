@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Symmetrical baroque interiors, stained glass and slow gliding dolly moves.
   atmosphere_and_mood: Keep the requested mood with operatic nightmarish terror.
   rendering_and_quality: Hyper-saturated seventies Italian horror film frame, in the recognizable hand of Suspiria 1977.
-  creative_brief: 'Dario Argento Suspiria (1977) look: dye-transfer Technicolor saturation, rooms flooded with pure red, blue and green gel light, art nouveau stained glass and operatic baroque terror. Carry it through Argento Technicolor, red and blue gels, art nouveau glass, baroque terror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dario Argento Suspiria (1977) look: dye-transfer Technicolor saturation, rooms flooded with pure red, blue and green gel light, art nouveau stained glass and operatic baroque terror. Carry it through Argento Technicolor, red and blue gels, art nouveau glass, baroque terror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Argento Technicolor; red and blue gels; art nouveau glass; baroque terror
 avoidRules:
   - a ballet academy logo

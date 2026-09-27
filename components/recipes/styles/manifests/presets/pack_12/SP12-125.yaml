@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as explorers in grounded NASA-punk spacesuits scanning alien life. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Scanner cyan outlines over natural alien palettes, true to the Starfield 2023 palette.
-  lighting_and_shadow: "Natural alien sunlight with a cyan scan glow outlining plants and creatures."
-  texture_and_material: "Realistic alien terrain and chunky grounded spacesuits, slightly soft game-engine detail."
+  lighting_and_shadow: 'Natural alien sunlight with a cyan scan glow outlining plants and creatures.'
+  texture_and_material: 'Realistic alien terrain and chunky grounded spacesuits, slightly soft game-engine detail.'
   camera_and_composition: First-person scanner visor view, framed the way Starfield 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with curious scientific discovery.
-  rendering_and_quality: "A 2023 first-person frame at 1920 by 1080 through a scanner overlay: cyan outlines and corner brackets."
-  creative_brief: 'Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets. Carry it through Starfield scanner, NASA-punk, alien flora. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 first-person frame at 1920 by 1080 through a scanner overlay: cyan outlines and corner brackets.'
+  creative_brief: "Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets. Carry it through Starfield scanner, NASA-punk, alien flora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Starfield scanner; NASA-punk; alien flora
 avoidRules:
   - readable data

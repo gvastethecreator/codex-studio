@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Palace view with rain curtains, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lush storm-born majesty.
   rendering_and_quality: Luminous fantastic painting, kept consistent across the whole image.
-  creative_brief: 'Jade rain palace: a fantastic palace of the rain god built from jade, water and clouds, green light, rain curtains and effigy jars pouring storms. Carry it through jade palace, rain curtains, cloud, effigy jars. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jade rain palace: a fantastic palace of the rain god built from jade, water and clouds, green light, rain curtains and effigy jars pouring storms. Carry it through jade palace, rain curtains, cloud, effigy jars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: jade palace; rain curtains; cloud; effigy jars
 avoidRules:
   - readable glyphs

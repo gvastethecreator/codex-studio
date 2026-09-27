@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low three-quarter angle, framed the way Faceted Low-Poly Industrial composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with brutal angular confidence.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Faceted polygonal industrial language: flat planar stainless panels, sharp creases, low-poly angular geometry and brutal unpainted metal like a folded origami machine. Carry it through Faceted stainless, planar panels, sharp creases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Faceted polygonal industrial language: flat planar stainless panels, sharp creases, low-poly angular geometry and brutal unpainted metal like a folded origami machine. Carry it through Faceted stainless, planar panels, sharp creases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Faceted stainless; planar panels; sharp creases
 avoidRules:
   - a real Cybertruck

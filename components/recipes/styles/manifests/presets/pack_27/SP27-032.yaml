@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Swooping bird’s-eye camera through the auditorium, framed the way Opera 1987 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with elegant operatic terror.
   rendering_and_quality: Baroque eighties Italian horror frame, in the recognizable hand of Opera 1987.
-  creative_brief: 'Dario Argento Opera (1987) look: grand opera house, swooping raven point-of-view camera, candlelit backstage, baroque staging and elegant terror. Carry it through Argento opera house, swooping ravens, candlelight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dario Argento Opera (1987) look: grand opera house, swooping raven point-of-view camera, candlelit backstage, baroque staging and elegant terror. Carry it through Argento opera house, swooping ravens, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Argento opera house; swooping ravens; candlelight
 avoidRules:
   - existing franchise characters

@@ -52,9 +52,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Bathers rest by a river at a summer sunset, water, grass and parasols built entirely from small dots of pure color that only blend from a distance. No readable text or logo.",
-        "A fishing harbor at dawn fills with boats and gulls made of pure color dots, violet shadows and yellow light mixing on the water. No readable text or logo.",
-        "A formal garden of clipped hedges and a fountain shimmers in midday light, every leaf and gravel path built from tiny separate dots. No readable text or logo.",
+        'Bathers rest by a river at a summer sunset, water, grass and parasols built entirely from small dots of pure color that only blend from a distance. No readable text or logo.',
+        'A fishing harbor at dawn fills with boats and gulls made of pure color dots, violet shadows and yellow light mixing on the water. No readable text or logo.',
+        'A formal garden of clipped hedges and a fountain shimmers in midday light, every leaf and gravel path built from tiny separate dots. No readable text or logo.',
       ],
     },
     'SP10-073': {
@@ -69,9 +69,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An octopus coils around an ancient amphora in cut stone and ceramic tesserae, each row following the curl of a tentacle. No readable text or logo.",
-        "A charioteer races four horses across a floor of ochre, rust and white tesserae laid in curving rows along the flying manes. No readable text or logo.",
-        "A sea serpent dives between waves in blue and green tesserae whose flowing rows suggest the whole floor is moving. No readable text or logo.",
+        'An octopus coils around an ancient amphora in cut stone and ceramic tesserae, each row following the curl of a tentacle. No readable text or logo.',
+        'A charioteer races four horses across a floor of ochre, rust and white tesserae laid in curving rows along the flying manes. No readable text or logo.',
+        'A sea serpent dives between waves in blue and green tesserae whose flowing rows suggest the whole floor is moving. No readable text or logo.',
       ],
     },
     'SP10-074': {
@@ -86,9 +86,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a chapel window a saint confronts a coiled serpent in ruby and cobalt pieces joined by dark lead came, glowing with morning light. No readable text or logo.",
-        "A firebird rises from flames in amber, scarlet and gold glass set in dark lead, backlit by a sunset that sets the whole wall burning. No readable text or logo.",
-        "In a cottage window an owl perches on a crescent branch in violet and pale green glass, lead lines tracing each feather. No readable text or logo.",
+        'In a chapel window a saint confronts a coiled serpent in ruby and cobalt pieces joined by dark lead came, glowing with morning light. No readable text or logo.',
+        'A firebird rises from flames in amber, scarlet and gold glass set in dark lead, backlit by a sunset that sets the whole wall burning. No readable text or logo.',
+        'In a cottage window an owl perches on a crescent branch in violet and pale green glass, lead lines tracing each feather. No readable text or logo.',
       ],
     },
   },
@@ -109,8 +109,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A farmer's daughter walks through a sunflower field built from short directional dashes of separated yellow, orange and blue. No readable text or logo.",
-        "A mountain village at sunset glows in short dashes of separated rose, violet and gold, the rooftops vibrating against the sky. No readable text or logo.",
-        "A racing horse and jockey blur forward in short color dashes, separated greens and reds following the direction of the gallop. No readable text or logo.",
+        'A mountain village at sunset glows in short dashes of separated rose, violet and gold, the rooftops vibrating against the sky. No readable text or logo.',
+        'A racing horse and jockey blur forward in short color dashes, separated greens and reds following the direction of the gallop. No readable text or logo.',
       ],
     },
     {
@@ -128,9 +128,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A crowned empress holds a chalice on a shimmering gold ground, glass and gold-leaf tesserae set at angles so she flickers as you move. No readable text or logo.",
-        "Two peacocks drink from a fountain in jewel-green and blue glass tesserae against a field of glinting gold. No readable text or logo.",
-        "A ship crosses a stylized sea under a gold sky, the tesserae tilted so the waves flash as the viewer walks past. No readable text or logo.",
+        'A crowned empress holds a chalice on a shimmering gold ground, glass and gold-leaf tesserae set at angles so she flickers as you move. No readable text or logo.',
+        'Two peacocks drink from a fountain in jewel-green and blue glass tesserae against a field of glinting gold. No readable text or logo.',
+        'A ship crosses a stylized sea under a gold sky, the tesserae tilted so the waves flash as the viewer walks past. No readable text or logo.',
       ],
     },
     {
@@ -148,9 +148,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A gladiator faces a lion in an arena of small limestone tesserae in earthy ochre, rust and grey, framed by a braided border. No readable text or logo.",
-        "Octopus, dolphins, eels and fish swirl across a pale floor of small earthy tesserae inside a black and white wave border. No readable text or logo.",
-        "A boar hunt with riders and dogs spreads across an old floor of earthy tesserae, one corner lost to a crack in the ground. No readable text or logo.",
+        'A gladiator faces a lion in an arena of small limestone tesserae in earthy ochre, rust and grey, framed by a braided border. No readable text or logo.',
+        'Octopus, dolphins, eels and fish swirl across a pale floor of small earthy tesserae inside a black and white wave border. No readable text or logo.',
+        'A boar hunt with riders and dogs spreads across an old floor of earthy tesserae, one corner lost to a crack in the ground. No readable text or logo.',
       ],
     },
     {
@@ -168,9 +168,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A brooch holds a portrait of a woman in a bonnet made of minute glass tesserae, the painterly shading visible only under a loupe. No readable text or logo.",
-        "A tiny box lid shows a goldfinch on a thistle, glass rods cut into tesserae so fine the feathers look brushed. No readable text or logo.",
-        "A small panel holds a lake landscape with boats and cypresses, microscopic glass tesserae giving the sky a painterly glow. No readable text or logo.",
+        'A brooch holds a portrait of a woman in a bonnet made of minute glass tesserae, the painterly shading visible only under a loupe. No readable text or logo.',
+        'A tiny box lid shows a goldfinch on a thistle, glass rods cut into tesserae so fine the feathers look brushed. No readable text or logo.',
+        'A small panel holds a lake landscape with boats and cypresses, microscopic glass tesserae giving the sky a painterly glow. No readable text or logo.',
       ],
     },
     {
@@ -188,9 +188,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A leaping koi covers a garden wall in blue-and-white shards of old plates and cups, fragments of floral pattern forming its scales. No readable text or logo.",
-        "A garden bench is covered in shards of floral teacups, handles and rims forming the armrests in a riot of color. No readable text or logo.",
-        "An owl perches on a birdbath made of broken dinner plates, pattern fragments forming its feathers and a saucer rim for each eye. No readable text or logo.",
+        'A leaping koi covers a garden wall in blue-and-white shards of old plates and cups, fragments of floral pattern forming its scales. No readable text or logo.',
+        'A garden bench is covered in shards of floral teacups, handles and rims forming the armrests in a riot of color. No readable text or logo.',
+        'An owl perches on a birdbath made of broken dinner plates, pattern fragments forming its feathers and a saucer rim for each eye. No readable text or logo.',
       ],
     },
     {
@@ -208,9 +208,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A courtyard floor coils into a sea serpent of black and white river stones set on edge, the pattern gleaming after rain. No readable text or logo.",
-        "A sailing ship crosses a harbor path in smooth grey and white stones set on edge, wet footprints walking over the waves. No readable text or logo.",
-        "A radiant sun spreads across a garden terrace in rings of ochre and white stones set on edge, a cat asleep at its center. No readable text or logo.",
+        'A courtyard floor coils into a sea serpent of black and white river stones set on edge, the pattern gleaming after rain. No readable text or logo.',
+        'A sailing ship crosses a harbor path in smooth grey and white stones set on edge, wet footprints walking over the waves. No readable text or logo.',
+        'A radiant sun spreads across a garden terrace in rings of ochre and white stones set on edge, a cat asleep at its center. No readable text or logo.',
       ],
     },
     {
@@ -228,9 +228,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A sea serpent glows aqua and green in a bathroom window made of frosted rounded beach glass set against the light. No readable text or logo.",
-        "A mermaid combs her hair in frosted blue, white and amber fragments backlit in a seaside window. No readable text or logo.",
-        "A lighthouse on a cliff at sunset glows amber and teal in frosted fragments hanging in a fishing shack window. No readable text or logo.",
+        'A sea serpent glows aqua and green in a bathroom window made of frosted rounded beach glass set against the light. No readable text or logo.',
+        'A mermaid combs her hair in frosted blue, white and amber fragments backlit in a seaside window. No readable text or logo.',
+        'A lighthouse on a cliff at sunset glows amber and teal in frosted fragments hanging in a fishing shack window. No readable text or logo.',
       ],
     },
     {
@@ -248,9 +248,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A galloping horse is made of hundreds of sewing buttons in browns and creams, wood, shell and brass glued side by side. No readable text or logo.",
-        "A peacock spreads a tail of hundreds of blue, green and gold buttons, shiny and matte ones mixed like real plumage. No readable text or logo.",
-        "A pocket watch face is built from silver and black buttons on velvet, the largest buttons marking the hours. No readable text or logo.",
+        'A galloping horse is made of hundreds of sewing buttons in browns and creams, wood, shell and brass glued side by side. No readable text or logo.',
+        'A peacock spreads a tail of hundreds of blue, green and gold buttons, shiny and matte ones mixed like real plumage. No readable text or logo.',
+        'A pocket watch face is built from silver and black buttons on velvet, the largest buttons marking the hours. No readable text or logo.',
       ],
     },
     {
@@ -268,9 +268,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A spaceship made of melted plastic beads is lifted off a white pegboard by a proud adult hobbyist, every bead hole visible. No readable text or logo.",
-        "A strawberry cake slice made of pink and red beads, melted slightly unevenly, lies on a kitchen table beside a real fork. No readable text or logo.",
-        "A frog on a lily pad is fused from green and pink beads with open holes, a tray of loose beads spilled beside it. No readable text or logo.",
+        'A spaceship made of melted plastic beads is lifted off a white pegboard by a proud adult hobbyist, every bead hole visible. No readable text or logo.',
+        'A strawberry cake slice made of pink and red beads, melted slightly unevenly, lies on a kitchen table beside a real fork. No readable text or logo.',
+        'A frog on a lily pad is fused from green and pink beads with open holes, a tray of loose beads spilled beside it. No readable text or logo.',
       ],
     },
     {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A crowned skull glitters under a spotlight, faceted crystals set edge to edge across black velvet. No readable text or logo.",
-        "A flamingo sparkles on a stage backdrop in pink and gold crystals set edge to edge, scattering light across the curtain. No readable text or logo.",
-        "A moth glitters in the dark on a clutch bag, grey and amber crystals set edge to edge along its wings. No readable text or logo.",
+        'A crowned skull glitters under a spotlight, faceted crystals set edge to edge across black velvet. No readable text or logo.',
+        'A flamingo sparkles on a stage backdrop in pink and gold crystals set edge to edge, scattering light across the curtain. No readable text or logo.',
+        'A moth glitters in the dark on a clutch bag, grey and amber crystals set edge to edge along its wings. No readable text or logo.',
       ],
     },
     {
@@ -308,9 +308,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lion attacks a stag in large shaped pieces of colored marble fitted together without grout, a relic from a palace floor. No readable text or logo.",
-        "A sailing boat crosses a stylized sea made of large cut pieces of blue, white and grey marble fitted into one picture. No readable text or logo.",
-        "A tiger stalks among reeds in large cut stones of ochre and green fitted so tightly the joins disappear. No readable text or logo.",
+        'A lion attacks a stag in large shaped pieces of colored marble fitted together without grout, a relic from a palace floor. No readable text or logo.',
+        'A sailing boat crosses a stylized sea made of large cut pieces of blue, white and grey marble fitted into one picture. No readable text or logo.',
+        'A tiger stalks among reeds in large cut stones of ochre and green fitted so tightly the joins disappear. No readable text or logo.',
       ],
     },
     {
@@ -328,9 +328,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A tabletop of black marble is inlaid with a firebird in lapis and coral, the polished hardstones fitted seamlessly under soft light. No readable text or logo.",
-        "A box lid shows a parrot on a branch in malachite, carnelian and lapis set seamlessly into black marble. No readable text or logo.",
-        "A panel of flowers and a dragonfly glows in polished hardstones inlaid into black marble without a visible seam. No readable text or logo.",
+        'A tabletop of black marble is inlaid with a firebird in lapis and coral, the polished hardstones fitted seamlessly under soft light. No readable text or logo.',
+        'A box lid shows a parrot on a branch in malachite, carnelian and lapis set seamlessly into black marble. No readable text or logo.',
+        'A panel of flowers and a dragonfly glows in polished hardstones inlaid into black marble without a visible seam. No readable text or logo.',
       ],
     },
     {
@@ -348,9 +348,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A hunter rides past a forest lodge in contrasting veneers of maple, walnut and ebony cut and fitted together on a cabinet door. No readable text or logo.",
-        "A sailing ship in a storm is fitted from dark walnut sea and pale sycamore sails across the lid of a writing desk. No readable text or logo.",
-        "An owl sits on a branch in contrasting veneers, finely cut feathers and a figured-wood moon behind it. No readable text or logo.",
+        'A hunter rides past a forest lodge in contrasting veneers of maple, walnut and ebony cut and fitted together on a cabinet door. No readable text or logo.',
+        'A sailing ship in a storm is fitted from dark walnut sea and pale sycamore sails across the lid of a writing desk. No readable text or logo.',
+        'An owl sits on a branch in contrasting veneers, finely cut feathers and a figured-wood moon behind it. No readable text or logo.',
       ],
     },
     {
@@ -368,9 +368,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Wisteria blossoms glow in opalescent glass on a lampshade in a dim study, copper-foil seams warming the whole room. No readable text or logo.",
-        "A heron stands among irises in an opalescent window panel, copper-foil seams glowing in the afternoon light. No readable text or logo.",
-        "Moths and wisteria glow on a lampshade by a bed, warm light passing through milky opalescent pieces. No readable text or logo.",
+        'Wisteria blossoms glow in opalescent glass on a lampshade in a dim study, copper-foil seams warming the whole room. No readable text or logo.',
+        'A heron stands among irises in an opalescent window panel, copper-foil seams glowing in the afternoon light. No readable text or logo.',
+        'Moths and wisteria glow on a lampshade by a bed, warm light passing through milky opalescent pieces. No readable text or logo.',
       ],
     },
     {
@@ -388,9 +388,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A praying monk appears in silvery grey painted glass with delicate shading and yellow stain accents, fine lead lines crossing his robe. No readable text or logo.",
-        "In a garden room a grape trellis climbs across clear panes painted in soft grey enamel, only the ripe clusters touched with yellow. No readable text or logo.",
-        "A stag stands in a forest of silvery grey glass, fine lead lines and delicate shading lit from behind at dusk. No readable text or logo.",
+        'A praying monk appears in silvery grey painted glass with delicate shading and yellow stain accents, fine lead lines crossing his robe. No readable text or logo.',
+        'In a garden room a grape trellis climbs across clear panes painted in soft grey enamel, only the ripe clusters touched with yellow. No readable text or logo.',
+        'A stag stands in a forest of silvery grey glass, fine lead lines and delicate shading lit from behind at dusk. No readable text or logo.',
       ],
     },
     {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Backlit in a studio window, a rising firebird melted into one slab shows rounded seams and trapped bubbles glowing like embers. No readable text or logo.",
-        "A bowl of melted glass shows a coral reef with rounded edges and trapped bubbles on a sunny kitchen table. No readable text or logo.",
-        "A blue jellyfish floats in a slab of kiln-melted glass, rounded seams and tiny bubbles glowing in a window. No readable text or logo.",
+        'Backlit in a studio window, a rising firebird melted into one slab shows rounded seams and trapped bubbles glowing like embers. No readable text or logo.',
+        'A bowl of melted glass shows a coral reef with rounded edges and trapped bubbles on a sunny kitchen table. No readable text or logo.',
+        'A blue jellyfish floats in a slab of kiln-melted glass, rounded seams and tiny bubbles glowing in a window. No readable text or logo.',
       ],
     },
     {
@@ -428,9 +428,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A dragon made of rolled paper strips glued edge-on curls around a candle, red and gold coils forming every scale. No readable text or logo.",
-        "A peacock spreads a coiled tail of teal and gold rolled strips glued edge-on to a pale board. No readable text or logo.",
-        "A hot-air balloon drifts over rolling hills, its envelope built from tight striped coils of red and cream paper. No readable text or logo.",
+        'A dragon made of rolled paper strips glued edge-on curls around a candle, red and gold coils forming every scale. No readable text or logo.',
+        'A peacock spreads a coiled tail of teal and gold rolled strips glued edge-on to a pale board. No readable text or logo.',
+        'A hot-air balloon drifts over rolling hills, its envelope built from tight striped coils of red and cream paper. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low menacing three-quarter view, framed the way Guyver Bio-Booster composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with alien symbiotic menace.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Bio-booster insectoid armor language: organic chitin armor suits fused with the body, insect mandibles, exposed tendons, glowing organic orbs and alien symbiosis. Carry it through Bio-booster chitin, mandibles, glowing orbs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bio-booster insectoid armor language: organic chitin armor suits fused with the body, insect mandibles, exposed tendons, glowing organic orbs and alien symbiosis. Carry it through Bio-booster chitin, mandibles, glowing orbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bio-booster chitin; mandibles; glowing orbs
 avoidRules:
   - the Guyver armor with a forehead control metal

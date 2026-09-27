@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Real-time cutting between clocks and faces, framed the way High Noon 1952 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tense lonely resolve.
   rendering_and_quality: Authentic early-fifties western frame, in the recognizable hand of High Noon 1952.
-  creative_brief: 'Fred Zinnemann High Noon (1952) look: stark bright black-and-white town, clocks ticking toward noon, empty streets, sweating faces and real-time moral tension. Carry it through High Noon clocks, empty street, real-time tension. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fred Zinnemann High Noon (1952) look: stark bright black-and-white town, clocks ticking toward noon, empty streets, sweating faces and real-time moral tension. Carry it through High Noon clocks, empty street, real-time tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: High Noon clocks; empty street; real-time tension
 avoidRules:
   - a marshal with a star badge

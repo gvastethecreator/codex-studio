@@ -148,7 +148,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Cheerful, luminous and handmade, like a sunlit window collage.',
         rendering_and_quality:
           'Authentic tissue collage with wrinkles and overlap colors, never flat digital transparency.',
-        key_features: 'overlapping translucent sheets; mixed overlap colors; glue wrinkles; torn edges',
+        key_features:
+          'overlapping translucent sheets; mixed overlap colors; glue wrinkles; torn edges',
       },
       ['flat digital transparency', 'opaque paper cutout', 'photographic realism'],
       [
@@ -201,8 +202,7 @@ const spec: Spec = {
           'Soft even light over a matte surface, with subtle relief where pulp was layered thicker.',
         texture_and_material:
           'Fibrous feathered edges, lumpy pulp thickness, deckled borders and matte felted surface.',
-        camera_and_composition:
-          'Simple bold shapes on a full handmade sheet with deckled edges.',
+        camera_and_composition: 'Simple bold shapes on a full handmade sheet with deckled edges.',
         atmosphere_and_mood: 'Earthy, calm and tactile, color grown into the paper itself.',
         rendering_and_quality:
           'Authentic fibrous pulp edges and matte color, never crisp paint strokes.',
@@ -235,7 +235,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Mysterious, glowing and unexpected, light pulled from darkness.',
         rendering_and_quality:
           'Authentic bleach-lift colors and soft edges, never white paint on dark paper.',
-        key_features: 'bleach lines on dark paper; rust and pink lifted tones; soft bleed; cockled sheet',
+        key_features:
+          'bleach lines on dark paper; rust and pink lifted tones; soft bleed; cockled sheet',
       },
       ['white paint on dark paper', 'neon digital lines', 'clean vector drawing'],
       [
@@ -264,7 +265,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Precise, sculptural and meditative, geometry made from one sheet.',
         rendering_and_quality:
           'Accurate folded geometry with real shadows, never flat drawn patterns.',
-        key_features: 'repeating pleat modules; raking light on folds; single sheet; value from shadow',
+        key_features:
+          'repeating pleat modules; raking light on folds; single sheet; value from shadow',
       },
       ['flat printed pattern', 'color painted on paper', 'loose crumpled paper'],
       [
@@ -322,7 +324,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Vivid, soft and fragile, color that could blow away.',
         rendering_and_quality:
           'Authentic dusted powder texture and matte saturation, never liquid paint.',
-        key_features: 'dusted raw pigment; velvety matte fields; feathered stencil edges; loose grains',
+        key_features:
+          'dusted raw pigment; velvety matte fields; feathered stencil edges; loose grains',
       },
       ['liquid paint strokes', 'glossy surface', 'hard vector edges'],
       [

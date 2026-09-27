@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Maximal crowded collage, framed the way Pen & Pixel 1998 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with over-the-top bling bravado.
   rendering_and_quality: Faithful late-nineties Southern rap cover design, in the recognizable hand of Pen & Pixel 1998.
-  creative_brief: 'Pen & Pixel Graphics Southern rap cover look of the late 1990s: over-the-top digital collage, chrome and gold 3D lettering, mansions, cars, flames, diamonds and maximal bling. Carry it through Pen & Pixel chrome letters, bling collage, flames. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Pen & Pixel Graphics Southern rap cover look of the late 1990s: over-the-top digital collage, chrome and gold 3D lettering, mansions, cars, flames, diamonds and maximal bling. Carry it through Pen & Pixel chrome letters, bling collage, flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pen & Pixel chrome letters; bling collage; flames
 avoidRules:
   - real rappers

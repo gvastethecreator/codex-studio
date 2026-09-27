@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as running sprites in jungle and alien base stages. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Jungle green, waterfall blue and alien flesh red.
-  lighting_and_shadow: "Flat bright arcade colors in green jungle and grey metal, with no shading."
+  lighting_and_shadow: 'Flat bright arcade colors in green jungle and grey metal, with no shading.'
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Side-scrolling run-and-gun view, framed the way Contra 1987 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with explosive action bravado.
-  rendering_and_quality: "A 1987 NES frame at 256 by 240: small running soldier sprites, waterfalls and palm tiles, bright bullet dots."
-  creative_brief: 'Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy. Carry it through Contra jungle, waterfalls, spread shot, alien bases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1987 NES frame at 256 by 240: small running soldier sprites, waterfalls and palm tiles, bright bullet dots.'
+  creative_brief: "Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy. Carry it through Contra jungle, waterfalls, spread shot, alien bases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Contra jungle; waterfalls; spread shot; alien bases
 avoidRules:
   - two shirtless commandos with bandanas

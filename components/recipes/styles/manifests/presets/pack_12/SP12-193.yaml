@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-outlined cel-shaded samurai in flowing clothing. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Maple red, ink black and parchment, true to the Samurai Shodown 2019 palette.
-  lighting_and_shadow: "Bold toon light with ink-brushed shadows and maple leaves in the air."
-  texture_and_material: "Ink-brush outlines and flat cel fills on flowing clothing."
+  lighting_and_shadow: 'Bold toon light with ink-brushed shadows and maple leaves in the air.'
+  texture_and_material: 'Ink-brush outlines and flat cel fills on flowing clothing.'
   camera_and_composition: Side-on duel camera, framed the way Samurai Shodown 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense single-strike duel.
-  rendering_and_quality: "A 2019 frame at 1920 by 1080 from the side: two samurai dueling, health bar shapes across the top."
-  creative_brief: 'SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages. Carry it through Samurai Shodown ink cel, maple leaves, duel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2019 frame at 1920 by 1080 from the side: two samurai dueling, health bar shapes across the top.'
+  creative_brief: "SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages. Carry it through Samurai Shodown ink cel, maple leaves, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Samurai Shodown ink cel; maple leaves; duel
 avoidRules:
   - existing Samurai Shodown fighters

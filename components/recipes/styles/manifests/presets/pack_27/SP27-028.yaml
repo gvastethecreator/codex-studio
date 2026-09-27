@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Moor wides and brightly lit transformation close-ups, framed the way An American Werewolf in London 1981 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with darkly comic dread.
   rendering_and_quality: Darkly comic eighties horror frame, in the recognizable hand of An American Werewolf in London 1981.
-  creative_brief: 'John Landis An American Werewolf in London (1981) look: foggy Yorkshire moors, cozy pubs, full moons, darkly comic tone and practical transformation effects under bright light. Carry it through Moors and pubs, full moon, comic dread, transformation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Landis An American Werewolf in London (1981) look: foggy Yorkshire moors, cozy pubs, full moons, darkly comic tone and practical transformation effects under bright light. Carry it through Moors and pubs, full moon, comic dread, transformation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Moors and pubs; full moon; comic dread; transformation
 avoidRules:
   - existing franchise characters

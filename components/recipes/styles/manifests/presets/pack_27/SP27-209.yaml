@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Long continuous tracking takes, framed the way Hard Boiled 1992 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with frantic heroic chaos.
   rendering_and_quality: Authentic early-nineties Hong Kong action frame, in the recognizable hand of Hard Boiled 1992.
-  creative_brief: 'John Woo Hard Boiled (1992) look: Hong Kong teahouse and hospital shootouts, a long continuous take through corridors, babies carried through gunfire, jazz clubs and hard blue grade. Carry it through Hard Boiled long take, teahouse, hospital corridors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Woo Hard Boiled (1992) look: Hong Kong teahouse and hospital shootouts, a long continuous take through corridors, babies carried through gunfire, jazz clubs and hard blue grade. Carry it through Hard Boiled long take, teahouse, hospital corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hard Boiled long take; teahouse; hospital corridors
 avoidRules:
   - existing franchise characters

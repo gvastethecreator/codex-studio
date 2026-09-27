@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Centered monumental composition, framed the way Zdzislaw Beksinski composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with silent apocalyptic dread.
   rendering_and_quality: Fantastic realism oil painting, in the recognizable hand of Zdzislaw Beksinski.
-  creative_brief: 'Zdzisław Beksiński fantastic realism: dystopian surreal landscapes of decaying organic architecture, skeletal figures, burnt orange and ochre skies and silent apocalyptic dread. Carry it through Beksiński decay, skeletal forms, ochre skies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Zdzisław Beksiński fantastic realism: dystopian surreal landscapes of decaying organic architecture, skeletal figures, burnt orange and ochre skies and silent apocalyptic dread. Carry it through Beksiński decay, skeletal forms, ochre skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Beksiński decay; skeletal forms; ochre skies
 avoidRules:
   - existing franchise characters

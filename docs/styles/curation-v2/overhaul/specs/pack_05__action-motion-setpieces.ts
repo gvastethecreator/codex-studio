@@ -45,9 +45,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sprinting straight at the viewer down a narrow medieval street, a courier with a satchel of urgent letters kicks up blocky chunks of cobblestone as market stalls explode into flying crates behind her. No readable text or logo.",
-        "Hurrying a steaming pot of soup through a crowded kitchen, a cook skids around a corner as square shards of broken plates burst into the air behind him. No readable text or logo.",
-        "Dashing across a rain-soaked rooftop, a messenger leaps toward the lens as tiles shatter into chunky flying blocks under her boots. No readable text or logo.",
+        'Sprinting straight at the viewer down a narrow medieval street, a courier with a satchel of urgent letters kicks up blocky chunks of cobblestone as market stalls explode into flying crates behind her. No readable text or logo.',
+        'Hurrying a steaming pot of soup through a crowded kitchen, a cook skids around a corner as square shards of broken plates burst into the air behind him. No readable text or logo.',
+        'Dashing across a rain-soaked rooftop, a messenger leaps toward the lens as tiles shatter into chunky flying blocks under her boots. No readable text or logo.',
       ],
     },
     'SP13-022': {
@@ -75,9 +75,9 @@ const spec: Spec = {
       avoid: AVOID,
       dropAvoid: ['calm-composition'],
       briefs: [
-        "Looking steeply down from the clouds, a roofer walks the ridge beam of a cathedral in loose flowing strokes, the town far below twisting around her as a sudden gust tilts the whole world. No readable text or logo.",
-        "Leaning over the rail of a spiral stair in a lighthouse, a keeper watches his dropped lantern tumble down the well, the stairs curling dizzyingly below. No readable text or logo.",
-        "Clinging to the mast of a tall ship in a storm, a sailor looks down at the tiny deck as the sea swings beneath her. No readable text or logo.",
+        'Looking steeply down from the clouds, a roofer walks the ridge beam of a cathedral in loose flowing strokes, the town far below twisting around her as a sudden gust tilts the whole world. No readable text or logo.',
+        'Leaning over the rail of a spiral stair in a lighthouse, a keeper watches his dropped lantern tumble down the well, the stairs curling dizzyingly below. No readable text or logo.',
+        'Clinging to the mast of a tall ship in a storm, a sailor looks down at the tiny deck as the sea swings beneath her. No readable text or logo.',
       ],
     },
     'SP13-023': {
@@ -101,9 +101,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Spinning two long silk ribbons in a dark theater, a ribbon dancer leaves trails of sharp angular neon light that crack into triangular sparks at every turn of her wrists. No readable text or logo.",
-        "Releasing a hawk from her gloved fist, a falconer twists in a sharp Kanada-style pose as the bird bursts away trailing geometric flashes of light. No readable text or logo.",
-        "At a night fair, a fire-breather exhales a burst of flame drawn as sharp flat triangles of yellow and magenta. No readable text or logo.",
+        'Spinning two long silk ribbons in a dark theater, a ribbon dancer leaves trails of sharp angular neon light that crack into triangular sparks at every turn of her wrists. No readable text or logo.',
+        'Releasing a hawk from her gloved fist, a falconer twists in a sharp Kanada-style pose as the bird bursts away trailing geometric flashes of light. No readable text or logo.',
+        'At a night fair, a fire-breather exhales a burst of flame drawn as sharp flat triangles of yellow and magenta. No readable text or logo.',
       ],
     },
     'SP13-024': {
@@ -130,9 +130,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Bringing his hammer down on a glowing horseshoe, a burly blacksmith sends a monumental burst of sparks and shockwave across the forge that rattles every tool on the wall. No readable text or logo.",
-        "Splitting a massive log on a frozen morning, a woodcutter’s axe lands so hard that frost bursts off the surrounding trees. No readable text or logo.",
-        "A dockworker drops a crate onto a pier and the planks jump, sending a ring of water spraying outward. No readable text or logo.",
+        'Bringing his hammer down on a glowing horseshoe, a burly blacksmith sends a monumental burst of sparks and shockwave across the forge that rattles every tool on the wall. No readable text or logo.',
+        'Splitting a massive log on a frozen morning, a woodcutter’s axe lands so hard that frost bursts off the surrounding trees. No readable text or logo.',
+        'A dockworker drops a crate onto a pier and the planks jump, sending a ring of water spraying outward. No readable text or logo.',
       ],
     },
     'SP13-025': {
@@ -157,9 +157,9 @@ const spec: Spec = {
       avoid: AVOID,
       dropAvoid: ['calm-scene'],
       briefs: [
-        "Climbing a hanging rope up the face of a storm-lashed cliff, a monk surges upward in rough energetic strokes as lightning cracks across the sky behind him. No readable text or logo.",
-        "Hauling on a bell rope with her whole body, a bell-ringer is lifted off the floor as the bell swings and crackling sound waves burst upward. No readable text or logo.",
-        "A kite flier is yanked into the air by a sudden gust, her kite crackling with static in the thundercloud above. No readable text or logo.",
+        'Climbing a hanging rope up the face of a storm-lashed cliff, a monk surges upward in rough energetic strokes as lightning cracks across the sky behind him. No readable text or logo.',
+        'Hauling on a bell rope with her whole body, a bell-ringer is lifted off the floor as the bell swings and crackling sound waves burst upward. No readable text or logo.',
+        'A kite flier is yanked into the air by a sudden gust, her kite crackling with static in the thundercloud above. No readable text or logo.',
       ],
     },
   },
@@ -187,9 +187,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speed lines', 'motion blur'],
       briefs: [
-        "Slinging a ball of dough onto a floured table, a baker’s arm dissolves into a long painterly smear of motion as flour explodes into swirling teal and orange arcs. No readable text or logo.",
-        "Striking a great barrel drum at a festival, a drummer’s arms smear into bold brush arcs of color around the drumhead. No readable text or logo.",
-        "Swinging a scythe through a golden wheat field, a farmer leaves a sweeping painterly arc of gold behind the blade. No readable text or logo.",
+        'Slinging a ball of dough onto a floured table, a baker’s arm dissolves into a long painterly smear of motion as flour explodes into swirling teal and orange arcs. No readable text or logo.',
+        'Striking a great barrel drum at a festival, a drummer’s arms smear into bold brush arcs of color around the drumhead. No readable text or logo.',
+        'Swinging a scythe through a golden wheat field, a farmer leaves a sweeping painterly arc of gold behind the blade. No readable text or logo.',
       ],
     },
     {
@@ -215,9 +215,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'full-color render', 'gore'],
       briefs: [
-        "At the instant a stone-carver’s mallet strikes a chisel into a marble block, the whole workshop flips into a black-and-white negative as brushy shards burst from the stone. No readable text or logo.",
-        "A draft horse’s hoof lands on a cobblestone and the street flashes into an inverted negative image around the spark. No readable text or logo.",
-        "A blacksmith quenches a blade in water and the burst of steam turns the frame into a glowing negative. No readable text or logo.",
+        'At the instant a stone-carver’s mallet strikes a chisel into a marble block, the whole workshop flips into a black-and-white negative as brushy shards burst from the stone. No readable text or logo.',
+        'A draft horse’s hoof lands on a cobblestone and the street flashes into an inverted negative image around the spark. No readable text or logo.',
+        'A blacksmith quenches a blade in water and the burst of steam turns the frame into a glowing negative. No readable text or logo.',
       ],
     },
     {
@@ -243,9 +243,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'motion blur'],
       briefs: [
-        "Casting a round net over a river at dawn, a fisherman is frozen mid-throw as the net spreads like a perfect circle and every droplet from its edges hangs in the air around him. No readable text or logo.",
-        "A miller drops a sack of flour and the whole cloud of flour freezes mid-burst around her startled face. No readable text or logo.",
-        "On a busy market square, a street juggler freezes mid-performance with five oranges suspended in a perfect arc above her hands while a pigeon hangs mid-flap beside them. No readable text or logo.",
+        'Casting a round net over a river at dawn, a fisherman is frozen mid-throw as the net spreads like a perfect circle and every droplet from its edges hangs in the air around him. No readable text or logo.',
+        'A miller drops a sack of flour and the whole cloud of flour freezes mid-burst around her startled face. No readable text or logo.',
+        'On a busy market square, a street juggler freezes mid-performance with five oranges suspended in a perfect arc above her hands while a pigeon hangs mid-flap beside them. No readable text or logo.',
       ],
     },
     {
@@ -271,9 +271,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'radial speed lines'],
       briefs: [
-        "Galloping a grey horse along a coastal road at sunset, a messenger stays crisp and sharp while the cliffs and sea behind her streak into long golden horizontal lines. No readable text or logo.",
-        "Running along a wooden pier to catch a departing ferry, a woman stays sharp as the boats behind her blur into streaks of color. No readable text or logo.",
-        "A cyclist races down a mountain road as the pine forest behind her smears into green horizontal streaks. No readable text or logo.",
+        'Galloping a grey horse along a coastal road at sunset, a messenger stays crisp and sharp while the cliffs and sea behind her streak into long golden horizontal lines. No readable text or logo.',
+        'Running along a wooden pier to catch a departing ferry, a woman stays sharp as the boats behind her blur into streaks of color. No readable text or logo.',
+        'A cyclist races down a mountain road as the pine forest behind her smears into green horizontal streaks. No readable text or logo.',
       ],
     },
     {
@@ -299,9 +299,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Seen from directly below, a thief leaps the gap between two rooftops against a full moon, her body drawn in raw wild scribbles that seem to vibrate with the jump. No readable text or logo.",
-        "A salmon leaps up a waterfall directly overhead, its body a rough scribbled silhouette against the bright spray. No readable text or logo.",
-        "A dancer jumps over the camera at a street festival, her skirts a messy explosion of rough lines against the lanterns. No readable text or logo.",
+        'Seen from directly below, a thief leaps the gap between two rooftops against a full moon, her body drawn in raw wild scribbles that seem to vibrate with the jump. No readable text or logo.',
+        'A salmon leaps up a waterfall directly overhead, its body a rough scribbled silhouette against the bright spray. No readable text or logo.',
+        'A dancer jumps over the camera at a street festival, her skirts a messy explosion of rough lines against the lanterns. No readable text or logo.',
       ],
     },
     {
@@ -327,9 +327,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'fisheye distortion'],
       briefs: [
-        "On the deck of a heeling ship in a storm, a sailor hauls a heavy line with her whole body as the entire canted frame slants with the rolling sea. No readable text or logo.",
-        "Pushing a loaded handcart up a steep village lane, a woman leans hard into the slope as the tilted frame emphasizes every step. No readable text or logo.",
-        "A tug-of-war team strains against the rope at a harvest festival, the frame tilted with the pull. No readable text or logo.",
+        'On the deck of a heeling ship in a storm, a sailor hauls a heavy line with her whole body as the entire canted frame slants with the rolling sea. No readable text or logo.',
+        'Pushing a loaded handcart up a steep village lane, a woman leans hard into the slope as the tilted frame emphasizes every step. No readable text or logo.',
+        'A tug-of-war team strains against the rope at a harvest festival, the frame tilted with the pull. No readable text or logo.',
       ],
     },
     {
@@ -356,9 +356,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speech balloons', 'panel numbers', 'different characters per panel'],
       briefs: [
-        "Across three panels, a shepherd vaults a dry-stone wall with his crook: crouching to push off, flying over the stones, and landing among his sheep who barely look up. No readable text or logo.",
-        "In three beats, a red fox crouches, arcs high and plunges headfirst into deep snow after a mouse. No readable text or logo.",
-        "Three panels show an old woman stepping off a train: reaching for the rail, stepping down and smiling at her grandson. No readable text or logo.",
+        'Across three panels, a shepherd vaults a dry-stone wall with his crook: crouching to push off, flying over the stones, and landing among his sheep who barely look up. No readable text or logo.',
+        'In three beats, a red fox crouches, arcs high and plunges headfirst into deep snow after a mouse. No readable text or logo.',
+        'Three panels show an old woman stepping off a train: reaching for the rail, stepping down and smiling at her grandson. No readable text or logo.',
       ],
     },
     {
@@ -384,9 +384,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Inside a stone belfry, a raven sweeps right past the lens so close that one wing fills half the frame, while the bell-ringer behind it looks up in surprise. No readable text or logo.",
-        "Hurrying through a busy market, a flower seller brushes past the camera, a bouquet of sunflowers filling the foreground. No readable text or logo.",
-        "A cat leaps from a windowsill right past the lens, its tail sweeping across the frame. No readable text or logo.",
+        'Inside a stone belfry, a raven sweeps right past the lens so close that one wing fills half the frame, while the bell-ringer behind it looks up in surprise. No readable text or logo.',
+        'Hurrying through a busy market, a flower seller brushes past the camera, a bouquet of sunflowers filling the foreground. No readable text or logo.',
+        'A cat leaps from a windowsill right past the lens, its tail sweeping across the frame. No readable text or logo.',
       ],
     },
     {
@@ -412,9 +412,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'perspective tilt'],
       briefs: [
-        "Seen from directly above, a flock of white doves spirals low over a cloister fountain, their flight paths curling into a perfect swirling pattern around the water. No readable text or logo.",
-        "Scattering grain in wide spirals, a farmer is circled by a whirling flock of hens seen from overhead. No readable text or logo.",
-        "Seen from high above a frozen village pond, a dozen skaters spiral outward, their curved blade tracks forming one perfect swirling whirlpool in the ice. No readable text or logo.",
+        'Seen from directly above, a flock of white doves spirals low over a cloister fountain, their flight paths curling into a perfect swirling pattern around the water. No readable text or logo.',
+        'Scattering grain in wide spirals, a farmer is circled by a whirling flock of hens seen from overhead. No readable text or logo.',
+        'Seen from high above a frozen village pond, a dozen skaters spiral outward, their curved blade tracks forming one perfect swirling whirlpool in the ice. No readable text or logo.',
       ],
     },
     {
@@ -441,9 +441,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'broken anatomy'],
       briefs: [
-        "Tossing a ripe pear straight at the viewer, an orchard keeper’s hand swells enormous in an ultra-wide fisheye frame while the trees curve around her. No readable text or logo.",
-        "Leaning over a crowded tavern bar, a barmaid lunges to catch a falling beer mug, her outstretched hand looming enormous toward the fisheye lens. No readable text or logo.",
-        "A child-sized robot vendor thrusts an ice cream cone at the camera, the cone massive in the foreground. No readable text or logo.",
+        'Tossing a ripe pear straight at the viewer, an orchard keeper’s hand swells enormous in an ultra-wide fisheye frame while the trees curve around her. No readable text or logo.',
+        'Leaning over a crowded tavern bar, a barmaid lunges to catch a falling beer mug, her outstretched hand looming enormous toward the fisheye lens. No readable text or logo.',
+        'A child-sized robot vendor thrusts an ice cream cone at the camera, the cone massive in the foreground. No readable text or logo.',
       ],
     },
     {
@@ -468,9 +468,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'motion blur'],
       briefs: [
-        "Turning sharply on a windy castle battlement, a noblewoman stops still while her long cloak and hair keep sweeping around her in graceful trailing arcs. No readable text or logo.",
-        "Leaping down from a wagon, a herald lands while his long scarf and plumed hat keep trailing behind him. No readable text or logo.",
-        "Finishing a fast spin on a village stage, a folk dancer freezes in place while her long embroidered skirt keeps swirling in wide arcs around her legs. No readable text or logo.",
+        'Turning sharply on a windy castle battlement, a noblewoman stops still while her long cloak and hair keep sweeping around her in graceful trailing arcs. No readable text or logo.',
+        'Leaping down from a wagon, a herald lands while his long scarf and plumed hat keep trailing behind him. No readable text or logo.',
+        'Finishing a fast spin on a village stage, a folk dancer freezes in place while her long embroidered skirt keeps swirling in wide arcs around her legs. No readable text or logo.',
       ],
     },
     {
@@ -500,9 +500,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Rowing a tiny skiff across a vast glassy fjord, a small sailor traces a long curving wake beneath towering mountains as a pod of whales surfaces nearby. No readable text or logo.",
-        "Sliding down a huge snowy slope on a tray, a tiny figure carves a giant arc across the white mountainside. No readable text or logo.",
-        "A tiny biplane loops over a huge canyon, its trail drawing a grand arc against the sky. No readable text or logo.",
+        'Rowing a tiny skiff across a vast glassy fjord, a small sailor traces a long curving wake beneath towering mountains as a pod of whales surfaces nearby. No readable text or logo.',
+        'Sliding down a huge snowy slope on a tray, a tiny figure carves a giant arc across the white mountainside. No readable text or logo.',
+        'A tiny biplane loops over a huge canyon, its trail drawing a grand arc against the sky. No readable text or logo.',
       ],
     },
     {
@@ -528,9 +528,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'speed lines', 'motion blur'],
       briefs: [
-        "Crouched on a rock ledge at the far left of the frame, a cliff diver coils every muscle as the empty sea and sky stretch out before her, waiting for the jump. No readable text or logo.",
-        "A jester crouches before a leap in a crowded hall, all the empty space ahead of him waiting. No readable text or logo.",
-        "A cat crouches at the edge of a table, tail twitching, staring at a butterfly across the room. No readable text or logo.",
+        'Crouched on a rock ledge at the far left of the frame, a cliff diver coils every muscle as the empty sea and sky stretch out before her, waiting for the jump. No readable text or logo.',
+        'A jester crouches before a leap in a crowded hall, all the empty space ahead of him waiting. No readable text or logo.',
+        'A cat crouches at the edge of a table, tail twitching, staring at a butterfly across the room. No readable text or logo.',
       ],
     },
     {
@@ -556,9 +556,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Skimming just above the ground, the camera races alongside a hare sprinting through a golden barley field as stalks whip past and seeds scatter into the sunlight. No readable text or logo.",
-        "A team of huskies pulls a sled across fresh snow, the camera skimming the surface as powder sprays. No readable text or logo.",
-        "Racing down a steep cobbled lane, a runaway wine barrel bounces over the stones while the camera skims right behind it at ankle height. No readable text or logo.",
+        'Skimming just above the ground, the camera races alongside a hare sprinting through a golden barley field as stalks whip past and seeds scatter into the sunlight. No readable text or logo.',
+        'A team of huskies pulls a sled across fresh snow, the camera skimming the surface as powder sprays. No readable text or logo.',
+        'Racing down a steep cobbled lane, a runaway wine barrel bounces over the stones while the camera skims right behind it at ankle height. No readable text or logo.',
       ],
     },
     {
@@ -584,9 +584,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "In an extreme close-up, a hand catches a falling wine glass by its stem an inch above the stone floor as a single drop of wine leaps from the rim in a sparkling arc. No readable text or logo.",
-        "A green frog pushes off from a lily pad, its toes and a spray of water frozen in extreme close-up. No readable text or logo.",
-        "A match strikes against the box in extreme close-up, sparks bursting at the point of contact. No readable text or logo.",
+        'In an extreme close-up, a hand catches a falling wine glass by its stem an inch above the stone floor as a single drop of wine leaps from the rim in a sparkling arc. No readable text or logo.',
+        'A green frog pushes off from a lily pad, its toes and a spray of water frozen in extreme close-up. No readable text or logo.',
+        'A match strikes against the box in extreme close-up, sparks bursting at the point of contact. No readable text or logo.',
       ],
     },
   ],

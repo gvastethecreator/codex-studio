@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tall vertical scroll with figure fading at the base.
   atmosphere_and_mood: Keep the requested mood with melancholy ghostly sorrow.
   rendering_and_quality: Delicate ghostly painting, kept consistent across the whole image.
-  creative_brief: 'Yurei-zu ghost scroll: Edo-period hanging scroll paintings of pale ghosts with long loose hair, white robes, fading legs and dim lantern light. Carry it through hanging scroll, pale ghost, fading legs, lantern. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yurei-zu ghost scroll: Edo-period hanging scroll paintings of pale ghosts with long loose hair, white robes, fading legs and dim lantern light. Carry it through hanging scroll, pale ghost, fading legs, lantern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: hanging scroll; pale ghost; fading legs; lantern
 avoidRules:
   - readable Japanese text or seals

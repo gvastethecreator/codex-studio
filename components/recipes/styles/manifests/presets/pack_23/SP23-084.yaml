@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single standing figure with flaps lifted partly open.
   atmosphere_and_mood: Keep the requested mood with curious scientific wonder.
   rendering_and_quality: Clear diagrammatic figure, no graphic gore, kept consistent across the whole image.
-  creative_brief: 'Lift-flap anatomy sheet: early printed anatomical sheets with paper flaps that lift to reveal organs and skeleton beneath, woodcut figures standing calmly. Carry it through lifting flaps, standing figure, revealed layers, woodcut lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lift-flap anatomy sheet: early printed anatomical sheets with paper flaps that lift to reveal organs and skeleton beneath, woodcut figures standing calmly. Carry it through lifting flaps, standing figure, revealed layers, woodcut lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: lifting flaps; standing figure; revealed layers; woodcut lines
 avoidRules:
   - readable labels

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic angle, framed the way Go Nagai composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bold heroic bravado.
   rendering_and_quality: Bold super robot presentation with glossy painted metal.
-  creative_brief: 'Go Nagai super robot design language: towering heroic robots with bold primary colors, huge chests with emblems, horned heads, fists as weapons and larger-than-life seventies swagger. Carry it through Super robot, primary colors, horned head, heroic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Go Nagai super robot design language: towering heroic robots with bold primary colors, huge chests with emblems, horned heads, fists as weapons and larger-than-life seventies swagger. Carry it through Super robot, primary colors, horned head, heroic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Super robot; primary colors; horned head; heroic
 avoidRules:
   - Mazinger Z or Getter Robo designs

@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Collage group portrait composition, framed the way Tropicalia 1968 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with ironic tropical exuberance.
   rendering_and_quality: Faithful Tropicália collage cover design, in the recognizable hand of Tropicalia 1968.
-  creative_brief: 'Brazilian Tropicália cover look of 1968: collage of tropical kitsch, bananas and parrots, group portraits in odd costumes, psychedelic lettering and ironic sunny color. Carry it through Tropicália collage, tropical kitsch, psychedelic lettering. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Brazilian Tropicália cover look of 1968: collage of tropical kitsch, bananas and parrots, group portraits in odd costumes, psychedelic lettering and ironic sunny color. Carry it through Tropicália collage, tropical kitsch, psychedelic lettering. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tropicália collage; tropical kitsch; psychedelic lettering
 avoidRules:
   - existing franchise characters

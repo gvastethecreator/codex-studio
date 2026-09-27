@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Full-length elegant pose, framed the way Mamoru Nagano composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cold aristocratic elegance.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Mamoru Nagano Five Star Stories-inspired language: elegant tall knightly mecha with ornamental armor, flowing capes, slim waists, gothic fashion silhouettes and aristocratic grace. Carry it through Ornamental mecha, slim waist, cape, gothic fashion. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mamoru Nagano Five Star Stories-inspired language: elegant tall knightly mecha with ornamental armor, flowing capes, slim waists, gothic fashion silhouettes and aristocratic grace. Carry it through Ornamental mecha, slim waist, cape, gothic fashion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ornamental mecha; slim waist; cape; gothic fashion
 avoidRules:
   - existing Five Star Stories mortar headds

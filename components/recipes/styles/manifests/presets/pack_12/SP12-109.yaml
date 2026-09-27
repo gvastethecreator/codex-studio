@@ -26,11 +26,11 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright anime cel-shaded adventurers with detailed outfits and glowing elemental effects. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated sky blue, grass green, gold and elemental colors.
   lighting_and_shadow: Bright clean anime daylight with soft rim light.
-  texture_and_material: "Clean anime cel shading on simple stylized 3D, crisp outlines on characters and soft painted skies."
+  texture_and_material: 'Clean anime cel shading on simple stylized 3D, crisp outlines on characters and soft painted skies.'
   camera_and_composition: Third-person gliding view over islands, framed the way Genshin Impact 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright heroic wonder.
-  rendering_and_quality: "A 2020 frame at 1920 by 1080 in third person: anime adventurer gliding over floating isles, a round minimap top left and skill circles bottom right."
-  creative_brief: 'miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies. Carry it through Genshin anime cel, floating isles, gliding, elements. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 frame at 1920 by 1080 in third person: anime adventurer gliding over floating isles, a round minimap top left and skill circles bottom right.'
+  creative_brief: "miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies. Carry it through Genshin anime cel, floating isles, gliding, elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Genshin anime cel; floating isles; gliding; elements
 avoidRules:
   - existing Genshin characters

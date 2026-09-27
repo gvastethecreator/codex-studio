@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint.'
-  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: the visible paint fades to grey, revealing the artist underdrawing: sketch lines, grid squares and corrections.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: the visible paint fades to grey, revealing the artist underdrawing: sketch lines, grid squares and corrections."
   color_and_tone: Neutral greys with dark carbon lines, exactly as the instrument maps its signal.
   lighting_and_shadow: Even flat lighting, because the image shows signal, not ordinary light.
   texture_and_material: Faded paint, sketch lines and craquelure, as real instrument artifacts rather than decoration.
   camera_and_composition: Frontal view of a painting panel, matching how this instrument actually frames data.
   atmosphere_and_mood: Secretive, scholarly, quiet and revealing, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: 'Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint. Carry it through underdrawing, corrections, grey paint layer. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint. Carry it through underdrawing, corrections, grey paint layer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: underdrawing; corrections; grey paint layer
 avoidRules:
   - readable text

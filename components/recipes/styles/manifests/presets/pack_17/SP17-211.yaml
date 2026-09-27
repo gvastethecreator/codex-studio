@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Extreme foreshortened splash composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with explosive momentum, kept consistent across the whole image.
   rendering_and_quality: Crisp comic inking without lettering, kept consistent across the whole image.
-  creative_brief: 'Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color. Carry it through heavy blacks, speed lines, foreshortening, siege splash. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color. Carry it through heavy blacks, speed lines, foreshortening, siege splash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: heavy blacks; speed lines; foreshortening; siege splash
 avoidRules:
   - speech bubbles or lettering

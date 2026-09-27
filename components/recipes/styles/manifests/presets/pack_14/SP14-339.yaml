@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Single bold scene in a rectangle, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with rustic comic menace.
   rendering_and_quality: Bold carved charm, kept consistent across the whole image.
-  creative_brief: 'Cordel devil woodcut: Brazilian northeastern cordel pamphlet woodcuts with bold black carving of devils, cangaceiros and saints in rustic comic drama. Carry it through cordel woodcut, devil, cangaceiro, rough gouges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cordel devil woodcut: Brazilian northeastern cordel pamphlet woodcuts with bold black carving of devils, cangaceiros and saints in rustic comic drama. Carry it through cordel woodcut, devil, cangaceiro, rough gouges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cordel woodcut; devil; cangaceiro; rough gouges
 avoidRules:
   - cultural stereotypes or caricature

@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vessels as detailed realistic warships seen from a third-person camera. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Steel grey, ocean blue and tracer orange, true to the World of Warships 2015 palette.
-  lighting_and_shadow: "Stormy grey daylight with muzzle flashes and orange shell trails."
-  texture_and_material: "Realistic hulls, white water spray and black gun smoke, slightly soft in the distance."
+  lighting_and_shadow: 'Stormy grey daylight with muzzle flashes and orange shell trails.'
+  texture_and_material: 'Realistic hulls, white water spray and black gun smoke, slightly soft in the distance.'
   camera_and_composition: Third-person naval camera, framed the way World of Warships 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with thunderous naval clash.
-  rendering_and_quality: "A 2015 PC frame at 1920 by 1080 from a camera behind the ship: shell arcs, a minimap square and ship bar shapes at the bottom."
+  rendering_and_quality: 'A 2015 PC frame at 1920 by 1080 from a camera behind the ship: shell arcs, a minimap square and ship bar shapes at the bottom.'
   key_features: World of Warships broadside; tracers; naval camera
-  creative_brief: 'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera. Carry it through World of Warships broadside, tracers, naval camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera. Carry it through World of Warships broadside, tracers, naval camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

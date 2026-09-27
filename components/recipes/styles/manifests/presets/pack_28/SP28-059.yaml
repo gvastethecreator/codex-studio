@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low three-quarter view, framed the way Titanfall Frontier Titan composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with rugged dependable power.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Frontier titan language: utilitarian heavy combat frames with boxy torsos, cockpit hatches, bolted armor, rugged frontier wear and a single sensor eye. Carry it through Frontier titan, boxy torso, cockpit hatch, single eye. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Frontier titan language: utilitarian heavy combat frames with boxy torsos, cockpit hatches, bolted armor, rugged frontier wear and a single sensor eye. Carry it through Frontier titan, boxy torso, cockpit hatch, single eye. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Frontier titan; boxy torso; cockpit hatch; single eye
 avoidRules:
   - existing Titanfall titans

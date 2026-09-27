@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Flat side-on theatrical silhouette staging, framed the way Lotte Reiniger composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with delicate fairy tale enchantment.
   rendering_and_quality: Faithful silhouette animation frame, in the recognizable hand of Lotte Reiniger.
-  creative_brief: 'Lotte Reiniger silhouette animation look of the 1920s to 1950s: intricate black paper cutout silhouettes with lacework detail, jointed puppets against tinted backlit backgrounds and fairy tale drama. Carry it through Reiniger black cutout silhouettes, tinted backlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lotte Reiniger silhouette animation look of the 1920s to 1950s: intricate black paper cutout silhouettes with lacework detail, jointed puppets against tinted backlit backgrounds and fairy tale drama. Carry it through Reiniger black cutout silhouettes, tinted backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Reiniger black cutout silhouettes; tinted backlight
 avoidRules:
   - existing franchise characters

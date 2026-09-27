@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low heroic angle against a big sky, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with glossy heroic spectacle.
   rendering_and_quality: Hyper-glossy airbrush finish, no text, kept consistent across the whole image.
-  creative_brief: 'Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy. Carry it through mirror chrome armor, sky reflections, airbrush, low angle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy. Carry it through mirror chrome armor, sky reflections, airbrush, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: mirror chrome armor; sky reflections; airbrush; low angle
 avoidRules:
   - title lettering

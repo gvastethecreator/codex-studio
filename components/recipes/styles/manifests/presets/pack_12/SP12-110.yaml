@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as part of a first-person puzzle space of beams, pedestals and sealed stone doors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm sunlit stone, cool shadow and colored beam light.
-  lighting_and_shadow: "Warm Mediterranean sun on ruins, with clean straight colored light beams connecting devices."
-  texture_and_material: "Realistic weathered stone and brushed metal pedestals, with clean simple puzzle devices."
+  lighting_and_shadow: 'Warm Mediterranean sun on ruins, with clean straight colored light beams connecting devices.'
+  texture_and_material: 'Realistic weathered stone and brushed metal pedestals, with clean simple puzzle devices.'
   camera_and_composition: First-person view facing puzzle devices, framed the way The Talos Principle 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with serene philosophical puzzling.
-  rendering_and_quality: "A 2014 first-person frame at 1920 by 1080: sunlit ruin courtyard, a held connector device at the bottom, no other interface."
-  creative_brief: 'Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay. Carry it through Talos Principle ruins, light beams, sealed doors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2014 first-person frame at 1920 by 1080: sunlit ruin courtyard, a held connector device at the bottom, no other interface.'
+  creative_brief: "Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay. Carry it through Talos Principle ruins, light beams, sealed doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Talos Principle ruins; light beams; sealed doors
 avoidRules:
   - readable runes

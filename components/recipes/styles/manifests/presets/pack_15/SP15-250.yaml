@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Crowded ballroom compositions with masked faces turned toward the viewer.
   atmosphere_and_mood: Seductive, secretive and dangerous, nobody is who they seem.
   rendering_and_quality: Opulent detailed illustration with glinting masks and candle glow.
-  creative_brief: 'Masquepunk: secret masquerades of hidden identities, with ornate masks, candlelit ballrooms, occult societies, feathers and glances behind porcelain faces. Carry it through ornate masks, candlelit ballrooms, hidden identities, gold and feathers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Masquepunk: secret masquerades of hidden identities, with ornate masks, candlelit ballrooms, occult societies, feathers and glances behind porcelain faces. Carry it through ornate masks, candlelit ballrooms, hidden identities, gold and feathers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ornate masks; candlelit ballrooms; hidden identities; gold and feathers
 avoidRules:
   - readable text

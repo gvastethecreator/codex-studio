@@ -31,9 +31,9 @@ visualDna:
   texture_and_material: Wet rusty metal, cables, algae and fogged glass.
   camera_and_composition: First-person view through flooded corridors, framed the way SOMA 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with crushing existential dread.
-  rendering_and_quality: "A 2015 first-person frame at 1920 by 1080: flashlight beam in a flooded corridor, fogged glass, no interface at all."
+  rendering_and_quality: 'A 2015 first-person frame at 1920 by 1080: flashlight beam in a flooded corridor, fogged glass, no interface at all.'
   key_features: SOMA undersea station; flooded corridors; abyss windows
-  creative_brief: 'Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows. Carry it through SOMA undersea station, flooded corridors, abyss windows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows. Carry it through SOMA undersea station, flooded corridors, abyss windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small top-down pixel figures in neon-lit rooms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pulsing neon magenta, cyan and hot orange, true to the Hotline Miami 2012 palette.
-  lighting_and_shadow: "Throbbing neon pinks and cyans cycling across the whole screen."
-  texture_and_material: "Chunky low-resolution pixels with color bleeding into neighbors and a slight wobble of the whole view."
+  lighting_and_shadow: 'Throbbing neon pinks and cyans cycling across the whole screen.'
+  texture_and_material: 'Chunky low-resolution pixels with color bleeding into neighbors and a slight wobble of the whole view.'
   camera_and_composition: Top-down view with a wobbling screen, framed the way Hotline Miami 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with feverish neon frenzy.
-  rendering_and_quality: "A 2012 PC frame: small top-down pixel figures in a tilted neon room, flat floor patterns, a thick chromatic smear."
-  creative_brief: 'Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action. Carry it through Hotline Miami neon, top-down pixels, animal masks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2012 PC frame: small top-down pixel figures in a tilted neon room, flat floor patterns, a thick chromatic smear.'
+  creative_brief: "Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action. Carry it through Hotline Miami neon, top-down pixels, animal masks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hotline Miami neon; top-down pixels; animal masks
 avoidRules:
   - a man in a letterman jacket and rooster mask

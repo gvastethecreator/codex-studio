@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close cluttered framing with the altar filling the frame and darkness beyond.
   atmosphere_and_mood: Devotional, obsessive and claustrophobic, grief turned into ritual.
   rendering_and_quality: Rich warm painterly rendering with glowing flames and glossy wax detail.
-  creative_brief: 'Melting wax shrine: cramped altars heaped with candles that have burned for years, wax pouring over photographs, flowers and trinkets in frozen waterfalls. Carry it through years of melted candles, wax waterfalls, soot stains, faded photographs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Melting wax shrine: cramped altars heaped with candles that have burned for years, wax pouring over photographs, flowers and trinkets in frozen waterfalls. Carry it through years of melted candles, wax waterfalls, soot stains, faded photographs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: years of melted candles; wax waterfalls; soot stains; faded photographs
 avoidRules:
   - cold blue light

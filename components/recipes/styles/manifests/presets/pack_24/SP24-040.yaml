@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Very low horizon with sky taking most of the frame.
   atmosphere_and_mood: Free, solitary and wide open, a voice crossing empty land.
   rendering_and_quality: Flat graphic gouache painting with crisp shapes and clean color.
-  creative_brief: 'Nomad radio caravan: a lone traveler with a camel or horse carrying radio gear across a vast steppe, rendered in flat gouache with wide skies and tiny figures. Carry it through vast steppe, tiny traveler, radio antenna, enormous sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nomad radio caravan: a lone traveler with a camel or horse carrying radio gear across a vast steppe, rendered in flat gouache with wide skies and tiny figures. Carry it through vast steppe, tiny traveler, radio antenna, enormous sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: vast steppe; tiny traveler; radio antenna; enormous sky
 avoidRules:
   - city skyline

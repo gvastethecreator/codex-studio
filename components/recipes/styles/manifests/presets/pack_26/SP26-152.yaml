@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tight panel grid that bursts into a dimensional splash.
   atmosphere_and_mood: Keep the requested mood with eerie cosmic strangeness.
   rendering_and_quality: Faithful sixties Ditko comic art, in the recognizable hand of Steve Ditko.
-  creative_brief: 'Steve Ditko page look of the 1960s: stiff expressive hands, gaunt figures, floating geometric dimensions of doorways, bubbles and spirals, and tight nine-panel grids erupting into cosmic splash. Carry it through Ditko mystic dimensions, stiff expressive hands. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Steve Ditko page look of the 1960s: stiff expressive hands, gaunt figures, floating geometric dimensions of doorways, bubbles and spirals, and tight nine-panel grids erupting into cosmic splash. Carry it through Ditko mystic dimensions, stiff expressive hands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ditko mystic dimensions; stiff expressive hands
 avoidRules:
   - a sorcerer in a red cloak with a high collar

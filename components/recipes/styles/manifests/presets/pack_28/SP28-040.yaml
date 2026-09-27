@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Clean still-life view, framed the way Kinetic Articulated Wooden Mannequin composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet expressive gesture.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Artist wooden mannequin look: jointed beech drawing mannequins with ball joints, faceless heads and natural grain, posed in expressive human gestures. Carry it through Wooden mannequin, ball joints, faceless pose. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Artist wooden mannequin look: jointed beech drawing mannequins with ball joints, faceless heads and natural grain, posed in expressive human gestures. Carry it through Wooden mannequin, ball joints, faceless pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Wooden mannequin; ball joints; faceless pose
 avoidRules:
   - existing franchise characters

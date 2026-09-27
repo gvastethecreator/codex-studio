@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Lucas Pope Papers, Please (2013) look: grim low-resolution pixel art of a border checkpoint booth, muted Soviet greys and browns, document stamps and queues in the cold.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as grim muted pixel figures at a cold border booth. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted grey, drab brown and stamp red, true to the Papers Please 2013 palette.
-  lighting_and_shadow: "Flat cold light in drab greys, browns and olive with no gradients."
-  texture_and_material: "Chunky low-resolution pixels, tiny stiff figures in a queue and big pixel documents on a desk."
+  lighting_and_shadow: 'Flat cold light in drab greys, browns and olive with no gradients.'
+  texture_and_material: 'Chunky low-resolution pixels, tiny stiff figures in a queue and big pixel documents on a desk.'
   camera_and_composition: Booth desk view with a window, framed the way Papers Please 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim bureaucratic tension.
-  rendering_and_quality: "A 2013 PC frame at 570 by 320 scaled up: booth desk below, queue of small grim figures above, stamp shapes."
-  creative_brief: 'Lucas Pope Papers, Please (2013) look: grim low-resolution pixel art of a border checkpoint booth, muted Soviet greys and browns, document stamps and queues in the cold. Carry it through Papers Please booth, muted pixels, stamps, queue. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2013 PC frame at 570 by 320 scaled up: booth desk below, queue of small grim figures above, stamp shapes.'
+  creative_brief: "Lucas Pope Papers, Please (2013) look: grim low-resolution pixel art of a border checkpoint booth, muted Soviet greys and browns, document stamps and queues in the cold. Carry it through Papers Please booth, muted pixels, stamps, queue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Papers Please booth; muted pixels; stamps; queue
 avoidRules:
   - existing franchise characters

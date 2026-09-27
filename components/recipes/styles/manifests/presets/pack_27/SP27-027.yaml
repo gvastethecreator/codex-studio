@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cold clinical framing of organic machines, framed the way Videodrome 1983 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with clinical body dread.
   rendering_and_quality: Clinical eighties body horror frame, in the recognizable hand of Videodrome 1983.
-  creative_brief: 'David Cronenberg Videodrome (1983) look: grimy cathode-ray media, breathing television sets, organic technology, cold Toronto apartments and body-horror practical effects. Carry it through Cronenberg organic tech, breathing TV, body horror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Cronenberg Videodrome (1983) look: grimy cathode-ray media, breathing television sets, organic technology, cold Toronto apartments and body-horror practical effects. Carry it through Cronenberg organic tech, breathing TV, body horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Cronenberg organic tech; breathing TV; body horror
 avoidRules:
   - existing franchise characters

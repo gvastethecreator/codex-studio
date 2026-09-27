@@ -30,9 +30,9 @@ visualDna:
   texture_and_material: Painterly stylized textures on chunky low-detail 3D assets.
   camera_and_composition: High isometric tactics camera with vision cones and paths.
   atmosphere_and_mood: Keep the requested mood with sly cursed stealth.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080 from a high diagonal angle: small stylized figures, green vision cones on the ground, portrait icons at the bottom."
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080 from a high diagonal angle: small stylized figures, green vision cones on the ground, portrait icons at the bottom.'
   key_features: Shadow Gambit isometric; vision cones; cursed pirates; painterly 3D
-  creative_brief: 'Mimimi Games Shadow Gambit: The Cursed Crew (2023) look: isometric real-time stealth tactics, painterly stylized 3D, cursed pirate crews, green vision cones and glowing magic outlines. Carry it through Shadow Gambit isometric, vision cones, cursed pirates, painterly 3D. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mimimi Games Shadow Gambit: The Cursed Crew (2023) look: isometric real-time stealth tactics, painterly stylized 3D, cursed pirate crews, green vision cones and glowing magic outlines. Carry it through Shadow Gambit isometric, vision cones, cursed pirates, painterly 3D. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

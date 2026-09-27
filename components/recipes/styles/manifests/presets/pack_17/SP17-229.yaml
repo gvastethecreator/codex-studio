@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vast wide vista dwarfing figures, framed the way Wayne Barlowe composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with vast infernal awe.
   rendering_and_quality: Naturalist infernal landscape painting, in the recognizable hand of Wayne Barlowe.
-  creative_brief: 'Wayne Barlowe infernal painting: vast hellscape architecture of flesh and bone, towering bizarre demon silhouettes, hazy amber atmosphere and naturalist creature invention. Carry it through Barlowe infernal architecture, bone cities, amber haze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Wayne Barlowe infernal painting: vast hellscape architecture of flesh and bone, towering bizarre demon silhouettes, hazy amber atmosphere and naturalist creature invention. Carry it through Barlowe infernal architecture, bone cities, amber haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Barlowe infernal architecture; bone cities; amber haze
 avoidRules:
   - existing franchise characters

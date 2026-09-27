@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Eye-level product shot on a dark stand, framed the way Hot Toys Sixth Scale composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with uncanny realistic detail.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Hot Toys sixth-scale figure look: twelve-inch fully articulated figures with uncanny hyper-realistic head sculpts, tailored clothing, detailed accessories and dynamic display stands. Carry it through Hot Toys sixth scale, hyper-real head, tailored clothes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hot Toys sixth-scale figure look: twelve-inch fully articulated figures with uncanny hyper-realistic head sculpts, tailored clothing, detailed accessories and dynamic display stands. Carry it through Hot Toys sixth scale, hyper-real head, tailored clothes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hot Toys sixth scale; hyper-real head; tailored clothes
 avoidRules:
   - real celebrity likeness

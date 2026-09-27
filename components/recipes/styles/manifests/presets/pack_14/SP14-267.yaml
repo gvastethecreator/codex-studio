@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Horizontal scroll vignette, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with solemn afterlife journey.
   rendering_and_quality: Delicate papyrus painting without readable text, kept consistent across the whole image.
-  creative_brief: 'Papyrus vignette scroll: painted scenes on papyrus from funerary scrolls, delicate outline figures, soft colors and fibrous papyrus texture. Carry it through papyrus, outline figures, soft color, scroll. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Papyrus vignette scroll: painted scenes on papyrus from funerary scrolls, delicate outline figures, soft colors and fibrous papyrus texture. Carry it through papyrus, outline figures, soft color, scroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: papyrus; outline figures; soft color; scroll
 avoidRules:
   - readable hieroglyphs or cartouches

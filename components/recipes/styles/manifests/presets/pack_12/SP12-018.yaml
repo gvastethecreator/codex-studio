@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as tower-defense units, turrets and alien walkers seen from above. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Storm blue, turret orange, core cyan and steel grey.
-  lighting_and_shadow: "Stormy dark sky with bright colored turret beams and a glowing core."
-  texture_and_material: "Clean sci-fi metal plating and glowing energy, simple readable shapes seen from above."
+  lighting_and_shadow: 'Stormy dark sky with bright colored turret beams and a glowing core.'
+  texture_and_material: 'Clean sci-fi metal plating and glowing energy, simple readable shapes seen from above.'
   camera_and_composition: Elevated tower-defense camera over paths, framed the way Defense Grid 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense strategic defense.
-  rendering_and_quality: "A 2008 PC frame at 1280 by 720 from high above: turrets along a winding path, alien walkers marching toward a glowing core."
+  rendering_and_quality: 'A 2008 PC frame at 1280 by 720 from high above: turrets along a winding path, alien walkers marching toward a glowing core.'
   key_features: Defense Grid turrets; alien walkers; glowing core
-  creative_brief: 'Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core. Carry it through Defense Grid turrets, alien walkers, glowing core. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core. Carry it through Defense Grid turrets, alien walkers, glowing core. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

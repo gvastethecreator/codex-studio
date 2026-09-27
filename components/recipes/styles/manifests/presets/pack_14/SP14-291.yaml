@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Folded pages with painted panels, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with sacred calendrical mystery.
   rendering_and_quality: Flat painted codex without readable glyphs, kept consistent across the whole image.
-  creative_brief: 'Maya screenfold codex: folded bark-paper books painted on lime plaster with gods, calendar cycles and rain scenes in red, black and Maya blue. Carry it through screenfold, bark paper, red and black, Maya blue. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Maya screenfold codex: folded bark-paper books painted on lime plaster with gods, calendar cycles and rain scenes in red, black and Maya blue. Carry it through screenfold, bark paper, red and black, Maya blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: screenfold; bark paper; red and black; Maya blue
 avoidRules:
   - readable glyphs

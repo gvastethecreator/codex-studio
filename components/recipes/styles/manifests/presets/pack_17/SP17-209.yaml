@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down or angled field with banners, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with orderly strategic clarity.
   rendering_and_quality: Crisp graphic design with no text, kept consistent across the whole image.
-  creative_brief: 'Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners. Carry it through flat heraldic color, banners, map-like field, clean shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners. Carry it through flat heraldic color, banners, map-like field, clean shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flat heraldic color; banners; map-like field; clean shapes
 avoidRules:
   - readable mottoes

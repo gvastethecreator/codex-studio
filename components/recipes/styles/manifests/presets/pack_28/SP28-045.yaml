@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-mode design sheet or mid-transformation view, framed the way Shoji Kawamori composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with clever engineering delight.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Shoji Kawamori variable mecha language: believable transformable designs with a vehicle mode, a hybrid mode and a humanoid mode, exposed transformation joints and aerospace detailing. Carry it through Kawamori variable mecha, three modes, transformation joints. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Shoji Kawamori variable mecha language: believable transformable designs with a vehicle mode, a hybrid mode and a humanoid mode, exposed transformation joints and aerospace detailing. Carry it through Kawamori variable mecha, three modes, transformation joints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kawamori variable mecha; three modes; transformation joints
 avoidRules:
   - Valkyrie fighter from Macross

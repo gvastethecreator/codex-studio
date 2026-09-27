@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low macro ground-level view, framed the way Plastic Army Men composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful mock heroism.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Green plastic toy soldier look: cheap molded olive plastic figures in frozen poses with flat bases and mold seams, staged in backyard or kitchen-table battles. Carry it through Green army men, molded plastic, mock battle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Green plastic toy soldier look: cheap molded olive plastic figures in frozen poses with flat bases and mold seams, staged in backyard or kitchen-table battles. Carry it through Green army men, molded plastic, mock battle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Green army men; molded plastic; mock battle
 avoidRules:
   - existing franchise characters

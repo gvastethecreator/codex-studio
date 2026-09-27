@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Four tiers of clear, evenly spaced adventure panels.
   atmosphere_and_mood: Keep the requested mood with clear adventurous curiosity.
   rendering_and_quality: Faithful ligne claire album page, in the recognizable hand of Hergé.
-  creative_brief: 'Hergé ligne claire look of the 1940s to 1970s: uniform clean contour line, no hatching, flat even color, meticulously researched cars, planes and cities, and readable left-to-right action. Carry it through Hergé ligne claire, uniform line, flat color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hergé ligne claire look of the 1940s to 1970s: uniform clean contour line, no hatching, flat even color, meticulously researched cars, planes and cities, and readable left-to-right action. Carry it through Hergé ligne claire, uniform line, flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hergé ligne claire; uniform line; flat color
 avoidRules:
   - a young reporter with a blond quiff and plus-fours

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide canvas packed with episodes, the champion painted largest at the center.
   atmosphere_and_mood: Keep the requested mood with rousing heroic storytelling.
   rendering_and_quality: Bold naive-heroic painting with dense narrative crowds, kept consistent across the whole image.
-  creative_brief: 'Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth. Carry it through champion in tiger skin, many episodes at once, white demon, crowded canvas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth. Carry it through champion in tiger skin, many episodes at once, white demon, crowded canvas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: champion in tiger skin; many episodes at once; white demon; crowded canvas
 avoidRules:
   - cultural stereotypes or caricature

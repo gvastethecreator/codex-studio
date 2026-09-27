@@ -26,7 +26,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with bright heroic wonder.
   rendering_and_quality: Bright 1994 TMS television frame with gem sparkle and heroic energy.
   key_features: Rayearth gem armor; CLAMP nineties; floating islands; speed lines
-  creative_brief: 'TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - three schoolgirls in red, blue and green magic armor
   - star-spangled red, white and blue heroine armor

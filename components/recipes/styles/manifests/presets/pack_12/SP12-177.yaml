@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side-view adventure scene, framed the way Return to Monkey Island 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wry piratical comedy.
   rendering_and_quality: 'A 2022 frame at 1920 by 1080: angular cutout pirates on a paper-cut island, no interface.'
-  creative_brief: 'Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging. Carry it through Return to Monkey Island paper cutout, pirates. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging. Carry it through Return to Monkey Island paper cutout, pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Return to Monkey Island paper cutout; pirates
 avoidRules:
   - a skinny pirate with a ponytail in a long red coat

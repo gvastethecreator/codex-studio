@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low table-level view among dice, framed the way D&D Painted Mini composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy game-night adventure.
   rendering_and_quality: Warm tabletop game-night photograph, in the recognizable hand of D&D Painted Mini.
-  creative_brief: 'Fantasy role-playing miniature look: painted pewter or resin adventurer minis on round bases, standing on grid battle maps with dice and character sheets around them. Carry it through RPG miniature, grid battle map, dice. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fantasy role-playing miniature look: painted pewter or resin adventurer minis on round bases, standing on grid battle maps with dice and character sheets around them. Carry it through RPG miniature, grid battle map, dice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: RPG miniature; grid battle map; dice
 avoidRules:
   - existing franchise characters

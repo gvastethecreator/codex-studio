@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tight claustrophobic framing with pipes and equipment crowding the edges.
   atmosphere_and_mood: Tense, quiet and focused, listening to the dark sea.
   rendering_and_quality: Moody chiaroscuro painting with crisp glowing instrument highlights.
-  creative_brief: 'Submarine night watch: a single sailor on watch in a cramped red-lit control room, painted in tight chiaroscuro with gauges glowing in the gloom. Carry it through red night lighting, cramped control room, glowing gauges, lone watcher. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Submarine night watch: a single sailor on watch in a cramped red-lit control room, painted in tight chiaroscuro with gauges glowing in the gloom. Carry it through red night lighting, cramped control room, glowing gauges, lone watcher. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: red night lighting; cramped control room; glowing gauges; lone watcher
 avoidRules:
   - daylight

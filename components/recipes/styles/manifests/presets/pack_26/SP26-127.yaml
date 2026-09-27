@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: All-over curvilinear composition, framed the way Psychedelic Poster Sixties composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dizzy psychedelic euphoria.
   rendering_and_quality: Faithful sixties psychedelic cover design, in the recognizable hand of Psychedelic Poster Sixties.
-  creative_brief: 'San Francisco psychedelic rock look of 1966 to 1968 after Wes Wilson and Victor Moscoso: melting balloon lettering filling every space, vibrating complementary colors and Art Nouveau curves. Carry it through Psychedelic melting letters, vibrating color, Art Nouveau. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "San Francisco psychedelic rock look of 1966 to 1968 after Wes Wilson and Victor Moscoso: melting balloon lettering filling every space, vibrating complementary colors and Art Nouveau curves. Carry it through Psychedelic melting letters, vibrating color, Art Nouveau. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Psychedelic melting letters; vibrating color; Art Nouveau
 avoidRules:
   - existing franchise characters

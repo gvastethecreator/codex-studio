@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a bold cel-shaded tokusatsu hero on a 2.5D comic film set. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pop-art red, yellow, pink and black, true to the Viewtiful Joe 2003 palette.
-  lighting_and_shadow: "Flat comic-book light with a hot glow and blur trail when time slows."
-  texture_and_material: "Thick ink outlines, flat bright fills, speed lines and flat cardboard-looking scenery."
+  lighting_and_shadow: 'Flat comic-book light with a hot glow and blur trail when time slows.'
+  texture_and_material: 'Thick ink outlines, flat bright fills, speed lines and flat cardboard-looking scenery.'
   camera_and_composition: 2.5D side-scrolling film set view, framed the way Viewtiful Joe 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with outrageous heroic swagger.
-  rendering_and_quality: "A 2003 GameCube frame at 640 by 480: side-scrolling comic panel look with film grain and bright pop colors."
-  creative_brief: 'Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color. Carry it through Viewtiful Joe comic cel, tokusatsu poses, speed lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2003 GameCube frame at 640 by 480: side-scrolling comic panel look with film grain and bright pop colors.'
+  creative_brief: "Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color. Carry it through Viewtiful Joe comic cel, tokusatsu poses, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Viewtiful Joe comic cel; tokusatsu poses; speed lines
 avoidRules:
   - a red hero with a V-shaped visor and scarf

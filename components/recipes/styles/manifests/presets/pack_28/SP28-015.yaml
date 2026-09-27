@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal product shot, framed the way Soft Vinyl Statue composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with nostalgic playful charm.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Retro soft vinyl statue look: glossy hollow vinyl figures with sprayed gradients, cartoon simplified sculpts and a vintage packaging backdrop. Carry it through Soft vinyl, sprayed gradients, retro sculpt. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Retro soft vinyl statue look: glossy hollow vinyl figures with sprayed gradients, cartoon simplified sculpts and a vintage packaging backdrop. Carry it through Soft vinyl, sprayed gradients, retro sculpt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Soft vinyl; sprayed gradients; retro sculpt
 avoidRules:
   - existing franchise characters

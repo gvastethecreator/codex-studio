@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide mall-atrium frames and miniature dome exteriors, framed the way Logans Run 1976 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with pastel utopian unease.
   rendering_and_quality: Authentic seventies utopia science fiction frame, in the recognizable hand of Logans Run 1976.
-  creative_brief: 'Michael Anderson Logan’s Run (1976) look: seventies domed-city utopia shot in shopping malls, pastel tunics, glowing palm crystals, miniature domes and a wild overgrown Washington outside. Carry it through Logan''s Run domes, pastel tunics, mall utopia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Michael Anderson Logan’s Run (1976) look: seventies domed-city utopia shot in shopping malls, pastel tunics, glowing palm crystals, miniature domes and a wild overgrown Washington outside. Carry it through Logan's Run domes, pastel tunics, mall utopia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Logan's Run domes; pastel tunics; mall utopia
 avoidRules:
   - a glowing red crystal in a palm

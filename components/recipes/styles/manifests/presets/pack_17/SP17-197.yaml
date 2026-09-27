@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low wide view with the foe under the window.
   atmosphere_and_mood: Keep the requested mood with sacred grand confrontation.
   rendering_and_quality: Painterly light with clear scale, kept consistent across the whole image.
-  creative_brief: 'Stained-glass boss hall direction: vast boss chambers lit by colossal stained-glass windows, colored light pooling on the floor around a towering foe. Carry it through stained-glass light, colored pools, vast hall, towering foe. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stained-glass boss hall direction: vast boss chambers lit by colossal stained-glass windows, colored light pooling on the floor around a towering foe. Carry it through stained-glass light, colored pools, vast hall, towering foe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stained-glass light; colored pools; vast hall; towering foe
 avoidRules:
   - interface or HUD

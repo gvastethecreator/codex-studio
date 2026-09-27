@@ -22,13 +22,13 @@ visualDna:
   aesthetic: 'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as an original goofy cartoon vegetable fighter or shambling cartoon enemy with big eyes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lawn green, sunny yellow and dusk purple, true to the Plants vs Zombies 2009 palette.
-  lighting_and_shadow: "Bright cartoon daylight or cool moonlight, even and cheerful."
-  texture_and_material: "Flat cartoon shapes with soft simple shading, bouncy outlines and a lawn in checkered green rows."
+  lighting_and_shadow: 'Bright cartoon daylight or cool moonlight, even and cheerful.'
+  texture_and_material: 'Flat cartoon shapes with soft simple shading, bouncy outlines and a lawn in checkered green rows.'
   camera_and_composition: Side-on lawn grid view, framed the way Plants vs Zombies 2009 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with goofy spooky fun.
-  rendering_and_quality: "A 2009 PC frame at 800 by 600: side-on lawn grid with a house at left, a seed-packet bar of blank cards along the top."
+  rendering_and_quality: 'A 2009 PC frame at 800 by 600: side-on lawn grid with a house at left, a seed-packet bar of blank cards along the top.'
   key_features: PvZ lawn grid; goofy plants; cartoon defense
-  creative_brief: 'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left. Carry it through PvZ lawn grid, goofy plants, cartoon defense. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left. Carry it through PvZ lawn grid, goofy plants, cartoon defense. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a green pea-shooting plant
   - a smiling sunflower that makes sun

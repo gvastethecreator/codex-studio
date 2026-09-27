@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Lucas Pope Return of the Obra Dinn (2018) look: 1-bit dithered monochrome 3D like an old Macintosh, frozen tableaux of deaths aboard an East Indiaman ship, and deduction.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a frozen 1-bit dithered monochrome tableau. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 1-bit black and pale green-white only, true to the Return of the Obra Dinn 2018 palette.
-  lighting_and_shadow: "Light made only of dither dot density, no grey tones at all."
-  texture_and_material: "Every surface pure black or pure white dots in coarse dither patterns."
+  lighting_and_shadow: 'Light made only of dither dot density, no grey tones at all.'
+  texture_and_material: 'Every surface pure black or pure white dots in coarse dither patterns.'
   camera_and_composition: First-person frozen tableau view, framed the way Return of the Obra Dinn 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie frozen mystery.
-  rendering_and_quality: "A 2018 frame at 640 by 360 scaled up: first-person frozen scene on a ship in two colors only."
-  creative_brief: 'Lucas Pope Return of the Obra Dinn (2018) look: 1-bit dithered monochrome 3D like an old Macintosh, frozen tableaux of deaths aboard an East Indiaman ship, and deduction. Carry it through Obra Dinn 1-bit dither, frozen tableaux, ship. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2018 frame at 640 by 360 scaled up: first-person frozen scene on a ship in two colors only.'
+  creative_brief: "Lucas Pope Return of the Obra Dinn (2018) look: 1-bit dithered monochrome 3D like an old Macintosh, frozen tableaux of deaths aboard an East Indiaman ship, and deduction. Carry it through Obra Dinn 1-bit dither, frozen tableaux, ship. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Obra Dinn 1-bit dither; frozen tableaux; ship
 avoidRules:
   - existing franchise characters

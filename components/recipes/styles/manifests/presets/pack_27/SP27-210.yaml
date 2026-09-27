@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low speedometer inserts and wide freeway shots, framed the way Speed 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sweaty ticking suspense.
   rendering_and_quality: Authentic mid-nineties action frame, in the recognizable hand of Speed 1994.
-  creative_brief: 'Jan de Bont Speed (1994) look: sunny Los Angeles freeways, a runaway city bus, gaps in overpasses, sweaty passengers and ticking-clock highway suspense. Carry it through Speed runaway bus, freeway, ticking suspense. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jan de Bont Speed (1994) look: sunny Los Angeles freeways, a runaway city bus, gaps in overpasses, sweaty passengers and ticking-clock highway suspense. Carry it through Speed runaway bus, freeway, ticking suspense. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Speed runaway bus; freeway; ticking suspense
 avoidRules:
   - existing franchise characters

@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Single stark ink panel, framed the way Raymond Pettibon composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sardonic suburban dread.
   rendering_and_quality: Faithful eighties hardcore punk cover, in the recognizable hand of Raymond Pettibon.
-  creative_brief: 'Raymond Pettibon SST Records cover look of the 1980s: raw black ink brush drawings, sardonic handwritten captions, noir and suburban imagery, stark black on white. Carry it through Pettibon raw ink, sardonic handwriting, stark. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Raymond Pettibon SST Records cover look of the 1980s: raw black ink brush drawings, sardonic handwritten captions, noir and suburban imagery, stark black on white. Carry it through Pettibon raw ink, sardonic handwriting, stark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pettibon raw ink; sardonic handwriting; stark
 avoidRules:
   - four black bars logo

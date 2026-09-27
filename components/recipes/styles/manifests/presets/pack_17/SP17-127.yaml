@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close dramatic workshop view around the anvil, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fierce creative power.
   rendering_and_quality: Vivid glow with readable metal forms, kept consistent across the whole image.
-  creative_brief: 'Plasma rune forge: dark forges where metal is shaped with glowing plasma and runes that burn into the steel, sparks and white-hot light in a black workshop. Carry it through plasma glow, burning runes, sparks, black forge. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Plasma rune forge: dark forges where metal is shaped with glowing plasma and runes that burn into the steel, sparks and white-hot light in a black workshop. Carry it through plasma glow, burning runes, sparks, black forge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: plasma glow; burning runes; sparks; black forge
 avoidRules:
   - readable runes or text

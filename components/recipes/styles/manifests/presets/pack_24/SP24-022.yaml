@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Television in frame or just off it, with the room disappearing into darkness.
   atmosphere_and_mood: Lonely, hypnotic and uneasy, something wants to come through.
   rendering_and_quality: Grainy painterly rendering with flickering light falloff and deep black corners.
-  creative_brief: 'Static-glow television room: a dark room lit only by an old television showing static, the grey light flickering over furniture and faces. Carry it through television static glow, flickering shadows, dark room, curved screen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Static-glow television room: a dark room lit only by an old television showing static, the grey light flickering over furniture and faces. Carry it through television static glow, flickering shadows, dark room, curved screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: television static glow; flickering shadows; dark room; curved screen
 avoidRules:
   - bright daylight

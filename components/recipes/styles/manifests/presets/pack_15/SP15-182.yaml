@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Cellar interiors packed with vats and glowing glass vessels.
   atmosphere_and_mood: Bubbling and convivial, a slow alchemy of patience, sugar and time.
   rendering_and_quality: Warm glowing illustration with rich liquid and copper detail.
-  creative_brief: 'Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories. Carry it through bubbling vats, copper stills, glowing amber jars, living cultures. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories. Carry it through bubbling vats, copper stills, glowing amber jars, living cultures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bubbling vats; copper stills; glowing amber jars; living cultures
 avoidRules:
   - readable text

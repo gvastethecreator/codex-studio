@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as small pixel characters standing in moody painted-looking Caribbean scenes. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as small pixel characters standing in moody painted-looking Caribbean scenes. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Moody Caribbean night blue, tavern orange and sea teal.
-  lighting_and_shadow: "Moonlit blue nights and warm tavern window glow built from dithered pixel shades."
-  texture_and_material: "Painted-looking backgrounds made of visible square pixels and dithering, in a 256-color palette."
+  lighting_and_shadow: 'Moonlit blue nights and warm tavern window glow built from dithered pixel shades.'
+  texture_and_material: 'Painted-looking backgrounds made of visible square pixels and dithering, in a 256-color palette.'
   camera_and_composition: Side-view scenes with a verb interface, framed the way The Secret of Monkey Island 1990 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with witty piratical adventure.
-  rendering_and_quality: "A 1990 PC VGA frame at 320 by 200: soft painterly pixels above a strip of verb buttons shown as blank boxes."
+  rendering_and_quality: 'A 1990 PC VGA frame at 320 by 200: soft painterly pixels above a strip of verb buttons shown as blank boxes.'
   creative_brief: "LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface. Carry it through Monkey Island moody pixel scenes, pirate towns, verb button strip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Monkey Island moody pixel scenes; pirate towns; verb button strip"
+  key_features: 'Monkey Island moody pixel scenes; pirate towns; verb button strip'
 avoidRules:
   - a blond wannabe pirate in a white shirt
   - a ghost pirate

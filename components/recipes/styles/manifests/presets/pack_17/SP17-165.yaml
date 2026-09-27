@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Square composition with a central towering figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with loud apocalyptic bombast.
   rendering_and_quality: Epic detailed painting with no band logo, kept consistent across the whole image.
-  creative_brief: 'Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur. Carry it through square format, towering figure, lightning, burning city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur. Carry it through square format, towering figure, lightning, burning city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: square format; towering figure; lightning; burning city
 avoidRules:
   - band logo

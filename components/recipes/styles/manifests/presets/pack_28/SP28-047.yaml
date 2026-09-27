@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Model photography on a diorama base, framed the way Maschinen Krieger composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gritty handmade eccentricity.
   rendering_and_quality: Weathered scale model photograph of kitbashed armor, in the recognizable hand of Maschinen Krieger.
-  creative_brief: 'Kow Yokoyama Maschinen Krieger language: kitbashed powered armor and walkers with egg-shaped hulls, periscope heads, exposed cables, heavy weathering and handmade model-kit character. Carry it through Ma.K. kitbash, egg hull, periscope, weathering. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kow Yokoyama Maschinen Krieger language: kitbashed powered armor and walkers with egg-shaped hulls, periscope heads, exposed cables, heavy weathering and handmade model-kit character. Carry it through Ma.K. kitbash, egg hull, periscope, weathering. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ma.K. kitbash; egg hull; periscope; weathering
 avoidRules:
   - existing franchise characters

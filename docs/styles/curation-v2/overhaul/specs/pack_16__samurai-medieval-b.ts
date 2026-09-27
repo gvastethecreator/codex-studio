@@ -34,9 +34,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Through a half-open screen a young advisor whispers to a seated regent, while the cup at his elbow reflects the face of the maid who poisoned it. No readable text or logo.",
-        "Hiding behind the same folding screen to eavesdrop, three nobles tangle their fans into a comic knot. No readable text or logo.",
-        "In a lacquered hall at midnight a regent plays a board game against an empty cushion, and the pieces keep moving on their own. No readable text or logo.",
+        'Through a half-open screen a young advisor whispers to a seated regent, while the cup at his elbow reflects the face of the maid who poisoned it. No readable text or logo.',
+        'Hiding behind the same folding screen to eavesdrop, three nobles tangle their fans into a comic knot. No readable text or logo.',
+        'In a lacquered hall at midnight a regent plays a board game against an empty cushion, and the pieces keep moving on their own. No readable text or logo.',
       ],
     },
     {
@@ -63,9 +63,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A ronin in a torn straw hat walks into a dusty post town at noon, and every villager slams their shutters at the same instant. No readable text or logo.",
-        "Two ronin face off in the main street, both distracted by a bundle of straw that refuses to finish rolling between them. No readable text or logo.",
-        "A lone swordsman slurps noodles in a silent roadside inn while twelve bandits wait patiently outside for him to finish. No readable text or logo.",
+        'A ronin in a torn straw hat walks into a dusty post town at noon, and every villager slams their shutters at the same instant. No readable text or logo.',
+        'Two ronin face off in the main street, both distracted by a bundle of straw that refuses to finish rolling between them. No readable text or logo.',
+        'A lone swordsman slurps noodles in a silent roadside inn while twelve bandits wait patiently outside for him to finish. No readable text or logo.',
       ],
     },
     {
@@ -93,8 +93,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A lady walks with a white hart through a millefleur meadow as the hart's antlers slowly grow into a flowering tree. No readable text or logo.",
-        "A lady rides a unicorn straight out of a tapestry into the real banquet hall, spilling woven flowers across the table. No readable text or logo.",
-        "At the edge of a woven lake a hand rises from the water to offer a kneeling knight a warm loaf of bread instead of a sword. No readable text or logo.",
+        'A lady rides a unicorn straight out of a tapestry into the real banquet hall, spilling woven flowers across the table. No readable text or logo.',
+        'At the edge of a woven lake a hand rises from the water to offer a kneeling knight a warm loaf of bread instead of a sword. No readable text or logo.',
       ],
     },
     {
@@ -121,9 +121,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An exhausted column of armored pilgrims crosses white dunes at noon while the heat shimmer turns the horizon into a false lake full of their reflections. No readable text or logo.",
-        "The only shade in the whole desert is the shadow of his own horse, and a knight in full plate shares it with a lizard. No readable text or logo.",
-        "At midday a lone rider finds that the oasis is real, but a caravan of merchants has already built a toll gate across it. No readable text or logo.",
+        'An exhausted column of armored pilgrims crosses white dunes at noon while the heat shimmer turns the horizon into a false lake full of their reflections. No readable text or logo.',
+        'The only shade in the whole desert is the shadow of his own horse, and a knight in full plate shares it with a lizard. No readable text or logo.',
+        'At midday a lone rider finds that the oasis is real, but a caravan of merchants has already built a toll gate across it. No readable text or logo.',
       ],
     },
     {
@@ -151,8 +151,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A longship crashes through grey waves beneath towering fjord cliffs as a sea serpent's spine breaks the water beside the oars. No readable text or logo.",
-        "Hulking raiders row their longship through a gale while one of them calmly knits a sweater at the stern. No readable text or logo.",
-        "An old shieldmaiden stands alone on a black beach at dusk, watching a burning funeral ship drift out to sea. No readable text or logo.",
+        'Hulking raiders row their longship through a gale while one of them calmly knits a sweater at the stern. No readable text or logo.',
+        'An old shieldmaiden stands alone on a black beach at dusk, watching a burning funeral ship drift out to sea. No readable text or logo.',
       ],
     },
     {
@@ -180,9 +180,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        "A masked doctor in a wax-cloth coat walks an empty market at dawn, a single candle burning on the sill of every shuttered stall. No readable text or logo.",
-        "During a rainy candlelight vigil, an off-duty plague doctor quietly shares his bread with a stray goose. No readable text or logo.",
-        "A lone bell ringer tolls in a silent plague town while crows gather on the rooftops in perfect rows to listen. No readable text or logo.",
+        'A masked doctor in a wax-cloth coat walks an empty market at dawn, a single candle burning on the sill of every shuttered stall. No readable text or logo.',
+        'During a rainy candlelight vigil, an off-duty plague doctor quietly shares his bread with a stray goose. No readable text or logo.',
+        'A lone bell ringer tolls in a silent plague town while crows gather on the rooftops in perfect rows to listen. No readable text or logo.',
       ],
     },
     {
@@ -211,8 +211,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "At a summer tournament a champion archer splits her rival's arrow while the striped pavilions ripple like sails behind her. No readable text or logo.",
-        "A joust is halted by a flock of runaway geese crossing the lists, both armored riders reining in with lances raised. No readable text or logo.",
-        "At dusk after the tournament a tired squire folds banners alone in the empty field as fireworks burst over the pavilions. No readable text or logo.",
+        'A joust is halted by a flock of runaway geese crossing the lists, both armored riders reining in with lances raised. No readable text or logo.',
+        'At dusk after the tournament a tired squire folds banners alone in the empty field as fireworks burst over the pavilions. No readable text or logo.',
       ],
     },
     {
@@ -239,9 +239,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A figure crouches on a tiled rooftop under a thin crescent moon, only a silver rim of light betraying her, while the guard directly below yawns into the dark. No readable text or logo.",
-        "A spy blends so perfectly into the shadows that a passing patrol hangs their lantern on her outstretched arm. No readable text or logo.",
-        "An assassin slips through a silent moonlit garden where every stepping stone turns out to be a sleeping frog. No readable text or logo.",
+        'A figure crouches on a tiled rooftop under a thin crescent moon, only a silver rim of light betraying her, while the guard directly below yawns into the dark. No readable text or logo.',
+        'A spy blends so perfectly into the shadows that a passing patrol hangs their lantern on her outstretched arm. No readable text or logo.',
+        'An assassin slips through a silent moonlit garden where every stepping stone turns out to be a sleeping frog. No readable text or logo.',
       ],
     },
     {
@@ -269,9 +269,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A diviner in layered plum robes raises a glowing talisman on a garden veranda as a hundred paper birds burst up out of the pond. No readable text or logo.",
-        "A court diviner seals a mischievous fox spirit inside a teapot, and the teapot keeps trying to waddle away. No readable text or logo.",
-        "Beneath a star diagram traced in silver across the night sky, a diviner and a demon share sake on a moonlit veranda. No readable text or logo.",
+        'A diviner in layered plum robes raises a glowing talisman on a garden veranda as a hundred paper birds burst up out of the pond. No readable text or logo.',
+        'A court diviner seals a mischievous fox spirit inside a teapot, and the teapot keeps trying to waddle away. No readable text or logo.',
+        'Beneath a star diagram traced in silver across the night sky, a diviner and a demon share sake on a moonlit veranda. No readable text or logo.',
       ],
     },
     {
@@ -299,9 +299,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sparks from the anvil hang in the air in the shape of a galloping horse as a smith and her apprentice hammer a glowing blade. No readable text or logo.",
-        "Quenched in the sea at dawn, a new blade sends up a column of steam so tall it becomes a cloud over the fishing village. No readable text or logo.",
-        "Using his finest blade to slice tofu for dinner, an elderly smith ignores the horrified stare of his apprentice. No readable text or logo.",
+        'Sparks from the anvil hang in the air in the shape of a galloping horse as a smith and her apprentice hammer a glowing blade. No readable text or logo.',
+        'Quenched in the sea at dawn, a new blade sends up a column of steam so tall it becomes a cloud over the fishing village. No readable text or logo.',
+        'Using his finest blade to slice tofu for dinner, an elderly smith ignores the horrified stare of his apprentice. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

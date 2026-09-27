@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as sleek colorful hover machines at extreme speed. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated desert gold, neon blue and pink, true to the F-Zero GX 2003 palette.
-  lighting_and_shadow: "Bright glowing track lights and bloom at huge speed."
-  texture_and_material: "Glossy simple hover machines, heavy radial speed blur toward the edges."
+  lighting_and_shadow: 'Bright glowing track lights and bloom at huge speed.'
+  texture_and_material: 'Glossy simple hover machines, heavy radial speed blur toward the edges.'
   camera_and_composition: Low chase camera on twisting tracks, framed the way F-Zero GX 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dizzying hyper speed.
-  rendering_and_quality: "A 2003 GameCube frame at 640 by 480 from behind: a hover machine in a loop, a power bar and position shape."
+  rendering_and_quality: 'A 2003 GameCube frame at 640 by 480 from behind: a hover machine in a loop, a power bar and position shape.'
   key_features: F-Zero GX loops; hover machines; hyper speed
-  creative_brief: 'Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines. Carry it through F-Zero GX loops, hover machines, hyper speed. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines. Carry it through F-Zero GX loops, hover machines, hyper speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a blue hover racer with a pilot in a helmet and scarf
   - watermark

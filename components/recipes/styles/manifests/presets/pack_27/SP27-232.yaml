@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Team Cherry Hollow Knight (2017) look: hand-drawn gloomy insect kingdom, blue-grey caverns, ink-black bug characters with white masks, glowing lanterns and melancholic depth.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small hand-drawn bug figures in gloomy layered caverns. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Gloomy blue-grey, ink black and pale white, true to the Hollow Knight 2017 palette.
-  lighting_and_shadow: "Soft lantern glow and pale light shafts in dark blue caverns."
-  texture_and_material: "Clean hand-drawn inked sprites over softly painted, blurred background layers."
+  lighting_and_shadow: 'Soft lantern glow and pale light shafts in dark blue caverns.'
+  texture_and_material: 'Clean hand-drawn inked sprites over softly painted, blurred background layers.'
   camera_and_composition: Side-view metroidvania with deep parallax, framed the way Hollow Knight 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic gloomy wonder.
-  rendering_and_quality: "A 2017 side-view frame at 1920 by 1080: small bug knight in a gloomy layered cavern, mask shapes top left."
-  creative_brief: 'Team Cherry Hollow Knight (2017) look: hand-drawn gloomy insect kingdom, blue-grey caverns, ink-black bug characters with white masks, glowing lanterns and melancholic depth. Carry it through Hollow Knight gloom, insect kingdom, hand-drawn. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2017 side-view frame at 1920 by 1080: small bug knight in a gloomy layered cavern, mask shapes top left.'
+  creative_brief: "Team Cherry Hollow Knight (2017) look: hand-drawn gloomy insect kingdom, blue-grey caverns, ink-black bug characters with white masks, glowing lanterns and melancholic depth. Carry it through Hollow Knight gloom, insect kingdom, hand-drawn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hollow Knight gloom; insect kingdom; hand-drawn
 avoidRules:
   - a small knight with a white horned mask and nail

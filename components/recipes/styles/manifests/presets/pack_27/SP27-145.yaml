@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cramped close cockpit framing, framed the way Dark Star 1974 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with deadpan cosmic boredom.
   rendering_and_quality: Authentic seventies low-budget science fiction frame, in the recognizable hand of Dark Star 1974.
-  creative_brief: 'John Carpenter and Dan O’Bannon Dark Star (1974) look: shabby low-budget starship, cramped cockpit with blinking lights, bored bearded crew, talking bombs and deadpan cosmic comedy. Carry it through Dark Star shabby ship, blinking panels, deadpan crew. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Carpenter and Dan O’Bannon Dark Star (1974) look: shabby low-budget starship, cramped cockpit with blinking lights, bored bearded crew, talking bombs and deadpan cosmic comedy. Carry it through Dark Star shabby ship, blinking panels, deadpan crew. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Dark Star shabby ship; blinking panels; deadpan crew
 avoidRules:
   - a beach-ball alien with clawed feet

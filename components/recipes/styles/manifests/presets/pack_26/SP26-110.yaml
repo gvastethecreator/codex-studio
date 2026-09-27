@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Crazy tilted mid-century perspective, framed the way Jim Flora composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with zany exuberant swing.
   rendering_and_quality: Faithful mid-century cartoon jazz cover design, in the recognizable hand of Jim Flora.
-  creative_brief: 'Jim Flora RCA Victor and Columbia cover look of the 1940s and 1950s: zany mid-century cartoon modernism, angular elongated musicians, floating eyes, crazy perspective and wild playful color. Carry it through Jim Flora zany modernism, angular musicians, wild color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jim Flora RCA Victor and Columbia cover look of the 1940s and 1950s: zany mid-century cartoon modernism, angular elongated musicians, floating eyes, crazy perspective and wild playful color. Carry it through Jim Flora zany modernism, angular musicians, wild color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Jim Flora zany modernism; angular musicians; wild color
 avoidRules:
   - existing franchise characters

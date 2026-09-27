@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic leaping pose across a mountain scroll with brocade frame.
   atmosphere_and_mood: Keep the requested mood with joyful fearless energy.
   rendering_and_quality: Precise painted scroll with flowing curling manes, kept consistent across the whole image.
-  creative_brief: 'Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames. Carry it through white lion, turquoise mane, snow peaks, jewel flames. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames. Carry it through white lion, turquoise mane, snow peaks, jewel flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: white lion; turquoise mane; snow peaks; jewel flames
 avoidRules:
   - cultural stereotypes or caricature

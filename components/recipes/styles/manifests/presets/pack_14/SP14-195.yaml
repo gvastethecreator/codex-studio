@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tall keyhole slab with registers, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mythic ancestral narrative.
   rendering_and_quality: Low relief with stacked registers, kept consistent across the whole image.
-  creative_brief: 'Gotland picture stone: keyhole-shaped stone slabs carved with stacked scenes of ships, riders, eight-legged horses and warriors arriving at the hall of the fallen. Carry it through keyhole stone, stacked scenes, ship, eight-legged horse. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gotland picture stone: keyhole-shaped stone slabs carved with stacked scenes of ships, riders, eight-legged horses and warriors arriving at the hall of the fallen. Carry it through keyhole stone, stacked scenes, ship, eight-legged horse. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: keyhole stone; stacked scenes; ship; eight-legged horse
 avoidRules:
   - readable runes

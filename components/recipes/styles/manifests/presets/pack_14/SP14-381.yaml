@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Storm seascape with a radiant figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with protective serene grace.
   rendering_and_quality: Reverent vivid mural, kept consistent across the whole image.
-  creative_brief: 'Mazu sea goddess mural: Chinese coastal temple mural of the goddess of the sea calming storms, her two demon generals with keen eyes and ears, and ships guided home. Carry it through sea goddess, calming storm, guardian generals, ships. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mazu sea goddess mural: Chinese coastal temple mural of the goddess of the sea calming storms, her two demon generals with keen eyes and ears, and ships guided home. Carry it through sea goddess, calming storm, guardian generals, ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sea goddess; calming storm; guardian generals; ships
 avoidRules:
   - cultural stereotypes or caricature

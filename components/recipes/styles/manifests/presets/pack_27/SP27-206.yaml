@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low anamorphic frames in cramped shafts, framed the way Die Hard 1988 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sweaty cornered siege.
   rendering_and_quality: Authentic late-eighties siege action frame, in the recognizable hand of Die Hard 1988.
-  creative_brief: 'John McTiernan Die Hard (1988) look: glass Los Angeles skyscraper at Christmas, air ducts, elevator shafts, broken glass underfoot, walkie-talkies and sweaty barefoot siege. Carry it through Die Hard tower, air ducts, broken glass, Christmas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John McTiernan Die Hard (1988) look: glass Los Angeles skyscraper at Christmas, air ducts, elevator shafts, broken glass underfoot, walkie-talkies and sweaty barefoot siege. Carry it through Die Hard tower, air ducts, broken glass, Christmas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Die Hard tower; air ducts; broken glass; Christmas
 avoidRules:
   - a barefoot cop in a white tank top

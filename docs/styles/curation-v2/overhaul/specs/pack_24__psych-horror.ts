@@ -5,7 +5,7 @@ import { dna } from './_strict';
 // Psychological horror art directions: the four referenced directions keep their DNA and get
 // original briefs that do not restage their games; sixteen new directions with original names
 // build dread from ordinary places, materials and light instead of monsters or gore.
-const HORROR_AVOID = [ 'graphic wounds', 'jump-scare monster close-up', 'franchise creature design'];
+const HORROR_AVOID = ['graphic wounds', 'jump-scare monster close-up', 'franchise creature design'];
 const dir = (
   name: string,
   domain: string,
@@ -73,10 +73,12 @@ const spec: Spec = {
           'Glossy vinyl floors, painted metal, laminated surfaces and crisp linen with faint stains.',
         camera_and_composition:
           'Symmetrical corridors and rooms with long vanishing points and too much empty floor.',
-        atmosphere_and_mood: 'Calm on the surface, deeply unsettling underneath, a clean nightmare.',
+        atmosphere_and_mood:
+          'Calm on the surface, deeply unsettling underneath, a clean nightmare.',
         rendering_and_quality:
           'Smooth clean painterly rendering with precise edges and subdued detail.',
-        key_features: 'pastel institutional palette; humming fluorescents; symmetry; one wrong detail',
+        key_features:
+          'pastel institutional palette; humming fluorescents; symmetry; one wrong detail',
       },
       ['warm cozy lighting', 'high contrast shadows'],
       [
@@ -105,7 +107,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Nostalgic and wrong, a family memory that should not exist.',
         rendering_and_quality:
           'Degraded analog video look with believable smear and noise, never clean digital.',
-        key_features: 'tape noise and tracking lines; chroma bleed; wood-paneled rooms; hidden wrongness',
+        key_features:
+          'tape noise and tracking lines; chroma bleed; wood-paneled rooms; hidden wrongness',
       },
       ['clean digital sharpness', 'modern interior design'],
       [
@@ -134,7 +137,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Silent, mournful and suffocating, a memory drowning slowly.',
         rendering_and_quality:
           'Painterly realism with precise reflections and soft underwater blur.',
-        key_features: 'half-flooded interiors; mirrored waterline; floating objects; drowned lamplight',
+        key_features:
+          'half-flooded interiors; mirrored waterline; floating objects; drowned lamplight',
       },
       ['splashing action', 'bright tropical water'],
       [
@@ -152,23 +156,23 @@ const spec: Spec = {
           'Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced.',
         subject_treatment:
           "Render the prompt's subject as a formal posed portrait, keeping clothing and pose precise while the face is calm but subtly wrong.",
-        color_and_tone:
-          'Muted studio browns, sepia and dusty rose with porcelain-pale skin tones.',
+        color_and_tone: 'Muted studio browns, sepia and dusty rose with porcelain-pale skin tones.',
         lighting_and_shadow:
           'Soft old studio light from one side, smooth gradients and a dark mottled backdrop.',
         texture_and_material:
           'Painted canvas backdrop, lace collars, velvet chairs and slightly glossy varnish.',
         camera_and_composition:
           'Centered frontal posed portrait with figures arranged stiffly in rows.',
-        atmosphere_and_mood: 'Polite, formal and deeply unnerving, a family that is not quite right.',
+        atmosphere_and_mood:
+          'Polite, formal and deeply unnerving, a family that is not quite right.',
         rendering_and_quality:
           'Careful academic portrait painting with smooth finish and subtle distortions.',
         key_features: 'formal posed portraits; subtly wrong faces; studio backdrop; stiff symmetry',
       },
-      [ 'monster faces', 'cartoon exaggeration'],
+      ['monster faces', 'cartoon exaggeration'],
       [
         'A family of five poses in their Sunday best, and every member has exactly the same small smile, including the dog. No readable text or logo.',
-        'A married couple sits for a portrait, the husband\'s eyes painted slightly too far apart as if the painter hesitated. No readable text or logo.',
+        "A married couple sits for a portrait, the husband's eyes painted slightly too far apart as if the painter hesitated. No readable text or logo.",
         'An old woman poses beside an empty velvet chair, one gloved hand resting on the shoulder of no one. No readable text or logo.',
       ],
     ),
@@ -196,7 +200,7 @@ const spec: Spec = {
       },
       ['cold blue light', 'clean modern room'],
       [
-        'A widower lights one more candle on a shrine so thick with wax that his late wife\'s photograph is now just a pale shape inside it. No readable text or logo.',
+        "A widower lights one more candle on a shrine so thick with wax that his late wife's photograph is now just a pale shape inside it. No readable text or logo.",
         'A closet has been turned into a candle altar, wax flowing out under the door into the hallway like a slow golden river. No readable text or logo.',
         'An old telephone sits on a shrine buried in candle wax, its receiver lifted as if someone is still waiting on the line. No readable text or logo.',
       ],
@@ -221,13 +225,14 @@ const spec: Spec = {
         atmosphere_and_mood: 'Stale, suffocating and quietly alive, a house that breathes.',
         rendering_and_quality:
           'Detailed painterly realism with subtle pattern distortion in the stains.',
-        key_features: 'damp floral wallpaper; spreading stains; bubbling seams; subtly moving pattern',
+        key_features:
+          'damp floral wallpaper; spreading stains; bubbling seams; subtly moving pattern',
       },
       ['bright clean walls', 'gore'],
       [
         'A tenant stares at a water stain on her bedroom wallpaper that has slowly taken the shape of a figure walking toward her. No readable text or logo.',
         'A bubble under old floral wallpaper rises and falls gently, as if the wall is breathing while the family eats dinner. No readable text or logo.',
-        'An empty nursery\'s rose-pattern wallpaper has peeled back in one corner to reveal another, older layer of roses that are all closed. No readable text or logo.',
+        "An empty nursery's rose-pattern wallpaper has peeled back in one corner to reveal another, older layer of roses that are all closed. No readable text or logo.",
       ],
     ),
     dir(
@@ -248,13 +253,12 @@ const spec: Spec = {
         camera_and_composition:
           'Long bus interiors with repeating seats, or wide empty stops seen through glass.',
         atmosphere_and_mood: 'Lonely, hypnotic and slightly wrong, a ride with no destination.',
-        rendering_and_quality:
-          'Moody painterly realism with strong reflections and grain.',
+        rendering_and_quality: 'Moody painterly realism with strong reflections and grain.',
         key_features: 'sodium orange light; empty late buses; window reflections; endless routes',
       },
       ['daylight', 'crowded cheerful scenes'],
       [
-        "Past the same shuttered shop for the fifth time, the last bus of the night carries a single sleeping passenger while the driver never turns his head. No readable text or logo.",
+        'Past the same shuttered shop for the fifth time, the last bus of the night carries a single sleeping passenger while the driver never turns his head. No readable text or logo.',
         'An empty bus shelter glows orange at 3 a.m. while every seat inside a passing bus is occupied by a coat with no one wearing it. No readable text or logo.',
         'A woman watches her own reflection in the bus window, and her reflection is looking at something behind her. No readable text or logo.',
       ],
@@ -268,8 +272,7 @@ const spec: Spec = {
           'Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence.',
         subject_treatment:
           "Set the prompt's subject among mounted animals and glass domes in a dim parlor, keeping it clear while the animals seem to watch.",
-        color_and_tone:
-          'Dusty browns, faded velvet reds, amber lamplight and glinting glass eyes.',
+        color_and_tone: 'Dusty browns, faded velvet reds, amber lamplight and glinting glass eyes.',
         lighting_and_shadow:
           'Weak lamplight and dusty window beams, with glinting highlights in every glass eye.',
         texture_and_material:
@@ -281,7 +284,7 @@ const spec: Spec = {
           'Rich detailed painterly realism with precise reflections in the glass.',
         key_features: 'mounted animals; glass domes; watching glass eyes; dusty velvet parlor',
       },
-      [ 'living animals moving', 'bright colors'],
+      ['living animals moving', 'bright colors'],
       [
         'A collector serves tea in a parlor where every stuffed fox, owl and deer has turned its head a few degrees toward the guest. No readable text or logo.',
         'A single empty glass dome sits among dozens of mounted birds, a small brass plaque beneath it blank and waiting. No readable text or logo.',
@@ -306,8 +309,7 @@ const spec: Spec = {
         camera_and_composition:
           'Long exterior walkways receding in perspective, identical doors repeating.',
         atmosphere_and_mood: 'Isolated, cold and hypnotic, the storm will not end.',
-        rendering_and_quality:
-          'Cold painterly realism with soft falling snow and subtle glow.',
+        rendering_and_quality: 'Cold painterly realism with soft falling snow and subtle glow.',
         key_features: 'snow-buried motel; identical doors; humming ice machine; storm isolation',
       },
       ['summer', 'crowded parking lot'],
@@ -366,7 +368,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Disorienting, lonely and uncanny, not all reflections obey.',
         rendering_and_quality:
           'Precise reflective painting with subtle inconsistencies among copies.',
-        key_features: 'infinite reflections; foxed mirror glass; disobedient copies; carnival bulbs',
+        key_features:
+          'infinite reflections; foxed mirror glass; disobedient copies; carnival bulbs',
       },
       ['single clean mirror', 'bright daylight'],
       [
@@ -393,8 +396,7 @@ const spec: Spec = {
         camera_and_composition:
           'Close framing on trays and hanging prints, with the darkroom disappearing into black.',
         atmosphere_and_mood: 'Tense, investigative and eerie, the truth slowly appearing.',
-        rendering_and_quality:
-          'Moody monochrome red painterly rendering with wet reflections.',
+        rendering_and_quality: 'Moody monochrome red painterly rendering with wet reflections.',
         key_features: 'red safelight; developing prints; hanging wet photos; black corners',
       },
       ['full color daylight', 'digital screens'],
@@ -426,11 +428,11 @@ const spec: Spec = {
           'Soft grainy painterly darkness with subtle distortion and blur at the edges.',
         key_features: 'pillow-level view; heavy dark corners; shadowed presence; warped room',
       },
-      [ 'monster close-up', 'bright light'],
+      ['monster close-up', 'bright light'],
       [
         'From the pillow a sleeper sees the bedroom door slowly opening onto a hallway that is far longer than the house. No readable text or logo.',
         'A dark shape sits at the foot of the bed, perfectly still, the moonlight passing through it onto the blanket. No readable text or logo.',
-        'The ceiling of a small bedroom seems to be lowering, the lamp shade already brushing the sleeper\'s blanket. No readable text or logo.',
+        "The ceiling of a small bedroom seems to be lowering, the lamp shade already brushing the sleeper's blanket. No readable text or logo.",
       ],
     ),
     dir(
@@ -458,7 +460,7 @@ const spec: Spec = {
       ['bright tropical reef', 'gore'],
       [
         'Inside a tiny submersible a pilot watches the depth gauge while something outside blocks every porthole at once. No readable text or logo.',
-        'A diver\'s headlamp beam reaches only a meter into the black water and finds the edge of an eye bigger than her. No readable text or logo.',
+        "A diver's headlamp beam reaches only a meter into the black water and finds the edge of an eye bigger than her. No readable text or logo.",
         'A research station hums on the sea floor, its windows glowing, and a shadow the size of a mountain drifts slowly over its roof. No readable text or logo.',
       ],
     ),
@@ -473,21 +475,18 @@ const spec: Spec = {
           "Place the prompt's subject on an ash-covered suburban street, keeping it clear under the falling grey flakes.",
         color_and_tone:
           'Ash grey, faded pastel houses and a muted smoky orange sky with no clear sun.',
-        lighting_and_shadow:
-          'Diffused orange haze, no sharp shadows, faint glow on the horizon.',
+        lighting_and_shadow: 'Diffused orange haze, no sharp shadows, faint glow on the horizon.',
         texture_and_material:
           'Soft ash layers on lawns and cars, falling flakes, faded paint and still air.',
-        camera_and_composition:
-          'Wide quiet street views with rows of houses fading into haze.',
+        camera_and_composition: 'Wide quiet street views with rows of houses fading into haze.',
         atmosphere_and_mood: 'Muted, eerie and elegiac, ordinary life stopped mid-afternoon.',
-        rendering_and_quality:
-          'Soft hazy painterly realism with gentle falling particles.',
+        rendering_and_quality: 'Soft hazy painterly realism with gentle falling particles.',
         key_features: 'ash falling like snow; muted orange sky; silent suburb; faded houses',
       },
-      ['active flames',  'blue clear sky'],
+      ['active flames', 'blue clear sky'],
       [
         'A man waters his lawn as grey ash falls like snow over the whole silent street, the sprinkler making clean circles in it. No readable text or logo.',
-        'A child\'s bicycle lies in a driveway slowly disappearing under drifting ash beneath a dull orange sky. No readable text or logo.',
+        "A child's bicycle lies in a driveway slowly disappearing under drifting ash beneath a dull orange sky. No readable text or logo.",
         'An ice-cream truck drives slowly down an empty suburb in the ash fall, its music box tune the only sound. No readable text or logo.',
       ],
     ),

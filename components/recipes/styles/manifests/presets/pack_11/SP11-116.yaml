@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'EBSD map: metal grains shown as a mosaic of flat colored patches by crystal orientation.'
-  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: broken into grains colored by crystal orientation: flat rainbow patches with sharp grain boundaries.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: broken into grains colored by crystal orientation: flat rainbow patches with sharp grain boundaries."
   color_and_tone: Pastel rainbow orientation colors, exactly as the instrument maps its signal.
   lighting_and_shadow: No light, because the image shows signal, not ordinary light.
   texture_and_material: Grain boundaries and flat patches, as real instrument artifacts rather than decoration.
   camera_and_composition: Flat map view, matching how this instrument actually frames data.
   atmosphere_and_mood: Precise, scientific, colorful and strange, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: 'EBSD map: metal grains shown as a mosaic of flat colored patches by crystal orientation. Carry it through grain mosaic, orientation colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "EBSD map: metal grains shown as a mosaic of flat colored patches by crystal orientation. Carry it through grain mosaic, orientation colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grain mosaic; orientation colors
 avoidRules:
   - readable text

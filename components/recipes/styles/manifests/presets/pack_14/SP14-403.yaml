@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal hanging with a central scene inside spiral borders.
   atmosphere_and_mood: Keep the requested mood with proud nomadic epic.
   rendering_and_quality: Bold simplified felt forms with crisp contrast, kept consistent across the whole image.
-  creative_brief: 'Kyrgyz epic felt hanging: nomad felt hangings with inlaid ram-horn spirals and appliqued riders, eagles and battle scenes from the great steppe epic, stitched in bold contrasting colors. Carry it through felt riders, ram-horn spirals, eagle, cord outlines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kyrgyz epic felt hanging: nomad felt hangings with inlaid ram-horn spirals and appliqued riders, eagles and battle scenes from the great steppe epic, stitched in bold contrasting colors. Carry it through felt riders, ram-horn spirals, eagle, cord outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: felt riders; ram-horn spirals; eagle; cord outlines
 avoidRules:
   - cultural stereotypes or caricature

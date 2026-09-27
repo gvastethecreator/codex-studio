@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low city-scale angle, framed the way Kaiju Mecha composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with thundering mechanical menace.
   rendering_and_quality: Cinematic mechanized monster render, in the recognizable hand of Kaiju Mecha.
-  creative_brief: 'Mechanized monster language: giant robotic kaiju with metal scales, spine plates, reinforced jaws, beam emitters and weathered battle damage. Carry it through Mecha kaiju, metal scales, spine plates, emitters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mechanized monster language: giant robotic kaiju with metal scales, spine plates, reinforced jaws, beam emitters and weathered battle damage. Carry it through Mecha kaiju, metal scales, spine plates, emitters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mecha kaiju; metal scales; spine plates; emitters
 avoidRules:
   - Mechagodzilla

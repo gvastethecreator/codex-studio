@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular table compositions with a spirit rising at the center.
   atmosphere_and_mood: Hushed, thrilling and uncanny, the dead invited to dinner.
   rendering_and_quality: Atmospheric low-key illustration with glowing translucent spirits and velvet shadow.
-  creative_brief: 'Seancepunk: underground seance parlors with spirit cabinets, floating ectoplasm, candlelit round tables, trembling hands and ghost-photography glow. Carry it through round seance tables, ectoplasm, candlelight, joined hands. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Seancepunk: underground seance parlors with spirit cabinets, floating ectoplasm, candlelit round tables, trembling hands and ghost-photography glow. Carry it through round seance tables, ectoplasm, candlelight, joined hands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: round seance tables; ectoplasm; candlelight; joined hands
 avoidRules:
   - readable text

@@ -4,7 +4,7 @@ import { dna } from './_strict';
 
 // Horror anime (part A): prestige horror looks defined by light, framing and texture. Dread comes
 // from staging and restraint; no gore. Strict DNA helper, no generic filler.
-const AVOID = [...ANIME_AVOID,  'graphic wounds'];
+const AVOID = [...ANIME_AVOID, 'graphic wounds'];
 
 const spec: Spec = {
   pack: 'pack_16',
@@ -33,9 +33,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A night janitor stands at the end of an endless school corridor of identical doors, and one of them is slowly opening toward him. No readable text or logo.",
+        'A night janitor stands at the end of an endless school corridor of identical doors, and one of them is slowly opening toward him. No readable text or logo.',
         "A security guard realizes the office tower's fluorescent lights now switch on one floor ahead of him, as if escorting him somewhere. No readable text or logo.",
-        "In a municipal pool at night every lane rope has rearranged itself into one straight line pointing at the empty lifeguard chair. No readable text or logo.",
+        'In a municipal pool at night every lane rope has rearranged itself into one straight line pointing at the empty lifeguard chair. No readable text or logo.',
       ],
     },
     'SP13-032': {
@@ -57,9 +57,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Fishing villagers stand silent on the shore at dusk, their shadows pointing the wrong way, as an enormous red planet hangs just above the sea. No readable text or logo.",
-        "During a red eclipse every bird in the city lands on the same tower and stares upward in total silence. No readable text or logo.",
-        "A farmer waters her crops under two suns, one gold and one blood-red, the red one a little larger every morning. No readable text or logo.",
+        'Fishing villagers stand silent on the shore at dusk, their shadows pointing the wrong way, as an enormous red planet hangs just above the sea. No readable text or logo.',
+        'During a red eclipse every bird in the city lands on the same tower and stares upward in total silence. No readable text or logo.',
+        'A farmer waters her crops under two suns, one gold and one blood-red, the red one a little larger every morning. No readable text or logo.',
       ],
     },
     'SP13-033': {
@@ -85,9 +85,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A life-size marionette ballerina dances alone in one hard spotlight of an abandoned puppet theater, her strings rising into total darkness. No readable text or logo.",
-        "A puppeteer takes his bow after the show and realizes the strings in his hands are tied to his own wrists. No readable text or logo.",
-        "A troupe of wooden marionettes sits in the front row applauding a human performer who is visibly trembling on stage. No readable text or logo.",
+        'A life-size marionette ballerina dances alone in one hard spotlight of an abandoned puppet theater, her strings rising into total darkness. No readable text or logo.',
+        'A puppeteer takes his bow after the show and realizes the strings in his hands are tied to his own wrists. No readable text or logo.',
+        'A troupe of wooden marionettes sits in the front row applauding a human performer who is visibly trembling on stage. No readable text or logo.',
       ],
     },
     'SP13-034': {
@@ -112,9 +112,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A tiny rowboat with one lantern floats on perfectly still black water in an underground lake, and far below a second lantern is rising toward it. No readable text or logo.",
-        "A woman lowers a bucket into the village well and the rope keeps paying out for hours as the sky above her turns to night. No readable text or logo.",
-        "A diver hovers at the edge of an ocean trench so dark that her flashlight beam simply stops a meter from the lens. No readable text or logo.",
+        'A tiny rowboat with one lantern floats on perfectly still black water in an underground lake, and far below a second lantern is rising toward it. No readable text or logo.',
+        'A woman lowers a bucket into the village well and the rope keeps paying out for hours as the sky above her turns to night. No readable text or logo.',
+        'A diver hovers at the edge of an ocean trench so dark that her flashlight beam simply stops a meter from the lens. No readable text or logo.',
       ],
     },
     'SP13-035': {
@@ -139,9 +139,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A masked procession walks toward a bonfire on a village road, every mask carved with the same geometric face except the one worn by the visitor. No readable text or logo.",
-        "Villagers in perfectly symmetrical masks form a slow spiral around a sleeping stranger in a candlelit barn. No readable text or logo.",
-        "At dawn after the ritual a hundred identical masks hang drying on a clothesline, and one of them is still blinking. No readable text or logo.",
+        'A masked procession walks toward a bonfire on a village road, every mask carved with the same geometric face except the one worn by the visitor. No readable text or logo.',
+        'Villagers in perfectly symmetrical masks form a slow spiral around a sleeping stranger in a candlelit barn. No readable text or logo.',
+        'At dawn after the ritual a hundred identical masks hang drying on a clothesline, and one of them is still blinking. No readable text or logo.',
       ],
     },
   },
@@ -171,9 +171,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "An old home video of a birthday party shows everyone singing around the cake while a tall figure in the dark hallway behind them sings along. No readable text or logo.",
-        "A worn tape of a village play freezes on one frame in which every audience member has turned to face the camera. No readable text or logo.",
-        "Tracking noise rolls over a tape of an empty beach, and in the single clean frame a woman stands far out on the surface of the water. No readable text or logo.",
+        'An old home video of a birthday party shows everyone singing around the cake while a tall figure in the dark hallway behind them sings along. No readable text or logo.',
+        'A worn tape of a village play freezes on one frame in which every audience member has turned to face the camera. No readable text or logo.',
+        'Tracking noise rolls over a tape of an empty beach, and in the single clean frame a woman stands far out on the surface of the water. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

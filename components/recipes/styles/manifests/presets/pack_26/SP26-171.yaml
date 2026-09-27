@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wild take close-ups and fourth-wall gags, framed the way Tex Avery composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with manic slapstick frenzy.
   rendering_and_quality: Faithful forties theatrical cartoon frame, in the recognizable hand of Tex Avery.
-  creative_brief: 'Tex Avery MGM cartoon look of the 1940s: extreme wild takes with eyes and jaws exploding off the face, smears, breaking the fourth wall, lush painted backgrounds and violent slapstick timing. Carry it through Avery wild takes, exploding eyes, fourth wall. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tex Avery MGM cartoon look of the 1940s: extreme wild takes with eyes and jaws exploding off the face, smears, breaking the fourth wall, lush painted backgrounds and violent slapstick timing. Carry it through Avery wild takes, exploding eyes, fourth wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Avery wild takes; exploding eyes; fourth wall
 avoidRules:
   - a wolf in a zoot suit

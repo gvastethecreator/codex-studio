@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Remedy Alan Wake 2 (2023) look: photoreal Pacific Northwest noir, rain and fog, a nightmarish New York Dark Place, live-action overlays, flashlight beams and meta horror.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in photoreal rainy noir towns and nightmarish city streets. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Wet forest green, noir blue and flashlight white.
-  lighting_and_shadow: "A flashlight beam cutting through fog, neon signs smeared on wet streets."
-  texture_and_material: "Photoreal wet surfaces with heavy film grain and slight motion softness."
+  lighting_and_shadow: 'A flashlight beam cutting through fog, neon signs smeared on wet streets.'
+  texture_and_material: 'Photoreal wet surfaces with heavy film grain and slight motion softness.'
   camera_and_composition: Over-the-shoulder flashlight view, framed the way Alan Wake 2 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with surreal noir dread.
-  rendering_and_quality: "A 2023 frame at 2560 by 1440 in third person over the shoulder: flashlight cone, dark fog, a small weapon icon shape."
-  creative_brief: 'Remedy Alan Wake 2 (2023) look: photoreal Pacific Northwest noir, rain and fog, a nightmarish New York Dark Place, live-action overlays, flashlight beams and meta horror. Carry it through Alan Wake 2 noir, Dark Place, flashlight fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 2560 by 1440 in third person over the shoulder: flashlight cone, dark fog, a small weapon icon shape.'
+  creative_brief: "Remedy Alan Wake 2 (2023) look: photoreal Pacific Northwest noir, rain and fog, a nightmarish New York Dark Place, live-action overlays, flashlight beams and meta horror. Carry it through Alan Wake 2 noir, Dark Place, flashlight fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Alan Wake 2 noir; Dark Place; flashlight fog
 avoidRules:
   - existing franchise characters

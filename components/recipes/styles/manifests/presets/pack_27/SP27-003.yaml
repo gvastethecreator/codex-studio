@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Anamorphic widescreen with patient point-of-view tracking and deep foreground shadows.
   atmosphere_and_mood: Keep the requested mood with patient suburban stalking dread.
   rendering_and_quality: Minimal widescreen seventies slasher frame, in the recognizable hand of Halloween 1978.
-  creative_brief: 'John Carpenter Halloween (1978) look: autumn suburban streets, anamorphic widescreen, patient Panavision steadicam point of view, deep blue night and minimal chilling stillness. Carry it through Carpenter anamorphic, suburban autumn, POV stalk, blue night. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Carpenter Halloween (1978) look: autumn suburban streets, anamorphic widescreen, patient Panavision steadicam point of view, deep blue night and minimal chilling stillness. Carry it through Carpenter anamorphic, suburban autumn, POV stalk, blue night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Carpenter anamorphic; suburban autumn; POV stalk; blue night
 avoidRules:
   - a pale white mask with a dark boiler suit

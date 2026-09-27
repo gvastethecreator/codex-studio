@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Banners filling the sky above a street, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with festive spirited remembrance.
   rendering_and_quality: Crisp cut-paper glow, kept consistent across the whole image.
-  creative_brief: 'Papel picado spirit festival: layers of cut tissue-paper banners strung across the night sky, glowing with light and forming spirit shapes of skeletons, birds and flowers. Carry it through cut paper banners, backlight, skeletons and flowers, strings. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Papel picado spirit festival: layers of cut tissue-paper banners strung across the night sky, glowing with light and forming spirit shapes of skeletons, birds and flowers. Carry it through cut paper banners, backlight, skeletons and flowers, strings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cut paper banners; backlight; skeletons and flowers; strings
 avoidRules:
   - readable glyphs

@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Sandpaper macro: sharp grains like a rocky mountain landscape.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown among sandpaper grit: angular grains, glue and backing.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown among sandpaper grit: angular grains, glue and backing."
   color_and_tone: Grit browns, greys and reds, as the instrument or lens would record it.
   lighting_and_shadow: Raking light, matching the real imaging setup at this scale.
   texture_and_material: Angular grains and glue, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Harsh, rugged, gritty and surprising, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: angular grains; glue; grit
-  creative_brief: 'Sandpaper macro: sharp grains like a rocky mountain landscape. Carry it through angular grains, glue, grit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sandpaper macro: sharp grains like a rocky mountain landscape. Carry it through angular grains, glue, grit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

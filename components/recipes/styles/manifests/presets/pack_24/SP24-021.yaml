@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide quiet street views with rows of houses fading into haze.
   atmosphere_and_mood: Muted, eerie and elegiac, ordinary life stopped mid-afternoon.
   rendering_and_quality: Soft hazy painterly realism with gentle falling particles.
-  creative_brief: 'Ash-snow suburb: a quiet suburban street after a distant fire, grey ash falling like snow onto lawns, cars and swings, the sky a muted orange. Carry it through ash falling like snow, muted orange sky, silent suburb, faded houses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ash-snow suburb: a quiet suburban street after a distant fire, grey ash falling like snow onto lawns, cars and swings, the sky a muted orange. Carry it through ash falling like snow, muted orange sky, silent suburb, faded houses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ash falling like snow; muted orange sky; silent suburb; faded houses
 avoidRules:
   - active flames

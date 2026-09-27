@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Fish-eye close-ups and dutch tilts, framed the way 12 Monkeys 1995 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with feverish loop paranoia.
   rendering_and_quality: Authentic nineties Gilliam frame, in the recognizable hand of 12 Monkeys 1995.
-  creative_brief: 'Terry Gilliam 12 Monkeys (1995) look: grimy underground future bunkers, fish-eye lenses, dangling cages of tubes, abandoned snowy Philadelphia and feverish time-loop paranoia. Carry it through 12 Monkeys fish-eye, bunkers, snowy empty city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Terry Gilliam 12 Monkeys (1995) look: grimy underground future bunkers, fish-eye lenses, dangling cages of tubes, abandoned snowy Philadelphia and feverish time-loop paranoia. Carry it through 12 Monkeys fish-eye, bunkers, snowy empty city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: 12 Monkeys fish-eye; bunkers; snowy empty city
 avoidRules:
   - existing franchise characters

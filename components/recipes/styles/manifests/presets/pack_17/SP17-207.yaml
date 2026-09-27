@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide triptych-like composition with a giant creature, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dramatic legendary battle.
   rendering_and_quality: Crisp woodblock look with rich pattern, kept consistent across the whole image.
-  creative_brief: 'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: woodblock outlines; flat color; patterned robes; giant spirit
 avoidRules:
   - readable calligraphy

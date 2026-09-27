@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Perfect one-point perspective symmetry and low gliding steadicam.
   atmosphere_and_mood: Keep the requested mood with cold isolating dread.
   rendering_and_quality: Precise symmetrical eighties horror film frame, in the recognizable hand of The Shining 1980.
-  creative_brief: 'Stanley Kubrick The Shining (1980) look: one-point perspective symmetry, gliding steadicam through vast empty hotel corridors, patterned carpets and cold overlit rooms. Carry it through Kubrick symmetry, one-point perspective, patterned carpet, steadicam. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stanley Kubrick The Shining (1980) look: one-point perspective symmetry, gliding steadicam through vast empty hotel corridors, patterned carpets and cold overlit rooms. Carry it through Kubrick symmetry, one-point perspective, patterned carpet, steadicam. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kubrick symmetry; one-point perspective; patterned carpet; steadicam
 avoidRules:
   - twin girls in blue dresses

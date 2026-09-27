@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Long exterior walkways receding in perspective, identical doors repeating.
   atmosphere_and_mood: Isolated, cold and hypnotic, the storm will not end.
   rendering_and_quality: Cold painterly realism with soft falling snow and subtle glow.
-  creative_brief: 'Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same. Carry it through snow-buried motel, identical doors, humming ice machine, storm isolation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same. Carry it through snow-buried motel, identical doors, humming ice machine, storm isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: snow-buried motel; identical doors; humming ice machine; storm isolation
 avoidRules:
   - summer

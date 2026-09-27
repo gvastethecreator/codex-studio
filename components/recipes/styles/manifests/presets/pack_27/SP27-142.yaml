@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide miniature shots of domes against space and intimate forest frames.
   atmosphere_and_mood: Keep the requested mood with gentle ecological melancholy.
   rendering_and_quality: Authentic seventies ecological science fiction frame, in the recognizable hand of Silent Running 1972.
-  creative_brief: 'Douglas Trumbull Silent Running (1972) look: geodesic greenhouse domes on a freighter in deep space, lush forests under artificial light, small shuffling drones and gentle ecological melancholy. Carry it through Silent Running domes, space forest, drones, ecology. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Douglas Trumbull Silent Running (1972) look: geodesic greenhouse domes on a freighter in deep space, lush forests under artificial light, small shuffling drones and gentle ecological melancholy. Carry it through Silent Running domes, space forest, drones, ecology. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Silent Running domes; space forest; drones; ecology
 avoidRules:
   - small boxy walking drones with manipulator arms

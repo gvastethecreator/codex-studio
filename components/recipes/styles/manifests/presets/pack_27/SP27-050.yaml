@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Hallucinatory close-ups with vibrating blur, framed the way Jacob’s Ladder 1990 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with hallucinatory paranoid dread.
   rendering_and_quality: Grainy nineties psychological horror frame, in the recognizable hand of Jacob’s Ladder 1990.
-  creative_brief: 'Adrian Lyne Jacob’s Ladder (1990) look: gritty New York subways, grainy desaturated film, vibrating headshake faces and hallucinatory hospital corridors. Carry it through Jacob’s Ladder vibrating faces, subways, hallucination. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Adrian Lyne Jacob’s Ladder (1990) look: gritty New York subways, grainy desaturated film, vibrating headshake faces and hallucinatory hospital corridors. Carry it through Jacob’s Ladder vibrating faces, subways, hallucination. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Jacob’s Ladder vibrating faces; subways; hallucination
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Underwater diver framing and cramped rig corridors, framed the way The Abyss 1989 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with claustrophobic deep wonder.
   rendering_and_quality: Authentic late-eighties deep sea science fiction frame, in the recognizable hand of The Abyss 1989.
-  creative_brief: 'James Cameron The Abyss (1989) look: claustrophobic underwater drilling rig, flooded corridors, diving helmets with lights, deep trench blackness and glowing translucent aliens. Carry it through The Abyss undersea rig, helmet lamps, glowing aliens. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "James Cameron The Abyss (1989) look: claustrophobic underwater drilling rig, flooded corridors, diving helmets with lights, deep trench blackness and glowing translucent aliens. Carry it through The Abyss undersea rig, helmet lamps, glowing aliens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: The Abyss undersea rig; helmet lamps; glowing aliens
 avoidRules:
   - a water tentacle with a face

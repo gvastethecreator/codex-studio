@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Classic heroic adventure framing, framed the way Larry Elmore composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with warm adventurous optimism.
   rendering_and_quality: Classic eighties tabletop fantasy painting, in the recognizable hand of Larry Elmore.
-  creative_brief: 'Larry Elmore classic role-playing painting: warm heroic adventurers in natural poses, detailed practical armor, dragons, lush outdoor light and friendly eighties tabletop fantasy. Carry it through Elmore warm adventurers, practical armor, dragons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Larry Elmore classic role-playing painting: warm heroic adventurers in natural poses, detailed practical armor, dragons, lush outdoor light and friendly eighties tabletop fantasy. Carry it through Elmore warm adventurers, practical armor, dragons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Elmore warm adventurers; practical armor; dragons
 avoidRules:
   - Dragonlance characters

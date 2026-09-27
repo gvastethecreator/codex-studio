@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Cinematic splash page with title lettering integrated into the scene.
   atmosphere_and_mood: Keep the requested mood with rain-soaked city melancholy.
   rendering_and_quality: Faithful Eisner splash page art, in the recognizable hand of Will Eisner.
-  creative_brief: 'Will Eisner splash page look of the 1940s to 1980s: title lettering built into buildings, puddles and newspapers, rain and wind drawn as story, expressive tenement crowds and cinematic staging. Carry it through Eisner splash page, title built into architecture. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Will Eisner splash page look of the 1940s to 1980s: title lettering built into buildings, puddles and newspapers, rain and wind drawn as story, expressive tenement crowds and cinematic staging. Carry it through Eisner splash page, title built into architecture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Eisner splash page; title built into architecture
 avoidRules:
   - a masked detective in a blue suit and fedora

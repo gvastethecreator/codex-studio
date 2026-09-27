@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Soap bubble macro: swirling thin-film interference colors on a floating sphere.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: formed from or reflected on a soap-film surface: swirling rainbow interference, black thin spots and floating spheres.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: formed from or reflected on a soap-film surface: swirling rainbow interference, black thin spots and floating spheres."
   color_and_tone: Rainbow interference colors on black, as the instrument or lens would record it.
   lighting_and_shadow: Soft reflected light on the film, matching the real imaging setup at this scale.
   texture_and_material: Swirling thin-film colors and film edges, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ephemeral, dreamy, delicate and magical, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: thin-film interference; swirling rainbow; spheres
-  creative_brief: 'Soap bubble macro: swirling thin-film interference colors on a floating sphere. Carry it through thin-film interference, swirling rainbow, spheres. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Soap bubble macro: swirling thin-film interference colors on a floating sphere. Carry it through thin-film interference, swirling rainbow, spheres. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

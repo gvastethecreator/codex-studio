@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Puppet and shadow on a white screen, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mythic theatrical enchantment.
   rendering_and_quality: Intricate perforated detail, kept consistent across the whole image.
-  creative_brief: 'Javanese wayang demon puppet: intricately perforated painted leather shadow puppets of giants and demons, gilded and cast as shadows on a white screen by oil lamp. Carry it through shadow puppet, perforated leather, oil lamp, screen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Javanese wayang demon puppet: intricately perforated painted leather shadow puppets of giants and demons, gilded and cast as shadows on a white screen by oil lamp. Carry it through shadow puppet, perforated leather, oil lamp, screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: shadow puppet; perforated leather; oil lamp; screen
 avoidRules:
   - cultural stereotypes or caricature

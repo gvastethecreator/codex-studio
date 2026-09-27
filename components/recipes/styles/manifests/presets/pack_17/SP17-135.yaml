@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low wide angle with extreme scale contrast, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dread before the fight.
   rendering_and_quality: Epic painterly scene with clear scale, kept consistent across the whole image.
-  creative_brief: 'Boss arena grim vista: a vast ruined arena where a small hero faces an enormous boss creature, fog, broken pillars and a single dramatic light. Carry it through huge boss, tiny hero, ruined arena, dramatic light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Boss arena grim vista: a vast ruined arena where a small hero faces an enormous boss creature, fog, broken pillars and a single dramatic light. Carry it through huge boss, tiny hero, ruined arena, dramatic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: huge boss; tiny hero; ruined arena; dramatic light
 avoidRules:
   - interface text, menus or health bars

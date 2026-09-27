@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render pilots and ships as small agile craft seen from a chase camera. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Vivid nebula magenta, amber flak and rock grey.
-  lighting_and_shadow: "Colorful nebula glow and bright weapon flashes lighting the ships."
-  texture_and_material: "Detailed ship hulls and rocky asteroids with slightly soft modern game detail."
+  lighting_and_shadow: 'Colorful nebula glow and bright weapon flashes lighting the ships.'
+  texture_and_material: 'Detailed ship hulls and rocky asteroids with slightly soft modern game detail.'
   camera_and_composition: Chase camera between asteroids, framed the way Everspace 2 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with daring space action.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080 from a chase camera: small craft among asteroids, a reticle and bar shapes around it."
-  creative_brief: 'Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks. Carry it through Everspace nebulae, asteroid dogfight, chase camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080 from a chase camera: small craft among asteroids, a reticle and bar shapes around it.'
+  creative_brief: "Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks. Carry it through Everspace nebulae, asteroid dogfight, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Everspace nebulae; asteroid dogfight; chase camera
 avoidRules:
   - X-shaped wing fighters

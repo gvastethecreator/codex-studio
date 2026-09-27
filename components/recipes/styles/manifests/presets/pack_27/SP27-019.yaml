@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Uncanny mannequin close-ups and dusty wides, framed the way Tourist Trap 1979 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with uncanny roadside terror.
   rendering_and_quality: Dusty seventies cult horror frame, in the recognizable hand of Tourist Trap 1979.
-  creative_brief: 'Tourist Trap (1979) look: dusty roadside wax museum, uncanny mannequins with gaping mouths, telekinetic chaos and sunbleached cult horror. Carry it through Roadside mannequins, gaping mouths, dusty museum. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tourist Trap (1979) look: dusty roadside wax museum, uncanny mannequins with gaping mouths, telekinetic chaos and sunbleached cult horror. Carry it through Roadside mannequins, gaping mouths, dusty museum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Roadside mannequins; gaping mouths; dusty museum
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide graceful wire-work tableaux, framed the way Crouching Tiger 2000 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with graceful poetic longing.
   rendering_and_quality: Authentic wuxia film frame, in the recognizable hand of Crouching Tiger 2000.
-  creative_brief: 'Ang Lee Crouching Tiger, Hidden Dragon (2000) look: wuxia swordplay balancing on bamboo tops, rooftop chases, desert bandit romance, Yuen Woo-ping wire work and painterly Chinese landscapes. Carry it through Crouching Tiger bamboo tops, wire work, wuxia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ang Lee Crouching Tiger, Hidden Dragon (2000) look: wuxia swordplay balancing on bamboo tops, rooftop chases, desert bandit romance, Yuen Woo-ping wire work and painterly Chinese landscapes. Carry it through Crouching Tiger bamboo tops, wire work, wuxia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Crouching Tiger bamboo tops; wire work; wuxia
 avoidRules:
   - existing franchise characters

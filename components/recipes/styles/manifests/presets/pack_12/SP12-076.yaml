@@ -22,13 +22,13 @@ visualDna:
   aesthetic: 'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky stylized Norse villagers and warriors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Snow white, aurora green and warm hearth orange.
-  lighting_and_shadow: "Soft winter light with green aurora glow on snow."
-  texture_and_material: "Chunky simple shapes with soft painted colors and no fine detail, rounded roofs and trees."
+  lighting_and_shadow: 'Soft winter light with green aurora glow on snow.'
+  texture_and_material: 'Chunky simple shapes with soft painted colors and no fine detail, rounded roofs and trees.'
   camera_and_composition: Isometric strategy view, framed the way Northgard 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with hardy clan survival.
-  rendering_and_quality: "A 2018 PC frame at 1920 by 1080 from a high diagonal: small Norse village in snow, resource shapes at the top."
+  rendering_and_quality: 'A 2018 PC frame at 1920 by 1080 from a high diagonal: small Norse village in snow, resource shapes at the top.'
   key_features: Northgard isometric; Norse clans; aurora
-  creative_brief: 'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures. Carry it through Northgard isometric, Norse clans, aurora. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures. Carry it through Northgard isometric, Norse clans, aurora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

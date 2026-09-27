@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic full-figure view with gear detail, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with uncanny mechanical faith.
   rendering_and_quality: Precise mechanical detail with clean finish, kept consistent across the whole image.
-  creative_brief: 'Clockwork paladin automaton: mechanical holy knights of brass and enamel with visible gears in their chests, wound by a key, marching with ceremonial precision. Carry it through brass automaton, visible gears, winding key, holy knight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Clockwork paladin automaton: mechanical holy knights of brass and enamel with visible gears in their chests, wound by a key, marching with ceremonial precision. Carry it through brass automaton, visible gears, winding key, holy knight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: brass automaton; visible gears; winding key; holy knight
 avoidRules:
   - readable runes or text

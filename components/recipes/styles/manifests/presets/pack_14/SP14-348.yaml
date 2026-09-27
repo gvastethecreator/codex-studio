@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Rocky shore with sea and croft, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with wistful sea enchantment.
   rendering_and_quality: Soft atmospheric watercolor, kept consistent across the whole image.
-  creative_brief: 'Orkney selkie watercolor: soft northern watercolor of seal-folk shedding their skins on moonlit rocks, grey seas, mist and lamplit crofts. Carry it through seal skins, moonlit rocks, sea mist, croft. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Orkney selkie watercolor: soft northern watercolor of seal-folk shedding their skins on moonlit rocks, grey seas, mist and lamplit crofts. Carry it through seal skins, moonlit rocks, sea mist, croft. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: seal skins; moonlit rocks; sea mist; croft
 avoidRules:
   - cultural stereotypes or caricature

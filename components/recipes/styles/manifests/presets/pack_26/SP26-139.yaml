@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Out-of-focus close crop, framed the way Shoegaze 1991 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamy blissful haze.
   rendering_and_quality: Faithful early-nineties shoegaze cover, in the recognizable hand of Shoegaze 1991.
-  creative_brief: 'Early nineties shoegaze cover look: heavily blurred out-of-focus photographs, washes of pink and blue color, dreamy smeared figures and tiny faint type. Carry it through Shoegaze blur, pink-blue wash, tiny type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Early nineties shoegaze cover look: heavily blurred out-of-focus photographs, washes of pink and blue color, dreamy smeared figures and tiny faint type. Carry it through Shoegaze blur, pink-blue wash, tiny type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Shoegaze blur; pink-blue wash; tiny type
 avoidRules:
   - a blurred guitar player shot in pink

@@ -19,7 +19,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A knight and his warhorse seen from the front, side and above at once shatter into ochre and grey planes as a broken lance cuts across the canvas. No readable text or logo.",
+        'A knight and his warhorse seen from the front, side and above at once shatter into ochre and grey planes as a broken lance cuts across the canvas. No readable text or logo.',
         "An old alchemist's face splinters into the same angular planes as the bottles on his table, so it is hard to tell which one is watching you. No readable text or logo.",
         "A street musician's accordion unfolds across the whole cafe, its bellows, his hands and the chairs sharing the same fractured viewpoints. No readable text or logo.",
       ],
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mounted knight is reduced to a red circle, a blue triangle and two yellow bars charging across a strict grid on off-white paper. No readable text or logo.",
-        "A raven built from black triangles perches on a yellow bar with one red circle for an eye, staring down a lone blue square. No readable text or logo.",
-        "A whole seaside village is assembled from a handful of primary squares and one yellow sun, the tide a single long blue bar. No readable text or logo.",
+        'A mounted knight is reduced to a red circle, a blue triangle and two yellow bars charging across a strict grid on off-white paper. No readable text or logo.',
+        'A raven built from black triangles perches on a yellow bar with one red circle for an eye, staring down a lone blue square. No readable text or logo.',
+        'A whole seaside village is assembled from a handful of primary squares and one yellow sun, the tide a single long blue bar. No readable text or logo.',
       ],
     },
     'SP10-003': {
@@ -57,9 +57,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A giant red wedge splits a black fortress in two while a tiny rider charges up the diagonal it leaves behind. No readable text or logo.",
+        'A giant red wedge splits a black fortress in two while a tiny rider charges up the diagonal it leaves behind. No readable text or logo.',
         "A blacksmith's hammer and anvil collide as bold black and red wedges slicing across the frame, sparks reduced to small red squares. No readable text or logo.",
-        "A lighthouse beam slashes the night as one long red bar, the tower a steep black wedge and the waves stacked grey trapezoids. No readable text or logo.",
+        'A lighthouse beam slashes the night as one long red bar, the tower a steep black wedge and the waves stacked grey trapezoids. No readable text or logo.',
       ],
     },
     'SP10-004': {
@@ -76,9 +76,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A helmet exists only as a bulge swelling out of warped black-and-white stripes, invisible until the eye stops moving. No readable text or logo.",
-        "A spiral staircase seen from above becomes concentric stripes that tighten toward the center until the whole image seems to rotate. No readable text or logo.",
-        "A coiled snake made from a warped checkerboard swells and pinches along its body, vibrating against a moire background. No readable text or logo.",
+        'A helmet exists only as a bulge swelling out of warped black-and-white stripes, invisible until the eye stops moving. No readable text or logo.',
+        'A spiral staircase seen from above becomes concentric stripes that tighten toward the center until the whole image seems to rotate. No readable text or logo.',
+        'A coiled snake made from a warped checkerboard swells and pinches along its body, vibrating against a moire background. No readable text or logo.',
       ],
     },
     'SP10-005': {
@@ -97,8 +97,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A fortress gate is reduced to black orthogonal lines, a red block for the door and a small yellow block for the guard's torch. No readable text or logo.",
-        "A sailboat on open sea becomes white fields divided by black lines, a red hull rectangle and one yellow square sail. No readable text or logo.",
-        "A tall chapel window is rebuilt as black lines dividing white panes, with red, yellow and blue rectangles placed off center. No readable text or logo.",
+        'A sailboat on open sea becomes white fields divided by black lines, a red hull rectangle and one yellow square sail. No readable text or logo.',
+        'A tall chapel window is rebuilt as black lines dividing white panes, with red, yellow and blue rectangles placed off center. No readable text or logo.',
       ],
     },
     'SP10-006': {
@@ -117,7 +117,7 @@ const spec: Spec = {
       briefs: [
         "A winged beast's wings split recursively into smaller winged beasts, spiraling inward in gold and violet forever. No readable text or logo.",
         "A tree's branches split into smaller trees again and again, deep green at the trunk fading to glowing gold at the endless tips. No readable text or logo.",
-        "Each chamber of a nautilus spiral holds a smaller nautilus, self-similar curves repeating inward in pearl and rust. No readable text or logo.",
+        'Each chamber of a nautilus spiral holds a smaller nautilus, self-similar curves repeating inward in pearl and rust. No readable text or logo.',
       ],
     },
     'SP10-007': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A wolf howls on a triangulated rock under a faceted pale moon, every surface a flat-shaded triangle in cold blues. No readable text or logo.",
-        "A hummingbird hovers at a flower in amber, emerald and violet triangles, its wings a spray of sharp facets. No readable text or logo.",
-        "A volcano erupts at sunset in triangular lava facets of orange and red above a flat-shaded sea. No readable text or logo.",
+        'A wolf howls on a triangulated rock under a faceted pale moon, every surface a flat-shaded triangle in cold blues. No readable text or logo.',
+        'A hummingbird hovers at a flower in amber, emerald and violet triangles, its wings a spray of sharp facets. No readable text or logo.',
+        'A volcano erupts at sunset in triangular lava facets of orange and red above a flat-shaded sea. No readable text or logo.',
       ],
     },
     'SP10-008': {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lighthouse drifts apart into a few floating black rectangles and a red circle, weightless on a white void. No readable text or logo.",
-        "A falling acrobat becomes three tilted bars and one small black square tumbling through white space along a thin red line. No readable text or logo.",
-        "A sailing ship dissolves into floating crosses and trapezoids of black, red and ochre drifting across emptiness. No readable text or logo.",
+        'A lighthouse drifts apart into a few floating black rectangles and a red circle, weightless on a white void. No readable text or logo.',
+        'A falling acrobat becomes three tilted bars and one small black square tumbling through white space along a thin red line. No readable text or logo.',
+        'A sailing ship dissolves into floating crosses and trapezoids of black, red and ochre drifting across emptiness. No readable text or logo.',
       ],
     },
     'SP10-009': {
@@ -173,8 +173,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'religious text'],
       briefs: [
         "A falcon's feathers are interlaced star tessellations in lapis and gold, its eye a single twelve-point rosette. No readable text or logo.",
-        "Seen from below, a dome interior radiates star-and-polygon rosettes from one central star in turquoise, cobalt and gold. No readable text or logo.",
-        "The silhouette of a horse is filled with turquoise and white interlaced stars against a deep blue field of smaller polygons. No readable text or logo.",
+        'Seen from below, a dome interior radiates star-and-polygon rosettes from one central star in turquoise, cobalt and gold. No readable text or logo.',
+        'The silhouette of a horse is filled with turquoise and white interlaced stars against a deep blue field of smaller polygons. No readable text or logo.',
       ],
     },
     'SP10-010': {
@@ -192,7 +192,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A beast's skull is built from irregular cells whose thickened borders trace every ridge and socket. No readable text or logo.",
-        "A lone traveler walks across a desert of cracked earth divided into irregular terracotta cells around unseen seeds. No readable text or logo.",
+        'A lone traveler walks across a desert of cracked earth divided into irregular terracotta cells around unseen seeds. No readable text or logo.',
         "Each scute of a turtle's shell is a cell around its own seed point, deep green borders around amber interiors on dark sand. No readable text or logo.",
       ],
     },
@@ -215,8 +215,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Riders and horses on a carousel dissolve into rhythmic concentric discs, orange against blue pulsing with simultaneous contrast. No readable text or logo.",
-        "A sun rising over a harbor becomes overlapping rings and arcs, the orange and violet bands vibrating against each other. No readable text or logo.",
+        'Riders and horses on a carousel dissolve into rhythmic concentric discs, orange against blue pulsing with simultaneous contrast. No readable text or logo.',
+        'A sun rising over a harbor becomes overlapping rings and arcs, the orange and violet bands vibrating against each other. No readable text or logo.',
         "A spinning dancer's body is built from interlocking arcs of yellow, magenta and cobalt that echo outward across the canvas. No readable text or logo.",
       ],
     },
@@ -237,8 +237,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A cavalry charge repeats in overlapping positions as sharp lines of force fuse horses and riders into one onrushing wave. No readable text or logo.",
-        "A steam train bursts across a bridge in overlapping positions, smoke and rails fractured by angular lines of speed. No readable text or logo.",
+        'A cavalry charge repeats in overlapping positions as sharp lines of force fuse horses and riders into one onrushing wave. No readable text or logo.',
+        'A steam train bursts across a bridge in overlapping positions, smoke and rails fractured by angular lines of speed. No readable text or logo.',
         "A fencer's lunge repeats arm and blade in overlapping positions, force lines slicing the space into red and grey planes. No readable text or logo.",
       ],
     },
@@ -259,9 +259,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lone rider is one flat orange shape against a teal field under a white disc moon, every edge razor sharp. No readable text or logo.",
-        "A lighthouse and setting sun become flat red, cream and navy areas meeting at razor edges above one white band of sea. No readable text or logo.",
-        "A crow on a bare branch is a single flat black shape against pale mint, with a lemon-yellow sun and no gradients anywhere. No readable text or logo.",
+        'A lone rider is one flat orange shape against a teal field under a white disc moon, every edge razor sharp. No readable text or logo.',
+        'A lighthouse and setting sun become flat red, cream and navy areas meeting at razor edges above one white band of sea. No readable text or logo.',
+        'A crow on a bare branch is a single flat black shape against pale mint, with a lemon-yellow sun and no gradients anywhere. No readable text or logo.',
       ],
     },
     {
@@ -281,8 +281,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A river mill and its water tower become smooth geometric volumes with crisp shadows under a hard noon sun. No readable text or logo.",
-        "A windmill and grain silos stand as clean cylinders and cones casting crisp shadows across a cloudless pale sky. No readable text or logo.",
+        'A river mill and its water tower become smooth geometric volumes with crisp shadows under a hard noon sun. No readable text or logo.',
+        'A windmill and grain silos stand as clean cylinders and cones casting crisp shadows across a cloudless pale sky. No readable text or logo.',
         "A cathedral's flying buttresses are reduced to clean smooth planes of grey stone with knife-sharp shadows. No readable text or logo.",
       ],
     },
@@ -303,9 +303,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A ship caught in a storm is compressed into hard angular shards spiraling toward a vortex center in black, ochre and electric blue. No readable text or logo.",
-        "A lighthouse beam spirals into angular shards around a vortex, machine-like planes in black, white and acid yellow. No readable text or logo.",
-        "A crowd at a factory gate is pulled into jagged spiraling planes, angular figures sucked toward the vortex. No readable text or logo.",
+        'A ship caught in a storm is compressed into hard angular shards spiraling toward a vortex center in black, ochre and electric blue. No readable text or logo.',
+        'A lighthouse beam spirals into angular shards around a vortex, machine-like planes in black, white and acid yellow. No readable text or logo.',
+        'A crowd at a factory gate is pulled into jagged spiraling planes, angular figures sucked toward the vortex. No readable text or logo.',
       ],
     },
     {
@@ -327,7 +327,7 @@ const spec: Spec = {
       briefs: [
         "A serpent's body emerges from rotated quarter-circle tiles, a flowing maze of black and cream arcs forming its coils. No readable text or logo.",
         "An owl's outline appears out of rotated tiles, black and gold arcs flowing into its eyes and folded wings. No readable text or logo.",
-        "An ocean wave is built from diagonal and quarter-circle tiles, navy and white arcs flowing into a curling crest. No readable text or logo.",
+        'An ocean wave is built from diagonal and quarter-circle tiles, navy and white arcs flowing into a curling crest. No readable text or logo.',
       ],
     },
     {
@@ -347,9 +347,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A star-shaped rose window radiates kite-and-dart tiles with five-fold symmetry in ruby, amber and cobalt glass tones. No readable text or logo.",
-        "An egg shape is filled with aperiodic rhombus tiles in pale blue and gold, five-fold stars appearing across its curve. No readable text or logo.",
-        "A courtyard floor seen from above never quite repeats, kite-and-dart tiles in terracotta and cream circling a fountain. No readable text or logo.",
+        'A star-shaped rose window radiates kite-and-dart tiles with five-fold symmetry in ruby, amber and cobalt glass tones. No readable text or logo.',
+        'An egg shape is filled with aperiodic rhombus tiles in pale blue and gold, five-fold stars appearing across its curve. No readable text or logo.',
+        'A courtyard floor seen from above never quite repeats, kite-and-dart tiles in terracotta and cream circling a fountain. No readable text or logo.',
       ],
     },
     {
@@ -369,9 +369,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A cyclist is cropped into image blocks of wheel, hand and shoe arranged asymmetrically on a strict red and white modular grid. No readable text or logo.",
-        "A mountain railway becomes cropped blocks of tunnel, bridge and peak on a strict black and white grid. No readable text or logo.",
-        "A single human eye is cropped into three blocks of different scales, with one red rectangle as the only color. No readable text or logo.",
+        'A cyclist is cropped into image blocks of wheel, hand and shoe arranged asymmetrically on a strict red and white modular grid. No readable text or logo.',
+        'A mountain railway becomes cropped blocks of tunnel, bridge and peak on a strict black and white grid. No readable text or logo.',
+        'A single human eye is cropped into three blocks of different scales, with one red rectangle as the only color. No readable text or logo.',
       ],
     },
     {
@@ -391,9 +391,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A coiled dragon is drawn by gold threads stretched between brass pins on a black board, curves formed by straight envelopes. No readable text or logo.",
-        "A tall sailing ship crossing a navy board has sails made of fanned straight white threads, every curve built from taut lines between brass pins. No readable text or logo.",
-        "A howling wolf beneath a full moon is strung in silver threads whose straight lines bend into curves on a charcoal board. No readable text or logo.",
+        'A coiled dragon is drawn by gold threads stretched between brass pins on a black board, curves formed by straight envelopes. No readable text or logo.',
+        'A tall sailing ship crossing a navy board has sails made of fanned straight white threads, every curve built from taut lines between brass pins. No readable text or logo.',
+        'A howling wolf beneath a full moon is strung in silver threads whose straight lines bend into curves on a charcoal board. No readable text or logo.',
       ],
     },
     {
@@ -413,9 +413,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A city block is reduced to grey cells connected by fluorescent orange conduits, slick industrial surfaces in cool order. No readable text or logo.",
-        "A transit network becomes grey cells and conduits with one fluorescent pink line pulsing through the grid. No readable text or logo.",
-        "A stack of cool grey boxes with fluorescent yellow edges rises like shipping containers on a slick industrial surface. No readable text or logo.",
+        'A city block is reduced to grey cells connected by fluorescent orange conduits, slick industrial surfaces in cool order. No readable text or logo.',
+        'A transit network becomes grey cells and conduits with one fluorescent pink line pulsing through the grid. No readable text or logo.',
+        'A stack of cool grey boxes with fluorescent yellow edges rises like shipping containers on a slick industrial surface. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

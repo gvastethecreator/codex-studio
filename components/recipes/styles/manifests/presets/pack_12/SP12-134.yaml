@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky armored soldiers under a burning alien sky. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Burning orange sky, steel grey and plasma blue.
-  lighting_and_shadow: "Orange fire glow across the sky with blue plasma flashes."
-  texture_and_material: "Chunky armor plates and scorched metal, clean but simple shapes."
+  lighting_and_shadow: 'Orange fire glow across the sky with blue plasma flashes.'
+  texture_and_material: 'Chunky armor plates and scorched metal, clean but simple shapes.'
   camera_and_composition: First-person view at a landing pad, framed the way Halo Reach 2010 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with doomed heroic sacrifice.
-  rendering_and_quality: "A 2010 Xbox 360 first-person frame at 1280 by 720: a rifle at bottom right, burning skyline, a small radar circle bottom left."
-  creative_brief: 'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports. Carry it through Halo Reach last stand, burning sky, evacuation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2010 Xbox 360 first-person frame at 1280 by 720: a rifle at bottom right, burning skyline, a small radar circle bottom left.'
+  creative_brief: "Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports. Carry it through Halo Reach last stand, burning sky, evacuation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Halo Reach last stand; burning sky; evacuation
 avoidRules:
   - green armored super-soldier with gold visor

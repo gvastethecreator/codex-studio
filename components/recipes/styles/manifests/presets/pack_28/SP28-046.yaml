@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Side three-quarter beast view, framed the way Zoids composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with roaring mechanical wildness.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Zoids-inspired beast machine language: mechanical animals with exposed gears, clear canopy cockpits in the head, armor plates over mechanical skeletons and weapon hardpoints. Carry it through Beast machine, exposed gears, head cockpit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Zoids-inspired beast machine language: mechanical animals with exposed gears, clear canopy cockpits in the head, armor plates over mechanical skeletons and weapon hardpoints. Carry it through Beast machine, exposed gears, head cockpit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Beast machine; exposed gears; head cockpit
 avoidRules:
   - Liger Zero or existing Zoids

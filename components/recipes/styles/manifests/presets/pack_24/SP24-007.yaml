@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Symmetrical corridors and rooms with long vanishing points and too much empty floor.
   atmosphere_and_mood: Calm on the surface, deeply unsettling underneath, a clean nightmare.
   rendering_and_quality: Smooth clean painterly rendering with precise edges and subdued detail.
-  creative_brief: 'Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong. Carry it through pastel institutional palette, humming fluorescents, symmetry, one wrong detail. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong. Carry it through pastel institutional palette, humming fluorescents, symmetry, one wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pastel institutional palette; humming fluorescents; symmetry; one wrong detail
 avoidRules:
   - warm cozy lighting

@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Poster-like painted desert composition, framed the way Stoner Doom composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with heavy hazy mysticism.
   rendering_and_quality: Faithful stoner doom painting cover, in the recognizable hand of Stoner Doom.
-  creative_brief: 'Stoner and doom metal cover look: seventies occult painting revival, desert wizards, giant smoking vans, fuzzy psychedelic color and heavy vintage lettering. Carry it through Stoner doom desert wizard, fuzzy occult color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stoner and doom metal cover look: seventies occult painting revival, desert wizards, giant smoking vans, fuzzy psychedelic color and heavy vintage lettering. Carry it through Stoner doom desert wizard, fuzzy occult color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Stoner doom desert wizard; fuzzy occult color
 avoidRules:
   - existing franchise characters

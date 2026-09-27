@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Eye-level product view on a clear stand, framed the way Nendoroid composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cute playful charm.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Good Smile Nendoroid look: super-deformed chibi PVC figures with huge heads, tiny bodies, swappable face plates, little accessories and clear stands. Carry it through Nendoroid chibi, huge head, swappable faces. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Good Smile Nendoroid look: super-deformed chibi PVC figures with huge heads, tiny bodies, swappable face plates, little accessories and clear stands. Carry it through Nendoroid chibi, huge head, swappable faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Nendoroid chibi; huge head; swappable faces
 avoidRules:
   - licensed anime characters

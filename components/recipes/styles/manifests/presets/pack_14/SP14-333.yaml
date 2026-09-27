@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Continuous mural with small figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with graceful eerie devotion.
   rendering_and_quality: Refined mural painting, kept consistent across the whole image.
-  creative_brief: 'Thai phi temple mural: Buddhist temple murals with gold leaf, red grounds and graceful figures, showing forest spirits, giants and ghosts of the Thai tradition. Carry it through temple mural, red ground, gold leaf, forest spirits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Thai phi temple mural: Buddhist temple murals with gold leaf, red grounds and graceful figures, showing forest spirits, giants and ghosts of the Thai tradition. Carry it through temple mural, red ground, gold leaf, forest spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: temple mural; red ground; gold leaf; forest spirits
 avoidRules:
   - cultural stereotypes or caricature

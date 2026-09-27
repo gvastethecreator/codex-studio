@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low anamorphic future noir framing, framed the way Blade Runner 1982 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with melancholy neon noir.
   rendering_and_quality: Authentic eighties future noir frame, in the recognizable hand of Blade Runner 1982.
-  creative_brief: 'Ridley Scott Blade Runner (1982) look: rain-soaked neon Los Angeles 2019, towering pyramids, smoky shafts of light through blinds, crowded markets and Syd Mead future noir. Carry it through Blade Runner neon rain, smoky shafts, future noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ridley Scott Blade Runner (1982) look: rain-soaked neon Los Angeles 2019, towering pyramids, smoky shafts of light through blinds, crowded markets and Syd Mead future noir. Carry it through Blade Runner neon rain, smoky shafts, future noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Blade Runner neon rain; smoky shafts; future noir
 avoidRules:
   - a flying police spinner car

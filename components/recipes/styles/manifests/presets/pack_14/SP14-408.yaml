@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Bird's-eye panorama with many tiny scenes across rolling hills.
   atmosphere_and_mood: Keep the requested mood with vast epic scope.
   rendering_and_quality: Meticulous miniature detail across a wide landscape, kept consistent across the whole image.
-  creative_brief: 'Mongolian zurag panorama: Mongol zurag painting with tiny detailed figures spread across vast steppe panoramas, gers, horses and many episodes of an epic hero happening at once. Carry it through steppe panorama, tiny figures, gers and horses, many episodes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mongolian zurag panorama: Mongol zurag painting with tiny detailed figures spread across vast steppe panoramas, gers, horses and many episodes of an epic hero happening at once. Carry it through steppe panorama, tiny figures, gers and horses, many episodes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: steppe panorama; tiny figures; gers and horses; many episodes
 avoidRules:
   - cultural stereotypes or caricature

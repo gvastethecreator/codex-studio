@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Flat wide tableaux of alien landscapes, framed the way René Laloux composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with eerie surreal calm.
   rendering_and_quality: Faithful seventies cutout feature frame, in the recognizable hand of René Laloux.
-  creative_brief: 'René Laloux animation look of the 1970s and 1980s: cutout animation after Roland Topor and Moebius designs, surreal alien planets, giant blue beings, strange flora, flat engraved textures and eerie calm. Carry it through Laloux surreal cutout, engraved alien planets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "René Laloux animation look of the 1970s and 1980s: cutout animation after Roland Topor and Moebius designs, surreal alien planets, giant blue beings, strange flora, flat engraved textures and eerie calm. Carry it through Laloux surreal cutout, engraved alien planets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Laloux surreal cutout; engraved alien planets
 avoidRules:
   - giant blue humanoids with red eyes holding tiny humans

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Live-action camera framing traced into animation, framed the way Ralph Bakshi composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gritty underground swagger.
   rendering_and_quality: Faithful seventies rotoscoped feature frame, in the recognizable hand of Ralph Bakshi.
-  creative_brief: 'Ralph Bakshi animation look of the 1970s and early 1980s: rotoscoped live-action figures traced into flat color, gritty painted city and fantasy backgrounds, underground adult attitude and mixed-media collage. Carry it through Bakshi rotoscope, gritty painted backgrounds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ralph Bakshi animation look of the 1970s and early 1980s: rotoscoped live-action figures traced into flat color, gritty painted city and fantasy backgrounds, underground adult attitude and mixed-media collage. Carry it through Bakshi rotoscope, gritty painted backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bakshi rotoscope; gritty painted backgrounds
 avoidRules:
   - a cartoon cat in a sports coat

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny pixel climber on crisp snowy mountain levels. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel snow pinks, teal and dusk purple, true to the Celeste 2018 palette.
-  lighting_and_shadow: "Soft pastel glow in snowy pinks and blues, colored trails behind dashes."
-  texture_and_material: "Crisp detailed pixel tiles and a tiny pixel climber, with smooth particle snow drifting over them."
+  lighting_and_shadow: 'Soft pastel glow in snowy pinks and blues, colored trails behind dashes.'
+  texture_and_material: 'Crisp detailed pixel tiles and a tiny pixel climber, with smooth particle snow drifting over them.'
   camera_and_composition: Side-view single-screen platformer, framed the way Celeste 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with determined heartfelt climb.
-  rendering_and_quality: "A 2018 frame at 320 by 180 scaled up: crisp pixel mountain level, tiny red-haired climber, drifting snow."
-  creative_brief: 'Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety. Carry it through Celeste pixel mountain, dash trails, pastel snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2018 frame at 320 by 180 scaled up: crisp pixel mountain level, tiny red-haired climber, drifting snow.'
+  creative_brief: "Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety. Carry it through Celeste pixel mountain, dash trails, pastel snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Celeste pixel mountain; dash trails; pastel snow
 avoidRules:
   - a red-haired climber in a blue jacket

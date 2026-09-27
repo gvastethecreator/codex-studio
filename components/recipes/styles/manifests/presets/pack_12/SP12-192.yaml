@@ -22,15 +22,15 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Klei Entertainment Don''t Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests.'
+  aesthetic: "Klei Entertainment Don't Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as scratchy gothic paper cartoon survivors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted sepia and firelight, true to the Don't Starve 2013 palette.
-  lighting_and_shadow: "A small circle of campfire light in total darkness."
-  texture_and_material: "Scratchy ink lines, paper-cutout figures and grungy paper texture."
+  lighting_and_shadow: 'A small circle of campfire light in total darkness.'
+  texture_and_material: 'Scratchy ink lines, paper-cutout figures and grungy paper texture.'
   camera_and_composition: Three-quarter overhead view, framed the way Don't Starve 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie gothic survival.
-  rendering_and_quality: "A 2013 frame at 1920 by 1080: gothic paper-cartoon survivor by a campfire, round gauge shapes top right."
-  creative_brief: 'Klei Entertainment Don''t Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests. Carry it through Don''t Starve paper, campfire, shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2013 frame at 1920 by 1080: gothic paper-cartoon survivor by a campfire, round gauge shapes top right.'
+  creative_brief: "Klei Entertainment Don't Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests. Carry it through Don't Starve paper, campfire, shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Don't Starve paper; campfire; shadows
 avoidRules:
   - a gentleman scientist with spiky hair

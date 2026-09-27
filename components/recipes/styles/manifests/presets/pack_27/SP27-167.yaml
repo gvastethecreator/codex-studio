@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Handheld first-person point-of-view frames, framed the way Strange Days 1995 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with feverish millennium tension.
   rendering_and_quality: Authentic mid-nineties tech-noir frame, in the recognizable hand of Strange Days 1995.
-  creative_brief: 'Kathryn Bigelow Strange Days (1995) look: millennium-eve Los Angeles, handheld point-of-view recordings, riot-lit streets, rave crowds and edgy tech-noir intensity. Carry it through Strange Days POV, millennium streets, tech noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kathryn Bigelow Strange Days (1995) look: millennium-eve Los Angeles, handheld point-of-view recordings, riot-lit streets, rave crowds and edgy tech-noir intensity. Carry it through Strange Days POV, millennium streets, tech noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Strange Days POV; millennium streets; tech noir
 avoidRules:
   - existing franchise characters

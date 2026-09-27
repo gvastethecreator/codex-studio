@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered Tarnished warriors in mixed armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Golden light, ash grey and flame orange, true to the Elden Ring 2022 palette.
-  lighting_and_shadow: "Golden light from a giant glowing tree in the sky, with fire glow below."
-  texture_and_material: "Weathered stone and mixed armor, detailed but slightly soft in the distance."
+  lighting_and_shadow: 'Golden light from a giant glowing tree in the sky, with fire glow below.'
+  texture_and_material: 'Weathered stone and mixed armor, detailed but slightly soft in the distance.'
   camera_and_composition: Third-person lock-on view, framed the way Elden Ring 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with epic desperate duel.
-  rendering_and_quality: "A 2022 frame at 1920 by 1080 in third person: warrior facing a giant boss, bar shapes top left and a lock-on dot."
-  creative_brief: 'FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels. Carry it through Elden Ring bosses, golden light, lock-on. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2022 frame at 1920 by 1080 in third person: warrior facing a giant boss, bar shapes top left and a lock-on dot.'
+  creative_brief: "FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels. Carry it through Elden Ring bosses, golden light, lock-on. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Elden Ring bosses; golden light; lock-on
 avoidRules:
   - existing Elden Ring bosses

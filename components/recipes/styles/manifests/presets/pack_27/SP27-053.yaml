@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Intimate antique shop compositions, framed the way Cronos 1993 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tender gothic horror.
   rendering_and_quality: Warm amber nineties gothic horror frame, in the recognizable hand of Cronos 1993.
-  creative_brief: 'Guillermo del Toro Cronos (1993) look: warm amber antique shops, golden clockwork insect devices, gothic Catholic imagery and tender horror. Carry it through Del Toro amber, clockwork devices, antiques. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Guillermo del Toro Cronos (1993) look: warm amber antique shops, golden clockwork insect devices, gothic Catholic imagery and tender horror. Carry it through Del Toro amber, clockwork devices, antiques. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Del Toro amber; clockwork devices; antiques
 avoidRules:
   - existing franchise characters

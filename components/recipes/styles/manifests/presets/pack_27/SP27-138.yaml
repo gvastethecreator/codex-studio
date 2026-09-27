@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Elegant Roeg compositions and zooms, framed the way Fahrenheit 451 1966 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool quiet dystopia.
   rendering_and_quality: Authentic sixties Technicolor dystopia frame, in the recognizable hand of Fahrenheit 451 1966.
-  creative_brief: 'François Truffaut Fahrenheit 451 (1966) look: cool pastel Technicolor suburbia by Nicolas Roeg, glossy red fire engines, black uniforms, monorails and quiet book-burning dystopia. Carry it through Fahrenheit 451 red engines, pastel suburbs, monorail. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "François Truffaut Fahrenheit 451 (1966) look: cool pastel Technicolor suburbia by Nicolas Roeg, glossy red fire engines, black uniforms, monorails and quiet book-burning dystopia. Carry it through Fahrenheit 451 red engines, pastel suburbs, monorail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Fahrenheit 451 red engines; pastel suburbs; monorail
 avoidRules:
   - existing franchise characters

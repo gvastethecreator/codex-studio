@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro close-up on a hobby desk, framed the way Warhammer Painted Miniature composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gritty hobbyist devotion.
   rendering_and_quality: Macro miniature painting photograph, in the recognizable hand of Warhammer Painted Miniature.
-  creative_brief: 'Tabletop wargame miniature look: 28mm plastic figures painted by hobbyists with layered highlights, edge highlighting, washes, textured bases with tufts and gothic grimdark detail. Carry it through Painted 28mm mini, edge highlights, tufted base. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tabletop wargame miniature look: 28mm plastic figures painted by hobbyists with layered highlights, edge highlighting, washes, textured bases with tufts and gothic grimdark detail. Carry it through Painted 28mm mini, edge highlights, tufted base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Painted 28mm mini; edge highlights; tufted base
 avoidRules:
   - Space Marines or licensed Warhammer designs

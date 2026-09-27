@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Sabotage Studio Sea of Stars (2023) look: lush modern pixel art RPG inspired by Chrono Trigger, dynamic day-night lighting, sparkling seas, solstice magic and sweeping vistas.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as detailed modern pixel sprites in lush dynamically lit landscapes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sunset gold, moon blue and lush green, true to the Sea of Stars 2023 palette.
-  lighting_and_shadow: "Dynamic day-night light, glowing torches and long pixel shadows."
-  texture_and_material: "Lush detailed pixel art with soft modern lighting laid over the pixels."
+  lighting_and_shadow: 'Dynamic day-night light, glowing torches and long pixel shadows.'
+  texture_and_material: 'Lush detailed pixel art with soft modern lighting laid over the pixels.'
   camera_and_composition: Three-quarter top-down RPG view, framed the way Sea of Stars 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with warm heroic nostalgia.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080: crisp pixel sprites in a lush pixel landscape with smooth glowing light."
-  creative_brief: 'Sabotage Studio Sea of Stars (2023) look: lush modern pixel art RPG inspired by Chrono Trigger, dynamic day-night lighting, sparkling seas, solstice magic and sweeping vistas. Carry it through Sea of Stars pixel art, day-night light, solstice. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080: crisp pixel sprites in a lush pixel landscape with smooth glowing light.'
+  creative_brief: "Sabotage Studio Sea of Stars (2023) look: lush modern pixel art RPG inspired by Chrono Trigger, dynamic day-night lighting, sparkling seas, solstice magic and sweeping vistas. Carry it through Sea of Stars pixel art, day-night light, solstice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sea of Stars pixel art; day-night light; solstice
 avoidRules:
   - existing Sea of Stars heroes

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of tattooed skin with designs mid-movement.
   atmosphere_and_mood: Rebellious and magical, stories that refuse to stay still on the body.
   rendering_and_quality: Bold illustration with crisp tattoo linework and warm skin.
-  creative_brief: 'Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink. Carry it through moving tattoos, ink creatures escaping, parlor light, bold lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink. Carry it through moving tattoos, ink creatures escaping, parlor light, bold lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moving tattoos; ink creatures escaping; parlor light; bold lines
 avoidRules:
   - readable text

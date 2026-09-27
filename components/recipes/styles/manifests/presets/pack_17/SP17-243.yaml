@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Gamebook illustration framing, framed the way Russ Nicholson composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grotesque eccentric humor.
   rendering_and_quality: Scratchy gamebook ink illustration, in the recognizable hand of Russ Nicholson.
-  creative_brief: 'Russ Nicholson fighting fantasy ink: scratchy dense line work, grotesque detailed monsters, cross-hatched murk, warty skin and eccentric British gamebook character. Carry it through Nicholson scratchy ink, grotesque monsters, hatching. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Russ Nicholson fighting fantasy ink: scratchy dense line work, grotesque detailed monsters, cross-hatched murk, warty skin and eccentric British gamebook character. Carry it through Nicholson scratchy ink, grotesque monsters, hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Nicholson scratchy ink; grotesque monsters; hatching
 avoidRules:
   - existing franchise characters

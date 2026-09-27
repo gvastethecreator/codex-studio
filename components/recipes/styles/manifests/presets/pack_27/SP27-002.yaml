@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Handheld documentary framing, low angles and sudden close-ups.
   atmosphere_and_mood: Keep the requested mood with sweltering rural dread.
   rendering_and_quality: Grainy documentary-style seventies horror frame, in the recognizable hand of The Texas Chain Saw Massacre 1974.
-  creative_brief: 'Tobe Hooper The Texas Chain Saw Massacre (1974) look: grainy blown-up 16mm, harsh Texas sun, sweaty documentary camerawork, bone-filled farmhouse clutter and sweltering rural dread. Carry it through Hooper 16mm grain, harsh sun, rural clutter, documentary dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tobe Hooper The Texas Chain Saw Massacre (1974) look: grainy blown-up 16mm, harsh Texas sun, sweaty documentary camerawork, bone-filled farmhouse clutter and sweltering rural dread. Carry it through Hooper 16mm grain, harsh sun, rural clutter, documentary dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hooper 16mm grain; harsh sun; rural clutter; documentary dread
 avoidRules:
   - a masked man with a chainsaw in a leather apron

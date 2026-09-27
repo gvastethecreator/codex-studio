@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of things suspended in amber and amber-lit rooms.
   atmosphere_and_mood: Timeless and golden, moments frozen for millions of years.
   rendering_and_quality: Luminous illustration with translucent amber glow and fine inclusions.
-  creative_brief: 'Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap. Carry it through glowing amber, trapped insects, resin-sealed relics, golden inner light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap. Carry it through glowing amber, trapped insects, resin-sealed relics, golden inner light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glowing amber; trapped insects; resin-sealed relics; golden inner light
 avoidRules:
   - readable text

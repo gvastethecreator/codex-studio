@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as bright little pixel sprites with big heads, a shrine maiden and yokai in a small palette. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show people as bright little pixel sprites with big heads, a shrine maiden and yokai in a small palette. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Shrine red, moon blue and foxfire, true to the Pocky & Rocky 1992 palette.
-  lighting_and_shadow: "Flat pixel colors with no gradients, lit the way Pocky & Rocky 1992 lights its levels."
-  texture_and_material: "Crisp square pixels, bold outlines and repeating shrine and forest tiles."
+  lighting_and_shadow: 'Flat pixel colors with no gradients, lit the way Pocky & Rocky 1992 lights its levels.'
+  texture_and_material: 'Crisp square pixels, bold outlines and repeating shrine and forest tiles.'
   camera_and_composition: Top-down shooter view, framed the way Pocky & Rocky 1992 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with spirited yokai chaos.
-  rendering_and_quality: "A 1992 Super Nintendo frame at 256 by 224 from above: small shrine maiden throwing talismans, score shapes at the top."
+  rendering_and_quality: 'A 1992 Super Nintendo frame at 256 by 224 from above: small shrine maiden throwing talismans, score shapes at the top.'
   creative_brief: "Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms. Carry it through Pocky & Rocky pixel shrine maiden, talismans, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Pocky & Rocky pixel shrine maiden; talismans; yokai"
+  key_features: 'Pocky & Rocky pixel shrine maiden; talismans; yokai'
 avoidRules:
   - a shrine maiden with a tanuki partner
   - readable talisman text

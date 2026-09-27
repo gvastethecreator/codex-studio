@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as animated-film cartoon characters with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rift purple, cyan and warm gold, true to the Ratchet & Clank Rift Apart 2021 palette.
-  lighting_and_shadow: "Purple rift glow and warm bounce light like an animated feature film."
-  texture_and_material: "Animated-film-quality shapes, fur and metal, sharp and clean with no grime."
+  lighting_and_shadow: 'Purple rift glow and warm bounce light like an animated feature film.'
+  texture_and_material: 'Animated-film-quality shapes, fur and metal, sharp and clean with no grime.'
   camera_and_composition: Third-person action view near a rift, framed the way Ratchet & Clank Rift Apart 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with zippy dimensional adventure.
-  rendering_and_quality: "A 2021 PlayStation 5 frame at 3840 by 2160 in third person: cartoon hero leaping through a purple rift portal, small bar shapes."
-  creative_brief: 'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters. Carry it through Rift Apart portals, animated-film 3D, purple rifts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2021 PlayStation 5 frame at 3840 by 2160 in third person: cartoon hero leaping through a purple rift portal, small bar shapes.'
+  creative_brief: "Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters. Carry it through Rift Apart portals, animated-film 3D, purple rifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rift Apart portals; animated-film 3D; purple rifts
 avoidRules:
   - a furry lombax with a small robot on his back

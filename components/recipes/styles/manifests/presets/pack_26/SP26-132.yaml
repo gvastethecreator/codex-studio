@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Centered austere minimal composition, framed the way Peter Saville composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool austere melancholy.
   rendering_and_quality: Faithful Factory-era minimal cover, in the recognizable hand of Peter Saville.
-  creative_brief: 'Peter Saville Factory Records cover look of the late 1970s and 1980s: austere minimalism, classical paintings or scientific data cropped cool, pale colors, tiny or absent type and precise modernism. Carry it through Saville austere minimalism, tiny type, cool. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Peter Saville Factory Records cover look of the late 1970s and 1980s: austere minimalism, classical paintings or scientific data cropped cool, pale colors, tiny or absent type and precise modernism. Carry it through Saville austere minimalism, tiny type, cool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Saville austere minimalism; tiny type; cool
 avoidRules:
   - stacked radio pulsar lines

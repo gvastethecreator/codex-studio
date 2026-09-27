@@ -161,7 +161,7 @@ const spec: Spec = {
         key_features:
           'desaturated dust palette; 35 mm closeness; tilted urgent framing; exhaustion over spectacle; grain',
       }),
-      avoid: [...AVOID, 'posed', 'heroic poster pose',  'explosion not in the prompt'],
+      avoid: [...AVOID, 'posed', 'heroic poster pose', 'explosion not in the prompt'],
       briefs: [
         'Documentary war photograph of adult foot soldiers in dented kettle helmets asleep against a breached castle wall at dawn, dust hanging in the air, desaturated ochre and ash grey, 35 mm, tilted horizon, grain. No gore, text or logo.',
         'Documentary war photograph of an adult field surgeon washing her hands in a bucket outside a canvas hospital tent, smoke haze turning the sun white, weary face turned from the lens. No gore, text or logo.',

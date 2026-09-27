@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Courtly scene of dressed animals, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with sly courtly satire.
   rendering_and_quality: Detailed witty engraving, kept consistent across the whole image.
-  creative_brief: 'Reynard fable engraving: medieval and early modern engravings of the cunning fox Reynard outwitting the lion king and the wolf in courtly animal satire. Carry it through cunning fox, animal court, engraving, satire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Reynard fable engraving: medieval and early modern engravings of the cunning fox Reynard outwitting the lion king and the wolf in courtly animal satire. Carry it through cunning fox, animal court, engraving, satire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cunning fox; animal court; engraving; satire
 avoidRules:
   - cultural stereotypes or caricature

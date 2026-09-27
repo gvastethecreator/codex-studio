@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Camp stagey frames with floating sets, framed the way Barbarella 1968 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with camp dreamy playfulness.
   rendering_and_quality: Authentic late-sixties pop psychedelic frame, in the recognizable hand of Barbarella 1968.
-  creative_brief: 'Roger Vadim Barbarella (1968) look: psychedelic pop-art space fantasy, fur-lined spaceships, plastic bubble sets, glittering costumes, Jean-Claude Forest comic designs and campy dreamlike color. Carry it through Barbarella pop psychedelia, fur spaceship, plastic bubbles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Roger Vadim Barbarella (1968) look: psychedelic pop-art space fantasy, fur-lined spaceships, plastic bubble sets, glittering costumes, Jean-Claude Forest comic designs and campy dreamlike color. Carry it through Barbarella pop psychedelia, fur spaceship, plastic bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Barbarella pop psychedelia; fur spaceship; plastic bubbles
 avoidRules:
   - a blonde astronaut in a clear vinyl spacesuit

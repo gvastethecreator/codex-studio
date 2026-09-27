@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small detailed isometric sprite in a single-color castle room. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: One bright attribute color on black per room.
-  lighting_and_shadow: "Each whole room drawn in one flat color on black, with no light or shadow at all."
+  lighting_and_shadow: 'Each whole room drawn in one flat color on black, with no light or shadow at all.'
   texture_and_material: ZX Spectrum pixels, monochrome line detail and color attributes.
   camera_and_composition: Isometric room view with stone walls and arches.
   atmosphere_and_mood: Keep the requested mood with mysterious isometric quest.
-  rendering_and_quality: "A 1984 ZX Spectrum frame at 256 by 192: a single-color isometric room of fine line detail on black, with a decorated border strip."
-  creative_brief: 'Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion. Carry it through Knight Lore isometric, monochrome rooms, Filmation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1984 ZX Spectrum frame at 256 by 192: a single-color isometric room of fine line detail on black, with a decorated border strip.'
+  creative_brief: "Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion. Carry it through Knight Lore isometric, monochrome rooms, Filmation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Knight Lore isometric; monochrome rooms; Filmation
 avoidRules:
   - a pith-helmeted explorer who turns into a werewolf

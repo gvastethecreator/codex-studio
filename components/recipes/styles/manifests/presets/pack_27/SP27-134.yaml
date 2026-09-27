@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frozen still-photo frames with dissolves, framed the way La Jetee 1962 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with haunted memory loop.
   rendering_and_quality: Authentic sixties still-photograph film frame, in the recognizable hand of La Jetee 1962.
-  creative_brief: 'Chris Marker La Jetée (1962) look: a science fiction film told almost entirely in grainy black-and-white still photographs, post-war Paris ruins, underground camps and a haunting airport jetty. Carry it through La Jetée stills, ruins, jetty, memory loop. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Chris Marker La Jetée (1962) look: a science fiction film told almost entirely in grainy black-and-white still photographs, post-war Paris ruins, underground camps and a haunting airport jetty. Carry it through La Jetée stills, ruins, jetty, memory loop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: La Jetée stills; ruins; jetty; memory loop
 avoidRules:
   - existing franchise characters

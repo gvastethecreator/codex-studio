@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Crowded decorative composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vibrant mythic storytelling.
   rendering_and_quality: Dense decorative painting, kept consistent across the whole image.
-  creative_brief: 'Osogbo school painting: mid-twentieth-century Nigerian painting from the Osogbo workshops, dense decorative figures, bold outlines, mythic stories and saturated color. Carry it through dense decoration, bold outlines, saturated color, myth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Osogbo school painting: mid-twentieth-century Nigerian painting from the Osogbo workshops, dense decorative figures, bold outlines, mythic stories and saturated color. Carry it through dense decoration, bold outlines, saturated color, myth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dense decoration; bold outlines; saturated color; myth
 avoidRules:
   - generic tribal pattern

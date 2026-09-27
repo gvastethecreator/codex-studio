@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite climbing gothic castle stairways lit by candles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dark red brick, night blue and candle yellow.
-  lighting_and_shadow: "Flat NES colors with candle sprites flickering on dark blue and black walls."
+  lighting_and_shadow: 'Flat NES colors with candle sprites flickering on dark blue and black walls.'
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Side-scrolling castle view with stairs, framed the way Castlevania 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gothic horror adventure.
-  rendering_and_quality: "A 1986 NES frame at 256 by 240: small whip-wielding sprite on diagonal stairs, stone block tiles, health bar shapes at the top."
-  creative_brief: 'Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage. Carry it through Castlevania stairs, candles, bats, gothic castle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1986 NES frame at 256 by 240: small whip-wielding sprite on diagonal stairs, stone block tiles, health bar shapes at the top.'
+  creative_brief: "Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage. Carry it through Castlevania stairs, candles, bats, gothic castle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Castlevania stairs; candles; bats; gothic castle
 avoidRules:
   - a whip-wielding vampire hunter

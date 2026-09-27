@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Theatrical in-camera compositions, framed the way Bram Stoker’s Dracula 1992 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with opulent gothic romance.
   rendering_and_quality: Opulent nineties gothic romance frame, in the recognizable hand of Bram Stoker’s Dracula 1992.
-  creative_brief: 'Francis Ford Coppola Bram Stoker’s Dracula (1992) look: in-camera practical effects, shadows moving independently, Eiko Ishioka’s opulent costumes, red and gold excess and theatrical gothic romance. Carry it through Coppola in-camera effects, Ishioka costumes, red and gold. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Francis Ford Coppola Bram Stoker’s Dracula (1992) look: in-camera practical effects, shadows moving independently, Eiko Ishioka’s opulent costumes, red and gold excess and theatrical gothic romance. Carry it through Coppola in-camera effects, Ishioka costumes, red and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Coppola in-camera effects; Ishioka costumes; red and gold
 avoidRules:
   - an armored red count with a long wig

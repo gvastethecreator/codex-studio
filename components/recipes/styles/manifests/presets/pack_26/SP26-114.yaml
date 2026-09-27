@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Symmetric wraparound painted composition, framed the way Mati Klarwein composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with lush visionary spirituality.
   rendering_and_quality: Faithful visionary painted album cover, in the recognizable hand of Mati Klarwein.
-  creative_brief: 'Mati Klarwein visionary cover painting look of around 1970: hyper-detailed surreal oil painting, mirrored symmetric bodies and landscapes, African and cosmic imagery and lush saturated color. Carry it through Klarwein visionary oil, symmetry, lush surreal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mati Klarwein visionary cover painting look of around 1970: hyper-detailed surreal oil painting, mirrored symmetric bodies and landscapes, African and cosmic imagery and lush saturated color. Carry it through Klarwein visionary oil, symmetry, lush surreal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Klarwein visionary oil; symmetry; lush surreal
 avoidRules:
   - existing franchise characters

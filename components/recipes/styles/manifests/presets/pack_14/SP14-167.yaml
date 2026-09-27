@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Grand staged composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with romantic mythic grandeur.
   rendering_and_quality: Highly finished salon painting, kept consistent across the whole image.
-  creative_brief: 'Academic Olympus oil: nineteenth-century salon painting of Greek myths, polished idealized figures, luminous skin, marble architecture and theatrical skies. Carry it through salon oil, idealized figures, marble, theatrical sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Academic Olympus oil: nineteenth-century salon painting of Greek myths, polished idealized figures, luminous skin, marble architecture and theatrical skies. Carry it through salon oil, idealized figures, marble, theatrical sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: salon oil; idealized figures; marble; theatrical sky
 avoidRules:
   - readable Greek inscriptions

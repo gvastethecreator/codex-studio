@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal product view, framed the way Retro Robot Toy composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with optimistic space-age fun.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Fifties and sixties space-age battery toy look: chunky tin and plastic robots with dome heads, antennas, lit-up chests, walking mechanisms and colorful boxes. Carry it through Space-age robot toy, dome head, lit chest. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fifties and sixties space-age battery toy look: chunky tin and plastic robots with dome heads, antennas, lit-up chests, walking mechanisms and colorful boxes. Carry it through Space-age robot toy, dome head, lit chest. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Space-age robot toy; dome head; lit chest
 avoidRules:
   - existing franchise characters

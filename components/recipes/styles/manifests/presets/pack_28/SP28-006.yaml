@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter product angle on a clear base, framed the way Good Smile Scale Figure composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with graceful anime charm.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Good Smile Company scale figure look: seventh-scale anime PVC figures with flowing sculpted hair and fabric, gradient paint, translucent effect parts and clear acrylic bases. Carry it through Good Smile scale figure, flowing hair, translucent effects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Good Smile Company scale figure look: seventh-scale anime PVC figures with flowing sculpted hair and fabric, gradient paint, translucent effect parts and clear acrylic bases. Carry it through Good Smile scale figure, flowing hair, translucent effects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Good Smile scale figure; flowing hair; translucent effects
 avoidRules:
   - licensed anime characters

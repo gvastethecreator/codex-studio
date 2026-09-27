@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Small rectangular plaque in horizontal registers, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ancient protective dread.
   rendering_and_quality: Crisp small-scale relief detail, kept consistent across the whole image.
-  creative_brief: 'Lamashtu exorcism plaque: Mesopotamian bronze exorcism plaques with a protective demon peering over the top, and registers of healers in fish cloaks, symbols and a monster driven away on a boat. Carry it through bronze plaque, registers, fish-cloaked healers, protective demon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lamashtu exorcism plaque: Mesopotamian bronze exorcism plaques with a protective demon peering over the top, and registers of healers in fish cloaks, symbols and a monster driven away on a boat. Carry it through bronze plaque, registers, fish-cloaked healers, protective demon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bronze plaque; registers; fish-cloaked healers; protective demon
 avoidRules:
   - cultural stereotypes or caricature

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low view up at sculpture among trees, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mystical forest reverence.
   rendering_and_quality: Organic sculptural presence, kept consistent across the whole image.
-  creative_brief: 'Sacred grove cement sculpture: towering organic cement and clay sculptures of deities among forest trees, flowing forms merging with roots and vines. Carry it through forest sculpture, organic forms, roots, moss. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sacred grove cement sculpture: towering organic cement and clay sculptures of deities among forest trees, flowing forms merging with roots and vines. Carry it through forest sculpture, organic forms, roots, moss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: forest sculpture; organic forms; roots; moss
 avoidRules:
   - generic tribal pattern

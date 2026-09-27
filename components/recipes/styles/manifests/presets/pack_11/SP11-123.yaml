@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'Radio telescope map: blurry false-color radio emission with lobes and jets.'
-  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: mapped as radio emission: blobs, lobes, jets and contour lines.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: mapped as radio emission: blobs, lobes, jets and contour lines."
   color_and_tone: False-color on black, exactly as the instrument maps its signal.
   lighting_and_shadow: No light, because the image shows signal, not ordinary light.
   texture_and_material: Blurry emission and contours, as real instrument artifacts rather than decoration.
   camera_and_composition: Sky map, matching how this instrument actually frames data.
   atmosphere_and_mood: Cosmic, mysterious, scientific and vast, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: 'Radio telescope map: blurry false-color radio emission with lobes and jets. Carry it through radio lobes, jets, contours. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Radio telescope map: blurry false-color radio emission with lobes and jets. Carry it through radio lobes, jets, contours. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: radio lobes; jets; contours
 avoidRules:
   - readable text

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter product angle at eye level, framed the way Sideshow Premium Format composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grounded heroic realism.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Sideshow Premium Format figure look: quarter-scale statues combining sculpted polystone with real tailored fabric costumes, realistic portrait paint and themed bases. Carry it through Sideshow mixed media, real fabric costume, portrait paint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sideshow Premium Format figure look: quarter-scale statues combining sculpted polystone with real tailored fabric costumes, realistic portrait paint and themed bases. Carry it through Sideshow mixed media, real fabric costume, portrait paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sideshow mixed media; real fabric costume; portrait paint
 avoidRules:
   - existing franchise characters

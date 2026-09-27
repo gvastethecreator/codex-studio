@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with ornate villainous grandeur.
   rendering_and_quality: Grand baroque dark fantasy television frame with villainous ornament.
   key_features: Baroque throne rooms; symmetry; skeletal lords; loyal guardians
-  creative_brief: 'Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur. Carry it through Baroque throne rooms, symmetry, skeletal lords, loyal guardians. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Madhouse Overlord look (2015): ivory-and-charcoal baroque throne rooms, symmetrical dark lord compositions, loyal monstrous guardians and ornate villainous grandeur. Carry it through Baroque throne rooms, symmetry, skeletal lords, loyal guardians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a skeletal overlord in black robes with a golden staff
   - a skeleton sorcerer king in purple and gold robes

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Split view above and below the waterline, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with drowned sacred melancholy.
   rendering_and_quality: Painterly light and water detail, kept consistent across the whole image.
-  creative_brief: 'Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints. Carry it through flooded cathedral, light rays, barnacled saints, waterline. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints. Carry it through flooded cathedral, light rays, barnacled saints, waterline. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flooded cathedral; light rays; barnacled saints; waterline
 avoidRules:
   - interface or HUD

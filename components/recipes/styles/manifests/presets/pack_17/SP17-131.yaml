@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide night battle with glowing points of light.
   atmosphere_and_mood: Keep the requested mood with electric nocturnal tension.
   rendering_and_quality: Clean glow with readable silhouettes, kept consistent across the whole image.
-  creative_brief: 'Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls. Carry it through floating neon sigils, night siege, glowing wards, wet stone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls. Carry it through floating neon sigils, night siege, glowing wards, wet stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: floating neon sigils; night siege; glowing wards; wet stone
 avoidRules:
   - readable symbols

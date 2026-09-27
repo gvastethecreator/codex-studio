@@ -17,9 +17,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A life-size warhorse carved from raw oak stands in a misty meadow, grain flowing along its muscles and adze marks still rough in the mane. No readable text or logo.",
-        "Deep in a forest clearing a man stands in full armor built from raw oak planks and wooden pegs, a woodpecker testing his shoulder. No readable text or logo.",
-        "Rising through an empty stone tower, a raw oak spiral staircase shows open grain and ray flecks climbing every dry, matte step. No readable text or logo.",
+        'A life-size warhorse carved from raw oak stands in a misty meadow, grain flowing along its muscles and adze marks still rough in the mane. No readable text or logo.',
+        'Deep in a forest clearing a man stands in full armor built from raw oak planks and wooden pegs, a woodpecker testing his shoulder. No readable text or logo.',
+        'Rising through an empty stone tower, a raw oak spiral staircase shows open grain and ray flecks climbing every dry, matte step. No readable text or logo.',
       ],
     },
     'SP09-002': {
@@ -34,9 +34,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A full-size dragon skeleton of mirror-polished mahogany with brass joints reflects every candle in a long museum hall. No readable text or logo.",
-        "Tucked in a library corner, a suit of armor made of French-polished mahogany shows flowing flame figure across its breastplate. No readable text or logo.",
-        "A slender racing shell of polished mahogany glides across a black lake at dawn, the deep red-brown grain glowing through a mirror finish. No readable text or logo.",
+        'A full-size dragon skeleton of mirror-polished mahogany with brass joints reflects every candle in a long museum hall. No readable text or logo.',
+        'Tucked in a library corner, a suit of armor made of French-polished mahogany shows flowing flame figure across its breastplate. No readable text or logo.',
+        'A slender racing shell of polished mahogany glides across a black lake at dawn, the deep red-brown grain glowing through a mirror finish. No readable text or logo.',
       ],
     },
     'SP09-003': {
@@ -51,9 +51,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a snowy forest a tall hooded figure wears a cloak of peeling birch bark layers, blending into the white trunks around it. No readable text or logo.",
-        "Resting on green moss, a fiddle made from curled sheets of birch bark shows dark lenticels running across its papery body. No readable text or logo.",
-        "Clad entirely in overlapping birch bark, a tiny wayside chapel glows at dusk with one candle, curled peels lifting at every corner. No readable text or logo.",
+        'In a snowy forest a tall hooded figure wears a cloak of peeling birch bark layers, blending into the white trunks around it. No readable text or logo.',
+        'Resting on green moss, a fiddle made from curled sheets of birch bark shows dark lenticels running across its papery body. No readable text or logo.',
+        'Clad entirely in overlapping birch bark, a tiny wayside chapel glows at dusk with one candle, curled peels lifting at every corner. No readable text or logo.',
       ],
     },
     'SP09-004': {
@@ -68,9 +68,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A colossal black granite bull stands in a rain-soaked plaza, the whole city sliding in reflections across its polished flanks. No readable text or logo.",
-        "Carved from polished pink granite, a grand piano sits in an empty concert hall with speckled feldspar crystals under a mirror-hard finish. No readable text or logo.",
-        "On a windswept sea cliff a throne cut from polished grey granite beads with rain, black mica speckles catching the storm light. No readable text or logo.",
+        'A colossal black granite bull stands in a rain-soaked plaza, the whole city sliding in reflections across its polished flanks. No readable text or logo.',
+        'Carved from polished pink granite, a grand piano sits in an empty concert hall with speckled feldspar crystals under a mirror-hard finish. No readable text or logo.',
+        'On a windswept sea cliff a throne cut from polished grey granite beads with rain, black mica speckles catching the storm light. No readable text or logo.',
       ],
     },
     'SP09-005': {
@@ -85,9 +85,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Half-eroded by desert wind, a giant kneeling warrior of rough sandstone shows bands of red and ochre across his shoulders. No readable text or logo.",
-        "A steam locomotive carved from rough red sandstone waits on rusted desert rails, grit trickling from its wind-rounded boiler. No readable text or logo.",
-        "In a quiet cloister courtyard a tall harp carved from layered sandstone sheds a thin ring of crumbled grit at its base. No readable text or logo.",
+        'Half-eroded by desert wind, a giant kneeling warrior of rough sandstone shows bands of red and ochre across his shoulders. No readable text or logo.',
+        'A steam locomotive carved from rough red sandstone waits on rusted desert rails, grit trickling from its wind-rounded boiler. No readable text or logo.',
+        'In a quiet cloister courtyard a tall harp carved from layered sandstone sheds a thin ring of crumbled grit at its base. No readable text or logo.',
       ],
     },
     'SP09-006': {
@@ -102,9 +102,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A veiled mourner carved from Carrara marble kneels in a ruined chapel, the veil so thin at its edges that light passes through the stone. No readable text or logo.",
-        "Coiling down a grand staircase, a serpent carved in white stone shows soft grey veins flowing along its polished scales. No readable text or logo.",
-        "Leaning against an old wall in a narrow street, a life-size bicycle carved from Carrara marble has thin grey veins running across its spokes. No readable text or logo.",
+        'A veiled mourner carved from Carrara marble kneels in a ruined chapel, the veil so thin at its edges that light passes through the stone. No readable text or logo.',
+        'Coiling down a grand staircase, a serpent carved in white stone shows soft grey veins flowing along its polished scales. No readable text or logo.',
+        'Leaning against an old wall in a narrow street, a life-size bicycle carved from Carrara marble has thin grey veins running across its spokes. No readable text or logo.',
       ],
     },
     'SP09-007': {
@@ -119,9 +119,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Perched on a quarry ledge, a winged beast built from overlapping split slate sheets shows sharp stepped edges along every plate. No readable text or logo.",
-        "Beside a quarry in the rain, a sentinel wears armor of riven slate scales, each dark plate cleaved into thin wet layers. No readable text or logo.",
-        "A rowing boat shingled in split slate tiles drifts on a still grey loch, rainwater pooling in the stepped hull. No readable text or logo.",
+        'Perched on a quarry ledge, a winged beast built from overlapping split slate sheets shows sharp stepped edges along every plate. No readable text or logo.',
+        'Beside a quarry in the rain, a sentinel wears armor of riven slate scales, each dark plate cleaved into thin wet layers. No readable text or logo.',
+        'A rowing boat shingled in split slate tiles drifts on a still grey loch, rainwater pooling in the stepped hull. No readable text or logo.',
       ],
     },
     'SP09-008': {
@@ -136,9 +136,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A sleeping giant made of mossy boulders lies across a misty glen, sheep grazing the cushions of moss on its shoulders. No readable text or logo.",
-        "On a forest floor a stone helmet has been swallowed by bright green moss, orange lichen crusting the rim like rust. No readable text or logo.",
-        "Deep in a rainforest an old stone telephone kiosk wears a roof of thick moss, lichen patterns creeping across its panels. No readable text or logo.",
+        'A sleeping giant made of mossy boulders lies across a misty glen, sheep grazing the cushions of moss on its shoulders. No readable text or logo.',
+        'On a forest floor a stone helmet has been swallowed by bright green moss, orange lichen crusting the rim like rust. No readable text or logo.',
+        'Deep in a rainforest an old stone telephone kiosk wears a roof of thick moss, lichen patterns creeping across its panels. No readable text or logo.',
       ],
     },
     'SP09-009': {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Standing in a shallow clear stream, a life-size bear built from smooth river stones catches the current around its fitted pebble legs. No readable text or logo.",
-        "On a windy shingle beach a long cloak of fitted river pebbles drapes over a standing figure, wet and gleaming at the hem. No readable text or logo.",
-        "In a sunlit whitewashed room an armchair assembled from smooth river stones holds a sleeping cat that clearly finds it comfortable. No readable text or logo.",
+        'Standing in a shallow clear stream, a life-size bear built from smooth river stones catches the current around its fitted pebble legs. No readable text or logo.',
+        'On a windy shingle beach a long cloak of fitted river pebbles drapes over a standing figure, wet and gleaming at the hem. No readable text or logo.',
+        'In a sunlit whitewashed room an armchair assembled from smooth river stones holds a sleeping cat that clearly finds it comfortable. No readable text or logo.',
       ],
     },
     'SP09-010': {
@@ -170,9 +170,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a deep red velvet cushion rests a crown knapped from black obsidian, conchoidal ripples across every point and razor edges glowing brown. No readable text or logo.",
-        "Striding across a lava field, a warrior wears armor of knapped obsidian plates that flash with rainbow sheen. No readable text or logo.",
-        "A wolf knapped from black volcanic glass stands on a snowy ridge at sunset, razor edges along its fur catching pink light. No readable text or logo.",
+        'On a deep red velvet cushion rests a crown knapped from black obsidian, conchoidal ripples across every point and razor edges glowing brown. No readable text or logo.',
+        'Striding across a lava field, a warrior wears armor of knapped obsidian plates that flash with rainbow sheen. No readable text or logo.',
+        'A wolf knapped from black volcanic glass stands on a snowy ridge at sunset, razor edges along its fur catching pink light. No readable text or logo.',
       ],
     },
     'SP09-011': {
@@ -187,9 +187,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a snowbound log cabin a tall grandfather clock is covered in dense grey-brown wolf fur, guard hairs flowing down its case. No readable text or logo.",
+        'In a snowbound log cabin a tall grandfather clock is covered in dense grey-brown wolf fur, guard hairs flowing down its case. No readable text or logo.',
         "A frozen battlefield wind combs through a warlord's cape and helmet crest of thick silver wolf fur. No readable text or logo.",
-        "Beside a crackling hearth sits an armchair upholstered in wolf fur, the underfur showing where the guard hairs part on the arms. No readable text or logo.",
+        'Beside a crackling hearth sits an armchair upholstered in wolf fur, the underfur showing where the guard hairs part on the arms. No readable text or logo.',
       ],
     },
     'SP09-012': {
@@ -204,9 +204,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A cello covered in overlapping emerald-and-gold keeled scales lies on black cloth, a banded pattern spiraling down its neck. No readable text or logo.",
+        'A cello covered in overlapping emerald-and-gold keeled scales lies on black cloth, a banded pattern spiraling down its neck. No readable text or logo.',
         "In a desert ruin a woman's gown of iridescent snake scales shifts from copper to green as she turns. No readable text or logo.",
-        "A horse-drawn carriage covered in iridescent snake scales waits on a rainy cobbled street, shifting violet under the gas lamps. No readable text or logo.",
+        'A horse-drawn carriage covered in iridescent snake scales waits on a rainy cobbled street, shifting violet under the gas lamps. No readable text or logo.',
       ],
     },
     'SP09-013': {
@@ -221,9 +221,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dusk battlefield rests a helmet covered in overlapping glossy raven feathers, blue-violet iridescence rippling along every barb. No readable text or logo.",
-        "In an old manor a sweeping banister is covered in soft barred owl feathers, overlapping downward like a folded wing. No readable text or logo.",
-        "A small rowboat covered in white swan feathers floats on a still pond at dawn, feathers lifting slightly in the breeze. No readable text or logo.",
+        'On a dusk battlefield rests a helmet covered in overlapping glossy raven feathers, blue-violet iridescence rippling along every barb. No readable text or logo.',
+        'In an old manor a sweeping banister is covered in soft barred owl feathers, overlapping downward like a folded wing. No readable text or logo.',
+        'A small rowboat covered in white swan feathers floats on a still pond at dawn, feathers lifting slightly in the breeze. No readable text or logo.',
       ],
     },
     'SP09-014': {
@@ -238,9 +238,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On the sea bed a sunken diving bell is overgrown with pink and orange branching coral while parrotfish graze its rim. No readable text or logo.",
-        "A chandelier grown from branching coral hangs in a dark sunken ballroom, fish swimming between its arms. No readable text or logo.",
-        "In a sea cave a throne formed from brain and staghorn coral hosts a moray eel peering out from the armrest. No readable text or logo.",
+        'On the sea bed a sunken diving bell is overgrown with pink and orange branching coral while parrotfish graze its rim. No readable text or logo.',
+        'A chandelier grown from branching coral hangs in a dark sunken ballroom, fish swimming between its arms. No readable text or logo.',
+        'In a sea cave a throne formed from brain and staghorn coral hosts a moray eel peering out from the armrest. No readable text or logo.',
       ],
     },
     'SP09-015': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a stone altar a crown of golden beeswax honeycomb glows in a sunbeam as honey drips slowly down its points. No readable text or logo.",
+        'On a stone altar a crown of golden beeswax honeycomb glows in a sunbeam as honey drips slowly down its points. No readable text or logo.',
         "A beekeeper's smoker and veiled hat left on a garden bench have been grown over by golden honeycomb, cells glowing in the late sun. No readable text or logo.",
-        "Hanging in a dark barn, a lantern of honeycomb wax makes every hexagonal cell glow amber around its candle. No readable text or logo.",
+        'Hanging in a dark barn, a lantern of honeycomb wax makes every hexagonal cell glow amber around its candle. No readable text or logo.',
       ],
     },
     'SP09-016': {
@@ -272,9 +272,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A life-size bison carved from dense blue glacier ice stands on a frozen plain, trapped bubbles drifting inside its hump. No readable text or logo.",
-        "In a dark stone hall a piano carved from glacier ice glows in a single spotlight, meltwater dripping steadily from its keys. No readable text or logo.",
-        "A great door of blue glacier ice stands in a snowstorm, fracture planes deep inside and melt-smoothed edges around its handle. No readable text or logo.",
+        'A life-size bison carved from dense blue glacier ice stands on a frozen plain, trapped bubbles drifting inside its hump. No readable text or logo.',
+        'In a dark stone hall a piano carved from glacier ice glows in a single spotlight, meltwater dripping steadily from its keys. No readable text or logo.',
+        'A great door of blue glacier ice stands in a snowstorm, fracture planes deep inside and melt-smoothed edges around its handle. No readable text or logo.',
       ],
     },
     'SP09-044': {
@@ -289,9 +289,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a wet beach at dusk sits an old diving helmet grown from porous tan sea sponge, tiny crabs sheltering in its holes. No readable text or logo.",
-        "In a white-walled room an armchair made entirely of sea sponge casts dotted shadows through its irregular pores. No readable text or logo.",
-        "On a museum plinth a bust of a queen made of sea sponge wears a crown of porous tan fibers. No readable text or logo.",
+        'On a wet beach at dusk sits an old diving helmet grown from porous tan sea sponge, tiny crabs sheltering in its holes. No readable text or logo.',
+        'In a white-walled room an armchair made entirely of sea sponge casts dotted shadows through its irregular pores. No readable text or logo.',
+        'On a museum plinth a bust of a queen made of sea sponge wears a crown of porous tan fibers. No readable text or logo.',
       ],
     },
     'SP09-055': {
@@ -307,8 +307,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "In a candlelit cave a beast's skull of faceted amethyst throws violet refractions across the rock walls. No readable text or logo.",
-        "A hummingbird carved from faceted blue sapphire perches on a real flower stem, color zoning deepening through its wings. No readable text or logo.",
-        "In a sunlit nursery a rocking horse of clear quartz spills rainbow refractions across the floorboards. No readable text or logo.",
+        'A hummingbird carved from faceted blue sapphire perches on a real flower stem, color zoning deepening through its wings. No readable text or logo.',
+        'In a sunlit nursery a rocking horse of clear quartz spills rainbow refractions across the floorboards. No readable text or logo.',
       ],
     },
     'SP09-063': {
@@ -323,9 +323,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In an abandoned workshop an old printing press is draped in thick dusty cobwebs, silk strands sagging between rollers and levers. No readable text or logo.",
-        "A grand piano in a derelict ballroom is shrouded under layers of cobweb that hang from the lid like curtains. No readable text or logo.",
-        "On a long banquet table in a derelict manor, a tiered wedding cake lies shrouded in grey cobwebs, spiders still at work. No readable text or logo.",
+        'In an abandoned workshop an old printing press is draped in thick dusty cobwebs, silk strands sagging between rollers and levers. No readable text or logo.',
+        'A grand piano in a derelict ballroom is shrouded under layers of cobweb that hang from the lid like curtains. No readable text or logo.',
+        'On a long banquet table in a derelict manor, a tiered wedding cake lies shrouded in grey cobwebs, spiders still at work. No readable text or logo.',
       ],
     },
     'SP09-066': {
@@ -340,9 +340,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A huge sleeping serpent sculpted from packed beach sand stretches along the shore, its tail already crumbling into the tide. No readable text or logo.",
-        "Crawling toward the waves, a sea turtle sculpted from packed beach sand slowly loses its flippers to the wind. No readable text or logo.",
-        "At sunset a cathedral facade carved from packed sand glows orange on the beach, one tower slowly slumping. No readable text or logo.",
+        'A huge sleeping serpent sculpted from packed beach sand stretches along the shore, its tail already crumbling into the tide. No readable text or logo.',
+        'Crawling toward the waves, a sea turtle sculpted from packed beach sand slowly loses its flippers to the wind. No readable text or logo.',
+        'At sunset a cathedral facade carved from packed sand glows orange on the beach, one tower slowly slumping. No readable text or logo.',
       ],
     },
     'SP09-068': {
@@ -357,9 +357,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a black sand beach a golem of porous black-red lava rock kneels while steam rises from the cracks in its shoulders. No readable text or logo.",
-        "Inside a volcanic cave a throne of ropy cooled lava rock glows faintly orange from a fissure beneath it. No readable text or logo.",
-        "A teapot of porous black lava rock steams on a rough wooden table, a ropy flow ridge running along its spout. No readable text or logo.",
+        'On a black sand beach a golem of porous black-red lava rock kneels while steam rises from the cracks in its shoulders. No readable text or logo.',
+        'Inside a volcanic cave a throne of ropy cooled lava rock glows faintly orange from a fissure beneath it. No readable text or logo.',
+        'A teapot of porous black lava rock steams on a rough wooden table, a ropy flow ridge running along its spout. No readable text or logo.',
       ],
     },
     'SP09-079': {
@@ -374,9 +374,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An old music box sheathed in mother of pearl lies open on a dark pebble shore at twilight, its nacre shifting pink to green to silver. No readable text or logo.",
-        "A mandolin inlaid entirely with mother of pearl rests on black silk, shimmering plates shifting color along its curves. No readable text or logo.",
-        "In a moonlit palace courtyard a ceremonial carriage covered in nacre inlay shimmers blue and pink while the horses wait in shadow. No readable text or logo.",
+        'An old music box sheathed in mother of pearl lies open on a dark pebble shore at twilight, its nacre shifting pink to green to silver. No readable text or logo.',
+        'A mandolin inlaid entirely with mother of pearl rests on black silk, shimmering plates shifting color along its curves. No readable text or logo.',
+        'In a moonlit palace courtyard a ceremonial carriage covered in nacre inlay shimmers blue and pink while the horses wait in shadow. No readable text or logo.',
       ],
     },
     'SP09-080': {
@@ -391,9 +391,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Leaning against a burnt tree, a round shield covered in huge crimson scales shows deep battle scratches across its metallic sheen. No readable text or logo.",
-        "A woman in a coat of bronze armored scales stands in a storm, lightning flashing along every ridged plate. No readable text or logo.",
-        "Set in a fortress wall, a heavy door covered in bronze-green scales bears old claw scratches beside a burning torch. No readable text or logo.",
+        'Leaning against a burnt tree, a round shield covered in huge crimson scales shows deep battle scratches across its metallic sheen. No readable text or logo.',
+        'A woman in a coat of bronze armored scales stands in a storm, lightning flashing along every ridged plate. No readable text or logo.',
+        'Set in a fortress wall, a heavy door covered in bronze-green scales bears old claw scratches beside a burning torch. No readable text or logo.',
       ],
     },
   },

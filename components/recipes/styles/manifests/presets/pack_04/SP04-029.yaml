@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Playful and punchy, a collectible little treasure.
   rendering_and_quality: Crisp decal-ready shapes readable at small size; no background scene and no readable text.
   key_features: thick white die-cut border; flat saturated vector; laminate highlight streak; lifted corner; isolated silhouette
-  creative_brief: 'Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine. Carry it through thick white die-cut border, flat saturated vector, laminate highlight streak, lifted corner, isolated silhouette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine. Carry it through thick white die-cut border, flat saturated vector, laminate highlight streak, lifted corner, isolated silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - known picture-book characters
   - franchise mascot likeness

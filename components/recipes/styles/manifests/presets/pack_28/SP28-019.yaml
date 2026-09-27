@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close mantelpiece view, framed the way Porcelain Figurine composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with delicate genteel charm.
   rendering_and_quality: Antique porcelain figurine photograph, in the recognizable hand of Porcelain Figurine.
-  creative_brief: 'Hand-painted porcelain figurine look: glossy glazed porcelain with delicate floral painting, gilded edges, pastel colors and a mantelpiece setting. Carry it through Porcelain figurine, glaze, gilded edges, florals. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hand-painted porcelain figurine look: glossy glazed porcelain with delicate floral painting, gilded edges, pastel colors and a mantelpiece setting. Carry it through Porcelain figurine, glaze, gilded edges, florals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Porcelain figurine; glaze; gilded edges; florals
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slapstick vignette, framed the way Kelvin Green composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gleeful grotesque comedy.
   rendering_and_quality: Comedic grotesque OSR ink illustration, in the recognizable hand of Kelvin Green.
-  creative_brief: 'Kelvin Green OSR art: comedic grotesque ink, bulbous ugly monsters and disgusting details, slapstick violence and gleeful British underground humor. Carry it through Kelvin Green grotesque comedy, bulbous monsters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kelvin Green OSR art: comedic grotesque ink, bulbous ugly monsters and disgusting details, slapstick violence and gleeful British underground humor. Carry it through Kelvin Green grotesque comedy, bulbous monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kelvin Green grotesque comedy; bulbous monsters
 avoidRules:
   - existing franchise characters

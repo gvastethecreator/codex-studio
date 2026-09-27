@@ -24,16 +24,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'FromSoftware Demon''s Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light.'
+  aesthetic: "FromSoftware Demon's Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as lone weathered warriors in dented plate and mail. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Grey-green fog, cold stone and rust, true to the Demon's Souls 2009 palette.
-  lighting_and_shadow: "Dull grey-green fog light with a bright glowing white fog gate."
-  texture_and_material: "Worn stone and dented armor in muddy low-detail textures, crushed dark shadows."
+  lighting_and_shadow: 'Dull grey-green fog light with a bright glowing white fog gate.'
+  texture_and_material: 'Worn stone and dented armor in muddy low-detail textures, crushed dark shadows.'
   camera_and_composition: Third-person lock-on duel view, framed the way Demon's Souls 2009 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim oppressive dread.
-  rendering_and_quality: "A 2009 PlayStation 3 frame at 1280 by 720 in third person: lone knight in a ruined keep, grey-green tint, bar shapes top left."
+  rendering_and_quality: 'A 2009 PlayStation 3 frame at 1280 by 720 in third person: lone knight in a ruined keep, grey-green tint, bar shapes top left.'
   key_features: Demon's Souls fog gates; ruined keep; grey-green
-  creative_brief: 'FromSoftware Demon''s Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light. Carry it through Demon''s Souls fog gates, ruined keep, grey-green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "FromSoftware Demon's Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light. Carry it through Demon's Souls fog gates, ruined keep, grey-green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

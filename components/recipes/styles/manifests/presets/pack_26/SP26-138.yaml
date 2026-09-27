@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Blurry snapshot framing, framed the way Grunge 1991 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sullen lo-fi angst.
   rendering_and_quality: Faithful early-nineties grunge cover, in the recognizable hand of Grunge 1991.
-  creative_brief: 'Early nineties grunge and Sub Pop cover look: blurry flash snapshots, underexposed film, flannel, basements, Xeroxed type and lo-fi Seattle rain gloom. Carry it through Grunge flash snapshot, underexposed, flannel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Early nineties grunge and Sub Pop cover look: blurry flash snapshots, underexposed film, flannel, basements, Xeroxed type and lo-fi Seattle rain gloom. Carry it through Grunge flash snapshot, underexposed, flannel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Grunge flash snapshot; underexposed; flannel
 avoidRules:
   - a baby swimming toward a dollar bill

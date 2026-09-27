@@ -24,9 +24,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A fisherwoman and a baby sea serpent share a melting ice pop on a harbor wall beneath towering cumulus clouds. No readable text or logo.",
-        "Heat shimmer rises off a coastal road where a lone bus-stop bench has partly melted into a lazy curve. No readable text or logo.",
-        "A lifeguard naps under a beach umbrella while an octopus in sunglasses quietly takes over her watch tower. No readable text or logo.",
+        'A fisherwoman and a baby sea serpent share a melting ice pop on a harbor wall beneath towering cumulus clouds. No readable text or logo.',
+        'Heat shimmer rises off a coastal road where a lone bus-stop bench has partly melted into a lazy curve. No readable text or logo.',
+        'A lifeguard naps under a beach umbrella while an octopus in sunglasses quietly takes over her watch tower. No readable text or logo.',
       ],
     },
     {
@@ -45,9 +45,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A squire swings a wooden sword alone in a misty yard before sunrise, each stroke parting the mist like a curtain. No readable text or logo.",
-        "An early runner is joined every morning by a heron that jogs beside her along the misty river and is becoming slightly competitive. No readable text or logo.",
-        "At first light a violinist rehearses alone in a frozen field, the mist around her swaying with each bow stroke. No readable text or logo.",
+        'A squire swings a wooden sword alone in a misty yard before sunrise, each stroke parting the mist like a curtain. No readable text or logo.',
+        'An early runner is joined every morning by a heron that jogs beside her along the misty river and is becoming slightly competitive. No readable text or logo.',
+        'At first light a violinist rehearses alone in a frozen field, the mist around her swaying with each bow stroke. No readable text or logo.',
       ],
     },
     {
@@ -66,9 +66,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A tower guard leans into a howling gale on the battlements, cloak streaming, as a flock of kites tears loose from the city below. No readable text or logo.",
+        'A tower guard leans into a howling gale on the battlements, cloak streaming, as a flock of kites tears loose from the city below. No readable text or logo.',
         "An office worker's lunch lifts off in a sudden gust, sandwich slices flapping away like birds as she lunges after them. No readable text or logo.",
-        "A lone woman stands on a hospital roof in a strong breeze, letting a long scarf fly away into the racing clouds. No readable text or logo.",
+        'A lone woman stands on a hospital roof in a strong breeze, letting a long scarf fly away into the racing clouds. No readable text or logo.',
       ],
     },
     {
@@ -87,9 +87,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A weary knight in dented armor dozes against a carriage window at night, her reflection layered over the city lights like a ghost still awake. No readable text or logo.",
-        "The last service home is so empty that the conductor sits down and shares a bento with the only passenger. No readable text or logo.",
-        "In a dark carriage window the reflection shows a passenger calmly reading in a seat that is empty. No readable text or logo.",
+        'A weary knight in dented armor dozes against a carriage window at night, her reflection layered over the city lights like a ghost still awake. No readable text or logo.',
+        'The last service home is so empty that the conductor sits down and shares a bento with the only passenger. No readable text or logo.',
+        'In a dark carriage window the reflection shows a passenger calmly reading in a seat that is empty. No readable text or logo.',
       ],
     },
     {
@@ -108,9 +108,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A woman holds a wax-sealed envelope, her fingers sharp while her face dissolves into the glowing bokeh of a summer window. No readable text or logo.",
-        "A mail carrier delivers a love note to the wrong house, and the retired sailor who opens it clutches it with trembling hands. No readable text or logo.",
-        "Hundreds of unsent envelopes drift in the sunny blur of an attic like pale petals, one slowly floating into focus. No readable text or logo.",
+        'A woman holds a wax-sealed envelope, her fingers sharp while her face dissolves into the glowing bokeh of a summer window. No readable text or logo.',
+        'A mail carrier delivers a love note to the wrong house, and the retired sailor who opens it clutches it with trembling hands. No readable text or logo.',
+        'Hundreds of unsent envelopes drift in the sunny blur of an attic like pale petals, one slowly floating into focus. No readable text or logo.',
       ],
     },
     {
@@ -129,7 +129,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A cluttered monster-research office run by adult scholars is crammed with jars, maps and a baby griffin asleep in the paper tray while the researchers argue over its name. No readable text or logo.",
+        'A cluttered monster-research office run by adult scholars is crammed with jars, maps and a baby griffin asleep in the paper tray while the researchers argue over its name. No readable text or logo.',
         "A board-game society's room is buried under so many unfinished games that the president has to snorkel through the pieces to reach the table. No readable text or logo.",
         "In the astronomy society's cluttered room at midnight, members sleep on beanbags while their telescope slowly swings to follow a comet. No readable text or logo.",
       ],
@@ -150,9 +150,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A scribe reads on a rolling ladder in an ancient library while a shaft of sun turns the dust around her into a slow galaxy. No readable text or logo.",
-        "A retired librarian and a very old tortoise share one book in a sunbeam, turning a single page every hour. No readable text or logo.",
-        "Between tall shelves a book has fallen open by itself in the sunlight, and its pages are gently breathing. No readable text or logo.",
+        'A scribe reads on a rolling ladder in an ancient library while a shaft of sun turns the dust around her into a slow galaxy. No readable text or logo.',
+        'A retired librarian and a very old tortoise share one book in a sunbeam, turning a single page every hour. No readable text or logo.',
+        'Between tall shelves a book has fallen open by itself in the sunlight, and its pages are gently breathing. No readable text or logo.',
       ],
     },
     {
@@ -171,9 +171,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Adult villagers in heavy wool coats sing in a stone chapel at midwinter, their breath rising into a glowing golden cloud above the pews. No readable text or logo.",
-        "A crew of burly firefighters rehearses a lullaby in four-part harmony at the station, helmets resting on their laps. No readable text or logo.",
-        "A lone singer stands in an empty cathedral singing to rows of candles, every flame bending toward her voice. No readable text or logo.",
+        'Adult villagers in heavy wool coats sing in a stone chapel at midwinter, their breath rising into a glowing golden cloud above the pews. No readable text or logo.',
+        'A crew of burly firefighters rehearses a lullaby in four-part harmony at the station, helmets resting on their laps. No readable text or logo.',
+        'A lone singer stands in an empty cathedral singing to rows of candles, every flame bending toward her voice. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

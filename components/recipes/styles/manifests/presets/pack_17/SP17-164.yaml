@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Side view of the van panel with the mural.
   atmosphere_and_mood: Keep the requested mood with groovy cosmic fantasy.
   rendering_and_quality: Convincing mural on a real vehicle, kept consistent across the whole image.
-  creative_brief: 'Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim. Carry it through van side mural, airbrush sunset, glossy metal, chrome trim. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim. Carry it through van side mural, airbrush sunset, glossy metal, chrome trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: van side mural; airbrush sunset; glossy metal; chrome trim
 avoidRules:
   - brand logos

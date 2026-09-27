@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw two fighters as large detailed pixel sprites facing each other on a lively stage, one on each side. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw two fighters as large detailed pixel sprites facing each other on a lively stage, one on each side. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Bright arcade colors with detailed stage backdrops, true to the Street Fighter II 1991 palette.
-  lighting_and_shadow: "Flat arcade colors with hard pixel shading bands on muscles and cloth."
-  texture_and_material: "Large hand-drawn pixel sprites with visible square pixels, stage backgrounds full of animated pixel onlookers."
+  lighting_and_shadow: 'Flat arcade colors with hard pixel shading bands on muscles and cloth.'
+  texture_and_material: 'Large hand-drawn pixel sprites with visible square pixels, stage backgrounds full of animated pixel onlookers.'
   camera_and_composition: Side versus view with health bars, framed the way Street Fighter II 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with competitive arcade intensity.
-  rendering_and_quality: "A 1991 arcade frame at 384 by 224: crisp pixels, two health bar shapes across the top and a timer box between them."
+  rendering_and_quality: 'A 1991 arcade frame at 384 by 224: crisp pixels, two health bar shapes across the top and a timer box between them.'
   creative_brief: "Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects. Carry it through SF2 large pixel fighters, lively stages, versus health bars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "SF2 large pixel fighters; lively stages; versus health bars"
+  key_features: 'SF2 large pixel fighters; lively stages; versus health bars'
 avoidRules:
   - existing fighting game characters
   - existing franchise characters

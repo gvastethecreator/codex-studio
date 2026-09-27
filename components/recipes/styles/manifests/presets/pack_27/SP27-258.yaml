@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Shared Memory Animal Well (2024) look: tiny dark pixel art with glowing bioluminescent light sources, eerie giant animals, a small blob hero and dense hand-crafted secrets.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny pixel sprites in dark wells lit by glowing sources. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep black with glowing teal, pink and amber.
-  lighting_and_shadow: "Small glowing pixel light sources in near-total darkness."
-  texture_and_material: "Tiny detailed pixel art with soft modern glow and bloom around lights."
+  lighting_and_shadow: 'Small glowing pixel light sources in near-total darkness.'
+  texture_and_material: 'Tiny detailed pixel art with soft modern glow and bloom around lights.'
   camera_and_composition: Side-view single-screen metroidvania, framed the way Animal Well 2024 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie curious mystery.
-  rendering_and_quality: "A 2024 frame at 320 by 180 scaled up: a tiny blob sprite in a dark well, glowing plants and a huge animal shape."
-  creative_brief: 'Shared Memory Animal Well (2024) look: tiny dark pixel art with glowing bioluminescent light sources, eerie giant animals, a small blob hero and dense hand-crafted secrets. Carry it through Animal Well glowing pixels, dark wells, giant animals. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2024 frame at 320 by 180 scaled up: a tiny blob sprite in a dark well, glowing plants and a huge animal shape.'
+  creative_brief: "Shared Memory Animal Well (2024) look: tiny dark pixel art with glowing bioluminescent light sources, eerie giant animals, a small blob hero and dense hand-crafted secrets. Carry it through Animal Well glowing pixels, dark wells, giant animals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Animal Well glowing pixels; dark wells; giant animals
 avoidRules:
   - a small round blob hero

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal symbolic tableaux, framed the way El Topo 1970 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with surreal mystical allegory.
   rendering_and_quality: Authentic seventies acid western frame, in the recognizable hand of El Topo 1970.
-  creative_brief: 'Alejandro Jodorowsky El Topo (1970) look: surreal acid western, white desert, symbolic tableaux, black-clad riders, umbrellas in the sun, pools of blood and mystical allegory. Carry it through El Topo surreal desert, symbolic tableaux, black riders. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alejandro Jodorowsky El Topo (1970) look: surreal acid western, white desert, symbolic tableaux, black-clad riders, umbrellas in the sun, pools of blood and mystical allegory. Carry it through El Topo surreal desert, symbolic tableaux, black riders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: El Topo surreal desert; symbolic tableaux; black riders
 avoidRules:
   - a black-clad rider with a naked child and an umbrella

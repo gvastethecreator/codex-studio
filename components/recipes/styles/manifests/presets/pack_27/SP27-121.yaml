@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide stagey frames against painted cyclorama horizons, framed the way Destination Moon 1950 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with earnest frontier optimism.
   rendering_and_quality: Authentic early-fifties Technicolor science fiction frame, in the recognizable hand of Destination Moon 1950.
-  creative_brief: 'Irving Pichel Destination Moon (1950) look: Chesley Bonestell painted lunar matte backdrops, sleek finned rockets on gantries, Technicolor space suits and sober engineering optimism. Carry it through Bonestell lunar mattes, finned rocket, Technicolor suits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Irving Pichel Destination Moon (1950) look: Chesley Bonestell painted lunar matte backdrops, sleek finned rockets on gantries, Technicolor space suits and sober engineering optimism. Carry it through Bonestell lunar mattes, finned rocket, Technicolor suits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bonestell lunar mattes; finned rocket; Technicolor suits
 avoidRules:
   - existing franchise characters

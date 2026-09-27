@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low three-quarter view of the creature crouching, tension in every limb.
   atmosphere_and_mood: Keep the requested mood with wounded defiant menace.
   rendering_and_quality: Powerful sculptural bronze with crisp stylized mane, kept consistent across the whole image.
-  creative_brief: 'Etruscan bronze chimera: ancient Italic cast bronze of the three-headed fire beast, lion body, goat head rising from its back and serpent tail, snarling with wounded tension. Carry it through three-headed beast, lion body, goat head, serpent tail. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Etruscan bronze chimera: ancient Italic cast bronze of the three-headed fire beast, lion body, goat head rising from its back and serpent tail, snarling with wounded tension. Carry it through three-headed beast, lion body, goat head, serpent tail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: three-headed beast; lion body; goat head; serpent tail
 avoidRules:
   - cultural stereotypes or caricature

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Stagey medium shots in lab and home interiors.
   atmosphere_and_mood: Keep the requested mood with elegant scientific dread.
   rendering_and_quality: Authentic fifties Technicolor lab horror frame, in the recognizable hand of The Fly 1958.
-  creative_brief: 'Kurt Neumann The Fly (1958) look: saturated Technicolor Montreal home laboratory, teleportation booths with glowing panels, elegant fifties domesticity and scientific dread. Carry it through The Fly lab booths, Technicolor domestic, teleport glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kurt Neumann The Fly (1958) look: saturated Technicolor Montreal home laboratory, teleportation booths with glowing panels, elegant fifties domesticity and scientific dread. Carry it through The Fly lab booths, Technicolor domestic, teleport glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: The Fly lab booths; Technicolor domestic; teleport glow
 avoidRules:
   - a man with a fly head

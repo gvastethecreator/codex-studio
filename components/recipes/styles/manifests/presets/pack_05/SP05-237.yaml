@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with hot-blooded heroic sacrifice.
   rendering_and_quality: Heroic 1988 Gainax OVA frame with hot-blooded energy.
   key_features: Gunbuster heroics; colossal robots; training spirit; space fleets
-  creative_brief: 'Gainax Gunbuster OVA look (1988) by Hideaki Anno: hot-blooded training spirit, colossal combining super robots, space fleets and dramatic heroic poses in color. Carry it through Gunbuster heroics, colossal robots, training spirit, space fleets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gainax Gunbuster OVA look (1988) by Hideaki Anno: hot-blooded training spirit, colossal combining super robots, space fleets and dramatic heroic poses in color. Carry it through Gunbuster heroics, colossal robots, training spirit, space fleets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a giant robot with a headband crossing its arms
   - white, red and blue super robot with a yellow chest plate

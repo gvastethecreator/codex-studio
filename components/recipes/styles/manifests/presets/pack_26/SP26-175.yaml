@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic animated series framing with painted depth, framed the way Fortiche composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with raw painted intensity.
   rendering_and_quality: Faithful Fortiche painted-3D animation frame, in the recognizable hand of Fortiche.
-  creative_brief: 'Fortiche Production look of the 2010s and 2020s: 3D animated characters with hand-painted textures and brushstroke surfaces, 2D effects and graffiti overlays, stylized painted light and steampunk-industrial cities. Carry it through Fortiche painted 3D, brushstroke textures, 2D FX. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Fortiche Production look of the 2010s and 2020s: 3D animated characters with hand-painted textures and brushstroke surfaces, 2D effects and graffiti overlays, stylized painted light and steampunk-industrial cities. Carry it through Fortiche painted 3D, brushstroke textures, 2D FX. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Fortiche painted 3D; brushstroke textures; 2D FX
 avoidRules:
   - a pink-haired girl with cloud tattoos and a minigun

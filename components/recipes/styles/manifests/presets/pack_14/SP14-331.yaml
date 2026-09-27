@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Formal seated portrait with a floating figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with uncanny parlor mystery.
   rendering_and_quality: Convincing antique photograph, kept consistent across the whole image.
-  creative_brief: 'Victorian spirit photograph: nineteenth-century double-exposure portraits where translucent ghosts float behind stiff sitters, sepia tones and faded edges. Carry it through double exposure, translucent ghost, sepia, stiff pose. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Victorian spirit photograph: nineteenth-century double-exposure portraits where translucent ghosts float behind stiff sitters, sepia tones and faded edges. Carry it through double exposure, translucent ghost, sepia, stiff pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: double exposure; translucent ghost; sepia; stiff pose
 avoidRules:
   - cultural stereotypes or caricature

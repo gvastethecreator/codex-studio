@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Layered textural collage, framed the way Vaughan Oliver composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with ethereal dreamy mystery.
   rendering_and_quality: Faithful eighties 4AD cover design, in the recognizable hand of Vaughan Oliver.
-  creative_brief: 'Vaughan Oliver v23 4AD cover look of the 1980s: ethereal blurred photographs by Nigel Grierson, organic textures, flesh and fabric, elegant layered type and dreamy mystery. Carry it through Vaughan Oliver ethereal blur, organic texture, layered type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Vaughan Oliver v23 4AD cover look of the 1980s: ethereal blurred photographs by Nigel Grierson, organic textures, flesh and fabric, elegant layered type and dreamy mystery. Carry it through Vaughan Oliver ethereal blur, organic texture, layered type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Vaughan Oliver ethereal blur; organic texture; layered type
 avoidRules:
   - existing franchise characters

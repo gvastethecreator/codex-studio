@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Crowded all-over cartoon composition, framed the way Pedro Bell composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with wild cosmic funk satire.
   rendering_and_quality: Faithful seventies funk cartoon cover design, in the recognizable hand of Pedro Bell.
-  creative_brief: 'Pedro Bell Funkadelic-era cover look of the 1970s: dense felt-tip cartoon cosmos, grotesque funky space creatures, crowded all-over chaos and psychedelic Afrofuturist satire. Carry it through Pedro Bell felt-tip cosmos, funky creatures, crowded. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Pedro Bell Funkadelic-era cover look of the 1970s: dense felt-tip cartoon cosmos, grotesque funky space creatures, crowded all-over chaos and psychedelic Afrofuturist satire. Carry it through Pedro Bell felt-tip cosmos, funky creatures, crowded. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pedro Bell felt-tip cosmos; funky creatures; crowded
 avoidRules:
   - existing franchise characters

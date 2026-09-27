@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Crowded flyer-like composition, framed the way Rave Flyer 1992 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with euphoric rave energy.
   rendering_and_quality: Faithful early-nineties rave cover, in the recognizable hand of Rave Flyer 1992.
-  creative_brief: 'Early nineties UK rave and hardcore cover look: garish 3D-rendered chrome type, fractals, smiley faces, day-glo colors and cheap early computer graphics. Carry it through Rave chrome type, fractals, day-glo. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Early nineties UK rave and hardcore cover look: garish 3D-rendered chrome type, fractals, smiley faces, day-glo colors and cheap early computer graphics. Carry it through Rave chrome type, fractals, day-glo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rave chrome type; fractals; day-glo
 avoidRules:
   - existing franchise characters

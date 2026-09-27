@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low view up the temple steps, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with solemn cosmic ritual.
   rendering_and_quality: Painterly gloss and grand scale, kept consistent across the whole image.
-  creative_brief: 'Obsidian sun temple direction: painted art direction of black obsidian step temples under a blazing eclipsed sun, gold inlay and ritual processions. Carry it through obsidian step temple, eclipse sun, gold inlay, procession. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Obsidian sun temple direction: painted art direction of black obsidian step temples under a blazing eclipsed sun, gold inlay and ritual processions. Carry it through obsidian step temple, eclipse sun, gold inlay, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: obsidian step temple; eclipse sun; gold inlay; procession
 avoidRules:
   - interface or HUD

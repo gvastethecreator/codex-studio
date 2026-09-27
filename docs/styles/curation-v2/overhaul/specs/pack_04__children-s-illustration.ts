@@ -1,6 +1,6 @@
 import type { Dna, Spec } from '../tools/apply';
 
-const AVOID = [ 'known picture-book characters', 'franchise mascot likeness'];
+const AVOID = ['known picture-book characters', 'franchise mascot likeness'];
 // Media must not change body proportions (category review); only profiles that say so may.
 const KEEP_PROPORTIONS = [...AVOID, 'enlarged head', 'unrequested chibi proportions'];
 

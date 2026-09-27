@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow motion, freeze frames and mirrored standoffs, framed the way The Killer 1989 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with operatic loyal melancholy.
   rendering_and_quality: Authentic late-eighties Hong Kong action frame, in the recognizable hand of The Killer 1989.
-  creative_brief: 'John Woo The Killer (1989) look: Hong Kong heroic bloodshed, doves bursting in slow motion, candle-filled churches, two-handed shootouts, freeze frames and operatic loyalty. Carry it through John Woo doves, candle church, slow motion. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Woo The Killer (1989) look: Hong Kong heroic bloodshed, doves bursting in slow motion, candle-filled churches, two-handed shootouts, freeze frames and operatic loyalty. Carry it through John Woo doves, candle church, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: John Woo doves; candle church; slow motion
 avoidRules:
   - existing franchise characters

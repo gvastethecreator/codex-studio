@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Extreme close-ups cut against vast wide shots, framed the way The Good the Bad and the Ugly 1966 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sweaty operatic standoff.
   rendering_and_quality: Authentic sixties Leone Techniscope frame, in the recognizable hand of The Good the Bad and the Ugly 1966.
-  creative_brief: 'Sergio Leone The Good, the Bad and the Ugly (1966) look: Techniscope widescreen with extreme close-ups of eyes next to vast desert, sweat, stubble, circular cemetery standoffs and Morricone tension. Carry it through Leone extreme close-ups, widescreen desert, standoffs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sergio Leone The Good, the Bad and the Ugly (1966) look: Techniscope widescreen with extreme close-ups of eyes next to vast desert, sweat, stubble, circular cemetery standoffs and Morricone tension. Carry it through Leone extreme close-ups, widescreen desert, standoffs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Leone extreme close-ups; widescreen desert; standoffs
 avoidRules:
   - a poncho-wearing gunslinger with a cigarillo

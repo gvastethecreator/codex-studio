@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Crowded poster-like narrative composition, framed the way Lemi Ghariokwu composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with defiant satirical energy.
   rendering_and_quality: Faithful seventies Afrobeat cover painting, in the recognizable hand of Lemi Ghariokwu.
-  creative_brief: 'Lemi Ghariokwu Afrobeat cover look of the 1970s Lagos scene: bold flat painted satire, crowded political caricature, bright primary color, thick outlines and hand-painted titles. Carry it through Lemi Ghariokwu flat satire, thick outlines, primary color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lemi Ghariokwu Afrobeat cover look of the 1970s Lagos scene: bold flat painted satire, crowded political caricature, bright primary color, thick outlines and hand-painted titles. Carry it through Lemi Ghariokwu flat satire, thick outlines, primary color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Lemi Ghariokwu flat satire; thick outlines; primary color
 avoidRules:
   - real politicians or musicians

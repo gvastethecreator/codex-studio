@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Sprawling vista composition, framed the way Luka Rejec composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with psychedelic wandering wonder.
   rendering_and_quality: Bright psychedelic OSR illustration, in the recognizable hand of Luka Rejec.
-  creative_brief: 'Luka Rejec psychedelic OSR art: bright weird color, sprawling alien steppes, strange caravans, loose sketchy linework and ultraviolet sci-fantasy vistas. Carry it through Rejec ultraviolet steppes, weird caravans, sketchy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Luka Rejec psychedelic OSR art: bright weird color, sprawling alien steppes, strange caravans, loose sketchy linework and ultraviolet sci-fantasy vistas. Carry it through Rejec ultraviolet steppes, weird caravans, sketchy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Rejec ultraviolet steppes; weird caravans; sketchy
 avoidRules:
   - existing franchise characters

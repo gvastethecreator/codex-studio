@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with a spindly, restless silhouette.
   atmosphere_and_mood: Keep the requested mood with jittery nervous energy.
   rendering_and_quality: Loose but intentional tangles of line, never random noise.
-  creative_brief: 'Spidery nib scrawl: frantic thin dip-pen lines scribbled and looped over each other, nervous and spindly, building forms out of tangled webs of ink. Carry it through tangled hairline scribbles, nib spatters, spindly silhouettes, nervous energy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Spidery nib scrawl: frantic thin dip-pen lines scribbled and looped over each other, nervous and spindly, building forms out of tangled webs of ink. Carry it through tangled hairline scribbles, nib spatters, spindly silhouettes, nervous energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tangled hairline scribbles; nib spatters; spindly silhouettes; nervous energy
 avoidRules:
   - clean thick outlines

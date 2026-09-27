@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Split-diopter compositions and slow-motion dread, framed the way Carrie 1976 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamy dread turning to fury.
   rendering_and_quality: Stylized seventies De Palma horror frame, in the recognizable hand of Carrie 1976.
-  creative_brief: 'Brian De Palma Carrie (1976) look: split-diopter shots with two planes in focus, dreamy soft-focus romance turning into red-lit fury, slow motion and seventies high school gloss. Carry it through De Palma split diopter, soft-focus to red, slow motion. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Brian De Palma Carrie (1976) look: split-diopter shots with two planes in focus, dreamy soft-focus romance turning into red-lit fury, slow motion and seventies high school gloss. Carry it through De Palma split diopter, soft-focus to red, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: De Palma split diopter; soft-focus to red; slow motion
 avoidRules:
   - a prom queen drenched in blood on stage

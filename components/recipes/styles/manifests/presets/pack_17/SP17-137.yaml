@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low close view of the item with a vertical beam.
   atmosphere_and_mood: Keep the requested mood with tempting treasure hunger.
   rendering_and_quality: Clear hero item with clean glow, kept consistent across the whole image.
-  creative_brief: 'Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark. Carry it through single item, rarity light beam, dark ground, sparks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark. Carry it through single item, rarity light beam, dark ground, sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single item; rarity light beam; dark ground; sparks
 avoidRules:
   - item names or stats

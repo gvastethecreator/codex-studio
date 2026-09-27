@@ -46,9 +46,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered hero suit', 'green curly hair with freckles', 'cape emblem'],
       briefs: [
-        "Holding up a collapsing bakery ceiling with both arms, a volunteer firefighter in a dented homemade hero suit grins through the flour storm while customers crawl out between her boots. No readable text or logo.",
-        "Grinning at a traffic jam, a retired hero in a faded cape directs cars with exaggerated flying-punch gestures while the real traffic officer takes notes on his technique. No readable text or logo.",
-        "At dawn on an empty training rooftop, a single pair of battered red boots stands beside a thermos, the sunrise crosshatched across the concrete. No readable text or logo.",
+        'Holding up a collapsing bakery ceiling with both arms, a volunteer firefighter in a dented homemade hero suit grins through the flour storm while customers crawl out between her boots. No readable text or logo.',
+        'Grinning at a traffic jam, a retired hero in a faded cape directs cars with exaggerated flying-punch gestures while the real traffic officer takes notes on his technique. No readable text or logo.',
+        'At dawn on an empty training rooftop, a single pair of battered red boots stands beside a thermos, the sunrise crosshatched across the concrete. No readable text or logo.',
       ],
     },
     'SP05-133': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'cream puff prop', 'magic-school crest', 'wand duel pose'],
       briefs: [
-        "Ignoring a swirling spell circle cast by three furious archmages, a blank-faced librarian in a formal robe simply lifts the entire enchanted tower and moves it two meters to the left. No readable text or logo.",
-        "At an elegant tea ceremony, a deadpan gardener cracks a walnut between two fingers and the explosion of shell knocks every ornate teacup off the table. No readable text or logo.",
-        "On an ornate marble balcony, a single dumbbell rests on a velvet cushion where the ceremonial magic wand should be. No readable text or logo.",
+        'Ignoring a swirling spell circle cast by three furious archmages, a blank-faced librarian in a formal robe simply lifts the entire enchanted tower and moves it two meters to the left. No readable text or logo.',
+        'At an elegant tea ceremony, a deadpan gardener cracks a walnut between two fingers and the explosion of shell knocks every ornate teacup off the table. No readable text or logo.',
+        'On an ornate marble balcony, a single dumbbell rests on a velvet cushion where the ceremonial magic wand should be. No readable text or logo.',
       ],
     },
     'SP05-134': {
@@ -98,9 +98,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'apron-wearing retired assassin', 'shop counter'],
       briefs: [
-        "Blocking three knife-throwing robbers with a rolling snack shelf, a calm night-shift cashier catches every blade in a dangling bag of rice crackers without spilling her coffee. No readable text or logo.",
-        "Bouncing between hanging laundry lines, a delivery courier flicks a spinning bottle cap that ricochets off four walls and switches off the ringleader’s flashlight. No readable text or logo.",
-        "Under a flickering fluorescent tube, a stack of shopping baskets stands perfectly balanced on one sharpened chopstick. No readable text or logo.",
+        'Blocking three knife-throwing robbers with a rolling snack shelf, a calm night-shift cashier catches every blade in a dangling bag of rice crackers without spilling her coffee. No readable text or logo.',
+        'Bouncing between hanging laundry lines, a delivery courier flicks a spinning bottle cap that ricochets off four walls and switches off the ringleader’s flashlight. No readable text or logo.',
+        'Under a flickering fluorescent tube, a stack of shopping baskets stands perfectly balanced on one sharpened chopstick. No readable text or logo.',
       ],
     },
     'SP05-032': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'blindfold', 'finger talisman', 'eye tattoo'],
       briefs: [
-        "Standing in a flooded subway station, an exorcist in a dark raincoat faces a many-mouthed spirit made of forgotten umbrellas, each mouth whispering a different missed train. No readable text or logo.",
-        "A night-shift nurse wheels a cart down an empty ward while a spirit with twelve teeth-lined eyes clings to the ceiling above her, trying very hard to be scary. No readable text or logo.",
-        "In a deserted parking garage, a lone vending machine hums, and every drink behind its glass has a tiny staring eye. No readable text or logo.",
+        'Standing in a flooded subway station, an exorcist in a dark raincoat faces a many-mouthed spirit made of forgotten umbrellas, each mouth whispering a different missed train. No readable text or logo.',
+        'A night-shift nurse wheels a cart down an empty ward while a spirit with twelve teeth-lined eyes clings to the ceiling above her, trying very hard to be scary. No readable text or logo.',
+        'In a deserted parking garage, a lone vending machine hums, and every drink behind its glass has a tiny staring eye. No readable text or logo.',
       ],
     },
     'SP05-035': {
@@ -148,9 +148,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'wing emblem', 'waist-mounted grapple rig'],
       briefs: [
-        "Swinging on steel cables between cathedral spires, a lamplighter escapes a colossal stone gargoyle that has pulled itself off the roof and is chasing her across the town. No readable text or logo.",
-        "A bell-ringer hauls the great rope with his whole body as a giant hand slowly closes around the tower, the bell swinging wildly beside his face. No readable text or logo.",
-        "At the foot of an enormous wall at dusk, a shepherd sits with his flock, and on the other side something taller than the wall is breathing. No readable text or logo.",
+        'Swinging on steel cables between cathedral spires, a lamplighter escapes a colossal stone gargoyle that has pulled itself off the roof and is chasing her across the town. No readable text or logo.',
+        'A bell-ringer hauls the great rope with his whole body as a giant hand slowly closes around the tower, the bell swinging wildly beside his face. No readable text or logo.',
+        'At the foot of an enormous wall at dusk, a shepherd sits with his flock, and on the other side something taller than the wall is breathing. No readable text or logo.',
       ],
     },
     'SP05-036': {
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'armband insignia'],
       briefs: [
-        "At the edge of a burned wheat field, a widow in a grey shawl reads a letter her husband dictated before the battle, while the smoke behind her slowly clears into a golden evening. No readable text or logo.",
-        "A cavalry scout leads a limping mule through a ruined orchard, stopping to lift a fallen bird’s nest back into a shattered tree. No readable text or logo.",
-        "In a quiet village post office, a stack of undelivered letters glows in the late afternoon light, one envelope sealed with a dried flower. No readable text or logo.",
+        'At the edge of a burned wheat field, a widow in a grey shawl reads a letter her husband dictated before the battle, while the smoke behind her slowly clears into a golden evening. No readable text or logo.',
+        'A cavalry scout leads a limping mule through a ruined orchard, stopping to lift a fallen bird’s nest back into a shattered tree. No readable text or logo.',
+        'In a quiet village post office, a stack of undelivered letters glows in the late afternoon light, one envelope sealed with a dried flower. No readable text or logo.',
       ],
     },
     'SP05-039': {
@@ -199,9 +199,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'spiky white-haired boy', 'playing-card weapon'],
       briefs: [
-        "Balancing on a single stone pillar above a canyon of fog, a ranger calmly calculates the wind while three rival treasure hunters on nearby pillars try to stare her down. No readable text or logo.",
-        "Two chess rivals face each other across a board carved into a cliff edge, and every captured piece falls hundreds of meters into the river below. No readable text or logo.",
-        "A beekeeper lifts a honeycomb frame at sunset, and the bees arrange themselves into a perfect warning pattern around her hands. No readable text or logo.",
+        'Balancing on a single stone pillar above a canyon of fog, a ranger calmly calculates the wind while three rival treasure hunters on nearby pillars try to stare her down. No readable text or logo.',
+        'Two chess rivals face each other across a board carved into a cliff edge, and every captured piece falls hundreds of meters into the river below. No readable text or logo.',
+        'A beekeeper lifts a honeycomb frame at sunset, and the bees arrange themselves into a perfect warning pattern around her hands. No readable text or logo.',
       ],
     },
     'SP05-121': {
@@ -226,9 +226,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'checkered haori', 'bamboo muzzle', 'hanafuda earrings'],
       briefs: [
-        "Spinning through a snowy pine forest at night, a lantern-bearer swings her lamp in a full circle and its light unrolls behind her as a curling woodblock-print wave. No readable text or logo.",
-        "A grey heron lifts off a frozen mountain pond, each wingbeat leaving painted ukiyo-e ripples hanging in the frosty air. No readable text or logo.",
-        "A tea master pours boiling water from an iron kettle, and the steam curls into stylized printed clouds above the cup. No readable text or logo.",
+        'Spinning through a snowy pine forest at night, a lantern-bearer swings her lamp in a full circle and its light unrolls behind her as a curling woodblock-print wave. No readable text or logo.',
+        'A grey heron lifts off a frozen mountain pond, each wingbeat leaving painted ukiyo-e ripples hanging in the frosty air. No readable text or logo.',
+        'A tea master pours boiling water from an iron kettle, and the steam curls into stylized printed clouds above the cup. No readable text or logo.',
       ],
     },
     'SP05-124': {
@@ -251,9 +251,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'soccer kit copy'],
       briefs: [
-        "Drawing a longbow on a torchlit tournament field, an archer glares down the arrow as her rivals behind her melt into circling wolves made of shadow. No readable text or logo.",
-        "Exploding off the starting blocks, a sprinter’s spiked shoe fills half the frame as a giant hungry eye opens in the stadium lights behind her. No readable text or logo.",
-        "Alone in a quiet workshop, a watchmaker peers through a loupe, his magnified eye glaring like a predator at the tiny gears. No readable text or logo.",
+        'Drawing a longbow on a torchlit tournament field, an archer glares down the arrow as her rivals behind her melt into circling wolves made of shadow. No readable text or logo.',
+        'Exploding off the starting blocks, a sprinter’s spiked shoe fills half the frame as a giant hungry eye opens in the stadium lights behind her. No readable text or logo.',
+        'Alone in a quiet workshop, a watchmaker peers through a loupe, his magnified eye glaring like a predator at the tiny gears. No readable text or logo.',
       ],
     },
     'SP05-128': {
@@ -278,9 +278,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'black hakama with white sash', 'skull mask'],
       briefs: [
-        "Rising from a bone-white throne in a vaulted hall, a pale sovereign flicks one finger and half of the chamber snaps into a black-and-white photographic negative. No readable text or logo.",
-        "A priestess releases a flock of crows from a cathedral balcony, and the birds turn white against a suddenly black sky as they cross the moon. No readable text or logo.",
-        "A cellist tunes her instrument alone on a dark stage, and every note inverts the spotlight into a black circle around her feet. No readable text or logo.",
+        'Rising from a bone-white throne in a vaulted hall, a pale sovereign flicks one finger and half of the chamber snaps into a black-and-white photographic negative. No readable text or logo.',
+        'A priestess releases a flock of crows from a cathedral balcony, and the birds turn white against a suddenly black sky as they cross the moon. No readable text or logo.',
+        'A cellist tunes her instrument alone on a dark stage, and every note inverts the spotlight into a black circle around her feet. No readable text or logo.',
       ],
     },
     'SP05-131': {
@@ -305,9 +305,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered gang jacket', 'bandaged knuckles'],
       briefs: [
-        "Standing on a harbor seawall under an enormous sky, three fishermen in rolled sleeves square up against an incoming storm as if it were a rival gang. No readable text or logo.",
-        "A pigeon keeper throws open her rooftop coop and a burst of birds swirls around her like a protective escort over the town. No readable text or logo.",
-        "On a quiet roof ridge at sunset, a roofer eats a rice ball, his hammer resting beside him like a guardian’s sword. No readable text or logo.",
+        'Standing on a harbor seawall under an enormous sky, three fishermen in rolled sleeves square up against an incoming storm as if it were a rival gang. No readable text or logo.',
+        'A pigeon keeper throws open her rooftop coop and a burst of birds swirls around her like a protective escort over the town. No readable text or logo.',
+        'On a quiet roof ridge at sunset, a roofer eats a rice ball, his hammer resting beside him like a guardian’s sword. No readable text or logo.',
       ],
     },
     'SP05-135': {
@@ -331,9 +331,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'cracked mirror prop'],
       briefs: [
-        "Flipping a gold coin in a torchlit tavern, a gambler watches the coin land on its edge, and the whole room cracks apart into floating halftone shards. No readable text or logo.",
-        "A stuntwoman falls backward off a clock tower, and every tick of the clock shatters the sky behind her into a new panel. No readable text or logo.",
-        "A florist trims one stem at her workbench, and the snip splits the room into two mismatched halves of dotted halftone. No readable text or logo.",
+        'Flipping a gold coin in a torchlit tavern, a gambler watches the coin land on its edge, and the whole room cracks apart into floating halftone shards. No readable text or logo.',
+        'A stuntwoman falls backward off a clock tower, and every tick of the clock shatters the sky behind her into a new panel. No readable text or logo.',
+        'A florist trims one stem at her workbench, and the snip splits the room into two mismatched halves of dotted halftone. No readable text or logo.',
       ],
     },
     'SP05-136': {
@@ -357,9 +357,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'five-leaf clover', 'floating spellbook', 'bull emblem'],
       briefs: [
-        "Slamming her staff into a circle of standing stones at midnight, a hedge-witch unleashes jagged black lightning that splits into branches across the stormy sky. No readable text or logo.",
-        "A kneeling knight in dented armor grits her teeth as crackling lightning splits the ground around her into glowing cracks. No readable text or logo.",
-        "A bookbinder tools gold ornament into a leather cover, and tiny black sparks crawl along every line she presses. No readable text or logo.",
+        'Slamming her staff into a circle of standing stones at midnight, a hedge-witch unleashes jagged black lightning that splits into branches across the stormy sky. No readable text or logo.',
+        'A kneeling knight in dented armor grits her teeth as crackling lightning splits the ground around her into glowing cracks. No readable text or logo.',
+        'A bookbinder tools gold ornament into a leather cover, and tiny black sparks crawl along every line she presses. No readable text or logo.',
       ],
     },
     'SP05-138': {
@@ -384,9 +384,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'goldfish spirits', 'katana near-plane'],
       briefs: [
-        "Kneeling before a burned-out forge at night, a mourner in a dark coat grips the handle of an unfinished blade as a thin neon sign flickers red across its edge. No readable text or logo.",
-        "A black stallion stands motionless in a flooded rice field at night, only the rim of its mane lit by a distant teal sign. No readable text or logo.",
-        "A cook ladles broth at a late-night street stall, steam and silence heavy around him, one knife gleaming on the board. No readable text or logo.",
+        'Kneeling before a burned-out forge at night, a mourner in a dark coat grips the handle of an unfinished blade as a thin neon sign flickers red across its edge. No readable text or logo.',
+        'A black stallion stands motionless in a flooded rice field at night, only the rim of its mane lit by a distant teal sign. No readable text or logo.',
+        'A cook ladles broth at a late-night street stall, steam and silence heavy around him, one knife gleaming on the board. No readable text or logo.',
       ],
     },
     'SP05-139': {
@@ -410,9 +410,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'exposed-muscle giant'],
       briefs: [
-        "Villagers flee across a stone bridge as the grinning face of a colossal moss-covered statue rises from the river, its eyes blinking slowly. No readable text or logo.",
-        "A fisherman in a small rowboat looks up at a lighthouse, and a giant hand with too many knuckles is gripping the top of it. No readable text or logo.",
-        "A cobbler repairs a boot at his workbench, unaware that the enormous eye in the window behind him has been watching for an hour. No readable text or logo.",
+        'Villagers flee across a stone bridge as the grinning face of a colossal moss-covered statue rises from the river, its eyes blinking slowly. No readable text or logo.',
+        'A fisherman in a small rowboat looks up at a lighthouse, and a giant hand with too many knuckles is gripping the top of it. No readable text or logo.',
+        'A cobbler repairs a boot at his workbench, unaware that the enormous eye in the window behind him has been watching for an hour. No readable text or logo.',
       ],
     },
     'SP05-140': {
@@ -436,9 +436,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'pointed ears with white twin tails'],
       briefs: [
-        "Holding back an avalanche with one raised hand, a hermit mage in a pale robe barely looks up from her book as thin geometric rings hold the snow in midair. No readable text or logo.",
-        "In a ruined stone observatory at dawn, thin geometric rings of light rotate slowly around a sleeping old wizard. No readable text or logo.",
-        "A gardener waters a row of lavender while a faint geometric circle glows under the watering can. No readable text or logo.",
+        'Holding back an avalanche with one raised hand, a hermit mage in a pale robe barely looks up from her book as thin geometric rings hold the snow in midair. No readable text or logo.',
+        'In a ruined stone observatory at dawn, thin geometric rings of light rotate slowly around a sleeping old wizard. No readable text or logo.',
+        'A gardener waters a row of lavender while a faint geometric circle glows under the watering can. No readable text or logo.',
       ],
     },
     'SP05-037': {
@@ -461,9 +461,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Stubbing his toe on a castle stair, an armored knight strikes a twisted fashion-model pose of pure agony while the sky behind him turns magenta. No readable text or logo.",
-        "A farmer yanks a giant turnip out of the ground with a dramatic flamboyant pose, both arms twisted like a runway model. No readable text or logo.",
-        "A librarian stamps a single book with menacing intensity, shadows crawling up the shelves behind her. No readable text or logo.",
+        'Stubbing his toe on a castle stair, an armored knight strikes a twisted fashion-model pose of pure agony while the sky behind him turns magenta. No readable text or logo.',
+        'A farmer yanks a giant turnip out of the ground with a dramatic flamboyant pose, both arms twisted like a runway model. No readable text or logo.',
+        'A librarian stamps a single book with menacing intensity, shadows crawling up the shelves behind her. No readable text or logo.',
       ],
     },
     'SP05-129': {
@@ -488,9 +488,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'bald caped hero', 'yellow jumpsuit'],
       briefs: [
-        "Yawning as a mountain-sized dragon collapses behind him, a dragon-hunter drawn with plain round lines and dot eyes holds his grocery list while rubble rains down. No readable text or logo.",
-        "A dot-eyed tourist eats an ice cream while a hyper-detailed battle rages behind her, and she only notices when a drip lands on her shoe. No readable text or logo.",
-        "An elderly pensioner reads a blank newspaper on a bench, his face plain and calm, while the city behind him is spectacularly on fire. No readable text or logo.",
+        'Yawning as a mountain-sized dragon collapses behind him, a dragon-hunter drawn with plain round lines and dot eyes holds his grocery list while rubble rains down. No readable text or logo.',
+        'A dot-eyed tourist eats an ice cream while a hyper-detailed battle rages behind her, and she only notices when a drip lands on her shoe. No readable text or logo.',
+        'An elderly pensioner reads a blank newspaper on a bench, his face plain and calm, while the city behind him is spectacularly on fire. No readable text or logo.',
       ],
     },
     'SP05-132': {
@@ -519,9 +519,9 @@ const spec: Spec = {
         'status window UI',
       ],
       briefs: [
-        "Standing knee-deep in a flooded crypt, a necromancer queen raises one hand as smoky shadow knights rise from the water, their eyes glowing violet. No readable text or logo.",
-        "A raid healer climbs a vertical shaft by the glow of her own spell, huge shadowy shapes watching from the darkness below. No readable text or logo.",
-        "A night guard reads by a single desk lamp, his own shadow on the wall slowly turning to look at him with glowing eyes. No readable text or logo.",
+        'Standing knee-deep in a flooded crypt, a necromancer queen raises one hand as smoky shadow knights rise from the water, their eyes glowing violet. No readable text or logo.',
+        'A raid healer climbs a vertical shaft by the glow of her own spell, huge shadowy shapes watching from the darkness below. No readable text or logo.',
+        'A night guard reads by a single desk lamp, his own shadow on the wall slowly turning to look at him with glowing eyes. No readable text or logo.',
       ],
     },
     'SP05-040': {
@@ -543,9 +543,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "In a cathedral crypt, an alchemist watches a ring of cold blue embers rise into hundreds of floating glass daggers pointing toward the vaulted ceiling. No readable text or logo.",
-        "A white stag crosses a snowy temple courtyard as swords made of light slowly sprout from its hoofprints. No readable text or logo.",
-        "A violin maker varnishes a violin in her workshop, and faint magic circuit lines glow along the wood grain. No readable text or logo.",
+        'In a cathedral crypt, an alchemist watches a ring of cold blue embers rise into hundreds of floating glass daggers pointing toward the vaulted ceiling. No readable text or logo.',
+        'A white stag crosses a snowy temple courtyard as swords made of light slowly sprout from its hoofprints. No readable text or logo.',
+        'A violin maker varnishes a violin in her workshop, and faint magic circuit lines glow along the wood grain. No readable text or logo.',
       ],
     },
     'SP05-123': {
@@ -569,9 +569,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'reflective-striped bunker gear', 'sharp-toothed grin', 'nun prayer pose'],
       briefs: [
-        "Walking out of a burning timber chapel untouched, a fire-priest in a soot-black cassock spreads her arms as the flames around her burn white at the center and orange at the edges. No readable text or logo.",
-        "A foundry worker pours molten bronze into a bell mold, the stream glowing white-hot inside a halo of orange sparks. No readable text or logo.",
-        "A shrine keeper lights a row of oil lamps at dusk, and each small flame burns with a bright white heart. No readable text or logo.",
+        'Walking out of a burning timber chapel untouched, a fire-priest in a soot-black cassock spreads her arms as the flames around her burn white at the center and orange at the edges. No readable text or logo.',
+        'A foundry worker pours molten bronze into a bell mold, the stream glowing white-hot inside a halo of orange sparks. No readable text or logo.',
+        'A shrine keeper lights a row of oil lamps at dusk, and each small flame burns with a bright white heart. No readable text or logo.',
       ],
     },
     'SP05-125': {
@@ -594,9 +594,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'numbered defense suit', 'glowing monster core'],
       briefs: [
-        "Operating a crane from a scuffed orange cab, a middle-aged cleanup worker lifts a colossal monster tooth off a flattened shopping street while her crew hoses down the pavement. No readable text or logo.",
-        "A harbor pilot steers an orange tugboat past the floating ribcage of a sea monster bigger than the harbor itself. No readable text or logo.",
-        "A road-crew worker repaints a lane line around a single giant footprint pressed into the asphalt. No readable text or logo.",
+        'Operating a crane from a scuffed orange cab, a middle-aged cleanup worker lifts a colossal monster tooth off a flattened shopping street while her crew hoses down the pavement. No readable text or logo.',
+        'A harbor pilot steers an orange tugboat past the floating ribcage of a sea monster bigger than the harbor itself. No readable text or logo.',
+        'A road-crew worker repaints a lane line around a single giant footprint pressed into the asphalt. No readable text or logo.',
       ],
     },
     'SP05-126': {
@@ -621,9 +621,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'grey alien head', 'ghost grandmother'],
       briefs: [
-        "Tumbling down a haunted manor staircase, a ghost-hunter couple in their forties grab each other as their flashlights smear into acid-green and magenta streaks around a laughing spirit. No readable text or logo.",
-        "An ice skater spins on a frozen lake at night as neon occult lights smear into rings around her blades. No readable text or logo.",
-        "A man repots a cactus on his balcony while a tiny glowing alien watches from the flowerpot, both perfectly calm. No readable text or logo.",
+        'Tumbling down a haunted manor staircase, a ghost-hunter couple in their forties grab each other as their flashlights smear into acid-green and magenta streaks around a laughing spirit. No readable text or logo.',
+        'An ice skater spins on a frozen lake at night as neon occult lights smear into rings around her blades. No readable text or logo.',
+        'A man repots a cactus on his balcony while a tiny glowing alien watches from the flowerpot, both perfectly calm. No readable text or logo.',
       ],
     },
     'SP05-127': {
@@ -647,9 +647,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'white-robed shaved-head executioner', 'lotus-faced statue'],
       briefs: [
-        "Wading waist-deep through a jungle of giant poison orchids, a plague doctor in waxed linen notices that every blossom has quietly turned to face him. No readable text or logo.",
-        "A moss-covered skeleton in rusted armor sits against a tree, flowers with tiny human faces blooming from its ribs. No readable text or logo.",
-        "A greenhouse keeper pots seedlings at dawn, and one sprout has grown a single perfect eyelash. No readable text or logo.",
+        'Wading waist-deep through a jungle of giant poison orchids, a plague doctor in waxed linen notices that every blossom has quietly turned to face him. No readable text or logo.',
+        'A moss-covered skeleton in rusted armor sits against a tree, flowers with tiny human faces blooming from its ribs. No readable text or logo.',
+        'A greenhouse keeper pots seedlings at dawn, and one sprout has grown a single perfect eyelash. No readable text or logo.',
       ],
     },
     'SP05-038': {
@@ -673,9 +673,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "In an empty white room, a fortune-teller with a blank face sets down her teacup as the whole table floats upward in a scribbled storm of psychic energy. No readable text or logo.",
-        "A kite flier on a bare hill stares blankly as the horizon wobbles and ripples like a badly drawn line. No readable text or logo.",
-        "A commuter waits alone at an empty crossing, and the traffic light quietly bends toward her. No readable text or logo.",
+        'In an empty white room, a fortune-teller with a blank face sets down her teacup as the whole table floats upward in a scribbled storm of psychic energy. No readable text or logo.',
+        'A kite flier on a bare hill stares blankly as the horizon wobbles and ripples like a badly drawn line. No readable text or logo.',
+        'A commuter waits alone at an empty crossing, and the traffic light quietly bends toward her. No readable text or logo.',
       ],
     },
     'SP05-130': {
@@ -699,9 +699,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'bowl-cut boy'],
       briefs: [
-        "Screaming on a cliff edge, a wandering oracle unleashes a surge of painted pink and cyan brushstrokes that swirls up and repaints the entire stormy sky. No readable text or logo.",
-        "Breaching far out at sea, a humpback whale bursts through water that suddenly turns into thick swirling paint-on-glass color, pink and cyan streaks flying off its fins. No readable text or logo.",
-        "An office worker stares at a cup of coffee until the surface swirls into tiny painted galaxies. No readable text or logo.",
+        'Screaming on a cliff edge, a wandering oracle unleashes a surge of painted pink and cyan brushstrokes that swirls up and repaints the entire stormy sky. No readable text or logo.',
+        'Breaching far out at sea, a humpback whale bursts through water that suddenly turns into thick swirling paint-on-glass color, pink and cyan streaks flying off its fins. No readable text or logo.',
+        'An office worker stares at a cup of coffee until the surface swirls into tiny painted galaxies. No readable text or logo.',
       ],
     },
     'SP05-137': {
@@ -725,9 +725,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'stone crack lines on the face'],
       briefs: [
-        "Launching a hand-built wooden glider off a castle wall, an inventor in patched overalls grins as chalk schematics of lift and drag appear in the air around the wings. No readable text or logo.",
-        "A timber watermill turns in a mountain stream, chalk diagrams of gears and flow sketched over its wheel. No readable text or logo.",
-        "In a cluttered village shop, an apothecary grinds herbs with a heavy mortar while glowing molecular chalk diagrams float above the bowl like curious fireflies. No readable text or logo.",
+        'Launching a hand-built wooden glider off a castle wall, an inventor in patched overalls grins as chalk schematics of lift and drag appear in the air around the wings. No readable text or logo.',
+        'A timber watermill turns in a mountain stream, chalk diagrams of gears and flow sketched over its wheel. No readable text or logo.',
+        'In a cluttered village shop, an apothecary grinds herbs with a heavy mortar while glowing molecular chalk diagrams float above the bowl like curious fireflies. No readable text or logo.',
       ],
     },
     'SP05-031': {
@@ -751,9 +751,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Whirling through falling plum blossoms on a misty mountain terrace, a dancer’s long silk sleeves slice the petals into a spiral while her sword stays sheathed at her hip. No readable text or logo.",
-        "A tiger leaps across a mountain stream, its stripes dissolving into flowing ink-wash brushstrokes as it lands. No readable text or logo.",
-        "A weaver works a wooden loom in a quiet pavilion, the silk rolling out painted with drifting clouds. No readable text or logo.",
+        'Whirling through falling plum blossoms on a misty mountain terrace, a dancer’s long silk sleeves slice the petals into a spiral while her sword stays sheathed at her hip. No readable text or logo.',
+        'A tiger leaps across a mountain stream, its stripes dissolving into flowing ink-wash brushstrokes as it lands. No readable text or logo.',
+        'A weaver works a wooden loom in a quiet pavilion, the silk rolling out painted with drifting clouds. No readable text or logo.',
       ],
     },
     'SP05-033': {
@@ -774,9 +774,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Sprinting through a monastery wine cellar with a sack of squirming rats over his shoulder, a rat-catcher crashes through barrels as dark wine splatters across the frame like ink. No readable text or logo.",
-        "A punk drummer mid-fill smashes through her kit, sticks and cymbals flying in loose chaotic ink strokes. No readable text or logo.",
-        "A barber trims a customer’s hair with deadpan calm while the shop behind them is slowly collapsing. No readable text or logo.",
+        'Sprinting through a monastery wine cellar with a sack of squirming rats over his shoulder, a rat-catcher crashes through barrels as dark wine splatters across the frame like ink. No readable text or logo.',
+        'A punk drummer mid-fill smashes through her kit, sticks and cymbals flying in loose chaotic ink strokes. No readable text or logo.',
+        'A barber trims a customer’s hair with deadpan calm while the shop behind them is slowly collapsing. No readable text or logo.',
       ],
     },
     'SP05-122': {
@@ -801,9 +801,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'chainsaw-headed figure', 'blood spray'],
       briefs: [
-        "Swinging his lantern in a rain-soaked cemetery at night, a gravedigger backs away from a freshly opened grave while the lamplight wobbles across muted grey headstones. No readable text or logo.",
-        "A dog-catcher lunges for a runaway hound in a grimy alley, both of them sliding through a puddle. No readable text or logo.",
-        "A mechanic eats instant noodles under a flickering garage light, too tired to notice the rain. No readable text or logo.",
+        'Swinging his lantern in a rain-soaked cemetery at night, a gravedigger backs away from a freshly opened grave while the lamplight wobbles across muted grey headstones. No readable text or logo.',
+        'A dog-catcher lunges for a runaway hound in a grimy alley, both of them sliding through a puddle. No readable text or logo.',
+        'A mechanic eats instant noodles under a flickering garage light, too tired to notice the rain. No readable text or logo.',
       ],
     },
     'SP05-025': {
@@ -824,9 +824,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'red apple motif'],
       briefs: [
-        "Seated at the end of a long candlelit table, an inquisitor stares at a single sealed envelope while her shadow on the wall seems to be reading it already. No readable text or logo.",
-        "A detective on a spiral staircase looks down at the suspect below, both of them smiling the same small smile. No readable text or logo.",
-        "A night-shift pharmacist peels an orange in perfect spiral, her eyes never leaving the security monitor. No readable text or logo.",
+        'Seated at the end of a long candlelit table, an inquisitor stares at a single sealed envelope while her shadow on the wall seems to be reading it already. No readable text or logo.',
+        'A detective on a spiral staircase looks down at the suspect below, both of them smiling the same small smile. No readable text or logo.',
+        'A night-shift pharmacist peels an orange in perfect spiral, her eyes never leaving the security monitor. No readable text or logo.',
       ],
     },
     'SP05-148': {
@@ -849,9 +849,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'tommy gun'],
       briefs: [
-        "Pickpockets, dancers and a stowaway trumpeter collide in a grand hotel ballroom as the chandelier swings and a bootlegger hides champagne under the cake. No readable text or logo.",
-        "A trumpeter plays on a fire escape at dusk, amber light pouring through laundry lines around him. No readable text or logo.",
-        "A diner waitress pours coffee for three suspicious men in fedoras, each hiding something under the table. No readable text or logo.",
+        'Pickpockets, dancers and a stowaway trumpeter collide in a grand hotel ballroom as the chandelier swings and a bootlegger hides champagne under the cake. No readable text or logo.',
+        'A trumpeter plays on a fire escape at dusk, amber light pouring through laundry lines around him. No readable text or logo.',
+        'A diner waitress pours coffee for three suspicious men in fedoras, each hiding something under the table. No readable text or logo.',
       ],
     },
     'SP05-021': {
@@ -874,9 +874,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'orange jumpsuit', 'whisker cheek marks'],
       briefs: [
-        "Leaping between pine treetops after her falcon, a falconer stretches into a long painterly smear of teal and orange as the bird dives ahead of her. No readable text or logo.",
-        "A red fox chases a spiral of leaves across a harvested field, its body smearing into streaks of warm color. No readable text or logo.",
-        "A potter trims a bowl on a kick wheel, the spinning clay smearing into teal and orange rings. No readable text or logo.",
+        'Leaping between pine treetops after her falcon, a falconer stretches into a long painterly smear of teal and orange as the bird dives ahead of her. No readable text or logo.',
+        'A red fox chases a spiral of leaves across a harvested field, its body smearing into streaks of warm color. No readable text or logo.',
+        'A potter trims a bowl on a kick wheel, the spinning clay smearing into teal and orange rings. No readable text or logo.',
       ],
     },
     'SP05-022': {
@@ -898,9 +898,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Drifting down a blank ivory staircase in an elongated black gown, a ghost-bride holds a long sword as if it were a bouquet, her veil trailing into empty white space. No readable text or logo.",
-        "A black cat walks a thin ledge across a blank white page, only its shadow keeping it company. No readable text or logo.",
-        "A pianist stretches her long fingers before a concert, standing alone in a vast white space. No readable text or logo.",
+        'Drifting down a blank ivory staircase in an elongated black gown, a ghost-bride holds a long sword as if it were a bouquet, her veil trailing into empty white space. No readable text or logo.',
+        'A black cat walks a thin ledge across a blank white page, only its shadow keeping it company. No readable text or logo.',
+        'A pianist stretches her long fingers before a concert, standing alone in a vast white space. No readable text or logo.',
       ],
     },
     'SP05-023': {
@@ -921,9 +921,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'straw hat with red open vest', 'stretching rubber punch'],
       briefs: [
-        "Riding a giant sea turtle across bright blue waves, an island postwoman with an enormous grin stretches her arm impossibly far to deliver a parcel to a passing ship. No readable text or logo.",
-        "A strongman hauls a festival float uphill single-handed, grinning so wide his face nearly splits in half. No readable text or logo.",
-        "A plump old fisherman with a huge curling mustache naps on his boat while seagulls carry away his lunch. No readable text or logo.",
+        'Riding a giant sea turtle across bright blue waves, an island postwoman with an enormous grin stretches her arm impossibly far to deliver a parcel to a passing ship. No readable text or logo.',
+        'A strongman hauls a festival float uphill single-handed, grinning so wide his face nearly splits in half. No readable text or logo.',
+        'A plump old fisherman with a huge curling mustache naps on his boat while seagulls carry away his lunch. No readable text or logo.',
       ],
     },
     'SP05-028': {
@@ -944,9 +944,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Crossing a dry salt flat at noon, a wandering minstrel with a lute on his back hitches a ride on a donkey cart driven by a grinning grandmother. No readable text or logo.",
-        "A drifter sits beside a broken-down bus on an empty desert road, a mangy dog sharing her last orange. No readable text or logo.",
-        "An orchard picker eats a peach on a wooden porch at sunset, the road stretching away behind her. No readable text or logo.",
+        'Crossing a dry salt flat at noon, a wandering minstrel with a lute on his back hitches a ride on a donkey cart driven by a grinning grandmother. No readable text or logo.',
+        'A drifter sits beside a broken-down bus on an empty desert road, a mangy dog sharing her last orange. No readable text or logo.',
+        'An orchard picker eats a peach on a wooden porch at sunset, the road stretching away behind her. No readable text or logo.',
       ],
     },
     'SP05-029': {
@@ -968,9 +968,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Jumping a river levee on a battered scooter, a forty-year-old accountant screams with joy as the frame splits into manga panels around her. No readable text or logo.",
-        "A small dragon hatches from an egg on a cluttered desk, knocking over pens and snack wrappers in a chaotic burst. No readable text or logo.",
-        "A woman brushes her teeth at a cracked mirror as a giant robot quietly walks past her window. No readable text or logo.",
+        'Jumping a river levee on a battered scooter, a forty-year-old accountant screams with joy as the frame splits into manga panels around her. No readable text or logo.',
+        'A small dragon hatches from an egg on a cluttered desk, knocking over pens and snack wrappers in a chaotic burst. No readable text or logo.',
+        'A woman brushes her teeth at a cracked mirror as a giant robot quietly walks past her window. No readable text or logo.',
       ],
     },
     'SP05-142': {
@@ -994,9 +994,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'twin pistols', 'gun', 'torpedo boat'],
       briefs: [
-        "Steering a rust-streaked launch through a mangrove swamp at noon, a smuggler captain in a sweat-soaked tank top eyes a patrol boat through the humid haze. No readable text or logo.",
-        "A dock boss on a sun-bleached pier argues with a fisherman over a crate that is definitely not full of fish. No readable text or logo.",
-        "Under a rusty tin awning in a port market, a fruit seller slices a mango with a machete, calmly ignoring the loud gunrunner argument next door. No readable text or logo.",
+        'Steering a rust-streaked launch through a mangrove swamp at noon, a smuggler captain in a sweat-soaked tank top eyes a patrol boat through the humid haze. No readable text or logo.',
+        'A dock boss on a sun-bleached pier argues with a fisherman over a crate that is definitely not full of fish. No readable text or logo.',
+        'Under a rusty tin awning in a port market, a fruit seller slices a mango with a machete, calmly ignoring the loud gunrunner argument next door. No readable text or logo.',
       ],
     },
     'SP05-143': {
@@ -1020,9 +1020,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Standing on a water tower above a blacked-out city, a watchman looks up as one star in the false sky suddenly falls, and a building across town lights up blue. No readable text or logo.",
-        "A courier in a long coat crosses an empty square at night, her shadow flickering with electric sparks. No readable text or logo.",
-        "Mopping a glass lobby at three in the morning, a tired night janitor notices reflections of strange unfamiliar stars glimmering in every puddle. No readable text or logo.",
+        'Standing on a water tower above a blacked-out city, a watchman looks up as one star in the false sky suddenly falls, and a building across town lights up blue. No readable text or logo.',
+        'A courier in a long coat crosses an empty square at night, her shadow flickering with electric sparks. No readable text or logo.',
+        'Mopping a glass lobby at three in the morning, a tired night janitor notices reflections of strange unfamiliar stars glimmering in every puddle. No readable text or logo.',
       ],
     },
     'SP05-144': {
@@ -1044,9 +1044,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID],
       briefs: [
-        "Spinning on one hand in a feudal rice-paddy village, a street dancer freezes mid-move as the whole scene stutters like a scratched record around him. No readable text or logo.",
-        "Strutting along a crumbling temple wall at noon, a proud rooster moves in stuttering freeze-frame beats as if the whole scene were being scratched on a turntable. No readable text or logo.",
-        "A teahouse owner fans herself on her porch, the heat shimmer pulsing like a slow beat. No readable text or logo.",
+        'Spinning on one hand in a feudal rice-paddy village, a street dancer freezes mid-move as the whole scene stutters like a scratched record around him. No readable text or logo.',
+        'Strutting along a crumbling temple wall at noon, a proud rooster moves in stuttering freeze-frame beats as if the whole scene were being scratched on a turntable. No readable text or logo.',
+        'A teahouse owner fans herself on her porch, the heat shimmer pulsing like a slow beat. No readable text or logo.',
       ],
     },
   },

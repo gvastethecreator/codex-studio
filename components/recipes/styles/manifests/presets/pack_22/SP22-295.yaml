@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with uncomfortable close-ups and stares.
   atmosphere_and_mood: Keep the requested mood tilted toward creeping dread.
   rendering_and_quality: Meticulous fine hatching, never gore or cheap shock.
-  creative_brief: 'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: obsessive crosshatching; spiral lines; staring eyes; creeping dread
 avoidRules:
   - cute cheerful style

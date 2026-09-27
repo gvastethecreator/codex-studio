@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Rigid even grid with deadpan silent beats, framed the way Daniel Clowes composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with deadpan alienated irony.
   rendering_and_quality: Faithful Clowes deadpan comic page, in the recognizable hand of Daniel Clowes.
-  creative_brief: 'Daniel Clowes page look of the 1990s and 2000s: stiff deadpan figures, precise clean line, flat drab pastel color, alienated misfits, diners and strip malls, and awkward silent pauses. Carry it through Clowes deadpan misfits, drab flat pastel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Daniel Clowes page look of the 1990s and 2000s: stiff deadpan figures, precise clean line, flat drab pastel color, alienated misfits, diners and strip malls, and awkward silent pauses. Carry it through Clowes deadpan misfits, drab flat pastel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Clowes deadpan misfits; drab flat pastel
 avoidRules:
   - two teenage girls in black glasses and a vintage dress

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Direct gaze into the lens and tight close-ups.
   atmosphere_and_mood: Keep the requested mood with intense psychological duel.
   rendering_and_quality: Intense nineties psychological thriller frame, in the recognizable hand of The Silence of the Lambs 1991.
-  creative_brief: 'Jonathan Demme The Silence of the Lambs (1991) look: characters staring directly into the lens, stone basement cells, cold institutional corridors and intense psychological duels. Carry it through Demme direct gaze, institutional cells, psychological duel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jonathan Demme The Silence of the Lambs (1991) look: characters staring directly into the lens, stone basement cells, cold institutional corridors and intense psychological duels. Carry it through Demme direct gaze, institutional cells, psychological duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Demme direct gaze; institutional cells; psychological duel
 avoidRules:
   - a man in a restraint face mask

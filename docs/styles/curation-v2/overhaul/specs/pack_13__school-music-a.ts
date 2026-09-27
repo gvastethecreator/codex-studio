@@ -20,9 +20,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A shy florist hands a single pressed flower to the grumpy baker next door as a gust of cherry petals swirls them both into a pink storm. No readable text or logo.",
-        "Two rivals on the university fencing team accidentally touch hands under a blossoming tree and both freeze, sparkles erupting around their faces. No readable text or logo.",
-        "An elderly couple share tea on a park bench in spring, their sparkling eyes exactly as they were at seventeen, petals landing in their cups. No readable text or logo.",
+        'A shy florist hands a single pressed flower to the grumpy baker next door as a gust of cherry petals swirls them both into a pink storm. No readable text or logo.',
+        'Two rivals on the university fencing team accidentally touch hands under a blossoming tree and both freeze, sparkles erupting around their faces. No readable text or logo.',
+        'An elderly couple share tea on a park bench in spring, their sparkling eyes exactly as they were at seventeen, petals landing in their cups. No readable text or logo.',
       ],
     },
     'SP13-005': {
@@ -39,7 +39,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A young innkeeper dries cups in an empty cafe while rain streams down the window, a stranger's umbrella still dripping by the door after a week. No readable text or logo.",
-        "A man and a stray raccoon dog wait out the rain together under a bus shelter, each pretending the other is not there. No readable text or logo.",
+        'A man and a stray raccoon dog wait out the rain together under a bus shelter, each pretending the other is not there. No readable text or logo.',
         "Rain streaks a laundromat window at night as a woman watches her clothes spin alongside a stranger's red sweater in the same machine. No readable text or logo.",
       ],
     },
@@ -57,8 +57,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A young comedian stares into a bulb-ringed mirror before her first show, and her reflection is already bowing to applause. No readable text or logo.",
-        "An entire orchestra of jittery musicians hides from the conductor inside one small costume closet minutes before curtain. No readable text or logo.",
+        'A young comedian stares into a bulb-ringed mirror before her first show, and her reflection is already bowing to applause. No readable text or logo.',
+        'An entire orchestra of jittery musicians hides from the conductor inside one small costume closet minutes before curtain. No readable text or logo.',
         "In the dark wings a magician's rabbit trembles with stage fright while the magician calmly offers it a tiny cup of tea. No readable text or logo.",
       ],
     },
@@ -75,9 +75,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A stern armored knight tastes a strawberry parfait for the first time, and his bliss is so intense that his visor fogs up. No readable text or logo.",
+        'A stern armored knight tastes a strawberry parfait for the first time, and his bliss is so intense that his visor fogs up. No readable text or logo.',
         "A pastry chef's giant souffle rises so high it lifts the ceiling tiles while the customers applaud from under their tables. No readable text or logo.",
-        "Three office workers duel over the last slice of cheesecake with chopsticks, a fork and a pie server, striking dramatic swordfighter poses. No readable text or logo.",
+        'Three office workers duel over the last slice of cheesecake with chopsticks, a fork and a pie server, striking dramatic swordfighter poses. No readable text or logo.',
       ],
     },
     'SP13-018': {
@@ -93,9 +93,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A witch and a werewolf in festival robes stroll under rows of paper lanterns on a summer night, the werewolf struggling not to howl at the fireworks. No readable text or logo.",
-        "A goldfish won at a summer fair has grown to the size of a pond by morning, and its owner wheels it home in a wheelbarrow. No readable text or logo.",
-        "As the summer festival ends, a lone vendor packs up her stall while fireflies drift into the empty lanterns and light them one by one. No readable text or logo.",
+        'A witch and a werewolf in festival robes stroll under rows of paper lanterns on a summer night, the werewolf struggling not to howl at the fireworks. No readable text or logo.',
+        'A goldfish won at a summer fair has grown to the size of a pond by morning, and its owner wheels it home in a wheelbarrow. No readable text or logo.',
+        'As the summer festival ends, a lone vendor packs up her stall while fireflies drift into the empty lanterns and light them one by one. No readable text or logo.',
       ],
     },
   },
@@ -116,9 +116,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A singer screams the final chorus under blazing spotlights, the lens flare so bright it turns the whole crowd into one silhouetted wave of hands. No readable text or logo.",
-        "A heavy-metal band of grandfathers headlines a festival, the frontman using his walker as a microphone stand. No readable text or logo.",
-        "After the show a roadie sits alone on the empty stage as the last light clicks off, one glow stick rolling slowly across the floor. No readable text or logo.",
+        'A singer screams the final chorus under blazing spotlights, the lens flare so bright it turns the whole crowd into one silhouetted wave of hands. No readable text or logo.',
+        'A heavy-metal band of grandfathers headlines a festival, the frontman using his walker as a microphone stand. No readable text or logo.',
+        'After the show a roadie sits alone on the empty stage as the last light clicks off, one glow stick rolling slowly across the floor. No readable text or logo.',
       ],
     },
     {
@@ -137,9 +137,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An apprentice mage sweeps spilled chalk in a tower classroom as long orange light turns every floating dust mote into a tiny sun. No readable text or logo.",
-        "Two teachers race office chairs down an empty corridor at the end of the day, the low sun stretching their shadows the full length of the hall. No readable text or logo.",
-        "An old janitor sits in the last row of an empty classroom at sunset, looking at the desk where he once sat. No readable text or logo.",
+        'An apprentice mage sweeps spilled chalk in a tower classroom as long orange light turns every floating dust mote into a tiny sun. No readable text or logo.',
+        'Two teachers race office chairs down an empty corridor at the end of the day, the low sun stretching their shadows the full length of the hall. No readable text or logo.',
+        'An old janitor sits in the last row of an empty classroom at sunset, looking at the desk where he once sat. No readable text or logo.',
       ],
     },
     {
@@ -158,9 +158,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A young blacksmith and a snow fairy share a hot drink outside the forge as heavy snow falls, their breath mixing into one cloud. No readable text or logo.",
-        "A delivery driver with a red nose and three scarves builds a snowman in the exact likeness of her boss during her lunch break. No readable text or logo.",
-        "In a silent snow-covered field a woman waits at a bus stop no bus has served for years, her breath the only thing that moves. No readable text or logo.",
+        'A young blacksmith and a snow fairy share a hot drink outside the forge as heavy snow falls, their breath mixing into one cloud. No readable text or logo.',
+        'A delivery driver with a red nose and three scarves builds a snowman in the exact likeness of her boss during her lunch break. No readable text or logo.',
+        'In a silent snow-covered field a woman waits at a bus stop no bus has served for years, her breath the only thing that moves. No readable text or logo.',
       ],
     },
     {
@@ -179,9 +179,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An alchemy student sleeps on open books under a small brass lamp while her half-finished potion glows and a tiny steam spirit reads over her shoulder. No readable text or logo.",
-        "A nurse revises for her exams in the hospital cafeteria at 3 a.m., a mountain of empty coffee cans slowly burying her textbooks. No readable text or logo.",
-        "One lamp burns in a dark dormitory window where a moth and a tired student share the pool of light, neither willing to give up. No readable text or logo.",
+        'An alchemy student sleeps on open books under a small brass lamp while her half-finished potion glows and a tiny steam spirit reads over her shoulder. No readable text or logo.',
+        'A nurse revises for her exams in the hospital cafeteria at 3 a.m., a mountain of empty coffee cans slowly burying her textbooks. No readable text or logo.',
+        'One lamp burns in a dark dormitory window where a moth and a tired student share the pool of light, neither willing to give up. No readable text or logo.',
       ],
     },
     {
@@ -200,9 +200,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Three grown-up cannery workers in faded overalls walk home along a seaside road at sunset, one balancing a watermelon on her head while the other two dare her on. No readable text or logo.",
+        'Three grown-up cannery workers in faded overalls walk home along a seaside road at sunset, one balancing a watermelon on her head while the other two dare her on. No readable text or logo.',
         "A cassette tape unspools in the wind from a friend's window, and the whole class chases the shining ribbon down the hill. No readable text or logo.",
-        "Twenty years later, three friends stand in the same rusted bus shelter, soft grain gentling their older faces. No readable text or logo.",
+        'Twenty years later, three friends stand in the same rusted bus shelter, soft grain gentling their older faces. No readable text or logo.',
       ],
     },
     {
@@ -222,8 +222,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Four musicians rehearse in a cramped garage so loudly that the neighbor's laundry on the line outside flaps in time. No readable text or logo.",
-        "The drummer of a scrappy rock band is a very serious grandmother who keeps stopping rehearsal to feed everyone rice crackers. No readable text or logo.",
-        "At 2 a.m. a guitarist plays alone in a flooded garage, the amp glow shimmering on the water around her boots. No readable text or logo.",
+        'The drummer of a scrappy rock band is a very serious grandmother who keeps stopping rehearsal to feed everyone rice crackers. No readable text or logo.',
+        'At 2 a.m. a guitarist plays alone in a flooded garage, the amp glow shimmering on the water around her boots. No readable text or logo.',
       ],
     },
     {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A young pianist in a black dress sits under one soft spotlight while the whole audience holds its breath, her hands hovering above the keys. No readable text or logo.",
+        'A young pianist in a black dress sits under one soft spotlight while the whole audience holds its breath, her hands hovering above the keys. No readable text or logo.',
         "A violinist's page-turner sneezes at the most delicate moment of the concert, loose pages flying through the spotlight like doves. No readable text or logo.",
-        "In an empty concert hall after closing, the cleaner lifts the piano lid and plays one perfect note that seems to echo forever. No readable text or logo.",
+        'In an empty concert hall after closing, the cleaner lifts the piano lid and plays one perfect note that seems to echo forever. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

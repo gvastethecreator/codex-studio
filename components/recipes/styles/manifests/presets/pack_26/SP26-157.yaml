@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Large painted panels with close faces, framed the way Enki Bilal composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cold melancholic dystopia.
   rendering_and_quality: Faithful Bilal painted dystopian page, in the recognizable hand of Enki Bilal.
-  creative_brief: 'Enki Bilal page look of the 1980s to 2000s: painted pastel and gouache in cold grey-blue, bruised faces with blood-red accents, crumbling Paris and Belgrade futures, gods and hybrid bodies. Carry it through Bilal grey-blue painted dystopia, red accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Enki Bilal page look of the 1980s to 2000s: painted pastel and gouache in cold grey-blue, bruised faces with blood-red accents, crumbling Paris and Belgrade futures, gods and hybrid bodies. Carry it through Bilal grey-blue painted dystopia, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bilal grey-blue painted dystopia; red accents
 avoidRules:
   - existing franchise characters

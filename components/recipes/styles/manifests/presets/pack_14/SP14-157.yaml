@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single figure against plain ground, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with serene ancient stillness.
   rendering_and_quality: Minimal pure sculptural forms, kept consistent across the whole image.
-  creative_brief: 'Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms. Carry it through white marble, folded arms, minimal face, smooth planes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms. Carry it through white marble, folded arms, minimal face, smooth planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: white marble; folded arms; minimal face; smooth planes
 avoidRules:
   - readable Greek inscriptions

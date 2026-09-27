@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Bold iconic low angle, framed the way Jeff Easley composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with moody looming menace.
   rendering_and_quality: Dramatic eighties RPG cover painting, in the recognizable hand of Jeff Easley.
-  creative_brief: 'Jeff Easley role-playing cover painting: moody dramatic lighting, looming dragons and undead, dark blues and fiery accents, heavy atmosphere and bold iconic compositions. Carry it through Easley moody drama, looming dragons, fire accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jeff Easley role-playing cover painting: moody dramatic lighting, looming dragons and undead, dark blues and fiery accents, heavy atmosphere and bold iconic compositions. Carry it through Easley moody drama, looming dragons, fire accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Easley moody drama; looming dragons; fire accents
 avoidRules:
   - Dungeons & Dragons logos

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Handheld noir frames and flashing negative inserts, framed the way Alphaville 1965 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool poetic alienation.
   rendering_and_quality: Authentic sixties French New Wave science fiction frame.
-  creative_brief: 'Jean-Luc Godard Alphaville (1965) look: black-and-white nighttime Paris shot as a future city, neon, glass office blocks, trench coats, flashing lights and poetic noir detachment. Carry it through Alphaville neon Paris, trench coats, flashing light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jean-Luc Godard Alphaville (1965) look: black-and-white nighttime Paris shot as a future city, neon, glass office blocks, trench coats, flashing lights and poetic noir detachment. Carry it through Alphaville neon Paris, trench coats, flashing light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Alphaville neon Paris; trench coats; flashing light
 avoidRules:
   - a trench-coated detective with a fedora and a flash camera

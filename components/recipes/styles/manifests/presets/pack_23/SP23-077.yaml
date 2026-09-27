@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Small framed scene of skeleton and victim in motion.
   atmosphere_and_mood: Keep the requested mood with grim darkly comic inevitability.
   rendering_and_quality: Clear expressive figures with bony humor, kept consistent across the whole image.
-  creative_brief: 'Dance of death woodcut: grinning skeletons leading people of every station into a dance, lively macabre woodcut lines with dark humor. Carry it through dancing skeletons, framed scenes, macabre humor, woodcut hatching. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dance of death woodcut: grinning skeletons leading people of every station into a dance, lively macabre woodcut lines with dark humor. Carry it through dancing skeletons, framed scenes, macabre humor, woodcut hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dancing skeletons; framed scenes; macabre humor; woodcut hatching
 avoidRules:
   - readable type or lettering

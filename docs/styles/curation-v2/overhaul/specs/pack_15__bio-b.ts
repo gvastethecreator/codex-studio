@@ -3,7 +3,7 @@ import { STYLE_AVOID } from './_style';
 import { dna } from './_strict';
 
 // Bio, myco and body punks (part B): ten more living-system punks. No gore.
-const AVOID = [...STYLE_AVOID,  'graphic wounds', 'real brand or company logo'];
+const AVOID = [...STYLE_AVOID, 'graphic wounds', 'real brand or company logo'];
 
 const punk = (
   name: string,

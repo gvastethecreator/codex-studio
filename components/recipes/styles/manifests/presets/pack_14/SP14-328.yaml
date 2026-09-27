@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Central figure framed by arabesque margins, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with smoky wondrous mystery.
   rendering_and_quality: Refined illumination without readable script, kept consistent across the whole image.
-  creative_brief: 'Jinn smoke illumination: illuminated manuscript pages of the wonders tradition, jinn rising from smoke and lamps in gold, lapis and vermilion with arabesque margins. Carry it through jinn in smoke, brass lamp, arabesques, gold. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jinn smoke illumination: illuminated manuscript pages of the wonders tradition, jinn rising from smoke and lamps in gold, lapis and vermilion with arabesque margins. Carry it through jinn in smoke, brass lamp, arabesques, gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: jinn in smoke; brass lamp; arabesques; gold
 avoidRules:
   - cultural stereotypes or caricature

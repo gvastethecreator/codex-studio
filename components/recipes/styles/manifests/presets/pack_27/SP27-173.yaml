@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Symmetrical modernist framing, framed the way Gattaca 1997 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet restrained aspiration.
   rendering_and_quality: Authentic late-nineties retro-modern frame, in the recognizable hand of Gattaca 1997.
-  creative_brief: 'Andrew Niccol Gattaca (1997) look: sleek retro-modern architecture, golden-green grade, identical suits, clean corridors, genetic testing and quiet aspiration. Carry it through Gattaca golden grade, retro modernism, identical suits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Andrew Niccol Gattaca (1997) look: sleek retro-modern architecture, golden-green grade, identical suits, clean corridors, genetic testing and quiet aspiration. Carry it through Gattaca golden grade, retro modernism, identical suits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Gattaca golden grade; retro modernism; identical suits
 avoidRules:
   - existing franchise characters

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low tabletop angle among the toys, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with playful toybox warfare.
   rendering_and_quality: Convincing toy material and scale, kept consistent across the whole image.
-  creative_brief: 'Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale. Carry it through toy soldiers, wooden castle, glossy paint, tabletop scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale. Carry it through toy soldiers, wooden castle, glossy paint, tabletop scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: toy soldiers; wooden castle; glossy paint; tabletop scale
 avoidRules:
   - interface or HUD

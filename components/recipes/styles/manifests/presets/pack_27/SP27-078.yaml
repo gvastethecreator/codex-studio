@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a first-person JRPG battle screen with one monster on black and a command window. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: NES palette with a black battle background, true to the Dragon Quest 1986 palette.
-  lighting_and_shadow: "Flat NES colors with a single bright monster sprite on pure black."
+  lighting_and_shadow: 'Flat NES colors with a single bright monster sprite on pure black.'
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: First-person battle screen with windowed menus, framed the way Dragon Quest 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with humble heroic adventure.
-  rendering_and_quality: "A 1986 NES frame at 256 by 240: one monster in a black window, white-bordered command and status boxes with blank text lines."
-  creative_brief: 'Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs. Carry it through Dragon Quest battle screen, monster on black, command window. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1986 NES frame at 256 by 240: one monster in a black window, white-bordered command and status boxes with blank text lines.'
+  creative_brief: "Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs. Carry it through Dragon Quest battle screen, monster on black, command window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Dragon Quest battle screen; monster on black; command window
 avoidRules:
   - a blue teardrop slime with a smile

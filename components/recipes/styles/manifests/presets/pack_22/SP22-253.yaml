@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing on a visible wall surface.
   atmosphere_and_mood: Keep the requested mood with a gentle melancholy decay.
   rendering_and_quality: Believable flaking with readable image, never random grunge.
-  creative_brief: 'Flaking mural paint: an image painted on an old plaster wall, with paint lifting and flaking away to reveal plaster and older layers beneath. Carry it through flaking paint, bare plaster, older layers, faded pigments. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Flaking mural paint: an image painted on an old plaster wall, with paint lifting and flaking away to reveal plaster and older layers beneath. Carry it through flaking paint, bare plaster, older layers, faded pigments. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flaking paint; bare plaster; older layers; faded pigments
 avoidRules:
   - digital grunge overlay

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'CD Projekt Red Cyberpunk 2077 (2020) look: dense photoreal Night City megastructures, yellow-teal neon, holographic ads, chrome implants, rain and first-person street grime.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people with chrome implants and street fashion in dense neon megacity streets. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Neon yellow, teal and magenta over wet asphalt.
-  lighting_and_shadow: "Neon holograms and signs reflected sharply in rain puddles and chrome, deep black shadows between."
-  texture_and_material: "Photoreal grime, chrome and glossy wet asphalt, with slightly soft game-engine detail and pop-in crowds."
+  lighting_and_shadow: 'Neon holograms and signs reflected sharply in rain puddles and chrome, deep black shadows between.'
+  texture_and_material: 'Photoreal grime, chrome and glossy wet asphalt, with slightly soft game-engine detail and pop-in crowds.'
   camera_and_composition: First-person street view, framed the way Cyberpunk 2077 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty neon hustle.
-  rendering_and_quality: "A 2020 PC frame at 2560 by 1440 in first person: mirror-sharp reflections, a small minimap circle top right and a hand at the edge."
-  creative_brief: 'CD Projekt Red Cyberpunk 2077 (2020) look: dense photoreal Night City megastructures, yellow-teal neon, holographic ads, chrome implants, rain and first-person street grime. Carry it through Cyberpunk 2077 Night City neon, chrome implants. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 PC frame at 2560 by 1440 in first person: mirror-sharp reflections, a small minimap circle top right and a hand at the edge.'
+  creative_brief: "CD Projekt Red Cyberpunk 2077 (2020) look: dense photoreal Night City megastructures, yellow-teal neon, holographic ads, chrome implants, rain and first-person street grime. Carry it through Cyberpunk 2077 Night City neon, chrome implants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Cyberpunk 2077 Night City neon; chrome implants
 avoidRules:
   - a man with a chrome arm and aviator sunglasses

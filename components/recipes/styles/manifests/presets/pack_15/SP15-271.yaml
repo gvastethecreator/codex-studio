@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Smoky forge interiors and hill forts seen across misty valleys.
   atmosphere_and_mood: Tough, smoky and inventive, strength hammered out of rock.
   rendering_and_quality: Gritty textured illustration with forge glow and smoky depth.
-  creative_brief: 'Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls. Carry it through bloomery furnaces, forged iron, timber hill forts, smoke and mist. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls. Carry it through bloomery furnaces, forged iron, timber hill forts, smoke and mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bloomery furnaces; forged iron; timber hill forts; smoke and mist
 avoidRules:
   - readable text

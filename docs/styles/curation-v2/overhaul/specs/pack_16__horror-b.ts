@@ -4,7 +4,7 @@ import { dna } from './_strict';
 
 // Horror anime (part B): fourteen more horror looks. Dread comes from light, space, texture and
 // timing; no gore and no franchise monsters.
-const AVOID = [...ANIME_AVOID,  'graphic wounds'];
+const AVOID = [...ANIME_AVOID, 'graphic wounds'];
 
 const create = (
   name: string,
@@ -50,8 +50,8 @@ const spec: Spec = {
         key_features: 'ordinary scene; one wrong detail; mismatched shadow; lingering frame',
       },
       [
-        "A mother washes dishes at a sunny kitchen window while her shadow on the wall reaches toward the glass with far too many fingers. No readable text or logo.",
-        "An office worker notices that his reflection in the elevator doors stands a few centimeters taller than him every morning. No readable text or logo.",
+        'A mother washes dishes at a sunny kitchen window while her shadow on the wall reaches toward the glass with far too many fingers. No readable text or logo.',
+        'An office worker notices that his reflection in the elevator doors stands a few centimeters taller than him every morning. No readable text or logo.',
         "An old couple sit on a porch at dusk, the husband's posture slowly curved into the shape of the tree beside him while his wife calmly knits. No readable text or logo.",
       ],
     ),
@@ -78,9 +78,9 @@ const spec: Spec = {
         key_features: 'bright daylight; flower crowns; straw figures; synchronized villagers',
       },
       [
-        "Villagers in white linen and flower crowns dance around a maypole in blinding daylight, every one of them smiling straight at the visiting photographer. No readable text or logo.",
+        'Villagers in white linen and flower crowns dance around a maypole in blinding daylight, every one of them smiling straight at the visiting photographer. No readable text or logo.',
         "The straw effigy at a harvest festival is wearing the missing hiker's boots, and everyone in the village insists it always has. No readable text or logo.",
-        "An old woman hands a visitor a flower crown at a midsummer feast, and the flowers woven into it are slowly closing. No readable text or logo.",
+        'An old woman hands a visitor a flower crown at a midsummer feast, and the flowers woven into it are slowly closing. No readable text or logo.',
       ],
     ),
     create(
@@ -107,9 +107,9 @@ const spec: Spec = {
         key_features: 'empty classrooms; mirrors; flashlight beams; rumors',
       },
       [
-        "Three young teachers on night duty count the stairwell steps aloud by flashlight and find one step more than yesterday. No readable text or logo.",
-        "At midnight the restroom mirror of an empty school shows the room full of pupils in old-fashioned uniforms, all waiting quietly in line. No readable text or logo.",
-        "In an empty classroom at dusk the anatomy model has moved to the window seat and is gazing out at the sports field. No readable text or logo.",
+        'Three young teachers on night duty count the stairwell steps aloud by flashlight and find one step more than yesterday. No readable text or logo.',
+        'At midnight the restroom mirror of an empty school shows the room full of pupils in old-fashioned uniforms, all waiting quietly in line. No readable text or logo.',
+        'In an empty classroom at dusk the anatomy model has moved to the window seat and is gazing out at the sports field. No readable text or logo.',
       ],
     ),
     create(
@@ -136,9 +136,9 @@ const spec: Spec = {
         key_features: 'huge shadow below; tiny boat; bioluminescence; split surface view',
       },
       [
-        "A small fishing boat drifts at night on a calm teal sea, its lamp the only light, while beneath the surface an eye larger than the boat slowly opens. No readable text or logo.",
-        "Her helmet lamp sweeping the dark, a diver on the ocean floor realizes the rock wall she has been climbing is slowly breathing. No readable text or logo.",
-        "A lighthouse keeper watches a shadow as long as the island circle it every night, one lap closer each time. No readable text or logo.",
+        'A small fishing boat drifts at night on a calm teal sea, its lamp the only light, while beneath the surface an eye larger than the boat slowly opens. No readable text or logo.',
+        'Her helmet lamp sweeping the dark, a diver on the ocean floor realizes the rock wall she has been climbing is slowly breathing. No readable text or logo.',
+        'A lighthouse keeper watches a shadow as long as the island circle it every night, one lap closer each time. No readable text or logo.',
       ],
     ),
     create(
@@ -166,8 +166,8 @@ const spec: Spec = {
       },
       [
         "Inside an open dollhouse at night, every porcelain doll has gathered in the attic around a tiny perfect miniature of the viewer's own bedroom. No readable text or logo.",
-        "A collector finds the dollhouse dining table set for dinner, with a crumb of real bread on every tiny plate. No readable text or logo.",
-        "From the dollhouse nursery window a tiny porcelain doll watches its giant owner sleeping in the real bed across the room. No readable text or logo.",
+        'A collector finds the dollhouse dining table set for dinner, with a crumb of real bread on every tiny plate. No readable text or logo.',
+        'From the dollhouse nursery window a tiny porcelain doll watches its giant owner sleeping in the real bed across the room. No readable text or logo.',
       ],
     ),
     create(
@@ -195,8 +195,8 @@ const spec: Spec = {
       },
       [
         "A hiker's shaking camera in a forest cabin catches two glowing green eyes at the window, and then a third. No readable text or logo.",
-        "Grainy green footage of a campsite shows every tent unzipped from the outside while the campers still sleep inside. No readable text or logo.",
-        "A shaking handheld camera pans across a dark cornfield where a hundred pairs of glowing eyes blink in sequence like a wave. No readable text or logo.",
+        'Grainy green footage of a campsite shows every tent unzipped from the outside while the campers still sleep inside. No readable text or logo.',
+        'A shaking handheld camera pans across a dark cornfield where a hundred pairs of glowing eyes blink in sequence like a wave. No readable text or logo.',
       ],
     ),
     create(
@@ -223,9 +223,9 @@ const spec: Spec = {
         key_features: 'impossible sky; vast shapes; directionless light; thin horizon',
       },
       [
-        "A farmer in a cornfield at night looks up at a sky where the stars have rearranged themselves into a vast closed eye. No readable text or logo.",
-        "Commuters on a bridge stop and stare as the clouds part to reveal that the sky is only the underside of something enormous. No readable text or logo.",
-        "An astronomer at her telescope realizes the new star she discovered grows closer every night and is not a star at all. No readable text or logo.",
+        'A farmer in a cornfield at night looks up at a sky where the stars have rearranged themselves into a vast closed eye. No readable text or logo.',
+        'Commuters on a bridge stop and stare as the clouds part to reveal that the sky is only the underside of something enormous. No readable text or logo.',
+        'An astronomer at her telescope realizes the new star she discovered grows closer every night and is not a star at all. No readable text or logo.',
       ],
     ),
     create(
@@ -252,8 +252,8 @@ const spec: Spec = {
         key_features: 'creeping fungus; drifting spores; overgrown rooms; soft decay',
       },
       [
-        "Pale shelf fungus has swallowed every pot and bench of an old greenhouse, glowing spores drifting in the sunbeams toward the sleeping gardener. No readable text or logo.",
-        "At a mansion dinner party the fungus climbing the walls has bloomed into delicate lace, and the guests politely admire it between courses. No readable text or logo.",
+        'Pale shelf fungus has swallowed every pot and bench of an old greenhouse, glowing spores drifting in the sunbeams toward the sleeping gardener. No readable text or logo.',
+        'At a mansion dinner party the fungus climbing the walls has bloomed into delicate lace, and the guests politely admire it between courses. No readable text or logo.',
         "A woman tends her garden in a beekeeper's veil while mushrooms sprout in perfect rings around each of her footprints. No readable text or logo.",
       ],
     ),
@@ -281,9 +281,9 @@ const spec: Spec = {
         key_features: 'curtained beds; monitor glow; long wards; silhouettes',
       },
       [
-        "Walking a long dim ward past rows of curtained beds, a nurse notices that behind each curtain a silhouette sits up as she passes. No readable text or logo.",
-        "Every heart monitor in an empty ward begins beeping in unison, slowly, in the rhythm of a lullaby. No readable text or logo.",
-        "A tired surgeon eats noodles in the break room while the elevator doors keep opening onto a dark floor the hospital does not have. No readable text or logo.",
+        'Walking a long dim ward past rows of curtained beds, a nurse notices that behind each curtain a silhouette sits up as she passes. No readable text or logo.',
+        'Every heart monitor in an empty ward begins beeping in unison, slowly, in the rhythm of a lullaby. No readable text or logo.',
+        'A tired surgeon eats noodles in the break room while the elevator doors keep opening onto a dark floor the hospital does not have. No readable text or logo.',
       ],
     ),
     create(
@@ -310,8 +310,8 @@ const spec: Spec = {
       },
       [
         "Amber light behind a paper screen shows a woman combing her hair while her shadow's head tilts sideways far past what a neck allows. No readable text or logo.",
-        "A puppet show behind a paper screen delights the villagers until the puppeteer steps out and the shadows keep performing. No readable text or logo.",
-        "A man under a streetlamp casts no shadow, while the wall beside him holds a shadow walking in the opposite direction. No readable text or logo.",
+        'A puppet show behind a paper screen delights the villagers until the puppeteer steps out and the shadows keep performing. No readable text or logo.',
+        'A man under a streetlamp casts no shadow, while the wall beside him holds a shadow walking in the opposite direction. No readable text or logo.',
       ],
     ),
     create(
@@ -337,9 +337,9 @@ const spec: Spec = {
         key_features: 'lagging reflection; cold mirror world; split symmetry; wrong expression',
       },
       [
-        "A woman brushes her teeth at the bathroom mirror in the morning while her reflection has stopped brushing and is smiling. No readable text or logo.",
+        'A woman brushes her teeth at the bathroom mirror in the morning while her reflection has stopped brushing and is smiling. No readable text or logo.',
         "A dance studio's wall of mirrors shows the class in perfect sync, except one reflection dancing an entirely different routine. No readable text or logo.",
-        "A man straightens his tie in a shop window and his reflection slowly shakes its head at him. No readable text or logo.",
+        'A man straightens his tie in a shop window and his reflection slowly shakes its head at him. No readable text or logo.',
       ],
     ),
     create(
@@ -364,9 +364,9 @@ const spec: Spec = {
         key_features: 'thick fog; rust; ash; figures at the edge of sight',
       },
       [
-        "A woman with a flashlight walks down an empty main street swallowed by grey fog as a distant siren wails and the rusted walls begin to peel. No readable text or logo.",
-        "In a fog-bound town a mail carrier rings a doorbell, and fog pours out of the house when the door swings open by itself. No readable text or logo.",
-        "A traveler sits in a fog-shrouded diner where every other customer is only a grey silhouette sipping coffee. No readable text or logo.",
+        'A woman with a flashlight walks down an empty main street swallowed by grey fog as a distant siren wails and the rusted walls begin to peel. No readable text or logo.',
+        'In a fog-bound town a mail carrier rings a doorbell, and fog pours out of the house when the door swings open by itself. No readable text or logo.',
+        'A traveler sits in a fog-shrouded diner where every other customer is only a grey silhouette sipping coffee. No readable text or logo.',
       ],
     ),
     create(
@@ -393,9 +393,9 @@ const spec: Spec = {
         key_features: 'night procession; lanterns; object spirits; hidden witnesses',
       },
       [
-        "Spirits file through a sleeping town in a silent procession, a one-legged umbrella leading the way and a paper lantern licking the mist. No readable text or logo.",
-        "An elderly noodle vendor stays open late to feed the spirit procession, taking payment in autumn leaves. No readable text or logo.",
-        "A drunk office worker accidentally joins the tail of the spirit procession, and nobody, spirit or human, notices. No readable text or logo.",
+        'Spirits file through a sleeping town in a silent procession, a one-legged umbrella leading the way and a paper lantern licking the mist. No readable text or logo.',
+        'An elderly noodle vendor stays open late to feed the spirit procession, taking payment in autumn leaves. No readable text or logo.',
+        'A drunk office worker accidentally joins the tail of the spirit procession, and nobody, spirit or human, notices. No readable text or logo.',
       ],
     ),
     create(
@@ -420,9 +420,9 @@ const spec: Spec = {
         key_features: 'slanted sets; painted shadows; stark contrast; film grain',
       },
       [
-        "A hunched sleepwalker moves down a crooked street of slanted houses while his painted shadow reaches the far end of the street long before he does. No readable text or logo.",
+        'A hunched sleepwalker moves down a crooked street of slanted houses while his painted shadow reaches the far end of the street long before he does. No readable text or logo.',
         "A doctor's shadow towers across the tilted wall of his office while he himself sits small and hunched before his patient. No readable text or logo.",
-        "In a black-and-white carnival the carousel horses lean so far sideways that their riders cling on at impossible angles. No readable text or logo.",
+        'In a black-and-white carnival the carousel horses lean so far sideways that their riders cling on at impossible angles. No readable text or logo.',
       ],
     ),
   ],

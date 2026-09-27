@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide painted-sky frames and glowing console close-ups, framed the way This Island Earth 1955 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with lurid cosmic adventure.
   rendering_and_quality: Authentic fifties Technicolor space opera frame, in the recognizable hand of This Island Earth 1955.
-  creative_brief: 'Joseph Newman This Island Earth (1955) look: lurid Technicolor space opera, flying saucer interiors with glowing tubes, a burning planet under meteor bombardment and big-brained alien scientists. Carry it through This Island Earth Technicolor, saucer tubes, meteor planet. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Joseph Newman This Island Earth (1955) look: lurid Technicolor space opera, flying saucer interiors with glowing tubes, a burning planet under meteor bombardment and big-brained alien scientists. Carry it through This Island Earth Technicolor, saucer tubes, meteor planet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: This Island Earth Technicolor; saucer tubes; meteor planet
 avoidRules:
   - a bug-eyed alien with an exposed brain and pincer claws

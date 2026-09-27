@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Grid of story panels read in rows, the hero reappearing in each.
   atmosphere_and_mood: Keep the requested mood with noble legendary wonder.
   rendering_and_quality: Clear flat narrative painting with expressive eyes, kept consistent across the whole image.
-  creative_brief: 'Ethiopian legend strip painting: Ethiopian popular paintings telling a legend across rows of small panels, large-eyed figures in profile and frontal views, bright flat color on canvas. Carry it through story panels in rows, large almond eyes, bright flat color, legendary journey. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ethiopian legend strip painting: Ethiopian popular paintings telling a legend across rows of small panels, large-eyed figures in profile and frontal views, bright flat color on canvas. Carry it through story panels in rows, large almond eyes, bright flat color, legendary journey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: story panels in rows; large almond eyes; bright flat color; legendary journey
 avoidRules:
   - cultural stereotypes or caricature

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Classic book-plate framing, framed the way David Trampier composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet mysterious menace.
   rendering_and_quality: Classic old-school role-playing ink plate, in the recognizable hand of David Trampier.
-  creative_brief: 'David Trampier old-school role-playing ink: clean confident line work, bold spotted blacks, moody dungeon interiors, grotesque idols and understated mysterious menace. Carry it through Trampier clean line, spotted blacks, dungeon idols. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Trampier old-school role-playing ink: clean confident line work, bold spotted blacks, moody dungeon interiors, grotesque idols and understated mysterious menace. Carry it through Trampier clean line, spotted blacks, dungeon idols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Trampier clean line; spotted blacks; dungeon idols
 avoidRules:
   - a giant horned idol with gem eyes being robbed by thieves

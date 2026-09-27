@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as lonely wanderers seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Storm grey, sea teal and lamp gold, true to the Dear Esther 2012 palette.
-  lighting_and_shadow: "Stormy grey light with a lighthouse beam sweeping."
-  texture_and_material: "Realistic rock and sea spray, slightly soft and lonely."
+  lighting_and_shadow: 'Stormy grey light with a lighthouse beam sweeping.'
+  texture_and_material: 'Realistic rock and sea spray, slightly soft and lonely.'
   camera_and_composition: First-person lamp room view, framed the way Dear Esther 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic windswept isolation.
-  rendering_and_quality: "A 2012 first-person frame at 1920 by 1080: rocky island path, lighthouse ahead, no interface."
-  creative_brief: 'The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration. Carry it through Dear Esther island, lighthouse, storm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2012 first-person frame at 1920 by 1080: rocky island path, lighthouse ahead, no interface.'
+  creative_brief: "The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration. Carry it through Dear Esther island, lighthouse, storm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Dear Esther island; lighthouse; storm
 avoidRules:
   - readable log text

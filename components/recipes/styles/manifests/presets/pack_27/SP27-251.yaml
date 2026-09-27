@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Larian Studios Baldur’s Gate 3 (2023) look: cinematic high-fantasy role-playing, detailed painterly realism, torchlit camps, tadpole horror, dice-driven drama and grand gothic cities.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as detailed cinematic fantasy characters in torchlit camps and cities. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm torch amber, forest green and gothic purple.
-  lighting_and_shadow: "Warm campfire and torchlight with deep night blues around."
-  texture_and_material: "Detailed realistic fantasy materials with slightly soft game-engine sharpness."
+  lighting_and_shadow: 'Warm campfire and torchlight with deep night blues around.'
+  texture_and_material: 'Detailed realistic fantasy materials with slightly soft game-engine sharpness.'
   camera_and_composition: Cinematic dialogue close-ups and isometric views, framed the way Baldurs Gate 3 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dramatic fantasy intrigue.
-  rendering_and_quality: "A 2023 PC frame at 2560 by 1440 from a high angle: a small party in a camp, a hotbar of blank slots along the bottom."
-  creative_brief: 'Larian Studios Baldur’s Gate 3 (2023) look: cinematic high-fantasy role-playing, detailed painterly realism, torchlit camps, tadpole horror, dice-driven drama and grand gothic cities. Carry it through Baldur''s Gate 3 cinematic fantasy, campfire, gothic city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 PC frame at 2560 by 1440 from a high angle: a small party in a camp, a hotbar of blank slots along the bottom.'
+  creative_brief: "Larian Studios Baldur’s Gate 3 (2023) look: cinematic high-fantasy role-playing, detailed painterly realism, torchlit camps, tadpole horror, dice-driven drama and grand gothic cities. Carry it through Baldur's Gate 3 cinematic fantasy, campfire, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Baldur's Gate 3 cinematic fantasy; campfire; gothic city
 avoidRules:
   - existing Baldur’s Gate companions

@@ -67,9 +67,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A helmet and sword melt over the edge of a stone altar in a vast ochre desert, casting long crisp shadows toward a horizon that is too close. No readable text or logo.",
-        "A lighthouse droops like soft wax over a sea cliff, its lamp still burning beneath a pale green dream sky. No readable text or logo.",
-        "A grandfather clock melts over the branch of a dead olive tree, its pendulum dripping onto the flat desert sand. No readable text or logo.",
+        'A helmet and sword melt over the edge of a stone altar in a vast ochre desert, casting long crisp shadows toward a horizon that is too close. No readable text or logo.',
+        'A lighthouse droops like soft wax over a sea cliff, its lamp still burning beneath a pale green dream sky. No readable text or logo.',
+        'A grandfather clock melts over the branch of a dead olive tree, its pendulum dripping onto the flat desert sand. No readable text or logo.',
       ],
     },
     'SP10-032': {
@@ -85,9 +85,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An empty throne room at 3 a.m. is lit by flat buzzing fluorescent tubes, a single plastic chair set beside the throne. No readable text or logo.",
-        "A covered village market sits completely empty at dawn under flat overcast light, stalls shuttered and one abandoned shopping cart. No readable text or logo.",
-        "A hotel corridor at 3 a.m. stretches into darkness under one flickering light, every door slightly ajar. No readable text or logo.",
+        'An empty throne room at 3 a.m. is lit by flat buzzing fluorescent tubes, a single plastic chair set beside the throne. No readable text or logo.',
+        'A covered village market sits completely empty at dawn under flat overcast light, stalls shuttered and one abandoned shopping cart. No readable text or logo.',
+        'A hotel corridor at 3 a.m. stretches into darkness under one flickering light, every door slightly ajar. No readable text or logo.',
       ],
     },
     'SP10-033': {
@@ -105,7 +105,7 @@ const spec: Spec = {
       briefs: [
         "A bearded sage's face dissolves into swirling magenta and acid-green, his beard flowing into melting paisley. No readable text or logo.",
         "A tiger's stripes melt into vibrating orange and violet waves, its eyes radiating concentric rings of color. No readable text or logo.",
-        "In a mushroom forest the caps drip into swirling saturated patterns around a small glowing cottage. No readable text or logo.",
+        'In a mushroom forest the caps drip into swirling saturated patterns around a small glowing cottage. No readable text or logo.',
       ],
     },
     'SP10-034': {
@@ -121,9 +121,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A small castle sits on a field of pastel clouds under soft bloom, eerily still, one window lit in the middle of the day. No readable text or logo.",
-        "A carousel horse stands alone in a pastel meadow at dusk, a single balloon floating beside it in the haze. No readable text or logo.",
-        "Clouds drift through an open window into a pastel bedroom, and the nightlight glows even though it is daytime. No readable text or logo.",
+        'A small castle sits on a field of pastel clouds under soft bloom, eerily still, one window lit in the middle of the day. No readable text or logo.',
+        'A carousel horse stands alone in a pastel meadow at dusk, a single balloon floating beside it in the haze. No readable text or logo.',
+        'Clouds drift through an open window into a pastel bedroom, and the nightlight glows even though it is daytime. No readable text or logo.',
       ],
     },
     'SP10-035': {
@@ -139,9 +139,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a sunny back garden an old woman hangs laundry while one white sheet calmly floats away over the rooftops carrying a sleeping swan. No readable text or logo.",
-        "A village blacksmith keeps working while his sparks turn into orange butterflies and drift out of the forge door. No readable text or logo.",
-        "An old man sits on a well in a quiet courtyard drawing up a bucket full of stars while his neighbors hang laundry. No readable text or logo.",
+        'In a sunny back garden an old woman hangs laundry while one white sheet calmly floats away over the rooftops carrying a sleeping swan. No readable text or logo.',
+        'A village blacksmith keeps working while his sparks turn into orange butterflies and drift out of the forge door. No readable text or logo.',
+        'An old man sits on a well in a quiet courtyard drawing up a bucket full of stars while his neighbors hang laundry. No readable text or logo.',
       ],
     },
     'SP10-036': {
@@ -177,7 +177,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Monks climb endless staircases in a monastery where every wall is also a floor, their paths looping back on themselves. No readable text or logo.",
+        'Monks climb endless staircases in a monastery where every wall is also a floor, their paths looping back on themselves. No readable text or logo.',
         "A water mill's stream flows downhill in a loop and returns to its own source, the wheel turning forever. No readable text or logo.",
         "A library's shelves connect in an impossible loop, readers walking upside down on the balconies above. No readable text or logo.",
       ],
@@ -195,9 +195,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A marble bust of a knight stands on a pink grid floor beneath a teal sunset, a potted palm beside it. No readable text or logo.",
+        'A marble bust of a knight stands on a pink grid floor beneath a teal sunset, a potted palm beside it. No readable text or logo.',
         "A Roman athlete's bust gazes over palm trees and a gradient sunset in pastel teal and pink haze. No readable text or logo.",
-        "An empty swimming pool at night glows in pastel neon, classical columns reflecting a striped sunset in its tiles. No readable text or logo.",
+        'An empty swimming pool at night glows in pastel neon, classical columns reflecting a striped sunset in its tiles. No readable text or logo.',
       ],
     },
     'SP10-039': {
@@ -214,7 +214,7 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'sexual imagery'],
       briefs: [
-        "A throne fuses with ribbed vertebrae and glossy black tubes, anatomy and machinery merging in dark monochrome. No readable text or logo.",
+        'A throne fuses with ribbed vertebrae and glossy black tubes, anatomy and machinery merging in dark monochrome. No readable text or logo.',
         "A piano's keys become ribs and its legs glossy ribbed tubes, all in dark silver monochrome. No readable text or logo.",
         "A woman's profile fuses with ribbed metal cables and vertebrae along her neck, glossy and dark. No readable text or logo.",
       ],
@@ -232,9 +232,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A gentleman in a bowler hat has a cut-out vintage hot-air balloon for a head, pasted onto an old seaside postcard. No readable text or logo.",
-        "An elephant with butterfly wings cut from a Victorian engraving flies over a pasted city photo. No readable text or logo.",
-        "A lighthouse grows out of a teacup on a vintage tablecloth, cut edges and mismatched print textures showing. No readable text or logo.",
+        'A gentleman in a bowler hat has a cut-out vintage hot-air balloon for a head, pasted onto an old seaside postcard. No readable text or logo.',
+        'An elephant with butterfly wings cut from a Victorian engraving flies over a pasted city photo. No readable text or logo.',
+        'A lighthouse grows out of a teacup on a vintage tablecloth, cut edges and mismatched print textures showing. No readable text or logo.',
       ],
     },
     'SP10-041': {
@@ -250,9 +250,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A classical statue stands in an empty arcaded square with long raking shadows, a distant train crossing under a green sky. No readable text or logo.",
-        "A lone horse stands in an empty piazza in late afternoon, stretched shadows reaching toward a red tower. No readable text or logo.",
-        "A tower and a small steam train wait on the horizon behind an empty arcade, shadows stretching unnaturally long. No readable text or logo.",
+        'A classical statue stands in an empty arcaded square with long raking shadows, a distant train crossing under a green sky. No readable text or logo.',
+        'A lone horse stands in an empty piazza in late afternoon, stretched shadows reaching toward a red tower. No readable text or logo.',
+        'A tower and a small steam train wait on the horizon behind an empty arcade, shadows stretching unnaturally long. No readable text or logo.',
       ],
     },
     'SP10-042': {
@@ -268,9 +268,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A big-eyed woman rides a candy-colored skeleton horse through a lollipop forest, glossy and cute with something dark underneath. No readable text or logo.",
-        "A pastel octopus wears a tiara, glossy candy colors and one perfect tear on its enormous eye. No readable text or logo.",
-        "A big-headed witch holds a cupcake oozing raspberry jam like a wound, candy pink and mint against black. No readable text or logo.",
+        'A big-eyed woman rides a candy-colored skeleton horse through a lollipop forest, glossy and cute with something dark underneath. No readable text or logo.',
+        'A pastel octopus wears a tiara, glossy candy colors and one perfect tear on its enormous eye. No readable text or logo.',
+        'A big-headed witch holds a cupcake oozing raspberry jam like a wound, candy pink and mint against black. No readable text or logo.',
       ],
     },
     'SP10-043': {
@@ -286,9 +286,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lone warrior faces a colossal skeletal beast in a ruined cathedral, fading light through the broken windows. No readable text or logo.",
-        "A witch queen sits on a throne of thorns in a drowned hall, pale light on the black water. No readable text or logo.",
-        "A city of bells is carved into a cliff, fog and fading sunset, the bells ringing with nobody pulling the ropes. No readable text or logo.",
+        'A lone warrior faces a colossal skeletal beast in a ruined cathedral, fading light through the broken windows. No readable text or logo.',
+        'A witch queen sits on a throne of thorns in a drowned hall, pale light on the black water. No readable text or logo.',
+        'A city of bells is carved into a cliff, fog and fading sunset, the bells ringing with nobody pulling the ropes. No readable text or logo.',
       ],
     },
     'SP10-044': {
@@ -305,9 +305,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A hillside town is covered in terraced gardens and solar sails, villagers harvesting fruit on their rooftops. No readable text or logo.",
-        "A bicycle repair cooperative works under a solar canopy, vines climbing the frames and elders teaching apprentices. No readable text or logo.",
-        "Glass domes and solar barges drift down a wide river as a floating market, traders passing baskets of vegetables from boat to boat. No readable text or logo.",
+        'A hillside town is covered in terraced gardens and solar sails, villagers harvesting fruit on their rooftops. No readable text or logo.',
+        'A bicycle repair cooperative works under a solar canopy, vines climbing the frames and elders teaching apprentices. No readable text or logo.',
+        'Glass domes and solar barges drift down a wide river as a floating market, traders passing baskets of vegetables from boat to boat. No readable text or logo.',
       ],
     },
     'SP10-045': {
@@ -323,9 +323,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mascot costume stands in a suburban kitchen, oddly framed and harshly flash-lit, nobody visible inside. No readable text or logo.",
-        "A beige hallway has far too many identical doors and one red balloon floating at eye level. No readable text or logo.",
-        "On a suburban lawn eyes grow like flowers on thin stems, cropped at a tilt under an overexposed sky. No readable text or logo.",
+        'A mascot costume stands in a suburban kitchen, oddly framed and harshly flash-lit, nobody visible inside. No readable text or logo.',
+        'A beige hallway has far too many identical doors and one red balloon floating at eye level. No readable text or logo.',
+        'On a suburban lawn eyes grow like flowers on thin stems, cropped at a tilt under an overexposed sky. No readable text or logo.',
       ],
     },
   },
@@ -346,9 +346,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A colossal snail carries a whole village on its shell across a wheat field, the farmers tiny beside it. No readable text or logo.",
-        "A tiny man in a raincoat shelters with his umbrella beneath a giant dewdrop hanging from a blade of grass, a beetle towering nearby. No readable text or logo.",
-        "A giant porcelain teacup lies on its side in a bay, forming a harbor with fishing boats moored inside its rim. No readable text or logo.",
+        'A colossal snail carries a whole village on its shell across a wheat field, the farmers tiny beside it. No readable text or logo.',
+        'A tiny man in a raincoat shelters with his umbrella beneath a giant dewdrop hanging from a blade of grass, a beetle towering nearby. No readable text or logo.',
+        'A giant porcelain teacup lies on its side in a bay, forming a harbor with fishing boats moored inside its rim. No readable text or logo.',
       ],
     },
     {
@@ -367,9 +367,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A pale queen rests beside a sleeping panther under a violet twilight sky, jewel tones veiled in haze. No readable text or logo.",
-        "An angel stands in a misty swamp holding a lily, hazy emerald and gold around her. No readable text or logo.",
-        "A sphinx and a young poet meet at dusk in jewel tones and soft haze, neither willing to speak first. No readable text or logo.",
+        'A pale queen rests beside a sleeping panther under a violet twilight sky, jewel tones veiled in haze. No readable text or logo.',
+        'An angel stands in a misty swamp holding a lily, hazy emerald and gold around her. No readable text or logo.',
+        'A sphinx and a young poet meet at dusk in jewel tones and soft haze, neither willing to speak first. No readable text or logo.',
       ],
     },
     {
@@ -388,9 +388,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A fisherman at a still lake sees his reflection as a skeleton wearing his hat, the evening light perfectly calm. No readable text or logo.",
+        'A fisherman at a still lake sees his reflection as a skeleton wearing his hat, the evening light perfectly calm. No readable text or logo.',
         "An old woman's bathroom mirror shows her young, and both are touching the glass from opposite sides. No readable text or logo.",
-        "A puddle on a rainy city street reflects a dense green jungle full of parrots instead of the buildings above. No readable text or logo.",
+        'A puddle on a rainy city street reflects a dense green jungle full of parrots instead of the buildings above. No readable text or logo.',
       ],
     },
     {
@@ -410,8 +410,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "At a sweltering banquet the roast pig stares back, candles sweat wax and the guests' faces swell in the heat. No readable text or logo.",
-        "A nurse walks a hallway that stretches and bends, swollen doorframes and walls beaded with sweat. No readable text or logo.",
-        "A carnival at night warps and melts in the heat, swollen balloons sagging over the rides. No readable text or logo.",
+        'A nurse walks a hallway that stretches and bends, swollen doorframes and walls beaded with sweat. No readable text or logo.',
+        'A carnival at night warps and melts in the heat, swollen balloons sagging over the rides. No readable text or logo.',
       ],
     },
     {
@@ -430,9 +430,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A monk floats cross-legged above a monastery courtyard, books drifting calmly around him in the morning light. No readable text or logo.",
-        "At a family picnic the blanket, plates and dog float calmly a meter above the grass. No readable text or logo.",
-        "The stones of a ruined abbey float calmly apart in the air while sheep graze beneath them. No readable text or logo.",
+        'A monk floats cross-legged above a monastery courtyard, books drifting calmly around him in the morning light. No readable text or logo.',
+        'At a family picnic the blanket, plates and dog float calmly a meter above the grass. No readable text or logo.',
+        'The stones of a ruined abbey float calmly apart in the air while sheep graze beneath them. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

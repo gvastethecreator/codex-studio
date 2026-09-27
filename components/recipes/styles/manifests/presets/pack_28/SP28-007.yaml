@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down workbench product view, framed the way Garage Kit Resin composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with hobbyist craft focus.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Japanese garage kit look: grey unpainted resin cast parts, sculptor-made fan kits with runner stubs, crisp surface detail and partial assembly on a workbench. Carry it through Garage kit grey resin, loose parts, workbench. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Japanese garage kit look: grey unpainted resin cast parts, sculptor-made fan kits with runner stubs, crisp surface detail and partial assembly on a workbench. Carry it through Garage kit grey resin, loose parts, workbench. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Garage kit grey resin; loose parts; workbench
 avoidRules:
   - existing franchise characters

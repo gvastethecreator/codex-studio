@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s gangsters and detectives in fedoras. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Amber smoke, mahogany and deep green, true to the Mafia 2020 palette.
-  lighting_and_shadow: "Smoky amber speakeasy light with warm lamps, lit the way Mafia 2020 lights its levels."
-  texture_and_material: "Polished wood, glass and wool suits, sharp and clean."
+  lighting_and_shadow: 'Smoky amber speakeasy light with warm lamps, lit the way Mafia 2020 lights its levels.'
+  texture_and_material: 'Polished wood, glass and wool suits, sharp and clean.'
   camera_and_composition: Third-person cover view, framed the way Mafia 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with smoky gangland tension.
-  rendering_and_quality: "A 2020 frame at 1920 by 1080 in third person: gangster in a speakeasy, a small minimap shape bottom left."
-  creative_brief: 'Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting. Carry it through Mafia prohibition, speakeasy, amber noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 frame at 1920 by 1080 in third person: gangster in a speakeasy, a small minimap shape bottom left.'
+  creative_brief: "Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting. Carry it through Mafia prohibition, speakeasy, amber noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mafia prohibition; speakeasy; amber noir
 avoidRules:
   - readable signs

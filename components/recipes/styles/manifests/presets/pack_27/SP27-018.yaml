@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Attic point-of-view and cozy interior shots, framed the way Black Christmas 1974 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy holiday dread.
   rendering_and_quality: Cozy seventies holiday horror frame, in the recognizable hand of Black Christmas 1974.
-  creative_brief: 'Bob Clark Black Christmas (1974) look: cozy snowy holiday house, colored Christmas lights, attic point-of-view shots and unsettling phone calls. Carry it through Black Christmas holiday lights, attic POV, snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bob Clark Black Christmas (1974) look: cozy snowy holiday house, colored Christmas lights, attic point-of-view shots and unsettling phone calls. Carry it through Black Christmas holiday lights, attic POV, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Black Christmas holiday lights; attic POV; snow
 avoidRules:
   - existing franchise characters

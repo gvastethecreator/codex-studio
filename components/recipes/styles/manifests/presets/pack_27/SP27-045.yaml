@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Long static wide takes with distant figures, framed the way Cure 1997 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet hypnotic menace.
   rendering_and_quality: Minimal nineties Japanese horror frame, in the recognizable hand of Cure 1997.
-  creative_brief: 'Kiyoshi Kurosawa Cure (1997) look: long static wide takes, empty institutional rooms, washed-out daylight, flickering fluorescents and quiet hypnotic menace. Carry it through Kurosawa long takes, empty rooms, hypnotic menace. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kiyoshi Kurosawa Cure (1997) look: long static wide takes, empty institutional rooms, washed-out daylight, flickering fluorescents and quiet hypnotic menace. Carry it through Kurosawa long takes, empty rooms, hypnotic menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kurosawa long takes; empty rooms; hypnotic menace
 avoidRules:
   - existing franchise characters

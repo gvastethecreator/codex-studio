@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide elegant frames of curved corridors, framed the way Ikarie XB-1 1963 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with humanist cosmic modernism.
   rendering_and_quality: Authentic sixties Czech science fiction frame, in the recognizable hand of Ikarie XB-1 1963.
-  creative_brief: 'Jindřich Polák Ikarie XB-1 (1963) look: Czechoslovak black-and-white spaceship modernism, sleek curved white interiors, dance parties among the stars and humanist crew drama. Carry it through Ikarie modernism, curved white interiors, crew dance. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jindřich Polák Ikarie XB-1 (1963) look: Czechoslovak black-and-white spaceship modernism, sleek curved white interiors, dance parties among the stars and humanist crew drama. Carry it through Ikarie modernism, curved white interiors, crew dance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ikarie modernism; curved white interiors; crew dance
 avoidRules:
   - existing franchise characters

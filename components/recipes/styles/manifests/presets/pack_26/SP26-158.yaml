@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low-angle monumental panels of massive figures, framed the way Richard Corben composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grotesque lurid wonder.
   rendering_and_quality: Faithful Corben airbrushed comic art, in the recognizable hand of Richard Corben.
-  creative_brief: 'Richard Corben page look of the 1970s to 1990s: airbrushed volumetric color, bulbous muscular figures, grotesque monsters, glowing sci-fi fantasy wastelands and heavy-metal sensuality. Carry it through Corben airbrushed volume, bulbous grotesque. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Richard Corben page look of the 1970s to 1990s: airbrushed volumetric color, bulbous muscular figures, grotesque monsters, glowing sci-fi fantasy wastelands and heavy-metal sensuality. Carry it through Corben airbrushed volume, bulbous grotesque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Corben airbrushed volume; bulbous grotesque
 avoidRules:
   - a bald muscular hero with a loincloth riding a giant rat

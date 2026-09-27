@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tall vertical silhouette against sky, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dignified agricultural celebration.
   rendering_and_quality: Elegant sculptural carving, kept consistent across the whole image.
-  creative_brief: 'Ci wara antelope carving: Bamana carved wooden headdresses of stylized antelopes with openwork manes and tall horns, honoring the farming spirit. Carry it through antelope headdress, openwork mane, tall horns, carved wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ci wara antelope carving: Bamana carved wooden headdresses of stylized antelopes with openwork manes and tall horns, honoring the farming spirit. Carry it through antelope headdress, openwork mane, tall horns, carved wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: antelope headdress; openwork mane; tall horns; carved wood
 avoidRules:
   - generic tribal pattern

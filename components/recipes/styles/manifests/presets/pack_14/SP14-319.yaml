@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tiered altar in frontal view, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tender luminous remembrance.
   rendering_and_quality: Warm painterly still life, kept consistent across the whole image.
-  creative_brief: 'Marigold ofrenda still life: glowing altars of marigolds, candles, copal smoke, sugar skulls and photographs arranged in tiers, painted with warm reverence. Carry it through altar tiers, marigolds, candles, copal smoke. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Marigold ofrenda still life: glowing altars of marigolds, candles, copal smoke, sugar skulls and photographs arranged in tiers, painted with warm reverence. Carry it through altar tiers, marigolds, candles, copal smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: altar tiers; marigolds; candles; copal smoke
 avoidRules:
   - readable glyphs

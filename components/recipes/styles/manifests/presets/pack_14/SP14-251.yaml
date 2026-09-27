@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Rectangular flag composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with bold proverbial boasting.
   rendering_and_quality: Clear graphic appliqué, kept consistent across the whole image.
-  creative_brief: 'Asafo appliqué flag: Fante military company flags with bold cloth appliqué figures illustrating proverbs, animals and challenges in bright colors. Carry it through appliqué flag, bold figures, proverbs, fringe. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Asafo appliqué flag: Fante military company flags with bold cloth appliqué figures illustrating proverbs, animals and challenges in bright colors. Carry it through appliqué flag, bold figures, proverbs, fringe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: appliqué flag; bold figures; proverbs; fringe
 avoidRules:
   - generic tribal pattern

@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as dieselpunk airships and analog instruments. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: CRT green, desert tan and brass, true to the HighFleet 2021 palette.
-  lighting_and_shadow: "Green radar glow and hot desert sun through cockpit glass."
-  texture_and_material: "Analog dials, CRT scanlines on a round radar screen and riveted steel."
+  lighting_and_shadow: 'Green radar glow and hot desert sun through cockpit glass.'
+  texture_and_material: 'Analog dials, CRT scanlines on a round radar screen and riveted steel.'
   camera_and_composition: Side-view battle or radar screen view, framed the way HighFleet 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cold strategic dread.
-  rendering_and_quality: "A 2021 frame at 1920 by 1080: a bridge console with a round radar screen, dials and airships outside."
+  rendering_and_quality: 'A 2021 frame at 1920 by 1080: a bridge console with a round radar screen, dials and airships outside.'
   key_features: HighFleet airships; analog radar; dieselpunk
-  creative_brief: 'Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension. Carry it through HighFleet airships, analog radar, dieselpunk. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension. Carry it through HighFleet airships, analog radar, dieselpunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

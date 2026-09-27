@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low looming angles and cozy interiors, framed the way Misery 1990 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy claustrophobic menace.
   rendering_and_quality: Tense nineties captivity thriller frame, in the recognizable hand of Misery 1990.
-  creative_brief: 'Rob Reiner Misery (1990) look: snowbound isolated farmhouse, cozy country kitsch, low-angle looming caretaker and claustrophobic captivity. Carry it through Misery snowbound farmhouse, country kitsch, looming menace. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Rob Reiner Misery (1990) look: snowbound isolated farmhouse, cozy country kitsch, low-angle looming caretaker and claustrophobic captivity. Carry it through Misery snowbound farmhouse, country kitsch, looming menace. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Misery snowbound farmhouse; country kitsch; looming menace
 avoidRules:
   - a sledgehammer beside a bed

@@ -22,16 +22,16 @@ tags:
   - dkc
   - reference-title
 visualDna:
-  aesthetic: "Rare Donkey Kong Country (1994) SNES look: shiny 3D-looking characters turned into glossy pixel sprites, layered dark jungles, mine carts and banded color."
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a glossy rubbery 3D-looking character flattened into pixel sprites running across lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open."
+  aesthetic: 'Rare Donkey Kong Country (1994) SNES look: shiny 3D-looking characters turned into glossy pixel sprites, layered dark jungles, mine carts and banded color.'
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a glossy rubbery 3D-looking character flattened into pixel sprites running across lush jungle stages. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Jungle green, banana yellow and sunset orange, true to the Donkey Kong Country 1994 palette.
-  lighting_and_shadow: "Shiny rounded highlights frozen into the sprites and soft hazy depth in the layered jungle."
-  texture_and_material: "Sprites that look like shiny plastic toy renders squeezed into a limited pixel palette, with slight grainy banding."
+  lighting_and_shadow: 'Shiny rounded highlights frozen into the sprites and soft hazy depth in the layered jungle.'
+  texture_and_material: 'Sprites that look like shiny plastic toy renders squeezed into a limited pixel palette, with slight grainy banding.'
   camera_and_composition: Side-scrolling jungle platform view, framed the way Donkey Kong Country 1994 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lush jungle adventure.
-  rendering_and_quality: "A 1994 Super Nintendo frame at 256 by 224: 3D-looking characters but clearly made of flat pixels, dark jungle layers behind."
+  rendering_and_quality: 'A 1994 Super Nintendo frame at 256 by 224: 3D-looking characters but clearly made of flat pixels, dark jungle layers behind.'
   creative_brief: "Rare Donkey Kong Country (1994) SNES look: shiny 3D-looking characters turned into glossy pixel sprites, layered dark jungles, mine carts and banded color. Carry it through DKC shiny toy-like sprites, layered jungle, mine carts, banded color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "DKC shiny toy-like sprites; layered jungle; mine carts; banded color"
+  key_features: 'DKC shiny toy-like sprites; layered jungle; mine carts; banded color'
 avoidRules:
   - a gorilla with a red tie
   - a monkey with a red cap

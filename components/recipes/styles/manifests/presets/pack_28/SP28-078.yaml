@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal playful product view, framed the way Memphis Group Object composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with irreverent postmodern fun.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Memphis Group object language by Ettore Sottsass: playful postmodern products with clashing laminates, squiggle patterns, bold primary shapes and irreverent stacking. Carry it through Memphis object, laminates, squiggles, stacked shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Memphis Group object language by Ettore Sottsass: playful postmodern products with clashing laminates, squiggle patterns, bold primary shapes and irreverent stacking. Carry it through Memphis object, laminates, squiggles, stacked shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Memphis object; laminates; squiggles; stacked shapes
 avoidRules:
   - existing franchise characters

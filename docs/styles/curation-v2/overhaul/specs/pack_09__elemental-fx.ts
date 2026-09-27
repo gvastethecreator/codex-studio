@@ -61,9 +61,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a cobbled alley thick translucent lime ooze rises up through an iron sewer grate, stretching in long strands toward a curious rat. No readable text or logo.",
-        "In a dark ballroom a crystal chandelier drips thick violet ooze from every arm, strands stretching down toward the dance floor. No readable text or logo.",
-        "A gloved hand lifts the lid of an old sea chest and pulls glistening green strands from the coins inside. No readable text or logo.",
+        'In a cobbled alley thick translucent lime ooze rises up through an iron sewer grate, stretching in long strands toward a curious rat. No readable text or logo.',
+        'In a dark ballroom a crystal chandelier drips thick violet ooze from every arm, strands stretching down toward the dance floor. No readable text or logo.',
+        'A gloved hand lifts the lid of an old sea chest and pulls glistening green strands from the coins inside. No readable text or logo.',
       ],
     },
     'SP09-051': {
@@ -78,9 +78,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Held aloft in a dark hall, a sword blade splits with glowing molten cracks while flames lick along its edge. No readable text or logo.",
-        "In a quarry rests a stone fist the size of a boulder, orange molten veins running through its cracks. No readable text or logo.",
-        "On a volcanic slope a huge egg glows through fissures of molten light, pulsing in a nest of grey ash. No readable text or logo.",
+        'Held aloft in a dark hall, a sword blade splits with glowing molten cracks while flames lick along its edge. No readable text or logo.',
+        'In a quarry rests a stone fist the size of a boulder, orange molten veins running through its cracks. No readable text or logo.',
+        'On a volcanic slope a huge egg glows through fissures of molten light, pulsing in a nest of grey ash. No readable text or logo.',
       ],
     },
     'SP09-052': {
@@ -96,8 +96,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "In a dark forge an anvil crackles with branching blue arcs that crawl over the horn and jump to the blacksmith's hammer. No readable text or logo.",
-        "On a dark concert stage bright arcs jump between the strings of a cello and crawl down its endpin. No readable text or logo.",
-        "Perched on a wet iron fence, a raven lets fine blue sparks crawl across its feathers and leap to the railing tips. No readable text or logo.",
+        'On a dark concert stage bright arcs jump between the strings of a cello and crawl down its endpin. No readable text or logo.',
+        'Perched on a wet iron fence, a raven lets fine blue sparks crawl across its feathers and leap to the railing tips. No readable text or logo.',
       ],
     },
     'SP09-053': {
@@ -112,9 +112,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Crossing a sunlit monastery courtyard, a hooded figure trails soft curling grey plumes that coil around the pillars behind him. No readable text or logo.",
+        'Crossing a sunlit monastery courtyard, a hooded figure trails soft curling grey plumes that coil around the pillars behind him. No readable text or logo.',
         "On a kitchen table a porcelain teapot pours a slow stream of white vapor instead of tea, curling over the cup's rim. No readable text or logo.",
-        "Lying open on black velvet, an antique pocket watch is wrapped in slow grey ribbons rising from its gears. No readable text or logo.",
+        'Lying open on black velvet, an antique pocket watch is wrapped in slow grey ribbons rising from its gears. No readable text or logo.',
       ],
     },
     'SP09-054': {
@@ -129,9 +129,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A heavy war hammer strikes a still pond and a frozen crown of water rises around its head, droplets hanging in the air. No readable text or logo.",
-        "Dropped into a bowl of milk, a ripe strawberry throws up a perfect white crown frozen around it. No readable text or logo.",
-        "A galloping hoof hits a muddy puddle on a country lane, a burst of brown water frozen mid-air in sunlight. No readable text or logo.",
+        'A heavy war hammer strikes a still pond and a frozen crown of water rises around its head, droplets hanging in the air. No readable text or logo.',
+        'Dropped into a bowl of milk, a ripe strawberry throws up a perfect white crown frozen around it. No readable text or logo.',
+        'A galloping hoof hits a muddy puddle on a country lane, a burst of brown water frozen mid-air in sunlight. No readable text or logo.',
       ],
     },
     'SP09-056': {
@@ -146,9 +146,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark temple a monk holds a small orb of gold energy between his palms, the light carving his face out of shadow. No readable text or logo.",
-        "In a dark cave a wooden staff tip glows with a sphere of cyan filaments reaching toward the damp walls. No readable text or logo.",
-        "On a kitchen shelf an old valve radio leaks magenta energy from its speaker grille, glowing filaments curling toward the kettle. No readable text or logo.",
+        'In a dark temple a monk holds a small orb of gold energy between his palms, the light carving his face out of shadow. No readable text or logo.',
+        'In a dark cave a wooden staff tip glows with a sphere of cyan filaments reaching toward the damp walls. No readable text or logo.',
+        'On a kitchen shelf an old valve radio leaks magenta energy from its speaker grille, glowing filaments curling toward the kettle. No readable text or logo.',
       ],
     },
     'SP09-057': {
@@ -163,9 +163,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A yellow rubber duck floats on black harbor water ringed by swirling iridescent film in bands of magenta and green. No readable text or logo.",
-        "Moored in a still dock basin, a small rowboat sits in a slick of rainbow swirls reflecting its hull. No readable text or logo.",
-        "A white swan glides through a dark city canal at dusk as swirling rainbow film parts around its breast and closes again behind its tail. No readable text or logo.",
+        'A yellow rubber duck floats on black harbor water ringed by swirling iridescent film in bands of magenta and green. No readable text or logo.',
+        'Moored in a still dock basin, a small rowboat sits in a slick of rainbow swirls reflecting its hull. No readable text or logo.',
+        'A white swan glides through a dark city canal at dusk as swirling rainbow film parts around its breast and closes again behind its tail. No readable text or logo.',
       ],
     },
     'SP09-058': {
@@ -180,9 +180,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark smithy a sword pressed to a grinding wheel throws a fan of bright streaks across the floor. No readable text or logo.",
-        "In a shipyard at night a worker cuts through a giant anchor chain as long orange streaks spray past his visor. No readable text or logo.",
-        "In a dark cave flint strikes steel and a burst of hot streaks falls onto dry tinder, reflected in a pool. No readable text or logo.",
+        'In a dark smithy a sword pressed to a grinding wheel throws a fan of bright streaks across the floor. No readable text or logo.',
+        'In a shipyard at night a worker cuts through a giant anchor chain as long orange streaks spray past his visor. No readable text or logo.',
+        'In a dark cave flint strikes steel and a burst of hot streaks falls onto dry tinder, reflected in a pool. No readable text or logo.',
       ],
     },
     'SP09-059': {
@@ -197,9 +197,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In an old barber shop an elderly barber shaves a customer surrounded by drifting iridescent bubbles. No readable text or logo.",
-        "In a town square a stone whale fountain exhales iridescent bubbles instead of water while adults in business suits chase them. No readable text or logo.",
-        "On an old bicycle, bubbles cling to the chrome bell and handlebar while a few float free in warm evening light. No readable text or logo.",
+        'In an old barber shop an elderly barber shaves a customer surrounded by drifting iridescent bubbles. No readable text or logo.',
+        'In a town square a stone whale fountain exhales iridescent bubbles instead of water while adults in business suits chase them. No readable text or logo.',
+        'On an old bicycle, bubbles cling to the chrome bell and handlebar while a few float free in warm evening light. No readable text or logo.',
       ],
     },
     'SP09-061': {
@@ -214,8 +214,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a stone floor an iron cauldron spills heavy white vapor over its rim, pouring down and spreading in low waves. No readable text or logo.",
-        "In a crypt dense white vapor pours from under a coffin lid and flows down the steps of the dais. No readable text or logo.",
+        'On a stone floor an iron cauldron spills heavy white vapor over its rim, pouring down and spreading in low waves. No readable text or logo.',
+        'In a crypt dense white vapor pours from under a coffin lid and flows down the steps of the dais. No readable text or logo.',
         "At a wedding, heavy white vapor flows around the dancing couple's ankles and spills off the edge of the floor. No readable text or logo.",
       ],
     },
@@ -231,8 +231,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A stern tax clerk sits perfectly still at a cluttered desk as a burst of colorful paper bits rains down on him. No readable text or logo.",
-        "At a banquet table a skeleton in a paper party hat sits in a colorful shower, streamers hanging from its ribs. No readable text or logo.",
+        'A stern tax clerk sits perfectly still at a cluttered desk as a burst of colorful paper bits rains down on him. No readable text or logo.',
+        'At a banquet table a skeleton in a paper party hat sits in a colorful shower, streamers hanging from its ribs. No readable text or logo.',
         "A pirate ship's cannon fires a huge burst of colorful paper across the deck as the crew ducks. No readable text or logo.",
       ],
     },
@@ -248,9 +248,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A red fox stands in a birch forest dusted with fine powder, flakes caught in its whiskers as more drifts from the branches. No readable text or logo.",
-        "In a winter orchard a wooden beehive is dusted in fine white powder, a single bee peering out of the entrance. No readable text or logo.",
-        "Left in a courtyard, an upright piano gathers fine drifting powder across its lid, footprints leading up to the bench. No readable text or logo.",
+        'A red fox stands in a birch forest dusted with fine powder, flakes caught in its whiskers as more drifts from the branches. No readable text or logo.',
+        'In a winter orchard a wooden beehive is dusted in fine white powder, a single bee peering out of the entrance. No readable text or logo.',
+        'Left in a courtyard, an upright piano gathers fine drifting powder across its lid, footprints leading up to the bench. No readable text or logo.',
       ],
     },
   },
@@ -270,9 +270,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark study a blank parchment scroll unrolls on a desk as glowing embers rise from its edges toward the ceiling. No readable text or logo.",
-        "In a fireplace grate a half-burnt letter lifts glowing embers from its curled edges up the chimney. No readable text or logo.",
-        "Held in an open palm, a long red feather sheds glowing embers that drift upward into a night garden. No readable text or logo.",
+        'In a dark study a blank parchment scroll unrolls on a desk as glowing embers rise from its edges toward the ceiling. No readable text or logo.',
+        'In a fireplace grate a half-burnt letter lifts glowing embers from its curled edges up the chimney. No readable text or logo.',
+        'Held in an open palm, a long red feather sheds glowing embers that drift upward into a night garden. No readable text or logo.',
       ],
     },
     {
@@ -290,9 +290,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Sinking in clear water, a rusted anchor releases billowing clouds of black ink that bloom behind it. No readable text or logo.",
-        "A split pomegranate sinks slowly through clear water in a glass tank, trailing curling clouds of crimson that billow like smoke behind it. No readable text or logo.",
-        "Submerged in a tall glass of water, a feather quill releases indigo clouds that billow upward in slow tendrils against a white backdrop. No readable text or logo.",
+        'Sinking in clear water, a rusted anchor releases billowing clouds of black ink that bloom behind it. No readable text or logo.',
+        'A split pomegranate sinks slowly through clear water in a glass tank, trailing curling clouds of crimson that billow like smoke behind it. No readable text or logo.',
+        'Submerged in a tall glass of water, a feather quill releases indigo clouds that billow upward in slow tendrils against a white backdrop. No readable text or logo.',
       ],
     },
     {
@@ -310,9 +310,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Sleeping in deep snow under a spruce, a grey wolf is wrapped in shimmering green light ribbons that curl around its body. No readable text or logo.",
-        "On the tundra a lone traveler sleeps in a tent while violet and green light ribbons wrap the canvas and spill across the snow. No readable text or logo.",
-        "On a frozen jetty an iron lantern emits shimmering green ribbons that coil upward into the dark sky. No readable text or logo.",
+        'Sleeping in deep snow under a spruce, a grey wolf is wrapped in shimmering green light ribbons that curl around its body. No readable text or logo.',
+        'On the tundra a lone traveler sleeps in a tent while violet and green light ribbons wrap the canvas and spill across the snow. No readable text or logo.',
+        'On a frozen jetty an iron lantern emits shimmering green ribbons that coil upward into the dark sky. No readable text or logo.',
       ],
     },
     {
@@ -330,9 +330,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dark table a crystal wine glass explodes into sharp ice shards, frost spreading across the wood. No readable text or logo.",
-        "In a sudden cold snap a town fountain freezes mid-spray, jagged ice crystals exploding outward from the spout as pigeons scatter. No readable text or logo.",
-        "A boot stamps on a stone floor and sharp ice shards burst outward in a ring from the impact. No readable text or logo.",
+        'On a dark table a crystal wine glass explodes into sharp ice shards, frost spreading across the wood. No readable text or logo.',
+        'In a sudden cold snap a town fountain freezes mid-spray, jagged ice crystals exploding outward from the spout as pigeons scatter. No readable text or logo.',
+        'A boot stamps on a stone floor and sharp ice shards burst outward in a ring from the impact. No readable text or logo.',
       ],
     },
     {
@@ -350,9 +350,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark forest an old mossy stump puffs clouds of glowing green spores into the night. No readable text or logo.",
-        "In a greenhouse a flower-shaped glass lantern puffs golden dust from its petals into the humid air. No readable text or logo.",
-        "In a misty meadow at dawn a young deer shakes its head and glowing spores puff from its antlers. No readable text or logo.",
+        'In a dark forest an old mossy stump puffs clouds of glowing green spores into the night. No readable text or logo.',
+        'In a greenhouse a flower-shaped glass lantern puffs golden dust from its petals into the humid air. No readable text or logo.',
+        'In a misty meadow at dawn a young deer shakes its head and glowing spores puff from its antlers. No readable text or logo.',
       ],
     },
     {
@@ -370,9 +370,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a sunny library an open book on a table releases black smoky tendrils that reach across the floorboards. No readable text or logo.",
-        "Under a guest bed in a moonlit room, a teddy bear lies half hidden while black smoky tendrils reach out from beneath the blanket. No readable text or logo.",
-        "In a hallway black tendrils creep out of an antique mirror and curl over the gilded frame onto the wallpaper. No readable text or logo.",
+        'In a sunny library an open book on a table releases black smoky tendrils that reach across the floorboards. No readable text or logo.',
+        'Under a guest bed in a moonlit room, a teddy bear lies half hidden while black smoky tendrils reach out from beneath the blanket. No readable text or logo.',
+        'In a hallway black tendrils creep out of an antique mirror and curl over the gilded frame onto the wallpaper. No readable text or logo.',
       ],
     },
     {
@@ -390,9 +390,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A seated scribe carved in stone is wrapped in a tight spiral of blowing sand streaming around its shoulders. No readable text or logo.",
+        'A seated scribe carved in stone is wrapped in a tight spiral of blowing sand streaming around its shoulders. No readable text or logo.',
         "On a dune a nomad's brass lamp burns steadily at the calm center of a tight swirl of sand. No readable text or logo.",
-        "On cracked ground a bleached camel skull sits inside a tight spiral of sand glowing in low desert light. No readable text or logo.",
+        'On cracked ground a bleached camel skull sits inside a tight spiral of sand glowing in low desert light. No readable text or logo.',
       ],
     },
     {
@@ -410,9 +410,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a wooden stand a lacquered helmet is circled by a spiraling swirl of pink cherry blossoms. No readable text or logo.",
-        "In a white hall a fencer lunges through a spiral of crimson rose petals that split around the blade. No readable text or logo.",
-        "In a meadow a white horse stands at the center of a spiraling storm of pale blossoms. No readable text or logo.",
+        'On a wooden stand a lacquered helmet is circled by a spiraling swirl of pink cherry blossoms. No readable text or logo.',
+        'In a white hall a fencer lunges through a spiral of crimson rose petals that split around the blade. No readable text or logo.',
+        'In a meadow a white horse stands at the center of a spiraling storm of pale blossoms. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered 1899 outlaws in hats and long coats. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sunset copper, canyon red and dust, true to the Red Dead Redemption 2 2018 palette.
-  lighting_and_shadow: "Natural sunset light with dust glowing in the air."
-  texture_and_material: "Photoreal leather, steel, wood and dust, with sharp detail and slight softness in motion."
+  lighting_and_shadow: 'Natural sunset light with dust glowing in the air.'
+  texture_and_material: 'Photoreal leather, steel, wood and dust, with sharp detail and slight softness in motion.'
   camera_and_composition: Third-person action view, framed the way Red Dead Redemption 2 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty outlaw daring.
-  rendering_and_quality: "A 2018 frame at 3840 by 2160 in third person: outlaw on a moving train, a small round minimap bottom left."
+  rendering_and_quality: 'A 2018 frame at 3840 by 2160 in third person: outlaw on a moving train, a small round minimap bottom left.'
   key_features: RDR2 train heist; outlaws; canyon sunset
-  creative_brief: 'Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action. Carry it through RDR2 train heist, outlaws, canyon sunset. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action. Carry it through RDR2 train heist, outlaws, canyon sunset. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a bearded outlaw in a flat-brimmed hat and satchel
   - watermark

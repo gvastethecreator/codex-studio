@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Clean three-quarter product view, framed the way Medical Device Clean composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with calm clinical trust.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Medical device product language: hygienic white and pale blue shells, soft radii, touch-screen panels, antimicrobial surfaces and calm clinical trust. Carry it through Medical device, hygienic white, pale blue, soft radii. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Medical device product language: hygienic white and pale blue shells, soft radii, touch-screen panels, antimicrobial surfaces and calm clinical trust. Carry it through Medical device, hygienic white, pale blue, soft radii. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Medical device; hygienic white; pale blue; soft radii
 avoidRules:
   - existing franchise characters

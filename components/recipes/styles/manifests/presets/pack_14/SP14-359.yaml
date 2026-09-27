@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vertical panels of a storytelling scroll, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vivid moral storytelling.
   rendering_and_quality: Bold narrative folk painting, kept consistent across the whole image.
-  creative_brief: 'Yama pata scroll painting: Bengali patachitra narrative scrolls with bold outlines and bright colors showing the lord of death on his buffalo and the fates of souls. Carry it through narrative scroll, lord of death, buffalo, bright panels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yama pata scroll painting: Bengali patachitra narrative scrolls with bold outlines and bright colors showing the lord of death on his buffalo and the fates of souls. Carry it through narrative scroll, lord of death, buffalo, bright panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: narrative scroll; lord of death; buffalo; bright panels
 avoidRules:
   - cultural stereotypes or caricature

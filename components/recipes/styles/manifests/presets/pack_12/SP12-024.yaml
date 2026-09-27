@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as dirty bruised explorers in practical survival gear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Torch amber, wet stone grey and jungle green.
-  lighting_and_shadow: "Torch glow in dusty tomb darkness, warm on faces and black beyond."
-  texture_and_material: "Mud, wet stone, rope and dust, slightly soft console-game detail."
+  lighting_and_shadow: 'Torch glow in dusty tomb darkness, warm on faces and black beyond.'
+  texture_and_material: 'Mud, wet stone, rope and dust, slightly soft console-game detail.'
   camera_and_composition: Third-person cinematic chase view, framed the way Tomb Raider 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty perilous survival.
-  rendering_and_quality: "A 2013 frame at 1920 by 1080 in third person: explorer squeezing past traps in a tomb, no interface except a small ammo shape."
+  rendering_and_quality: 'A 2013 frame at 1920 by 1080 in third person: explorer squeezing past traps in a tomb, no interface except a small ammo shape.'
   key_features: Tomb Raider 2013 traps; tombs; gritty survival
-  creative_brief: 'Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces. Carry it through Tomb Raider 2013 traps, tombs, gritty survival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces. Carry it through Tomb Raider 2013 traps, tombs, gritty survival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a brunette explorer with a ponytail and climbing axes
   - watermark

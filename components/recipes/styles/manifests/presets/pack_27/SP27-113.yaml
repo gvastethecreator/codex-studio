@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a stark flat-shaded angular figure in blown-out white and heavy black. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Blown-out white, heavy black and blood red, true to the Killer7 2005 palette.
-  lighting_and_shadow: "Harsh blown-out white light with shadows as solid black shapes and nothing in between."
-  texture_and_material: "Every surface a flat solid color with no gradient or texture, angular shapes with sharp edges."
+  lighting_and_shadow: 'Harsh blown-out white light with shadows as solid black shapes and nothing in between.'
+  texture_and_material: 'Every surface a flat solid color with no gradient or texture, angular shapes with sharp edges.'
   camera_and_composition: Low dramatic angles along rail paths, framed the way Killer7 2005 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cold surreal noir.
-  rendering_and_quality: "A 2005 GameCube frame at 640 by 480: stark flat blocks of color, jagged edges and heavy film grain."
-  creative_brief: 'Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir. Carry it through Killer7 flat shading, blown-out whites, stark noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2005 GameCube frame at 640 by 480: stark flat blocks of color, jagged edges and heavy film grain.'
+  creative_brief: "Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir. Carry it through Killer7 flat shading, blown-out whites, stark noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Killer7 flat shading; blown-out whites; stark noir
 avoidRules:
   - existing assassin personas

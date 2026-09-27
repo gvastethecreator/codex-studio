@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Procedural medium shots and deep tunnel perspectives, framed the way Them 1954 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with tense atomic procedural.
   rendering_and_quality: Authentic fifties atomic creature feature frame, in the recognizable hand of Them 1954.
-  creative_brief: 'Gordon Douglas Them! (1954) look: black-and-white atomic-age noir with documentary police procedure, New Mexico sandstorms, storm drains, flamethrowers and giant creatures glimpsed in shadow. Carry it through Them atomic noir, storm drains, flashlights, sandstorm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gordon Douglas Them! (1954) look: black-and-white atomic-age noir with documentary police procedure, New Mexico sandstorms, storm drains, flamethrowers and giant creatures glimpsed in shadow. Carry it through Them atomic noir, storm drains, flashlights, sandstorm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Them atomic noir; storm drains; flashlights; sandstorm
 avoidRules:
   - giant ants

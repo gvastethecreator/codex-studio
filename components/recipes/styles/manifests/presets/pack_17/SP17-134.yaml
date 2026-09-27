@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close three-quarter view of the diorama base, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with meticulous hobby grimness.
   rendering_and_quality: Convincing physical miniature terrain, kept consistent across the whole image.
-  creative_brief: 'Grimdark terrain diorama: a hand-built tabletop terrain piece of ruined chapels, barbed wire, skull piles and mud, painted and weathered like a hobby showpiece. Carry it through terrain diorama, drybrush weathering, ruined chapel, hobby base. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Grimdark terrain diorama: a hand-built tabletop terrain piece of ruined chapels, barbed wire, skull piles and mud, painted and weathered like a hobby showpiece. Carry it through terrain diorama, drybrush weathering, ruined chapel, hobby base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: terrain diorama; drybrush weathering; ruined chapel; hobby base
 avoidRules:
   - interface text, menus or health bars

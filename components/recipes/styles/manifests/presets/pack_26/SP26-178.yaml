@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Close-ups that morph from one form to another.
   atmosphere_and_mood: Keep the requested mood with grotesque deadpan absurdity.
   rendering_and_quality: Faithful colored-pencil animation frame, in the recognizable hand of Bill Plympton.
-  creative_brief: 'Bill Plympton animation look of the 1980s to 2010s: every frame drawn in colored pencil, grotesque surreal body morphs, faces stretching and folding, deadpan violent gags and jittery hand-drawn boil. Carry it through Plympton colored pencil, surreal body morphs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bill Plympton animation look of the 1980s to 2010s: every frame drawn in colored pencil, grotesque surreal body morphs, faces stretching and folding, deadpan violent gags and jittery hand-drawn boil. Carry it through Plympton colored pencil, surreal body morphs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Plympton colored pencil; surreal body morphs
 avoidRules:
   - existing franchise characters

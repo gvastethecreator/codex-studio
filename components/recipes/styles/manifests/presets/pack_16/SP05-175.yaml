@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with ritual theatrical symbolism.
   rendering_and_quality: Stylized late-1990s J.C.Staff television frame with theatrical rose symbolism.
   key_features: Ikuhara ritual; Chiho Saito designs; roses; surreal arenas; princely uniforms
-  creative_brief: 'Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels. Carry it through Ikuhara ritual, Chiho Saito designs, roses, surreal arenas, princely uniforms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kunihiko Ikuhara and Chiho Saito look of Revolutionary Girl Utena (1997): elegant shojo designs, princely uniforms, rose motifs, surreal architecture, shadow-puppet interludes and ritual duels. Carry it through Ikuhara ritual, Chiho Saito designs, roses, surreal arenas, princely uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a pink-haired girl in a boys uniform
   - white princely uniform with red epaulettes

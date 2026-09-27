@@ -31,9 +31,9 @@ visualDna:
   texture_and_material: Cel shading with halftone, torn paper and graphic shapes.
   camera_and_composition: Dynamic tilted angles through palace interiors, framed the way Persona 5 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with stylish rebellious heist.
-  rendering_and_quality: "A 2016 frame at 1920 by 1080: cel-shaded thieves in a palace, jagged red and black menu shapes slashing into the corners without text."
+  rendering_and_quality: 'A 2016 frame at 1920 by 1080: cel-shaded thieves in a palace, jagged red and black menu shapes slashing into the corners without text.'
   key_features: Persona 5 red and black; masked thieves; graphic flair
-  creative_brief: 'Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists. Carry it through Persona 5 red and black, masked thieves, graphic flair. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists. Carry it through Persona 5 red and black, masked thieves, graphic flair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a black-haired thief in a long black coat and white mask
   - a cat with a yellow scarf

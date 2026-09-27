@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic combination pose, framed the way Sentai Combining Robot composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with triumphant team spirit.
   rendering_and_quality: Toy-bright combining robot render, in the recognizable hand of Sentai Combining Robot.
-  creative_brief: 'Sentai combining robot language: several color-coded vehicles or animals that combine into one giant robot, visible merge seams, heroic poses and toy-bright colors. Carry it through Combining robot, color-coded parts, merge seams. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sentai combining robot language: several color-coded vehicles or animals that combine into one giant robot, visible merge seams, heroic poses and toy-bright colors. Carry it through Combining robot, color-coded parts, merge seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Combining robot; color-coded parts; merge seams
 avoidRules:
   - Power Rangers Megazord

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Shaky handheld documentary framing, framed the way The Blair Witch Project 1999 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with panicked lost dread.
   rendering_and_quality: Raw found-footage frame, in the recognizable hand of The Blair Witch Project 1999.
-  creative_brief: 'The Blair Witch Project (1999) look: shaky Hi8 video and 16mm black-and-white, night forest flashlight, stick figures in trees and panicked documentary realism. Carry it through Blair Witch Hi8, flashlight woods, stick figures. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "The Blair Witch Project (1999) look: shaky Hi8 video and 16mm black-and-white, night forest flashlight, stick figures in trees and panicked documentary realism. Carry it through Blair Witch Hi8, flashlight woods, stick figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Blair Witch Hi8; flashlight woods; stick figures
 avoidRules:
   - a person standing in a corner facing the wall

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Clean cinematic adventure panels with strong silhouettes, framed the way Alex Toth composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool economical confidence.
   rendering_and_quality: Faithful Toth economical ink page, in the recognizable hand of Alex Toth.
-  creative_brief: 'Alex Toth page look of the 1950s to 1970s: ruthless economy of line, big shapes of spotted black, confident silhouettes, aviation and adventure staging and nothing drawn that the story does not need. Carry it through Toth economy of line, spotted blacks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alex Toth page look of the 1950s to 1970s: ruthless economy of line, big shapes of spotted black, confident silhouettes, aviation and adventure staging and nothing drawn that the story does not need. Carry it through Toth economy of line, spotted blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Toth economy of line; spotted blacks
 avoidRules:
   - existing franchise characters

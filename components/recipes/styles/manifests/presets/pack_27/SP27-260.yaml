@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Sandfall Interactive Clair Obscur: Expedition 33 (2025) look: Belle Époque-inspired dark fantasy, painterly surreal landscapes, a giant painted monolith, graceful expeditioners and melancholic beauty.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as graceful Belle Époque expeditioners in painterly surreal landscapes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Painterly gold, rose and deep blue, true to the Clair Obscur Expedition 33 2025 palette.
-  lighting_and_shadow: "Soft painterly glow with surreal floating light sources."
-  texture_and_material: "Detailed painterly realism with slightly soft game-engine sharpness."
+  lighting_and_shadow: 'Soft painterly glow with surreal floating light sources.'
+  texture_and_material: 'Detailed painterly realism with slightly soft game-engine sharpness.'
   camera_and_composition: Cinematic third-person vistas, framed the way Clair Obscur Expedition 33 2025 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic surreal beauty.
-  rendering_and_quality: "A 2025 frame at 2560 by 1440: turn-based battle with a party on one side and a surreal enemy, blank command shapes."
-  creative_brief: 'Sandfall Interactive Clair Obscur: Expedition 33 (2025) look: Belle Époque-inspired dark fantasy, painterly surreal landscapes, a giant painted monolith, graceful expeditioners and melancholic beauty. Carry it through Expedition 33 Belle Époque, painterly surreal, expedition. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2025 frame at 2560 by 1440: turn-based battle with a party on one side and a surreal enemy, blank command shapes.'
+  creative_brief: "Sandfall Interactive Clair Obscur: Expedition 33 (2025) look: Belle Époque-inspired dark fantasy, painterly surreal landscapes, a giant painted monolith, graceful expeditioners and melancholic beauty. Carry it through Expedition 33 Belle Époque, painterly surreal, expedition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Expedition 33 Belle Époque; painterly surreal; expedition
 avoidRules:
   - a giant Paintress figure on a monolith

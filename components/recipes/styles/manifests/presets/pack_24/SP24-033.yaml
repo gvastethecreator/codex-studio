@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Road vanishing into darkness, barrier and booth small in the lamplight.
   atmosphere_and_mood: Tense, bored and suspicious, waiting all night for headlights.
   rendering_and_quality: Graphic ink illustration with flat color and crisp shadows.
-  creative_brief: 'Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows. Carry it through remote barrier post, single lamp, frozen road, long shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows. Carry it through remote barrier post, single lamp, frozen road, long shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: remote barrier post; single lamp; frozen road; long shadows
 avoidRules:
   - national flags

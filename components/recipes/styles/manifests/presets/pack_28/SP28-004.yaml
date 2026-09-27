@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic low product angle, framed the way XM Studios composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bold stylized energy.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'XM Studios premium statue look: bold stylized sculpting with exaggerated proportions, glossy saturated comic-like paint, dynamic diorama bases and cold-cast porcelain finish. Carry it through XM Studios stylized, cold-cast porcelain, glossy comic paint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "XM Studios premium statue look: bold stylized sculpting with exaggerated proportions, glossy saturated comic-like paint, dynamic diorama bases and cold-cast porcelain finish. Carry it through XM Studios stylized, cold-cast porcelain, glossy comic paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: XM Studios stylized; cold-cast porcelain; glossy comic paint
 avoidRules:
   - existing franchise characters

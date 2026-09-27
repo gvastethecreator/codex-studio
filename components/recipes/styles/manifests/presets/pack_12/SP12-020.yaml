@@ -27,12 +27,12 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and vessels as small painted steam locomotives and Victorian figures seen from above in a dark void. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deep void black, lantern amber, cosmic teal and brass.
   lighting_and_shadow: Lantern prow cones cutting through dark starry void.
-  texture_and_material: "Hand-painted illustrated ship and station sprites with gothic detail, floating on a dark painted void."
+  texture_and_material: 'Hand-painted illustrated ship and station sprites with gothic detail, floating on a dark painted void.'
   camera_and_composition: Top-down view of the locomotive in the void.
   atmosphere_and_mood: Keep the requested mood with gothic cosmic wanderlust.
-  rendering_and_quality: "A 2019 frame at 1920 by 1080 seen from above: a small painted locomotive-ship with a lantern cone in a starry void, small bar shapes along the edges."
+  rendering_and_quality: 'A 2019 frame at 1920 by 1080 seen from above: a small painted locomotive-ship with a lantern cone in a starry void, small bar shapes along the edges.'
   key_features: Sunless Skies void; flying locomotives; lantern prows
-  creative_brief: 'Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors. Carry it through Sunless Skies void, flying locomotives, lantern prows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors. Carry it through Sunless Skies void, flying locomotives, lantern prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

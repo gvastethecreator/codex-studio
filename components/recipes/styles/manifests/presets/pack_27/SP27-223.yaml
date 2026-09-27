@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Supergiant Games Bastion (2011) look: lush hand-painted isometric ruins that rebuild themselves as you walk, floating islands in a void, Jen Zee painting and warm narrated melancholy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject small on hand-painted isometric fragments assembling in a void. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm painted amber, teal and void blue, true to the Bastion 2011 palette.
-  lighting_and_shadow: "Soft painted sunset light with glowing edges on floating ground pieces."
-  texture_and_material: "Lush hand-painted tiles and props with visible brush marks, seen from a high diagonal angle."
+  lighting_and_shadow: 'Soft painted sunset light with glowing edges on floating ground pieces.'
+  texture_and_material: 'Lush hand-painted tiles and props with visible brush marks, seen from a high diagonal angle.'
   camera_and_composition: Isometric view over floating ground pieces, framed the way Bastion 2011 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with warm narrated melancholy.
-  rendering_and_quality: "A 2011 frame at 1280 by 720: small hero on painted ground fragments rising out of an empty sky-colored void."
-  creative_brief: 'Supergiant Games Bastion (2011) look: lush hand-painted isometric ruins that rebuild themselves as you walk, floating islands in a void, Jen Zee painting and warm narrated melancholy. Carry it through Bastion painted isometric, assembling ground, void. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2011 frame at 1280 by 720: small hero on painted ground fragments rising out of an empty sky-colored void.'
+  creative_brief: "Supergiant Games Bastion (2011) look: lush hand-painted isometric ruins that rebuild themselves as you walk, floating islands in a void, Jen Zee painting and warm narrated melancholy. Carry it through Bastion painted isometric, assembling ground, void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bastion painted isometric; assembling ground; void
 avoidRules:
   - a white-haired kid with a giant hammer

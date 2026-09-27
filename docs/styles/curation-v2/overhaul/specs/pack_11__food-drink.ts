@@ -29,9 +29,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A coiled sea serpent is etched into microfoam in a black ceramic cup, crema-brown shading along its scales. No readable text or logo.",
-        "A howling wolf sits under a foam moon in a speckled stoneware cup beside a rain-grey window. No readable text or logo.",
-        "A hooded reaper with a scythe is etched into foam in a white cup, a few crema bubbles breaking through his robe. No readable text or logo.",
+        'A coiled sea serpent is etched into microfoam in a black ceramic cup, crema-brown shading along its scales. No readable text or logo.',
+        'A howling wolf sits under a foam moon in a speckled stoneware cup beside a rain-grey window. No readable text or logo.',
+        'A hooded reaper with a scythe is etched into foam in a white cup, a few crema bubbles breaking through his robe. No readable text or logo.',
       ],
     },
     'SP11-046': {
@@ -51,9 +51,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A tiny dragon sculpted from beet and blackberry gel rests on a nest of crisp tuile flames in the middle of a vast white plate. No readable text or logo.",
-        "A miniature ruined fortress rises on a plate, charred leek towers, a parsnip gatehouse and a moat of smoked amber broth. No readable text or logo.",
-        "A black sesame mousse skull wears a cracked isomalt crown beside a single violet blackcurrant streak on a matte grey plate. No readable text or logo.",
+        'A tiny dragon sculpted from beet and blackberry gel rests on a nest of crisp tuile flames in the middle of a vast white plate. No readable text or logo.',
+        'A miniature ruined fortress rises on a plate, charred leek towers, a parsnip gatehouse and a moat of smoked amber broth. No readable text or logo.',
+        'A black sesame mousse skull wears a cracked isomalt crown beside a single violet blackcurrant streak on a matte grey plate. No readable text or logo.',
       ],
     },
     'SP11-047': {
@@ -73,9 +73,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A castle with gingerbread walls glows through sugar-glass windows, frosting snow on its towers and a licorice drawbridge lowered over a caramel moat. No readable text or logo.",
+        'A castle with gingerbread walls glows through sugar-glass windows, frosting snow on its towers and a licorice drawbridge lowered over a caramel moat. No readable text or logo.',
         "A witch's cottage stands in a dark forest of black lollipop trees, its licorice roof dripping and red sugar-glass windows glowing. No readable text or logo.",
-        "A knight in translucent hard-candy armor rides a marshmallow horse through a frosting snowfield, a striped sugar lance in hand. No readable text or logo.",
+        'A knight in translucent hard-candy armor rides a marshmallow horse through a frosting snowfield, a striped sugar lance in hand. No readable text or logo.',
       ],
     },
     'SP11-048': {
@@ -94,9 +94,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A coiled sea dragon is composed from overlapping salmon and tuna slices on dark slate, roe for eyes and nori fins. No readable text or logo.",
-        "An ornate war helmet is arranged from layered tuna and yellowtail plates with a nori crest and salmon-roe rivets. No readable text or logo.",
-        "Seven pieces of nigiri line a cedar counter at night, each slice brushed with glossy sauce and topped with a tiny edible flower. No readable text or logo.",
+        'A coiled sea dragon is composed from overlapping salmon and tuna slices on dark slate, roe for eyes and nori fins. No readable text or logo.',
+        'An ornate war helmet is arranged from layered tuna and yellowtail plates with a nori crest and salmon-roe rivets. No readable text or logo.',
+        'Seven pieces of nigiri line a cedar counter at night, each slice brushed with glossy sauce and topped with a tiny edible flower. No readable text or logo.',
       ],
     },
     'SP11-049': {
@@ -116,8 +116,8 @@ const spec: Spec = {
       avoid: FOOD_AVOID,
       briefs: [
         "A towering black-bun burger shaped like a dragon's head erupts with flame-grilled patties and cheese dripping like lava. No readable text or logo.",
-        "A helmet built from crispy fried chicken wears a plume of golden fries, crumbs exploding outward in a hero shot. No readable text or logo.",
-        "A tall black cherry milkshake grows a tiny whipped-cream ghost rising from the top, syrup dripping down the glass. No readable text or logo.",
+        'A helmet built from crispy fried chicken wears a plume of golden fries, crumbs exploding outward in a hero shot. No readable text or logo.',
+        'A tall black cherry milkshake grows a tiny whipped-cream ghost rising from the top, syrup dripping down the glass. No readable text or logo.',
       ],
     },
     'SP11-050': {
@@ -136,9 +136,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A smoking blood-red drink fills a crystal coupe, a tiny sugar dragon perched on the rim as dry-ice mist rolls over the bar. No readable text or logo.",
-        "A black ice sphere carved like a skull floats in amber whisky in a heavy crystal tumbler beaded with condensation. No readable text or logo.",
-        "A violet drink swirls like a galaxy inside a round alchemy flask, a rosemary sprig smoking at its neck. No readable text or logo.",
+        'A smoking blood-red drink fills a crystal coupe, a tiny sugar dragon perched on the rim as dry-ice mist rolls over the bar. No readable text or logo.',
+        'A black ice sphere carved like a skull floats in amber whisky in a heavy crystal tumbler beaded with condensation. No readable text or logo.',
+        'A violet drink swirls like a galaxy inside a round alchemy flask, a rosemary sprig smoking at its neck. No readable text or logo.',
       ],
     },
     'SP11-051': {
@@ -155,9 +155,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "At dawn a big braided loaf shaped like a sleeping hedgehog sits in the shop window, scored spines glossy with egg wash. No readable text or logo.",
-        "For an autumn festival of the dead the window fills with dark rye loaves scored as skulls and sugar-dusted bone breadsticks. No readable text or logo.",
-        "Behind the glass of a busy pastry case, crown-shaped brioches glazed in honey glow in rows, pearl-sugar jewels set on every golden point. No readable text or logo.",
+        'At dawn a big braided loaf shaped like a sleeping hedgehog sits in the shop window, scored spines glossy with egg wash. No readable text or logo.',
+        'For an autumn festival of the dead the window fills with dark rye loaves scored as skulls and sugar-dusted bone breadsticks. No readable text or logo.',
+        'Behind the glass of a busy pastry case, crown-shaped brioches glazed in honey glow in rows, pearl-sugar jewels set on every golden point. No readable text or logo.',
       ],
     },
     'SP11-052': {
@@ -176,9 +176,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A pomegranate bursts like a firework, red seeds and juice spraying outward in arcs frozen at a thousandth of a second. No readable text or logo.",
-        "A blood orange explodes like a fireball, crimson juice and peel shards frozen mid-air against black. No readable text or logo.",
-        "A watermelon carved into a grinning skull bursts open, pink juice and black seeds flying outward. No readable text or logo.",
+        'A pomegranate bursts like a firework, red seeds and juice spraying outward in arcs frozen at a thousandth of a second. No readable text or logo.',
+        'A blood orange explodes like a fireball, crimson juice and peel shards frozen mid-air against black. No readable text or logo.',
+        'A watermelon carved into a grinning skull bursts open, pink juice and black seeds flying outward. No readable text or logo.',
       ],
     },
     'SP11-053': {
@@ -195,9 +195,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "Thick glossy dark ribbons pour over a cocoa swan sculpture, running down its wings and neck in slow folds. No readable text or logo.",
-        "A molten river flows through a cocoa-dusted canyon as a tiny dark boat rides the glossy brown waves. No readable text or logo.",
-        "A tempered dark skull wears a crown of molten milk that drips slowly over its eye sockets onto scattered nibs. No readable text or logo.",
+        'Thick glossy dark ribbons pour over a cocoa swan sculpture, running down its wings and neck in slow folds. No readable text or logo.',
+        'A molten river flows through a cocoa-dusted canyon as a tiny dark boat rides the glossy brown waves. No readable text or logo.',
+        'A tempered dark skull wears a crown of molten milk that drips slowly over its eye sockets onto scattered nibs. No readable text or logo.',
       ],
     },
     'SP11-054': {
@@ -216,9 +216,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "Seen from above, rice shaped into a little sailor and a sleepy whale fills a lunch box, nori faces and carrot starfish around them. No readable text or logo.",
-        "A harvest-night lunch box holds rice ghosts with nori faces, seaweed bats and a pumpkin croquette carved as a lantern. No readable text or logo.",
-        "A black cat made of seaweed-tinted rice rides a sausage broom across a lunch box of vegetable clouds. No readable text or logo.",
+        'Seen from above, rice shaped into a little sailor and a sleepy whale fills a lunch box, nori faces and carrot starfish around them. No readable text or logo.',
+        'A harvest-night lunch box holds rice ghosts with nori faces, seaweed bats and a pumpkin croquette carved as a lantern. No readable text or logo.',
+        'A black cat made of seaweed-tinted rice rides a sausage broom across a lunch box of vegetable clouds. No readable text or logo.',
       ],
     },
     'SP11-055': {
@@ -237,9 +237,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A slice lifted from a sun-shaped wood-fired pie stretches long molten cheese pulls, pepperoni rays around a charred crust. No readable text or logo.",
-        "A wood-fired pie with a pepperoni lantern face and black olive bats loses one slice with a long stringy cheese pull. No readable text or logo.",
-        "Seen from above, a wood-fired pie is shaped like a castle, braided crust walls, a tomato moat and basil trees. No readable text or logo.",
+        'A slice lifted from a sun-shaped wood-fired pie stretches long molten cheese pulls, pepperoni rays around a charred crust. No readable text or logo.',
+        'A wood-fired pie with a pepperoni lantern face and black olive bats loses one slice with a long stringy cheese pull. No readable text or logo.',
+        'Seen from above, a wood-fired pie is shaped like a castle, braided crust walls, a tomato moat and basil trees. No readable text or logo.',
       ],
     },
   },
@@ -263,8 +263,8 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "In a torchlit hall a whole roast boar with an apple in its mouth anchors a table of pies, bread, grapes, cheeses and pewter goblets. No readable text or logo.",
-        "After the guests have gone a long table lies in ruin, knocked-over goblets spilling red wine beside a half-carved roast. No readable text or logo.",
+        'In a torchlit hall a whole roast boar with an apple in its mouth anchors a table of pies, bread, grapes, cheeses and pewter goblets. No readable text or logo.',
+        'After the guests have gone a long table lies in ruin, knocked-over goblets spilling red wine beside a half-carved roast. No readable text or logo.',
         "A dark king's banquet fills a black stone hall, a roast peacock with its tail fanned and blood-red wine in silver chalices. No readable text or logo.",
       ],
     },
@@ -287,9 +287,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A cook grills skewers of glazed squid over glowing charcoal as steam and smoke rise into red paper lanterns. No readable text or logo.",
-        "Under red lanterns at a crowded night stall, steaming bamboo baskets reveal dumplings pleated into little rabbit shapes, chili oil glistening beside them. No readable text or logo.",
-        "A cook tosses noodles in a wok with a huge burst of flame, noodles and vegetables flying mid-air in the smoke. No readable text or logo.",
+        'A cook grills skewers of glazed squid over glowing charcoal as steam and smoke rise into red paper lanterns. No readable text or logo.',
+        'Under red lanterns at a crowded night stall, steaming bamboo baskets reveal dumplings pleated into little rabbit shapes, chili oil glistening beside them. No readable text or logo.',
+        'A cook tosses noodles in a wok with a huge burst of flame, noodles and vegetables flying mid-air in the smoke. No readable text or logo.',
       ],
     },
     {
@@ -311,9 +311,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A green gelatin mold shaped like a castle turret holds shrimp suspended among olives and eggs under harsh flat light. No readable text or logo.",
-        "A tomato aspic molded as a fish holds peas, carrots and sliced eggs inside, a parsley ruff around its tail. No readable text or logo.",
-        "A lime gelatin ring holds shrimps and olives suspended inside, a lit taper candle standing in its center. No readable text or logo.",
+        'A green gelatin mold shaped like a castle turret holds shrimp suspended among olives and eggs under harsh flat light. No readable text or logo.',
+        'A tomato aspic molded as a fish holds peas, carrots and sliced eggs inside, a parsley ruff around its tail. No readable text or logo.',
+        'A lime gelatin ring holds shrimps and olives suspended inside, a lit taper candle standing in its center. No readable text or logo.',
       ],
     },
     {
@@ -336,8 +336,8 @@ const spec: Spec = {
       avoid: FOOD_AVOID,
       briefs: [
         "A witch's pantry shelf glows with backlit jars of pickled mushrooms, cherry preserves, honey with comb and one jar of eyeballs that are actually grapes. No readable text or logo.",
-        "On a stone cellar shelf jars of red cabbage, chili and garlic glow ruby and amber in front of a candle, bubbles rising. No readable text or logo.",
-        "On a rainy windowsill jars of candied lemons, plums and cherries glow like stained glass in grey backlight. No readable text or logo.",
+        'On a stone cellar shelf jars of red cabbage, chili and garlic glow ruby and amber in front of a candle, bubbles rising. No readable text or logo.',
+        'On a rainy windowsill jars of candied lemons, plums and cherries glow like stained glass in grey backlight. No readable text or logo.',
       ],
     },
     {
@@ -359,9 +359,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A huge board is arranged as a peacock fanning its tail around a wheel of brie, salami feathers and grape eyes. No readable text or logo.",
-        "A grazing board becomes a village and its fields, cheese-block houses, prosciutto rivers and rosemary forests. No readable text or logo.",
-        "A spread for a witch gathering holds black grapes, blue cheese, dark salami roses and charcoal crackers. No readable text or logo.",
+        'A huge board is arranged as a peacock fanning its tail around a wheel of brie, salami feathers and grape eyes. No readable text or logo.',
+        'A grazing board becomes a village and its fields, cheese-block houses, prosciutto rivers and rosemary forests. No readable text or logo.',
+        'A spread for a witch gathering holds black grapes, blue cheese, dark salami roses and charcoal crackers. No readable text or logo.',
       ],
     },
     {
@@ -381,9 +381,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A glossy black sphere the size of an ostrich egg rests on a nest of smoked foam as liquid nitrogen fog spills off the plate. No readable text or logo.",
-        "Violet spheres sit in a test-tube rack, each holding a swirl of edible glitter as nitrogen fog drifts around them. No readable text or logo.",
-        "A frozen white rose shatters as a spoon strikes it, nitrogen fog bursting out among the petals. No readable text or logo.",
+        'A glossy black sphere the size of an ostrich egg rests on a nest of smoked foam as liquid nitrogen fog spills off the plate. No readable text or logo.',
+        'Violet spheres sit in a test-tube rack, each holding a swirl of edible glitter as nitrogen fog drifts around them. No readable text or logo.',
+        'A frozen white rose shatters as a spoon strikes it, nitrogen fog bursting out among the petals. No readable text or logo.',
       ],
     },
     {
@@ -403,9 +403,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "In a stone tavern kitchen a cast-iron cauldron of stew bubbles on chains over embers beside a spit of roasting birds. No readable text or logo.",
-        "In a dark forest clearing twisted bread dough bakes on sticks over a campfire, a kettle hanging above the embers. No readable text or logo.",
-        "A cast-iron pan of sizzling eggs, sausages and wild mushrooms sits straight on glowing embers, grease spitting. No readable text or logo.",
+        'In a stone tavern kitchen a cast-iron cauldron of stew bubbles on chains over embers beside a spit of roasting birds. No readable text or logo.',
+        'In a dark forest clearing twisted bread dough bakes on sticks over a campfire, a kettle hanging above the embers. No readable text or logo.',
+        'A cast-iron pan of sizzling eggs, sausages and wild mushrooms sits straight on glowing embers, grease spitting. No readable text or logo.',
       ],
     },
     {
@@ -425,9 +425,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A rearing stallion of glossy red sugar stands on a competition table, its blown mane translucent in the spotlight. No readable text or logo.",
-        "Under competition spotlights an ornate helmet of glossy silver-blue sugar wears a towering plume of translucent pulled strands that trembles when anyone breathes. No readable text or logo.",
-        "A palace of translucent amber towers and ruby windows rises on a chocolate cliff, sugar banners flying. No readable text or logo.",
+        'A rearing stallion of glossy red sugar stands on a competition table, its blown mane translucent in the spotlight. No readable text or logo.',
+        'Under competition spotlights an ornate helmet of glossy silver-blue sugar wears a towering plume of translucent pulled strands that trembles when anyone breathes. No readable text or logo.',
+        'A palace of translucent amber towers and ruby windows rises on a chocolate cliff, sugar banners flying. No readable text or logo.',
       ],
     },
     {
@@ -447,9 +447,9 @@ const spec: Spec = {
       ),
       avoid: FOOD_AVOID,
       briefs: [
-        "A noodle octopus rises out of rich golden broth on chopsticks, soft-boiled egg eyes staring back. No readable text or logo.",
-        "Dark broth swirled with black garlic oil holds a spiral fishcake like a moon and a halved marinated egg. No readable text or logo.",
-        "At a tiny counter of a rainy-night stall, chopsticks lift noodles from a steaming bowl as rain streaks past the curtain. No readable text or logo.",
+        'A noodle octopus rises out of rich golden broth on chopsticks, soft-boiled egg eyes staring back. No readable text or logo.',
+        'Dark broth swirled with black garlic oil holds a spiral fishcake like a moon and a halved marinated egg. No readable text or logo.',
+        'At a tiny counter of a rainy-night stall, chopsticks lift noodles from a steaming bowl as rain streaks past the curtain. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

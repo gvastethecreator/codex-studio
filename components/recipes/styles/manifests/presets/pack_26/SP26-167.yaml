@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cinematic feature framing with deep painted backgrounds, framed the way Don Bluth composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dark soulful wonder.
   rendering_and_quality: Faithful eighties hand-drawn feature frame, in the recognizable hand of Don Bluth.
-  creative_brief: 'Don Bluth feature animation look of 1982 to 1989: lush dark painted backgrounds, backlit glowing effects animation, sparkling magic, soulful big-eyed animals and genuinely scary shadows. Carry it through Bluth glowing effects, dark painted backgrounds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Don Bluth feature animation look of 1982 to 1989: lush dark painted backgrounds, backlit glowing effects animation, sparkling magic, soulful big-eyed animals and genuinely scary shadows. Carry it through Bluth glowing effects, dark painted backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bluth glowing effects; dark painted backgrounds
 avoidRules:
   - a field mouse widow in a red cloak

@@ -53,8 +53,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An old leather chest on a security belt reveals a coiled chain and a dagger in dark blue, a skull and candles in soft orange organic tones. No readable text or logo.",
-        "A traveling trunk slides through the scanner showing folded armor plates in blue-black, a lute, a loaf of bread and one wrapped sword. No readable text or logo.",
+        'An old leather chest on a security belt reveals a coiled chain and a dagger in dark blue, a skull and candles in soft orange organic tones. No readable text or logo.',
+        'A traveling trunk slides through the scanner showing folded armor plates in blue-black, a lute, a loaf of bread and one wrapped sword. No readable text or logo.',
         "A witch's satchel on the airport belt reveals a cat curled asleep in orange, glass vials in green and iron keys in deep blue. No readable text or logo.",
       ],
     },
@@ -72,9 +72,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Through thick smoke in a burning hall, a rescuer carrying a wounded squire glows white while the walls stay cold grey. No readable text or logo.",
-        "A dark forest at night reveals a hulking warm beast hiding behind the trees, its breath glowing white in the cold air. No readable text or logo.",
-        "In a cold crypt one coffin lid glows faintly warm from something inside, while the skeletons around it stay black. No readable text or logo.",
+        'Through thick smoke in a burning hall, a rescuer carrying a wounded squire glows white while the walls stay cold grey. No readable text or logo.',
+        'A dark forest at night reveals a hulking warm beast hiding behind the trees, its breath glowing white in the cold air. No readable text or logo.',
+        'In a cold crypt one coffin lid glows faintly warm from something inside, while the skeletons around it stay black. No readable text or logo.',
       ],
     },
   },
@@ -95,9 +95,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A sealed iron reliquary turns almost transparent, revealing a dark mummified hand and a wax seal inside in reversed contrast. No readable text or logo.",
-        "A steel helmet on a stand fades into a pale ghost while its leather straps and padding turn dark and dense. No readable text or logo.",
-        "A locked iron treasure chest becomes faint and ghostly, water-swollen books and a wax candle standing out dark within. No readable text or logo.",
+        'A sealed iron reliquary turns almost transparent, revealing a dark mummified hand and a wax seal inside in reversed contrast. No readable text or logo.',
+        'A steel helmet on a stand fades into a pale ghost while its leather straps and padding turn dark and dense. No readable text or logo.',
+        'A locked iron treasure chest becomes faint and ghostly, water-swollen books and a wax candle standing out dark within. No readable text or logo.',
       ],
     },
     {
@@ -116,9 +116,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A hooded pilgrim stands still while the robe dissolves into soft blur, revealing a hidden dagger, a chain of keys and a flask. No readable text or logo.",
-        "A sealed envelope held up to the scanner turns nearly invisible, a silver ring glowing softly inside. No readable text or logo.",
-        "A wooden marionette case fades away to reveal bright metal hinges, a coiled spring and a hidden coin in low-resolution blur. No readable text or logo.",
+        'A hooded pilgrim stands still while the robe dissolves into soft blur, revealing a hidden dagger, a chain of keys and a flask. No readable text or logo.',
+        'A sealed envelope held up to the scanner turns nearly invisible, a silver ring glowing softly inside. No readable text or logo.',
+        'A wooden marionette case fades away to reveal bright metal hinges, a coiled spring and a hidden coin in low-resolution blur. No readable text or logo.',
       ],
     },
     {
@@ -137,9 +137,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A swordsman spins a blade in the dark and only its moving edges appear, as scattered red and blue dots on black. No readable text or logo.",
-        "Hundreds of bats burst from a cave mouth at dusk, each flapping wing edge a flicker of red and blue points. No readable text or logo.",
-        "A galloping horse and armored rider are traced in dense red and blue dots along their legs and cloak, dust kicking up as sparse specks. No readable text or logo.",
+        'A swordsman spins a blade in the dark and only its moving edges appear, as scattered red and blue dots on black. No readable text or logo.',
+        'Hundreds of bats burst from a cave mouth at dusk, each flapping wing edge a flicker of red and blue points. No readable text or logo.',
+        'A galloping horse and armored rider are traced in dense red and blue dots along their legs and cloak, dust kicking up as sparse specks. No readable text or logo.',
       ],
     },
     {
@@ -158,7 +158,7 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "The harmonics of a tolling bell and a scream form the silhouette of a screaming skull in bright magma bands across time. No readable text or logo.",
+        'The harmonics of a tolling bell and a scream form the silhouette of a screaming skull in bright magma bands across time. No readable text or logo.',
         "A beast's roar appears as a low rumble band at the bottom and rising harmonic curves spreading upward like wings. No readable text or logo.",
         "A monastery choir's evenly stacked harmonics rise and fall like the arches and spires of a cathedral. No readable text or logo.",
       ],
@@ -179,9 +179,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An old painting of a saint fades to grey under infrared, revealing sketched underdrawing of a second figure the painter hid. No readable text or logo.",
-        "A portrait of a noblewoman fades to soft grey, revealing a skull sketched in carbon beneath her smiling face. No readable text or logo.",
-        "A gentle pastoral landscape of sheep and meadows fades to grey, revealing a sketched fortress and a gallows hidden beneath the painted grass. No readable text or logo.",
+        'An old painting of a saint fades to grey under infrared, revealing sketched underdrawing of a second figure the painter hid. No readable text or logo.',
+        'A portrait of a noblewoman fades to soft grey, revealing a skull sketched in carbon beneath her smiling face. No readable text or logo.',
+        'A gentle pastoral landscape of sheep and meadows fades to grey, revealing a sketched fortress and a gallows hidden beneath the painted grass. No readable text or logo.',
       ],
     },
     {
@@ -200,9 +200,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A parchment page reveals an erased drawing of a beast devouring the sun reappearing in red beneath later brown ink. No readable text or logo.",
-        "A scraped-away drawing of a walled city returns in magenta beneath the grey of the later page. No readable text or logo.",
-        "A faint erased portrait of a crowned queen returns in red, her eyes crossing through the later marks. No readable text or logo.",
+        'A parchment page reveals an erased drawing of a beast devouring the sun reappearing in red beneath later brown ink. No readable text or logo.',
+        'A scraped-away drawing of a walled city returns in magenta beneath the grey of the later page. No readable text or logo.',
+        'A faint erased portrait of a crowned queen returns in red, her eyes crossing through the later marks. No readable text or logo.',
       ],
     },
     {
@@ -221,9 +221,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A dark stone hall shows a red sound hotspot glowing at a sealed wall where something inside is scratching. No readable text or logo.",
+        'A dark stone hall shows a red sound hotspot glowing at a sealed wall where something inside is scratching. No readable text or logo.',
         "A blacksmith's forge is overlaid with red-hot sound hotspots on the hammer and anvil and softer blue at the bellows. No readable text or logo.",
-        "An empty candlelit corridor shows a red sound hotspot hanging in mid-air at head height, where weeping comes from nowhere. No readable text or logo.",
+        'An empty candlelit corridor shows a red sound hotspot hanging in mid-air at head height, where weeping comes from nowhere. No readable text or logo.',
       ],
     },
     {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Glowing fiber streamlines trace the body and wings of a sleeping serpent, color-coded red, green and blue by direction. No readable text or logo.",
-        "A crowned human head in profile glows with fiber streamlines through the brain in red, green and blue. No readable text or logo.",
-        "A war horse in motion is rendered as muscle fiber streamlines along its neck and legs, colored by direction like silk. No readable text or logo.",
+        'Glowing fiber streamlines trace the body and wings of a sleeping serpent, color-coded red, green and blue by direction. No readable text or logo.',
+        'A crowned human head in profile glows with fiber streamlines through the brain in red, green and blue. No readable text or logo.',
+        'A war horse in motion is rendered as muscle fiber streamlines along its neck and legs, colored by direction like silk. No readable text or logo.',
       ],
     },
     {
@@ -263,9 +263,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A sword blade cross-section becomes a rainbow mosaic of flat crystal grains, the forge-folded layers visible as bands. No readable text or logo.",
-        "A cross-section of an old gold crown shows its grains as a mosaic of flat rainbow patches, a jewel socket at the edge. No readable text or logo.",
-        "A polished slice of iron meteorite reveals large interlocking crystal bands in pastel orientation colors, each grain a flat patch of its own hue. No readable text or logo.",
+        'A sword blade cross-section becomes a rainbow mosaic of flat crystal grains, the forge-folded layers visible as bands. No readable text or logo.',
+        'A cross-section of an old gold crown shows its grains as a mosaic of flat rainbow patches, a jewel socket at the edge. No readable text or logo.',
+        'A polished slice of iron meteorite reveals large interlocking crystal bands in pastel orientation colors, each grain a flat patch of its own hue. No readable text or logo.',
       ],
     },
     {
@@ -284,9 +284,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At nanoscale, molecules on a surface form a castle on a hill, rendered as a gold-brown height map at an oblique angle. No readable text or logo.",
-        "A strand of DNA coils across a surface like a serpent, its height rising in a gold-brown ramp. No readable text or logo.",
-        "A crystal surface rises in stepped terraces like a ruined amphitheater on a gold-brown height map. No readable text or logo.",
+        'At nanoscale, molecules on a surface form a castle on a hill, rendered as a gold-brown height map at an oblique angle. No readable text or logo.',
+        'A strand of DNA coils across a surface like a serpent, its height rising in a gold-brown ramp. No readable text or logo.',
+        'A crystal surface rises in stepped terraces like a ruined amphitheater on a gold-brown height map. No readable text or logo.',
       ],
     },
     {
@@ -305,9 +305,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An armored hand grips a sword hilt, dark bones visible inside a faint metal gauntlet in a grainy circular field. No readable text or logo.",
-        "A cat mid-leap shows its spine and legs dark and crisp, fur a faint haze, motion blur in the grainy circle. No readable text or logo.",
-        "A swallowed iron key sits dark and sharp inside a faint stomach outline, ribs and spine soft grey around it. No readable text or logo.",
+        'An armored hand grips a sword hilt, dark bones visible inside a faint metal gauntlet in a grainy circular field. No readable text or logo.',
+        'A cat mid-leap shows its spine and legs dark and crisp, fur a faint haze, motion blur in the grainy circle. No readable text or logo.',
+        'A swallowed iron key sits dark and sharp inside a faint stomach outline, ribs and spine soft grey around it. No readable text or logo.',
       ],
     },
     {
@@ -326,9 +326,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A vast storm swirl coils over a continent in the shape of a sea serpent, bright moist swirls against dark dry slots. No readable text or logo.",
-        "A hurricane with a clear eye spins its spiral bands in bright moisture against dark dry air. No readable text or logo.",
-        "Seen from orbit, jet stream ribbons wrap around a continent like serpents, bright moisture filaments glowing against deep dark slots of dry air. No readable text or logo.",
+        'A vast storm swirl coils over a continent in the shape of a sea serpent, bright moist swirls against dark dry slots. No readable text or logo.',
+        'A hurricane with a clear eye spins its spiral bands in bright moisture against dark dry air. No readable text or logo.',
+        'Seen from orbit, jet stream ribbons wrap around a continent like serpents, bright moisture filaments glowing against deep dark slots of dry air. No readable text or logo.',
       ],
     },
     {
@@ -347,8 +347,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A plant slice shows one molecule distributed in the shape of a crowned serpent in pixelated hot colors. No readable text or logo.",
-        "A mushroom slice glows with molecules mapped in pixelated hot colors, gills yellow and cap cool blue. No readable text or logo.",
+        'A plant slice shows one molecule distributed in the shape of a crowned serpent in pixelated hot colors. No readable text or logo.',
+        'A mushroom slice glows with molecules mapped in pixelated hot colors, gills yellow and cap cool blue. No readable text or logo.',
         "One molecule gathers along a leaf's veins in hot orange pixels, forming a tree shape on dark ground. No readable text or logo.",
       ],
     },
@@ -368,9 +368,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A lightning strike on a tower is smeared across time into a glowing green streak on black. No readable text or logo.",
-        "An explosion in a powder room is caught through a single slit and smeared into fanning green time streaks. No readable text or logo.",
-        "A laser pulse passes through a crystal, a thin bright streak splitting into colored lines across black. No readable text or logo.",
+        'A lightning strike on a tower is smeared across time into a glowing green streak on black. No readable text or logo.',
+        'An explosion in a powder room is caught through a single slit and smeared into fanning green time streaks. No readable text or logo.',
+        'A laser pulse passes through a crystal, a thin bright streak splitting into colored lines across black. No readable text or logo.',
       ],
     },
     {
@@ -389,9 +389,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A fisheye view inside a wet stone tunnel beneath a castle glints with ring light on glossy walls, a tiny lantern ahead. No readable text or logo.",
-        "A fisheye view looks down the throat of a sleeping dragon, ring light glinting on glossy red walls and ridged scales. No readable text or logo.",
-        "A fisheye view inside an old copper pipe shows green corrosion and water drops glinting in the ring light. No readable text or logo.",
+        'A fisheye view inside a wet stone tunnel beneath a castle glints with ring light on glossy walls, a tiny lantern ahead. No readable text or logo.',
+        'A fisheye view looks down the throat of a sleeping dragon, ring light glinting on glossy red walls and ridged scales. No readable text or logo.',
+        'A fisheye view inside an old copper pipe shows green corrosion and water drops glinting in the ring light. No readable text or logo.',
       ],
     },
     {
@@ -410,8 +410,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Spreading like the wings of a great bird, the twin lobes of a distant galaxy glow in blurry false-color emission wrapped in contour lines. No readable text or logo.",
-        "A pulsar and its wind nebula glow like a lighthouse beam in false-color emission and contour rings. No readable text or logo.",
+        'Spreading like the wings of a great bird, the twin lobes of a distant galaxy glow in blurry false-color emission wrapped in contour lines. No readable text or logo.',
+        'A pulsar and its wind nebula glow like a lighthouse beam in false-color emission and contour rings. No readable text or logo.',
         "A nebula's false-color emission blobs form a hooded figure bowing its head, soft contour lines around it. No readable text or logo.",
       ],
     },
@@ -432,8 +432,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "At the sun's limb a huge prominence rears up in deep red-orange like a beast about to strike. No readable text or logo.",
-        "A large sunspot with a dark umbra and fibrous penumbra stares out like an eye from red-orange granulation. No readable text or logo.",
-        "Dark filaments snake across the full red solar disk, bright plage around them and prominences flickering on the limb. No readable text or logo.",
+        'A large sunspot with a dark umbra and fibrous penumbra stares out like an eye from red-orange granulation. No readable text or logo.',
+        'Dark filaments snake across the full red solar disk, bright plage around them and prominences flickering on the limb. No readable text or logo.',
       ],
     },
     {
@@ -452,9 +452,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A circular fisheye night sky is ringed by dark pines and a stone tower at the rim, a bright fireball crossing the center. No readable text or logo.",
-        "Green and violet aurora curtains fill the fisheye circle above pine silhouettes and a stone watchtower. No readable text or logo.",
-        "A long exposure shows dozens of meteor streaks radiating from one point inside a circular horizon of mountains. No readable text or logo.",
+        'A circular fisheye night sky is ringed by dark pines and a stone tower at the rim, a bright fireball crossing the center. No readable text or logo.',
+        'Green and violet aurora curtains fill the fisheye circle above pine silhouettes and a stone watchtower. No readable text or logo.',
+        'A long exposure shows dozens of meteor streaks radiating from one point inside a circular horizon of mountains. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tall vertical gothic composition, framed the way John Blanche composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grotesque gothic decay.
   rendering_and_quality: Loose scratchy gothic sketch-painting, in the recognizable hand of John Blanche.
-  creative_brief: 'John Blanche grimdark look: scratchy loose gothic sketch-painting, spindly towering figures with elongated limbs, rust-brown and verdigris palettes, punk-baroque ornament and grotesque decay. Carry it through Blanche spindly figures, scratchy sketch-paint, rust and verdigris. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Blanche grimdark look: scratchy loose gothic sketch-painting, spindly towering figures with elongated limbs, rust-brown and verdigris palettes, punk-baroque ornament and grotesque decay. Carry it through Blanche spindly figures, scratchy sketch-paint, rust and verdigris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Blanche spindly figures; scratchy sketch-paint; rust and verdigris
 avoidRules:
   - Warhammer 40,000 insignia and Space Marines

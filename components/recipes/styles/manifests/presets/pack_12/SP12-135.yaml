@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a tiny chunky exaggerated cartoon unit. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright grass green, blue and red teams, true to the Clash Royale 2016 palette.
-  lighting_and_shadow: "Bright flat cartoon daylight with little shadow, lit the way Clash Royale 2016 lights its levels."
-  texture_and_material: "Glossy chunky cartoon shapes with huge heads and tiny bodies."
+  lighting_and_shadow: 'Bright flat cartoon daylight with little shadow, lit the way Clash Royale 2016 lights its levels.'
+  texture_and_material: 'Glossy chunky cartoon shapes with huge heads and tiny bodies.'
   camera_and_composition: Top-down arena view, framed the way Clash Royale 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheeky competitive chaos.
-  rendering_and_quality: "A 2016 phone frame, tall portrait: arena seen from above, two lanes and bridges, a row of blank cards at the bottom."
-  creative_brief: 'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units. Carry it through Clash Royale arena, chunky cartoon, lanes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2016 phone frame, tall portrait: arena seen from above, two lanes and bridges, a row of blank cards at the bottom.'
+  creative_brief: "Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units. Carry it through Clash Royale arena, chunky cartoon, lanes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Clash Royale arena; chunky cartoon; lanes
 avoidRules:
   - existing Clash units

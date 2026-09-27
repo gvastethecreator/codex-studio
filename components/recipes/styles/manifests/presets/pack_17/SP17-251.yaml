@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cozy-weird vignette, framed the way Evey Lockhart composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy creepy whimsy.
   rendering_and_quality: Charming wobbly OSR zine ink, in the recognizable hand of Evey Lockhart.
-  creative_brief: 'Evey Lockhart OSR art: wobbly charming ink line, whimsical creepy monsters, cozy-weird dungeon inhabitants and handmade zine warmth. Carry it through Lockhart wobbly ink, cozy-weird monsters, zine. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Evey Lockhart OSR art: wobbly charming ink line, whimsical creepy monsters, cozy-weird dungeon inhabitants and handmade zine warmth. Carry it through Lockhart wobbly ink, cozy-weird monsters, zine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Lockhart wobbly ink; cozy-weird monsters; zine
 avoidRules:
   - existing franchise characters

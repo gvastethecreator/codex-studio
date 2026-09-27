@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Figures circling light sources in otherwise dark scenes.
   atmosphere_and_mood: Soft and obsessive, beauty that cannot stay away from the flame.
   rendering_and_quality: Delicate low-key illustration with powdery textures and glowing lamps.
-  creative_brief: 'Mothpunk: a nocturnal culture drawn to light, with dusty moth-wing cloaks, lamp cults, night markets and delicate feathered antennae. Carry it through moth-wing cloaks, lamp halos, feathered antennae, nocturnal glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mothpunk: a nocturnal culture drawn to light, with dusty moth-wing cloaks, lamp cults, night markets and delicate feathered antennae. Carry it through moth-wing cloaks, lamp halos, feathered antennae, nocturnal glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: moth-wing cloaks; lamp halos; feathered antennae; nocturnal glow
 avoidRules:
   - readable text

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Single striding composite animal centered on a plain page with a gold border.
   atmosphere_and_mood: Keep the requested mood with playful inventive marvel.
   rendering_and_quality: Exquisite fine-line miniature with every inner figure legible.
-  creative_brief: 'Mughal composite beast painting: Indian court album paintings where an elephant, horse or camel is built entirely from interlocking smaller figures, animals, spirits and people. Carry it through composite animal, interlocking creatures, plain page, fine line. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mughal composite beast painting: Indian court album paintings where an elephant, horse or camel is built entirely from interlocking smaller figures, animals, spirits and people. Carry it through composite animal, interlocking creatures, plain page, fine line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: composite animal; interlocking creatures; plain page; fine line
 avoidRules:
   - cultural stereotypes or caricature

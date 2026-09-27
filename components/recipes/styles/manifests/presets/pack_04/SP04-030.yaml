@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scholarly, measured and calm, curiosity made precise.
   rendering_and_quality: High-accuracy naturalist drawing; leader lines point to empty space, never to readable labels.
   key_features: fine ink contour; muted watercolor tints; dissected insets; cream archival paper; unlabeled leader lines
-  creative_brief: 'Vintage scientific botanical plate: a specimen drawn in fine ink contour and tinted with muted watercolor, with dissected parts arranged around it. Carry it through fine ink contour, muted watercolor tints, dissected insets, cream archival paper, unlabeled leader lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Vintage scientific botanical plate: a specimen drawn in fine ink contour and tinted with muted watercolor, with dissected parts arranged around it. Carry it through fine ink contour, muted watercolor tints, dissected insets, cream archival paper, unlabeled leader lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - known picture-book characters
   - franchise mascot likeness

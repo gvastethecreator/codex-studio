@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cool indie noir framing, framed the way Nadja 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool indie vampire noir.
   rendering_and_quality: Black-and-white indie vampire frame, in the recognizable hand of Nadja 1994.
-  creative_brief: 'Michael Almereyda Nadja (1994) look: black-and-white New York vampire noir intercut with blurry toy Pixelvision camera footage, cool indie art-house mood. Carry it through Nadja Pixelvision, black-and-white noir, indie vampires. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Michael Almereyda Nadja (1994) look: black-and-white New York vampire noir intercut with blurry toy Pixelvision camera footage, cool indie art-house mood. Carry it through Nadja Pixelvision, black-and-white noir, indie vampires. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Nadja Pixelvision; black-and-white noir; indie vampires
 avoidRules:
   - existing franchise characters

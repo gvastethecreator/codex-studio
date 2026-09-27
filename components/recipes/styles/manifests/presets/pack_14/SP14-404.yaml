@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Rectangular panel with a crowded battle scene inside carved scroll frames.
   atmosphere_and_mood: Keep the requested mood with boisterous chivalric pride.
   rendering_and_quality: Vivid folk painting with bold outlines and polished shine.
-  creative_brief: 'Sicilian cart paladin panel: painted panels from Sicilian donkey carts showing armored paladins, jousts and battles against rival knights and sea giants in glossy saturated colors with carved gilt frames. Carry it through armored paladins, joust, carved scroll frame, glossy cart paint. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sicilian cart paladin panel: painted panels from Sicilian donkey carts showing armored paladins, jousts and battles against rival knights and sea giants in glossy saturated colors with carved gilt frames. Carry it through armored paladins, joust, carved scroll frame, glossy cart paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: armored paladins; joust; carved scroll frame; glossy cart paint
 avoidRules:
   - cultural stereotypes or caricature

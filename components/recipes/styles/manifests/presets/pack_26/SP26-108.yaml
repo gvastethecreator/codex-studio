@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Asymmetric modernist grid with extreme crops, framed the way Reid Miles composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool modernist swing.
   rendering_and_quality: Faithful Blue Note era jazz cover design, in the recognizable hand of Reid Miles.
-  creative_brief: 'Reid Miles Blue Note Records cover look of the 1950s and 1960s: bold modernist typography as image, cropped Francis Wolff black-and-white photographs, one strong tint color and asymmetric grids. Carry it through Reid Miles bold type, cropped photo, one tint color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Reid Miles Blue Note Records cover look of the 1950s and 1960s: bold modernist typography as image, cropped Francis Wolff black-and-white photographs, one strong tint color and asymmetric grids. Carry it through Reid Miles bold type, cropped photo, one tint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Reid Miles bold type; cropped photo; one tint color
 avoidRules:
   - the real Blue Note label logo

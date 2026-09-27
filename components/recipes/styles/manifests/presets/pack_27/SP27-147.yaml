@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low awe-struck angles into blazing light, framed the way Close Encounters 1977 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with wondrous suburban awe.
   rendering_and_quality: Authentic seventies Spielberg science fiction frame, in the recognizable hand of Close Encounters 1977.
-  creative_brief: 'Steven Spielberg Close Encounters of the Third Kind (1977) look: seventies suburban Indiana, blinding lights through windows, glowing mothership chandeliers, mashed-potato obsession and awe. Carry it through Close Encounters blinding light, suburban awe, lights above. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Steven Spielberg Close Encounters of the Third Kind (1977) look: seventies suburban Indiana, blinding lights through windows, glowing mothership chandeliers, mashed-potato obsession and awe. Carry it through Close Encounters blinding light, suburban awe, lights above. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Close Encounters blinding light; suburban awe; lights above
 avoidRules:
   - a colossal chandelier mothership over a butte

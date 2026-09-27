@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Static uneasy compositions in cramped rooms, framed the way Eraserhead 1977 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with surreal industrial unease.
   rendering_and_quality: Surreal black-and-white art horror frame, in the recognizable hand of Eraserhead 1977.
-  creative_brief: 'David Lynch Eraserhead (1977) look: grainy high-contrast black and white, industrial wastelands, hissing radiators, cramped apartments and surreal dream logic. Carry it through Lynch monochrome, industrial wasteland, surreal dream. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Lynch Eraserhead (1977) look: grainy high-contrast black and white, industrial wastelands, hissing radiators, cramped apartments and surreal dream logic. Carry it through Lynch monochrome, industrial wasteland, surreal dream. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Lynch monochrome; industrial wasteland; surreal dream
 avoidRules:
   - a man with towering upright hair holding a swaddled creature

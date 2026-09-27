@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic product view, framed the way Raygun Gothic composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with pulp futurist optimism.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Raygun Gothic retro-future appliance language: pulp fifties science fiction shapes with fins, rings, antenna spires, polished chrome and atomic starbursts. Carry it through Raygun Gothic, fins, rings, chrome spires. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Raygun Gothic retro-future appliance language: pulp fifties science fiction shapes with fins, rings, antenna spires, polished chrome and atomic starbursts. Carry it through Raygun Gothic, fins, rings, chrome spires. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Raygun Gothic; fins; rings; chrome spires
 avoidRules:
   - existing franchise characters

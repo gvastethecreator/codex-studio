@@ -32,8 +32,8 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Two swordswomen kneel at opposite ends of a snowy courtyard, and a single snowflake drifting between them is the only thing allowed to move. No readable text or logo.",
-        "Two elderly rivals have held the same pre-duel stance for so long that a sparrow has built a nest on the brim of one of their hats. No readable text or logo.",
+        'Two swordswomen kneel at opposite ends of a snowy courtyard, and a single snowflake drifting between them is the only thing allowed to move. No readable text or logo.',
+        'Two elderly rivals have held the same pre-duel stance for so long that a sparrow has built a nest on the brim of one of their hats. No readable text or logo.',
         "A duelist waits in a silent bamboo grove as one drop of rain gathers at the tip of a leaf directly above her rival's head. No readable text or logo.",
       ],
     },
@@ -60,9 +60,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Sweeping across a golden plain as one red wave, a cavalry charge in lacquered armor raises dust behind it like a second army of ghosts. No readable text or logo.",
-        "Every rider of the red army charges in perfect formation except one, whose horse has stopped to eat a flower. No readable text or logo.",
-        "From a hilltop a lone farmer watches the crimson host pour past his tiny rice field without trampling a single stalk. No readable text or logo.",
+        'Sweeping across a golden plain as one red wave, a cavalry charge in lacquered armor raises dust behind it like a second army of ghosts. No readable text or logo.',
+        'Every rider of the red army charges in perfect formation except one, whose horse has stopped to eat a flower. No readable text or logo.',
+        'From a hilltop a lone farmer watches the crimson host pour past his tiny rice field without trampling a single stalk. No readable text or logo.',
       ],
     },
     'SP13-028': {
@@ -88,8 +88,8 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A squire kneels alone in a vast stone hall at night as stained light from the windows lays a glowing mantle across her shoulders. No readable text or logo.",
-        "An aging lord solemnly swears fealty to the small goat that won the harvest fair, his whole court kneeling beneath the banners. No readable text or logo.",
+        'A squire kneels alone in a vast stone hall at night as stained light from the windows lays a glowing mantle across her shoulders. No readable text or logo.',
+        'An aging lord solemnly swears fealty to the small goat that won the harvest fair, his whole court kneeling beneath the banners. No readable text or logo.',
         "A knight renews her oath at her lord's grave in a storm, lightning briefly revealing a hundred banners on the hillside behind her. No readable text or logo.",
       ],
     },
@@ -115,9 +115,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A battering ram draws back from a freshly broken gate and fire pours through the gap like a river of embers. No readable text or logo.",
-        "The defenders pour cauldrons of soup on the attackers instead of boiling oil because the cook misunderstood the order, steam billowing everywhere. No readable text or logo.",
-        "After the breach a lone defender sits in the smoking gateway, sharing her last water with a wounded attacker. No readable text or logo.",
+        'A battering ram draws back from a freshly broken gate and fire pours through the gap like a river of embers. No readable text or logo.',
+        'The defenders pour cauldrons of soup on the attackers instead of boiling oil because the cook misunderstood the order, steam billowing everywhere. No readable text or logo.',
+        'After the breach a lone defender sits in the smoking gateway, sharing her last water with a wounded attacker. No readable text or logo.',
       ],
     },
     'SP13-030': {
@@ -143,9 +143,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A monk practices staff forms on a frozen mountain terrace, and each strike shatters the moonlight on the ice into silver shards. No readable text or logo.",
-        "A novice warrior holds a bucket of water on each outstretched arm for so long that a crane lands on one of them. No readable text or logo.",
-        "An old ascetic meditates beneath a moonlit waterfall that has frozen solid around him during the night. No readable text or logo.",
+        'A monk practices staff forms on a frozen mountain terrace, and each strike shatters the moonlight on the ice into silver shards. No readable text or logo.',
+        'A novice warrior holds a bucket of water on each outstretched arm for so long that a crane lands on one of them. No readable text or logo.',
+        'An old ascetic meditates beneath a moonlit waterfall that has frozen solid around him during the night. No readable text or logo.',
       ],
     },
   },
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A spear fighter spins through a bamboo grove, and each strike bursts into black ink splatter that scatters into flying crows. No readable text or logo.",
-        "A swordsman slices a falling persimmon into eight pieces with one stroke, the ink arc of his blade still hanging in the air. No readable text or logo.",
-        "A brush-drawn warrior duels her own ink shadow across a blank white scroll, ink dripping from both of their blades. No readable text or logo.",
+        'A spear fighter spins through a bamboo grove, and each strike bursts into black ink splatter that scatters into flying crows. No readable text or logo.',
+        'A swordsman slices a falling persimmon into eight pieces with one stroke, the ink arc of his blade still hanging in the air. No readable text or logo.',
+        'A brush-drawn warrior duels her own ink shadow across a blank white scroll, ink dripping from both of their blades. No readable text or logo.',
       ],
     },
     {
@@ -201,9 +201,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A ferryman poles across a wide river at dusk as a giant carp beneath the boat lifts it gently out of the indigo water. No readable text or logo.",
-        "Fishermen haul in a net holding a sleeping sea god wrapped in indigo kelp, too afraid to wake it and too proud to let go. No readable text or logo.",
-        "A traveling tea seller crosses an arched bridge in a vermilion evening rain, the drops falling as straight indigo lines. No readable text or logo.",
+        'A ferryman poles across a wide river at dusk as a giant carp beneath the boat lifts it gently out of the indigo water. No readable text or logo.',
+        'Fishermen haul in a net holding a sleeping sea god wrapped in indigo kelp, too afraid to wake it and too proud to let go. No readable text or logo.',
+        'A traveling tea seller crosses an arched bridge in a vermilion evening rain, the drops falling as straight indigo lines. No readable text or logo.',
       ],
     },
     {
@@ -230,9 +230,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A courier leaps a puddle on a temple road in heavy rain, every drop frozen as a glowing bead around her flying sandals. No readable text or logo.",
-        "Two duelists draw at the same instant in a downpour, and every falling drop between them is split cleanly in two. No readable text or logo.",
-        "A samurai slips on wet stone mid-duel and hangs suspended in slow motion, one sandal sailing off through the frozen raindrops. No readable text or logo.",
+        'A courier leaps a puddle on a temple road in heavy rain, every drop frozen as a glowing bead around her flying sandals. No readable text or logo.',
+        'Two duelists draw at the same instant in a downpour, and every falling drop between them is split cleanly in two. No readable text or logo.',
+        'A samurai slips on wet stone mid-duel and hangs suspended in slow motion, one sandal sailing off through the frozen raindrops. No readable text or logo.',
       ],
     },
     {
@@ -258,9 +258,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "Seven cloaked defenders stand close on a snowy ridge, huge crimson scarves whipping in the wind, facing an army too large to see in a white world. No readable text or logo.",
-        "The last defenders of a snowbound fort build an army of a hundred snow soldiers on the wall to fool the enemy at dawn. No readable text or logo.",
-        "After the battle, falling snow slowly covers a single banner still standing upright in the silent field. No readable text or logo.",
+        'Seven cloaked defenders stand close on a snowy ridge, huge crimson scarves whipping in the wind, facing an army too large to see in a white world. No readable text or logo.',
+        'The last defenders of a snowbound fort build an army of a hundred snow soldiers on the wall to fool the enemy at dawn. No readable text or logo.',
+        'After the battle, falling snow slowly covers a single banner still standing upright in the silent field. No readable text or logo.',
       ],
     },
     {
@@ -287,8 +287,8 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        "A hilltop city under siege at sunset casts wall shadows so long they reach the enemy camp miles across the plain. No readable text or logo.",
-        "Siege towers crawl toward a city whose every rooftop has been planted with giant sunflowers to confuse the archers. No readable text or logo.",
+        'A hilltop city under siege at sunset casts wall shadows so long they reach the enemy camp miles across the plain. No readable text or logo.',
+        'Siege towers crawl toward a city whose every rooftop has been planted with giant sunflowers to confuse the archers. No readable text or logo.',
         "From the top of a colossal wall at night, the besieging army's campfires stretch to the horizon like a second starry sky. No readable text or logo.",
       ],
     },

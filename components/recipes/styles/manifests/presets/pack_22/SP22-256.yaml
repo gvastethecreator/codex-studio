@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing like an old gallery painting.
   atmosphere_and_mood: Keep the requested mood with a hushed antique mystery.
   rendering_and_quality: Consistent fine crack pattern over a coherent painting.
-  creative_brief: 'Cracked varnish veil: an old painting seen through yellowed cracking varnish, with a fine craquelure web over every surface and warm aged tones. Carry it through fine craquelure, yellowed varnish, aged tones, old master feel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cracked varnish veil: an old painting seen through yellowed cracking varnish, with a fine craquelure web over every surface and warm aged tones. Carry it through fine craquelure, yellowed varnish, aged tones, old master feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fine craquelure; yellowed varnish; aged tones; old master feel
 avoidRules:
   - clean modern finish

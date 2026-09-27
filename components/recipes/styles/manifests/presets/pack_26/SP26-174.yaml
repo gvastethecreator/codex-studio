@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Miniature set framing at character height, framed the way Aardman composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cosy British eccentricity.
   rendering_and_quality: Faithful Aardman stop-motion frame, in the recognizable hand of Aardman.
-  creative_brief: 'Aardman Animations look of the 1990s to 2010s: plasticine stop-motion with visible thumbprints, wide toothy mouths, eyes set close together, cosy British suburbia and meticulous miniature sets. Carry it through Aardman plasticine, thumbprints, toothy grin. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Aardman Animations look of the 1990s to 2010s: plasticine stop-motion with visible thumbprints, wide toothy mouths, eyes set close together, cosy British suburbia and meticulous miniature sets. Carry it through Aardman plasticine, thumbprints, toothy grin. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Aardman plasticine; thumbprints; toothy grin
 avoidRules:
   - a bald inventor in a green sweater with a beagle

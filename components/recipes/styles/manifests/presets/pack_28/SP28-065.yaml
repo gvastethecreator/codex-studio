@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter product view on white, framed the way Y2K Translucent composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cheerful millennial optimism.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Late nineties Y2K translucent product language: candy-colored see-through plastic shells revealing electronics, rounded bubbly forms and playful consumer tech. Carry it through Y2K translucent, candy plastic, visible insides. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Late nineties Y2K translucent product language: candy-colored see-through plastic shells revealing electronics, rounded bubbly forms and playful consumer tech. Carry it through Y2K translucent, candy plastic, visible insides. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Y2K translucent; candy plastic; visible insides
 avoidRules:
   - a real iMac G3 or Apple logo

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Straightforward frontal composition, framed the way Dave Sutherland composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with earnest early adventure.
   rendering_and_quality: Early seventies dungeon module ink drawing, in the recognizable hand of Dave Sutherland.
-  creative_brief: 'Dave Sutherland early role-playing module look: crude earnest ink drawings, stiff heroic figures, simple dungeon architecture and seventies amateur-professional charm. Carry it through Sutherland crude earnest ink, stiff heroes, simple dungeons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dave Sutherland early role-playing module look: crude earnest ink drawings, stiff heroic figures, simple dungeon architecture and seventies amateur-professional charm. Carry it through Sutherland crude earnest ink, stiff heroes, simple dungeons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sutherland crude earnest ink; stiff heroes; simple dungeons
 avoidRules:
   - existing franchise characters

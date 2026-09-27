@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Obsidian Pentiment (2022) look: sixteenth-century Bavarian village drawn like a living illuminated manuscript and woodcut, parchment backgrounds, ink outlines and hand-lettered speech.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as flat illuminated-manuscript and woodcut figures on parchment. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Parchment cream, ink black and illumination gold and red.
-  lighting_and_shadow: "Flat even light as on a manuscript page, no cast shadows."
-  texture_and_material: "Parchment grain, ink outlines, woodcut hatching and flat washes of color on figures."
+  lighting_and_shadow: 'Flat even light as on a manuscript page, no cast shadows.'
+  texture_and_material: 'Parchment grain, ink outlines, woodcut hatching and flat washes of color on figures.'
   camera_and_composition: Flat side-view manuscript page, framed the way Pentiment 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with scholarly village mystery.
-  rendering_and_quality: "A 2022 side-view frame at 1920 by 1080: a village drawn like a manuscript page with small flat figures walking."
-  creative_brief: 'Obsidian Pentiment (2022) look: sixteenth-century Bavarian village drawn like a living illuminated manuscript and woodcut, parchment backgrounds, ink outlines and hand-lettered speech. Carry it through Pentiment manuscript, woodcut, parchment village. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2022 side-view frame at 1920 by 1080: a village drawn like a manuscript page with small flat figures walking.'
+  creative_brief: "Obsidian Pentiment (2022) look: sixteenth-century Bavarian village drawn like a living illuminated manuscript and woodcut, parchment backgrounds, ink outlines and hand-lettered speech. Carry it through Pentiment manuscript, woodcut, parchment village. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Pentiment manuscript; woodcut; parchment village
 avoidRules:
   - existing franchise characters

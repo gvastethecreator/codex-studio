@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Long narrow procession band, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with faded ceremonial mystery.
   rendering_and_quality: Authentic worn weave, kept consistent across the whole image.
-  creative_brief: 'Oseberg tapestry fragment: narrow woven Viking tapestry bands of processions with wagons, horses, riders and shielded figures in faded red and ochre. Carry it through narrow tapestry, procession, wagons, faded wool. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Oseberg tapestry fragment: narrow woven Viking tapestry bands of processions with wagons, horses, riders and shielded figures in faded red and ochre. Carry it through narrow tapestry, procession, wagons, faded wool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: narrow tapestry; procession; wagons; faded wool
 avoidRules:
   - readable runes

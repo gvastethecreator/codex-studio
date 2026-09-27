@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Painted montage with a heroic central figure, framed the way Blaxploitation 1973 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool heroic funk.
   rendering_and_quality: Faithful seventies soundtrack cover painting, in the recognizable hand of Blaxploitation 1973.
-  creative_brief: 'Seventies blaxploitation soundtrack cover look: painted action montage, heroic figures in leather coats and afros, city skylines, fiery orange and purple and bold funky type. Carry it through Blaxploitation painted montage, afros, funky type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Seventies blaxploitation soundtrack cover look: painted action montage, heroic figures in leather coats and afros, city skylines, fiery orange and purple and bold funky type. Carry it through Blaxploitation painted montage, afros, funky type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Blaxploitation painted montage; afros; funky type
 avoidRules:
   - real actors from seventies films

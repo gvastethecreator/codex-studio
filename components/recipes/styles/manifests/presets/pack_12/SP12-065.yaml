@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ornate weapon fighters in flowing historical-fantasy costumes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Crystal blue, gold and weapon trail colors, true to the Soulcalibur VI 2018 palette.
-  lighting_and_shadow: "Dramatic stage light with sparks from weapon clashes."
-  texture_and_material: "Polished ornate costumes and metal, glowing weapon trails."
+  lighting_and_shadow: 'Dramatic stage light with sparks from weapon clashes.'
+  texture_and_material: 'Polished ornate costumes and metal, glowing weapon trails.'
   camera_and_composition: Side-on 3D fighting camera, framed the way Soulcalibur VI 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with epic duelist grandeur.
-  rendering_and_quality: "A 2018 frame at 1920 by 1080 from the side: two fighters on an ornate stage, health bar shapes across the top."
+  rendering_and_quality: 'A 2018 frame at 1920 by 1080 from the side: two fighters on an ornate stage, health bar shapes across the top.'
   key_features: Soulcalibur weapon trails; ornate stages
-  creative_brief: 'Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes. Carry it through Soulcalibur weapon trails, ornate stages. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes. Carry it through Soulcalibur weapon trails, ornate stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing Soulcalibur fighters
   - watermark

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Top-down precise product view, framed the way Teenage Engineering composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful precise curiosity.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Teenage Engineering design language: small precise modular devices with grids of chunky buttons, bold single colors, exposed screws, aluminum casings and playful minimal icons. Carry it through Teenage Engineering, button grid, exposed screws, bold color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Teenage Engineering design language: small precise modular devices with grids of chunky buttons, bold single colors, exposed screws, aluminum casings and playful minimal icons. Carry it through Teenage Engineering, button grid, exposed screws, bold color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Teenage Engineering; button grid; exposed screws; bold color
 avoidRules:
   - real Teenage Engineering products or logo

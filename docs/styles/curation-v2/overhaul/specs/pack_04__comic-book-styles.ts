@@ -93,7 +93,13 @@ const spec: Spec = {
         key_features:
           'glossy digital color; dual rim light; volumetric rays and flares; specular armor; widescreen low angle',
       }),
-      avoid: [...AVOID, 'flat retro print', 'Ben-Day dots', 'painterly fantasy concept art', 'medieval fantasy setting'],
+      avoid: [
+        ...AVOID,
+        'flat retro print',
+        'Ben-Day dots',
+        'painterly fantasy concept art',
+        'medieval fantasy setting',
+      ],
       briefs: [
         'An original adult superhero in a sleek teal-and-orange suit catches a falling subway car above a flooded city avenue at dusk, crisp digital inks, glossy gradients, dual rim light and volumetric rays from a widescreen low angle. Single image, no panels, balloons, text or logo.',
         'On a rain-slick skyscraper rooftop, an original adult speedster in a crimson suit skids to a stop in a spray of sparks while a stolen armored truck dangles from a crane behind her, glossy gradients and specular hits on wet steel. Single image, no panels, balloons, text or logo.',

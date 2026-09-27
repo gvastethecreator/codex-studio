@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close workbench view, framed the way Wood Carved Figure composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with warm folk craft.
   rendering_and_quality: Warm craft photograph of a carved figure, in the recognizable hand of Wood Carved Figure.
-  creative_brief: 'Hand-carved wooden collectible figure look: visible knife facets, natural wood grain, light stain and folk-art simplification on a wooden base. Carry it through Carved wood, knife facets, grain, folk art. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hand-carved wooden collectible figure look: visible knife facets, natural wood grain, light stain and folk-art simplification on a wooden base. Carry it through Carved wood, knife facets, grain, folk art. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Carved wood; knife facets; grain; folk art
 avoidRules:
   - existing franchise characters

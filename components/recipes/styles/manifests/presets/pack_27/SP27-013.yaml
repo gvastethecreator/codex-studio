@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dreamy still compositions near rock formations, framed the way Picnic at Hanging Rock 1975 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamy uncanny stillness.
   rendering_and_quality: Hazy seventies mystery film frame, in the recognizable hand of Picnic at Hanging Rock 1975.
-  creative_brief: 'Peter Weir Picnic at Hanging Rock (1975) look: dreamy gauzy haze, Edwardian white dresses, sunlit Australian bush, ancient rock formations and uncanny stillness. Carry it through Weir gauzy haze, white dresses, ancient rock, stillness. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Peter Weir Picnic at Hanging Rock (1975) look: dreamy gauzy haze, Edwardian white dresses, sunlit Australian bush, ancient rock formations and uncanny stillness. Carry it through Weir gauzy haze, white dresses, ancient rock, stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Weir gauzy haze; white dresses; ancient rock; stillness
 avoidRules:
   - existing franchise characters

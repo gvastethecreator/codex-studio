@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low scale-shifting angles on giant props, framed the way The Incredible Shrinking Man 1957 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with existential scale awe.
   rendering_and_quality: Authentic fifties oversized-set science fiction frame, in the recognizable hand of The Incredible Shrinking Man 1957.
-  creative_brief: 'Jack Arnold The Incredible Shrinking Man (1957) look: black-and-white oversized sets turning a basement into a wilderness, giant matchboxes, threads, water heaters and existential scale. Carry it through Shrinking Man giant props, basement wilderness, scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jack Arnold The Incredible Shrinking Man (1957) look: black-and-white oversized sets turning a basement into a wilderness, giant matchboxes, threads, water heaters and existential scale. Carry it through Shrinking Man giant props, basement wilderness, scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Shrinking Man giant props; basement wilderness; scale
 avoidRules:
   - a man fighting a giant spider with a sewing needle

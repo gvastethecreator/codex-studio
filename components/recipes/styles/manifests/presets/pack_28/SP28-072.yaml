@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal documentary product view, framed the way Soviet Industrial composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with stubborn utilitarian endurance.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Soviet industrial product language of the 1960s to 1980s: utilitarian stamped metal, bakelite knobs, chunky toggles, pale green and cream enamel and indestructible function. Carry it through Soviet industrial, stamped steel, bakelite, pale green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Soviet industrial product language of the 1960s to 1980s: utilitarian stamped metal, bakelite knobs, chunky toggles, pale green and cream enamel and indestructible function. Carry it through Soviet industrial, stamped steel, bakelite, pale green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Soviet industrial; stamped steel; bakelite; pale green
 avoidRules:
   - existing franchise characters

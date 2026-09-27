@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tiny lit figure within vast dark chambers, scale shown by the beam.
   atmosphere_and_mood: Awestruck, careful and lonely, the first light in a place that never saw any.
   rendering_and_quality: Dense ink-wash painting with precise small warm highlights.
-  creative_brief: 'Deep-cave survey lamp: a lone surveyor mapping enormous underground chambers by helmet lamp, painted in dense ink wash where light barely reaches. Carry it through single headlamp beam, immense cave darkness, wet stone, tiny surveyor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Deep-cave survey lamp: a lone surveyor mapping enormous underground chambers by helmet lamp, painted in dense ink wash where light barely reaches. Carry it through single headlamp beam, immense cave darkness, wet stone, tiny surveyor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: single headlamp beam; immense cave darkness; wet stone; tiny surveyor
 avoidRules:
   - daylight

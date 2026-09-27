@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Creature rising in the foreground, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lurid swampy dread.
   rendering_and_quality: Painterly pulp finish with no text, kept consistent across the whole image.
-  creative_brief: 'Swamp monster pulp painting: lurid paintings of moss-covered creatures rising from swamp water, dripping weeds, cypress trees and moonlit fog. Carry it through swamp creature, dripping moss, cypress fog, moonlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Swamp monster pulp painting: lurid paintings of moss-covered creatures rising from swamp water, dripping weeds, cypress trees and moonlit fog. Carry it through swamp creature, dripping moss, cypress fog, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: swamp creature; dripping moss; cypress fog; moonlight
 avoidRules:
   - title lettering

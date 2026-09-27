@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic diagonal wide composition, framed the way John Howe composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with epic sweeping grandeur.
   rendering_and_quality: Epic fantasy gouache painting, in the recognizable hand of John Howe.
-  creative_brief: 'John Howe epic fantasy painting: dramatic mountain and fortress landscapes, towering dragons and armored hosts, dynamic diagonal compositions, cool blue-grey atmosphere and historical armor accuracy. Carry it through John Howe mountains, historical armor, dynamic diagonals. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Howe epic fantasy painting: dramatic mountain and fortress landscapes, towering dragons and armored hosts, dynamic diagonal compositions, cool blue-grey atmosphere and historical armor accuracy. Carry it through John Howe mountains, historical armor, dynamic diagonals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: John Howe mountains; historical armor; dynamic diagonals
 avoidRules:
   - Middle-earth characters and places

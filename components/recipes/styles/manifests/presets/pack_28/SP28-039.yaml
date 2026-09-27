@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro view with a fingertip for scale, framed the way Handmade Clay Miniature composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with delightful tiny craftsmanship.
   rendering_and_quality: Macro craft photograph, in the recognizable hand of Handmade Clay Miniature.
-  creative_brief: 'Handmade polymer clay miniature look: tiny realistic food and objects sculpted at doll scale, glossy resin glazes, placed next to a fingertip or coin for scale. Carry it through Polymer clay miniature, fingertip scale, resin glaze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Handmade polymer clay miniature look: tiny realistic food and objects sculpted at doll scale, glossy resin glazes, placed next to a fingertip or coin for scale. Carry it through Polymer clay miniature, fingertip scale, resin glaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Polymer clay miniature; fingertip scale; resin glaze
 avoidRules:
   - existing franchise characters

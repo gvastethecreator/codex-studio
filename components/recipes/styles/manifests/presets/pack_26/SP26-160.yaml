@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Inventive layouts that show one action across time.
   atmosphere_and_mood: Keep the requested mood with strange tender heroism.
   rendering_and_quality: Faithful Quitely fine-line comic art, in the recognizable hand of Frank Quitely.
-  creative_brief: 'Frank Quitely page look of the 2000s: fine even contour line, heavy soft realistic bodies, strange plastic faces, meticulous clutter and inventive panel layouts that map time and motion. Carry it through Quitely fine line, heavy bodies, time-mapped panels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Frank Quitely page look of the 2000s: fine even contour line, heavy soft realistic bodies, strange plastic faces, meticulous clutter and inventive panel layouts that map time and motion. Carry it through Quitely fine line, heavy bodies, time-mapped panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Quitely fine line; heavy bodies; time-mapped panels
 avoidRules:
   - a caped hero with an S emblem

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Superhot Team Superhot (2016) look: stark white minimalist rooms, crystalline red enemies that shatter, time that moves only when you move, and slow frozen bullet trails.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as faceless crystalline red figures in stark white rooms. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Stark white, crystal red and black accents, true to the Superhot 2016 palette.
-  lighting_and_shadow: "Flat clean white light with no shadows worth noticing."
-  texture_and_material: "Faceted red glassy figures that shatter into shards against smooth white planes and black objects."
+  lighting_and_shadow: 'Flat clean white light with no shadows worth noticing.'
+  texture_and_material: 'Faceted red glassy figures that shatter into shards against smooth white planes and black objects.'
   camera_and_composition: First-person view with frozen motion, framed the way Superhot 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cool frozen tension.
-  rendering_and_quality: "A 2016 PC frame at 1920 by 1080: bare white rooms, red crystal figures frozen mid-motion, a black weapon."
-  creative_brief: 'Superhot Team Superhot (2016) look: stark white minimalist rooms, crystalline red enemies that shatter, time that moves only when you move, and slow frozen bullet trails. Carry it through Superhot white rooms, red crystal figures, frozen time. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2016 PC frame at 1920 by 1080: bare white rooms, red crystal figures frozen mid-motion, a black weapon.'
+  creative_brief: "Superhot Team Superhot (2016) look: stark white minimalist rooms, crystalline red enemies that shatter, time that moves only when you move, and slow frozen bullet trails. Carry it through Superhot white rooms, red crystal figures, frozen time. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Superhot white rooms; red crystal figures; frozen time
 avoidRules:
   - existing franchise characters

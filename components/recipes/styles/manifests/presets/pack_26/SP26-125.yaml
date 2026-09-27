@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Montage of dramatic faces and scenes, framed the way Bollywood Soundtrack 1975 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with lush melodramatic romance.
   rendering_and_quality: Faithful seventies filmi soundtrack cover, in the recognizable hand of Bollywood Soundtrack 1975.
-  creative_brief: 'Seventies Bollywood soundtrack LP look: hand-painted filmi montage of heroes and heroines, lush color, dramatic poses, decorative borders and ornate titles. Carry it through Bollywood painted montage, ornate border, filmi drama. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Seventies Bollywood soundtrack LP look: hand-painted filmi montage of heroes and heroines, lush color, dramatic poses, decorative borders and ornate titles. Carry it through Bollywood painted montage, ornate border, filmi drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Bollywood painted montage; ornate border; filmi drama
 avoidRules:
   - real film stars

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Tall narrow vertical strip with a central face and geometric net.
   atmosphere_and_mood: Keep the requested mood with watchful protective magic.
   rendering_and_quality: Precise graphic parchment drawing, kept consistent across the whole image.
-  creative_brief: 'Ethiopian protective scroll: tall narrow parchment scrolls drawn for healing, with staring angel faces, eyes in geometric nets, crosses and interlaced stars in red, yellow and black ink. Carry it through staring eyes, geometric nets, angel faces, parchment strip. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Ethiopian protective scroll: tall narrow parchment scrolls drawn for healing, with staring angel faces, eyes in geometric nets, crosses and interlaced stars in red, yellow and black ink. Carry it through staring eyes, geometric nets, angel faces, parchment strip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: staring eyes; geometric nets; angel faces; parchment strip
 avoidRules:
   - cultural stereotypes or caricature

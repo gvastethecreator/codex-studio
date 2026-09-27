@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Humorous, lively and mischievous, a joke caught mid-motion.
   rendering_and_quality: Deliberately unrefined speed and wobble; never tidy outlines or full painted backgrounds.
   key_features: scratchy dip-pen line; ink flicks and splatter; loose watercolor splashes; broken contours; white paper
-  creative_brief: 'Whimsical scratchy ink: fast dip-pen lines that skip and splutter, loosely washed with a few watercolor splashes. Carry it through scratchy dip-pen line, ink flicks and splatter, loose watercolor splashes, broken contours, white paper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Whimsical scratchy ink: fast dip-pen lines that skip and splutter, loosely washed with a few watercolor splashes. Carry it through scratchy dip-pen line, ink flicks and splatter, loose watercolor splashes, broken contours, white paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - known picture-book characters
   - franchise mascot likeness

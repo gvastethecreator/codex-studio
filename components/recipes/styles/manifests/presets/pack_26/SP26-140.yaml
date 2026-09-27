@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Staged frontal tableau, framed the way Britpop 1995 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cheeky ironic swagger.
   rendering_and_quality: Faithful mid-nineties Britpop cover, in the recognizable hand of Britpop 1995.
-  creative_brief: 'Mid-nineties Britpop cover look: staged kitsch British photographs, suburban living rooms, seaside Englishness, saturated color film, bold sans type and cheeky irony. Carry it through Britpop staged kitsch, saturated film, irony. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mid-nineties Britpop cover look: staged kitsch British photographs, suburban living rooms, seaside Englishness, saturated color film, bold sans type and cheeky irony. Carry it through Britpop staged kitsch, saturated film, irony. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Britpop staged kitsch; saturated film; irony
 avoidRules:
   - a Union Jack

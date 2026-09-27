@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Serpent rising toward a huge moon, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with cosmic folk drama.
   rendering_and_quality: Bold dramatic painting, kept consistent across the whole image.
-  creative_brief: 'Bakunawa moon-eater painting: Philippine folklore painting of the great sea serpent rising from the ocean to swallow the moon while villagers bang pots to scare it. Carry it through sea serpent, moon, ocean, villagers with pots. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bakunawa moon-eater painting: Philippine folklore painting of the great sea serpent rising from the ocean to swallow the moon while villagers bang pots to scare it. Carry it through sea serpent, moon, ocean, villagers with pots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sea serpent; moon; ocean; villagers with pots
 avoidRules:
   - cultural stereotypes or caricature

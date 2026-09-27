@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as chunky low-resolution sprites on slanted red girders with ladders. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Girder red, ladder cyan, barrel brown and black.
-  lighting_and_shadow: "Flat glowing arcade colors on black with no shading, just bright sprite and girder colors."
+  lighting_and_shadow: 'Flat glowing arcade colors on black with no shading, just bright sprite and girder colors.'
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Single-screen side view of stacked girders, framed the way Donkey Kong 1981 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with frantic climbing peril.
-  rendering_and_quality: "A 1981 arcade frame at 224 by 256 on a vertical CRT: few big square pixels per sprite, red girders, cyan ladders, scanlines."
-  creative_brief: 'Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background. Carry it through Donkey Kong girders, ladders, rolling barrels, chunky sprites. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1981 arcade frame at 224 by 256 on a vertical CRT: few big square pixels per sprite, red girders, cyan ladders, scanlines.'
+  creative_brief: "Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background. Carry it through Donkey Kong girders, ladders, rolling barrels, chunky sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Donkey Kong girders; ladders; rolling barrels; chunky sprites
 avoidRules:
   - a big ape throwing barrels

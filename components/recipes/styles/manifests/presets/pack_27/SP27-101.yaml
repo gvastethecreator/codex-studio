@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a toon cel-shaded 3D figure with huge expressive eyes and crisp two-tone shading. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sparkling sea blue, grass green and warm sunset orange.
-  lighting_and_shadow: "Bright sun with every shadow a single hard-edged darker flat tone, no soft gradients anywhere."
-  texture_and_material: "Flat cartoon color fills with simple shapes, swirl-shaped smoke, wind curls and clouds drawn as flat curled ribbons."
+  lighting_and_shadow: 'Bright sun with every shadow a single hard-edged darker flat tone, no soft gradients anywhere.'
+  texture_and_material: 'Flat cartoon color fills with simple shapes, swirl-shaped smoke, wind curls and clouds drawn as flat curled ribbons.'
   camera_and_composition: Wide third-person view over islands and sea, framed the way The Wind Waker 2002 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright seafaring wonder.
-  rendering_and_quality: "A 2002 GameCube frame at 640 by 480: clean smooth edges, bright flat colors, slightly soft image like a period screenshot."
-  creative_brief: 'Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea. Carry it through Wind Waker toon shading, huge eyes, swirl clouds, open sea. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2002 GameCube frame at 640 by 480: clean smooth edges, bright flat colors, slightly soft image like a period screenshot.'
+  creative_brief: "Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea. Carry it through Wind Waker toon shading, huge eyes, swirl clouds, open sea. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Wind Waker toon shading; huge eyes; swirl clouds; open sea
 avoidRules:
   - a green-tunic elf hero

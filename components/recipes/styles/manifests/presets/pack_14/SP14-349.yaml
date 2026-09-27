@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Village or forest scene in a frame, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with rustic folk dread.
   rendering_and_quality: Crude charming woodcut, kept consistent across the whole image.
-  creative_brief: 'Loup-garou chapbook woodcut: rough French chapbook woodcuts of werewolves and shape-shifters in villages and forests, crude bold carving and cheap paper. Carry it through werewolf, chapbook, crude carving, village. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Loup-garou chapbook woodcut: rough French chapbook woodcuts of werewolves and shape-shifters in villages and forests, crude bold carving and cheap paper. Carry it through werewolf, chapbook, crude carving, village. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: werewolf; chapbook; crude carving; village
 avoidRules:
   - cultural stereotypes or caricature

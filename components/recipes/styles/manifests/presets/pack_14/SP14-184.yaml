@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Long horizontal procession, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mischievous nocturnal carnival.
   rendering_and_quality: Lively animated handscroll, kept consistent across the whole image.
-  creative_brief: 'Hundred demons scroll: long handscroll processions of yokai and animated household objects parading at night in lively ink and color. Carry it through night parade, object spirits, handscroll, lively brush. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hundred demons scroll: long handscroll processions of yokai and animated household objects parading at night in lively ink and color. Carry it through night parade, object spirits, handscroll, lively brush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: night parade; object spirits; handscroll; lively brush
 avoidRules:
   - readable Japanese text or seals

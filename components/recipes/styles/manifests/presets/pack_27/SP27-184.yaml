@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low-key nocturnal framing with deep shadow, framed the way Out of the Past 1947 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with doomed fatalistic romance.
   rendering_and_quality: Authentic forties RKO noir frame, in the recognizable hand of Out of the Past 1947.
-  creative_brief: 'Jacques Tourneur Out of the Past (1947) look: Nicholas Musuraca low-key cinematography, moonlit Mexican beaches, trench coats, rain-slick cars and fatalistic romance. Carry it through Out of the Past low-key, moonlit beaches, trench coats. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jacques Tourneur Out of the Past (1947) look: Nicholas Musuraca low-key cinematography, moonlit Mexican beaches, trench coats, rain-slick cars and fatalistic romance. Carry it through Out of the Past low-key, moonlit beaches, trench coats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Out of the Past low-key; moonlit beaches; trench coats
 avoidRules:
   - existing franchise characters

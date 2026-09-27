@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Weird deadpan vignette, framed the way Jason Sholtis composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with weird deadpan humor.
   rendering_and_quality: Weird humorous OSR ink illustration, in the recognizable hand of Jason Sholtis.
-  creative_brief: 'Jason Sholtis OSR illustration: weird humorous line art, bizarre goofy monsters, deadpan adventurers and underground mythic-underworld strangeness in crisp black ink. Carry it through Sholtis weird goofy monsters, deadpan, crisp ink. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jason Sholtis OSR illustration: weird humorous line art, bizarre goofy monsters, deadpan adventurers and underground mythic-underworld strangeness in crisp black ink. Carry it through Sholtis weird goofy monsters, deadpan, crisp ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sholtis weird goofy monsters; deadpan; crisp ink
 avoidRules:
   - existing franchise characters

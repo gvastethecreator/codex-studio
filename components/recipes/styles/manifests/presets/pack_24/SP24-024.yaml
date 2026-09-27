@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide low horizons with the courier small and dust trails leading the eye.
   atmosphere_and_mood: Determined, parched and solitary, the delivery must arrive.
   rendering_and_quality: Sunbaked painterly realism with heat shimmer and fine dust.
-  creative_brief: 'Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: lone desert haul; heat shimmer; dust plumes; bleached sky
 avoidRules:
   - lush greenery

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal barn wall with one or more large circular emblems.
   atmosphere_and_mood: Keep the requested mood with cheerful folk protection.
   rendering_and_quality: Crisp flat folk graphic painting, kept consistent across the whole image.
-  creative_brief: 'Hex sign barn painting: Pennsylvania German folk barn stars and rosettes painted on big red barns, distelfink birds, tulips and compass stars in bright flat circles. Carry it through compass stars, distelfink birds, tulips, barn wall. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hex sign barn painting: Pennsylvania German folk barn stars and rosettes painted on big red barns, distelfink birds, tulips and compass stars in bright flat circles. Carry it through compass stars, distelfink birds, tulips, barn wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: compass stars; distelfink birds; tulips; barn wall
 avoidRules:
   - cultural stereotypes or caricature

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low three-quarter macro product view, framed the way Die-Cast Car composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with precise collector pride.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Die-cast collectible car look: heavy metal scale models with glossy paint, rubber tires, chrome details, opening doors and display cases or blister packs. Carry it through Die-cast model, glossy paint, chrome, scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Die-cast collectible car look: heavy metal scale models with glossy paint, rubber tires, chrome details, opening doors and display cases or blister packs. Carry it through Die-cast model, glossy paint, chrome, scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Die-cast model; glossy paint; chrome; scale
 avoidRules:
   - real car brand logos

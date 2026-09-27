@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Upward view across a cave ceiling with flowing figures circling a lotus center.
   atmosphere_and_mood: Keep the requested mood with weightless heavenly grace.
   rendering_and_quality: Flowing mural painting with long rhythmic ribbon lines.
-  creative_brief: 'Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster. Carry it through flying celestials, trailing scarves, lotus ceiling, flaking plaster. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster. Carry it through flying celestials, trailing scarves, lotus ceiling, flaking plaster. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: flying celestials; trailing scarves; lotus ceiling; flaking plaster
 avoidRules:
   - cultural stereotypes or caricature

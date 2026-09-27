@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Vinyl groove macro: record grooves as wavy canyons of sound.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown along record grooves: wavy canyons, dust and stylus.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown along record grooves: wavy canyons, dust and stylus."
   color_and_tone: Black vinyl with rainbow sheen, as the instrument or lens would record it.
   lighting_and_shadow: Raking light showing groove waves, matching the real imaging setup at this scale.
   texture_and_material: Vinyl grooves, dust and stylus, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Nostalgic, precise, musical and deep, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: wavy grooves; stylus; dust
-  creative_brief: 'Vinyl groove macro: record grooves as wavy canyons of sound. Carry it through wavy grooves, stylus, dust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Vinyl groove macro: record grooves as wavy canyons of sound. Carry it through wavy grooves, stylus, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

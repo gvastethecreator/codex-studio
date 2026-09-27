@@ -5,7 +5,7 @@ import { dna } from './_strict';
 // Occult, myth and gothic punks (part A): each punk turns one occult practice or gothic institution into a culture.
 const AVOID = [
   ...STYLE_AVOID,
-  
+
   'graphic wounds',
   'real religious leader likeness',
   'readable runes or scripture',

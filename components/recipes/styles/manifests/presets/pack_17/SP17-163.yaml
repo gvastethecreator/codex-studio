@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Small rectangle composition with room for a title band.
   atmosphere_and_mood: Keep the requested mood with raw design energy.
   rendering_and_quality: Loose and unfinished by design, no lettering, kept consistent across the whole image.
-  creative_brief: 'Cover comp color rough: small loose color sketches painted to plan a fantasy cover, quick gouache blocks, rough figures and bold value design. Carry it through quick gouache blocks, rough figures, value design, small comp. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cover comp color rough: small loose color sketches painted to plan a fantasy cover, quick gouache blocks, rough figures and bold value design. Carry it through quick gouache blocks, rough figures, value design, small comp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: quick gouache blocks; rough figures; value design; small comp
 avoidRules:
   - title lettering

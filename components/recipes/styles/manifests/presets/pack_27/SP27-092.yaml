@@ -22,16 +22,16 @@ tags:
   - starcraft
   - reference-title
 visualDna:
-  aesthetic: "Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel."
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as tiny units seen from a high diagonal angle on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open."
+  aesthetic: 'Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel.'
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as tiny units seen from a high diagonal angle on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Dark space blue, alien purple and industrial grey.
-  lighting_and_shadow: "Shaded tiny units with bright glints on dark rocky or alien-creep ground."
-  texture_and_material: "Tiny rendered-then-shrunk unit sprites and grainy tile terrain in a limited palette."
+  lighting_and_shadow: 'Shaded tiny units with bright glints on dark rocky or alien-creep ground.'
+  texture_and_material: 'Tiny rendered-then-shrunk unit sprites and grainy tile terrain in a limited palette.'
   camera_and_composition: Isometric RTS view with interface, framed the way StarCraft 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense sci-fi warfare.
-  rendering_and_quality: "A 1998 PC frame at 640 by 480: small crisp pixel units, a minimap box and command panel shapes along the bottom."
+  rendering_and_quality: 'A 1998 PC frame at 640 by 480: small crisp pixel units, a minimap box and command panel shapes along the bottom.'
   creative_brief: "Blizzard StarCraft (1998) look: tiny shaded sci-fi units seen from a high diagonal, alien creep, space platforms and a bottom command panel. Carry it through StarCraft tiny units, diagonal view, alien creep, bottom command panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "StarCraft tiny units; diagonal view; alien creep; bottom command panel"
+  key_features: 'StarCraft tiny units; diagonal view; alien creep; bottom command panel'
 avoidRules:
   - existing faction units
   - existing franchise characters

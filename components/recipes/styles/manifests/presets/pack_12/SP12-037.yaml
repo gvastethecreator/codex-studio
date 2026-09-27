@@ -32,7 +32,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with bouncy cheerful play.
   rendering_and_quality: 'A 2013 Wii U frame at 1280 by 720: diorama-like level of floating toy blocks seen from above and behind, small number shapes at the top.'
   key_features: Mario 3D World toy blocks; glossy plastic; diorama levels
-  creative_brief: 'Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels. Carry it through Mario 3D World toy blocks, glossy plastic, diorama levels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels. Carry it through Mario 3D World toy blocks, glossy plastic, diorama levels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - small round enemies in red robes with white masks
   - a mustached plumber in red and blue

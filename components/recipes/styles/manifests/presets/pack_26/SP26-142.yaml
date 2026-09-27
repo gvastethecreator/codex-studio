@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Airbrushed poster composition, framed the way Italo Disco 1983 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with romantic futuristic kitsch.
   rendering_and_quality: Faithful eighties Italo disco cover, in the recognizable hand of Italo Disco 1983.
-  creative_brief: 'Italo disco cover look of the early 1980s: glossy airbrushed chrome, neon grids, sports cars, synthesizers, sunsets and futuristic romantic kitsch. Carry it through Italo disco airbrush, chrome, neon grid. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Italo disco cover look of the early 1980s: glossy airbrushed chrome, neon grids, sports cars, synthesizers, sunsets and futuristic romantic kitsch. Carry it through Italo disco airbrush, chrome, neon grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Italo disco airbrush; chrome; neon grid
 avoidRules:
   - existing franchise characters

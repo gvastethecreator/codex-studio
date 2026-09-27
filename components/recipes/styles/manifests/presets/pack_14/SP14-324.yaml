@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: River scene at night with drifting lights, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tender eerie remembrance.
   rendering_and_quality: Luminous atmospheric painting, kept consistent across the whole image.
-  creative_brief: 'Hungry ghost lantern festival: glowing river lanterns, paper offerings and drifting ghosts with long thin necks under the seventh-month moon. Carry it through river lanterns, drifting ghosts, incense, night moon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hungry ghost lantern festival: glowing river lanterns, paper offerings and drifting ghosts with long thin necks under the seventh-month moon. Carry it through river lanterns, drifting ghosts, incense, night moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: river lanterns; drifting ghosts; incense; night moon
 avoidRules:
   - cultural stereotypes or caricature

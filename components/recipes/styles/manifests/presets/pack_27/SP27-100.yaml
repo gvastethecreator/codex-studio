@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject swimming through eerie detailed pixel oceans with alien crystals and deep caverns. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject swimming through eerie detailed pixel oceans with alien crystals and deep caverns. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Deep ocean blue, crystal cyan and alien purple.
-  lighting_and_shadow: "Filtered blue underwater light bands and glowing crystal pixels in the dark."
-  texture_and_material: "Detailed pixel rocks, coral and water layers with visible square pixels and dithered depth."
+  lighting_and_shadow: 'Filtered blue underwater light bands and glowing crystal pixels in the dark.'
+  texture_and_material: 'Detailed pixel rocks, coral and water layers with visible square pixels and dithered depth.'
   camera_and_composition: Side-view underwater exploration, framed the way Ecco the Dolphin 1992 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien ocean.
-  rendering_and_quality: "A 1992 Sega Mega Drive frame at 320 by 224: crisp pixels in deep blues, lonely and vast."
+  rendering_and_quality: 'A 1992 Sega Mega Drive frame at 320 by 224: crisp pixels in deep blues, lonely and vast.'
   creative_brief: "Sega Ecco the Dolphin (1992) look: detailed underwater pixel art, eerie deep blue oceans, glyph crystals, alien architecture and lonely atmosphere. Carry it through Ecco pixel oceans, glyph crystals, alien depths, lonely blues. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Ecco pixel oceans; glyph crystals; alien depths; lonely blues"
+  key_features: 'Ecco pixel oceans; glyph crystals; alien depths; lonely blues'
 avoidRules:
   - a bottlenose dolphin with star markings
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Centered egg form or curved surface filling frame with wrapping pattern.
   atmosphere_and_mood: Keep the requested mood with protective cosmic order.
   rendering_and_quality: Precise curved-surface patterning with crisp lines, kept consistent across the whole image.
-  creative_brief: 'Pysanka world egg: Ukrainian wax-resist decorated eggs with fine geometric bands, stars, wheat, suns and endless lines, dyed in layers from yellow to red to black. Carry it through wax-resist lines, star bands, endless line, layered dyes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Pysanka world egg: Ukrainian wax-resist decorated eggs with fine geometric bands, stars, wheat, suns and endless lines, dyed in layers from yellow to red to black. Carry it through wax-resist lines, star bands, endless line, layered dyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: wax-resist lines; star bands; endless line; layered dyes
 avoidRules:
   - cultural stereotypes or caricature

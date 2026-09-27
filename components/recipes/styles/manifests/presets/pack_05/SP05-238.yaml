@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with uncanny quiet spectacle.
   rendering_and_quality: Stylish Trigger frame mixing quiet suburbs and tokusatsu spectacle.
   key_features: Gridman tokusatsu giants; pastel suburbs; power lines; kaiju
-  creative_brief: 'Studio Trigger SSSS.Gridman look (2018): tokusatsu-homage giants and kaiju in quiet suburbs, silent pastel towns, power lines, and CG giants with rubber-suit charm. Carry it through Gridman tokusatsu giants, pastel suburbs, power lines, kaiju. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Studio Trigger SSSS.Gridman look (2018): tokusatsu-homage giants and kaiju in quiet suburbs, silent pastel towns, power lines, and CG giants with rubber-suit charm. Carry it through Gridman tokusatsu giants, pastel suburbs, power lines, kaiju. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - red-and-silver giant with a glowing chest light
   - existing tokusatsu heroes

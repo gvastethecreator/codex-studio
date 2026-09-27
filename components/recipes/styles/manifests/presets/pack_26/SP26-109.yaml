@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Airy composition with lots of white space, framed the way David Stone Martin composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with elegant improvised ease.
   rendering_and_quality: Faithful fifties ink-drawn jazz cover design, in the recognizable hand of David Stone Martin.
-  creative_brief: 'David Stone Martin Clef and Verve cover look of the 1950s: nervous single-weight ink line drawings of musicians, big areas of white, a single watercolor wash and elegant hand lettering. Carry it through David Stone Martin ink line, white space, single wash. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Stone Martin Clef and Verve cover look of the 1950s: nervous single-weight ink line drawings of musicians, big areas of white, a single watercolor wash and elegant hand lettering. Carry it through David Stone Martin ink line, white space, single wash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: David Stone Martin ink line; white space; single wash
 avoidRules:
   - existing franchise characters

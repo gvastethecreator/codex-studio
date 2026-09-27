@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round-headed cartoon colonists with big eyes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted earth, pipe teal and cartoon highlights, true to the Oxygen Not Included 2019 palette.
-  lighting_and_shadow: "Flat cartoon light inside cutaway rooms dug into rock."
-  texture_and_material: "Hand-drawn cartoon lines, flat colors and cross-section rock layers."
+  lighting_and_shadow: 'Flat cartoon light inside cutaway rooms dug into rock.'
+  texture_and_material: 'Hand-drawn cartoon lines, flat colors and cross-section rock layers.'
   camera_and_composition: Side-view colony cutaway, framed the way Oxygen Not Included 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with busy desperate charm.
-  rendering_and_quality: "A 2019 PC frame at 1920 by 1080: side cutaway of a colony with pipes and ladders, small icon shapes along the top."
-  creative_brief: 'Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style. Carry it through ONI cutaway, tiny colonists, pipes and rooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2019 PC frame at 1920 by 1080: side cutaway of a colony with pipes and ladders, small icon shapes along the top.'
+  creative_brief: "Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style. Carry it through ONI cutaway, tiny colonists, pipes and rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ONI cutaway; tiny colonists; pipes and rooms
 avoidRules:
   - existing game characters, logos or levels

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Monumental wall with swirling composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with monumental visionary power.
   rendering_and_quality: Bold sculptural mural, kept consistent across the whole image.
-  creative_brief: 'Muralist cosmic epic: monumental modern Mexican mural painting with sweeping crowds, cosmic figures, machines and ancient gods merged in flowing composition. Carry it through monumental mural, sweeping crowds, ancient gods, flowing forms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Muralist cosmic epic: monumental modern Mexican mural painting with sweeping crowds, cosmic figures, machines and ancient gods merged in flowing composition. Carry it through monumental mural, sweeping crowds, ancient gods, flowing forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: monumental mural; sweeping crowds; ancient gods; flowing forms
 avoidRules:
   - readable glyphs

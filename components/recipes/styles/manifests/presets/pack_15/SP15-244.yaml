@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Foggy narrow streets with lone masked figures or silent processions.
   atmosphere_and_mood: Eerie, solemn and protective, strangers who walk toward the danger.
   rendering_and_quality: Moody fog-layered illustration with lantern glow and leather sheen.
-  creative_brief: 'Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets. Carry it through beaked masks, waxed coats, lanterns in fog, herb-filled beaks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets. Carry it through beaked masks, waxed coats, lanterns in fog, herb-filled beaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: beaked masks; waxed coats; lanterns in fog; herb-filled beaks
 avoidRules:
   - readable text

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Capcom Ghosts ’n Goblins (1985) arcade look: graveyards and haunted towns, zombies rising from graves, lances, a knight losing his armor and cartoonish horror sprites.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a cartoonish horror sprite in graveyards and haunted towns. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night blue graveyard, grave grey and zombie green.
-  lighting_and_shadow: "Flat arcade colors on night blue with no shading."
+  lighting_and_shadow: 'Flat arcade colors on night blue with no shading.'
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Side-scrolling graveyard view, framed the way Ghosts ’n Goblins 1985 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cartoonish horror peril.
-  rendering_and_quality: "A 1985 arcade frame at 256 by 224: small armored sprite among tombstones and dead trees, zombies rising from pixel dirt."
-  creative_brief: 'Capcom Ghosts ’n Goblins (1985) arcade look: graveyards and haunted towns, zombies rising from graves, lances, a knight losing his armor and cartoonish horror sprites. Carry it through Ghosts ’n Goblins graveyard, zombies, cartoon horror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1985 arcade frame at 256 by 224: small armored sprite among tombstones and dead trees, zombies rising from pixel dirt.'
+  creative_brief: "Capcom Ghosts ’n Goblins (1985) arcade look: graveyards and haunted towns, zombies rising from graves, lances, a knight losing his armor and cartoonish horror sprites. Carry it through Ghosts ’n Goblins graveyard, zombies, cartoon horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ghosts ’n Goblins graveyard; zombies; cartoon horror
 avoidRules:
   - a knight in boxer shorts

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Vast wide shots of tiny figures under buttes.
   atmosphere_and_mood: Keep the requested mood with rugged ensemble journey.
   rendering_and_quality: Authentic 1939 Ford western frame, in the recognizable hand of Stagecoach 1939.
-  creative_brief: 'John Ford Stagecoach (1939) look: black-and-white Monument Valley buttes, a lone stagecoach crossing vast plains, low-ceilinged way stations and ensemble frontier drama. Carry it through Stagecoach Monument Valley, buttes, way stations. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Ford Stagecoach (1939) look: black-and-white Monument Valley buttes, a lone stagecoach crossing vast plains, low-ceilinged way stations and ensemble frontier drama. Carry it through Stagecoach Monument Valley, buttes, way stations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Stagecoach Monument Valley; buttes; way stations
 avoidRules:
   - existing franchise characters

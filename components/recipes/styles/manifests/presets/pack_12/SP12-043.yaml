@@ -26,9 +26,9 @@ visualDna:
   texture_and_material: Simple low-detail textures, crumbling blocky buildings and particle debris.
   camera_and_composition: Third-person shoulder view looking up at giant enemies.
   atmosphere_and_mood: Keep the requested mood with gleeful B-movie mayhem.
-  rendering_and_quality: "A 2017 console frame at 1920 by 1080 in third person: plain textures, blocky buildings collapsing into dust, a crosshair and a small radar circle."
+  rendering_and_quality: 'A 2017 console frame at 1920 by 1080 in third person: plain textures, blocky buildings collapsing into dust, a crosshair and a small radar circle.'
   key_features: EDF giant ants; B-movie kaiju; crumbling city; arcade chaos
-  creative_brief: 'Sandlot Earth Defense Force 5 (2017) look: budget third-person arcade shooter, giant ants and kaiju swarming cities, huge explosions, simple textures, destructible buildings and B-movie chaos. Carry it through EDF giant ants, B-movie kaiju, crumbling city, arcade chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sandlot Earth Defense Force 5 (2017) look: budget third-person arcade shooter, giant ants and kaiju swarming cities, huge explosions, simple textures, destructible buildings and B-movie chaos. Carry it through EDF giant ants, B-movie kaiju, crumbling city, arcade chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

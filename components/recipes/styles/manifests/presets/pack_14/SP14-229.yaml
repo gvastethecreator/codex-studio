@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Cloth divided into panels, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with calm cultural depth.
   rendering_and_quality: Authentic resist-dyed texture, kept consistent across the whole image.
-  creative_brief: 'Adire eleko indigo: Yoruba indigo cloth with starch-resist designs hand-painted through the paste, showing birds, lizards, spoons and geometric panels. Carry it through indigo, starch resist, panels, hand-painted motifs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Adire eleko indigo: Yoruba indigo cloth with starch-resist designs hand-painted through the paste, showing birds, lizards, spoons and geometric panels. Carry it through indigo, starch resist, panels, hand-painted motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: indigo; starch resist; panels; hand-painted motifs
 avoidRules:
   - generic tribal pattern

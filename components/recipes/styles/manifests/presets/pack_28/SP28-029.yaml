@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close antique shelf view, framed the way Tin Wind-Up Toy composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with nostalgic mechanical charm.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Vintage tin wind-up toy look: lithographed printed tin, folded tabs, visible wind-up keys, chipped paint, simple mechanical motion and mid-century graphic charm. Carry it through Tin wind-up, lithograph, wind-up key. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Vintage tin wind-up toy look: lithographed printed tin, folded tabs, visible wind-up keys, chipped paint, simple mechanical motion and mid-century graphic charm. Carry it through Tin wind-up, lithograph, wind-up key. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tin wind-up; lithograph; wind-up key
 avoidRules:
   - existing franchise characters

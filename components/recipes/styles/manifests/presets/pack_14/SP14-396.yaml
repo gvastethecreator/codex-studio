@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal alert stance filling the frame against a plain dark ground.
   atmosphere_and_mood: Keep the requested mood with regal watchful power.
   rendering_and_quality: Refined cast-metal sculpture with crisp surface pattern, kept consistent across the whole image.
-  creative_brief: 'Edo court leopard bronze: lost-wax brass leopards of the Benin court with spotted bodies made of punched rings, alert heads, and ornamented guardian figures on dark palace grounds. Carry it through spotted brass leopard, punched rings, coral beads, alert stance. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Edo court leopard bronze: lost-wax brass leopards of the Benin court with spotted bodies made of punched rings, alert heads, and ornamented guardian figures on dark palace grounds. Carry it through spotted brass leopard, punched rings, coral beads, alert stance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: spotted brass leopard; punched rings; coral beads; alert stance
 avoidRules:
   - cultural stereotypes or caricature

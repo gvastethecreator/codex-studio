@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Lively crowd action composition, framed the way Angus McBride composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with vivid historical energy.
   rendering_and_quality: Vivid historical gouache illustration, in the recognizable hand of Angus McBride.
-  creative_brief: 'Angus McBride historical illustration: vivid painted scenes of ancient and medieval warriors with accurate costume, bright gouache, lively crowd action and dusty battlefields. Carry it through McBride historical warriors, accurate costume, gouache. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Angus McBride historical illustration: vivid painted scenes of ancient and medieval warriors with accurate costume, bright gouache, lively crowd action and dusty battlefields. Carry it through McBride historical warriors, accurate costume, gouache. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: McBride historical warriors; accurate costume; gouache
 avoidRules:
   - existing franchise characters

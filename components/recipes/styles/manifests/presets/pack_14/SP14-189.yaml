@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Tall panel with looping interlace, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with elegant restless tension.
   rendering_and_quality: Refined flowing carving, kept consistent across the whole image.
-  creative_brief: 'Urnes serpent carving: the last Viking Age style, slender elegant beasts and snakes in figure-of-eight loops, thin and thick lines interlaced across wood. Carry it through slender beasts, figure-of-eight loops, interlace, carved wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Urnes serpent carving: the last Viking Age style, slender elegant beasts and snakes in figure-of-eight loops, thin and thick lines interlaced across wood. Carry it through slender beasts, figure-of-eight loops, interlace, carved wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: slender beasts; figure-of-eight loops; interlace; carved wood
 avoidRules:
   - readable runes

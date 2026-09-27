@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low angle up at the prow, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fierce seafaring pride.
   rendering_and_quality: Strong carved silhouette, kept consistent across the whole image.
-  creative_brief: 'Longship prow carving: tall curving ship prows carved as dragon and serpent heads with open jaws, painted stripes and clinker-built hull planks. Carry it through curving prow, carved head, clinker hull, sea spray. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Longship prow carving: tall curving ship prows carved as dragon and serpent heads with open jaws, painted stripes and clinker-built hull planks. Carry it through curving prow, carved head, clinker hull, sea spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: curving prow; carved head; clinker hull; sea spray
 avoidRules:
   - readable runes

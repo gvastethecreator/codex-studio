@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow motion mirrored compositions, framed the way Face Off 1997 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with baroque operatic duality.
   rendering_and_quality: Authentic late-nineties Woo frame, in the recognizable hand of Face Off 1997.
-  creative_brief: 'John Woo Face/Off (1997) look: operatic Hollywood action with mirrored standoffs, churches and doves, speedboats, slow motion and baroque gun ballet. Carry it through Face/Off mirrors, doves, operatic standoffs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Woo Face/Off (1997) look: operatic Hollywood action with mirrored standoffs, churches and doves, speedboats, slow motion and baroque gun ballet. Carry it through Face/Off mirrors, doves, operatic standoffs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Face/Off mirrors; doves; operatic standoffs
 avoidRules:
   - existing franchise characters

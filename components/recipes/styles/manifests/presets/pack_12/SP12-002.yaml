@@ -30,9 +30,9 @@ visualDna:
   texture_and_material: Dense photoreal alien foliage, wet bark and translucent glowing plants.
   camera_and_composition: First-person view with a drawn bow in frame.
   atmosphere_and_mood: Keep the requested mood with lush alien wonder.
-  rendering_and_quality: "A 2023 first-person frame at 3840 by 2160: bow drawn at the bottom, dense glowing jungle, a compass strip at the top."
+  rendering_and_quality: 'A 2023 first-person frame at 3840 by 2160: bow drawn at the bottom, dense glowing jungle, a compass strip at the top.'
   key_features: Frontiers of Pandora jungle; bioluminescence; first-person bow
-  creative_brief: 'Massive Entertainment Avatar: Frontiers of Pandora (2023) look: first-person hunting in a towering alien rainforest, bioluminescent plants, floating flora, six-legged fauna and lush Snowdrop engine detail. Carry it through Frontiers of Pandora jungle, bioluminescence, first-person bow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Massive Entertainment Avatar: Frontiers of Pandora (2023) look: first-person hunting in a towering alien rainforest, bioluminescent plants, floating flora, six-legged fauna and lush Snowdrop engine detail. Carry it through Frontiers of Pandora jungle, bioluminescence, first-person bow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - tall blue-skinned aliens with tails
   - watermark

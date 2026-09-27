@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Bold graphic photo with minimal type, framed the way CTI Records composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with smooth luxurious cool.
   rendering_and_quality: Faithful seventies CTI gatefold design, in the recognizable hand of CTI Records.
-  creative_brief: 'CTI Records gatefold look of the 1970s: Pete Turner hyper-saturated color photographs of surreal landscapes and objects, minimal clean type and luxurious laminated finish. Carry it through CTI Pete Turner saturated photo, minimal type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "CTI Records gatefold look of the 1970s: Pete Turner hyper-saturated color photographs of surreal landscapes and objects, minimal clean type and luxurious laminated finish. Carry it through CTI Pete Turner saturated photo, minimal type. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: CTI Pete Turner saturated photo; minimal type
 avoidRules:
   - the real CTI logo

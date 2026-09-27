@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with streaks following gravity.
   atmosphere_and_mood: Keep the requested mood with weathered ancient calm.
   rendering_and_quality: Controlled mottled layered washes, never flat green fill.
-  creative_brief: 'Verdigris wash: paintings washed in the blue-green of oxidized copper with streaked rust-brown accents, like weathered bronze turned into paint. Carry it through verdigris greens, bronze accents, streaked patina, weathered feel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Verdigris wash: paintings washed in the blue-green of oxidized copper with streaked rust-brown accents, like weathered bronze turned into paint. Carry it through verdigris greens, bronze accents, streaked patina, weathered feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: verdigris greens; bronze accents; streaked patina; weathered feel
 avoidRules:
   - bright neon colors

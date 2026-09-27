@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Cinematic feature framing with deep snowy space, framed the way SPA Studios composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with warm wintry tenderness.
   rendering_and_quality: Faithful volumetric-lit 2D feature frame, in the recognizable hand of SPA Studios.
-  creative_brief: 'SPA Studios look of 2019: hand-drawn 2D characters given volumetric lighting and soft texture as if 3D, glowing lantern light, snowy Nordic villages and warm-cold color contrast. Carry it through SPA volumetric 2D, lantern light, snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "SPA Studios look of 2019: hand-drawn 2D characters given volumetric lighting and soft texture as if 3D, glowing lantern light, snowy Nordic villages and warm-cold color contrast. Carry it through SPA volumetric 2D, lantern light, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: SPA volumetric 2D; lantern light; snow
 avoidRules:
   - a huge bearded toymaker with a sleigh

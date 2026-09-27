@@ -22,16 +22,16 @@ tags:
   - katamari
   - reference-title
 visualDna:
-  aesthetic: "Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale."
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks. Wardrobe details apply only when the prompt leaves clothing open."
+  aesthetic: 'Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale.'
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Candy pink, mint, lemon and sky blue, true to the Katamari Damacy 2004 palette.
-  lighting_and_shadow: "Flat cheerful light with no harsh shadows, every object a plain bright color."
-  texture_and_material: "Objects made of a few plain flat-colored blocks with no surface detail, like painted wooden toys."
+  lighting_and_shadow: 'Flat cheerful light with no harsh shadows, every object a plain bright color.'
+  texture_and_material: 'Objects made of a few plain flat-colored blocks with no surface detail, like painted wooden toys.'
   camera_and_composition: Third-person view behind a rolling ball, framed the way Katamari Damacy 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with absurdist joyful chaos.
-  rendering_and_quality: "A 2004 PlayStation 2 frame at 640 by 448: simple bright blocks, jagged edges and a slightly soft image."
+  rendering_and_quality: 'A 2004 PlayStation 2 frame at 640 by 448: simple bright blocks, jagged edges and a slightly soft image.'
   creative_brief: "Namco Katamari Damacy (2004) look: a toy world of plain untextured blocks in candy colors, a sticky ball rolling up everyday objects and absurd scale. Carry it through Katamari plain blocky toy world, rolling ball, candy colors, absurd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Katamari plain blocky toy world; rolling ball; candy colors; absurd"
+  key_features: 'Katamari plain blocky toy world; rolling ball; candy colors; absurd'
 avoidRules:
   - a tiny green prince with a rod-shaped head
   - a giant king in tights

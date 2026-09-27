@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close view of a tiny figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tiny intimate wit.
   rendering_and_quality: Exquisite miniature carving, kept consistent across the whole image.
-  creative_brief: 'Netsuke carving: tiny carved toggles of ivory-like boxwood or bone showing animals and yokai curled into compact rounded forms with fine detail. Carry it through tiny carving, compact form, polished wood, cord holes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Netsuke carving: tiny carved toggles of ivory-like boxwood or bone showing animals and yokai curled into compact rounded forms with fine detail. Carry it through tiny carving, compact form, polished wood, cord holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tiny carving; compact form; polished wood; cord holes
 avoidRules:
   - readable Japanese text or seals

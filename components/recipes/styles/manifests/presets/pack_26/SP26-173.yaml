@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Long quiet wide shots with little dialogue, framed the way Sylvain Chomet composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with wistful comic melancholy.
   rendering_and_quality: Faithful Chomet hand-drawn feature frame, in the recognizable hand of Sylvain Chomet.
-  creative_brief: 'Sylvain Chomet animation look of 2003 to 2010: grotesquely exaggerated caricature bodies, muted watercolor backgrounds, tall thin and round squat figures, near-silent storytelling and melancholic French city life. Carry it through Chomet caricature bodies, muted watercolor melancholy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sylvain Chomet animation look of 2003 to 2010: grotesquely exaggerated caricature bodies, muted watercolor backgrounds, tall thin and round squat figures, near-silent storytelling and melancholic French city life. Carry it through Chomet caricature bodies, muted watercolor melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Chomet caricature bodies; muted watercolor melancholy
 avoidRules:
   - three elderly jazz singers from the thirties

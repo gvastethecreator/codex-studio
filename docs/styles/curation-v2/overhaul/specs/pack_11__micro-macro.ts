@@ -4,7 +4,7 @@ import { STYLE_AVOID } from './_style';
 // Micro and macro: each preset is one magnification method plus the specimen texture it reveals.
 // The prompt subject is either shown at that scale or emerges from that texture (a creature formed
 // by frost dendrites, a scene inside a water drop). Cellular themes stay illustrative, not medical.
-const AVOID = [...STYLE_AVOID,  'readable scale bar text'];
+const AVOID = [...STYLE_AVOID, 'readable scale bar text'];
 
 const words = (t: string) => t.split(/\s+/).filter(Boolean).length;
 const pad = (t: string, min: number, tail: string) =>
@@ -56,8 +56,8 @@ const spec: Spec = {
         'greyscale SEM; edge glow; deep focus; microstructure',
       ),
       [
-        "A tardigrade in plated armor stands guard on a pollen grain as big as a boulder, every crease razor sharp in grey microscopic relief. No readable text or logo.",
-        "A field of diatom shells lies arranged like the ruins of a cathedral, lace-like pores in every shell under deep greyscale focus. No readable text or logo.",
+        'A tardigrade in plated armor stands guard on a pollen grain as big as a boulder, every crease razor sharp in grey microscopic relief. No readable text or logo.',
+        'A field of diatom shells lies arranged like the ruins of a cathedral, lace-like pores in every shell under deep greyscale focus. No readable text or logo.',
         "A moth's wing scales overlap like tiles on a dark roof, one scale lifted and curled back, a speck of dust resting on it like a stone. No readable text or logo.",
       ],
     ),
@@ -88,9 +88,9 @@ const spec: Spec = {
         'membranes; nuclei; histology stain; microscope field',
       ),
       [
-        "A colony of glowing cells grows into the silhouette of a crowned serpent, blue nuclei and green membranes under fluorescence. No readable text or logo.",
-        "Pink and violet stained tissue folds on a slide until it reads as a mountain fortress at dusk under soft brightfield light. No readable text or logo.",
-        "Fluorescent neurons branch like a black winter forest, one bright cell glowing amber at the center like a lantern in the woods. No readable text or logo.",
+        'A colony of glowing cells grows into the silhouette of a crowned serpent, blue nuclei and green membranes under fluorescence. No readable text or logo.',
+        'Pink and violet stained tissue folds on a slide until it reads as a mountain fortress at dusk under soft brightfield light. No readable text or logo.',
+        'Fluorescent neurons branch like a black winter forest, one bright cell glowing amber at the center like a lantern in the woods. No readable text or logo.',
       ],
     ),
     'SP11-059': u(
@@ -104,9 +104,9 @@ const spec: Spec = {
         'six-fold symmetry; dendrites; ice sparkle; dark wool',
       ),
       [
-        "Resting alone on black wool, one six-armed ice crystal ends every dendrite in tiny claw-like branches around its hexagonal heart. No readable text or logo.",
-        "A thick hexagonal plate sits at the center of a crystal like a frozen throne room, feathery dendrites radiating outward. No readable text or logo.",
-        "Frost crystals grow across an old leaded window in the shape of a rider on horseback, backlit by pale dawn. No readable text or logo.",
+        'Resting alone on black wool, one six-armed ice crystal ends every dendrite in tiny claw-like branches around its hexagonal heart. No readable text or logo.',
+        'A thick hexagonal plate sits at the center of a crystal like a frozen throne room, feathery dendrites radiating outward. No readable text or logo.',
+        'Frost crystals grow across an old leaded window in the shape of a rider on horseback, backlit by pale dawn. No readable text or logo.',
       ],
     ),
     'SP11-060': u(
@@ -120,9 +120,9 @@ const spec: Spec = {
         'die patterns; copper traces; solder; city scale',
       ),
       [
-        "Seen up close from above, a green board becomes a walled city of copper-trace streets, chip towers and capacitor silos. No readable text or logo.",
-        "A bare silicon die shimmers with rainbow interference, its logic blocks laid out like a labyrinth garden with one dust particle trapped inside. No readable text or logo.",
-        "At a low angle warm diodes glow like windows in a sleeping town, copper roads and solder beads catching the light. No readable text or logo.",
+        'Seen up close from above, a green board becomes a walled city of copper-trace streets, chip towers and capacitor silos. No readable text or logo.',
+        'A bare silicon die shimmers with rainbow interference, its logic blocks laid out like a labyrinth garden with one dust particle trapped inside. No readable text or logo.',
+        'At a low angle warm diodes glow like windows in a sleeping town, copper roads and solder beads catching the light. No readable text or logo.',
       ],
       'Circuit Board Macro',
     ),
@@ -137,9 +137,9 @@ const spec: Spec = {
         'droplet lens; inverted world; meniscus; sparkle',
       ),
       [
-        "A droplet hanging from a black thorn holds an upside-down image of a dark castle under a red moon. No readable text or logo.",
-        "Dew drops strung along a spider thread at dawn each hold an inverted image of a torch procession winding through fog. No readable text or logo.",
-        "A single raindrop on a dark leaf refracts a raven taking flight across a stormy sky, its edge glowing. No readable text or logo.",
+        'A droplet hanging from a black thorn holds an upside-down image of a dark castle under a red moon. No readable text or logo.',
+        'Dew drops strung along a spider thread at dawn each hold an inverted image of a torch procession winding through fog. No readable text or logo.',
+        'A single raindrop on a dark leaf refracts a raven taking flight across a stormy sky, its edge glowing. No readable text or logo.',
       ],
     ),
     'SP11-062': u(
@@ -153,9 +153,9 @@ const spec: Spec = {
         'thread twist; weave crossings; fuzz',
       ),
       [
-        "Twisted wool fibers rise like a forest of ropes while a lost ladybird climbs between them looking for a way out. No readable text or logo.",
-        "On an old tapestry the gold-thread stitches of a serpent become giant twisted cables, frayed ends curling like vines. No readable text or logo.",
-        "A silk weave shimmers like a moonlit landscape of woven hills, one pulled thread running across it like a silver river. No readable text or logo.",
+        'Twisted wool fibers rise like a forest of ropes while a lost ladybird climbs between them looking for a way out. No readable text or logo.',
+        'On an old tapestry the gold-thread stitches of a serpent become giant twisted cables, frayed ends curling like vines. No readable text or logo.',
+        'A silk weave shimmers like a moonlit landscape of woven hills, one pulled thread running across it like a silver river. No readable text or logo.',
       ],
     ),
     'SP11-063': u(
@@ -169,9 +169,9 @@ const spec: Spec = {
         'rust bloom; flaking paint; pitting',
       ),
       [
-        "On an old iron helmet flaking red paint and orange blisters form the coastline of a burning kingdom seen from above. No readable text or logo.",
+        'On an old iron helmet flaking red paint and orange blisters form the coastline of a burning kingdom seen from above. No readable text or logo.',
         "On a ship's hull corrosion blooms spread like kraken tentacles through peeling teal paint and crusted salt. No readable text or logo.",
-        "Along the bit of an old skeleton key oxide crystals rise like crumbling towers, flakes of paint caught between them. No readable text or logo.",
+        'Along the bit of an old skeleton key oxide crystals rise like crumbling towers, flakes of paint caught between them. No readable text or logo.',
       ],
     ),
     'SP11-064': u(
@@ -185,9 +185,9 @@ const spec: Spec = {
         'radial iris fibers; pupil; corneal reflection',
       ),
       [
-        "A green-gold human iris fills the frame, radial fibers and crypts forming a ring of canyons around the black pupil. No readable text or logo.",
-        "A pale grey iris holds the tiny reflection of a woman with a candle in its pupil, a dark limbal ring framing everything. No readable text or logo.",
-        "A deep violet and amber iris radiates like a solar eclipse, a lone hooded figure reflected small in the pupil. No readable text or logo.",
+        'A green-gold human iris fills the frame, radial fibers and crypts forming a ring of canyons around the black pupil. No readable text or logo.',
+        'A pale grey iris holds the tiny reflection of a woman with a candle in its pupil, a dark limbal ring framing everything. No readable text or logo.',
+        'A deep violet and amber iris radiates like a solar eclipse, a lone hooded figure reflected small in the pupil. No readable text or logo.',
       ],
     ),
     'SP11-065': u(
@@ -202,8 +202,8 @@ const spec: Spec = {
       ),
       [
         "Swirling interference colors on a bubble's skin form a storm around a dark planet-like spot, rainbow bands racing. No readable text or logo.",
-        "A bubble drifts through a dark castle hall, its skin reflecting a candlelit banquet in curved rainbow colors. No readable text or logo.",
-        "A cluster of bubbles joined by thin walls floats like a palace, each surface reflecting a stained-glass window. No readable text or logo.",
+        'A bubble drifts through a dark castle hall, its skin reflecting a candlelit banquet in curved rainbow colors. No readable text or logo.',
+        'A cluster of bubbles joined by thin walls floats like a palace, each surface reflecting a stained-glass window. No readable text or logo.',
       ],
     ),
     'SP11-067': u(
@@ -219,7 +219,7 @@ const spec: Spec = {
       [
         "Split into rows like a dark forest, the barbs of a raven's plume shimmer with violet and green sheen as the light shifts. No readable text or logo.",
         "Staring back from a peacock's train, one eye of blue and bronze barbules shifts its iridescence as the light moves across it. No readable text or logo.",
-        "Soft downy barbs of an owl feather spread like a snowy landscape at dusk, a tiny seed caught in the fringe. No readable text or logo.",
+        'Soft downy barbs of an owl feather spread like a snowy landscape at dusk, a tiny seed caught in the fringe. No readable text or logo.',
       ],
     ),
     'SP11-068': u(
@@ -233,8 +233,8 @@ const spec: Spec = {
         'backlit veins; cell pattern; chlorophyll glow',
       ),
       [
-        "Backlit, an autumn maple leaf branches like a tree of life, red and gold cells glowing between its veins. No readable text or logo.",
-        "Against a dark sky, the lace-like network of a bleached skeleton leaf forms the tracery of a gothic rose window. No readable text or logo.",
+        'Backlit, an autumn maple leaf branches like a tree of life, red and gold cells glowing between its veins. No readable text or logo.',
+        'Against a dark sky, the lace-like network of a bleached skeleton leaf forms the tracery of a gothic rose window. No readable text or logo.',
         "Seen with light behind it, a green blade's network reads as a river delta from above, cells like tiny fields glowing in the sun. No readable text or logo.",
       ],
     ),
@@ -249,8 +249,8 @@ const spec: Spec = {
         'pores; fine lines; hairs; skin terrain',
       ),
       [
-        "On the back of a hand fine lines and pores form a desert of dunes, a single hair standing like a lone tree. No readable text or logo.",
-        "An old blackwork tattoo of a serpent has settled into the pores and fine lines of the skin, its edges softly blurred. No readable text or logo.",
+        'On the back of a hand fine lines and pores form a desert of dunes, a single hair standing like a lone tree. No readable text or logo.',
+        'An old blackwork tattoo of a serpent has settled into the pores and fine lines of the skin, its edges softly blurred. No readable text or logo.',
         "A fingertip's ridge pattern forms a labyrinth with a bead of sweat at its center like a pool. No readable text or logo.",
       ],
     ),
@@ -265,9 +265,9 @@ const spec: Spec = {
         'ink clouds; vortex rings; tendrils',
       ),
       [
-        "Black and crimson clouds bloom through clear water into a winged beast, tendrils trailing down from its tail. No readable text or logo.",
-        "A cloud of pale indigo unfurls through dark water into a ghostly lady in a flowing gown. No readable text or logo.",
-        "Violet and gold drops sink as vortex rings that stack into the smoke towers of a castle on white. No readable text or logo.",
+        'Black and crimson clouds bloom through clear water into a winged beast, tendrils trailing down from its tail. No readable text or logo.',
+        'A cloud of pale indigo unfurls through dark water into a ghostly lady in a flowing gown. No readable text or logo.',
+        'Violet and gold drops sink as vortex rings that stack into the smoke towers of a castle on white. No readable text or logo.',
       ],
     ),
     'SP11-071': u(
@@ -281,9 +281,9 @@ const spec: Spec = {
         'fuzzy colonies; hyphae; spore heads; agar',
       ),
       [
-        "In a petri dish fuzzy colonies have grown into a crowned skull, green spore rings and black specks for eyes. No readable text or logo.",
-        "Black-capped spore heads rise like a forest on a crust of old bread, fuzzy hyphae drifting like fog between them. No readable text or logo.",
-        "Colored fungal patches spread across a slice of bread like the map of rival kingdoms at war along their borders. No readable text or logo.",
+        'In a petri dish fuzzy colonies have grown into a crowned skull, green spore rings and black specks for eyes. No readable text or logo.',
+        'Black-capped spore heads rise like a forest on a crust of old bread, fuzzy hyphae drifting like fog between them. No readable text or logo.',
+        'Colored fungal patches spread across a slice of bread like the map of rival kingdoms at war along their borders. No readable text or logo.',
       ],
     ),
     'SP11-072': u(
@@ -297,9 +297,9 @@ const spec: Spec = {
         'crystal clusters; needles; chemical garden',
       ),
       [
-        "In a glass jar blue and green crystal towers grow into a castle skyline of faceted spires. No readable text or logo.",
-        "On black volcanic stone, needles of white salt slowly grow upward into the curved ribcage of a giant beast with a sharp faceted spine. No readable text or logo.",
-        "A rainbow bismuth crystal rises like a stepped temple staircase, iridescent oxide colors shifting across it. No readable text or logo.",
+        'In a glass jar blue and green crystal towers grow into a castle skyline of faceted spires. No readable text or logo.',
+        'On black volcanic stone, needles of white salt slowly grow upward into the curved ribcage of a giant beast with a sharp faceted spine. No readable text or logo.',
+        'A rainbow bismuth crystal rises like a stepped temple staircase, iridescent oxide colors shifting across it. No readable text or logo.',
       ],
     ),
     'SP11-073': u(
@@ -313,9 +313,9 @@ const spec: Spec = {
         'wavy grooves; stylus; dust',
       ),
       [
-        "Record grooves ripple like a line of dancers as the stylus tip glides through the canyon. No readable text or logo.",
+        'Record grooves ripple like a line of dancers as the stylus tip glides through the canyon. No readable text or logo.',
         "Dust particles sit like boulders in an old record's groove while a hair lies across it like a fallen tree. No readable text or logo.",
-        "The grooves of a loud passage become jagged cliffs, the stylus throwing a long shadow across them. No readable text or logo.",
+        'The grooves of a loud passage become jagged cliffs, the stylus throwing a long shadow across them. No readable text or logo.',
       ],
     ),
     'SP11-074': u(
@@ -329,9 +329,9 @@ const spec: Spec = {
         'hooks; loops; fibers',
       ),
       [
-        "Stiff black plastic barbs form a thorny forest while tangled fiber loops hang between them like vines in a jungle night. No readable text or logo.",
-        "Lined up like a field of scythes under pale light, rows of curved plastic barbs wait while blurred fiber loops tangle behind them. No readable text or logo.",
-        "Fiber loops grow like a tangled jungle canopy, one torn strand drooping across a gap like a broken bridge. No readable text or logo.",
+        'Stiff black plastic barbs form a thorny forest while tangled fiber loops hang between them like vines in a jungle night. No readable text or logo.',
+        'Lined up like a field of scythes under pale light, rows of curved plastic barbs wait while blurred fiber loops tangle behind them. No readable text or logo.',
+        'Fiber loops grow like a tangled jungle canopy, one torn strand drooping across a gap like a broken bridge. No readable text or logo.',
       ],
       'Hook-and-Loop Macro',
     ),
@@ -346,9 +346,9 @@ const spec: Spec = {
         'open cells; holes; walls',
       ),
       [
-        "A natural sea sponge becomes a cave system, light filtering through its pores onto a tiny water droplet. No readable text or logo.",
-        "In warm amber light the open cells of a sponge arrange themselves into a hidden watching face. No readable text or logo.",
-        "Synthetic foam cells form a honeycomb city of round rooms, soft light glowing through the thin walls. No readable text or logo.",
+        'A natural sea sponge becomes a cave system, light filtering through its pores onto a tiny water droplet. No readable text or logo.',
+        'In warm amber light the open cells of a sponge arrange themselves into a hidden watching face. No readable text or logo.',
+        'Synthetic foam cells form a honeycomb city of round rooms, soft light glowing through the thin walls. No readable text or logo.',
       ],
     ),
     'SP11-076': u(
@@ -362,9 +362,9 @@ const spec: Spec = {
         'tiny leaves; spore capsules; dew',
       ),
       [
-        "A miniature forest of moss holds spore capsules on thin stalks like lanterns while a beetle wanders through dew. No readable text or logo.",
-        "In a quiet forest a fallen stone face lies buried in tiny green leaves that fill its eye sockets, spore capsules sprouting from its brow. No readable text or logo.",
-        "A small snail climbs a tall spore stalk like a slow beast scaling a tower, dew beading on the capsule above it. No readable text or logo.",
+        'A miniature forest of moss holds spore capsules on thin stalks like lanterns while a beetle wanders through dew. No readable text or logo.',
+        'In a quiet forest a fallen stone face lies buried in tiny green leaves that fill its eye sockets, spore capsules sprouting from its brow. No readable text or logo.',
+        'A small snail climbs a tall spore stalk like a slow beast scaling a tower, dew beading on the capsule above it. No readable text or logo.',
       ],
     ),
     'SP11-077': u(
@@ -378,9 +378,9 @@ const spec: Spec = {
         'angular grains; glue; grit',
       ),
       [
-        "Angular abrasive grains rise into a rocky mountain range under raking light, pools of dried glue sitting between them like frozen lakes. No readable text or logo.",
-        "A single red garnet grain rises like a fortress on a hill of grey abrasive grit. No readable text or logo.",
-        "Fine grit spreads like a desert of glittering crystal boulders with one human hair lying across it like a fallen log. No readable text or logo.",
+        'Angular abrasive grains rise into a rocky mountain range under raking light, pools of dried glue sitting between them like frozen lakes. No readable text or logo.',
+        'A single red garnet grain rises like a fortress on a hill of grey abrasive grit. No readable text or logo.',
+        'Fine grit spreads like a desert of glittering crystal boulders with one human hair lying across it like a fallen log. No readable text or logo.',
       ],
       'Sandpaper Grit Macro',
     ),
@@ -395,9 +395,9 @@ const spec: Spec = {
         'honeycomb cells; pores',
       ),
       [
-        "Seen through a microscope, cork cells form a honeycomb of hollow rooms, warm light passing through their thin walls. No readable text or logo.",
-        "The cut end of an old wine stopper shows wine-stained pores like red caves and broken cell walls at the edge. No readable text or logo.",
-        "Deep cracks in oak bark open like canyons while a small spider crosses a honeycomb ridge. No readable text or logo.",
+        'Seen through a microscope, cork cells form a honeycomb of hollow rooms, warm light passing through their thin walls. No readable text or logo.',
+        'The cut end of an old wine stopper shows wine-stained pores like red caves and broken cell walls at the edge. No readable text or logo.',
+        'Deep cracks in oak bark open like canyons while a small spider crosses a honeycomb ridge. No readable text or logo.',
       ],
     ),
     'SP11-079': u(
@@ -411,9 +411,9 @@ const spec: Spec = {
         'twill weave; tows; resin gloss',
       ),
       [
-        "Glossy black tows in a twill weave overlap like armor scales, resin highlights and hard rim light along each one. No readable text or logo.",
-        "A twill weave bends over the rim of a helmet shell, deep glossy black and every fiber tow catching the light. No readable text or logo.",
-        "A woven dark landscape seen from above holds one frayed tow lifting out like a fallen tree. No readable text or logo.",
+        'Glossy black tows in a twill weave overlap like armor scales, resin highlights and hard rim light along each one. No readable text or logo.',
+        'A twill weave bends over the rim of a helmet shell, deep glossy black and every fiber tow catching the light. No readable text or logo.',
+        'A woven dark landscape seen from above holds one frayed tow lifting out like a fallen tree. No readable text or logo.',
       ],
       'Carbon Fiber Weave Macro',
     ),
@@ -428,9 +428,9 @@ const spec: Spec = {
         'pappus; fine hairs; seeds',
       ),
       [
-        "Backlit at sunset, a seed head breaks apart into glowing parachutes, fine hairs catching the light. No readable text or logo.",
-        "A single seed on a glowing parachute of fine hairs drifts past the black silhouette of a hilltop castle at dusk, lit gold from behind. No readable text or logo.",
-        "Seeds caught in a dew-covered spider web glitter like trapped stars, their fine hairs sparkling against the dark edge of a forest. No readable text or logo.",
+        'Backlit at sunset, a seed head breaks apart into glowing parachutes, fine hairs catching the light. No readable text or logo.',
+        'A single seed on a glowing parachute of fine hairs drifts past the black silhouette of a hilltop castle at dusk, lit gold from behind. No readable text or logo.',
+        'Seeds caught in a dew-covered spider web glitter like trapped stars, their fine hairs sparkling against the dark edge of a forest. No readable text or logo.',
       ],
     ),
   },

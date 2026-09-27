@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Crystal growth macro: chemical garden crystals growing into sharp geometric forms.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: grown from crystals: needles, cubes, clusters and chemical garden towers.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: grown from crystals: needles, cubes, clusters and chemical garden towers."
   color_and_tone: Clear crystals with vivid chemical colors, as the instrument or lens would record it.
   lighting_and_shadow: Backlight through crystal, matching the real imaging setup at this scale.
   texture_and_material: Faceted crystals and growth lines, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Magical, sharp, slow and wondrous, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: crystal clusters; needles; chemical garden
-  creative_brief: 'Crystal growth macro: chemical garden crystals growing into sharp geometric forms. Carry it through crystal clusters, needles, chemical garden. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Crystal growth macro: chemical garden crystals growing into sharp geometric forms. Carry it through crystal clusters, needles, chemical garden. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

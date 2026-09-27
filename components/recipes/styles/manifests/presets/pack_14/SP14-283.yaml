@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Looking up at the ceiling, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with infinite night reverence.
   rendering_and_quality: Rich painted ceiling, kept consistent across the whole image.
-  creative_brief: 'Starry tomb ceiling: burial chamber ceilings painted deep blue with rows of yellow five-pointed stars and the sky goddess stretched across them. Carry it through blue ceiling, yellow stars, sky goddess, tomb. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Starry tomb ceiling: burial chamber ceilings painted deep blue with rows of yellow five-pointed stars and the sky goddess stretched across them. Carry it through blue ceiling, yellow stars, sky goddess, tomb. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: blue ceiling; yellow stars; sky goddess; tomb
 avoidRules:
   - readable hieroglyphs or cartouches

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low heroic three-quarter product angle on a dark backdrop.
   atmosphere_and_mood: Keep the requested mood with epic monumental presence.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Prime 1 Studio Museum Masterline look: huge one-third-scale polystone statues with hyper-detailed sculpting, dramatic dynamic poses, elaborate environmental bases and cinematic paint washes. Carry it through Prime 1 polystone, one-third scale, environmental base, dramatic pose. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Prime 1 Studio Museum Masterline look: huge one-third-scale polystone statues with hyper-detailed sculpting, dramatic dynamic poses, elaborate environmental bases and cinematic paint washes. Carry it through Prime 1 polystone, one-third scale, environmental base, dramatic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Prime 1 polystone; one-third scale; environmental base; dramatic pose
 avoidRules:
   - existing franchise characters

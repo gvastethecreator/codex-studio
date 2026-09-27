@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Quiet static compositions with a single odd object.
   atmosphere_and_mood: Keep the requested mood with quiet mounting cruelty.
   rendering_and_quality: Quiet unsettling nineties Japanese horror frame, in the recognizable hand of Audition 1999.
-  creative_brief: 'Takashi Miike Audition (1999) look: quiet muted romance slowly turning cruel, empty sparse apartments, a single sack in the corner and sudden shocking stillness. Carry it through Miike quiet cruelty, sparse rooms, single sack. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Takashi Miike Audition (1999) look: quiet muted romance slowly turning cruel, empty sparse apartments, a single sack in the corner and sudden shocking stillness. Carry it through Miike quiet cruelty, sparse rooms, single sack. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Miike quiet cruelty; sparse rooms; single sack
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow meditative tracking shots, framed the way Stalker 1979 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with spiritual weary wonder.
   rendering_and_quality: Authentic seventies Soviet art cinema frame, in the recognizable hand of Stalker 1979.
-  creative_brief: 'Andrei Tarkovsky Stalker (1979) look: sepia-toned industrial wasteland and lush green Zone, flooded rooms, rusted machinery, dripping water and slow meditative tracking shots. Carry it through Stalker Zone, flooded ruins, sepia, slow tracking. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Andrei Tarkovsky Stalker (1979) look: sepia-toned industrial wasteland and lush green Zone, flooded rooms, rusted machinery, dripping water and slow meditative tracking shots. Carry it through Stalker Zone, flooded ruins, sepia, slow tracking. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Stalker Zone; flooded ruins; sepia; slow tracking
 avoidRules:
   - existing franchise characters

@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Sharp grid-based layout, framed the way Designers Republic composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful techno irony.
   rendering_and_quality: Faithful nineties Warp-era cover design, in the recognizable hand of Designers Republic.
-  creative_brief: 'The Designers Republic Warp Records cover look of the 1990s: techno-corporate parody graphics, Japanese-inspired pictograms, fake product logos, sharp grids and hyper-clean color. Carry it through Designers Republic pictograms, parody logos, grids. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "The Designers Republic Warp Records cover look of the 1990s: techno-corporate parody graphics, Japanese-inspired pictograms, fake product logos, sharp grids and hyper-clean color. Carry it through Designers Republic pictograms, parody logos, grids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Designers Republic pictograms; parody logos; grids
 avoidRules:
   - the real Warp Records logo

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Close woodland vignette, framed the way Brian Froud composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with mischievous woodland magic.
   rendering_and_quality: Earthy faerie watercolor illustration, in the recognizable hand of Brian Froud.
-  creative_brief: 'Brian Froud faerie art: mossy earthy watercolor and pencil, knobbly goblins and faeries with expressive faces, tangled roots, lichen and mischievous woodland magic. Carry it through Froud faeries, knobbly goblins, roots and lichen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Brian Froud faerie art: mossy earthy watercolor and pencil, knobbly goblins and faeries with expressive faces, tangled roots, lichen and mischievous woodland magic. Carry it through Froud faeries, knobbly goblins, roots and lichen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Froud faeries; knobbly goblins; roots and lichen
 avoidRules:
   - Labyrinth or Dark Crystal characters

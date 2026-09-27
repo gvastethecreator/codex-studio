@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic frontal compositions of gleaming machines and figures.
   atmosphere_and_mood: Proud, radiant and ancient, an empire of shining metal.
   rendering_and_quality: Gleaming detailed illustration with polished metal and patina.
-  creative_brief: 'Bronzepunk: a bronze age that never ended, with cast bronze automatons, gleaming chariots, sun-disc mirrors and foundries pouring glowing metal into clay molds. Carry it through bronze automatons, sun-disc mirrors, verdigris patina, glowing foundries. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bronzepunk: a bronze age that never ended, with cast bronze automatons, gleaming chariots, sun-disc mirrors and foundries pouring glowing metal into clay molds. Carry it through bronze automatons, sun-disc mirrors, verdigris patina, glowing foundries. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: bronze automatons; sun-disc mirrors; verdigris patina; glowing foundries
 avoidRules:
   - readable text

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low gritty night tracking, framed the way The Terminator 1984 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with relentless nocturnal dread.
   rendering_and_quality: Authentic mid-eighties Cameron frame, in the recognizable hand of The Terminator 1984.
-  creative_brief: 'James Cameron The Terminator (1984) look: low-budget blue-grey Los Angeles nights, neon discos, police stations, sodium streets and a relentless nightmare pursuit. Carry it through Terminator blue nights, neon, pursuit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "James Cameron The Terminator (1984) look: low-budget blue-grey Los Angeles nights, neon discos, police stations, sodium streets and a relentless nightmare pursuit. Carry it through Terminator blue nights, neon, pursuit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Terminator blue nights; neon; pursuit
 avoidRules:
   - a chrome endoskeleton with red eyes

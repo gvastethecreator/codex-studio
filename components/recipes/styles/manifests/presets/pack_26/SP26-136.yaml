@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Bleak cropped photo with spiky logo, framed the way Black Metal 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bleak frostbitten solitude.
   rendering_and_quality: Faithful early-nineties black metal cover, in the recognizable hand of Black Metal 1994.
-  creative_brief: 'Early nineties Norwegian black metal cover look: grainy black-and-white photocopied forest photos, frostbitten landscapes, candles, illegible spiky logos and raw underground bleakness. Carry it through Black metal photocopy, frost forest, spiky logo. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Early nineties Norwegian black metal cover look: grainy black-and-white photocopied forest photos, frostbitten landscapes, candles, illegible spiky logos and raw underground bleakness. Carry it through Black metal photocopy, frost forest, spiky logo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Black metal photocopy; frost forest; spiky logo
 avoidRules:
   - burning churches

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Regular three-tier album panels with deadpan staging, framed the way Jacques Tardi composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bitter deadpan fatalism.
   rendering_and_quality: Faithful Tardi grey-wash album page, in the recognizable hand of Jacques Tardi.
-  creative_brief: 'Jacques Tardi page look of the 1970s to 2010s: loose ligne claire in grey washes, First World War trenches and belle époque Paris, droopy-eyed people and matter-of-fact brutality. Carry it through Tardi grey ligne, trenches, belle époque Paris. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jacques Tardi page look of the 1970s to 2010s: loose ligne claire in grey washes, First World War trenches and belle époque Paris, droopy-eyed people and matter-of-fact brutality. Carry it through Tardi grey ligne, trenches, belle époque Paris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tardi grey ligne; trenches; belle époque Paris
 avoidRules:
   - a red-haired woman detective in a Victorian coat and hat

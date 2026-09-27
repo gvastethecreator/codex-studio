@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; from the centre, radiating wings or rings of cells recede symmetrically; repetition of doors dominates.
   atmosphere_and_mood: Watched, cold and ordered, a building designed to be seen through.
   rendering_and_quality: Sober photograph with exact repetition and ironwork detail.
-  creative_brief: 'Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point
 avoidRules:
   - one-point corridor perspective as default

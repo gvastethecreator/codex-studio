@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with cozy eye-level animal views.
   atmosphere_and_mood: Keep the requested mood with tender, cozy woodland charm.
   rendering_and_quality: Delicate detailed watercolor with soft edges and careful fur.
-  creative_brief: 'Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings. Carry it through watercolor animals, tiny clothes, soft fur detail, cozy woodland. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings. Carry it through watercolor animals, tiny clothes, soft fur detail, cozy woodland. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: watercolor animals; tiny clothes; soft fur detail; cozy woodland
 avoidRules:
   - aggressive predators

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Playdead Limbo (2010) look: side-scrolling black silhouettes on a grey foggy monochrome world, film grain, vignette, deadly traps and eerie forest silence.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a black silhouette against grey foggy monochrome layers. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Monochrome black, grey fog and white glow, true to the Limbo 2010 palette.
-  lighting_and_shadow: "Soft grey fog light that fades to near white behind and darkens heavily toward every edge of the frame."
-  texture_and_material: "Flicker of film grain, soft blur on far layers and crisp black silhouettes in front."
+  lighting_and_shadow: 'Soft grey fog light that fades to near white behind and darkens heavily toward every edge of the frame.'
+  texture_and_material: 'Flicker of film grain, soft blur on far layers and crisp black silhouettes in front.'
   camera_and_composition: Side-scrolling view with parallax fog layers, framed the way Limbo 2010 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie silent dread.
-  rendering_and_quality: "A 2010 side-view frame at 1280 by 720 in pure greyscale: black cut-out shapes over layers of grey fog, heavy vignette."
-  creative_brief: 'Playdead Limbo (2010) look: side-scrolling black silhouettes on a grey foggy monochrome world, film grain, vignette, deadly traps and eerie forest silence. Carry it through Limbo silhouettes, grey fog, film grain, vignette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2010 side-view frame at 1280 by 720 in pure greyscale: black cut-out shapes over layers of grey fog, heavy vignette.'
+  creative_brief: "Playdead Limbo (2010) look: side-scrolling black silhouettes on a grey foggy monochrome world, film grain, vignette, deadly traps and eerie forest silence. Carry it through Limbo silhouettes, grey fog, film grain, vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Limbo silhouettes; grey fog; film grain; vignette
 avoidRules:
   - a small silhouette boy with glowing white eyes

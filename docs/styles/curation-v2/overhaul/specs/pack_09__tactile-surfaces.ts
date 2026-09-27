@@ -21,9 +21,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a museum pedestal a jousting helmet upholstered in emerald pile shows dark finger-brushed trails where a guard could not resist touching it. No readable text or logo.",
-        "Open on a dressing table, an antique jewelry box in plum pile darkens wherever fingers have pressed the short dense nap. No readable text or logo.",
-        "A greyhound sleeps on a daybed of crushed teal velvet in a sunlit parlor, the pile shifting from dark to silver as it breathes. No readable text or logo.",
+        'On a museum pedestal a jousting helmet upholstered in emerald pile shows dark finger-brushed trails where a guard could not resist touching it. No readable text or logo.',
+        'Open on a dressing table, an antique jewelry box in plum pile darkens wherever fingers have pressed the short dense nap. No readable text or logo.',
+        'A greyhound sleeps on a daybed of crushed teal velvet in a sunlit parlor, the pile shifting from dark to silver as it breathes. No readable text or logo.',
       ],
     },
     'SP09-039': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a frozen field at dawn an abandoned red tractor is grown over with feathery hoarfrost, long needles standing off every edge. No readable text or logo.",
-        "Stretched across a wrought-iron garden gate, a spider web has thickened into a lace of frost crystals, every strand furred white. No readable text or logo.",
-        "Leaning on a fence at dawn, an old bicycle wears a crust of feathery ice needles on its frame, spokes and basket. No readable text or logo.",
+        'In a frozen field at dawn an abandoned red tractor is grown over with feathery hoarfrost, long needles standing off every edge. No readable text or logo.',
+        'Stretched across a wrought-iron garden gate, a spider web has thickened into a lace of frost crystals, every strand furred white. No readable text or logo.',
+        'Leaning on a fence at dawn, an old bicycle wears a crust of feathery ice needles on its frame, spokes and basket. No readable text or logo.',
       ],
     },
     'SP09-045': {
@@ -55,9 +55,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Curled on a wooden shelf, a family of needle-matted wool hedgehogs shows fuzzy surfaces and soft rounded edges. No readable text or logo.",
-        "On a windowsill a tiny village of matted wool mushrooms has round fuzzy doors and one lit window. No readable text or logo.",
-        "On a farmhouse table sit matching wool slippers and a tea cosy in dense matted grey, a real mouse asleep in one slipper. No readable text or logo.",
+        'Curled on a wooden shelf, a family of needle-matted wool hedgehogs shows fuzzy surfaces and soft rounded edges. No readable text or logo.',
+        'On a windowsill a tiny village of matted wool mushrooms has round fuzzy doors and one lit window. No readable text or logo.',
+        'On a farmhouse table sit matching wool slippers and a tea cosy in dense matted grey, a real mouse asleep in one slipper. No readable text or logo.',
       ],
     },
     'SP09-047': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Standing in a snowy field, a full suit of armor covered in shaggy pink faux fur looks less menacing than intended. No readable text or logo.",
-        "On a busy street an old red telephone kiosk is covered entirely in shaggy lilac pile ruffling in the wind. No readable text or logo.",
-        "On a dark stage an electric guitar covered in lime-green shag catches the spotlight in every long glossy strand. No readable text or logo.",
+        'Standing in a snowy field, a full suit of armor covered in shaggy pink faux fur looks less menacing than intended. No readable text or logo.',
+        'On a busy street an old red telephone kiosk is covered entirely in shaggy lilac pile ruffling in the wind. No readable text or logo.',
+        'On a dark stage an electric guitar covered in lime-green shag catches the spotlight in every long glossy strand. No readable text or logo.',
       ],
     },
     'SP09-050': {
@@ -89,8 +89,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a workshop table a lighthouse model carved from dry white chalk is smudged by fingerprints, powder gathered at its base. No readable text or logo.",
-        "Resting on dark slate, a small fox figure carved from soft white stone shows a smudge where it was handled and a trail of fine dust. No readable text or logo.",
+        'On a workshop table a lighthouse model carved from dry white chalk is smudged by fingerprints, powder gathered at its base. No readable text or logo.',
+        'Resting on dark slate, a small fox figure carved from soft white stone shows a smudge where it was handled and a trail of fine dust. No readable text or logo.',
         "On a grey cliff a climber's hands and rope are coated in powdery white, leaving ghostly prints on every hold. No readable text or logo.",
       ],
     },
@@ -106,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Filling a dusty attic, a whale shaped from fluffy pink insulation batts sheds itchy fibers into a beam of light. No readable text or logo.",
-        "In a stubble field a scarecrow of yellow insulation batts sheds loose glass fibers into the wind, crows refusing to land on it. No readable text or logo.",
-        "At dawn a hot-air balloon basket stuffed with pink insulation spills fluffy fibers over its rim onto the frosty grass. No readable text or logo.",
+        'Filling a dusty attic, a whale shaped from fluffy pink insulation batts sheds itchy fibers into a beam of light. No readable text or logo.',
+        'In a stubble field a scarecrow of yellow insulation batts sheds loose glass fibers into the wind, crows refusing to land on it. No readable text or logo.',
+        'At dawn a hot-air balloon basket stuffed with pink insulation spills fluffy fibers over its rim onto the frosty grass. No readable text or logo.',
       ],
     },
     'SP09-074': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Inside an old station wagon every surface, seats, dashboard and ceiling, is covered in long orange shag pile. No readable text or logo.",
-        "Crossing a desert, a camel covered in brown and cream shag pile sways its long looped strands with each step. No readable text or logo.",
-        "In a mid-century house a spiral staircase is covered in avocado-green shag, long pile on every step and even the handrail. No readable text or logo.",
+        'Inside an old station wagon every surface, seats, dashboard and ceiling, is covered in long orange shag pile. No readable text or logo.',
+        'Crossing a desert, a camel covered in brown and cream shag pile sways its long looped strands with each step. No readable text or logo.',
+        'In a mid-century house a spiral staircase is covered in avocado-green shag, long pile on every step and even the handrail. No readable text or logo.',
       ],
     },
     'SP09-075': {
@@ -140,9 +140,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Parked at a campsite, a vintage camper van is covered entirely in bright synthetic grass, a garden gnome standing on its roof. No readable text or logo.",
-        "On a city rooftop at sunset a grand piano is covered in dense synthetic turf, the lid mowed in neat stripes. No readable text or logo.",
-        "In a public park a giant snail sculpture wears a shell of uniform synthetic grass, a picnicking couple leaning against it. No readable text or logo.",
+        'Parked at a campsite, a vintage camper van is covered entirely in bright synthetic grass, a garden gnome standing on its roof. No readable text or logo.',
+        'On a city rooftop at sunset a grand piano is covered in dense synthetic turf, the lid mowed in neat stripes. No readable text or logo.',
+        'In a public park a giant snail sculpture wears a shell of uniform synthetic grass, a picnicking couple leaning against it. No readable text or logo.',
       ],
     },
   },
@@ -162,9 +162,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Guarding the entrance of a steamy spa, a lion statue made of white towel loops wears a folded washcloth on its head. No readable text or logo.",
-        "Sprawled in a claw-foot bathtub, an octopus made of striped towel fabric wraps a rubber duck in one plush tentacle. No readable text or logo.",
-        "By a turquoise pool a deck chair upholstered in thick yellow towel loops is soaked dark at one corner. No readable text or logo.",
+        'Guarding the entrance of a steamy spa, a lion statue made of white towel loops wears a folded washcloth on its head. No readable text or logo.',
+        'Sprawled in a claw-foot bathtub, an octopus made of striped towel fabric wraps a rubber duck in one plush tentacle. No readable text or logo.',
+        'By a turquoise pool a deck chair upholstered in thick yellow towel loops is soaked dark at one corner. No readable text or logo.',
       ],
     },
     {
@@ -182,9 +182,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Resting on a desert rug, a camel saddle and bags in tan napped leather show light and dark finger marks. No readable text or logo.",
-        "In a white gallery an antelope sculpture covered in grey napped leather turns dark where visitors stroked it against the grain. No readable text or logo.",
-        "Left on a cafe chair, an accordion covered in burgundy napped leather shows finger marks along its bellows. No readable text or logo.",
+        'Resting on a desert rug, a camel saddle and bags in tan napped leather show light and dark finger marks. No readable text or logo.',
+        'In a white gallery an antelope sculpture covered in grey napped leather turns dark where visitors stroked it against the grain. No readable text or logo.',
+        'Left on a cafe chair, an accordion covered in burgundy napped leather shows finger marks along its bellows. No readable text or logo.',
       ],
     },
     {
@@ -202,9 +202,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a snowy field stands an astronaut suit made of puffy white padding, diamond stitching across the arms. No readable text or logo.",
-        "Hanging from a museum ceiling, a whale made of navy padding shows channel stitching along its belly. No readable text or logo.",
-        "Set in an old stone wall, a chapel door upholstered in cream diamond-stitched padding has brass buttons at every crossing. No readable text or logo.",
+        'In a snowy field stands an astronaut suit made of puffy white padding, diamond stitching across the arms. No readable text or logo.',
+        'Hanging from a museum ceiling, a whale made of navy padding shows channel stitching along its belly. No readable text or logo.',
+        'Set in an old stone wall, a chapel door upholstered in cream diamond-stitched padding has brass buttons at every crossing. No readable text or logo.',
       ],
     },
     {
@@ -222,9 +222,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a summer meadow a horse statue covered in rust-colored wales shows parallel velvet ridges following its muscles. No readable text or logo.",
-        "On a park bench in autumn sits a teddy bear of worn mustard wales, rubbed flat on the nose from years of hugs. No readable text or logo.",
-        "By a reading lamp a deep armchair upholstered in chocolate wales catches the light in parallel ridges. No readable text or logo.",
+        'In a summer meadow a horse statue covered in rust-colored wales shows parallel velvet ridges following its muscles. No readable text or logo.',
+        'On a park bench in autumn sits a teddy bear of worn mustard wales, rubbed flat on the nose from years of hugs. No readable text or logo.',
+        'By a reading lamp a deep armchair upholstered in chocolate wales catches the light in parallel ridges. No readable text or logo.',
       ],
     },
     {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a recording studio a wall of grey slow-rebound foam holds fresh handprints that are slowly rising back. No readable text or logo.",
-        "A car seat of slow-rebound foam still holds the deep imprint of its last driver, keys left in the hollow. No readable text or logo.",
-        "A pillow still holds the perfect imprint of a curled cat that has just left, a few hairs in the hollow. No readable text or logo.",
+        'In a recording studio a wall of grey slow-rebound foam holds fresh handprints that are slowly rising back. No readable text or logo.',
+        'A car seat of slow-rebound foam still holds the deep imprint of its last driver, keys left in the hollow. No readable text or logo.',
+        'A pillow still holds the perfect imprint of a curled cat that has just left, a few hairs in the hollow. No readable text or logo.',
       ],
     },
     {
@@ -262,9 +262,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At the top of a snowy hill a wooden sled is wrapped in curly cream sheepskin, dense crimped wool around the runners. No readable text or logo.",
-        "Standing in fresh snow, a ram sculpture covered in curly sheepskin shows polished horns above dense crimped wool. No readable text or logo.",
-        "In a cabin by the fire a low armchair covered in curly sheepskin catches the firelight, a book face down on the seat. No readable text or logo.",
+        'At the top of a snowy hill a wooden sled is wrapped in curly cream sheepskin, dense crimped wool around the runners. No readable text or logo.',
+        'Standing in fresh snow, a ram sculpture covered in curly sheepskin shows polished horns above dense crimped wool. No readable text or logo.',
+        'In a cabin by the fire a low armchair covered in curly sheepskin catches the firelight, a book face down on the seat. No readable text or logo.',
       ],
     },
     {
@@ -282,9 +282,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a bedside table a jellyfish-shaped lamp of matte pastel-mint rubber glows slightly through its squishy bell. No readable text or logo.",
-        "Sitting on a real lily pad, a squishy peach rubber frog is slightly translucent at the toes, droplets beading on its skin. No readable text or logo.",
-        "On a white table a chess set cast in soft pastel rubber has one pawn visibly squashed by an impatient player. No readable text or logo.",
+        'On a bedside table a jellyfish-shaped lamp of matte pastel-mint rubber glows slightly through its squishy bell. No readable text or logo.',
+        'Sitting on a real lily pad, a squishy peach rubber frog is slightly translucent at the toes, droplets beading on its skin. No readable text or logo.',
+        'On a white table a chess set cast in soft pastel rubber has one pawn visibly squashed by an impatient player. No readable text or logo.',
       ],
     },
     {
@@ -303,8 +303,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a stormy beach a surfer's dog wears a fitted black wetsuit, thick spongy panels with glued seams. No readable text or logo.",
-        "Lying on wet rocks, a seal sculpture made of black wetsuit panels shows glued seams along its body. No readable text or logo.",
-        "On a fast river a kayak covered in blue wetsuit panels bounces through the spray, jersey facing darkened by water. No readable text or logo.",
+        'Lying on wet rocks, a seal sculpture made of black wetsuit panels shows glued seams along its body. No readable text or logo.',
+        'On a fast river a kayak covered in blue wetsuit panels bounces through the spray, jersey facing darkened by water. No readable text or logo.',
       ],
     },
     {
@@ -322,9 +322,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Floating on a crater lake, a small boat carved from pale frothy stone bobs lightly despite being solid rock. No readable text or logo.",
-        "On a black sand beach a ram skull carved from grey frothy volcanic stone catches the light in its curled horns. No readable text or logo.",
-        "In a sunny courtyard a sphinx carved from porous volcanic stone crumbles slightly at the paws. No readable text or logo.",
+        'Floating on a crater lake, a small boat carved from pale frothy stone bobs lightly despite being solid rock. No readable text or logo.',
+        'On a black sand beach a ram skull carved from grey frothy volcanic stone catches the light in its curled horns. No readable text or logo.',
+        'In a sunny courtyard a sphinx carved from porous volcanic stone crumbles slightly at the paws. No readable text or logo.',
       ],
     },
     {
@@ -342,9 +342,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a white gallery hangs a stag head trophy coated in black velvety fibers, a uniform matte coat on the antlers. No readable text or logo.",
-        "On a side table a rotary telephone coated in red velvety fibers has a soft matte dial and handset. No readable text or logo.",
-        "In a fruit bowl a pineapple coated in golden velvety fibers sits matte and soft beside ordinary apples. No readable text or logo.",
+        'In a white gallery hangs a stag head trophy coated in black velvety fibers, a uniform matte coat on the antlers. No readable text or logo.',
+        'On a side table a rotary telephone coated in red velvety fibers has a soft matte dial and handset. No readable text or logo.',
+        'In a fruit bowl a pineapple coated in golden velvety fibers sits matte and soft beside ordinary apples. No readable text or logo.',
       ],
     },
     {
@@ -362,9 +362,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a workbench a bust of an old sailor modeled from grey putty is covered in fingerprints and folds in his beard and cap. No readable text or logo.",
-        "On a table an octopus modeled from soft teal putty stretches its tentacles into thin pulled strands. No readable text or logo.",
-        "On a leaf rests a snail house modeled from putty, a spiral shell with fingerprints and a tiny door pressed in with a fingernail. No readable text or logo.",
+        'On a workbench a bust of an old sailor modeled from grey putty is covered in fingerprints and folds in his beard and cap. No readable text or logo.',
+        'On a table an octopus modeled from soft teal putty stretches its tentacles into thin pulled strands. No readable text or logo.',
+        'On a leaf rests a snail house modeled from putty, a spiral shell with fingerprints and a tiny door pressed in with a fingernail. No readable text or logo.',
       ],
     },
     {
@@ -383,8 +383,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a wooden bench a vintage doctor's bag in cognac full-grain leather shows raised pebble texture and a brass clasp. No readable text or logo.",
-        "On a desert rock an armadillo sculpture covered in black full-grain leather shows raised pebble texture across its banded shell. No readable text or logo.",
-        "On a side table a gramophone horn covered in oxblood grained leather shows soft sheen along its flare. No readable text or logo.",
+        'On a desert rock an armadillo sculpture covered in black full-grain leather shows raised pebble texture across its banded shell. No readable text or logo.',
+        'On a side table a gramophone horn covered in oxblood grained leather shows soft sheen along its flare. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

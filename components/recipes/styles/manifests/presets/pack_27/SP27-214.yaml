@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic angles and slow-motion explosions, framed the way Con Air 1997 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with over-the-top sweaty bravado.
   rendering_and_quality: Authentic late-nineties Bruckheimer-style frame, in the recognizable hand of Con Air 1997.
-  creative_brief: 'Simon West Con Air (1997) look: sweaty prison transport plane, desert boneyards, Las Vegas crash landings, over-the-top explosions and golden-hour bravado. Carry it through Con Air prison plane, desert boneyard, golden hour. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Simon West Con Air (1997) look: sweaty prison transport plane, desert boneyards, Las Vegas crash landings, over-the-top explosions and golden-hour bravado. Carry it through Con Air prison plane, desert boneyard, golden hour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Con Air prison plane; desert boneyard; golden hour
 avoidRules:
   - existing franchise characters

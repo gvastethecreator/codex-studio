@@ -27,13 +27,13 @@ visualDna:
   aesthetic: 'Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as simple painterly figures seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sunset orange, coral pink and teal ridges, true to the Firewatch 2016 palette.
-  lighting_and_shadow: "Warm poster-like sunset gradients in orange, pink and purple."
-  texture_and_material: "Flat painted shapes and soft gradients, trees as simple layered silhouettes."
+  lighting_and_shadow: 'Warm poster-like sunset gradients in orange, pink and purple.'
+  texture_and_material: 'Flat painted shapes and soft gradients, trees as simple layered silhouettes.'
   camera_and_composition: First-person view from a lookout, framed the way Firewatch 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wistful lonely warmth.
-  rendering_and_quality: "A 2016 first-person frame at 1920 by 1080: hands on a wooden lookout rail, layered ridges fading into the sunset."
+  rendering_and_quality: 'A 2016 first-person frame at 1920 by 1080: hands on a wooden lookout rail, layered ridges fading into the sunset.'
   key_features: Firewatch Olly Moss palette; lookout; ridges
-  creative_brief: 'Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges. Carry it through Firewatch Olly Moss palette, lookout, ridges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges. Carry it through Firewatch Olly Moss palette, lookout, ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - logo

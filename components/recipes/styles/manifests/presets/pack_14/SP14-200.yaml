@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical book plate composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mythic storybook wonder.
   rendering_and_quality: Detailed revival illustration, kept consistent across the whole image.
-  creative_brief: 'Edda pen-and-ink revival: early twentieth-century book illustrations of the Eddas in fine pen and ink, gnarled roots, flowing beards and misty giants. Carry it through pen and ink, gnarled roots, flowing beards, misty giants. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Edda pen-and-ink revival: early twentieth-century book illustrations of the Eddas in fine pen and ink, gnarled roots, flowing beards and misty giants. Carry it through pen and ink, gnarled roots, flowing beards, misty giants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: pen and ink; gnarled roots; flowing beards; misty giants
 avoidRules:
   - readable runes

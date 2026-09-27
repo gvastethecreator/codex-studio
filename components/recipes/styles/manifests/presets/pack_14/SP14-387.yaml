@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Towering figure beside small boats, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with overwhelming oceanic dread.
   rendering_and_quality: Bold dramatic woodblock, kept consistent across the whole image.
-  creative_brief: 'Umibozu storm woodblock: Japanese woodblock prints of the vast sea monk spirit rising from night storms beside fishing boats, huge dark head and glowing eyes. Carry it through sea monk spirit, night storm, fishing boats, glowing eyes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Umibozu storm woodblock: Japanese woodblock prints of the vast sea monk spirit rising from night storms beside fishing boats, huge dark head and glowing eyes. Carry it through sea monk spirit, night storm, fishing boats, glowing eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sea monk spirit; night storm; fishing boats; glowing eyes
 avoidRules:
   - cultural stereotypes or caricature

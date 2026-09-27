@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic panel composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with epic modern energy.
   rendering_and_quality: Polished graphic novel art without lettering, kept consistent across the whole image.
-  creative_brief: 'Contemporary Sahel graphic novel: bold modern comic art retelling the epics, dynamic panels, clean ink, warm flat colors and dramatic angles. Carry it through graphic novel, clean ink, flat warm color, dynamic panels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Contemporary Sahel graphic novel: bold modern comic art retelling the epics, dynamic panels, clean ink, warm flat colors and dramatic angles. Carry it through graphic novel, clean ink, flat warm color, dynamic panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: graphic novel; clean ink; flat warm color; dynamic panels
 avoidRules:
   - generic tribal pattern

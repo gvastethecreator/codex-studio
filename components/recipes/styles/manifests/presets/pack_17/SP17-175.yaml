@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide panorama with action on both sides of the fold.
   atmosphere_and_mood: Keep the requested mood with sprawling adventure, kept consistent across the whole image.
   rendering_and_quality: Detailed painted spread with no text, kept consistent across the whole image.
-  creative_brief: 'Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels. Carry it through double-page spread, center fold, sprawling dungeon, torchlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels. Carry it through double-page spread, center fold, sprawling dungeon, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: double-page spread; center fold; sprawling dungeon; torchlight
 avoidRules:
   - title lettering

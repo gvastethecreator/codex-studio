@@ -21,9 +21,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a stone hall stands a full suit of armor machined from brushed aluminum, chamfered edges catching soft stretched highlights. No readable text or logo.",
+        'In a stone hall stands a full suit of armor machined from brushed aluminum, chamfered edges catching soft stretched highlights. No readable text or logo.',
         "On a dark plinth a beast's skull machined from brushed aluminum shows fine parallel brush lines running along the jaw. No readable text or logo.",
-        "In a white gallery a rocking horse of brushed aluminum rocks gently, one long satin highlight sliding across its flank. No readable text or logo.",
+        'In a white gallery a rocking horse of brushed aluminum rocks gently, one long satin highlight sliding across its flank. No readable text or logo.',
       ],
     },
     'SP09-019': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On black velvet lies a wolf skull covered in thin beaten gold, square leaf seams and fine crackle across the burnished brow. No readable text or logo.",
-        "A small rowboat wrapped entirely in gold leaf drifts on a dark lake at night, reflecting the moon in broken gilded plates. No readable text or logo.",
-        "Leaning against a weathered church wall, an old bicycle covered in cracked gold leaf shines on its frame and dulls on its spokes. No readable text or logo.",
+        'On black velvet lies a wolf skull covered in thin beaten gold, square leaf seams and fine crackle across the burnished brow. No readable text or logo.',
+        'A small rowboat wrapped entirely in gold leaf drifts on a dark lake at night, reflecting the moon in broken gilded plates. No readable text or logo.',
+        'Leaning against a weathered church wall, an old bicycle covered in cracked gold leaf shines on its frame and dulls on its spokes. No readable text or logo.',
       ],
     },
     'SP09-020': {
@@ -55,9 +55,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a town square in the rain a copper statue of a soldier weeps streaks of green verdigris from his helmet over the bronze-brown metal. No readable text or logo.",
-        "Inside a Victorian greenhouse a piano sheathed in aged copper blooms with verdigris in the corners as ferns lean over the lid. No readable text or logo.",
-        "On a slate rooftop at dusk a copper owl pools green verdigris in its feather grooves while real pigeons keep their distance. No readable text or logo.",
+        'On a town square in the rain a copper statue of a soldier weeps streaks of green verdigris from his helmet over the bronze-brown metal. No readable text or logo.',
+        'Inside a Victorian greenhouse a piano sheathed in aged copper blooms with verdigris in the corners as ferns lean over the lid. No readable text or logo.',
+        'On a slate rooftop at dusk a copper owl pools green verdigris in its feather grooves while real pigeons keep their distance. No readable text or logo.',
       ],
     },
     'SP09-021': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dark plinth a helmet of forged carbon fiber swirls with marbled chopped fibers beneath a deep glossy clear coat. No readable text or logo.",
-        "A cello made of forged carbon fiber rests on grey felt, the marbled texture flowing across its body like dark smoke. No readable text or logo.",
-        "In a bare concrete room a throne of forged carbon fiber reflects a single bulb in its mirror clear coat. No readable text or logo.",
+        'On a dark plinth a helmet of forged carbon fiber swirls with marbled chopped fibers beneath a deep glossy clear coat. No readable text or logo.',
+        'A cello made of forged carbon fiber rests on grey felt, the marbled texture flowing across its body like dark smoke. No readable text or logo.',
+        'In a bare concrete room a throne of forged carbon fiber reflects a single bulb in its mirror clear coat. No readable text or logo.',
       ],
     },
     'SP09-022': {
@@ -89,9 +89,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a wild meadow lies a sleeping beast cast in raw concrete, board-form wood grain imprinted on its flanks and tie holes along its spine. No readable text or logo.",
-        "Inside a brutalist church a pipe organ cast in board-formed concrete is lit by a single shaft of light through the air voids. No readable text or logo.",
-        "By a tall window a cast-concrete armchair wears a soft wool blanket over one arm, air voids speckling its seat. No readable text or logo.",
+        'In a wild meadow lies a sleeping beast cast in raw concrete, board-form wood grain imprinted on its flanks and tie holes along its spine. No readable text or logo.',
+        'Inside a brutalist church a pipe organ cast in board-formed concrete is lit by a single shaft of light through the air voids. No readable text or logo.',
+        'By a tall window a cast-concrete armchair wears a soft wool blanket over one arm, air voids speckling its seat. No readable text or logo.',
       ],
     },
     'SP09-023': {
@@ -106,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In an empty factory yard stands a giant horse built from aged red bricks in Flemish bond, lime mortar crumbling from its knees. No readable text or logo.",
-        "In a ruined hall a throne of old fired bricks shows worn corners and a sapling growing out of the mortar. No readable text or logo.",
-        "Floating impossibly on a still city canal, a rowboat built from aged bricks mirrors its orange hull in the water. No readable text or logo.",
+        'In an empty factory yard stands a giant horse built from aged red bricks in Flemish bond, lime mortar crumbling from its knees. No readable text or logo.',
+        'In a ruined hall a throne of old fired bricks shows worn corners and a sapling growing out of the mortar. No readable text or logo.',
+        'Floating impossibly on a still city canal, a rowboat built from aged bricks mirrors its orange hull in the water. No readable text or logo.',
       ],
     },
     'SP09-024': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a city corner at night a statue coated in wet black asphalt shines with street lamps and red taillights. No readable text or logo.",
-        "A grand staircase surfaced in wet asphalt glistens in heavy rain, puddles on each step mirroring neon light from across the street. No readable text or logo.",
-        "Headlights sweep across a wolf sculpture surfaced in wet asphalt, rain pooling in the grit along its back. No readable text or logo.",
+        'On a city corner at night a statue coated in wet black asphalt shines with street lamps and red taillights. No readable text or logo.',
+        'A grand staircase surfaced in wet asphalt glistens in heavy rain, puddles on each step mirroring neon light from across the street. No readable text or logo.',
+        'Headlights sweep across a wolf sculpture surfaced in wet asphalt, rain pooling in the grit along its back. No readable text or logo.',
       ],
     },
     'SP09-026': {
@@ -140,9 +140,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A life-size guardsman in red molded plastic armor stands at a palace gate, parting lines running down the middle of his face. No readable text or logo.",
-        "Lying on a suburban lawn, a glossy yellow plastic dinosaur the size of a car shows parting lines along its spine and rounded toy edges. No readable text or logo.",
-        "Set into an ancient stone wall, a cathedral door molded in pastel blue plastic has parting lines running through its carved saints. No readable text or logo.",
+        'A life-size guardsman in red molded plastic armor stands at a palace gate, parting lines running down the middle of his face. No readable text or logo.',
+        'Lying on a suburban lawn, a glossy yellow plastic dinosaur the size of a car shows parting lines along its spine and rounded toy edges. No readable text or logo.',
+        'Set into an ancient stone wall, a cathedral door molded in pastel blue plastic has parting lines running through its carved saints. No readable text or logo.',
       ],
     },
     'SP09-027': {
@@ -157,9 +157,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'tire object'],
       briefs: [
-        "On a steel workshop table sits a vintage typewriter molded entirely from matte black rubber, tread ridges across the carriage. No readable text or logo.",
-        "In an empty warehouse a horse molded from vulcanized rubber shows tread-like ridges along its mane and smooth worn knees. No readable text or logo.",
-        "In a concrete room a throne molded from black tire rubber has deep tread ridges on the back and a worn smooth seat. No readable text or logo.",
+        'On a steel workshop table sits a vintage typewriter molded entirely from matte black rubber, tread ridges across the carriage. No readable text or logo.',
+        'In an empty warehouse a horse molded from vulcanized rubber shows tread-like ridges along its mane and smooth worn knees. No readable text or logo.',
+        'In a concrete room a throne molded from black tire rubber has deep tread ridges on the back and a worn smooth seat. No readable text or logo.',
       ],
     },
     'SP09-028': {
@@ -174,9 +174,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Goldfish swim calmly past a web of radial cracks spreading from one impact point across a tall aquarium that somehow still holds its water. No readable text or logo.",
-        "On a velvet cushion a clear glass crown is crazed with fine cracks, one point missing its tip under a spotlight. No readable text or logo.",
-        "Floating on a still lake at dawn, a swan of clear crazed glass is missing shards from one wing, cracks spreading from its neck. No readable text or logo.",
+        'Goldfish swim calmly past a web of radial cracks spreading from one impact point across a tall aquarium that somehow still holds its water. No readable text or logo.',
+        'On a velvet cushion a clear glass crown is crazed with fine cracks, one point missing its tip under a spotlight. No readable text or logo.',
+        'Floating on a still lake at dawn, a swan of clear crazed glass is missing shards from one wing, cracks spreading from its neck. No readable text or logo.',
       ],
     },
     'SP09-031': {
@@ -191,9 +191,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'explicit fetish content'],
       briefs: [
-        "Coiled on a black floor, a sea serpent skinned in stretched glossy red latex carries sharp white specular streaks along its spine. No readable text or logo.",
-        "In a white room an armchair wrapped in taut black latex shows long sharp highlights following every curve. No readable text or logo.",
-        "Draped over a white plinth, an octopus skinned in shiny black latex slides specular streaks along each tentacle. No readable text or logo.",
+        'Coiled on a black floor, a sea serpent skinned in stretched glossy red latex carries sharp white specular streaks along its spine. No readable text or logo.',
+        'In a white room an armchair wrapped in taut black latex shows long sharp highlights following every curve. No readable text or logo.',
+        'Draped over a white plinth, an octopus skinned in shiny black latex slides specular streaks along each tentacle. No readable text or logo.',
       ],
     },
     'SP09-032': {
@@ -208,9 +208,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Parked on a rainy street, a full-size cardboard tuk-tuk sags at the joints, parcel tape peeling and flutes exposed at every edge. No readable text or logo.",
-        "Folded around the sofa with its snout crushed against the ceiling, a corrugated dragon made of taped boxes fills an entire living room. No readable text or logo.",
-        "In a garage a cardboard cathedral rises to the rafters, pointed arches cut from boxes and a rose window of exposed flutes. No readable text or logo.",
+        'Parked on a rainy street, a full-size cardboard tuk-tuk sags at the joints, parcel tape peeling and flutes exposed at every edge. No readable text or logo.',
+        'Folded around the sofa with its snout crushed against the ceiling, a corrugated dragon made of taped boxes fills an entire living room. No readable text or logo.',
+        'In a garage a cardboard cathedral rises to the rafters, pointed arches cut from boxes and a rose window of exposed flutes. No readable text or logo.',
       ],
     },
     'SP09-042': {
@@ -225,9 +225,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dim museum storeroom a stuffed polar bear waits wrapped in clear bubble wrap, rows of air cells catching the fluorescent light. No readable text or logo.",
-        "In a bare white room a throne wrapped in bubble wrap bulges over its carved armrests, a few cells already popped. No readable text or logo.",
-        "In a shipping warehouse a vintage motorcycle is wrapped in layers of bubble wrap, its chrome blurred beneath the air cells. No readable text or logo.",
+        'In a dim museum storeroom a stuffed polar bear waits wrapped in clear bubble wrap, rows of air cells catching the fluorescent light. No readable text or logo.',
+        'In a bare white room a throne wrapped in bubble wrap bulges over its carved armrests, a few cells already popped. No readable text or logo.',
+        'In a shipping warehouse a vintage motorcycle is wrapped in layers of bubble wrap, its chrome blurred beneath the air cells. No readable text or logo.',
       ],
     },
     'SP09-046': {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dark stage a flamingo covered in overlapping pink and coral sequins stands on one leg, each paillette catching the spotlight. No readable text or logo.",
-        "In a candlelit hall a throne covered in gold sequins shimmers, a few loose paillettes scattered across the stone. No readable text or logo.",
-        "A life-size horse covered in silver sequins grazes in a green field at golden hour, sequins rippling across its muscles. No readable text or logo.",
+        'On a dark stage a flamingo covered in overlapping pink and coral sequins stands on one leg, each paillette catching the spotlight. No readable text or logo.',
+        'In a candlelit hall a throne covered in gold sequins shimmers, a few loose paillettes scattered across the stone. No readable text or logo.',
+        'A life-size horse covered in silver sequins grazes in a green field at golden hour, sequins rippling across its muscles. No readable text or logo.',
       ],
     },
     'SP09-048': {
@@ -259,9 +259,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a wooden desk an old globe made of granulated cork shows soft pinholes where a traveler marked every trip. No readable text or logo.",
-        "Perched on a mossy branch, an owl carved from cork has speckled granules and soft pinholes across its chest. No readable text or logo.",
-        "In a sunlit reading room an armchair upholstered in cork board still has a few pushpins stuck in the seat. No readable text or logo.",
+        'On a wooden desk an old globe made of granulated cork shows soft pinholes where a traveler marked every trip. No readable text or logo.',
+        'Perched on a mossy branch, an owl carved from cork has speckled granules and soft pinholes across its chest. No readable text or logo.',
+        'In a sunlit reading room an armchair upholstered in cork board still has a few pushpins stuck in the seat. No readable text or logo.',
       ],
     },
     'SP09-049': {
@@ -277,9 +277,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a mountain trail a hiking backpack and boots are covered in black hook-and-loop panels, burrs and leaves stuck all over them. No readable text or logo.",
-        "On a windowsill sits a cat statue covered in grey hook-and-loop fastener, fuzzy loops on the body and bristly hooks on the ears. No readable text or logo.",
-        "An indoor climbing wall covered in hook-and-loop fastener holds an adult climber stuck to it in a fuzzy jumpsuit, arms spread. No readable text or logo.",
+        'On a mountain trail a hiking backpack and boots are covered in black hook-and-loop panels, burrs and leaves stuck all over them. No readable text or logo.',
+        'On a windowsill sits a cat statue covered in grey hook-and-loop fastener, fuzzy loops on the body and bristly hooks on the ears. No readable text or logo.',
+        'An indoor climbing wall covered in hook-and-loop fastener holds an adult climber stuck to it in a fuzzy jumpsuit, arms spread. No readable text or logo.',
       ],
     },
     'SP09-060': {
@@ -294,9 +294,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A heron rises from a pool of liquid mercury in a stone courtyard, mirror metal streaming from its wings in heavy beads. No readable text or logo.",
-        "A horse of liquid mercury gallops along a wet beach, splashing into silver beads with every stride. No readable text or logo.",
-        "On a velvet cushion a crown of liquid mercury slowly sags and pools, perfect reflections trembling on its surface. No readable text or logo.",
+        'A heron rises from a pool of liquid mercury in a stone courtyard, mirror metal streaming from its wings in heavy beads. No readable text or logo.',
+        'A horse of liquid mercury gallops along a wet beach, splashing into silver beads with every stride. No readable text or logo.',
+        'On a velvet cushion a crown of liquid mercury slowly sags and pools, perfect reflections trembling on its surface. No readable text or logo.',
       ],
     },
     'SP09-070': {
@@ -312,9 +312,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a film-set floor a white polystyrene giant tortoise shows hot-wire carved shell plates and a scatter of foam crumbs. No readable text or logo.",
-        "In a prop workshop a white foam mammoth skull with crisp hot-wire cuts looms over a sleeping carpenter. No readable text or logo.",
-        "On a workshop table a large polystyrene cathedral model sheds white beads beside the hot-wire cutter that made it. No readable text or logo.",
+        'On a film-set floor a white polystyrene giant tortoise shows hot-wire carved shell plates and a scatter of foam crumbs. No readable text or logo.',
+        'In a prop workshop a white foam mammoth skull with crisp hot-wire cuts looms over a sleeping carpenter. No readable text or logo.',
+        'On a workshop table a large polystyrene cathedral model sheds white beads beside the hot-wire cutter that made it. No readable text or logo.',
       ],
     },
     'SP09-071': {
@@ -329,9 +329,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a woodworking shop a plywood giraffe shows exposed layered edges along its neck, sawdust piled at its hooves. No readable text or logo.",
-        "A canoe of bent plywood rests on two sawhorses, its ply edges striped along the gunwales and brass screws gleaming. No readable text or logo.",
-        "In a white gallery a spiral staircase of stacked plywood sheets forms striped treads and a layered handrail. No readable text or logo.",
+        'In a woodworking shop a plywood giraffe shows exposed layered edges along its neck, sawdust piled at its hooves. No readable text or logo.',
+        'A canoe of bent plywood rests on two sawhorses, its ply edges striped along the gunwales and brass screws gleaming. No readable text or logo.',
+        'In a white gallery a spiral staircase of stacked plywood sheets forms striped treads and a layered handrail. No readable text or logo.',
       ],
     },
     'SP09-072': {
@@ -346,9 +346,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In an old barn stands a full-size elephant built from oriented strand board, a chaotic mosaic of pressed flakes across its hide. No readable text or logo.",
-        "On an empty beach a lifeguard tower of oriented strand board shows its pressed flake mosaic bleaching in the sun. No readable text or logo.",
-        "Set in a stone portal, a tall arched door made of strand board is fitted with old iron hinges. No readable text or logo.",
+        'In an old barn stands a full-size elephant built from oriented strand board, a chaotic mosaic of pressed flakes across its hide. No readable text or logo.',
+        'On an empty beach a lifeguard tower of oriented strand board shows its pressed flake mosaic bleaching in the sun. No readable text or logo.',
+        'Set in a stone portal, a tall arched door made of strand board is fitted with old iron hinges. No readable text or logo.',
       ],
     },
     'SP09-073': {
@@ -363,9 +363,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a small diner a jukebox surfaced with mint green marbled linoleum shows color flecks under a soft sheen. No readable text or logo.",
+        'In a small diner a jukebox surfaced with mint green marbled linoleum shows color flecks under a soft sheen. No readable text or logo.',
         "In a long school hallway a rhinoceros statue clad in marbled red linoleum stands guard outside the principal's office. No readable text or logo.",
-        "In a quiet clinic a row of waiting-room chairs surfaced in marbled blue linoleum hold one patient reading a magazine. No readable text or logo.",
+        'In a quiet clinic a row of waiting-room chairs surfaced in marbled blue linoleum hold one patient reading a magazine. No readable text or logo.',
       ],
     },
     'SP09-076': {
@@ -380,9 +380,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a coastal hill a whale sculpture of galvanized chain-link mesh glows at sunset, the diamond weave outlined against the sky. No readable text or logo.",
-        "In a misty field a life-size stag of chain-link mesh lets the sky show through its body, rust at the joints. No readable text or logo.",
-        "In an abandoned factory a wedding dress woven from chain-link mesh stands on a mannequin, its long train dragging over the concrete. No readable text or logo.",
+        'On a coastal hill a whale sculpture of galvanized chain-link mesh glows at sunset, the diamond weave outlined against the sky. No readable text or logo.',
+        'In a misty field a life-size stag of chain-link mesh lets the sky show through its body, rust at the joints. No readable text or logo.',
+        'In an abandoned factory a wedding dress woven from chain-link mesh stands on a mannequin, its long train dragging over the concrete. No readable text or logo.',
       ],
     },
     'SP09-077': {
@@ -397,9 +397,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Resting on a flat grey stone, a crown of coiled barbed wire catches cold light on its sharp barbs and rusted points. No readable text or logo.",
-        "On a windy prairie hill at dusk a bison wound from rusted barbed wire forms heavy shoulders from twisted strands. No readable text or logo.",
-        "In a graveyard at dusk an angel wound from barbed wire spreads looping wings as the last orange light catches the barbs. No readable text or logo.",
+        'Resting on a flat grey stone, a crown of coiled barbed wire catches cold light on its sharp barbs and rusted points. No readable text or logo.',
+        'On a windy prairie hill at dusk a bison wound from rusted barbed wire forms heavy shoulders from twisted strands. No readable text or logo.',
+        'In a graveyard at dusk an angel wound from barbed wire spreads looping wings as the last orange light catches the barbs. No readable text or logo.',
       ],
     },
     'SP09-078': {

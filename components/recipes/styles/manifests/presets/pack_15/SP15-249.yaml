@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Rooftop ledges with gargoyles perched high over the glowing city.
   atmosphere_and_mood: Watchful, gruff and loyal, monsters that protect the sleeping.
   rendering_and_quality: Moody textured illustration with moonlit stone and rain detail.
-  creative_brief: 'Gargoylepunk: stone gargoyles that wake at night and guard the city, with carved wings, rain-spout mouths, cathedral rooftops and moonlit patrols. Carry it through living gargoyles, cathedral rooftops, moonlit patrols, rain-streaked stone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gargoylepunk: stone gargoyles that wake at night and guard the city, with carved wings, rain-spout mouths, cathedral rooftops and moonlit patrols. Carry it through living gargoyles, cathedral rooftops, moonlit patrols, rain-streaked stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: living gargoyles; cathedral rooftops; moonlit patrols; rain-streaked stone
 avoidRules:
   - readable text

@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject in first person in science facility corridors, people with boxy heads, simple faces and stiff lab coats. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show the subject in first person in science facility corridors, people with boxy heads, simple faces and stiff lab coats. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Facility beige, hazard orange and industrial grey, true to the Half-Life 1998 palette.
-  lighting_and_shadow: "Flickering fluorescent light with soft blotchy light patches baked onto walls."
-  texture_and_material: "Blurry low-detail wall and floor textures, simple boxy props and figures built from visible straight-edged chunks."
+  lighting_and_shadow: 'Flickering fluorescent light with soft blotchy light patches baked onto walls.'
+  texture_and_material: 'Blurry low-detail wall and floor textures, simple boxy props and figures built from visible straight-edged chunks.'
   camera_and_composition: First-person corridor view, framed the way Half-Life 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with unraveling facility dread.
-  rendering_and_quality: "A 1998 PC frame at 640 by 480: slightly blurry, with a crosshair and health and armor number shapes at the bottom."
+  rendering_and_quality: 'A 1998 PC frame at 640 by 480: slightly blurry, with a crosshair and health and armor number shapes at the bottom.'
   creative_brief: "Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos. Carry it through Half-Life facility, boxy lab coats, flickering fluorescents, blotchy baked light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Half-Life facility; boxy lab coats; flickering fluorescents; blotchy baked light"
+  key_features: 'Half-Life facility; boxy lab coats; flickering fluorescents; blotchy baked light'
 avoidRules:
   - an orange hazard suit with a crowbar
   - a man in a blue suit with a briefcase

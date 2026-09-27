@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Detached and procedural, calm clarity about something that went wrong.
   rendering_and_quality: Documentation-grade sharpness; no gore, drama or readable case numbers.
   key_features: scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers
-  creative_brief: 'Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion. Carry it through scale bar beside the object, even flash, camera square to the surface, neutral color, plain evidence markers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion. Carry it through scale bar beside the object, even flash, camera square to the surface, neutral color, plain evidence markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - fake UI text
   - readable timestamp

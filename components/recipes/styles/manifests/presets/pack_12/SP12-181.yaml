@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and monsters in stone corridors seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Torch amber, stone grey and moss green, true to the Legend of Grimrock 2012 palette.
-  lighting_and_shadow: "Flickering torchlight fading quickly into dark stone corridors."
-  texture_and_material: "Detailed stone blocks and iron gates with slightly soft repeating textures."
+  lighting_and_shadow: 'Flickering torchlight fading quickly into dark stone corridors.'
+  texture_and_material: 'Detailed stone blocks and iron gates with slightly soft repeating textures.'
   camera_and_composition: First-person grid view, framed the way Legend of Grimrock 2012 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with claustrophobic dungeon tension.
-  rendering_and_quality: "A 2012 first-person frame at 1920 by 1080: a square grid corridor, four party portrait boxes at the right edge."
-  creative_brief: 'Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters. Carry it through Grimrock grid dungeon, torches, stone corridors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2012 first-person frame at 1920 by 1080: a square grid corridor, four party portrait boxes at the right edge.'
+  creative_brief: "Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters. Carry it through Grimrock grid dungeon, torches, stone corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Grimrock grid dungeon; torches; stone corridors
 avoidRules:
   - existing game characters, logos or levels

@@ -26,7 +26,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with predatory ego intensity.
   rendering_and_quality: Aggressive sports manga illustration with extreme perspective and predatory energy.
   key_features: Yusuke Nomura foreshortening; glaring eyes; ego metaphors; ultramarine accents
-  creative_brief: 'Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains. Carry it through Yusuke Nomura foreshortening, glaring eyes, ego metaphors, ultramarine accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Yusuke Nomura Blue Lock manga look: sharp dynamic ink, extreme foreshortening of legs and feet toward the reader, predatory glaring eyes and ego metaphors drawn as beasts and chains. Carry it through Yusuke Nomura foreshortening, glaring eyes, ego metaphors, ultramarine accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Illuminated page with a central scene, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with timeless enchanted longing.
   rendering_and_quality: Refined illumination without script, kept consistent across the whole image.
-  creative_brief: 'Celtic otherworld mound illumination: illuminated knotwork frames around scenes of the fairy mound, a door into the hill, silver apple trees and endless twilight. Carry it through fairy mound, knotwork frame, silver apples, twilight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Celtic otherworld mound illumination: illuminated knotwork frames around scenes of the fairy mound, a door into the hill, silver apple trees and endless twilight. Carry it through fairy mound, knotwork frame, silver apples, twilight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: fairy mound; knotwork frame; silver apples; twilight
 avoidRules:
   - cultural stereotypes or caricature

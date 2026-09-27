@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dynamic posed product view, framed the way Anime Figma composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dynamic playful action.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Max Factory figma look: small highly articulated anime action figures with visible joints, swappable hands, effect parts and posing stands. Carry it through figma articulated, visible joints, effect parts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Max Factory figma look: small highly articulated anime action figures with visible joints, swappable hands, effect parts and posing stands. Carry it through figma articulated, visible joints, effect parts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: figma articulated; visible joints; effect parts
 avoidRules:
   - licensed anime characters

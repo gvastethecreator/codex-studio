@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Huge mammoths towering over small humans on open frozen plains.
   atmosphere_and_mood: Epic, cold and survivalist, small people living beside gentle giants.
   rendering_and_quality: Epic textured illustration with shaggy fur and frosty depth.
-  creative_brief: 'Mammothpunk: ice age hunters and herders living with woolly mammoths, with mammoth-bone houses, tusk arches, fur-clad riders and frozen steppe camps. Carry it through woolly mammoths, bone houses, tusk arches, frozen steppe. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mammothpunk: ice age hunters and herders living with woolly mammoths, with mammoth-bone houses, tusk arches, fur-clad riders and frozen steppe camps. Carry it through woolly mammoths, bone houses, tusk arches, frozen steppe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: woolly mammoths; bone houses; tusk arches; frozen steppe
 avoidRules:
   - readable text

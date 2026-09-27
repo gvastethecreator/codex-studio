@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Handheld chase and airborne skydive frames, framed the way Point Break 1991 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with euphoric adrenaline rush.
   rendering_and_quality: Authentic early-nineties action frame, in the recognizable hand of Point Break 1991.
-  creative_brief: 'Kathryn Bigelow Point Break (1991) look: sun-drenched California surf, huge waves, skydiving, backyard chases, rubber masks and adrenaline-junkie spirituality. Carry it through Point Break surf, skydiving, foot chases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kathryn Bigelow Point Break (1991) look: sun-drenched California surf, huge waves, skydiving, backyard chases, rubber masks and adrenaline-junkie spirituality. Carry it through Point Break surf, skydiving, foot chases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Point Break surf; skydiving; foot chases
 avoidRules:
   - rubber masks of former presidents

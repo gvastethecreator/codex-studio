@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Massive Monster Cult of the Lamb (2022) look: cute cartoon woodland animals in dark occult rituals, bold outlines, pastel-and-crimson palettes and cheerful creepy cult management.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as cute bold-outlined cartoon animals in pastel occult settings. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel purple, crimson and forest green, true to the Cult of the Lamb 2022 palette.
-  lighting_and_shadow: "Warm candle glow and red ritual light on dark ground."
-  texture_and_material: "Bold outlines and flat cartoon shading on cute animals, flat ground textures."
+  lighting_and_shadow: 'Warm candle glow and red ritual light on dark ground.'
+  texture_and_material: 'Bold outlines and flat cartoon shading on cute animals, flat ground textures.'
   camera_and_composition: Three-quarter top-down view, framed the way Cult of the Lamb 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cute creepy cheer.
-  rendering_and_quality: "A 2022 frame at 1920 by 1080 from a high angle: cute cartoon animals in an occult camp, heart shapes top left."
-  creative_brief: 'Massive Monster Cult of the Lamb (2022) look: cute cartoon woodland animals in dark occult rituals, bold outlines, pastel-and-crimson palettes and cheerful creepy cult management. Carry it through Cult of the Lamb cute occult, bold outlines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2022 frame at 1920 by 1080 from a high angle: cute cartoon animals in an occult camp, heart shapes top left.'
+  creative_brief: "Massive Monster Cult of the Lamb (2022) look: cute cartoon woodland animals in dark occult rituals, bold outlines, pastel-and-crimson palettes and cheerful creepy cult management. Carry it through Cult of the Lamb cute occult, bold outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Cult of the Lamb cute occult; bold outlines
 avoidRules:
   - a small lamb with a red crown

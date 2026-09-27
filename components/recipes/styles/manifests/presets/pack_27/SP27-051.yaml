@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow deliberate compositions, framed the way The Sixth Sense 1999 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with melancholy supernatural quiet.
   rendering_and_quality: Muted nineties supernatural drama frame, in the recognizable hand of The Sixth Sense 1999.
-  creative_brief: 'M. Night Shyamalan The Sixth Sense (1999) look: muted Philadelphia autumn, visible cold breath, deliberate slow framing and single red objects marking the supernatural. Carry it through Sixth Sense red accent, cold breath, muted autumn. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "M. Night Shyamalan The Sixth Sense (1999) look: muted Philadelphia autumn, visible cold breath, deliberate slow framing and single red objects marking the supernatural. Carry it through Sixth Sense red accent, cold breath, muted autumn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sixth Sense red accent; cold breath; muted autumn
 avoidRules:
   - a boy whispering in a hospital bed

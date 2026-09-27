@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Rundisc Chants of Sennaar (2023) look: Moebius-inspired flat-colored ligne claire tower of Babel, pastel architecture, veiled travelers and puzzles deciphering invented glyph languages.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in pastel ligne claire tower architecture with veiled travelers. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pastel ochre, lilac and sky teal, true to the Chants of Sennaar 2023 palette.
-  lighting_and_shadow: "Flat clean light with soft pastel shadows, lit the way Chants of Sennaar 2023 lights its levels."
-  texture_and_material: "Clean thin outlines and flat pastel color on simple 3D architecture."
+  lighting_and_shadow: 'Flat clean light with soft pastel shadows, lit the way Chants of Sennaar 2023 lights its levels.'
+  texture_and_material: 'Clean thin outlines and flat pastel color on simple 3D architecture.'
   camera_and_composition: Wide architectural third-person view, framed the way Chants of Sennaar 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with serene curious deciphering.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080: small veiled traveler in vast pastel tower architecture, clean outlines."
-  creative_brief: 'Rundisc Chants of Sennaar (2023) look: Moebius-inspired flat-colored ligne claire tower of Babel, pastel architecture, veiled travelers and puzzles deciphering invented glyph languages. Carry it through Chants of Sennaar Moebius, tower, glyph language. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080: small veiled traveler in vast pastel tower architecture, clean outlines.'
+  creative_brief: "Rundisc Chants of Sennaar (2023) look: Moebius-inspired flat-colored ligne claire tower of Babel, pastel architecture, veiled travelers and puzzles deciphering invented glyph languages. Carry it through Chants of Sennaar Moebius, tower, glyph language. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Chants of Sennaar Moebius; tower; glyph language
 avoidRules:
   - existing franchise characters

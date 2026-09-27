@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal retro-future view, framed the way Space Age Seventies composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful space-age optimism.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Sixties and seventies space age product language: molded glossy plastic pods, round portholes, egg shapes, white with bold orange, avocado and chrome. Carry it through Space age pods, portholes, egg shapes, orange. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sixties and seventies space age product language: molded glossy plastic pods, round portholes, egg shapes, white with bold orange, avocado and chrome. Carry it through Space age pods, portholes, egg shapes, orange. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Space age pods; portholes; egg shapes; orange
 avoidRules:
   - existing franchise characters

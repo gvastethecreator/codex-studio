@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Layered collage composition, framed the way Madlib Beat Tape composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dusty crate-digging mystery.
   rendering_and_quality: Faithful lo-fi beat tape cover design, in the recognizable hand of Madlib Beat Tape.
-  creative_brief: 'Underground beat tape cover look of the 2000s: lo-fi photocopied collage of found records, VHS stills, rubber stamps, cut-out type and dusty crate-digging texture. Carry it through Beat tape collage, photocopy, found records. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Underground beat tape cover look of the 2000s: lo-fi photocopied collage of found records, VHS stills, rubber stamps, cut-out type and dusty crate-digging texture. Carry it through Beat tape collage, photocopy, found records. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Beat tape collage; photocopy; found records
 avoidRules:
   - a stoned cartoon quasimoto character

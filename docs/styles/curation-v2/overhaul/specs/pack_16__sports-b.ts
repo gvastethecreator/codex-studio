@@ -34,9 +34,9 @@ const spec: Spec = {
         key_features: 'pitcher-batter line; summer heat; dust; grip close-ups',
       },
       [
-        "A pitcher mid-windup under a blazing sun sees the heat shimmer split the batter into three wavering figures at the plate. No readable text or logo.",
-        "An entire rural baseball team crowds around one electric fan in the dugout, fighting over the breeze during a sweltering final. No readable text or logo.",
-        "After losing the final, a catcher scoops infield dirt into a jar alone as the stadium lights switch off one by one above him. No readable text or logo.",
+        'A pitcher mid-windup under a blazing sun sees the heat shimmer split the batter into three wavering figures at the plate. No readable text or logo.',
+        'An entire rural baseball team crowds around one electric fan in the dugout, fighting over the breeze during a sweltering final. No readable text or logo.',
+        'After losing the final, a catcher scoops infield dirt into a jar alone as the stadium lights switch off one by one above him. No readable text or logo.',
       ],
     ),
     'SP05-349': u(
@@ -58,7 +58,7 @@ const spec: Spec = {
       },
       [
         "An old boxing coach wraps a young fighter's hands in a dim gym, while the shadow on the wall behind them shows the coach at twenty doing the same. No readable text or logo.",
-        "Three generations of one family crew the same wooden rowing boat, grandma at the stern bellowing the stroke rate at her sons. No readable text or logo.",
+        'Three generations of one family crew the same wooden rowing boat, grandma at the stern bellowing the stroke rate at her sons. No readable text or logo.',
         "A retired marathoner kneels at the starting line to lace her own worn shoelaces into her daughter's brand-new racing shoes. No readable text or logo.",
       ],
     ),
@@ -79,9 +79,9 @@ const spec: Spec = {
         key_features: 'caustic light; underwater views; bubbles; split surface',
       },
       [
-        "A relay swimmer glides off the wall through water so bright with caustic light that she seems to fly through a liquid sky. No readable text or logo.",
-        "A swimmer races a curious sea turtle down the lane of an open-air seaside pool, both absolutely determined to win. No readable text or logo.",
-        "In a closed pool at midnight a swimmer floats face-up under the emergency lights while the water holds perfectly still around her. No readable text or logo.",
+        'A relay swimmer glides off the wall through water so bright with caustic light that she seems to fly through a liquid sky. No readable text or logo.',
+        'A swimmer races a curious sea turtle down the lane of an open-air seaside pool, both absolutely determined to win. No readable text or logo.',
+        'In a closed pool at midnight a swimmer floats face-up under the emergency lights while the water holds perfectly still around her. No readable text or logo.',
       ],
     ),
     'SP05-351': u(
@@ -103,9 +103,9 @@ const spec: Spec = {
         key_features: 'night streetlights; breath clouds; relay sash; lonely road',
       },
       [
-        "A relay runner passes under a row of orange streetlights on an empty coastal road, her breath clouds trailing behind her like ghost runners. No readable text or logo.",
-        "A night marathoner is escorted by a scruffy stray dog that has jogged beside her for thirty kilometers without once looking tired. No readable text or logo.",
-        "At 3 a.m. a runner reaches the final checkpoint, where a volunteer asleep in a folding chair still holds out a paper cup of water. No readable text or logo.",
+        'A relay runner passes under a row of orange streetlights on an empty coastal road, her breath clouds trailing behind her like ghost runners. No readable text or logo.',
+        'A night marathoner is escorted by a scruffy stray dog that has jogged beside her for thirty kilometers without once looking tired. No readable text or logo.',
+        'At 3 a.m. a runner reaches the final checkpoint, where a volunteer asleep in a folding chair still holds out a paper cup of water. No readable text or logo.',
       ],
     ),
     'SP05-352': u(
@@ -128,9 +128,9 @@ const spec: Spec = {
         key_features: 'trick lines; neon rims; fisheye ramps; motion arcs',
       },
       [
-        "A skater launches off a concrete ramp at night and her neon trick line loops behind the board into a glowing figure eight across the sky. No readable text or logo.",
-        "An elderly man in a business suit lands a kickflip in an empty neon parking garage, briefcase still clutched in one hand. No readable text or logo.",
-        "A skater grinds the rim of a flooded drainage channel at night while her reflection skates upside down beneath her. No readable text or logo.",
+        'A skater launches off a concrete ramp at night and her neon trick line loops behind the board into a glowing figure eight across the sky. No readable text or logo.',
+        'An elderly man in a business suit lands a kickflip in an empty neon parking garage, briefcase still clutched in one hand. No readable text or logo.',
+        'A skater grinds the rim of a flooded drainage channel at night while her reflection skates upside down beneath her. No readable text or logo.',
       ],
     ),
   },

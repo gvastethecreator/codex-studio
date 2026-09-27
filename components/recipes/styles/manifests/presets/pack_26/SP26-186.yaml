@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Handheld documentary framing traced into animation, framed the way Bob Sabiston composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dreamy philosophical drift.
   rendering_and_quality: Faithful Rotoshop animated frame, in the recognizable hand of Bob Sabiston.
-  creative_brief: 'Bob Sabiston Rotoshop look of the 2000s: interpolated digital rotoscoping over live footage, wobbling floating contour lines, shifting color fields, philosophical conversations and dreamlike instability. Carry it through Sabiston Rotoshop, wobbling lines, dreamlike drift. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bob Sabiston Rotoshop look of the 2000s: interpolated digital rotoscoping over live footage, wobbling floating contour lines, shifting color fields, philosophical conversations and dreamlike instability. Carry it through Sabiston Rotoshop, wobbling lines, dreamlike drift. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sabiston Rotoshop; wobbling lines; dreamlike drift
 avoidRules:
   - existing franchise characters

@@ -118,7 +118,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Timeless, quiet and precious, like an early art photograph.',
         rendering_and_quality:
           'Continuous-tone intaglio print with fine grain and embossed plate edge, never a digital photo.',
-        key_features: 'velvet etched shadows; fine plate grain; plate mark; warm ink on cream paper',
+        key_features:
+          'velvet etched shadows; fine plate grain; plate mark; warm ink on cream paper',
       },
       ['digital photo sharpness', 'harsh modern color', 'flat inkjet black'],
       [
@@ -147,7 +148,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Dreamy, handmade and nostalgic, part photograph and part painting.',
         rendering_and_quality:
           'Authentic layered pigment print with brush marks and soft registration, never crisp digital color.',
-        key_features: 'stacked pigment layers; brushed coating edges; soft misregistration; watercolor paper',
+        key_features:
+          'stacked pigment layers; brushed coating edges; soft misregistration; watercolor paper',
       },
       ['crisp digital color photo', 'clean vector shapes', 'glossy print surface'],
       [
@@ -339,8 +341,7 @@ const spec: Spec = {
           'Carbon paper trace: a drawing transferred by pressing through carbon paper, leaving smudgy blue-black lines, pressure blots and stray hand smears.',
         subject_treatment:
           "Trace the prompt's subject as carbon-transferred lines, keeping its outline and main details while pressure changes darken or break the line.",
-        color_and_tone:
-          'Blue-black or purple carbon lines on thin white or yellow copy paper.',
+        color_and_tone: 'Blue-black or purple carbon lines on thin white or yellow copy paper.',
         lighting_and_shadow:
           'No modeled light; shading appears only as rubbed carbon patches where the hand pressed.',
         texture_and_material:
@@ -350,7 +351,8 @@ const spec: Spec = {
         atmosphere_and_mood: 'Bureaucratic, intimate and slightly messy, a copy made by hand.',
         rendering_and_quality:
           'Authentic carbon transfer texture with smudges and blots, never clean pen lines.',
-        key_features: 'blue-black carbon lines; pressure blots; fingerprint smudges; thin copy paper',
+        key_features:
+          'blue-black carbon lines; pressure blots; fingerprint smudges; thin copy paper',
       },
       ['clean pen line', 'full color painting', 'digital vector line'],
       [
@@ -376,10 +378,12 @@ const spec: Spec = {
           'Brayer marks, leaf vein impressions, lace patterns, ghost prints and soft blotchy edges.',
         camera_and_composition:
           'Collage-like layered composition with the subject as a crisp stencil shape over textures.',
-        atmosphere_and_mood: 'Playful, botanical and experimental, a studio full of happy accidents.',
+        atmosphere_and_mood:
+          'Playful, botanical and experimental, a studio full of happy accidents.',
         rendering_and_quality:
           'Authentic layered monoprint textures with real impressions, never digital overlays.',
-        key_features: 'translucent paint layers; leaf and lace impressions; brayer marks; stencil subject',
+        key_features:
+          'translucent paint layers; leaf and lace impressions; brayer marks; stencil subject',
       },
       ['digital texture overlay', 'photographic realism', 'single flat layer'],
       [

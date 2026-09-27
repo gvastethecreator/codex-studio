@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter technical view, framed the way Generative Parametric composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with algorithmic organic efficiency.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Generative parametric product language: topology-optimized organic lattices, voronoi cells, 3D-printed titanium and nylon, bone-like struts and algorithmic efficiency. Carry it through Parametric lattice, topology optimized, voronoi. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Generative parametric product language: topology-optimized organic lattices, voronoi cells, 3D-printed titanium and nylon, bone-like struts and algorithmic efficiency. Carry it through Parametric lattice, topology optimized, voronoi. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Parametric lattice; topology optimized; voronoi
 avoidRules:
   - existing franchise characters

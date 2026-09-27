@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject built from blocky cubes with sixteen-pixel textures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Grass green, dirt brown, sky blue and torch orange.
-  lighting_and_shadow: "Flat daylight on cube faces, each face one of a few brightness steps, torchlight fading in blocky steps."
-  texture_and_material: "Every surface a cube face with a sixteen-by-sixteen pixel texture, blurry nowhere, crisp square pixels everywhere."
+  lighting_and_shadow: 'Flat daylight on cube faces, each face one of a few brightness steps, torchlight fading in blocky steps.'
+  texture_and_material: 'Every surface a cube face with a sixteen-by-sixteen pixel texture, blurry nowhere, crisp square pixels everywhere.'
   camera_and_composition: First-person view with a blocky hand, framed the way Minecraft 2011 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cozy creative freedom.
-  rendering_and_quality: "A 2011 PC frame at 1280 by 720: world built entirely from one-meter cubes, a square sun, a hotbar of blank slots at the bottom."
-  creative_brief: 'Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building. Carry it through Minecraft cubes, 16px textures, square sun, torches. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2011 PC frame at 1280 by 720: world built entirely from one-meter cubes, a square sun, a hotbar of blank slots at the bottom.'
+  creative_brief: "Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building. Carry it through Minecraft cubes, 16px textures, square sun, torches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Minecraft cubes; 16px textures; square sun; torches
 avoidRules:
   - a green four-legged creeper

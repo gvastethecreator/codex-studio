@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Extreme tactile close-ups and jerky pixilation, framed the way Jan Švankmajer composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with unsettling tactile surrealism.
   rendering_and_quality: Faithful Czech surrealist stop-motion frame, in the recognizable hand of Jan Švankmajer.
-  creative_brief: 'Jan Švankmajer stop-motion look of the 1960s to 2000s: Czech surrealist animation of real objects, raw meat, clay faces devouring each other, antique dolls, taxidermy and tactile, unsettling pixilation. Carry it through Švankmajer object animation, clay, taxidermy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jan Švankmajer stop-motion look of the 1960s to 2000s: Czech surrealist animation of real objects, raw meat, clay faces devouring each other, antique dolls, taxidermy and tactile, unsettling pixilation. Carry it through Švankmajer object animation, clay, taxidermy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Švankmajer object animation; clay; taxidermy
 avoidRules:
   - a girl in a blue dress following a stuffed rabbit

@@ -91,10 +91,7 @@ const spec: Spec = {
       mood: 'slow creeping body horror',
       render: 'Meticulous black-and-white horror manga illustration with a devastating reveal.',
       key: 'Junji Ito hatching; staring eyes; slow transformation; reveal panel',
-      avoid: [
-        'a long-haired girl with a mole under her eye',
-        'existing franchise characters',
-      ],
+      avoid: ['a long-haired girl with a mole under her eye', 'existing franchise characters'],
     }),
     au('SP13-088', 'Shiki - Folk Village Festival Horror', {
       look: 'Daume Shiki television look (2010) with Ryu Fujisaki designs: bizarre sculpted hairstyles, isolated village of wooden houses, bright summer daylight turning uncanny and sinister.',

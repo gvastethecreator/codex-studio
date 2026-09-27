@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Sponge macro: open cells, holes and bubbles like a cave system.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown among sponge structure: open cells, holes and walls.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown among sponge structure: open cells, holes and walls."
   color_and_tone: Sponge colors, as the instrument or lens would record it.
   lighting_and_shadow: Soft light into holes, matching the real imaging setup at this scale.
   texture_and_material: Porous open cells, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cavernous, soft, odd and playful, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: open cells; holes; walls
-  creative_brief: 'Sponge macro: open cells, holes and bubbles like a cave system. Carry it through open cells, holes, walls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sponge macro: open cells, holes and bubbles like a cave system. Carry it through open cells, holes, walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

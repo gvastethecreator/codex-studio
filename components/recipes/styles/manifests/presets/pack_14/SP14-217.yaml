@@ -21,7 +21,7 @@ tags:
   - mande-epic
   - portable-style-study
 visualDna:
-  aesthetic: 'Mande smith ironwork: forged iron figures, tools and staffs made by the smiths'' caste, with hammered textures and elongated elegant forms.'
+  aesthetic: "Mande smith ironwork: forged iron figures, tools and staffs made by the smiths' caste, with hammered textures and elongated elegant forms."
   subject_treatment: Preserve the requested identity, count, pose and action; forge the subject in elongated hammered iron forms.
   color_and_tone: Dark iron with warm forge glow, kept consistent across the whole image.
   lighting_and_shadow: Forge fire lighting and deep shadow, kept consistent across the whole image.
@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Forge interior with tools and staff, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with powerful creative mystery.
   rendering_and_quality: Strong forged detail, kept consistent across the whole image.
-  creative_brief: 'Mande smith ironwork: forged iron figures, tools and staffs made by the smiths'' caste, with hammered textures and elongated elegant forms. Carry it through forged iron, elongated figures, forge glow, staffs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mande smith ironwork: forged iron figures, tools and staffs made by the smiths' caste, with hammered textures and elongated elegant forms. Carry it through forged iron, elongated figures, forge glow, staffs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: forged iron; elongated figures; forge glow; staffs
 avoidRules:
   - generic tribal pattern

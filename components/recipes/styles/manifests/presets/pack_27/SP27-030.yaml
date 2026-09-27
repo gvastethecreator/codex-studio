@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Garish lab and morgue compositions, framed the way Re-Animator 1985 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with garish macabre comedy.
   rendering_and_quality: Garish eighties splatter comedy frame, in the recognizable hand of Re-Animator 1985.
-  creative_brief: 'Stuart Gordon Re-Animator (1985) look: medical school basements, glowing neon green serum, splatter comedy and garish eighties lighting. Carry it through Glowing green serum, morgue labs, macabre comedy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stuart Gordon Re-Animator (1985) look: medical school basements, glowing neon green serum, splatter comedy and garish eighties lighting. Carry it through Glowing green serum, morgue labs, macabre comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Glowing green serum; morgue labs; macabre comedy
 avoidRules:
   - existing franchise characters

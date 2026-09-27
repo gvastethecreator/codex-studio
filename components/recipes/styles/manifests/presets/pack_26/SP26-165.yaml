@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide crowded tableau panels with testimony caption boxes.
   atmosphere_and_mood: Keep the requested mood with sober witnessing empathy.
   rendering_and_quality: Faithful Sacco reportage comic page, in the recognizable hand of Joe Sacco.
-  creative_brief: 'Joe Sacco page look of the 1990s to 2010s: comics journalism in dense crosshatched ink, crowded streets and markets drawn from life, caption boxes of testimony and the reporter as a small bespectacled witness. Carry it through Sacco comics journalism, dense crowds, captions. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Joe Sacco page look of the 1990s to 2010s: comics journalism in dense crosshatched ink, crowded streets and markets drawn from life, caption boxes of testimony and the reporter as a small bespectacled witness. Carry it through Sacco comics journalism, dense crowds, captions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sacco comics journalism; dense crowds; captions
 avoidRules:
   - existing franchise characters

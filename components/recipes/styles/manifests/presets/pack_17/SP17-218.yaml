@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Street or river view filled with lanterns, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with bittersweet festive mystery.
   rendering_and_quality: Painterly glow with clear figures, kept consistent across the whole image.
-  creative_brief: 'Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light. Carry it through paper lanterns, night festival, spirits, river of light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light. Carry it through paper lanterns, night festival, spirits, river of light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: paper lanterns; night festival; spirits; river of light
 avoidRules:
   - interface or HUD

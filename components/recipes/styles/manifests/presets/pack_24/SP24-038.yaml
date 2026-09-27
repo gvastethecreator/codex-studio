@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Station on a rim edge with the crater glow filling the lower frame.
   atmosphere_and_mood: Awestruck, dangerous and devoted, watching the earth breathe.
   rendering_and_quality: Glowing oil painting with rich warm light and smoky depth.
-  creative_brief: 'Volcano observatory vigil: a small monitoring station on the rim of an active volcano, painted in glowing oils with lava light and ash clouds. Carry it through crater rim station, lava glow, ash clouds, rimmed silhouettes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Volcano observatory vigil: a small monitoring station on the rim of an active volcano, painted in glowing oils with lava light and ash clouds. Carry it through crater rim station, lava glow, ash clouds, rimmed silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: crater rim station; lava glow; ash clouds; rimmed silhouettes
 avoidRules:
   - daylight blue sky

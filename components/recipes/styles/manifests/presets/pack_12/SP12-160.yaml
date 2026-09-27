@@ -22,14 +22,14 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: "Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures."
+  aesthetic: 'Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as groovy sixties spies in mod fashion and tuxedos. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mod orange, casino red and gold, true to the No One Lives Forever 2000 palette.
-  lighting_and_shadow: "Warm casino glamour lighting with simple flat shading."
-  texture_and_material: "Blurry textures on simple boxy walls and furniture, figures with smooth simple faces."
+  lighting_and_shadow: 'Warm casino glamour lighting with simple flat shading.'
+  texture_and_material: 'Blurry textures on simple boxy walls and furniture, figures with smooth simple faces.'
   camera_and_composition: First-person casino view, framed the way No One Lives Forever 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with groovy spy glamour.
-  rendering_and_quality: "A 2000 PC frame at 800 by 600 in first person: a gun at the bottom, a sixties casino of simple shapes, number shapes in the corners."
+  rendering_and_quality: 'A 2000 PC frame at 800 by 600 in first person: a gun at the bottom, a sixties casino of simple shapes, number shapes in the corners.'
   creative_brief: "Monolith No One Lives Forever (2000) look: first-person sixties spy shooter with mod fashion, casino glamour, gadgets and boxy simple interiors with blurry textures. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: NOLF sixties spy; mod fashion; casino
 avoidRules:

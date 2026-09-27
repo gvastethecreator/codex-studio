@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Quiet interior framing with large expanses of wall around the subject.
   atmosphere_and_mood: Stale, suffocating and quietly alive, a house that breathes.
   rendering_and_quality: Detailed painterly realism with subtle pattern distortion in the stains.
-  creative_brief: 'Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved. Carry it through damp floral wallpaper, spreading stains, bubbling seams, subtly moving pattern. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved. Carry it through damp floral wallpaper, spreading stains, bubbling seams, subtly moving pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: damp floral wallpaper; spreading stains; bubbling seams; subtly moving pattern
 avoidRules:
   - bright clean walls

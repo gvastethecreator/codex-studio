@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low view up the temple stair, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with guardian monumental menace.
   rendering_and_quality: Bold monumental carving, kept consistent across the whole image.
-  creative_brief: 'Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps. Carry it through serpent heads, temple stair, painted scales, fangs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps. Carry it through serpent heads, temple stair, painted scales, fangs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: serpent heads; temple stair; painted scales; fangs
 avoidRules:
   - readable glyphs

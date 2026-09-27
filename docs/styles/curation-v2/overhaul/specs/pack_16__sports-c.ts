@@ -36,8 +36,8 @@ const spec: Spec = {
       },
       [
         "A driver's white-knuckled hands grip the wheel as the rearview mirror fills with headlights belonging to a car that crashed on this road years ago. No readable text or logo.",
-        "A delivery driver drifts a mountain hairpin at night while a fat cat sleeps on the dashboard and does not even open one eye. No readable text or logo.",
-        "Two cars idle nose to nose on a foggy mountain pass, their drivers silently sipping canned coffee in the headlight glow before the race. No readable text or logo.",
+        'A delivery driver drifts a mountain hairpin at night while a fat cat sleeps on the dashboard and does not even open one eye. No readable text or logo.',
+        'Two cars idle nose to nose on a foggy mountain pass, their drivers silently sipping canned coffee in the headlight glow before the race. No readable text or logo.',
       ],
     ),
     'SP05-354': u(
@@ -60,9 +60,9 @@ const spec: Spec = {
         key_features: 'racing line overlay; apex markers; curbs; telemetry shapes',
       },
       [
-        "A race car dives into a hairpin along a glowing cyan racing line while its own ghost from the previous lap overtakes it on the inside. No readable text or logo.",
-        "Race engineers stare at a wall of abstract telemetry as their driver takes the apex so perfectly that the data blooms into a flower. No readable text or logo.",
-        "Late at night in an empty garage an engineer replays the crash lap, the glowing apex points hanging in the dark around her like fireflies. No readable text or logo.",
+        'A race car dives into a hairpin along a glowing cyan racing line while its own ghost from the previous lap overtakes it on the inside. No readable text or logo.',
+        'Race engineers stare at a wall of abstract telemetry as their driver takes the apex so perfectly that the data blooms into a flower. No readable text or logo.',
+        'Late at night in an empty garage an engineer replays the crash lap, the glowing apex points hanging in the dark around her like fireflies. No readable text or logo.',
       ],
     ),
     'SP05-355': u(
@@ -82,9 +82,9 @@ const spec: Spec = {
         key_features: 'confetti colors; sprinting idols; cheering stands; sparkle',
       },
       [
-        "Five idol performers in satin tracksuits sprint for the finish as the confetti cannons fire early and bury the entire track. No readable text or logo.",
-        "An idol relay turns into a dance battle mid-baton-pass while the stadium crowd waves glow sticks in the pouring rain. No readable text or logo.",
-        "After her group disbands, a lone idol races the sunset around an empty stadium as the stage lights flick on one by one to follow her. No readable text or logo.",
+        'Five idol performers in satin tracksuits sprint for the finish as the confetti cannons fire early and bury the entire track. No readable text or logo.',
+        'An idol relay turns into a dance battle mid-baton-pass while the stadium crowd waves glow sticks in the pouring rain. No readable text or logo.',
+        'After her group disbands, a lone idol races the sunset around an empty stadium as the stage lights flick on one by one to follow her. No readable text or logo.',
       ],
     ),
     'SP05-356': u(
@@ -105,9 +105,9 @@ const spec: Spec = {
         key_features: 'impact freeze; halftone background; radial lines; sweat spray',
       },
       [
-        "A counterpunch lands and sweat sprays in a perfect fan while the background snaps to flat yellow halftone and the whole crowd vanishes. No readable text or logo.",
-        "Two boxers land simultaneous punches and both faces stretch into wild rubbery shapes while the referee covers his own eyes. No readable text or logo.",
-        "In a flooded abandoned gym a boxer shadowboxes against his reflection in the water, and the reflection lands the first hit. No readable text or logo.",
+        'A counterpunch lands and sweat sprays in a perfect fan while the background snaps to flat yellow halftone and the whole crowd vanishes. No readable text or logo.',
+        'Two boxers land simultaneous punches and both faces stretch into wild rubbery shapes while the referee covers his own eyes. No readable text or logo.',
+        'In a flooded abandoned gym a boxer shadowboxes against his reflection in the water, and the reflection lands the first hit. No readable text or logo.',
       ],
     ),
     'SP05-357': u(
@@ -130,9 +130,9 @@ const spec: Spec = {
         key_features: 'curving ball trail; warped table; paddle spin; concentration',
       },
       [
-        "A smash leaves a white trail that bends around the net and loops twice before landing, the blue table warping under the spin. No readable text or logo.",
-        "Two old men in bathrobes play a ferocious match at a hot-spring inn, the ball spinning so hard it makes the steam spiral. No readable text or logo.",
-        "Alone in a gym, a player faces a launcher firing a hundred balls at once, each one curving in a different impossible direction. No readable text or logo.",
+        'A smash leaves a white trail that bends around the net and loops twice before landing, the blue table warping under the spin. No readable text or logo.',
+        'Two old men in bathrobes play a ferocious match at a hot-spring inn, the ball spinning so hard it makes the steam spiral. No readable text or logo.',
+        'Alone in a gym, a player faces a launcher firing a hundred balls at once, each one curving in a different impossible direction. No readable text or logo.',
       ],
     ),
   },

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Heroic centered figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with reverent cosmic power.
   rendering_and_quality: Polished contemporary illustration, kept consistent across the whole image.
-  creative_brief: 'Afrofuturist Orisha illustration: contemporary digital illustration of Orisha as luminous futuristic figures, cosmic backgrounds, glowing beadwork and sacred colors. Carry it through afrofuturist, glowing beadwork, sacred colors, cosmic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Afrofuturist Orisha illustration: contemporary digital illustration of Orisha as luminous futuristic figures, cosmic backgrounds, glowing beadwork and sacred colors. Carry it through afrofuturist, glowing beadwork, sacred colors, cosmic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: afrofuturist; glowing beadwork; sacred colors; cosmic
 avoidRules:
   - generic tribal pattern

@@ -22,15 +22,15 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: 'Don''t Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air.'
+  aesthetic: "Don't Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air."
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized climbers with big packs. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft stone, moss green and sky blue, true to the Jusant 2023 palette.
-  lighting_and_shadow: "Soft painted light on warm stone cliffs, lit the way Jusant 2023 lights its levels."
-  texture_and_material: "Painterly stone and cloth with soft brush detail."
+  lighting_and_shadow: 'Soft painted light on warm stone cliffs, lit the way Jusant 2023 lights its levels.'
+  texture_and_material: 'Painterly stone and cloth with soft brush detail.'
   camera_and_composition: Wide climbing view, framed the way Jusant 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet meditative ascent.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080 in third person: small climber with a big pack on a vast cliff, no interface."
-  creative_brief: 'Don''t Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air. Carry it through Jusant climbing, drought world, floating whales. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080 in third person: small climber with a big pack on a vast cliff, no interface.'
+  creative_brief: "Don't Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air. Carry it through Jusant climbing, drought world, floating whales. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Jusant climbing; drought world; floating whales
 avoidRules:
   - existing game characters, logos or levels

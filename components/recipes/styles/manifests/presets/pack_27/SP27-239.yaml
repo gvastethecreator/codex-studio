@@ -22,14 +22,14 @@ tags:
   - goose-game
   - reference-title
 visualDna:
-  aesthetic: "House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief."
+  aesthetic: 'House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in flat pastel untextured English village gardens. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft pastel greens, cream and brick orange, true to the Untitled Goose Game 2019 palette.
-  lighting_and_shadow: "Soft flat daylight with gentle shadows and no strong contrast."
-  texture_and_material: "Untextured flat pastel shapes, simple rounded hedges, fences and garden objects."
+  lighting_and_shadow: 'Soft flat daylight with gentle shadows and no strong contrast.'
+  texture_and_material: 'Untextured flat pastel shapes, simple rounded hedges, fences and garden objects.'
   camera_and_composition: High three-quarter view of gardens, framed the way Untitled Goose Game 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gentle mischievous comedy.
-  rendering_and_quality: "A 2019 frame at 1920 by 1080: high angle over a pastel English garden, a white goose, flat shapes."
+  rendering_and_quality: 'A 2019 frame at 1920 by 1080: high angle over a pastel English garden, a white goose, flat shapes.'
   creative_brief: "House House Untitled Goose Game (2019) look: flat pastel English village gardens of simple untextured shapes, a white goose and quiet mischief. Carry it through Goose Game pastel village, flat shapes, mischief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Goose Game pastel village; flat shapes; mischief
 avoidRules:

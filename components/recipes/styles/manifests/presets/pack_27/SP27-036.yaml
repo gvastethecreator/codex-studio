@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frantic stop-motion and speeding handheld, framed the way Tetsuo the Iron Man 1989 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with frantic industrial frenzy.
   rendering_and_quality: Frantic black-and-white cyberpunk frame, in the recognizable hand of Tetsuo the Iron Man 1989.
-  creative_brief: 'Shinya Tsukamoto Tetsuo: The Iron Man (1989) look: frantic black-and-white 16mm, stop-motion metal growth, industrial Tokyo and grinding cyberpunk body horror. Carry it through Tetsuo metal growth, frantic 16mm, industrial Tokyo. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Shinya Tsukamoto Tetsuo: The Iron Man (1989) look: frantic black-and-white 16mm, stop-motion metal growth, industrial Tokyo and grinding cyberpunk body horror. Carry it through Tetsuo metal growth, frantic 16mm, industrial Tokyo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Tetsuo metal growth; frantic 16mm; industrial Tokyo
 avoidRules:
   - existing franchise characters

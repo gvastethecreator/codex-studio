@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small quirky sprite in simple suburban towns, or facing an enemy over a swirling pattern. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a small quirky sprite in simple suburban towns, or facing an enemy over a swirling pattern. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Pastel suburban colors and psychedelic battle swirls, true to the EarthBound 1994 palette.
-  lighting_and_shadow: "Flat simple colors in town and wildly cycling bright colors in battle backgrounds."
-  texture_and_material: "Crisp simple pixel sprites with few colors, battle backdrops of wavy animated psychedelic stripes."
+  lighting_and_shadow: 'Flat simple colors in town and wildly cycling bright colors in battle backgrounds.'
+  texture_and_material: 'Crisp simple pixel sprites with few colors, battle backdrops of wavy animated psychedelic stripes.'
   camera_and_composition: Oblique top-down town view or battle screen, framed the way EarthBound 1994 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quirky suburban surrealism.
-  rendering_and_quality: "A 1994 Super Nintendo frame at 256 by 224: plain crisp pixels, cozy town or trippy battle screen with blank rolling-meter boxes."
+  rendering_and_quality: 'A 1994 Super Nintendo frame at 256 by 224: plain crisp pixels, cozy town or trippy battle screen with blank rolling-meter boxes.'
   creative_brief: "Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds. Carry it through EarthBound quirky sprites, suburban towns, psychedelic battle stripes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "EarthBound quirky sprites; suburban towns; psychedelic battle stripes"
+  key_features: 'EarthBound quirky sprites; suburban towns; psychedelic battle stripes'
 avoidRules:
   - a boy in a red cap with a baseball bat
   - existing franchise characters

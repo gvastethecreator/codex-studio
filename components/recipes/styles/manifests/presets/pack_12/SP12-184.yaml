@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as four color-coded dungeon heroes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Hero red, blue, green and gold, true to the Gauntlet 2014 palette.
-  lighting_and_shadow: "Warm dungeon torchlight with glowing magic hits, lit the way Gauntlet 2014 lights its levels."
-  texture_and_material: "Chunky stylized stone, gear and swarming monsters seen from a high angle."
+  lighting_and_shadow: 'Warm dungeon torchlight with glowing magic hits, lit the way Gauntlet 2014 lights its levels.'
+  texture_and_material: 'Chunky stylized stone, gear and swarming monsters seen from a high angle.'
   camera_and_composition: Isometric co-op view, framed the way Gauntlet 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic co-op fun.
-  rendering_and_quality: "A 2014 frame at 1920 by 1080: four color-coded heroes in a dungeon, four portrait shapes at the corners."
-  creative_brief: 'Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure. Carry it through Gauntlet co-op, four heroes, swarms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2014 frame at 1920 by 1080: four color-coded heroes in a dungeon, four portrait shapes at the corners.'
+  creative_brief: "Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure. Carry it through Gauntlet co-op, four heroes, swarms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Gauntlet co-op; four heroes; swarms
 avoidRules:
   - existing Gauntlet heroes

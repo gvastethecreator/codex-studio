@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Romantic gothic compositions, framed the way Cemetery Man 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with romantic absurd gothic.
   rendering_and_quality: Dreamy nineties Italian gothic frame, in the recognizable hand of Cemetery Man 1994.
-  creative_brief: 'Michele Soavi Cemetery Man (Dellamorte Dellamore, 1994) look: romantic misty Italian cemetery, ossuaries, absurd dark comedy and dreamy gothic beauty. Carry it through Cemetery Man romance, ossuary, absurd gothic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Michele Soavi Cemetery Man (Dellamorte Dellamore, 1994) look: romantic misty Italian cemetery, ossuaries, absurd dark comedy and dreamy gothic beauty. Carry it through Cemetery Man romance, ossuary, absurd gothic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Cemetery Man romance; ossuary; absurd gothic
 avoidRules:
   - existing franchise characters

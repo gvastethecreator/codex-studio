@@ -12,7 +12,7 @@ tags:
   - 3d-and-cgi-rendering
   - organic-character-and-bio-cgi
 visualDna:
-  aesthetic: 'Medical 3D illustration: the subject''s body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth.'
+  aesthetic: "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth."
   subject_treatment: Keep the prompt subject recognizable with its pose, setting and camera view; reveal its internal anatomy through translucent outer layers or a clean cutaway window, plausible for that creature, person or object (a declared change), without forcing a T-pose or turning an object into an avatar.
   color_and_tone: Clinical palette of red arteries, blue veins, yellow nerves, ivory bone and soft pink and plum organs inside milky translucent skin.
   lighting_and_shadow: Soft shadowless wrap light with a gentle rim glow on the translucent skin edges and no dramatic cast shadows.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Calm, clean and instructive, wonder without any gore.
   rendering_and_quality: Textbook-clean anatomy with no blood, wounds or labels, and structures plausible for the subject.
   key_features: translucent skin layer; color-coded arteries and veins; ivory bones; shadowless wrap light; pale backdrop
-  creative_brief: 'Medical 3D illustration: the subject''s body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth. Carry it through translucent skin layer, color-coded arteries and veins, ivory bones, shadowless wrap light, pale backdrop. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth. Carry it through translucent skin layer, color-coded arteries and veins, ivory bones, shadowless wrap light, pale backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - forced T-pose
   - object turned into an avatar

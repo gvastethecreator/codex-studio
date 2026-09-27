@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with shining focal lines.
   atmosphere_and_mood: Keep the requested mood with ancient precious mystery.
   rendering_and_quality: Clean metallic line work with believable tarnish, never glitter.
-  creative_brief: 'Tarnished metallic ink: silver, bronze and copper inks drawn on dark paper, their shine dulled and tarnished in places like old relics. Carry it through metallic inks on dark paper, tarnish, glinting lines, relic feel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tarnished metallic ink: silver, bronze and copper inks drawn on dark paper, their shine dulled and tarnished in places like old relics. Carry it through metallic inks on dark paper, tarnish, glinting lines, relic feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: metallic inks on dark paper; tarnish; glinting lines; relic feel
 avoidRules:
   - glitter

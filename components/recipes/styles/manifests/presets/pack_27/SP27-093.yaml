@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors.'
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject from behind as a rubbery cartoon figure running into the screen down a narrow jungle path. Wardrobe details apply only when the prompt leaves clothing open."
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show the subject from behind as a rubbery cartoon figure running into the screen down a narrow jungle path. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Vibrant tropical green, crate brown and ocean blue.
-  lighting_and_shadow: "Bright tropical light with colors that shift from corner to corner across each surface."
-  texture_and_material: "Figures and crates with simple shapes and a few painted details, jungle walls of blurry textures that wobble slightly."
+  lighting_and_shadow: 'Bright tropical light with colors that shift from corner to corner across each surface.'
+  texture_and_material: 'Figures and crates with simple shapes and a few painted details, jungle walls of blurry textures that wobble slightly.'
   camera_and_composition: Behind-the-character corridor view, framed the way Crash Bandicoot 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with zany tropical fun.
-  rendering_and_quality: "A 1996 PlayStation frame at 512 by 240 on a CRT: soft, a little jagged, wooden crates and fruit along a path."
+  rendering_and_quality: 'A 1996 PlayStation frame at 512 by 240 on a CRT: soft, a little jagged, wooden crates and fruit along a path.'
   creative_brief: "Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors. Carry it through Crash jungle path, crates, rubbery cartoon runner, soft PS1 image. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Crash jungle path; crates; rubbery cartoon runner; soft PS1 image"
+  key_features: 'Crash jungle path; crates; rubbery cartoon runner; soft PS1 image'
 avoidRules:
   - an orange bandicoot in jeans
   - existing franchise characters

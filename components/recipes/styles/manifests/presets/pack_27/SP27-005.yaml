@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide community festival shots and odd smiling close-ups.
   atmosphere_and_mood: Keep the requested mood with cheerful sinister folk ritual.
   rendering_and_quality: Bright seventies folk horror film frame, in the recognizable hand of The Wicker Man 1973.
-  creative_brief: 'Robin Hardy The Wicker Man (1973) look: bright pagan daylight on a Scottish island, maypoles, animal masks, flower crowns, folk songs and cheerful sinister community. Carry it through Wicker Man daylight, animal masks, maypoles, sinister cheer. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Robin Hardy The Wicker Man (1973) look: bright pagan daylight on a Scottish island, maypoles, animal masks, flower crowns, folk songs and cheerful sinister community. Carry it through Wicker Man daylight, animal masks, maypoles, sinister cheer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Wicker Man daylight; animal masks; maypoles; sinister cheer
 avoidRules:
   - a giant burning wicker figure

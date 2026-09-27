@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Free mosaic page layout with no fixed grid.
   atmosphere_and_mood: Keep the requested mood with mythic solemn grandeur.
   rendering_and_quality: Faithful Toppi hatched pen page, in the recognizable hand of Sergio Toppi.
-  creative_brief: 'Sergio Toppi page look of the 1970s to 2000s: dense decorative pen hatching, figures fused with landscape, panel borders dissolved into mosaic-like page designs and vast empty white space. Carry it through Toppi decorative hatching, mosaic layout. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sergio Toppi page look of the 1970s to 2000s: dense decorative pen hatching, figures fused with landscape, panel borders dissolved into mosaic-like page designs and vast empty white space. Carry it through Toppi decorative hatching, mosaic layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Toppi decorative hatching; mosaic layout
 avoidRules:
   - existing franchise characters

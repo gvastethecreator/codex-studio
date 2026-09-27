@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Framed folk scene, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with folk dread and humor.
   rendering_and_quality: Bold naive folk print, kept consistent across the whole image.
-  creative_brief: 'Slavic nightmare lubok: Russian popular woodblock prints with bold outlines and bright hand coloring, showing house spirits, forest spirits and night hags. Carry it through lubok print, house spirit, forest spirit, hand-colored. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Slavic nightmare lubok: Russian popular woodblock prints with bold outlines and bright hand coloring, showing house spirits, forest spirits and night hags. Carry it through lubok print, house spirit, forest spirit, hand-colored. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: lubok print; house spirit; forest spirit; hand-colored
 avoidRules:
   - cultural stereotypes or caricature

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide camp compositions, framed the way Mars Attacks 1996 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gleeful camp mayhem.
   rendering_and_quality: Authentic mid-nineties Burton satire frame, in the recognizable hand of Mars Attacks 1996.
-  creative_brief: 'Tim Burton Mars Attacks! (1996) look: candy-colored pulp satire, fifties-style flying saucers over Las Vegas, big-brained Martians with ray guns and campy blockbuster chaos. Carry it through Mars Attacks candy colors, fifties saucers, camp. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tim Burton Mars Attacks! (1996) look: candy-colored pulp satire, fifties-style flying saucers over Las Vegas, big-brained Martians with ray guns and campy blockbuster chaos. Carry it through Mars Attacks candy colors, fifties saucers, camp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mars Attacks candy colors; fifties saucers; camp
 avoidRules:
   - a big-brained Martian in a glass helmet

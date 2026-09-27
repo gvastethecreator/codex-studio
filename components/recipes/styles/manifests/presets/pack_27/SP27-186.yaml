@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Grand theatrical framing in cavernous rooms, framed the way Sunset Boulevard 1950 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with faded grotesque glamour.
   rendering_and_quality: Authentic 1950 Paramount noir frame, in the recognizable hand of Sunset Boulevard 1950.
-  creative_brief: 'Billy Wilder Sunset Boulevard (1950) look: decaying Hollywood mansion, dusty pipe organ, empty swimming pool, projector beams through cigarette smoke and faded silent-film glamour. Carry it through Sunset Boulevard mansion, projector beams, faded glamour. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Billy Wilder Sunset Boulevard (1950) look: decaying Hollywood mansion, dusty pipe organ, empty swimming pool, projector beams through cigarette smoke and faded silent-film glamour. Carry it through Sunset Boulevard mansion, projector beams, faded glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Sunset Boulevard mansion; projector beams; faded glamour
 avoidRules:
   - existing franchise characters

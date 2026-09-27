@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Theatrical painted-set compositions with collage inserts, framed the way House 1977 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with absurd candy-colored horror.
   rendering_and_quality: Psychedelic seventies Japanese horror frame, in the recognizable hand of House 1977.
-  creative_brief: 'Nobuhiko Obayashi House (Hausu, 1977) look: psychedelic collage effects, painted backdrops, matte composites, candy colors, cartoon inserts and absurd playful horror. Carry it through Hausu collage, painted backdrops, candy colors, absurd horror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Nobuhiko Obayashi House (Hausu, 1977) look: psychedelic collage effects, painted backdrops, matte composites, candy colors, cartoon inserts and absurd playful horror. Carry it through Hausu collage, painted backdrops, candy colors, absurd horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hausu collage; painted backdrops; candy colors; absurd horror
 avoidRules:
   - existing franchise characters

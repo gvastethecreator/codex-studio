@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Surreal vignette, framed the way Alex Mayo composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with eerie playful dream.
   rendering_and_quality: Surreal dreamlike OSR illustration, in the recognizable hand of Alex Mayo.
-  creative_brief: 'Alex Mayo OSR illustration: surreal dreamlike line, strange hybrid creatures, soft limited color and eerie playful weirdness in indie role-playing zines. Carry it through Alex Mayo surreal hybrids, dreamlike, soft color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alex Mayo OSR illustration: surreal dreamlike line, strange hybrid creatures, soft limited color and eerie playful weirdness in indie role-playing zines. Carry it through Alex Mayo surreal hybrids, dreamlike, soft color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Alex Mayo surreal hybrids; dreamlike; soft color
 avoidRules:
   - existing franchise characters

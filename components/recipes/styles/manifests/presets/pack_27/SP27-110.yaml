@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Intelligent Systems Paper Mario: The Thousand-Year Door (2004) look: paper-flat characters folding and fluttering in cardboard theater sets, audience seats, stage curtains and warm storybook color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a paper-flat cutout figure on a cardboard theater stage. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm storybook red, gold and cream, true to the Paper Mario TTYD 2004 palette.
-  lighting_and_shadow: "Warm stage spotlights falling on paper sets and paper-thin figures."
-  texture_and_material: "Paper-thin cutout figures with white edges, cardboard folds, tape and hinges on the stage sets."
+  lighting_and_shadow: 'Warm stage spotlights falling on paper sets and paper-thin figures.'
+  texture_and_material: 'Paper-thin cutout figures with white edges, cardboard folds, tape and hinges on the stage sets.'
   camera_and_composition: Side-view theater stage with audience, framed the way Paper Mario TTYD 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with whimsical theatrical charm.
-  rendering_and_quality: "A 2004 GameCube frame at 640 by 480: clean and soft, flat paper figures on a cardboard theater stage."
-  creative_brief: 'Intelligent Systems Paper Mario: The Thousand-Year Door (2004) look: paper-flat characters folding and fluttering in cardboard theater sets, audience seats, stage curtains and warm storybook color. Carry it through Paper-flat figures, cardboard theater, audience, storybook. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2004 GameCube frame at 640 by 480: clean and soft, flat paper figures on a cardboard theater stage.'
+  creative_brief: "Intelligent Systems Paper Mario: The Thousand-Year Door (2004) look: paper-flat characters folding and fluttering in cardboard theater sets, audience seats, stage curtains and warm storybook color. Carry it through Paper-flat figures, cardboard theater, audience, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Paper-flat figures; cardboard theater; audience; storybook
 avoidRules:
   - a mustached plumber in red and blue

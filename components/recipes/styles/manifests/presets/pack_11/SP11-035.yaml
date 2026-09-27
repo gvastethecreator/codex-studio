@@ -13,7 +13,7 @@ tags:
   - sensor-and-technical-imaging
 visualDna:
   aesthetic: 'White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red.'
-  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: shown as heat: warm bodies bright white, cool surfaces dark grey, the hottest points tinted red, smoke and darkness ignored.'
+  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: shown as heat: warm bodies bright white, cool surfaces dark grey, the hottest points tinted red, smoke and darkness ignored."
   color_and_tone: Greyscale white-hot with a single red hot-spot overlay, exactly as the instrument maps its signal.
   lighting_and_shadow: Heat glows; no visible light or shadows, because the image shows signal, not ordinary light.
   texture_and_material: Soft thermal blur, low resolution and slight sensor noise.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Urgent, tactical, eerie and tense, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
   key_features: white-hot greyscale; red hottest spots; smoke transparency
-  creative_brief: 'White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red. Carry it through white-hot greyscale, red hottest spots, smoke transparency. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red. Carry it through white-hot greyscale, red hottest spots, smoke transparency. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

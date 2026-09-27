@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with the subject emerging from branching lines.
   atmosphere_and_mood: Keep the requested mood with an uneasy organic creep.
   rendering_and_quality: Controlled bleeding lines with clear form, never a random stain.
-  creative_brief: 'Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive. Carry it through lines bleeding into tendrils, feathered halos, damp paper, creeping growth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive. Carry it through lines bleeding into tendrils, feathered halos, damp paper, creeping growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: lines bleeding into tendrils; feathered halos; damp paper; creeping growth
 avoidRules:
   - clean vector lines

@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject seen through a curved first-person visor with HUD arcs and droplets on the glass. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Alien teal, bioluminescent orange and visor green, true to the Metroid Prime 2002 palette.
-  lighting_and_shadow: "Cave glow and colored light reflected faintly on the inside of a curved helmet visor."
-  texture_and_material: "Water droplets and fog on the visor glass, alien stone with simple repeating textures beyond it."
+  lighting_and_shadow: 'Cave glow and colored light reflected faintly on the inside of a curved helmet visor.'
+  texture_and_material: 'Water droplets and fog on the visor glass, alien stone with simple repeating textures beyond it.'
   camera_and_composition: First-person through a curved helmet visor, framed the way Metroid Prime 2002 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien exploration.
-  rendering_and_quality: "A 2002 GameCube frame at 640 by 480: curved visor frame shapes around the edges, clean but simple world beyond."
-  creative_brief: 'Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays. Carry it through Metroid Prime visor, droplets, scan overlay, alien ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2002 GameCube frame at 640 by 480: curved visor frame shapes around the edges, clean but simple world beyond.'
+  creative_brief: "Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays. Carry it through Metroid Prime visor, droplets, scan overlay, alien ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Metroid Prime visor; droplets; scan overlay; alien ruins
 avoidRules:
   - an orange power suit with an arm cannon

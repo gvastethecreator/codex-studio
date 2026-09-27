@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Three-quarter practical view, framed the way Hard Sci-Fi Exosuit composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with practical engineered realism.
   rendering_and_quality: Clean design-presentation render with readable panel lines and material separation.
-  creative_brief: 'Hard science fiction exosuit language: realistic powered exoskeletons and load lifters with open frames, hydraulic pistons, NASA-style labels as shapes, and industrial practicality. Carry it through Exosuit open frame, pistons, industrial practical. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hard science fiction exosuit language: realistic powered exoskeletons and load lifters with open frames, hydraulic pistons, NASA-style labels as shapes, and industrial practicality. Carry it through Exosuit open frame, pistons, industrial practical. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Exosuit open frame; pistons; industrial practical
 avoidRules:
   - a yellow power loader from a famous film

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Round microscope-like fields and vast cell landscapes with tiny figures.
   atmosphere_and_mood: Wondrous and alien, an ocean of life hidden inside a single drop.
   rendering_and_quality: Luminous translucent illustration with fine, scientific-looking membrane and organelle detail.
-  creative_brief: 'Cellpunk: worlds shown at cellular scale, with membrane cities, organelle machinery and tiny travelers moving through living tissue landscapes. Carry it through membrane cities, organelle machines, microscope glow, tiny travelers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cellpunk: worlds shown at cellular scale, with membrane cities, organelle machinery and tiny travelers moving through living tissue landscapes. Carry it through membrane cities, organelle machines, microscope glow, tiny travelers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: membrane cities; organelle machines; microscope glow; tiny travelers
 avoidRules:
   - readable text

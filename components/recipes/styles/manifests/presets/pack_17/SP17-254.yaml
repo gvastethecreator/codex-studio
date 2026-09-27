@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Isometric map view, framed the way Jez Gordon composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with crisp inviting exploration.
   rendering_and_quality: Clean graphic isometric dungeon illustration, in the recognizable hand of Jez Gordon.
-  creative_brief: 'Jez Gordon OSR design and illustration: clean graphic line, isometric dungeon maps with charming detail, limited color and crisp modern zine layout. Carry it through Jez Gordon isometric maps, clean graphic line. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jez Gordon OSR design and illustration: clean graphic line, isometric dungeon maps with charming detail, limited color and crisp modern zine layout. Carry it through Jez Gordon isometric maps, clean graphic line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Jez Gordon isometric maps; clean graphic line
 avoidRules:
   - existing franchise characters

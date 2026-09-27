@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide sky vista with ships in layered formation.
   atmosphere_and_mood: Keep the requested mood with solemn airborne crusade.
   rendering_and_quality: Detailed painterly finish with clear ship silhouettes, kept consistent across the whole image.
-  creative_brief: 'Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation. Carry it through cathedral airships, stained sails, smoky sky, formation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation. Carry it through cathedral airships, stained sails, smoky sky, formation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cathedral airships; stained sails; smoky sky; formation
 avoidRules:
   - readable runes or text

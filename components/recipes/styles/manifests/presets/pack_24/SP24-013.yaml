@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Long bus interiors with repeating seats, or wide empty stops seen through glass.
   atmosphere_and_mood: Lonely, hypnotic and slightly wrong, a ride with no destination.
   rendering_and_quality: Moody painterly realism with strong reflections and grain.
-  creative_brief: 'Night-bus sodium limbo: empty late-night buses and stations under orange sodium light, passengers too still and routes that never seem to reach their stop. Carry it through sodium orange light, empty late buses, window reflections, endless routes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Night-bus sodium limbo: empty late-night buses and stations under orange sodium light, passengers too still and routes that never seem to reach their stop. Carry it through sodium orange light, empty late buses, window reflections, endless routes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sodium orange light; empty late buses; window reflections; endless routes
 avoidRules:
   - daylight

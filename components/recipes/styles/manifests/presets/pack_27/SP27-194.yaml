@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: VistaVision wide landscapes through doorway frames, framed the way The Searchers 1956 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with restless epic longing.
   rendering_and_quality: Authentic fifties VistaVision western frame, in the recognizable hand of The Searchers 1956.
-  creative_brief: 'John Ford The Searchers (1956) look: VistaVision Technicolor Monument Valley, figures framed through dark doorways against blazing red buttes, snowfields and restless obsession. Carry it through Searchers doorway frame, red buttes, VistaVision. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Ford The Searchers (1956) look: VistaVision Technicolor Monument Valley, figures framed through dark doorways against blazing red buttes, snowfields and restless obsession. Carry it through Searchers doorway frame, red buttes, VistaVision. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Searchers doorway frame; red buttes; VistaVision
 avoidRules:
   - existing franchise characters

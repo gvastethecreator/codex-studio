@@ -28,12 +28,12 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as grounded Slavic peasants, hunters and folklore creatures in worn clothing and armor. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bog green, muddy brown, grey fog and pale folklore light.
   lighting_and_shadow: Diffuse misty light with lantern glow and eerie hues.
-  texture_and_material: "Realistic mud, wet wood, leather and moss, dense grass and reeds, slightly soft console-game detail in the distance."
+  texture_and_material: 'Realistic mud, wet wood, leather and moss, dense grass and reeds, slightly soft console-game detail in the distance.'
   camera_and_composition: Third-person over-the-shoulder view in wet landscapes, framed the way The Witcher 3 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with eerie folkloric dread.
-  rendering_and_quality: "A 2015 PlayStation 4 frame at 1920 by 1080 in third person: misty bog, a small round minimap shape top right and bar shapes top left."
+  rendering_and_quality: 'A 2015 PlayStation 4 frame at 1920 by 1080 in third person: misty bog, a small round minimap shape top right and bar shapes top left.'
   key_features: Witcher 3 Slavic bog; monster contracts; misty folklore
-  creative_brief: 'CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore. Carry it through Witcher 3 Slavic bog, monster contracts, misty folklore. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore. Carry it through Witcher 3 Slavic bog, monster contracts, misty folklore. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - a white-haired hunter with two swords and cat eyes
   - three crones of a bog

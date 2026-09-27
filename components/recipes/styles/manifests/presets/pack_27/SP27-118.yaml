@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with thick ink outlines and hand-drawn hatching over cel-shaded 3D in a dusty wasteland. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sun-bleached tan, rust orange and sky blue, true to the Borderlands 2009 palette.
-  lighting_and_shadow: "Hard desert sun with shadows drawn as ink hatching lines."
-  texture_and_material: "Thick black ink outlines and hand-drawn hatching painted onto every 3D surface."
+  lighting_and_shadow: 'Hard desert sun with shadows drawn as ink hatching lines.'
+  texture_and_material: 'Thick black ink outlines and hand-drawn hatching painted onto every 3D surface.'
   camera_and_composition: First-person view with a gun or dusty vistas.
   atmosphere_and_mood: Keep the requested mood with rowdy wasteland absurdity.
-  rendering_and_quality: "A 2009 Xbox 360 frame at 1280 by 720: comic-inked 3D world, bright dusty colors, a reticle and bar shapes."
-  creative_brief: 'Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors. Carry it through Borderlands ink hatching, wasteland, junk towns. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2009 Xbox 360 frame at 1280 by 720: comic-inked 3D world, bright dusty colors, a reticle and bar shapes.'
+  creative_brief: "Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors. Carry it through Borderlands ink hatching, wasteland, junk towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Borderlands ink hatching; wasteland; junk towns
 avoidRules:
   - a one-wheeled robot

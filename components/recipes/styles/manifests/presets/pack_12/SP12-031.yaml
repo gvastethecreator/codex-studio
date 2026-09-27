@@ -26,13 +26,13 @@ visualDna:
   aesthetic: 'Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as small crisp pixel mechs and giant insects on isometric tiles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted tile greens, warning orange and deep ocean.
-  lighting_and_shadow: "Flat pixel colors with bright red and orange warning tiles."
-  texture_and_material: "Crisp square pixels, small mech and insect sprites on diagonal square tiles."
+  lighting_and_shadow: 'Flat pixel colors with bright red and orange warning tiles.'
+  texture_and_material: 'Crisp square pixels, small mech and insect sprites on diagonal square tiles.'
   camera_and_composition: Isometric grid tactics view, framed the way Into the Breach 2018 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tight strategic tension.
-  rendering_and_quality: "A 2018 PC frame at 1280 by 720: an 8 by 8 diagonal grid of tiles, small sprites, bar and icon shapes at the edges."
+  rendering_and_quality: 'A 2018 PC frame at 1280 by 720: an 8 by 8 diagonal grid of tiles, small sprites, bar and icon shapes at the edges.'
   key_features: Into the Breach grid; pixel mechs; giant insects
-  creative_brief: 'Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map. Carry it through Into the Breach grid, pixel mechs, giant insects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map. Carry it through Into the Breach grid, pixel mechs, giant insects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing Vek insect designs
   - watermark

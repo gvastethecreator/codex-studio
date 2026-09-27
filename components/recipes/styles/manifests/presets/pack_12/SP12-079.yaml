@@ -22,13 +22,13 @@ visualDna:
   aesthetic: 'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as armored troopers in heavy helmets and capes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Fire orange, alien acid and military yellow, true to the Helldivers 2 2024 palette.
-  lighting_and_shadow: "Burning orange skies and bright white orbital strike flashes."
-  texture_and_material: "Gritty armor, dust clouds and alien bug carapace, with heavy particle smoke."
+  lighting_and_shadow: 'Burning orange skies and bright white orbital strike flashes.'
+  texture_and_material: 'Gritty armor, dust clouds and alien bug carapace, with heavy particle smoke.'
   camera_and_composition: Third-person over-the-shoulder view, framed the way Helldivers 2 2024 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic satirical heroism.
-  rendering_and_quality: "A 2024 frame at 1920 by 1080 in third person over the shoulder: trooper firing at a bug swarm, a small compass strip at the top."
+  rendering_and_quality: 'A 2024 frame at 1920 by 1080 in third person over the shoulder: trooper firing at a bug swarm, a small compass strip at the top.'
   key_features: Helldivers orbital drop; bug swarm; beacons
-  creative_brief: 'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies. Carry it through Helldivers orbital drop, bug swarm, beacons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies. Carry it through Helldivers orbital drop, bug swarm, beacons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing Helldiver armor and insignia
   - watermark

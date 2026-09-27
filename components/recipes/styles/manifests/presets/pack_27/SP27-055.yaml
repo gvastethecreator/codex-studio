@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide-angle comedic compositions, framed the way Braindead 1992 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gleeful absurd excess.
   rendering_and_quality: Garish nineties splatstick frame, in the recognizable hand of Braindead 1992.
-  creative_brief: 'Peter Jackson Braindead (1992) look: fifties New Zealand suburban house, absurd splatstick comedy, practical effects excess and garish domestic chaos. Carry it through Braindead splatstick, fifties suburbia, absurd excess. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Peter Jackson Braindead (1992) look: fifties New Zealand suburban house, absurd splatstick comedy, practical effects excess and garish domestic chaos. Carry it through Braindead splatstick, fifties suburbia, absurd excess. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Braindead splatstick; fifties suburbia; absurd excess
 avoidRules:
   - existing franchise characters

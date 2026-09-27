@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Still framing with rows of identical figures, framed the way Village of the Damned 1960 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet uncanny menace.
   rendering_and_quality: Authentic sixties English science fiction frame, in the recognizable hand of Village of the Damned 1960.
-  creative_brief: 'Wolf Rilla Village of the Damned (1960) look: black-and-white English village, eerie calm, identical pale children with glowing eyes and quiet domestic menace. Carry it through Village of the Damned, identical figures, glowing eyes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Wolf Rilla Village of the Damned (1960) look: black-and-white English village, eerie calm, identical pale children with glowing eyes and quiet domestic menace. Carry it through Village of the Damned, identical figures, glowing eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Village of the Damned; identical figures; glowing eyes
 avoidRules:
   - existing franchise characters

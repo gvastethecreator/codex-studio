@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Fisheye low angles in project courtyards, framed the way Golden Age Hip-Hop 1994 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with gritty reflective hunger.
   rendering_and_quality: Faithful mid-nineties hip-hop cover design, in the recognizable hand of Golden Age Hip-Hop 1994.
-  creative_brief: 'Mid-nineties East Coast hip-hop cover look: gritty grainy color street photography, project courtyards, fisheye angles, baggy denim and muted urban tones. Carry it through Nineties hip-hop gritty photo, fisheye, projects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mid-nineties East Coast hip-hop cover look: gritty grainy color street photography, project courtyards, fisheye angles, baggy denim and muted urban tones. Carry it through Nineties hip-hop gritty photo, fisheye, projects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Nineties hip-hop gritty photo; fisheye; projects
 avoidRules:
   - real rappers

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single bold figure centered, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with good-natured folk satire.
   rendering_and_quality: Quick lively folk painting, kept consistent across the whole image.
-  creative_brief: 'Otsu-e folk painting: humorous Edo roadside folk paintings with bold simple figures, oni in monk robes, fujimusume maidens and bright flat color. Carry it through folk painting, bold figures, oni monk, flat color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Otsu-e folk painting: humorous Edo roadside folk paintings with bold simple figures, oni in monk robes, fujimusume maidens and bright flat color. Carry it through folk painting, bold figures, oni monk, flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: folk painting; bold figures; oni monk; flat color
 avoidRules:
   - readable Japanese text or seals

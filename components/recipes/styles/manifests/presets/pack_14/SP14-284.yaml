@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Narrative band around a cylinder vessel, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lively courtly storytelling.
   rendering_and_quality: Fine calligraphic line without readable glyphs, kept consistent across the whole image.
-  creative_brief: 'Codex-style vase painting: Classic Maya cylinder vessels painted in fine black line on cream slip with red rims, lively narrative scenes of gods and courts. Carry it through cylinder vase, black line, cream slip, red rim. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Codex-style vase painting: Classic Maya cylinder vessels painted in fine black line on cream slip with red rims, lively narrative scenes of gods and courts. Carry it through cylinder vase, black line, cream slip, red rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cylinder vase; black line; cream slip; red rim
 avoidRules:
   - readable glyphs

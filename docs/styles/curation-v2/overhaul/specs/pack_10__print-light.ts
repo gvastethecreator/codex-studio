@@ -71,9 +71,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dark stone wall a coiled dragon is outlined in bent pink and cyan glass tubes, humming softly in the rain. No readable text or logo.",
-        "A saxophone player mid-solo is traced on a dark brick wall in bent pink and blue tubes that follow his arms into the bell. No readable text or logo.",
-        "In a rainy shop window at night a crown and a pair of dice hang in bent gold and red glowing tubes. No readable text or logo.",
+        'On a dark stone wall a coiled dragon is outlined in bent pink and cyan glass tubes, humming softly in the rain. No readable text or logo.',
+        'A saxophone player mid-solo is traced on a dark brick wall in bent pink and blue tubes that follow his arms into the bell. No readable text or logo.',
+        'In a rainy shop window at night a crown and a pair of dice hang in bent gold and red glowing tubes. No readable text or logo.',
       ],
     },
     'SP10-079': {
@@ -87,9 +87,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a dark green card a coiled dragon is pressed in gold that flashes under raking light, the paper dented around every line. No readable text or logo.",
-        "A sailing ship is pressed in bright gold into thick navy paper, the metallic lines slightly sunk into the fibers. No readable text or logo.",
-        "A luna moth is pressed in pale silver into black card, fine wing veins shimmering with a soft impression around them. No readable text or logo.",
+        'On a dark green card a coiled dragon is pressed in gold that flashes under raking light, the paper dented around every line. No readable text or logo.',
+        'A sailing ship is pressed in bright gold into thick navy paper, the metallic lines slightly sunk into the fibers. No readable text or logo.',
+        'A luna moth is pressed in pale silver into black card, fine wing veins shimmering with a soft impression around them. No readable text or logo.',
       ],
     },
     'SP10-080': {
@@ -103,9 +103,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a cream cotton card a hilltop fortress is bitten deep in red ink, crisp debossed edges catching window light. No readable text or logo.",
-        "A crowing rooster is pressed deeply into soft cotton paper in red ink, a slight halo of squeeze around each line. No readable text or logo.",
-        "A mountain range and pine trees sink into thick cream paper in dark green ink, the impression deep enough to feel. No readable text or logo.",
+        'On a cream cotton card a hilltop fortress is bitten deep in red ink, crisp debossed edges catching window light. No readable text or logo.',
+        'A crowing rooster is pressed deeply into soft cotton paper in red ink, a slight halo of squeeze around each line. No readable text or logo.',
+        'A mountain range and pine trees sink into thick cream paper in dark green ink, the impression deep enough to feel. No readable text or logo.',
       ],
     },
   },
@@ -124,9 +124,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At night in a field a horse and rider are outlined in thin glowing cyan wire, the soft even glow tracing mane, legs and reins. No readable text or logo.",
-        "On a dark rooftop a dancer spins outlined in thin magenta wire, her arms leaving glowing arcs in the air. No readable text or logo.",
-        "On a dark country road a cyclist and bicycle glow in green wire outlines, the wheels hovering like two rings in the night. No readable text or logo.",
+        'At night in a field a horse and rider are outlined in thin glowing cyan wire, the soft even glow tracing mane, legs and reins. No readable text or logo.',
+        'On a dark rooftop a dancer spins outlined in thin magenta wire, her arms leaving glowing arcs in the air. No readable text or logo.',
+        'On a dark country road a cyclist and bicycle glow in green wire outlines, the wheels hovering like two rings in the night. No readable text or logo.',
       ],
     },
     {
@@ -144,8 +144,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a smoky stage a beast's skull sits under green beams fanning through haze like a crown of light. No readable text or logo.",
-        "At a night concert sharp green and violet beams fan through thick haze around a lone violinist on a rock. No readable text or logo.",
-        "Over a harbor at night sharp red and blue beams fan through the fog above the boats and ripple on the water. No readable text or logo.",
+        'At a night concert sharp green and violet beams fan through thick haze around a lone violinist on a rock. No readable text or logo.',
+        'Over a harbor at night sharp red and blue beams fan through the fog above the boats and ripple on the water. No readable text or logo.',
       ],
     },
     {
@@ -163,8 +163,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "In a costume shop a skeleton's fluorescent painted bones glow green and pink under ultraviolet light while everything else vanishes. No readable text or logo.",
-        "At a bowling alley at night fluorescent pins and lanes glow orange and cyan under ultraviolet light as a ball rolls toward them. No readable text or logo.",
-        "A mushroom forest diorama painted in fluorescent colors glows neon pink and green under ultraviolet light. No readable text or logo.",
+        'At a bowling alley at night fluorescent pins and lanes glow orange and cyan under ultraviolet light as a ball rolls toward them. No readable text or logo.',
+        'A mushroom forest diorama painted in fluorescent colors glows neon pink and green under ultraviolet light. No readable text or logo.',
       ],
     },
     {
@@ -181,9 +181,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark hall an ornate empty armchair is traced by RGB diode strips, every edge dotted with small bright points. No readable text or logo.",
-        "In a dark museum a whale skeleton sculpture is traced along each rib by dotted strips of glowing diodes. No readable text or logo.",
-        "On a table a small wooden house model is outlined in white diode strips along its roof and windows. No readable text or logo.",
+        'In a dark hall an ornate empty armchair is traced by RGB diode strips, every edge dotted with small bright points. No readable text or logo.',
+        'In a dark museum a whale skeleton sculpture is traced along each rib by dotted strips of glowing diodes. No readable text or logo.',
+        'On a table a small wooden house model is outlined in white diode strips along its roof and windows. No readable text or logo.',
       ],
     },
     {
@@ -200,9 +200,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An old cathedral facade comes alive at night as projected vines and flowers grow across its stones, hugging every carving. No readable text or logo.",
-        "A marble dancer statue wears shifting ocean waves projected across her dress, the image hugging every fold. No readable text or logo.",
-        "A lighthouse wears projected swirling stars and a spiraling beam that wrap around its round tower. No readable text or logo.",
+        'An old cathedral facade comes alive at night as projected vines and flowers grow across its stones, hugging every carving. No readable text or logo.',
+        'A marble dancer statue wears shifting ocean waves projected across her dress, the image hugging every fold. No readable text or logo.',
+        'A lighthouse wears projected swirling stars and a spiraling beam that wrap around its round tower. No readable text or logo.',
       ],
     },
     {
@@ -219,9 +219,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a night garden a dark figure wears a long cloak embedded with tiny glowing points scattered like a starfield. No readable text or logo.",
-        "A bedroom ceiling sparkles with tiny glowing fiber tips forming constellations above a sleeping adult reader. No readable text or logo.",
-        "In a dark garden a tree of glowing fibers shifts at every branch tip from blue to violet like breathing stars. No readable text or logo.",
+        'In a night garden a dark figure wears a long cloak embedded with tiny glowing points scattered like a starfield. No readable text or logo.',
+        'A bedroom ceiling sparkles with tiny glowing fiber tips forming constellations above a sleeping adult reader. No readable text or logo.',
+        'In a dark garden a tree of glowing fibers shifts at every branch tip from blue to violet like breathing stars. No readable text or logo.',
       ],
     },
     {
@@ -238,9 +238,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a dark crypt a skeleton key and a skull glow phosphorescent green, the light fading softly at their edges. No readable text or logo.",
-        "A ceiling covered in stick-on stars and planets glows green in the dark above a woman who cannot sleep. No readable text or logo.",
-        "A pair of running shoes with luminous soles glows green on a dark path, leaving a faint trail of footprints. No readable text or logo.",
+        'In a dark crypt a skeleton key and a skull glow phosphorescent green, the light fading softly at their edges. No readable text or logo.',
+        'A ceiling covered in stick-on stars and planets glows green in the dark above a woman who cannot sleep. No readable text or logo.',
+        'A pair of running shoes with luminous soles glows green on a dark path, leaving a faint trail of footprints. No readable text or logo.',
       ],
     },
     {
@@ -257,9 +257,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Under raking light a white card shows a seahorse in raised relief, no ink at all, only soft shadows defining its curls. No readable text or logo.",
-        "A thick cream invitation carries a family crest of oak leaves and acorns in pure raised relief. No readable text or logo.",
-        "On white cotton paper a rose rises in soft relief, petals shadowed by a low window light. No readable text or logo.",
+        'Under raking light a white card shows a seahorse in raised relief, no ink at all, only soft shadows defining its curls. No readable text or logo.',
+        'A thick cream invitation carries a family crest of oak leaves and acorns in pure raised relief. No readable text or logo.',
+        'On white cotton paper a rose rises in soft relief, petals shadowed by a low window light. No readable text or logo.',
       ],
     },
     {
@@ -276,9 +276,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A thick black board holds a lighthouse pressed deep into its surface, soft shadows pooling in the recess. No readable text or logo.",
+        'A thick black board holds a lighthouse pressed deep into its surface, soft shadows pooling in the recess. No readable text or logo.',
         "A heavy grey board on an architect's desk is pressed with a whole mountain landscape, recessed ridgelines and valleys catching low raking light. No readable text or logo.",
-        "A kraft board is pressed with a crossed pair of oars, the recessed shapes shadowed under a desk lamp. No readable text or logo.",
+        'A kraft board is pressed with a crossed pair of oars, the recessed shapes shadowed under a desk lamp. No readable text or logo.',
       ],
     },
     {
@@ -295,9 +295,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a matte black card a koi appears only as a glossy varnish that flashes into view when the card tilts. No readable text or logo.",
-        "On a matte navy card glossy streaks of rain fall over an umbrella, visible only in the reflected light. No readable text or logo.",
-        "On a matte grey card a glossy moon and stars glint at an angle and disappear head-on. No readable text or logo.",
+        'On a matte black card a koi appears only as a glossy varnish that flashes into view when the card tilts. No readable text or logo.',
+        'On a matte navy card glossy streaks of rain fall over an umbrella, visible only in the reflected light. No readable text or logo.',
+        'On a matte grey card a glossy moon and stars glint at an angle and disappear head-on. No readable text or logo.',
       ],
     },
     {
@@ -314,9 +314,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mountain village and winding river rise from stacked laser-cut paper layers, each casting a soft shadow onto the next. No readable text or logo.",
-        "Deer wander between stacked paper layers of a winter forest, each laser-cut row of trees casting a soft grey depth shadow onto the next. No readable text or logo.",
-        "A serpent rises from stacked paper waves, each layer a shade of blue with shadows between them. No readable text or logo.",
+        'A mountain village and winding river rise from stacked laser-cut paper layers, each casting a soft shadow onto the next. No readable text or logo.',
+        'Deer wander between stacked paper layers of a winter forest, each laser-cut row of trees casting a soft grey depth shadow onto the next. No readable text or logo.',
+        'A serpent rises from stacked paper waves, each layer a shade of blue with shadows between them. No readable text or logo.',
       ],
     },
     {
@@ -333,9 +333,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A vintage race car roars across a flat-color print, its body in metallic silver ink that catches the gallery light. No readable text or logo.",
-        "A peacock spreads its tail across a flat-color print on cream paper, every feather eye inked in metallic copper that glints under gallery lights. No readable text or logo.",
-        "An owl stares out of a dark flat background with metallic gold eyes that catch the light. No readable text or logo.",
+        'A vintage race car roars across a flat-color print, its body in metallic silver ink that catches the gallery light. No readable text or logo.',
+        'A peacock spreads its tail across a flat-color print on cream paper, every feather eye inked in metallic copper that glints under gallery lights. No readable text or logo.',
+        'An owl stares out of a dark flat background with metallic gold eyes that catch the light. No readable text or logo.',
       ],
     },
     {
@@ -352,9 +352,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A crest of a lion and sword stands up from a card in glossy raised black ink puffed by heat. No readable text or logo.",
-        "A coiled octopus is formed of glossy puffed black lines raised on a small white card. No readable text or logo.",
-        "A jagged mountain skyline and a thin crescent moon rise from a stiff white card in glossy puffed navy ink that catches the lamp. No readable text or logo.",
+        'A crest of a lion and sword stands up from a card in glossy raised black ink puffed by heat. No readable text or logo.',
+        'A coiled octopus is formed of glossy puffed black lines raised on a small white card. No readable text or logo.',
+        'A jagged mountain skyline and a thin crescent moon rise from a stiff white card in glossy puffed navy ink that catches the lamp. No readable text or logo.',
       ],
     },
     {
@@ -371,9 +371,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A stag and a hunter meet in a forest of engraved lines that stand up as ridges of ink, a deep plate mark around them. No readable text or logo.",
-        "A sea turtle glides over seagrass, the engraved lines rising as ridges of black ink on damp paper. No readable text or logo.",
-        "A lighthouse is lashed by storm waves under burin-cut crosshatching, ink slightly raised across the whole sky. No readable text or logo.",
+        'A stag and a hunter meet in a forest of engraved lines that stand up as ridges of ink, a deep plate mark around them. No readable text or logo.',
+        'A sea turtle glides over seagrass, the engraved lines rising as ridges of black ink on damp paper. No readable text or logo.',
+        'A lighthouse is lashed by storm waves under burin-cut crosshatching, ink slightly raised across the whole sky. No readable text or logo.',
       ],
     },
     {
@@ -390,9 +390,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On folded parchment a crimson blob of sealing wax holds a coiled serpent, drips spreading around its edge. No readable text or logo.",
-        "On a rolled scroll tied with twine a green wax disc bears an oak tree, pooled unevenly at one side. No readable text or logo.",
-        "On a cream envelope a glossy black wax pool carries the impression of a moth, spread in an irregular shape. No readable text or logo.",
+        'On folded parchment a crimson blob of sealing wax holds a coiled serpent, drips spreading around its edge. No readable text or logo.',
+        'On a rolled scroll tied with twine a green wax disc bears an oak tree, pooled unevenly at one side. No readable text or logo.',
+        'On a cream envelope a glossy black wax pool carries the impression of a moth, spread in an irregular shape. No readable text or logo.',
       ],
     },
     {
@@ -410,8 +410,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "An old book's pages fan open to reveal a painted harbor town on the fore-edge, the gilding hiding it when closed. No readable text or logo.",
-        "A thick leather-bound book fans open to reveal riders and hounds painted along its edge in an autumn forest. No readable text or logo.",
-        "The fanned edge of an old atlas reveals a painted sailing ship on a green sea, the gold visible at each end. No readable text or logo.",
+        'A thick leather-bound book fans open to reveal riders and hounds painted along its edge in an autumn forest. No readable text or logo.',
+        'The fanned edge of an old atlas reveals a painted sailing ship on a green sea, the gold visible at each end. No readable text or logo.',
       ],
     },
     {
@@ -428,9 +428,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A unicorn printed on a card shimmers from pink to green as the card tilts in the hand. No readable text or logo.",
-        "On a dark blue card a swan on a lake shimmers with mother-of-pearl sheen that shifts from silver to lilac. No readable text or logo.",
-        "On black card a drifting jellyfish glows in violet and green iridescent ink along its tentacles. No readable text or logo.",
+        'A unicorn printed on a card shimmers from pink to green as the card tilts in the hand. No readable text or logo.',
+        'On a dark blue card a swan on a lake shimmers with mother-of-pearl sheen that shifts from silver to lilac. No readable text or logo.',
+        'On black card a drifting jellyfish glows in violet and green iridescent ink along its tentacles. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

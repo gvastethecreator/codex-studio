@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Spare noir panels with few, telling details, framed the way David Mazzucchelli composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grim quiet resolve.
   rendering_and_quality: Faithful Mazzucchelli reduced noir page, in the recognizable hand of David Mazzucchelli.
-  creative_brief: 'David Mazzucchelli page look of the late 1980s: reduced expressive line, flat muted colors on newsprint, grimy city noir, spare storytelling and figures defined by silhouette and gesture. Carry it through Mazzucchelli reduced line, muted noir color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "David Mazzucchelli page look of the late 1980s: reduced expressive line, flat muted colors on newsprint, grimy city noir, spare storytelling and figures defined by silhouette and gesture. Carry it through Mazzucchelli reduced line, muted noir color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mazzucchelli reduced line; muted noir color
 avoidRules:
   - a caped hero with bat ears

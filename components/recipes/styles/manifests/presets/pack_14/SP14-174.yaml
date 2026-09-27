@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Horizontal card inside a small wooden stage, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dramatic street storytelling.
   rendering_and_quality: Bold readable card painting, kept consistent across the whole image.
-  creative_brief: 'Kamishibai story card: large painted picture cards from street paper-theater storytelling, bold gouache scenes, dramatic framing and a wooden stage frame. Carry it through paper theater card, wooden stage, gouache, dramatic framing. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kamishibai story card: large painted picture cards from street paper-theater storytelling, bold gouache scenes, dramatic framing and a wooden stage frame. Carry it through paper theater card, wooden stage, gouache, dramatic framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: paper theater card; wooden stage; gouache; dramatic framing
 avoidRules:
   - readable Japanese text or seals

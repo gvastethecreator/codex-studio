@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with cinematic realistic staging.
   atmosphere_and_mood: Keep the requested mood with grim mature weight.
   rendering_and_quality: Meticulous realistic inking with controlled density, kept consistent across the whole image.
-  creative_brief: 'Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces. Carry it through dense realistic detail, worn textures, heavy shadows, mature tone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces. Carry it through dense realistic detail, worn textures, heavy shadows, mature tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dense realistic detail; worn textures; heavy shadows; mature tone
 avoidRules:
   - cute simplified style

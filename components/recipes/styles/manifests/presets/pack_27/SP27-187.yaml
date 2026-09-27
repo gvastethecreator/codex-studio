@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Painterly tableaux with foreground animals, framed the way The Night of the Hunter 1955 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with nightmarish fairy-tale dread.
   rendering_and_quality: Authentic fifties expressionist noir frame, in the recognizable hand of The Night of the Hunter 1955.
-  creative_brief: 'Charles Laughton The Night of the Hunter (1955) look: expressionist fairy-tale noir, silhouettes on river banks, stylized starry skies, animals in the foreground and nightmarish Southern Gothic. Carry it through Night of the Hunter silhouettes, starry river, fairy tale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Charles Laughton The Night of the Hunter (1955) look: expressionist fairy-tale noir, silhouettes on river banks, stylized starry skies, animals in the foreground and nightmarish Southern Gothic. Carry it through Night of the Hunter silhouettes, starry river, fairy tale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Night of the Hunter silhouettes; starry river; fairy tale
 avoidRules:
   - a preacher with LOVE and HATE tattooed knuckles

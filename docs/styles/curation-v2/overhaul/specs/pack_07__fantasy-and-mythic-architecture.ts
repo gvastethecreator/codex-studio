@@ -297,7 +297,7 @@ const spec: Spec = {
         key_features:
           'crooked rubbery silhouettes; thick ink outlines; flat two-tone cel shading; violet and toxic-lime palette; moon backlight rim',
       }),
-      avoid: [...AVOID, 'realistic horror',  'monster', 'photoreal render'],
+      avoid: [...AVOID, 'realistic horror', 'monster', 'photoreal render'],
       briefs: [
         "Cartoon haunted architecture: a crooked wizard's academy of five towers leaning in different directions on a hill, thick ink outlines, flat violet cel shading, toxic-lime light pouring from every window, full moon rimming the roofs. No text or logo.",
         'Cartoon haunted architecture: a squashed and twisting windmill in a thunderstorm, its sails bent like rubber, lightning frozen in flat lime, seen from a steep low angle. No text or logo.',
@@ -372,7 +372,7 @@ const spec: Spec = {
         key_features:
           'black basalt colonnades; bone-marble inlay grids; oxidized bronze doors; endless repeated pilasters; cold raking overcast light',
       }),
-      avoid: [...AVOID, 'skull decoration',  'cemetery headstones', 'lush garden'],
+      avoid: [...AVOID, 'skull decoration', 'cemetery headstones', 'lush garden'],
       briefs: [
         'Sepulchral civic monumentalism: a hall of records for the dead, a black basalt colonnade of endless pilasters with bone-marble inlay grids, towering verdigris bronze doors, cold raking overcast light, low eye line. No text or logo.',
         'Sepulchral civic monumentalism: an avenue of mausoleum-like ministries receding in rain, identical black facades repeating to a vanishing point, pale green glow behind narrow slit windows. No text or logo.',

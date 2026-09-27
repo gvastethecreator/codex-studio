@@ -22,16 +22,16 @@ tags:
   - portable-style-study
   - reference-title
 visualDna:
-  aesthetic: "Looking Glass Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and boxy blocky guards."
-  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky guards and thieves with simple faces and stiff limbs, mostly lost in shadow. Wardrobe details apply only when the prompt leaves clothing open."
+  aesthetic: 'Looking Glass Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and boxy blocky guards.'
+  subject_treatment: 'Preserve the requested identity, count, pose, action and any requested clothing; show people as blocky guards and thieves with simple faces and stiff limbs, mostly lost in shadow. Wardrobe details apply only when the prompt leaves clothing open.'
   color_and_tone: Deep shadow and lantern amber, true to the Thief The Dark Project 1998 palette.
-  lighting_and_shadow: "Deep darkness broken by warm lantern pools, most of the screen near black."
-  texture_and_material: "Blurry low-detail stone and wood textures on boxy architecture."
+  lighting_and_shadow: 'Deep darkness broken by warm lantern pools, most of the screen near black.'
+  texture_and_material: 'Blurry low-detail stone and wood textures on boxy architecture.'
   camera_and_composition: First-person shadow view, framed the way Thief The Dark Project 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense sneaky patience.
-  rendering_and_quality: "A 1998 PC frame at 640 by 480 in first person: dark gothic street, a glowing gem-shaped light meter at the bottom center."
+  rendering_and_quality: 'A 1998 PC frame at 640 by 480 in first person: dark gothic street, a glowing gem-shaped light meter at the bottom center.'
   creative_brief: "Looking Glass Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and boxy blocky guards. Carry it through Thief deep shadows, lantern pools, boxy gothic city, light gem. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: "Thief deep shadows; lantern pools; boxy gothic city; light gem"
+  key_features: 'Thief deep shadows; lantern pools; boxy gothic city; light gem'
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text

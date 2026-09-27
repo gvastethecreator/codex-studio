@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Extreme high and low angles, framed the way Kiss Me Deadly 1955 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with brutal atomic dread.
   rendering_and_quality: Authentic fifties atomic noir frame, in the recognizable hand of Kiss Me Deadly 1955.
-  creative_brief: 'Robert Aldrich Kiss Me Deadly (1955) look: brutal atomic-age noir, Los Angeles night roads, sports cars, extreme angles, staircases and a glowing mysterious box. Carry it through Kiss Me Deadly extreme angles, night roads, glowing box. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Robert Aldrich Kiss Me Deadly (1955) look: brutal atomic-age noir, Los Angeles night roads, sports cars, extreme angles, staircases and a glowing mysterious box. Carry it through Kiss Me Deadly extreme angles, night roads, glowing box. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Kiss Me Deadly extreme angles; night roads; glowing box
 avoidRules:
   - existing franchise characters

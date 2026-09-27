@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low anamorphic night frames, framed the way Escape from New York 1981 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with grim nocturnal survival.
   rendering_and_quality: Authentic eighties Carpenter frame, in the recognizable hand of Escape from New York 1981.
-  creative_brief: 'John Carpenter Escape from New York (1981) look: night-time Manhattan turned prison island, burning barrels, dark streets, green wireframe glider displays and synth dread. Carry it through Escape from NY prison city, burning barrels, wireframe. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Carpenter Escape from New York (1981) look: night-time Manhattan turned prison island, burning barrels, dark streets, green wireframe glider displays and synth dread. Carry it through Escape from NY prison city, burning barrels, wireframe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Escape from NY prison city; burning barrels; wireframe
 avoidRules:
   - an eyepatched mercenary in a snakeskin jacket

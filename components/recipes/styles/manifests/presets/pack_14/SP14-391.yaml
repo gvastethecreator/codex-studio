@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low monumental view past the guardian toward a tiny figure in the gateway.
   atmosphere_and_mood: Keep the requested mood with immovable sovereign guard.
   rendering_and_quality: Sharp monumental relief carving with deep rhythmic detail.
-  creative_brief: 'Lamassu gate relief: Assyrian palace gateway colossi, human-headed winged bulls carved in gypsum with curled beards, feathered wings and five legs seen from front and side. Carry it through winged bull guardian, curled beard, feathered wings, palace gateway. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Lamassu gate relief: Assyrian palace gateway colossi, human-headed winged bulls carved in gypsum with curled beards, feathered wings and five legs seen from front and side. Carry it through winged bull guardian, curled beard, feathered wings, palace gateway. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: winged bull guardian; curled beard; feathered wings; palace gateway
 avoidRules:
   - cultural stereotypes or caricature

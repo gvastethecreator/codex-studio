@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Arched gateway composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lush guardian wonder.
   rendering_and_quality: Intricate stone carving, kept consistent across the whole image.
-  creative_brief: 'Makara temple gateway carving: Indian stone gateway arches with makara sea creatures, part crocodile, fish and elephant, spewing foliage and pearls. Carry it through makara creature, gateway arch, foliage, pearls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Makara temple gateway carving: Indian stone gateway arches with makara sea creatures, part crocodile, fish and elephant, spewing foliage and pearls. Carry it through makara creature, gateway arch, foliage, pearls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: makara creature; gateway arch; foliage; pearls
 avoidRules:
   - cultural stereotypes or caricature

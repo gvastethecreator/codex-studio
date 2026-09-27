@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Puppet stage with visible strings, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with playful theatrical mischief.
   rendering_and_quality: Charming handcrafted puppetry, kept consistent across the whole image.
-  creative_brief: 'Czech devil marionette: hand-carved wooden string puppets of devils, witches and knights from Bohemian puppet theater, painted faces, horns and cloth costumes. Carry it through string puppet, carved devil, painted face, stage. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Czech devil marionette: hand-carved wooden string puppets of devils, witches and knights from Bohemian puppet theater, painted faces, horns and cloth costumes. Carry it through string puppet, carved devil, painted face, stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: string puppet; carved devil; painted face; stage
 avoidRules:
   - cultural stereotypes or caricature

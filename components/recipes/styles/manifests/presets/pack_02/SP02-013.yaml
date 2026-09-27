@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Loud and epic, spectacle at maximum volume.
   rendering_and_quality: Photographic live-action frame with real skin texture, lens flares and a glossy cinema grade; never a painting or illustration.
   key_features: teal and orange grade; heroic low angle; sparks and embers; anamorphic flares; rim-lit silhouette
-  creative_brief: 'Blockbuster teal-and-orange: a live-action film still from a modern action movie, real actors and practical explosions shot on anamorphic 35mm, graded to push skin and fire toward orange and shadows and skies toward teal. Carry it through teal and orange grade, heroic low angle, sparks and embers, anamorphic flares, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Blockbuster teal-and-orange: a live-action film still from a modern action movie, real actors and practical explosions shot on anamorphic 35mm, graded to push skin and fire toward orange and shadows and skies toward teal. Carry it through teal and orange grade, heroic low angle, sparks and embers, anamorphic flares, rim-lit silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - watermark
   - readable fake text

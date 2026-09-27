@@ -28,228 +28,369 @@ const spec: Spec = {
   pack: 'pack_22',
   category: '10. Printmaking & Reproduction',
   updates: {
-    'SP22-173': { briefs: [
-      'A storm-riding valkyrie gallops across a black sky, her horse and flying hair carved in bold woodcut gouges with the wood grain showing in the clouds. No readable text or logo.',
-      'A giant pike swallows a rowboat whole in a dark lake, every scale and splash cut in heavy black relief shapes. No readable text or logo.',
-      'A farmer and his wife dance at a harvest bonfire, their shadows carved long and jagged across the field. No readable text or logo.',
-    ] },
-    'SP22-174': { briefs: [
-      'A mechanical owl perches on an astronomer\'s globe, every feather and gear described by microscopic burin hatching in silver-black lines. No readable text or logo.',
-      'A sea serpent coils around a galleon in a storm, the waves built from dense parallel engraved micro-lines. No readable text or logo.',
-      'A crowned toad sits on a mushroom throne, its warts and folds engraved in minute cross-hatching. No readable text or logo.',
-    ] },
-    'SP22-175': { briefs: [
-      'A skateboarding raccoon flies over a city rooftop, printed in fluorescent pink and teal riso ink that overlaps into a third color on its tail. No readable text or logo.',
-      "At dusk, a whale surfaces beside a tiny rowboat and gently offers the rower a lost umbrella, printed in two slightly misregistered riso inks of pink and blue. No readable text or logo.",
-      'A band of goblins plays a punk show in two grainy riso colors, the drummer smeared off register. No readable text or logo.',
-    ] },
-    'SP22-176': { briefs: [
-      'A ballerina bear rehearses in an empty theater, drawn in soft greasy lithographic crayon with velvety tonal grain. No readable text or logo.',
-      "At dawn in a foggy harbor, the fishing boats are returning with one enormous sleeping fish that is towing all of them, printed in soft grainy lithograph grey. No readable text or logo.",
-      "Under a streetlamp, an old accordion player keeps playing while his shadow on the wall dances with another shadow that belongs to no one, the lamp glow a soft lifted patch in the crayon tone. No readable text or logo.",
-    ] },
-    'SP22-177': { briefs: [
-      'A glowing jellyfish drifts through a black sea built entirely from hand-inked stipple dots, dense in the deep and sparse near its bell. No readable text or logo.',
-      "Curled on a snowy rock, a sleeping wolf is guarded by a ring of snow hares who are clearly terrified but staying anyway, fur and shadow built from thousands of tiny ink dots. No readable text or logo.",
-      "Over a desert of stippled dunes, the moon has come down to rest on a dune crest, and a single camel stands next to it looking unsure, all dots from dense black to pale sand. No readable text or logo.",
-    ] },
-    'SP22-178': { briefs: [
-      "Deep in a pitch-black tunnel, a miner raises a lantern and discovers a wall of sleeping bats that are all opening their eyes at once, the light scratched out of black board in fine white lines. No readable text or logo.",
-      "Across a full moon, a raven carries away a silver key while a whole city of locked doors waits below, its feathers carved as white scratches on solid black. No readable text or logo.",
-      "Spinning alone at midnight in an abandoned fairground, a haunted carousel carries riderless horses whose manes, bulbs and gilded poles are all scratched out of solid black into gleaming white. No readable text or logo.",
-    ] },
-    'SP22-179': { briefs: [
-      'A punk vampire poses on a fire escape, photocopied so many times that his face has become harsh black toner blocks and speckles. No readable text or logo.',
-      "On a cut-and-paste zine page, a giant cat sits on a city block like a cushion while tiny tanks try to move it, all gritty high-contrast copier texture. No readable text or logo.",
-      "Grinning on a curb, a skate crew of elderly grandmothers shows off scraped knees and a broken board, grainy photocopy black and white with toner streaks across the sky. No readable text or logo.",
-    ] },
-    'SP22-180': { briefs: [
-      'A heron stands in a misty marsh drawn in soft drypoint lines, the burr leaving velvety veils of ink around the reeds. No readable text or logo.',
-      "On a stone tomb, a sleeping queen has a small cat curled on her chest that has been guarding her for three hundred years, her gown scratched in fuzzy drypoint burr that blurs into shadow. No readable text or logo.",
-      "On a rainy street after midnight, one umbrella walks by itself past glowing shop windows, the puddles and reflections rendered in soft furry drypoint burr and a veil of wiped plate tone. No readable text or logo.",
-    ] },
+    'SP22-173': {
+      briefs: [
+        'A storm-riding valkyrie gallops across a black sky, her horse and flying hair carved in bold woodcut gouges with the wood grain showing in the clouds. No readable text or logo.',
+        'A giant pike swallows a rowboat whole in a dark lake, every scale and splash cut in heavy black relief shapes. No readable text or logo.',
+        'A farmer and his wife dance at a harvest bonfire, their shadows carved long and jagged across the field. No readable text or logo.',
+      ],
+    },
+    'SP22-174': {
+      briefs: [
+        "A mechanical owl perches on an astronomer's globe, every feather and gear described by microscopic burin hatching in silver-black lines. No readable text or logo.",
+        'A sea serpent coils around a galleon in a storm, the waves built from dense parallel engraved micro-lines. No readable text or logo.',
+        'A crowned toad sits on a mushroom throne, its warts and folds engraved in minute cross-hatching. No readable text or logo.',
+      ],
+    },
+    'SP22-175': {
+      briefs: [
+        'A skateboarding raccoon flies over a city rooftop, printed in fluorescent pink and teal riso ink that overlaps into a third color on its tail. No readable text or logo.',
+        'At dusk, a whale surfaces beside a tiny rowboat and gently offers the rower a lost umbrella, printed in two slightly misregistered riso inks of pink and blue. No readable text or logo.',
+        'A band of goblins plays a punk show in two grainy riso colors, the drummer smeared off register. No readable text or logo.',
+      ],
+    },
+    'SP22-176': {
+      briefs: [
+        'A ballerina bear rehearses in an empty theater, drawn in soft greasy lithographic crayon with velvety tonal grain. No readable text or logo.',
+        'At dawn in a foggy harbor, the fishing boats are returning with one enormous sleeping fish that is towing all of them, printed in soft grainy lithograph grey. No readable text or logo.',
+        'Under a streetlamp, an old accordion player keeps playing while his shadow on the wall dances with another shadow that belongs to no one, the lamp glow a soft lifted patch in the crayon tone. No readable text or logo.',
+      ],
+    },
+    'SP22-177': {
+      briefs: [
+        'A glowing jellyfish drifts through a black sea built entirely from hand-inked stipple dots, dense in the deep and sparse near its bell. No readable text or logo.',
+        'Curled on a snowy rock, a sleeping wolf is guarded by a ring of snow hares who are clearly terrified but staying anyway, fur and shadow built from thousands of tiny ink dots. No readable text or logo.',
+        'Over a desert of stippled dunes, the moon has come down to rest on a dune crest, and a single camel stands next to it looking unsure, all dots from dense black to pale sand. No readable text or logo.',
+      ],
+    },
+    'SP22-178': {
+      briefs: [
+        'Deep in a pitch-black tunnel, a miner raises a lantern and discovers a wall of sleeping bats that are all opening their eyes at once, the light scratched out of black board in fine white lines. No readable text or logo.',
+        'Across a full moon, a raven carries away a silver key while a whole city of locked doors waits below, its feathers carved as white scratches on solid black. No readable text or logo.',
+        'Spinning alone at midnight in an abandoned fairground, a haunted carousel carries riderless horses whose manes, bulbs and gilded poles are all scratched out of solid black into gleaming white. No readable text or logo.',
+      ],
+    },
+    'SP22-179': {
+      briefs: [
+        'A punk vampire poses on a fire escape, photocopied so many times that his face has become harsh black toner blocks and speckles. No readable text or logo.',
+        'On a cut-and-paste zine page, a giant cat sits on a city block like a cushion while tiny tanks try to move it, all gritty high-contrast copier texture. No readable text or logo.',
+        'Grinning on a curb, a skate crew of elderly grandmothers shows off scraped knees and a broken board, grainy photocopy black and white with toner streaks across the sky. No readable text or logo.',
+      ],
+    },
+    'SP22-180': {
+      briefs: [
+        'A heron stands in a misty marsh drawn in soft drypoint lines, the burr leaving velvety veils of ink around the reeds. No readable text or logo.',
+        'On a stone tomb, a sleeping queen has a small cat curled on her chest that has been guarding her for three hundred years, her gown scratched in fuzzy drypoint burr that blurs into shadow. No readable text or logo.',
+        'On a rainy street after midnight, one umbrella walks by itself past glowing shop windows, the puddles and reflections rendered in soft furry drypoint burr and a veil of wiped plate tone. No readable text or logo.',
+      ],
+    },
   },
   creates: [
-    study('Three-Block Color Relief', 'three-block color relief print', 'three-block-relief', {
-      aesthetic: 'Three-block color relief: a relief print pulled from three separately carved blocks, one color each, overlapping into rich secondary colors with slight registration drift.',
-      subject_treatment: `${keep}; divide the subject into three carved color layers that overlap to build it.`,
-      color_and_tone: 'Three transparent inks such as ochre, teal and deep red overlapping into new hues.',
-      lighting_and_shadow: 'Shadows built from overlapping blocks and carved white highlights.',
-      texture_and_material: 'Carved edges, ink speckle, wood grain and slight misregistration between blocks.',
-      camera_and_composition: 'Bold simplified composition with large interlocking color shapes.',
-      atmosphere_and_mood: 'Keep the requested mood with handcrafted warmth and graphic punch.',
-      rendering_and_quality: 'Authentic layered relief printing with clean carved shapes.',
-      key_features: 'three carved color blocks; overlap colors; registration drift; carved whites',
-    }, ['smooth digital gradients'], [
-      'A fox leaps over a frozen stream at dusk, printed from three carved blocks of ochre, teal and red that overlap into deep violet shadows. No readable text or logo.',
-      "Rowing through a storm, a lighthouse keeper carries the lighthouse lamp itself in her boat because the tower has walked away, the sea a teal block, the sky a red one. No readable text or logo.",
-      'A giant pumpkin festival crowds a village square, its three block colors drifting slightly off each other at every edge. No readable text or logo.',
-    ]),
-    study('Sugar-Lift Brush Etching', 'painterly sugar-lift aquatint', 'sugar-lift', {
-      aesthetic: 'Sugar-lift brush etching: an etching whose marks were painted with a brush in sugar solution, so the print shows fluid brushstrokes with grainy aquatint texture.',
-      subject_treatment: `${keep}; paint the subject in loose fluid brush marks rendered as etched aquatint grain.`,
-      color_and_tone: 'Rich black or sepia ink with grainy aquatint tones on cream paper.',
-      lighting_and_shadow: 'Brushed dark masses and open paper lights with grainy midtones.',
-      texture_and_material: 'Fluid brush-shaped etched marks, rosin grain texture and plate mark.',
-      camera_and_composition: 'Expressive painterly composition within a visible plate edge.',
-      atmosphere_and_mood: 'Keep the requested mood with spontaneous, expressive energy.',
-      rendering_and_quality: 'Authentic etched grain with visible brush gesture in every mark.',
-      key_features: 'brushstroke etching; aquatint grain; fluid gesture; plate mark',
-    }, ['clean vector lines'], [
-      'A bullfighter spins his cape as the bull charges past, both painted in fluid brush marks that print as grainy black etching. No readable text or logo.',
-      'A flock of crows bursts from a wheat field in loose brushed shapes with rosin grain in every wing. No readable text or logo.',
-      'A dancer in a flamenco dress twirls in sepia brush strokes that pool into velvety grainy darks. No readable text or logo.',
-    ]),
-    study('Screen-Layered Flat Poster', 'layered screenprint poster', 'screen-layered', {
-      aesthetic: 'Screen-layered flat poster: a screenprinted illustration built from several flat opaque ink layers, crisp edges, limited palette and slight ink texture.',
-      subject_treatment: `${keep}; build the subject from a few flat opaque ink layers stacked like screen passes.`,
-      color_and_tone: 'Five or six bold flat inks such as mustard, coral, navy, mint and black.',
-      lighting_and_shadow: 'Flat shadow shapes and highlight shapes as separate ink layers.',
-      texture_and_material: 'Crisp stencil edges, slight ink buildup, paper tooth and tiny pinholes.',
-      camera_and_composition: 'Poster-like graphic composition with a strong central image.',
-      atmosphere_and_mood: 'Keep the requested mood with bold collectible poster energy.',
-      rendering_and_quality: "Clean flat layers with authentic printed texture, kept consistent across the whole image.",
-      key_features: 'flat opaque ink layers; crisp edges; limited palette; poster composition',
-    }, ['photographic texture', 'readable title'], [
-      'A giant squid wraps around a sinking submarine, printed in six flat layers of navy, coral and mint with crisp stencil edges. No readable text or logo.',
-      'A cowboy astronaut rides a horse across the moon in bold mustard and black screen layers. No readable text or logo.',
-      "High on a crooked hill, a haunted house throws its windows open to let a parade of bedsheet ghosts spill down the lawn, printed in flat layers of purple, orange and cream. No readable text or logo.",
-    ]),
-    study('Currency Portrait Engraving', 'banknote-style engraved portrait', 'currency-engraving', {
-      aesthetic: 'Currency portrait engraving: subjects engraved in the dense precise line style of old banknotes, with swirling line shading, fine guilloche frames and dignified poses.',
-      subject_treatment: `${keep}; engrave the subject as a dignified central vignette with fine swirling line shading.`,
-      color_and_tone: 'Single engraving ink in green-black, sepia or blue on pale paper.',
-      lighting_and_shadow: 'Tone from dense line spacing, swelling and crossing lines.',
-      texture_and_material: 'Ultra-fine engraved lines, guilloche rosettes and ornamental frames without numbers.',
-      camera_and_composition: "Central oval portrait framed by symmetrical ornament, kept consistent across the whole image.",
-      atmosphere_and_mood: 'Keep the requested mood with solemn official dignity.',
-      rendering_and_quality: 'Precise dense line engraving with no digital smoothing.',
-      key_features: 'banknote line engraving; guilloche frames; oval portrait; single ink',
-    }, ['readable numbers', 'real currency design'], [
-      'A proud goose in a monocle poses in an oval portrait engraved in dense green-black banknote lines, framed by swirling rosettes. No readable text or logo.',
-      'A retired dragon general stares solemnly from an engraved oval, every scale made of fine curving lines. No readable text or logo.',
-      'A beloved village baker is honored in an engraved portrait with a loaf of bread held like a scepter. No readable text or logo.',
-    ]),
-    study('Chromolithograph Trade Card', 'victorian color trade card print', 'chromolithograph', {
-      aesthetic: 'Chromolithograph trade card: Victorian color-printed collectible card illustration, rich saturated stone-printed colors, cheerful subjects and ornate rounded frames.',
-      subject_treatment: `${keep}; present the subject as a cheerful Victorian color-printed card vignette.`,
-      color_and_tone: 'Rich saturated reds, greens, golds and blues with soft stone-printed gradients.',
-      lighting_and_shadow: "Gentle modeled light with smooth printed gradations, kept consistent across the whole image.",
-      texture_and_material: 'Fine litho grain, embossed card edges, ornamental frames and gold accents.',
-      camera_and_composition: 'Small central vignette inside a decorative rounded frame.',
-      atmosphere_and_mood: 'Keep the requested mood with charming nostalgic sweetness.',
-      rendering_and_quality: "Polished saturated color printing with delicate grain, kept consistent across the whole image.",
-      key_features: 'saturated stone colors; ornate rounded frame; litho grain; Victorian charm',
-    }, ['readable advertising text', 'real brand'], [
-      'A cat in a ribboned bonnet rides a velocipede through a garden of roses, printed in rich chromolithograph reds and greens. No readable text or logo.',
-      "Under a strawberry the size of a circus tent, a large family of mice spreads a picnic of crumbs and thimble teacups, all set inside a gilded embossed oval frame with printed roses. No readable text or logo.",
-      "Drifting over a seaside town, a chubby cherub pilots a striped balloon basket loaded with jars of pickled clouds, inside a lavishly embossed ornamental border of shells and ribbons. No readable text or logo.",
-    ]),
-    study('Block-Stamped Repeat', 'hand-stamped block pattern image', 'block-stamped', {
-      aesthetic: 'Block-stamped repeat: images built from a few small hand-carved stamps pressed again and again, uneven ink density and slight rotations giving handmade rhythm.',
-      subject_treatment: `${keep}; build the subject and background from repeated small stamped motifs.`,
-      color_and_tone: 'Two or three stamp inks such as indigo, madder red and saffron on cream.',
-      lighting_and_shadow: 'No modeled light; density and overlap of stamps create depth.',
-      texture_and_material: 'Uneven stamp impressions, patchy ink, slight rotation and paper grain.',
-      camera_and_composition: 'Rhythmic repeated pattern with a larger central stamped figure.',
-      atmosphere_and_mood: 'Keep the requested mood with warm handmade folk rhythm.',
-      rendering_and_quality: "Authentic stamped irregularity with clear readable motifs, kept consistent across the whole image.",
-      key_features: 'repeated hand stamps; patchy ink; slight rotation; folk rhythm',
-    }, ['perfect digital repeat'], [
-      'An elephant made of hundreds of tiny stamped paisleys walks through a forest of stamped indigo trees. No readable text or logo.',
-      "Swirling around one enormous stamped sun, a flock of madder-red birds repeats across the cloth, each impression pressed a little crooked, patchy where the wooden block ran dry of ink. No readable text or logo.",
-      "Climbing a steep hill in uneven rows, a whole village of stamped houses leans in every direction, doors and chimneys pressed slightly crooked and patchy, with one house stamped upside down. No readable text or logo.",
-    ]),
-    study('Plate-Tone Etching', 'etching with wiped plate tone', 'plate-tone', {
-      aesthetic: 'Plate-tone etching: fine etched line printed with a thin film of ink left wiped on the plate, giving misty grey atmosphere and soft glowing wiped highlights.',
-      subject_treatment: `${keep}; etch the subject in fine lines and set it in soft wiped plate tone.`,
-      color_and_tone: 'Warm black or sepia line with soft grey plate tone and wiped pale areas.',
-      lighting_and_shadow: 'Soft atmospheric tone with lights wiped clean by hand.',
-      texture_and_material: 'Fine etched lines, smeared plate tone, wipe marks and plate mark.',
-      camera_and_composition: "Atmospheric composition with a visible plate edge, kept consistent across the whole image.",
-      atmosphere_and_mood: 'Keep the requested mood with misty dreamlike quiet.',
-      rendering_and_quality: "Delicate etched line with controlled atmospheric tone, kept consistent across the whole image.",
-      key_features: 'fine etched line; wiped plate tone; misty greys; plate mark',
-    }, ['clean white background'], [
-      "Crossing a misty river at dawn, a lonely ferry carries a single passenger who has no reflection in the water, the fog a soft film of plate tone with the lantern wiped bright. No readable text or logo.",
-      "Alone on a hill, an ancient tree has grown around an iron gate that no longer leads anywhere, drawn in fine etched line under a warm wiped haze of sky. No readable text or logo.",
-      "Seen from a bridge at night, a sleeping city has one enormous figure walking quietly between its towers, the streetlights wiped out of grey plate tone around its feet. No readable text or logo.",
-    ]),
-    study('Three-Drum Riso Overlay', 'three-color risograph overlay', 'three-drum-riso', {
-      aesthetic: 'Three-drum riso overlay: risograph prints in three bright soy inks layered with grain and misregistration, overlaps creating a rich unexpected palette.',
-      subject_treatment: `${keep}; separate the subject into three grainy riso ink layers that overlap to build it.`,
-      color_and_tone: 'Fluorescent pink, bright yellow and teal or blue overlapping into oranges and purples.',
-      lighting_and_shadow: "Grainy tone and overlap density create value, kept consistent across the whole image.",
-      texture_and_material: 'Riso grain, misregistered edges, speckle and soft ink density.',
-      camera_and_composition: "Playful graphic composition with bold overlapping shapes, kept consistent across the whole image.",
-      atmosphere_and_mood: 'Keep the requested mood with bright indie print energy.',
-      rendering_and_quality: 'Authentic riso texture and overlaps, never smooth digital color.',
-      key_features: 'three riso inks; grainy overlaps; misregistration; fluorescent palette',
-    }, ['smooth gradients'], [
-      'A mermaid DJ spins records under the sea in fluorescent pink, yellow and teal riso layers that overlap into violet bubbles. No readable text or logo.',
-      "In a sunny apartment full of hanging ivy, a small green dinosaur in slippers carefully waters a houseplant twice its height, printed in grainy misregistered pink, teal and yellow riso inks. No readable text or logo.",
-      "On a rooftop party at night, a crowd of cats dances around a boombox while one very small dog tries to look casual in the middle, three riso ink layers sliding past each other. No readable text or logo.",
-    ]),
-    study('Monoprint Ghost Pull', 'faint second monoprint impression', 'ghost-pull', {
-      aesthetic: 'Monoprint ghost pull: the faint second impression of a monoprint, pale and mottled, where only traces of ink remain and forms dissolve into soft ghosts.',
-      subject_treatment: `${keep}; show the subject as a faint mottled ghost impression that is still recognizable.`,
-      color_and_tone: 'Pale diluted ink tints, soft greys or faded colors on white paper.',
-      lighting_and_shadow: "Faint remaining ink creates soft uneven value, kept consistent across the whole image.",
-      texture_and_material: 'Mottled patchy transfer, broken edges, faded marks and paper texture.',
-      camera_and_composition: 'Simple composition with lots of pale paper space.',
-      atmosphere_and_mood: 'Keep the requested mood with fragile, haunting memory.',
-      rendering_and_quality: "Authentic faded transfer texture with readable forms, kept consistent across the whole image.",
-      key_features: 'faint second impression; mottled transfer; pale tints; ghostly forms',
-    }, ['strong saturated color'], [
-      'A ghost ship appears as a faint mottled second pull, its sails barely there on the pale paper. No readable text or logo.',
-      "Fading out of a pale monoprint ghost impression, a dancing couple spins across an empty ballroom, their bodies almost gone while only their joined hands remain crisply printed in black ink. No readable text or logo.",
-      "In a birch forest, a deer survives only as a faint pale trace of the first printing, while the hunter beside it has already faded away completely except for his boots. No readable text or logo.",
-    ]),
-    study('White-Line Woodblock', 'white-line color woodcut', 'white-line-woodblock', {
-      aesthetic: 'White-line woodblock: a single carved block with grooves separating each color area, painted and printed one section at a time, leaving white lines between colors.',
-      subject_treatment: `${keep}; divide the subject into color areas separated by carved white lines.`,
-      color_and_tone: 'Soft watercolor-like colors separated by crisp white carved lines.',
-      lighting_and_shadow: 'Soft color shading within each area, white lines as structure.',
-      texture_and_material: 'Wood grain, uneven hand-applied color, crisp white grooves.',
-      camera_and_composition: 'Clear graphic composition with the white line as a unifying net.',
-      atmosphere_and_mood: 'Keep the requested mood with calm handmade charm.',
-      rendering_and_quality: "Authentic hand-printed color with crisp white separations, kept consistent across the whole image.",
-      key_features: 'white carved lines between colors; wood grain; hand-applied color; single block',
-    }, ['black outlines'], [
-      "In a harbor of soft blues and ochres, the sailboats have all turned to face one strange ship with sails made of patchwork quilts, every shape divided by a crisp white carved line. No readable text or logo.",
-      "On a windowsill, a cat has stacked the pears from the fruit bowl into a small tower and is waiting to see who will notice, hand-applied colors divided by white grooves. No readable text or logo.",
-      "Swaying against a pale evening sky, a garden of giant hollyhocks shelters a sleeping hedgehog, each petal and leaf carved as its own island of color separated by thin white lines. No readable text or logo.",
-    ]),
-    study('Collotype Reticulation', 'gelatin collotype grain print', 'collotype', {
-      aesthetic: 'Collotype reticulation: continuous-tone prints from a gelatin plate with fine worm-like reticulated grain, soft tonal photography turned into an antique art print.',
-      subject_treatment: `${keep}; render the subject in soft continuous tone with fine reticulated grain.`,
-      color_and_tone: 'Warm sepia, blue-grey or soft duotone ink with smooth tonal range.',
-      lighting_and_shadow: "Soft photographic light with deep smooth shadows, kept consistent across the whole image.",
-      texture_and_material: 'Fine reticulated grain pattern, soft paper and gentle ink sheen.',
-      camera_and_composition: "Classic photographic framing with a soft margin, kept consistent across the whole image.",
-      atmosphere_and_mood: 'Keep the requested mood with quiet antique elegance.',
-      rendering_and_quality: "Delicate continuous tone with authentic reticulated grain, kept consistent across the whole image.",
-      key_features: 'reticulated grain; continuous tone; warm sepia; antique print',
-    }, ['digital sharpness'], [
-      "On a still lake at dawn, a pair of swans pulls a small sleeping woman on a raft of lily pads, printed in warm sepia collotype tone with worm-like grain in the water. No readable text or logo.",
-      "Posing stiffly on a lighthouse gallery, an old keeper holds his cat, and behind them a sea serpent is photobombing in the soft antique reticulated tone. No readable text or logo.",
-      "At a mysterious masked ball in a candlelit hall, guests in feathered masks turn to stare at one uninvited heron in a tuxedo, captured in soft blue-grey reticulated continuous tone. No readable text or logo.",
-    ]),
-    study('Engraved Vignette Plate', 'small engraved book vignette', 'engraved-vignette', {
-      aesthetic: 'Engraved vignette plate: small engraved book illustrations with soft edges that fade into white paper, finely hatched scenes floating without frames.',
-      subject_treatment: `${keep}; engrave the subject as a small finely hatched vignette fading into paper.`,
-      color_and_tone: 'Black engraved line on cream paper, with soft fading edges.',
-      lighting_and_shadow: 'Fine hatching and cross-hatching for shadows, open lights.',
-      texture_and_material: 'Engraved lines, dot-and-lozenge textures and fading vignette edges.',
-      camera_and_composition: 'Small central scene floating on the page with soft irregular edges.',
-      atmosphere_and_mood: 'Keep the requested mood with gentle storybook delicacy.',
-      rendering_and_quality: "Precise delicate engraving with smoothly fading edges, kept consistent across the whole image.",
-      key_features: 'floating vignette; fading edges; fine engraved hatching; cream paper',
-    }, ['hard rectangular frame', 'readable captions'], [
-      "Beneath a mushroom umbrella in a tiny engraved vignette, a fox reads a book about foxes and looks deeply offended by it, the scene fading softly into the page. No readable text or logo.",
-      "Floating in a white oval vignette, a windmill on a lonely hill waits as a single rider approaches through wheat, every cloud and blade of grass cut in fine disciplined engraved lines. No readable text or logo.",
-      "Under an oak in a small fading vignette, a sleeping knight dreams while his faithful dog has put on his helmet and stands guard with a stick. No readable text or logo.",
-    ]),
+    study(
+      'Three-Block Color Relief',
+      'three-block color relief print',
+      'three-block-relief',
+      {
+        aesthetic:
+          'Three-block color relief: a relief print pulled from three separately carved blocks, one color each, overlapping into rich secondary colors with slight registration drift.',
+        subject_treatment: `${keep}; divide the subject into three carved color layers that overlap to build it.`,
+        color_and_tone:
+          'Three transparent inks such as ochre, teal and deep red overlapping into new hues.',
+        lighting_and_shadow: 'Shadows built from overlapping blocks and carved white highlights.',
+        texture_and_material:
+          'Carved edges, ink speckle, wood grain and slight misregistration between blocks.',
+        camera_and_composition: 'Bold simplified composition with large interlocking color shapes.',
+        atmosphere_and_mood: 'Keep the requested mood with handcrafted warmth and graphic punch.',
+        rendering_and_quality: 'Authentic layered relief printing with clean carved shapes.',
+        key_features:
+          'three carved color blocks; overlap colors; registration drift; carved whites',
+      },
+      ['smooth digital gradients'],
+      [
+        'A fox leaps over a frozen stream at dusk, printed from three carved blocks of ochre, teal and red that overlap into deep violet shadows. No readable text or logo.',
+        'Rowing through a storm, a lighthouse keeper carries the lighthouse lamp itself in her boat because the tower has walked away, the sea a teal block, the sky a red one. No readable text or logo.',
+        'A giant pumpkin festival crowds a village square, its three block colors drifting slightly off each other at every edge. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Sugar-Lift Brush Etching',
+      'painterly sugar-lift aquatint',
+      'sugar-lift',
+      {
+        aesthetic:
+          'Sugar-lift brush etching: an etching whose marks were painted with a brush in sugar solution, so the print shows fluid brushstrokes with grainy aquatint texture.',
+        subject_treatment: `${keep}; paint the subject in loose fluid brush marks rendered as etched aquatint grain.`,
+        color_and_tone: 'Rich black or sepia ink with grainy aquatint tones on cream paper.',
+        lighting_and_shadow: 'Brushed dark masses and open paper lights with grainy midtones.',
+        texture_and_material:
+          'Fluid brush-shaped etched marks, rosin grain texture and plate mark.',
+        camera_and_composition: 'Expressive painterly composition within a visible plate edge.',
+        atmosphere_and_mood: 'Keep the requested mood with spontaneous, expressive energy.',
+        rendering_and_quality: 'Authentic etched grain with visible brush gesture in every mark.',
+        key_features: 'brushstroke etching; aquatint grain; fluid gesture; plate mark',
+      },
+      ['clean vector lines'],
+      [
+        'A bullfighter spins his cape as the bull charges past, both painted in fluid brush marks that print as grainy black etching. No readable text or logo.',
+        'A flock of crows bursts from a wheat field in loose brushed shapes with rosin grain in every wing. No readable text or logo.',
+        'A dancer in a flamenco dress twirls in sepia brush strokes that pool into velvety grainy darks. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Screen-Layered Flat Poster',
+      'layered screenprint poster',
+      'screen-layered',
+      {
+        aesthetic:
+          'Screen-layered flat poster: a screenprinted illustration built from several flat opaque ink layers, crisp edges, limited palette and slight ink texture.',
+        subject_treatment: `${keep}; build the subject from a few flat opaque ink layers stacked like screen passes.`,
+        color_and_tone: 'Five or six bold flat inks such as mustard, coral, navy, mint and black.',
+        lighting_and_shadow: 'Flat shadow shapes and highlight shapes as separate ink layers.',
+        texture_and_material:
+          'Crisp stencil edges, slight ink buildup, paper tooth and tiny pinholes.',
+        camera_and_composition: 'Poster-like graphic composition with a strong central image.',
+        atmosphere_and_mood: 'Keep the requested mood with bold collectible poster energy.',
+        rendering_and_quality:
+          'Clean flat layers with authentic printed texture, kept consistent across the whole image.',
+        key_features: 'flat opaque ink layers; crisp edges; limited palette; poster composition',
+      },
+      ['photographic texture', 'readable title'],
+      [
+        'A giant squid wraps around a sinking submarine, printed in six flat layers of navy, coral and mint with crisp stencil edges. No readable text or logo.',
+        'A cowboy astronaut rides a horse across the moon in bold mustard and black screen layers. No readable text or logo.',
+        'High on a crooked hill, a haunted house throws its windows open to let a parade of bedsheet ghosts spill down the lawn, printed in flat layers of purple, orange and cream. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Currency Portrait Engraving',
+      'banknote-style engraved portrait',
+      'currency-engraving',
+      {
+        aesthetic:
+          'Currency portrait engraving: subjects engraved in the dense precise line style of old banknotes, with swirling line shading, fine guilloche frames and dignified poses.',
+        subject_treatment: `${keep}; engrave the subject as a dignified central vignette with fine swirling line shading.`,
+        color_and_tone: 'Single engraving ink in green-black, sepia or blue on pale paper.',
+        lighting_and_shadow: 'Tone from dense line spacing, swelling and crossing lines.',
+        texture_and_material:
+          'Ultra-fine engraved lines, guilloche rosettes and ornamental frames without numbers.',
+        camera_and_composition:
+          'Central oval portrait framed by symmetrical ornament, kept consistent across the whole image.',
+        atmosphere_and_mood: 'Keep the requested mood with solemn official dignity.',
+        rendering_and_quality: 'Precise dense line engraving with no digital smoothing.',
+        key_features: 'banknote line engraving; guilloche frames; oval portrait; single ink',
+      },
+      ['readable numbers', 'real currency design'],
+      [
+        'A proud goose in a monocle poses in an oval portrait engraved in dense green-black banknote lines, framed by swirling rosettes. No readable text or logo.',
+        'A retired dragon general stares solemnly from an engraved oval, every scale made of fine curving lines. No readable text or logo.',
+        'A beloved village baker is honored in an engraved portrait with a loaf of bread held like a scepter. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Chromolithograph Trade Card',
+      'victorian color trade card print',
+      'chromolithograph',
+      {
+        aesthetic:
+          'Chromolithograph trade card: Victorian color-printed collectible card illustration, rich saturated stone-printed colors, cheerful subjects and ornate rounded frames.',
+        subject_treatment: `${keep}; present the subject as a cheerful Victorian color-printed card vignette.`,
+        color_and_tone:
+          'Rich saturated reds, greens, golds and blues with soft stone-printed gradients.',
+        lighting_and_shadow:
+          'Gentle modeled light with smooth printed gradations, kept consistent across the whole image.',
+        texture_and_material:
+          'Fine litho grain, embossed card edges, ornamental frames and gold accents.',
+        camera_and_composition: 'Small central vignette inside a decorative rounded frame.',
+        atmosphere_and_mood: 'Keep the requested mood with charming nostalgic sweetness.',
+        rendering_and_quality:
+          'Polished saturated color printing with delicate grain, kept consistent across the whole image.',
+        key_features: 'saturated stone colors; ornate rounded frame; litho grain; Victorian charm',
+      },
+      ['readable advertising text', 'real brand'],
+      [
+        'A cat in a ribboned bonnet rides a velocipede through a garden of roses, printed in rich chromolithograph reds and greens. No readable text or logo.',
+        'Under a strawberry the size of a circus tent, a large family of mice spreads a picnic of crumbs and thimble teacups, all set inside a gilded embossed oval frame with printed roses. No readable text or logo.',
+        'Drifting over a seaside town, a chubby cherub pilots a striped balloon basket loaded with jars of pickled clouds, inside a lavishly embossed ornamental border of shells and ribbons. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Block-Stamped Repeat',
+      'hand-stamped block pattern image',
+      'block-stamped',
+      {
+        aesthetic:
+          'Block-stamped repeat: images built from a few small hand-carved stamps pressed again and again, uneven ink density and slight rotations giving handmade rhythm.',
+        subject_treatment: `${keep}; build the subject and background from repeated small stamped motifs.`,
+        color_and_tone: 'Two or three stamp inks such as indigo, madder red and saffron on cream.',
+        lighting_and_shadow: 'No modeled light; density and overlap of stamps create depth.',
+        texture_and_material:
+          'Uneven stamp impressions, patchy ink, slight rotation and paper grain.',
+        camera_and_composition: 'Rhythmic repeated pattern with a larger central stamped figure.',
+        atmosphere_and_mood: 'Keep the requested mood with warm handmade folk rhythm.',
+        rendering_and_quality:
+          'Authentic stamped irregularity with clear readable motifs, kept consistent across the whole image.',
+        key_features: 'repeated hand stamps; patchy ink; slight rotation; folk rhythm',
+      },
+      ['perfect digital repeat'],
+      [
+        'An elephant made of hundreds of tiny stamped paisleys walks through a forest of stamped indigo trees. No readable text or logo.',
+        'Swirling around one enormous stamped sun, a flock of madder-red birds repeats across the cloth, each impression pressed a little crooked, patchy where the wooden block ran dry of ink. No readable text or logo.',
+        'Climbing a steep hill in uneven rows, a whole village of stamped houses leans in every direction, doors and chimneys pressed slightly crooked and patchy, with one house stamped upside down. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Plate-Tone Etching',
+      'etching with wiped plate tone',
+      'plate-tone',
+      {
+        aesthetic:
+          'Plate-tone etching: fine etched line printed with a thin film of ink left wiped on the plate, giving misty grey atmosphere and soft glowing wiped highlights.',
+        subject_treatment: `${keep}; etch the subject in fine lines and set it in soft wiped plate tone.`,
+        color_and_tone: 'Warm black or sepia line with soft grey plate tone and wiped pale areas.',
+        lighting_and_shadow: 'Soft atmospheric tone with lights wiped clean by hand.',
+        texture_and_material: 'Fine etched lines, smeared plate tone, wipe marks and plate mark.',
+        camera_and_composition:
+          'Atmospheric composition with a visible plate edge, kept consistent across the whole image.',
+        atmosphere_and_mood: 'Keep the requested mood with misty dreamlike quiet.',
+        rendering_and_quality:
+          'Delicate etched line with controlled atmospheric tone, kept consistent across the whole image.',
+        key_features: 'fine etched line; wiped plate tone; misty greys; plate mark',
+      },
+      ['clean white background'],
+      [
+        'Crossing a misty river at dawn, a lonely ferry carries a single passenger who has no reflection in the water, the fog a soft film of plate tone with the lantern wiped bright. No readable text or logo.',
+        'Alone on a hill, an ancient tree has grown around an iron gate that no longer leads anywhere, drawn in fine etched line under a warm wiped haze of sky. No readable text or logo.',
+        'Seen from a bridge at night, a sleeping city has one enormous figure walking quietly between its towers, the streetlights wiped out of grey plate tone around its feet. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Three-Drum Riso Overlay',
+      'three-color risograph overlay',
+      'three-drum-riso',
+      {
+        aesthetic:
+          'Three-drum riso overlay: risograph prints in three bright soy inks layered with grain and misregistration, overlaps creating a rich unexpected palette.',
+        subject_treatment: `${keep}; separate the subject into three grainy riso ink layers that overlap to build it.`,
+        color_and_tone:
+          'Fluorescent pink, bright yellow and teal or blue overlapping into oranges and purples.',
+        lighting_and_shadow:
+          'Grainy tone and overlap density create value, kept consistent across the whole image.',
+        texture_and_material: 'Riso grain, misregistered edges, speckle and soft ink density.',
+        camera_and_composition:
+          'Playful graphic composition with bold overlapping shapes, kept consistent across the whole image.',
+        atmosphere_and_mood: 'Keep the requested mood with bright indie print energy.',
+        rendering_and_quality: 'Authentic riso texture and overlaps, never smooth digital color.',
+        key_features: 'three riso inks; grainy overlaps; misregistration; fluorescent palette',
+      },
+      ['smooth gradients'],
+      [
+        'A mermaid DJ spins records under the sea in fluorescent pink, yellow and teal riso layers that overlap into violet bubbles. No readable text or logo.',
+        'In a sunny apartment full of hanging ivy, a small green dinosaur in slippers carefully waters a houseplant twice its height, printed in grainy misregistered pink, teal and yellow riso inks. No readable text or logo.',
+        'On a rooftop party at night, a crowd of cats dances around a boombox while one very small dog tries to look casual in the middle, three riso ink layers sliding past each other. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Monoprint Ghost Pull',
+      'faint second monoprint impression',
+      'ghost-pull',
+      {
+        aesthetic:
+          'Monoprint ghost pull: the faint second impression of a monoprint, pale and mottled, where only traces of ink remain and forms dissolve into soft ghosts.',
+        subject_treatment: `${keep}; show the subject as a faint mottled ghost impression that is still recognizable.`,
+        color_and_tone: 'Pale diluted ink tints, soft greys or faded colors on white paper.',
+        lighting_and_shadow:
+          'Faint remaining ink creates soft uneven value, kept consistent across the whole image.',
+        texture_and_material:
+          'Mottled patchy transfer, broken edges, faded marks and paper texture.',
+        camera_and_composition: 'Simple composition with lots of pale paper space.',
+        atmosphere_and_mood: 'Keep the requested mood with fragile, haunting memory.',
+        rendering_and_quality:
+          'Authentic faded transfer texture with readable forms, kept consistent across the whole image.',
+        key_features: 'faint second impression; mottled transfer; pale tints; ghostly forms',
+      },
+      ['strong saturated color'],
+      [
+        'A ghost ship appears as a faint mottled second pull, its sails barely there on the pale paper. No readable text or logo.',
+        'Fading out of a pale monoprint ghost impression, a dancing couple spins across an empty ballroom, their bodies almost gone while only their joined hands remain crisply printed in black ink. No readable text or logo.',
+        'In a birch forest, a deer survives only as a faint pale trace of the first printing, while the hunter beside it has already faded away completely except for his boots. No readable text or logo.',
+      ],
+    ),
+    study(
+      'White-Line Woodblock',
+      'white-line color woodcut',
+      'white-line-woodblock',
+      {
+        aesthetic:
+          'White-line woodblock: a single carved block with grooves separating each color area, painted and printed one section at a time, leaving white lines between colors.',
+        subject_treatment: `${keep}; divide the subject into color areas separated by carved white lines.`,
+        color_and_tone: 'Soft watercolor-like colors separated by crisp white carved lines.',
+        lighting_and_shadow: 'Soft color shading within each area, white lines as structure.',
+        texture_and_material: 'Wood grain, uneven hand-applied color, crisp white grooves.',
+        camera_and_composition: 'Clear graphic composition with the white line as a unifying net.',
+        atmosphere_and_mood: 'Keep the requested mood with calm handmade charm.',
+        rendering_and_quality:
+          'Authentic hand-printed color with crisp white separations, kept consistent across the whole image.',
+        key_features:
+          'white carved lines between colors; wood grain; hand-applied color; single block',
+      },
+      ['black outlines'],
+      [
+        'In a harbor of soft blues and ochres, the sailboats have all turned to face one strange ship with sails made of patchwork quilts, every shape divided by a crisp white carved line. No readable text or logo.',
+        'On a windowsill, a cat has stacked the pears from the fruit bowl into a small tower and is waiting to see who will notice, hand-applied colors divided by white grooves. No readable text or logo.',
+        'Swaying against a pale evening sky, a garden of giant hollyhocks shelters a sleeping hedgehog, each petal and leaf carved as its own island of color separated by thin white lines. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Collotype Reticulation',
+      'gelatin collotype grain print',
+      'collotype',
+      {
+        aesthetic:
+          'Collotype reticulation: continuous-tone prints from a gelatin plate with fine worm-like reticulated grain, soft tonal photography turned into an antique art print.',
+        subject_treatment: `${keep}; render the subject in soft continuous tone with fine reticulated grain.`,
+        color_and_tone: 'Warm sepia, blue-grey or soft duotone ink with smooth tonal range.',
+        lighting_and_shadow:
+          'Soft photographic light with deep smooth shadows, kept consistent across the whole image.',
+        texture_and_material: 'Fine reticulated grain pattern, soft paper and gentle ink sheen.',
+        camera_and_composition:
+          'Classic photographic framing with a soft margin, kept consistent across the whole image.',
+        atmosphere_and_mood: 'Keep the requested mood with quiet antique elegance.',
+        rendering_and_quality:
+          'Delicate continuous tone with authentic reticulated grain, kept consistent across the whole image.',
+        key_features: 'reticulated grain; continuous tone; warm sepia; antique print',
+      },
+      ['digital sharpness'],
+      [
+        'On a still lake at dawn, a pair of swans pulls a small sleeping woman on a raft of lily pads, printed in warm sepia collotype tone with worm-like grain in the water. No readable text or logo.',
+        'Posing stiffly on a lighthouse gallery, an old keeper holds his cat, and behind them a sea serpent is photobombing in the soft antique reticulated tone. No readable text or logo.',
+        'At a mysterious masked ball in a candlelit hall, guests in feathered masks turn to stare at one uninvited heron in a tuxedo, captured in soft blue-grey reticulated continuous tone. No readable text or logo.',
+      ],
+    ),
+    study(
+      'Engraved Vignette Plate',
+      'small engraved book vignette',
+      'engraved-vignette',
+      {
+        aesthetic:
+          'Engraved vignette plate: small engraved book illustrations with soft edges that fade into white paper, finely hatched scenes floating without frames.',
+        subject_treatment: `${keep}; engrave the subject as a small finely hatched vignette fading into paper.`,
+        color_and_tone: 'Black engraved line on cream paper, with soft fading edges.',
+        lighting_and_shadow: 'Fine hatching and cross-hatching for shadows, open lights.',
+        texture_and_material: 'Engraved lines, dot-and-lozenge textures and fading vignette edges.',
+        camera_and_composition:
+          'Small central scene floating on the page with soft irregular edges.',
+        atmosphere_and_mood: 'Keep the requested mood with gentle storybook delicacy.',
+        rendering_and_quality:
+          'Precise delicate engraving with smoothly fading edges, kept consistent across the whole image.',
+        key_features: 'floating vignette; fading edges; fine engraved hatching; cream paper',
+      },
+      ['hard rectangular frame', 'readable captions'],
+      [
+        'Beneath a mushroom umbrella in a tiny engraved vignette, a fox reads a book about foxes and looks deeply offended by it, the scene fading softly into the page. No readable text or logo.',
+        'Floating in a white oval vignette, a windmill on a lonely hill waits as a single rider approaches through wheat, every cloud and blade of grass cut in fine disciplined engraved lines. No readable text or logo.',
+        'Under an oak in a small fading vignette, a sleeping knight dreams while his faithful dog has put on his helmet and stands guard with a stick. No readable text or logo.',
+      ],
+    ),
   ],
 };
 

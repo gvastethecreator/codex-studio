@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Lucasfilm Games Maniac Mansion (1987) look: big-headed pixel characters, spooky comedic mansion rooms, a verb command panel and B-movie parody humor.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a big-headed pixel character in a spooky comedic mansion room. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: C64 and PC palettes with purple night and green slime.
-  lighting_and_shadow: "Flat pixel colors with spooky purple and green accents and no real shading."
-  texture_and_material: "Chunky big-headed pixel characters and simple room furniture made of a few colors."
+  lighting_and_shadow: 'Flat pixel colors with spooky purple and green accents and no real shading.'
+  texture_and_material: 'Chunky big-headed pixel characters and simple room furniture made of a few colors.'
   camera_and_composition: Side-view room with a verb command panel below.
   atmosphere_and_mood: Keep the requested mood with spooky comedic mischief.
-  rendering_and_quality: "A 1987 Commodore 64 frame at 320 by 200: wide chunky pixels above a strip of verb button shapes."
-  creative_brief: 'Lucasfilm Games Maniac Mansion (1987) look: big-headed pixel characters, spooky comedic mansion rooms, a verb command panel and B-movie parody humor. Carry it through SCUMM verbs, big-headed sprites, spooky mansion comedy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1987 Commodore 64 frame at 320 by 200: wide chunky pixels above a strip of verb button shapes.'
+  creative_brief: "Lucasfilm Games Maniac Mansion (1987) look: big-headed pixel characters, spooky comedic mansion rooms, a verb command panel and B-movie parody humor. Carry it through SCUMM verbs, big-headed sprites, spooky mansion comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: SCUMM verbs; big-headed sprites; spooky mansion comedy
 avoidRules:
   - a purple tentacle

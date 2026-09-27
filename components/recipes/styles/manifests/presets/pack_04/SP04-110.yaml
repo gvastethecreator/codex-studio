@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide spreads with lots of empty space, small characters placed low in a large landscape.
   atmosphere_and_mood: Gentle, quiet and a little melancholy, a story told in pauses.
   rendering_and_quality: Soft textured digital finish with no outlines and no glossy rendering.
-  creative_brief: 'Contemporary digital picture book: soft flat shapes painted with grainy texture brushes, limited palette and quiet storytelling spaces. Carry it through grainy texture brushes, limited muted palette, no outlines, wide empty spreads, small characters in large space. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Contemporary digital picture book: soft flat shapes painted with grainy texture brushes, limited palette and quiet storytelling spaces. Carry it through grainy texture brushes, limited muted palette, no outlines, wide empty spreads, small characters in large space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: grainy texture brushes; limited muted palette; no outlines; wide empty spreads; small characters in large space
 avoidRules:
   - known picture-book characters

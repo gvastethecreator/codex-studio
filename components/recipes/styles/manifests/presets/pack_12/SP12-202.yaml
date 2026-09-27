@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as comic-page heroes inside panels. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Comic print colors and halftone, true to the Comix Zone 1995 palette.
-  lighting_and_shadow: "Flat comic-book colors with no gradients, lit the way Comix Zone 1995 lights its levels."
-  texture_and_material: "Printed halftone dots and ink lines, heroes inside panel borders on a page."
+  lighting_and_shadow: 'Flat comic-book colors with no gradients, lit the way Comix Zone 1995 lights its levels.'
+  texture_and_material: 'Printed halftone dots and ink lines, heroes inside panel borders on a page.'
   camera_and_composition: Comic page panel view, framed the way Comix Zone 1995 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rowdy comic-book action.
-  rendering_and_quality: "A 1995 Sega Mega Drive frame at 320 by 224: a comic page with the hero fighting inside a panel, pixelated halftone."
-  creative_brief: 'Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects. Carry it through Comix Zone panels, halftone, page brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1995 Sega Mega Drive frame at 320 by 224: a comic page with the hero fighting inside a panel, pixelated halftone.'
+  creative_brief: "Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects. Carry it through Comix Zone panels, halftone, page brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Comix Zone panels; halftone; page brawl
 avoidRules:
   - a blond artist hero with a pet rat

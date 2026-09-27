@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Lively frieze on a palace wall with gaps.
   atmosphere_and_mood: Keep the requested mood with joyful sea-island vitality.
   rendering_and_quality: Fluid painterly fresco with visible cracks, kept consistent across the whole image.
-  creative_brief: 'Minoan palace fresco: Bronze Age wall painting on plaster with fluid lively figures, bright red and blue, lilies, dolphins and leaping bulls. Carry it through plaster fresco, leaping figures, dolphins, lilies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Minoan palace fresco: Bronze Age wall painting on plaster with fluid lively figures, bright red and blue, lilies, dolphins and leaping bulls. Carry it through plaster fresco, leaping figures, dolphins, lilies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: plaster fresco; leaping figures; dolphins; lilies
 avoidRules:
   - readable Greek inscriptions

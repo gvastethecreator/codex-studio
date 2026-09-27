@@ -35,9 +35,9 @@ const spec: Spec = {
         key_features: 'jump peak; low angle; net line; gym light rim',
       },
       [
-        "A spiker hangs at the peak of a jump so impossibly high that the gym ceiling lights sit below her, the ball a white comet in her palm. No readable text or logo.",
-        "A volleyball team of grandmothers dives in unison for a ball in a rural gym, cardigans and knee braces flying while their young opponents stare. No readable text or logo.",
-        "In an empty gym at night a lone setter tosses the ball to a spiker who is only her own long shadow stretched across the wall. No readable text or logo.",
+        'A spiker hangs at the peak of a jump so impossibly high that the gym ceiling lights sit below her, the ball a white comet in her palm. No readable text or logo.',
+        'A volleyball team of grandmothers dives in unison for a ball in a rural gym, cardigans and knee braces flying while their young opponents stare. No readable text or logo.',
+        'In an empty gym at night a lone setter tosses the ball to a spiker who is only her own long shadow stretched across the wall. No readable text or logo.',
       ],
     ),
     'SP05-344': u(
@@ -60,8 +60,8 @@ const spec: Spec = {
       },
       [
         "A striker bursts through two defenders and sees the goal as a devouring beast's open mouth, her eyes blazing cyan with hunger. No readable text or logo.",
-        "Eleven strikers on the same team charge the ball at once, elbowing each other aside while their own goalkeeper calmly peels an orange. No readable text or logo.",
-        "Alone in a rain-flooded stadium, a benched striker takes shot after shot at a goal that keeps drifting farther away across the pitch. No readable text or logo.",
+        'Eleven strikers on the same team charge the ball at once, elbowing each other aside while their own goalkeeper calmly peels an orange. No readable text or logo.',
+        'Alone in a rain-flooded stadium, a benched striker takes shot after shot at a goal that keeps drifting farther away across the pitch. No readable text or logo.',
       ],
     ),
     'SP05-345': u(
@@ -83,9 +83,9 @@ const spec: Spec = {
         key_features: 'thick 90s line; muscle and sweat; face-offs; film grain',
       },
       [
-        "Two rival centers collide under the rim so hard that the backboard glass bursts into a crown of shards around their heads. No readable text or logo.",
-        "A towering hothead benched for fouls sulks under a sweaty towel while his whole team performs a terrible dance to cheer him up. No readable text or logo.",
-        "Two exhausted rivals sit back to back on an outdoor court at midnight after a one-on-one, neither willing to admit who won. No readable text or logo.",
+        'Two rival centers collide under the rim so hard that the backboard glass bursts into a crown of shards around their heads. No readable text or logo.',
+        'A towering hothead benched for fouls sulks under a sweaty towel while his whole team performs a terrible dance to cheer him up. No readable text or logo.',
+        'Two exhausted rivals sit back to back on an outdoor court at midnight after a one-on-one, neither willing to admit who won. No readable text or logo.',
       ],
     ),
     'SP05-346': u(
@@ -109,9 +109,9 @@ const spec: Spec = {
         key_features: 'afterimages; misdirection; translucent trails; wrong-way defenders',
       },
       [
-        "A pale, quiet player passes the ball behind his back while three defenders stare at the empty spot where he stood a heartbeat ago. No readable text or logo.",
-        "A player so easy to overlook that the arena spotlight sweeps the court searching for him while he dribbles directly beneath it. No readable text or logo.",
-        "In a dark empty gym a single ball bounces across the court, passing itself from player to player among teammates nobody can see. No readable text or logo.",
+        'A pale, quiet player passes the ball behind his back while three defenders stare at the empty spot where he stood a heartbeat ago. No readable text or logo.',
+        'A player so easy to overlook that the arena spotlight sweeps the court searching for him while he dribbles directly beneath it. No readable text or logo.',
+        'In a dark empty gym a single ball bounces across the court, passing itself from player to player among teammates nobody can see. No readable text or logo.',
       ],
     ),
     'SP05-347': u(
@@ -133,8 +133,8 @@ const spec: Spec = {
         key_features: 'uphill gradient; gritted teeth; dappled sun; breakaway',
       },
       [
-        "A climber breaks away on a mountain switchback so steep that the road ahead curls up into the clouds like a ribbon. No readable text or logo.",
-        "A pro cyclist grinds up a brutal hill while a stubborn grandmother on a rusty shopping bike keeps pace beside him, knitting. No readable text or logo.",
+        'A climber breaks away on a mountain switchback so steep that the road ahead curls up into the clouds like a ribbon. No readable text or logo.',
+        'A pro cyclist grinds up a brutal hill while a stubborn grandmother on a rusty shopping bike keeps pace beside him, knitting. No readable text or logo.',
         "At dusk on a lonely pass a rider notices last year's champion pedaling silently beside her in the fog, even though he retired years ago. No readable text or logo.",
       ],
     ),

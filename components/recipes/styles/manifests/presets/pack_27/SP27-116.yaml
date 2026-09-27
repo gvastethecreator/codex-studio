@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Irrational Games BioShock (2007) look: decaying art deco underwater city, leaking glass tunnels, neon signs, ocean light through windows, first-person hands and retro-futurist menace.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in a first-person view of a decaying art deco underwater city. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deco gold, deep ocean teal and flickering neon.
-  lighting_and_shadow: "Blue ocean light through tall windows and flickering deco neon on wet floors."
-  texture_and_material: "Wet marble and brass with shiny reflections, leaking water sheets, simple blocky props up close."
+  lighting_and_shadow: 'Blue ocean light through tall windows and flickering deco neon on wet floors.'
+  texture_and_material: 'Wet marble and brass with shiny reflections, leaking water sheets, simple blocky props up close.'
   camera_and_composition: First-person view with visible hands, framed the way BioShock 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with decadent drowned menace.
-  rendering_and_quality: "A 2007 Xbox 360 frame at 1280 by 720: glossy wet shading, soft bloom, a first-person hand and weapon at bottom right."
-  creative_brief: 'Irrational Games BioShock (2007) look: decaying art deco underwater city, leaking glass tunnels, neon signs, ocean light through windows, first-person hands and retro-futurist menace. Carry it through BioShock deco, undersea city, leaking glass, neon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2007 Xbox 360 frame at 1280 by 720: glossy wet shading, soft bloom, a first-person hand and weapon at bottom right.'
+  creative_brief: "Irrational Games BioShock (2007) look: decaying art deco underwater city, leaking glass tunnels, neon signs, ocean light through windows, first-person hands and retro-futurist menace. Carry it through BioShock deco, undersea city, leaking glass, neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: BioShock deco; undersea city; leaking glass; neon
 avoidRules:
   - a diving-suit giant with a drill

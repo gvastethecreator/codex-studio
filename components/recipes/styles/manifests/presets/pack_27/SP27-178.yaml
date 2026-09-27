@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Hidden-camera vignettes and wide pastel streets, framed the way The Truman Show 1998 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cheerful uncanny control.
   rendering_and_quality: Authentic late-nineties Weir frame, in the recognizable hand of The Truman Show 1998.
-  creative_brief: 'Peter Weir The Truman Show (1998) look: pastel perfect seaside studio town, hidden-camera vignettes, product placements, a painted sky wall and cheerful uncanny control. Carry it through Truman Show pastel town, hidden cameras, sky wall. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Peter Weir The Truman Show (1998) look: pastel perfect seaside studio town, hidden-camera vignettes, product placements, a painted sky wall and cheerful uncanny control. Carry it through Truman Show pastel town, hidden cameras, sky wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Truman Show pastel town; hidden cameras; sky wall
 avoidRules:
   - existing franchise characters

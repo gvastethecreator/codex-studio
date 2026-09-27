@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide western highway compositions, framed the way Near Dark 1987 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with dusty nocturnal menace.
   rendering_and_quality: Neo-western eighties horror frame, in the recognizable hand of Near Dark 1987.
-  creative_brief: 'Kathryn Bigelow Near Dark (1987) look: dusty Oklahoma highways, blue dusk, blackened motel windows, harsh daylight burns and neo-western vampire road movie. Carry it through Near Dark dusty highways, blue dusk, motels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kathryn Bigelow Near Dark (1987) look: dusty Oklahoma highways, blue dusk, blackened motel windows, harsh daylight burns and neo-western vampire road movie. Carry it through Near Dark dusty highways, blue dusk, motels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Near Dark dusty highways; blue dusk; motels
 avoidRules:
   - existing franchise characters

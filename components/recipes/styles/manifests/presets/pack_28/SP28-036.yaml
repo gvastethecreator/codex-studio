@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low forced-realism view, framed the way Scale Model Diorama composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet realistic miniature.
   rendering_and_quality: Hobby diorama photograph, in the recognizable hand of Scale Model Diorama.
-  creative_brief: 'Hobby scale model diorama look: realistic weathered miniature scenes with pigments, rust, mud and water effects on a wooden plinth, photographed as if full size. Carry it through Scale diorama, weathering pigments, resin water. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Hobby scale model diorama look: realistic weathered miniature scenes with pigments, rust, mud and water effects on a wooden plinth, photographed as if full size. Carry it through Scale diorama, weathering pigments, resin water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Scale diorama; weathering pigments; resin water
 avoidRules:
   - existing franchise characters

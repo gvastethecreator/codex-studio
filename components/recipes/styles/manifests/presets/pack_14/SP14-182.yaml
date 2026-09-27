@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular composition viewed from below, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with awesome watchful power.
   rendering_and_quality: Monumental confident ink, kept consistent across the whole image.
-  creative_brief: 'Temple ceiling dragon: monumental ink dragons painted across round temple ceilings, coiling through clouds with fierce eyes that follow the viewer. Carry it through ceiling dragon, round composition, clouds, ink on wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Temple ceiling dragon: monumental ink dragons painted across round temple ceilings, coiling through clouds with fierce eyes that follow the viewer. Carry it through ceiling dragon, round composition, clouds, ink on wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: ceiling dragon; round composition; clouds; ink on wood
 avoidRules:
   - readable Japanese text or seals

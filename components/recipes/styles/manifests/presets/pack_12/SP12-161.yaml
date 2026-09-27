@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ghastly figures in grainy green night vision. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Night-vision green and black, true to the Outlast 2013 palette.
-  lighting_and_shadow: "Everything in green night-vision glow, eyes reflecting white."
-  texture_and_material: "Heavy grain, digital noise and camcorder blur over a dark asylum."
+  lighting_and_shadow: 'Everything in green night-vision glow, eyes reflecting white.'
+  texture_and_material: 'Heavy grain, digital noise and camcorder blur over a dark asylum.'
   camera_and_composition: Shaky first-person camcorder view, framed the way Outlast 2013 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with helpless hunted terror.
-  rendering_and_quality: "A 2013 first-person frame at 1920 by 1080 through a camcorder: corner brackets, a battery shape and a blinking record dot."
-  creative_brief: 'Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons. Carry it through Outlast night vision, camcorder, asylum. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2013 first-person frame at 1920 by 1080 through a camcorder: corner brackets, a battery shape and a blinking record dot.'
+  creative_brief: "Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons. Carry it through Outlast night vision, camcorder, asylum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Outlast night vision; camcorder; asylum
 avoidRules:
   - readable timestamps

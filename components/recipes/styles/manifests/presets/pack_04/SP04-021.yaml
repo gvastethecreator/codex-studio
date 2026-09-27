@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Cheerful atomic-age optimism, stylish and gently humorous.
   rendering_and_quality: Opaque flat shapes with visible brush edges; no transparency and no photographic modeling.
   key_features: opaque matte gouache; flat geometric shapes; mustard-teal-tomato palette; dry-brush edges; patterned foliage
-  creative_brief: 'Mid-century gouache picture book: opaque matte paint in flat geometric shapes, stylized foliage and animals reduced to playful modernist forms. Carry it through opaque matte gouache, flat geometric shapes, mustard-teal-tomato palette, dry-brush edges, patterned foliage. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mid-century gouache picture book: opaque matte paint in flat geometric shapes, stylized foliage and animals reduced to playful modernist forms. Carry it through opaque matte gouache, flat geometric shapes, mustard-teal-tomato palette, dry-brush edges, patterned foliage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - known picture-book characters
   - franchise mascot likeness

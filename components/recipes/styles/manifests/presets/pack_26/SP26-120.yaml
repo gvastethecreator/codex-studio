@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Low street portrait with bold type, framed the way Def Jam 1986 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with raw confident swagger.
   rendering_and_quality: Faithful mid-eighties hip-hop cover design, in the recognizable hand of Def Jam 1986.
-  creative_brief: 'Mid-eighties hip-hop cover look: stark black-and-white street photography, crews in tracksuits and gold chains, boomboxes, big bold sans-serif and raw minimal design. Carry it through Eighties hip-hop black-and-white, tracksuits, boombox. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mid-eighties hip-hop cover look: stark black-and-white street photography, crews in tracksuits and gold chains, boomboxes, big bold sans-serif and raw minimal design. Carry it through Eighties hip-hop black-and-white, tracksuits, boombox. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Eighties hip-hop black-and-white; tracksuits; boombox
 avoidRules:
   - real rappers

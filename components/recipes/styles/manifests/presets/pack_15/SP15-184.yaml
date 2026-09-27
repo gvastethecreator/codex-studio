@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of healing surfaces and wide views of ruins regrowing.
   atmosphere_and_mood: Hopeful and uncanny, damage that simply refuses to stay damage.
   rendering_and_quality: Soft organic illustration with delicate glowing growth detail.
-  creative_brief: 'Regenpunk: a culture built on regeneration, where limbs regrow like salamanders, ruins heal like tissue and scars bloom into flowers. Carry it through regrowth, healing ruins, blooming scars, salamander logic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Regenpunk: a culture built on regeneration, where limbs regrow like salamanders, ruins heal like tissue and scars bloom into flowers. Carry it through regrowth, healing ruins, blooming scars, salamander logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: regrowth; healing ruins; blooming scars; salamander logic
 avoidRules:
   - readable text

@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Water drop macro: a clear droplet acting as a lens, holding an upside-down miniature world.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: seen inside or refracted by a water droplet: a spherical lens with an inverted world, meniscus and highlights.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: seen inside or refracted by a water droplet: a spherical lens with an inverted world, meniscus and highlights."
   color_and_tone: Clear water with rich colors of the refracted scene.
   lighting_and_shadow: Backlight with sparkling specular highlights, matching the real imaging setup at this scale.
   texture_and_material: Water surface tension, beads and glossy highlights, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Delicate, magical, clear and quiet, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: droplet lens; inverted world; meniscus; sparkle
-  creative_brief: 'Water drop macro: a clear droplet acting as a lens, holding an upside-down miniature world. Carry it through droplet lens, inverted world, meniscus, sparkle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Water drop macro: a clear droplet acting as a lens, holding an upside-down miniature world. Carry it through droplet lens, inverted world, meniscus, sparkle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

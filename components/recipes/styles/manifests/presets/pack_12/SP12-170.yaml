@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cheeky cartoon adventure characters in pointed hats and robes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Rich VGA purples, greens and warm browns, true to the Simon the Sorcerer 1993 palette.
-  lighting_and_shadow: "Warm candle and window light in painted-looking pixel shades."
-  texture_and_material: "Painted-looking scenes made of visible square pixels and dithering in a 256-color palette."
+  lighting_and_shadow: 'Warm candle and window light in painted-looking pixel shades.'
+  texture_and_material: 'Painted-looking scenes made of visible square pixels and dithering in a 256-color palette.'
   camera_and_composition: Side-view adventure room, framed the way Simon the Sorcerer 1993 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheeky magical mischief.
-  rendering_and_quality: "A 1993 PC VGA frame at 320 by 200: cheeky wizard sprite in a cluttered room, a strip of verb button shapes at the bottom."
-  creative_brief: 'Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory. Carry it through Simon the Sorcerer painted VGA, wizard rooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 1993 PC VGA frame at 320 by 200: cheeky wizard sprite in a cluttered room, a strip of verb button shapes at the bottom.'
+  creative_brief: "Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory. Carry it through Simon the Sorcerer painted VGA, wizard rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Simon the Sorcerer painted VGA; wizard rooms
 avoidRules:
   - a boy wizard in a purple robe and hat

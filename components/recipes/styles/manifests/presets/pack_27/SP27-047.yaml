@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Gothic compositions with giant murals, framed the way Candyman 1992 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with haunting urban legend.
   rendering_and_quality: Gothic nineties urban horror frame, in the recognizable hand of Candyman 1992.
-  creative_brief: 'Bernard Rose Candyman (1992) look: Chicago housing projects, graffiti murals of giant faces, honey and bees, gothic Philip Glass choral grandeur and urban legend. Carry it through Candyman murals, bees and honey, urban legend. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bernard Rose Candyman (1992) look: Chicago housing projects, graffiti murals of giant faces, honey and bees, gothic Philip Glass choral grandeur and urban legend. Carry it through Candyman murals, bees and honey, urban legend. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Candyman murals; bees and honey; urban legend
 avoidRules:
   - a tall man in a fur-collared coat with a hook hand

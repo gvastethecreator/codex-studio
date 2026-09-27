@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide painterly landscape with a tiny figure, framed the way Jakub Rozalski composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with pastoral melancholic strangeness.
   rendering_and_quality: Painterly oil landscape with dieselpunk machines, in the recognizable hand of Jakub Rozalski.
-  creative_brief: 'Jakub Różalski 1920+ dieselpunk language: towering riveted walkers stomping through painterly Eastern European fields, smokestacks, cavalry and folk-art pastoral melancholy. Carry it through Różalski dieselpunk, riveted walker, pastoral painting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jakub Różalski 1920+ dieselpunk language: towering riveted walkers stomping through painterly Eastern European fields, smokestacks, cavalry and folk-art pastoral melancholy. Carry it through Różalski dieselpunk, riveted walker, pastoral painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Różalski dieselpunk; riveted walker; pastoral painting
 avoidRules:
   - existing franchise characters

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low wide view with tiny figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ancient watchful majesty.
   rendering_and_quality: Monumental weathered sculpture, kept consistent across the whole image.
-  creative_brief: 'Monumental sphinx sculpture: colossal lion-bodied figures with royal heads carved from bedrock or granite, weathered by sand and time. Carry it through sphinx, colossal, weathered stone, desert. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Monumental sphinx sculpture: colossal lion-bodied figures with royal heads carved from bedrock or granite, weathered by sand and time. Carry it through sphinx, colossal, weathered stone, desert. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: sphinx; colossal; weathered stone; desert
 avoidRules:
   - readable hieroglyphs or cartouches

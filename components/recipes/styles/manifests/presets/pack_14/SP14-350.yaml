@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Single creature on a plain ground, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with joyful fantastic spirit.
   rendering_and_quality: Vivid detailed painted carving, kept consistent across the whole image.
-  creative_brief: 'Oaxacan alebrije carving: vividly painted carved wooden fantasy creatures with intricate dotted patterns, combining animals into impossible spirit guides. Carry it through painted creature, dotted patterns, hybrid animal, wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Oaxacan alebrije carving: vividly painted carved wooden fantasy creatures with intricate dotted patterns, combining animals into impossible spirit guides. Carry it through painted creature, dotted patterns, hybrid animal, wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: painted creature; dotted patterns; hybrid animal; wood
 avoidRules:
   - cultural stereotypes or caricature

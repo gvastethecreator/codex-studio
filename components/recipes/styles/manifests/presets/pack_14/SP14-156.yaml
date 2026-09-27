@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Continuous circling frieze, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with exotic decorative wonder.
   rendering_and_quality: Dense decorative rhythm, kept consistent across the whole image.
-  creative_brief: 'Corinthian animal frieze pottery: orientalizing bands of lions, panthers, goats and sphinxes circling a vessel, with rosette fillers and purple-brown slip. Carry it through animal frieze, rosettes, sphinxes, circling bands. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Corinthian animal frieze pottery: orientalizing bands of lions, panthers, goats and sphinxes circling a vessel, with rosette fillers and purple-brown slip. Carry it through animal frieze, rosettes, sphinxes, circling bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: animal frieze; rosettes; sphinxes; circling bands
 avoidRules:
   - readable Greek inscriptions

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wall panel with a striding creature, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with primordial majestic chaos.
   rendering_and_quality: Crisp glazed relief, kept consistent across the whole image.
-  creative_brief: 'Tiamat glazed brick serpent: Babylonian glazed brick reliefs in deep blue and gold with striding dragons and bulls, reimagined as the primordial sea serpent of chaos. Carry it through glazed brick, lapis blue, striding dragon, relief. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Tiamat glazed brick serpent: Babylonian glazed brick reliefs in deep blue and gold with striding dragons and bulls, reimagined as the primordial sea serpent of chaos. Carry it through glazed brick, lapis blue, striding dragon, relief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: glazed brick; lapis blue; striding dragon; relief
 avoidRules:
   - cultural stereotypes or caricature

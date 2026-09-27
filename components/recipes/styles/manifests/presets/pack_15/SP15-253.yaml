@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low angles with a huge smoke figure towering over small humans.
   atmosphere_and_mood: Tempting and dangerous, every wish comes with a price.
   rendering_and_quality: Glowing illustration with flowing smoke forms and brass detail.
-  creative_brief: 'Djinnpunk: spirits of smoke and fire bound in brass lamps and bottles, with desert markets of sealed vessels, swirling smoke giants and dangerous bargains. Carry it through brass lamps, smoke giants, sealed bottles, dangerous bargains. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Djinnpunk: spirits of smoke and fire bound in brass lamps and bottles, with desert markets of sealed vessels, swirling smoke giants and dangerous bargains. Carry it through brass lamps, smoke giants, sealed bottles, dangerous bargains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: brass lamps; smoke giants; sealed bottles; dangerous bargains
 avoidRules:
   - readable text

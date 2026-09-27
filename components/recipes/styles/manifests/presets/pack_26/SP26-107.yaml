@@ -31,7 +31,7 @@ visualDna:
   camera_and_composition: Flat frontal square sleeve with a bold central motif.
   atmosphere_and_mood: Keep the requested mood with jaunty early optimism.
   rendering_and_quality: Faithful forties illustrated album cover design, in the recognizable hand of Alex Steinweiss.
-  creative_brief: 'Alex Steinweiss Columbia album cover look of the 1940s: the first illustrated record covers, flat graphic shapes of instruments, curly hand-lettered titles and bright poster color. Carry it through Steinweiss flat shapes, curly hand lettering, poster color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Alex Steinweiss Columbia album cover look of the 1940s: the first illustrated record covers, flat graphic shapes of instruments, curly hand-lettered titles and bright poster color. Carry it through Steinweiss flat shapes, curly hand lettering, poster color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Steinweiss flat shapes; curly hand lettering; poster color
 avoidRules:
   - existing franchise characters

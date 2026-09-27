@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Macro view on a studded baseplate, framed the way Brick-Built Minifigure composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with playful building fun.
   rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
-  creative_brief: 'Toy brick minifigure look: small blocky interlocking-brick figures with C-shaped hands, printed faces, snap-on accessories and studded baseplates. Carry it through Brick minifigure, printed face, studs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Toy brick minifigure look: small blocky interlocking-brick figures with C-shaped hands, printed faces, snap-on accessories and studded baseplates. Carry it through Brick minifigure, printed face, studs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Brick minifigure; printed face; studs
 avoidRules:
   - real LEGO logos

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Symmetrical frontal view, framed the way Art Deco Machine Age composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with glamorous machine-age luxury.
   rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
-  creative_brief: 'Art Deco machine-age product language: stepped geometric forms, sunburst motifs, chrome bands, black bakelite and luxurious symmetrical glamour. Carry it through Art Deco product, stepped forms, sunburst, chrome. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Art Deco machine-age product language: stepped geometric forms, sunburst motifs, chrome bands, black bakelite and luxurious symmetrical glamour. Carry it through Art Deco product, stepped forms, sunburst, chrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Art Deco product; stepped forms; sunburst; chrome
 avoidRules:
   - existing franchise characters

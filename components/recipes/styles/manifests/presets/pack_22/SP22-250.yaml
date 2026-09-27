@@ -28,7 +28,7 @@ visualDna:
   camera_and_composition: Preserve the requested framing with spray bursts directing motion.
   atmosphere_and_mood: Keep the requested mood with explosive restless energy.
   rendering_and_quality: Controlled spatter density with clear silhouettes, never random mess.
-  creative_brief: 'Spatter storm ink: ink flicked from brushes and toothbrushes in dense spray storms, forming the subject from clouds of droplets and a few firm strokes. Carry it through dense ink spray, droplet clouds, masked edges, one accent color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Spatter storm ink: ink flicked from brushes and toothbrushes in dense spray storms, forming the subject from clouds of droplets and a few firm strokes. Carry it through dense ink spray, droplet clouds, masked edges, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: dense ink spray; droplet clouds; masked edges; one accent color
 avoidRules:
   - smooth gradients

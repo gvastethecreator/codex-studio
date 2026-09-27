@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Rushing low POV through woods, dutch angles and crash zooms.
   atmosphere_and_mood: Keep the requested mood with frantic manic terror.
   rendering_and_quality: Frantic low-budget eighties cabin horror frame, in the recognizable hand of Evil Dead 1981.
-  creative_brief: 'Sam Raimi The Evil Dead (1981) look: rushing low shaky-cam through fog-bound woods, cramped cabin, dutch angles, crash zooms and frantic low-budget energy. Carry it through Raimi shaky cam, cabin in woods, dutch angles, frenzy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Sam Raimi The Evil Dead (1981) look: rushing low shaky-cam through fog-bound woods, cramped cabin, dutch angles, crash zooms and frantic low-budget energy. Carry it through Raimi shaky cam, cabin in woods, dutch angles, frenzy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Raimi shaky cam; cabin in woods; dutch angles; frenzy
 avoidRules:
   - a chainsaw hand

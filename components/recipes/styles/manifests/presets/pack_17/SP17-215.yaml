@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Bold silhouette-driven composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fierce martial intensity.
   rendering_and_quality: Expressive two-color brushwork, kept consistent across the whole image.
-  creative_brief: 'Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette. Carry it through black and vermilion only, brush gesture, silhouettes, pale paper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette. Carry it through black and vermilion only, brush gesture, silhouettes, pale paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: black and vermilion only; brush gesture; silhouettes; pale paper
 avoidRules:
   - readable calligraphy

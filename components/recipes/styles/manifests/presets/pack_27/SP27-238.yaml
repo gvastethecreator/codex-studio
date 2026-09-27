@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in thick expressive oil-painted brushwork on a rainy isometric harbor city. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muddy oil greys, rust and cold harbor teal.
-  lighting_and_shadow: "Cold rainy harbor light and warm yellow windows in thick paint."
-  texture_and_material: "Thick expressive oil brushstrokes on every surface, seen from a high diagonal angle."
+  lighting_and_shadow: 'Cold rainy harbor light and warm yellow windows in thick paint.'
+  texture_and_material: 'Thick expressive oil brushstrokes on every surface, seen from a high diagonal angle.'
   camera_and_composition: Isometric view over painted streets, framed the way Disco Elysium 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic satirical introspection.
-  rendering_and_quality: "A 2019 PC frame at 1920 by 1080: painted harbor streets with a small figure and a dialogue panel shape at right."
-  creative_brief: 'ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire. Carry it through Disco Elysium oil paint, isometric harbor, portraits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2019 PC frame at 1920 by 1080: painted harbor streets with a small figure and a dialogue panel shape at right.'
+  creative_brief: "ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire. Carry it through Disco Elysium oil paint, isometric harbor, portraits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Disco Elysium oil paint; isometric harbor; portraits
 avoidRules:
   - a disheveled detective in a green jacket and tie

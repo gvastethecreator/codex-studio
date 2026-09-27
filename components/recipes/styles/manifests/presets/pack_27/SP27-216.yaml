@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Real in-car and bumper-mounted chase shots, framed the way Ronin 1998 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cool professional tension.
   rendering_and_quality: Authentic late-nineties chase frame, in the recognizable hand of Ronin 1998.
-  creative_brief: 'John Frankenheimer Ronin (1998) look: desaturated grey-blue France, real high-speed car chases through Paris tunnels and Nice streets, professional mercenaries and muted cool. Carry it through Ronin car chases, grey-blue France, tunnels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Frankenheimer Ronin (1998) look: desaturated grey-blue France, real high-speed car chases through Paris tunnels and Nice streets, professional mercenaries and muted cool. Carry it through Ronin car chases, grey-blue France, tunnels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Ronin car chases; grey-blue France; tunnels
 avoidRules:
   - existing franchise characters

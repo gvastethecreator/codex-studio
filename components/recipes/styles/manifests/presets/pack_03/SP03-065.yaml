@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Friendly and polished, instantly recognizable at a glance.
   rendering_and_quality: UI-grade icon render with no text or brand marks.
   key_features: squircle tile; simplified glossy subject; soft top light; vibrant gradient; small drop shadow
-  creative_brief: '3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size. Carry it through squircle tile, simplified glossy subject, soft top light, vibrant gradient, small drop shadow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size. Carry it through squircle tile, simplified glossy subject, soft top light, vibrant gradient, small drop shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - brand logo
   - franchise likeness

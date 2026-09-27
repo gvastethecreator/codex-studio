@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dark-room product view, framed the way Statue Premium Base composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with glowing dramatic reveal.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Premium light-up statue look: statues with built-in LED lighting in eyes, weapons or environment, translucent parts glowing and dark-room display photography. Carry it through Light-up statue, LED glow, dark-room display. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Premium light-up statue look: statues with built-in LED lighting in eyes, weapons or environment, translucent parts glowing and dark-room display photography. Carry it through Light-up statue, LED glow, dark-room display. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Light-up statue; LED glow; dark-room display
 avoidRules:
   - existing franchise characters

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Extreme wide-angle low angles and long crane moves.
   atmosphere_and_mood: Keep the requested mood with baroque corrupted menace.
   rendering_and_quality: Authentic late-fifties Welles noir frame, in the recognizable hand of Touch of Evil 1958.
-  creative_brief: 'Orson Welles Touch of Evil (1958) look: seedy Mexican border town at night, extreme wide-angle low angles, long crane takes, neon, oil derricks and baroque corruption. Carry it through Touch of Evil border town, wide-angle, long takes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Orson Welles Touch of Evil (1958) look: seedy Mexican border town at night, extreme wide-angle low angles, long crane takes, neon, oil derricks and baroque corruption. Carry it through Touch of Evil border town, wide-angle, long takes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Touch of Evil border town; wide-angle; long takes
 avoidRules:
   - existing franchise characters

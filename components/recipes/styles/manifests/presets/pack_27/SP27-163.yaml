@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide-angle close-ups and rhythmic cross-cutting, framed the way Delicatessen 1991 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with absurd desperate comedy.
   rendering_and_quality: Authentic nineties Jeunet Caro frame, in the recognizable hand of Delicatessen 1991.
-  creative_brief: 'Jeunet and Caro Delicatessen (1991) look: post-apocalyptic French apartment block in amber and sepia, wide-angle grotesque faces, creaking pipes, rhythmic comedy and absurd domestic desperation. Carry it through Delicatessen amber, wide-angle faces, creaking pipes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Jeunet and Caro Delicatessen (1991) look: post-apocalyptic French apartment block in amber and sepia, wide-angle grotesque faces, creaking pipes, rhythmic comedy and absurd domestic desperation. Carry it through Delicatessen amber, wide-angle faces, creaking pipes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Delicatessen amber; wide-angle faces; creaking pipes
 avoidRules:
   - existing franchise characters

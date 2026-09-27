@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low view upward into stacked brackets and eaves, beast heads emerging from the pattern.
   atmosphere_and_mood: Keep the requested mood with protective ornate vigilance.
   rendering_and_quality: Crisp symmetrical decorative painting with repeated banded motifs.
-  creative_brief: 'Dancheong eave guardians: Korean palace and temple painting on carved wooden eaves and brackets, with lotus, cloud and flame bands framing haetae, dragons and phoenix heads in mineral green and red. Carry it through haetae guardian, bracket work, lotus and cloud bands, mineral green and red. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dancheong eave guardians: Korean palace and temple painting on carved wooden eaves and brackets, with lotus, cloud and flame bands framing haetae, dragons and phoenix heads in mineral green and red. Carry it through haetae guardian, bracket work, lotus and cloud bands, mineral green and red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: haetae guardian; bracket work; lotus and cloud bands; mineral green and red
 avoidRules:
   - cultural stereotypes or caricature

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Classic Hollywood coverage with low heroic angles, framed the way Back to the Future 1985 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with zippy nostalgic adventure.
   rendering_and_quality: Authentic eighties Amblin frame, in the recognizable hand of Back to the Future 1985.
-  creative_brief: 'Robert Zemeckis Back to the Future (1985) look: sunny eighties and fifties American small-town squares, a courthouse clock tower, garage workshops full of gadgets and electric blue time sparks. Carry it through Back to the Future town square, garage gadgets, time sparks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Robert Zemeckis Back to the Future (1985) look: sunny eighties and fifties American small-town squares, a courthouse clock tower, garage workshops full of gadgets and electric blue time sparks. Carry it through Back to the Future town square, garage gadgets, time sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Back to the Future town square; garage gadgets; time sparks
 avoidRules:
   - a stainless steel gull-wing sports car

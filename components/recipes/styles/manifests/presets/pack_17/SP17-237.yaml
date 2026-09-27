@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Quiet contemplative framing, framed the way Justin Sweet composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet melancholic contemplation.
   rendering_and_quality: Restrained painterly fantasy oil, in the recognizable hand of Justin Sweet.
-  creative_brief: 'Justin Sweet painterly fantasy: muted desaturated palettes, soft atmospheric edges, lone contemplative figures, heavy mist and classical painterly restraint. Carry it through Justin Sweet muted mist, lone figures, soft edges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Justin Sweet painterly fantasy: muted desaturated palettes, soft atmospheric edges, lone contemplative figures, heavy mist and classical painterly restraint. Carry it through Justin Sweet muted mist, lone figures, soft edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Justin Sweet muted mist; lone figures; soft edges
 avoidRules:
   - existing franchise characters

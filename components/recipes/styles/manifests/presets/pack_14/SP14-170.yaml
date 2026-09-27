@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide composition across folding panels, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lavish decorative grandeur.
   rendering_and_quality: Bold elegant decorative design, kept consistent across the whole image.
-  creative_brief: 'Rinpa gold screen: bold decorative painting on gold-leaf folding screens with stylized waves, irises, wind and thunder gods and lavish flat color. Carry it through gold leaf, folding panels, stylized waves, bold flat color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Rinpa gold screen: bold decorative painting on gold-leaf folding screens with stylized waves, irises, wind and thunder gods and lavish flat color. Carry it through gold leaf, folding panels, stylized waves, bold flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: gold leaf; folding panels; stylized waves; bold flat color
 avoidRules:
   - readable Japanese text or seals

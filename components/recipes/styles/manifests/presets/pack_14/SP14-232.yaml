@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Masker with headdress in a festival, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with joyful honoring satire.
   rendering_and_quality: Lively painted carving, kept consistent across the whole image.
-  creative_brief: 'Gelede masquerade carving: painted wooden headdress masks honoring the mothers, with serene faces topped by lively carved scenes of daily life and satire. Carry it through serene face mask, carved scene on top, bright paint, festival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Gelede masquerade carving: painted wooden headdress masks honoring the mothers, with serene faces topped by lively carved scenes of daily life and satire. Carry it through serene face mask, carved scene on top, bright paint, festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: serene face mask; carved scene on top; bright paint; festival
 avoidRules:
   - generic tribal pattern

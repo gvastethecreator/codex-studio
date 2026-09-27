@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty medieval soldiers in mail and plate. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mud brown, steel and banner colors, true to the Mordhau 2020 palette.
-  lighting_and_shadow: "Grey overcast battle light, lit the way Mordhau 2020 lights its levels."
-  texture_and_material: "Realistic mud, mail and steel, slightly soft in the distance."
+  lighting_and_shadow: 'Grey overcast battle light, lit the way Mordhau 2020 lights its levels.'
+  texture_and_material: 'Realistic mud, mail and steel, slightly soft in the distance.'
   camera_and_composition: First-person shield wall view, framed the way Mordhau 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with chaotic brutal melee.
-  rendering_and_quality: "A 2020 first-person frame at 1920 by 1080: a sword raised at the bottom right, shield wall ahead, bar shapes bottom left."
-  creative_brief: 'Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights. Carry it through Mordhau melee, shield walls, mud. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2020 first-person frame at 1920 by 1080: a sword raised at the bottom right, shield wall ahead, bar shapes bottom left.'
+  creative_brief: "Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights. Carry it through Mordhau melee, shield walls, mud. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Mordhau melee; shield walls; mud
 avoidRules:
   - existing game characters, logos or levels

@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low heroic angle, framed the way Adrian Smith composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with brutal heroic grimness.
   rendering_and_quality: Hyper-detailed grim warrior illustration, in the recognizable hand of Adrian Smith.
-  creative_brief: 'Adrian Smith grim illustration: hyper-detailed monochrome and muted color warriors with massive spiked armor, dense texture, dynamic brutal poses and dark heroic scale. Carry it through Adrian Smith spiked armor, hyper-detail, brutal poses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Adrian Smith grim illustration: hyper-detailed monochrome and muted color warriors with massive spiked armor, dense texture, dynamic brutal poses and dark heroic scale. Carry it through Adrian Smith spiked armor, hyper-detail, brutal poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Adrian Smith spiked armor; hyper-detail; brutal poses
 avoidRules:
   - Warhammer insignia

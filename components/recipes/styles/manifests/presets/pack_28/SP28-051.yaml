@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Frontal cute presentation, framed the way SD Super Deformed composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cute comic energy.
   rendering_and_quality: Cute chibi mecha presentation render, in the recognizable hand of SD Super Deformed.
-  creative_brief: 'Super-deformed mecha language: chibi robots with huge heads, stubby bodies, exaggerated cute proportions, simplified details and toy-like color. Carry it through SD mecha, huge head, stubby body, cute. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Super-deformed mecha language: chibi robots with huge heads, stubby bodies, exaggerated cute proportions, simplified details and toy-like color. Carry it through SD mecha, huge head, stubby body, cute. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: SD mecha; huge head; stubby body; cute
 avoidRules:
   - existing franchise characters

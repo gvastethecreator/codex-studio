@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as soldiers in face paint and jungle gear. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Lush jungle green and sun gold, true to the Crysis 2007 palette.
-  lighting_and_shadow: "Bright god rays through dense tropical foliage, lit the way Crysis 2007 lights its levels."
-  texture_and_material: "Dense photoreal foliage, sharp nearby and softer beyond, very busy with leaves."
+  lighting_and_shadow: 'Bright god rays through dense tropical foliage, lit the way Crysis 2007 lights its levels.'
+  texture_and_material: 'Dense photoreal foliage, sharp nearby and softer beyond, very busy with leaves.'
   camera_and_composition: First-person jungle view, framed the way Crysis 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense predatory stealth.
-  rendering_and_quality: "A 2007 PC frame at 1920 by 1200 in first person: rifle at bottom right, jungle, a small compass and number shapes."
-  creative_brief: 'Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays. Carry it through Crysis jungle, foliage, stealth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2007 PC frame at 1920 by 1200 in first person: rifle at bottom right, jungle, a small compass and number shapes.'
+  creative_brief: "Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays. Carry it through Crysis jungle, foliage, stealth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Crysis jungle; foliage; stealth
 avoidRules:
   - a ribbed nanosuit

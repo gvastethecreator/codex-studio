@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Vertical montage pyramid of figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with blockbuster fantasy promise.
   rendering_and_quality: Polished poster painting with no title or credits.
-  creative_brief: 'Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light. Carry it through stacked montage, looming villain, castle below, magical glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light. Carry it through stacked montage, looming villain, castle below, magical glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stacked montage; looming villain; castle below; magical glow
 avoidRules:
   - title or credits

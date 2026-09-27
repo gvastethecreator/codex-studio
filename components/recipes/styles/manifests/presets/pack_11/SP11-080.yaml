@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Dandelion seed macro: fine pappus hairs and seeds.'
-  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown with or formed from dandelion seeds: pappus, hairs and seeds.'
+  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: shown with or formed from dandelion seeds: pappus, hairs and seeds."
   color_and_tone: Soft white and gold, as the instrument or lens would record it.
   lighting_and_shadow: Backlight, matching the real imaging setup at this scale.
   texture_and_material: Fine hairs and seeds, resolved in fine detail at extreme magnification.
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Delicate, hopeful, light and fleeting, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: pappus; fine hairs; seeds
-  creative_brief: 'Dandelion seed macro: fine pappus hairs and seeds. Carry it through pappus, fine hairs, seeds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Dandelion seed macro: fine pappus hairs and seeds. Carry it through pappus, fine hairs, seeds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - readable text
   - logo

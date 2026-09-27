@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Three-quarter view of the whole diorama, framed the way Premium Environment Statue composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet atmospheric storytelling.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Environment statue look: statues where the architectural base dominates, detailed miniature rooftops, staircases and ruins with a small figure integrated into the scene. Carry it through Environment statue, architectural base, small figure. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Environment statue look: statues where the architectural base dominates, detailed miniature rooftops, staircases and ruins with a small figure integrated into the scene. Carry it through Environment statue, architectural base, small figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Environment statue; architectural base; small figure
 avoidRules:
   - existing franchise characters

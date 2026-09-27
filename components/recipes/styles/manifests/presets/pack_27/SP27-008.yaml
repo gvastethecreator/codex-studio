@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide mall concourse shots and satirical tableaux, framed the way Dawn of the Dead 1978 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with satirical consumer horror.
   rendering_and_quality: Bright late-seventies zombie satire frame, in the recognizable hand of Dawn of the Dead 1978.
-  creative_brief: 'George A. Romero Dawn of the Dead (1978) look: bright shopping mall fluorescents, blue-grey zombie makeup, consumer satire, muzak calm and late-seventies color film. Carry it through Romero mall, blue-grey zombies, consumer satire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "George A. Romero Dawn of the Dead (1978) look: bright shopping mall fluorescents, blue-grey zombie makeup, consumer satire, muzak calm and late-seventies color film. Carry it through Romero mall, blue-grey zombies, consumer satire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Romero mall; blue-grey zombies; consumer satire
 avoidRules:
   - existing franchise characters

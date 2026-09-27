@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low angles showing ceilings and tight two-shots, framed the way The Maltese Falcon 1941 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cynical smoky intrigue.
   rendering_and_quality: Authentic early-forties Warner noir frame, in the recognizable hand of The Maltese Falcon 1941.
-  creative_brief: 'John Huston The Maltese Falcon (1941) look: San Francisco private-eye offices, venetian blind shadows, low ceilings, fedoras, cigarette smoke and tight dialogue-driven noir framing. Carry it through Maltese Falcon office, blind shadows, fedoras, low ceilings. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Huston The Maltese Falcon (1941) look: San Francisco private-eye offices, venetian blind shadows, low ceilings, fedoras, cigarette smoke and tight dialogue-driven noir framing. Carry it through Maltese Falcon office, blind shadows, fedoras, low ceilings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Maltese Falcon office; blind shadows; fedoras; low ceilings
 avoidRules:
   - a black bird statuette

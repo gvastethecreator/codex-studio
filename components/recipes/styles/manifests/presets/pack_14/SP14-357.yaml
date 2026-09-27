@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Long horizontal repeating frieze, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ancient mythic descent.
   rendering_and_quality: Crisp miniature relief, kept consistent across the whole image.
-  creative_brief: 'Inanna descent cylinder seal: Mesopotamian cylinder seal impressions rolled into clay, repeating frieze scenes of the goddess passing through seven gates of the underworld. Carry it through cylinder seal, rolled clay, seven gates, frieze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Inanna descent cylinder seal: Mesopotamian cylinder seal impressions rolled into clay, repeating frieze scenes of the goddess passing through seven gates of the underworld. Carry it through cylinder seal, rolled clay, seven gates, frieze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: cylinder seal; rolled clay; seven gates; frieze
 avoidRules:
   - cultural stereotypes or caricature

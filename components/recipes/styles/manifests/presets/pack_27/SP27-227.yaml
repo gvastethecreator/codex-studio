@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'Supergiant Games Transistor (2014) look: painterly isometric cyberpunk city in art nouveau curves, glowing turquoise and red, Jen Zee illustration and elegant digital melancholy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in painterly isometric art nouveau city streets with digital glow. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Turquoise, crimson and warm gold, true to the Transistor 2014 palette.
-  lighting_and_shadow: "Glowing turquoise digital accents and soft painted light on elegant streets."
-  texture_and_material: "Painterly illustration with art nouveau curves and gold trim, seen from a high diagonal angle."
+  lighting_and_shadow: 'Glowing turquoise digital accents and soft painted light on elegant streets.'
+  texture_and_material: 'Painterly illustration with art nouveau curves and gold trim, seen from a high diagonal angle.'
   camera_and_composition: Isometric city view, framed the way Transistor 2014 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with elegant digital melancholy.
-  rendering_and_quality: "A 2014 frame at 1280 by 720: painted city plaza, a small figure with a glowing sword, turquoise highlights."
-  creative_brief: 'Supergiant Games Transistor (2014) look: painterly isometric cyberpunk city in art nouveau curves, glowing turquoise and red, Jen Zee illustration and elegant digital melancholy. Carry it through Transistor art nouveau city, turquoise glow, painterly. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2014 frame at 1280 by 720: painted city plaza, a small figure with a glowing sword, turquoise highlights.'
+  creative_brief: "Supergiant Games Transistor (2014) look: painterly isometric cyberpunk city in art nouveau curves, glowing turquoise and red, Jen Zee illustration and elegant digital melancholy. Carry it through Transistor art nouveau city, turquoise glow, painterly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Transistor art nouveau city; turquoise glow; painterly
 avoidRules:
   - a red-haired singer carrying a glowing talking sword

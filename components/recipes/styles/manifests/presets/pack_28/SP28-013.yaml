@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close whimsical diorama view, framed the way Studio Ghibli Style Figure composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with cozy whimsical warmth.
   rendering_and_quality: Professional collectible product photography with crisp focus on paint and sculpt detail.
-  creative_brief: 'Cozy anime-film diorama figure look: soft pastel resin figurines, tiny homes and forest bases, gentle hand-painted texture and whimsical scale. Carry it through Cozy resin diorama, pastel, whimsical scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Cozy anime-film diorama figure look: soft pastel resin figurines, tiny homes and forest bases, gentle hand-painted texture and whimsical scale. Carry it through Cozy resin diorama, pastel, whimsical scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Cozy resin diorama; pastel; whimsical scale
 avoidRules:
   - licensed Ghibli characters

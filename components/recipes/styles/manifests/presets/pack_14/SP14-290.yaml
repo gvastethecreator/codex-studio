@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Frontal facade with stairway, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with monumental divine presence.
   rendering_and_quality: Bold monumental modeling, kept consistent across the whole image.
-  creative_brief: 'Stucco mask facade: monumental modeled and painted stucco masks of gods flanking temple stairways, huge faces with ear flares and scrolls. Carry it through stucco mask, temple facade, ear flares, painted. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stucco mask facade: monumental modeled and painted stucco masks of gods flanking temple stairways, huge faces with ear flares and scrolls. Carry it through stucco mask, temple facade, ear flares, painted. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: stucco mask; temple facade; ear flares; painted
 avoidRules:
   - readable glyphs

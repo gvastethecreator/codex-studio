@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Low noir angles and deep-focus streets, framed the way Invasion of the Body Snatchers 1956 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with creeping suburban paranoia.
   rendering_and_quality: Authentic fifties paranoid science fiction frame, in the recognizable hand of Invasion of the Body Snatchers 1956.
-  creative_brief: 'Don Siegel Invasion of the Body Snatchers (1956) look: black-and-white small-town paranoia, noir shadows in cozy houses, greenhouses, neighbors who are not quite right and running figures on highways. Carry it through Body Snatchers paranoia, small town, noir shadow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Don Siegel Invasion of the Body Snatchers (1956) look: black-and-white small-town paranoia, noir shadows in cozy houses, greenhouses, neighbors who are not quite right and running figures on highways. Carry it through Body Snatchers paranoia, small town, noir shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Body Snatchers paranoia; small town; noir shadow
 avoidRules:
   - giant seed pods

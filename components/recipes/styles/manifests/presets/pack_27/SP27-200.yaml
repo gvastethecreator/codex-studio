@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow zooms through foggy crowded rooms, framed the way McCabe & Mrs Miller 1971 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with melancholy fogged frontier.
   rendering_and_quality: Authentic seventies revisionist western frame, in the recognizable hand of McCabe & Mrs Miller 1971.
-  creative_brief: 'Robert Altman McCabe & Mrs. Miller (1971) look: Vilmos Zsigmond flashed-film fog, muddy Pacific Northwest mining town, snow and rain, candlelit saloons and overlapping murmured dialogue. Carry it through McCabe fog, muddy town, candlelit saloon, snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Robert Altman McCabe & Mrs. Miller (1971) look: Vilmos Zsigmond flashed-film fog, muddy Pacific Northwest mining town, snow and rain, candlelit saloons and overlapping murmured dialogue. Carry it through McCabe fog, muddy town, candlelit saloon, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: McCabe fog; muddy town; candlelit saloon; snow
 avoidRules:
   - existing franchise characters

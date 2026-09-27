@@ -54,8 +54,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Spread across a stone stair, a warrior's cloak falls open to reveal a lining of rust and indigo teardrop botehs curling like flames. No readable text or logo.",
-        "At dawn a hot-air balloon rises over a valley, its envelope printed with giant curved teardrops full of intricate filling. No readable text or logo.",
-        "In a bookshop corner an old reading chair is upholstered in gold and burgundy teardrop motifs, one worn bald where a reader always sits. No readable text or logo.",
+        'At dawn a hot-air balloon rises over a valley, its envelope printed with giant curved teardrops full of intricate filling. No readable text or logo.',
+        'In a bookshop corner an old reading chair is upholstered in gold and burgundy teardrop motifs, one worn bald where a reader always sits. No readable text or logo.',
       ],
     },
     'SP10-047': {
@@ -69,9 +69,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An opera house corridor is hung in crimson tone-on-tone florals that only appear where the sconce light grazes the weave. No readable text or logo.",
-        "In a candlelit chapel a coffin is draped in black-on-black woven flowers that shimmer only when the flame moves. No readable text or logo.",
-        "On a spiral stair a floor-length ivory gown shifts its tone-on-tone floral sheen with every step. No readable text or logo.",
+        'An opera house corridor is hung in crimson tone-on-tone florals that only appear where the sconce light grazes the weave. No readable text or logo.',
+        'In a candlelit chapel a coffin is draped in black-on-black woven flowers that shimmer only when the flame moves. No readable text or logo.',
+        'On a spiral stair a floor-length ivory gown shifts its tone-on-tone floral sheen with every step. No readable text or logo.',
       ],
     },
     'SP10-049': {
@@ -86,9 +86,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A crow perched on a garden fence wears a tiny black-and-white waistcoat of jagged four-pointed checks, looking very pleased with itself. No readable text or logo.",
-        "Inside a vintage roadster the seats are covered in black-and-white broken checks running seamlessly across the stitching. No readable text or logo.",
-        "A retired detective in a brown broken-check coat and cap feeds pigeons on a bench, the jagged pattern sharp in soft light. No readable text or logo.",
+        'A crow perched on a garden fence wears a tiny black-and-white waistcoat of jagged four-pointed checks, looking very pleased with itself. No readable text or logo.',
+        'Inside a vintage roadster the seats are covered in black-and-white broken checks running seamlessly across the stitching. No readable text or logo.',
+        'A retired detective in a brown broken-check coat and cap feeds pigeons on a bench, the jagged pattern sharp in soft light. No readable text or logo.',
       ],
     },
     'SP10-050': {
@@ -104,8 +104,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a misty moor a highland warrior's kilt and plaid in green and navy stripes whip in the wind. No readable text or logo.",
-        "Draped over a horse on a dewy moor, a saddle blanket of intersecting red and green stripes forms a crisp woven sett. No readable text or logo.",
-        "Resting on a stone wall in the hills, a set of bagpipes is wrapped in blue and green plaid, its drones pointing at the clouds. No readable text or logo.",
+        'Draped over a horse on a dewy moor, a saddle blanket of intersecting red and green stripes forms a crisp woven sett. No readable text or logo.',
+        'Resting on a stone wall in the hills, a set of bagpipes is wrapped in blue and green plaid, its drones pointing at the clouds. No readable text or logo.',
       ],
     },
     'SP10-051': {
@@ -119,9 +119,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Parked on a seaside promenade, a vintage scooter is painted in evenly spaced red-and-white dots that curve over its bodywork. No readable text or logo.",
-        "In a public pool a giant inflatable whale covered in yellow and white dots bobs among swimmers in sunhats. No readable text or logo.",
-        "On a hat stand a tall pointed witch hat in black with white dots follows the cone perfectly down to its brim. No readable text or logo.",
+        'Parked on a seaside promenade, a vintage scooter is painted in evenly spaced red-and-white dots that curve over its bodywork. No readable text or logo.',
+        'In a public pool a giant inflatable whale covered in yellow and white dots bobs among swimmers in sunhats. No readable text or logo.',
+        'On a hat stand a tall pointed witch hat in black with white dots follows the cone perfectly down to its brim. No readable text or logo.',
       ],
     },
     'SP10-052': {
@@ -135,9 +135,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'military insignia'],
       briefs: [
-        "Parked in a forest clearing, a vintage hot rod painted in woodland blotches disappears into the ferns around it. No readable text or logo.",
-        "Hanging on a wooden peg in a tent, a field jacket in desert blotches of tan and brown shows sand in every fold. No readable text or logo.",
-        "Standing among concrete walls, a garden shed painted in angular grey blotches nearly vanishes from view. No readable text or logo.",
+        'Parked in a forest clearing, a vintage hot rod painted in woodland blotches disappears into the ferns around it. No readable text or logo.',
+        'Hanging on a wooden peg in a tent, a field jacket in desert blotches of tan and brown shows sand in every fold. No readable text or logo.',
+        'Standing among concrete walls, a garden shed painted in angular grey blotches nearly vanishes from view. No readable text or logo.',
       ],
     },
     'SP10-053': {
@@ -153,7 +153,7 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Performing in a sunny plaza, a street magician's robe swirls in rainbow spirals whose edges bleed softly into each other. No readable text or logo.",
-        "Strung between trees, a festival banner flaps in purple and orange spiral bursts bleeding at the edges. No readable text or logo.",
+        'Strung between trees, a festival banner flaps in purple and orange spiral bursts bleeding at the edges. No readable text or logo.',
         "Out at sea, a small dinghy's canvas sail bursts into a teal and pink spiral bleeding into white. No readable text or logo.",
       ],
     },
@@ -169,9 +169,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Parked on a cobbled street, a vintage bicycle is entirely covered in a hand-knitted cable sleeve, ribbing wrapped around every spoke. No readable text or logo.",
-        "On a breakfast table a knitted egg cozy shaped like a sleeping hen keeps a boiled egg warm under ribbed wings. No readable text or logo.",
-        "In a small town a bus stop is wrapped in colorful yarn, cables and ribbing climbing the poles and bench. No readable text or logo.",
+        'Parked on a cobbled street, a vintage bicycle is entirely covered in a hand-knitted cable sleeve, ribbing wrapped around every spoke. No readable text or logo.',
+        'On a breakfast table a knitted egg cozy shaped like a sleeping hen keeps a boiled egg warm under ribbed wings. No readable text or logo.',
+        'In a small town a bus stop is wrapped in colorful yarn, cables and ribbing climbing the poles and bench. No readable text or logo.',
       ],
     },
     'SP10-058': {
@@ -186,9 +186,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a patchwork bed sits a stuffed bear made of faded indigo twill, whiskered pale where it has been hugged. No readable text or logo.",
+        'On a patchwork bed sits a stuffed bear made of faded indigo twill, whiskered pale where it has been hugged. No readable text or logo.',
         "Hanging on a workshop hook, a mechanic's overalls show faded indigo twill, oil marks and worn pale knees. No readable text or logo.",
-        "In a loft a sofa is upholstered in patchwork indigo of different shades, frayed seams at the arms. No readable text or logo.",
+        'In a loft a sofa is upholstered in patchwork indigo of different shades, frayed seams at the arms. No readable text or logo.',
       ],
     },
     'SP10-065': {
@@ -203,9 +203,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On a beach chair a sun hat of over-under rattan strips casts a checked shadow on the sand. No readable text or logo.",
-        "Resting on a riverbank, a large woven fish trap drips water through its tight over-under strips. No readable text or logo.",
-        "On a sunny terrace a garden daybed of interlaced rattan casts a checkered shadow across the tiles. No readable text or logo.",
+        'On a beach chair a sun hat of over-under rattan strips casts a checked shadow on the sand. No readable text or logo.',
+        'Resting on a riverbank, a large woven fish trap drips water through its tight over-under strips. No readable text or logo.',
+        'On a sunny terrace a garden daybed of interlaced rattan casts a checkered shadow across the tiles. No readable text or logo.',
       ],
     },
     'SP10-066': {
@@ -219,9 +219,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "At sunset the whole facade of a modern tower clad in gold hexagon panels glows cell by cell like a hive coming to life. No readable text or logo.",
-        "Walking through a greenhouse, a model wears a yellow gown tessellated in hexagon cells like a walking hive. No readable text or logo.",
-        "A bathroom floor tiled in black and white hexagons catches morning light around a claw-foot tub. No readable text or logo.",
+        'At sunset the whole facade of a modern tower clad in gold hexagon panels glows cell by cell like a hive coming to life. No readable text or logo.',
+        'Walking through a greenhouse, a model wears a yellow gown tessellated in hexagon cells like a walking hive. No readable text or logo.',
+        'A bathroom floor tiled in black and white hexagons catches morning light around a claw-foot tub. No readable text or logo.',
       ],
     },
     'SP10-070': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a sunny courtyard a fountain is covered in blue-and-white painted tiles, ornate repeats curving around the basin. No readable text or logo.",
-        "At a tram stop the bench and wall are covered in blue-and-white floral tiles, a waiting passenger reading a newspaper. No readable text or logo.",
-        "In a village square a stone well is covered in glazed blue-and-white tiles, a bucket resting on its rim. No readable text or logo.",
+        'In a sunny courtyard a fountain is covered in blue-and-white painted tiles, ornate repeats curving around the basin. No readable text or logo.',
+        'At a tram stop the bench and wall are covered in blue-and-white floral tiles, a waiting passenger reading a newspaper. No readable text or logo.',
+        'In a village square a stone well is covered in glazed blue-and-white tiles, a bucket resting on its rim. No readable text or logo.',
       ],
     },
     'SP10-075': {
@@ -253,9 +253,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "On even-weave linen a lighthouse and sailing ships are stitched in pixel-like navy and red crosses, the hoop still clamped on. No readable text or logo.",
+        'On even-weave linen a lighthouse and sailing ships are stitched in pixel-like navy and red crosses, the hoop still clamped on. No readable text or logo.',
         "In a wooden hoop a grandmother's portrait is stitched in tiny crosses that form soft pixel shading on her cheeks. No readable text or logo.",
-        "On a rocking chair an owl pillow is stitched in brown and gold crosses on cream even-weave. No readable text or logo.",
+        'On a rocking chair an owl pillow is stitched in brown and gold crosses on cream even-weave. No readable text or logo.',
       ],
     },
   },
@@ -274,9 +274,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A four-poster bed is hung in blue-on-cream engraved pastoral vignettes of shepherds, ruins and sailing boats. No readable text or logo.",
-        "In an orangery a woman wears a red gown whose skirt repeats engraved pastoral scenes in a single color. No readable text or logo.",
-        "By a window a wing chair is covered in black engraved vignettes of hunters and hounds on cream cloth. No readable text or logo.",
+        'A four-poster bed is hung in blue-on-cream engraved pastoral vignettes of shepherds, ruins and sailing boats. No readable text or logo.',
+        'In an orangery a woman wears a red gown whose skirt repeats engraved pastoral scenes in a single color. No readable text or logo.',
+        'By a window a wing chair is covered in black engraved vignettes of hunters and hounds on cream cloth. No readable text or logo.',
       ],
     },
     {
@@ -295,8 +295,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "A caravan leader's long coat shows feathered indigo diamonds, the resist-dyed edges shimmering as if out of focus. No readable text or logo.",
-        "On a resting camel lies a saddle blanket of red and gold motifs whose woven edges blur like heat haze. No readable text or logo.",
-        "In a bazaar a market tent of feathered geometric cloth glows as sunlight shines through it. No readable text or logo.",
+        'On a resting camel lies a saddle blanket of red and gold motifs whose woven edges blur like heat haze. No readable text or logo.',
+        'In a bazaar a market tent of feathered geometric cloth glows as sunlight shines through it. No readable text or logo.',
       ],
     },
     {
@@ -314,9 +314,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Hanging on a line by the sea, a sarong of sea serpent and wave motifs shows fine crackle lines through layered dye. No readable text or logo.",
-        "In a village hall a large banner of rice fields and birds shows crackled wax lines in ochre, green and indigo. No readable text or logo.",
-        "At a market stall a woman wears a headwrap of crackled wax-resist lines and layered dye colors. No readable text or logo.",
+        'Hanging on a line by the sea, a sarong of sea serpent and wave motifs shows fine crackle lines through layered dye. No readable text or logo.',
+        'In a village hall a large banner of rice fields and birds shows crackled wax lines in ochre, green and indigo. No readable text or logo.',
+        'At a market stall a woman wears a headwrap of crackled wax-resist lines and layered dye colors. No readable text or logo.',
       ],
     },
     {
@@ -335,8 +335,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Standing in a bamboo grove, a swordsman's robe ripples in white folded-resist patterns on deep indigo. No readable text or logo.",
-        "In a temple doorway indigo curtains move, stitched resist patterns glowing as light passes through them. No readable text or logo.",
-        "Flying over a beach, a large kite of indigo cloth shows folded resist rings and bound white spots. No readable text or logo.",
+        'In a temple doorway indigo curtains move, stitched resist patterns glowing as light passes through them. No readable text or logo.',
+        'Flying over a beach, a large kite of indigo cloth shows folded resist rings and bound white spots. No readable text or logo.',
       ],
     },
     {
@@ -354,9 +354,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "By a fireplace a golden retriever wears a sweater of overlapping green and cream diamonds, looking deeply dignified. No readable text or logo.",
-        "On a misty golf course a bag patterned in overlapping diamonds and thin diagonal lines waits by the flag. No readable text or logo.",
-        "In an empty classroom after hours a skeleton sits upright at a desk wearing bright diamond-patterned socks with thin crossing lines. No readable text or logo.",
+        'By a fireplace a golden retriever wears a sweater of overlapping green and cream diamonds, looking deeply dignified. No readable text or logo.',
+        'On a misty golf course a bag patterned in overlapping diamonds and thin diagonal lines waits by the flag. No readable text or logo.',
+        'In an empty classroom after hours a skeleton sits upright at a desk wearing bright diamond-patterned socks with thin crossing lines. No readable text or logo.',
       ],
     },
     {
@@ -375,8 +375,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "On a mountain plateau a nomad's tent and saddlebags show flat-woven diamonds, hooks and stepped motifs. No readable text or logo.",
-        "In a stone house a wooden chest is covered in flat weave of stepped diamonds and hooks in rust and ivory. No readable text or logo.",
-        "On a snowy pass a traveler wears a cloak of flat-woven hooks and diamonds in red and black. No readable text or logo.",
+        'In a stone house a wooden chest is covered in flat weave of stepped diamonds and hooks in rust and ivory. No readable text or logo.',
+        'On a snowy pass a traveler wears a cloak of flat-woven hooks and diamonds in red and black. No readable text or logo.',
       ],
     },
     {
@@ -394,9 +394,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A round shield is carved with continuous interlaced bands weaving over and under around a central boss. No readable text or logo.",
-        "By a hall fire a green cloak lies across a bench, its hem embroidered in gold interlaced bands that weave over and under without end. No readable text or logo.",
-        "On a hill a weathered stone cross is covered in interlaced knotwork, lichen filling the grooves. No readable text or logo.",
+        'A round shield is carved with continuous interlaced bands weaving over and under around a central boss. No readable text or logo.',
+        'By a hall fire a green cloak lies across a bench, its hem embroidered in gold interlaced bands that weave over and under without end. No readable text or logo.',
+        'On a hill a weathered stone cross is covered in interlaced knotwork, lichen filling the grooves. No readable text or logo.',
       ],
     },
   ] satisfies Create[],

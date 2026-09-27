@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Studio shelf close view, framed the way Museum Maquette composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with quiet studio craft.
   rendering_and_quality: Fine art studio photograph of a plaster maquette.
-  creative_brief: 'Classical sculptor maquette look: small white plaster study figures with visible tool marks, armature wire, pencil guide marks and a studio shelf setting. Carry it through Plaster maquette, tool marks, armature, studio shelf. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Classical sculptor maquette look: small white plaster study figures with visible tool marks, armature wire, pencil guide marks and a studio shelf setting. Carry it through Plaster maquette, tool marks, armature, studio shelf. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Plaster maquette; tool marks; armature; studio shelf
 avoidRules:
   - existing franchise characters

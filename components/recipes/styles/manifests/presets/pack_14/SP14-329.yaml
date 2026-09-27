@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Single figure against dark ground, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ancient wind-borne menace.
   rendering_and_quality: Crisp ancient casting, kept consistent across the whole image.
-  creative_brief: 'Mesopotamian demon bronze: ancient cast bronze figures and amulets of winged, taloned wind demons with snarling faces and four wings, dark green patina. Carry it through winged demon, bronze, talons, patina. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Mesopotamian demon bronze: ancient cast bronze figures and amulets of winged, taloned wind demons with snarling faces and four wings, dark green patina. Carry it through winged demon, bronze, talons, patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: winged demon; bronze; talons; patina
 avoidRules:
   - cultural stereotypes or caricature

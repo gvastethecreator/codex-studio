@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Dynamic comic panel framing, framed the way Bill Willingham composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with bold dynamic adventure.
   rendering_and_quality: Bold comic-style tabletop ink, in the recognizable hand of Bill Willingham.
-  creative_brief: 'Bill Willingham role-playing ink: bold comic-book line work, dynamic poses, heavy blacks, confident anatomy and eighties module cover energy. Carry it through Willingham bold comic ink, dynamic poses, heavy blacks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Bill Willingham role-playing ink: bold comic-book line work, dynamic poses, heavy blacks, confident anatomy and eighties module cover energy. Carry it through Willingham bold comic ink, dynamic poses, heavy blacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Willingham bold comic ink; dynamic poses; heavy blacks
 avoidRules:
   - existing franchise characters

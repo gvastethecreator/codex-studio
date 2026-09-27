@@ -123,7 +123,7 @@ const spec: Spec = {
         key_features:
           'surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines',
       }),
-      avoid: [...AVOID,  'loose sketch'],
+      avoid: [...AVOID, 'loose sketch'],
       dropAvoid: ['fantasy proportion', 'stylized'],
       briefs: [
         'Anatomy reference plate of a griffin shown in three layers side by side, feathered surface, madder-red wing and haunch muscles and warm white skeleton, sepia engraving line on cream paper with blank leader lines. No readable text or logo.',

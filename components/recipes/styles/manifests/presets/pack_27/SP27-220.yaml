@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Slow-motion leaps and dove-lit tableaux, framed the way Hard Target 1993 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with operatic swampy bravado.
   rendering_and_quality: Authentic early-nineties Woo frame, in the recognizable hand of Hard Target 1993.
-  creative_brief: 'John Woo Hard Target (1993) look: New Orleans bayous and Mardi Gras warehouses, slow-motion leaps, mullets and long coats, float warehouses and operatic American action. Carry it through Hard Target bayou, Mardi Gras floats, slow motion. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "John Woo Hard Target (1993) look: New Orleans bayous and Mardi Gras warehouses, slow-motion leaps, mullets and long coats, float warehouses and operatic American action. Carry it through Hard Target bayou, Mardi Gras floats, slow motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Hard Target bayou; Mardi Gras floats; slow motion
 avoidRules:
   - existing franchise characters

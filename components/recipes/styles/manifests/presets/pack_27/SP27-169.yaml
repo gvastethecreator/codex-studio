@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Wide ocean vistas and low deck angles, framed the way Waterworld 1995 composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with sun-bleached scrappy survival.
   rendering_and_quality: Authentic mid-nineties ocean epic frame, in the recognizable hand of Waterworld 1995.
-  creative_brief: 'Kevin Reynolds Waterworld (1995) look: sun-bleached endless ocean, floating rust atolls built of scrap, trimarans, jet-ski raiders and salvaged post-apocalyptic survival. Carry it through Waterworld atolls, scrap, endless ocean. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Kevin Reynolds Waterworld (1995) look: sun-bleached endless ocean, floating rust atolls built of scrap, trimarans, jet-ski raiders and salvaged post-apocalyptic survival. Carry it through Waterworld atolls, scrap, endless ocean. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Waterworld atolls; scrap; endless ocean
 avoidRules:
   - a gilled mariner on a trimaran

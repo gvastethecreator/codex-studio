@@ -33,9 +33,9 @@ const spec: Spec = {
         key_features: 'held frame; sweeping gowns; parquet reflections; partnership',
       },
       [
-        "A couple spins across glossy parquet, her emerald gown fanning out so wide it sweeps the rival dancers right off the floor. No readable text or logo.",
-        "A couple dances a flawless waltz in a flooded ballroom, their reflections waltzing upside down beneath them. No readable text or logo.",
-        "An elderly couple outshines every young competitor at a dance contest, their shoes held together with tape. No readable text or logo.",
+        'A couple spins across glossy parquet, her emerald gown fanning out so wide it sweeps the rival dancers right off the floor. No readable text or logo.',
+        'A couple dances a flawless waltz in a flooded ballroom, their reflections waltzing upside down beneath them. No readable text or logo.',
+        'An elderly couple outshines every young competitor at a dance contest, their shoes held together with tape. No readable text or logo.',
       ],
     ),
     'SP05-366': u(
@@ -58,9 +58,9 @@ const spec: Spec = {
         key_features: 'sound ripples; drum strikes; ensemble unison; warm stage light',
       },
       [
-        "A taiko group strikes giant drums in unison on a dark stage, and the visible sound ripples make the moon above them tremble. No readable text or logo.",
-        "A shamisen player plays so fast in a tiny bar that the sake in every cup around her ripples in perfect rings. No readable text or logo.",
-        "A shrine flutist performs at dawn in a misty valley, the sound spreading in ripples that shake the dew from every leaf. No readable text or logo.",
+        'A taiko group strikes giant drums in unison on a dark stage, and the visible sound ripples make the moon above them tremble. No readable text or logo.',
+        'A shamisen player plays so fast in a tiny bar that the sake in every cup around her ripples in perfect rings. No readable text or logo.',
+        'A shrine flutist performs at dawn in a misty valley, the sound spreading in ripples that shake the dew from every leaf. No readable text or logo.',
       ],
     ),
     'SP05-367': u(
@@ -82,9 +82,9 @@ const spec: Spec = {
         key_features: 'brass reflections; practice room; sections; summer light',
       },
       [
-        "A trumpeter practices on a rooftop at sunset, her bell reflecting the whole orange sky while a row of crows on the railing listens intently. No readable text or logo.",
-        "A tuba player marches through a rainstorm, water gushing out of her instrument like a fountain every time she plays. No readable text or logo.",
-        "In a sweltering practice room twenty horn players draw breath at the exact same instant before the first note, sweat glinting on polished instruments. No readable text or logo.",
+        'A trumpeter practices on a rooftop at sunset, her bell reflecting the whole orange sky while a row of crows on the railing listens intently. No readable text or logo.',
+        'A tuba player marches through a rainstorm, water gushing out of her instrument like a fountain every time she plays. No readable text or logo.',
+        'In a sweltering practice room twenty horn players draw breath at the exact same instant before the first note, sweat glinting on polished instruments. No readable text or logo.',
       ],
     ),
     'SP05-368': u(
@@ -106,9 +106,9 @@ const spec: Spec = {
         key_features: 'saxophone solo; smoke spotlight; flowing curves; midnight club',
       },
       [
-        "A saxophonist takes a midnight solo in a smoky basement club, and the rising golden curves of her notes lift her feet off the floor. No readable text or logo.",
+        'A saxophonist takes a midnight solo in a smoky basement club, and the rising golden curves of her notes lift her feet off the floor. No readable text or logo.',
         "A pianist and a drummer duel across a club stage while the audience's cocktails slowly levitate with the rising tempo. No readable text or logo.",
-        "At closing time a janitor improvises on the abandoned upright bass, and the chairs stacked on the tables begin swaying in time. No readable text or logo.",
+        'At closing time a janitor improvises on the abandoned upright bass, and the chairs stacked on the tables begin swaying in time. No readable text or logo.',
       ],
     ),
     'SP05-369': u(
@@ -129,9 +129,9 @@ const spec: Spec = {
         key_features: 'jagged noise lines; crowd surfing; colored stage lights; cramped stage',
       },
       [
-        "A screaming singer crowd-surfs over a packed tiny club, and the jagged noise of the band splits the ceiling open to the night sky. No readable text or logo.",
-        "A punk band plays a furious gig inside a laundromat, every washing machine spinning in rhythm with the drums. No readable text or logo.",
-        "After the show a guitarist sits alone on the curb outside the live house, ears ringing, her snapped strings curled in her palm. No readable text or logo.",
+        'A screaming singer crowd-surfs over a packed tiny club, and the jagged noise of the band splits the ceiling open to the night sky. No readable text or logo.',
+        'A punk band plays a furious gig inside a laundromat, every washing machine spinning in rhythm with the drums. No readable text or logo.',
+        'After the show a guitarist sits alone on the curb outside the live house, ears ringing, her snapped strings curled in her palm. No readable text or logo.',
       ],
     ),
     'SP05-370': u(
@@ -150,9 +150,9 @@ const spec: Spec = {
         key_features: 'lamp glow; acoustic guitar; close framing; single listener',
       },
       [
-        "A shy musician plays guitar on the floor of a tiny room for one friend on the bed, and the melody fills the air with floating paper stars. No readable text or logo.",
-        "A songwriter sings a confession at 2 a.m., curled against a humming fridge with her guitar in her lap and the phone face-down beside her. No readable text or logo.",
-        "A street busker in the rain plays for one old man sheltering under an awning, the open guitar case filling with raindrops instead of coins. No readable text or logo.",
+        'A shy musician plays guitar on the floor of a tiny room for one friend on the bed, and the melody fills the air with floating paper stars. No readable text or logo.',
+        'A songwriter sings a confession at 2 a.m., curled against a humming fridge with her guitar in her lap and the phone face-down beside her. No readable text or logo.',
+        'A street busker in the rain plays for one old man sheltering under an awning, the open guitar case filling with raindrops instead of coins. No readable text or logo.',
       ],
     ),
     'SP05-371': u(
@@ -174,9 +174,9 @@ const spec: Spec = {
         key_features: 'swirling sound ribbons; conductor; massed strings; concert hall',
       },
       [
-        "A violin soloist reaches the climax of a concerto as swirling ribbons of color from the orchestra lift the concert hall roof clean off. No readable text or logo.",
+        'A violin soloist reaches the climax of a concerto as swirling ribbons of color from the orchestra lift the concert hall roof clean off. No readable text or logo.',
         "A conductor's baton slips from his hand mid-crescendo, and the whole orchestra keeps following it as it flies around the hall. No readable text or logo.",
-        "An orchestra plays to rows of snow-covered seats in an outdoor amphitheater, breath and music swirling together into the falling snow. No readable text or logo.",
+        'An orchestra plays to rows of snow-covered seats in an outdoor amphitheater, breath and music swirling together into the falling snow. No readable text or logo.',
       ],
     ),
     'SP05-372': u(
@@ -197,9 +197,9 @@ const spec: Spec = {
         key_features: 'spotlight duel; giant shadows; symbolic prop; proscenium',
       },
       [
-        "Two actresses face each other under crossing spotlights while their giant shadows fight on the backdrop as a lion and a crow. No readable text or logo.",
-        "Two rival stage stars duel with oversized paper swords while a stagehand winches a cardboard moon across the background. No readable text or logo.",
-        "An actress stands alone on a revolving stage as the spotlight splits her into three shadows, each wearing a different mask. No readable text or logo.",
+        'Two actresses face each other under crossing spotlights while their giant shadows fight on the backdrop as a lion and a crow. No readable text or logo.',
+        'Two rival stage stars duel with oversized paper swords while a stagehand winches a cardboard moon across the background. No readable text or logo.',
+        'An actress stands alone on a revolving stage as the spotlight splits her into three shadows, each wearing a different mask. No readable text or logo.',
       ],
     ),
   },

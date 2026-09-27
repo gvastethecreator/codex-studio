@@ -30,7 +30,7 @@ visualDna:
   camera_and_composition: Bold iconic composition, framed the way Stefan Poag composes its shots and pages.
   atmosphere_and_mood: Keep the requested mood with pulpy cosmic weirdness.
   rendering_and_quality: Retro bold weird fantasy ink, in the recognizable hand of Stefan Poag.
-  creative_brief: 'Stefan Poag weird fantasy art: retro bold ink with thick outlines, strange monsters, pulpy cosmic weirdness and seventies-inspired OSR cover energy. Carry it through Poag retro bold ink, thick outlines, cosmic weird. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Stefan Poag weird fantasy art: retro bold ink with thick outlines, strange monsters, pulpy cosmic weirdness and seventies-inspired OSR cover energy. Carry it through Poag retro bold ink, thick outlines, cosmic weird. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Poag retro bold ink; thick outlines; cosmic weird
 avoidRules:
   - existing franchise characters

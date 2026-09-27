@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as Great War soldiers in wool uniforms, helmets and gas masks. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mud brown, smoke grey and sepia sky, true to the Battlefield 1 2016 palette.
-  lighting_and_shadow: "Hazy grey daylight with flare glow and smoke columns."
-  texture_and_material: "Mud, barbed wire, wood and wool, sharp nearby and dissolving into smoke beyond."
+  lighting_and_shadow: 'Hazy grey daylight with flare glow and smoke columns.'
+  texture_and_material: 'Mud, barbed wire, wood and wool, sharp nearby and dissolving into smoke beyond.'
   camera_and_composition: First-person view over a trench lip, framed the way Battlefield 1 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with harrowing wartime dread.
-  rendering_and_quality: "A 2016 first-person frame at 1920 by 1080: rifle at bottom right, trench and smoke, a small compass and minimap shape."
-  creative_brief: 'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting. Carry it through Battlefield 1 trenches, mud, smoke, war machines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2016 first-person frame at 1920 by 1080: rifle at bottom right, trench and smoke, a small compass and minimap shape.'
+  creative_brief: "DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting. Carry it through Battlefield 1 trenches, mud, smoke, war machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Battlefield 1 trenches; mud; smoke; war machines
 avoidRules:
   - existing game characters, logos or levels

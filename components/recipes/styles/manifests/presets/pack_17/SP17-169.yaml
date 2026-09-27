@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Single dynamic figure filling the canvas, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with raw physical power.
   rendering_and_quality: Energetic study, deliberately unfinished, kept consistent across the whole image.
-  creative_brief: 'Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing. Carry it through exaggerated anatomy, loose oil, underdrawing, action pose. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing. Carry it through exaggerated anatomy, loose oil, underdrawing, action pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: exaggerated anatomy; loose oil; underdrawing; action pose
 avoidRules:
   - title lettering

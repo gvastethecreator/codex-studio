@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Detailed mechanical views and wooden machines in forest settings.
   atmosphere_and_mood: Warm, clever and patient, a world grown and carved rather than mined.
   rendering_and_quality: Richly detailed illustration with fine grain and carved joinery.
-  creative_brief: 'Woodpunk: a civilization built entirely of carved and joined wood, with wooden clockwork, timber airships, oak gears, pegged joints and carved everything. Carry it through wooden clockwork, carved gears, pegged joints, timber airships. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  creative_brief: "Woodpunk: a civilization built entirely of carved and joined wood, with wooden clockwork, timber airships, oak gears, pegged joints and carved everything. Carry it through wooden clockwork, carved gears, pegged joints, timber airships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: wooden clockwork; carved gears; pegged joints; timber airships
 avoidRules:
   - readable text

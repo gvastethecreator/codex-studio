@@ -25,12 +25,12 @@ visualDna:
   aesthetic: 'FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render mechs as heavy customizable industrial machines with modular parts. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Industrial grey, hazard yellow and spark orange, true to the Armored Core VI 2023 palette.
-  lighting_and_shadow: "Hangar floodlights and showers of welding sparks in a dark garage."
-  texture_and_material: "Weathered paint, bolts, cables and industrial metal on modular mech parts."
+  lighting_and_shadow: 'Hangar floodlights and showers of welding sparks in a dark garage.'
+  texture_and_material: 'Weathered paint, bolts, cables and industrial metal on modular mech parts.'
   camera_and_composition: Low garage view up at a mech, framed the way Armored Core VI 2023 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with heavy mechanical pride.
-  rendering_and_quality: "A 2023 frame at 1920 by 1080: heavy mech in a dark hangar seen low, part list panel shapes at the right without text."
-  creative_brief: 'FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint. Carry it through Armored Core garage, modular mech, industrial. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  rendering_and_quality: 'A 2023 frame at 1920 by 1080: heavy mech in a dark hangar seen low, part list panel shapes at the right without text.'
+  creative_brief: "FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint. Carry it through Armored Core garage, modular mech, industrial. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
   key_features: Armored Core garage; modular mech; industrial
 avoidRules:
   - stat panels
