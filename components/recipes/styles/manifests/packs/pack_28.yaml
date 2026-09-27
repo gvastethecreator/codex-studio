@@ -31,6 +31,29 @@ categories:
       - pack_28/SP28-018.yaml
       - pack_28/SP28-019.yaml
       - pack_28/SP28-020.yaml
+  - id: toys-miniatures
+    name: 2. Toys & Miniatures
+    presetRefs:
+      - pack_28/SP28-021.yaml
+      - pack_28/SP28-022.yaml
+      - pack_28/SP28-023.yaml
+      - pack_28/SP28-024.yaml
+      - pack_28/SP28-025.yaml
+      - pack_28/SP28-026.yaml
+      - pack_28/SP28-027.yaml
+      - pack_28/SP28-028.yaml
+      - pack_28/SP28-029.yaml
+      - pack_28/SP28-030.yaml
+      - pack_28/SP28-031.yaml
+      - pack_28/SP28-032.yaml
+      - pack_28/SP28-033.yaml
+      - pack_28/SP28-034.yaml
+      - pack_28/SP28-035.yaml
+      - pack_28/SP28-036.yaml
+      - pack_28/SP28-037.yaml
+      - pack_28/SP28-038.yaml
+      - pack_28/SP28-039.yaml
+      - pack_28/SP28-040.yaml
 presetRefs:
   - pack_28/SP28-001.yaml
   - pack_28/SP28-002.yaml
@@ -52,3 +75,23 @@ presetRefs:
   - pack_28/SP28-018.yaml
   - pack_28/SP28-019.yaml
   - pack_28/SP28-020.yaml
+  - pack_28/SP28-021.yaml
+  - pack_28/SP28-022.yaml
+  - pack_28/SP28-023.yaml
+  - pack_28/SP28-024.yaml
+  - pack_28/SP28-025.yaml
+  - pack_28/SP28-026.yaml
+  - pack_28/SP28-027.yaml
+  - pack_28/SP28-028.yaml
+  - pack_28/SP28-029.yaml
+  - pack_28/SP28-030.yaml
+  - pack_28/SP28-031.yaml
+  - pack_28/SP28-032.yaml
+  - pack_28/SP28-033.yaml
+  - pack_28/SP28-034.yaml
+  - pack_28/SP28-035.yaml
+  - pack_28/SP28-036.yaml
+  - pack_28/SP28-037.yaml
+  - pack_28/SP28-038.yaml
+  - pack_28/SP28-039.yaml
+  - pack_28/SP28-040.yaml

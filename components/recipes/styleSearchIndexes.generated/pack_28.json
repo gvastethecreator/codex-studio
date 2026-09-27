@@ -3,7 +3,7 @@
     {
       "id": "pack_28",
       "name": "Collectibles & Form Languages",
-      "presetCount": 20
+      "presetCount": 40
     }
   ],
   "presets": [
@@ -446,7 +446,331 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp28-020 wood carved figure - hand-carved collectible collectible figure carved wood 1. premium collectible statues premium collectible statues collectible figure pack_28 collectibles & form languages premium-collectible-statues collectibles-and-form-languages premium-collectible-statues collectible-figure"
+    },
+    {
+      "id": "SP28-021",
+      "name": "Nendoroid - Chibi Articulated Figure",
+      "styleAnchors": ["Nendoroid - Chibi Articulated Figure", "toy figure", "Nendoroid chibi"],
+      "ref": "pack_28/SP28-021.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-021 nendoroid - chibi articulated figure toy figure nendoroid chibi 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-022",
+      "name": "Sofubi - Japanese Soft Vinyl Kaiju Toy",
+      "styleAnchors": ["Sofubi - Japanese Soft Vinyl Kaiju Toy", "toy figure", "Sofubi soft vinyl"],
+      "ref": "pack_28/SP28-022.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-022 sofubi - japanese soft vinyl kaiju toy toy figure sofubi soft vinyl 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-023",
+      "name": "Designer Vinyl Art Toy - Blank Platform Figure",
+      "styleAnchors": [
+        "Designer Vinyl Art Toy - Blank Platform Figure",
+        "toy figure",
+        "Designer vinyl platform"
+      ],
+      "ref": "pack_28/SP28-023.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-023 designer vinyl art toy - blank platform figure toy figure designer vinyl platform 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-024",
+      "name": "Blind Box Art Toy - Pastel Collectible Series",
+      "styleAnchors": [
+        "Blind Box Art Toy - Pastel Collectible Series",
+        "toy figure",
+        "Blind box pastel"
+      ],
+      "ref": "pack_28/SP28-024.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-024 blind box art toy - pastel collectible series toy figure blind box pastel 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-025",
+      "name": "Eighties Carded Action Figure - Blister Pack Hero",
+      "styleAnchors": [
+        "Eighties Carded Action Figure - Blister Pack Hero",
+        "toy figure",
+        "Eighties carded figure"
+      ],
+      "ref": "pack_28/SP28-025.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-025 eighties carded action figure - blister pack hero toy figure eighties carded figure 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-026",
+      "name": "Warhammer Painted Miniature - Tabletop Wargame Mini",
+      "styleAnchors": [
+        "Warhammer Painted Miniature - Tabletop Wargame Mini",
+        "miniature",
+        "Painted 28mm mini"
+      ],
+      "ref": "pack_28/SP28-026.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "miniature",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "miniature"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-026 warhammer painted miniature - tabletop wargame mini miniature painted 28mm mini 2. toys & miniatures toys & miniatures miniature pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures miniature"
+    },
+    {
+      "id": "SP28-027",
+      "name": "D&D Painted Mini - Fantasy Role-Playing Miniature",
+      "styleAnchors": [
+        "D&D Painted Mini - Fantasy Role-Playing Miniature",
+        "miniature",
+        "RPG miniature"
+      ],
+      "ref": "pack_28/SP28-027.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "miniature",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "miniature"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-027 d&d painted mini - fantasy role-playing miniature miniature rpg miniature 2. toys & miniatures toys & miniatures miniature pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures miniature"
+    },
+    {
+      "id": "SP28-028",
+      "name": "Gashapon Capsule Toy - Vending Mini Figure",
+      "styleAnchors": [
+        "Gashapon Capsule Toy - Vending Mini Figure",
+        "toy figure",
+        "Gashapon capsule"
+      ],
+      "ref": "pack_28/SP28-028.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-028 gashapon capsule toy - vending mini figure toy figure gashapon capsule 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-029",
+      "name": "Tin Wind-Up Toy - Vintage Lithographed Tin",
+      "styleAnchors": ["Tin Wind-Up Toy - Vintage Lithographed Tin", "toy", "Tin wind-up"],
+      "ref": "pack_28/SP28-029.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-029 tin wind-up toy - vintage lithographed tin toy tin wind-up 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-030",
+      "name": "Plush Toy - Stitched Fabric Character",
+      "styleAnchors": ["Plush Toy - Stitched Fabric Character", "toy", "Plush toy"],
+      "ref": "pack_28/SP28-030.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-030 plush toy - stitched fabric character toy plush toy 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-031",
+      "name": "Die-Cast Car - Scale Model Collectible",
+      "styleAnchors": ["Die-Cast Car - Scale Model Collectible", "toy", "Die-cast model"],
+      "ref": "pack_28/SP28-031.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-031 die-cast car - scale model collectible toy die-cast model 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-032",
+      "name": "Model Railway - HO Scale Layout Figure",
+      "styleAnchors": ["Model Railway - HO Scale Layout Figure", "miniature", "HO scale layout"],
+      "ref": "pack_28/SP28-032.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "miniature",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "miniature"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-032 model railway - ho scale layout figure miniature ho scale layout 2. toys & miniatures toys & miniatures miniature pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures miniature"
+    },
+    {
+      "id": "SP28-033",
+      "name": "Brick-Built Minifigure - Toy Brick Character",
+      "styleAnchors": [
+        "Brick-Built Minifigure - Toy Brick Character",
+        "toy figure",
+        "Brick minifigure"
+      ],
+      "ref": "pack_28/SP28-033.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-033 brick-built minifigure - toy brick character toy figure brick minifigure 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-034",
+      "name": "Wooden Toy - Montessori Painted Wood",
+      "styleAnchors": ["Wooden Toy - Montessori Painted Wood", "toy", "Wooden peg toy"],
+      "ref": "pack_28/SP28-034.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-034 wooden toy - montessori painted wood toy wooden peg toy 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-035",
+      "name": "Plastic Army Men - Green Toy Soldiers",
+      "styleAnchors": ["Plastic Army Men - Green Toy Soldiers", "toy", "Green army men"],
+      "ref": "pack_28/SP28-035.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-035 plastic army men - green toy soldiers toy green army men 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-036",
+      "name": "Scale Model Diorama - Weathered Hobby Scene",
+      "styleAnchors": ["Scale Model Diorama - Weathered Hobby Scene", "miniature", "Scale diorama"],
+      "ref": "pack_28/SP28-036.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "miniature",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "miniature"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-036 scale model diorama - weathered hobby scene miniature scale diorama 2. toys & miniatures toys & miniatures miniature pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures miniature"
+    },
+    {
+      "id": "SP28-037",
+      "name": "Anime Figma - Articulated Action Figure",
+      "styleAnchors": [
+        "Anime Figma - Articulated Action Figure",
+        "toy figure",
+        "figma articulated"
+      ],
+      "ref": "pack_28/SP28-037.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy figure",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy-figure"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-037 anime figma - articulated action figure toy figure figma articulated 2. toys & miniatures toys & miniatures toy figure pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy-figure"
+    },
+    {
+      "id": "SP28-038",
+      "name": "Retro Robot Toy - Space Age Battery Operated",
+      "styleAnchors": [
+        "Retro Robot Toy - Space Age Battery Operated",
+        "toy",
+        "Space-age robot toy"
+      ],
+      "ref": "pack_28/SP28-038.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-038 retro robot toy - space age battery operated toy space-age robot toy 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
+    },
+    {
+      "id": "SP28-039",
+      "name": "Handmade Clay Miniature - Tiny Food Craft",
+      "styleAnchors": [
+        "Handmade Clay Miniature - Tiny Food Craft",
+        "miniature",
+        "Polymer clay miniature"
+      ],
+      "ref": "pack_28/SP28-039.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "miniature",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "miniature"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-039 handmade clay miniature - tiny food craft miniature polymer clay miniature 2. toys & miniatures toys & miniatures miniature pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures miniature"
+    },
+    {
+      "id": "SP28-040",
+      "name": "Kinetic Articulated Wooden Mannequin - Artist Toy",
+      "styleAnchors": [
+        "Kinetic Articulated Wooden Mannequin - Artist Toy",
+        "toy",
+        "Wooden mannequin"
+      ],
+      "ref": "pack_28/SP28-040.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "toys-and-miniatures",
+      "categoryName": "2. Toys & Miniatures",
+      "domain": "toy",
+      "tags": ["collectibles-and-form-languages", "toys-and-miniatures", "toy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-040 kinetic articulated wooden mannequin - artist toy toy wooden mannequin 2. toys & miniatures toys & miniatures toy pack_28 collectibles & form languages toys-and-miniatures collectibles-and-form-languages toys-and-miniatures toy"
     }
   ],
-  "totalPresetCount": 20
+  "totalPresetCount": 40
 }

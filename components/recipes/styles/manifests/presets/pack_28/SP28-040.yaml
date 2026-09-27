@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP28-040
+packId: pack_28
+name: Kinetic Articulated Wooden Mannequin - Artist Toy
+styleAnchors:
+  - Kinetic Articulated Wooden Mannequin - Artist Toy
+  - toy
+  - Wooden mannequin
+displayName: Kinetic Articulated Wooden Mannequin - Artist Toy
+category: 2. Toys & Miniatures
+domain: toy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - toys-miniatures
+  - toy-miniature
+  - wooden-mannequin
+  - reference-title
+visualDna:
+  aesthetic: 'Artist wooden mannequin look: jointed beech drawing mannequins with ball joints, faceless heads and natural grain, posed in expressive human gestures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; turn the subject into a faceless jointed wooden artist mannequin in an expressive pose. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Natural pale beech, true to the Kinetic Articulated Wooden Mannequin palette.
+  lighting_and_shadow: Soft studio light, lit the way Kinetic Articulated Wooden Mannequin lights its scenes.
+  texture_and_material: Smooth wood with ball joints, with the surface finish of Kinetic Articulated Wooden Mannequin.
+  camera_and_composition: Clean still-life view, framed the way Kinetic Articulated Wooden Mannequin composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet expressive gesture.
+  rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
+  creative_brief: 'Artist wooden mannequin look: jointed beech drawing mannequins with ball joints, faceless heads and natural grain, posed in expressive human gestures. Carry it through Wooden mannequin, ball joints, faceless pose. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Wooden mannequin; ball joints; faceless pose
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: toys-miniatures
+  categoryName: 2. Toys & Miniatures
+  domain: toy
+  tags:
+    - curation-v2
+    - toys-miniatures
+    - toy-miniature
+    - wooden-mannequin
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

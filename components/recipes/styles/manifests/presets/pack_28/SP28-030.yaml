@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP28-030
+packId: pack_28
+name: Plush Toy - Stitched Fabric Character
+styleAnchors:
+  - Plush Toy - Stitched Fabric Character
+  - toy
+  - Plush toy
+displayName: Plush Toy - Stitched Fabric Character
+category: 2. Toys & Miniatures
+domain: toy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - toys-miniatures
+  - toy-miniature
+  - plush
+  - reference-title
+visualDna:
+  aesthetic: 'Plush toy look: soft stitched fabric characters, embroidered eyes, fuzzy minky fabric, visible seams and cozy bedroom or shop display.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; turn the subject into a soft plush toy with embroidered features and visible seams. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastel and warm fabric colors, true to the Plush Toy palette.
+  lighting_and_shadow: Soft window light, lit the way Plush Toy lights its scenes.
+  texture_and_material: Fuzzy minky fabric and embroidery, with the surface finish of Plush Toy.
+  camera_and_composition: Close cozy product view, framed the way Plush Toy composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cuddly comforting warmth.
+  rendering_and_quality: Clean toy product photography with honest plastic, paint and material detail.
+  creative_brief: 'Plush toy look: soft stitched fabric characters, embroidered eyes, fuzzy minky fabric, visible seams and cozy bedroom or shop display. Carry it through Plush toy, embroidery, minky fabric, seams. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Plush toy; embroidery; minky fabric; seams
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: toys-miniatures
+  categoryName: 2. Toys & Miniatures
+  domain: toy
+  tags:
+    - curation-v2
+    - toys-miniatures
+    - toy-miniature
+    - plush
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

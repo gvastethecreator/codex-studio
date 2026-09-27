@@ -2923,5 +2923,20 @@
     "evidencePresetIds": ["SP28-001", "SP28-002", "SP28-003"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_28",
+    "category": "2. Toys & Miniatures",
+    "displayCategory": "Toys & miniatures",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "dab6461e6d5bbd79c4862f64baf010848e06e5a0e1441a52502a1fcb254270a5",
+    "problem": "Toy and miniature styles must reproduce each line or hobby's scale, material, articulation, paint and packaging without copying licensed characters, brand logos or trademarked toy shapes.",
+    "preserve": "The requested subject stays the subject, rebuilt as that kind of toy or miniature; cards stage original characters.",
+    "proposedAction": "New category of 20 toy and miniature traditions: chibi articulated figures, sofubi, designer vinyl, blind boxes, eighties carded figures, painted wargame and RPG minis, gashapon, tin wind-ups, plush, die-cast, model railways, brick minifigures, wooden toys, army men, scale dioramas, articulated anime figures, space-age robots, clay miniatures and wooden mannequins.",
+    "validation": "Generate the card set; check each card reads as its toy tradition with no licensed character or brand logo.",
+    "evidencePresetIds": ["SP28-021", "SP28-022", "SP28-023"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]
