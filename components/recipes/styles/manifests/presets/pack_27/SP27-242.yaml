@@ -9,7 +9,7 @@ styleAnchors:
 displayName: It Takes Two 2021 - Hazelight Toy Adventure
 category: 13. Video Games 2020s
 domain: twenty-twenties co-op game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Hazelight It Takes Two (2021) look: animated-film co-op adventure through tiny worlds of a family home, giant toys, garden sheds, snow globes and warm playful color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny animated-film figures crossing giant everyday household worlds. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm toy colors, garden green and cozy amber.
-  lighting_and_shadow: Warm cinematic household light, lit the way It Takes Two 2021 lights its levels.
-  texture_and_material: Animated-film stylized surfaces, with the in-engine surface finish of It Takes Two 2021.
+  lighting_and_shadow: "Warm household window light and soft bounce, like an animated family film."
+  texture_and_material: "Smooth animated-film materials, fuzzy fabric, glossy toy plastic and oversized household objects."
   camera_and_composition: Split-screen or third-person co-op view, framed the way It Takes Two 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with playful cooperative warmth.
-  rendering_and_quality: Authentic animated-film co-op screen, matching real It Takes Two 2021 screenshots.
+  rendering_and_quality: "A 2021 console frame at 1920 by 1080, split vertically into two gameplay views, each following a tiny figure."
   creative_brief: 'Hazelight It Takes Two (2021) look: animated-film co-op adventure through tiny worlds of a family home, giant toys, garden sheds, snow globes and warm playful color. Carry it through It Takes Two tiny worlds, giant toys, co-op. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: It Takes Two tiny worlds; giant toys; co-op
 avoidRules:

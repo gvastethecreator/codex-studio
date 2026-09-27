@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Balatro 2024 - LocalThunk CRT Poker Psychedelia
 category: 13. Video Games 2020s
 domain: twenty-twenties roguelike game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'LocalThunk Balatro (2024) look: pixel-art poker cards on a swirling psychedelic CRT-filtered felt background, jokers with holographic foils, chips and multipliers flashing.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as pixel-art playing cards and jokers on swirling psychedelic CRT felt. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Swirling red, teal felt and foil gold, true to the Balatro 2024 palette.
-  lighting_and_shadow: CRT glow and holographic foil shine, lit the way Balatro 2024 lights its levels.
-  texture_and_material: Pixel cards with CRT scanlines and warp, with the in-engine surface finish of Balatro 2024.
+  lighting_and_shadow: "CRT glow over a swirling psychedelic background, foil shine on some cards."
+  texture_and_material: "Pixel-art playing cards with scanlines and a slight curved-screen warp."
   camera_and_composition: Flat card table view, framed the way Balatro 2024 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with hypnotic gambling rush.
-  rendering_and_quality: Authentic psychedelic card roguelike screen, matching real Balatro 2024 screenshots.
+  rendering_and_quality: "A 2024 frame at 1920 by 1080: a hand of pixel cards at the bottom, a row of joker cards above, swirling felt behind."
   creative_brief: 'LocalThunk Balatro (2024) look: pixel-art poker cards on a swirling psychedelic CRT-filtered felt background, jokers with holographic foils, chips and multipliers flashing. Carry it through Balatro CRT swirl, pixel cards, foil jokers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Balatro CRT swirl; pixel cards; foil jokers
 avoidRules:

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: King’s Quest 1984 - Sierra EGA Storybook Adventure
 category: 4. Video Games 80s
 domain: eighties adventure game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sierra King’s Quest (1984) EGA look: sixteen-color storybook fairy-tale screens, dithered skies, pixel castles, a small walking hero sprite and a text parser bar.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small pixel sprite walking through a sixteen-color storybook screen. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'EGA sixteen colors: bright green, cyan, magenta, brown and blue.'
-  lighting_and_shadow: Flat EGA color with dithered gradients, lit the way King’s Quest 1984 lights its levels.
-  texture_and_material: EGA pixels, dithering and hard color edges, with the in-engine surface finish of King’s Quest 1984.
+  lighting_and_shadow: "Flat colors from a sixteen-color palette with gradients faked by checkered dithering."
+  texture_and_material: "Chunky pixels in bright cyan, magenta, green and brown, hard color edges and dither patterns."
   camera_and_composition: Side-view storybook screen with a parser bar at the bottom.
   atmosphere_and_mood: Keep the requested mood with whimsical fairy-tale quest.
-  rendering_and_quality: Authentic eighties EGA adventure screen, matching real King’s Quest 1984 screenshots.
+  rendering_and_quality: "A 1984 PC EGA frame at 320 by 200: a bright storybook screen of flat color areas with a tiny walking sprite."
   creative_brief: 'Sierra King’s Quest (1984) EGA look: sixteen-color storybook fairy-tale screens, dithered skies, pixel castles, a small walking hero sprite and a text parser bar. Carry it through Sierra EGA, sixteen colors, dithering, storybook screens. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sierra EGA; sixteen colors; dithering; storybook screens
 avoidRules:

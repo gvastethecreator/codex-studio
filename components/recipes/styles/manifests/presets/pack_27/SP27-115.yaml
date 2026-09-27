@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Gears of War 2006 - Epic Grey-Brown Grit
 category: 6. Video Games 2000s
 domain: two-thousands console shooter
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Epic Games Gears of War (2006) look: desaturated grey-brown Unreal Engine 3 grit, bulky armored soldiers, crumbling baroque ruins, cover-shooter over-the-shoulder view and bloom highlights.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject bulky and armored in desaturated grey-brown baroque ruins with over-the-shoulder framing. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Desaturated grey, brown and ash with blue highlights.
-  lighting_and_shadow: Grey overcast with specular bloom highlights, lit the way Gears of War 2006 lights its levels.
-  texture_and_material: Normal-mapped rubble and heavy armor grit, with the in-engine surface finish of Gears of War 2006.
+  lighting_and_shadow: "Grey overcast light with glossy wet highlights on armor and bloom on bright spots."
+  texture_and_material: "Bumpy rubble and armor that look detailed but plasticky, shiny edges, grey-brown everything."
   camera_and_composition: Low over-the-shoulder view behind cover, framed the way Gears of War 2006 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim heavy survival.
-  rendering_and_quality: Authentic Unreal Engine 3 shooter screen, matching real Gears of War 2006 screenshots.
+  rendering_and_quality: "A 2006 Xbox 360 frame at 1280 by 720: shiny plasticky surfaces, textures that pop in, a reticle and a small weapon icon shape."
   creative_brief: 'Epic Games Gears of War (2006) look: desaturated grey-brown Unreal Engine 3 grit, bulky armored soldiers, crumbling baroque ruins, cover-shooter over-the-shoulder view and bloom highlights. Carry it through Gears grey-brown, bulky armor, baroque ruins, cover. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Gears grey-brown; bulky armor; baroque ruins; cover
 avoidRules:

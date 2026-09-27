@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Sifu 2022 - Sloclap Painterly Kung Fu
 category: 13. Video Games 2020s
 domain: twenty-twenties action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sloclap Sifu (2022) look: painterly stylized 3D kung fu with flat-shaded faces, Hong Kong clubs, art galleries and temples, bold color, and bodies aging with each defeat.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as painterly stylized kung fu fighters with flat-shaded faces. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bold neon club pink, temple gold and jade.
-  lighting_and_shadow: Stylized painterly light, lit the way Sifu 2022 lights its levels.
-  texture_and_material: Painterly flat-shaded 3D, with the in-engine surface finish of Sifu 2022.
+  lighting_and_shadow: "Stylized painted light with soft colored shadows on flat-shaded faces."
+  texture_and_material: "Simplified 3D with painterly brush textures, faces in flat planes of color."
   camera_and_composition: Third-person fight view, framed the way Sifu 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with disciplined painterly fury.
-  rendering_and_quality: Authentic stylized martial arts screen, matching real Sifu 2022 screenshots.
+  rendering_and_quality: "A 2022 frame at 1920 by 1080 in third person: a fighter mid-strike among painted thugs, a thin bar shape at the bottom."
   creative_brief: 'Sloclap Sifu (2022) look: painterly stylized 3D kung fu with flat-shaded faces, Hong Kong clubs, art galleries and temples, bold color, and bodies aging with each defeat. Carry it through Sifu painterly kung fu, flat shading, aging. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sifu painterly kung fu; flat shading; aging
 avoidRules:

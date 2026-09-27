@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Team Fortress 2 2007 - Valve Painterly Mercenaries
 category: 6. Video Games 2000s
 domain: two-thousands PC shooter
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Valve Team Fortress 2 (2007) look: J.C. Leyendecker-inspired painterly shading, exaggerated silhouettes, rim-lit warm and cool team colors and 1960s spy-industrial architecture.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with an exaggerated readable silhouette and Leyendecker-style painterly shading. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Warm team red, cool team blue and desert tan.
-  lighting_and_shadow: Warm rim light with soft painterly shading, lit the way Team Fortress 2 2007 lights its levels.
-  texture_and_material: Painterly shading with soft gradients, with the in-engine surface finish of Team Fortress 2 2007.
+  lighting_and_shadow: "Warm rim light around every figure and soft painted gradients on faces and cloth."
+  texture_and_material: "Painted soft gradients with no fine detail, figures with exaggerated readable shapes and clean flat materials."
   camera_and_composition: Heroic low third-person or first-person view, framed the way Team Fortress 2 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with comedic mercenary mayhem.
-  rendering_and_quality: Authentic late-2000s painterly shooter screen, matching real Team Fortress 2 2007 screenshots.
+  rendering_and_quality: "A 2007 PC frame at 1280 by 720: clean smooth shading, bright team colors, simple architecture and HUD shapes in corners."
   creative_brief: 'Valve Team Fortress 2 (2007) look: J.C. Leyendecker-inspired painterly shading, exaggerated silhouettes, rim-lit warm and cool team colors and 1960s spy-industrial architecture. Carry it through TF2 painterly, Leyendecker shading, exaggerated silhouettes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: TF2 painterly; Leyendecker shading; exaggerated silhouettes
 avoidRules:

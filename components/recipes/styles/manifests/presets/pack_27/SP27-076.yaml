@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Shadow of the Beast 1989 - Psygnosis Amiga Parallax
 category: 4. Video Games 80s
 domain: eighties home computer game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Psygnosis Shadow of the Beast (1989) Amiga look: twelve layers of parallax scrolling, huge moons, purple alien skies, detailed painterly pixel art and Roger Dean–style atmosphere.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject walking through many layers of parallax alien landscape under huge moons. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Amiga purple skies, red moons and deep teal.
-  lighting_and_shadow: Huge moonlight and glowing skies, lit the way Shadow of the Beast 1989 lights its levels.
+  lighting_and_shadow: "Huge pale moons and glowing purple skies in banded color gradients."
   texture_and_material: Detailed Amiga pixel art with many parallax layers.
   camera_and_composition: Side-scrolling view with deep parallax, framed the way Shadow of the Beast 1989 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with alien atmospheric wonder.
-  rendering_and_quality: Authentic Amiga parallax screen, matching real Shadow of the Beast 1989 screenshots.
+  rendering_and_quality: "A 1989 Amiga frame at 320 by 256: many layered strips of pixel landscape scrolling at different speeds under a vast moon."
   creative_brief: 'Psygnosis Shadow of the Beast (1989) Amiga look: twelve layers of parallax scrolling, huge moons, purple alien skies, detailed painterly pixel art and Roger Dean–style atmosphere. Carry it through Amiga parallax, huge moons, purple skies, painterly pixels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Amiga parallax; huge moons; purple skies; painterly pixels
 avoidRules:

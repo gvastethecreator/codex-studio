@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Nier Automata 2017 - PlatinumGames Faded Ruin
 category: 12. Video Games 2010s
 domain: twenty-tens action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'PlatinumGames NieR:Automata (2017) look: sun-faded ruined city overgrown with green, desaturated sepia sheen, round rusty machine lifeforms, elegant androids and melancholic open spaces.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in sun-faded overgrown city ruins with a sepia sheen. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Faded sepia, overgrown green and pale sky, true to the Nier Automata 2017 palette.
-  lighting_and_shadow: Bright hazy sun over ruins, lit the way Nier Automata 2017 lights its levels.
-  texture_and_material: Soft desaturated textures with bloom, with the in-engine surface finish of Nier Automata 2017.
+  lighting_and_shadow: "Bright hazy sun over overgrown ruins, washed into a faded sepia sheen."
+  texture_and_material: "Soft desaturated textures, bloom on bright areas and moss over cracked concrete."
   camera_and_composition: Third-person view over open ruins, framed the way Nier Automata 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholic faded beauty.
-  rendering_and_quality: Authentic faded action RPG screen, matching real Nier Automata 2017 screenshots.
+  rendering_and_quality: "A 2017 PlayStation 4 frame at 1920 by 1080: faded colors, overgrown city, simple round machine enemies."
   creative_brief: 'PlatinumGames NieR:Automata (2017) look: sun-faded ruined city overgrown with green, desaturated sepia sheen, round rusty machine lifeforms, elegant androids and melancholic open spaces. Carry it through Nier ruined city, sepia haze, round machines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Nier ruined city; sepia haze; round machines
 avoidRules:

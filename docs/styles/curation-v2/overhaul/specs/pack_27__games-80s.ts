@@ -22,7 +22,8 @@ const spec: Spec = {
       texture: crt,
       camera: 'Top-down maze view filling a vertical arcade screen.',
       mood: 'bright arcade chase',
-      render: 'Authentic early-eighties arcade screen capture.',
+      render:
+        'A 1980 arcade frame at 224 by 288 on a vertical CRT: tiny blocky sprites, thin glowing maze lines, scanlines and phosphor glow on black.',
       key: 'Pac-Man neon maze; dots; tiny sprites; black background',
       avoid: ['a yellow wedge-mouthed circle', 'four colorful ghosts with eyes'],
       briefs: [
@@ -39,7 +40,8 @@ const spec: Spec = {
       texture: 'Thin glowing vector lines, phosphor trails and black glass.',
       camera: 'Looking down a receding geometric vector tube.',
       mood: 'electric abstract intensity',
-      render: 'Authentic color vector arcade screen.',
+      render:
+        'A 1981 color vector arcade screen: only thin glowing lines on pure black, no pixels or filled shapes, with soft phosphor trails.',
       key: 'Tempest color vector; receding tube; glowing lines',
       briefs: [
         'Down a receding geometric vector tube of glowing blue lines, a tiny yellow claw-shaped spacecraft built from vector strokes fights off crackling red shapes climbing toward the rim. Phosphor trails linger on the black glass. No readable text or logo.',
@@ -56,11 +58,13 @@ const spec: Spec = {
         subject:
           'render the subject as chunky low-resolution sprites on slanted red girders with ladders.',
         color: 'Girder red, ladder cyan, barrel brown and black.',
-        light: 'Flat glowing arcade screen light.',
+        light:
+          'Flat glowing arcade colors on black with no shading, just bright sprite and girder colors.',
         texture: crt,
         camera: 'Single-screen side view of stacked girders.',
         mood: 'frantic climbing peril',
-        render: 'Authentic early-eighties arcade screen capture.',
+        render:
+          'A 1981 arcade frame at 224 by 256 on a vertical CRT: few big square pixels per sprite, red girders, cyan ladders, scanlines.',
         key: 'Donkey Kong girders; ladders; rolling barrels; chunky sprites',
         avoid: ['a big ape throwing barrels', 'a mustached plumber jumping'],
         briefs: [
@@ -79,11 +83,14 @@ const spec: Spec = {
         subject:
           'render the subject driving a sprite-scaled road from behind through sunny coastal scenery.',
         color: 'Bright sky blue, beach sand, palm green and convertible red.',
-        light: 'Bright summer arcade sunlight.',
-        texture: 'Sprite-scaled pixel art with crisp CRT pixels.',
+        light:
+          'Bright summer arcade sunlight in flat saturated colors, bands of blue sky over the sea.',
+        texture:
+          'Crisp square pixels, roadside palms and signs as flat sprites that grow blockier as they rush closer.',
         camera: 'Low chase view behind the vehicle on a curving road.',
         mood: 'breezy summer escape',
-        render: 'Authentic mid-eighties arcade racing screen.',
+        render:
+          'A 1986 arcade frame at 320 by 224: a striped road narrowing to the horizon, a red convertible seen from behind, crisp CRT pixels.',
         key: 'Out Run sprite scaling; coastal road; palm trees; convertible',
         avoid: ['a red Ferrari Testarossa convertible'],
         briefs: [
@@ -102,11 +109,12 @@ const spec: Spec = {
         subject:
           'render the subject as a small detailed isometric sprite in a single-color castle room.',
         color: 'One bright attribute color on black per room.',
-        light: 'Flat single-color screen light.',
+        light: 'Each whole room drawn in one flat color on black, with no light or shadow at all.',
         texture: 'ZX Spectrum pixels, monochrome line detail and color attributes.',
         camera: 'Isometric room view with stone walls and arches.',
         mood: 'mysterious isometric quest',
-        render: 'Authentic ZX Spectrum isometric screen.',
+        render:
+          'A 1984 ZX Spectrum frame at 256 by 192: a single-color isometric room of fine line detail on black, with a decorated border strip.',
         key: 'Knight Lore isometric; monochrome rooms; Filmation',
         avoid: ['a pith-helmeted explorer who turns into a werewolf'],
         briefs: [
@@ -125,11 +133,14 @@ const spec: Spec = {
         subject:
           'render the subject as thin white wireframe forms floating in black space above a radar scanner.',
         color: 'White and yellow wireframe lines on black.',
-        light: 'Pure wireframe line light on black.',
-        texture: 'Thin monochrome wireframe lines and CRT pixels.',
+        light:
+          'Only thin white lines glowing on black, with see-through shapes and no filled surfaces.',
+        texture:
+          'Thin white wireframe edges, a few dot stars and chunky CRT pixels along every line.',
         camera: 'Cockpit view with a scanner console below.',
         mood: 'lonely vast trading',
-        render: 'Authentic eighties wireframe space screen.',
+        render:
+          'A 1984 BBC Micro frame at 320 by 256: wireframe ships above a dashboard with a radar ellipse and bar shapes.',
         key: 'Elite wireframe; rotating station; scanner radar',
         briefs: [
           'From a cockpit view above a scanner radar, a white wireframe cargo ship shaped like a flying teapot docks with a slowly rotating wireframe station in black space. Tiny dots mark distant stars. No readable text or logo.',
@@ -147,11 +158,14 @@ const spec: Spec = {
         subject:
           'render the subject as a small pixel sprite walking through a sixteen-color storybook screen.',
         color: 'EGA sixteen colors: bright green, cyan, magenta, brown and blue.',
-        light: 'Flat EGA color with dithered gradients.',
-        texture: 'EGA pixels, dithering and hard color edges.',
+        light:
+          'Flat colors from a sixteen-color palette with gradients faked by checkered dithering.',
+        texture:
+          'Chunky pixels in bright cyan, magenta, green and brown, hard color edges and dither patterns.',
         camera: 'Side-view storybook screen with a parser bar at the bottom.',
         mood: 'whimsical fairy-tale quest',
-        render: 'Authentic eighties EGA adventure screen.',
+        render:
+          'A 1984 PC EGA frame at 320 by 200: a bright storybook screen of flat color areas with a tiny walking sprite.',
         key: 'Sierra EGA; sixteen colors; dithering; storybook screens',
         briefs: [
           'On a sixteen-color EGA storybook screen, a tiny pixel sprite of a retired shoemaker walks past a dithered moat toward a magenta castle while a pixel crocodile waits in the water. The parser bar sits empty at the bottom. No readable text or logo.',
@@ -169,11 +183,13 @@ const spec: Spec = {
         subject:
           'render the subject as a big-headed pixel character in a spooky comedic mansion room.',
         color: 'C64 and PC palettes with purple night and green slime.',
-        light: 'Flat pixel light with spooky color accents.',
-        texture: 'Pixel art with chunky characters.',
+        light: 'Flat pixel colors with spooky purple and green accents and no real shading.',
+        texture:
+          'Chunky big-headed pixel characters and simple room furniture made of a few colors.',
         camera: 'Side-view room with a verb command panel below.',
         mood: 'spooky comedic mischief',
-        render: 'Authentic eighties point-and-click adventure screen.',
+        render:
+          'A 1987 Commodore 64 frame at 320 by 200: wide chunky pixels above a strip of verb button shapes.',
         key: 'SCUMM verbs; big-headed sprites; spooky mansion comedy',
         avoid: ['a purple tentacle', 'a meteor in a basement'],
         briefs: [
@@ -191,11 +207,13 @@ const spec: Spec = {
         look: 'Nintendo The Legend of Zelda (1986) NES look: top-down tile overworld of trees, rocks and sand, limited NES palette, tiny hero sprite with a shield and screen-by-screen exploration.',
         subject: 'render the subject as a tiny top-down sprite exploring a tiled NES overworld.',
         color: 'NES palette of forest green, sand beige and rock brown.',
-        light: 'Flat NES screen light.',
+        light:
+          'Flat bright NES colors with no shading, sand, green trees and grey rocks in simple tiles.',
         texture: crt,
         camera: 'Top-down single-screen overworld with a status bar.',
         mood: 'curious open adventure',
-        render: 'Authentic mid-eighties NES screen capture.',
+        render:
+          'A 1986 NES frame at 256 by 240: tiny top-down hero sprite, grid of repeating tiles, black strip with a map box at the top.',
         key: 'NES top-down; tiled overworld; tiny hero; exploration',
         avoid: ['a green-tunic elf hero with a sword', 'a triforce'],
         briefs: [
@@ -210,11 +228,12 @@ const spec: Spec = {
       subject:
         'render the subject as a small sprite exploring black-backed alien caverns and shafts.',
       color: 'Pure black background with blue, orange and green rock tiles.',
-      light: 'Flat NES light with black emptiness.',
+      light: 'Flat NES colors floating on pure black emptiness, with no light sources.',
       texture: crt,
       camera: 'Side-view cavern with vertical shafts.',
       mood: 'lonely alien isolation',
-      render: 'Authentic NES exploration screen.',
+      render:
+        'A 1986 NES frame at 256 by 240: small sprite in a vertical shaft of colored block tiles on black, a tiny energy number shape.',
       key: 'Metroid black caverns; vertical shafts; isolation',
       avoid: ['an orange power-suited bounty hunter', 'a jellyfish creature with red nuclei'],
       briefs: [
@@ -232,11 +251,12 @@ const spec: Spec = {
         subject:
           'render the subject as a small sprite climbing gothic castle stairways lit by candles.',
         color: 'Dark red brick, night blue and candle yellow.',
-        light: 'Flat NES light with candle flicker.',
+        light: 'Flat NES colors with candle sprites flickering on dark blue and black walls.',
         texture: crt,
         camera: 'Side-scrolling castle view with stairs.',
         mood: 'gothic horror adventure',
-        render: 'Authentic NES gothic platformer screen.',
+        render:
+          'A 1986 NES frame at 256 by 240: small whip-wielding sprite on diagonal stairs, stone block tiles, health bar shapes at the top.',
         key: 'Castlevania stairs; candles; bats; gothic castle',
         avoid: ['a whip-wielding vampire hunter', 'a caped vampire lord'],
         briefs: [
@@ -255,11 +275,12 @@ const spec: Spec = {
         subject:
           'render the subject as a chunky bright sprite platforming through a colorful mechanical stage.',
         color: 'Bright NES blues, oranges, greens and pinks.',
-        light: 'Flat bright NES light.',
+        light: 'Flat bright NES colors, bold blue and cyan sprites with no gradients.',
         texture: crt,
         camera: 'Side-scrolling stage with clean tiles.',
         mood: 'bright heroic platforming',
-        render: 'Authentic NES action platformer screen.',
+        render:
+          'A 1988 NES frame at 256 by 240: chunky bright sprite on repeating mechanical tiles, a vertical energy bar at the left.',
         key: 'Mega Man stages; chunky sprites; mechanical themes',
         avoid: ['a blue robot boy with an arm cannon'],
         briefs: [
@@ -274,11 +295,12 @@ const spec: Spec = {
       subject:
         'render the subject as tiny spaceship sprites in a scrolling starfield with strange terrain.',
       color: 'Starfield black with bright sprite colors and orange volcanoes.',
-      light: 'Flat arcade light and bright bullet sprites.',
+      light: 'Flat arcade colors with bright bullet dots on a black starfield.',
       texture: crt,
       camera: 'Horizontal scrolling shooter view.',
       mood: 'intense scrolling battle',
-      render: 'Authentic mid-eighties arcade shooter screen.',
+      render:
+        'A 1985 arcade frame at 256 by 224: tiny ship sprite flying right over volcano terrain, a row of power-up boxes along the bottom.',
       key: 'Gradius parallax; volcanoes; tiny ships; power-ups',
       avoid: ['a Vic Viper ship', 'a big core boss'],
       briefs: [
@@ -291,11 +313,12 @@ const spec: Spec = {
       look: 'Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy.',
       subject: 'render the subject as running sprites in jungle and alien base stages.',
       color: 'Jungle green, waterfall blue and alien flesh red.',
-      light: 'Flat bright arcade light.',
+      light: 'Flat bright arcade colors in green jungle and grey metal, with no shading.',
       texture: crt,
       camera: 'Side-scrolling run-and-gun view.',
       mood: 'explosive action bravado',
-      render: 'Authentic eighties run-and-gun screen.',
+      render:
+        'A 1987 NES frame at 256 by 240: small running soldier sprites, waterfalls and palm tiles, bright bullet dots.',
       key: 'Contra jungle; waterfalls; spread shot; alien bases',
       avoid: ['two shirtless commandos with bandanas'],
       briefs: [
@@ -313,11 +336,13 @@ const spec: Spec = {
         subject:
           'render the subject as a smooth acrobatic sprite in C64 rooms with elevators and robots.',
         color: 'Commodore 64 palette: muted brown, grey-blue, purple and green.',
-        light: 'Flat C64 screen light.',
-        texture: 'Wide C64 pixels and scanlines.',
+        light: 'Flat Commodore 64 colors in muted browns, purples and greys with no shading.',
+        texture:
+          'Wide rectangular pixels, simple room blocks, lifts and robot sprites with scanlines between rows.',
         camera: 'Side-view rooms connected by elevators.',
         mood: 'tense secret agent search',
-        render: 'Authentic Commodore 64 screen capture.',
+        render:
+          'A 1984 Commodore 64 frame at 320 by 200: muted palette, wide pixels, a smoothly animated agent sprite mid-somersault.',
         key: 'C64 palette; elevators; somersault agent; robots',
         briefs: [
           'In a Commodore 64 lair room of muted purple and grey-blue, a smooth rotoscoped sprite of a retired tax inspector somersaults over a patrol robot to search a filing cabinet. The elevator hums below. No readable text or logo.',
@@ -335,11 +360,12 @@ const spec: Spec = {
         subject:
           'render the subject walking through many layers of parallax alien landscape under huge moons.',
         color: 'Amiga purple skies, red moons and deep teal.',
-        light: 'Huge moonlight and glowing skies.',
+        light: 'Huge pale moons and glowing purple skies in banded color gradients.',
         texture: 'Detailed Amiga pixel art with many parallax layers.',
         camera: 'Side-scrolling view with deep parallax.',
         mood: 'alien atmospheric wonder',
-        render: 'Authentic Amiga parallax screen.',
+        render:
+          'A 1989 Amiga frame at 320 by 256: many layered strips of pixel landscape scrolling at different speeds under a vast moon.',
         key: 'Amiga parallax; huge moons; purple skies; painterly pixels',
         briefs: [
           'Through twelve layers of parallax alien grassland under two enormous moons, a small pixel sprite of a wandering beekeeper walks past floating rocks and distant stone giants in purple twilight. The clouds drift at different speeds. No readable text or logo.',
@@ -357,11 +383,13 @@ const spec: Spec = {
         subject:
           'render the subject as a fluid rotoscoped sprite in torchlit dungeon corridors with traps.',
         color: 'Dungeon blue-grey stone and torch orange.',
-        light: 'Flickering torchlight on stone.',
-        texture: 'Low-resolution pixels with fluid rotoscoped motion.',
+        light: 'Flickering torchlight suggested by a few warm pixels on flat stone walls.',
+        texture:
+          'Low-resolution flat pixel walls and a small sprite whose pose looks traced from a real moving person.',
         camera: 'Side-view dungeon rooms.',
         mood: 'tense fluid acrobatics',
-        render: 'Authentic late-eighties computer platformer screen.',
+        render:
+          'A 1989 PC frame at 320 by 200: plain stone blocks, spikes and gates, a thin row of health triangles at the bottom.',
         key: 'Mechner rotoscoping; dungeon traps; torchlight',
         avoid: ['a turbaned prince in white'],
         briefs: [
@@ -380,11 +408,12 @@ const spec: Spec = {
         subject:
           'render the subject as a first-person JRPG battle screen with one monster on black and a command window.',
         color: 'NES palette with a black battle background.',
-        light: 'Flat NES light.',
+        light: 'Flat NES colors with a single bright monster sprite on pure black.',
         texture: crt,
         camera: 'First-person battle screen with windowed menus.',
         mood: 'humble heroic adventure',
-        render: 'Authentic NES JRPG battle screen.',
+        render:
+          'A 1986 NES frame at 256 by 240: one monster in a black window, white-bordered command and status boxes with blank text lines.',
         key: 'Dragon Quest battle screen; monster on black; command window',
         avoid: ['a blue teardrop slime with a smile'],
         briefs: [
@@ -403,11 +432,12 @@ const spec: Spec = {
         subject:
           'render the subject as a cartoonish horror sprite in graveyards and haunted towns.',
         color: 'Night blue graveyard, grave grey and zombie green.',
-        light: 'Flat arcade light with night blue.',
+        light: 'Flat arcade colors on night blue with no shading.',
         texture: crt,
         camera: 'Side-scrolling graveyard view.',
         mood: 'cartoonish horror peril',
-        render: 'Authentic arcade horror platformer screen.',
+        render:
+          'A 1985 arcade frame at 256 by 224: small armored sprite among tombstones and dead trees, zombies rising from pixel dirt.',
         key: 'Ghosts ’n Goblins graveyard; zombies; cartoon horror',
         avoid: ['a knight in boxer shorts', 'a red winged gargoyle'],
         briefs: [
@@ -421,11 +451,13 @@ const spec: Spec = {
       look: 'Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging.',
       subject: 'paint the subject as an overly dramatic airbrushed heroic scene for a game box.',
       color: 'Airbrushed sunset orange, electric blue and chrome.',
-      light: 'Dramatic backlit airbrush glow.',
-      texture: 'Airbrushed painting on glossy cardboard box.',
+      light: 'Dramatic backlit airbrush glow with lens flares and hot rim light around the hero.',
+      texture:
+        'Smooth airbrushed painting printed on a glossy cardboard box with slightly worn corners.',
       camera: 'Dramatic heroic box-front composition.',
       mood: 'overhyped heroic drama',
-      render: 'Airbrushed eighties game box painting.',
+      render:
+        'An airbrushed eighties game box painting on glossy cardboard, with a bold blank band where the logo would sit.',
       key: 'Eighties box art; airbrush; overhyped drama',
       requestedText: true,
       briefs: [

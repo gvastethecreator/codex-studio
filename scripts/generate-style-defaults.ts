@@ -9574,7 +9574,9 @@ Make it immediately recognizable as ${promptRecognitionLabel}. ${differentiation
 }
 
 // Video game looks: the Video Game Originals Vault and the decade game categories of pack_27.
+// Box art and loading-screen art are illustrations, not screen captures.
 function isVideoGameCapturePreset(pack: StyleRuntimePack, preset: StyleRuntimePreset) {
+  if (/Game Box Art|Loading Screen Art/.test(preset.name)) return false;
   return (
     pack.id === 'pack_12' || (pack.id === 'pack_27' && /Video Games/.test(preset.category ?? ''))
   );

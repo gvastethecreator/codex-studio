@@ -23,13 +23,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a toon cel-shaded 3D figure with huge expressive eyes and crisp two-tone shading. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sparkling sea blue, grass green and warm sunset orange.',
       lighting_and_shadow:
-        'Bright sun with crisp two-tone cel shadows, lit the way The Wind Waker 2002 lights its levels.',
-      texture_and_material: 'Flat cel colors, swirl-shaped smoke and wind curls.',
+        'Bright sun with every shadow a single hard-edged darker flat tone, no soft gradients anywhere.',
+      texture_and_material:
+        'Flat cartoon color fills with simple shapes, swirl-shaped smoke, wind curls and clouds drawn as flat curled ribbons.',
       camera_and_composition:
         'Wide third-person view over islands and sea, framed the way The Wind Waker 2002 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bright seafaring wonder.',
       rendering_and_quality:
-        'Authentic GameCube cel-shaded screen, matching real The Wind Waker 2002 screenshots.',
+        'A 2002 GameCube frame at 640 by 480: clean smooth edges, bright flat colors, slightly soft image like a period screenshot.',
       creative_brief:
         "Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea. Carry it through Wind Waker toon shading, huge eyes, swirl clouds, open sea. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Wind Waker toon shading; huge eyes; swirl clouds; open sea',
@@ -58,13 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a thick-outline cel-shaded skater figure in loud graffiti streets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Loud funk-pop yellow, magenta, lime and sky blue.',
       lighting_and_shadow:
-        'Bright flat daylight with black cel outlines, lit the way Jet Set Radio 2000 lights its levels.',
-      texture_and_material: 'Thick black outlines, flat cel fills and spray paint.',
+        'Bright flat daylight with thick black outlines around every figure and building edge.',
+      texture_and_material:
+        'Thick black outlines, flat cartoon fills and walls of loud spray paint in simple repeating tiles.',
       camera_and_composition:
         'Low fisheye tilt following the skater, framed the way Jet Set Radio 2000 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rebellious funky street energy.',
       rendering_and_quality:
-        'Authentic Dreamcast cel-shaded screen, matching real Jet Set Radio 2000 screenshots.',
+        'A 2000 Dreamcast frame at 640 by 480: crisp outlined cartoon look, wide slightly curved street view, simple chunky buildings.',
       creative_brief:
         "Smilebit Jet Set Radio (2000) look: early thick-outline cel-shaded 3D, inline-skating graffiti gangs, Tokyo-inspired streets, fisheye tilt and loud funk-pop color. Carry it through JSR thick outlines, graffiti skaters, fisheye, funk colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'JSR thick outlines; graffiti skaters; fisheye; funk colors',
@@ -94,12 +96,12 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone: 'Black void with neon cyan, magenta and orange lines.',
       lighting_and_shadow: 'Self-lit glowing vector lines that pulse to a beat.',
       texture_and_material:
-        'Clean wireframe polygons and particle bursts, with the in-engine surface finish of Rez 2001.',
+        'Thin glowing lines outlining see-through shapes, dots and bursts of square light particles on black.',
       camera_and_composition:
         'On-rails view behind the wireframe avatar, framed the way Rez 2001 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with trance-like digital rapture.',
       rendering_and_quality:
-        'Authentic early-2000s wireframe rhythm shooter screen, matching real Rez 2001 screenshots.',
+        'A 2001 PlayStation 2 frame at 640 by 448: glowing lines with a soft blur halo, simple geometry and a lock-on cursor shape.',
       creative_brief:
         "United Game Artists Rez (2001) look: glowing vector wireframe worlds inside a computer network, a translucent wireframe humanoid avatar, lock-on lasers and Kandinsky-inspired synesthesia. Carry it through Rez wireframe, lock-on lasers, synesthesia, neon void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Rez wireframe; lock-on lasers; synesthesia; neon void',
@@ -128,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person or third-person across vast ringworld landscapes and glossy alien structures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Ringworld sky blue, alien purple and grass green.',
       lighting_and_shadow:
-        'Bright open-sky daylight with glossy purple reflections, lit the way Halo 2001 lights its levels.',
+        'Bright open-sky daylight with one simple shiny highlight on purple alien surfaces and no real shadows on grass.',
       texture_and_material:
         'Plain low-detail surfaces: grass as a flat green texture on smooth rolling hills, alien metal as smooth purple with one simple shiny highlight, and crisp but blocky armor shapes.',
       camera_and_composition: 'First-person view with a weapon at screen right.',
@@ -137,7 +139,8 @@ export const GENERATED_STYLE_PRESETS = [
         'A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster.',
       creative_brief:
         "Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, green fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Halo ringworld sky; purple alien structures; green fields',
+      key_features:
+        'Halo ringworld sky; purple alien structures; flat green fields; early Xbox simplicity',
     },
     ui: {
       previewStatus: 'pending',
@@ -163,14 +166,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small figures lost in monumental bleached stone architecture with heavy bloom. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bleached stone, faded moss green and pale sea grey.',
       lighting_and_shadow:
-        'Overexposed bloom light spilling through arches, lit the way ICO 2001 lights its levels.',
+        'Overexposed light that blooms and bleeds white over the edges of arches and windows.',
       texture_and_material:
-        'Soft weathered stone and hazy washed-out textures, with the in-engine surface finish of ICO 2001.',
+        'Soft washed-out stone with simple blocky architecture, tiny figures with little detail, everything slightly hazy.',
       camera_and_composition:
         'Wide distant cinematic camera dwarfing the figures, framed the way ICO 2001 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with silent tender melancholy.',
       rendering_and_quality:
-        'Authentic PS2 bloom-lit adventure screen, matching real ICO 2001 screenshots.',
+        'A 2001 PlayStation 2 frame at 640 by 448: soft, bleached and grainy, with jagged shimmering edges on distant towers.',
       creative_brief:
         "Team Ico ICO (2001) look: vast bleached stone castle, overexposed bloom, washed-out color, tiny figures lost in monumental architecture, soft misty sea light and silent melancholy. Carry it through ICO bleached castle, heavy bloom, tiny figures, melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'ICO bleached castle; heavy bloom; tiny figures; melancholy',
@@ -200,14 +203,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Alien teal, bioluminescent orange and visor green, true to the Metroid Prime 2002 palette.',
       lighting_and_shadow:
-        'Cave bioluminescence and reflected visor glow, lit the way Metroid Prime 2002 lights its levels.',
+        'Cave glow and colored light reflected faintly on the inside of a curved helmet visor.',
       texture_and_material:
-        'Glass droplets, visor reflections and alien stone, with the in-engine surface finish of Metroid Prime 2002.',
+        'Water droplets and fog on the visor glass, alien stone with simple repeating textures beyond it.',
       camera_and_composition:
         'First-person through a curved helmet visor, framed the way Metroid Prime 2002 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lonely alien exploration.',
       rendering_and_quality:
-        'Authentic GameCube first-person visor screen, matching real Metroid Prime 2002 screenshots.',
+        'A 2002 GameCube frame at 640 by 480: curved visor frame shapes around the edges, clean but simple world beyond.',
       creative_brief:
         "Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays. Carry it through Metroid Prime visor, droplets, scan overlay, alien ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Metroid Prime visor; droplets; scan overlay; alien ruins',
@@ -236,14 +239,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a bold cel-shaded tokusatsu hero on a 2.5D comic film set. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pop-art red, yellow, pink and black, true to the Viewtiful Joe 2003 palette.',
-      lighting_and_shadow:
-        'Flat comic light with dramatic slow-motion glow, lit the way Viewtiful Joe 2003 lights its levels.',
-      texture_and_material: 'Thick ink outlines, cel fills and speed lines.',
+      lighting_and_shadow: 'Flat comic-book light with a hot glow and blur trail when time slows.',
+      texture_and_material:
+        'Thick ink outlines, flat bright fills, speed lines and flat cardboard-looking scenery.',
       camera_and_composition:
         '2.5D side-scrolling film set view, framed the way Viewtiful Joe 2003 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with outrageous heroic swagger.',
       rendering_and_quality:
-        'Authentic GameCube comic cel action screen, matching real Viewtiful Joe 2003 screenshots.',
+        'A 2003 GameCube frame at 640 by 480: side-scrolling comic panel look with film grain and bright pop colors.',
       creative_brief:
         "Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color. Carry it through Viewtiful Joe comic cel, tokusatsu poses, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Viewtiful Joe comic cel; tokusatsu poses; speed lines',
@@ -273,14 +276,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Golden sand, palace turquoise and dusk amber, true to the Prince of Persia Sands of Time 2003 palette.',
       lighting_and_shadow:
-        'Golden bloom haze and dreamy soft focus, lit the way Prince of Persia Sands of Time 2003 lights its levels.',
+        'Golden light that blooms softly over everything, as if seen through warm gauze.',
       texture_and_material:
-        'Soft early-2000s textures with sand particles, with the in-engine surface finish of Prince of Persia Sands of Time 2003.',
+        'Soft blurry palace textures, simple columns and arches, and flat drifting sand sparkle particles.',
       camera_and_composition:
         'Third-person acrobatic camera along palace walls, framed the way Prince of Persia Sands of Time 2003 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with dreamy acrobatic legend.',
       rendering_and_quality:
-        'Authentic PS2 bloom action screen, matching real Prince of Persia Sands of Time 2003 screenshots.',
+        'A 2003 PlayStation 2 frame at 640 by 448: dreamy soft focus, shimmering jagged edges and a sand-glass bar shape in a corner.',
       creative_brief:
         "Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus. Carry it through Sands of Time golden haze, wall-running, palace, sand particles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sands of Time golden haze; wall-running; palace; sand particles',
@@ -306,21 +309,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a flat-shaded low-poly toy figure among candy-colored everyday objects. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Candy pink, mint, lemon and sky blue, true to the Katamari Damacy 2004 palette.',
       lighting_and_shadow:
-        'Flat cheerful light with no harsh shadows, lit the way Katamari Damacy 2004 lights its levels.',
+        'Flat cheerful light with no harsh shadows, every object a plain bright color.',
       texture_and_material:
-        'Flat-shaded simple polygons with no texture detail, with the in-engine surface finish of Katamari Damacy 2004.',
+        'Objects made of a few plain flat-colored blocks with no surface detail, like painted wooden toys.',
       camera_and_composition:
         'Third-person view behind a rolling ball, framed the way Katamari Damacy 2004 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with absurdist joyful chaos.',
       rendering_and_quality:
-        'Authentic PS2 flat-shaded screen, matching real Katamari Damacy 2004 screenshots.',
+        'A 2004 PlayStation 2 frame at 640 by 448: simple bright blocks, jagged edges and a slightly soft image.',
       creative_brief:
         "Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer. Carry it through Katamari flat low-poly, rolling ball, candy colors, absurd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Katamari flat low-poly; rolling ball; candy colors; absurd',
+      key_features: 'Katamari plain blocky toy world; rolling ball; candy colors; absurd',
     },
     ui: {
       previewStatus: 'pending',
@@ -346,15 +349,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a paper-flat cutout figure on a cardboard theater stage. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Warm storybook red, gold and cream, true to the Paper Mario TTYD 2004 palette.',
-      lighting_and_shadow:
-        'Warm stage spotlights on paper sets, lit the way Paper Mario TTYD 2004 lights its levels.',
+      lighting_and_shadow: 'Warm stage spotlights falling on paper sets and paper-thin figures.',
       texture_and_material:
-        'Flat paper cutouts, folds and cardboard edges, with the in-engine surface finish of Paper Mario TTYD 2004.',
+        'Paper-thin cutout figures with white edges, cardboard folds, tape and hinges on the stage sets.',
       camera_and_composition:
         'Side-view theater stage with audience, framed the way Paper Mario TTYD 2004 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with whimsical theatrical charm.',
       rendering_and_quality:
-        'Authentic GameCube papercraft RPG screen, matching real Paper Mario TTYD 2004 screenshots.',
+        'A 2004 GameCube frame at 640 by 480: clean and soft, flat paper figures on a cardboard theater stage.',
       creative_brief:
         "Intelligent Systems Paper Mario: The Thousand-Year Door (2004) look: paper-flat characters folding and fluttering in cardboard theater sets, audience seats, stage curtains and warm storybook color. Carry it through Paper-flat figures, cardboard theater, audience, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Paper-flat figures; cardboard theater; audience; storybook',
@@ -384,14 +386,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Saturated forest green, twilight purple and gold, true to the World of Warcraft 2004 palette.',
       lighting_and_shadow:
-        'Painted skybox light and baked painted shadows, lit the way World of Warcraft 2004 lights its levels.',
+        'Soft painted sky light, with shadows painted straight into the textures rather than cast.',
       texture_and_material:
-        'Hand-painted low-poly textures with no photo detail, with the in-engine surface finish of World of Warcraft 2004.',
+        'Chunky simple shapes wrapped in blurry hand-painted textures, oversized shoulder pads and weapons, no photo detail.',
       camera_and_composition:
         'Third-person over-the-shoulder view, framed the way World of Warcraft 2004 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cozy epic fantasy.',
       rendering_and_quality:
-        'Authentic mid-2000s online game screen, matching real World of Warcraft 2004 screenshots.',
+        'A 2004 PC frame at 1024 by 768: soft painted textures, simple geometry, fog at mid distance and small bar shapes at the bottom.',
       creative_brief:
         "Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'WoW hand-painted; chunky proportions; saturated zones',
@@ -421,14 +423,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Muted camp greens with surreal mindscape purples, true to the Psychonauts 2005 palette.',
       lighting_and_shadow:
-        'Theatrical surreal lighting inside minds, lit the way Psychonauts 2005 lights its levels.',
+        'Theatrical colored lighting inside minds, with flat moody tints on simple shapes.',
       texture_and_material:
-        'Painted cartoon textures and warped geometry, with the in-engine surface finish of Psychonauts 2005.',
+        'Painted cartoon textures on lopsided simple geometry, props bent and stretched like a stage set.',
       camera_and_composition:
         'Third-person platformer camera, framed the way Psychonauts 2005 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with weird whimsical psychology.',
       rendering_and_quality:
-        'Authentic mid-2000s surreal platformer screen, matching real Psychonauts 2005 screenshots.',
+        'A 2005 Xbox frame at 640 by 480: soft, slightly blurry cartoon textures and simple warped shapes.',
       creative_brief:
         "Double Fine Psychonauts (2005) look: Scott Campbell cartoon designs with lopsided heads and spindly limbs, warped mindscape levels, surreal floating architecture and Tim Burton-like whimsy. Carry it through Psychonauts lopsided designs, warped mindscape, whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Psychonauts lopsided designs; warped mindscape; whimsy',
@@ -458,14 +460,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Blown-out white, heavy black and blood red, true to the Killer7 2005 palette.',
       lighting_and_shadow:
-        'Harsh overexposed light with black shadow masses, lit the way Killer7 2005 lights its levels.',
+        'Harsh blown-out white light with shadows as solid black shapes and nothing in between.',
       texture_and_material:
-        'Flat polygon shading with no gradients, with the in-engine surface finish of Killer7 2005.',
+        'Every surface a flat solid color with no gradient or texture, angular shapes with sharp edges.',
       camera_and_composition:
         'Low dramatic angles along rail paths, framed the way Killer7 2005 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cold surreal noir.',
       rendering_and_quality:
-        'Authentic mid-2000s flat-shaded action screen, matching real Killer7 2005 screenshots.',
+        'A 2005 GameCube frame at 640 by 480: stark flat blocks of color, jagged edges and heavy film grain.',
       creative_brief:
         "Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir. Carry it through Killer7 flat shading, blown-out whites, stark noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Killer7 flat shading; blown-out whites; stark noir',
@@ -493,13 +495,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a bold ink-outlined flat-color illustration of gritty sun-baked street life. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Sun-baked orange, palm green and faded denim blue.',
-      lighting_and_shadow: 'Hard West Coast sun with flat cel shadow blocks.',
-      texture_and_material: 'Bold black ink outlines and flat color fills.',
+      lighting_and_shadow: 'Hard West Coast sun with flat blocks of cel shadow on faces and cars.',
+      texture_and_material:
+        'Bold black ink outlines and flat color fills with light grain, like printed promotional art.',
       camera_and_composition:
         'Dynamic loading-screen illustration crop, framed the way GTA San Andreas 2004 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty sun-baked swagger.',
       rendering_and_quality:
-        'Authentic mid-2000s game loading screen illustration, matching real GTA San Andreas 2004 screenshots.',
+        'A 2004 loading screen illustration: bold flat inked art of street life filling the frame, with a thin progress bar shape at the bottom.',
       creative_brief:
         "Rockstar Games Grand Theft Auto: San Andreas (2004) loading screen look: bold black ink outlines, flat cel color blocks, gritty early-nineties West Coast city characters and sun-baked streets. Carry it through GTA SA loading art, bold ink, flat color, West Coast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'GTA SA loading art; bold ink; flat color; West Coast',
@@ -528,14 +531,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject bulky and armored in desaturated grey-brown baroque ruins with over-the-shoulder framing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Desaturated grey, brown and ash with blue highlights.',
       lighting_and_shadow:
-        'Grey overcast with specular bloom highlights, lit the way Gears of War 2006 lights its levels.',
+        'Grey overcast light with glossy wet highlights on armor and bloom on bright spots.',
       texture_and_material:
-        'Normal-mapped rubble and heavy armor grit, with the in-engine surface finish of Gears of War 2006.',
+        'Bumpy rubble and armor that look detailed but plasticky, shiny edges, grey-brown everything.',
       camera_and_composition:
         'Low over-the-shoulder view behind cover, framed the way Gears of War 2006 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grim heavy survival.',
       rendering_and_quality:
-        'Authentic Unreal Engine 3 shooter screen, matching real Gears of War 2006 screenshots.',
+        'A 2006 Xbox 360 frame at 1280 by 720: shiny plasticky surfaces, textures that pop in, a reticle and a small weapon icon shape.',
       creative_brief:
         "Epic Games Gears of War (2006) look: desaturated grey-brown Unreal Engine 3 grit, bulky armored soldiers, crumbling baroque ruins, cover-shooter over-the-shoulder view and bloom highlights. Carry it through Gears grey-brown, bulky armor, baroque ruins, cover. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gears grey-brown; bulky armor; baroque ruins; cover',
@@ -563,14 +566,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in a first-person view of a decaying art deco underwater city. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deco gold, deep ocean teal and flickering neon.',
-      lighting_and_shadow: 'Ocean light through glass and flickering deco neon.',
+      lighting_and_shadow:
+        'Blue ocean light through tall windows and flickering deco neon on wet floors.',
       texture_and_material:
-        'Wet marble, brass, leaking water and grime, with the in-engine surface finish of BioShock 2007.',
+        'Wet marble and brass with shiny reflections, leaking water sheets, simple blocky props up close.',
       camera_and_composition:
         'First-person view with visible hands, framed the way BioShock 2007 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with decadent drowned menace.',
       rendering_and_quality:
-        'Authentic late-2000s first-person screen, matching real BioShock 2007 screenshots.',
+        'A 2007 Xbox 360 frame at 1280 by 720: glossy wet shading, soft bloom, a first-person hand and weapon at bottom right.',
       creative_brief:
         "Irrational Games BioShock (2007) look: decaying art deco underwater city, leaking glass tunnels, neon signs, ocean light through windows, first-person hands and retro-futurist menace. Carry it through BioShock deco, undersea city, leaking glass, neon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'BioShock deco; undersea city; leaking glass; neon',
@@ -599,14 +603,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject with an exaggerated readable silhouette and Leyendecker-style painterly shading. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm team red, cool team blue and desert tan.',
       lighting_and_shadow:
-        'Warm rim light with soft painterly shading, lit the way Team Fortress 2 2007 lights its levels.',
+        'Warm rim light around every figure and soft painted gradients on faces and cloth.',
       texture_and_material:
-        'Painterly shading with soft gradients, with the in-engine surface finish of Team Fortress 2 2007.',
+        'Painted soft gradients with no fine detail, figures with exaggerated readable shapes and clean flat materials.',
       camera_and_composition:
         'Heroic low third-person or first-person view, framed the way Team Fortress 2 2007 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with comedic mercenary mayhem.',
       rendering_and_quality:
-        'Authentic late-2000s painterly shooter screen, matching real Team Fortress 2 2007 screenshots.',
+        'A 2007 PC frame at 1280 by 720: clean smooth shading, bright team colors, simple architecture and HUD shapes in corners.',
       creative_brief:
         "Valve Team Fortress 2 (2007) look: J.C. Leyendecker-inspired painterly shading, exaggerated silhouettes, rim-lit warm and cool team colors and 1960s spy-industrial architecture. Carry it through TF2 painterly, Leyendecker shading, exaggerated silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'TF2 painterly; Leyendecker shading; exaggerated silhouettes',
@@ -635,14 +639,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject with thick ink outlines and hand-drawn hatching over cel-shaded 3D in a dusty wasteland. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sun-bleached tan, rust orange and sky blue, true to the Borderlands 2009 palette.',
-      lighting_and_shadow:
-        'Hard desert sun with hatched shadows, lit the way Borderlands 2009 lights its levels.',
+      lighting_and_shadow: 'Hard desert sun with shadows drawn as ink hatching lines.',
       texture_and_material:
-        'Ink outlines and hand-drawn hatching textures, with the in-engine surface finish of Borderlands 2009.',
+        'Thick black ink outlines and hand-drawn hatching painted onto every 3D surface.',
       camera_and_composition: 'First-person view with a gun or dusty vistas.',
       atmosphere_and_mood: 'Keep the requested mood with rowdy wasteland absurdity.',
       rendering_and_quality:
-        'Authentic late-2000s ink-shaded shooter screen, matching real Borderlands 2009 screenshots.',
+        'A 2009 Xbox 360 frame at 1280 by 720: comic-inked 3D world, bright dusty colors, a reticle and bar shapes.',
       creative_brief:
         "Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors. Carry it through Borderlands ink hatching, wasteland, junk towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Borderlands ink hatching; wasteland; junk towns',
@@ -670,15 +673,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small figure in soft painted impressionistic side-view platform worlds. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Soft watercolor gold, green and dusk blue, true to the Braid 2008 palette.',
-      lighting_and_shadow:
-        'Glowing dreamy light with shimmering haze, lit the way Braid 2008 lights its levels.',
+      lighting_and_shadow: 'Glowing dreamy light with shimmering soft haze over the scenery.',
       texture_and_material:
-        'Painterly impressionistic brush textures, with the in-engine surface finish of Braid 2008.',
+        'Soft impressionistic brush strokes in the backgrounds, small clean painted character sprites.',
       camera_and_composition:
         'Side-view platform scenes, framed the way Braid 2008 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with wistful dreamy regret.',
       rendering_and_quality:
-        'Authentic late-2000s painted indie platformer screen, matching real Braid 2008 screenshots.',
+        'A 2008 Xbox 360 side-view frame at 1280 by 720: soft painted layers with a small crisp character.',
       creative_brief:
         "Number None Braid (2008) look: David Hellman painted impressionistic backgrounds, soft watercolor clouds, glowing puzzle pieces, a small suited figure and dreamy time-rewinding shimmer. Carry it through Braid painted backgrounds, puzzle pieces, time shimmer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Braid painted backgrounds; puzzle pieces; time shimmer',
@@ -707,15 +709,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a chunky thick-line vector cartoon in bright flat Flash-era colors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright flat vector greens, yellows and reds, true to the Alien Hominid 2002 palette.',
-      lighting_and_shadow:
-        'Flat vector light with no gradients, lit the way Alien Hominid 2002 lights its levels.',
+      lighting_and_shadow: 'Flat light with no gradients, every shape a solid bright color.',
       texture_and_material:
-        'Thick wobbly vector lines and flat fills, with the in-engine surface finish of Alien Hominid 2002.',
+        'Thick wobbly black vector lines and flat fills, simple shapes and scribbly effects.',
       camera_and_composition:
         'Side-scrolling cartoon action view, framed the way Alien Hominid 2002 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with silly absurd mayhem.',
       rendering_and_quality:
-        'Authentic early-2000s Flash game screen, matching real Alien Hominid 2002 screenshots.',
+        'A 2002 Flash browser game frame: crisp vector cartoon, side-scrolling chaos on a plain background.',
       creative_brief:
         "The Behemoth Alien Hominid (2002) Newgrounds Flash look: Dan Paladin thick-line vector cartoon art, chunky silly characters, bright flat colors, cartoon explosions and absurd violence. Carry it through Newgrounds Flash, thick-line vector, silly chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Newgrounds Flash; thick-line vector; silly chaos',

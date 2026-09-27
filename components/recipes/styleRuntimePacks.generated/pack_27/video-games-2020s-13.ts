@@ -23,14 +23,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people with chrome implants and street fashion in dense neon megacity streets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Neon yellow, teal and magenta over wet asphalt.',
       lighting_and_shadow:
-        'Neon holograms and rain-soaked reflections, lit the way Cyberpunk 2077 2020 lights its levels.',
+        'Neon holograms and signs reflected sharply in rain puddles and chrome, deep black shadows between.',
       texture_and_material:
-        'Photoreal grime, chrome and glossy wet surfaces, with the in-engine surface finish of Cyberpunk 2077 2020.',
+        'Photoreal grime, chrome and glossy wet asphalt, with slightly soft game-engine detail and pop-in crowds.',
       camera_and_composition:
         'First-person street view, framed the way Cyberpunk 2077 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gritty neon hustle.',
       rendering_and_quality:
-        'Authentic ray-traced cyberpunk screen, matching real Cyberpunk 2077 2020 screenshots.',
+        'A 2020 PC frame at 2560 by 1440 in first person: mirror-sharp reflections, a small minimap circle top right and a hand at the edge.',
       creative_brief:
         "CD Projekt Red Cyberpunk 2077 (2020) look: dense photoreal Night City megastructures, yellow-teal neon, holographic ads, chrome implants, rain and first-person street grime. Carry it through Cyberpunk 2077 Night City neon, chrome implants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Cyberpunk 2077 Night City neon; chrome implants',
@@ -59,14 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny animated-film figures crossing giant everyday household worlds. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm toy colors, garden green and cozy amber.',
       lighting_and_shadow:
-        'Warm cinematic household light, lit the way It Takes Two 2021 lights its levels.',
+        'Warm household window light and soft bounce, like an animated family film.',
       texture_and_material:
-        'Animated-film stylized surfaces, with the in-engine surface finish of It Takes Two 2021.',
+        'Smooth animated-film materials, fuzzy fabric, glossy toy plastic and oversized household objects.',
       camera_and_composition:
         'Split-screen or third-person co-op view, framed the way It Takes Two 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with playful cooperative warmth.',
       rendering_and_quality:
-        'Authentic animated-film co-op screen, matching real It Takes Two 2021 screenshots.',
+        'A 2021 console frame at 1920 by 1080, split vertically into two gameplay views, each following a tiny figure.',
       creative_brief:
         "Hazelight It Takes Two (2021) look: animated-film co-op adventure through tiny worlds of a family home, giant toys, garden sheds, snow globes and warm playful color. Carry it through It Takes Two tiny worlds, giant toys, co-op. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'It Takes Two tiny worlds; giant toys; co-op',
@@ -94,15 +94,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in isometric soft-lit muted ruins and grey afterlife offices. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted grey, moss green and soft door glow.',
-      lighting_and_shadow:
-        'Soft diffuse light and glowing doors, lit the way Deaths Door 2021 lights its levels.',
+      lighting_and_shadow: 'Soft diffuse grey light and the warm glow of standing doorways.',
       texture_and_material:
-        'Clean low-detail 3D with soft shading, with the in-engine surface finish of Deaths Door 2021.',
+        'Clean simple 3D shapes with soft shading and almost no surface detail, muted greys with pops of color.',
       camera_and_composition:
         'Isometric top-down action view, framed the way Deaths Door 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet wry melancholy.',
       rendering_and_quality:
-        'Authentic isometric action screen, matching real Deaths Door 2021 screenshots.',
+        'A 2021 frame at 1920 by 1080 from a high diagonal angle: small crow figure in muted ruins, a few pip shapes in a corner.',
       creative_brief:
         "Acid Nerve Death’s Door (2021) look: isometric soft-lit 3D in muted grey offices of death, overgrown ruins, a tiny crow reaper, glowing doors and quiet melancholic humor. Carry it through Death's Door crow reaper, grey offices, glowing doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: "Death's Door crow reaper; grey offices; glowing doors",
@@ -130,14 +129,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as painterly stylized kung fu fighters with flat-shaded faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bold neon club pink, temple gold and jade.',
-      lighting_and_shadow: 'Stylized painterly light, lit the way Sifu 2022 lights its levels.',
+      lighting_and_shadow: 'Stylized painted light with soft colored shadows on flat-shaded faces.',
       texture_and_material:
-        'Painterly flat-shaded 3D, with the in-engine surface finish of Sifu 2022.',
+        'Simplified 3D with painterly brush textures, faces in flat planes of color.',
       camera_and_composition:
         'Third-person fight view, framed the way Sifu 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with disciplined painterly fury.',
       rendering_and_quality:
-        'Authentic stylized martial arts screen, matching real Sifu 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 in third person: a fighter mid-strike among painted thugs, a thin bar shape at the bottom.',
       creative_brief:
         "Sloclap Sifu (2022) look: painterly stylized 3D kung fu with flat-shaded faces, Hong Kong clubs, art galleries and temples, bold color, and bodies aging with each defeat. Carry it through Sifu painterly kung fu, flat shading, aging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sifu painterly kung fu; flat shading; aging',
@@ -165,14 +164,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in saturated tilt-shift isometric dioramas. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Saturated green, gold and ruin blue, true to the Tunic 2022 palette.',
-      lighting_and_shadow: 'Soft tilt-shift glow, lit the way Tunic 2022 lights its levels.',
+      lighting_and_shadow:
+        'Soft glowing light with the top and bottom of the frame gently out of focus.',
       texture_and_material:
-        'Smooth stylized low-poly 3D, with the in-engine surface finish of Tunic 2022.',
+        'Smooth simple shapes with clean saturated colors, rounded grass tufts and bright little buildings.',
       camera_and_composition:
         'Isometric tilt-shift view, framed the way Tunic 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with mysterious cozy exploration.',
       rendering_and_quality:
-        'Authentic tilt-shift adventure screen, matching real Tunic 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 from a high diagonal angle: tiny fox figure in a saturated diorama with blurred edges.',
       creative_brief:
         "Andrew Shouldice Tunic (2022) look: isometric tilt-shift diorama world, soft saturated color, a tiny fox hero and hand-illustrated instruction manual pages with secret language. Carry it through Tunic isometric diorama, tilt-shift, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Tunic isometric diorama; tilt-shift; storybook',
@@ -200,14 +200,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject at cat height in dense neon slum alleys among gentle screen-faced robots. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm neon orange, teal and grimy concrete, true to the Stray 2022 palette.',
-      lighting_and_shadow: 'Warm neon and hanging bulbs, lit the way Stray 2022 lights its levels.',
+      lighting_and_shadow: 'Warm neon signs and hanging bulbs glowing in grimy narrow alleys.',
       texture_and_material:
-        'Detailed grimy urban textures, with the in-engine surface finish of Stray 2022.',
+        'Detailed grimy concrete, cables and cardboard, rendered with soft console-game sharpness.',
       camera_and_composition:
         'Low cat-height third-person view, framed the way Stray 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gentle curious wonder.',
       rendering_and_quality:
-        'Authentic cat adventure screen, matching real Stray 2022 screenshots.',
+        'A 2022 console frame at 1920 by 1080: camera low at cat height, screen-faced robots in alleys, a small button prompt shape.',
       creative_brief:
         "BlueTwelve Stray (2022) look: dense walled neon slum city of stacked balconies, air conditioners and cables, a small orange cat, gentle robots with screen faces and warm light. Carry it through Stray walled city, screen-face robots, cat view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Stray walled city; screen-face robots; cat view',
@@ -235,15 +235,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in bright white heavenly architecture during first-person speedruns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Heavenly white, cyan and gold, true to the Neon White 2022 palette.',
-      lighting_and_shadow:
-        'Blinding clean heavenly light, lit the way Neon White 2022 lights its levels.',
+      lighting_and_shadow: 'Blinding clean white light with glowing blue and red target outlines.',
       texture_and_material:
-        'Clean stylized geometry with glow, with the in-engine surface finish of Neon White 2022.',
+        'Clean simple white geometry, glowing edges and flat-color anime demons.',
       camera_and_composition:
         'First-person parkour view, framed the way Neon White 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with euphoric heavenly speed.',
       rendering_and_quality:
-        'Authentic heaven speedrun screen, matching real Neon White 2022 screenshots.',
+        'A 2022 first-person frame at 1920 by 1080: floating white platforms, a card-shaped weapon at bottom right, speed lines.',
       creative_brief:
         "Angel Matrix Neon White (2022) look: bright white-and-cyan heavenly architecture, first-person parkour speedrunning, cards as weapons, demons popping into light and anime visual-novel interludes. Carry it through Neon White heaven, parkour, card weapons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Neon White heaven; parkour; card weapons',
@@ -271,14 +270,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as flat illuminated-manuscript and woodcut figures on parchment. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Parchment cream, ink black and illumination gold and red.',
-      lighting_and_shadow: 'Flat manuscript light, lit the way Pentiment 2022 lights its levels.',
+      lighting_and_shadow: 'Flat even light as on a manuscript page, no cast shadows.',
       texture_and_material:
-        'Parchment, ink outlines and woodcut hatching, with the in-engine surface finish of Pentiment 2022.',
+        'Parchment grain, ink outlines, woodcut hatching and flat washes of color on figures.',
       camera_and_composition:
         'Flat side-view manuscript page, framed the way Pentiment 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with scholarly village mystery.',
       rendering_and_quality:
-        'Authentic illuminated adventure screen, matching real Pentiment 2022 screenshots.',
+        'A 2022 side-view frame at 1920 by 1080: a village drawn like a manuscript page with small flat figures walking.',
       creative_brief:
         "Obsidian Pentiment (2022) look: sixteenth-century Bavarian village drawn like a living illuminated manuscript and woodcut, parchment backgrounds, ink outlines and hand-lettered speech. Carry it through Pentiment manuscript, woodcut, parchment village. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Pentiment manuscript; woodcut; parchment village',
@@ -307,15 +306,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as cute bold-outlined cartoon animals in pastel occult settings. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pastel purple, crimson and forest green, true to the Cult of the Lamb 2022 palette.',
-      lighting_and_shadow:
-        'Candle glow and ritual light, lit the way Cult of the Lamb 2022 lights its levels.',
+      lighting_and_shadow: 'Warm candle glow and red ritual light on dark ground.',
       texture_and_material:
-        'Bold outlines and flat cartoon shading, with the in-engine surface finish of Cult of the Lamb 2022.',
+        'Bold outlines and flat cartoon shading on cute animals, flat ground textures.',
       camera_and_composition:
         'Three-quarter top-down view, framed the way Cult of the Lamb 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cute creepy cheer.',
       rendering_and_quality:
-        'Authentic cute occult roguelike screen, matching real Cult of the Lamb 2022 screenshots.',
+        'A 2022 frame at 1920 by 1080 from a high angle: cute cartoon animals in an occult camp, heart shapes top left.',
       creative_brief:
         "Massive Monster Cult of the Lamb (2022) look: cute cartoon woodland animals in dark occult rituals, bold outlines, pastel-and-crimson palettes and cheerful creepy cult management. Carry it through Cult of the Lamb cute occult, bold outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Cult of the Lamb cute occult; bold outlines',
@@ -343,15 +341,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny pixel sprite swarmed by thousands of pixel enemies. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Gothic pixel greens, gem blue and weapon white.',
-      lighting_and_shadow:
-        'Flat pixel light with flashing effects, lit the way Vampire Survivors 2022 lights its levels.',
-      texture_and_material:
-        'Chunky retro pixel sprites, with the in-engine surface finish of Vampire Survivors 2022.',
+      lighting_and_shadow: 'Flat pixel colors with bright flashing weapon effects everywhere.',
+      texture_and_material: 'Chunky retro pixel sprites on a plain repeating grass or stone floor.',
       camera_and_composition:
         'Top-down swarm view, framed the way Vampire Survivors 2022 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with chaotic addictive frenzy.',
       rendering_and_quality:
-        'Authentic pixel swarm roguelike screen, matching real Vampire Survivors 2022 screenshots.',
+        'A 2022 PC frame: one tiny sprite in the center surrounded by hundreds of pixel monsters and swirling projectiles.',
       creative_brief:
         "poncle Vampire Survivors (2022) look: retro gothic pixel sprites, a tiny hero swarmed by thousands of enemies, screen-filling weapon effects, gems and chaotic bullet-heaven density. Carry it through Vampire Survivors swarm, pixel sprites, weapon chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Vampire Survivors swarm; pixel sprites; weapon chaos',
@@ -379,15 +375,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as detailed cinematic fantasy characters in torchlit camps and cities. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm torch amber, forest green and gothic purple.',
-      lighting_and_shadow:
-        'Cinematic campfire and torchlight, lit the way Baldurs Gate 3 2023 lights its levels.',
+      lighting_and_shadow: 'Warm campfire and torchlight with deep night blues around.',
       texture_and_material:
-        'Detailed painterly-realistic fantasy surfaces, with the in-engine surface finish of Baldurs Gate 3 2023.',
+        'Detailed realistic fantasy materials with slightly soft game-engine sharpness.',
       camera_and_composition:
         'Cinematic dialogue close-ups and isometric views, framed the way Baldurs Gate 3 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with dramatic fantasy intrigue.',
       rendering_and_quality:
-        'Authentic cinematic fantasy RPG screen, matching real Baldurs Gate 3 2023 screenshots.',
+        'A 2023 PC frame at 2560 by 1440 from a high angle: a small party in a camp, a hotbar of blank slots along the bottom.',
       creative_brief:
         "Larian Studios Baldur’s Gate 3 (2023) look: cinematic high-fantasy role-playing, detailed painterly realism, torchlit camps, tadpole horror, dice-driven drama and grand gothic cities. Carry it through Baldur's Gate 3 cinematic fantasy, campfire, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: "Baldur's Gate 3 cinematic fantasy; campfire; gothic city",
@@ -416,14 +411,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in photoreal rainy noir towns and nightmarish city streets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Wet forest green, noir blue and flashlight white.',
       lighting_and_shadow:
-        'Flashlight beams and neon in fog, lit the way Alan Wake 2 2023 lights its levels.',
+        'A flashlight beam cutting through fog, neon signs smeared on wet streets.',
       texture_and_material:
-        'Photoreal wet surfaces and grain, with the in-engine surface finish of Alan Wake 2 2023.',
+        'Photoreal wet surfaces with heavy film grain and slight motion softness.',
       camera_and_composition:
         'Over-the-shoulder flashlight view, framed the way Alan Wake 2 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with surreal noir dread.',
       rendering_and_quality:
-        'Authentic photoreal horror screen, matching real Alan Wake 2 2023 screenshots.',
+        'A 2023 frame at 2560 by 1440 in third person over the shoulder: flashlight cone, dark fog, a small weapon icon shape.',
       creative_brief:
         "Remedy Alan Wake 2 (2023) look: photoreal Pacific Northwest noir, rain and fog, a nightmarish New York Dark Place, live-action overlays, flashlight beams and meta horror. Carry it through Alan Wake 2 noir, Dark Place, flashlight fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Alan Wake 2 noir; Dark Place; flashlight fog',
@@ -452,15 +447,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as detailed modern pixel sprites in lush dynamically lit landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Sunset gold, moon blue and lush green, true to the Sea of Stars 2023 palette.',
-      lighting_and_shadow:
-        'Dynamic day-night pixel lighting, lit the way Sea of Stars 2023 lights its levels.',
+      lighting_and_shadow: 'Dynamic day-night light, glowing torches and long pixel shadows.',
       texture_and_material:
-        'Lush detailed pixel art with light effects, with the in-engine surface finish of Sea of Stars 2023.',
+        'Lush detailed pixel art with soft modern lighting laid over the pixels.',
       camera_and_composition:
         'Three-quarter top-down RPG view, framed the way Sea of Stars 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with warm heroic nostalgia.',
       rendering_and_quality:
-        'Authentic modern pixel RPG screen, matching real Sea of Stars 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080: crisp pixel sprites in a lush pixel landscape with smooth glowing light.',
       creative_brief:
         "Sabotage Studio Sea of Stars (2023) look: lush modern pixel art RPG inspired by Chrono Trigger, dynamic day-night lighting, sparkling seas, solstice magic and sweeping vistas. Carry it through Sea of Stars pixel art, day-night light, solstice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sea of Stars pixel art; day-night light; solstice',
@@ -489,15 +483,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in dark Belle Époque streets with gas lamps and broken porcelain puppets. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Gaslight amber, soot black and porcelain white, true to the Lies of P 2023 palette.',
-      lighting_and_shadow:
-        'Gas lamps in foggy dark streets, lit the way Lies of P 2023 lights its levels.',
+      lighting_and_shadow: 'Gas lamps glowing through fog on dark wet cobblestones.',
       texture_and_material:
-        'Detailed soot, porcelain and brass, with the in-engine surface finish of Lies of P 2023.',
+        'Detailed soot, cracked porcelain and brass with a slightly soft game-engine finish.',
       camera_and_composition:
         'Third-person soulslike view, framed the way Lies of P 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie ornate decay.',
       rendering_and_quality:
-        'Authentic dark Belle Époque action screen, matching real Lies of P 2023 screenshots.',
+        'A 2023 frame at 2560 by 1440 in third person: a figure seen from behind in foggy streets, bar shapes top left.',
       creative_brief:
         "Neowiz Lies of P (2023) look: dark Belle Époque city of Krat, gas lamps, broken puppets with porcelain faces, cobblestone streets and ornate gothic machinery. Carry it through Lies of P Belle Époque, puppets, gas lamps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Lies of P Belle Époque; puppets; gas lamps',
@@ -526,14 +519,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as frantic squash-and-stretch hand-drawn cartoon figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Loud cartoon yellow, tomato red and purple, true to the Pizza Tower 2023 palette.',
-      lighting_and_shadow: 'Flat cartoon light, lit the way Pizza Tower 2023 lights its levels.',
+      lighting_and_shadow: 'Flat cartoon colors with no shading at all.',
       texture_and_material:
-        'Chunky hand-drawn outlines and flat color, with the in-engine surface finish of Pizza Tower 2023.',
+        'Chunky hand-drawn outlines, wobbling squash-and-stretch sprites and flat color.',
       camera_and_composition:
         'Side-scrolling chaotic platformer view, framed the way Pizza Tower 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with frantic cartoon chaos.',
       rendering_and_quality:
-        'Authentic hand-drawn cartoon platformer screen, matching real Pizza Tower 2023 screenshots.',
+        'A 2023 frame at 960 by 540: frantic side-view cartoon sprite smashing blocks, a TV-shaped box in the corner.',
       creative_brief:
         "Tour De Pizza Pizza Tower (2023) look: frantic hand-drawn nineties cartoon animation in the spirit of Wario Land, squash-and-stretch exaggeration, chunky outlines and chaotic speed. Carry it through Pizza Tower frantic cartoon, squash and stretch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Pizza Tower frantic cartoon; squash and stretch',
@@ -563,14 +556,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Pastel ochre, lilac and sky teal, true to the Chants of Sennaar 2023 palette.',
       lighting_and_shadow:
-        'Flat clean ligne claire light, lit the way Chants of Sennaar 2023 lights its levels.',
-      texture_and_material:
-        'Moebius clean lines and flat color, with the in-engine surface finish of Chants of Sennaar 2023.',
+        'Flat clean light with soft pastel shadows, lit the way Chants of Sennaar 2023 lights its levels.',
+      texture_and_material: 'Clean thin outlines and flat pastel color on simple 3D architecture.',
       camera_and_composition:
         'Wide architectural third-person view, framed the way Chants of Sennaar 2023 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with serene curious deciphering.',
       rendering_and_quality:
-        'Authentic ligne claire puzzle screen, matching real Chants of Sennaar 2023 screenshots.',
+        'A 2023 frame at 1920 by 1080: small veiled traveler in vast pastel tower architecture, clean outlines.',
       creative_brief:
         "Rundisc Chants of Sennaar (2023) look: Moebius-inspired flat-colored ligne claire tower of Babel, pastel architecture, veiled travelers and puzzles deciphering invented glyph languages. Carry it through Chants of Sennaar Moebius, tower, glyph language. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Chants of Sennaar Moebius; tower; glyph language',
@@ -599,14 +591,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as pixel-art playing cards and jokers on swirling psychedelic CRT felt. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Swirling red, teal felt and foil gold, true to the Balatro 2024 palette.',
       lighting_and_shadow:
-        'CRT glow and holographic foil shine, lit the way Balatro 2024 lights its levels.',
+        'CRT glow over a swirling psychedelic background, foil shine on some cards.',
       texture_and_material:
-        'Pixel cards with CRT scanlines and warp, with the in-engine surface finish of Balatro 2024.',
+        'Pixel-art playing cards with scanlines and a slight curved-screen warp.',
       camera_and_composition:
         'Flat card table view, framed the way Balatro 2024 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with hypnotic gambling rush.',
       rendering_and_quality:
-        'Authentic psychedelic card roguelike screen, matching real Balatro 2024 screenshots.',
+        'A 2024 frame at 1920 by 1080: a hand of pixel cards at the bottom, a row of joker cards above, swirling felt behind.',
       creative_brief:
         "LocalThunk Balatro (2024) look: pixel-art poker cards on a swirling psychedelic CRT-filtered felt background, jokers with holographic foils, chips and multipliers flashing. Carry it through Balatro CRT swirl, pixel cards, foil jokers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Balatro CRT swirl; pixel cards; foil jokers',
@@ -634,15 +626,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny pixel sprites in dark wells lit by glowing sources. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Deep black with glowing teal, pink and amber.',
-      lighting_and_shadow:
-        'Bioluminescent pixel light sources, lit the way Animal Well 2024 lights its levels.',
+      lighting_and_shadow: 'Small glowing pixel light sources in near-total darkness.',
       texture_and_material:
-        'Tiny detailed pixel art with glow, with the in-engine surface finish of Animal Well 2024.',
+        'Tiny detailed pixel art with soft modern glow and bloom around lights.',
       camera_and_composition:
         'Side-view single-screen metroidvania, framed the way Animal Well 2024 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie curious mystery.',
       rendering_and_quality:
-        'Authentic dark pixel metroidvania screen, matching real Animal Well 2024 screenshots.',
+        'A 2024 frame at 320 by 180 scaled up: a tiny blob sprite in a dark well, glowing plants and a huge animal shape.',
       creative_brief:
         "Shared Memory Animal Well (2024) look: tiny dark pixel art with glowing bioluminescent light sources, eerie giant animals, a small blob hero and dense hand-crafted secrets. Carry it through Animal Well glowing pixels, dark wells, giant animals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Animal Well glowing pixels; dark wells; giant animals',
@@ -671,15 +662,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny glossy toy robots in bright playful platform worlds. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Glossy candy blue, sunny yellow and white, true to the Astro Bot 2024 palette.',
-      lighting_and_shadow:
-        'Bright cheerful daylight with glossy highlights, lit the way Astro Bot 2024 lights its levels.',
-      texture_and_material:
-        'Glossy plastic toy surfaces, with the in-engine surface finish of Astro Bot 2024.',
+      lighting_and_shadow: 'Bright cheerful daylight with glossy highlights on every toy surface.',
+      texture_and_material: 'Glossy plastic toy surfaces, rounded edges and bright primary colors.',
       camera_and_composition:
         'Third-person platformer view, framed the way Astro Bot 2024 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with pure playful joy.',
       rendering_and_quality:
-        'Authentic toy platformer screen, matching real Astro Bot 2024 screenshots.',
+        'A 2024 console frame at 3840 by 2160: tiny glossy robot on a bright toy platform, sharp and colorful.',
       creative_brief:
         "Team Asobi Astro Bot (2024) look: glossy toy-like robot platforming, bright playful worlds of candy colors, physics-driven props, cheering tiny bots and joyful polish. Carry it through Astro Bot glossy toys, playful worlds, tiny bots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Astro Bot glossy toys; playful worlds; tiny bots',
@@ -708,15 +697,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as graceful Belle Époque expeditioners in painterly surreal landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Painterly gold, rose and deep blue, true to the Clair Obscur Expedition 33 2025 palette.',
-      lighting_and_shadow:
-        'Soft painterly glow with surreal light, lit the way Clair Obscur Expedition 33 2025 lights its levels.',
-      texture_and_material:
-        'Detailed painterly realism, with the in-engine surface finish of Clair Obscur Expedition 33 2025.',
+      lighting_and_shadow: 'Soft painterly glow with surreal floating light sources.',
+      texture_and_material: 'Detailed painterly realism with slightly soft game-engine sharpness.',
       camera_and_composition:
         'Cinematic third-person vistas, framed the way Clair Obscur Expedition 33 2025 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic surreal beauty.',
       rendering_and_quality:
-        'Authentic painterly fantasy RPG screen, matching real Clair Obscur Expedition 33 2025 screenshots.',
+        'A 2025 frame at 2560 by 1440: turn-based battle with a party on one side and a surreal enemy, blank command shapes.',
       creative_brief:
         "Sandfall Interactive Clair Obscur: Expedition 33 (2025) look: Belle Époque-inspired dark fantasy, painterly surreal landscapes, a giant painted monolith, graceful expeditioners and melancholic beauty. Carry it through Expedition 33 Belle Époque, painterly surreal, expedition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Expedition 33 Belle Époque; painterly surreal; expedition',

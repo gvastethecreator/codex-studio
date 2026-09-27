@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Braid 2008 - Number None Painted Time Puzzle
 category: 6. Video Games 2000s
 domain: two-thousands indie puzzle platformer
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Number None Braid (2008) look: David Hellman painted impressionistic backgrounds, soft watercolor clouds, glowing puzzle pieces, a small suited figure and dreamy time-rewinding shimmer.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small figure in soft painted impressionistic side-view platform worlds. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft watercolor gold, green and dusk blue, true to the Braid 2008 palette.
-  lighting_and_shadow: Glowing dreamy light with shimmering haze, lit the way Braid 2008 lights its levels.
-  texture_and_material: Painterly impressionistic brush textures, with the in-engine surface finish of Braid 2008.
+  lighting_and_shadow: "Glowing dreamy light with shimmering soft haze over the scenery."
+  texture_and_material: "Soft impressionistic brush strokes in the backgrounds, small clean painted character sprites."
   camera_and_composition: Side-view platform scenes, framed the way Braid 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wistful dreamy regret.
-  rendering_and_quality: Authentic late-2000s painted indie platformer screen, matching real Braid 2008 screenshots.
+  rendering_and_quality: "A 2008 Xbox 360 side-view frame at 1280 by 720: soft painted layers with a small crisp character."
   creative_brief: 'Number None Braid (2008) look: David Hellman painted impressionistic backgrounds, soft watercolor clouds, glowing puzzle pieces, a small suited figure and dreamy time-rewinding shimmer. Carry it through Braid painted backgrounds, puzzle pieces, time shimmer. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Braid painted backgrounds; puzzle pieces; time shimmer
 avoidRules:

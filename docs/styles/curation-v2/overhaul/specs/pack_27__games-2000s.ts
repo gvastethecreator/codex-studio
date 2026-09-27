@@ -22,11 +22,14 @@ const spec: Spec = {
         subject:
           'render the subject as a toon cel-shaded 3D figure with huge expressive eyes and crisp two-tone shading.',
         color: 'Sparkling sea blue, grass green and warm sunset orange.',
-        light: 'Bright sun with crisp two-tone cel shadows.',
-        texture: 'Flat cel colors, swirl-shaped smoke and wind curls.',
+        light:
+          'Bright sun with every shadow a single hard-edged darker flat tone, no soft gradients anywhere.',
+        texture:
+          'Flat cartoon color fills with simple shapes, swirl-shaped smoke, wind curls and clouds drawn as flat curled ribbons.',
         camera: 'Wide third-person view over islands and sea.',
         mood: 'bright seafaring wonder',
-        render: 'Authentic GameCube cel-shaded screen.',
+        render:
+          'A 2002 GameCube frame at 640 by 480: clean smooth edges, bright flat colors, slightly soft image like a period screenshot.',
         key: 'Wind Waker toon shading; huge eyes; swirl clouds; open sea',
         avoid: ['a green-tunic elf hero', 'a talking red boat'],
         briefs: [
@@ -45,11 +48,14 @@ const spec: Spec = {
         subject:
           'render the subject as a thick-outline cel-shaded skater figure in loud graffiti streets.',
         color: 'Loud funk-pop yellow, magenta, lime and sky blue.',
-        light: 'Bright flat daylight with black cel outlines.',
-        texture: 'Thick black outlines, flat cel fills and spray paint.',
+        light:
+          'Bright flat daylight with thick black outlines around every figure and building edge.',
+        texture:
+          'Thick black outlines, flat cartoon fills and walls of loud spray paint in simple repeating tiles.',
         camera: 'Low fisheye tilt following the skater.',
         mood: 'rebellious funky street energy',
-        render: 'Authentic Dreamcast cel-shaded screen.',
+        render:
+          'A 2000 Dreamcast frame at 640 by 480: crisp outlined cartoon look, wide slightly curved street view, simple chunky buildings.',
         key: 'JSR thick outlines; graffiti skaters; fisheye; funk colors',
         avoid: ['existing skater gang members'],
         briefs: [
@@ -69,10 +75,12 @@ const spec: Spec = {
           'render the subject as a glowing translucent wireframe figure inside a pulsing vector network.',
         color: 'Black void with neon cyan, magenta and orange lines.',
         light: 'Self-lit glowing vector lines that pulse to a beat.',
-        texture: 'Clean wireframe polygons and particle bursts.',
+        texture:
+          'Thin glowing lines outlining see-through shapes, dots and bursts of square light particles on black.',
         camera: 'On-rails view behind the wireframe avatar.',
         mood: 'trance-like digital rapture',
-        render: 'Authentic early-2000s wireframe rhythm shooter screen.',
+        render:
+          'A 2001 PlayStation 2 frame at 640 by 448: glowing lines with a soft blur halo, simple geometry and a lock-on cursor shape.',
         key: 'Rez wireframe; lock-on lasers; synesthesia; neon void',
         avoid: ['existing avatar forms'],
         briefs: [
@@ -87,14 +95,15 @@ const spec: Spec = {
       subject:
         'render the subject in first-person or third-person across vast ringworld landscapes and glossy alien structures.',
       color: 'Ringworld sky blue, alien purple and grass green.',
-      light: 'Bright open-sky daylight with glossy purple reflections.',
+      light:
+        'Bright open-sky daylight with one simple shiny highlight on purple alien surfaces and no real shadows on grass.',
       texture:
         'Plain low-detail surfaces: grass as a flat green texture on smooth rolling hills, alien metal as smooth purple with one simple shiny highlight, and crisp but blocky armor shapes.',
       camera: 'First-person view with a weapon at screen right.',
       mood: 'epic alien frontier',
       render:
         'A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster.',
-      key: 'Halo ringworld sky; purple alien structures; green fields',
+      key: 'Halo ringworld sky; purple alien structures; flat green fields; early Xbox simplicity',
       avoid: ['a green armored super soldier with a gold visor', 'existing alien species'],
       briefs: [
         'Under a vast ringworld sky that curves up into space, a first-person park ranger with a flare gun crosses a bright green alien meadow toward a glossy purple structure where a flock of floating jellyfish guards the entrance. No readable text or logo.',
@@ -111,11 +120,14 @@ const spec: Spec = {
         subject:
           'render the subject as small figures lost in monumental bleached stone architecture with heavy bloom.',
         color: 'Bleached stone, faded moss green and pale sea grey.',
-        light: 'Overexposed bloom light spilling through arches.',
-        texture: 'Soft weathered stone and hazy washed-out textures.',
+        light:
+          'Overexposed light that blooms and bleeds white over the edges of arches and windows.',
+        texture:
+          'Soft washed-out stone with simple blocky architecture, tiny figures with little detail, everything slightly hazy.',
         camera: 'Wide distant cinematic camera dwarfing the figures.',
         mood: 'silent tender melancholy',
-        render: 'Authentic PS2 bloom-lit adventure screen.',
+        render:
+          'A 2001 PlayStation 2 frame at 640 by 448: soft, bleached and grainy, with jagged shimmering edges on distant towers.',
         key: 'ICO bleached castle; heavy bloom; tiny figures; melancholy',
         avoid: ['a horned boy and a glowing pale girl holding hands'],
         briefs: [
@@ -134,11 +146,14 @@ const spec: Spec = {
         subject:
           'render the subject seen through a curved first-person visor with HUD arcs and droplets on the glass.',
         color: 'Alien teal, bioluminescent orange and visor green.',
-        light: 'Cave bioluminescence and reflected visor glow.',
-        texture: 'Glass droplets, visor reflections and alien stone.',
+        light:
+          'Cave glow and colored light reflected faintly on the inside of a curved helmet visor.',
+        texture:
+          'Water droplets and fog on the visor glass, alien stone with simple repeating textures beyond it.',
         camera: 'First-person through a curved helmet visor.',
         mood: 'lonely alien exploration',
-        render: 'Authentic GameCube first-person visor screen.',
+        render:
+          'A 2002 GameCube frame at 640 by 480: curved visor frame shapes around the edges, clean but simple world beyond.',
         key: 'Metroid Prime visor; droplets; scan overlay; alien ruins',
         avoid: ['an orange power suit with an arm cannon', 'floating jellyfish parasites'],
         briefs: [
@@ -156,11 +171,13 @@ const spec: Spec = {
         look: 'Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color.',
         subject: 'render the subject as a bold cel-shaded tokusatsu hero on a 2.5D comic film set.',
         color: 'Pop-art red, yellow, pink and black.',
-        light: 'Flat comic light with dramatic slow-motion glow.',
-        texture: 'Thick ink outlines, cel fills and speed lines.',
+        light: 'Flat comic-book light with a hot glow and blur trail when time slows.',
+        texture:
+          'Thick ink outlines, flat bright fills, speed lines and flat cardboard-looking scenery.',
         camera: '2.5D side-scrolling film set view.',
         mood: 'outrageous heroic swagger',
-        render: 'Authentic GameCube comic cel action screen.',
+        render:
+          'A 2003 GameCube frame at 640 by 480: side-scrolling comic panel look with film grain and bright pop colors.',
         key: 'Viewtiful Joe comic cel; tokusatsu poses; speed lines',
         avoid: ['a red hero with a V-shaped visor and scarf'],
         briefs: [
@@ -179,11 +196,13 @@ const spec: Spec = {
         subject:
           'render the subject mid-acrobatics in golden hazy Persian palaces with drifting sand particles.',
         color: 'Golden sand, palace turquoise and dusk amber.',
-        light: 'Golden bloom haze and dreamy soft focus.',
-        texture: 'Soft early-2000s textures with sand particles.',
+        light: 'Golden light that blooms softly over everything, as if seen through warm gauze.',
+        texture:
+          'Soft blurry palace textures, simple columns and arches, and flat drifting sand sparkle particles.',
         camera: 'Third-person acrobatic camera along palace walls.',
         mood: 'dreamy acrobatic legend',
-        render: 'Authentic PS2 bloom action screen.',
+        render:
+          'A 2003 PlayStation 2 frame at 640 by 448: dreamy soft focus, shimmering jagged edges and a sand-glass bar shape in a corner.',
         key: 'Sands of Time golden haze; wall-running; palace; sand particles',
         avoid: ['a shirtless prince with a dagger of time'],
         briefs: [
@@ -200,14 +219,16 @@ const spec: Spec = {
       {
         look: 'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer.',
         subject:
-          'render the subject as a flat-shaded low-poly toy figure among candy-colored everyday objects.',
+          'show the subject as a tiny boxy toy figure pushing a sticky ball among everyday objects built from plain untextured blocks.',
         color: 'Candy pink, mint, lemon and sky blue.',
-        light: 'Flat cheerful light with no harsh shadows.',
-        texture: 'Flat-shaded simple polygons with no texture detail.',
+        light: 'Flat cheerful light with no harsh shadows, every object a plain bright color.',
+        texture:
+          'Objects made of a few plain flat-colored blocks with no surface detail, like painted wooden toys.',
         camera: 'Third-person view behind a rolling ball.',
         mood: 'absurdist joyful chaos',
-        render: 'Authentic PS2 flat-shaded screen.',
-        key: 'Katamari flat low-poly; rolling ball; candy colors; absurd',
+        render:
+          'A 2004 PlayStation 2 frame at 640 by 448: simple bright blocks, jagged edges and a slightly soft image.',
+        key: 'Katamari plain blocky toy world; rolling ball; candy colors; absurd',
         avoid: ['a tiny green prince with a rod-shaped head', 'a giant king in tights'],
         briefs: [
           'In a flat-shaded candy-colored town, a tiny round beetle pushes a sticky ball that has already rolled up cats, bicycles, a birthday cake and a panicking mailman, the whole lump now taller than the houses. No readable text or logo.',
@@ -224,11 +245,13 @@ const spec: Spec = {
         look: 'Intelligent Systems Paper Mario: The Thousand-Year Door (2004) look: paper-flat characters folding and fluttering in cardboard theater sets, audience seats, stage curtains and warm storybook color.',
         subject: 'render the subject as a paper-flat cutout figure on a cardboard theater stage.',
         color: 'Warm storybook red, gold and cream.',
-        light: 'Warm stage spotlights on paper sets.',
-        texture: 'Flat paper cutouts, folds and cardboard edges.',
+        light: 'Warm stage spotlights falling on paper sets and paper-thin figures.',
+        texture:
+          'Paper-thin cutout figures with white edges, cardboard folds, tape and hinges on the stage sets.',
         camera: 'Side-view theater stage with audience.',
         mood: 'whimsical theatrical charm',
-        render: 'Authentic GameCube papercraft RPG screen.',
+        render:
+          'A 2004 GameCube frame at 640 by 480: clean and soft, flat paper figures on a cardboard theater stage.',
         key: 'Paper-flat figures; cardboard theater; audience; storybook',
         avoid: ['a mustached plumber in red and blue', 'existing Nintendo characters'],
         briefs: [
@@ -247,11 +270,14 @@ const spec: Spec = {
         subject:
           'render the subject with chunky cartoon proportions and oversized gear painted in hand-painted textures.',
         color: 'Saturated forest green, twilight purple and gold.',
-        light: 'Painted skybox light and baked painted shadows.',
-        texture: 'Hand-painted low-poly textures with no photo detail.',
+        light:
+          'Soft painted sky light, with shadows painted straight into the textures rather than cast.',
+        texture:
+          'Chunky simple shapes wrapped in blurry hand-painted textures, oversized shoulder pads and weapons, no photo detail.',
         camera: 'Third-person over-the-shoulder view.',
         mood: 'cozy epic fantasy',
-        render: 'Authentic mid-2000s online game screen.',
+        render:
+          'A 2004 PC frame at 1024 by 768: soft painted textures, simple geometry, fog at mid distance and small bar shapes at the bottom.',
         key: 'WoW hand-painted; chunky proportions; saturated zones',
         avoid: ['existing races and faction crests', 'orc warchiefs'],
         briefs: [
@@ -270,11 +296,13 @@ const spec: Spec = {
         subject:
           'render the subject as a lopsided spindly cartoon figure inside a warped surreal mindscape.',
         color: 'Muted camp greens with surreal mindscape purples.',
-        light: 'Theatrical surreal lighting inside minds.',
-        texture: 'Painted cartoon textures and warped geometry.',
+        light: 'Theatrical colored lighting inside minds, with flat moody tints on simple shapes.',
+        texture:
+          'Painted cartoon textures on lopsided simple geometry, props bent and stretched like a stage set.',
         camera: 'Third-person platformer camera.',
         mood: 'weird whimsical psychology',
-        render: 'Authentic mid-2000s surreal platformer screen.',
+        render:
+          'A 2005 Xbox frame at 640 by 480: soft, slightly blurry cartoon textures and simple warped shapes.',
         key: 'Psychonauts lopsided designs; warped mindscape; whimsy',
         avoid: ['a goggled boy in a psychic suit'],
         briefs: [
@@ -293,11 +321,14 @@ const spec: Spec = {
         subject:
           'render the subject as a stark flat-shaded angular figure in blown-out white and heavy black.',
         color: 'Blown-out white, heavy black and blood red.',
-        light: 'Harsh overexposed light with black shadow masses.',
-        texture: 'Flat polygon shading with no gradients.',
+        light:
+          'Harsh blown-out white light with shadows as solid black shapes and nothing in between.',
+        texture:
+          'Every surface a flat solid color with no gradient or texture, angular shapes with sharp edges.',
         camera: 'Low dramatic angles along rail paths.',
         mood: 'cold surreal noir',
-        render: 'Authentic mid-2000s flat-shaded action screen.',
+        render:
+          'A 2005 GameCube frame at 640 by 480: stark flat blocks of color, jagged edges and heavy film grain.',
         key: 'Killer7 flat shading; blown-out whites; stark noir',
         avoid: ['existing assassin personas'],
         briefs: [
@@ -316,11 +347,13 @@ const spec: Spec = {
         subject:
           'render the subject as a bold ink-outlined flat-color illustration of gritty sun-baked street life.',
         color: 'Sun-baked orange, palm green and faded denim blue.',
-        light: 'Hard West Coast sun with flat cel shadow blocks.',
-        texture: 'Bold black ink outlines and flat color fills.',
+        light: 'Hard West Coast sun with flat blocks of cel shadow on faces and cars.',
+        texture:
+          'Bold black ink outlines and flat color fills with light grain, like printed promotional art.',
         camera: 'Dynamic loading-screen illustration crop.',
         mood: 'gritty sun-baked swagger',
-        render: 'Authentic mid-2000s game loading screen illustration.',
+        render:
+          'A 2004 loading screen illustration: bold flat inked art of street life filling the frame, with a thin progress bar shape at the bottom.',
         key: 'GTA SA loading art; bold ink; flat color; West Coast',
         avoid: ['existing gang characters', 'a bandana-wearing protagonist in a white tank top'],
         briefs: [
@@ -339,11 +372,13 @@ const spec: Spec = {
         subject:
           'render the subject bulky and armored in desaturated grey-brown baroque ruins with over-the-shoulder framing.',
         color: 'Desaturated grey, brown and ash with blue highlights.',
-        light: 'Grey overcast with specular bloom highlights.',
-        texture: 'Normal-mapped rubble and heavy armor grit.',
+        light: 'Grey overcast light with glossy wet highlights on armor and bloom on bright spots.',
+        texture:
+          'Bumpy rubble and armor that look detailed but plasticky, shiny edges, grey-brown everything.',
         camera: 'Low over-the-shoulder view behind cover.',
         mood: 'grim heavy survival',
-        render: 'Authentic Unreal Engine 3 shooter screen.',
+        render:
+          'A 2006 Xbox 360 frame at 1280 by 720: shiny plasticky surfaces, textures that pop in, a reticle and a small weapon icon shape.',
         key: 'Gears grey-brown; bulky armor; baroque ruins; cover',
         avoid: ['chainsaw rifles', 'existing squad members'],
         briefs: [
@@ -362,11 +397,13 @@ const spec: Spec = {
         subject:
           'render the subject in a first-person view of a decaying art deco underwater city.',
         color: 'Deco gold, deep ocean teal and flickering neon.',
-        light: 'Ocean light through glass and flickering deco neon.',
-        texture: 'Wet marble, brass, leaking water and grime.',
+        light: 'Blue ocean light through tall windows and flickering deco neon on wet floors.',
+        texture:
+          'Wet marble and brass with shiny reflections, leaking water sheets, simple blocky props up close.',
         camera: 'First-person view with visible hands.',
         mood: 'decadent drowned menace',
-        render: 'Authentic late-2000s first-person screen.',
+        render:
+          'A 2007 Xbox 360 frame at 1280 by 720: glossy wet shading, soft bloom, a first-person hand and weapon at bottom right.',
         key: 'BioShock deco; undersea city; leaking glass; neon',
         avoid: ['a diving-suit giant with a drill', 'little girls with glowing eyes'],
         briefs: [
@@ -385,11 +422,13 @@ const spec: Spec = {
         subject:
           'render the subject with an exaggerated readable silhouette and Leyendecker-style painterly shading.',
         color: 'Warm team red, cool team blue and desert tan.',
-        light: 'Warm rim light with soft painterly shading.',
-        texture: 'Painterly shading with soft gradients.',
+        light: 'Warm rim light around every figure and soft painted gradients on faces and cloth.',
+        texture:
+          'Painted soft gradients with no fine detail, figures with exaggerated readable shapes and clean flat materials.',
         camera: 'Heroic low third-person or first-person view.',
         mood: 'comedic mercenary mayhem',
-        render: 'Authentic late-2000s painterly shooter screen.',
+        render:
+          'A 2007 PC frame at 1280 by 720: clean smooth shading, bright team colors, simple architecture and HUD shapes in corners.',
         key: 'TF2 painterly; Leyendecker shading; exaggerated silhouettes',
         avoid: ['existing mercenary classes'],
         briefs: [
@@ -408,11 +447,12 @@ const spec: Spec = {
         subject:
           'render the subject with thick ink outlines and hand-drawn hatching over cel-shaded 3D in a dusty wasteland.',
         color: 'Sun-bleached tan, rust orange and sky blue.',
-        light: 'Hard desert sun with hatched shadows.',
-        texture: 'Ink outlines and hand-drawn hatching textures.',
+        light: 'Hard desert sun with shadows drawn as ink hatching lines.',
+        texture: 'Thick black ink outlines and hand-drawn hatching painted onto every 3D surface.',
         camera: 'First-person view with a gun or dusty vistas.',
         mood: 'rowdy wasteland absurdity',
-        render: 'Authentic late-2000s ink-shaded shooter screen.',
+        render:
+          'A 2009 Xbox 360 frame at 1280 by 720: comic-inked 3D world, bright dusty colors, a reticle and bar shapes.',
         key: 'Borderlands ink hatching; wasteland; junk towns',
         avoid: ['a one-wheeled robot', 'masked psycho bandits'],
         briefs: [
@@ -431,11 +471,13 @@ const spec: Spec = {
         subject:
           'render the subject as a small figure in soft painted impressionistic side-view platform worlds.',
         color: 'Soft watercolor gold, green and dusk blue.',
-        light: 'Glowing dreamy light with shimmering haze.',
-        texture: 'Painterly impressionistic brush textures.',
+        light: 'Glowing dreamy light with shimmering soft haze over the scenery.',
+        texture:
+          'Soft impressionistic brush strokes in the backgrounds, small clean painted character sprites.',
         camera: 'Side-view platform scenes.',
         mood: 'wistful dreamy regret',
-        render: 'Authentic late-2000s painted indie platformer screen.',
+        render:
+          'A 2008 Xbox 360 side-view frame at 1280 by 720: soft painted layers with a small crisp character.',
         key: 'Braid painted backgrounds; puzzle pieces; time shimmer',
         avoid: ['a red-haired man in a suit and tie'],
         briefs: [
@@ -454,11 +496,13 @@ const spec: Spec = {
         subject:
           'render the subject as a chunky thick-line vector cartoon in bright flat Flash-era colors.',
         color: 'Bright flat vector greens, yellows and reds.',
-        light: 'Flat vector light with no gradients.',
-        texture: 'Thick wobbly vector lines and flat fills.',
+        light: 'Flat light with no gradients, every shape a solid bright color.',
+        texture:
+          'Thick wobbly black vector lines and flat fills, simple shapes and scribbly effects.',
         camera: 'Side-scrolling cartoon action view.',
         mood: 'silly absurd mayhem',
-        render: 'Authentic early-2000s Flash game screen.',
+        render:
+          'A 2002 Flash browser game frame: crisp vector cartoon, side-scrolling chaos on a plain background.',
         key: 'Newgrounds Flash; thick-line vector; silly chaos',
         avoid: ['a small yellow alien with antennae'],
         briefs: [

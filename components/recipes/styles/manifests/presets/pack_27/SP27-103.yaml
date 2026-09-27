@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Rez 2001 - United Game Artists Wireframe Synesthesia
 category: 6. Video Games 2000s
 domain: two-thousands rhythm shooter
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,10 +26,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a glowing translucent wireframe figure inside a pulsing vector network. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black void with neon cyan, magenta and orange lines.
   lighting_and_shadow: Self-lit glowing vector lines that pulse to a beat.
-  texture_and_material: Clean wireframe polygons and particle bursts, with the in-engine surface finish of Rez 2001.
+  texture_and_material: "Thin glowing lines outlining see-through shapes, dots and bursts of square light particles on black."
   camera_and_composition: On-rails view behind the wireframe avatar, framed the way Rez 2001 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with trance-like digital rapture.
-  rendering_and_quality: Authentic early-2000s wireframe rhythm shooter screen, matching real Rez 2001 screenshots.
+  rendering_and_quality: "A 2001 PlayStation 2 frame at 640 by 448: glowing lines with a soft blur halo, simple geometry and a lock-on cursor shape."
   creative_brief: 'United Game Artists Rez (2001) look: glowing vector wireframe worlds inside a computer network, a translucent wireframe humanoid avatar, lock-on lasers and Kandinsky-inspired synesthesia. Carry it through Rez wireframe, lock-on lasers, synesthesia, neon void. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Rez wireframe; lock-on lasers; synesthesia; neon void
 avoidRules:

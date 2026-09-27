@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Alien Hominid 2002 - The Behemoth Flash Cartoon
 category: 6. Video Games 2000s
 domain: two-thousands indie action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'The Behemoth Alien Hominid (2002) Newgrounds Flash look: Dan Paladin thick-line vector cartoon art, chunky silly characters, bright flat colors, cartoon explosions and absurd violence.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a chunky thick-line vector cartoon in bright flat Flash-era colors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright flat vector greens, yellows and reds, true to the Alien Hominid 2002 palette.
-  lighting_and_shadow: Flat vector light with no gradients, lit the way Alien Hominid 2002 lights its levels.
-  texture_and_material: Thick wobbly vector lines and flat fills, with the in-engine surface finish of Alien Hominid 2002.
+  lighting_and_shadow: "Flat light with no gradients, every shape a solid bright color."
+  texture_and_material: "Thick wobbly black vector lines and flat fills, simple shapes and scribbly effects."
   camera_and_composition: Side-scrolling cartoon action view, framed the way Alien Hominid 2002 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with silly absurd mayhem.
-  rendering_and_quality: Authentic early-2000s Flash game screen, matching real Alien Hominid 2002 screenshots.
+  rendering_and_quality: "A 2002 Flash browser game frame: crisp vector cartoon, side-scrolling chaos on a plain background."
   creative_brief: 'The Behemoth Alien Hominid (2002) Newgrounds Flash look: Dan Paladin thick-line vector cartoon art, chunky silly characters, bright flat colors, cartoon explosions and absurd violence. Carry it through Newgrounds Flash, thick-line vector, silly chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Newgrounds Flash; thick-line vector; silly chaos
 avoidRules:

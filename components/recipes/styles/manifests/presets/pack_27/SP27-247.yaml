@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Neon White 2022 - Angel Matrix Heaven Speedrun
 category: 13. Video Games 2020s
 domain: twenty-twenties action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Angel Matrix Neon White (2022) look: bright white-and-cyan heavenly architecture, first-person parkour speedrunning, cards as weapons, demons popping into light and anime visual-novel interludes.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in bright white heavenly architecture during first-person speedruns. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Heavenly white, cyan and gold, true to the Neon White 2022 palette.
-  lighting_and_shadow: Blinding clean heavenly light, lit the way Neon White 2022 lights its levels.
-  texture_and_material: Clean stylized geometry with glow, with the in-engine surface finish of Neon White 2022.
+  lighting_and_shadow: "Blinding clean white light with glowing blue and red target outlines."
+  texture_and_material: "Clean simple white geometry, glowing edges and flat-color anime demons."
   camera_and_composition: First-person parkour view, framed the way Neon White 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with euphoric heavenly speed.
-  rendering_and_quality: Authentic heaven speedrun screen, matching real Neon White 2022 screenshots.
+  rendering_and_quality: "A 2022 first-person frame at 1920 by 1080: floating white platforms, a card-shaped weapon at bottom right, speed lines."
   creative_brief: 'Angel Matrix Neon White (2022) look: bright white-and-cyan heavenly architecture, first-person parkour speedrunning, cards as weapons, demons popping into light and anime visual-novel interludes. Carry it through Neon White heaven, parkour, card weapons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Neon White heaven; parkour; card weapons
 avoidRules:

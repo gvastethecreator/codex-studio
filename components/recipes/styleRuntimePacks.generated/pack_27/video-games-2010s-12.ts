@@ -23,14 +23,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a black silhouette against grey foggy monochrome layers. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Monochrome black, grey fog and white glow, true to the Limbo 2010 palette.',
       lighting_and_shadow:
-        'Diffuse fog light with a heavy vignette, lit the way Limbo 2010 lights its levels.',
+        'Soft grey fog light that fades to near white behind and darkens heavily toward every edge of the frame.',
       texture_and_material:
-        'Film grain, soft blur and layered fog, with the in-engine surface finish of Limbo 2010.',
+        'Flicker of film grain, soft blur on far layers and crisp black silhouettes in front.',
       camera_and_composition:
         'Side-scrolling view with parallax fog layers, framed the way Limbo 2010 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie silent dread.',
       rendering_and_quality:
-        'Authentic monochrome indie platformer screen, matching real Limbo 2010 screenshots.',
+        'A 2010 side-view frame at 1280 by 720 in pure greyscale: black cut-out shapes over layers of grey fog, heavy vignette.',
       creative_brief:
         "Playdead Limbo (2010) look: side-scrolling black silhouettes on a grey foggy monochrome world, film grain, vignette, deadly traps and eerie forest silence. Carry it through Limbo silhouettes, grey fog, film grain, vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Limbo silhouettes; grey fog; film grain; vignette',
@@ -59,14 +59,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render every subject built from blocky cubes with sixteen-pixel textures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Grass green, dirt brown, sky blue and torch orange.',
       lighting_and_shadow:
-        'Flat daylight and blocky torchlight falloff, lit the way Minecraft 2011 lights its levels.',
+        'Flat daylight on cube faces, each face one of a few brightness steps, torchlight fading in blocky steps.',
       texture_and_material:
-        'Sixteen-pixel block textures on hard cubes, with the in-engine surface finish of Minecraft 2011.',
+        'Every surface a cube face with a sixteen-by-sixteen pixel texture, blurry nowhere, crisp square pixels everywhere.',
       camera_and_composition:
         'First-person view with a blocky hand, framed the way Minecraft 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cozy creative freedom.',
       rendering_and_quality:
-        'Authentic voxel sandbox screen, matching real Minecraft 2011 screenshots.',
+        'A 2011 PC frame at 1280 by 720: world built entirely from one-meter cubes, a square sun, a hotbar of blank slots at the bottom.',
       creative_brief:
         "Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building. Carry it through Minecraft cubes, 16px textures, square sun, torches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Minecraft cubes; 16px textures; square sun; torches',
@@ -94,14 +94,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject small on hand-painted isometric fragments assembling in a void. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm painted amber, teal and void blue, true to the Bastion 2011 palette.',
-      lighting_and_shadow: 'Soft painted sunset light, lit the way Bastion 2011 lights its levels.',
+      lighting_and_shadow:
+        'Soft painted sunset light with glowing edges on floating ground pieces.',
       texture_and_material:
-        'Lush hand-painted isometric art, with the in-engine surface finish of Bastion 2011.',
+        'Lush hand-painted tiles and props with visible brush marks, seen from a high diagonal angle.',
       camera_and_composition:
         'Isometric view over floating ground pieces, framed the way Bastion 2011 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with warm narrated melancholy.',
       rendering_and_quality:
-        'Authentic painted isometric action screen, matching real Bastion 2011 screenshots.',
+        'A 2011 frame at 1280 by 720: small hero on painted ground fragments rising out of an empty sky-colored void.',
       creative_brief:
         "Supergiant Games Bastion (2011) look: lush hand-painted isometric ruins that rebuild themselves as you walk, floating islands in a void, Jen Zee painting and warm narrated melancholy. Carry it through Bastion painted isometric, assembling ground, void. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Bastion painted isometric; assembling ground; void',
@@ -130,15 +131,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small top-down pixel figures in neon-lit rooms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Pulsing neon magenta, cyan and hot orange, true to the Hotline Miami 2012 palette.',
-      lighting_and_shadow:
-        'Throbbing neon color cycling, lit the way Hotline Miami 2012 lights its levels.',
+      lighting_and_shadow: 'Throbbing neon pinks and cyans cycling across the whole screen.',
       texture_and_material:
-        'Low-resolution pixel art with color bleed, with the in-engine surface finish of Hotline Miami 2012.',
+        'Chunky low-resolution pixels with color bleeding into neighbors and a slight wobble of the whole view.',
       camera_and_composition:
         'Top-down view with a wobbling screen, framed the way Hotline Miami 2012 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with feverish neon frenzy.',
       rendering_and_quality:
-        'Authentic neon top-down pixel screen, matching real Hotline Miami 2012 screenshots.',
+        'A 2012 PC frame: small top-down pixel figures in a tilted neon room, flat floor patterns, a thick chromatic smear.',
       creative_brief:
         "Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action. Carry it through Hotline Miami neon, top-down pixels, animal masks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hotline Miami neon; top-down pixels; animal masks',
@@ -164,20 +164,21 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as flat untextured low-poly figures in theatrical stage-lit scenes. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject as flat untextured angular figures of one or two solid colors on a theatrical stage-like set. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted night blues, warm amber pools and stark silhouettes.',
       lighting_and_shadow:
-        'Theatrical spotlights and single lamps, lit the way Kentucky Route Zero 2013 lights its levels.',
+        'Single lamps and theatrical spotlights cutting shapes out of deep dark blue.',
       texture_and_material:
-        'Flat untextured polygons and clean shapes, with the in-engine surface finish of Kentucky Route Zero 2013.',
+        'Plain flat-colored angular shapes with no texture at all, like a paper theater set.',
       camera_and_composition:
         'Wide theatrical staging like a play, framed the way Kentucky Route Zero 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quiet magic-realist melancholy.',
       rendering_and_quality:
-        'Authentic magic realist adventure screen, matching real Kentucky Route Zero 2013 screenshots.',
+        'A 2013 PC frame at 1280 by 720: sparse flat shapes, small figures, wide dark spaces and one warm lamp.',
       creative_brief:
         "Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways. Carry it through Kentucky Route Zero flat polygons, theatrical light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Kentucky Route Zero flat polygons; theatrical light',
+      key_features:
+        'Kentucky Route Zero flat untextured shapes; theatrical light; wide dark stages',
     },
     ui: {
       previewStatus: 'pending',
@@ -203,15 +204,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as grim muted pixel figures at a cold border booth. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Muted grey, drab brown and stamp red, true to the Papers Please 2013 palette.',
-      lighting_and_shadow:
-        'Flat cold booth light, lit the way Papers Please 2013 lights its levels.',
+      lighting_and_shadow: 'Flat cold light in drab greys, browns and olive with no gradients.',
       texture_and_material:
-        'Chunky low-resolution pixel art, with the in-engine surface finish of Papers Please 2013.',
+        'Chunky low-resolution pixels, tiny stiff figures in a queue and big pixel documents on a desk.',
       camera_and_composition:
         'Booth desk view with a window, framed the way Papers Please 2013 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with grim bureaucratic tension.',
       rendering_and_quality:
-        'Authentic grim pixel simulation screen, matching real Papers Please 2013 screenshots.',
+        'A 2013 PC frame at 570 by 320 scaled up: booth desk below, queue of small grim figures above, stamp shapes.',
       creative_brief:
         "Lucas Pope Papers, Please (2013) look: grim low-resolution pixel art of a border checkpoint booth, muted Soviet greys and browns, document stamps and queues in the cold. Carry it through Papers Please booth, muted pixels, stamps, queue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Papers Please booth; muted pixels; stamps; queue',
@@ -240,14 +240,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in painterly isometric art nouveau city streets with digital glow. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Turquoise, crimson and warm gold, true to the Transistor 2014 palette.',
       lighting_and_shadow:
-        'Glowing digital accents and soft painted light, lit the way Transistor 2014 lights its levels.',
+        'Glowing turquoise digital accents and soft painted light on elegant streets.',
       texture_and_material:
-        'Painterly Jen Zee illustration, with the in-engine surface finish of Transistor 2014.',
+        'Painterly illustration with art nouveau curves and gold trim, seen from a high diagonal angle.',
       camera_and_composition:
         'Isometric city view, framed the way Transistor 2014 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with elegant digital melancholy.',
       rendering_and_quality:
-        'Authentic painterly cyberpunk screen, matching real Transistor 2014 screenshots.',
+        'A 2014 frame at 1280 by 720: painted city plaza, a small figure with a glowing sword, turquoise highlights.',
       creative_brief:
         "Supergiant Games Transistor (2014) look: painterly isometric cyberpunk city in art nouveau curves, glowing turquoise and red, Jen Zee illustration and elegant digital melancholy. Carry it through Transistor art nouveau city, turquoise glow, painterly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Transistor art nouveau city; turquoise glow; painterly',
@@ -275,14 +275,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as simple lo-fi pixel sprites in quirky underground towns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Simple lo-fi palettes on black, true to the Undertale 2015 palette.',
-      lighting_and_shadow: 'Flat lo-fi pixel light, lit the way Undertale 2015 lights its levels.',
+      lighting_and_shadow: 'Flat simple colors with no shading, many screens mostly black.',
       texture_and_material:
-        'Simple crisp pixel sprites, with the in-engine surface finish of Undertale 2015.',
+        'Simple crisp pixel sprites with few colors and thick outlines, plain repeating floor tiles.',
       camera_and_composition:
         'Top-down RPG view or black battle box, framed the way Undertale 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with quirky heartfelt humor.',
       rendering_and_quality:
-        'Authentic lo-fi pixel RPG screen, matching real Undertale 2015 screenshots.',
+        'A 2015 PC frame at 640 by 480: small sprites in quirky rooms or a white-bordered battle box on black.',
       creative_brief:
         "Toby Fox Undertale (2015) look: charming lo-fi pixel RPG, simple sprites, black battle screens with bullet-hell hearts, snowy towns, quirky monsters and heartfelt humor. Carry it through Undertale lo-fi sprites, battle box, quirky monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Undertale lo-fi sprites; battle box; quirky monsters',
@@ -312,14 +312,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Neon orange, magenta and electric blue ink, true to the Splatoon 2015 palette.',
       lighting_and_shadow:
-        'Bright urban daylight with glossy highlights, lit the way Splatoon 2015 lights its levels.',
+        'Bright daylight with glossy wet highlights on ink puddles and toy-like surfaces.',
       texture_and_material:
-        'Glossy wet ink and chunky toy surfaces, with the in-engine surface finish of Splatoon 2015.',
+        'Shiny wet splats of neon ink over clean chunky toy-like buildings and ramps.',
       camera_and_composition:
         'Third-person arena view, framed the way Splatoon 2015 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bright bouncy fun.',
       rendering_and_quality:
-        'Authentic glossy ink shooter screen, matching real Splatoon 2015 screenshots.',
+        'A 2015 Wii U frame at 1280 by 720: bright candy colors, glossy ink, a round meter shape in a corner.',
       creative_brief:
         "Nintendo Splatoon (2015) look: glossy candy-colored ink splattered across plazas and skate parks, squid-kid fashion, street culture and bright urban pop. Carry it through Splatoon glossy ink, turf splats, urban pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Splatoon glossy ink; turf splats; urban pop',
@@ -348,14 +348,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in muted grey 2.5D dystopian spaces with restrained light. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muted grey, cold blue and one small red accent.',
       lighting_and_shadow:
-        'Soft restrained volumetric light, lit the way Inside 2016 lights its levels.',
+        'Soft restrained beams of light through grey haze, one small red accent.',
       texture_and_material:
-        'Smooth low-detail 3D with soft fog, with the in-engine surface finish of Inside 2016.',
+        'Smooth simple 3D shapes with almost no surface detail, softened by fog.',
       camera_and_composition:
         'Side-scrolling 2.5D cinematic view, framed the way Inside 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie restrained dread.',
       rendering_and_quality:
-        'Authentic muted dystopian platformer screen, matching real Inside 2016 screenshots.',
+        'A 2016 side-view frame at 1920 by 1080: muted grey layers, a tiny figure in red, wide empty space.',
       creative_brief:
         "Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting. Carry it through Inside muted grey, red accent, mind-controlled rows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Inside muted grey; red accent; mind-controlled rows',
@@ -384,14 +384,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render people as faceless crystalline red figures in stark white rooms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Stark white, crystal red and black accents, true to the Superhot 2016 palette.',
-      lighting_and_shadow: 'Flat clean white light, lit the way Superhot 2016 lights its levels.',
+      lighting_and_shadow: 'Flat clean white light with no shadows worth noticing.',
       texture_and_material:
-        'Faceted crystal surfaces and clean planes, with the in-engine surface finish of Superhot 2016.',
+        'Faceted red glassy figures that shatter into shards against smooth white planes and black objects.',
       camera_and_composition:
         'First-person view with frozen motion, framed the way Superhot 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cool frozen tension.',
       rendering_and_quality:
-        'Authentic minimalist shooter screen, matching real Superhot 2016 screenshots.',
+        'A 2016 PC frame at 1920 by 1080: bare white rooms, red crystal figures frozen mid-motion, a black weapon.',
       creative_brief:
         "Superhot Team Superhot (2016) look: stark white minimalist rooms, crystalline red enemies that shatter, time that moves only when you move, and slow frozen bullet trails. Carry it through Superhot white rooms, red crystal figures, frozen time. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Superhot white rooms; red crystal figures; frozen time',
@@ -420,15 +420,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small hand-drawn bug figures in gloomy layered caverns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Gloomy blue-grey, ink black and pale white, true to the Hollow Knight 2017 palette.',
-      lighting_and_shadow:
-        'Soft lantern glow in dark caverns, lit the way Hollow Knight 2017 lights its levels.',
+      lighting_and_shadow: 'Soft lantern glow and pale light shafts in dark blue caverns.',
       texture_and_material:
-        'Hand-drawn inked art with painted layers, with the in-engine surface finish of Hollow Knight 2017.',
+        'Clean hand-drawn inked sprites over softly painted, blurred background layers.',
       camera_and_composition:
         'Side-view metroidvania with deep parallax, framed the way Hollow Knight 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic gloomy wonder.',
       rendering_and_quality:
-        'Authentic hand-drawn metroidvania screen, matching real Hollow Knight 2017 screenshots.',
+        'A 2017 side-view frame at 1920 by 1080: small bug knight in a gloomy layered cavern, mask shapes top left.',
       creative_brief:
         "Team Cherry Hollow Knight (2017) look: hand-drawn gloomy insect kingdom, blue-grey caverns, ink-black bug characters with white masks, glowing lanterns and melancholic depth. Carry it through Hollow Knight gloom, insect kingdom, hand-drawn. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Hollow Knight gloom; insect kingdom; hand-drawn',
@@ -457,15 +456,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in sun-faded overgrown city ruins with a sepia sheen. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Faded sepia, overgrown green and pale sky, true to the Nier Automata 2017 palette.',
-      lighting_and_shadow:
-        'Bright hazy sun over ruins, lit the way Nier Automata 2017 lights its levels.',
+      lighting_and_shadow: 'Bright hazy sun over overgrown ruins, washed into a faded sepia sheen.',
       texture_and_material:
-        'Soft desaturated textures with bloom, with the in-engine surface finish of Nier Automata 2017.',
+        'Soft desaturated textures, bloom on bright areas and moss over cracked concrete.',
       camera_and_composition:
         'Third-person view over open ruins, framed the way Nier Automata 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic faded beauty.',
       rendering_and_quality:
-        'Authentic faded action RPG screen, matching real Nier Automata 2017 screenshots.',
+        'A 2017 PlayStation 4 frame at 1920 by 1080: faded colors, overgrown city, simple round machine enemies.',
       creative_brief:
         "PlatinumGames NieR:Automata (2017) look: sun-faded ruined city overgrown with green, desaturated sepia sheen, round rusty machine lifeforms, elegant androids and melancholic open spaces. Carry it through Nier ruined city, sepia haze, round machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Nier ruined city; sepia haze; round machines',
@@ -494,14 +492,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as bright chunky cartoon 3D characters on a stylized island. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Saturated grass green, sky blue and loot purple.',
       lighting_and_shadow:
-        'Bright cheerful island daylight, lit the way Fortnite 2017 lights its levels.',
+        'Bright cheerful daylight with soft clean shadows, lit the way Fortnite 2017 lights its levels.',
       texture_and_material:
-        'Clean stylized cartoon 3D, with the in-engine surface finish of Fortnite 2017.',
+        'Clean smooth cartoon materials with simple color gradients and chunky readable shapes.',
       camera_and_composition:
         'Third-person over-the-shoulder view, framed the way Fortnite 2017 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with playful competitive chaos.',
       rendering_and_quality:
-        'Authentic cartoon battle royale screen, matching real Fortnite 2017 screenshots.',
+        'A 2017 frame at 1920 by 1080: bright stylized island, wooden ramps being built, circular minimap shape.',
       creative_brief:
         "Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color. Carry it through Fortnite cartoon island, building ramps, bright color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Fortnite cartoon island; building ramps; bright color',
@@ -530,14 +528,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny pixel climber on crisp snowy mountain levels. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pastel snow pinks, teal and dusk purple, true to the Celeste 2018 palette.',
       lighting_and_shadow:
-        'Soft pastel glow and dash trails, lit the way Celeste 2018 lights its levels.',
+        'Soft pastel glow in snowy pinks and blues, colored trails behind dashes.',
       texture_and_material:
-        'Crisp detailed pixel art, with the in-engine surface finish of Celeste 2018.',
+        'Crisp detailed pixel tiles and a tiny pixel climber, with smooth particle snow drifting over them.',
       camera_and_composition:
         'Side-view single-screen platformer, framed the way Celeste 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with determined heartfelt climb.',
       rendering_and_quality:
-        'Authentic pixel platformer screen, matching real Celeste 2018 screenshots.',
+        'A 2018 frame at 320 by 180 scaled up: crisp pixel mountain level, tiny red-haired climber, drifting snow.',
       creative_brief:
         "Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety. Carry it through Celeste pixel mountain, dash trails, pastel snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Celeste pixel mountain; dash trails; pastel snow',
@@ -566,15 +564,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a frozen 1-bit dithered monochrome tableau. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         '1-bit black and pale green-white only, true to the Return of the Obra Dinn 2018 palette.',
-      lighting_and_shadow:
-        'Dithered lighting with no gradients, lit the way Return of the Obra Dinn 2018 lights its levels.',
+      lighting_and_shadow: 'Light made only of dither dot density, no grey tones at all.',
       texture_and_material:
-        'Coarse 1-bit dither patterns, with the in-engine surface finish of Return of the Obra Dinn 2018.',
+        'Every surface pure black or pure white dots in coarse dither patterns.',
       camera_and_composition:
         'First-person frozen tableau view, framed the way Return of the Obra Dinn 2018 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with eerie frozen mystery.',
       rendering_and_quality:
-        'Authentic 1-bit dithered mystery screen, matching real Return of the Obra Dinn 2018 screenshots.',
+        'A 2018 frame at 640 by 360 scaled up: first-person frozen scene on a ship in two colors only.',
       creative_brief:
         "Lucas Pope Return of the Obra Dinn (2018) look: 1-bit dithered monochrome 3D like an old Macintosh, frozen tableaux of deaths aboard an East Indiaman ship, and deduction. Carry it through Obra Dinn 1-bit dither, frozen tableaux, ship. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Obra Dinn 1-bit dither; frozen tableaux; ship',
@@ -604,13 +601,13 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Warm storybook golds and cool shadow blues, true to the Octopath Traveler 2018 palette.',
       lighting_and_shadow:
-        'Dynamic bloom and warm lantern light, lit the way Octopath Traveler 2018 lights its levels.',
+        'Warm lantern light and glowing bloom over small towns with blurred edges.',
       texture_and_material:
-        'Pixel sprites over detailed 3D dioramas, with the in-engine surface finish of Octopath Traveler 2018.',
+        'Crisp flat pixel sprites standing in detailed miniature 3D towns with strong background blur.',
       camera_and_composition: 'Tilted diorama view with strong depth of field.',
       atmosphere_and_mood: 'Keep the requested mood with storybook nostalgic adventure.',
       rendering_and_quality:
-        'Authentic HD-2D RPG screen, matching real Octopath Traveler 2018 screenshots.',
+        'A 2018 Switch frame at 1280 by 720: pixel characters in a tilt-shift diorama, top and bottom softly out of focus.',
       creative_brief:
         "Square Enix Octopath Traveler (2018) look: HD-2D blend of pixel sprites in 3D diorama towns, tilt-shift depth of field, bloom, dynamic light and storybook medieval fantasy. Carry it through Octopath HD-2D, tilt-shift diorama, pixel sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Octopath HD-2D; tilt-shift diorama; pixel sprites',
@@ -638,15 +635,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in thick expressive oil-painted brushwork on a rainy isometric harbor city. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Muddy oil greys, rust and cold harbor teal.',
-      lighting_and_shadow:
-        'Cold rainy harbor light and warm windows, lit the way Disco Elysium 2019 lights its levels.',
+      lighting_and_shadow: 'Cold rainy harbor light and warm yellow windows in thick paint.',
       texture_and_material:
-        'Thick expressive oil brushstrokes, with the in-engine surface finish of Disco Elysium 2019.',
+        'Thick expressive oil brushstrokes on every surface, seen from a high diagonal angle.',
       camera_and_composition:
         'Isometric view over painted streets, framed the way Disco Elysium 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with melancholic satirical introspection.',
       rendering_and_quality:
-        'Authentic oil-painted RPG screen, matching real Disco Elysium 2019 screenshots.',
+        'A 2019 PC frame at 1920 by 1080: painted harbor streets with a small figure and a dialogue panel shape at right.',
       creative_brief:
         "ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire. Carry it through Disco Elysium oil paint, isometric harbor, portraits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Disco Elysium oil paint; isometric harbor; portraits',
@@ -675,15 +671,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject in flat pastel untextured English village gardens. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Soft pastel greens, cream and brick orange, true to the Untitled Goose Game 2019 palette.',
-      lighting_and_shadow:
-        'Soft flat daylight, lit the way Untitled Goose Game 2019 lights its levels.',
+      lighting_and_shadow: 'Soft flat daylight with gentle shadows and no strong contrast.',
       texture_and_material:
-        'Untextured flat pastel shapes, with the in-engine surface finish of Untitled Goose Game 2019.',
+        'Untextured flat pastel shapes, simple rounded hedges, fences and garden objects.',
       camera_and_composition:
         'High three-quarter view of gardens, framed the way Untitled Goose Game 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gentle mischievous comedy.',
       rendering_and_quality:
-        'Authentic pastel puzzle screen, matching real Untitled Goose Game 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080: high angle over a pastel English garden, a white goose, flat shapes.',
       creative_brief:
         "House House Untitled Goose Game (2019) look: flat pastel low-poly English village gardens, no textures, soft shadows, a mischievous goose and gentle comedic stealth. Carry it through Goose Game pastel village, flat shapes, mischief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Goose Game pastel village; flat shapes; mischief',
@@ -709,20 +704,19 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action and any requested clothing; render the subject on tiny stylized low-poly planets with rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; show the subject on a tiny round planet you could walk around in minutes, beside a rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Warm campfire orange, deep space blue and planet pastels.',
-      lighting_and_shadow:
-        'Campfire glow and sunlight across tiny planets, lit the way Outer Wilds 2019 lights its levels.',
+      lighting_and_shadow: 'Campfire glow and low sunlight curving around the tiny planet.',
       texture_and_material:
-        'Stylized low-poly surfaces, with the in-engine surface finish of Outer Wilds 2019.',
+        'Simple smooth shapes with painted gradients, wooden planks and patchy grass on small rounded worlds.',
       camera_and_composition:
         'First-person view on tiny planets, framed the way Outer Wilds 2019 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with curious cosmic wonder.',
       rendering_and_quality:
-        'Authentic stylized space exploration screen, matching real Outer Wilds 2019 screenshots.',
+        'A 2019 frame at 1920 by 1080: tiny planet with a clearly curved horizon, wooden ship, huge sun in the sky.',
       creative_brief:
         "Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop. Carry it through Outer Wilds tiny planets, wooden ship, campfire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'Outer Wilds tiny planets; wooden ship; campfire',
+      key_features: 'Outer Wilds tiny curved planets; wooden ship; campfire; huge sun',
     },
     ui: {
       previewStatus: 'pending',

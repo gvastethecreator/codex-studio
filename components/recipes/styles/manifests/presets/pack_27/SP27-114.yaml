@@ -9,7 +9,7 @@ styleAnchors:
 displayName: GTA San Andreas 2004 - Rockstar Loading Screen Art
 category: 6. Video Games 2000s
 domain: two-thousands game illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Rockstar Games Grand Theft Auto: San Andreas (2004) loading screen look: bold black ink outlines, flat cel color blocks, gritty early-nineties West Coast city characters and sun-baked streets.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a bold ink-outlined flat-color illustration of gritty sun-baked street life. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sun-baked orange, palm green and faded denim blue.
-  lighting_and_shadow: Hard West Coast sun with flat cel shadow blocks.
-  texture_and_material: Bold black ink outlines and flat color fills.
+  lighting_and_shadow: "Hard West Coast sun with flat blocks of cel shadow on faces and cars."
+  texture_and_material: "Bold black ink outlines and flat color fills with light grain, like printed promotional art."
   camera_and_composition: Dynamic loading-screen illustration crop, framed the way GTA San Andreas 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty sun-baked swagger.
-  rendering_and_quality: Authentic mid-2000s game loading screen illustration, matching real GTA San Andreas 2004 screenshots.
+  rendering_and_quality: "A 2004 loading screen illustration: bold flat inked art of street life filling the frame, with a thin progress bar shape at the bottom."
   creative_brief: 'Rockstar Games Grand Theft Auto: San Andreas (2004) loading screen look: bold black ink outlines, flat cel color blocks, gritty early-nineties West Coast city characters and sun-baked streets. Carry it through GTA SA loading art, bold ink, flat color, West Coast. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: GTA SA loading art; bold ink; flat color; West Coast
 avoidRules:

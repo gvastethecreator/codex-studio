@@ -21,11 +21,14 @@ const spec: Spec = {
         subject:
           'render people with chrome implants and street fashion in dense neon megacity streets.',
         color: 'Neon yellow, teal and magenta over wet asphalt.',
-        light: 'Neon holograms and rain-soaked reflections.',
-        texture: 'Photoreal grime, chrome and glossy wet surfaces.',
+        light:
+          'Neon holograms and signs reflected sharply in rain puddles and chrome, deep black shadows between.',
+        texture:
+          'Photoreal grime, chrome and glossy wet asphalt, with slightly soft game-engine detail and pop-in crowds.',
         camera: 'First-person street view.',
         mood: 'gritty neon hustle',
-        render: 'Authentic ray-traced cyberpunk screen.',
+        render:
+          'A 2020 PC frame at 2560 by 1440 in first person: mirror-sharp reflections, a small minimap circle top right and a hand at the edge.',
         key: 'Cyberpunk 2077 Night City neon; chrome implants',
         avoid: [
           'a man with a chrome arm and aviator sunglasses',
@@ -47,11 +50,13 @@ const spec: Spec = {
         subject:
           'render the subject as tiny animated-film figures crossing giant everyday household worlds.',
         color: 'Warm toy colors, garden green and cozy amber.',
-        light: 'Warm cinematic household light.',
-        texture: 'Animated-film stylized surfaces.',
+        light: 'Warm household window light and soft bounce, like an animated family film.',
+        texture:
+          'Smooth animated-film materials, fuzzy fabric, glossy toy plastic and oversized household objects.',
         camera: 'Split-screen or third-person co-op view.',
         mood: 'playful cooperative warmth',
-        render: 'Authentic animated-film co-op screen.',
+        render:
+          'A 2021 console frame at 1920 by 1080, split vertically into two gameplay views, each following a tiny figure.',
         key: 'It Takes Two tiny worlds; giant toys; co-op',
         avoid: ['a clay man and a wooden woman doll', 'a talking book with a mustache'],
         briefs: [
@@ -70,11 +75,13 @@ const spec: Spec = {
         subject:
           'render the subject small in isometric soft-lit muted ruins and grey afterlife offices.',
         color: 'Muted grey, moss green and soft door glow.',
-        light: 'Soft diffuse light and glowing doors.',
-        texture: 'Clean low-detail 3D with soft shading.',
+        light: 'Soft diffuse grey light and the warm glow of standing doorways.',
+        texture:
+          'Clean simple 3D shapes with soft shading and almost no surface detail, muted greys with pops of color.',
         camera: 'Isometric top-down action view.',
         mood: 'quiet wry melancholy',
-        render: 'Authentic isometric action screen.',
+        render:
+          'A 2021 frame at 1920 by 1080 from a high diagonal angle: small crow figure in muted ruins, a few pip shapes in a corner.',
         key: "Death's Door crow reaper; grey offices; glowing doors",
         avoid: ['a tiny crow reaper with a sword'],
         briefs: [
@@ -88,11 +95,12 @@ const spec: Spec = {
       look: 'Sloclap Sifu (2022) look: painterly stylized 3D kung fu with flat-shaded faces, Hong Kong clubs, art galleries and temples, bold color, and bodies aging with each defeat.',
       subject: 'render people as painterly stylized kung fu fighters with flat-shaded faces.',
       color: 'Bold neon club pink, temple gold and jade.',
-      light: 'Stylized painterly light.',
-      texture: 'Painterly flat-shaded 3D.',
+      light: 'Stylized painted light with soft colored shadows on flat-shaded faces.',
+      texture: 'Simplified 3D with painterly brush textures, faces in flat planes of color.',
       camera: 'Third-person fight view.',
       mood: 'disciplined painterly fury',
-      render: 'Authentic stylized martial arts screen.',
+      render:
+        'A 2022 frame at 1920 by 1080 in third person: a fighter mid-strike among painted thugs, a thin bar shape at the bottom.',
       key: 'Sifu painterly kung fu; flat shading; aging',
       briefs: [
         'In a painterly neon nightclub, a grey-haired dumpling chef in a kung fu stance fends off a crowd of club bouncers with a bamboo steamer lid while pink lights flood the dance floor. No readable text or logo.',
@@ -108,11 +116,13 @@ const spec: Spec = {
         look: 'Andrew Shouldice Tunic (2022) look: isometric tilt-shift diorama world, soft saturated color, a tiny fox hero and hand-illustrated instruction manual pages with secret language.',
         subject: 'render the subject small in saturated tilt-shift isometric dioramas.',
         color: 'Saturated green, gold and ruin blue.',
-        light: 'Soft tilt-shift glow.',
-        texture: 'Smooth stylized low-poly 3D.',
+        light: 'Soft glowing light with the top and bottom of the frame gently out of focus.',
+        texture:
+          'Smooth simple shapes with clean saturated colors, rounded grass tufts and bright little buildings.',
         camera: 'Isometric tilt-shift view.',
         mood: 'mysterious cozy exploration',
-        render: 'Authentic tilt-shift adventure screen.',
+        render:
+          'A 2022 frame at 1920 by 1080 from a high diagonal angle: tiny fox figure in a saturated diorama with blurred edges.',
         key: 'Tunic isometric diorama; tilt-shift; storybook',
         avoid: ['a small fox in a green tunic with a sword'],
         briefs: [
@@ -131,11 +141,13 @@ const spec: Spec = {
         subject:
           'render the subject at cat height in dense neon slum alleys among gentle screen-faced robots.',
         color: 'Warm neon orange, teal and grimy concrete.',
-        light: 'Warm neon and hanging bulbs.',
-        texture: 'Detailed grimy urban textures.',
+        light: 'Warm neon signs and hanging bulbs glowing in grimy narrow alleys.',
+        texture:
+          'Detailed grimy concrete, cables and cardboard, rendered with soft console-game sharpness.',
         camera: 'Low cat-height third-person view.',
         mood: 'gentle curious wonder',
-        render: 'Authentic cat adventure screen.',
+        render:
+          'A 2022 console frame at 1920 by 1080: camera low at cat height, screen-faced robots in alleys, a small button prompt shape.',
         key: 'Stray walled city; screen-face robots; cat view',
         avoid: ['an orange tabby cat with a small drone backpack'],
         briefs: [
@@ -154,11 +166,12 @@ const spec: Spec = {
         subject:
           'render the subject in bright white heavenly architecture during first-person speedruns.',
         color: 'Heavenly white, cyan and gold.',
-        light: 'Blinding clean heavenly light.',
-        texture: 'Clean stylized geometry with glow.',
+        light: 'Blinding clean white light with glowing blue and red target outlines.',
+        texture: 'Clean simple white geometry, glowing edges and flat-color anime demons.',
         camera: 'First-person parkour view.',
         mood: 'euphoric heavenly speed',
-        render: 'Authentic heaven speedrun screen.',
+        render:
+          'A 2022 first-person frame at 1920 by 1080: floating white platforms, a card-shaped weapon at bottom right, speed lines.',
         key: 'Neon White heaven; parkour; card weapons',
         avoid: ['a masked assassin in a white hood'],
         briefs: [
@@ -176,11 +189,13 @@ const spec: Spec = {
         look: 'Obsidian Pentiment (2022) look: sixteenth-century Bavarian village drawn like a living illuminated manuscript and woodcut, parchment backgrounds, ink outlines and hand-lettered speech.',
         subject: 'render people as flat illuminated-manuscript and woodcut figures on parchment.',
         color: 'Parchment cream, ink black and illumination gold and red.',
-        light: 'Flat manuscript light.',
-        texture: 'Parchment, ink outlines and woodcut hatching.',
+        light: 'Flat even light as on a manuscript page, no cast shadows.',
+        texture:
+          'Parchment grain, ink outlines, woodcut hatching and flat washes of color on figures.',
         camera: 'Flat side-view manuscript page.',
         mood: 'scholarly village mystery',
-        render: 'Authentic illuminated adventure screen.',
+        render:
+          'A 2022 side-view frame at 1920 by 1080: a village drawn like a manuscript page with small flat figures walking.',
         key: 'Pentiment manuscript; woodcut; parchment village',
         briefs: [
           'Drawn like a living illuminated manuscript, a village baker and a traveling monk argue over a missing loaf in a sixteenth-century Bavarian square while a goat eats the church notices. No readable text or logo.',
@@ -198,11 +213,12 @@ const spec: Spec = {
         subject:
           'render the subject as cute bold-outlined cartoon animals in pastel occult settings.',
         color: 'Pastel purple, crimson and forest green.',
-        light: 'Candle glow and ritual light.',
-        texture: 'Bold outlines and flat cartoon shading.',
+        light: 'Warm candle glow and red ritual light on dark ground.',
+        texture: 'Bold outlines and flat cartoon shading on cute animals, flat ground textures.',
         camera: 'Three-quarter top-down view.',
         mood: 'cute creepy cheer',
-        render: 'Authentic cute occult roguelike screen.',
+        render:
+          'A 2022 frame at 1920 by 1080 from a high angle: cute cartoon animals in an occult camp, heart shapes top left.',
         key: 'Cult of the Lamb cute occult; bold outlines',
         avoid: ['a small lamb with a red crown'],
         briefs: [
@@ -220,11 +236,12 @@ const spec: Spec = {
         look: 'poncle Vampire Survivors (2022) look: retro gothic pixel sprites, a tiny hero swarmed by thousands of enemies, screen-filling weapon effects, gems and chaotic bullet-heaven density.',
         subject: 'render the subject as a tiny pixel sprite swarmed by thousands of pixel enemies.',
         color: 'Gothic pixel greens, gem blue and weapon white.',
-        light: 'Flat pixel light with flashing effects.',
-        texture: 'Chunky retro pixel sprites.',
+        light: 'Flat pixel colors with bright flashing weapon effects everywhere.',
+        texture: 'Chunky retro pixel sprites on a plain repeating grass or stone floor.',
         camera: 'Top-down swarm view.',
         mood: 'chaotic addictive frenzy',
-        render: 'Authentic pixel swarm roguelike screen.',
+        render:
+          'A 2022 PC frame: one tiny sprite in the center surrounded by hundreds of pixel monsters and swirling projectiles.',
         key: 'Vampire Survivors swarm; pixel sprites; weapon chaos',
         briefs: [
           'In retro gothic pixel art, a tiny grandmother with a garlic aura stands in the center of a forest as thousands of pixel bats, skeletons and ghosts swarm toward her and scatter into blue gems. No readable text or logo.',
@@ -242,11 +259,12 @@ const spec: Spec = {
         subject:
           'render the subject as detailed cinematic fantasy characters in torchlit camps and cities.',
         color: 'Warm torch amber, forest green and gothic purple.',
-        light: 'Cinematic campfire and torchlight.',
-        texture: 'Detailed painterly-realistic fantasy surfaces.',
+        light: 'Warm campfire and torchlight with deep night blues around.',
+        texture: 'Detailed realistic fantasy materials with slightly soft game-engine sharpness.',
         camera: 'Cinematic dialogue close-ups and isometric views.',
         mood: 'dramatic fantasy intrigue',
-        render: 'Authentic cinematic fantasy RPG screen.',
+        render:
+          'A 2023 PC frame at 2560 by 1440 from a high angle: a small party in a camp, a hotbar of blank slots along the bottom.',
         key: "Baldur's Gate 3 cinematic fantasy; campfire; gothic city",
         avoid: ['existing Baldur’s Gate companions', 'a mind flayer with face tentacles'],
         briefs: [
@@ -264,11 +282,12 @@ const spec: Spec = {
         look: 'Remedy Alan Wake 2 (2023) look: photoreal Pacific Northwest noir, rain and fog, a nightmarish New York Dark Place, live-action overlays, flashlight beams and meta horror.',
         subject: 'render the subject in photoreal rainy noir towns and nightmarish city streets.',
         color: 'Wet forest green, noir blue and flashlight white.',
-        light: 'Flashlight beams and neon in fog.',
-        texture: 'Photoreal wet surfaces and grain.',
+        light: 'A flashlight beam cutting through fog, neon signs smeared on wet streets.',
+        texture: 'Photoreal wet surfaces with heavy film grain and slight motion softness.',
         camera: 'Over-the-shoulder flashlight view.',
         mood: 'surreal noir dread',
-        render: 'Authentic photoreal horror screen.',
+        render:
+          'A 2023 frame at 2560 by 1440 in third person over the shoulder: flashlight cone, dark fog, a small weapon icon shape.',
         key: 'Alan Wake 2 noir; Dark Place; flashlight fog',
         briefs: [
           'In a photoreal rainy Pacific Northwest diner at night, a small-town sheriff stares at a jukebox playing by itself while neon letters in the fog outside rearrange into a door. No readable text or logo.',
@@ -286,11 +305,12 @@ const spec: Spec = {
         subject:
           'render the subject as detailed modern pixel sprites in lush dynamically lit landscapes.',
         color: 'Sunset gold, moon blue and lush green.',
-        light: 'Dynamic day-night pixel lighting.',
-        texture: 'Lush detailed pixel art with light effects.',
+        light: 'Dynamic day-night light, glowing torches and long pixel shadows.',
+        texture: 'Lush detailed pixel art with soft modern lighting laid over the pixels.',
         camera: 'Three-quarter top-down RPG view.',
         mood: 'warm heroic nostalgia',
-        render: 'Authentic modern pixel RPG screen.',
+        render:
+          'A 2023 frame at 1920 by 1080: crisp pixel sprites in a lush pixel landscape with smooth glowing light.',
         key: 'Sea of Stars pixel art; day-night light; solstice',
         avoid: ['existing Sea of Stars heroes'],
         briefs: [
@@ -309,11 +329,13 @@ const spec: Spec = {
         subject:
           'render the subject in dark Belle Époque streets with gas lamps and broken porcelain puppets.',
         color: 'Gaslight amber, soot black and porcelain white.',
-        light: 'Gas lamps in foggy dark streets.',
-        texture: 'Detailed soot, porcelain and brass.',
+        light: 'Gas lamps glowing through fog on dark wet cobblestones.',
+        texture:
+          'Detailed soot, cracked porcelain and brass with a slightly soft game-engine finish.',
         camera: 'Third-person soulslike view.',
         mood: 'eerie ornate decay',
-        render: 'Authentic dark Belle Époque action screen.',
+        render:
+          'A 2023 frame at 2560 by 1440 in third person: a figure seen from behind in foggy streets, bar shapes top left.',
         key: 'Lies of P Belle Époque; puppets; gas lamps',
         avoid: ['a puppet boy with a mechanical arm and a long nose'],
         briefs: [
@@ -331,11 +353,12 @@ const spec: Spec = {
         look: 'Tour De Pizza Pizza Tower (2023) look: frantic hand-drawn nineties cartoon animation in the spirit of Wario Land, squash-and-stretch exaggeration, chunky outlines and chaotic speed.',
         subject: 'render the subject as frantic squash-and-stretch hand-drawn cartoon figures.',
         color: 'Loud cartoon yellow, tomato red and purple.',
-        light: 'Flat cartoon light.',
-        texture: 'Chunky hand-drawn outlines and flat color.',
+        light: 'Flat cartoon colors with no shading at all.',
+        texture: 'Chunky hand-drawn outlines, wobbling squash-and-stretch sprites and flat color.',
         camera: 'Side-scrolling chaotic platformer view.',
         mood: 'frantic cartoon chaos',
-        render: 'Authentic hand-drawn cartoon platformer screen.',
+        render:
+          'A 2023 frame at 960 by 540: frantic side-view cartoon sprite smashing blocks, a TV-shaped box in the corner.',
         key: 'Pizza Tower frantic cartoon; squash and stretch',
         avoid: ['a pudgy Italian chef running on all fours'],
         briefs: [
@@ -354,11 +377,12 @@ const spec: Spec = {
         subject:
           'render the subject in pastel ligne claire tower architecture with veiled travelers.',
         color: 'Pastel ochre, lilac and sky teal.',
-        light: 'Flat clean ligne claire light.',
-        texture: 'Moebius clean lines and flat color.',
+        light: 'Flat clean light with soft pastel shadows.',
+        texture: 'Clean thin outlines and flat pastel color on simple 3D architecture.',
         camera: 'Wide architectural third-person view.',
         mood: 'serene curious deciphering',
-        render: 'Authentic ligne claire puzzle screen.',
+        render:
+          'A 2023 frame at 1920 by 1080: small veiled traveler in vast pastel tower architecture, clean outlines.',
         key: 'Chants of Sennaar Moebius; tower; glyph language',
         briefs: [
           'In a pastel ligne claire tower city, a veiled traveler kneels before a carved wall of strange invented glyphs while monks on the terraces above bow toward a floating lantern. No readable text or logo.',
@@ -376,11 +400,12 @@ const spec: Spec = {
         subject:
           'render the subject as pixel-art playing cards and jokers on swirling psychedelic CRT felt.',
         color: 'Swirling red, teal felt and foil gold.',
-        light: 'CRT glow and holographic foil shine.',
-        texture: 'Pixel cards with CRT scanlines and warp.',
+        light: 'CRT glow over a swirling psychedelic background, foil shine on some cards.',
+        texture: 'Pixel-art playing cards with scanlines and a slight curved-screen warp.',
         camera: 'Flat card table view.',
         mood: 'hypnotic gambling rush',
-        render: 'Authentic psychedelic card roguelike screen.',
+        render:
+          'A 2024 frame at 1920 by 1080: a hand of pixel cards at the bottom, a row of joker cards above, swirling felt behind.',
         key: 'Balatro CRT swirl; pixel cards; foil jokers',
         briefs: [
           'On a swirling psychedelic CRT felt background, a hand of pixel-art playing cards fans out showing an original joker who is a sleeping owl in a bow tie, his card glittering with holographic foil. No readable text or logo.',
@@ -397,11 +422,12 @@ const spec: Spec = {
         look: 'Shared Memory Animal Well (2024) look: tiny dark pixel art with glowing bioluminescent light sources, eerie giant animals, a small blob hero and dense hand-crafted secrets.',
         subject: 'render the subject as tiny pixel sprites in dark wells lit by glowing sources.',
         color: 'Deep black with glowing teal, pink and amber.',
-        light: 'Bioluminescent pixel light sources.',
-        texture: 'Tiny detailed pixel art with glow.',
+        light: 'Small glowing pixel light sources in near-total darkness.',
+        texture: 'Tiny detailed pixel art with soft modern glow and bloom around lights.',
         camera: 'Side-view single-screen metroidvania.',
         mood: 'eerie curious mystery',
-        render: 'Authentic dark pixel metroidvania screen.',
+        render:
+          'A 2024 frame at 320 by 180 scaled up: a tiny blob sprite in a dark well, glowing plants and a huge animal shape.',
         key: 'Animal Well glowing pixels; dark wells; giant animals',
         avoid: ['a small round blob hero'],
         briefs: [
@@ -419,11 +445,12 @@ const spec: Spec = {
         look: 'Team Asobi Astro Bot (2024) look: glossy toy-like robot platforming, bright playful worlds of candy colors, physics-driven props, cheering tiny bots and joyful polish.',
         subject: 'render the subject as tiny glossy toy robots in bright playful platform worlds.',
         color: 'Glossy candy blue, sunny yellow and white.',
-        light: 'Bright cheerful daylight with glossy highlights.',
-        texture: 'Glossy plastic toy surfaces.',
+        light: 'Bright cheerful daylight with glossy highlights on every toy surface.',
+        texture: 'Glossy plastic toy surfaces, rounded edges and bright primary colors.',
         camera: 'Third-person platformer view.',
         mood: 'pure playful joy',
-        render: 'Authentic toy platformer screen.',
+        render:
+          'A 2024 console frame at 3840 by 2160: tiny glossy robot on a bright toy platform, sharp and colorful.',
         key: 'Astro Bot glossy toys; playful worlds; tiny bots',
         avoid: ['a small white robot with blue eyes and a jetpack'],
         briefs: [
@@ -442,11 +469,12 @@ const spec: Spec = {
         subject:
           'render the subject as graceful Belle Époque expeditioners in painterly surreal landscapes.',
         color: 'Painterly gold, rose and deep blue.',
-        light: 'Soft painterly glow with surreal light.',
-        texture: 'Detailed painterly realism.',
+        light: 'Soft painterly glow with surreal floating light sources.',
+        texture: 'Detailed painterly realism with slightly soft game-engine sharpness.',
         camera: 'Cinematic third-person vistas.',
         mood: 'melancholic surreal beauty',
-        render: 'Authentic painterly fantasy RPG screen.',
+        render:
+          'A 2025 frame at 2560 by 1440: turn-based battle with a party on one side and a surreal enemy, blank command shapes.',
         key: 'Expedition 33 Belle Époque; painterly surreal; expedition',
         avoid: ['a giant Paintress figure on a monolith'],
         briefs: [

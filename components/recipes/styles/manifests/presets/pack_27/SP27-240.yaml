@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Outer Wilds 2019 - Mobius Tiny Solar System
 category: 12. Video Games 2010s
 domain: twenty-tens exploration game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,15 +23,15 @@ tags:
   - reference-title
 visualDna:
   aesthetic: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.'
-  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject on tiny stylized low-poly planets with rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open.
+  subject_treatment: "Preserve the requested identity, count, pose, action and any requested clothing; show the subject on a tiny round planet you could walk around in minutes, beside a rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open."
   color_and_tone: Warm campfire orange, deep space blue and planet pastels.
-  lighting_and_shadow: Campfire glow and sunlight across tiny planets, lit the way Outer Wilds 2019 lights its levels.
-  texture_and_material: Stylized low-poly surfaces, with the in-engine surface finish of Outer Wilds 2019.
+  lighting_and_shadow: "Campfire glow and low sunlight curving around the tiny planet."
+  texture_and_material: "Simple smooth shapes with painted gradients, wooden planks and patchy grass on small rounded worlds."
   camera_and_composition: First-person view on tiny planets, framed the way Outer Wilds 2019 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with curious cosmic wonder.
-  rendering_and_quality: Authentic stylized space exploration screen, matching real Outer Wilds 2019 screenshots.
+  rendering_and_quality: "A 2019 frame at 1920 by 1080: tiny planet with a clearly curved horizon, wooden ship, huge sun in the sky."
   creative_brief: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop. Carry it through Outer Wilds tiny planets, wooden ship, campfire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Outer Wilds tiny planets; wooden ship; campfire
+  key_features: "Outer Wilds tiny curved planets; wooden ship; campfire; huge sun"
 avoidRules:
   - existing franchise characters
   - series logo or title lettering

@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Jet Set Radio 2000 - Smilebit Graffiti Cel
 category: 6. Video Games 2000s
 domain: two-thousands console action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Smilebit Jet Set Radio (2000) look: early thick-outline cel-shaded 3D, inline-skating graffiti gangs, Tokyo-inspired streets, fisheye tilt and loud funk-pop color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a thick-outline cel-shaded skater figure in loud graffiti streets. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Loud funk-pop yellow, magenta, lime and sky blue.
-  lighting_and_shadow: Bright flat daylight with black cel outlines, lit the way Jet Set Radio 2000 lights its levels.
-  texture_and_material: Thick black outlines, flat cel fills and spray paint.
+  lighting_and_shadow: "Bright flat daylight with thick black outlines around every figure and building edge."
+  texture_and_material: "Thick black outlines, flat cartoon fills and walls of loud spray paint in simple repeating tiles."
   camera_and_composition: Low fisheye tilt following the skater, framed the way Jet Set Radio 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rebellious funky street energy.
-  rendering_and_quality: Authentic Dreamcast cel-shaded screen, matching real Jet Set Radio 2000 screenshots.
+  rendering_and_quality: "A 2000 Dreamcast frame at 640 by 480: crisp outlined cartoon look, wide slightly curved street view, simple chunky buildings."
   creative_brief: 'Smilebit Jet Set Radio (2000) look: early thick-outline cel-shaded 3D, inline-skating graffiti gangs, Tokyo-inspired streets, fisheye tilt and loud funk-pop color. Carry it through JSR thick outlines, graffiti skaters, fisheye, funk colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: JSR thick outlines; graffiti skaters; fisheye; funk colors
 avoidRules:

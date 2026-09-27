@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Metroid 1986 - NES Alien Cavern Silence
 category: 4. Video Games 80s
 domain: eighties console game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Nintendo Metroid (1986) NES look: lonely alien caverns on pure black backgrounds, blue and orange rock tiles, vertical shafts and isolated eerie exploration.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite exploring black-backed alien caverns and shafts. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pure black background with blue, orange and green rock tiles.
-  lighting_and_shadow: Flat NES light with black emptiness, lit the way Metroid 1986 lights its levels.
+  lighting_and_shadow: "Flat NES colors floating on pure black emptiness, with no light sources."
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Side-view cavern with vertical shafts, framed the way Metroid 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien isolation.
-  rendering_and_quality: Authentic NES exploration screen, matching real Metroid 1986 screenshots.
+  rendering_and_quality: "A 1986 NES frame at 256 by 240: small sprite in a vertical shaft of colored block tiles on black, a tiny energy number shape."
   creative_brief: 'Nintendo Metroid (1986) NES look: lonely alien caverns on pure black backgrounds, blue and orange rock tiles, vertical shafts and isolated eerie exploration. Carry it through Metroid black caverns, vertical shafts, isolation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Metroid black caverns; vertical shafts; isolation
 avoidRules:

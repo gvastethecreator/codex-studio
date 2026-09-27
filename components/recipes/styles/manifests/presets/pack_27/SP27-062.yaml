@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Tempest 1981 - Atari Color Vector Tube
 category: 4. Video Games 80s
 domain: eighties vector arcade game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -29,7 +29,7 @@ visualDna:
   texture_and_material: Thin glowing vector lines, phosphor trails and black glass.
   camera_and_composition: Looking down a receding geometric vector tube, framed the way Tempest 1981 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with electric abstract intensity.
-  rendering_and_quality: Authentic color vector arcade screen, matching real Tempest 1981 screenshots.
+  rendering_and_quality: "A 1981 color vector arcade screen: only thin glowing lines on pure black, no pixels or filled shapes, with soft phosphor trails."
   creative_brief: 'Atari Tempest (1981) look: bright color vector lines on black, a geometric tube receding in perspective, crackling lines and glowing electric shapes climbing toward the player. Carry it through Tempest color vector, receding tube, glowing lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Tempest color vector; receding tube; glowing lines
 avoidRules:

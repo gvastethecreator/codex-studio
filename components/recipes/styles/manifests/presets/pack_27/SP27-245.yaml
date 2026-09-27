@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Tunic 2022 - Isometric Fox Storybook Manual
 category: 13. Video Games 2020s
 domain: twenty-twenties adventure game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Andrew Shouldice Tunic (2022) look: isometric tilt-shift diorama world, soft saturated color, a tiny fox hero and hand-illustrated instruction manual pages with secret language.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in saturated tilt-shift isometric dioramas. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated green, gold and ruin blue, true to the Tunic 2022 palette.
-  lighting_and_shadow: Soft tilt-shift glow, lit the way Tunic 2022 lights its levels.
-  texture_and_material: Smooth stylized low-poly 3D, with the in-engine surface finish of Tunic 2022.
+  lighting_and_shadow: "Soft glowing light with the top and bottom of the frame gently out of focus."
+  texture_and_material: "Smooth simple shapes with clean saturated colors, rounded grass tufts and bright little buildings."
   camera_and_composition: Isometric tilt-shift view, framed the way Tunic 2022 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with mysterious cozy exploration.
-  rendering_and_quality: Authentic tilt-shift adventure screen, matching real Tunic 2022 screenshots.
+  rendering_and_quality: "A 2022 frame at 1920 by 1080 from a high diagonal angle: tiny fox figure in a saturated diorama with blurred edges."
   creative_brief: 'Andrew Shouldice Tunic (2022) look: isometric tilt-shift diorama world, soft saturated color, a tiny fox hero and hand-illustrated instruction manual pages with secret language. Carry it through Tunic isometric diorama, tilt-shift, storybook. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Tunic isometric diorama; tilt-shift; storybook
 avoidRules:

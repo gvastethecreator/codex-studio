@@ -28,7 +28,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition: 'Top-down maze view filling a vertical arcade screen.',
       atmosphere_and_mood: 'Keep the requested mood with bright arcade chase.',
       rendering_and_quality:
-        'Authentic early-eighties arcade screen capture, matching real Pac-Man 1980 screenshots.',
+        'A 1980 arcade frame at 224 by 288 on a vertical CRT: tiny blocky sprites, thin glowing maze lines, scanlines and phosphor glow on black.',
       creative_brief:
         "Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen. Carry it through Pac-Man neon maze, dots, tiny sprites, black background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Pac-Man neon maze; dots; tiny sprites; black background',
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Looking down a receding geometric vector tube, framed the way Tempest 1981 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with electric abstract intensity.',
       rendering_and_quality:
-        'Authentic color vector arcade screen, matching real Tempest 1981 screenshots.',
+        'A 1981 color vector arcade screen: only thin glowing lines on pure black, no pixels or filled shapes, with soft phosphor trails.',
       creative_brief:
         "Atari Tempest (1981) look: bright color vector lines on black, a geometric tube receding in perspective, crackling lines and glowing electric shapes climbing toward the player. Carry it through Tempest color vector, receding tube, glowing lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Tempest color vector; receding tube; glowing lines',
@@ -91,14 +91,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as chunky low-resolution sprites on slanted red girders with ladders. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Girder red, ladder cyan, barrel brown and black.',
       lighting_and_shadow:
-        'Flat glowing arcade screen light, lit the way Donkey Kong 1981 lights its levels.',
+        'Flat glowing arcade colors on black with no shading, just bright sprite and girder colors.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Single-screen side view of stacked girders, framed the way Donkey Kong 1981 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with frantic climbing peril.',
       rendering_and_quality:
-        'Authentic early-eighties arcade screen capture, matching real Donkey Kong 1981 screenshots.',
+        'A 1981 arcade frame at 224 by 256 on a vertical CRT: few big square pixels per sprite, red girders, cyan ladders, scanlines.',
       creative_brief:
         "Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background. Carry it through Donkey Kong girders, ladders, rolling barrels, chunky sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Donkey Kong girders; ladders; rolling barrels; chunky sprites',
@@ -127,13 +127,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject driving a sprite-scaled road from behind through sunny coastal scenery. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Bright sky blue, beach sand, palm green and convertible red.',
       lighting_and_shadow:
-        'Bright summer arcade sunlight, lit the way Out Run 1986 lights its levels.',
+        'Bright summer arcade sunlight in flat saturated colors, bands of blue sky over the sea.',
       texture_and_material:
-        'Sprite-scaled pixel art with crisp CRT pixels, with the in-engine surface finish of Out Run 1986.',
+        'Crisp square pixels, roadside palms and signs as flat sprites that grow blockier as they rush closer.',
       camera_and_composition: 'Low chase view behind the vehicle on a curving road.',
       atmosphere_and_mood: 'Keep the requested mood with breezy summer escape.',
       rendering_and_quality:
-        'Authentic mid-eighties arcade racing screen, matching real Out Run 1986 screenshots.',
+        'A 1986 arcade frame at 320 by 224: a striped road narrowing to the horizon, a red convertible seen from behind, crisp CRT pixels.',
       creative_brief:
         "Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism. Carry it through Out Run sprite scaling, coastal road, palm trees, convertible. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Out Run sprite scaling; coastal road; palm trees; convertible',
@@ -162,12 +162,12 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small detailed isometric sprite in a single-color castle room. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'One bright attribute color on black per room.',
       lighting_and_shadow:
-        'Flat single-color screen light, lit the way Knight Lore 1984 lights its levels.',
+        'Each whole room drawn in one flat color on black, with no light or shadow at all.',
       texture_and_material: 'ZX Spectrum pixels, monochrome line detail and color attributes.',
       camera_and_composition: 'Isometric room view with stone walls and arches.',
       atmosphere_and_mood: 'Keep the requested mood with mysterious isometric quest.',
       rendering_and_quality:
-        'Authentic ZX Spectrum isometric screen, matching real Knight Lore 1984 screenshots.',
+        'A 1984 ZX Spectrum frame at 256 by 192: a single-color isometric room of fine line detail on black, with a decorated border strip.',
       creative_brief:
         "Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion. Carry it through Knight Lore isometric, monochrome rooms, Filmation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Knight Lore isometric; monochrome rooms; Filmation',
@@ -196,14 +196,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as thin white wireframe forms floating in black space above a radar scanner. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'White and yellow wireframe lines on black, true to the Elite 1984 palette.',
       lighting_and_shadow:
-        'Pure wireframe line light on black, lit the way Elite 1984 lights its levels.',
+        'Only thin white lines glowing on black, with see-through shapes and no filled surfaces.',
       texture_and_material:
-        'Thin monochrome wireframe lines and CRT pixels, with the in-engine surface finish of Elite 1984.',
+        'Thin white wireframe edges, a few dot stars and chunky CRT pixels along every line.',
       camera_and_composition:
         'Cockpit view with a scanner console below, framed the way Elite 1984 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lonely vast trading.',
       rendering_and_quality:
-        'Authentic eighties wireframe space screen, matching real Elite 1984 screenshots.',
+        'A 1984 BBC Micro frame at 320 by 256: wireframe ships above a dashboard with a radar ellipse and bar shapes.',
       creative_brief:
         "Acornsoft Elite (1984) BBC Micro look: white wireframe spaceships with hidden-line removal, rotating space stations, a scanner radar below and black space. Carry it through Elite wireframe, rotating station, scanner radar. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Elite wireframe; rotating station; scanner radar',
@@ -232,13 +232,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small pixel sprite walking through a sixteen-color storybook screen. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'EGA sixteen colors: bright green, cyan, magenta, brown and blue.',
       lighting_and_shadow:
-        'Flat EGA color with dithered gradients, lit the way King’s Quest 1984 lights its levels.',
+        'Flat colors from a sixteen-color palette with gradients faked by checkered dithering.',
       texture_and_material:
-        'EGA pixels, dithering and hard color edges, with the in-engine surface finish of King’s Quest 1984.',
+        'Chunky pixels in bright cyan, magenta, green and brown, hard color edges and dither patterns.',
       camera_and_composition: 'Side-view storybook screen with a parser bar at the bottom.',
       atmosphere_and_mood: 'Keep the requested mood with whimsical fairy-tale quest.',
       rendering_and_quality:
-        'Authentic eighties EGA adventure screen, matching real King’s Quest 1984 screenshots.',
+        'A 1984 PC EGA frame at 320 by 200: a bright storybook screen of flat color areas with a tiny walking sprite.',
       creative_brief:
         "Sierra King’s Quest (1984) EGA look: sixteen-color storybook fairy-tale screens, dithered skies, pixel castles, a small walking hero sprite and a text parser bar. Carry it through Sierra EGA, sixteen colors, dithering, storybook screens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Sierra EGA; sixteen colors; dithering; storybook screens',
@@ -267,13 +267,13 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a big-headed pixel character in a spooky comedic mansion room. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'C64 and PC palettes with purple night and green slime.',
       lighting_and_shadow:
-        'Flat pixel light with spooky color accents, lit the way Maniac Mansion 1987 lights its levels.',
+        'Flat pixel colors with spooky purple and green accents and no real shading.',
       texture_and_material:
-        'Pixel art with chunky characters, with the in-engine surface finish of Maniac Mansion 1987.',
+        'Chunky big-headed pixel characters and simple room furniture made of a few colors.',
       camera_and_composition: 'Side-view room with a verb command panel below.',
       atmosphere_and_mood: 'Keep the requested mood with spooky comedic mischief.',
       rendering_and_quality:
-        'Authentic eighties point-and-click adventure screen, matching real Maniac Mansion 1987 screenshots.',
+        'A 1987 Commodore 64 frame at 320 by 200: wide chunky pixels above a strip of verb button shapes.',
       creative_brief:
         "Lucasfilm Games Maniac Mansion (1987) look: big-headed pixel characters, spooky comedic mansion rooms, a verb command panel and B-movie parody humor. Carry it through SCUMM verbs, big-headed sprites, spooky mansion comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'SCUMM verbs; big-headed sprites; spooky mansion comedy',
@@ -302,14 +302,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny top-down sprite exploring a tiled NES overworld. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'NES palette of forest green, sand beige and rock brown.',
       lighting_and_shadow:
-        'Flat NES screen light, lit the way The Legend of Zelda 1986 lights its levels.',
+        'Flat bright NES colors with no shading, sand, green trees and grey rocks in simple tiles.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Top-down single-screen overworld with a status bar, framed the way The Legend of Zelda 1986 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with curious open adventure.',
       rendering_and_quality:
-        'Authentic mid-eighties NES screen capture, matching real The Legend of Zelda 1986 screenshots.',
+        'A 1986 NES frame at 256 by 240: tiny top-down hero sprite, grid of repeating tiles, black strip with a map box at the top.',
       creative_brief:
         "Nintendo The Legend of Zelda (1986) NES look: top-down tile overworld of trees, rocks and sand, limited NES palette, tiny hero sprite with a shield and screen-by-screen exploration. Carry it through NES top-down, tiled overworld, tiny hero, exploration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'NES top-down; tiled overworld; tiny hero; exploration',
@@ -338,14 +338,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite exploring black-backed alien caverns and shafts. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Pure black background with blue, orange and green rock tiles.',
       lighting_and_shadow:
-        'Flat NES light with black emptiness, lit the way Metroid 1986 lights its levels.',
+        'Flat NES colors floating on pure black emptiness, with no light sources.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Side-view cavern with vertical shafts, framed the way Metroid 1986 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with lonely alien isolation.',
       rendering_and_quality:
-        'Authentic NES exploration screen, matching real Metroid 1986 screenshots.',
+        'A 1986 NES frame at 256 by 240: small sprite in a vertical shaft of colored block tiles on black, a tiny energy number shape.',
       creative_brief:
         "Nintendo Metroid (1986) NES look: lonely alien caverns on pure black backgrounds, blue and orange rock tiles, vertical shafts and isolated eerie exploration. Carry it through Metroid black caverns, vertical shafts, isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Metroid black caverns; vertical shafts; isolation',
@@ -374,14 +374,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite climbing gothic castle stairways lit by candles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Dark red brick, night blue and candle yellow.',
       lighting_and_shadow:
-        'Flat NES light with candle flicker, lit the way Castlevania 1986 lights its levels.',
+        'Flat NES colors with candle sprites flickering on dark blue and black walls.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Side-scrolling castle view with stairs, framed the way Castlevania 1986 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with gothic horror adventure.',
       rendering_and_quality:
-        'Authentic NES gothic platformer screen, matching real Castlevania 1986 screenshots.',
+        'A 1986 NES frame at 256 by 240: small whip-wielding sprite on diagonal stairs, stone block tiles, health bar shapes at the top.',
       creative_brief:
         "Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage. Carry it through Castlevania stairs, candles, bats, gothic castle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Castlevania stairs; candles; bats; gothic castle',
@@ -410,14 +410,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a chunky bright sprite platforming through a colorful mechanical stage. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'Bright NES blues, oranges, greens and pinks, true to the Mega Man 2 1988 palette.',
-      lighting_and_shadow: 'Flat bright NES light, lit the way Mega Man 2 1988 lights its levels.',
+      lighting_and_shadow: 'Flat bright NES colors, bold blue and cyan sprites with no gradients.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Side-scrolling stage with clean tiles, framed the way Mega Man 2 1988 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with bright heroic platforming.',
       rendering_and_quality:
-        'Authentic NES action platformer screen, matching real Mega Man 2 1988 screenshots.',
+        'A 1988 NES frame at 256 by 240: chunky bright sprite on repeating mechanical tiles, a vertical energy bar at the left.',
       creative_brief:
         "Capcom Mega Man 2 (1988) NES look: bright colorful robot-themed stages, chunky mechanical sprites, clean tile patterns and crisp platforming. Carry it through Mega Man stages, chunky sprites, mechanical themes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Mega Man stages; chunky sprites; mechanical themes',
@@ -445,15 +445,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny spaceship sprites in a scrolling starfield with strange terrain. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Starfield black with bright sprite colors and orange volcanoes.',
-      lighting_and_shadow:
-        'Flat arcade light and bright bullet sprites, lit the way Gradius 1985 lights its levels.',
+      lighting_and_shadow: 'Flat arcade colors with bright bullet dots on a black starfield.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Horizontal scrolling shooter view, framed the way Gradius 1985 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with intense scrolling battle.',
       rendering_and_quality:
-        'Authentic mid-eighties arcade shooter screen, matching real Gradius 1985 screenshots.',
+        'A 1985 arcade frame at 256 by 224: tiny ship sprite flying right over volcano terrain, a row of power-up boxes along the bottom.',
       creative_brief:
         "Konami Gradius (1985) look: horizontal-scrolling space shooter, volcanoes and Moai heads, starfield parallax, tiny spaceship sprites and power-up capsules. Carry it through Gradius parallax, volcanoes, tiny ships, power-ups. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Gradius parallax; volcanoes; tiny ships; power-ups',
@@ -481,14 +480,15 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as running sprites in jungle and alien base stages. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Jungle green, waterfall blue and alien flesh red.',
-      lighting_and_shadow: 'Flat bright arcade light, lit the way Contra 1987 lights its levels.',
+      lighting_and_shadow:
+        'Flat bright arcade colors in green jungle and grey metal, with no shading.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Side-scrolling run-and-gun view, framed the way Contra 1987 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with explosive action bravado.',
       rendering_and_quality:
-        'Authentic eighties run-and-gun screen, matching real Contra 1987 screenshots.',
+        'A 1987 NES frame at 256 by 240: small running soldier sprites, waterfalls and palm tiles, bright bullet dots.',
       creative_brief:
         "Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy. Carry it through Contra jungle, waterfalls, spread shot, alien bases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Contra jungle; waterfalls; spread shot; alien bases',
@@ -517,14 +517,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a smooth acrobatic sprite in C64 rooms with elevators and robots. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Commodore 64 palette: muted brown, grey-blue, purple and green.',
       lighting_and_shadow:
-        'Flat C64 screen light, lit the way Impossible Mission 1984 lights its levels.',
+        'Flat Commodore 64 colors in muted browns, purples and greys with no shading.',
       texture_and_material:
-        'Wide C64 pixels and scanlines, with the in-engine surface finish of Impossible Mission 1984.',
+        'Wide rectangular pixels, simple room blocks, lifts and robot sprites with scanlines between rows.',
       camera_and_composition:
         'Side-view rooms connected by elevators, framed the way Impossible Mission 1984 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense secret agent search.',
       rendering_and_quality:
-        'Authentic Commodore 64 screen capture, matching real Impossible Mission 1984 screenshots.',
+        'A 1984 Commodore 64 frame at 320 by 200: muted palette, wide pixels, a smoothly animated agent sprite mid-somersault.',
       creative_brief:
         "Epyx Impossible Mission (1984) Commodore 64 look: C64 muted palette, elevators and rooms, smooth somersaulting rotoscoped agent sprite, patrol robots and puzzle searching. Carry it through C64 palette, elevators, somersault agent, robots. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'C64 palette; elevators; somersault agent; robots',
@@ -552,14 +552,13 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject walking through many layers of parallax alien landscape under huge moons. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Amiga purple skies, red moons and deep teal.',
-      lighting_and_shadow:
-        'Huge moonlight and glowing skies, lit the way Shadow of the Beast 1989 lights its levels.',
+      lighting_and_shadow: 'Huge pale moons and glowing purple skies in banded color gradients.',
       texture_and_material: 'Detailed Amiga pixel art with many parallax layers.',
       camera_and_composition:
         'Side-scrolling view with deep parallax, framed the way Shadow of the Beast 1989 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with alien atmospheric wonder.',
       rendering_and_quality:
-        'Authentic Amiga parallax screen, matching real Shadow of the Beast 1989 screenshots.',
+        'A 1989 Amiga frame at 320 by 256: many layered strips of pixel landscape scrolling at different speeds under a vast moon.',
       creative_brief:
         "Psygnosis Shadow of the Beast (1989) Amiga look: twelve layers of parallax scrolling, huge moons, purple alien skies, detailed painterly pixel art and Roger Dean–style atmosphere. Carry it through Amiga parallax, huge moons, purple skies, painterly pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Amiga parallax; huge moons; purple skies; painterly pixels',
@@ -589,14 +588,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Dungeon blue-grey stone and torch orange, true to the Prince of Persia 1989 palette.',
       lighting_and_shadow:
-        'Flickering torchlight on stone, lit the way Prince of Persia 1989 lights its levels.',
+        'Flickering torchlight suggested by a few warm pixels on flat stone walls.',
       texture_and_material:
-        'Low-resolution pixels with fluid rotoscoped motion, with the in-engine surface finish of Prince of Persia 1989.',
+        'Low-resolution flat pixel walls and a small sprite whose pose looks traced from a real moving person.',
       camera_and_composition:
         'Side-view dungeon rooms, framed the way Prince of Persia 1989 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with tense fluid acrobatics.',
       rendering_and_quality:
-        'Authentic late-eighties computer platformer screen, matching real Prince of Persia 1989 screenshots.',
+        'A 1989 PC frame at 320 by 200: plain stone blocks, spikes and gates, a thin row of health triangles at the bottom.',
       creative_brief:
         "Jordan Mechner Prince of Persia (1989) look: fluid rotoscoped animation, dungeon stone corridors, spike traps, gates and torchlit platforming. Carry it through Mechner rotoscoping, dungeon traps, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Mechner rotoscoping; dungeon traps; torchlight',
@@ -625,14 +624,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a first-person JRPG battle screen with one monster on black and a command window. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
         'NES palette with a black battle background, true to the Dragon Quest 1986 palette.',
-      lighting_and_shadow: 'Flat NES light, lit the way Dragon Quest 1986 lights its levels.',
+      lighting_and_shadow: 'Flat NES colors with a single bright monster sprite on pure black.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'First-person battle screen with windowed menus, framed the way Dragon Quest 1986 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with humble heroic adventure.',
       rendering_and_quality:
-        'Authentic NES JRPG battle screen, matching real Dragon Quest 1986 screenshots.',
+        'A 1986 NES frame at 256 by 240: one monster in a black window, white-bordered command and status boxes with blank text lines.',
       creative_brief:
         "Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs. Carry it through Dragon Quest battle screen, monster on black, command window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Dragon Quest battle screen; monster on black; command window',
@@ -660,15 +659,14 @@ export const GENERATED_STYLE_PRESETS = [
       subject_treatment:
         'Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a cartoonish horror sprite in graveyards and haunted towns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone: 'Night blue graveyard, grave grey and zombie green.',
-      lighting_and_shadow:
-        'Flat arcade light with night blue, lit the way Ghosts ’n Goblins 1985 lights its levels.',
+      lighting_and_shadow: 'Flat arcade colors on night blue with no shading.',
       texture_and_material:
         'Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.',
       camera_and_composition:
         'Side-scrolling graveyard view, framed the way Ghosts ’n Goblins 1985 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with cartoonish horror peril.',
       rendering_and_quality:
-        'Authentic arcade horror platformer screen, matching real Ghosts ’n Goblins 1985 screenshots.',
+        'A 1985 arcade frame at 256 by 224: small armored sprite among tombstones and dead trees, zombies rising from pixel dirt.',
       creative_brief:
         "Capcom Ghosts ’n Goblins (1985) arcade look: graveyards and haunted towns, zombies rising from graves, lances, a knight losing his armor and cartoonish horror sprites. Carry it through Ghosts ’n Goblins graveyard, zombies, cartoon horror. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Ghosts ’n Goblins graveyard; zombies; cartoon horror',
@@ -698,14 +696,14 @@ export const GENERATED_STYLE_PRESETS = [
       color_and_tone:
         'Airbrushed sunset orange, electric blue and chrome, true to the Eighties Painted Game Box Art palette.',
       lighting_and_shadow:
-        'Dramatic backlit airbrush glow, lit the way Eighties Painted Game Box Art lights its levels.',
+        'Dramatic backlit airbrush glow with lens flares and hot rim light around the hero.',
       texture_and_material:
-        'Airbrushed painting on glossy cardboard box, with the in-engine surface finish of Eighties Painted Game Box Art.',
+        'Smooth airbrushed painting printed on a glossy cardboard box with slightly worn corners.',
       camera_and_composition:
         'Dramatic heroic box-front composition, framed the way Eighties Painted Game Box Art frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with overhyped heroic drama.',
       rendering_and_quality:
-        'Airbrushed eighties game box painting, true to real eighties painted game box covers.',
+        'An airbrushed eighties game box painting on glossy cardboard, with a bold blank band where the logo would sit.',
       creative_brief:
         "Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging. Carry it through Eighties box art, airbrush, overhyped drama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Eighties box art; airbrush; overhyped drama',

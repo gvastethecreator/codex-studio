@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Fortnite 2017 - Epic Cartoon Battle Island
 category: 12. Video Games 2010s
 domain: twenty-tens multiplayer game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as bright chunky cartoon 3D characters on a stylized island. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated grass green, sky blue and loot purple.
-  lighting_and_shadow: Bright cheerful island daylight, lit the way Fortnite 2017 lights its levels.
-  texture_and_material: Clean stylized cartoon 3D, with the in-engine surface finish of Fortnite 2017.
+  lighting_and_shadow: "Bright cheerful daylight with soft clean shadows, lit the way Fortnite 2017 lights its levels."
+  texture_and_material: "Clean smooth cartoon materials with simple color gradients and chunky readable shapes."
   camera_and_composition: Third-person over-the-shoulder view, framed the way Fortnite 2017 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with playful competitive chaos.
-  rendering_and_quality: Authentic cartoon battle royale screen, matching real Fortnite 2017 screenshots.
+  rendering_and_quality: "A 2017 frame at 1920 by 1080: bright stylized island, wooden ramps being built, circular minimap shape."
   creative_brief: 'Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color. Carry it through Fortnite cartoon island, building ramps, bright color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Fortnite cartoon island; building ramps; bright color
 avoidRules:

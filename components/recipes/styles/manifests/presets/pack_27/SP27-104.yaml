@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Halo 2001 - Bungie Ringworld Sci-Fi
 category: 6. Video Games 2000s
 domain: two-thousands console shooter
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,13 +25,13 @@ visualDna:
   aesthetic: 'Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person or third-person across vast ringworld landscapes and glossy alien structures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Ringworld sky blue, alien purple and grass green.
-  lighting_and_shadow: Bright open-sky daylight with glossy purple reflections, lit the way Halo 2001 lights its levels.
+  lighting_and_shadow: "Bright open-sky daylight with one simple shiny highlight on purple alien surfaces and no real shadows on grass."
   texture_and_material: "Plain low-detail surfaces: grass as a flat green texture on smooth rolling hills, alien metal as smooth purple with one simple shiny highlight, and crisp but blocky armor shapes."
   camera_and_composition: First-person view with a weapon at screen right.
   atmosphere_and_mood: Keep the requested mood with epic alien frontier.
   rendering_and_quality: "A 2001 original Xbox frame at 640 by 480: clean simple geometry, blurry textures up close and a hazy short draw distance, clearly early-2000s and not the later remaster."
   creative_brief: 'Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, green fields. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
-  key_features: Halo ringworld sky; purple alien structures; green fields
+  key_features: "Halo ringworld sky; purple alien structures; flat green fields; early Xbox simplicity"
 avoidRules:
   - a green armored super soldier with a gold visor
   - existing alien species

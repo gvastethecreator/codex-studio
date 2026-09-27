@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Undertale 2015 - Toby Fox Charming Lo-Fi RPG
 category: 12. Video Games 2010s
 domain: twenty-tens role-playing game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Toby Fox Undertale (2015) look: charming lo-fi pixel RPG, simple sprites, black battle screens with bullet-hell hearts, snowy towns, quirky monsters and heartfelt humor.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as simple lo-fi pixel sprites in quirky underground towns. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Simple lo-fi palettes on black, true to the Undertale 2015 palette.
-  lighting_and_shadow: Flat lo-fi pixel light, lit the way Undertale 2015 lights its levels.
-  texture_and_material: Simple crisp pixel sprites, with the in-engine surface finish of Undertale 2015.
+  lighting_and_shadow: "Flat simple colors with no shading, many screens mostly black."
+  texture_and_material: "Simple crisp pixel sprites with few colors and thick outlines, plain repeating floor tiles."
   camera_and_composition: Top-down RPG view or black battle box, framed the way Undertale 2015 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quirky heartfelt humor.
-  rendering_and_quality: Authentic lo-fi pixel RPG screen, matching real Undertale 2015 screenshots.
+  rendering_and_quality: "A 2015 PC frame at 640 by 480: small sprites in quirky rooms or a white-bordered battle box on black."
   creative_brief: 'Toby Fox Undertale (2015) look: charming lo-fi pixel RPG, simple sprites, black battle screens with bullet-hell hearts, snowy towns, quirky monsters and heartfelt humor. Carry it through Undertale lo-fi sprites, battle box, quirky monsters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Undertale lo-fi sprites; battle box; quirky monsters
 avoidRules:

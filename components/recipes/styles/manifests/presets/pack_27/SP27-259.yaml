@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Astro Bot 2024 - Team Asobi Toy Platform Joy
 category: 13. Video Games 2020s
 domain: twenty-twenties platformer game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Team Asobi Astro Bot (2024) look: glossy toy-like robot platforming, bright playful worlds of candy colors, physics-driven props, cheering tiny bots and joyful polish.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny glossy toy robots in bright playful platform worlds. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Glossy candy blue, sunny yellow and white, true to the Astro Bot 2024 palette.
-  lighting_and_shadow: Bright cheerful daylight with glossy highlights, lit the way Astro Bot 2024 lights its levels.
-  texture_and_material: Glossy plastic toy surfaces, with the in-engine surface finish of Astro Bot 2024.
+  lighting_and_shadow: "Bright cheerful daylight with glossy highlights on every toy surface."
+  texture_and_material: "Glossy plastic toy surfaces, rounded edges and bright primary colors."
   camera_and_composition: Third-person platformer view, framed the way Astro Bot 2024 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with pure playful joy.
-  rendering_and_quality: Authentic toy platformer screen, matching real Astro Bot 2024 screenshots.
+  rendering_and_quality: "A 2024 console frame at 3840 by 2160: tiny glossy robot on a bright toy platform, sharp and colorful."
   creative_brief: 'Team Asobi Astro Bot (2024) look: glossy toy-like robot platforming, bright playful worlds of candy colors, physics-driven props, cheering tiny bots and joyful polish. Carry it through Astro Bot glossy toys, playful worlds, tiny bots. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Astro Bot glossy toys; playful worlds; tiny bots
 avoidRules:

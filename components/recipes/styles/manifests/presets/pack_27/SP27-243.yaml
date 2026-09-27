@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Deaths Door 2021 - Acid Nerve Crow Reaper
 category: 13. Video Games 2020s
 domain: twenty-twenties action game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Acid Nerve Death’s Door (2021) look: isometric soft-lit 3D in muted grey offices of death, overgrown ruins, a tiny crow reaper, glowing doors and quiet melancholic humor.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in isometric soft-lit muted ruins and grey afterlife offices. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted grey, moss green and soft door glow.
-  lighting_and_shadow: Soft diffuse light and glowing doors, lit the way Deaths Door 2021 lights its levels.
-  texture_and_material: Clean low-detail 3D with soft shading, with the in-engine surface finish of Deaths Door 2021.
+  lighting_and_shadow: "Soft diffuse grey light and the warm glow of standing doorways."
+  texture_and_material: "Clean simple 3D shapes with soft shading and almost no surface detail, muted greys with pops of color."
   camera_and_composition: Isometric top-down action view, framed the way Deaths Door 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet wry melancholy.
-  rendering_and_quality: Authentic isometric action screen, matching real Deaths Door 2021 screenshots.
+  rendering_and_quality: "A 2021 frame at 1920 by 1080 from a high diagonal angle: small crow figure in muted ruins, a few pip shapes in a corner."
   creative_brief: 'Acid Nerve Death’s Door (2021) look: isometric soft-lit 3D in muted grey offices of death, overgrown ruins, a tiny crow reaper, glowing doors and quiet melancholic humor. Carry it through Death''s Door crow reaper, grey offices, glowing doors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Death's Door crow reaper; grey offices; glowing doors
 avoidRules:

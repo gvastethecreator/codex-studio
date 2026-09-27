@@ -16,11 +16,14 @@ const spec: Spec = {
       look: 'Playdead Limbo (2010) look: side-scrolling black silhouettes on a grey foggy monochrome world, film grain, vignette, deadly traps and eerie forest silence.',
       subject: 'render every subject as a black silhouette against grey foggy monochrome layers.',
       color: 'Monochrome black, grey fog and white glow.',
-      light: 'Diffuse fog light with a heavy vignette.',
-      texture: 'Film grain, soft blur and layered fog.',
+      light:
+        'Soft grey fog light that fades to near white behind and darkens heavily toward every edge of the frame.',
+      texture:
+        'Flicker of film grain, soft blur on far layers and crisp black silhouettes in front.',
       camera: 'Side-scrolling view with parallax fog layers.',
       mood: 'eerie silent dread',
-      render: 'Authentic monochrome indie platformer screen.',
+      render:
+        'A 2010 side-view frame at 1280 by 720 in pure greyscale: black cut-out shapes over layers of grey fog, heavy vignette.',
       key: 'Limbo silhouettes; grey fog; film grain; vignette',
       avoid: ['a small silhouette boy with glowing white eyes', 'a giant silhouette spider'],
       briefs: [
@@ -37,11 +40,14 @@ const spec: Spec = {
         look: 'Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building.',
         subject: 'render every subject built from blocky cubes with sixteen-pixel textures.',
         color: 'Grass green, dirt brown, sky blue and torch orange.',
-        light: 'Flat daylight and blocky torchlight falloff.',
-        texture: 'Sixteen-pixel block textures on hard cubes.',
+        light:
+          'Flat daylight on cube faces, each face one of a few brightness steps, torchlight fading in blocky steps.',
+        texture:
+          'Every surface a cube face with a sixteen-by-sixteen pixel texture, blurry nowhere, crisp square pixels everywhere.',
         camera: 'First-person view with a blocky hand.',
         mood: 'cozy creative freedom',
-        render: 'Authentic voxel sandbox screen.',
+        render:
+          'A 2011 PC frame at 1280 by 720: world built entirely from one-meter cubes, a square sun, a hotbar of blank slots at the bottom.',
         key: 'Minecraft cubes; 16px textures; square sun; torches',
         avoid: ['a green four-legged creeper', 'a blocky man in a cyan shirt'],
         briefs: [
@@ -60,11 +66,13 @@ const spec: Spec = {
         subject:
           'render the subject small on hand-painted isometric fragments assembling in a void.',
         color: 'Warm painted amber, teal and void blue.',
-        light: 'Soft painted sunset light.',
-        texture: 'Lush hand-painted isometric art.',
+        light: 'Soft painted sunset light with glowing edges on floating ground pieces.',
+        texture:
+          'Lush hand-painted tiles and props with visible brush marks, seen from a high diagonal angle.',
         camera: 'Isometric view over floating ground pieces.',
         mood: 'warm narrated melancholy',
-        render: 'Authentic painted isometric action screen.',
+        render:
+          'A 2011 frame at 1280 by 720: small hero on painted ground fragments rising out of an empty sky-colored void.',
         key: 'Bastion painted isometric; assembling ground; void',
         avoid: ['a white-haired kid with a giant hammer'],
         briefs: [
@@ -82,11 +90,13 @@ const spec: Spec = {
         look: 'Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action.',
         subject: 'render the subject as small top-down pixel figures in neon-lit rooms.',
         color: 'Pulsing neon magenta, cyan and hot orange.',
-        light: 'Throbbing neon color cycling.',
-        texture: 'Low-resolution pixel art with color bleed.',
+        light: 'Throbbing neon pinks and cyans cycling across the whole screen.',
+        texture:
+          'Chunky low-resolution pixels with color bleeding into neighbors and a slight wobble of the whole view.',
         camera: 'Top-down view with a wobbling screen.',
         mood: 'feverish neon frenzy',
-        render: 'Authentic neon top-down pixel screen.',
+        render:
+          'A 2012 PC frame: small top-down pixel figures in a tilted neon room, flat floor patterns, a thick chromatic smear.',
         key: 'Hotline Miami neon; top-down pixels; animal masks',
         avoid: ['a man in a letterman jacket and rooster mask'],
         briefs: [
@@ -103,14 +113,16 @@ const spec: Spec = {
       {
         look: 'Cardboard Computer Kentucky Route Zero (2013) look: flat low-poly theatrical scenes with no textures, strong silhouettes, stage-like lighting, magic realist Kentucky roads and underground highways.',
         subject:
-          'render the subject as flat untextured low-poly figures in theatrical stage-lit scenes.',
+          'show the subject as flat untextured angular figures of one or two solid colors on a theatrical stage-like set.',
         color: 'Muted night blues, warm amber pools and stark silhouettes.',
-        light: 'Theatrical spotlights and single lamps.',
-        texture: 'Flat untextured polygons and clean shapes.',
+        light: 'Single lamps and theatrical spotlights cutting shapes out of deep dark blue.',
+        texture:
+          'Plain flat-colored angular shapes with no texture at all, like a paper theater set.',
         camera: 'Wide theatrical staging like a play.',
         mood: 'quiet magic-realist melancholy',
-        render: 'Authentic magic realist adventure screen.',
-        key: 'Kentucky Route Zero flat polygons; theatrical light',
+        render:
+          'A 2013 PC frame at 1280 by 720: sparse flat shapes, small figures, wide dark spaces and one warm lamp.',
+        key: 'Kentucky Route Zero flat untextured shapes; theatrical light; wide dark stages',
         briefs: [
           'Beneath a single stage-like spotlight on an empty Kentucky gas station at night, a tired antiques deliveryman and his old dog stand beside a truck while a huge bird silhouette crosses the moon. No readable text or logo.',
           'An underground highway runs through a cave lit by one amber lamp. A pickup truck idles at a fork in the road. No readable text or logo.',
@@ -126,11 +138,13 @@ const spec: Spec = {
         look: 'Lucas Pope Papers, Please (2013) look: grim low-resolution pixel art of a border checkpoint booth, muted Soviet greys and browns, document stamps and queues in the cold.',
         subject: 'render the subject as grim muted pixel figures at a cold border booth.',
         color: 'Muted grey, drab brown and stamp red.',
-        light: 'Flat cold booth light.',
-        texture: 'Chunky low-resolution pixel art.',
+        light: 'Flat cold light in drab greys, browns and olive with no gradients.',
+        texture:
+          'Chunky low-resolution pixels, tiny stiff figures in a queue and big pixel documents on a desk.',
         camera: 'Booth desk view with a window.',
         mood: 'grim bureaucratic tension',
-        render: 'Authentic grim pixel simulation screen.',
+        render:
+          'A 2013 PC frame at 570 by 320 scaled up: booth desk below, queue of small grim figures above, stamp shapes.',
         key: 'Papers Please booth; muted pixels; stamps; queue',
         briefs: [
           'In grim muted pixel art, a tired border inspector in a drab booth studies the passport of a traveling circus bear standing patiently at the window while a long queue shivers in the snow outside. No readable text or logo.',
@@ -148,11 +162,13 @@ const spec: Spec = {
         subject:
           'render the subject in painterly isometric art nouveau city streets with digital glow.',
         color: 'Turquoise, crimson and warm gold.',
-        light: 'Glowing digital accents and soft painted light.',
-        texture: 'Painterly Jen Zee illustration.',
+        light: 'Glowing turquoise digital accents and soft painted light on elegant streets.',
+        texture:
+          'Painterly illustration with art nouveau curves and gold trim, seen from a high diagonal angle.',
         camera: 'Isometric city view.',
         mood: 'elegant digital melancholy',
-        render: 'Authentic painterly cyberpunk screen.',
+        render:
+          'A 2014 frame at 1280 by 720: painted city plaza, a small figure with a glowing sword, turquoise highlights.',
         key: 'Transistor art nouveau city; turquoise glow; painterly',
         avoid: ['a red-haired singer carrying a glowing talking sword'],
         briefs: [
@@ -170,11 +186,13 @@ const spec: Spec = {
         look: 'Toby Fox Undertale (2015) look: charming lo-fi pixel RPG, simple sprites, black battle screens with bullet-hell hearts, snowy towns, quirky monsters and heartfelt humor.',
         subject: 'render the subject as simple lo-fi pixel sprites in quirky underground towns.',
         color: 'Simple lo-fi palettes on black.',
-        light: 'Flat lo-fi pixel light.',
-        texture: 'Simple crisp pixel sprites.',
+        light: 'Flat simple colors with no shading, many screens mostly black.',
+        texture:
+          'Simple crisp pixel sprites with few colors and thick outlines, plain repeating floor tiles.',
         camera: 'Top-down RPG view or black battle box.',
         mood: 'quirky heartfelt humor',
-        render: 'Authentic lo-fi pixel RPG screen.',
+        render:
+          'A 2015 PC frame at 640 by 480: small sprites in quirky rooms or a white-bordered battle box on black.',
         key: 'Undertale lo-fi sprites; battle box; quirky monsters',
         avoid: [
           'a skeleton in a blue hoodie',
@@ -192,11 +210,12 @@ const spec: Spec = {
       look: 'Nintendo Splatoon (2015) look: glossy candy-colored ink splattered across plazas and skate parks, squid-kid fashion, street culture and bright urban pop.',
       subject: 'render the subject in glossy candy-colored ink-splattered urban arenas.',
       color: 'Neon orange, magenta and electric blue ink.',
-      light: 'Bright urban daylight with glossy highlights.',
-      texture: 'Glossy wet ink and chunky toy surfaces.',
+      light: 'Bright daylight with glossy wet highlights on ink puddles and toy-like surfaces.',
+      texture: 'Shiny wet splats of neon ink over clean chunky toy-like buildings and ramps.',
       camera: 'Third-person arena view.',
       mood: 'bright bouncy fun',
-      render: 'Authentic glossy ink shooter screen.',
+      render:
+        'A 2015 Wii U frame at 1280 by 720: bright candy colors, glossy ink, a round meter shape in a corner.',
       key: 'Splatoon glossy ink; turf splats; urban pop',
       avoid: ['squid-kid inklings with tentacle hair', 'a sea urchin coach'],
       briefs: [
@@ -210,11 +229,12 @@ const spec: Spec = {
       subject:
         'render the subject small in muted grey 2.5D dystopian spaces with restrained light.',
       color: 'Muted grey, cold blue and one small red accent.',
-      light: 'Soft restrained volumetric light.',
-      texture: 'Smooth low-detail 3D with soft fog.',
+      light: 'Soft restrained beams of light through grey haze, one small red accent.',
+      texture: 'Smooth simple 3D shapes with almost no surface detail, softened by fog.',
       camera: 'Side-scrolling 2.5D cinematic view.',
       mood: 'eerie restrained dread',
-      render: 'Authentic muted dystopian platformer screen.',
+      render:
+        'A 2016 side-view frame at 1920 by 1080: muted grey layers, a tiny figure in red, wide empty space.',
       key: 'Inside muted grey; red accent; mind-controlled rows',
       avoid: ['a small boy in a red sweater', 'a giant flesh blob'],
       briefs: [
@@ -231,11 +251,13 @@ const spec: Spec = {
         look: 'Superhot Team Superhot (2016) look: stark white minimalist rooms, crystalline red enemies that shatter, time that moves only when you move, and slow frozen bullet trails.',
         subject: 'render people as faceless crystalline red figures in stark white rooms.',
         color: 'Stark white, crystal red and black accents.',
-        light: 'Flat clean white light.',
-        texture: 'Faceted crystal surfaces and clean planes.',
+        light: 'Flat clean white light with no shadows worth noticing.',
+        texture:
+          'Faceted red glassy figures that shatter into shards against smooth white planes and black objects.',
         camera: 'First-person view with frozen motion.',
         mood: 'cool frozen tension',
-        render: 'Authentic minimalist shooter screen.',
+        render:
+          'A 2016 PC frame at 1920 by 1080: bare white rooms, red crystal figures frozen mid-motion, a black weapon.',
         key: 'Superhot white rooms; red crystal figures; frozen time',
         briefs: [
           'Frozen mid-moment in a stark white café, a crystalline red waiter shatters into shards as a thrown coffee cup hangs in the air trailing a slow white streak across the room. No readable text or logo.',
@@ -252,11 +274,12 @@ const spec: Spec = {
         look: 'Team Cherry Hollow Knight (2017) look: hand-drawn gloomy insect kingdom, blue-grey caverns, ink-black bug characters with white masks, glowing lanterns and melancholic depth.',
         subject: 'render the subject as small hand-drawn bug figures in gloomy layered caverns.',
         color: 'Gloomy blue-grey, ink black and pale white.',
-        light: 'Soft lantern glow in dark caverns.',
-        texture: 'Hand-drawn inked art with painted layers.',
+        light: 'Soft lantern glow and pale light shafts in dark blue caverns.',
+        texture: 'Clean hand-drawn inked sprites over softly painted, blurred background layers.',
         camera: 'Side-view metroidvania with deep parallax.',
         mood: 'melancholic gloomy wonder',
-        render: 'Authentic hand-drawn metroidvania screen.',
+        render:
+          'A 2017 side-view frame at 1920 by 1080: small bug knight in a gloomy layered cavern, mask shapes top left.',
         key: 'Hollow Knight gloom; insect kingdom; hand-drawn',
         avoid: ['a small knight with a white horned mask and nail'],
         briefs: [
@@ -274,11 +297,12 @@ const spec: Spec = {
         look: 'PlatinumGames NieR:Automata (2017) look: sun-faded ruined city overgrown with green, desaturated sepia sheen, round rusty machine lifeforms, elegant androids and melancholic open spaces.',
         subject: 'render the subject in sun-faded overgrown city ruins with a sepia sheen.',
         color: 'Faded sepia, overgrown green and pale sky.',
-        light: 'Bright hazy sun over ruins.',
-        texture: 'Soft desaturated textures with bloom.',
+        light: 'Bright hazy sun over overgrown ruins, washed into a faded sepia sheen.',
+        texture: 'Soft desaturated textures, bloom on bright areas and moss over cracked concrete.',
         camera: 'Third-person view over open ruins.',
         mood: 'melancholic faded beauty',
-        render: 'Authentic faded action RPG screen.',
+        render:
+          'A 2017 PlayStation 4 frame at 1920 by 1080: faded colors, overgrown city, simple round machine enemies.',
         key: 'Nier ruined city; sepia haze; round machines',
         avoid: ['a white-haired android in a black blindfold and dress'],
         briefs: [
@@ -296,11 +320,13 @@ const spec: Spec = {
         look: 'Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color.',
         subject: 'render the subject as bright chunky cartoon 3D characters on a stylized island.',
         color: 'Saturated grass green, sky blue and loot purple.',
-        light: 'Bright cheerful island daylight.',
-        texture: 'Clean stylized cartoon 3D.',
+        light: 'Bright cheerful daylight with soft clean shadows.',
+        texture:
+          'Clean smooth cartoon materials with simple color gradients and chunky readable shapes.',
         camera: 'Third-person over-the-shoulder view.',
         mood: 'playful competitive chaos',
-        render: 'Authentic cartoon battle royale screen.',
+        render:
+          'A 2017 frame at 1920 by 1080: bright stylized island, wooden ramps being built, circular minimap shape.',
         key: 'Fortnite cartoon island; building ramps; bright color',
         avoid: ['existing Fortnite skins', 'a purple loot llama piñata'],
         briefs: [
@@ -318,11 +344,13 @@ const spec: Spec = {
         look: 'Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety.',
         subject: 'render the subject as a tiny pixel climber on crisp snowy mountain levels.',
         color: 'Pastel snow pinks, teal and dusk purple.',
-        light: 'Soft pastel glow and dash trails.',
-        texture: 'Crisp detailed pixel art.',
+        light: 'Soft pastel glow in snowy pinks and blues, colored trails behind dashes.',
+        texture:
+          'Crisp detailed pixel tiles and a tiny pixel climber, with smooth particle snow drifting over them.',
         camera: 'Side-view single-screen platformer.',
         mood: 'determined heartfelt climb',
-        render: 'Authentic pixel platformer screen.',
+        render:
+          'A 2018 frame at 320 by 180 scaled up: crisp pixel mountain level, tiny red-haired climber, drifting snow.',
         key: 'Celeste pixel mountain; dash trails; pastel snow',
         avoid: ['a red-haired climber in a blue jacket'],
         briefs: [
@@ -340,11 +368,12 @@ const spec: Spec = {
         look: 'Lucas Pope Return of the Obra Dinn (2018) look: 1-bit dithered monochrome 3D like an old Macintosh, frozen tableaux of deaths aboard an East Indiaman ship, and deduction.',
         subject: 'render the subject as a frozen 1-bit dithered monochrome tableau.',
         color: '1-bit black and pale green-white only.',
-        light: 'Dithered lighting with no gradients.',
-        texture: 'Coarse 1-bit dither patterns.',
+        light: 'Light made only of dither dot density, no grey tones at all.',
+        texture: 'Every surface pure black or pure white dots in coarse dither patterns.',
         camera: 'First-person frozen tableau view.',
         mood: 'eerie frozen mystery',
-        render: 'Authentic 1-bit dithered mystery screen.',
+        render:
+          'A 2018 frame at 640 by 360 scaled up: first-person frozen scene on a ship in two colors only.',
         key: 'Obra Dinn 1-bit dither; frozen tableaux; ship',
         briefs: [
           'In 1-bit dithered monochrome, a frozen moment aboard a sailing ship shows the cook mid-lunge with a ladle while a sailor hangs from the rigging and a crab-like shadow crosses the deck. No readable text or logo.',
@@ -361,11 +390,13 @@ const spec: Spec = {
         look: 'Square Enix Octopath Traveler (2018) look: HD-2D blend of pixel sprites in 3D diorama towns, tilt-shift depth of field, bloom, dynamic light and storybook medieval fantasy.',
         subject: 'render the subject as pixel sprites standing in tilt-shift 3D diorama towns.',
         color: 'Warm storybook golds and cool shadow blues.',
-        light: 'Dynamic bloom and warm lantern light.',
-        texture: 'Pixel sprites over detailed 3D dioramas.',
+        light: 'Warm lantern light and glowing bloom over small towns with blurred edges.',
+        texture:
+          'Crisp flat pixel sprites standing in detailed miniature 3D towns with strong background blur.',
         camera: 'Tilted diorama view with strong depth of field.',
         mood: 'storybook nostalgic adventure',
-        render: 'Authentic HD-2D RPG screen.',
+        render:
+          'A 2018 Switch frame at 1280 by 720: pixel characters in a tilt-shift diorama, top and bottom softly out of focus.',
         key: 'Octopath HD-2D; tilt-shift diorama; pixel sprites',
         avoid: ['existing Octopath travelers'],
         briefs: [
@@ -384,11 +415,13 @@ const spec: Spec = {
         subject:
           'render the subject in thick expressive oil-painted brushwork on a rainy isometric harbor city.',
         color: 'Muddy oil greys, rust and cold harbor teal.',
-        light: 'Cold rainy harbor light and warm windows.',
-        texture: 'Thick expressive oil brushstrokes.',
+        light: 'Cold rainy harbor light and warm yellow windows in thick paint.',
+        texture:
+          'Thick expressive oil brushstrokes on every surface, seen from a high diagonal angle.',
         camera: 'Isometric view over painted streets.',
         mood: 'melancholic satirical introspection',
-        render: 'Authentic oil-painted RPG screen.',
+        render:
+          'A 2019 PC frame at 1920 by 1080: painted harbor streets with a small figure and a dialogue panel shape at right.',
         key: 'Disco Elysium oil paint; isometric harbor; portraits',
         avoid: ['a disheveled detective in a green jacket and tie'],
         briefs: [
@@ -406,11 +439,12 @@ const spec: Spec = {
         look: 'House House Untitled Goose Game (2019) look: flat pastel low-poly English village gardens, no textures, soft shadows, a mischievous goose and gentle comedic stealth.',
         subject: 'render the subject in flat pastel untextured English village gardens.',
         color: 'Soft pastel greens, cream and brick orange.',
-        light: 'Soft flat daylight.',
-        texture: 'Untextured flat pastel shapes.',
+        light: 'Soft flat daylight with gentle shadows and no strong contrast.',
+        texture: 'Untextured flat pastel shapes, simple rounded hedges, fences and garden objects.',
         camera: 'High three-quarter view of gardens.',
         mood: 'gentle mischievous comedy',
-        render: 'Authentic pastel puzzle screen.',
+        render:
+          'A 2019 frame at 1920 by 1080: high angle over a pastel English garden, a white goose, flat shapes.',
         key: 'Goose Game pastel village; flat shapes; mischief',
         avoid: ['a white goose honking'],
         briefs: [
@@ -427,14 +461,16 @@ const spec: Spec = {
       {
         look: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.',
         subject:
-          'render the subject on tiny stylized low-poly planets with rickety wooden spacecraft.',
+          'show the subject on a tiny round planet you could walk around in minutes, beside a rickety wooden spacecraft.',
         color: 'Warm campfire orange, deep space blue and planet pastels.',
-        light: 'Campfire glow and sunlight across tiny planets.',
-        texture: 'Stylized low-poly surfaces.',
+        light: 'Campfire glow and low sunlight curving around the tiny planet.',
+        texture:
+          'Simple smooth shapes with painted gradients, wooden planks and patchy grass on small rounded worlds.',
         camera: 'First-person view on tiny planets.',
         mood: 'curious cosmic wonder',
-        render: 'Authentic stylized space exploration screen.',
-        key: 'Outer Wilds tiny planets; wooden ship; campfire',
+        render:
+          'A 2019 frame at 1920 by 1080: tiny planet with a clearly curved horizon, wooden ship, huge sun in the sky.',
+        key: 'Outer Wilds tiny curved planets; wooden ship; campfire; huge sun',
         briefs: [
           'On a tiny round planet you could walk around in a minute, a four-eyed astronaut roasts a marshmallow at a campfire beside a rickety wooden spaceship while the sun swells on the horizon. No readable text or logo.',
           'A small planet made of sand pours its dunes onto its twin through a sand column. A tiny ship flies between. No readable text or logo.',

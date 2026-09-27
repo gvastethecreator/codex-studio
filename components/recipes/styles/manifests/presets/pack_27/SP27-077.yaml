@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Prince of Persia 1989 - Mechner Rotoscoped Dungeon
 category: 4. Video Games 80s
 domain: eighties computer game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Jordan Mechner Prince of Persia (1989) look: fluid rotoscoped animation, dungeon stone corridors, spike traps, gates and torchlit platforming.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a fluid rotoscoped sprite in torchlit dungeon corridors with traps. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dungeon blue-grey stone and torch orange, true to the Prince of Persia 1989 palette.
-  lighting_and_shadow: Flickering torchlight on stone, lit the way Prince of Persia 1989 lights its levels.
-  texture_and_material: Low-resolution pixels with fluid rotoscoped motion, with the in-engine surface finish of Prince of Persia 1989.
+  lighting_and_shadow: "Flickering torchlight suggested by a few warm pixels on flat stone walls."
+  texture_and_material: "Low-resolution flat pixel walls and a small sprite whose pose looks traced from a real moving person."
   camera_and_composition: Side-view dungeon rooms, framed the way Prince of Persia 1989 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense fluid acrobatics.
-  rendering_and_quality: Authentic late-eighties computer platformer screen, matching real Prince of Persia 1989 screenshots.
+  rendering_and_quality: "A 1989 PC frame at 320 by 200: plain stone blocks, spikes and gates, a thin row of health triangles at the bottom."
   creative_brief: 'Jordan Mechner Prince of Persia (1989) look: fluid rotoscoped animation, dungeon stone corridors, spike traps, gates and torchlit platforming. Carry it through Mechner rotoscoping, dungeon traps, torchlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Mechner rotoscoping; dungeon traps; torchlight
 avoidRules:

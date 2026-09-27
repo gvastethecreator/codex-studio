@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Impossible Mission 1984 - Epyx Commodore 64 Lair
 category: 4. Video Games 80s
 domain: eighties home computer game
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Epyx Impossible Mission (1984) Commodore 64 look: C64 muted palette, elevators and rooms, smooth somersaulting rotoscoped agent sprite, patrol robots and puzzle searching.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a smooth acrobatic sprite in C64 rooms with elevators and robots. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'Commodore 64 palette: muted brown, grey-blue, purple and green.'
-  lighting_and_shadow: Flat C64 screen light, lit the way Impossible Mission 1984 lights its levels.
-  texture_and_material: Wide C64 pixels and scanlines, with the in-engine surface finish of Impossible Mission 1984.
+  lighting_and_shadow: "Flat Commodore 64 colors in muted browns, purples and greys with no shading."
+  texture_and_material: "Wide rectangular pixels, simple room blocks, lifts and robot sprites with scanlines between rows."
   camera_and_composition: Side-view rooms connected by elevators, framed the way Impossible Mission 1984 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense secret agent search.
-  rendering_and_quality: Authentic Commodore 64 screen capture, matching real Impossible Mission 1984 screenshots.
+  rendering_and_quality: "A 1984 Commodore 64 frame at 320 by 200: muted palette, wide pixels, a smoothly animated agent sprite mid-somersault."
   creative_brief: 'Epyx Impossible Mission (1984) Commodore 64 look: C64 muted palette, elevators and rooms, smooth somersaulting rotoscoped agent sprite, patrol robots and puzzle searching. Carry it through C64 palette, elevators, somersault agent, robots. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: C64 palette; elevators; somersault agent; robots
 avoidRules:
