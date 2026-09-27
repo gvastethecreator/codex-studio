@@ -147,6 +147,14 @@ _Avoid_: thumbnail import glob, eager global image map, style data source
 Lightweight grouping record for style pack metadata, categories, ordering, and references to Style Preset Manifests.
 _Avoid_: monolithic preset pack, category dump, generated style bundle
 
+**Cozy Extension**:
+Versioned declarative content package, such as a style pack, installed from an Extension Source. It holds data and images, never code that Studio runs.
+_Avoid_: plugin, runtime module, code extension
+
+**Extension Source**:
+Local folder or GitHub repository release feed where Studio finds Cozy Extensions. Many sources can be active at once.
+_Avoid_: marketplace, registry server, pack path
+
 **Codex Turn**:
 One `codex app-server` turn executed by the backend for a local image task.
 _Avoid_: generation step, rpc call
@@ -262,6 +270,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
 - A **Style Thumbnail Projection** derives pack-scoped asset URLs from style manifests without becoming style authoring truth.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
+- An **Extension Source** offers many **Cozy Extensions**. A style-pack extension carries one **Style Pack Manifest** and its **Style Preset Manifests**.
 - A **Local Generation Run** creates one or more **Persistent Jobs** and returns their catalog-derived image results.
 - **Local Studio Sync** mirrors **Persistent Jobs** and requests scoped **Image Catalog** reconciliation.
 - **Local Studio Sync** uses **Studio Event Revisions** to detect missed changes and request scoped reconciliation.
