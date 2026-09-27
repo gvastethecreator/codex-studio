@@ -1,15 +1,15 @@
 # Code map: codex-studio
 
-Generated: 2026-09-25T01:21:58Z | Commit: `cd55b71e3829` | Schema: 2
-Generation: `617ed7944bbd2f9141d6e6aa1fcc6e786de5ddae4bcceb2363e4b83923af6f23`
+Generated: 2026-09-27T20:48:02Z | Commit: `11701d3e1f8f` | Schema: 2
+Generation: `8cb4a8e58c4ef036c288d4bb67ce03673e7b210f422d42dc6146859d5a825f8f`
 Scope: . | Inventory: working-tree
-Nodes: 1249 | Edges: 6321 | Flows: 5
+Nodes: 1621 | Edges: 7423 | Flows: 5
 
 ## Coverage
 
-- Analysis: **partial**; 1169 analyzed of 1181 included files.
+- Analysis: **partial**; 1541 analyzed of 1553 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3334.
+- Unresolved references and analysis limits: 3718.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -34,7 +34,7 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 - `apps/local-server/src/auth/controller.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/reset.ts | callees: apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/googleAuthorizationCode.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
 - `apps/local-server/src/auth/deviceCode.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts, external:javascript:vitest | tests: 0 | entry: none
 - `apps/local-server/src/auth/deviceCode.ts` | module | Repository | callers: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.test.ts | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
-- Showing 20 of 1249 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
+- Showing 20 of 1621 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
 
 ## Edges
 
@@ -73,7 +73,10 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/animationGifEncoder.ts` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/library.ts` | calls
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/library.ts` | imports
-- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/sharpAuthoringAdapter.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/managedAssetPolicy.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/managedAssetPolicy.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/outputDestination.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/outputDestination.ts` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/sharpAuthoringAdapter.ts` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:crypto` | imports
 - `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:fs` | calls
@@ -85,10 +88,7 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | calls
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | imports
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | calls
-- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
-- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
-- `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
-- Showing 50 of 6321 edges; JSON contains every edge and its evidence.
+- Showing 50 of 7423 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
@@ -97,13 +97,13 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 - `apps/local-server/src/animationSequenceRoutes.test.ts:54`: object-member-call-not-resolved (os)
 - `apps/local-server/src/animationSequenceRoutes.test.ts:56`: object-member-call-not-resolved (path)
 - `apps/local-server/src/animationSequenceRoutes.test.ts:57`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:90`: object-member-call-not-resolved (expect)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:154`: object-member-call-not-resolved (expect)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:163`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:163`: object-member-call-not-resolved (os)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:189`: object-member-call-not-resolved (path)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:189`: object-member-call-not-resolved (os)
-- `apps/local-server/src/animationSequenceRoutes.test.ts:190`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:66`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:99`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:169`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:178`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:204`: object-member-call-not-resolved (os)
 
 ## Flows
 
@@ -115,7 +115,7 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +0 / -0; edges: +0 / -0.
+- Nodes: +44 / -123; edges: +146 / -266.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next
