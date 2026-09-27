@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP28-068
+packId: pack_28
+name: Faceted Low-Poly Industrial - Polygonal Stainless
+styleAnchors:
+  - Faceted Low-Poly Industrial - Polygonal Stainless
+  - industrial design language
+  - Faceted stainless
+displayName: Faceted Low-Poly Industrial - Polygonal Stainless
+category: 4. Industrial Form Languages
+domain: industrial design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-form-languages
+  - industrial-design-language
+  - form-language
+  - faceted
+  - reference-title
+visualDna:
+  aesthetic: 'Faceted polygonal industrial language: flat planar stainless panels, sharp creases, low-poly angular geometry and brutal unpainted metal like a folded origami machine.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject from flat planar stainless panels with sharp creases and low-poly angles. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Raw stainless grey with black glass, true to the Faceted Low-Poly Industrial palette.
+  lighting_and_shadow: Hard directional light revealing facets, lit the way Faceted Low-Poly Industrial lights its scenes.
+  texture_and_material: Brushed unpainted stainless steel, with the surface finish of Faceted Low-Poly Industrial.
+  camera_and_composition: Low three-quarter angle, framed the way Faceted Low-Poly Industrial composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with brutal angular confidence.
+  rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
+  creative_brief: 'Faceted polygonal industrial language: flat planar stainless panels, sharp creases, low-poly angular geometry and brutal unpainted metal like a folded origami machine. Carry it through Faceted stainless, planar panels, sharp creases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Faceted stainless; planar panels; sharp creases
+avoidRules:
+  - a real Cybertruck
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a real Cybertruck, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: industrial-form-languages
+  categoryName: 4. Industrial Form Languages
+  domain: industrial design language
+  tags:
+    - curation-v2
+    - industrial-form-languages
+    - industrial-design-language
+    - form-language
+    - faceted
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

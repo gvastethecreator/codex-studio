@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP28-072
+packId: pack_28
+name: Soviet Industrial - Utilitarian Cold War Appliance
+styleAnchors:
+  - Soviet Industrial - Utilitarian Cold War Appliance
+  - industrial design language
+  - Soviet industrial
+displayName: Soviet Industrial - Utilitarian Cold War Appliance
+category: 4. Industrial Form Languages
+domain: industrial design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-form-languages
+  - industrial-design-language
+  - form-language
+  - soviet-industrial
+  - reference-title
+visualDna:
+  aesthetic: 'Soviet industrial product language of the 1960s to 1980s: utilitarian stamped metal, bakelite knobs, chunky toggles, pale green and cream enamel and indestructible function.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a utilitarian stamped-metal appliance with bakelite knobs and enamel paint. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale institutional green, cream and bakelite brown, true to the Soviet Industrial palette.
+  lighting_and_shadow: Flat institutional light, lit the way Soviet Industrial lights its scenes.
+  texture_and_material: Stamped steel, enamel and bakelite, with the surface finish of Soviet Industrial.
+  camera_and_composition: Frontal documentary product view, framed the way Soviet Industrial composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with stubborn utilitarian endurance.
+  rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
+  creative_brief: 'Soviet industrial product language of the 1960s to 1980s: utilitarian stamped metal, bakelite knobs, chunky toggles, pale green and cream enamel and indestructible function. Carry it through Soviet industrial, stamped steel, bakelite, pale green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Soviet industrial; stamped steel; bakelite; pale green
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: industrial-form-languages
+  categoryName: 4. Industrial Form Languages
+  domain: industrial design language
+  tags:
+    - curation-v2
+    - industrial-form-languages
+    - industrial-design-language
+    - form-language
+    - soviet-industrial
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

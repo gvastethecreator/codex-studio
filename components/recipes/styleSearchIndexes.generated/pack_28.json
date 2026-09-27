@@ -3,7 +3,7 @@
     {
       "id": "pack_28",
       "name": "Collectibles & Form Languages",
-      "presetCount": 60
+      "presetCount": 80
     }
   ],
   "presets": [
@@ -1198,7 +1198,447 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp28-060 clockwork automaton - brass gear mecha mecha design language clockwork automaton 3. mecha design languages mecha design languages mecha design language pack_28 collectibles & form languages mecha-design-languages collectibles-and-form-languages mecha-design-languages mecha-design-language"
+    },
+    {
+      "id": "SP28-061",
+      "name": "Dieter Rams - Braun Less But Better",
+      "styleAnchors": [
+        "Dieter Rams - Braun Less But Better",
+        "industrial design language",
+        "Rams less but better"
+      ],
+      "ref": "pack_28/SP28-061.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-061 dieter rams - braun less but better industrial design language rams less but better 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-062",
+      "name": "Streamline Moderne - Thirties Aerodynamic Product",
+      "styleAnchors": [
+        "Streamline Moderne - Thirties Aerodynamic Product",
+        "industrial design language",
+        "Streamline teardrop"
+      ],
+      "ref": "pack_28/SP28-062.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-062 streamline moderne - thirties aerodynamic product industrial design language streamline teardrop 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-063",
+      "name": "Luigi Colani - Biodynamic Organic Form",
+      "styleAnchors": [
+        "Luigi Colani - Biodynamic Organic Form",
+        "industrial design language",
+        "Colani biodynamic"
+      ],
+      "ref": "pack_28/SP28-063.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-063 luigi colani - biodynamic organic form industrial design language colani biodynamic 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-064",
+      "name": "Space Age Seventies - Molded Plastic Pod Design",
+      "styleAnchors": [
+        "Space Age Seventies - Molded Plastic Pod Design",
+        "industrial design language",
+        "Space age pods"
+      ],
+      "ref": "pack_28/SP28-064.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-064 space age seventies - molded plastic pod design industrial design language space age pods 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-065",
+      "name": "Y2K Translucent - Candy Plastic Tech",
+      "styleAnchors": [
+        "Y2K Translucent - Candy Plastic Tech",
+        "industrial design language",
+        "Y2K translucent"
+      ],
+      "ref": "pack_28/SP28-065.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-065 y2k translucent - candy plastic tech industrial design language y2k translucent 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-066",
+      "name": "Teenage Engineering - Playful Precision Modular",
+      "styleAnchors": [
+        "Teenage Engineering - Playful Precision Modular",
+        "industrial design language",
+        "Teenage Engineering"
+      ],
+      "ref": "pack_28/SP28-066.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-066 teenage engineering - playful precision modular industrial design language teenage engineering 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-067",
+      "name": "Jony Ive Unibody - Seamless Aluminum Minimal",
+      "styleAnchors": [
+        "Jony Ive Unibody - Seamless Aluminum Minimal",
+        "industrial design language",
+        "Unibody aluminum"
+      ],
+      "ref": "pack_28/SP28-067.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-067 jony ive unibody - seamless aluminum minimal industrial design language unibody aluminum 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-068",
+      "name": "Faceted Low-Poly Industrial - Polygonal Stainless",
+      "styleAnchors": [
+        "Faceted Low-Poly Industrial - Polygonal Stainless",
+        "industrial design language",
+        "Faceted stainless"
+      ],
+      "ref": "pack_28/SP28-068.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-068 faceted low-poly industrial - polygonal stainless industrial design language faceted stainless 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-069",
+      "name": "Soft Blob Design - Twenty-Twenties Puffy Forms",
+      "styleAnchors": [
+        "Soft Blob Design - Twenty-Twenties Puffy Forms",
+        "industrial design language",
+        "Soft blob"
+      ],
+      "ref": "pack_28/SP28-069.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-069 soft blob design - twenty-twenties puffy forms industrial design language soft blob 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-070",
+      "name": "Bauhaus Product - Geometric Primary Object",
+      "styleAnchors": [
+        "Bauhaus Product - Geometric Primary Object",
+        "industrial design language",
+        "Bauhaus geometry"
+      ],
+      "ref": "pack_28/SP28-070.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-070 bauhaus product - geometric primary object industrial design language bauhaus geometry 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-071",
+      "name": "Brutalist Object - Raw Concrete Product",
+      "styleAnchors": [
+        "Brutalist Object - Raw Concrete Product",
+        "industrial design language",
+        "Brutalist concrete"
+      ],
+      "ref": "pack_28/SP28-071.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-071 brutalist object - raw concrete product industrial design language brutalist concrete 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-072",
+      "name": "Soviet Industrial - Utilitarian Cold War Appliance",
+      "styleAnchors": [
+        "Soviet Industrial - Utilitarian Cold War Appliance",
+        "industrial design language",
+        "Soviet industrial"
+      ],
+      "ref": "pack_28/SP28-072.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-072 soviet industrial - utilitarian cold war appliance industrial design language soviet industrial 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-073",
+      "name": "Military Ruggedized - Field Equipment Form",
+      "styleAnchors": [
+        "Military Ruggedized - Field Equipment Form",
+        "industrial design language",
+        "Ruggedized"
+      ],
+      "ref": "pack_28/SP28-073.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-073 military ruggedized - field equipment form industrial design language ruggedized 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-074",
+      "name": "Kawaii Product - Japanese Cute Appliance",
+      "styleAnchors": [
+        "Kawaii Product - Japanese Cute Appliance",
+        "industrial design language",
+        "Kawaii appliance"
+      ],
+      "ref": "pack_28/SP28-074.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-074 kawaii product - japanese cute appliance industrial design language kawaii appliance 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-075",
+      "name": "Scandinavian Craft - Warm Wood and Wool",
+      "styleAnchors": [
+        "Scandinavian Craft - Warm Wood and Wool",
+        "industrial design language",
+        "Scandinavian craft"
+      ],
+      "ref": "pack_28/SP28-075.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-075 scandinavian craft - warm wood and wool industrial design language scandinavian craft 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-076",
+      "name": "Art Deco Machine Age - Chrome and Bakelite",
+      "styleAnchors": [
+        "Art Deco Machine Age - Chrome and Bakelite",
+        "industrial design language",
+        "Art Deco product"
+      ],
+      "ref": "pack_28/SP28-076.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-076 art deco machine age - chrome and bakelite industrial design language art deco product 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-077",
+      "name": "Generative Parametric - Lattice Optimized Form",
+      "styleAnchors": [
+        "Generative Parametric - Lattice Optimized Form",
+        "industrial design language",
+        "Parametric lattice"
+      ],
+      "ref": "pack_28/SP28-077.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-077 generative parametric - lattice optimized form industrial design language parametric lattice 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-078",
+      "name": "Memphis Group Object - Postmodern Playful Product",
+      "styleAnchors": [
+        "Memphis Group Object - Postmodern Playful Product",
+        "industrial design language",
+        "Memphis object"
+      ],
+      "ref": "pack_28/SP28-078.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-078 memphis group object - postmodern playful product industrial design language memphis object 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-079",
+      "name": "Raygun Gothic - Retro-Future Appliance",
+      "styleAnchors": [
+        "Raygun Gothic - Retro-Future Appliance",
+        "industrial design language",
+        "Raygun Gothic"
+      ],
+      "ref": "pack_28/SP28-079.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-079 raygun gothic - retro-future appliance industrial design language raygun gothic 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
+    },
+    {
+      "id": "SP28-080",
+      "name": "Medical Device Clean - Hygienic White Product",
+      "styleAnchors": [
+        "Medical Device Clean - Hygienic White Product",
+        "industrial design language",
+        "Medical device"
+      ],
+      "ref": "pack_28/SP28-080.yaml",
+      "packId": "pack_28",
+      "packName": "Collectibles & Form Languages",
+      "categoryId": "industrial-form-languages",
+      "categoryName": "4. Industrial Form Languages",
+      "domain": "industrial design language",
+      "tags": [
+        "collectibles-and-form-languages",
+        "industrial-form-languages",
+        "industrial-design-language"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp28-080 medical device clean - hygienic white product industrial design language medical device 4. industrial form languages industrial form languages industrial design language pack_28 collectibles & form languages industrial-form-languages collectibles-and-form-languages industrial-form-languages industrial-design-language"
     }
   ],
-  "totalPresetCount": 60
+  "totalPresetCount": 80
 }

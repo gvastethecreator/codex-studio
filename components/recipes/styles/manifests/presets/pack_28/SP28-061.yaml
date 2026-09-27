@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP28-061
+packId: pack_28
+name: Dieter Rams - Braun Less But Better
+styleAnchors:
+  - Dieter Rams - Braun Less But Better
+  - industrial design language
+  - Rams less but better
+displayName: Dieter Rams - Braun Less But Better
+category: 4. Industrial Form Languages
+domain: industrial design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-form-languages
+  - industrial-design-language
+  - form-language
+  - dieter-rams
+  - reference-title
+visualDna:
+  aesthetic: 'Dieter Rams Braun design language of the 1960s: less but better, rectilinear white and grey boxes, perforated grilles, a single colored accent control and quiet functional order.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a quiet rectilinear white-and-grey product with perforated grilles and one colored accent control. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Off-white, warm grey and one orange or green accent.
+  lighting_and_shadow: Soft even studio light, lit the way Dieter Rams lights its scenes.
+  texture_and_material: Matte plastic, brushed aluminum and perforations, with the surface finish of Dieter Rams.
+  camera_and_composition: Frontal orthographic product view, framed the way Dieter Rams composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with calm functional honesty.
+  rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
+  creative_brief: 'Dieter Rams Braun design language of the 1960s: less but better, rectilinear white and grey boxes, perforated grilles, a single colored accent control and quiet functional order. Carry it through Rams less but better, rectilinear, perforated grille, accent. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Rams less but better; rectilinear; perforated grille; accent
+avoidRules:
+  - the Braun logo
+  - a real Braun product
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the Braun logo, a real Braun product, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: industrial-form-languages
+  categoryName: 4. Industrial Form Languages
+  domain: industrial design language
+  tags:
+    - curation-v2
+    - industrial-form-languages
+    - industrial-design-language
+    - form-language
+    - dieter-rams
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

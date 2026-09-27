@@ -77,6 +77,29 @@ categories:
       - pack_28/SP28-058.yaml
       - pack_28/SP28-059.yaml
       - pack_28/SP28-060.yaml
+  - id: industrial-form-languages
+    name: 4. Industrial Form Languages
+    presetRefs:
+      - pack_28/SP28-061.yaml
+      - pack_28/SP28-062.yaml
+      - pack_28/SP28-063.yaml
+      - pack_28/SP28-064.yaml
+      - pack_28/SP28-065.yaml
+      - pack_28/SP28-066.yaml
+      - pack_28/SP28-067.yaml
+      - pack_28/SP28-068.yaml
+      - pack_28/SP28-069.yaml
+      - pack_28/SP28-070.yaml
+      - pack_28/SP28-071.yaml
+      - pack_28/SP28-072.yaml
+      - pack_28/SP28-073.yaml
+      - pack_28/SP28-074.yaml
+      - pack_28/SP28-075.yaml
+      - pack_28/SP28-076.yaml
+      - pack_28/SP28-077.yaml
+      - pack_28/SP28-078.yaml
+      - pack_28/SP28-079.yaml
+      - pack_28/SP28-080.yaml
 presetRefs:
   - pack_28/SP28-001.yaml
   - pack_28/SP28-002.yaml
@@ -138,3 +161,23 @@ presetRefs:
   - pack_28/SP28-058.yaml
   - pack_28/SP28-059.yaml
   - pack_28/SP28-060.yaml
+  - pack_28/SP28-061.yaml
+  - pack_28/SP28-062.yaml
+  - pack_28/SP28-063.yaml
+  - pack_28/SP28-064.yaml
+  - pack_28/SP28-065.yaml
+  - pack_28/SP28-066.yaml
+  - pack_28/SP28-067.yaml
+  - pack_28/SP28-068.yaml
+  - pack_28/SP28-069.yaml
+  - pack_28/SP28-070.yaml
+  - pack_28/SP28-071.yaml
+  - pack_28/SP28-072.yaml
+  - pack_28/SP28-073.yaml
+  - pack_28/SP28-074.yaml
+  - pack_28/SP28-075.yaml
+  - pack_28/SP28-076.yaml
+  - pack_28/SP28-077.yaml
+  - pack_28/SP28-078.yaml
+  - pack_28/SP28-079.yaml
+  - pack_28/SP28-080.yaml

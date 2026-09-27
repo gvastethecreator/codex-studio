@@ -2953,5 +2953,20 @@
     "evidencePresetIds": ["SP28-041", "SP28-042", "SP28-043"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_28",
+    "category": "4. Industrial Form Languages",
+    "displayCategory": "Industrial form languages",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "ffe6ffc197e90b5354051b20cef95ceb26e78eb337dbd7d0f359bfa3f5a7e015",
+    "problem": "Industrial form languages must rebuild any requested subject as a product in a named designer, era or school's form language while keeping its function recognizable, without reproducing real branded products.",
+    "preserve": "The requested subject keeps its function and identity; the language sets geometry, materials, seams, color and finish.",
+    "proposedAction": "New category of 20 product form languages: Dieter Rams, Streamline Moderne, Colani biodynamic, space age, Y2K translucent, Teenage Engineering, unibody aluminum, faceted stainless, soft blob, Bauhaus, brutalist concrete, Soviet industrial, ruggedized, kawaii, Scandinavian craft, Art Deco machine age, parametric lattice, Memphis, Raygun Gothic and medical device.",
+    "validation": "Generate the card set; check each card turns an everyday object into a product in that language without a real brand.",
+    "evidencePresetIds": ["SP28-061", "SP28-062", "SP28-063"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

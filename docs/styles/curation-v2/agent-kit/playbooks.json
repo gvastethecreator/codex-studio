@@ -199,7 +199,8 @@
     "pack_26::7. Album Covers - Rock, Metal & Electronic": "applied-design",
     "pack_28::1. Premium Collectible Statues": "craft",
     "pack_28::2. Toys & Miniatures": "craft",
-    "pack_28::3. Mecha Design Languages": "render"
+    "pack_28::3. Mecha Design Languages": "render",
+    "pack_28::4. Industrial Form Languages": "applied-design"
   },
   "playbooks": {
     "photo": {

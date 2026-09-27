@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP28-069
+packId: pack_28
+name: Soft Blob Design - Twenty-Twenties Puffy Forms
+styleAnchors:
+  - Soft Blob Design - Twenty-Twenties Puffy Forms
+  - industrial design language
+  - Soft blob
+displayName: Soft Blob Design - Twenty-Twenties Puffy Forms
+category: 4. Industrial Form Languages
+domain: industrial design language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - industrial-form-languages
+  - industrial-design-language
+  - form-language
+  - blob
+  - reference-title
+visualDna:
+  aesthetic: 'Twenty-twenties soft blob design language: puffy inflated rounded forms, matte pastel colors, pillowy seams, soft-touch materials and friendly squishy objects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; rebuild the subject as a puffy inflated rounded object in matte pastel soft-touch material. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Matte pastel lilac, peach and mint, true to the Soft Blob Design palette.
+  lighting_and_shadow: Soft diffused light, lit the way Soft Blob Design lights its scenes.
+  texture_and_material: Soft-touch matte, puffy seams, with the surface finish of Soft Blob Design.
+  camera_and_composition: Close cozy product view, framed the way Soft Blob Design composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with squishy friendly comfort.
+  rendering_and_quality: Clean industrial design studio render with honest materials and precise seams.
+  creative_brief: 'Twenty-twenties soft blob design language: puffy inflated rounded forms, matte pastel colors, pillowy seams, soft-touch materials and friendly squishy objects. Carry it through Soft blob, puffy inflated, matte pastel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Soft blob; puffy inflated; matte pastel
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_28
+  packName: Collectibles & Form Languages
+  categoryId: industrial-form-languages
+  categoryName: 4. Industrial Form Languages
+  domain: industrial design language
+  tags:
+    - curation-v2
+    - industrial-form-languages
+    - industrial-design-language
+    - form-language
+    - blob
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

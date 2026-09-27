@@ -10,6 +10,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_28/toys-and-miniatures-2').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
     import('./pack_28/mecha-design-languages-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_28/industrial-form-languages-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
