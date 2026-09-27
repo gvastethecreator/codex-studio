@@ -628,7 +628,7 @@
       "SP06-008"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_06",
@@ -646,7 +646,7 @@
       "SP06-023"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_06",
@@ -664,7 +664,7 @@
       "SP06-038"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_06",
@@ -682,7 +682,7 @@
       "SP06-053"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_06",
@@ -700,7 +700,7 @@
       "SP06-071"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_06",
@@ -708,7 +708,7 @@
     "displayCategory": "Pixel constraints",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "e56fed0c4d342eab0dfeb5f2aa2d5afa67b9bccfa6c544a5dd668826f9eb494f",
+    "baselineHash": "9510409ef73bf7950b01555150f027ce2066985d682feec09edabbc660f20ae1",
     "problem": "Hardware references mix palette/cluster limits with camera effects such as Mode 7.",
     "preserve": "Pixel clusters, palette allocation, dithering and deliberate resolution.",
     "proposedAction": "Overhaul v2: 20 presets rewritten with concrete mechanisms; 15 renamed (old names kept as search aliases); 3 card briefs per preset for all 20; details in overhaul/audits/pack_06__retro-game-visual-systems.md.",
@@ -736,7 +736,7 @@
       "SP06-111"
     ],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_07",

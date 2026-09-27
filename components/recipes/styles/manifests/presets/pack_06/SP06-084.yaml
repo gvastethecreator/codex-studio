@@ -3,7 +3,7 @@ id: SP06-084
 packId: pack_06
 name: FMV Pre-Rendered Sprites
 category: 6. Retro Game Visual Systems
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Shiny and futuristic in a 90s way, technology showing off.
   rendering_and_quality: Sharp downsampled pixels over rendered shading; no hand-placed pixel clusters.
   key_features: ray-traced model shrunk to sprite; Phong highlights; ordered dither; jagged matte halo; small palette
-  creative_brief: "Pre-rendered sprite: the subject modeled and ray-traced on a 90s workstation, then shrunk and color-reduced into a low-resolution game sprite. Carry it through ray-traced model shrunk to sprite, Phong highlights, ordered dither, jagged matte halo, small palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Pre-rendered sprite: the subject modeled and ray-traced on a 90s workstation, then shrunk and color-reduced into a low-resolution game sprite. Carry it through ray-traced model shrunk to sprite, Phong highlights, ordered dither, jagged matte halo, small palette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - copied game characters
   - console or handheld hardware shown in frame
@@ -30,6 +30,7 @@ avoidRules:
   - brand or publisher logo
   - modern physically based rendering
   - hand-drawn pixel clusters
+  - fake transparency checkerboard background
   - real-time
   - hand-drawn
   - pixel art
@@ -60,7 +61,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-084.webp
 attributes:
-  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern physically based rendering, hand-drawn pixel clusters, real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern physically based rendering, hand-drawn pixel clusters, fake transparency checkerboard background, real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

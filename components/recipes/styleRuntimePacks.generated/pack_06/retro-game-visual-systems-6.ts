@@ -217,7 +217,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['32-Bit Vertex Wobble', 'PSX Vertex Wobble'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, texture filtering, high-poly models, modern reflections, stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, texture filtering, high-poly models, modern reflections, high-definition detail, smooth anti-aliased edges, stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping.',
@@ -233,7 +233,7 @@ export const GENERATED_STYLE_PRESETS = [
         'Keep the requested view; short draw distance with dense fog hiding the world beyond a few meters.',
       atmosphere_and_mood: 'Uneasy and dreamlike, a world that trembles slightly.',
       rendering_and_quality:
-        'Low internal resolution near 320 by 240, jittering vertices, no texture filtering and no anti-aliasing.',
+        'The whole card is a 320 by 240 frame enlarged with hard nearest-neighbor pixels, so every edge is stair-stepped and every texture is chunky; jittering vertices, no filtering, no anti-aliasing and no high-definition detail.',
       key_features:
         'affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog',
       creative_brief:
@@ -481,7 +481,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'FMV Pre-Rendered Sprites',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern physically based rendering, hand-drawn pixel clusters, real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern physically based rendering, hand-drawn pixel clusters, fake transparency checkerboard background, real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pre-rendered sprite: the subject modeled and ray-traced on a 90s workstation, then shrunk and color-reduced into a low-resolution game sprite.',

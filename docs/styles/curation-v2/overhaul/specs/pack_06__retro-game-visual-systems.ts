@@ -125,11 +125,16 @@ const spec: Spec = {
         key_features:
           'ray-traced model shrunk to sprite; Phong highlights; ordered dither; jagged matte halo; small palette',
       }),
-      avoid: [...AVOID, 'modern physically based rendering', 'hand-drawn pixel clusters'],
+      avoid: [
+        ...AVOID,
+        'modern physically based rendering',
+        'hand-drawn pixel clusters',
+        'fake transparency checkerboard background',
+      ],
       briefs: [
         'Pre-rendered sprite of a chrome-armored scarab beetle, glossy Phong hot spots, ray-traced reflections crunched into a small palette with ordered dither, jagged dark matte halo against a flat backdrop. No text or logo.',
-        'Pre-rendered sprite of a mossy stone golem mid-stride, baked soft shadows, banding across its plastic-smooth CG surface. No text or logo.',
-        'Pre-rendered sprite of a glossy crystal ball on a clawed brass stand, ray-traced refraction crunched into dithered bands. No text or logo.',
+        'A pre-rendered sprite of a mossy stone golem mid-stride stands on a flat dark-teal game backdrop, baked soft shadows, banding across its plastic-smooth CG surface and a jagged matte halo. No text or logo.',
+        'On a flat plum-colored backdrop, a pre-rendered sprite of a glossy crystal ball on a clawed brass stand shows ray-traced refraction crunched into dithered bands. No text or logo.',
       ],
     },
     'SP06-085': {
@@ -239,11 +244,18 @@ const spec: Spec = {
           'Keep the requested view; short draw distance with dense fog hiding the world beyond a few meters.',
         atmosphere_and_mood: 'Uneasy and dreamlike, a world that trembles slightly.',
         rendering_and_quality:
-          'Low internal resolution near 320 by 240, jittering vertices, no texture filtering and no anti-aliasing.',
+          'The whole card is a 320 by 240 frame enlarged with hard nearest-neighbor pixels, so every edge is stair-stepped and every texture is chunky; jittering vertices, no filtering, no anti-aliasing and no high-definition detail.',
         key_features:
           'affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog',
       }),
-      avoid: [...AVOID, 'texture filtering', 'high-poly models', 'modern reflections'],
+      avoid: [
+        ...AVOID,
+        'texture filtering',
+        'high-poly models',
+        'modern reflections',
+        'high-definition detail',
+        'smooth anti-aliased edges',
+      ],
       briefs: [
         'Early 32-bit vertex wobble scene of a lone ferryman poling a flat boat through a fog-swallowed swamp, warped nearest-neighbor water texture, jittering reeds, fine ordered dither and fog a few meters out. No text or logo.',
         'Early 32-bit vertex wobble scene of a derelict carousel in thick fog, low-poly horses with swimming texture seams and Gouraud shading steps. No text or logo.',
