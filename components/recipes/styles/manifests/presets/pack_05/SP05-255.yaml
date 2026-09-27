@@ -7,7 +7,7 @@ styleAnchors:
   - Magic Knight Rayearth - Gem-Engine Rescue Quest
 displayName: Magic Knight Rayearth TMS - Gem-Facet Rising-Line Cel
 category: 3. Isekai & High Fantasy
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,9 +26,10 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with bright heroic wonder.
   rendering_and_quality: Bright 1994 TMS television frame with gem sparkle and heroic energy.
   key_features: Rayearth gem armor; CLAMP nineties; floating islands; speed lines
-  creative_brief: "TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'TMS Magic Knight Rayearth anime look (1994): CLAMP designs in bright nineties cel, gem-faceted magic armor, fantasy world of floating islands and rising speed lines. Carry it through Rayearth gem armor, CLAMP nineties, floating islands, speed lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - three schoolgirls in red, blue and green magic armor
+  - star-spangled red, white and blue heroine armor
   - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -76,7 +77,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-255.webp
 attributes:
-  negativePrompt: three schoolgirls in red, blue and green magic armor, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
+  negativePrompt: three schoolgirls in red, blue and green magic armor, star-spangled red, white and blue heroine armor, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, gem-studded vehicle, group lineup, readable glyphs, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, weapon near-plane, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

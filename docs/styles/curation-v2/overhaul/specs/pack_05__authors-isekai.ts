@@ -387,10 +387,14 @@ const spec: Spec = {
       mood: 'jeweled desert adventure',
       render: 'Bright Arabian Nights fantasy frame with jeweled arabesque curves.',
       key: 'Magi arabesques; jewel palaces; desert markets; djinn magic',
-      avoid: ['a braided boy with a flute and a blue djinn', 'existing franchise characters'],
+      avoid: [
+        'a braided boy with a flute and a blue djinn',
+        'a muscular blue genie with a topknot and gold wrist cuffs',
+        'existing franchise characters',
+      ],
       briefs: [
         'Riding a flying carpet over a turquoise-domed desert city, an elderly spice merchant in jeweled robes throws handfuls of saffron that swirl into glowing arabesque patterns above the market. No readable text or logo.',
-        'In a crowded bazaar full of hanging lanterns, a giant friendly blue djinn helps a tired water seller balance a tower of clay jars on her head. No readable text or logo.',
+        'In a crowded bazaar full of hanging lanterns, a giant friendly djinn made of swirling saffron smoke and brass jewelry helps a tired water seller balance a tower of clay jars on her head. No readable text or logo.',
         'In a moonlit palace courtyard lined with arabesque arches, an empty golden lamp rests on a silk cushion beside a quiet fountain. No readable text or logo.',
       ],
     }),
@@ -475,10 +479,11 @@ const spec: Spec = {
       key: 'Rayearth gem armor; CLAMP nineties; floating islands; speed lines',
       avoid: [
         'three schoolgirls in red, blue and green magic armor',
+        'star-spangled red, white and blue heroine armor',
         'existing franchise characters',
       ],
       briefs: [
-        'Leaping between floating islands in armor studded with ruby facets, a retired firefighter summoned to a fantasy world raises a glowing sword as rising speed lines blaze behind her. No readable text or logo.',
+        'Leaping between floating islands in emerald-and-amber armor studded with gem facets, a retired firefighter summoned to a fantasy world raises a glowing sword as rising speed lines blaze behind her. No readable text or logo.',
         'On a tiny floating island above the clouds, a gem-armored postwoman shares a picnic lunch with a fluffy round floating creature that keeps stealing her grapes. No readable text or logo.',
         'At the bottom of a clear fantasy spring surrounded by ferns, a single emerald gem glows while tiny silver fish circle it slowly. No readable text or logo.',
       ],
@@ -536,10 +541,11 @@ const spec: Spec = {
       key: 'Baroque throne rooms; symmetry; skeletal lords; loyal guardians',
       avoid: [
         'a skeletal overlord in black robes with a golden staff',
+        'a skeleton sorcerer king in purple and gold robes',
         'existing franchise characters',
       ],
       briefs: [
-        'Seated on an ivory throne in perfect symmetry, a skeletal accountant-lord in ornate robes reviews the kingdom’s taxes while monstrous servants wait in two flawless rows. No readable text or logo.',
+        'Seated on an ivory throne in perfect symmetry, a four-armed clockwork golem lord in charcoal lacquer reviews the kingdom’s taxes while monstrous servants wait in two flawless rows. No readable text or logo.',
         'In a grand baroque kitchen, a towering insect warrior in ornate armor carefully polishes a single porcelain teacup for its master’s evening tea. No readable text or logo.',
         'In an enormous empty throne hall of ivory and charcoal, a black throne glows under a single beam of cold moonlight. No readable text or logo.',
       ],

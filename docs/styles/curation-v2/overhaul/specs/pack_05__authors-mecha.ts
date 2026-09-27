@@ -113,9 +113,14 @@ const spec: Spec = {
       mood: 'uncanny quiet spectacle',
       render: 'Stylish Trigger frame mixing quiet suburbs and tokusatsu spectacle.',
       key: 'Gridman tokusatsu giants; pastel suburbs; power lines; kaiju',
+      avoid: [
+        'red-and-silver giant with a glowing chest light',
+        'existing tokusatsu heroes',
+        'named mecha or franchise robot likeness',
+      ],
       briefs: [
         'Rising slowly between power lines in a silent pastel suburb, a colossal navy-and-silver sea serpent in rubber-suit proportions blinks down at a woman hanging laundry on her balcony. No readable text or logo.',
-        'A giant hero in a chunky helmet sits on a hill at sunset, carefully not crushing the tiny shrine beside him. No readable text or logo.',
+        'A giant jade-green hero with bulky orange shoulder armor and a visor shaped like a satellite dish sits on a hill at sunset, carefully not crushing the tiny shrine beside him. No readable text or logo.',
         'In a quiet suburb, every power line is humming in the same pitch while the sky slowly turns grid-shaped. No readable text or logo.',
       ],
     }),
@@ -501,10 +506,14 @@ const spec: Spec = {
       mood: 'hot-blooded heroic sacrifice',
       render: 'Heroic 1988 Gainax OVA frame with hot-blooded energy.',
       key: 'Gunbuster heroics; colossal robots; training spirit; space fleets',
-      avoid: ['a giant robot with a headband crossing its arms', 'existing franchise characters'],
+      avoid: [
+        'a giant robot with a headband crossing its arms',
+        'white, red and blue super robot with a yellow chest plate',
+        'existing franchise characters',
+      ],
       briefs: [
-        'Kneeling in a vast space hangar, a battered colossus mech lowers its head as a tiny pilot in a training suit salutes it before the final launch. No readable text or logo.',
-        'Two retired pilots in faded training suits jog laps at dawn around the enormous feet of a giant robot parked in a field. No readable text or logo.',
+        'Kneeling in a vast space hangar, a battered rust-orange colossus mech with a round brass faceplate lowers its head as a tiny pilot in a training suit salutes it before the final launch. No readable text or logo.',
+        'Two retired pilots in faded training suits jog laps at dawn around the enormous moss-covered feet of a slate-grey giant robot parked in a field. No readable text or logo.',
         'Near a round porthole full of stars, a single faded red training headband floats slowly in zero gravity inside an empty cabin. No readable text or logo.',
       ],
     }),

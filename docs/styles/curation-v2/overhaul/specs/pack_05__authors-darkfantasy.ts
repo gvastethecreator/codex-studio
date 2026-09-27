@@ -50,7 +50,7 @@ const spec: Spec = {
         'existing franchise characters',
       ],
       briefs: [
-        'Standing on a burned hillside at dusk, a weary mercenary captain in dented armor watches the sun slowly turn black while her band kneels silently in the mud around her banner. No readable text or logo.',
+        'Hauling a wounded draft horse out of a flooded siege trench at dusk, a weary mercenary quartermaster in dented armor shouts orders while rain hammers the broken wagons around her. No readable text or logo.',
         'Around a campfire in a ruined abbey, a grizzled sellsword teaches a young squire to mend chainmail as rain drums on the broken roof above them. No readable text or logo.',
         'A cracked iron helmet rests on a fence post beside an empty battlefield, crows lined up along the rail in the grey evening light. No readable text or logo.',
       ],
@@ -92,7 +92,7 @@ const spec: Spec = {
       key: 'Hiroya Oku photorealism; glossy black suits; Tokyo streets; alien absurdity',
       avoid: ['a large black sphere in an apartment room', 'existing franchise characters'],
       briefs: [
-        'Waking up in an empty Tokyo apartment wearing a glossy black suit she never bought, an office worker in her forties stares at a row of strangers who all look just as confused as she is. No readable text or logo.',
+        'At three in the morning on an empty Tokyo overpass, an office worker in her forties grips her convenience-store bag as every streetlight flickers off in sequence toward her, drawn in hard black signal lines. No readable text or logo.',
         'Two salarymen in glossy black suits hide behind a vending machine on a real-looking Tokyo street, watching a giant stone statue slowly turn its head. No readable text or logo.',
         'In a silent apartment at midnight, a single glossy black glove lies on the tatami mat, its circular node blinking faint blue. No readable text or logo.',
       ],
@@ -421,7 +421,7 @@ const spec: Spec = {
       key: 'Iwaaki clean line; deadpan faces; bizarre transformations; everyday',
       avoid: ['a talking hand with an eye on a palm', 'existing franchise characters'],
       briefs: [
-        'Sitting calmly at a family dinner table, a polite father’s face slowly unfolds into a strange flower of smooth grey petals while his wife keeps serving rice without looking up. No readable text or logo.',
+        'On a crowded morning train, a calm salaryman keeps reading his newspaper while the skin at the back of his neck ripples into smooth grey ridges that only the schoolteacher standing behind him notices. No readable text or logo.',
         'A school counselor with a calm deadpan face listens while her shadow on the wall moves independently. No readable text or logo.',
         'An empty dinner table set for four has one chair pushed back, a bowl still steaming. No readable text or logo.',
       ],

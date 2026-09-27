@@ -97,6 +97,7 @@ const spec: Spec = {
         key: 'Unicorn mecha detail; cathedral hangars; glowing frame light; cinematic grandeur',
         avoid: [
           'a white mobile suit with a single horn that splits into a V-fin',
+          'white knight-shaped robot with blue and red trim',
           'existing franchise characters',
         ],
       }),
@@ -207,10 +208,11 @@ const spec: Spec = {
         avoid: [
           'a crimson mobile suit with a mono-eye',
           'white mobile suits with V-fin antennas',
+          'green mono-eye mobile suit with a pink beam saber',
           'existing franchise characters',
         ],
         briefs: [
-          'Drawing a glowing beam sword over a burning space colony, an olive-green mecha with hand-painted highlight streaks sliding down its armor turns toward a squadron of rivals as VHS grain softens the flames. No readable text or logo.',
+          'Swinging a heavy riveted anchor on a chain over a burning space colony, a sand-yellow boxy salvage mech with a twin-lens face and hand-painted highlight streaks sliding down its armor turns toward a squadron of rivals as VHS grain softens the flames. No readable text or logo.',
           'In a quiet hangar during a lull in the battle, a mechanic in grease-stained overalls repaints a dent on a mech’s shoulder while a radio crackles beside her. No readable text or logo.',
           'In orbit above a blue planet, a single drifting mech helmet catches the sunlight, its cracked visor softened by grainy analog color. No readable text or logo.',
         ],

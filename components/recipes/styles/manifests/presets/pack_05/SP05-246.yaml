@@ -7,7 +7,7 @@ styleAnchors:
   - Magi - Labyrinth Jewel Caravan
 displayName: Shinobu Ohtaka - Jewel Arabesque Curve Cel
 category: 3. Isekai & High Fantasy
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,9 +26,10 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with jeweled desert adventure.
   rendering_and_quality: Bright Arabian Nights fantasy frame with jeweled arabesque curves.
   key_features: Magi arabesques; jewel palaces; desert markets; djinn magic
-  creative_brief: "Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Shinobu Ohtaka Magi look: Arabian Nights fantasy, jeweled palaces, flowing arabesque curves, desert markets, djinn magic and bright adventurous designs. Carry it through Magi arabesques, jewel palaces, desert markets, djinn magic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - a braided boy with a flute and a blue djinn
+  - a muscular blue genie with a topknot and gold wrist cuffs
   - existing franchise characters
   - hooded youth holding a glowing orb
   - glowing portal archway
@@ -78,7 +79,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-246.webp
 attributes:
-  negativePrompt: a braided boy with a flute and a blue djinn, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
+  negativePrompt: a braided boy with a flute and a blue djinn, a muscular blue genie with a topknot and gold wrist cuffs, existing franchise characters, hooded youth holding a glowing orb, glowing portal archway, generic cloaked adventurer, household task turned into a quest or cooking scene, photorealistic rendering, franchise character design, market aisle, camel caravan, desert default, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

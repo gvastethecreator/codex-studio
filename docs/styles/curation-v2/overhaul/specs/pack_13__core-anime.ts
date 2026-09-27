@@ -20,9 +20,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A swordswoman stands on a cliff above a ruined kingdom at sunrise, and the first ray catches her raised blade and lights every broken tower below. No readable text or logo.",
-        "A hero strikes a triumphant pose at dawn on her homecoming, not noticing that a rooster has claimed the top of her helmet. No readable text or logo.",
-        "At dawn a young hero reaches the legendary sword in the stone and finds it already pulled, an old farmer using it to dig potatoes nearby. No readable text or logo.",
+        'A swordswoman stands on a cliff above a ruined kingdom at sunrise, and the first ray catches her raised blade and lights every broken tower below. No readable text or logo.',
+        'A hero strikes a triumphant pose at dawn on her homecoming, not noticing that a rooster has claimed the top of her helmet. No readable text or logo.',
+        'At dawn a young hero reaches the legendary sword in the stone and finds it already pulled, an old farmer using it to dig potatoes nearby. No readable text or logo.',
       ],
     },
     'SP13-002': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A hooded courier with a glowing prosthetic arm waits in a rain-soaked alley, the rain hissing into steam wherever it touches her arm. No readable text or logo.",
-        "An android sits alone on a rooftop in the rain, holding her umbrella over a potted sunflower instead of herself. No readable text or logo.",
-        "A lonely vending-machine robot keeps vigil in a flooded neon alley, dimming and brightening its face to guide lost pedestrians home. No readable text or logo.",
+        'A hooded courier with a glowing prosthetic arm waits in a rain-soaked alley, the rain hissing into steam wherever it touches her arm. No readable text or logo.',
+        'An android sits alone on a rooftop in the rain, holding her umbrella over a potted sunflower instead of herself. No readable text or logo.',
+        'A lonely vending-machine robot keeps vigil in a flooded neon alley, dimming and brightening its face to guide lost pedestrians home. No readable text or logo.',
       ],
     },
     'SP13-004': {
@@ -56,9 +56,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Its visor igniting teal, a knight-shaped giant robot boots up in a cathedral-sized hangar as the steam from its shoulders gathers into clouds under the roof. No readable text or logo.",
-        "Panicked technicians scramble as a giant robot wakes up early and politely tries to help sweep the hangar floor. No readable text or logo.",
-        "In a dark abandoned hangar a mecha that has not moved in fifty years slowly turns its head toward the scavenger holding a flashlight. No readable text or logo.",
+        'Its visor igniting teal, a hulking brick-red industrial robot with a crane arm and a boxy cab head boots up in a cathedral-sized hangar as the steam from its shoulders gathers into clouds under the roof. No readable text or logo.',
+        'Panicked technicians scramble as a giant robot wakes up early and politely tries to help sweep the hangar floor. No readable text or logo.',
+        'In a dark abandoned hangar a mecha that has not moved in fifty years slowly turns its head toward the scavenger holding a flashlight. No readable text or logo.',
       ],
     },
     'SP13-006': {
@@ -74,9 +74,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A woman in a winter coat leaves a rice offering at a mossy roadside shrine as a tall translucent deer spirit bows to eat from her hand. No readable text or logo.",
-        "A tiny shrine spirit scolds a passing office worker because the offerings have been nothing but convenience-store pudding for a week. No readable text or logo.",
-        "At twilight a line of glowing lanterns floats up the stairs of a mountain shrine where no one has prayed in a hundred years. No readable text or logo.",
+        'A woman in a winter coat leaves a rice offering at a mossy roadside shrine as a tall translucent deer spirit bows to eat from her hand. No readable text or logo.',
+        'A tiny shrine spirit scolds a passing office worker because the offerings have been nothing but convenience-store pudding for a week. No readable text or logo.',
+        'At twilight a line of glowing lanterns floats up the stairs of a mountain shrine where no one has prayed in a hundred years. No readable text or logo.',
       ],
     },
     'SP13-007': {
@@ -92,9 +92,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A goalkeeper dives at match point in extreme perspective, the ball filling half the frame as sweat and torn grass explode around her. No readable text or logo.",
-        "The rope snaps at the climax of a championship tug-of-war between two villages, both teams flying backwards in bursting speed lines. No readable text or logo.",
-        "At the instant two sumo wrestlers collide, the shockwave blows every cushion off the front row of the arena. No readable text or logo.",
+        'A goalkeeper dives at match point in extreme perspective, the ball filling half the frame as sweat and torn grass explode around her. No readable text or logo.',
+        'The rope snaps at the climax of a championship tug-of-war between two villages, both teams flying backwards in bursting speed lines. No readable text or logo.',
+        'At the instant two sumo wrestlers collide, the shockwave blows every cushion off the front row of the arena. No readable text or logo.',
       ],
     },
     'SP13-008': {
@@ -110,9 +110,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A pale aristocrat in a crimson-lined cape stands on a manor balcony under a huge moon as a thousand bats pour out of the chimney behind him. No readable text or logo.",
-        "An ancient vampire lady tries to apply lipstick with no reflection while her butler holds up a painted portrait of her as a guide. No readable text or logo.",
-        "In a silent moonlit ballroom every guest is a vampire standing perfectly still, waiting for the one living musician to stop playing. No readable text or logo.",
+        'A pale aristocrat in a crimson-lined cape stands on a manor balcony under a huge moon as a thousand bats pour out of the chimney behind him. No readable text or logo.',
+        'An ancient vampire lady tries to apply lipstick with no reflection while her butler holds up a painted portrait of her as a guide. No readable text or logo.',
+        'In a silent moonlit ballroom every guest is a vampire standing perfectly still, waiting for the one living musician to stop playing. No readable text or logo.',
       ],
     },
     'SP13-009': {
@@ -128,9 +128,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Spinning on a rooftop in a thunderstorm, a grown-up witch in her thirties transforms as ribbons of light wrap into armored skirts, and the prism flare from her wand splits the storm clouds into rainbow shards. No readable text or logo.",
-        "Two retired magical heroines in sparkling transformed costumes argue over a parking space outside the supermarket, rainbow sparkles flying with every gesture. No readable text or logo.",
-        "On a quiet windowsill at dawn, a small crystal brooch catches the sunrise and throws a tiny rainbow across a sleeping cat. No readable text or logo.",
+        'Spinning on a rooftop in a thunderstorm, a grown-up witch in her thirties transforms as ribbons of light wrap into armored skirts, and the prism flare from her wand splits the storm clouds into rainbow shards. No readable text or logo.',
+        'Two retired magical heroines in sparkling transformed costumes argue over a parking space outside the supermarket, rainbow sparkles flying with every gesture. No readable text or logo.',
+        'On a quiet windowsill at dawn, a small crystal brooch catches the sunrise and throws a tiny rainbow across a sleeping cat. No readable text or logo.',
       ],
     },
     'SP13-010': {
@@ -146,9 +146,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A caravan of adventurers crosses a forest of glowing mushrooms while the giant lizard pulling their wagon snacks on the luminous caps. No readable text or logo.",
-        "An office worker reborn as a fantasy innkeeper serves stew to a scaled merchant who will not stop complaining about the royal taxes. No readable text or logo.",
-        "At night the caravan camps inside the hollow skull of a colossal beast, their campfire glowing out through its eye sockets. No readable text or logo.",
+        'A caravan of adventurers crosses a forest of glowing mushrooms while the giant lizard pulling their wagon snacks on the luminous caps. No readable text or logo.',
+        'An office worker reborn as a fantasy innkeeper serves stew to a scaled merchant who will not stop complaining about the royal taxes. No readable text or logo.',
+        'At night the caravan camps inside the hollow skull of a colossal beast, their campfire glowing out through its eye sockets. No readable text or logo.',
       ],
     },
     'SP13-011': {
@@ -164,8 +164,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "An adventuring party descends a spiral stair into a glowing labyrinth, and the teal magic circle far below them is slowly opening like an eye. No readable text or logo.",
-        "A battered adventuring party kicks open the final boss door and finds a cozy tavern run by a retired lich in an apron. No readable text or logo.",
+        'An adventuring party descends a spiral stair into a glowing labyrinth, and the teal magic circle far below them is slowly opening like an eye. No readable text or logo.',
+        'A battered adventuring party kicks open the final boss door and finds a cozy tavern run by a retired lich in an apron. No readable text or logo.',
         "A lone adventurer's torch sputters in a labyrinth whose stone walls quietly rearrange themselves each time she blinks. No readable text or logo.",
       ],
     },
@@ -182,9 +182,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Drawing a glowing beam sword over a burning space colony, an olive-green mecha with hand-painted highlight streaks sliding down its armor turns toward a squadron of rivals as VHS grain softens the flames. No readable text or logo.",
-        "In a quiet hangar during a lull in the battle, a mechanic in grease-stained overalls repaints a dent on a mech’s shoulder while a radio crackles beside her. No readable text or logo.",
-        "In orbit above a blue planet, a single drifting mech helmet catches the sunlight, its cracked visor softened by grainy analog color. No readable text or logo.",
+        'Swinging a heavy riveted anchor on a chain over a burning space colony, a sand-yellow boxy salvage mech with a twin-lens face and hand-painted highlight streaks sliding down its armor turns toward a squadron of rivals as VHS grain softens the flames. No readable text or logo.',
+        'In a quiet hangar during a lull in the battle, a mechanic in grease-stained overalls repaints a dent on a mech’s shoulder while a radio crackles beside her. No readable text or logo.',
+        'In orbit above a blue planet, a single drifting mech helmet catches the sunlight, its cracked visor softened by grainy analog color. No readable text or logo.',
       ],
     },
     'SP13-014': {
@@ -200,9 +200,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Hands on their hilts in a rainy night alley, two swordsmen face each other, the swinging lantern between them the only clock. No readable text or logo.",
-        "Postponing their fight, two exhausted swordsmen sit side by side on an alley step sharing one skewer of sweet dumplings. No readable text or logo.",
-        "A single white slash arc cuts across a dark alley, and only the parted rain shows where the blade has passed. No readable text or logo.",
+        'Hands on their hilts in a rainy night alley, two swordsmen face each other, the swinging lantern between them the only clock. No readable text or logo.',
+        'Postponing their fight, two exhausted swordsmen sit side by side on an alley step sharing one skewer of sweet dumplings. No readable text or logo.',
+        'A single white slash arc cuts across a dark alley, and only the parted rain shows where the blade has passed. No readable text or logo.',
       ],
     },
     'SP13-016': {
@@ -218,9 +218,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A mage on a fortress wall calls down lightning onto a siege army, three glowing circles stacked above her staff like a spinning tower. No readable text or logo.",
-        "At a drought festival a storm spell summons exactly one tiny raincloud, which follows the mayor everywhere he goes. No readable text or logo.",
-        "Alone in a crater of fused glass, a sorceress watches her storm circles slowly fade overhead after the siege. No readable text or logo.",
+        'A mage on a fortress wall calls down lightning onto a siege army, three glowing circles stacked above her staff like a spinning tower. No readable text or logo.',
+        'At a drought festival a storm spell summons exactly one tiny raincloud, which follows the mayor everywhere he goes. No readable text or logo.',
+        'Alone in a crater of fused glass, a sorceress watches her storm circles slowly fade overhead after the siege. No readable text or logo.',
       ],
     },
     'SP13-017': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A weary detective sits in his office at night while the blinds throw bars of light over a client whose shadow is holding a knife she is not. No readable text or logo.",
-        "A hard-boiled detective interrogates a nervous parrot, the only witness to the crime, under a single swinging bulb. No readable text or logo.",
-        "In a black-ink city a single red umbrella moves through the crowd while the detective tails it for a third rainy night. No readable text or logo.",
+        'A weary detective sits in his office at night while the blinds throw bars of light over a client whose shadow is holding a knife she is not. No readable text or logo.',
+        'A hard-boiled detective interrogates a nervous parrot, the only witness to the crime, under a single swinging bulb. No readable text or logo.',
+        'In a black-ink city a single red umbrella moves through the crowd while the detective tails it for a third rainy night. No readable text or logo.',
       ],
     },
     'SP13-019': {
@@ -254,9 +254,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A courier on a rattling bicycle coasts down a hillside path into a seaside village, a tiny forest spirit in her basket guarding a warm pie. No readable text or logo.",
-        "A courier delivers a parcel to a giant sleeping tree, and a hand of branches slowly reaches down to accept it. No readable text or logo.",
-        "Caught in a summer storm, a courier shelters under a giant leaf beside a family of moss spirits, all dripping and pretending not to be annoyed. No readable text or logo.",
+        'A courier on a rattling bicycle coasts down a hillside path into a seaside village, a tiny forest spirit in her basket guarding a warm pie. No readable text or logo.',
+        'A courier delivers a parcel to a giant sleeping tree, and a hand of branches slowly reaches down to accept it. No readable text or logo.',
+        'Caught in a summer storm, a courier shelters under a giant leaf beside a family of moss spirits, all dripping and pretending not to be annoyed. No readable text or logo.',
       ],
     },
     'SP13-020': {
@@ -272,9 +272,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A party of adventurers parts at a crossroads at sunset, and each road they take bursts into a different color of wildflowers. No readable text or logo.",
+        'A party of adventurers parts at a crossroads at sunset, and each road they take bursts into a different color of wildflowers. No readable text or logo.',
         "The reformed villain turns up at the heroes' farewell feast carrying a lopsided homemade cake, awkwardly hoping to be invited in. No readable text or logo.",
-        "A lone traveler lays her sword on a grave overlooking the sea as a last golden light washes over the ruins they saved. No readable text or logo.",
+        'A lone traveler lays her sword on a grave overlooking the sea as a last golden light washes over the ruins they saved. No readable text or logo.',
       ],
     },
   },
@@ -295,8 +295,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A pirate captain swings on a rope between two wooden airships above a sea of clouds, her patched red coat snapping as the cannons fire. No readable text or logo.",
-        "Sky pirates board a flying merchant ship and discover it is crewed entirely by very organized penguins. No readable text or logo.",
+        'A pirate captain swings on a rope between two wooden airships above a sea of clouds, her patched red coat snapping as the cannons fire. No readable text or logo.',
+        'Sky pirates board a flying merchant ship and discover it is crewed entirely by very organized penguins. No readable text or logo.',
         "A lone lookout sits in the crow's nest of a drifting airship at night while a colossal cloud whale glides beneath the hull. No readable text or logo.",
       ],
     },
@@ -316,9 +316,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        "A mercenary stands in the rain over a field of fallen demon knights while the cursed blade in his hand whispers in his ear. No readable text or logo.",
-        "Refusing to be sheathed, a haunted sword drags its exhausted wielder through a tavern door in search of another fight. No readable text or logo.",
-        "A black-armored woman stands at the gate of a plague castle, the cracks in her gauntlet glowing red with each heartbeat. No readable text or logo.",
+        'A mercenary stands in the rain over a field of fallen demon knights while the cursed blade in his hand whispers in his ear. No readable text or logo.',
+        'Refusing to be sheathed, a haunted sword drags its exhausted wielder through a tavern door in search of another fight. No readable text or logo.',
+        'A black-armored woman stands at the gate of a plague castle, the cracks in her gauntlet glowing red with each heartbeat. No readable text or logo.',
       ],
     },
     {
@@ -337,9 +337,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "In a sunlit forest clearing, a grown-up tamer in a worn cap sends her moss-covered armadillo rolling like a boulder at a lumbering clay golem while fireflies scatter around them. No readable text or logo.",
-        "On a sunny farmhouse porch, a retired tamer naps in a rocking chair while his giant tortoise creature carries a tiny vegetable garden on its shell. No readable text or logo.",
-        "At dusk at the end of a quiet pier, a small creature made of paper lanterns waits patiently for its tamer to come home from the sea. No readable text or logo.",
+        'In a sunlit forest clearing, a grown-up tamer in a worn cap sends her moss-covered armadillo rolling like a boulder at a lumbering clay golem while fireflies scatter around them. No readable text or logo.',
+        'On a sunny farmhouse porch, a retired tamer naps in a rocking chair while his giant tortoise creature carries a tiny vegetable garden on its shell. No readable text or logo.',
+        'At dusk at the end of a quiet pier, a small creature made of paper lanterns waits patiently for its tamer to come home from the sea. No readable text or logo.',
       ],
     },
     {
@@ -358,8 +358,8 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A rider on a silver dragon dives through a storm over a burning fleet, lance leveled, lightning reflected in every scale. No readable text or logo.",
-        "A griffin rider tries to land gracefully in the town square, but the griffin spots the fish market and bolts. No readable text or logo.",
+        'A rider on a silver dragon dives through a storm over a burning fleet, lance leveled, lightning reflected in every scale. No readable text or logo.',
+        'A griffin rider tries to land gracefully in the town square, but the griffin spots the fish market and bolts. No readable text or logo.',
         "A giant wolf and its rider rest on a snowy peak at dawn, the rider asleep against the wolf's chest as its breath steams in the cold. No readable text or logo.",
       ],
     },
@@ -379,9 +379,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real car brand'],
       briefs: [
-        "Drifting through a hairpin on a misty mountain road at 2 a.m., a battered old station wagon full of rice sacks cuts its headlights through the fog as a sleek rival sports car struggles to keep up. No readable text or logo.",
-        "A retired racer delivering vegetables in a tiny kei truck overtakes a pack of sports cars downhill, carrots bouncing in the back. No readable text or logo.",
-        "On a deserted mountain pass at night a single red taillight glows in the fog where no car has been seen for years. No readable text or logo.",
+        'Drifting through a hairpin on a misty mountain road at 2 a.m., a battered old station wagon full of rice sacks cuts its headlights through the fog as a sleek rival sports car struggles to keep up. No readable text or logo.',
+        'A retired racer delivering vegetables in a tiny kei truck overtakes a pack of sports cars downhill, carrots bouncing in the back. No readable text or logo.',
+        'On a deserted mountain pass at night a single red taillight glows in the fog where no car has been seen for years. No readable text or logo.',
       ],
     },
   ] satisfies Create[],
