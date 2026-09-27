@@ -41,6 +41,16 @@ Studio gets a declarative extension system named Cozy Extensions.
 - The card generator stays in Studio because it needs the Generation Providers. It takes a `--styles-root` that points at an extension source folder.
 - Third-party extensions are out of scope for now. Before they are allowed, extensions need signing and a trust decision in the UI.
 
+### Workflow modules
+
+Every workflow except `default` and `styles` becomes an optional built-in module. Examples are Character Lab, Sprite Atlas, Animation Sequence and Camera Angles.
+
+- A module is Studio code. It ships and is versioned with the app. It is not a Cozy Extension and is never downloaded.
+- The Extensions panel lists modules next to installed extensions, and the user can turn each module on or off.
+- A disabled module loads no frontend chunk, mounts no backend routes, accepts no jobs of its kinds and does not appear in navigation. Existing jobs and assets stay in the Studio Library.
+- A module's content, such as recipe parameters, prompt templates, presets and catalogs, can come from a declarative extension of a later kind named `workflow-content`. That content feeds the built-in module and never adds code.
+- Workflows written by third parties would need extensions that run code. That needs its own ADR with signing, sandboxing and a stable API.
+
 ## Consequences
 
 - Style authoring (manifests, specs, briefs, curation reviews and tools) moves to `cozy-styles`. Card images are published only as release assets, never as git blobs. Releases are cut when a pack is ready, not after every card wave.
