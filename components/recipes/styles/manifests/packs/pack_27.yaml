@@ -2,11 +2,12 @@ schemaVersion: 1
 id: pack_27
 name: Decade Screens
 cardTitle: Decade Screens
-cardDescription: Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.
+cardDescription: Horror, sci-fi, noir, western and action cinema by decade, and video games from the 80s to the 2020s, named after their films, games and makers.
 description: >-
-  Screen eras rebuilt from their real production looks: horror films by decade with their film
-  stocks, lighting and effects, and video games by decade with their hardware, rendering and art
-  direction. Requested subjects stay the subject; each style changes medium, era and finish.
+  Screen eras rebuilt from their real production looks: horror, sci-fi, noir, western and action
+  films by decade with their film stocks, lighting and effects, and video games from the 80s to the
+  2020s with their hardware, rendering and art direction. Requested subjects stay the subject; each
+  style changes medium, era and finish.
 categories:
   - id: horror-cinema-70s
     name: 1. Horror Cinema 70s

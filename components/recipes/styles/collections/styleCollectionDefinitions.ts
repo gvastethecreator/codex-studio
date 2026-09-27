@@ -313,7 +313,7 @@ export const STYLE_COLLECTIONS = [
     title: 'Decade Screens',
     familyId: 'screen_motion',
     description:
-      'Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.',
+      'Horror, sci-fi, noir, western and action cinema by decade, and video games from the 80s to the 2020s, named after their films, games and makers.',
     icon: 'clapperboard',
     order: 15,
     sourcePackIds: ['pack_27'],

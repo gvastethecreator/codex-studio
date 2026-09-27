@@ -36,7 +36,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_27',
     name: 'Decade Screens',
     description:
-      'Screen eras rebuilt from their real production looks: horror films by decade with their film stocks, lighting and effects, and video games by decade with their hardware, rendering and art direction. Requested subjects stay the subject; each style changes medium, era and finish.',
+      'Screen eras rebuilt from their real production looks: horror, sci-fi, noir, western and action films by decade with their film stocks, lighting and effects, and video games from the 80s to the 2020s with their hardware, rendering and art direction. Requested subjects stay the subject; each style changes medium, era and finish.',
     presets: categoryPresets.flat(),
   };
 }
