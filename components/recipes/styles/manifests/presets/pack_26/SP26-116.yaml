@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP26-116
+packId: pack_26
+name: Tropicalia 1968 - Brazilian Psychedelic Collage Cover
+styleAnchors:
+  - Tropicalia 1968 - Brazilian Psychedelic Collage Cover
+  - album cover design
+  - Tropicália collage
+displayName: Tropicalia 1968 - Brazilian Psychedelic Collage Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - tropicalia
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Brazilian Tropicália cover look of 1968: collage of tropical kitsch, bananas and parrots, group portraits in odd costumes, psychedelic lettering and ironic sunny color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject as a tropical kitsch collage portrait with psychedelic lettering. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunny banana yellow, parrot green and hot pink.
+  lighting_and_shadow: Bright tropical daylight, lit the way Tropicalia 1968 lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Collage group portrait composition, framed the way Tropicalia 1968 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ironic tropical exuberance.
+  rendering_and_quality: Faithful Tropicália collage cover design, in the recognizable hand of Tropicalia 1968.
+  creative_brief: 'Brazilian Tropicália cover look of 1968: collage of tropical kitsch, bananas and parrots, group portraits in odd costumes, psychedelic lettering and ironic sunny color. Carry it through Tropicália collage, tropical kitsch, psychedelic lettering. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Tropicália collage; tropical kitsch; psychedelic lettering
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - tropicalia
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

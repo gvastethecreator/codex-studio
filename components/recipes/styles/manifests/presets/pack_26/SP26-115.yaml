@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-115
+packId: pack_26
+name: Lemi Ghariokwu - Afrobeat Political Painting Cover
+styleAnchors:
+  - Lemi Ghariokwu - Afrobeat Political Painting Cover
+  - album cover design
+  - Lemi Ghariokwu flat satire
+displayName: Lemi Ghariokwu - Afrobeat Political Painting Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - lemi-ghariokwu
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Lemi Ghariokwu Afrobeat cover look of the 1970s Lagos scene: bold flat painted satire, crowded political caricature, bright primary color, thick outlines and hand-painted titles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as bold flat satirical caricature with thick outlines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright primary red, yellow, green and black, true to the Lemi Ghariokwu palette.
+  lighting_and_shadow: Flat painted light, lit the way Lemi Ghariokwu lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Crowded poster-like narrative composition, framed the way Lemi Ghariokwu composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with defiant satirical energy.
+  rendering_and_quality: Faithful seventies Afrobeat cover painting, in the recognizable hand of Lemi Ghariokwu.
+  creative_brief: 'Lemi Ghariokwu Afrobeat cover look of the 1970s Lagos scene: bold flat painted satire, crowded political caricature, bright primary color, thick outlines and hand-painted titles. Carry it through Lemi Ghariokwu flat satire, thick outlines, primary color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Lemi Ghariokwu flat satire; thick outlines; primary color
+avoidRules:
+  - real politicians or musicians
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: real politicians or musicians, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - lemi-ghariokwu
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-112
+packId: pack_26
+name: Stax Memphis - Gritty Southern Soul Cover
+styleAnchors:
+  - Stax Memphis - Gritty Southern Soul Cover
+  - album cover design
+  - Stax gritty photo
+displayName: Stax Memphis - Gritty Southern Soul Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - stax
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Stax and Memphis soul cover look of the late sixties: gritty candid photographs, bold chunky typography, warm earthy palettes and raw southern street energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in a gritty candid southern street photograph with bold chunky type. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm earthy brown, mustard and red, true to the Stax Memphis palette.
+  lighting_and_shadow: Hot southern daylight, lit the way Stax Memphis lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Candid photo framing with chunky title band, framed the way Stax Memphis composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with raw soulful grit.
+  rendering_and_quality: Faithful late-sixties southern soul cover design, in the recognizable hand of Stax Memphis.
+  creative_brief: 'Stax and Memphis soul cover look of the late sixties: gritty candid photographs, bold chunky typography, warm earthy palettes and raw southern street energy. Carry it through Stax gritty photo, chunky type, earthy palette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Stax gritty photo; chunky type; earthy palette
+avoidRules:
+  - the real Stax snapping-finger logo
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the real Stax snapping-finger logo, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - stax
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

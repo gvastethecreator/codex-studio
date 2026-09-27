@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-124
+packId: pack_26
+name: Madlib Beat Tape - Lo-Fi Crate Collage Cover
+styleAnchors:
+  - Madlib Beat Tape - Lo-Fi Crate Collage Cover
+  - album cover design
+  - Beat tape collage
+displayName: Madlib Beat Tape - Lo-Fi Crate Collage Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - beat-tape
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Underground beat tape cover look of the 2000s: lo-fi photocopied collage of found records, VHS stills, rubber stamps, cut-out type and dusty crate-digging texture.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a lo-fi photocopied collage of found images and stamps. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Faded photocopy grey, dusty ochre and one stamp red.
+  lighting_and_shadow: Flat photocopier light, lit the way Madlib Beat Tape lights its scenes.
+  texture_and_material: Photocopy grain, torn tape and dusty paper, with the surface finish of Madlib Beat Tape.
+  camera_and_composition: Layered collage composition, framed the way Madlib Beat Tape composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dusty crate-digging mystery.
+  rendering_and_quality: Faithful lo-fi beat tape cover design, in the recognizable hand of Madlib Beat Tape.
+  creative_brief: 'Underground beat tape cover look of the 2000s: lo-fi photocopied collage of found records, VHS stills, rubber stamps, cut-out type and dusty crate-digging texture. Carry it through Beat tape collage, photocopy, found records. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Beat tape collage; photocopy; found records
+avoidRules:
+  - a stoned cartoon quasimoto character
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a stoned cartoon quasimoto character, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - beat-tape
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

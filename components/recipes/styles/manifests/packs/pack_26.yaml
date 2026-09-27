@@ -129,6 +129,29 @@ categories:
       - pack_26/SP26-104.yaml
       - pack_26/SP26-105.yaml
       - pack_26/SP26-106.yaml
+  - id: album-covers-jazz-soul-hiphop
+    name: 6. Album Covers - Jazz, Soul & Hip-Hop
+    presetRefs:
+      - pack_26/SP26-107.yaml
+      - pack_26/SP26-108.yaml
+      - pack_26/SP26-109.yaml
+      - pack_26/SP26-110.yaml
+      - pack_26/SP26-111.yaml
+      - pack_26/SP26-112.yaml
+      - pack_26/SP26-113.yaml
+      - pack_26/SP26-114.yaml
+      - pack_26/SP26-115.yaml
+      - pack_26/SP26-116.yaml
+      - pack_26/SP26-117.yaml
+      - pack_26/SP26-118.yaml
+      - pack_26/SP26-119.yaml
+      - pack_26/SP26-120.yaml
+      - pack_26/SP26-121.yaml
+      - pack_26/SP26-122.yaml
+      - pack_26/SP26-123.yaml
+      - pack_26/SP26-124.yaml
+      - pack_26/SP26-125.yaml
+      - pack_26/SP26-126.yaml
 presetRefs:
   - pack_26/SP26-001.yaml
   - pack_26/SP26-002.yaml
@@ -236,3 +259,23 @@ presetRefs:
   - pack_26/SP26-104.yaml
   - pack_26/SP26-105.yaml
   - pack_26/SP26-106.yaml
+  - pack_26/SP26-107.yaml
+  - pack_26/SP26-108.yaml
+  - pack_26/SP26-109.yaml
+  - pack_26/SP26-110.yaml
+  - pack_26/SP26-111.yaml
+  - pack_26/SP26-112.yaml
+  - pack_26/SP26-113.yaml
+  - pack_26/SP26-114.yaml
+  - pack_26/SP26-115.yaml
+  - pack_26/SP26-116.yaml
+  - pack_26/SP26-117.yaml
+  - pack_26/SP26-118.yaml
+  - pack_26/SP26-119.yaml
+  - pack_26/SP26-120.yaml
+  - pack_26/SP26-121.yaml
+  - pack_26/SP26-122.yaml
+  - pack_26/SP26-123.yaml
+  - pack_26/SP26-124.yaml
+  - pack_26/SP26-125.yaml
+  - pack_26/SP26-126.yaml

@@ -2878,5 +2878,20 @@
     "evidencePresetIds": ["SP27-241", "SP27-242", "SP27-243"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "6. Album Covers - Jazz, Soul & Hip-Hop",
+    "displayCategory": "Album covers: jazz, soul & hip-hop",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "2bf1bf3b80e7ad1faee0683afa0e6ffd740903eabbd3a39be332284579e67bcd",
+    "problem": "Album cover styles must reproduce each designer, label or scene's cover grammar (type, photography, illustration, palette, sleeve finish) with invented artists and exact requested titles, never a real record's artwork or real musicians.",
+    "preserve": "The requested subject stays the subject, arranged as that cover tradition; requested titles and artist names are set exactly.",
+    "proposedAction": "New category of 20 cover traditions from Alex Steinweiss, Reid Miles and Jim Flora through Motown, Stax, Pedro Bell, Klarwein, Lemi Ghariokwu and Tropicália to eighties and nineties hip-hop, Pen & Pixel, neo-soul, beat tapes, Bollywood and roots reggae.",
+    "validation": "Generate the card set; check each card reads as its cover tradition with exact invented text and no real artwork or musician.",
+    "evidencePresetIds": ["SP26-107", "SP26-108", "SP26-109"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

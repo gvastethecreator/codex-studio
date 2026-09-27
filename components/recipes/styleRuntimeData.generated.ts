@@ -240,7 +240,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Covers, Posters & Characters',
     cardDescription:
       'Character design, movie posters and manga, book and comic covers named after their artists and eras.',
-    presetCount: 106,
+    presetCount: 126,
   },
   {
     id: 'pack_27',

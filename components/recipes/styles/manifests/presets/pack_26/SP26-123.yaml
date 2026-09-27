@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-123
+packId: pack_26
+name: Neo-Soul 2000 - Warm Film Intimacy Cover
+styleAnchors:
+  - Neo-Soul 2000 - Warm Film Intimacy Cover
+  - album cover design
+  - Neo-soul warm film
+displayName: Neo-Soul 2000 - Warm Film Intimacy Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - neo-soul
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Late-nineties and 2000s neo-soul cover look: warm grainy film portraits, earth tones, head wraps and natural hair, soft window light and understated handwritten type.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject as a warm intimate grainy film portrait in earth tones. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm earth brown, ochre and olive, true to the Neo-Soul 2000 palette.
+  lighting_and_shadow: Soft warm window light, lit the way Neo-Soul 2000 lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Intimate close portrait with handwritten type, framed the way Neo-Soul 2000 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with warm intimate groove.
+  rendering_and_quality: Faithful neo-soul cover design, in the recognizable hand of Neo-Soul 2000.
+  creative_brief: 'Late-nineties and 2000s neo-soul cover look: warm grainy film portraits, earth tones, head wraps and natural hair, soft window light and understated handwritten type. Carry it through Neo-soul warm film, earth tones, handwritten type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Neo-soul warm film; earth tones; handwritten type
+avoidRules:
+  - real singers
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: real singers, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - neo-soul
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

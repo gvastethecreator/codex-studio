@@ -149,6 +149,7 @@ const CATEGORY_DISPLAY_NAMES: Readonly<Record<string, string>> = {
   'pack_26::3. Manga Covers': 'Manga covers',
   'pack_26::4. Book Covers': 'Book covers',
   'pack_26::5. Comic Covers': 'Comic covers',
+  'pack_26::6. Album Covers - Jazz, Soul & Hip-Hop': 'Album covers: jazz, soul & hip-hop',
   'pack_27::1. Horror Cinema 70s': 'Horror cinema 70s',
   'pack_27::2. Horror Cinema 80s': 'Horror cinema 80s',
   'pack_27::3. Horror Cinema 90s': 'Horror cinema 90s',

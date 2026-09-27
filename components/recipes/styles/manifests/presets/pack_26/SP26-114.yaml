@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP26-114
+packId: pack_26
+name: Mati Klarwein - Visionary Painted Cover
+styleAnchors:
+  - Mati Klarwein - Visionary Painted Cover
+  - album cover design
+  - Klarwein visionary oil
+displayName: Mati Klarwein - Visionary Painted Cover
+category: 6. Album Covers - Jazz, Soul & Hip-Hop
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-jazz-soul-hiphop
+  - album-cover
+  - album-cover-soul
+  - mati-klarwein
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Mati Klarwein visionary cover painting look of around 1970: hyper-detailed surreal oil painting, mirrored symmetric bodies and landscapes, African and cosmic imagery and lush saturated color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as hyper-detailed surreal symmetric visionary oil imagery. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush saturated jungle green, sky blue and flesh gold.
+  lighting_and_shadow: Glowing visionary painted light, lit the way Mati Klarwein lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Symmetric wraparound painted composition, framed the way Mati Klarwein composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lush visionary spirituality.
+  rendering_and_quality: Faithful visionary painted album cover, in the recognizable hand of Mati Klarwein.
+  creative_brief: 'Mati Klarwein visionary cover painting look of around 1970: hyper-detailed surreal oil painting, mirrored symmetric bodies and landscapes, African and cosmic imagery and lush saturated color. Carry it through Klarwein visionary oil, symmetry, lush surreal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Klarwein visionary oil; symmetry; lush surreal
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-jazz-soul-hiphop
+  categoryName: 6. Album Covers - Jazz, Soul & Hip-Hop
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-jazz-soul-hiphop
+    - album-cover
+    - album-cover-soul
+    - mati-klarwein
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_26",
       "name": "Covers, Posters & Characters",
-      "presetCount": 106
+      "presetCount": 126
     }
   ],
   "presets": [
@@ -1882,7 +1882,447 @@
       "tags": ["covers-posters-and-characters", "comic-covers", "mexican-comic-cover"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp26-106 mexican historieta pulp cover mexican comic cover historieta pulp 5. comic covers comic covers mexican comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers mexican-comic-cover"
+    },
+    {
+      "id": "SP26-107",
+      "name": "Alex Steinweiss - Forties Illustrated Album Cover",
+      "styleAnchors": [
+        "Alex Steinweiss - Forties Illustrated Album Cover",
+        "album cover design",
+        "Steinweiss flat shapes"
+      ],
+      "ref": "pack_26/SP26-107.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-107 alex steinweiss - forties illustrated album cover album cover design steinweiss flat shapes 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-108",
+      "name": "Reid Miles - Blue Note Type-Driven Jazz Cover",
+      "styleAnchors": [
+        "Reid Miles - Blue Note Type-Driven Jazz Cover",
+        "album cover design",
+        "Reid Miles bold type"
+      ],
+      "ref": "pack_26/SP26-108.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-108 reid miles - blue note type-driven jazz cover album cover design reid miles bold type 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-109",
+      "name": "David Stone Martin - Verve Ink Line Jazz Cover",
+      "styleAnchors": [
+        "David Stone Martin - Verve Ink Line Jazz Cover",
+        "album cover design",
+        "David Stone Martin ink line"
+      ],
+      "ref": "pack_26/SP26-109.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-109 david stone martin - verve ink line jazz cover album cover design david stone martin ink line 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-110",
+      "name": "Jim Flora - Cartoon Modernist Jazz Cover",
+      "styleAnchors": [
+        "Jim Flora - Cartoon Modernist Jazz Cover",
+        "album cover design",
+        "Jim Flora zany modernism"
+      ],
+      "ref": "pack_26/SP26-110.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-110 jim flora - cartoon modernist jazz cover album cover design jim flora zany modernism 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-111",
+      "name": "Motown Sixties - Studio Portrait Soul Cover",
+      "styleAnchors": [
+        "Motown Sixties - Studio Portrait Soul Cover",
+        "album cover design",
+        "Motown group portrait"
+      ],
+      "ref": "pack_26/SP26-111.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-111 motown sixties - studio portrait soul cover album cover design motown group portrait 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-112",
+      "name": "Stax Memphis - Gritty Southern Soul Cover",
+      "styleAnchors": [
+        "Stax Memphis - Gritty Southern Soul Cover",
+        "album cover design",
+        "Stax gritty photo"
+      ],
+      "ref": "pack_26/SP26-112.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-112 stax memphis - gritty southern soul cover album cover design stax gritty photo 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-113",
+      "name": "Pedro Bell - Funk Cartoon Cosmos Cover",
+      "styleAnchors": [
+        "Pedro Bell - Funk Cartoon Cosmos Cover",
+        "album cover design",
+        "Pedro Bell felt-tip cosmos"
+      ],
+      "ref": "pack_26/SP26-113.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-113 pedro bell - funk cartoon cosmos cover album cover design pedro bell felt-tip cosmos 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-114",
+      "name": "Mati Klarwein - Visionary Painted Cover",
+      "styleAnchors": [
+        "Mati Klarwein - Visionary Painted Cover",
+        "album cover design",
+        "Klarwein visionary oil"
+      ],
+      "ref": "pack_26/SP26-114.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-114 mati klarwein - visionary painted cover album cover design klarwein visionary oil 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-115",
+      "name": "Lemi Ghariokwu - Afrobeat Political Painting Cover",
+      "styleAnchors": [
+        "Lemi Ghariokwu - Afrobeat Political Painting Cover",
+        "album cover design",
+        "Lemi Ghariokwu flat satire"
+      ],
+      "ref": "pack_26/SP26-115.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-115 lemi ghariokwu - afrobeat political painting cover album cover design lemi ghariokwu flat satire 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-116",
+      "name": "Tropicalia 1968 - Brazilian Psychedelic Collage Cover",
+      "styleAnchors": [
+        "Tropicalia 1968 - Brazilian Psychedelic Collage Cover",
+        "album cover design",
+        "Tropicália collage"
+      ],
+      "ref": "pack_26/SP26-116.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-116 tropicalia 1968 - brazilian psychedelic collage cover album cover design tropicália collage 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-117",
+      "name": "Blaxploitation 1973 - Painted Funk Soundtrack Cover",
+      "styleAnchors": [
+        "Blaxploitation 1973 - Painted Funk Soundtrack Cover",
+        "album cover design",
+        "Blaxploitation painted montage"
+      ],
+      "ref": "pack_26/SP26-117.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-117 blaxploitation 1973 - painted funk soundtrack cover album cover design blaxploitation painted montage 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-118",
+      "name": "CTI Records - Pete Turner Saturated Photo Cover",
+      "styleAnchors": [
+        "CTI Records - Pete Turner Saturated Photo Cover",
+        "album cover design",
+        "CTI Pete Turner saturated photo"
+      ],
+      "ref": "pack_26/SP26-118.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-118 cti records - pete turner saturated photo cover album cover design cti pete turner saturated photo 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-119",
+      "name": "ECM Records - Minimal Atmospheric Photo Cover",
+      "styleAnchors": [
+        "ECM Records - Minimal Atmospheric Photo Cover",
+        "album cover design",
+        "ECM minimal fog photo"
+      ],
+      "ref": "pack_26/SP26-119.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-119 ecm records - minimal atmospheric photo cover album cover design ecm minimal fog photo 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-120",
+      "name": "Def Jam 1986 - Black-and-White Hip-Hop Photo Cover",
+      "styleAnchors": [
+        "Def Jam 1986 - Black-and-White Hip-Hop Photo Cover",
+        "album cover design",
+        "Eighties hip-hop black-and-white"
+      ],
+      "ref": "pack_26/SP26-120.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-120 def jam 1986 - black-and-white hip-hop photo cover album cover design eighties hip-hop black-and-white 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-121",
+      "name": "Golden Age Hip-Hop 1994 - Gritty Street Portrait Cover",
+      "styleAnchors": [
+        "Golden Age Hip-Hop 1994 - Gritty Street Portrait Cover",
+        "album cover design",
+        "Nineties hip-hop gritty photo"
+      ],
+      "ref": "pack_26/SP26-121.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-121 golden age hip-hop 1994 - gritty street portrait cover album cover design nineties hip-hop gritty photo 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-122",
+      "name": "Pen & Pixel 1998 - Chrome Bling Rap Cover",
+      "styleAnchors": [
+        "Pen & Pixel 1998 - Chrome Bling Rap Cover",
+        "album cover design",
+        "Pen & Pixel chrome letters"
+      ],
+      "ref": "pack_26/SP26-122.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-122 pen & pixel 1998 - chrome bling rap cover album cover design pen & pixel chrome letters 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-123",
+      "name": "Neo-Soul 2000 - Warm Film Intimacy Cover",
+      "styleAnchors": [
+        "Neo-Soul 2000 - Warm Film Intimacy Cover",
+        "album cover design",
+        "Neo-soul warm film"
+      ],
+      "ref": "pack_26/SP26-123.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-123 neo-soul 2000 - warm film intimacy cover album cover design neo-soul warm film 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-124",
+      "name": "Madlib Beat Tape - Lo-Fi Crate Collage Cover",
+      "styleAnchors": [
+        "Madlib Beat Tape - Lo-Fi Crate Collage Cover",
+        "album cover design",
+        "Beat tape collage"
+      ],
+      "ref": "pack_26/SP26-124.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-124 madlib beat tape - lo-fi crate collage cover album cover design beat tape collage 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-125",
+      "name": "Bollywood Soundtrack 1975 - Painted Filmi LP Cover",
+      "styleAnchors": [
+        "Bollywood Soundtrack 1975 - Painted Filmi LP Cover",
+        "album cover design",
+        "Bollywood painted montage"
+      ],
+      "ref": "pack_26/SP26-125.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-125 bollywood soundtrack 1975 - painted filmi lp cover album cover design bollywood painted montage 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-126",
+      "name": "Trojan Reggae 1970 - Roots Sound System Cover",
+      "styleAnchors": [
+        "Trojan Reggae 1970 - Roots Sound System Cover",
+        "album cover design",
+        "Roots reggae colors"
+      ],
+      "ref": "pack_26/SP26-126.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-jazz-soul-and-hip-hop",
+      "categoryName": "6. Album Covers - Jazz, Soul & Hip-Hop",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-jazz-soul-and-hip-hop",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-126 trojan reggae 1970 - roots sound system cover album cover design roots reggae colors 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
     }
   ],
-  "totalPresetCount": 106
+  "totalPresetCount": 126
 }
