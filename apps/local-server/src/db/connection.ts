@@ -13,6 +13,9 @@ export function getDb(db?: Database) {
       'bun:sqlite',
     ) as typeof import('bun:sqlite');
     defaultDb = new DatabaseConstructor(resolveLibraryPath('library.sqlite'));
+    // Wait for another connection (maintenance, CLI tools) instead of failing at once with
+    // SQLITE_BUSY; an unhandled busy error in the worker takes the whole server down.
+    defaultDb.run('PRAGMA busy_timeout = 5000');
     defaultDb.run('PRAGMA journal_mode = WAL');
     defaultDb.run('PRAGMA foreign_keys = ON');
   }
