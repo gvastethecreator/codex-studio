@@ -26,6 +26,7 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_27/action-cinema-80s-and-90s-11').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () => import('./pack_27/video-games-2010s-12').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

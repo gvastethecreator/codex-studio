@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-224
+packId: pack_27
+name: Hotline Miami 2012 - Dennaton Top-Down Neon
+styleAnchors:
+  - Hotline Miami 2012 - Dennaton Top-Down Neon
+  - twenty-tens action game
+  - Hotline Miami neon
+displayName: Hotline Miami 2012 - Dennaton Top-Down Neon
+category: 12. Video Games 2010s
+domain: twenty-tens action game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - hotline-miami
+  - reference-title
+visualDna:
+  aesthetic: 'Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small top-down pixel figures in neon-lit rooms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pulsing neon magenta, cyan and hot orange, true to the Hotline Miami 2012 palette.
+  lighting_and_shadow: Throbbing neon color cycling, lit the way Hotline Miami 2012 lights its levels.
+  texture_and_material: Low-resolution pixel art with color bleed, with the in-engine surface finish of Hotline Miami 2012.
+  camera_and_composition: Top-down view with a wobbling screen, framed the way Hotline Miami 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with feverish neon frenzy.
+  rendering_and_quality: Authentic neon top-down pixel screen, matching real Hotline Miami 2012 screenshots.
+  creative_brief: 'Dennaton Games Hotline Miami (2012) look: top-down pixel art in pulsing eighties neon, psychedelic color shifts, animal masks, carpeted rooms and brutal one-hit action. Carry it through Hotline Miami neon, top-down pixels, animal masks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hotline Miami neon; top-down pixels; animal masks
+avoidRules:
+  - a man in a letterman jacket and rooster mask
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a man in a letterman jacket and rooster mask, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens action game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - hotline-miami
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-222
+packId: pack_27
+name: Minecraft 2011 - Mojang Voxel Block World
+styleAnchors:
+  - Minecraft 2011 - Mojang Voxel Block World
+  - twenty-tens sandbox game
+  - Minecraft cubes
+displayName: Minecraft 2011 - Mojang Voxel Block World
+category: 12. Video Games 2010s
+domain: twenty-tens sandbox game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - minecraft
+  - reference-title
+visualDna:
+  aesthetic: 'Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject built from blocky cubes with sixteen-pixel textures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grass green, dirt brown, sky blue and torch orange.
+  lighting_and_shadow: Flat daylight and blocky torchlight falloff, lit the way Minecraft 2011 lights its levels.
+  texture_and_material: Sixteen-pixel block textures on hard cubes, with the in-engine surface finish of Minecraft 2011.
+  camera_and_composition: First-person view with a blocky hand, framed the way Minecraft 2011 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cozy creative freedom.
+  rendering_and_quality: Authentic voxel sandbox screen, matching real Minecraft 2011 screenshots.
+  creative_brief: 'Mojang Minecraft (2011) look: blocky voxel world of one-meter cubes, sixteen-pixel textures, square sun, blocky trees, torchlit caves and first-person building. Carry it through Minecraft cubes, 16px textures, square sun, torches. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Minecraft cubes; 16px textures; square sun; torches
+avoidRules:
+  - a green four-legged creeper
+  - a blocky man in a cyan shirt
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a green four-legged creeper, a blocky man in a cyan shirt, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens sandbox game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - minecraft
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

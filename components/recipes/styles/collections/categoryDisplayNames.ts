@@ -160,6 +160,7 @@ const CATEGORY_DISPLAY_NAMES: Readonly<Record<string, string>> = {
   'pack_27::9. Sci-Fi Cinema 90s': 'Sci-fi cinema 90s',
   'pack_27::10. Classic Noir & Western': 'Classic noir & western',
   'pack_27::11. Action Cinema 80s & 90s': 'Action cinema 80s & 90s',
+  'pack_27::12. Video Games 2010s': 'Video games 2010s',
   'pack_19::1. Ink Structures': 'Ink Structures',
   'pack_20::1. Print Registers': 'Print Registers',
   'pack_21::1. Paper & Pigment': 'Paper & Pigment',

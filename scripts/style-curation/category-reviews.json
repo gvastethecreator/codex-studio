@@ -2848,5 +2848,20 @@
     "evidencePresetIds": ["SP27-201", "SP27-202", "SP27-203"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "12. Video Games 2010s",
+    "displayCategory": "Video games 2010s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "a7c9bdd7f8287479140af431d1499e44883ec03cd159bbf3461aeacbec4d5786",
+    "problem": "Twenty-tens game styles must reproduce each named game's real on-screen look (silhouette, voxel, 1-bit dither, HD-2D, oil paint, flat pastel, low-poly) without copying its characters, logos or level layouts; games already named in pack_12 are not repeated.",
+    "preserve": "The requested subject stays the subject, rebuilt in that game's rendering; cards invent original characters and places.",
+    "proposedAction": "New category of 20 twenty-tens games: Limbo, Minecraft, Bastion, Hotline Miami, Kentucky Route Zero, Papers Please, Transistor, Undertale, Splatoon, Inside, Superhot, Hollow Knight, NieR Automata, Fortnite, Celeste, Return of the Obra Dinn, Octopath Traveler, Disco Elysium, Untitled Goose Game and Outer Wilds.",
+    "validation": "Generate the card set; check each card reads as its game's rendering, with no franchise character or logo.",
+    "evidencePresetIds": ["SP27-221", "SP27-222", "SP27-223"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

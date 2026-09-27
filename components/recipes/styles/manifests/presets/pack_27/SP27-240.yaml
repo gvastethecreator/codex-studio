@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-240
+packId: pack_27
+name: Outer Wilds 2019 - Mobius Tiny Solar System
+styleAnchors:
+  - Outer Wilds 2019 - Mobius Tiny Solar System
+  - twenty-tens exploration game
+  - Outer Wilds tiny planets
+displayName: Outer Wilds 2019 - Mobius Tiny Solar System
+category: 12. Video Games 2010s
+domain: twenty-tens exploration game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - outer-wilds
+  - reference-title
+visualDna:
+  aesthetic: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject on tiny stylized low-poly planets with rickety wooden spacecraft. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm campfire orange, deep space blue and planet pastels.
+  lighting_and_shadow: Campfire glow and sunlight across tiny planets, lit the way Outer Wilds 2019 lights its levels.
+  texture_and_material: Stylized low-poly surfaces, with the in-engine surface finish of Outer Wilds 2019.
+  camera_and_composition: First-person view on tiny planets, framed the way Outer Wilds 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with curious cosmic wonder.
+  rendering_and_quality: Authentic stylized space exploration screen, matching real Outer Wilds 2019 screenshots.
+  creative_brief: 'Mobius Digital Outer Wilds (2019) look: tiny hand-crafted planets, a rickety wooden spaceship, campfire marshmallows, banjo songs, stylized low-poly color and a twenty-two-minute cosmic loop. Carry it through Outer Wilds tiny planets, wooden ship, campfire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Outer Wilds tiny planets; wooden ship; campfire
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens exploration game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - outer-wilds
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

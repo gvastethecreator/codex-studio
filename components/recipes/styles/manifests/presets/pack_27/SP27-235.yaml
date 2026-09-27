@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-235
+packId: pack_27
+name: Celeste 2018 - Maddy Makes Games Pixel Mountain
+styleAnchors:
+  - Celeste 2018 - Maddy Makes Games Pixel Mountain
+  - twenty-tens platformer game
+  - Celeste pixel mountain
+displayName: Celeste 2018 - Maddy Makes Games Pixel Mountain
+category: 12. Video Games 2010s
+domain: twenty-tens platformer game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - celeste
+  - reference-title
+visualDna:
+  aesthetic: 'Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny pixel climber on crisp snowy mountain levels. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel snow pinks, teal and dusk purple, true to the Celeste 2018 palette.
+  lighting_and_shadow: Soft pastel glow and dash trails, lit the way Celeste 2018 lights its levels.
+  texture_and_material: Crisp detailed pixel art, with the in-engine surface finish of Celeste 2018.
+  camera_and_composition: Side-view single-screen platformer, framed the way Celeste 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with determined heartfelt climb.
+  rendering_and_quality: Authentic pixel platformer screen, matching real Celeste 2018 screenshots.
+  creative_brief: 'Maddy Makes Games Celeste (2018) look: crisp pixel-art mountain climbing, snowy ruins, glowing dash trails, lush pastel palettes and a heartfelt climb against anxiety. Carry it through Celeste pixel mountain, dash trails, pastel snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Celeste pixel mountain; dash trails; pastel snow
+avoidRules:
+  - a red-haired climber in a blue jacket
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a red-haired climber in a blue jacket, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens platformer game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - celeste
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-238
+packId: pack_27
+name: Disco Elysium 2019 - ZA/UM Oil Painted Detective
+styleAnchors:
+  - Disco Elysium 2019 - ZA/UM Oil Painted Detective
+  - twenty-tens role-playing game
+  - Disco Elysium oil paint
+displayName: Disco Elysium 2019 - ZA/UM Oil Painted Detective
+category: 12. Video Games 2010s
+domain: twenty-tens role-playing game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - disco-elysium
+  - reference-title
+visualDna:
+  aesthetic: 'ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in thick expressive oil-painted brushwork on a rainy isometric harbor city. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muddy oil greys, rust and cold harbor teal.
+  lighting_and_shadow: Cold rainy harbor light and warm windows, lit the way Disco Elysium 2019 lights its levels.
+  texture_and_material: Thick expressive oil brushstrokes, with the in-engine surface finish of Disco Elysium 2019.
+  camera_and_composition: Isometric view over painted streets, framed the way Disco Elysium 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with melancholic satirical introspection.
+  rendering_and_quality: Authentic oil-painted RPG screen, matching real Disco Elysium 2019 screenshots.
+  creative_brief: 'ZA/UM Disco Elysium (2019) look: isometric oil-painted city of Revachol with thick expressive brushwork, painted character portraits, rain, cold harbor light and melancholic political satire. Carry it through Disco Elysium oil paint, isometric harbor, portraits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Disco Elysium oil paint; isometric harbor; portraits
+avoidRules:
+  - a disheveled detective in a green jacket and tie
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a disheveled detective in a green jacket and tie, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens role-playing game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - disco-elysium
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

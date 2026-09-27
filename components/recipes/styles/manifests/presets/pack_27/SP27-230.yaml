@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-230
+packId: pack_27
+name: Inside 2016 - Playdead Muted Dystopia
+styleAnchors:
+  - Inside 2016 - Playdead Muted Dystopia
+  - twenty-tens indie game
+  - Inside muted grey
+displayName: Inside 2016 - Playdead Muted Dystopia
+category: 12. Video Games 2010s
+domain: twenty-tens indie game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - inside
+  - reference-title
+visualDna:
+  aesthetic: 'Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject small in muted grey 2.5D dystopian spaces with restrained light. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted grey, cold blue and one small red accent.
+  lighting_and_shadow: Soft restrained volumetric light, lit the way Inside 2016 lights its levels.
+  texture_and_material: Smooth low-detail 3D with soft fog, with the in-engine surface finish of Inside 2016.
+  camera_and_composition: Side-scrolling 2.5D cinematic view, framed the way Inside 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie restrained dread.
+  rendering_and_quality: Authentic muted dystopian platformer screen, matching real Inside 2016 screenshots.
+  creative_brief: 'Playdead Inside (2016) look: muted 2.5D dystopia in soft grey and cold blue, a small red figure, rows of mind-controlled workers, flooded labs and eerie restrained lighting. Carry it through Inside muted grey, red accent, mind-controlled rows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Inside muted grey; red accent; mind-controlled rows
+avoidRules:
+  - a small boy in a red sweater
+  - a giant flesh blob
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a small boy in a red sweater, a giant flesh blob, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens indie game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - inside
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

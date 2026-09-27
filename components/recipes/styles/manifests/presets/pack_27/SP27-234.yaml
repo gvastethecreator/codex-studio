@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-234
+packId: pack_27
+name: Fortnite 2017 - Epic Cartoon Battle Island
+styleAnchors:
+  - Fortnite 2017 - Epic Cartoon Battle Island
+  - twenty-tens multiplayer game
+  - Fortnite cartoon island
+displayName: Fortnite 2017 - Epic Cartoon Battle Island
+category: 12. Video Games 2010s
+domain: twenty-tens multiplayer game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - fortnite
+  - reference-title
+visualDna:
+  aesthetic: 'Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as bright chunky cartoon 3D characters on a stylized island. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated grass green, sky blue and loot purple.
+  lighting_and_shadow: Bright cheerful island daylight, lit the way Fortnite 2017 lights its levels.
+  texture_and_material: Clean stylized cartoon 3D, with the in-engine surface finish of Fortnite 2017.
+  camera_and_composition: Third-person over-the-shoulder view, framed the way Fortnite 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with playful competitive chaos.
+  rendering_and_quality: Authentic cartoon battle royale screen, matching real Fortnite 2017 screenshots.
+  creative_brief: 'Epic Games Fortnite (2017) look: bright stylized cartoon 3D island, chunky readable characters, instant building ramps and walls, loot llamas and saturated playful color. Carry it through Fortnite cartoon island, building ramps, bright color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Fortnite cartoon island; building ramps; bright color
+avoidRules:
+  - existing Fortnite skins
+  - a purple loot llama piñata
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing Fortnite skins, a purple loot llama piñata, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens multiplayer game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - fortnite
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

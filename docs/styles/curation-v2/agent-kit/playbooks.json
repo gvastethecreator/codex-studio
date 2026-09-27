@@ -192,7 +192,8 @@
     "pack_27::8. Sci-Fi Cinema 70s & 80s": "photo",
     "pack_27::9. Sci-Fi Cinema 90s": "photo",
     "pack_27::10. Classic Noir & Western": "photo",
-    "pack_27::11. Action Cinema 80s & 90s": "photo"
+    "pack_27::11. Action Cinema 80s & 90s": "photo",
+    "pack_27::12. Video Games 2010s": "pixel"
   },
   "playbooks": {
     "photo": {

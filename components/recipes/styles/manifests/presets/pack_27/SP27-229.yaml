@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-229
+packId: pack_27
+name: Splatoon 2015 - Nintendo Ink Turf Pop
+styleAnchors:
+  - Splatoon 2015 - Nintendo Ink Turf Pop
+  - twenty-tens shooter game
+  - Splatoon glossy ink
+displayName: Splatoon 2015 - Nintendo Ink Turf Pop
+category: 12. Video Games 2010s
+domain: twenty-tens shooter game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2010s
+  - games-2010s
+  - video-game-era
+  - splatoon
+  - reference-title
+visualDna:
+  aesthetic: 'Nintendo Splatoon (2015) look: glossy candy-colored ink splattered across plazas and skate parks, squid-kid fashion, street culture and bright urban pop.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in glossy candy-colored ink-splattered urban arenas. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon orange, magenta and electric blue ink, true to the Splatoon 2015 palette.
+  lighting_and_shadow: Bright urban daylight with glossy highlights, lit the way Splatoon 2015 lights its levels.
+  texture_and_material: Glossy wet ink and chunky toy surfaces, with the in-engine surface finish of Splatoon 2015.
+  camera_and_composition: Third-person arena view, framed the way Splatoon 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bright bouncy fun.
+  rendering_and_quality: Authentic glossy ink shooter screen, matching real Splatoon 2015 screenshots.
+  creative_brief: 'Nintendo Splatoon (2015) look: glossy candy-colored ink splattered across plazas and skate parks, squid-kid fashion, street culture and bright urban pop. Carry it through Splatoon glossy ink, turf splats, urban pop. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Splatoon glossy ink; turf splats; urban pop
+avoidRules:
+  - squid-kid inklings with tentacle hair
+  - a sea urchin coach
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: squid-kid inklings with tentacle hair, a sea urchin coach, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2010s
+  categoryName: 12. Video Games 2010s
+  domain: twenty-tens shooter game
+  tags:
+    - curation-v2
+    - video-games-2010s
+    - games-2010s
+    - video-game-era
+    - splatoon
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
