@@ -91,6 +91,12 @@ import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
 import { createReferenceRoutes } from './referenceRoutes';
 import { createUserStyleRoutes } from './userStyleRoutes';
+import { createExtensionRoutes } from './extensionRoutes';
+import {
+  createExtensionStore,
+  resolveExtensionSources,
+  type ExtensionStore,
+} from './extensionStore';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
 import { createStudioReadinessLifecycle } from './studioReadinessLifecycle';
@@ -162,6 +168,7 @@ export interface CreateStudioAppOptions {
     assetStore?: StudioAssetStore;
     logStore?: StudioLogStore;
     userStyleStore?: UserStyleStore;
+    extensionStore?: ExtensionStore;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
@@ -205,6 +212,8 @@ export async function createStudioApp(
   const logStore = options.dependencies?.logStore ?? defaultLogStore;
   const catalogStore = options.dependencies?.catalogStore ?? (await createDefaultCatalogStore());
   const userStyleStore = options.dependencies?.userStyleStore ?? createDefaultUserStyleStore();
+  const extensionStore =
+    options.dependencies?.extensionStore ?? createExtensionStore(resolveExtensionSources());
   const appLogger = options.dependencies?.logger ?? log;
   const settingsStorage = options.dependencies?.settingsStorage ?? {
     getSetting: getSettingValue,
@@ -301,6 +310,7 @@ export async function createStudioApp(
   );
 
   app.route('/api/maintenance', createMaintenanceRoutes());
+  app.route('/api/extensions', createExtensionRoutes({ store: extensionStore }));
   app.route(
     '/api/styles',
     createUserStyleRoutes({
