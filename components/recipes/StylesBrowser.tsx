@@ -151,14 +151,26 @@ const FAVORITES_PACK_ID = 'favorites';
 const ALL_STYLE_CATEGORIES_TAB_ID = 'all_categories';
 const ALL_STYLE_CARDS_TAB_ID = 'all_cards';
 const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
-const DEFAULT_STYLE_PACK_ID = STYLE_RUNTIME_PACK_SUMMARIES[0]?.id ?? 'pack_01';
-const STYLE_RUNTIME_PACK_IDS = STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id);
-const STYLE_TAB_ROUTE_OPTIONS = {
-  favoritesPackId: FAVORITES_PACK_ID,
-  runtimePackIds: STYLE_RUNTIME_PACK_IDS,
-  specialTabIds: [ALL_STYLE_CATEGORIES_TAB_ID, ALL_STYLE_CARDS_TAB_ID],
-  userStylePackId: USER_STYLE_PACK_ID,
-} satisfies StyleTabRouteOptions;
+// Installed packs are listed before React mounts and do not change until reload, so these
+// are computed on first use and stay stable for hook dependencies.
+let styleRuntimePackIdsCache: string[] | null = null;
+function styleRuntimePackIds() {
+  styleRuntimePackIdsCache ??= STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id);
+  return styleRuntimePackIdsCache;
+}
+function defaultStylePackId() {
+  return styleRuntimePackIds()[0] ?? 'pack_01';
+}
+let styleTabRouteOptionsCache: StyleTabRouteOptions | null = null;
+function styleTabRouteOptions() {
+  styleTabRouteOptionsCache ??= {
+    favoritesPackId: FAVORITES_PACK_ID,
+    runtimePackIds: styleRuntimePackIds(),
+    specialTabIds: [ALL_STYLE_CATEGORIES_TAB_ID, ALL_STYLE_CARDS_TAB_ID],
+    userStylePackId: USER_STYLE_PACK_ID,
+  };
+  return styleTabRouteOptionsCache;
+}
 const USER_STYLE_PACK_SUMMARY = {
   id: USER_STYLE_PACK_ID,
   name: USER_STYLE_PACK_NAME,
@@ -239,7 +251,7 @@ const StylePresetCard = React.lazy(() =>
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 function getStyleTabHash(tabId: StyleTabId) {
-  return getStyleTabHashForRoute(tabId, STYLE_TAB_ROUTE_OPTIONS);
+  return getStyleTabHashForRoute(tabId, styleTabRouteOptions());
 }
 
 function styleCatalogTabClass(active: boolean) {
@@ -745,8 +757,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const { activeWorkspaceId } = useWorkspaceState();
   const navigation = useStyleBrowserNavigation({
     scopeKey: activeWorkspaceId,
-    routeOptions: STYLE_TAB_ROUTE_OPTIONS,
-    defaultPackId: DEFAULT_STYLE_PACK_ID,
+    routeOptions: styleTabRouteOptions(),
+    defaultPackId: defaultStylePackId(),
     allCategoriesTabId: ALL_STYLE_CATEGORIES_TAB_ID,
     allCardsTabId: ALL_STYLE_CARDS_TAB_ID,
   });
@@ -797,7 +809,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     Partial<StylePanelVisibility>
   >('styles-panel-visibility', DEFAULT_STYLE_PANEL_VISIBILITY);
   const [explorerOpen, setExplorerOpen] = useState(
-    () => readStyleTabIdFromRouteHash(window.location.hash, STYLE_TAB_ROUTE_OPTIONS) !== null,
+    () => readStyleTabIdFromRouteHash(window.location.hash, styleTabRouteOptions()) !== null,
   );
   const [advancedOpen, setAdvancedOpen] = useState(false);
   const advancedPanelRef = useRef<HTMLDivElement>(null);
@@ -887,7 +899,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 
   useEffect(() => {
     const syncExplorerFromHash = () => {
-      const tab = readStyleTabIdFromRouteHash(window.location.hash, STYLE_TAB_ROUTE_OPTIONS);
+      const tab = readStyleTabIdFromRouteHash(window.location.hash, styleTabRouteOptions());
       setExplorerOpen(tab !== null);
       if (tab === null) setCatalogExpanded(false);
     };
@@ -966,7 +978,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         isGlobalStyleBrowseTab,
         favoritesCount: favorites.length,
         isGlobalStyleSearchActive,
-        runtimePackIds: STYLE_RUNTIME_PACK_IDS,
+        runtimePackIds: styleRuntimePackIds(),
         favoritesPackId: FAVORITES_PACK_ID,
       }),
     [
@@ -995,13 +1007,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 
   const prefetchStyleTab = useCallback(
     (tabId: StyleTabId) => {
-      const normalizedTabId = normalizeStyleTabRouteId(tabId, STYLE_TAB_ROUTE_OPTIONS);
+      const normalizedTabId = normalizeStyleTabRouteId(tabId, styleTabRouteOptions());
       if (normalizedTabId === STYLE_PACKS_TAB_ID) return;
       if (
         normalizedTabId === ALL_STYLE_CATEGORIES_TAB_ID ||
         normalizedTabId === ALL_STYLE_CARDS_TAB_ID
       ) {
-        void loadStyleRuntimePacks(STYLE_RUNTIME_PACK_IDS.slice(0, 3));
+        void loadStyleRuntimePacks(styleRuntimePackIds().slice(0, 3));
         return;
       }
       const collectionId = getStyleCollectionIdFromTabId(normalizedTabId);
@@ -1010,12 +1022,12 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
           (item) => item.id === collectionId,
         );
         const packIds = (collection?.sourcePackIds ?? []).filter((packId) =>
-          STYLE_RUNTIME_PACK_IDS.includes(packId),
+          styleRuntimePackIds().includes(packId),
         );
         if (packIds.length > 0) void loadStyleRuntimePacks(packIds);
         return;
       }
-      if (STYLE_RUNTIME_PACK_IDS.includes(normalizedTabId)) {
+      if (styleRuntimePackIds().includes(normalizedTabId)) {
         void loadStyleRuntimePacks([normalizedTabId]);
       }
     },
@@ -1069,7 +1081,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 
   const loadedRuntimeStylePacks = useMemo(
     () =>
-      STYLE_RUNTIME_PACK_IDS.flatMap((packId) => {
+      styleRuntimePackIds().flatMap((packId) => {
         const pack = loadedStylePacksById[packId];
         return pack ? [pack] : [];
       }),
@@ -1079,7 +1091,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     () => [userStylePack, ...loadedRuntimeStylePacks],
     [loadedRuntimeStylePacks, userStylePack],
   );
-  const allRuntimeStylePacksLoaded = STYLE_RUNTIME_PACK_IDS.every((packId) =>
+  const allRuntimeStylePacksLoaded = styleRuntimePackIds().every((packId) =>
     Boolean(loadedStylePacksById[packId]),
   );
   const globalStylePresetCount = STYLE_RUNTIME_PACK_SUMMARIES.reduce(
@@ -1111,7 +1123,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         globalStylePacks,
         userStylePack,
         loadedStylePacksById,
-        runtimePackIds: STYLE_RUNTIME_PACK_IDS,
+        runtimePackIds: styleRuntimePackIds(),
         summaries: STYLE_RUNTIME_PACK_SUMMARIES,
         favoritesPackId: FAVORITES_PACK_ID,
       }),
@@ -1142,7 +1154,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       return pack ? [pack] : [];
     });
     const missingSourcePack = activeStyleCollection.sourcePackIds.some(
-      (packId) => STYLE_RUNTIME_PACK_IDS.includes(packId) && !loadedStylePacksById[packId],
+      (packId) => styleRuntimePackIds().includes(packId) && !loadedStylePacksById[packId],
     );
     if (missingSourcePack) return sourceByPresetId;
 

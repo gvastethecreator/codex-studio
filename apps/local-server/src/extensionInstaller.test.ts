@@ -20,6 +20,7 @@ const manifest = (version: string) => ({
     search: 'search.json',
     thumbnails: 'thumbnails.json',
   },
+  stylePack: { id: 'pack_14', name: 'Mythic Noir', description: 'Myths.', presetCount: 197 },
   assets: [],
 });
 

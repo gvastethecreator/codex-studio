@@ -16,7 +16,10 @@ import {
   validateStyleManifestGraph,
 } from './stylePresetManifests';
 import { loadStylePresetCatalog } from './stylePresetCatalogData';
-import { loadStylePresetIndex } from './stylesData';
+import {
+  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
+  loadGeneratedStyleRuntimePack,
+} from './styleRuntimeData.generated';
 import { loadArchivedStylePresetsByIds } from './archivedStylePresets';
 
 describe('stylePresetManifests', () => {
@@ -639,7 +642,27 @@ describe('stylePresetManifests', () => {
       catalog.packManifests,
       catalog.presetManifests,
     );
-    const runtimeIndex = await loadStylePresetIndex();
+    // The generated runtime still feeds the card generator and extension builds (ADR 0011).
+    const generatedPacks = (
+      await Promise.all(
+        GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) =>
+          loadGeneratedStyleRuntimePack(pack.id),
+        ),
+      )
+    ).filter((pack): pack is StyleRuntimePack => pack !== null);
+    const runtimeIndex = {
+      packs: generatedPacks,
+      presetById: new Map(
+        generatedPacks.flatMap((pack) =>
+          pack.presets.map((preset) => [preset.id, preset] as const),
+        ),
+      ),
+      presetPackIdById: new Map(
+        generatedPacks.flatMap((pack) =>
+          pack.presets.map((preset) => [preset.id, pack.id] as const),
+        ),
+      ),
+    };
     const composedPresetCount = runtimeIndex.packs.reduce(
       (total, pack) => total + pack.presets.length,
       0,

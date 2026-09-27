@@ -1,6 +1,20 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import { loadStyleRuntimePack, loadStyleRuntimePacks } from '../../stylesData';
+import { composeStyleRuntimePacksFromManifests } from '../../stylePresetManifests';
+import { loadStyleManifestGraph } from '../../../../scripts/style-manifest-files';
+
+// Collection routing is curation over the in-repo manifests, so compose runtime packs from them
+// directly instead of from installed extensions (ADR 0011).
+let authoringPacks: Promise<StyleRuntimePack[]> | null = null;
+function loadStyleRuntimePacks() {
+  authoringPacks ??= loadStyleManifestGraph().then(({ packManifests, presetManifests }) =>
+    composeStyleRuntimePacksFromManifests(packManifests, presetManifests),
+  );
+  return authoringPacks;
+}
+async function loadStyleRuntimePack(packId: string) {
+  return (await loadStyleRuntimePacks()).find((pack) => pack.id === packId) ?? null;
+}
 import type { StyleRuntimePack, StyleRuntimePreset } from '../runtimeTypes';
 import {
   STYLE_COLLECTION_FAMILIES,

@@ -22,7 +22,7 @@ describe('createStyleRuntimeRegistry', () => {
     const loadPack = vi.fn(() => deferred.promise);
     const loadThumbnail = vi.fn(async () => {});
     const registry = createStyleRuntimeRegistry({
-      packIds: ['pack-1'],
+      packIds: () => ['pack-1'],
       loadPack,
       loadThumbnail,
     });
@@ -45,7 +45,7 @@ describe('createStyleRuntimeRegistry', () => {
       .mockRejectedValueOnce(new Error('load failed'))
       .mockResolvedValueOnce(createPack('pack-1'));
     const registry = createStyleRuntimeRegistry({
-      packIds: ['pack-1'],
+      packIds: () => ['pack-1'],
       loadPack,
       loadThumbnail: vi.fn(async () => {}),
     });

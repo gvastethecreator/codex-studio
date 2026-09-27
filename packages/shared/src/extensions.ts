@@ -23,6 +23,17 @@ export interface ExtensionAsset {
   bytes: number;
 }
 
+/** What a style-pack extension shows in the catalogue before its files load. */
+export interface StylePackSummary {
+  /** Style pack id used by preset manifests, such as `pack_14`. */
+  id: string;
+  name: string;
+  description: string;
+  cardTitle?: string;
+  cardDescription?: string;
+  presetCount: number;
+}
+
 export interface ExtensionManifest {
   schemaVersion: typeof EXTENSION_SCHEMA_VERSION;
   /** `publisher.name`, lowercase. Preset global ids are `<id>/<presetId>`. */
@@ -33,6 +44,7 @@ export interface ExtensionManifest {
   studio: string;
   title: string;
   files: StylePackExtensionFiles;
+  stylePack: StylePackSummary;
   assets: ExtensionAsset[];
 }
 
@@ -84,7 +96,7 @@ export function globalStylePresetId(extensionId: string, presetId: string) {
 export function parseExtensionManifest(value: unknown): ExtensionManifestParseResult {
   if (!isRecord(value)) return { ok: false, issues: ['extension.json must be an object'] };
   const issues: string[] = [];
-  const { schemaVersion, id, kind, version, studio, title, files, assets = [] } = value;
+  const { schemaVersion, id, kind, version, studio, title, files, stylePack, assets = [] } = value;
 
   if (schemaVersion !== EXTENSION_SCHEMA_VERSION) issues.push('unsupported schemaVersion');
   if (typeof id !== 'string' || !EXTENSION_ID_PATTERN.test(id))
@@ -99,6 +111,18 @@ export function parseExtensionManifest(value: unknown): ExtensionManifestParseRe
   else
     for (const key of STYLE_PACK_FILE_KEYS)
       if (!isSafeRelativePath(files[key])) issues.push(`files.${key} must be a relative path`);
+
+  if (
+    !isRecord(stylePack) ||
+    typeof stylePack.id !== 'string' ||
+    stylePack.id === '' ||
+    typeof stylePack.name !== 'string' ||
+    typeof stylePack.description !== 'string' ||
+    typeof stylePack.presetCount !== 'number' ||
+    !Number.isInteger(stylePack.presetCount) ||
+    stylePack.presetCount < 0
+  )
+    issues.push('stylePack needs id, name, description and presetCount');
 
   if (!Array.isArray(assets)) issues.push('assets must be an array');
   else

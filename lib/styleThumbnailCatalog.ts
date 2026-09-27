@@ -1,4 +1,4 @@
-import { loadGeneratedStyleThumbnailPack } from './styleThumbnailPacks.generated';
+import { fetchStylePackFile, isInstalledStylePack, stylePackFileUrl } from './installedStylePacks';
 import type { StylePresetImageVariant } from './stylePresetVisuals';
 
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
@@ -57,11 +57,24 @@ function rememberThumbnailProjection(projection: Record<string, string>) {
   );
 }
 
-export async function loadStyleThumbnailPack(packId: string) {
-  const projection = await loadGeneratedStyleThumbnailPack(packId);
-  rememberThumbnailProjection(projection);
-  notifyStyleThumbnailCatalog();
-  return projection;
+const thumbnailPackLoads = new Map<string, Promise<Record<string, string>>>();
+
+/** Loads a pack's card and category thumbnails from its installed extension (ADR 0011). */
+export function loadStyleThumbnailPack(packId: string): Promise<Record<string, string>> {
+  if (!isInstalledStylePack(packId)) return Promise.resolve({});
+  const cached = thumbnailPackLoads.get(packId);
+  if (cached) return cached;
+  const load = fetchStylePackFile<Record<string, string>>(packId, 'thumbnails').then((files) => {
+    const projection = Object.fromEntries(
+      Object.entries(files).map(([key, file]) => [key, stylePackFileUrl(packId, file)]),
+    );
+    rememberThumbnailProjection(projection);
+    notifyStyleThumbnailCatalog();
+    return projection;
+  });
+  thumbnailPackLoads.set(packId, load);
+  load.catch(() => thumbnailPackLoads.delete(packId));
+  return load;
 }
 
 export function getStyleThumbnail(key: string) {

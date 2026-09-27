@@ -1,41 +1,70 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import {
+  getStyleCategoryImage,
   getStyleThumbnail,
   loadStyleThumbnailPack,
   resolveStyleDefaultImageVariantThumbnails,
   subscribeStyleThumbnailCatalog,
 } from './styleThumbnailCatalog';
+import { registerInstalledStylePacks } from './installedStylePacks';
+import type { ExtensionManifest } from '../packages/shared/src/extensions';
+
+const pack16: ExtensionManifest = {
+  schemaVersion: 1,
+  id: 'cozy.pack-16',
+  kind: 'style-pack',
+  version: '1.0.0',
+  studio: '>=0.1.0',
+  title: 'Anime Eras',
+  files: {
+    pack: 'pack.json',
+    runtime: 'runtime.json',
+    search: 'search.json',
+    thumbnails: 'thumbnails.json',
+  },
+  stylePack: { id: 'pack_16', name: 'Anime Eras', description: 'Anime.', presetCount: 2 },
+  assets: [],
+};
+
+afterEach(() => vi.unstubAllGlobals());
 
 describe('styleThumbnailCatalog', () => {
-  it('loads default-image fallbacks into the owning pack projection', async () => {
-    const pack05 = await loadStyleThumbnailPack('pack_05');
-    const pack13 = await loadStyleThumbnailPack('pack_13');
-    const pack16 = await loadStyleThumbnailPack('pack_16');
-
-    expect(pack05['SP05-034']).toBeTruthy();
-    expect(pack05['SP05-001']).toBeUndefined();
-    expect(pack13['SP13-001']).toBeTruthy();
-    expect(pack13['SP05-013']).toBeTruthy();
-    expect(pack13['SP13-026']).toBeUndefined();
-    expect(pack16['SP05-001']).toBeTruthy();
-    expect(pack16['SP13-026']).toBeTruthy();
-    expect(pack16['pack_16__70s_and_80s_retro_anime']).toBeTruthy();
-    expect(pack05['SP05-021-01']).toBeTruthy();
-    expect(getStyleThumbnail('SP05-001')).toBe(pack16['SP05-001']);
-  });
-
-  it('notifies subscribers after a pack load', async () => {
+  it('loads an installed pack once and serves its thumbnails from the extension', async () => {
+    registerInstalledStylePacks([pack16]);
+    const fetchMock = vi.fn(async (_input: string, _init?: RequestInit) =>
+      Response.json({
+        'SP05-001': 'thumbnails/SP05-001.webp',
+        pack_16__70s_and_80s_retro_anime: 'thumbnails/pack_16__70s_and_80s_retro_anime.webp',
+      }),
+    );
+    vi.stubGlobal('fetch', fetchMock);
     let notified = 0;
     const unsubscribe = subscribeStyleThumbnailCatalog(() => {
       notified += 1;
     });
 
-    await loadStyleThumbnailPack('pack_16');
+    const [first, second] = await Promise.all([
+      loadStyleThumbnailPack('pack_16'),
+      loadStyleThumbnailPack('pack_16'),
+    ]);
     unsubscribe();
 
-    expect(notified).toBeGreaterThan(0);
-    expect(getStyleThumbnail('SP05-001')).toBeTruthy();
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock.mock.calls[0]?.[0]).toContain(
+      '/api/extensions/cozy.pack-16/files/thumbnails.json',
+    );
+    expect(first).toBe(second);
+    expect(getStyleThumbnail('SP05-001')).toMatch(
+      /\/api\/extensions\/cozy\.pack-16\/files\/thumbnails\/SP05-001\.webp$/,
+    );
+    expect(getStyleCategoryImage('pack_16__70s_and_80s_retro_anime')).toBeTruthy();
+    expect(notified).toBe(1);
+  });
+
+  it('returns nothing for a pack that is not installed', async () => {
+    registerInstalledStylePacks([]);
+    await expect(loadStyleThumbnailPack('pack_99')).resolves.toEqual({});
   });
 
   it('places the previous default after the other image variants', () => {

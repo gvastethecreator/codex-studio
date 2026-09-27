@@ -1,9 +1,10 @@
-import {
-  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
-  loadGeneratedStyleRuntimePack,
-} from './styleRuntimeData.generated';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 import { loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
+import {
+  fetchStylePackFile,
+  INSTALLED_STYLE_PACK_SUMMARIES,
+  isInstalledStylePack,
+} from '../../lib/installedStylePacks';
 
 const STYLE_VISUAL_DNA_KEYS = [
   'aesthetic',
@@ -34,14 +35,15 @@ function normalizeStyleRuntimePack(pack: StyleRuntimePack): StyleRuntimePack {
   };
 }
 
-export const STYLE_RUNTIME_PACK_SUMMARIES = GENERATED_STYLE_RUNTIME_PACK_SUMMARIES;
+/** Installed style packs (ADR 0011), filled at startup before React mounts. */
+export const STYLE_RUNTIME_PACK_SUMMARIES = INSTALLED_STYLE_PACK_SUMMARIES;
 
 export function createStyleRuntimeRegistry({
   packIds,
   loadPack,
   loadThumbnail,
 }: {
-  packIds: readonly string[];
+  packIds: () => readonly string[];
   loadPack: (packId: string) => Promise<StyleRuntimePack | null>;
   loadThumbnail: (packId: string) => Promise<unknown>;
 }) {
@@ -67,7 +69,7 @@ export function createStyleRuntimeRegistry({
   };
 
   const loadRuntimePacks = async () => {
-    const packs = await Promise.all(packIds.map(loadRuntimePack));
+    const packs = await Promise.all(packIds().map(loadRuntimePack));
     return packs.filter((pack): pack is StyleRuntimePack => pack !== null);
   };
 
@@ -78,8 +80,9 @@ export function createStyleRuntimeRegistry({
 }
 
 const styleRuntimeRegistry = createStyleRuntimeRegistry({
-  packIds: STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
-  loadPack: loadGeneratedStyleRuntimePack,
+  packIds: () => STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
+  loadPack: async (packId) =>
+    isInstalledStylePack(packId) ? fetchStylePackFile<StyleRuntimePack>(packId, 'runtime') : null,
   loadThumbnail: loadStyleThumbnailPack,
 });
 

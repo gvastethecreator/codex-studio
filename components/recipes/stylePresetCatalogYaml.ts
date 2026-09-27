@@ -1,7 +1,14 @@
-import {
-  loadStyleThumbnailPack,
-  resolveStyleDefaultImageThumbnail,
-} from '../../lib/styleThumbnailCatalog';
+// Authoring view of the in-repo manifests. It resolves thumbnails from the generated projection,
+// not from installed extensions, so curation checks run without a backend (ADR 0011).
+import { loadGeneratedStyleThumbnailPack } from '../../lib/styleThumbnailPacks.generated';
+
+const authoringThumbnails: Record<string, string> = {};
+
+export async function loadAuthoringStyleThumbnailPack(packId: string) {
+  const projection = await loadGeneratedStyleThumbnailPack(packId);
+  Object.assign(authoringThumbnails, projection);
+  return projection;
+}
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 
 export type ManifestGlobLoader = () => Promise<unknown>;
@@ -33,7 +40,7 @@ function normalizePresetAssetAvailability(
   const resolvedDefaultImage =
     preset.attributes?.previewStatus === 'pending'
       ? undefined
-      : (thumbnailProjection?.[preset.id] ?? resolveStyleDefaultImageThumbnail(preset.id));
+      : (thumbnailProjection?.[preset.id] ?? authoringThumbnails[preset.id]);
   const defaultImageExists = Boolean(resolvedDefaultImage);
   return {
     ...preset,
@@ -70,7 +77,7 @@ export async function loadStylePresetCatalogPackDataFromGlobs({
   if (!packManifest) {
     throw new Error('Missing style pack manifest for catalog data chunk.');
   }
-  const thumbnailProjection = await loadStyleThumbnailPack(packManifest.id);
+  const thumbnailProjection = await loadAuthoringStyleThumbnailPack(packManifest.id);
 
   return {
     packManifest,

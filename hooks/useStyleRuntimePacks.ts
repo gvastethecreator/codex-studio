@@ -5,7 +5,6 @@ import {
   type StyleRuntimePack,
 } from '../components/recipes/stylesData';
 
-const STYLE_RUNTIME_PACK_ID_SET = new Set(STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id));
 export const STYLE_RUNTIME_PACK_LOAD_BATCH_SIZE = 2;
 
 export function chunkStyleRuntimePackIds(
@@ -28,7 +27,8 @@ export function resolveRequiredStyleRuntimePackIds({
   loadAll: boolean;
 }) {
   const source = loadAll ? STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id) : requiredPackIds;
-  return Array.from(new Set(source.filter((packId) => STYLE_RUNTIME_PACK_ID_SET.has(packId))));
+  const installed = new Set(STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id));
+  return Array.from(new Set(source.filter((packId) => installed.has(packId))));
 }
 
 export function useStyleRuntimePacks({

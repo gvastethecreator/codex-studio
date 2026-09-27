@@ -1,8 +1,10 @@
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 import { compareStylePackIdsForDisplay } from './styles/packOrdering';
 import { createStylePresetCatalog, type StylePresetCatalog } from './stylePresetManifests';
-import type { StylePresetCatalogPackData } from './stylePresetCatalogYaml';
-import { loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
+import {
+  loadAuthoringStyleThumbnailPack,
+  type StylePresetCatalogPackData,
+} from './stylePresetCatalogYaml';
 
 export interface LoadedStylePresetCatalog extends StylePresetCatalog {
   packManifests: StylePackManifest[];
@@ -171,7 +173,9 @@ export function loadStylePresetCatalogPackData(
   const cached = packDataCache.get(packId);
   if (cached) return cached;
 
-  const promise = loadStyleThumbnailPack(packId).then(() => catalogPackDataLoaders[packId]());
+  const promise = loadAuthoringStyleThumbnailPack(packId).then(() =>
+    catalogPackDataLoaders[packId](),
+  );
   packDataCache.set(packId, promise);
   return promise;
 }

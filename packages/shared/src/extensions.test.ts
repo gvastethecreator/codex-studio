@@ -14,6 +14,7 @@ const valid = {
     search: 'search.json',
     thumbnails: 'thumbnails.json',
   },
+  stylePack: { id: 'pack_14', name: 'Mythic Noir', description: 'Myths.', presetCount: 197 },
   assets: [{ name: 'cards-full', optional: true, sha256: 'a'.repeat(64), bytes: 10 }],
 };
 

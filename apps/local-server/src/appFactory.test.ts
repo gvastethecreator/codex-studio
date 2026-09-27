@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -222,6 +222,8 @@ function createCodexRuntimeReport(
     ...overrides,
   };
 }
+
+afterEach(() => vi.unstubAllEnvs());
 
 describe('createStudioApp', () => {
   it('wires injected codex and project adapters through mounted routes', async () => {
@@ -520,6 +522,8 @@ describe('createStudioApp', () => {
     };
     const worker = createWorkerDependency();
     worker.getWorkerStatus = vi.fn(() => workerStatus);
+    // The health route reads the dispatch hold from the environment; keep the local .env out.
+    vi.stubEnv('STUDIO_HOLD_PROVIDER_DISPATCH', '');
 
     const studio = await createStudioApp({
       runInit: false,

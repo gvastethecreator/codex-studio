@@ -535,7 +535,7 @@ function SourcePackCard({
   thumbnailRevision: number;
 }) {
   const theme = PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01;
-  const title = pack.cardTitle;
+  const title = pack.cardTitle ?? pack.name;
   const imageCandidates = useMemo(
     () => getLandingFolderImageCandidates(pack.id),
     [pack.id, thumbnailRevision],
@@ -546,7 +546,7 @@ function SourcePackCard({
       id={pack.id}
       targetId={targetId}
       title={title}
-      description={pack.cardDescription}
+      description={pack.cardDescription ?? pack.description}
       countLabel={`${pack.presetCount}`}
       countAriaLabel={`${pack.name} presets ${pack.presetCount}`}
       eyebrow="Source pack"
@@ -784,7 +784,7 @@ function StyleSourcePacksSection({
             <StyleFolderPlaceholder
               key={pack.id}
               {...sharedProps}
-              title={pack.cardTitle}
+              title={pack.cardTitle ?? pack.name}
               tabHash={getStyleTabHash(pack.id)}
               theme={PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01}
               dataAttributes={{ 'data-style-pack-card': pack.id }}
@@ -1006,7 +1006,7 @@ export function StyleCollectionsLandingSurface({
           return {
             id: `source:${pack.id}`,
             targetId: `source:${pack.id}`,
-            label: pack.cardTitle,
+            label: pack.cardTitle ?? pack.name,
             caption: 'Source pack',
             countLabel: `${pack.presetCount}`,
             tabId: pack.id,

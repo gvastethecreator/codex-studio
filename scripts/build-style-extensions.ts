@@ -100,6 +100,14 @@ for (const packManifest of packManifests) {
       search: 'search.json',
       thumbnails: 'thumbnails.json',
     },
+    stylePack: {
+      id: packManifest.id,
+      name: packManifest.name,
+      description: packManifest.description,
+      cardTitle: packManifest.cardTitle,
+      cardDescription: packManifest.cardDescription,
+      presetCount: runtime.presets.length,
+    },
     assets: [],
   };
   const parsed = parseExtensionManifest(manifest);
