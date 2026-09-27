@@ -40,7 +40,6 @@ export interface StylePresetVisualState {
   resultImages: GeneratedImageWithConfig[];
   defaultImage: string | undefined;
   defaultImageVariants: StylePresetImageVariant[];
-  defaultImageStale: boolean;
   previewImage: string | undefined;
   exampleImageSrc: string | null;
 }
@@ -186,14 +185,12 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         resultImages,
         defaultImage: visualState?.defaultImage,
         defaultImageVariants: visualState?.defaultImageVariants,
-        defaultImageStale: visualState?.defaultImageStale ?? false,
         previewImage: visualState?.previewImage,
       }),
     [
       resultImages,
       visualState?.defaultImage,
       visualState?.defaultImageVariants,
-      visualState?.defaultImageStale,
       visualState?.previewImage,
     ],
   );
@@ -258,7 +255,6 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         data-style-image-kind={imageDiagnostics.kind}
         data-style-image-src={imageDiagnostics.src ?? ''}
         data-style-image-label={'label' in imageDiagnostics ? imageDiagnostics.label : ''}
-        data-style-default-stale={visualState?.defaultImageStale ? 'true' : 'false'}
         data-style-source-pack-id={sourceProvenance?.sourcePackId ?? ''}
         data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
         data-style-collection-role={sourceProvenance?.collectionRole ?? ''}

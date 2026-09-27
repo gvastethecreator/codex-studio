@@ -90,7 +90,6 @@ describe('stylePresetVisuals', () => {
           },
         ],
         defaultImage: '/defaults/SP03-001.webp',
-        defaultImageStale: false,
       }),
     ).toEqual([
       { kind: 'result', src: '/outputs/thumb.webp', label: 'Generated' },
@@ -107,7 +106,6 @@ describe('stylePresetVisuals', () => {
           { src: '/defaults/variants/SP03-001-01.webp', label: 'Variant 1' },
           { src: '/defaults/providers/grok/SP03-001.webp', label: 'Grok' },
         ],
-        defaultImageStale: false,
       }),
     ).toEqual([
       { kind: 'default', src: '/defaults/SP03-001.webp', label: 'Card' },
@@ -116,25 +114,10 @@ describe('stylePresetVisuals', () => {
     ]);
   });
 
-  it('shows variants before a stale primary default card', () => {
-    expect(
-      resolveStylePresetCardImages({
-        resultImages: [],
-        defaultImage: '/defaults/SP03-003.webp',
-        defaultImageVariants: [{ src: '/defaults/variants/SP03-003-01.webp', label: 'Variant 1' }],
-        defaultImageStale: true,
-      }),
-    ).toEqual([
-      { kind: 'variant', src: '/defaults/variants/SP03-003-01.webp', label: 'Variant 1' },
-      { kind: 'stale-default', src: '/defaults/SP03-003.webp', label: 'Stale' },
-    ]);
-  });
-
   it('uses preview only when no generated or default image exists', () => {
     expect(
       resolveStylePresetCardImages({
         resultImages: [],
-        defaultImageStale: false,
         previewImage: '/preview/category.webp',
       }),
     ).toEqual([{ kind: 'preview', src: '/preview/category.webp', label: 'Preview' }]);

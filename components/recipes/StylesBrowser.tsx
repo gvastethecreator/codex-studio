@@ -38,7 +38,6 @@ import {
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
-import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import { StyleCategoryGlyph } from './StyleCategoryGlyph';
 import { resolveStyleCategoryIdentity } from './styleCategoryIdentity';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
@@ -267,22 +266,17 @@ function createStylePresetVisualState({
   presetPackId,
   presetPackName,
   images,
-  archived = false,
 }: {
   preset: StyleRuntimePreset;
   presetPackId: string;
   presetPackName: string;
   images: GeneratedImageWithConfig[];
-  archived?: boolean;
 }): StylePresetVisualState {
   const resultImages = images
     .filter((img) => hasStylePresetIdentity(img.config, preset.id))
     .sort((a, b) => b.createdAt - a.createdAt);
-  const defaultImageStale = archived ? false : isStyleDefaultImageStale(preset.id);
-  const defaultImage = archived
-    ? `/assets/recipes/styles/defaults/${preset.id}.webp`
-    : resolveStyleDefaultImageThumbnail(preset.id);
-  const defaultImageVariants = archived ? [] : resolveStyleDefaultImageVariantThumbnails(preset.id);
+  const defaultImage = resolveStyleDefaultImageThumbnail(preset.id);
+  const defaultImageVariants = resolveStyleDefaultImageVariantThumbnails(preset.id);
   const categoryImage = preset.category
     ? (getStyleThumbnail(styleCategoryImageKey(presetPackId, preset.category)) ??
       getStyleCategoryImage(styleCategoryImageKey(presetPackId, preset.category)))
@@ -295,7 +289,6 @@ function createStylePresetVisualState({
     resultImages,
     defaultImage,
     defaultImageVariants,
-    defaultImageStale,
     previewImage,
     exampleImageSrc:
       resultImages[0]?.thumbnail ||
@@ -1396,7 +1389,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         presetPackId,
         presetPackName: archivedEntry ? `Archived · ${archivedEntry.packName}` : presetPack.name,
         images: resultImagesByPresetId.get(preset.id) ?? EMPTY_IMAGES,
-        archived: Boolean(archivedEntry),
       });
     },
     [

@@ -42,7 +42,6 @@ describe('StylePresetCard', () => {
           resultImages: [],
           defaultImage: '/style.webp',
           defaultImageVariants: [{ src: '/style-grok.webp', label: 'Grok' }],
-          defaultImageStale: false,
           previewImage: undefined,
           exampleImageSrc: null,
         }}
@@ -96,7 +95,6 @@ describe('StylePresetCard', () => {
           resultImages: [],
           defaultImage: '/style.webp',
           defaultImageVariants: [],
-          defaultImageStale: false,
           previewImage: undefined,
           exampleImageSrc: null,
         }}

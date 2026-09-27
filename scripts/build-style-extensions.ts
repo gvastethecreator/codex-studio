@@ -1,22 +1,45 @@
 // Compile the in-repo style packs into Cozy Extensions (ADR 0011): one folder per pack with
-// extension.json, pack.json, runtime.json, search.json, thumbnails.json and thumbnails/, plus the
-// optional cards/ layer of full-quality cards with --with-cards.
+// extension.json, pack.json, runtime.json, search.json, thumbnails.json and thumbnails/, an
+// archived.json when the pack retired presets, plus the optional cards/ layer of full-quality
+// cards with --with-cards.
 // Usage: bun scripts/build-style-extensions.ts [--out=<dir>] [--pack=pack_14] [--with-cards]
 import { existsSync } from 'node:fs';
 import { copyFile, mkdir, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
+import * as yaml from 'js-yaml';
 import sharp from 'sharp';
 import path from 'node:path';
 import {
   composeStyleRuntimePacksFromManifests,
   createStylePresetCatalogSearchIndexFromRuntimePacks,
 } from '../components/recipes/stylePresetManifests';
+import type {
+  StylePackManifest,
+  StylePresetManifest,
+} from '../components/recipes/styles/manifestTypes';
+import { STYLE_COLLECTIONS } from '../components/recipes/styles/collections/styleCollectionDefinitions';
+import {
+  createStyleCollectionSourceIndex,
+  resolveStyleCollection,
+} from '../components/recipes/styles/collections/styleCollectionProjection';
+import type { StyleCollectionEntry } from '../components/recipes/styles/collections/styleCollectionTypes';
+import type {
+  StyleRuntimePack,
+  StyleRuntimePreset,
+} from '../components/recipes/styles/runtimeTypes';
+import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 import {
   EXTENSION_MANIFEST_FILE,
   EXTENSION_SCHEMA_VERSION,
   parseExtensionManifest,
   type ExtensionManifest,
+  type StylePackLanding,
 } from '../packages/shared/src/extensions';
-import { loadStyleManifestGraph, rootDir } from './style-manifest-files';
+import { loadStyleManifestGraph, rootDir, styleManifestsDir } from './style-manifest-files';
+import {
+  collectStyleLandingFolderPreferredKeys,
+  selectStyleLandingFolderImageKeys,
+  STYLE_LANDING_FOLDER_IMAGE_LIMIT,
+} from './styleThumbnailProjection';
 
 const BUILT_IN_PUBLISHER = 'cozy';
 const STUDIO_RANGE = '>=0.1.0';
@@ -35,6 +58,16 @@ const CARD_QUALITY = 85;
 const CARD_SLOTS = ['', '-01', '-02'];
 const cacheRoot = path.join(rootDir, '.local', 'extensions', 'cache');
 const cardsRoot = path.join(rootDir, 'assets', 'recipes', 'styles', 'defaults');
+const categoryImagesRoot = path.join(
+  rootDir,
+  'assets',
+  'recipes',
+  'styles',
+  'style-card-thumbnails',
+);
+const archiveRoot = path.join(styleManifestsDir, 'archive');
+// Collections that Studio fills from the user's own data, not from style packs.
+const USER_COLLECTION_IDS = new Set(['my_styles', 'favorites', 'recent']);
 
 function cardSourcePath(key: string) {
   return /^SP\d\d-\d{3}$/.test(key)
@@ -71,26 +104,107 @@ export function builtInExtensionId(packId: string) {
   return `${BUILT_IN_PUBLISHER}.${packId.replace(/_/g, '-')}`;
 }
 
-/** Reads lib/styleThumbnailPacks.generated for the category images of each pack. */
-async function loadThumbnailProjection() {
-  const dir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
-  const byPack = new Map<string, Map<string, string>>();
-  for (const file of (await readdir(dir)).filter((name) => name.startsWith('thumbnail_group_'))) {
-    let packId = '';
-    const source = await readFile(path.join(dir, file), 'utf8');
-    const token = /^ {2}(pack_\d+): \{|'?([\w-]+)'?: new URL\(\s*'\.\.\/\.\.\/([^']+)'/gm;
-    for (const match of source.matchAll(token)) {
-      if (match[1]) packId = match[1];
-      // Card thumbnails are rebuilt from the full cards below; only category images come from here.
-      else if (
-        packId &&
-        match[2]?.startsWith('pack_') &&
-        match[3]?.includes('/style-card-thumbnails/')
-      ) {
-        const entries = byPack.get(packId) ?? new Map<string, string>();
-        entries.set(match[2], match[3]);
-        byPack.set(packId, entries);
+/** Category images are named `<packId>__<category>.webp`. */
+async function loadCategoryImages() {
+  const byPack = new Map<string, string[]>();
+  for (const name of (await readdir(categoryImagesRoot)).sort()) {
+    const match = /^(pack_\d+)__.+\.webp$/.exec(name);
+    if (match) byPack.set(match[1]!, [...(byPack.get(match[1]!) ?? []), name]);
+  }
+  return byPack;
+}
+
+function collectCategoryEntries(
+  entries: readonly StyleCollectionEntry[],
+): { packId: string; categoryName: string }[] {
+  return entries.flatMap((entry) => {
+    if (entry.kind === 'manual_group') return collectCategoryEntries(entry.entries ?? []);
+    if (entry.kind === 'category' && entry.packId && entry.categoryName)
+      return [{ packId: entry.packId, categoryName: entry.categoryName }];
+    return [];
+  });
+}
+
+function preferredLandingKeys(input: {
+  featuredPresetIds?: readonly string[];
+  categoryNames: readonly { packId: string; categoryName: string }[];
+  presetIds: readonly string[];
+}) {
+  return collectStyleLandingFolderPreferredKeys({
+    featuredPresetIds: input.featuredPresetIds,
+    categoryKeys: input.categoryNames.map((entry) =>
+      styleCategoryImageKey(entry.packId, entry.categoryName),
+    ),
+    presetIds: input.presetIds,
+  });
+}
+
+/** This pack's landing folder images and its share of every style collection. */
+function buildLanding(runtime: StyleRuntimePack, imageKeys: Set<string>): StylePackLanding {
+  const pick = (keys: readonly string[]) =>
+    selectStyleLandingFolderImageKeys(keys, imageKeys, STYLE_LANDING_FOLDER_IMAGE_LIMIT);
+  const index = createStyleCollectionSourceIndex([runtime]);
+  const collections: StylePackLanding['collections'] = {};
+  for (const collection of STYLE_COLLECTIONS) {
+    if (USER_COLLECTION_IDS.has(collection.id)) continue;
+    const resolved = resolveStyleCollection(collection, index);
+    if (resolved.presets.length === 0) continue;
+    collections[collection.id] = {
+      presetCount: resolved.presets.length,
+      imageKeys: pick(
+        preferredLandingKeys({
+          featuredPresetIds:
+            'featuredPresetIds' in collection ? collection.featuredPresetIds : undefined,
+          categoryNames: collectCategoryEntries(collection.entries),
+          presetIds: [
+            ...(resolved.summary.featuredPresetIds ?? []),
+            ...resolved.presets.map((item) => item.presetId),
+          ],
+        }),
+      ),
+    };
+  }
+  return {
+    imageKeys: pick(
+      preferredLandingKeys({
+        categoryNames: [
+          ...new Set(runtime.presets.map((preset) => preset.category ?? 'General')),
+        ].map((categoryName) => ({ packId: runtime.id, categoryName })),
+        presetIds: runtime.presets.map((preset) => preset.id),
+      }),
+    ),
+    collections,
+  };
+}
+
+/** Presets that packs retired, from manifests/archive, so old favorites still resolve. */
+async function loadArchivedPresets() {
+  const byPack = new Map<string, Map<string, StyleRuntimePreset>>();
+  if (!existsSync(archiveRoot)) return byPack;
+  for (const archive of (await readdir(archiveRoot)).sort()) {
+    const packsDir = path.join(archiveRoot, archive, 'packs');
+    if (!existsSync(packsDir)) continue;
+    for (const file of (await readdir(packsDir)).filter((name) => name.endsWith('.yaml'))) {
+      const packManifest = yaml.load(
+        await readFile(path.join(packsDir, file), 'utf8'),
+      ) as StylePackManifest;
+      const presetsDir = path.join(archiveRoot, archive, 'presets', packManifest.id);
+      const presets = await Promise.all(
+        (await readdir(presetsDir))
+          .filter((name) => name.endsWith('.yaml'))
+          .map(
+            async (name) =>
+              yaml.load(await readFile(path.join(presetsDir, name), 'utf8')) as StylePresetManifest,
+          ),
+      );
+      const runtime = composeStyleRuntimePacksFromManifests([packManifest], presets)[0];
+      const retired = byPack.get(packManifest.id) ?? new Map<string, StyleRuntimePreset>();
+      for (const preset of runtime?.presets ?? []) {
+        if (retired.has(preset.id))
+          throw new Error(`Archived preset ${preset.id} appears in more than one archive`);
+        retired.set(preset.id, preset);
       }
+      byPack.set(packManifest.id, retired);
     }
   }
   return byPack;
@@ -110,7 +224,8 @@ const runtimePacks = composeStyleRuntimePacksFromManifests(packManifests, preset
 const searchIndex = createStylePresetCatalogSearchIndexFromRuntimePacks(runtimePacks, {
   includeStyleText: false,
 });
-const thumbnails = await loadThumbnailProjection();
+const categoryImages = await loadCategoryImages();
+const archivedPresets = await loadArchivedPresets();
 await mkdir(outDir, { recursive: true });
 
 let built = 0;
@@ -127,14 +242,19 @@ for (const packManifest of packManifests) {
   await mkdir(path.join(stageDir, 'thumbnails'), { recursive: true });
 
   const thumbnailMap: Record<string, string> = {};
-  for (const [key, assetPath] of thumbnails.get(packManifest.id) ?? []) {
-    const fileName = `${key}${path.extname(assetPath)}`;
-    await copyFile(path.join(rootDir, assetPath), path.join(stageDir, 'thumbnails', fileName));
-    thumbnailMap[key] = `thumbnails/${fileName}`;
+  for (const fileName of categoryImages.get(packManifest.id) ?? []) {
+    await copyFile(
+      path.join(categoryImagesRoot, fileName),
+      path.join(stageDir, 'thumbnails', fileName),
+    );
+    thumbnailMap[path.basename(fileName, '.webp')] = `thumbnails/${fileName}`;
   }
-  const cardKeys = presetManifests
-    .filter((preset) => preset.packId === packManifest.id)
-    .flatMap((preset) => CARD_SLOTS.map((slot) => `${preset.id}${slot}`))
+  const currentIds = new Set(runtime.presets.map((preset) => preset.id));
+  const archived = [...(archivedPresets.get(packManifest.id)?.values() ?? [])].filter(
+    (preset) => !currentIds.has(preset.id),
+  );
+  const cardKeys = [...currentIds, ...archived.map((preset) => preset.id)]
+    .flatMap((presetId) => CARD_SLOTS.map((slot) => `${presetId}${slot}`))
     .filter((key) => existsSync(cardSourcePath(key)));
   if (withCards) await mkdir(path.join(stageDir, 'cards'), { recursive: true });
   await runPool(cardKeys, 8, async (key) => {
@@ -161,6 +281,7 @@ for (const packManifest of packManifests) {
       runtime: 'runtime.json',
       search: 'search.json',
       thumbnails: 'thumbnails.json',
+      ...(archived.length > 0 ? { archived: 'archived.json' } : {}),
     },
     stylePack: {
       id: packManifest.id,
@@ -169,6 +290,7 @@ for (const packManifest of packManifests) {
       cardTitle: packManifest.cardTitle,
       cardDescription: packManifest.cardDescription,
       presetCount: runtime.presets.length,
+      landing: buildLanding(runtime, new Set(Object.keys(thumbnailMap))),
     },
     assets: [],
   };
@@ -187,12 +309,17 @@ for (const packManifest of packManifests) {
     totalPresetCount: runtime.presets.length,
   });
   await writeJson(path.join(stageDir, 'thumbnails.json'), thumbnailMap);
+  if (archived.length > 0)
+    await writeJson(path.join(stageDir, 'archived.json'), {
+      packName: packManifest.name,
+      presets: archived,
+    });
 
   await rm(finalDir, { recursive: true, force: true });
   await rename(stageDir, finalDir);
   built++;
   console.log(
-    `[extensions:build] ${id} presets=${runtime.presets.length} cards=${cardKeys.length} thumbnails=${Object.keys(thumbnailMap).length}${withCards ? ' +cards' : ''}`,
+    `[extensions:build] ${id} presets=${runtime.presets.length} archived=${archived.length} cards=${cardKeys.length} thumbnails=${Object.keys(thumbnailMap).length}${withCards ? ' +cards' : ''}`,
   );
 }
 console.log(`[extensions:build] built=${built} out=${path.relative(rootDir, outDir)}`);

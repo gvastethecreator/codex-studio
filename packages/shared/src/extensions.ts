@@ -13,6 +13,8 @@ export interface StylePackExtensionFiles {
   runtime: string;
   search: string;
   thumbnails: string;
+  /** Retired presets kept so old favorites still resolve; only packs that retired presets. */
+  archived?: string;
 }
 
 /** A downloadable part of an extension, such as full-size cards, verified by sha256. */
@@ -32,6 +34,21 @@ export interface StylePackSummary {
   cardTitle?: string;
   cardDescription?: string;
   presetCount: number;
+  /** Style browser landing data this pack contributes; Studio sums it across installed packs. */
+  landing?: StylePackLanding;
+}
+
+export interface StylePackLandingFolder {
+  presetCount: number;
+  /** Thumbnail keys, best first. */
+  imageKeys: string[];
+}
+
+export interface StylePackLanding {
+  /** Images for the pack's own landing folder. */
+  imageKeys: string[];
+  /** This pack's share of each style collection, by collection id. */
+  collections: Record<string, StylePackLandingFolder>;
 }
 
 export interface ExtensionManifest {
@@ -180,6 +197,26 @@ export function globalStylePresetId(extensionId: string, presetId: string) {
   return `${extensionId}/${presetId}`;
 }
 
+function isStringArray(value: unknown): value is string[] {
+  return Array.isArray(value) && value.every((item) => typeof item === 'string');
+}
+
+function isStylePackLanding(value: unknown): value is StylePackLanding {
+  return (
+    isRecord(value) &&
+    isStringArray(value.imageKeys) &&
+    isRecord(value.collections) &&
+    Object.values(value.collections).every(
+      (folder) =>
+        isRecord(folder) &&
+        typeof folder.presetCount === 'number' &&
+        Number.isInteger(folder.presetCount) &&
+        folder.presetCount >= 0 &&
+        isStringArray(folder.imageKeys),
+    )
+  );
+}
+
 export function parseExtensionManifest(value: unknown): ExtensionManifestParseResult {
   if (!isRecord(value)) return { ok: false, issues: ['extension.json must be an object'] };
   const issues: string[] = [];
@@ -198,6 +235,8 @@ export function parseExtensionManifest(value: unknown): ExtensionManifestParseRe
   else
     for (const key of STYLE_PACK_FILE_KEYS)
       if (!isSafeRelativePath(files[key])) issues.push(`files.${key} must be a relative path`);
+  if (isRecord(files) && files.archived !== undefined && !isSafeRelativePath(files.archived))
+    issues.push('files.archived must be a relative path');
 
   if (
     !isRecord(stylePack) ||
@@ -210,6 +249,8 @@ export function parseExtensionManifest(value: unknown): ExtensionManifestParseRe
     stylePack.presetCount < 0
   )
     issues.push('stylePack needs id, name, description and presetCount');
+  else if (stylePack.landing !== undefined && !isStylePackLanding(stylePack.landing))
+    issues.push('stylePack.landing needs imageKeys and collections');
 
   if (!Array.isArray(assets)) issues.push('assets must be an array');
   else

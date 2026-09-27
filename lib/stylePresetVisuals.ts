@@ -1,11 +1,6 @@
 import type { GeneratedImageWithConfig } from '../types';
 
-export type StylePresetCardImageKind =
-  | 'result'
-  | 'default'
-  | 'variant'
-  | 'stale-default'
-  | 'preview';
+export type StylePresetCardImageKind = 'result' | 'default' | 'variant' | 'preview';
 
 export interface StylePresetCardImage {
   kind: StylePresetCardImageKind;
@@ -64,13 +59,11 @@ export function resolveStylePresetCardImages({
   resultImages,
   defaultImage,
   defaultImageVariants = [],
-  defaultImageStale,
   previewImage,
 }: {
   resultImages: GeneratedImageWithConfig[];
   defaultImage?: string;
   defaultImageVariants?: StylePresetImageVariant[];
-  defaultImageStale: boolean;
   previewImage?: string;
 }): StylePresetCardImage[] {
   const seen = new Set<string>();
@@ -89,32 +82,9 @@ export function resolveStylePresetCardImages({
     });
   }
 
-  const addDefaultImage = () => {
-    if (!defaultImage) return;
-    add({
-      kind: defaultImageStale ? 'stale-default' : 'default',
-      src: defaultImage,
-      label: defaultImageStale ? 'Stale' : 'Card',
-    });
-  };
-
-  const addDefaultImageVariants = () => {
-    defaultImageVariants.forEach((variant) => {
-      add({
-        kind: 'variant',
-        src: variant.src,
-        label: variant.label,
-      });
-    });
-  };
-
-  if (defaultImageStale) {
-    addDefaultImageVariants();
-    addDefaultImage();
-  } else {
-    addDefaultImage();
-    addDefaultImageVariants();
-  }
+  if (defaultImage) add({ kind: 'default', src: defaultImage, label: 'Card' });
+  for (const variant of defaultImageVariants)
+    add({ kind: 'variant', src: variant.src, label: variant.label });
 
   if (images.length === 0 && previewImage) {
     add({ kind: 'preview', src: previewImage, label: 'Preview' });

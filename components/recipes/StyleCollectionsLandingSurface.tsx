@@ -16,7 +16,7 @@ import {
   STYLE_FOLDER_FILE_LIMIT,
   type StyleFolderImageCandidate,
 } from './styles/collections/styleCollectionFolderImages';
-import { STYLE_LANDING_FOLDER_SUMMARIES_BY_ID } from '../../lib/styleLandingFolderIndex.generated';
+import { getStyleLandingFolder } from '../../lib/installedStylePacks';
 import {
   loadStyleThumbnailPack,
   getStyleThumbnail,
@@ -410,7 +410,7 @@ function formatLandingFolderLabel(key: string) {
 }
 
 function getLandingFolderImageCandidates(id: string): StyleFolderImageCandidate[] {
-  return (STYLE_LANDING_FOLDER_SUMMARIES_BY_ID[id]?.imageKeys ?? []).flatMap((key) => {
+  return (getStyleLandingFolder(id)?.imageKeys ?? []).flatMap((key) => {
     const src = getStyleThumbnail(key);
     if (!src) return [];
     return [{ id: key, src, label: formatLandingFolderLabel(key) }];
@@ -455,7 +455,7 @@ function useStyleLandingThumbnailCatalog() {
 }
 
 function getLandingFolderPresetCount(id: string, fallback: number) {
-  return STYLE_LANDING_FOLDER_SUMMARIES_BY_ID[id]?.presetCount ?? fallback;
+  return getStyleLandingFolder(id)?.presetCount ?? fallback;
 }
 
 function StyleCollectionCard({

@@ -1,6 +1,10 @@
 // Style packs come from installed Cozy Extensions (ADR 0011). The app loads the list once at
 // startup, before React mounts, so style surfaces can read pack summaries synchronously.
-import type { ExtensionManifest, StylePackSummary } from '../packages/shared/src/extensions';
+import type {
+  ExtensionManifest,
+  StylePackLandingFolder,
+  StylePackSummary,
+} from '../packages/shared/src/extensions';
 import { compareStylePackIdsForDisplay } from '../components/recipes/styles/packOrdering';
 import {
   extensionFileUrl,
@@ -80,7 +84,37 @@ export function fetchStylePackFile<T>(
   file: keyof ExtensionManifest['files'],
 ): Promise<T> {
   const extension = extensionForPack(packId);
-  return fetchExtensionJson<T>(extension.id, extension.files[file]);
+  const relativePath = extension.files[file];
+  if (!relativePath) return Promise.reject(new Error(`Style pack ${packId} has no ${file} file.`));
+  return fetchExtensionJson<T>(extension.id, relativePath);
+}
+
+/** Packs that ship retired presets for old favorites. */
+export function stylePackIdsWithArchivedPresets() {
+  return [...extensionByPackId.values()]
+    .filter((extension) => extension.files.archived)
+    .map((extension) => extension.stylePack.id);
+}
+
+const LANDING_IMAGE_LIMIT = 6;
+
+/**
+ * Landing folder data for a style pack or a style collection, summed across the installed packs
+ * in display order. Null when no installed pack contributes to it.
+ */
+export function getStyleLandingFolder(id: string): StylePackLandingFolder | null {
+  const pack = INSTALLED_STYLE_PACK_SUMMARIES.find((summary) => summary.id === id);
+  if (pack) return { presetCount: pack.presetCount, imageKeys: pack.landing?.imageKeys ?? [] };
+  let folder: StylePackLandingFolder | null = null;
+  for (const summary of INSTALLED_STYLE_PACK_SUMMARIES) {
+    const share = summary.landing?.collections[id];
+    if (!share) continue;
+    folder ??= { presetCount: 0, imageKeys: [] };
+    folder.presetCount += share.presetCount;
+    folder.imageKeys.push(...share.imageKeys);
+  }
+  if (folder) folder.imageKeys = folder.imageKeys.slice(0, LANDING_IMAGE_LIMIT);
+  return folder;
 }
 
 export function stylePackFileUrl(packId: string, relativePath: string) {

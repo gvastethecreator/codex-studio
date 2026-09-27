@@ -20,7 +20,6 @@ import {
   GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
   loadGeneratedStyleRuntimePack,
 } from './styleRuntimeData.generated';
-import { loadArchivedStylePresetsByIds } from './archivedStylePresets';
 
 describe('stylePresetManifests', () => {
   it('normalizes legacy style packs into granular preset manifests and lightweight pack manifests', () => {
@@ -699,50 +698,5 @@ describe('stylePresetManifests', () => {
     expect(runtimeIndex.presetPackIdById.get('SP28-001')).toBe('pack_28');
     expect(runtimeIndex.presetPackIdById.get('SP17-125')).toBe('pack_17');
     expect(runtimeIndex.presetPackIdById.get('SP12-098')).toBe('pack_12');
-
-    const archivedFavorites = await loadArchivedStylePresetsByIds([
-      'SP14-001',
-      'SP15-001',
-      'SP14-124',
-      'SP15-086',
-      'SP14-142',
-      'SP15-081',
-    ]);
-    const archivedById = new Map(archivedFavorites.map((entry) => [entry.preset.id, entry]));
-    expect(archivedFavorites.map((entry) => entry.preset.id)).toEqual([
-      'SP14-001',
-      'SP15-001',
-      'SP14-124',
-      'SP15-086',
-    ]);
-    expect(archivedById.get('SP14-124')?.preset.name).toBe('Broken Symmetry');
-    expect(archivedById.get('SP15-086')?.preset.name).toBe('Signalpunk');
-    expect(catalog.presetManifests.some((preset) => archivedById.has(preset.id))).toBe(false);
-    expect(archivedById.get('SP14-001')).toMatchObject({
-      packId: 'pack_14',
-      preset: {
-        name: 'Eclipse Reliquary Processional',
-        style: {
-          aesthetic: expect.stringContaining(
-            'Eclipse Reliquary Processional acts as a transferable mythic-noir router',
-          ),
-          subject_treatment: expect.stringContaining(
-            "Keep the user's prompt subject, action, and context intact",
-          ),
-        },
-      },
-    });
-    expect(archivedById.get('SP15-001')).toMatchObject({
-      packId: 'pack_15',
-      preset: {
-        name: 'Brass Gear Commons',
-        style: {
-          aesthetic: expect.stringContaining(
-            'Brass Gear Commons operates as a portable punk-spectrum router',
-          ),
-          camera_and_composition: expect.stringContaining('large readable machinery rhythm'),
-        },
-      },
-    });
   }, 120_000);
 });
