@@ -2007,7 +2007,7 @@
     "validation": "Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.",
     "evidencePresetIds": ["SP15-084", "SP15-085"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_15",
