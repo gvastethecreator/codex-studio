@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 220
+      "presetCount": 240
     }
   ],
   "presets": [
@@ -4298,7 +4298,399 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-220 neon oni graphic direction neon-lit demon graphic art neon outlines 10. graphic & feudal art directions graphic & feudal art neon-lit demon graphic art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions neon-lit-demon-graphic-art"
+    },
+    {
+      "id": "SP17-221",
+      "name": "Gerald Brom - Gothic Pale Dark Fantasy",
+      "styleAnchors": [
+        "Gerald Brom - Gothic Pale Dark Fantasy",
+        "dark fantasy painting",
+        "Brom pale gaunt figures"
+      ],
+      "ref": "pack_17/SP17-221.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-221 gerald brom - gothic pale dark fantasy dark fantasy painting brom pale gaunt figures 11. dark fantasy masters dark fantasy masters dark fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-painting"
+    },
+    {
+      "id": "SP17-222",
+      "name": "John Blanche - Gothic Grotesque Sketch-Paint",
+      "styleAnchors": [
+        "John Blanche - Gothic Grotesque Sketch-Paint",
+        "dark fantasy painting",
+        "Blanche spindly figures"
+      ],
+      "ref": "pack_17/SP17-222.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-222 john blanche - gothic grotesque sketch-paint dark fantasy painting blanche spindly figures 11. dark fantasy masters dark fantasy masters dark fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-painting"
+    },
+    {
+      "id": "SP17-223",
+      "name": "Ian Miller - Obsessive Pen Gothic Architecture",
+      "styleAnchors": [
+        "Ian Miller - Obsessive Pen Gothic Architecture",
+        "dark fantasy illustration",
+        "Ian Miller technical pen"
+      ],
+      "ref": "pack_17/SP17-223.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-223 ian miller - obsessive pen gothic architecture dark fantasy illustration ian miller technical pen 11. dark fantasy masters dark fantasy masters dark fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-illustration"
+    },
+    {
+      "id": "SP17-224",
+      "name": "Alan Lee - Misty Watercolor Legend",
+      "styleAnchors": [
+        "Alan Lee - Misty Watercolor Legend",
+        "fantasy illustration",
+        "Alan Lee misty watercolor"
+      ],
+      "ref": "pack_17/SP17-224.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy illustration",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-224 alan lee - misty watercolor legend fantasy illustration alan lee misty watercolor 11. dark fantasy masters dark fantasy masters fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-illustration"
+    },
+    {
+      "id": "SP17-225",
+      "name": "John Howe - Epic Mountain Fantasy Painting",
+      "styleAnchors": [
+        "John Howe - Epic Mountain Fantasy Painting",
+        "fantasy painting",
+        "John Howe mountains"
+      ],
+      "ref": "pack_17/SP17-225.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-225 john howe - epic mountain fantasy painting fantasy painting john howe mountains 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-226",
+      "name": "Paul Bonner - Painterly Goblin Crowd Scenes",
+      "styleAnchors": [
+        "Paul Bonner - Painterly Goblin Crowd Scenes",
+        "fantasy painting",
+        "Paul Bonner goblin crowds"
+      ],
+      "ref": "pack_17/SP17-226.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-226 paul bonner - painterly goblin crowd scenes fantasy painting paul bonner goblin crowds 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-227",
+      "name": "Karl Kopinski - Painterly Grimdark Portrait",
+      "styleAnchors": [
+        "Karl Kopinski - Painterly Grimdark Portrait",
+        "dark fantasy painting",
+        "Kopinski loose brushwork"
+      ],
+      "ref": "pack_17/SP17-227.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-227 karl kopinski - painterly grimdark portrait dark fantasy painting kopinski loose brushwork 11. dark fantasy masters dark fantasy masters dark fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-painting"
+    },
+    {
+      "id": "SP17-228",
+      "name": "Adrian Smith - Hyper-Detailed Grim Warrior",
+      "styleAnchors": [
+        "Adrian Smith - Hyper-Detailed Grim Warrior",
+        "dark fantasy illustration",
+        "Adrian Smith spiked armor"
+      ],
+      "ref": "pack_17/SP17-228.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-228 adrian smith - hyper-detailed grim warrior dark fantasy illustration adrian smith spiked armor 11. dark fantasy masters dark fantasy masters dark fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-illustration"
+    },
+    {
+      "id": "SP17-229",
+      "name": "Wayne Barlowe - Infernal Architecture Vision",
+      "styleAnchors": [
+        "Wayne Barlowe - Infernal Architecture Vision",
+        "dark fantasy painting",
+        "Barlowe infernal architecture"
+      ],
+      "ref": "pack_17/SP17-229.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-229 wayne barlowe - infernal architecture vision dark fantasy painting barlowe infernal architecture 11. dark fantasy masters dark fantasy masters dark fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-painting"
+    },
+    {
+      "id": "SP17-230",
+      "name": "Zdzislaw Beksinski - Dystopian Surreal Decay",
+      "styleAnchors": [
+        "Zdzislaw Beksinski - Dystopian Surreal Decay",
+        "dark fantasy painting",
+        "Beksiński decay"
+      ],
+      "ref": "pack_17/SP17-230.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "dark fantasy painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "dark-fantasy-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-230 zdzislaw beksinski - dystopian surreal decay dark fantasy painting beksiński decay 11. dark fantasy masters dark fantasy masters dark fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters dark-fantasy-painting"
+    },
+    {
+      "id": "SP17-231",
+      "name": "Keith Parkinson - Luminous Epic Fantasy Painting",
+      "styleAnchors": [
+        "Keith Parkinson - Luminous Epic Fantasy Painting",
+        "fantasy painting",
+        "Parkinson luminous skies"
+      ],
+      "ref": "pack_17/SP17-231.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-231 keith parkinson - luminous epic fantasy painting fantasy painting parkinson luminous skies 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-232",
+      "name": "Larry Elmore - Classic Adventure RPG Painting",
+      "styleAnchors": [
+        "Larry Elmore - Classic Adventure RPG Painting",
+        "fantasy painting",
+        "Elmore warm adventurers"
+      ],
+      "ref": "pack_17/SP17-232.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-232 larry elmore - classic adventure rpg painting fantasy painting elmore warm adventurers 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-233",
+      "name": "Jeff Easley - Moody Dramatic RPG Cover",
+      "styleAnchors": [
+        "Jeff Easley - Moody Dramatic RPG Cover",
+        "fantasy painting",
+        "Easley moody drama"
+      ],
+      "ref": "pack_17/SP17-233.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-233 jeff easley - moody dramatic rpg cover fantasy painting easley moody drama 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-234",
+      "name": "Clyde Caldwell - Glamorous Gothic RPG Painting",
+      "styleAnchors": [
+        "Clyde Caldwell - Glamorous Gothic RPG Painting",
+        "fantasy painting",
+        "Caldwell gothic glamour"
+      ],
+      "ref": "pack_17/SP17-234.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-234 clyde caldwell - glamorous gothic rpg painting fantasy painting caldwell gothic glamour 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-235",
+      "name": "Rodney Matthews - Curving Prog Fantasy Line",
+      "styleAnchors": [
+        "Rodney Matthews - Curving Prog Fantasy Line",
+        "fantasy illustration",
+        "Rodney Matthews curving lines"
+      ],
+      "ref": "pack_17/SP17-235.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy illustration",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-235 rodney matthews - curving prog fantasy line fantasy illustration rodney matthews curving lines 11. dark fantasy masters dark fantasy masters fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-illustration"
+    },
+    {
+      "id": "SP17-236",
+      "name": "Angus McBride - Historical Warrior Illustration",
+      "styleAnchors": [
+        "Angus McBride - Historical Warrior Illustration",
+        "historical fantasy illustration",
+        "McBride historical warriors"
+      ],
+      "ref": "pack_17/SP17-236.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "historical fantasy illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-masters",
+        "historical-fantasy-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-236 angus mcbride - historical warrior illustration historical fantasy illustration mcbride historical warriors 11. dark fantasy masters dark fantasy masters historical fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters historical-fantasy-illustration"
+    },
+    {
+      "id": "SP17-237",
+      "name": "Justin Sweet - Muted Painterly Fantasy Mood",
+      "styleAnchors": [
+        "Justin Sweet - Muted Painterly Fantasy Mood",
+        "fantasy painting",
+        "Justin Sweet muted mist"
+      ],
+      "ref": "pack_17/SP17-237.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-237 justin sweet - muted painterly fantasy mood fantasy painting justin sweet muted mist 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-238",
+      "name": "Michael Whelan - Luminous Surreal Cover Painting",
+      "styleAnchors": [
+        "Michael Whelan - Luminous Surreal Cover Painting",
+        "fantasy painting",
+        "Whelan luminous surreal"
+      ],
+      "ref": "pack_17/SP17-238.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-238 michael whelan - luminous surreal cover painting fantasy painting whelan luminous surreal 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-239",
+      "name": "Chris Achilleos - Airbrushed Heroic Fantasy",
+      "styleAnchors": [
+        "Chris Achilleos - Airbrushed Heroic Fantasy",
+        "fantasy painting",
+        "Achilleos airbrush"
+      ],
+      "ref": "pack_17/SP17-239.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-239 chris achilleos - airbrushed heroic fantasy fantasy painting achilleos airbrush 11. dark fantasy masters dark fantasy masters fantasy painting pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-painting"
+    },
+    {
+      "id": "SP17-240",
+      "name": "Brian Froud - Faerie Goblin Watercolor",
+      "styleAnchors": [
+        "Brian Froud - Faerie Goblin Watercolor",
+        "fantasy illustration",
+        "Froud faeries"
+      ],
+      "ref": "pack_17/SP17-240.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-masters",
+      "categoryName": "11. Dark Fantasy Masters",
+      "domain": "fantasy illustration",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-240 brian froud - faerie goblin watercolor fantasy illustration froud faeries 11. dark fantasy masters dark fantasy masters fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-illustration"
     }
   ],
-  "totalPresetCount": 220
+  "totalPresetCount": 240
 }

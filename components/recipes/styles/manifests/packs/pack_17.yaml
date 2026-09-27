@@ -259,6 +259,29 @@ categories:
       - pack_17/SP17-218.yaml
       - pack_17/SP17-219.yaml
       - pack_17/SP17-220.yaml
+  - id: dark-fantasy-masters
+    name: 11. Dark Fantasy Masters
+    presetRefs:
+      - pack_17/SP17-221.yaml
+      - pack_17/SP17-222.yaml
+      - pack_17/SP17-223.yaml
+      - pack_17/SP17-224.yaml
+      - pack_17/SP17-225.yaml
+      - pack_17/SP17-226.yaml
+      - pack_17/SP17-227.yaml
+      - pack_17/SP17-228.yaml
+      - pack_17/SP17-229.yaml
+      - pack_17/SP17-230.yaml
+      - pack_17/SP17-231.yaml
+      - pack_17/SP17-232.yaml
+      - pack_17/SP17-233.yaml
+      - pack_17/SP17-234.yaml
+      - pack_17/SP17-235.yaml
+      - pack_17/SP17-236.yaml
+      - pack_17/SP17-237.yaml
+      - pack_17/SP17-238.yaml
+      - pack_17/SP17-239.yaml
+      - pack_17/SP17-240.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-073.yaml
@@ -480,3 +503,23 @@ presetRefs:
   - pack_17/SP17-218.yaml
   - pack_17/SP17-219.yaml
   - pack_17/SP17-220.yaml
+  - pack_17/SP17-221.yaml
+  - pack_17/SP17-222.yaml
+  - pack_17/SP17-223.yaml
+  - pack_17/SP17-224.yaml
+  - pack_17/SP17-225.yaml
+  - pack_17/SP17-226.yaml
+  - pack_17/SP17-227.yaml
+  - pack_17/SP17-228.yaml
+  - pack_17/SP17-229.yaml
+  - pack_17/SP17-230.yaml
+  - pack_17/SP17-231.yaml
+  - pack_17/SP17-232.yaml
+  - pack_17/SP17-233.yaml
+  - pack_17/SP17-234.yaml
+  - pack_17/SP17-235.yaml
+  - pack_17/SP17-236.yaml
+  - pack_17/SP17-237.yaml
+  - pack_17/SP17-238.yaml
+  - pack_17/SP17-239.yaml
+  - pack_17/SP17-240.yaml

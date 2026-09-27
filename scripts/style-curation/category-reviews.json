@@ -2968,5 +2968,20 @@
     "evidencePresetIds": ["SP28-061", "SP28-062", "SP28-063"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_17",
+    "category": "11. Dark Fantasy Masters",
+    "displayCategory": "Dark fantasy masters",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "99e4015bc3c00b3faa6486254ac5ee7ba41245b593d3fbe44b6d5456a9324888",
+    "problem": "Dark and medieval fantasy master styles must reproduce each named painter's hand, palette and composition without copying their published images or licensed game and book characters.",
+    "preserve": "The requested subject stays the subject, painted in that artist's manner; cards stage original characters and scenes.",
+    "proposedAction": "New category of 20 dark and medieval fantasy masters: Brom, John Blanche, Ian Miller, Alan Lee, John Howe, Paul Bonner, Karl Kopinski, Adrian Smith, Wayne Barlowe, Beksiński, Keith Parkinson, Larry Elmore, Jeff Easley, Clyde Caldwell, Rodney Matthews, Angus McBride, Justin Sweet, Michael Whelan, Chris Achilleos and Brian Froud.",
+    "validation": "Generate the card set; check each card reads as the artist's hand with no copied painting or licensed character.",
+    "evidencePresetIds": ["SP17-221", "SP17-222", "SP17-223"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

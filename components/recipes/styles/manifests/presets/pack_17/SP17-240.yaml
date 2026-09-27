@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP17-240
+packId: pack_17
+name: Brian Froud - Faerie Goblin Watercolor
+styleAnchors:
+  - Brian Froud - Faerie Goblin Watercolor
+  - fantasy illustration
+  - Froud faeries
+displayName: Brian Froud - Faerie Goblin Watercolor
+category: 11. Dark Fantasy Masters
+domain: fantasy illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dark-fantasy-masters
+  - dark-fantasy-master
+  - fantasy-illustrator
+  - froud
+  - reference-title
+visualDna:
+  aesthetic: 'Brian Froud faerie art: mossy earthy watercolor and pencil, knobbly goblins and faeries with expressive faces, tangled roots, lichen and mischievous woodland magic.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint people and creatures as knobbly earthy faeries and goblins among tangled roots and lichen. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Moss green, earth brown and lichen ochre, true to the Brian Froud palette.
+  lighting_and_shadow: Soft dappled woodland light, lit the way Brian Froud lights its scenes.
+  texture_and_material: Pencil and earthy watercolor, with the surface finish of Brian Froud.
+  camera_and_composition: Close woodland vignette, framed the way Brian Froud composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with mischievous woodland magic.
+  rendering_and_quality: Earthy faerie watercolor illustration, in the recognizable hand of Brian Froud.
+  creative_brief: 'Brian Froud faerie art: mossy earthy watercolor and pencil, knobbly goblins and faeries with expressive faces, tangled roots, lichen and mischievous woodland magic. Carry it through Froud faeries, knobbly goblins, roots and lichen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Froud faeries; knobbly goblins; roots and lichen
+avoidRules:
+  - Labyrinth or Dark Crystal characters
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: Labyrinth or Dark Crystal characters, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-masters
+  categoryName: 11. Dark Fantasy Masters
+  domain: fantasy illustration
+  tags:
+    - curation-v2
+    - dark-fantasy-masters
+    - dark-fantasy-master
+    - fantasy-illustrator
+    - froud
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

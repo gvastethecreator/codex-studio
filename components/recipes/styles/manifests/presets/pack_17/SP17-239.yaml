@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP17-239
+packId: pack_17
+name: Chris Achilleos - Airbrushed Heroic Fantasy
+styleAnchors:
+  - Chris Achilleos - Airbrushed Heroic Fantasy
+  - fantasy painting
+  - Achilleos airbrush
+displayName: Chris Achilleos - Airbrushed Heroic Fantasy
+category: 11. Dark Fantasy Masters
+domain: fantasy painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dark-fantasy-masters
+  - dark-fantasy-master
+  - fantasy-illustrator
+  - achilleos
+  - reference-title
+visualDna:
+  aesthetic: 'Chris Achilleos fantasy art: glossy airbrushed heroic figures, precise ornate armor and costume detail, bright vignetted backgrounds and seventies and eighties fantasy glamour.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint people as glossy airbrushed heroic figures with ornate armor and costume detail. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glossy saturated skin tones, gold and bright vignette color.
+  lighting_and_shadow: Glossy airbrushed highlights, lit the way Chris Achilleos lights its scenes.
+  texture_and_material: Smooth airbrush and precise detail, with the surface finish of Chris Achilleos.
+  camera_and_composition: Vignetted heroic figure framing, framed the way Chris Achilleos composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with glamorous heroic bravado.
+  rendering_and_quality: Glossy airbrushed fantasy illustration, in the recognizable hand of Chris Achilleos.
+  creative_brief: 'Chris Achilleos fantasy art: glossy airbrushed heroic figures, precise ornate armor and costume detail, bright vignetted backgrounds and seventies and eighties fantasy glamour. Carry it through Achilleos airbrush, ornate armor, vignette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Achilleos airbrush; ornate armor; vignette
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-masters
+  categoryName: 11. Dark Fantasy Masters
+  domain: fantasy painting
+  tags:
+    - curation-v2
+    - dark-fantasy-masters
+    - dark-fantasy-master
+    - fantasy-illustrator
+    - achilleos
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
