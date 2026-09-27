@@ -3,7 +3,7 @@
     {
       "id": "pack_27",
       "name": "Decade Screens",
-      "presetCount": 200
+      "presetCount": 220
     }
   ],
   "presets": [
@@ -3606,7 +3606,367 @@
       "tags": ["decade-screens", "classic-noir-and-western", "seventies-revisionist-western"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp27-200 mccabe & mrs miller 1971 - altman fogged frontier seventies revisionist western mccabe fog 10. classic noir & western classic noir & western seventies revisionist western pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western seventies-revisionist-western"
+    },
+    {
+      "id": "SP27-201",
+      "name": "Raiders of the Lost Ark 1981 - Spielberg Pulp Serial",
+      "styleAnchors": [
+        "Raiders of the Lost Ark 1981 - Spielberg Pulp Serial",
+        "eighties action cinema",
+        "Raiders pulp serial"
+      ],
+      "ref": "pack_27/SP27-201.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-201 raiders of the lost ark 1981 - spielberg pulp serial eighties action cinema raiders pulp serial 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-202",
+      "name": "First Blood 1982 - Kotcheff Rain Forest Survival",
+      "styleAnchors": [
+        "First Blood 1982 - Kotcheff Rain Forest Survival",
+        "eighties action cinema",
+        "First Blood rain forest"
+      ],
+      "ref": "pack_27/SP27-202.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-202 first blood 1982 - kotcheff rain forest survival eighties action cinema first blood rain forest 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-203",
+      "name": "The Terminator 1984 - Cameron Blue Night Pursuit",
+      "styleAnchors": [
+        "The Terminator 1984 - Cameron Blue Night Pursuit",
+        "eighties action cinema",
+        "Terminator blue nights"
+      ],
+      "ref": "pack_27/SP27-203.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-203 the terminator 1984 - cameron blue night pursuit eighties action cinema terminator blue nights 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-204",
+      "name": "Police Story 1985 - Jackie Chan Stunt Glass",
+      "styleAnchors": [
+        "Police Story 1985 - Jackie Chan Stunt Glass",
+        "eighties action cinema",
+        "Police Story glass mall"
+      ],
+      "ref": "pack_27/SP27-204.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-204 police story 1985 - jackie chan stunt glass eighties action cinema police story glass mall 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-205",
+      "name": "Predator 1987 - McTiernan Jungle Heat",
+      "styleAnchors": [
+        "Predator 1987 - McTiernan Jungle Heat",
+        "eighties action cinema",
+        "Predator jungle"
+      ],
+      "ref": "pack_27/SP27-205.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-205 predator 1987 - mctiernan jungle heat eighties action cinema predator jungle 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-206",
+      "name": "Die Hard 1988 - McTiernan Tower Siege",
+      "styleAnchors": [
+        "Die Hard 1988 - McTiernan Tower Siege",
+        "eighties action cinema",
+        "Die Hard tower"
+      ],
+      "ref": "pack_27/SP27-206.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-206 die hard 1988 - mctiernan tower siege eighties action cinema die hard tower 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-207",
+      "name": "The Killer 1989 - John Woo Heroic Bloodshed",
+      "styleAnchors": [
+        "The Killer 1989 - John Woo Heroic Bloodshed",
+        "eighties action cinema",
+        "John Woo doves"
+      ],
+      "ref": "pack_27/SP27-207.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-207 the killer 1989 - john woo heroic bloodshed eighties action cinema john woo doves 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-208",
+      "name": "Point Break 1991 - Bigelow Surf Adrenaline",
+      "styleAnchors": [
+        "Point Break 1991 - Bigelow Surf Adrenaline",
+        "nineties action cinema",
+        "Point Break surf"
+      ],
+      "ref": "pack_27/SP27-208.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-208 point break 1991 - bigelow surf adrenaline nineties action cinema point break surf 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-209",
+      "name": "Hard Boiled 1992 - John Woo Hospital Long Take",
+      "styleAnchors": [
+        "Hard Boiled 1992 - John Woo Hospital Long Take",
+        "nineties action cinema",
+        "Hard Boiled long take"
+      ],
+      "ref": "pack_27/SP27-209.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-209 hard boiled 1992 - john woo hospital long take nineties action cinema hard boiled long take 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-210",
+      "name": "Speed 1994 - de Bont Runaway Bus",
+      "styleAnchors": [
+        "Speed 1994 - de Bont Runaway Bus",
+        "nineties action cinema",
+        "Speed runaway bus"
+      ],
+      "ref": "pack_27/SP27-210.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-210 speed 1994 - de bont runaway bus nineties action cinema speed runaway bus 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-211",
+      "name": "Heat 1995 - Mann Cold Blue Los Angeles",
+      "styleAnchors": [
+        "Heat 1995 - Mann Cold Blue Los Angeles",
+        "nineties action cinema",
+        "Heat cool blue LA"
+      ],
+      "ref": "pack_27/SP27-211.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-211 heat 1995 - mann cold blue los angeles nineties action cinema heat cool blue la 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-212",
+      "name": "Mission Impossible 1996 - De Palma Suspended Heist",
+      "styleAnchors": [
+        "Mission Impossible 1996 - De Palma Suspended Heist",
+        "nineties action cinema",
+        "Mission Impossible white vault"
+      ],
+      "ref": "pack_27/SP27-212.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-212 mission impossible 1996 - de palma suspended heist nineties action cinema mission impossible white vault 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-213",
+      "name": "Face Off 1997 - John Woo Operatic Mirror",
+      "styleAnchors": [
+        "Face Off 1997 - John Woo Operatic Mirror",
+        "nineties action cinema",
+        "Face/Off mirrors"
+      ],
+      "ref": "pack_27/SP27-213.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-213 face off 1997 - john woo operatic mirror nineties action cinema face/off mirrors 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-214",
+      "name": "Con Air 1997 - West Prison Plane Mayhem",
+      "styleAnchors": [
+        "Con Air 1997 - West Prison Plane Mayhem",
+        "nineties action cinema",
+        "Con Air prison plane"
+      ],
+      "ref": "pack_27/SP27-214.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-214 con air 1997 - west prison plane mayhem nineties action cinema con air prison plane 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-215",
+      "name": "Run Lola Run 1998 - Tykwer Techno Loop",
+      "styleAnchors": [
+        "Run Lola Run 1998 - Tykwer Techno Loop",
+        "nineties action cinema",
+        "Run Lola Run sprint"
+      ],
+      "ref": "pack_27/SP27-215.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-215 run lola run 1998 - tykwer techno loop nineties action cinema run lola run sprint 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-216",
+      "name": "Ronin 1998 - Frankenheimer Paris Car Chase",
+      "styleAnchors": [
+        "Ronin 1998 - Frankenheimer Paris Car Chase",
+        "nineties action cinema",
+        "Ronin car chases"
+      ],
+      "ref": "pack_27/SP27-216.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-216 ronin 1998 - frankenheimer paris car chase nineties action cinema ronin car chases 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
+    },
+    {
+      "id": "SP27-217",
+      "name": "Crouching Tiger 2000 - Ang Lee Wuxia Bamboo",
+      "styleAnchors": [
+        "Crouching Tiger 2000 - Ang Lee Wuxia Bamboo",
+        "turn-of-the-century action cinema",
+        "Crouching Tiger bamboo tops"
+      ],
+      "ref": "pack_27/SP27-217.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "turn-of-the-century action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "turn-of-the-century-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-217 crouching tiger 2000 - ang lee wuxia bamboo turn-of-the-century action cinema crouching tiger bamboo tops 11. action cinema 80s & 90s action cinema 80s & 90s turn-of-the-century action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s turn-of-the-century-action-cinema"
+    },
+    {
+      "id": "SP27-218",
+      "name": "Mad Max 2 1981 - Miller Wasteland Convoy",
+      "styleAnchors": [
+        "Mad Max 2 1981 - Miller Wasteland Convoy",
+        "eighties action cinema",
+        "Road Warrior wasteland"
+      ],
+      "ref": "pack_27/SP27-218.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-218 mad max 2 1981 - miller wasteland convoy eighties action cinema road warrior wasteland 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-219",
+      "name": "Commando 1985 - Lester Cartoon One-Man Army",
+      "styleAnchors": [
+        "Commando 1985 - Lester Cartoon One-Man Army",
+        "eighties action cinema",
+        "Commando one-man army"
+      ],
+      "ref": "pack_27/SP27-219.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "eighties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "eighties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-219 commando 1985 - lester cartoon one-man army eighties action cinema commando one-man army 11. action cinema 80s & 90s action cinema 80s & 90s eighties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s eighties-action-cinema"
+    },
+    {
+      "id": "SP27-220",
+      "name": "Hard Target 1993 - Woo Bayou Mardi Gras",
+      "styleAnchors": [
+        "Hard Target 1993 - Woo Bayou Mardi Gras",
+        "nineties action cinema",
+        "Hard Target bayou"
+      ],
+      "ref": "pack_27/SP27-220.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "action-cinema-80s-and-90s",
+      "categoryName": "11. Action Cinema 80s & 90s",
+      "domain": "nineties action cinema",
+      "tags": ["decade-screens", "action-cinema-80s-and-90s", "nineties-action-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-220 hard target 1993 - woo bayou mardi gras nineties action cinema hard target bayou 11. action cinema 80s & 90s action cinema 80s & 90s nineties action cinema pack_27 decade screens action-cinema-80s-and-90s decade-screens action-cinema-80s-and-90s nineties-action-cinema"
     }
   ],
-  "totalPresetCount": 200
+  "totalPresetCount": 220
 }

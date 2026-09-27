@@ -837,7 +837,7 @@
     "validation": "A lightly weathered object does not become a ruin or change silhouette.",
     "evidencePresetIds": ["SP09-018", "SP09-036"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_09",
@@ -1347,7 +1347,7 @@
     "validation": "A neutral task must not become a romance or clan-comedy scene.",
     "evidencePresetIds": ["SP05-024", "SP05-151"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_16",
@@ -2831,6 +2831,21 @@
     "proposedAction": "New category of 20 named films: ten noirs from The Maltese Falcon and Double Indemnity to Touch of Evil, and ten westerns from Stagecoach and The Searchers to Leone, Peckinpah, El Topo and McCabe & Mrs. Miller.",
     "validation": "Generate the card set; check each card reads as its film's photography without a signature character, prop or scene.",
     "evidencePresetIds": ["SP27-181", "SP27-182", "SP27-183"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "11. Action Cinema 80s & 90s",
+    "displayCategory": "Action cinema 80s & 90s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "6880306d2dc4c4324082b323922f35dab5919b92c73c4d121c3a719fbe95af56",
+    "problem": "Eighties and nineties action styles must reproduce each named film's production look (grade, lensing, stunt staging, film stock) without copying its heroes, villains or set pieces.",
+    "preserve": "The requested subject stays the subject, staged in that film's action language; cards invent original action moments.",
+    "proposedAction": "New category of 20 named films from Raiders, First Blood and The Terminator to Hong Kong heroic bloodshed, Die Hard, Heat, Run Lola Run, Ronin and Crouching Tiger.",
+    "validation": "Generate the card set; check each card reads as its film's grade and staging without a signature hero, villain or set piece.",
+    "evidencePresetIds": ["SP27-201", "SP27-202", "SP27-203"],
     "status": "text-authored",
     "visualValidation": "pending"
   }

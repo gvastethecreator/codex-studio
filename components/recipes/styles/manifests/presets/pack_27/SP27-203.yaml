@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-203
+packId: pack_27
+name: The Terminator 1984 - Cameron Blue Night Pursuit
+styleAnchors:
+  - The Terminator 1984 - Cameron Blue Night Pursuit
+  - eighties action cinema
+  - Terminator blue nights
+displayName: The Terminator 1984 - Cameron Blue Night Pursuit
+category: 11. Action Cinema 80s & 90s
+domain: eighties action cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - action-cinema-80s-90s
+  - action-80s-90s
+  - action-cinema
+  - terminator-84
+  - reference-title
+visualDna:
+  aesthetic: 'James Cameron The Terminator (1984) look: low-budget blue-grey Los Angeles nights, neon discos, police stations, sodium streets and a relentless nightmare pursuit.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in blue-grey eighties Los Angeles nights with neon and relentless pursuit. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue-grey, neon pink and sodium orange, true to the The Terminator 1984 palette.
+  lighting_and_shadow: Blue night light and harsh neon, lit the way The Terminator 1984 lights its scenes.
+  texture_and_material: Eighties 35mm film grain with diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Low gritty night tracking, framed the way The Terminator 1984 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with relentless nocturnal dread.
+  rendering_and_quality: Authentic mid-eighties Cameron frame, in the recognizable hand of The Terminator 1984.
+  creative_brief: 'James Cameron The Terminator (1984) look: low-budget blue-grey Los Angeles nights, neon discos, police stations, sodium streets and a relentless nightmare pursuit. Carry it through Terminator blue nights, neon, pursuit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Terminator blue nights; neon; pursuit
+avoidRules:
+  - a chrome endoskeleton with red eyes
+  - a man in a leather jacket and sunglasses
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a chrome endoskeleton with red eyes, a man in a leather jacket and sunglasses, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: action-cinema-80s-90s
+  categoryName: 11. Action Cinema 80s & 90s
+  domain: eighties action cinema
+  tags:
+    - curation-v2
+    - action-cinema-80s-90s
+    - action-80s-90s
+    - action-cinema
+    - terminator-84
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

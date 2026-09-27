@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-208
+packId: pack_27
+name: Point Break 1991 - Bigelow Surf Adrenaline
+styleAnchors:
+  - Point Break 1991 - Bigelow Surf Adrenaline
+  - nineties action cinema
+  - Point Break surf
+displayName: Point Break 1991 - Bigelow Surf Adrenaline
+category: 11. Action Cinema 80s & 90s
+domain: nineties action cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - action-cinema-80s-90s
+  - action-80s-90s
+  - action-cinema
+  - point-break
+  - reference-title
+visualDna:
+  aesthetic: 'Kathryn Bigelow Point Break (1991) look: sun-drenched California surf, huge waves, skydiving, backyard chases, rubber masks and adrenaline-junkie spirituality.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in sun-drenched surf, skydives and backyard foot chases with adrenaline. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Surf blue, sun gold and wetsuit black, true to the Point Break 1991 palette.
+  lighting_and_shadow: Bright Pacific sun and golden dusk, lit the way Point Break 1991 lights its scenes.
+  texture_and_material: Nineties 35mm film grain with punchy print contrast and early digital compositing.
+  camera_and_composition: Handheld chase and airborne skydive frames, framed the way Point Break 1991 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with euphoric adrenaline rush.
+  rendering_and_quality: Authentic early-nineties action frame, in the recognizable hand of Point Break 1991.
+  creative_brief: 'Kathryn Bigelow Point Break (1991) look: sun-drenched California surf, huge waves, skydiving, backyard chases, rubber masks and adrenaline-junkie spirituality. Carry it through Point Break surf, skydiving, foot chases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Point Break surf; skydiving; foot chases
+avoidRules:
+  - rubber masks of former presidents
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: rubber masks of former presidents, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: action-cinema-80s-90s
+  categoryName: 11. Action Cinema 80s & 90s
+  domain: nineties action cinema
+  tags:
+    - curation-v2
+    - action-cinema-80s-90s
+    - action-80s-90s
+    - action-cinema
+    - point-break
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

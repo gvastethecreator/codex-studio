@@ -250,7 +250,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Decade Screens',
     cardDescription:
       'Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.',
-    presetCount: 200,
+    presetCount: 220,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

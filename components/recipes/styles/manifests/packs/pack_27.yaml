@@ -238,6 +238,29 @@ categories:
       - pack_27/SP27-198.yaml
       - pack_27/SP27-199.yaml
       - pack_27/SP27-200.yaml
+  - id: action-cinema-80s-90s
+    name: 11. Action Cinema 80s & 90s
+    presetRefs:
+      - pack_27/SP27-201.yaml
+      - pack_27/SP27-202.yaml
+      - pack_27/SP27-203.yaml
+      - pack_27/SP27-204.yaml
+      - pack_27/SP27-205.yaml
+      - pack_27/SP27-206.yaml
+      - pack_27/SP27-207.yaml
+      - pack_27/SP27-208.yaml
+      - pack_27/SP27-209.yaml
+      - pack_27/SP27-210.yaml
+      - pack_27/SP27-211.yaml
+      - pack_27/SP27-212.yaml
+      - pack_27/SP27-213.yaml
+      - pack_27/SP27-214.yaml
+      - pack_27/SP27-215.yaml
+      - pack_27/SP27-216.yaml
+      - pack_27/SP27-217.yaml
+      - pack_27/SP27-218.yaml
+      - pack_27/SP27-219.yaml
+      - pack_27/SP27-220.yaml
 presetRefs:
   - pack_27/SP27-001.yaml
   - pack_27/SP27-002.yaml
@@ -439,3 +462,23 @@ presetRefs:
   - pack_27/SP27-198.yaml
   - pack_27/SP27-199.yaml
   - pack_27/SP27-200.yaml
+  - pack_27/SP27-201.yaml
+  - pack_27/SP27-202.yaml
+  - pack_27/SP27-203.yaml
+  - pack_27/SP27-204.yaml
+  - pack_27/SP27-205.yaml
+  - pack_27/SP27-206.yaml
+  - pack_27/SP27-207.yaml
+  - pack_27/SP27-208.yaml
+  - pack_27/SP27-209.yaml
+  - pack_27/SP27-210.yaml
+  - pack_27/SP27-211.yaml
+  - pack_27/SP27-212.yaml
+  - pack_27/SP27-213.yaml
+  - pack_27/SP27-214.yaml
+  - pack_27/SP27-215.yaml
+  - pack_27/SP27-216.yaml
+  - pack_27/SP27-217.yaml
+  - pack_27/SP27-218.yaml
+  - pack_27/SP27-219.yaml
+  - pack_27/SP27-220.yaml
