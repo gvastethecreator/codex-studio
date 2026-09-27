@@ -77,15 +77,15 @@ const spec: Spec = {
     },
     'SP05-026': {
       briefs: [
-        'A masked strategist raises his arm before a rebel army in a ruined opera house, the fallen chandelier lying at his feet like a broken crown. No readable text or logo.',
+        'A stout grey-haired strategist in a rust-orange military greatcoat and a porcelain half-mask raises his arm before a rebel army in a ruined opera house, the fallen chandelier lying at his feet like a broken crown. No readable text or logo.',
         'An exiled queen plays cards alone in a moving airship cabin while, far below the window, her rebellion lights signal fires on every hill. No readable text or logo.',
-        'A cloaked rebel mastermind delivers a thunderous speech to his army, unaware that his cape is caught in the elevator doors behind him. No readable text or logo.',
+        'A red-haired rebel mastermind in a bottle-green greatcoat delivers a thunderous speech to his army, unaware that his cape is caught in the elevator doors behind him. No readable text or logo.',
       ],
     },
     'SP05-027': {
       briefs: [
         'A tiny welder and her junkyard robot punch upward through a mountain in one spiral blow, boulders orbiting them like a galaxy. No readable text or logo.',
-        'A giant robot the size of a continent winds up to throw a moon like a baseball, its tiny pilot grinning through the cockpit glass. No readable text or logo.',
+        'A giant teal robot shaped like a lighthouse, the size of a continent, winds up to throw a moon like a baseball, its tiny pilot grinning through the cockpit glass. No readable text or logo.',
         'A crew of reckless misfits strike heroic poses atop their battered robot in the pouring rain, capes streaming, having clearly forgotten what they were fighting. No readable text or logo.',
       ],
     },

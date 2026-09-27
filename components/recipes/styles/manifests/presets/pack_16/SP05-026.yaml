@@ -6,7 +6,7 @@ styleAnchors:
   - Code Geass - Operatic Rebellion Strategy
 displayName: Code Geass - Operatic Rebellion Strategy
 category: 3. 2000s Classics
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -25,10 +25,11 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with grand operatic defiance.
   rendering_and_quality: Dramatic 2006 Sunrise television frame with CLAMP elegance.
   key_features: CLAMP proportions; theatrical poses; imperial uniforms; chess symbolism
-  creative_brief: "Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames. Carry it through CLAMP proportions, theatrical poses, imperial uniforms, chess symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sunrise Code Geass television look (2006) with CLAMP designs: extremely tall slender figures, long thin limbs, theatrical poses, royal empire uniforms and knightmare frames. Carry it through CLAMP proportions, theatrical poses, imperial uniforms, chess symbolism. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - a black helmeted mask with a pointed crest
   - a red bird-shaped eye sigil
+  - a slim black-haired strategist in a purple and black high-collared coat
   - existing franchise characters
   - realistic
   - 3d render
@@ -63,7 +64,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-026.webp
 attributes:
-  negativePrompt: a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
+  negativePrompt: a black helmeted mask with a pointed crest, a red bird-shaped eye sigil, a slim black-haired strategist in a purple and black high-collared coat, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

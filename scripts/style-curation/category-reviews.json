@@ -1340,7 +1340,7 @@
     "displayCategory": "Early digital anime",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "c3d0738ab88d146f5e93235eac229766de6b6c30e2c23a8186a5768cbedc2cef",
+    "baselineHash": "060c3e9ac8d47d35cbb015c35a7315a1cfd7e6304fceae90eeba6f14bfcb28b2",
     "problem": "Romance, clan comedy and specific narrative beats are mixed with digital-era appearance.",
     "preserve": "Compositing softness, cel line handling and background integration.",
     "proposedAction": "Keep the documented line, timing, value and compositing mechanics without mandatory story beats. SP05-156 has no distinct technical mechanism in its source; leave its distinctness pending comparison instead of inventing one from the name. Overhaul: DNA audited and kept; three original briefs written per preset (20).",
@@ -1362,7 +1362,7 @@
     "validation": "The difference is observable without iconic scenes or remembered characters.",
     "evidencePresetIds": ["SP05-071", "SP05-286"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_16",

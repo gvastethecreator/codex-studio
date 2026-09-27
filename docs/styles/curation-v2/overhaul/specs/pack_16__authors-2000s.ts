@@ -157,6 +157,7 @@ const spec: Spec = {
       avoid: [
         'a black helmeted mask with a pointed crest',
         'a red bird-shaped eye sigil',
+        'a slim black-haired strategist in a purple and black high-collared coat',
         'existing franchise characters',
       ],
     }),
@@ -174,6 +175,7 @@ const spec: Spec = {
       avoid: [
         'a spiky-haired rebel with a cape and flaming sunglasses',
         'a tiny drill-headed robot',
+        'a red robot with a giant grinning face on its chest and drill arms',
         'existing franchise characters',
       ],
     }),
