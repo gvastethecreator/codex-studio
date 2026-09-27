@@ -31,6 +31,7 @@
     "styles:taxonomy": "bun run scripts/backfill-style-preset-taxonomy.ts",
     "styles:catalog": "bun run scripts/query-style-preset-catalog.ts",
     "styles:runtime": "bun run styles:curation:policies && bun run scripts/generate-style-runtime-data.ts",
+    "extensions:build": "bun run scripts/build-style-extensions.ts",
     "styles:runtime:check": "bun run scripts/generate-style-curation-policies.ts --check && bun run scripts/generate-style-runtime-data.ts --check",
     "styles:thumbnails": "bun run scripts/generate-style-thumbnail-projections.ts",
     "styles:thumbnails:check": "bun run scripts/generate-style-thumbnail-projections.ts --check",

@@ -1,0 +1,103 @@
+// Cozy Extensions (ADR 0011): versioned declarative content packages. An extension holds data
+// files and images only, never code that Studio runs.
+
+export const EXTENSION_SCHEMA_VERSION = 1 as const;
+export const EXTENSION_MANIFEST_FILE = 'extension.json' as const;
+export const EXTENSION_KINDS = ['style-pack'] as const;
+
+export type ExtensionKind = (typeof EXTENSION_KINDS)[number];
+
+/** Compiled files of a style-pack extension, relative to its root. */
+export interface StylePackExtensionFiles {
+  pack: string;
+  runtime: string;
+  search: string;
+  thumbnails: string;
+}
+
+/** A downloadable part of an extension, such as full-size cards, verified by sha256. */
+export interface ExtensionAsset {
+  name: string;
+  optional: boolean;
+  sha256: string;
+  bytes: number;
+}
+
+export interface ExtensionManifest {
+  schemaVersion: typeof EXTENSION_SCHEMA_VERSION;
+  /** `publisher.name`, lowercase. Preset global ids are `<id>/<presetId>`. */
+  id: string;
+  kind: ExtensionKind;
+  version: string;
+  /** Compatible Studio versions, as a semver range. */
+  studio: string;
+  title: string;
+  files: StylePackExtensionFiles;
+  assets: ExtensionAsset[];
+}
+
+export type ExtensionManifestParseResult =
+  | { ok: true; manifest: ExtensionManifest }
+  | { ok: false; issues: string[] };
+
+const EXTENSION_ID_PATTERN = /^[a-z0-9][a-z0-9-]*(\.[a-z0-9][a-z0-9-]*)+$/;
+const SEMVER_PATTERN = /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/;
+const SHA256_PATTERN = /^[0-9a-f]{64}$/;
+const STYLE_PACK_FILE_KEYS = ['pack', 'runtime', 'search', 'thumbnails'] as const;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function isSafeRelativePath(value: unknown): value is string {
+  return (
+    typeof value === 'string' &&
+    value.length > 0 &&
+    !value.startsWith('/') &&
+    !value.includes('\\') &&
+    !value.split('/').includes('..')
+  );
+}
+
+export function globalStylePresetId(extensionId: string, presetId: string) {
+  return `${extensionId}/${presetId}`;
+}
+
+export function parseExtensionManifest(value: unknown): ExtensionManifestParseResult {
+  if (!isRecord(value)) return { ok: false, issues: ['extension.json must be an object'] };
+  const issues: string[] = [];
+  const { schemaVersion, id, kind, version, studio, title, files, assets = [] } = value;
+
+  if (schemaVersion !== EXTENSION_SCHEMA_VERSION) issues.push('unsupported schemaVersion');
+  if (typeof id !== 'string' || !EXTENSION_ID_PATTERN.test(id))
+    issues.push('id must be a lowercase publisher.name');
+  if (!EXTENSION_KINDS.includes(kind as ExtensionKind)) issues.push('unknown kind');
+  if (typeof version !== 'string' || !SEMVER_PATTERN.test(version))
+    issues.push('version must be semver');
+  if (typeof studio !== 'string' || studio.trim() === '') issues.push('studio range is required');
+  if (typeof title !== 'string' || title.trim() === '') issues.push('title is required');
+
+  if (!isRecord(files)) issues.push('files must be an object');
+  else
+    for (const key of STYLE_PACK_FILE_KEYS)
+      if (!isSafeRelativePath(files[key])) issues.push(`files.${key} must be a relative path`);
+
+  if (!Array.isArray(assets)) issues.push('assets must be an array');
+  else
+    assets.forEach((asset, index) => {
+      if (
+        !isRecord(asset) ||
+        typeof asset.name !== 'string' ||
+        typeof asset.optional !== 'boolean' ||
+        typeof asset.sha256 !== 'string' ||
+        !SHA256_PATTERN.test(asset.sha256) ||
+        typeof asset.bytes !== 'number' ||
+        !Number.isInteger(asset.bytes) ||
+        asset.bytes < 0
+      )
+        issues.push(`assets[${index}] needs name, optional, sha256 and bytes`);
+    });
+
+  if (issues.length > 0) return { ok: false, issues };
+  return { ok: true, manifest: value as unknown as ExtensionManifest };
+}
