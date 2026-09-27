@@ -732,7 +732,7 @@
     "validation": "A preserved outfit is unchanged; a wardrobe request changes clothing, not identity or location.",
     "evidencePresetIds": ["SP08-001", "SP08-016"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_08",
@@ -762,7 +762,7 @@
     "validation": "A modern setting stays modern when only the costume is requested.",
     "evidencePresetIds": ["SP08-011", "SP08-034"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_08",
