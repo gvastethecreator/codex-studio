@@ -12,6 +12,16 @@ export default defineConfig({
   server: {
     port: 17222,
     host: '0.0.0.0',
+    watch: {
+      // Local runtime state, logs and full-size style cards are not app source. Watching them
+      // pinned the dev server during card waves and extension builds.
+      ignored: [
+        '**/.local/**',
+        '**/.scratch/**',
+        '**/logs/**',
+        '**/assets/recipes/styles/defaults/**',
+      ],
+    },
   },
   preview: {
     port: 17222,
