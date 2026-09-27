@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP17-248
+packId: pack_17
+name: Tony DiTerlizzi - Planar Whimsical Ink Watercolor
+styleAnchors:
+  - Tony DiTerlizzi - Planar Whimsical Ink Watercolor
+  - tabletop illustration
+  - DiTerlizzi elongated whimsy
+displayName: Tony DiTerlizzi - Planar Whimsical Ink Watercolor
+category: 12. OSR Dungeon Zine Illustrators
+domain: tabletop illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - osr-dungeon-zine-illustrators
+  - osr-illustrator
+  - dungeon-zine
+  - diterlizzi
+  - reference-title
+visualDna:
+  aesthetic: 'Tony DiTerlizzi planar fantasy art: whimsical elongated characters, curling Art Nouveau lines, sepia ink with muted watercolor and strange bohemian city dwellers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as whimsical elongated characters with curling Art Nouveau lines in sepia ink and watercolor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sepia ink with muted rust and teal washes.
+  lighting_and_shadow: Soft muted watercolor light, lit the way Tony DiTerlizzi lights its scenes.
+  texture_and_material: Sepia ink line with soft washes, with the surface finish of Tony DiTerlizzi.
+  camera_and_composition: Character portrait vignette, framed the way Tony DiTerlizzi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with whimsical bohemian strangeness.
+  rendering_and_quality: Sepia ink and watercolor planar illustration, in the recognizable hand of Tony DiTerlizzi.
+  creative_brief: 'Tony DiTerlizzi planar fantasy art: whimsical elongated characters, curling Art Nouveau lines, sepia ink with muted watercolor and strange bohemian city dwellers. Carry it through DiTerlizzi elongated whimsy, sepia, Art Nouveau curls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: DiTerlizzi elongated whimsy; sepia; Art Nouveau curls
+avoidRules:
+  - Planescape characters
+  - Spiderwick characters
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: Planescape characters, Spiderwick characters, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: osr-dungeon-zine-illustrators
+  categoryName: 12. OSR Dungeon Zine Illustrators
+  domain: tabletop illustration
+  tags:
+    - curation-v2
+    - osr-dungeon-zine-illustrators
+    - osr-illustrator
+    - dungeon-zine
+    - diterlizzi
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

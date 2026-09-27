@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 240
+      "presetCount": 260
     }
   ],
   "presets": [
@@ -4690,7 +4690,447 @@
       "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-masters", "fantasy-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-240 brian froud - faerie goblin watercolor fantasy illustration froud faeries 11. dark fantasy masters dark fantasy masters fantasy illustration pack_17 medieval fantasy & dungeon zine dark-fantasy-masters medieval-fantasy-and-dungeon-zine dark-fantasy-masters fantasy-illustration"
+    },
+    {
+      "id": "SP17-241",
+      "name": "David Trampier - Clean Line Old-School Ink",
+      "styleAnchors": [
+        "David Trampier - Clean Line Old-School Ink",
+        "tabletop illustration",
+        "Trampier clean line"
+      ],
+      "ref": "pack_17/SP17-241.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-241 david trampier - clean line old-school ink tabletop illustration trampier clean line 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-242",
+      "name": "Erol Otus - Psychedelic Weird Dungeon Art",
+      "styleAnchors": [
+        "Erol Otus - Psychedelic Weird Dungeon Art",
+        "tabletop illustration",
+        "Otus weird creatures"
+      ],
+      "ref": "pack_17/SP17-242.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-242 erol otus - psychedelic weird dungeon art tabletop illustration otus weird creatures 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-243",
+      "name": "Russ Nicholson - Scratchy Grotesque Ink",
+      "styleAnchors": [
+        "Russ Nicholson - Scratchy Grotesque Ink",
+        "tabletop illustration",
+        "Nicholson scratchy ink"
+      ],
+      "ref": "pack_17/SP17-243.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-243 russ nicholson - scratchy grotesque ink tabletop illustration nicholson scratchy ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-244",
+      "name": "Jim Holloway - Humorous Adventurer Ink",
+      "styleAnchors": [
+        "Jim Holloway - Humorous Adventurer Ink",
+        "tabletop illustration",
+        "Holloway humorous adventurers"
+      ],
+      "ref": "pack_17/SP17-244.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-244 jim holloway - humorous adventurer ink tabletop illustration holloway humorous adventurers 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-245",
+      "name": "Dave Sutherland - Early Dungeon Module Ink",
+      "styleAnchors": [
+        "Dave Sutherland - Early Dungeon Module Ink",
+        "tabletop illustration",
+        "Sutherland crude earnest ink"
+      ],
+      "ref": "pack_17/SP17-245.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-245 dave sutherland - early dungeon module ink tabletop illustration sutherland crude earnest ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-246",
+      "name": "Bill Willingham - Bold Comic Dungeon Ink",
+      "styleAnchors": [
+        "Bill Willingham - Bold Comic Dungeon Ink",
+        "tabletop illustration",
+        "Willingham bold comic ink"
+      ],
+      "ref": "pack_17/SP17-246.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-246 bill willingham - bold comic dungeon ink tabletop illustration willingham bold comic ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-247",
+      "name": "Jeff Dee - Energetic Cartoon Adventure Ink",
+      "styleAnchors": [
+        "Jeff Dee - Energetic Cartoon Adventure Ink",
+        "tabletop illustration",
+        "Jeff Dee energetic ink"
+      ],
+      "ref": "pack_17/SP17-247.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-247 jeff dee - energetic cartoon adventure ink tabletop illustration jeff dee energetic ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-248",
+      "name": "Tony DiTerlizzi - Planar Whimsical Ink Watercolor",
+      "styleAnchors": [
+        "Tony DiTerlizzi - Planar Whimsical Ink Watercolor",
+        "tabletop illustration",
+        "DiTerlizzi elongated whimsy"
+      ],
+      "ref": "pack_17/SP17-248.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-248 tony diterlizzi - planar whimsical ink watercolor tabletop illustration diterlizzi elongated whimsy 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-249",
+      "name": "Jason Sholtis - Weird Humorous OSR Line",
+      "styleAnchors": [
+        "Jason Sholtis - Weird Humorous OSR Line",
+        "tabletop illustration",
+        "Sholtis weird goofy monsters"
+      ],
+      "ref": "pack_17/SP17-249.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-249 jason sholtis - weird humorous osr line tabletop illustration sholtis weird goofy monsters 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-250",
+      "name": "Stefan Poag - Retro Bold Weird Fantasy Ink",
+      "styleAnchors": [
+        "Stefan Poag - Retro Bold Weird Fantasy Ink",
+        "tabletop illustration",
+        "Poag retro bold ink"
+      ],
+      "ref": "pack_17/SP17-250.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-250 stefan poag - retro bold weird fantasy ink tabletop illustration poag retro bold ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-251",
+      "name": "Evey Lockhart - Wobbly Charming OSR Monsters",
+      "styleAnchors": [
+        "Evey Lockhart - Wobbly Charming OSR Monsters",
+        "tabletop illustration",
+        "Lockhart wobbly ink"
+      ],
+      "ref": "pack_17/SP17-251.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-251 evey lockhart - wobbly charming osr monsters tabletop illustration lockhart wobbly ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-252",
+      "name": "Luka Rejec - Ultraviolet Grasslands Weird Color",
+      "styleAnchors": [
+        "Luka Rejec - Ultraviolet Grasslands Weird Color",
+        "tabletop illustration",
+        "Rejec ultraviolet steppes"
+      ],
+      "ref": "pack_17/SP17-252.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-252 luka rejec - ultraviolet grasslands weird color tabletop illustration rejec ultraviolet steppes 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-253",
+      "name": "Kelvin Green - Comedic Grotesque OSR Ink",
+      "styleAnchors": [
+        "Kelvin Green - Comedic Grotesque OSR Ink",
+        "tabletop illustration",
+        "Kelvin Green grotesque comedy"
+      ],
+      "ref": "pack_17/SP17-253.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-253 kelvin green - comedic grotesque osr ink tabletop illustration kelvin green grotesque comedy 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-254",
+      "name": "Jez Gordon - Clean Graphic Map Illustration",
+      "styleAnchors": [
+        "Jez Gordon - Clean Graphic Map Illustration",
+        "tabletop illustration",
+        "Jez Gordon isometric maps"
+      ],
+      "ref": "pack_17/SP17-254.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-254 jez gordon - clean graphic map illustration tabletop illustration jez gordon isometric maps 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-255",
+      "name": "Scrap Princess - Chaotic Scribble Horror Art",
+      "styleAnchors": [
+        "Scrap Princess - Chaotic Scribble Horror Art",
+        "tabletop illustration",
+        "Scrap Princess scribble"
+      ],
+      "ref": "pack_17/SP17-255.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-255 scrap princess - chaotic scribble horror art tabletop illustration scrap princess scribble 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-256",
+      "name": "Johan Nohr - Mork Borg Doom Metal Layout",
+      "styleAnchors": [
+        "Johan Nohr - Mork Borg Doom Metal Layout",
+        "tabletop illustration",
+        "Mörk Borg acid yellow"
+      ],
+      "ref": "pack_17/SP17-256.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-256 johan nohr - mork borg doom metal layout tabletop illustration mörk borg acid yellow 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-257",
+      "name": "Peter Mullen - Funnel Cosmic Horror Ink",
+      "styleAnchors": [
+        "Peter Mullen - Funnel Cosmic Horror Ink",
+        "tabletop illustration",
+        "Mullen dense ink"
+      ],
+      "ref": "pack_17/SP17-257.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-257 peter mullen - funnel cosmic horror ink tabletop illustration mullen dense ink 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-258",
+      "name": "Doug Kovacs - Expressive Funnel Dungeon Crowd",
+      "styleAnchors": [
+        "Doug Kovacs - Expressive Funnel Dungeon Crowd",
+        "tabletop illustration",
+        "Kovacs peasant crowds"
+      ],
+      "ref": "pack_17/SP17-258.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-258 doug kovacs - expressive funnel dungeon crowd tabletop illustration kovacs peasant crowds 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-259",
+      "name": "Alex Mayo - Surreal Dreamlike OSR Illustration",
+      "styleAnchors": [
+        "Alex Mayo - Surreal Dreamlike OSR Illustration",
+        "tabletop illustration",
+        "Alex Mayo surreal hybrids"
+      ],
+      "ref": "pack_17/SP17-259.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-259 alex mayo - surreal dreamlike osr illustration tabletop illustration alex mayo surreal hybrids 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
+    },
+    {
+      "id": "SP17-260",
+      "name": "Kevin Siembieda - Palladium Dense Hatched Ink",
+      "styleAnchors": [
+        "Kevin Siembieda - Palladium Dense Hatched Ink",
+        "tabletop illustration",
+        "Siembieda dense hatching"
+      ],
+      "ref": "pack_17/SP17-260.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "osr-dungeon-zine-illustrators",
+      "categoryName": "12. OSR Dungeon Zine Illustrators",
+      "domain": "tabletop illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "osr-dungeon-zine-illustrators",
+        "tabletop-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-260 kevin siembieda - palladium dense hatched ink tabletop illustration siembieda dense hatching 12. osr dungeon zine illustrators osr dungeon zine illustrators tabletop illustration pack_17 medieval fantasy & dungeon zine osr-dungeon-zine-illustrators medieval-fantasy-and-dungeon-zine osr-dungeon-zine-illustrators tabletop-illustration"
     }
   ],
-  "totalPresetCount": 240
+  "totalPresetCount": 260
 }

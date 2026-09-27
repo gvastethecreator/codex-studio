@@ -124,6 +124,7 @@ const CATEGORY_DISPLAY_NAMES: Readonly<Record<string, string>> = {
   'pack_17::9. Gothic & Dungeon Art Directions': 'Gothic & dungeon art',
   'pack_17::10. Graphic & Feudal Art Directions': 'Graphic & feudal art',
   'pack_17::11. Dark Fantasy Masters': 'Dark fantasy masters',
+  'pack_17::12. OSR Dungeon Zine Illustrators': 'OSR dungeon zine illustrators',
   'pack_12::9. Gothic & Dungeon Gameplay': 'Gothic & dungeon gameplay',
   'pack_12::10. Graphic & Feudal Gameplay': 'Graphic & feudal gameplay',
   'pack_12::11. Psychological & Tactical Gameplay': 'Psychological & tactical gameplay',

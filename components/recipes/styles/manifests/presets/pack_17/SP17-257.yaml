@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP17-257
+packId: pack_17
+name: Peter Mullen - Funnel Cosmic Horror Ink
+styleAnchors:
+  - Peter Mullen - Funnel Cosmic Horror Ink
+  - tabletop illustration
+  - Mullen dense ink
+displayName: Peter Mullen - Funnel Cosmic Horror Ink
+category: 12. OSR Dungeon Zine Illustrators
+domain: tabletop illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - osr-dungeon-zine-illustrators
+  - osr-illustrator
+  - dungeon-zine
+  - mullen
+  - reference-title
+visualDna:
+  aesthetic: 'Peter Mullen Dungeon Crawl Classics art: dense cosmic horror ink, elaborate crowded monsters, sword-and-sorcery pulp, heavy black textures and occasional vivid color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in dense crowded cosmic horror ink with heavy black textures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dense black ink with occasional vivid color, true to the Peter Mullen palette.
+  lighting_and_shadow: Cosmic ominous glow, lit the way Peter Mullen lights its scenes.
+  texture_and_material: Dense detailed ink textures, with the surface finish of Peter Mullen.
+  camera_and_composition: Crowded pulp composition, framed the way Peter Mullen composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dense pulp cosmic horror.
+  rendering_and_quality: Dense cosmic horror ink illustration, in the recognizable hand of Peter Mullen.
+  creative_brief: 'Peter Mullen Dungeon Crawl Classics art: dense cosmic horror ink, elaborate crowded monsters, sword-and-sorcery pulp, heavy black textures and occasional vivid color. Carry it through Mullen dense ink, cosmic horror, pulp swords. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Mullen dense ink; cosmic horror; pulp swords
+avoidRules:
+  - the Dungeon Crawl Classics logo
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the Dungeon Crawl Classics logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: osr-dungeon-zine-illustrators
+  categoryName: 12. OSR Dungeon Zine Illustrators
+  domain: tabletop illustration
+  tags:
+    - curation-v2
+    - osr-dungeon-zine-illustrators
+    - osr-illustrator
+    - dungeon-zine
+    - mullen
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

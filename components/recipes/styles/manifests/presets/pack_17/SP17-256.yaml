@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP17-256
+packId: pack_17
+name: Johan Nohr - Mork Borg Doom Metal Layout
+styleAnchors:
+  - Johan Nohr - Mork Borg Doom Metal Layout
+  - tabletop illustration
+  - Mörk Borg acid yellow
+displayName: Johan Nohr - Mork Borg Doom Metal Layout
+category: 12. OSR Dungeon Zine Illustrators
+domain: tabletop illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - osr-dungeon-zine-illustrators
+  - osr-illustrator
+  - dungeon-zine
+  - nohr
+  - reference-title
+visualDna:
+  aesthetic: 'Johan Nohr Mörk Borg layout: acid yellow, black and hot pink doom metal design, brutal distressed type as shapes, skulls, harsh halftone and apocalyptic art-punk energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a brutal doom-metal page of harsh halftone in acid yellow, black and hot pink. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Acid yellow, black and hot pink only, true to the Johan Nohr palette.
+  lighting_and_shadow: Harsh flat print contrast, lit the way Johan Nohr lights its scenes.
+  texture_and_material: Distressed halftone and grunge print, with the surface finish of Johan Nohr.
+  camera_and_composition: Aggressive page layout composition, framed the way Johan Nohr composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with apocalyptic art-punk aggression.
+  rendering_and_quality: Brutal doom metal zine page design, in the recognizable hand of Johan Nohr.
+  creative_brief: 'Johan Nohr Mörk Borg layout: acid yellow, black and hot pink doom metal design, brutal distressed type as shapes, skulls, harsh halftone and apocalyptic art-punk energy. Carry it through Mörk Borg acid yellow, doom metal, halftone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Mörk Borg acid yellow; doom metal; halftone
+avoidRules:
+  - the real Mörk Borg logo
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the real Mörk Borg logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: osr-dungeon-zine-illustrators
+  categoryName: 12. OSR Dungeon Zine Illustrators
+  domain: tabletop illustration
+  tags:
+    - curation-v2
+    - osr-dungeon-zine-illustrators
+    - osr-illustrator
+    - dungeon-zine
+    - nohr
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

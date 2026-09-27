@@ -282,6 +282,29 @@ categories:
       - pack_17/SP17-238.yaml
       - pack_17/SP17-239.yaml
       - pack_17/SP17-240.yaml
+  - id: osr-dungeon-zine-illustrators
+    name: 12. OSR Dungeon Zine Illustrators
+    presetRefs:
+      - pack_17/SP17-241.yaml
+      - pack_17/SP17-242.yaml
+      - pack_17/SP17-243.yaml
+      - pack_17/SP17-244.yaml
+      - pack_17/SP17-245.yaml
+      - pack_17/SP17-246.yaml
+      - pack_17/SP17-247.yaml
+      - pack_17/SP17-248.yaml
+      - pack_17/SP17-249.yaml
+      - pack_17/SP17-250.yaml
+      - pack_17/SP17-251.yaml
+      - pack_17/SP17-252.yaml
+      - pack_17/SP17-253.yaml
+      - pack_17/SP17-254.yaml
+      - pack_17/SP17-255.yaml
+      - pack_17/SP17-256.yaml
+      - pack_17/SP17-257.yaml
+      - pack_17/SP17-258.yaml
+      - pack_17/SP17-259.yaml
+      - pack_17/SP17-260.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-073.yaml
@@ -523,3 +546,23 @@ presetRefs:
   - pack_17/SP17-238.yaml
   - pack_17/SP17-239.yaml
   - pack_17/SP17-240.yaml
+  - pack_17/SP17-241.yaml
+  - pack_17/SP17-242.yaml
+  - pack_17/SP17-243.yaml
+  - pack_17/SP17-244.yaml
+  - pack_17/SP17-245.yaml
+  - pack_17/SP17-246.yaml
+  - pack_17/SP17-247.yaml
+  - pack_17/SP17-248.yaml
+  - pack_17/SP17-249.yaml
+  - pack_17/SP17-250.yaml
+  - pack_17/SP17-251.yaml
+  - pack_17/SP17-252.yaml
+  - pack_17/SP17-253.yaml
+  - pack_17/SP17-254.yaml
+  - pack_17/SP17-255.yaml
+  - pack_17/SP17-256.yaml
+  - pack_17/SP17-257.yaml
+  - pack_17/SP17-258.yaml
+  - pack_17/SP17-259.yaml
+  - pack_17/SP17-260.yaml

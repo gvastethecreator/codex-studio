@@ -2983,5 +2983,20 @@
     "evidencePresetIds": ["SP17-221", "SP17-222", "SP17-223"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_17",
+    "category": "12. OSR Dungeon Zine Illustrators",
+    "displayCategory": "OSR dungeon zine illustrators",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "462f56b062469da9572c9130b7b02979568a99b515d5aa55e66f882e1e22b060",
+    "problem": "Old-school and indie tabletop illustrator styles must reproduce each named artist's ink, layout and zine grammar without copying published book art or licensed characters.",
+    "preserve": "The requested subject stays the subject, drawn in that artist's manner; cards stage original monsters and adventurers.",
+    "proposedAction": "New category of 20 tabletop illustrators from seventies and eighties role-playing books (Trampier, Otus, Nicholson, Holloway, Sutherland, Willingham, Jeff Dee, DiTerlizzi, Siembieda) to the OSR and indie zine scene (Sholtis, Poag, Lockhart, Rejec, Kelvin Green, Jez Gordon, Scrap Princess, Johan Nohr, Mullen, Kovacs, Alex Mayo).",
+    "validation": "Generate the card set; check each card reads as the illustrator's ink or zine manner with no copied art.",
+    "evidencePresetIds": ["SP17-241", "SP17-242", "SP17-243"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP17-249
+packId: pack_17
+name: Jason Sholtis - Weird Humorous OSR Line
+styleAnchors:
+  - Jason Sholtis - Weird Humorous OSR Line
+  - tabletop illustration
+  - Sholtis weird goofy monsters
+displayName: Jason Sholtis - Weird Humorous OSR Line
+category: 12. OSR Dungeon Zine Illustrators
+domain: tabletop illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - osr-dungeon-zine-illustrators
+  - osr-illustrator
+  - dungeon-zine
+  - sholtis
+  - reference-title
+visualDna:
+  aesthetic: 'Jason Sholtis OSR illustration: weird humorous line art, bizarre goofy monsters, deadpan adventurers and underground mythic-underworld strangeness in crisp black ink.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as weird goofy monsters and deadpan adventurers in crisp black ink. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crisp black ink on white, true to the Jason Sholtis palette.
+  lighting_and_shadow: Flat clear line light, lit the way Jason Sholtis lights its scenes.
+  texture_and_material: Black ink on cheap paper with photocopy grain and slight bleed.
+  camera_and_composition: Weird deadpan vignette, framed the way Jason Sholtis composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with weird deadpan humor.
+  rendering_and_quality: Weird humorous OSR ink illustration, in the recognizable hand of Jason Sholtis.
+  creative_brief: 'Jason Sholtis OSR illustration: weird humorous line art, bizarre goofy monsters, deadpan adventurers and underground mythic-underworld strangeness in crisp black ink. Carry it through Sholtis weird goofy monsters, deadpan, crisp ink. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Sholtis weird goofy monsters; deadpan; crisp ink
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: osr-dungeon-zine-illustrators
+  categoryName: 12. OSR Dungeon Zine Illustrators
+  domain: tabletop illustration
+  tags:
+    - curation-v2
+    - osr-dungeon-zine-illustrators
+    - osr-illustrator
+    - dungeon-zine
+    - sholtis
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
