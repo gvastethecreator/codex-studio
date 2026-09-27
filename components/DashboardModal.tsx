@@ -1,3 +1,4 @@
+import { MotionDiv } from '../lib/gsapMotion';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import {
@@ -27,7 +28,12 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-0 backdrop-blur-sm sm:p-4">
+    <MotionDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-100 flex items-center justify-center studio-scrim p-0 sm:p-4"
+    >
       <div
         ref={dialogRef}
         role="dialog"
@@ -118,6 +124,6 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 };

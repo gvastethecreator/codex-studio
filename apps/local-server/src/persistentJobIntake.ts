@@ -64,7 +64,7 @@ export interface PersistentJobIntakeDependencies {
     libraryContext?: JobLibraryContext,
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
-  readLibraryContext?: () => JobLibraryContext;
+  readLibraryContext?: (workspaceId?: string) => JobLibraryContext;
   readEditableSettings?: () => EditableStudioSettings;
   resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
   readCodexTransportAvailability?: () => Partial<Record<CodexExecutionTransport, boolean>>;
@@ -235,7 +235,7 @@ export function createPersistentJobIntake({
     }
 
     let finalPrompt = prompt;
-    const libraryContext = readLibraryContext?.() ?? {
+    const libraryContext = readLibraryContext?.(workspaceId) ?? {
       libraryId: 'legacy-default',
       rootPath: readLibraryDir(),
     };
@@ -304,6 +304,19 @@ export function createPersistentJobIntake({
           ? CODEX_HTTP_EXECUTION_DEFAULTS
           : resolveBootstrapExecution(providerId),
     });
+    if (sourceSpec?.output.background === 'transparent' && providerId !== 'chatgpt') {
+      return {
+        ok: false,
+        error: {
+          status: 400,
+          body: {
+            error:
+              'Native transparent output requires a supported GPT Image model through the ChatGPT HTTP provider.',
+            code: 'transparent_background_unavailable',
+          },
+        },
+      };
+    }
     if (providerId === 'codex' || providerId === 'chatgpt') {
       const transport = providerId === 'chatgpt' ? 'subscription_http' : 'codex_app_server';
       if (

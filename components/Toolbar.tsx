@@ -1,3 +1,4 @@
+import { CozyLoader as Loader2, CozyLoader } from './CozyMascot';
 import { AnimatePresence } from '../lib/gsapMotion';
 import {
   getGenerationRequirement,
@@ -16,7 +17,6 @@ import {
   IconHash as Hash,
   IconPhotoPlus as ImagePlus,
   IconStack as Layers,
-  IconLoader2 as Loader2,
   IconMaximize as Maximize,
   IconDeviceDesktop as Monitor,
   IconDots as MoreHorizontal,
@@ -59,6 +59,7 @@ import type {
   CodexHttpImageSizeTier,
 } from '../packages/shared/src/codexExecutionContract';
 import type { AspectRatio, Attachment, ImageGenerationConfig } from '../types';
+import { OutputBackgroundControl } from './create/OutputBackgroundControl';
 import {
   getRatioOrientation,
   getRatioShapeStyle,
@@ -776,6 +777,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       </div>
                     </div>
                   </section>
+                  <OutputBackgroundControl
+                    config={{ ...generationConfig, recipeId: activeRecipe }}
+                    providerId={activeProviderId}
+                    transport={selectedCodexTransport}
+                    onChange={(value) => updateConfig('outputBackground', value)}
+                  />
                   <p className="create-tool-hint">
                     Add references here. Use the selected task action above to continue.
                   </p>
@@ -849,11 +856,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 aria-label="Apply edit instructions"
                                 className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                               >
-                                {isRefactoring ? (
-                                  <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
-                                ) : (
-                                  <Send size={12} />
-                                )}
+                                {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
                               </button>
                             </div>
                           </DemandMountedGsapDropdown>
@@ -866,11 +869,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             aria-label="Enhance prompt"
                             className={`create-icon-button ${isEnhancingPrompt ? 'is-active' : ''}`}
                           >
-                            {isEnhancingPrompt ? (
-                              <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
-                            ) : (
-                              <Wand2 size={16} />
-                            )}
+                            {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={16} />}
                           </button>
                         </Tooltip>
                         <Tooltip content="Expand editor">
@@ -925,6 +924,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </section>
 
                   {sourceFirst ? railTools : null}
+                  <OutputBackgroundControl
+                    config={{ ...generationConfig, recipeId: activeRecipe }}
+                    providerId={activeProviderId}
+                    transport={selectedCodexTransport}
+                    onChange={(value) => updateConfig('outputBackground', value)}
+                  />
                   <div
                     className="create-output-grid"
                     data-has-size={showSizeControl ? 'true' : undefined}
@@ -1380,11 +1385,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               aria-label="Apply edit instructions"
                               className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                             >
-                              {isRefactoring ? (
-                                <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                              ) : (
-                                <Send size={12} />
-                              )}
+                              {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
                             </button>
                           </div>
                         </DemandMountedGsapDropdown>
@@ -1399,11 +1400,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           aria-label="Enhance prompt"
                           className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
                         >
-                          {isEnhancingPrompt ? (
-                            <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
-                          ) : (
-                            <Wand2 size={15} />
-                          )}
+                          {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={15} />}
                         </button>
                       </Tooltip>
                     </>
@@ -1525,11 +1522,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         aria-label="Apply edit instructions"
                         className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
                       >
-                        {isRefactoring ? (
-                          <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
-                        ) : (
-                          <Send size={12} />
-                        )}
+                        {isRefactoring ? <CozyLoader size={18} /> : <Send size={12} />}
                       </button>
                     </div>
                   </div>
@@ -1541,11 +1534,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       aria-label="Enhance prompt"
                       className="flex h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-[length:var(--wbp-label)] font-semibold leading-none tracking-normal text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
                     >
-                      {isEnhancingPrompt ? (
-                        <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
-                      ) : (
-                        <Wand2 size={14} />
-                      )}
+                      {isEnhancingPrompt ? <CozyLoader size={18} /> : <Wand2 size={14} />}
                       Enhance
                     </button>
                   </div>
@@ -1553,6 +1542,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               ) : null}
 
               <div className="grid grid-cols-2 gap-2 sm:contents">
+                {!isRail && (
+                  <OutputBackgroundControl
+                    config={{ ...generationConfig, recipeId: activeRecipe }}
+                    providerId={activeProviderId}
+                    transport={selectedCodexTransport}
+                    onChange={(value) => updateConfig('outputBackground', value)}
+                  />
+                )}
                 {isRail || isContextOnly ? null : (
                   <div className="relative min-w-0">
                     <button

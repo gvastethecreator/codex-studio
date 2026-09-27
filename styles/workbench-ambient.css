@@ -310,9 +310,7 @@ Full text: third-party/ambientcss/LICENSE
       .create-format-popover,
       .create-workflow-popover,
       .studio-dialog,
-      .studio-field,
       .studio-list-row,
-      .studio-ghost-control,
       .studio-primary-control,
       .wbp-dial-face,
       .wbp-thumb,
@@ -378,14 +376,7 @@ Full text: third-party/ambientcss/LICENSE
       --amb-thickness: 0.25;
       color: var(--wb-on-fill, #f4f4f4);
     }
-    :is(
-      .create-composer,
-      .create-negative-input,
-      .studio-well,
-      .studio-field,
-      .studio-list-row,
-      .wb-input
-    ) {
+    :is(.create-composer, .create-negative-input, .studio-well, .studio-list-row, .wb-input) {
       --amb-albedo: var(--wba-well-albedo);
       --amb-thickness: 0.32;
       --amb-chamfer: 0;

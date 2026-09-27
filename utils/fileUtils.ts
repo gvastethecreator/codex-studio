@@ -11,7 +11,7 @@ export const downloadImage = (src: string, filename: string) => {
 };
 
 /**
- * Generates a professional filename: ###-prompt-short-max-6-words-model-resolution.jpeg
+ * Generates a professional filename: ###-prompt-short-max-6-words-model-resolution with the original image extension.
  */
 export const generateSmartFilename = (
   prompt: string | undefined,
@@ -19,6 +19,7 @@ export const generateSmartFilename = (
   model: string = 'unknown-model',
   resolution: string = 'unknown-res',
   index?: number,
+  mimeType = 'image/png',
 ) => {
   // 1. Index: ### (e.g. 001, 002) or short ID
   const idxStr =
@@ -43,7 +44,18 @@ export const generateSmartFilename = (
   const safeModel = model.replace(/[^a-zA-Z0-9-]/g, '-');
   const safeResolution = resolution.replace(/[^a-zA-Z0-9-:]/g, '-');
 
-  return `${idxStr}-${slug}-${safeModel}-${safeResolution}.jpeg`;
+  const extension =
+    (
+      {
+        'image/png': 'png',
+        'image/jpeg': 'jpg',
+        'image/webp': 'webp',
+        'image/gif': 'gif',
+        'image/avif': 'avif',
+        'image/svg+xml': 'svg',
+      } as Record<string, string>
+    )[mimeType] ?? 'png';
+  return `${idxStr}-${slug}-${safeModel}-${safeResolution}.${extension}`;
 };
 
 export const downloadMultipleImagesAsZip = async (
@@ -66,6 +78,7 @@ export const downloadMultipleImagesAsZip = async (
           img.config.model,
           img.config.aspectRatio,
           index + 1,
+          blob.type || img.mimeType,
         );
         zip.file(filename, blob);
       } catch (err) {

@@ -3,13 +3,18 @@ import {
   type RecipeCatalogDisplayEntry,
   type RecipeCatalogSearchFilters,
 } from './recipeCatalog';
+import { WORKFLOW_CATEGORIES, getWorkflowCategory } from '../packages/shared/src/workflowCatalog';
 
 export interface RecipeDiscoveryProjection {
   entries: RecipeCatalogDisplayEntry[];
 }
 
-function isRecipesGridEntry(entry: RecipeCatalogDisplayEntry) {
-  return !entry.isAlias;
+export function groupRecipeDiscoveryEntries(entries: RecipeCatalogDisplayEntry[]) {
+  return WORKFLOW_CATEGORIES.map((category) => ({
+    id: category.id,
+    label: category.label,
+    entries: category.workflows.flatMap((id) => entries.filter((entry) => entry.id === id)),
+  })).filter((group) => group.entries.length > 0);
 }
 
 function normalize(value?: string) {
@@ -34,6 +39,7 @@ function recipeMatchesFilters(
   if (!query) return true;
 
   const searchableText = [
+    getWorkflowCategory(entry.id)?.label ?? '',
     entry.id,
     entry.targetRecipeId,
     entry.routeAliasId ?? '',
@@ -61,7 +67,7 @@ export function createRecipeDiscoveryProjection(
 export function createRecipesGridProjection(
   entries: RecipeCatalogDisplayEntry[] = RECIPE_DISCOVERY_CATALOG,
 ): RecipeDiscoveryProjection {
-  return { entries: entries.filter(isRecipesGridEntry) };
+  return { entries };
 }
 
 export function searchRecipeDiscoveryProjection(

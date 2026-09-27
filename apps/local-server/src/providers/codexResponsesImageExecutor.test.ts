@@ -76,7 +76,12 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
         ...CODEX_HTTP_EXECUTION_DEFAULTS,
         providerOptions: {
           chatgpt: {
-            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1536x864', quality: 'medium' },
+            image: {
+              model: CODEX_HTTP_IMAGE_MODEL,
+              size: '1536x864',
+              quality: 'medium',
+              background: 'transparent',
+            },
           },
         },
       },
@@ -86,7 +91,7 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
         providerId: 'chatgpt',
         prompt: 'stone keep',
         assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/studio-library/ref.png' }],
-        output: { aspectRatio: '16:9', imageSize: '1536x864' },
+        output: { aspectRatio: '16:9', imageSize: '1536x864', background: 'transparent' },
       }),
     });
     expect(result.assets).toHaveLength(1);
@@ -109,6 +114,7 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
           model: CODEX_HTTP_IMAGE_MODEL,
           size: '1536x864',
           quality: 'medium',
+          background: 'transparent',
         },
       ],
     });
@@ -490,5 +496,169 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
       }),
     ).rejects.toMatchObject({ code: 'execution_uncertain' });
     expect(fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it('keeps one POST and records quota evidence without inventing a reset', async () => {
+    const fetch = vi.fn(
+      async () =>
+        new Response(
+          JSON.stringify({
+            error: {
+              code: 'usage_limit_reached',
+              message: 'The usage limit has been reached PRIVATE_PROMPT_SENTINEL',
+              resets_at: 'not-a-reset',
+            },
+            unrelated: { resets_at: '2026-09-26T01:00:00.000Z' },
+          }),
+          {
+            status: 429,
+            headers: {
+              'Retry-After': '30',
+              Authorization: 'Bearer PRIVATE_AUTH_SENTINEL',
+            },
+          },
+        ),
+    );
+    const executor = createChatgptResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch,
+      now: () => Date.parse('2026-09-25T22:00:00.000Z'),
+    });
+    const error = await executor({
+      id: 'job-quota',
+      providerId: 'chatgpt',
+      workspaceId: 'workspace-1',
+      prompt: 'stone keep',
+      checkpointRemoteExecution: vi.fn(),
+      execution: {
+        ...CODEX_HTTP_EXECUTION_DEFAULTS,
+        providerOptions: {
+          chatgpt: {
+            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+          },
+        },
+      },
+    }).catch((caught: unknown) => caught);
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(error).toMatchObject({
+      code: 'source_limit',
+      fallbackAllowed: false,
+      httpStatus: 429,
+      retryAfterSeconds: 30,
+      diagnostic: {
+        provider: 'chatgpt',
+        transport: 'subscription_http',
+        channel: 'http_json',
+        httpStatus: 429,
+        classification: {
+          category: 'source_limit',
+          basis: 'structured_code',
+          providerCode: 'usage_limit_reached',
+        },
+        retryAfter: { status: 'parsed', seconds: 30 },
+        reset: { status: 'unknown', atUtc: null, appliesTo: 'unknown', recoveryGuaranteed: false },
+        policy: { automaticRetry: false, automaticFallback: false },
+      },
+    });
+    expect(JSON.stringify((error as SubscriptionHttpError).diagnostic)).not.toContain('PRIVATE_');
+    expect((error as SubscriptionHttpError).diagnostic?.warnings).toEqual(
+      expect.arrayContaining(['retry_after_is_not_quota_reset', 'invalid_reset_candidate']),
+    );
+  });
+
+  it('keeps SSE transport status 200 separate from the classified HTTP status', async () => {
+    const executor = createChatgptResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch: async () =>
+        new Response(
+          [
+            'event: response.failed',
+            `data: ${JSON.stringify({
+              type: 'response.failed',
+              response: {
+                status: 'failed',
+                error: { message: 'The usage limit has been reached' },
+              },
+            })}`,
+            '',
+          ].join('\n'),
+          { status: 200, headers: { 'content-type': 'text/event-stream' } },
+        ),
+      now: () => Date.parse('2026-09-25T22:00:00.000Z'),
+    });
+    await expect(
+      executor({
+        id: 'job-sse-quota',
+        providerId: 'chatgpt',
+        workspaceId: 'workspace-1',
+        prompt: 'stone keep',
+        checkpointRemoteExecution: vi.fn(),
+        execution: {
+          ...CODEX_HTTP_EXECUTION_DEFAULTS,
+          providerOptions: {
+            chatgpt: {
+              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+            },
+          },
+        },
+      }),
+    ).rejects.toMatchObject({
+      code: 'source_limit',
+      httpStatus: null,
+      fallbackAllowed: false,
+      diagnostic: {
+        httpStatus: 200,
+        channel: 'sse_event',
+        classification: { category: 'source_limit', terminalSseFailure: true, confidence: 'low' },
+        reset: { atUtc: null },
+      },
+    });
+  });
+
+  it('preserves a 503 diagnostic on the uncertain cause without a second POST', async () => {
+    const fetch = vi.fn(
+      async () =>
+        new Response(
+          JSON.stringify({ error: { code: 'server_error', message: 'PRIVATE_PROMPT_SENTINEL' } }),
+          {
+            status: 503,
+          },
+        ),
+    );
+    const executor = createChatgptResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch,
+      now: () => Date.parse('2026-09-25T22:00:00.000Z'),
+    });
+    const error = await executor({
+      id: 'job-503',
+      providerId: 'chatgpt',
+      workspaceId: 'workspace-1',
+      prompt: 'stone keep',
+      checkpointRemoteExecution: vi.fn(),
+      execution: {
+        ...CODEX_HTTP_EXECUTION_DEFAULTS,
+        providerOptions: {
+          chatgpt: {
+            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+          },
+        },
+      },
+    }).catch((caught: unknown) => caught);
+    expect(fetch).toHaveBeenCalledTimes(1);
+    expect(error).toMatchObject({
+      code: 'execution_uncertain',
+      cause: {
+        code: 'http_error',
+        fallbackAllowed: false,
+        diagnostic: {
+          httpStatus: 503,
+          policy: { preserveNeedsReview: true, automaticRetry: false, automaticFallback: false },
+        },
+      },
+    });
+    expect(
+      JSON.stringify((error as { cause?: SubscriptionHttpError }).cause?.diagnostic),
+    ).not.toContain('PRIVATE_PROMPT_SENTINEL');
   });
 });

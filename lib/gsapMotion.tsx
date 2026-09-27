@@ -1,3 +1,4 @@
+import { prefersReducedMotion } from '../lib/motionPreference';
 import React, {
   createContext,
   use,
@@ -252,7 +253,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
         if (isCancelled || !element || !animateState) return;
 
         const runAnimation = () => {
-          const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+          const reduce = prefersReducedMotion();
           const shouldSkipInitial =
             reduce || (!hasAnimatedRef.current && presenceConfig.initial === false);
           const startValues = shouldSkipInitial
@@ -271,8 +272,8 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
               duration: reduce
                 ? 0
                 : presenceConfig.present === false
-                  ? 0.12
-                  : Math.min(mergedTransition.duration, 0.25),
+                  ? 0.1
+                  : Math.min(mergedTransition.duration, 0.16),
               delay: reduce ? 0 : mergedTransition.delay,
               ease: mergedTransition.ease,
               overwrite: 'auto',
@@ -339,7 +340,7 @@ function PresenceItem({
   const finish = useEffectEvent(onExit);
   useEffect(() => {
     if (present) return;
-    const duration = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 0 : 120;
+    const duration = prefersReducedMotion() ? 0 : 100;
     const timer = window.setTimeout(finish, duration);
     return () => window.clearTimeout(timer);
   }, [present]);

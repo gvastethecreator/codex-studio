@@ -1,4 +1,9 @@
+import { buildGenerationBackgroundInstruction } from '../packages/shared/src/generationContracts';
 import type { CharacterLabAction } from './characterLabCatalog.generated';
+import {
+  CHARACTER_LAB_ACTION_PRIORITY,
+  resolveCharacterLabControls,
+} from './characterLabWorkflows';
 
 export interface CharacterLabPromptOptions {
   subject: string;
@@ -10,6 +15,8 @@ export interface CharacterLabPromptOptions {
   labAspectRatio: string;
   referencesCount: number;
   hasSource: boolean;
+  additionalPrompt?: string;
+  outputBackground?: 'workflow' | 'transparent';
 }
 
 function line(label: string, value: string | number | boolean) {
@@ -48,6 +55,16 @@ export function buildCharacterLabPrompt(
   action: CharacterLabAction,
   options: CharacterLabPromptOptions,
 ) {
+  const controls = resolveCharacterLabControls({
+    ...options,
+    backgroundColor:
+      options.outputBackground === 'transparent' || options.hasSource
+        ? ''
+        : options.backgroundColor,
+    mode: action.mode,
+    category: action.category,
+    actionId: action.id,
+  });
   const sourceMode = options.hasSource ? 'source-image guided' : 'prompt guided';
   const referenceLine =
     options.referencesCount > 0
@@ -65,20 +82,32 @@ export function buildCharacterLabPrompt(
     '',
     'Character identity contract:',
     options.hasSource
-      ? 'Treat the first image as the primary identity source. Preserve facial structure, body proportions, costume silhouette, distinctive colors, and recognizable accessories.'
+      ? 'Treat the first image as the primary identity source. Preserve the recognizable identity; the selected action may change body proportions, costume, or surroundings.'
       : 'Create one cohesive original character from the subject description and keep all generated details internally consistent.',
     referenceLine,
     'Do not add text, captions, watermarks, UI chrome, labels, or unrelated extra characters unless the selected action explicitly asks for them.',
     '',
     'Global character options:',
     line('Subject', options.subject || 'Use the composer prompt as the subject'),
-    line('Style', options.style),
-    line('Clothing', options.clothing),
-    line('Body type', options.bodyType),
-    line('Expression', options.expression),
-    line('Background color', options.backgroundColor),
+    ...Object.entries({
+      Style: controls.style,
+      Clothing: controls.clothing,
+      'Body type': controls.bodyType,
+      Expression: controls.expression,
+      'Background color': controls.backgroundColor,
+    })
+      .filter(([, value]) => value)
+      .map(([label, value]) => line(label, value)),
     '',
     'Selected action instructions:',
     getModeInstruction(action),
+    buildGenerationBackgroundInstruction(
+      options.outputBackground === 'transparent' ? 'transparent' : 'auto',
+      options.hasSource,
+    ),
+    CHARACTER_LAB_ACTION_PRIORITY,
+    ...(options.additionalPrompt?.trim()
+      ? ['', 'Additional instructions:', options.additionalPrompt.trim()]
+      : []),
   ].join('\n');
 }

@@ -15,7 +15,7 @@ The workflow is a local-first run folder:
 - `prompts/frame-XXXX.txt` stores each frame handoff prompt
 - `raw/` stores accepted source images copied from the Catalog or managed local paths
 - `frames/` stores normalized PNG frames at the contract dimensions
-- `exports/animation.gif` is the minimum export
+- the captured output GIF path is the minimum export
 - `qa/report.json` records frame and export readiness
 
 Frame generation uses existing provider-independent tasks:
@@ -32,6 +32,8 @@ The React recipe surface owns parameter collection, run selection, status displa
 - An Animation Sequence Run Coordinator outside React dispatches Persistent Jobs, records transitions, and reconciles Catalog Entries after refresh.
 - Backend run-folder records remain private persistence data. Browser routes return an Animation Sequence Run View without filesystem paths.
 - Recipe identity and shared display facts derive from the Recipe Module Catalog. The route adapter retains explicit lazy imports.
+
+New run internals live in `.studio/state/animation-sequence/<runId>`. Final GIF exports use the registered output directory and layout captured at run creation. Older runs retain their stored paths. `preserve` keeps source alpha, `transparent` requests native alpha, and `solid` applies the chosen matte. PNG frames preserve partial alpha. GIF transparency uses a threshold of 128 and disposal to background for each full frame, preventing trails. An opaque result requested as transparent stays available with a warning.
 
 ## Consequences
 

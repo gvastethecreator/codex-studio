@@ -15,7 +15,12 @@ export interface CodexExecutionPolicy {
   transport: CodexExecutionTransport;
   /** Request-time image choice; the captured policy also records it in image.model. */
   imageModel?: CodexHttpImageModel;
-  image?: { model: CodexHttpImageModel; size: string; quality: 'medium' };
+  image?: {
+    model: CodexHttpImageModel;
+    size: string;
+    quality: 'medium';
+    background?: GenerationTaskSpec['output']['background'];
+  };
 }
 
 // Studio's subscription adapter has one chat model contract. Public API model
@@ -175,7 +180,9 @@ export function listCodexHttpImageSizeOptions(aspectRatio: string): CodexHttpIma
   return CODEX_HTTP_IMAGE_SIZE_TIERS.map((tier) => describeCodexHttpImageSize(aspectRatio, tier));
 }
 
-type CodexImageOutput = Partial<Pick<GenerationTaskSpec['output'], 'imageSize' | 'aspectRatio'>>;
+type CodexImageOutput = Partial<
+  Pick<GenerationTaskSpec['output'], 'imageSize' | 'aspectRatio' | 'background'>
+>;
 export function resolveCodexHttpImageSize(output?: CodexImageOutput | null): string {
   const aspect = output?.aspectRatio?.trim() || '1:1';
   const requested = output?.imageSize?.trim();
@@ -251,6 +258,7 @@ export function resolveCodexExecutionPolicy(
       model: requestedImageModel ?? CODEX_HTTP_IMAGE_MODEL,
       size: resolveCodexHttpImageSize(sourceSpec?.output),
       quality: CODEX_HTTP_IMAGE_QUALITY,
+      background: sourceSpec?.output.background ?? 'opaque',
     },
   };
 }

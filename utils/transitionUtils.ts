@@ -1,3 +1,4 @@
+import { prefersReducedMotion } from '../lib/motionPreference';
 // react-doctor-disable-next-line react-doctor/no-flush-sync
 import { flushSync } from 'react-dom';
 
@@ -16,6 +17,7 @@ export const startViewTransition = (
   options: StartViewTransitionOptions = {},
 ) => {
   if (
+    prefersReducedMotion() ||
     !options.useNative ||
     isGlobalTransitioning ||
     !document.startViewTransition ||

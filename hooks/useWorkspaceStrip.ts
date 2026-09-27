@@ -24,6 +24,7 @@ interface UseWorkspaceStripProps {
   clearWorkspace?: RunWorkspaceDeleteLifecycleArgs['clearWorkspace'];
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   onRequestDeleteWorkspace?: (workspace: WorkspaceWithThumbs) => void;
+  onNewWorkspace?: () => void;
 }
 
 /**
@@ -40,6 +41,7 @@ export function useWorkspaceStrip({
   clearWorkspace,
   addToast,
   onRequestDeleteWorkspace,
+  onNewWorkspace,
 }: UseWorkspaceStripProps) {
   const syncedWorkspaces = useMemo(
     () => mergeWorkspacesWithCatalogEntries(workspaces, catalogView, workspaceSummaries),
@@ -73,9 +75,10 @@ export function useWorkspaceStrip({
     startViewTransition(() => {
       const newId = `ws-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
       createWorkspace({ id: newId, createdAt: Date.now() }, { activate: true });
+      onNewWorkspace?.();
       addToast('New workspace created', 'success');
     });
-  }, [addToast, createWorkspace]);
+  }, [addToast, createWorkspace, onNewWorkspace]);
 
   const handleDeleteWorkspace = useCallback(
     (id: string) => {

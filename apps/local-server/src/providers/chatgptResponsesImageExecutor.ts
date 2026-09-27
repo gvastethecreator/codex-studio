@@ -22,6 +22,8 @@ import {
   type ExternalProviderFetch,
 } from './externalProviderResults';
 import { SubscriptionHttpError } from './subscriptionHttpError';
+import { extractSubscriptionHttpDiagnostic } from './subscriptionHttpDiagnostic';
+import type { SubscriptionHttpDiagnostic } from '../../../../packages/shared/src/subscriptionHttpDiagnostic';
 import { ProviderExecutionUncertainError } from '../workerErrors';
 import { resolveCodexExecutionPolicy } from '../../../../packages/shared/src/codexExecutionContract';
 import { consumeSseJson } from './subscriptionSse';
@@ -107,12 +109,50 @@ function sseFailureMessage(event: Record<string, unknown>, secrets: readonly str
   return 'ChatGPT HTTP rejected the image request.';
 }
 
+interface SubscriptionHttpObservation {
+  provider: 'chatgpt' | 'codex';
+  headersReceivedAtMs: number;
+  retryAfterHeader: string | null;
+  dateHeader: string | null;
+  ageHeader: string | null;
+  primaryUsedPercentHeader: string | null;
+  transportHttpStatus: number;
+}
+
+function observedDiagnostic(
+  observation: SubscriptionHttpObservation,
+  channel: 'http_json' | 'sse_event',
+  payload: unknown,
+): SubscriptionHttpDiagnostic | null {
+  try {
+    return extractSubscriptionHttpDiagnostic({
+      schemaVersion: 1,
+      receivedAt: new Date(observation.headersReceivedAtMs).toISOString(),
+      provider: observation.provider,
+      transport: 'subscription_http',
+      channel,
+      httpStatus: observation.transportHttpStatus,
+      headers: {
+        'retry-after': observation.retryAfterHeader,
+        date: observation.dateHeader,
+        age: observation.ageHeader,
+        'x-codex-primary-used-percent': observation.primaryUsedPercentHeader,
+      },
+      payload,
+      submissionRecorded: true,
+    });
+  } catch {
+    return null;
+  }
+}
+
 function classifyProviderFailure(
   payload: unknown,
   message: string,
   httpStatus: number | null,
   secrets: readonly string[],
   retryAfterSeconds: number | null = null,
+  diagnostic: SubscriptionHttpDiagnostic | null = null,
 ) {
   const response = isRecord(payload) && isRecord(payload.response) ? payload.response : payload;
   const error = isRecord(response) && isRecord(response.error) ? response.error : response;
@@ -186,6 +226,7 @@ function classifyProviderFailure(
     httpStatus,
     providerCode,
     retryAfterSeconds,
+    diagnostic,
   });
 }
 
@@ -193,6 +234,7 @@ function classifySseFailure(
   event: Record<string, unknown>,
   secrets: readonly string[],
   retryAfterSeconds: number | null,
+  observation: SubscriptionHttpObservation,
 ) {
   return classifyProviderFailure(
     event,
@@ -200,6 +242,7 @@ function classifySseFailure(
     null,
     secrets,
     retryAfterSeconds,
+    observedDiagnostic(observation, 'sse_event', event),
   );
 }
 
@@ -238,6 +281,7 @@ function classifyCodexHttpFailure(
   body: string,
   secrets: readonly string[],
   retryAfterSeconds: number | null,
+  observation: SubscriptionHttpObservation,
 ) {
   let payload: unknown = null;
   try {
@@ -251,6 +295,7 @@ function classifyCodexHttpFailure(
     status,
     secrets,
     retryAfterSeconds,
+    observedDiagnostic(observation, 'http_json', payload),
   );
 }
 
@@ -302,7 +347,8 @@ export function createChatgptResponsesImageExecutor({
     if (
       policy.image.model !== expected.image?.model ||
       policy.image.size !== expected.image?.size ||
-      policy.image.quality !== expected.image?.quality
+      policy.image.quality !== expected.image?.quality ||
+      (policy.image.background ?? 'opaque') !== expected.image?.background
     ) {
       throw new Error('The saved HTTP execution contract does not match this job.');
     }
@@ -329,7 +375,7 @@ export function createChatgptResponsesImageExecutor({
           size,
           quality,
           output_format: 'png',
-          background: 'opaque',
+          background: policy.image?.background ?? 'opaque',
           partial_images: 0,
         },
       ],
@@ -365,7 +411,17 @@ export function createChatgptResponsesImageExecutor({
       );
     }
 
-    const retryAfterSeconds = readRetryAfter(response.headers.get('retry-after'), now());
+    const headersReceivedAtMs = now();
+    const observation: SubscriptionHttpObservation = {
+      provider: providerId,
+      headersReceivedAtMs,
+      retryAfterHeader: response.headers.get('retry-after'),
+      dateHeader: response.headers.get('date'),
+      ageHeader: response.headers.get('age'),
+      primaryUsedPercentHeader: response.headers.get('x-codex-primary-used-percent'),
+      transportHttpStatus: response.status,
+    };
+    const retryAfterSeconds = readRetryAfter(observation.retryAfterHeader, headersReceivedAtMs);
     if (!response.ok) {
       let raw: string;
       try {
@@ -380,7 +436,13 @@ export function createChatgptResponsesImageExecutor({
           'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
         );
       }
-      const failure = classifyCodexHttpFailure(response.status, raw, [token], retryAfterSeconds);
+      const failure = classifyCodexHttpFailure(
+        response.status,
+        raw,
+        [token],
+        retryAfterSeconds,
+        observation,
+      );
       if (response.status >= 500) {
         throw new ProviderExecutionUncertainError(
           `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request. ${failure.message}`,
@@ -419,7 +481,7 @@ export function createChatgptResponsesImageExecutor({
     }
     if (failedEvent) {
       job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
-      const failure = classifySseFailure(failedEvent, [token], retryAfterSeconds);
+      const failure = classifySseFailure(failedEvent, [token], retryAfterSeconds, observation);
       if (failure.code === 'invalid_grant') invalidateAccessToken(failure.message);
       throw failure;
     }

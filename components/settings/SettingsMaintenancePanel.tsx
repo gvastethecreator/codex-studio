@@ -1,10 +1,11 @@
+import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import {
   IconDatabase as Database,
   IconPhoto as FileImage,
-  IconLoader as LoaderCircle,
   IconRefresh as RefreshCw,
 } from '@tabler/icons-react';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import { ConfirmationModal } from '../ConfirmationModal';
 import type {
   StorageMaintenanceAuditReport,
   StorageMaintenanceCompactResult,
@@ -74,21 +75,23 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
     [audit],
   );
 
-  const handleWriteCompact = () => {
-    const confirmed = window.confirm(
-      `Compact ${compactRows} historical rows (${formatBytes(compactBytes)})? A local SQLite backup will be created first. Original image files stay in your library.`,
-    );
-    if (!confirmed) return;
-    void compactStorage({ write: true, confirm: 'compact-inline-payloads' });
-  };
-
-  const handleWriteThumbnails = () => {
-    const confirmed = window.confirm(
-      `Create ${thumbnailBackfillResult?.plannedRows ?? 0} missing thumbnails for available source files? A local SQLite backup will be created first.`,
-    );
-    if (!confirmed) return;
-    void backfillThumbnails({ write: true, confirm: 'backfill-thumbnails', limit: 1000 });
-  };
+  const [confirmation, setConfirmation] = useState<{ message: string; action: () => void } | null>(
+    null,
+  );
+  const handleWriteCompact = () =>
+    setConfirmation({
+      message: `Compact ${compactRows} historical rows (${formatBytes(compactBytes)})? A local SQLite backup will be created first. Original images stay in your library.`,
+      action: () => {
+        void compactStorage({ write: true, confirm: 'compact-inline-payloads' });
+      },
+    });
+  const handleWriteThumbnails = () =>
+    setConfirmation({
+      message: `Create ${thumbnailBackfillResult?.plannedRows ?? 0} missing thumbnails? A local SQLite backup will be created first.`,
+      action: () => {
+        void backfillThumbnails({ write: true, confirm: 'backfill-thumbnails', limit: 1000 });
+      },
+    });
 
   return (
     <div className="mt-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
@@ -228,14 +231,15 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           </div>
           <button
             type="button"
-            onClick={() => {
-              if (
-                window.confirm(
+            onClick={() =>
+              setConfirmation({
+                message:
                   'Remove older tooling logs, keeping the newest 20 per task? Generated images and jobs are preserved.',
-                )
-              )
-                void pruneToolingLogs({ retainPerTask: 20 });
-            }}
+                action: () => {
+                  void pruneToolingLogs({ retainPerTask: 20 });
+                },
+              })
+            }
             disabled={isPruneRunning}
             className="flex h-8 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
           >
@@ -324,6 +328,19 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           ) : null}
         </div>
       )}
+      <ConfirmationModal
+        isOpen={Boolean(confirmation)}
+        title="Confirm maintenance"
+        description={confirmation?.message ?? ''}
+        confirmLabel="Continue"
+        cancelLabel="Cancel"
+        tone="warning"
+        onClose={() => setConfirmation(null)}
+        onConfirm={() => {
+          confirmation?.action();
+          setConfirmation(null);
+        }}
+      />
     </div>
   );
 }

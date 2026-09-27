@@ -52,7 +52,7 @@ describe('libraryAssetVariants', () => {
         maxEdge: 256,
       });
 
-      expect(thumbnailPath).toContain(path.join('outputs', 'thumbnails', '2026-05-26'));
+      expect(thumbnailPath).toContain(path.join('.studio', 'thumbnails'));
       expect(path.extname(thumbnailPath)).toBe('.webp');
       expect(existsSync(sourceFilePath)).toBe(true);
     } finally {

@@ -16,6 +16,9 @@ import {
 
 export interface SpriteAtlasRoutesDependencies {
   readLibraryDir: () => string;
+  readOutputContext?: (
+    workspaceId?: string,
+  ) => import('../../../packages/shared/src/types').JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   service?: SpriteAtlasService;
 }
@@ -33,12 +36,13 @@ function actionError(error: unknown) {
 
 export function createSpriteAtlasRoutes({
   readLibraryDir,
+  readOutputContext,
   getCatalogImage,
   service,
 }: SpriteAtlasRoutesDependencies) {
   const routes = new Hono();
   const spriteAtlas =
-    service ?? createSpriteAtlasService({ readLibraryDir, getCatalogImage });
+    service ?? createSpriteAtlasService({ readLibraryDir, readOutputContext, getCatalogImage });
 
   routes.get('/presets', (c) => c.json({ presets: spriteAtlas.listPresets() }));
 
@@ -186,7 +190,13 @@ export function createSpriteAtlasRoutes({
     const run = await spriteAtlas.getRun(c.req.param('id'));
     const row = run?.rows.find((item) => item.id === c.req.param('rowId'));
     const frameNumber = Number(c.req.param('frame'));
-    if (!run || !row || !Number.isInteger(frameNumber) || frameNumber < 1 || frameNumber > row.frames) {
+    if (
+      !run ||
+      !row ||
+      !Number.isInteger(frameNumber) ||
+      frameNumber < 1 ||
+      frameNumber > row.frames
+    ) {
       return c.notFound();
     }
     const framePath = spriteAtlasFramePath(run, row.id, frameNumber);

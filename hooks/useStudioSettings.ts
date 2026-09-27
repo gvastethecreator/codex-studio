@@ -53,7 +53,7 @@ export interface StudioSettingsController {
       isSaving: boolean;
       error: string | null;
       refresh: () => Promise<void>;
-      update: (patch: EditableStudioSettingsPatch) => Promise<void>;
+      update: (patch: EditableStudioSettingsPatch) => Promise<boolean>;
     };
     providerDomain: {
       capabilities: GenerationProviderCapabilitiesResponse | null;
@@ -240,7 +240,7 @@ export function useStudioSettings({
 
   const updateSettings = useCallback(
     async (patch: EditableStudioSettingsPatch) => {
-      if (savingRef.current) return;
+      if (savingRef.current) return false;
       savingRef.current = true;
       revisions.current.settings += 1;
       setIsSaving(true);
@@ -248,16 +248,18 @@ export function useStudioSettings({
       try {
         const nextSettings = await updateEditableStudioSettings(patch);
         revisions.current.settings += 1;
-        if (!isMountedRef.current) return;
+        if (!isMountedRef.current) return false;
         setSettings(nextSettings);
         addToast?.('Studio Settings saved', 'success');
         invalidateGenerationProviderReads();
         await refreshDomains(true, false);
+        return true;
       } catch (cause) {
-        if (!isMountedRef.current) return;
+        if (!isMountedRef.current) return false;
         const message = cause instanceof Error ? cause.message : 'Unable to save Studio Settings';
         setError(message);
         addToast?.(message, 'error');
+        return false;
       } finally {
         savingRef.current = false;
         if (isMountedRef.current) setIsSaving(false);

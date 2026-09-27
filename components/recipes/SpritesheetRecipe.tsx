@@ -297,26 +297,31 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           options={CONTROL_OPTIONS.grid}
           onSelect={(v) => setParams((p) => ({ ...p, grid: v }))}
         />
-        <ControlDropdown
-          title="Background"
-          icon={<PaintBucket size={14} />}
-          label={params.background}
-          options={CONTROL_OPTIONS.background}
-          onSelect={(v) => setParams((p) => ({ ...p, background: v }))}
-        />
-        {params.background.includes('Green') ? (
-          <p className="px-1 text-xs text-[color:var(--wb-muted)]">
-            Chroma green is a key color for a later import, not transparent pixels.
-          </p>
-        ) : null}
-        {params.background === 'Custom' && (
-          <div className="flex flex-col gap-1.5">
-            <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
-              Hex
-            </span>
-            <MinimalColorPicker color={customColor} onChange={setCustomColor} />
-          </div>
-        )}
+        <fieldset
+          disabled={config.outputBackground === 'transparent' || config.attachments.length > 0}
+          className="contents disabled:opacity-50"
+        >
+          <ControlDropdown
+            title="Background"
+            icon={<PaintBucket size={14} />}
+            label={params.background}
+            options={CONTROL_OPTIONS.background}
+            onSelect={(v) => setParams((p) => ({ ...p, background: v }))}
+          />
+          {params.background.includes('Green') ? (
+            <p className="px-1 text-xs text-[color:var(--wb-muted)]">
+              Chroma green is a key color for a later import, not transparent pixels.
+            </p>
+          ) : null}
+          {params.background === 'Custom' && (
+            <div className="flex flex-col gap-1.5">
+              <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
+                Hex
+              </span>
+              <MinimalColorPicker color={customColor} onChange={setCustomColor} />
+            </div>
+          )}
+        </fieldset>
         <ControlDropdown
           title="Separation"
           icon={<SeparatorHorizontal size={14} />}

@@ -1,3 +1,5 @@
+import { projectGenerationBackgroundParams } from '../../lib/generationBackground';
+import { CozyLoader as Loader2 } from '../CozyMascot';
 import { useLinkedJobStatuses } from '../../hooks/useLinkedJobStatuses';
 import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
@@ -7,7 +9,6 @@ import {
   IconCheck as Check,
   IconDownload as Download,
   IconGif as Gif,
-  IconLoader2 as Loader2,
   IconPlayerPlay as Play,
   IconRefresh as RefreshCw,
   IconSparkles as Sparkles,
@@ -42,6 +43,7 @@ import {
 import { parseBoundedNumberInput } from './animationSequenceNumberInput';
 
 interface AnimationSequenceRecipeProps {
+  workspaceId?: string;
   config: ImageGenerationConfig;
   updateConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -267,6 +269,7 @@ function ActionButton({
 }
 
 export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = ({
+  workspaceId,
   config,
   updateConfig,
   onGenerate,
@@ -293,8 +296,17 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
   const [message, setMessage] = React.useState<string | null>(null);
 
   const contract = React.useMemo(
-    () => createAnimationSequenceContract({ ...params, prompt }),
-    [params, prompt],
+    () =>
+      createAnimationSequenceContract({
+        ...params,
+        ...projectGenerationBackgroundParams({
+          ...config,
+          recipeId: 'animation-sequence',
+          recipeParams: params,
+        }),
+        prompt,
+      }),
+    [params, prompt, config],
   );
   const draftFramePlan = React.useMemo(
     () => createAnimationSequenceFramePlan(contract),
@@ -493,6 +505,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     void runAction(
       () =>
         createAnimationSequenceRun({
+          workspaceId,
           title: prompt ? `${contract.frameCount}-frame ${contract.method} sequence` : undefined,
           prompt,
           identityAnchor: contract.identityAnchor,
@@ -562,6 +575,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       selectedPrompt || selectedPlanFrame.prompt,
       {
         recipeId: 'animation-sequence',
+        outputBackground:
+          activeRun.contract.background === 'transparent' ? 'transparent' : 'workflow',
         recipeParams: handoff.recipeParams,
         aspectRatio: activeRun.contract.aspectRatio,
         batchCount: handoff.outputCount,
@@ -811,6 +826,15 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     : 'Add a shared reference to anchor identity, camera, palette, and scale across frames.'}
                 </div>
 
+                {selectedFrame?.warning && (
+                  <p role="status" className="studio-warning-notice">
+                    {selectedFrame.warning}
+                  </p>
+                )}
+                <p className="studio-field-description">
+                  PNG keeps full alpha. GIF uses binary transparency (alpha below 128 is
+                  transparent); soft edges are simplified.
+                </p>
                 <div className="mt-3 grid grid-cols-2 gap-2">
                   <NumberField
                     label="Frames"
@@ -847,12 +871,28 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     options={['loose', 'balanced', 'strict']}
                     onChange={(value) => setParam('continuity', value)}
                   />
+                  <fieldset
+                    disabled={contract.background === 'transparent'}
+                    className="grid gap-1.5 disabled:opacity-50"
+                  >
+                    <SelectField
+                      label="Solid export fill"
+                      value={contract.background === 'solid' ? 'solid' : 'preserve'}
+                      options={['preserve', 'solid']}
+                      onChange={(value) => {
+                        updateConfig('outputBackground', 'workflow');
+                        setParam('background', value);
+                      }}
+                    />
+                  </fieldset>
                   <label className="grid gap-1.5">
                     <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                       Matte
                     </span>
                     <input
                       type="color"
+                      disabled={contract.background !== 'solid'}
+                      aria-label="Solid background color"
                       value={contract.matteColor}
                       onChange={(event) => setParam('matteColor', event.target.value)}
                       className="h-9 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]"

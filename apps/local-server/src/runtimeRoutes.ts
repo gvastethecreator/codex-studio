@@ -21,6 +21,10 @@ import {
 } from './onboardingSetup';
 import { applyOnboardingHostAction, OnboardingHostActionError } from './hostTerminal';
 import { getSubscriptionAuthStore, isSubscriptionLoggedIn } from './auth/store';
+import {
+  providerDispatchHeld,
+  SUBSCRIPTION_HTTP_DIAGNOSTIC_REVISION,
+} from './providerDispatchHold';
 import { readXaiApiKey } from './auth/tokens';
 import {
   publishOnboardingActionFinished,
@@ -228,6 +232,8 @@ export function createRuntimeRoutes({
               : true),
       },
       worker: readWorkerStatus(),
+      providerDispatch: { hold: providerDispatchHeld() },
+      subscriptionHttp: { revision: SUBSCRIPTION_HTTP_DIAGNOSTIC_REVISION },
     };
   };
 

@@ -68,6 +68,7 @@ describe('spriteAtlasContracts', () => {
     expect(contract.workflowLane).toBe('animation');
     expect(contract.frameSemantics).toBe('temporal');
     expect(createSpriteAtlasContract({}).backgroundRemoval).toBe('alpha');
+    expect(createSpriteAtlasContract({ transparent: false }).transparent).toBe(false);
     expect(createSpriteAtlasContract({ backgroundRemoval: 'chroma' }).backgroundRemoval).toBe(
       'chroma',
     );

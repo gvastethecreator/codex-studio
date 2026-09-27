@@ -34,6 +34,7 @@ import {
 import { readEditableStudioSettings } from './studioSettingsStore';
 import { resolveJobCatalogContext } from './workerCatalogContext';
 import { SubscriptionHttpError } from './providers/subscriptionHttpError';
+import { subscriptionHttpFailureMetadata } from './providers/subscriptionHttpDiagnostic';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
 import { createWorkerAssetPathing, inferGeneratedAssetMimeType } from './workerAssetPathing';
 import { createWorkerAssetFinalizer } from './workerAssetFinalizer';
@@ -244,6 +245,8 @@ export function createWorkerController({
         attachments: job.sourceSpec.assets,
         aspectRatio: job.sourceSpec.output.aspectRatio,
         imageSize: job.sourceSpec.output.imageSize,
+        outputBackground:
+          job.sourceSpec.output.background === 'transparent' ? 'transparent' : 'workflow',
         negativePrompt: job.sourceSpec.negativePrompt,
         temperature: 0.8,
         model: 'codex-imagegen',
@@ -519,12 +522,7 @@ export function createWorkerController({
           'job.needs_review',
           message,
           cause instanceof SubscriptionHttpError
-            ? {
-                code: cause.code,
-                providerCode: cause.providerCode,
-                httpStatus: cause.httpStatus,
-                retryAfterSeconds: cause.retryAfterSeconds,
-              }
+            ? subscriptionHttpFailureMetadata(cause)
             : undefined,
         );
         updateJobStatusFn(job.id, 'needs_review', message);
@@ -560,12 +558,7 @@ export function createWorkerController({
           'job.failed',
           message,
           error instanceof SubscriptionHttpError
-            ? {
-                code: error.code,
-                providerCode: error.providerCode,
-                httpStatus: error.httpStatus,
-                retryAfterSeconds: error.retryAfterSeconds,
-              }
+            ? subscriptionHttpFailureMetadata(error)
             : undefined,
         );
         updateJobStatusFn(job.id, 'failed', message);

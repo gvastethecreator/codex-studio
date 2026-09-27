@@ -72,6 +72,7 @@ describe('CreateWorkflowPicker', () => {
     const trigger = screen.getByRole('button', { name: 'Workflow: Character Poses' });
     fireEvent.keyDown(trigger, { key: 'ArrowDown' });
     const selected = screen.getByRole('option', { name: 'Open character poses' });
+    expect(screen.getByRole('group', { name: 'Character' }).contains(selected)).toBe(true);
     expect(selected.getAttribute('aria-selected')).toBe('true');
     expect(document.activeElement).toBe(selected);
     fireEvent.keyDown(selected, { key: 'ArrowDown' });

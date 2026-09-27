@@ -1,6 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { useLatestRef } from './useLatestRef';
 
+const inertOwners = new Map<HTMLElement, { count: number; previous: boolean }>();
+let scrollLocks = 0;
+let previousOverflow = '';
+
 export function useDialogFocus(
   isOpen: boolean,
   onClose: () => void,
@@ -18,6 +22,29 @@ export function useDialogFocus(
     openerRef.current = previous;
     const previousLabel = previous?.getAttribute('aria-label');
     const root = ref.current;
+    const inertNodes: HTMLElement[] = [];
+    let branch: HTMLElement = root;
+    while (branch.parentElement && branch !== document.body) {
+      for (const sibling of Array.from(branch.parentElement.children)) {
+        if (
+          !(sibling instanceof HTMLElement) ||
+          sibling === branch ||
+          sibling.tagName === 'SCRIPT' ||
+          sibling.tagName === 'STYLE'
+        )
+          continue;
+        const owner = inertOwners.get(sibling) ?? { count: 0, previous: sibling.inert };
+        owner.count += 1;
+        inertOwners.set(sibling, owner);
+        sibling.inert = true;
+        inertNodes.push(sibling);
+      }
+      branch = branch.parentElement;
+    }
+    if (scrollLocks++ === 0) {
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+    }
     const controls = () =>
       Array.from(
         root.querySelectorAll<HTMLElement>('button, input, textarea, select, a[href], [tabindex]'),
@@ -57,6 +84,14 @@ export function useDialogFocus(
     document.addEventListener('keydown', keydown, true);
     return () => {
       document.removeEventListener('keydown', keydown, true);
+      for (const node of inertNodes) {
+        const owner = inertOwners.get(node);
+        if (owner && --owner.count === 0) {
+          node.inert = owner.previous;
+          inertOwners.delete(node);
+        }
+      }
+      if (--scrollLocks === 0) document.body.style.overflow = previousOverflow;
       restoreFrameRef.current = requestAnimationFrame(() => {
         restoreFrameRef.current = null;
         openerRef.current = null;

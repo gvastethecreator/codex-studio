@@ -123,6 +123,34 @@ function renderToolbar(overrides: Partial<ToolbarProps> = {}) {
 }
 
 describe('Toolbar composer chrome', () => {
+  it('projects the active atlas background before the draft has a recipe id', () => {
+    const updateConfig = vi.fn();
+    const view = renderToolbar({
+      activeRecipe: 'sprite-atlas',
+      activeProviderId: 'chatgpt',
+      generationConfig: config({ recipeId: null }),
+      updateConfig,
+    });
+    expect(screen.getByRole('combobox', { name: 'Output background' })).toHaveProperty(
+      'value',
+      'transparent',
+    );
+    fireEvent.change(screen.getByRole('combobox', { name: 'Output background' }), {
+      target: { value: 'workflow' },
+    });
+    expect(updateConfig).toHaveBeenCalledWith('outputBackground', 'workflow');
+    view.unmount();
+    renderToolbar({
+      activeRecipe: 'sprite-atlas',
+      activeProviderId: 'chatgpt',
+      generationConfig: config({ recipeId: null, outputBackground: 'workflow' }),
+    });
+    expect(screen.getByRole('combobox', { name: 'Output background' })).toHaveProperty(
+      'value',
+      'workflow',
+    );
+  });
+
   it('blocks Remaster click and shortcut until a source is attached', () => {
     const onGenerate = vi.fn();
     const view = renderToolbar({

@@ -250,6 +250,8 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 ## Relationships
 
 - A **Library Registry** tracks one or more **Studio Libraries** and exactly one default library at a time.
+- A registered **Output Directory** stores new final images and exports without becoming a separate SQLite catalog. Each job captures its output root and layout; existing files stay under their original registered roots.
+- Shared workflow categories drive discovery and preferences. Character views retain per-mode drafts within one workspace character. Native output background belongs to the Generation Task Spec, not a provider-specific task name.
 - **Bootstrap Configuration** locates the initial **Studio Library**, then **Studio Settings** become the editable source of truth.
 - **Provider Secrets** live outside **Studio Settings**. Settings can show only availability or validation state.
 - One **Studio Library** contains many **Local Assets** and contributes many **Catalog Entries** to the **Image Catalog**.

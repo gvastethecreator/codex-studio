@@ -29,6 +29,8 @@ import {
 } from '../lib/jobInspectorFormatter';
 import { cn } from '../lib/utils';
 import { getStudioApiBase } from '../services/studio-api/http';
+import { readLatestSubscriptionHttpDiagnostic } from '../lib/subscriptionHttpDiagnosticView';
+import { SubscriptionHttpDiagnosticNotice } from './SubscriptionHttpDiagnosticNotice';
 
 interface JobInspectorDetailProps {
   detail: JobDetailResponse;
@@ -104,6 +106,7 @@ function JobStatusBanner({
   hasReadableAssistantReply: boolean;
 }) {
   const { status, error } = detail.job;
+  const diagnostic = readLatestSubscriptionHttpDiagnostic(detail.events);
 
   if (status === 'failed' || status === 'cancelled') {
     const isFailure = status === 'failed';
@@ -124,6 +127,9 @@ function JobStatusBanner({
               <p className="mt-2 text-[13px] leading-6 text-[color:var(--wb-danger)]  [overflow-wrap:anywhere]">
                 {body}
               </p>
+              {isFailure && diagnostic ? (
+                <SubscriptionHttpDiagnosticNotice value={diagnostic} />
+              ) : null}
             </div>
           </div>
         </div>
@@ -150,6 +156,7 @@ function JobStatusBanner({
                   cancellation stay unavailable until its result is reconciled. When a remote ID is
                   available, Resume job checks that existing execution and imports its output.
                 </p>
+                {diagnostic ? <SubscriptionHttpDiagnosticNotice value={diagnostic} /> : null}
               </div>
 
               {hasReadableAssistantReply ? (
@@ -175,6 +182,18 @@ function JobStatusBanner({
       </section>
     );
   }
+
+  const alphaWarning = detail.events.find((event) => event.type === 'asset.transparency.warning');
+  if (alphaWarning)
+    return (
+      <section role="status" className="studio-warning-notice">
+        <strong>Transparency was not returned</strong>
+        <p>
+          The provider returned an opaque image. Your original result is preserved; no background
+          removal was applied.
+        </p>
+      </section>
+    );
 
   return null;
 }

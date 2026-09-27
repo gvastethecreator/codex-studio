@@ -38,6 +38,7 @@ import { useStudioJobsListClearedAt } from './useStudioJobsListClearedAt';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
+import { usePreferredWorkflow } from './usePreferredWorkflow';
 import {
   describeGrokImagineEditNotice,
   resolveGrokCanExecute,
@@ -138,6 +139,11 @@ export function useStudioShell(): StudioShellController {
   );
   const viewState = useStudioViewState({ closeOverlay });
   const studioSettings = useStudioSettings({ addToast });
+  const openPreferredWorkflow = usePreferredWorkflow(
+    studioSettings.data.settingsDomain.settings?.preferredWorkflow,
+    navigateToRecipes,
+    navigateToRecipe,
+  );
   const {
     activeCatalog,
     historyCatalog,
@@ -381,6 +387,7 @@ export function useStudioShell(): StudioShellController {
       clearWorkspace: clearCatalogWorkspace,
       addToast,
       onRequestDeleteWorkspace: requestDeleteWorkspace,
+      onNewWorkspace: openPreferredWorkflow,
     });
 
   const {
@@ -604,6 +611,7 @@ export function useStudioShell(): StudioShellController {
 
   const recipePageProps = useMemo<RecipePageRuntimeProps>(
     () => ({
+      workspaceId: activeWorkspaceId,
       handleGenerate,
       isGenerating: pipeline.isGenerating,
       imagesWithConfig,
@@ -622,6 +630,7 @@ export function useStudioShell(): StudioShellController {
       ),
     }),
     [
+      activeWorkspaceId,
       handleGenerate,
       pipeline.isGenerating,
       imagesWithConfig,
@@ -667,7 +676,7 @@ export function useStudioShell(): StudioShellController {
           searchQuery: catalogQuery,
           onSearchQueryChange: setCatalogQuery,
           onClearSearch: () => setCatalogQuery(''),
-          onCreate: () => handleRecipeSelection(null),
+          onCreate: () => handleViewChange('recipes'),
           catalogTotal: activeCatalog.total,
           catalogHasMore: activeCatalog.hasMore,
           isCatalogLoading: activeCatalog.isLoading,
@@ -691,7 +700,7 @@ export function useStudioShell(): StudioShellController {
       historySelectedId,
       selectHistoryImage,
       catalogQuery,
-      handleRecipeSelection,
+      handleViewChange,
       workspaces,
       studioRuntime.activity.mergedLogs,
       catalogVisualGroupCount,
@@ -768,8 +777,9 @@ export function useStudioShell(): StudioShellController {
           reviewJobCount: queueCounts.reviewJobCount,
           isQueueOpen: viewState.queue.isOpen,
         }),
-        onSelectProvider: (providerId) =>
-          studioSettings.data.settingsDomain.update({ defaultProviderId: providerId }),
+        onSelectProvider: async (providerId) => {
+          await studioSettings.data.settingsDomain.update({ defaultProviderId: providerId });
+        },
         isProviderSaving: studioSettings.data.settingsDomain.isSaving,
         onOpenSettings: viewState.overlays.settings.open,
         codexTransport: codexDefaultTransport,
@@ -899,8 +909,9 @@ export function useStudioShell(): StudioShellController {
           },
           actions: {
             onOpenSettings: viewState.overlays.settings.open,
-            onSelectProvider: (providerId) =>
-              studioSettings.data.settingsDomain.update({ defaultProviderId: providerId }),
+            onSelectProvider: async (providerId) => {
+              await studioSettings.data.settingsDomain.update({ defaultProviderId: providerId });
+            },
           },
         },
       }),
@@ -950,8 +961,7 @@ export function useStudioShell(): StudioShellController {
     viewState.editor.isOpen ||
     viewState.overlays.dashboard.isOpen ||
     viewState.overlays.trash.isOpen ||
-    viewState.overlays.chat.isOpen ||
-    studioRuntime.onboarding.isOpen;
+    viewState.overlays.chat.isOpen;
 
   return useMemo(
     (): StudioShellController => ({

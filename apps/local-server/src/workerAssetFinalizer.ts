@@ -1,4 +1,5 @@
 import { statSync } from 'node:fs';
+import { authoringSharp } from './sharpAuthoringAdapter';
 import path from 'node:path';
 import type { getCatalogImageByJobId, registerCatalogImage } from './catalog';
 import type { addAsset, getAssetByJobId } from './db/assets';
@@ -82,6 +83,7 @@ export function createWorkerAssetFinalizer({
     options: FinalizeWorkerAssetOptions;
   }) {
     addJobEvent(job.id, 'asset.import.started', 'Asset import started.');
+    const assetLibrary = job.libraryContext?.output ?? job.libraryContext;
     const checkpoint = job.finalization ?? null;
     const sourcePath = checkpoint?.sourcePath ?? discoveredImagePath;
     const targetPath =
@@ -100,6 +102,15 @@ export function createWorkerAssetFinalizer({
     });
     const organizedImagePath = moveGeneratedAssetToPath(sourcePath, targetPath);
     const mimeType = inferGeneratedAssetMimeType(organizedImagePath);
+    if (job.sourceSpec?.output.background === 'transparent') {
+      const stats = await authoringSharp(organizedImagePath).stats();
+      if (stats.isOpaque)
+        addJobEvent(
+          job.id,
+          'asset.transparency.warning',
+          'Transparent output was requested, but this image is opaque. The original result was preserved.',
+        );
+    }
     updateJobFinalization(job.id, {
       state: 'asset_moved',
       sourcePath,
@@ -110,7 +121,9 @@ export function createWorkerAssetFinalizer({
     let thumbnailPath: string | null = null;
 
     try {
-      thumbnailPath = await ensureThumbnailVariant(organizedImagePath);
+      thumbnailPath = await ensureThumbnailVariant(organizedImagePath, {
+        libraryDir: job.libraryContext?.rootPath,
+      });
     } catch (error) {
       logger(
         'warn',
@@ -127,8 +140,8 @@ export function createWorkerAssetFinalizer({
         jobId: job.id,
         filePath: organizedImagePath,
         thumbnailPath,
-        publicUrl: job.libraryContext
-          ? toPublicAssetUrl(organizedImagePath, job.libraryContext)
+        publicUrl: assetLibrary
+          ? toPublicAssetUrl(organizedImagePath, assetLibrary)
           : toPublicAssetUrl(organizedImagePath),
         prompt: job.finalPromptUsed,
         width: options.width ?? null,
@@ -157,7 +170,7 @@ export function createWorkerAssetFinalizer({
     const catalogImage =
       existingCatalogImage ??
       registerCatalogImage({
-        libraryId: job.libraryContext?.libraryId ?? null,
+        libraryId: assetLibrary?.libraryId ?? null,
         filePath: asset.filePath,
         thumbnailPath: asset.thumbnailPath,
         prompt: asset.prompt,

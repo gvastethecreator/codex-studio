@@ -533,8 +533,14 @@ describe('createStudioApp', () => {
     const response = await studio.app.request('/api/health');
     expect(response.status).toBe(200);
 
-    const payload = (await response.json()) as { worker: typeof workerStatus };
+    const payload = (await response.json()) as {
+      worker: typeof workerStatus;
+      providerDispatch: { hold: boolean };
+      subscriptionHttp: { revision: string };
+    };
     expect(payload.worker).toEqual(workerStatus);
+    expect(payload.providerDispatch).toEqual({ hold: false });
+    expect(payload.subscriptionHttp).toEqual({ revision: 'named_seconds_v1' });
     expect(worker.getWorkerStatus).toHaveBeenCalledTimes(2);
   });
 

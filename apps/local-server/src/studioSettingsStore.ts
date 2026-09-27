@@ -4,6 +4,7 @@ import {
   normalizeEditableStudioSettings,
   type EditableStudioSettings,
 } from '../../../packages/shared/src/studioSettings';
+import { validateOutputTemplate } from '../../../packages/shared/src/outputLayout';
 
 export const EDITABLE_STUDIO_SETTINGS_KEY = 'editable_studio_settings';
 
@@ -30,9 +31,20 @@ export function updateEditableStudioSettings(
   storage: StudioSettingsStorage,
   patch: unknown,
   updatedAt = new Date().toISOString(),
+  outputDestination?: { id: string; path: string } | null,
 ): EditableStudioSettings {
   const current = readEditableStudioSettings(storage);
   const next = mergeEditableStudioSettingsPatch(current, patch, updatedAt);
+  const rawTemplate = (patch as { outputOrganization?: { fileNameTemplate?: unknown } } | null)
+    ?.outputOrganization?.fileNameTemplate;
+  const error = validateOutputTemplate(
+    typeof rawTemplate === 'string' ? rawTemplate : next.outputOrganization.fileNameTemplate,
+  );
+  if (error) throw new Error(error);
+  if (outputDestination !== undefined) {
+    next.outputDirectoryId = outputDestination?.id ?? null;
+    next.outputDirectory = outputDestination?.path ?? null;
+  }
   storage.setSetting(EDITABLE_STUDIO_SETTINGS_KEY, JSON.stringify(next), updatedAt);
   return next;
 }

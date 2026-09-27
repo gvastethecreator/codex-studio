@@ -1,3 +1,4 @@
+import { buildCharacterLabParams, createCharacterLabViewDraft } from './characterLabDraft';
 import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
 import type { RecipeId } from '../types';
 import {
@@ -82,7 +83,7 @@ const RECIPE_CARD_METADATA: Record<RegisteredRecipeId, RecipeCatalogCardMetadata
     id: 'animation-sequence',
     subtitle: 'Frame Animation',
     tag: 'GIF',
-    buttonText: 'Open Timeline',
+    buttonText: 'Open Animation',
     accentColor: 'amber',
     cardImageKey: 'timeline',
   },
@@ -130,7 +131,7 @@ const RECIPE_CARD_METADATA: Record<RegisteredRecipeId, RecipeCatalogCardMetadata
     id: 'timeline',
     subtitle: 'Scene Extrapolation',
     tag: 'Temporal',
-    buttonText: 'Open Timeline',
+    buttonText: 'Open Timeline Frame',
     accentColor: 'teal',
     cardImageKey: 'timeline',
   },
@@ -229,7 +230,12 @@ function createRecipeAliasCatalog(catalog: RecipeCatalogEntry[] = RECIPE_CATALOG
         parameters: targetEntry.parameters,
         defaultParams: {
           ...targetEntry.defaultParams,
-          mode: alias.characterLabMode,
+          ...buildCharacterLabParams(
+            alias.characterLabMode,
+            createCharacterLabViewDraft(alias.characterLabMode),
+            '',
+            0,
+          ),
         },
         parameterGroups: targetEntry.parameterGroups,
         requiredParameterIds: targetEntry.requiredParameterIds,

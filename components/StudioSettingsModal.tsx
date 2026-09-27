@@ -1,6 +1,11 @@
+import { MotionDiv } from '../lib/gsapMotion';
+import { CozyLoader as LoaderCircle } from './CozyMascot';
+import { useTheme } from '../hooks/useTheme';
+import { validateOutputTemplate } from '../packages/shared/src/outputLayout';
+import { SettingsGeneralPanel } from './settings/SettingsGeneralPanel';
+import { StudioHelpGuide } from './StudioHelpGuide';
 import { ConfirmationModal } from './ConfirmationModal';
 import {
-  IconLoader as LoaderCircle,
   IconRefresh as RefreshCw,
   IconDeviceFloppy as Save,
   IconSettings as Settings,
@@ -61,7 +66,7 @@ interface StudioSettingsModalProps {
   importingOutputSources: Record<string, boolean>;
   error: string | null;
   onRefresh: () => void | Promise<void>;
-  onUpdate: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
+  onUpdate: (patch: EditableStudioSettingsPatch) => void | Promise<void | boolean>;
   onRegisterOutputSource: (input: RegisterExternalOutputSourceInput) => void | Promise<void>;
   onLoadOutputSourceFiles: (sourceId: string) => void | Promise<void>;
   onImportOutputSourceFiles: (
@@ -103,10 +108,85 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const [formState, setFormState] = useState<StudioSettingsFormState>(
     createInitialStudioSettingsFormState,
   );
-  const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('providers');
+  const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('general');
+  const { preferences, savedPreferences, previewPreferences, commitPreferences } = useTheme();
+  const [search, setSearch] = useState('');
+  const searchItems = [
+    {
+      domain: 'general',
+      label: 'Preferred workflow',
+      description: 'Startup and new workspaces',
+      target: 'Preferred workflow',
+    },
+    {
+      domain: 'appearance',
+      label: 'Theme',
+      description: 'Light or dark appearance',
+      target: 'Theme',
+    },
+    {
+      domain: 'appearance',
+      label: 'Accent color',
+      description: 'Palette and mascot color',
+      target: 'Accent: Apricot',
+    },
+    {
+      domain: 'appearance',
+      label: 'Motion preference',
+      description: 'System or reduced animation',
+      target: 'Motion preference',
+    },
+    {
+      domain: 'providers',
+      label: 'Providers & accounts',
+      description: 'Models, sign in and execution defaults',
+      target: '',
+    },
+    {
+      domain: 'library',
+      label: 'Library & imports',
+      description: 'Discover external images and import sources',
+      target: 'External folder to scan',
+    },
+    {
+      domain: 'output',
+      label: 'Output directory',
+      description: 'Registered folder for new images',
+      target: 'Output directory',
+    },
+    {
+      domain: 'output',
+      label: 'Folder structure',
+      description: 'Workspace, date, workflow and provider',
+      target: 'Output folder preset',
+    },
+    {
+      domain: 'output',
+      label: 'File name template',
+      description: 'Naming tokens and example path',
+      target: 'File name template',
+    },
+    {
+      domain: 'maintenance',
+      label: 'Maintenance',
+      description: 'Storage and thumbnails',
+      target: '',
+    },
+    {
+      domain: 'help',
+      label: 'Getting started',
+      description: 'Workflows, references and results',
+      target: '',
+    },
+  ];
+  useEffect(() => {
+    if (!isOpen) previewPreferences(null);
+  }, [isOpen, previewPreferences]);
+  useEffect(() => () => previewPreferences(null), [previewPreferences]);
   const dirtyRef = useRef(false);
   const [confirmDiscard, setConfirmDiscard] = useState(false);
   const requestClose = () => {
+    if (isSaving) return;
     if (dirtyRef.current) setConfirmDiscard(true);
     else onClose();
   };
@@ -135,14 +215,13 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     wasOpen.current = isOpen;
   }, [isOpen, settings]);
   const hasChanges =
+    JSON.stringify(preferences) !== JSON.stringify(savedPreferences) ||
     JSON.stringify(buildStudioSettingsPatch(formState)) !==
-    JSON.stringify(buildStudioSettingsPatch(savedForm));
+      JSON.stringify(buildStudioSettingsPatch(savedForm));
   useLayoutEffect(() => {
     dirtyRef.current = hasChanges;
   }, [hasChanges]);
-  const fileNameError = formState.outputFileNameTemplate.trim()
-    ? null
-    : 'Enter an output filename template.';
+  const fileNameError = validateOutputTemplate(formState.outputFileNameTemplate);
 
   const { defaultProviderId, providerDefaults } = formState;
 
@@ -155,13 +234,20 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   );
   if (!isOpen) return null;
 
-  const handleSave = () => {
-    if (hasChanges && !fileNameError && settings && !isSaving && !isLoading)
-      void onUpdate(buildStudioSettingsPatch(formState));
+  const handleSave = async () => {
+    if (!hasChanges || fileNameError || !settings || isSaving || isLoading) return;
+    const nextAppearance = { ...preferences };
+    const saved = await onUpdate(buildStudioSettingsPatch(formState));
+    if (saved !== false) commitPreferences(nextAppearance);
   };
 
   return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center studio-scrim p-4">
+    <MotionDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-100 flex items-center justify-center studio-scrim p-4"
+    >
       <div
         ref={dialogRef}
         role="dialog"
@@ -206,6 +292,50 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
         </div>
 
+        <div className="settings-search">
+          <input
+            className="studio-field"
+            type="search"
+            aria-label="Search settings"
+            placeholder="Search settings…"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+          />
+          {search.trim() && (
+            <div className="settings-search-results" aria-label="Settings search results">
+              {searchItems
+                .filter((item) =>
+                  `${item.label} ${item.description}`.toLowerCase().includes(search.toLowerCase()),
+                )
+                .map((item) => (
+                  <button
+                    key={item.label}
+                    type="button"
+                    className="studio-menu-item"
+                    onClick={() => {
+                      setActiveDomain(item.domain as StudioSettingsDomainId);
+                      setSearch('');
+                      requestAnimationFrame(() => {
+                        const panel = dialogRef.current?.querySelector<HTMLElement>(
+                          '.studio-settings-content',
+                        );
+                        const control = item.target
+                          ? panel?.querySelector<HTMLElement>(`[aria-label="${item.target}"]`)
+                          : panel?.querySelector<HTMLElement>('button, input, select');
+                        (control ?? panel)?.focus();
+                      });
+                    }}
+                  >
+                    <strong>{item.label}</strong>
+                    <small>{item.description}</small>
+                  </button>
+                ))}
+              {!searchItems.some((item) =>
+                `${item.label} ${item.description}`.toLowerCase().includes(search.toLowerCase()),
+              ) && <p role="status">No settings match this search.</p>}
+            </div>
+          )}
+        </div>
         <div className="studio-settings-layout">
           <label className="studio-settings-section-select">
             <span>Section</span>
@@ -237,6 +367,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </nav>
 
           <div
+            tabIndex={-1}
             aria-busy={isLoading || isSaving}
             data-motion-panel
             key={activeDomain}
@@ -251,6 +382,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               </div>
             )}
 
+            {activeDomain === 'general' && (
+              <fieldset disabled={isSaving || !settings}>
+                <SettingsGeneralPanel value={formState} onChange={setFormState} />
+              </fieldset>
+            )}
+            {activeDomain === 'help' && <StudioHelpGuide />}
             {activeDomain === 'appearance' ||
             activeDomain === 'library' ||
             activeDomain === 'providers' ||
@@ -310,6 +447,17 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           <span role="status" className="mr-auto text-xs studio-muted">
             {isSaving ? 'Saving settings…' : hasChanges ? 'Unsaved changes' : 'No unsaved changes'}
           </span>
+          <button
+            type="button"
+            disabled={!hasChanges || isSaving}
+            className="studio-ghost-control px-4"
+            onClick={() => {
+              setFormState(savedForm);
+              previewPreferences(null);
+            }}
+          >
+            Discard
+          </button>
           <button type="button" onClick={requestClose} className="studio-ghost-control px-4">
             Close
           </button>
@@ -334,9 +482,10 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
         onClose={() => setConfirmDiscard(false)}
         onConfirm={() => {
           setConfirmDiscard(false);
+          previewPreferences(null);
           onClose();
         }}
       />
-    </div>
+    </MotionDiv>
   );
 };

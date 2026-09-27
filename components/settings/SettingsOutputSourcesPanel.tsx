@@ -1,7 +1,7 @@
+import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import {
   IconPhoto as FileImage,
   IconFolderPlus as FolderPlus,
-  IconLoader as LoaderCircle,
   IconUpload as Upload,
 } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';

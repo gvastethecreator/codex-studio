@@ -29,7 +29,7 @@ describe('studio library layout', () => {
       path.join(root, 'outputs', 'job-1.png'),
     );
     expect(resolveLibraryPathFromRoot(root, 'thumbnails', 'job-1.webp')).toBe(
-      path.join(root, 'outputs', 'thumbnails', 'job-1.webp'),
+      path.join(root, '.studio', 'thumbnails', 'job-1.webp'),
     );
     expect(resolveLibraryPathFromRoot(root, 'exports', 'batch.zip')).toBe(
       path.join(root, 'outputs', 'exports', 'batch.zip'),
@@ -38,7 +38,7 @@ describe('studio library layout', () => {
       path.join(root, 'outputs', 'external', 'source-1', 'hero.webp'),
     );
     expect(resolveLibraryPathFromRoot(root, '.trash', 'assets', 'job-1.png')).toBe(
-      path.join(root, 'outputs', '.trash', 'assets', 'job-1.png'),
+      path.join(root, '.studio', '.trash', 'assets', 'job-1.png'),
     );
   });
 

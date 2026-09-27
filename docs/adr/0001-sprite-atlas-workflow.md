@@ -27,6 +27,8 @@ The UI must expose the workflow as a recoverable production workbench:
 
 Bring a repo-local `skills/sprite-atlas-builder` skill into Codex Studio so agents can run the pipeline without an external checkout.
 
+New run state, handoff inputs, and extracted working frames live in `.studio/state/sprite-atlas/<runId>`. The atlas PNG and manifest use the output directory and layout captured when the run starts. Older runs remain readable at their stored paths. The shared background choice resolves the run contract: native transparency disables chroma instructions and keeps alpha through atlas composition.
+
 ## Consequences
 
 Positive:

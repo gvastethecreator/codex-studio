@@ -176,6 +176,7 @@ describe('styleLayerComposer', () => {
       styleReferenceMode: 'reinterpret',
     });
     expect(plan?.recipeParams.roleInstruction).toContain('Reinterpret the supplied references');
-    expect(String(plan?.recipeParams.cameraComposition ?? '')).not.toBe('');
+    expect(plan?.recipeParams.cameraComposition).toEqual(expect.any(String));
+    expect(plan?.recipeParams.cameraComposition).not.toBe('');
   });
 });

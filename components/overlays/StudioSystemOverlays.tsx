@@ -161,12 +161,12 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
         </ErrorBoundary>
       ) : null}
       {mountedSurfaces.includes('onboarding') ? (
-        <ErrorBoundary fallbackMessage="Could not load setup.">
+        <ErrorBoundary fallbackMessage="Could not load setup." onDismiss={closeOnboarding}>
           <Suspense
             fallback={
               <LazySurfaceFallback
                 label="Loading setup"
-                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
+                className="pointer-events-none fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >
@@ -201,7 +201,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
         </ErrorBoundary>
       ) : null}
       {mountedSurfaces.includes('settings') ? (
-        <ErrorBoundary fallbackMessage="Could not load studio settings.">
+        <ErrorBoundary fallbackMessage="Could not load studio settings." onDismiss={closeSettings}>
           <Suspense
             fallback={
               <LazySurfaceFallback

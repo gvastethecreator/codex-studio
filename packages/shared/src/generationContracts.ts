@@ -101,6 +101,7 @@ export interface GenerationQualityIntent {
 }
 
 export interface GenerationOutputContract {
+  background: 'auto' | 'opaque' | 'transparent';
   count: number;
   aspectRatio: string | null;
   imageSize: string | null;
@@ -108,6 +109,22 @@ export interface GenerationOutputContract {
   requiresLocalAsset: boolean;
   requiresCatalogEntry: boolean;
   requiresExactPath: boolean;
+}
+
+/** One instruction for prompt previews and provider requests, without guessing intent from keywords. */
+export function buildGenerationBackgroundInstruction(
+  background: GenerationOutputContract['background'],
+  hasInputImage: boolean,
+) {
+  if (background === 'transparent') {
+    return 'Background: remove the surrounding backdrop and use native transparent alpha in PNG. Keep the requested subject and relevant props. This takes priority over automatic workflow backgrounds or scenery. Do not paint a solid fill, chroma key, checkerboard, or simulated transparency pattern.';
+  }
+  if (background === 'opaque') {
+    return 'Background: use the explicitly selected solid background. Keep the requested subject and apply the chosen fill.';
+  }
+  return hasInputImage
+    ? 'Background: maintain the primary input background and its existing alpha. Follow explicit background or environment changes in the user request or selected action. Do not replace it with an automatic studio fill.'
+    : 'Background: follow the background or environment described in the user request and selected action. Use the workflow background only when neither specifies one. If the request calls for no background, use native transparent alpha rather than a painted checkerboard.';
 }
 
 export interface GenerationTaskSpec {
@@ -216,6 +233,7 @@ export interface CreateCompiledProviderInputArgs<TPayload = unknown> {
 }
 
 const DEFAULT_OUTPUT_CONTRACT: GenerationOutputContract = {
+  background: 'opaque',
   count: 1,
   aspectRatio: null,
   imageSize: null,
@@ -353,6 +371,7 @@ export function createGenerationTaskSpec({
     output: {
       ...DEFAULT_OUTPUT_CONTRACT,
       ...output,
+      background: output.background ?? DEFAULT_OUTPUT_CONTRACT.background,
       count: output.count ?? DEFAULT_OUTPUT_CONTRACT.count,
       aspectRatio: output.aspectRatio ?? DEFAULT_OUTPUT_CONTRACT.aspectRatio,
       imageSize: output.imageSize ?? DEFAULT_OUTPUT_CONTRACT.imageSize,
@@ -537,6 +556,17 @@ export function validateGenerationTaskSpec(
         safeDetails: { batchId },
       });
     }
+  }
+
+  if (
+    !isRecord(spec.output) ||
+    !['auto', 'opaque', 'transparent'].includes(spec.output.background ?? 'opaque')
+  ) {
+    issues.push({
+      code: 'invalid_task_spec',
+      field: 'sourceSpec.output.background',
+      message: 'Output background must be auto, opaque, or transparent.',
+    });
   }
 
   if (!Array.isArray(spec.assets)) {

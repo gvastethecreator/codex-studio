@@ -38,7 +38,7 @@ GENERATION DIRECTIVES:
 1. Keep subject identity, outfit, palette, and lighting as consistent as possible with the prompt/reference.
 2. Use the requested orbit, pitch, and zoom as strong composition guidance.
 3. Add plausible matching details for areas not visible in the reference.
-4. Preserve the reference style where possible; prefer a neutral background when the source background is ambiguous.
+4. ${getBoolean(params, 'transparentBackground') ? 'Preserve the reference style and render the subject on native transparent alpha.' : getBoolean(params, 'preserveBackground') ? 'Preserve the reference background unless the request explicitly changes the environment.' : 'Follow the requested scene and background; use a neutral background only when unspecified.'}
   `,
   );
 }

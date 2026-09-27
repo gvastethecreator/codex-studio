@@ -9,6 +9,7 @@ export interface EncodeGifOptions {
   frames: GifRgbaFrame[];
   loop: boolean;
   matteColor?: string;
+  transparent?: boolean;
 }
 
 function parseHexColor(value: string | null | undefined) {
@@ -34,18 +35,28 @@ function buildPalette() {
   return palette;
 }
 
-function quantizeFrame(frame: GifRgbaFrame, matteColor: string | null | undefined) {
+function quantizeFrame(
+  frame: GifRgbaFrame,
+  matteColor: string | null | undefined,
+  transparent = false,
+) {
   const matte = parseHexColor(matteColor);
   const indexes = new Uint8Array(frame.rgba.length / 4);
   for (let source = 0, target = 0; source < frame.rgba.length; source += 4, target += 1) {
-    const alpha = frame.rgba[source + 3] / 255;
+    if (transparent && frame.rgba[source + 3] < 128) {
+      indexes[target] = 0;
+      continue;
+    }
+    const alpha = transparent ? 1 : frame.rgba[source + 3] / 255;
     const r = Math.round(frame.rgba[source] * alpha + matte.r * (1 - alpha));
     const g = Math.round(frame.rgba[source + 1] * alpha + matte.g * (1 - alpha));
     const b = Math.round(frame.rgba[source + 2] * alpha + matte.b * (1 - alpha));
     const r3 = Math.round((r / 255) * 7) & 0x07;
     const g3 = Math.round((g / 255) * 7) & 0x07;
     const b2 = Math.round((b / 255) * 3) & 0x03;
-    indexes[target] = (r3 << 5) | (g3 << 2) | b2;
+    const colorIndex = (r3 << 5) | (g3 << 2) | b2;
+    // Index zero is reserved for transparent pixels. Index four is near-black.
+    indexes[target] = transparent && colorIndex === 0 ? 4 : colorIndex;
   }
   return indexes;
 }
@@ -135,7 +146,14 @@ function pushSubBlocks(bytes: number[], data: number[]) {
   bytes.push(0);
 }
 
-export function encodeGif({ width, height, frames, loop, matteColor }: EncodeGifOptions) {
+export function encodeGif({
+  width,
+  height,
+  frames,
+  loop,
+  matteColor,
+  transparent = false,
+}: EncodeGifOptions) {
   if (width <= 0 || height <= 0) throw new Error('GIF width and height must be positive.');
   if (frames.length === 0) throw new Error('GIF export requires at least one frame.');
 
@@ -162,7 +180,7 @@ export function encodeGif({ width, height, frames, loop, matteColor }: EncodeGif
   }
 
   for (const frame of frames) {
-    bytes.push(0x21, 0xf9, 0x04, 0x00);
+    bytes.push(0x21, 0xf9, 0x04, transparent ? 0x09 : 0x00);
     pushU16(bytes, Math.max(1, Math.round(frame.delayCentiseconds)));
     bytes.push(0x00, 0x00);
     bytes.push(0x2c);
@@ -172,7 +190,7 @@ export function encodeGif({ width, height, frames, loop, matteColor }: EncodeGif
     pushU16(bytes, height);
     bytes.push(0x00);
     bytes.push(0x08);
-    pushSubBlocks(bytes, lzwEncode(quantizeFrame(frame, matteColor), 8));
+    pushSubBlocks(bytes, lzwEncode(quantizeFrame(frame, matteColor, transparent), 8));
   }
 
   bytes.push(0x3b);

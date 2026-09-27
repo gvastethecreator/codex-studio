@@ -135,6 +135,8 @@ export function RecipeResultPreview({
             selected.id,
             selected.config.model,
             selected.config.aspectRatio,
+            undefined,
+            selected.mimeType,
           )
         : 'reference.png',
     );

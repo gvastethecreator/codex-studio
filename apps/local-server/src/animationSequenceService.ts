@@ -1,3 +1,6 @@
+import { isManagedGenerationAssetPath } from './managedAssetPolicy';
+import { captureWorkflowOutput } from './outputDestination';
+import { toPublicAssetUrl } from './library';
 import { randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -17,7 +20,7 @@ import {
   type CreateAnimationSequenceRunRequest,
   type ExportAnimationSequenceGifRequest,
 } from '../../../packages/shared/src/animationSequenceContracts';
-import type { CatalogImage } from '../../../packages/shared/src/types';
+import type { JobLibraryContext, CatalogImage } from '../../../packages/shared/src/types';
 import { encodeGif, type GifRgbaFrame } from './animationGifEncoder';
 import { resolveLibraryPathFromRoot } from './library';
 
@@ -45,6 +48,7 @@ export interface AnimationSequenceService {
 
 export interface CreateAnimationSequenceServiceOptions {
   readLibraryDir: () => string;
+  readOutputContext?: (workspaceId?: string) => JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   createId?: () => string;
   now?: () => string;
@@ -67,7 +71,7 @@ function isPathInside(parentPath: string, childPath: string) {
 }
 
 function createRunPaths(libraryDir: string, runId: string): AnimationSequenceRunPaths {
-  const runDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'animation-sequence', runId);
+  const runDir = resolveLibraryPathFromRoot(libraryDir, 'state', 'animation-sequence', runId);
   return {
     runDir,
     requestPath: path.join(runDir, 'animation-request.json'),
@@ -202,15 +206,21 @@ function resolveSourcePath({
   input,
   getCatalogImage,
   libraryDir,
+  libraryContext,
 }: {
   input: AttachAnimationSequenceFrameRequest;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   libraryDir: string;
+  libraryContext?: JobLibraryContext;
 }) {
   const catalogImageId = input.catalogImageId?.trim();
   if (catalogImageId && getCatalogImage) {
     const image = getCatalogImage(catalogImageId);
-    if (image?.filePath && isPathInside(libraryDir, image.filePath)) {
+    if (
+      image?.filePath &&
+      (isPathInside(libraryDir, image.filePath) ||
+        (libraryContext && isManagedGenerationAssetPath(image.filePath, libraryContext)))
+    ) {
       return { sourcePath: image.filePath, catalogImageId: image.id };
     }
   }
@@ -225,6 +235,7 @@ function resolveSourcePath({
 
 export function createAnimationSequenceService({
   readLibraryDir,
+  readOutputContext,
   getCatalogImage,
   createId = randomUUID,
   now = () => new Date().toISOString(),
@@ -242,29 +253,58 @@ export function createAnimationSequenceService({
   async function getRun(runId: string) {
     const safeRunId = safeSegment(runId);
     const paths = createRunPaths(readLibraryDir(), safeRunId);
-    return readJson<AnimationSequenceRun>(paths.statusPath);
+    return (
+      (await readJson<AnimationSequenceRun>(paths.statusPath)) ??
+      readJson<AnimationSequenceRun>(
+        resolveLibraryPathFromRoot(
+          readLibraryDir(),
+          'outputs',
+          'animation-sequence',
+          safeRunId,
+          'animation-sequence-run.json',
+        ),
+      )
+    );
   }
 
   return {
     async listRuns() {
-      const root = resolveLibraryPathFromRoot(readLibraryDir(), 'outputs', 'animation-sequence');
-      try {
-        const entries = await readdir(root, { withFileTypes: true });
-        const runs = await Promise.all(
-          entries.filter((entry) => entry.isDirectory()).map((entry) => getRun(entry.name)),
-        );
-        return runs
-          .flatMap((run) => (run ? [run] : []))
-          .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-      } catch {
-        return [];
-      }
+      const roots = ['state', 'outputs'].map((section) =>
+        resolveLibraryPathFromRoot(readLibraryDir(), section, 'animation-sequence'),
+      );
+      const groups = await Promise.all(
+        roots.map((root) => readdir(root, { withFileTypes: true }).catch(() => [])),
+      );
+      const ids = [
+        ...new Set(
+          groups.flatMap((entries) =>
+            entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name),
+          ),
+        ),
+      ];
+      const runs = await Promise.all(ids.map(getRun));
+      return runs
+        .flatMap((run) => (run ? [run] : []))
+        .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
     },
     getRun,
     async createRun(input) {
       const runId = safeSegment(`anim-${createId()}`);
       const timestamp = now();
       const paths = createRunPaths(readLibraryDir(), runId);
+      const outputContext = readOutputContext?.(input.workspaceId) ?? {
+        libraryId: '',
+        rootPath: readLibraryDir(),
+      };
+      const outputInput = {
+        jobId: runId,
+        recipeId: 'animation-sequence',
+        createdAt: new Date(timestamp),
+        extension: '.gif',
+      };
+      paths.gifPath = captureWorkflowOutput(outputContext, outputInput);
+      paths.exportsDir = path.dirname(paths.gifPath);
+      paths.outputContext = outputContext.output ?? outputContext;
       const contract = createAnimationSequenceContract(input);
       const framePlan = createAnimationSequenceFramePlan(contract);
       const run: AnimationSequenceRun = {
@@ -333,6 +373,7 @@ export function createAnimationSequenceService({
         input,
         getCatalogImage,
         libraryDir: readLibraryDir(),
+        libraryContext: readOutputContext?.(),
       });
 
       if (!sourcePath || !(await fileExists(sourcePath))) {
@@ -358,7 +399,8 @@ export function createAnimationSequenceService({
         metadata.width === run.contract.dimensions.width &&
         metadata.height === run.contract.dimensions.height;
       const hasAlpha = metadata.hasAlpha === true;
-      if (!exactSize || (!hasAlpha && run.contract.background !== 'solid')) {
+      const hasTransparency = hasAlpha && !(await authoringSharp(sourcePath).stats()).isOpaque;
+      if (!exactSize) {
         frame.status = 'blocked';
         frame.rawPath = rawPath;
         frame.framePath = null;
@@ -368,7 +410,7 @@ export function createAnimationSequenceService({
         frame.blocked = {
           status: 'blocked',
           reasonKind: 'geometry_mismatch',
-          userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height} with native transparency.`,
+          userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height}.`,
           suggestion:
             'Attach an image that already matches the frame size. This workflow does not crop or scale it.',
         };
@@ -376,13 +418,17 @@ export function createAnimationSequenceService({
         return saveRun(run);
       }
 
-      if (run.contract.background === 'solid' && !hasAlpha) {
+      frame.warning =
+        !hasTransparency && run.contract.background === 'transparent'
+          ? 'Transparent output was requested, but this frame is opaque. The original frame is preserved.'
+          : null;
+      if (run.contract.background === 'solid') {
         await authoringSharp(sourcePath)
           .flatten({ background: run.contract.matteColor })
           .png()
           .toFile(framePath);
       } else {
-        await copyFile(sourcePath, framePath);
+        await authoringSharp(sourcePath).png().toFile(framePath);
       }
       const info = await authoringSharp(framePath).metadata();
 
@@ -449,6 +495,7 @@ export function createAnimationSequenceService({
         frames: gifFrames,
         loop: input.loop ?? run.contract.cyclic,
         matteColor: run.contract.matteColor,
+        transparent: run.contract.background !== 'solid',
       });
       await mkdir(run.paths.exportsDir, { recursive: true });
       await writeFile(run.paths.gifPath, buffer);
@@ -456,7 +503,9 @@ export function createAnimationSequenceService({
       const record: AnimationSequenceExportRecord = {
         format: 'gif',
         path: run.paths.gifPath,
-        publicUrl: toPublicRunAssetUrl(readLibraryDir(), run.paths.gifPath),
+        publicUrl: run.paths.outputContext
+          ? toPublicAssetUrl(run.paths.gifPath, run.paths.outputContext)
+          : toPublicRunAssetUrl(readLibraryDir(), run.paths.gifPath),
         frameCount: gifFrames.length,
         fps,
         loop: input.loop ?? run.contract.cyclic,

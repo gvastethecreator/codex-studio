@@ -70,6 +70,9 @@ export function getSpritesheetDividerState(dividers: string) {
 }
 
 export function getSpritesheetBackgroundDirective(background: string, customColor: string) {
+  if (background.toLowerCase() === 'preserve') return 'PRESERVE_SOURCE_UNLESS_REQUESTED_OTHERWISE';
+  if (background.toLowerCase() === 'transparent')
+    return 'NATIVE_TRANSPARENT_ALPHA_NO_PAINTED_CHECKERBOARD';
   if (background.includes('Green')) {
     return 'SOLID_GREEN_#00FF00. This is a key color for a later import, not transparent pixels.';
   }

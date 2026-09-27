@@ -25,6 +25,7 @@ import {
 interface RecipeRouterProps {
   activeRecipe: RecipeId | null;
   activeRecipeAliasId?: RecipeAliasId | null;
+  workspaceId?: string;
   generationConfig: ImageGenerationConfig;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -53,6 +54,7 @@ interface RecipeRouterProps {
 export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   activeRecipe,
   activeRecipeAliasId = null,
+  workspaceId,
   generationConfig,
   updateGenerationConfig,
   updateAttachment,
@@ -91,6 +93,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
       >
         {activeRecipe === 'animation-sequence' && (
           <LoadedAnimationSequenceRecipe
+            workspaceId={workspaceId}
             config={generationConfig}
             updateConfig={updateGenerationConfig}
             onGenerate={handleGenerate}
@@ -150,6 +153,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
         )}
         {activeRecipe === 'sprite-atlas' && (
           <LoadedSpriteAtlasRecipe
+            workspaceId={workspaceId}
             images={imagesWithConfig}
             config={generationConfig}
             updateConfig={updateGenerationConfig}

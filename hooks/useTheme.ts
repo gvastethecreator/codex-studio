@@ -5,6 +5,7 @@ import React, {
   useLayoutEffect,
   useMemo,
   useRef,
+  useState,
 } from 'react';
 
 import {
@@ -13,6 +14,7 @@ import {
   type WorkbenchAppearance,
 } from '../lib/workbenchAmbient';
 import { useLocalStorage } from './useLocalStorage';
+import { MOTION_CHANGE_EVENT, type MotionPreference } from '../lib/motionPreference';
 
 const STORAGE_KEY = 'codex-studio-accent-palette';
 
@@ -210,7 +212,16 @@ export function applyAccentPaletteToDocument(
   style.setProperty('--create-on-primary', onAccent);
 }
 
+export interface AppearancePreferences {
+  appearance: WorkbenchAppearance;
+  accent: string;
+  motion: MotionPreference;
+}
 type ThemeContextValue = {
+  preferences: AppearancePreferences;
+  savedPreferences: AppearancePreferences;
+  previewPreferences: (preferences: AppearancePreferences | null) => void;
+  commitPreferences: (preferences: AppearancePreferences) => void;
   appearance: WorkbenchAppearance;
   currentTheme: string;
   cycleTheme: () => void;
@@ -220,16 +231,22 @@ type ThemeContextValue = {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function useThemeState(): ThemeContextValue {
+  const [preview, setPreview] = useState<AppearancePreferences | null>(null);
+  const [storedMotion, setStoredMotion] = useLocalStorage<MotionPreference>(
+    'codex-studio-motion',
+    'system',
+  );
   const [storedPalette, setStoredPalette] = useLocalStorage<string>(STORAGE_KEY, 'Apricot');
   const palette =
-    ACCENT_PALETTES.find((entry) => entry.name === storedPalette) ?? ACCENT_PALETTES[0];
+    ACCENT_PALETTES.find((entry) => entry.name === (preview?.accent ?? storedPalette)) ??
+    ACCENT_PALETTES[0];
   const initialized = useRef(false);
 
   useLayoutEffect(() => {
     if (ACCENT_PALETTES.some((entry) => entry.name === storedPalette)) return;
     setStoredPalette(ACCENT_PALETTES[0].name);
   }, [setStoredPalette, storedPalette]);
-  const [appearance, setAppearance] = useLocalStorage<WorkbenchAppearance>(
+  const [storedAppearance, setAppearance] = useLocalStorage<WorkbenchAppearance>(
     APPEARANCE_STORAGE_KEY,
     typeof window === 'undefined'
       ? 'dark'
@@ -244,6 +261,30 @@ function useThemeState(): ThemeContextValue {
           }
         })(),
   );
+
+  const appearance = preview?.appearance ?? storedAppearance;
+  const motion = preview?.motion ?? storedMotion;
+  const savedPreferences = useMemo(
+    () => ({ appearance: storedAppearance, accent: storedPalette, motion: storedMotion }),
+    [storedAppearance, storedPalette, storedMotion],
+  );
+  const preferences = useMemo(
+    () => ({ appearance, accent: palette.name, motion }),
+    [appearance, palette.name, motion],
+  );
+  const commitPreferences = useCallback(
+    (value: AppearancePreferences) => {
+      setAppearance(value.appearance);
+      setStoredPalette(value.accent);
+      setStoredMotion(value.motion);
+      setPreview(null);
+    },
+    [setAppearance, setStoredPalette, setStoredMotion],
+  );
+  useLayoutEffect(() => {
+    document.documentElement.dataset.motion = motion;
+    window.dispatchEvent(new Event(MOTION_CHANGE_EVENT));
+  }, [motion]);
 
   const cycleTheme = useCallback(() => {
     setStoredPalette((current) => {
@@ -270,7 +311,7 @@ function useThemeState(): ThemeContextValue {
   useLayoutEffect(() => {
     const root = document.documentElement;
     const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
-    if (!initialized.current || reducedMotion?.matches) {
+    if (!initialized.current || reducedMotion?.matches || motion === 'reduced') {
       initialized.current = true;
       applyAccentPaletteToDocument(palette);
       return;
@@ -310,16 +351,28 @@ function useThemeState(): ThemeContextValue {
       cancelAnimationFrame(frame);
       reducedMotion?.removeEventListener('change', finish);
     };
-  }, [palette]);
+  }, [palette, motion]);
 
   return useMemo(
     () => ({
+      preferences,
+      savedPreferences,
+      previewPreferences: setPreview,
+      commitPreferences,
       appearance,
       currentTheme: palette.name,
       cycleTheme,
       toggleAppearance,
     }),
-    [appearance, cycleTheme, palette.name, toggleAppearance],
+    [
+      appearance,
+      cycleTheme,
+      palette.name,
+      toggleAppearance,
+      preferences,
+      savedPreferences,
+      commitPreferences,
+    ],
   );
 }
 

@@ -4,6 +4,7 @@ import {
   createRecipeDiscoveryProjection,
   createRecipesGridProjection,
   searchRecipeDiscoveryProjection,
+  groupRecipeDiscoveryEntries,
 } from './recipeDiscoveryProjection';
 import { RECIPE_DISCOVERY_CATALOG } from './recipeCatalog';
 
@@ -31,21 +32,32 @@ describe('recipeDiscoveryProjection', () => {
     ).toEqual(expect.arrayContaining(['spritesheet', 'character-lab', 'character-sprites']));
   });
 
-  it('keeps Character Lab alias cards out of the Recipes grid', () => {
+  it('groups all Character workflows identically in the Recipes grid and picker', () => {
     const projection = createRecipesGridProjection(RECIPE_DISCOVERY_CATALOG);
 
-    expect(projection.entries.map((entry) => entry.id)).toEqual([
-      'animation-sequence',
-      'styles',
-      'remaster',
-      'spritesheet',
-      'sprite-atlas',
-      'cinematic',
-      'character-lab',
+    const groups = groupRecipeDiscoveryEntries(projection.entries);
+    expect(groups).toEqual(groupRecipeDiscoveryEntries(createRecipeDiscoveryProjection().entries));
+    expect(
+      groups.find((group) => group.label === 'Character')?.entries.map((entry) => entry.id),
+    ).toEqual([
+      'character-poses',
+      'character-sprites',
+      'character-scenes',
+      'character-variants',
+      'character-transforms',
       'character',
-      'camera',
-      'timeline',
+      'character-lab',
     ]);
-    expect(projection.entries.some((entry) => entry.id === 'character-variants')).toBe(false);
+    expect(groups.flatMap((group) => group.entries)).toHaveLength(RECIPE_DISCOVERY_CATALOG.length);
+    expect(groups.map((group) => group.label)).toEqual([
+      'Create & Edit',
+      'Character',
+      'Camera & Story',
+      'Animation',
+      'Game Assets',
+    ]);
+    expect(
+      searchRecipeDiscoveryProjection({ query: 'Camera & Story' }).map((entry) => entry.id),
+    ).toEqual(expect.arrayContaining(['camera', 'cinematic', 'timeline']));
   });
 });

@@ -89,6 +89,7 @@ function migrateBaseSchema(database: Database) {
       created_at TEXT NOT NULL
     )
   `);
+  ensureColumn(database, 'libraries', 'kind', "TEXT NOT NULL DEFAULT 'library'");
   database.run(`
     CREATE TABLE IF NOT EXISTS catalog_images (
       id TEXT PRIMARY KEY,

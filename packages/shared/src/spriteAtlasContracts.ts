@@ -631,6 +631,7 @@ export const SPRITE_ATLAS_PRESET_DEFINITIONS = {
 } satisfies Record<SpriteAtlasPresetId, SpriteAtlasPresetDefinition>;
 
 export interface CreateSpriteAtlasRunRequest {
+  workspaceId?: string;
   title?: string;
   presetId?: SpriteAtlasPresetId;
   prompt?: string;
@@ -638,6 +639,7 @@ export interface CreateSpriteAtlasRunRequest {
   customStyle?: string | null;
   frameBudget?: SpriteAtlasFrameBudget;
   backgroundRemoval?: SpriteAtlasBackgroundRemoval;
+  transparent?: boolean;
   chromaKey?: string;
   qaMode?: 'standard' | 'strict';
 }
@@ -799,7 +801,7 @@ export function createSpriteAtlasContract(
     chromaKey: readString(input, 'chromaKey', '#00FF00'),
     camera: preset.camera,
     columns,
-    transparent: preset.transparent,
+    transparent: typeof input.transparent === 'boolean' ? input.transparent : preset.transparent,
     formats,
     cell: {
       width: cellWidth,

@@ -47,6 +47,8 @@ export type RecipeId =
   | null;
 
 export interface ImageGenerationConfig {
+  outputBackground?: 'workflow' | 'transparent';
+  characterLabDraft?: import('./lib/characterLabDraft').CharacterLabDraft;
   prompt?: string;
   recipeContext?: string; // Hidden technical instructions injected by recipes
   recipeId?: Exclude<RecipeId, null> | null;

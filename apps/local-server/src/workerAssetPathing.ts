@@ -1,4 +1,6 @@
-import { existsSync, mkdirSync, renameSync } from 'node:fs';
+import { existsSync, mkdirSync, copyFileSync, unlinkSync, readFileSync, constants } from 'node:fs';
+import { reserveOutputPath } from './outputDestination';
+import { formatOutputRelativePath } from '../../../packages/shared/src/outputLayout';
 import path from 'node:path';
 import {
   buildOutputAssetRelativePath,
@@ -44,10 +46,19 @@ export function inferGeneratedAssetMimeType(filePath: string) {
 
 export function moveGeneratedAssetToPath(filePath: string, targetPath: string) {
   if (path.resolve(filePath) === path.resolve(targetPath)) return targetPath;
-  if (existsSync(targetPath)) return targetPath;
+  if (existsSync(targetPath)) {
+    if (!existsSync(filePath)) return targetPath;
+    // Resume a copy completed before interruption, only when both files have identical bytes.
+    if (readFileSync(filePath).equals(readFileSync(targetPath))) {
+      unlinkSync(filePath);
+      return targetPath;
+    }
+    throw new Error('The reserved output path already contains a file. It was not overwritten.');
+  }
   mkdirSync(path.dirname(targetPath), { recursive: true });
   if (existsSync(filePath)) {
-    renameSync(filePath, targetPath);
+    copyFileSync(filePath, targetPath, constants.COPYFILE_EXCL);
+    unlinkSync(filePath);
     return targetPath;
   }
   return filePath;
@@ -99,22 +110,42 @@ export function createWorkerAssetPathing({
 }: CreateWorkerAssetPathingDependencies) {
   function resolveGeneratedAssetTargetPath(job: Job, providerId: string | null, extension: string) {
     const executionOptions = resolveExecutionOptions(job.execution);
-    const settings = readEditableStudioSettings({
-      getSetting,
-      setSetting,
-    });
-    const relativePath = buildOutputAssetRelativePath(settings, {
+    const settings = job.libraryContext?.outputOrganization
+      ? { outputOrganization: job.libraryContext.outputOrganization }
+      : readEditableStudioSettings({
+          getSetting,
+          setSetting,
+        });
+    const context = {
       jobId: job.id,
-      workspaceSlug: resolveJobWorkspaceSlug(job, getWorkspace, listWorkspaces),
+      workspaceSlug:
+        job.libraryContext?.workspaceSlug ??
+        resolveJobWorkspaceSlug(job, getWorkspace, listWorkspaces),
       providerId,
-      model: executionOptions.model,
+      model: job.execution?.providerOptions?.chatgpt?.image?.model ?? executionOptions.model,
       recipeId: job.sourceSpec?.recipeId ?? null,
       extension,
-    });
-    const targetPath = job.libraryContext
-      ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...relativePath.split(/[\\/]/))
-      : resolveLibraryPath(...relativePath.split(/[\\/]/));
-    return resolveUniquePath(targetPath);
+      createdAt: new Date(job.createdAt),
+    };
+    const relativePath = buildOutputAssetRelativePath(settings, context);
+    const targetPath = job.libraryContext?.output
+      ? path.resolve(
+          job.libraryContext.output.rootPath,
+          formatOutputRelativePath(settings.outputOrganization, context),
+        )
+      : job.libraryContext
+        ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...relativePath.split(/[\\/]/))
+        : resolveLibraryPath(...relativePath.split(/[\\/]/));
+    if (!job.libraryContext?.outputOrganization) return resolveUniquePath(targetPath);
+    const root =
+      job.libraryContext.output?.rootPath ?? path.join(job.libraryContext.rootPath, 'outputs');
+    mkdirSync(root, { recursive: true });
+    return reserveOutputPath(
+      root,
+      targetPath,
+      resolveLibraryPath('state', 'output-reservations'),
+      job.id,
+    );
   }
 
   function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {

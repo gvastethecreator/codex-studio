@@ -1,3 +1,8 @@
+import { captureWorkflowOutput } from './outputDestination';
+import {
+  formatOutputRelativePath,
+  validateOutputTemplate,
+} from '../../../packages/shared/src/outputLayout';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -27,6 +32,50 @@ function createJob(overrides: Partial<Job> = {}): Job {
 }
 
 describe('workerAssetPathing', () => {
+  it('uses the shared preview, reserves collisions, and keeps a captured destination', () => {
+    const root = mkdtempSync(path.join(os.tmpdir(), 'output-capture-'));
+    try {
+      const outputRoot = path.join(root, 'chosen');
+      mkdirSync(outputRoot);
+      const organization = {
+        subfolderTokens: ['workflow', 'date'] as const,
+        fileNameTemplate: '{workspace}-{time}',
+      };
+      const context = {
+        libraryId: 'main',
+        rootPath: root,
+        output: { libraryId: 'chosen', rootPath: outputRoot },
+        workspaceSlug: 'CON',
+        outputOrganization: { ...organization, subfolderTokens: [...organization.subfolderTokens] },
+      };
+      const input = {
+        jobId: 'one',
+        recipeId: 'camera',
+        extension: '.png',
+        createdAt: new Date(2026, 8, 26, 1, 2, 3),
+      };
+      const preview = formatOutputRelativePath(context.outputOrganization, {
+        ...input,
+        workspaceSlug: context.workspaceSlug,
+      });
+      const first = captureWorkflowOutput(context, input);
+      expect(first).toBe(path.resolve(outputRoot, preview));
+      expect(path.basename(first)).toBe('_CON-010203.png');
+      expect(captureWorkflowOutput(context, input)).toBe(first);
+      expect(captureWorkflowOutput(context, { ...input, jobId: 'two' })).toBe(
+        first.replace('.png', '-2.png'),
+      );
+      mkdirSync(path.dirname(first), { recursive: true });
+      writeFileSync(first, 'keep');
+      expect(captureWorkflowOutput(context, input)).toBe(first);
+      expect(readFileSync(first, 'utf8')).toBe('keep');
+      expect(validateOutputTemplate('{unknown}')).toContain('Unknown');
+      expect(validateOutputTemplate('../escape')).not.toBeNull();
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
   it('infers generated asset mime type from extension', () => {
     expect(inferGeneratedAssetMimeType('x.png')).toBe('image/png');
     expect(inferGeneratedAssetMimeType('x.jpg')).toBe('image/jpeg');
@@ -63,6 +112,15 @@ describe('workerAssetPathing', () => {
       expect(existsSync(organizedPath)).toBe(true);
       expect(existsSync(sourcePath)).toBe(false);
       expect(readFileSync(organizedPath, 'utf8')).toBe('pixel-data');
+      writeFileSync(sourcePath, 'pixel-data');
+      expect(pathing.moveGeneratedAssetToPath(sourcePath, organizedPath)).toBe(organizedPath);
+      expect(existsSync(sourcePath)).toBe(false);
+      writeFileSync(sourcePath, 'different-image');
+      expect(() => pathing.moveGeneratedAssetToPath(sourcePath, organizedPath)).toThrow(
+        'not overwritten',
+      );
+      expect(readFileSync(organizedPath, 'utf8')).toBe('pixel-data');
+      expect(readFileSync(sourcePath, 'utf8')).toBe('different-image');
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

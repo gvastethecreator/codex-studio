@@ -7,6 +7,9 @@ const PUBLIC_LIBRARY_ROOTS = [
   'masks',
   '.studio/references',
   '.studio/masks',
+  '.studio/thumbnails',
+  '.studio/.trash/assets',
+  '.studio/.trash/thumbnails',
 ] as const;
 
 function normalizeLibraryRelativePath(relativePath: string) {

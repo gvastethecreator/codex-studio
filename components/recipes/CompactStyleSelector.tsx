@@ -58,6 +58,7 @@ import type {
   StylePresetCatalogSearchResult,
 } from './stylePresetManifests';
 import { DEFAULT_SELECTED_STYLE_STRENGTH, type SelectedStyleSlot } from './styleLayerComposer';
+import { StyleBrowseSwitch } from './StyleBrowseSwitch';
 
 export interface CompactStyleSelectorProps {
   selectedStyles: SelectedStyleSlot[];
@@ -76,7 +77,9 @@ export interface CompactStyleSelectorProps {
   onToggleEnabled: (presetId: string) => void;
   onMove: (presetId: string, direction: -1 | 1) => void;
   onBrowseCatalog: () => void;
+  onExploreStyles: () => void;
   catalogOpen?: boolean;
+  catalogExpanded?: boolean;
 }
 
 type CatalogLoadState =
@@ -111,7 +114,9 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   onToggleEnabled,
   onMove,
   onBrowseCatalog,
+  onExploreStyles,
   catalogOpen = false,
+  catalogExpanded = false,
 }) => {
   const instanceId = useId();
   const rootRef = useRef<HTMLDivElement>(null);
@@ -936,22 +941,23 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         <span className="cs-count" aria-label={`${selectedCount} of ${maxSlots} style slots`}>
           {selectedCount} / {maxSlots}
         </span>
-        <button
-          type="button"
-          className="cs-catalog"
-          data-open-style-catalog
-          aria-label="Open style catalog"
-          aria-expanded={catalogOpen}
-          onClick={() => {
+        <StyleBrowseSwitch
+          catalogOpen={catalogOpen}
+          expanded={catalogExpanded}
+          focusReturn
+          onCatalog={() => {
             closeMenu(false);
             closeWeight(false);
             closePreview();
             onBrowseCatalog();
           }}
-        >
-          <LayoutGrid size={13} />
-          Catalog
-        </button>
+          onExplore={() => {
+            closeMenu(false);
+            closeWeight(false);
+            closePreview();
+            onExploreStyles();
+          }}
+        />
       </div>
       <div className="cs-rows">
         {selectedCount === 0 ? (

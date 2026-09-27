@@ -1,3 +1,6 @@
+import { useGenerationDraft } from '../../contexts/GenerationContext';
+import { OutputBackgroundControl } from '../create/OutputBackgroundControl';
+import type { Attachment } from '../../types';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { Suspense } from 'react';
 
@@ -10,7 +13,19 @@ const ImageEditorModal = React.lazy(() =>
   import('../ImageEditorModal').then((m) => ({ default: m.ImageEditorModal })),
 );
 
-export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
+function EditorBackground({ image, providerId }: { image: Attachment; providerId: string }) {
+  const { generationConfig, updateGenerationConfig } = useGenerationDraft();
+  return (
+    <OutputBackgroundControl
+      config={{ ...generationConfig, recipeId: null, recipeParams: null, attachments: [image] }}
+      providerId={providerId}
+      onChange={(value) => updateGenerationConfig('outputBackground', value)}
+    />
+  );
+}
+
+export const StudioImageOverlays: React.FC<StudioImageOverlaysProps & { providerId: string }> = ({
+  providerId,
   modalImage,
   imagesWithConfig,
   activeGenerationConfig,
@@ -76,6 +91,11 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
                 isGenerating={isEditingImage}
                 notice={imageEditNotice}
                 requireMask={requireMask}
+                backgroundControl={
+                  imageToEdit ? (
+                    <EditorBackground image={imageToEdit} providerId={providerId} />
+                  ) : null
+                }
               />
             </Suspense>
           </ErrorBoundary>

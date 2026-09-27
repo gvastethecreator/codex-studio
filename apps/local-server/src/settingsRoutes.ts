@@ -44,7 +44,14 @@ export function createSettingsRoutes({ readSettings, updateSettings }: SettingsR
       );
     }
 
-    return c.json(updateSettings(decodedBody.right));
+    try {
+      return c.json(updateSettings(decodedBody.right));
+    } catch (error) {
+      return c.json(
+        { error: error instanceof Error ? error.message : 'Unable to save settings.' },
+        400,
+      );
+    }
   });
 
   return routes;

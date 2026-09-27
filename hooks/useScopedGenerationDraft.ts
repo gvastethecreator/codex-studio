@@ -2,6 +2,7 @@ import { useCallback, useMemo } from 'react';
 import type { ImageGenerationConfig } from '../types';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import useIndexedDBStorage from './useIndexedDBStorage';
+import { restoreCharacterLabDraft, updateCharacterLabView } from '../lib/characterLabDraft';
 
 const EMPTY_DRAFTS: Record<string, ImageGenerationConfig> = {};
 
@@ -85,10 +86,18 @@ export function useScopedGenerationDraft(
       setDrafts((current) => {
         const active = current[scope] ?? initial;
         const sharedAttachments = collectWorkspaceAttachments(current, workspace, active);
-        const updated =
+        let updated =
           typeof update === 'function'
             ? update({ ...active, attachments: sharedAttachments })
             : update;
+        if (updated.recipeId === 'character-lab' && updated.characterLabDraft) {
+          updated = updateCharacterLabView(updated, updated.characterLabDraft.activeMode, {
+            prompt: updated.prompt ?? '',
+            labAspectRatio: updated.aspectRatio,
+            batchCount: updated.batchCount,
+            outputBackground: updated.outputBackground ?? 'workflow',
+          });
+        }
         return {
           ...shareWorkspaceAttachments(current, workspace, updated.attachments),
           [scope]: updated,
@@ -99,12 +108,20 @@ export function useScopedGenerationDraft(
   );
   const setRecipeDraft = useCallback(
     (recipeId: ImageGenerationConfig['recipeId'], value: ImageGenerationConfig) => {
-      setDrafts((current) => ({
-        ...shareWorkspaceAttachments(current, workspace, value.attachments),
-        [`${workspace}:${recipeId ?? 'studio'}`]: value,
-      }));
+      if (!legacyReady || !draftsReady) return;
+      setDrafts((current) => {
+        const key = `${workspace}:${recipeId ?? 'studio'}`;
+        const restored =
+          recipeId === 'character-lab'
+            ? restoreCharacterLabDraft(current[key] ?? initial, value)
+            : value;
+        return {
+          ...shareWorkspaceAttachments(current, workspace, restored.attachments),
+          [key]: restored,
+        };
+      });
     },
-    [workspace, setDrafts],
+    [workspace, setDrafts, initial, legacyReady, draftsReady],
   );
   return [config, setConfig, setRecipeDraft, legacyReady && draftsReady] as const;
 }

@@ -1,3 +1,4 @@
+import { CozyLoader as Loader2 } from '../CozyMascot';
 import { RecipeControls } from './RecipeWorkbenchContext';
 import React, { useState, useMemo } from 'react';
 import {
@@ -7,7 +8,6 @@ import {
   IconCamera as Camera,
   IconEye as Eye,
   IconRotate3d as Move3d,
-  IconLoader2 as Loader2,
   IconPointer as MousePointer2,
 } from '@tabler/icons-react';
 import type { ImageGenerationConfig } from '../../types';

@@ -1,3 +1,5 @@
+import type { SubscriptionHttpDiagnostic } from '../../../../packages/shared/src/subscriptionHttpDiagnostic';
+
 export type SubscriptionHttpErrorCode =
   | 'empty_response'
   | 'invalid_grant'
@@ -18,6 +20,7 @@ export class SubscriptionHttpError extends Error {
   readonly httpStatus: number | null;
   readonly providerCode: string | null;
   readonly retryAfterSeconds: number | null;
+  readonly diagnostic: SubscriptionHttpDiagnostic | null;
 
   constructor(
     message: string,
@@ -27,6 +30,7 @@ export class SubscriptionHttpError extends Error {
       httpStatus?: number | null;
       providerCode?: string | null;
       retryAfterSeconds?: number | null;
+      diagnostic?: SubscriptionHttpDiagnostic | null;
     },
   ) {
     super(message);
@@ -36,6 +40,7 @@ export class SubscriptionHttpError extends Error {
     this.httpStatus = options.httpStatus ?? null;
     this.providerCode = options.providerCode ?? null;
     this.retryAfterSeconds = options.retryAfterSeconds ?? null;
+    this.diagnostic = options.diagnostic ?? null;
   }
 }
 

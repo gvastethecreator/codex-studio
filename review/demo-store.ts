@@ -281,6 +281,9 @@ export function resetDemoStore(
   workspaces.set(SECOND_WORKSPACE, makeWorkspace(SECOND_WORKSPACE, 'Noir tests'));
   settings = {
     schemaVersion: 'editable-studio-settings/v1',
+    preferredWorkflow: 'default',
+    outputDirectory: null,
+    outputDirectoryId: null,
     defaultProviderId: 'codex',
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,

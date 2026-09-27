@@ -1,10 +1,17 @@
 import type { CodexServiceTier } from './types';
 import type { GenerationProviderId } from './generationContracts';
+import { isPreferredWorkflow, type PreferredWorkflow } from './workflowCatalog';
 
 const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
 
 export type StudioOutputMode = 'studio_library' | 'external_source';
-export type StudioOutputSubfolderToken = 'workspace' | 'date' | 'provider' | 'model' | 'recipe';
+export type StudioOutputSubfolderToken =
+  | 'workspace'
+  | 'date'
+  | 'provider'
+  | 'model'
+  | 'recipe'
+  | 'workflow';
 
 export interface ProviderDefaultSettings {
   providerId: GenerationProviderId;
@@ -19,6 +26,9 @@ export interface StudioOutputOrganizationSettings {
 }
 
 export interface EditableStudioSettings {
+  preferredWorkflow: PreferredWorkflow;
+  outputDirectory: string | null;
+  outputDirectoryId: string | null;
   schemaVersion: typeof EDITABLE_STUDIO_SETTINGS_VERSION;
   defaultProviderId: GenerationProviderId;
   defaultOutputMode: StudioOutputMode;
@@ -39,6 +49,8 @@ export type EditableProviderDefaultsPatch = Record<
 >;
 
 export interface EditableStudioSettingsPatch {
+  preferredWorkflow?: PreferredWorkflow;
+  outputDirectory?: string | null;
   defaultProviderId?: GenerationProviderId;
   defaultOutputMode?: StudioOutputMode;
   autoDetectOutputSources?: boolean;
@@ -81,9 +93,10 @@ function cleanSubfolderTokens(value: unknown): StudioOutputSubfolderToken[] | un
     'provider',
     'model',
     'recipe',
+    'workflow',
   ]);
   const tokens = value.filter((item): item is StudioOutputSubfolderToken => allowed.has(item));
-  return tokens.filter((token, index) => tokens.indexOf(token) === index).slice(0, 4);
+  return tokens.filter((token, index) => tokens.indexOf(token) === index).slice(0, 6);
 }
 
 function cleanFileNameTemplate(value: unknown) {
@@ -153,6 +166,9 @@ function sanitizeProviderDefaultsPatch(value: unknown): EditableProviderDefaults
 export function createDefaultEditableStudioSettings(): EditableStudioSettings {
   return {
     schemaVersion: EDITABLE_STUDIO_SETTINGS_VERSION,
+    preferredWorkflow: 'default',
+    outputDirectory: null,
+    outputDirectoryId: null,
     defaultProviderId: 'chatgpt',
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
@@ -181,6 +197,13 @@ export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStu
   if (!isRecord(value)) return {};
 
   const patch: EditableStudioSettingsPatch = {};
+  if (isPreferredWorkflow(value.preferredWorkflow))
+    patch.preferredWorkflow = value.preferredWorkflow;
+  if (
+    'outputDirectory' in value &&
+    (value.outputDirectory === null || typeof value.outputDirectory === 'string')
+  )
+    patch.outputDirectory = cleanString(value.outputDirectory);
   const defaultProviderId = cleanProviderId(value.defaultProviderId);
   const defaultOutputMode = cleanOutputMode(value.defaultOutputMode);
   const preferredLibraryId =
@@ -224,14 +247,17 @@ export function normalizeEditableStudioSettings(value: unknown): EditableStudioS
   const defaults = createDefaultEditableStudioSettings();
   if (!isRecord(value)) return defaults;
 
-  return mergeEditableStudioSettingsPatch(
-    {
-      ...defaults,
-      updatedAt: cleanString(value.updatedAt),
-    },
-    value,
-    cleanString(value.updatedAt),
-  );
+  return {
+    ...mergeEditableStudioSettingsPatch(
+      {
+        ...defaults,
+        updatedAt: cleanString(value.updatedAt),
+      },
+      value,
+      cleanString(value.updatedAt),
+    ),
+    outputDirectoryId: cleanString(value.outputDirectoryId),
+  };
 }
 
 export function mergeEditableStudioSettingsPatch(
@@ -272,6 +298,12 @@ export function mergeEditableStudioSettingsPatch(
 
   return {
     schemaVersion: EDITABLE_STUDIO_SETTINGS_VERSION,
+    preferredWorkflow: patch.preferredWorkflow ?? current.preferredWorkflow ?? 'default',
+    outputDirectory:
+      patch.outputDirectory !== undefined
+        ? patch.outputDirectory
+        : (current.outputDirectory ?? null),
+    outputDirectoryId: current.outputDirectoryId ?? null,
     defaultProviderId: patch.defaultProviderId ?? current.defaultProviderId,
     defaultOutputMode: patch.defaultOutputMode ?? current.defaultOutputMode,
     autoDetectOutputSources: patch.autoDetectOutputSources ?? current.autoDetectOutputSources,

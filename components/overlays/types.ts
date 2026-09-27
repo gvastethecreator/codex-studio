@@ -110,7 +110,7 @@ export interface StudioSystemOverlaysProps {
       isLoading: boolean;
       isSaving: boolean;
       refresh: () => void | Promise<void>;
-      update: (patch: EditableStudioSettingsPatch) => void | Promise<void>;
+      update: (patch: EditableStudioSettingsPatch) => void | Promise<void | boolean>;
     };
     providerDomain: {
       capabilities: GenerationProviderCapabilitiesResponse | null;

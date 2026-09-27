@@ -76,6 +76,7 @@ function renderSelector(selected: SelectedStyleSlot[] = []) {
   const onChooseStyle = vi.fn();
   const onRemove = vi.fn();
   const onBrowseCatalog = vi.fn();
+  const onExploreStyles = vi.fn();
   const onSetStrength = vi.fn();
   const onToggleEnabled = vi.fn();
   const onMove = vi.fn();
@@ -95,12 +96,14 @@ function renderSelector(selected: SelectedStyleSlot[] = []) {
       onToggleEnabled={onToggleEnabled}
       onMove={onMove}
       onBrowseCatalog={onBrowseCatalog}
+      onExploreStyles={onExploreStyles}
     />,
   );
   return {
     onChooseStyle,
     onRemove,
     onBrowseCatalog,
+    onExploreStyles,
     onSetStrength,
     onToggleEnabled,
     onMove,
@@ -110,7 +113,7 @@ function renderSelector(selected: SelectedStyleSlot[] = []) {
 
 describe('CompactStyleSelector', () => {
   it('keeps the tray empty until a style is added from the menu', async () => {
-    const { onChooseStyle, onBrowseCatalog } = renderSelector();
+    const { onChooseStyle, onBrowseCatalog, onExploreStyles } = renderSelector();
 
     expect(screen.getByRole('heading', { name: 'Style mix' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
@@ -128,6 +131,8 @@ describe('CompactStyleSelector', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Open style catalog' }));
     expect(onBrowseCatalog).toHaveBeenCalledTimes(1);
+    fireEvent.click(screen.getByRole('button', { name: 'Explore styles' }));
+    expect(onExploreStyles).toHaveBeenCalledTimes(1);
   });
 
   it('shows selected rows with intensity, pause, and remove', () => {

@@ -77,12 +77,14 @@ describe('prepareStudioGenerationRequest', () => {
         ...DEFAULT_GENERATION_CONFIG,
         prompt: 'generate a character lab action',
         recipeId: 'character-lab',
+        characterLabDraft: { subject: 'draft-only', activeMode: 'poses', views: {} },
         attachments: ['source', 'ref-1', 'ref-2', 'ref-3', 'extra'].map(attachment),
       },
     });
 
     expect(request.ok).toBe(true);
     if (!request.ok) return;
+    expect(request.finalConfig).not.toHaveProperty('characterLabDraft');
     expect(request.finalConfig.attachments.map((item) => item.id)).toEqual([
       'source',
       'ref-1',

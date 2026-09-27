@@ -8,6 +8,7 @@ import { SupportProjectPage } from './SupportProjectPage';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
+import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
 import { RecipeWorkbenchContext, type CanvasCompareChrome } from './recipes/RecipeWorkbenchContext';
 import ToastContainer from './ToastContainer';
 import { materializeCatalogEntryImageWithConfig } from '../lib/studioCatalogImageAdapter';
@@ -29,35 +30,6 @@ const StudioGenerationDock = React.lazy(() =>
   import('./shell/StudioGenerationDock').then((module) => ({
     default: module.StudioGenerationDock,
   })),
-);
-
-const StudioFirstReadyScrim: React.FC = () => (
-  <div
-    className="studio-first-ready-scrim pointer-events-none fixed inset-0 z-[45] flex items-center justify-center"
-    aria-hidden="true"
-  >
-    <div className="grid w-full max-w-5xl gap-8 px-6 sm:grid-cols-[minmax(0,0.9fr)_minmax(20rem,0.7fr)]">
-      <div className="space-y-5">
-        <div className="h-8 w-64 rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]" />
-        <div className="h-4 w-96 max-w-full rounded bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
-        <div className="grid max-w-2xl grid-cols-[7rem_minmax(0,1fr)] gap-4">
-          <div className="aspect-[2/3] rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]" />
-          <div className="space-y-3 rounded-xl studio-field p-4">
-            <div className="h-5 w-40 rounded bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]" />
-            <div className="h-3 w-full rounded bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
-            <div className="h-3 w-5/6 rounded bg-[color-mix(in_srgb,var(--wb-ink)_5%,transparent)]" />
-            <div className="h-3 w-2/3 rounded bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]" />
-          </div>
-        </div>
-      </div>
-      <div className="hidden space-y-3 sm:block">
-        <div className="h-4 w-52 rounded bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]" />
-        <div className="h-16 rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
-        <div className="h-16 rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_5%,transparent)]" />
-        <div className="h-28 rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]" />
-      </div>
-    </div>
-  </div>
 );
 
 const StudioGenerationDockFallback: React.FC = () => (
@@ -250,11 +222,31 @@ export const AppContent: React.FC = () => {
           />
         ) : null}
 
-        {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}
-
         {hasActiveOverlay ? (
-          <ErrorBoundary fallbackMessage="Could not load studio overlays.">
-            <Suspense fallback={null}>
+          <ErrorBoundary
+            fallbackMessage="Could not load studio overlays. Your workspace is still available."
+            onDismiss={() => {
+              const { imageOverlays, systemOverlays, workspaceOverlays, confirmationOverlay } =
+                shell.overlays;
+              imageOverlays.closeModal();
+              imageOverlays.closeEditor();
+              systemOverlays.closeDebugPanel();
+              systemOverlays.closeChatPanel();
+              systemOverlays.closeDashboard();
+              systemOverlays.closeOnboarding();
+              systemOverlays.settingsModule.close();
+              workspaceOverlays.closeTrash();
+              confirmationOverlay.closeConfirmation();
+            }}
+          >
+            <Suspense
+              fallback={
+                <LazySurfaceFallback
+                  label="Loading studio controls"
+                  className="pointer-events-none fixed inset-0 z-50 grid place-items-center studio-scrim"
+                />
+              }
+            >
               <AppOverlays controller={shell.overlays} />
             </Suspense>
           </ErrorBoundary>

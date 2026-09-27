@@ -26,7 +26,10 @@ import {
   updateJobFinalPrompt,
 } from './db/jobs';
 import { getSettingValue, setSettingValue } from './db/settings';
-import { ensureDefaultWorkspace } from './db/workspaces';
+import { ensureDefaultWorkspace, listWorkspaces } from './db/workspaces';
+import { workspaceOutputSlugMap } from './outputOrganization';
+import { sanitizeEditableStudioSettingsPatch } from '../../../packages/shared/src/studioSettings';
+import { validateOutputTemplate } from '../../../packages/shared/src/outputLayout';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
@@ -34,6 +37,8 @@ import {
   getDefaultLibrary,
   listLibraries,
   registerLibrary,
+  registerOutputDirectory,
+  getLibrary,
   removeLibrary,
   resolvePublicLibraryAssetRequest,
   setDefaultLibrary,
@@ -266,7 +271,27 @@ export async function createStudioApp(
     '/api/settings',
     createSettingsRoutes({
       readSettings: () => readEditableStudioSettings(settingsStorage),
-      updateSettings: (patch) => updateEditableStudioSettings(settingsStorage, patch),
+      updateSettings: (patch) => {
+        const input = sanitizeEditableStudioSettingsPatch(patch);
+        const rawTemplate = (patch as { outputOrganization?: { fileNameTemplate?: string } })
+          .outputOrganization?.fileNameTemplate;
+        if (rawTemplate !== undefined) {
+          const error = validateOutputTemplate(rawTemplate);
+          if (error) throw new Error(error);
+        }
+        const destination =
+          input.outputDirectory === undefined
+            ? undefined
+            : input.outputDirectory
+              ? registerOutputDirectory(input.outputDirectory)
+              : null;
+        return updateEditableStudioSettings(
+          settingsStorage,
+          patch,
+          new Date().toISOString(),
+          destination,
+        );
+      },
     }),
   );
 
@@ -319,10 +344,32 @@ export async function createStudioApp(
     }),
   );
 
+  const readLibraryContext = (workspaceId?: string) => {
+    const library = getDefaultLibrary();
+    const settings = readEditableStudioSettings(settingsStorage);
+    const destination = settings.outputDirectoryId ? getLibrary(settings.outputDirectoryId) : null;
+    if (settings.outputDirectoryId && !destination)
+      throw new Error(
+        'The selected output directory is no longer registered. Choose it again in Settings.',
+      );
+    return {
+      libraryId: library.id,
+      rootPath: library.path,
+      output: destination ? { libraryId: destination.id, rootPath: destination.path } : undefined,
+      outputOrganization: structuredClone(settings.outputOrganization),
+      workspaceSlug: workspaceOutputSlugMap(listWorkspaces()).get(workspaceId ?? 'default'),
+      sourceRoots: listLibraries().map((entry) => ({
+        rootPath: entry.path,
+        outputOnly: entry.kind === 'output',
+      })),
+    };
+  };
+
   app.route(
     '/api/sprite-atlas',
     createSpriteAtlasRoutes({
       readLibraryDir: () => getDefaultLibrary().path,
+      readOutputContext: readLibraryContext,
       getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
     }),
   );
@@ -331,6 +378,7 @@ export async function createStudioApp(
     '/api/animation-sequence',
     createAnimationSequenceRoutes({
       readLibraryDir: () => getDefaultLibrary().path,
+      readOutputContext: readLibraryContext,
       getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
     }),
   );
@@ -377,10 +425,7 @@ export async function createStudioApp(
           libraryContext?.libraryId,
         ),
       readLibraryDir: () => getDefaultLibrary().path,
-      readLibraryContext: () => {
-        const library = getDefaultLibrary();
-        return { libraryId: library.id, rootPath: library.path };
-      },
+      readLibraryContext,
       readEditableSettings: () => readEditableStudioSettings(settingsStorage),
       resolveBootstrapExecution: (providerId) =>
         resolveBootstrapProviderExecutionOptions(providerId, process.env, {

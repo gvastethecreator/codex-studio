@@ -1,4 +1,5 @@
-import { existsSync, mkdirSync, renameSync, rmSync } from 'node:fs';
+import { getLibraryForFilePath } from './libraries';
+import { existsSync, mkdirSync, copyFileSync, unlinkSync, constants, rmSync } from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { getDb } from './db/connection';
@@ -164,8 +165,14 @@ export function registerCatalogImage(input: {
   const createdAt = now();
   const libraryContext = { libraryId: library.id, rootPath: library.path };
   const publicUrl = toPublicAssetUrl(input.filePath, libraryContext);
+  const thumbnailLibrary = input.thumbnailPath ? getLibraryForFilePath(input.thumbnailPath) : null;
   const thumbnailUrl = input.thumbnailPath
-    ? toPublicAssetUrl(input.thumbnailPath, libraryContext)
+    ? toPublicAssetUrl(
+        input.thumbnailPath,
+        thumbnailLibrary
+          ? { libraryId: thumbnailLibrary.id, rootPath: thumbnailLibrary.path }
+          : libraryContext,
+      )
     : null;
   getDb()
     .query(`
@@ -447,11 +454,13 @@ export function softDeleteCatalogImage(id: string) {
   const image = getCatalogImage(id);
   if (!image || image.isDeleted) return image;
   const library = getLibrary(image.libraryId) ?? getDefaultLibrary();
-  const trashDir = resolveLibraryPathFromRoot(library.path, '.trash', 'assets');
+  const trashLibrary = library.kind === 'output' ? getDefaultLibrary() : library;
+  const trashDir = resolveLibraryPathFromRoot(trashLibrary.path, '.trash', 'assets');
   mkdirSync(trashDir, { recursive: true });
   const trashedPath = path.join(trashDir, `${id}-${path.basename(image.filePath)}`);
   if (existsSync(image.filePath)) {
-    renameSync(image.filePath, trashedPath);
+    copyFileSync(image.filePath, trashedPath, constants.COPYFILE_EXCL);
+    unlinkSync(image.filePath);
   }
   getDb()
     .query(
@@ -460,7 +469,7 @@ export function softDeleteCatalogImage(id: string) {
     .run(
       now(),
       trashedPath,
-      toPublicAssetUrl(trashedPath, { libraryId: library.id, rootPath: library.path }),
+      toPublicAssetUrl(trashedPath, { libraryId: trashLibrary.id, rootPath: trashLibrary.path }),
       id,
     );
   return getCatalogImage(id);
@@ -470,11 +479,18 @@ export function restoreCatalogImage(id: string) {
   const image = getCatalogImage(id);
   if (!image || !image.isDeleted) return image;
   const library = getLibrary(image.libraryId) ?? getDefaultLibrary();
-  const assetsDir = resolveLibraryPathFromRoot(library.path, 'assets');
+  const assetsDir =
+    library.kind === 'output' ? library.path : resolveLibraryPathFromRoot(library.path, 'assets');
   mkdirSync(assetsDir, { recursive: true });
-  const restoredPath = path.join(assetsDir, path.basename(image.filePath).replace(`${id}-`, ''));
+  const desired = path.parse(
+    path.join(assetsDir, path.basename(image.filePath).replace(`${id}-`, '')),
+  );
+  let restoredPath = path.join(desired.dir, `${desired.name}${desired.ext}`);
+  for (let index = 2; existsSync(restoredPath); index += 1)
+    restoredPath = path.join(desired.dir, `${desired.name}-${index}${desired.ext}`);
   if (existsSync(image.filePath)) {
-    renameSync(image.filePath, restoredPath);
+    copyFileSync(image.filePath, restoredPath, constants.COPYFILE_EXCL);
+    unlinkSync(image.filePath);
   }
   getDb()
     .query(

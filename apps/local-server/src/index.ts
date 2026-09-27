@@ -1,6 +1,7 @@
 import { getSettings } from './config';
 import { listRecoverableJobs } from './db/jobs';
 import { createStudioApp } from './appFactory';
+import { providerDispatchHeld, scheduleRecoverableJobs } from './providerDispatchHold';
 import { log } from './logger';
 import { serveWithPortFallback } from './portUtils';
 import { beginSignalShutdown, shutdownStudioServer } from './serverShutdown';
@@ -61,14 +62,22 @@ if (import.meta.main) {
   }
 
   const recoverableJobs = listRecoverableJobs();
-  for (const job of recoverableJobs) {
-    studio.workerController.enqueueJob(job);
-  }
-  if (recoverableJobs.length > 0) {
+  const recovery = scheduleRecoverableJobs(
+    recoverableJobs,
+    (job) => studio.workerController.enqueueJob(job),
+    providerDispatchHeld(),
+  );
+  if (recovery.held > 0) {
     log(
       'info',
       'worker',
-      `Recovered ${recoverableJobs.length} queued/running job(s) from the local database.`,
+      `Provider dispatch is held. Left ${recovery.held} queued/running job(s) unscheduled.`,
+    );
+  } else if (recovery.scheduled > 0) {
+    log(
+      'info',
+      'worker',
+      `Recovered ${recovery.scheduled} queued/running job(s) from the local database.`,
     );
   }
 }

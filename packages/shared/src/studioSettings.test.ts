@@ -10,6 +10,9 @@ describe('studioSettings', () => {
   it('creates non-secret editable settings separate from bootstrap config', () => {
     expect(createDefaultEditableStudioSettings()).toEqual({
       schemaVersion: 'editable-studio-settings/v1',
+      preferredWorkflow: 'default',
+      outputDirectory: null,
+      outputDirectoryId: null,
       defaultProviderId: 'chatgpt',
       defaultOutputMode: 'studio_library',
       autoDetectOutputSources: true,

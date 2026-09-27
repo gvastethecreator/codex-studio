@@ -12,7 +12,7 @@ async function writeFixturePng(filePath: string, color: string, size = 1024) {
     create: {
       width: size,
       height: size,
-      channels: 4,
+      channels: color === '#ff0000' ? 3 : 4,
       background: color,
     },
   })
@@ -56,9 +56,17 @@ describe('animationSequenceRoutes', () => {
       const sourceA = path.join(root, 'source-a.png');
       const sourceB = path.join(root, 'source-b.png');
       await writeFixturePng(sourceA, '#ff0000');
-      await writeFixturePng(sourceB, '#0000ff');
+      await writeFixturePng(sourceB, 'rgba(0,0,255,0.4)');
 
-      const routes = createAnimationSequenceRoutes({ readLibraryDir: () => root });
+      const routes = createAnimationSequenceRoutes({
+        readLibraryDir: () => root,
+        readOutputContext: () => ({
+          libraryId: 'test',
+          rootPath: root,
+          output: { libraryId: 'out', rootPath: path.join(root, 'final') },
+          outputOrganization: { subfolderTokens: [], fileNameTemplate: '{workflow}-{jobId}' },
+        }),
+      });
 
       const createResponse = await routes.request('/runs', {
         method: 'POST',
@@ -69,6 +77,7 @@ describe('animationSequenceRoutes', () => {
           fps: 8,
           aspectRatio: '1:1',
           cyclic: true,
+          background: 'transparent',
         }),
         headers: { 'Content-Type': 'application/json' },
       });
@@ -111,7 +120,7 @@ describe('animationSequenceRoutes', () => {
       expect(exportPayload.export).toMatchObject({
         format: 'gif',
         frameCount: 2,
-        publicUrl: `/library/outputs/animation-sequence/${run.id}/exports/animation.gif`,
+        publicUrl: `/library/out/animation-sequence-${run.id}.gif`,
       });
       expect(exportPayload.export.path).toBeUndefined();
 
@@ -127,6 +136,12 @@ describe('animationSequenceRoutes', () => {
         pages: 2,
         pageHeight: 1024,
       });
+
+      const savedRun = (await (await routes.request(`/runs/${run.id}`)).json()) as {
+        frames: Array<{ warning?: string }>;
+      };
+      expect(savedRun.frames[0].warning).toContain('opaque');
+      expect(savedRun.frames[1].warning).toBeNull();
 
       const qaResponse = await routes.request(`/runs/${run.id}/qa`, { method: 'POST' });
       expect(qaResponse.status).toBe(200);
@@ -295,7 +310,15 @@ describe('animationSequenceRoutes', () => {
         status: 'blocked',
         blocked: { reasonKind: 'geometry_mismatch' },
       });
-      const rawFile = path.join(root, 'outputs', 'animation-sequence', run.id, 'raw', 'frame-0002.png');
+      const rawFile = path.join(
+        root,
+        '.studio',
+        'state',
+        'animation-sequence',
+        run.id,
+        'raw',
+        'frame-0002.png',
+      );
       expect(readFileSync(rawFile).equals(readFileSync(smallPath))).toBe(true);
       await expect(partialForceResponse.json()).resolves.toMatchObject({
         export: { frameCount: 1 },

@@ -1,3 +1,4 @@
+import { CozyLoader as Loader2 } from './CozyMascot';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
@@ -6,7 +7,6 @@ import {
   IconChevronRight as ChevronRight,
   IconClock as Clock,
   IconStack as Layers,
-  IconLoader2 as Loader2,
   IconMaximize as Maximize2,
   IconRotate as RotateCcw,
   IconCircleX as XCircle,

@@ -67,6 +67,10 @@ export interface JobExecutionOptions {
 export interface JobLibraryContext {
   libraryId: string;
   rootPath: string;
+  output?: { libraryId: string; rootPath: string };
+  outputOrganization?: import('./studioSettings').StudioOutputOrganizationSettings;
+  workspaceSlug?: string;
+  sourceRoots?: { rootPath: string; outputOnly: boolean }[];
 }
 
 export type JobFinalizationState =

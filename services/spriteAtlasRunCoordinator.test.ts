@@ -13,7 +13,9 @@ describe('sprite atlas run coordinator', () => {
   it('offers a completed catalog image for confirmation', async () => {
     const run = {
       id: 'run-1',
-      rows: [{ id: 'idle', jobId: 'job-1', status: 'generating', catalogImageId: null, rawPath: null }],
+      rows: [
+        { id: 'idle', jobId: 'job-1', status: 'generating', catalogImageId: null, rawPath: null },
+      ],
     } as SpriteAtlasRun;
     const coordinator = createSpriteAtlasRunCoordinator({
       readJobStatus: async () => ({

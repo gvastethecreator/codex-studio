@@ -4,6 +4,11 @@ import type { ImageGenerationConfig } from '../types';
 import { resolveProviderMaxInputImages } from './composerProviderProjection';
 import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
 
+function withoutCharacterLabDraft<T extends Partial<ImageGenerationConfig>>(config: T) {
+  const { characterLabDraft: _draft, ...request } = config;
+  return request;
+}
+
 export type StudioGenerationRequest =
   | {
       ok: true;
@@ -95,14 +100,13 @@ export function prepareStudioGenerationRequest({
   return {
     ok: true,
     finalConfig: {
-      ...generationConfig,
-      ...configOverrides,
+      ...withoutCharacterLabDraft(generationConfig),
+      ...withoutCharacterLabDraft(configOverrides ?? {}),
       codexTransport:
         configOverrides?.codexTransport ?? generationConfig.codexTransport ?? defaultCodexTransport,
       attachments: finalAttachments.map((attachment) => ({
         ...attachment,
-        strength:
-          effectiveRecipeId === 'styles' ? stylesReferenceStrength : attachment.strength,
+        strength: effectiveRecipeId === 'styles' ? stylesReferenceStrength : attachment.strength,
       })),
       prompt: finalPrompt,
     },

@@ -1,4 +1,8 @@
 import {
+  CHARACTER_LAB_ACTION_PRIORITY,
+  resolveCharacterLabControls,
+} from './characterLabWorkflows';
+import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
 } from '../packages/shared/src/animationSequenceContracts';
@@ -150,6 +154,7 @@ function buildCharacterLabProviderDirectives(
   module: RecipeModule,
   params: Record<string, unknown>,
 ) {
+  const controls = resolveCharacterLabControls(params);
   const actionLabel = getString(params, 'actionLabel') || 'Front View';
   const actionPrompt = getString(params, 'actionPrompt') || 'Generate a clean character asset.';
   const mode = getString(params, 'mode') || 'poses';
@@ -174,6 +179,8 @@ function buildCharacterLabProviderDirectives(
           directive('Media Type', mediaType),
           directive('Capability', capability),
           directive('Action Prompt', actionPrompt),
+          directive('Action Priority', CHARACTER_LAB_ACTION_PRIORITY),
+          directive('Additional Instructions', getString(params, 'additionalPrompt')),
           directive('Frames', frames > 0 ? frames : 'not specified'),
           directive('Couples Or Group Pose', getBoolean(params, 'isCouplesPose') ? 'yes' : 'no'),
         ],
@@ -195,12 +202,16 @@ function buildCharacterLabProviderDirectives(
       {
         title: 'Character Controls',
         directives: [
-          directive('Style', getString(params, 'style')),
-          directive('Clothing', getString(params, 'clothing')),
-          directive('Body Type', getString(params, 'bodyType')),
-          directive('Expression', getString(params, 'expression')),
-          directive('Background Color', getString(params, 'backgroundColor')),
-          directive('Requested Aspect Ratio', getString(params, 'labAspectRatio')),
+          ...Object.entries({
+            Style: controls.style,
+            Clothing: controls.clothing,
+            'Body Type': controls.bodyType,
+            Expression: controls.expression,
+            'Background Color': controls.backgroundColor,
+            'Requested Aspect Ratio': controls.labAspectRatio,
+          })
+            .filter(([, value]) => value)
+            .map(([label, value]) => directive(label, value)),
         ],
       },
     ],
@@ -415,7 +426,9 @@ function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record
           directive('Rows', rowSummary),
           directive(
             'Runtime Output',
-            'Transparent frames, atlas PNG, and manifest.json.frame_layout.',
+            contract.transparent
+              ? 'Transparent frames, atlas PNG, and manifest.json.frame_layout.'
+              : 'Frames with the requested background, atlas PNG, and manifest.json.frame_layout.',
           ),
         ],
       },

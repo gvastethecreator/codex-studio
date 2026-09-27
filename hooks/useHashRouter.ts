@@ -1,3 +1,4 @@
+import { prefersReducedMotion } from '../lib/motionPreference';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RecipeId } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
@@ -131,6 +132,7 @@ export function useHashRouter() {
   const routeRef = useRef(route);
 
   const commitRoute = useCallback((nextRoute: HashRouterState, beforeCommit?: () => void) => {
+    window.dispatchEvent(new Event('studio-navigation'));
     const applyRoute = () => {
       beforeCommit?.();
 
@@ -143,7 +145,7 @@ export function useHashRouter() {
     };
 
     const direction = resolveHashRouterTransition(routeRef.current, nextRoute);
-    if (!direction || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (!direction || prefersReducedMotion()) {
       applyRoute();
       return;
     }

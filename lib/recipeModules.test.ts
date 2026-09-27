@@ -13,6 +13,88 @@ import {
 } from './recipeModules';
 
 describe('recipeModules', () => {
+  it('keeps one background choice consistent for image and text requests in every workflow', () => {
+    for (const recipeId of [null, ...listRecipeModules().map((module) => module.id)]) {
+      const recipeParams = recipeId ? createRecipeDefaultParams(getRecipeModule(recipeId)!) : null;
+      if (recipeId === 'styles' && recipeParams)
+        Object.assign(recipeParams, { presetId: 'alpha-fixture', presetName: 'Alpha fixture' });
+      const config = {
+        ...DEFAULT_GENERATION_CONFIG,
+        recipeId,
+        recipeParams,
+        outputBackground: 'transparent' as const,
+      };
+      const saved = structuredClone(config);
+      const spec = buildGenerationTaskSpecFromRecipe({
+        id: 'alpha',
+        providerId: 'chatgpt',
+        config,
+      });
+      expect(spec.output).toMatchObject({ background: 'transparent', mimeType: 'image/png' });
+      const instructions = JSON.stringify([
+        spec.metadata.recipeContext,
+        spec.metadata.recipeProviderDirectives,
+        spec.quality,
+      ]);
+      expect(instructions).not.toMatch(
+        /NEUTRAL_STUDIO_WHITE_OR_GREY|SOLID_GREEN_|Legacy key color/,
+      );
+      expect(config).toEqual(saved);
+      expect(spec.recipeParams).toEqual(recipeParams);
+      const maintained = buildGenerationTaskSpecFromRecipe({
+        id: 'maintain',
+        providerId: 'chatgpt',
+        config: {
+          ...config,
+          outputBackground: 'workflow',
+          attachments: [
+            {
+              id: 'source',
+              name: 'source.png',
+              dataUrl: 'data:image/png;base64,fixture',
+              strength: 1,
+            },
+          ],
+        },
+      });
+      expect(maintained.output.background).toBe('auto');
+      expect(maintained.quality?.constraints.join(' ')).toContain(
+        'maintain the primary input background',
+      );
+      expect(maintained.quality?.constraints.join(' ')).toContain(
+        'Follow explicit background or environment changes',
+      );
+      expect(
+        JSON.stringify([
+          maintained.metadata.recipeContext,
+          maintained.metadata.recipeProviderDirectives,
+          maintained.quality,
+        ]),
+      ).not.toMatch(
+        /NEUTRAL_STUDIO_WHITE_OR_GREY|SOLID_GREEN_|Legacy key color|NATIVE_TRANSPARENT_ALPHA/,
+      );
+      if (recipeId === 'sprite-atlas')
+        expect(maintained.metadata.spriteAtlas).toMatchObject({ transparent: false });
+      const textOnly = buildGenerationTaskSpecFromRecipe({
+        id: 'text-background',
+        providerId: 'chatgpt',
+        config: { ...config, outputBackground: 'workflow', prompt: 'A castle on a moonlit hill' },
+      });
+      expect(textOnly.output.background).toBe('auto');
+      expect(textOnly.quality?.constraints.join(' ')).toContain(
+        'follow the background or environment described in the user request',
+      );
+      expect(config).toEqual(saved);
+    }
+    const edit = buildGenerationTaskSpecFromRecipe({
+      id: 'unmasked-edit',
+      providerId: 'chatgpt',
+      task: 'image_edit',
+      config: { ...DEFAULT_GENERATION_CONFIG, outputBackground: 'workflow', attachments: [] },
+    });
+    expect(edit.quality?.constraints.join(' ')).toContain('maintain the primary input background');
+  });
+
   it('exposes declarative recipe modules with stable metadata', () => {
     const modules = listRecipeModules();
     const styles = getRecipeModule('styles');
@@ -326,7 +408,7 @@ describe('recipeModules', () => {
       style: 'Studio Headshot + Film Noir',
     });
     expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain('Style Slot 2');
-    expect(spec.quality.referenceRoles[0]?.instruction).toBe(
+    expect(spec.quality!.referenceRoles[0]?.instruction).toBe(
       'Use as source/reference material while applying the selected style layers.',
     );
   });
@@ -351,7 +433,7 @@ describe('recipeModules', () => {
           ],
         },
       });
-      return spec.quality.referenceRoles[index]?.instruction;
+      return spec.quality!.referenceRoles[index]?.instruction;
     };
 
     expect(instruction('preserve', 0)).toBe(
@@ -505,7 +587,7 @@ describe('recipeModules', () => {
       qualityPresetId: 'sprite_sheet',
       subject: 'compact courier',
       style: 'Pixel Art (16-bit): Retro console style, limited palette.',
-      color: '#000000',
+      color: null,
     });
     expect(spec.metadata.recipeContext).toContain('recipe: character-lab');
     expect(JSON.stringify(spec.metadata.recipeProviderDirectives)).toContain(

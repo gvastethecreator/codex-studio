@@ -28,7 +28,11 @@ function buildCharacterContext(params: RecipeContextParams) {
       shot_framing: shot.toUpperCase(),
       detailed_instruction: layoutInstruction,
       view_consistency: 'CHARACTER_GUIDED_MATCH',
-      background: 'NEUTRAL_STUDIO_WHITE_OR_GREY',
+      background: getBoolean(params, 'transparentBackground')
+        ? 'NATIVE_TRANSPARENT_ALPHA'
+        : getBoolean(params, 'preserveBackground')
+          ? 'PRESERVE_SOURCE_UNLESS_REQUESTED_OTHERWISE'
+          : 'NEUTRAL_STUDIO_WHITE_OR_GREY',
     },
     art_direction: {
       style_mode: style.toUpperCase(),

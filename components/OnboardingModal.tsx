@@ -1,4 +1,5 @@
 import { useDialogFocus } from '../hooks/useDialogFocus';
+import { CozyMascot, CozyLoader } from './CozyMascot';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
@@ -31,6 +32,7 @@ import {
 import { resolveOnboardingPrimaryAction } from '../lib/onboardingPrimaryAction';
 import { SubscriptionAuthControls } from './settings/SubscriptionAuthControls';
 import { ProviderBrandMark } from './ProviderBrandMark';
+import { providerBrandChipLabel } from '../lib/providerBrand';
 import {
   buildInAppSetupRequest,
   inAppSetupCanSubmit,
@@ -120,21 +122,19 @@ function CheckRow({
 
   return (
     <div className="grid grid-cols-[44px_minmax(0,1fr)_auto] items-start gap-4 border-b border-[color:var(--wb-line)] py-5 last:border-b-0 xl:grid-cols-[36px_minmax(0,1fr)_auto] xl:gap-3 xl:py-3">
-      <div className="grid size-11 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-blue-300 xl:size-9 xl:rounded-[var(--wb-radius)]">
+      <div className="grid size-11 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)] xl:size-9 xl:rounded-[var(--wb-radius)]">
         {icon}
       </div>
       <div className="min-w-0">
-        <h3 className="text-base font-semibold text-[color:var(--wb-ink)] xl:text-sm">{title}</h3>
-        <p className="mt-1 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-0.5 xl:text-xs xl:leading-5">
-          {detail}
-        </p>
+        <h3 className="text-base font-semibold text-[color:var(--wb-ink)] ">{title}</h3>
+        <p className="mt-1 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-0.5  ">{detail}</p>
         {meta ? (
-          <p className="mt-2 inline-flex max-w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-[11px] text-[color:var(--wb-muted)] xl:mt-1 xl:max-w-[18rem] xl:text-[length:var(--wbp-label)]">
+          <p className="mt-2 inline-flex max-w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] xl:mt-1 xl:max-w-[18rem] ">
             <span className="truncate">{meta}</span>
           </p>
         ) : null}
       </div>
-      <div className={`flex items-center gap-2 pt-1 text-sm xl:text-xs ${toneClass}`}>
+      <div className={`flex items-center gap-2 pt-1 text-sm  ${toneClass}`}>
         <span className="hidden sm:inline">{status}</span>
         <StatusIcon size={16} />
       </div>
@@ -161,40 +161,40 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
     <div className="mt-6 rounded-[var(--wb-radius)] border border-blue-500/2 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-[11px] font-semibold tracking-[0.24em] text-blue-300 xl:text-[length:var(--wbp-label)]">
+          <p className="text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] ">
             Codex setup handoff
           </p>
-          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1 xl:text-xs xl:leading-5">
+          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
             Prepared prompt for the repo-local setup skill.
           </p>
         </div>
         <button
           type="button"
           onClick={copyPrompt}
-          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-400/2 bg-blue-500/12 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-blue-100 transition-colors hover:bg-blue-500/20 xl:h-9 xl:px-2.5"
+          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-400/2 bg-blue-500/12 px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-blue-500/20 xl:h-9 xl:px-2.5"
         >
           <CopyIcon size={15} />
           {copyState === 'copied' ? 'Copied' : copyState === 'failed' ? 'Failed' : 'Copy'}
         </button>
       </div>
-      <p className="mt-3 truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-[11px] text-[color:var(--wb-muted)] xl:mt-2 xl:text-[length:var(--wbp-label)]">
+      <p className="mt-3 truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] xl:mt-2 ">
         {CODEX_STUDIO_SETUP_SKILL_PATH}
       </p>
       <textarea
         readOnly
         value={prompt}
         aria-label="Codex Studio setup prompt"
-        className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 font-mono text-[11px] leading-5 text-[color:var(--wb-ink)] outline-none xl:hidden"
+        className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 font-mono text-sm leading-5 text-[color:var(--wb-ink)] outline-none xl:hidden"
       />
       <details className="hidden xl:block">
-        <summary className="mt-2 cursor-pointer rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]">
+        <summary className="mt-2 cursor-pointer rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1.5 text-sm font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]">
           Prompt preview
         </summary>
         <textarea
           readOnly
           value={prompt}
           aria-label="Codex Studio setup prompt preview"
-          className="custom-scrollbar mt-2 h-20 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-[length:var(--wbp-label)] leading-4 text-[color:var(--wb-ink)] outline-none"
+          className="custom-scrollbar mt-2 h-20 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-sm leading-4 text-[color:var(--wb-ink)] outline-none"
         />
       </details>
     </div>
@@ -223,14 +223,14 @@ function CopyCommandButton({ command, label }: { command: string; label: string 
       className="flex min-h-11 min-w-0 items-center justify-between gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-left transition-colors hover:border-blue-400/2 hover:bg-blue-500/10 xl:min-h-9 xl:px-2.5"
     >
       <span className="min-w-0">
-        <span className="block text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+        <span className="block text-sm font-semibold tracking-normal text-[color:var(--wb-ink)]">
           {copyState === 'copied' ? 'Copied' : copyState === 'failed' ? 'Copy failed' : label}
         </span>
-        <span className="mt-1 block truncate font-mono text-[11px] text-[color:var(--wb-muted)] xl:mt-0.5 xl:text-[length:var(--wbp-label)]">
+        <span className="mt-1 block truncate font-mono text-sm text-[color:var(--wb-muted)] xl:mt-0.5 ">
           {command}
         </span>
       </span>
-      <CopyIcon size={15} className="shrink-0 text-blue-200" />
+      <CopyIcon size={15} className="shrink-0 text-[color:var(--wb-ink)]" />
     </button>
   );
 }
@@ -256,10 +256,10 @@ function InAppSetupForm({
 }) {
   return (
     <div className="mt-5 rounded-[var(--wb-radius)] border border-blue-500/2 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
-      <p className="text-[11px] font-semibold tracking-[0.24em] text-blue-300 xl:text-[length:var(--wbp-label)]">
+      <p className="text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] ">
         Studio Library
       </p>
-      <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1 xl:text-xs xl:leading-5">
+      <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
         Choose an absolute folder. Codex Studio stays in your home unless you pick another path.
       </p>
       <label className="mt-3 block xl:mt-2">
@@ -269,11 +269,11 @@ function InAppSetupForm({
           value={libraryPath}
           onChange={(event) => onLibraryPathChange(event.target.value)}
           aria-label="Studio Library path"
-          className="w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5 font-mono text-sm text-[color:var(--wb-ink)] outline-none focus:border-blue-400/2 xl:py-2 xl:text-xs"
+          className="w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5 font-mono text-sm text-[color:var(--wb-ink)] outline-none focus:border-blue-400/2 xl:py-2 "
         />
       </label>
       {cloudProvider ? (
-        <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-warning)]  xl:mt-2 xl:text-xs xl:leading-5">
+        <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-warning)]  xl:mt-2  ">
           <input
             type="checkbox"
             checked={confirmCloudSync}
@@ -286,7 +286,7 @@ function InAppSetupForm({
           </span>
         </label>
       ) : null}
-      <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-ink)] xl:mt-2 xl:text-xs xl:leading-5">
+      <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-ink)] xl:mt-2  ">
         <input
           type="checkbox"
           checked={consent}
@@ -296,7 +296,7 @@ function InAppSetupForm({
         <span>Create this Studio Library and write Bootstrap Configuration on this machine.</span>
       </label>
       {error ? (
-        <p className="mt-3 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-[color:var(--wb-danger)]  xl:mt-2 xl:text-xs xl:leading-5">
+        <p className="mt-3 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-[color:var(--wb-danger)]  xl:mt-2  ">
           {error}
         </p>
       ) : null}
@@ -322,15 +322,13 @@ function OptionalGrokRow({
       <div className="flex items-start gap-3">
         <ProviderBrandMark providerId="grok" size="md" />
         <div className="min-w-0 flex-1">
-          <p className="text-[11px] font-semibold tracking-[0.24em] text-[color:var(--wb-muted)] xl:text-[length:var(--wbp-label)]">
+          <p className="text-sm font-semibold tracking-normal text-[color:var(--wb-muted)] ">
             Optional provider
           </p>
-          <p className="mt-2 text-sm font-semibold text-[color:var(--wb-ink)] xl:mt-1 xl:text-xs">
+          <p className="mt-2 text-sm font-semibold text-[color:var(--wb-ink)] xl:mt-1 ">
             {row.label}
           </p>
-          <p className="mt-1 text-sm leading-6 text-[color:var(--wb-muted)] xl:text-xs xl:leading-5">
-            {row.detail}
-          </p>
+          <p className="mt-1 text-sm leading-6 text-[color:var(--wb-muted)]  ">{row.detail}</p>
         </div>
       </div>
       <div className="mt-3 flex flex-wrap gap-2 xl:mt-2">
@@ -339,7 +337,7 @@ function OptionalGrokRow({
             type="button"
             onClick={onLogin}
             disabled={busy}
-            className="inline-flex h-10 items-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-50 transition-colors hover:bg-accent-500/28 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
+            className="inline-flex h-10 items-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-accent-500/28 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
           >
             {busy ? 'Opening settings' : 'Sign in'}
           </button>
@@ -348,7 +346,7 @@ function OptionalGrokRow({
           <button
             type="button"
             onClick={onInstall}
-            className="inline-flex h-10 items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] xl:h-9"
+            className="inline-flex h-10 items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] xl:h-9"
           >
             Install Grok Build
           </button>
@@ -377,20 +375,20 @@ function CodexRuntimeRepairCard({
     <div className="mt-5 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/[0.06] p-4 xl:mt-3 xl:p-3">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0">
-          <p className="text-[11px] font-semibold tracking-[0.24em] text-[color:var(--wb-danger)]  xl:text-[length:var(--wbp-label)]">
+          <p className="text-sm font-semibold tracking-normal text-[color:var(--wb-danger)]  ">
             Codex runtime repair
           </p>
-          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-danger)]  xl:mt-1 xl:text-xs xl:leading-5">
+          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-danger)]  xl:mt-1  ">
             {primaryIssue?.message ?? runtime.recommendedAction}
           </p>
-          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1 xl:text-xs xl:leading-5">
+          <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
             {runtime.recommendedAction}
           </p>
         </div>
         <button
           type="button"
           onClick={onRefresh}
-          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] xl:h-9"
+          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] xl:h-9"
         >
           <RefreshCw size={14} />
           Refresh
@@ -398,14 +396,14 @@ function CodexRuntimeRepairCard({
       </div>
 
       <div className="mt-4 grid gap-2 xl:mt-3 xl:grid-cols-3">
-        <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-[11px] text-[color:var(--wb-muted)] xl:text-[length:var(--wbp-label)]">
+        <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] ">
           selected: {runtime.selectedExecutable}
         </p>
-        <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-[11px] text-[color:var(--wb-muted)] xl:text-[length:var(--wbp-label)]">
+        <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] ">
           command: {runtime.selectedCommand}
         </p>
         {selectedCandidate ? (
-          <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-[11px] text-[color:var(--wb-muted)] xl:text-[length:var(--wbp-label)]">
+          <p className="truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] ">
             source: {selectedCandidate.source}
           </p>
         ) : null}
@@ -421,11 +419,11 @@ function CodexRuntimeRepairCard({
         {runtime.candidates.slice(0, 5).map((candidate) => (
           <div
             key={`${candidate.source}-${candidate.executable}`}
-            className="grid grid-cols-[5.5rem_minmax(0,1fr)] gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1.5 font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]"
+            className="grid grid-cols-[5.5rem_minmax(0,1fr)] gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1.5 font-mono text-sm text-[color:var(--wb-muted)]"
           >
             <span
               className={
-                candidate.selected ? 'text-[color:var(--wb-danger)] ' : 'text-[color:var(--wb-dim)]'
+                candidate.selected ? 'text-[color:var(--wb-danger)] ' : 'text-[color:var(--wb-ink)]'
               }
             >
               {candidate.selected ? 'selected' : candidate.exists ? 'exists' : 'missing'}
@@ -450,10 +448,10 @@ function OnboardingLogPanel({ lines }: { lines: OnboardingLogLine[] }) {
       aria-label="Setup log"
       className="mt-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-3 xl:mt-3"
     >
-      <p className="text-[11px] font-semibold tracking-[0.24em] text-[color:var(--wb-muted)] xl:text-[length:var(--wbp-label)]">
+      <p className="text-sm font-semibold tracking-normal text-[color:var(--wb-muted)] ">
         Setup log
       </p>
-      <div className="custom-scrollbar mt-2 max-h-36 overflow-y-auto font-mono text-[11px] leading-5 text-[color:var(--wb-muted)] xl:max-h-28 xl:text-[length:var(--wbp-label)] xl:leading-4">
+      <div className="custom-scrollbar mt-2 max-h-36 overflow-y-auto font-mono text-sm leading-5 text-[color:var(--wb-muted)] xl:max-h-28  ">
         {lines.length === 0 ? (
           <p>{ONBOARDING_LOG_PANEL_EMPTY}</p>
         ) : (
@@ -474,7 +472,7 @@ function OnboardingLogPanel({ lines }: { lines: OnboardingLogLine[] }) {
 
 function checkIcon(id: OnboardingCheck['id']) {
   if (id === 'studio_library' || id === 'bootstrap_config') return <Folder size={18} />;
-  if (id === 'chatgpt_login') return <Sparkles size={18} />;
+  if (id === 'chatgpt_login') return <ProviderBrandMark providerId="chatgpt" size="sm" />;
   return <Terminal size={18} />;
 }
 
@@ -546,9 +544,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         ? 'error'
         : 'warning';
   const runtimeLabel = isDesktopRuntime ? 'Desktop runtime' : 'Web runtime';
-  const headline = 'Your space to create images.';
-  const intro =
-    'Create, explore styles, and keep working from your results in one organized workspace.';
+  const connectedProvider = probe?.facts.selectedProviderId ?? 'chatgpt';
+  const headline = isReady ? 'Ready for your next idea.' : 'Make yourself at home.';
+  const intro = 'Describe it, add a reference, and make it yours.';
   const setupPrompt = React.useMemo(
     () =>
       buildCodexStudioSetupPrompt({
@@ -682,13 +680,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   return (
     <AnimatePresence>
       {isOpen ? (
-        <div className="fixed inset-0 z-120">
+        <div className="fixed inset-0 z-120 grid place-items-center p-3 sm:p-4">
           <MotionDiv
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 studio-scrim backdrop-blur-md"
+            className="absolute inset-0 studio-scrim"
           />
 
           <MotionDiv
@@ -700,18 +698,18 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             initial={{ opacity: 0, scale: 0.98, y: 16 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 16 }}
-            className="studio-dialog relative z-10 flex h-full w-full flex-col overflow-hidden"
+            className="studio-dialog studio-onboarding relative z-10 flex flex-col overflow-hidden"
           >
-            <header className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-14 xl:px-10 xl:py-3">
+            <header className="onboarding-header flex shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
               <div className="flex min-w-0 items-center gap-3">
-                <div className="grid size-10 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-blue-300 xl:size-9 xl:rounded-[var(--wb-radius)]">
-                  <ImageIcon size={18} />
+                <div className="grid size-10 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)] xl:size-9 xl:rounded-[var(--wb-radius)]">
+                  <CozyMascot compact size={34} />
                 </div>
                 <div className="min-w-0">
                   <p className="truncate text-lg font-semibold tracking-normal text-[color:var(--wb-ink)] xl:text-base">
                     Cozy <span className="font-semibold text-[color:var(--wb-muted)]">Studio</span>
                   </p>
-                  <p className="mt-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
+                  <p className="mt-0.5 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)]">
                     {runtimeLabel}
                   </p>
                 </div>
@@ -722,10 +720,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   type="button"
                   onClick={onRefresh}
                   disabled={isChecking}
-                  className="hidden h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-60 sm:inline-flex"
+                  className="hidden h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-sm font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-60 sm:inline-flex"
                 >
-                  <RefreshCw size={14} className={isChecking ? 'animate-spin' : ''} />
-                  Status
+                  {isChecking ? <CozyLoader size={18} /> : <RefreshCw size={14} />}
+                  Refresh
                 </button>
                 <button
                   type="button"
@@ -738,65 +736,87 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
             </header>
 
-            <main className="custom-scrollbar min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-4 py-6 sm:px-8 sm:py-8 lg:px-10 xl:overflow-hidden xl:px-8 xl:py-4">
-              <div className="mx-auto w-full max-w-[100rem] xl:flex xl:h-full xl:max-w-[92rem] xl:flex-col">
-                <section className="border-b border-[color:var(--wb-line)] pb-7 sm:pb-9 xl:flex xl:items-end xl:justify-between xl:gap-8 xl:pb-3">
-                  <div className="min-w-0">
-                    <h2 className="max-w-4xl text-3xl font-semibold leading-tight text-[color:var(--wb-ink)] sm:text-5xl xl:text-4xl">
-                      {headline}
-                    </h2>
-                    <p className="mt-4 max-w-3xl text-base leading-7 text-[color:var(--wb-muted)] sm:text-lg xl:mt-2 xl:max-w-2xl xl:text-sm xl:leading-6">
-                      {error ? 'Could not query the local backend.' : intro}
+            <main className="onboarding-main custom-scrollbar min-h-0 overflow-y-auto overflow-x-hidden">
+              <div className="w-full">
+                <section className="onboarding-hero">
+                  <div>
+                    <h2>{headline}</h2>
+                    <p>
+                      {error
+                        ? 'Studio could not reach the local backend. Check the setup details below.'
+                        : intro}
                     </p>
-                    {error ? (
-                      <p className="mt-3 max-w-3xl rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 px-4 py-3 text-sm leading-6 text-[color:var(--wb-danger)]  xl:mt-2 xl:py-2 xl:text-xs xl:leading-5">
-                        {error}
-                      </p>
-                    ) : null}
                   </div>
+                  <CozyMascot size="clamp(96px, 14vw, 152px)" state="welcome" />
                 </section>
-
-                <section className="grid gap-7 py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(21rem,0.78fr)] xl:min-h-0 xl:flex-1 xl:grid-cols-[minmax(0,0.95fr)_minmax(28rem,0.75fr)] xl:gap-5 xl:py-4 2xl:grid-cols-[minmax(0,1.05fr)_minmax(30rem,0.7fr)]">
-                  <div className="min-w-0 xl:flex xl:min-h-0 xl:flex-col">
-                    <p className="text-[11px] font-semibold tracking-[0.24em] text-blue-300 xl:text-[length:var(--wbp-label)]">
-                      Suggested first connection
-                    </p>
-                    {primaryAction?.type === 'connect_chatgpt' ? (
-                      <div className="mt-5 max-w-xl xl:mt-3">
-                        <SubscriptionAuthControls providerId="codex" />
-                      </div>
-                    ) : null}
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <button
-                        type="button"
-                        onClick={onClose}
-                        className="studio-ghost-control inline-flex h-10 items-center rounded-[var(--wb-radius)] px-4 text-sm font-semibold"
-                      >
-                        Explore first
-                      </button>
-                      <button
-                        type="button"
-                        onClick={onOpenSettings}
-                        className="studio-ghost-control inline-flex h-10 items-center rounded-[var(--wb-radius)] px-4 text-sm font-semibold"
-                      >
-                        Other connections
-                      </button>
-                    </div>
-                    <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-3 xl:text-xs xl:leading-5">
-                      <Folder size={15} />
-                      Your library stays on this computer. The folder name can still say Codex Studio.
-                      Generation uses the connection you choose.
-                    </p>
-                  </div>
-
-                  <div className="min-w-0 lg:border-l lg:border-[color:var(--wb-line)] lg:pl-7 xl:min-h-0 xl:pl-6">
-                    <details>
-                      <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">
-                        {isReady ? 'All checks passed · Setup details' : 'Setup requirements'}
-                      </summary>
-                      <p className="mt-3 text-xs font-semibold text-[color:var(--wb-muted)]">
-                        Local environment check
+                <div className="onboarding-steps" aria-label="Three steps to your first image">
+                  {[
+                    {
+                      title: 'Pick a workflow',
+                      detail: 'Create, restyle, or work on a character.',
+                      Icon: ImageIcon,
+                    },
+                    {
+                      title: 'Add your idea',
+                      detail: 'Write a prompt or drop a reference.',
+                      Icon: Sparkles,
+                    },
+                    {
+                      title: 'Keep creating',
+                      detail: 'Generate, then reuse results from History.',
+                      Icon: Folder,
+                    },
+                  ].map(({ title, detail, Icon }, index) => (
+                    <MotionDiv
+                      key={title}
+                      className="onboarding-step"
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.16, delay: index * 0.06 }}
+                    >
+                      <span className="onboarding-step-marker">
+                        <Icon size={20} />
+                        <span>{index + 1}</span>
+                      </span>
+                      <h3>{title}</h3>
+                      <p>{detail}</p>
+                    </MotionDiv>
+                  ))}
+                </div>
+                <section className="onboarding-setup">
+                  <div className="onboarding-connection">
+                    <ProviderBrandMark providerId={connectedProvider} size="md" />
+                    <div className="min-w-0 flex-1">
+                      <h3>{providerBrandChipLabel(connectedProvider)}</h3>
+                      <p>
+                        {isReady
+                          ? 'Connected and ready to generate.'
+                          : 'Connect an account to start generating.'}
                       </p>
+                      {primaryAction?.type === 'connect_chatgpt' ? (
+                        <div className="mt-3">
+                          <SubscriptionAuthControls providerId="codex" />
+                        </div>
+                      ) : null}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={onOpenSettings}
+                      className="studio-ghost-control onboarding-connections-button"
+                    >
+                      <span className="flex items-center gap-1" aria-hidden="true">
+                        <ProviderBrandMark providerId="grok" size="xs" />
+                        <ProviderBrandMark providerId="google" size="xs" />
+                      </span>
+                      Connections
+                    </button>
+                  </div>
+                  <div className="onboarding-diagnostics min-w-0">
+                    <details open={showInAppSetup || Boolean(error)}>
+                      <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">
+                        {isReady ? 'Setup details' : 'Check setup'}
+                      </summary>
+
                       <div className="mt-4 xl:mt-3">
                         {probe ? (
                           probe.checks.map((row) => (
@@ -895,14 +915,14 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                           onConfirmCloudSyncChange={setConfirmCloudSync}
                         />
                       ) : null}
-                      <SetupPromptCard prompt={setupPrompt} />
+                      {!isReady && <SetupPromptCard prompt={setupPrompt} />}
                     </details>
                   </div>
                 </section>
               </div>
             </main>
 
-            <footer className="border-t border-[color:var(--wb-line)] px-5 py-4 sm:px-14 sm:py-5 xl:px-10 xl:py-3">
+            <footer className="onboarding-footer shrink-0 border-t border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-2 sm:flex-row">
                   {primaryAction?.type === 'connect_chatgpt' ? null : (
@@ -913,7 +933,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
                         (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy))
                       }
-                      className="inline-flex items-center justify-center gap-3 rounded-[var(--wb-radius)] bg-[color:var(--wb-accent)] px-7 py-3 text-sm font-semibold text-[color:var(--wb-ink)] shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
+                      className="studio-primary-control onboarding-start disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       {primaryAction?.type === 'start_app_server' && isStartingAppServer
                         ? 'Starting'
@@ -925,23 +945,23 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       <ArrowRight size={17} />
                     </button>
                   )}
-                  <button
-                    type="button"
-                    onClick={onRefresh}
-                    disabled={isChecking}
-                    className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-5 py-3 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
-                  >
-                    <RefreshCw size={16} className={isChecking ? 'animate-spin' : ''} />
-                    Refresh
-                  </button>
-                  {showAskCodex ? (
+                  {!isReady && (
+                    <button
+                      type="button"
+                      onClick={onClose}
+                      className="studio-ghost-control onboarding-start"
+                    >
+                      Explore first
+                    </button>
+                  )}
+                  {showAskCodex && !isReady ? (
                     <button
                       type="button"
                       onClick={() => void runHostAction('ask_codex')}
                       disabled={hostBusy}
                       className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-5 py-3 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                     >
-                      <Terminal size={16} />
+                      <ProviderBrandMark providerId="codex" size="xs" />
                       {hostBusy ? 'Opening terminal' : ONBOARDING_ASK_CODEX_LABEL}
                     </button>
                   ) : null}
@@ -950,7 +970,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       type="button"
                       onClick={onStartAppServer}
                       disabled={isStartingAppServer}
-                      className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-500/2 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-blue-200 transition-colors hover:bg-blue-500/18 disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
+                      className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-blue-500/2 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-blue-500/18 disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                     >
                       <Play size={16} />
                       {isStartingAppServer ? 'Starting' : 'Start app-server'}
@@ -958,13 +978,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   ) : null}
                 </div>
                 {hostError ? (
-                  <p className="rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-[color:var(--wb-danger)]  xl:text-xs xl:leading-5">
+                  <p className="rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-[color:var(--wb-danger)]   ">
                     {hostError}
                   </p>
                 ) : (
                   <div className="hidden items-center gap-2 text-sm text-[color:var(--wb-muted)] md:flex">
                     <Folder size={15} />
-                    Local-first. Private by design. Built for creators.
+                    Files stay on this device.
                   </div>
                 )}
               </div>

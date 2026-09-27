@@ -214,7 +214,10 @@ describe('spriteAtlasRoutes', () => {
         true,
       );
 
-      const frameRaw = await sharp(path.join(run.paths.framesDir, 'idle-01.png')).ensureAlpha().raw().toBuffer();
+      const frameRaw = await sharp(path.join(run.paths.framesDir, 'idle-01.png'))
+        .ensureAlpha()
+        .raw()
+        .toBuffer();
       const cropRaw = await sharp(path.join(root, 'idle.png'))
         .extract({ left: 0, top: 0, width: 16, height: 16 })
         .ensureAlpha()
@@ -275,10 +278,15 @@ describe('spriteAtlasRoutes', () => {
         });
         expect(imported.status).toBe(200);
       }
-      const composeResponse = await routes.request(`/runs/${tileset.id}/compose`, { method: 'POST' });
+      const composeResponse = await routes.request(`/runs/${tileset.id}/compose`, {
+        method: 'POST',
+      });
       expect(composeResponse.status).toBe(200);
       const qaResponse = await routes.request(`/runs/${tileset.id}/qa`, { method: 'POST' });
-      const qa = (await qaResponse.json()) as { status: string; qa: { ok: boolean; issues: string[] } };
+      const qa = (await qaResponse.json()) as {
+        status: string;
+        qa: { ok: boolean; issues: string[] };
+      };
       expect(qa.status).not.toBe('qa_passed');
       expect(qa.qa.ok).toBe(false);
       expect(qa.qa.issues.some((issue) => issue.includes('repeat mode'))).toBe(true);
@@ -308,16 +316,18 @@ describe('spriteAtlasRoutes', () => {
         });
         expect(imported.status).toBe(200);
       }
-      const textureCompose = await routes.request(`/runs/${texture.id}/compose`, { method: 'POST' });
+      const textureCompose = await routes.request(`/runs/${texture.id}/compose`, {
+        method: 'POST',
+      });
       expect(textureCompose.status).toBe(200);
       const textureQa = await routes.request(`/runs/${texture.id}/qa`, { method: 'POST' });
       await expect(textureQa.json()).resolves.toMatchObject({
         status: 'qa_passed',
         qa: { ok: true },
       });
-      expect(existsSync(path.join(path.dirname(texture.paths.qaReportPath), 'stone-repeat-3x3.png'))).toBe(
-        true,
-      );
+      expect(
+        existsSync(path.join(path.dirname(texture.paths.qaReportPath), 'stone-repeat-3x3.png')),
+      ).toBe(true);
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

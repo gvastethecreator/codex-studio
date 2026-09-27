@@ -11,6 +11,9 @@ import {
 } from './useGenerationConfig';
 import { createReferenceHandoff } from '../services/studio-api/jobs';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
+import { activateCharacterLabView, updateCharacterLabView } from '../lib/characterLabDraft';
+import type { ImageGenerationConfig } from '../types';
+import { get, set } from '../utils/idb';
 
 vi.mock('../utils/idb', () => ({
   get: vi.fn(async () => undefined),
@@ -297,6 +300,117 @@ describe('normalizeGenerationConfigForCodexModels', () => {
 });
 
 describe('workspace recipe drafts', () => {
+  it('hydrates, restores and persists Character views without mixing workspaces or losing identity', async () => {
+    const oldDraft: ImageGenerationConfig = {
+      ...DEFAULT_GENERATION_CONFIG,
+      recipeId: 'character-lab',
+      prompt: 'Rain outside',
+      recipeParams: {
+        mode: 'scenes',
+        actionId: 'scenes:char_workplace',
+        subject: 'A traveler',
+        style: 'Watercolor',
+        labAspectRatio: '16:9',
+      },
+      attachments: [
+        {
+          id: 'source',
+          name: 'character.webp',
+          dataUrl: 'data:image/webp;base64,AAAA',
+          strength: 0.5,
+        },
+      ],
+    };
+    const stored = new Map<IDBValidKey, unknown>([
+      ['generation-drafts', { 'workspace:character-lab': oldDraft }],
+    ]);
+    vi.mocked(get).mockImplementation(async (key) => structuredClone(stored.get(key)) as never);
+    vi.mocked(set).mockImplementation(async (key, value) => {
+      stored.set(key, structuredClone(value));
+    });
+    const { result, rerender, unmount } = renderHook(
+      ({ scopeKey }) => useGenerationConfig({ log: vi.fn(), scopeKey }),
+      { initialProps: { scopeKey: 'workspace:character-lab' } },
+    );
+    expect(result.current.isDraftReady).toBe(false);
+    act(() =>
+      result.current.setGenerationConfig((current) => activateCharacterLabView(current, 'poses')),
+    );
+    await waitFor(() => expect(result.current.isDraftReady).toBe(true));
+    expect(result.current.generationConfig.recipeParams?.actionId).toBe('scenes:char_workplace');
+    act(() =>
+      result.current.setGenerationConfig((current) => activateCharacterLabView(current, 'poses')),
+    );
+    expect(result.current.generationConfig.aspectRatio).toBe('2:3');
+    act(() =>
+      result.current.setGenerationConfig((current) =>
+        updateCharacterLabView(
+          current,
+          'poses',
+          { expression: 'Happy' },
+          'A traveler with a red scarf',
+        ),
+      ),
+    );
+    act(() => result.current.updateGenerationConfig('prompt', 'Warm colors'));
+    act(() =>
+      result.current.setGenerationConfig((current) => activateCharacterLabView(current, 'scenes')),
+    );
+    expect(result.current.generationConfig).toMatchObject({
+      prompt: 'Rain outside',
+      recipeParams: { style: 'Watercolor', subject: 'A traveler with a red scarf' },
+    });
+    act(() =>
+      result.current.setRecipeDraft('character-lab', {
+        ...oldDraft,
+        prompt: 'Compiled image prompt',
+        recipeParams: {
+          ...oldDraft.recipeParams,
+          actionId: 'scenes:char_home',
+          additionalPrompt: 'Evening light',
+        },
+      }),
+    );
+    expect(result.current.generationConfig.prompt).toBe('Evening light');
+    act(() =>
+      result.current.setGenerationConfig((current) => activateCharacterLabView(current, 'poses')),
+    );
+    expect(result.current.generationConfig).toMatchObject({
+      prompt: 'Warm colors',
+      recipeParams: { expression: 'Happy' },
+    });
+    expect(result.current.generationConfig.attachments[0]?.id).toBe('source');
+    rerender({ scopeKey: 'another:character-lab' });
+    expect(result.current.generationConfig.characterLabDraft).toBeUndefined();
+    expect(result.current.generationConfig.attachments).toEqual([]);
+    act(() =>
+      result.current.setGenerationConfig((current) => activateCharacterLabView(current, 'effects')),
+    );
+    expect(result.current.generationConfig.recipeParams?.subject).toBe('');
+    rerender({ scopeKey: 'workspace:character-lab' });
+    await waitFor(() => {
+      const drafts = stored.get('generation-drafts') as Record<string, ImageGenerationConfig>;
+      expect(drafts['workspace:character-lab'].characterLabDraft?.views.poses?.prompt).toBe(
+        'Warm colors',
+      );
+    });
+    unmount();
+    const reloaded = renderHook(() =>
+      useGenerationConfig({ log: vi.fn(), scopeKey: 'workspace:character-lab' }),
+    );
+    await waitFor(() => expect(reloaded.result.current.isDraftReady).toBe(true));
+    expect(reloaded.result.current.generationConfig).toMatchObject({
+      prompt: 'Warm colors',
+      recipeParams: { expression: 'Happy' },
+    });
+    expect(reloaded.result.current.generationConfig.characterLabDraft?.views.scenes?.prompt).toBe(
+      'Evening light',
+    );
+    reloaded.unmount();
+    vi.mocked(get).mockImplementation(async () => undefined);
+    vi.mocked(set).mockImplementation(async () => undefined);
+  });
+
   it('restores each prompt while sharing references across workspace recipes', async () => {
     const { result, rerender } = renderHook(
       ({ scopeKey }) => useGenerationConfig({ log: vi.fn(), scopeKey }),

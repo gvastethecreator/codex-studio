@@ -32,7 +32,7 @@ describe('Bun.Image hot path', () => {
       const encoded = readFileSync(thumbnailPath);
       const metadata = await readImageMetadata(encoded);
 
-      expect(thumbnailPath).toContain(`${path.sep}outputs${path.sep}thumbnails${path.sep}`);
+      expect(thumbnailPath).toContain(`${path.sep}.studio${path.sep}thumbnails${path.sep}`);
       expect(isWebpPayload(encoded)).toBe(true);
       expect(metadata.format).toBe('webp');
       expect(metadata.width ?? 0).toBeLessThanOrEqual(256);

@@ -108,6 +108,7 @@ export interface AnimationSequenceBlockedReason {
 }
 
 export interface AnimationSequenceRunPaths {
+  outputContext?: { libraryId: string; rootPath: string };
   runDir: string;
   requestPath: string;
   statusPath: string;
@@ -122,6 +123,7 @@ export interface AnimationSequenceRunPaths {
 }
 
 export interface AnimationSequenceFrameState {
+  warning?: string | null;
   id: string;
   index: number;
   ordinal: number;
@@ -185,6 +187,7 @@ export interface AnimationSequenceRunView extends Omit<
 }
 
 export interface CreateAnimationSequenceRunRequest {
+  workspaceId?: string;
   title?: string;
   prompt?: string;
   identityAnchor?: string;

@@ -47,6 +47,7 @@ describe('buildEditGenerationConfig', () => {
     const config = buildEditGenerationConfig({
       generationConfig: {
         ...DEFAULT_GENERATION_CONFIG,
+        outputBackground: 'transparent',
         attachments: [
           {
             id: 'att-old',
@@ -67,6 +68,7 @@ describe('buildEditGenerationConfig', () => {
     });
 
     expect(config.prompt).toBe('keep the face and change only the jacket');
+    expect(config.outputBackground).toBe('transparent');
     expect(config.attachments).toHaveLength(1);
     expect(config.attachments[0]?.id.startsWith('mask-')).toBe(true);
     expect(config.attachments[0]?.dataUrl).toBe('data:image/png;base64,MASK');

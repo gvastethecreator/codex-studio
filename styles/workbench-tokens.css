@@ -8,6 +8,7 @@
   --wba-accent: #fcb247;
   --wb-accent-fill: color-mix(in srgb, var(--wb-accent) 50%, #0a0a0a);
   --wb-on-fill: #f4f4f4;
+  --studio-action-height: 32px;
 }
 
 :root,
@@ -24,6 +25,7 @@
   --wb-disabled: #777;
   --wb-line: #1f1f1f;
   --wb-border: #2e2e2e;
+  --wb-control-border: color-mix(in srgb, var(--wb-muted) 50%, var(--wb-panel));
   --wb-selection: #626262;
   --wb-radius: 4px;
   --wb-control-height: 30px;

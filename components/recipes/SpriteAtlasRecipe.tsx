@@ -1,3 +1,5 @@
+import { projectGenerationBackgroundParams } from '../../lib/generationBackground';
+import { CozyLoader as Loader2 } from '../CozyMascot';
 import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
 import {
@@ -8,7 +10,6 @@ import {
   IconFileImport as FileImport,
   IconFileText as FileText,
   IconFolder as Folder,
-  IconLoader2 as Loader2,
   IconPackage as Package,
   IconPlus as Plus,
   IconRefresh as RefreshCw,
@@ -49,6 +50,7 @@ import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
   images?: GeneratedImageWithConfig[];
+  workspaceId?: string;
   config: ImageGenerationConfig;
   updateConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -256,6 +258,7 @@ function buildPipeline(run: SpriteAtlasRun | null) {
 
 export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   images = [],
+  workspaceId,
   config,
   updateConfig,
   onGenerate,
@@ -284,7 +287,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   const [message, setMessage] = React.useState<string | null>(null);
 
   const params = getParams(config);
-  const contract = React.useMemo(() => createSpriteAtlasContract(params), [params]);
+  const contract = React.useMemo(
+    () =>
+      createSpriteAtlasContract({
+        ...params,
+        ...projectGenerationBackgroundParams({
+          ...config,
+          recipeId: 'sprite-atlas',
+          recipeParams: params,
+        }),
+      }),
+    [params, config],
+  );
   const selectedRow =
     activeRun?.rows.find((row) => row.id === selectedRowId) ?? activeRun?.rows[0] ?? null;
   const selectedRunId = activeRun?.id ?? null;
@@ -458,10 +472,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     void runAction(
       async () =>
         createSpriteAtlasRun({
+          workspaceId,
           title: `${contract.presetId} atlas`,
           prompt: config.prompt ?? '',
           ...params,
-          backgroundRemoval: 'alpha',
+          backgroundRemoval: contract.backgroundRemoval,
+          transparent: contract.transparent,
         }),
       'Run prepared.',
     );
@@ -486,12 +502,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
       selectedPrompt || selectedRow.id,
       {
         recipeId: 'sprite-atlas',
+        outputBackground: activeRun.contract.transparent ? 'transparent' : 'workflow',
         attachments: [],
         recipeParams: {
           ...params,
           runId,
           rowId,
           presetId: activeRun.contract.presetId,
+          transparent: activeRun.contract.transparent,
         },
       },
       {
@@ -654,7 +672,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           className="inline-flex min-h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-info)]  hover:bg-sky-500/15 disabled:opacity-50"
                         >
                           <ClipboardList size={15} />
-                          {activeProviderId ? `Queue with ${activeProviderId}` : 'Choose a provider'}
+                          {activeProviderId
+                            ? `Queue with ${activeProviderId}`
+                            : 'Choose a provider'}
                         </button>
                         <button
                           type="button"
@@ -715,7 +735,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           {selectedPrompt || 'Prompt unavailable.'}
                         </pre>
                       </div>
-                      {activeRun.contract.rows.find((row) => row.id === selectedRow.id)?.mirrorPair ? (
+                      {activeRun.contract.rows.find((row) => row.id === selectedRow.id)
+                        ?.mirrorPair ? (
                         <p className="text-xs text-[color:var(--wb-muted)]">
                           This app does not mirror the paired row.
                         </p>
@@ -845,7 +866,6 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     ]}
                   />
                   <div className="col-span-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-2 py-2 text-xs text-[color:var(--wb-muted)]">
-                    New runs ask for native transparency.
                     {contract.workflowLane === 'static-items'
                       ? ' Irregular items stay in spritesheet-expert.'
                       : ` Lane: ${contract.workflowLane}.`}

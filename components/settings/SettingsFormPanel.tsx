@@ -1,8 +1,9 @@
-import { useTheme } from '../../hooks/useTheme';
+import { CozyLoader as LoaderCircle } from '../CozyMascot';
+import { SettingsAppearancePanel } from './SettingsAppearancePanel';
+import { SettingsOutputPanel } from './SettingsOutputPanel';
 import {
   IconDatabase as Database,
   IconFolderOpen as FolderOpen,
-  IconLoader as LoaderCircle,
   IconRotate as RotateCcw,
   IconSettings as Settings,
 } from '@tabler/icons-react';
@@ -13,10 +14,8 @@ import type {
   GenerationProviderRuntimePreflightResponse,
 } from '../../packages/shared/src/providerCapabilities';
 import {
-  encodeSubfolderTokens,
   EXTERNAL_SCAN_PATH_HELP,
   EXTERNAL_SCAN_PATH_LABEL,
-  OUTPUT_SUBFOLDER_PRESETS,
   type StudioSettingsFormState,
 } from '../../lib/studioSettingsForm';
 import { type StudioSettingsDomainId } from '../../lib/studioSettingsDomains';
@@ -47,18 +46,15 @@ export function SettingsFormPanel({
   onResetStudio,
   isResettingStudio,
 }: SettingsFormPanelProps) {
-  const { appearance, toggleAppearance, currentTheme, cycleTheme } = useTheme();
   const {
     preferredOutputPath,
-    outputSubfolderPreset,
-    outputFileNameTemplate,
     autoDetectOutputSources,
     commandCenterCompactMode,
     intentionalStylesV1,
   } = formState;
 
   return (
-    <div className={domain === 'providers' ? 'grid gap-4' : 'grid gap-4 md:grid-cols-2'}>
+    <div className={domain === 'library' ? 'grid gap-4 md:grid-cols-2' : 'settings-form-stack'}>
       {domain === 'library' ? (
         <>
           <div className="md:col-span-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
@@ -124,6 +120,7 @@ export function SettingsFormPanel({
                 autoDetectOutputSources: !prev.autoDetectOutputSources,
               }))
             }
+            aria-pressed={autoDetectOutputSources}
             className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
           >
             <span className="flex items-center gap-3">
@@ -162,25 +159,7 @@ export function SettingsFormPanel({
               }
             />
           </label>
-          <div className="grid gap-3">
-            <button
-              type="button"
-              onClick={toggleAppearance}
-              className="studio-ghost-control p-4 text-left"
-            >
-              Appearance: {appearance === 'light' ? 'Light' : 'Dark'} · Switch
-            </button>
-            <button
-              type="button"
-              onClick={cycleTheme}
-              className="studio-ghost-control p-4 text-left"
-            >
-              Accent: {currentTheme} · Change color
-            </button>
-            <p className="text-xs text-[color:var(--wb-muted)]">
-              Theme and accent changes apply immediately.
-            </p>
-          </div>
+          <SettingsAppearancePanel />
           <button
             type="button"
             onClick={() =>
@@ -189,6 +168,7 @@ export function SettingsFormPanel({
                 commandCenterCompactMode: !prev.commandCenterCompactMode,
               }))
             }
+            aria-pressed={commandCenterCompactMode}
             className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
           >
             <span className="flex items-center gap-3">
@@ -214,6 +194,7 @@ export function SettingsFormPanel({
                 intentionalStylesV1: !prev.intentionalStylesV1,
               }))
             }
+            aria-pressed={intentionalStylesV1}
             className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${intentionalStylesV1 ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
           >
             <span className="flex min-w-0 flex-col gap-1 text-left">
@@ -243,62 +224,7 @@ export function SettingsFormPanel({
       ) : null}
 
       {domain === 'output' ? (
-        <>
-          <div className="md:col-span-2 rounded border border-[color:var(--wb-line)] p-4">
-            <h3 className="text-sm font-semibold">Generation destination</h3>
-            <p className="mt-1 text-xs">Studio Library</p>
-            <p className="mt-1 break-all font-mono text-xs text-[color:var(--wb-muted)]">
-              {libraryDir ?? 'Waiting for Studio Library…'}
-            </p>
-            <p className="mt-2 text-xs text-[color:var(--wb-muted)]">
-              To discover images from another folder, open Library &amp; imports.
-            </p>
-          </div>
-
-          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              Output Subfolders
-            </span>
-            <select
-              value={outputSubfolderPreset}
-              onChange={(event) =>
-                setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
-              }
-              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
-            >
-              {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
-                <option
-                  key={encodeSubfolderTokens(preset.value)}
-                  value={encodeSubfolderTokens(preset.value)}
-                >
-                  {preset.label}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              File Name Template
-            </span>
-            <input
-              value={outputFileNameTemplate}
-              aria-invalid={Boolean(fileNameError)}
-              aria-describedby={fileNameError ? 'output-filename-error' : undefined}
-              onChange={(event) =>
-                setFormState((prev) => ({ ...prev, outputFileNameTemplate: event.target.value }))
-              }
-              placeholder="{timestamp}-{provider}-{jobId}"
-              aria-label="File name template"
-              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
-            />
-            {fileNameError ? (
-              <span id="output-filename-error" className="text-xs text-[color:var(--wb-danger)] ">
-                {fileNameError}
-              </span>
-            ) : null}
-          </label>
-        </>
+        <SettingsOutputPanel value={formState} onChange={setFormState} libraryDir={libraryDir} />
       ) : null}
     </div>
   );

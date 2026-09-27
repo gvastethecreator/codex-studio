@@ -15,18 +15,17 @@ export const LIBRARY_FOLDERS = [
   '.studio/.trash/transcripts',
   'outputs',
   'outputs/external',
-  'outputs/thumbnails',
+  '.studio/thumbnails',
   'outputs/exports',
-  'outputs/.trash',
-  'outputs/.trash/assets',
-  'outputs/.trash/thumbnails',
+  '.studio/.trash/assets',
+  '.studio/.trash/thumbnails',
 ] as const;
 
 const LOGICAL_LIBRARY_PATHS: Record<string, string[]> = {
   'library.sqlite': ['.studio', 'studio.sqlite'],
   'studio.sqlite': ['.studio', 'studio.sqlite'],
   assets: ['outputs'],
-  thumbnails: ['outputs', 'thumbnails'],
+  thumbnails: ['.studio', 'thumbnails'],
   exports: ['outputs', 'exports'],
   references: ['.studio', 'references'],
   masks: ['.studio', 'masks'],
@@ -34,9 +33,9 @@ const LOGICAL_LIBRARY_PATHS: Record<string, string[]> = {
   state: ['.studio', 'state'],
   logs: ['.studio', 'logs'],
   'logs/history': ['.studio', 'logs', 'history'],
-  '.trash': ['outputs', '.trash'],
-  '.trash/assets': ['outputs', '.trash', 'assets'],
-  '.trash/thumbnails': ['outputs', '.trash', 'thumbnails'],
+  '.trash': ['.studio', '.trash'],
+  '.trash/assets': ['.studio', '.trash', 'assets'],
+  '.trash/thumbnails': ['.studio', '.trash', 'thumbnails'],
   '.trash/transcripts': ['.studio', '.trash', 'transcripts'],
 };
 

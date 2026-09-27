@@ -18,7 +18,7 @@ import {
 
 export interface AnimationSequenceRoutesDependencies extends Pick<
   CreateAnimationSequenceServiceOptions,
-  'readLibraryDir' | 'getCatalogImage'
+  'readLibraryDir' | 'readOutputContext' | 'getCatalogImage'
 > {
   service?: AnimationSequenceService;
 }
@@ -29,12 +29,14 @@ async function readJsonBody(c: Context) {
 
 export function createAnimationSequenceRoutes({
   readLibraryDir,
+  readOutputContext,
   getCatalogImage,
   service,
 }: AnimationSequenceRoutesDependencies) {
   const routes = new Hono();
   const animationSequence =
-    service ?? createAnimationSequenceService({ readLibraryDir, getCatalogImage });
+    service ??
+    createAnimationSequenceService({ readLibraryDir, readOutputContext, getCatalogImage });
 
   routes.get('/runs', async (c) =>
     c.json({ runs: (await animationSequence.listRuns()).map(toAnimationSequenceRunView) }),

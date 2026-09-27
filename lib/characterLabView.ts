@@ -1,3 +1,4 @@
+import { CHARACTER_LAB_WORKFLOWS } from './characterLabWorkflows';
 import { resolveRecipeAlias, type RecipeAliasId } from './recipeAliases';
 import {
   CHARACTER_LAB_ACTIONS,
@@ -64,16 +65,10 @@ export function getCharacterLabOptionIconFrame(id: string) {
 }
 
 export function getFirstReadyCharacterLabAction(mode?: CharacterLabModeId): CharacterLabAction {
-  const ready = CHARACTER_LAB_ACTIONS.find((action) => action.capability === 'ready');
-  if (!ready) {
-    throw new Error('Character Lab catalog has no ready action.');
-  }
-  if (!mode) return ready;
-  return (
-    CHARACTER_LAB_ACTIONS.find((action) => action.mode === mode && action.capability === 'ready') ??
-    CHARACTER_LAB_ACTIONS.find((action) => action.mode === mode) ??
-    ready
-  );
+  const actionId = CHARACTER_LAB_WORKFLOWS[mode ?? 'poses'].actionId;
+  const action = CHARACTER_LAB_ACTIONS.find((candidate) => candidate.id === actionId);
+  if (!action) throw new Error(`Unknown Character Lab default action: ${actionId}`);
+  return action;
 }
 
 export function resolveInitialCharacterLabAction(

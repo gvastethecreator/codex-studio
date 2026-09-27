@@ -1,3 +1,5 @@
+import { isManagedGenerationAssetPath } from './managedAssetPolicy';
+import { captureWorkflowOutput } from './outputDestination';
 import { createHash, randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -19,7 +21,7 @@ import {
   type SpriteAtlasRun,
   type SpriteAtlasRunPaths,
 } from '../../../packages/shared/src/spriteAtlasContracts';
-import type { CatalogImage } from '../../../packages/shared/src/types';
+import type { JobLibraryContext, CatalogImage } from '../../../packages/shared/src/types';
 import { resolveLibraryPathFromRoot } from './library';
 
 export class SpriteAtlasActionError extends Error {
@@ -51,6 +53,7 @@ export interface SpriteAtlasService {
 
 export interface CreateSpriteAtlasServiceOptions {
   readLibraryDir: () => string;
+  readOutputContext?: (workspaceId?: string) => JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
   createId?: () => string;
   now?: () => string;
@@ -156,7 +159,7 @@ function safeSegment(value: string) {
 }
 
 function createRunPaths(libraryDir: string, runId: string): SpriteAtlasRunPaths {
-  const runDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'sprite-atlas', runId);
+  const runDir = resolveLibraryPathFromRoot(libraryDir, 'state', 'sprite-atlas', runId);
   const handoffDir = path.join(runDir, 'codex-handoff');
   return {
     runDir,
@@ -179,6 +182,7 @@ function createRunPaths(libraryDir: string, runId: string): SpriteAtlasRunPaths 
 async function ensureRunDirs(paths: SpriteAtlasRunPaths) {
   await Promise.all([
     mkdir(paths.runDir, { recursive: true }),
+    mkdir(path.dirname(paths.atlasPath), { recursive: true }),
     mkdir(paths.promptsDir, { recursive: true }),
     mkdir(paths.layoutGuidesDir, { recursive: true }),
     mkdir(paths.rawDir, { recursive: true }),
@@ -230,9 +234,11 @@ function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, baseProm
     `Camera: ${contract.camera}`,
     `Style: ${contract.customStyle || contract.stylePreset}`,
     `Cell: ${contract.cell.width}x${contract.cell.height}`,
-    contract.backgroundRemoval === 'chroma'
-      ? `Background: legacy key color ${contract.chromaKey}. This is a key color for a later import, not transparent pixels.`
-      : 'Background: native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
+    !contract.transparent
+      ? 'Background: maintain the background requested in the prompt or source image, including any existing alpha.'
+      : contract.backgroundRemoval === 'chroma'
+        ? `Background: legacy key color ${contract.chromaKey}. This is a key color for a later import, not transparent pixels.`
+        : 'Background: native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
     '',
     'Generate exactly one horizontal row strip for this state.',
     'Keep the character or asset identity, scale, baseline, outline weight, and palette stable.',
@@ -242,7 +248,7 @@ function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, baseProm
         ? 'Frames are adjacent tile states. Preserve edge continuity, projection, and pivot.'
         : 'Frames are distinct items or variants. Do not imply animation between slots.',
     'Keep every frame upright at the requested camera and scale. Do not rotate or resize individual frames.',
-    'Use clean slot separation. No text, labels, guide marks, scene background, watermarks, or merged atlas pages.',
+    'Use clean slot separation. No text, labels, guide marks, watermarks, or merged atlas pages.',
   ].join('\n');
 }
 
@@ -313,10 +319,12 @@ function isSafeBlockedReason(
 async function resolveImportSource({
   input,
   libraryDir,
+  libraryContext,
   getCatalogImage,
 }: {
   input: ImportSpriteAtlasRowRequest;
   libraryDir: string;
+  libraryContext?: JobLibraryContext;
   getCatalogImage?: (imageId: string) => CatalogImage | null;
 }): Promise<
   | { kind: 'rejected' }
@@ -326,7 +334,14 @@ async function resolveImportSource({
   const catalogImageId = input.catalogImageId?.trim() || null;
   if (catalogImageId) {
     const image = getCatalogImage?.(catalogImageId);
-    if (!image?.filePath || !isPathInside(libraryDir, image.filePath)) return { kind: 'rejected' };
+    if (
+      !image?.filePath ||
+      !(
+        isPathInside(libraryDir, image.filePath) ||
+        (libraryContext && isManagedGenerationAssetPath(image.filePath, libraryContext))
+      )
+    )
+      return { kind: 'rejected' };
     if (!(await fileExists(image.filePath))) return { kind: 'missing' };
     return { kind: 'ready', sourcePath: image.filePath, catalogImageId: image.id };
   }
@@ -365,6 +380,7 @@ function normalizeRun(run: SpriteAtlasRun): SpriteAtlasRun {
 
 export function createSpriteAtlasService({
   readLibraryDir,
+  readOutputContext,
   getCatalogImage,
   createId = randomUUID,
   now = () => new Date().toISOString(),
@@ -382,7 +398,17 @@ export function createSpriteAtlasService({
   async function getRun(runId: string) {
     const safeRunId = safeSegment(runId);
     const paths = createRunPaths(readLibraryDir(), safeRunId);
-    const stored = await readJson<SpriteAtlasRun>(paths.statusPath);
+    const stored =
+      (await readJson<SpriteAtlasRun>(paths.statusPath)) ??
+      (await readJson<SpriteAtlasRun>(
+        resolveLibraryPathFromRoot(
+          readLibraryDir(),
+          'outputs',
+          'sprite-atlas',
+          safeRunId,
+          'status.json',
+        ),
+      ));
     return stored ? normalizeRun(stored) : null;
   }
 
@@ -396,8 +422,7 @@ export function createSpriteAtlasService({
       requestPath: run.paths.requestPath,
       promptPath: row.promptPath,
       layoutGuidePath: row.layoutGuidePath,
-      identityAnchorPath:
-        run.rows.find((item) => item.id === run.anchor?.rowId)?.rawPath ?? null,
+      identityAnchorPath: run.rows.find((item) => item.id === run.anchor?.rowId)?.rawPath ?? null,
       expectedOutputPath: path.join(run.paths.rawDir, `${safeSegment(row.id)}.png`),
       outboxPattern: `${jobId}-${safeSegment(row.id)}.png`,
       createdAt: timestamp,
@@ -452,24 +477,44 @@ export function createSpriteAtlasService({
       return createSpriteAtlasPresetSummaries();
     },
     async listRuns() {
-      const root = resolveLibraryPathFromRoot(readLibraryDir(), 'outputs', 'sprite-atlas');
-      try {
-        const entries = await readdir(root, { withFileTypes: true });
-        const runs = await Promise.all(
-          entries.filter((entry) => entry.isDirectory()).map((entry) => getRun(entry.name)),
-        );
-        return runs
-          .flatMap((run) => (run ? [run] : []))
-          .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-      } catch {
-        return [];
-      }
+      const roots = ['state', 'outputs'].map((section) =>
+        resolveLibraryPathFromRoot(readLibraryDir(), section, 'sprite-atlas'),
+      );
+      const groups = await Promise.all(
+        roots.map((root) => readdir(root, { withFileTypes: true }).catch(() => [])),
+      );
+      const ids = [
+        ...new Set(
+          groups.flatMap((entries) =>
+            entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name),
+          ),
+        ),
+      ];
+      const runs = await Promise.all(ids.map(getRun));
+      return runs
+        .flatMap((run) => (run ? [run] : []))
+        .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
     },
     getRun,
     async createRun(input) {
       const runId = safeSegment(`atlas-${createId()}`);
       const timestamp = now();
       const paths = createRunPaths(readLibraryDir(), runId);
+      const outputContext = readOutputContext?.(input.workspaceId) ?? {
+        libraryId: '',
+        rootPath: readLibraryDir(),
+      };
+      const outputInput = {
+        jobId: runId,
+        recipeId: 'sprite-atlas',
+        createdAt: new Date(timestamp),
+        extension: '.png',
+      };
+      paths.atlasPath = captureWorkflowOutput(outputContext, outputInput);
+      paths.manifestPath = captureWorkflowOutput(outputContext, {
+        ...outputInput,
+        extension: '.json',
+      });
       const contract = createSpriteAtlasContract({ ...input });
       const run: SpriteAtlasRun = {
         id: runId,
@@ -548,6 +593,7 @@ export function createSpriteAtlasService({
       const resolved = await resolveImportSource({
         input,
         libraryDir: readLibraryDir(),
+        libraryContext: readOutputContext?.(),
         getCatalogImage,
       });
       if (resolved.kind === 'rejected') {
@@ -732,10 +778,7 @@ export function createSpriteAtlasService({
           ...row,
           frames: row.frames.map((frame) => ({
             ...frame,
-            source: path.join(
-              run.paths.framesDir,
-              path.basename(frame.source),
-            ),
+            source: path.join(run.paths.framesDir, path.basename(frame.source)),
           })),
         })),
       });
@@ -840,7 +883,8 @@ export function createSpriteAtlasService({
             continue;
           }
           const digest = await sha256File(row.rawPath);
-          if (digest !== row.sourceSha256) issues.push(`${row.id} source hash does not match the import.`);
+          if (digest !== row.sourceSha256)
+            issues.push(`${row.id} source hash does not match the import.`);
           const metadata = await authoringSharp(row.rawPath).metadata();
           if (
             metadata.width !== run.contract.cell.width * row.frames ||
@@ -854,8 +898,11 @@ export function createSpriteAtlasService({
               `${safeSegment(row.id)}-${String(index + 1).padStart(2, '0')}.png`,
             ),
           );
-          const frameChecks = await Promise.all(framePaths.map((framePath) => fileExists(framePath)));
-          if (frameChecks.some((exists) => !exists)) issues.push(`${row.id} is missing an extracted frame.`);
+          const frameChecks = await Promise.all(
+            framePaths.map((framePath) => fileExists(framePath)),
+          );
+          if (frameChecks.some((exists) => !exists))
+            issues.push(`${row.id} is missing an extracted frame.`);
         }
         if (run.contract.workflowLane === 'animation' && !run.anchor) {
           issues.push('Import an idle row before a technical pass.');

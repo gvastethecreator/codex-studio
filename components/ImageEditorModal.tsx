@@ -1,3 +1,4 @@
+import { CozyLoader } from './CozyMascot';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import {
   IconBrush as Brush,
@@ -20,6 +21,7 @@ interface ImageEditorModalProps {
   isGenerating: boolean;
   notice?: string | null;
   requireMask?: boolean;
+  backgroundControl?: React.ReactNode;
 }
 
 interface ImageEditorControlsPanelProps {
@@ -35,6 +37,7 @@ interface ImageEditorControlsPanelProps {
   onGenerate: () => void;
   notice?: string | null;
   requireMask?: boolean;
+  backgroundControl?: React.ReactNode;
 }
 
 function ImageEditorControlsPanel({
@@ -50,6 +53,7 @@ function ImageEditorControlsPanel({
   onGenerate,
   notice,
   requireMask = true,
+  backgroundControl,
 }: ImageEditorControlsPanelProps) {
   return (
     <div className="studio-inspector custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-[color:var(--wb-panel)] p-4 sm:p-5 md:max-h-none md:w-80 md:gap-6 md:p-5">
@@ -109,6 +113,7 @@ function ImageEditorControlsPanel({
         </div>
       </div>
 
+      {backgroundControl}
       <div className="mt-auto">
         <button
           type="button"
@@ -122,11 +127,7 @@ function ImageEditorControlsPanel({
           })}
           className="studio-primary-control w-full h-10 disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          {isGenerating ? (
-            <div className="size-4 border-2 border-[color:var(--wb-border)] border-t-[color:var(--wb-ink)] rounded-full animate-spin" />
-          ) : (
-            <Sparkles size={18} />
-          )}
+          {isGenerating ? <CozyLoader size={18} /> : <Sparkles size={18} />}
           {!isGenerating && <span>Generate edit</span>}
         </button>
       </div>
@@ -142,6 +143,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   isGenerating,
   notice,
   requireMask = true,
+  backgroundControl,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -449,6 +451,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           onGenerate={handleGenerate}
           notice={notice}
           requireMask={requireMask}
+          backgroundControl={backgroundControl}
         />
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import {
   IconCheck as Check,
@@ -7,7 +8,6 @@ import {
   IconArrowRight as ArrowRight,
   IconDatabase as Database,
   IconSparkles as Sparkles,
-  IconLoader as LoaderCircle,
   IconInfoCircle as Info,
   IconHeart as Heart,
   IconCopy as Copy,

@@ -10,6 +10,7 @@ import {
   type AnimationSequenceFramePlan,
 } from '../packages/shared/src/animationSequenceContracts';
 import {
+  buildGenerationBackgroundInstruction,
   createGenerationTaskSpec,
   type GenerationQualityPresetId,
   type GenerationProviderId,
@@ -23,6 +24,10 @@ import {
   SPRITE_ATLAS_FRAME_BUDGETS,
 } from '../packages/shared/src/spriteAtlasContracts';
 import { resolveCodexHttpImageSize } from '../packages/shared/src/codexExecutionContract';
+import {
+  projectGenerationBackgroundParams,
+  resolveGenerationBackground,
+} from './generationBackground';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { type RegisteredRecipeId } from './recipeIds';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
@@ -1461,14 +1466,17 @@ export function buildGenerationTaskSpecFromRecipe({
   task,
 }: BuildGenerationTaskSpecFromRecipeArgs) {
   const module = getRecipeModule(config.recipeId ?? null);
-  const animationSequenceParams = createAnimationSequenceParams(config);
-  const contextParams = animationSequenceParams ?? config.recipeParams ?? null;
+  const effectiveConfig = { ...config, recipeParams: projectGenerationBackgroundParams(config) };
+  const animationSequenceParams = createAnimationSequenceParams(effectiveConfig);
+  const contextParams = animationSequenceParams ?? effectiveConfig.recipeParams ?? null;
   const recipeContext = module?.buildContext(contextParams) || config.recipeContext || '';
   const recipeProviderDirectives = module
     ? buildRecipeProviderDirectives(module, contextParams)
     : null;
   const spriteAtlasContract =
-    module?.id === 'sprite-atlas' ? createSpriteAtlasContract(config.recipeParams ?? null) : null;
+    module?.id === 'sprite-atlas'
+      ? createSpriteAtlasContract(effectiveConfig.recipeParams ?? null)
+      : null;
   const animationSequenceContract: AnimationSequenceContract | null =
     module?.id === 'animation-sequence'
       ? createAnimationSequenceContract(animationSequenceParams)
@@ -1480,6 +1488,10 @@ export function buildGenerationTaskSpecFromRecipe({
     animationSequenceFramePlan && animationSequenceParams
       ? resolveAnimationSequenceFrame(animationSequenceFramePlan, animationSequenceParams)
       : null;
+  const backgroundInstruction = buildGenerationBackgroundInstruction(
+    resolveGenerationBackground(config),
+    task === 'image_edit' || config.attachments.length > 0,
+  );
   const prompt = config.prompt || 'Generate a high-quality image.';
   const requestedTask =
     typeof config.recipeParams?.task === 'string'
@@ -1564,36 +1576,47 @@ export function buildGenerationTaskSpecFromRecipe({
                 : null,
       lighting: null,
       color:
-        config.recipeId === 'sprite-atlas' &&
-        spriteAtlasContract?.backgroundRemoval === 'chroma'
+        config.recipeId === 'sprite-atlas' && spriteAtlasContract?.backgroundRemoval === 'chroma'
           ? spriteAtlasContract.chromaKey
           : typeof config.recipeParams?.colorTone === 'string'
             ? config.recipeParams.colorTone
-            : config.recipeId === 'character-lab' &&
-                typeof config.recipeParams?.backgroundColor === 'string'
-              ? config.recipeParams.backgroundColor
+            : resolveGenerationBackground(config) !== 'transparent' &&
+                config.recipeId === 'character-lab' &&
+                typeof effectiveConfig.recipeParams?.backgroundColor === 'string'
+              ? effectiveConfig.recipeParams.backgroundColor
               : null,
       materials:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract
           ? spriteAtlasContract.assetKind
           : null,
-      constraints: spriteAtlasContract
-        ? [
-            `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
-            spriteAtlasContract.backgroundRemoval === 'chroma'
-              ? `Legacy key color ${spriteAtlasContract.chromaKey}. This is a key color for a later import, not transparent pixels.`
-              : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
-            'Do not create guide marks, labels, scene backgrounds, or merged atlas pages as row art.',
-          ]
-        : animationSequenceContract
+      constraints: [
+        backgroundInstruction,
+        ...(spriteAtlasContract
           ? [
-              `Generate one single frame for ${animationSequenceFrame?.id ?? 'the selected frame'}.`,
-              `Keep ${animationSequenceContract.continuity} continuity across the frame sequence.`,
-              'Do not generate a video, storyboard grid, contact sheet, UI, captions, or text.',
+              `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
+              !spriteAtlasContract.transparent
+                ? backgroundInstruction
+                : spriteAtlasContract.backgroundRemoval === 'chroma'
+                  ? `Legacy key color ${spriteAtlasContract.chromaKey}. This is a key color for a later import, not transparent pixels.`
+                  : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
+              'Do not create guide marks, labels, or merged atlas pages as row art.',
             ]
-          : [],
+          : animationSequenceContract
+            ? [
+                `Generate one single frame for ${animationSequenceFrame?.id ?? 'the selected frame'}.`,
+                `Keep ${animationSequenceContract.continuity} continuity across the frame sequence.`,
+                'Do not generate a video, storyboard grid, contact sheet, UI, captions, or text.',
+              ]
+            : []),
+      ],
       negative: spriteAtlasContract
-        ? ['labels', 'watermarks', 'guide marks', 'scene background', 'cropped sprites']
+        ? [
+            'labels',
+            'watermarks',
+            'guide marks',
+            ...(spriteAtlasContract.transparent ? ['scene background'] : []),
+            'cropped sprites',
+          ]
         : animationSequenceContract
           ? ['video controls', 'captions', 'watermarks', 'contact sheet', 'multi-panel grid']
           : [],
@@ -1614,6 +1637,7 @@ export function buildGenerationTaskSpecFromRecipe({
       })),
     },
     output: {
+      background: resolveGenerationBackground(config),
       count: config.batchCount,
       aspectRatio: config.aspectRatio,
       imageSize: resolvedImageSize,

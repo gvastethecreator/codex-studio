@@ -16,36 +16,6 @@ function normalizeRelativePath(relativePath: string) {
   return relativePath.replaceAll('\\', '/').replace(/^\/+/, '');
 }
 
-function toPathSegments(relativePath: string) {
-  return normalizeRelativePath(relativePath)
-    .split('/')
-    .flatMap((segment) => {
-      const trimmed = segment.trim();
-      return trimmed ? [trimmed] : [];
-    });
-}
-
-function resolveThumbnailParentSegments(relativePath: string) {
-  if (relativePath.startsWith('outputs/.trash/assets/')) {
-    return {
-      parentSegments: ['outputs', '.trash', 'thumbnails'],
-      nestedRelativePath: relativePath.slice('outputs/.trash/assets/'.length),
-    };
-  }
-
-  if (relativePath.startsWith('outputs/')) {
-    return {
-      parentSegments: ['outputs', 'thumbnails'],
-      nestedRelativePath: relativePath.slice('outputs/'.length),
-    };
-  }
-
-  return {
-    parentSegments: ['outputs', 'thumbnails', 'library'],
-    nestedRelativePath: relativePath,
-  };
-}
-
 export function resolveThumbnailMaxEdge(rawValue?: number | string | null) {
   const parsed = Number(rawValue);
   if (!Number.isFinite(parsed)) {
@@ -58,6 +28,7 @@ export function resolveThumbnailMaxEdge(rawValue?: number | string | null) {
 function isThumbnailAssetPath(filePath: string, libraryDir: string = getSettings().libraryDir) {
   const relativePath = normalizeRelativePath(path.relative(libraryDir, filePath));
   return (
+    relativePath.startsWith('.studio/thumbnails/') ||
     relativePath.startsWith('outputs/thumbnails/') ||
     relativePath.startsWith('outputs/.trash/thumbnails/')
   );
@@ -76,16 +47,7 @@ export function resolveLibraryThumbnailPath(
     .digest('hex')
     .slice(0, 12);
 
-  const { parentSegments, nestedRelativePath } = resolveThumbnailParentSegments(relativePath);
-  const nestedSegments = toPathSegments(path.dirname(nestedRelativePath));
-  const nestedPathParts = path.parse(nestedRelativePath);
-
-  return path.join(
-    libraryDir,
-    ...parentSegments,
-    ...nestedSegments,
-    `${nestedPathParts.name}.${cacheKey}.${maxEdge}.webp`,
-  );
+  return path.join(libraryDir, '.studio', 'thumbnails', `${cacheKey}.${maxEdge}.webp`);
 }
 
 export async function ensureThumbnailVariant(

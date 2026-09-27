@@ -63,7 +63,7 @@ The first-run surface is a detect, consent, mutate, stream, re-validate loop. On
 
 Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Optional providers are separate backend rows, not Studio installers.
 
-The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations go under `outputs/<workspace>/` inside that library.
+The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations use `outputs/<workspace>/` inside that library by default. Settings → Output can register another output directory and choose folder levels and filename tokens. Changes apply to new jobs; running jobs keep their captured destination. Existing files stay in place and remain available through the catalog. SQLite, references, thumbnails, temporary files, logs, and trash stay in `.studio`.
 
 Portable zip: double-click `Codex Studio.bat` on Windows or `Codex Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Codex Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
 
@@ -216,3 +216,15 @@ Codex Studio is in open-source preview.
   <a href="https://ko-fi.com/gvaste"><img src="https://shieldcn.dev/badge/Ko--fi-support%20development-ff5e5b.svg?logo=kofi&variant=branded" alt="Support development on Ko-fi" /></a>
   <a href="https://x.com/gvastebb"><img src="https://shieldcn.dev/x/mention/gvastebb.svg?variant=branded" alt="Follow on X" /></a>
 </p>
+
+## Workflows and preferences
+
+The workflow picker, Recipes, Settings, and Help share five groups: Create & Edit, Character, Camera & Story, Animation, and Game Assets. Timeline Frame prepares neighboring storyboard frames; Animation Sequence owns frame sequences and GIF export. Character views share the source character within a workspace and keep separate action, prompt, appearance, format, and background drafts.
+
+Settings starts in General. Choose a preferred workflow for startup without a direct link and for new workspaces. Direct workflow links take priority. Save applies the draft; Discard restores saved settings, including the theme, accent, and motion preview. Search opens the matching section and focuses its control. Help contains the reusable Cozy guide.
+
+Every workflow offers Maintain background or Remove background. Maintain keeps the source background for image-guided work, while explicit prompt or action changes take priority. With text only, it follows the requested scene and uses workflow defaults only when unspecified. Remove requests native transparent PNG and suppresses automatic backdrops. Prepared Animation and Atlas runs retain the choice captured when they were prepared. Native alpha uses the ChatGPT HTTP provider and GPT Image models. GPT Image 2 support is in preview; Flare and Sunburst support transparent output. See the [OpenAI image prompting guide](https://developers.openai.com/api/docs/guides/image-prompting). Provider rejection remains an error. Studio keeps opaque results and reports an alpha warning instead of applying a hidden cutout. Local fixtures verify requests and pixel handling; they do not establish endpoint availability or image quality.
+
+PNG keeps full alpha. Animation Sequence uses the common Maintain/Remove choice; its export controls can preserve alpha or apply an explicit solid fill. GIF uses binary alpha at 128 and clears each frame to avoid trails. A checkerboard is a preview aid, never part of the saved image.
+
+Output filename tokens are `{date}`, `{time}`, `{timestamp}`, `{workspace}`, `{workflow}`, `{provider}`, `{model}`, `{job}`, `{jobId}`, and `{recipe}`. The shared formatter adds the extension and produces the preview shown in Settings. Folder levels can use workspace, date, workflow, provider, model, and recipe. Registered roots, safe Windows names, and reserved numeric suffixes prevent path escape and overwriting existing outputs.

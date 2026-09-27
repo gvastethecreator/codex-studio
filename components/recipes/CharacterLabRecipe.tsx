@@ -1,4 +1,4 @@
-import { getRecipeStringParam } from '../../lib/recipeIdentity';
+import { CozyLoader as Loader2 } from '../CozyMascot';
 import React, {
   useCallback,
   useEffect,
@@ -12,14 +12,27 @@ import {
   IconCheck as Check,
   IconChevronDown as ChevronDown,
   IconFileText as FileText,
-  IconLoader2 as Loader2,
   IconLock as Lock,
   IconSearch as Search,
   IconSparkles as Sparkles,
   IconX as X,
 } from '@tabler/icons-react';
-import type { AspectRatio, Attachment, ImageGenerationConfig } from '../../types';
-import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import type { Attachment, ImageGenerationConfig } from '../../types';
+import { useGenerationDraft } from '../../contexts/GenerationContext';
+import { useWorkspaceState } from '../../contexts/WorkspaceContext';
+import {
+  buildCharacterLabParams,
+  activateCharacterLabView,
+  createCharacterLabViewDraft,
+  getCharacterLabView,
+  updateCharacterLabView,
+  type CharacterLabViewDraft,
+} from '../../lib/characterLabDraft';
+import {
+  CHARACTER_LAB_WORKFLOWS,
+  getCharacterLabControls,
+  type CharacterLabControl,
+} from '../../lib/characterLabWorkflows';
 import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import {
   characterLabActions,
@@ -33,11 +46,10 @@ import {
   getCharacterLabIconFrame,
   getCharacterLabOptionIconFrame,
   getFirstReadyCharacterLabAction,
-  resolveInitialCharacterLabAction,
   type CharacterLabAction,
   type CharacterLabModeId,
 } from '../../lib/characterLabView';
-import { type RecipeAliasId } from '../../lib/recipeAliases';
+import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
 import {
   RecipeControls,
@@ -167,10 +179,6 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
 const ATLAS_WIDTH = characterLabIconAtlasSize.width;
 const ATLAS_HEIGHT = characterLabIconAtlasSize.height;
 const FIRST_READY_ACTION = getFirstReadyCharacterLabAction();
-
-function getFirstReadyActionForMode(mode: CharacterLabModeId) {
-  return getFirstReadyCharacterLabAction(mode);
-}
 
 function getAccent(accent: string) {
   return ACCENT_CLASSES[accent] ?? ACCENT_CLASSES.zinc;
@@ -381,6 +389,8 @@ function getDropdownOptionIcon(kind: SelectFieldKind, option: string) {
 }
 
 function getDropdownOptionText(kind: SelectFieldKind, option: string) {
+  if (!option)
+    return { primary: 'Follow action', detail: 'Use the expression requested by the action.' };
   if (kind === 'ratio') {
     return {
       primary: option,
@@ -809,42 +819,30 @@ function ActionButton({
   );
 }
 
-const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
-  recipeAliasId = null,
-  config,
-  updateConfig,
-  onGenerate,
-  isGenerating,
-}) => {
+const CharacterLabRecipeSession: React.FC<
+  CharacterLabRecipeProps & {
+    setConfig: React.Dispatch<React.SetStateAction<ImageGenerationConfig>>;
+  }
+> = ({ recipeAliasId = null, config, updateConfig, onGenerate, isGenerating, setConfig }) => {
   const [actionBrowserOpen, setActionBrowserOpen] = useState(false);
   const actionToggleRef = useRef<HTMLButtonElement>(null);
-  const [initialAction] = useState(() =>
-    resolveInitialCharacterLabAction(config.recipeParams, recipeAliasId),
-  );
-  const [selectedMode, setSelectedMode] = useState<CharacterLabModeId>(initialAction.mode);
-  const [selectedActionId, setSelectedActionId] = useState(initialAction.id);
-  const [search, setSearch] = useState(() => getRecipeStringParam(config, 'actionSearch', ''));
+  const aliasMode = resolveRecipeAlias(recipeAliasId)?.characterLabMode;
+  const { draft, mode: selectedMode, view } = getCharacterLabView(config, aliasMode);
+  const workflow = CHARACTER_LAB_WORKFLOWS[selectedMode];
+  const selectedActionId = view.actionId;
+  const { style, clothing, bodyType, expression, backgroundColor, labAspectRatio } = view;
+  const subject = draft.subject;
+  const [search, setSearch] = useState('');
   const [capabilityNotice, setCapabilityNotice] = useState('');
-  const [subject, setSubject] = useState(() => getRecipeStringParam(config, 'subject', ''));
-  const [style, setStyle] = useState<string>(() =>
-    getRecipeStringParam(config, 'style', characterLabGlobalOptions.styles[0]),
-  );
-  const [clothing, setClothing] = useState<string>(() =>
-    getRecipeStringParam(config, 'clothing', characterLabGlobalOptions.clothing[0]),
-  );
-  const [bodyType, setBodyType] = useState<string>(() =>
-    getRecipeStringParam(config, 'bodyType', characterLabGlobalOptions.bodyTypes[0]),
-  );
-  const [expression, setExpression] = useState<string>(() =>
-    getRecipeStringParam(config, 'expression', characterLabGlobalOptions.expressions[0]),
-  );
-  const [backgroundColor, setBackgroundColor] = useState<string>(
-    getRecipeStringParam(config, 'backgroundColor') ||
-      characterLabGlobalOptions.palettes[0].backgroundColor,
-  );
-  const [labAspectRatio, setLabAspectRatio] = useState<string>(
-    () => getRecipeStringParam(config, 'labAspectRatio') || config.aspectRatio || '1:1',
-  );
+
+  useEffect(() => {
+    setConfig((current) => activateCharacterLabView(current, aliasMode));
+  }, [aliasMode, setConfig]);
+
+  const patchView = (patch: Partial<CharacterLabViewDraft>) =>
+    setConfig((current) => updateCharacterLabView(current, selectedMode, patch));
+  const setSubject = (value: string) =>
+    setConfig((current) => updateCharacterLabView(current, selectedMode, {}, value));
   const sourceInputRef = useRef<HTMLInputElement>(null);
   const referenceInputRef = useRef<HTMLInputElement>(null);
 
@@ -881,11 +879,14 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
       expression,
       backgroundColor,
       labAspectRatio,
+      additionalPrompt: view.prompt,
+      outputBackground: config.outputBackground,
       referencesCount: references.length,
       hasSource: Boolean(source),
     }),
     [
-      search,
+      config.outputBackground,
+      view.prompt,
       backgroundColor,
       bodyType,
       clothing,
@@ -898,50 +899,18 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
     ],
   );
 
-  const buildRecipeParamsForAction = useCallback(
-    (action: CharacterLabAction, paramsOverride: Record<string, unknown> = {}) => ({
-      mode: action.mode,
-      actionId: action.id,
-      actionSearch: search,
-      actionLabel: action.label,
-      category: action.category,
-      actionPrompt: action.prompt,
-      task: action.task,
-      mediaType: action.mediaType,
-      frames: action.frames ?? 0,
-      isCouplesPose: action.isCouplesPose,
-      capability: action.capability,
+  const buildRecipeParamsForAction = (
+    action: CharacterLabAction,
+    paramsOverride: Record<string, unknown> = {},
+  ) => ({
+    ...buildCharacterLabParams(
+      action.mode,
+      { ...view, actionId: action.id },
       subject,
-      style,
-      clothing,
-      bodyType,
-      expression,
-      backgroundColor,
-      labAspectRatio,
-      hasSource: Boolean(source),
-      referencesCount: references.length,
-      ...paramsOverride,
-    }),
-    [
-      backgroundColor,
-      bodyType,
-      clothing,
-      expression,
-      labAspectRatio,
-      references.length,
-      search,
-      source,
-      style,
-      subject,
-    ],
-  );
-
-  const recipeParams = useMemo(
-    () => buildRecipeParamsForAction(selectedAction),
-    [buildRecipeParamsForAction, selectedAction],
-  );
-
-  useRecipeContextRegistration(updateConfig, 'character-lab', recipeParams);
+      config.attachments.length,
+    ),
+    ...paramsOverride,
+  });
 
   const selectedPrompt = useMemo(
     () => buildCharacterLabPrompt(selectedAction, promptOptions),
@@ -1009,14 +978,9 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   }, [search, selectedMode]);
 
   const setAction = (action: CharacterLabAction) => {
-    setSelectedActionId(action.id);
-    setSelectedMode(action.mode);
+    setConfig((current) => updateCharacterLabView(current, action.mode, { actionId: action.id }));
+    setSearch('');
     setCapabilityNotice('');
-  };
-
-  const setOutputRatio = (value: string) => {
-    setLabAspectRatio(value);
-    updateConfig('aspectRatio', normalizeImageGenRatio(value) as AspectRatio);
   };
 
   const handleSourceFiles = async (files: File[]) => {
@@ -1104,6 +1068,93 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
     );
   };
 
+  const allowedControls = getCharacterLabControls({
+    mode: selectedMode,
+    actionId: selectedAction.id,
+    category: selectedAction.category,
+  });
+  const primaryControls = workflow.primaryControls.filter((control) =>
+    allowedControls.includes(control),
+  );
+  const secondaryControls = allowedControls.filter((control) => !primaryControls.includes(control));
+  const renderControl = (control: CharacterLabControl) => {
+    if (control === 'backgroundColor')
+      return (
+        <fieldset
+          key={control}
+          className="col-span-2 disabled:opacity-50"
+          disabled={config.outputBackground === 'transparent' || Boolean(source)}
+        >
+          <legend className="mb-1.5 text-xs font-semibold text-[color:var(--wb-muted)]">
+            Background Color
+          </legend>
+          <div className="grid grid-cols-4 gap-1.5">
+            {characterLabGlobalOptions.palettes.map((palette) => (
+              <button
+                key={palette.name}
+                type="button"
+                aria-label={`Background ${palette.name}`}
+                aria-pressed={backgroundColor === palette.backgroundColor}
+                onClick={() => patchView({ backgroundColor: palette.backgroundColor })}
+                className={`flex h-8 items-center justify-center rounded-[var(--wb-radius)] border bg-[color:var(--wb-well)] ${backgroundColor === palette.backgroundColor ? 'border-[color:var(--wb-ink)]' : 'border-[color:var(--wb-line)]'}`}
+              >
+                <span className="flex -space-x-1">
+                  {palette.swatches.map((swatch) => (
+                    <span
+                      key={swatch}
+                      className="size-3.5 rounded-full border border-black/20"
+                      style={{ backgroundColor: swatch }}
+                    />
+                  ))}
+                </span>
+              </button>
+            ))}
+          </div>
+        </fieldset>
+      );
+    const fields = {
+      expression: {
+        label: 'Expression',
+        kind: 'expression' as const,
+        options: ['', ...characterLabGlobalOptions.expressions],
+      },
+      labAspectRatio: {
+        label: 'Aspect Ratio',
+        kind: 'ratio' as const,
+        options: characterLabGlobalOptions.aspectRatios.flatMap((group) => group.ratios),
+      },
+      style: {
+        label: 'Artistic Style',
+        kind: 'style' as const,
+        options: characterLabGlobalOptions.styles,
+      },
+      clothing: {
+        label: 'Clothing',
+        kind: 'clothing' as const,
+        options: characterLabGlobalOptions.clothing,
+      },
+      bodyType: {
+        label: 'Body Type',
+        kind: 'body' as const,
+        options: characterLabGlobalOptions.bodyTypes,
+      },
+    };
+    const field = fields[control];
+    return (
+      <SelectField
+        key={control}
+        {...field}
+        value={view[control]}
+        onChange={(value) => patchView({ [control]: value })}
+        className={
+          control === 'style' || control === 'clothing' || control === 'bodyType'
+            ? 'col-span-2'
+            : undefined
+        }
+      />
+    );
+  };
+
   return (
     <RecipeLayout isGenerating={isGenerating} className="character-lab-shell flex min-h-0 flex-col">
       <div className="flex size-full min-h-0 flex-col">
@@ -1116,28 +1167,32 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
           <div className="character-action-catalog flex min-h-0 flex-col" data-panel="main">
             <div className="shrink-0 border-b border-[color:var(--wb-line)] p-2.5">
               <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
-                {characterLabModes.map((mode) => {
-                  const active = selectedMode === mode.id;
-                  return (
-                    <button
-                      key={mode.id}
-                      type="button"
-                      data-tooltip={mode.description}
-                      onClick={() => {
-                        setSelectedMode(mode.id);
-                        setAction(getFirstReadyActionForMode(mode.id));
-                      }}
-                      className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
-                        active
-                          ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
-                          : 'border-[color:var(--wb-line)] bg-black/25 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:text-[color:var(--wb-ink)]'
-                      }`}
-                    >
-                      <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
-                      <span className="min-w-0 truncate">{mode.label.replace(' Sheets', '')}</span>
-                    </button>
-                  );
-                })}
+                {characterLabModes
+                  .filter((mode) => !aliasMode || mode.id === aliasMode)
+                  .map((mode) => {
+                    const active = selectedMode === mode.id;
+                    return (
+                      <button
+                        key={mode.id}
+                        type="button"
+                        data-tooltip={mode.description}
+                        onClick={() => {
+                          setConfig((current) => activateCharacterLabView(current, mode.id));
+                          setSearch('');
+                        }}
+                        className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                          active
+                            ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
+                            : 'border-[color:var(--wb-line)] bg-black/25 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:text-[color:var(--wb-ink)]'
+                        }`}
+                      >
+                        <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
+                        <span className="min-w-0 truncate">
+                          {mode.label.replace(' Sheets', '')}
+                        </span>
+                      </button>
+                    );
+                  })}
               </div>
               <div className="mt-2 flex items-center gap-2">
                 <div className="relative min-w-0 flex-1">
@@ -1151,7 +1206,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     aria-label="Search character actions"
                     value={search}
                     onChange={(event) => setSearch(event.target.value)}
-                    placeholder={`Search ${characterLabOptionCounts.total} actions`}
+                    placeholder={`Search ${selectedModeActions.length} actions`}
                     className="h-9 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] pl-9 pr-3 text-[12px] text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                   />
                 </div>
@@ -1233,7 +1288,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               <div className="flex items-center justify-between gap-2">
                 <div>
                   <h2 className="text-[12px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                    Action Setup
+                    {workflow.title}
                   </h2>
                   <p className="mt-1 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-dim)]">
                     {selectedAction.label} · {sourceLabel}
@@ -1248,6 +1303,14 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             </div>
 
             <div className="min-h-0 flex-1 overflow-y-auto p-3 custom-scrollbar">
+              <p className="mb-3 text-xs leading-relaxed text-[color:var(--wb-muted)]">
+                {workflow.output}
+              </p>
+              {selectedAction.frames && (
+                <p className="mb-3 text-xs font-semibold">
+                  {selectedAction.frames} frames · {selectedAction.label}
+                </p>
+              )}
               <label className="flex flex-col gap-1.5">
                 <span className="text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
                   Character Brief
@@ -1261,76 +1324,46 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 />
               </label>
 
+              <label className="mt-3 flex flex-col gap-1.5 text-xs text-[color:var(--wb-muted)]">
+                Additional instructions
+                <textarea
+                  name="character-lab-additional-prompt"
+                  value={view.prompt}
+                  onChange={(event) => patchView({ prompt: event.target.value })}
+                  placeholder="Details for this workflow only…"
+                  className="h-16 resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5 text-[color:var(--wb-ink)]"
+                />
+              </label>
               <div className="mt-3 grid grid-cols-2 gap-2">
-                <SelectField
-                  label="Base Expression"
-                  value={expression}
-                  options={characterLabGlobalOptions.expressions}
-                  onChange={setExpression}
-                  kind="expression"
-                />
-                <SelectField
-                  label="Aspect Ratio"
-                  value={labAspectRatio}
-                  options={characterLabGlobalOptions.aspectRatios.flatMap((group) => group.ratios)}
-                  onChange={setOutputRatio}
-                  kind="ratio"
-                />
-                <SelectField
-                  label="Artistic Style"
-                  value={style}
-                  options={characterLabGlobalOptions.styles}
-                  onChange={setStyle}
-                  kind="style"
-                  className="col-span-2"
-                />
-                <SelectField
-                  label="Clothing"
-                  value={clothing}
-                  options={characterLabGlobalOptions.clothing}
-                  onChange={setClothing}
-                  kind="clothing"
-                  className="col-span-2"
-                />
-                <SelectField
-                  label="Body Type"
-                  value={bodyType}
-                  options={characterLabGlobalOptions.bodyTypes}
-                  onChange={setBodyType}
-                  kind="body"
-                  className="col-span-2"
-                />
+                {primaryControls.map(renderControl)}
               </div>
-
-              <div className="mt-3">
-                <div className="mb-1.5 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
-                  Background Color
-                </div>
-                <div className="grid grid-cols-4 gap-1.5">
-                  {characterLabGlobalOptions.palettes.map((palette) => (
-                    <button
-                      key={palette.name}
-                      type="button"
-                      onClick={() => setBackgroundColor(palette.backgroundColor)}
-                      className={`flex h-8 items-center justify-center rounded-[var(--wb-radius)] border bg-[color:var(--wb-well)] transition-[border-color,background-color] duration-150 hover:border-[color:var(--wb-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
-                        backgroundColor === palette.backgroundColor
-                          ? 'border-violet-400/2 bg-violet-500/10'
-                          : 'border-[color:var(--wb-line)]'
-                      }`}
-                      aria-label={`Background ${palette.name}`}
-                    >
-                      <span className="flex -space-x-1">
-                        {palette.swatches.map((swatch) => (
-                          <span
-                            key={swatch}
-                            className="size-3.5 rounded-full border border-black/2"
-                            style={{ backgroundColor: swatch }}
-                          />
-                        ))}
-                      </span>
-                    </button>
-                  ))}
-                </div>
+              {secondaryControls.length > 0 && (
+                <details className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-2.5">
+                  <summary className="cursor-pointer text-xs font-semibold text-[color:var(--wb-muted)]">
+                    More options
+                  </summary>
+                  <div className="mt-3 grid grid-cols-2 gap-2">
+                    {secondaryControls.map(renderControl)}
+                  </div>
+                </details>
+              )}
+              <div className="mt-3 flex flex-wrap gap-3 text-xs">
+                <button
+                  type="button"
+                  className="studio-control px-2 py-1"
+                  onClick={() => {
+                    patchView(createCharacterLabViewDraft(selectedMode));
+                    setSearch('');
+                    setCapabilityNotice('');
+                  }}
+                >
+                  Reset view
+                </button>
+                {aliasMode && (
+                  <a className="self-center underline" href="#recipe-character-lab">
+                    Open full Character Lab
+                  </a>
+                )}
               </div>
             </div>
           </aside>
@@ -1399,10 +1432,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 </span>
                 <span className="min-w-0">
                   <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
-                    {isGenerating ? 'Queue' : 'Generate'}
+                    {isGenerating ? 'Queue' : 'Generate'} {selectedAction.label}
                   </span>
                   <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-on-fill)]">
-                    Current action
+                    {workflow.title}
                   </span>
                 </span>
               </button>
@@ -1414,6 +1447,15 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   );
 };
 
-export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = (props) => (
-  <CharacterLabRecipeSession key={props.recipeAliasId ?? 'character-lab'} {...props} />
-);
+export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = (props) => {
+  const { isDraftReady, setGenerationConfig } = useGenerationDraft();
+  const { activeWorkspaceId } = useWorkspaceState();
+  if (!isDraftReady) return <div role="status">Loading character draft…</div>;
+  return (
+    <CharacterLabRecipeSession
+      key={`${activeWorkspaceId}:${props.recipeAliasId ?? 'character-lab'}`}
+      {...props}
+      setConfig={setGenerationConfig}
+    />
+  );
+};

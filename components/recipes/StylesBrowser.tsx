@@ -17,8 +17,6 @@ import {
   IconFolders as Folders,
   IconHeart as Heart,
   IconLayoutGrid as LayoutGrid,
-  IconMaximize as Maximize,
-  IconMinimize as Minimize,
   IconStack as Layers,
   IconPencil as PenTool,
   IconPlayerPlay as Play,
@@ -56,6 +54,7 @@ import {
   RecipeResults,
 } from './RecipeWorkbenchContext';
 import { RecipeLayout } from './RecipeLayout';
+import { StyleBrowseSwitch } from './StyleBrowseSwitch';
 import {
   STYLE_BROWSER_EAGER_SECTION_LIMIT,
   STYLE_BROWSER_FLAT_GROUP_KEY,
@@ -821,10 +820,14 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       focusTarget?.focus();
     }, 0);
   }, []);
-  const openStyleCatalog = useCallback(() => {
-    setExplorerOpen(true);
-    writeStyleTabHash(isPackLandingOpen ? STYLE_PACKS_TAB_ID : currentPackId);
-  }, [currentPackId, isPackLandingOpen, writeStyleTabHash]);
+  const openStyleCatalog = useCallback(
+    (expanded = false) => {
+      setCatalogExpanded(expanded);
+      setExplorerOpen(true);
+      writeStyleTabHash(isPackLandingOpen ? STYLE_PACKS_TAB_ID : currentPackId);
+    },
+    [currentPackId, isPackLandingOpen, writeStyleTabHash],
+  );
   const isStyleNavigationPanelOpen = Boolean(
     stylePanelVisibility.navigation ?? DEFAULT_STYLE_PANEL_VISIBILITY.navigation,
   );
@@ -1835,18 +1838,12 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                         }}
                       />
                     </label>
-                    <button
-                      type="button"
-                      className="styles-catalog-expand"
-                      aria-label={
-                        catalogExpanded ? 'Use compact style catalog' : 'Expand style catalog'
-                      }
-                      aria-pressed={catalogExpanded}
-                      onClick={() => setCatalogExpanded((expanded) => !expanded)}
-                    >
-                      {catalogExpanded ? <Minimize size={16} /> : <Maximize size={16} />}
-                      <span>{catalogExpanded ? 'Compact view' : 'Explore'}</span>
-                    </button>
+                    <StyleBrowseSwitch
+                      catalogOpen
+                      expanded={catalogExpanded}
+                      onCatalog={() => openStyleCatalog(false)}
+                      onExplore={() => openStyleCatalog(true)}
+                    />
                     {catalogExpanded && (
                       <button
                         type="button"
@@ -2564,6 +2561,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
         <React.Suspense fallback={<LazySurfaceFallback label="Loading styles" />}>
           <CompactStyleSelector
             catalogOpen={explorerOpen}
+            catalogExpanded={catalogExpanded}
+            onExploreStyles={() => openStyleCatalog(true)}
             selectedStyles={selectedStyles}
             maxSlots={MAX_SELECTED_STYLE_SLOTS}
             favorites={favorites}
@@ -2576,7 +2575,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             onSetStrength={updateSelectedStyleStrength}
             onToggleEnabled={toggleSelectedStyleEnabled}
             onMove={moveSelectedStyle}
-            onBrowseCatalog={openStyleCatalog}
+            onBrowseCatalog={() => openStyleCatalog(false)}
           />
         </React.Suspense>
         {selectedStyles.length > 0 ? (

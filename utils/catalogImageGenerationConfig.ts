@@ -4,6 +4,7 @@ import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import type { ImageGenerationConfig, ImageSize, RecipeId } from '../types';
 import { normalizeImageGenRatio } from './imageGenSizing';
 import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
+import { isRegisteredRecipeId } from '../lib/recipeIds';
 
 type RecordLike = Record<string, unknown>;
 
@@ -48,20 +49,7 @@ function normalizeExecutionSpeed(value: unknown): ImageGenerationConfig['executi
 }
 
 function normalizeRecipeId(candidate: unknown, recipeContext: string): RecipeId {
-  if (typeof candidate === 'string') {
-    const normalized = candidate as Exclude<RecipeId, null>;
-    if (
-      normalized === 'remaster' ||
-      normalized === 'spritesheet' ||
-      normalized === 'cinematic' ||
-      normalized === 'character' ||
-      normalized === 'styles' ||
-      normalized === 'camera' ||
-      normalized === 'timeline'
-    ) {
-      return normalized;
-    }
-  }
+  if (isRegisteredRecipeId(candidate)) return candidate;
 
   return parseRecipeIdFromContext(recipeContext);
 }
@@ -97,6 +85,7 @@ export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): Imag
 
   return {
     ...DEFAULT_GENERATION_CONFIG,
+    outputBackground: storedConfig?.outputBackground === 'transparent' ? 'transparent' : 'workflow',
     prompt,
     recipeContext,
     recipeId,

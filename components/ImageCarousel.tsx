@@ -807,6 +807,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
         currentImage.id,
         currentImage.config.model,
         currentImage.config.aspectRatio,
+        undefined,
+        currentImage.mimeType,
       );
       downloadImage(currentImage.src, smartName);
     } catch (e) {

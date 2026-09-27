@@ -7,6 +7,10 @@ import {
   type RecipeContextBuilder,
   type RecipeContextParams,
 } from './shared';
+import {
+  CHARACTER_LAB_ACTION_PRIORITY,
+  resolveCharacterLabControls,
+} from '../characterLabWorkflows';
 
 function buildCharacterLabContext(params: RecipeContextParams) {
   const mode = getString(params, 'mode', 'poses');
@@ -22,6 +26,7 @@ function buildCharacterLabContext(params: RecipeContextParams) {
   const isCouplesPose = getBoolean(params, 'isCouplesPose');
   const hasSource = getBoolean(params, 'hasSource');
   const referencesCount = getNumber(params, 'referencesCount', 0);
+  const controls = resolveCharacterLabControls(params);
 
   const recipeSchema = {
     task_id: 'CHARACTER_LAB_ASSET_WORKFLOW',
@@ -42,14 +47,20 @@ function buildCharacterLabContext(params: RecipeContextParams) {
     },
     character_controls: {
       subject,
-      style: getString(params, 'style', "Preserve Original: Keep the source image's style."),
-      clothing: getString(params, 'clothing', 'Preserve Original'),
-      body_type: getString(params, 'bodyType', 'Preserve Original'),
-      expression: getString(params, 'expression', 'Neutral'),
-      background_color: getString(params, 'backgroundColor', '#FFFFFF'),
-      requested_aspect_ratio: getString(params, 'labAspectRatio', '1:1'),
+      ...Object.fromEntries(
+        Object.entries({
+          style: controls.style,
+          clothing: controls.clothing,
+          body_type: controls.bodyType,
+          expression: controls.expression,
+          background_color: controls.backgroundColor,
+        }).filter(([, value]) => value),
+      ),
+      requested_aspect_ratio: controls.labAspectRatio || '1:1',
     },
     selected_action_prompt: actionPrompt,
+    action_priority: CHARACTER_LAB_ACTION_PRIORITY,
+    additional_instructions: getString(params, 'additionalPrompt'),
   };
 
   return recipeDocument(

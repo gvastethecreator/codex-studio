@@ -1,6 +1,6 @@
 import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { IconChevronDown, IconSitemap, IconSparkles } from '@tabler/icons-react';
+import { IconChevronDown, IconSitemap } from '@tabler/icons-react';
 
 import type { RecipeAliasId } from '../../lib/recipeAliases';
 import { createRecipeDiscoveryProjection } from '../../lib/recipeDiscoveryProjection';
@@ -40,7 +40,6 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
   const rootRef = useRef<HTMLDivElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
   const recipeDiscovery = useMemo(() => createRecipeDiscoveryProjection(), []);
-  const isDefaultSelected = selectedLabel === 'Default';
   const activeId =
     selectedId ??
     recipeDiscovery.entries.find(
@@ -163,30 +162,13 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
                 if (event.key === 'Tab') setOpen(false);
               }}
             >
-              <div className="create-popover-title">Workflow</div>
-              <button
-                type="button"
-                role="option"
-                aria-label="Default"
-                aria-selected={isDefaultSelected}
-                tabIndex={-1}
-                className="create-workflow-default"
-                onClick={() => {
+              <RecipeDiscoveryList
+                entries={recipeDiscovery.entries}
+                selectedId={selectedLabel === 'Default' ? 'default' : activeId}
+                onSelectDefault={() => {
                   closeAndFocus();
                   onSelectDefault?.();
                 }}
-              >
-                <span className="create-workflow-default-icon" aria-hidden="true">
-                  <IconSparkles size={14} />
-                </span>
-                <span className="create-workflow-option-copy">
-                  <strong>Default</strong>
-                  <small>Create or edit with a prompt</small>
-                </span>
-              </button>
-              <RecipeDiscoveryList
-                entries={recipeDiscovery.entries}
-                selectedId={activeId}
                 density="compact"
                 onSelectRecipe={(id, aliasId) => {
                   closeAndFocus();

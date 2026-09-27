@@ -18,6 +18,28 @@ function createGradientFrame(width: number, height: number, phase: number) {
 }
 
 describe('animationGifEncoder', () => {
+  it('keeps binary alpha at 128 and clears previous frames without trails', async () => {
+    const first = new Uint8Array([255, 0, 0, 255, 0, 255, 0, 127, 0, 0, 255, 128]);
+    const next = new Uint8Array([255, 0, 0, 0, 0, 255, 0, 255, 0, 0, 255, 0]);
+    const gif = encodeGif({
+      width: 3,
+      height: 1,
+      transparent: true,
+      loop: true,
+      frames: [
+        { rgba: first, delayCentiseconds: 10 },
+        { rgba: next, delayCentiseconds: 10 },
+      ],
+    });
+    const { data } = await sharp(gif, { animated: true })
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    expect([data[3], data[7], data[11], data[15], data[19], data[23]]).toEqual([
+      255, 0, 255, 0, 255, 0,
+    ]);
+  });
+
   it('encodes multiple RGBA frames into a GIF89a buffer', () => {
     const red = new Uint8Array([255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255]);
     const blue = new Uint8Array([0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255]);

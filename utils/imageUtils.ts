@@ -167,7 +167,7 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
       ctx.drawImage(img, 0, 0, width, height);
 
       // Use webp for superior compression in modern browsers
-      // Fallback to jpeg if webp is not supported (though dataToURL usually handles it)
+      // PNG also preserves alpha when WebP encoding is unavailable.
       try {
         const webpData = canvas.toDataURL('image/webp', 0.6);
         // If webp is not supported, it might return image/png or something else
@@ -175,10 +175,10 @@ export const createThumbnail = (dataUrl: string, maxDim: number = 320): Promise<
           return resolve(webpData);
         }
       } catch (error) {
-        runtimeLogger.warn('WebP thumbnail generation failed, falling back to JPEG', error);
+        runtimeLogger.warn('WebP thumbnail generation failed, using PNG', error);
       }
 
-      resolve(canvas.toDataURL('image/jpeg', 0.7));
+      resolve(canvas.toDataURL('image/png'));
     };
     img.onerror = () => {
       cleanup();

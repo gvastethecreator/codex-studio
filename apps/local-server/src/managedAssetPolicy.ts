@@ -14,6 +14,18 @@ function canonicalPath(filePath: string) {
 }
 
 export function isManagedGenerationAssetPath(filePath: string, libraryContext: JobLibraryContext) {
+  for (const registered of libraryContext.sourceRoots ?? []) {
+    const root = canonicalPath(registered.rootPath);
+    const candidate = canonicalPath(filePath);
+    if (
+      registered.outputOnly
+        ? isInside(root, candidate)
+        : MANAGED_ASSET_ROOTS.some((segments) =>
+            isInside(canonicalPath(path.join(root, ...segments)), candidate),
+          )
+    )
+      return true;
+  }
   const libraryRoot = canonicalPath(libraryContext.rootPath);
   const candidate = canonicalPath(filePath);
   if (!isInside(libraryRoot, candidate)) return false;

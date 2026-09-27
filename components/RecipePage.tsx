@@ -12,6 +12,7 @@ import { RecipeRouter } from './RecipeRouter';
 export interface RecipePageProps {
   activeRecipe: RecipeId;
   activeRecipeAliasId?: RecipeAliasId | null;
+  workspaceId?: string;
   generationConfig: ImageGenerationConfig;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
     key: K,

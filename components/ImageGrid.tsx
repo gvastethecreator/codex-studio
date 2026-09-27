@@ -1,3 +1,4 @@
+import { CozyLoader as Loader2 } from './CozyMascot';
 import { CatalogCardBackdrop } from './CatalogCardBackdrop';
 import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
 import type {
@@ -22,7 +23,6 @@ import {
   IconLayoutGrid as LayoutGrid,
   IconLayoutList as LayoutList,
   IconSquareCheck as CheckSquare,
-  IconLoader2 as Loader2,
   IconSquare as Square,
 } from '@tabler/icons-react';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
@@ -224,6 +224,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         image.id,
         image.config.model,
         image.config.aspectRatio,
+        undefined,
+        image.mimeType,
       );
       downloadImage(image.src, smartName);
     };
@@ -1403,7 +1405,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                     disabled={isCatalogLoading}
                     className="inline-flex items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    <RefreshCw size={14} className={isCatalogLoading ? 'animate-spin' : ''} />
+                    {isCatalogLoading ? <Loader2 size={18} /> : <RefreshCw size={14} />}
                     {isCatalogLoading ? 'Loading' : 'Load more'}
                   </button>
                 )}

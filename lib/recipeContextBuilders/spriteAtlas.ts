@@ -28,7 +28,7 @@ function buildSpriteAtlasContext(params: RecipeContextParams) {
     style: contract.customStyle || contract.stylePreset,
     frame_budget: contract.frameBudget,
     background_removal: contract.backgroundRemoval,
-    chroma_key: contract.chromaKey,
+    ...(contract.backgroundRemoval === 'chroma' ? { chroma_key: contract.chromaKey } : {}),
     layout: {
       columns: contract.columns,
       cell: contract.cell,
@@ -47,11 +47,13 @@ function buildSpriteAtlasContext(params: RecipeContextParams) {
       `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
       `Rows: ${summarizeRows(contract) || 'custom rows required before generation.'}`,
       `Frame semantics: ${contract.frameSemantics}. Treat slots as ${contract.frameSemantics === 'temporal' ? 'ordered motion phases' : contract.frameSemantics === 'tiles' ? 'adjacent runtime tiles' : 'independent items or variants'}.`,
-      'Output intent: one horizontal row strip per state at the declared cell size, then transparent frames, atlas PNG, and manifest.json.frame_layout.',
+      'Output intent: one horizontal row strip per state at the declared cell size, then frames, atlas PNG, and manifest.json.frame_layout.',
       'Do not generate a whole atlas as one final image unless importing an existing sheet.',
-      contract.backgroundRemoval === 'chroma'
-        ? `Legacy key color ${contract.chromaKey}. This is a key color for a later import, not transparent pixels.`
-        : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
+      !contract.transparent
+        ? 'Maintain the background described in the prompt or source image, including existing alpha.'
+        : contract.backgroundRemoval === 'chroma'
+          ? `Legacy key color ${contract.chromaKey}. This is a key color for a later import, not transparent pixels.`
+          : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
       'Preserve identity, camera, scale, pivot, and cell occupancy across every row. Do not rotate or resize individual cells.',
     ].join('\n'),
   );

@@ -1,4 +1,5 @@
 import {
+  buildGenerationBackgroundInstruction,
   createCompiledProviderInput,
   createGenerationTaskSpec,
   composeGenerationQualityPromptSections,
@@ -128,6 +129,15 @@ function buildCodexAssetLines(sourceSpec: GenerationTaskSpec) {
 
 function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex' | 'chatgpt') {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
+  const backgroundInstruction = buildGenerationBackgroundInstruction(
+    sourceSpec.output.background,
+    sourceSpec.assets.some((asset) => asset.role !== 'mask' && asset.role !== 'control'),
+  );
+  if (
+    !sourceSpec.prompt.includes(backgroundInstruction) &&
+    !sourceSpec.quality?.constraints.includes(backgroundInstruction)
+  )
+    parts.push('', backgroundInstruction);
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
   const qualitySections = composeGenerationQualityPromptSections(sourceSpec);
