@@ -284,6 +284,29 @@ categories:
       - pack_27/SP27-238.yaml
       - pack_27/SP27-239.yaml
       - pack_27/SP27-240.yaml
+  - id: video-games-2020s
+    name: 13. Video Games 2020s
+    presetRefs:
+      - pack_27/SP27-241.yaml
+      - pack_27/SP27-242.yaml
+      - pack_27/SP27-243.yaml
+      - pack_27/SP27-244.yaml
+      - pack_27/SP27-245.yaml
+      - pack_27/SP27-246.yaml
+      - pack_27/SP27-247.yaml
+      - pack_27/SP27-248.yaml
+      - pack_27/SP27-249.yaml
+      - pack_27/SP27-250.yaml
+      - pack_27/SP27-251.yaml
+      - pack_27/SP27-252.yaml
+      - pack_27/SP27-253.yaml
+      - pack_27/SP27-254.yaml
+      - pack_27/SP27-255.yaml
+      - pack_27/SP27-256.yaml
+      - pack_27/SP27-257.yaml
+      - pack_27/SP27-258.yaml
+      - pack_27/SP27-259.yaml
+      - pack_27/SP27-260.yaml
 presetRefs:
   - pack_27/SP27-001.yaml
   - pack_27/SP27-002.yaml
@@ -525,3 +548,23 @@ presetRefs:
   - pack_27/SP27-238.yaml
   - pack_27/SP27-239.yaml
   - pack_27/SP27-240.yaml
+  - pack_27/SP27-241.yaml
+  - pack_27/SP27-242.yaml
+  - pack_27/SP27-243.yaml
+  - pack_27/SP27-244.yaml
+  - pack_27/SP27-245.yaml
+  - pack_27/SP27-246.yaml
+  - pack_27/SP27-247.yaml
+  - pack_27/SP27-248.yaml
+  - pack_27/SP27-249.yaml
+  - pack_27/SP27-250.yaml
+  - pack_27/SP27-251.yaml
+  - pack_27/SP27-252.yaml
+  - pack_27/SP27-253.yaml
+  - pack_27/SP27-254.yaml
+  - pack_27/SP27-255.yaml
+  - pack_27/SP27-256.yaml
+  - pack_27/SP27-257.yaml
+  - pack_27/SP27-258.yaml
+  - pack_27/SP27-259.yaml
+  - pack_27/SP27-260.yaml

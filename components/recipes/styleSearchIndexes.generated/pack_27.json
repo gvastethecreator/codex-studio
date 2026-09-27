@@ -3,7 +3,7 @@
     {
       "id": "pack_27",
       "name": "Decade Screens",
-      "presetCount": 240
+      "presetCount": 260
     }
   ],
   "presets": [
@@ -4326,7 +4326,367 @@
       "tags": ["decade-screens", "video-games-2010s", "twenty-tens-exploration-game"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp27-240 outer wilds 2019 - mobius tiny solar system twenty-tens exploration game outer wilds tiny planets 12. video games 2010s video games 2010s twenty-tens exploration game pack_27 decade screens video-games-2010s decade-screens video-games-2010s twenty-tens-exploration-game"
+    },
+    {
+      "id": "SP27-241",
+      "name": "Cyberpunk 2077 2020 - CD Projekt Night City Neon",
+      "styleAnchors": [
+        "Cyberpunk 2077 2020 - CD Projekt Night City Neon",
+        "twenty-twenties role-playing game",
+        "Cyberpunk 2077 Night City neon"
+      ],
+      "ref": "pack_27/SP27-241.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties role-playing game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-241 cyberpunk 2077 2020 - cd projekt night city neon twenty-twenties role-playing game cyberpunk 2077 night city neon 13. video games 2020s video games 2020s twenty-twenties role-playing game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-role-playing-game"
+    },
+    {
+      "id": "SP27-242",
+      "name": "It Takes Two 2021 - Hazelight Toy Adventure",
+      "styleAnchors": [
+        "It Takes Two 2021 - Hazelight Toy Adventure",
+        "twenty-twenties co-op game",
+        "It Takes Two tiny worlds"
+      ],
+      "ref": "pack_27/SP27-242.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties co-op game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-co-op-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-242 it takes two 2021 - hazelight toy adventure twenty-twenties co-op game it takes two tiny worlds 13. video games 2020s video games 2020s twenty-twenties co-op game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-co-op-game"
+    },
+    {
+      "id": "SP27-243",
+      "name": "Deaths Door 2021 - Acid Nerve Crow Reaper",
+      "styleAnchors": [
+        "Deaths Door 2021 - Acid Nerve Crow Reaper",
+        "twenty-twenties action game",
+        "Death's Door crow reaper"
+      ],
+      "ref": "pack_27/SP27-243.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties action game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-243 deaths door 2021 - acid nerve crow reaper twenty-twenties action game death's door crow reaper 13. video games 2020s video games 2020s twenty-twenties action game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-action-game"
+    },
+    {
+      "id": "SP27-244",
+      "name": "Sifu 2022 - Sloclap Painterly Kung Fu",
+      "styleAnchors": [
+        "Sifu 2022 - Sloclap Painterly Kung Fu",
+        "twenty-twenties action game",
+        "Sifu painterly kung fu"
+      ],
+      "ref": "pack_27/SP27-244.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties action game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-244 sifu 2022 - sloclap painterly kung fu twenty-twenties action game sifu painterly kung fu 13. video games 2020s video games 2020s twenty-twenties action game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-action-game"
+    },
+    {
+      "id": "SP27-245",
+      "name": "Tunic 2022 - Isometric Fox Storybook Manual",
+      "styleAnchors": [
+        "Tunic 2022 - Isometric Fox Storybook Manual",
+        "twenty-twenties adventure game",
+        "Tunic isometric diorama"
+      ],
+      "ref": "pack_27/SP27-245.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties adventure game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-245 tunic 2022 - isometric fox storybook manual twenty-twenties adventure game tunic isometric diorama 13. video games 2020s video games 2020s twenty-twenties adventure game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-adventure-game"
+    },
+    {
+      "id": "SP27-246",
+      "name": "Stray 2022 - BlueTwelve Cat Robot City",
+      "styleAnchors": [
+        "Stray 2022 - BlueTwelve Cat Robot City",
+        "twenty-twenties adventure game",
+        "Stray walled city"
+      ],
+      "ref": "pack_27/SP27-246.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties adventure game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-246 stray 2022 - bluetwelve cat robot city twenty-twenties adventure game stray walled city 13. video games 2020s video games 2020s twenty-twenties adventure game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-adventure-game"
+    },
+    {
+      "id": "SP27-247",
+      "name": "Neon White 2022 - Angel Matrix Heaven Speedrun",
+      "styleAnchors": [
+        "Neon White 2022 - Angel Matrix Heaven Speedrun",
+        "twenty-twenties action game",
+        "Neon White heaven"
+      ],
+      "ref": "pack_27/SP27-247.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties action game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-247 neon white 2022 - angel matrix heaven speedrun twenty-twenties action game neon white heaven 13. video games 2020s video games 2020s twenty-twenties action game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-action-game"
+    },
+    {
+      "id": "SP27-248",
+      "name": "Pentiment 2022 - Obsidian Illuminated Manuscript",
+      "styleAnchors": [
+        "Pentiment 2022 - Obsidian Illuminated Manuscript",
+        "twenty-twenties adventure game",
+        "Pentiment manuscript"
+      ],
+      "ref": "pack_27/SP27-248.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties adventure game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-248 pentiment 2022 - obsidian illuminated manuscript twenty-twenties adventure game pentiment manuscript 13. video games 2020s video games 2020s twenty-twenties adventure game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-adventure-game"
+    },
+    {
+      "id": "SP27-249",
+      "name": "Cult of the Lamb 2022 - Massive Monster Cute Occult",
+      "styleAnchors": [
+        "Cult of the Lamb 2022 - Massive Monster Cute Occult",
+        "twenty-twenties roguelike game",
+        "Cult of the Lamb cute occult"
+      ],
+      "ref": "pack_27/SP27-249.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties roguelike game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-roguelike-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-249 cult of the lamb 2022 - massive monster cute occult twenty-twenties roguelike game cult of the lamb cute occult 13. video games 2020s video games 2020s twenty-twenties roguelike game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-roguelike-game"
+    },
+    {
+      "id": "SP27-250",
+      "name": "Vampire Survivors 2022 - poncle Sprite Swarm",
+      "styleAnchors": [
+        "Vampire Survivors 2022 - poncle Sprite Swarm",
+        "twenty-twenties roguelike game",
+        "Vampire Survivors swarm"
+      ],
+      "ref": "pack_27/SP27-250.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties roguelike game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-roguelike-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-250 vampire survivors 2022 - poncle sprite swarm twenty-twenties roguelike game vampire survivors swarm 13. video games 2020s video games 2020s twenty-twenties roguelike game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-roguelike-game"
+    },
+    {
+      "id": "SP27-251",
+      "name": "Baldurs Gate 3 2023 - Larian Cinematic Fantasy",
+      "styleAnchors": [
+        "Baldurs Gate 3 2023 - Larian Cinematic Fantasy",
+        "twenty-twenties role-playing game",
+        "Baldur's Gate 3 cinematic fantasy"
+      ],
+      "ref": "pack_27/SP27-251.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties role-playing game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-251 baldurs gate 3 2023 - larian cinematic fantasy twenty-twenties role-playing game baldur's gate 3 cinematic fantasy 13. video games 2020s video games 2020s twenty-twenties role-playing game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-role-playing-game"
+    },
+    {
+      "id": "SP27-252",
+      "name": "Alan Wake 2 2023 - Remedy Dark Place Noir",
+      "styleAnchors": [
+        "Alan Wake 2 2023 - Remedy Dark Place Noir",
+        "twenty-twenties horror game",
+        "Alan Wake 2 noir"
+      ],
+      "ref": "pack_27/SP27-252.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties horror game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-horror-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-252 alan wake 2 2023 - remedy dark place noir twenty-twenties horror game alan wake 2 noir 13. video games 2020s video games 2020s twenty-twenties horror game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-horror-game"
+    },
+    {
+      "id": "SP27-253",
+      "name": "Sea of Stars 2023 - Sabotage Pixel Solstice RPG",
+      "styleAnchors": [
+        "Sea of Stars 2023 - Sabotage Pixel Solstice RPG",
+        "twenty-twenties role-playing game",
+        "Sea of Stars pixel art"
+      ],
+      "ref": "pack_27/SP27-253.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties role-playing game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-253 sea of stars 2023 - sabotage pixel solstice rpg twenty-twenties role-playing game sea of stars pixel art 13. video games 2020s video games 2020s twenty-twenties role-playing game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-role-playing-game"
+    },
+    {
+      "id": "SP27-254",
+      "name": "Lies of P 2023 - Neowiz Belle Epoque Puppet City",
+      "styleAnchors": [
+        "Lies of P 2023 - Neowiz Belle Epoque Puppet City",
+        "twenty-twenties action game",
+        "Lies of P Belle Époque"
+      ],
+      "ref": "pack_27/SP27-254.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties action game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-254 lies of p 2023 - neowiz belle epoque puppet city twenty-twenties action game lies of p belle époque 13. video games 2020s video games 2020s twenty-twenties action game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-action-game"
+    },
+    {
+      "id": "SP27-255",
+      "name": "Pizza Tower 2023 - Tour De Pizza Cartoon Chaos",
+      "styleAnchors": [
+        "Pizza Tower 2023 - Tour De Pizza Cartoon Chaos",
+        "twenty-twenties platformer game",
+        "Pizza Tower frantic cartoon"
+      ],
+      "ref": "pack_27/SP27-255.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties platformer game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-platformer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-255 pizza tower 2023 - tour de pizza cartoon chaos twenty-twenties platformer game pizza tower frantic cartoon 13. video games 2020s video games 2020s twenty-twenties platformer game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-platformer-game"
+    },
+    {
+      "id": "SP27-256",
+      "name": "Chants of Sennaar 2023 - Rundisc Moebius Tower",
+      "styleAnchors": [
+        "Chants of Sennaar 2023 - Rundisc Moebius Tower",
+        "twenty-twenties puzzle game",
+        "Chants of Sennaar Moebius"
+      ],
+      "ref": "pack_27/SP27-256.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties puzzle game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-puzzle-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-256 chants of sennaar 2023 - rundisc moebius tower twenty-twenties puzzle game chants of sennaar moebius 13. video games 2020s video games 2020s twenty-twenties puzzle game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-puzzle-game"
+    },
+    {
+      "id": "SP27-257",
+      "name": "Balatro 2024 - LocalThunk CRT Poker Psychedelia",
+      "styleAnchors": [
+        "Balatro 2024 - LocalThunk CRT Poker Psychedelia",
+        "twenty-twenties roguelike game",
+        "Balatro CRT swirl"
+      ],
+      "ref": "pack_27/SP27-257.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties roguelike game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-roguelike-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-257 balatro 2024 - localthunk crt poker psychedelia twenty-twenties roguelike game balatro crt swirl 13. video games 2020s video games 2020s twenty-twenties roguelike game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-roguelike-game"
+    },
+    {
+      "id": "SP27-258",
+      "name": "Animal Well 2024 - Shared Memory Dark Pixel Well",
+      "styleAnchors": [
+        "Animal Well 2024 - Shared Memory Dark Pixel Well",
+        "twenty-twenties metroidvania game",
+        "Animal Well glowing pixels"
+      ],
+      "ref": "pack_27/SP27-258.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties metroidvania game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-metroidvania-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-258 animal well 2024 - shared memory dark pixel well twenty-twenties metroidvania game animal well glowing pixels 13. video games 2020s video games 2020s twenty-twenties metroidvania game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-metroidvania-game"
+    },
+    {
+      "id": "SP27-259",
+      "name": "Astro Bot 2024 - Team Asobi Toy Platform Joy",
+      "styleAnchors": [
+        "Astro Bot 2024 - Team Asobi Toy Platform Joy",
+        "twenty-twenties platformer game",
+        "Astro Bot glossy toys"
+      ],
+      "ref": "pack_27/SP27-259.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties platformer game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-platformer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-259 astro bot 2024 - team asobi toy platform joy twenty-twenties platformer game astro bot glossy toys 13. video games 2020s video games 2020s twenty-twenties platformer game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-platformer-game"
+    },
+    {
+      "id": "SP27-260",
+      "name": "Clair Obscur Expedition 33 2025 - Sandfall Belle Epoque Fantasy",
+      "styleAnchors": [
+        "Clair Obscur Expedition 33 2025 - Sandfall Belle Epoque Fantasy",
+        "twenty-twenties role-playing game",
+        "Expedition 33 Belle Époque"
+      ],
+      "ref": "pack_27/SP27-260.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2020s",
+      "categoryName": "13. Video Games 2020s",
+      "domain": "twenty-twenties role-playing game",
+      "tags": ["decade-screens", "video-games-2020s", "twenty-twenties-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-260 clair obscur expedition 33 2025 - sandfall belle epoque fantasy twenty-twenties role-playing game expedition 33 belle époque 13. video games 2020s video games 2020s twenty-twenties role-playing game pack_27 decade screens video-games-2020s decade-screens video-games-2020s twenty-twenties-role-playing-game"
     }
   ],
-  "totalPresetCount": 240
+  "totalPresetCount": 260
 }

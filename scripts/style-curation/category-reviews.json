@@ -2863,5 +2863,20 @@
     "evidencePresetIds": ["SP27-221", "SP27-222", "SP27-223"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "13. Video Games 2020s",
+    "displayCategory": "Video games 2020s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "3d1025874c66e0114e12db629734a67e952cfdabe71e6f250eab3b73605c8015",
+    "problem": "Twenty-twenties game styles must reproduce each named game's real on-screen look (photoreal neon, painterly 3D, manuscript, CRT pixel, toy gloss) without copying its characters, logos or level layouts; games already named in pack_12 are not repeated.",
+    "preserve": "The requested subject stays the subject, rebuilt in that game's rendering; cards invent original characters and places.",
+    "proposedAction": "New category of 20 twenty-twenties games from Cyberpunk 2077, It Takes Two and Sifu to Pentiment, Baldur's Gate 3, Balatro, Astro Bot and Clair Obscur: Expedition 33.",
+    "validation": "Generate the card set; check each card reads as its game's rendering, with no franchise character or logo.",
+    "evidencePresetIds": ["SP27-241", "SP27-242", "SP27-243"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]
