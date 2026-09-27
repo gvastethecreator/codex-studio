@@ -10,7 +10,11 @@ const catalog = catalogJson as Array<{
   name: string;
   packId: string;
   packName: string;
-  snapshot: { dna: SelectedStyleSlot['preset']['style'] };
+  snapshot: {
+    dna: SelectedStyleSlot['preset']['style'];
+    version: number;
+    policy: NonNullable<SelectedStyleSlot['preset']['intentional']>['policy'];
+  };
 }>;
 
 function slotFor(id: string): SelectedStyleSlot {
@@ -21,6 +25,7 @@ function slotFor(id: string): SelectedStyleSlot {
       id: entry.id,
       name: entry.name,
       style: entry.snapshot.dna,
+      intentional: { policy: entry.snapshot.policy, presetVersion: entry.snapshot.version },
     },
     packId: entry.packId,
     packName: entry.packName,

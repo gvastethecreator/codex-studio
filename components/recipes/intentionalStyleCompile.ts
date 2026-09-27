@@ -1,39 +1,18 @@
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import type { Attachment } from '../../types';
-import policyRegistryJson from './styles/intentional-v1/policy-registry.json';
-import curationPoliciesJson from './styles/curation-v2/policies.generated.json';
+import { loadStyleRuntimePack } from './stylesData';
 import {
   createDefaultStyleLayerFieldControls,
   STYLE_LAYER_FIELD_DEFINITIONS,
   type SelectedStyleSlot,
 } from './styleLayerComposer';
 
-type PolicyRegistryEntry = Intentional.Policy & {
-  presetVersion?: number;
-  name?: string;
-  packId?: string;
-};
-
-const POLICY_REGISTRY = { ...policyRegistryJson, ...curationPoliciesJson } as Record<
-  string,
-  PolicyRegistryEntry
->;
-
-export function getIntentionalPolicy(presetId: string): {
-  policy: Intentional.Policy;
-  presetVersion: number;
-} | null {
-  const entry = POLICY_REGISTRY[presetId];
-  if (!entry) return null;
-  const { presetVersion, name: _name, packId: _packId, ...policy } = entry;
-  return {
-    policy: policy as Intentional.Policy,
-    presetVersion: typeof presetVersion === 'number' ? presetVersion : 1,
-  };
-}
-
-export function isIntentionalPreset(presetId: string) {
-  return Boolean(POLICY_REGISTRY[presetId]);
+// Style packs ship each preset's policy in runtime.json. A slot saved before that carries no
+// policy, so it is read from the installed pack.
+async function resolveIntentionalPolicy(slot: SelectedStyleSlot) {
+  if (slot.preset.intentional) return slot.preset.intentional;
+  const pack = await loadStyleRuntimePack(slot.packId);
+  return pack?.presets.find((preset) => preset.id === slot.preset.id)?.intentional ?? null;
 }
 
 function hasExplicitFieldControls(slot: SelectedStyleSlot) {
@@ -103,7 +82,8 @@ export async function compileIntentionalStylePlan({
     ]);
   }
 
-  const missing = enabled.filter((slot) => !isIntentionalPreset(slot.preset.id));
+  const policies = await Promise.all(enabled.map(resolveIntentionalPolicy));
+  const missing = enabled.filter((_slot, index) => !policies[index]);
   if (missing.length > 0) {
     throw new Intentional.CompilationBlocked([
       {
@@ -117,7 +97,7 @@ export async function compileIntentionalStylePlan({
 
   const layers: Intentional.Layer[] = [];
   for (const [index, slot] of enabled.entries()) {
-    const registered = getIntentionalPolicy(slot.preset.id);
+    const registered = policies[index];
     if (!registered) continue;
     const layer = await Intentional.layerFromLegacySlot(
       {

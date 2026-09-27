@@ -23,6 +23,7 @@ import {
 } from '../components/recipes/styles/collections/styleCollectionProjection';
 import type { StyleCollectionEntry } from '../components/recipes/styles/collections/styleCollectionTypes';
 import type {
+  StyleRuntimeIntentional,
   StyleRuntimePack,
   StyleRuntimePreset,
 } from '../components/recipes/styles/runtimeTypes';
@@ -66,6 +67,15 @@ const categoryImagesRoot = path.join(
   'style-card-thumbnails',
 );
 const archiveRoot = path.join(styleManifestsDir, 'archive');
+// Hand-written Intentional policies for presets whose manifests carry none.
+const intentionalRegistryPath = path.join(
+  rootDir,
+  'components',
+  'recipes',
+  'styles',
+  'intentional-v1',
+  'policy-registry.json',
+);
 // Collections that Studio fills from the user's own data, not from style packs.
 const USER_COLLECTION_IDS = new Set(['my_styles', 'favorites', 'recent']);
 
@@ -210,6 +220,23 @@ async function loadArchivedPresets() {
   return byPack;
 }
 
+/** Attaches registry policies to presets whose manifests carry none; manifests win. */
+async function attachIntentionalPolicies(presetGroups: StyleRuntimePreset[][]) {
+  const registry = JSON.parse(await readFile(intentionalRegistryPath, 'utf8')) as Record<
+    string,
+    Record<string, unknown> & { presetVersion?: number }
+  >;
+  for (const preset of presetGroups.flat()) {
+    const entry = registry[preset.id];
+    if (preset.intentional || !entry) continue;
+    const { presetVersion, name: _name, packId: _packId, ...policy } = entry;
+    preset.intentional = {
+      policy: policy as unknown as StyleRuntimeIntentional['policy'],
+      presetVersion: typeof presetVersion === 'number' ? presetVersion : 1,
+    };
+  }
+}
+
 async function writeJson(filePath: string, value: unknown) {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
@@ -226,6 +253,10 @@ const searchIndex = createStylePresetCatalogSearchIndexFromRuntimePacks(runtimeP
 });
 const categoryImages = await loadCategoryImages();
 const archivedPresets = await loadArchivedPresets();
+await attachIntentionalPolicies([
+  ...runtimePacks.map((pack) => pack.presets),
+  ...[...archivedPresets.values()].map((presets) => [...presets.values()]),
+]);
 await mkdir(outDir, { recursive: true });
 
 let built = 0;

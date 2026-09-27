@@ -1,3 +1,11 @@
+import type { Policy as IntentionalPolicy } from '../../../packages/shared/src/styles/intentional-v1/types';
+
+/** The Intentional styles policy of a preset, for the preset version it was written against. */
+export interface StyleRuntimeIntentional {
+  policy: IntentionalPolicy;
+  presetVersion: number;
+}
+
 export interface StyleRuntimePreset {
   id: string;
   name: string;
@@ -17,6 +25,7 @@ export interface StyleRuntimePreset {
   materials?: unknown;
   print?: unknown;
   digital?: unknown;
+  intentional?: StyleRuntimeIntentional;
 }
 
 export interface StyleVisualDna {

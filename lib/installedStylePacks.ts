@@ -91,9 +91,9 @@ export function fetchStylePackFile<T>(
 
 /** Packs that ship retired presets for old favorites. */
 export function stylePackIdsWithArchivedPresets() {
-  return [...extensionByPackId.values()]
-    .filter((extension) => extension.files.archived)
-    .map((extension) => extension.stylePack.id);
+  return [...extensionByPackId.values()].flatMap((extension) =>
+    extension.files.archived ? [extension.stylePack.id] : [],
+  );
 }
 
 const LANDING_IMAGE_LIMIT = 6;

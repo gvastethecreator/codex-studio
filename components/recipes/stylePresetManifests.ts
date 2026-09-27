@@ -7,6 +7,7 @@ import type {
 import {
   getStyleRuntimePresetDisplayName,
   getStyleRuntimePresetSearchNames,
+  type StyleRuntimeIntentional,
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './styles/runtimeTypes';
@@ -660,6 +661,15 @@ export function composeStyleRuntimePacksFromManifests(
             ...(preset.attributes?.print !== undefined ? { print: preset.attributes.print } : {}),
             ...(preset.attributes?.digital !== undefined
               ? { digital: preset.attributes.digital }
+              : {}),
+            ...(preset.attributes?.intentionalPolicy !== undefined
+              ? {
+                  intentional: {
+                    policy: preset.attributes
+                      .intentionalPolicy as StyleRuntimeIntentional['policy'],
+                    presetVersion: preset.version,
+                  },
+                }
               : {}),
           },
         ];
