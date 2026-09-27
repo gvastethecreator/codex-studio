@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-196
+packId: pack_27
+name: The Good the Bad and the Ugly 1966 - Leone Extreme Close-Up
+styleAnchors:
+  - The Good the Bad and the Ugly 1966 - Leone Extreme Close-Up
+  - sixties spaghetti western
+  - Leone extreme close-ups
+displayName: The Good the Bad and the Ugly 1966 - Leone Extreme Close-Up
+category: 10. Classic Noir & Western
+domain: sixties spaghetti western
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-noir-western
+  - noir-western
+  - classic-cinema
+  - good-bad-ugly
+  - reference-title
+visualDna:
+  aesthetic: 'Sergio Leone The Good, the Bad and the Ugly (1966) look: Techniscope widescreen with extreme close-ups of eyes next to vast desert, sweat, stubble, circular cemetery standoffs and Morricone tension.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in extreme close-ups of eyes set against vast widescreen desert. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sun-baked ochre, dust and sky blue, true to the The Good the Bad and the Ugly 1966 palette.
+  lighting_and_shadow: Blazing desert sun and sweat highlights, lit the way The Good the Bad and the Ugly 1966 lights its scenes.
+  texture_and_material: Mid-century Technicolor or Eastmancolor grain with warm earth tones.
+  camera_and_composition: Extreme close-ups cut against vast wide shots, framed the way The Good the Bad and the Ugly 1966 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with sweaty operatic standoff.
+  rendering_and_quality: Authentic sixties Leone Techniscope frame, in the recognizable hand of The Good the Bad and the Ugly 1966.
+  creative_brief: 'Sergio Leone The Good, the Bad and the Ugly (1966) look: Techniscope widescreen with extreme close-ups of eyes next to vast desert, sweat, stubble, circular cemetery standoffs and Morricone tension. Carry it through Leone extreme close-ups, widescreen desert, standoffs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Leone extreme close-ups; widescreen desert; standoffs
+avoidRules:
+  - a poncho-wearing gunslinger with a cigarillo
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a poncho-wearing gunslinger with a cigarillo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: classic-noir-western
+  categoryName: 10. Classic Noir & Western
+  domain: sixties spaghetti western
+  tags:
+    - curation-v2
+    - classic-noir-western
+    - noir-western
+    - classic-cinema
+    - good-bad-ugly
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

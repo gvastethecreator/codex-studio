@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-199
+packId: pack_27
+name: El Topo 1970 - Jodorowsky Surreal Desert
+styleAnchors:
+  - El Topo 1970 - Jodorowsky Surreal Desert
+  - seventies surreal western
+  - El Topo surreal desert
+displayName: El Topo 1970 - Jodorowsky Surreal Desert
+category: 10. Classic Noir & Western
+domain: seventies surreal western
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-noir-western
+  - noir-western
+  - classic-cinema
+  - el-topo
+  - reference-title
+visualDna:
+  aesthetic: 'Alejandro Jodorowsky El Topo (1970) look: surreal acid western, white desert, symbolic tableaux, black-clad riders, umbrellas in the sun, pools of blood and mystical allegory.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in surreal symbolic tableaux across a white desert. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bleached white desert, black costume and red accents.
+  lighting_and_shadow: Harsh white desert sun, lit the way El Topo 1970 lights its scenes.
+  texture_and_material: Mid-century Technicolor or Eastmancolor grain with warm earth tones.
+  camera_and_composition: Frontal symbolic tableaux, framed the way El Topo 1970 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with surreal mystical allegory.
+  rendering_and_quality: Authentic seventies acid western frame, in the recognizable hand of El Topo 1970.
+  creative_brief: 'Alejandro Jodorowsky El Topo (1970) look: surreal acid western, white desert, symbolic tableaux, black-clad riders, umbrellas in the sun, pools of blood and mystical allegory. Carry it through El Topo surreal desert, symbolic tableaux, black riders. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: El Topo surreal desert; symbolic tableaux; black riders
+avoidRules:
+  - a black-clad rider with a naked child and an umbrella
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a black-clad rider with a naked child and an umbrella, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: classic-noir-western
+  categoryName: 10. Classic Noir & Western
+  domain: seventies surreal western
+  tags:
+    - curation-v2
+    - classic-noir-western
+    - noir-western
+    - classic-cinema
+    - el-topo
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_27",
       "name": "Decade Screens",
-      "presetCount": 180
+      "presetCount": 200
     }
   ],
   "presets": [
@@ -3246,7 +3246,367 @@
       "tags": ["decade-screens", "sci-fi-cinema-90s", "nineties-science-fiction-cinema"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp27-180 the matrix 1999 - wachowski green code bullet time nineties science fiction cinema matrix green tint 9. sci-fi cinema 90s sci-fi cinema 90s nineties science fiction cinema pack_27 decade screens sci-fi-cinema-90s decade-screens sci-fi-cinema-90s nineties-science-fiction-cinema"
+    },
+    {
+      "id": "SP27-181",
+      "name": "The Maltese Falcon 1941 - Huston Office Noir",
+      "styleAnchors": [
+        "The Maltese Falcon 1941 - Huston Office Noir",
+        "forties film noir",
+        "Maltese Falcon office"
+      ],
+      "ref": "pack_27/SP27-181.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "forties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "forties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-181 the maltese falcon 1941 - huston office noir forties film noir maltese falcon office 10. classic noir & western classic noir & western forties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western forties-film-noir"
+    },
+    {
+      "id": "SP27-182",
+      "name": "Double Indemnity 1944 - Wilder Venetian Dust Noir",
+      "styleAnchors": [
+        "Double Indemnity 1944 - Wilder Venetian Dust Noir",
+        "forties film noir",
+        "Double Indemnity dusty sunlight"
+      ],
+      "ref": "pack_27/SP27-182.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "forties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "forties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-182 double indemnity 1944 - wilder venetian dust noir forties film noir double indemnity dusty sunlight 10. classic noir & western classic noir & western forties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western forties-film-noir"
+    },
+    {
+      "id": "SP27-183",
+      "name": "Laura 1944 - Preminger Portrait Mystery",
+      "styleAnchors": [
+        "Laura 1944 - Preminger Portrait Mystery",
+        "forties film noir",
+        "Laura portrait"
+      ],
+      "ref": "pack_27/SP27-183.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "forties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "forties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-183 laura 1944 - preminger portrait mystery forties film noir laura portrait 10. classic noir & western classic noir & western forties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western forties-film-noir"
+    },
+    {
+      "id": "SP27-184",
+      "name": "Out of the Past 1947 - Tourneur Nocturnal Fatalism",
+      "styleAnchors": [
+        "Out of the Past 1947 - Tourneur Nocturnal Fatalism",
+        "forties film noir",
+        "Out of the Past low-key"
+      ],
+      "ref": "pack_27/SP27-184.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "forties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "forties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-184 out of the past 1947 - tourneur nocturnal fatalism forties film noir out of the past low-key 10. classic noir & western classic noir & western forties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western forties-film-noir"
+    },
+    {
+      "id": "SP27-185",
+      "name": "The Third Man 1949 - Reed Tilted Vienna",
+      "styleAnchors": [
+        "The Third Man 1949 - Reed Tilted Vienna",
+        "forties film noir",
+        "Third Man dutch tilts"
+      ],
+      "ref": "pack_27/SP27-185.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "forties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "forties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-185 the third man 1949 - reed tilted vienna forties film noir third man dutch tilts 10. classic noir & western classic noir & western forties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western forties-film-noir"
+    },
+    {
+      "id": "SP27-186",
+      "name": "Sunset Boulevard 1950 - Wilder Decaying Hollywood",
+      "styleAnchors": [
+        "Sunset Boulevard 1950 - Wilder Decaying Hollywood",
+        "fifties film noir",
+        "Sunset Boulevard mansion"
+      ],
+      "ref": "pack_27/SP27-186.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "fifties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "fifties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-186 sunset boulevard 1950 - wilder decaying hollywood fifties film noir sunset boulevard mansion 10. classic noir & western classic noir & western fifties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western fifties-film-noir"
+    },
+    {
+      "id": "SP27-187",
+      "name": "The Night of the Hunter 1955 - Laughton Expressionist Fable",
+      "styleAnchors": [
+        "The Night of the Hunter 1955 - Laughton Expressionist Fable",
+        "fifties film noir",
+        "Night of the Hunter silhouettes"
+      ],
+      "ref": "pack_27/SP27-187.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "fifties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "fifties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-187 the night of the hunter 1955 - laughton expressionist fable fifties film noir night of the hunter silhouettes 10. classic noir & western classic noir & western fifties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western fifties-film-noir"
+    },
+    {
+      "id": "SP27-188",
+      "name": "Kiss Me Deadly 1955 - Aldrich Atomic Noir",
+      "styleAnchors": [
+        "Kiss Me Deadly 1955 - Aldrich Atomic Noir",
+        "fifties film noir",
+        "Kiss Me Deadly extreme angles"
+      ],
+      "ref": "pack_27/SP27-188.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "fifties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "fifties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-188 kiss me deadly 1955 - aldrich atomic noir fifties film noir kiss me deadly extreme angles 10. classic noir & western classic noir & western fifties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western fifties-film-noir"
+    },
+    {
+      "id": "SP27-189",
+      "name": "Sweet Smell of Success 1957 - Mackendrick Neon Broadway",
+      "styleAnchors": [
+        "Sweet Smell of Success 1957 - Mackendrick Neon Broadway",
+        "fifties film noir",
+        "Sweet Smell neon Broadway"
+      ],
+      "ref": "pack_27/SP27-189.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "fifties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "fifties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-189 sweet smell of success 1957 - mackendrick neon broadway fifties film noir sweet smell neon broadway 10. classic noir & western classic noir & western fifties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western fifties-film-noir"
+    },
+    {
+      "id": "SP27-190",
+      "name": "Touch of Evil 1958 - Welles Border Town Long Take",
+      "styleAnchors": [
+        "Touch of Evil 1958 - Welles Border Town Long Take",
+        "fifties film noir",
+        "Touch of Evil border town"
+      ],
+      "ref": "pack_27/SP27-190.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "fifties film noir",
+      "tags": ["decade-screens", "classic-noir-and-western", "fifties-film-noir"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-190 touch of evil 1958 - welles border town long take fifties film noir touch of evil border town 10. classic noir & western classic noir & western fifties film noir pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western fifties-film-noir"
+    },
+    {
+      "id": "SP27-191",
+      "name": "Stagecoach 1939 - Ford Monument Valley Journey",
+      "styleAnchors": [
+        "Stagecoach 1939 - Ford Monument Valley Journey",
+        "classic western cinema",
+        "Stagecoach Monument Valley"
+      ],
+      "ref": "pack_27/SP27-191.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "classic western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "classic-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-191 stagecoach 1939 - ford monument valley journey classic western cinema stagecoach monument valley 10. classic noir & western classic noir & western classic western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western classic-western-cinema"
+    },
+    {
+      "id": "SP27-192",
+      "name": "High Noon 1952 - Zinnemann Clock Tension",
+      "styleAnchors": [
+        "High Noon 1952 - Zinnemann Clock Tension",
+        "classic western cinema",
+        "High Noon clocks"
+      ],
+      "ref": "pack_27/SP27-192.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "classic western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "classic-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-192 high noon 1952 - zinnemann clock tension classic western cinema high noon clocks 10. classic noir & western classic noir & western classic western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western classic-western-cinema"
+    },
+    {
+      "id": "SP27-193",
+      "name": "Johnny Guitar 1954 - Ray Trucolor Melodrama",
+      "styleAnchors": [
+        "Johnny Guitar 1954 - Ray Trucolor Melodrama",
+        "classic western cinema",
+        "Johnny Guitar Trucolor"
+      ],
+      "ref": "pack_27/SP27-193.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "classic western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "classic-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-193 johnny guitar 1954 - ray trucolor melodrama classic western cinema johnny guitar trucolor 10. classic noir & western classic noir & western classic western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western classic-western-cinema"
+    },
+    {
+      "id": "SP27-194",
+      "name": "The Searchers 1956 - Ford VistaVision Doorways",
+      "styleAnchors": [
+        "The Searchers 1956 - Ford VistaVision Doorways",
+        "classic western cinema",
+        "Searchers doorway frame"
+      ],
+      "ref": "pack_27/SP27-194.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "classic western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "classic-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-194 the searchers 1956 - ford vistavision doorways classic western cinema searchers doorway frame 10. classic noir & western classic noir & western classic western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western classic-western-cinema"
+    },
+    {
+      "id": "SP27-195",
+      "name": "Rio Bravo 1959 - Hawks Jailhouse Camaraderie",
+      "styleAnchors": [
+        "Rio Bravo 1959 - Hawks Jailhouse Camaraderie",
+        "classic western cinema",
+        "Rio Bravo jailhouse"
+      ],
+      "ref": "pack_27/SP27-195.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "classic western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "classic-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-195 rio bravo 1959 - hawks jailhouse camaraderie classic western cinema rio bravo jailhouse 10. classic noir & western classic noir & western classic western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western classic-western-cinema"
+    },
+    {
+      "id": "SP27-196",
+      "name": "The Good the Bad and the Ugly 1966 - Leone Extreme Close-Up",
+      "styleAnchors": [
+        "The Good the Bad and the Ugly 1966 - Leone Extreme Close-Up",
+        "sixties spaghetti western",
+        "Leone extreme close-ups"
+      ],
+      "ref": "pack_27/SP27-196.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "sixties spaghetti western",
+      "tags": ["decade-screens", "classic-noir-and-western", "sixties-spaghetti-western"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-196 the good the bad and the ugly 1966 - leone extreme close-up sixties spaghetti western leone extreme close-ups 10. classic noir & western classic noir & western sixties spaghetti western pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western sixties-spaghetti-western"
+    },
+    {
+      "id": "SP27-197",
+      "name": "Once Upon a Time in the West 1968 - Leone Railroad Opera",
+      "styleAnchors": [
+        "Once Upon a Time in the West 1968 - Leone Railroad Opera",
+        "sixties spaghetti western",
+        "Once Upon a Time railroad"
+      ],
+      "ref": "pack_27/SP27-197.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "sixties spaghetti western",
+      "tags": ["decade-screens", "classic-noir-and-western", "sixties-spaghetti-western"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-197 once upon a time in the west 1968 - leone railroad opera sixties spaghetti western once upon a time railroad 10. classic noir & western classic noir & western sixties spaghetti western pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western sixties-spaghetti-western"
+    },
+    {
+      "id": "SP27-198",
+      "name": "The Wild Bunch 1969 - Peckinpah Slow-Motion Twilight",
+      "styleAnchors": [
+        "The Wild Bunch 1969 - Peckinpah Slow-Motion Twilight",
+        "late sixties western cinema",
+        "Wild Bunch slow motion"
+      ],
+      "ref": "pack_27/SP27-198.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "late sixties western cinema",
+      "tags": ["decade-screens", "classic-noir-and-western", "late-sixties-western-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-198 the wild bunch 1969 - peckinpah slow-motion twilight late sixties western cinema wild bunch slow motion 10. classic noir & western classic noir & western late sixties western cinema pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western late-sixties-western-cinema"
+    },
+    {
+      "id": "SP27-199",
+      "name": "El Topo 1970 - Jodorowsky Surreal Desert",
+      "styleAnchors": [
+        "El Topo 1970 - Jodorowsky Surreal Desert",
+        "seventies surreal western",
+        "El Topo surreal desert"
+      ],
+      "ref": "pack_27/SP27-199.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "seventies surreal western",
+      "tags": ["decade-screens", "classic-noir-and-western", "seventies-surreal-western"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-199 el topo 1970 - jodorowsky surreal desert seventies surreal western el topo surreal desert 10. classic noir & western classic noir & western seventies surreal western pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western seventies-surreal-western"
+    },
+    {
+      "id": "SP27-200",
+      "name": "McCabe & Mrs Miller 1971 - Altman Fogged Frontier",
+      "styleAnchors": [
+        "McCabe & Mrs Miller 1971 - Altman Fogged Frontier",
+        "seventies revisionist western",
+        "McCabe fog"
+      ],
+      "ref": "pack_27/SP27-200.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "classic-noir-and-western",
+      "categoryName": "10. Classic Noir & Western",
+      "domain": "seventies revisionist western",
+      "tags": ["decade-screens", "classic-noir-and-western", "seventies-revisionist-western"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-200 mccabe & mrs miller 1971 - altman fogged frontier seventies revisionist western mccabe fog 10. classic noir & western classic noir & western seventies revisionist western pack_27 decade screens classic-noir-and-western decade-screens classic-noir-and-western seventies-revisionist-western"
     }
   ],
-  "totalPresetCount": 180
+  "totalPresetCount": 200
 }

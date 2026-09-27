@@ -2818,5 +2818,20 @@
     "evidencePresetIds": ["SP27-161", "SP27-162", "SP27-163"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "10. Classic Noir & Western",
+    "displayCategory": "Classic noir & western",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "9a8badda99c5ef72e62fd4228f730c568f04585b9e68af9e1cffc8af2d066342",
+    "problem": "Classic noir and western styles must reproduce each named film's photography (nitrate black and white, Technicolor or Techniscope, lighting, lenses, landscape) without copying its characters, props or scenes; the generic noir and western stay in pack_02.",
+    "preserve": "The requested subject stays the subject, staged in that film's photography; cards invent original moments.",
+    "proposedAction": "New category of 20 named films: ten noirs from The Maltese Falcon and Double Indemnity to Touch of Evil, and ten westerns from Stagecoach and The Searchers to Leone, Peckinpah, El Topo and McCabe & Mrs. Miller.",
+    "validation": "Generate the card set; check each card reads as its film's photography without a signature character, prop or scene.",
+    "evidencePresetIds": ["SP27-181", "SP27-182", "SP27-183"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

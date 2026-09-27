@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-195
+packId: pack_27
+name: Rio Bravo 1959 - Hawks Jailhouse Camaraderie
+styleAnchors:
+  - Rio Bravo 1959 - Hawks Jailhouse Camaraderie
+  - classic western cinema
+  - Rio Bravo jailhouse
+displayName: Rio Bravo 1959 - Hawks Jailhouse Camaraderie
+category: 10. Classic Noir & Western
+domain: classic western cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-noir-western
+  - noir-western
+  - classic-cinema
+  - rio-bravo
+  - reference-title
+visualDna:
+  aesthetic: 'Howard Hawks Rio Bravo (1959) look: warm Technicolor small-town jailhouse, lamplit interiors, easy camaraderie, songs by the fire and patient siege tension.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in warm lamplit Technicolor jailhouse and hotel interiors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm lamplight amber and dusty street brown, true to the Rio Bravo 1959 palette.
+  lighting_and_shadow: Warm lamps and soft window light, lit the way Rio Bravo 1959 lights its scenes.
+  texture_and_material: Mid-century Technicolor or Eastmancolor grain with warm earth tones.
+  camera_and_composition: Classic Hawks eye-level ensemble framing, framed the way Rio Bravo 1959 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with warm stubborn camaraderie.
+  rendering_and_quality: Authentic late-fifties Technicolor western frame, in the recognizable hand of Rio Bravo 1959.
+  creative_brief: 'Howard Hawks Rio Bravo (1959) look: warm Technicolor small-town jailhouse, lamplit interiors, easy camaraderie, songs by the fire and patient siege tension. Carry it through Rio Bravo jailhouse, lamplit camaraderie, siege. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Rio Bravo jailhouse; lamplit camaraderie; siege
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: classic-noir-western
+  categoryName: 10. Classic Noir & Western
+  domain: classic western cinema
+  tags:
+    - curation-v2
+    - classic-noir-western
+    - noir-western
+    - classic-cinema
+    - rio-bravo
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

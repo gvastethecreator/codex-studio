@@ -215,6 +215,29 @@ categories:
       - pack_27/SP27-178.yaml
       - pack_27/SP27-179.yaml
       - pack_27/SP27-180.yaml
+  - id: classic-noir-western
+    name: 10. Classic Noir & Western
+    presetRefs:
+      - pack_27/SP27-181.yaml
+      - pack_27/SP27-182.yaml
+      - pack_27/SP27-183.yaml
+      - pack_27/SP27-184.yaml
+      - pack_27/SP27-185.yaml
+      - pack_27/SP27-186.yaml
+      - pack_27/SP27-187.yaml
+      - pack_27/SP27-188.yaml
+      - pack_27/SP27-189.yaml
+      - pack_27/SP27-190.yaml
+      - pack_27/SP27-191.yaml
+      - pack_27/SP27-192.yaml
+      - pack_27/SP27-193.yaml
+      - pack_27/SP27-194.yaml
+      - pack_27/SP27-195.yaml
+      - pack_27/SP27-196.yaml
+      - pack_27/SP27-197.yaml
+      - pack_27/SP27-198.yaml
+      - pack_27/SP27-199.yaml
+      - pack_27/SP27-200.yaml
 presetRefs:
   - pack_27/SP27-001.yaml
   - pack_27/SP27-002.yaml
@@ -396,3 +419,23 @@ presetRefs:
   - pack_27/SP27-178.yaml
   - pack_27/SP27-179.yaml
   - pack_27/SP27-180.yaml
+  - pack_27/SP27-181.yaml
+  - pack_27/SP27-182.yaml
+  - pack_27/SP27-183.yaml
+  - pack_27/SP27-184.yaml
+  - pack_27/SP27-185.yaml
+  - pack_27/SP27-186.yaml
+  - pack_27/SP27-187.yaml
+  - pack_27/SP27-188.yaml
+  - pack_27/SP27-189.yaml
+  - pack_27/SP27-190.yaml
+  - pack_27/SP27-191.yaml
+  - pack_27/SP27-192.yaml
+  - pack_27/SP27-193.yaml
+  - pack_27/SP27-194.yaml
+  - pack_27/SP27-195.yaml
+  - pack_27/SP27-196.yaml
+  - pack_27/SP27-197.yaml
+  - pack_27/SP27-198.yaml
+  - pack_27/SP27-199.yaml
+  - pack_27/SP27-200.yaml
