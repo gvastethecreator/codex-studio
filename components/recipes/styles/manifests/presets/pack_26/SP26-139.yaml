@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-139
+packId: pack_26
+name: Shoegaze 1991 - Blurred Color Wash Cover
+styleAnchors:
+  - Shoegaze 1991 - Blurred Color Wash Cover
+  - album cover design
+  - Shoegaze blur
+displayName: Shoegaze 1991 - Blurred Color Wash Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - shoegaze
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Early nineties shoegaze cover look: heavily blurred out-of-focus photographs, washes of pink and blue color, dreamy smeared figures and tiny faint type.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a heavily blurred dreamy color wash photograph. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Washed pink, blue and lilac, true to the Shoegaze 1991 palette.
+  lighting_and_shadow: Soft smeared glowing light, lit the way Shoegaze 1991 lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Out-of-focus close crop, framed the way Shoegaze 1991 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dreamy blissful haze.
+  rendering_and_quality: Faithful early-nineties shoegaze cover, in the recognizable hand of Shoegaze 1991.
+  creative_brief: 'Early nineties shoegaze cover look: heavily blurred out-of-focus photographs, washes of pink and blue color, dreamy smeared figures and tiny faint type. Carry it through Shoegaze blur, pink-blue wash, tiny type. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Shoegaze blur; pink-blue wash; tiny type
+avoidRules:
+  - a blurred guitar player shot in pink
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a blurred guitar player shot in pink, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - shoegaze
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

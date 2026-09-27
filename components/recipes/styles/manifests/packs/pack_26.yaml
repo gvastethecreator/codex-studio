@@ -152,6 +152,29 @@ categories:
       - pack_26/SP26-124.yaml
       - pack_26/SP26-125.yaml
       - pack_26/SP26-126.yaml
+  - id: album-covers-rock-metal-electronic
+    name: 7. Album Covers - Rock, Metal & Electronic
+    presetRefs:
+      - pack_26/SP26-127.yaml
+      - pack_26/SP26-128.yaml
+      - pack_26/SP26-129.yaml
+      - pack_26/SP26-130.yaml
+      - pack_26/SP26-131.yaml
+      - pack_26/SP26-132.yaml
+      - pack_26/SP26-133.yaml
+      - pack_26/SP26-134.yaml
+      - pack_26/SP26-135.yaml
+      - pack_26/SP26-136.yaml
+      - pack_26/SP26-137.yaml
+      - pack_26/SP26-138.yaml
+      - pack_26/SP26-139.yaml
+      - pack_26/SP26-140.yaml
+      - pack_26/SP26-141.yaml
+      - pack_26/SP26-142.yaml
+      - pack_26/SP26-143.yaml
+      - pack_26/SP26-144.yaml
+      - pack_26/SP26-145.yaml
+      - pack_26/SP26-146.yaml
 presetRefs:
   - pack_26/SP26-001.yaml
   - pack_26/SP26-002.yaml
@@ -279,3 +302,23 @@ presetRefs:
   - pack_26/SP26-124.yaml
   - pack_26/SP26-125.yaml
   - pack_26/SP26-126.yaml
+  - pack_26/SP26-127.yaml
+  - pack_26/SP26-128.yaml
+  - pack_26/SP26-129.yaml
+  - pack_26/SP26-130.yaml
+  - pack_26/SP26-131.yaml
+  - pack_26/SP26-132.yaml
+  - pack_26/SP26-133.yaml
+  - pack_26/SP26-134.yaml
+  - pack_26/SP26-135.yaml
+  - pack_26/SP26-136.yaml
+  - pack_26/SP26-137.yaml
+  - pack_26/SP26-138.yaml
+  - pack_26/SP26-139.yaml
+  - pack_26/SP26-140.yaml
+  - pack_26/SP26-141.yaml
+  - pack_26/SP26-142.yaml
+  - pack_26/SP26-143.yaml
+  - pack_26/SP26-144.yaml
+  - pack_26/SP26-145.yaml
+  - pack_26/SP26-146.yaml

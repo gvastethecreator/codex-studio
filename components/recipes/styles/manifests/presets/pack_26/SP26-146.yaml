@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP26-146
+packId: pack_26
+name: Hyperpop 2020 - Glossy Y2K Chaos Cover
+styleAnchors:
+  - Hyperpop 2020 - Glossy Y2K Chaos Cover
+  - album cover design
+  - Hyperpop Y2K chrome
+displayName: Hyperpop 2020 - Glossy Y2K Chaos Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - hyperpop
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Hyperpop cover look of the 2020s: glossy Y2K chrome, overexposed flash selfies, sticker bombs, butterflies, candy color and maximal digital chaos.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a glossy overexposed Y2K flash image with sticker chaos. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Candy pink, chrome, lime and baby blue, true to the Hyperpop 2020 palette.
+  lighting_and_shadow: Overexposed flash and chrome shine, lit the way Hyperpop 2020 lights its scenes.
+  texture_and_material: Glossy digital with stickers and glitter, with the surface finish of Hyperpop 2020.
+  camera_and_composition: Chaotic collage with a central figure, framed the way Hyperpop 2020 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with manic glossy euphoria.
+  rendering_and_quality: Faithful hyperpop cover design, in the recognizable hand of Hyperpop 2020.
+  creative_brief: 'Hyperpop cover look of the 2020s: glossy Y2K chrome, overexposed flash selfies, sticker bombs, butterflies, candy color and maximal digital chaos. Carry it through Hyperpop Y2K chrome, flash, sticker chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hyperpop Y2K chrome; flash; sticker chaos
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - hyperpop
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

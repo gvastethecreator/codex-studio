@@ -12,6 +12,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_26/album-covers-jazz-soul-and-hip-hop-6').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_26/album-covers-rock-metal-and-electronic-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

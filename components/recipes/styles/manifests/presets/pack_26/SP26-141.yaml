@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-141
+packId: pack_26
+name: Designers Republic - Warp Electronic Cover
+styleAnchors:
+  - Designers Republic - Warp Electronic Cover
+  - album cover design
+  - Designers Republic pictograms
+displayName: Designers Republic - Warp Electronic Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - designers-republic
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'The Designers Republic Warp Records cover look of the 1990s: techno-corporate parody graphics, Japanese-inspired pictograms, fake product logos, sharp grids and hyper-clean color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; reduce the subject to hyper-clean techno-corporate pictograms and parody logos. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hyper-clean cyan, lime, orange and grey, true to the Designers Republic palette.
+  lighting_and_shadow: Flat clean digital color, lit the way Designers Republic lights its scenes.
+  texture_and_material: Crisp digital print on glossy board, with the surface finish of Designers Republic.
+  camera_and_composition: Sharp grid-based layout, framed the way Designers Republic composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful techno irony.
+  rendering_and_quality: Faithful nineties Warp-era cover design, in the recognizable hand of Designers Republic.
+  creative_brief: 'The Designers Republic Warp Records cover look of the 1990s: techno-corporate parody graphics, Japanese-inspired pictograms, fake product logos, sharp grids and hyper-clean color. Carry it through Designers Republic pictograms, parody logos, grids. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Designers Republic pictograms; parody logos; grids
+avoidRules:
+  - the real Warp Records logo
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the real Warp Records logo, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - designers-republic
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

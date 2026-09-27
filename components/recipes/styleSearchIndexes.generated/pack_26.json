@@ -3,7 +3,7 @@
     {
       "id": "pack_26",
       "name": "Covers, Posters & Characters",
-      "presetCount": 126
+      "presetCount": 146
     }
   ],
   "presets": [
@@ -2322,7 +2322,447 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp26-126 trojan reggae 1970 - roots sound system cover album cover design roots reggae colors 6. album covers - jazz, soul & hip-hop album covers: jazz, soul & hip-hop album cover design pack_26 covers, posters & characters album-covers-jazz-soul-and-hip-hop covers-posters-and-characters album-covers-jazz-soul-and-hip-hop album-cover-design"
+    },
+    {
+      "id": "SP26-127",
+      "name": "Psychedelic Poster Sixties - Wes Wilson Melting Letter Cover",
+      "styleAnchors": [
+        "Psychedelic Poster Sixties - Wes Wilson Melting Letter Cover",
+        "album cover design",
+        "Psychedelic melting letters"
+      ],
+      "ref": "pack_26/SP26-127.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-127 psychedelic poster sixties - wes wilson melting letter cover album cover design psychedelic melting letters 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-128",
+      "name": "Hipgnosis - Surreal Photographic Concept Cover",
+      "styleAnchors": [
+        "Hipgnosis - Surreal Photographic Concept Cover",
+        "album cover design",
+        "Hipgnosis surreal photo concept"
+      ],
+      "ref": "pack_26/SP26-128.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-128 hipgnosis - surreal photographic concept cover album cover design hipgnosis surreal photo concept 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-129",
+      "name": "Roger Dean - Prog Floating Landscape Cover",
+      "styleAnchors": [
+        "Roger Dean - Prog Floating Landscape Cover",
+        "album cover design",
+        "Roger Dean floating islands"
+      ],
+      "ref": "pack_26/SP26-129.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-129 roger dean - prog floating landscape cover album cover design roger dean floating islands 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-130",
+      "name": "Jamie Reid - Punk Ransom Note Cover",
+      "styleAnchors": [
+        "Jamie Reid - Punk Ransom Note Cover",
+        "album cover design",
+        "Jamie Reid ransom letters"
+      ],
+      "ref": "pack_26/SP26-130.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-130 jamie reid - punk ransom note cover album cover design jamie reid ransom letters 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-131",
+      "name": "Raymond Pettibon - SST Punk Ink Cover",
+      "styleAnchors": [
+        "Raymond Pettibon - SST Punk Ink Cover",
+        "album cover design",
+        "Pettibon raw ink"
+      ],
+      "ref": "pack_26/SP26-131.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-131 raymond pettibon - sst punk ink cover album cover design pettibon raw ink 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-132",
+      "name": "Peter Saville - Factory Minimal Cover",
+      "styleAnchors": [
+        "Peter Saville - Factory Minimal Cover",
+        "album cover design",
+        "Saville austere minimalism"
+      ],
+      "ref": "pack_26/SP26-132.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-132 peter saville - factory minimal cover album cover design saville austere minimalism 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-133",
+      "name": "Vaughan Oliver - 4AD Ethereal Texture Cover",
+      "styleAnchors": [
+        "Vaughan Oliver - 4AD Ethereal Texture Cover",
+        "album cover design",
+        "Vaughan Oliver ethereal blur"
+      ],
+      "ref": "pack_26/SP26-133.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-133 vaughan oliver - 4ad ethereal texture cover album cover design vaughan oliver ethereal blur 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-134",
+      "name": "Derek Riggs - Heavy Metal Mascot Painting Cover",
+      "styleAnchors": [
+        "Derek Riggs - Heavy Metal Mascot Painting Cover",
+        "album cover design",
+        "Riggs airbrushed mascot"
+      ],
+      "ref": "pack_26/SP26-134.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-134 derek riggs - heavy metal mascot painting cover album cover design riggs airbrushed mascot 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-135",
+      "name": "Ed Repka - Thrash Metal Neon Apocalypse Cover",
+      "styleAnchors": [
+        "Ed Repka - Thrash Metal Neon Apocalypse Cover",
+        "album cover design",
+        "Repka neon apocalypse"
+      ],
+      "ref": "pack_26/SP26-135.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-135 ed repka - thrash metal neon apocalypse cover album cover design repka neon apocalypse 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-136",
+      "name": "Black Metal 1994 - Photocopied Frostbitten Cover",
+      "styleAnchors": [
+        "Black Metal 1994 - Photocopied Frostbitten Cover",
+        "album cover design",
+        "Black metal photocopy"
+      ],
+      "ref": "pack_26/SP26-136.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-136 black metal 1994 - photocopied frostbitten cover album cover design black metal photocopy 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-137",
+      "name": "Stoner Doom - Seventies Occult Painted Cover",
+      "styleAnchors": [
+        "Stoner Doom - Seventies Occult Painted Cover",
+        "album cover design",
+        "Stoner doom desert wizard"
+      ],
+      "ref": "pack_26/SP26-137.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-137 stoner doom - seventies occult painted cover album cover design stoner doom desert wizard 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-138",
+      "name": "Grunge 1991 - Seattle Snapshot Cover",
+      "styleAnchors": [
+        "Grunge 1991 - Seattle Snapshot Cover",
+        "album cover design",
+        "Grunge flash snapshot"
+      ],
+      "ref": "pack_26/SP26-138.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-138 grunge 1991 - seattle snapshot cover album cover design grunge flash snapshot 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-139",
+      "name": "Shoegaze 1991 - Blurred Color Wash Cover",
+      "styleAnchors": [
+        "Shoegaze 1991 - Blurred Color Wash Cover",
+        "album cover design",
+        "Shoegaze blur"
+      ],
+      "ref": "pack_26/SP26-139.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-139 shoegaze 1991 - blurred color wash cover album cover design shoegaze blur 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-140",
+      "name": "Britpop 1995 - Photo Staged Kitsch Cover",
+      "styleAnchors": [
+        "Britpop 1995 - Photo Staged Kitsch Cover",
+        "album cover design",
+        "Britpop staged kitsch"
+      ],
+      "ref": "pack_26/SP26-140.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-140 britpop 1995 - photo staged kitsch cover album cover design britpop staged kitsch 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-141",
+      "name": "Designers Republic - Warp Electronic Cover",
+      "styleAnchors": [
+        "Designers Republic - Warp Electronic Cover",
+        "album cover design",
+        "Designers Republic pictograms"
+      ],
+      "ref": "pack_26/SP26-141.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-141 designers republic - warp electronic cover album cover design designers republic pictograms 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-142",
+      "name": "Italo Disco 1983 - Airbrush Neon Cover",
+      "styleAnchors": [
+        "Italo Disco 1983 - Airbrush Neon Cover",
+        "album cover design",
+        "Italo disco airbrush"
+      ],
+      "ref": "pack_26/SP26-142.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-142 italo disco 1983 - airbrush neon cover album cover design italo disco airbrush 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-143",
+      "name": "Rave Flyer 1992 - Acid Smiley Hardcore Cover",
+      "styleAnchors": [
+        "Rave Flyer 1992 - Acid Smiley Hardcore Cover",
+        "album cover design",
+        "Rave chrome type"
+      ],
+      "ref": "pack_26/SP26-143.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-143 rave flyer 1992 - acid smiley hardcore cover album cover design rave chrome type 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-144",
+      "name": "Synthwave 2012 - Retro Chrome Sunset Cover",
+      "styleAnchors": [
+        "Synthwave 2012 - Retro Chrome Sunset Cover",
+        "album cover design",
+        "Synthwave striped sun"
+      ],
+      "ref": "pack_26/SP26-144.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-144 synthwave 2012 - retro chrome sunset cover album cover design synthwave striped sun 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-145",
+      "name": "Vaporwave 2015 - Glitched Mall Aesthetic Cover",
+      "styleAnchors": [
+        "Vaporwave 2015 - Glitched Mall Aesthetic Cover",
+        "album cover design",
+        "Vaporwave marble bust"
+      ],
+      "ref": "pack_26/SP26-145.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-145 vaporwave 2015 - glitched mall aesthetic cover album cover design vaporwave marble bust 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
+    },
+    {
+      "id": "SP26-146",
+      "name": "Hyperpop 2020 - Glossy Y2K Chaos Cover",
+      "styleAnchors": [
+        "Hyperpop 2020 - Glossy Y2K Chaos Cover",
+        "album cover design",
+        "Hyperpop Y2K chrome"
+      ],
+      "ref": "pack_26/SP26-146.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "album-covers-rock-metal-and-electronic",
+      "categoryName": "7. Album Covers - Rock, Metal & Electronic",
+      "domain": "album cover design",
+      "tags": [
+        "covers-posters-and-characters",
+        "album-covers-rock-metal-and-electronic",
+        "album-cover-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-146 hyperpop 2020 - glossy y2k chaos cover album cover design hyperpop y2k chrome 7. album covers - rock, metal & electronic album covers: rock, metal & electronic album cover design pack_26 covers, posters & characters album-covers-rock-metal-and-electronic covers-posters-and-characters album-covers-rock-metal-and-electronic album-cover-design"
     }
   ],
-  "totalPresetCount": 126
+  "totalPresetCount": 146
 }

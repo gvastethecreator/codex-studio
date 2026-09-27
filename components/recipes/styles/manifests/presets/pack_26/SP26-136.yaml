@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP26-136
+packId: pack_26
+name: Black Metal 1994 - Photocopied Frostbitten Cover
+styleAnchors:
+  - Black Metal 1994 - Photocopied Frostbitten Cover
+  - album cover design
+  - Black metal photocopy
+displayName: Black Metal 1994 - Photocopied Frostbitten Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - black-metal
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Early nineties Norwegian black metal cover look: grainy black-and-white photocopied forest photos, frostbitten landscapes, candles, illegible spiky logos and raw underground bleakness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a grainy black-and-white photocopied frostbitten forest photo. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grainy black, white and cold grey, true to the Black Metal 1994 palette.
+  lighting_and_shadow: Cold moonlight and candle flicker, lit the way Black Metal 1994 lights its scenes.
+  texture_and_material: Heavy photocopy grain and xerox smudge, with the surface finish of Black Metal 1994.
+  camera_and_composition: Bleak cropped photo with spiky logo, framed the way Black Metal 1994 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bleak frostbitten solitude.
+  rendering_and_quality: Faithful early-nineties black metal cover, in the recognizable hand of Black Metal 1994.
+  creative_brief: 'Early nineties Norwegian black metal cover look: grainy black-and-white photocopied forest photos, frostbitten landscapes, candles, illegible spiky logos and raw underground bleakness. Carry it through Black metal photocopy, frost forest, spiky logo. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Black metal photocopy; frost forest; spiky logo
+avoidRules:
+  - burning churches
+  - real band members in corpse paint
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: burning churches, real band members in corpse paint, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - black-metal
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

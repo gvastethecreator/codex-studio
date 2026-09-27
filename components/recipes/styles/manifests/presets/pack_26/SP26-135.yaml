@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-135
+packId: pack_26
+name: Ed Repka - Thrash Metal Neon Apocalypse Cover
+styleAnchors:
+  - Ed Repka - Thrash Metal Neon Apocalypse Cover
+  - album cover design
+  - Repka neon apocalypse
+displayName: Ed Repka - Thrash Metal Neon Apocalypse Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - ed-repka
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Ed Repka thrash metal cover look of the late 1980s: neon-colored painted apocalypses, nuclear wastelands, radioactive green, crowded detailed chaos and toxic humor.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject in a neon crowded toxic apocalypse with radioactive green. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Radioactive green, neon purple and toxic orange, true to the Ed Repka palette.
+  lighting_and_shadow: Radioactive glow and explosions, lit the way Ed Repka lights its scenes.
+  texture_and_material: Printed record sleeve on board with slight ring wear and soft paper grain.
+  camera_and_composition: Crowded detailed apocalyptic composition, framed the way Ed Repka composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with toxic manic apocalypse.
+  rendering_and_quality: Faithful eighties thrash painting cover, in the recognizable hand of Ed Repka.
+  creative_brief: 'Ed Repka thrash metal cover look of the late 1980s: neon-colored painted apocalypses, nuclear wastelands, radioactive green, crowded detailed chaos and toxic humor. Carry it through Repka neon apocalypse, radioactive green, crowded. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Repka neon apocalypse; radioactive green; crowded
+avoidRules:
+  - a skull mascot in a suit named Vic Rattlehead
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a skull mascot in a suit named Vic Rattlehead, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - ed-repka
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

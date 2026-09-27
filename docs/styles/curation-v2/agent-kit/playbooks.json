@@ -195,7 +195,8 @@
     "pack_27::11. Action Cinema 80s & 90s": "photo",
     "pack_27::12. Video Games 2010s": "pixel",
     "pack_27::13. Video Games 2020s": "pixel",
-    "pack_26::6. Album Covers - Jazz, Soul & Hip-Hop": "applied-design"
+    "pack_26::6. Album Covers - Jazz, Soul & Hip-Hop": "applied-design",
+    "pack_26::7. Album Covers - Rock, Metal & Electronic": "applied-design"
   },
   "playbooks": {
     "photo": {

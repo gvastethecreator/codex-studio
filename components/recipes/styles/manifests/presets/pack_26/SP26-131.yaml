@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP26-131
+packId: pack_26
+name: Raymond Pettibon - SST Punk Ink Cover
+styleAnchors:
+  - Raymond Pettibon - SST Punk Ink Cover
+  - album cover design
+  - Pettibon raw ink
+displayName: Raymond Pettibon - SST Punk Ink Cover
+category: 7. Album Covers - Rock, Metal & Electronic
+domain: album cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - album-covers-rock-metal-electronic
+  - album-cover
+  - album-cover-rock
+  - pettibon
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Raymond Pettibon SST Records cover look of the 1980s: raw black ink brush drawings, sardonic handwritten captions, noir and suburban imagery, stark black on white.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in raw black ink brush drawing with sardonic handwriting. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Stark black ink on white, true to the Raymond Pettibon palette.
+  lighting_and_shadow: Flat ink on paper, lit the way Raymond Pettibon lights its scenes.
+  texture_and_material: Raw ink brushwork and photocopy grain, with the surface finish of Raymond Pettibon.
+  camera_and_composition: Single stark ink panel, framed the way Raymond Pettibon composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with sardonic suburban dread.
+  rendering_and_quality: Faithful eighties hardcore punk cover, in the recognizable hand of Raymond Pettibon.
+  creative_brief: 'Raymond Pettibon SST Records cover look of the 1980s: raw black ink brush drawings, sardonic handwritten captions, noir and suburban imagery, stark black on white. Carry it through Pettibon raw ink, sardonic handwriting, stark. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Pettibon raw ink; sardonic handwriting; stark
+avoidRules:
+  - four black bars logo
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: four black bars logo, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: album-covers-rock-metal-electronic
+  categoryName: 7. Album Covers - Rock, Metal & Electronic
+  domain: album cover design
+  tags:
+    - curation-v2
+    - album-covers-rock-metal-electronic
+    - album-cover
+    - album-cover-rock
+    - pettibon
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

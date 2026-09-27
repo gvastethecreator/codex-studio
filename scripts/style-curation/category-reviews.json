@@ -2893,5 +2893,20 @@
     "evidencePresetIds": ["SP26-107", "SP26-108", "SP26-109"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "7. Album Covers - Rock, Metal & Electronic",
+    "displayCategory": "Album covers: rock, metal & electronic",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "6f40671e92111df5622fe7c02a26672ef3fc7d13a4de63dd63da5b40fcc84a7b",
+    "problem": "Album cover styles must reproduce each designer, label or scene's cover grammar (type, photography, illustration, palette, sleeve finish) with invented artists and exact requested titles, never a real record's artwork or real musicians.",
+    "preserve": "The requested subject stays the subject, arranged as that cover tradition; requested titles and artist names are set exactly.",
+    "proposedAction": "New category of 20 cover traditions from sixties psychedelia, Hipgnosis and Roger Dean through Jamie Reid, Pettibon, Peter Saville and Vaughan Oliver to metal painting, black metal, grunge, shoegaze, Designers Republic, synthwave, vaporwave and hyperpop.",
+    "validation": "Generate the card set; check each card reads as its cover tradition with exact invented text and no real artwork or musician.",
+    "evidencePresetIds": ["SP26-127", "SP26-128", "SP26-129"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]
