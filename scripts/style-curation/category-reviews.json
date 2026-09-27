@@ -1392,7 +1392,7 @@
     "validation": "A portrait keeps its outfit unless a costume transformation is deliberately selected.",
     "evidencePresetIds": ["SP13-026", "SP13-028"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_16",
@@ -1407,7 +1407,7 @@
     "validation": "A harmless subject remains harmless in content while visual tension changes.",
     "evidencePresetIds": ["SP13-031", "SP13-033"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_17",
