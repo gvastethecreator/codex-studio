@@ -59,6 +59,24 @@ function isSafeRelativePath(value: unknown): value is string {
   );
 }
 
+/**
+ * `index.json` published with each release of an Extension Source. `archive` names a zip
+ * release asset that holds the extension root.
+ */
+export interface ExtensionReleaseEntry {
+  id: string;
+  version: string;
+  title: string;
+  archive: string;
+  sha256: string;
+  bytes: number;
+}
+
+export interface ExtensionReleaseIndex {
+  schemaVersion: typeof EXTENSION_SCHEMA_VERSION;
+  extensions: ExtensionReleaseEntry[];
+}
+
 export function globalStylePresetId(extensionId: string, presetId: string) {
   return `${extensionId}/${presetId}`;
 }
