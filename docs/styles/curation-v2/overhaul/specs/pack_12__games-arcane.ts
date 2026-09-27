@@ -85,6 +85,8 @@ const spec: Spec = {
       avoid: [
         'a black-haired thief in a long black coat and white mask',
         'a cat with a yellow scarf',
+        'a black-haired thief in a red-gloved black tailcoat',
+        'a black-and-white cartoon cat thief',
       ],
     }),
     ga('SP12-053', 'The Witcher 3 2015 - CD Projekt Bog Hunt', {
@@ -131,7 +133,7 @@ const spec: Spec = {
       avoid: ['a white wolf with red markings and a disc on its back'],
       briefs: [
         'Painting a stroke across the sky with a celestial brush, an original white hare spirit makes the sun rise over a jade volcano shrine, ink-wash petals bursting from every step it takes. No readable text or logo.',
-        'In an ink-wash painted village, a divine fox spirit tries to restore a withered tree with a brush stroke and accidentally paints a moustache on the moon. No readable text or logo.',
+        'In an ink-wash painted village, a divine tanuki spirit in a straw hat tries to restore a withered tree with a brush stroke and accidentally paints a moustache on the moon. No readable text or logo.',
         keep('SP12-061')[2],
       ],
     }),

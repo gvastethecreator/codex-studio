@@ -8,7 +8,7 @@ styleAnchors:
   - Basalt Crew Extraction
 displayName: Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -28,14 +28,15 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stout bearded space miners in chunky gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Cave darkness, flare orange and mineral cyan, true to the Deep Rock Galactic 2020 palette.
   lighting_and_shadow: Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.
-  texture_and_material: Faceted low-poly rock and glowing crystals, with the in-engine surface finish of Deep Rock Galactic 2020.
+  texture_and_material: Flat-shaded faceted low-poly rock, chunky simple models and glowing crystals.
   camera_and_composition: First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rowdy cave camaraderie.
-  rendering_and_quality: Authentic co-op cave shooter screen, matching real Deep Rock Galactic 2020 screenshots.
+  rendering_and_quality: Authentic stylized low-poly co-op cave shooter screen, not photoreal.
   key_features: Deep Rock low-poly caves; flares; mining crew
   creative_brief: 'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - existing Deep Rock dwarves and their salute
+  - photoreal rock detail
   - watermark
   - logo
   - copyright mark
@@ -72,10 +73,11 @@ avoidRules:
   - series logo or title lettering
   - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - UI overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-027.webp
 attributes:
-  negativePrompt: existing Deep Rock dwarves and their salute, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing Deep Rock dwarves and their salute, photoreal rock detail, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, UI overlay, noisy compression artifacts
   referenceGame: Original co-op cavern extraction shooter, Deep Rock-informed
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear coherently

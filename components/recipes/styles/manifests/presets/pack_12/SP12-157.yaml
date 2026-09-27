@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Valheim 2021 - Iron Gate Low-Poly Viking
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: survival crafting base screenshot
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -26,10 +26,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly Viking survivors in furs and helmets. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Misty forest green, fire amber and dusk blue.
   lighting_and_shadow: Volumetric fog and campfire glow, lit the way Valheim 2021 lights its levels.
-  texture_and_material: Low-resolution pixelated textures, with the in-engine surface finish of Valheim 2021.
+  texture_and_material: Visibly blocky low-poly models with blurry low-resolution pixelated textures.
   camera_and_composition: Third-person survival view, framed the way Valheim 2021 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rugged Viking survival.
-  rendering_and_quality: Authentic low-poly survival screen, matching real Valheim 2021 screenshots.
+  rendering_and_quality: Authentic 2021 low-poly survival screen with modern lighting, not detailed painting.
   creative_brief: 'Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim pixel textures, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Valheim pixel textures; volumetric fog; palisades
 avoidRules:
@@ -49,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets: {}
 attributes:

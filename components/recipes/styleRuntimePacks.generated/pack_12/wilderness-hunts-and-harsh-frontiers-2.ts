@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'existing Deep Rock dwarves and their salute, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Deep Rock dwarves and their salute, photoreal rock detail, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, UI overlay, noisy compression artifacts',
     style: {
       aesthetic:
         'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms.',
@@ -112,12 +112,12 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.',
       texture_and_material:
-        'Faceted low-poly rock and glowing crystals, with the in-engine surface finish of Deep Rock Galactic 2020.',
+        'Flat-shaded faceted low-poly rock, chunky simple models and glowing crystals.',
       camera_and_composition:
         'First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rowdy cave camaraderie.',
       rendering_and_quality:
-        'Authentic co-op cave shooter screen, matching real Deep Rock Galactic 2020 screenshots.',
+        'Authentic stylized low-poly co-op cave shooter screen, not photoreal.',
       key_features: 'Deep Rock low-poly caves; flares; mining crew',
       creative_brief:
         "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
@@ -629,12 +629,12 @@ export const GENERATED_STYLE_PRESETS = [
       lighting_and_shadow:
         'Volumetric fog and campfire glow, lit the way Valheim 2021 lights its levels.',
       texture_and_material:
-        'Low-resolution pixelated textures, with the in-engine surface finish of Valheim 2021.',
+        'Visibly blocky low-poly models with blurry low-resolution pixelated textures.',
       camera_and_composition:
         'Third-person survival view, framed the way Valheim 2021 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with rugged Viking survival.',
       rendering_and_quality:
-        'Authentic low-poly survival screen, matching real Valheim 2021 screenshots.',
+        'Authentic 2021 low-poly survival screen with modern lighting, not detailed painting.',
       creative_brief:
         "Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim pixel textures, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features: 'Valheim pixel textures; volumetric fog; palisades',

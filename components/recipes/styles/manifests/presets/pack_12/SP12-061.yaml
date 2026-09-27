@@ -7,7 +7,7 @@ styleAnchors:
   - Okami Jade Volcano Shrine
 displayName: Okami 2006 - Clover Sumi-e Celestial Brush
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -67,10 +67,11 @@ avoidRules:
   - readable labels
   - franchise likeness
   - real person likeness
+  - UI overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-061.webp
 attributes:
-  negativePrompt: a white wolf with red markings and a disc on its back, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a white wolf with red markings and a disc on its back, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, UI overlay, noisy compression artifacts
   referenceGame: Okami HD
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage

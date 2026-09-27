@@ -8,7 +8,7 @@ styleAnchors:
   - Velvet Mask Palace Run
 displayName: Persona 5 2016 - Atlus Red-Black Phantom Heist
 category: 2. Arcane Temples & Mythic Realms
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -37,6 +37,8 @@ visualDna:
 avoidRules:
   - a black-haired thief in a long black coat and white mask
   - a cat with a yellow scarf
+  - a black-haired thief in a red-gloved black tailcoat
+  - a black-and-white cartoon cat thief
   - watermark
   - logo
   - copyright mark
@@ -73,10 +75,11 @@ avoidRules:
   - series logo or title lettering
   - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - UI overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-044.webp
 attributes:
-  negativePrompt: a black-haired thief in a long black coat and white mask, a cat with a yellow scarf, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a black-haired thief in a long black coat and white mask, a cat with a yellow scarf, a black-haired thief in a red-gloved black tailcoat, a black-and-white cartoon cat thief, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, UI overlay, noisy compression artifacts
   referenceGame: Original stylized palace JRPG, Persona-informed
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: 'bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command shapes can appear without readable logo text'
