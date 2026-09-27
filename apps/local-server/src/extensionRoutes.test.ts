@@ -1,8 +1,11 @@
+import { createHash } from 'node:crypto';
 import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import JSZip from 'jszip';
 import { afterEach, describe, expect, it } from 'vitest';
 import { createExtensionRoutes } from './extensionRoutes';
+import type { ExtensionSourceClient } from './extensionSources';
 import { createExtensionStore } from './extensionStore';
 
 const manifest = {
@@ -54,5 +57,76 @@ describe('extension routes', () => {
     expect((await routes.request('/cozy.pack-14/files/..%2Fsecret.json')).status).toBe(404);
     expect((await routes.request('/cozy.pack-14/files/extension.exe')).status).toBe(400);
     expect((await routes.request('/cozy.missing/files/pack.json')).status).toBe(404);
+  });
+});
+
+describe('remote extension install', () => {
+  async function createRemoteRoutes() {
+    const builtin = await mkdtemp(path.join(tmpdir(), 'cozy-builtin-'));
+    const installDir = await mkdtemp(path.join(tmpdir(), 'cozy-installed-'));
+    source = builtin;
+    await mkdir(path.join(builtin, 'cozy.pack-14'));
+    await writeFile(path.join(builtin, 'cozy.pack-14', 'extension.json'), JSON.stringify(manifest));
+
+    const zip = new JSZip();
+    zip.file('extension.json', JSON.stringify({ ...manifest, version: '1.1.0' }));
+    zip.file('pack.json', '{"version":"1.1.0"}');
+    const archive = await zip.generateAsync({ type: 'uint8array' });
+    const entry = {
+      id: 'cozy.pack-14',
+      version: '1.1.0',
+      title: 'Mythic Noir Curated Vault',
+      tag: 'cozy.pack-14-v1.1.0',
+      archive: 'cozy.pack-14-1.1.0.zip',
+      sha256: createHash('sha256').update(archive).digest('hex'),
+      bytes: archive.byteLength,
+    };
+    const client: ExtensionSourceClient = {
+      tokenConfigured: false,
+      fetchIndex: async () => ({ schemaVersion: 1, extensions: [entry] }),
+      downloadAsset: async (_source, tag, name) => {
+        expect([tag, name]).toEqual([entry.tag, entry.archive]);
+        return archive;
+      },
+    };
+    const store = createExtensionStore([installDir, builtin]);
+    const routes = createExtensionRoutes({
+      store,
+      remote: { client, sources: [{ id: 'cozy-styles', repo: 'owner/cozy-styles' }], installDir },
+    });
+    return { routes, installDir };
+  }
+
+  it('offers an update over a built-in pack, installs it and removes it again', async () => {
+    const { routes, installDir } = await createRemoteRoutes();
+    try {
+      const before = await (await routes.request('/available')).json();
+      expect(before.sources[0].extensions[0]).toMatchObject({
+        installedVersion: '1.0.0',
+        installedFrom: 'builtin',
+        updateAvailable: true,
+      });
+
+      const install = await routes.request('/install', {
+        method: 'POST',
+        body: JSON.stringify({ sourceId: 'cozy-styles', id: 'cozy.pack-14' }),
+      });
+      expect(install.status).toBe(200);
+      const pack = await routes.request('/cozy.pack-14/files/pack.json');
+      expect(await pack.json()).toEqual({ version: '1.1.0' });
+      const after = await (await routes.request('/available')).json();
+      expect(after.sources[0].extensions[0]).toMatchObject({
+        installedVersion: '1.1.0',
+        installedFrom: 'download',
+        updateAvailable: false,
+      });
+
+      expect((await routes.request('/cozy.pack-14', { method: 'DELETE' })).status).toBe(204);
+      const restored = await (await routes.request('/')).json();
+      expect(restored.extensions[0].version).toBe('1.0.0');
+      expect((await routes.request('/cozy.pack-14', { method: 'DELETE' })).status).toBe(409);
+    } finally {
+      await rm(installDir, { recursive: true, force: true });
+    }
   });
 });

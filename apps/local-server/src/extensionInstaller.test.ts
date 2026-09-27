@@ -34,6 +34,7 @@ async function release(version: string, extra?: (zip: JSZip) => void) {
     id: 'cozy.pack-14',
     version,
     title: 'Mythic Noir',
+    tag: `cozy.pack-14-v${version}`,
     archive: `cozy.pack-14-${version}.zip`,
     sha256: createHash('sha256').update(archive).digest('hex'),
     bytes: archive.byteLength,

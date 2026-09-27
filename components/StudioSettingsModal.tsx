@@ -42,6 +42,7 @@ import {
 } from '../lib/studioSettingsDomains';
 import { SettingsFormPanel } from './settings/SettingsFormPanel';
 import { SettingsOutputSourcesPanel } from './settings/SettingsOutputSourcesPanel';
+import { SettingsExtensionsPanel } from './settings/SettingsExtensionsPanel';
 import {
   SettingsMaintenancePanel,
   type SettingsMaintenancePanelProps,
@@ -165,6 +166,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
       label: 'File name template',
       description: 'Naming tokens and example path',
       target: 'File name template',
+    },
+    {
+      domain: 'extensions',
+      label: 'Style extensions',
+      description: 'Install and update style packs',
+      target: '',
     },
     {
       domain: 'maintenance',
@@ -438,6 +445,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 </button>
               </section>
             )}
+            {activeDomain === 'extensions' ? <SettingsExtensionsPanel /> : null}
             {activeDomain === 'maintenance' ? (
               <SettingsMaintenancePanel maintenance={maintenance} />
             ) : null}

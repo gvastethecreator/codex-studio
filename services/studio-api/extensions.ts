@@ -28,3 +28,41 @@ export function extensionFileUrl(extensionId: string, relativePath: string) {
 export async function fetchExtensionJson<T>(extensionId: string, relativePath: string) {
   return request<T>(extensionFilePath(extensionId, relativePath));
 }
+
+export interface AvailableExtension {
+  id: string;
+  version: string;
+  title: string;
+  tag: string;
+  archive: string;
+  sha256: string;
+  bytes: number;
+  installedVersion: string | null;
+  installedFrom: 'download' | 'builtin' | null;
+  updateAvailable: boolean;
+}
+
+export interface AvailableExtensionSource {
+  id: string;
+  repo: string;
+  extensions: AvailableExtension[];
+  error: string | null;
+}
+
+/** Extensions published by each remote source, with their installed state. */
+export async function listAvailableExtensions() {
+  return request<{ tokenConfigured: boolean; sources: AvailableExtensionSource[] }>(
+    '/api/extensions/available',
+  );
+}
+
+export async function installExtension(sourceId: string, id: string) {
+  return request<{ extension: ExtensionManifest }>('/api/extensions/install', {
+    method: 'POST',
+    body: JSON.stringify({ sourceId, id }),
+  });
+}
+
+export async function removeExtension(id: string) {
+  return request<void>(`/api/extensions/${encodeURIComponent(id)}`, { method: 'DELETE' });
+}

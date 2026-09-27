@@ -98,7 +98,13 @@ import { createReferenceRoutes } from './referenceRoutes';
 import { createUserStyleRoutes } from './userStyleRoutes';
 import { createExtensionRoutes } from './extensionRoutes';
 import {
+  createGitHubExtensionSourceClient,
+  resolveRemoteExtensionSources,
+  type ExtensionSourceClient,
+} from './extensionSources';
+import {
   createExtensionStore,
+  resolveExtensionInstallDir,
   resolveExtensionSources,
   type ExtensionStore,
 } from './extensionStore';
@@ -174,6 +180,7 @@ export interface CreateStudioAppOptions {
     logStore?: StudioLogStore;
     userStyleStore?: UserStyleStore;
     extensionStore?: ExtensionStore;
+    extensionSourceClient?: ExtensionSourceClient;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
@@ -335,7 +342,17 @@ export async function createStudioApp(
   );
 
   app.route('/api/maintenance', createMaintenanceRoutes());
-  app.route('/api/extensions', createExtensionRoutes({ store: extensionStore }));
+  app.route(
+    '/api/extensions',
+    createExtensionRoutes({
+      store: extensionStore,
+      remote: {
+        client: options.dependencies?.extensionSourceClient ?? createGitHubExtensionSourceClient(),
+        sources: resolveRemoteExtensionSources(),
+        installDir: resolveExtensionInstallDir(),
+      },
+    }),
+  );
   app.route(
     '/api/styles',
     createUserStyleRoutes({

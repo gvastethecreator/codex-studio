@@ -72,13 +72,14 @@ function isSafeRelativePath(value: unknown): value is string {
 }
 
 /**
- * `index.json` published with each release of an Extension Source. `archive` names a zip
- * release asset that holds the extension root.
+ * `index.json` on the default branch of an Extension Source. `archive` names a zip asset of
+ * the GitHub release `tag`; the zip holds the extension root.
  */
 export interface ExtensionReleaseEntry {
   id: string;
   version: string;
   title: string;
+  tag: string;
   archive: string;
   sha256: string;
   bytes: number;
@@ -87,6 +88,58 @@ export interface ExtensionReleaseEntry {
 export interface ExtensionReleaseIndex {
   schemaVersion: typeof EXTENSION_SCHEMA_VERSION;
   extensions: ExtensionReleaseEntry[];
+}
+
+export type ExtensionReleaseIndexParseResult =
+  | { ok: true; index: ExtensionReleaseIndex }
+  | { ok: false; issues: string[] };
+
+export function parseExtensionReleaseIndex(value: unknown): ExtensionReleaseIndexParseResult {
+  if (!isRecord(value)) return { ok: false, issues: ['index.json must be an object'] };
+  if (value.schemaVersion !== EXTENSION_SCHEMA_VERSION)
+    return { ok: false, issues: ['unsupported schemaVersion'] };
+  if (!Array.isArray(value.extensions))
+    return { ok: false, issues: ['extensions must be an array'] };
+  const issues: string[] = [];
+  value.extensions.forEach((entry, index) => {
+    if (
+      !isRecord(entry) ||
+      typeof entry.id !== 'string' ||
+      !EXTENSION_ID_PATTERN.test(entry.id) ||
+      typeof entry.version !== 'string' ||
+      !SEMVER_PATTERN.test(entry.version) ||
+      typeof entry.title !== 'string' ||
+      typeof entry.tag !== 'string' ||
+      entry.tag === '' ||
+      typeof entry.archive !== 'string' ||
+      !entry.archive.endsWith('.zip') ||
+      entry.archive.includes('/') ||
+      typeof entry.sha256 !== 'string' ||
+      !SHA256_PATTERN.test(entry.sha256) ||
+      typeof entry.bytes !== 'number' ||
+      !Number.isInteger(entry.bytes) ||
+      entry.bytes <= 0
+    )
+      issues.push(`extensions[${index}] needs id, version, title, tag, archive, sha256 and bytes`);
+  });
+  if (issues.length > 0) return { ok: false, issues };
+  return { ok: true, index: value as unknown as ExtensionReleaseIndex };
+}
+
+/** Compares two semver strings by their numeric parts; pre-release tags sort before releases. */
+export function compareExtensionVersions(a: string, b: string) {
+  const [aCore, aPre] = a.split('-', 2);
+  const [bCore, bPre] = b.split('-', 2);
+  const aParts = aCore.split('.').map(Number);
+  const bParts = bCore.split('.').map(Number);
+  for (let i = 0; i < 3; i += 1) {
+    const diff = (aParts[i] ?? 0) - (bParts[i] ?? 0);
+    if (diff !== 0) return diff;
+  }
+  if (aPre === bPre) return 0;
+  if (aPre === undefined) return 1;
+  if (bPre === undefined) return -1;
+  return aPre.localeCompare(bPre);
 }
 
 export function globalStylePresetId(extensionId: string, presetId: string) {

@@ -28,15 +28,32 @@ export interface ExtensionStore {
 }
 
 const DEFAULT_BUILT_IN_SOURCE = path.join('.local', 'extensions', 'builtin');
+const DEFAULT_INSTALL_DIR = path.join('.local', 'extensions', 'installed');
 
-/** Extension Sources from `STUDIO_EXTENSION_SOURCES` (path-delimited), else the built-in folder. */
+/** Folder that receives extensions installed from remote sources. */
+export function resolveExtensionInstallDir(
+  env: Record<string, string | undefined> = process.env,
+  cwd = process.cwd(),
+) {
+  return path.resolve(cwd, env.STUDIO_EXTENSION_INSTALL_DIR || DEFAULT_INSTALL_DIR);
+}
+
+/**
+ * Local Extension Sources, in priority order: the install folder first, so an installed version
+ * replaces a built-in one, then `STUDIO_EXTENSION_SOURCES` (path-delimited) or the built-in folder.
+ */
 export function resolveExtensionSources(
   env: Record<string, string | undefined> = process.env,
   cwd = process.cwd(),
 ) {
   const configured = env.STUDIO_EXTENSION_SOURCES?.split(path.delimiter).filter(Boolean);
-  const sources = configured?.length ? configured : [DEFAULT_BUILT_IN_SOURCE];
-  return sources.map((source) => path.resolve(cwd, source));
+  const sources = [
+    resolveExtensionInstallDir(env, cwd),
+    ...(configured?.length ? configured : [DEFAULT_BUILT_IN_SOURCE]).map((source) =>
+      path.resolve(cwd, source),
+    ),
+  ];
+  return [...new Set(sources)];
 }
 
 function insideRoot(root: string, relativePath: string) {
