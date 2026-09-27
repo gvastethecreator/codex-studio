@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-125
+packId: pack_27
+name: Them 1954 - Douglas Atomic Documentary Noir
+styleAnchors:
+  - Them 1954 - Douglas Atomic Documentary Noir
+  - fifties science fiction cinema
+  - Them atomic noir
+displayName: Them 1954 - Douglas Atomic Documentary Noir
+category: 7. Sci-Fi Cinema 50s & 60s
+domain: fifties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-50s-60s
+  - scifi-50s-60s
+  - scifi-cinema
+  - them
+  - reference-title
+visualDna:
+  aesthetic: 'Gordon Douglas Them! (1954) look: black-and-white atomic-age noir with documentary police procedure, New Mexico sandstorms, storm drains, flamethrowers and giant creatures glimpsed in shadow.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject with procedural documentary realism in sandstorms and concrete storm drains. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hard black and white with bright flamethrower flare.
+  lighting_and_shadow: Flashlights and flamethrower glow in tunnel darkness, lit the way Them 1954 lights its scenes.
+  texture_and_material: Fifties black-and-white 35mm grain with deep blacks and silvery midtones.
+  camera_and_composition: Procedural medium shots and deep tunnel perspectives, framed the way Them 1954 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tense atomic procedural.
+  rendering_and_quality: Authentic fifties atomic creature feature frame, in the recognizable hand of Them 1954.
+  creative_brief: 'Gordon Douglas Them! (1954) look: black-and-white atomic-age noir with documentary police procedure, New Mexico sandstorms, storm drains, flamethrowers and giant creatures glimpsed in shadow. Carry it through Them atomic noir, storm drains, flashlights, sandstorm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Them atomic noir; storm drains; flashlights; sandstorm
+avoidRules:
+  - giant ants
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: giant ants, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-50s-60s
+  categoryName: 7. Sci-Fi Cinema 50s & 60s
+  domain: fifties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-50s-60s
+    - scifi-50s-60s
+    - scifi-cinema
+    - them
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

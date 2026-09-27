@@ -9,6 +9,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_27/video-games-80s-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_27/video-games-90s-5').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_27/video-games-2000s-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_27/sci-fi-cinema-50s-and-60s-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

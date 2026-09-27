@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-122
+packId: pack_27
+name: The Day the Earth Stood Still 1951 - Wise Cold War Calm
+styleAnchors:
+  - The Day the Earth Stood Still 1951 - Wise Cold War Calm
+  - fifties science fiction cinema
+  - Wise realism
+displayName: The Day the Earth Stood Still 1951 - Wise Cold War Calm
+category: 7. Sci-Fi Cinema 50s & 60s
+domain: fifties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-50s-60s
+  - scifi-50s-60s
+  - scifi-cinema
+  - day-earth-stood-still
+  - reference-title
+visualDna:
+  aesthetic: 'Robert Wise The Day the Earth Stood Still (1951) look: crisp black-and-white Washington streets, a smooth saucer on a park lawn, Bernard Herrmann theremin unease and calm documentary staging.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in crisp black-and-white civic spaces with calm, reportorial framing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Silvery black and white with bright saucer highlights.
+  lighting_and_shadow: Even daylight and hard night floodlights on smooth metal.
+  texture_and_material: Fifties black-and-white 35mm grain with deep blacks and silvery midtones.
+  camera_and_composition: Level documentary framing with crowds held behind barriers.
+  atmosphere_and_mood: Keep the requested mood with calm cold war unease.
+  rendering_and_quality: Authentic early-fifties black-and-white science fiction frame, in the recognizable hand of The Day the Earth Stood Still 1951.
+  creative_brief: 'Robert Wise The Day the Earth Stood Still (1951) look: crisp black-and-white Washington streets, a smooth saucer on a park lawn, Bernard Herrmann theremin unease and calm documentary staging. Carry it through Wise realism, saucer on the lawn, crowds, theremin unease. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Wise realism; saucer on the lawn; crowds; theremin unease
+avoidRules:
+  - a tall silver robot with a visor slit
+  - a man in a silver spacesuit
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a tall silver robot with a visor slit, a man in a silver spacesuit, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-50s-60s
+  categoryName: 7. Sci-Fi Cinema 50s & 60s
+  domain: fifties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-50s-60s
+    - scifi-50s-60s
+    - scifi-cinema
+    - day-earth-stood-still
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -146,6 +146,29 @@ categories:
       - pack_27/SP27-118.yaml
       - pack_27/SP27-119.yaml
       - pack_27/SP27-120.yaml
+  - id: scifi-cinema-50s-60s
+    name: 7. Sci-Fi Cinema 50s & 60s
+    presetRefs:
+      - pack_27/SP27-121.yaml
+      - pack_27/SP27-122.yaml
+      - pack_27/SP27-123.yaml
+      - pack_27/SP27-124.yaml
+      - pack_27/SP27-125.yaml
+      - pack_27/SP27-126.yaml
+      - pack_27/SP27-127.yaml
+      - pack_27/SP27-128.yaml
+      - pack_27/SP27-129.yaml
+      - pack_27/SP27-130.yaml
+      - pack_27/SP27-131.yaml
+      - pack_27/SP27-132.yaml
+      - pack_27/SP27-133.yaml
+      - pack_27/SP27-134.yaml
+      - pack_27/SP27-135.yaml
+      - pack_27/SP27-136.yaml
+      - pack_27/SP27-137.yaml
+      - pack_27/SP27-138.yaml
+      - pack_27/SP27-139.yaml
+      - pack_27/SP27-140.yaml
 presetRefs:
   - pack_27/SP27-001.yaml
   - pack_27/SP27-002.yaml
@@ -267,3 +290,23 @@ presetRefs:
   - pack_27/SP27-118.yaml
   - pack_27/SP27-119.yaml
   - pack_27/SP27-120.yaml
+  - pack_27/SP27-121.yaml
+  - pack_27/SP27-122.yaml
+  - pack_27/SP27-123.yaml
+  - pack_27/SP27-124.yaml
+  - pack_27/SP27-125.yaml
+  - pack_27/SP27-126.yaml
+  - pack_27/SP27-127.yaml
+  - pack_27/SP27-128.yaml
+  - pack_27/SP27-129.yaml
+  - pack_27/SP27-130.yaml
+  - pack_27/SP27-131.yaml
+  - pack_27/SP27-132.yaml
+  - pack_27/SP27-133.yaml
+  - pack_27/SP27-134.yaml
+  - pack_27/SP27-135.yaml
+  - pack_27/SP27-136.yaml
+  - pack_27/SP27-137.yaml
+  - pack_27/SP27-138.yaml
+  - pack_27/SP27-139.yaml
+  - pack_27/SP27-140.yaml

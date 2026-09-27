@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP27-139
+packId: pack_27
+name: 2001 A Space Odyssey 1968 - Kubrick Clinical Cosmos
+styleAnchors:
+  - 2001 A Space Odyssey 1968 - Kubrick Clinical Cosmos
+  - sixties science fiction cinema
+  - 2001 symmetry
+displayName: 2001 A Space Odyssey 1968 - Kubrick Clinical Cosmos
+category: 7. Sci-Fi Cinema 50s & 60s
+domain: sixties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-50s-60s
+  - scifi-50s-60s
+  - scifi-cinema
+  - '2001'
+  - reference-title
+visualDna:
+  aesthetic: 'Stanley Kubrick 2001: A Space Odyssey (1968) look: Super Panavision clinical white spacecraft interiors, one-point symmetry, slow docking ballets, front-projected deserts and vast silent cosmos.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in clinical symmetrical white spacecraft interiors or silent cosmic vastness. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Clinical white, deep black space and warning red.
+  lighting_and_shadow: Even glowing white panels and hard starlight, lit the way 2001 A Space Odyssey 1968 lights its scenes.
+  texture_and_material: Super Panavision 70mm clarity with fine grain, with the surface finish of 2001 A Space Odyssey 1968.
+  camera_and_composition: Perfect one-point symmetry and slow graceful motion, framed the way 2001 A Space Odyssey 1968 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with silent cosmic awe.
+  rendering_and_quality: Authentic late-sixties 70mm science fiction frame, in the recognizable hand of 2001 A Space Odyssey 1968.
+  creative_brief: 'Stanley Kubrick 2001: A Space Odyssey (1968) look: Super Panavision clinical white spacecraft interiors, one-point symmetry, slow docking ballets, front-projected deserts and vast silent cosmos. Carry it through 2001 symmetry, white interiors, silent cosmos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: 2001 symmetry; white interiors; silent cosmos
+avoidRules:
+  - a red camera eye in a panel
+  - a black monolith
+  - a fetus floating in space
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a red camera eye in a panel, a black monolith, a fetus floating in space, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-50s-60s
+  categoryName: 7. Sci-Fi Cinema 50s & 60s
+  domain: sixties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-50s-60s
+    - scifi-50s-60s
+    - scifi-cinema
+    - '2001'
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

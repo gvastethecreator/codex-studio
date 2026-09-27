@@ -2773,5 +2773,20 @@
     "evidencePresetIds": ["SP27-101", "SP27-102", "SP27-103"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "7. Sci-Fi Cinema 50s & 60s",
+    "displayCategory": "Sci-fi cinema 50s & 60s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "0925fcbd909001b43fc786fb82b1e4a2402c4b09558491d0d980fee1ec782b05",
+    "problem": "Fifties and sixties science fiction styles must reproduce each named film's production look (Technicolor or black-and-white stock, matte paintings, sets, lighting, lenses) without copying its creatures, robots, costumes or scenes.",
+    "preserve": "The requested subject stays the subject, staged in that film's production language; cards invent original moments.",
+    "proposedAction": "New category of 20 named films from Destination Moon and The Day the Earth Stood Still to 2001 and Barbarella, spanning American Technicolor invasions, atomic noir, Toho, British, Czech and French New Wave science fiction.",
+    "validation": "Generate the card set; check each card reads as its film's stock and design without a signature creature, robot or scene.",
+    "evidencePresetIds": ["SP27-121", "SP27-122", "SP27-123"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

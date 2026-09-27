@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-140
+packId: pack_27
+name: Barbarella 1968 - Vadim Pop Psychedelic Space
+styleAnchors:
+  - Barbarella 1968 - Vadim Pop Psychedelic Space
+  - sixties science fiction cinema
+  - Barbarella pop psychedelia
+displayName: Barbarella 1968 - Vadim Pop Psychedelic Space
+category: 7. Sci-Fi Cinema 50s & 60s
+domain: sixties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-50s-60s
+  - scifi-50s-60s
+  - scifi-cinema
+  - barbarella
+  - reference-title
+visualDna:
+  aesthetic: 'Roger Vadim Barbarella (1968) look: psychedelic pop-art space fantasy, fur-lined spaceships, plastic bubble sets, glittering costumes, Jean-Claude Forest comic designs and campy dreamlike color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in camp psychedelic pop-art sets with glitter, plastic and fur. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Psychedelic pink, orange, violet and gold, true to the Barbarella 1968 palette.
+  lighting_and_shadow: Colored gels and glittering highlights, lit the way Barbarella 1968 lights its scenes.
+  texture_and_material: Late-sixties Technicolor grain with plastic and fur textures.
+  camera_and_composition: Camp stagey frames with floating sets, framed the way Barbarella 1968 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with camp dreamy playfulness.
+  rendering_and_quality: Authentic late-sixties pop psychedelic frame, in the recognizable hand of Barbarella 1968.
+  creative_brief: 'Roger Vadim Barbarella (1968) look: psychedelic pop-art space fantasy, fur-lined spaceships, plastic bubble sets, glittering costumes, Jean-Claude Forest comic designs and campy dreamlike color. Carry it through Barbarella pop psychedelia, fur spaceship, plastic bubbles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Barbarella pop psychedelia; fur spaceship; plastic bubbles
+avoidRules:
+  - a blonde astronaut in a clear vinyl spacesuit
+  - a blind angel with feathered wings
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a blonde astronaut in a clear vinyl spacesuit, a blind angel with feathered wings, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-50s-60s
+  categoryName: 7. Sci-Fi Cinema 50s & 60s
+  domain: sixties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-50s-60s
+    - scifi-50s-60s
+    - scifi-cinema
+    - barbarella
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

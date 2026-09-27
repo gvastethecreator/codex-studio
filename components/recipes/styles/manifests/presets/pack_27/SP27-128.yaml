@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-128
+packId: pack_27
+name: Forbidden Planet 1956 - MGM CinemaScope Alien World
+styleAnchors:
+  - Forbidden Planet 1956 - MGM CinemaScope Alien World
+  - fifties science fiction cinema
+  - Forbidden Planet green sky
+displayName: Forbidden Planet 1956 - MGM CinemaScope Alien World
+category: 7. Sci-Fi Cinema 50s & 60s
+domain: fifties science fiction cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - scifi-cinema-50s-60s
+  - scifi-50s-60s
+  - scifi-cinema
+  - forbidden-planet
+  - reference-title
+visualDna:
+  aesthetic: 'Fred McLeod Wilcox Forbidden Planet (1956) look: CinemaScope Metrocolor alien world with a green sky and painted desert, a gleaming saucer cruiser, vast Krell-scale machinery and electronic tonalities.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject under a painted green alien sky or among colossal machine chambers. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Painted green sky, coral desert and chrome, true to the Forbidden Planet 1956 palette.
+  lighting_and_shadow: Studio stage light and glowing machine panels, lit the way Forbidden Planet 1956 lights its scenes.
+  texture_and_material: Fifties Metrocolor CinemaScope grain with painted cyclorama backdrops.
+  camera_and_composition: Wide CinemaScope frames dwarfing crews, framed the way Forbidden Planet 1956 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with grand alien mystery.
+  rendering_and_quality: Authentic fifties MGM science fiction frame, in the recognizable hand of Forbidden Planet 1956.
+  creative_brief: 'Fred McLeod Wilcox Forbidden Planet (1956) look: CinemaScope Metrocolor alien world with a green sky and painted desert, a gleaming saucer cruiser, vast Krell-scale machinery and electronic tonalities. Carry it through Forbidden Planet green sky, CinemaScope, colossal machinery. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Forbidden Planet green sky; CinemaScope; colossal machinery
+avoidRules:
+  - a bubble-headed robot with spinning antennas
+  - an invisible id monster outline
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a bubble-headed robot with spinning antennas, an invisible id monster outline, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: scifi-cinema-50s-60s
+  categoryName: 7. Sci-Fi Cinema 50s & 60s
+  domain: fifties science fiction cinema
+  tags:
+    - curation-v2
+    - scifi-cinema-50s-60s
+    - scifi-50s-60s
+    - scifi-cinema
+    - forbidden-planet
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
