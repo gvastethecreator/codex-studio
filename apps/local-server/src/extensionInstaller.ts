@@ -7,6 +7,7 @@ import {
   EXTENSION_MANIFEST_FILE,
   parseExtensionManifest,
   type ExtensionManifest,
+  type ExtensionReleaseAsset,
   type ExtensionReleaseEntry,
   type ExtensionReleaseLayer,
 } from '../../../packages/shared/src/extensions';
@@ -108,4 +109,19 @@ export async function installExtensionLayer({
   await replaceFolder(path.join(extensionRoot, layer.name), (stageDir) =>
     extractZip(zip, stageDir),
   );
+}
+
+/** Verifies a preview archive and extracts it into `targetDir`, replacing any earlier copy. */
+export async function extractPreviewArchive({
+  archive,
+  asset,
+  targetDir,
+}: {
+  archive: Uint8Array;
+  asset: ExtensionReleaseAsset;
+  targetDir: string;
+}) {
+  verifyArchive(`${path.basename(targetDir)} preview`, archive, asset);
+  const zip = await JSZip.loadAsync(archive);
+  await replaceFolder(targetDir, (stageDir) => extractZip(zip, stageDir));
 }

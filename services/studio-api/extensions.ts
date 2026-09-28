@@ -1,4 +1,4 @@
-import type { ExtensionManifest } from '../../packages/shared/src/extensions';
+import type { ExtensionManifest, StylePackPreview } from '../../packages/shared/src/extensions';
 import { getStudioApiBase, request } from './http';
 
 export interface InvalidExtensionFolder {
@@ -89,4 +89,25 @@ export async function requestDefaultStylePack() {
 
 export async function getDefaultStylePackState() {
   return request<DefaultStylePackState>('/api/extensions/default-pack');
+}
+
+export interface StylePackPreviewResponse {
+  preview: StylePackPreview;
+  /** API path prefix for the preview's relative image paths. */
+  imageBase: string;
+}
+
+/** Preview of an installed pack, read from its own files. */
+export async function getInstalledPackPreview(id: string) {
+  return request<StylePackPreviewResponse>(`/api/extensions/${encodeURIComponent(id)}/preview`);
+}
+
+/** Preview of a pack a remote source publishes; the backend downloads and caches it. */
+export async function getRemotePackPreview(sourceId: string, id: string) {
+  const query = new URLSearchParams({ source: sourceId, id });
+  return request<StylePackPreviewResponse>(`/api/extensions/remote-preview?${query}`);
+}
+
+export function previewImageUrl(imageBase: string, image: string) {
+  return `${getStudioApiBase()}${imageBase}${image.split('/').map(encodeURIComponent).join('/')}`;
 }

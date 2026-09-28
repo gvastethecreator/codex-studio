@@ -1,14 +1,16 @@
 import { Hono } from 'hono';
 import { existsSync } from 'node:fs';
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
   compareExtensionVersions,
   EXTENSION_LAYERS,
+  parseStylePackPreview,
   type ExtensionLayerName,
 } from '../../../packages/shared/src/extensions';
 import {
   ExtensionInstallError,
+  extractPreviewArchive,
   installExtensionArchive,
   installExtensionLayer,
 } from './extensionInstaller';
@@ -212,6 +214,66 @@ export function createExtensionRoutes({
     defaultPack = { state: 'installing' };
     void installDefaultPack(remote, defaultPackId);
     return c.json(defaultPack);
+  });
+
+  // Previews downloaded from remote sources, cached per extension version.
+  const previewCacheDir = remote ? path.join(path.dirname(remote.installDir), 'previews') : null;
+  const PREVIEW_KEY = /^[a-z0-9][a-z0-9.-]*@\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/;
+
+  app.get('/remote-preview', async (c) => {
+    if (!remote || !previewCacheDir)
+      return c.json({ error: 'Remote extension sources are not configured' }, 404);
+    const source = remote.sources.find((item) => item.id === c.req.query('source'));
+    const id = c.req.query('id');
+    if (!source || !id) return c.json({ error: 'Request needs a known source and an id' }, 400);
+    try {
+      const entry = (await remote.client.fetchIndex(source)).extensions.find(
+        (item) => item.id === id,
+      );
+      if (!entry?.preview) return c.json({ error: `${id} has no published preview` }, 404);
+      const key = `${entry.id}@${entry.version}`;
+      const dir = path.join(previewCacheDir, key);
+      if (!existsSync(path.join(dir, 'preview.json'))) {
+        const archive = await remote.client.downloadAsset(source, entry.tag, entry.preview.archive);
+        await extractPreviewArchive({ archive, asset: entry.preview, targetDir: dir });
+      }
+      const preview = parseStylePackPreview(
+        JSON.parse(await readFile(path.join(dir, 'preview.json'), 'utf8')),
+      );
+      if (!preview) return c.json({ error: `${id} has an invalid preview` }, 422);
+      return c.json({ preview, imageBase: `/api/extensions/remote-preview-files/${key}/` });
+    } catch (error) {
+      const status = error instanceof ExtensionInstallError ? 422 : 502;
+      return c.json({ error: errorMessage(error) }, status);
+    }
+  });
+
+  app.get('/remote-preview-files/:key/*', async (c) => {
+    const key = c.req.param('key');
+    if (!previewCacheDir || !PREVIEW_KEY.test(key)) return c.json({ error: 'Not found' }, 404);
+    const relativePath = decodeURIComponent(c.req.path.split(`/${key}/`)[1] ?? '');
+    const contentType = CONTENT_TYPES[path.extname(relativePath).toLowerCase()];
+    const root = path.join(previewCacheDir, key);
+    const file = path.resolve(root, relativePath);
+    if (!contentType || !file.startsWith(`${path.resolve(root)}${path.sep}`))
+      return c.json({ error: 'Unsupported file' }, 400);
+    if (!existsSync(file) || !(await stat(file)).isFile())
+      return c.json({ error: 'Not found' }, 404);
+    return c.body(new Uint8Array(await readFile(file)), 200, {
+      'Content-Type': contentType,
+      'Cache-Control': 'public, max-age=86400',
+    });
+  });
+
+  app.get('/:id/preview', async (c) => {
+    const id = c.req.param('id');
+    const extension = (await store.list()).extensions.find((item) => item.manifest.id === id);
+    if (!extension) return c.json({ error: 'Not found' }, 404);
+    const previewFile = extension.manifest.files.preview;
+    const raw = previewFile ? await store.readFile(id, previewFile) : null;
+    const preview = raw ? parseStylePackPreview(JSON.parse(raw.toString('utf8'))) : null;
+    if (!preview) return c.json({ error: `${id} has no preview` }, 404);
+    return c.json({ preview, imageBase: `/api/extensions/${encodeURIComponent(id)}/files/` });
   });
 
   app.delete('/:id', async (c) => {

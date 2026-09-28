@@ -15,6 +15,8 @@ export interface StylePackExtensionFiles {
   thumbnails: string;
   /** Retired presets kept so old favorites still resolve; only packs that retired presets. */
   archived?: string;
+  /** Cover, description and sample cards shown before a pack is opened or installed. */
+  preview?: string;
 }
 
 /** A downloadable part of an extension, such as full-size cards, verified by sha256. */
@@ -123,6 +125,67 @@ export interface ExtensionReleaseEntry {
   sha256: string;
   bytes: number;
   layers?: ExtensionReleaseLayer[];
+  /** Small zip with the pack's preview.json and the images it names, for browsing before install. */
+  preview?: ExtensionReleaseAsset;
+}
+
+export interface ExtensionReleaseAsset {
+  archive: string;
+  sha256: string;
+  bytes: number;
+}
+
+/** preview.json: what the pack browser shows. Image paths are relative to the preview root. */
+export interface StylePackPreview {
+  schemaVersion: 1;
+  title: string;
+  description: string;
+  presetCount: number;
+  categories: { name: string; presetCount: number }[];
+  cover: string | null;
+  samples: { presetId: string; name: string; image: string }[];
+}
+
+export function parseStylePackPreview(value: unknown): StylePackPreview | null {
+  if (!isRecord(value) || value.schemaVersion !== 1) return null;
+  const { title, description, presetCount, categories, cover, samples } = value;
+  if (
+    typeof title !== 'string' ||
+    typeof description !== 'string' ||
+    typeof presetCount !== 'number' ||
+    !Array.isArray(categories) ||
+    !categories.every(
+      (category) =>
+        isRecord(category) &&
+        typeof category.name === 'string' &&
+        typeof category.presetCount === 'number',
+    ) ||
+    !(cover === null || isSafeRelativePath(cover)) ||
+    !Array.isArray(samples) ||
+    !samples.every(
+      (sample) =>
+        isRecord(sample) &&
+        typeof sample.presetId === 'string' &&
+        typeof sample.name === 'string' &&
+        isSafeRelativePath(sample.image),
+    )
+  )
+    return null;
+  return value as unknown as StylePackPreview;
+}
+
+function isReleaseAsset(value: unknown) {
+  return (
+    isRecord(value) &&
+    typeof value.archive === 'string' &&
+    value.archive.endsWith('.zip') &&
+    !value.archive.includes('/') &&
+    typeof value.sha256 === 'string' &&
+    SHA256_PATTERN.test(value.sha256) &&
+    typeof value.bytes === 'number' &&
+    Number.isInteger(value.bytes) &&
+    value.bytes > 0
+  );
 }
 
 export interface ExtensionReleaseIndex {
@@ -161,6 +224,8 @@ export function parseExtensionReleaseIndex(value: unknown): ExtensionReleaseInde
       entry.bytes <= 0
     )
       issues.push(`extensions[${index}] needs id, version, title, tag, archive, sha256 and bytes`);
+    else if (entry.preview !== undefined && !isReleaseAsset(entry.preview))
+      issues.push(`extensions[${index}].preview needs archive, sha256 and bytes`);
     else if (entry.layers !== undefined) {
       if (!Array.isArray(entry.layers)) issues.push(`extensions[${index}].layers must be an array`);
       else
@@ -247,6 +312,8 @@ export function parseExtensionManifest(value: unknown): ExtensionManifestParseRe
       if (!isSafeRelativePath(files[key])) issues.push(`files.${key} must be a relative path`);
   if (isRecord(files) && files.archived !== undefined && !isSafeRelativePath(files.archived))
     issues.push('files.archived must be a relative path');
+  if (isRecord(files) && files.preview !== undefined && !isSafeRelativePath(files.preview))
+    issues.push('files.preview must be a relative path');
 
   if (
     !isRecord(stylePack) ||

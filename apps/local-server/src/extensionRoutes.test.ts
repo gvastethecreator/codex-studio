@@ -26,6 +26,16 @@ const manifest = {
 };
 
 let source = '';
+
+const previewJson = {
+  schemaVersion: 1,
+  title: 'Mythic Noir Curated Vault',
+  description: 'Myths.',
+  presetCount: 197,
+  categories: [{ name: 'Heroes & Epics', presetCount: 22 }],
+  cover: 'thumbnails/SP14-142.webp',
+  samples: [{ presetId: 'SP14-142', name: 'Hydra', image: 'thumbnails/SP14-142.webp' }],
+};
 afterEach(() => rm(source, { recursive: true, force: true }));
 
 async function createRoutes() {
@@ -83,6 +93,10 @@ describe('remote extension install', () => {
     const cardsZip = new JSZip();
     cardsZip.file('SP14-142.webp', 'full-card');
     const cardsArchive = await cardsZip.generateAsync({ type: 'uint8array' });
+    const previewZip = new JSZip();
+    previewZip.file('preview.json', JSON.stringify(previewJson));
+    previewZip.file('thumbnails/SP14-142.webp', 'thumb');
+    const previewArchive = await previewZip.generateAsync({ type: 'uint8array' });
     const entry = {
       id: 'cozy.pack-14',
       version: '1.1.0',
@@ -99,12 +113,18 @@ describe('remote extension install', () => {
           bytes: cardsArchive.byteLength,
         },
       ],
+      preview: {
+        archive: 'cozy.pack-14-1.1.0-preview.zip',
+        sha256: createHash('sha256').update(previewArchive).digest('hex'),
+        bytes: previewArchive.byteLength,
+      },
     };
     const client: ExtensionSourceClient = {
       tokenConfigured: false,
       fetchIndex: async () => ({ schemaVersion: 1, extensions: [entry] }),
       downloadAsset: async (_source, tag, name) => {
         expect(tag).toBe(entry.tag);
+        if (name === entry.preview.archive) return previewArchive;
         return name === entry.layers[0]!.archive ? cardsArchive : archive;
       },
     };
@@ -140,6 +160,27 @@ describe('remote extension install', () => {
       expect(await again.json()).toEqual({ state: 'skipped' });
     } finally {
       await rm(installDir, { recursive: true, force: true });
+    }
+  });
+
+  it('downloads, verifies and caches a remote preview, then serves its images', async () => {
+    const { routes, installDir } = await createRemoteRoutes();
+    try {
+      const response = await routes.request('/remote-preview?source=cozy-styles&id=cozy.pack-14');
+      const body = await response.json();
+      expect(body.preview.samples[0].presetId).toBe('SP14-142');
+      expect(body.imageBase).toBe('/api/extensions/remote-preview-files/cozy.pack-14@1.1.0/');
+      const image = await routes.request(
+        '/remote-preview-files/cozy.pack-14@1.1.0/thumbnails/SP14-142.webp',
+      );
+      expect(await image.text()).toBe('thumb');
+      expect(
+        (await routes.request('/remote-preview-files/cozy.pack-14@1.1.0/..%2F..%2Fsecret.json'))
+          .status,
+      ).toBe(400);
+    } finally {
+      await rm(installDir, { recursive: true, force: true });
+      await rm(path.join(path.dirname(installDir), 'previews'), { recursive: true, force: true });
     }
   });
 
