@@ -9,10 +9,12 @@ export interface InvalidExtensionFolder {
 export async function listInstalledExtensions(
   options: { refresh?: boolean; signal?: AbortSignal } = {},
 ) {
-  return request<{ extensions: ExtensionManifest[]; invalid: InvalidExtensionFolder[] }>(
-    `/api/extensions${options.refresh ? '?refresh=1' : ''}`,
-    { signal: options.signal },
-  );
+  return request<{
+    extensions: ExtensionManifest[];
+    /** Optional layers on disk per extension id, such as `cards`. */
+    installedLayers: Record<string, string[]>;
+    invalid: InvalidExtensionFolder[];
+  }>(`/api/extensions${options.refresh ? '?refresh=1' : ''}`, { signal: options.signal });
 }
 
 function extensionFilePath(extensionId: string, relativePath: string) {

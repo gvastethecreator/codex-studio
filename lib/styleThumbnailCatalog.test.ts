@@ -5,6 +5,7 @@ import {
   getStyleThumbnail,
   loadStyleThumbnailPack,
   resolveStyleDefaultImageVariantThumbnails,
+  resolveStyleFullCardUrl,
   subscribeStyleThumbnailCatalog,
 } from './styleThumbnailCatalog';
 import { registerInstalledStylePacks } from './installedStylePacks';
@@ -60,6 +61,29 @@ describe('styleThumbnailCatalog', () => {
     );
     expect(getStyleCategoryImage('pack_16__70s_and_80s_retro_anime')).toBeTruthy();
     expect(notified).toBe(1);
+  });
+
+  it('maps card thumbnails to full cards only when the cards layer is installed', async () => {
+    const pack17 = {
+      ...pack16,
+      id: 'cozy.pack-17',
+      stylePack: { ...pack16.stylePack, id: 'pack_17' },
+    };
+    registerInstalledStylePacks([pack17], { 'cozy.pack-17': ['cards'] });
+    vi.stubGlobal('fetch', async () =>
+      Response.json({
+        'SP17-001': 'thumbnails/SP17-001.webp',
+        pack_17__dark: 'thumbnails/pack_17__dark.webp',
+      }),
+    );
+
+    await loadStyleThumbnailPack('pack_17');
+
+    expect(resolveStyleFullCardUrl(getStyleThumbnail('SP17-001')!)).toMatch(
+      /\/api\/extensions\/cozy\.pack-17\/files\/cards\/SP17-001\.webp$/,
+    );
+    expect(resolveStyleFullCardUrl(getStyleCategoryImage('pack_17__dark')!)).toBeNull();
+    expect(resolveStyleFullCardUrl(getStyleThumbnail('SP05-001') ?? '')).toBeNull();
   });
 
   it('returns nothing for a pack that is not installed', async () => {

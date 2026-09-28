@@ -17,13 +17,21 @@ export const INSTALLED_STYLE_PACK_SUMMARIES: StylePackSummary[] = [];
 
 const extensionByPackId = new Map<string, ExtensionManifest>();
 
-export function registerInstalledStylePacks(extensions: readonly ExtensionManifest[]) {
+const packIdsWithCards = new Set<string>();
+
+export function registerInstalledStylePacks(
+  extensions: readonly ExtensionManifest[],
+  installedLayers: Readonly<Record<string, readonly string[]>> = {},
+) {
   extensionByPackId.clear();
+  packIdsWithCards.clear();
   for (const extension of extensions) {
     if (extension.kind !== 'style-pack') continue;
     // Earlier sources win, matching the backend listing.
-    if (!extensionByPackId.has(extension.stylePack.id))
-      extensionByPackId.set(extension.stylePack.id, extension);
+    if (extensionByPackId.has(extension.stylePack.id)) continue;
+    extensionByPackId.set(extension.stylePack.id, extension);
+    if (installedLayers[extension.id]?.includes('cards'))
+      packIdsWithCards.add(extension.stylePack.id);
   }
   const summaries = [...extensionByPackId.values()]
     .map((extension) => extension.stylePack)
@@ -58,9 +66,9 @@ async function listWithRetry() {
 /** Fetches the installed extensions once. A failed request leaves the catalogue empty. */
 export function loadInstalledStylePacks() {
   loading ??= listWithRetry()
-    .then(({ extensions }) => {
+    .then(({ extensions, installedLayers }) => {
       loadError = null;
-      registerInstalledStylePacks(extensions);
+      registerInstalledStylePacks(extensions, installedLayers);
     })
     .catch((error: unknown) => {
       loading = null;
@@ -115,6 +123,11 @@ export function getStyleLandingFolder(id: string): StylePackLandingFolder | null
   }
   if (folder) folder.imageKeys = folder.imageKeys.slice(0, LANDING_IMAGE_LIMIT);
   return folder;
+}
+
+/** True when the pack's optional full-quality `cards` layer is installed. */
+export function stylePackHasFullCards(packId: string) {
+  return packIdsWithCards.has(packId);
 }
 
 export function stylePackFileUrl(packId: string, relativePath: string) {

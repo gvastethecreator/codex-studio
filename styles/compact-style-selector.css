@@ -1226,6 +1226,26 @@
   object-fit: contain;
   background: var(--wb-well);
 }
+.style-detail-dialog .style-detail-zoom {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  cursor: zoom-in;
+}
+/* Zoomed: the dialog widens and the card uses the full window height. */
+.style-detail-dialog[data-zoomed='true'] {
+  width: min(1100px, calc(100vw - 24px));
+}
+.style-detail-dialog[data-zoomed='true'] .style-detail-zoom {
+  cursor: zoom-out;
+}
+.style-detail-dialog[data-zoomed='true'] .style-detail-image {
+  max-height: calc(100dvh - 120px);
+}
 .style-detail-copy {
   padding: 0 14px;
   font-size: 12px;

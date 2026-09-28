@@ -1,4 +1,9 @@
-import { fetchStylePackFile, isInstalledStylePack, stylePackFileUrl } from './installedStylePacks';
+import {
+  fetchStylePackFile,
+  isInstalledStylePack,
+  stylePackFileUrl,
+  stylePackHasFullCards,
+} from './installedStylePacks';
 import type { StylePresetImageVariant } from './stylePresetVisuals';
 
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
@@ -35,6 +40,8 @@ const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
 
 const styleCardThumbnails: Record<string, string> = {};
 const styleCategoryImages: Record<string, string> = {};
+// Thumbnail URL -> full-quality card URL, for packs with the `cards` layer installed.
+const styleFullCardByThumbnail = new Map<string, string>();
 
 const styleThumbnailCatalogListeners = new Set<() => void>();
 
@@ -69,6 +76,10 @@ export function loadStyleThumbnailPack(packId: string): Promise<Record<string, s
       Object.entries(files).map(([key, file]) => [key, stylePackFileUrl(packId, file)]),
     );
     rememberThumbnailProjection(projection);
+    if (stylePackHasFullCards(packId))
+      for (const [key, url] of Object.entries(projection))
+        if (!key.startsWith('pack_'))
+          styleFullCardByThumbnail.set(url, stylePackFileUrl(packId, `cards/${key}.webp`));
     notifyStyleThumbnailCatalog();
     return projection;
   });
@@ -79,6 +90,11 @@ export function loadStyleThumbnailPack(packId: string): Promise<Record<string, s
 
 export function getStyleThumbnail(key: string) {
   return styleCardThumbnails[key];
+}
+
+/** The full-quality card behind a card thumbnail, or null when the pack has no cards layer. */
+export function resolveStyleFullCardUrl(thumbnailSrc: string) {
+  return styleFullCardByThumbnail.get(thumbnailSrc) ?? null;
 }
 
 export function getStyleCategoryImage(key: string) {

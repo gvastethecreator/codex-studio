@@ -14,6 +14,7 @@ import {
 } from '@tabler/icons-react';
 import React, { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
+import { resolveStyleFullCardUrl } from '../../lib/styleThumbnailCatalog';
 import type { GeneratedImageWithConfig } from '../../types';
 import {
   resolveStylePresetCardImages,
@@ -173,6 +174,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   const isHoveredRef = useRef(false);
   const previewDialogRef = useRef<HTMLDialogElement>(null);
   const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewZoomed, setPreviewZoomed] = useState(false);
 
   useLayoutEffect(() => {
     if (previewOpen) previewDialogRef.current?.showModal();
@@ -342,7 +344,11 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             ref={previewDialogRef}
             className="style-detail-dialog"
             aria-label={`Information about ${presetDisplayName}`}
-            onClose={() => setPreviewOpen(false)}
+            data-zoomed={previewZoomed ? 'true' : 'false'}
+            onClose={() => {
+              setPreviewOpen(false);
+              setPreviewZoomed(false);
+            }}
             onKeyDown={(event) => {
               if (event.key === 'Escape') event.stopPropagation();
               if (event.key !== 'Tab') return;
@@ -370,11 +376,19 @@ export const StylePresetCard = React.memo(function StylePresetCard({
               </button>
             </header>
             {activeCardImage ? (
-              <img
-                className="style-detail-image"
-                src={activeCardImage.src}
-                alt={presetDisplayName}
-              />
+              <button
+                type="button"
+                className="style-detail-zoom"
+                aria-pressed={previewZoomed}
+                aria-label={previewZoomed ? 'Fit card to the dialog' : 'View card at full size'}
+                onClick={() => setPreviewZoomed((zoomed) => !zoomed)}
+              >
+                <img
+                  className="style-detail-image"
+                  src={resolveStyleFullCardUrl(activeCardImage.src) ?? activeCardImage.src}
+                  alt={presetDisplayName}
+                />
+              </button>
             ) : (
               <p>No preview available</p>
             )}
