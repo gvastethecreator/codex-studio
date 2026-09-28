@@ -106,14 +106,6 @@
         "reason": "Desktop host bridge; review target is the web UI."
       },
       {
-        "path": "assets/recipes/styles/defaults",
-        "reason": "Thousands of style card webps; demo aliases thumbnails to a small fixture set."
-      },
-      {
-        "path": "assets/recipes/styles/category-bases",
-        "reason": "Category base rasters unused by the review thumbnail alias."
-      },
-      {
         "path": "assets/recipes/character-lab/sources",
         "reason": "Authoring sources for Character Lab; not the runtime UI bundle."
       },

@@ -270,7 +270,6 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Provider Session Contract** supplies stable rules that do not need to be repeated in every **Compiled Provider Input**.
 - The **Codex Product Runtime** powers interactive Codex jobs. The **Codex Automation Surface** supports non-interactive maintenance workflows.
 - A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
-- A **Style Thumbnail Projection** derives pack-scoped asset URLs from style manifests without becoming style authoring truth.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
 - An **Extension Source** offers many **Cozy Extensions**. A style-pack extension carries one **Style Pack Manifest** and its **Style Preset Manifests**.
 - A **Local Generation Run** creates one or more **Persistent Jobs** and returns their catalog-derived image results.

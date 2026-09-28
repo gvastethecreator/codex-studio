@@ -250,8 +250,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `catalog:source:verify`
 - `providers:verify`
 - `recipes:verify`
-- `styles:verify`
-- `styles:provider-variants:verify` (also part of `styles:verify`)
+- `styles:render:verify`
 - `runtime:doctor`
 - `providers:preflight`
 - `ui:source:verify`

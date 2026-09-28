@@ -147,58 +147,11 @@ bun run recipes:verify
 
 ## Add Or Change A Style Preset
 
-1. Prefer `bun run styles:scaffold -- --preset=<ID> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` when creating a new preset.
-   It is dry-run by default.
-   Pass `--write` to change files.
-   Optionally pass `--default-image=/assets/...` to prefill a real default image path.
-2. Edit `components/recipes/styles/manifests/presets/<pack>/<preset>.yaml` first.
-   `styles:scaffold` uses `components/recipes/styles/manifests/templates/style-preset.template.yaml`, `sprite-sheet-preset.template.yaml`, or `texture-preset.template.yaml` internally for new presets.
-3. Preserve stable `id`, `packId`, `name`, `category`, visual DNA, avoid rules, asset refs, supported tasks, tags, and version.
-4. Keep taxonomy source language in English for durable ids, tags, and labels.
-   Keep `category.id` in `kebab-case` with no `snake_case` or legacy non-English slugs.
-5. Maintain editorial taxonomy (`packId`, `packName`, `categoryId`, `categoryName`, domain, tags, supported tasks, default image state) so agents can query presets without scanning compatibility packs.
-6. Register the preset in both the matching category `presetRefs` and the pack-level `presetRefs`.
-   Refs must stay inside the same pack namespace.
-7. Keep each preset visually distinct from neighboring presets.
-8. Do not collapse motif or avoid constraints into generic prompt text.
-9. Validate the edited preset file and any catalog index generated from it.
-10. Import manifest-authoring contracts from `components/recipes/styles/manifestTypes.ts` and runtime or UI contracts from `components/recipes/styles/runtimeTypes.ts`.
-    Do not use the retired `components/recipes/styles/types` path.
+Style packs, presets, cards and curation live in the private `cozy-styles-dev` repository next to this checkout, not in Studio. Its README covers authoring, validation, card generation and releases. Studio loads style packs only as installed Cozy Extensions (ADR 0011).
 
-Run `bun run styles:validate -- --preset=<id>` after editing one granular preset, or `bun run styles:validate -- --pack=<pack_id>` after editing a pack.
-Use `--coverage` to see taxonomy and default-image coverage by pack.
-Use `--strict-taxonomy` when you require persisted taxonomy in the edited scope.
-Run `bun run styles:scaffold -- --preset=<id> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` to preview the new preset file plus pack and category ref changes before writing them.
-Add `--write` to apply the scaffold.
-If `--default-image` is omitted, the scaffold uses `/assets/recipes/styles/defaults/<id>.webp` and leaves `taxonomy.hasDefaultImage: false` until the asset exists.
-Run `bun run styles:taxonomy -- --preset=<id>` to backfill editorial taxonomy for one manifest.
-Use `--pack=<pack_id>` for one pack.
-Use `--all` only when you intentionally regenerate taxonomy across the catalog.
-Run `bun run styles:catalog -- --query=<text> --limit=20` to search the Style Preset Catalog without scanning compatibility packs.
-Add `--pack=<pack_id>`, `--category=<name>`, `--tag=<tag>`, `--task=<task>`, or `--json` for agent-ready output.
-Run `bun run styles:runtime` after manifest edits that affect the Styles UI.
-It regenerates the compact runtime index, pack indexes, and per-category runtime chunks used by `stylesData.ts`.
-Then it formats generated files in Windows-safe batches.
-Run `bun run styles:runtime:check` to make sure that the generated runtime file is current without rewriting it.
-Run `bun run styles:verify` before closing broad preset work.
-Run `bun run styles:templates:verify` after changing files in `components/recipes/styles/manifests/templates/`.
-It reports required image, sprite sheet, and texture templates plus their task coverage.
-Run `bun run styles:source:verify` when changing Styles runtime or scripts.
-It blocks accidental runtime imports from legacy pack YAML and generated runtime check temp files.
-It also blocks presets that exist only in legacy pack YAML.
-It blocks YAML files recreated in the retired `components/recipes/styles/packs` directory.
-It blocks retired runtime pack aliases or exports and imports from the retired `styles/types` path.
-Only source-audit and compatibility-test seams mention old legacy pack internals.
-Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering.
-It reports mounted, eager, and placeholder sections plus eager or planned card budgets per pack from `styleBrowserRenderPlan`.
-This keeps large packs from mounting every preset at once.
-For major Styles UI changes, make sure that `pack_05` works in the browser.
-Compare collapsed and expanded DOM counts against this report.
-Run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass.
+In Studio, import manifest contracts from `components/recipes/styles/manifestTypes.ts` and runtime or UI contracts from `components/recipes/styles/runtimeTypes.ts`. Use `StyleRuntimePack`, `StyleRuntimePreset`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()` and `loadStyleRuntimePacks()` for new code.
 
-Legacy pack YAML is retired.
-Use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()`, and manifest or catalog types for new code.
-`styles:source:verify` blocks legacy aliases or exports outside the source-audit guard.
+Run `bun run styles:render:verify` after changing Styles UI grouping or virtualized rendering. It measures mounted, eager and placeholder sections per installed pack from `styleBrowserRenderPlan`. For major Styles UI changes, check `pack_05` in the browser, or run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles`.
 
 ## Audit Token Usage
 
@@ -381,7 +334,6 @@ Current chunk budgets:
 - `localGenerationRun-*`: max 80 KB, loaded only when generation starts
 - `StylesRecipe-*`: max 80 KB
 - `StylePresetCatalogSearchSurface-*`: max 20 KB
-- `stylePresetCatalogData-*`: max 180 KB
 - `CameraAnglesRecipe-*`: max 40 KB
 - `three.module-*`: max 800 KB, demand-loaded Camera viewport only
 - `jszip.min-*`: max 120 KB, demand-loaded ZIP export only

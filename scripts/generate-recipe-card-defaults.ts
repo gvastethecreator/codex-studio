@@ -11,7 +11,7 @@ import {
   repoRelative,
   request,
   writeRepoWebpAsset,
-} from './style-default-utils';
+} from './recipe-asset-utils';
 
 interface RecipeCardDef {
   id: string;

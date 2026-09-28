@@ -72,9 +72,9 @@ Use `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, or `wont
 
 This repository uses one product context. Read the root `CONTEXT.md` and relevant `docs/adr/` entries when they exist. See `docs/agents/domain.md`.
 
-### Style curation continuation
+### Style content
 
-For category/preset curation, read `docs/styles/curation-v2/agent-kit/START-HERE.md`. Generate one bounded packet with `bun scripts/style-curation/agent-kit.mjs packet --key="<exact key from list>"`. Keep original identities, distinguish visual styles from modifiers/profiles/themes, and record real validation separately from pending image review. The kit is not permission to archive, migrate user data, call providers or mark the PR accepted. Its report validator checks records, not image quality.
+Style packs, presets, cards and curation live in the private `cozy-styles-dev` repository next to this checkout. For curation, read its `curation/agent-kit/START-HERE.md`. Studio only loads installed style extensions (ADR 0011); do not add style content here.
 
 ## Closeout
 

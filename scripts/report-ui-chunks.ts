@@ -90,18 +90,6 @@ export const uiChunkBudgets: UiChunkBudget[] = [
     note: 'Catalog search surface should be a small UI shell.',
   },
   {
-    id: 'style-catalog-data-shell',
-    pattern: /^stylePresetCatalogData-[\w-]+\.js$/,
-    maxBytes: 32 * KIB,
-    note: 'Full YAML catalog data should be absent from app startup/search; if present, keep it tiny.',
-  },
-  {
-    id: 'style-catalog-pack-data',
-    pattern: /^stylePresetCatalogData\.pack_[\w-]+-[\w-]+\.js$/,
-    maxBytes: 32 * KIB,
-    note: 'If full YAML pack loaders enter the app build, the largest pack glob map stays bounded.',
-  },
-  {
     id: 'camera-recipe',
     pattern: /^CameraAnglesRecipe-[\w-]+\.js$/,
     maxBytes: 40 * KIB,

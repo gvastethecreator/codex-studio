@@ -36,24 +36,6 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
     message: 'Three.js must stay demand-loaded by the Camera viewport.',
   },
   {
-    id: 'catalog-search-no-static-catalog-data',
-    filePath: 'components/recipes/StylePresetCatalogSearchSurface.tsx',
-    forbidden: ["from './stylePresetCatalogData'", 'from "./stylePresetCatalogData"'],
-    message: 'Catalog data glob must load after the user opens catalog search.',
-  },
-  {
-    id: 'catalog-search-no-full-catalog-open-load',
-    filePath: 'components/recipes/StylePresetCatalogSearchSurface.tsx',
-    forbidden: ["import('./stylePresetCatalogData')"],
-    message: 'Catalog search should use incremental search index, not full YAML catalog on open.',
-  },
-  {
-    id: 'catalog-data-no-static-yaml-parser',
-    filePath: 'components/recipes/stylePresetCatalogData.ts',
-    forbidden: ["import yaml from 'js-yaml'", 'from "js-yaml"'],
-    message: 'YAML parser must load only while parsing catalog manifests.',
-  },
-  {
     id: 'viewport-no-static-route-pages',
     filePath: 'components/shell/StudioViewport.tsx',
     forbidden: [

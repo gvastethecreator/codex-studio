@@ -60,8 +60,6 @@ describe('UI chunk report', () => {
       chunk('StylesRecipe-abc.js', 42),
       chunk('StylesBrowser-abc.js', 70),
       chunk('StylePresetCatalogSearchSurface-abc.js', 155),
-      chunk('stylePresetCatalogData-abc.js', 149),
-      chunk('stylePresetCatalogData.pack_01-abc.js', 21),
       chunk('CameraAnglesRecipe-abc.js', 23),
       chunk('three.module-abc.js', 723),
       chunk('jszip.min-abc.js', 96),
@@ -71,7 +69,7 @@ describe('UI chunk report', () => {
     expect(report.ok).toBe(false);
     expect(
       report.budgetResults.filter((result) => !result.ok).map((result) => result.budget.id),
-    ).toEqual(['main-index', 'style-catalog-search-surface', 'style-catalog-data-shell']);
+    ).toEqual(['main-index', 'style-catalog-search-surface']);
     expect(report.unbudgetedLargeChunks.map((chunk) => chunk.name)).toEqual([
       'unexpected-vendor-abc.js',
     ]);

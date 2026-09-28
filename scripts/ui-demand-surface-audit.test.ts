@@ -47,11 +47,6 @@ describe('UI demand surface audit', () => {
       'components/HeaderToolbar.tsx',
       "import { GsapDropdown } from './ui/GsapDropdown';",
     );
-    await writeRepoFile(
-      rootDir,
-      'components/recipes/StylePresetCatalogSearchSurface.tsx',
-      "void import('./stylePresetCatalogData').then(({ loadStylePresetCatalog }) => loadStylePresetCatalog());",
-    );
     await writeRepoFile(rootDir, 'lib/gsapMotion.tsx', "import gsap from 'gsap';");
     await writeRepoFile(
       rootDir,
@@ -63,7 +58,6 @@ describe('UI demand surface audit', () => {
 
     expect(report.violations.map((violation) => violation.ruleId)).toEqual([
       'camera-no-static-three',
-      'catalog-search-no-full-catalog-open-load',
       'viewport-no-static-route-pages',
       'motion-compat-no-static-gsap',
       'startup-toolbar-no-static-motion',

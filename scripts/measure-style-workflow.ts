@@ -4,7 +4,8 @@ import path from 'node:path';
 import os from 'node:os';
 import { createHash } from 'node:crypto';
 import { createDefaultEditableStudioSettings } from '../packages/shared/src/studioSettings';
-import { loadStyleManifestGraph } from './style-manifest-files';
+import { createStylePresetCatalog } from '../components/recipes/stylePresetManifests';
+import { loadInstalledStylePackData } from './installed-style-packs';
 import { projectStyleSearchResultsFromManifestCatalog } from '../components/recipes/styleSearchProjection';
 
 const viewport = { width: 1440, height: 1000 };
@@ -199,14 +200,15 @@ export async function measureStyleWorkflow({
   comparisonUrl?: string;
   output: string;
 }) {
-  const graph = await loadStyleManifestGraph();
+  const installed = await loadInstalledStylePackData();
+  const catalog = createStylePresetCatalog(installed.packManifests, installed.presetManifests);
   const results = projectStyleSearchResultsFromManifestCatalog({
-    catalog: graph.catalog,
+    catalog,
     filters: { query, limit: 80 },
   });
   const target = results[0];
   if (!target) throw new Error('The fixed Styles fixture query returned no target.');
-  const fixtureHash = createHash('sha256').update(JSON.stringify(graph.catalog)).digest('hex');
+  const fixtureHash = createHash('sha256').update(JSON.stringify(catalog)).digest('hex');
   const browser = await chromium.launch({ headless: true, channel: 'chrome' });
   const unmatched = new Set<string>();
   const pageErrors: string[] = [];

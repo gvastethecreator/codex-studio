@@ -71,16 +71,12 @@ port-this/
 .interface-handoff/*.lock
 
 # Project-specific generated style data
-components/recipes/styles/defaults/.locks/
-components/recipes/styleRuntimeData.generated.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/*.check.*.tmp.ts
 components/recipes/styleRuntimePacks.generated/**/*.check.*.tmp.ts
 lib/staleStyleDefaultImages.generated.check.*.tmp.ts
 lib/styleDefaultImages.generated.check.*.tmp.ts
 
 # Failure telemetry from past runs (do not commit)
-assets/recipes/styles/defaults/failures-pack_*.json
-assets/recipes/styles/defaults/providers/*/failures-pack_*.json
 
 # Env / secrets
 .env

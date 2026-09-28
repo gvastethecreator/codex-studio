@@ -8,7 +8,8 @@ import {
   type StylesBrowserGateObservation,
 } from '../lib/stylesBrowserGate';
 import { createStyleRenderBudgetReport } from './report-style-render-budget';
-import { loadStyleManifestGraph } from './style-manifest-files';
+import { createStylePresetCatalog } from '../components/recipes/stylePresetManifests';
+import { loadInstalledStylePackData } from './installed-style-packs';
 
 const DEFAULT_URL = 'http://localhost:17222/#recipe-styles';
 const DEFAULT_PACK_ID = 'pack_05';
@@ -138,10 +139,8 @@ export async function verifyStylesBrowserGate({
   headed = false,
   fixture = false,
 }: VerifyStylesBrowserGateOptions = {}): Promise<VerifyStylesBrowserGateReport> {
-  const [renderReport, manifestGraph] = await Promise.all([
-    createStyleRenderBudgetReport(),
-    loadStyleManifestGraph(),
-  ]);
+  const installed = await loadInstalledStylePackData();
+  const renderReport = await createStyleRenderBudgetReport({ packs: installed.runtimePacks });
   const packBudget = renderReport.packs.find((pack) => pack.packId === packId);
 
   if (!packBudget) {
@@ -149,7 +148,7 @@ export async function verifyStylesBrowserGate({
   }
 
   const catalogResultCount = projectStyleSearchResultsFromManifestCatalog({
-    catalog: manifestGraph.catalog,
+    catalog: createStylePresetCatalog(installed.packManifests, installed.presetManifests),
     filters: {
       query: catalogQuery,
       limit: 80,

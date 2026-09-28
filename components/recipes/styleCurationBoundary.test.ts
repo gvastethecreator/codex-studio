@@ -1,7 +1,6 @@
 import { createStyleBrowserProcessedData } from './styleBrowserRenderPlan';
 import { describe, expect, it } from 'vitest';
 import { stylesRecipeContextBuilder } from '../../lib/recipeContextBuilders/styles';
-import { loadStyleManifestGraph } from '../../scripts/style-manifest-files';
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import { compileIntentionalStylePlan } from './intentionalStyleCompile';
 import { buildStylePromptText } from './stylePromptText';
@@ -125,73 +124,6 @@ describe('curation end-to-end boundaries', () => {
       });
       expect(plan?.negativePrompt).toBe('');
     }
-  });
-
-  it('new studies compile with explicit pending and published preview boundaries', async () => {
-    const graph = await loadStyleManifestGraph('pack_19');
-    expect(graph.graph.errors).toEqual([]);
-    expect(graph.presetManifests).toHaveLength(20);
-    const packs = composeStyleRuntimePacksFromManifests(graph.packManifests, graph.presetManifests);
-    const compiled = await compileIntentionalStylePlan({
-      slots: [
-        { preset: packs[0].presets[0], packId: 'pack_19', packName: packs[0].name, strength: 0.75 },
-      ],
-      prompt: 'A ceramic pitcher on a table.',
-      attachments: [],
-      mode: 'generate',
-      locks: Intentional.FREE_LAYOUT_LOCKS,
-      variation: Intentional.NO_VARIATION,
-      permissions: { ...Intentional.NO_PERMISSIONS },
-      baseAvoidRules: [],
-    });
-    expect(compiled.issues.filter((issue) => issue.severity === 'error')).toEqual([]);
-    expect(compiled.effectivePrompt).toContain('ceramic pitcher');
-    expect(compiled.effectivePrompt).not.toContain('Dry Cut');
-    const manifest = graph.presetManifests[0];
-    expect(manifest.id).toBe('SP19-001');
-    expect(manifest.assets.defaultImage).toBe('/assets/recipes/styles/defaults/SP19-001.webp');
-    expect(manifest.taxonomy?.hasDefaultImage).toBe(true);
-    const pending = structuredClone(graph.presetManifests);
-    delete pending[0].assets.defaultImage;
-    pending[0].attributes = {
-      ...pending[0].attributes,
-      previewStatus: 'pending',
-      ui: { previewStatus: 'pending' },
-    };
-    pending[0].taxonomy = { ...pending[0].taxonomy, hasDefaultImage: false };
-    expect(validateStyleManifestGraph(graph.packManifests, pending).errors).toEqual([]);
-    const dishonest = structuredClone(pending);
-    dishonest[0].assets.defaultImage = '/fabricated.webp';
-    expect(validateStyleManifestGraph(graph.packManifests, dishonest).errors.join(' ')).toContain(
-      'pending preview',
-    );
-    const inconsistent = structuredClone(pending);
-    inconsistent[0].attributes!.ui = {};
-    expect(
-      validateStyleManifestGraph(graph.packManifests, inconsistent).errors.join(' '),
-    ).toContain('must agree');
-  });
-
-  it('can apply Steampunk to an open design without an unavailable permission control', async () => {
-    const graph = await loadStyleManifestGraph('pack_15');
-    const [pack] = composeStyleRuntimePacksFromManifests(
-      graph.packManifests,
-      graph.presetManifests,
-    );
-    const preset = pack.presets.find((entry) => entry.id === 'SP15-081')!;
-    const compiled = await compileIntentionalStylePlan({
-      slots: [{ preset, packId: pack.id, packName: pack.name, strength: 1 }],
-      prompt: 'A delivery bicycle crossing a bridge.',
-      attachments: [],
-      mode: 'generate',
-      locks: Intentional.FREE_LAYOUT_LOCKS,
-      variation: Intentional.NO_VARIATION,
-      permissions: { ...Intentional.NO_PERMISSIONS },
-      baseAvoidRules: [],
-    });
-    expect(compiled.issues.filter((issue) => issue.severity === 'error')).toEqual([]);
-    expect(compiled.effectivePrompt).toContain('A delivery bicycle crossing a bridge.');
-    expect(compiled.effectivePrompt).toContain(preset.style.subject_treatment);
   });
 
   it('searches new labels without changing canonical grouping keys', () => {

@@ -37,8 +37,8 @@ Studio gets a declarative extension system named Cozy Extensions.
 - A private source needs a GitHub token. The token follows the Provider Secret rules. It never goes into Studio Settings, SQLite, logs or catalog metadata.
 - Installing an extension verifies every sha256, then writes the whole extension in one atomic step to the extension store of the Studio install. A failed or partial download leaves the previous version in place.
 - The backend lists installed extensions and serves their data. The frontend loads styles at runtime through `services/studio-api/`, not from generated modules in the bundle.
-- The current packs become built-in extensions and load through the same path. Studio still ships a small core set with thumbnails, so a first run works offline.
-- The card generator stays in Studio because it needs the Generation Providers. It takes a `--styles-root` that points at an extension source folder.
+- Studio ships no style packs. The user installs packs from the sources. For local authoring, `STUDIO_EXTENSION_SOURCES` points Studio at a folder of built extensions.
+- The card generator lives with the style content. It creates cards through Studio's job API, so the Generation Providers stay in Studio.
 - Third-party extensions are out of scope for now. Before they are allowed, extensions need signing and a trust decision in the UI.
 
 ### Workflow modules
@@ -53,6 +53,7 @@ Every workflow except `default` and `styles` becomes an optional built-in module
 
 ## Consequences
 
-- Style authoring (manifests, specs, briefs, curation reviews and tools) moves to `cozy-styles`. Card images are published only as release assets, never as git blobs. Releases are cut when a pack is ready, not after every card wave.
+- Style authoring (manifests, specs, briefs, curation reviews and tools) moves to the private `cozy-styles-dev` repository. The public `cozy-styles` repository holds only released packs.
+- Card images never go into git. Lossless originals stay in a local backup. The working copies are WebP q85. Approved cards ship as release assets: first as internal releases of `cozy-styles-dev`, later as public releases. A release is cut when a pack is ready, not after every card wave.
 - Tests that count presets or packs change to count installed or built-in extensions.
 - The installer from this ADR is the proof that ADR 0008 waits for. After it works, the app repository can remove style images from its history. That rewrite still needs explicit approval.

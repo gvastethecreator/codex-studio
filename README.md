@@ -125,7 +125,7 @@ Then open:
 
 ## Settings
 
-Run `bun run studio:init` to create local defaults and apply pending SQLite migrations. The command is safe to run again. It does not replace an existing Studio Library. On first run it also builds the built-in style extensions into `.local/extensions/builtin`, because Studio loads styles from installed extensions. Run `bun run extensions:build` again after you change style manifests or cards. Settings → Extensions installs and updates style packs published on GitHub (by default `gvastethecreator/cozy-styles`; add more with `STUDIO_EXTENSION_REMOTE_SOURCES=owner/repo,owner/repo`). For a private repository, set `COZY_STYLES_GITHUB_TOKEN` in `.env.local`. Downloaded packs go to `.local/extensions/installed` and take priority over the built-in ones; removing one brings the built-in version back.
+Run `bun run studio:init` to create local defaults and apply pending SQLite migrations. The command is safe to run again. It does not replace an existing Studio Library. Studio loads styles only from installed extensions. Settings → Extensions installs and updates style packs published on GitHub (by default `gvastethecreator/cozy-styles`; add more with `STUDIO_EXTENSION_REMOTE_SOURCES=owner/repo,owner/repo`). For a private repository, set `COZY_STYLES_GITHUB_TOKEN` in `.env.local`. Downloaded packs go to `.local/extensions/installed`. To use packs built on this machine, point `STUDIO_EXTENSION_SOURCES` at their folder, such as `../cozy-styles-dev/dist/build`.
 
 For manual setup, copy `.env.example` to `.env.local`.
 
@@ -186,7 +186,6 @@ bun run tooling:logs:prune
 - [Troubleshooting](./docs/TROUBLESHOOTING.md)
 - [Portable launch](./PORTABLE.txt)
 - [Electron development shell](./docs/ELECTRON.md)
-- [Style preset authoring](./docs/STYLE_PRESET_AUTHORING.md)
 - [Contributing](./CONTRIBUTING.md)
 - [Security](./SECURITY.md)
 

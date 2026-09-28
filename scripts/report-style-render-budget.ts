@@ -11,10 +11,7 @@ import {
   STYLE_BROWSER_EAGER_SECTION_LIMIT,
   type StyleBrowserRenderMeasurement,
 } from '../components/recipes/styleBrowserRenderPlan';
-import {
-  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
-  loadGeneratedStyleRuntimePack,
-} from '../components/recipes/styleRuntimeData.generated';
+import { loadInstalledStylePackData } from './installed-style-packs';
 import type { StyleRuntimePack } from '../components/recipes/styles/runtimeTypes';
 
 const DEFAULT_GRID_COLUMNS = 4;
@@ -364,19 +361,17 @@ function createFlatAllCardsBudget({
   };
 }
 
+/** Measures the style browser render plan for the given packs, or for the installed packs. */
 export async function createStyleRenderBudgetReport({
   gridColumns = DEFAULT_GRID_COLUMNS,
   containerWidth = DEFAULT_CONTAINER_WIDTH,
+  packs: runtimePacks,
+}: {
+  gridColumns?: number;
+  containerWidth?: number;
+  packs?: StyleRuntimePack[];
 } = {}): Promise<StyleRenderBudgetReport> {
-  const loadedPacks = await Promise.all(
-    GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map(async (summary) => {
-      const pack = await loadGeneratedStyleRuntimePack(summary.id);
-      if (!pack) {
-        throw new Error(`Missing style pack runtime data: ${summary.id}`);
-      }
-      return pack;
-    }),
-  );
+  const loadedPacks = runtimePacks ?? (await loadInstalledStylePackData()).runtimePacks;
   const packs = loadedPacks.map((pack) =>
     createPackBudget({
       pack,

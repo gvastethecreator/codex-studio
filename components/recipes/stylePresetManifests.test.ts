@@ -15,11 +15,6 @@ import {
   toStylePresetManifestRef,
   validateStyleManifestGraph,
 } from './stylePresetManifests';
-import { loadStylePresetCatalog } from './stylePresetCatalogData';
-import {
-  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
-  loadGeneratedStyleRuntimePack,
-} from './styleRuntimeData.generated';
 
 describe('stylePresetManifests', () => {
   it('normalizes legacy style packs into granular preset manifests and lightweight pack manifests', () => {
@@ -634,69 +629,4 @@ describe('stylePresetManifests', () => {
       'Preset preset-a taxonomy tags drift from manifest',
     ]);
   });
-
-  it('loads current repo from granular manifests without legacy runtime data', async () => {
-    const catalog = await loadStylePresetCatalog();
-    const recomposedPacks = composeStyleRuntimePacksFromManifests(
-      catalog.packManifests,
-      catalog.presetManifests,
-    );
-    // The generated runtime still feeds the card generator and extension builds (ADR 0011).
-    const generatedPacks = (
-      await Promise.all(
-        GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map((pack) =>
-          loadGeneratedStyleRuntimePack(pack.id),
-        ),
-      )
-    ).filter((pack): pack is StyleRuntimePack => pack !== null);
-    const runtimeIndex = {
-      packs: generatedPacks,
-      presetById: new Map(
-        generatedPacks.flatMap((pack) =>
-          pack.presets.map((preset) => [preset.id, preset] as const),
-        ),
-      ),
-      presetPackIdById: new Map(
-        generatedPacks.flatMap((pack) =>
-          pack.presets.map((preset) => [preset.id, pack.id] as const),
-        ),
-      ),
-    };
-    const composedPresetCount = runtimeIndex.packs.reduce(
-      (total, pack) => total + pack.presets.length,
-      0,
-    );
-
-    expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(27);
-    expect(catalog.presetManifests).toHaveLength(4258);
-    expect(composedPresetCount).toBe(catalog.presetManifests.length);
-    expect(
-      runtimeIndex.packs.map((pack) => ({
-        id: pack.id,
-        name: pack.name,
-        description: pack.description,
-        presetIds: pack.presets.map((preset) => preset.id).sort(),
-      })),
-    ).toEqual(
-      recomposedPacks.map((pack) => ({
-        id: pack.id,
-        name: pack.name,
-        description: pack.description,
-        presetIds: pack.presets.map((preset) => preset.id).sort(),
-      })),
-    );
-    expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
-    expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
-    expect(runtimeIndex.packs.find((pack) => pack.id === 'pack_23')?.name).toBe(
-      'Medieval Visual Atlas',
-    );
-    expect(runtimeIndex.presetPackIdById.get('SP24-001')).toBe('pack_24');
-    expect(runtimeIndex.presetPackIdById.get('SP25-001')).toBe('pack_25');
-    expect(runtimeIndex.presetPackIdById.get('SP26-001')).toBe('pack_26');
-    expect(runtimeIndex.presetPackIdById.get('SP27-001')).toBe('pack_27');
-    expect(runtimeIndex.presetPackIdById.get('SP28-001')).toBe('pack_28');
-    expect(runtimeIndex.presetPackIdById.get('SP17-125')).toBe('pack_17');
-    expect(runtimeIndex.presetPackIdById.get('SP12-098')).toBe('pack_12');
-  }, 120_000);
 });

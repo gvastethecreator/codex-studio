@@ -222,9 +222,9 @@ const TASKS: Record<string, TaskDefinition> = {
         args: ['run', 'recipes:verify'],
       },
       {
-        label: 'Styles Verify',
+        label: 'Styles Render Verify',
         command: 'bun',
-        args: ['run', 'styles:verify'],
+        args: ['run', 'styles:render:verify'],
       },
       {
         label: 'Docs Check',

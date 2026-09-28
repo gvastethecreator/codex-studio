@@ -56,7 +56,7 @@
     {
       "label": "🎨 Styles",
       "type": "shell",
-      "command": "bun run styles:verify",
+      "command": "bun run styles:render:verify",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"

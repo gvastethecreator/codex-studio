@@ -13,14 +13,9 @@ export default defineConfig({
     port: 17222,
     host: '0.0.0.0',
     watch: {
-      // Local runtime state, logs and full-size style cards are not app source. Watching them
-      // pinned the dev server during card waves and extension builds.
-      ignored: [
-        '**/.local/**',
-        '**/.scratch/**',
-        '**/logs/**',
-        '**/assets/recipes/styles/defaults/**',
-      ],
+      // Local runtime state and logs are not app source. Watching them pinned the dev server
+      // during extension builds.
+      ignored: ['**/.local/**', '**/.scratch/**', '**/logs/**'],
     },
   },
   preview: {
@@ -40,21 +35,6 @@ export default defineConfig({
                   id,
                 ),
             },
-            ...[14, 15].flatMap((pack) =>
-              Array.from({ length: pack === 14 ? 8 : 5 }, (_, batch) => ({
-                name: `archived-style-presets-${pack}-${batch + 1}`,
-                test: (id: string) => {
-                  const match = id.match(
-                    /[\\/]styles[\\/]manifests[\\/]archive[\\/](?:conceptual-refactor-20260923|identity-repair-20260923)[\\/]presets[\\/]pack_(14|15)[\\/][^\\/]+-(\d{3})\.yaml(?:\?.*)?$/,
-                  );
-                  return (
-                    match !== null &&
-                    Number(match[1]) === pack &&
-                    Math.floor((Number(match[2]) - 1) / 20) === batch
-                  );
-                },
-              })),
-            ),
           ],
         },
       },

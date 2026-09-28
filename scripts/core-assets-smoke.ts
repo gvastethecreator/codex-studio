@@ -12,17 +12,6 @@ const expectedTempPrefix = normalize(path.join(os.tmpdir(), 'codex-studio-core-a
 if (!normalize(tempRoot).startsWith(expectedTempPrefix)) {
   throw new Error(`Unexpected core asset smoke path: ${tempRoot}`);
 }
-const coreDefaults = new Set([
-  'assets/recipes/styles/defaults/SP01-001.webp',
-  'assets/recipes/styles/defaults/SP01-005.webp',
-  'assets/recipes/styles/defaults/SP02-001.webp',
-  'assets/recipes/styles/defaults/SP02-003.webp',
-  'assets/recipes/styles/defaults/SP02-004.webp',
-  'assets/recipes/styles/defaults/SP06-082.webp',
-  'assets/recipes/styles/defaults/SP06-095.webp',
-  'assets/recipes/styles/defaults/SP11-047.webp',
-  'assets/recipes/styles/defaults/SP11-050.webp',
-]);
 
 function normalize(filePath: string) {
   return filePath.replaceAll('\\', '/');
@@ -43,11 +32,7 @@ function shouldCopy(source: string) {
   ) {
     return false;
   }
-  if (relative.startsWith('assets/recipes/styles/category-bases/')) return false;
   if (relative.startsWith('assets/recipes/character-lab/sources/')) return false;
-  if (relative.startsWith('assets/recipes/styles/defaults/')) {
-    return coreDefaults.has(relative) || relative === 'assets/recipes/styles/defaults';
-  }
   if (
     relative.startsWith('assets/recipes/character-lab/character-lab-') &&
     !relative.endsWith('-atlas.webp')
