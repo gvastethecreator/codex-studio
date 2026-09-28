@@ -36,6 +36,16 @@ export interface StylePackSummary {
   presetCount: number;
   /** Style browser landing data this pack contributes; Studio sums it across installed packs. */
   landing?: StylePackLanding;
+  /**
+   * Presets copied from other packs, such as Essentials, keyed by the copy's preset id. Studio
+   * hides a copy while its source pack is installed.
+   */
+  copiedFrom?: Record<string, StylePresetSource>;
+}
+
+export interface StylePresetSource {
+  packId: string;
+  presetId: string;
 }
 
 export interface StylePackLandingFolder {
@@ -251,6 +261,19 @@ export function parseExtensionManifest(value: unknown): ExtensionManifestParseRe
     issues.push('stylePack needs id, name, description and presetCount');
   else if (stylePack.landing !== undefined && !isStylePackLanding(stylePack.landing))
     issues.push('stylePack.landing needs imageKeys and collections');
+  else if (
+    stylePack.copiedFrom !== undefined &&
+    !(
+      isRecord(stylePack.copiedFrom) &&
+      Object.values(stylePack.copiedFrom).every(
+        (source) =>
+          isRecord(source) &&
+          typeof source.packId === 'string' &&
+          typeof source.presetId === 'string',
+      )
+    )
+  )
+    issues.push('stylePack.copiedFrom maps preset ids to a source packId and presetId');
 
   if (!Array.isArray(assets)) issues.push('assets must be an array');
   else

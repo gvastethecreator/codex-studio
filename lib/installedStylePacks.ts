@@ -19,12 +19,16 @@ const extensionByPackId = new Map<string, ExtensionManifest>();
 
 const packIdsWithCards = new Set<string>();
 
+// Copied presets, such as Essentials entries, hidden because their source pack is installed.
+const hiddenPresetIdsByPack = new Map<string, Set<string>>();
+
 export function registerInstalledStylePacks(
   extensions: readonly ExtensionManifest[],
   installedLayers: Readonly<Record<string, readonly string[]>> = {},
 ) {
   extensionByPackId.clear();
   packIdsWithCards.clear();
+  hiddenPresetIdsByPack.clear();
   for (const extension of extensions) {
     if (extension.kind !== 'style-pack') continue;
     // Earlier sources win, matching the backend listing.
@@ -33,10 +37,29 @@ export function registerInstalledStylePacks(
     if (installedLayers[extension.id]?.includes('cards'))
       packIdsWithCards.add(extension.stylePack.id);
   }
+  for (const { stylePack } of extensionByPackId.values()) {
+    const hidden = Object.entries(stylePack.copiedFrom ?? {})
+      .filter(
+        ([, source]) => source.packId !== stylePack.id && extensionByPackId.has(source.packId),
+      )
+      .map(([presetId]) => presetId);
+    if (hidden.length > 0) hiddenPresetIdsByPack.set(stylePack.id, new Set(hidden));
+  }
   const summaries = [...extensionByPackId.values()]
-    .map((extension) => extension.stylePack)
+    .map(({ stylePack }) => {
+      const hiddenCount = hiddenPresetIdsByPack.get(stylePack.id)?.size ?? 0;
+      return hiddenCount > 0
+        ? { ...stylePack, presetCount: stylePack.presetCount - hiddenCount }
+        : stylePack;
+    })
+    .filter((summary) => summary.presetCount > 0)
     .sort((a, b) => compareStylePackIdsForDisplay(a.id, b.id));
   INSTALLED_STYLE_PACK_SUMMARIES.splice(0, INSTALLED_STYLE_PACK_SUMMARIES.length, ...summaries);
+}
+
+/** True for a copied preset that Studio hides because its source pack is installed. */
+export function isHiddenStylePreset(packId: string, presetId: string) {
+  return hiddenPresetIdsByPack.get(packId)?.has(presetId) ?? false;
 }
 
 let loading: Promise<void> | null = null;

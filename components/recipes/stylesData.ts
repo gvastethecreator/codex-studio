@@ -3,6 +3,7 @@ import { loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
 import {
   fetchStylePackFile,
   INSTALLED_STYLE_PACK_SUMMARIES,
+  isHiddenStylePreset,
   isInstalledStylePack,
 } from '../../lib/installedStylePacks';
 
@@ -81,8 +82,14 @@ export function createStyleRuntimeRegistry({
 
 const styleRuntimeRegistry = createStyleRuntimeRegistry({
   packIds: () => STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
-  loadPack: async (packId) =>
-    isInstalledStylePack(packId) ? fetchStylePackFile<StyleRuntimePack>(packId, 'runtime') : null,
+  loadPack: async (packId) => {
+    if (!isInstalledStylePack(packId)) return null;
+    const pack = await fetchStylePackFile<StyleRuntimePack>(packId, 'runtime');
+    return {
+      ...pack,
+      presets: pack.presets.filter((preset) => !isHiddenStylePreset(packId, preset.id)),
+    };
+  },
   loadThumbnail: loadStyleThumbnailPack,
 });
 
