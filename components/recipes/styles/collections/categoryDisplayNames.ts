@@ -113,6 +113,8 @@ const CATEGORY_DISPLAY_NAMES: Readonly<Record<string, string>> = {
   'pack_16::5. Sports, Competition & Performance': 'Performance drawing',
   'pack_16::6. Samurai & Medieval': 'Period action',
   'pack_16::7. Horror': 'Horror animation',
+  'pack_16::8. Manga Masters - Shonen & Battle': 'Manga masters: shonen and battle',
+  'pack_16::9. Manga Masters - Seinen, Shojo & Gag': 'Manga masters: seinen, shojo and gag',
   'pack_17::1. Dark Fantasy & Gothic Courts': 'Matte dark fantasy',
   'pack_17::2. Dungeon Zine & Risograph Prints': 'Zine reproduction',
   'pack_17::3. Ink, Tarot & Bestiary Plates': 'Ink & plate formats',
