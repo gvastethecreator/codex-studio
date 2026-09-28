@@ -1,6 +1,7 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import { IconRefresh as RefreshCw } from '@tabler/icons-react';
 import { useCallback, useEffect, useState } from 'react';
+import type { ExtensionManifest } from '../../packages/shared/src/extensions';
 import { WORKFLOW_MODULES, type WorkflowModuleId } from '../../packages/shared/src/workflowModules';
 import {
   getEditableStudioSettings,
@@ -9,9 +10,12 @@ import {
 import {
   installExtension,
   listAvailableExtensions,
+  listInstalledExtensions,
   removeExtension,
   type AvailableExtension,
   type AvailableExtensionSource,
+  type ExtensionOrigin,
+  type InvalidExtensionFolder,
 } from '../../services/studio-api/extensions';
 
 function formatBytes(value: number) {
@@ -19,13 +23,121 @@ function formatBytes(value: number) {
   return `${(value / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+function formatCount(value: number, singular: string, plural: string) {
+  return `${value.toLocaleString('en-US')} ${value === 1 ? singular : plural}`;
+}
+
 function statusLabel(extension: AvailableExtension) {
   if (!extension.installedVersion) return 'Not installed';
   if (extension.updateAvailable)
     return `Update available: ${extension.installedVersion} → ${extension.version}`;
-  return extension.installedFrom === 'builtin'
-    ? `Built in, version ${extension.installedVersion}`
+  return extension.installedFrom === 'local'
+    ? `In a local folder, version ${extension.installedVersion}`
     : `Installed, version ${extension.installedVersion}`;
+}
+
+function errorText(reason: unknown) {
+  return reason instanceof Error ? reason.message : String(reason);
+}
+
+interface InstalledListing {
+  extensions: ExtensionManifest[];
+  installedLayers: Record<string, string[]>;
+  origins: Record<string, ExtensionOrigin>;
+  invalid: InvalidExtensionFolder[];
+}
+
+/** Style packs Studio reads now, from downloads and local folders (ADR 0011). */
+function InstalledPacksSection({
+  listing,
+  busyId,
+  onRemove,
+}: {
+  listing: InstalledListing | null;
+  busyId: string | null;
+  onRemove: (extension: ExtensionManifest) => void;
+}) {
+  if (!listing) {
+    return <p className="text-xs studio-muted">Reading installed packs…</p>;
+  }
+  const { extensions, installedLayers, origins, invalid } = listing;
+  const styleCount = extensions.reduce((total, item) => total + item.stylePack.presetCount, 0);
+  const localFolders = [
+    ...new Set(
+      extensions
+        .map((item) => origins[item.id])
+        .filter((origin): origin is ExtensionOrigin => origin?.from === 'local')
+        .map((origin) => origin.folder),
+    ),
+  ];
+
+  return (
+    <section className="grid gap-2" aria-label="Installed style packs">
+      {extensions.length === 0 ? (
+        <p className="studio-list-row p-3 text-xs">
+          No style packs yet. Styles stays empty until you install a pack from a source below.
+        </p>
+      ) : (
+        <>
+          <p className="text-xs">
+            {formatCount(extensions.length, 'pack', 'packs')} ·{' '}
+            {formatCount(styleCount, 'style', 'styles')}
+          </p>
+          {localFolders.map((folder) => (
+            <p key={folder} className="text-xs studio-muted">
+              Read in place from <span className="font-mono break-all">{folder}</span>. Change or
+              remove these packs in that folder.
+            </p>
+          ))}
+          <ul className="grid gap-1 sm:grid-cols-2">
+            {extensions.map((extension) => {
+              const origin = origins[extension.id];
+              const hasCards = installedLayers[extension.id]?.includes('cards') ?? false;
+              return (
+                <li
+                  key={extension.id}
+                  className="studio-list-row flex items-center justify-between gap-3 px-3 py-2"
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate text-sm font-semibold">{extension.title}</span>
+                    <span className="block text-xs studio-muted">
+                      {formatCount(extension.stylePack.presetCount, 'style', 'styles')} · version{' '}
+                      {extension.version} · {origin?.from === 'download' ? 'Installed' : 'Local'}
+                      {hasCards ? ' · full-quality cards' : ''}
+                    </span>
+                  </span>
+                  {origin?.from === 'download' ? (
+                    <button
+                      type="button"
+                      className="studio-ghost-control shrink-0 px-3"
+                      disabled={busyId !== null}
+                      onClick={() => onRemove(extension)}
+                    >
+                      {busyId === extension.id ? 'Removing…' : 'Remove'}
+                    </button>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )}
+      {invalid.length > 0 ? (
+        <details className="text-xs">
+          <summary className="cursor-pointer text-[color:var(--wb-warning)]">
+            {formatCount(invalid.length, 'folder', 'folders')} could not be read as a pack
+          </summary>
+          <ul className="mt-1 grid gap-1">
+            {invalid.map((item) => (
+              <li key={item.folder}>
+                <span className="font-mono">{item.folder}</span>: {item.issues.join('; ')}
+              </li>
+            ))}
+          </ul>
+        </details>
+      ) : null}
+    </section>
+  );
 }
 
 /** Turns optional workflow modules on or off; the change applies after a reload (ADR 0011). */
@@ -37,9 +149,7 @@ function WorkflowModulesSection({ onChanged }: { onChanged: () => void }) {
   useEffect(() => {
     getEditableStudioSettings()
       .then((settings) => setDisabled(settings.disabledWorkflowModules))
-      .catch((reason: unknown) =>
-        setError(reason instanceof Error ? reason.message : String(reason)),
-      );
+      .catch((reason: unknown) => setError(errorText(reason)));
   }, []);
 
   const toggle = async (id: WorkflowModuleId, enabled: boolean) => {
@@ -52,14 +162,17 @@ function WorkflowModulesSection({ onChanged }: { onChanged: () => void }) {
       setDisabled(saved.disabledWorkflowModules);
       onChanged();
     } catch (reason) {
-      setError(reason instanceof Error ? reason.message : String(reason));
+      setError(errorText(reason));
     } finally {
       setSaving(false);
     }
   };
 
   return (
-    <section className="grid gap-2" aria-label="Workflow modules">
+    <section
+      className="grid gap-2 border-t border-[color:var(--wb-line)] pt-4"
+      aria-label="Workflow modules"
+    >
       <div>
         <h3 className="text-sm font-semibold">Workflow modules</h3>
         <p className="mt-1 text-xs studio-muted">
@@ -95,8 +208,12 @@ function WorkflowModulesSection({ onChanged }: { onChanged: () => void }) {
   );
 }
 
-/** Lists style packs published by remote Extension Sources and installs them (ADR 0011). */
+/**
+ * Shows the style packs Studio reads, installs more from remote Extension Sources and turns
+ * workflow modules on or off (ADR 0011).
+ */
 export function SettingsExtensionsPanel() {
+  const [installed, setInstalled] = useState<InstalledListing | null>(null);
   const [sources, setSources] = useState<AvailableExtensionSource[] | null>(null);
   const [tokenConfigured, setTokenConfigured] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -113,15 +230,18 @@ export function SettingsExtensionsPanel() {
   const refresh = useCallback(async () => {
     setLoading(true);
     setError(null);
-    try {
-      const result = await listAvailableExtensions();
-      setSources(result.sources);
-      setTokenConfigured(result.tokenConfigured);
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : String(reason));
-    } finally {
-      setLoading(false);
+    const [installedResult, availableResult] = await Promise.allSettled([
+      listInstalledExtensions({ refresh: true }),
+      listAvailableExtensions(),
+    ]);
+    if (installedResult.status === 'fulfilled') setInstalled(installedResult.value);
+    if (availableResult.status === 'fulfilled') {
+      setSources(availableResult.value.sources);
+      setTokenConfigured(availableResult.value.tokenConfigured);
     }
+    const failure = [installedResult, availableResult].find((item) => item.status === 'rejected');
+    if (failure?.status === 'rejected') setError(errorText(failure.reason));
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -136,7 +256,7 @@ export function SettingsExtensionsPanel() {
       setNeedsReload(true);
       await refresh();
     } catch (reason) {
-      setError(reason instanceof Error ? reason.message : String(reason));
+      setError(errorText(reason));
     } finally {
       setBusyId(null);
     }
@@ -169,9 +289,7 @@ export function SettingsExtensionsPanel() {
       try {
         await installExtension(source.id, extension.id, bulkWithCards ? ['cards'] : []);
       } catch (reason) {
-        failures.push(
-          `${extension.title}: ${reason instanceof Error ? reason.message : String(reason)}`,
-        );
+        failures.push(`${extension.title}: ${errorText(reason)}`);
       }
     }
     setBulkProgress(null);
@@ -186,10 +304,9 @@ export function SettingsExtensionsPanel() {
     <div className="grid gap-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h3 className="text-sm font-semibold">Style extensions</h3>
+          <h3 className="text-sm font-semibold">Style packs</h3>
           <p className="mt-1 text-xs studio-muted">
-            Install style packs published on GitHub. Studio checks each download before it replaces
-            the installed version.
+            Packs add the styles you pick in Styles and Create.
           </p>
         </div>
         <button
@@ -199,7 +316,7 @@ export function SettingsExtensionsPanel() {
           disabled={loading}
         >
           {loading ? <LoaderCircle size={13} className="animate-spin" /> : <RefreshCw size={13} />}
-          Check sources
+          Check again
         </button>
       </div>
 
@@ -222,191 +339,202 @@ export function SettingsExtensionsPanel() {
         </p>
       ) : null}
 
-      <WorkflowModulesSection onChanged={() => setNeedsReload(true)} />
+      <InstalledPacksSection
+        listing={installed}
+        busyId={busyId}
+        onRemove={(extension) =>
+          void run(extension.id, () => removeExtension(extension.id))
+        }
+      />
 
-      <p className="text-xs studio-muted">
-        Private sources:{' '}
-        {tokenConfigured
-          ? 'a GitHub token is configured.'
-          : 'no GitHub token. Set COZY_STYLES_GITHUB_TOKEN in .env.local to read private repositories.'}
-      </p>
-
-      {installable.length > 0 ? (
-        <div className="studio-list-row grid gap-2 p-3" aria-label="Install several packs">
-          <div className="flex flex-wrap items-center gap-3 text-xs">
-            <span>
-              {selectedItems.length} of {installable.length} packs selected
-            </span>
-            <button
-              type="button"
-              className="studio-ghost-control px-3"
-              disabled={busyId !== null}
-              onClick={() =>
-                setSelected(
-                  selectedItems.length === installable.length
-                    ? new Set()
-                    : new Set(installable.map((item) => item.key)),
-                )
-              }
-            >
-              {selectedItems.length === installable.length ? 'Clear selection' : 'Select all'}
-            </button>
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={bulkWithCards}
-                disabled={busyId !== null}
-                onChange={(event) => setBulkWithCards(event.target.checked)}
-              />
-              Include full-quality cards
-            </label>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              className="studio-ghost-control px-3"
-              disabled={busyId !== null || selectedItems.length === 0}
-              onClick={() => void installMany(selectedItems)}
-            >
-              Install selected
-              {selectedItems.length > 0 ? ` (${formatBytes(bulkBytes(selectedItems))})` : ''}
-            </button>
-            <button
-              type="button"
-              className="studio-ghost-control px-3"
-              disabled={busyId !== null}
-              onClick={() => void installMany(installable)}
-            >
-              Install all {installable.length} ({formatBytes(bulkBytes(installable))})
-            </button>
-          </div>
-          {bulkProgress ? (
-            <p role="status" className="text-xs">
-              {bulkProgress}
-            </p>
-          ) : null}
+      <section
+        className="grid gap-2 border-t border-[color:var(--wb-line)] pt-4"
+        aria-label="Get more packs"
+      >
+        <div>
+          <h3 className="text-sm font-semibold">Get more packs</h3>
+          <p className="mt-1 text-xs studio-muted">
+            Install packs published on GitHub. Studio checks each download before it replaces the
+            installed version.{' '}
+            {tokenConfigured
+              ? 'A GitHub token is set for private sources.'
+              : 'Private sources need COZY_STYLES_GITHUB_TOKEN in .env.local.'}
+          </p>
         </div>
-      ) : null}
 
-      {sources?.map((source) => (
-        <section key={source.id} className="grid gap-2" aria-label={`Source ${source.repo}`}>
-          <h4 className="text-xs font-semibold">{source.repo}</h4>
-          {source.error ? (
-            <p className="text-xs text-[color:var(--wb-danger)]">{source.error}</p>
-          ) : source.extensions.length === 0 ? (
-            <p className="text-xs studio-muted">This source has not published any packs yet.</p>
-          ) : (
-            source.extensions.map((extension) => {
-              const busy = busyId === extension.id;
-              const canInstall = !extension.installedVersion || extension.updateAvailable;
-              const cardsLayer = extension.layers?.find((layer) => layer.name === 'cards');
-              const hasCards = extension.installedLayers.includes('cards');
-              const wantsCards = withCards[extension.id] ?? hasCards;
-              const layers: 'cards'[] = cardsLayer && wantsCards ? ['cards'] : [];
-              const selectKey = `${source.id}::${extension.id}`;
-              const canAddCards =
-                Boolean(cardsLayer) &&
-                extension.installedFrom === 'download' &&
-                !extension.updateAvailable &&
-                !hasCards;
-              return (
-                <div
-                  key={extension.id}
-                  className="studio-list-row flex flex-wrap items-center justify-between gap-3 p-3"
-                >
-                  <div className="flex min-w-0 items-start gap-3">
-                    {canInstall ? (
-                      <input
-                        type="checkbox"
-                        className="mt-1"
-                        aria-label={`Select ${extension.title}`}
-                        checked={selected.has(selectKey)}
-                        disabled={busyId !== null}
-                        onChange={(event) =>
-                          setSelected((current) => {
-                            const next = new Set(current);
-                            if (event.target.checked) next.add(selectKey);
-                            else next.delete(selectKey);
-                            return next;
-                          })
-                        }
-                      />
-                    ) : null}
-                    <div className="min-w-0">
-                      <div className="text-sm font-semibold">{extension.title}</div>
-                      <div className="text-xs studio-muted">
-                        {extension.id} · {extension.version} · {formatBytes(extension.bytes)}
+        {installable.length > 0 ? (
+          <div className="studio-list-row grid gap-2 p-3" aria-label="Install several packs">
+            <div className="flex flex-wrap items-center gap-3 text-xs">
+              <span>
+                {selectedItems.length} of {installable.length} packs selected
+              </span>
+              <button
+                type="button"
+                className="studio-ghost-control px-3"
+                disabled={busyId !== null}
+                onClick={() =>
+                  setSelected(
+                    selectedItems.length === installable.length
+                      ? new Set()
+                      : new Set(installable.map((item) => item.key)),
+                  )
+                }
+              >
+                {selectedItems.length === installable.length ? 'Clear selection' : 'Select all'}
+              </button>
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  checked={bulkWithCards}
+                  disabled={busyId !== null}
+                  onChange={(event) => setBulkWithCards(event.target.checked)}
+                />
+                Include full-quality cards
+              </label>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                className="studio-ghost-control px-3"
+                disabled={busyId !== null || selectedItems.length === 0}
+                onClick={() => void installMany(selectedItems)}
+              >
+                Install selected
+                {selectedItems.length > 0 ? ` (${formatBytes(bulkBytes(selectedItems))})` : ''}
+              </button>
+              <button
+                type="button"
+                className="studio-ghost-control px-3"
+                disabled={busyId !== null}
+                onClick={() => void installMany(installable)}
+              >
+                Install all {installable.length} ({formatBytes(bulkBytes(installable))})
+              </button>
+            </div>
+            {bulkProgress ? (
+              <p role="status" className="text-xs">
+                {bulkProgress}
+              </p>
+            ) : null}
+          </div>
+        ) : null}
+
+        {sources === null && !error ? (
+          <p className="text-xs studio-muted">Checking sources…</p>
+        ) : null}
+
+        {sources?.map((source) => (
+          <section key={source.id} className="grid gap-2" aria-label={`Source ${source.repo}`}>
+            <h4 className="text-xs font-semibold">{source.repo}</h4>
+            {source.error ? (
+              <p className="text-xs text-[color:var(--wb-danger)]">{source.error}</p>
+            ) : source.extensions.length === 0 ? (
+              <p className="text-xs studio-muted">This source has not published any packs yet.</p>
+            ) : (
+              source.extensions.map((extension) => {
+                const busy = busyId === extension.id;
+                const canInstall = !extension.installedVersion || extension.updateAvailable;
+                const cardsLayer = extension.layers?.find((layer) => layer.name === 'cards');
+                const hasCards = extension.installedLayers.includes('cards');
+                const wantsCards = withCards[extension.id] ?? hasCards;
+                const layers: 'cards'[] = cardsLayer && wantsCards ? ['cards'] : [];
+                const selectKey = `${source.id}::${extension.id}`;
+                const canAddCards =
+                  Boolean(cardsLayer) &&
+                  extension.installedFrom === 'download' &&
+                  !extension.updateAvailable &&
+                  !hasCards;
+                return (
+                  <div
+                    key={extension.id}
+                    className="studio-list-row flex flex-wrap items-center justify-between gap-3 p-3"
+                  >
+                    <div className="flex min-w-0 items-start gap-3">
+                      {canInstall ? (
+                        <input
+                          type="checkbox"
+                          className="mt-1"
+                          aria-label={`Select ${extension.title}`}
+                          checked={selected.has(selectKey)}
+                          disabled={busyId !== null}
+                          onChange={(event) =>
+                            setSelected((current) => {
+                              const next = new Set(current);
+                              if (event.target.checked) next.add(selectKey);
+                              else next.delete(selectKey);
+                              return next;
+                            })
+                          }
+                        />
+                      ) : null}
+                      <div className="min-w-0">
+                        <div className="text-sm font-semibold">{extension.title}</div>
+                        <div className="text-xs studio-muted">
+                          {extension.id} · {extension.version} · {formatBytes(extension.bytes)}
+                        </div>
+                        <div className="text-xs">
+                          {statusLabel(extension)}
+                          {hasCards ? ' · full-quality cards installed' : ''}
+                        </div>
+                        {cardsLayer && canInstall ? (
+                          <label className="mt-2 flex items-center gap-2 text-xs">
+                            <input
+                              type="checkbox"
+                              checked={wantsCards}
+                              disabled={busyId !== null}
+                              onChange={(event) =>
+                                setWithCards((current) => ({
+                                  ...current,
+                                  [extension.id]: event.target.checked,
+                                }))
+                              }
+                            />
+                            Include full-quality cards ({formatBytes(cardsLayer.bytes)})
+                          </label>
+                        ) : null}
                       </div>
-                      <div className="text-xs">
-                        {statusLabel(extension)}
-                        {hasCards ? ' · full-quality cards installed' : ''}
-                      </div>
-                      {cardsLayer && canInstall ? (
-                        <label className="mt-2 flex items-center gap-2 text-xs">
-                          <input
-                            type="checkbox"
-                            checked={wantsCards}
-                            disabled={busyId !== null}
-                            onChange={(event) =>
-                              setWithCards((current) => ({
-                                ...current,
-                                [extension.id]: event.target.checked,
-                              }))
-                            }
-                          />
-                          Include full-quality cards ({formatBytes(cardsLayer.bytes)})
-                        </label>
+                    </div>
+                    <div className="flex gap-2">
+                      {canInstall ? (
+                        <button
+                          type="button"
+                          className="studio-ghost-control px-3"
+                          disabled={busyId !== null}
+                          onClick={() =>
+                            void run(extension.id, () =>
+                              installExtension(source.id, extension.id, layers),
+                            )
+                          }
+                        >
+                          {busy ? 'Installing…' : extension.installedVersion ? 'Update' : 'Install'}
+                        </button>
+                      ) : null}
+                      {canAddCards && cardsLayer ? (
+                        <button
+                          type="button"
+                          className="studio-ghost-control px-3"
+                          disabled={busyId !== null}
+                          onClick={() =>
+                            void run(extension.id, () =>
+                              installExtension(source.id, extension.id, ['cards']),
+                            )
+                          }
+                        >
+                          {busy
+                            ? 'Downloading…'
+                            : `Add full cards (${formatBytes(cardsLayer.bytes)})`}
+                        </button>
                       ) : null}
                     </div>
                   </div>
-                  <div className="flex gap-2">
-                    {canInstall ? (
-                      <button
-                        type="button"
-                        className="studio-ghost-control px-3"
-                        disabled={busyId !== null}
-                        onClick={() =>
-                          void run(extension.id, () =>
-                            installExtension(source.id, extension.id, layers),
-                          )
-                        }
-                      >
-                        {busy ? 'Installing…' : extension.installedVersion ? 'Update' : 'Install'}
-                      </button>
-                    ) : null}
-                    {canAddCards && cardsLayer ? (
-                      <button
-                        type="button"
-                        className="studio-ghost-control px-3"
-                        disabled={busyId !== null}
-                        onClick={() =>
-                          void run(extension.id, () =>
-                            installExtension(source.id, extension.id, ['cards']),
-                          )
-                        }
-                      >
-                        {busy
-                          ? 'Downloading…'
-                          : `Add full cards (${formatBytes(cardsLayer.bytes)})`}
-                      </button>
-                    ) : null}
-                    {extension.installedFrom === 'download' ? (
-                      <button
-                        type="button"
-                        className="studio-ghost-control px-3"
-                        disabled={busyId !== null}
-                        onClick={() => void run(extension.id, () => removeExtension(extension.id))}
-                      >
-                        {busy ? 'Removing…' : 'Remove'}
-                      </button>
-                    ) : null}
-                  </div>
-                </div>
-              );
-            })
-          )}
-        </section>
-      ))}
+                );
+              })
+            )}
+          </section>
+        ))}
+      </section>
+
+      <WorkflowModulesSection onChanged={() => setNeedsReload(true)} />
     </div>
   );
 }

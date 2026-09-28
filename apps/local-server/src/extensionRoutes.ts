@@ -48,6 +48,13 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
       installedLayers: Object.fromEntries(
         extensions.map(({ manifest, layers }) => [manifest.id, layers] as const),
       ),
+      // Downloaded packs live in the install folder and can be removed; local ones are read in place.
+      origins: Object.fromEntries(
+        extensions.map(({ manifest, root, source }) => [
+          manifest.id,
+          { from: isInstalledCopy(root) ? 'download' : 'local', folder: source },
+        ]),
+      ),
       invalid: invalid.map(({ folder, issues }) => ({ folder: path.basename(folder), issues })),
     });
   });
@@ -73,7 +80,7 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
                 installedFrom: local
                   ? isInstalledCopy(local.root)
                     ? 'download'
-                    : 'builtin'
+                    : 'local'
                   : null,
                 updateAvailable: local
                   ? compareExtensionVersions(entry.version, local.manifest.version) > 0

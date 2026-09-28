@@ -38,6 +38,7 @@ import {
 } from '../lib/studioSettingsForm';
 import {
   STUDIO_SETTINGS_DOMAIN_TABS,
+  takeRequestedStudioSettingsDomain,
   type StudioSettingsDomainId,
 } from '../lib/studioSettingsDomains';
 import { SettingsFormPanel } from './settings/SettingsFormPanel';
@@ -110,6 +111,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     createInitialStudioSettingsFormState,
   );
   const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('general');
+  useEffect(() => {
+    if (!isOpen) return;
+    const requested = takeRequestedStudioSettingsDomain();
+    if (requested) setActiveDomain(requested);
+  }, [isOpen]);
   const { preferences, savedPreferences, previewPreferences, commitPreferences } = useTheme();
   const [search, setSearch] = useState('');
   const searchItems = [

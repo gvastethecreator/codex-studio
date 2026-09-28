@@ -10,6 +10,7 @@ import {
   IconClipboard as Clipboard,
   IconClipboardCheck as ClipboardCheck,
   IconFolder as Folder,
+  IconPalette as Palette,
   IconPhoto as ImageIcon,
   IconPlayerPlay as Play,
   IconRefresh as RefreshCw,
@@ -46,6 +47,7 @@ import {
   ONBOARDING_GROK_INSTALL_URL,
 } from '../lib/onboardingGrokRow';
 import { StudioApiError } from '../services/studio-api/http';
+import { listInstalledExtensions } from '../services/studio-api/extensions';
 import { runOnboardingHostAction, runOnboardingSetup } from '../services/studio-api/runtime';
 import { createStudioEventStream } from '../services/studioEventSource';
 import {
@@ -89,6 +91,7 @@ interface OnboardingModalProps {
   onRefresh: () => void;
   onStartAppServer: () => void;
   onOpenSettings: () => void;
+  onOpenStylePacks: () => void;
 }
 
 function getToneIcon(tone: CheckTone) {
@@ -138,6 +141,62 @@ function CheckRow({
         <span className="hidden sm:inline">{status}</span>
         <StatusIcon size={16} />
       </div>
+    </div>
+  );
+}
+
+/** Style packs are installed separately (ADR 0011), so a new Studio starts with an empty Styles. */
+function StylePacksRow({ isOpen, onOpen }: { isOpen: boolean; onOpen: () => void }) {
+  const [summary, setSummary] = React.useState<
+    { packs: number; styles: number } | 'loading' | 'error'
+  >('loading');
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const controller = new AbortController();
+    setSummary('loading');
+    listInstalledExtensions({ signal: controller.signal })
+      .then(({ extensions }) =>
+        setSummary({
+          packs: extensions.length,
+          styles: extensions.reduce((total, item) => total + item.stylePack.presetCount, 0),
+        }),
+      )
+      .catch(() => {
+        if (!controller.signal.aborted) setSummary('error');
+      });
+    return () => controller.abort();
+  }, [isOpen]);
+
+  const empty = typeof summary === 'object' && summary.packs === 0;
+  const detail =
+    summary === 'loading'
+      ? 'Checking installed style packs.'
+      : summary === 'error'
+        ? 'Studio could not read your style packs.'
+        : summary.packs === 0
+          ? 'No style packs yet. Add a pack to fill Styles with looks to pick from.'
+          : `${summary.packs.toLocaleString('en-US')} ${summary.packs === 1 ? 'pack' : 'packs'} · ${summary.styles.toLocaleString('en-US')} styles ready to use.`;
+
+  return (
+    <div className="onboarding-connection">
+      <span
+        className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] text-[color:var(--wb-ink)]"
+        aria-hidden="true"
+      >
+        <Palette size={18} />
+      </span>
+      <div className="min-w-0 flex-1">
+        <h3>Style packs</h3>
+        <p>{detail}</p>
+      </div>
+      <button
+        type="button"
+        onClick={onOpen}
+        className={`${empty ? 'studio-primary-control' : 'studio-ghost-control'} onboarding-connections-button px-3`}
+      >
+        {empty ? 'Get style packs' : 'Manage'}
+      </button>
     </div>
   );
 }
@@ -496,6 +555,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   onRefresh,
   onStartAppServer,
   onOpenSettings,
+  onOpenStylePacks,
 }) => {
   const isChecking = status === 'checking';
   const isReady = status === 'ready';
@@ -518,7 +578,12 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const [logLines, setLogLines] = React.useState<OnboardingLogLine[]>([]);
   const lastProbePath = React.useRef<string | null>(null);
   const primaryAction = probe ? resolveOnboardingPrimaryAction(probe.primaryCta) : null;
-  const showLegacyStartAppServer = canStartAppServer && primaryAction?.type !== 'start_app_server';
+  const connectedProvider = probe?.facts.selectedProviderId ?? 'chatgpt';
+  // app-server serves only the Codex connection; ChatGPT and other providers never need it.
+  const showLegacyStartAppServer =
+    connectedProvider === 'codex' &&
+    canStartAppServer &&
+    primaryAction?.type !== 'start_app_server';
   const showInAppSetup = primaryAction?.type === 'in_app_setup';
   const cloudProvider = inAppSetupCloudProvider(libraryPathDraft);
   const canSubmitSetup = inAppSetupCanSubmit({
@@ -544,7 +609,6 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         ? 'error'
         : 'warning';
   const runtimeLabel = isDesktopRuntime ? 'Desktop runtime' : 'Web runtime';
-  const connectedProvider = probe?.facts.selectedProviderId ?? 'chatgpt';
   const headline = isReady ? 'Ready for your next idea.' : 'Make yourself at home.';
   const intro = 'Describe it, add a reference, and make it yours.';
   const setupPrompt = React.useMemo(
@@ -811,6 +875,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       Connections
                     </button>
                   </div>
+                  <StylePacksRow isOpen={isOpen} onOpen={onOpenStylePacks} />
                   <div className="onboarding-diagnostics min-w-0">
                     <details open={showInAppSetup || Boolean(error)}>
                       <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">

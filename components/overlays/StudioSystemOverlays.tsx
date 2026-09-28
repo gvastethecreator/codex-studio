@@ -6,6 +6,7 @@ import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import type { StudioSystemOverlaysProps } from './types';
 import { getMountedSystemSurfaceKeys } from './studioSystemOverlaysUtils';
 import { useRuntimeLogs } from '../../contexts/RuntimeLogContext';
+import { requestStudioSettingsDomain } from '../../lib/studioSettingsDomains';
 
 const DebugPanel = React.lazy(() =>
   import('../DebugPanel').then((m) => ({ default: m.DebugPanel })),
@@ -193,6 +194,11 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               onRefresh={refreshOnboardingHealth}
               onStartAppServer={ensureAppServer}
               onOpenSettings={() => {
+                settingsModule.open();
+                closeOnboarding();
+              }}
+              onOpenStylePacks={() => {
+                requestStudioSettingsDomain('extensions');
                 settingsModule.open();
                 closeOnboarding();
               }}

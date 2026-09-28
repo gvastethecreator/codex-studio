@@ -108,13 +108,13 @@ describe('remote extension install', () => {
     return { routes, installDir };
   }
 
-  it('offers an update over a built-in pack, installs it and removes it again', async () => {
+  it('offers an update over a local pack, installs it and removes it again', async () => {
     const { routes, installDir } = await createRemoteRoutes();
     try {
       const before = await (await routes.request('/available')).json();
       expect(before.sources[0].extensions[0]).toMatchObject({
         installedVersion: '1.0.0',
-        installedFrom: 'builtin',
+        installedFrom: 'local',
         updateAvailable: true,
       });
 
@@ -135,10 +135,13 @@ describe('remote extension install', () => {
         installedLayers: ['cards'],
         updateAvailable: false,
       });
+      const listed = await (await routes.request('/')).json();
+      expect(listed.origins['cozy.pack-14'].from).toBe('download');
 
       expect((await routes.request('/cozy.pack-14', { method: 'DELETE' })).status).toBe(204);
       const restored = await (await routes.request('/')).json();
       expect(restored.extensions[0].version).toBe('1.0.0');
+      expect(restored.origins['cozy.pack-14'].from).toBe('local');
       expect((await routes.request('/cozy.pack-14', { method: 'DELETE' })).status).toBe(409);
     } finally {
       await rm(installDir, { recursive: true, force: true });

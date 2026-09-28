@@ -10,3 +10,17 @@ export const STUDIO_SETTINGS_DOMAIN_TABS = [
 ] as const;
 
 export type StudioSettingsDomainId = (typeof STUDIO_SETTINGS_DOMAIN_TABS)[number]['id'];
+
+let requestedDomain: StudioSettingsDomainId | null = null;
+
+/** Asks Studio Settings to show this domain the next time it opens. */
+export function requestStudioSettingsDomain(domain: StudioSettingsDomainId) {
+  requestedDomain = domain;
+}
+
+/** Returns the requested domain once, then forgets it. */
+export function takeRequestedStudioSettingsDomain() {
+  const domain = requestedDomain;
+  requestedDomain = null;
+  return domain;
+}
