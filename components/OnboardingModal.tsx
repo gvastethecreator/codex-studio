@@ -47,7 +47,11 @@ import {
   ONBOARDING_GROK_INSTALL_URL,
 } from '../lib/onboardingGrokRow';
 import { StudioApiError } from '../services/studio-api/http';
-import { listInstalledExtensions } from '../services/studio-api/extensions';
+import {
+  getDefaultStylePackState,
+  listInstalledExtensions,
+  type DefaultStylePackState,
+} from '../services/studio-api/extensions';
 import { runOnboardingHostAction, runOnboardingSetup } from '../services/studio-api/runtime';
 import { createStudioEventStream } from '../services/studioEventSource';
 import {
@@ -169,14 +173,41 @@ function StylePacksRow({ isOpen, onOpen }: { isOpen: boolean; onOpen: () => void
   }, [isOpen]);
 
   const empty = typeof summary === 'object' && summary.packs === 0;
+  // With no pack yet, Studio installs Essentials in the background; follow its progress.
+  const [defaultPack, setDefaultPack] = React.useState<DefaultStylePackState | null>(null);
+  React.useEffect(() => {
+    if (!isOpen || !empty) return;
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const poll = () =>
+      getDefaultStylePackState()
+        .then((state) => {
+          if (cancelled) return;
+          setDefaultPack(state);
+          if (state.state === 'installing' || state.state === 'idle')
+            timer = setTimeout(poll, 2000);
+        })
+        .catch(() => undefined);
+    void poll();
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [empty, isOpen]);
+  const installing = empty && defaultPack?.state === 'installing';
+  const installed = empty && defaultPack?.state === 'installed';
   const detail =
     summary === 'loading'
       ? 'Checking installed style packs.'
       : summary === 'error'
         ? 'Studio could not read your style packs.'
-        : summary.packs === 0
-          ? 'No style packs yet. Add a pack to fill Styles with looks to pick from.'
-          : `${summary.packs.toLocaleString('en-US')} ${summary.packs === 1 ? 'pack' : 'packs'} · ${summary.styles.toLocaleString('en-US')} styles ready to use.`;
+        : installing
+          ? 'Installing Essentials, a starter set of about a hundred styles.'
+          : installed
+            ? 'Essentials is installed. Reload Studio to start using it.'
+            : summary.packs === 0
+              ? 'No style packs yet. Add a pack to fill Styles with looks to pick from.'
+              : `${summary.packs.toLocaleString('en-US')} ${summary.packs === 1 ? 'pack' : 'packs'} · ${summary.styles.toLocaleString('en-US')} styles ready to use.`;
 
   return (
     <div className="onboarding-connection">
@@ -192,10 +223,11 @@ function StylePacksRow({ isOpen, onOpen }: { isOpen: boolean; onOpen: () => void
       </div>
       <button
         type="button"
-        onClick={onOpen}
+        onClick={installed ? () => window.location.reload() : onOpen}
+        disabled={installing}
         className={`${empty ? 'studio-primary-control' : 'studio-ghost-control'} onboarding-connections-button px-3`}
       >
-        {empty ? 'Get style packs' : 'Manage'}
+        {installing ? 'Installing…' : installed ? 'Reload' : empty ? 'Get style packs' : 'Manage'}
       </button>
     </div>
   );

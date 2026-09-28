@@ -10,6 +10,7 @@ import {
   extensionFileUrl,
   fetchExtensionJson,
   listInstalledExtensions,
+  requestDefaultStylePack,
 } from '../services/studio-api/extensions';
 
 /** Live list of installed style pack summaries in display order; filled in place at startup. */
@@ -92,6 +93,9 @@ export function loadInstalledStylePacks() {
     .then(({ extensions, installedLayers }) => {
       loadError = null;
       registerInstalledStylePacks(extensions, installedLayers);
+      // A new Studio has no style pack yet: the backend installs Essentials once in the background.
+      if (!extensions.some((extension) => extension.kind === 'style-pack'))
+        void requestDefaultStylePack().catch(() => undefined);
     })
     .catch((error: unknown) => {
       loading = null;

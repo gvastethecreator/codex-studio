@@ -61,12 +61,20 @@ describe('extension routes', () => {
 });
 
 describe('remote extension install', () => {
-  async function createRemoteRoutes() {
+  async function createRemoteRoutes({
+    localPack = true,
+    defaultPackId = undefined as string | undefined,
+  } = {}) {
     const builtin = await mkdtemp(path.join(tmpdir(), 'cozy-builtin-'));
     const installDir = await mkdtemp(path.join(tmpdir(), 'cozy-installed-'));
     source = builtin;
-    await mkdir(path.join(builtin, 'cozy.pack-14'));
-    await writeFile(path.join(builtin, 'cozy.pack-14', 'extension.json'), JSON.stringify(manifest));
+    if (localPack) {
+      await mkdir(path.join(builtin, 'cozy.pack-14'));
+      await writeFile(
+        path.join(builtin, 'cozy.pack-14', 'extension.json'),
+        JSON.stringify(manifest),
+      );
+    }
 
     const zip = new JSZip();
     zip.file('extension.json', JSON.stringify({ ...manifest, version: '1.1.0' }));
@@ -104,9 +112,46 @@ describe('remote extension install', () => {
     const routes = createExtensionRoutes({
       store,
       remote: { client, sources: [{ id: 'cozy-styles', repo: 'owner/cozy-styles' }], installDir },
+      defaultPackId,
     });
     return { routes, installDir };
   }
+
+  it('installs the default pack once when Studio has no style pack', async () => {
+    const { routes, installDir } = await createRemoteRoutes({
+      localPack: false,
+      defaultPackId: 'cozy.pack-14',
+    });
+    try {
+      const started = await routes.request('/default-pack', { method: 'POST' });
+      expect(await started.json()).toEqual({ state: 'installing' });
+      let state = { state: 'installing' };
+      for (let attempt = 0; attempt < 50 && state.state === 'installing'; attempt += 1) {
+        await new Promise((resolve) => setTimeout(resolve, 20));
+        state = await (await routes.request('/default-pack')).json();
+      }
+      expect(state).toEqual({ state: 'installed' });
+      const listed = await (await routes.request('/')).json();
+      expect(listed.origins['cozy.pack-14'].from).toBe('download');
+
+      // A removed default pack stays removed.
+      await routes.request('/cozy.pack-14', { method: 'DELETE' });
+      const again = await routes.request('/default-pack', { method: 'POST' });
+      expect(await again.json()).toEqual({ state: 'skipped' });
+    } finally {
+      await rm(installDir, { recursive: true, force: true });
+    }
+  });
+
+  it('does not install the default pack when a style pack is present', async () => {
+    const { routes, installDir } = await createRemoteRoutes({ defaultPackId: 'cozy.pack-14' });
+    try {
+      const response = await routes.request('/default-pack', { method: 'POST' });
+      expect(await response.json()).toEqual({ state: 'skipped' });
+    } finally {
+      await rm(installDir, { recursive: true, force: true });
+    }
+  });
 
   it('offers an update over a local pack, installs it and removes it again', async () => {
     const { routes, installDir } = await createRemoteRoutes();

@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
-import { rm } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import {
   compareExtensionVersions,
@@ -22,7 +23,19 @@ interface ExtensionRoutesDependencies {
     sources: RemoteExtensionSource[];
     installDir: string;
   };
+  /**
+   * Extension id Studio installs once when no style pack is present, such as `cozy.pack-00`
+   * (Essentials). Omitted where Studio should not install anything by itself.
+   */
+  defaultPackId?: string;
 }
+
+export type DefaultPackState =
+  | { state: 'idle' | 'installing' | 'installed' | 'skipped' }
+  | { state: 'unavailable' | 'failed'; error: string };
+
+/** Marks that the default pack was installed or declined, so removing it is not undone. */
+const DEFAULT_PACK_MARKER = '.default-pack-offered';
 
 const CONTENT_TYPES: Record<string, string> = {
   '.json': 'application/json; charset=utf-8',
@@ -36,7 +49,11 @@ function errorMessage(error: unknown) {
 }
 
 /** Lists, serves, installs and removes Cozy Extensions (ADR 0011). */
-export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependencies) {
+export function createExtensionRoutes({
+  store,
+  remote,
+  defaultPackId,
+}: ExtensionRoutesDependencies) {
   const app = new Hono();
   const isInstalledCopy = (root: string) =>
     remote !== undefined && path.dirname(path.resolve(root)) === path.resolve(remote.installDir);
@@ -93,6 +110,40 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
     return c.json({ tokenConfigured: remote.client.tokenConfigured, sources });
   });
 
+  /** Downloads, verifies and installs one published extension with the requested layers. */
+  const installFromSource = async (
+    remoteSources: NonNullable<typeof remote>,
+    source: RemoteExtensionSource,
+    id: string,
+    requestedLayers: ExtensionLayerName[],
+  ) => {
+    const entry = (await remoteSources.client.fetchIndex(source)).extensions.find(
+      (item) => item.id === id,
+    );
+    if (!entry) return null;
+    const archive = await remoteSources.client.downloadAsset(source, entry.tag, entry.archive);
+    const manifest = await installExtensionArchive({
+      archive,
+      entry,
+      installDir: remoteSources.installDir,
+    });
+    const extensionRoot = path.join(remoteSources.installDir, entry.id);
+    const installedLayers: string[] = [];
+    for (const name of requestedLayers) {
+      const layer = entry.layers?.find((item) => item.name === name);
+      if (!layer) continue;
+      const layerArchive = await remoteSources.client.downloadAsset(
+        source,
+        entry.tag,
+        layer.archive,
+      );
+      await installExtensionLayer({ archive: layerArchive, layer, extensionRoot });
+      installedLayers.push(name);
+    }
+    await store.list({ refresh: true });
+    return { manifest, installedLayers };
+  };
+
   app.post('/install', async (c) => {
     if (!remote) return c.json({ error: 'Remote extension sources are not configured' }, 404);
     const body = (await c.req.json().catch(() => null)) as {
@@ -109,31 +160,58 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
     if (!source || typeof body?.id !== 'string')
       return c.json({ error: 'Request needs a known sourceId and an extension id' }, 400);
     try {
-      const entry = (await remote.client.fetchIndex(source)).extensions.find(
-        (item) => item.id === body.id,
-      );
-      if (!entry) return c.json({ error: `${source.repo} does not publish ${body.id}` }, 404);
-      const archive = await remote.client.downloadAsset(source, entry.tag, entry.archive);
-      const manifest = await installExtensionArchive({
-        archive,
-        entry,
-        installDir: remote.installDir,
-      });
-      const extensionRoot = path.join(remote.installDir, entry.id);
-      const installedLayers: string[] = [];
-      for (const name of requestedLayers) {
-        const layer = entry.layers?.find((item) => item.name === name);
-        if (!layer) continue;
-        const layerArchive = await remote.client.downloadAsset(source, entry.tag, layer.archive);
-        await installExtensionLayer({ archive: layerArchive, layer, extensionRoot });
-        installedLayers.push(name);
-      }
-      await store.list({ refresh: true });
-      return c.json({ extension: manifest, installedLayers });
+      const result = await installFromSource(remote, source, body.id, requestedLayers);
+      if (!result) return c.json({ error: `${source.repo} does not publish ${body.id}` }, 404);
+      return c.json({ extension: result.manifest, installedLayers: result.installedLayers });
     } catch (error) {
       const status = error instanceof ExtensionInstallError ? 422 : 502;
       return c.json({ error: errorMessage(error) }, status);
     }
+  });
+
+  let defaultPack: DefaultPackState = { state: 'idle' };
+  const markerPath = remote ? path.join(remote.installDir, DEFAULT_PACK_MARKER) : null;
+  const markDefaultPackOffered = async () => {
+    if (!markerPath) return;
+    await mkdir(path.dirname(markerPath), { recursive: true });
+    await writeFile(
+      markerPath,
+      `${new Date().toISOString()}
+`,
+      'utf8',
+    );
+  };
+
+  const installDefaultPack = async (remoteSources: NonNullable<typeof remote>, id: string) => {
+    try {
+      for (const source of remoteSources.sources) {
+        const result = await installFromSource(remoteSources, source, id, []);
+        if (!result) continue;
+        await markDefaultPackOffered();
+        defaultPack = { state: 'installed' };
+        return;
+      }
+      defaultPack = { state: 'unavailable', error: `No source publishes ${id} yet.` };
+    } catch (error) {
+      defaultPack = { state: 'failed', error: errorMessage(error) };
+    }
+  };
+
+  app.get('/default-pack', (c) => c.json(defaultPack));
+
+  // Installs the default pack once when Studio has no style pack. Removing it later is respected.
+  app.post('/default-pack', async (c) => {
+    if (!remote || !defaultPackId || !markerPath) return c.json({ state: 'skipped' });
+    if (defaultPack.state === 'installing') return c.json(defaultPack);
+    if (existsSync(markerPath)) return c.json((defaultPack = { state: 'skipped' }));
+    const { extensions } = await store.list();
+    if (extensions.some(({ manifest }) => manifest.kind === 'style-pack')) {
+      await markDefaultPackOffered();
+      return c.json((defaultPack = { state: 'skipped' }));
+    }
+    defaultPack = { state: 'installing' };
+    void installDefaultPack(remote, defaultPackId);
+    return c.json(defaultPack);
   });
 
   app.delete('/:id', async (c) => {

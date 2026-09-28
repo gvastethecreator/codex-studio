@@ -352,6 +352,7 @@ export async function createStudioApp(
         sources: resolveRemoteExtensionSources(),
         installDir: resolveExtensionInstallDir(),
       },
+      defaultPackId: process.env.STUDIO_DEFAULT_STYLE_PACK?.trim() || 'cozy.pack-00',
     }),
   );
   app.route(

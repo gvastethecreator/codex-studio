@@ -77,3 +77,16 @@ export async function installExtension(sourceId: string, id: string, layers: 'ca
 export async function removeExtension(id: string) {
   return request<void>(`/api/extensions/${encodeURIComponent(id)}`, { method: 'DELETE' });
 }
+
+export type DefaultStylePackState =
+  | { state: 'idle' | 'installing' | 'installed' | 'skipped' }
+  | { state: 'unavailable' | 'failed'; error: string };
+
+/** Asks the backend to install the default style pack once when Studio has none. */
+export async function requestDefaultStylePack() {
+  return request<DefaultStylePackState>('/api/extensions/default-pack', { method: 'POST' });
+}
+
+export async function getDefaultStylePackState() {
+  return request<DefaultStylePackState>('/api/extensions/default-pack');
+}
