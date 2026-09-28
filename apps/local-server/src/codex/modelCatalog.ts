@@ -1,3 +1,6 @@
+import { isCodexHttpCredentialReady } from '../auth/tokens';
+import { readChatgptHttpModels } from './chatgptAccountHttp';
+import { isAppServerRunning } from './processSupervisor';
 import { CodexRpcClient } from './rpcClient';
 import type {
   CodexAuthMode,
@@ -227,7 +230,29 @@ function buildFallbackCatalog(error: unknown): CodexModelCatalogResponse {
   };
 }
 
+/**
+ * A running app-server answers first. Otherwise the Studio ChatGPT sign-in lists models over HTTP,
+ * and app-server starts only when that is not possible.
+ */
 export async function getCodexModelCatalog(): Promise<CodexModelCatalogResponse> {
+  if (!isAppServerRunning() && isCodexHttpCredentialReady()) {
+    try {
+      const models = filterSelectableCodexModels(await readChatgptHttpModels());
+      if (models.length > 0) {
+        return {
+          models,
+          authMode: 'chatgpt',
+          planType: null,
+          recommendedDefaultModel: pickRecommendedModel(models),
+          source: 'chatgpt-http',
+          fetchedAt: now(),
+          error: null,
+        };
+      }
+    } catch {
+      // Fall through to app-server.
+    }
+  }
   return createCodexModelCatalogReader()();
 }
 

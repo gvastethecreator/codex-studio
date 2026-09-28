@@ -112,7 +112,8 @@ export interface CodexModelCatalogResponse {
   authMode: CodexAuthMode;
   planType: string | null;
   recommendedDefaultModel: string | null;
-  source: 'app-server' | 'fallback';
+  /** `chatgpt-http` reads the Studio ChatGPT sign-in over HTTP, without codex app-server. */
+  source: 'app-server' | 'chatgpt-http' | 'fallback';
   fetchedAt: string;
   error: string | null;
 }
@@ -142,7 +143,8 @@ export interface LocalCodexSessionResponse {
   authMode: CodexAuthMode;
   planType: string | null;
   usage: CodexUsageSnapshot | null;
-  source: 'app-server' | 'fallback';
+  /** `chatgpt-http` reads the Studio ChatGPT sign-in over HTTP, without codex app-server. */
+  source: 'app-server' | 'chatgpt-http' | 'fallback';
   fetchedAt: string;
   error: string | null;
   authLabel: string;

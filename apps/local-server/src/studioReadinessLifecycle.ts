@@ -4,6 +4,7 @@ import type {
   StudioReadinessEnvelope,
   StudioReadinessRefreshRequest,
 } from '../../../packages/shared/src';
+import { readStudioChatgptSession } from './codex/chatgptAccountHttp';
 import { refreshCodexRuntimeDoctor } from './codexRuntimeDoctor';
 
 interface StudioReadinessLifecycleDependencies {
@@ -11,6 +12,8 @@ interface StudioReadinessLifecycleDependencies {
   maxAgeMs?: number;
   probeCodexRuntime?: () => Promise<CodexRuntimeDoctorReport>;
   readLocalCodexSession: () => Promise<LocalCodexSessionResponse>;
+  /** Reads the Studio ChatGPT sign-in over HTTP; null when there is none. Never starts app-server. */
+  readChatgptSession?: () => Promise<LocalCodexSessionResponse | null>;
   isAppServerRunning: () => boolean;
 }
 
@@ -31,6 +34,7 @@ export function createStudioReadinessLifecycle({
   maxAgeMs = 30_000,
   probeCodexRuntime = refreshCodexRuntimeDoctor,
   readLocalCodexSession,
+  readChatgptSession = readStudioChatgptSession,
   isAppServerRunning,
 }: StudioReadinessLifecycleDependencies): StudioReadinessLifecycle {
   let disposed = false;
@@ -68,7 +72,9 @@ export function createStudioReadinessLifecycle({
       try {
         const codexRuntime = await probeCodexRuntime();
         const localCodexSession =
-          codexRuntime.canRunJobs && isAppServerRunning() ? await readLocalCodexSession() : null;
+          codexRuntime.canRunJobs && isAppServerRunning()
+            ? await readLocalCodexSession()
+            : await readChatgptSession();
         if (disposed) throw new Error('Studio Readiness lifecycle is disposed');
         const observedAt = now().toISOString();
         expiresAt = now().getTime() + maxAgeMs;

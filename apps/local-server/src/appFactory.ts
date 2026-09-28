@@ -59,7 +59,7 @@ import {
   stopAppServer,
 } from './codex/processSupervisor';
 import { getCodexModelCatalog } from './codex/modelCatalog';
-import { getLocalCodexSession } from './codex/localCodexSession';
+import { getAccountSession } from './codex/chatgptAccountHttp';
 import { embedMetadata } from './metadataEmbedder';
 import { getJobDetail } from './jobDetails';
 import {
@@ -200,7 +200,7 @@ export async function createStudioApp(
 ): Promise<StudioAppInstance> {
   const initResult = options.runInit === false ? null : initStudio();
   const app = new Hono();
-  const readLocalCodexSession = options.dependencies?.readLocalCodexSession ?? getLocalCodexSession;
+  const readLocalCodexSession = options.dependencies?.readLocalCodexSession ?? getAccountSession;
   const readCodexModelCatalog = options.dependencies?.readCodexModelCatalog ?? getCodexModelCatalog;
   const readCodexRuntimeDoctorFn =
     options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;

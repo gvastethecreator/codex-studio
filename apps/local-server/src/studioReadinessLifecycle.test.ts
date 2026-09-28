@@ -63,6 +63,34 @@ describe('Studio Readiness lifecycle', () => {
     expect(readLocalCodexSession).not.toHaveBeenCalled();
   });
 
+  it('reads the Studio ChatGPT sign-in over HTTP when app-server is not running', async () => {
+    const readLocalCodexSession = vi.fn();
+    const httpSession = {
+      authMode: 'chatgpt' as const,
+      planType: 'pro',
+      usage: null,
+      source: 'chatgpt-http' as const,
+      fetchedAt: '2026-07-10T00:00:00.000Z',
+      error: null,
+      authLabel: 'ChatGPT login',
+      state: 'ready' as const,
+      reason: null,
+      isChatgptLogin: true,
+      isSupportedAuthMode: true,
+      canRunLocalJobs: false,
+    };
+    const lifecycle = createStudioReadinessLifecycle({
+      isAppServerRunning: () => false,
+      probeCodexRuntime: async () => readyReport,
+      readLocalCodexSession,
+      readChatgptSession: async () => httpSession,
+    });
+
+    const snapshot = await lifecycle.refresh({ reason: 'manual' });
+    expect(readLocalCodexSession).not.toHaveBeenCalled();
+    expect(snapshot.localCodexSession).toBe(httpSession);
+  });
+
   it('uses the fresh cache for passive refreshes and only probes again when forced', async () => {
     const probeCodexRuntime = vi
       .fn<() => Promise<CodexRuntimeDoctorReport>>()
