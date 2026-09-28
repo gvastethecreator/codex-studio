@@ -1,3 +1,4 @@
+import { useDefaultStylePack } from '../hooks/useDefaultStylePack';
 import { useDialogFocus } from '../hooks/useDialogFocus';
 import { CozyMascot, CozyLoader } from './CozyMascot';
 import React from 'react';
@@ -47,11 +48,7 @@ import {
   ONBOARDING_GROK_INSTALL_URL,
 } from '../lib/onboardingGrokRow';
 import { StudioApiError } from '../services/studio-api/http';
-import {
-  getDefaultStylePackState,
-  listInstalledExtensions,
-  type DefaultStylePackState,
-} from '../services/studio-api/extensions';
+import { listInstalledExtensions } from '../services/studio-api/extensions';
 import { runOnboardingHostAction, runOnboardingSetup } from '../services/studio-api/runtime';
 import { createStudioEventStream } from '../services/studioEventSource';
 import {
@@ -174,26 +171,7 @@ function StylePacksRow({ isOpen, onOpen }: { isOpen: boolean; onOpen: () => void
 
   const empty = typeof summary === 'object' && summary.packs === 0;
   // With no pack yet, Studio installs Essentials in the background; follow its progress.
-  const [defaultPack, setDefaultPack] = React.useState<DefaultStylePackState | null>(null);
-  React.useEffect(() => {
-    if (!isOpen || !empty) return;
-    let cancelled = false;
-    let timer: ReturnType<typeof setTimeout> | undefined;
-    const poll = () =>
-      getDefaultStylePackState()
-        .then((state) => {
-          if (cancelled) return;
-          setDefaultPack(state);
-          if (state.state === 'installing' || state.state === 'idle')
-            timer = setTimeout(poll, 2000);
-        })
-        .catch(() => undefined);
-    void poll();
-    return () => {
-      cancelled = true;
-      clearTimeout(timer);
-    };
-  }, [empty, isOpen]);
+  const defaultPack = useDefaultStylePack(isOpen && empty);
   const installing = empty && defaultPack?.state === 'installing';
   const installed = empty && defaultPack?.state === 'installed';
   const detail =

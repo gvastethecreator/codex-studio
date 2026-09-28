@@ -59,6 +59,7 @@ import type {
 } from './stylePresetManifests';
 import { DEFAULT_SELECTED_STYLE_STRENGTH, type SelectedStyleSlot } from './styleLayerComposer';
 import { StyleBrowseSwitch } from './StyleBrowseSwitch';
+import { NoStylePacksNotice } from './NoStylePacksNotice';
 
 export interface CompactStyleSelectorProps {
   selectedStyles: SelectedStyleSlot[];
@@ -690,6 +691,8 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 <strong>Could not load styles</strong>
                 <p>Open the menu again to retry, or browse the full catalog.</p>
               </div>
+            ) : !query.trim() && route.view === 'packs' && packs.length === 0 ? (
+              <NoStylePacksNotice compact />
             ) : !query.trim() && route.view === 'packs' ? (
               packs.map((pack) => (
                 <div key={pack.id} className="cs-option-wrap">

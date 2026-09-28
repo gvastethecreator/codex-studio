@@ -1,6 +1,7 @@
 import type React from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Attachment, AspectRatio } from '../types';
+import { STUDIO_OPEN_SETTINGS_EVENT } from '../lib/studioSettingsDomains';
 import { startViewTransition } from '../utils/transitionUtils';
 
 interface UseStudioViewStateProps {
@@ -89,6 +90,12 @@ export function useStudioViewState({
     settingsOpenRef.current = false;
     startViewTransition(() => setIsSettingsModalOpen(false));
   }, []);
+
+  // Surfaces far from this state, such as the empty style catalog, open settings by event.
+  useEffect(() => {
+    window.addEventListener(STUDIO_OPEN_SETTINGS_EVENT, openSettings);
+    return () => window.removeEventListener(STUDIO_OPEN_SETTINGS_EVENT, openSettings);
+  }, [openSettings]);
 
   useEffect(() => {
     const closeBeforeSettingsMounts = (event: KeyboardEvent) => {

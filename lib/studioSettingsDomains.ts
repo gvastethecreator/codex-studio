@@ -24,3 +24,11 @@ export function takeRequestedStudioSettingsDomain() {
   requestedDomain = null;
   return domain;
 }
+
+/** Window event that opens Studio Settings from surfaces far from the settings state. */
+export const STUDIO_OPEN_SETTINGS_EVENT = 'studio:open-settings';
+
+export function openStudioSettings(domain?: StudioSettingsDomainId) {
+  if (domain) requestStudioSettingsDomain(domain);
+  window.dispatchEvent(new Event(STUDIO_OPEN_SETTINGS_EVENT));
+}

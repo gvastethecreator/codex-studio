@@ -34,6 +34,7 @@ import {
   getStyleCollectionTheme,
 } from './styleNavigationPresentation';
 import type { StyleTheme } from './StyleRecipeNavigationPanel';
+import { NoStylePacksNotice } from './NoStylePacksNotice';
 
 const FAVORITES_PACK_ID = 'favorites';
 const STYLE_FOLDER_EASE = 'power3.out';
@@ -1063,6 +1064,7 @@ export function StyleCollectionsLandingSurface({
             )}
           </select>
         </label>
+        {STYLE_RUNTIME_PACK_SUMMARIES.length === 0 ? <NoStylePacksNotice /> : null}
       </div>
 
       <div
