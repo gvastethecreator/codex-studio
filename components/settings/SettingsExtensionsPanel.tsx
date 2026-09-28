@@ -1,6 +1,11 @@
 import { CozyLoader as LoaderCircle } from '../CozyMascot';
 import { IconRefresh as RefreshCw } from '@tabler/icons-react';
 import { useCallback, useEffect, useState } from 'react';
+import { WORKFLOW_MODULES, type WorkflowModuleId } from '../../packages/shared/src/workflowModules';
+import {
+  getEditableStudioSettings,
+  updateEditableStudioSettings,
+} from '../../services/studio-api/settings';
 import {
   installExtension,
   listAvailableExtensions,
@@ -21,6 +26,73 @@ function statusLabel(extension: AvailableExtension) {
   return extension.installedFrom === 'builtin'
     ? `Built in, version ${extension.installedVersion}`
     : `Installed, version ${extension.installedVersion}`;
+}
+
+/** Turns optional workflow modules on or off; the change applies after a reload (ADR 0011). */
+function WorkflowModulesSection({ onChanged }: { onChanged: () => void }) {
+  const [disabled, setDisabled] = useState<WorkflowModuleId[] | null>(null);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    getEditableStudioSettings()
+      .then((settings) => setDisabled(settings.disabledWorkflowModules))
+      .catch((reason: unknown) =>
+        setError(reason instanceof Error ? reason.message : String(reason)),
+      );
+  }, []);
+
+  const toggle = async (id: WorkflowModuleId, enabled: boolean) => {
+    if (!disabled) return;
+    const next = enabled ? disabled.filter((item) => item !== id) : [...disabled, id];
+    setSaving(true);
+    setError(null);
+    try {
+      const saved = await updateEditableStudioSettings({ disabledWorkflowModules: next });
+      setDisabled(saved.disabledWorkflowModules);
+      onChanged();
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : String(reason));
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <section className="grid gap-2" aria-label="Workflow modules">
+      <div>
+        <h3 className="text-sm font-semibold">Workflow modules</h3>
+        <p className="mt-1 text-xs studio-muted">
+          Create and Styles are always on. A module you turn off disappears from navigation, loads
+          no code and accepts no new jobs. Its jobs and images stay in your library.
+        </p>
+      </div>
+      {error ? (
+        <p role="alert" className="text-xs text-[color:var(--wb-danger)]">
+          {error}
+        </p>
+      ) : null}
+      {WORKFLOW_MODULES.map((workflowModule) => (
+        <label
+          key={workflowModule.id}
+          className="studio-list-row flex items-start justify-between gap-3 p-3"
+        >
+          <span className="min-w-0">
+            <span className="block text-sm font-semibold">{workflowModule.title}</span>
+            <span className="block text-xs studio-muted">{workflowModule.description}</span>
+          </span>
+          <input
+            type="checkbox"
+            className="mt-1"
+            aria-label={`${workflowModule.title} on`}
+            checked={disabled ? !disabled.includes(workflowModule.id) : true}
+            disabled={!disabled || saving}
+            onChange={(event) => void toggle(workflowModule.id, event.target.checked)}
+          />
+        </label>
+      ))}
+    </section>
+  );
 }
 
 /** Lists style packs published by remote Extension Sources and installs them (ADR 0011). */
@@ -133,7 +205,7 @@ export function SettingsExtensionsPanel() {
 
       {needsReload ? (
         <div role="status" className="studio-list-row flex items-center justify-between gap-3 p-3">
-          <span className="text-xs">Reload Studio to use the changed style packs.</span>
+          <span className="text-xs">Reload Studio to apply your changes.</span>
           <button
             type="button"
             className="studio-ghost-control px-3"
@@ -149,6 +221,8 @@ export function SettingsExtensionsPanel() {
           {error}
         </p>
       ) : null}
+
+      <WorkflowModulesSection onChanged={() => setNeedsReload(true)} />
 
       <p className="text-xs studio-muted">
         Private sources:{' '}

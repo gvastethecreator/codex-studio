@@ -7,6 +7,7 @@ import {
   groupRecipeDiscoveryEntries,
 } from './recipeDiscoveryProjection';
 import { RECIPE_DISCOVERY_CATALOG } from './recipeCatalog';
+import { registerDisabledWorkflowModules } from './workflowModuleState';
 
 describe('recipeDiscoveryProjection', () => {
   it('keeps aliases as discovery entries without creating recipe modules', () => {
@@ -59,5 +60,17 @@ describe('recipeDiscoveryProjection', () => {
     expect(
       searchRecipeDiscoveryProjection({ query: 'Camera & Story' }).map((entry) => entry.id),
     ).toEqual(expect.arrayContaining(['camera', 'cinematic', 'timeline']));
+  });
+
+  it('hides every workflow of a turned-off module, aliases included', () => {
+    registerDisabledWorkflowModules(['character-lab', 'timeline']);
+    try {
+      const ids = createRecipesGridProjection().entries.map((entry) => entry.id);
+      expect(ids).not.toContain('timeline');
+      expect(ids.some((id) => id.startsWith('character-') || id === 'character-lab')).toBe(false);
+      expect(ids).toEqual(expect.arrayContaining(['styles', 'character', 'camera']));
+    } finally {
+      registerDisabledWorkflowModules([]);
+    }
   });
 });

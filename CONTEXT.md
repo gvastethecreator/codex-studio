@@ -155,6 +155,10 @@ _Avoid_: plugin, runtime module, code extension
 Local folder or GitHub repository release feed where Studio finds Cozy Extensions. Many sources can be active at once.
 _Avoid_: marketplace, registry server, pack path
 
+**Workflow Module**:
+Optional built-in workflow, such as Character Lab or Sprite Atlas, that the user can turn off in Settings, Extensions. Create and Styles are not modules. A turned-off module hides its workflows, loads none of its code, closes its API routes and rejects its new jobs; its jobs and images stay in the Studio Library.
+_Avoid_: plugin, extension, feature flag
+
 **Codex Turn**:
 One `codex app-server` turn executed by the backend for a local image task.
 _Avoid_: generation step, rpc call

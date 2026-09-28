@@ -18,6 +18,7 @@ describe('studioSettings', () => {
       autoDetectOutputSources: true,
       commandCenterCompactMode: false,
       intentionalStylesV1: false,
+      disabledWorkflowModules: [],
       showWorkspaceHistoryInCarousel: true,
       preferredLibraryId: null,
       preferredOutputPath: null,
@@ -41,6 +42,7 @@ describe('studioSettings', () => {
     const patch = sanitizeEditableStudioSettingsPatch({
       defaultProviderId: 'fal',
       apiKey: 'must-not-persist',
+      disabledWorkflowModules: ['timeline', 'not-a-module', 'remaster', 'timeline'],
       providerDefaults: {
         fal: {
           providerId: 'fal',
@@ -52,6 +54,7 @@ describe('studioSettings', () => {
 
     expect(patch).toEqual({
       defaultProviderId: 'fal',
+      disabledWorkflowModules: ['remaster', 'timeline'],
       providerDefaults: {
         fal: {
           providerId: 'fal',

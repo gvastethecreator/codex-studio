@@ -1,5 +1,6 @@
 import React from 'react';
 import type { RecipeId } from '../types';
+import { isRecipeEnabled } from './workflowModuleState';
 import type { CameraAnglesRecipe as CameraAnglesRecipeComponent } from '../components/recipes/CameraAnglesRecipe';
 import type { CharacterLabRecipe as CharacterLabRecipeComponent } from '../components/recipes/CharacterLabRecipe';
 import type { CharacterSheetRecipe as CharacterSheetRecipeComponent } from '../components/recipes/CharacterSheetRecipe';
@@ -98,6 +99,7 @@ export const CameraAnglesRecipe = modules.camera.Component;
 export const TimelineRecipe = modules.timeline.Component;
 export const AnimationSequenceRecipe = modules['animation-sequence'].Component;
 
+/** Loads a recipe's code ahead of time; a turned-off workflow module loads nothing. */
 export function preloadRecipeComponent(recipeId: RecipeId | null) {
-  return recipeId ? modules[recipeId].load() : Promise.resolve();
+  return recipeId && isRecipeEnabled(recipeId) ? modules[recipeId].load() : Promise.resolve();
 }

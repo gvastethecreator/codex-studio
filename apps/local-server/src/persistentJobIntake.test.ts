@@ -374,6 +374,47 @@ describe('persistentJobIntake', () => {
     expect(processReferences).not.toHaveBeenCalled();
   });
 
+  it('rejects new jobs of a turned-off workflow module before reference persistence', async () => {
+    const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
+    const intake = createPersistentJobIntake({
+      createJobId: () => 'job-new',
+      createJob: () => createJob(),
+      updateJobFinalPrompt: () => null,
+      processReferences,
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      readEditableSettings: () => ({
+        ...createDefaultEditableStudioSettings(),
+        disabledWorkflowModules: ['timeline'],
+      }),
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
+      logJobCreated: () => {},
+      enqueueJob: () => {},
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      prompt: 'draw',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'timeline-frame',
+        task: 'image_generate',
+        prompt: 'draw the next frame',
+        recipeId: 'timeline',
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({ code: 'workflow_module_disabled', moduleId: 'timeline' }),
+      },
+    });
+    expect(processReferences).not.toHaveBeenCalled();
+  });
+
   it.each([
     { prompt: 'draw' } as GenerationTaskSpec,
     createGenerationTaskSpec({

@@ -9,6 +9,8 @@ import type {
 import type { GenerationProviderId } from '../packages/shared/src';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
+import { findWorkflowModuleForRecipe } from '../packages/shared/src/workflowModules';
+import { isRecipeEnabled } from '../lib/workflowModuleState';
 import {
   AnimationSequenceRecipe,
   CameraAnglesRecipe,
@@ -69,6 +71,26 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   intentionalStylesV1 = false,
 }) => {
   if (!activeRecipe) return null;
+  // A turned-off workflow module never loads its code; say how to turn it back on.
+  if (!isRecipeEnabled(activeRecipe)) {
+    const workflowModule = findWorkflowModuleForRecipe(activeRecipe);
+    return (
+      <div
+        role="status"
+        className="grid h-full min-h-[420px] place-items-center p-6 text-center text-[color:var(--wb-muted)]"
+      >
+        <div className="grid max-w-sm gap-2">
+          <strong className="text-sm text-[color:var(--wb-ink)]">
+            {workflowModule?.title ?? activeRecipe} is turned off
+          </strong>
+          <span className="text-xs">
+            Turn it on in Settings, Extensions, then reload Studio. Its jobs and images stay in your
+            library.
+          </span>
+        </div>
+      </div>
+    );
+  }
 
   const LoadedStylesRecipe = StylesRecipe;
   const LoadedRemasterRecipe = RemasterRecipe;

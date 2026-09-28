@@ -81,6 +81,7 @@ import { resolveBootstrapProviderExecutionOptions } from './providers/providerEx
 import { readGenerationProviderRuntimePreflights } from './providers/runtimeConfig';
 import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
+import { findWorkflowModuleForApiPath } from '../../../packages/shared/src/workflowModules';
 import { createSettingsRoutes } from './settingsRoutes';
 import { createSubscriptionAuthRoutes } from './auth/authRoutes';
 import { createCodexRoutes } from './codexRoutes';
@@ -381,6 +382,26 @@ export async function createStudioApp(
       })),
     };
   };
+
+  // Routes of a turned-off workflow module answer 404 until the user turns it back on.
+  app.use('/api/*', async (c, next) => {
+    const workflowModule = findWorkflowModuleForApiPath(c.req.path);
+    if (
+      workflowModule &&
+      readEditableStudioSettings(settingsStorage).disabledWorkflowModules.includes(
+        workflowModule.id,
+      )
+    )
+      return c.json(
+        {
+          error: `${workflowModule.title} is turned off. Turn it on in Settings, Extensions.`,
+          code: 'workflow_module_disabled',
+          moduleId: workflowModule.id,
+        },
+        404,
+      );
+    return next();
+  });
 
   app.route(
     '/api/sprite-atlas',

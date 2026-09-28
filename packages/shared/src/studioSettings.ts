@@ -1,6 +1,7 @@
 import type { CodexServiceTier } from './types';
 import type { GenerationProviderId } from './generationContracts';
 import { isPreferredWorkflow, type PreferredWorkflow } from './workflowCatalog';
+import { normalizeDisabledWorkflowModules, type WorkflowModuleId } from './workflowModules';
 
 const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
 
@@ -35,6 +36,8 @@ export interface EditableStudioSettings {
   autoDetectOutputSources: boolean;
   commandCenterCompactMode: boolean;
   intentionalStylesV1: boolean;
+  /** Optional workflow modules the user turned off (ADR 0011). */
+  disabledWorkflowModules: WorkflowModuleId[];
   showWorkspaceHistoryInCarousel: boolean;
   preferredLibraryId: string | null;
   preferredOutputPath: string | null;
@@ -56,6 +59,7 @@ export interface EditableStudioSettingsPatch {
   autoDetectOutputSources?: boolean;
   commandCenterCompactMode?: boolean;
   intentionalStylesV1?: boolean;
+  disabledWorkflowModules?: WorkflowModuleId[];
   showWorkspaceHistoryInCarousel?: boolean;
   preferredLibraryId?: string | null;
   preferredOutputPath?: string | null;
@@ -174,6 +178,7 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,
+    disabledWorkflowModules: [],
     showWorkspaceHistoryInCarousel: true,
     preferredLibraryId: null,
     preferredOutputPath: null,
@@ -234,6 +239,9 @@ export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStu
   }
   if (typeof value.intentionalStylesV1 === 'boolean') {
     patch.intentionalStylesV1 = value.intentionalStylesV1;
+  }
+  if (Array.isArray(value.disabledWorkflowModules)) {
+    patch.disabledWorkflowModules = normalizeDisabledWorkflowModules(value.disabledWorkflowModules);
   }
   if (preferredLibraryId !== undefined) patch.preferredLibraryId = preferredLibraryId;
   if (preferredOutputPath !== undefined) patch.preferredOutputPath = preferredOutputPath;
@@ -309,6 +317,7 @@ export function mergeEditableStudioSettingsPatch(
     autoDetectOutputSources: patch.autoDetectOutputSources ?? current.autoDetectOutputSources,
     commandCenterCompactMode: patch.commandCenterCompactMode ?? current.commandCenterCompactMode,
     intentionalStylesV1: patch.intentionalStylesV1 ?? current.intentionalStylesV1,
+    disabledWorkflowModules: patch.disabledWorkflowModules ?? current.disabledWorkflowModules ?? [],
     showWorkspaceHistoryInCarousel:
       patch.showWorkspaceHistoryInCarousel ?? current.showWorkspaceHistoryInCarousel ?? true,
     preferredLibraryId:

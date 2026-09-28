@@ -4,6 +4,7 @@ import {
   type RecipeCatalogSearchFilters,
 } from './recipeCatalog';
 import { WORKFLOW_CATEGORIES, getWorkflowCategory } from '../packages/shared/src/workflowCatalog';
+import { isWorkflowEnabled } from './workflowModuleState';
 
 export interface RecipeDiscoveryProjection {
   entries: RecipeCatalogDisplayEntry[];
@@ -58,14 +59,19 @@ function recipeMatchesFilters(
   return searchableText.includes(query);
 }
 
+/** Recipes and aliases whose workflow module is on. */
+function enabledDiscoveryEntries() {
+  return RECIPE_DISCOVERY_CATALOG.filter((entry) => isWorkflowEnabled(entry.id));
+}
+
 export function createRecipeDiscoveryProjection(
-  entries: RecipeCatalogDisplayEntry[] = RECIPE_DISCOVERY_CATALOG,
+  entries: RecipeCatalogDisplayEntry[] = enabledDiscoveryEntries(),
 ): RecipeDiscoveryProjection {
   return { entries };
 }
 
 export function createRecipesGridProjection(
-  entries: RecipeCatalogDisplayEntry[] = RECIPE_DISCOVERY_CATALOG,
+  entries: RecipeCatalogDisplayEntry[] = enabledDiscoveryEntries(),
 ): RecipeDiscoveryProjection {
   return { entries };
 }

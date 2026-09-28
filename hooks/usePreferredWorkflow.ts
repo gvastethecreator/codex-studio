@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import type { PreferredWorkflow } from '../packages/shared/src/workflowCatalog';
 import { resolveRecipeAlias, type RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
+import { isWorkflowEnabled } from '../lib/workflowModuleState';
 
 export function usePreferredWorkflow(
   preferred: PreferredWorkflow | undefined,
@@ -23,7 +24,8 @@ export function usePreferredWorkflow(
       return;
     }
     waiting.current = false;
-    if (id === 'default') navigateToDefault();
+    // A preferred workflow whose module is turned off falls back to Create.
+    if (id === 'default' || !isWorkflowEnabled(id)) navigateToDefault();
     else {
       const alias = resolveRecipeAlias(id);
       navigateToRecipe(alias?.targetRecipeId ?? (id as Exclude<RecipeId, null>), alias?.id);

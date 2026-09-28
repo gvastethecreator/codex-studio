@@ -289,6 +289,7 @@ export function resetDemoStore(
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,
+    disabledWorkflowModules: [],
     showWorkspaceHistoryInCarousel: true,
     preferredLibraryId: LIBRARY_ID,
     preferredOutputPath: null,

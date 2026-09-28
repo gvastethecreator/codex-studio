@@ -13,6 +13,7 @@ import {
 } from '../../../packages/shared/src/codexExecutionContract';
 import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
+import { findWorkflowModuleForRecipe } from '../../../packages/shared/src/workflowModules';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 import { readGrokRuntimeDoctor } from './grokRuntimeDoctor';
 import {
@@ -224,6 +225,25 @@ export function createPersistentJobIntake({
         return { ok: false, error: { status: 400, body: structuralValidationError } };
       }
       sourceSpec = cloneValidatedSourceSpec(sourceSpec);
+    }
+
+    // A turned-off workflow module accepts no new jobs (ADR 0011).
+    const workflowModule = findWorkflowModuleForRecipe(sourceSpec?.recipeId);
+    if (
+      workflowModule &&
+      readEditableSettings().disabledWorkflowModules.includes(workflowModule.id)
+    ) {
+      return {
+        ok: false,
+        error: {
+          status: 400,
+          body: {
+            error: `${workflowModule.title} is turned off. Turn it on in Settings, Extensions.`,
+            code: 'workflow_module_disabled',
+            moduleId: workflowModule.id,
+          },
+        },
+      };
     }
 
     const providerBlocker = await resolveProviderExecutionBlocker(providerId);

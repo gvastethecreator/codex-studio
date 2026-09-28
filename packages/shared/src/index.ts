@@ -7,6 +7,7 @@ export * from './generationContracts';
 export * from './grokImagineContract';
 export * from './googleImageContract';
 export * from './studioSettings';
+export * from './workflowModules';
 export * from './outputSources';
 export * from './providerCapabilities';
 export * from './subscriptionAuth';

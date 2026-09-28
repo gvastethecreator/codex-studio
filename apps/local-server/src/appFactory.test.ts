@@ -318,6 +318,37 @@ describe('createStudioApp', () => {
     expect(response.headers.get('Access-Control-Allow-Origin')).toBe('http://localhost:17222');
   });
 
+  it('closes the routes of a turned-off workflow module', async () => {
+    const settings = new Map<string, string>();
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        ...createFakeStores(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+        settingsStorage: {
+          getSetting: (key) => settings.get(key) ?? null,
+          setSetting: (key, value) => void settings.set(key, value),
+        },
+      },
+    });
+    const probe = () => studio.app.request('/api/sprite-atlas/projects');
+
+    expect(await (await probe()).text()).not.toContain('workflow_module_disabled');
+    await studio.app.request('/api/settings', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ disabledWorkflowModules: ['sprite-atlas'] }),
+    });
+    const closed = await probe();
+    expect(closed.status).toBe(404);
+    await expect(closed.json()).resolves.toMatchObject({
+      code: 'workflow_module_disabled',
+      moduleId: 'sprite-atlas',
+    });
+    expect((await studio.app.request('/api/health')).status).toBe(200);
+  });
+
   it('rejects browser requests from foreign origins before mounted routes run', async () => {
     const listJobSummaries = vi.fn(() => emptyJobPage);
     const studio = await createStudioApp({
