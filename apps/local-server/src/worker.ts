@@ -650,7 +650,22 @@ export function createWorkerController({
         return getJobFn(jobId);
       }
 
-      return getJobFn(jobId);
+      // A queued or running job that this worker never picked up, such as one left unscheduled
+      // while provider dispatch is held, has nothing to abort: cancel it directly.
+      const untracked = getJobFn(jobId);
+      if (
+        untracked &&
+        !runningJobs.has(jobId) &&
+        (untracked.status === 'queued' || untracked.status === 'running')
+      ) {
+        recordJobEvent(jobId, 'job.cancelled', 'Cancelled a job that no worker was running.');
+        const job = updateJobStatusFn(jobId, 'cancelled');
+        publishEventFn('job.cancelled', job);
+        logger('info', 'worker', 'Cancelled a job that no worker was running.', jobId);
+        return job;
+      }
+
+      return untracked;
     },
     getWorkerStatus() {
       return {

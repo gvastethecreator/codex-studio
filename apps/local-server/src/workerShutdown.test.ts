@@ -462,4 +462,12 @@ describe('worker shutdown', () => {
     );
     expect(addJobEvent.mock.calls.map((call) => call[1])).not.toContain('job.interrupted');
   });
+
+  it('cancels a running job that no worker picked up, such as one held at startup', () => {
+    const job = { ...createJob('job-held'), status: 'running' as const };
+    const { controller, jobs } = createWorkerHarness([job]);
+
+    expect(controller.cancelQueuedOrRunningJob(job.id)?.status).toBe('cancelled');
+    expect(jobs.get(job.id)?.status).toBe('cancelled');
+  });
 });
