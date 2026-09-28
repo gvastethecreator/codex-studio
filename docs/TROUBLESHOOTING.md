@@ -54,7 +54,7 @@ bun run runtime:doctor
 
 The doctor reports the selected executable, CLI metadata, app-server support, and the recommended action. It does not print secrets.
 
-### Codex Studio stopped working after a Codex update
+### Cozy Studio stopped working after a Codex update
 
 Symptoms: a checkout that worked before the update no longer starts jobs. `app-server` fails to bind. Runtime Doctor reports a path inside `node_modules/.../vendor`.
 

@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Codex Studio is in open-source preview. Security fixes land on the `main` branch until a stable release exists.
+Cozy Studio is in open-source preview. Security fixes land on the `main` branch until a stable release exists.
 
 ## Reporting vulnerabilities
 

@@ -242,7 +242,7 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
       <textarea
         readOnly
         value={prompt}
-        aria-label="Codex Studio setup prompt"
+        aria-label="Cozy Studio setup prompt"
         className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 font-mono text-sm leading-5 text-[color:var(--wb-ink)] outline-none xl:hidden"
       />
       <details className="hidden xl:block">
@@ -252,7 +252,7 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
         <textarea
           readOnly
           value={prompt}
-          aria-label="Codex Studio setup prompt preview"
+          aria-label="Cozy Studio setup prompt preview"
           className="custom-scrollbar mt-2 h-20 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-sm leading-4 text-[color:var(--wb-ink)] outline-none"
         />
       </details>
@@ -319,7 +319,8 @@ function InAppSetupForm({
         Studio Library
       </p>
       <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
-        Choose an absolute folder. Codex Studio stays in your home unless you pick another path.
+        Choose an absolute folder. By default the library is a folder named “Codex Studio” in your
+        home.
       </p>
       <label className="mt-3 block xl:mt-2">
         <span className="sr-only">Studio Library path</span>

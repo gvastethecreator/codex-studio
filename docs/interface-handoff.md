@@ -1,6 +1,6 @@
 # Interface handoff
 
-Local review export for Codex Studio. The product UI is the source of truth.
+Local review export for Cozy Studio. The product UI is the source of truth.
 
 ## Command
 

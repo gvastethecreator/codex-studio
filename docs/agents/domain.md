@@ -1,6 +1,6 @@
 # Domain documents
 
-Codex Studio uses one product context. Its shared language and decisions can live in these files when the project needs them:
+Cozy Studio uses one product context. Its shared language and decisions can live in these files when the project needs them:
 
 - Root `CONTEXT.md`: product glossary, invariants, actors, and boundaries.
 - `docs/adr/`: published decisions that contributors must preserve.

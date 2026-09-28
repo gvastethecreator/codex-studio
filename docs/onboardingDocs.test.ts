@@ -10,7 +10,7 @@ describe('onboarding docs contract', () => {
   const readme = readDoc('README.md');
   const troubleshooting = readDoc('docs/TROUBLESHOOTING.md');
   const electron = readDoc('docs/ELECTRON.md');
-  const skill = readDoc('skills/codex-studio-setup/SKILL.md');
+  const skill = readDoc('skills/cozy-studio-setup/SKILL.md');
   const four = [readme, troubleshooting, electron, skill].join('\n---\n');
 
   it('README first-run path matches the CTA matrix and names Codex Studio in user home', () => {

@@ -4,7 +4,7 @@ import type {
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
 
-export const CODEX_STUDIO_SETUP_SKILL_PATH = 'skills/codex-studio-setup/SKILL.md';
+export const CODEX_STUDIO_SETUP_SKILL_PATH = 'skills/cozy-studio-setup/SKILL.md';
 
 interface BuildCodexStudioSetupPromptArgs {
   apiBase: string;
@@ -43,7 +43,7 @@ export function buildCodexStudioSetupPrompt({
   localCodexSession,
   readiness,
 }: BuildCodexStudioSetupPromptArgs) {
-  const projectRoot = renderValue(health?.runtime.cwd, 'Codex Studio repository root');
+  const projectRoot = renderValue(health?.runtime.cwd, 'Cozy Studio repository root');
   const envLocalPath = renderValue(health?.runtime.envLocalPath, '.env.local');
   const libraryDir = renderValue(health?.libraryDir, 'Studio Library not detected yet');
   const codexCliState = health?.codexCli.available ? 'available' : 'missing';
@@ -61,7 +61,7 @@ export function buildCodexStudioSetupPrompt({
     : localCodexSession?.reason || localCodexSession?.state || 'unknown';
 
   return [
-    `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Codex Studio setup.`,
+    `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`,
     '',
     'Goal: make this checkout ready for local image generation through Studio Settings Sign in and the ChatGPT provider. Do not spend Codex app-server usage on ordinary image jobs.',
     '',
@@ -89,7 +89,7 @@ export function buildCodexStudioSetupPrompt({
     '- Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.',
     '- Do not delete, move, compact, or rewrite Studio Library data unless the user explicitly confirms it.',
     '- Never silent-install Bun or Codex CLI. Recommended image login is Studio Settings Sign in, then the ChatGPT provider. `codex login` is only for an explicit Codex app-server job.',
-    '- Default Studio Library is Codex Studio in the user home unless STUDIO_LIBRARY_DIR is already set. Do not treat Preferred Output Path as the generate destination.',
+    '- Default Studio Library is a folder named `Codex Studio` in the user home unless STUDIO_LIBRARY_DIR is already set. Do not treat Preferred Output Path as the generate destination.',
     '- Use Bun scripts from package.json and run broad checks only at closeout.',
     '- Treat Bun and Codex command output as diagnostic metadata only. Do not block setup on an exact tool release when app readiness, supported scripts, app-server support, and Local Codex Session are healthy.',
     '',

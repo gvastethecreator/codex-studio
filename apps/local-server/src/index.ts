@@ -34,7 +34,7 @@ if (import.meta.main) {
     `Local server listening on http://${hostname}:${boundPort}. Library: ${studio.config.libraryDir}`,
   );
 
-  console.log(`Codex Studio local-server listening on http://${hostname}:${boundPort}`);
+  console.log(`Cozy Studio local-server listening on http://${hostname}:${boundPort}`);
 
   let shutdownPromise: Promise<void> | null = null;
   const shutdown = () => {
@@ -54,7 +54,7 @@ if (import.meta.main) {
         exit: (code) => process.exit(code),
         reportError: (error) => {
           console.error(
-            `Codex Studio shutdown failed: ${error instanceof Error ? error.message : String(error)}`,
+            `Cozy Studio shutdown failed: ${error instanceof Error ? error.message : String(error)}`,
           );
         },
       });

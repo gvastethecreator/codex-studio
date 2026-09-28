@@ -1,12 +1,12 @@
-# Codex Studio agent rules
+# Cozy Studio agent rules
 
 This file is for agents that work in this repo.
 
 ## Setup
 
-If the user asks for setup, getting started, first run, or onboarding, or if the checkout is not initialized, follow `skills/codex-studio-setup/SKILL.md` before ad hoc commands.
+If the user asks for setup, getting started, first run, or onboarding, or if the checkout is not initialized, follow `skills/cozy-studio-setup/SKILL.md` before ad hoc commands.
 
-1. Read this file, `README.md`, and `skills/codex-studio-setup/SKILL.md`.
+1. Read this file, `README.md`, and `skills/cozy-studio-setup/SKILL.md`.
 2. Inspect repo and app-owned runtime state without printing secrets: `git status --short`, Codex Runtime Doctor, `.env.local` presence, Studio Library init, `/api/health`, and `/api/codex/session` when reachable.
 3. Run `bun install` only when missing or stale dependencies block setup.
 4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite state, the default library, or the default workspace is missing.

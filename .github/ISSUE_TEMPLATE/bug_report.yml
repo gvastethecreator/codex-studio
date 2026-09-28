@@ -1,12 +1,12 @@
 name: Bug report
-description: Report a reproducible problem in Codex Studio.
+description: Report a reproducible problem in Cozy Studio.
 title: '[Bug]: '
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve Codex Studio. Please include enough detail to reproduce the issue locally.
+        Thanks for helping improve Cozy Studio. Please include enough detail to reproduce the issue locally.
   - type: input
     id: os
     attributes:

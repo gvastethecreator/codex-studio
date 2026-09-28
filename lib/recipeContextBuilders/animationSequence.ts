@@ -61,7 +61,7 @@ function buildAnimationSequenceContext(params: RecipeContextParams) {
         : 'Generation mode: create only the requested frame as a standalone image.',
       'Output one finished image frame. Do not output video, sprite atlas, storyboard grid, captioned panels, UI, or text overlays.',
       'Keep identity, composition language, palette, and render style coherent with provided references.',
-      'This frame will be assembled into a GIF by Codex Studio after image generation.',
+      'This frame will be assembled into a GIF by Cozy Studio after image generation.',
     ],
   };
 

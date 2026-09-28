@@ -154,7 +154,7 @@ export function useStudioActionConfirmations({
       {
         title: 'Rebuild local studio library',
         description:
-          'Use this when the local library, queue state, or SQLite index got stuck and you want Codex Studio to recreate a clean local workspace.',
+          'Use this when the local library, queue state, or SQLite index got stuck and you want Cozy Studio to recreate a clean local workspace.',
         confirmLabel: 'Rebuild local studio',
         tone: 'danger',
         details: [

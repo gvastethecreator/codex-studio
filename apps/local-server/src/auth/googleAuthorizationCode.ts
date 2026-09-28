@@ -177,7 +177,7 @@ async function listenForAuthorizationCode({
       settleError(new Error('Google OAuth callback did not include a valid code.'));
       return;
     }
-    sendBrowserResponse(response, 200, 'Google Sign in complete', 'Codex Studio is connected.');
+    sendBrowserResponse(response, 200, 'Google Sign in complete', 'Cozy Studio is connected.');
     settleCode(code);
   });
 

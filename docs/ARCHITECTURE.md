@@ -1,6 +1,6 @@
 # Architecture
 
-Codex Studio is a local-first image studio. The React/Vite UI is the main product surface. A local Bun/Hono backend supervises `codex app-server`, persists state in SQLite, serves Studio Library assets, and emits live SSE events.
+Cozy Studio is a local-first image studio. The React/Vite UI is the main product surface. A local Bun/Hono backend supervises `codex app-server`, persists state in SQLite, serves Studio Library assets, and emits live SSE events.
 
 ```mermaid
 graph TD

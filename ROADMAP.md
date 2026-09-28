@@ -1,6 +1,6 @@
 # Roadmap
 
-Codex Studio moves toward a polished open-source preview. It stays local-first, Codex-first, and library-backed.
+Cozy Studio moves toward a polished open-source preview. It stays local-first, Codex-first, and library-backed.
 
 ## Current focus
 
@@ -50,6 +50,6 @@ Codex Studio moves toward a polished open-source preview. It stays local-first, 
 
 ## Not now
 
-- Turn Codex Studio into hosted SaaS.
+- Turn Cozy Studio into hosted SaaS.
 - Make API keys mandatory for the default Codex flow.
 - Publish this app as a reusable npm library.

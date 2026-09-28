@@ -122,7 +122,7 @@ export function buildStudioDiagnosticsSnapshot({
                 ? {
                     value: 'External Tokens',
                     detail:
-                      'Codex Studio expects the user-managed ChatGPT login from the local Codex CLI.',
+                      'Cozy Studio expects the user-managed ChatGPT login from the local Codex CLI.',
                     tone: 'danger' as const,
                   }
                 : {

@@ -230,18 +230,21 @@ export function SettingsExtensionsPanel() {
   const refresh = useCallback(async () => {
     setLoading(true);
     setError(null);
-    const [installedResult, availableResult] = await Promise.allSettled([
-      listInstalledExtensions({ refresh: true }),
-      listAvailableExtensions(),
-    ]);
-    if (installedResult.status === 'fulfilled') setInstalled(installedResult.value);
-    if (availableResult.status === 'fulfilled') {
-      setSources(availableResult.value.sources);
-      setTokenConfigured(availableResult.value.tokenConfigured);
+    try {
+      const [installedResult, availableResult] = await Promise.allSettled([
+        listInstalledExtensions({ refresh: true }),
+        listAvailableExtensions(),
+      ]);
+      if (installedResult.status === 'fulfilled') setInstalled(installedResult.value);
+      if (availableResult.status === 'fulfilled') {
+        setSources(availableResult.value.sources);
+        setTokenConfigured(availableResult.value.tokenConfigured);
+      }
+      const failure = [installedResult, availableResult].find((item) => item.status === 'rejected');
+      if (failure?.status === 'rejected') setError(errorText(failure.reason));
+    } finally {
+      setLoading(false);
     }
-    const failure = [installedResult, availableResult].find((item) => item.status === 'rejected');
-    if (failure?.status === 'rejected') setError(errorText(failure.reason));
-    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -342,9 +345,7 @@ export function SettingsExtensionsPanel() {
       <InstalledPacksSection
         listing={installed}
         busyId={busyId}
-        onRemove={(extension) =>
-          void run(extension.id, () => removeExtension(extension.id))
-        }
+        onRemove={(extension) => void run(extension.id, () => removeExtension(extension.id))}
       />
 
       <section

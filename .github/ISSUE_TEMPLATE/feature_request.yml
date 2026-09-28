@@ -1,5 +1,5 @@
 name: Feature request
-description: Propose an improvement for Codex Studio.
+description: Propose an improvement for Cozy Studio.
 title: '[Feature]: '
 labels: [enhancement]
 body:
@@ -14,7 +14,7 @@ body:
     id: proposal
     attributes:
       label: Proposal
-      description: What should Codex Studio do differently?
+      description: What should Cozy Studio do differently?
     validations:
       required: true
   - type: textarea

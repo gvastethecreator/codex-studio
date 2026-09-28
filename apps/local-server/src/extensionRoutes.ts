@@ -77,11 +77,7 @@ export function createExtensionRoutes({ store, remote }: ExtensionRoutesDependen
                 ...entry,
                 installedVersion: local?.manifest.version ?? null,
                 installedLayers: local?.layers ?? [],
-                installedFrom: local
-                  ? isInstalledCopy(local.root)
-                    ? 'download'
-                    : 'local'
-                  : null,
+                installedFrom: local ? (isInstalledCopy(local.root) ? 'download' : 'local') : null,
                 updateAvailable: local
                   ? compareExtensionVersions(entry.version, local.manifest.version) > 0
                   : false,

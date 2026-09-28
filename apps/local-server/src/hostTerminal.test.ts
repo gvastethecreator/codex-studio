@@ -8,7 +8,7 @@ import {
 } from './hostTerminal';
 import { CODEX_STUDIO_SETUP_SKILL_PATH } from '../../../lib/onboardingSetupPrompt';
 
-const setupPrompt = `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Codex Studio setup.`;
+const setupPrompt = `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`;
 
 describe('host terminal launches', () => {
   it('opens visible codex login in the repo root, not exec or app-server', () => {

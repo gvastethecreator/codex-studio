@@ -2,7 +2,7 @@
 
 ## Our commitment
 
-We are committed to making participation in Codex Studio a respectful, inclusive, and harassment-free experience for everyone.
+We are committed to making participation in Cozy Studio a respectful, inclusive, and harassment-free experience for everyone.
 
 ## Expected behavior
 

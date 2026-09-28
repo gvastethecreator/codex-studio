@@ -1,6 +1,6 @@
 # Documentation
 
-Setup and usage notes for running Codex Studio locally.
+Setup and usage notes for running Cozy Studio locally.
 
 - [Dependencies](./DEPENDENCIES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)

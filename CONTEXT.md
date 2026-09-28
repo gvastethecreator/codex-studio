@@ -1,4 +1,4 @@
-# Codex Studio Context
+# Cozy Studio Context
 
 This file defines the project vocabulary only.
 Current system shape lives in `docs/ARCHITECTURE.md`.

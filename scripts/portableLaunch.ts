@@ -13,7 +13,7 @@ export function missingBunMessage() {
 }
 
 export function missingCodexCliMessage() {
-  return `Codex Studio needs Codex CLI. Install it from ${ONBOARDING_CODEX_INSTALL_URL} then run this launcher again.`;
+  return `Cozy Studio needs Codex CLI. Install it from ${ONBOARDING_CODEX_INSTALL_URL} then run this launcher again.`;
 }
 
 export function resolvePortableLibraryDir(input: {

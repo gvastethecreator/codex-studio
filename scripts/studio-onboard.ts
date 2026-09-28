@@ -175,7 +175,7 @@ export async function runStudioOnboardHostAction(options: {
   const prompt =
     options.action === 'ask_codex'
       ? (options.prompt ??
-        `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Codex Studio setup.`)
+        `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`)
       : null;
   const result = applyHostAction({
     consent: true,

@@ -2,7 +2,7 @@
 
 ## Objective
 
-Codex Studio must feel like a professional creative tool. It is precise and technical. It stays clear for new users.
+Cozy Studio must feel like a professional creative tool. It is precise and technical. It stays clear for new users.
 
 ## Principles
 

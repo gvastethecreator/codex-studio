@@ -33,7 +33,7 @@ interface LocalCodexSessionBase {
 
 const CODEX_CLIENT_INFO = {
   name: 'codex-studio',
-  title: 'Codex Studio',
+  title: 'Cozy Studio',
   version: '0.1.0',
 } as const;
 

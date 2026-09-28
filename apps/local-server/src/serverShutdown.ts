@@ -13,7 +13,7 @@ export async function shutdownStudioServer({
   ]);
   const errors = results.flatMap((result) => (result.status === 'rejected' ? [result.reason] : []));
   if (errors.length > 0) {
-    throw new AggregateError(errors, 'Codex Studio shutdown failed');
+    throw new AggregateError(errors, 'Cozy Studio shutdown failed');
   }
 }
 
@@ -43,7 +43,7 @@ export function beginSignalShutdown({
   };
   const timer = setTimeoutFn(() => {
     if (finished) return;
-    reportError(new Error(`Codex Studio shutdown timed out after ${timeoutMs}ms`));
+    reportError(new Error(`Cozy Studio shutdown timed out after ${timeoutMs}ms`));
     finish(1, timer);
   }, timeoutMs);
 

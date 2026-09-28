@@ -533,7 +533,7 @@ function buildAnimationSequenceProviderDirectives(
           directive('Provider Output', 'single image frame'),
           directive(
             'Studio Export',
-            'Codex Studio assembles generated frames into GIF after export',
+            'Cozy Studio assembles generated frames into GIF after export',
           ),
           directive('Video Generation', 'not used'),
         ],

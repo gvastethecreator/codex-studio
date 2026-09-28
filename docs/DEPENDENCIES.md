@@ -1,6 +1,6 @@
 # Dependencies
 
-Codex Studio uses Bun as its package manager and backend runtime. `bun:sqlite` and Bun script APIs are runtime dependencies. Changing the package manager alone does not replace them.
+Cozy Studio uses Bun as its package manager and backend runtime. `bun:sqlite` and Bun script APIs are runtime dependencies. Changing the package manager alone does not replace them.
 
 ## Version sources
 

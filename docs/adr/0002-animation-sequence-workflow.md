@@ -48,7 +48,7 @@ Tradeoffs:
 
 - Smooth motion quality depends on frame prompt discipline and the image model consistency.
 - GIF encoding is intentionally simple in v1: ordered frames, global palette, fixed dimensions, and loop control.
-- Native video formats remain out of scope until Codex Studio has explicit provider-independent video task contracts.
+- Native video formats remain out of scope until Cozy Studio has explicit provider-independent video task contracts.
 
 ## Non-goals
 

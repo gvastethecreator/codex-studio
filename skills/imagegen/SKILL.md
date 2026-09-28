@@ -5,7 +5,7 @@ description: 'Generate or edit raster images when the task benefits from AI-crea
 
 # Image Generation Skill
 
-> **Attribution:** This skill is a derivation of the OpenAI Codex CLI system image-generation skill that ships at `~/.codex/skills/.system/imagegen/` in the upstream Codex CLI. Upstream is distributed under the Apache License, Version 2.0; the full license text is preserved verbatim at `skills/imagegen/LICENSE.txt` (the `Copyright [yyyy] [name of copyright owner]` line is the unmodified Apache 2.0 template and refers to the upstream copyright holder, not the Codex Studio project). See `THIRD_PARTY_LICENSES.md` at the repo root for the consolidated third-party license index.
+> **Attribution:** This skill is a derivation of the OpenAI Codex CLI system image-generation skill that ships at `~/.codex/skills/.system/imagegen/` in the upstream Codex CLI. Upstream is distributed under the Apache License, Version 2.0; the full license text is preserved verbatim at `skills/imagegen/LICENSE.txt` (the `Copyright [yyyy] [name of copyright owner]` line is the unmodified Apache 2.0 template and refers to the upstream copyright holder, not the Cozy Studio project). See `THIRD_PARTY_LICENSES.md` at the repo root for the consolidated third-party license index.
 
 Generates or edits images for the current project (for example website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, or infographics).
 
@@ -34,20 +34,20 @@ Rules:
 - If the user explicitly asks for CLI mode, use the bundled `scripts/image_gen.py` workflow. Do not create one-off SDK runners.
 - Never modify `scripts/image_gen.py`. If something is missing, ask the user before doing anything else.
 
-## Codex Studio recipe-aware workflow
+## Cozy Studio recipe-aware workflow
 
-When this skill runs inside Codex Studio, it may receive either a UI-compiled job
+When this skill runs inside Cozy Studio, it may receive either a UI-compiled job
 from `codex app-server` or a direct user request that names a recipe. Handle both
 paths through the same recipe contract.
 
 UI-compiled jobs:
 
 - If prompt text contains `Task:`, `Recipe directives:`, `Recipe instructions:`,
-  `Image size:`, or `Aspect ratio:`, treat it as an already compiled Codex Studio
+  `Image size:`, or `Aspect ratio:`, treat it as an already compiled Cozy Studio
   job.
 - Follow the current turn only. Do not assume previous image context unless the
   turn includes input/reference images.
-- Do not ask for `/imagine`. Codex Studio prompts are plain text plus recipe
+- Do not ask for `/imagine`. Cozy Studio prompts are plain text plus recipe
   directives; slash commands are not part of the contract.
 - Preserve the split between Generation Task and Generation Provider. A task such
   as `image_generate`, `image_edit`, `sprite_sheet`, `texture_generate`, or
@@ -57,7 +57,7 @@ UI-compiled jobs:
 
 Direct agent requests without UI:
 
-- If the user names a Codex Studio recipe, inspect `lib/recipeModules.ts`
+- If the user names a Cozy Studio recipe, inspect `lib/recipeModules.ts`
   instead of inventing a free-form prompt path.
 - For any recipe, identify: recipe id, intended Generation Task, useful
   recipe params, attachments/reference roles, aspect ratio or output format, and

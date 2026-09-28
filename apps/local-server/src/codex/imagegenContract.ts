@@ -6,7 +6,7 @@ export const CODEX_IMAGEGEN_SESSION_CONTRACT = createProviderSessionContract({
   stableInstructions: [
     'Use the provided imagegen skill.',
     'Generate exactly one image for the current job.',
-    'Save or expose the resulting image so Codex Studio can import it.',
+    'Save or expose the resulting image so Cozy Studio can import it.',
     'Report the exact local file path when available.',
   ],
   outputRules: ['No text, labels, logos, watermark, or UI unless explicitly requested.'],
@@ -17,7 +17,7 @@ export const CODEX_IMAGEGEN_DENOISE_INSTRUCTION =
 
 export function buildCodexImagegenDeveloperInstructions(sessionKey: string) {
   return [
-    `You are running inside Codex Studio in a persistent image generation thread (${sessionKey}).`,
+    `You are running inside Cozy Studio in a persistent image generation thread (${sessionKey}).`,
     ...CODEX_IMAGEGEN_SESSION_CONTRACT.stableInstructions,
     'Treat every turn independently and use only the current user prompt for the requested job.',
     'Do not run shell commands to locate or copy the newest generated image.',

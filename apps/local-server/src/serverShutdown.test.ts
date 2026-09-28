@@ -12,7 +12,7 @@ describe('server shutdown', () => {
         },
         stopStudio,
       }),
-    ).rejects.toThrow('Codex Studio shutdown failed');
+    ).rejects.toThrow('Cozy Studio shutdown failed');
     expect(stopStudio).toHaveBeenCalledTimes(1);
   });
 
@@ -58,7 +58,7 @@ describe('server shutdown', () => {
     (timeoutCallback as unknown as () => void)();
 
     expect(reportError).toHaveBeenCalledWith(
-      expect.objectContaining({ message: 'Codex Studio shutdown timed out after 25ms' }),
+      expect.objectContaining({ message: 'Cozy Studio shutdown timed out after 25ms' }),
     );
     expect(exit).toHaveBeenCalledWith(1);
   });

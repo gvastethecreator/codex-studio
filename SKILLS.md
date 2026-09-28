@@ -1,11 +1,11 @@
-# Codex Studio Workflow Skills
+# Cozy Studio Workflow Skills
 
 This file describes local repo workflows for people and agents. It is not a glossary.
 Canonical terms live in `CONTEXT.md`.
 
-## Initial Codex Studio Setup
+## Initial Cozy Studio Setup
 
-1. Use the repo-local skill `skills/codex-studio-setup/SKILL.md` to prepare a new checkout or repair a blocked welcome screen.
+1. Use the repo-local skill `skills/cozy-studio-setup/SKILL.md` to prepare a new checkout or repair a blocked welcome screen.
 2. The copyable onboarding prompt must point to that skill and pass an app-readiness snapshot.
    Include repo, local API, Studio Library, `.env.local`, supported scripts, Bun/Codex diagnostic metadata, Codex Runtime Doctor capability, app-server, Local Codex Session, and readiness.
 3. Automated setup must use supported repo commands: `bun install` when needed, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session`, and `/api/app-server/start`.

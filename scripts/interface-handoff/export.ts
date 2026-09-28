@@ -123,7 +123,7 @@ function flattenDemoBuild(buildDir: string, dest: string) {
 function contextProduct() {
   return `# Producto
 
-Codex Studio es un estudio local de generación y gestión de imágenes. El usuario trabaja con un Codex o ChatGPT session a través de \`codex app-server\`, sin pegar API keys en la UI.
+Cozy Studio es un estudio local de generación y gestión de imágenes. El usuario trabaja con un Codex o ChatGPT session a través de \`codex app-server\`, sin pegar API keys en la UI.
 
 ## Audiencia
 
@@ -228,7 +228,7 @@ function contextChanges() {
   return `# Cambios del handoff · primera exportación
 
 Baseline anterior: ninguna.
-Fuente actual: Codex Studio en este checkout.
+Fuente actual: Cozy Studio en este checkout.
 Alcance solicitado: vistas implementadas del shell web.
 
 ## Interfaz actual vs anterior
@@ -273,7 +273,7 @@ function packageIndex(exportId: string, views: InventoryView[]) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Codex Studio · handoff ${exportId}</title>
+  <title>Cozy Studio · handoff ${exportId}</title>
   <style>
     body { margin: 0; font: 16px/1.5 system-ui, sans-serif; background: #101010; color: #eee; }
     main { max-width: 720px; margin: 48px auto; padding: 0 20px; }
@@ -284,7 +284,7 @@ function packageIndex(exportId: string, views: InventoryView[]) {
 <body>
   <main>
     <p class="muted">Interface handoff · ${exportId}</p>
-    <h1>Codex Studio</h1>
+    <h1>Cozy Studio</h1>
     <p>Leer primero <a href="./AGENTS.md">AGENTS.md</a>. Demo: <a href="./demo/index.html">demo/index.html</a>.</p>
     <p>Servir esta carpeta en loopback, por ejemplo <code>python -m http.server 4177 --bind 127.0.0.1</code>. No usar el backend ni Vite dev.</p>
     <h2>Estados</h2>
@@ -437,7 +437,7 @@ function briefJson(exportId: string) {
     export_id: exportId,
     language: 'es',
     product_summary:
-      'Codex Studio: estudio local para generar y organizar imágenes con workflows, Library y Jobs.',
+      'Cozy Studio: estudio local para generar y organizar imágenes con workflows, Library y Jobs.',
     audience:
       'Una persona que genera imágenes en una Studio Library local y recorre Create, Library y Jobs.',
     primary_task: 'Elegir un workflow, generar una imagen y encontrarla en Library o en Jobs.',
@@ -561,7 +561,7 @@ async function main() {
     export_id: exportId,
     created_at: new Date().toISOString(),
     project: {
-      name: 'Codex Studio',
+      name: 'Cozy Studio',
       revision: gitRevision(),
       working_tree: gitDirty(),
       source_fingerprint: readSnapshotFingerprint(snapshotPath),

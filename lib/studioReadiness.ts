@@ -48,7 +48,7 @@ function resolveLocalCodexSessionDetail(session: LocalCodexSessionResponse | nul
       return {
         ok: false,
         detail:
-          'Codex Studio expects the user-managed ChatGPT login from the local Codex CLI, not externally managed tokens.',
+          'Cozy Studio expects the user-managed ChatGPT login from the local Codex CLI, not externally managed tokens.',
       };
     default:
       return {

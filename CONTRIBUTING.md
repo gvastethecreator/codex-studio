@@ -1,4 +1,4 @@
-# Contributing to Codex Studio
+# Contributing to Cozy Studio
 
 Use the existing Bun toolchain and keep changes small enough to review and verify.
 

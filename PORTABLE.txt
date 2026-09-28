@@ -1,9 +1,9 @@
 Cozy Studio portable start
 ===========================
 
-Windows: double-click `Codex Studio.bat`.
-macOS: double-click `Codex Studio.command`. If macOS says the file is not
-executable, run `chmod +x "Codex Studio.command"` once in Terminal.
+Windows: double-click `Cozy Studio.bat`.
+macOS: double-click `Cozy Studio.command`. If macOS says the file is not
+executable, run `chmod +x "Cozy Studio.command"` once in Terminal.
 
 The launcher checks that Bun is on PATH, starts one local-server process, and
 opens a browser. Codex CLI is not required to open the app or connect ChatGPT.

@@ -25,7 +25,7 @@ The UI must expose the workflow as a recoverable production workbench:
 - batch handoff creation is supported without duplicating already handled rows
 - blocked rows remain explicit sidecars instead of fake art
 
-Bring a repo-local `skills/sprite-atlas-builder` skill into Codex Studio so agents can run the pipeline without an external checkout.
+Bring a repo-local `skills/sprite-atlas-builder` skill into Cozy Studio so agents can run the pipeline without an external checkout.
 
 New run state, handoff inputs, and extracted working frames live in `.studio/state/sprite-atlas/<runId>`. The atlas PNG and manifest use the output directory and layout captured when the run starts. Older runs remain readable at their stored paths. The shared background choice resolves the run contract: native transparency disables chroma instructions and keeps alpha through atlas composition.
 
@@ -47,7 +47,7 @@ Tradeoffs:
 ## Non-goals
 
 - Do not replace Character Lab.
-- Do not turn Codex Studio into a generic provider router.
+- Do not turn Cozy Studio into a generic provider router.
 - Do not generate fake placeholder art when image generation is blocked.
 - Do not store generated run folders in the repository.
 - Do not make curation a fully featured external editor in the first pass.

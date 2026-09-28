@@ -119,7 +119,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
 
           <div className="pt-4 border-t border-[color:var(--wb-line)] flex justify-end">
             <p className="text-[length:var(--wbp-label)] text-[color:var(--wb-dim)] font-bold tracking-normal">
-              Codex Studio Preview
+              Cozy Studio Preview
             </p>
           </div>
         </div>

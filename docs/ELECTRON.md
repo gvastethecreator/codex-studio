@@ -4,7 +4,7 @@ This document does not announce an Electron release. It describes the current de
 
 ## Current state
 
-The user channel for this spec is a browser against local-server: `bun run dev` in a checkout, or the portable `Codex Studio.bat` / `Codex Studio.command` launchers after unzip. Electron is not that channel.
+The user channel for this spec is a browser against local-server: `bun run dev` in a checkout, or the portable `Cozy Studio.bat` / `Cozy Studio.command` launchers after unzip. Electron is not that channel.
 
 The renderer must not couple to desktop APIs. The key seam is Studio Runtime. The renderer resolves `apiBase` in this order: `window.codexStudio?.apiBase`, then `VITE_STUDIO_API_BASE`, then localhost.
 

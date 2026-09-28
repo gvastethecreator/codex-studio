@@ -19,8 +19,8 @@ import {
 import { runPortableStart } from './portable-start';
 
 const repoRoot = path.resolve(import.meta.dirname, '..');
-const windowsLauncher = path.join(repoRoot, 'Codex Studio.bat');
-const macLauncher = path.join(repoRoot, 'Codex Studio.command');
+const windowsLauncher = path.join(repoRoot, 'Cozy Studio.bat');
+const macLauncher = path.join(repoRoot, 'Cozy Studio.command');
 const portableNote = path.join(repoRoot, 'PORTABLE.txt');
 
 describe('portable launchers', () => {

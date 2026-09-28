@@ -73,7 +73,7 @@ export function ensureLibrary() {
     writeFileSync(
       readmePath,
       [
-        'Codex Studio workspace.',
+        'Cozy Studio workspace.',
         '.studio stores local state, settings, SQLite, logs, references, and transcripts.',
         'outputs stores generated images and user-facing exports.',
         '',

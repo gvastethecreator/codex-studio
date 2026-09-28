@@ -35,17 +35,17 @@ Library search queries the whole workspace catalog. Jobs separates active work, 
 
 Styles includes the Medieval and TCG visual catalogs. The 42 TCG finishes, layouts, and crossover recipes are available in Component Studio: choose or upload artwork, edit card fields, supply the masks required by a finish, and export a digital PNG composition. These components do not act as visual style presets or certify a physical print process.
 
-| Catalog and persistent jobs                                                                                         | Studio Settings                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| <img src="docs/assets/screenshots/studio.webp" alt="Codex Studio catalog beside the persistent generation queue" /> | <img src="docs/assets/screenshots/settings.webp" alt="Codex Studio Settings with the local library path hidden for privacy" /> |
-| **Guided recipes**                                                                                                  | **Style systems**                                                                                                              |
-| <img src="docs/assets/screenshots/recipes.webp" alt="Codex Studio guided recipe index" />                           | <img src="docs/assets/screenshots/styles.webp" alt="Codex Studio style pack browser" />                                        |
+| Catalog and persistent jobs                                                                                        | Studio Settings                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| <img src="docs/assets/screenshots/studio.webp" alt="Cozy Studio catalog beside the persistent generation queue" /> | <img src="docs/assets/screenshots/settings.webp" alt="Cozy Studio Settings with the local library path hidden for privacy" /> |
+| **Guided recipes**                                                                                                 | **Style systems**                                                                                                             |
+| <img src="docs/assets/screenshots/recipes.webp" alt="Cozy Studio guided recipe index" />                           | <img src="docs/assets/screenshots/styles.webp" alt="Cozy Studio style pack browser" />                                        |
 
 ## Quick start
 
 You need:
 
-- Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
+- Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Cozy Studio never silent-installs Bun.
 - For ChatGPT HTTP: a ChatGPT subscription login through Studio Settings Sign in. That login is not bundled.
 - For Codex app-server: Codex CLI from <https://github.com/openai/codex> with `codex login`.
 - A modern browser
@@ -65,7 +65,7 @@ Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. 
 
 The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations use `outputs/<workspace>/` inside that library by default. Settings → Output can register another output directory and choose folder levels and filename tokens. Changes apply to new jobs; running jobs keep their captured destination. Existing files stay in place and remain available through the catalog. SQLite, references, thumbnails, temporary files, logs, and trash stay in `.studio`.
 
-Portable zip: double-click `Codex Studio.bat` on Windows or `Codex Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Codex Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
+Portable zip: double-click `Cozy Studio.bat` on Windows or `Cozy Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Codex Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
 
 To use Grok Imagine:
 
@@ -95,10 +95,10 @@ App readiness is the source of truth. Bun and Codex version strings are only dia
 
 Do not set `STUDIO_CODEX_CLI_PATH` to a `node_modules/.../vendor` binary. Use a supported launcher such as the desktop binary or `codex.cmd`.
 
-Fast path: ask Codex in this repo to run first setup, or use Copy prompt / Ask Codex on the onboarding surface. That prompt points at `skills/codex-studio-setup/SKILL.md`.
+Fast path: ask Codex in this repo to run first setup, or use Copy prompt / Ask Codex on the onboarding surface. That prompt points at `skills/cozy-studio-setup/SKILL.md`.
 
 ```text
-Set up Codex Studio for first run.
+Set up Cozy Studio for first run.
 ```
 
 Manual path:
@@ -191,7 +191,7 @@ bun run tooling:logs:prune
 
 ## Status
 
-Codex Studio is in open-source preview.
+Cozy Studio is in open-source preview.
 
 - Local development is documented and works.
 - The app is local-first, with separate ChatGPT HTTP and Codex app-server providers.

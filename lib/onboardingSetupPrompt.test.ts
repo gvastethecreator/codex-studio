@@ -164,7 +164,7 @@ describe('buildCodexStudioSetupPrompt', () => {
       readiness: createReadiness({ checks: [] }),
     });
 
-    expect(prompt).toContain('Project root: Codex Studio repository root');
+    expect(prompt).toContain('Project root: Cozy Studio repository root');
     expect(prompt).toContain('Runtime: Web runtime');
     expect(prompt).toContain('Studio Library not detected yet');
     expect(prompt).toContain('Bun runtime metadata: not reported');
