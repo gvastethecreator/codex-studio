@@ -19,6 +19,8 @@ export const OUTPUT_NAME_TOKENS = [
   'job',
   'jobId',
   'recipe',
+  'prompt',
+  'style',
 ] as const;
 export interface OutputLayoutContext {
   jobId: string;
@@ -26,8 +28,48 @@ export interface OutputLayoutContext {
   providerId?: string | null;
   model?: string | null;
   recipeId?: string | null;
+  /** The user's prompt; `{prompt}` keeps its first meaningful words. */
+  promptText?: string | null;
+  /** The applied style name, such as `Kodak Portra 400 - Alec Soth` or `A + B` for a mix. */
+  styleName?: string | null;
   createdAt?: Date;
   extension: string;
+}
+
+const PROMPT_WORD_LIMIT = 6;
+const PROMPT_SLUG_LIMIT = 48;
+const STYLE_SLUG_LIMIT = 40;
+// Short words that make a filename longer without saying what the image shows.
+const FILLER_WORDS = new Set(
+  'a an the of on in at to with and or for from by into de del la el los las un una unos unas y o en con por para al'.split(
+    ' ',
+  ),
+);
+
+function slugWords(value: string) {
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+}
+
+/** `a small wise owl perched on a brass lantern` -> `small-wise-owl-perched-brass-lantern`. */
+export function promptFileSlug(prompt: string | null | undefined) {
+  const words = slugWords(prompt ?? '').filter((word) => !FILLER_WORDS.has(word));
+  return words.slice(0, PROMPT_WORD_LIMIT).join('-').slice(0, PROMPT_SLUG_LIMIT).replace(/-+$/, '');
+}
+
+/** `Kodak Portra 400 - Alec Soth` -> `kodak-portra-400`; a mix joins its styles with `+`. */
+export function styleFileSlug(styleName: string | null | undefined) {
+  return (styleName ?? '')
+    .split('+')
+    .map((part) => slugWords(part.split(' - ')[0] ?? '').join('-'))
+    .filter(Boolean)
+    .join('+')
+    .slice(0, STYLE_SLUG_LIMIT)
+    .replace(/[-+]+$/, '');
 }
 
 export function cleanOutputPathPart(value: string | null | undefined, fallback: string) {
@@ -79,14 +121,15 @@ export function formatOutputRelativePath(
     model: cleanOutputPathPart(context.model, 'model'),
     job: cleanOutputPathPart(context.jobId, 'job'),
     jobId: cleanOutputPathPart(context.jobId, 'job'),
+    prompt: promptFileSlug(context.promptText),
+    style: styleFileSlug(context.styleName),
   };
-  const name = cleanOutputPathPart(
-    organization.fileNameTemplate.replace(
-      /\{([^{}]*)\}/g,
-      (_, key: keyof typeof values) => values[key],
-    ),
-    'image',
-  );
+  // An empty token, such as {style} without a style, leaves no doubled or dangling separator.
+  const filled = organization.fileNameTemplate
+    .replace(/\{([^{}]*)\}/g, (_, key: keyof typeof values) => values[key])
+    .replace(/([_-])[_-]+/g, '$1')
+    .replace(/^[_-]+|[_-]+$/g, '');
+  const name = cleanOutputPathPart(filled, 'image');
   const extension = /^\.[a-z0-9]+$/i.test(context.extension)
     ? context.extension.toLowerCase()
     : '.png';

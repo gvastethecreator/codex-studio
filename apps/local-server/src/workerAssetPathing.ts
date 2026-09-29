@@ -124,6 +124,11 @@ export function createWorkerAssetPathing({
       providerId,
       model: job.execution?.providerOptions?.chatgpt?.image?.model ?? executionOptions.model,
       recipeId: job.sourceSpec?.recipeId ?? null,
+      promptText: job.originalPrompt,
+      styleName:
+        typeof job.sourceSpec?.recipeParams?.presetName === 'string'
+          ? job.sourceSpec.recipeParams.presetName
+          : null,
       extension,
       createdAt: new Date(job.createdAt),
     };

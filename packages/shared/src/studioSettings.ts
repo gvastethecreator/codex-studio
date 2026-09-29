@@ -183,8 +183,9 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     preferredLibraryId: null,
     preferredOutputPath: null,
     outputOrganization: {
-      subfolderTokens: ['workspace'],
-      fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+      // Every image lands in the chosen folder, named by date, style and prompt.
+      subfolderTokens: [],
+      fileNameTemplate: '{date}_{style}_{prompt}',
     },
     providerDefaults: {
       codex: {

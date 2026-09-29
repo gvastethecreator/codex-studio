@@ -14,10 +14,10 @@ import {
 } from './outputOrganization';
 
 describe('outputOrganization', () => {
-  it('defaults new generations under the Workspace slug', () => {
+  it('defaults new generations to one flat folder named by date, style and prompt', () => {
     const settings = createDefaultEditableStudioSettings();
 
-    expect(settings.outputOrganization.subfolderTokens).toEqual(['workspace']);
+    expect(settings.outputOrganization.subfolderTokens).toEqual([]);
     expect(
       buildOutputAssetRelativePath(settings, {
         jobId: 'job-123',
@@ -25,14 +25,21 @@ describe('outputOrganization', () => {
         providerId: 'codex',
         model: 'gpt-5.4-mini',
         recipeId: 'styles',
+        promptText: 'A lighthouse at dawn',
+        styleName: 'Film Noir - John Alton',
         createdAt: new Date(2026, 4, 26, 2, 3, 4),
         extension: '.png',
       }),
-    ).toBe(path.join('outputs', 'default', '20260526-020304-codex-job-123.png'));
+    ).toBe(path.join('outputs', '2026-05-26_film-noir_lighthouse-dawn.png'));
   });
 
   it('uses a named Workspace slug when that token is selected', () => {
-    const settings = createDefaultEditableStudioSettings();
+    const settings = {
+      outputOrganization: {
+        subfolderTokens: ['workspace'] as StudioOutputSubfolderToken[],
+        fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+      },
+    };
 
     expect(
       buildOutputAssetRelativePath(settings, {

@@ -12,6 +12,7 @@ export const OUTPUT_SUBFOLDER_PRESETS: {
   label: string;
   value: StudioOutputSubfolderToken[];
 }[] = [
+  { label: 'None, all in one folder', value: [] },
   { label: 'Workspace', value: ['workspace'] },
   { label: 'Date', value: ['date'] },
   { label: 'Workspace / Date', value: ['workspace', 'date'] },
@@ -54,8 +55,8 @@ export function createInitialStudioSettingsFormState(): StudioSettingsFormState 
     outputDirectory: '',
     defaultOutputMode: 'studio_library',
     preferredOutputPath: '',
-    outputSubfolderPreset: encodeSubfolderTokens(['workspace']),
-    outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
+    outputSubfolderPreset: encodeSubfolderTokens([]),
+    outputFileNameTemplate: '{date}_{style}_{prompt}',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
     intentionalStylesV1: false,

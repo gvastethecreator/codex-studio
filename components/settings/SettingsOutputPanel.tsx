@@ -13,6 +13,8 @@ import {
 import type { StudioOutputOrganizationSettings } from '../../packages/shared/src/studioSettings';
 
 const NAME_PRESETS = [
+  { label: 'Date · style · prompt', value: '{date}_{style}_{prompt}' },
+  { label: 'Date · time · prompt', value: '{date}_{time}_{prompt}' },
   { label: 'Timestamp · provider · job', value: '{timestamp}-{provider}-{jobId}' },
   { label: 'Workspace · workflow · time', value: '{workspace}-{workflow}-{timestamp}' },
   { label: 'Workflow · date', value: '{workflow}-{date}' },
@@ -43,6 +45,8 @@ export function SettingsOutputPanel({
         providerId: value.defaultProviderId,
         model: 'gpt-image',
         recipeId: value.preferredWorkflow === 'default' ? null : value.preferredWorkflow,
+        promptText: 'A small wise owl perched on a brass lantern',
+        styleName: 'Kodak Portra 400 - Alec Soth River Portraits',
         createdAt: exampleDate,
         extension: '.png',
       });

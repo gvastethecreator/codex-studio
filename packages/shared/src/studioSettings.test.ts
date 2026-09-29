@@ -23,8 +23,8 @@ describe('studioSettings', () => {
       preferredLibraryId: null,
       preferredOutputPath: null,
       outputOrganization: {
-        subfolderTokens: ['workspace'],
-        fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+        subfolderTokens: [],
+        fileNameTemplate: '{date}_{style}_{prompt}',
       },
       providerDefaults: {
         codex: {
