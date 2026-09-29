@@ -11,7 +11,7 @@ It does not bundle ChatGPT login. Sign in with ChatGPT from Cozy Studio after
 it opens. Install Codex CLI only when you choose the Codex connection.
 
 If STUDIO_LIBRARY_DIR is unset, portable start uses a folder named
-`Codex Studio Library` beside this unpacked folder.
+`Cozy Studio Library` beside this unpacked folder.
 
 Linux: there is no first-class launcher in this zip. Best-effort is to install
 Bun, then from this folder run:

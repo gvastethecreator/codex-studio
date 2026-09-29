@@ -254,8 +254,10 @@ export function onboardingFactsFromHealth(input: {
   };
 }
 
-export const DEFAULT_STUDIO_LIBRARY_FOLDER_NAME = 'Codex Studio';
-export const PORTABLE_STUDIO_LIBRARY_FOLDER_NAME = 'Codex Studio Library';
+export const DEFAULT_STUDIO_LIBRARY_FOLDER_NAME = 'Cozy Studio';
+export const PORTABLE_STUDIO_LIBRARY_FOLDER_NAME = 'Cozy Studio Library';
+/** Folder inside the user's Pictures folder that receives generated images by default. */
+export const DEFAULT_STUDIO_IMAGES_FOLDER_NAME = 'Cozy Studio';
 
 const CLOUD_SYNC_MARKERS: Array<{ needle: string; label: string }> = [
   { needle: '/onedrive', label: 'OneDrive' },

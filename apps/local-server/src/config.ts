@@ -3,7 +3,7 @@ import path from 'node:path';
 import type { StudioSettings } from '../../../packages/shared/src';
 import { BUILT_IN_GENERATION_PROVIDERS } from '../../../packages/shared/src/generationContracts';
 import { validateWorkerLimits } from '../../../packages/shared/src/workerContracts';
-import { DEFAULT_STUDIO_LIBRARY_FOLDER_NAME } from '../../../packages/shared/src/onboardingContracts';
+import { DEFAULT_STUDIO_IMAGES_FOLDER_NAME } from '../../../packages/shared/src/onboardingContracts';
 import { resolveUserHome } from './platformHome';
 
 const DEFAULT_SERVER_PORT = 17223;
@@ -19,8 +19,42 @@ export function getEnvLocalPath() {
   return path.resolve(process.cwd(), '.env.local');
 }
 
+function absoluteEnvPath(value: string | undefined, pathApi: typeof path.win32) {
+  const trimmed = value?.trim();
+  return trimmed && pathApi.isAbsolute(trimmed) ? trimmed : null;
+}
+
+/**
+ * Private per-user folder for Cozy Studio's own data: the Studio Library (SQLite, settings, logs,
+ * thumbnails, references) and installed style packs. Generated images go elsewhere.
+ */
+export function resolveStudioDataRoot(
+  env: Record<string, string | undefined> = process.env,
+  platform: NodeJS.Platform = process.platform,
+  home = resolveUserHome({ env: env as NodeJS.ProcessEnv, platform }),
+) {
+  if (platform === 'win32')
+    return path.win32.join(
+      absoluteEnvPath(env.LOCALAPPDATA, path.win32) ?? path.win32.join(home, 'AppData', 'Local'),
+      'Cozy Studio',
+    );
+  if (platform === 'darwin')
+    return path.posix.join(home, 'Library', 'Application Support', 'Cozy Studio');
+  return path.posix.join(
+    absoluteEnvPath(env.XDG_DATA_HOME, path.posix) ?? path.posix.join(home, '.local', 'share'),
+    'cozy-studio',
+  );
+}
+
 export function resolveDefaultLibraryDir() {
-  return path.join(resolveUserHome(), DEFAULT_STUDIO_LIBRARY_FOLDER_NAME);
+  return path.join(resolveStudioDataRoot(), 'Library');
+}
+
+/** Where generated images go by default: `STUDIO_IMAGES_DIR`, else Pictures/Cozy Studio. */
+export function resolveDefaultImagesDir(env: Record<string, string | undefined> = process.env) {
+  const configured = env.STUDIO_IMAGES_DIR?.trim();
+  if (configured && path.isAbsolute(configured)) return configured;
+  return path.join(resolveUserHome(), 'Pictures', DEFAULT_STUDIO_IMAGES_FOLDER_NAME);
 }
 
 export function hasEnvLocalFile() {

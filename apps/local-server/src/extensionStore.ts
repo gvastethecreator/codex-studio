@@ -1,6 +1,7 @@
 import { existsSync } from 'node:fs';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
+import { resolveStudioDataRoot } from './config';
 import {
   EXTENSION_LAYERS,
   EXTENSION_MANIFEST_FILE,
@@ -31,14 +32,15 @@ export interface ExtensionStore {
 }
 
 const DEFAULT_BUILT_IN_SOURCE = path.join('.local', 'extensions', 'builtin');
-const DEFAULT_INSTALL_DIR = path.join('.local', 'extensions', 'installed');
 
 /** Folder that receives extensions installed from remote sources. */
 export function resolveExtensionInstallDir(
   env: Record<string, string | undefined> = process.env,
   cwd = process.cwd(),
 ) {
-  return path.resolve(cwd, env.STUDIO_EXTENSION_INSTALL_DIR || DEFAULT_INSTALL_DIR);
+  return env.STUDIO_EXTENSION_INSTALL_DIR
+    ? path.resolve(cwd, env.STUDIO_EXTENSION_INSTALL_DIR)
+    : path.join(resolveStudioDataRoot(env), 'Extensions');
 }
 
 /**

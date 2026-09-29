@@ -5,12 +5,26 @@ import {
   OnboardingSetupError,
   upsertStudioLibraryDir,
 } from './onboardingSetup';
-import { resolveDefaultLibraryDir } from './config';
-import { DEFAULT_STUDIO_LIBRARY_FOLDER_NAME } from '../../../packages/shared/src';
+import { resolveDefaultImagesDir, resolveStudioDataRoot } from './config';
 
 describe('onboardingSetup', () => {
-  it('defaults first-run Studio Library to Codex Studio in the user home', () => {
-    expect(path.basename(resolveDefaultLibraryDir())).toBe(DEFAULT_STUDIO_LIBRARY_FOLDER_NAME);
+  it('keeps Studio data in the private app-data folder and images in Pictures', () => {
+    expect(
+      resolveStudioDataRoot(
+        { LOCALAPPDATA: String.raw`C:\Users\a\AppData\Local` },
+        'win32',
+        String.raw`C:\Users\a`,
+      ),
+    ).toBe(String.raw`C:\Users\a\AppData\Local\Cozy Studio`);
+    expect(resolveStudioDataRoot({}, 'darwin', '/Users/a')).toBe(
+      '/Users/a/Library/Application Support/Cozy Studio',
+    );
+    expect(resolveStudioDataRoot({ XDG_DATA_HOME: '/data' }, 'linux', '/home/a')).toBe(
+      '/data/cozy-studio',
+    );
+    const imagesDir = path.resolve('/art/cozy');
+    expect(resolveDefaultImagesDir({ STUDIO_IMAGES_DIR: imagesDir })).toBe(imagesDir);
+    expect(path.basename(resolveDefaultImagesDir({}))).toBe('Cozy Studio');
   });
 
   it('rejects mutating Setup without consent and does not write', () => {

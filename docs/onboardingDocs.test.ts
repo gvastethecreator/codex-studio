@@ -13,8 +13,9 @@ describe('onboarding docs contract', () => {
   const skill = readDoc('skills/cozy-studio-setup/SKILL.md');
   const four = [readme, troubleshooting, electron, skill].join('\n---\n');
 
-  it('README first-run path matches the CTA matrix and names Codex Studio in user home', () => {
-    expect(readme).toContain('folder named `Codex Studio` in your user home');
+  it('README first-run path matches the CTA matrix and names the data and images folders', () => {
+    expect(readme).toContain('private app-data folder');
+    expect(readme).toContain('Pictures folder');
     expect(readme).toContain('never silent-installs Bun');
     expect(readme).toContain('https://bun.sh/docs/installation');
     expect(readme).toContain('https://github.com/openai/codex');
@@ -22,7 +23,7 @@ describe('onboarding docs contract', () => {
     expect(readme).toContain('bun run studio:onboard --setup');
     expect(readme).toContain('Start app-server');
     expect(readme).toContain('Open Studio');
-    expect(readme).toContain('outputs/<workspace>/');
+    expect(readme).toContain('{date}_{style}_{prompt}');
     expect(readme).not.toMatch(/as `AI-Studio-Library`/);
   });
 
@@ -30,7 +31,7 @@ describe('onboarding docs contract', () => {
     expect(troubleshooting).toContain('bun run studio:onboard');
     expect(troubleshooting).toContain('Mutating steps need an explicit yes');
     expect(troubleshooting).toContain('STUDIO_LIBRARY_DIR');
-    expect(troubleshooting).toContain('Codex Studio');
+    expect(troubleshooting).toContain('Cozy Studio');
     expect(troubleshooting).toContain('Preferred Output Path is not the generate destination');
   });
 

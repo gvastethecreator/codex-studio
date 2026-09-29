@@ -48,6 +48,10 @@ import {
   ONBOARDING_GROK_INSTALL_URL,
 } from '../lib/onboardingGrokRow';
 import { StudioApiError } from '../services/studio-api/http';
+import {
+  getEditableStudioSettings,
+  updateEditableStudioSettings,
+} from '../services/studio-api/settings';
 import { listInstalledExtensions } from '../services/studio-api/extensions';
 import { runOnboardingHostAction, runOnboardingSetup } from '../services/studio-api/runtime';
 import { createStudioEventStream } from '../services/studioEventSource';
@@ -142,6 +146,110 @@ function CheckRow({
         <span className="hidden sm:inline">{status}</span>
         <StatusIcon size={16} />
       </div>
+    </div>
+  );
+}
+
+/** Where generated images land; a new Studio uses Pictures/Cozy Studio until the user picks. */
+function ImagesFolderRow({ isOpen }: { isOpen: boolean }) {
+  const [folder, setFolder] = React.useState<string | null | undefined>(undefined);
+  const [draft, setDraft] = React.useState('');
+  const [editing, setEditing] = React.useState(false);
+  const [saving, setSaving] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    let cancelled = false;
+    getEditableStudioSettings()
+      .then((settings) => {
+        if (!cancelled) setFolder(settings.outputDirectory);
+      })
+      .catch(() => {
+        if (!cancelled) setFolder(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [isOpen]);
+
+  const save = async () => {
+    setSaving(true);
+    setError(null);
+    try {
+      const saved = await updateEditableStudioSettings({ outputDirectory: draft.trim() || null });
+      setFolder(saved.outputDirectory);
+      setEditing(false);
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : String(reason));
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  return (
+    <div className="onboarding-connection">
+      <span
+        className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] text-[color:var(--wb-ink)]"
+        aria-hidden="true"
+      >
+        <Folder size={18} />
+      </span>
+      <div className="min-w-0 flex-1">
+        <h3>Images folder</h3>
+        {editing ? (
+          <input
+            className="studio-field mt-2 w-full font-mono text-sm"
+            aria-label="Images folder"
+            value={draft}
+            placeholder="Absolute folder path"
+            onChange={(event) => setDraft(event.target.value)}
+          />
+        ) : (
+          <p className="break-all font-mono">
+            {folder === undefined
+              ? 'Checking…'
+              : (folder ?? 'Inside the Studio Library, in its outputs folder.')}
+          </p>
+        )}
+        {error ? (
+          <p role="alert" className="text-[color:var(--wb-danger)]">
+            {error}
+          </p>
+        ) : null}
+      </div>
+      {editing ? (
+        <div className="flex gap-2">
+          <button
+            type="button"
+            className="studio-ghost-control onboarding-connections-button px-3"
+            onClick={() => setEditing(false)}
+            disabled={saving}
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="studio-primary-control onboarding-connections-button px-3"
+            onClick={() => void save()}
+            disabled={saving || !draft.trim()}
+          >
+            {saving ? 'Saving…' : 'Use this folder'}
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          className="studio-ghost-control onboarding-connections-button px-3"
+          onClick={() => {
+            setDraft(folder ?? '');
+            setEditing(true);
+          }}
+          disabled={folder === undefined}
+        >
+          Change
+        </button>
+      )}
     </div>
   );
 }
@@ -329,8 +437,8 @@ function InAppSetupForm({
         Studio Library
       </p>
       <p className="mt-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-1  ">
-        Choose an absolute folder. By default the library is a folder named “Codex Studio” in your
-        home.
+        Choose an absolute folder. By default the library lives in Cozy Studio's private app-data
+        folder, and images go to Pictures/Cozy Studio.
       </p>
       <label className="mt-3 block xl:mt-2">
         <span className="sr-only">Studio Library path</span>
@@ -887,6 +995,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     </button>
                   </div>
                   <StylePacksRow isOpen={isOpen} onOpen={onOpenStylePacks} />
+                  <ImagesFolderRow isOpen={isOpen} />
                   <div className="onboarding-diagnostics min-w-0">
                     <details open={showInAppSetup || Boolean(error)}>
                       <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">

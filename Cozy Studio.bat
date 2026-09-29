@@ -14,7 +14,7 @@ if errorlevel 1 (
 )
 
 set "STUDIO_PORTABLE=1"
-if not defined STUDIO_LIBRARY_DIR set "STUDIO_LIBRARY_DIR=%~dp0Codex Studio Library"
+if not defined STUDIO_LIBRARY_DIR set "STUDIO_LIBRARY_DIR=%~dp0Cozy Studio Library"
 
 bun run scripts/portable-start.ts
 if errorlevel 1 (

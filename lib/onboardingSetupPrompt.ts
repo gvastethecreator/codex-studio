@@ -89,7 +89,7 @@ export function buildCodexStudioSetupPrompt({
     '- Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.',
     '- Do not delete, move, compact, or rewrite Studio Library data unless the user explicitly confirms it.',
     '- Never silent-install Bun or Codex CLI. Recommended image login is Studio Settings Sign in, then the ChatGPT provider. `codex login` is only for an explicit Codex app-server job.',
-    '- Default Studio Library is a folder named `Codex Studio` in the user home unless STUDIO_LIBRARY_DIR is already set. Do not treat Preferred Output Path as the generate destination.',
+    '- Default Studio Library is `Library` inside the private Cozy Studio app-data folder unless STUDIO_LIBRARY_DIR is already set. Generated images go to Pictures/Cozy Studio. Do not treat Preferred Output Path as the generate destination.',
     '- Use Bun scripts from package.json and run broad checks only at closeout.',
     '- Treat Bun and Codex command output as diagnostic metadata only. Do not block setup on an exact tool release when app readiness, supported scripts, app-server support, and Local Codex Session are healthy.',
     '',

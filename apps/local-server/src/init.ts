@@ -1,10 +1,12 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import { getSettings, loadDotEnvLocal } from './config';
+import { getSettings, loadDotEnvLocal, resolveDefaultImagesDir } from './config';
+import { getSettingValue, setSettingValue } from './db/settings';
+import { EDITABLE_STUDIO_SETTINGS_KEY, updateEditableStudioSettings } from './studioSettingsStore';
 import { migrateDb } from './db/migrations';
 import { ensureDefaultWorkspace } from './db/workspaces';
 import { ensureLibrary, resolveLibraryPath } from './library';
-import { ensureDefaultLibrary } from './libraries';
+import { ensureDefaultLibrary, registerOutputDirectory } from './libraries';
 import { log } from './logger';
 
 export function initStudio() {
@@ -34,6 +36,19 @@ export function initStudio() {
         '',
       ].join('\n'),
       'utf8',
+    );
+  }
+
+  // A new Studio Library sends images to Pictures/Cozy Studio; onboarding can pick another folder.
+  // Tests use temporary libraries and never touch the real Pictures folder.
+  const testRun = Boolean(process.env.VITEST) && !process.env.STUDIO_IMAGES_DIR;
+  if (!testRun && getSettingValue(EDITABLE_STUDIO_SETTINGS_KEY) === null) {
+    const destination = registerOutputDirectory(resolveDefaultImagesDir());
+    updateEditableStudioSettings(
+      { getSetting: getSettingValue, setSetting: setSettingValue },
+      {},
+      new Date().toISOString(),
+      destination,
     );
   }
 

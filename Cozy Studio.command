@@ -16,7 +16,7 @@ fi
 
 export STUDIO_PORTABLE=1
 if [ -z "${STUDIO_LIBRARY_DIR:-}" ]; then
-  export STUDIO_LIBRARY_DIR="$(pwd)/Codex Studio Library"
+  export STUDIO_LIBRARY_DIR="$(pwd)/Cozy Studio Library"
 fi
 
 if ! bun run scripts/portable-start.ts; then

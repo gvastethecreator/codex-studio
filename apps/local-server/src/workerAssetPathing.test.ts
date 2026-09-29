@@ -31,6 +31,17 @@ function createJob(overrides: Partial<Job> = {}): Job {
   };
 }
 
+/** Output layout with a Workspace subfolder, as these tests check the folder slugs. */
+function workspaceLayoutSettings() {
+  return {
+    ...createDefaultEditableStudioSettings(),
+    outputOrganization: {
+      subfolderTokens: ['workspace' as const],
+      fileNameTemplate: '{timestamp}-{provider}-{jobId}',
+    },
+  };
+}
+
 describe('workerAssetPathing', () => {
   it('uses the shared preview, reserves collisions, and keeps a captured destination', () => {
     const root = mkdtempSync(path.join(os.tmpdir(), 'output-capture-'));
@@ -94,7 +105,7 @@ describe('workerAssetPathing', () => {
           reasoningEffort: 'medium',
           serviceTier: null,
         }),
-        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        readEditableStudioSettings: workspaceLayoutSettings,
         getSetting: () => null,
         setSetting: () => {},
         resolveLibraryPath: (...segments: string[]) => path.join(tempRoot, ...segments),
@@ -137,7 +148,7 @@ describe('workerAssetPathing', () => {
           reasoningEffort: 'medium',
           serviceTier: null,
         }),
-        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        readEditableStudioSettings: workspaceLayoutSettings,
         getSetting: () => null,
         setSetting: () => {},
         resolveLibraryPath: () => fixedTarget,
@@ -165,7 +176,7 @@ describe('workerAssetPathing', () => {
           reasoningEffort: 'medium',
           serviceTier: null,
         }),
-        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        readEditableStudioSettings: workspaceLayoutSettings,
         getSetting: () => null,
         setSetting: () => {},
         resolveLibraryPath: (...segments: string[]) => path.join(bootstrapRoot, ...segments),
@@ -197,7 +208,7 @@ describe('workerAssetPathing', () => {
           reasoningEffort: 'medium',
           serviceTier: null,
         }),
-        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        readEditableStudioSettings: workspaceLayoutSettings,
         getSetting: () => null,
         setSetting: () => {},
         resolveLibraryPath: (...segments: string[]) => path.join(tempRoot, ...segments),

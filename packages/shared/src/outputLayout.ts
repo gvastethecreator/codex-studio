@@ -124,11 +124,13 @@ export function formatOutputRelativePath(
     prompt: promptFileSlug(context.promptText),
     style: styleFileSlug(context.styleName),
   };
-  // An empty token, such as {style} without a style, leaves no doubled or dangling separator.
+  // An empty token, such as {style} without a style, drops one separator next to it, so the
+  // name keeps no doubled or dangling separator.
   const filled = organization.fileNameTemplate
-    .replace(/\{([^{}]*)\}/g, (_, key: keyof typeof values) => values[key])
-    .replace(/([_-])[_-]+/g, '$1')
-    .replace(/^[_-]+|[_-]+$/g, '');
+    .replace(/\{([^{}]*)\}/g, (_, key: keyof typeof values) => values[key] || '\u0000')
+    .replace(/([_-]?)\u0000(?:[_-]?\u0000)*([_-]?)/g, (_, before: string, after: string) =>
+      before && after ? before : '',
+    );
   const name = cleanOutputPathPart(filled, 'image');
   const extension = /^\.[a-z0-9]+$/i.test(context.extension)
     ? context.extension.toLowerCase()

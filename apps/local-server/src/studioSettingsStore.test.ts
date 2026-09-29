@@ -26,7 +26,7 @@ describe('studioSettingsStore', () => {
 
     expect(settings.defaultProviderId).toBe('chatgpt');
     expect(settings.defaultOutputMode).toBe('studio_library');
-    expect(settings.outputOrganization.subfolderTokens).toEqual(['workspace']);
+    expect(settings.outputOrganization.subfolderTokens).toEqual([]);
     expect(settings.updatedAt).toBe(null);
   });
 

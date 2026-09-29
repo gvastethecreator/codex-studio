@@ -45,10 +45,11 @@ The product loop is detect, consent, mutate, stream, re-validate. One primary CT
 Ask Codex is an extra path when Codex CLI exists. Grok Imagine is an optional provider
 row, never a Studio installer.
 
-Default Studio Library is a folder named `Codex Studio` in the user home. Existing
-`STUDIO_LIBRARY_DIR` is kept. Do not auto-migrate `AI-Studio-Library`. Preferred Output
-Path is not the generate destination. New generations go under `outputs/<workspace>/`
-inside the Studio Library.
+Default Studio Library is `Library` inside the private Cozy Studio app-data folder
+(`%LOCALAPPDATA%\Cozy Studio` on Windows). Existing `STUDIO_LIBRARY_DIR` is kept. Do not
+auto-migrate an older library. Preferred Output Path is not the generate destination.
+New generations go to Pictures/Cozy Studio, or the images folder chosen in onboarding,
+named `{date}_{style}_{prompt}`.
 
 ## Safety
 

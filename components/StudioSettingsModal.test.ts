@@ -52,8 +52,8 @@ describe('StudioSettingsModal provider defaults', () => {
     ).toContain("label: 'Providers & accounts'");
   });
 
-  it('keeps Workspace-first output presets alongside date provider model and recipe', () => {
-    expect(OUTPUT_SUBFOLDER_PRESETS[0]).toEqual({ label: 'Workspace', value: ['workspace'] });
+  it('keeps a flat default output preset alongside date provider model and recipe', () => {
+    expect(OUTPUT_SUBFOLDER_PRESETS[0]).toEqual({ label: 'None, all in one folder', value: [] });
     expect(OUTPUT_SUBFOLDER_PRESETS.map((preset) => preset.value)).toContainEqual([
       'date',
       'provider',

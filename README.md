@@ -63,9 +63,9 @@ The first-run surface is a detect, consent, mutate, stream, re-validate loop. On
 
 Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Optional providers are separate backend rows, not Studio installers.
 
-The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations use `outputs/<workspace>/` inside that library by default. Settings → Output can register another output directory and choose folder levels and filename tokens. Changes apply to new jobs; running jobs keep their captured destination. Existing files stay in place and remain available through the catalog. SQLite, references, thumbnails, temporary files, logs, and trash stay in `.studio`.
+Cozy Studio keeps its own data apart from your images. The Studio Library (SQLite, settings, references, thumbnails, temporary files, logs and trash) and installed style packs live in a private app-data folder: `%LOCALAPPDATA%\Cozy Studio` on Windows, `~/Library/Application Support/Cozy Studio` on macOS and `~/.local/share/cozy-studio` on Linux. Generated images go to a `Cozy Studio` folder in your Pictures folder, all in one place, named `{date}_{style}_{prompt}` (for example `2026-09-28_kodak-portra-400_small-wise-owl.png`). Onboarding shows the images folder and lets you pick another. Settings → Output can add subfolders and change the filename tokens. Changes apply to new jobs; running jobs keep their captured destination. Existing `STUDIO_LIBRARY_DIR` is kept, `STUDIO_IMAGES_DIR` sets the default images folder, and the app does not auto-migrate an older library.
 
-Portable zip: double-click `Cozy Studio.bat` on Windows or `Cozy Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Codex Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
+Portable zip: double-click `Cozy Studio.bat` on Windows or `Cozy Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Cozy Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
 
 To use Grok Imagine:
 
@@ -131,17 +131,17 @@ For manual setup, copy `.env.example` to `.env.local`.
 
 Worker capacity is configured on the host and takes effect after a server restart. `STUDIO_MAX_CONCURRENT_JOBS` is the global ceiling (default 4, range 1–16). Each `STUDIO_MAX_CONCURRENT_<PROVIDER>_JOBS` value limits that provider (default 1, no higher than the global ceiling). The Codex-named setting now controls only Codex; set the global variable explicitly when updating an older checkout. Invalid limits stop startup. Jobs separates Active, Review, and History, with a workspace filter for each view. Active contains only queued and running jobs; jobs needing review stay in Review and do not appear as loading images in the gallery. Batch progress and retry are available within each job, and Worker details shows active slots and provider limits. Queued jobs show why they are waiting. Available providers take turns; jobs within one provider keep their arrival order. Cancellation and asset import retain their slot until processing finishes.
 
-By default, the Studio Library lives under your OS home directory as `Codex Studio`. Set a custom absolute path only when you need one:
+By default, the Studio Library lives in the private app-data folder described above. Set a custom absolute path only when you need one:
 
 ```env
 # Windows
-STUDIO_LIBRARY_DIR=C:\Users\<your-user>\Codex Studio
+STUDIO_LIBRARY_DIR=D:\Cozy Studio Library
 
 # macOS
-STUDIO_LIBRARY_DIR=/Users/<your-user>/Codex Studio
+STUDIO_LIBRARY_DIR=/Users/<your-user>/Cozy Studio Library
 
 # Linux
-STUDIO_LIBRARY_DIR=/home/<your-user>/Codex Studio
+STUDIO_LIBRARY_DIR=/home/<your-user>/Cozy Studio Library
 ```
 
 Preferred Output Path in Settings is an External Output Source scan hint. Generate still writes inside the Studio Library.

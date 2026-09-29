@@ -28,10 +28,10 @@ bun run studio:onboard --setup
 
 Mutating steps need an explicit yes. On a TTY the command asks `[y/N]`. Agents that already have user authority can pass `--yes`. A no leaves disk unchanged.
 
-Default Studio Library is `Codex Studio` in the user home. To keep or choose another folder, set an absolute path in `.env.local`:
+Default Studio Library is `Library` inside the private Cozy Studio app-data folder (`%LOCALAPPDATA%\Cozy Studio` on Windows). Generated images go to Pictures/Cozy Studio. To keep or choose another library folder, set an absolute path in `.env.local`:
 
 ```env
-STUDIO_LIBRARY_DIR=C:\Users\<you>\Codex Studio
+STUDIO_LIBRARY_DIR=D:\Cozy Studio Library
 ```
 
 Then run `bun run studio:init`. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`.
@@ -215,7 +215,7 @@ The full test task caps Vitest at eight workers to avoid Windows filesystem and 
 
 ## Studio Library problems
 
-If the default `Codex Studio` home folder is wrong for this machine, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. Then run:
+If the default Cozy Studio library folder is wrong for this machine, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. Then run:
 
 ```bash
 bun run studio:init
