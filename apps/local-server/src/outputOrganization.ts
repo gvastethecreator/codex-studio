@@ -19,6 +19,8 @@ export interface OutputAssetPathContext {
   providerId: string | null | undefined;
   model: string | null | undefined;
   recipeId: string | null | undefined;
+  promptText?: string | null;
+  styleName?: string | null;
   createdAt?: Date;
   extension: string;
 }
