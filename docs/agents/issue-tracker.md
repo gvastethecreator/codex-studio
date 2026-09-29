@@ -4,12 +4,12 @@ GitHub Issues and the linked GitHub Project hold live work state. Local Markdown
 
 ## Identity
 
-- Repository: `gvastethecreator/codex-studio`
+- Repository: `gvastethecreator/cozy-studio`
 - Project owner: `gvastethecreator`
 - Project number: `8`
 - Project title: `Codex Studio`
 - Project URL: `https://github.com/users/gvastethecreator/projects/8`
-- Local root: `.scratch/codex-studio/`
+- Local root: `.scratch/cozy-studio/`
 
 ## Authority
 
@@ -20,9 +20,9 @@ GitHub Issues and the linked GitHub Project hold live work state. Local Markdown
 
 ## Local layout
 
-- Spec: `.scratch/codex-studio/spec.md`
-- Ticket mirrors: `.scratch/codex-studio/issues/<NN>-<slug>.md`
-- Rejected requests: `.scratch/codex-studio/out-of-scope/<concept>.md`
+- Spec: `.scratch/cozy-studio/spec.md`
+- Ticket mirrors: `.scratch/cozy-studio/issues/<NN>-<slug>.md`
+- Rejected requests: `.scratch/cozy-studio/out-of-scope/<concept>.md`
 - Execution state: `.scratch/planning/`
 - Decision maps: `.scratch/wayfinder/<effort-slug>/`
 - Hygiene archive: `.scratch/archive/<YYYY-MM-DD>-<slug>/`

@@ -5,7 +5,7 @@ import type { Job, JobDetailResponse } from '../packages/shared/src';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 
-const temporaryRoot = mkdtempSync(path.join(tmpdir(), 'codex-studio-portability-'));
+const temporaryRoot = mkdtempSync(path.join(tmpdir(), 'cozy-studio-portability-'));
 const libraryDir = path.join(temporaryRoot, 'library');
 const reservation = Bun.serve({ port: 0, fetch: () => new Response('reserved') });
 const serverPort = reservation.port;
@@ -123,7 +123,7 @@ try {
   await Promise.race([server.exited, Bun.sleep(2_000)]);
   const relativeRoot = path.relative(tmpdir(), path.resolve(temporaryRoot));
   assert.ok(
-    relativeRoot.startsWith('codex-studio-portability-') && !relativeRoot.includes(path.sep),
+    relativeRoot.startsWith('cozy-studio-portability-') && !relativeRoot.includes(path.sep),
   );
   rmSync(temporaryRoot, { force: true, maxRetries: 5, recursive: true, retryDelay: 100 });
 }

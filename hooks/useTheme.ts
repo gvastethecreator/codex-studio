@@ -16,7 +16,7 @@ import {
 import { useLocalStorage } from './useLocalStorage';
 import { MOTION_CHANGE_EVENT, type MotionPreference } from '../lib/motionPreference';
 
-const STORAGE_KEY = 'codex-studio-accent-palette';
+const STORAGE_KEY = 'cozy-studio-accent-palette';
 
 export type AccentPalette = {
   name: string;
@@ -233,7 +233,7 @@ const ThemeContext = createContext<ThemeContextValue | null>(null);
 function useThemeState(): ThemeContextValue {
   const [preview, setPreview] = useState<AppearancePreferences | null>(null);
   const [storedMotion, setStoredMotion] = useLocalStorage<MotionPreference>(
-    'codex-studio-motion',
+    'cozy-studio-motion',
     'system',
   );
   const [storedPalette, setStoredPalette] = useLocalStorage<string>(STORAGE_KEY, 'Apricot');

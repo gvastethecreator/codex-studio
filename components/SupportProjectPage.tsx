@@ -61,7 +61,7 @@ export function SupportProjectPage({ isOpen, onClose }: { isOpen: boolean; onClo
         <p className="mt-4 text-sm leading-6 text-[color:var(--wb-muted)]">
           You can also help by{' '}
           <a
-            href="https://github.com/gvastethecreator/codex-studio/issues"
+            href="https://github.com/gvastethecreator/cozy-studio/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="underline"

@@ -202,21 +202,21 @@ export function resolveSubscriptionAuthFilePath({
   if (platform === 'win32') {
     privateStateRoot =
       absoluteEnvPath(env.LOCALAPPDATA, pathApi) ?? pathApi.join(homeDir, 'AppData', 'Local');
-    return pathApi.join(privateStateRoot, 'Codex Studio', 'auth', STUDIO_OAUTH_FILE_NAME);
+    return pathApi.join(privateStateRoot, 'Cozy Studio', 'auth', STUDIO_OAUTH_FILE_NAME);
   }
   if (platform === 'darwin') {
     return pathApi.join(
       homeDir,
       'Library',
       'Application Support',
-      'Codex Studio',
+      'Cozy Studio',
       'auth',
       STUDIO_OAUTH_FILE_NAME,
     );
   }
   privateStateRoot =
     absoluteEnvPath(env.XDG_STATE_HOME, pathApi) ?? pathApi.join(homeDir, '.local', 'state');
-  return pathApi.join(privateStateRoot, 'codex-studio', 'auth', STUDIO_OAUTH_FILE_NAME);
+  return pathApi.join(privateStateRoot, 'cozy-studio', 'auth', STUDIO_OAUTH_FILE_NAME);
 }
 
 function defaultFilePath() {

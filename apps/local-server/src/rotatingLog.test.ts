@@ -8,7 +8,7 @@ import { appendRotatingLog } from './rotatingLog';
 
 describe('appendRotatingLog', () => {
   it('rotates oversized logs into bounded history before appending', () => {
-    const root = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-log-'));
+    const root = mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-log-'));
     try {
       const logPath = path.join(root, 'studio.log');
       writeFileSync(logPath, 'x'.repeat(24), 'utf8');

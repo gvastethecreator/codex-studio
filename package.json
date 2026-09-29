@@ -1,5 +1,5 @@
 {
-  "name": "codex-studio",
+  "name": "cozy-studio",
   "version": "0.0.0",
   "private": true,
   "description": "Local-first studio to generate and manage images through ChatGPT HTTP, Codex app-server, and other providers.",

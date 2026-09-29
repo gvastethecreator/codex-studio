@@ -24,7 +24,7 @@ Bring a Cozy Studio checkout to a runnable local state:
 ## Onboarding loop
 
 Copy prompt and Ask Codex on the welcome surface use this skill as the Setup Prompt
-(`CODEX_STUDIO_SETUP_SKILL_PATH` in `lib/onboardingSetupPrompt.ts`). Keep that
+(`COZY_STUDIO_SETUP_SKILL_PATH` in `lib/onboardingSetupPrompt.ts`). Keep that
 ownership. Do not move the prompt body into the renderer.
 
 The product loop is detect, consent, mutate, stream, re-validate. One primary CTA:

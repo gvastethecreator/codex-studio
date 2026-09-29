@@ -21,7 +21,7 @@ afterEach(() => {
 });
 
 function createRegistryRoot() {
-  const directory = mkdtempSync(path.join(tmpdir(), 'codex-studio-session-pool-'));
+  const directory = mkdtempSync(path.join(tmpdir(), 'cozy-studio-session-pool-'));
   temporaryRegistryRoots.push(directory);
   return directory;
 }

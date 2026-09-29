@@ -43,7 +43,7 @@ const MAX_IMAGE_BYTES = 25 * 1024 * 1024;
 const MAX_PROCESS_OUTPUT_BYTES = 4 * 1024 * 1024;
 const DEFAULT_TIMEOUT_MS = 15 * 60 * 1000;
 const CONVERSATION_ID_PATTERN = /^[A-Za-z0-9][A-Za-z0-9-]{7,127}$/;
-const TEMPORARY_DIRECTORY_PREFIX = 'codex-studio-antigravity-';
+const TEMPORARY_DIRECTORY_PREFIX = 'cozy-studio-antigravity-';
 
 export interface AntigravityCliRunResult {
   status: number;
@@ -433,7 +433,7 @@ export function createAntigravityImageExecutor({
   resolveHome = resolveAntigravityHome,
   resolveDefaultLibraryPath = resolveLibraryPath,
   now = () => Date.now(),
-  createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'codex-studio-antigravity-')),
+  createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-antigravity-')),
 }: AntigravityImageExecutorDependencies = {}): ExternalProviderExecutor {
   return async function executeAntigravityImage({
     providerId,

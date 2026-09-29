@@ -98,7 +98,7 @@ describe('subscription auth store', () => {
           STUDIO_LIBRARY_DIR: 'D:\\Portable\\Codex Studio Library',
         },
       }),
-    ).toBe('C:\\Users\\studio\\AppData\\Local\\Codex Studio\\auth\\studio-oauth.json');
+    ).toBe('C:\\Users\\studio\\AppData\\Local\\Cozy Studio\\auth\\studio-oauth.json');
     expect(
       resolveSubscriptionAuthFilePath({
         platform: 'linux',
@@ -108,7 +108,7 @@ describe('subscription auth store', () => {
           STUDIO_LIBRARY_DIR: '/mnt/shared/studio-library',
         },
       }),
-    ).toBe('/home/studio/.state/codex-studio/auth/studio-oauth.json');
+    ).toBe('/home/studio/.state/cozy-studio/auth/studio-oauth.json');
   });
 
   it('reports a corrupt credential file without overwriting it', () => {

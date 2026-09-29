@@ -631,7 +631,7 @@ describe('runtimeRoutes', () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         consent: true,
-        libraryPath: 'D:/tmp/codex-studio-lib',
+        libraryPath: 'D:/tmp/cozy-studio-lib',
         initLibrary: true,
       }),
     });
@@ -642,10 +642,10 @@ describe('runtimeRoutes', () => {
       probe: OnboardingProbe;
     };
     expect(payload.ok).toBe(true);
-    expect(payload.libraryPath).toBe('D:/tmp/codex-studio-lib');
-    expect(files.get('D:/repo/.env.local')).toContain('STUDIO_LIBRARY_DIR=D:/tmp/codex-studio-lib');
+    expect(payload.libraryPath).toBe('D:/tmp/cozy-studio-lib');
+    expect(files.get('D:/repo/.env.local')).toContain('STUDIO_LIBRARY_DIR=D:/tmp/cozy-studio-lib');
     expect(writes).toEqual(['D:/repo/.env.local', 'init']);
-    expect(payload.probe.studioLibraryPath).toBe('D:/tmp/codex-studio-lib');
+    expect(payload.probe.studioLibraryPath).toBe('D:/tmp/cozy-studio-lib');
     expect(payload.probe.facts.bootstrapConfigReady).toBe(true);
     expect(readiness.refresh).toHaveBeenCalledWith({ reason: 'onboarding' });
   });
@@ -713,7 +713,7 @@ describe('runtimeRoutes', () => {
           runner: (request) => {
             spawned.push(request);
           },
-          resolveCwd: () => 'D:/codex-studio',
+          resolveCwd: () => 'D:/cozy-studio',
           platform: 'win32',
           ...extra,
         }),
@@ -737,7 +737,7 @@ describe('runtimeRoutes', () => {
       ok: true,
       action: 'codex_login',
       command: 'codex login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
     });
     expect(spawned).toHaveLength(1);
   });
@@ -786,7 +786,7 @@ describe('runtimeRoutes', () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           consent: true,
-          libraryPath: 'D:/tmp/codex-studio-lib',
+          libraryPath: 'D:/tmp/cozy-studio-lib',
           initLibrary: true,
         }),
       });
@@ -818,7 +818,7 @@ describe('runtimeRoutes', () => {
         applyOnboardingHostActionFn: (raw, extra = {}) =>
           applyOnboardingHostAction(raw, {
             runner: () => {},
-            resolveCwd: () => 'D:/codex-studio',
+            resolveCwd: () => 'D:/cozy-studio',
             platform: 'win32',
             ...extra,
           }),

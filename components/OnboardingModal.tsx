@@ -20,8 +20,8 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import {
-  buildCodexStudioSetupPrompt,
-  CODEX_STUDIO_SETUP_SKILL_PATH,
+  buildCozyStudioSetupPrompt,
+  COZY_STUDIO_SETUP_SKILL_PATH,
 } from '../lib/onboardingSetupPrompt';
 import {
   ONBOARDING_ASK_CODEX_LABEL,
@@ -355,7 +355,7 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
         </button>
       </div>
       <p className="mt-3 truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 font-mono text-sm text-[color:var(--wb-muted)] xl:mt-2 ">
-        {CODEX_STUDIO_SETUP_SKILL_PATH}
+        {COZY_STUDIO_SETUP_SKILL_PATH}
       </p>
       <textarea
         readOnly
@@ -732,7 +732,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const intro = 'Describe it, add a reference, and make it yours.';
   const setupPrompt = React.useMemo(
     () =>
-      buildCodexStudioSetupPrompt({
+      buildCozyStudioSetupPrompt({
         apiBase,
         health,
         isDesktopRuntime,

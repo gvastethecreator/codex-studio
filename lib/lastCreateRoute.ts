@@ -2,7 +2,7 @@ import { resolveRecipeRouteHashSegment, type RecipeAliasId } from './recipeAlias
 import { resolveHashRouterState, type HashRouterState } from '../hooks/useHashRouter';
 import type { RecipeId } from '../types';
 
-export const LAST_CREATE_ROUTE_KEY = 'codex-studio:last-create-route';
+export const LAST_CREATE_ROUTE_KEY = 'cozy-studio:last-create-route';
 
 const EMPTY_ROUTE: HashRouterState = {
   view: 'studio',

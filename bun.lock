@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "codex-studio",
+      "name": "cozy-studio",
       "dependencies": {
         "@chenglou/pretext": "^0.0.9",
         "@fal-ai/client": "^1.10.1",

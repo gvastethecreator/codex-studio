@@ -15,7 +15,7 @@ afterEach(() => {
 
 describe('findBrokenDocLinks', () => {
   it('accepts new versionable docs and rejects missing or ignored local targets', () => {
-    const cwd = mkdtempSync(path.join(tmpdir(), 'codex-studio-docs-'));
+    const cwd = mkdtempSync(path.join(tmpdir(), 'cozy-studio-docs-'));
     temporaryDirectories.push(cwd);
     mkdirSync(path.join(cwd, '.scratch'), { recursive: true });
     writeFileSync(

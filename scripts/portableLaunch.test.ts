@@ -29,15 +29,15 @@ describe('portable launchers', () => {
       resolvePortableLibraryDir({
         studioLibraryDir: undefined,
         portable: true,
-        unpackRoot: 'D:/unzipped/codex-studio',
+        unpackRoot: 'D:/unzipped/cozy-studio',
         homeDefault: 'C:/Users/a/Codex Studio',
       }),
-    ).toBe(path.join('D:/unzipped/codex-studio', PORTABLE_STUDIO_LIBRARY_FOLDER_NAME));
+    ).toBe(path.join('D:/unzipped/cozy-studio', PORTABLE_STUDIO_LIBRARY_FOLDER_NAME));
     expect(
       resolvePortableLibraryDir({
         studioLibraryDir: 'E:/custom-library',
         portable: true,
-        unpackRoot: 'D:/unzipped/codex-studio',
+        unpackRoot: 'D:/unzipped/cozy-studio',
         homeDefault: 'C:/Users/a/Codex Studio',
       }),
     ).toBe('E:/custom-library');
@@ -45,7 +45,7 @@ describe('portable launchers', () => {
       resolvePortableLibraryDir({
         studioLibraryDir: undefined,
         portable: false,
-        unpackRoot: 'D:/unzipped/codex-studio',
+        unpackRoot: 'D:/unzipped/cozy-studio',
         homeDefault: 'C:/Users/a/Codex Studio',
       }),
     ).toBe('C:/Users/a/Codex Studio');
@@ -56,7 +56,7 @@ describe('portable launchers', () => {
     const env: NodeJS.ProcessEnv = { STUDIO_PORTABLE: '1' };
     const started = await runPortableStart({
       env,
-      cwd: 'D:/unzipped/codex-studio',
+      cwd: 'D:/unzipped/cozy-studio',
       distReady: () => true,
       waitMs: async () => undefined,
       forwardOutput: () => undefined,
@@ -66,7 +66,7 @@ describe('portable launchers', () => {
       spawnServer: (_argv, options) => {
         expect(_argv).toEqual(portableServerArgv());
         expect(options.env.STUDIO_LIBRARY_DIR).toBe(
-          path.join('D:/unzipped/codex-studio', PORTABLE_STUDIO_LIBRARY_FOLDER_NAME),
+          path.join('D:/unzipped/cozy-studio', PORTABLE_STUDIO_LIBRARY_FOLDER_NAME),
         );
         return {
           stdout: {
@@ -92,7 +92,7 @@ describe('portable launchers', () => {
     await expect(
       runPortableStart({
         env: { STUDIO_PORTABLE: '1' },
-        cwd: 'D:/unzipped/codex-studio',
+        cwd: 'D:/unzipped/cozy-studio',
         distReady: () => false,
         spawnServer: () => {
           throw new Error('should not spawn');
@@ -132,7 +132,7 @@ describe('portable launchers', () => {
     await expect(
       runPortableStart({
         env: { STUDIO_PORTABLE: '1' },
-        cwd: 'D:/unzipped/codex-studio',
+        cwd: 'D:/unzipped/cozy-studio',
         distReady: () => true,
         now: () => clock,
         listenDeadlineMs: 30_000,

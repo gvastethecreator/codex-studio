@@ -53,7 +53,7 @@ describe('createCodexTurn', () => {
       closeSession,
       getSessionKey: () => 'pack_14',
       resolveLibraryPath: (...parts) => `D:/tmp/${parts.join('/')}`,
-      resolveProcessCwd: () => 'D:/DEV/codex-studio',
+      resolveProcessCwd: () => 'D:/DEV/cozy-studio',
       createAssetExtractor: () => ({ extract: async () => [] }),
       resolveExecutionOptions: () => ({
         model: 'gpt-5.4-mini',
@@ -103,7 +103,7 @@ describe('createCodexTurn', () => {
       closeSession,
       getSessionKey: () => 'pack_08',
       resolveLibraryPath: (...parts) => `D:/tmp/${parts.join('/')}`,
-      resolveProcessCwd: () => 'D:/DEV/codex-studio',
+      resolveProcessCwd: () => 'D:/DEV/cozy-studio',
       createAssetExtractor: () => ({ extract: async () => [] }),
       resolveExecutionOptions: () => ({
         model: 'gpt-5.4-mini',
@@ -162,7 +162,7 @@ describe('createCodexTurn', () => {
       closeSession,
       getSessionKey: () => 'pack_usage',
       resolveLibraryPath: (...parts) => `D:/tmp/${parts.join('/')}`,
-      resolveProcessCwd: () => 'D:/DEV/codex-studio',
+      resolveProcessCwd: () => 'D:/DEV/cozy-studio',
       createAssetExtractor: () => ({ extract: async () => [] }),
       resolveExecutionOptions: () => ({
         model: 'gpt-5.6-luna',

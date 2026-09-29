@@ -71,7 +71,7 @@ describe('resolveStudioRuntimeFromSources', () => {
   it('does not treat file:// as a Studio API origin', () => {
     const runtime = resolveStudioRuntimeFromSources({
       productionUi: true,
-      pageOrigin: 'file:///C:/CodexStudio/index.html',
+      pageOrigin: 'file:///C:/CozyStudio/index.html',
     });
 
     expect(runtime.apiBase).toBe('http://127.0.0.1:17223');

@@ -71,7 +71,7 @@ describe('studioSettings', () => {
         defaultProviderId: 'comfy',
         commandCenterCompactMode: true,
         showWorkspaceHistoryInCarousel: false,
-        preferredOutputPath: 'D:/DEV/codex-studio/outputs',
+        preferredOutputPath: 'D:/DEV/cozy-studio/outputs',
         outputOrganization: {
           subfolderTokens: ['date', 'model', 'recipe', 'invalid'],
           fileNameTemplate: '{recipe}/{bad:name}-{jobId}',
@@ -97,7 +97,7 @@ describe('studioSettings', () => {
       mergeEditableStudioSettingsPatch(createDefaultEditableStudioSettings(), {})
         .showWorkspaceHistoryInCarousel,
     ).toBe(true);
-    expect(settings.preferredOutputPath).toBe('D:/DEV/codex-studio/outputs');
+    expect(settings.preferredOutputPath).toBe('D:/DEV/cozy-studio/outputs');
     expect(settings.outputOrganization).toEqual({
       subfolderTokens: ['date', 'model', 'recipe'],
       fileNameTemplate: '{recipe}-{bad-name}-{jobId}',

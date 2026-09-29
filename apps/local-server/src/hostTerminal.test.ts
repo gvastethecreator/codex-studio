@@ -6,20 +6,20 @@ import {
   publicHostCommand,
   resolveHostTerminalLaunch,
 } from './hostTerminal';
-import { CODEX_STUDIO_SETUP_SKILL_PATH } from '../../../lib/onboardingSetupPrompt';
+import { COZY_STUDIO_SETUP_SKILL_PATH } from '../../../lib/onboardingSetupPrompt';
 
-const setupPrompt = `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`;
+const setupPrompt = `Use the repo-local skill at \`${COZY_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`;
 
 describe('host terminal launches', () => {
   it('opens visible codex login in the repo root, not exec or app-server', () => {
     const launch = resolveHostTerminalLaunch({
       action: 'codex_login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
     });
     expect(launch).toEqual({
       action: 'codex_login',
       title: 'Codex login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
       argv: ['codex', 'login'],
       visible: true,
     });
@@ -31,7 +31,7 @@ describe('host terminal launches', () => {
   it('opens visible grok login, never Ask Grok', () => {
     const launch = resolveHostTerminalLaunch({
       action: 'grok_login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
     });
     expect(launch.argv).toEqual(['grok', 'login']);
     expect(launch.visible).toBe(true);
@@ -42,19 +42,19 @@ describe('host terminal launches', () => {
   it('opens visible interactive Codex with the Setup Prompt', () => {
     const launch = resolveHostTerminalLaunch({
       action: 'ask_codex',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
       prompt: setupPrompt,
     });
     expect(launch.argv[0]).toBe('codex');
-    expect(launch.argv[1]).toContain(CODEX_STUDIO_SETUP_SKILL_PATH);
+    expect(launch.argv[1]).toContain(COZY_STUDIO_SETUP_SKILL_PATH);
     expect(launch.argv.join(' ')).not.toContain('exec');
     expect(launch.visible).toBe(true);
-    expect(launch.cwd).toBe('D:/codex-studio');
+    expect(launch.cwd).toBe('D:/cozy-studio');
   });
 
   it('compiles a visible Windows cmd or PowerShell window', () => {
     const login = compileVisibleHostSpawn(
-      resolveHostTerminalLaunch({ action: 'codex_login', cwd: 'D:/codex-studio' }),
+      resolveHostTerminalLaunch({ action: 'codex_login', cwd: 'D:/cozy-studio' }),
       { platform: 'win32' },
     );
     expect(login.command).toBe('cmd.exe');
@@ -67,7 +67,7 @@ describe('host terminal launches', () => {
     const ask = compileVisibleHostSpawn(
       resolveHostTerminalLaunch({
         action: 'ask_codex',
-        cwd: 'D:/codex-studio',
+        cwd: 'D:/cozy-studio',
         prompt: setupPrompt,
       }),
       {
@@ -81,7 +81,7 @@ describe('host terminal launches', () => {
     expect(ask.args).toContain('start');
     expect(ask.args).toContain('powershell.exe');
     expect(ask.args.join(' ')).not.toContain('codex exec');
-    expect([...files.values()].join('\n')).toContain(CODEX_STUDIO_SETUP_SKILL_PATH);
+    expect([...files.values()].join('\n')).toContain(COZY_STUDIO_SETUP_SKILL_PATH);
   });
 });
 
@@ -91,7 +91,7 @@ describe('applyOnboardingHostAction', () => {
     expect(() =>
       applyOnboardingHostAction(
         { consent: false, action: 'codex_login' },
-        { runner, resolveCwd: () => 'D:/codex-studio' },
+        { runner, resolveCwd: () => 'D:/cozy-studio' },
       ),
     ).toThrow(OnboardingHostActionError);
     expect(runner).not.toHaveBeenCalled();
@@ -102,13 +102,13 @@ describe('applyOnboardingHostAction', () => {
     expect(
       applyOnboardingHostAction(
         { consent: true, action: 'codex_login' },
-        { runner, resolveCwd: () => 'D:/codex-studio', platform: 'win32' },
+        { runner, resolveCwd: () => 'D:/cozy-studio', platform: 'win32' },
       ),
     ).toMatchObject({
       ok: true,
       action: 'codex_login',
       command: 'codex login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
     });
     expect(runner).toHaveBeenCalledTimes(1);
 
@@ -118,7 +118,7 @@ describe('applyOnboardingHostAction', () => {
     expect(
       applyOnboardingHostAction(
         { consent: true, action: 'codex_login' },
-        { runner: failing, resolveCwd: () => 'D:/codex-studio', platform: 'win32' },
+        { runner: failing, resolveCwd: () => 'D:/cozy-studio', platform: 'win32' },
       ),
     ).toMatchObject({
       ok: false,

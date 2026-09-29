@@ -505,7 +505,7 @@ function briefJson(exportId: string) {
 async function main() {
   const exportId =
     process.env.HANDOFF_EXPORT_ID ??
-    `codex-studio-${new Date().toISOString().slice(0, 10).replaceAll('-', '')}`;
+    `cozy-studio-${new Date().toISOString().slice(0, 10).replaceAll('-', '')}`;
   const snapshotPath = process.env.HANDOFF_SNAPSHOT
     ? path.resolve(repoRoot, process.env.HANDOFF_SNAPSHOT)
     : null;

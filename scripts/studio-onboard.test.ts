@@ -147,7 +147,7 @@ describe('studio:onboard CLI', () => {
       ok: true,
       action: 'codex_login' as const,
       command: 'codex login',
-      cwd: 'D:/codex-studio',
+      cwd: 'D:/cozy-studio',
       error: null,
     }));
     await expect(

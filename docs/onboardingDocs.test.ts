@@ -42,7 +42,7 @@ describe('onboarding docs contract', () => {
   });
 
   it('setup skill still owns the Setup Prompt text', () => {
-    expect(skill).toContain('CODEX_STUDIO_SETUP_SKILL_PATH');
+    expect(skill).toContain('COZY_STUDIO_SETUP_SKILL_PATH');
     expect(skill).toContain('Copy prompt and Ask Codex');
     expect(skill).toContain('bun run studio:onboard');
     expect(skill).toContain('Never silent-install Bun');

@@ -128,7 +128,7 @@ export function createSessionPool({
 
       const init = await client.request('initialize', {
         clientInfo: {
-          name: 'codex-studio',
+          name: 'cozy-studio',
           title: 'Cozy Studio',
           version: '0.1.0',
         },

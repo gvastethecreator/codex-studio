@@ -5,10 +5,7 @@ import type {
   LocalCodexSessionResponse,
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
-import {
-  buildCodexStudioSetupPrompt,
-  CODEX_STUDIO_SETUP_SKILL_PATH,
-} from './onboardingSetupPrompt';
+import { buildCozyStudioSetupPrompt, COZY_STUDIO_SETUP_SKILL_PATH } from './onboardingSetupPrompt';
 
 function createReadiness(overrides?: Partial<StudioReadinessSnapshot>): StudioReadinessSnapshot {
   return {
@@ -47,8 +44,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       arch: 'x64',
       bunVersion: 'reported Bun metadata',
       nodeVersion: 'reported Node metadata',
-      cwd: 'D:/DEV/codex-studio',
-      envLocalPath: 'D:/DEV/codex-studio/.env.local',
+      cwd: 'D:/DEV/cozy-studio',
+      envLocalPath: 'D:/DEV/cozy-studio/.env.local',
       envLocalPresent: true,
     },
     config: {
@@ -128,9 +125,9 @@ function createSession(overrides?: Partial<LocalCodexSessionResponse>): LocalCod
   };
 }
 
-describe('buildCodexStudioSetupPrompt', () => {
+describe('buildCozyStudioSetupPrompt', () => {
   it('builds a ready-to-copy setup prompt with local context and guardrails', () => {
-    const prompt = buildCodexStudioSetupPrompt({
+    const prompt = buildCozyStudioSetupPrompt({
       apiBase: 'http://127.0.0.1:17223',
       health: createHealth(),
       isDesktopRuntime: true,
@@ -138,8 +135,8 @@ describe('buildCodexStudioSetupPrompt', () => {
       readiness: createReadiness(),
     });
 
-    expect(prompt).toContain(CODEX_STUDIO_SETUP_SKILL_PATH);
-    expect(prompt).toContain('D:/DEV/codex-studio');
+    expect(prompt).toContain(COZY_STUDIO_SETUP_SKILL_PATH);
+    expect(prompt).toContain('D:/DEV/cozy-studio');
     expect(prompt).toContain('D:/AI-Studio-Library');
     expect(prompt).toContain('Local Codex Session: chatgpt_login_required');
     expect(prompt).toContain('Codex Runtime Capability: ready; app-server support: yes');
@@ -156,7 +153,7 @@ describe('buildCodexStudioSetupPrompt', () => {
   });
 
   it('stays useful before backend health is available', () => {
-    const prompt = buildCodexStudioSetupPrompt({
+    const prompt = buildCozyStudioSetupPrompt({
       apiBase: 'http://127.0.0.1:17223',
       health: null,
       isDesktopRuntime: false,

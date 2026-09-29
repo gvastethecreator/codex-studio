@@ -43,7 +43,7 @@ const root = process.cwd();
 const assetsRoot = path.resolve(root, 'assets');
 const policyPath = path.join(assetsRoot, 'asset-policy.json');
 const lockPath = path.join(assetsRoot, 'asset-pack-lock.json');
-const outDir = path.resolve(root, '.scratch', 'codex-studio-hardening');
+const outDir = path.resolve(root, '.scratch', 'cozy-studio-hardening');
 const verify = process.argv.includes('--verify');
 const updateLock = process.argv.includes('--update-lock');
 

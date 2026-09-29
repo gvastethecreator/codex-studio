@@ -375,7 +375,7 @@ export function createGrokImagineExecutor({
   resolveDefaultLibraryPath = resolveLibraryPath,
   now = () => Date.now(),
   createSessionId = randomUUID,
-  createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'codex-studio-grok-')),
+  createTemporaryDirectory = () => mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-grok-')),
 }: GrokImagineExecutorDependencies = {}): ExternalProviderExecutor {
   return async function executeGrokImagine({
     providerId,

@@ -41,7 +41,7 @@ export function studioPackageVersion() {
 }
 
 export function studioUserAgent() {
-  return `CodexStudio/${studioPackageVersion()}`;
+  return `CozyStudio/${studioPackageVersion()}`;
 }
 
 export function studioCodexOriginator(env: Record<string, string | undefined> = process.env) {

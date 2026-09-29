@@ -93,7 +93,7 @@ function writeAskCodexPromptFile(
   writePromptFile: (filePath: string, contents: string) => void,
   tmpDir: string,
 ) {
-  const promptPath = path.join(tmpDir, 'codex-studio-ask-codex.txt');
+  const promptPath = path.join(tmpDir, 'cozy-studio-ask-codex.txt');
   writePromptFile(promptPath, prompt);
   return promptPath;
 }

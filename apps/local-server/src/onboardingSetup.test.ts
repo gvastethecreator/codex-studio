@@ -49,7 +49,7 @@ describe('onboardingSetup', () => {
     const result = applyOnboardingSetup(
       {
         consent: true,
-        libraryPath: 'D:/tmp/codex-studio-lib',
+        libraryPath: 'D:/tmp/cozy-studio-lib',
         initLibrary: true,
       },
       {
@@ -70,12 +70,12 @@ describe('onboardingSetup', () => {
 
     expect(result).toMatchObject({
       ok: true,
-      libraryPath: 'D:/tmp/codex-studio-lib',
+      libraryPath: 'D:/tmp/cozy-studio-lib',
       wroteEnv: true,
       initializedLibrary: true,
     });
-    expect(files.get('D:/repo/.env.local')).toContain('STUDIO_LIBRARY_DIR=D:/tmp/codex-studio-lib');
-    expect(env.STUDIO_LIBRARY_DIR).toBe('D:/tmp/codex-studio-lib');
+    expect(files.get('D:/repo/.env.local')).toContain('STUDIO_LIBRARY_DIR=D:/tmp/cozy-studio-lib');
+    expect(env.STUDIO_LIBRARY_DIR).toBe('D:/tmp/cozy-studio-lib');
     expect(initialized).toBe(1);
   });
 
@@ -151,7 +151,7 @@ describe('onboardingSetup', () => {
 
   it('does not put provider secrets on the Setup result', () => {
     const result = applyOnboardingSetup(
-      { consent: true, libraryPath: 'D:/tmp/codex-studio-lib', initLibrary: false },
+      { consent: true, libraryPath: 'D:/tmp/cozy-studio-lib', initLibrary: false },
       {
         isAbsolutePath: () => true,
         readExistingLibraryDir: () => null,

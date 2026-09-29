@@ -20,7 +20,7 @@ describe('localApiSecurity', () => {
 
   it('rejects file:// origins', () => {
     expect(isAllowedLocalApiOrigin('file://')).toBe(false);
-    expect(isAllowedLocalApiOrigin('file:///C:/CodexStudio/index.html')).toBe(false);
+    expect(isAllowedLocalApiOrigin('file:///C:/CozyStudio/index.html')).toBe(false);
   });
 
   it('rejects external or non-loopback origins', () => {

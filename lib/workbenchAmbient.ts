@@ -4,7 +4,7 @@ export const WORKBENCH_PRECISION_DENSITY = 'comfortable';
 export const WORKBENCH_TYPOGRAPHY = 'neutral';
 export const WORKBENCH_EDGES = 'soft';
 export const WORKBENCH_PRESENTATION = 'utility';
-export const APPEARANCE_STORAGE_KEY = 'codex-studio-appearance';
+export const APPEARANCE_STORAGE_KEY = 'cozy-studio-appearance';
 
 export type WorkbenchAppearance = 'dark' | 'light';
 export type WorkbenchThemeName = 'carbon' | 'paper';

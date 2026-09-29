@@ -32,8 +32,8 @@ import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 
 afterEach(() => {
   cleanup();
-  window.localStorage.removeItem('codex-studio-appearance');
-  window.localStorage.removeItem('codex-studio-theme-index');
+  window.localStorage.removeItem('cozy-studio-appearance');
+  window.localStorage.removeItem('cozy-studio-theme-index');
   document.documentElement.removeAttribute('data-theme');
   document.documentElement.removeAttribute('data-appearance');
 });

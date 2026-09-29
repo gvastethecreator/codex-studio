@@ -15,7 +15,7 @@ afterEach(() => {
 
 describe('repo asset audit', () => {
   it('keeps ignored generation failure ledgers out of optional pack locks', () => {
-    const cwd = mkdtempSync(path.join(tmpdir(), 'codex-studio-assets-'));
+    const cwd = mkdtempSync(path.join(tmpdir(), 'cozy-studio-assets-'));
     temporaryDirectories.push(cwd);
     const assetsDirectory = path.join(cwd, 'assets');
     const defaultsDirectory = path.join(assetsDirectory, 'recipes', 'styles', 'defaults');

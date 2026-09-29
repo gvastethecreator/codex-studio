@@ -8,7 +8,7 @@ Cozy Studio uses one product context. Its shared language and decisions can live
 
 Read the root context and relevant ADRs before changing a named domain concept. If a file does not exist, continue with terms already used by product code and user documentation.
 
-Tickets and in-flight plans never live under `docs/`. Store ticket mirrors under `.scratch/codex-studio/issues/` and decision maps under `.scratch/wayfinder/`.
+Tickets and in-flight plans never live under `docs/`. Store ticket mirrors under `.scratch/cozy-studio/issues/` and decision maps under `.scratch/wayfinder/`.
 
 Use one term for each concept. Current core terms include `Studio Library`, `Catalog Entry`, `Persistent Job`, `Generation Task Spec`, `Provider Input`, `Provider Secret`, and `External Output Source`.
 

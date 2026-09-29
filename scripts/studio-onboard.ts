@@ -7,7 +7,7 @@ import {
 import { applyOnboardingSetup } from '../apps/local-server/src/onboardingSetup';
 import { applyOnboardingHostAction } from '../apps/local-server/src/hostTerminal';
 import { readLocalOnboardingProbe } from '../apps/local-server/src/onboardingProbe';
-import { CODEX_STUDIO_SETUP_SKILL_PATH } from '../lib/onboardingSetupPrompt';
+import { COZY_STUDIO_SETUP_SKILL_PATH } from '../lib/onboardingSetupPrompt';
 
 export const STUDIO_ONBOARD_USAGE = `Usage:
   bun run studio:onboard --probe
@@ -175,7 +175,7 @@ export async function runStudioOnboardHostAction(options: {
   const prompt =
     options.action === 'ask_codex'
       ? (options.prompt ??
-        `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`)
+        `Use the repo-local skill at \`${COZY_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`)
       : null;
   const result = applyHostAction({
     consent: true,

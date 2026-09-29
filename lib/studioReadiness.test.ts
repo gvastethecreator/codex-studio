@@ -13,8 +13,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       arch: 'x64',
       bunVersion: '1.3.13',
       nodeVersion: '25.0.0',
-      cwd: 'D:/DEV/codex-studio',
-      envLocalPath: 'D:/DEV/codex-studio/.env.local',
+      cwd: 'D:/DEV/cozy-studio',
+      envLocalPath: 'D:/DEV/cozy-studio/.env.local',
       envLocalPresent: true,
     },
     config: {

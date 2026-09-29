@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "project_id": "codex-studio",
+  "project_id": "cozy-studio",
   "views": [
     {
       "id": "library",

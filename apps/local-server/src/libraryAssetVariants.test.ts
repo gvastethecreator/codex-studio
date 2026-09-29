@@ -35,7 +35,7 @@ describe('libraryAssetVariants', () => {
   });
 
   it('maps generated assets into the thumbnails folder', () => {
-    const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-thumbs-'));
+    const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-thumbs-'));
 
     try {
       const sourceFilePath = resolveLibraryPathFromRoot(

@@ -4,9 +4,9 @@ import type {
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
 
-export const CODEX_STUDIO_SETUP_SKILL_PATH = 'skills/cozy-studio-setup/SKILL.md';
+export const COZY_STUDIO_SETUP_SKILL_PATH = 'skills/cozy-studio-setup/SKILL.md';
 
-interface BuildCodexStudioSetupPromptArgs {
+interface BuildCozyStudioSetupPromptArgs {
   apiBase: string;
   health: HealthResponse | null;
   isDesktopRuntime: boolean;
@@ -36,13 +36,13 @@ function renderReadinessChecks(readiness: StudioReadinessSnapshot) {
     .join('\n');
 }
 
-export function buildCodexStudioSetupPrompt({
+export function buildCozyStudioSetupPrompt({
   apiBase,
   health,
   isDesktopRuntime,
   localCodexSession,
   readiness,
-}: BuildCodexStudioSetupPromptArgs) {
+}: BuildCozyStudioSetupPromptArgs) {
   const projectRoot = renderValue(health?.runtime.cwd, 'Cozy Studio repository root');
   const envLocalPath = renderValue(health?.runtime.envLocalPath, '.env.local');
   const libraryDir = renderValue(health?.libraryDir, 'Studio Library not detected yet');
@@ -61,7 +61,7 @@ export function buildCodexStudioSetupPrompt({
     : localCodexSession?.reason || localCodexSession?.state || 'unknown';
 
   return [
-    `Use the repo-local skill at \`${CODEX_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`,
+    `Use the repo-local skill at \`${COZY_STUDIO_SETUP_SKILL_PATH}\` to complete Cozy Studio setup.`,
     '',
     'Goal: make this checkout ready for local image generation through Studio Settings Sign in and the ChatGPT provider. Do not spend Codex app-server usage on ordinary image jobs.',
     '',

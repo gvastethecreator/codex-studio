@@ -111,7 +111,7 @@ describe('Antigravity image executor', () => {
       resolveExecutable: () => 'agy',
       resolveHome: () => antigravityHome,
       createTemporaryDirectory: () => {
-        const temporary = mkdtempSync(path.join(root, 'codex-studio-antigravity-'));
+        const temporary = mkdtempSync(path.join(root, 'cozy-studio-antigravity-'));
         return temporary;
       },
       runCli: async ({ args, cwd, stdin, env }) => {
@@ -217,7 +217,7 @@ describe('Antigravity image executor', () => {
       readRuntimeDoctor: runtime,
       resolveExecutable: () => 'agy',
       resolveHome: () => antigravityHome,
-      createTemporaryDirectory: () => mkdtempSync(path.join(root, 'codex-studio-antigravity-')),
+      createTemporaryDirectory: () => mkdtempSync(path.join(root, 'cozy-studio-antigravity-')),
       runCli: async ({ cwd }) => ({ status: 0, stdout: successStream(cwd), stderr: '' }),
     });
 

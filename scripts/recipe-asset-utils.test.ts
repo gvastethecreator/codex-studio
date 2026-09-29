@@ -8,7 +8,7 @@ import { writeRepoWebpAsset } from './recipe-asset-utils';
 
 describe('writeRepoWebpAsset', () => {
   it('can keep provider batches from duplicating every new asset into the archive', async () => {
-    const directory = mkdtempSync(path.join(tmpdir(), 'codex-studio-style-asset-'));
+    const directory = mkdtempSync(path.join(tmpdir(), 'cozy-studio-style-asset-'));
     const sourcePath = path.join(directory, 'source.png');
     const destinationPath = path.join(directory, 'output.webp');
     const archivePath = path.join(directory, 'archive');

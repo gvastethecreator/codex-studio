@@ -7,8 +7,8 @@ import { spawn, spawnSync, type ChildProcessWithoutNullStreams } from 'node:chil
 import { createServer } from 'node:net';
 
 const root = process.cwd();
-const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-core-assets-'));
-const expectedTempPrefix = normalize(path.join(os.tmpdir(), 'codex-studio-core-assets-'));
+const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-core-assets-'));
+const expectedTempPrefix = normalize(path.join(os.tmpdir(), 'cozy-studio-core-assets-'));
 if (!normalize(tempRoot).startsWith(expectedTempPrefix)) {
   throw new Error(`Unexpected core asset smoke path: ${tempRoot}`);
 }

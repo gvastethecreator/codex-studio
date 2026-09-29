@@ -197,7 +197,7 @@ describe('outputSources', () => {
   });
 
   it('imports selected files by copying into the Studio Library and registering Catalog Entries', async () => {
-    const root = mkdtempSync(path.join(tmpdir(), 'codex-studio-output-import-'));
+    const root = mkdtempSync(path.join(tmpdir(), 'cozy-studio-output-import-'));
     const sourceDir = path.join(root, 'source');
     const libraryDir = path.join(root, 'library');
     const catalogImages: CatalogImage[] = [];
