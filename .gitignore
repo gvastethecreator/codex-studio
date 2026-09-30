@@ -147,3 +147,5 @@ landing/.astro/
 landing/.cache/
 landing/public/
 landing/src/studio/generated/
+# The page engine keeps Pretext's generated bidi table as a vendored copy.
+!landing/kit/vendor/pretext/generated/
