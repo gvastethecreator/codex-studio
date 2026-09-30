@@ -337,6 +337,14 @@ const DATABASE_MIGRATIONS = [
       )`);
     },
   },
+  {
+    version: 9,
+    name: 'job-output-context',
+    migrate(database: Database) {
+      // The output folder and naming captured at submit; the worker reads the job back from here.
+      ensureColumn(database, 'jobs', 'library_context_json', 'TEXT');
+    },
+  },
 ] as const;
 
 function backfillJobOperationalColumns(database: Database) {

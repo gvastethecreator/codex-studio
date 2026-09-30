@@ -499,6 +499,7 @@ try {
     'execution_json',
     'library_id',
     'library_root',
+    'library_context_json',
     'finalization_state',
     'finalization_source_path',
     'finalization_file_path',

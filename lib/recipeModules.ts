@@ -1100,6 +1100,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
           'PACK_CATEGORY_BASE_STYLE_APPLICATION',
           'CREATIVE_REIMAGINING',
           'STRUCTURAL_PRESERVATION',
+          'PRESERVE_REFERENCE',
           'DIRECT_STYLE_SYNTHESIS',
         ],
       },

@@ -82,7 +82,11 @@ export function mapJobRow(row: Record<string, unknown>): Job {
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     libraryContext:
       typeof row.library_id === 'string' && typeof row.library_root === 'string'
-        ? { libraryId: row.library_id, rootPath: row.library_root }
+        ? {
+            ...parseJson<Partial<JobLibraryContext>>(row.library_context_json, {}),
+            libraryId: row.library_id,
+            rootPath: row.library_root,
+          }
         : null,
     finalization: mapJobFinalization(row),
     remoteExecution: parseJson<JobRemoteExecution | null>(row.remote_execution_json, null),
@@ -187,10 +191,10 @@ export function createJob(
       INSERT INTO jobs (
         id, workspace_id, recipe_id, batch_id, aspect_ratio,
         kind, provider_id, source_spec_json, status, execution_json,
-        library_id, library_root, original_prompt, expanded_prompt, final_prompt_used,
-        error, created_at, updated_at, completed_at, attempt_queued_at
+        library_id, library_root, library_context_json, original_prompt, expanded_prompt,
+        final_prompt_used, error, created_at, updated_at, completed_at, attempt_queued_at
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `)
     .run(
       job.id,
@@ -205,6 +209,7 @@ export function createJob(
       job.execution ? JSON.stringify(job.execution) : null,
       job.libraryContext?.libraryId ?? null,
       job.libraryContext?.rootPath ?? null,
+      job.libraryContext ? JSON.stringify(job.libraryContext) : null,
       job.originalPrompt,
       job.expandedPrompt,
       job.finalPromptUsed,

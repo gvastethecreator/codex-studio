@@ -36,5 +36,6 @@ describe('output file names', () => {
       'studio-headshot+film-noir',
     );
     expect(promptFileSlug('')).toBe('');
+    expect(promptFileSlug("A cozy artist's attic studio")).toBe('cozy-artists-attic-studio');
   });
 });

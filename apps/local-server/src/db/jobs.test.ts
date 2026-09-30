@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import { listJobSummariesFromDb } from './jobs';
+import { listJobSummariesFromDb, mapJobRow } from './jobs';
 
 describe('listJobSummariesFromDb', () => {
   it('uses projected columns without reading the Generation Task Spec', () => {
@@ -48,5 +48,34 @@ describe('listJobSummariesFromDb', () => {
         promptPreview: 'final prompt',
       }),
     ]);
+  });
+});
+
+describe('mapJobRow', () => {
+  it('keeps the output folder and naming captured when the job was created', () => {
+    const job = mapJobRow({
+      id: 'job-1',
+      kind: 'image_generate',
+      status: 'queued',
+      original_prompt: 'owl',
+      final_prompt_used: 'owl',
+      created_at: '2026-09-28T00:00:00.000Z',
+      updated_at: '2026-09-28T00:00:00.000Z',
+      library_id: 'library-1',
+      library_root: 'D:/library',
+      library_context_json: JSON.stringify({
+        libraryId: 'stale',
+        rootPath: 'D:/stale',
+        output: { libraryId: 'pictures', rootPath: 'C:/Users/a/Pictures/Cozy Studio' },
+        outputOrganization: { subfolderTokens: [], fileNameTemplate: '{date}_{style}_{prompt}' },
+      }),
+    });
+
+    expect(job.libraryContext).toEqual({
+      libraryId: 'library-1',
+      rootPath: 'D:/library',
+      output: { libraryId: 'pictures', rootPath: 'C:/Users/a/Pictures/Cozy Studio' },
+      outputOrganization: { subfolderTokens: [], fileNameTemplate: '{date}_{style}_{prompt}' },
+    });
   });
 });

@@ -168,6 +168,14 @@ describe('recipeModules', () => {
     expect(styles && validateRecipeParams(styles, { presetId: 'SP01-001' }).errors).toEqual([
       'Recipe Module styles requires parameter presetName.',
     ]);
+    expect(
+      styles &&
+        validateRecipeParams(styles, {
+          presetId: 'SP01-001',
+          presetName: 'Kodak Portra 400',
+          mode: 'PRESERVE_REFERENCE',
+        }).errors,
+    ).toEqual([]);
   });
 
   it('checks task and provider compatibility at the module seam', () => {
