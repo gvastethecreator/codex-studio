@@ -1,15 +1,15 @@
 # Code map: cozy-studio
 
-Generated: 2026-09-29T01:38:00Z | Commit: `c0172132acad` | Schema: 2
-Generation: `2fa7c2c6816ef731a04e45f412d40449d5f15dd118e02913eb913694780aff8d`
+Generated: 2026-09-30T06:56:34Z | Commit: `a14716b193cf` | Schema: 2
+Generation: `a76c7d1311617ec9ae2e36baaf7753efba056b216ea88adfc07cc16175d94d83`
 Scope: . | Inventory: working-tree
-Nodes: 997 | Edges: 5824 | Flows: 5
+Nodes: 997 | Edges: 5823 | Flows: 5
 
 ## Coverage
 
 - Analysis: **partial**; 918 analyzed of 930 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3246.
+- Unresolved references and analysis limits: 3249.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -88,7 +88,7 @@ Nodes: 997 | Edges: 5824 | Flows: 5
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | calls
 - `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | imports
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | calls
-- Showing 50 of 5824 edges; JSON contains every edge and its evidence.
+- Showing 50 of 5823 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
@@ -115,7 +115,7 @@ Nodes: 997 | Edges: 5824 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +7 / -0; edges: +62 / -2.
+- Nodes: +1 / -1; edges: +58 / -59.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next
