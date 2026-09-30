@@ -8,6 +8,7 @@ import { createServer } from 'node:net';
 
 const root = process.cwd();
 const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'cozy-studio-core-assets-'));
+const isolatedLibraryDir = path.join(tempRoot, '.local', 'library');
 const expectedTempPrefix = normalize(path.join(os.tmpdir(), 'cozy-studio-core-assets-'));
 if (!normalize(tempRoot).startsWith(expectedTempPrefix)) {
   throw new Error(`Unexpected core asset smoke path: ${tempRoot}`);
@@ -25,6 +26,11 @@ function shouldCopy(source: string) {
     relative.startsWith('.git/') ||
     relative === '.scratch' ||
     relative.startsWith('.scratch/') ||
+    relative === '.local' ||
+    relative.startsWith('.local/') ||
+    relative === 'logs' ||
+    relative.startsWith('logs/') ||
+    relative.startsWith('.env') ||
     relative === 'dist' ||
     relative.startsWith('dist/') ||
     relative === 'node_modules' ||
@@ -67,9 +73,14 @@ async function waitForPreview(url: string, child: ChildProcessWithoutNullStreams
       throw new Error(`Preview exited early with code ${child.exitCode}`);
     }
     try {
-      const response = await fetch(url);
-      if (response.ok) return;
-      lastError = `HTTP ${response.status}`;
+      const response = await fetch(`${url}/api/health`);
+      if (response.ok) {
+        const health = (await response.json()) as { ok?: boolean; libraryDir?: string };
+        if (health.ok && path.resolve(health.libraryDir ?? '') === isolatedLibraryDir) return;
+        lastError = 'Health response did not use the isolated Studio Library';
+      } else {
+        lastError = `HTTP ${response.status}`;
+      }
     } catch (error) {
       lastError = error instanceof Error ? error.message : String(error);
     }
@@ -153,6 +164,7 @@ try {
 
   const result = spawnSync(process.execPath, ['x', 'vp', 'build'], {
     cwd: tempRoot,
+    env: { ...process.env, VITE_STUDIO_API_BASE: '' },
     encoding: 'utf8',
     windowsHide: true,
   });
@@ -163,15 +175,18 @@ try {
   } else {
     const port = await findAvailablePort();
     const baseUrl = `http://127.0.0.1:${port}`;
-    preview = spawn(
-      process.execPath,
-      ['x', 'vp', 'preview', '--host', '127.0.0.1', '--port', String(port), '--strictPort'],
-      {
-        cwd: tempRoot,
-        env: process.env,
-        windowsHide: true,
+    preview = spawn(process.execPath, ['apps/local-server/src/index.ts'], {
+      cwd: tempRoot,
+      env: {
+        ...process.env,
+        STUDIO_LIBRARY_DIR: isolatedLibraryDir,
+        STUDIO_IMAGES_DIR: path.join(tempRoot, '.local', 'images'),
+        STUDIO_SERVER_PORT: String(port),
+        STUDIO_CODEX_WS_PORT: String(port + 1),
+        STUDIO_UI_DIST: path.join(tempRoot, 'dist'),
       },
-    );
+      windowsHide: true,
+    });
     let previewOutput = '';
     preview.stdout.on('data', (chunk) => {
       previewOutput += String(chunk);
@@ -192,6 +207,7 @@ try {
         {
           ok: true,
           optionalPacksPresent: false,
+          isolatedLibrary: true,
           build: 'vp build',
           browser: 'playwright chromium',
           routes: browserResult.routes,
