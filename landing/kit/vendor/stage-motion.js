@@ -13,6 +13,18 @@ const motion = Boolean(gsap && ScrollTrigger) && !reduced;
 if (motion) gsap.registerPlugin(ScrollTrigger);
 
 const root = document.documentElement;
+
+// The header's pause button (html[data-motion="paused"]) stops what moves on its own: loops
+// registered with keep() pause, and timed advances wait. Jumps and replies to the reader still play.
+const stilled = () => root.dataset.motion === "paused";
+let ambient = [];
+const keep = (tween) => {
+  ambient = ambient.filter((item) => item.parent);
+  ambient.push(tween);
+  if (stilled()) tween.pause();
+  return tween;
+};
+document.addEventListener("motion:change", () => ambient.forEach((tween) => (stilled() ? tween.pause() : tween.resume())));
 const clamp = (min, max, value) => Math.min(max, Math.max(min, value));
 
 // Surfaces tell the mascot what happens through small events on the document.
@@ -215,9 +227,9 @@ function mascotRig(svg, { onCheer } = {}) {
   }
 
   /* Life: breathing, a slow sway, rising steam, blinks. */
-  gsap.to(part.torso, { scaleY: 1.018, scaleX: 0.992, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: -1 });
-  const steamRise = gsap.to(part.steam, { y: -30, opacity: 0.4, duration: 1.6, ease: "sine.inOut", stagger: { each: 0.4, repeat: -1, yoyo: true } });
-  gsap.to(part.steam, { skewX: 7, duration: 2.3, ease: "sine.inOut", yoyo: true, repeat: -1 });
+  keep(gsap.to(part.torso, { scaleY: 1.018, scaleX: 0.992, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: -1 }));
+  const steamRise = keep(gsap.to(part.steam, { y: -30, opacity: 0.4, duration: 1.6, ease: "sine.inOut", stagger: { each: 0.4, repeat: -1, yoyo: true } }));
+  keep(gsap.to(part.steam, { skewX: 7, duration: 2.3, ease: "sine.inOut", yoyo: true, repeat: -1 }));
   const blink = () => {
     const m = MOODS[mood];
     const open = part.eyes.filter((eye, i) => eye && m.eyes[i] > 0.2);
@@ -419,7 +431,7 @@ function mascotRig(svg, { onCheer } = {}) {
       gsap.to(part.pencil, { scale: 1, rotation: 0, duration: 0.35, delay: leavingSign ? 0.15 : 0, ease: "back.out(2)", overwrite: "auto" });
     }
     if (!poseName) return;
-    posing = POSES[poseName]();
+    posing = keep(POSES[poseName]());
     posing.delay(0.3);
   }
   // Stops the pose loop but keeps what the hands hold, for a jump between two sign spots.
@@ -535,6 +547,8 @@ function mascotRig(svg, { onCheer } = {}) {
 /* ---------- Mascot guide: the hero drawing follows the reader from panel to panel ---------- */
 const BASE = 200;
 const RATIO = 812 / 1048;
+// On phones the mascot stands smaller, so it does not push the section's content down.
+const PHONE_SCALE = 0.56;
 // A section marks where the mascot stands with data-mascot-spot (fill, top-start, top-end,
 // top-center, bottom-end, under-start, start, end) plus optional size, mood, pose and look target.
 // Elements with data-mascot-hop call the mascot over while the pointer is on them.
@@ -572,7 +586,7 @@ function startGuide() {
   const reserve = () => {
     for (const spot of spots) {
       if (spot === home) continue;
-      const size = Number(spot.dataset.mascotSize || 110) * (compact.matches ? 0.72 : 1);
+      const size = Number(spot.dataset.mascotSize || 110) * (compact.matches ? PHONE_SCALE : 1);
       spot.style.setProperty("--mascot-room", `${Math.round(size * RATIO)}px`);
     }
   };
@@ -620,7 +634,7 @@ function startGuide() {
     if (!page && panel) top = rect.top - panel.getBoundingClientRect().top + (parseFloat(getComputedStyle(panel).top) || 0);
     let placement = target.placement;
     if (page && (placement === "end" || placement === "start")) placement = "top-end";
-    const size = placement === "fill" ? rect.width : target.size * (compact.matches ? 0.72 : 1);
+    const size = placement === "fill" ? rect.width : target.size * (compact.matches ? PHONE_SCALE : 1);
     const height = size * RATIO;
     let x;
     let y;
@@ -725,6 +739,7 @@ function startGuide() {
     flight = gsap
       .timeline({ onComplete: arrive })
       .add(rig.jump({ direction, duration, spin, small }), 0)
+      .add(() => emit("jump"), crouch)
       .to(
         travel,
         {
@@ -743,7 +758,10 @@ function startGuide() {
         },
         crouch,
       )
-      .add(() => rig.land(strength, direction), crouch + duration);
+      .add(() => {
+        rig.land(strength, direction);
+        emit("land", { strength });
+      }, crouch + duration);
   }
 
   // The eyes follow a glance target, the spot's look target, or the pointer.
@@ -796,7 +814,7 @@ function startGuide() {
   };
   const fidgetLoop = () => {
     gsap.delayedCall(gsap.utils.random(4.5, 9), () => {
-      const resting = !flight?.isActive() && !document.hidden && spot && rig.pose !== "sign";
+      const resting = !flight?.isActive() && !document.hidden && !stilled() && spot && rig.pose !== "sign";
       if (resting) {
         const list = FIDGETS_BY_MOOD[rig.mood] ?? FIDGETS_BY_MOOD.default;
         const name = gsap.utils.random(list);
@@ -960,8 +978,30 @@ for (const deck of document.querySelectorAll("[data-deck]")) {
   };
   const front = () => ((Math.round(target) % count) + count) % count;
 
+  // Without file names the line under the track shows one dot per card instead.
+  const dots =
+    fileLine && cards.every((card) => !card.dataset.file)
+      ? cards.map((card, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.className = "deck__dot";
+          dot.setAttribute("aria-label", `Show ${card.dataset.caption || index + 1}`);
+          dot.addEventListener("click", () => move(wrap(index - front())));
+          fileLine.append(dot);
+          return dot;
+        })
+      : [];
+  if (dots.length) {
+    fileLine.classList.add("deck__file--dots");
+    fileLine.removeAttribute("aria-live");
+  }
+
   const writeFile = (animate) => {
     window.clearInterval(typing);
+    if (dots.length) {
+      dots.forEach((dot, index) => dot.classList.toggle("is-on", index === front()));
+      return;
+    }
     if (!fileLine) return;
     const text = cards[front()].dataset.file || "";
     if (!animate || !text) {
@@ -1068,7 +1108,7 @@ for (const deck of document.querySelectorAll("[data-deck]")) {
     deck.addEventListener("focusin", () => (paused = true));
     deck.addEventListener("focusout", () => (paused = false));
     const tick = () => {
-      if (!paused && !drag && !document.hidden && (activePanel < 0 || isActive(deck))) move(1, false);
+      if (!paused && !stilled() && !drag && !document.hidden && (activePanel < 0 || isActive(deck))) move(1, false);
       gsap.delayedCall(4.2, tick);
     };
     gsap.delayedCall(5, tick);
@@ -1104,10 +1144,12 @@ for (const marquee of document.querySelectorAll("[data-marquee]")) {
       const shift = (period / row.offsetWidth) * 100;
       const direction = Number(row.dataset.direction) || -1;
       const duration = Number(row.dataset.duration) || 46;
-      return gsap.fromTo(
-        row,
-        { xPercent: direction < 0 ? 0 : -shift },
-        { xPercent: direction < 0 ? -shift : 0, duration, ease: "none", repeat: -1 },
+      return keep(
+        gsap.fromTo(
+          row,
+          { xPercent: direction < 0 ? 0 : -shift },
+          { xPercent: direction < 0 ? -shift : 0, duration, ease: "none", repeat: -1 },
+        ),
       );
     });
   };
@@ -1251,17 +1293,19 @@ for (const walk of document.querySelectorAll("[data-walkthrough]")) {
   const schedule = () => {
     timer?.kill();
     timer = gsap.delayedCall(WAIT, () => {
-      if (isActive(walk) && !document.hidden) show(current + 1);
+      if (isActive(walk) && !document.hidden && !stilled()) show(current + 1);
       else schedule();
     });
     if (paused) timer.pause();
   };
+  const shots = [...walk.querySelectorAll("[data-shot]")];
   const show = (index, animate = motion) => {
     current = (index + steps.length) % steps.length;
     steps.forEach((step, i) => {
       step.classList.toggle("is-active", i === current);
       step.setAttribute("aria-current", i === current ? "step" : "false");
     });
+    shots.forEach((shot) => shot.classList.toggle("is-shown", Number(shot.dataset.shot) === current));
     if (animate) {
       gsap.to(spot, { ...spotFor(steps[current]), duration: 0.9, ease: "expo.inOut" });
       emit("step", { spot, index: current });
@@ -1305,7 +1349,7 @@ for (const walk of document.querySelectorAll("[data-walkthrough]")) {
 /* ---------- Closing wall: pictures drift slowly behind the last words ---------- */
 for (const plane of document.querySelectorAll("[data-closing-wall]")) {
   if (!motion) continue;
-  gsap.to(plane, { yPercent: -12, duration: 34, ease: "sine.inOut", yoyo: true, repeat: -1 });
+  keep(gsap.to(plane, { yPercent: -12, duration: 34, ease: "sine.inOut", yoyo: true, repeat: -1 }));
   on("panel", ({ panel }) => {
     if (!panel?.contains(plane)) return;
     gsap.fromTo(
@@ -1363,6 +1407,157 @@ for (const run of document.querySelectorAll("[data-handoff]")) {
   on("panel", ({ panel }) => {
     if (panel?.contains(run)) play();
     else tl?.pause();
+  });
+}
+
+/* ---------- Setup terminal: the commands type themselves ---------- */
+// Each command types in behind a block caret; a command with output fills a thin bar, then its
+// output rises in; the terminal ends on an idle prompt and the "open ... and sign in" dot pulses.
+// Leaving the panel stops the run; coming back plays it again.
+for (const term of document.querySelectorAll("[data-terminal]")) {
+  const rows = [...term.querySelectorAll("[data-term-row]")];
+  const idle = term.querySelector("[data-term-idle]");
+  const box = term.closest(".setup__script");
+  if (!rows.length || !motion) continue;
+  const cmds = rows.map((row) => row.querySelector("[data-term-cmd]"));
+  const full = cmds.map((cmd) => cmd.textContent);
+  // A tooltip goes beside its command when both fit on the line, above it otherwise.
+  for (const line of term.querySelectorAll(".setup__line[tabindex]")) {
+    const place = () => {
+      const tip = line.querySelector(".setup__tip");
+      const cmd = line.querySelector(".setup__cmd");
+      if (!tip || !cmd) return;
+      line.classList.toggle("tip-side", cmd.scrollWidth + tip.offsetWidth + 56 < line.clientWidth);
+    };
+    line.addEventListener("pointerenter", place);
+    line.addEventListener("focus", place);
+  }
+  term.classList.add("is-live");
+  let tl = null;
+  const play = () => {
+    tl?.kill();
+    rows.forEach((row) => row.classList.remove("is-on", "is-typing", "is-working", "is-done"));
+    idle?.classList.remove("is-on");
+    box?.classList.remove("is-ready");
+    cmds.forEach((cmd) => (cmd.textContent = ""));
+    tl = gsap.timeline({ delay: 0.45 });
+    rows.forEach((row, index) => {
+      const text = full[index];
+      const typed = { n: 0 };
+      const hasOut = Boolean(row.querySelector("[data-term-out]"));
+      const work = gsap.utils.clamp(0.45, 1.1, text.length * 0.03);
+      tl.add(() => row.classList.add("is-on", "is-typing"), index ? "+=0.16" : 0)
+        .to(typed, {
+          n: text.length,
+          duration: 0.14 + text.length * 0.026,
+          ease: "power1.in",
+          onUpdate: () => (cmds[index].textContent = text.slice(0, Math.round(typed.n))),
+        })
+        .add(() => {
+          row.classList.remove("is-typing");
+          if (hasOut) {
+            row.style.setProperty("--setup-work", `${work}s`);
+            row.classList.add("is-working");
+          } else row.classList.add("is-done");
+        }, "+=0.12");
+      if (hasOut)
+        tl.add(() => {
+          row.classList.remove("is-working");
+          row.classList.add("is-done");
+        }, `+=${work}`);
+    });
+    tl.add(() => {
+      idle?.classList.add("is-on");
+      box?.classList.add("is-ready");
+      emit("cheer");
+    }, "+=0.3");
+  };
+  on("panel", ({ panel }) => {
+    if (panel?.contains(term)) play();
+    else tl?.pause();
+  });
+}
+
+/* ---------- FAQ: questions come in; the mascot looks at the one that opens ---------- */
+for (const list of document.querySelectorAll("[data-faq]")) {
+  const items = [...list.querySelectorAll("[data-faq-item]")];
+  if (!items.length || !motion) continue;
+  on("panel", ({ panel }) => {
+    if (!panel?.contains(list)) return;
+    gsap.fromTo(items, { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out", stagger: 0.06, overwrite: "auto" });
+  });
+  items.forEach((item) =>
+    item.addEventListener("toggle", () => {
+      if (item.open) emit("look", { el: item });
+    }),
+  );
+}
+
+/* ---------- Closing: pictures step out of the wall ---------- */
+// Slots keep the floating cards off the words and away from the mascot above them.
+const POP_SLOTS = [
+  [4, 8],
+  [9, 40],
+  [3, 60],
+  [85, 48],
+  [77, 64],
+];
+for (const plane of document.querySelectorAll("[data-closing-wall]")) {
+  const section = plane.closest(".closing");
+  const pictures = [...plane.querySelectorAll("img")].map((img) => img.getAttribute("src"));
+  if (!section || pictures.length < 2 || !motion) continue;
+  const layer = document.createElement("div");
+  layer.className = "closing__pops";
+  layer.setAttribute("aria-hidden", "true");
+  section.prepend(layer);
+  const busy = new Set();
+  let timer = null;
+  let live = false;
+  const pop = () => {
+    const free = POP_SLOTS.map((_, i) => i).filter((i) => !busy.has(i));
+    if (!free.length || document.hidden) return;
+    const slot = gsap.utils.random(free);
+    busy.add(slot);
+    const [x, y] = POP_SLOTS[slot];
+    const card = document.createElement("figure");
+    card.className = "closing__pop";
+    card.style.left = `${x + gsap.utils.random(-2, 2)}%`;
+    card.style.top = `${y + gsap.utils.random(-3, 3)}%`;
+    const img = document.createElement("img");
+    img.src = gsap.utils.random(pictures);
+    img.alt = "";
+    card.append(img);
+    layer.append(card);
+    const tilt = gsap.utils.random(-9, 9);
+    gsap
+      .timeline({
+        onComplete: () => {
+          card.remove();
+          busy.delete(slot);
+        },
+      })
+      .fromTo(
+        card,
+        { opacity: 0, scale: 0.55, y: 34, rotation: tilt * 1.6, rotationX: 28, transformPerspective: 900, filter: "blur(8px)" },
+        { opacity: 1, scale: 1, y: 0, rotation: tilt, rotationX: 0, filter: "blur(0px)", duration: 1.1, ease: "expo.out" },
+      )
+      .to(card, { y: -10, rotation: tilt * 0.6, duration: gsap.utils.random(2.2, 3.2), ease: "sine.inOut" })
+      .to(card, { opacity: 0, scale: 0.9, y: -34, filter: "blur(5px)", duration: 0.85, ease: "power2.in" });
+  };
+  const schedule = () => {
+    timer?.kill();
+    timer = gsap.delayedCall(gsap.utils.random(1.4, 2.4), () => {
+      if (live) pop();
+      schedule();
+    });
+  };
+  on("panel", ({ panel }) => {
+    live = Boolean(panel?.contains(plane));
+    if (live) {
+      gsap.delayedCall(0.9, pop);
+      gsap.delayedCall(1.6, pop);
+      schedule();
+    } else timer?.kill();
   });
 }
 

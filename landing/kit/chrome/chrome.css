@@ -190,7 +190,7 @@
   transform: scaleX(1);
 }
 
-.button.primary.repo-btn {
+.button.repo-btn {
   min-height: 26px;
   height: 26px;
   padding: 0 8px;
@@ -205,15 +205,15 @@
   -webkit-tap-highlight-color: rgb(201 201 201 / 0.12);
 }
 
-.button.primary.repo-btn svg {
+.button.repo-btn svg {
   width: 13px;
   height: 13px;
   flex: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .button.primary.repo-btn:hover,
-  .button.primary.repo-btn:active {
+  .button.repo-btn:hover,
+  .button.repo-btn:active {
     transform: none;
     box-shadow: none;
   }
@@ -341,7 +341,7 @@
   height: 40px;
 }
 
-.site-head.is-compact .button.primary.repo-btn {
+.site-head.is-compact .button.repo-btn {
   min-height: 40px;
   height: 40px;
   padding: 0 12px;
@@ -878,7 +878,7 @@ html[data-panel-align="center"] main > .stack-panel:last-child > :first-child {
     height: 40px;
   }
 
-  .button.primary.repo-btn {
+  .button.repo-btn {
     min-height: 40px;
     height: 40px;
     padding: 0 12px;
@@ -946,7 +946,7 @@ html[data-panel-align="center"] main > .stack-panel:last-child > :first-child {
     border: 0;
   }
 
-  .button.primary.repo-btn {
+  .button.repo-btn {
     width: 40px;
     padding: 0;
   }
@@ -1180,4 +1180,27 @@ html.has-mascot-guide [data-mascot-spot="under-start"] {
   border: 1px solid var(--accent);
   border-radius: 999px;
   pointer-events: none;
+}
+
+/* Pause button: stops animations that run on their own (WCAG 2.2.2). */
+.motion-toggle__icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.motion-toggle__play,
+html[data-motion="paused"] .motion-toggle__pause {
+  display: none;
+}
+
+html[data-motion="paused"] .motion-toggle__play {
+  display: grid;
+}
+
+html[data-motion="paused"] *,
+html[data-motion="paused"] *::before,
+html[data-motion="paused"] *::after {
+  animation-play-state: paused !important;
 }

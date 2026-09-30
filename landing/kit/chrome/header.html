@@ -73,12 +73,22 @@
         </span>
         <span class="visually-hidden">Menu</span>
       </button>
-      <a class="button primary repo-btn" href="{{project.repo}}">
+      <a class="button repo-btn" href="{{project.repo}}">
         <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
         </svg>
-        <span class="repo-btn__label">repository</span>
+        <span class="repo-btn__label">GitHub</span>
       </a>
+      {{#if hasMotionToggle}}
+      <button type="button" class="icon-btn motion-toggle" data-motion-toggle aria-pressed="false" aria-label="Pause animations" title="Pause animations">
+        <span class="motion-toggle__icon motion-toggle__pause" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5v14"/><path d="M15 5v14"/></svg>
+        </span>
+        <span class="motion-toggle__icon motion-toggle__play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5l11 7-11 7z"/></svg>
+        </span>
+      </button>
+      {{/if}}
       <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Use light theme">
         <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

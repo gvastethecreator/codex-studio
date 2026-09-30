@@ -796,3 +796,51 @@ a.hero-example:focus-visible .hero-example-name {
     overflow-wrap: anywhere;
   }
 }
+
+/* hero.kicker: one plain line that says what the project is, above the title. */
+.hero-kicker {
+  margin: 0 0 14px;
+}
+
+/* hero.stackName: two short lines that match the mascot's height. */
+.hero-brand--stacked .hero-name {
+  font-size: calc(var(--hero-brand-size) * 0.8);
+  line-height: 1;
+}
+
+/* Without file names the line under the track holds one dot per card. */
+.deck__file--dots {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  overflow: visible;
+}
+
+.deck__dot {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.deck__dot::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 28%, transparent);
+  transition: width 0.4s var(--ease), background-color 0.4s var(--ease);
+}
+
+.deck__dot:hover::before {
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+.deck__dot.is-on::before {
+  width: 18px;
+  background: var(--ink);
+}

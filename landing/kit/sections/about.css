@@ -751,3 +751,48 @@
     margin-top: 22px;
   }
 }
+
+/* Phones: logo cards pair up and shrink, so the services do not outweigh the product. */
+@media (max-width: 840px) {
+  .about-capabilities--logo-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .about--logo-cards .about-capabilities--logo-cards .about-capability,
+  .about-capabilities--logo-cards .about-capability {
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .about-capabilities--logo-cards .about-capability__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-capabilities--logo-cards .about-capability__logo img,
+  .about-capabilities--logo-cards .about-capability__logo .about-capability__mono {
+    width: 26px;
+    height: 26px;
+  }
+
+  .about-capabilities--logo-cards .about-capability__copy {
+    margin-top: 28px;
+  }
+
+  .about-capabilities--logo-cards .about-capability h3 {
+    font-size: 1rem;
+  }
+
+  .about-capabilities--logo-cards .about-capability__copy p {
+    min-height: 0;
+    font-size: 0.84rem;
+  }
+
+  .about-capabilities--logo-cards .about-capability__fact {
+    top: 16px;
+    right: 12px;
+    padding: 4px 8px;
+    font-size: 0.64rem;
+  }
+}

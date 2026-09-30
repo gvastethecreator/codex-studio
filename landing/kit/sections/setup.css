@@ -233,26 +233,215 @@
 }
 
 .setup__lines {
+  position: relative;
   margin: 0;
-  padding: 24px 28px;
-  overflow-x: auto;
-  font: 400 0.9rem / 2.05 var(--mono);
+  padding: 22px 18px;
+  font: 400 0.9rem / 1.9 var(--mono);
 }
 
-.setup__lines code {
+.setup__lines > code {
   display: block;
   font: inherit;
   white-space: normal;
 }
 
+/* Each command is a line that lights up under the pointer or focus and names what it does. */
 .setup__line {
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  padding-inline: 10px;
+  border-radius: 6px;
   white-space: pre;
+  transition: background-color 0.3s var(--ease);
 }
 
 .setup__line::before {
   content: "$ ";
   color: var(--accent);
+  transition: text-shadow 0.3s var(--ease);
+}
+
+.setup__cmd {
+  min-width: 0;
+  font: inherit;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.setup__line[tabindex]:hover,
+.setup__line[tabindex]:focus-visible {
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  outline: none;
+}
+
+.setup__line[tabindex]:hover::before,
+.setup__line[tabindex]:focus-visible::before {
+  text-shadow: 0 0 12px var(--accent);
+}
+
+.setup__tip {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 26px;
+  z-index: 3;
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 88%, var(--ink));
+  box-shadow: 0 14px 30px -14px rgb(0 0 0 / 0.6);
+  color: var(--ink);
+  font: 500 0.76rem / 1.3 var(--text);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px) scale(0.96);
+  transform-origin: 16px 100%;
+  filter: blur(3px);
+  pointer-events: none;
+  transition:
+    opacity 0.28s var(--ease),
+    transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2),
+    filter 0.28s var(--ease);
+}
+
+.setup__tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 14px;
+  border: 5px solid transparent;
+  border-top-color: color-mix(in srgb, var(--surface) 88%, var(--ink));
+}
+
+.setup__line[tabindex]:hover .setup__tip,
+.setup__line[tabindex]:focus-visible .setup__tip {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* What a command prints, under it. */
+.setup__out {
+  position: relative;
+  padding-inline: calc(10px + 2ch) 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.setup__row--idle {
+  display: none;
+}
+
+/* Live run (added by the runtime): rows wait unseen, the typing line carries the caret, an
+   output first fills a thin bar, then its text rises in. */
+.setup__lines.is-live [data-term-row]:not(.is-on) {
+  visibility: hidden;
+}
+
+.setup__lines.is-live .setup__row--idle {
+  display: block;
+}
+
+.setup__lines.is-live .setup__row--idle:not(.is-on) {
+  visibility: hidden;
+}
+
+/* Beside the command when there is room (set by the runtime), above it otherwise. */
+.setup__line.tip-side .setup__tip {
+  top: 50%;
+  right: 10px;
+  bottom: auto;
+  left: auto;
+  transform: translate(8px, -50%) scale(0.96);
+  transform-origin: 0 50%;
+}
+
+.setup__line.tip-side .setup__tip::after {
+  top: 50%;
+  right: 100%;
+  left: auto;
+  margin-top: -5px;
+  border-top-color: transparent;
+  border-right-color: color-mix(in srgb, var(--surface) 88%, var(--ink));
+}
+
+.setup__line.tip-side:hover .setup__tip,
+.setup__line.tip-side:focus-visible .setup__tip {
+  transform: translate(0, -50%);
+}
+
+.setup__lines.is-live .is-typing .setup__cmd::after,
+.setup__lines.is-live .setup__row--idle.is-on .setup__cmd::after {
+  content: "";
+  display: inline-block;
+  width: 0.58em;
+  height: 1.05em;
+  margin-left: 2px;
+  vertical-align: -0.16em;
+  background: var(--ink);
+  animation: setup-caret 1s steps(1) infinite;
+}
+
+.setup__lines.is-live .is-typing .setup__cmd::after {
+  animation: none;
+}
+
+.setup__lines.is-live .setup__out {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.35s var(--ease), transform 0.45s var(--ease);
+}
+
+.setup__lines.is-live .is-working .setup__out::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(10px + 2ch);
+  width: min(180px, 40%);
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 30%, transparent));
+  transform-origin: 0 50%;
+  animation: setup-progress var(--setup-work, 0.7s) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.setup__lines.is-live .is-working .setup__out {
+  opacity: 1;
+  transform: none;
+  color: transparent;
+}
+
+.setup__lines.is-live .is-done .setup__out {
+  opacity: 1;
+  transform: none;
+}
+
+.setup__script.is-ready .setup__after-dot {
+  animation: setup-ready 1.6s var(--ease) 2;
+}
+
+@keyframes setup-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes setup-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes setup-ready {
+  40% {
+    box-shadow: 0 0 0 9px color-mix(in srgb, var(--accent) 0%, transparent), 0 0 18px var(--accent);
+  }
 }
 
 /* What to do once the commands have run sits at the foot of the terminal, so a terminal
@@ -298,9 +487,33 @@
   }
 
   .setup__line {
-    padding-left: 2ch;
-    text-indent: -2ch;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
   }
+
+  .setup__tip {
+    white-space: normal;
+    max-width: 80%;
+  }
+}
+
+/* A command's note reads as a shell comment after it. */
+.setup__comment {
+  color: var(--muted);
+}
+
+.setup__help {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.setup__help a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--ink) 35%, transparent);
+  text-underline-offset: 3px;
+}
+
+.setup__help a:hover {
+  text-decoration-color: currentColor;
 }

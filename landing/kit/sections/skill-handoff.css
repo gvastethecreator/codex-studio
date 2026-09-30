@@ -149,13 +149,97 @@
 }
 
 .handoff__step {
+  position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   min-width: 0;
+  margin-inline: -8px;
+  padding: 3px 8px;
+  border-radius: 6px;
   color: var(--ink);
   font-size: 0.9rem;
-  transition: opacity 0.3s var(--ease), color 0.3s var(--ease);
+  transition: opacity 0.3s var(--ease), color 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+
+.handoff__step .handoff__icon {
+  margin-top: 2px;
+}
+
+.handoff__main {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 12px;
+  min-width: 0;
+}
+
+.handoff__head-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* What a step printed, in a quieter line under it. */
+.handoff__out {
+  margin-left: auto;
+  flex: none;
+  color: var(--muted);
+  font: 0.76rem / 1.5 var(--mono);
+  transition: opacity 0.4s var(--ease), transform 0.45s var(--ease);
+}
+
+.handoff__window.is-live .handoff__step:not(.is-done) .handoff__out {
+  opacity: 0;
+  transform: translateX(-6px);
+}
+
+/* A step names what it does under the pointer or focus. */
+.handoff__step[tabindex]:hover,
+.handoff__step[tabindex]:focus-visible {
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+  outline: none;
+}
+
+.handoff__tip {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 38px;
+  z-index: 3;
+  padding: 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 88%, var(--ink));
+  box-shadow: 0 14px 30px -14px rgb(0 0 0 / 0.6);
+  color: var(--ink);
+  font: 500 0.76rem / 1.3 var(--text);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px) scale(0.96);
+  transform-origin: 16px 100%;
+  filter: blur(3px);
+  pointer-events: none;
+  transition:
+    opacity 0.28s var(--ease),
+    transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2),
+    filter 0.28s var(--ease);
+}
+
+.handoff__tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 14px;
+  border: 5px solid transparent;
+  border-top-color: color-mix(in srgb, var(--surface) 88%, var(--ink));
+}
+
+.handoff__step[tabindex]:hover .handoff__tip,
+.handoff__step[tabindex]:focus-visible .handoff__tip {
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
 .handoff__text {
@@ -234,7 +318,7 @@ code.handoff__text {
 .handoff__zoom img {
   display: block;
   width: auto;
-  height: clamp(150px, 24vh, 230px);
+  height: clamp(150px, 23vh, 240px);
   max-width: 100%;
   border-radius: inherit;
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
@@ -320,5 +404,15 @@ code.handoff__text {
 @media (prefers-reduced-motion: reduce) {
   .handoff__window.is-live .handoff__step.is-running .handoff__icon {
     animation: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .handoff__main {
+    flex-wrap: wrap;
+  }
+
+  .handoff__out {
+    margin-left: 0;
   }
 }

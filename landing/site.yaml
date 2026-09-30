@@ -15,56 +15,59 @@ project:
 brand:
   initials: CS
   mascot: assets/mascot.svg
+  # Quiet cues for clicks and animations.
+  sounds: true
   accent: "#8b6cff"
   # The Cozy Studio app's accent palettes, starting from the page's violet.
   accentCycle: ["#8b6cff", "#fcb247", "#737373", "#f43f5e", "#f97316", "#f59e0b", "#22c55e", "#06b6d4", "#3b82f6"]
   theme: dark
 
-sections: [hero, about, showcase, preview, screens, setup, skill, closing]
+sections: [hero, preview, showcase, about, setup, skill, faq, closing]
 
 hero:
+  stackName: true
   title: Your ideas, freshly brewed.
   accent: freshly brewed.
-  lede: Make images with the subscription you already pay for. ChatGPT, Grok or Antigravity. No API keys.
+  lede: A local image studio for the ChatGPT, Grok or Antigravity account you already have.
   actions:
-    - { label: Get Cozy Studio, href: "#setup", primary: true }
-    - { label: GitHub, href: "https://github.com/gvastethecreator/cozy-studio" }
+    - { label: Install Cozy Studio, href: "#setup", primary: true }
+    - { label: See how it works, href: "#preview" }
   stage: deck
   gallery:
     - src: assets/deck/cat-reynold-brown.webp
+      small: assets/deck/cat-reynold-brown-640.webp
       alt: "A giant black cat attacks a city in a painted fifties sci-fi movie poster"
       caption: b-movie poster
-      file: Pictures/Cozy Studio/2026-09-29_reynold-brown_giant-black-cat-taller-than-skyscrapers.png
     - src: assets/deck/cat-tadanori-yokoo.webp
+      small: assets/deck/cat-tadanori-yokoo-640.webp
       alt: "A giant black cat over a city in a psychedelic Japanese pop poster"
       caption: pop theater poster
-      file: Pictures/Cozy Studio/2026-09-29_tadanori-yokoo_giant-black-cat-taller-than-skyscrapers.png
     - src: assets/deck/cat-ironbow-thermal-imaging.webp
+      small: assets/deck/cat-ironbow-thermal-imaging-640.webp
       alt: "A giant black cat seen through a thermal camera, glowing over the city"
       caption: thermal camera
-      file: Pictures/Cozy Studio/2026-09-29_ironbow-thermal-imaging_giant-black-cat-taller-than-skyscrapers.png
     - src: assets/deck/cat-harry-clarke.webp
+      small: assets/deck/cat-harry-clarke-640.webp
       alt: "A giant black cat and a city as a jewel-toned stained glass window"
       caption: stained glass
-      file: Pictures/Cozy Studio/2026-09-29_harry-clarke_giant-black-cat-taller-than-skyscrapers.png
     - src: assets/deck/cat-stenberg-brothers.webp
+      small: assets/deck/cat-stenberg-brothers-640.webp
       alt: "A giant black cat in a Soviet constructivist film poster"
       caption: constructivist poster
-      file: Pictures/Cozy Studio/2026-09-29_stenberg-brothers_giant-black-cat-taller-than-skyscrapers.png
     - src: assets/deck/cat-visionary-apocalypse-woodcut.webp
+      small: assets/deck/cat-visionary-apocalypse-woodcut-640.webp
       alt: "A giant black cat over a city as an old apocalypse woodcut"
       caption: woodcut
-      file: Pictures/Cozy Studio/2026-09-29_visionary-apocalypse-woodcut_giant-black-cat-taller-than-skyscrapers.png
 
 about:
   variant: logo-cards
   navLabel: Providers
   kicker: Providers
-  title: Your subscription does the work.
-  lede: Sign in once and Cozy Studio uses the plan you already pay for. Google works too, with an API key.
+  title: Sign in with what you already use.
+  lede: Cozy Studio makes images through your own account and its allowance, so your provider’s limits still apply. Google works too, with an API key.
   capabilities:
     - { title: ChatGPT, body: "Sign in from Settings. Uses your plan’s allowance.", logo: assets/providers/chatgpt.svg, mono: true, fact: recommended, tint: "#ff9466", fx: rosette }
-    - { title: Codex, body: "Through the Codex app. Uses your Codex allowance.", logo: assets/providers/codex.svg, mono: true, tint: "#6975fd", fx: prompt }
+    - { title: Codex, body: "Needs the Codex app. Uses your Codex allowance.", logo: assets/providers/codex.svg, mono: true, tint: "#6975fd", fx: prompt }
     - { title: Grok, body: Sign in with xAI or your Grok Build login., logo: assets/providers/grok.svg, mono: true, tint: "#c3cad6", fx: horizon }
     - { title: Antigravity, body: "Nano Banana, through your Antigravity login.", logo: assets/providers/antigravity.svg, tint: "#4c8dff", fx: lift }
 
@@ -74,7 +77,7 @@ showcase:
   kicker: Styles
   rows: 3
   title: A hundred styles, ready to go.
-  lede: Essentials comes installed. Pick one, or mix up to five.
+  lede: A starter collection of about a hundred styles comes installed. Use one, or mix up to five.
   images:
     - { src: assets/styles/sp00-001.webp, alt: "Studio Headshot style sample", caption: "Studio Headshot" }
     - { src: assets/styles/sp00-003.webp, alt: "Kodak Portra 400 style sample", caption: "Kodak Portra 400" }
@@ -121,66 +124,87 @@ preview:
   variant: walkthrough
   navLabel: How it works
   kicker: How it works
-  title: Three steps. That’s it.
+  title: From idea to picture in three steps.
   image: { src: assets/create.webp, light: assets/create-light.webp, alt: Cozy Studio with a paper collage style, a prompt and the finished picture }
   steps:
-    - { title: Pick a style, body: "Film, paint, anime, print, pixel art.", x: 13, y: 15, radius: 11 }
-    - { title: Say what you want, body: Plain words. Add a picture if you like., x: 13, y: 43, radius: 11 }
-    - { title: Keep it, body: It lands in Pictures/Cozy Studio as a PNG., x: 62, y: 46, radius: 26 }
+    - title: Describe it
+      body: Plain words, and a reference picture if you like.
+      x: 12.5
+      y: 31
+      radius: 11
+      image: { src: assets/screens/step-describe.webp, light: assets/screens/step-describe-light.webp, alt: "Create: the prompt is written and nothing is generated yet" }
+    - title: Pick a style (or skip this step)
+      body: Film, paint, anime, print, pixel art.
+      x: 9.5
+      y: 44
+      radius: 12
+      image: { src: assets/screens/step-style.webp, light: assets/screens/step-style-light.webp, alt: "Style explorer: a paper collage style picked" }
+    - title: Generate and keep it
+      body: Every picture lands in your library and in the folder you choose.
+      x: 62
+      y: 46
+      radius: 26
+      image: { src: assets/create.webp, light: assets/create-light.webp, alt: "Create: the finished picture, a patchwork whale in paper collage" }
 
 skill:
   variant: handoff
   navLabel: Agents
   kicker: Agent-ready
-  title: Or let your agent brew it.
-  accent: brew it.
-  lede: Ask your coding agent for Cozy Studio. It follows the repo’s own guide, starts the app and makes pictures with it. You only sign in.
+  title: Already using a coding agent?
+  accent: coding agent?
+  lede: Paste this. It installs Cozy Studio and makes your first picture.
   prompt: Set up Cozy Studio from github.com/gvastethecreator/cozy-studio, then make me a giant black cat over a city as a stained glass window.
-  agents: [Codex, Claude Code, Cursor, any coding agent]
+  agents: [Codex, Claude Code, Cursor]
   steps:
-    - { kind: read, text: Reads AGENTS.md and the setup skill }
-    - { kind: run, text: bun install }
-    - { kind: run, text: bun run studio:init }
-    - { kind: run, text: bun run dev }
-    - { kind: you, text: Sign in to ChatGPT in Settings }
-    - { kind: make, text: Makes the picture with ChatGPT }
+    - { kind: read, text: Reads AGENTS.md and the setup skill, note: The repo tells the agent how to set it up, output: "setup plan: 4 commands" }
+    - { kind: run, text: bun install, note: Installs what the app needs, output: "✓ dependencies installed" }
+    - { kind: run, text: "bun run studio:onboard --setup", note: Checks your setup and asks before changing anything, output: "✓ ready to set up" }
+    - { kind: run, text: bun run studio:init, note: Creates your library and settings, output: "✓ library created" }
+    - { kind: run, text: bun run dev, note: Starts Cozy Studio, output: "➜ running at localhost:17222" }
+    - { kind: you, text: Sign in to ChatGPT in Settings, note: The one step that stays with you, output: "✓ signed in" }
+    - { kind: make, text: Makes the picture with ChatGPT, note: Uses the style and the prompt you gave it, output: "✓ 1 picture · stained glass" }
   result:
     src: assets/deck/cat-harry-clarke.webp
     alt: A giant black cat and a city as a jewel-toned stained glass window
     caption: Pictures/Cozy Studio/2026-09-29_harry-clarke_giant-black-cat-taller-than-skyscrapers.png
 
-screens:
-  navLabel: Screens
-  kicker: Inside the app
-  title: A look inside.
-  lede: Create, browse the styles, keep your library, choose where the files go.
-  head: true
-  images:
-    - { src: assets/create.webp, light: assets/create-light.webp, alt: "Create: a paper collage style, a prompt and the finished picture", caption: Create }
-    - { src: assets/screens/styles.webp, light: assets/screens/styles-light.webp, alt: "Style explorer: collections of styles by what they are for", caption: Style explorer }
-    - { src: assets/screens/library.webp, light: assets/screens/library-light.webp, alt: "Library: every picture in the workspace", caption: Library }
-    - { src: assets/screens/output.webp, light: assets/screens/output-light.webp, alt: "Settings: where pictures are saved and how they are named", caption: Output settings }
 
 setup:
   variant: script
   navLabel: Install
   kicker: Install
-  title: Make a cup. Install it.
-  lede: Free and open source. You need Bun and a browser.
+  title: Install Cozy Studio.
+  lede: Free and open source. Needs Git and Bun.
   items:
-    - command: "git clone https://github.com/gvastethecreator/cozy-studio"
-    - command: cd cozy-studio
-    - command: bun install
-    - command: "bun run studio:onboard --setup"
-    - command: "bun run studio:init"
-    - command: bun run dev
-  verification: open localhost:17222 and sign in
+    - { command: "git clone https://github.com/gvastethecreator/cozy-studio", note: Downloads the code, output: "Cloning into 'cozy-studio'… done." }
+    - { command: cd cozy-studio, note: Opens the folder }
+    - { command: bun install, note: Installs dependencies, output: "✓ dependencies installed" }
+    - { command: "bun run studio:onboard --setup", note: Checks what is missing, output: "✓ ready to set up" }
+    - { command: "bun run studio:init", note: Creates your library, output: "✓ library created" }
+    - { command: bun run dev, note: Starts the app, output: "➜ Cozy Studio is running at localhost:17222" }
+  verification: open localhost:17222 and sign in from Settings
+
+faq:
+  navLabel: FAQ
+  kicker: Before you start
+  title: Good to know.
+  items:
+    - question: What is free?
+      answer: Cozy Studio is free and open source under the MIT license. Making images goes through your provider account, so its plan, limits and terms still apply.
+    - question: What stays on my computer?
+      answer: The app, your library, your settings and every picture you keep. When you generate, the prompt and any reference pictures go to the provider you picked.
+    - question: Which account do I need?
+      answer: A ChatGPT account is the easiest start. Codex, Grok and Antigravity sign-ins work too, and Google works with an API key.
+    - question: Does it run on my computer?
+      answer: Windows and macOS, with Git, Bun and a browser. Linux is best effort.
+    - question: Where do I get help?
+      answer: The troubleshooting guide in the repository covers the usual problems. For anything else, open an issue on GitHub.
 
 closing:
   text: Go create something.
   accent: something.
   lede: Free and open source. It runs on your computer.
-  action: { label: Get Cozy Studio, href: "#setup" }
+  action: { label: Install Cozy Studio, href: "#setup" }
   secondary: { label: Star on GitHub, href: "https://github.com/gvastethecreator/cozy-studio" }
   images:
     - assets/styles/sp00-001.webp

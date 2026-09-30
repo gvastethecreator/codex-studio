@@ -27,10 +27,20 @@ const rgb = (hex) => {
 };
 const toHex = (channels) => `#${channels.map((v) => Math.round(v).toString(16).padStart(2, "0")).join("")}`;
 
+// Text on the accent: near-black or white, whichever contrasts more (same rule as the build).
+function textOn(channels) {
+  const [r, g, b] = channels.map((value) => {
+    const c = value / 255;
+    return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179 ? "#0b0a10" : "#ffffff";
+}
+
 function applyAccent(hex) {
   const channels = rgb(hex);
   const gray = Math.max(...channels) - Math.min(...channels) < 10;
   root.style.setProperty("--accent", hex);
+  if (root.dataset.actionAccent != null) root.style.setProperty("--action-fg", textOn(channels));
   for (let step = 1; step <= 9; step += 1) {
     const value = gray
       ? `oklch(${GRAY[step - 1]} 0 0)`

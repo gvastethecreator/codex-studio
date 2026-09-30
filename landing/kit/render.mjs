@@ -2252,6 +2252,8 @@ function prepare(site) {
               }))
             : [],
           deckNote: String(site.hero?.stageNote ?? "").trim(),
+          // hero.stackName breaks the name after its first word.
+          nameStackedHtml: escapeHtml(site.project.name).replace(" ", "<br>"),
           mascotSvg: brand.hasMascot ? inlineSvgAsset(brand.mascot, "hero-mascot") : "",
           hasExamples,
           hasBar: false,

@@ -44,8 +44,18 @@
       {{/each}}
     </ol>
     <div class="walkthrough__stage">
-      <figure class="walkthrough__screen">
+      <figure class="walkthrough__screen{{#if preview.hasStepShots}} walkthrough__screen--shots{{/if}}">
+        {{#if preview.hasStepShots}}
+        {{#each preview.steps}}
+        {{#if shot}}
+        <div class="walkthrough__shot{{#if active}} is-shown{{/if}}" data-shot="{{index}}">
+          <img src="{{shot.src}}" alt="{{shot.alt}}" decoding="async"{{#if shot.hasLight}} class="theme-dark-only"{{/if}}>{{#if shot.hasLight}}<img class="theme-light-only" src="{{shot.light}}" alt="{{shot.alt}}" decoding="async">{{/if}}
+        </div>
+        {{/if}}
+        {{/each}}
+        {{else}}
         <img src="{{preview.primary.src}}" alt="{{preview.primary.alt}}" decoding="async"{{#if preview.primary.hasLight}} class="theme-dark-only"{{/if}}>{{#if preview.primary.hasLight}}<img class="theme-light-only" src="{{preview.primary.light}}" alt="{{preview.primary.alt}}" decoding="async">{{/if}}
+        {{/if}}
         <span class="walkthrough__spot" data-spot aria-hidden="true"></span>
       </figure>
     </div>

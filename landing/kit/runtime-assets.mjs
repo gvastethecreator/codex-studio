@@ -11,4 +11,5 @@ export const FIRST_PARTY_RUNTIME = [
   ["kit/js/modules/stage-motion.js", "kit/vendor/stage-motion.js"],
   ["kit/js/modules/accent-cycle.js", "kit/vendor/accent-cycle.js"],
   ["kit/js/modules/card-fx.js", "kit/vendor/card-fx.js"],
+  ["kit/js/modules/sound.js", "kit/vendor/sound.js"],
 ];

@@ -7,6 +7,9 @@
     {{#if setup.lede}}
     <p class="lede">{{setup.lede}}</p>
     {{/if}}
+    {{#if setup.help}}
+    <p class="setup__help"><a href="{{setup.help.href}}">{{setup.help.label}}</a></p>
+    {{/if}}
   </header>
 
   {{#if setup.hasConfig}}
@@ -66,7 +69,18 @@
         </span>
       </button>
     </header>
-    <pre class="setup__lines"><code>{{#each setup.items}}<span class="setup__line">{{command}}</span>{{/each}}</code></pre>
+    <div class="setup__lines" data-terminal>
+      {{#each setup.items}}
+      <div class="setup__row" data-term-row>
+        <div class="setup__line"{{#if note}} tabindex="0" aria-describedby="setup-tip-{{n}}"{{/if}}>
+          <code class="setup__cmd" data-term-cmd>{{command}}</code>
+          {{#if note}}<span class="setup__tip" id="setup-tip-{{n}}" role="tooltip">{{note}}</span>{{/if}}
+        </div>
+        {{#if output}}<div class="setup__out" data-term-out>{{output}}</div>{{/if}}
+      </div>
+      {{/each}}
+      <div class="setup__row setup__row--idle" data-term-idle aria-hidden="true"><div class="setup__line"><code class="setup__cmd"></code></div></div>
+    </div>
     {{#if setup.verification}}
     <p class="setup__after"><span class="setup__after-dot" aria-hidden="true"></span>{{setup.verification}}</p>
     {{/if}}

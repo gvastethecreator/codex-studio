@@ -351,3 +351,23 @@
     width: 100%;
   }
 }
+
+/* Steps with their own screens: the screens stack in one frame and the active step's shows. */
+.walkthrough__screen--shots {
+  display: grid;
+}
+
+.walkthrough__shot {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transition: opacity 0.55s var(--ease);
+}
+
+.walkthrough__shot.is-shown {
+  opacity: 1;
+}
+
+.walkthrough__shot img {
+  display: block;
+  width: 100%;
+}

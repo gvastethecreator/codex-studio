@@ -61,6 +61,9 @@
     if (document.documentElement.hasAttribute("data-accent-cycle")) {
       import(new URL("accent-cycle.js", vendorBase)).catch((error) => report("accent-cycle", error));
     }
+    if (document.documentElement.hasAttribute("data-sound")) {
+      import(new URL("sound.js", vendorBase)).catch((error) => report("sound", error));
+    }
     if (document.querySelector("canvas[data-card-fx]")) {
       import(new URL("card-fx.js", vendorBase)).catch((error) => report("card-fx", error));
     }

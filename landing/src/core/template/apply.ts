@@ -27,6 +27,8 @@ export function applyResolvedTemplate(
   if (typeof typography?.stylesheet === "string" && typography.stylesheet.startsWith("https://")) {
     view.fontStylesheet = typography.stylesheet;
   }
+  const color = (resolved.tokens as { color?: { actionStyle?: unknown } } | undefined)?.color;
+  if (color?.actionStyle === "accent") view.actionAccent = true;
   const panels = (resolved.chrome as { panels?: { align?: unknown } } | undefined)?.panels;
   if (panels?.align === "center") view.panelAlign = "center";
   const column = (resolved.chrome as { column?: { variant?: unknown } } | undefined)?.column;

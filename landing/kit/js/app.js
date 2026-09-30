@@ -1472,8 +1472,11 @@
       // One wheel gesture moves one panel. A fast wheel spin or trackpad inertia sends many
       // events; after a move they are held until the wheel has been quiet for a moment.
       const WHEEL_QUIET_MS = 200;
+      const WHEEL_STEP = 40;
       let wheelHeld = false;
       let wheelQuiet = 0;
+      let wheelSum = 0;
+      let wheelSumReset = 0;
       const holdWheel = () => {
         wheelHeld = true;
         window.clearTimeout(wheelQuiet);
@@ -1493,11 +1496,31 @@
             if (event.cancelable) event.preventDefault();
             return;
           }
-          const moved = event.deltaY > 8 ? goNext(event) : event.deltaY < -8 ? goPrev(event) : false;
-          if (moved) holdWheel();
+          // Small trackpad deltas add up: a slow, light swipe scrolls a little before it pages.
+          wheelSum += event.deltaY;
+          window.clearTimeout(wheelSumReset);
+          wheelSumReset = window.setTimeout(() => {
+            wheelSum = 0;
+          }, 160);
+          const moved = wheelSum > WHEEL_STEP ? goNext(event) : wheelSum < -WHEEL_STEP ? goPrev(event) : false;
+          if (moved) {
+            wheelSum = 0;
+            holdWheel();
+          }
         },
         { passive: false, capture: true }
       );
+
+      // Page Down, Page Up, Space, Home and End move by panel; arrow keys keep scrolling freely.
+      document.addEventListener("keydown", (event) => {
+        if (!theaterEnabled() || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+        const target = event.target instanceof Element ? event.target : null;
+        if (target?.closest("input, textarea, select, button, a, [contenteditable], [role=tab], .lightbox")) return;
+        if (event.key === "PageDown" || (event.key === " " && !event.shiftKey)) goNext(event);
+        else if (event.key === "PageUp" || (event.key === " " && event.shiftKey)) goPrev(event);
+        else if (event.key === "Home") goTo(0, event);
+        else if (event.key === "End") goTo(panels.length - 1, event);
+      });
       const observe = window.Observer
         ? (vars) => window.Observer.create(vars)
         : hasScrollTrigger && typeof window.ScrollTrigger.observe === "function"
@@ -4336,6 +4359,41 @@
     });
   }
 
+  /* Pause button: html[data-motion="paused"], kept per browser; motion modules listen for
+     "motion:change". */
+  function initMotionToggle() {
+    const buttons = Array.from(document.querySelectorAll("[data-motion-toggle]"));
+    if (!buttons.length) return;
+    const KEY = "gvaste-motion";
+    const root = document.documentElement;
+    let paused = false;
+    try {
+      paused = localStorage.getItem(KEY) === "paused";
+    } catch {}
+    const apply = (next) => {
+      paused = next;
+      if (paused) root.dataset.motion = "paused";
+      else delete root.dataset.motion;
+      const label = paused ? "Play animations" : "Pause animations";
+      buttons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(paused));
+        button.setAttribute("aria-label", label);
+        button.title = label;
+      });
+      document.dispatchEvent(new CustomEvent("motion:change", { detail: { paused } }));
+    };
+    apply(paused);
+    buttons.forEach((button) =>
+      button.addEventListener("click", () => {
+        apply(!paused);
+        try {
+          if (paused) localStorage.setItem(KEY, "paused");
+          else localStorage.removeItem(KEY);
+        } catch {}
+      })
+    );
+  }
+
   /* Pictures with a light-mode twin (data-light-src) follow the page theme. */
   function initThemeTwins() {
     const images = Array.from(document.querySelectorAll("img[data-light-src]"));
@@ -4395,6 +4453,7 @@
   const STEPS = [
     ["theme", initTheme],
     ["hero-shade", initHeroShade],
+    ["motion-toggle", initMotionToggle],
     ["theme-twins", initThemeTwins],
     ["carousel", () => document.querySelectorAll("[data-carousel]").forEach((root) => new DepthCarousel(root))],
     ["zoom", initZoom],

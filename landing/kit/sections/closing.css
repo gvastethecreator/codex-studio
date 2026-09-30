@@ -140,3 +140,42 @@
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+
+/* Now and then a picture steps out of the wall, floats a moment beside the words, and goes back. */
+.closing__pops {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.closing--finale .closing__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.closing__pop {
+  position: absolute;
+  width: clamp(104px, 11vw, 168px);
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: 0 34px 60px -24px rgb(0 0 0 / 0.75), 0 0 0 1px rgb(0 0 0 / 0.2);
+  will-change: transform, opacity, filter;
+}
+
+.closing__pop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 840px) {
+  .closing__pops {
+    display: none;
+  }
+}

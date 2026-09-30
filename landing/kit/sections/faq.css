@@ -218,3 +218,39 @@
 main > .stack-panel.faq {
   overflow: auto;
 }
+
+/* With the mascot guide the title is only as wide as its words, so the mascot stands right beside it. */
+html.has-mascot-guide .faq .section-head h2 {
+  width: fit-content;
+}
+
+/* An opening answer eases in a moment after its row opens; the mark turns. */
+.faq-item__mark svg {
+  transition: transform 0.45s cubic-bezier(0.3, 1.3, 0.5, 1), opacity 0.3s var(--ease);
+}
+
+.faq-item.is-open .faq-item__mark svg {
+  transform: rotate(180deg);
+}
+
+.faq-item__body > * {
+  transition: opacity 0.35s var(--ease), transform 0.45s var(--ease);
+}
+
+.faq-list.is-enhanced .faq-item:not(.is-open) .faq-item__body > * {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.faq-list.is-enhanced .faq-item.is-open .faq-item__body > * {
+  transition-delay: 0.08s;
+}
+
+.faq-item__n {
+  transition: color 0.3s var(--ease);
+}
+
+.faq-item.is-open .faq-item__n,
+.faq-item__q:hover .faq-item__n {
+  color: var(--ink);
+}

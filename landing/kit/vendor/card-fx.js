@@ -267,7 +267,7 @@ function mount(canvas) {
     const dt = Math.min(0.05, (now - last) / 1000);
     last = now;
     hover += (target - hover) * Math.min(1, dt * 5);
-    clock += dt * (reduced ? 0 : 1);
+    clock += dt * (reduced || document.documentElement.dataset.motion === "paused" ? 0 : 1);
     size();
     gl.uniform1f(u.t, clock);
     gl.uniform1f(u.h, hover);

@@ -10,7 +10,7 @@
       <p class="lede">{{skill.lede}}</p>
       {{/if}}
       <div class="handoff__prompt">
-        <p class="handoff__label">{{skill.promptLabel}}</p>
+        {{#if skill.promptLabel}}<p class="handoff__label">{{skill.promptLabel}}</p>{{/if}}
         <div class="handoff__prompt-box">
           <p class="handoff__prompt-text">{{skill.prompt}}</p>
           <button class="button handoff__copy" type="button" data-copy="{{skill.prompt}}">
@@ -30,10 +30,16 @@
           <p data-handoff-type>{{skill.prompt}}</p>
         </li>
         {{#each skill.steps}}
-        <li class="handoff__step handoff__step--{{kind}}" data-handoff-step>
+        <li class="handoff__step handoff__step--{{kind}}" data-handoff-step{{#if note}} tabindex="0"{{/if}}>
           <span class="handoff__icon" aria-hidden="true"></span>
-          {{#if isRun}}<code class="handoff__text">{{text}}</code>{{else}}<span class="handoff__text">{{text}}</span>{{/if}}
-          {{#if isYou}}<span class="handoff__you">you</span>{{/if}}
+          <span class="handoff__main">
+            <span class="handoff__head-line">
+              {{#if isRun}}<code class="handoff__text">{{text}}</code>{{else}}<span class="handoff__text">{{text}}</span>{{/if}}
+              {{#if isYou}}<span class="handoff__you">you</span>{{/if}}
+            </span>
+            {{#if output}}<span class="handoff__out">{{output}}</span>{{/if}}
+          </span>
+          {{#if note}}<span class="handoff__tip" role="tooltip">{{note}}</span>{{/if}}
         </li>
         {{/each}}
         {{#if skill.hasResult}}

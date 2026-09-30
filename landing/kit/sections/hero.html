@@ -1,6 +1,6 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <div class="hero-brand">
+    <div class="hero-brand{{#if hero.stackName}} hero-brand--stacked{{/if}}">
       {{#if brand.icon}}
       <span class="hero-icon hero-icon--file">
         <img src="{{brand.icon}}" alt="" width="36" height="36">
@@ -15,8 +15,11 @@
       {{#if hero.mascotSvg}}
       <span class="hero-mascot" data-mascot="host" data-mascot-spot="fill" data-mascot-mood="happy" aria-hidden="true">{{{hero.mascotSvg}}}</span>
       {{/if}}
-      <p class="hero-name">{{project.name}}</p>
+      <p class="hero-name">{{#if hero.stackName}}{{{hero.nameStackedHtml}}}{{else}}{{project.name}}{{/if}}</p>
     </div>
+    {{#if hero.kicker}}
+    <p class="kicker hero-kicker">{{hero.kicker}}</p>
+    {{/if}}
     <h1 id="hero-title">{{{hero.titleHtml}}}</h1>
     {{#if hero.lede}}
     <p class="lede">{{hero.lede}}</p>
@@ -76,8 +79,8 @@
     <figure class="deck" data-deck aria-roledescription="carousel" aria-label="{{hero.carouselLabel}}">
       <div class="deck__stack" data-deck-stack tabindex="0">
         {{#each hero.deck}}
-        <article class="deck__card" data-deck-card data-file="{{file}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
-          <img src="{{src}}" alt="{{alt}}" decoding="async" draggable="false">
+        <article class="deck__card" data-deck-card data-file="{{file}}" data-caption="{{caption}}" aria-roledescription="slide" aria-label="{{n}} of {{count}}">
+          <img src="{{src}}"{{#if small}} srcset="{{small}} 640w, {{src}} 1100w" sizes="(max-width: 840px) 78vw, 460px"{{/if}} alt="{{alt}}"{{#if index}} decoding="async"{{else}} fetchpriority="high"{{/if}} draggable="false">
           {{#if caption}}
           <span class="deck__label">{{caption}}</span>
           {{/if}}

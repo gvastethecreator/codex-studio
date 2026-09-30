@@ -234,12 +234,16 @@ function preparePreview(block, project) {
         if (!Number.isFinite(x) || x < 0 || x > 100) fail(`${path}.x must be 0 to 100`);
         if (!Number.isFinite(y) || y < 0 || y > 100) fail(`${path}.y must be 0 to 100`);
         if (!Number.isFinite(radius) || radius < 4 || radius > 60) fail(`${path}.radius must be 4 to 60`);
+        // A step may bring its own screen; x, y and radius then point into that screen.
+        const shot = item.image ? imageItem(item.image, `${path}.image`) : null;
         return {
           title,
           body: String(item.body ?? "").trim(),
           x,
           y,
           radius,
+          shot,
+          index,
           n: String(index + 1).padStart(2, "0"),
           active: index === 0,
         };
@@ -269,6 +273,7 @@ function preparePreview(block, project) {
     hasWalkthrough: variant === "walkthrough",
     steps,
     stepCount: steps.length,
+    hasStepShots: steps.some((step) => step.shot),
     isWindow: variant === "window",
     isDevice: variant === "device",
     carouselLabel: `${project?.name ?? "Project"} preview`,
@@ -625,7 +630,15 @@ function prepareSkill(block, legacySkill) {
     if (!HANDOFF_KINDS.includes(kind)) fail(`${path}.kind must be one of ${HANDOFF_KINDS.join(", ")}`);
     const text = String(item.text ?? "").trim();
     if (!text) fail(`${path}.text is required`);
-    return { kind, text, isRun: kind === "run", isYou: kind === "you", n: index + 1 };
+    return {
+      kind,
+      text,
+      note: String(item.note ?? "").trim(),
+      output: String(item.output ?? "").trim(),
+      isRun: kind === "run",
+      isYou: kind === "you",
+      n: index + 1,
+    };
   });
   if (steps.length < 2) fail("skill.handoff requires at least two steps");
   const agents = (Array.isArray(block.agents) ? block.agents : []).map((name) => String(name).trim()).filter(Boolean);
@@ -637,7 +650,7 @@ function prepareSkill(block, legacySkill) {
     title,
     titleHtml: accentHtml(titleHtml(title), block.accent),
     prompt,
-    promptLabel: String(block.promptLabel ?? "Paste this to your agent").trim(),
+    promptLabel: String(block.promptLabel ?? "").trim(),
     agents,
     hasAgents: agents.length > 0,
     steps,
@@ -707,6 +720,10 @@ function prepareWith(raw, legacyPrepare) {
     ...semantic,
     sections,
     nav: navFor(sections, raw),
+    // header.pauseButton: true adds a button that pauses animations that run on their own.
+    hasMotionToggle: raw?.header?.pauseButton === true,
+    // brand.sounds: true plays quiet cues for clicks and animations.
+    hasSound: raw?.brand?.sounds === true,
   };
 }
 

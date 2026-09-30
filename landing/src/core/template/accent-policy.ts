@@ -80,12 +80,24 @@ function accentInput(template: TemplateDoc, theme: "light" | "dark", brandAccent
   return typeof chosen === "string" && chosen ? chosen : "#c9c9c9";
 }
 
-function actionCss(actionStyle: ActionStyle, accentCss: string, template: TemplateDoc, theme: "light" | "dark"): string {
+// Text on an accent fill: near-black or white, whichever contrasts more (WCAG luminance;
+// the two meet at 0.179). The theme paper is not used: a light paper on a mid accent fails AA.
+export function textOnAccent(hex: string): string | null {
+  const match = /^#([0-9a-f]{6})$/i.exec(String(hex).trim());
+  if (!match) return null;
+  const [r, g, b] = [0, 2, 4].map((at) => {
+    const c = parseInt(match[1].slice(at, at + 2), 16) / 255;
+    return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.179 ? "#0b0a10" : "#ffffff";
+}
+
+function actionCss(actionStyle: ActionStyle, accentCss: string, accentHex: string, template: TemplateDoc, theme: "light" | "dark"): string {
   const color = { ...baseColor(template), ...themeColor(template, theme) };
   const ink = typeof color.ink === "string" ? color.ink : "#c9c9c9";
   const paper = typeof color.paper === "string" ? color.paper : "#000000";
   // var(--accent) keeps accent buttons in step when the page accent changes at runtime.
-  if (actionStyle === "accent") return `--action-bg:var(--accent, ${accentCss});--action-fg:${paper}`;
+  if (actionStyle === "accent") return `--action-bg:var(--accent, ${accentCss});--action-fg:${textOnAccent(accentHex) ?? paper}`;
   return `--action-bg:${ink};--action-fg:${paper}`;
 }
 
@@ -121,7 +133,7 @@ export function composePageColorCss(input: {
   const blocks = (["dark", "light"] as const).map((mode) => {
     const value = accentInput(input.template, mode, input.brandAccent, policy.source);
     const resolved = resolveAccent(value) ?? resolveAccent("#c9c9c9");
-    const extra = `${resolved.style};${STATUS_ROLE_CSS};${actionCss(policy.actionStyle, resolved.css, input.template, mode)}`;
+    const extra = `${resolved.style};${STATUS_ROLE_CSS};${actionCss(policy.actionStyle, resolved.css, value, input.template, mode)}`;
     return { mode, extra };
   });
   const themed = templateThemeCss(input.template);
