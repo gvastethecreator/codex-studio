@@ -1,7 +1,7 @@
 # Code map: cozy-studio
 
-Generated: 2026-09-30T07:19:30Z | Commit: `aae0d8ee336b` | Schema: 2
-Generation: `6c228567dd58d5283085d6dd771b3498176ca4b1a8df0eb8adef6c1aa0d1a328`
+Generated: 2026-09-30T07:25:20Z | Commit: `7f5dbc060315` | Schema: 2
+Generation: `0b14a43a1d7f9412d281ebdb52431f38c89176ff06f3bb454047b97784be7337`
 Scope: . | Inventory: working-tree
 Nodes: 997 | Edges: 5825 | Flows: 5
 
@@ -115,7 +115,7 @@ Nodes: 997 | Edges: 5825 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +0 / -0; edges: +2 / -0.
+- Nodes: +0 / -0; edges: +0 / -0.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next

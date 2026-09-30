@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-30T07:19:30Z",
-  "generated_from_commit": "aae0d8ee336b72e36732b2dbca0dc464c87288d7",
+  "generated_at": "2026-09-30T07:25:20Z",
+  "generated_from_commit": "7f5dbc0603150cab51a5fc03cf158e74bf489e19",
   "scope": [
     "."
   ],
@@ -5984,8 +5984,8 @@
         "path": "scripts/report-style-render-budget.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
-        "size": 16775
+        "digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
+        "size": 17256
       },
       {
         "path": "scripts/report-ui-chunks.test.ts",
@@ -6555,7 +6555,7 @@
         "size": 710
       }
     ],
-    "digest": "8d78acaa72f5d86f120be84dc84362079cf94bd918ccb7d4130da11d64af2d49"
+    "digest": "ed532e219746fa4b5de7f82db8e774942a12ad4f68ea57a66e2d58bb85157ec3"
   },
   "coverage": {
     "discovered_files": 1762,
@@ -278881,7 +278881,7 @@
             "start_line": 17,
             "end_line": 17,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "definition"
           },
           {
@@ -278890,7 +278890,7 @@
             "start_line": 18,
             "end_line": 18,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "definition"
           },
           {
@@ -278899,7 +278899,7 @@
             "start_line": 19,
             "end_line": 19,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "definition"
           }
         ]
@@ -440879,10 +440879,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "createStyleBrowserProcessedData({\n    activePack: pack,\n    currentPackId: pack.id,\n    favoritesPackId: 'favorites',\n    favoritePresets: [],\n    favoriteIds: [],\n    searchQuery: '',\n    sortOrder: 'az',\n    showFavoritesOnly: false,\n  })",
-            "start_line": 130,
-            "end_line": 139,
+            "start_line": 132,
+            "end_line": 141,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleBrowserRenderPlan.ts",
             "target_symbol": "createStyleBrowserProcessedData"
@@ -440890,10 +440890,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "createStyleBrowserRenderPlan({\n    processedData,\n  })",
-            "start_line": 140,
-            "end_line": 142,
+            "start_line": 142,
+            "end_line": 144,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleBrowserRenderPlan.ts",
             "target_symbol": "createStyleBrowserRenderPlan"
@@ -440901,10 +440901,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "measureStyleBrowserRenderPlan({\n    processedData,\n    renderPlan,\n    gridColumns,\n    containerWidth,\n    viewportHeight: DEFAULT_VIEWPORT_HEIGHT,\n  })",
-            "start_line": 144,
-            "end_line": 150,
+            "start_line": 146,
+            "end_line": 152,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleBrowserRenderPlan.ts",
             "target_symbol": "measureStyleBrowserRenderPlan"
@@ -440928,7 +440928,7 @@
             "start_line": 7,
             "end_line": 13,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "import",
             "resolved_target": "components/recipes/styleBrowserRenderPlan.ts"
           }
@@ -440948,10 +440948,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "estimateStyleGridMountedPresetCount({\n      presetCount: presets.length,\n      gridColumns,\n      containerWidth,\n      viewportHeight: DEFAULT_VIEWPORT_HEIGHT,\n    })",
-            "start_line": 258,
-            "end_line": 263,
+            "start_line": 260,
+            "end_line": 265,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleGridVirtualization.ts",
             "target_symbol": "estimateStyleGridMountedPresetCount"
@@ -440959,10 +440959,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "estimateStyleGroupPlaceholderHeight({\n        renderedPresetCount: presets.length,\n        gridColumns,\n        containerWidth,\n        hasShowMore: false,\n      })",
-            "start_line": 269,
-            "end_line": 274,
+            "start_line": 271,
+            "end_line": 276,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleGridVirtualization.ts",
             "target_symbol": "estimateStyleGroupPlaceholderHeight"
@@ -440970,10 +440970,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "estimateStyleGridMountedPresetCount({\n          presetCount: presets.length,\n          gridColumns,\n          containerWidth,\n          viewportHeight: DEFAULT_VIEWPORT_HEIGHT,\n        })",
-            "start_line": 304,
-            "end_line": 309,
+            "start_line": 306,
+            "end_line": 311,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "components/recipes/styleGridVirtualization.ts",
             "target_symbol": "estimateStyleGridMountedPresetCount"
@@ -440997,7 +440997,7 @@
             "start_line": 1,
             "end_line": 6,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "import",
             "resolved_target": "components/recipes/styleGridVirtualization.ts"
           }
@@ -441020,7 +441020,7 @@
             "start_line": 15,
             "end_line": 15,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "import",
             "resolved_target": "components/recipes/styles/runtimeTypes.ts"
           }
@@ -441040,10 +441040,10 @@
           {
             "path": "scripts/report-style-render-budget.ts",
             "symbol": "loadInstalledStylePackData()",
-            "start_line": 374,
-            "end_line": 374,
+            "start_line": 376,
+            "end_line": 376,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "call",
             "resolved_target": "scripts/installed-style-packs.ts",
             "target_symbol": "loadInstalledStylePackData"
@@ -441067,7 +441067,7 @@
             "start_line": 14,
             "end_line": 14,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "1feb50a05adcda575749e8c0a61741e6b04948e7f4823f4ef4a2372e290e5b7e",
+            "source_digest": "1fb052dbac0bd534e79c6ad5d1c22bb32fb05b9f9a058633d8b67969586e4f8b",
             "kind": "import",
             "resolved_target": "scripts/installed-style-packs.ts"
           }
@@ -456432,67 +456432,16 @@
       "handler_symbol": "main"
     }
   ],
-  "source_digest": "244a815a08989c85408c24115afe5be2769aa239233f30902eb0c094fcc08bb4",
+  "source_digest": "714b43cac480ce30bef94e9b0ae9614765843f5d6cc4da2b0516321462e2250f",
   "changes": {
     "added_nodes": [],
     "removed_nodes": [],
-    "added_edges": [
-      {
-        "id": "edge:82c79f34041dc68f4681",
-        "from": "apps/local-server/src/libraryAssetVariants.ts",
-        "to": "apps/local-server/src/library.ts",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "apps/local-server/src/libraryAssetVariants.ts",
-              "symbol": "resolveLibraryPathFromRoot(libraryDir, 'thumbnails', `${cacheKey}.${maxEdge}.webp`)",
-              "start_line": 51,
-              "end_line": 51,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0d4b754fd744f728cf807285ecdc27b1ca2a5775d9631f8916098f027d3e3f91",
-              "kind": "call",
-              "resolved_target": "apps/local-server/src/library.ts",
-              "target_symbol": "resolveLibraryPathFromRoot"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:10162dd926aedd6fd436",
-        "from": "apps/local-server/src/libraryAssetVariants.ts",
-        "to": "apps/local-server/src/library.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "apps/local-server/src/libraryAssetVariants.ts",
-              "symbol": "import { resolveLibraryPathFromRoot } from './library';",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0d4b754fd744f728cf807285ecdc27b1ca2a5775d9631f8916098f027d3e3f91",
-              "kind": "import",
-              "resolved_target": "apps/local-server/src/library.ts"
-            }
-          ]
-        }
-      }
-    ],
+    "added_edges": [],
     "removed_edges": [],
     "boundary_changes": [],
     "new_cycles": [],
-    "changed": true,
-    "changed_node_ids": [
-      "apps/local-server/src/library.ts",
-      "apps/local-server/src/libraryAssetVariants.ts"
-    ]
+    "changed": false,
+    "changed_node_ids": []
   },
-  "generation_id": "6c228567dd58d5283085d6dd771b3498176ca4b1a8df0eb8adef6c1aa0d1a328"
+  "generation_id": "0b14a43a1d7f9412d281ebdb52431f38c89176ff06f3bb454047b97784be7337"
 }
