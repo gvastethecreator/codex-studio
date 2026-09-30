@@ -115,6 +115,8 @@ export interface StyleRenderBudgetReport {
   packs: StyleRenderPackBudget[];
   flatAllCards: StyleRenderFlatAllCardsBudget;
   searchScenarios: StyleSearchScenarioBudget[];
+  /** Scenarios whose pack is not installed here (style packs are extensions, ADR 0011). */
+  skippedSearchScenarios: string[];
   violations: string[];
 }
 
@@ -385,12 +387,13 @@ export async function createStyleRenderBudgetReport({
     containerWidth,
   });
   const packById = new Map(loadedPacks.map((pack) => [pack.id, pack]));
-  const searchScenarios = SEARCH_SCENARIOS.map((scenario) => {
+  // Style packs are installed extensions, so a checkout without them (CI) budgets what it has.
+  const skippedSearchScenarios = SEARCH_SCENARIOS.filter((scenario) => !packById.has(scenario.packId)).map(
+    (scenario) => `${scenario.name} (${scenario.packId} not installed)`,
+  );
+  const searchScenarios = SEARCH_SCENARIOS.flatMap((scenario) => {
     const pack = packById.get(scenario.packId);
-    if (!pack) {
-      throw new Error(`Missing style pack for search scenario: ${scenario.packId}`);
-    }
-    return createSearchScenarioBudget({ pack, gridColumns, containerWidth, ...scenario });
+    return pack ? [createSearchScenarioBudget({ pack, gridColumns, containerWidth, ...scenario })] : [];
   });
   const violations = packs.flatMap((pack) => {
     const errors: string[] = [];
@@ -458,6 +461,7 @@ export async function createStyleRenderBudgetReport({
     packs,
     flatAllCards,
     searchScenarios,
+    skippedSearchScenarios,
     violations,
   };
 }
@@ -486,6 +490,7 @@ if (import.meta.main) {
     console.log(
       `[styles:render] flatAllCards total=${report.flatAllCards.totalPresets} eagerCards=${report.flatAllCards.eagerPresetCards} plannedCards=${report.flatAllCards.plannedPresetCards}`,
     );
+    for (const skipped of report.skippedSearchScenarios) console.log(`[styles:render] skipped search ${skipped}`);
   }
 
   if (report.violations.length > 0) {
