@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "a14716b193cff2ec91a6edf7195cd64a1d368e73",
+  "source_commit": "aae0d8ee336b72e36732b2dbca0dc464c87288d7",
   "working_tree_dirty": false,
-  "generated_at": "2026-09-30T06:56:34Z",
-  "generation_id": "a76c7d1311617ec9ae2e36baaf7753efba056b216ea88adfc07cc16175d94d83",
+  "generated_at": "2026-09-30T07:19:30Z",
+  "generation_id": "6c228567dd58d5283085d6dd771b3498176ca4b1a8df0eb8adef6c1aa0d1a328",
   "analysis": {
     "version": "syntax-1",
     "digest": "f254907343def68e42baabf08b179db9817a145bc24eaad26add0adf05d75581"
@@ -866,8 +866,8 @@
         "path": "apps/local-server/src/libraryAssetVariants.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "11946690c1883a26dc17575819fd3e87c3fdd7fe8fea4f9a5cb4ed484623f637",
-        "size": 4272
+        "digest": "0d4b754fd744f728cf807285ecdc27b1ca2a5775d9631f8916098f027d3e3f91",
+        "size": 4334
       },
       {
         "path": "apps/local-server/src/libraryRoutes.test.ts",
@@ -5654,8 +5654,8 @@
         "path": "scripts/core-assets-browser-smoke.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "068141bbff113f8b78b38c564bc05082595bce32632b3da359d13c7535dbb090",
-        "size": 2877
+        "digest": "983a4635435ddbf68a9cb408adeb9d9015e97a863b10c47d5e00299d4062b4c4",
+        "size": 2881
       },
       {
         "path": "scripts/core-assets-smoke.ts",
@@ -6554,12 +6554,12 @@
         "size": 710
       }
     ],
-    "digest": "3dd23929d7bf01b1d3a33281c7c81531ddfeff00472b050342623b66c2c7b121"
+    "digest": "8d78acaa72f5d86f120be84dc84362079cf94bd918ccb7d4130da11d64af2d49"
   },
-  "source_digest": "98fc17e3590906a8ef1e36dce1fb5d906e35d131c7197872ba1b50fe2669af91",
+  "source_digest": "244a815a08989c85408c24115afe5be2769aa239233f30902eb0c094fcc08bb4",
   "artifact_hashes": {
-    "codemap.json": "684ce5b572f9bec216ca5233d385fa604f1203ae020620478e44e4befa0339c0",
-    "codemap.md": "26c9cb4be1b5c47d44b0bf18fbec704df75f4c5e6122d5e3c081e33e8ee1e007",
-    "codemap.html": "d336b1077065058d14bc24b9f98c9228144acb5e847226a2d13d4fcc11119c53"
+    "codemap.json": "4c667236c80a5954485d21f4e8ee6ffee2a4385738d527c525efcbc0e179e9c8",
+    "codemap.md": "dbbb7a82065dbecb00d6aba01e9003443342ce2645fb2a44b21fe288cdb9fd5e",
+    "codemap.html": "c32fa2676928db3098eb9c00f9fa87412112cc1b38f3b6cbd6641903171b486b"
   }
 }
